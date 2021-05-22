@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.title-box{
+    padding-top: 87px;
+    padding-bottom: 13px;
+    margin: 0;
+}
+.title-text{
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    background-color: transparent;
+}
+
+.sidebar{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background-color: #1c1c1e;
+    overflow-x: hidden;
+    padding: 0px 20px;
+}
+.title-sidebar{
+    padding-left: 16px;
+}
+
+.menu-item-container{
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+
+    width: 100%;
+    height: 48px;
+    border-radius: 16px;
+
+    transition: 0.2s;
+}
+.menu-item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.2s;
+    fill: #ffffffcc;
+    color: #ffffffcc;
+}
+.menu-item-icon{
+    margin-right: 16px;
+    height: 16px;
+    width: 16px;
+    padding-left: 16px;
+}
+.menu-item-label{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+.menu-item:hover{
+    fill: #fff;
+    color: #fff;
+    transition: 0.2s;
+}
+.menu-item-current{
+    color: #fff;
+    fill: #fff;
+    background: linear-gradient(to bottom right,#00ffff,#ff00ff);
+}
+
+
+
+.main{
+    position: absolute;
+    left: 50%;
+    transform: translate(-290px,0px);
+    background-color: #000;
+    width: 800px;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 780px;
+    height: 40px;
+    border-radius: 15px;
+
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.search{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.2s;
+
+    background:#fff;
+    padding-left: 15px;
+    color: #00000099;
+}
+.search-icon{
+    display: flex;
+    margin-right: 8px; 
+}
+.search-label{
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+.search:hover{
+    color: #4285f4;
+    transition: 0.2s;
+    opacity: 0.9;
+}
+
+.big-button-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 140px;
+    height: 60px;
+    border-radius: 20px;
+
+    transition: 0.2s;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.big-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.2s;
+    margin: 0px;
+}
+.big-button-icon{
+    fill: #fff;
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+}
+.big-button-label{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+.big-button:hover{
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
+.box{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 180px;
+    background-color: #1c1c1e;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    padding: 15px 0px 10px 15px;
+}
+.oneRow{
+    height: 120px;
+}
+.twoRow{
+    height: 180px;
+}
+.boxLabel{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+
+.eat{
+    position: relative;
+    bottom: 60px;
+}
+
+
+
+.small-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+
+    transition: 0.2s;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.small-button-icon{
+    fill: #fff;
+    height: 20px;
+    width: 20px;
+}
+.small-button:hover{
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+.testBox{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+
+
+/*
+gradients
+*/
+.black-gradient{
+    background:linear-gradient(to bottom right,#1A1A1A,#000);
+}
+
+.outlook{
+    background:linear-gradient(to bottom right,#0271C7,#01467a);
+}
+.onedrive{
+    background:linear-gradient(to bottom right,#094AB2,#052A66);
+}
+.clickup{
+    background:linear-gradient(to bottom right,#49ccf9,#7b68ee);
+}
+
+.foodpanda{
+    background:linear-gradient(to bottom right,#D70E64,#8a0a41);
+}
+.deliveroo{
+    background:linear-gradient(to bottom right,#00CCBC,#008075);
+}
+.hulu{
+    background:linear-gradient(to bottom right,#040405,#183949);
+}
+.youtube{
+    background:linear-gradient(to bottom right,#f00,#b30000);
+}
+.reelgood{
+    background:linear-gradient(to bottom right,#00dc89,#008f58);
+}
+.tv-time{
+    background: #545454;
+}
+.pocket{
+    background:linear-gradient(to bottom right,#EF3D55,#a32a3b);
+}
+.feedly{
+    background:linear-gradient(to bottom right,#2bb24c,#18662c);
+}
+.twitter{
+    background:linear-gradient(to bottom right,#1da1f2,#146ea6);
+}
+.clickup-teal{
+    background:linear-gradient(to bottom right,#49ccf9,#328fad);
+}
+.clickup-purple{
+    background:linear-gradient(to bottom right,#7b68ee,#5447a1);
+}
