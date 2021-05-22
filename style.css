@@ -261,7 +261,7 @@ tv images
     height: 145px;
     width: 258px;
     background-size: contain;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 0px;
     margin-right: 3px;
 }
@@ -281,7 +281,7 @@ tv images
     position: absolute;
     bottom: 24px;
     left: 10px;
-    width: 153px;
+    width: 163px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -292,7 +292,7 @@ tv images
     position: absolute;
     bottom: 10px;
     left: 10px;
-    width: 153px;
+    width: 163px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -302,6 +302,7 @@ tv images
 .tv-play{
     font-size: 10px;
     color: #fff;
+    font-weight: 500;
 
     display: flex;
     justify-content: center;
@@ -311,23 +312,47 @@ tv images
     cursor: pointer;
 
     height: 30px;
-    width: 80px;
-    border-radius: 12px;
+    width: 70px;
+    border-radius: 10px;
     transition: 0.2s;
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
-
 .tv-play:hover{
     opacity: 0.9;
 }
 
-
-
 .fargo{
     background-image: url('TV/fargo.jpeg');
 }
+.twin-peaks{
+    background-image: url('TV/twin\ peaks.webp');
+}
+.always-sunny{
+    background-image: url('TV/always\ sunny.jpg');
+}
+.atlanta{
+    background-image: url('TV/atlanta.webp');
+}
+.kim{
+    background-image: url('TV/kims\ convenience.webp');
+}
+.legion{
+    background-image: url('TV/legion.webp');
+}
+.snowfall{
+    background-image: url('TV/snowfall.jpeg');
+}
+.mythic-quest{
+    background-image: url('TV/mythic\ quest.webp');
+}
+.spy{
+    background-image: url('TV/spy.webp');
+}
+
+
+
 
 
 /*
@@ -416,7 +441,9 @@ gradients
 .hulu-green{
     background:linear-gradient(to bottom right,#1ce783,#139c57);
 }
-
+.netflix{
+    background:linear-gradient(to bottom right,#e50914,#99060d);
+}
 .youtube{
     background:linear-gradient(to bottom right,#f00,#b30000);
 }
