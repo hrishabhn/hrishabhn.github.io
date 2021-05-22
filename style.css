@@ -198,6 +198,9 @@ body{
 .twoRow{
     height: 180px;
 }
+.threeRow{
+    height: 240px;
+}
 .boxLabel{
     display: block;
     color: #fff;
@@ -253,8 +256,16 @@ body{
 
 
 
+/*
+icon colours
+*/
 
-
+.hulu-icon{
+    fill: #1ce783;
+}
+.walmart-icon{
+    fill: #ffc120;
+}
 
 
 /*
@@ -268,10 +279,43 @@ gradients
 }
 
 
-
 .black-gradient{
     background:linear-gradient(to bottom right,#1A1A1A,#000);
 }
+.green-gradient{
+    background:linear-gradient(to bottom right,#34c759,#207a36);
+}
+.indigo-gradient{
+    background:linear-gradient(to bottom right,#5856d6,#38378a);
+}
+.orange-gradient{
+    background:linear-gradient(to bottom right,#ff9500,#b36800);
+}
+.teal-gradient{
+    background:linear-gradient(to bottom right,#5ac8fa,#207a36);
+}
+.yellow-gradient{
+    background:linear-gradient(to bottom right,#ffcc00,#b38f00);
+}
+.white-gradient{
+    background:linear-gradient(to bottom right,#fff,#e6e6e6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .outlook{
     background:linear-gradient(to bottom right,#0271C7,#01467a);
@@ -315,4 +359,28 @@ gradients
 }
 .clickup-purple{
     background:linear-gradient(to bottom right,#7b68ee,#5447a1);
+}
+.google-red{
+    background:linear-gradient(to bottom right,#ea4335,#9e2f24);
+}
+.google-green{
+    background:linear-gradient(to bottom right,#34a853,#1c5c2d);
+}
+.google-blue{
+    background:linear-gradient(to bottom right,#4285f4,#2d5da8);
+}
+.walmart{
+    background:linear-gradient(to bottom right,#0070DB,#004a8f);
+}
+.amazon{
+    background:linear-gradient(to bottom right,#1E2631,#4c617d);
+}
+.reddit{
+    background:linear-gradient(to bottom right,#ff4500,#b33000);
+}
+.amazon{
+    background:linear-gradient(to bottom right,#1E2631,#4c617d);
+}
+.amazon{
+    background:linear-gradient(to bottom right,#1E2631,#4c617d);
 }
