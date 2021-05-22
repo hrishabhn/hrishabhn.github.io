@@ -291,8 +291,11 @@ gradients
 .orange-gradient{
     background:linear-gradient(to bottom right,#ff9500,#b36800);
 }
+.red-gradient{
+    background:linear-gradient(to bottom right,#ff3b30,#b32922);
+}
 .teal-gradient{
-    background:linear-gradient(to bottom right,#5ac8fa,#207a36);
+    background:linear-gradient(to bottom right,#5ac8fa,#3e8aad);
 }
 .yellow-gradient{
     background:linear-gradient(to bottom right,#ffcc00,#b38f00);
@@ -378,6 +381,23 @@ gradients
 .reddit{
     background:linear-gradient(to bottom right,#ff4500,#b33000);
 }
+.linkedin{
+    background:linear-gradient(to bottom right,#0c63c3,#073c75);
+}
+
+.icons8{
+    background:linear-gradient(to bottom right,#1eb141,#116324);
+}
+.flaticon{
+    background:linear-gradient(to bottom right,#0E2A47,#1e5794);
+}
+.duke-energy{
+    background:linear-gradient(to bottom right,#14BCD9,#005986);
+}
+
+
+
+
 .amazon{
     background:linear-gradient(to bottom right,#1E2631,#4c617d);
 }
