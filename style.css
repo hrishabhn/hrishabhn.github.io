@@ -520,7 +520,6 @@ gradients
 }
 
 
-
 @media(max-width: 400px){
     .hidden-mobile{
         display: none;
@@ -705,4 +704,11 @@ gradients
 
 
 
+}
+
+@media(max-height: 700px){
+    .sidebar{
+        padding: 8px 0 8px;
+        height: 75px;
+    }
 }
