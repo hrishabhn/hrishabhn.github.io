@@ -7,9 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Dashboard</title>
+
+    <script src="date.js"></script>
 </head>
 
-<body>
+<body onload="date()">
     <div class="sidebar">
         <div class="title-box hidden-mobile">
             <p1 class="title-text title-sidebar">Menu</p1>
@@ -108,7 +110,10 @@
 
     <div class="main">
         <div class="title-box">
-            <p1 class="title-text">Dashboard</p1>
+            <p1 class="homepage-title" id="day">Dashboard</p1>
+            <div class="date-box">
+                <p class="homepage-subtitle" id="month">Month</p> <p class="homepage-subtitle" id="date">DD</p>
+            </div>
         </div>
 
         <div class="search-container">
@@ -454,6 +459,8 @@
         </div>
     </div>
     </section>
+
+    
 </body>
 
 </html>
