@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.background{
+    background-image: url('TV/background/legion.webp');
+    height: 210px;
+    width: 100%;
+    background-size: contain;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.tv-fade{
+    background: linear-gradient(#00000000,#0a2869);
+    transform: translate(0,100%);
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.tv-solid{
+    width: 100%;
+    background: #0a2869;
+    height: 400px;
+}
+
+
+
+
+@media(max-width: 400px){
+    
+}
