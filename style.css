@@ -260,7 +260,7 @@ tv images
     display: inline-block;
     height: 145px;
     width: 258px;
-    background-size: contain;
+    background-size: cover;
     border-radius: 5px;
     padding: 0px;
     margin-right: 3px;
@@ -592,9 +592,9 @@ gradients
     .tv-show{
         box-sizing: border-box;
         display: inline-flex;
-        height: 180px;
-        width: 320px;
-        background-size: contain;
+        height: 185px;
+        width: 330px;
+        background-size: cover;
         border-radius: 5px;
         padding: 0px;
         margin-right: 0px;
