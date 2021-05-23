@@ -5,16 +5,24 @@
 }
 
 body{
-    background-color: #000;
+    background-color: #0a2869 !important;
 }
 
 .background{
     background-image: url('TV/poster/legion.webp');
     height: 560px;
     width: 100%;
-    background-size: cover;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+
 }
 
 .tv-fade{
