@@ -576,11 +576,14 @@ gradients
 
     .main{
         position: absolute;
-        top: 70px;
+        top: 80px;
         left: 0;
         background-color: #000;
         width: 100%;
+        height: 100%;
+        transform: none;
     }
+ 
 
 
     /*
@@ -588,13 +591,19 @@ gradients
     */
     .tv-show{
         box-sizing: border-box;
-        display: inline-block;
-        height: 145px;
-        width: 258px;
+        display: inline-flex;
+        height: 180px;
+        width: 320px;
         background-size: contain;
         border-radius: 5px;
         padding: 0px;
-        margin-right: 3px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0)
+
+        
     }
 
 
