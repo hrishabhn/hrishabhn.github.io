@@ -36,8 +36,9 @@ body{
 
 
     font-size: 16px;
-    color: #fff;
-    font-weight: 500;
+    color: #1c1c1e;
+    font-weight: 600;
+    background: #fff;
 
     display: flex;
     justify-content: center;
