@@ -9,8 +9,8 @@ body{
 }
 
 .title-box{
-    padding-top: 87px;
-    padding-bottom: 13px;
+    padding-top: 55px;
+    padding-bottom: 15px;
     margin: 0;
 }
 .title-text{
@@ -531,11 +531,12 @@ gradients
         justify-content: center;
         align-content: center;
         width: 100%;
-        height: 75px;
-        padding: 8px 0;
+        height: 95px;
+        padding: 8px 0 28px;
         position: fixed;
         z-index: 1;
-        top: 0px;
+        top: auto;
+        bottom: 0px;
         left: 0px;
         background-color: #1c1c1e80;
         overflow-x: hidden;
@@ -589,12 +590,13 @@ gradients
 
     .main{
         position: absolute;
-        top: 90px;
+        top: 20px;
         left: 0;
         background-color: #000;
         width: 100%;
         height: auto;
         transform: none;
+        padding-bottom: 105px;
     }
  
 
