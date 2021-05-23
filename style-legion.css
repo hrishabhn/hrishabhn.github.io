@@ -9,10 +9,10 @@ body{
 }
 
 .background{
-    background-image: url('TV/background/legion.webp');
-    height: 210px;
+    background-image: url('TV/poster/legion.webp');
+    height: 560px;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
