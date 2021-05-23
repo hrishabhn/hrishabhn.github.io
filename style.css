@@ -309,7 +309,7 @@ tv images
     margin-right: 2px;
 }
 
-.fade{
+.fade-half{
     transform: translate(0,100%);
     height: 50%;
     width: 100%;
