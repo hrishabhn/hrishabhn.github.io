@@ -40,6 +40,8 @@ body{
     font-weight: 600;
     background: #fff;
 
+    box-shadow: 0 15px 30px #00000080;
+
     display: flex;
     justify-content: center;
     align-items: center;
