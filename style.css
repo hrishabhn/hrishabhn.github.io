@@ -19,20 +19,52 @@ body{
     color: #fff;
     background-color: transparent;
 }
+.homepage-title{
+    display: block;
+    font-weight: 300;
+    font-size: 36px;
+    color: #fff;
+    background-color: transparent;
+}
+.homepage-subtitle{
+    display: inline;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffffcc;
+    background-color: transparent;
+    height: 100px;
+}
+.date-box{
+    height: 30px;
+}
+
+
 
 .sidebar{
     height: 100%;
     width: 160px;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0px;
     left: 0px;
-    background-color: #1c1c1e;
+    background-color: rgba(28, 28, 30, 0.5);
     overflow-x: hidden;
     padding: 0px 20px;
 }
 .title-sidebar{
     padding-left: 16px;
+}
+.sidebar-blur{
+    -webkit-backdrop-filter: blur(250px);
+}
+.sidebar-image{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background-size: contain;
 }
 
 .menu-item-container{
@@ -347,7 +379,7 @@ tv images
 .kim{
     background-image: url('TV/kims\ convenience.webp');
 }
-.legion{
+.legion-poster{
     background-image: url('TV/legion.webp');
 }
 .snowfall{
@@ -358,6 +390,44 @@ tv images
 }
 .spy{
     background-image: url('TV/spy.webp');
+}
+
+.legion{
+    background-color: #523b57;
+    padding-left: 0px;
+}
+.legion-fade{
+    transform: translate(0,100%);
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(#00000000,#523b57);
+    padding: 0px;
+}
+
+
+.tv-page{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    padding-left: 200px;
+}
+.tv-background{
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+
+
+}
+.tv-title-image{
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    
+    background-size: contain;
+    margin-left: 100px;
+    transform: translate(50%,0);
 }
 
 
@@ -591,7 +661,7 @@ gradients
         position: absolute;
         top: 20px;
         left: 0;
-        background-color: #000;
+        background-color:transparent;
         width: 100%;
         height: auto;
         transform: none;
