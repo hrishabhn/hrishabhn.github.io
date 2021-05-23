@@ -530,7 +530,7 @@ gradients
         left: 0px;
         background-color: #1c1c1e80;
         overflow-x: hidden;
-        -webkit-backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(50px);
     }
     .sidebar-menu{
         height: 59px;
