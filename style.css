@@ -88,9 +88,9 @@ body{
 .main{
     position: absolute;
     left: 50%;
-    transform: translate(-290px,0px);
+    transform: translate(-340px,0px);
     background-color: #000;
-    width: 800px;
+    width: 900px;
 }
 
 .search-container{
@@ -98,9 +98,9 @@ body{
     justify-content: center;
     align-items: center;
 
-    width: 780px;
-    height: 40px;
-    border-radius: 15px;
+    width: 880px;
+    height: 50px;
+    border-radius: 20px;
 
     transition: 0.5s;
     margin-bottom: 20px;
@@ -115,20 +115,20 @@ body{
 
     height: 100%;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
     transition: 0.2s;
 
     background:#fff;
-    padding-left: 15px;
+    padding-left: 20px;
     color: #00000099;
 }
 .search-icon{
     display: flex;
-    margin-right: 8px; 
+    margin-right: 10px; 
 }
 .search-label{
     text-decoration: none;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 500;
 }
 .search:hover{
@@ -142,9 +142,9 @@ body{
     justify-content: center;
     align-items: center;
 
-    width: 140px;
-    height: 60px;
-    border-radius: 20px;
+    width: 160px;
+    height: 70px;
+    border-radius: 25px;
 
     transition: 0.2s;
     margin-right: 20px;
@@ -161,7 +161,7 @@ body{
 
     height: 100%;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 25px;
     transition: 0.2s;
     margin: 0px;
 }
@@ -173,7 +173,7 @@ body{
 }
 .big-button-label{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: #fff;
 }
@@ -185,21 +185,21 @@ body{
 .box{
     display: inline-block;
     box-sizing: border-box;
-    width: 180px;
+    width: 205px;
     background-color: #1c1c1e;
     margin-right: 20px;
     margin-bottom: 20px;
-    border-radius: 25px;
-    padding: 15px 0px 10px 15px;
+    border-radius: 30px;
+    padding: 15px 0px 0px 15px;
 }
 .oneRow{
-    height: 120px;
+    height: 130px;
 }
 .twoRow{
-    height: 180px;
+    height: 200px;
 }
 .threeRow{
-    height: 240px;
+    height: 270px;
 }
 .boxLabel{
     display: block;
@@ -207,13 +207,17 @@ body{
     font-size: 20px;
 }
 
-.up60-60{
+.up70-70{
     position: relative;
-    bottom: 60px;
+    bottom: 70px;
 }
 .up60-120{
     position: relative;
     bottom: 60px;
+}
+.up70-0{
+    position: relative;
+    bottom: 70px;
 }
 
 
@@ -226,9 +230,9 @@ body{
     text-decoration: none;
     cursor: pointer;
 
-    width: 50px;
-    height: 50px;
-    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
 
     transition: 0.2s;
     margin-right: 10px;
@@ -238,8 +242,8 @@ body{
 
 .small-button-icon{
     fill: #fff;
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
 }
 .small-button:hover{
     opacity: 0.75;
@@ -263,12 +267,12 @@ tv images
 .tv-show{
     box-sizing: border-box;
     display: inline-block;
-    height: 145px;
-    width: 258px;
+    height: 164px;
+    width: 292px;
     background-size: cover;
     border-radius: 5px;
     padding: 0px;
-    margin-right: 3px;
+    margin-right: 2px;
 }
 
 .fade{
@@ -316,9 +320,9 @@ tv images
     text-decoration: none;
     cursor: pointer;
 
-    height: 30px;
-    width: 70px;
-    border-radius: 10px;
+    height: 35px;
+    width: 80px;
+    border-radius: 15px;
     transition: 0.2s;
     position: absolute;
     bottom: 10px;
@@ -575,7 +579,7 @@ gradients
 
     }
     .title-text{
-        font-weight: 500;
+        font-weight: 400;
         font-size: 30px;
         color: #fff;
         background-color: transparent;
@@ -609,8 +613,6 @@ gradients
     }
     
     .big-button-container{
-        width: 160px;
-
         position: relative;
         left: 5px;
 
@@ -640,13 +642,13 @@ gradients
         left: 5px;
     }
     .oneRow{
-        height: 120px;
+        height: 130px;
     }
     .twoRow{
-        height: 180px;
+        height: 200px;
     }
     .threeRow{
-        height: 240px;
+        height: 270px;
     }
     .boxLabel{
         display: block;
@@ -654,15 +656,18 @@ gradients
         font-size: 20px;
     }
     
-    .up0-60{
+    .up0-70{
         position: relative;
-        bottom: 60px;
+        bottom: 70px;
     }
-    .up60-120{
+    .up70-140{
         position: relative;
-        bottom: 120px;
+        bottom: 140px;
     }
-
+    .up70-0{
+        position: relative;
+        bottom: 0px;
+    }
 
 
 
