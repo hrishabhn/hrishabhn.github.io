@@ -516,19 +516,58 @@ gradients
     .hidden-mobile{
         display: none;
     }
+    
+    .menu-item{
+        justify-content: center;
+    }
     .menu-item-container{
-        width: 48px;
+        width: 20%;
+        height: 100%;
+        
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
     }
     .menu-item-label{
         display: none;
     }
+    .menu-item-icon{
+        padding: 0;
+        margin: 0;
+        margin: 40;
+        width: 16px;
+        height: 16px;
+
+
+
+    }
+
+
+
+
+
+
+
+
     .sidebar{
+        box-sizing: border-box;
         display: flex;
         width: 100%;
         height: 64px;
-        padding: 8px;
+        padding: 8px 10%;
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        background-color: #1c1c1e;
+        overflow-x: hidden;
     }
-
+    .sidebar-menu{
+        height: 48px;
+        width: 100%;
+    }
 
     .title-box{
         display: none;
