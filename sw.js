@@ -1,4 +1,4 @@
-const staticDevCoffee = "dev-coffee-site-v1"
+const staticDashboard = "dashboard-v2"
 const assets = [
   "/",
   "/index.html",
@@ -24,3 +24,11 @@ self.addEventListener("install", installEvent => {
     })
   )
 })
+
+self.addEventListener("fetch", fetchEvent => {
+    fetchEvent.respondWith(
+      caches.match(fetchEvent.request).then(res => {
+        return res || fetch(fetchEvent.request)
+      })
+    )
+  })
