@@ -3,7 +3,6 @@
     "short_name": "Home",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#000000",
     "description": "A demo app for a fictional conference",
     "theme_color": "#000000",
     "icons": [
