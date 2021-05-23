@@ -367,33 +367,76 @@ tv images
 }
 
 .fargo{
-    background-image: url('TV/fargo.jpeg');
+    background-image: url('TV/background/fargo.jpeg');
 }
 .twin-peaks{
-    background-image: url('TV/twin\ peaks.webp');
+    background-image: url('TV/background/twin\ peaks.webp');
 }
 .always-sunny{
-    background-image: url('TV/always\ sunny.jpg');
+    background-image: url('TV/background/always\ sunny.jpg');
 }
 .atlanta{
-    background-image: url('TV/atlanta.webp');
+    background-image: url('TV/background/atlanta.webp');
 }
 .kim{
-    background-image: url('TV/kims\ convenience.webp');
-}
-.legion-poster{
-    background-image: url('TV/legion.webp');
-}
-.snowfall{
-    background-image: url('TV/snowfall.jpeg');
-}
-.mythic-quest{
-    background-image: url('TV/mythic\ quest.webp');
-}
-.spy{
-    background-image: url('TV/spy.webp');
+    background-image: url('TV/background/kims\ convenience.webp');
 }
 
+.snowfall{
+    background-image: url('TV/background/snowfall.jpeg');
+}
+.mythic-quest{
+    background-image: url('TV/background/mythic\ quest.webp');
+}
+.spy{
+    background-image: url('TV/background/spy.webp');
+}
+
+
+
+
+.legion-poster{
+    background-image: url('TV/poster/legion.webp');
+}
+.tv-page-background{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin-right: 0px;
+}
+.tv-blur{
+    -webkit-backdrop-filter: blur(500px);
+    height: 100%;
+    width: 100%;
+}
+.tv-page-poster{
+    background-size: contain;
+    margin-left: 200px;
+    height: 450px;
+    width: 300px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px hsla(0, 0%, 0%, 0.3);
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.tv-page-title{
+    color: #fff;
+    font-size: 36px;
+    position: relative;
+    left: 300px;
+    top: 120px;
+}
+
+
+
+
+/*
 .legion{
     background-color: #523b57;
     padding-left: 0px;
@@ -431,7 +474,7 @@ tv images
     margin-left: 100px;
     transform: translate(50%,0);
 }
-
+*/
 
 
 
