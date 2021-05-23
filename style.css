@@ -509,3 +509,29 @@ gradients
 .amazon{
     background:linear-gradient(to bottom right,#1E2631,#4c617d);
 }
+
+
+
+@media(max-width: 400px){
+    .hidden-mobile{
+        display: none;
+    }
+    .menu-item-container{
+        width: 48px;
+    }
+    .menu-item-label{
+        display: none;
+    }
+    .sidebar{
+        display: flex;
+        width: 100%;
+        height: 64px;
+        padding: 8px;
+    }
+
+
+    .title-box{
+        display: none;
+    }
+
+}
