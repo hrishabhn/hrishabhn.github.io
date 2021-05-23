@@ -30,7 +30,37 @@ body{
     background: #0a2869;
     height: 800px;
 }
+.play-button{
 
+    margin: 0 20px;
+
+
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 50px;
+    width: 335px;
+    border-radius: 15px;
+    transition: 0.2s;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+
+
+.tv-title-image{
+    background-image: url('TV/title/legion.png');
+}
 
 
 
