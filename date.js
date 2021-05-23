@@ -1,7 +1,7 @@
 function date(){
     var fullDate = new Date();
 
-    var weekDays = ["Sunday","Mon","Tue","Wed","Thu","Fri","Sat"]
+    var weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
     var months = ["Jan","Feb","Mar","Apr","May","June","July"]
 
     dayNow = fullDate.getDay()
