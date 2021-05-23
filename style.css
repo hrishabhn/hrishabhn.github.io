@@ -517,11 +517,44 @@ gradients
         display: none;
     }
     
+    
+
+
+
+
+
+
+
+
+    .sidebar{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 68px;
+        padding: 9px 0;
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        background-color: #1c1c1e;
+        overflow-x: hidden;
+    }
+    .sidebar-menu{
+        height: 50px;
+        width: 340px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .title-box{
+        display: none;
+    }
     .menu-item{
         justify-content: center;
     }
     .menu-item-container{
-        width: 20%;
+        width: 50px;
         height: 100%;
         
         display: inline-flex;
@@ -539,38 +572,37 @@ gradients
         margin: 40;
         width: 16px;
         height: 16px;
+    }
 
-
-
+    .main{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #000;
+        width: 100%;
     }
 
 
-
-
-
-
-
-
-    .sidebar{
+    /*
+    Media
+    */
+    .tv-show{
         box-sizing: border-box;
-        display: flex;
-        width: 100%;
-        height: 64px;
-        padding: 8px 10%;
-        position: fixed;
-        z-index: 1;
-        top: 0px;
-        left: 0px;
-        background-color: #1c1c1e;
-        overflow-x: hidden;
-    }
-    .sidebar-menu{
-        height: 48px;
-        width: 100%;
+        display: inline-block;
+        height: 145px;
+        width: 258px;
+        background-size: contain;
+        border-radius: 5px;
+        padding: 0px;
+        margin-right: 3px;
     }
 
-    .title-box{
-        display: none;
-    }
+
+
+
+
+
+
+
 
 }
