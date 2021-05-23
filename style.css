@@ -398,6 +398,11 @@ tv images
 .legion-poster{
     background-image: url('TV/poster/legion.webp');
 }
+.legion-colour{
+    background-color: #0a2869;
+}
+
+
 .tv-page-background{
     box-sizing: border-box;
     height: 100vh;
