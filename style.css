@@ -721,6 +721,12 @@ gradients
     /*
     Dashboard
     */
+    .date-box{
+        padding-bottom: 20px;
+    }
+
+
+
     .search-container{
         display: flex;
         justify-content: center;
