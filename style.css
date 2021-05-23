@@ -528,8 +528,9 @@ gradients
         z-index: 1;
         top: 0px;
         left: 0px;
-        background-color: #1c1c1e;
+        background-color: #1c1c1e80;
         overflow-x: hidden;
+        -webkit-backdrop-filter: blur(10px);
     }
     .sidebar-menu{
         height: 59px;
