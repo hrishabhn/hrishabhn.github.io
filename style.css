@@ -28,14 +28,16 @@ body{
 }
 .homepage-subtitle{
     display: inline;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     color: #ffffffcc;
     background-color: transparent;
     height: 100px;
 }
 .date-box{
-    height: 30px;
+    height: auto;
+    padding-top: 2px;
+    width: fit-content;
 }
 
 
