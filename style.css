@@ -9,7 +9,7 @@ body{
 }
 
 .title-box{
-    padding-top: 55px;
+    padding-top: 5px;
     padding-bottom: 15px;
     margin: 0;
 }
@@ -652,7 +652,7 @@ gradients
         height: 95px;
         padding: 8px 0 28px;
         position: fixed;
-        z-index: 1;
+        z-index: 10;
         top: auto;
         bottom: 0px;
         left: 0px;
@@ -693,9 +693,18 @@ gradients
     }
 
     .title-box{
-        padding: 0 20px;
+        padding: 0px 0 0 20px;
         margin: 0 0 12px 0;
 
+    }
+    .title-fade{
+        height: 20px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(#000,#00000000);
+        z-index: 1;
     }
     .title-text{
         font-weight: 400;
