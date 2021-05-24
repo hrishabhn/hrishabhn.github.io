@@ -264,10 +264,7 @@ body{
     
 
     .media-subtitle-box{
-
-
-
-        padding: 20px 0 5px 20px;
+        padding: 20px 0 10px 20px;
 
         box-sizing: border-box;
 
@@ -275,8 +272,8 @@ body{
         width: 100%;
     }
     .media-subtitle-text{
-        font-weight: 500;
-        font-size: 16px;
+        font-weight: 600;
+        font-size: 20px;
         color: #fff;
         background-color: transparent;
     }
