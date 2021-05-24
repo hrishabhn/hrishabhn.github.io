@@ -142,7 +142,7 @@ body{
 
 .scrolling-wrapper {
     padding-left: 240px;
-    padding-right: 40px;
+    padding-right: 30px;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
