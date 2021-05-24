@@ -113,7 +113,7 @@ var show9 = [
 var pod1 = [
   "podcast-card pivot-solid",
   "podcast-cover pivot-cover",
-  "https://podcasts.apple.com/podcast/pivot/id1073226719"
+  "https://podcasts.apple.com/podcast/id1073226719"
 ]
 
 //Lex fridman
@@ -127,7 +127,7 @@ var pod2 = [
 var pod3 = [
   "podcast-card acquired-solid",
   "podcast-cover acquired-cover",
-  "https://podcasts.apple.com/podcast/acquired/id1050462261"
+  "https://podcasts.apple.com/podcast/id1050462261"
 ]
 
 //Yang
@@ -141,28 +141,28 @@ var pod4 = [
 var pod5 = [
   "podcast-card sway-solid",
   "podcast-cover sway-cover",
-  "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
+  "https://podcasts.apple.com/podcast/id1528594034"
 ]
 
 //Economist
 var pod6 = [
   "podcast-card economist-solid",
   "podcast-cover economist-cover",
-  "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
+  "https://podcasts.apple.com/podcast/id151230264"
 ]
 
 //Inet
 var pod7 = [
   "podcast-card inet-solid",
   "podcast-cover inet-cover",
-  "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
+  "https://www.youtube.com/c/NewEconomicThinking/videos"
 ]
 
 //samharris
 var pod8 = [
   "podcast-card samharris-solid",
   "podcast-cover samharris-cover",
-  "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
+  "https://podcasts.apple.com/podcast/id733163012"
 ]
 
 
