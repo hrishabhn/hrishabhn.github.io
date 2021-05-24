@@ -464,12 +464,13 @@ body{
     .main-media{
         position: absolute;
         left: 0;
-        top: 105px;
+        top: 120px;
         background-color: transparent;
         width: 100%;
 
         padding-left: 0px;
         padding-bottom: 100px;
+        padding-top: 0px;
         width: 100vw;
         overflow-x: hidden;
         box-sizing: border-box;
