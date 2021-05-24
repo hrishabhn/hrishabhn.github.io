@@ -24,7 +24,7 @@ var show2 = [
   "tv-card twinpeaks-solid",
   "tv-poster twinpeaks-poster",
   "tv-gradient twinpeaks-gradient",
-  "tv-title tv-title-wide twinpeaks-title",  //title width
+  "tv-title tv-title-mid twinpeaks-title",
   "Mystery • 3 Seasons • 1990 - 1991",
   "https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a",
   "WATCH ON HULU"
@@ -46,11 +46,38 @@ var show4 = [
   "tv-card atlanta-solid",
   "tv-poster atlanta-poster",
   "tv-gradient atlanta-gradient",
-  "tv-title tv-title-mid atlanta-title", //title width
-  "Comedy • 2 Seasons • 2016 - Present",
+  "tv-title tv-title-wide atlanta-title",
+  "Comedy • 5 Seasons • 2016 - 2021",
   "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
   "WATCH ON HULU"
 ]
+
+//Kim's Convenience
+var show5 = [
+  "tv-card kim-solid",
+  "tv-poster kim-poster",
+  "tv-gradient kim-gradient",
+  "tv-title tv-title-mid kim-title", //title width
+  "Comedy • 2 Seasons • 2016 - Present",
+  "https://www.netflix.com/title/80199128",
+  "WATCH ON NETFLIX"
+]
+
+//Legion
+var show6 = [
+  "tv-card legion-solid",
+  "tv-poster legion-poster",
+  "tv-gradient legion-gradient",
+  "tv-title tv-title-wide legion-title",
+  "Sci-Fi • 3 Seasons • 2017 - 2019",
+  "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
+  "WATCH ON HULU"
+]
+
+
+
+
+
 
 
 
@@ -93,7 +120,23 @@ function populate(){
     document.getElementById("link4").href =      show4[5];
     document.getElementById("link4").innerHTML = show4[6]
 
+  //show 5
+    document.getElementById("card5").className = show5[0];
+  document.getElementById("poster5").className = show5[1];
+    document.getElementById("grad5").className = show5[2];
+   document.getElementById("title5").className = show5[3];
+    document.getElementById("desc5").innerHTML = show5[4];
+    document.getElementById("link5").href =      show5[5];
+    document.getElementById("link5").innerHTML = show5[6]
 
+  //show 6
+    document.getElementById("card6").className = show6[0];
+  document.getElementById("poster6").className = show6[1];
+    document.getElementById("grad6").className = show6[2];
+   document.getElementById("title6").className = show6[3];
+    document.getElementById("desc6").innerHTML = show6[4];
+    document.getElementById("link6").href =      show6[5];
+    document.getElementById("link6").innerHTML = show6[6]
 
 
 
@@ -101,14 +144,13 @@ function populate(){
 }
 
 
-// Comedy • 5 Seasons • 2016 - 2021
-// Sci-Fi • 3 Seasons • 2017 - 2019
+// 
+// 
 // Crime • 4 Seasons • 2018 - Present
 // Comedy • 2 Seasons • 2020 - Present
 // Drama • 1 Season • 2019
 
 
-// Kim's Convenience
 // Legion
 // Snowfall
 // Mythic Quest

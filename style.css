@@ -377,42 +377,6 @@ tv images
     opacity: 0.9;
 }
 
-.fargo{
-    background-image: url('TV/background/fargo.jpeg');
-}
-.twin-peaks{
-    background-image: url('TV/background/twin\ peaks.webp');
-}
-.always-sunny{
-    background-image: url('TV/background/always\ sunny.jpg');
-}
-.atlanta{
-    background-image: url('TV/background/atlanta.webp');
-}
-.kim{
-    background-image: url('TV/background/kims\ convenience.webp');
-}
-
-.snowfall{
-    background-image: url('TV/background/snowfall.jpeg');
-}
-.mythic-quest{
-    background-image: url('TV/background/mythic\ quest.webp');
-}
-.spy{
-    background-image: url('TV/background/spy.webp');
-}
-
-
-
-
-.legion-poster{
-    background-image: url('TV/poster/legion.webp');
-}
-.legion-colour{
-    background-color: #0a2869;
-}
-
 
 .tv-page-background{
     box-sizing: border-box;

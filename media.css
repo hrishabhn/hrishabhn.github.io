@@ -9,17 +9,19 @@ body{
 }
 
 .tv-card{
-    height: 265px;
-    width: 335px;
-    border-radius: 5px;
+    height: 235px;
+    width: 280px;
+    border-radius: 8px;
     overflow: hidden;
     display: inline-block;
     position: relative;
     vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 .tv-poster{
     width: 100%;
-    height: 190px;
+    height: 160px;
     background-size: cover;
     background-position: center;
     display: block;
@@ -27,10 +29,10 @@ body{
 .tv-gradient{
     display: block;
     position: relative;
-    top: 40px;
+    top: 60px;
 
-    width: 335px;
-    height: 150px;
+    width: 280px;
+    height: 100px;
 }
 .tv-title{
     background-size: contain;
@@ -45,19 +47,19 @@ body{
 }
 .tv-title-wide{
     height:40px;
-    width: 200px;
+    width: 150px;
 }
 .tv-title-mid{
     height: 50px;
-    width: 200px;
+    width: 300px;
 }
 .tv-title-tall{
     height: 60px;
     width: 200px;
 }
 .tv-description{
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 10px;
+    font-weight: 400;
     color: #fff;
     position: relative;
     left: 20px;
@@ -158,8 +160,36 @@ body{
     background-image: url('TV/background/twin\ peaks.webp');
 }
 .twinpeaks-title{
-    background-image: url('TV/title/twin\ peaks.webp');
+    background-image: url('TV/title/twin\ peaks.png');
 }
+
+.kim-solid{
+    background-color: #776550;
+}
+.kim-gradient{
+    background: linear-gradient(#00000000,#776550);
+}
+.kim-poster{
+    background-image: url('TV/background/kims\ convenience.webp');
+}
+.kim-title{
+    background-image: url('TV/title/twin\ peaks.png');
+}
+
+.legion-solid{
+    background-color: #523b57;
+}
+.legion-gradient{
+    background: linear-gradient(#00000000,#523b57);
+}
+.legion-poster{
+    background-image: url('TV/background/legion.webp');
+}
+.legion-title{
+    background-image: url('TV/title/legion.png');
+}
+
+
 
 
 
@@ -167,7 +197,33 @@ body{
 
 @media(max-width: 400px){
     .tv-card{
+        height: 265px;
+    width: 335px;
+
+
+
+
+
+
+
+
         margin-left: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .tv-poster{
+        height: 190px;
+    }
+    .tv-gradient{
+
+
+        top: 40px;
+    
+        width: 335px;
+        height: 150px;
+    }
+    .tv-description{
+        font-size: 12px;
+        font-weight: 500;
     }
 }
