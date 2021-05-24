@@ -72,7 +72,7 @@ body{
 
 
 .tv-link{
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -85,10 +85,26 @@ body{
     font-size: 8px;
     font-weight: 500;
     transition: 0.25s;
+    z-index: 1;
 
 }
+.tv-service{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white !important;
+    font-size: 8px;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
 .tv-link:hover{
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.3);
     transition: 0.25s;
 
 }
@@ -137,10 +153,10 @@ body{
 }
 
 .always-solid{
-    background-color: #8d8056;
+    background-color: #5f6c74;
 }
 .always-gradient{
-    background: linear-gradient(#00000000,#8d8056);
+    background: linear-gradient(#00000000,#5f6c74);
 }
 .always-poster{
     background-image: url('TV/background/always\ sunny.jpg');
@@ -163,10 +179,10 @@ body{
 }
 
 .kim-solid{
-    background-color: #776550;
+    background-color: #aa1020;
 }
 .kim-gradient{
-    background: linear-gradient(#00000000,#776550);
+    background: linear-gradient(#00000000,#aa1020);
 }
 .kim-poster{
     background-image: url('TV/background/kims\ convenience.webp');
@@ -176,10 +192,10 @@ body{
 }
 
 .legion-solid{
-    background-color: #523b57;
+    background-color: #191128;
 }
 .legion-gradient{
-    background: linear-gradient(#00000000,#523b57);
+    background: linear-gradient(#00000000,#191128);
 }
 .legion-poster{
     background-image: url('TV/background/legion.webp');
@@ -189,13 +205,6 @@ body{
 }
 
 
-
-
-
-a:link {
-    color: #fff; 
-    text-decoration: none;
-  }
 
 
 
