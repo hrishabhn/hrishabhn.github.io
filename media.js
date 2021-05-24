@@ -122,7 +122,7 @@ var show14 = [
   "tv-title tv-title-wide spy-title", //title width
   "Drama • 1 Season • 2019",
   "https://www.netflix.com/title/80178151",
-  "WATCH ON Netflix"
+  "WATCH ON NETFLIX"
 ]
 
 var show15 = hide
