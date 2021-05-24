@@ -11,7 +11,7 @@ body{
 .tv-card{
     height: 235px;
     width: 280px;
-    border-radius: 8px;
+    border-radius: 2px;
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -162,7 +162,7 @@ body{
     background-image: url('TV/background/mythic\ quest.webp');
 }
 .mythic-title{
-    background-image: url('TV/title/snowfall.png');
+    background-image: url('TV/title/mythic\ quest.png');
 }
 
 .spy-solid{
