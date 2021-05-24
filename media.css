@@ -134,10 +134,10 @@ body{
 
 
 .fargo-solid{
-    background-color: #5d5a66;
+    background-color: #28374E;
 }
 .fargo-gradient{
-    background: linear-gradient(#00000000,#5d5a66);
+    background: linear-gradient(#00000000,#28374E);
 }
 .fargo-poster{
     background-image: url('TV/background/fargo.jpeg');
@@ -217,10 +217,10 @@ body{
 }
 
 .twinpeaks-solid{
-    background-color: #b3a58c;
+    background-color: #9D9686;
 }
 .twinpeaks-gradient{
-    background: linear-gradient(#00000000,#b3a58c);
+    background: linear-gradient(#00000000,#9D9686);
 }
 .twinpeaks-poster{
     background-image: url('TV/background/twin\ peaks.webp');
