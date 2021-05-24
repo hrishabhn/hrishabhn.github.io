@@ -153,10 +153,10 @@ body{
 }
 
 .always-solid{
-    background-color: #5f6c74;
+    background-color: #5c666a;
 }
 .always-gradient{
-    background: linear-gradient(#00000000,#5f6c74);
+    background: linear-gradient(#00000000,#5c666a);
 }
 .always-poster{
     background-image: url('TV/background/always\ sunny.jpg');
