@@ -46,7 +46,7 @@ body{
     background-color: #00000000;
 }
 .tv-title-wide{
-    height:40px;
+    height:35px;
     width: 150px;
 }
 .tv-title-mid{
@@ -151,6 +151,37 @@ body{
 .snowfall-title{
     background-image: url('TV/title/snowfall.png');
 }
+
+.mythic-solid{
+    background-color: #6e5b57;
+}
+.mythic-gradient{
+    background: linear-gradient(#00000000,#6e5b57);
+}
+.mythic-poster{
+    background-image: url('TV/background/mythic\ quest.webp');
+}
+.mythic-title{
+    background-image: url('TV/title/snowfall.png');
+}
+
+.spy-solid{
+    background-color: #5E290F;
+}
+.spy-gradient{
+    background: linear-gradient(#00000000,#5E290F);
+}
+.spy-poster{
+    background-image: url('TV/background/spy.webp');
+}
+.spy-title{
+    background-image: url('TV/title/spy.png');
+}
+
+
+
+
+
 
 .always-solid{
     background-color: #5c666a;
