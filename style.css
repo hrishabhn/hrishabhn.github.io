@@ -8,6 +8,10 @@ body{
     background-color: #000;
 }
 
+.title-fade{
+    display: none;
+}
+
 .title-box{
     padding-top: 5px;
     padding-bottom: 15px;
