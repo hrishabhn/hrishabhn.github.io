@@ -13,9 +13,11 @@ body{
 }
 
 .title-box{
-    padding-top: 5px;
+    padding-top: 35px;
     padding-bottom: 15px;
     margin: 0;
+    width: 100%;
+    background: transparent;
 }
 .title-text{
     font-weight: 300;
