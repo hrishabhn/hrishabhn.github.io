@@ -110,10 +110,13 @@ body{
 }
 
 .scrolling-wrapper {
-
+    padding-left: 220px;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    position: relative;
+    right: 220px;
+    width: 100%;
 }
 .tv-card {
     display: inline-block;
@@ -251,6 +254,12 @@ body{
 
 
 @media(max-width: 400px){
+    .scrolling-wrapper {
+        padding-left: 20px;
+    }
+
+
+
     .tv-card{
         height: 265px;
     width: 335px;
