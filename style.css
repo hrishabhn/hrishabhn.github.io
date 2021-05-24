@@ -63,7 +63,7 @@ body{
     padding-left: 16px;
 }
 .sidebar-blur{
-    -webkit-backdrop-filter: blur(250px);
+    -webkit-backdrop-filter: blur(50px);
 }
 .sidebar-image{
     height: 100%;
@@ -265,6 +265,12 @@ body{
     bottom: 70px;
 }
 
+.frozen{
+    overflow: hidden;
+}
+
+
+
 
 
 
@@ -309,7 +315,7 @@ body{
 /*
 tv images
 */
-.tv-show{
+/* .tv-show{
     box-sizing: border-box;
     display: inline-block;
     height: 164px;
@@ -327,7 +333,7 @@ tv images
     box-sizing: border-box;
     background: linear-gradient(#00000000,#000000cc);
     padding: 0px;
-}
+} */
 
 /* .tv-title{
     font-size: 12px;
@@ -340,7 +346,7 @@ tv images
     overflow: hidden;
     text-overflow: ellipsis; */
 }
-.tv-subtitle{
+/* .tv-subtitle{
     font-size: 8px;
     color: #fff;
     position: absolute;
@@ -412,7 +418,15 @@ tv images
     width: min-content;
 }
 
-
+.scrolling-wrapper {
+    padding-left: 220px;
+    position:relative;
+    right: 220px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+} */
 
 
 /*
@@ -612,6 +626,8 @@ gradients
 .amazon{
     background:linear-gradient(to bottom right,#1E2631,#4c617d);
 }
+
+
 
 
 @media(max-width: 400px){
@@ -830,10 +846,14 @@ gradients
 
 
 
+    .scrolling-wrapper {
+        padding-left: 20px;
+    }
 
 
-
-
+    .frozen-mobile{
+        overflow: hidden;
+    }
 
 
 }
