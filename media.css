@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.tv-card{
+    height: 270px;
+    width: 335px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+.tv-poster{
+    width: 100%;
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+.tv-gradient{
+    display: block;
+    position: relative;
+    top: 40px;
+
+    width: 335px;
+    height: 150px;
+}
+.tv-title{
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+
+    background-position: 0 100%;
+    background-color: #00000000;
+}
+.tv-title-wide{
+    height:40px;
+    width: 200px;
+}
+.tv-title-mid{
+    height: 50px;
+    width: 200px;
+}
+.tv-title-tall{
+    height: 60px;
+    width: 200px;
+}
+.tv-description{
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+
+
+
+.play-button-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 70px;
+    border-radius: 25px;
+
+    transition: 0.2s;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    transition: 0.2s;
+    margin: 0px;
+}
+.play-button-icon{
+    fill: #fff;
+    margin-right: 8px;
+    height: 10px;
+    width: 10px;
+}
+.play-button-label{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.play-button:hover{
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
+
+/* 
+.play-button-container{
+    display: inline-flex;
+    position: relative;
+    bottom: 0px;
+    width: 335px;
+    height: 40px;
+    transition: 0.25s;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.25s;
+}
+.play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 100%;
+    width: 100%;
+
+    transition: 0.25s;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.play-button-icon{
+    fill: #fff;
+    margin-right: 0px;
+    height: 10px;
+    width: 10px;
+
+}
+.play-button-label{
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: 600;
+    color: #fff;
+}
+.play-button:hover{
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+.tv-link{
+    
+}
+.tv-link:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.25s;
+
+}
+
+play-button{
+    height: 12px;
+    width: 12px;
+} */
+
+
+
+
+.fargo-solid{
+    background-color: #5d5a66;
+}
+.fargo-gradient{
+    background: linear-gradient(#00000000,#5d5a66);
+}
+.fargo-poster{
+    background-image: url('TV/background/fargo.jpeg');
+}
+.fargo-title{
+    background-image: url('TV/title/fargo.png');
+}
+
+
+
+.atlanta-solid{
+    background-color: #584029;
+}
+.atlanta-gradient{
+    background: linear-gradient(#00000000,#584029);
+}
+.atlanta-poster{
+    background-image: url('TV/background/atlanta.webp');
+}
+.atlanta-title{
+    background-image: url('TV/title/atlanta.png');
+}
+
+.snowfall-solid{
+    background-color: #503e5b;
+}
+.snowfall-gradient{
+    background: linear-gradient(#00000000,#503e5b);
+}
+.snowfall-poster{
+    background-image: url('TV/background/snowfall.jpeg');
+}
+.snowfall-title{
+    background-image: url('TV/title/snowfall.png');
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 400px){
+    
+}
