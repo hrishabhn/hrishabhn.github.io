@@ -90,7 +90,7 @@ function populate(){
    document.getElementById("title1").className = show1[3];
     document.getElementById("desc1").innerHTML = show1[4];
     document.getElementById("link1").href =      show1[5];
-    document.getElementById("link1").innerHTML = show1[6];
+ document.getElementById("service1").innerHTML = show1[6];
 
 
   //show 2
@@ -100,7 +100,7 @@ function populate(){
    document.getElementById("title2").className = show2[3];
     document.getElementById("desc2").innerHTML = show2[4];
     document.getElementById("link2").href =      show2[5];
-    document.getElementById("link2").innerHTML = show2[6];
+    document.getElementById("service2").innerHTML = show2[6];
   
   //show 3
     document.getElementById("card3").className = show3[0];
@@ -109,7 +109,7 @@ function populate(){
    document.getElementById("title3").className = show3[3];
     document.getElementById("desc3").innerHTML = show3[4];
     document.getElementById("link3").href =      show3[5];
-    document.getElementById("link3").innerHTML = show3[6];
+    document.getElementById("service3").innerHTML = show3[6];
   
   //show 4
     document.getElementById("card4").className = show4[0];
@@ -118,7 +118,7 @@ function populate(){
    document.getElementById("title4").className = show4[3];
     document.getElementById("desc4").innerHTML = show4[4];
     document.getElementById("link4").href =      show4[5];
-    document.getElementById("link4").innerHTML = show4[6]
+    document.getElementById("service4").innerHTML = show4[6]
 
   //show 5
     document.getElementById("card5").className = show5[0];
@@ -127,7 +127,7 @@ function populate(){
    document.getElementById("title5").className = show5[3];
     document.getElementById("desc5").innerHTML = show5[4];
     document.getElementById("link5").href =      show5[5];
-    document.getElementById("link5").innerHTML = show5[6]
+    document.getElementById("service5").innerHTML = show5[6]
 
   //show 6
     document.getElementById("card6").className = show6[0];
@@ -136,7 +136,7 @@ function populate(){
    document.getElementById("title6").className = show6[3];
     document.getElementById("desc6").innerHTML = show6[4];
     document.getElementById("link6").href =      show6[5];
-    document.getElementById("link6").innerHTML = show6[6]
+    document.getElementById("service6").innerHTML = show6[6]
 
 
 
