@@ -110,7 +110,7 @@ body{
 }
 
 .scrolling-wrapper {
-    padding-left: 20px;
+
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
