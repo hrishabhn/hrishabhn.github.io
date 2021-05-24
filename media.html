@@ -4,14 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>Media</title>
 
+    <!-- <script src"media.js"></script> -->
+
+
 </head>
 
-<body>
+<body onload="populate()">
     <div class="sidebar">
         <div class="title-box hidden-mobile">
             <p1 class="title-text title-sidebar">Menu</p1>
@@ -112,119 +116,139 @@
             <p1 class="title-text">Media</p1>
         </div>
 
-        <div class="tv-show fargo">
-            <div class="fade">
-                <p class="tv-title">
-                    Fargo
-                </p>
-                <p class="tv-subtitle">
-                    Crime • 4 Seasons • 2014 - Present
-                </p>
-                <a class="tv-play hulu-green" href="https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50">
-                    Hulu
+        <script src="media.js"></script>
+
+
+
+        <div id="card1" class="tv-card show-solid">
+            <span id="poster1" class="tv-poster show-poster">
+                <span id="grad1" class="tv-gradient show-gradient">
+                    <span id="title1" class="tv-title tv-title-size show-title">
+                    </span>
+                </span>
+            </span>
+            <span class="tv-description">
+                <p id="desc1"></p>
+            </span>
+            
+            <div class="play-button-container hidden-mobile">
+                <a class="play-button" href="https://outlook.live.com" target="_self">
+                    <span class="play-button-icon">
+                        <svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                            <g>
+                                <path
+                                    d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z"
+                                    xmlns="http://www.w3.org/2000/svg" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="play-button-label">
+                        Outlook
+                    </span>
                 </a>
             </div>
-        </div><div class="tv-show twin-peaks">
-            <div class="fade">
-                <p class="tv-title">
-                    Twin Peaks
-                </p>
-                <p class="tv-subtitle">
-                    Mystery • 3 Seasons • 1990 - 1991
-                </p>
-                <a class="tv-play hulu-green" href="https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a">
-                    Hulu
-                </a>
-            </div>
-        </div><div class="tv-show always-sunny">
-            <div class="fade">
-                <p class="tv-title">
-                    It's Always Sunny in Philadelphia
-                </p>
-                <p class="tv-subtitle">
-                    Comedy • 14 Seasons • 2005 - Present
-                </p>
-                <a class="tv-play hulu-green" href="https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109">
-                    Hulu
-                </a>
-            </div>
-        </div><div class="tv-show atlanta">
-            <div class="fade">
-                <p class="tv-title">
-                    Atlanta
-                </p>
-                <p class="tv-subtitle">
-                    Comedy • 2 Seasons • 2016 - Present
-                </p>
-                <a class="tv-play hulu-green" href="https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530">
-                    Hulu
-                </a>
-            </div>
-        </div><div class="tv-show kim">
-            <div class="fade">
-                <p class="tv-title">
-                    Kim's Convenience
-                </p>
-                <p class="tv-subtitle">
-                    Comedy • 5 Seasons • 2016 - 2021
-                </p>
-                <a class="tv-play netflix" href="https://www.netflix.com/title/80199128">
-                    Netflix
-                </a>
-            </div>
-        </div><div class="tv-show legion-poster">
-            <div class="fade">
-                <p class="tv-title">
-                    Legion
-                </p>
-                <p class="tv-subtitle">
-                    Sci-Fi • 3 Seasons • 2017 - 2019
-                </p>
-                <a class="tv-play hulu-green" href="legion.html">
-                    Hulu
-                </a>
-            </div>
-        </div><div class="tv-show snowfall">
-            <div class="fade">
-                <p class="tv-title">
-                    Snowfall
-                </p>
-                <p class="tv-subtitle">
-                    Crime • 4 Seasons • 2018 - Present
-                </p>
-                <a class="tv-play hulu-green" href="https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6">
-                    Hulu
-                </a>
-            </div>
-        </div><div class="tv-show mythic-quest">
-            <div class="fade">
-                <p class="tv-title">
-                    Mythic Quest
-                </p>
-                <p class="tv-subtitle">
-                    Comedy • 2 Seasons • 2020 - Present
-                </p>
-                <a class="tv-play black-gradient" href="https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3">
-                     TV+
-                </a>
-            </div>
-        </div><div class="tv-show spy">
-            <div class="fade">
-                <p class="tv-title">
-                    The Spy
-                </p>
-                <p class="tv-subtitle">
-                    Drama • 1 Season • 2019
-                </p>
-                <a class="tv-play netflix" href="https://www.netflix.com/title/80178151">
-                    Netflix
-                </a>
-            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <a class="tv-link">
+                <span class="play-button">
+                    <svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                            <g>
+                                <path
+                                    d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z"
+                                    xmlns="http://www.w3.org/2000/svg" />
+                            </g>
+                        </svg>
+                </span>
+                
+                <!-- WATCH -->
+            </a>
         </div>
 
 
 
 
+
+
+
+
+        <div id="card2" class="tv-card show-solid">
+            <span id="poster2" class="tv-poster show-poster">
+                <span id="grad2" class="tv-gradient show-gradient">
+                    <span id="title2" class="tv-title tv-title-size show-title">
+                    </span>
+                </span>
+            </span>
+            <span class="tv-description">
+                <p id="desc2"></p>
+            </span>
+        </div>
+
+        <div id="card3" class="tv-card show-solid">
+            <span id="poster3" class="tv-poster show-poster">
+                <span id="grad3" class="tv-gradient show-gradient">
+                    <span id="title3" class="tv-title tv-title-size show-title">
+                    </span>
+                </span>
+            </span>
+            <span class="tv-description">
+                <p id="desc3"></p>
+            </span>
+        </div>
+
+        <div id="card4" class="tv-card show-solid">
+            <span id="poster4" class="tv-poster show-poster">
+                <span id="grad4" class="tv-gradient show-gradient">
+                    <span id="title4" class="tv-title tv-title-size show-title">
+                    </span>
+                </span>
+            </span>
+            <span class="tv-description">
+                <p id="desc4"></p>
+            </span>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="tv-card snowfall-solid">
+            <span class="tv-poster snowfall-poster">
+                <span class="tv-gradient snowfall-gradient">
+                    <span class="tv-title tv-title-wide snowfall-title">
+
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="tv-card atlanta-solid">
+            <span class="tv-poster atlanta-poster">
+                <span class="tv-gradient atlanta-gradient">
+                    <span class="tv-title tv-title-wide atlanta-title">
+
+                    </span>
+                </span>
+            </span>
+        </div>
 
 
 
