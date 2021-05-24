@@ -8,6 +8,20 @@ body{
     background-color: #000;
 }
 
+.media-subtitle-box{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    margin: 0;
+    width: 100%;
+    background: transparent;
+}
+.media-subtitle-text{
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+}
+
 
 .tv-card{
     height: 235px;
@@ -249,6 +263,23 @@ body{
 @media(max-width: 400px){
     
 
+    .media-subtitle-box{
+
+
+
+        padding: 20px 0 5px 20px;
+
+        box-sizing: border-box;
+
+
+        width: 100%;
+    }
+    .media-subtitle-text{
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        background-color: transparent;
+    }
 
 
     .tv-card{
