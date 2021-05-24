@@ -690,7 +690,7 @@ gradients
         left: 0;
         background: linear-gradient(#000,#00000080);
         z-index: 2;
-        -webkit-backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(1000px);
     }
     .title-extend{
         height: 110px !important;
