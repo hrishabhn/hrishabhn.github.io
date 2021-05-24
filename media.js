@@ -57,7 +57,7 @@ var show5 = [
   "tv-card kim-solid",
   "tv-poster kim-poster",
   "tv-gradient kim-gradient",
-  "tv-title tv-title-mid kim-title", //title width
+  "tv-title tv-title-mid kim-title",
   "Comedy • 2 Seasons • 2016 - Present",
   "https://www.netflix.com/title/80199128",
   "WATCH ON NETFLIX"
@@ -74,8 +74,38 @@ var show6 = [
   "WATCH ON HULU"
 ]
 
+//Snowfall
+var show7 = [
+  "tv-card snowfall-solid",
+  "tv-poster snowfall-poster",
+  "tv-gradient snowfall-gradient",
+  "tv-title tv-title-wide snowfall-title", //title width
+  "Crime • 4 Seasons • 2018 - Present",
+  "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
+  "WATCH ON HULU"
+]
 
+//Mythic quest
+var show8 = [
+  "tv-card mythic-solid",
+  "tv-poster mythic-poster",
+  "tv-gradient mythic-gradient",
+  "tv-title tv-title-wide mythic-title", //title width
+  "Comedy • 2 Seasons • 2020 - Present",
+  "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
+  "WATCH ON  TV+"
+]
 
+//Spy
+var show9 = [
+  "tv-card spy-solid",
+  "tv-poster spy-poster",
+  "tv-gradient spy-gradient",
+  "tv-title tv-title-wide spy-title", //title width
+  "Drama • 1 Season • 2019",
+  "https://www.netflix.com/title/80178151",
+  "WATCH ON Netflix"
+]
 
 
 
@@ -100,7 +130,7 @@ function populate(){
    document.getElementById("title2").className = show2[3];
     document.getElementById("desc2").innerHTML = show2[4];
     document.getElementById("link2").href =      show2[5];
-    document.getElementById("service2").innerHTML = show2[6];
+ document.getElementById("service2").innerHTML = show2[6];
   
   //show 3
     document.getElementById("card3").className = show3[0];
@@ -109,7 +139,7 @@ function populate(){
    document.getElementById("title3").className = show3[3];
     document.getElementById("desc3").innerHTML = show3[4];
     document.getElementById("link3").href =      show3[5];
-    document.getElementById("service3").innerHTML = show3[6];
+ document.getElementById("service3").innerHTML = show3[6];
   
   //show 4
     document.getElementById("card4").className = show4[0];
@@ -118,7 +148,7 @@ function populate(){
    document.getElementById("title4").className = show4[3];
     document.getElementById("desc4").innerHTML = show4[4];
     document.getElementById("link4").href =      show4[5];
-    document.getElementById("service4").innerHTML = show4[6]
+ document.getElementById("service4").innerHTML = show4[6];
 
   //show 5
     document.getElementById("card5").className = show5[0];
@@ -127,7 +157,7 @@ function populate(){
    document.getElementById("title5").className = show5[3];
     document.getElementById("desc5").innerHTML = show5[4];
     document.getElementById("link5").href =      show5[5];
-    document.getElementById("service5").innerHTML = show5[6]
+ document.getElementById("service5").innerHTML = show5[6];
 
   //show 6
     document.getElementById("card6").className = show6[0];
@@ -136,11 +166,35 @@ function populate(){
    document.getElementById("title6").className = show6[3];
     document.getElementById("desc6").innerHTML = show6[4];
     document.getElementById("link6").href =      show6[5];
-    document.getElementById("service6").innerHTML = show6[6]
+ document.getElementById("service6").innerHTML = show6[6];
 
+  //show 7
+    document.getElementById("card7").className = show7[0];
+  document.getElementById("poster7").className = show7[1];
+    document.getElementById("grad7").className = show7[2];
+   document.getElementById("title7").className = show7[3];
+    document.getElementById("desc7").innerHTML = show7[4];
+    document.getElementById("link7").href =      show7[5];
+ document.getElementById("service7").innerHTML = show7[6];
 
-
-    
+  //show 8
+    document.getElementById("card8").className = show8[0];
+  document.getElementById("poster8").className = show8[1];
+    document.getElementById("grad8").className = show8[2];
+   document.getElementById("title8").className = show8[3];
+    document.getElementById("desc8").innerHTML = show8[4];
+    document.getElementById("link8").href =      show8[5];
+ document.getElementById("service8").innerHTML = show8[6];
+  
+  //show 9
+    document.getElementById("card9").className = show9[0];
+  document.getElementById("poster9").className = show9[1];
+    document.getElementById("grad9").className = show9[2];
+   document.getElementById("title9").className = show9[3];
+    document.getElementById("desc9").innerHTML = show9[4];
+    document.getElementById("link9").href =      show9[5];
+ document.getElementById("service9").innerHTML = show9[6];
+  
 
 
 }
@@ -148,9 +202,9 @@ function populate(){
 
 // 
 // 
-// Crime • 4 Seasons • 2018 - Present
-// Comedy • 2 Seasons • 2020 - Present
-// Drama • 1 Season • 2019
+// 
+// 
+// 
 
 
 // Legion
