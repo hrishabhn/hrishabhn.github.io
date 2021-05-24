@@ -145,6 +145,7 @@ body{
     right: 220px;
     width: 100vw;
     box-sizing: border-box;
+    padding-bottom: 20px;
 }
 
 
@@ -850,6 +851,7 @@ gradients
         right: 0px;
         width: 100vw;
         box-sizing: border-box;
+        padding-bottom: 20px;
     }
 
 
