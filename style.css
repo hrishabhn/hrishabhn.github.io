@@ -417,16 +417,7 @@ tv images
     top: 120px;
     width: min-content;
 }
-
-.scrolling-wrapper {
-    padding-left: 220px;
-    position:relative;
-    right: 220px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    width: 100%;
-} */
+*/
 
 
 /*
@@ -846,9 +837,7 @@ gradients
 
 
 
-    .scrolling-wrapper {
-        padding-left: 20px;
-    }
+   
 
 
     .frozen-mobile{
