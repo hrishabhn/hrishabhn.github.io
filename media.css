@@ -81,8 +81,7 @@ body{
     display: flex;
     padding-left: 20px;
     text-decoration: none;
-
-    color: white;
+    color: white !important;
     font-size: 8px;
     font-weight: 500;
     transition: 0.25s;
@@ -191,6 +190,12 @@ body{
 
 
 
+
+
+a:link {
+    color: #fff; 
+    text-decoration: none;
+  }
 
 
 
