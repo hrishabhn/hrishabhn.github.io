@@ -841,6 +841,19 @@ gradients
         transform: translate(-50%,0);
     }
 
+    .scrolling-wrapper {
+        padding-left: 20px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        position: relative;
+        right: 0px;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+
+
     /*
     tv page
     */
