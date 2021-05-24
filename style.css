@@ -722,7 +722,7 @@ gradients
         position: fixed;
         top: 0px;
         left: 0;
-        background: linear-gradient(#000,#00000000);
+        background: linear-gradient(#000,#00000080);
         z-index: 2;
         -webkit-backdrop-filter: blur(100px);
     }
