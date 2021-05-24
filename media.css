@@ -345,10 +345,10 @@ body{
 }
 
 .mythic-solid{
-    background-color: #434361;
+    background-color: #2F322F;
 }
 .mythic-gradient{
-    background: linear-gradient(#00000000,#434361);
+    background: linear-gradient(#00000000,#2F322F);
 }
 .mythic-poster{
     background-image: url('TV/background/mythic\ quest.webp');
@@ -358,10 +358,10 @@ body{
 }
 
 .spy-solid{
-    background-color: #5E290F;
+    background-color: #52392B;
 }
 .spy-gradient{
-    background: linear-gradient(#00000000,#5E290F);
+    background: linear-gradient(#00000000,#52392B);
 }
 .spy-poster{
     background-image: url('TV/background/spy.webp');
@@ -369,11 +369,6 @@ body{
 .spy-title{
     background-image: url('TV/title/spy.png');
 }
-
-
-
-
-
 
 .always-solid{
     background-color: #5c666a;
@@ -402,10 +397,10 @@ body{
 }
 
 .kim-solid{
-    background-color: #CB1A32;
+    background-color: #9D1717;
 }
 .kim-gradient{
-    background: linear-gradient(#00000000,#CB1A32);
+    background: linear-gradient(#00000000,#9D1717);
 }
 .kim-poster{
     background-image: url('TV/background/kims\ convenience.webp');
