@@ -438,6 +438,20 @@ body{
 
 
 
+@media(max-width: 800px){
+    .main-media{
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 104px;
+    
+        background: none;
+        width: 100vw;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+}
 
 
 
