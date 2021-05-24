@@ -107,6 +107,75 @@ var show9 = [
   "WATCH ON Netflix"
 ]
 
+// PODCASTS //
+
+//Pivot
+var pod1 = [
+  "podcast-card pivot-solid",
+  "podcast-cover pivot-cover",
+  "https://podcasts.apple.com/podcast/pivot/id1073226719"
+]
+
+//Lex fridman
+var pod2 = [
+  "podcast-card lex-solid",
+  "podcast-cover lex-cover",
+  "https://www.youtube.com/lexfridman/videos"
+]
+
+//Acquired
+var pod3 = [
+  "podcast-card acquired-solid",
+  "podcast-cover acquired-cover",
+  "https://podcasts.apple.com/podcast/acquired/id1050462261"
+]
+
+//Yang
+var pod4 = [
+  "podcast-card yang-solid",
+  "podcast-cover yang-cover",
+  "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
+]
+
+//Sway
+var pod5 = [
+  "podcast-card sway-solid",
+  "podcast-cover sway-cover",
+  "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
+]
+
+//Economist
+var pod6 = [
+  "podcast-card economist-solid",
+  "podcast-cover economist-cover",
+  "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
+]
+
+//Inet
+var pod7 = [
+  "podcast-card inet-solid",
+  "podcast-cover inet-cover",
+  "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
+]
+
+//samharris
+var pod8 = [
+  "podcast-card samharris-solid",
+  "podcast-cover samharris-cover",
+  "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
+]
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -195,6 +264,54 @@ function populate(){
     document.getElementById("link9").href =      show9[5];
  document.getElementById("service9").innerHTML = show9[6];
   
+  // PODCASTS //
+
+  //pod 1
+   document.getElementById("podCard1").className = pod1[0];
+  document.getElementById("podCover1").className = pod1[1];
+   document.getElementById("podLink1").href =      pod1[2];
+
+  //pod 2
+   document.getElementById("podCard2").className = pod2[0];
+  document.getElementById("podCover2").className = pod2[1];
+   document.getElementById("podLink2").href =      pod2[2];
+
+   //pod 3
+   document.getElementById("podCard3").className = pod3[0];
+  document.getElementById("podCover3").className = pod3[1];
+   document.getElementById("podLink3").href =      pod3[2];
+
+   //pod 4
+   document.getElementById("podCard4").className = pod4[0];
+  document.getElementById("podCover4").className = pod4[1];
+   document.getElementById("podLink4").href =      pod4[2];
+
+   //pod 5
+   document.getElementById("podCard5").className = pod5[0];
+  document.getElementById("podCover5").className = pod5[1];
+   document.getElementById("podLink5").href =      pod5[2];
+
+  //pod 6
+   document.getElementById("podCard6").className = pod6[0];
+  document.getElementById("podCover6").className = pod6[1];
+   document.getElementById("podLink6").href =      pod6[2];
+
+   //pod 7
+   document.getElementById("podCard7").className = pod7[0];
+  document.getElementById("podCover7").className = pod7[1];
+   document.getElementById("podLink7").href =      pod7[2];
+
+   //pod 8
+   document.getElementById("podCard8").className = pod8[0];
+  document.getElementById("podCover8").className = pod8[1];
+   document.getElementById("podLink8").href =      pod8[2];
+
+
+
+
+
+
+
 
 
 }
