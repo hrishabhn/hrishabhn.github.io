@@ -8,11 +8,6 @@ body{
     background-color: #000;
 }
 
-main{
-    overflow-x: hidden;
-}
-
-
 
 .tv-card{
     height: 235px;
@@ -252,9 +247,7 @@ main{
 
 
 @media(max-width: 400px){
-    .scrolling-wrapper {
-        padding-left: 20px;
-    }
+    
 
 
 
