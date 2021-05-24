@@ -8,6 +8,12 @@ body{
     background-color: #000;
 }
 
+main{
+    overflow-x: hidden;
+}
+
+
+
 .tv-card{
     height: 235px;
     width: 280px;
@@ -109,15 +115,7 @@ body{
 
 }
 
-.scrolling-wrapper {
-    padding-left: 220px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    position: relative;
-    right: 220px;
-    width: 100%;
-}
+
 .tv-card {
     display: inline-block;
 }
