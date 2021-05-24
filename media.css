@@ -129,6 +129,66 @@ body{
 
 }
 
+.book-card{
+    height: 340px;
+    width: 200px;
+
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+.book-cover{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+.book-link{
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white !important;
+    transition: 0.25s;
+    z-index: 1;
+}
+
+.book-link:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.25s;
+}
+
+
+.homodeus-solid{
+    background-color: #190e10;
+}
+.homodeus-gradient{
+    background: linear-gradient(#00000000,#190e10);
+}
+.homodeus-cover{
+    background-image: url('books/homo\ deus.jpg');
+}
+
+.ride-solid{
+    background-color: #615c5c;
+}
+.ride-gradient{
+    background: linear-gradient(#00000000,#615c5c);
+}
+.ride-cover{
+    background-image: url('books/ride\ of\ a\ lifetime.jpg');
+}
+
 
 
 
