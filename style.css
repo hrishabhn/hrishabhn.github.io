@@ -126,6 +126,11 @@ body{
     background-color: #000;
     width: 900px;
 }
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 .search-container{
     display: flex;
@@ -728,7 +733,7 @@ gradients
 
     .main{
         position: absolute;
-        top: 70px;
+        top: 80px;
         left: 0;
         background-color:transparent;
         width: 100%;
