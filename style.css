@@ -63,7 +63,7 @@ body{
     padding-left: 16px;
 }
 .sidebar-blur{
-    -webkit-backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(30px);
 }
 .sidebar-image{
     height: 100%;
@@ -135,6 +135,18 @@ body{
 ::-webkit-scrollbar {
     display: none;
 }
+
+.scrolling-wrapper {
+    padding-left: 220px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    right: 220px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
 
 
 
