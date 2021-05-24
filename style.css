@@ -762,12 +762,12 @@ gradients
         top: 0;
         left: 0;
         padding-left: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         padding-top: 0;
         padding-right: 0;
 
         box-sizing: border-box;
-        height: 80px;
+        height: 85px;
 
         width: 100%;
         z-index: 5;
