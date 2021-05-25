@@ -3,15 +3,17 @@
     left: 0;
     top: 0;
     padding-left: 240px;
+    padding-top: 110px;
 
     background: none;
     width: 100vw;
     overflow-x: hidden;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 .media-bar{
-    background:#D93229;
+    background:rgba(217, 50, 41, 0.9);
 }
 
 .media-subtitle-box{
