@@ -120,7 +120,7 @@
     font-weight: 500;
     transition: 0.25s;
     z-index: 1;
-
+    overflow: hidden;
 }
 .tv-service{
     position: absolute;
@@ -135,6 +135,7 @@
     font-size: 10px;
     font-weight: 600;
     transition: 0.25s;
+
 }
 
 .tv-link:hover{
@@ -435,6 +436,22 @@
 .legion-title{
     background-image: url('TV/title/legion.png');
 }
+
+@media screen and (prefers-color-scheme: light) {
+    .main-media{
+        background-color: white;
+        color: black;
+    }
+    .media-subtitle-text{
+        color: black;
+    }
+    .tv-card{
+        
+    }
+}
+
+
+
 
 
 
