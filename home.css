@@ -9,7 +9,7 @@
 }
 
 .home-bar{
-    background: #8080FF;
+    background: rgba(128, 128, 255, 0.9);
 }
 
 
@@ -138,7 +138,7 @@
     -webkit-backdrop-filter: blur(30px);
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 35px 10px 0;
+    padding: 110px 10px 0;
 
 }
 
@@ -203,6 +203,7 @@
 
     .end-item-tablet{
         margin-right: 0 !important;
+
     }
 }
 
@@ -220,13 +221,14 @@
         top: 130px;
         left: 0;
         background-color:transparent;
-        width: 100%;
+        width: 100vw;
         height: auto;
         transform: none;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 95px;
-        min-height: 100vh
+        min-height: 100vh;
+        box-sizing: border-box;
     }
 
     .search-container{
