@@ -130,6 +130,7 @@
     top: 0px;
     right: 0;
     background-color: rgba(28, 28, 30, 0.5);
+    -webkit-backdrop-filter: blur(30px);
     overflow-x: hidden;
     overflow-y: scroll;
     padding: 35px 10px 0;
@@ -158,6 +159,11 @@
     .search{
         background-color: #f2f2f7;
     }
+    .app-tray{
+
+        background-color: rgba(242, 242, 247,0.9);
+    }
+
     .app-box{
         background-color: #e5e5ea;
     }
@@ -198,9 +204,9 @@
 
 
 @media(max-width: 450px){
-    .wallpaper{
+    /* .wallpaper{
         display: none;
-    }
+    } */
 
 
     .main-home{
