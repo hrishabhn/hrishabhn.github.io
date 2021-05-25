@@ -429,14 +429,10 @@
 
 @media screen and (prefers-color-scheme: light) {
     .main-media{
-        background-color: white;
-        color: black;
+        background-color: transparent;
     }
     .media-subtitle-text{
-        color: black;
-    }
-    .tv-card{
-        
+        color: #1c1c1e;
     }
 }
 
