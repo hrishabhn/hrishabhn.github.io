@@ -44,7 +44,7 @@ body{
 
 .title-text{
     font-weight: 600;
-    font-size: 36px;
+    font-size: 30px;
     color: #fff;
     background-color: transparent;
     display: flex;
@@ -729,7 +729,9 @@ gradients
         box-sizing: border-box;
         padding-bottom: 20px;
     }
-
+    .title-box{
+        padding-left: 104px;
+    }
 
 }
 
