@@ -201,31 +201,7 @@ var pod8 = [
 
 
 
-
-
-function populate(pageType){
-
-  switch(pageType){
-    case 1:
-      var cardClass = "tv-card ";
-      var posterClass = "tv-poster ";
-      var gradientClass = "tv-gradient ";
-      var titleClass = "tv-title ";
-      break;
-    case 2:
-      var cardClass = "tv-page-card ";
-      var posterClass = "tv-page-poster ";
-      var gradientClass = "tv-page-gradient ";
-      var titleClass = "tv-page-title ";
-      break;
-    default:
-      var cardClass = " ";
-      var posterClass = " ";
-      var gradientClass = " ";
-      var titleClass = " ";
-  }
-
-  var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showSolid = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showPoster = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showGradient = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -397,6 +373,38 @@ function populate(pageType){
   showDescription[k] = show20[4];
          showLink[k] = show20[5];
       showService[k] = show20[6];
+
+
+function tvPage(n){
+  var cardClass = "tv-page-card ";
+  var posterClass = "tv-page-poster ";
+  var gradientClass = "tv-page-gradient ";
+  var titleClass = "tv-page-title ";
+
+  document.getElementById("card").className =        cardClass.concat(showSolid[n]);
+  document.getElementById("poster").className =   posterClass.concat(showPoster[n]);
+  document.getElementById("grad").className = gradientClass.concat(showGradient[n]);
+  document.getElementById("title").className =      titleClass.concat(showTitle[n]);
+  document.getElementById("desc").innerHTML =                   showDescription[n];
+  document.getElementById("link").href =                               showLink[n];
+  document.getElementById("service").innerHTML =                    showService[n];
+}
+
+
+
+
+
+
+
+
+
+function populate(){
+  var cardClass = "tv-card ";
+  var posterClass = "tv-poster ";
+  var gradientClass = "tv-gradient ";
+  var titleClass = "tv-title ";
+
+  
 
 
 
