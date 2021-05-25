@@ -83,6 +83,29 @@
 }
 
 
+
+.scrolling-wrapper{
+    padding-left: 240px;
+    right: 240px;
+    padding-right: 80px;
+
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 .tv-card{
     height: 265px;
     width: 335px;
@@ -514,7 +537,10 @@
         overflow-x: hidden;
         box-sizing: border-box;
     }
-
+    .scrolling-wrapper {
+        padding-left: 104px;
+        right: 104px;
+    }
 }
 
 
@@ -540,6 +566,9 @@
         box-sizing: border-box;
     }
 
+    .media-app-tray{
+        display: none;
+    }
 
 
 
@@ -566,6 +595,24 @@
         font-size: 12px;
         font-weight: 500;
     }
+    
+    .scrolling-wrapper {
+        padding-left: 20px;
+        right: 0;
+        padding-right: 10px;
+
+
+
+
+
+
+
+
+    }
+
+    
+
+
 
 /* @dark phone */
     @media screen and (prefers-color-scheme: light) {
