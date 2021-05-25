@@ -291,32 +291,44 @@
 /* @TV Page */
 
 
+/* .tv-page{
+    height: 100vh;
+    width: 100vw;
+    padding-left: 200px;
+    background-color: transparent;
+    box-sizing: border-box;
+} */
 
 .tv-page-card{
-    height: 265px;
-    width: 1000px;
-    border-radius: 4px;
-    overflow: hidden;
-    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0px;
+
+    padding-left: 200px;
+    box-sizing: border-box;
+
     position: relative;
     vertical-align: top;
-    margin-right: 10px;
+    margin-right: 0px;
     margin-bottom: 0px;
 }
 .tv-page-poster{
     width: 100%;
-    height: 190px;
+    height: 75%;
+    max-height: 500px;
     background-size: cover;
     background-position: center;
+    background-position: center center;
     display: block;
+    position: relative;
 }
 .tv-page-gradient{
     display: block;
-    position: relative;
-    top: 40px;
+    position: absolute;
+    bottom: 0px;
 
-    width: 335px;
-    height: 150px;
+    width: 100%;
+    height: 75%;
 }
 .tv-page-title{
     background-size: contain;
@@ -348,12 +360,19 @@
     position: relative;
     left: 20px;
     top: 10px;
+    width: 100px;
+    overflow: hidden;
+}
+.tv-page-description-text{
+    width: 100px;
+    overflow: hidden;
+    display: none;
 }
 .tv-page-link{
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100px;
     height: 40px;
     align-items: center;
     display: flex;
@@ -369,7 +388,7 @@
 .tv-page-service{
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100px;
     height: 40px;
     align-items: center;
     display: flex;
