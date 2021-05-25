@@ -16,6 +16,58 @@
     background:rgba(217, 50, 41, 0.9);
 }
 
+.media-app-tray{
+    height: 100%;
+    width: 80px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    right: 0;
+    background-color: rgba(28, 28, 30, 0.9);
+    -webkit-backdrop-filter: blur(30px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 110px 10px 0;
+}
+
+.media-app-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+
+    transition: 0.1s;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.media-app-button-icon{
+    fill: #fff;
+    height: 24px;
+    width: 24px;
+}
+.media-app-button:hover{
+    opacity: 0.8;
+    transition: 0.1s;
+}
+
+
+.hulu-icon{
+    fill: #1ce783 !important;
+}
+
+
+
+
+
+
 .media-subtitle-box{
     padding-top: 5px;
     padding-bottom: 8px;
@@ -439,6 +491,10 @@
         color: #1c1c1e;
     }
 
+    .app-tray{
+
+        background-color: rgba(242, 242, 247,0.9);
+    }
 }
 
 
