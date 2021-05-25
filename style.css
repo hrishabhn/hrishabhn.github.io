@@ -594,7 +594,7 @@ gradients
 }
 
 
-/* dark mode */
+/* @dark mode */
 
 @media screen and (prefers-color-scheme: light) {
     body {
@@ -923,7 +923,7 @@ gradients
 
     @media screen and (prefers-color-scheme: light) {    
         .title-box{
-            background: rgba(242, 242, 247, 0.9);
+            background: rgba(255, 255, 255, 0.9);
         }
         
         /* menu */
