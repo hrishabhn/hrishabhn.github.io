@@ -209,6 +209,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showDescription = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showLink = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showService = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  // var showPage = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
   // showName[1] = 
   
@@ -220,7 +221,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show1[4];
          showLink[k] = show1[5];
       showService[k] = show1[6];
-
+        //  showPage[k] = "/TV/pages/tv-page-1"
   k = 2;
         showSolid[k] = show2[0];
        showPoster[k] = show2[1];
@@ -229,6 +230,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show2[4];
          showLink[k] = show2[5];
       showService[k] = show2[6];
+        //  showPage[k] = "/TV/pages/tv-page-2"
   k = 3;
         showSolid[k] = show3[0];
        showPoster[k] = show3[1];
@@ -237,6 +239,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show3[4];
          showLink[k] = show3[5];
       showService[k] = show3[6];
+        //  showPage[k] = "/TV/pages/tv-page-1"
   k = 4;
         showSolid[k] = show4[0];
        showPoster[k] = show4[1];
@@ -245,6 +248,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show4[4];
          showLink[k] = show4[5];
       showService[k] = show4[6];
+        //  showPage[k] = "/TV/pages/tv-page-1"
   k = 5;
         showSolid[k] = show5[0];
        showPoster[k] = show5[1];
@@ -253,6 +257,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show5[4];
          showLink[k] = show5[5];
       showService[k] = show5[6];
+        //  showPage[k] = "/TV/pages/tv-page-1"
   k = 6;
         showSolid[k] = show6[0];
        showPoster[k] = show6[1];
@@ -261,6 +266,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show6[4];
          showLink[k] = show6[5];
       showService[k] = show6[6];
+        //  showPage[k] = "/TV/pages/tv-page-1"
   k = 7;
         showSolid[k] = show7[0];
        showPoster[k] = show7[1];
@@ -268,7 +274,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show7[3];
   showDescription[k] = show7[4];
          showLink[k] = show7[5];
-      showService[k] = show7[6];  
+      showService[k] = show7[6];
+        //  showPage[k] = "/TV/pages/tv-page-1"
   k = 8;
         showSolid[k] = show8[0];
        showPoster[k] = show8[1];
@@ -381,6 +388,7 @@ function tvPage(n){
   var gradientClass = "tv-page-gradient ";
   var titleClass = "tv-page-title ";
 
+
   document.getElementById("card").className =        cardClass.concat(showSolid[n]);
   document.getElementById("poster").className =   posterClass.concat(showPoster[n]);
   document.getElementById("grad").className = gradientClass.concat(showGradient[n]);
@@ -403,19 +411,8 @@ function populate(){
   var posterClass = "tv-poster ";
   var gradientClass = "tv-gradient ";
   var titleClass = "tv-title ";
-
-  
-
-
-
-
-
-
-
-
-
-
-  
+  var showPage = "TV/pages/tv-page-";
+  var linkEnd = ".html"
 
   for (i = 1; i < 21; i++){
     var itemid = [
@@ -426,6 +423,7 @@ function populate(){
       "desc".concat(i),
       "link".concat(i),
       "service".concat(i),
+      "page".concat(i),
     ]
 
     document.getElementById(itemid[0]).className =        cardClass.concat(showSolid[i]);
@@ -433,9 +431,9 @@ function populate(){
     document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
     document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
     document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
-    document.getElementById(itemid[5]).href =                               showLink[i];
+    document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);                  //showLink[i];
     document.getElementById(itemid[6]).innerHTML =                       showService[i];
-
+    //document.getElementById(itemid[7]).href =                        showPage.concat(i);
 
 
 
