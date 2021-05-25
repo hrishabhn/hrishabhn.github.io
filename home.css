@@ -164,6 +164,7 @@
         left: 0;
         top: 0;
         padding-left: 104px;
+        
     }
 
     .big-button-container{
@@ -198,6 +199,7 @@
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 95px;
+        min-height: 100vh
     }
 
     .search-container{
