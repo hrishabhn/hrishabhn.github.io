@@ -596,6 +596,17 @@ gradients
 
 
 
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+  }
+
+
+
+
+
 
 @media(max-width: 1000px){
     .hidden-tablet{
