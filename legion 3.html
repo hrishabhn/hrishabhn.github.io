@@ -2,27 +2,27 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='viewport-fit=cover, height=device-height, width=device-width, initial-scale=1.0'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="images/home.png" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="white">
-    <script src"app.js"></script>
-    
-    <title>Media</title>
 
-    <!-- stuff to replace -->
-    <link rel="stylesheet" href="style-legion.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+
+
+    <title>Media</title>
+    <!-- <script src"media.js"></script> -->
 
 
 </head>
 
-<body>
+<body onload="populate()">
     <div class="sidebar">
-        <div class="title-box hidden-mobile">
+        <div class="menu-title-box hidden-mobile hidden-tablet">
             <p1 class="title-text title-sidebar">Menu</p1>
         </div>
 
@@ -40,7 +40,8 @@
                         Dashboard
                     </span>
                 </a>
-            </div><!-- bookmarks --><div class="menu-item-container">
+            </div><!-- bookmarks -->
+            <div class="menu-item-container">
                 <a class="menu-item" href="bookmarks.html" target="_self">
                     <span class="menu-item-icon">
                         <svg id="Layer_1" enable-background="new 0 0 511.771 511.771" viewBox="0 0 511.771 511.771"
@@ -57,7 +58,8 @@
                         Bookmarks
                     </span>
                 </a>
-            </div><!-- school --><div class="menu-item-container">
+            </div><!-- school -->
+            <div class="menu-item-container">
                 <a class="menu-item" href="school.html" target="_self">
                     <span class="menu-item-icon">
                         <svg viewBox="0 -40 448 448" xmlns="http://www.w3.org/2000/svg">
@@ -75,8 +77,9 @@
                         School
                     </span>
                 </a>
-            </div><!-- media --><div class="menu-item-container">
-                <a class="menu-item hulu selected" href="media.html" target="_self">
+            </div><!-- media -->
+            <div class="menu-item-container">
+                <a class="menu-item red-gradient selected" href="media.html" target="_self">
                     <span class="menu-item-icon">
                         <svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861"
                             xmlns="http://www.w3.org/2000/svg" data-type="shape">
@@ -92,7 +95,8 @@
                         Media
                     </span>
                 </a>
-            </div><!-- projects --><div class="menu-item-container">
+            </div><!-- projects -->
+            <div class="menu-item-container">
                 <a class="menu-item" href="projects.html" target="_self">
                     <span class="menu-item-icon">
                         <svg data-bbox="0 42.679 408 322.642" viewBox="0 0 408 408" xmlns="http://www.w3.org/2000/svg"
@@ -113,23 +117,37 @@
         </div>
     </div>
 
-    <div class="main">
-        <div class="background">
-            <div class="tv-fade">
-                <a class="play-button" href="https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c">
-                    WATCH
-                </a>
 
-            </div>
+
+    <div class="main-media">
+        <script src="script/tv_page.js"></script>
+
+
+
+
+
+        <div id="card1" class="tv-page-card show-solid">
+            <span id="poster1" class="tv-page-poster show-poster">
+                <span id="grad1" class="tv-page-gradient show-gradient">
+                    <span id="title1" class="tv-page-title tv-page-title-size show-title">
+                    </span>
+                </span>
+            </span>
+            <span class="tv-page-description">
+                <p id="desc1"></p>
+            </span>
+            <a id="link1" class="tv-page-link">
+            </a>
+            <span id="service1" class="tv-page-service">
+
+            </span>
         </div>
-        <div class="tv-solid">
-
-        </div>
-    </div>
 
 
 
-    </section>
+
+
+        </section>
 </body>
 
 </html>
