@@ -178,18 +178,7 @@ body{
     display: none;
 }
 
-.scrolling-wrapper {
-    padding-left: 240px;
-    padding-right: 30px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    position: relative;
-    right: 240px;
-    width: 100vw;
-    box-sizing: border-box;
-    padding-bottom: 20px;
-}
+
 
 
 
@@ -714,19 +703,7 @@ gradients
         fill: #fff;
     }
 
-    .scrolling-wrapper {
-        padding-left: 104px;
-        right: 104px;
-
-        padding-right: 30px;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        position: relative;
-        width: 100vw;
-        box-sizing: border-box;
-        padding-bottom: 20px;
-    }
+    
     .title-box{
         padding-left: 104px;
     }
@@ -904,18 +881,7 @@ gradients
         transform: translate(-50%,0);
     }
 
-    .scrolling-wrapper {
-        padding-left: 20px;
-        padding-right: 10px;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        position: relative;
-        right: 0px;
-        width: 100vw;
-        box-sizing: border-box;
-        padding-bottom: 20px;
-    }
+    
 
 
 
