@@ -18,11 +18,19 @@ body{
 }
 
 .title-box{
+    
     padding-top: 35px;
     padding-bottom: 15px;
+    padding-left: 240px;
+
     margin: 0;
-    width: 100%;
-    background: transparent;
+    width: 100vw;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    position: relative;
+    right: 240px;
 }
 .title-text{
     font-weight: 600;
@@ -601,7 +609,7 @@ gradients
         background-color: white;
     }
     .title-text{
-        color: #1c1c1e;
+        /* color: #1c1c1e; */
     }
     .sidebar{
         background-color: rgba(242, 242, 247,0.5);
