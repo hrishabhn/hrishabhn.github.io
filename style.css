@@ -698,7 +698,7 @@ gradients
 }
 
 
-
+/* @mobile */
 @media(max-width: 450px){
     .hidden-mobile{
         display: none !important;
@@ -932,14 +932,19 @@ gradients
         
         /* menu */
         .sidebar{
-            background: rgba(242, 242, 247, 0.9);
-        }    
+            background-color: rgba(99, 99, 102, 0.9);
+        }
+        .menu-item{
+            fill: #ffffffcc;
+            color: #ffffffcc;
+        }
+        .menu-item:hover{
+            fill: #fff;
+            color: #fff;
+        }
+        .selected{
+            fill: #fff;
+            color: #fff;
+        }
     }
 }
-/*
-@media(max-height: 700px){
-    .sidebar{
-        padding: 8px 0 8px;
-        height: 75px;
-    }
-}*/
