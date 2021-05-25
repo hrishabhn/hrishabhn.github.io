@@ -5,7 +5,7 @@
 }
 
 body{
-    background:#0E1F27;
+    background:#000000;
 }
 
 .hidden-always{
@@ -744,17 +744,17 @@ gradients
         padding-right: 0;
 
         box-sizing: border-box;
-        height: 125px;
+        height: 115px;
 
         width: 100%;
         z-index: 5;
-        /* background: linear-gradient(#000,hsla(0, 0%, 0%, 0.75)); */
-        /* -webkit-backdrop-filter: blur(1000px); */
+        background: rgba(28,28,30,0.8);
+        -webkit-backdrop-filter: blur(200px);
        
         display: flex;  
        
        
-        /* background: #00000000; */
+        /* background: rgba(28, 28, 30, 1); */
         /* box-shadow: 0 2px 10px #000000; */
     }
     
