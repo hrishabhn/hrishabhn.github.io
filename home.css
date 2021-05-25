@@ -143,7 +143,19 @@
     color: #fff;
     font-size: 20px;
 }
+@media screen and (prefers-color-scheme: light) {
+    .search{
+        background-color: #f2f2f7;
+    }
+    .app-box{
+        background-color: #f2f2f7;
+    }
+    .box-label{
+        color: #1c1c1e;
+    }
 
+    
+}
 
 
 @media(max-width: 1000px){
