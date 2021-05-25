@@ -4,7 +4,22 @@
     padding-left: 240px;
     padding-right: 220px;
     box-sizing: border-box;
+
+    z-index: 1;
 }
+
+/* .wallpaper{
+    background-image: url("images/wallpaper.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+} */
+
 
 .search-container{
     display: flex;
@@ -17,6 +32,8 @@
 
     transition: 0.5s;
     margin-bottom: 20px;
+
+    margin-top: 25vh;
 }
 .search{
     display: flex;
@@ -178,7 +195,11 @@
 
 
 @media(max-width: 450px){
-    
+    .wallpaper{
+        display: none;
+    }
+
+
     .main-home{
         position: absolute;
         top: 130px;
