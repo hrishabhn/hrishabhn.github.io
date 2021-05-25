@@ -8,6 +8,11 @@
     z-index: 1;
 }
 
+.home-bar{
+    background: #8080FF;
+}
+
+
 /* .wallpaper{
     background-image: url("images/wallpaper.jpg");
     background-size: cover;
@@ -170,7 +175,6 @@
     .box-label{
         color: #1c1c1e;
     }
-
     
 }
 
@@ -270,12 +274,6 @@
     }
 
     @media screen and (prefers-color-scheme: light) {
-        .home-bar{
-            background: #8080FF;
-            
-            
-            /* linear-gradient(to bottom right,#00ffff,#ff00ff); */
-        }
         .title-text{
             color: white !important;
         }
