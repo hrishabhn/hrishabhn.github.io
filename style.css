@@ -24,8 +24,8 @@ body{
     background: transparent;
 }
 .title-text{
-    font-weight: 300;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 36px;
     color: #fff;
     background-color: transparent;
 }
@@ -741,10 +741,7 @@ gradients
     
     
     .title-text{
-        font-weight: 600;
         font-size: 30px;
-        color: #fff;
-        background-color: transparent;
         align-self: flex-end;
         display: flex;
     }
@@ -813,11 +810,7 @@ gradients
     .threeRow{
         height: 270px;
     }
-    .boxLabel{
-        display: block;
-        color: #fff;
-        font-size: 20px;
-    }
+
     
     .up0-70{
         position: relative;
