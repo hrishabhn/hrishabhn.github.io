@@ -10,7 +10,9 @@
     box-sizing: border-box;
 }
 
-
+.media-bar{
+    background:#D93229;
+}
 
 .media-subtitle-box{
     padding-top: 5px;
@@ -434,6 +436,7 @@
     .media-subtitle-text{
         color: #1c1c1e;
     }
+
 }
 
 
@@ -506,11 +509,9 @@
         font-weight: 500;
     }
 
-/* @dark mobile */
+/* @dark phone */
     @media screen and (prefers-color-scheme: light) {
-        .media-bar{
-            background:#D93229;
-        }
+        
         .title-text{
             color: white !important;
         }
