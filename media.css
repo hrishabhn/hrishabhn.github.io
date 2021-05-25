@@ -509,7 +509,7 @@
 /* @dark mobile */
     @media screen and (prefers-color-scheme: light) {
         .media-bar{
-            background:linear-gradient(to bottom right,#ff3b30,#b32922);
+            background:#D93229;
         }
         .title-text{
             color: white !important;
