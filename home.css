@@ -209,6 +209,8 @@
     } */
 
 
+
+
     .main-home{
         position: absolute;
         top: 130px;
@@ -267,4 +269,13 @@
         margin-right: 0 !important;
     }
 
+    @media screen and (prefers-color-scheme: light) {
+        .home-bar{
+            background: linear-gradient(to bottom right,#00ffff,#ff00ff);
+        }
+        .title-text{
+            color: white !important;
+        }
+    }
+    
 }
