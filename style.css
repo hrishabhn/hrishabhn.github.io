@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #1da1f2;
+    background:#0E1F27;
 }
 
 .hidden-always{
@@ -749,7 +749,7 @@ gradients
         width: 100%;
         z-index: 5;
         /* background: linear-gradient(#000,hsla(0, 0%, 0%, 0.75)); */
-        -webkit-backdrop-filter: blur(1000px);
+        /* -webkit-backdrop-filter: blur(1000px); */
        
         display: flex;  
        
