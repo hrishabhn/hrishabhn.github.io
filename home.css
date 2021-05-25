@@ -38,7 +38,7 @@
     transition: 0.5s;
     margin-bottom: 20px;
 
-    margin-top: 25vh;
+    margin-top: 40vh;
 }
 .search{
     display: flex;
@@ -222,13 +222,15 @@
         left: 0;
         background-color:transparent;
         width: 100vw;
-        height: auto;
+
         transform: none;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 95px;
         min-height: 100vh;
         box-sizing: border-box;
+        overflow-y: hidden;
+        
     }
 
     .search-container{
