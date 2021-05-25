@@ -75,19 +75,21 @@ body{
 
 .menu-title-box{
 
-    padding-top: 35px;
+    display: flex;
+    padding-top: 0px;
     padding-bottom: 15px;
-    padding-left: 240px;
+    height: 100px;
+    width: 100%;
 
-    margin: 0;
+    margin-bottom: 10px;
+
+
     width: 100vw;
 
     overflow: hidden;
     box-sizing: border-box;
 
     position: relative;
-    right: 240px;
-
 }
 
 .sidebar{
