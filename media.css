@@ -117,11 +117,6 @@
     margin-right: 10px;
     margin-bottom: 0px;
 }
-
-
-
-
-
 .tv-poster{
     width: 100%;
     height: 190px;
@@ -291,6 +286,115 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition: 0.25s;
 }
+
+
+/* @TV Page */
+
+
+
+.tv-page-card{
+    height: 265px;
+    width: 1000px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+.tv-page-poster{
+    width: 100%;
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+.tv-page-gradient{
+    display: block;
+    position: relative;
+    top: 40px;
+
+    width: 335px;
+    height: 150px;
+}
+.tv-page-title{
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+
+    background-position: 0 100%;
+    background-color: #00000000;
+}
+.tv-page-title-wide{
+    height:35px;
+    width: 150px;
+}
+.tv-page-title-mid{
+    height: 50px;
+    width: 300px;
+}
+.tv-page-title-tall{
+    height: 60px;
+    width: 200px;
+}
+.tv-page-description{
+    font-size: 10px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+.tv-page-link{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white !important;
+    font-size: 8px;
+    font-weight: 500;
+    transition: 0.25s;
+    z-index: 1;
+    overflow: hidden;
+}
+.tv-page-service{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white !important;
+    font-size: 10px;
+    font-weight: 600;
+    transition: 0.25s;
+
+}
+.tv-page-link:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.25s;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
