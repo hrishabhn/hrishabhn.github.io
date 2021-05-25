@@ -505,4 +505,14 @@
         font-size: 12px;
         font-weight: 500;
     }
+
+/* @dark mobile */
+    @media screen and (prefers-color-scheme: light) {
+        .media-bar{
+            background:linear-gradient(to bottom right,#ff3b30,#b32922);
+        }
+        .title-text{
+            color: white !important;
+        }
+    }
 }
