@@ -271,7 +271,10 @@
 
     @media screen and (prefers-color-scheme: light) {
         .home-bar{
-            background: linear-gradient(to bottom right,#00ffff,#ff00ff);
+            background: #8080FF;
+            
+            
+            /* linear-gradient(to bottom right,#00ffff,#ff00ff); */
         }
         .title-text{
             color: white !important;
