@@ -759,15 +759,125 @@
         padding-right: 10px;
 
 
-
-
-
-
-
-
     }
 
     
+
+    .tv-page-card{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0px;
+    
+        padding-left: 0px;
+    }
+    .tv-page-poster{
+        width: 100%;
+        min-height: 200px;
+        height: 30vh;
+        background-size: auto 35%;
+        background-attachment: fixed;
+        background-position: top center;
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+    }
+    /* .tv-page-gradient{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+    
+        width: 100%;
+        height: 75%;
+    } */
+    .tv-page-title{
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        position: absolute;
+        top: 25vh;
+        left: 5vw;
+        display: flex;
+        max-width: 90vw;
+        min-height: 15vh;
+        max-height: 15vh;
+
+
+        /* margin-left: auto;
+        margin-right: auto;
+        max-height: 150px;
+        max-width: 60vw;
+        height: 1000px !important;
+        width: 3000px !important;
+        background-position: 0 100%;
+        background-color: #00000000; */
+    }
+   
+    .tv-page-description{
+    
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        position: absolute;
+        left: 240px;
+        bottom: 130px;
+    
+        width: auto;
+        height: 25px;
+    
+        display: flex;
+    
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    
+    .tv-page-link{
+        background-color: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        bottom: 60px;
+        left: 240px;
+        width: 300px;
+        height: 50px;
+        box-sizing: border-box;
+    
+        align-items: center;
+        display: flex;
+        padding-left: 25px;
+        text-decoration: none;
+    
+    
+        font-weight: 500;
+        transition: 0.25s;
+        z-index: 1;
+        overflow: hidden;
+    
+        border-radius: 5px;
+    }
+    .tv-page-service{
+        position: absolute;
+        width: 250px;
+        height: 50px;
+        align-items: center;
+        display: inline-flex;
+        padding-left: 0px;
+        text-decoration: none;
+        color: black !important;
+        font-size: 12px;
+        font-weight: 600;
+        transition: 0.1s;
+    
+    }
+    .tv-page-link:hover{
+        background-color: rgba(255, 255, 255, 0.7);
+        transition: 0.1s;
+    }
+
+
+
+
+
+
 
 
 
