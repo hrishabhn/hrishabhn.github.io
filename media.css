@@ -335,8 +335,8 @@
     background-position: bottom;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 175px;
-    left: 280px;
+    bottom: 190px;
+    left: 240px;
     max-height: 150px;
     max-width: 500px;
     height: 1000px !important;
@@ -363,8 +363,8 @@
     font-weight: 400;
     color: #fff;
     position: absolute;
-    left: 280px;
-    bottom: 110px;
+    left: 240px;
+    bottom: 130px;
 
     width: auto;
     height: 25px;
@@ -379,8 +379,8 @@
 .tv-page-link{
     background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
-    bottom: 40px;
-    left: 280px;
+    bottom: 60px;
+    left: 240px;
     width: 300px;
     height: 50px;
     box-sizing: border-box;
@@ -678,6 +678,25 @@
 
     .tv-page-card{
         padding-left: 64px;
+    }
+    
+    .tv-page-poster{
+        height: 90vh;
+    }
+    .tv-page-gradient{
+        height: 100%;
+    }
+    .tv-page-title{
+        left: 104px;
+        max-height: 125px;
+    }
+    .tv-page-description{
+        left: 104px;
+    }
+    
+    
+    .tv-page-link{
+        left: 104px;
     }
 }
 
