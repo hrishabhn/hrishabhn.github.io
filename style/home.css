@@ -333,9 +333,9 @@ body{
         -webkit-backdrop-filter: blur(0px);
     }
     .app-tray{
-        margin-top: 280px;
+        margin-top: 270px;
         background-color: #2c2c2e80;
-        height: 820px;
+        height: 790px;
         padding-left: 5vw;
         padding-right: 5vw;
         padding-top: 15px;
