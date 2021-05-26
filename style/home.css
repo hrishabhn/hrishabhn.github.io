@@ -269,6 +269,7 @@ body{
         
         box-sizing: border-box;
         overflow-y: hidden;
+        background: transparent;
         
         
     }
