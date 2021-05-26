@@ -774,9 +774,9 @@
         width: 100%;
         min-height: 200px;
         height: 30vh;
-        background-size: auto 35%;
-        background-attachment: fixed;
-        background-position: top center;
+
+
+
         background-repeat: no-repeat;
         display: block;
         position: relative;
@@ -796,9 +796,9 @@
         background-position-x: center;
         position: absolute;
         top: 25vh;
-        left: 5vw;
+        left: 10vw;
         display: flex;
-        max-width: 90vw;
+        max-width: 80vw;
         min-height: 15vh;
         max-height: 15vh;
 
