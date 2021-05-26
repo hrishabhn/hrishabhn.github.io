@@ -254,16 +254,17 @@ body{
 
 
     .main-home{
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0;
+
         padding-left: 20px;
         padding-right: 20px;
 
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
 
         transform: none;
         
