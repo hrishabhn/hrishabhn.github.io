@@ -346,8 +346,8 @@ body{
         padding: 0 0 0;
         margin: 0 2.5vw 0;
         
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
         -webkit-backdrop-filter: blur(0px);
     }
     .app-tray{
@@ -358,8 +358,8 @@ body{
         padding-right: 5vw;
         padding-top: 15px;
         
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
         -webkit-backdrop-filter: blur(50px);
     }
 
