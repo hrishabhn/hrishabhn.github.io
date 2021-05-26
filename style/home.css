@@ -242,7 +242,7 @@ body{
         background-size: cover;
         background-attachment: fixed;
         overflow: hidden;    
-        /* min-height: 100vh; */
+        min-height: 100vh;
     }
 
     
@@ -264,15 +264,14 @@ body{
         padding-right: 20px;
 
         width: 100vw;
-        height: 125vh;
-        /* min-height: 100vh; */
+        min-height: 100vh;
         /* max-height: 100vh; */
 
         transform: none;
         
         box-sizing: border-box;
         overflow-y: hidden;
-        background: transparent;
+        background: #00000000;
         
         
     }
