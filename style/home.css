@@ -264,8 +264,9 @@ body{
         padding-right: 20px;
 
         width: 100vw;
-        min-height: 100vh;
-        max-height: 100vh;
+        height: 100vh;
+        /* min-height: 100vh;
+        max-height: 100vh; */
 
         transform: none;
         
