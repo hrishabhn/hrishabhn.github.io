@@ -17,6 +17,13 @@ body{
     z-index: 1;
 }
 
+.bookmarks-bar{
+    background: rgba(42, 161, 72, 0.9);
+}
+
+
+
+
 .small-button{
     display: inline-flex;
     justify-content: center;
