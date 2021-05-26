@@ -428,5 +428,13 @@ body{
         margin-right: 0 !important;
     }
 
+
+
+    @media screen and (prefers-color-scheme: light) {
+        
+    .wallpaper{
+        background-image: url(../images/mountain.jpg);
+    }
+    }
         
 }
