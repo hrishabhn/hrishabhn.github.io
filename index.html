@@ -14,7 +14,7 @@
       href="images/icon.png">
 
     <link rel="apple-touch-icon" href="images/home.png" />
-    <link rel="apple-touch-startup-image" href="./launch.png">
+    <link rel="apple-touch-startup-image" href="images/launch.png">
     
     <meta name="mobile-wep-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -201,7 +201,11 @@
             </a>
         </div>
 
-        <!-- outlook -->
+        
+
+        <div class="app-tray">
+
+            <!-- outlook -->
         <div class="big-button-container hidden-mobile hidden-tablet">
             <a class="big-button outlook" href="https://outlook.live.com" target="_self">
                 <span class="big-button-icon">
@@ -278,9 +282,9 @@
             </a>
         </div>
 
-        <div class="app-tray">
-            <div class="app-box">
-                <!-- foodpanda --><a class="small-button foodpanda" href="https://www.foodpanda.hk" target="_self">
+
+        <!-- foodpanda -->
+        <a class="small-button foodpanda" href="https://www.foodpanda.hk" target="_self">
                     <div class="small-button-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 48.427 48.427"
@@ -296,19 +300,15 @@
                             </g>
                         </svg>
                     </div>
-                </a><!-- deliveroo --><a class="small-button deliveroo" href="https://deliveroo.hk" target="_self">
+
+        </a><!-- deliveroo --><a class="small-button deliveroo end-item" href="https://deliveroo.hk" target="_self">
                     <div class="small-button-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
                             <path
                                 d="M16.869,0l-1.123,10.578L13.832,1.66L7.793,2.918l1.896,8.918L1,13.66l1.546,7.112L17.845,24l3.498-7.751L23,0.638L16.869,0z M11.5,15.5c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C12.5,15.052,12.052,15.5,11.5,15.5z M15.5,17.5c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C16.5,17.052,16.052,17.5,15.5,17.5z" />
                         </svg>
                     </div>
-                </a>
-                <p class="box-label">
-                    Eat
-                </p>
-            </div><div class="app-box end-item-mobile">
-                <!-- to-do --><a class="small-button clickup-teal" href="https://app.clickup.com/8450846/v/l/6-48362200-1"
+        </a><!-- to-do --><a class="small-button clickup-teal" href="https://app.clickup.com/8450846/v/l/6-48362200-1"
                 target="_self">
                 <div class="small-button-icon">
                     <svg viewBox="0 0 405.272 405.272" xml:space="preserve">
@@ -319,7 +319,7 @@
                         </g>
                     </svg>
                 </div>
-            </a><!-- habits --><a class="small-button clickup-purple"
+        </a><!-- habits --><a class="small-button clickup-purple end-item end-item-mobile"
                 href="https://app.clickup.com/8450846/v/l/81wry-329" target="_self">
                 <div class="small-button-icon">
                     <svg viewBox="0 0 511.979 511.979" xml:space="preserve">
@@ -361,126 +361,8 @@
                         </g>
                     </svg>
                 </div>
-            </a>
-            <p class="box-label">
-                Productivity
-            </p>
-            </div><div class="app-box">
-                <!-- media --><a class="small-button hulu" href="https://hrishabhappleid.wixsite.com/home/media"
-                target="_self">
-                <div class="small-button-icon">
-                    <svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861"
-                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                        <g>
-                            <path
-                                d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z"
-                                xmlns="http://www.w3.org/2000/svg" />
-                        </g>
-                    </svg>
+        </a>
 
-                </div>
-            </a><!-- youtube --><a class="small-button youtube"
-                href="https://feedly.com/i/collection/content/user/a21f4f90-2ac3-4d5b-884f-8b5484ecd33c/category/7e61f497-937a-4423-a312-d71006ee098f"
-                target="_self">
-                <div class="small-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 512 512">
-                        <g id="surface67940806">
-                            <path
-                                d="M 486.054688 134.308594 C 481.445312 108.859375 459.476562 90.328125 433.984375 84.542969 C 395.835938 76.453125 325.234375 70.667969 248.84375 70.667969 C 172.503906 70.667969 100.769531 76.453125 62.574219 84.542969 C 37.128906 90.328125 15.117188 107.683594 10.503906 134.308594 C 5.851562 163.234375 1.238281 203.734375 1.238281 255.804688 C 1.238281 307.875 5.851562 348.375 11.636719 377.304688 C 16.292969 402.75 38.257812 421.28125 63.707031 427.070312 C 104.207031 435.160156 173.632812 440.945312 250.019531 440.945312 C 326.410156 440.945312 395.835938 435.160156 436.335938 427.070312 C 461.78125 421.28125 483.75 403.925781 488.40625 377.304688 C 493.015625 348.375 498.800781 306.699219 499.976562 255.804688 C 497.625 203.734375 491.839844 163.234375 486.054688 134.308594 Z M 186.378906 336.804688 L 186.378906 174.808594 L 327.539062 255.804688 Z M 186.378906 336.804688 " />
-                        </g>
-                    </svg>
-
-                </div>
-            </a><!-- reelgood --><a class="small-button reelgood" href="https://reelgood.com" target="_self">
-                <div class="small-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 43 43">
-                        <defs>
-                            <path id="a" d="M14.298 32.725h14.104V.011H.195v32.714h14.103z" />
-                            <path id="c" d="M23.428.113H0v27.052h23.428z" />
-                        </defs>
-                        <g fill-rule="evenodd">
-                            <g transform="translate(14.365 9.956)">
-                                <mask id="b">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <path
-                                    d="M21.775 20.787c3.093-1.23 6.272-4.398 6.272-9.787 0-6.573-4.61-10.99-11.47-10.99h-3.702v7.584h2.45c1.836 0 3.695 1.137 3.695 3.31 0 2.172-1.859 3.31-3.696 3.31H9.078V9.495L.195 14.31v18.415h8.883v-10.88h3.749l5.392 10.88h10.183l-6.627-11.938z"
-                                    mask="url(#b)" />
-                            </g>
-                            <g transform="translate(.205 .202)">
-                                <mask id="d">
-                                    <use xlink:href="#c" />
-                                </mask>
-                                <path
-                                    d="M3.182 12.578V5.624l11.611 6.704-9.466 5.619v-5.369H3.182zM0 .113v27.052L23.428 13.64 0 .113z"
-                                    mask="url(#d)" />
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-            </a><!-- tv-time --><a class="small-button tv-time" href="https://www.tvtime.com/en" target="_self">
-                <div class="small-button-icon">
-                    <svg data-bbox="0.43 0.33 874.57 874.57" viewBox="0 0 875 875" xmlns="http://www.w3.org/2000/svg"
-                        data-type="color">
-                        <g>
-                            <path fill="#fdeb69" d="M350.25 174.74v174.91H175.34V174.74h174.91z" data-color="2" />
-                            <path fill="#fce45e" d="M525.17 174.74v174.91H350.26V174.74h174.91z" data-color="3" />
-                            <path fill="#f3d457" d="M700.08 174.74v174.91H525.17V174.74h174.91z" data-color="4" />
-                            <path fill="#f9d457" d="M525.17 349.66v174.91H350.26V349.66h174.91z" data-color="5" />
-                            <path fill="#efbe4e" d="M525.17 524.57v174.91H350.26V524.57h174.91z" data-color="6" />
-                        </g>
-                    </svg>
-                </div>
-            </a>
-            <p class="box-label">
-                Watch
-            </p>
-            </div><div class="app-box end-item-mobile">
-                <!-- pocket --><a class="small-button pocket" href="https://getpocket.com/my-list/articles/unread"
-                target="_self">
-                <div class="small-button-icon">
-                    <svg viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                        <g>
-                            <g>
-                                <path d="M480,32H32C14.368,32,0,46.368,0,64v176c0,132.352,107.648,240,240,240h32c132.352,0,240-107.648,240-240V64
-			C512,46.368,497.664,32,480,32z M406.624,214.624l-128,128C272.384,348.864,264.192,352,256,352s-16.384-3.136-22.624-9.376
-			l-128-128c-12.512-12.512-12.512-32.736,0-45.248c12.512-12.512,32.736-12.512,45.248,0L256,274.752l105.376-105.376
-			c12.512-12.512,32.736-12.512,45.248,0C419.136,181.888,419.136,202.112,406.624,214.624z" />
-                            </g>
-                        </g>
-
-                    </svg>
-                </div>
-            </a><!-- feedly --><a class="small-button feedly"
-                href="https://feedly.com/i/collection/content/user/a21f4f90-2ac3-4d5b-884f-8b5484ecd33c/category/a1a3affa-665d-4bb2-ad55-47a96356db6c"
-                target="_self">
-                <div class="small-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 512 512">
-                        <g id="surface62764904">
-                            <path
-                                d="M 200.363281 479.097656 L 311.324219 479.097656 C 329.113281 479.097656 346.117188 472.035156 358.71875 459.476562 L 492.65625 325.539062 C 518.773438 299.378906 518.773438 257 492.65625 230.839844 L 303.214844 41.398438 C 277.054688 15.28125 234.675781 15.28125 208.515625 41.398438 L 19.074219 230.839844 C -7.042969 257 -7.042969 299.378906 19.074219 325.539062 L 153.011719 459.476562 C 165.570312 472.035156 182.617188 479.097656 200.363281 479.097656 Z M 171.761719 351.917969 L 161.167969 341.320312 C 156.761719 336.960938 156.761719 329.898438 161.167969 325.539062 L 240.082031 246.621094 C 244.441406 242.261719 251.503906 242.261719 255.867188 246.621094 L 279.539062 270.296875 C 283.902344 274.65625 283.902344 281.71875 279.539062 286.082031 L 213.660156 351.917969 C 211.566406 354.007812 208.734375 355.1875 205.769531 355.1875 L 179.652344 355.1875 C 176.6875 355.1875 173.855469 354.007812 171.761719 351.917969 Z M 287.433594 404.453125 L 276.835938 415.09375 C 274.746094 417.1875 271.910156 418.363281 268.945312 418.363281 L 242.785156 418.363281 C 239.820312 418.363281 236.988281 417.1875 234.894531 415.09375 L 224.300781 404.453125 C 219.9375 400.09375 219.9375 393.03125 224.300781 388.671875 L 247.972656 364.996094 C 252.335938 360.636719 259.398438 360.636719 263.757812 364.996094 L 287.433594 388.671875 C 291.792969 393.03125 291.792969 400.09375 287.433594 404.453125 Z M 98.035156 262.40625 L 240.082031 120.355469 C 244.441406 115.996094 251.503906 115.996094 255.867188 120.355469 L 279.539062 144.03125 C 283.902344 148.390625 283.902344 155.453125 279.539062 159.816406 L 150.570312 288.785156 C 148.480469 290.875 145.601562 292.054688 142.679688 292.054688 L 116.519531 292.054688 C 113.554688 292.054688 110.722656 290.875 108.628906 288.785156 L 98.035156 278.1875 C 93.671875 273.828125 93.671875 266.765625 98.035156 262.40625 Z M 98.035156 262.40625 " />
-                        </g>
-                    </svg>
-                </div>
-            </a><!-- twitter --><a class="small-button twitter" href="https://twitter.com" target="_self">
-                <div class="small-button-icon">
-                    <svg data-bbox="-0.059 5.617 50.122 40.729" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"
-                        data-type="shape">
-                        <g>
-                            <path
-                                d="M50.063 10.438a20.57 20.57 0 0 1-5.91 1.62 10.309 10.309 0 0 0 4.523-5.687 20.648 20.648 0 0 1-6.531 2.492 10.258 10.258 0 0 0-7.504-3.246c-5.68 0-10.286 4.602-10.286 10.281 0 .805.094 1.59.27 2.344-8.547-.43-16.121-4.523-21.195-10.746a10.243 10.243 0 0 0-1.39 5.172c0 3.566 1.812 6.715 4.573 8.562a10.274 10.274 0 0 1-4.66-1.289v.13c0 4.984 3.547 9.136 8.246 10.085a10.29 10.29 0 0 1-4.644.172c1.312 4.082 5.11 7.063 9.605 7.145A20.613 20.613 0 0 1 2.39 41.87c-.831 0-1.648-.047-2.449-.144a29.053 29.053 0 0 0 15.762 4.62c18.914 0 29.258-15.667 29.258-29.253 0-.446-.012-.895-.027-1.332a20.904 20.904 0 0 0 5.129-5.325z" />
-                        </g>
-                    </svg>
-
-                </div>
-            </a>
-                <p class="box-label">
-                    Read
-                </p>
-            </div>
         </div>
 
 

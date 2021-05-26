@@ -277,33 +277,6 @@ body{
 
 
 
-.small-button{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
-
-    width: 60px;
-    height: 60px;
-    border-radius: 25px;
-
-    transition: 0.2s;
-    margin-right: 10px;
-    margin-left: 0px;
-    margin-bottom: 10px;
-}
-
-.small-button-icon{
-    fill: #fff;
-    height: 24px;
-    width: 24px;
-}
-.small-button:hover{
-    opacity: 0.75;
-    transition: 0.2s;
-}
-
 
 
 
