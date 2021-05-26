@@ -12,7 +12,9 @@ body{
     padding-right: 190px;
     box-sizing: border-box;
 
+    height: 120vh;
     z-index: 1;
+    overflow: hidden;
 }
 
 .home-bar{
