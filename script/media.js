@@ -11,21 +11,8 @@ var hide = [
 
 
 
-
-
-//Fargo
-var show1 = [
-  "fargo-solid",
-  "fargo-poster",
-  "fargo-gradient",
-  "tv-title-mid fargo-title",
-  "Crime • 4 Seasons • 2014 - Present",
-  "https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50",
-  "WATCH ON HULU"
-]
-
 //Twin peaks
-var show2 = [
+var show1 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
@@ -36,13 +23,24 @@ var show2 = [
 ]
 
 //Always sunny
-var show3 = [
+var show2 = [
   " always-solid",
   "always-poster",
   "always-gradient",
   "tv-title-mid always-title",
   "Comedy • 14 Seasons • 2005 - Present",
   "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
+  "WATCH ON HULU"
+]
+
+//Snowfall
+var show3 = [
+  "snowfall-solid",
+  "snowfall-poster",
+  "snowfall-gradient",
+  "tv-title-wide snowfall-title", //title width
+  "Crime • 4 Seasons • 2018 - Present",
+  "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
   "WATCH ON HULU"
 ]
 
@@ -68,19 +66,7 @@ var show5 = [
   "WATCH ON NETFLIX"
 ]
 
-//Snowfall
-var show6 = [
-  "snowfall-solid",
-  "snowfall-poster",
-  "snowfall-gradient",
-  "tv-title-wide snowfall-title", //title width
-  "Crime • 4 Seasons • 2018 - Present",
-  "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
-  "WATCH ON HULU"
-]
-
-
-
+var show6 = hide
 var show7 = hide
 var show8 = hide
 var show9 = hide
@@ -169,7 +155,7 @@ var show18 = [
   "grandTour-solid",
   "grandTour-poster",
   "grandTour-gradient",
-  "tv-title-mid grandTour-title", //title width
+  "tv-title-wide grandTour-title", //title width
   "Comedy •  4 Seasons • 2016 - Present",
   "https://watch.amazon.com/detail?asin=B08QM4K1K5",
   "WATCH ON PRIME VIDEO"
@@ -180,7 +166,7 @@ var show19 = [
   "schulz-solid",
   "schulz-poster",
   "schulz-gradient",
-  "tv-title-mid schulz-title", //title width
+  "tv-title-wide schulz-title", //title width
   "Comedy Special • 1 Season • 2020",
   "https://www.netflix.com/title/81383020",
   "WATCH ON NETFLIX"
@@ -198,6 +184,23 @@ var show19 = [
 // var show18 = hide
 // var show19 = hide
 var show20 = hide
+
+// TV Archived //
+
+// var show = [
+//   "fargo-solid",
+//   "fargo-poster",
+//   "fargo-gradient",
+//   "tv-title-mid fargo-title",
+//   "Crime • 4 Seasons • 2014 - Present",
+//   "https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50",
+//   "WATCH ON HULU"
+// ]
+
+
+
+
+
 
 
 
