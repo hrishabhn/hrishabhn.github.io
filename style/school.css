@@ -21,6 +21,119 @@ body{
 }
 
 
+
+.big-button-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+
+    transition: 0.1s;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+.big-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.1s;
+    margin: 0px;
+}
+.big-button-icon{
+    fill: #fff;
+    margin-right: 8px;
+    height: 16px;
+    width: 16px;
+}
+.big-button-label{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+.big-button:hover{
+    opacity: 0.8;
+    transition: 0.1s;
+}
+
+
+.small-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+
+    transition: 0.2s;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.small-button-icon{
+    fill: #fff;
+    height: 24px;
+    width: 24px;
+}
+.small-button:hover{
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
+@media(min-width: 450px){
+    .end-item{
+        margin-right: 0 !important;
+    }
+}
+
+.app-box{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 160px;
+    background-color: #1c1c1e;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px 0px 20px 15px;
+}
+
+
+
+.app-tray-wrapper{
+    height: 100%;
+    width: 150px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    right: 0;
+    background-color: rgba(28, 28, 30, 0.5);
+    -webkit-backdrop-filter: blur(30px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 110px 10px 0;
+
+}
+
+
+
+
+
 /* @dark mode */
 
 @media screen and (prefers-color-scheme: light) {
