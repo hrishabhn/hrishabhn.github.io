@@ -51,10 +51,6 @@ body{
     opacity: 0.75;
     transition: 0.2s;
 }
-
-
-
-
 .app-box{
     display: inline-block;
     box-sizing: border-box;
