@@ -215,6 +215,8 @@ body{
 
 
 @media(max-width: 1000px){
+    
+    
     .main-home{
         position: absolute;
         left: 0;
@@ -235,9 +237,12 @@ body{
 
 @media(max-width: 450px){
 
-    /* body{
-        overflow: hidden;
-    } */
+    body{
+        background-image: url(../images/wp6050826.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;    
+    }
 
     
     
@@ -249,7 +254,7 @@ body{
 
 
     .main-home{
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         margin-top: 0;
@@ -264,10 +269,7 @@ body{
         
         box-sizing: border-box;
         overflow-y: hidden;
-        background-image: url(../images/wp6050826.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        overflow: hidden;
+        
         
     }
 
