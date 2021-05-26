@@ -242,6 +242,7 @@ body{
         background-size: cover;
         background-attachment: fixed;
         overflow: hidden;    
+        min-height: 100vh;
     }
 
     
