@@ -238,6 +238,11 @@ body{
 
 @media(max-width: 450px){
 
+    body{
+        background-image: url(../images/wp6050826.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
 
     
     
