@@ -448,7 +448,7 @@
     background: linear-gradient(#00000000,#190e10);
 }
 .homodeus-cover{
-    background-image: url('books/homo\ deus.jpg');
+    background-image: url('../books/homo\ deus.jpg');
 }
 
 .ride-solid{
@@ -458,7 +458,7 @@
     background: linear-gradient(#00000000,#615c5c);
 }
 .ride-cover{
-    background-image: url('books/ride\ of\ a\ lifetime.jpg');
+    background-image: url('../books/ride\ of\ a\ lifetime.jpg');
 }
 
 /* podcasts */
@@ -467,56 +467,56 @@
     background-color: #0b1312;
 }
 .acquired-cover{
-    background-image: url('podcasts/acquired.jpeg');
+    background-image: url('../podcasts/acquired.jpeg');
 }
 
 .economist-solid{
     background-color: #751612;
 }
 .economist-cover{
-    background-image: url('podcasts/economist.jpeg');
+    background-image: url('../podcasts/economist.jpeg');
 }
 
 .inet-solid{
     background-color: #93969e;
 }
 .inet-cover{
-    background-image: url('podcasts/inet.jpeg');
+    background-image: url('../podcasts/inet.jpeg');
 }
 
 .lex-solid{
     background-color: #2e2c2a;
 }
 .lex-cover{
-    background-image: url('podcasts/lex.jpeg');
+    background-image: url('../podcasts/lex.jpeg');
 }
 
 .pivot-solid{
     background-color: #958988;
 }
 .pivot-cover{
-    background-image: url('podcasts/pivot.jpeg');
+    background-image: url('../podcasts/pivot.jpeg');
 }
 
 .samharris-solid{
     background-color: #3e3d3c;
 }
 .samharris-cover{
-    background-image: url('podcasts/samharris.jpeg');
+    background-image: url('../podcasts/samharris.jpeg');
 }
 
 .sway-solid{
     background-color: #945877;
 }
 .sway-cover{
-    background-image: url('podcasts/sway.jpeg');
+    background-image: url('../podcasts/sway.jpeg');
 }
 
 .yang-solid{
     background-color: #143b65;
 }
 .yang-cover{
-    background-image: url('podcasts/yang.jpeg');
+    background-image: url('../podcasts/yang.jpeg');
 }
 
 
@@ -531,10 +531,10 @@
     background: linear-gradient(#00000000,#28374E);
 }
 .fargo-poster{
-    background-image: url('TV/background/fargo.jpeg');
+    background-image: url('../TV/background/fargo.jpeg');
 }
 .fargo-title{
-    background-image: url('TV/title/fargo.png');
+    background-image: url('../TV/title/fargo.png');
 }
 
 .atlanta-solid{
@@ -544,10 +544,10 @@
     background: linear-gradient(#00000000,#584029);
 }
 .atlanta-poster{
-    background-image: url('TV/background/atlanta.webp');
+    background-image: url('../TV/background/atlanta.webp');
 }
 .atlanta-title{
-    background-image: url('TV/title/atlanta.png');
+    background-image: url('../TV/title/atlanta.png');
 }
 
 .snowfall-solid{
@@ -557,10 +557,10 @@
     background: linear-gradient(#00000000,#1A114D);
 }
 .snowfall-poster{
-    background-image: url('TV/background/snowfall.jpeg');
+    background-image: url('../TV/background/snowfall.jpeg');
 }
 .snowfall-title{
-    background-image: url('TV/title/snowfall.png');
+    background-image: url('../TV/title/snowfall.png');
 }
 
 .mythic-solid{
@@ -570,10 +570,10 @@
     background: linear-gradient(#00000000,#2F322F);
 }
 .mythic-poster{
-    background-image: url('TV/background/mythic\ quest.webp');
+    background-image: url('../TV/background/mythic\ quest.webp');
 }
 .mythic-title{
-    background-image: url('TV/title/mythic\ quest.png');
+    background-image: url('../TV/title/mythic\ quest.png');
 }
 
 .spy-solid{
@@ -583,10 +583,10 @@
     background: linear-gradient(#00000000,#7f6b57);
 }
 .spy-poster{
-    background-image: url('TV/background/spy.jpg');
+    background-image: url('../TV/background/spy.jpg');
 }
 .spy-title{
-    background-image: url('TV/title/spy.png');
+    background-image: url('../TV/title/spy.png');
 }
 
 .always-solid{
@@ -596,10 +596,10 @@
     background: linear-gradient(#00000000,#5c666a);
 }
 .always-poster{
-    background-image: url('TV/background/always\ sunny.jpg');
+    background-image: url('../TV/background/always\ sunny.jpg');
 }
 .always-title{
-    background-image: url('TV/title/always\ sunny.png');
+    background-image: url('../TV/title/always\ sunny.png');
 }
 
 .twinpeaks-solid{
@@ -609,10 +609,10 @@
     background: linear-gradient(#00000000,#45130d);
 }
 .twinpeaks-poster{
-    background-image: url('TV/background/twinpeaks.jpg');
+    background-image: url('../TV/background/twinpeaks.jpg');
 }
 .twinpeaks-title{
-    background-image: url('TV/title/twin\ peaks.png');
+    background-image: url('../TV/title/twin\ peaks.png');
 }
 
 .kim-solid{
@@ -622,10 +622,10 @@
     background: linear-gradient(#00000000,#9D1717);
 }
 .kim-poster{
-    background-image: url('TV/background/kims\ convenience.webp');
+    background-image: url('../TV/background/kims\ convenience.webp');
 }
 .kim-title{
-    background-image: url('TV/title/kim.svg');
+    background-image: url('../TV/title/kim.svg');
 }
 
 .legion-solid{
@@ -635,10 +635,10 @@
     background: linear-gradient(#00000000,#191128);
 }
 .legion-poster{
-    background-image: url('TV/background/legion.webp');
+    background-image: url('../TV/background/legion.webp');
 }
 .legion-title{
-    background-image: url('TV/title/legion.png');
+    background-image: url('../TV/title/legion.png');
 }
 
 .chernobyl-solid{
@@ -648,10 +648,10 @@
     background: linear-gradient(#00000000,#86a097);
 }
 .chernobyl-poster{
-    background-image: url('TV/background/chernobyl.jpg');
+    background-image: url('../TV/background/chernobyl.jpg');
 }
 .chernobyl-title{
-    background-image: url('TV/title/chernobyl.svg');
+    background-image: url('../TV/title/chernobyl.svg');
 }
 
 .mindhunter-solid{
@@ -661,10 +661,10 @@
     background: linear-gradient(#00000000,#838383);
 }
 .mindhunter-poster{
-    background-image: url('TV/background/mindhunter.webp');
+    background-image: url('../TV/background/mindhunter.webp');
 }
 .mindhunter-title{
-    background-image: url('TV/title/mindhunter.svg');
+    background-image: url('../TV/title/mindhunter.svg');
 }
 
 .mankind-solid{
@@ -674,10 +674,10 @@
     background: linear-gradient(#00000000,#3e587a);
 }
 .mankind-poster{
-    background-image: url('TV/background/mankind.webp');
+    background-image: url('../TV/background/mankind.webp');
 }
 .mankind-title{
-    background-image: url('TV/title/mankind.png');
+    background-image: url('../TV/title/mankind.png');
 }
 
 .drive-solid{
@@ -687,10 +687,10 @@
     background: linear-gradient(#00000000,#4d5372);
 }
 .drive-poster{
-    background-image: url('TV/background/drive.webp');
+    background-image: url('../TV/background/drive.webp');
 }
 .drive-title{
-    background-image: url('TV/title/drive.png');
+    background-image: url('../TV/title/drive.png');
 }
 
 .schulz-solid{
@@ -700,10 +700,10 @@
     background: linear-gradient(#00000000,#3e3533);
 }
 .schulz-poster{
-    background-image: url('TV/background/schulz.webp');
+    background-image: url('../TV/background/schulz.webp');
 }
 .schulz-title{
-    background-image: url('TV/title/schulz.png');
+    background-image: url('../TV/title/schulz.png');
 }
 
 
@@ -714,10 +714,10 @@
     background: linear-gradient(#00000000,#bdb6b3);
 }
 .grandTour-poster{
-    background-image: url('TV/background/grandTour.webp');
+    background-image: url('../TV/background/grandTour.webp');
 }
 .grandTour-title{
-    background-image: url('TV/title/grandTour.svg');
+    background-image: url('../TV/title/grandTour.svg');
 }
 
 
