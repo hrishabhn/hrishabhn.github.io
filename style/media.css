@@ -749,7 +749,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        padding-left: 104px;
+        padding-left: 84px;
     
         background: none;
         width: 100vw;
@@ -757,8 +757,8 @@
         box-sizing: border-box;
     }
     .scrolling-wrapper {
-        padding-left: 104px;
-        right: 104px;
+        padding-left: 84px;
+        right: 84px;
     }
 
     .tv-page-card{
