@@ -1,3 +1,8 @@
+body{
+    background:#000000;
+    overflow: hidden;
+}
+
 
 .main-home{
     width: 100vw;
@@ -209,6 +214,11 @@
 
 
 @media(max-width: 450px){
+ 
+    
+    
+    
+    
     /* .wallpaper{
         display: none;
     } */
@@ -282,5 +292,6 @@
             color: white !important;
         }
     }
+    
     
 }
