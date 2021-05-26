@@ -8,6 +8,7 @@ body{
     left: 0;
     top: 0;
     padding-left: 240px;
+    padding-right: 170px;
     padding-top: 120px;
 
     background: none;
@@ -110,6 +111,11 @@ body{
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 15px 0px 20px 15px;
+}
+.box-label{
+    display: block;
+    color: #fff;
+    font-size: 20px;
 }
 
 
