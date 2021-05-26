@@ -249,7 +249,7 @@ body{
 
 
     .main-home{
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         margin-top: 0;
@@ -267,6 +267,7 @@ body{
         background-image: url(../images/wp6050826.jpg);
         background-size: cover;
         background-attachment: fixed;
+        overflow: hidden;
         
     }
 
@@ -335,7 +336,7 @@ body{
     .app-tray{
         margin-top: 270px;
         background-color: #2c2c2e80;
-        height: 700px;
+        height: 600px;
         padding-left: 5vw;
         padding-right: 5vw;
         padding-top: 15px;
