@@ -453,9 +453,6 @@ gradients
 .dashboard{
     background: linear-gradient(to bottom right,#00ffff,#ff00ff);
 }
-.bookmarks{
-    background: linear-gradient(to bottom right,#5856d6,#38378a);
-}
 .school-gradient{
     background: linear-gradient(to bottom right,#D7C688,#a39667);
 }
