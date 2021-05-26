@@ -78,7 +78,7 @@ body{
 
     width: 60px;
     height: 60px;
-    border-radius: 10px;
+    border-radius: 25px;
 
     transition: 0.2s;
     margin-right: 10px;
@@ -109,7 +109,7 @@ body{
     background-color: #1c1c1e;
     margin-right: 15px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius:30px;
     padding: 15px 0px 20px 15px;
 }
 .box-label{
@@ -174,7 +174,58 @@ body{
 
 
 @media(max-width: 450px){
+    .main-school{
+        position: absolute;
+        padding-top: 130px;
+        left: 0;
+        top: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 95px;
+    }
+
+    .app-tray-wrapper{
+        position: initial;
+        width: 100%;
+        padding: 0;
+        background: none;
+    }
+
+    .big-button-container{
+        width: 48%;
+        margin-right: 4%;
+        display: inline-flex;
+        height: 80px;
+        border-radius: 20px;
+    }
+    .big-button{
+        border-radius: 20px;
+    }
+    .big-button-label{
+        font-size: 20px;
+    }
+    .big-button-icon{
+        height: 22px;
+        width: 22px;
+    }
+
+
+    .app-box{
+        margin-right: 4%;
+        width: 48%;
+        box-sizing: border-box;
+        border-radius: 30px;
+    }
+
+
+
+
+
     .end-item-mobile{
         margin-right: 0 !important;
     }
+
+
+
+
 }
