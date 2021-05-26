@@ -142,6 +142,7 @@
 
     background-position: 0 100%;
     background-color: #00000000;
+    fill: #fff;
 }
 .tv-title-wide{
     height:50px;
@@ -641,10 +642,10 @@
 }
 
 .chernobyl-solid{
-    background-color: #191128;
+    background-color: #86a097;
 }
 .chernobyl-gradient{
-    background: linear-gradient(#00000000,#191128);
+    background: linear-gradient(#00000000,#86a097);
 }
 .chernobyl-poster{
     background-image: url('TV/background/chernobyl.jpg');
@@ -654,10 +655,10 @@
 }
 
 .mindhunter-solid{
-    background-color: #191128;
+    background-color: #838383;
 }
 .mindhunter-gradient{
-    background: linear-gradient(#00000000,#191128);
+    background: linear-gradient(#00000000,#838383);
 }
 .mindhunter-poster{
     background-image: url('TV/background/mindhunter.webp');
@@ -667,10 +668,10 @@
 }
 
 .mankind-solid{
-    background-color: #191128;
+    background-color: #3e587a;
 }
 .mankind-gradient{
-    background: linear-gradient(#00000000,#191128);
+    background: linear-gradient(#00000000,#3e587a);
 }
 .mankind-poster{
     background-image: url('TV/background/mankind.webp');
@@ -679,9 +680,45 @@
     background-image: url('TV/title/mankind.png');
 }
 
+.drive-solid{
+    background-color: #4d5372;
+}
+.drive-gradient{
+    background: linear-gradient(#00000000,#4d5372);
+}
+.drive-poster{
+    background-image: url('TV/background/drive.webp');
+}
+.drive-title{
+    background-image: url('TV/title/drive.png');
+}
+
+.schulz-solid{
+    background-color: #3e3533;
+}
+.schulz-gradient{
+    background: linear-gradient(#00000000,#3e3533);
+}
+.schulz-poster{
+    background-image: url('TV/background/schulz.webp');
+}
+.schulz-title{
+    background-image: url('TV/title/schulz.png');
+}
 
 
-
+.grandTour-solid{
+    background-color: #bdb6b3;
+}
+.grandTour-gradient{
+    background: linear-gradient(#00000000,#bdb6b3);
+}
+.grandTour-poster{
+    background-image: url('TV/background/grandTour.webp');
+}
+.grandTour-title{
+    background-image: url('TV/title/grandTour.svg');
+}
 
 
 

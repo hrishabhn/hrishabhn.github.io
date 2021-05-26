@@ -153,6 +153,39 @@ var show16 = [
   "WATCH ON  TV+"
 ]
 
+//Drive to survive
+var show17 = [
+  "drive-solid",
+  "drive-poster",
+  "drive-gradient",
+  "tv-title-wide drive-title", //title width
+  "Documentary • 3 Seasons • 2019 - Present",
+  "https://www.netflix.com/title/80204890",
+  "WATCH ON NETFLIX"
+]
+
+//Grand tour
+var show18 = [
+  "grandTour-solid",
+  "grandTour-poster",
+  "grandTour-gradient",
+  "tv-title-mid grandTour-title", //title width
+  "Comedy •  4 Seasons • 2016 - Present",
+  "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+  "WATCH ON PRIME VIDEO"
+]
+
+//Schulz 
+var show19 = [
+  "schulz-solid",
+  "schulz-poster",
+  "schulz-gradient",
+  "tv-title-mid schulz-title", //title width
+  "Comedy Special • 1 Season • 2020",
+  "https://www.netflix.com/title/81383020",
+  "WATCH ON NETFLIX"
+]
+
 
 
 
@@ -161,9 +194,9 @@ var show16 = [
 // var show14 = hide
 // var show15 = hide
 // var show16 = hide
-var show17 = hide
-var show18 = hide
-var show19 = hide
+// var show17 = hide
+// var show18 = hide
+// var show19 = hide
 var show20 = hide
 
 
