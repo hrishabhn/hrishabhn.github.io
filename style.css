@@ -768,7 +768,8 @@ gradients
     .title-box{   
         padding-left: 20px;
         padding-right: 0;
-        height: 115px;
+        padding-bottom: 10px;
+        height: 100px;
     }
 
     
