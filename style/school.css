@@ -1,0 +1,61 @@
+body{
+    background:#000000;
+}
+
+
+.main-school{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 240px;
+    padding-top: 120px;
+
+    background: none;
+    width: 100vw;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.school-bar{
+    background: rgba(189, 174, 120, 0.9);
+}
+
+
+/* @dark mode */
+
+@media screen and (prefers-color-scheme: light) {
+    body{
+        background: #fff;
+    }
+    
+    
+    
+    
+}
+
+
+@media(max-width: 1000px){
+    
+    
+    .main-school{
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 84px;
+        
+    }
+
+
+
+    .end-item-tablet{
+        margin-right: 0 !important;
+
+    }
+}
+
+
+@media(max-width: 450px){
+    .end-item-mobile{
+        margin-right: 0 !important;
+    }
+}
