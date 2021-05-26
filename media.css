@@ -603,13 +603,13 @@
 }
 
 .twinpeaks-solid{
-    background-color: #9D9686;
+    background-color: #45130d;
 }
 .twinpeaks-gradient{
-    background: linear-gradient(#00000000,#9D9686);
+    background: linear-gradient(#00000000,#45130d);
 }
 .twinpeaks-poster{
-    background-image: url('TV/background/twin\ peaks.webp');
+    background-image: url('TV/background/twinpeaks.jpg');
 }
 .twinpeaks-title{
     background-image: url('TV/title/twin\ peaks.png');
