@@ -428,7 +428,9 @@ body{
         margin-right: 0 !important;
     }
 
-
+    .home-bar{
+        background: transparent;
+    }
 
     /* @media screen and (prefers-color-scheme: light) {
         
