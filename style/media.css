@@ -847,13 +847,18 @@
     }
 
     
-
-    .tv-page-card{
+    .tv-page{
+        padding-top: 50px;
         height: 100vh;
+        box-sizing: border-box;
+    }
+    .tv-page-card{
+        height: 100%;
         width: 100vw;
         border-radius: 0px;
-        margin-top: 45px;
+
         padding-left: 0px;
+        overflow: hidden;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
 
