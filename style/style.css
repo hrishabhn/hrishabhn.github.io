@@ -580,16 +580,13 @@ gradients
 .duke-energy{
     background:linear-gradient(to bottom right,#14BCD9,#005986);
 }
-
-
-
-
-.amazon{
-    background:linear-gradient(to bottom right,#1E2631,#4c617d);
+.slack{
+    background:linear-gradient(to bottom right,#4A154B,#952a96);
 }
-.amazon{
-    background:linear-gradient(to bottom right,#1E2631,#4c617d);
+.facebook{
+    background:linear-gradient(to bottom right,#4267b2,#263b66);
 }
+
 
 
 /* @dark mode */
