@@ -192,6 +192,7 @@ body{
     }
 
     .big-button-container{
+        margin-bottom: 10px;
         width: 48%;
         margin-right: 4%;
         display: inline-flex;
@@ -202,11 +203,15 @@ body{
         border-radius: 20px;
     }
     .big-button-label{
-        font-size: 20px;
+        font-size: 16px;
     }
     .big-button-icon{
-        height: 22px;
-        width: 22px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .small-button{
+        border-radius: 25px;
     }
 
 
