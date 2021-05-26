@@ -293,32 +293,43 @@ body{
     }
 
     .big-button-container{
-        margin-bottom: 10px;
-        width: 49%;
-        margin-right: 2%;
-        display: inline-block;
+        margin-bottom: 15px;
+        width: 48%;
+        margin-right: 4%;
+        display: inline-flex;
+        height: 80px;
+        border-radius: 20px;
+    }
+    .big-button{
+        border-radius: 20px;
+    }
+    .big-button-label{
+        font-size: 16px;
+    }
+    .big-button-icon{
+        height: 20px;
+        width: 20px;
     }
 
+    
 
 
 
 
     .small-button{
-    margin-right: 2%;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    width: 23.5%;
-}
+        margin-right: 4%;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        width: 22%;
+        height: 80px;
+        border-radius: 20px;
+    }
 
     .small-button-icon{
-    fill: #fff;
     height: 24px;
     width: 24px;
-}
-    .small-button:hover{
-       opacity: 0.75;
-     transition: 0.2s;
     }
+
 
 
     .app-tray-wrapper{
