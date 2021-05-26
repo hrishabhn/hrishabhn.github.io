@@ -29,7 +29,7 @@ var show2 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
-  "tv-title tv-title-mid twinpeaks-title",
+  "tv-tite tv-title-mid twinpeaks-title",
   "Mystery • 3 Seasons • 1990 - 1991",
   "https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a",
   "WATCH ON HULU"
@@ -40,7 +40,7 @@ var show3 = [
   " always-solid",
   "always-poster",
   "always-gradient",
-  "tv-title tv-title-mid always-title",
+  "tv-title-mid always-title",
   "Comedy • 14 Seasons • 2005 - Present",
   "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
   "WATCH ON HULU"
@@ -51,7 +51,7 @@ var show4 = [
   "atlanta-solid",
   "atlanta-poster",
   "atlanta-gradient",
-  "tv-title tv-title-wide atlanta-title",
+  "tv-title-wide atlanta-title",
   "Comedy • 5 Seasons • 2016 - 2021",
   "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
   "WATCH ON HULU"
@@ -62,14 +62,25 @@ var show5 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",
-  "tv-title tv-title-mid kim-title",
+  "tv-title-mid kim-title",
   "Comedy • 2 Seasons • 2016 - Present",
   "https://www.netflix.com/title/80199128",
   "WATCH ON NETFLIX"
 ]
 
+//Snowfall
+var show6 = [
+  "snowfall-solid",
+  "snowfall-poster",
+  "snowfall-gradient",
+  "tv-title-wide snowfall-title", //title width
+  "Crime • 4 Seasons • 2018 - Present",
+  "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
+  "WATCH ON HULU"
+]
 
-var show6 = hide
+
+
 var show7 = hide
 var show8 = hide
 var show9 = hide
@@ -81,47 +92,75 @@ var show11 = [
   "legion-solid",
   "legion-poster",
   "legion-gradient",
-  "tv-title tv-title-wide legion-title",
+  "tv-title-wide legion-title",
   "Sci-Fi • 3 Seasons • 2017 - 2019",
   "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
   "WATCH ON HULU"
 ]
 
-//Snowfall
-var show12 = [
-  "snowfall-solid",
-  "snowfall-poster",
-  "snowfall-gradient",
-  "tv-title tv-title-wide snowfall-title", //title width
-  "Crime • 4 Seasons • 2018 - Present",
-  "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
-  "WATCH ON HULU"
-]
-
 //Mythic quest
-var show13 = [
+var show12 = [
   "mythic-solid",
   "mythic-poster",
   "mythic-gradient",
-  "tv-title tv-title-wide mythic-title", //title width
+  "tv-title-wide mythic-title", //title width
   "Comedy • 2 Seasons • 2020 - Present",
   "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
   "WATCH ON  TV+"
 ]
 
 //Spy
-var show14 = [
+var show13 = [
   "spy-solid",
   "spy-poster",
   "spy-gradient",
-  "tv-title tv-title-wide spy-title", //title width
+  "tv-title-wide spy-title", //title width
   "Drama • 1 Season • 2019",
   "https://www.netflix.com/title/80178151",
   "WATCH ON NETFLIX"
 ]
 
-var show15 = hide
-var show16 = hide
+//Chernobyl
+var show14 = [
+  "chernobyl-solid",
+  "chernobyl-poster",
+  "chernobyl-gradient",
+  "tv-title-wide chernobyl-title",
+  "Thriller • 1 Season • 2019",
+  "",
+  "WATCH ON HBO"
+]
+
+//Mindhunter
+var show15 = [
+  "mindhunter-solid",
+  "mindhunter-poster",
+  "mindhunter-gradient",
+  "tv-title-wide mindhunter-title",
+  "Crime • 2 Seasons • 2017 - 2019",
+  "https://www.netflix.com/title/80114855",
+  "WATCH ON NETFLIX"
+]
+
+//For all mankind
+var show16 = [
+  "mankind-solid",
+  "mankind-poster",
+  "mankind-gradient",
+  "tv-title-wide mankind-title", //title width
+  "Sci-Fi • 2 Seasons • 2019 - Present",
+  "https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
+  "WATCH ON  TV+"
+]
+
+
+
+
+
+
+// var show14 = hide
+// var show15 = hide
+// var show16 = hide
 var show17 = hide
 var show18 = hide
 var show19 = hide

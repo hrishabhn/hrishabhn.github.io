@@ -144,17 +144,17 @@
     background-color: #00000000;
 }
 .tv-title-wide{
-    height:35px;
+    height:50px;
     width: 150px;
 }
 .tv-title-mid{
-    height: 50px;
-    width: 300px;
+    height: 70px;
+    width: 150px;
 }
-.tv-title-tall{
-    height: 60px;
-    width: 200px;
-}
+/* .tv-title-tall{
+    height: 80px;
+    width: 150px;
+} */
 .tv-description{
     font-size: 10px;
     font-weight: 400;
@@ -639,6 +639,54 @@
 .legion-title{
     background-image: url('TV/title/legion.png');
 }
+
+.chernobyl-solid{
+    background-color: #191128;
+}
+.chernobyl-gradient{
+    background: linear-gradient(#00000000,#191128);
+}
+.chernobyl-poster{
+    background-image: url('TV/background/chernobyl.jpg');
+}
+.chernobyl-title{
+    background-image: url('TV/title/chernobyl.svg');
+}
+
+.mindhunter-solid{
+    background-color: #191128;
+}
+.mindhunter-gradient{
+    background: linear-gradient(#00000000,#191128);
+}
+.mindhunter-poster{
+    background-image: url('TV/background/mindhunter.webp');
+}
+.mindhunter-title{
+    background-image: url('TV/title/mindhunter.svg');
+}
+
+.mankind-solid{
+    background-color: #191128;
+}
+.mankind-gradient{
+    background: linear-gradient(#00000000,#191128);
+}
+.mankind-poster{
+    background-image: url('TV/background/mankind.webp');
+}
+.mankind-title{
+    background-image: url('TV/title/mankind.png');
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (prefers-color-scheme: light) {
     .main-media{
