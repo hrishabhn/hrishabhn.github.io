@@ -1,6 +1,6 @@
 body{
     background:#000000;
-    overflow: hidden;
+
 }
 
 
@@ -18,7 +18,7 @@ body{
     z-index: 1;
 }
 
-.home-bar{
+.bookmarks-bar{
     background: rgba(72, 71, 176, 0.9);
 }
 
@@ -51,12 +51,17 @@ body{
     opacity: 0.75;
     transition: 0.2s;
 }
+.walmart-icon{
+    fill: #ffc120 !important;
+}
+
+
 .app-box{
     display: inline-block;
     box-sizing: border-box;
     width: 160px;
     background-color: #1c1c1e;
-    margin-right: 0px;
+    margin-right: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 15px 0px 20px 15px;
@@ -70,14 +75,9 @@ body{
 /* @dark mode */
 
 @media screen and (prefers-color-scheme: light) {
-    .search{
-        background-color: #f2f2f7;
+    body{
+        background: #fff;
     }
-    .app-tray{
-
-        background-color: rgba(242, 242, 247,0.9);
-    }
-
     .app-box{
         background-color: #e5e5ea;
     }
@@ -89,25 +89,12 @@ body{
 
 
 @media(max-width: 1000px){
-    .main-home{
+    .main-bookmarks{
         position: absolute;
         left: 0;
         top: 0;
-        padding-left: 104px;
+        padding-left: 84px;
         
-    }
-
-    .big-button-container{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        
-        width: 48%;
-
-        margin-right: 4%;
-        margin-left: 0px;
-        margin-bottom: 20px;
-        position: initial;
     }
 
     .end-item-tablet{
@@ -119,63 +106,18 @@ body{
 
 @media(max-width: 450px){
  
-    
-    
-    
-    
-    /* .wallpaper{
-        display: none;
-    } */
-
-
-
-
-    .main-home{
+    .main-bookmarks{
         position: absolute;
-        top: 120px;
         left: 0;
-        background-color:transparent;
-        width: 100vw;
-
-        transform: none;
+        top: 0;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 95px;
-        min-height: 100vh;
-        box-sizing: border-box;
-        overflow-y: hidden;
         
     }
 
-    .search-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
 
-        margin-top: 0px;
 
-        margin-bottom: 10px;
-    }
-
-    .big-button-container{
-        margin-bottom: 10px;
-    }
-
-    .app-tray{
-        height: 100%;
-        width: 100vw;
-        box-sizing: border-box;
-        position: relative;
-        z-index: 1;
-        top: 0px;
-        left: -20px;
-        background-color: transparent;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding: 0px 20px 0;
-    
-    }
     .app-box{
         margin-right: 4%;
         width: 48%;
