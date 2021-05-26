@@ -577,13 +577,13 @@
 }
 
 .spy-solid{
-    background-color: #52392B;
+    background-color: #7f6b57;
 }
 .spy-gradient{
-    background: linear-gradient(#00000000,#52392B);
+    background: linear-gradient(#00000000,#7f6b57);
 }
 .spy-poster{
-    background-image: url('TV/background/spy.webp');
+    background-image: url('TV/background/spy.jpg');
 }
 .spy-title{
     background-image: url('TV/title/spy.png');
