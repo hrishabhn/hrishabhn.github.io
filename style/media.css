@@ -720,6 +720,19 @@
     background-image: url('../TV/title/grandTour.svg');
 }
 
+.lineofduty-solid{
+    background-color: #262841;
+}
+.lineofduty-gradient{
+    background: linear-gradient(#00000000,#262841);
+}
+.lineofduty-poster{
+    background-image: url('../TV/background/line.webp');
+}
+.lineofduty-title{
+    background-image: url('../TV/title/line.png');
+}
+
 
 
 
