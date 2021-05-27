@@ -172,9 +172,16 @@ var show19 = [
   "WATCH ON NETFLIX"
 ]
 
-
-
-
+//Line of duty 
+var show20 = [
+  "lineofduty-solid",
+  "lineofduty-poster",
+  "lineofduty-gradient",
+  "tv-title-wide lineofduty-title", //title width
+  "Thriller • 6 Season • 2012 - Present",
+  "https://www.netflix.com/title/70263817",
+  "WATCH ON NETFLIX"
+]
 
 
 // var show14 = hide
@@ -183,7 +190,7 @@ var show19 = [
 // var show17 = hide
 // var show18 = hide
 // var show19 = hide
-var show20 = hide
+// var show20 = hide
 
 // TV Archived //
 
