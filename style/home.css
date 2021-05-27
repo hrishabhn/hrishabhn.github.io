@@ -19,6 +19,23 @@ body{
 }
 
 
+.wallpaper{
+    background-image: url(../images/chicago.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;       
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+
+
+
+
 /* .wallpaper{
     background-image: url("images/wallpaper.jpg");
     background-size: cover;
