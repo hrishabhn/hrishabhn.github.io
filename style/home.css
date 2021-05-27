@@ -369,7 +369,8 @@ body{
     }
     .app-tray{
         margin-top: 210px;
-        background-color: rgba(44, 44, 46, 0.25);
+        background-color: rgba(242, 242, 247, 0.2);
+        /* background-color: rgba(44, 44, 46, 0.25); */
         height: 800px;
         padding-left: 5vw;
         padding-right: 5vw;
