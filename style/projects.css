@@ -24,16 +24,16 @@ body{
 
 
 
-.small-button{
+.button{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     cursor: pointer;
 
-    width: 60px;
-    height: 60px;
-    border-radius: 25px;
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
 
     transition: 0.2s;
     margin-right: 10px;
@@ -41,12 +41,12 @@ body{
     margin-bottom: 10px;
 }
 
-.small-button-icon{
+.button-icon{
     fill: #fff;
-    height: 24px;
-    width: 24px;
+    height: 40px;
+    width: 40px;
 }
-.small-button:hover{
+.button:hover{
     opacity: 0.75;
     transition: 0.2s;
 }
@@ -68,7 +68,9 @@ body{
 .box-label{
     display: block;
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 20px;
 }
 
 /* @dark mode */
