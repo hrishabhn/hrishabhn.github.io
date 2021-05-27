@@ -4,7 +4,7 @@ body{
 }
 
 
-.main-bookmarks{
+.main-projects{
     position: absolute;
     left: 0;
     top: 0;
@@ -17,8 +17,8 @@ body{
     z-index: 1;
 }
 
-.bookmarks-bar{
-    background: rgba(42, 161, 72, 0.9);
+.projects-bar{
+    background: #D9AE00;
 }
 
 
@@ -88,7 +88,7 @@ body{
 
 
 @media(max-width: 1000px){
-    .main-bookmarks{
+    .main-projects{
         position: absolute;
         left: 0;
         top: 0;
@@ -105,7 +105,7 @@ body{
 
 @media(max-width: 450px){
  
-    .main-bookmarks{
+    .main-projects{
         position: absolute;
         padding-top: 130px;
         left: 0;
