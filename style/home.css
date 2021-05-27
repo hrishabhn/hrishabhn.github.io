@@ -19,7 +19,7 @@ body{
 }
 
 
-.wallpaper{
+/* .wallpaper{
     background-image: url(../images/chicago.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -30,7 +30,7 @@ body{
     top: 0px;
     left: 0px;
     z-index: -1;
-}
+} */
 
 
 
