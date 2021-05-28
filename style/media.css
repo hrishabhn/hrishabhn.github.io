@@ -21,7 +21,7 @@
     width: 60px;
     box-sizing: border-box;
     position: fixed;
-    z-index: 3;
+    z-index: 5;
     top: 0px;
     right: 0;
     background-color: rgba(28, 28, 30, 0.9);
@@ -88,15 +88,15 @@
     padding-left: 240px;
     right: 240px;
     padding-right: 60px;
-
+    padding-bottom: 20px;
     
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y: visible ;
     white-space: nowrap;
     position: relative;
     width: 100vw;
     box-sizing: border-box;
-    padding-bottom: 20px;
+    /* z-index: 10; */
 }
 
 
@@ -116,21 +116,46 @@
     vertical-align: top;
     margin-right: 10px;
     margin-bottom: 0px;
+    transition: 0.25s;
 }
+.tv-card:hover{   
+    width: 375px;
+    transition: 0.25s;
+    z-index: 3;
+    margin-bottom: -20px;
+    height: 285px;
+    /* box-shadow: 0 0 30px #000; */
+}
+.tv-card:hover .tv-poster{
+    height: 210px;
+    transition: 0.25s;
+}
+.tv-card:hover .tv-gradient{
+    top: 60px;
+    transition: 0.25s;
+
+}
+
+
+
 .tv-poster{
     width: 100%;
     height: 190px;
     background-size: cover;
     background-position: center;
     display: block;
+
+    transition: 0.25s;
 }
 .tv-gradient{
     display: block;
     position: relative;
     top: 40px;
 
-    width: 335px;
+    width: 100%;
     height: 150px;
+
+    transition: 0.25s;
 }
 .tv-title{
     background-size: contain;
