@@ -263,9 +263,9 @@ body{
     position: relative;
     bottom: 140px;
 }
-.up70-0{
+.up0-140{
     position: relative;
-    bottom: 70px;
+    bottom: 0;
 }
 
 .frozen{
@@ -741,6 +741,10 @@ gradients
         height: 110px;
     }
 
+    .up0-140{
+        position: relative;
+        bottom: 140px;
+    }
     
     /*.title-text{
         font-size: 30px;
