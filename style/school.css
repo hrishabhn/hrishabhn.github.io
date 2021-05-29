@@ -122,7 +122,9 @@ body{
 .box-label{
     display: block;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 5px;
 }
 
 
@@ -154,9 +156,12 @@ body{
         background: #fff;
     }
     
-    
-    
-    
+    .app-box{
+        background-color: #e5e5ea;
+    }
+    .box-label{
+        color: #1c1c1e;
+    }
 }
 
 
