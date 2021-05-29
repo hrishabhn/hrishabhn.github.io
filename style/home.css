@@ -19,6 +19,7 @@ body{
 }
 
 
+
 /* .wallpaper{
     background-image: url(../images/chicago.jpg);
     background-size: cover;
@@ -99,6 +100,9 @@ body{
     .end-item{
         margin-right: 0 !important;
     }
+    .end-item:hover{
+        margin-right: -2px;
+    }
 }
 
 
@@ -108,11 +112,11 @@ body{
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    width: 130px;
     height: 60px;
     border-radius: 10px;
 
-    transition: 0.1s;
+    transition: 0.25s;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 10px;
@@ -127,8 +131,8 @@ body{
 
     height: 100%;
     width: 100%;
-    border-radius: 10px;
-    transition: 0.1s;
+    border-radius: 20px;
+    transition: 0.25s;
     margin: 0px;
 }
 .big-button-icon{
@@ -143,9 +147,17 @@ body{
     font-weight: 500;
     color: #fff;
 }
-.big-button:hover{
-    opacity: 0.8;
-    transition: 0.1s;
+.big-button-container:hover{
+    width: 134px;
+    margin-left: -2px;
+    height: 64px;
+    margin-top: -2px;
+    margin-bottom: 8px;
+
+    /* border-radius: 24px; */
+
+    /* opacity: 0.8; */
+    transition: 0.25s;
 }
 
 
@@ -161,9 +173,9 @@ body{
 
     width: 60px;
     height: 60px;
-    border-radius: 10px;
+    border-radius: 20px;
 
-    transition: 0.2s;
+    transition: 0.25s;
     margin-right: 10px;
     margin-left: 0px;
     margin-bottom: 10px;
@@ -175,8 +187,14 @@ body{
     width: 24px;
 }
 .small-button:hover{
-    opacity: 0.75;
-    transition: 0.2s;
+    /* opacity: 0.75; */
+    transition: 0.25s;
+    height: 64px;
+    width: 64px;
+    margin-left: -2px;
+    margin-top: -2px;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 
@@ -199,7 +217,7 @@ body{
     -webkit-backdrop-filter: blur(30px);
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 110px 10px 0;
+    padding: 110px 0px 0 10px;
 
 }
 
