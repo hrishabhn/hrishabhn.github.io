@@ -35,7 +35,7 @@ body{
     height: 60px;
     border-radius: 25px;
 
-    transition: 0.2s;
+    transition: 0.25s;
     margin-right: 10px;
     margin-left: 0px;
     margin-bottom: 10px;
@@ -45,11 +45,27 @@ body{
     fill: #fff;
     height: 24px;
     width: 24px;
+    transition: 0.25s;
 }
 .small-button:hover{
-    opacity: 0.75;
-    transition: 0.2s;
+    transition: 0.25s;
+    height: 64px;
+    width: 64px;
+    margin-left: -2px;
+    margin-right: 8px;
+    margin-top: -2px;
+    margin-bottom: 8px;
+    /* border-radius: 30px; */
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.25); */
 }
+
+
+
+
+
+
+
+
 .walmart-icon{
     fill: #ffc120 !important;
 }
