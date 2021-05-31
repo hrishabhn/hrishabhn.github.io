@@ -1000,11 +1000,11 @@
         padding-right: 10px;
 
 
-        padding-bottom: 0px;
-        padding-top: 0px;
+        padding-bottom: 6vh;
+        padding-top: 6vh;
 
-        top: 48vh;
-        height: 7vh;
+        top: 42vh;
+        min-height: 19vh;
     }
     .tv-page-button-container{
         border-radius: 23px;
