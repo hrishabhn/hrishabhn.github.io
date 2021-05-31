@@ -415,11 +415,115 @@
 
 
 .tv-page-link{
-    background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
     bottom: 40px;
     left: 240px;
     width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    text-decoration: none;
+
+    transition: 0.25s;
+    
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.tv-page-service{
+    position: absolute;
+    bottom: 40px;
+    left: 240px;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    text-decoration: none;
+
+    padding-left: 25px;
+    z-index: 1;
+    color: white !important;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.1s;
+
+}
+.tv-page-link:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.25s;
+}
+
+
+
+.tv-time-link{
+    position: absolute;
+    bottom: 40px;
+    left: 560px;
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    text-decoration: none;
+
+    transition: 0.25s;
+    
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.tv-time-text{
+    position: absolute;
+    bottom: 40px;
+    left: 560px;
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    text-decoration: none;
+
+    padding-left: 25px;
+    z-index: 1;
+    color: white !important;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.1s;
+
+}
+.tv-time-link:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.25s;
+}
+
+
+
+
+
+
+
+
+
+/* .tv-time-link{
+    background-color: #272727;
+    position: absolute;
+    bottom: 40px;
+    left: 560px;
+    width: 150px;
     height: 50px;
     box-sizing: border-box;
 
@@ -436,7 +540,7 @@
 
     border-radius: 5px;
 }
-.tv-page-service{
+.tv-time-text{
     position: absolute;
     width: 250px;
     height: 50px;
@@ -444,20 +548,16 @@
     display: inline-flex;
     padding-left: 0px;
     text-decoration: none;
-    color: black !important;
+    color: #FBD736 !important;
     font-size: 12px;
     font-weight: 600;
-    transition: 0.1s;
+    transition: 0.25s;
 
 }
-.tv-page-link:hover{
-    background-color: rgba(255, 255, 255, 0.7);
-    transition: 0.1s;
-}
-
-
-
-
+.tv-time-link:hover{
+    background-color: #333333;
+    transition: 0.25s;
+} */
 
 
 
@@ -833,6 +933,16 @@
     .tv-page-link{
         left: 104px;
     }
+    .tv-page-service{
+        left: 104px;
+    }
+
+    .tv-time-link{
+        left: 424px;
+    }
+    .tv-time-text{
+        left: 424px;
+    }
 }
 
 
@@ -978,37 +1088,42 @@
         text-overflow: ellipsis;
     }
     
-    
     .tv-page-link{
-        background-color: rgba(255, 255, 255, 0.6);
         position: absolute;
         top: 50vh;
         left: 5vw;
         width: 90vw;
-
-        /* margin-left: 40px;
-        margin-right: 40px; */
-
-        height: 50px;
-        box-sizing: border-box;
-    
-        align-items: center;
-        display: flex;
-        /* padding-left: 25px; */
-        text-decoration: none;
-    
-    
-        font-weight: 500;
-        transition: 0.25s;
-        z-index: 1;
-        overflow: hidden;
-    
-        border-radius: 5px;
-
-
-
+        height: 7vh;
     }
     .tv-page-service{
+        position: absolute;
+        top: 50vh;
+        left: 5vw;
+        width: 90vw;
+        height: 7vh;
+    }
+
+    .tv-time-link{
+        position: absolute;
+        top: 60vh;
+        left: 5vw;
+        width: 90vw;
+        height: 7vh;
+    }
+    .tv-time-text{
+        position: absolute;
+        top: 60vh;
+        left: 5vw;
+        width: 90vw;
+        height: 7vh;
+    }
+
+
+
+
+
+
+    /* .tv-page-service{
         position: absolute;
         width: 250px;
         height: 50px;
@@ -1024,11 +1139,8 @@
 
 
 
-    }
-    .tv-page-link:hover{
-        background-color: rgba(255, 255, 255, 0.7);
-        transition: 0.1s;
-    }
+    } */
+
 
 
 
