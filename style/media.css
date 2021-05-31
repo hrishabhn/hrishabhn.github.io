@@ -462,11 +462,9 @@
 }
 
 
-
-.tv-time-link{
+.tv-page-button{
     position: absolute;
     bottom: 40px;
-    left: 560px;
     width: 150px;
     height: 50px;
     box-sizing: border-box;
@@ -481,15 +479,14 @@
     
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.1);
-
 }
-.tv-time-text{
+.tv-page-text{
     position: absolute;
     bottom: 40px;
-    left: 560px;
     width: 150px;
     height: 50px;
     box-sizing: border-box;
+
 
     align-items: center;
     display: flex;
@@ -502,173 +499,28 @@
     color: white !important;
     font-size: 12px;
     font-weight: 600;
-    transition: 0.1s;
-
 }
-.tv-time-link:hover{
+.tv-page-button:hover{
     background-color: rgba(255, 255, 255, 0.15);
     transition: 0.25s;
 }
 
 
 
-.reelgood-link{
-    position: absolute;
-    bottom: 40px;
+
+
+.tv-time-button{
+    left: 560px;
+}
+.reelgood-button{
     left: 730px;
-    width: 150px;
-    height: 50px;
-    box-sizing: border-box;
-
-    align-items: center;
-    display: flex;
-    overflow: hidden;
-    border-radius: 5px;
-    text-decoration: none;
-
-    transition: 0.25s;
-    
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.1);
-
 }
-.reelgood-text{
-    position: absolute;
-    bottom: 40px;
-    left: 730px;
-    width: 150px;
-    height: 50px;
-    box-sizing: border-box;
-
-    align-items: center;
-    display: flex;
-    overflow: hidden;
-    border-radius: 5px;
-    text-decoration: none;
-
-    padding-left: 25px;
-    z-index: 1;
-    color: white !important;
-    font-size: 12px;
-    font-weight: 600;
-    transition: 0.1s;
-
-}
-.reelgood-link:hover{
-    background-color: rgba(255, 255, 255, 0.15);
-    transition: 0.25s;
-}
-
-.imdb-link{
-    position: absolute;
-    bottom: 40px;
+.imdb-button{
     left: 900px;
-    width: 150px;
-    height: 50px;
-    box-sizing: border-box;
-
-    align-items: center;
-    display: flex;
-    overflow: hidden;
-    border-radius: 5px;
-    text-decoration: none;
-
-    transition: 0.25s;
-    
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.1);
-
-}
-.imdb-text{
-    position: absolute;
-    bottom: 40px;
-    left: 900px;
-    width: 150px;
-    height: 50px;
-    box-sizing: border-box;
-
-    align-items: center;
-    display: flex;
-    overflow: hidden;
-    border-radius: 5px;
-    text-decoration: none;
-
-    padding-left: 25px;
-    z-index: 1;
-    color: white !important;
-    font-size: 12px;
-    font-weight: 600;
-    transition: 0.1s;
-
-}
-.imdb-link:hover{
-    background-color: rgba(255, 255, 255, 0.15);
-    transition: 0.25s;
 }
 
 
-
-
-/* .tv-time-link{
-    background-color: #272727;
-    position: absolute;
-    bottom: 40px;
-    left: 560px;
-    width: 150px;
-    height: 50px;
-    box-sizing: border-box;
-
-    align-items: center;
-    display: flex;
-    padding-left: 25px;
-    text-decoration: none;
-
-
-    font-weight: 500;
-    transition: 0.25s;
-    z-index: 1;
-    overflow: hidden;
-
-    border-radius: 5px;
-}
-.tv-time-text{
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    align-items: center;
-    display: inline-flex;
-    padding-left: 0px;
-    text-decoration: none;
-    color: #FBD736 !important;
-    font-size: 12px;
-    font-weight: 600;
-    transition: 0.25s;
-
-}
-.tv-time-link:hover{
-    background-color: #333333;
-    transition: 0.25s;
-} */
-
-
-
-
-
-
-
-
-
-
-/* .book-gradient{
-    display: block;
-    position: absolute;
-    bottom: 40px;
-
-    width: 100%;
-    height: 150px;
-} */
-
-
+/* books */
 .homodeus-solid{
     background-color: #190e10;
 }
@@ -1028,24 +880,13 @@
         left: 104px;
     }
 
-    .tv-time-link{
+    .tv-time-button{
         left: 424px;
     }
-    .tv-time-text{
-        left: 424px;
-    }
-
-    .reelgood-link{
+    .reelgood-button{
         left: 594px;
     }
-    .reelgood-text{
-        left: 594px;
-    }
-
-    .imdb-link{
-        left: 764px;
-    }
-    .imdb-text{
+    .imdb-button{
         left: 764px;
     }
 }
@@ -1208,56 +1049,44 @@
         height: 7vh;
     }
 
-    .tv-time-link{
+/* @current */
+
+
+    .tv-page-button{
         position: absolute;
         margin-top: 3vw;
         top: 57vh;
-        left: 5vw;
         width: 28vw;
         height: 7vh;
     }
-    .tv-time-text{
+    .tv-page-text{
         position: absolute;
         margin-top: 3vw;
         top: 57vh;
-        left: 5vw;
         width: 28vw;
         height: 7vh;
     }
 
-    .reelgood-link{
-        position: absolute;
-        margin-top: 3vw;
-        top: 57vh;
-        left: 36vw;
-        width: 28vw;
-        height: 7vh;
+
+
+
+    
+
+    .tv-time-button{
+        left: 5vw;
     }
-    .reelgood-text{
-        position: absolute;
-        margin-top: 3vw;
-        top: 57vh;
+    .reelgood-button{
         left: 36vw;
-        width: 28vw;
-        height: 7vh;
+    }
+    .imdb-button{
+        left: 67vw;
     }
 
-    .imdb-link{
-        position: absolute;
-        margin-top: 3vw;
-        top: 57vh;
-        left: 67vw;
-        width: 28vw;
-        height: 7vh;
-    }
-    .imdb-text{
-        position: absolute;
-        margin-top: 3vw;
-        top: 57vh;
-        left: 67vw;
-        width: 28vw;
-        height: 7vh;
-    }
+
+
+
+
+
 
 
 
