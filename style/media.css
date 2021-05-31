@@ -512,8 +512,99 @@
 
 
 
+.reelgood-link{
+    position: absolute;
+    bottom: 40px;
+    left: 730px;
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
 
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    text-decoration: none;
 
+    transition: 0.25s;
+    
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.reelgood-text{
+    position: absolute;
+    bottom: 40px;
+    left: 730px;
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    text-decoration: none;
+
+    padding-left: 25px;
+    z-index: 1;
+    color: white !important;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.1s;
+
+}
+.reelgood-link:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.25s;
+}
+
+.imdb-link{
+    position: absolute;
+    bottom: 40px;
+    left: 900px;
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    text-decoration: none;
+
+    transition: 0.25s;
+    
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.imdb-text{
+    position: absolute;
+    bottom: 40px;
+    left: 900px;
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    text-decoration: none;
+
+    padding-left: 25px;
+    z-index: 1;
+    color: white !important;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.1s;
+
+}
+.imdb-link:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.25s;
+}
 
 
 
@@ -943,6 +1034,20 @@
     .tv-time-text{
         left: 424px;
     }
+
+    .reelgood-link{
+        left: 594px;
+    }
+    .reelgood-text{
+        left: 594px;
+    }
+
+    .imdb-link{
+        left: 764px;
+    }
+    .imdb-text{
+        left: 764px;
+    }
 }
 
 
@@ -1105,16 +1210,52 @@
 
     .tv-time-link{
         position: absolute;
-        top: 60vh;
+        margin-top: 3vw;
+        top: 57vh;
         left: 5vw;
-        width: 90vw;
+        width: 28vw;
         height: 7vh;
     }
     .tv-time-text{
         position: absolute;
-        top: 60vh;
+        margin-top: 3vw;
+        top: 57vh;
         left: 5vw;
-        width: 90vw;
+        width: 28vw;
+        height: 7vh;
+    }
+
+    .reelgood-link{
+        position: absolute;
+        margin-top: 3vw;
+        top: 57vh;
+        left: 36vw;
+        width: 28vw;
+        height: 7vh;
+    }
+    .reelgood-text{
+        position: absolute;
+        margin-top: 3vw;
+        top: 57vh;
+        left: 36vw;
+        width: 28vw;
+        height: 7vh;
+    }
+
+    .imdb-link{
+        position: absolute;
+        margin-top: 3vw;
+        top: 57vh;
+        left: 67vw;
+        width: 28vw;
+        height: 7vh;
+    }
+    .imdb-text{
+        position: absolute;
+        margin-top: 3vw;
+        top: 57vh;
+        left: 67vw;
+        width: 28vw;
         height: 7vh;
     }
 
