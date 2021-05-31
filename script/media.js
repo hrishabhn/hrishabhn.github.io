@@ -10,9 +10,23 @@ var hide = [
 
 
 
+//Snowfall
+var show1 = [
+  "snowfall-solid",
+  "snowfall-poster",
+  "snowfall-gradient",
+  "tv-title-wide snowfall-title", //title width
+  "Crime • 4 Seasons • 2018 - Present",
+  "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
+  "hulu-green",
+  "WATCH ON HULU",
+  "https://www.tvtime.com/en/show/328092",
+  "https://reelgood.com/show/snowfall-2017",
+  "https://www.imdb.com/title/tt6439752"
+]
 
 //Twin peaks
-var show1 = [
+var show2 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
@@ -27,7 +41,7 @@ var show1 = [
 ]
 
 //Always sunny
-var show2 = [
+var show3 = [
   " always-solid",
   "always-poster",
   "always-gradient",
@@ -39,21 +53,6 @@ var show2 = [
   "https://www.tvtime.com/en/show/75805",
   "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
   "https://www.imdb.com/title/tt0472954"
-]
-
-//Snowfall
-var show3 = [
-  "snowfall-solid",
-  "snowfall-poster",
-  "snowfall-gradient",
-  "tv-title-wide snowfall-title", //title width
-  "Crime • 4 Seasons • 2018 - Present",
-  "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
-  "hulu-green",
-  "WATCH ON HULU",
-  "https://www.tvtime.com/en/show/328092",
-  "https://reelgood.com/show/snowfall-2017",
-  "https://www.imdb.com/title/tt6439752"
 ]
 
 //Atlanta
@@ -612,7 +611,7 @@ function tvPage(n){
   var posterClass = "tv-page-poster ";
   var gradientClass = "tv-page-gradient ";
   var titleClass = "tv-page-title ";
-  var serviceClass = "tv-page-link-container ";
+  var serviceClass = "tv-page-button-container ";
 
 
   document.getElementById("card").className =                  cardClass.concat(showSolid[n]);
