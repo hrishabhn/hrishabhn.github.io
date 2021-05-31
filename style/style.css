@@ -529,7 +529,8 @@ gradients
     background:linear-gradient(to bottom right,#f00,#b30000);
 }
 .reelgood{
-    background:linear-gradient(to bottom right,#00dc89,#008f58);
+    /* background:linear-gradient(to bottom right,#00dc89,#008f58); */
+    background: #00dc89;
 }
 .tv-time{
     background: #545454;
@@ -586,6 +587,22 @@ gradients
 .facebook{
     background:linear-gradient(to bottom right,#4267b2,#263b66);
 }
+.imdb{
+    background: #F5C518;
+
+}
+
+/* MEDIA */
+
+.tv-time-text{
+    color: #FBD736 !important;
+}
+.black-text{
+    color: #000 !important;
+}
+
+
+
 
 
 
