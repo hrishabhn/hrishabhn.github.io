@@ -34,7 +34,9 @@ var show2 = [
   "Comedy • 14 Seasons • 2005 - Present",
   "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
   "WATCH ON HULU",
-  "https://www.tvtime.com/en/show/75805"
+  "https://www.tvtime.com/en/show/75805",
+  "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+  "https://www.imdb.com/title/tt0472954"
 ]
 
 //Snowfall
@@ -46,7 +48,9 @@ var show3 = [
   "Crime • 4 Seasons • 2018 - Present",
   "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
   "WATCH ON HULU",
-  "https://www.tvtime.com/en/show/328092"
+  "https://www.tvtime.com/en/show/328092",
+  "https://reelgood.com/show/snowfall-2017",
+  "https://www.imdb.com/title/tt6439752"
 ]
 
 //Atlanta
@@ -57,7 +61,10 @@ var show4 = [
   "tv-title-wide atlanta-title",
   "Comedy • 5 Seasons • 2016 - 2021",
   "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
-  "WATCH ON HULU"
+  "WATCH ON HULU",
+  "https://www.tvtime.com/en/show/313999",
+  "https://reelgood.com/show/atlanta-2016",
+  "https://www.imdb.com/title/tt4288182"
 ]
 
 //Kim's Convenience
@@ -68,7 +75,10 @@ var show5 = [
   "tv-title-mid kim-title",
   "Comedy • 2 Seasons • 2016 - Present",
   "https://www.netflix.com/title/80199128",
-  "WATCH ON NETFLIX"
+  "WATCH ON NETFLIX",
+  "https://www.tvtime.com/en/show/315908",
+  "https://reelgood.com/show/kims-convenience-2016",
+  "https://www.imdb.com/title/tt5912064"
 ]
 
 var show6 = hide
@@ -86,7 +96,10 @@ var show11 = [
   "tv-title-wide legion-title",
   "Sci-Fi • 3 Seasons • 2017 - 2019",
   "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
-  "WATCH ON HULU"
+  "WATCH ON HULU",
+  "https://www.tvtime.com/en/show/320724",
+  "https://reelgood.com/show/legion-2017",
+  "https://www.imdb.com/title/tt5114356"
 ]
 
 //Mythic quest
@@ -97,96 +110,125 @@ var show12 = [
   "tv-title-wide mythic-title", //title width
   "Comedy • 2 Seasons • 2020 - Present",
   "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
-  "WATCH ON  TV+"
-]
-
-//Spy
-var show13 = [
-  "spy-solid",
-  "spy-poster",
-  "spy-gradient",
-  "tv-title-wide spy-title", //title width
-  "Drama • 1 Season • 2019",
-  "https://www.netflix.com/title/80178151",
-  "WATCH ON NETFLIX"
-]
-
-//Chernobyl
-var show14 = [
-  "chernobyl-solid",
-  "chernobyl-poster",
-  "chernobyl-gradient",
-  "tv-title-wide chernobyl-title",
-  "Thriller • 1 Season • 2019",
-  "",
-  "WATCH ON HBO"
-]
-
-//Mindhunter
-var show15 = [
-  "mindhunter-solid",
-  "mindhunter-poster",
-  "mindhunter-gradient",
-  "tv-title-wide mindhunter-title",
-  "Crime • 2 Seasons • 2017 - 2019",
-  "https://www.netflix.com/title/80114855",
-  "WATCH ON NETFLIX"
-]
-
-//For all mankind
-var show16 = [
-  "mankind-solid",
-  "mankind-poster",
-  "mankind-gradient",
-  "tv-title-wide mankind-title", //title width
-  "Sci-Fi • 2 Seasons • 2019 - Present",
-  "https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
-  "WATCH ON  TV+"
-]
-
-//Drive to survive
-var show17 = [
-  "drive-solid",
-  "drive-poster",
-  "drive-gradient",
-  "tv-title-wide drive-title", //title width
-  "Documentary • 3 Seasons • 2019 - Present",
-  "https://www.netflix.com/title/80204890",
-  "WATCH ON NETFLIX"
-]
-
-//Grand tour
-var show18 = [
-  "grandTour-solid",
-  "grandTour-poster",
-  "grandTour-gradient",
-  "tv-title-wide grandTour-title", //title width
-  "Comedy •  4 Seasons • 2016 - Present",
-  "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-  "WATCH ON PRIME VIDEO"
-]
-
-//Schulz 
-var show19 = [
-  "schulz-solid",
-  "schulz-poster",
-  "schulz-gradient",
-  "tv-title-wide schulz-title", //title width
-  "Comedy Special • 1 Season • 2020",
-  "https://www.netflix.com/title/81383020",
-  "WATCH ON NETFLIX"
+  "WATCH ON  TV+",
+  "https://www.tvtime.com/en/show/362829",
+  "https://reelgood.com/show/mythic-quest-2020",
+  "https://www.imdb.com/title/tt8879940"
 ]
 
 //Line of duty 
-var show20 = [
+var show13 = [
   "lineofduty-solid",
   "lineofduty-poster",
   "lineofduty-gradient",
   "tv-title-wide lineofduty-title", //title width
   "Thriller • 6 Season • 2012 - Present",
   "https://www.netflix.com/title/70263817",
-  "WATCH ON NETFLIX"
+  "WATCH ON NETFLIX",
+  "https://www.tvtime.com/en/show/260092",
+  "https://reelgood.com/show/line-of-duty-2012",
+  "https://www.imdb.com/title/tt2303687"
 ]
+
+//Spy
+var show14 = [
+  "spy-solid",
+  "spy-poster",
+  "spy-gradient",
+  "tv-title-wide spy-title", //title width
+  "Drama • 1 Season • 2019",
+  "https://www.netflix.com/title/80178151",
+  "WATCH ON NETFLIX",
+  "https://www.tvtime.com/en/show/368109",
+  "https://reelgood.com/show/the-spy-2019",
+  "https://www.imdb.com/title/tt5952634"
+]
+
+//Chernobyl
+var show15 = [
+  "chernobyl-solid",
+  "chernobyl-poster",
+  "chernobyl-gradient",
+  "tv-title-wide chernobyl-title",
+  "Thriller • 1 Season • 2019",
+  "",
+  "WATCH ON HBO",
+  "https://www.tvtime.com/en/show/360893",
+  "https://reelgood.com/show/chernobyl-2019",
+  "https://www.imdb.com/title/tt7366338"
+]
+
+//Mindhunter
+var show16 = [
+  "mindhunter-solid",
+  "mindhunter-poster",
+  "mindhunter-gradient",
+  "tv-title-wide mindhunter-title",
+  "Crime • 2 Seasons • 2017 - 2019",
+  "https://www.netflix.com/title/80114855",
+  "WATCH ON NETFLIX",
+  "https://www.tvtime.com/en/show/328708",
+  "https://reelgood.com/show/mindhunter-2017",
+  "https://www.imdb.com/title/tt5290382"
+]
+
+//For all mankind
+var show17 = [
+  "mankind-solid",
+  "mankind-poster",
+  "mankind-gradient",
+  "tv-title-wide mankind-title", //title width
+  "Sci-Fi • 2 Seasons • 2019 - Present",
+  "https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
+  "WATCH ON  TV+",
+  "https://www.tvtime.com/en/show/356202",
+  "https://reelgood.com/show/for-all-mankind-2019",
+  "https://www.imdb.com/title/tt7772588"
+]
+
+//Drive to survive
+var show18 = [
+  "drive-solid",
+  "drive-poster",
+  "drive-gradient",
+  "tv-title-wide drive-title", //title width
+  "Documentary • 3 Seasons • 2019 - Present",
+  "https://www.netflix.com/title/80204890",
+  "WATCH ON NETFLIX",
+  "https://www.tvtime.com/en/show/359913",
+  "https://reelgood.com/show/formula-1-drive-to-survive-2019",
+  "https://www.imdb.com/title/tt8289930"
+]
+
+//Grand tour
+var show19 = [
+  "grandTour-solid",
+  "grandTour-poster",
+  "grandTour-gradient",
+  "tv-title-wide grandTour-title", //title width
+  "Comedy •  4 Seasons • 2016 - Present",
+  "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+  "WATCH ON PRIME VIDEO",
+  "https://www.tvtime.com/en/show/314087",
+  "https://reelgood.com/show/the-grand-tour-2016",
+  "https://www.imdb.com/title/tt5712554"
+]
+
+//Schulz 
+var show20 = [
+  "schulz-solid",
+  "schulz-poster",
+  "schulz-gradient",
+  "tv-title-wide schulz-title", //title width
+  "Comedy Special • 1 Season • 2020",
+  "https://www.netflix.com/title/81383020",
+  "WATCH ON NETFLIX",
+  "https://www.tvtime.com/en/show/393181",
+  "https://reelgood.com/show/schulz-saves-america-pandemics-predators-protests-presidents-2020",
+  "https://www.imdb.com/title/tt13607518"
+]
+
+
 
 
 // var show14 = hide
@@ -197,7 +239,10 @@ var show20 = [
 // var show19 = hide
 // var show20 = hide
 
-// TV Archived //
+
+
+
+// ---- TV Archived ---- //
 
 // var show = [
 //   "fargo-solid",
@@ -324,6 +369,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show2[5];
       showService[k] = show2[6];
        showTVtime[k] = show2[7];
+     showReelgood[k] = show2[8];
+         showIMDB[k] = show2[9];
   k = 3;
         showSolid[k] = show3[0];
        showPoster[k] = show3[1];
@@ -333,6 +380,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show3[5];
       showService[k] = show3[6];
        showTVtime[k] = show3[7];
+     showReelgood[k] = show3[8];
+         showIMDB[k] = show3[9];
   k = 4;
         showSolid[k] = show4[0];
        showPoster[k] = show4[1];
@@ -342,6 +391,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show4[5];
       showService[k] = show4[6];
        showTVtime[k] = show4[7];
+     showReelgood[k] = show4[8];
+         showIMDB[k] = show4[9];
   k = 5;
         showSolid[k] = show5[0];
        showPoster[k] = show5[1];
@@ -351,6 +402,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show5[5];
       showService[k] = show5[6];
        showTVtime[k] = show5[7];
+     showReelgood[k] = show5[8];
+         showIMDB[k] = show5[9];
   k = 6;
         showSolid[k] = show6[0];
        showPoster[k] = show6[1];
@@ -360,6 +413,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show6[5];
       showService[k] = show6[6];
        showTVtime[k] = show6[7];
+     showReelgood[k] = show6[8];
+         showIMDB[k] = show6[9];
   k = 7;
         showSolid[k] = show7[0];
        showPoster[k] = show7[1];
@@ -369,6 +424,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show7[5];
       showService[k] = show7[6];
        showTVtime[k] = show7[7];
+     showReelgood[k] = show7[8];
+         showIMDB[k] = show7[9];
   k = 8;
         showSolid[k] = show8[0];
        showPoster[k] = show8[1];
@@ -378,6 +435,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show8[5];
       showService[k] = show8[6]; 
        showTVtime[k] = show8[7];
+     showReelgood[k] = show8[8];
+         showIMDB[k] = show8[9];
   k = 9;
         showSolid[k] = show9[0];
        showPoster[k] = show9[1];
@@ -387,6 +446,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show9[5];
       showService[k] = show9[6];
        showTVtime[k] = show9[7];
+     showReelgood[k] = show9[8];
+         showIMDB[k] = show9[9];
   k = 10;
         showSolid[k] = show10[0];
        showPoster[k] = show10[1];
@@ -396,6 +457,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show10[5];
       showService[k] = show10[6];
        showTVtime[k] = show10[7];
+     showReelgood[k] = show10[8];
+         showIMDB[k] = show10[9];
   k = 11;
         showSolid[k] = show11[0];
        showPoster[k] = show11[1];
@@ -405,6 +468,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show11[5];
       showService[k] = show11[6];
        showTVtime[k] = show11[7];
+     showReelgood[k] = show11[8];
+         showIMDB[k] = show11[9];
   k = 12;
         showSolid[k] = show12[0];
        showPoster[k] = show12[1];
@@ -414,6 +479,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show12[5];
       showService[k] = show12[6];
        showTVtime[k] = show12[7];
+     showReelgood[k] = show12[8];
+         showIMDB[k] = show12[9];
   k = 13;
         showSolid[k] = show13[0];
        showPoster[k] = show13[1];
@@ -423,6 +490,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show13[5];
       showService[k] = show13[6];
        showTVtime[k] = show13[7];
+     showReelgood[k] = show13[8];
+         showIMDB[k] = show13[9];
   k = 14;
         showSolid[k] = show14[0];
        showPoster[k] = show14[1];
@@ -432,6 +501,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show14[5];
       showService[k] = show14[6];
        showTVtime[k] = show14[7];
+     showReelgood[k] = show14[8];
+         showIMDB[k] = show14[9];
   k = 15;
         showSolid[k] = show15[0];
        showPoster[k] = show15[1];
@@ -441,6 +512,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show15[5];
       showService[k] = show15[6];
        showTVtime[k] = show15[7];
+     showReelgood[k] = show15[8];
+         showIMDB[k] = show15[9];
   k = 16;
         showSolid[k] = show16[0];
        showPoster[k] = show16[1];
@@ -450,6 +523,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show16[5];
       showService[k] = show16[6];
        showTVtime[k] = show16[7];
+     showReelgood[k] = show16[8];
+         showIMDB[k] = show16[9];
   k = 17;
         showSolid[k] = show17[0];
        showPoster[k] = show17[1];
@@ -459,6 +534,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show17[5];
       showService[k] = show17[6];
        showTVtime[k] = show17[7];
+     showReelgood[k] = show17[8];
+         showIMDB[k] = show17[9];
   k = 18;
         showSolid[k] = show18[0];
        showPoster[k] = show18[1];
@@ -468,6 +545,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show18[5];
       showService[k] = show18[6];
        showTVtime[k] = show18[7];
+     showReelgood[k] = show18[8];
+         showIMDB[k] = show18[9];
   k = 19;
         showSolid[k] = show19[0];
        showPoster[k] = show19[1];
@@ -477,6 +556,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show19[5];
       showService[k] = show19[6];
        showTVtime[k] = show19[7];
+     showReelgood[k] = show19[8];
+         showIMDB[k] = show19[9];
   k = 20;
         showSolid[k] = show20[0];
        showPoster[k] = show20[1];
@@ -486,6 +567,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show20[5];
       showService[k] = show20[6];
        showTVtime[k] = show20[7];
+     showReelgood[k] = show20[8];
+         showIMDB[k] = show20[9];
 
 
 function tvPage(n){
