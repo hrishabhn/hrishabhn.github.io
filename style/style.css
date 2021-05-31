@@ -591,6 +591,13 @@ gradients
     background: #F5C518;
 
 }
+.hbo{
+    background:linear-gradient(to bottom right,#991eeb,#5822b4);
+}
+.prime{
+    background:linear-gradient(to bottom right,#00a8e1,#00a8e1);
+}
+
 
 /* MEDIA */
 
