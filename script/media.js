@@ -160,7 +160,7 @@ var show15 = [
   "tv-title-wide chernobyl-title",
   "Thriller • 1 Season • 2019",
   "",
-  "netflix",
+  "hbo",
   "Watch on HBO",
   "https://www.tvtime.com/en/show/360893",
   "https://reelgood.com/show/chernobyl-2019",
@@ -220,7 +220,7 @@ var show19 = [
   "tv-title-wide grandTour-title", //title width
   "Comedy •  4 Seasons • 2016 - Present",
   "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-  "netflix",
+  "prime",
   "Watch on Prime Video",
   "https://www.tvtime.com/en/show/314087",
   "https://reelgood.com/show/the-grand-tour-2016",
