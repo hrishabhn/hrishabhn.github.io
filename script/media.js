@@ -34,7 +34,7 @@ var show2 = [
   "Mystery • 3 Seasons • 1990 - 1991",
   "https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a",
   "hulu-green",
-  "WATCH ON HULU",
+  "Watch on Hulu",
   "https://www.tvtime.com/en/show/70533",
   "https://reelgood.com/show/twin-peaks-1990",
   "https://www.imdb.com/title/tt0098936"
@@ -49,7 +49,7 @@ var show3 = [
   "Comedy • 14 Seasons • 2005 - Present",
   "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
   "hulu-green",
-  "WATCH ON HULU",
+  "Watch on Hulu",
   "https://www.tvtime.com/en/show/75805",
   "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
   "https://www.imdb.com/title/tt0472954"
@@ -64,7 +64,7 @@ var show4 = [
   "Comedy • 5 Seasons • 2016 - 2021",
   "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
   "hulu-green",
-  "WATCH ON HULU",
+  "Watch on Hulu",
   "https://www.tvtime.com/en/show/313999",
   "https://reelgood.com/show/atlanta-2016",
   "https://www.imdb.com/title/tt4288182"
@@ -79,7 +79,7 @@ var show5 = [
   "Comedy • 2 Seasons • 2016 - Present",
   "https://www.netflix.com/title/80199128",
   "netflix",
-  "WATCH ON NETFLIX",
+  "Watch on Netflix",
   "https://www.tvtime.com/en/show/315908",
   "https://reelgood.com/show/kims-convenience-2016",
   "https://www.imdb.com/title/tt5912064"
@@ -101,7 +101,7 @@ var show11 = [
   "Sci-Fi • 3 Seasons • 2017 - 2019",
   "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
   "hulu-green",
-  "WATCH ON HULU",
+  "Watch on Hulu",
   "https://www.tvtime.com/en/show/320724",
   "https://reelgood.com/show/legion-2017",
   "https://www.imdb.com/title/tt5114356"
@@ -116,7 +116,7 @@ var show12 = [
   "Comedy • 2 Seasons • 2020 - Present",
   "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
   "black-gradient",
-  "WATCH ON  TV+",
+  "Watch on  TV+",
   "https://www.tvtime.com/en/show/362829",
   "https://reelgood.com/show/mythic-quest-2020",
   "https://www.imdb.com/title/tt8879940"
@@ -131,7 +131,7 @@ var show13 = [
   "Thriller • 6 Season • 2012 - Present",
   "https://www.netflix.com/title/70263817",
   "netflix",
-  "WATCH ON NETFLIX",
+  "Watch on Netflix",
   "https://www.tvtime.com/en/show/260092",
   "https://reelgood.com/show/line-of-duty-2012",
   "https://www.imdb.com/title/tt2303687"
@@ -146,7 +146,7 @@ var show14 = [
   "Drama • 1 Season • 2019",
   "https://www.netflix.com/title/80178151",
   "netflix",
-  "WATCH ON NETFLIX",
+  "Watch on Netflix",
   "https://www.tvtime.com/en/show/368109",
   "https://reelgood.com/show/the-spy-2019",
   "https://www.imdb.com/title/tt5952634"
@@ -161,7 +161,7 @@ var show15 = [
   "Thriller • 1 Season • 2019",
   "",
   "netflix",
-  "WATCH ON HBO",
+  "Watch on HBO",
   "https://www.tvtime.com/en/show/360893",
   "https://reelgood.com/show/chernobyl-2019",
   "https://www.imdb.com/title/tt7366338"
@@ -176,7 +176,7 @@ var show16 = [
   "Crime • 2 Seasons • 2017 - 2019",
   "https://www.netflix.com/title/80114855",
   "netflix",
-  "WATCH ON NETFLIX",
+  "Watch on Netflix",
   "https://www.tvtime.com/en/show/328708",
   "https://reelgood.com/show/mindhunter-2017",
   "https://www.imdb.com/title/tt5290382"
@@ -191,7 +191,7 @@ var show17 = [
   "Sci-Fi • 2 Seasons • 2019 - Present",
   "https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
   "black-gradient",
-  "WATCH ON  TV+",
+  "Watch on  TV+",
   "https://www.tvtime.com/en/show/356202",
   "https://reelgood.com/show/for-all-mankind-2019",
   "https://www.imdb.com/title/tt7772588"
@@ -206,7 +206,7 @@ var show18 = [
   "Documentary • 3 Seasons • 2019 - Present",
   "https://www.netflix.com/title/80204890",
   "netflix",
-  "WATCH ON NETFLIX",
+  "Watch on Netflix",
   "https://www.tvtime.com/en/show/359913",
   "https://reelgood.com/show/formula-1-drive-to-survive-2019",
   "https://www.imdb.com/title/tt8289930"
@@ -221,7 +221,7 @@ var show19 = [
   "Comedy •  4 Seasons • 2016 - Present",
   "https://watch.amazon.com/detail?asin=B08QM4K1K5",
   "netflix",
-  "WATCH ON PRIME VIDEO",
+  "Watch on Prime Video",
   "https://www.tvtime.com/en/show/314087",
   "https://reelgood.com/show/the-grand-tour-2016",
   "https://www.imdb.com/title/tt5712554"
@@ -236,7 +236,7 @@ var show20 = [
   "Comedy Special • 1 Season • 2020",
   "https://www.netflix.com/title/81383020",
   "netflix",
-  "WATCH ON NETFLIX",
+  "Watch on Netflix",
   "https://www.tvtime.com/en/show/393181",
   "https://reelgood.com/show/schulz-saves-america-pandemics-predators-protests-presidents-2020",
   "https://www.imdb.com/title/tt13607518"
@@ -265,7 +265,7 @@ var show20 = [
 //   "tv-title-mid fargo-title",
 //   "Crime • 4 Seasons • 2014 - Present",
 //   "https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50",
-//   "WATCH ON HULU"
+//   "Watch on Hulu"
 // ]
 
 
