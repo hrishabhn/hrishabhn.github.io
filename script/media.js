@@ -19,7 +19,8 @@ var show1 = [
   "tv-tite tv-title-mid twinpeaks-title",
   "Mystery • 3 Seasons • 1990 - 1991",
   "https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a",
-  "WATCH ON HULU"
+  "WATCH ON HULU",
+  "https://www.tvtime.com/en/show/70533"
 ]
 
 //Always sunny
@@ -30,7 +31,8 @@ var show2 = [
   "tv-title-mid always-title",
   "Comedy • 14 Seasons • 2005 - Present",
   "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
-  "WATCH ON HULU"
+  "WATCH ON HULU",
+  "https://www.tvtime.com/en/show/75805"
 ]
 
 //Snowfall
@@ -41,7 +43,8 @@ var show3 = [
   "tv-title-wide snowfall-title", //title width
   "Crime • 4 Seasons • 2018 - Present",
   "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
-  "WATCH ON HULU"
+  "WATCH ON HULU",
+  "https://www.tvtime.com/en/show/328092"
 ]
 
 //Atlanta
@@ -291,7 +294,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showDescription = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showLink = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showService = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  // var showPage = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var showTVtime = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
   // showName[1] = 
   
@@ -303,7 +306,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show1[4];
          showLink[k] = show1[5];
       showService[k] = show1[6];
-        //  showPage[k] = "/TV/pages/tv-page-1"
+       showTVtime[k] = show1[7];
   k = 2;
         showSolid[k] = show2[0];
        showPoster[k] = show2[1];
@@ -312,7 +315,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show2[4];
          showLink[k] = show2[5];
       showService[k] = show2[6];
-        //  showPage[k] = "/TV/pages/tv-page-2"
+       showTVtime[k] = show2[7];
   k = 3;
         showSolid[k] = show3[0];
        showPoster[k] = show3[1];
@@ -321,7 +324,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show3[4];
          showLink[k] = show3[5];
       showService[k] = show3[6];
-        //  showPage[k] = "/TV/pages/tv-page-1"
+       showTVtime[k] = show3[7];
   k = 4;
         showSolid[k] = show4[0];
        showPoster[k] = show4[1];
@@ -330,7 +333,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show4[4];
          showLink[k] = show4[5];
       showService[k] = show4[6];
-        //  showPage[k] = "/TV/pages/tv-page-1"
+       showTVtime[k] = show4[7];
   k = 5;
         showSolid[k] = show5[0];
        showPoster[k] = show5[1];
@@ -339,7 +342,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show5[4];
          showLink[k] = show5[5];
       showService[k] = show5[6];
-        //  showPage[k] = "/TV/pages/tv-page-1"
+       showTVtime[k] = show5[7];
   k = 6;
         showSolid[k] = show6[0];
        showPoster[k] = show6[1];
@@ -348,7 +351,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show6[4];
          showLink[k] = show6[5];
       showService[k] = show6[6];
-        //  showPage[k] = "/TV/pages/tv-page-1"
+       showTVtime[k] = show6[7];
   k = 7;
         showSolid[k] = show7[0];
        showPoster[k] = show7[1];
@@ -357,7 +360,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show7[4];
          showLink[k] = show7[5];
       showService[k] = show7[6];
-        //  showPage[k] = "/TV/pages/tv-page-1"
+       showTVtime[k] = show7[7];
   k = 8;
         showSolid[k] = show8[0];
        showPoster[k] = show8[1];
@@ -366,6 +369,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show8[4];
          showLink[k] = show8[5];
       showService[k] = show8[6]; 
+       showTVtime[k] = show8[7];
   k = 9;
         showSolid[k] = show9[0];
        showPoster[k] = show9[1];
@@ -373,7 +377,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show9[3];
   showDescription[k] = show9[4];
          showLink[k] = show9[5];
-      showService[k] = show9[6]; 
+      showService[k] = show9[6];
+       showTVtime[k] = show9[7];
   k = 10;
         showSolid[k] = show10[0];
        showPoster[k] = show10[1];
@@ -382,6 +387,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show10[4];
          showLink[k] = show10[5];
       showService[k] = show10[6];
+       showTVtime[k] = show10[7];
   k = 11;
         showSolid[k] = show11[0];
        showPoster[k] = show11[1];
@@ -390,6 +396,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show11[4];
          showLink[k] = show11[5];
       showService[k] = show11[6];
+       showTVtime[k] = show11[7];
   k = 12;
         showSolid[k] = show12[0];
        showPoster[k] = show12[1];
@@ -398,6 +405,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show12[4];
          showLink[k] = show12[5];
       showService[k] = show12[6];
+       showTVtime[k] = show12[7];
   k = 13;
         showSolid[k] = show13[0];
        showPoster[k] = show13[1];
@@ -406,6 +414,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show13[4];
          showLink[k] = show13[5];
       showService[k] = show13[6];
+       showTVtime[k] = show13[7];
   k = 14;
         showSolid[k] = show14[0];
        showPoster[k] = show14[1];
@@ -414,6 +423,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show14[4];
          showLink[k] = show14[5];
       showService[k] = show14[6];
+       showTVtime[k] = show14[7];
   k = 15;
         showSolid[k] = show15[0];
        showPoster[k] = show15[1];
@@ -422,6 +432,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show15[4];
          showLink[k] = show15[5];
       showService[k] = show15[6];
+       showTVtime[k] = show15[7];
   k = 16;
         showSolid[k] = show16[0];
        showPoster[k] = show16[1];
@@ -430,6 +441,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show16[4];
          showLink[k] = show16[5];
       showService[k] = show16[6];
+       showTVtime[k] = show16[7];
   k = 17;
         showSolid[k] = show17[0];
        showPoster[k] = show17[1];
@@ -438,6 +450,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show17[4];
          showLink[k] = show17[5];
       showService[k] = show17[6];
+       showTVtime[k] = show17[7];
   k = 18;
         showSolid[k] = show18[0];
        showPoster[k] = show18[1];
@@ -446,14 +459,16 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show18[4];
          showLink[k] = show18[5];
       showService[k] = show18[6];
+       showTVtime[k] = show18[7];
   k = 19;
         showSolid[k] = show19[0];
        showPoster[k] = show19[1];
      showGradient[k] = show19[2];
         showTitle[k] = show19[3];
   showDescription[k] = show19[4];
-         showLink[k] = show9[5];
+         showLink[k] = show19[5];
       showService[k] = show19[6];
+       showTVtime[k] = show19[7];
   k = 20;
         showSolid[k] = show20[0];
        showPoster[k] = show20[1];
@@ -462,6 +477,7 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   showDescription[k] = show20[4];
          showLink[k] = show20[5];
       showService[k] = show20[6];
+       showTVtime[k] = show20[7];
 
 
 function tvPage(n){
@@ -478,6 +494,7 @@ function tvPage(n){
   document.getElementById("desc").innerHTML =                   showDescription[n];
   document.getElementById("link").href =                               showLink[n];
   document.getElementById("service").innerHTML =                    showService[n];
+  document.getElementById("tv-time").href =                          showTVtime[n];
 }
 
 
