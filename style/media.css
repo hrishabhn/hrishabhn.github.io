@@ -1092,10 +1092,9 @@
 
         top: 48vh;
         height: 7vh;
-        /* border-radius: 25px; */
     }
     .tv-page-button-container{
-        border-radius: 25px;
+        border-radius: 23px;
     }
     .tv-page-text{
         font-size: 16px;
