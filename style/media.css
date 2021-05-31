@@ -452,7 +452,7 @@
 
     margin-right: 20px;
 
-    background-color: #262841;
+    /* background-color: #262841; */
 }
 
 
@@ -475,7 +475,7 @@
 
     padding-left: 25px;
     padding-right: 25px;
-    color: white !important;
+    color: white;
     font-size: 14px;
     font-weight: 500;
 }
