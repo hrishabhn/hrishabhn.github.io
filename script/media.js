@@ -19,6 +19,7 @@ var show1 = [
   "tv-tite tv-title-mid twinpeaks-title",
   "Mystery • 3 Seasons • 1990 - 1991",
   "https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a",
+  "hulu-green",
   "WATCH ON HULU",
   "https://www.tvtime.com/en/show/70533",
   "https://reelgood.com/show/twin-peaks-1990",
@@ -33,6 +34,7 @@ var show2 = [
   "tv-title-mid always-title",
   "Comedy • 14 Seasons • 2005 - Present",
   "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
+  "hulu-green",
   "WATCH ON HULU",
   "https://www.tvtime.com/en/show/75805",
   "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
@@ -47,6 +49,7 @@ var show3 = [
   "tv-title-wide snowfall-title", //title width
   "Crime • 4 Seasons • 2018 - Present",
   "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
+  "hulu-green",
   "WATCH ON HULU",
   "https://www.tvtime.com/en/show/328092",
   "https://reelgood.com/show/snowfall-2017",
@@ -61,6 +64,7 @@ var show4 = [
   "tv-title-wide atlanta-title",
   "Comedy • 5 Seasons • 2016 - 2021",
   "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
+  "hulu-green",
   "WATCH ON HULU",
   "https://www.tvtime.com/en/show/313999",
   "https://reelgood.com/show/atlanta-2016",
@@ -75,6 +79,7 @@ var show5 = [
   "tv-title-mid kim-title",
   "Comedy • 2 Seasons • 2016 - Present",
   "https://www.netflix.com/title/80199128",
+  "netflix",
   "WATCH ON NETFLIX",
   "https://www.tvtime.com/en/show/315908",
   "https://reelgood.com/show/kims-convenience-2016",
@@ -96,6 +101,7 @@ var show11 = [
   "tv-title-wide legion-title",
   "Sci-Fi • 3 Seasons • 2017 - 2019",
   "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
+  "hulu-green",
   "WATCH ON HULU",
   "https://www.tvtime.com/en/show/320724",
   "https://reelgood.com/show/legion-2017",
@@ -110,6 +116,7 @@ var show12 = [
   "tv-title-wide mythic-title", //title width
   "Comedy • 2 Seasons • 2020 - Present",
   "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
+  "black-gradient",
   "WATCH ON  TV+",
   "https://www.tvtime.com/en/show/362829",
   "https://reelgood.com/show/mythic-quest-2020",
@@ -124,6 +131,7 @@ var show13 = [
   "tv-title-wide lineofduty-title", //title width
   "Thriller • 6 Season • 2012 - Present",
   "https://www.netflix.com/title/70263817",
+  "netflix",
   "WATCH ON NETFLIX",
   "https://www.tvtime.com/en/show/260092",
   "https://reelgood.com/show/line-of-duty-2012",
@@ -138,6 +146,7 @@ var show14 = [
   "tv-title-wide spy-title", //title width
   "Drama • 1 Season • 2019",
   "https://www.netflix.com/title/80178151",
+  "netflix",
   "WATCH ON NETFLIX",
   "https://www.tvtime.com/en/show/368109",
   "https://reelgood.com/show/the-spy-2019",
@@ -152,6 +161,7 @@ var show15 = [
   "tv-title-wide chernobyl-title",
   "Thriller • 1 Season • 2019",
   "",
+  "netflix",
   "WATCH ON HBO",
   "https://www.tvtime.com/en/show/360893",
   "https://reelgood.com/show/chernobyl-2019",
@@ -166,6 +176,7 @@ var show16 = [
   "tv-title-wide mindhunter-title",
   "Crime • 2 Seasons • 2017 - 2019",
   "https://www.netflix.com/title/80114855",
+  "netflix",
   "WATCH ON NETFLIX",
   "https://www.tvtime.com/en/show/328708",
   "https://reelgood.com/show/mindhunter-2017",
@@ -180,6 +191,7 @@ var show17 = [
   "tv-title-wide mankind-title", //title width
   "Sci-Fi • 2 Seasons • 2019 - Present",
   "https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
+  "black-gradient",
   "WATCH ON  TV+",
   "https://www.tvtime.com/en/show/356202",
   "https://reelgood.com/show/for-all-mankind-2019",
@@ -194,6 +206,7 @@ var show18 = [
   "tv-title-wide drive-title", //title width
   "Documentary • 3 Seasons • 2019 - Present",
   "https://www.netflix.com/title/80204890",
+  "netflix",
   "WATCH ON NETFLIX",
   "https://www.tvtime.com/en/show/359913",
   "https://reelgood.com/show/formula-1-drive-to-survive-2019",
@@ -208,6 +221,7 @@ var show19 = [
   "tv-title-wide grandTour-title", //title width
   "Comedy •  4 Seasons • 2016 - Present",
   "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+  "netflix",
   "WATCH ON PRIME VIDEO",
   "https://www.tvtime.com/en/show/314087",
   "https://reelgood.com/show/the-grand-tour-2016",
@@ -222,6 +236,7 @@ var show20 = [
   "tv-title-wide schulz-title", //title width
   "Comedy Special • 1 Season • 2020",
   "https://www.netflix.com/title/81383020",
+  "netflix",
   "WATCH ON NETFLIX",
   "https://www.tvtime.com/en/show/393181",
   "https://reelgood.com/show/schulz-saves-america-pandemics-predators-protests-presidents-2020",
@@ -333,13 +348,14 @@ var pod8 = [
 
 
 
-var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showSolid = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showPoster = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showGradient = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showTitle = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showDescription = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showLink = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var showServGrad = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showService = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showTVtime = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showReelgood = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -356,10 +372,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show1[3];
   showDescription[k] = show1[4];
          showLink[k] = show1[5];
-      showService[k] = show1[6];
-       showTVtime[k] = show1[7];
-     showReelgood[k] = show1[8];
-         showIMDB[k] = show1[9];
+     showServGrad[k] = show1[6];
+      showService[k] = show1[7];
+       showTVtime[k] = show1[8];
+     showReelgood[k] = show1[9];
+         showIMDB[k] = show1[10];
   k = 2;
         showSolid[k] = show2[0];
        showPoster[k] = show2[1];
@@ -367,10 +384,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show2[3];
   showDescription[k] = show2[4];
          showLink[k] = show2[5];
-      showService[k] = show2[6];
-       showTVtime[k] = show2[7];
-     showReelgood[k] = show2[8];
-         showIMDB[k] = show2[9];
+     showServGrad[k] = show2[6];
+      showService[k] = show2[7];
+       showTVtime[k] = show2[8];
+     showReelgood[k] = show2[9];
+         showIMDB[k] = show2[10];
   k = 3;
         showSolid[k] = show3[0];
        showPoster[k] = show3[1];
@@ -378,10 +396,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show3[3];
   showDescription[k] = show3[4];
          showLink[k] = show3[5];
-      showService[k] = show3[6];
-       showTVtime[k] = show3[7];
-     showReelgood[k] = show3[8];
-         showIMDB[k] = show3[9];
+     showServGrad[k] = show3[6];
+      showService[k] = show3[7];
+       showTVtime[k] = show3[8];
+     showReelgood[k] = show3[9];
+         showIMDB[k] = show3[10];
   k = 4;
         showSolid[k] = show4[0];
        showPoster[k] = show4[1];
@@ -389,10 +408,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show4[3];
   showDescription[k] = show4[4];
          showLink[k] = show4[5];
-      showService[k] = show4[6];
-       showTVtime[k] = show4[7];
-     showReelgood[k] = show4[8];
-         showIMDB[k] = show4[9];
+     showServGrad[k] = show4[6];
+      showService[k] = show4[7];
+       showTVtime[k] = show4[8];
+     showReelgood[k] = show4[9];
+         showIMDB[k] = show4[10];
   k = 5;
         showSolid[k] = show5[0];
        showPoster[k] = show5[1];
@@ -400,10 +420,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show5[3];
   showDescription[k] = show5[4];
          showLink[k] = show5[5];
-      showService[k] = show5[6];
-       showTVtime[k] = show5[7];
-     showReelgood[k] = show5[8];
-         showIMDB[k] = show5[9];
+     showServGrad[k] = show5[6];
+      showService[k] = show5[7];
+       showTVtime[k] = show5[8];
+     showReelgood[k] = show5[9];
+         showIMDB[k] = show5[10];
   k = 6;
         showSolid[k] = show6[0];
        showPoster[k] = show6[1];
@@ -411,10 +432,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show6[3];
   showDescription[k] = show6[4];
          showLink[k] = show6[5];
-      showService[k] = show6[6];
-       showTVtime[k] = show6[7];
-     showReelgood[k] = show6[8];
-         showIMDB[k] = show6[9];
+     showServGrad[k] = show6[6];
+      showService[k] = show6[7];
+       showTVtime[k] = show6[8];
+     showReelgood[k] = show6[9];
+         showIMDB[k] = show6[10];
   k = 7;
         showSolid[k] = show7[0];
        showPoster[k] = show7[1];
@@ -422,10 +444,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show7[3];
   showDescription[k] = show7[4];
          showLink[k] = show7[5];
-      showService[k] = show7[6];
-       showTVtime[k] = show7[7];
-     showReelgood[k] = show7[8];
-         showIMDB[k] = show7[9];
+     showServGrad[k] = show7[6];
+      showService[k] = show7[7];
+       showTVtime[k] = show7[8];
+     showReelgood[k] = show7[9];
+         showIMDB[k] = show7[10];
   k = 8;
         showSolid[k] = show8[0];
        showPoster[k] = show8[1];
@@ -433,10 +456,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show8[3];
   showDescription[k] = show8[4];
          showLink[k] = show8[5];
-      showService[k] = show8[6]; 
-       showTVtime[k] = show8[7];
-     showReelgood[k] = show8[8];
-         showIMDB[k] = show8[9];
+     showServGrad[k] = show8[6];
+      showService[k] = show8[7];
+       showTVtime[k] = show8[8];
+     showReelgood[k] = show8[9];
+         showIMDB[k] = show8[10];
   k = 9;
         showSolid[k] = show9[0];
        showPoster[k] = show9[1];
@@ -444,10 +468,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show9[3];
   showDescription[k] = show9[4];
          showLink[k] = show9[5];
-      showService[k] = show9[6];
-       showTVtime[k] = show9[7];
-     showReelgood[k] = show9[8];
-         showIMDB[k] = show9[9];
+     showServGrad[k] = show9[6];
+      showService[k] = show9[7];
+       showTVtime[k] = show9[8];
+     showReelgood[k] = show9[9];
+         showIMDB[k] = show9[10];
   k = 10;
         showSolid[k] = show10[0];
        showPoster[k] = show10[1];
@@ -455,10 +480,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show10[3];
   showDescription[k] = show10[4];
          showLink[k] = show10[5];
-      showService[k] = show10[6];
-       showTVtime[k] = show10[7];
-     showReelgood[k] = show10[8];
-         showIMDB[k] = show10[9];
+     showServGrad[k] = show10[6];
+      showService[k] = show10[7];
+       showTVtime[k] = show10[8];
+     showReelgood[k] = show10[9];
+         showIMDB[k] = show10[10];
   k = 11;
         showSolid[k] = show11[0];
        showPoster[k] = show11[1];
@@ -466,10 +492,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show11[3];
   showDescription[k] = show11[4];
          showLink[k] = show11[5];
-      showService[k] = show11[6];
-       showTVtime[k] = show11[7];
-     showReelgood[k] = show11[8];
-         showIMDB[k] = show11[9];
+     showServGrad[k] = show11[6];
+      showService[k] = show11[7];
+       showTVtime[k] = show11[8];
+     showReelgood[k] = show11[9];
+         showIMDB[k] = show11[10];
   k = 12;
         showSolid[k] = show12[0];
        showPoster[k] = show12[1];
@@ -477,10 +504,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show12[3];
   showDescription[k] = show12[4];
          showLink[k] = show12[5];
-      showService[k] = show12[6];
-       showTVtime[k] = show12[7];
-     showReelgood[k] = show12[8];
-         showIMDB[k] = show12[9];
+     showServGrad[k] = show12[6];
+      showService[k] = show12[7];
+       showTVtime[k] = show12[8];
+     showReelgood[k] = show12[9];
+         showIMDB[k] = show12[10];
   k = 13;
         showSolid[k] = show13[0];
        showPoster[k] = show13[1];
@@ -488,10 +516,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show13[3];
   showDescription[k] = show13[4];
          showLink[k] = show13[5];
-      showService[k] = show13[6];
-       showTVtime[k] = show13[7];
-     showReelgood[k] = show13[8];
-         showIMDB[k] = show13[9];
+     showServGrad[k] = show13[6];
+      showService[k] = show13[7];
+       showTVtime[k] = show13[8];
+     showReelgood[k] = show13[9];
+         showIMDB[k] = show13[10];
   k = 14;
         showSolid[k] = show14[0];
        showPoster[k] = show14[1];
@@ -499,10 +528,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show14[3];
   showDescription[k] = show14[4];
          showLink[k] = show14[5];
-      showService[k] = show14[6];
-       showTVtime[k] = show14[7];
-     showReelgood[k] = show14[8];
-         showIMDB[k] = show14[9];
+     showServGrad[k] = show14[6];
+      showService[k] = show14[7];
+       showTVtime[k] = show14[8];
+     showReelgood[k] = show14[9];
+         showIMDB[k] = show14[10];
   k = 15;
         showSolid[k] = show15[0];
        showPoster[k] = show15[1];
@@ -510,10 +540,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show15[3];
   showDescription[k] = show15[4];
          showLink[k] = show15[5];
-      showService[k] = show15[6];
-       showTVtime[k] = show15[7];
-     showReelgood[k] = show15[8];
-         showIMDB[k] = show15[9];
+     showServGrad[k] = show15[6];
+      showService[k] = show15[7];
+       showTVtime[k] = show15[8];
+     showReelgood[k] = show15[9];
+         showIMDB[k] = show15[10];
   k = 16;
         showSolid[k] = show16[0];
        showPoster[k] = show16[1];
@@ -521,10 +552,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show16[3];
   showDescription[k] = show16[4];
          showLink[k] = show16[5];
-      showService[k] = show16[6];
-       showTVtime[k] = show16[7];
-     showReelgood[k] = show16[8];
-         showIMDB[k] = show16[9];
+     showServGrad[k] = show16[6];
+      showService[k] = show16[7];
+       showTVtime[k] = show16[8];
+     showReelgood[k] = show16[9];
+         showIMDB[k] = show16[10];
   k = 17;
         showSolid[k] = show17[0];
        showPoster[k] = show17[1];
@@ -532,10 +564,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show17[3];
   showDescription[k] = show17[4];
          showLink[k] = show17[5];
-      showService[k] = show17[6];
-       showTVtime[k] = show17[7];
-     showReelgood[k] = show17[8];
-         showIMDB[k] = show17[9];
+     showServGrad[k] = show17[6];
+      showService[k] = show17[7];
+       showTVtime[k] = show17[8];
+     showReelgood[k] = show17[9];
+         showIMDB[k] = show17[10];
   k = 18;
         showSolid[k] = show18[0];
        showPoster[k] = show18[1];
@@ -543,10 +576,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show18[3];
   showDescription[k] = show18[4];
          showLink[k] = show18[5];
-      showService[k] = show18[6];
-       showTVtime[k] = show18[7];
-     showReelgood[k] = show18[8];
-         showIMDB[k] = show18[9];
+     showServGrad[k] = show18[6];
+      showService[k] = show18[7];
+       showTVtime[k] = show18[8];
+     showReelgood[k] = show18[9];
+         showIMDB[k] = show18[10];
   k = 19;
         showSolid[k] = show19[0];
        showPoster[k] = show19[1];
@@ -554,10 +588,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show19[3];
   showDescription[k] = show19[4];
          showLink[k] = show19[5];
-      showService[k] = show19[6];
-       showTVtime[k] = show19[7];
-     showReelgood[k] = show19[8];
-         showIMDB[k] = show19[9];
+     showServGrad[k] = show19[6];
+      showService[k] = show19[7];
+       showTVtime[k] = show19[8];
+     showReelgood[k] = show19[9];
+         showIMDB[k] = show19[10];
   k = 20;
         showSolid[k] = show20[0];
        showPoster[k] = show20[1];
@@ -565,10 +600,11 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         showTitle[k] = show20[3];
   showDescription[k] = show20[4];
          showLink[k] = show20[5];
-      showService[k] = show20[6];
-       showTVtime[k] = show20[7];
-     showReelgood[k] = show20[8];
-         showIMDB[k] = show20[9];
+     showServGrad[k] = show20[6];
+      showService[k] = show20[7];
+       showTVtime[k] = show20[8];
+     showReelgood[k] = show20[9];
+         showIMDB[k] = show20[10];
 
 
 function tvPage(n){
@@ -576,19 +612,20 @@ function tvPage(n){
   var posterClass = "tv-page-poster ";
   var gradientClass = "tv-page-gradient ";
   var titleClass = "tv-page-title ";
+  var serviceClass = "tv-page-link-container ";
 
 
-  document.getElementById("card").className =        cardClass.concat(showSolid[n]);
-  document.getElementById("poster").className =   posterClass.concat(showPoster[n]);
-  document.getElementById("grad").className = gradientClass.concat(showGradient[n]);
-  document.getElementById("title").className =      titleClass.concat(showTitle[n]);
-  document.getElementById("desc").innerHTML =                   showDescription[n];
-  document.getElementById("link").href =                               showLink[n];
-  document.getElementById("service").innerHTML =                    showService[n];
-  document.getElementById("tv-time").href =                          showTVtime[n];
-  document.getElementById("reelgood").href =                       showReelgood[n];
-  document.getElementById("imdb").href =                               showIMDB[n];
-
+  document.getElementById("card").className =                  cardClass.concat(showSolid[n]);
+  document.getElementById("poster").className =             posterClass.concat(showPoster[n]);
+  document.getElementById("grad").className =           gradientClass.concat(showGradient[n]);
+  document.getElementById("title").className =                titleClass.concat(showTitle[n]);
+  document.getElementById("desc").innerHTML =                             showDescription[n];
+  document.getElementById("link").href =                                         showLink[n];
+  document.getElementById("serviceGradient").className = serviceClass.concat(showServGrad[n]);
+  document.getElementById("service").innerHTML =                              showService[n];
+  document.getElementById("tv-time").href =                                    showTVtime[n];
+  document.getElementById("reelgood").href =                                 showReelgood[n];
+  document.getElementById("imdb").href =                                         showIMDB[n];
 }
 
 
