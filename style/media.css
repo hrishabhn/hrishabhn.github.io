@@ -1091,7 +1091,11 @@
         padding-top: 0px;
 
         top: 48vh;
-        height: 6vh;
+        height: 7vh;
+        /* border-radius: 25px; */
+    }
+    .tv-page-button-container{
+        border-radius: 25px;
     }
     .tv-page-text{
         font-size: 16px;
