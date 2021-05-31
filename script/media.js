@@ -19,7 +19,7 @@ var show1 = [
   "Crime • 4 Seasons • 2018 - Present",
   "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
   "hulu-green",
-  "WATCH ON HULU",
+  "Watch on Hulu",
   "https://www.tvtime.com/en/show/328092",
   "https://reelgood.com/show/snowfall-2017",
   "https://www.imdb.com/title/tt6439752"
