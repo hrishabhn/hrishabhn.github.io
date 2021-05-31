@@ -119,31 +119,33 @@
     transition: 0.25s;
 }
 .tv-card:hover{   
-    width: 400px;
+
     transition: 0.25s;
-    z-index: 3;
-    margin-bottom: -20px;
+    /* z-index: 3; */
+    /* margin-bottom: -20px; */
     /* height: 285px; */
     /* box-shadow: 0 0 30px #000; */
 }
 .tv-card:hover .tv-poster{
-    height: 225px;
+    width: 355px;
+    margin-left: -10px;
     transition: 0.25s;
 }
-.tv-card:hover .tv-gradient{
+/* .tv-card:hover .tv-gradient{
     top: 75px;
     transition: 0.25s;
 
 
-}
+}*/
 .tv-card:hover .tv-title{
-    bottom: 35px;
+    left: 30px;
     transition: 0.25s;
 }
-.tv-card:hover .tv-description{
-    top: -25px;
+
+/* .tv-card:hover .tv-description{
+    top: -10px;
     transition: 0.25s;
-}
+} */
 
 
 
@@ -448,7 +450,7 @@
 
     z-index: 1;
 
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 
     margin-right: 20px;
 
