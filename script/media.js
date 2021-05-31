@@ -20,7 +20,9 @@ var show1 = [
   "Mystery • 3 Seasons • 1990 - 1991",
   "https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a",
   "WATCH ON HULU",
-  "https://www.tvtime.com/en/show/70533"
+  "https://www.tvtime.com/en/show/70533",
+  "https://reelgood.com/show/twin-peaks-1990",
+  "https://www.imdb.com/title/tt0098936"
 ]
 
 //Always sunny
@@ -295,6 +297,10 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showLink = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showService = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showTVtime = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var showReelgood = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var showIMDB = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+
 
   // showName[1] = 
   
@@ -307,6 +313,8 @@ var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
          showLink[k] = show1[5];
       showService[k] = show1[6];
        showTVtime[k] = show1[7];
+     showReelgood[k] = show1[8];
+         showIMDB[k] = show1[9];
   k = 2;
         showSolid[k] = show2[0];
        showPoster[k] = show2[1];
@@ -495,6 +503,9 @@ function tvPage(n){
   document.getElementById("link").href =                               showLink[n];
   document.getElementById("service").innerHTML =                    showService[n];
   document.getElementById("tv-time").href =                          showTVtime[n];
+  document.getElementById("reelgood").href =                       showReelgood[n];
+  document.getElementById("imdb").href =                               showIMDB[n];
+
 }
 
 
