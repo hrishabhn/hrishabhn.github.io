@@ -126,21 +126,21 @@
     /* height: 285px; */
     /* box-shadow: 0 0 30px #000; */
 }
-.tv-card:hover .tv-poster{
+/* .tv-card:hover .tv-poster{
     width: 355px;
     margin-left: -10px;
     transition: 0.25s;
-}
+} */
 /* .tv-card:hover .tv-gradient{
     top: 75px;
     transition: 0.25s;
 
 
 }*/
-.tv-card:hover .tv-title{
-    left: 30px;
+/* .tv-card:hover .tv-title{
+    bottom: 2px;
     transition: 0.25s;
-}
+} */
 
 /* .tv-card:hover .tv-description{
     top: -10px;
@@ -379,26 +379,13 @@
     position: absolute;
     bottom: 170px;
     left: 240px;
-    max-height: 150px;
-    max-width: 500px;
+    max-height: 250px;
+    max-width: 650px;
     height: 1000px !important;
     width: 3000px !important;
     background-position: 0 100%;
     background-color: #00000000;
 }
-/* .tv-page-title-wide{
-    height:35px;
-    width: 150px;
-}
-.tv-page-title-mid{
-    height: 50px;
-    width: 300px;
-}
-.tv-page-title-tall{
-    height: 60px;
-    width: 200px;
-} */
-
 .tv-page-description{
 
     font-size: 18px;
@@ -898,7 +885,7 @@
     }
     .tv-page-title{
         left: 104px;
-        max-height: 125px;
+        /* max-height: 125px; */
     }
     .tv-page-description{
         left: 104px;
