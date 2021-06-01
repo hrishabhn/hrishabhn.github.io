@@ -645,14 +645,14 @@ function populate(){
 
   for (i = 1; i < 21; i++){
     var itemid = [
-      "card".concat(i),
-      "poster".concat(i),
-      "grad".concat(i),
-      "title".concat(i),
-      "desc".concat(i),
-      "link".concat(i),
-      "service".concat(i),
-      "page".concat(i),
+      "card_".concat(i),
+      "poster_".concat(i),
+      "grad_".concat(i),
+      "title_".concat(i),
+      "desc_".concat(i),
+      "link_".concat(i),
+      // "service".concat(i),
+      // "page_".concat(i),
     ]
 
     document.getElementById(itemid[0]).className =        cardClass.concat(showSolid[i]);
@@ -661,7 +661,7 @@ function populate(){
     document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
     document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
     document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);                  //showLink[i];
-    document.getElementById(itemid[6]).innerHTML =                       showService[i];
+    // document.getElementById(itemid[6]).innerHTML =                       showService[i];
     //document.getElementById(itemid[7]).href =                        showPage.concat(i);
 
 
