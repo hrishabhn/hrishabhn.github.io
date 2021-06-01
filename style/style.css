@@ -567,6 +567,9 @@ gradients
 
         left: -64px;
     }
+    .subtitle-box{
+        padding-left: 20px;
+    }
 }
 
 
