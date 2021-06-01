@@ -109,7 +109,7 @@
 .tv-card{
     height: 245px;
     width: 320px;
-    border-radius: 4px;
+    border-radius: 5px;
     overflow: hidden;
     display: inline-block;
     position: relative;
