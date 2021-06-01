@@ -107,8 +107,8 @@
 
 
 .tv-card{
-    height: 265px;
-    width: 335px;
+    height: 255px;
+    width: 320px;
     border-radius: 4px;
     overflow: hidden;
     display: inline-block;
@@ -151,7 +151,7 @@
 
 .tv-poster{
     width: 100%;
-    height: 190px;
+    height: 180px;
     background-size: cover;
     background-position: center;
     display: block;
@@ -164,7 +164,7 @@
     top: 40px;
 
     width: 100%;
-    height: 150px;
+    height: 140px;
 
     transition: 0.25s;
 }
@@ -173,23 +173,26 @@
     background-position: bottom;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 20px;
 
     background-position: 0 100%;
     background-color: #00000000;
     fill: #fff;
 
+    height: 75px;
+    width: 225px;
+
     transition: 0.25s;
 }
-.tv-title-wide{
+/* .tv-title-wide{
     height:50px;
     width: 200px;
 }
 .tv-title-mid{
     height: 70px;
     width: 150px;
-}
+} */
 /* .tv-title-tall{
     height: 80px;
     width: 150px;
@@ -202,7 +205,128 @@
     left: 20px;
     top: 10px;
     transition: 0.25s;
+    display: none;
 }
+
+
+
+
+
+
+.tv-more-container{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #00000033;
+
+    /* align-items: center; */
+    /* display: inline-block; */
+    /* overflow: hidden; */
+
+    /* text-decoration: none; */
+
+    z-index: 1;
+
+
+
+
+    
+    transition: 0.25s;
+}
+.tv-more-container:hover{
+    background: rgba(0, 0, 0, 0.25);
+}
+.tv-more-container:hover .tv-more-icon{
+    fill: #fff;
+}
+.tv-more-container:hover .tv-more-text{
+    color: #fff;
+}
+
+
+
+
+.tv-more-icon{
+    fill: #ffffff99;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+
+    transition: 0.25s;
+}
+
+
+.tv-more-text-box{
+    display: flex;
+    position: relative;
+    left: 0px;
+    bottom: 0%;
+
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    box-sizing: border-box;
+    z-index: 2;
+
+    background-color: transparent;
+
+    text-decoration: none;
+    align-items: center;
+
+    padding-left: 50px;
+    padding-right: 20px;
+
+    color: #ffffff99;
+    font-size: 10px;
+    font-weight: 600;
+
+    transition: 0.25s;
+
+    
+    
+}
+.tv-more-text{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    transition: 0.25s;
+}
+
+
+.tv-more-link{
+    display: flex;
+    position: relative;
+    left: 0px;
+    bottom: 100%;
+
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    z-index: 3;
+
+    background-color: transparent;
+
+    transition: 0.25s;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -702,10 +826,10 @@
 }
 
 .twinpeaks-solid{
-    background-color: #45130d;
+    background-color: #300;
 }
 .twinpeaks-gradient{
-    background: linear-gradient(#00000000,#45130d);
+    background: linear-gradient(#00000000,#330000);
 }
 .twinpeaks-poster{
     background-image: url('../TV/background/twinpeaks.jpg');
