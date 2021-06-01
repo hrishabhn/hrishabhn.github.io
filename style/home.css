@@ -2,48 +2,14 @@ body{
     background:#000000;
 }
 
-
-.main-home{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    padding-left: 260px;
-    padding-right: 0px;
-    padding-top: 100px;
-    box-sizing: border-box;
-
-    height: 100vh;
-    z-index: 1;
-    /* overflow: hidden; */
-}
-
 .home-bar{
     background: rgba(128, 128, 255, 0.9);
 }
 
-.app-tray-wrapper{
-    width: 100%;
-    height: 165px;
-    box-sizing: border-box;
-
-    position: relative;
-    z-index: 1;
-    left: 0;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 20px;
-
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-
-
-    /* background-color: rgba(28, 28, 30, 0.5); */
-    -webkit-backdrop-filter: blur(30px);
+.main-home{
+    /* padding-left: 0px; */
 }
+
 
 
 .big-button-container{
@@ -53,14 +19,35 @@ body{
     align-items: center;
 
     width: 150px;
-    height: 100%;
-    border-radius: 20px;
+    height: 125px;
+    border-radius: 30px;
 
     transition: 0.25s;
     margin-right: 20px;
-    margin-left: 0;
+    margin-left: 0px;
+    margin-top: 0px;
     margin-bottom: 0px;
+}
+@media(min-width: 450px){
+    .big-button-container:hover{
+        width: 154px;
+        margin-left: -2px;
+        margin-right: 18px;
+        /* height: 127px; */
+        /* margin-top: -2px; */
+        /* margin-bottom: -2px; */
 
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        transition: 0.25s;
+    }
+    .big-button-container:hover .big-button-label{
+        left: 27px;
+        transition: inherit;
+    }
+    .big-button-container:hover .big-button-icon{
+        left: 27px;
+        transition: inherit;
+    }
 }
 .big-button{
     display: flex;
@@ -72,7 +59,7 @@ body{
 
     height: 100%;
     width: 100%;
-    border-radius: 30px;
+    border-radius: inherit;
     transition: 0.25s;
     margin: 0px;
 }
@@ -88,6 +75,8 @@ body{
     position: absolute;
     left: 25px;
     bottom: 20px;
+
+    transition: inherit;
 }
 .big-button-icon{
     fill: #fff;
@@ -102,7 +91,10 @@ body{
     position: absolute;
     left: 25px;
     top: 25px;
+
+    transition: inherit;
 }
+
 
 
 
@@ -154,26 +146,21 @@ body{
 
 
 .search-container{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 100%;
-    height: 50px;
-    border-radius: 20px;
+    height: 60px;
+    border-radius: 25px;
 
     transition: 0.25s;
 
+    margin-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
     box-sizing: border-box;
-    /* margin-left: 20px; */
-
-
-
-    /* margin-bottom: 20px; */
-
-    /* margin-top: 50vh; */
 }
 .search{
     display: flex;
@@ -185,8 +172,8 @@ body{
 
     height: 100%;
     width: 100%;
-    border-radius: 20px;
-    transition: 0.2s;
+    border-radius: inherit;
+    transition: inherit;
 
     background:#fff;
     padding-left: 20px;
@@ -216,65 +203,16 @@ body{
     }
 }
 
-
-
-@media(min-width: 450px){
-    /* .big-button-container:hover{
-        width: 134px;
-        margin-left: -2px;
-        height: 64px;
-        margin-top: -2px;
-        margin-bottom: 8px;
-
-
-
-
-        transition: 0.25s;
-    } */
-}
+/* 
+.home-subtitle-box{
+    padding-left: 300px;
+} */
 
 
 
 
 
-.small-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
 
-    width: 60px;
-    height: 60px;
-    border-radius: 20px;
-
-    transition: 0.25s;
-
-    margin: 0px;
-    padding: 0px;
-    /* margin-right: 10px;
-    margin-left: 0px;
-    margin-bottom: 10px; */
-}
-
-.small-button-icon{
-    fill: #fff;
-    height: 24px;
-    width: 24px;
-}
-@media(min-width: 450px){
-
-.small-button:hover{
-    /* opacity: 0.75; */
-    transition: 0.25s;
-    height: 64px;
-    width: 64px;
-    margin-left: -2px;
-    margin-top: -2px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-}
-}
 
 
 
@@ -304,13 +242,11 @@ body{
 
 
 @media(max-width: 1000px){
-    
-    
-    .main-home{
-        padding-left: 84px;
-        padding-right: 170px;
-        
+    .search-container{
+        padding-left: 20px;
+        padding-right: 20px;
     }
+    
 
 
 
@@ -326,60 +262,24 @@ body{
     body{ 
         min-height: 100vh;
     }
-
-    .main-bookmarks{
-       
-        padding-left: 20px;
-        padding-right: 20px;
-        
-    }
-
-
-
-
-    .main-home{
-        padding-top: 110px;    
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-bottom: 105px;
-    }
-
-    .app-tray-wrapper{
-        padding-left: 20px;
-        padding-right: 0px;
-    }
-
-
-
-
-
-
-
-
-
-    .search-container{
-        position: relative;
-        display: flex;
-        margin: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
-
-
-
-
-        /* justify-content: center; */
-        /* align-items: center; */
-
-
-        /* top: 50vh; */
-        /* left: 0px; */
     
-        /* width: 100%; */
-        /* height: 6vh; */
-        /* margin: 0 5vw 0; */
+    
 
 
-    }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
 
 
 

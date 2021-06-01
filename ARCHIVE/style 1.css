@@ -5,10 +5,6 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 body{
     background:#000000;
 }
@@ -65,6 +61,32 @@ body{
     background-color: transparent;
 }
 
+
+
+
+
+
+/* .homepage-title{
+    display: block;
+    font-weight: 300;
+    font-size: 36px;
+    color: #fff;
+    background-color: transparent;
+}
+.homepage-subtitle{
+    display: inline;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffffcc;
+    background-color: transparent;
+    height: 100px;
+}
+.date-box{
+    height: auto;
+    padding-top: 2px;
+    width: fit-content;
+} */
+
 .menu-title-box{
     display: flex;
     padding-top: 0px;
@@ -98,6 +120,16 @@ body{
 .title-sidebar{
     padding-left: 16px;
 }
+.sidebar-image{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background-size: contain;
+}
+
 .menu-item-container{
     display: inline-flex;
     justify-content: left;
@@ -107,7 +139,7 @@ body{
     height: 60px;
     border-radius: 20px;
 
-    transition: 0.25s;
+    transition: 0.2s;
 }
 .menu-item{
     display: flex;
@@ -120,67 +152,43 @@ body{
     height: 100%;
     width: 100%;
     border-radius: inherit;
-    transition: inherit;
+    transition: 0.25s;
     fill: #ffffff99;
     color: #ffffff99;
 }
 .menu-item-icon{
-    margin-right: 20px;
-    height: 20px;
-    width: 20px;
-    padding-left: 20px;
+    margin-right: 16px;
+    height: 16px;
+    width: 16px;
+    padding-left: 16px;
 }
 .menu-item-label{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
 }
 .menu-item:hover{
     fill: #fff;
     color: #fff;
-    transition: inherit;
+    transition: 0.25s;
 }
 .selected{
     color: #fff;
     fill: #fff;
+    background: linear-gradient(to bottom right,#00ffff,#ff00ff);
 }
 
 
 
 .main{
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    padding-left: 260px;
-    padding-right: 0px;
-    padding-top: 120px;
-    box-sizing: border-box;
-
-    height: 100vh;
-    z-index: 1;
+    left: 50%;
+    transform: translate(-340px,0px);
+    background-color: #000;
+    width: 900px;
 }
-
-.scrolling-wrapper{
-    width: 100vw;
-    /* height: 125px; */
-    box-sizing: border-box;
-
-    position: relative;
-    z-index: 1;
-    left: -260px;
-
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 300px;
-    padding-right: 20px;
-    margin-bottom: 0px;
-
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-
-    /* background-color: rgba(28, 28, 30, 0.5); */
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -293,6 +301,155 @@ body{
     background-color: aquamarine;
 }
 
+/*
+tv images
+*/
+/* .tv-show{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 164px;
+    width: 292px;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 0px;
+    margin-right: 2px;
+}
+
+.fade-half{
+    transform: translate(0,100%);
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(#00000000,#000000cc);
+    padding: 0px;
+} */
+
+/* .tv-title{
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    bottom: 24px;
+    left: 10px;
+    width: 163px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+/* .tv-subtitle{
+    font-size: 8px;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 163px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.tv-play{
+    font-size: 10px;
+    color: #fff;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 35px;
+    width: 80px;
+    border-radius: 15px;
+    transition: 0.2s;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.tv-play:hover{
+    opacity: 0.9;
+}
+
+
+.tv-page-background{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin-right: 0px;
+}
+.tv-blur{
+    -webkit-backdrop-filter: blur(500px);
+    height: 100%;
+    width: 100%;
+}
+.tv-page-poster{
+    background-size: contain;
+    margin-left: 200px;
+    height: 450px;
+    width: 300px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px hsla(0, 0%, 0%, 0.3);
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.tv-page-title{
+    color: #fff;
+    font-size: 36px;
+    position: relative;
+    left: 300px;
+    top: 120px;
+    width: min-content;
+}
+*/
+
+
+/*
+.legion{
+    background-color: #523b57;
+    padding-left: 0px;
+}
+.legion-fade{
+    transform: translate(0,100%);
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(#00000000,#523b57);
+    padding: 0px;
+}
+
+
+.tv-page{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    padding-left: 200px;
+}
+.tv-background{
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+
+
+}
+.tv-title-image{
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    
+    background-size: contain;
+    margin-left: 100px;
+    transform: translate(50%,0);
+}
+*/
+
+
 
 
 /*
@@ -306,13 +463,13 @@ icon colours
 /*
 gradients
 */
-
-.home-gradient{
-    background: linear-gradient(to bottom right,#00ffff,#ff00ff) !important;
+.dashboard{
+    background: linear-gradient(to bottom right,#00ffff,#ff00ff);
 }
 .school-gradient{
     background: linear-gradient(to bottom right,#D7C688,#a39667);
 }
+
 
 
 .black-gradient{
@@ -510,11 +667,6 @@ gradients
     .hidden-tablet{
         display: none !important;
     }
-
-
-    .main{
-        padding-left: 64px;
-    }
     
     
     .sidebar{
@@ -561,12 +713,7 @@ gradients
     .title-box{
         padding-left: 84px;
     }
-    .scrolling-wrapper{
-        padding-left: 84px;
-        padding-right: 0px;
 
-        left: -64px;
-    }
 }
 
 
@@ -641,19 +788,20 @@ gradients
     
     
 
+
+
     .main{
-        padding-top: 130px;    
-        padding-left: 0px;
-        padding-right: 0px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color:transparent;
+        width: 100%;
+        height: auto;
+        transform: none;
         padding-bottom: 105px;
     }
-    .scrolling-wrapper{
-        padding-left: 20px;
-        padding-right: 0px;
-
-        left: 0px;
-    }
-    
+   
+ 
 
     /*
     Dashboard

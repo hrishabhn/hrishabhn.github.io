@@ -4,24 +4,16 @@ body{
 }
 
 
-.main-bookmarks{
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding-left: 240px;
-    padding-top: 120px;
 
-    background: none;
-    width: 100vw;
-    box-sizing: border-box;
-    z-index: 1;
-}
 
 .bookmarks-bar{
     background: rgba(42, 161, 72, 0.9);
 }
 
-
+.main-bookmarks{
+    padding-top: 120px;
+    padding-left: 300px;
+}
 
 
 .small-button{
