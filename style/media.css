@@ -992,7 +992,7 @@
         overflow-x: hidden;
         box-sizing: border-box;
     }
-    .scrolling-wrapper {
+    .scrolling-wrapper{
         padding-left: 84px;
         right: 84px;
     }
@@ -1071,7 +1071,7 @@
         font-weight: 500;
     }
     
-    .scrolling-wrapper {
+    .scrolling-wrapper{
         padding-left: 20px;
         right: 0;
         padding-right: 10px;
