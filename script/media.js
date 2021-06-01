@@ -161,7 +161,7 @@ var show15 = [
   "Thriller • 1 Season • 2019",
   "",
   "hbo",
-  "Watch on HBO",
+  "Watch on HBO Max",
   "https://www.tvtime.com/en/show/360893",
   "https://reelgood.com/show/chernobyl-2019",
   "https://www.imdb.com/title/tt7366338"
