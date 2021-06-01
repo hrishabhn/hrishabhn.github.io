@@ -1010,7 +1010,7 @@
         top: 42vh;
     
         width: 100%;
-        height: 6vh;
+        height: 4vh;
         text-align: center;
         padding-left: 10vw;
         padding-right: 10vw;
@@ -1026,22 +1026,20 @@
     .tv-page-button-tray{
         padding-left: 25px;
         padding-right: 10px;
+        padding-bottom: 0;
+        padding-top: 0;
 
+        height: 50px;
 
-        padding-bottom: 6vh;
-        padding-top: 6vh;
-
-        top: 42vh;
-        min-height: 19vh;
+        top: 48vh;
+        
     }
     .tv-page-button-container{
-        border-radius: 23px;
+        border-radius: 20px;
         margin-right: 15px;
-        max-height: 50px;
-
     }
     .tv-page-text{
-        font-size: 16px;
+        font-size: 14px;
     }
 
 }
