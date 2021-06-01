@@ -155,9 +155,10 @@ body{
     padding-left: 260px;
     padding-right: 0px;
     padding-top: 120px;
+    padding-bottom: 40px;
     box-sizing: border-box;
 
-    height: 100vh;
+    min-height: 100vh;
     z-index: 1;
 }
 
@@ -185,24 +186,47 @@ body{
 
 
 
-
-
-
-
-
-/* .big-button-container{
+.big-button-container{
     display: inline-flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 
-    width: 160px;
-    height: 70px;
-    border-radius: 25px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
 
-    transition: 0.2s;
+    transition: 0.25s;
     margin-right: 20px;
     margin-left: 0px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    transition: 0.15s;
+}
+@media(min-width: 450px){
+    .big-button-container:hover{
+        width: 190px;
+        margin-left: 5px;
+        margin-right: 25px;
+
+        /* height: 146px;
+        bottom: 2px; */
+
+        /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); */
+        transition: 0.15s;
+    }
+    .big-button-container:hover .big-button-label{
+        left: 20px;
+        /* bottom: 18px; */
+
+        transition: inherit;
+    }
+    .big-button-container:hover .big-button-icon{
+        left: 20px;
+        /* top: 23px; */
+        transition: inherit;
+    }
 }
 .big-button{
     display: flex;
@@ -214,26 +238,45 @@ body{
 
     height: 100%;
     width: 100%;
-    border-radius: 25px;
-    transition: 0.2s;
+    border-radius: inherit;
+    transition: inherit;
     margin: 0px;
-}
-.big-button-icon{
-    fill: #fff;
-    margin-right: 8px;
-    height: 20px;
-    width: 20px;
 }
 .big-button-label{
     text-decoration: none;
-    font-size: 16px;
     font-weight: 500;
     color: #fff;
+    
+    font-size: 24px;
+
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+
+    transition: inherit;
 }
-.big-button:hover{
-    opacity: 0.75;
-    transition: 0.2s;
-} */
+.big-button-icon{
+    fill: #fff;
+    /* margin-right: 8px; */
+    /* height: 16px;
+    width: 16px; */
+
+
+    height: 50px;
+    width: 50px;
+
+    position: absolute;
+    left: 25px;
+    top: 25px;
+
+    transition: inherit;
+}
+
+
+
+
+
+
 
 .box{
     display: inline-block;
@@ -648,7 +691,7 @@ gradients
         padding-top: 130px;    
         padding-left: 0px;
         padding-right: 0px;
-        padding-bottom: 105px;
+        padding-bottom: 125px;
     }
     .scrolling-wrapper{
         padding-left: 20px;
