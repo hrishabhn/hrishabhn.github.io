@@ -4,19 +4,122 @@ body{
 
 
 .main-home{
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 100vw;
-    padding-left: 240px;
-    padding-right: 190px;
+    padding-left: 200px;
+    padding-right: 0px;
+    padding-top: 100px;
     box-sizing: border-box;
 
     height: 100vh;
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .home-bar{
     background: rgba(128, 128, 255, 0.9);
 }
+
+.app-tray-wrapper{
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 1;
+    left: 0;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+
+    /* background-color: rgba(28, 28, 30, 0.5); */
+    -webkit-backdrop-filter: blur(30px);
+}
+
+
+.big-button-container{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    width: 120px;
+    height: 100%;
+    border-radius: 20px;
+
+    transition: 0.25s;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-bottom: 0px;
+
+}
+.big-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.25s;
+    margin: 0px;
+}
+.big-button-label{
+    text-decoration: none;
+    /* font-size: 14px; */
+    font-weight: 500;
+    color: #fff;
+    
+    
+    font-size: 18px;
+
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+}
+.big-button-icon{
+    fill: #fff;
+    /* margin-right: 8px; */
+    /* height: 16px;
+    width: 16px; */
+
+
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -59,10 +162,18 @@ body{
     height: 50px;
     border-radius: 20px;
 
-    transition: 0.5s;
-    margin-bottom: 20px;
+    transition: 0.25s;
 
-    margin-top: 50vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    /* margin-left: 20px; */
+
+
+
+    /* margin-bottom: 20px; */
+
+    /* margin-top: 50vh; */
 }
 .search{
     display: flex;
@@ -107,60 +218,19 @@ body{
 
 
 
-.big-button-container{
-    display: block;
-    justify-content: center;
-    align-items: center;
-
-    width: 130px;
-    height: 60px;
-    border-radius: 10px;
-
-    transition: 0.25s;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 10px;
-}
-.big-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-decoration: none;
-    cursor: pointer;
-
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-    transition: 0.25s;
-    margin: 0px;
-}
-.big-button-icon{
-    fill: #fff;
-    margin-right: 8px;
-    height: 16px;
-    width: 16px;
-}
-.big-button-label{
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    color: #fff;
-}
-
 @media(min-width: 450px){
-    .big-button-container:hover{
+    /* .big-button-container:hover{
         width: 134px;
         margin-left: -2px;
         height: 64px;
         margin-top: -2px;
         margin-bottom: 8px;
 
-    /* border-radius: 24px; */
 
-    /* opacity: 0.8; */
+
+
         transition: 0.25s;
-    }
+    } */
 }
 
 
@@ -168,7 +238,7 @@ body{
 
 
 .small-button{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -179,9 +249,12 @@ body{
     border-radius: 20px;
 
     transition: 0.25s;
-    margin-right: 10px;
+
+    margin: 0px;
+    padding: 0px;
+    /* margin-right: 10px;
     margin-left: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
 }
 
 .small-button-icon{
@@ -206,25 +279,9 @@ body{
 
 
 
-.pull-tab{
-    display: none;
-}
 
-.app-tray-wrapper{
-    height: 100%;
-    width: 150px;
-    box-sizing: border-box;
-    position: fixed;
-    z-index: 1;
-    top: 0px;
-    right: 0;
-    background-color: rgba(28, 28, 30, 0.5);
-    -webkit-backdrop-filter: blur(30px);
-    overflow-x: hidden;
-    overflow-y: scroll;
-    padding: 110px 0px 0 10px;
 
-}
+
 
 
 /* @dark mode */
@@ -254,9 +311,6 @@ body{
     
     
     .main-home{
-        position: absolute;
-        left: 0;
-        top: 0;
         padding-left: 84px;
         padding-right: 170px;
         
@@ -277,9 +331,77 @@ body{
         min-height: 100vh;
     }
 
+    .main-bookmarks{
+       
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+
+
+
+
+    .main-home{
+        padding-top: 110px;    
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 105px;
+    }
+
+    .app-tray-wrapper{
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+
+
+
+
+
+
+
+
+    .search-container{
+        position: relative;
+        display: flex;
+        margin: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+
+
+
+        /* justify-content: center; */
+        /* align-items: center; */
+
+
+        /* top: 50vh; */
+        /* left: 0px; */
     
+        /* width: 100%; */
+        /* height: 6vh; */
+        /* margin: 0 5vw 0; */
+
+
+    }
+
+
+
+
+
+
+
+
+
+
     
-    .wallpaper{
+
+
+
+
+
+    
+    /* .wallpaper{
         background-image: url(../images/wp6050826.jpg);
         background-size: cover;
         background-attachment: fixed;
@@ -289,82 +411,101 @@ body{
         position: fixed;
         top: 0px;
         left: 0px;
-    }
+    } */
 
 
 
 
-    .main-home{
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin: 0;
-
-        padding-left: 20px;
-        padding-right: 20px;
-
-        width: 100vw;
-        min-height: 100vh;
-        /* max-height: 100vh; */
-
-        transform: none;
-        
-        box-sizing: border-box;
-        overflow-y: hidden;
-        background: #00000000;
-        
-        
-    }
-
-    .search-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-
-        top: 50vh;
-        left: 0px;
     
-        width: 90vw;
-        height: 6vh;
-        margin: 0 5vw 0;
 
+    
 
-    }
+    /* .big-button-container{
+        margin-bottom: 0px;
+        margin-right: 20px;
+        width: 120px;
 
-    .big-button-container{
-        margin-bottom: 15px;
-        width: 48%;
-        margin-right: 4%;
         display: inline-flex;
-        height: 80px;
+        position: relative;
+
+
+
+        height: 100%;
         border-radius: 20px;
-    }
+    } */
     .big-button{
         border-radius: 20px;
     }
     .big-button-label{
-        font-size: 16px;
+        font-size: 18px;
+
+        position: absolute;
+        left: 20px;
+        bottom: 15px;
     }
     .big-button-icon{
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
+
+        position: absolute;
+        left: 20px;
+        top: 20px;
     }
-
-    
-
-
-
 
     .small-button{
-        margin-right: 4%;
-        margin-left: 0px;
-        margin-bottom: 10px;
-        width: 22%;
-        height: 70px;
-        border-radius: 20px;
-    }
+        display: inline-block;
+        position: absolute;
+        top: 0px;
 
+
+
+        /* display: inline-flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* text-decoration: none; */
+        /* cursor: pointer; */
+    
+        /* width: 60px; */
+        /* height: 100%; */
+        /* border-radius: 20px; */
+    
+        /* transition: 0.25s; */
+        /* margin-right: 10px; */
+        /* margin-left: 0px; */
+        /* margin-bottom: 10px; */
+
+
+
+
+
+
+
+        /* display: none; */
+        /* top: 0; */
+
+
+        /* margin-bottom: 0px; */
+        /* margin-right: 20px; */
+        /* width: 120px; */
+
+        /* display: inline-block; */
+        position: relative;
+        /* top: 0; */
+
+
+
+        /* height: 100px; */
+        /* border-radius: 20px; */
+
+
+
+
+        /* margin-left: 0px; */
+        /* margin-bottom: 0px; */
+        /* width: 22%; */
+        /* height: 70px; */
+        /* border-radius: 20px; */
+    }
     .small-button-icon{
     height: 24px;
     width: 24px;
@@ -372,37 +513,6 @@ body{
 
 
 
-    .app-tray-wrapper{
-        height: 100%;
-        width: 95vw;
-        box-sizing: border-box;
-        position: fixed;
-        z-index: 2;
-        top: 58vh;
-        left: 0;
-        background-color: transparent;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding: 0 0 0;
-        margin: 0 2.5vw 0;
-        
-        border-top-left-radius: 35px;
-        border-top-right-radius: 35px;
-        -webkit-backdrop-filter: blur(0px);
-    }
-    .app-tray{
-        margin-top: 210px;
-        background-color: rgba(242, 242, 247, 0.1);
-        /* background-color: rgba(44, 44, 46, 0.25); */
-        height: 800px;
-        padding-left: 5vw;
-        padding-right: 5vw;
-        padding-top: 15px;
-        
-        border-top-left-radius: 35px;
-        border-top-right-radius: 35px;
-        -webkit-backdrop-filter: blur(10px);
-    }
 
 
 
@@ -413,59 +523,8 @@ body{
 
 
 
-    /* .app-tray-wrapper{
-        height: 100%;
-        width: 95vw;
-        box-sizing: border-box;
-        position: relative;
-        z-index: 1;
-        top: 0px;
-        left: -20px;
-        background-color: #2c2c2e;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding: 0 5vw 2000px;
-        margin: 71vh 2.5vw 0;
-        
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-    } */
-
-    
 
 
-    /* .scrolling-wrapper{
-        padding-left: 240px;
-        right: 240px;
-        padding-right: 80px;
-    
-        
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        position: relative;
-        width: 100vw;
-        box-sizing: border-box;
-        padding-bottom: 20px;
-    } */
-
-
-
-
-
-
-
-
-    .pull-tab{
-        background-color: #ffffffcc;
-        height: 5px;
-        width: 10%;
-        display: block;
-        border-radius: 10px;
-        margin-left: 45%;
-
-        margin-bottom: 15px;
-    }
 
 
 
@@ -474,18 +533,5 @@ body{
 
     .end-item-mobile{
         margin-right: 0 !important;
-    }
-
-    /* .home-bar{
-        background: transparent;
-    } */
-
-
-    /* @media screen and (prefers-color-scheme: light) {
-        
-    .wallpaper{
-        background-image: url(../images/mountain.jpg);
-    }
-    } */
-        
+    }    
 }
