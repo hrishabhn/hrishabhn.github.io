@@ -422,7 +422,7 @@
 
     padding-left: 240px;
     padding-bottom: 40px;
-    padding-top: 30px;
+    padding-top: 25px;
     left: 0px;
     bottom: 0;
 
@@ -465,7 +465,7 @@
 
     /* background: blue; */
     position: absolute;
-    top: 14px;
+    top: 16.5px;
     left: 20px;
     /* bottom: 80px; */
     transition: 0.25s;
@@ -520,10 +520,10 @@
 @media(min-width: 450px){
 
 .tv-page-button-container:hover{
-    height: 44px;
+    height: 47px;
 
-    margin-top: -2px;
-    margin-bottom: -2px;
+    margin-top: -1px;
+    margin-bottom: -1px;
     margin-left: -2px;
     margin-right: 18px;
 
@@ -540,7 +540,7 @@
     transition: 0.25s;
 }
 .tv-page-button-container:hover .tv-page-icon{
-    top: 16px;
+    top: 17.5px;
     left: 22px;
 
     transition: 0.25s;
