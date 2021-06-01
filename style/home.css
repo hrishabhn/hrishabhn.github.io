@@ -416,42 +416,10 @@ body{
 
     
 
-    /* .big-button-container{
-        margin-bottom: 0px;
-        margin-right: 20px;
-        width: 120px;
-
-        display: inline-flex;
-        position: relative;
-
-
-
-        height: 100%;
-        border-radius: 20px;
-    } */
-    /* .big-button{
-        border-radius: 20px;
-    }
-    .big-button-label{
-        font-size: 18px;
-
-        position: absolute;
-        left: 20px;
-        bottom: 15px;
-    }
-    .big-button-icon{
-        height: 30px;
-        width: 30px;
-
-        position: absolute;
-        left: 20px;
-        top: 20px;
-    } */
-
-    .small-button{
+    /* .small-button{
         display: inline-block;
         position: absolute;
-        top: 0px;
+        top: 0px; */
 
 
 
@@ -485,7 +453,7 @@ body{
         /* width: 120px; */
 
         /* display: inline-block; */
-        position: relative;
+        /* position: relative; */
         /* top: 0; */
 
 
@@ -501,30 +469,14 @@ body{
         /* width: 22%; */
         /* height: 70px; */
         /* border-radius: 20px; */
-    }
+    /* }
     .small-button-icon{
     height: 24px;
     width: 24px;
-    }
+    } */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
 
     .end-item-mobile{
