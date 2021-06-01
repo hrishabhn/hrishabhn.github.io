@@ -25,7 +25,7 @@ body{
     display: flex;
     padding-top: 0px;
     padding-bottom: 15px;
-    padding-left: 240px;
+    padding-left: 300px;
 
     overflow: hidden;
     box-sizing: border-box;
@@ -44,7 +44,7 @@ body{
 
 .title-text{
     font-weight: 600;
-    font-size: 30px;
+    font-size: 40px;
     color: #fff;
     background-color: transparent;
     display: flex;
@@ -52,7 +52,7 @@ body{
 
 
 }
-.homepage-title{
+/* .homepage-title{
     display: block;
     font-weight: 300;
     font-size: 36px;
@@ -71,7 +71,7 @@ body{
     height: auto;
     padding-top: 2px;
     width: fit-content;
-}
+} */
 
 .menu-title-box{
 
@@ -94,7 +94,7 @@ body{
 
 .sidebar{
     height: 100%;
-    width: 160px;
+    width: 200px;
     position: fixed;
     z-index: 100;
     top: 0px;
@@ -102,7 +102,7 @@ body{
     background-color: rgba(28, 28, 30, 0.5);
     -webkit-backdrop-filter: blur(30px);
     overflow-x: hidden;
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 .title-sidebar{
     padding-left: 16px;
@@ -123,8 +123,8 @@ body{
     align-items: center;
 
     width: 100%;
-    height: 48px;
-    border-radius: 16px;
+    height: 60px;
+    border-radius: 20px;
 
     transition: 0.2s;
 }
@@ -138,7 +138,7 @@ body{
 
     height: 100%;
     width: 100%;
-    border-radius: 16px;
+    border-radius: inherit;
     transition: 0.25s;
     fill: #ffffff99;
     color: #ffffff99;
