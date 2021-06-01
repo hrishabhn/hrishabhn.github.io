@@ -699,7 +699,11 @@ gradients
 
         left: 0px;
     }
-    
+    .big-button-container{
+        margin-right: 15px;
+    }
+
+
 
     /*
     Dashboard
@@ -765,41 +769,6 @@ gradients
         bottom: 0px;
     }
 
-
-
-
-
-
-
-
-
-    /*
-    Media
-    */
-    .tv-show{
-        box-sizing: border-box;
-        display: inline-flex;
-        height: 188px;
-        width: 335px;
-        background-size: cover;
-        border-radius: 5px;
-        padding: 0px;
-        margin-right: 0px;
-        margin-bottom: 5px;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%,0);
-    }
-
-    
-
-
-
-    /*
-    tv page
-    */
-
-    
 
 
 
