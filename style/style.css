@@ -764,15 +764,16 @@ gradients
         padding-bottom: 10px;
         height: 110px;
     }
+    .title-text{
+        font-size: 30px;
+    }
 
     .up0-140{
         position: relative;
         bottom: 140px;
     }
     
-    /*.title-text{
-        font-size: 30px;
-    } */
+    
 
 
 
