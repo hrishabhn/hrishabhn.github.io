@@ -178,7 +178,9 @@ body{
     body{ 
         min-height: 100vh;
     }
-    
+    .search-container{
+        display: none;
+    }
     
 
     .end-item-mobile{
