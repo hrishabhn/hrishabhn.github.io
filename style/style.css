@@ -206,9 +206,9 @@ body{
 }
 @media(min-width: 450px){
     .big-button-container:hover{
-        width: 190px;
-        margin-left: 5px;
-        margin-right: 25px;
+        width: 196px;
+        margin-left: 2px;
+        margin-right: 22px;
 
         /* height: 146px;
         bottom: 2px; */
@@ -217,13 +217,13 @@ body{
         transition: 0.15s;
     }
     .big-button-container:hover .big-button-label{
-        left: 20px;
+        left: 23px;
         /* bottom: 18px; */
 
         transition: inherit;
     }
     .big-button-container:hover .big-button-icon{
-        left: 20px;
+        left: 23px;
         /* top: 23px; */
         transition: inherit;
     }
@@ -705,34 +705,11 @@ gradients
 
 
 
-    /*
-    Dashboard
-    */
-    .date-box{
-        padding-bottom: 20px;
-    }
-
-
-
-    
-    
-    /* .big-button-container{
-        position: relative;
-        left: 5px;
-
-        margin-left: 15px;
-        margin-bottom: 10px;
-        margin-right: 0;
-    } */
 
 
 
 
-
-
-
-
-    .box{
+    /* .box{
         display: inline-block;
         box-sizing: border-box;
         width: 160px;
@@ -753,10 +730,10 @@ gradients
     }
     .threeRow{
         height: 270px;
-    }
+    } */
 
     
-    .up0-70{
+    /* .up0-70{
         position: relative;
         bottom: 70px;
     }
@@ -767,7 +744,7 @@ gradients
     .up70-0{
         position: relative;
         bottom: 0px;
-    }
+    } */
 
 
 
