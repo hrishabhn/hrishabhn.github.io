@@ -971,6 +971,11 @@
         padding-left: 84px;
         right: 84px;
     }
+    .tv-card{
+        scroll-margin-left: 84px;
+    }
+
+
 
     .tv-page-card{
         padding-left: 64px;
