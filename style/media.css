@@ -116,6 +116,8 @@
     margin-right: 10px;
     margin-bottom: 0px;
     transition: 0.25s;
+    scroll-snap-align: start;
+    scroll-margin-left: 300px;
 }
 .tv-card:hover{   
 
@@ -184,18 +186,6 @@
 
     transition: 0.25s;
 }
-/* .tv-title-wide{
-    height:50px;
-    width: 200px;
-}
-.tv-title-mid{
-    height: 70px;
-    width: 150px;
-} */
-/* .tv-title-tall{
-    height: 80px;
-    width: 150px;
-} */
 .tv-description{
     font-size: 10px;
     font-weight: 400;
@@ -1034,6 +1024,9 @@
         font-size: 20px;
     }
 
+    .tv-card{
+        scroll-margin-left: 20px;
+    }
 
 
 
