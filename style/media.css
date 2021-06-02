@@ -1116,9 +1116,9 @@
     
     .tv-play-button{
         min-width: 335px;
-        display: flex;
+        /* display: flex;
         align-content: center;
-        justify-content: center;
+        justify-content: center; */
     }
     
     .tv-page-button-tray{
@@ -1134,7 +1134,7 @@
     }
     .tv-page-button-container{
         border-radius: 20px;
-        margin-right: 15px;
+        /* margin-right: 20px; */
     }
     .tv-page-icon{
         top: 18px;
