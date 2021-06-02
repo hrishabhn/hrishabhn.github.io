@@ -622,7 +622,7 @@ function tvPage(n){
   var posterClass = "tv-page-poster ";
   var gradientClass = "tv-page-gradient ";
   var titleClass = "tv-page-title ";
-  var serviceClass = "tv-page-button-container ";
+  var serviceClass = "tv-page-button-container tv-play-button ";
 
 
   document.getElementById("card").className =                  cardClass.concat(showSolid[n]);
