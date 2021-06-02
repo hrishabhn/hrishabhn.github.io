@@ -703,6 +703,12 @@ gradients
 
         left: -64px;
     }
+    .app-container{
+        scroll-margin-left: 84px;
+    }
+
+
+
     .subtitle-box{
         padding-left: 20px;
     }
@@ -795,7 +801,6 @@ gradients
 
     .app-container{
         scroll-margin-left: 20px;
-        /* scroll-margin-right: 300px; */
     }
 
 
