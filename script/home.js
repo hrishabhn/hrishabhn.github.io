@@ -210,7 +210,7 @@ appContainer[k] = app7[0];
 
   
 
-function appPopulate(){
+function homePopulate(){
 
   var containerClass = "app-container "
   var gradientClass = "app-icon-container ";
