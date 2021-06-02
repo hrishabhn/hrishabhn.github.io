@@ -699,7 +699,7 @@ gradients
     }
     .scrolling-wrapper{
         padding-left: 84px;
-        padding-right: 0px;
+        padding-right: 10px;
 
         left: -64px;
     }
