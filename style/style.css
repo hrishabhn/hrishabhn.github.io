@@ -215,7 +215,7 @@ body{
 
         margin-top: -2px;
         margin-left: -2px;
-        
+
         transition: 0.25s;
     }
 
@@ -284,6 +284,9 @@ body{
     /* background: #00ff0080; */
 }
 @media screen and (prefers-color-scheme: light) {
+    .subtitle-text{
+        color: #1c1c1e;
+    }
     .app-container{
         background: #f2f2f7;
     }
