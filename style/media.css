@@ -396,6 +396,9 @@
     vertical-align: top;
     margin-right: 10px;
     margin-bottom: 0px;
+
+    scroll-snap-align: start;
+    scroll-margin-left: 300px;
 }
 .podcast-cover{
     width: 100%;
@@ -955,6 +958,12 @@
     .tv-card{
         scroll-margin-left: 84px;
     }
+    .podcast-card{
+        scroll-margin-left: 84px;
+    }
+    .book-card{
+        scroll-margin-left: 84px;
+    }
 
 
 
@@ -1011,6 +1020,12 @@
     }
 
     .tv-card{
+        scroll-margin-left: 20px;
+    }
+    .podcast-card{
+        scroll-margin-left: 20px;
+    }
+    .book-card{
         scroll-margin-left: 20px;
     }
 
