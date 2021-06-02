@@ -202,6 +202,24 @@ body{
     scroll-snap-align: start;
     scroll-margin-left: 300px;
 }
+@media(min-width: 450px){
+    /* .app-container:hover{
+        height: 154px;
+        margin-top: -2px;
+        margin-bottom: -2px;
+        transition: 0.25s;
+    } */
+    .app-container:hover .app-icon-container{
+        width: 74px;
+        height: 74px;
+
+        margin-top: -2px;
+        margin-left: -2px;
+        
+        transition: 0.25s;
+    }
+
+}
 .app-icon-container{
     display: inline-flex;
     position: absolute;
