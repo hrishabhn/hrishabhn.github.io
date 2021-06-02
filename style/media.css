@@ -1116,13 +1116,13 @@
     
     .tv-play-button{
         min-width: 335px;
-        /* display: flex;
+        display: flex;
         align-content: center;
-        justify-content: center; */
+        justify-content: center;
     }
     
     .tv-page-button-tray{
-        padding-left: 25px;
+        padding-left: 20px;
         padding-right: 10px;
         padding-bottom: 0;
         padding-top: 0;
