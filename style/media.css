@@ -106,8 +106,8 @@
 
 
 .tv-card{
-    height: 245px;
-    width: 320px;
+    height: 270px;
+    width: 335px;
     border-radius: 5px;
     overflow: hidden;
     display: inline-block;
@@ -143,16 +143,12 @@
     transition: 0.25s;
 } */
 
-/* .tv-card:hover .tv-description{
-    top: -10px;
-    transition: 0.25s;
-} */
 
 
 
 .tv-poster{
     width: 100%;
-    height: 180px;
+    height: 190px;
     background-size: cover;
     background-position: center;
     display: block;
@@ -165,7 +161,7 @@
     top: 40px;
 
     width: 100%;
-    height: 140px;
+    height: 150px;
 
     transition: 0.25s;
 }
@@ -186,28 +182,13 @@
 
     transition: 0.25s;
 }
-.tv-description{
-    font-size: 10px;
-    font-weight: 400;
-    color: #fff;
-    position: relative;
-    left: 20px;
-    top: 10px;
-    transition: 0.25s;
-    display: none;
-}
-
-
-
-
-
 
 .tv-more-container{
     position: absolute;
     bottom: 0px;
     left: 0px;
     
-    height: 40px;
+    height: 50px;
     width: 100%;
     box-sizing: border-box;
 
@@ -242,10 +223,10 @@
 
 .tv-more-icon{
     fill: #ffffff99;
-    height: 14px;
-    width: 14px;
+    height: 16px;
+    width: 16px;
     position: absolute;
-    top: 13px;
+    top: 17px;
     right: 20px;
 
     transition: 0.25s;
@@ -273,8 +254,8 @@
     padding-right: 45px;
 
     color: #ffffff99;
-    font-size: 10px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 500;
 
     transition: 0.25s;
 
@@ -1035,10 +1016,7 @@
 
 
 
-    .tv-description{
-        font-size: 12px;
-        font-weight: 500;
-    }
+
     
     .scrolling-wrapper{
         padding-left: 20px;
