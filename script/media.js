@@ -25,23 +25,8 @@ var show1 = [
   "https://www.imdb.com/title/tt6439752"
 ]
 
-//Twin peaks
-var show2 = [
-  "twinpeaks-solid",
-  "twinpeaks-poster",
-  "twinpeaks-gradient",
-  "tv-tite twinpeaks-title",
-  "Mystery • 3 Seasons • 1990 - 1991",
-  "https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a",
-  "hulu-green",
-  "Watch on Hulu",
-  "https://www.tvtime.com/en/show/70533",
-  "https://reelgood.com/show/twin-peaks-1990",
-  "https://www.imdb.com/title/tt0098936"
-]
-
 //Always sunny
-var show3 = [
+var show2 = [
   " always-solid",
   "always-poster",
   "always-gradient",
@@ -55,23 +40,8 @@ var show3 = [
   "https://www.imdb.com/title/tt0472954"
 ]
 
-//Atlanta
-var show4 = [
-  "atlanta-solid",
-  "atlanta-poster",
-  "atlanta-gradient",
-  "atlanta-title",
-  "Comedy • 5 Seasons • 2016 - 2021",
-  "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
-  "hulu-green",
-  "Watch on Hulu",
-  "https://www.tvtime.com/en/show/313999",
-  "https://reelgood.com/show/atlanta-2016",
-  "https://www.imdb.com/title/tt4288182"
-]
-
 //Kim's Convenience
-var show5 = [
+var show3 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",
@@ -83,6 +53,36 @@ var show5 = [
   "https://www.tvtime.com/en/show/315908",
   "https://reelgood.com/show/kims-convenience-2016",
   "https://www.imdb.com/title/tt5912064"
+]
+
+//Twin peaks
+var show4 = [
+  "twinpeaks-solid",
+  "twinpeaks-poster",
+  "twinpeaks-gradient",
+  "tv-tite twinpeaks-title",
+  "Mystery • 3 Seasons • 1990 - 1991",
+  "https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a",
+  "hulu-green",
+  "Watch on Hulu",
+  "https://www.tvtime.com/en/show/70533",
+  "https://reelgood.com/show/twin-peaks-1990",
+  "https://www.imdb.com/title/tt0098936"
+]
+
+//Atlanta
+var show5 = [
+  "atlanta-solid",
+  "atlanta-poster",
+  "atlanta-gradient",
+  "atlanta-title",
+  "Comedy • 5 Seasons • 2016 - 2021",
+  "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
+  "hulu-green",
+  "Watch on Hulu",
+  "https://www.tvtime.com/en/show/313999",
+  "https://reelgood.com/show/atlanta-2016",
+  "https://www.imdb.com/title/tt4288182"
 ]
 
 var show6 = hide
