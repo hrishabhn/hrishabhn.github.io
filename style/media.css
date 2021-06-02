@@ -202,10 +202,6 @@
 
     z-index: 1;
 
-
-
-
-    
     transition: 0.25s;
 }
 .tv-more-container:hover{
@@ -258,9 +254,6 @@
     font-weight: 500;
 
     transition: 0.25s;
-
-    
-    
 }
 .tv-more-text{
     display: inline-block;
@@ -270,8 +263,6 @@
 
     transition: 0.25s;
 }
-
-
 .tv-more-link{
     display: flex;
     position: relative;
@@ -302,7 +293,7 @@
 
 
 
-
+/* 
 .tv-link{
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -340,7 +331,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     transition: 0.25s;
 
-}
+} */
 
 
 
@@ -935,14 +926,18 @@
 
 
 @media screen and (prefers-color-scheme: light) {
-    .media-subtitle-text{
-        color: #1c1c1e;
+    .tv-more-container{
+        background: #ffffff33;
     }
-
-    .media-app-tray{
-
-        background-color: rgba(209, 209, 214, 0.9);
+    .tv-more-container:hover{
+        background: rgba(255, 255, 255, 0.25);
     }
+    /* .tv-card{
+        box-shadow: 0 0 30px hsla(0, 0%, 0%, 0.2);
+    }
+    .tv-card:hover{
+        box-shadow: 0 0 30px hsla(0, 0%, 0%, 0.5);
+    } */
 }
 
 
