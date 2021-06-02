@@ -268,7 +268,18 @@ var show20 = [
 //   "Watch on Hulu"
 // ]
 
+// BOOKS //
+var book_1 = [
+  "book-card homodeus-solid",
+  "book-cover homodeus-cover",
+  "https://smart.link/o3waqx4wg1gdn?asin=B01N4DCBK6"
+]
 
+var book_2 = [
+  "book-card ride-solid",
+  "book-cover ride-cover",
+  "https://smart.link/o3waqx4wg1gdn?asin=0525499334"
+]
 
 
 
@@ -850,9 +861,16 @@ function populate(){
 //     document.getElementById("link20").href =      show20[5];
 //  document.getElementById("service20").innerHTML = show20[6];
 
+// BOOKS //
+//book 1
+ document.getElementById("bookCard1").className =  book_1[0];
+document.getElementById("bookCover1").className =  book_1[1];
+ document.getElementById("bookLink1").href =       book_1[2];
 
-
-
+//book 2
+ document.getElementById("bookCard2").className =  book_2[0];
+document.getElementById("bookCover2").className =  book_2[1];
+ document.getElementById("bookLink2").href =       book_2[2];
 
 
   
