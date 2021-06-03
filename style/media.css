@@ -1052,10 +1052,6 @@
 
 
 @media(max-width: 1000px){
-    .scrolling-wrapper{
-        padding-left: 84px;
-        right: 84px;
-    }
     .tv-card{
         scroll-margin-left: 84px;
     }
@@ -1131,16 +1127,6 @@
     }
 
 
-
-
-    
-    .scrolling-wrapper{
-        padding-left: 20px;
-        right: 0;
-        padding-right: 10px;
-
-
-    }
 
     
     .tv-page{
