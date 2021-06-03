@@ -155,7 +155,7 @@ body{
     padding-left: 260px;
     padding-right: 0px;
     padding-top: 110px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     box-sizing: border-box;
 
     min-height: 100vh;
@@ -283,17 +283,7 @@ body{
 
     /* background: #00ff0080; */
 }
-@media screen and (prefers-color-scheme: light) {
-    .subtitle-text{
-        color: #1c1c1e;
-    }
-    .app-container{
-        background: #f2f2f7;
-    }
-    .app-text{
-        color: #1c1c1e;
-    }
-}
+
 
 
 
@@ -630,21 +620,21 @@ gradients
 
 @media screen and (prefers-color-scheme: light) {
     body {
-        background-color: white;
+        background-color: #f2f2f7;
     }
     .sidebar{
-        background-color: rgba(242, 242, 247, 0.5);
+        background-color: #e5e5ea80;
     }
 
     .menu-item{
 
-        fill: rgba(0, 0, 0, 0.5);
-        color: rgba(0, 0, 0, 0.5);
+        fill: #1c1c1e80;
+        color: #1c1c1e80;
     }
  
     .menu-item:hover{
-        fill: #000;
-        color: #000;
+        fill: #1c1c1e;
+        color: #1c1c1e;
     }
     .selected{
         color: #fff;
@@ -653,6 +643,17 @@ gradients
     .selected:hover{
         color: #fff;
         fill: #fff;
+    }
+
+
+    .subtitle-text{
+        color: #1c1c1e;
+    }
+    .app-container{
+        background: #e5e5ea;
+    }
+    .app-text{
+        color: #1c1c1e;
     }
 }
 
@@ -807,7 +808,7 @@ gradients
         padding-top: 110px;    
         padding-left: 0px;
         padding-right: 0px;
-        padding-bottom: 125px;
+        padding-bottom: 105px;
     }
     .scrolling-wrapper{
         padding-left: 20px;
@@ -889,7 +890,7 @@ gradients
 
     @media screen and (prefers-color-scheme: light) {
         .sidebar{
-            background-color: rgba(242, 242, 247, 0.8);
+            background-color: #e5e5eacc;
         }
     }
 }

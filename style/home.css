@@ -1,64 +1,6 @@
-body{
-    background:#000000;
-}
-
 .home-bar{
     background: rgba(128, 128, 255, 0.9);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .wallpaper{
-    background-image: url(../images/chicago.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;       
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-} */
-
-
-
-
-
-/* .wallpaper{
-    background-image: url("images/wallpaper.jpg");
-    background-size: cover;
-    min-height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-} */
 
 
 .search-container{
@@ -119,41 +61,15 @@ body{
     }
 }
 
-/* 
-.home-subtitle-box{
-    padding-left: 300px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* @dark mode */
 
 @media screen and (prefers-color-scheme: light) {
-    body{
-        background: #fff;
-    }
-    
-    
-    
     .search{
         background-color: #f2f2f7;
     }
-    .box-label{
-        color: #1c1c1e;
-    }
-    
 }
 
 
