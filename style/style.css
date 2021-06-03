@@ -192,9 +192,9 @@ body{
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 150px;
-    border-radius: 20px;
+    width: 162.5px;
+    height: 125px;
+    border-radius: 25px;
     background: #1c1c1e;
 
     margin-right: 10px;
@@ -202,24 +202,25 @@ body{
     scroll-snap-align: start;
     scroll-margin-left: 300px;
 }
-@media(min-width: 450px){
+
     /* .app-container:hover{
         height: 154px;
         margin-top: -2px;
         margin-bottom: -2px;
         transition: 0.25s;
     } */
-    .app-container:hover .app-icon-container{
-        width: 74px;
-        height: 74px;
 
-        margin-top: -2px;
-        margin-left: -2px;
+.app-container:hover .app-icon-container{
+    width: 60.25px;
+    height: 60.25px;
 
-        transition: 0.25s;
-    }
+    margin-top: -2px;
+    margin-left: -2px;
 
+    transition: 0.25s;
 }
+
+
 .app-icon-container{
     display: inline-flex;
     position: absolute;
@@ -228,14 +229,12 @@ body{
     text-decoration: none;
     /* cursor: pointer; */
 
-    top: 20px;
-    left: 20px;
+    top: 18.75px;
+    left: 18.75px;
 
-
-
-    width: 70px;
-    height: 70px;
-    border-radius: 30px;
+    width: 56.25px;
+    height: 56.25px;
+    border-radius: 25px;
 
     transition: 0.25s;
 
@@ -243,10 +242,10 @@ body{
 }
 .app-icon{
     fill: #fff;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     transition: 0.25s;
-    background-size: contain;
+    /* background-size: contain; */
 }
 .app-text{
     display: inline-flex;
@@ -255,15 +254,15 @@ body{
     align-items: center;
     text-decoration: none;
 
-    bottom: 20px;
-    left: 20px;
-    padding-left: 5px;
+    bottom: 18.75px;
+    left: 18.75px;
+    padding-left: 2.5px;
 
     transition: inherit;
     /* background: #00ff0080; */
 
     color: #fff;
-    font-size: 26px;
+    font-size: 17.5px;
     font-weight: 500;
 }
 .app-link{
@@ -812,7 +811,7 @@ gradients
     }
     .scrolling-wrapper{
         padding-left: 20px;
-        padding-right: 0px;
+        padding-right: 10px;
 
         left: 0px;
     }
