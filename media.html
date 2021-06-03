@@ -114,7 +114,7 @@
 
     
 
-    <div class="main">
+    <div class="main main-media">
         <div class="title-box media-bar">
             <p1 class="title-text">Media</p1>
         </div>
@@ -612,14 +612,14 @@
             <p1 class="subtitle-text">Books</p1>
         </div>
         <div class="scrolling-wrapper">
-            <div id="bookCard1">
+            <div id="bookCard1" class="book-card">
                 <span id="bookCover1"></span>
-                <span class="tv-more-container">
-                    <span class="tv-more-text-box">
-                        <p class="tv-more-text">READ</p>
+                <span class="book-more-container">
+                    <span class="book-more-text-box">
+                        <p class="book-more-text">READ</p>
                     </span>
-                    <a id="bookLink1" class="tv-more-link" target="_self"></a>
-                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                    <a id="bookLink1" class="book-more-link" target="_self"></a>
+                    <svg class="book-more-icon" viewBox="0 0 512 512">
                         <g>
                             <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
                             C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
@@ -629,14 +629,14 @@
                         </g>
                     </svg>
                 </span>
-            </div><div id="bookCard2">
+            </div><div id="bookCard2" class="book-card">
                 <span id="bookCover2"></span>
-                <span class="tv-more-container">
-                    <span class="tv-more-text-box">
-                        <p class="tv-more-text">READ</p>
+                <span class="book-more-container">
+                    <span class="book-more-text-box">
+                        <p class="book-more-text">READ</p>
                     </span>
-                    <a id="bookLink2" class="tv-more-link" target="_self"></a>
-                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                    <a id="bookLink2" class="book-more-link" target="_self"></a>
+                    <svg class="book-more-icon" viewBox="0 0 512 512">
                         <g>
                             <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
                             C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
@@ -654,61 +654,141 @@
             <p1 class="subtitle-text">Podcasts</p1>
         </div>
         <div class="scrolling-wrapper">
-            <div id="podCard1" class="podcast-card">
-                <span id="podCover1" class="podcast-cover"></span>
-                <a id="podLink1" class="book-link">
-                </a>
-                <span class="tv-service">
-                    LISTEN
+            <div id="podCard1" class="pod-card">
+                <span id="podCover1"></span>
+                <span class="book-more-container">
+                    <span class="book-more-text-box">
+                        <p class="book-more-text">LISTEN</p>
+                    </span>
+                    <a id="podLink1" class="book-more-link" target="_self"></a>
+                    <svg class="book-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
                 </span>
-            </div><div id="podCard2" class="podcast-card">
-                <span id="podCover2" class="podcast-cover"></span>
-                <a id="podLink2" class="book-link">
-                </a>
-                <span class="tv-service">
-                    LISTEN
+            </div><div id="podCard2" class="pod-card">
+                <span id="podCover2"></span>
+                <span class="book-more-container">
+                    <span class="book-more-text-box">
+                        <p class="book-more-text">LISTEN</p>
+                    </span>
+                    <a id="podLink2" class="book-more-link" target="_self"></a>
+                    <svg class="book-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
                 </span>
-            </div><div id="podCard3" class="podcast-card">
-                <span id="podCover3" class="podcast-cover"></span>
-                <a id="podLink3" class="book-link">
-                </a>
-                <span class="tv-service">
-                    LISTEN
+            </div><div id="podCard3" class="pod-card">
+                <span id="podCover3"></span>
+                <span class="book-more-container">
+                    <span class="book-more-text-box">
+                        <p class="book-more-text">LISTEN</p>
+                    </span>
+                    <a id="podLink3" class="book-more-link" target="_self"></a>
+                    <svg class="book-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
                 </span>
-            </div><div id="podCard4" class="podcast-card">
-                <span id="podCover4" class="podcast-cover"></span>
-                <a id="podLink4" class="book-link">
-                </a>
-                <span class="tv-service">
-                    LISTEN
+            </div><div id="podCard4" class="pod-card">
+                <span id="podCover4"></span>
+                <span class="book-more-container">
+                    <span class="book-more-text-box">
+                        <p class="book-more-text">LISTEN</p>
+                    </span>
+                    <a id="podLink4" class="book-more-link" target="_self"></a>
+                    <svg class="book-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
                 </span>
-            </div><div id="podCard5" class="podcast-card">
-                <span id="podCover5" class="podcast-cover"></span>
-                <a id="podLink5" class="book-link">
-                </a>
-                <span class="tv-service">
-                    LISTEN
+            </div><div id="podCard5" class="pod-card">
+                <span id="podCover5"></span>
+                <span class="book-more-container">
+                    <span class="book-more-text-box">
+                        <p class="book-more-text">LISTEN</p>
+                    </span>
+                    <a id="podLink5" class="book-more-link" target="_self"></a>
+                    <svg class="book-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
                 </span>
-            </div><div id="podCard6" class="podcast-card">
-                <span id="podCover6" class="podcast-cover"></span>
-                <a id="podLink6" class="book-link">
-                </a>
-                <span class="tv-service">
-                    LISTEN
+            </div><div id="podCard6" class="pod-card">
+                <span id="podCover6"></span>
+                <span class="book-more-container">
+                    <span class="book-more-text-box">
+                        <p class="book-more-text">LISTEN</p>
+                    </span>
+                    <a id="podLink6" class="book-more-link" target="_self"></a>
+                    <svg class="book-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
                 </span>
-            </div><div id="podCard7" class="podcast-card">
-                <span id="podCover7" class="podcast-cover"></span>
-                <a id="podLink7" class="book-link">
-                </a>
-                <span class="tv-service">
-                    LISTEN
+            </div><div id="podCard7" class="pod-card">
+                <span id="podCover7"></span>
+                <span class="book-more-container">
+                    <span class="book-more-text-box">
+                        <p class="book-more-text">LISTEN</p>
+                    </span>
+                    <a id="podLink7" class="book-more-link" target="_self"></a>
+                    <svg class="book-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
                 </span>
-            </div><div id="podCard8" class="podcast-card">
-                <span id="podCover8" class="podcast-cover"></span>
-                <a id="podLink8" class="book-link">
-                </a>
-                <span class="tv-service">
-                    LISTEN
+            </div><div id="podCard8" class="pod-card">
+                <span id="podCover8"></span>
+                <span class="book-more-container">
+                    <span class="book-more-text-box">
+                        <p class="book-more-text">LISTEN</p>
+                    </span>
+                    <a id="podLink8" class="book-more-link" target="_self"></a>
+                    <svg class="book-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
                 </span>
             </div>
         </div>
