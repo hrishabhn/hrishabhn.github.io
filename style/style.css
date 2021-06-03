@@ -195,7 +195,7 @@ body{
     width: 162.5px;
     height: 125px;
     border-radius: 25px;
-    background: #1c1c1e;
+    /* background: #1c1c1e; */
 
     margin-right: 10px;
 
@@ -238,7 +238,7 @@ body{
 
     transition: 0.25s;
 
-    /* background: teal; */
+    background: #1c1c1e33;
 }
 .app-icon{
     fill: #fff;
@@ -460,7 +460,9 @@ gradients
     background: linear-gradient(to bottom right,#D7C688,#a39667);
 }
 
-
+.grey-gradient{
+    background:linear-gradient(to bottom right,#000,#1c1c1e);
+}
 .black-gradient{
     background:linear-gradient(to bottom right,#1A1A1A,#000);
 }
@@ -648,12 +650,12 @@ gradients
     .subtitle-text{
         color: #1c1c1e;
     }
-    .app-container{
-        background: #e5e5ea;
+    .app-icon-container{
+        background: #e5e5ea33;
     }
-    .app-text{
+    /* .app-text{
         color: #1c1c1e;
-    }
+    } */
 }
 
 
