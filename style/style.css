@@ -211,11 +211,11 @@ body{
     } */
 
 .app-container:hover .app-icon-container{
-    width: 60.25px;
-    height: 60.25px;
+    width: 64.25px;
+    height: 64.25px;
 
-    margin-top: -2px;
-    margin-left: -2px;
+    margin-top: -4px;
+    margin-left: -4px;
 
     transition: 0.25s;
 }
