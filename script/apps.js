@@ -71,8 +71,26 @@ var app_H07 = [
   "https://app.clickup.com/8450846/v/l/81wry-329",
 ]
 
-var app_H08 = hide;
-var app_H09 = hide;
+// Gmail
+var app_H08 = [
+  "hidden-mobile",
+  "Gmail",
+  "google-red",
+  '<svg data-bbox="1 7 48 36" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M5.5 7C3.02 7 1 9.02 1 11.5v.426L25 29l24-17.074V11.5C49 9.02 46.98 7 44.5 7zm.852 2h37.293L25 22zM1 14.027V38.5C1 40.98 3.02 43 5.5 43h39c2.48 0 4.5-2.02 4.5-4.5V14.027l-6 4.27V41H7V18.297z" /></g></svg>',
+  "https://mail.google.com/mail/u/0/#inbox",
+]
+
+// Google Drive
+var app_H09 = [
+  "hidden-mobile",
+  "Drive",
+  "google-green",
+  '<svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m323.303 31h-133.799c-5.361 0-10.313 2.856-12.993 7.5s-2.681 10.356 0 15l143.042 247.5h168.726l-151.998-262.515c-2.68-4.629-7.632-7.485-12.978-7.485z" /><path d="m154.034 75.947-152.011 262.538c-2.622 4.512-2.695 10.049-.22 14.648l64.805 120c2.578 4.775 7.544 7.793 12.979 7.866h.22c5.347 0 10.313-2.856 12.993-7.5l145.494-251.757z" /><path d="m509.88 338.31c-2.695-4.526-7.588-7.31-12.876-7.31h-286.41l-86.678 150h308.284c5.508 0 10.576-3.018 13.198-7.866l64.805-120c2.504-4.658 2.387-10.283-.323-14.824z" /></svg>',
+  "https://drive.google.com",
+]
+
+// var app_H08 = hide;
+// var app_H09 = hide;
 var app_H10 = hide;
 
 
