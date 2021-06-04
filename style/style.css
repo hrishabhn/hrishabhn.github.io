@@ -545,6 +545,9 @@ gradients
 .google-blue{
     background:linear-gradient(to bottom right,#4285f4,#2d5da8);
 }
+.google-maps{
+    background:linear-gradient(to bottom right,#9BC0F9,#6c86ad);
+}
 .walmart{
     background:linear-gradient(to bottom right,#0070DB,#004a8f);
 }
@@ -575,13 +578,18 @@ gradients
 }
 .imdb{
     background: #F5C518;
-
 }
 .hbo{
     background:linear-gradient(to bottom right,#991eeb,#5822b4);
 }
 .prime{
     background:linear-gradient(to bottom right,#00a8e1,#00a8e1);
+}
+.whatsapp{
+    background:linear-gradient(to bottom right,#25d366,#188741);
+}
+.messenger{
+    background:linear-gradient(to bottom right,#0084ff,#005cb3);
 }
 
 
