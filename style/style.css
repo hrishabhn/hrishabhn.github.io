@@ -443,7 +443,7 @@ gradients
 }
 
 .grey-gradient{
-    background:linear-gradient(to bottom right,#1c1c1e,#000);
+    background:linear-gradient(to bottom right,#101010,#1c1c1e);
 }
 .black-gradient{
     background:linear-gradient(to bottom right,#1A1A1A,#000);
