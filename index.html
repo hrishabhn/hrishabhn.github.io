@@ -5,6 +5,7 @@
     <meta name='viewport' content='viewport-fit=cover, height=device-height, width=device-width, initial-scale=1.0'>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/media.css">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
     <link rel="manifest" href="manifest.json">
@@ -25,7 +26,7 @@
 
 </head>
 
-<body onload="homeAppPopulate()">
+<body onload="homeAppPopulate();homeTVPopulate()">
     <div class="sidebar">
         <div class="menu-title-box hidden-mobile hidden-tablet">
             <p1 class="title-text title-sidebar">Menu</p1>
@@ -148,6 +149,7 @@
         </div>
 
         <script src="script/apps.js"></script>
+        <script src="script/media.js"></script>
 
 
         <div class="subtitle-box home-subtitle-box">
@@ -735,6 +737,232 @@
             </div> -->
         </div>
 
+        <div class="subtitle-box">
+            <p1 class="subtitle-text">Up next</p1>
+        </div>
+        <div class="scrolling-wrapper">
+            <div id="card_1" class="tv-card show-solid">
+                <span id="poster_1" class="tv-poster show-poster">
+                    <span id="grad_1" class="tv-gradient show-gradient">
+                        <span id="title_1" class="tv-title tv-title-size show-title">
+                        </span>
+                    </span>
+                </span>
+                <span class="tv-more-container">
+                    <span class="tv-more-text-box">
+                        <p id="desc_1" class="tv-more-text">MORE</p>
+                    </span>
+                    <a id="link_1" class="tv-more-link" target="_self"></a>
+                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
+                </span>
+            </div><div id="card_2" class="tv-card show-solid">
+                <span id="poster_2" class="tv-poster show-poster">
+                    <span id="grad_2" class="tv-gradient show-gradient">
+                        <span id="title_2" class="tv-title tv-title-size show-title">
+                        </span>
+                    </span>
+                </span>
+                <span class="tv-more-container">
+                    <span class="tv-more-text-box">
+                        <p id="desc_2" class="tv-more-text">MORE</p>
+                    </span>
+                    <a id="link_2" class="tv-more-link" target="_self"></a>
+                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
+                </span>
+            </div><div id="card_3" class="tv-card show-solid">
+                <span id="poster_3" class="tv-poster show-poster">
+                    <span id="grad_3" class="tv-gradient show-gradient">
+                        <span id="title_3" class="tv-title tv-title-size show-title">
+                        </span>
+                    </span>
+                </span>
+                <span class="tv-more-container">
+                    <span class="tv-more-text-box">
+                        <p id="desc_3" class="tv-more-text">MORE</p>
+                    </span>
+                    <a id="link_3" class="tv-more-link" target="_self"></a>
+                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
+                </span>
+            </div><div id="card_4" class="tv-card show-solid">
+                <span id="poster_4" class="tv-poster show-poster">
+                    <span id="grad_4" class="tv-gradient show-gradient">
+                        <span id="title_4" class="tv-title tv-title-size show-title">
+                        </span>
+                    </span>
+                </span>
+                <span class="tv-more-container">
+                    <span class="tv-more-text-box">
+                        <p id="desc_4" class="tv-more-text">MORE</p>
+                    </span>
+                    <a id="link_4" class="tv-more-link" target="_self"></a>
+                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
+                </span>
+            </div><div id="card_5" class="tv-card show-solid">
+                <span id="poster_5" class="tv-poster show-poster">
+                    <span id="grad_5" class="tv-gradient show-gradient">
+                        <span id="title_5" class="tv-title tv-title-size show-title">
+                        </span>
+                    </span>
+                </span>
+                <span class="tv-more-container">
+                    <span class="tv-more-text-box">
+                        <p id="desc_5" class="tv-more-text">MORE</p>
+                    </span>
+                    <a id="link_5" class="tv-more-link" target="_self"></a>
+                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
+                </span>
+            </div><div id="card_6" class="tv-card show-solid">
+                <span id="poster_6" class="tv-poster show-poster">
+                    <span id="grad_6" class="tv-gradient show-gradient">
+                        <span id="title_6" class="tv-title tv-title-size show-title">
+                        </span>
+                    </span>
+                </span>
+                <span class="tv-more-container">
+                    <span class="tv-more-text-box">
+                        <p id="desc_6" class="tv-more-text">MORE</p>
+                    </span>
+                    <a id="link_6" class="tv-more-link" target="_self"></a>
+                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
+                </span>
+            </div><div id="card_7" class="tv-card show-solid">
+                <span id="poster_7" class="tv-poster show-poster">
+                    <span id="grad_7" class="tv-gradient show-gradient">
+                        <span id="title_7" class="tv-title tv-title-size show-title">
+                        </span>
+                    </span>
+                </span>
+                <span class="tv-more-container">
+                    <span class="tv-more-text-box">
+                        <p id="desc_7" class="tv-more-text">MORE</p>
+                    </span>
+                    <a id="link_7" class="tv-more-link" target="_self"></a>
+                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
+                </span>
+            </div><div id="card_8" class="tv-card show-solid">
+                <span id="poster_8" class="tv-poster show-poster">
+                    <span id="grad_8" class="tv-gradient show-gradient">
+                        <span id="title_8" class="tv-title tv-title-size show-title">
+                        </span>
+                    </span>
+                </span>
+                <span class="tv-more-container">
+                    <span class="tv-more-text-box">
+                        <p id="desc_8" class="tv-more-text">MORE</p>
+                    </span>
+                    <a id="link_8" class="tv-more-link" target="_self"></a>
+                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
+                </span>
+            </div><div id="card_9" class="tv-card show-solid">
+                <span id="poster_9" class="tv-poster show-poster">
+                    <span id="grad_9" class="tv-gradient show-gradient">
+                        <span id="title_9" class="tv-title tv-title-size show-title">
+                        </span>
+                    </span>
+                </span>
+                <span class="tv-more-container">
+                    <span class="tv-more-text-box">
+                        <p id="desc_9" class="tv-more-text">MORE</p>
+                    </span>
+                    <a id="link_9" class="tv-more-link" target="_self"></a>
+                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
+                </span>
+            </div><div id="card_10" class="tv-card show-solid">
+                <span id="poster_10" class="tv-poster show-poster">
+                    <span id="grad_10" class="tv-gradient show-gradient">
+                        <span id="title_10" class="tv-title tv-title-size show-title">
+                        </span>
+                    </span>
+                </span>
+                <span class="tv-more-container">
+                    <span class="tv-more-text-box">
+                        <p id="desc_10" class="tv-more-text">MORE</p>
+                    </span>
+                    <a id="link_10" class="tv-more-link" target="_self"></a>
+                    <svg class="tv-more-icon" viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+                            C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                            <circle cx="256" cy="256" r="32"/>
+                            <circle cx="368" cy="256" r="32"/>
+                            <circle cx="144" cy="256" r="32"/>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+        </div>
 
 
 

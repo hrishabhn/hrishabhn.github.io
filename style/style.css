@@ -290,6 +290,10 @@ body{
 
 
 
+
+
+
+
 .big-button-container{
     display: inline-flex;
     position: relative;
@@ -380,32 +384,6 @@ body{
 
 
 
-
-
-.box{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 205px;
-    background-color: #1c1c1e;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    padding: 15px 0px 0px 15px;
-}
-.oneRow{
-    height: 130px;
-}
-.twoRow{
-    height: 200px;
-}
-.threeRow{
-    height: 270px;
-}
-.boxLabel{
-    display: block;
-    color: #fff;
-    font-size: 20px;
-}
 
 
 .frozen{

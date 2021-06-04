@@ -643,10 +643,47 @@ function tvPage(n){
 
 
 
+function homeTVPopulate(){
+  var cardClass = "tv-card ";
+  var posterClass = "tv-poster ";
+  var gradientClass = "tv-gradient ";
+  var titleClass = "tv-title ";
+  var showPage = "TV/pages/tv-page-";
+  var linkEnd = ".html"
+
+  for (i = 1; i < 11; i++){
+    var itemid = [
+      "card_".concat(i),
+      "poster_".concat(i),
+      "grad_".concat(i),
+      "title_".concat(i),
+      "desc_".concat(i),
+      "link_".concat(i),
+      // "service".concat(i),
+      // "page_".concat(i),
+    ]
+
+    document.getElementById(itemid[0]).className =        cardClass.concat(showSolid[i]);
+    document.getElementById(itemid[1]).className =     posterClass.concat(showPoster[i]);
+    document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
+    document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
+    document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
+    document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);                  //showLink[i];
+    // document.getElementById(itemid[6]).innerHTML =                       showService[i];
+    //document.getElementById(itemid[7]).href =                        showPage.concat(i);
 
 
 
-function populate(){
+
+  }
+}
+
+
+
+
+
+
+function mediaTVPopulate(){
   var cardClass = "tv-card ";
   var posterClass = "tv-poster ";
   var gradientClass = "tv-gradient ";
