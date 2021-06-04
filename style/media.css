@@ -566,11 +566,11 @@
 
     padding-left: 300px;
     padding-bottom: 40px;
-    padding-top: 20px;
+    padding-top: 40px;
     left: 0px;
     bottom: 0px;
 
-    height: 120px;
+    height: 140px;
     /* max-height: 110px; */
     width: 100vw;
 
@@ -661,7 +661,7 @@
     transition: 0.25s;
 }
 
-@media(min-width: 450px){
+
 
 .tv-page-button-container:hover{
     /* height: 47px;
@@ -694,7 +694,7 @@
     background-color: rgba(0,0,0, 0.15);
     transition: 0.25s;
 } */
-}
+
 
 /* books */
 .homodeus-solid{
@@ -1181,18 +1181,25 @@
     
     .tv-play-button{
         min-width: 335px;
-        /* display: flex;
-        align-content: center;
-        justify-content: center; */
+    
+    }
+    .tv-play-button:hover{
+        min-width: 339px;
     }
     
     .tv-page-button-tray{
         padding-left: 20px;
         padding-right: 0px;
-        padding-bottom: 0;
-        padding-top: 0;
+        /* padding-top: 0; */
+        /* padding-bottom: 0; */
 
-        height: 50px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+
+        height: 110px;
 
         top: 48vh;
         
