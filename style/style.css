@@ -49,6 +49,22 @@ body{
 
 }
 
+.home-bar{
+    background: rgba(128, 128, 255, 0.9);
+}
+.bookmarks-bar{
+    background: rgba(42, 161, 72, 0.9);
+}
+.school-bar{
+    background: rgba(189, 174, 120, 0.9);
+}
+
+
+
+
+
+
+
 .subtitle-box{
     box-sizing: border-box;
     padding-left: 40px;
@@ -427,7 +443,7 @@ gradients
 }
 
 .grey-gradient{
-    background:linear-gradient(to bottom right,#000,#1c1c1e);
+    background:linear-gradient(to bottom right,#1c1c1e,#000);
 }
 .black-gradient{
     background:linear-gradient(to bottom right,#1A1A1A,#000);

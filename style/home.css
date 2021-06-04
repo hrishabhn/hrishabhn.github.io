@@ -1,8 +1,3 @@
-.home-bar{
-    background: rgba(128, 128, 255, 0.9);
-}
-
-
 .search-container{
     position: relative;
     display: flex;
@@ -52,25 +47,7 @@
     opacity: 0.9;
 }
 
-@media(min-width: 450px){
-    .end-item{
-        margin-right: 0 !important;
-    }
-    .end-item:hover{
-        margin-right: -2px;
-    }
-}
 
-
-
-
-/* @dark mode */
-
-@media screen and (prefers-color-scheme: light) {
-    .search{
-        background-color: #f2f2f7;
-    }
-}
 
 
 @media(max-width: 1000px){
@@ -78,28 +55,11 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    
-
-
-
-    .end-item-tablet{
-        margin-right: 0 !important;
-
-    }
 }
 
 
 @media(max-width: 450px){
-
-    body{ 
-        min-height: 100vh;
-    }
     .search-container{
         display: none;
-    }
-    
-
-    .end-item-mobile{
-        margin-right: 0 !important;
-    }    
+    }  
 }
