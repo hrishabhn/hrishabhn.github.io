@@ -209,7 +209,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 162.5px;
-    height: 125px;
+    height: 115px;
     border-radius: 25px;
     /* background: #1c1c1e; */
 
@@ -227,8 +227,8 @@ body{
     } */
 
 .app-container:hover .app-icon-container{
-    width: 64.25px;
-    height: 64.25px;
+    width: 66px;
+    height: 66px;
 
     margin-top: -4px;
     margin-left: -4px;
@@ -245,11 +245,11 @@ body{
     text-decoration: none;
     /* cursor: pointer; */
 
-    top: 18.75px;
-    left: 18.75px;
+    top: 15px;
+    left: 15px;
 
-    width: 56.25px;
-    height: 56.25px;
+    width: 58px;
+    height: 58px;
     border-radius: 25px;
 
     transition: 0.25s;
@@ -258,8 +258,8 @@ body{
 }
 .app-icon{
     fill: #fff;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     transition: 0.25s;
     /* background-size: contain; */
 }
@@ -270,15 +270,15 @@ body{
     align-items: center;
     text-decoration: none;
 
-    bottom: 18.75px;
-    left: 18.75px;
-    padding-left: 2.5px;
+    bottom: 15px;
+    left: 15px;
+    padding-left: 5px;
 
     transition: inherit;
     /* background: #00ff0080; */
 
     color: #fff;
-    font-size: 17.5px;
+    font-size: 14px;
     font-weight: 500;
 }
 .app-link{
