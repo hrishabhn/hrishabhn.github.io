@@ -643,8 +643,8 @@ gradients
         width: 100%;
     }
     .menu-item-icon{
-        height: 6vw;
-        width: 6vw;
+        height: 5.5vw;
+        width: 5.5vw;
     }
     .selected{
         /* background-color: rgba(255, 255, 255, 0.1); */
