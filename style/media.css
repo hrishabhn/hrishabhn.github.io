@@ -100,7 +100,7 @@
     margin-bottom: 0px;
     transition: 0.25s;
     scroll-snap-align: start;
-    scroll-margin-left: 300px;
+    scroll-margin-left: 130px;
 }
 .tv-poster{
     width: 100%;
@@ -934,75 +934,14 @@
     .tv-more-container:hover{
         background: rgba(255, 255, 255, 0.25);
     }
-
-
-
-
-
-
-    /* .tv-card{
-        box-shadow: 0 0 30px hsla(0, 0%, 0%, 0.2);
-    }
-    .tv-card:hover{
-        box-shadow: 0 0 30px hsla(0, 0%, 0%, 0.5);
-    } */
 }
 
 
 
-
-
-
-/* @media(max-width: 1200px){
-    .tv-card{
-        scroll-margin-left: 84px;
-    }
-    .book-card{
-        scroll-margin-left: 84px;
-    }
-    .podcast-card{
-        scroll-margin-left: 84px;
-    }
-
-    .tv-page-card{
-        padding-left: 64px;
-    }
-    
-    .tv-page-poster{
-        height: 90vh;
-    }
-    .tv-page-gradient{
-        height: 100%;
-    }
-    .tv-page-title{
-        left: 104px;
-
-    }
-    .tv-page-description{
-        left: 104px;
-    }
-    
-    .tv-page-button-tray{
-        padding-left: 104px;
-    }
-
-
-} */
-
-
-
 @media(max-width: 450px){    
-
-
     .media-app-tray{
         display: none;
     }
-
-
-
-
-
-
 
     .tv-card{
         scroll-margin-left: 5vw;
