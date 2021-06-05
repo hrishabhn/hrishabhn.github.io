@@ -36,7 +36,9 @@ body{
 
     align-content: flex-end;
 
-    -webkit-backdrop-filter: blur(50px);
+    /* background-color: rgba(28, 28, 30, 0.9); */
+    -webkit-backdrop-filter: blur(25px);
+
 }
 .title-text{
     font-weight: 600;
@@ -59,7 +61,10 @@ body{
     background: rgba(189, 174, 120, 0.9);
 }
 .media-bar{
-    background:rgba(217, 50, 41, 0.9);
+    background: rgba(217, 50, 41, 0.9);
+}
+.projects-bar{
+    background: rgba(217, 174, 0, 0.9);
 }
 
 .home-icon{
@@ -72,8 +77,13 @@ body{
     fill: rgba(189, 174, 120, 0.9);
 }
 .media-icon{
-    fill:rgba(217, 50, 41, 0.9);
+    fill: rgba(217, 50, 41, 0.9);
 }
+.projects-icon{
+    fill: rgba(217, 174, 0, 0.9);
+}
+
+
 
 
 
@@ -568,9 +578,29 @@ gradients
         padding-right: 0;
         padding-bottom: 10px;
         height: 110px;
+        /* -webkit-backdrop-filter: blur(20px); */
+        background: rgba(28, 28, 30, 0.8);
     }
+
+
     .title-text{
         font-size: 30px;
+    }
+
+    .home-title{
+        color: rgba(128, 128, 255, 0.9);
+    }
+    .bookmarks-title{
+        color: rgba(42, 161, 72, 0.9);
+    }
+    .school-title{
+        color: rgba(189, 174, 120, 0.9);
+    }
+    .media-title{
+        color: rgba(217, 50, 41, 0.9);
+    }
+    .projects-title{
+        color: rgba(217, 174, 0, 0.9);
     }
 
     .subtitle-box{
@@ -639,5 +669,12 @@ gradients
     .app-container{
         scroll-snap-align: start;
         scroll-margin-left: 5vw;
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+
+        .title-box{
+            background: rgba(229, 229, 234, 0.9);
+        }
     }
 }
