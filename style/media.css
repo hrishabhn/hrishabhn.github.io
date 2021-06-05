@@ -100,7 +100,7 @@
     margin-bottom: 0px;
     transition: 0.25s;
     scroll-snap-align: start;
-    scroll-margin-left: 130px;
+    scroll-margin-left: 90px;
 }
 .tv-poster{
     width: 100%;
@@ -267,7 +267,7 @@
     margin-bottom: 0px;
 
     scroll-snap-align: start;
-    scroll-margin-left: 300px;
+    scroll-margin-left: 90px;
 }
 .book-cover{
     width: 100%;
@@ -385,7 +385,7 @@
     margin-bottom: 0px;
 
     scroll-snap-align: start;
-    scroll-margin-left: 300px;
+    scroll-margin-left: 90px;
 }
 .podcast-cover{
     width: 100%;
