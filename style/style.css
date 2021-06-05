@@ -674,7 +674,7 @@ gradients
     @media screen and (prefers-color-scheme: light) {
 
         .title-box{
-            background: rgba(229, 229, 234, 0.9);
+            background: rgba(229, 229, 234, 0.8);
         }
         .sidebar{
             background: rgba(229, 229, 234, 1);
