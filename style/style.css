@@ -93,23 +93,7 @@ body{
     background-color: transparent;
 }
 
-.menu-title-box{
-    display: flex;
-    padding-top: 0px;
-    padding-bottom: 15px;
-    height: 100px;
-    width: 100%;
 
-    margin-bottom: 10px;
-
-
-    width: 100vw;
-
-    overflow: hidden;
-    box-sizing: border-box;
-
-    position: relative;
-}
 
 .sidebar{
     height: 100%;
@@ -155,11 +139,6 @@ body{
 .menu-item-icon{
     height: 18px;
     width: 18px;
-}
-.menu-item-label{
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 500;
 }
 .menu-item:hover{
     fill: #fff;
@@ -673,7 +652,7 @@ gradients
         align-content: center;
         width: 100%;
         height: 25vw;
-        padding: 0px 0px 5vw;
+        padding: 0px 2.5vw 5vw;
         position: fixed;
         z-index: 100;
         top: auto;
