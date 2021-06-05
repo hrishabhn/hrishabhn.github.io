@@ -241,6 +241,7 @@
     position: relative;
     left: 0px;
     bottom: 100%;
+    cursor: default;
 
     height: 100%;
     width: 100%;
