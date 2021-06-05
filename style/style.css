@@ -489,6 +489,15 @@ gradients
 .outlook{
     background:linear-gradient(to bottom right,#0271C7,#01467a);
 }
+.outlook-blue{
+    background:linear-gradient(to bottom right,#7040FF,#4e2db3);
+}
+.outlook-red{
+    background:linear-gradient(to bottom right,#DC3B1B,#8f2611);
+
+}
+
+
 .onedrive{
     background:linear-gradient(to bottom right,#094AB2,#052A66);
 }
