@@ -680,7 +680,7 @@ var app_M08 = hide;
 var app_M09 = hide;
 var app_M10 = hide;
 
-// Netflix
+// Retro
 var app_M01 = [
   "indigo-gradient",
   "Retro",
