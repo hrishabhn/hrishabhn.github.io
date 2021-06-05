@@ -581,6 +581,8 @@
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
 }
 
 
@@ -1207,6 +1209,8 @@
     }
     .tv-page-button-container{
         border-radius: 20px;
+        scroll-snap-align: start;
+        scroll-margin-left: 20px;
         /* margin-right: 20px; */
     }
     .tv-page-icon{
