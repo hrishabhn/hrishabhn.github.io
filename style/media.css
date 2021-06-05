@@ -53,21 +53,6 @@
 
 
 
-
-.media-subtitle-box{
-    padding-top: 5px;
-    padding-bottom: 8px;
-    margin: 0;
-    width: 100%;
-    background: transparent;
-}
-.media-subtitle-text{
-    font-weight: 500;
-    font-size: 16px;
-    color: #fff;
-    background-color: transparent;
-}
-
 /* 
 .scrolling-wrapper{
     width: 100vw;
@@ -266,44 +251,6 @@
 
 
 
-/* .tv-link{
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    align-items: center;
-    display: flex;
-    padding-left: 20px;
-    text-decoration: none;
-    color: white !important;
-    font-size: 8px;
-    font-weight: 500;
-    transition: 0.25s;
-    z-index: 1;
-    overflow: hidden;
-} */
-/* .tv-service{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    align-items: center;
-    display: flex;
-    padding-left: 20px;
-    text-decoration: none;
-    color: white !important;
-    font-size: 10px;
-    font-weight: 600;
-    transition: 0.25s;
-
-} */
-
-/* .tv-link:hover{
-    background-color: rgba(0, 0, 0, 0.3);
-    transition: 0.25s;
-
-} */
 
 
 
@@ -422,28 +369,6 @@
 
 
 
-
-
-
-/* .book-link{
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    align-items: center;
-    display: flex;
-    padding-left: 20px;
-    text-decoration: none;
-    color: white !important;
-    transition: 0.25s;
-    z-index: 1;
-} */
-
-/* .book-link:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: 0.25s;
-} */
 
 
 
@@ -1028,7 +953,7 @@
 
 
 
-@media(max-width: 1200px){
+/* @media(max-width: 1200px){
     .tv-card{
         scroll-margin-left: 84px;
     }
@@ -1051,7 +976,7 @@
     }
     .tv-page-title{
         left: 104px;
-        /* max-height: 125px; */
+
     }
     .tv-page-description{
         left: 104px;
@@ -1062,7 +987,7 @@
     }
 
 
-}
+} */
 
 
 
@@ -1078,27 +1003,15 @@
 
 
 
-    .media-subtitle-box{
-        padding: 0px 0 10px 20px;
-
-        box-sizing: border-box;
-
-
-        width: 100%;
-    }
-    .media-subtitle-text{
-        font-weight: 600;
-        font-size: 20px;
-    }
 
     .tv-card{
-        scroll-margin-left: 20px;
+        scroll-margin-left: 5vw;
     }
     .podcast-card{
-        scroll-margin-left: 20px;
+        scroll-margin-left: 5vw;
     }
     .book-card{
-        scroll-margin-left: 20px;
+        scroll-margin-left: 5vw;
     }
 
 
