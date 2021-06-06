@@ -600,7 +600,7 @@ gradients
         padding-bottom: 10px;
         height: 110px;
         /* -webkit-backdrop-filter: blur(20px); */
-        background: rgba(28, 28, 30, 0.8);
+        /* background: rgba(28, 28, 30, 0.8); */
     }
 
 
@@ -633,7 +633,7 @@ gradients
         z-index: 100;
         top: auto;
         bottom: 0px;
-        background-color: rgba(28, 28, 30, 1);
+        /* background-color: rgba(28, 28, 30, 1); */
         /* -webkit-backdrop-filter: blur(200px); */
         /* border-top-left-radius: 5vw;
         border-top-right-radius: 5vw; */
@@ -679,7 +679,7 @@ gradients
         scroll-margin-left: 5vw;
     }
 
-    @media screen and (prefers-color-scheme: light) {
+    /* @media screen and (prefers-color-scheme: light) {
 
         .title-box{
             background: rgba(229, 229, 234, 0.8);
@@ -687,5 +687,5 @@ gradients
         .sidebar{
             background: rgba(229, 229, 234, 1);
         }
-    }
+    } */
 }
