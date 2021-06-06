@@ -126,11 +126,6 @@ var show11 = [
   "https://www.imdb.com/title/tt0944947"
 ]
 
-
-
-
-
-
 //Spy
 var show12 = [
   "spy-solid",
