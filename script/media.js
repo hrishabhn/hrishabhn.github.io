@@ -231,8 +231,35 @@ var show18 = [
   "https://www.imdb.com/title/tt12809988"
 ]
 
+// Startup
+var show19 = [
+  "startup-solid",
+  "startup-poster",
+  "startup-gradient",
+  "startup-title",
+  "Drama • Crime • 3 Seasons • 2016 - 2019",
+  "https://www.netflix.com/title/80154285",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/310614",
+  "https://reelgood.com/show/startup-2016",
+  "https://www.imdb.com/title/tt5028002"
+]
 
-
+// Lego masters
+var show20 = [
+  "lego-solid",
+  "lego-poster",
+  "lego-gradient",
+  "lego-title",
+  "Family • 2 Seasons • 2020 - Present",
+  "https://www.hulu.com/series/lego-masters-fd4ada37-965a-4f86-9ea4-0b214f3e6d7e",
+  "hulu-green",
+  "Watch on Hulu",
+  "https://www.tvtime.com/en/show/370166",
+  "https://reelgood.com/show/lego-masters-2020",
+  "https://www.imdb.com/title/tt9615014"
+]
 
 
 
@@ -242,8 +269,8 @@ var show18 = [
 // var show16 = hide
 // var show17 = hide
 // var show18 = hide
-var show19 = hide
-var show20 = hide
+// var show19 = hide
+// var show20 = hide
 
 
 
