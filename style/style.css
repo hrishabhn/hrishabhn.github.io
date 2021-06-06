@@ -269,6 +269,9 @@ body{
     transition: 0.25s;
 
     background: #1c1c1e33;
+    /* -webkit-backdrop-filter: blur(100px); */
+
+
 }
 .app-icon{
     fill: #fff;

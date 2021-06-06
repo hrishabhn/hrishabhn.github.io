@@ -14,7 +14,7 @@ var hide = [
 
 //Always sunny
 var show1 = [
-  " always-solid",
+  "always-solid",
   "always-poster",
   "always-gradient",
   "always-title",
@@ -24,7 +24,8 @@ var show1 = [
   "Watch on Hulu",
   "https://www.tvtime.com/en/show/75805",
   "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
-  "https://www.imdb.com/title/tt0472954"
+  "https://www.imdb.com/title/tt0472954",
+  "It's Always Sunny in Philadelphia It's Always Sunny in Philadelphia It's Always Sunny in Philadelphia",
 ]
 
 //Kim's Convenience
@@ -39,7 +40,8 @@ var show2 = [
   "Watch on Netflix",
   "https://www.tvtime.com/en/show/315908",
   "https://reelgood.com/show/kims-convenience-2016",
-  "https://www.imdb.com/title/tt5912064"
+  "https://www.imdb.com/title/tt5912064",
+  "Kim's Convenience",
 ]
 
 //Twin peaks
@@ -233,7 +235,7 @@ var show18 = [
 
 
 
-// var show14 = hide
+// var show11 = hide
 // var show15 = hide
 // var show16 = hide
 // var show17 = hide
@@ -395,6 +397,7 @@ var pod8 = [
   var showTVtime = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showReelgood = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showIMDB = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var showTitleText = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 
 
@@ -412,6 +415,7 @@ var pod8 = [
        showTVtime[k] = show1[8];
      showReelgood[k] = show1[9];
          showIMDB[k] = show1[10];
+    showTitleText[k] = show1[11];
   k = 2;
         showSolid[k] = show2[0];
        showPoster[k] = show2[1];
@@ -424,6 +428,7 @@ var pod8 = [
        showTVtime[k] = show2[8];
      showReelgood[k] = show2[9];
          showIMDB[k] = show2[10];
+    showTitleText[k] = show2[11];
   k = 3;
         showSolid[k] = show3[0];
        showPoster[k] = show3[1];
@@ -709,10 +714,10 @@ function homeTVPopulate(){
 
 
 function mediaTVPopulate(){
-  var cardClass = "tv-card ";
-  var posterClass = "tv-poster ";
-  var gradientClass = "tv-gradient ";
-  var titleClass = "tv-title ";
+  var cardClass = "tv-media-card ";
+  var posterClass = "tv-media-poster ";
+  var gradientClass = "tv-media-gradient ";
+  var titleClass = "tv-media-title ";
   var showPage = "TV/pages/tv-page-";
   var linkEnd = ".html"
 
@@ -733,9 +738,11 @@ function mediaTVPopulate(){
     document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
     document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
     document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
-    document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);                  //showLink[i];
+    document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);
+
     // document.getElementById(itemid[6]).innerHTML =                       showService[i];
-    //document.getElementById(itemid[7]).href =                        showPage.concat(i);
+    // document.getElementById(itemid[7]).href =                        showPage.concat(i);
+    // document.getElementById(itemid[8]).innerHTML =                   showDescription[i];
 
 
 
