@@ -137,6 +137,10 @@ body{
 
 
 }
+.sidebar-blur{
+    background-color: rgba(28, 28, 30, 0.25);
+}
+
 .menu-item-container{
     display: inline-flex;
     justify-content: center;
@@ -546,6 +550,9 @@ gradients
     }
     .sidebar{
         background-color: rgba(229, 229, 234, 1);
+    }
+    .sidebar-blur{
+        background-color: rgba(229, 229, 234, 0.25);
     }
     .title-box{
         background: rgba(229, 229, 234, 0.8);
