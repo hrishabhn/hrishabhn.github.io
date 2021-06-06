@@ -430,7 +430,7 @@
     width: 100vw;
     border-radius: 0px;
 
-    padding-left: 260px;
+    padding-left: 70px;
     box-sizing: border-box;
 
     position: relative;
@@ -462,9 +462,9 @@
     background-repeat: no-repeat;
     position: absolute;
     bottom: 180px;
-    left: 300px;
-    max-height: 300px;
-    max-width: 800px;
+    left: 100px;
+    max-height: 40vh;
+    max-width: 50vw;
     height: 1000px !important;
     width: 3000px !important;
     background-position: 0 100%;
@@ -476,7 +476,7 @@
     font-weight: 500;
     color: #fff;
     position: absolute;
-    left: 300px;
+    left: 100px;
     bottom: 130px;
 
     width: auto;
@@ -491,7 +491,7 @@
     position: absolute;
     box-sizing: border-box;
 
-    padding-left: 300px;
+    padding-left: 100px;
     padding-bottom: 40px;
     padding-top: 40px;
     left: 0px;
@@ -506,7 +506,6 @@
     overflow-y: hidden;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
-
 }
 
 
