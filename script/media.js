@@ -111,10 +111,23 @@ var show8 = hide
 var show9 = hide
 var show10 = hide
 
-
+//Human
+var show11 = [
+  "human-solid",
+  "human-poster",
+  "human-gradient",
+  "human-title",
+  "Documentary • 1 Season • 2021 - Present",
+  "https://www.netflix.com/title/81139212",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/402219",
+  "https://reelgood.com/show/human-the-world-within-2021",
+  "https://www.imdb.com/title/tt14574154"
+]
 
 //Game of thrones
-var show11 = [
+var show12 = [
   "gameofthrones-solid",
   "gameofthrones-poster",
   "gameofthrones-gradient",
@@ -129,7 +142,7 @@ var show11 = [
 ]
 
 //Spy
-var show12 = [
+var show13 = [
   "spy-solid",
   "spy-poster",
   "spy-gradient",
@@ -144,7 +157,7 @@ var show12 = [
 ]
 
 //Chernobyl
-var show13 = [
+var show14 = [
   "chernobyl-solid",
   "chernobyl-poster",
   "chernobyl-gradient",
@@ -159,7 +172,7 @@ var show13 = [
 ]
 
 //Line of duty 
-var show14 = [
+var show15 = [
   "lineofduty-solid",
   "lineofduty-poster",
   "lineofduty-gradient",
@@ -174,7 +187,7 @@ var show14 = [
 ]
 
 //Mindhunter
-var show15 = [
+var show16 = [
   "mindhunter-solid",
   "mindhunter-poster",
   "mindhunter-gradient",
@@ -186,21 +199,6 @@ var show15 = [
   "https://www.tvtime.com/en/show/328708",
   "https://reelgood.com/show/mindhunter-2017",
   "https://www.imdb.com/title/tt5290382"
-]
-
-//For all mankind
-var show16 = [
-  "mankind-solid",
-  "mankind-poster",
-  "mankind-gradient",
-  "mankind-title",
-  "Sci-Fi • 2 Seasons • 2019 - Present",
-  "https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
-  "black-gradient",
-  "Watch on  TV+",
-  "https://www.tvtime.com/en/show/356202",
-  "https://reelgood.com/show/for-all-mankind-2019",
-  "https://www.imdb.com/title/tt7772588"
 ]
 
 //Drive to survive
@@ -218,20 +216,24 @@ var show17 = [
   "https://www.imdb.com/title/tt8289930"
 ]
 
-//Grand tour
-var show18 = [
-  "grandTour-solid",
-  "grandTour-poster",
-  "grandTour-gradient",
-  "grandTour-title",
-  "Comedy •  4 Seasons • 2016 - Present",
-  "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-  "prime",
-  "Watch on Prime Video",
-  "https://www.tvtime.com/en/show/314087",
-  "https://reelgood.com/show/the-grand-tour-2016",
-  "https://www.imdb.com/title/tt5712554"
+//Sweet tooth
+var show11 = [
+  "sweet-solid",
+  "sweet-poster",
+  "sweet-gradient",
+  "sweet-title",
+  "Action & Adventure • 1 Season • 2021 - Present",
+  "https://www.netflix.com/title/81221380",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/355837",
+  "https://reelgood.com/show/sweet-tooth-2021",
+  "https://www.imdb.com/title/tt12809988"
 ]
+
+
+
+
 
 
 
@@ -272,7 +274,7 @@ var show20 = hide
 //   "https://www.imdb.com/title/tt13607518"
 // ]
 
-// var show1 = [
+// var show = [
 //   "snowfall-solid",
 //   "snowfall-poster",
 //   "snowfall-gradient",
@@ -286,7 +288,33 @@ var show20 = hide
 //   "https://www.imdb.com/title/tt6439752"
 // ]
 
+// var show = [
+//   "mankind-solid",
+//   "mankind-poster",
+//   "mankind-gradient",
+//   "mankind-title",
+//   "Sci-Fi • 2 Seasons • 2019 - Present",
+//   "https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
+//   "black-gradient",
+//   "Watch on  TV+",
+//   "https://www.tvtime.com/en/show/356202",
+//   "https://reelgood.com/show/for-all-mankind-2019",
+//   "https://www.imdb.com/title/tt7772588"
+// ]
 
+// var show = [
+//   "grandTour-solid",
+//   "grandTour-poster",
+//   "grandTour-gradient",
+//   "grandTour-title",
+//   "Comedy •  4 Seasons • 2016 - Present",
+//   "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+//   "prime",
+//   "Watch on Prime Video",
+//   "https://www.tvtime.com/en/show/314087",
+//   "https://reelgood.com/show/the-grand-tour-2016",
+//   "https://www.imdb.com/title/tt5712554"
+// ]
 
 
 

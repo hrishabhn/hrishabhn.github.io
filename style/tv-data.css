@@ -304,6 +304,31 @@
     background-image: url('../TV/title/gameofthrones.svg');
 }
 
+.human-solid{
+    background-color: #445359;
+}
+.human-gradient{
+    background: linear-gradient(#00000000,#445359);
+}
+.human-poster{
+    background-image: url('../TV/background/human.webp');
+}
+.human-title{
+    background-image: url('../TV/title/human.png');
+}
+
+.sweet-solid{
+    background-color: #4b4832;
+}
+.sweet-gradient{
+    background: linear-gradient(#00000000,#4b4832);
+}
+.sweet-poster{
+    background-image: url('../TV/background/sweet.jpg');
+}
+.sweet-title{
+    background-image: url('../TV/title/sweet.png');
+}
 
 
 
