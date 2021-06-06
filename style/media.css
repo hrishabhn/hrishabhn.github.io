@@ -784,6 +784,7 @@
         overflow: scroll;
         /* border-top-left-radius: 30px; */
         /* border-top-right-radius: 30px; */
+        /* background: none !important; */
 
     }
     .tv-page-poster{
@@ -793,7 +794,7 @@
 
         border-radius: 30px;
         /* border-top-right-radius: inherit; */
-        margin-top: 50px;
+        margin-top: 15vw;
         margin-left: 5vw;
 
         box-shadow: 0 0 30px #00000066;
@@ -812,11 +813,11 @@
     }
     .tv-page-title{
         background-size: contain;
-        background-position: bottom;
+        background-position: top;
         background-repeat: no-repeat;
         background-position-x: center;
         position: absolute;
-        top: 120vw;
+        top: 75vw;
         left: 10vw;
         display: flex;
         max-width: 80vw;
