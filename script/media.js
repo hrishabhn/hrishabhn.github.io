@@ -111,13 +111,28 @@ var show10 = hide
 
 
 
+//Game of thrones
+var show11 = [
+  "gameofthrones-solid",
+  "gameofthrones-poster",
+  "gameofthrones-gradient",
+  "gameofthrones-title",
+  "Fantasy • 8 Seasons • 2011 - 2019",
+  "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
+  "hbo",
+  "Watch on HBO Max",
+  "https://www.tvtime.com/en/show/121361",
+  "https://reelgood.com/show/game-of-thrones-2011",
+  "https://www.imdb.com/title/tt0944947"
+]
+
 
 
 
 
 
 //Spy
-var show11 = [
+var show12 = [
   "spy-solid",
   "spy-poster",
   "spy-gradient",
@@ -132,7 +147,7 @@ var show11 = [
 ]
 
 //Chernobyl
-var show12 = [
+var show13 = [
   "chernobyl-solid",
   "chernobyl-poster",
   "chernobyl-gradient",
@@ -147,7 +162,7 @@ var show12 = [
 ]
 
 //Line of duty 
-var show13 = [
+var show14 = [
   "lineofduty-solid",
   "lineofduty-poster",
   "lineofduty-gradient",
@@ -162,7 +177,7 @@ var show13 = [
 ]
 
 //Mindhunter
-var show14 = [
+var show15 = [
   "mindhunter-solid",
   "mindhunter-poster",
   "mindhunter-gradient",
@@ -177,7 +192,7 @@ var show14 = [
 ]
 
 //For all mankind
-var show15 = [
+var show16 = [
   "mankind-solid",
   "mankind-poster",
   "mankind-gradient",
@@ -192,7 +207,7 @@ var show15 = [
 ]
 
 //Drive to survive
-var show16 = [
+var show17 = [
   "drive-solid",
   "drive-poster",
   "drive-gradient",
@@ -207,7 +222,7 @@ var show16 = [
 ]
 
 //Grand tour
-var show17 = [
+var show18 = [
   "grandTour-solid",
   "grandTour-poster",
   "grandTour-gradient",
@@ -221,17 +236,13 @@ var show17 = [
   "https://www.imdb.com/title/tt5712554"
 ]
 
-//Schulz 
-
-
-
 
 
 // var show14 = hide
 // var show15 = hide
 // var show16 = hide
 // var show17 = hide
-var show18 = hide
+// var show18 = hide
 var show19 = hide
 var show20 = hide
 
