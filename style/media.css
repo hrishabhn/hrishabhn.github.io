@@ -782,7 +782,7 @@
         bottom: 0px;
     
         width: 100%;
-        height: 75%;
+        height: 50%;
     }
     .tv-page-title{
         background-size: contain;
@@ -851,7 +851,7 @@
         padding-bottom: 30px;
 
 
-        height: 120px;
+        height: 115px;
 
         top: 175vw;
         
@@ -863,7 +863,7 @@
         /* margin-right: 20px; */
     }
     .tv-page-icon{
-        top: 23px;
+        top: 21.5px;
         height: 14px;
         width: 14px;
     }
