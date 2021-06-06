@@ -291,7 +291,18 @@
     background-image: url('../TV/title/line.png');
 }
 
-
+.gameofthrones-solid{
+    background-color: #4e3e46;
+}
+.gameofthrones-gradient{
+    background: linear-gradient(#00000000,#4e3e46);
+}
+.gameofthrones-poster{
+    background-image: url('../TV/background/gameofthrones.jpg');
+}
+.gameofthrones-title{
+    background-image: url('../TV/title/gameofthrones.svg');
+}
 
 
 
