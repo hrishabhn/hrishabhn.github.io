@@ -10,23 +10,10 @@ var hide = [
 
 
 
-//Snowfall
-var show1 = [
-  "snowfall-solid",
-  "snowfall-poster",
-  "snowfall-gradient",
-  "snowfall-title",
-  "Crime • 4 Seasons • 2018 - Present",
-  "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
-  "hulu-green",
-  "Watch on Hulu",
-  "https://www.tvtime.com/en/show/328092",
-  "https://reelgood.com/show/snowfall-2017",
-  "https://www.imdb.com/title/tt6439752"
-]
+
 
 //Always sunny
-var show2 = [
+var show1 = [
   " always-solid",
   "always-poster",
   "always-gradient",
@@ -41,7 +28,7 @@ var show2 = [
 ]
 
 //Kim's Convenience
-var show3 = [
+var show2 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",
@@ -56,7 +43,7 @@ var show3 = [
 ]
 
 //Twin peaks
-var show4 = [
+var show3 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
@@ -71,7 +58,7 @@ var show4 = [
 ]
 
 //Atlanta
-var show5 = [
+var show4 = [
   "atlanta-solid",
   "atlanta-poster",
   "atlanta-gradient",
@@ -85,15 +72,8 @@ var show5 = [
   "https://www.imdb.com/title/tt4288182"
 ]
 
-var show6 = hide
-var show7 = hide
-var show8 = hide
-var show9 = hide
-var show10 = hide
-
-
 //Legion
-var show11 = [
+var show5 = [
   "legion-solid",
   "legion-poster",
   "legion-gradient",
@@ -108,7 +88,7 @@ var show11 = [
 ]
 
 //Mythic quest
-var show12 = [
+var show6 = [
   "mythic-solid",
   "mythic-poster",
   "mythic-gradient",
@@ -120,6 +100,50 @@ var show12 = [
   "https://www.tvtime.com/en/show/362829",
   "https://reelgood.com/show/mythic-quest-2020",
   "https://www.imdb.com/title/tt8879940"
+]
+
+// var show5 = hide
+// var show6 = hide
+var show7 = hide
+var show8 = hide
+var show9 = hide
+var show10 = hide
+
+
+
+
+
+
+
+
+//Spy
+var show11 = [
+  "spy-solid",
+  "spy-poster",
+  "spy-gradient",
+  "spy-title",
+  "Drama • 1 Season • 2019",
+  "https://www.netflix.com/title/80178151",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/368109",
+  "https://reelgood.com/show/the-spy-2019",
+  "https://www.imdb.com/title/tt5952634"
+]
+
+//Chernobyl
+var show12 = [
+  "chernobyl-solid",
+  "chernobyl-poster",
+  "chernobyl-gradient",
+  "chernobyl-title",
+  "Thriller • 1 Season • 2019",
+  "",
+  "hbo",
+  "Watch on HBO Max",
+  "https://www.tvtime.com/en/show/360893",
+  "https://reelgood.com/show/chernobyl-2019",
+  "https://www.imdb.com/title/tt7366338"
 ]
 
 //Line of duty 
@@ -137,38 +161,8 @@ var show13 = [
   "https://www.imdb.com/title/tt2303687"
 ]
 
-//Spy
-var show14 = [
-  "spy-solid",
-  "spy-poster",
-  "spy-gradient",
-  "spy-title",
-  "Drama • 1 Season • 2019",
-  "https://www.netflix.com/title/80178151",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/368109",
-  "https://reelgood.com/show/the-spy-2019",
-  "https://www.imdb.com/title/tt5952634"
-]
-
-//Chernobyl
-var show15 = [
-  "chernobyl-solid",
-  "chernobyl-poster",
-  "chernobyl-gradient",
-  "chernobyl-title",
-  "Thriller • 1 Season • 2019",
-  "",
-  "hbo",
-  "Watch on HBO Max",
-  "https://www.tvtime.com/en/show/360893",
-  "https://reelgood.com/show/chernobyl-2019",
-  "https://www.imdb.com/title/tt7366338"
-]
-
 //Mindhunter
-var show16 = [
+var show14 = [
   "mindhunter-solid",
   "mindhunter-poster",
   "mindhunter-gradient",
@@ -183,7 +177,7 @@ var show16 = [
 ]
 
 //For all mankind
-var show17 = [
+var show15 = [
   "mankind-solid",
   "mankind-poster",
   "mankind-gradient",
@@ -198,7 +192,7 @@ var show17 = [
 ]
 
 //Drive to survive
-var show18 = [
+var show16 = [
   "drive-solid",
   "drive-poster",
   "drive-gradient",
@@ -213,7 +207,7 @@ var show18 = [
 ]
 
 //Grand tour
-var show19 = [
+var show17 = [
   "grandTour-solid",
   "grandTour-poster",
   "grandTour-gradient",
@@ -228,19 +222,7 @@ var show19 = [
 ]
 
 //Schulz 
-var show20 = [
-  "schulz-solid",
-  "schulz-poster",
-  "schulz-gradient",
-  "schulz-title",
-  "Comedy Special • 1 Season • 2020",
-  "https://www.netflix.com/title/81383020",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/393181",
-  "https://reelgood.com/show/schulz-saves-america-pandemics-predators-protests-presidents-2020",
-  "https://www.imdb.com/title/tt13607518"
-]
+
 
 
 
@@ -249,9 +231,9 @@ var show20 = [
 // var show15 = hide
 // var show16 = hide
 // var show17 = hide
-// var show18 = hide
-// var show19 = hide
-// var show20 = hide
+var show18 = hide
+var show19 = hide
+var show20 = hide
 
 
 
@@ -267,6 +249,43 @@ var show20 = [
 //   "https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50",
 //   "Watch on Hulu"
 // ]
+
+// var show = [
+//   "schulz-solid",
+//   "schulz-poster",
+//   "schulz-gradient",
+//   "schulz-title",
+//   "Comedy Special • 1 Season • 2020",
+//   "https://www.netflix.com/title/81383020",
+//   "netflix",
+//   "Watch on Netflix",
+//   "https://www.tvtime.com/en/show/393181",
+//   "https://reelgood.com/show/schulz-saves-america-pandemics-predators-protests-presidents-2020",
+//   "https://www.imdb.com/title/tt13607518"
+// ]
+
+// var show1 = [
+//   "snowfall-solid",
+//   "snowfall-poster",
+//   "snowfall-gradient",
+//   "snowfall-title",
+//   "Crime • 4 Seasons • 2018 - Present",
+//   "https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6",
+//   "hulu-green",
+//   "Watch on Hulu",
+//   "https://www.tvtime.com/en/show/328092",
+//   "https://reelgood.com/show/snowfall-2017",
+//   "https://www.imdb.com/title/tt6439752"
+// ]
+
+
+
+
+
+
+
+
+
 
 // BOOKS //
 var book_1 = [
