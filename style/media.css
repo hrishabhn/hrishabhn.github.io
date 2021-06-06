@@ -791,19 +791,19 @@
         min-height: 200px;
         height: 50.625vw;
 
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
+        border-radius: 30px;
+        /* border-top-right-radius: inherit; */
         margin-top: 50px;
         margin-left: 5vw;
 
-
+        box-shadow: 0 0 30px #00000066;
 
         background-repeat: no-repeat;
         display: block;
         position: relative;
     }
     .tv-page-gradient{
-        display: block;
+        display: none;
         position: absolute;
         bottom: 0px;
     
