@@ -104,9 +104,24 @@ var show6 = [
   "https://www.imdb.com/title/tt8879940"
 ]
 
+// Last week tonight
+var show7 = [
+  "last-solid",
+  "last-poster",
+  "last-gradient",
+  "last-title",
+  "Talk Show • 8 Seasons • 2020 - Present",
+  "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
+  "hbo",
+  "Watch on HBO Max",
+  "https://www.tvtime.com/en/show/278518",
+  "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
+  "https://www.imdb.com/title/tt3530232"
+]
+
 // var show5 = hide
 // var show6 = hide
-var show7 = hide
+// var show7 = hide
 var show8 = hide
 var show9 = hide
 var show10 = hide
@@ -201,6 +216,21 @@ var show16 = [
   "https://www.imdb.com/title/tt0944947"
 ]
 
+// Startup
+var show17 = [
+  "startup-solid",
+  "startup-poster",
+  "startup-gradient",
+  "startup-title",
+  "Drama • Crime • 3 Seasons • 2016 - 2019",
+  "https://www.netflix.com/title/80154285",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/310614",
+  "https://reelgood.com/show/startup-2016",
+  "https://www.imdb.com/title/tt5028002"
+]
+
 //Drive to survive
 var show18 = [
   "drive-solid",
@@ -229,21 +259,6 @@ var show19 = [
   "https://www.tvtime.com/en/show/355837",
   "https://reelgood.com/show/sweet-tooth-2021",
   "https://www.imdb.com/title/tt12809988"
-]
-
-// Startup
-var show17 = [
-  "startup-solid",
-  "startup-poster",
-  "startup-gradient",
-  "startup-title",
-  "Drama • Crime • 3 Seasons • 2016 - 2019",
-  "https://www.netflix.com/title/80154285",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/310614",
-  "https://reelgood.com/show/startup-2016",
-  "https://www.imdb.com/title/tt5028002"
 ]
 
 // Lego masters

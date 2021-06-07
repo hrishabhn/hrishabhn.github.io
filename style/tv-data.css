@@ -344,16 +344,29 @@
 }
 
 .lego-solid{
-    background-color: #F3C90A;
+    background-color: #EEC60A;
 }
 .lego-gradient{
-    background: linear-gradient(#00000000,#F3C90A);
+    background: linear-gradient(#00000000,#EEC60A);
 }
 .lego-poster{
     background-image: url('../TV/background/lego.webp');
 }
 .lego-title{
     background-image: url('../TV/title/lego.png');
+}
+
+.last-solid{
+    background-color: #a8adb3;
+}
+.last-gradient{
+    background: linear-gradient(#00000000,#a8adb3);
+}
+.last-poster{
+    background-image: url('../TV/background/last.webp');
+}
+.last-title{
+    background-image: url('../TV/title/last.svg');
 }
 
 
