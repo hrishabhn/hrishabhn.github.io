@@ -528,6 +528,9 @@ gradients
 .messenger{
     background:linear-gradient(to bottom right,#0084ff,#005cb3);
 }
+.apple-gradient{
+    background:linear-gradient(to bottom right,#A2AAAD,#5b5f61);
+}
 
 
 /* MEDIA */
