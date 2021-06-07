@@ -126,23 +126,8 @@ var show11 = [
   "https://www.imdb.com/title/tt14574154"
 ]
 
-//Game of thrones
-var show12 = [
-  "gameofthrones-solid",
-  "gameofthrones-poster",
-  "gameofthrones-gradient",
-  "gameofthrones-title",
-  "Fantasy • 8 Seasons • 2011 - 2019",
-  "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
-  "hbo",
-  "Watch on HBO Max",
-  "https://www.tvtime.com/en/show/121361",
-  "https://reelgood.com/show/game-of-thrones-2011",
-  "https://www.imdb.com/title/tt0944947"
-]
-
 //Spy
-var show13 = [
+var show12 = [
   "spy-solid",
   "spy-poster",
   "spy-gradient",
@@ -157,7 +142,7 @@ var show13 = [
 ]
 
 //Chernobyl
-var show14 = [
+var show13 = [
   "chernobyl-solid",
   "chernobyl-poster",
   "chernobyl-gradient",
@@ -169,6 +154,21 @@ var show14 = [
   "https://www.tvtime.com/en/show/360893",
   "https://reelgood.com/show/chernobyl-2019",
   "https://www.imdb.com/title/tt7366338"
+]
+
+//Mindhunter
+var show14 = [
+  "mindhunter-solid",
+  "mindhunter-poster",
+  "mindhunter-gradient",
+  "mindhunter-title",
+  "Crime • 2 Seasons • 2017 - 2019",
+  "https://www.netflix.com/title/80114855",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/328708",
+  "https://reelgood.com/show/mindhunter-2017",
+  "https://www.imdb.com/title/tt5290382"
 ]
 
 //Line of duty 
@@ -186,23 +186,23 @@ var show15 = [
   "https://www.imdb.com/title/tt2303687"
 ]
 
-//Mindhunter
+//Game of thrones
 var show16 = [
-  "mindhunter-solid",
-  "mindhunter-poster",
-  "mindhunter-gradient",
-  "mindhunter-title",
-  "Crime • 2 Seasons • 2017 - 2019",
-  "https://www.netflix.com/title/80114855",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/328708",
-  "https://reelgood.com/show/mindhunter-2017",
-  "https://www.imdb.com/title/tt5290382"
+  "gameofthrones-solid",
+  "gameofthrones-poster",
+  "gameofthrones-gradient",
+  "gameofthrones-title",
+  "Fantasy • 8 Seasons • 2011 - 2019",
+  "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
+  "hbo",
+  "Watch on HBO Max",
+  "https://www.tvtime.com/en/show/121361",
+  "https://reelgood.com/show/game-of-thrones-2011",
+  "https://www.imdb.com/title/tt0944947"
 ]
 
 //Drive to survive
-var show17 = [
+var show18 = [
   "drive-solid",
   "drive-poster",
   "drive-gradient",
@@ -217,7 +217,7 @@ var show17 = [
 ]
 
 //Sweet tooth
-var show18 = [
+var show19 = [
   "sweet-solid",
   "sweet-poster",
   "sweet-gradient",
@@ -232,7 +232,7 @@ var show18 = [
 ]
 
 // Startup
-var show19 = [
+var show17 = [
   "startup-solid",
   "startup-poster",
   "startup-gradient",
