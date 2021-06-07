@@ -304,7 +304,7 @@ body{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    cursor: default;
+    cursor: pointer;
 
     top: 0px;
     left: 0px;
