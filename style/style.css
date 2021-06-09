@@ -534,6 +534,9 @@ gradients
 .ivytech{
     background:linear-gradient(to bottom right,#006648,#00b37d);
 }
+.canvas{
+    background:linear-gradient(to bottom right,#e43d30,#b02e25);
+}
 
 
 /* MEDIA */
