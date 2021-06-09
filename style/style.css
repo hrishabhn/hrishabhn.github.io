@@ -531,6 +531,9 @@ gradients
 .apple-gradient{
     background:linear-gradient(to bottom right,#A2AAAD,#5b5f61);
 }
+.ivytech{
+    background:linear-gradient(to bottom right,#006648,#00b37d);
+}
 
 
 /* MEDIA */
