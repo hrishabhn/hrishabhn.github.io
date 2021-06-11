@@ -262,19 +262,21 @@ var show19 = [
 ]
 
 // Lego masters
-var show20 = [
-  "lego-solid",
-  "lego-poster",
-  "lego-gradient",
-  "lego-title",
-  "Family • 2 Seasons • 2020 - Present",
+var show2 = [
+  "loki-solid",
+  "loki-poster",
+  "loki-gradient",
+  "loki-title",
+  "Action & Adventure • Fantasy • 1 Season • 2021 - Present",
   "https://www.hulu.com/series/lego-masters-fd4ada37-965a-4f86-9ea4-0b214f3e6d7e",
   "hulu-green",
   "Watch on Hulu",
-  "https://www.tvtime.com/en/show/370166",
-  "https://reelgood.com/show/lego-masters-2020",
-  "https://www.imdb.com/title/tt9615014"
+  "https://www.tvtime.com/en/show/362472",
+  "https://reelgood.com/show/loki-2021",
+  "https://www.imdb.com/title/tt9140554"
 ]
+
+
 
 
 
@@ -356,6 +358,20 @@ var show20 = [
 //   "https://www.tvtime.com/en/show/314087",
 //   "https://reelgood.com/show/the-grand-tour-2016",
 //   "https://www.imdb.com/title/tt5712554"
+// ]
+
+// var show = [
+//   "lego-solid",
+//   "lego-poster",
+//   "lego-gradient",
+//   "lego-title",
+//   "Family • 2 Seasons • 2020 - Present",
+//   "https://www.hulu.com/series/lego-masters-fd4ada37-965a-4f86-9ea4-0b214f3e6d7e",
+//   "hulu-green",
+//   "Watch on Hulu",
+//   "https://www.tvtime.com/en/show/370166",
+//   "https://reelgood.com/show/lego-masters-2020",
+//   "https://www.imdb.com/title/tt9615014"
 // ]
 
 

@@ -369,6 +369,19 @@
     background-image: url('../TV/title/last.svg');
 }
 
+.loki-solid{
+    background-color: #a87643;
+}
+.loki-gradient{
+    background: linear-gradient(#00000000,#a87643);
+}
+.loki-poster{
+    background-image: url('../TV/background/loki.webp');
+}
+.loki-title{
+    background-image: url('../TV/title/loki.png');
+}
+
 
 
 @media screen and (prefers-color-scheme: light) {
