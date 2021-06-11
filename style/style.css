@@ -63,7 +63,7 @@ body{
 .media-bar{
     background: rgba(217, 50, 41, 0.9);
 }
-.projects-bar{
+.work-bar{
     background: rgba(217, 174, 0, 0.9);
 }
 
@@ -79,7 +79,7 @@ body{
 .media-icon{
     fill: rgba(217, 50, 41, 0.9);
 }
-.projects-icon{
+.work-icon{
     fill: rgba(217, 174, 0, 0.9);
 }
 
@@ -95,7 +95,7 @@ body{
 .media-title{
     color: rgba(217, 50, 41, 0.9);
 }
-.projects-title{
+.work-title{
     color: rgba(217, 174, 0, 0.9);
 }
 

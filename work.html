@@ -4,7 +4,6 @@
 <head>
     <meta name='viewport' content='viewport-fit=cover, height=device-height, width=device-width, initial-scale=1.0'>
     <link rel="stylesheet" href="style/style.css">
-    <!-- <link rel="stylesheet" href="style/projects.css"> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
     <link rel="manifest" href="manifest.json">
@@ -20,14 +19,14 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <title>Dashboard</title>
+    <title>Work</title>
 
     <script src="date.js"></script>
     <script src="app.js"></script>
 
 </head>
 
-<body>
+<body onload="workAppPopulate()">
     <div class="sidebar">
         <div class="sidebar-menu">
             <!-- dashboard -->
@@ -86,10 +85,10 @@
 
                     </span>
                 </a>
-            </div><!-- projects -->
+            </div><!-- work -->
             <div class="menu-item-container">
-                <a class="menu-item selected" href="projects.html" target="_self">
-                    <span class="menu-item-icon">
+                <a class="menu-item selected" href="work.html" target="_self">
+                    <span class="menu-item-icon work-icon">
                         <svg data-bbox="0 42.679 408 322.642" viewBox="0 0 408 408" xmlns="http://www.w3.org/2000/svg"
                             data-type="shape">
                             <g>
@@ -105,24 +104,20 @@
         </div>
     </div>
     
-  
-
-
-
     <div class="main">
         <div class="title-box">
-            <p1 class="title-text bookmarks-title" id="day">Bookmarks</p1>
+            <p1 class="title-text work-title" id="day">Work</p1>
         </div>
 
         <script src="script/apps.js"></script>
 
         <div class="subtitle-box home-subtitle-box">
-            <p1 class="subtitle-text">Apps</p1>
+            <p1 class="subtitle-text">Pinned</p1>
         </div>
         <div class="scrolling-wrapper">
-            <!-- app_51 --><div id="appContainer_51" class="app-container">
-                <div id="appGradient_51" class="app-icon-container black-gradient">
-                    <div id="appIcon_51" class="app-icon">
+            <!-- app_401 --><div id="appContainer_401" class="app-container">
+                <div id="appGradient_401" class="app-icon-container black-gradient">
+                    <div id="appIcon_401" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -131,13 +126,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_51" class="app-text">
+                <div id="appName_401" class="app-text">
                     App
                 </div>
-                <a id="appLink_51" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_52 --><div id="appContainer_52" class="app-container">
-                <div id="appGradient_52" class="app-icon-container black-gradient">
-                    <div id="appIcon_52" class="app-icon">
+                <a id="appLink_401" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_402 --><div id="appContainer_402" class="app-container">
+                <div id="appGradient_402" class="app-icon-container black-gradient">
+                    <div id="appIcon_402" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -146,13 +141,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_52" class="app-text">
+                <div id="appName_402" class="app-text">
                     App
                 </div>
-                <a id="appLink_52" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_53 --><div id="appContainer_53" class="app-container">
-                <div id="appGradient_53" class="app-icon-container black-gradient">
-                    <div id="appIcon_53" class="app-icon">
+                <a id="appLink_402" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_403 --><div id="appContainer_403" class="app-container">
+                <div id="appGradient_403" class="app-icon-container black-gradient">
+                    <div id="appIcon_403" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -161,13 +156,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_53" class="app-text">
+                <div id="appName_403" class="app-text">
                     App
                 </div>
-                <a id="appLink_53" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_54 --><div id="appContainer_54" class="app-container">
-                <div id="appGradient_54" class="app-icon-container black-gradient">
-                    <div id="appIcon_54" class="app-icon">
+                <a id="appLink_403" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_404 --><div id="appContainer_404" class="app-container">
+                <div id="appGradient_404" class="app-icon-container black-gradient">
+                    <div id="appIcon_404" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -176,13 +171,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_54" class="app-text">
+                <div id="appName_404" class="app-text">
                     App
                 </div>
-                <a id="appLink_54" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_55 --><div id="appContainer_55" class="app-container">
-                <div id="appGradient_55" class="app-icon-container black-gradient">
-                    <div id="appIcon_55" class="app-icon">
+                <a id="appLink_404" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_405 --><div id="appContainer_405" class="app-container">
+                <div id="appGradient_405" class="app-icon-container black-gradient">
+                    <div id="appIcon_405" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -191,13 +186,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_55" class="app-text">
+                <div id="appName_405" class="app-text">
                     App
                 </div>
-                <a id="appLink_55" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_56 --><div id="appContainer_56" class="app-container">
-                <div id="appGradient_56" class="app-icon-container black-gradient">
-                    <div id="appIcon_56" class="app-icon">
+                <a id="appLink_405" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_406 --><div id="appContainer_406" class="app-container">
+                <div id="appGradient_406" class="app-icon-container black-gradient">
+                    <div id="appIcon_406" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -206,13 +201,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_56" class="app-text">
+                <div id="appName_406" class="app-text">
                     App
                 </div>
-                <a id="appLink_56" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_57 --><div id="appContainer_57" class="app-container">
-                <div id="appGradient_57" class="app-icon-container black-gradient">
-                    <div id="appIcon_57" class="app-icon">
+                <a id="appLink_406" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_407 --><div id="appContainer_407" class="app-container">
+                <div id="appGradient_407" class="app-icon-container black-gradient">
+                    <div id="appIcon_407" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -221,13 +216,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_57" class="app-text">
+                <div id="appName_407" class="app-text">
                     App
                 </div>
-                <a id="appLink_57" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_58 --><div id="appContainer_58" class="app-container">
-                <div id="appGradient_58" class="app-icon-container black-gradient">
-                    <div id="appIcon_58" class="app-icon">
+                <a id="appLink_407" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_408 --><div id="appContainer_408" class="app-container">
+                <div id="appGradient_408" class="app-icon-container black-gradient">
+                    <div id="appIcon_408" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -236,13 +231,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_58" class="app-text">
+                <div id="appName_408" class="app-text">
                     App
                 </div>
-                <a id="appLink_58" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_59 --><div id="appContainer_59" class="app-container">
-                <div id="appGradient_59" class="app-icon-container black-gradient">
-                    <div id="appIcon_59" class="app-icon">
+                <a id="appLink_408" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_409 --><div id="appContainer_409" class="app-container">
+                <div id="appGradient_409" class="app-icon-container black-gradient">
+                    <div id="appIcon_409" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -251,13 +246,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_59" class="app-text">
+                <div id="appName_409" class="app-text">
                     App
                 </div>
-                <a id="appLink_59" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_60 --><div id="appContainer_60" class="app-container">
-                <div id="appGradient_60" class="app-icon-container black-gradient">
-                    <div id="appIcon_60" class="app-icon">
+                <a id="appLink_409" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_410 --><div id="appContainer_410" class="app-container">
+                <div id="appGradient_410" class="app-icon-container black-gradient">
+                    <div id="appIcon_410" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -266,10 +261,10 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_60" class="app-text">
+                <div id="appName_410" class="app-text">
                     App
                 </div>
-                <a id="appLink_60" class="app-link" href="https://google.com" target="_self"></a>
+                <a id="appLink_410" class="app-link" href="https://google.com" target="_self"></a>
             </div>
        </div>
 
@@ -277,9 +272,9 @@
             <p1 class="subtitle-text">Shopping</p1>
         </div>
         <div class="scrolling-wrapper">
-            <!-- app_61 --><div id="appContainer_61" class="app-container">
-                <div id="appGradient_61" class="app-icon-container black-gradient">
-                    <div id="appIcon_61" class="app-icon">
+            <!-- app_411 --><div id="appContainer_411" class="app-container">
+                <div id="appGradient_411" class="app-icon-container black-gradient">
+                    <div id="appIcon_411" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -288,13 +283,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_61" class="app-text">
+                <div id="appName_411" class="app-text">
                     App
                 </div>
-                <a id="appLink_61" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_62 --><div id="appContainer_62" class="app-container">
-                <div id="appGradient_62" class="app-icon-container black-gradient">
-                    <div id="appIcon_62" class="app-icon">
+                <a id="appLink_411" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_412 --><div id="appContainer_412" class="app-container">
+                <div id="appGradient_412" class="app-icon-container black-gradient">
+                    <div id="appIcon_412" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -303,13 +298,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_62" class="app-text">
+                <div id="appName_412" class="app-text">
                     App
                 </div>
-                <a id="appLink_62" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_63 --><div id="appContainer_63" class="app-container">
-                <div id="appGradient_63" class="app-icon-container black-gradient">
-                    <div id="appIcon_63" class="app-icon">
+                <a id="appLink_412" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_413 --><div id="appContainer_413" class="app-container">
+                <div id="appGradient_413" class="app-icon-container black-gradient">
+                    <div id="appIcon_413" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -318,13 +313,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_63" class="app-text">
+                <div id="appName_413" class="app-text">
                     App
                 </div>
-                <a id="appLink_63" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_64 --><div id="appContainer_64" class="app-container">
-                <div id="appGradient_64" class="app-icon-container black-gradient">
-                    <div id="appIcon_64" class="app-icon">
+                <a id="appLink_413" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_414 --><div id="appContainer_414" class="app-container">
+                <div id="appGradient_414" class="app-icon-container black-gradient">
+                    <div id="appIcon_414" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -333,13 +328,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_64" class="app-text">
+                <div id="appName_414" class="app-text">
                     App
                 </div>
-                <a id="appLink_64" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_65 --><div id="appContainer_65" class="app-container">
-                <div id="appGradient_65" class="app-icon-container black-gradient">
-                    <div id="appIcon_65" class="app-icon">
+                <a id="appLink_414" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_415 --><div id="appContainer_415" class="app-container">
+                <div id="appGradient_415" class="app-icon-container black-gradient">
+                    <div id="appIcon_415" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -348,13 +343,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_65" class="app-text">
+                <div id="appName_415" class="app-text">
                     App
                 </div>
-                <a id="appLink_65" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_66 --><div id="appContainer_66" class="app-container">
-                <div id="appGradient_66" class="app-icon-container black-gradient">
-                    <div id="appIcon_66" class="app-icon">
+                <a id="appLink_415" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_416 --><div id="appContainer_416" class="app-container">
+                <div id="appGradient_416" class="app-icon-container black-gradient">
+                    <div id="appIcon_416" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -363,13 +358,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_66" class="app-text">
+                <div id="appName_416" class="app-text">
                     App
                 </div>
-                <a id="appLink_66" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_67 --><div id="appContainer_67" class="app-container">
-                <div id="appGradient_67" class="app-icon-container black-gradient">
-                    <div id="appIcon_67" class="app-icon">
+                <a id="appLink_416" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_417 --><div id="appContainer_417" class="app-container">
+                <div id="appGradient_417" class="app-icon-container black-gradient">
+                    <div id="appIcon_417" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -378,13 +373,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_67" class="app-text">
+                <div id="appName_417" class="app-text">
                     App
                 </div>
-                <a id="appLink_67" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_68 --><div id="appContainer_68" class="app-container">
-                <div id="appGradient_68" class="app-icon-container black-gradient">
-                    <div id="appIcon_68" class="app-icon">
+                <a id="appLink_417" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_418 --><div id="appContainer_418" class="app-container">
+                <div id="appGradient_418" class="app-icon-container black-gradient">
+                    <div id="appIcon_418" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -393,13 +388,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_68" class="app-text">
+                <div id="appName_418" class="app-text">
                     App
                 </div>
-                <a id="appLink_68" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_69 --><div id="appContainer_69" class="app-container">
-                <div id="appGradient_69" class="app-icon-container black-gradient">
-                    <div id="appIcon_69" class="app-icon">
+                <a id="appLink_418" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_419 --><div id="appContainer_419" class="app-container">
+                <div id="appGradient_419" class="app-icon-container black-gradient">
+                    <div id="appIcon_419" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -408,13 +403,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_69" class="app-text">
+                <div id="appName_419" class="app-text">
                     App
                 </div>
-                <a id="appLink_69" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_70 --><div id="appContainer_70" class="app-container">
-                <div id="appGradient_70" class="app-icon-container black-gradient">
-                    <div id="appIcon_70" class="app-icon">
+                <a id="appLink_419" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_420 --><div id="appContainer_420" class="app-container">
+                <div id="appGradient_420" class="app-icon-container black-gradient">
+                    <div id="appIcon_420" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -423,10 +418,10 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_70" class="app-text">
+                <div id="appName_420" class="app-text">
                     App
                 </div>
-                <a id="appLink_70" class="app-link" href="https://google.com" target="_self"></a>
+                <a id="appLink_420" class="app-link" href="https://google.com" target="_self"></a>
             </div>
         </div>
 
@@ -434,9 +429,9 @@
             <p1 class="subtitle-text">Social</p1>
         </div>
         <div class="scrolling-wrapper">
-            <!-- app_71 --><div id="appContainer_71" class="app-container">
-                <div id="appGradient_71" class="app-icon-container black-gradient">
-                    <div id="appIcon_71" class="app-icon">
+            <!-- app_421 --><div id="appContainer_421" class="app-container">
+                <div id="appGradient_421" class="app-icon-container black-gradient">
+                    <div id="appIcon_421" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -445,13 +440,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_71" class="app-text">
+                <div id="appName_421" class="app-text">
                     App
                 </div>
-                <a id="appLink_71" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_72 --><div id="appContainer_72" class="app-container">
-                <div id="appGradient_72" class="app-icon-container black-gradient">
-                    <div id="appIcon_72" class="app-icon">
+                <a id="appLink_421" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_422 --><div id="appContainer_422" class="app-container">
+                <div id="appGradient_422" class="app-icon-container black-gradient">
+                    <div id="appIcon_422" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -460,13 +455,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_72" class="app-text">
+                <div id="appName_422" class="app-text">
                     App
                 </div>
-                <a id="appLink_72" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_73 --><div id="appContainer_73" class="app-container">
-                <div id="appGradient_73" class="app-icon-container black-gradient">
-                    <div id="appIcon_73" class="app-icon">
+                <a id="appLink_422" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_423 --><div id="appContainer_423" class="app-container">
+                <div id="appGradient_423" class="app-icon-container black-gradient">
+                    <div id="appIcon_423" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -475,13 +470,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_73" class="app-text">
+                <div id="appName_423" class="app-text">
                     App
                 </div>
-                <a id="appLink_73" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_74 --><div id="appContainer_74" class="app-container">
-                <div id="appGradient_74" class="app-icon-container black-gradient">
-                    <div id="appIcon_74" class="app-icon">
+                <a id="appLink_423" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_424 --><div id="appContainer_424" class="app-container">
+                <div id="appGradient_424" class="app-icon-container black-gradient">
+                    <div id="appIcon_424" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -490,13 +485,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_74" class="app-text">
+                <div id="appName_424" class="app-text">
                     App
                 </div>
-                <a id="appLink_74" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_75 --><div id="appContainer_75" class="app-container">
-                <div id="appGradient_75" class="app-icon-container black-gradient">
-                    <div id="appIcon_75" class="app-icon">
+                <a id="appLink_424" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_425 --><div id="appContainer_425" class="app-container">
+                <div id="appGradient_425" class="app-icon-container black-gradient">
+                    <div id="appIcon_425" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -505,13 +500,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_75" class="app-text">
+                <div id="appName_425" class="app-text">
                     App
                 </div>
-                <a id="appLink_75" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_76 --><div id="appContainer_76" class="app-container">
-                <div id="appGradient_76" class="app-icon-container black-gradient">
-                    <div id="appIcon_76" class="app-icon">
+                <a id="appLink_425" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_426 --><div id="appContainer_426" class="app-container">
+                <div id="appGradient_426" class="app-icon-container black-gradient">
+                    <div id="appIcon_426" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -520,13 +515,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_76" class="app-text">
+                <div id="appName_426" class="app-text">
                     App
                 </div>
-                <a id="appLink_76" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_77 --><div id="appContainer_77" class="app-container">
-                <div id="appGradient_77" class="app-icon-container black-gradient">
-                    <div id="appIcon_77" class="app-icon">
+                <a id="appLink_426" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_427 --><div id="appContainer_427" class="app-container">
+                <div id="appGradient_427" class="app-icon-container black-gradient">
+                    <div id="appIcon_427" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -535,13 +530,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_77" class="app-text">
+                <div id="appName_427" class="app-text">
                     App
                 </div>
-                <a id="appLink_77" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_78 --><div id="appContainer_78" class="app-container">
-                <div id="appGradient_78" class="app-icon-container black-gradient">
-                    <div id="appIcon_78" class="app-icon">
+                <a id="appLink_427" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_428 --><div id="appContainer_428" class="app-container">
+                <div id="appGradient_428" class="app-icon-container black-gradient">
+                    <div id="appIcon_428" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -550,13 +545,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_78" class="app-text">
+                <div id="appName_428" class="app-text">
                     App
                 </div>
-                <a id="appLink_78" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_79 --><div id="appContainer_79" class="app-container">
-                <div id="appGradient_79" class="app-icon-container black-gradient">
-                    <div id="appIcon_79" class="app-icon">
+                <a id="appLink_428" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_429 --><div id="appContainer_429" class="app-container">
+                <div id="appGradient_429" class="app-icon-container black-gradient">
+                    <div id="appIcon_429" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -565,13 +560,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_79" class="app-text">
+                <div id="appName_429" class="app-text">
                     App
                 </div>
-                <a id="appLink_79" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_80 --><div id="appContainer_80" class="app-container">
-                <div id="appGradient_80" class="app-icon-container black-gradient">
-                    <div id="appIcon_80" class="app-icon">
+                <a id="appLink_429" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_430 --><div id="appContainer_430" class="app-container">
+                <div id="appGradient_430" class="app-icon-container black-gradient">
+                    <div id="appIcon_430" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -580,10 +575,10 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_80" class="app-text">
+                <div id="appName_430" class="app-text">
                     App
                 </div>
-                <a id="appLink_80" class="app-link" href="https://google.com" target="_self"></a>
+                <a id="appLink_430" class="app-link" href="https://google.com" target="_self"></a>
             </div>
         </div>
 
@@ -591,9 +586,9 @@
             <p1 class="subtitle-text">Apartment</p1>
         </div>
         <div class="scrolling-wrapper">
-            <!-- app_81 --><div id="appContainer_81" class="app-container">
-                <div id="appGradient_81" class="app-icon-container black-gradient">
-                    <div id="appIcon_81" class="app-icon">
+            <!-- app_431 --><div id="appContainer_431" class="app-container">
+                <div id="appGradient_431" class="app-icon-container black-gradient">
+                    <div id="appIcon_431" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -602,13 +597,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_81" class="app-text">
+                <div id="appName_431" class="app-text">
                     App
                 </div>
-                <a id="appLink_81" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_82 --><div id="appContainer_82" class="app-container">
-                <div id="appGradient_82" class="app-icon-container black-gradient">
-                    <div id="appIcon_82" class="app-icon">
+                <a id="appLink_431" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_432 --><div id="appContainer_432" class="app-container">
+                <div id="appGradient_432" class="app-icon-container black-gradient">
+                    <div id="appIcon_432" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -617,13 +612,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_82" class="app-text">
+                <div id="appName_432" class="app-text">
                     App
                 </div>
-                <a id="appLink_82" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_83 --><div id="appContainer_83" class="app-container">
-                <div id="appGradient_83" class="app-icon-container black-gradient">
-                    <div id="appIcon_83" class="app-icon">
+                <a id="appLink_432" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_433 --><div id="appContainer_433" class="app-container">
+                <div id="appGradient_433" class="app-icon-container black-gradient">
+                    <div id="appIcon_433" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -632,13 +627,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_83" class="app-text">
+                <div id="appName_433" class="app-text">
                     App
                 </div>
-                <a id="appLink_83" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_84 --><div id="appContainer_84" class="app-container">
-                <div id="appGradient_84" class="app-icon-container black-gradient">
-                    <div id="appIcon_84" class="app-icon">
+                <a id="appLink_433" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_434 --><div id="appContainer_434" class="app-container">
+                <div id="appGradient_434" class="app-icon-container black-gradient">
+                    <div id="appIcon_434" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -647,13 +642,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_84" class="app-text">
+                <div id="appName_434" class="app-text">
                     App
                 </div>
-                <a id="appLink_84" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_85 --><div id="appContainer_85" class="app-container">
-                <div id="appGradient_85" class="app-icon-container black-gradient">
-                    <div id="appIcon_85" class="app-icon">
+                <a id="appLink_434" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_435 --><div id="appContainer_435" class="app-container">
+                <div id="appGradient_435" class="app-icon-container black-gradient">
+                    <div id="appIcon_435" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -662,13 +657,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_85" class="app-text">
+                <div id="appName_435" class="app-text">
                     App
                 </div>
-                <a id="appLink_85" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_86 --><div id="appContainer_86" class="app-container">
-                <div id="appGradient_86" class="app-icon-container black-gradient">
-                    <div id="appIcon_86" class="app-icon">
+                <a id="appLink_435" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_436 --><div id="appContainer_436" class="app-container">
+                <div id="appGradient_436" class="app-icon-container black-gradient">
+                    <div id="appIcon_436" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -677,13 +672,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_86" class="app-text">
+                <div id="appName_436" class="app-text">
                     App
                 </div>
-                <a id="appLink_86" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_87 --><div id="appContainer_87" class="app-container">
-                <div id="appGradient_87" class="app-icon-container black-gradient">
-                    <div id="appIcon_87" class="app-icon">
+                <a id="appLink_436" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_437 --><div id="appContainer_437" class="app-container">
+                <div id="appGradient_437" class="app-icon-container black-gradient">
+                    <div id="appIcon_437" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -692,13 +687,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_87" class="app-text">
+                <div id="appName_437" class="app-text">
                     App
                 </div>
-                <a id="appLink_87" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_88 --><div id="appContainer_88" class="app-container">
-                <div id="appGradient_88" class="app-icon-container black-gradient">
-                    <div id="appIcon_88" class="app-icon">
+                <a id="appLink_437" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_438 --><div id="appContainer_438" class="app-container">
+                <div id="appGradient_438" class="app-icon-container black-gradient">
+                    <div id="appIcon_438" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -707,13 +702,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_88" class="app-text">
+                <div id="appName_438" class="app-text">
                     App
                 </div>
-                <a id="appLink_88" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_89 --><div id="appContainer_89" class="app-container">
-                <div id="appGradient_89" class="app-icon-container black-gradient">
-                    <div id="appIcon_89" class="app-icon">
+                <a id="appLink_438" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_439 --><div id="appContainer_439" class="app-container">
+                <div id="appGradient_439" class="app-icon-container black-gradient">
+                    <div id="appIcon_439" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -722,13 +717,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_89" class="app-text">
+                <div id="appName_439" class="app-text">
                     App
                 </div>
-                <a id="appLink_89" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_90 --><div id="appContainer_90" class="app-container">
-                <div id="appGradient_90" class="app-icon-container black-gradient">
-                    <div id="appIcon_90" class="app-icon">
+                <a id="appLink_439" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_440 --><div id="appContainer_440" class="app-container">
+                <div id="appGradient_440" class="app-icon-container black-gradient">
+                    <div id="appIcon_440" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -737,10 +732,10 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_90" class="app-text">
+                <div id="appName_440" class="app-text">
                     App
                 </div>
-                <a id="appLink_90" class="app-link" href="https://google.com" target="_self"></a>
+                <a id="appLink_440" class="app-link" href="https://google.com" target="_self"></a>
             </div>
         </div>
 
@@ -748,9 +743,9 @@
             <p1 class="subtitle-text">Local</p1>
         </div>
         <div class="scrolling-wrapper">
-            <!-- app_91 --><div id="appContainer_91" class="app-container">
-                <div id="appGradient_91" class="app-icon-container black-gradient">
-                    <div id="appIcon_91" class="app-icon">
+            <!-- app_441 --><div id="appContainer_441" class="app-container">
+                <div id="appGradient_441" class="app-icon-container black-gradient">
+                    <div id="appIcon_441" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -759,13 +754,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_91" class="app-text">
+                <div id="appName_441" class="app-text">
                     App
                 </div>
-                <a id="appLink_91" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_92 --><div id="appContainer_92" class="app-container">
-                <div id="appGradient_92" class="app-icon-container black-gradient">
-                    <div id="appIcon_92" class="app-icon">
+                <a id="appLink_441" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_442 --><div id="appContainer_442" class="app-container">
+                <div id="appGradient_442" class="app-icon-container black-gradient">
+                    <div id="appIcon_442" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -774,13 +769,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_92" class="app-text">
+                <div id="appName_442" class="app-text">
                     App
                 </div>
-                <a id="appLink_92" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_93 --><div id="appContainer_93" class="app-container">
-                <div id="appGradient_93" class="app-icon-container black-gradient">
-                    <div id="appIcon_93" class="app-icon">
+                <a id="appLink_442" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_443 --><div id="appContainer_443" class="app-container">
+                <div id="appGradient_443" class="app-icon-container black-gradient">
+                    <div id="appIcon_443" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -789,13 +784,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_93" class="app-text">
+                <div id="appName_443" class="app-text">
                     App
                 </div>
-                <a id="appLink_93" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_94 --><div id="appContainer_94" class="app-container">
-                <div id="appGradient_94" class="app-icon-container black-gradient">
-                    <div id="appIcon_94" class="app-icon">
+                <a id="appLink_443" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_444 --><div id="appContainer_444" class="app-container">
+                <div id="appGradient_444" class="app-icon-container black-gradient">
+                    <div id="appIcon_444" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -804,13 +799,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_94" class="app-text">
+                <div id="appName_444" class="app-text">
                     App
                 </div>
-                <a id="appLink_94" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_95 --><div id="appContainer_95" class="app-container">
-                <div id="appGradient_95" class="app-icon-container black-gradient">
-                    <div id="appIcon_95" class="app-icon">
+                <a id="appLink_444" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_445 --><div id="appContainer_445" class="app-container">
+                <div id="appGradient_445" class="app-icon-container black-gradient">
+                    <div id="appIcon_445" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -819,13 +814,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_95" class="app-text">
+                <div id="appName_445" class="app-text">
                     App
                 </div>
-                <a id="appLink_95" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_96 --><div id="appContainer_96" class="app-container">
-                <div id="appGradient_96" class="app-icon-container black-gradient">
-                    <div id="appIcon_96" class="app-icon">
+                <a id="appLink_445" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_446 --><div id="appContainer_446" class="app-container">
+                <div id="appGradient_446" class="app-icon-container black-gradient">
+                    <div id="appIcon_446" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -834,13 +829,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_96" class="app-text">
+                <div id="appName_446" class="app-text">
                     App
                 </div>
-                <a id="appLink_96" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_97 --><div id="appContainer_97" class="app-container">
-                <div id="appGradient_97" class="app-icon-container black-gradient">
-                    <div id="appIcon_97" class="app-icon">
+                <a id="appLink_446" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_447 --><div id="appContainer_447" class="app-container">
+                <div id="appGradient_447" class="app-icon-container black-gradient">
+                    <div id="appIcon_447" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -849,13 +844,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_97" class="app-text">
+                <div id="appName_447" class="app-text">
                     App
                 </div>
-                <a id="appLink_97" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_98 --><div id="appContainer_98" class="app-container">
-                <div id="appGradient_98" class="app-icon-container black-gradient">
-                    <div id="appIcon_98" class="app-icon">
+                <a id="appLink_447" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_448 --><div id="appContainer_448" class="app-container">
+                <div id="appGradient_448" class="app-icon-container black-gradient">
+                    <div id="appIcon_448" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -864,13 +859,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_98" class="app-text">
+                <div id="appName_448" class="app-text">
                     App
                 </div>
-                <a id="appLink_98" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_99 --><div id="appContainer_99" class="app-container">
-                <div id="appGradient_99" class="app-icon-container black-gradient">
-                    <div id="appIcon_99" class="app-icon">
+                <a id="appLink_448" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_449 --><div id="appContainer_449" class="app-container">
+                <div id="appGradient_449" class="app-icon-container black-gradient">
+                    <div id="appIcon_449" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -879,13 +874,13 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_99" class="app-text">
+                <div id="appName_449" class="app-text">
                     App
                 </div>
-                <a id="appLink_99" class="app-link" href="https://google.com" target="_self"></a>
-            </div><!-- app_100 --><div id="appContainer_100" class="app-container">
-                <div id="appGradient_100" class="app-icon-container black-gradient">
-                    <div id="appIcon_100" class="app-icon">
+                <a id="appLink_449" class="app-link" href="https://google.com" target="_self"></a>
+            </div><!-- app_450 --><div id="appContainer_450" class="app-container">
+                <div id="appGradient_450" class="app-icon-container black-gradient">
+                    <div id="appIcon_450" class="app-icon">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <path
@@ -894,10 +889,10 @@
                         </svg> -->
                     </div>
                 </div>
-                <div id="appName_100" class="app-text">
+                <div id="appName_450" class="app-text">
                     App
                 </div>
-                <a id="appLink_100" class="app-link" href="https://google.com" target="_self"></a>
+                <a id="appLink_450" class="app-link" href="https://google.com" target="_self"></a>
             </div>
 
 
@@ -918,42 +913,6 @@
 
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="title-box">
-            <p1 class="title-text projects-title" id="day">Projects</p1>
-        </div>
-
-        <div class="app-box">
-            <!-- media --><a class="button hulu" href="https://hrishabhappleid.wixsite.com/home/media"
-            target="_self">
-            <div class="button-icon">
-                <svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861"
-                    xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                    <g>
-                        <path
-                            d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z"
-                            xmlns="http://www.w3.org/2000/svg" />
-                    </g>
-                </svg>
-
-            </div>
-        </a>
-        <p class="box-label">
-            Summer 2021 Courses
-        </p>
-        </div>
-
 
 
 
