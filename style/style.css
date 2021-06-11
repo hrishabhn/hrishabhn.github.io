@@ -237,7 +237,7 @@ body{
 
     margin-right: 10px;
 
-    scroll-snap-align: start;
+    scroll-snap-align: none;
     scroll-margin-left: 90px;
 }
 .app-container:hover .app-icon-container{
