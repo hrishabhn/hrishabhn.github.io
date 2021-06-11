@@ -697,7 +697,7 @@ gradients
     }
 
     .app-container{
-        scroll-snap-align: start;
+        /* scroll-snap-align: start; */
         scroll-margin-left: 5vw;
     }
 
