@@ -764,10 +764,10 @@ function tvPage(n){
 
 
 function homeTVPopulate(){
-  var cardClass = "tv-card ";
-  var posterClass = "tv-poster ";
-  var gradientClass = "tv-gradient ";
-  var titleClass = "tv-title ";
+  var cardClass = "tv-media-card ";
+  var posterClass = "tv-media-poster ";
+  var gradientClass = "tv-media-gradient ";
+  var titleClass = "tv-media-title ";
   var showPage = "TV/pages/tv-page-";
   var linkEnd = ".html"
 
