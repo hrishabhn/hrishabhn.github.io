@@ -1,6 +1,6 @@
 .user-container{
     height: 100px;
-    width: 250px;
+    width: 300px;
     border-radius: 18px;
     margin-top: 20px;
     margin-left: 20px;
@@ -19,7 +19,7 @@
 }
 .user-text-box{
     margin-left: 15px;
-    height: 30px;
+    height: 40px;
     display: inline-flex;
     /* max-width: 100px; */
     position: relative;
@@ -40,7 +40,7 @@
     position: absolute;
     top: 0px;
 
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     color: #ffffffcc;
 }
@@ -52,7 +52,7 @@
     position: absolute;
     bottom: 0px;
 
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 400;
     color: #ffffff99;
 }
@@ -157,7 +157,5 @@
         width: 90vw;
         margin-left: 5vw;
         padding: 0px;
-    }  
-
-
+    }
 }
