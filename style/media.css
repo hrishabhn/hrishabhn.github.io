@@ -852,6 +852,15 @@
     background-image: url('../books/ride\ of\ a\ lifetime.jpg');
 }
 
+.martian-solid{
+    background-color: #ca6932;
+}
+.martian-cover{
+    background-image: url('../books/martian.jpg');
+}
+
+
+
 /* podcasts */
 
 .acquired-solid{

@@ -394,7 +394,11 @@ var book_2 = [
   "https://smart.link/o3waqx4wg1gdn?asin=0525499334"
 ]
 
-
+var book_3 = [
+  "book-card martian-solid",
+  "book-cover martian-cover",
+  "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF"
+]
 
 
 
@@ -834,188 +838,7 @@ function mediaTVPopulate(){
 
 
   }
-  //show 1
-//     document.getElementById("card1").className =     cardClass.concat(show1[0]);
-//   document.getElementById("poster1").className =   posterClass.concat(show1[1]);
-//     document.getElementById("grad1").className = gradientClass.concat(show1[2]);
-//    document.getElementById("title1").className =    titleClass.concat(show1[3]);
-//     document.getElementById("desc1").innerHTML =                      show1[4];
-//     document.getElementById("link1").href =                           show1[5];
-//  document.getElementById("service1").innerHTML =                      show1[6];
-
-
-//   //show 2
-//     document.getElementById("card2").className = show2[0];
-//   document.getElementById("poster2").className = show2[1];
-//     document.getElementById("grad2").className = show2[2];
-//    document.getElementById("title2").className = show2[3];
-//     document.getElementById("desc2").innerHTML = show2[4];
-//     document.getElementById("link2").href =      show2[5];
-//  document.getElementById("service2").innerHTML = show2[6];
   
-//   //show 3
-//     document.getElementById("card3").className = show3[0];
-//   document.getElementById("poster3").className = show3[1];
-//     document.getElementById("grad3").className = show3[2];
-//    document.getElementById("title3").className = show3[3];
-//     document.getElementById("desc3").innerHTML = show3[4];
-//     document.getElementById("link3").href =      show3[5];
-//  document.getElementById("service3").innerHTML = show3[6];
-  
-//   //show 4
-//     document.getElementById("card4").className = show4[0];
-//   document.getElementById("poster4").className = show4[1];
-//     document.getElementById("grad4").className = show4[2];
-//    document.getElementById("title4").className = show4[3];
-//     document.getElementById("desc4").innerHTML = show4[4];
-//     document.getElementById("link4").href =      show4[5];
-//  document.getElementById("service4").innerHTML = show4[6];
-
-//   //show 5
-//     document.getElementById("card5").className = show5[0];
-//   document.getElementById("poster5").className = show5[1];
-//     document.getElementById("grad5").className = show5[2];
-//    document.getElementById("title5").className = show5[3];
-//     document.getElementById("desc5").innerHTML = show5[4];
-//     document.getElementById("link5").href =      show5[5];
-//  document.getElementById("service5").innerHTML = show5[6];
-
-//   //show 6
-//     document.getElementById("card6").className = show6[0];
-//   document.getElementById("poster6").className = show6[1];
-//     document.getElementById("grad6").className = show6[2];
-//    document.getElementById("title6").className = show6[3];
-//     document.getElementById("desc6").innerHTML = show6[4];
-//     document.getElementById("link6").href =      show6[5];
-//  document.getElementById("service6").innerHTML = show6[6];
-
-//   //show 7
-//     document.getElementById("card7").className = show7[0];
-//   document.getElementById("poster7").className = show7[1];
-//     document.getElementById("grad7").className = show7[2];
-//    document.getElementById("title7").className = show7[3];
-//     document.getElementById("desc7").innerHTML = show7[4];
-//     document.getElementById("link7").href =      show7[5];
-//  document.getElementById("service7").innerHTML = show7[6];
-
-//   //show 8
-//     document.getElementById("card8").className = show8[0];
-//   document.getElementById("poster8").className = show8[1];
-//     document.getElementById("grad8").className = show8[2];
-//    document.getElementById("title8").className = show8[3];
-//     document.getElementById("desc8").innerHTML = show8[4];
-//     document.getElementById("link8").href =      show8[5];
-//  document.getElementById("service8").innerHTML = show8[6];
-  
-//   //show 9
-//     document.getElementById("card9").className = show9[0];
-//   document.getElementById("poster9").className = show9[1];
-//     document.getElementById("grad9").className = show9[2];
-//    document.getElementById("title9").className = show9[3];
-//     document.getElementById("desc9").innerHTML = show9[4];
-//     document.getElementById("link9").href =      show9[5];
-//  document.getElementById("service9").innerHTML = show9[6];
-
-//  //show 10
-//     document.getElementById("card10").className = show10[0];
-//   document.getElementById("poster10").className = show10[1];
-//     document.getElementById("grad10").className = show10[2];
-//    document.getElementById("title10").className = show10[3];
-//     document.getElementById("desc10").innerHTML = show10[4];
-//     document.getElementById("link10").href =      show10[5];
-//  document.getElementById("service10").innerHTML = show10[6];
-
-//   // MY LIST //
-//   // show 11
-//     document.getElementById("card11").className = show11[0];
-//   document.getElementById("poster11").className = show11[1];
-//     document.getElementById("grad11").className = show11[2];
-//    document.getElementById("title11").className = show11[3];
-//     document.getElementById("desc11").innerHTML = show11[4];
-//     document.getElementById("link11").href =      show11[5];
-//  document.getElementById("service11").innerHTML = show11[6];
-  
-//  // show 12
-//     document.getElementById("card12").className = show12[0];
-//   document.getElementById("poster12").className = show12[1];
-//     document.getElementById("grad12").className = show12[2];
-//    document.getElementById("title12").className = show12[3];
-//     document.getElementById("desc12").innerHTML = show12[4];
-//     document.getElementById("link12").href =      show12[5];
-//  document.getElementById("service12").innerHTML = show12[6];
-
-//  // show 13
-//     document.getElementById("card13").className = show13[0];
-//   document.getElementById("poster13").className = show13[1];
-//     document.getElementById("grad13").className = show13[2];
-//    document.getElementById("title13").className = show13[3];
-//     document.getElementById("desc13").innerHTML = show13[4];
-//     document.getElementById("link13").href =      show13[5];
-//  document.getElementById("service13").innerHTML = show13[6];
-
-//  // show 14
-//     document.getElementById("card14").className = show14[0];
-//   document.getElementById("poster14").className = show14[1];
-//     document.getElementById("grad14").className = show14[2];
-//    document.getElementById("title14").className = show14[3];
-//     document.getElementById("desc14").innerHTML = show14[4];
-//     document.getElementById("link14").href =      show14[5];
-//  document.getElementById("service14").innerHTML = show14[6];
-
-//  // show 15
-//     document.getElementById("card15").className = show15[0];
-//   document.getElementById("poster15").className = show15[1];
-//     document.getElementById("grad15").className = show15[2];
-//    document.getElementById("title15").className = show15[3];
-//     document.getElementById("desc15").innerHTML = show15[4];
-//     document.getElementById("link15").href =      show15[5];
-//  document.getElementById("service15").innerHTML = show15[6];
-
-// // show 16
-//     document.getElementById("card16").className = show16[0];
-//   document.getElementById("poster16").className = show16[1];
-//     document.getElementById("grad16").className = show16[2];
-//    document.getElementById("title16").className = show16[3];
-//     document.getElementById("desc16").innerHTML = show16[4];
-//     document.getElementById("link16").href =      show16[5];
-//  document.getElementById("service16").innerHTML = show16[6];
-
-//  // show 17
-//     document.getElementById("card17").className = show17[0];
-//   document.getElementById("poster17").className = show17[1];
-//     document.getElementById("grad17").className = show17[2];
-//    document.getElementById("title17").className = show17[3];
-//     document.getElementById("desc17").innerHTML = show17[4];
-//     document.getElementById("link17").href =      show17[5];
-//  document.getElementById("service17").innerHTML = show17[6];
-
-//  // show 18
-//     document.getElementById("card18").className = show18[0];
-//   document.getElementById("poster18").className = show18[1];
-//     document.getElementById("grad18").className = show18[2];
-//    document.getElementById("title18").className = show18[3];
-//     document.getElementById("desc18").innerHTML = show18[4];
-//     document.getElementById("link18").href =      show18[5];
-//  document.getElementById("service18").innerHTML = show18[6];
- 
-//  // show 19
-//     document.getElementById("card19").className = show19[0];
-//   document.getElementById("poster19").className = show19[1];
-//     document.getElementById("grad19").className = show19[2];
-//    document.getElementById("title19").className = show19[3];
-//     document.getElementById("desc19").innerHTML = show19[4];
-//     document.getElementById("link19").href =      show19[5];
-//  document.getElementById("service19").innerHTML = show19[6];
- 
-//  // show 20
-//     document.getElementById("card20").className = show20[0];
-//   document.getElementById("poster20").className = show20[1];
-//     document.getElementById("grad20").className = show20[2];
-//    document.getElementById("title20").className = show20[3];
-//     document.getElementById("desc20").innerHTML = show20[4];
-//     document.getElementById("link20").href =      show20[5];
-//  document.getElementById("service20").innerHTML = show20[6];
-
 // BOOKS //
 //book 1
  document.getElementById("bookCard1").className =  book_1[0];
@@ -1027,6 +850,10 @@ document.getElementById("bookCover1").className =  book_1[1];
 document.getElementById("bookCover2").className =  book_2[1];
  document.getElementById("bookLink2").href =       book_2[2];
 
+//book 3
+ document.getElementById("bookCard3").className =  book_3[0];
+document.getElementById("bookCover3").className =  book_3[1];
+ document.getElementById("bookLink3").href =       book_3[2];
 
   
   // PODCASTS //
