@@ -393,7 +393,7 @@ body{
 
     font-size: 14px;
     font-weight: 500;
-    color: #ffffffcc;
+    color: #ffffff99;
 }
 .anchor-button{
     height: 100%;
@@ -684,6 +684,15 @@ gradients
     /* .app-text{
         color: #1c1c1e;
     } */
+    .anchor-container{
+        background: rgba(229, 229, 234, 1);
+    }
+    .anchor-icon-box{
+        fill: #000000cc;
+    }
+    .anchor-text{
+        color: #00000099;
+    }
 }
 
 
