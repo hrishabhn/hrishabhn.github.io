@@ -341,18 +341,18 @@ body{
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
 
-    background-color: rgba(28, 28, 30, 0.5);
+    /* background-color: rgba(28, 28, 30, 0.5); */
 }
 .anchor-container{
     height: 100%;
-    /* width: 300px; */
     border-radius: 15px;
-    /* margin-top: 20px; */
-    margin-right: 20px;
+
+    margin-right: 10px;
     padding-left: 20px;
     padding-right: 20px;
 
-
+    position: relative;
+    overflow: hidden;
     display: inline-flex;
     align-items: center;
 
@@ -361,25 +361,30 @@ body{
 .anchor-icon-box{
     height: 20px;
     width: 20px;
-    /* border-radius: 100%; */
 
     fill: #ffffffcc;
-    /* background-color: violet; */
 }
 /* .anchor-icon{
     fill: #ffffffcc;
+    height: 20px;
+    width: 20px;
 } */
 .anchor-text-box{
     margin-left: 10px;
     height: 40px;
     display: inline-flex;
-    /* max-width: 100px; */
     position: relative;
     align-content: center;
-    
-    
-    
-    /* background-color: blue; */
+}
+.anchor-text{
+    display: inline-flex;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    align-self: center;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffffcc;
 }
 .anchor-button{
     height: 100%;
@@ -387,24 +392,12 @@ body{
     position: absolute;
     top: 0px;
     left: 0px;
-    display: inline-flex;
+    right: 0px;
+    display: flex;
     cursor: pointer;
+
+    /* background-color: #ffffff33; */
 }
-
-.anchor-text{
-    display: inline-flex;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    align-self: center;
-/* 
-    position: absolute;
-    top: 0px; */
-
-    font-size: 14px;
-    font-weight: 500;
-    color: #ffffffcc;
-}
-
 
 
 
@@ -789,11 +782,20 @@ gradients
 
         left: 0px;
     }
-
     .app-container{
         /* scroll-snap-align: start; */
         scroll-margin-left: 5vw;
     }
+
+    .anchor-tray{
+        padding-left: 5vw;
+        padding-right: 2.5vw;
+
+        left: 0px;
+    }
+    /* .anchor-container{
+
+    } */
 
     @media screen and (prefers-color-scheme: light) {
 
