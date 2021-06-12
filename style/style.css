@@ -613,7 +613,16 @@ gradients
         padding-right: 0px;
         padding-bottom: 30vw;
     }
-
+    .notch-box{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 60px;
+        width: 100%;
+        z-index: 5;
+        -webkit-backdrop-filter: blur(20px);
+        background-color: #00000099;
+    }
     .title-box{   
         padding-left: 5vw;
         padding-right: 0;
@@ -699,13 +708,10 @@ gradients
         scroll-margin-left: 5vw;
     }
 
-    /* @media screen and (prefers-color-scheme: light) {
+    @media screen and (prefers-color-scheme: light) {
 
-        .title-box{
-            background: rgba(229, 229, 234, 0.8);
-        }
-        .sidebar{
-            background: rgba(229, 229, 234, 1);
-        }
-    } */
+        .notch-box{
+            background-color: #ffffff99;
+        }   
+    }
 }
