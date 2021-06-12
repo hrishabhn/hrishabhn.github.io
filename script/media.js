@@ -8,12 +8,61 @@ var hide = [
   ""
 ]
 
+var show1 = hide
+var show2 = hide
+var show3 = hide
+var show4 = hide
+var show5 = hide
+var show6 = hide
+var show7 = hide
+var show8 = hide
+var show9 = hide
+var show10 = hide
+
+var show11 = hide
+var show12 = hide
+var show13 = hide
+var show14 = hide
+var show15 = hide
+var show16 = hide
+var show17 = hide
+var show18 = hide
+var show19 = hide
+var show20 = hide
 
 
-
-
-//Always sunny
+// Lupin
 var show1 = [
+  "lupin-solid",
+  "lupin-poster",
+  "lupin-gradient",
+  "lupin-title",
+  "Crime • Thriller • 1 Season • 2021 - Present",
+  "https://www.netflix.com/title/80994082",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/375921",
+  "https://reelgood.com/show/lupin-2021",
+  "https://www.imdb.com/title/tt2531336",
+]
+
+// Mythic quest
+var show2 = [
+  "mythic-solid",
+  "mythic-poster",
+  "mythic-gradient",
+  "mythic-title",
+  "Comedy • 2 Seasons • 2020 - Present",
+  "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
+  "black-gradient",
+  "Watch on  TV+",
+  "https://www.tvtime.com/en/show/362829",
+  "https://reelgood.com/show/mythic-quest-2020",
+  "https://www.imdb.com/title/tt8879940"
+]
+
+// Always sunny
+var show3 = [
   "always-solid",
   "always-poster",
   "always-gradient",
@@ -28,8 +77,8 @@ var show1 = [
   "It's Always Sunny in Philadelphia It's Always Sunny in Philadelphia It's Always Sunny in Philadelphia",
 ]
 
-//Kim's Convenience
-var show2 = [
+// Kim's Convenience
+var show4 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",
@@ -41,11 +90,10 @@ var show2 = [
   "https://www.tvtime.com/en/show/315908",
   "https://reelgood.com/show/kims-convenience-2016",
   "https://www.imdb.com/title/tt5912064",
-  "Kim's Convenience",
 ]
 
-//Twin peaks
-var show3 = [
+// Twin peaks
+var show5 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
@@ -59,8 +107,8 @@ var show3 = [
   "https://www.imdb.com/title/tt0098936"
 ]
 
-//Atlanta
-var show4 = [
+// Atlanta
+var show6 = [
   "atlanta-solid",
   "atlanta-poster",
   "atlanta-gradient",
@@ -74,8 +122,8 @@ var show4 = [
   "https://www.imdb.com/title/tt4288182"
 ]
 
-//Legion
-var show5 = [
+// Legion
+var show7 = [
   "legion-solid",
   "legion-poster",
   "legion-gradient",
@@ -89,59 +137,25 @@ var show5 = [
   "https://www.imdb.com/title/tt5114356"
 ]
 
-//Mythic quest
-var show6 = [
-  "mythic-solid",
-  "mythic-poster",
-  "mythic-gradient",
-  "mythic-title",
-  "Comedy • 2 Seasons • 2020 - Present",
-  "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
-  "black-gradient",
-  "Watch on  TV+",
-  "https://www.tvtime.com/en/show/362829",
-  "https://reelgood.com/show/mythic-quest-2020",
-  "https://www.imdb.com/title/tt8879940"
+
+
+
+// Loki
+show11 = [
+  "loki-solid",
+  "loki-poster",
+  "loki-gradient",
+  "loki-title",
+  "Action & Adventure • Fantasy • 1 Season • 2021 - Present",
+  "https://www.hulu.com/series/lego-masters-fd4ada37-965a-4f86-9ea4-0b214f3e6d7e",
+  "hulu-green",
+  "Watch on Hulu",
+  "https://www.tvtime.com/en/show/362472",
+  "https://reelgood.com/show/loki-2021",
+  "https://www.imdb.com/title/tt9140554"
 ]
 
-// Last week tonight
-var show7 = [
-  "last-solid",
-  "last-poster",
-  "last-gradient",
-  "last-title",
-  "Talk Show • 8 Seasons • 2020 - Present",
-  "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
-  "hbo",
-  "Watch on HBO Max",
-  "https://www.tvtime.com/en/show/278518",
-  "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
-  "https://www.imdb.com/title/tt3530232"
-]
-
-// var show5 = hide
-// var show6 = hide
-// var show7 = hide
-var show8 = hide
-var show9 = hide
-var show10 = hide
-
-//Human
-var show11 = [
-  "human-solid",
-  "human-poster",
-  "human-gradient",
-  "human-title",
-  "Documentary • 1 Season • 2021 - Present",
-  "https://www.netflix.com/title/81139212",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/402219",
-  "https://reelgood.com/show/human-the-world-within-2021",
-  "https://www.imdb.com/title/tt14574154"
-]
-
-//Spy
+// Spy
 var show12 = [
   "spy-solid",
   "spy-poster",
@@ -155,6 +169,9 @@ var show12 = [
   "https://reelgood.com/show/the-spy-2019",
   "https://www.imdb.com/title/tt5952634"
 ]
+
+
+
 
 //Chernobyl
 var show13 = [
@@ -201,35 +218,6 @@ var show15 = [
   "https://www.imdb.com/title/tt2303687"
 ]
 
-//Game of thrones
-var show16 = [
-  "gameofthrones-solid",
-  "gameofthrones-poster",
-  "gameofthrones-gradient",
-  "gameofthrones-title",
-  "Fantasy • 8 Seasons • 2011 - 2019",
-  "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
-  "hbo",
-  "Watch on HBO Max",
-  "https://www.tvtime.com/en/show/121361",
-  "https://reelgood.com/show/game-of-thrones-2011",
-  "https://www.imdb.com/title/tt0944947"
-]
-
-// Startup
-var show17 = [
-  "startup-solid",
-  "startup-poster",
-  "startup-gradient",
-  "startup-title",
-  "Drama • Crime • 3 Seasons • 2016 - 2019",
-  "https://www.netflix.com/title/80154285",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/310614",
-  "https://reelgood.com/show/startup-2016",
-  "https://www.imdb.com/title/tt5028002"
-]
 
 //Drive to survive
 var show18 = [
@@ -261,19 +249,19 @@ var show19 = [
   "https://www.imdb.com/title/tt12809988"
 ]
 
-// Lego masters
-var show2 = [
-  "loki-solid",
-  "loki-poster",
-  "loki-gradient",
-  "loki-title",
-  "Action & Adventure • Fantasy • 1 Season • 2021 - Present",
-  "https://www.hulu.com/series/lego-masters-fd4ada37-965a-4f86-9ea4-0b214f3e6d7e",
-  "hulu-green",
-  "Watch on Hulu",
-  "https://www.tvtime.com/en/show/362472",
-  "https://reelgood.com/show/loki-2021",
-  "https://www.imdb.com/title/tt9140554"
+//Human
+var show20 = [
+  "human-solid",
+  "human-poster",
+  "human-gradient",
+  "human-title",
+  "Documentary • 1 Season • 2021 - Present",
+  "https://www.netflix.com/title/81139212",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/402219",
+  "https://reelgood.com/show/human-the-world-within-2021",
+  "https://www.imdb.com/title/tt14574154"
 ]
 
 
@@ -281,20 +269,9 @@ var show2 = [
 
 
 
-// var show11 = hide
-// var show15 = hide
-// var show16 = hide
-// var show17 = hide
-// var show18 = hide
-// var show19 = hide
-// var show20 = hide
-
-
-
-
 // ---- TV Archived ---- //
 
-// var show = [
+// show = [
 //   "fargo-solid",
 //   "fargo-poster",
 //   "fargo-gradient",
@@ -304,7 +281,7 @@ var show2 = [
 //   "Watch on Hulu"
 // ]
 
-// var show = [
+// show = [
 //   "schulz-solid",
 //   "schulz-poster",
 //   "schulz-gradient",
@@ -318,7 +295,7 @@ var show2 = [
 //   "https://www.imdb.com/title/tt13607518"
 // ]
 
-// var show = [
+// show = [
 //   "snowfall-solid",
 //   "snowfall-poster",
 //   "snowfall-gradient",
@@ -332,7 +309,7 @@ var show2 = [
 //   "https://www.imdb.com/title/tt6439752"
 // ]
 
-// var show = [
+// show = [
 //   "mankind-solid",
 //   "mankind-poster",
 //   "mankind-gradient",
@@ -346,7 +323,7 @@ var show2 = [
 //   "https://www.imdb.com/title/tt7772588"
 // ]
 
-// var show = [
+// show = [
 //   "grandTour-solid",
 //   "grandTour-poster",
 //   "grandTour-gradient",
@@ -360,7 +337,7 @@ var show2 = [
 //   "https://www.imdb.com/title/tt5712554"
 // ]
 
-// var show = [
+// show = [
 //   "lego-solid",
 //   "lego-poster",
 //   "lego-gradient",
@@ -374,10 +351,47 @@ var show2 = [
 //   "https://www.imdb.com/title/tt9615014"
 // ]
 
+// show = [
+//   "last-solid",
+//   "last-poster",
+//   "last-gradient",
+//   "last-title",
+//   "Talk Show • 8 Seasons • 2020 - Present",
+//   "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
+//   "hbo",
+//   "Watch on HBO Max",
+//   "https://www.tvtime.com/en/show/278518",
+//   "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
+//   "https://www.imdb.com/title/tt3530232"
+// ]
 
+// show = [
+//   "startup-solid",
+//   "startup-poster",
+//   "startup-gradient",
+//   "startup-title",
+//   "Drama • Crime • 3 Seasons • 2016 - 2019",
+//   "https://www.netflix.com/title/80154285",
+//   "netflix",
+//   "Watch on Netflix",
+//   "https://www.tvtime.com/en/show/310614",
+//   "https://reelgood.com/show/startup-2016",
+//   "https://www.imdb.com/title/tt5028002"
+// ]
 
-
-
+// show = [
+//   "gameofthrones-solid",
+//   "gameofthrones-poster",
+//   "gameofthrones-gradient",
+//   "gameofthrones-title",
+//   "Fantasy • 8 Seasons • 2011 - 2019",
+//   "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
+//   "hbo",
+//   "Watch on HBO Max",
+//   "https://www.tvtime.com/en/show/121361",
+//   "https://reelgood.com/show/game-of-thrones-2011",
+//   "https://www.imdb.com/title/tt0944947"
+// ]
 
 
 

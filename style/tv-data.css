@@ -382,6 +382,19 @@
     background-image: url('../TV/title/loki.png');
 }
 
+.lupin-solid{
+    background-color: #716f73;
+}
+.lupin-gradient{
+    background: linear-gradient(#00000000,#716f73);
+}
+.lupin-poster{
+    background-image: url('../TV/background/lupin.webp');
+}
+.lupin-title{
+    background-image: url('../TV/title/lupin.png');
+}
+
 
 
 @media screen and (prefers-color-scheme: light) {
