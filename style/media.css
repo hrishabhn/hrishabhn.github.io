@@ -944,6 +944,7 @@
         scroll-margin-left: 5vw;
     }
     .tv-media-card{
+        scroll-snap-align: none;
         scroll-margin-left: 5vw;
     }
     .podcast-card{
