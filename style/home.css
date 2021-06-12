@@ -139,6 +139,9 @@
     .user-container{
         background: rgba(229, 229, 234, 1);
     }
+    .user-icon{
+        fill: #000000cc;
+    }
     .user-name-text{
         color: #000000cc;
     }
