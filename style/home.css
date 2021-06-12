@@ -152,6 +152,8 @@
     .user-container{
         width: 90vw;
         margin-left: 5vw;
+
+        margin-top: 0px;
     }
     .search-container{
         width: 90vw;

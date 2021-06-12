@@ -18,25 +18,25 @@ body{
 }
 
 .title-box{
-    height: 90px;
-    width: 100vw;
+    height: 75px;
+    width: 100%;
     
     display: flex;
     padding-top: 0px;
-    padding-bottom: 15px;
-    padding-left: 90px;
+    /* padding-bottom: 15px; */
+    padding-left: 20px;
 
     overflow: hidden;
     box-sizing: border-box;
 
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     top: 0;
     z-index: 50;
 
     align-content: flex-end;
 
-    background-color: rgba(28, 28, 30, 0.8);
+    /* background-color: rgba(28, 28, 30, 0.8); */
     -webkit-backdrop-filter: blur(25px);
 
 }
@@ -192,7 +192,7 @@ body{
     width: 100vw;
     padding-left: 70px;
     padding-right: 0px;
-    padding-top: 90px;
+    padding-top: 0px;
     padding-bottom: 0px;
     box-sizing: border-box;
 
@@ -608,7 +608,7 @@ gradients
     }
 
     .main{
-        padding-top: 110px;    
+        padding-top: 0px;    
         padding-left: 0px;
         padding-right: 0px;
         padding-bottom: 30vw;
