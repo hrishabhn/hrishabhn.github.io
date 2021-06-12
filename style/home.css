@@ -134,6 +134,17 @@
     opacity: 0.9;
 }
 
+@media screen and (prefers-color-scheme: light) {
+    .user-container{
+        background: rgba(229, 229, 234, 1);
+    }
+    .user-name-text{
+        color: #000000cc;
+    }
+    .user-name-subtext{
+        color: #00000099;
+    }
+}
 
 
 
