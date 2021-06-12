@@ -357,6 +357,15 @@ body{
     align-items: center;
 
     background-color: #1c1c1e;
+    transition: 0.25s;
+}
+.anchor-container:hover{
+    padding-left: 22px;
+    padding-right: 22px;
+
+    margin-left: -2px;
+    margin-right: 8px;
+    transition: 0.25s;
 }
 .anchor-icon-box{
     height: 20px;
