@@ -2,7 +2,7 @@
     fill: #1ce783 !important;
 }
 
-.tv-card{
+/* .tv-card{
     height: 265px;
     width: 335px;
     border-radius: 5px;
@@ -63,12 +63,6 @@
     box-sizing: border-box;
 
     background: #00000033;
-
-    /* align-items: center; */
-    /* display: inline-block; */
-    /* overflow: hidden; */
-
-    /* text-decoration: none; */
 
     z-index: 1;
 
@@ -148,7 +142,7 @@
     background-color: transparent;
 
     transition: 0.25s;
-}
+} */
 
 /* NEW */
 
