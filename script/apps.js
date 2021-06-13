@@ -156,8 +156,17 @@ var app_H11 = [
   "https://www.google.com/maps",
 ]
 
-// Whatsapp
+// Google maps
 var app_H12 = [
+    "spanishdict",
+    "SpanishDict",
+    "",
+    '<svg viewBox="34.54199981689453 34.54199981689453 108.5219955444336 108.5219955444336"><defs><clipPath id="a" clipPathUnits="userSpaceOnUse"><path d="M0 128h128V0H0z"></path></clipPath><clipPath id="b" clipPathUnits="userSpaceOnUse"><path d="M0 128h128V0H0z"></path></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 170.667)"></g><path d="M41.77 143.064h31.5l-4.53-60.841H45.87zM92.04 34.542l4.099 59.33h22.653l3.452-59.33z" data-color="2"></path><g clip-path="url(#b)" transform="matrix(1.33333 0 0 -1.33333 0 170.667)"><path d="M54.466 82.272c0-6.39-5.18-11.569-11.569-11.569-6.39 0-11.57 5.179-11.57 11.569 0 6.39 5.18 11.57 11.57 11.57 6.389 0 11.569-5.18 11.569-11.57M69.03 40.768c0 6.255 5.071 11.326 11.326 11.326 6.256 0 11.327-5.071 11.327-11.326 0-6.256-5.071-11.327-11.327-11.327-6.255 0-11.326 5.071-11.326 11.327" data-color="2"></path></g></svg>',
+    "https://www.spanishdict.com",
+  ]
+
+// Whatsapp
+var app_H13 = [
   "whatsapp hidden-mobile",
   "WhatsApp",
   "",
@@ -166,7 +175,7 @@ var app_H12 = [
 ]
 
 // Messenger
-var app_H13 = [
+var app_H14 = [
   "messenger",
   "Messenger",
   "",
@@ -175,7 +184,7 @@ var app_H13 = [
 ]
 
 // COVID Tracker
-var app_H14 = [
+var app_H15 = [
   "orange-gradient",
   "COVID Tracker",
   "",
@@ -184,7 +193,7 @@ var app_H14 = [
 ]
 
 // Purdue calendar
-var app_H15 = [
+var app_H16 = [
   "school-gradient",
   "Purdue Calendar",
   "",
