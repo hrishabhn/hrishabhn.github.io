@@ -343,9 +343,8 @@ show29 = [
   "https://www.imdb.com/title/tt12809988"
 ]
 
-
-
-show = [
+// Startup
+show30 = [
   "startup-solid",
   "startup-poster",
   "startup-gradient",
@@ -357,6 +356,21 @@ show = [
   "https://www.tvtime.com/en/show/310614",
   "https://reelgood.com/show/startup-2016",
   "https://www.imdb.com/title/tt5028002"
+]
+
+// For all mankind
+show31 = [
+  "mankind-solid",
+  "mankind-poster",
+  "mankind-gradient",
+  "mankind-title",
+  "Sci-Fi • 2 Seasons • 2019 - Present",
+  "https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
+  "black-gradient",
+  "Watch on  TV+",
+  "https://www.tvtime.com/en/show/356202",
+  "https://reelgood.com/show/for-all-mankind-2019",
+  "https://www.imdb.com/title/tt7772588"
 ]
 
 
@@ -406,19 +420,7 @@ show = [
 //   "https://www.imdb.com/title/tt6439752"
 // ]
 
-// show = [
-//   "mankind-solid",
-//   "mankind-poster",
-//   "mankind-gradient",
-//   "mankind-title",
-//   "Sci-Fi • 2 Seasons • 2019 - Present",
-//   "https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
-//   "black-gradient",
-//   "Watch on  TV+",
-//   "https://www.tvtime.com/en/show/356202",
-//   "https://reelgood.com/show/for-all-mankind-2019",
-//   "https://www.imdb.com/title/tt7772588"
-// ]
+
 
 // show = [
 //   "grandTour-solid",
@@ -460,20 +462,6 @@ show = [
 //   "https://www.tvtime.com/en/show/278518",
 //   "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
 //   "https://www.imdb.com/title/tt3530232"
-// ]
-
-// show = [
-//   "startup-solid",
-//   "startup-poster",
-//   "startup-gradient",
-//   "startup-title",
-//   "Drama • Crime • 3 Seasons • 2016 - 2019",
-//   "https://www.netflix.com/title/80154285",
-//   "netflix",
-//   "Watch on Netflix",
-//   "https://www.tvtime.com/en/show/310614",
-//   "https://reelgood.com/show/startup-2016",
-//   "https://www.imdb.com/title/tt5028002"
 // ]
 
 // show = [
