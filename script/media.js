@@ -105,12 +105,27 @@ show4 = [
 
 
 
-// Twin peaks
+// Fresh prince
 show11 = [
+  "fresh-solid",
+  "fresh-poster",
+  "fresh-gradient",
+  "fresh-title",
+  "Comedy • 6 Seasons • 1990 - 1996",
+  "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
+  "hbo",
+  "Watch on HBO Max",
+  "https://www.tvtime.com/en/show/76738",
+  "https://reelgood.com/show/the-fresh-prince-of-bel-air-1990",
+  "https://www.imdb.com/title/tt0098800"
+]
+
+// Twin peaks
+show12 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
-  "tv-tite twinpeaks-title",
+  "twinpeaks-title",
   "Mystery • 3 Seasons • 1990 - 1991",
   "https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a",
   "hulu-green",
@@ -121,7 +136,7 @@ show11 = [
 ]
 
 // Atlanta
-show12 = [
+show13 = [
   "atlanta-solid",
   "atlanta-poster",
   "atlanta-gradient",
@@ -136,7 +151,7 @@ show12 = [
 ]
 
 // Legion
-show13 = [
+show14 = [
   "legion-solid",
   "legion-poster",
   "legion-gradient",
@@ -151,7 +166,7 @@ show13 = [
 ]
 
 //Drive to survive
-show18 = [
+show15 = [
   "drive-solid",
   "drive-poster",
   "drive-gradient",
@@ -182,8 +197,23 @@ show21 = [
   "https://www.imdb.com/title/tt9140554"
 ]
 
-// Spy
+// Curb
 show22 = [
+  "curb-solid",
+  "curb-poster",
+  "curb-gradient",
+  "curb-title",
+  "Comedy • 10 Seasons • 2000 - Present",
+  "https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series",
+  "hbo",
+  "Watch on HBO Max",
+  "https://www.tvtime.com/en/show/76203",
+  "https://reelgood.com/show/curb-your-enthusiasm-2000",
+  "https://www.imdb.com/title/tt0264235"
+]
+
+// Spy
+show23 = [
   "spy-solid",
   "spy-poster",
   "spy-gradient",
@@ -198,13 +228,13 @@ show22 = [
 ]
 
 //Chernobyl
-show23 = [
+show24 = [
   "chernobyl-solid",
   "chernobyl-poster",
   "chernobyl-gradient",
   "chernobyl-title",
   "Thriller • 1 Season • 2019",
-  "",
+  "https://play.hbomax.com/page/urn:hbo:page:GXJvkMAU0JIG6gAEAAAIo:type:series",
   "hbo",
   "Watch on HBO Max",
   "https://www.tvtime.com/en/show/360893",
@@ -213,7 +243,7 @@ show23 = [
 ]
 
 // Manifest
-show24 = [
+show25 = [
   "manifest-solid",
   "manifest-poster",
   "manifest-gradient",
@@ -228,7 +258,7 @@ show24 = [
 ]
 
 //Human
-show25 = [
+show26 = [
   "human-solid",
   "human-poster",
   "human-gradient",
@@ -243,7 +273,7 @@ show25 = [
 ]
 
 //Line of duty 
-show26 = [
+show27 = [
   "lineofduty-solid",
   "lineofduty-poster",
   "lineofduty-gradient",
@@ -258,7 +288,7 @@ show26 = [
 ]
 
 //Mindhunter
-show27 = [
+show28 = [
   "mindhunter-solid",
   "mindhunter-poster",
   "mindhunter-gradient",
@@ -273,7 +303,7 @@ show27 = [
 ]
 
 //Sweet tooth
-show28 = [
+show29 = [
   "sweet-solid",
   "sweet-poster",
   "sweet-gradient",
@@ -288,7 +318,7 @@ show28 = [
 ]
 
 // Blindspotting
-show29 = [
+show30 = [
   "blind-solid",
   "blind-poster",
   "blind-gradient",

@@ -187,13 +187,13 @@
 }
 
 .legion-solid{
-    background-color: #191128;
+    background-color: #870093;
 }
 .legion-gradient{
-    background: linear-gradient(#00000000,#191128);
+    background: linear-gradient(#00000000,#870093);
 }
 .legion-poster{
-    background-image: url('../TV/background/legion.webp');
+    background-image: url('../TV/background/legion.jpg');
 }
 .legion-title{
     background-image: url('../TV/title/legion.png');
@@ -419,6 +419,32 @@
 }
 .blind-title{
     background-image: url('../TV/title/blind.png');
+}
+
+.curb-solid{
+    background-color: #746e6e;
+}
+.curb-gradient{
+    background: linear-gradient(#00000000,#746e6e);
+}
+.curb-poster{
+    background-image: url('../TV/background/curb.jpg');
+}
+.curb-title{
+    background-image: url('../TV/title/curb.png');
+}
+
+.fresh-solid{
+    background-color: #72429A;
+}
+.fresh-gradient{
+    background: linear-gradient(#00000000,#72429A);
+}
+.fresh-poster{
+    background-image: url('../TV/background/fresh.jpg');
+}
+.fresh-title{
+    background-image: url('../TV/title/fresh.png');
 }
 
 
