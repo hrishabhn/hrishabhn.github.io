@@ -1013,7 +1013,7 @@
     }
     .tv-page-button-container{
         border-radius: 20px;
-        scroll-snap-align: start;
+        scroll-snap-align: none;
         scroll-margin-left: 20px;
         /* margin-right: 20px; */
     }

@@ -41,6 +41,17 @@ var show28 = hide
 var show29 = hide
 var show30 = hide
 
+var show31 = hide
+var show32 = hide
+var show33 = hide
+var show34 = hide
+var show35 = hide
+var show36 = hide
+var show37 = hide
+var show38 = hide
+var show39 = hide
+var show40 = hide
+
 
 // Lupin
 show1 = [
@@ -105,8 +116,23 @@ show4 = [
 
 
 
-// Fresh prince
+// Loki
 show11 = [
+  "loki-solid",
+  "loki-poster",
+  "loki-gradient",
+  "loki-title",
+  "Action & Adventure • Fantasy • 1 Season • 2021 - Present",
+  "",
+  "disney",
+  "Watch on Disney+",
+  "https://www.tvtime.com/en/show/362472",
+  "https://reelgood.com/show/loki-2021",
+  "https://www.imdb.com/title/tt9140554"
+]
+
+// Fresh prince
+show12 = [
   "fresh-solid",
   "fresh-poster",
   "fresh-gradient",
@@ -121,7 +147,7 @@ show11 = [
 ]
 
 // Twin peaks
-show12 = [
+show13 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
@@ -136,7 +162,7 @@ show12 = [
 ]
 
 // Atlanta
-show13 = [
+show14 = [
   "atlanta-solid",
   "atlanta-poster",
   "atlanta-gradient",
@@ -151,7 +177,7 @@ show13 = [
 ]
 
 // Legion
-show14 = [
+show15 = [
   "legion-solid",
   "legion-poster",
   "legion-gradient",
@@ -166,7 +192,7 @@ show14 = [
 ]
 
 //Drive to survive
-show15 = [
+show16 = [
   "drive-solid",
   "drive-poster",
   "drive-gradient",
@@ -181,21 +207,6 @@ show15 = [
 ]
 
 
-
-// Loki
-show21 = [
-  "loki-solid",
-  "loki-poster",
-  "loki-gradient",
-  "loki-title",
-  "Action & Adventure • Fantasy • 1 Season • 2021 - Present",
-  "https://www.hulu.com/series/lego-masters-fd4ada37-965a-4f86-9ea4-0b214f3e6d7e",
-  "hulu-green",
-  "Watch on Hulu",
-  "https://www.tvtime.com/en/show/362472",
-  "https://reelgood.com/show/loki-2021",
-  "https://www.imdb.com/title/tt9140554"
-]
 
 // Curb
 show22 = [
@@ -560,7 +571,7 @@ var pod8 = [
 
   var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showSolid = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showPoster = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var showPoster = [0,0];
   var showGradient = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showTitle = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showDescription = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -938,10 +949,126 @@ showDescription[k] = show30[4];
      showTVtime[k] = show30[8];
    showReelgood[k] = show30[9];
        showIMDB[k] = show30[10];
-
-
-
-
+k = 31;
+      showSolid[k] = show31[0];
+     showPoster[k] = show31[1];
+   showGradient[k] = show31[2];
+      showTitle[k] = show31[3];
+showDescription[k] = show31[4];
+       showLink[k] = show31[5];
+   showServGrad[k] = show31[6];
+    showService[k] = show31[7];
+     showTVtime[k] = show31[8];
+   showReelgood[k] = show31[9];
+       showIMDB[k] = show31[10];
+k = 32;
+      showSolid[k] = show32[0];
+     showPoster[k] = show32[1];
+   showGradient[k] = show32[2];
+      showTitle[k] = show32[3];
+showDescription[k] = show32[4];
+       showLink[k] = show32[5];
+   showServGrad[k] = show32[6];
+    showService[k] = show32[7];
+     showTVtime[k] = show32[8];
+   showReelgood[k] = show32[9];
+       showIMDB[k] = show32[10];
+k = 33;
+      showSolid[k] = show33[0];
+     showPoster[k] = show33[1];
+   showGradient[k] = show33[2];
+      showTitle[k] = show33[3];
+showDescription[k] = show33[4];
+       showLink[k] = show33[5];
+   showServGrad[k] = show33[6];
+    showService[k] = show33[7];
+     showTVtime[k] = show33[8];
+   showReelgood[k] = show33[9];
+       showIMDB[k] = show33[10];
+k = 34;
+      showSolid[k] = show34[0];
+     showPoster[k] = show34[1];
+   showGradient[k] = show34[2];
+      showTitle[k] = show34[3];
+showDescription[k] = show34[4];
+       showLink[k] = show34[5];
+   showServGrad[k] = show34[6];
+    showService[k] = show34[7];
+     showTVtime[k] = show34[8];
+   showReelgood[k] = show34[9];
+       showIMDB[k] = show34[10];
+k = 35;
+      showSolid[k] = show35[0];
+     showPoster[k] = show35[1];
+   showGradient[k] = show35[2];
+      showTitle[k] = show35[3];
+showDescription[k] = show35[4];
+       showLink[k] = show35[5];
+   showServGrad[k] = show35[6];
+    showService[k] = show35[7];
+     showTVtime[k] = show35[8];
+   showReelgood[k] = show35[9];
+       showIMDB[k] = show35[10];
+k = 36;
+      showSolid[k] = show36[0];
+     showPoster[k] = show36[1];
+   showGradient[k] = show36[2];
+      showTitle[k] = show36[3];
+showDescription[k] = show36[4];
+       showLink[k] = show36[5];
+   showServGrad[k] = show36[6];
+    showService[k] = show36[7];
+     showTVtime[k] = show36[8];
+   showReelgood[k] = show36[9];
+       showIMDB[k] = show36[10];
+k = 37;
+      showSolid[k] = show37[0];
+     showPoster[k] = show37[1];
+   showGradient[k] = show37[2];
+      showTitle[k] = show37[3];
+showDescription[k] = show37[4];
+       showLink[k] = show37[5];
+   showServGrad[k] = show37[6];
+    showService[k] = show37[7];
+     showTVtime[k] = show37[8];
+   showReelgood[k] = show37[9];
+       showIMDB[k] = show37[10];
+k = 38;
+      showSolid[k] = show38[0];
+     showPoster[k] = show38[1];
+   showGradient[k] = show38[2];
+      showTitle[k] = show38[3];
+showDescription[k] = show38[4];
+       showLink[k] = show38[5];
+   showServGrad[k] = show38[6];
+    showService[k] = show38[7];
+     showTVtime[k] = show38[8];
+   showReelgood[k] = show38[9];
+       showIMDB[k] = show38[10];
+k = 39;
+      showSolid[k] = show39[0];
+     showPoster[k] = show39[1];
+   showGradient[k] = show39[2];
+      showTitle[k] = show39[3];
+showDescription[k] = show39[4];
+       showLink[k] = show39[5];
+   showServGrad[k] = show39[6];
+    showService[k] = show39[7];
+     showTVtime[k] = show39[8];
+   showReelgood[k] = show39[9];
+       showIMDB[k] = show39[10];
+k = 40;
+      showSolid[k] = show40[0];
+     showPoster[k] = show40[1];
+   showGradient[k] = show40[2];
+      showTitle[k] = show40[3];
+showDescription[k] = show40[4];
+       showLink[k] = show40[5];
+   showServGrad[k] = show40[6];
+    showService[k] = show40[7];
+     showTVtime[k] = show40[8];
+   showReelgood[k] = show40[9];
+       showIMDB[k] = show40[10];
 
 
 

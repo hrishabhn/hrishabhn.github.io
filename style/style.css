@@ -627,6 +627,9 @@ gradients
 .spanishdict{
     background:linear-gradient(to bottom right,#2571ae,#143e61);
 }
+.disney{
+    background:linear-gradient(to bottom right,#113ccf,#0a2682);
+}
 
 
 /* MEDIA */
