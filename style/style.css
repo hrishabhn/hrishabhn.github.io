@@ -359,19 +359,28 @@ body{
     background-color: #1c1c1e;
     transition: 0.25s;
 }
-.anchor-container:hover{
+/* .anchor-container:hover{
     padding-left: 22px;
     padding-right: 22px;
 
     margin-left: -2px;
     margin-right: 8px;
     transition: 0.25s;
+} */
+.anchor-container:hover .anchor-icon-box{
+    fill: #fff;
+    transition: 0.25s;
+}
+.anchor-container:hover .anchor-text{
+    color: #fff;
+    transition: 0.25s;
 }
 .anchor-icon-box{
     height: 20px;
     width: 20px;
 
-    fill: #ffffffcc;
+    fill: #ffffff99;
+    transition: 0.25s;
 }
 /* .anchor-icon{
     fill: #ffffffcc;
@@ -394,6 +403,7 @@ body{
     font-size: 14px;
     font-weight: 500;
     color: #ffffff99;
+    transition: 0.25s;
 }
 .anchor-button{
     height: 100%;
@@ -403,7 +413,7 @@ body{
     left: 0px;
     right: 0px;
     display: flex;
-    cursor: pointer;
+    cursor: default;
 
     /* background-color: #ffffff33; */
 }
@@ -660,8 +670,11 @@ gradients
     .sidebar-blur{
         background-color: rgba(229, 229, 234, 0.25);
     }
-    .title-box{
+    /* .title-box{
         background: rgba(229, 229, 234, 0.8);
+    } */
+    .title-text{
+        color: #1c1c1e;
     }
 
 
@@ -694,10 +707,16 @@ gradients
         background: rgba(229, 229, 234, 1);
     }
     .anchor-icon-box{
-        fill: #000000cc;
+        fill: #00000099;
     }
     .anchor-text{
         color: #00000099;
+    }
+    .anchor-container:hover .anchor-icon-box{
+        fill: #000;
+    }
+    .anchor-container:hover .anchor-text{
+        color: #000;
     }
 }
 
@@ -824,7 +843,7 @@ gradients
     @media screen and (prefers-color-scheme: light) {
 
         .notch-box{
-            background-color: #ffffffcc;
+            background-color: #f2f2f799;
         }   
     }
 }
