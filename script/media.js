@@ -146,8 +146,22 @@ show12 = [
   "https://www.imdb.com/title/tt0098800"
 ]
 
-// Twin peaks
 show13 = [
+  "last-solid",
+  "last-poster",
+  "last-gradient",
+  "last-title",
+  "Talk Show • 8 Seasons • 2020 - Present",
+  "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
+  "hbo",
+  "Watch on HBO Max",
+  "https://www.tvtime.com/en/show/278518",
+  "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
+  "https://www.imdb.com/title/tt3530232"
+]
+
+// Twin peaks
+show14 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
@@ -162,7 +176,7 @@ show13 = [
 ]
 
 // Atlanta
-show14 = [
+show15 = [
   "atlanta-solid",
   "atlanta-poster",
   "atlanta-gradient",
@@ -177,7 +191,7 @@ show14 = [
 ]
 
 // Legion
-show15 = [
+show16 = [
   "legion-solid",
   "legion-poster",
   "legion-gradient",
@@ -192,7 +206,7 @@ show15 = [
 ]
 
 //Drive to survive
-show16 = [
+show17 = [
   "drive-solid",
   "drive-poster",
   "drive-gradient",
@@ -420,8 +434,6 @@ show31 = [
 //   "https://www.imdb.com/title/tt6439752"
 // ]
 
-
-
 // show = [
 //   "grandTour-solid",
 //   "grandTour-poster",
@@ -448,20 +460,6 @@ show31 = [
 //   "https://www.tvtime.com/en/show/370166",
 //   "https://reelgood.com/show/lego-masters-2020",
 //   "https://www.imdb.com/title/tt9615014"
-// ]
-
-// show = [
-//   "last-solid",
-//   "last-poster",
-//   "last-gradient",
-//   "last-title",
-//   "Talk Show • 8 Seasons • 2020 - Present",
-//   "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
-//   "hbo",
-//   "Watch on HBO Max",
-//   "https://www.tvtime.com/en/show/278518",
-//   "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
-//   "https://www.imdb.com/title/tt3530232"
 // ]
 
 // show = [
