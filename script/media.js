@@ -208,6 +208,21 @@ show16 = [
 
 
 
+// Blindspotting
+show21 = [
+  "blind-solid",
+  "blind-poster",
+  "blind-gradient",
+  "blind-title",
+  "Drama • Comedy • 1 Season • 2021 - Present",
+  "",
+  "hulu",
+  "Watch Download",
+  "https://www.tvtime.com/en/show/392720",
+  "https://reelgood.com/show/blindspotting-2021",
+  "https://www.imdb.com/title/tt11097374"
+]
+
 // Curb
 show22 = [
   "curb-solid",
@@ -328,20 +343,22 @@ show29 = [
   "https://www.imdb.com/title/tt12809988"
 ]
 
-// Blindspotting
-show30 = [
-  "blind-solid",
-  "blind-poster",
-  "blind-gradient",
-  "blind-title",
-  "Drama • Comedy • 1 Season • 2021 - Present",
-  "",
-  "hulu",
-  "Watch Download",
-  "https://www.tvtime.com/en/show/392720",
-  "https://reelgood.com/show/blindspotting-2021",
-  "https://www.imdb.com/title/tt11097374"
+
+
+show = [
+  "startup-solid",
+  "startup-poster",
+  "startup-gradient",
+  "startup-title",
+  "Drama • Crime • 3 Seasons • 2016 - 2019",
+  "https://www.netflix.com/title/80154285",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/310614",
+  "https://reelgood.com/show/startup-2016",
+  "https://www.imdb.com/title/tt5028002"
 ]
+
 
 
 
@@ -569,23 +586,23 @@ var pod8 = [
 
 
 
-  var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showSolid = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showPoster = [0,0];
-  var showGradient = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showTitle = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showDescription = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showLink = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showServGrad = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showService = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showTVtime = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showReelgood = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showIMDB = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  // var showTitleText = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showName = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showSolid = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showPoster = [0,0];
+var showGradient = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showTitle = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showDescription = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showLink = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showServGrad = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showService = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showTVtime = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showReelgood = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var showIMDB = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+// var showTitleText = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 
 
-  // showName[1] = 
+// showName[1] = 
   
   var k = 1;
         showSolid[k] = show1[0];
@@ -1153,7 +1170,7 @@ function mediaTVPopulate(){
   var showPage = "TV/pages/tv-page-";
   var linkEnd = ".html"
 
-  for (i = 1; i < 31; i++){
+  for (i = 1; i < 41; i++){
     var itemid = [
       "card_".concat(i),
       "poster_".concat(i),
