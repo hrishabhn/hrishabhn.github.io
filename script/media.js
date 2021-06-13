@@ -30,9 +30,20 @@ var show18 = hide
 var show19 = hide
 var show20 = hide
 
+var show21 = hide
+var show22 = hide
+var show23 = hide
+var show24 = hide
+var show25 = hide
+var show26 = hide
+var show27 = hide
+var show28 = hide
+var show29 = hide
+var show30 = hide
+
 
 // Lupin
-var show1 = [
+show1 = [
   "lupin-solid",
   "lupin-poster",
   "lupin-gradient",
@@ -47,7 +58,7 @@ var show1 = [
 ]
 
 // Mythic quest
-var show2 = [
+show2 = [
   "mythic-solid",
   "mythic-poster",
   "mythic-gradient",
@@ -62,7 +73,7 @@ var show2 = [
 ]
 
 // Always sunny
-var show3 = [
+show3 = [
   "always-solid",
   "always-poster",
   "always-gradient",
@@ -78,7 +89,7 @@ var show3 = [
 ]
 
 // Kim's Convenience
-var show4 = [
+show4 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",
@@ -92,8 +103,10 @@ var show4 = [
   "https://www.imdb.com/title/tt5912064",
 ]
 
+
+
 // Twin peaks
-var show5 = [
+show11 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
@@ -108,7 +121,7 @@ var show5 = [
 ]
 
 // Atlanta
-var show6 = [
+show12 = [
   "atlanta-solid",
   "atlanta-poster",
   "atlanta-gradient",
@@ -123,7 +136,7 @@ var show6 = [
 ]
 
 // Legion
-var show7 = [
+show13 = [
   "legion-solid",
   "legion-poster",
   "legion-gradient",
@@ -137,11 +150,25 @@ var show7 = [
   "https://www.imdb.com/title/tt5114356"
 ]
 
+//Drive to survive
+show18 = [
+  "drive-solid",
+  "drive-poster",
+  "drive-gradient",
+  "drive-title",
+  "Documentary • 3 Seasons • 2019 - Present",
+  "https://www.netflix.com/title/80204890",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/359913",
+  "https://reelgood.com/show/formula-1-drive-to-survive-2019",
+  "https://www.imdb.com/title/tt8289930"
+]
 
 
 
 // Loki
-show11 = [
+show21 = [
   "loki-solid",
   "loki-poster",
   "loki-gradient",
@@ -156,7 +183,7 @@ show11 = [
 ]
 
 // Spy
-var show12 = [
+show22 = [
   "spy-solid",
   "spy-poster",
   "spy-gradient",
@@ -170,11 +197,8 @@ var show12 = [
   "https://www.imdb.com/title/tt5952634"
 ]
 
-
-
-
 //Chernobyl
-var show13 = [
+show23 = [
   "chernobyl-solid",
   "chernobyl-poster",
   "chernobyl-gradient",
@@ -188,23 +212,8 @@ var show13 = [
   "https://www.imdb.com/title/tt7366338"
 ]
 
-//Mindhunter
-var show14 = [
-  "mindhunter-solid",
-  "mindhunter-poster",
-  "mindhunter-gradient",
-  "mindhunter-title",
-  "Crime • 2 Seasons • 2017 - 2019",
-  "https://www.netflix.com/title/80114855",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/328708",
-  "https://reelgood.com/show/mindhunter-2017",
-  "https://www.imdb.com/title/tt5290382"
-]
-
 //Line of duty 
-var show15 = [
+show24 = [
   "lineofduty-solid",
   "lineofduty-poster",
   "lineofduty-gradient",
@@ -218,24 +227,38 @@ var show15 = [
   "https://www.imdb.com/title/tt2303687"
 ]
 
-
-//Drive to survive
-var show18 = [
-  "drive-solid",
-  "drive-poster",
-  "drive-gradient",
-  "drive-title",
-  "Documentary • 3 Seasons • 2019 - Present",
-  "https://www.netflix.com/title/80204890",
+//Human
+show25 = [
+  "human-solid",
+  "human-poster",
+  "human-gradient",
+  "human-title",
+  "Documentary • 1 Season • 2021 - Present",
+  "https://www.netflix.com/title/81139212",
   "netflix",
   "Watch on Netflix",
-  "https://www.tvtime.com/en/show/359913",
-  "https://reelgood.com/show/formula-1-drive-to-survive-2019",
-  "https://www.imdb.com/title/tt8289930"
+  "https://www.tvtime.com/en/show/402219",
+  "https://reelgood.com/show/human-the-world-within-2021",
+  "https://www.imdb.com/title/tt14574154"
+]
+
+//Mindhunter
+show26 = [
+  "mindhunter-solid",
+  "mindhunter-poster",
+  "mindhunter-gradient",
+  "mindhunter-title",
+  "Crime • 2 Seasons • 2017 - 2019",
+  "https://www.netflix.com/title/80114855",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/328708",
+  "https://reelgood.com/show/mindhunter-2017",
+  "https://www.imdb.com/title/tt5290382"
 ]
 
 //Sweet tooth
-var show19 = [
+show27 = [
   "sweet-solid",
   "sweet-poster",
   "sweet-gradient",
@@ -249,20 +272,36 @@ var show19 = [
   "https://www.imdb.com/title/tt12809988"
 ]
 
-//Human
-var show20 = [
-  "human-solid",
-  "human-poster",
-  "human-gradient",
-  "human-title",
-  "Documentary • 1 Season • 2021 - Present",
-  "https://www.netflix.com/title/81139212",
+// Manifest
+show28 = [
+  "manifest-solid",
+  "manifest-poster",
+  "manifest-gradient",
+  "manifest-title",
+  "Drama • Mystery • 3 Seasons • 2018 - Present",
+  "https://www.netflix.com/title/81221380",
   "netflix",
   "Watch on Netflix",
-  "https://www.tvtime.com/en/show/402219",
-  "https://reelgood.com/show/human-the-world-within-2021",
-  "https://www.imdb.com/title/tt14574154"
+  "https://www.tvtime.com/en/show/349271",
+  "https://reelgood.com/show/manifest-2018",
+  "https://www.imdb.com/title/tt8421350"
 ]
+
+// Blindspotting
+show29 = [
+  "blind-solid",
+  "blind-poster",
+  "blind-gradient",
+  "blind-title",
+  "Drama • Comedy • 1 Season • 2021 - Present",
+  "",
+  "hulu",
+  "Watch Download",
+  "https://www.tvtime.com/en/show/392720",
+  "https://reelgood.com/show/blindspotting-2021",
+  "https://www.imdb.com/title/tt11097374"
+]
+
 
 
 
@@ -501,7 +540,7 @@ var pod8 = [
   var showTVtime = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showReelgood = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var showIMDB = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var showTitleText = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  // var showTitleText = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 
 
@@ -519,7 +558,7 @@ var pod8 = [
        showTVtime[k] = show1[8];
      showReelgood[k] = show1[9];
          showIMDB[k] = show1[10];
-    showTitleText[k] = show1[11];
+    // showTitleText[k] = show1[11];
   k = 2;
         showSolid[k] = show2[0];
        showPoster[k] = show2[1];
@@ -532,7 +571,7 @@ var pod8 = [
        showTVtime[k] = show2[8];
      showReelgood[k] = show2[9];
          showIMDB[k] = show2[10];
-    showTitleText[k] = show2[11];
+    // showTitleText[k] = show2[11];
   k = 3;
         showSolid[k] = show3[0];
        showPoster[k] = show3[1];
@@ -737,18 +776,150 @@ var pod8 = [
        showTVtime[k] = show19[8];
      showReelgood[k] = show19[9];
          showIMDB[k] = show19[10];
-  k = 20;
-        showSolid[k] = show20[0];
-       showPoster[k] = show20[1];
-     showGradient[k] = show20[2];
-        showTitle[k] = show20[3];
-  showDescription[k] = show20[4];
-         showLink[k] = show20[5];
-     showServGrad[k] = show20[6];
-      showService[k] = show20[7];
-       showTVtime[k] = show20[8];
-     showReelgood[k] = show20[9];
-         showIMDB[k] = show20[10];
+k = 20;
+      showSolid[k] = show20[0];
+     showPoster[k] = show20[1];
+   showGradient[k] = show20[2];
+      showTitle[k] = show20[3];
+showDescription[k] = show20[4];
+       showLink[k] = show20[5];
+   showServGrad[k] = show20[6];
+    showService[k] = show20[7];
+     showTVtime[k] = show20[8];
+   showReelgood[k] = show20[9];
+       showIMDB[k] = show20[10];
+k = 21;
+      showSolid[k] = show21[0];
+     showPoster[k] = show21[1];
+   showGradient[k] = show21[2];
+      showTitle[k] = show21[3];
+showDescription[k] = show21[4];
+       showLink[k] = show21[5];
+   showServGrad[k] = show21[6];
+    showService[k] = show21[7];
+     showTVtime[k] = show21[8];
+   showReelgood[k] = show21[9];
+       showIMDB[k] = show21[10];
+k = 22;
+      showSolid[k] = show22[0];
+     showPoster[k] = show22[1];
+   showGradient[k] = show22[2];
+      showTitle[k] = show22[3];
+showDescription[k] = show22[4];
+       showLink[k] = show22[5];
+   showServGrad[k] = show22[6];
+    showService[k] = show22[7];
+     showTVtime[k] = show22[8];
+   showReelgood[k] = show22[9];
+       showIMDB[k] = show22[10];
+k = 23;
+      showSolid[k] = show23[0];
+     showPoster[k] = show23[1];
+   showGradient[k] = show23[2];
+      showTitle[k] = show23[3];
+showDescription[k] = show23[4];
+       showLink[k] = show23[5];
+   showServGrad[k] = show23[6];
+    showService[k] = show23[7];
+     showTVtime[k] = show23[8];
+   showReelgood[k] = show23[9];
+       showIMDB[k] = show23[10];
+k = 24;
+      showSolid[k] = show24[0];
+     showPoster[k] = show24[1];
+   showGradient[k] = show24[2];
+      showTitle[k] = show24[3];
+showDescription[k] = show24[4];
+       showLink[k] = show24[5];
+   showServGrad[k] = show24[6];
+    showService[k] = show24[7];
+     showTVtime[k] = show24[8];
+   showReelgood[k] = show24[9];
+       showIMDB[k] = show24[10];
+k = 25;
+      showSolid[k] = show25[0];
+     showPoster[k] = show25[1];
+   showGradient[k] = show25[2];
+      showTitle[k] = show25[3];
+showDescription[k] = show25[4];
+       showLink[k] = show25[5];
+   showServGrad[k] = show25[6];
+    showService[k] = show25[7];
+     showTVtime[k] = show25[8];
+   showReelgood[k] = show25[9];
+       showIMDB[k] = show25[10];
+k = 26;
+      showSolid[k] = show26[0];
+     showPoster[k] = show26[1];
+   showGradient[k] = show26[2];
+      showTitle[k] = show26[3];
+showDescription[k] = show26[4];
+       showLink[k] = show26[5];
+   showServGrad[k] = show26[6];
+    showService[k] = show26[7];
+     showTVtime[k] = show26[8];
+   showReelgood[k] = show26[9];
+       showIMDB[k] = show26[10];
+k = 27;
+      showSolid[k] = show27[0];
+     showPoster[k] = show27[1];
+   showGradient[k] = show27[2];
+      showTitle[k] = show27[3];
+showDescription[k] = show27[4];
+       showLink[k] = show27[5];
+   showServGrad[k] = show27[6];
+    showService[k] = show27[7];
+     showTVtime[k] = show27[8];
+   showReelgood[k] = show27[9];
+       showIMDB[k] = show27[10];
+k = 28;
+      showSolid[k] = show28[0];
+     showPoster[k] = show28[1];
+   showGradient[k] = show28[2];
+      showTitle[k] = show28[3];
+showDescription[k] = show28[4];
+       showLink[k] = show28[5];
+   showServGrad[k] = show28[6];
+    showService[k] = show28[7];
+     showTVtime[k] = show28[8];
+   showReelgood[k] = show28[9];
+       showIMDB[k] = show28[10];
+k = 29;
+      showSolid[k] = show29[0];
+     showPoster[k] = show29[1];
+   showGradient[k] = show29[2];
+      showTitle[k] = show29[3];
+showDescription[k] = show29[4];
+       showLink[k] = show29[5];
+   showServGrad[k] = show29[6];
+    showService[k] = show29[7];
+     showTVtime[k] = show29[8];
+   showReelgood[k] = show29[9];
+       showIMDB[k] = show29[10];
+k = 30;
+      showSolid[k] = show30[0];
+     showPoster[k] = show30[1];
+   showGradient[k] = show30[2];
+      showTitle[k] = show30[3];
+showDescription[k] = show30[4];
+       showLink[k] = show30[5];
+   showServGrad[k] = show30[6];
+    showService[k] = show30[7];
+     showTVtime[k] = show30[8];
+   showReelgood[k] = show30[9];
+       showIMDB[k] = show30[10];
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function tvPage(n){
@@ -825,7 +996,7 @@ function mediaTVPopulate(){
   var showPage = "TV/pages/tv-page-";
   var linkEnd = ".html"
 
-  for (i = 1; i < 21; i++){
+  for (i = 1; i < 31; i++){
     var itemid = [
       "card_".concat(i),
       "poster_".concat(i),
@@ -833,8 +1004,6 @@ function mediaTVPopulate(){
       "title_".concat(i),
       "desc_".concat(i),
       "link_".concat(i),
-      // "service".concat(i),
-      // "page_".concat(i),
     ]
 
     document.getElementById(itemid[0]).className =        cardClass.concat(showSolid[i]);
@@ -843,14 +1012,6 @@ function mediaTVPopulate(){
     document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
     document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
     document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);
-
-    // document.getElementById(itemid[6]).innerHTML =                       showService[i];
-    // document.getElementById(itemid[7]).href =                        showPage.concat(i);
-    // document.getElementById(itemid[8]).innerHTML =                   showDescription[i];
-
-
-
-
   }
   
 // BOOKS //

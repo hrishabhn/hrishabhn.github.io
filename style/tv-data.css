@@ -395,6 +395,35 @@
     background-image: url('../TV/title/lupin.png');
 }
 
+.manifest-solid{
+    background-color: #835546;
+}
+.manifest-gradient{
+    background: linear-gradient(#00000000,#835546);
+}
+.manifest-poster{
+    background-image: url('../TV/background/manifest.webp');
+}
+.manifest-title{
+    background-image: url('../TV/title/manifest.png');
+}
+
+.blind-solid{
+    background-color: #36352e;
+}
+.blind-gradient{
+    background: linear-gradient(#00000000,#36352e);
+}
+.blind-poster{
+    background-image: url('../TV/background/blind.jpg');
+}
+.blind-title{
+    background-image: url('../TV/title/blind.png');
+}
+
+
+
+
 
 
 @media screen and (prefers-color-scheme: light) {
