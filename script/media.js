@@ -212,19 +212,19 @@ show23 = [
   "https://www.imdb.com/title/tt7366338"
 ]
 
-//Line of duty 
+// Manifest
 show24 = [
-  "lineofduty-solid",
-  "lineofduty-poster",
-  "lineofduty-gradient",
-  "lineofduty-title",
-  "Thriller • 6 Season • 2012 - Present",
-  "https://www.netflix.com/title/70263817",
+  "manifest-solid",
+  "manifest-poster",
+  "manifest-gradient",
+  "manifest-title",
+  "Drama • Mystery • 3 Seasons • 2018 - Present",
+  "https://www.netflix.com/title/80241318",
   "netflix",
   "Watch on Netflix",
-  "https://www.tvtime.com/en/show/260092",
-  "https://reelgood.com/show/line-of-duty-2012",
-  "https://www.imdb.com/title/tt2303687"
+  "https://www.tvtime.com/en/show/349271",
+  "https://reelgood.com/show/manifest-2018",
+  "https://www.imdb.com/title/tt8421350"
 ]
 
 //Human
@@ -242,8 +242,23 @@ show25 = [
   "https://www.imdb.com/title/tt14574154"
 ]
 
-//Mindhunter
+//Line of duty 
 show26 = [
+  "lineofduty-solid",
+  "lineofduty-poster",
+  "lineofduty-gradient",
+  "lineofduty-title",
+  "Thriller • 6 Season • 2012 - Present",
+  "https://www.netflix.com/title/70263817",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/260092",
+  "https://reelgood.com/show/line-of-duty-2012",
+  "https://www.imdb.com/title/tt2303687"
+]
+
+//Mindhunter
+show27 = [
   "mindhunter-solid",
   "mindhunter-poster",
   "mindhunter-gradient",
@@ -258,7 +273,7 @@ show26 = [
 ]
 
 //Sweet tooth
-show27 = [
+show28 = [
   "sweet-solid",
   "sweet-poster",
   "sweet-gradient",
@@ -270,21 +285,6 @@ show27 = [
   "https://www.tvtime.com/en/show/355837",
   "https://reelgood.com/show/sweet-tooth-2021",
   "https://www.imdb.com/title/tt12809988"
-]
-
-// Manifest
-show28 = [
-  "manifest-solid",
-  "manifest-poster",
-  "manifest-gradient",
-  "manifest-title",
-  "Drama • Mystery • 3 Seasons • 2018 - Present",
-  "https://www.netflix.com/title/81221380",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/349271",
-  "https://reelgood.com/show/manifest-2018",
-  "https://www.imdb.com/title/tt8421350"
 ]
 
 // Blindspotting
