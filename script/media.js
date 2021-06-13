@@ -68,23 +68,8 @@ show1 = [
   "https://www.imdb.com/title/tt2531336",
 ]
 
-// Mythic quest
-show2 = [
-  "mythic-solid",
-  "mythic-poster",
-  "mythic-gradient",
-  "mythic-title",
-  "Comedy • 2 Seasons • 2020 - Present",
-  "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
-  "black-gradient",
-  "Watch on  TV+",
-  "https://www.tvtime.com/en/show/362829",
-  "https://reelgood.com/show/mythic-quest-2020",
-  "https://www.imdb.com/title/tt8879940"
-]
-
 // Always sunny
-show3 = [
+show2 = [
   "always-solid",
   "always-poster",
   "always-gradient",
@@ -100,7 +85,7 @@ show3 = [
 ]
 
 // Kim's Convenience
-show4 = [
+show3 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",
@@ -114,10 +99,23 @@ show4 = [
   "https://www.imdb.com/title/tt5912064",
 ]
 
-
+// Mythic quest
+show4 = [
+  "mythic-solid",
+  "mythic-poster",
+  "mythic-gradient",
+  "mythic-title",
+  "Comedy • 2 Seasons • 2020 - Present",
+  "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
+  "black-gradient",
+  "Watch on  TV+",
+  "https://www.tvtime.com/en/show/362829",
+  "https://reelgood.com/show/mythic-quest-2020",
+  "https://www.imdb.com/title/tt8879940"
+]
 
 // Loki
-show11 = [
+show5 = [
   "loki-solid",
   "loki-poster",
   "loki-gradient",
@@ -130,6 +128,8 @@ show11 = [
   "https://reelgood.com/show/loki-2021",
   "https://www.imdb.com/title/tt9140554"
 ]
+
+
 
 // Fresh prince
 show12 = [
