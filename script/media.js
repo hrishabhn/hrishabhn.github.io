@@ -256,7 +256,7 @@ show21 = [
   "earth-gradient",
   "earth-title",
   "Documentary • 2021",
-  "https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series",
+  "https://tv.apple.com/movie/the-year-earth-changed/umc.cmc.3fob3t7nfhehpb3ilgynzxmnu",
   "black-gradient",
   "Watch on TV+",
   "",
