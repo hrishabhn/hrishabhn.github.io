@@ -69,7 +69,7 @@ show1 = [
 ]
 
 // Always sunny
-show2 = [
+show3 = [
   "always-solid",
   "always-poster",
   "always-gradient",
@@ -85,7 +85,7 @@ show2 = [
 ]
 
 // Kim's Convenience
-show3 = [
+show4 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",
@@ -100,7 +100,7 @@ show3 = [
 ]
 
 // Mythic quest
-show4 = [
+show5 = [
   "mythic-solid",
   "mythic-poster",
   "mythic-gradient",
@@ -115,7 +115,7 @@ show4 = [
 ]
 
 // Loki
-show5 = [
+show6 = [
   "loki-solid",
   "loki-poster",
   "loki-gradient",
@@ -127,6 +127,21 @@ show5 = [
   "https://www.tvtime.com/en/show/362472",
   "https://reelgood.com/show/loki-2021",
   "https://www.imdb.com/title/tt9140554"
+]
+
+// Blindspotting
+show2 = [
+  "blind-solid",
+  "blind-poster",
+  "blind-gradient",
+  "blind-title",
+  "Drama • Comedy • 1 Season • 2021 - Present",
+  "",
+  "hulu",
+  "Watch Download",
+  "https://www.tvtime.com/en/show/392720",
+  "https://reelgood.com/show/blindspotting-2021",
+  "https://www.imdb.com/title/tt11097374"
 ]
 
 
@@ -222,20 +237,6 @@ show17 = [
 
 
 
-// Blindspotting
-show21 = [
-  "blind-solid",
-  "blind-poster",
-  "blind-gradient",
-  "blind-title",
-  "Drama • Comedy • 1 Season • 2021 - Present",
-  "",
-  "hulu",
-  "Watch Download",
-  "https://www.tvtime.com/en/show/392720",
-  "https://reelgood.com/show/blindspotting-2021",
-  "https://www.imdb.com/title/tt11097374"
-]
 
 // Curb
 show22 = [
