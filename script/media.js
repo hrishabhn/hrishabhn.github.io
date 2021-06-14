@@ -69,7 +69,7 @@ show1 = [
 ]
 
 // Always sunny
-show3 = [
+show2 = [
   "always-solid",
   "always-poster",
   "always-gradient",
@@ -85,7 +85,7 @@ show3 = [
 ]
 
 // Kim's Convenience
-show4 = [
+show3 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",
@@ -100,7 +100,7 @@ show4 = [
 ]
 
 // Mythic quest
-show5 = [
+show8 = [
   "mythic-solid",
   "mythic-poster",
   "mythic-gradient",
@@ -115,7 +115,7 @@ show5 = [
 ]
 
 // Loki
-show6 = [
+show9 = [
   "loki-solid",
   "loki-poster",
   "loki-gradient",
@@ -130,7 +130,7 @@ show6 = [
 ]
 
 // Blindspotting
-show2 = [
+show10 = [
   "blind-solid",
   "blind-poster",
   "blind-gradient",
