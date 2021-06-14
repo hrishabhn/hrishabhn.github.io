@@ -52,6 +52,17 @@ var show38 = hide
 var show39 = hide
 var show40 = hide
 
+var show41 = hide
+var show42 = hide
+var show43 = hide
+var show44 = hide
+var show45 = hide
+var show46 = hide
+var show47 = hide
+var show48 = hide
+var show49 = hide
+var show50 = hide
+
 
 // Lupin
 show1 = [
@@ -237,9 +248,72 @@ show17 = [
 
 
 
+// Movies
+
+show21 = [
+  "earth-solid",
+  "earth-poster",
+  "earth-gradient",
+  "earth-title",
+  "Documentary • 2021",
+  "https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series",
+  "black-gradient",
+  "Watch on TV+",
+  "",
+  "https://reelgood.com/movie/the-year-earth-changed-2021",
+  "https://www.imdb.com/title/tt14372240"
+]
+
+show22 = [
+  "ghost-solid",
+  "ghost-poster",
+  "ghost-gradient",
+  "ghost-title",
+  "Animated • Action • Crime • 1995",
+  "https://watch.amazon.com/detail?asin=B07WQZDXTM",
+  "prime",
+  "Watch on Prime Video",
+  "",
+  "https://reelgood.com/movie/ghost-in-the-shell-1995",
+  "https://www.imdb.com/title/tt0113568"
+]
+
+show23 = [
+  "john-solid",
+  "john-poster",
+  "john-gradient",
+  "john-title",
+  "Comedy • Drama • Fantasy • 1999",
+  "",
+  "hulu",
+  "Watch",
+  "",
+  "https://reelgood.com/movie/being-john-malkovich-1999",
+  "https://www.imdb.com/title/tt0120601"
+]
+
+show24 = [
+  "knives-solid",
+  "knives-poster",
+  "knives-gradient",
+  "knives-title",
+  "Comedy • Crime • Drama • 2019",
+  "https://watch.amazon.com/detail?asin=B081W68DP2",
+  "prime",
+  "Watch on Prime Video",
+  "",
+  "https://reelgood.com/movie/knives-out-2019",
+  "https://www.imdb.com/title/tt8946378"
+]
+
+
+
+
+
+// New
 
 // Curb
-show22 = [
+show32 = [
   "curb-solid",
   "curb-poster",
   "curb-gradient",
@@ -254,7 +328,7 @@ show22 = [
 ]
 
 // Spy
-show23 = [
+show33 = [
   "spy-solid",
   "spy-poster",
   "spy-gradient",
@@ -269,7 +343,7 @@ show23 = [
 ]
 
 //Chernobyl
-show24 = [
+show34 = [
   "chernobyl-solid",
   "chernobyl-poster",
   "chernobyl-gradient",
@@ -284,7 +358,7 @@ show24 = [
 ]
 
 // Manifest
-show25 = [
+show35 = [
   "manifest-solid",
   "manifest-poster",
   "manifest-gradient",
@@ -299,7 +373,7 @@ show25 = [
 ]
 
 //Human
-show26 = [
+show36 = [
   "human-solid",
   "human-poster",
   "human-gradient",
@@ -314,7 +388,7 @@ show26 = [
 ]
 
 //Line of duty 
-show27 = [
+show37 = [
   "lineofduty-solid",
   "lineofduty-poster",
   "lineofduty-gradient",
@@ -329,7 +403,7 @@ show27 = [
 ]
 
 //Mindhunter
-show28 = [
+show38 = [
   "mindhunter-solid",
   "mindhunter-poster",
   "mindhunter-gradient",
@@ -344,7 +418,7 @@ show28 = [
 ]
 
 //Sweet tooth
-show29 = [
+show39 = [
   "sweet-solid",
   "sweet-poster",
   "sweet-gradient",
@@ -359,7 +433,7 @@ show29 = [
 ]
 
 // Startup
-show30 = [
+show40 = [
   "startup-solid",
   "startup-poster",
   "startup-gradient",
@@ -374,7 +448,7 @@ show30 = [
 ]
 
 // For all mankind
-show31 = [
+show41 = [
   "mankind-solid",
   "mankind-poster",
   "mankind-gradient",
@@ -1073,7 +1147,126 @@ showDescription[k] = show40[4];
      showTVtime[k] = show40[8];
    showReelgood[k] = show40[9];
        showIMDB[k] = show40[10];
-
+k = 41;
+      showSolid[k] = show41[0];
+     showPoster[k] = show41[1];
+   showGradient[k] = show41[2];
+      showTitle[k] = show41[3];
+showDescription[k] = show41[4];
+       showLink[k] = show41[5];
+   showServGrad[k] = show41[6];
+    showService[k] = show41[7];
+     showTVtime[k] = show41[8];
+   showReelgood[k] = show41[9];
+       showIMDB[k] = show41[10];
+k = 42;
+      showSolid[k] = show42[0];
+     showPoster[k] = show42[1];
+   showGradient[k] = show42[2];
+      showTitle[k] = show42[3];
+showDescription[k] = show42[4];
+       showLink[k] = show42[5];
+   showServGrad[k] = show42[6];
+    showService[k] = show42[7];
+     showTVtime[k] = show42[8];
+   showReelgood[k] = show42[9];
+       showIMDB[k] = show42[10];
+k = 43;
+      showSolid[k] = show43[0];
+     showPoster[k] = show43[1];
+   showGradient[k] = show43[2];
+      showTitle[k] = show43[3];
+showDescription[k] = show43[4];
+       showLink[k] = show43[5];
+   showServGrad[k] = show43[6];
+    showService[k] = show43[7];
+     showTVtime[k] = show43[8];
+   showReelgood[k] = show43[9];
+       showIMDB[k] = show43[10];
+k = 44;
+      showSolid[k] = show44[0];
+     showPoster[k] = show44[1];
+   showGradient[k] = show44[2];
+      showTitle[k] = show44[3];
+showDescription[k] = show44[4];
+       showLink[k] = show44[5];
+   showServGrad[k] = show44[6];
+    showService[k] = show44[7];
+     showTVtime[k] = show44[8];
+   showReelgood[k] = show44[9];
+       showIMDB[k] = show44[10];
+k = 45;
+      showSolid[k] = show45[0];
+     showPoster[k] = show45[1];
+   showGradient[k] = show45[2];
+      showTitle[k] = show45[3];
+showDescription[k] = show45[4];
+       showLink[k] = show45[5];
+   showServGrad[k] = show45[6];
+    showService[k] = show45[7];
+     showTVtime[k] = show45[8];
+   showReelgood[k] = show45[9];
+       showIMDB[k] = show45[10];
+k = 46;
+      showSolid[k] = show46[0];
+     showPoster[k] = show46[1];
+   showGradient[k] = show46[2];
+      showTitle[k] = show46[3];
+showDescription[k] = show46[4];
+       showLink[k] = show46[5];
+   showServGrad[k] = show46[6];
+    showService[k] = show46[7];
+     showTVtime[k] = show46[8];
+   showReelgood[k] = show46[9];
+       showIMDB[k] = show46[10];
+k = 47;
+      showSolid[k] = show47[0];
+     showPoster[k] = show47[1];
+   showGradient[k] = show47[2];
+      showTitle[k] = show47[3];
+showDescription[k] = show47[4];
+       showLink[k] = show47[5];
+   showServGrad[k] = show47[6];
+    showService[k] = show47[7];
+     showTVtime[k] = show47[8];
+   showReelgood[k] = show47[9];
+       showIMDB[k] = show47[10];
+k = 48;
+      showSolid[k] = show48[0];
+     showPoster[k] = show48[1];
+   showGradient[k] = show48[2];
+      showTitle[k] = show48[3];
+showDescription[k] = show48[4];
+       showLink[k] = show48[5];
+   showServGrad[k] = show48[6];
+    showService[k] = show48[7];
+     showTVtime[k] = show48[8];
+   showReelgood[k] = show48[9];
+       showIMDB[k] = show48[10];
+k = 49;
+      showSolid[k] = show49[0];
+     showPoster[k] = show49[1];
+   showGradient[k] = show49[2];
+      showTitle[k] = show49[3];
+showDescription[k] = show49[4];
+       showLink[k] = show49[5];
+   showServGrad[k] = show49[6];
+    showService[k] = show49[7];
+     showTVtime[k] = show49[8];
+   showReelgood[k] = show49[9];
+       showIMDB[k] = show49[10];
+k = 50;
+      showSolid[k] = show50[0];
+     showPoster[k] = show50[1];
+   showGradient[k] = show50[2];
+      showTitle[k] = show50[3];
+showDescription[k] = show50[4];
+       showLink[k] = show50[5];
+   showServGrad[k] = show50[6];
+    showService[k] = show50[7];
+     showTVtime[k] = show50[8];
+   showReelgood[k] = show50[9];
+       showIMDB[k] = show50[10];
 
 
 
@@ -1157,7 +1350,7 @@ function mediaTVPopulate(){
   var showPage = "TV/pages/tv-page-";
   var linkEnd = ".html"
 
-  for (i = 1; i < 41; i++){
+  for (i = 1; i < 51; i++){
     var itemid = [
       "card_".concat(i),
       "poster_".concat(i),

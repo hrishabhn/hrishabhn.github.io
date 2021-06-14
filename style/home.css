@@ -14,7 +14,7 @@
     width: 60px;
     border-radius: 100%;
     margin-left: 25px;
-    fill: #ffffff99;
+    fill: #ff3b30cc;
 
     /* align-self: center; */
 }
@@ -139,9 +139,9 @@
     .user-container{
         background: rgba(229, 229, 234, 1);
     }
-    .user-icon{
+    /* .user-icon{
         fill: #000000cc;
-    }
+    } */
     .user-name-text{
         color: #000000cc;
     }

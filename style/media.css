@@ -290,6 +290,10 @@
     z-index: 4;
 }
 
+
+
+
+
 @media(min-width: 450px){
     .tv-media-card:hover{
         width: 375px;

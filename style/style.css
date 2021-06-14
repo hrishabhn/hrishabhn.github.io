@@ -368,7 +368,7 @@ body{
     transition: 0.25s;
 } */
 .anchor-container:hover .anchor-icon-box{
-    fill: #fff;
+    fill: #ff3b30;
     transition: 0.25s;
 }
 .anchor-container:hover .anchor-text{
@@ -379,7 +379,7 @@ body{
     height: 20px;
     width: 20px;
 
-    fill: #ffffff99;
+    fill: #ff3b30cc;
     transition: 0.25s;
 }
 /* .anchor-icon{
@@ -617,7 +617,7 @@ gradients
     background:linear-gradient(to bottom right,#991eeb,#5822b4);
 }
 .prime{
-    background:linear-gradient(to bottom right,#00a8e1,#00a8e1);
+    background:linear-gradient(to bottom right,#00a8e1,#006f94);
 }
 .whatsapp{
     background:linear-gradient(to bottom right,#25d366,#188741);
@@ -706,15 +706,15 @@ gradients
     .anchor-container{
         background: rgba(229, 229, 234, 1);
     }
-    .anchor-icon-box{
+    /* .anchor-icon-box{
         fill: #00000099;
-    }
+    } */
     .anchor-text{
         color: #00000099;
     }
-    .anchor-container:hover .anchor-icon-box{
+    /* .anchor-container:hover .anchor-icon-box{
         fill: #000;
-    }
+    } */
     .anchor-container:hover .anchor-text{
         color: #000;
     }
