@@ -156,21 +156,6 @@ show10 = [
 ]
 
 
-// New girl
-show12 = [
-  "newgirl-solid",
-  "newgirl-poster",
-  "newgirl-gradient",
-  "newgirl-title",
-  "Comedy • 7 Seasons • 2011 - 2018",
-  "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/76738",
-  "https://reelgood.com/show/new-girl-2011",
-  "https://www.imdb.com/title/tt0098800"
-]
-
 // Himym
 show11 = [
   "himym-solid",
@@ -178,12 +163,28 @@ show11 = [
   "himym-gradient",
   "himym-title",
   "Comedy • 9 Seasons • 2005 - 2014",
-  "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
+  "https://www.netflix.com/title/70143824",
   "netflix",
   "Watch on Netflix",
-  "https://www.tvtime.com/en/show/76738",
+  "https://www.tvtime.com/en/show/75760",
+  "https://reelgood.com/show/how-i-met-your-mother-2005",
+  "https://www.imdb.com/title/tt0460649"
+  // tt0098800"
+]
+
+// New girl
+show12 = [
+  "newgirl-solid",
+  "newgirl-poster",
+  "newgirl-gradient",
+  "newgirl-title",
+  "Comedy • 7 Seasons • 2011 - 2018",
+  "https://www.netflix.com/title/70196145",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/248682",
   "https://reelgood.com/show/new-girl-2011",
-  "https://www.imdb.com/title/tt0098800"
+  "https://www.imdb.com/title/tt1826940"
 ]
 
 // Fresh prince
