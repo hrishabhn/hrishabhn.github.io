@@ -169,17 +169,24 @@ body{
 
 }
 .menu-item:hover .menu-item-icon{
-    /* fill: #fff;
-    color: #fff; */
+    fill: #fff;
+
     transition: 0.25s;
 }
 .selected{
     /* color: #fff; */
-    fill: #fff;
+    /* fill: #fff; */
     background-color: rgba(255, 255, 255, 0.1);
 }
+.selected .menu-item-icon{
+    fill: #ff3b30;
+}
+.selected:hover .menu-item-icon{
+    fill: #ff3b30;
+}
 
-.selected .home-icon{
+
+/* .selected .home-icon{
     fill: #8080ff;
 }
 .selected .bookmarks-icon{
@@ -193,9 +200,9 @@ body{
 }
 .selected .work-icon{
     fill: rgba(217, 174, 0, 1);
-}
+} */
 
-.home-icon{
+/* .home-icon{
     fill: rgba(128, 128, 255, 0.8);
 }
 .bookmarks-icon{
@@ -209,9 +216,9 @@ body{
 }
 .work-icon{
     fill: rgba(217, 174, 0, 0.8);
-}
+} */
 
-.menu-item:hover .home-icon{
+/* .menu-item:hover .home-icon{
     fill: rgba(128, 128, 255, 1);
 }
 .menu-item:hover .bookmarks-icon{
@@ -225,7 +232,7 @@ body{
 }
 .menu-item:hover .work-icon{
     fill: rgba(217, 174, 0, 1);
-}
+} */
 
 
 
@@ -851,7 +858,23 @@ gradients
         height: 5.5vw;
         width: 5.5vw;
     }
-
+    .selected{
+        background-color: transparent;
+    }
+    .menu-item .menu-item-icon{
+        transition: 0s;
+    }
+    .menu-item:hover .menu-item-icon{
+        fill: #ff3b30;
+    
+        transition: 0s;
+    }
+    .selected .menu-item-icon{
+        fill: #ff3b30;
+    }
+    .selected:hover .menu-item-icon{
+        fill: #ff3b30;
+    }
    
 
     
