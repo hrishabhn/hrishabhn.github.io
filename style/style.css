@@ -11,7 +11,8 @@
 
 body{
     background:#000000;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hidden-always{
