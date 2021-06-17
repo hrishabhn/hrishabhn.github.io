@@ -730,8 +730,23 @@ gradients
         color: #1c1c1e;
     }
 
+    .menu-item-icon{
+        fill: #00000099;
+    
+    }
+    .menu-item:hover .menu-item-icon{
+        fill: #000;
+    }
 
-    .menu-item{
+    /* .selected .menu-item-icon{
+        fill: #ff3b30;
+    } */
+    .selected:hover .menu-item-icon{
+        fill: #ff3b30;
+    }
+
+
+    /* .menu-item{
         fill: #1c1c1e80;
         color: #1c1c1e80;
     }
@@ -739,7 +754,7 @@ gradients
     .menu-item:hover{
         fill: #1c1c1e;
         color: #1c1c1e;
-    }
+    } */
 
     .selected{
         /* color: #fff; */
