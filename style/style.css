@@ -67,24 +67,16 @@ body{
 }
 .work-bar{
     background: rgba(217, 174, 0, 0.9);
-}
+} */
 
-.home-icon{
-    fill: rgba(128, 128, 255, 0.9);
-}
-.bookmarks-icon{
-    fill: rgba(42, 161, 72, 0.9);
-}
-.school-icon{
-    fill: rgba(189, 174, 120, 0.9);
-}
-.media-icon{
-    fill: rgba(217, 50, 41, 0.9);
-}
-.work-icon{
-    fill: rgba(217, 174, 0, 0.9);
-}
 
+
+
+
+
+
+
+/*
 .home-title{
     color: rgba(128, 128, 255, 0.9);
 }
@@ -167,23 +159,75 @@ body{
     width: 100%;
     border-radius: inherit;
     transition: inherit;
-    fill: #ff3b3099;
     /* color: #ffffff99; */
 }
 .menu-item-icon{
     height: 16px;
     width: 16px;
+    fill: #ffffff99;
+    transition: 0.25s;
+
 }
-.menu-item:hover{
-    fill: #ff3b30;
-    color: #fff;
-    transition: inherit;
+.menu-item:hover .menu-item-icon{
+    /* fill: #fff;
+    color: #fff; */
+    transition: 0.25s;
 }
 .selected{
     /* color: #fff; */
-    fill: #ff3b3099;
+    fill: #fff;
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+.selected .home-icon{
+    fill: #8080ff;
+}
+.selected .bookmarks-icon{
+    fill: #2aa148;
+}
+.selected .school-icon{
+    fill: rgba(189, 174, 120, 1);
+}
+.selected .media-icon{
+    fill: rgba(217, 50, 41, 1);
+}
+.selected .work-icon{
+    fill: rgba(217, 174, 0, 1);
+}
+
+.home-icon{
+    fill: rgba(128, 128, 255, 0.8);
+}
+.bookmarks-icon{
+    fill: rgba(42, 161, 72, 0.8);
+}
+.school-icon{
+    fill: rgba(189, 174, 120, 0.8);
+}
+.media-icon{
+    fill: rgba(217, 50, 41, 0.8);
+}
+.work-icon{
+    fill: rgba(217, 174, 0, 0.8);
+}
+
+.menu-item:hover .home-icon{
+    fill: rgba(128, 128, 255, 1);
+}
+.menu-item:hover .bookmarks-icon{
+    fill: rgba(42, 161, 72, 1);
+}
+.menu-item:hover .school-icon{
+    fill: rgba(189, 174, 120, 1);
+}
+.menu-item:hover .media-icon{
+    fill: rgba(217, 50, 41, 1);
+}
+.menu-item:hover .work-icon{
+    fill: rgba(217, 174, 0, 1);
+}
+
+
 
 
 
@@ -695,7 +739,6 @@ gradients
         /* fill: #fff; */
         background-color: rgba(0, 0, 0, 0.1);
     }
-
     .subtitle-text{
         color: #1c1c1e;
     }
@@ -807,10 +850,6 @@ gradients
     .menu-item-icon{
         height: 5.5vw;
         width: 5.5vw;
-    }
-    .selected{
-        /* background-color: rgba(255, 255, 255, 0.1); */
-        background: transparent;
     }
 
    
