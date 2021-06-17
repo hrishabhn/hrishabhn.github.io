@@ -174,10 +174,10 @@
 }
 
 .kim-solid{
-    background-color: #776550;
+    background-color: #A05234;
 }
 .kim-gradient{
-    background: linear-gradient(#00000000,#776550);
+    background: linear-gradient(#00000000,#A05234);
 }
 .kim-poster{
     background-image: url('../TV/background/kims\ convenience.webp');
@@ -499,6 +499,31 @@
     background-image: url('../TV/title/knives.png');
 }
 
+.newgirl-solid{
+    background-color: #a59c4f;
+}
+.newgirl-gradient{
+    background: linear-gradient(#00000000,#a59c4f);
+}
+.newgirl-poster{
+    background-image: url('../TV/background/newgirl.jpg');
+}
+.newgirl-title{
+    background-image: url('../TV/title/newgirl.png');
+}
+
+.himym-solid{
+    background-color: #92846f;
+}
+.himym-gradient{
+    background: linear-gradient(#00000000,#92846f);
+}
+.himym-poster{
+    background-image: url('../TV/background/himym.jpg');
+}
+.himym-title{
+    background-image: url('../TV/title/himym.png');
+}
 
 
 

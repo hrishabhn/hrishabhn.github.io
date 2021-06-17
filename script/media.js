@@ -156,9 +156,38 @@ show10 = [
 ]
 
 
+// New girl
+show12 = [
+  "newgirl-solid",
+  "newgirl-poster",
+  "newgirl-gradient",
+  "newgirl-title",
+  "Comedy • 7 Seasons • 2011 - 2018",
+  "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/76738",
+  "https://reelgood.com/show/new-girl-2011",
+  "https://www.imdb.com/title/tt0098800"
+]
+
+// Himym
+show11 = [
+  "himym-solid",
+  "himym-poster",
+  "himym-gradient",
+  "himym-title",
+  "Comedy • 9 Seasons • 2005 - 2014",
+  "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/76738",
+  "https://reelgood.com/show/new-girl-2011",
+  "https://www.imdb.com/title/tt0098800"
+]
 
 // Fresh prince
-show12 = [
+show13 = [
   "fresh-solid",
   "fresh-poster",
   "fresh-gradient",
@@ -172,7 +201,7 @@ show12 = [
   "https://www.imdb.com/title/tt0098800"
 ]
 
-show13 = [
+show14 = [
   "last-solid",
   "last-poster",
   "last-gradient",
@@ -187,7 +216,7 @@ show13 = [
 ]
 
 // Twin peaks
-show14 = [
+show15 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
@@ -202,7 +231,7 @@ show14 = [
 ]
 
 // Atlanta
-show15 = [
+show16 = [
   "atlanta-solid",
   "atlanta-poster",
   "atlanta-gradient",
@@ -217,7 +246,7 @@ show15 = [
 ]
 
 // Legion
-show16 = [
+show17 = [
   "legion-solid",
   "legion-poster",
   "legion-gradient",
@@ -232,7 +261,7 @@ show16 = [
 ]
 
 //Drive to survive
-show17 = [
+show18 = [
   "drive-solid",
   "drive-poster",
   "drive-gradient",
