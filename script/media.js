@@ -64,21 +64,6 @@ var show49 = hide
 var show50 = hide
 
 
-// Lupin
-show1 = [
-  "lupin-solid",
-  "lupin-poster",
-  "lupin-gradient",
-  "lupin-title",
-  "Crime • Thriller • 1 Season • 2021 - Present",
-  "https://www.netflix.com/title/80994082",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/375921",
-  "https://reelgood.com/show/lupin-2021",
-  "https://www.imdb.com/title/tt2531336",
-]
-
 // Always sunny
 show2 = [
   "always-solid",
@@ -579,6 +564,20 @@ show41 = [
 //   "https://www.tvtime.com/en/show/121361",
 //   "https://reelgood.com/show/game-of-thrones-2011",
 //   "https://www.imdb.com/title/tt0944947"
+// ]
+
+// show = [
+//   "lupin-solid",
+//   "lupin-poster",
+//   "lupin-gradient",
+//   "lupin-title",
+//   "Crime • Thriller • 1 Season • 2021 - Present",
+//   "https://www.netflix.com/title/80994082",
+//   "netflix",
+//   "Watch on Netflix",
+//   "https://www.tvtime.com/en/show/375921",
+//   "https://reelgood.com/show/lupin-2021",
+//   "https://www.imdb.com/title/tt2531336",
 // ]
 
 
