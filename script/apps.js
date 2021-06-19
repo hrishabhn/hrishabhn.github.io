@@ -1148,7 +1148,7 @@ function bookmarkAppPopulate(){
     var containerClass = "app-container ";
     var gradientClass = "app-icon-container ";
 
-    for (i = 51; i < 91; i++){
+    for (i = 51; i < 101; i++){
         var itemid = [
         "appContainer_".concat(i),
         "appName_".concat(i),
