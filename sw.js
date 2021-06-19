@@ -1,4 +1,4 @@
-const staticDashboard = "dashboard-v2"
+const cacheName = "dashboard"
 const assets = [
   "/",
   "/index.html",
