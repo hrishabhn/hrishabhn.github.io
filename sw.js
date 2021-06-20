@@ -7,6 +7,12 @@ const assets = [
   "/media.html",
   "/app.js",
 
+  "/style/style.css",
+  "/style/home.css",
+  "/style/media.css",
+  "/style/tv-data.css",
+
+
   "/script/apps.js",
   "/script/media.js",
 
