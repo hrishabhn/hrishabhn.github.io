@@ -12,7 +12,6 @@ const assets = [
   "/style/media.css",
   "/style/tv-data.css",
 
-
   "/script/apps.js",
   "/script/media.js",
 
