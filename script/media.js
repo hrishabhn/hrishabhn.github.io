@@ -65,7 +65,7 @@ var show50 = hide
 
 
 // Always sunny
-show2 = [
+show1 = [
   "always-solid",
   "always-poster",
   "always-gradient",
@@ -81,7 +81,7 @@ show2 = [
 ]
 
 // Kim's Convenience
-show3 = [
+show2 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",
@@ -93,6 +93,21 @@ show3 = [
   "https://www.tvtime.com/en/show/315908",
   "https://reelgood.com/show/kims-convenience-2016",
   "https://www.imdb.com/title/tt5912064",
+]
+
+// Love Death Robots
+show3 = [
+  "ldr-solid",
+  "ldr-poster",
+  "ldr-gradient",
+  "ldr-title",
+  "Animated • Sci-Fi • 2 Seasons • 2019 - Present",
+  "https://www.netflix.com/title/80174608",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/357888",
+  "https://reelgood.com/show/love-death-robots-2019",
+  "https://www.imdb.com/title/tt9561862",
 ]
 
 // Mythic quest

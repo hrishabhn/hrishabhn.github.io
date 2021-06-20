@@ -525,6 +525,18 @@
     background-image: url('../TV/title/himym.png');
 }
 
+.ldr-solid{
+    background-color: #200f17;
+}
+.ldr-gradient{
+    background: linear-gradient(#00000000,#200f17);
+}
+.ldr-poster{
+    background-image: url('../TV/background/ldr.webp');
+}
+.ldr-title{
+    background-image: url('../TV/title/ldr.png');
+}
 
 
 
