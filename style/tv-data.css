@@ -128,10 +128,10 @@
     background: linear-gradient(#00000000,#2F322F);
 }
 .mythic-poster{
-    background-image: url('../TV/background/mythic\ quest.webp');
+    background-image: url('../TV/background/mythic.webp');
 }
 .mythic-title{
-    background-image: url('../TV/title/mythic\ quest.png');
+    background-image: url('../TV/title/mythic.png');
 }
 
 .spy-solid{
@@ -154,10 +154,10 @@
     background: linear-gradient(#00000000,#5c666a);
 }
 .always-poster{
-    background-image: url('../TV/background/always\ sunny.jpg');
+    background-image: url('../TV/background/always.jpg');
 }
 .always-title{
-    background-image: url('../TV/title/always\ sunny.png');
+    background-image: url('../TV/title/always.png');
 }
 
 .twinpeaks-solid{
@@ -180,7 +180,7 @@
     background: linear-gradient(#00000000,#1F4152);
 }
 .kim-poster{
-    background-image: url('../TV/background/kims\ convenience.webp');
+    background-image: url('../TV/background/kim.webp');
 }
 .kim-title{
     background-image: url('../TV/title/kim.svg');
@@ -536,22 +536,4 @@
 }
 .ldr-title{
     background-image: url('../TV/title/ldr.png');
-}
-
-
-
-@media screen and (prefers-color-scheme: light) {
-
-}
-
-
-
-@media(max-width: 450px){    
-    /* .always-poster{
-        background-image: url('../TV/poster/always.webp');
-    } */
-    /* .kim-poster{
-        background-image: url('../TV/poster/kim.webp');
-    } */
-
 }
