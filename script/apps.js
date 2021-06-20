@@ -1288,9 +1288,6 @@ function schoolAppPopulate(){
   ]
   
   
-  
-  // School 3
-  
   // Slack IISE
   var app_S21 = [
     "slack",
