@@ -472,7 +472,54 @@ body{
 }
 
 
+.shortcut-container{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* cursor: pointer; */
 
+    margin-right: 10px;
+    /* top: 15px; */
+    /* left: 15px; */
+
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+
+    transition: 0.25s;
+
+    background: #1c1c1e33;
+    /* -webkit-backdrop-filter: blur(100px); */
+
+
+}
+.shortcut-icon{
+    fill: #fff;
+    height: 35px;
+    width: 35px;
+    transition: 0.25s;
+    /* background-size: contain; */
+}
+.shortcut-link{
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    top: 0px;
+    left: 0px;
+
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+
+    /* background: #00ff0080; */
+}
 
 
 
