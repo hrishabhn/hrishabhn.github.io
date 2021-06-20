@@ -834,7 +834,11 @@ gradients
     }
 }
 
-
+@media(min-width: 1100px){
+    .hidden-desktop{
+        display: none !important;
+    }
+}
 
 
 
