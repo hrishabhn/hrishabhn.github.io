@@ -90,7 +90,7 @@ function homeAppPopulate(){
     ]
 
     // OneDrive
-    var app_H02 = [
+    var app_H03 = [
     "hidden-mobile onedrive",
     "OneDrive",
     "",
@@ -99,7 +99,7 @@ function homeAppPopulate(){
     ]
 
     // ClickUp
-    var app_H03 = [
+    var app_H04 = [
     "clickup",
     "ClickUp",
     "",
@@ -108,7 +108,7 @@ function homeAppPopulate(){
     ]
 
     // Notion
-    var app_H04 = [
+    var app_H05 = [
     "grey-gradient",
     "Notion",
     "",
@@ -117,7 +117,7 @@ function homeAppPopulate(){
     ]
 
     // School email
-    var app_H05 = [
+    var app_H06 = [
     "hidden-mobile outlook-blue",
     "School",
     "",
@@ -126,7 +126,7 @@ function homeAppPopulate(){
     ]
 
     // To do
-    var app_H06 = [
+    var app_H07 = [
     "clickup-teal",
     "To do",
     "",
@@ -135,7 +135,7 @@ function homeAppPopulate(){
     ]
 
     // Habits
-    var app_H07 = [
+    var app_H08 = [
     "clickup-purple",
     "Habits",
     "",
@@ -144,7 +144,7 @@ function homeAppPopulate(){
     ]
 
     // Gmail
-    var app_H08 = [
+    var app_H09 = [
     "hidden-mobile google-red",
     "Gmail",
     "",
@@ -153,7 +153,7 @@ function homeAppPopulate(){
     ]
 
     // Google Drive
-    var app_H09 = [
+    var app_H10 = [
     "hidden-mobile google-green",
     "Drive",
     "",
