@@ -743,6 +743,15 @@ gradients
 .snapchat{
     background:linear-gradient(to bottom right,#fffc00,#b3b000);
 }
+.audible{
+    background:linear-gradient(to bottom right,#F8991D,#ab6a15);
+}
+.podcasts{
+    background:linear-gradient(to bottom right,#D56EFD,#842BC1);
+}
+.books{
+    background:linear-gradient(to bottom right,#FC880F,#b0600b);
+}
 
 
 /* MEDIA */
