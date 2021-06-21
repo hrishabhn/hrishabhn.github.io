@@ -69,10 +69,41 @@ function homeAppPopulate(){
     var app_H49 = hide;
     var app_H50 = hide;
 
+    var app_H51 = hide;
+    var app_H52 = hide;
+    var app_H53 = hide;
+    var app_H54 = hide;
+    var app_H55 = hide;
+    var app_H56 = hide;
+    var app_H57 = hide;
+    var app_H58 = hide;
+    var app_H59 = hide;
+    var app_H60 = hide;
+
+
+
+    // Lights on
+    var app_H01 = [
+    "yellow-gradient",
+    "Lights On",
+    "",
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.004 512.004"><path d="M319.933 373.338H192.082c-5.888 0-10.667 7.168-10.667 16s4.768 16 10.667 16h127.851c5.888 0 10.667-7.168 10.667-16s-4.779-16-10.667-16zM319.933 426.671H192.082c-5.888 0-10.667 7.168-10.667 16s4.768 16 10.667 16h127.851c5.888 0 10.667-7.168 10.667-16s-4.779-16-10.667-16zM287.997 480.004h-64c-5.888 0-10.667 7.168-10.667 16s4.768 16 10.667 16h64c5.888 0 10.667-7.168 10.667-16s-4.811-16-10.667-16zM403.378 107.876c-3.915-10.379-13.067-34.688-35.2-58.155-23.349-24.757-51.136-40.533-82.603-46.816a151.903 151.903 0 00-59.136 0c-31.424 6.293-59.221 22.037-82.603 46.805-22.059 23.36-31.275 47.744-35.2 58.155-4.981 13.216-14.261 37.803-11.648 70.144 2.88 35.584 18.368 61.579 23.467 70.123 3.2 5.28 9.6 15.371 22.453 33.483 3.2 4.576 6.005 8.32 8.405 11.573 5.973 8.107 9.269 12.576 12.661 19.627a127.997 127.997 0 0110.144 30.24 10.666 10.666 0 0010.443 8.533h142.901a10.667 10.667 0 0010.475-8.725 110.8 110.8 0 0110.016-29.867c3.712-7.339 7.136-12.032 13.355-20.565a1041.38 1041.38 0 007.861-10.891c8.843-12.459 16.491-23.221 22.4-33.461 5.653-9.6 20.672-35.2 23.467-70.091 2.54-32.394-6.698-56.928-11.658-70.112z"/></svg>',
+    "shortcuts://run-shortcut?name=Lights%20On",
+    ]
+
+    // Lights off
+    var app_H02 = [
+    "indigo-gradient",
+    "Lights Off",
+    "",
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.004 512.004"><path d="M319.933 373.338H192.082c-5.888 0-10.667 7.168-10.667 16s4.768 16 10.667 16h127.851c5.888 0 10.667-7.168 10.667-16s-4.779-16-10.667-16zM319.933 426.671H192.082c-5.888 0-10.667 7.168-10.667 16s4.768 16 10.667 16h127.851c5.888 0 10.667-7.168 10.667-16s-4.779-16-10.667-16zM287.997 480.004h-64c-5.888 0-10.667 7.168-10.667 16s4.768 16 10.667 16h64c5.888 0 10.667-7.168 10.667-16s-4.811-16-10.667-16zM403.378 107.876c-3.915-10.379-13.067-34.688-35.2-58.155-23.349-24.757-51.136-40.533-82.603-46.816a151.903 151.903 0 00-59.136 0c-31.424 6.293-59.221 22.037-82.603 46.805-22.059 23.36-31.275 47.744-35.2 58.155-4.981 13.216-14.261 37.803-11.648 70.144 2.88 35.584 18.368 61.579 23.467 70.123 3.2 5.28 9.6 15.371 22.453 33.483 3.2 4.576 6.005 8.32 8.405 11.573 5.973 8.107 9.269 12.576 12.661 19.627a127.997 127.997 0 0110.144 30.24 10.666 10.666 0 0010.443 8.533h142.901a10.667 10.667 0 0010.475-8.725 110.8 110.8 0 0110.016-29.867c3.712-7.339 7.136-12.032 13.355-20.565a1041.38 1041.38 0 007.861-10.891c8.843-12.459 16.491-23.221 22.4-33.461 5.653-9.6 20.672-35.2 23.467-70.091 2.54-32.394-6.698-56.928-11.658-70.112z"/></svg>',
+    "shortcuts://run-shortcut?name=Lights%20Off",
+    ]
+
 
 
     // Outlook
-    var app_H01 = [
+    var app_H11 = [
     "hidden-mobile outlook",
     "Outlook",
     "",
@@ -80,8 +111,8 @@ function homeAppPopulate(){
     "https://outlook.live.com",
     ]
 
-    // Outlook
-    var app_H02 = [
+    // Outlook mobile
+    var app_H12 = [
     "hidden-desktop outlook",
     "Outlook",
     "",
@@ -90,7 +121,7 @@ function homeAppPopulate(){
     ]
 
     // OneDrive
-    var app_H03 = [
+    var app_H13 = [
     "hidden-mobile onedrive",
     "OneDrive",
     "",
@@ -99,7 +130,7 @@ function homeAppPopulate(){
     ]
 
     // ClickUp
-    var app_H04 = [
+    var app_H14 = [
     "clickup",
     "ClickUp",
     "",
@@ -108,7 +139,7 @@ function homeAppPopulate(){
     ]
 
     // Notion
-    var app_H05 = [
+    var app_H15 = [
     "grey-gradient",
     "Notion",
     "",
@@ -117,7 +148,7 @@ function homeAppPopulate(){
     ]
 
     // School email
-    var app_H06 = [
+    var app_H16 = [
     "hidden-mobile outlook-blue",
     "School",
     "",
@@ -126,7 +157,7 @@ function homeAppPopulate(){
     ]
 
     // To do
-    var app_H07 = [
+    var app_H17 = [
     "clickup-teal",
     "To do",
     "",
@@ -135,7 +166,7 @@ function homeAppPopulate(){
     ]
 
     // Habits
-    var app_H08 = [
+    var app_H18 = [
     "clickup-purple",
     "Habits",
     "",
@@ -144,7 +175,7 @@ function homeAppPopulate(){
     ]
 
     // Gmail
-    var app_H09 = [
+    var app_H19 = [
     "hidden-mobile google-red",
     "Gmail",
     "",
@@ -153,7 +184,7 @@ function homeAppPopulate(){
     ]
 
     // Google Drive
-    var app_H10 = [
+    var app_H20 = [
     "hidden-mobile google-green",
     "Drive",
     "",
@@ -162,8 +193,9 @@ function homeAppPopulate(){
     ]
 
 
+
     // Notion work
-    app_H11 = [
+    app_H21 = [
     "grey-gradient",
     "Notion",
     "",
@@ -172,7 +204,7 @@ function homeAppPopulate(){
     ]
 
     // OneDrive work
-    app_H12 = [
+    app_H22 = [
     "onedrive",
     "OneDrive",
     "",
@@ -181,7 +213,7 @@ function homeAppPopulate(){
     ]
 
     // ClickUp
-    app_H13 = [
+    app_H23 = [
     "clickup",
     "ClickUp",
     "",
@@ -192,7 +224,7 @@ function homeAppPopulate(){
 
 
     // Google maps
-    var app_H21 = [
+    var app_H31 = [
     "google-blue",
     "Google Maps",
     "",
@@ -201,7 +233,7 @@ function homeAppPopulate(){
     ]
 
     // Spanishdict
-    var app_H22 = [
+    var app_H32 = [
     "spanishdict",
     "SpanishDict",
     "",
@@ -210,7 +242,7 @@ function homeAppPopulate(){
     ]
 
     // COVID Tracker
-    var app_H23 = [
+    var app_H33 = [
     "orange-gradient",
     "COVID Tracker",
     "",
@@ -219,7 +251,7 @@ function homeAppPopulate(){
     ]
 
     // Purdue calendar
-    var app_H24 = [
+    var app_H34 = [
     "school-gradient",
     "Purdue Calendar",
     "",
@@ -230,7 +262,7 @@ function homeAppPopulate(){
 
 
     // Pocket
-    var app_H31 = [
+    var app_H41 = [
     "pocket hidden-mobile",
     "Pocket",
     "",
@@ -239,7 +271,7 @@ function homeAppPopulate(){
     ]
 
     // Pocket mobile
-    var app_H32 = [
+    var app_H42 = [
     "pocket hidden-desktop",
     "Pocket",
     "",
@@ -248,7 +280,7 @@ function homeAppPopulate(){
     ]
 
     // Feedly
-    var app_H33 = [
+    var app_H43 = [
     "feedly",
     "Feedly",
     "",
@@ -257,7 +289,7 @@ function homeAppPopulate(){
     ]
 
     // YouTube (Feedly)
-    var app_H34 = [
+    var app_H44 = [
     "youtube",
     "YouTube",
     "",
@@ -268,7 +300,7 @@ function homeAppPopulate(){
 
 
     // Snapchat
-    app_H41 = [
+    app_H51 = [
     "snapchat hidden-desktop",
     "Snapchat",
     "",
@@ -278,7 +310,7 @@ function homeAppPopulate(){
 
 
     // Whatsapp web
-    app_H42 = [
+    app_H52 = [
     "whatsapp hidden-mobile",
     "WhatsApp",
     "",
@@ -287,7 +319,7 @@ function homeAppPopulate(){
     ]
 
     // Messenger
-    app_H43 = [
+    app_H53 = [
     "messenger",
     "Messenger",
     "",
@@ -296,7 +328,7 @@ function homeAppPopulate(){
     ]
 
     // Reddit
-    app_H44 = [
+    app_H54 = [
     "reddit",
     "Reddit",
     "",
@@ -305,7 +337,7 @@ function homeAppPopulate(){
     ]
 
     // Twitter
-    app_H45 = [
+    app_H55 = [
     "twitter hidden-mobile",
     "Twitter",
     "",
@@ -314,7 +346,7 @@ function homeAppPopulate(){
     ]
 
     // Linkedin
-    app_H46 = [
+    app_H56 = [
     "linkedin",
     "LinkedIn",
     "",
@@ -323,7 +355,7 @@ function homeAppPopulate(){
     ]
 
     // Groupme
-    app_H47 = [
+    app_H57 = [
     "teal-gradient hidden-mobile",
     "GroupMe",
     "",
@@ -634,7 +666,66 @@ appContainer[k] = app_H50[0];
  appGradient[k] = app_H50[2];
      appIcon[k] = app_H50[3];
      appLink[k] = app_H50[4];
-
+k = 51;
+appContainer[k] = app_H51[0];
+     appName[k] = app_H51[1];
+ appGradient[k] = app_H51[2];
+     appIcon[k] = app_H51[3];
+     appLink[k] = app_H51[4];
+k = 52;
+appContainer[k] = app_H52[0];
+     appName[k] = app_H52[1];
+ appGradient[k] = app_H52[2];
+     appIcon[k] = app_H52[3];
+     appLink[k] = app_H52[4];
+k = 53;
+appContainer[k] = app_H53[0];
+     appName[k] = app_H53[1];
+ appGradient[k] = app_H53[2];
+     appIcon[k] = app_H53[3];
+     appLink[k] = app_H53[4];
+k = 54;
+appContainer[k] = app_H54[0];
+     appName[k] = app_H54[1];
+ appGradient[k] = app_H54[2];
+     appIcon[k] = app_H54[3];
+     appLink[k] = app_H54[4];
+k = 55;
+appContainer[k] = app_H55[0];
+     appName[k] = app_H55[1];
+ appGradient[k] = app_H55[2];
+     appIcon[k] = app_H55[3];
+     appLink[k] = app_H55[4];
+k = 56;
+appContainer[k] = app_H56[0];
+     appName[k] = app_H56[1];
+ appGradient[k] = app_H56[2];
+     appIcon[k] = app_H56[3];
+     appLink[k] = app_H56[4];
+k = 57;
+appContainer[k] = app_H57[0];
+     appName[k] = app_H57[1];
+ appGradient[k] = app_H57[2];
+     appIcon[k] = app_H57[3];
+     appLink[k] = app_H57[4];
+k = 58;
+appContainer[k] = app_H58[0];
+     appName[k] = app_H58[1];
+ appGradient[k] = app_H58[2];
+     appIcon[k] = app_H58[3];
+     appLink[k] = app_H58[4];
+k = 59;
+appContainer[k] = app_H59[0];
+     appName[k] = app_H59[1];
+ appGradient[k] = app_H59[2];
+     appIcon[k] = app_H59[3];
+     appLink[k] = app_H59[4];
+k = 60;
+appContainer[k] = app_H60[0];
+     appName[k] = app_H60[1];
+ appGradient[k] = app_H60[2];
+     appIcon[k] = app_H60[3];
+     appLink[k] = app_H60[4];
 
 
 
@@ -642,8 +733,9 @@ appContainer[k] = app_H50[0];
 
     var containerClass = "app-container ";
     var gradientClass = "app-icon-container ";
+    // var nameClass = "hidden-always ";
 
-    for (i = 1; i < 51; i++){
+    for (i = 1; i < 61; i++){
         var itemid = [
         "appContainer_".concat(i),
         "appName_".concat(i),
@@ -653,7 +745,7 @@ appContainer[k] = app_H50[0];
         ]
 
         document.getElementById(itemid[0]).className = containerClass.concat(appContainer[i]);
-        document.getElementById(itemid[1]).innerHTML =                            appName[i];
+        document.getElementById(itemid[1]).innerHTML =           appName[i];
         document.getElementById(itemid[2]).className =   gradientClass.concat(appGradient[i]);
         document.getElementById(itemid[3]).innerHTML =                            appIcon[i];
         document.getElementById(itemid[4]).href =                                 appLink[i];
