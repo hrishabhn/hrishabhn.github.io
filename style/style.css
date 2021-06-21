@@ -958,11 +958,56 @@ gradients
 
         left: 0px;
     }
-    .app-container{
-        /* scroll-snap-align: start; */
+    /* .app-container{
         scroll-margin-left: 5vw;
         transition: 0.25s;
+    } */
+
+    .app-container{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+    
+        margin-right: 2.5vw;
+    
+        scroll-snap-align: none;
+        scroll-margin-left: 90px;
     }
+    .app-container:hover .app-icon-container{
+        width: 100%;
+        height: 100%;
+    
+        margin-top: 0px;
+        margin-left: 0px;
+    
+        transition: 0.25s;
+    }
+    
+    
+    .app-icon-container{
+        top: 0px;
+        left: 0px;
+    
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    
+        transition: 0.25s;
+    
+        background: transparent;
+    }
+    .app-icon{
+        fill: #fff;
+        height: 25px;
+        width: 25px;
+        transition: 0.25s;
+    }
+    .app-text{
+        display: none;
+    }
+
+
+
 
 
     /* .app-container:hover{
