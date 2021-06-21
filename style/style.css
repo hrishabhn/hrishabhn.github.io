@@ -843,7 +843,7 @@ gradients
     }
 }
 
-@media(max-width: 1100px min-width: 450px){
+@media(max-width: 1100px) and (min-width: 450px){
     .hidden-tablet{
         display: none !important;
     }
