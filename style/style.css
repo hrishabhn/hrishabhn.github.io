@@ -758,7 +758,12 @@ gradients
 .shortcuts{
     background:linear-gradient(to bottom right,#1D1F5A,#3539a6);
 }
-
+.venmo{
+    background:linear-gradient(to bottom right,#3d95ce,#275e82);
+}
+.za{
+    background:linear-gradient(to bottom right,#32CB9D,#208063);
+}
 
 /* MEDIA */
 
