@@ -773,6 +773,9 @@ gradients
 .citi-blue{
     background:linear-gradient(to bottom right,#003B70,#0065bd);
 }
+.appstore{
+    background:linear-gradient(to bottom right,#1AC8FB,#1D70F1);
+}
 
 /* MEDIA */
 
