@@ -755,6 +755,9 @@ gradients
 .mstodo{
     background:linear-gradient(to bottom right,#185ABD,#0f3670);
 }
+.shortcuts{
+    background:linear-gradient(to bottom right,#1D1F5A,#3539a6);
+}
 
 
 /* MEDIA */
