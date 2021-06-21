@@ -110,6 +110,21 @@ show3 = [
   "https://www.imdb.com/title/tt9561862",
 ]
 
+// Rick and Morty
+show7 = [
+  "rick-solid",
+  "rick-poster",
+  "rick-gradient",
+  "rick-title",
+  "Animation • Comedy • 5 Seasons • 20XX - Present",
+  "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
+  "hulu",
+  "Watch",
+  "https://www.tvtime.com/en/show/362829",
+  "https://reelgood.com/show/mythic-quest-2020",
+  "https://www.imdb.com/title/tt8879940"
+]
+
 // Mythic quest
 show8 = [
   "mythic-solid",

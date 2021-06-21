@@ -764,6 +764,15 @@ gradients
 .zabank{
     background:linear-gradient(to bottom right,#32CB9D,#208063);
 }
+.hsbc{
+    background:linear-gradient(to bottom right,#db0011,#a8000e);
+}
+.citi-red{
+    background:linear-gradient(to bottom right,#D9261C,#8c1812);
+}
+.citi-blue{
+    background:linear-gradient(to bottom right,#003B70,#0065bd);
+}
 
 /* MEDIA */
 

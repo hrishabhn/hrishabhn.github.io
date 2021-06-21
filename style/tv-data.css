@@ -537,3 +537,16 @@
 .ldr-title{
     background-image: url('../TV/title/ldr.png');
 }
+
+.rick-solid{
+    background-color: #745A0F;
+}
+.rick-gradient{
+    background: linear-gradient(#00000000,#745A0F);
+}
+.rick-poster{
+    background-image: url('../TV/background/rick.webp');
+}
+.rick-title{
+    background-image: url('../TV/title/rick.png');
+}
