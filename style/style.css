@@ -752,6 +752,9 @@ gradients
 .books{
     background:linear-gradient(to bottom right,#FC880F,#b0600b);
 }
+.mstodo{
+    background:linear-gradient(to bottom right,#185ABD,#0f3670);
+}
 
 
 /* MEDIA */
