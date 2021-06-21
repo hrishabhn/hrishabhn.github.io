@@ -539,13 +539,13 @@
 }
 
 .rick-solid{
-    background-color: #745A0F;
+    background-color: #255F97;
 }
 .rick-gradient{
-    background: linear-gradient(#00000000,#745A0F);
+    background: linear-gradient(#00000000,#255F97);
 }
 .rick-poster{
-    background-image: url('../TV/background/rick.webp');
+    background-image: url('../TV/background/rick.jpg');
 }
 .rick-title{
     background-image: url('../TV/title/rick.png');

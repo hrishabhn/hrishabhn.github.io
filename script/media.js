@@ -65,7 +65,7 @@ var show50 = hide
 
 
 // Always sunny
-show1 = [
+show2 = [
   "always-solid",
   "always-poster",
   "always-gradient",
@@ -81,7 +81,7 @@ show1 = [
 ]
 
 // Kim's Convenience
-show2 = [
+show1 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",

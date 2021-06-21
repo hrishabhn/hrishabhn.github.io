@@ -195,11 +195,15 @@
     background-color: #00000000;
     fill: #fff;
 
-    height: 75px;
+    height: 100px;
     width: 250px;
 
     transition: 0.25s;
 }
+/* .title-tall{
+    height: 100px;
+} */
+
 
 .tv-media-more-container{
     position: absolute;
