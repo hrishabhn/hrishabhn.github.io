@@ -569,7 +569,7 @@
     max-height: 90vh;
     /* border-top-left-radius: 44pt; */
     /* border-top-right-radius: 44pt; */
-    border-radius: 44pt;
+    border-radius: 40pt;
     z-index: 5;
 }
 .tv-popup-tab{
