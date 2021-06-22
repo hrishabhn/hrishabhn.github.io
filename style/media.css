@@ -558,13 +558,13 @@
     display: block;
     align-self: flex-end;
     background-color: green;
-    margin-left: 2.5vw;
+    /* margin-left: 2.5vw; */
     /* margin-bottom: 2.5vw; */
     /* padding: 20px; */
-    width: 95vw;
+    width: 100vw;
     height: auto;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     /* border-radius: 0px; */
     z-index: 5;
 }
@@ -588,13 +588,14 @@
     width: 100%;
     border-radius: inherit;
 
-    padding: 2.5vw;
+    padding: 5vw;
     box-sizing: border-box;
 
     position: relative;
     vertical-align: top;
     margin-right: 0px;
     margin-bottom: 0px;
+    padding-bottom: 10vw;
 
     /* overflow: hidden; */
 }
@@ -603,6 +604,7 @@
     height: 50.625vw;
 
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     background-position: center center;
     display: block;
@@ -664,19 +666,19 @@
     position: relative;
     box-sizing: border-box;
 
-    padding-left: 7.5vw;
+    padding-left: 5vw;
     padding-bottom: 5vw;
     padding-top: 5vw;
     padding-right: 0;
 
-    margin-left: -2.5vw;
-    margin-right: -2.5vw;
+    margin-left: -5vw;
+    margin-right: -5vw;
 
 
 
     height: 25vw;
     /* max-height: 110px; */
-    width: 95vw;
+    width: 100vw;
 
 
     overflow-x: scroll;
@@ -698,20 +700,20 @@
 
     /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
 
-    margin-right: 7.5vw;
+    margin-right: 5vw;
     position: relative;
     transition: 0.25s;
 }
 .tv-popup-icon{
     fill: #fff;
-    height: 12px;
-    width: 12px;
+    height: 3vw;
+    width: 3vw;
     /* margin-top: 14px;
     margin-left: 20px; */
 
     /* background: blue; */
     position: absolute;
-    top: 24px;
+    top: 6vw;
     left: 25px;
     /* bottom: 80px; */
     transition: 0.25s;
@@ -740,7 +742,7 @@
     padding-left: 25px;
     padding-right: 25px;
     color: white;
-    font-size: 18px;
+    font-size: 3.5vw;
     font-weight: 500;
 
     transition: 0.25s;
@@ -1247,7 +1249,7 @@
     }
     
     .tv-play-button{
-        min-width: 80vw;
+        min-width: 90vw;
     
     }
     
