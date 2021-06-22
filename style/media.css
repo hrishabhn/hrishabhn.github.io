@@ -567,9 +567,9 @@
     width: 100vw;
     height: auto;
     max-height: 90vh;
-    /* border-top-left-radius: 44pt; */
-    /* border-top-right-radius: 44pt; */
-    border-radius: 40pt;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    /* border-radius: 40pt; */
     z-index: 5;
 }
 .tv-popup-tab{
@@ -601,7 +601,7 @@
     vertical-align: top;
     margin-right: 0px;
     margin-bottom: 10px;
-    padding-bottom: 8vw;
+    padding-bottom: 5vw;
 
     box-shadow: 0 0 50px var(--black-60);
 
