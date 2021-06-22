@@ -18,6 +18,9 @@
     --black-100: #000;
     --white-100: #fff;
 
+    --black-80: #000000cc;
+    --white-80: #ffffffcc;
+
     --black-60: #00000099;
     --white-60: #ffffff99;
 
@@ -25,9 +28,7 @@
     --white-20: #ffffff33;
 
     --red-100: #ff3b30;
-
-
-
+    --red-80: #ff3b30cc;
 }
 
 ::-webkit-scrollbar {
@@ -62,10 +63,6 @@ body{
     z-index: 50;
 
     align-content: flex-end;
-
-    /* background-color: rgba(28, 28, 30, 0.8); */
-    -webkit-backdrop-filter: blur(25px);
-
 }
 .title-text{
     font-weight: 600;
@@ -399,7 +396,7 @@ body{
     height: 20px;
     width: 20px;
 
-    fill: #ff3b30cc;
+    fill: var(--red-80);
     transition: 0.25s;
 }
 .anchor-text-box{
