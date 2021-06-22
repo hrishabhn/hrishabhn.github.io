@@ -3,6 +3,9 @@
     padding: 0;
     /* font-family: 'Inter', sans-serif; */
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 :root{
     --dark-layer-0: #000;
@@ -77,7 +80,7 @@ body{
     display: flex;
     align-self: flex-end;
 
-
+    cursor: default;
 }
 
 
@@ -95,6 +98,7 @@ body{
     font-size: 20px;
     color: var(--white-100);
     background-color: transparent;
+    cursor: default;
 }
 
 
