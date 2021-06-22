@@ -15,6 +15,7 @@ const assets = [
 
   "/script/apps.js",
   "/script/media.js",
+  "/script/date.js",
 
   "/images/launch-12mini.png",
   
