@@ -3,7 +3,7 @@
     width: 300px;
     border-radius: 25px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
     display: inline-flex;
     align-items: center;
 
@@ -93,7 +93,7 @@
     border-radius: inherit;
     transition: inherit;
 
-    background: var(--dark-layer-2);
+    background: var(--dark-layer-1);
     padding-left: 20px;
     color: var(--white-60);
 }
@@ -127,7 +127,7 @@
     }
 
     .search{
-        background: var(--light-layer-2);
+        background: var(--light-layer-1);
         color: var(--black-60);
 
     }
@@ -137,8 +137,8 @@
 
 @media(max-width: 450px){
     .user-container{
-        width: 90vw;
-        margin-left: 5vw;
+        /* width: 90vw; */
+        /* margin-left: 5vw; */
 
         /* margin-top: 0px; */
     }
