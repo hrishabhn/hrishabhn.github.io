@@ -63,6 +63,61 @@
     background-size: cover;
 }
 
+
+.date-container{
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-top: 10px;
+    margin-left: 0px;
+    display: inline-block;
+    /* align-items: center; */
+
+    background-color: var(--dark-layer-1);
+    /* overflow: hidden; */
+}
+.date-month-box{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--red-80);
+
+    /* background-color: #ffffff33; */
+}
+.date-number-box{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 42px;
+    font-weight: 300;
+    color: var(--white-80);
+
+    /* background-color: #ff00ff33; */
+}
+
+
+
+
+
+
+
+
+
+
+
 .search-container{
     position: relative;
     display: flex;
