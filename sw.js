@@ -8,6 +8,7 @@ const assets = [
   "/app.js",
 
   "/style/style.css",
+  "/style/brand.css",
   "/style/home.css",
   "/style/media.css",
   "/style/tv-data.css",

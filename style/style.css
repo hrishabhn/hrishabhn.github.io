@@ -20,6 +20,14 @@
 
     --black-60: #00000099;
     --white-60: #ffffff99;
+
+    --black-20: #00000033;
+    --white-20: #ffffff33;
+
+    --red-100: #ff3b30;
+
+
+
 }
 
 ::-webkit-scrollbar {
@@ -27,7 +35,7 @@
 }
 
 body{
-    background:#000000;
+    background-color: var(--dark-layer-0);
     /* -webkit-appearance: none; */
     -webkit-tap-highlight-color: transparent;
 }
@@ -148,7 +156,7 @@ body{
 
 }
 .sidebar-blur{
-    background-color: #1c1c1e33;
+    background-color: var(--black-20);
     -webkit-backdrop-filter: blur(250px);
 
 }
@@ -191,65 +199,14 @@ body{
     transition: 0.25s;
 }
 .selected{
-    /* color: var(--white-100); */
-    /* fill: var(--white-100); */
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--white-20);
 }
 .selected .menu-item-icon{
-    fill: #ff3b30;
+    fill: var(--red-100);
 }
 .selected:hover .menu-item-icon{
-    fill: #ff3b30;
+    fill: var(--red-100);
 }
-
-
-/* .selected .home-icon{
-    fill: #8080ff;
-}
-.selected .bookmarks-icon{
-    fill: #2aa148;
-}
-.selected .school-icon{
-    fill: rgba(189, 174, 120, 1);
-}
-.selected .media-icon{
-    fill: rgba(217, 50, 41, 1);
-}
-.selected .work-icon{
-    fill: rgba(217, 174, 0, 1);
-} */
-
-/* .home-icon{
-    fill: rgba(128, 128, 255, 0.8);
-}
-.bookmarks-icon{
-    fill: rgba(42, 161, 72, 0.8);
-}
-.school-icon{
-    fill: rgba(189, 174, 120, 0.8);
-}
-.media-icon{
-    fill: rgba(217, 50, 41, 0.8);
-}
-.work-icon{
-    fill: rgba(217, 174, 0, 0.8);
-} */
-
-/* .menu-item:hover .home-icon{
-    fill: rgba(128, 128, 255, 1);
-}
-.menu-item:hover .bookmarks-icon{
-    fill: rgba(42, 161, 72, 1);
-}
-.menu-item:hover .school-icon{
-    fill: rgba(189, 174, 120, 1);
-}
-.menu-item:hover .media-icon{
-    fill: rgba(217, 50, 41, 1);
-}
-.menu-item:hover .work-icon{
-    fill: rgba(217, 174, 0, 1);
-} */
 
 
 
@@ -327,7 +284,6 @@ body{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    /* cursor: pointer; */
 
     top: 15px;
     left: 15px;
@@ -338,10 +294,7 @@ body{
 
     transition: 0.25s;
 
-    background: #1c1c1e33;
-    /* -webkit-backdrop-filter: blur(100px); */
-
-
+    background-color: var(--black-20);
 }
 .app-icon{
     fill: var(--white-100);
@@ -362,7 +315,6 @@ body{
     padding-left: 5px;
 
     transition: inherit;
-    /* background: #00ff0080; */
 
     color: var(--white-100);
     font-size: 14px;
@@ -383,8 +335,6 @@ body{
     height: 100%;
     width: 100%;
     z-index: 3;
-
-    /* background: #00ff0080; */
 }
 
 
@@ -438,7 +388,7 @@ body{
     transition: 0.25s;
 } */
 .anchor-container:hover .anchor-icon-box{
-    fill: #ff3b30;
+    fill: var(--red-100);
     transition: 0.25s;
 }
 .anchor-container:hover .anchor-text{
@@ -452,11 +402,6 @@ body{
     fill: #ff3b30cc;
     transition: 0.25s;
 }
-/* .anchor-icon{
-    fill: #ffffffcc;
-    height: 20px;
-    width: 20px;
-} */
 .anchor-text-box{
     margin-left: 10px;
     height: 40px;
@@ -484,327 +429,8 @@ body{
     right: 0px;
     display: flex;
     cursor: default;
-
-    /* background-color: #ffffff33; */
 }
 
-
-.shortcut-container{
-    display: inline-flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    /* cursor: pointer; */
-
-    margin-right: 10px;
-    /* top: 15px; */
-    /* left: 15px; */
-
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-
-    transition: 0.25s;
-
-    background: #1c1c1e33;
-    /* -webkit-backdrop-filter: blur(100px); */
-
-
-}
-.shortcut-icon{
-    fill: var(--white-100);
-    height: 25px;
-    width: 25px;
-    transition: 0.25s;
-    /* background-size: contain; */
-}
-.shortcut-link{
-    display: inline-flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
-
-    top: 0px;
-    left: 0px;
-
-    border-radius: inherit;
-    height: 100%;
-    width: 100%;
-    z-index: 3;
-
-    /* background: #00ff0080; */
-}
-
-
-
-
-
-
-
-.frozen{
-    overflow: hidden;
-}
-
-
-
-
-
-
-
-
-
-
-
-.testBox{
-    height: 100%;
-    width: 100%;
-    background-color: aquamarine;
-}
-
-
-
-/*
-icons
-*/
-
-
-
-
-/*
-gradients
-*/
-
-.home-gradient{
-    background: linear-gradient(to bottom right,#00ffff,#ff00ff) !important;
-}
-.school-gradient{
-    background: linear-gradient(to bottom right,#D7C688,#a39667);
-}
-
-.grey-gradient{
-    background:linear-gradient(to bottom right,#101010,#1c1c1e);
-}
-.black-gradient{
-    background:linear-gradient(to bottom right,#1A1A1A,#000);
-}
-.green-gradient{
-    background:linear-gradient(to bottom right,#34c759,#207a36);
-}
-.indigo-gradient{
-    background:linear-gradient(to bottom right,#5856d6,#38378a);
-}
-.orange-gradient{
-    background:linear-gradient(to bottom right,#ff9500,#b36800);
-}
-.red-gradient{
-    background:linear-gradient(to bottom right,#ff3b30,#b32922);
-}
-.teal-gradient{
-    background:linear-gradient(to bottom right,#5ac8fa,#3e8aad);
-}
-.yellow-gradient{
-    background:linear-gradient(to bottom right,#ffcc00,#b38f00);
-}
-.white-gradient{
-    background:linear-gradient(to bottom right,#fff,#e6e6e6);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.outlook{
-    background:linear-gradient(to bottom right,#0271C7,#01467a);
-}
-.outlook-blue{
-    background:linear-gradient(to bottom right,#7040FF,#4e2db3);
-}
-.outlook-red{
-    background:linear-gradient(to bottom right,#DC3B1B,#8f2611);
-
-}
-
-
-.onedrive{
-    background:linear-gradient(to bottom right,#094AB2,#052A66);
-}
-.clickup{
-    background:linear-gradient(to bottom right,#49ccf9,#7b68ee);
-}
-
-.foodpanda{
-    background:linear-gradient(to bottom right,#D70E64,#8a0a41);
-}
-.deliveroo{
-    background:linear-gradient(to bottom right,#00CCBC,#008075);
-}
-.hulu{
-    background:linear-gradient(to bottom right,#040405,#183949);
-}
-.hulu-green{
-    background:linear-gradient(to bottom right,#1ce783,#139c57);
-}
-.netflix{
-    background:linear-gradient(to bottom right,#e50914,#99060d);
-}
-.youtube{
-    background:linear-gradient(to bottom right,#f00,#b30000);
-}
-.reelgood{
-    /* background:linear-gradient(to bottom right,#00dc89,#008f58); */
-    background: #00dc89;
-}
-.tv-time{
-    background: #545454;
-}
-.pocket{
-    background:linear-gradient(to bottom right,#EF3D55,#a32a3b);
-}
-.feedly{
-    background:linear-gradient(to bottom right,#2bb24c,#18662c);
-}
-.twitter{
-    background:linear-gradient(to bottom right,#1da1f2,#146ea6);
-}
-.clickup-teal{
-    background:linear-gradient(to bottom right,#49ccf9,#328fad);
-}
-.clickup-purple{
-    background:linear-gradient(to bottom right,#7b68ee,#5447a1);
-}
-.google-red{
-    background:linear-gradient(to bottom right,#ea4335,#9e2f24);
-}
-.google-green{
-    background:linear-gradient(to bottom right,#34a853,#1c5c2d);
-}
-.google-blue{
-    background:linear-gradient(to bottom right,#4285f4,#2d5da8);
-}
-.google-maps{
-    background:linear-gradient(to bottom right,#9BC0F9,#6c86ad);
-}
-.walmart{
-    background:linear-gradient(to bottom right,#0070DB,#004a8f);
-}
-.amazon{
-    background:linear-gradient(to bottom right,#1E2631,#4c617d);
-}
-.reddit{
-    background:linear-gradient(to bottom right,#ff4500,#b33000);
-}
-.linkedin{
-    background:linear-gradient(to bottom right,#0c63c3,#073c75);
-}
-
-.icons8{
-    background:linear-gradient(to bottom right,#1eb141,#116324);
-}
-.flaticon{
-    background:linear-gradient(to bottom right,#0E2A47,#1e5794);
-}
-.duke-energy{
-    background:linear-gradient(to bottom right,#14BCD9,#005986);
-}
-.slack{
-    background:linear-gradient(to bottom right,#4A154B,#952a96);
-}
-.facebook{
-    background:linear-gradient(to bottom right,#4267b2,#263b66);
-}
-.imdb{
-    background: #F5C518;
-}
-.hbo{
-    background:linear-gradient(to bottom right,#991eeb,#5822b4);
-}
-.prime{
-    background:linear-gradient(to bottom right,#00a8e1,#006f94);
-}
-.whatsapp{
-    background:linear-gradient(to bottom right,#25d366,#188741);
-}
-.messenger{
-    background:linear-gradient(to bottom right,#0084ff,#005cb3);
-}
-.apple-gradient{
-    background:linear-gradient(to bottom right,#A2AAAD,#5b5f61);
-}
-.ivytech{
-    background:linear-gradient(to bottom right,#006648,#00b37d);
-}
-.canvas{
-    background:linear-gradient(to bottom right,#e43d30,#b02e25);
-}
-.spanishdict{
-    background:linear-gradient(to bottom right,#2571ae,#143e61);
-}
-.disney{
-    background:linear-gradient(to bottom right,#113ccf,#0a2682);
-}
-.snapchat{
-    background:linear-gradient(to bottom right,#fffc00,#b3b000);
-}
-.audible{
-    background:linear-gradient(to bottom right,#F8991D,#ab6a15);
-}
-.podcasts{
-    background:linear-gradient(to bottom right,#D56EFD,#842BC1);
-}
-.books{
-    background:linear-gradient(to bottom right,#FC880F,#b0600b);
-}
-.mstodo{
-    background:linear-gradient(to bottom right,#185ABD,#0f3670);
-}
-.shortcuts{
-    background:linear-gradient(to bottom right,#1D1F5A,#3539a6);
-}
-.venmo{
-    background:linear-gradient(to bottom right,#3d95ce,#275e82);
-}
-.zabank{
-    background:linear-gradient(to bottom right,#32CB9D,#208063);
-}
-.hsbc{
-    background:linear-gradient(to bottom right,#db0011,#a8000e);
-}
-.citi-red{
-    background:linear-gradient(to bottom right,#D9261C,#8c1812);
-}
-.citi-blue{
-    background:linear-gradient(to bottom right,#003B70,#0065bd);
-}
-.appstore{
-    background:linear-gradient(to bottom right,#1AC8FB,#1D70F1);
-}
-
-/* MEDIA */
-
-.tv-time-text{
-    color: #FBD736 !important;
-}
-.black-text{
-    color: #000 !important;
-}
-.hulu-solid{
-    background: #1ce783;
-}
 
 
 
@@ -814,17 +440,14 @@ gradients
 
 @media screen and (prefers-color-scheme: light) {
     body {
-        background-color: #f2f2f7;
+        background-color: var(--light-layer-0);
     }
     .sidebar{
-        background-color: #d1d1d6;
+        background-color: var(--light-layer-1);
     }
     .sidebar-blur{
-        background-color: #d1d1d633;
+        background-color: var(--white-20);
     }
-    /* .title-box{
-        background: rgba(229, 229, 234, 0.8);
-    } */
     .title-text{
         color: var(--dark-layer-1);
     }
@@ -836,35 +459,17 @@ gradients
     .menu-item:hover .menu-item-icon{
         fill: var(--black-100);
     }
-
-    /* .selected .menu-item-icon{
-        fill: #ff3b30;
-    } */
     .selected:hover .menu-item-icon{
-        fill: #ff3b30;
+        fill: var(--red-100);
     }
-
-
-    /* .menu-item{
-        fill: #1c1c1e80;
-        color: #1c1c1e80;
-    }
- 
-    .menu-item:hover{
-        fill: var(--dark-layer-1);
-        color: var(--dark-layer-1);
-    } */
-
     .selected{
-        /* color: var(--white-100); */
-        /* fill: var(--white-100); */
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: var(--black-20);
     }
     .subtitle-text{
         color: var(--dark-layer-1);
     }
     .app-icon-container{
-        background: #e5e5ea33;
+        background-color: var(--white-20);
     }
     /* .app-text{
         color: var(--dark-layer-1);
@@ -989,15 +594,15 @@ gradients
         transition: 0s;
     }
     .menu-item:hover .menu-item-icon{
-        fill: #ff3b30;
+        fill: var(--red-100);
     
         transition: 0s;
     }
     .selected .menu-item-icon{
-        fill: #ff3b30;
+        fill: var(--red-100);
     }
     .selected:hover .menu-item-icon{
-        fill: #ff3b30;
+        fill: var(--red-100);
     }
    
 
@@ -1079,36 +684,6 @@ gradients
 
 
 
-    /* .app-container:hover{
-        width: 158.5px;
-        height: 111px;
-        border-radius: 25px;
-    
-        margin-left: 2px;
-        margin-right: 12px;
-
-        transition: 0.25s;
-    }
-    .app-container:hover .app-icon-container{
-        width: 58px;
-        height: 58px;
-    
-        margin-top: 0px;
-        margin-left: 0px;
-    
-        transition: 0.25s;
-    }
-
-
-    .app-container:hover .app-icon-container{
-        top: 13px;
-        left: 13px;
-    }
-    .app-container:hover .app-text{
-        bottom: 13px;
-        left: 13px;
-        padding-left: 5px;
-    } */
 
 
 
@@ -1123,14 +698,11 @@ gradients
 
         left: 0px;
     }
-    /* .anchor-container{
-
-    } */
 
     @media screen and (prefers-color-scheme: light) {
 
         .notch-box{
-            background-color: #f2f2f799;
+            background-color: var(--white-60);
         }   
     }
 }

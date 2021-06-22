@@ -4,25 +4,27 @@
 <head>
     <meta name='viewport' content='viewport-fit=cover, height=device-height, width=device-width, initial-scale=1.0'>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/brand.css">
     <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="style/tv-data.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/home.png" />
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="images/launch-12mini.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 1194px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait" href="images/launch-ipad.png">
 
     <link rel="preload" href="script/apps.js" as="script">
     <link rel="preload" href="script/media.js" as="script">
 
-    
+    <meta name="mobile-wep-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-    
-    
 
     <title>Media</title>
 
-
-
+    <script src="app.js"></script>
 </head>
 
 <body onload="mediaTVPopulate();mediaAppPopulate()">

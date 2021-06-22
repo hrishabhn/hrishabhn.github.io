@@ -1,0 +1,231 @@
+.home-gradient{
+    background: linear-gradient(to bottom right,#00ffff,#ff00ff) !important;
+}
+.school-gradient{
+    background: linear-gradient(to bottom right,#D7C688,#a39667);
+}
+
+.grey-gradient{
+    background:linear-gradient(to bottom right,#101010,#1c1c1e);
+}
+.black-gradient{
+    background:linear-gradient(to bottom right,#1A1A1A,#000);
+}
+.green-gradient{
+    background:linear-gradient(to bottom right,#34c759,#207a36);
+}
+.indigo-gradient{
+    background:linear-gradient(to bottom right,#5856d6,#38378a);
+}
+.orange-gradient{
+    background:linear-gradient(to bottom right,#ff9500,#b36800);
+}
+.red-gradient{
+    background:linear-gradient(to bottom right,#ff3b30,#b32922);
+}
+.teal-gradient{
+    background:linear-gradient(to bottom right,#5ac8fa,#3e8aad);
+}
+.yellow-gradient{
+    background:linear-gradient(to bottom right,#ffcc00,#b38f00);
+}
+.white-gradient{
+    background:linear-gradient(to bottom right,#fff,#e6e6e6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.outlook{
+    background:linear-gradient(to bottom right,#0271C7,#01467a);
+}
+.outlook-blue{
+    background:linear-gradient(to bottom right,#7040FF,#4e2db3);
+}
+.outlook-red{
+    background:linear-gradient(to bottom right,#DC3B1B,#8f2611);
+
+}
+
+
+.onedrive{
+    background:linear-gradient(to bottom right,#094AB2,#052A66);
+}
+.clickup{
+    background:linear-gradient(to bottom right,#49ccf9,#7b68ee);
+}
+
+.foodpanda{
+    background:linear-gradient(to bottom right,#D70E64,#8a0a41);
+}
+.deliveroo{
+    background:linear-gradient(to bottom right,#00CCBC,#008075);
+}
+.hulu{
+    background:linear-gradient(to bottom right,#040405,#183949);
+}
+.hulu-green{
+    background:linear-gradient(to bottom right,#1ce783,#139c57);
+}
+.netflix{
+    background:linear-gradient(to bottom right,#e50914,#99060d);
+}
+.youtube{
+    background:linear-gradient(to bottom right,#f00,#b30000);
+}
+.reelgood{
+    /* background:linear-gradient(to bottom right,#00dc89,#008f58); */
+    background: #00dc89;
+}
+.tv-time{
+    background: #545454;
+}
+.pocket{
+    background:linear-gradient(to bottom right,#EF3D55,#a32a3b);
+}
+.feedly{
+    background:linear-gradient(to bottom right,#2bb24c,#18662c);
+}
+.twitter{
+    background:linear-gradient(to bottom right,#1da1f2,#146ea6);
+}
+.clickup-teal{
+    background:linear-gradient(to bottom right,#49ccf9,#328fad);
+}
+.clickup-purple{
+    background:linear-gradient(to bottom right,#7b68ee,#5447a1);
+}
+.google-red{
+    background:linear-gradient(to bottom right,#ea4335,#9e2f24);
+}
+.google-green{
+    background:linear-gradient(to bottom right,#34a853,#1c5c2d);
+}
+.google-blue{
+    background:linear-gradient(to bottom right,#4285f4,#2d5da8);
+}
+.google-maps{
+    background:linear-gradient(to bottom right,#9BC0F9,#6c86ad);
+}
+.walmart{
+    background:linear-gradient(to bottom right,#0070DB,#004a8f);
+}
+.amazon{
+    background:linear-gradient(to bottom right,#1E2631,#4c617d);
+}
+.reddit{
+    background:linear-gradient(to bottom right,#ff4500,#b33000);
+}
+.linkedin{
+    background:linear-gradient(to bottom right,#0c63c3,#073c75);
+}
+
+.icons8{
+    background:linear-gradient(to bottom right,#1eb141,#116324);
+}
+.flaticon{
+    background:linear-gradient(to bottom right,#0E2A47,#1e5794);
+}
+.duke-energy{
+    background:linear-gradient(to bottom right,#14BCD9,#005986);
+}
+.slack{
+    background:linear-gradient(to bottom right,#4A154B,#952a96);
+}
+.facebook{
+    background:linear-gradient(to bottom right,#4267b2,#263b66);
+}
+.imdb{
+    background: #F5C518;
+}
+.hbo{
+    background:linear-gradient(to bottom right,#991eeb,#5822b4);
+}
+.prime{
+    background:linear-gradient(to bottom right,#00a8e1,#006f94);
+}
+.whatsapp{
+    background:linear-gradient(to bottom right,#25d366,#188741);
+}
+.messenger{
+    background:linear-gradient(to bottom right,#0084ff,#005cb3);
+}
+.apple-gradient{
+    background:linear-gradient(to bottom right,#A2AAAD,#5b5f61);
+}
+.ivytech{
+    background:linear-gradient(to bottom right,#006648,#00b37d);
+}
+.canvas{
+    background:linear-gradient(to bottom right,#e43d30,#b02e25);
+}
+.spanishdict{
+    background:linear-gradient(to bottom right,#2571ae,#143e61);
+}
+.disney{
+    background:linear-gradient(to bottom right,#113ccf,#0a2682);
+}
+.snapchat{
+    background:linear-gradient(to bottom right,#fffc00,#b3b000);
+}
+.audible{
+    background:linear-gradient(to bottom right,#F8991D,#ab6a15);
+}
+.podcasts{
+    background:linear-gradient(to bottom right,#D56EFD,#842BC1);
+}
+.books{
+    background:linear-gradient(to bottom right,#FC880F,#b0600b);
+}
+.mstodo{
+    background:linear-gradient(to bottom right,#185ABD,#0f3670);
+}
+.shortcuts{
+    background:linear-gradient(to bottom right,#1D1F5A,#3539a6);
+}
+.venmo{
+    background:linear-gradient(to bottom right,#3d95ce,#275e82);
+}
+.zabank{
+    background:linear-gradient(to bottom right,#32CB9D,#208063);
+}
+.hsbc{
+    background:linear-gradient(to bottom right,#db0011,#a8000e);
+}
+.citi-red{
+    background:linear-gradient(to bottom right,#D9261C,#8c1812);
+}
+.citi-blue{
+    background:linear-gradient(to bottom right,#003B70,#0065bd);
+}
+.appstore{
+    background:linear-gradient(to bottom right,#1AC8FB,#1D70F1);
+}
+
+
+
+
+/* MEDIA */
+
+.tv-time-text{
+    color: #FBD736 !important;
+}
+.black-text{
+    color: #000 !important;
+}
+.hulu-solid{
+    background: #1ce783;
+}
