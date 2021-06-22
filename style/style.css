@@ -303,17 +303,14 @@ body{
 
 .anchor-tray{
     width: 100vw;
-    height: 70px;
+    height: 60px;
     box-sizing: border-box;
 
     position: relative;
     z-index: 1;
     left: -70px;
 
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 15px;
-    margin-bottom: -5px;
+    margin-top: 10px;
 
 
     padding-left: 90px;
@@ -482,7 +479,7 @@ body{
         height: 50px;
         width: 100%;
         z-index: 5;
-        -webkit-backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(10px);
         background-color: var(--black-60);
     }
     .title-box{   
