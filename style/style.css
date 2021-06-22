@@ -27,6 +27,11 @@
     --black-20: #00000033;
     --white-20: #ffffff33;
 
+    --black-10: rgba(0, 0, 0, 0.1);
+    --white-10: rgba(255, 255, 255, 0.1);
+
+
+
     --red-100: #ff3b30;
     --red-80: #ff3b30cc;
 }
@@ -154,7 +159,7 @@ body{
     transition: 0.25s;
 }
 .selected{
-    background-color: var(--white-20);
+    background-color: var(--white-10);
 }
 .selected .menu-item-icon{
     fill: var(--red-100);
@@ -191,12 +196,6 @@ body{
     z-index: 1;
     left: -70px;
 
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: -50px;
-    margin-bottom: -50px;
-
-
     padding-left: 90px;
     padding-right: 10px;
 
@@ -205,6 +204,17 @@ body{
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
 }
+.scrolling-wrapper-padded{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+
+
+
+
 .app-container{
     display: inline-block;
     position: relative;
@@ -414,7 +424,7 @@ body{
         fill: var(--red-100);
     }
     .selected{
-        background-color: var(--black-20);
+        background-color: var(--black-10);
     }
     .subtitle-text{
         color: var(--dark-layer-1);
