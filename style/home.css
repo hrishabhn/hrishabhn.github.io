@@ -14,7 +14,7 @@
     width: 60px;
     border-radius: 100%;
     margin-left: 25px;
-    fill: #ff3b30cc;
+    fill: var(--red-80);
 
     /* align-self: center; */
 }
