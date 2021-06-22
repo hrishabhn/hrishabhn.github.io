@@ -15,12 +15,20 @@ function date(){
     // monthNow = fullDate.getMonth()
     // monthNow = months[monthNow]
 
-    dateNow = fullDate.getDate()
+    dateNow = fullDate.getDate();
 
+    hourNow = fullDate.getHours();
+    minsNow = fullDate.getMinutes();
+    var timeNow=('0'  + hourNow).slice(-2)+':'+('0' + minsNow).slice(-2);
+
+
+    // timeNow = `${hourNow}:${minsNow}`;
+    // timeNow = "00:00";
     
     document.getElementById("date-text").innerHTML = dayNow
     // document.getElementById("date-month").innerHTML = monthNow
     document.getElementById("date-number").innerHTML = dateNow
+    document.getElementById("time-now").innerHTML = timeNow
 }
 
     // var x = document.getElementById("demo");

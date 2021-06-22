@@ -567,9 +567,9 @@
     width: 100vw;
     height: auto;
     max-height: 90vh;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    /* border-radius: 0px; */
+    /* border-top-left-radius: 44pt; */
+    /* border-top-right-radius: 44pt; */
+    border-radius: 44pt;
     z-index: 5;
 }
 .tv-popup-tab{
@@ -592,7 +592,7 @@
     width: 100%;
     border-radius: inherit;
 
-    padding: 5vw;
+    padding: 0vw;
     box-sizing: border-box;
 
     position: relative;
@@ -600,16 +600,16 @@
 
     vertical-align: top;
     margin-right: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 10vw;
+    margin-bottom: 10px;
+    padding-bottom: 8vw;
 
     box-shadow: 0 0 50px var(--black-60);
 
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .tv-popup-poster{
     width: 100%;
-    height: 50.625vw;
+    height: 56.25vw;
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -619,10 +619,18 @@
     position: relative;
 
     /* background-color: greenyellow; */
-    border-radius: 30px;
-    box-shadow: 0 0 30px var(--black-60);
+    border-radius: 0;
+    /* box-shadow: 0 0 30px var(--black-60); */
 }
 .tv-popup-gradient{
+    display: block !important;
+    position: relative;
+    top: 16.25vw;
+
+    width: 100%;
+    height: 40vw;
+
+    transition: 0.25s;
     display: none;
 }
 .tv-popup-title{
@@ -635,8 +643,8 @@
     width: 80vw;
     /* height: 100px; */
     height: 30vw;
-    margin-left: 5vw;
-    margin-top: 5vw;
+    margin-left: 10vw;
+    margin-top: -15vw;
     margin-bottom: 5vw;
     /* background-color: #000000; */
 }
@@ -680,8 +688,8 @@
     padding-top: 5vw;
     padding-right: 0;
 
-    margin-left: -5vw;
-    margin-right: -5vw;
+    /* margin-left: -5vw; */
+    /* margin-right: -5vw; */
 
 
 

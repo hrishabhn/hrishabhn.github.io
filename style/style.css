@@ -196,6 +196,7 @@ body{
     /* height: 125px; */
     box-sizing: border-box;
 
+    align-items: center;
     position: relative;
     z-index: 1;
     left: -70px;
