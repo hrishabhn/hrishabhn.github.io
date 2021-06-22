@@ -81,7 +81,7 @@
     background-color: var(--dark-layer-1);
     /* overflow: hidden; */
 }
-.date-month-box{
+.date-text-box{
     height: 30px;
     width: 100%;
     display: flex;
