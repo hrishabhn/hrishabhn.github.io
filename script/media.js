@@ -116,13 +116,13 @@ show7 = [
   "rick-poster",
   "rick-gradient",
   "rick-title",
-  "Animation • Comedy • 5 Seasons • 20XX - Present",
-  "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
+  "Animation • Comedy • 5 Seasons • 2013 - Present",
+  "",
   "hulu",
   "Watch",
-  "https://www.tvtime.com/en/show/362829",
-  "https://reelgood.com/show/mythic-quest-2020",
-  "https://www.imdb.com/title/tt8879940"
+  "https://www.tvtime.com/en/show/275274",
+  "https://reelgood.com/show/rick-and-morty-2013",
+  "https://www.imdb.com/title/tt2861424"
 ]
 
 // Mythic quest
