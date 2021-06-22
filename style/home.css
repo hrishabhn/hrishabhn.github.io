@@ -7,7 +7,7 @@
     display: inline-flex;
     align-items: center;
 
-    background-color: #1c1c1e;
+    background-color: var(--dark-layer-1);
 }
 .user-icon{
     height: 60px;
@@ -43,7 +43,7 @@
 
     font-size: 18px;
     font-weight: 500;
-    color: #ffffffcc;
+    color: var(--white-80);
 }
 .user-name-subtext{
     display: inline-block;
@@ -55,7 +55,7 @@
 
     font-size: 14px;
     font-weight: 400;
-    color: #ffffff99;
+    color: var(--white-60);
 }
 
 .hrish-icon{
@@ -114,16 +114,16 @@
 
 @media screen and (prefers-color-scheme: light) {
     .user-container{
-        background: #e5e5ea;
+        background-color: var(--light-layer-1);
     }
     /* .user-icon{
         fill: #000000cc;
     } */
     .user-name-text{
-        color: #000000cc;
+        color: var(--black-80);
     }
     .user-name-subtext{
-        color: #00000099;
+        color: var(--black-60);
     }
 
     .search{
