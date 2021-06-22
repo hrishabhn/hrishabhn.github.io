@@ -77,7 +77,7 @@
     margin-top: 10px;
     margin-left: 0px;
     margin-right: 10px;
-    display: inline-block;
+    /* display: inline-block; */
     /* align-items: center; */
 
     background-color: var(--dark-layer-1);
@@ -122,7 +122,7 @@
     margin-top: 10px;
     margin-left: 0px;
     margin-right: 10px;
-    display: inline-block;
+    /* display: inline-block; */
     /* align-items: center; */
 
     background-color: var(--dark-layer-1);
@@ -247,5 +247,15 @@
         width: 90vw;
         margin-left: 5vw;
         padding: 0px;
+    }
+
+    .date-container{
+        width: 28vw;
+        margin-right: 2vw;
+    }
+    .time-container{
+        width: 60vw;
+        margin-right: 2vw;
+        /* font-size: 52px; */
     }
 }
