@@ -566,6 +566,7 @@
 
     width: 100vw;
     height: auto;
+    max-height: 90vh;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     /* border-radius: 0px; */
@@ -701,7 +702,7 @@
     align-items: center;
     display: inline-block;
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 6vw;
     text-decoration: none;
 
     z-index: 1;
@@ -722,12 +723,12 @@
     /* background: blue; */
     position: absolute;
     top: 6vw;
-    left: 25px;
+    left: 6vw;
     /* bottom: 80px; */
     transition: 0.25s;
 }
 .tv-popup-text-with-icon{
-    margin-left: 25px;
+    margin-left: 6vw;
 }
 
 .tv-popup-text{
@@ -747,8 +748,8 @@
     text-decoration: none;
     align-items: center;
 
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 6vw;
+    padding-right: 6vw;
     color: white;
     font-size: 3.5vw;
     font-weight: 500;
