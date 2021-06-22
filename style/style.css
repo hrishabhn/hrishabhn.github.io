@@ -71,7 +71,7 @@ body{
 }
 .title-text{
     font-weight: 600;
-    font-size: 30px;
+    font-size: 32px;
     color: var(--white-100);
     background-color: transparent;
     display: flex;
@@ -493,9 +493,9 @@ body{
     }
 
 
-    .title-text{
+    /* .title-text{
         font-size: 30px;
-    }
+    } */
 
 
     .subtitle-box{
