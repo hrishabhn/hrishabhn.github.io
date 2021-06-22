@@ -208,12 +208,17 @@ body{
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
+
+    /* display: inline-flex; */
 }
 .scrolling-wrapper-padded{
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: -50px;
     margin-bottom: -50px;
+}
+.scrolling-wrapper-flex{
+    display: flex;
 }
 
 
