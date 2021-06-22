@@ -1334,7 +1334,6 @@ showDescription[k] = show50[4];
 
 
 
-
 function tvPage(n){
   var cardClass = "tv-page-card ";
   var posterClass = "tv-page-poster ";
@@ -1406,8 +1405,8 @@ function mediaTVPopulate(){
   var posterClass = "tv-media-poster ";
   var gradientClass = "tv-media-gradient ";
   var titleClass = "tv-media-title ";
-  var showPage = "TV/pages/tv-page-";
-  var linkEnd = ".html"
+  // var showPage = "TV/pages/tv-page-";
+  // var linkEnd = ".html"
 
   for (i = 1; i < 51; i++){
     var itemid = [
@@ -1424,7 +1423,7 @@ function mediaTVPopulate(){
     document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
     document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
     document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
-    document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);
+    // document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);
   }
   
 // BOOKS //
@@ -1485,4 +1484,67 @@ document.getElementById("bookCover3").className =  book_3[1];
    document.getElementById("podCard8").className = pod8[0];
   document.getElementById("podCover8").className = pod8[1];
    document.getElementById("podLink8").href =      pod8[2];
+}
+
+  // var btn = document.getElementsByClassName("tv-popup-link")
+
+
+  // Get the <span> element that closes the modal
+  // var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal 
+
+
+  // var trigger = document.getElementById("tv-popup-trigger");
+  
+
+  // document.getElementById("test").addEventListener("click", test);
+
+  // trigger.onclick = function() {
+  //   tvPopup(13);
+  //   modal.style.display = "flex";
+  // }
+
+  // When the user clicks on <span> (x), close the modal
+  // span.onclick = function() {
+  //   modal.style.display = "none";
+  // }
+
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById("tv-popup-modal");
+  function popupTVPopulate(n){
+    tvPopup(n);
+    modal.style.display = "flex";
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+
+function tvPopup(n){
+  var cardClass = "tv-popup-card ";
+  var posterClass = "tv-popup-poster ";
+  var gradientClass = "tv-popup-gradient ";
+  var titleClass = "tv-popup-title ";
+  var serviceClass = "tv-popup-button-container tv-play-button ";
+
+
+
+
+
+
+  document.getElementById("card").className =                  cardClass.concat(showSolid[n]);
+  document.getElementById("poster").className =             posterClass.concat(showPoster[n]);
+  document.getElementById("grad").className =           gradientClass.concat(showGradient[n]);
+  document.getElementById("title").className =                titleClass.concat(showTitle[n]);
+  document.getElementById("desc").innerHTML =                             showDescription[n];
+  document.getElementById("link").href =                                         showLink[n];
+  document.getElementById("serviceGradient").className = serviceClass.concat(showServGrad[n]);
+  document.getElementById("service").innerHTML =                              showService[n];
+  document.getElementById("tv-time").href =                                    showTVtime[n];
+  document.getElementById("reelgood").href =                                 showReelgood[n];
+  document.getElementById("imdb").href =                                         showIMDB[n];
 }

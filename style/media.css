@@ -326,9 +326,9 @@
 
 @media(max-width: 450px){
 
-    .tv-media-card{
+    /* .tv-media-card{
        width: 90vw;
-    }
+    } */
 
     .tv-media-more-container:hover{
         -webkit-backdrop-filter: blur(3px);
@@ -352,12 +352,6 @@
 
 
 }
-
-
-
-
-
-
 
 
 
@@ -535,6 +529,247 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition: 0.25s;
 }
+
+
+.tv-popup-trigger{
+    position: fixed;
+    z-index: 200;
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+}
+
+
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 200; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: var(--black-20); */
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Modal Content */
+.tv-popup-modal{
+    display: block;
+    align-self: flex-end;
+    background-color: teal;
+    margin-left: 2.5vw;
+    margin-bottom: 2.5vw;
+    /* padding: 20px; */
+    width: 95vw;
+    height: auto;
+    border-radius: 40pt;
+}
+
+.tv-popup-card{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+
+    padding: 2.5vw;
+    box-sizing: border-box;
+
+    position: relative;
+    vertical-align: top;
+    margin-right: 0px;
+    margin-bottom: 0px;
+
+    /* overflow: hidden; */
+}
+.tv-popup-poster{
+    width: 100%;
+    height: 50.625vw;
+
+    background-size: cover;
+    background-position: center;
+    background-position: center center;
+    display: block;
+    position: relative;
+
+    background-color: greenyellow;
+    border-radius: 40pt;
+    box-shadow: 0 0 30px var(--black-60);
+}
+.tv-popup-gradient{
+    display: none;
+}
+.tv-popup-title{
+    display: block;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    width: 80vw;
+    height: 30vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    /* background-color: #000000; */
+}
+.tv-popup-description{
+
+    /* font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+
+    display: inline-block;
+
+    overflow: hidden;
+    text-overflow: ellipsis; */
+
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 4vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    box-sizing: border-box;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* background-color: violet; */
+}
+.tv-popup-button-tray{
+    position: relative;
+    box-sizing: border-box;
+
+    padding-left: 7.5vw;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    padding-right: 0;
+
+    margin-left: -2.5vw;
+    margin-right: -2.5vw;
+
+
+
+    height: 25vw;
+    /* max-height: 110px; */
+    width: 95vw;
+
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+.tv-popup-button-container{
+    height: 100%;
+    box-sizing: border-box;
+
+    align-items: center;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 25px;
+    text-decoration: none;
+
+    z-index: 1;
+
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
+
+    margin-right: 7.5vw;
+    position: relative;
+    transition: 0.25s;
+}
+.tv-popup-icon{
+    fill: #fff;
+    height: 12px;
+    width: 12px;
+    /* margin-top: 14px;
+    margin-left: 20px; */
+
+    /* background: blue; */
+    position: absolute;
+    top: 24px;
+    left: 25px;
+    /* bottom: 80px; */
+    transition: 0.25s;
+}
+.tv-popup-text-with-icon{
+    margin-left: 25px;
+}
+
+.tv-popup-text{
+    display: flex;
+    position: relative;
+    left: 0px;
+    bottom: 0%;
+
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    box-sizing: border-box;
+    z-index: 2;
+
+    background-color: transparent;
+
+    text-decoration: none;
+    align-items: center;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+
+    transition: 0.25s;
+}
+
+
+.tv-popup-link{
+    display: flex;
+    position: relative;
+    left: 0px;
+    bottom: 100%;
+
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    z-index: 3;
+
+    background-color: transparent;
+
+    transition: 0.25s;
+}
+
+
+
+.tv-popup-button-container:hover{
+    /* height: 47px;
+
+    margin-top: -1px;
+    margin-bottom: -1px; */
+    /* margin-left: -2px; */
+    /* margin-right: 8px; */
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    
+    transition: 0.25s;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* @TV Page */
@@ -995,12 +1230,10 @@
     }
     
     .tv-play-button{
-        min-width: 335px;
+        min-width: 80vw;
     
     }
-    .tv-play-button:hover{
-        min-width: 339px;
-    }
+    
     
     .tv-page-button-tray{
         padding-left: 20px;

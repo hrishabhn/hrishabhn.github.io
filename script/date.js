@@ -21,17 +21,42 @@ function date(){
     document.getElementById("date-text").innerHTML = dayNow
     // document.getElementById("date-month").innerHTML = monthNow
     document.getElementById("date-number").innerHTML = dateNow
-
-    position = getCurrentPosition()
-    latitude = position.coords.latitude
-    // latitude = "300"
-
-
-    document.getElementById("test").innerHTML = latitude
 }
+
+    // var x = document.getElementById("demo");
+
+    // getCurrentPosition(showPosition);
+      
+    
+    // function showPosition(position) {
+    //     document.getElementById("test").innerHTML = "Latitude: " + position.coords.latitude + 
+    //     "<br>Longitude: " + position.coords.longitude;
+    // }
+
+
+
+
+
+
+    // position = getCurrentPosition();
+    // latitude = position.coords.latitude;
+    // // latitude = "300"
+
+
+
+
+
+    // document.getElementById("test").innerHTML = latitude;
+
 
 // let apiKey = '****************************';
 // let city = 'portland';
 // let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
 
 // api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+// api.openweathermap.org/data/2.5/weather?lat=22.385664283262717&lon=114.18739932759547&appid=2c11424ffd5a3ed7be3f73e6b9960fbe&units=metric&type=accurate&mode=xml
+// api.openweathermap.org/data/2.5/find?q=Palo+Alto&units=imperial&type=accurate&mode=xml&APPID=api-key
+
+// fetch('api.openweathermap.org/data/2.5/weather?lat=22.385664283262717&lon=114.18739932759547&appid=2c11424ffd5a3ed7be3f73e6b9960fbe&units=metric&type=accurate')
+// .then(data)
