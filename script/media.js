@@ -1514,11 +1514,13 @@ document.getElementById("bookCover3").className =  book_3[1];
   var modal = document.getElementById("tv-popup-modal");
   function popupTVPopulate(n){
     tvPopup(n);
-    modal.style.display = "flex";
+    // modal.style.display = "flex";
+    modal.classList.toggle('tv-popup-open')
   }
 
   function popupTVHide(){
-    modal.style.display = "none";
+    // modal.style.display = "none";
+    modal.classList.toggle('tv-popup-open')
   }
   
   // window.onclick = function(event) {
