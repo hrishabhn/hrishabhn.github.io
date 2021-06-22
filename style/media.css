@@ -551,7 +551,7 @@
   overflow: auto; /* Enable scroll if needed */
   /* background-color: var(--black-20); */
   -webkit-backdrop-filter: blur(10px);
-  transition: all 0.3s;
+  transition: all 0.25s;
   transition-timing-function: ease;
 }
 .tv-popup-open{
@@ -602,7 +602,7 @@
     margin-bottom: 0px;
     padding-bottom: 10vw;
 
-    /* box-shadow: 0 0 300px var(--black-60); */
+    box-shadow: 0 0 50px var(--black-60);
 
     /* overflow: hidden; */
 }
