@@ -1516,12 +1516,16 @@ document.getElementById("bookCover3").className =  book_3[1];
     tvPopup(n);
     modal.style.display = "flex";
   }
-  
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
+
+  function popupTVHide(){
+    modal.style.display = "none";
   }
+  
+  // window.onclick = function(event) {
+  //   if (event.target == modal) {
+  //     modal.style.display = "none";
+  //   }
+  // }
 
 
 function tvPopup(n){
