@@ -75,47 +75,6 @@ body{
 
 }
 
-/* .home-bar{
-    background: rgba(128, 128, 255, 0.9);
-}
-.bookmarks-bar{
-    background: rgba(42, 161, 72, 0.9);
-}
-.school-bar{
-    background: rgba(189, 174, 120, 0.9);
-}
-.media-bar{
-    background: rgba(217, 50, 41, 0.9);
-}
-.work-bar{
-    background: rgba(217, 174, 0, 0.9);
-} */
-
-
-
-
-
-
-
-
-/*
-.home-title{
-    color: rgba(128, 128, 255, 0.9);
-}
-.bookmarks-title{
-    color: rgba(42, 161, 72, 0.9);
-}
-.school-title{
-    color: rgba(189, 174, 120, 0.9);
-}
-.media-title{
-    color: rgba(217, 50, 41, 0.9);
-}
-.work-title{
-    color: rgba(217, 174, 0, 0.9);
-} */
-
-
 
 .subtitle-box{
     box-sizing: border-box;
@@ -142,7 +101,6 @@ body{
     z-index: 100;
     top: 0px;
     left: 0px;
-    /* background-color: rgba(28, 28, 30, 0.75); */
     overflow-x: hidden;
     padding-top: 100px;
     padding-left: 10px;
@@ -246,8 +204,6 @@ body{
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-
-    /* background-color: rgba(28, 28, 30, 0.5); */
 }
 .app-container{
     display: inline-block;
@@ -357,8 +313,6 @@ body{
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-
-    /* background-color: rgba(28, 28, 30, 0.5); */
 }
 .anchor-container{
     height: 100%;
@@ -468,11 +422,8 @@ body{
     .app-icon-container{
         background-color: var(--white-20);
     }
-    /* .app-text{
-        color: var(--dark-layer-1);
-    } */
     .anchor-container{
-        background: rgba(229, 229, 234, 1);
+        background-color: var(--light-layer-1);
     }
     /* .anchor-icon-box{
         fill: var(--black-60);
@@ -529,8 +480,6 @@ body{
         padding-right: 0;
         padding-bottom: 0px;
         height: 100px;
-        /* -webkit-backdrop-filter: blur(20px); */
-        /* background: rgba(28, 28, 30, 0.8); */
     }
 
 
@@ -563,10 +512,6 @@ body{
         z-index: 100;
         top: auto;
         bottom: 0px;
-        /* background-color: rgba(28, 28, 30, 1); */
-        /* -webkit-backdrop-filter: blur(200px); */
-        /* border-top-left-radius: 5vw;
-        border-top-right-radius: 5vw; */
     }
     .sidebar-menu{
         height: 100%;
