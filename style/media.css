@@ -368,6 +368,28 @@
 }
 
 
+/* .foreground-blur{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    z-index: 210;
+    transition: all 0.25s;
+    pointer-events: none;
+}
+.foreground-blur-hide{
+    -webkit-backdrop-filter: blur(15px);
+    opacity: 0;
+
+}
+.foreground-blur-show{ 
+    -webkit-backdrop-filter: blur(0);
+    opacity: 1;
+} */
+
+
+
 .background-blur{
     position: fixed;
     height: 100vh;
@@ -377,7 +399,7 @@
     z-index: 5;
     /* background-color: #ffffff33; */
     /* -webkit-transition: all 0.25s; */
-    transition: all 0.5s;
+    transition: all 0.25s;
     pointer-events: none;
 }
 .background-blur-show{
@@ -393,21 +415,35 @@
     /* transition-delay: 0.1s; */
 }
 
+
 .modal {
   display: flex;
   position: fixed;
   justify-content: center;
   z-index: 200;
   left: 0;
-  top: 100vh;
+  top: 0vh;
   width: 100%; 
   height: 100%;
   overflow: auto; /* Enable scroll if needed */
-  transition: all 0.5s;
+  transition: all 0.25s;
   transition-timing-function: ease-in-out;
+  transform-origin: bottom center;
 }
 .tv-popup-open{
-    top: 0px;
+    /* top: 0px; */
+    scale: 1;
+
+    opacity: 1;
+    /* -webkit-backdrop-filter: blur(15px); */
+}
+.tv-popup-closed{
+    /* top: 0vh; */
+    pointer-events: none;
+    opacity: 0;
+    scale: 0.98;
+    /* -webkit-backdrop-filter: blur(15px); */
+
 }
 .tv-popup-modal{
     display: block;
