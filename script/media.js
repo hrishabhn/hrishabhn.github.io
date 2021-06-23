@@ -1486,84 +1486,27 @@ document.getElementById("bookCover3").className =  book_3[1];
    document.getElementById("podLink8").href =      pod8[2];
 }
 
-  // var btn = document.getElementsByClassName("tv-popup-link")
-
-
-  // Get the <span> element that closes the modal
-  // var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks the button, open the modal 
-
-
-  // var trigger = document.getElementById("tv-popup-trigger");
-  
-
-  // document.getElementById("test").addEventListener("click", test);
-
-  // trigger.onclick = function() {
-  //   tvPopup(13);
-  //   modal.style.display = "flex";
-  // }
-
-  // When the user clicks on <span> (x), close the modal
-  // span.onclick = function() {
-  //   modal.style.display = "none";
-  // }
-
-  // When the user clicks anywhere outside of the modal, close it
   var modal = document.getElementById("tv-popup-modal");
   var bgBlur = document.getElementById("background-blur");
   var bgWrap = document.getElementById("background-wrapper");
   
-  function popupTVPopulate(n){
-    tvPopup(n);
-    // modal.style.display = "flex";
-    // background.className = "background-blur background-blur-z-5 background-blur-hide";
-    // background.className = "background-blur background-blur-z-5 background-blur-show";
-    
-    // bgWrap.className = "background-wrapper background-wrapper-z-5";
+function popupTVPopulate(n){
+  tvPopup(n);
     bgBlur.className = "background-blur background-blur-show";
     modal.classList.toggle('tv-popup-open')
-
-    
-    // bgWrap.classList.toggle('background-wrapper-z-5')
-    // bgBlur.classList.toggle('background-blur-show')
   }
 
-  function popupTVHide(){
-    // modal.style.display = "none";
-    
-    modal.classList.toggle('tv-popup-open')
-    bgBlur.className = "background-blur background-blur-hide";
-    // bgWrap.className = "background-wrapper background-wrapper-z-0";
-
-
-
-    // background.className = "background-blur background-blur-z-5 background-blur-hide";
-    // background.className = "background-blur background-blur-z-0 background-blur-hide";
-
-    // bgBlur.classList.toggle('background-blur-show')
-    // bgWrap.classList.toggle('background-blur-z-5')
-  }
+function popupTVHide(){
+  modal.classList.toggle('tv-popup-open')
+  bgBlur.className = "background-blur background-blur-hide";
+}
   
-  // window.onclick = function(event) {
-  //   if (event.target == modal) {
-  //     modal.style.display = "none";
-  //   }
-  // }
-
-
 function tvPopup(n){
   var cardClass = "tv-popup-card ";
   var posterClass = "tv-popup-poster ";
   var gradientClass = "tv-popup-gradient ";
   var titleClass = "tv-popup-title ";
   var serviceClass = "tv-popup-button-container tv-play-button ";
-
-
-
-
-
 
   document.getElementById("card").className =                  cardClass.concat(showSolid[n]);
   document.getElementById("poster").className =             posterClass.concat(showPoster[n]);
