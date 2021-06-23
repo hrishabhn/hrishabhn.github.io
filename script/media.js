@@ -1512,21 +1512,37 @@ document.getElementById("bookCover3").className =  book_3[1];
 
   // When the user clicks anywhere outside of the modal, close it
   var modal = document.getElementById("tv-popup-modal");
-  var background = document.getElementById("background-blur");
+  var bgBlur = document.getElementById("background-blur");
+  var bgWrap = document.getElementById("background-wrapper");
   
   function popupTVPopulate(n){
     tvPopup(n);
     // modal.style.display = "flex";
-    background.classList.toggle('background-blur-z')
-    background.classList.toggle('background-blur-show')
+    // background.className = "background-blur background-blur-z-5 background-blur-hide";
+    // background.className = "background-blur background-blur-z-5 background-blur-show";
+    
+    bgWrap.className = "background-wrapper background-wrapper-z-5";
+    bgBlur.className = "background-blur background-blur-show";
     modal.classList.toggle('tv-popup-open')
+
+    
+    // bgWrap.classList.toggle('background-wrapper-z-5')
+    // bgBlur.classList.toggle('background-blur-show')
   }
 
   function popupTVHide(){
     // modal.style.display = "none";
+    
     modal.classList.toggle('tv-popup-open')
-    background.classList.toggle('background-blur-show')
-    background.classList.toggle('background-blur-z')
+    bgWrap.className = "background-wrapper background-wrapper-z-0";
+    bgBlur.className = "background-blur background-blur-hide";
+
+
+    // background.className = "background-blur background-blur-z-5 background-blur-hide";
+    // background.className = "background-blur background-blur-z-0 background-blur-hide";
+
+    // bgBlur.classList.toggle('background-blur-show')
+    // bgWrap.classList.toggle('background-blur-z-5')
   }
   
   // window.onclick = function(event) {
