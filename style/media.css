@@ -567,7 +567,8 @@
 }
 .background-wrapper-z-0{
     z-index: 0;
-    transition: 0s;
+    transition: 0.25s;
+    /* transition-delay: 0.25s; */
 }
 
 .modal {
