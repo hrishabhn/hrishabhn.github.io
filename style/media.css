@@ -547,6 +547,7 @@
     top: 0px;
     /* z-index: 5; */
     /* background-color: #ffffff33; */
+    -webkit-transition: all 0.25s;
     transition: all 0.5s;
 }
 .background-blur-show{
