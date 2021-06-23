@@ -556,20 +556,31 @@
     z-index: 5;
     transition: 0.25s;
 }
-.background-blur-hide{
+.background-blur-hide{ 
     -webkit-backdrop-filter: none;
     background: none;
+    z-index: 0;
     transition: 0.25s;
+    /* display: none; */
+    
+
+
+    /* z-index: 0;
+    -webkit-backdrop-filter: none;
+    background: none;
+    transition: 0.25s; */
 }
-.background-wrapper-z-5{
+/* .background-wrapper-z-5{
     z-index: 5;
     transition: 0s;
+    background: #751612;
 }
 .background-wrapper-z-0{
     z-index: 0;
-    transition: 0.25s;
-    /* transition-delay: 0.25s; */
-}
+
+    transition: 0s;
+    transition-delay: 0.25s;
+} */
 
 .modal {
   display: flex;
