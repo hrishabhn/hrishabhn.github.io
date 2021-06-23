@@ -565,13 +565,13 @@
 }
 
 .southpark-solid{
-    background-color: #90b1ac;
+    background-color: #b8c2c0;
 }
 .southpark-gradient{
-    background: linear-gradient(#00000000,#90b1ac);
+    background: linear-gradient(#00000000,#b8c2c0);
 }
 .southpark-poster{
-    background-image: url('../TV/background/southpark.webp');
+    background-image: url('../TV/background/southpark.jpg');
 }
 .southpark-title{
     background-image: url('../TV/title/southpark.png');
