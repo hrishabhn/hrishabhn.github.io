@@ -638,7 +638,7 @@
     margin-bottom: 0px;
     padding-bottom: 5vw;
 
-    box-shadow: 0 0 100px var(--black-100);
+    box-shadow: 0 0 30px var(--black-100);
 
     overflow: hidden;
 }
