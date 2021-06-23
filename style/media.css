@@ -550,7 +550,8 @@
     transition: all 0.5s;
 }
 .background-blur-show{
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    background: var(--black-40);
 
 }
 .background-blur-z{
