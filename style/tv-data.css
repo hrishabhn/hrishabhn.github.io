@@ -563,3 +563,16 @@
 .dave-title{
     background-image: url('../TV/title/dave.png');
 }
+
+.southpark-solid{
+    background-color: #90b1ac;
+}
+.southpark-gradient{
+    background: linear-gradient(#00000000,#90b1ac);
+}
+.southpark-poster{
+    background-image: url('../TV/background/southpark.webp');
+}
+.southpark-title{
+    background-image: url('../TV/title/southpark.png');
+}

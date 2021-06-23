@@ -64,8 +64,24 @@ var show49 = hide
 var show50 = hide
 
 
+
+// Manifest
+show1 = [
+  "manifest-solid",
+  "manifest-poster",
+  "manifest-gradient",
+  "manifest-title",
+  "Drama • Mystery • 3 Seasons • 2018 - Present",
+  "https://www.netflix.com/title/80241318",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/349271",
+  "https://reelgood.com/show/manifest-2018",
+  "https://www.imdb.com/title/tt8421350"
+]
+
 // Always sunny
-show2 = [
+show3 = [
   "always-solid",
   "always-poster",
   "always-gradient",
@@ -81,7 +97,7 @@ show2 = [
 ]
 
 // Kim's Convenience
-show1 = [
+show2 = [
   "kim-solid",
   "kim-poster",
   "kim-gradient",
@@ -96,7 +112,7 @@ show1 = [
 ]
 
 // Love Death Robots
-show3 = [
+show4 = [
   "ldr-solid",
   "ldr-poster",
   "ldr-gradient",
@@ -170,9 +186,38 @@ show10 = [
   "https://www.imdb.com/title/tt11097374"
 ]
 
+// South park
+show11 = [
+  "southpark-solid",
+  "southpark-poster",
+  "southpark-gradient",
+  "southpark-title",
+  "Comedy • 2 Seasons • 2016 - Present",
+  "https://www.netflix.com/title/80199128",
+  "netflix",
+  "Watch on Netflix",
+  "https://www.tvtime.com/en/show/315908",
+  "https://reelgood.com/show/kims-convenience-2016",
+  "https://www.imdb.com/title/tt5912064",
+]
+
+// Dave
+show12 = [
+  "dave-solid",
+  "dave-poster",
+  "dave-gradient",
+  "dave-title",
+  "Comedy • 2 Seasons • 2020 - 2021",
+  "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
+  "hulu-green",
+  "Watch on Hulu",
+  "https://www.tvtime.com/en/show/354905",
+  "https://reelgood.com/show/dave-2020",
+  "https://www.imdb.com/title/tt8531222"
+]
 
 // Himym
-show11 = [
+show13 = [
   "himym-solid",
   "himym-poster",
   "himym-gradient",
@@ -188,7 +233,7 @@ show11 = [
 ]
 
 // New girl
-show12 = [
+show14 = [
   "newgirl-solid",
   "newgirl-poster",
   "newgirl-gradient",
@@ -203,7 +248,7 @@ show12 = [
 ]
 
 // Fresh prince
-show13 = [
+show15 = [
   "fresh-solid",
   "fresh-poster",
   "fresh-gradient",
@@ -217,7 +262,8 @@ show13 = [
   "https://www.imdb.com/title/tt0098800"
 ]
 
-show14 = [
+// Last week tonight
+show16 = [
   "last-solid",
   "last-poster",
   "last-gradient",
@@ -232,7 +278,7 @@ show14 = [
 ]
 
 // Twin peaks
-show15 = [
+show17 = [
   "twinpeaks-solid",
   "twinpeaks-poster",
   "twinpeaks-gradient",
@@ -247,7 +293,7 @@ show15 = [
 ]
 
 // Atlanta
-show16 = [
+show18 = [
   "atlanta-solid",
   "atlanta-poster",
   "atlanta-gradient",
@@ -262,7 +308,7 @@ show16 = [
 ]
 
 // Legion
-show17 = [
+show19 = [
   "legion-solid",
   "legion-poster",
   "legion-gradient",
@@ -277,7 +323,7 @@ show17 = [
 ]
 
 //Drive to survive
-show18 = [
+show20 = [
   "drive-solid",
   "drive-poster",
   "drive-gradient",
@@ -291,20 +337,7 @@ show18 = [
   "https://www.imdb.com/title/tt8289930"
 ]
 
-// Dave
-show11 = [
-  "dave-solid",
-  "dave-poster",
-  "dave-gradient",
-  "dave-title",
-  "Comedy • 2 Seasons • 2020 - 2021",
-  "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
-  "hulu-green",
-  "Watch on Hulu",
-  "https://www.tvtime.com/en/show/354905",
-  "https://reelgood.com/show/dave-2020",
-  "https://www.imdb.com/title/tt8531222"
-]
+
 
 
 
@@ -415,21 +448,6 @@ show34 = [
   "https://www.tvtime.com/en/show/360893",
   "https://reelgood.com/show/chernobyl-2019",
   "https://www.imdb.com/title/tt7366338"
-]
-
-// Manifest
-show35 = [
-  "manifest-solid",
-  "manifest-poster",
-  "manifest-gradient",
-  "manifest-title",
-  "Drama • Mystery • 3 Seasons • 2018 - Present",
-  "https://www.netflix.com/title/80241318",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/349271",
-  "https://reelgood.com/show/manifest-2018",
-  "https://www.imdb.com/title/tt8421350"
 ]
 
 //Human
