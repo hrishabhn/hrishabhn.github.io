@@ -553,7 +553,7 @@
 }
 .background-blur-show{
     -webkit-backdrop-filter: blur(15px);
-    background: var(--black-60);
+    background: var(--black-80);
     transition: 0.2s;
 
 }
