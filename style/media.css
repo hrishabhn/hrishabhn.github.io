@@ -548,19 +548,19 @@
     /* z-index: 5; */
     /* background-color: #ffffff33; */
     /* -webkit-transition: all 0.25s; */
-    /* transition: all 0.25s; */
+    transition: all 0.25s;
 }
 .background-blur-show{
     -webkit-backdrop-filter: blur(5px);
     background: var(--black-40);
     z-index: 5;
-    transition: 0.25s;
+    /* transition: 0.25s; */
 }
 .background-blur-hide{ 
     -webkit-backdrop-filter: none;
     background: none;
     z-index: 0;
-    transition: 0.25s;
+    /* transition: 0.25s; */
     /* display: none; */
     
 
