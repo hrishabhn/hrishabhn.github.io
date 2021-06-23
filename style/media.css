@@ -548,11 +548,11 @@
     z-index: 5;
     /* background-color: #ffffff33; */
     /* -webkit-transition: all 0.25s; */
-    transition: all 0.25s;
+    transition: all 0.2s;
     pointer-events: none;
 }
 .background-blur-show{
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(15px);
     /* background: var(--black-40); */
 
 }
@@ -587,7 +587,7 @@
   /* background-color: var(--black-20); */
   /* -webkit-backdrop-filter: blur(10px); */
   transition: all 0.25s;
-  transition-timing-function: ease;
+  transition-timing-function: ease-in-out;
 }
 .tv-popup-open{
     top: 0px;
