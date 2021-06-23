@@ -291,6 +291,21 @@ show18 = [
   "https://www.imdb.com/title/tt8289930"
 ]
 
+// Dave
+show11 = [
+  "dave-solid",
+  "dave-poster",
+  "dave-gradient",
+  "dave-title",
+  "Comedy • 2 Seasons • 2020 - 2021",
+  "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
+  "hulu-green",
+  "Watch on Hulu",
+  "https://www.tvtime.com/en/show/354905",
+  "https://reelgood.com/show/dave-2020",
+  "https://www.imdb.com/title/tt8531222"
+]
+
 
 
 // Movies
