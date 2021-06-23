@@ -193,7 +193,7 @@ show11 = [
   "southpark-gradient",
   "southpark-title",
   "Animation • Comedy • 24 Seasons 1997 - Present",
-  "https://www.netflix.com/title/80199128",
+  "https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series",
   "hbo",
   "Watch on HBO Max",
   "https://www.tvtime.com/en/show/75897",
