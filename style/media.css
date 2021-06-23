@@ -551,8 +551,8 @@
     transition: all 0.25s;
 }
 .background-blur-show{
-    -webkit-backdrop-filter: blur(5px);
-    background: var(--black-40);
+    -webkit-backdrop-filter: blur(10px);
+    /* background: var(--black-40); */
     z-index: 5;
     /* transition: 0.25s; */
 }
@@ -645,7 +645,7 @@
     margin-bottom: 0px;
     padding-bottom: 5vw;
 
-    box-shadow: 0 0 50px var(--black-60);
+    box-shadow: 0 0 100px var(--black-100);
 
     overflow: hidden;
 }
