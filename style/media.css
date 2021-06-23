@@ -377,20 +377,20 @@
     z-index: 5;
     /* background-color: #ffffff33; */
     /* -webkit-transition: all 0.25s; */
-    /* transition: all 0.2s; */
+    transition: all 0.25s;
     pointer-events: none;
 }
 .background-blur-show{
     -webkit-backdrop-filter: blur(15px);
-    background: var(--black-80);
-    transition: 0.2s;
+    background: var(--black-60);
+    /* transition: 0.25s; */
 
 }
 .background-blur-hide{ 
     -webkit-backdrop-filter: none;
     background: none;
-    transition: 0.2s;
-    transition-delay: 0.1s;
+    /* transition: 0.2s; */
+    /* transition-delay: 0.1s; */
 }
 
 .modal {
