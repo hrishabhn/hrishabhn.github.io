@@ -548,7 +548,7 @@
     /* z-index: 5; */
     /* background-color: #ffffff33; */
     -webkit-transition: all 0.25s;
-    transition: all 0.5s;
+    transition: all 0.25s;
 }
 .background-blur-show{
     -webkit-backdrop-filter: blur(5px);
