@@ -1521,7 +1521,7 @@ document.getElementById("bookCover3").className =  book_3[1];
     // background.className = "background-blur background-blur-z-5 background-blur-hide";
     // background.className = "background-blur background-blur-z-5 background-blur-show";
     
-    bgWrap.className = "background-wrapper background-wrapper-z-5";
+    // bgWrap.className = "background-wrapper background-wrapper-z-5";
     bgBlur.className = "background-blur background-blur-show";
     modal.classList.toggle('tv-popup-open')
 
@@ -1535,7 +1535,7 @@ document.getElementById("bookCover3").className =  book_3[1];
     
     modal.classList.toggle('tv-popup-open')
     bgBlur.className = "background-blur background-blur-hide";
-    bgWrap.className = "background-wrapper background-wrapper-z-0";
+    // bgWrap.className = "background-wrapper background-wrapper-z-0";
 
 
 
