@@ -1534,8 +1534,9 @@ document.getElementById("bookCover3").className =  book_3[1];
     // modal.style.display = "none";
     
     modal.classList.toggle('tv-popup-open')
-    bgWrap.className = "background-wrapper background-wrapper-z-0";
     bgBlur.className = "background-blur background-blur-hide";
+    bgWrap.className = "background-wrapper background-wrapper-z-0";
+
 
 
     // background.className = "background-blur background-blur-z-5 background-blur-hide";
