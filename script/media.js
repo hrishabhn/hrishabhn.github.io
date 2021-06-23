@@ -1512,15 +1512,21 @@ document.getElementById("bookCover3").className =  book_3[1];
 
   // When the user clicks anywhere outside of the modal, close it
   var modal = document.getElementById("tv-popup-modal");
+  var background = document.getElementById("background-blur");
+  
   function popupTVPopulate(n){
     tvPopup(n);
     // modal.style.display = "flex";
+    background.classList.toggle('background-blur-z')
+    background.classList.toggle('background-blur-show')
     modal.classList.toggle('tv-popup-open')
   }
 
   function popupTVHide(){
     // modal.style.display = "none";
     modal.classList.toggle('tv-popup-open')
+    background.classList.toggle('background-blur-show')
+    background.classList.toggle('background-blur-z')
   }
   
   // window.onclick = function(event) {
