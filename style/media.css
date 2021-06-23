@@ -377,7 +377,7 @@
     z-index: 5;
     /* background-color: #ffffff33; */
     /* -webkit-transition: all 0.25s; */
-    transition: all 0.25s;
+    transition: all 0.5s;
     pointer-events: none;
 }
 .background-blur-show{
@@ -403,7 +403,7 @@
   width: 100%; 
   height: 100%;
   overflow: auto; /* Enable scroll if needed */
-  transition: all 0.25s;
+  transition: all 0.5s;
   transition-timing-function: ease-in-out;
 }
 .tv-popup-open{
