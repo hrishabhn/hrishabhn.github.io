@@ -1503,17 +1503,25 @@ document.getElementById("bookCover3").className =  book_3[1];
 
   var modal = document.getElementById("tv-popup-modal");
   var bgBlur = document.getElementById("background-blur");
+  var fgBlur = document.getElementById("foreground-blur");
+
   var bgWrap = document.getElementById("background-wrapper");
   
 function popupTVPopulate(n){
   tvPopup(n);
     bgBlur.className = "background-blur background-blur-show";
-    modal.classList.toggle('tv-popup-open')
+    modal.className = "modal tv-popup-open";
+    // fgBlur.className = "foreground-blur foreground-blur-show";
+
   }
 
 function popupTVHide(){
   modal.classList.toggle('tv-popup-open')
   bgBlur.className = "background-blur background-blur-hide";
+  modal.className = "modal tv-popup-closed";
+  // fgBlur.className = "foreground-blur foreground-blur-hide";
+
+
 }
   
 function tvPopup(n){
