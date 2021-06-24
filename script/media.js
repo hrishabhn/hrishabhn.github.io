@@ -664,6 +664,22 @@ var book_3 = [
   "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF"
 ]
 
+var bookSolid = [0,0,0,0,0];
+var bookCover = [0,0,0,0,0];
+var bookLink = [0,0,0,0,0];
+
+var k = 1;
+bookSolid[k] = book_1[0];
+bookCover[k] = book_1[1];
+ bookLink[k] = book_1[2];
+k = 2;
+bookSolid[k] = book_2[0];
+bookCover[k] = book_2[1];
+ bookLink[k] = book_2[2];
+k = 3;
+bookSolid[k] = book_3[0];
+bookCover[k] = book_3[1];
+ bookLink[k] = book_3[2];
 
 
 
@@ -1459,22 +1475,46 @@ function mediaTVPopulate(){
     document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
     // document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);
   }
+
+  var cardClass = "book-card ";
+  var posterClass = "book-cover ";
+
+  for (i = 1; i < 4; i++){
+    var itemid = [
+      "bookCard".concat(i),
+      "bookCover".concat(i),
+      "bookLink".concat(i),
+    ]
+
+    document.getElementById(itemid[0]).className =        cardClass.concat(bookSolid[i]);
+    document.getElementById(itemid[1]).className =     posterClass.concat(bookCover[i]);
+    // document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
+    // document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
+    // document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
+    // document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);
+  }
+
+
+
+
+
+
   
-// BOOKS //
-//book 1
- document.getElementById("bookCard1").className =  book_1[0];
-document.getElementById("bookCover1").className =  book_1[1];
- document.getElementById("bookLink1").href =       book_1[2];
+// // BOOKS //
+// //book 1
+//  document.getElementById("bookCard1").className =  book_1[0];
+// document.getElementById("bookCover1").className =  book_1[1];
+// //  document.getElementById("bookLink1").href =       book_1[2];
 
-//book 2
- document.getElementById("bookCard2").className =  book_2[0];
-document.getElementById("bookCover2").className =  book_2[1];
- document.getElementById("bookLink2").href =       book_2[2];
+// //book 2
+//  document.getElementById("bookCard2").className =  book_2[0];
+// document.getElementById("bookCover2").className =  book_2[1];
+// //  document.getElementById("bookLink2").href =       book_2[2];
 
-//book 3
- document.getElementById("bookCard3").className =  book_3[0];
-document.getElementById("bookCover3").className =  book_3[1];
- document.getElementById("bookLink3").href =       book_3[2];
+// //book 3
+//  document.getElementById("bookCard3").className =  book_3[0];
+// document.getElementById("bookCover3").className =  book_3[1];
+// //  document.getElementById("bookLink3").href =       book_3[2];
 
   
   // PODCASTS //
@@ -1520,7 +1560,8 @@ document.getElementById("bookCover3").className =  book_3[1];
    document.getElementById("podLink8").href =      pod8[2];
 }
 
-var modal = document.getElementById("tv-popup-modal");
+var tvModal = document.getElementById("tv-popup-modal");
+var bookModal = document.getElementById("book-popup-modal");
 var bgBlur = document.getElementById("background-blur");
 var fgBlur = document.getElementById("foreground-blur");
 
@@ -1528,20 +1569,33 @@ var bgWrap = document.getElementById("background-wrapper");
   
 function popupTVPopulate(n){
   tvPopup(n);
-    bgBlur.className = "background-blur background-blur-show";
-    modal.className = "modal tv-popup-open";
-    // fgBlur.className = "foreground-blur foreground-blur-show";
-
-  }
+  bgBlur.className = "background-blur background-blur-show";
+  tvModal.className = "modal tv-popup-open";
+}
 
 function popupTVHide(){
-  modal.classList.toggle('tv-popup-open')
   bgBlur.className = "background-blur background-blur-hide";
-  modal.className = "modal tv-popup-closed";
-  // fgBlur.className = "foreground-blur foreground-blur-hide";
+  tvModal.className = "modal tv-popup-closed";
+}
 
+function popupBookPopulate(n){
+  bookPopup(n);
+  bgBlur.className = "background-blur background-blur-show";
+  bookModal.className = "modal book-popup-open";
+  // console.log("hi")
 
 }
+
+function popupBookHide(){
+  bgBlur.className = "background-blur background-blur-hide";
+  // console.log("hi")
+
+  bookModal.className = "modal book-popup-closed";
+  // console.log("hi")
+}
+
+
+
   
 function tvPopup(n){
   var cardClass = "tv-popup-card ";
@@ -1561,4 +1615,21 @@ function tvPopup(n){
   document.getElementById("tv-time").href =                                    showTVtime[n];
   document.getElementById("reelgood").href =                                 showReelgood[n];
   document.getElementById("imdb").href =                                         showIMDB[n];
+}
+
+function bookPopup(n){
+  var cardClass = "book-popup-card ";
+  var posterClass = "book-popup-poster ";
+
+  document.getElementById("book-popup-card").className =                  cardClass.concat(bookSolid[n]);
+  document.getElementById("book-popup-poster").className =             posterClass.concat(bookCover[n]);
+  // document.getElementById("grad").className =           gradientClass.concat(showGradient[n]);
+  // document.getElementById("title").className =                titleClass.concat(showTitle[n]);
+  // document.getElementById("desc").innerHTML =                             showDescription[n];
+  document.getElementById("book-popup-audible").href =                                         bookLink[n];
+  // document.getElementById("serviceGradient").className = serviceClass.concat(showServGrad[n]);
+  // document.getElementById("service").innerHTML =                              showService[n];
+  // document.getElementById("tv-time").href =                                    showTVtime[n];
+  // document.getElementById("reelgood").href =                                 showReelgood[n];
+  // document.getElementById("imdb").href =                                         showIMDB[n];
 }

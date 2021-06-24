@@ -144,6 +144,28 @@
 
         </div>
 
+    </div><div id="book-popup-modal" class="modal book-popup-closed">
+        <div class="book-popup-tab" onclick="popupBookHide()"></div>
+            <div class="book-popup-modal">
+
+                <div id="book-popup-card" class="book-popup-card show-solid">
+                    <span id="book-popup-poster" class="book-popup-poster show-poster"></span>
+                    <div class="book-popup-button-tray">
+                        <span id="serviceGradient" class="book-popup-button-container audible">
+                            <span class="book-popup-text">Audible</span>
+                            <a id="book-popup-audible" class="book-popup-link" target="_blank"></a>
+                        </span><span class="book-popup-button-container books">
+                            <span class="book-popup-text">Books</span>
+                            <a id="tv-time" class="book-popup-link" target="_blank" href="ibooks://"></a>
+                        </span>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
     </div>
 
     <!-- <div id="foreground-blur" class="foreground-blur foreground-blur-hide"></div> -->
@@ -391,14 +413,6 @@
                 <a id="appLink_160" class="app-link" href="https://google.com" target="_self"></a>
             </div>
         </div>
-
-        
-
-
-
-
-
-        
 
         <!-- up next -->
         <div id="up-next" class="subtitle-box">
@@ -867,7 +881,7 @@
                     <span class="book-more-text-box">
                         <p class="book-more-text">READ</p>
                     </span>
-                    <a id="bookLink1" class="book-more-link" target="_self"></a>
+                    <a id="bookLink1" class="book-more-link" target="_self" onclick="popupBookPopulate(1)"></a>
                     <svg class="book-more-icon" viewBox="0 0 512 512">
                         <g>
                             <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
@@ -884,7 +898,7 @@
                     <span class="book-more-text-box">
                         <p class="book-more-text">READ</p>
                     </span>
-                    <a id="bookLink2" class="book-more-link" target="_self"></a>
+                    <a id="bookLink2" class="book-more-link" target="_self" onclick="popupBookPopulate(2)"></a>
                     <svg class="book-more-icon" viewBox="0 0 512 512">
                         <g>
                             <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
@@ -901,7 +915,7 @@
                     <span class="book-more-text-box">
                         <p class="book-more-text">READ</p>
                     </span>
-                    <a id="bookLink3" class="book-more-link" target="_self"></a>
+                    <a id="bookLink3" class="book-more-link" target="_self" onclick="popupBookPopulate(3)"></a>
                     <svg class="book-more-icon" viewBox="0 0 512 512">
                         <g>
                             <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
