@@ -1413,12 +1413,13 @@ function homeTVPopulate(){
       // "page_".concat(i),
     ]
 
+    
     document.getElementById(itemid[0]).className =        cardClass.concat(showSolid[i]);
     document.getElementById(itemid[1]).className =     posterClass.concat(showPoster[i]);
     document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
     document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
     document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
-    document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);                  //showLink[i];
+    // document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);                  //showLink[i];
     // document.getElementById(itemid[6]).innerHTML =                       showService[i];
     //document.getElementById(itemid[7]).href =                        showPage.concat(i);
 
@@ -1519,11 +1520,11 @@ document.getElementById("bookCover3").className =  book_3[1];
    document.getElementById("podLink8").href =      pod8[2];
 }
 
-  var modal = document.getElementById("tv-popup-modal");
-  var bgBlur = document.getElementById("background-blur");
-  var fgBlur = document.getElementById("foreground-blur");
+var modal = document.getElementById("tv-popup-modal");
+var bgBlur = document.getElementById("background-blur");
+var fgBlur = document.getElementById("foreground-blur");
 
-  var bgWrap = document.getElementById("background-wrapper");
+var bgWrap = document.getElementById("background-wrapper");
   
 function popupTVPopulate(n){
   tvPopup(n);
