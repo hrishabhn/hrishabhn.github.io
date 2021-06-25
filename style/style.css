@@ -64,7 +64,10 @@ body{
     height: 100%;
     width: 100%;
     background: url('../images/wp-mob-dark.png');
-    background-size: cover;}
+    background-size: cover;
+    opacity: 0.5;
+}
+
 
 .title-box{
     height: 75px;
@@ -265,6 +268,28 @@ body{
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
 }
+
+.media-wrapper{
+    width: 100%;
+    box-sizing: border-box;
+
+    align-items: center;
+    position: relative;
+
+    padding-left: 15px;
+    padding-right: 5px;
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+
+
+
+
+
 .app-tray-text-box{
     box-sizing: border-box;
     padding-left: 15px;
@@ -482,6 +507,13 @@ body{
     .title-text{
         color: var(--dark-layer-1);
     }
+    .app-tray-text{
+        color: var(--dark-layer-1);
+    }
+    .wallpaper{
+        background: url('../images/wp-mob-light.png');
+        background-size: cover;
+    }
 
     .menu-item-icon{
         fill: var(--black-60);
@@ -551,6 +583,7 @@ body{
         width: 100%;
         background: url('../images/wp-mob-dark.png');
         background-size: cover;
+        /* opacity: 0.5; */
     }
 
     .main{
@@ -583,15 +616,9 @@ body{
         height: 100px;
     }
 
-
-    /* .title-text{
-        font-size: 30px;
-    } */
-
-
     .subtitle-box{
         /* box-sizing: border-box; */
-        padding-left: 5vw;
+        padding-left: 15px;
         /* padding-top: 20px; */
         /* padding-bottom: 10px; */
         /* margin: 0; */

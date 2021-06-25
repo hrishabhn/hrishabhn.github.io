@@ -4,9 +4,9 @@
 
 
 .tv-media-card{
-    height: 250px;
-    width: 335px;
-    border-radius: 5px;
+    height: 230px;
+    width: 300px;
+    border-radius: 10px;
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -20,8 +20,8 @@
 
 .tv-media-poster{
     width: 100%;
-    height: 190px;
-    background-size: cover;
+    height: 170px;
+    background-size: cover; 
     background-position: center;
     display: block;
 
@@ -31,10 +31,10 @@
 .tv-media-gradient{
     display: block;
     position: relative;
-    top: 40px;
+    top: 25%;
 
     width: 100%;
-    height: 150px;
+    height: 75%;
 
     transition: 0.25s;
 }
@@ -51,16 +51,11 @@
     background-color: #00000000;
     fill: #fff;
 
-    height: 100px;
-    width: 250px;
+    height: 80px;
+    width: 225px;
 
     transition: 0.25s;
 }
-/* .title-tall{
-    height: 100px;
-} */
-
-
 .tv-media-more-container{
     position: absolute;
     bottom: 0px;
@@ -156,27 +151,27 @@
 
 @media(min-width: 450px){
     .tv-media-card:hover{
-        width: 375px;
-        margin-left: -20px;
-        margin-right: -10px;
+        width: 330px;
+        margin-left: -15px;
+        margin-right: -5px;
     
-        height: 270px;
+        height: 250px;
         margin-top: -10px;
         margin-bottom: -10px;
     
-        box-shadow: 0 0 30px #00000099;
+        box-shadow: 0 0 10px #00000099;
         z-index: 5;
     
         transition: 0.5s;
     }
     .tv-media-card:hover .tv-media-poster{
-        height: 210px;
+        height: 190px;
         transition: 0.5s;
     }
-    .tv-media-card:hover .tv-media-gradient{
+    /* .tv-media-card:hover .tv-media-gradient{
         height: 170px;
         transition: 0.5s;
-    }
+    } */
 
 
     .
@@ -1402,10 +1397,10 @@
     .tv-card{
         scroll-margin-left: 5vw;
     }
-    .tv-media-card{
+    /* .tv-media-card{
         scroll-snap-align: none;
         scroll-margin-left: 5vw;
-    }
+    } */
     .podcast-card{
         scroll-margin-left: 5vw;
     }
