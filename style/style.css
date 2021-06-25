@@ -233,7 +233,7 @@ body{
 }
 
 .app-tray-container{
-    width: calc(100%-40px);
+    width: calc(100% - 40px);
 
     margin-left: 20px;
     margin-right: 20px;
@@ -658,9 +658,9 @@ body{
 
 
     .app-tray-container{
-        width: 90vw;
+        width: calc(100vw - 30px);
     
-        margin-left: 5vw;
+        margin-left: 15px;
         margin-right: 0px;
         /* margin-top: 20px; */
     
