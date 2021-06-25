@@ -63,7 +63,7 @@ body{
     position: fixed;
     height: 100%;
     width: 100%;
-    background: url('../images/wp-mob-dark.png');
+    background: url('../images/wp-dark.jpg');
     background-size: cover;
     opacity: 0.5;
 }
@@ -504,7 +504,8 @@ body{
         color: var(--dark-layer-1);
     }
     .wallpaper{
-        background: url('../images/wp-mob-light.png');
+        background: url('../images/wp-light.jpg');
+        /* background: blue; */
         background-size: cover;
     }
 
@@ -563,15 +564,11 @@ body{
     .hidden-mobile{
         display: none !important;
     }
-    .wallpaper{
-        display: block;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        background: url('../images/wp-mob-dark.png');
-        background-size: cover;
-        /* opacity: 0.5; */
-    }
+    /* .wallpaper{ */
+        /* background: url('../images/wp-mob-dark.jpg'); */
+        /* background: blue; */
+        /* background-size: cover; */
+    /* } */
 
     .main{
         padding-top: 0px;    
@@ -772,10 +769,6 @@ body{
 
         .notch-box{
             background-color: var(--white-60);
-        }
-        .wallpaper{
-            background: url('../images/wp-mob-light.png');
-            background-size: cover;
         }
     }
 }
