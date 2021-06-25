@@ -432,7 +432,8 @@ body{
     display: inline-flex;
     align-items: center;
 
-    background-color: var(--dark-layer-1);
+    background-color: var(--black-40);
+    -webkit-backdrop-filter: blur(10px);
     transition: 0.25s;
 }
 /* .anchor-container:hover{
