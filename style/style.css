@@ -273,7 +273,7 @@ body{
 }
 .app-tray-text{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--white-100);
     cursor: default;
 }
@@ -668,7 +668,7 @@ body{
     
         /* padding-bottom: 15px; */
     
-        /* -webkit-backdrop-filter: blur(25px); */
+        -webkit-backdrop-filter: blur(25px);
         /* background: var(--black-20); */
     }
     
