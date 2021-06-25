@@ -224,6 +224,66 @@ body{
     display: flex;
 }
 
+.app-tray-container{
+    width: 90vw;
+
+    margin-left: 5vw;
+    margin-top: 20px;
+
+    border-radius: 20px;
+
+    /* padding: 5vw 0; */
+    /* padding-right: 0; */
+    padding-bottom: 15px;
+
+    -webkit-backdrop-filter: blur(25px);
+    background: var(--black-20);
+}
+
+
+.app-tray-wrapper{
+    width: 100%;
+    /* height: 125px; */
+    box-sizing: border-box;
+
+    align-items: center;
+    position: relative;
+    /* z-index: 1; */
+    /* left: -70px; */
+
+    padding-left: 15px;
+    padding-right: 5px;
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+
+    /* display: inline-flex; */
+}
+.app-tray-text-box{
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    margin: 0;
+    width: 100%;
+    /* height: 20px; */
+    /* background: transparent; */
+}
+.app-tray-text{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white-100);
+    /* background-color: transparent; */
+    cursor: default;
+    /* height: 10px; */
+}
+
+
+
+
+
 
 
 
@@ -478,12 +538,27 @@ body{
     .hidden-mobile{
         display: none !important;
     }
+    .wallpaper{
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: url('../images/wp-mob-dark.png');
+        background-size: cover;
+    }
 
     .main{
         padding-top: 0px;    
         padding-left: 0px;
         padding-right: 0px;
         padding-bottom: 30vw;
+
+        /* background-color: blue; */
+        /* background: url('../images/wp-mob-dark.png'); */
+        /* background-image: url(/images/wp-mob-dark.png); */
+        /* background-size: cover; */
+
+
     }
     .notch-box{
         position: fixed;
@@ -580,6 +655,13 @@ body{
 
         left: 0px;
     }
+
+    .app-tray-wrapper{
+        /* padding-left: 5vw; */
+        /* padding-right: 2.5vw; */
+
+        left: 0px;
+    }
     /* .app-container{
         scroll-margin-left: 5vw;
         transition: 0.25s;
@@ -665,6 +747,10 @@ body{
 
         .notch-box{
             background-color: var(--white-60);
-        }   
+        }
+        .wallpaper{
+            background: url('../images/wp-mob-light.png');
+            background-size: cover;
+        }
     }
 }
