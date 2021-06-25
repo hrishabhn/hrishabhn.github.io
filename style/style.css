@@ -131,7 +131,8 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 
-    background-color: var(--dark-layer-1);
+    background-color: var(--black-40);
+    -webkit-backdrop-filter: blur(25px);
 
 
 }
@@ -492,7 +493,7 @@ body{
         background-color: var(--light-layer-0);
     }
     .sidebar{
-        background-color: var(--light-layer-1);
+        background-color: var(--white-20);
     }
     .sidebar-blur{
         background-color: var(--white-20);
