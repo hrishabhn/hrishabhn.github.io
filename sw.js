@@ -7,8 +7,8 @@ const assets = [
   "/media.html",
   "/app.js",
 
-  "/images/wp-mob-light.png",
-  "/images/wp-mob0-dark.png",
+  "/images/wp-light.jpg",
+  "/images/wp-dark.jpg",
 
   "/style/style.css",
   "/style/brand.css",
