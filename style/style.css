@@ -65,7 +65,7 @@ body{
     width: 100%;
     background: url('../images/wp-dark.jpg');
     background-size: cover;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 
