@@ -499,6 +499,12 @@ body{
     .subtitle-text{
         color: var(--dark-layer-1);
     }
+    .app-tray-container{
+        background: var(--white-20);
+    }
+
+
+
     .app-icon-container{
         background-color: var(--white-20);
     }
@@ -664,14 +670,8 @@ body{
     
         margin-left: 15px;
         margin-right: 0px;
-        /* margin-top: 20px; */
-    
-        /* border-radius: 20px; */
-    
-        /* padding-bottom: 15px; */
-    
+
         -webkit-backdrop-filter: blur(25px);
-        /* background: var(--black-20); */
     }
     
     
