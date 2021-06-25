@@ -244,8 +244,8 @@
         /* margin-top: 0px; */
     }
     .search-container{
-        width: 90vw;
-        margin-left: 5vw;
+        width: var(--mobile-width);
+        margin-left: 15px;
         padding: 0px;
     }
 
