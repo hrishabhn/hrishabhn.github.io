@@ -682,6 +682,7 @@ body{
     
         margin-left: 15px;
         margin-right: 0px;
+        margin-top: 10px;
 
         -webkit-backdrop-filter: blur(25px);
     }
@@ -693,7 +694,7 @@ body{
     .app-container{
         width: 70px;
         height: 70px;
-        border-radius: 20px;
+        border-radius: 25px;
     
         margin-right: 10px;
     
