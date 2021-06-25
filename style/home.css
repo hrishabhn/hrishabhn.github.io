@@ -80,7 +80,8 @@
     /* display: inline-block; */
     /* align-items: center; */
 
-    background-color: var(--dark-layer-1);
+    background-color: var(--black-40);
+    -webkit-backdrop-filter: blur(15px);
     /* overflow: hidden; */
 }
 .date-text-box{
@@ -125,7 +126,8 @@
     /* display: inline-block; */
     /* align-items: center; */
 
-    background-color: var(--dark-layer-1);
+    background-color: var(--black-40);
+    -webkit-backdrop-filter: blur(15px);
     /* overflow: hidden; */
 }
 .time-text-box{
@@ -226,6 +228,18 @@
     .user-name-subtext{
         color: var(--black-60);
     }
+
+    .date-container{
+        background-color: var(--white-40);
+    }
+    .date-number-box{
+        color: var(--black-80);
+    }
+
+    
+
+
+
 
     .search{
         background: var(--light-layer-1);
