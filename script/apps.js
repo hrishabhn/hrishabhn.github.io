@@ -2726,3 +2726,18 @@ appContainer[k] = app_M20[0];
 //         document.getElementById(itemid[4]).href =                                 appLink[i];
 //     }
 // }
+
+var appModal = document.getElementById("app-popup-modal");
+var bgBlur = document.getElementById("background-blur");
+
+  
+function popupAppPopulate(n){
+//   appPopup(n);
+  bgBlur.className = "background-blur background-blur-show";
+  appModal.className = "modal app-popup-open";
+}
+
+function popupAppHide(){
+  bgBlur.className = "background-blur background-blur-hide";
+  appModal.className = "modal app-popup-closed";
+}

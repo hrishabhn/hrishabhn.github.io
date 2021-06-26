@@ -80,7 +80,7 @@
     /* display: inline-block; */
     /* align-items: center; */
 
-    background-color: var(--black-40);
+    background-color: var(--black-60);
     -webkit-backdrop-filter: blur(15px);
     /* overflow: hidden; */
 }
@@ -126,7 +126,7 @@
     /* display: inline-block; */
     /* align-items: center; */
 
-    background-color: var(--black-40);
+    background-color: var(--black-60);
     -webkit-backdrop-filter: blur(15px);
     /* overflow: hidden; */
 }
@@ -218,13 +218,13 @@
     }
 
     .date-container{
-        background-color: var(--white-40);
+        background-color: var(--white-60);
     }
     .date-number-box{
         color: var(--black-80);
     }
     .time-container{
-        background-color: var(--white-40);
+        background-color: var(--white-60);
     }
     .time-number-box{
         color: var(--black-80);
@@ -256,13 +256,4 @@
         margin-left: 15px;
         padding: 0px;
     }
-
-    /* .date-container{
-        width: 28vw;
-        margin-right: 2vw;
-    }
-    .time-container{
-        width: 60vw;
-        margin-right: 2vw;
-    } */
 }
