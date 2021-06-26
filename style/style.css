@@ -890,12 +890,12 @@ body{
     
         margin-right: 10px;
     
-        transition: 0.25s;
+        transition: 0.1s;
 
         /* scroll-snap-align: none; */
         /* scroll-margin-left: 90px; */
     }
-    /* .app-container:hover{
+    .app-container:hover{
         width: 66px;
         height: 66px;
     
@@ -904,8 +904,8 @@ body{
         margin-left: 2px;
         margin-right: 12px;
         
-        transition: 0.25s;
-    } */
+        transition: 0.1s;
+    }
 
     .app-container:hover .app-icon-container{
         width: 100%;
