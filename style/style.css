@@ -490,12 +490,14 @@ body{
 
 .app-popup-open{
     top: 0%;
+    transition: 0.25s;
     /* scale: 1; */
     /* opacity: 1; */
 }
 .app-popup-closed{
     pointer-events: none;
     top: 100% !important;
+    transition: 0.25s;
     /* opacity: 0; */
     /* scale: 0.9; */
 }
