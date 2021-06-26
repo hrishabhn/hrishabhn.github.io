@@ -69,8 +69,9 @@ body{
     /* background:linear-gradient(to bottom,#28313b,#485461); */
     /* background:linear-gradient(to bottom,#661913,#1a0605); */
 
-    background:linear-gradient(to bottom,#183949,#183949);
+    /* background:linear-gradient(to bottom,#183949,#183949); */
 
+    background: var(--dark-layer-1);
     
     /* background: url('../images/wp-dark.png'); */
     background-size: cover;
