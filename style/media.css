@@ -205,10 +205,10 @@
 
 
 .book-card{
-    height: 345px;
+    height: 300px;
     width: 200px;
 
-    border-radius: 4px;
+    border-radius: 15px;
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -216,7 +216,7 @@
     margin-right: 10px;
     margin-bottom: 0px;
 
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     scroll-margin-left: 90px;
 }
 .book-cover{
@@ -226,83 +226,10 @@
     background-position: center;
     display: block;
 }
-
-.book-more-container{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    
-    height: 45px;
-    width: 100%;
-    box-sizing: border-box;
-
-    /* background: #00000033; */
-
-    z-index: 1;
-
-    transition: 0.25s;
-}
-.book-more-container:hover{
-    background: rgba(0, 0, 0, 0.15);
-}
-.book-more-container:hover .book-more-icon{
-    fill: #fff;
-}
-.book-more-container:hover .book-more-text{
-    color: #fff;
-}
-
-
-.book-more-icon{
-    fill: #ffffff99;
-    height: 14px;
-    width: 14px;
-    position: absolute;
-    top: 15.5px;
-    right: 20px;
-
-    transition: 0.25s;
-}
-
-
-.book-more-text-box{
-    display: flex;
-    position: relative;
-    left: 0px;
-    bottom: 0%;
-
-    height: 100%;
-    width: 100%;
-    border-radius: inherit;
-    box-sizing: border-box;
-    z-index: 2;
-
-    background-color: transparent;
-
-    text-decoration: none;
-    align-items: center;
-
-    padding-left: 20px;
-    padding-right: 45px;
-
-    color: #ffffff99;
-    font-size: 10px;
-    font-weight: 600;
-
-    transition: 0.25s;
-}
-.book-more-text{
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    transition: 0.25s;
-}
 .book-more-link{
     display: flex;
     position: relative;
-    left: 0px;
+    /* left: 0px; */
     bottom: 100%;
 
     height: 100%;
@@ -312,7 +239,11 @@
 
     background-color: transparent;
 
-    transition: 0.25s;
+    transition: all 0.2s;
+}
+.book-more-link:hover{
+    transition: 0.2s;
+    -webkit-backdrop-filter: blur(3px);
 }
 
 
@@ -334,7 +265,7 @@
     margin-right: 10px;
     margin-bottom: 0px;
 
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     scroll-margin-left: 90px;
 }
 .podcast-cover{
