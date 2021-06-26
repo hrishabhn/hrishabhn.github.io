@@ -337,12 +337,12 @@
     position: relative;
     align-self: flex-end;
 
-    width: 95vw;
+    width: 100vw;
     height: auto;
     max-height: 90vh;
-    /* border-top-left-radius: 50px; */
-    /* border-top-right-radius: 50px; */
-    border-radius: 45px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    /* border-radius: 40pt; */
     z-index: 5;
     justify-self: center;
 }
@@ -374,7 +374,7 @@
 
     vertical-align: top;
     margin-right: 0px;
-    margin-bottom: 2.5vw;
+    margin-bottom: 0px;
     padding-bottom: 5vw;
 
     box-shadow: 0 0 30px var(--black-100);
