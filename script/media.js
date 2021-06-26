@@ -1486,7 +1486,7 @@ function mediaTVPopulate(){
       "bookLink".concat(i),
     ]
 
-    document.getElementById(itemid[0]).className =        cardClass.concat(bookSolid[i]);
+    // document.getElementById(itemid[0]).className =        cardClass.concat(bookSolid[i]);
     document.getElementById(itemid[1]).className =     posterClass.concat(bookCover[i]);
     // document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
     // document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
