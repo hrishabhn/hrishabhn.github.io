@@ -52,6 +52,7 @@ body{
     background-color: var(--dark-layer-0);
     /* -webkit-appearance: none; */
     -webkit-tap-highlight-color: transparent;
+    min-height: 100vh;
 }
 
 .hidden-always{
