@@ -2730,11 +2730,15 @@ appContainer[k] = app_M20[0];
 var appModal = document.getElementById("app-popup-modal");
 var bgBlur = document.getElementById("background-blur");
 
+var appPopupTitle = document.getElementById("app-popup-title");
+
+
   
 function popupAppPopulate(n){
 //   appPopup(n);
   bgBlur.className = "background-blur background-blur-show";
   appModal.className = "modal app-popup-open";
+  appPopupTitle.innerHTML = "test";
 }
 
 function popupAppHide(){
