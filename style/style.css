@@ -67,8 +67,11 @@ body{
     /* background:linear-gradient(to bottom,#000033,#660000); */
     /* background:linear-gradient(to bottom,#537895,#09203f); */
     background:linear-gradient(to bottom,#28313b,#485461);
+    /* background:linear-gradient(to bottom,#661913,#1a0605); */
 
+    /* background:linear-gradient(to bottom,#183949,#040405); */
 
+    
     /* background: url('../images/wp-dark.png'); */
     background-size: cover;
     /* opacity: 0.5; */
@@ -80,23 +83,18 @@ body{
     width: 100%;
     
     display: flex;
-    padding-top: 0px;
-    /* padding-bottom: 15px; */
-    padding-left: 20px;
+    padding: 0px;
 
     overflow: hidden;
     box-sizing: border-box;
 
-    /* position: fixed; */
-    left: 0;
-    top: 0;
     z-index: 50;
 
     align-content: flex-end;
 }
 .title-text{
     font-weight: 600;
-    font-size: 32px;
+    font-size: 30px;
     color: var(--white-100);
     background-color: transparent;
     display: flex;
@@ -549,17 +547,17 @@ body{
 
 
 .app-popup-open{
-    top: 0%;
-    transition: 0.25s;
-    /* scale: 1; */
-    /* opacity: 1; */
+    /* top: 0%; */
+    /* transition: 0.2s; */
+    scale: 1;
+    opacity: 1;
 }
 .app-popup-closed{
     pointer-events: none;
-    top: 100% !important;
-    transition: 0.25s;
-    /* opacity: 0; */
-    /* scale: 0.9; */
+    /* top: 100% !important; */
+    /* transition: 0.2s; */
+    opacity: 0;
+    scale: 0.9;
 }
 .app-popup-modal{
     display: block;
@@ -792,9 +790,6 @@ body{
         background-color: var(--black-60);
     }
     .title-box{   
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0px;
         height: 100px;
     }
 
