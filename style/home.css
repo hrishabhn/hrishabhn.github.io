@@ -167,8 +167,8 @@
     transition: 0.25s;
 
     margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
     box-sizing: border-box;
 }
 .search{
@@ -245,15 +245,5 @@
 
 
 @media(max-width: 450px){
-    .user-container{
-        /* width: 90vw; */
-        /* margin-left: 5vw; */
 
-        /* margin-top: 0px; */
-    }
-    .search-container{
-        width: var(--mobile-width);
-        margin-left: 0;
-        padding: 0px;
-    }
 }
