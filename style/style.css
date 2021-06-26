@@ -680,7 +680,7 @@ body{
         background-color: var(--light-layer-0);
     }
     .sidebar{
-        background-color: var(--white-20);
+        background-color: var(--white-40);
     }
     .sidebar-blur{
         background-color: var(--white-20);
@@ -823,20 +823,9 @@ body{
         display: flex;
         justify-content: center;
         align-content: center;
-        width: calc(100vw - 30px);
-        border-radius: 20px;
-        
-
-        overflow: hidden;
-
-
-        margin-left: 15px;
-        margin-bottom: 5vw;
-
-
-        height: 20vw;
-        padding: 0px;
-        /* padding: 0px 2.5vw 6vw; */
+        width: 100%;
+        height: 25vw;
+        padding: 0px 2.5vw 6vw;
         position: fixed;
         z-index: 100;
         top: auto;
