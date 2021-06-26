@@ -489,6 +489,51 @@ body{
 
 
 
+
+.background-blur{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    /* background-color: #ffffff33; */
+    /* -webkit-transition: all 0.25s; */
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+    pointer-events: none;
+}
+.background-blur-show{
+    -webkit-backdrop-filter: blur(10px);
+    background: var(--black-60);
+    /* transition: 0.25s; */
+
+}
+.background-blur-hide{ 
+    -webkit-backdrop-filter: none;
+    background: none;
+    /* transition: 0.2s; */
+    /* transition-delay: 0.1s; */
+}
+
+
+.modal {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  z-index: 200;
+  left: 0;
+  top: 0vh;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  transition: all 0.2s;
+  transition-timing-function: ease-in-out;
+  transform-origin: bottom center;
+  /* transition: opacity 0.25s; */
+}
+
+
 .app-popup-open{
     top: 0%;
     transition: 0.25s;
