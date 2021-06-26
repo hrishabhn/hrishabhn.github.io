@@ -65,7 +65,7 @@ body{
     height: 100%;
     width: 100%;
     /* background:linear-gradient(to bottom,#000033,#660000); */
-    background:linear-gradient(to bottom right,#303,#033);
+    background:linear-gradient(to bottom,#59786a,#1b3942);
 
     /* background: url('../images/wp-dark.png'); */
     background-size: cover;
@@ -197,7 +197,7 @@ body{
 
 
 
-.main{
+.main-container{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -208,7 +208,6 @@ body{
     padding-bottom: 0px;
     box-sizing: border-box;
 
-    /* min-height: 100vh; */
     z-index: 1;
 }
 
@@ -255,6 +254,7 @@ body{
 
     -webkit-backdrop-filter: blur(50px);
     background: var(--black-20);
+    overflow: hidden;
 }
 
 
@@ -593,7 +593,7 @@ body{
 
     box-shadow: 0 0 30px var(--black-100);
     -webkit-backdrop-filter: blur(100px);
-    background: var(--black-20);
+    background: var(--white-10);
 
     overflow: hidden;
 }
@@ -693,7 +693,7 @@ body{
     }
     .wallpaper{
         /* background: url('../images/wp-light.jpg'); */
-        background:linear-gradient(to bottom,#0000ff,#cc0000);
+        background:linear-gradient(to bottom,#B7F8DB,#50A7C2);
         /* background: blue; */
         background-size: cover;
     }
@@ -757,20 +757,23 @@ body{
     .hidden-mobile{
         display: none !important;
     }
-    .main{
+    /* .main-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    } */
+    .main-container{
         position: absolute;
         top: 0px;
         left: 0px;
-        width: 100vw;
-        /* height: 200px; */
+        width: calc(100vw - 30px);
         height: calc(100vh - 25vw - 15px);
 
         border-radius: 20px;
 
 
-        /* margin-left: 15px; */
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
         padding-top: 0px;
         /* padding-bottom: 30vh; */
         box-sizing: border-box;
@@ -778,10 +781,14 @@ body{
         z-index: 1;
         
         white-space: nowrap;
-        /* overflow-x: hidden; */
         overflow-y: scroll;
-        /* background: #d1d1d6; */
+        overflow-x: hidden;
+
     }
+    
+
+
+
     .notch-box{
         position: fixed;
         top: 0px;
@@ -816,9 +823,20 @@ body{
         display: flex;
         justify-content: center;
         align-content: center;
-        width: 100%;
-        height: 25vw;
-        padding: 0px 2.5vw 6vw;
+        width: calc(100vw - 30px);
+        border-radius: 20px;
+        
+
+        overflow: hidden;
+
+
+        margin-left: 15px;
+        margin-bottom: 5vw;
+
+
+        height: 20vw;
+        padding: 0px;
+        /* padding: 0px 2.5vw 6vw; */
         position: fixed;
         z-index: 100;
         top: auto;
