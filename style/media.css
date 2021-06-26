@@ -396,6 +396,7 @@
     /* background-color: #ffffff33; */
     /* -webkit-transition: all 0.25s; */
     transition: all 0.2s;
+    transition-timing-function: ease-in-out;
     pointer-events: none;
 }
 .background-blur-show{
@@ -1405,7 +1406,6 @@
     border-radius: inherit;
 
     /* padding: 5vw 5vw 0 5vw; */
-    padding-bottom: 7.5vw;
     box-sizing: border-box;
 
     position: relative;
@@ -1414,7 +1414,7 @@
     vertical-align: top;
     margin-right: 0px;
     margin-bottom: 0px;
-    padding-bottom: 5vw;
+    padding-bottom: 10vw;
 
     box-shadow: 0 0 30px var(--black-100);
     -webkit-backdrop-filter: blur(100px);
