@@ -690,55 +690,63 @@ bookCover[k] = book_3[1];
 
 //Pivot
 var pod1 = [
+  "podcast-card",
+  "podcast-cover founders-cover",
+  "https://podcasts.apple.com/podcast/id1509276485"
+  
+]
+
+//Pivot
+var pod2 = [
   "podcast-card pivot-solid",
   "podcast-cover pivot-cover",
   "https://podcasts.apple.com/podcast/id1073226719"
 ]
 
 //Lex fridman
-var pod2 = [
+var pod3 = [
   "podcast-card lex-solid",
   "podcast-cover lex-cover",
   "https://www.youtube.com/lexfridman/videos"
 ]
 
 //Acquired
-var pod3 = [
+var pod4 = [
   "podcast-card acquired-solid",
   "podcast-cover acquired-cover",
   "https://podcasts.apple.com/podcast/id1050462261"
 ]
 
 //Yang
-var pod4 = [
+var pod5 = [
   "podcast-card yang-solid",
   "podcast-cover yang-cover",
   "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
 ]
 
 //Sway
-var pod5 = [
+var pod6 = [
   "podcast-card sway-solid",
   "podcast-cover sway-cover",
   "https://podcasts.apple.com/podcast/id1528594034"
 ]
 
 //Economist
-var pod6 = [
+var pod7 = [
   "podcast-card economist-solid",
   "podcast-cover economist-cover",
   "https://podcasts.apple.com/podcast/id151230264"
 ]
 
 //Inet
-var pod7 = [
+var pod8 = [
   "podcast-card inet-solid",
   "podcast-cover inet-cover",
   "https://www.youtube.com/c/NewEconomicThinking/videos"
 ]
 
 //samharris
-var pod8 = [
+var pod9 = [
   "podcast-card samharris-solid",
   "podcast-cover samharris-cover",
   "https://podcasts.apple.com/podcast/id733163012"
