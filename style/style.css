@@ -231,10 +231,10 @@ body{
     /* display: inline-flex; */
 }
 .scrolling-wrapper-padded{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: -50px;
-    margin-bottom: -50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: -15px;
+    margin-bottom: -15px;
 }
 .scrolling-wrapper-flex{
     display: flex;
