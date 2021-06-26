@@ -128,20 +128,7 @@ show7 = [
   "https://www.imdb.com/title/tt2861424"
 ]
 
-// Mythic quest
-show8 = [
-  "mythic-solid",
-  "mythic-poster",
-  "mythic-gradient",
-  "mythic-title",
-  "Comedy • 2 Seasons • 2020 - Present",
-  "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
-  "black-gradient",
-  "Watch on  TV+",
-  "https://www.tvtime.com/en/show/362829",
-  "https://reelgood.com/show/mythic-quest-2020",
-  "https://www.imdb.com/title/tt8879940"
-]
+
 
 // Loki
 show9 = [
@@ -158,20 +145,7 @@ show9 = [
   "https://www.imdb.com/title/tt9140554"
 ]
 
-// Blindspotting
-show10 = [
-  "blind-solid",
-  "blind-poster",
-  "blind-gradient",
-  "blind-title",
-  "Drama • Comedy • 1 Season • 2021 - Present",
-  "",
-  "hulu",
-  "Watch Download",
-  "https://www.tvtime.com/en/show/392720",
-  "https://reelgood.com/show/blindspotting-2021",
-  "https://www.imdb.com/title/tt11097374"
-]
+
 
 // South park
 show11 = [
@@ -203,20 +177,19 @@ show12 = [
   "https://www.imdb.com/title/tt8531222"
 ]
 
-// Himym
+// Blindspotting
 show13 = [
-  "himym-solid",
-  "himym-poster",
-  "himym-gradient",
-  "himym-title",
-  "Comedy • 9 Seasons • 2005 - 2014",
-  "https://www.netflix.com/title/70143824",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/75760",
-  "https://reelgood.com/show/how-i-met-your-mother-2005",
-  "https://www.imdb.com/title/tt0460649"
-  // tt0098800"
+  "blind-solid",
+  "blind-poster",
+  "blind-gradient",
+  "blind-title",
+  "Drama • Comedy • 1 Season • 2021 - Present",
+  "",
+  "hulu",
+  "Watch Download",
+  "https://www.tvtime.com/en/show/392720",
+  "https://reelgood.com/show/blindspotting-2021",
+  "https://www.imdb.com/title/tt11097374"
 ]
 
 // New girl
@@ -642,6 +615,34 @@ show41 = [
 //   "https://www.tvtime.com/en/show/315908",
 //   "https://reelgood.com/show/kims-convenience-2016",
 //   "https://www.imdb.com/title/tt5912064",
+// ]
+
+// show = [
+//   "mythic-solid",
+//   "mythic-poster",
+//   "mythic-gradient",
+//   "mythic-title",
+//   "Comedy • 2 Seasons • 2020 - Present",
+//   "https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3",
+//   "black-gradient",
+//   "Watch on  TV+",
+//   "https://www.tvtime.com/en/show/362829",
+//   "https://reelgood.com/show/mythic-quest-2020",
+//   "https://www.imdb.com/title/tt8879940"
+// ]
+
+// show = [
+//   "himym-solid",
+//   "himym-poster",
+//   "himym-gradient",
+//   "himym-title",
+//   "Comedy • 9 Seasons • 2005 - 2014",
+//   "https://www.netflix.com/title/70143824",
+//   "netflix",
+//   "Watch on Netflix",
+//   "https://www.tvtime.com/en/show/75760",
+//   "https://reelgood.com/show/how-i-met-your-mother-2005",
+//   "https://www.imdb.com/title/tt0460649"
 // ]
 
 
