@@ -64,8 +64,8 @@ body{
     position: fixed;
     height: 100%;
     width: 100%;
-    background:linear-gradient(to bottom,#000033,#660000);
-    background:linear-gradient(to bottom right,#330033,#003333);
+    /* background:linear-gradient(to bottom,#000033,#660000); */
+    background:linear-gradient(to bottom right,#303,#033);
 
     /* background: url('../images/wp-dark.png'); */
     background-size: cover;
