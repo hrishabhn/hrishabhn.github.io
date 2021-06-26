@@ -408,6 +408,7 @@ body{
     width: 100%;
     height: 60px;
     box-sizing: border-box;
+    border-radius: 20px;
 
     position: relative;
     z-index: 1;
@@ -487,6 +488,137 @@ body{
 
 
 
+.app-popup-open{
+    top: 0%;
+    /* scale: 1; */
+    /* opacity: 1; */
+}
+.app-popup-closed{
+    pointer-events: none;
+    top: 100% !important;
+    /* opacity: 0; */
+    /* scale: 0.9; */
+}
+.app-popup-modal{
+    display: block;
+    position: relative;
+    align-self: flex-end;
+
+    width: 100vw;
+    height: auto;
+    max-height: 90vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* border-radius: 40pt; */
+    z-index: 5;
+    justify-self: center;
+}
+.app-popup-tab{
+    display: block;
+    position: absolute;
+    justify-self: center;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 4;
+}
+
+.app-popup-card{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+
+    /* padding: 5vw 5vw 0 5vw; */
+    box-sizing: border-box;
+
+    position: relative;
+
+
+    vertical-align: top;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 10vw;
+
+    box-shadow: 0 0 30px var(--black-100);
+    -webkit-backdrop-filter: blur(100px);
+    background: var(--black-20);
+
+    overflow: hidden;
+}
+
+
+@media(min-width: 450px){    
+
+    .app-popup-modal{
+        display: block;
+        position: relative;
+        align-self: flex-end;
+    
+        width: 80vw;
+
+        height: auto;
+        max-height: 90vh;
+        /* border-top-left-radius: 50px; */
+        /* border-top-right-radius: 50px; */
+        /* border-radius: 40pt; */
+        z-index: 5;
+        /* overflow: hidden; */
+    }
+    .app-popup-tab{
+        display: block;
+        position: absolute;
+        justify-self: center;
+        /* height: 10px; */
+    
+        /* margin-bottom: 2.5vw; */
+        /* margin-left: 40vw; */
+        width: 100%;
+        height: 100%;
+        /* background-color: #ff00ff33; */
+        /* border-radius: 10px; */
+        z-index: 4;
+    }
+    
+    .app-popup-card{
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+    
+        padding: 0vw;
+        box-sizing: border-box;
+    
+        position: relative;
+    
+    
+        vertical-align: top;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    
+        box-shadow: 0 0 30px var(--black-100);
+    
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -531,6 +663,10 @@ body{
         color: var(--dark-layer-1);
     }
     .app-tray-container{
+        background: var(--white-20);
+    }
+
+    .app-popup-card{
         background: var(--white-20);
     }
 
