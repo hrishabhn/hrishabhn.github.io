@@ -96,20 +96,7 @@ show3 = [
   "It's Always Sunny in Philadelphia It's Always Sunny in Philadelphia It's Always Sunny in Philadelphia",
 ]
 
-// Kim's Convenience
-show2 = [
-  "kim-solid",
-  "kim-poster",
-  "kim-gradient",
-  "kim-title",
-  "Comedy • 2 Seasons • 2016 - Present",
-  "https://www.netflix.com/title/80199128",
-  "netflix",
-  "Watch on Netflix",
-  "https://www.tvtime.com/en/show/315908",
-  "https://reelgood.com/show/kims-convenience-2016",
-  "https://www.imdb.com/title/tt5912064",
-]
+
 
 // Love Death Robots
 show4 = [
@@ -641,6 +628,20 @@ show41 = [
 //   "https://www.tvtime.com/en/show/375921",
 //   "https://reelgood.com/show/lupin-2021",
 //   "https://www.imdb.com/title/tt2531336",
+// ]
+
+// show = [
+//   "kim-solid",
+//   "kim-poster",
+//   "kim-gradient",
+//   "kim-title",
+//   "Comedy • 2 Seasons • 2016 - Present",
+//   "https://www.netflix.com/title/80199128",
+//   "netflix",
+//   "Watch on Netflix",
+//   "https://www.tvtime.com/en/show/315908",
+//   "https://reelgood.com/show/kims-convenience-2016",
+//   "https://www.imdb.com/title/tt5912064",
 // ]
 
 
