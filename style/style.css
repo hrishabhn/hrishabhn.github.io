@@ -65,7 +65,7 @@ body{
     height: 100%;
     width: 100%;
     /* background:linear-gradient(to bottom,#000033,#660000); */
-    background:linear-gradient(to bottom,#59786a,#1b3942);
+    background:linear-gradient(to bottom,#537895,#09203f);
 
     /* background: url('../images/wp-dark.png'); */
     background-size: cover;
@@ -703,7 +703,9 @@ body{
     }
     .wallpaper{
         /* background: url('../images/wp-light.jpg'); */
-        background:linear-gradient(to bottom,#B7F8DB,#50A7C2);
+        /* background:linear-gradient(to bottom,#B7F8DB,#50A7C2); */
+        background:linear-gradient(to bottom,#a88beb,#f8ceec);
+
         /* background: blue; */
         background-size: cover;
     }
