@@ -2738,32 +2738,34 @@ var appPopupTitle = document.getElementById("app-popup-title");
   
 function popupAppPopulate(n){
   bookmarkAppPopulate(n);
+  
+  var title = "";
+  switch (n){
+        case 1:
+            title = 'Pinned';
+        break;
+        case 2:
+            title = 'Finance';
+        break;
+        case 3:
+            title = 'Shopping';
+        break;
+        case 4:
+            title = 'Design';
+        break;
+        case 5:
+            title = 'Apartment';
+        break;
+        default:
+            title = 'Blank';
+  }
+  appPopupTitle.innerHTML = title;
+
   bgBlur.className = "background-blur background-blur-show";
   appModal.className = "modal app-popup-open";
-  appPopupTitle.innerHTML = "test";
 }
 
 function popupAppHide(){
   bgBlur.className = "background-blur background-blur-hide";
   appModal.className = "modal app-popup-closed";
 }
-
-// function appPopup(n){
-//     for (i = 101; i < 111; i++){
-//         var itemid = [
-//         "appContainer_".concat(i),
-//         "appName_".concat(i),
-//         "appGradient_".concat(i),
-//         "appIcon_".concat(i),
-//         "appLink_".concat(i),
-//         ]
-
-//         document.getElementById(itemid[0]).className = containerClass.concat(appContainer[i]);
-//         document.getElementById(itemid[1]).innerHTML =                            appName[i];
-//         document.getElementById(itemid[2]).className =   gradientClass.concat(appGradient[i]);
-//         document.getElementById(itemid[3]).innerHTML =                            appIcon[i];
-//         document.getElementById(itemid[4]).href =                                 appLink[i];
-//     }
-//   }
-
-
