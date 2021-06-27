@@ -108,6 +108,7 @@ body{
     z-index: 50;
 
     align-content: flex-end;
+    background-color: var(--black-40);
 
     /* -webkit-backdrop-filter: blur(25px); */
 }
@@ -141,8 +142,47 @@ body{
 }
 
 
+.menu{
+    height: 60px;
+    width: 120px;
+    position: fixed;
+    z-index: 100;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    /* overflow-x: hidden; */
+    /* padding-top: 100px; */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
 
-.sidebar{
+    background-color: var(--white-20);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 0 0 30px #00000066;
+}
+.menu-current{
+    display: block;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 25px;
+    background: black;
+    top: 10px;
+    
+    z-index: 5;
+    transition: all 0.25s;
+
+    box-shadow: 0 0 30px #00000066;
+}
+.menu-current-1{
+    left: 10px;
+}
+.menu-current-2{
+    left: 70px;
+}
+
+
+/* .sidebar{
     height: 100%;
     width: 50px;
     position: fixed;
@@ -155,26 +195,27 @@ body{
     padding-right: 10px;
 
     background-color: var(--black-40);
-    /* -webkit-backdrop-filter: blur(25px); */
+} */
 
-
-}
-.sidebar-blur{
-    background-color: var(--black-20);
-    -webkit-backdrop-filter: blur(250px);
-
+.sidebar-menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .menu-item-container{
     display: inline-flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
 
     transition: 0.25s;
+    z-index: 10;
 }
 .menu-item{
     display: flex;
@@ -191,8 +232,8 @@ body{
     /* color: var(--white-60); */
 }
 .menu-item-icon{
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
     fill: var(--white-60);
     transition: 0.25s;
 
@@ -203,7 +244,7 @@ body{
     transition: 0.25s;
 }
 .selected{
-    background-color: var(--white-10);
+    /* background-color: var(--white-10); */
 }
 .selected .menu-item-icon{
     fill: var(--red-100);
@@ -735,14 +776,8 @@ body{
     body {
         background-color: var(--light-layer-0);
     }
-    .sidebar{
-        /* background-color: var(--white-40); */
-    }
-    .sidebar-blur{
-        background-color: var(--white-20);
-    }
-    .title-text{
-        color: var(--dark-layer-1);
+    .title-box{   
+        background-color: var(--black-20);
     }
     .app-tray-text{
         color: var(--dark-layer-1);
@@ -826,7 +861,7 @@ body{
         top: 130px;
 
         width: calc(100vw - 30px);
-        height: calc(100vh - 25vw - 145px);
+        height: calc(100vh - 170px);
 
         margin-left: 15px;
     }
@@ -854,22 +889,12 @@ body{
 
         margin-left: 0px;
         padding-left: 15px;
-        background-color: var(--black-40);
     }
-
-    .subtitle-box{
-        /* box-sizing: border-box; */
-        padding-left: 0;
-        /* padding-top: 20px; */
-        /* padding-bottom: 10px; */
-        /* margin: 0; */
-        /* width: 100%; */
-        /* background: transparent; */
+    .menu{
+        bottom: 55px;
+        right: 25px;
     }
-
-
-
-    .sidebar{
+    /* .sidebar{
         box-sizing: border-box;
         display: flex;
         justify-content: center;
@@ -881,27 +906,27 @@ body{
         z-index: 100;
         top: auto;
         bottom: 0px;
-    }
-    .sidebar-menu{
+    } */
+    /* .sidebar-menu{
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-    }
+    } */
 
-    .menu-item-container{
+    /* .menu-item-container{
         border-radius: 0px;
         height: 100%;
         width: 100%;
-    }
-    .menu-item-icon{
+    } */
+    /* .menu-item-icon{
         height: 5.5vw;
         width: 5.5vw;
-    }
-    .selected{
+    } */
+    /* .selected{
         background-color: transparent;
-    }
-    .menu-item .menu-item-icon{
+    } */
+    /* .menu-item .menu-item-icon{
         transition: 0s;
     }
     .menu-item:hover .menu-item-icon{
@@ -914,7 +939,7 @@ body{
     }
     .selected:hover .menu-item-icon{
         fill: var(--red-100);
-    }
+    } */
    
 
     
@@ -1025,11 +1050,5 @@ body{
 
     @media screen and (prefers-color-scheme: light) {
 
-        .title-box{   
-            background-color: var(--black-20);
-        }
-        .title-text{
-            color: var(--white-100);
-        }
     }
 }
