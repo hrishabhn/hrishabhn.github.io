@@ -897,7 +897,7 @@ body{
         padding-left: 15px;
     }
     .menu{
-        bottom: 30px;
+        bottom: 45px;
         right: calc((100vw - 180px) / 2);
         /* width: calc(100vw - 30px); */
     }
