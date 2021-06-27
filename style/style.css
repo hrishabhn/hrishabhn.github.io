@@ -205,7 +205,15 @@ body{
 
 .main-container{
     overflow: hidden;
-    max-width: 100vw;
+    max-width: 100%;
+
+
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* box-sizing: border-box; */
+    /* max-width: 100vw; */
+    /* width: calc(100vw - 110px); */
+    /* height: 200px; */
 }
 
 .main{
@@ -801,10 +809,10 @@ body{
         margin-left: 15px;
     }
     .main-left{
-        left: calc(30px - 100vw);
+        left: calc(30px - 115vw);
     }
     .main-right{
-        left: calc(100vw - 30px);
+        left: calc(115vw - 30px);
     }
 
 
