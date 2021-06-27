@@ -81,7 +81,7 @@ body{
     /* opacity: 0.5; */
 }
 .wp-1{
-    background:linear-gradient(to bottom,#113,#003);
+    background:linear-gradient(to bottom,#116,#006);
     /* background: var(--dark-layer-1); */
     /* transition: 0.25s; */
 }
@@ -157,7 +157,7 @@ body{
     /* padding-right: 10px; */
     box-sizing: border-box;
 
-    background-color: var(--white-40);
+    background-color: var(--black-40);
     -webkit-backdrop-filter: blur(25px);
     box-shadow: 0 0 15px #00000066;
 }
@@ -167,7 +167,7 @@ body{
     height: 60px;
     width: 80px;
     border-radius: 30px;
-    background: black;
+    background: var(--dark-layer-1);
     top: 10px;
     
     z-index: 5;
@@ -798,11 +798,11 @@ body{
 
     }
     .wp-2{
-        background:linear-gradient(to bottom,#c44,#c33);
+        background:linear-gradient(to bottom,#f11,#f00);
     }
 
     .menu{
-        background-color: var(--black-40);
+        background-color: var(--white-40);
     }
     /* .menu-item-icon{
         fill: var(--black-60);
