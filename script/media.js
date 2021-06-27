@@ -1530,44 +1530,44 @@ function mediaTVPopulate(){
   // PODCASTS //
 
   //pod 1
-   document.getElementById("podCard1").className = pod1[0];
-  document.getElementById("podCover1").className = pod1[1];
-   document.getElementById("podLink1").href =      pod1[2];
+  //  document.getElementById("podCard1").className = pod1[0];
+  document.getElementById("podCover_1").className = pod1[1];
+   document.getElementById("podLink_1").href =      pod1[2];
 
   //pod 2
-   document.getElementById("podCard2").className = pod2[0];
-  document.getElementById("podCover2").className = pod2[1];
-   document.getElementById("podLink2").href =      pod2[2];
+  //  document.getElementById("podCard2").className = pod2[0];
+  document.getElementById("podCover_2").className = pod2[1];
+   document.getElementById("podLink_2").href =      pod2[2];
 
    //pod 3
-   document.getElementById("podCard3").className = pod3[0];
-  document.getElementById("podCover3").className = pod3[1];
-   document.getElementById("podLink3").href =      pod3[2];
+  //  document.getElementById("podCard3").className = pod3[0];
+  document.getElementById("podCover_3").className = pod3[1];
+   document.getElementById("podLink_3").href =      pod3[2];
 
    //pod 4
-   document.getElementById("podCard4").className = pod4[0];
-  document.getElementById("podCover4").className = pod4[1];
-   document.getElementById("podLink4").href =      pod4[2];
+  //  document.getElementById("podCard4").className = pod4[0];
+  document.getElementById("podCover_4").className = pod4[1];
+   document.getElementById("podLink_4").href =      pod4[2];
 
    //pod 5
-   document.getElementById("podCard5").className = pod5[0];
-  document.getElementById("podCover5").className = pod5[1];
-   document.getElementById("podLink5").href =      pod5[2];
+  //  document.getElementById("podCard5").className = pod5[0];
+  document.getElementById("podCover_5").className = pod5[1];
+   document.getElementById("podLink_5").href =      pod5[2];
 
   //pod 6
-   document.getElementById("podCard6").className = pod6[0];
-  document.getElementById("podCover6").className = pod6[1];
-   document.getElementById("podLink6").href =      pod6[2];
+  //  document.getElementById("podCard6").className = pod6[0];
+  document.getElementById("podCover_6").className = pod6[1];
+   document.getElementById("podLink_6").href =      pod6[2];
 
    //pod 7
-   document.getElementById("podCard7").className = pod7[0];
-  document.getElementById("podCover7").className = pod7[1];
-   document.getElementById("podLink7").href =      pod7[2];
+  //  document.getElementById("podCard7").className = pod7[0];
+  document.getElementById("podCover_7").className = pod7[1];
+   document.getElementById("podLink_7").href =      pod7[2];
 
    //pod 8
-   document.getElementById("podCard8").className = pod8[0];
-  document.getElementById("podCover8").className = pod8[1];
-   document.getElementById("podLink8").href =      pod8[2];
+  //  document.getElementById("podCard8").className = pod8[0];
+  document.getElementById("podCover_8").className = pod8[1];
+   document.getElementById("podLink_8").href =      pod8[2];
 }
 
 var tvModal = document.getElementById("tv-popup-modal");
