@@ -86,6 +86,10 @@ body{
     /* transition: 0.25s; */
 }
 .wp-2{
+    background:linear-gradient(to bottom,#131,#030);
+    /* transition: 0.25s; */
+}
+.wp-3{
     background:linear-gradient(to bottom,#311,#300);
     /* transition: 0.25s; */
 }
@@ -143,14 +147,14 @@ body{
 
 
 .menu{
-    height: 80px;
-    width: 180px;
+    height: 90px;
+    width: 270px;
     position: fixed;
     z-index: 100;
     bottom: 30px;
     right: 30px;
-    padding: 10px;
-    border-radius: 40px;
+    padding: 15px;
+    border-radius: 35px;
     /* overflow-x: hidden; */
     /* padding-top: 100px; */
     /* padding-left: 10px; */
@@ -166,20 +170,23 @@ body{
     position: absolute;
     height: 60px;
     width: 80px;
-    border-radius: 30px;
+    border-radius: 20px;
     background: var(--dark-layer-1);
-    top: 10px;
+    top: 15px;
     
     z-index: 5;
     transition: all 0.25s;
 
-    box-shadow: 0 0 20px #000000cc;
+    box-shadow: 0 0 20px #00000099;
 }
 .menu-current-1{
-    left: 10px;
+    left: 15px;
 }
 .menu-current-2{
-    left: 90px;
+    left: 95px;
+}
+.menu-current-3{
+    left: 175px;
 }
 
 
@@ -785,20 +792,23 @@ body{
     .app-tray-text{
         color: var(--dark-layer-1);
     }
-    .wallpaper{
+    /* .wallpaper{ */
         /* background: url('../images/wp-light.jpg'); */
         /* background:linear-gradient(to bottom,#B7F8DB,#50A7C2); */
         /* background:linear-gradient(to bottom right,#ACB6E5,#74ebd5); */
         /* background: blue; */
         /* background-size: cover; */
-    }
+    /* } */
     .wp-1{
         /* background:linear-gradient(to bottom,#99a,#99c); */
         background:linear-gradient(to bottom,#44c,#33c);
 
     }
-    .wp-2{
-        background:linear-gradient(to bottom,#f11,#f00);
+    .wp-3{
+        background:linear-gradient(to bottom,#191,#090);
+    }
+    .wp-3{
+        background:linear-gradient(to bottom,#911,#900);
     }
 
     .menu{
@@ -868,6 +878,7 @@ body{
 
         width: calc(100vw - 30px);
         height: calc(100vh - 160px);
+        padding-bottom: 115px;
 
         margin-left: 15px;
     }
@@ -898,7 +909,8 @@ body{
     }
     .menu{
         bottom: 45px;
-        right: calc((100vw - 180px) / 2);
+        right: calc((100vw - 270px) / 2);
+        max-width: calc(100vw - 30px);
         /* width: calc(100vw - 30px); */
     }
     /* .menu-current{
@@ -993,21 +1005,7 @@ body{
         margin-right: 10px;
     
         transition: 0.1s;
-
-        /* scroll-snap-align: none; */
-        /* scroll-margin-left: 90px; */
     }
-    /* .app-container:hover{
-        width: 66px;
-        height: 66px;
-    
-        margin-top: 2px;
-        margin-bottom: 2px;
-        margin-left: 2px;
-        margin-right: 12px;
-        
-        transition: 0.1s;
-    } */
 
     .app-container:hover .app-icon-container{
         width: 100%;
