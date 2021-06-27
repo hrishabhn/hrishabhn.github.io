@@ -513,6 +513,104 @@ body{
     z-index: 3;
 }
 
+.tap-action-container{
+    margin-top: 10px;
+}
+
+.tap-container{
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: calc((100vw - 40px) / 2);
+    height: 100px;
+    border-radius: 20px;
+    /* background: var(--dark-layer-1); */
+
+    margin-right: 10px;
+
+    scroll-snap-align: none;
+    scroll-margin-left: 90px;
+}
+/* .tap-container:hover .tap-icon-container{
+    width: 64px;
+    height: 64px;
+
+    margin-top: -3px;
+    margin-left: -3px;
+
+    transition: 0.25s;
+} */
+
+
+.tap-icon-container{
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    top: 15px;
+    left: 15px;
+
+    /* width: 58px; */
+    /* height: 58px; */
+    /* border-radius: 25px; */
+
+    transition: 0.25s;
+
+    /* background-color: var(--black-20); */
+}
+.tap-icon{
+    fill: var(--white-100);
+    height: 25px;
+    /* min-width: 10px; */
+    width: 25px;
+    /* max-height: 22px; */
+    transition: 0.25s;
+    /* background-size: contain; */
+}
+.tap-text{
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    bottom: 15px;
+    left: 15px;
+    /* padding-left: 5px; */
+
+    transition: inherit;
+
+    color: var(--white-100);
+    font-size: 14px;
+    font-weight: 600;
+}
+.tap-link{
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    top: 0px;
+    left: 0px;
+
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
 
 .anchor-tray{
     width: 100%;
