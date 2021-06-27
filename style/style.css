@@ -203,6 +203,10 @@ body{
 
 
 
+.main-container{
+    overflow: hidden;
+    max-width: 100vw;
+}
 
 .main{
     position: absolute;
@@ -230,7 +234,11 @@ body{
     transition: 0.25s;
 }
 .main-left{
-    left: calc(110px - 100vw);
+    left: calc(90px - 100vw);
+    transition: 0.25s;
+}
+.main-right{
+    left: calc(100vw - 90px);
     transition: 0.25s;
 }
 
@@ -792,7 +800,12 @@ body{
 
         margin-left: 15px;
     }
-    
+    .main-left{
+        left: calc(30px - 100vw);
+    }
+    .main-right{
+        left: calc(100vw - 30px);
+    }
 
 
 
