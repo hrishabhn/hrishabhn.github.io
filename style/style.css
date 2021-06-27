@@ -144,7 +144,7 @@ body{
     padding-right: 10px;
 
     background-color: var(--black-40);
-    -webkit-backdrop-filter: blur(25px);
+    /* -webkit-backdrop-filter: blur(25px); */
 
 
 }
@@ -207,6 +207,7 @@ body{
 .main-container{
     overflow: hidden;
     max-width: 100%;
+    z-index: 100;
 
 
     /* width: 100vw; */
@@ -542,7 +543,7 @@ body{
     width: 100vw;
     left: 0px;
     top: 0px;
-    z-index: 5;
+    z-index: 100;
     /* background-color: #ffffff33; */
     /* -webkit-transition: all 0.25s; */
     transition: all 0.2s;
@@ -738,8 +739,8 @@ body{
     .wallpaper{
         /* background: url('../images/wp-light.jpg'); */
         /* background:linear-gradient(to bottom,#B7F8DB,#50A7C2); */
-        background:linear-gradient(to bottom right,#a88beb,#0ED2F7);
-
+        background:linear-gradient(to bottom right,#ACB6E5,#74ebd5);
+        ACB6E5
         /* background: blue; */
         background-size: cover;
     }
@@ -1008,6 +1009,9 @@ body{
 
         .notch-box{
             background-color: var(--white-60);
+        }
+        .title-text{
+            color: var(--white-100);
         }
     }
 }
