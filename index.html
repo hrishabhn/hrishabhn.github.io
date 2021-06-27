@@ -30,7 +30,8 @@
 </head>
 
 <body onload="homeAppPopulate();homeTVPopulate();mediaTVPopulate();mediaAppPopulate()">
-    <div class="sidebar">
+    <div class="menu">
+        <div id="menu-current" class="menu-current menu-current-1"></div>
         <div class="sidebar-menu">
             <!-- dashboard -->
             <div class="menu-item-container">
@@ -42,8 +43,7 @@
                         </svg>
                     </span>
                 </a>
-            </div><!-- media -->
-            <div class="menu-item-container">
+            </div><!-- media --><div class="menu-item-container">
                 <a id="menu-2" class="menu-item" target="_self" onclick="mainPage2()">
                     <span class="menu-item-icon media-icon">
                         <svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861"
