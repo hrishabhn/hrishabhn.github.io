@@ -79,6 +79,7 @@ body{
 }
 .wp-1{
     background:linear-gradient(to bottom,#113,#003);
+    /* background: var(--dark-layer-1); */
 }
 .wp-2{
     background:linear-gradient(to bottom,#311,#300);
@@ -750,11 +751,11 @@ body{
     }
     .wp-1{
         /* background:linear-gradient(to bottom,#99a,#99c); */
-        background:linear-gradient(to bottom,#99f,#66f);
+        background:linear-gradient(to bottom,#44c,#33c);
 
     }
     .wp-2{
-        background:linear-gradient(to bottom,#f99,#f66);
+        background:linear-gradient(to bottom,#c44,#c33);
     }
 
     /* .menu-item-icon{
