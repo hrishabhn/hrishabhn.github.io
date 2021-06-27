@@ -249,8 +249,8 @@ body{
 }
 .selected .menu-item-icon{
     fill: var(--red-100);
-    height: 24px;
-    width: 24px;
+    /* height: 24px; */
+    /* width: 24px; */
 }
 .selected:hover .menu-item-icon{
     fill: var(--red-100);
