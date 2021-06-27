@@ -82,10 +82,11 @@ var x = document.getElementById("demo");
 function atHome(){
 
     navigator.geolocation.getCurrentPosition();
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
-    // var lat = 22.262;
-    // var lon = 114.133;
+    // console.log(position.coords.latitude)
+    // var lat = position.coords.latitude;
+    // var lon = position.coords.longitude;
+    var lat = 22.262;
+    var lon = 114.133;
 
     // x.innerHTML = "Latitude: " + lat + "<br>Longitude: " + lon;
 
