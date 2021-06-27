@@ -239,15 +239,15 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
 
-    transition: 0.25s;
+    /* transition: 0.25s; */
 }
 .main-left{
     left: calc(90px - 100vw);
-    transition: 0.25s;
+    /* transition: 0.25s; */
 }
 .main-right{
     left: calc(100vw - 90px);
-    transition: 0.25s;
+    /* transition: 0.25s; */
 }
 
 
