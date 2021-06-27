@@ -53,6 +53,7 @@ body{
     /* -webkit-appearance: none; */
     -webkit-tap-highlight-color: transparent;
     min-height: 100vh;
+    /* overflow-x: hidden; */
 }
 
 .hidden-always{
@@ -243,11 +244,13 @@ body{
 }
 .main-left{
     left: calc(90px - 100vw);
+    display: none;
     /* transition: 0.25s; */
 }
 .main-right{
     left: calc(100vw - 90px);
     /* transition: 0.25s; */
+    display: none;
 }
 
 
