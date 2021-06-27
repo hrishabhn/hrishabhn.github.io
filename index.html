@@ -292,14 +292,13 @@
         </div>
     </div>
 
-    <div class="main-container">        
+    <div class="main-container">      
+        <script src="script/media.js"></script>
+        <script src="script/apps.js"></script>
+        <script src="script/date.js"></script>
+        <script src="script/pages.js"></script>
+
         <div id="main-1" class="main">
-            <script src="script/media.js"></script>
-            <script src="script/apps.js"></script>
-            <script src="script/date.js"></script>
-            <script src="script/pages.js"></script>
-
-
             <div class="anchor-tray">
                 <span class="anchor-container">
                     <span class="anchor-icon-box">
@@ -557,15 +556,6 @@
                     </span>
                 </div>
             </div> -->
-            
-            
-
-
-
-            
-            
-
-            
 
             <div class="app-tray-container hidden-desktop">
                 <div class="app-tray-text-box">
@@ -883,7 +873,7 @@
                     </div>
                 </div>
             </div>
-            <div class="app-tray-container" onclick="mainPage2()">
+            <div class="app-tray-container">
                 <div class="app-tray-text-box">
                     <p1 class="app-tray-text">Pinned</p1>
                 </div>
@@ -1369,247 +1359,8 @@
                     </div>
             </div>
             </div>
-
-            <!-- up next -->
-            <div class="app-tray-container">
-                <div id="up-next" class="app-tray-text-box">
-                    <p1 class="app-tray-text">Up next</p1>
-                </div>
-                <div class="media-wrapper scrolling-wrapper-padded">
-                    <div id="card_1" class="tv-media-card show-solid">
-                        <span id="poster_1" class="tv-media-poster show-poster">
-                            <span id="grad_1" class="tv-media-gradient show-gradient">
-                            </span>
-                        </span>
-                        <span id="title_1" class="tv-media-title show-title">
-                        </span>
-                        <span class="tv-media-more-text-box">
-                            <p id="desc_1" class="tv-media-more-text">MORE</p>
-                        </span>
-                        <span class="tv-media-more-container">
-                            <a id="link_1" class="tv-media-more-link" target="_self" onclick="popupTVPopulate(1)"></a>
-                            <svg class="tv-media-more-icon" viewBox="0 0 512 512">
-                                <g>
-                                    <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
-                                    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
-                                    <circle cx="256" cy="256" r="32"/>
-                                    <circle cx="368" cy="256" r="32"/>
-                                    <circle cx="144" cy="256" r="32"/>
-                                </g>
-                            </svg>
-                        </span>
-                    </div><div id="card_2" class="tv-media-card show-solid">
-                        <span id="poster_2" class="tv-media-poster show-poster">
-                            <span id="grad_2" class="tv-media-gradient show-gradient">
-                            </span>
-                        </span>
-                        <span id="title_2" class="tv-media-title show-title">
-                        </span>
-                        <span class="tv-media-more-text-box">
-                            <p id="desc_2" class="tv-media-more-text">MORE</p>
-                        </span>
-                        <span class="tv-media-more-container">
-                            <a id="link_2" class="tv-media-more-link" target="_self" onclick="popupTVPopulate(2)"></a>
-                            <svg class="tv-media-more-icon" viewBox="0 0 512 512">
-                                <g>
-                                    <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
-                                    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
-                                    <circle cx="256" cy="256" r="32"/>
-                                    <circle cx="368" cy="256" r="32"/>
-                                    <circle cx="144" cy="256" r="32"/>
-                                </g>
-                            </svg>
-                        </span>
-                    </div><div id="card_3" class="tv-media-card show-solid">
-                        <span id="poster_3" class="tv-media-poster show-poster">
-                            <span id="grad_3" class="tv-media-gradient show-gradient">
-                            </span>
-                        </span>
-                        <span id="title_3" class="tv-media-title show-title">
-                        </span>
-                        <span class="tv-media-more-text-box">
-                            <p id="desc_3" class="tv-media-more-text">MORE</p>
-                        </span>
-                        <span class="tv-media-more-container">
-                            <a id="link_3" class="tv-media-more-link" target="_self" onclick="popupTVPopulate(3)"></a>
-                            <svg class="tv-media-more-icon" viewBox="0 0 512 512">
-                                <g>
-                                    <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
-                                    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
-                                    <circle cx="256" cy="256" r="32"/>
-                                    <circle cx="368" cy="256" r="32"/>
-                                    <circle cx="144" cy="256" r="32"/>
-                                </g>
-                            </svg>
-                        </span>
-                    </div><div id="card_4" class="tv-media-card show-solid">
-                        <span id="poster_4" class="tv-media-poster show-poster">
-                            <span id="grad_4" class="tv-media-gradient show-gradient">
-                            </span>
-                        </span>
-                        <span id="title_4" class="tv-media-title show-title">
-                        </span>
-                        <span class="tv-media-more-text-box">
-                            <p id="desc_4" class="tv-media-more-text">MORE</p>
-                        </span>
-                        <span class="tv-media-more-container">
-                            <a id="link_4" class="tv-media-more-link" target="_self" onclick="popupTVPopulate(4)"></a>
-                            <svg class="tv-media-more-icon" viewBox="0 0 512 512">
-                                <g>
-                                    <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
-                                    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
-                                    <circle cx="256" cy="256" r="32"/>
-                                    <circle cx="368" cy="256" r="32"/>
-                                    <circle cx="144" cy="256" r="32"/>
-                                </g>
-                            </svg>
-                        </span>
-                    </div><div id="card_5" class="tv-media-card show-solid">
-                        <span id="poster_5" class="tv-media-poster show-poster">
-                            <span id="grad_5" class="tv-media-gradient show-gradient">
-                            </span>
-                        </span>
-                        <span id="title_5" class="tv-media-title show-title">
-                        </span>
-                        <span class="tv-media-more-text-box">
-                            <p id="desc_5" class="tv-media-more-text">MORE</p>
-                        </span>
-                        <span class="tv-media-more-container">
-                            <a id="link_5" class="tv-media-more-link" target="_self" onclick="popupTVPopulate(5)"></a>
-                            <svg class="tv-media-more-icon" viewBox="0 0 512 512">
-                                <g>
-                                    <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
-                                    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
-                                    <circle cx="256" cy="256" r="32"/>
-                                    <circle cx="368" cy="256" r="32"/>
-                                    <circle cx="144" cy="256" r="32"/>
-                                </g>
-                            </svg>
-                        </span>
-                    </div><div id="card_6" class="tv-media-card show-solid">
-                        <span id="poster_6" class="tv-media-poster show-poster">
-                            <span id="grad_6" class="tv-media-gradient show-gradient">
-                            </span>
-                        </span>
-                        <span id="title_6" class="tv-media-title show-title">
-                        </span>
-                        <span class="tv-media-more-text-box">
-                            <p id="desc_6" class="tv-media-more-text">MORE</p>
-                        </span>
-                        <span class="tv-media-more-container">
-                            <a id="link_6" class="tv-media-more-link" target="_self" onclick="popupTVPopulate(6)"></a>
-                            <svg class="tv-media-more-icon" viewBox="0 0 512 512">
-                                <g>
-                                    <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
-                                    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
-                                    <circle cx="256" cy="256" r="32"/>
-                                    <circle cx="368" cy="256" r="32"/>
-                                    <circle cx="144" cy="256" r="32"/>
-                                </g>
-                            </svg>
-                        </span>
-                    </div><div id="card_7" class="tv-media-card show-solid">
-                        <span id="poster_7" class="tv-media-poster show-poster">
-                            <span id="grad_7" class="tv-media-gradient show-gradient">
-                            </span>
-                        </span>
-                        <span id="title_7" class="tv-media-title show-title">
-                        </span>
-                        <span class="tv-media-more-text-box">
-                            <p id="desc_7" class="tv-media-more-text">MORE</p>
-                        </span>
-                        <span class="tv-media-more-container">
-                            <a id="link_7" class="tv-media-more-link" target="_self" onclick="popupTVPopulate(7)"></a>
-                            <svg class="tv-media-more-icon" viewBox="0 0 512 512">
-                                <g>
-                                    <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
-                                    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
-                                    <circle cx="256" cy="256" r="32"/>
-                                    <circle cx="368" cy="256" r="32"/>
-                                    <circle cx="144" cy="256" r="32"/>
-                                </g>
-                            </svg>
-                        </span>
-                    </div><div id="card_8" class="tv-media-card show-solid">
-                        <span id="poster_8" class="tv-media-poster show-poster">
-                            <span id="grad_8" class="tv-media-gradient show-gradient">
-                            </span>
-                        </span>
-                        <span id="title_8" class="tv-media-title show-title">
-                        </span>
-                        <span class="tv-media-more-text-box">
-                            <p id="desc_8" class="tv-media-more-text">MORE</p>
-                        </span>
-                        <span class="tv-media-more-container">
-                            <a id="link_8" class="tv-media-more-link" target="_self" onclick="popupTVPopulate(8)"></a>
-                            <svg class="tv-media-more-icon" viewBox="0 0 512 512">
-                                <g>
-                                    <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
-                                    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
-                                    <circle cx="256" cy="256" r="32"/>
-                                    <circle cx="368" cy="256" r="32"/>
-                                    <circle cx="144" cy="256" r="32"/>
-                                </g>
-                            </svg>
-                        </span>
-                    </div><div id="card_9" class="tv-media-card show-solid">
-                        <span id="poster_9" class="tv-media-poster show-poster">
-                            <span id="grad_9" class="tv-media-gradient show-gradient">
-                            </span>
-                        </span>
-                        <span id="title_9" class="tv-media-title show-title">
-                        </span>
-                        <span class="tv-media-more-text-box">
-                            <p id="desc_9" class="tv-media-more-text">MORE</p>
-                        </span>
-                        <span class="tv-media-more-container">
-                            <a id="link_9" class="tv-media-more-link" target="_self" onclick="popupTVPopulate(9)"></a>
-                            <svg class="tv-media-more-icon" viewBox="0 0 512 512">
-                                <g>
-                                    <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
-                                    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
-                                    <circle cx="256" cy="256" r="32"/>
-                                    <circle cx="368" cy="256" r="32"/>
-                                    <circle cx="144" cy="256" r="32"/>
-                                </g>
-                            </svg>
-                        </span>
-                    </div><div id="card_10" class="tv-media-card show-solid">
-                        <span id="poster_10" class="tv-media-poster show-poster">
-                            <span id="grad_10" class="tv-media-gradient show-gradient">
-                            </span>
-                        </span>
-                        <span id="title_10" class="tv-media-title show-title">
-                        </span>
-                        <span class="tv-media-more-text-box">
-                            <p id="desc_10" class="tv-media-more-text">MORE</p>
-                        </span>
-                        <span class="tv-media-more-container">
-                            <a id="link_10" class="tv-media-more-link" target="_self" onclick="popupTVPopulate(10)"></a>
-                            <svg class="tv-media-more-icon" viewBox="0 0 512 512">
-                                <g>
-                                    <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
-                                    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
-                                    <circle cx="256" cy="256" r="32"/>
-                                    <circle cx="368" cy="256" r="32"/>
-                                    <circle cx="144" cy="256" r="32"/>
-                                </g>
-                            </svg>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            
-
-
-
-
         </div>
         <div id="main-2" class="main-right main">
-            <script src="script/media.js"></script>
-            <script src="script/apps.js"></script>
-
             <div class="anchor-tray">
                 <span class="anchor-container">
                     <span class="anchor-icon-box">
