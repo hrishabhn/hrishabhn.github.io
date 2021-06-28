@@ -994,7 +994,7 @@ body{
         background-color: var(--light-layer-0);
     }
     .title-box{   
-        background-color: var(--light-layer-2);
+        background-color: var(--light-layer-0);
     }
     .title-text{
         color: var(--dark-layer-1);
