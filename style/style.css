@@ -1129,8 +1129,10 @@ body{
         /* z-index: 100; */
         bottom: 0px;
         right: 0px;
-        padding: 15px;
+        padding-top: 0px;
         padding-bottom: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
         border-radius: 0px;
         /* box-sizing: border-box; */
     
@@ -1138,6 +1140,17 @@ body{
         /* -webkit-backdrop-filter: blur(25px); */
         box-shadow: none;
     }
+    .menu-item-icon{
+        height: 22px;
+        width: 22px;
+        fill: var(--white-60);
+        transition: 0.25s;
+    
+    }
+
+
+
+
     .menu-current{
         width: calc((100vw - 30px) / 5);
     }
@@ -1157,7 +1170,7 @@ body{
     .menu-item:hover .menu-item-icon{
         transition: 0s;
     }
-    
+
     /* .sidebar{
         box-sizing: border-box;
         display: flex;
