@@ -58,7 +58,11 @@
     color: var(--white-60);
 }
 
-.hrish-icon{
+.rajesh-icon{
+    background-image: url('../images/hrish.jpg');
+    background-size: cover;
+}
+.suyash-icon{
     background-image: url('../images/hrish.jpg');
     background-size: cover;
 }
