@@ -81,7 +81,7 @@ var x = document.getElementById("demo");
 
 function atHome(){
 
-    navigator.geolocation.getCurrentPosition();
+    // navigator.geolocation.getCurrentPosition();
     // console.log(position.coords.latitude)
     // var lat = position.coords.latitude;
     // var lon = position.coords.longitude;
