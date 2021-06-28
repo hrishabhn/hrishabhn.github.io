@@ -563,7 +563,7 @@
         width: 40vw;
 
         height: 20vw;
-        margin-left: 5vw;
+        margin-left: 2.5vw;
         margin-top: -15vw;
         margin-bottom: 1vw;
     }
@@ -573,11 +573,11 @@
         justify-content: left;
         /* align-items: center; */
     
-        padding-left: 5vw;
+        padding-left: 2.5vw;
         padding-right: 5vw;
     }
     .tv-popup-button-tray{    
-        padding-left: 5vw;
+        padding-left: 2.5vw;
         padding-bottom: 0px;
         padding-top: 10px;
         padding-right: 0;
