@@ -79,6 +79,7 @@ body{
     /* background: url('../images/wp-dark.png'); */
     background-size: cover;
     /* opacity: 0.5; */
+    background: var(--dark-layer-0);
 }
 .wp-1{
     /* background:linear-gradient(to bottom,#116,#006); */
@@ -119,14 +120,14 @@ body{
     z-index: 50;
 
     align-content: flex-end;
-    background-color: var(--black-40);
+    background-color: var(--dark-layer-2);
 
     /* -webkit-backdrop-filter: blur(25px); */
 }
 .title-text{
     font-weight: 600;
     font-size: 30px;
-    color: var(--white-100);
+    color: var(--light-layer-1);
     background-color: transparent;
     display: flex;
     align-self: flex-end;
@@ -134,23 +135,6 @@ body{
     cursor: default;
 }
 
-
-.subtitle-box{
-    box-sizing: border-box;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin: 0;
-    width: 100%;
-    background: transparent;
-}
-.subtitle-text{
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--white-100);
-    background-color: transparent;
-    cursor: default;
-}
 
 
 .menu{
@@ -168,8 +152,8 @@ body{
     /* padding-right: 10px; */
     box-sizing: border-box;
 
-    background-color: var(--black-40);
-    -webkit-backdrop-filter: blur(25px);
+    background-color: var(--black-60);
+    -webkit-backdrop-filter: blur(50px);
     box-shadow: 0 0 15px #00000066;
 }
 .menu-current{
@@ -295,17 +279,17 @@ body{
 
 .main{
     position: absolute;
-    top: 95px;
+    top: 75px;
     left: 0px;
 
-    width: calc(100vw - 40px);
-    height: calc(100vh - 115px);
+    width: 100vw;
+    height: calc(100vh - 75px);
 
-    border-radius: 20px;
+    /* border-radius: 20px; */
 
-    margin-left: 20px;
+    padding: 20px;
+    /* margin-left: 20px; */
     /* margin-right: 20px; */
-    padding: 0;
 
     box-sizing: border-box;
 
@@ -372,8 +356,8 @@ body{
 
     padding-bottom: 15px;
 
-    -webkit-backdrop-filter: blur(25px);
-    background: var(--black-60);
+    /* -webkit-backdrop-filter: blur(25px); */
+    background: var(--dark-layer-1);
     overflow: hidden;
 }
 
@@ -614,7 +598,7 @@ body{
     justify-content: center;
     align-items: center;
     width: calc((100vw - 40px) / 2);
-    height: 165px;
+    height: 185px;
     border-radius: 20px;
     /* background: var(--dark-layer-1); */
 
@@ -641,8 +625,8 @@ body{
     top: 15px;
     left: 15px;
 
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 25px;
 
     transition: 0.25s;
@@ -656,12 +640,12 @@ body{
     align-items: center;
     text-decoration: none;
 
-    top: 85px;
+    top: 95px;
     left: 15px;
 
-    width: 40px;
-    height: 40px;
-    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
 
     transition: 0.25s;
 }
@@ -672,19 +656,19 @@ body{
     align-items: center;
     text-decoration: none;
 
-    top: 85px;
-    left: 60px;
+    top: 95px;
+    left: 70px;
 
-    width: 40px;
-    height: 40px;
-    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
 
     transition: 0.25s;
 }
 .contact-icon{
     fill: var(--white-100);
-    height: 18px;
-    width: 18px;
+    height: 25px;
+    width: 25px;
     /* transition: 0.25s;/ */
     /* background-size: contain; */
     background-size: cover;
@@ -771,8 +755,8 @@ body{
     display: inline-flex;
     align-items: center;
 
-    background-color: var(--black-60);
-    -webkit-backdrop-filter: blur(15px);
+    background-color: var(--dark-layer-2);
+    /* -webkit-backdrop-filter: blur(15px); */
     transition: 0.25s;
 }
 .anchor-container:hover .anchor-icon-box{
@@ -1010,24 +994,28 @@ body{
         background-color: var(--light-layer-0);
     }
     .title-box{   
-        background-color: var(--black-20);
+        background-color: var(--light-layer-2);
+    }
+    .title-text{
+        color: var(--dark-layer-1);
     }
     .app-tray-text{
         color: var(--dark-layer-1);
     }
-    /* .wallpaper{ */
+    .wallpaper{
+        background: var(--light-layer-0);
         /* background: url('../images/wp-light.jpg'); */
         /* background:linear-gradient(to bottom,#B7F8DB,#50A7C2); */
         /* background:linear-gradient(to bottom right,#ACB6E5,#74ebd5); */
         /* background: blue; */
         /* background-size: cover; */
-    /* } */
-    .wp-1{
+    }
+    /* .wp-1{ */
         /* background:linear-gradient(to bottom,#99a,#99c); */
         /* background:linear-gradient(to bottom,#1c1c1e,#33c); */
-        background: var(--light-layer-1)
+        /* background: var(--light-layer-1) */
 
-    }
+    /* } */
     .wp-3{
         background:linear-gradient(to bottom,#191,#090);
     }
@@ -1051,11 +1039,8 @@ body{
     .selected{
         background-color: var(--black-10);
     } */
-    .subtitle-text{
-        color: var(--dark-layer-1);
-    }
     .app-tray-container{
-        background: var(--white-60);
+        background: var(--light-layer-1);
     }
 
     .app-popup-card{
@@ -1068,7 +1053,7 @@ body{
         background-color: var(--white-20);
     }
     .anchor-container{
-        background-color: var(--white-60);
+        background-color: var(--light-layer-2);
     }
     .anchor-text{
         color: var(--black-60);
@@ -1098,13 +1083,14 @@ body{
         display: none !important;
     }
     .main{
-        top: 130px;
+        top: 115px;
 
-        width: calc(100vw - 30px);
-        height: calc(100vh - 160px);
-        padding-bottom: 115px;
+        /* width: calc(100vw - 30px); */
+        height: calc(100vh - 115px);
+        padding: 15px;
+        padding-bottom: 120px;
 
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     .main-left{
         left: calc(30px - 115vw);
@@ -1140,20 +1126,12 @@ body{
         right: 0px;
         padding: 15px;
         padding-bottom: 30px;
-        border-radius: 35px;
+        border-radius: 0px;
         /* box-sizing: border-box; */
     
         /* background-color: var(--black-40); */
         /* -webkit-backdrop-filter: blur(25px); */
         /* box-shadow: 0 0 15px #00000066; */
-    }
-    .menu{
-        bottom: 0px;
-        right: 0px;
-        border-radius: 0px;
-        /* right: calc((100vw - 270px) / 2); */
-        /* max-width: calc(100vw - 30px); */
-        /* width: calc(100vw - 30px); */
     }
     .menu-current{
         width: calc((100vw - 30px) / 5);
