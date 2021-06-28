@@ -9,7 +9,7 @@ function mainPage1(){
   document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item";
   
-  document.getElementById("menu-current").className = "menu-current menu-current-1";
+  // document.getElementById("menu-current").className = "menu-current menu-current-1";
 
   document.getElementById("title-text").innerHTML = "Home";
   document.getElementById("title-page").innerHTML = "Home";
@@ -30,7 +30,7 @@ function mainPage2(){
   document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item";
 
-  document.getElementById("menu-current").className = "menu-current menu-current-2";
+  // document.getElementById("menu-current").className = "menu-current menu-current-2";
 
   document.getElementById("title-text").innerHTML = "Social & Messaging";
   document.getElementById("title-page").innerHTML = "Social & Messaging";
@@ -51,7 +51,7 @@ function mainPage3(){
   document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item";
 
-  document.getElementById("menu-current").className = "menu-current menu-current-3";
+  // document.getElementById("menu-current").className = "menu-current menu-current-3";
 
   document.getElementById("title-text").innerHTML = "Apps";
   document.getElementById("title-page").innerHTML = "Apps";
@@ -72,7 +72,7 @@ function mainPage4(){
   document.getElementById("menu-4").className = "menu-item selected";
   document.getElementById("menu-5").className = "menu-item";
 
-  document.getElementById("menu-current").className = "menu-current menu-current-4";
+  // document.getElementById("menu-current").className = "menu-current menu-current-4";
 
   document.getElementById("title-text").innerHTML = "Media";
   document.getElementById("title-page").innerHTML = "Media";
@@ -93,7 +93,7 @@ function mainPage5(){
   document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item selected";
 
-  document.getElementById("menu-current").className = "menu-current menu-current-5";
+  // document.getElementById("menu-current").className = "menu-current menu-current-5";
 
   document.getElementById("title-text").innerHTML = "Media";
   document.getElementById("title-page").innerHTML = "Media";

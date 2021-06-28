@@ -18,6 +18,9 @@
     --light-layer-2: #e5e5ea;
     --light-layer-3: #d1d1d6;
 
+    --light-layer-1-80: #f2f2f7cc;
+    --dark-layer-1-80: #1c1c1ecc;
+
     --black-100: #000;
     --white-100: #fff;
 
@@ -152,8 +155,8 @@ body{
     /* padding-right: 10px; */
     box-sizing: border-box;
 
-    background-color: var(--black-60);
-    -webkit-backdrop-filter: blur(30px);
+    background-color: var(--dark-layer-1-80);
+    -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 0 15px #00000066;
 }
 .menu-current{
@@ -1024,7 +1027,7 @@ body{
     }
 
     .menu{
-        background-color: var(--white-40);
+        background-color: var(--light-layer-1-80);
     }
     .menu-current{
         background: var(--light-layer-1);
