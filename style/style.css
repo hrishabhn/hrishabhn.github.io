@@ -81,8 +81,8 @@ body{
     /* opacity: 0.5; */
 }
 .wp-1{
-    background:linear-gradient(to bottom,#116,#006);
-    /* background: var(--dark-layer-1); */
+    /* background:linear-gradient(to bottom,#116,#006); */
+    background: var(--dark-layer-1);
     /* transition: 0.25s; */
 }
 .wp-2{
@@ -360,7 +360,7 @@ body{
     padding-bottom: 15px;
 
     -webkit-backdrop-filter: blur(25px);
-    background: var(--black-20);
+    background: var(--black-60);
     overflow: hidden;
 }
 
@@ -1011,7 +1011,8 @@ body{
     /* } */
     .wp-1{
         /* background:linear-gradient(to bottom,#99a,#99c); */
-        background:linear-gradient(to bottom,#44c,#33c);
+        /* background:linear-gradient(to bottom,#1c1c1e,#33c); */
+        background: var(--light-layer-1)
 
     }
     .wp-3{
@@ -1041,7 +1042,7 @@ body{
         color: var(--dark-layer-1);
     }
     .app-tray-container{
-        background: var(--white-20);
+        background: var(--white-60);
     }
 
     .app-popup-card{
