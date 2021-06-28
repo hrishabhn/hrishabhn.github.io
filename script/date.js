@@ -91,7 +91,7 @@ function atHome(){
     // x.innerHTML = "Latitude: " + lat + "<br>Longitude: " + lon;
 
     if ((lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135)) {
-        document.getElementById("home-card").className = "tap-action-container"
+        document.getElementById("home-card").className = "tap-action-container hidden-desktop"
     } else{
         document.getElementById("home-card").className = "tap-action-container hidden-always"
     }
