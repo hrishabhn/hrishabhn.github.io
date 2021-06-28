@@ -334,7 +334,7 @@ body{
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
 
     /* display: inline-flex; */
 }
@@ -378,7 +378,7 @@ body{
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
 
 }
 
@@ -395,7 +395,7 @@ body{
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
 }
 
 
@@ -743,7 +743,7 @@ body{
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
 }
 .anchor-container{
     height: 100%;
