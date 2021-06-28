@@ -83,13 +83,20 @@ body{
 .wp-1{
     /* background:linear-gradient(to bottom,#116,#006); */
     background: var(--dark-layer-1);
-    /* transition: 0.25s; */
 }
 .wp-2{
     background:linear-gradient(to bottom,#131,#030);
     /* transition: 0.25s; */
 }
 .wp-3{
+    /* background:linear-gradient(to bottom,#116,#006); */
+    background: var(--dark-layer-1);
+}
+.wp-4{
+    /* background:linear-gradient(to bottom,#116,#006); */
+    background: var(--dark-layer-1);
+}
+.wp-5{
     background:linear-gradient(to bottom,#311,#300);
     /* transition: 0.25s; */
 }
@@ -148,7 +155,7 @@ body{
 
 .menu{
     height: 90px;
-    width: 270px;
+    width: 430px;
     position: fixed;
     z-index: 100;
     bottom: 30px;
@@ -187,6 +194,12 @@ body{
 }
 .menu-current-3{
     left: 175px;
+}
+.menu-current-4{
+    left: 255px;
+}
+.menu-current-5{
+    left: 335px;
 }
 
 
@@ -1143,13 +1156,19 @@ body{
         /* width: calc(100vw - 30px); */
     }
     .menu-current{
-        width: calc((100vw - 30px) / 3);
+        width: calc((100vw - 30px) / 5);
     }
     .menu-current-2{
-        left: calc(15px + ((100vw - 30px) / 3));
+        left: calc(15px + (1 * (100vw - 30px) / 5));
     }
     .menu-current-3{
-        left: calc(15px + (2 * (100vw - 30px) / 3));
+        left: calc(15px + (2 * (100vw - 30px) / 5));
+    }
+    .menu-current-4{
+        left: calc(15px + (3 * (100vw - 30px) / 5));
+    }
+    .menu-current-5{
+        left: calc(15px + (4 * (100vw - 30px) / 5));
     }
     /* .sidebar{
         box-sizing: border-box;
