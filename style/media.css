@@ -14,8 +14,8 @@
     margin-right: 10px;
     margin-bottom: 0px;
     transition: 0.25s;
-    /* scroll-snap-align: none; */
-    /* scroll-margin-left: 90px; */
+    scroll-snap-align: start;
+    scroll-margin-left: 15px;
 }
 
 .tv-media-poster{
@@ -150,7 +150,7 @@
 
 
 
-@media(min-width: 450px){
+/* @media(min-width: 450px){
     .tv-media-card:hover{
         width: 330px;
         margin-left: -15px;
@@ -169,22 +169,15 @@
         height: 190px;
         transition: 0.5s;
     }
-    /* .tv-media-card:hover .tv-media-gradient{
-        height: 170px;
-        transition: 0.5s;
-    } */
+} */
 
 
-    .
-}
-
-
-@media(max-width: 450px){
+/* @media(max-width: 450px){ */
     .tv-media-more-container:hover{
         -webkit-backdrop-filter: blur(3px);
         /* background: rgba(0, 0, 0, 0.2); */
     }
-}
+/* } */
 
 
 
@@ -216,8 +209,8 @@
     margin-right: 10px;
     margin-bottom: 0px;
 
-    /* scroll-snap-align: start; */
-    scroll-margin-left: 90px;
+    scroll-snap-align: start;
+    scroll-margin-left: 15px;
 }
 .book-cover{
     width: 100%;
@@ -265,8 +258,8 @@
     margin-right: 10px;
     margin-bottom: 0px;
 
-    /* scroll-snap-align: start; */
-    scroll-margin-left: 90px;
+    scroll-snap-align: start;
+    scroll-margin-left: 15px;
 }
 .podcast-cover{
     width: 100%;
@@ -1058,30 +1051,6 @@
     .media-app-tray{
         display: none;
     }
-
-    .tv-card{
-        scroll-margin-left: 5vw;
-    }
-    /* .tv-media-card{
-        scroll-snap-align: none;
-        scroll-margin-left: 5vw;
-    } */
-    .podcast-card{
-        scroll-margin-left: 5vw;
-    }
-    .book-card{
-        scroll-margin-left: 5vw;
-    }
-
-
-
-
-
-
-
-
-    
-
 
     
     
