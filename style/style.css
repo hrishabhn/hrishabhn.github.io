@@ -994,7 +994,7 @@ body{
         background-color: var(--light-layer-0);
     }
     .title-box{   
-        background-color: var(--light-layer-0);
+        background-color: var(--light-layer-2);
     }
     .title-text{
         color: var(--dark-layer-1);
@@ -1026,7 +1026,7 @@ body{
     .menu{
         background-color: var(--white-40);
     }
-    /* .menu-item-icon{
+    .menu-item-icon{
         fill: var(--black-60);
     
     }
@@ -1038,7 +1038,7 @@ body{
     }
     .selected{
         background-color: var(--black-10);
-    } */
+    }
     .app-tray-container{
         background: var(--light-layer-1);
     }
