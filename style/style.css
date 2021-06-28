@@ -668,6 +668,15 @@ body{
 
     transition: 0.25s;
 }
+.contact-icon{
+    fill: var(--white-100);
+    height: 18px;
+    width: 18px;
+    /* transition: 0.25s;/ */
+    /* background-size: contain; */
+    background-size: cover;
+}
+
 /* .contact-icon{
     fill: var(--white-100);
     height: 22px;
