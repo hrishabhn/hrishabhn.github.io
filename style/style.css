@@ -168,7 +168,7 @@ body{
     z-index: 5;
     transition: all 0.25s;
 
-    box-shadow: 0 0 20px #00000099;
+    box-shadow: 0 0 10px var(--black-60);
 }
 .menu-current-1{
     left: 15px;
@@ -598,7 +598,7 @@ body{
     justify-content: center;
     align-items: center;
     width: calc((100vw - 40px) / 2);
-    height: 185px;
+    height: 115px;
     border-radius: 20px;
     /* background: var(--dark-layer-1); */
 
@@ -640,7 +640,7 @@ body{
     align-items: center;
     text-decoration: none;
 
-    top: 95px;
+    top: 15px;
     left: 15px;
 
     width: 50px;
@@ -656,7 +656,7 @@ body{
     align-items: center;
     text-decoration: none;
 
-    top: 95px;
+    top: 15px;
     left: 70px;
 
     width: 50px;
@@ -1026,6 +1026,10 @@ body{
     .menu{
         background-color: var(--white-40);
     }
+    .menu-current{
+        background: var(--light-layer-1);
+        box-shadow: 0 0 10px var(--black-40);
+    }
     .menu-item-icon{
         fill: var(--black-60);
     
@@ -1037,7 +1041,7 @@ body{
         fill: var(--red-100);
     }
     .selected{
-        background-color: var(--black-10);
+        /* background-color: var(--black-10); */
     }
     .app-tray-container{
         background: var(--light-layer-1);
@@ -1131,7 +1135,7 @@ body{
     
         /* background-color: var(--black-40); */
         /* -webkit-backdrop-filter: blur(25px); */
-        /* box-shadow: 0 0 15px #00000066; */
+        box-shadow: none;
     }
     .menu-current{
         width: calc((100vw - 30px) / 5);
