@@ -188,7 +188,7 @@
     border-radius: inherit;
     transition: inherit;
 
-    background: var(--dark-layer-1);
+    background: var(--dark-layer-0);
     padding-left: 20px;
     color: var(--white-60);
 }
@@ -240,7 +240,7 @@
 
 
     .search{
-        background: var(--light-layer-1);
+        background: var(--light-layer-0);
         color: var(--black-60);
 
     }
