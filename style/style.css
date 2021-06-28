@@ -1169,6 +1169,7 @@ body{
 
     .menu-item:hover .menu-item-icon{
         transition: 0s;
+        fill: var(--red-100);
     }
 
     /* .sidebar{
