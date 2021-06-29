@@ -212,7 +212,26 @@
     cursor: default;
 }
 
-.home-card{
+.smart-cards{
+    position: relative;
+    /* height: 500px; */
+}
+
+.smart-card-show{
+    position: relative;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.smart-card-hide{
+    position: absolute !important;
+    bottom: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 5s;
+
+}
+
+.smarthome-card{
     padding-left: 15px;
 
     /* padding-bottom: 0px; */
