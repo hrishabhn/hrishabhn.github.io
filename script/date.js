@@ -112,6 +112,22 @@ function atHome(){
     
 }
 
+function timeSmartCards(){
+    var fullDate = new Date();
+
+    var hourNow = fullDate.getHours();
+    // hourNow = 8;
+    console.log(hourNow);
+
+    if ((hourNow > 6) && (hourNow < 10)) {
+        document.getElementById("morning-card").className = "smart-card-show content-container";
+        console.log("morning");
+    } else{
+        document.getElementById("morning-card").className = "smart-card-hide content-container";
+        console.log("not morning");
+    }
+}
+
 function lights(){
     if (document.getElementById("light-tray").classList == "smarthome-wrapper-hide smarthome-wrapper") {
         document.getElementById("light-tray").classList = "smarthome-wrapper-show smarthome-wrapper"
