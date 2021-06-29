@@ -126,6 +126,19 @@ function timeSmartCards(){
         document.getElementById("morning-card").className = "smart-card-hide content-container";
         console.log("not morning");
     }
+
+    if ((hourNow > 21) || (hourNow < 6)) {
+        document.getElementById("night-card").className = "smart-card-show content-container";
+        console.log("night");
+    } else{
+        document.getElementById("night-card").className = "smart-card-hide content-container";
+        console.log("not night");
+    }
+
+
+
+
+
 }
 
 function lights(){
