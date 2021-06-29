@@ -105,6 +105,13 @@ function lights(){
     } else{
         document.getElementById("light-tray").classList = "smarthome-wrapper smarthome-wrapper-hide"
     }
+}
+function appleTV(){
+    if (document.getElementById("appletv-tray").classList == "smarthome-wrapper smarthome-wrapper-hide") {
+        document.getElementById("appletv-tray").classList = "smarthome-wrapper smarthome-wrapper-show"
+    } else{
+        document.getElementById("appletv-tray").classList = "smarthome-wrapper smarthome-wrapper-hide"
+    }
     // document.getElementById("light-tray").classList.toggle("smarthome-wrapper-hide")
 }
 
