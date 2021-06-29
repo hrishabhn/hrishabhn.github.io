@@ -62,16 +62,6 @@ body{
 .hidden-always{
     display: none !important;
 }
-/* .toggle-hide{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    pointer-events: none;
-    opacity: 0;
-}
-.toggle-show{
-    position: relative; */
-}
 
 .wallpaper{
     display: block;
