@@ -520,15 +520,16 @@ body{
     position: relative;
     justify-content: center;
     align-items: center;
-    width: calc((100vw - 40px) / 2);
-    height: 100px;
+    width: calc((100vw - 70px) / 2);
+    max-width: 100px;
+    height: 85px;
     border-radius: 20px;
     /* background: var(--dark-layer-1); */
 
     margin-right: 10px;
 
-    scroll-snap-align: none;
-    scroll-margin-left: 90px;
+    scroll-snap-align: start;
+    scroll-margin-left: 15px;
 }
 .tap-icon-container{
     display: inline-flex;
@@ -571,7 +572,7 @@ body{
     transition: inherit;
 
     color: var(--white-100);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
 }
 .tap-link{

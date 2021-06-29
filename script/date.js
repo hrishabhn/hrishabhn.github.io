@@ -69,7 +69,7 @@
 // fetch('api.openweathermap.org/data/2.5/weather?lat=22.385664283262717&lon=114.18739932759547&appid=2c11424ffd5a3ed7be3f73e6b9960fbe&units=metric&type=accurate')
 // .then(data)
 
-var x = document.getElementById("demo");
+// var x = document.getElementById("demo");
 
 // function getLocation() {
 //   if (navigator.geolocation) {
@@ -93,10 +93,19 @@ function atHome(){
     // x.innerHTML = "Latitude: " + lat + "<br>Longitude: " + lon;
 
     if ((lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135)) {
-        document.getElementById("home-card").className = "tap-action-container hidden-desktop"
+        document.getElementById("home-card").className = "content-container"
     } else{
-        document.getElementById("home-card").className = "tap-action-container hidden-always"
+        document.getElementById("home-card").className = "content-container hidden-always"
     }
+}
+
+function lights(){
+    if (document.getElementById("light-tray").classList == "smarthome-wrapper smarthome-wrapper-hide") {
+        document.getElementById("light-tray").classList = "smarthome-wrapper smarthome-wrapper-show"
+    } else{
+        document.getElementById("light-tray").classList = "smarthome-wrapper smarthome-wrapper-hide"
+    }
+    // document.getElementById("light-tray").classList.toggle("smarthome-wrapper-hide")
 }
 
 

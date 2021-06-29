@@ -213,9 +213,45 @@
 }
 
 .home-card{
-    padding: 15px;
-    padding-bottom: 0px;
+    padding-left: 15px;
+
+    /* padding-bottom: 0px; */
     overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    /* margin-bottom: 10px; */
+}
+
+.smarthome-wrapper{
+    width: 100%;
+    box-sizing: border-box;
+
+    align-items: center;
+    position: relative;
+    /* display: block; */
+
+    padding-left: 15px;
+    padding-right: 5px;
+
+    /* margin-top: 10px; */
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+
+    transition: all 0.25s;
+}
+.smarthome-wrapper-show{
+    margin-top: 10px;
+    height: 115px;
+    transition: all 0.25s;
+
+}
+.smarthome-wrapper-hide{
+    margin-top: 0px;
+    height: 0px;
+    transition: all 0.25s;
+
 }
 
 
@@ -346,7 +382,10 @@
         height: 13px;
         width: 13px;
     } */
-    /* .search-text{
-        font-size: 14px;
-    } */
+    .search-text{
+        font-size: 13px;
+    }
+    .smarthome-wrapper-show{
+        height: 70px;
+    }
 }
