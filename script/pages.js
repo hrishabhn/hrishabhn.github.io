@@ -32,8 +32,8 @@ function mainPage2(){
 
   // document.getElementById("menu-current").className = "menu-current menu-current-2";
 
-  document.getElementById("title-text").innerHTML = "Social & Messaging";
-  document.getElementById("title-page").innerHTML = "Social & Messaging";
+  document.getElementById("title-text").innerHTML = "Work & School";
+  document.getElementById("title-page").innerHTML = "Work & School";
 
   // document.getElementById("wallpaper").className = "wallpaper wp-2"
 
