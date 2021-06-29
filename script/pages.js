@@ -74,8 +74,8 @@ function mainPage4(){
 
   // document.getElementById("menu-current").className = "menu-current menu-current-4";
 
-  document.getElementById("title-text").innerHTML = "Media";
-  document.getElementById("title-page").innerHTML = "Media";
+  document.getElementById("title-text").innerHTML = "idk";
+  document.getElementById("title-page").innerHTML = "idk";
 
   // document.getElementById("wallpaper").className = "wallpaper wp-4"
 

@@ -80,9 +80,9 @@ var x = document.getElementById("demo");
 // }
 
 function atHome(){
-    navigator.geolocation;
+    // navigator.geolocation;
     // var test = Geolocation.getCurrentPosition;
-    console.log(Geolocation)
+    // console.log(Geolocation)
     // navigator.geolocation.getCurrentPosition();
     // console.log(position.coords.latitude)
     // var lat = position.coords.latitude;

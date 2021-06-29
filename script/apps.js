@@ -22,76 +22,76 @@ var k = 0;
 
 function homeAppPopulate(){
     
-var app_H01 = hide;
-var app_H02 = hide;
-var app_H03 = hide;
-var app_H04 = hide;
-var app_H05 = hide;
-var app_H06 = hide;
-var app_H07 = hide;
-var app_H08 = hide;
-var app_H09 = hide;
-var app_H10 = hide;
+var app_A01 = hide;
+var app_A02 = hide;
+var app_A03 = hide;
+var app_A04 = hide;
+var app_A05 = hide;
+var app_A06 = hide;
+var app_A07 = hide;
+var app_A08 = hide;
+var app_A09 = hide;
+var app_A10 = hide;
 
-var app_H11 = hide;
-var app_H12 = hide;
-var app_H13 = hide;
-var app_H14 = hide;
-var app_H15 = hide;
-var app_H16 = hide;
-var app_H17 = hide;
-var app_H18 = hide;
-var app_H19 = hide;
-var app_H20 = hide;
+var app_A11 = hide;
+var app_A12 = hide;
+var app_A13 = hide;
+var app_A14 = hide;
+var app_A15 = hide;
+var app_A16 = hide;
+var app_A17 = hide;
+var app_A18 = hide;
+var app_A19 = hide;
+var app_A20 = hide;
 
-var app_H21 = hide;
-var app_H22 = hide;
-var app_H23 = hide;
-var app_H24 = hide;
-var app_H25 = hide;
-var app_H26 = hide;
-var app_H27 = hide;
-var app_H28 = hide;
-var app_H29 = hide;
-var app_H30 = hide;
+var app_A21 = hide;
+var app_A22 = hide;
+var app_A23 = hide;
+var app_A24 = hide;
+var app_A25 = hide;
+var app_A26 = hide;
+var app_A27 = hide;
+var app_A28 = hide;
+var app_A29 = hide;
+var app_A30 = hide;
 
-var app_H31 = hide;
-var app_H32 = hide;
-var app_H33 = hide;
-var app_H34 = hide;
-var app_H35 = hide;
-var app_H36 = hide;
-var app_H37 = hide;
-var app_H38 = hide;
-var app_H39 = hide;
-var app_H40 = hide;
+var app_A31 = hide;
+var app_A32 = hide;
+var app_A33 = hide;
+var app_A34 = hide;
+var app_A35 = hide;
+var app_A36 = hide;
+var app_A37 = hide;
+var app_A38 = hide;
+var app_A39 = hide;
+var app_A40 = hide;
 
-var app_H41 = hide;
-var app_H42 = hide;
-var app_H43 = hide;
-var app_H44 = hide;
-var app_H45 = hide;
-var app_H46 = hide;
-var app_H47 = hide;
-var app_H48 = hide;
-var app_H49 = hide;
-var app_H50 = hide;
+var app_A41 = hide;
+var app_A42 = hide;
+var app_A43 = hide;
+var app_A44 = hide;
+var app_A45 = hide;
+var app_A46 = hide;
+var app_A47 = hide;
+var app_A48 = hide;
+var app_A49 = hide;
+var app_A50 = hide;
 
-var app_H51 = hide;
-var app_H52 = hide;
-var app_H53 = hide;
-var app_H54 = hide;
-var app_H55 = hide;
-var app_H56 = hide;
-var app_H57 = hide;
-var app_H58 = hide;
-var app_H59 = hide;
-var app_H60 = hide;
+var app_A51 = hide;
+var app_A52 = hide;
+var app_A53 = hide;
+var app_A54 = hide;
+var app_A55 = hide;
+var app_A56 = hide;
+var app_A57 = hide;
+var app_A58 = hide;
+var app_A59 = hide;
+var app_A60 = hide;
 
 
 
 // App store
-var app_H04 = [
+var app_A04 = [
 "appstore",
 "App Store",
 "",
@@ -100,7 +100,7 @@ var app_H04 = [
 ]
 
 // Shortcuts
-var app_H05 = [
+var app_A05 = [
 "shortcuts",
 "Shortcuts",
 "",
@@ -109,7 +109,7 @@ var app_H05 = [
 ]
 
 // Wallet
-var app_H06 = [
+var app_A06 = [
 "hidden-tablet grey-gradient",
 "Wallet",
 "",
@@ -120,7 +120,7 @@ var app_H06 = [
 
 
 // Outlook
-var app_H11 = [
+var app_A11 = [
 "hidden-mobile hidden-tablet outlook",
 "Outlook",
 "",
@@ -129,7 +129,7 @@ var app_H11 = [
 ]
 
 // Outlook mobile
-var app_H12 = [
+var app_A12 = [
 "hidden-desktop outlook",
 "Outlook",
 "",
@@ -138,7 +138,7 @@ var app_H12 = [
 ]
 
 // OneDrive
-var app_H13 = [
+var app_A13 = [
 "hidden-mobile onedrive",
 "OneDrive",
 "",
@@ -147,7 +147,7 @@ var app_H13 = [
 ]
 
 // ClickUp
-var app_H14 = [
+var app_A14 = [
 "mstodo",
 "Microsoft To Do",
 "",
@@ -156,7 +156,7 @@ var app_H14 = [
 ]
 
 // Notion
-var app_H15 = [
+var app_A15 = [
 "grey-gradient",
 "Notion",
 "",
@@ -165,7 +165,7 @@ var app_H15 = [
 ]
 
 // School email
-var app_H16 = [
+var app_A16 = [
 "hidden-mobile outlook-blue",
 "School",
 "",
@@ -174,7 +174,7 @@ var app_H16 = [
 ]
 
 // To do
-var app_H17 = [
+var app_A17 = [
 "clickup-teal",
 "To do",
 "",
@@ -183,7 +183,7 @@ var app_H17 = [
 ]
 
 // Habits
-var app_H18 = [
+var app_A18 = [
 "clickup-purple",
 "Habits",
 "",
@@ -192,7 +192,7 @@ var app_H18 = [
 ]
 
 // Gmail
-var app_H19 = [
+var app_A19 = [
 "hidden-mobile google-red",
 "Gmail",
 "",
@@ -201,7 +201,7 @@ var app_H19 = [
 ]
 
 // Google Drive
-var app_H20 = [
+var app_A20 = [
 "hidden-mobile google-green",
 "Drive",
 "",
@@ -212,7 +212,7 @@ var app_H20 = [
 
 
 // Bose
-app_H21 = [
+app_A21 = [
 "grey-gradient hidden-desktop",
 "Bose",
 "",
@@ -221,7 +221,7 @@ app_H21 = [
 ]
 
 // UE Boom
-app_H22 = [
+app_A22 = [
 "indigo-gradient hidden-desktop",
 "UE Boom",
 "",
@@ -238,7 +238,7 @@ app_H22 = [
 
 
 // Google maps
-var app_H23 = [
+var app_A23 = [
 "google-green",
 "Google Maps",
 "",
@@ -247,7 +247,7 @@ var app_H23 = [
 ]
 
 // Spanishdict
-var app_H24 = [
+var app_A24 = [
 "spanishdict",
 "SpanishDict",
 "",
@@ -262,7 +262,7 @@ var app_H24 = [
 
 
 // Notion work
-app_H31 = [
+app_A31 = [
 "grey-gradient",
 "Notion",
 "",
@@ -271,7 +271,7 @@ app_H31 = [
 ]
 
 // OneDrive work
-app_H32 = [
+app_A32 = [
 "onedrive",
 "OneDrive",
 "",
@@ -280,7 +280,7 @@ app_H32 = [
 ]
 
 // ClickUp
-app_H33 = [
+app_A33 = [
 "clickup",
 "ClickUp",
 "",
@@ -289,7 +289,7 @@ app_H33 = [
 ]
 
 // Canvas
-app_H34 = [
+app_A34 = [
     "google-red",
     "Canvas",
     "",
@@ -298,7 +298,7 @@ app_H34 = [
 ]
 
 // Ivytech VHL
-app_H35 = [
+app_A35 = [
     "indigo-gradient",
     "VHL",
     "",
@@ -309,7 +309,7 @@ app_H35 = [
 
 
 // Pocket
-var app_H41 = [
+var app_A41 = [
 "pocket hidden-mobile hidden-tablet",
 "Pocket",
 "",
@@ -318,7 +318,7 @@ var app_H41 = [
 ]
 
 // Pocket mobile
-var app_H42 = [
+var app_A42 = [
 "pocket hidden-desktop",
 "Pocket",
 "",
@@ -327,7 +327,7 @@ var app_H42 = [
 ]
 
 // Feedly
-var app_H43 = [
+var app_A43 = [
 "feedly",
 "Feedly",
 "",
@@ -336,7 +336,7 @@ var app_H43 = [
 ]
 
 // YouTube (Feedly)
-var app_H44 = [
+var app_A44 = [
 "youtube",
 "YouTube",
 "",
@@ -347,7 +347,7 @@ var app_H44 = [
 
 
 // Snapchat
-app_H51 = [
+app_A51 = [
 "snapchat hidden-tablet hidden-desktop",
 "Snapchat",
 "",
@@ -356,7 +356,7 @@ app_H51 = [
 ]
 
 // Linkedin
-app_H52 = [
+app_A52 = [
 "linkedin",
 "LinkedIn",
 "",
@@ -366,7 +366,7 @@ app_H52 = [
 
 
 // Whatsapp web
-app_H53 = [
+app_A53 = [
 "whatsapp hidden-mobile hidden-tablet",
 "WhatsApp",
 "",
@@ -375,7 +375,7 @@ app_H53 = [
 ]
 
 // Messenger
-app_H54 = [
+app_A54 = [
 "messenger",
 "Messenger",
 "",
@@ -384,7 +384,7 @@ app_H54 = [
 ]
 
 // Reddit
-app_H55 = [
+app_A55 = [
 "reddit hidden-mobile",
 "Reddit",
 "",
@@ -393,7 +393,7 @@ app_H55 = [
 ]
 
 // Twitter
-app_H56 = [
+app_A56 = [
 "twitter hidden-mobile",
 "Twitter",
 "",
@@ -402,7 +402,7 @@ app_H56 = [
 ]
 
 // Groupme
-app_H57 = [
+app_A57 = [
 "teal-gradient hidden-mobile hidden-tablet",
 "GroupMe",
 "",
@@ -411,7 +411,7 @@ app_H57 = [
 ]
 
 // Groupme
-app_H58 = [
+app_A58 = [
 "teal-gradient hidden-desktop",
 "GroupMe",
 "",
@@ -427,365 +427,1157 @@ app_H58 = [
 
 
 k = 1;
-appContainer[k] = app_H01[0];
-     appName[k] = app_H01[1];
- appGradient[k] = app_H01[2];
-     appIcon[k] = app_H01[3];
-     appLink[k] = app_H01[4];
+appContainer[k] = app_A01[0];
+     appName[k] = app_A01[1];
+ appGradient[k] = app_A01[2];
+     appIcon[k] = app_A01[3];
+     appLink[k] = app_A01[4];
 k = 2;
-appContainer[k] = app_H02[0];
-     appName[k] = app_H02[1];
- appGradient[k] = app_H02[2];
-     appIcon[k] = app_H02[3];
-     appLink[k] = app_H02[4];
+appContainer[k] = app_A02[0];
+     appName[k] = app_A02[1];
+ appGradient[k] = app_A02[2];
+     appIcon[k] = app_A02[3];
+     appLink[k] = app_A02[4];
 k = 3;
-appContainer[k] = app_H03[0];
-     appName[k] = app_H03[1];
- appGradient[k] = app_H03[2];
-     appIcon[k] = app_H03[3];
-     appLink[k] = app_H03[4];
+appContainer[k] = app_A03[0];
+     appName[k] = app_A03[1];
+ appGradient[k] = app_A03[2];
+     appIcon[k] = app_A03[3];
+     appLink[k] = app_A03[4];
 k = 4;
-appContainer[k] = app_H04[0];
-     appName[k] = app_H04[1];
- appGradient[k] = app_H04[2];
-     appIcon[k] = app_H04[3];
-     appLink[k] = app_H04[4];
+appContainer[k] = app_A04[0];
+     appName[k] = app_A04[1];
+ appGradient[k] = app_A04[2];
+     appIcon[k] = app_A04[3];
+     appLink[k] = app_A04[4];
 k = 5;
-appContainer[k] = app_H05[0];
-     appName[k] = app_H05[1];
- appGradient[k] = app_H05[2];
-     appIcon[k] = app_H05[3];
-     appLink[k] = app_H05[4];
+appContainer[k] = app_A05[0];
+     appName[k] = app_A05[1];
+ appGradient[k] = app_A05[2];
+     appIcon[k] = app_A05[3];
+     appLink[k] = app_A05[4];
 k = 6;
-appContainer[k] = app_H06[0];
-     appName[k] = app_H06[1];
- appGradient[k] = app_H06[2];
-     appIcon[k] = app_H06[3];
-     appLink[k] = app_H06[4];
+appContainer[k] = app_A06[0];
+     appName[k] = app_A06[1];
+ appGradient[k] = app_A06[2];
+     appIcon[k] = app_A06[3];
+     appLink[k] = app_A06[4];
 k = 7;
-appContainer[k] = app_H07[0];
-     appName[k] = app_H07[1];
- appGradient[k] = app_H07[2];
-     appIcon[k] = app_H07[3];
-     appLink[k] = app_H07[4];
+appContainer[k] = app_A07[0];
+     appName[k] = app_A07[1];
+ appGradient[k] = app_A07[2];
+     appIcon[k] = app_A07[3];
+     appLink[k] = app_A07[4];
 k = 8;
-appContainer[k] = app_H08[0];
-     appName[k] = app_H08[1];
- appGradient[k] = app_H08[2];
-     appIcon[k] = app_H08[3];
-     appLink[k] = app_H08[4];
+appContainer[k] = app_A08[0];
+     appName[k] = app_A08[1];
+ appGradient[k] = app_A08[2];
+     appIcon[k] = app_A08[3];
+     appLink[k] = app_A08[4];
 k = 9;
-appContainer[k] = app_H09[0];
-     appName[k] = app_H09[1];
- appGradient[k] = app_H09[2];
-     appIcon[k] = app_H09[3];
-     appLink[k] = app_H09[4];
+appContainer[k] = app_A09[0];
+     appName[k] = app_A09[1];
+ appGradient[k] = app_A09[2];
+     appIcon[k] = app_A09[3];
+     appLink[k] = app_A09[4];
 k = 10;
-appContainer[k] = app_H10[0];
-     appName[k] = app_H10[1];
- appGradient[k] = app_H10[2];
-     appIcon[k] = app_H10[3];
-     appLink[k] = app_H10[4];
+appContainer[k] = app_A10[0];
+     appName[k] = app_A10[1];
+ appGradient[k] = app_A10[2];
+     appIcon[k] = app_A10[3];
+     appLink[k] = app_A10[4];
 k = 11;
-appContainer[k] = app_H11[0];
-     appName[k] = app_H11[1];
- appGradient[k] = app_H11[2];
-     appIcon[k] = app_H11[3];
-     appLink[k] = app_H11[4];
+appContainer[k] = app_A11[0];
+     appName[k] = app_A11[1];
+ appGradient[k] = app_A11[2];
+     appIcon[k] = app_A11[3];
+     appLink[k] = app_A11[4];
 k = 12;
-appContainer[k] = app_H12[0];
-     appName[k] = app_H12[1];
- appGradient[k] = app_H12[2];
-     appIcon[k] = app_H12[3];
-     appLink[k] = app_H12[4];
+appContainer[k] = app_A12[0];
+     appName[k] = app_A12[1];
+ appGradient[k] = app_A12[2];
+     appIcon[k] = app_A12[3];
+     appLink[k] = app_A12[4];
 k = 13;
-appContainer[k] = app_H13[0];
-     appName[k] = app_H13[1];
- appGradient[k] = app_H13[2];
-     appIcon[k] = app_H13[3];
-     appLink[k] = app_H13[4];
+appContainer[k] = app_A13[0];
+     appName[k] = app_A13[1];
+ appGradient[k] = app_A13[2];
+     appIcon[k] = app_A13[3];
+     appLink[k] = app_A13[4];
 k = 14;
-appContainer[k] = app_H14[0];
-     appName[k] = app_H14[1];
- appGradient[k] = app_H14[2];
-     appIcon[k] = app_H14[3];
-     appLink[k] = app_H14[4];
+appContainer[k] = app_A14[0];
+     appName[k] = app_A14[1];
+ appGradient[k] = app_A14[2];
+     appIcon[k] = app_A14[3];
+     appLink[k] = app_A14[4];
 k = 15;
-appContainer[k] = app_H15[0];
-     appName[k] = app_H15[1];
- appGradient[k] = app_H15[2];
-     appIcon[k] = app_H15[3];
-     appLink[k] = app_H15[4];
+appContainer[k] = app_A15[0];
+     appName[k] = app_A15[1];
+ appGradient[k] = app_A15[2];
+     appIcon[k] = app_A15[3];
+     appLink[k] = app_A15[4];
 k = 16;
-appContainer[k] = app_H16[0];
-     appName[k] = app_H16[1];
- appGradient[k] = app_H16[2];
-     appIcon[k] = app_H16[3];
-     appLink[k] = app_H16[4];
+appContainer[k] = app_A16[0];
+     appName[k] = app_A16[1];
+ appGradient[k] = app_A16[2];
+     appIcon[k] = app_A16[3];
+     appLink[k] = app_A16[4];
 k = 17;
-appContainer[k] = app_H17[0];
-     appName[k] = app_H17[1];
- appGradient[k] = app_H17[2];
-     appIcon[k] = app_H17[3];
-     appLink[k] = app_H17[4];
+appContainer[k] = app_A17[0];
+     appName[k] = app_A17[1];
+ appGradient[k] = app_A17[2];
+     appIcon[k] = app_A17[3];
+     appLink[k] = app_A17[4];
 k = 18;
-appContainer[k] = app_H18[0];
-     appName[k] = app_H18[1];
- appGradient[k] = app_H18[2];
-     appIcon[k] = app_H18[3];
-     appLink[k] = app_H18[4];
+appContainer[k] = app_A18[0];
+     appName[k] = app_A18[1];
+ appGradient[k] = app_A18[2];
+     appIcon[k] = app_A18[3];
+     appLink[k] = app_A18[4];
 k = 19;
-appContainer[k] = app_H19[0];
-     appName[k] = app_H19[1];
- appGradient[k] = app_H19[2];
-     appIcon[k] = app_H19[3];
-     appLink[k] = app_H19[4];
+appContainer[k] = app_A19[0];
+     appName[k] = app_A19[1];
+ appGradient[k] = app_A19[2];
+     appIcon[k] = app_A19[3];
+     appLink[k] = app_A19[4];
 k = 20;
-appContainer[k] = app_H20[0];
-     appName[k] = app_H20[1];
- appGradient[k] = app_H20[2];
-     appIcon[k] = app_H20[3];
-     appLink[k] = app_H20[4];
+appContainer[k] = app_A20[0];
+     appName[k] = app_A20[1];
+ appGradient[k] = app_A20[2];
+     appIcon[k] = app_A20[3];
+     appLink[k] = app_A20[4];
 k = 21;
-appContainer[k] = app_H21[0];
-     appName[k] = app_H21[1];
- appGradient[k] = app_H21[2];
-     appIcon[k] = app_H21[3];
-     appLink[k] = app_H21[4];
+appContainer[k] = app_A21[0];
+     appName[k] = app_A21[1];
+ appGradient[k] = app_A21[2];
+     appIcon[k] = app_A21[3];
+     appLink[k] = app_A21[4];
 k = 22;
-appContainer[k] = app_H22[0];
-     appName[k] = app_H22[1];
- appGradient[k] = app_H22[2];
-     appIcon[k] = app_H22[3];
-     appLink[k] = app_H22[4];
+appContainer[k] = app_A22[0];
+     appName[k] = app_A22[1];
+ appGradient[k] = app_A22[2];
+     appIcon[k] = app_A22[3];
+     appLink[k] = app_A22[4];
 k = 23;
-appContainer[k] = app_H23[0];
-     appName[k] = app_H23[1];
- appGradient[k] = app_H23[2];
-     appIcon[k] = app_H23[3];
-     appLink[k] = app_H23[4];
+appContainer[k] = app_A23[0];
+     appName[k] = app_A23[1];
+ appGradient[k] = app_A23[2];
+     appIcon[k] = app_A23[3];
+     appLink[k] = app_A23[4];
 k = 24;
-appContainer[k] = app_H24[0];
-     appName[k] = app_H24[1];
- appGradient[k] = app_H24[2];
-     appIcon[k] = app_H24[3];
-     appLink[k] = app_H24[4];
+appContainer[k] = app_A24[0];
+     appName[k] = app_A24[1];
+ appGradient[k] = app_A24[2];
+     appIcon[k] = app_A24[3];
+     appLink[k] = app_A24[4];
 k = 25;
-appContainer[k] = app_H25[0];
-     appName[k] = app_H25[1];
- appGradient[k] = app_H25[2];
-     appIcon[k] = app_H25[3];
-     appLink[k] = app_H25[4];
+appContainer[k] = app_A25[0];
+     appName[k] = app_A25[1];
+ appGradient[k] = app_A25[2];
+     appIcon[k] = app_A25[3];
+     appLink[k] = app_A25[4];
 k = 26;
-appContainer[k] = app_H26[0];
-     appName[k] = app_H26[1];
- appGradient[k] = app_H26[2];
-     appIcon[k] = app_H26[3];
-     appLink[k] = app_H26[4];
+appContainer[k] = app_A26[0];
+     appName[k] = app_A26[1];
+ appGradient[k] = app_A26[2];
+     appIcon[k] = app_A26[3];
+     appLink[k] = app_A26[4];
 k = 27;
-appContainer[k] = app_H27[0];
-     appName[k] = app_H27[1];
- appGradient[k] = app_H27[2];
-     appIcon[k] = app_H27[3];
-     appLink[k] = app_H27[4];
+appContainer[k] = app_A27[0];
+     appName[k] = app_A27[1];
+ appGradient[k] = app_A27[2];
+     appIcon[k] = app_A27[3];
+     appLink[k] = app_A27[4];
 k = 28;
-appContainer[k] = app_H28[0];
-     appName[k] = app_H28[1];
- appGradient[k] = app_H28[2];
-     appIcon[k] = app_H28[3];
-     appLink[k] = app_H28[4];
+appContainer[k] = app_A28[0];
+     appName[k] = app_A28[1];
+ appGradient[k] = app_A28[2];
+     appIcon[k] = app_A28[3];
+     appLink[k] = app_A28[4];
 k = 29;
-appContainer[k] = app_H29[0];
-     appName[k] = app_H29[1];
- appGradient[k] = app_H29[2];
-     appIcon[k] = app_H29[3];
-     appLink[k] = app_H29[4];
+appContainer[k] = app_A29[0];
+     appName[k] = app_A29[1];
+ appGradient[k] = app_A29[2];
+     appIcon[k] = app_A29[3];
+     appLink[k] = app_A29[4];
 k = 30;
-appContainer[k] = app_H30[0];
-     appName[k] = app_H30[1];
- appGradient[k] = app_H30[2];
-     appIcon[k] = app_H30[3];
-     appLink[k] = app_H30[4];
+appContainer[k] = app_A30[0];
+     appName[k] = app_A30[1];
+ appGradient[k] = app_A30[2];
+     appIcon[k] = app_A30[3];
+     appLink[k] = app_A30[4];
 k = 31;
-appContainer[k] = app_H31[0];
-     appName[k] = app_H31[1];
- appGradient[k] = app_H31[2];
-     appIcon[k] = app_H31[3];
-     appLink[k] = app_H31[4];
+appContainer[k] = app_A31[0];
+     appName[k] = app_A31[1];
+ appGradient[k] = app_A31[2];
+     appIcon[k] = app_A31[3];
+     appLink[k] = app_A31[4];
 k = 32;
-appContainer[k] = app_H32[0];
-     appName[k] = app_H32[1];
- appGradient[k] = app_H32[2];
-     appIcon[k] = app_H32[3];
-     appLink[k] = app_H32[4];
+appContainer[k] = app_A32[0];
+     appName[k] = app_A32[1];
+ appGradient[k] = app_A32[2];
+     appIcon[k] = app_A32[3];
+     appLink[k] = app_A32[4];
 k = 33;
-appContainer[k] = app_H33[0];
-     appName[k] = app_H33[1];
- appGradient[k] = app_H33[2];
-     appIcon[k] = app_H33[3];
-     appLink[k] = app_H33[4];
+appContainer[k] = app_A33[0];
+     appName[k] = app_A33[1];
+ appGradient[k] = app_A33[2];
+     appIcon[k] = app_A33[3];
+     appLink[k] = app_A33[4];
 k = 34;
-appContainer[k] = app_H34[0];
-     appName[k] = app_H34[1];
- appGradient[k] = app_H34[2];
-     appIcon[k] = app_H34[3];
-     appLink[k] = app_H34[4];
+appContainer[k] = app_A34[0];
+     appName[k] = app_A34[1];
+ appGradient[k] = app_A34[2];
+     appIcon[k] = app_A34[3];
+     appLink[k] = app_A34[4];
 k = 35;
-appContainer[k] = app_H35[0];
-     appName[k] = app_H35[1];
- appGradient[k] = app_H35[2];
-     appIcon[k] = app_H35[3];
-     appLink[k] = app_H35[4];
+appContainer[k] = app_A35[0];
+     appName[k] = app_A35[1];
+ appGradient[k] = app_A35[2];
+     appIcon[k] = app_A35[3];
+     appLink[k] = app_A35[4];
 k = 36;
-appContainer[k] = app_H36[0];
-     appName[k] = app_H36[1];
- appGradient[k] = app_H36[2];
-     appIcon[k] = app_H36[3];
-     appLink[k] = app_H36[4];
+appContainer[k] = app_A36[0];
+     appName[k] = app_A36[1];
+ appGradient[k] = app_A36[2];
+     appIcon[k] = app_A36[3];
+     appLink[k] = app_A36[4];
 k = 37;
-appContainer[k] = app_H37[0];
-     appName[k] = app_H37[1];
- appGradient[k] = app_H37[2];
-     appIcon[k] = app_H37[3];
-     appLink[k] = app_H37[4];
+appContainer[k] = app_A37[0];
+     appName[k] = app_A37[1];
+ appGradient[k] = app_A37[2];
+     appIcon[k] = app_A37[3];
+     appLink[k] = app_A37[4];
 k = 38;
-appContainer[k] = app_H38[0];
-     appName[k] = app_H38[1];
- appGradient[k] = app_H38[2];
-     appIcon[k] = app_H38[3];
-     appLink[k] = app_H38[4];
+appContainer[k] = app_A38[0];
+     appName[k] = app_A38[1];
+ appGradient[k] = app_A38[2];
+     appIcon[k] = app_A38[3];
+     appLink[k] = app_A38[4];
 k = 39;
-appContainer[k] = app_H39[0];
-     appName[k] = app_H39[1];
- appGradient[k] = app_H39[2];
-     appIcon[k] = app_H39[3];
-     appLink[k] = app_H39[4];
+appContainer[k] = app_A39[0];
+     appName[k] = app_A39[1];
+ appGradient[k] = app_A39[2];
+     appIcon[k] = app_A39[3];
+     appLink[k] = app_A39[4];
 k = 40;
-appContainer[k] = app_H40[0];
-     appName[k] = app_H40[1];
- appGradient[k] = app_H40[2];
-     appIcon[k] = app_H40[3];
-     appLink[k] = app_H40[4];
+appContainer[k] = app_A40[0];
+     appName[k] = app_A40[1];
+ appGradient[k] = app_A40[2];
+     appIcon[k] = app_A40[3];
+     appLink[k] = app_A40[4];
 k = 41;
-appContainer[k] = app_H41[0];
-     appName[k] = app_H41[1];
- appGradient[k] = app_H41[2];
-     appIcon[k] = app_H41[3];
-     appLink[k] = app_H41[4];
+appContainer[k] = app_A41[0];
+     appName[k] = app_A41[1];
+ appGradient[k] = app_A41[2];
+     appIcon[k] = app_A41[3];
+     appLink[k] = app_A41[4];
 k = 42;
-appContainer[k] = app_H42[0];
-     appName[k] = app_H42[1];
- appGradient[k] = app_H42[2];
-     appIcon[k] = app_H42[3];
-     appLink[k] = app_H42[4];
+appContainer[k] = app_A42[0];
+     appName[k] = app_A42[1];
+ appGradient[k] = app_A42[2];
+     appIcon[k] = app_A42[3];
+     appLink[k] = app_A42[4];
 k = 43;
-appContainer[k] = app_H43[0];
-     appName[k] = app_H43[1];
- appGradient[k] = app_H43[2];
-     appIcon[k] = app_H43[3];
-     appLink[k] = app_H43[4];
+appContainer[k] = app_A43[0];
+     appName[k] = app_A43[1];
+ appGradient[k] = app_A43[2];
+     appIcon[k] = app_A43[3];
+     appLink[k] = app_A43[4];
 k = 44;
-appContainer[k] = app_H44[0];
-     appName[k] = app_H44[1];
- appGradient[k] = app_H44[2];
-     appIcon[k] = app_H44[3];
-     appLink[k] = app_H44[4];
+appContainer[k] = app_A44[0];
+     appName[k] = app_A44[1];
+ appGradient[k] = app_A44[2];
+     appIcon[k] = app_A44[3];
+     appLink[k] = app_A44[4];
 k = 45;
-appContainer[k] = app_H45[0];
-     appName[k] = app_H45[1];
- appGradient[k] = app_H45[2];
-     appIcon[k] = app_H45[3];
-     appLink[k] = app_H45[4];
+appContainer[k] = app_A45[0];
+     appName[k] = app_A45[1];
+ appGradient[k] = app_A45[2];
+     appIcon[k] = app_A45[3];
+     appLink[k] = app_A45[4];
 k = 46;
-appContainer[k] = app_H46[0];
-     appName[k] = app_H46[1];
- appGradient[k] = app_H46[2];
-     appIcon[k] = app_H46[3];
-     appLink[k] = app_H46[4];
+appContainer[k] = app_A46[0];
+     appName[k] = app_A46[1];
+ appGradient[k] = app_A46[2];
+     appIcon[k] = app_A46[3];
+     appLink[k] = app_A46[4];
 k = 47;
-appContainer[k] = app_H47[0];
-     appName[k] = app_H47[1];
- appGradient[k] = app_H47[2];
-     appIcon[k] = app_H47[3];
-     appLink[k] = app_H47[4];
+appContainer[k] = app_A47[0];
+     appName[k] = app_A47[1];
+ appGradient[k] = app_A47[2];
+     appIcon[k] = app_A47[3];
+     appLink[k] = app_A47[4];
 k = 48;
-appContainer[k] = app_H48[0];
-     appName[k] = app_H48[1];
- appGradient[k] = app_H48[2];
-     appIcon[k] = app_H48[3];
-     appLink[k] = app_H48[4];
+appContainer[k] = app_A48[0];
+     appName[k] = app_A48[1];
+ appGradient[k] = app_A48[2];
+     appIcon[k] = app_A48[3];
+     appLink[k] = app_A48[4];
 k = 49;
-appContainer[k] = app_H49[0];
-     appName[k] = app_H49[1];
- appGradient[k] = app_H49[2];
-     appIcon[k] = app_H49[3];
-     appLink[k] = app_H49[4];
+appContainer[k] = app_A49[0];
+     appName[k] = app_A49[1];
+ appGradient[k] = app_A49[2];
+     appIcon[k] = app_A49[3];
+     appLink[k] = app_A49[4];
 k = 50;
-appContainer[k] = app_H50[0];
-     appName[k] = app_H50[1];
- appGradient[k] = app_H50[2];
-     appIcon[k] = app_H50[3];
-     appLink[k] = app_H50[4];
+appContainer[k] = app_A50[0];
+     appName[k] = app_A50[1];
+ appGradient[k] = app_A50[2];
+     appIcon[k] = app_A50[3];
+     appLink[k] = app_A50[4];
 k = 51;
-appContainer[k] = app_H51[0];
-     appName[k] = app_H51[1];
- appGradient[k] = app_H51[2];
-     appIcon[k] = app_H51[3];
-     appLink[k] = app_H51[4];
+appContainer[k] = app_A51[0];
+     appName[k] = app_A51[1];
+ appGradient[k] = app_A51[2];
+     appIcon[k] = app_A51[3];
+     appLink[k] = app_A51[4];
 k = 52;
-appContainer[k] = app_H52[0];
-     appName[k] = app_H52[1];
- appGradient[k] = app_H52[2];
-     appIcon[k] = app_H52[3];
-     appLink[k] = app_H52[4];
+appContainer[k] = app_A52[0];
+     appName[k] = app_A52[1];
+ appGradient[k] = app_A52[2];
+     appIcon[k] = app_A52[3];
+     appLink[k] = app_A52[4];
 k = 53;
-appContainer[k] = app_H53[0];
-     appName[k] = app_H53[1];
- appGradient[k] = app_H53[2];
-     appIcon[k] = app_H53[3];
-     appLink[k] = app_H53[4];
+appContainer[k] = app_A53[0];
+     appName[k] = app_A53[1];
+ appGradient[k] = app_A53[2];
+     appIcon[k] = app_A53[3];
+     appLink[k] = app_A53[4];
 k = 54;
-appContainer[k] = app_H54[0];
-     appName[k] = app_H54[1];
- appGradient[k] = app_H54[2];
-     appIcon[k] = app_H54[3];
-     appLink[k] = app_H54[4];
+appContainer[k] = app_A54[0];
+     appName[k] = app_A54[1];
+ appGradient[k] = app_A54[2];
+     appIcon[k] = app_A54[3];
+     appLink[k] = app_A54[4];
 k = 55;
-appContainer[k] = app_H55[0];
-     appName[k] = app_H55[1];
- appGradient[k] = app_H55[2];
-     appIcon[k] = app_H55[3];
-     appLink[k] = app_H55[4];
+appContainer[k] = app_A55[0];
+     appName[k] = app_A55[1];
+ appGradient[k] = app_A55[2];
+     appIcon[k] = app_A55[3];
+     appLink[k] = app_A55[4];
 k = 56;
-appContainer[k] = app_H56[0];
-     appName[k] = app_H56[1];
- appGradient[k] = app_H56[2];
-     appIcon[k] = app_H56[3];
-     appLink[k] = app_H56[4];
+appContainer[k] = app_A56[0];
+     appName[k] = app_A56[1];
+ appGradient[k] = app_A56[2];
+     appIcon[k] = app_A56[3];
+     appLink[k] = app_A56[4];
 k = 57;
-appContainer[k] = app_H57[0];
-     appName[k] = app_H57[1];
- appGradient[k] = app_H57[2];
-     appIcon[k] = app_H57[3];
-     appLink[k] = app_H57[4];
+appContainer[k] = app_A57[0];
+     appName[k] = app_A57[1];
+ appGradient[k] = app_A57[2];
+     appIcon[k] = app_A57[3];
+     appLink[k] = app_A57[4];
 k = 58;
-appContainer[k] = app_H58[0];
-     appName[k] = app_H58[1];
- appGradient[k] = app_H58[2];
-     appIcon[k] = app_H58[3];
-     appLink[k] = app_H58[4];
+appContainer[k] = app_A58[0];
+     appName[k] = app_A58[1];
+ appGradient[k] = app_A58[2];
+     appIcon[k] = app_A58[3];
+     appLink[k] = app_A58[4];
 k = 59;
-appContainer[k] = app_H59[0];
-     appName[k] = app_H59[1];
- appGradient[k] = app_H59[2];
-     appIcon[k] = app_H59[3];
-     appLink[k] = app_H59[4];
+appContainer[k] = app_A59[0];
+     appName[k] = app_A59[1];
+ appGradient[k] = app_A59[2];
+     appIcon[k] = app_A59[3];
+     appLink[k] = app_A59[4];
 k = 60;
-appContainer[k] = app_H60[0];
-     appName[k] = app_H60[1];
- appGradient[k] = app_H60[2];
-     appIcon[k] = app_H60[3];
-     appLink[k] = app_H60[4];
+appContainer[k] = app_A60[0];
+     appName[k] = app_A60[1];
+ appGradient[k] = app_A60[2];
+     appIcon[k] = app_A60[3];
+     appLink[k] = app_A60[4];
+
+
+
+
+
+    var containerClass = "app-container ";
+    var gradientClass = "app-icon-container ";
+    // var nameClass = "hidden-always ";
+
+    for (i = 1; i < 61; i++){
+        var itemid = [
+        "appContainer_".concat(i),
+        "appName_".concat(i),
+        "appGradient_".concat(i),
+        "appIcon_".concat(i),
+        "appLink_".concat(i),
+        ]
+
+        document.getElementById(itemid[0]).className = containerClass.concat(appContainer[i]);
+        document.getElementById(itemid[1]).innerHTML =           appName[i];
+        document.getElementById(itemid[2]).className =   gradientClass.concat(appGradient[i]);
+        document.getElementById(itemid[3]).innerHTML =                            appIcon[i];
+        document.getElementById(itemid[4]).href =                                 appLink[i];
+    }
+}
+
+function page2AppPopulate(){
+    
+var app_B01 = hide;
+var app_B02 = hide;
+var app_B03 = hide;
+var app_B04 = hide;
+var app_B05 = hide;
+var app_B06 = hide;
+var app_B07 = hide;
+var app_B08 = hide;
+var app_B09 = hide;
+var app_B10 = hide;
+
+var app_B11 = hide;
+var app_B12 = hide;
+var app_B13 = hide;
+var app_B14 = hide;
+var app_B15 = hide;
+var app_B16 = hide;
+var app_B17 = hide;
+var app_B18 = hide;
+var app_B19 = hide;
+var app_B20 = hide;
+
+var app_B21 = hide;
+var app_B22 = hide;
+var app_B23 = hide;
+var app_B24 = hide;
+var app_B25 = hide;
+var app_B26 = hide;
+var app_B27 = hide;
+var app_B28 = hide;
+var app_B29 = hide;
+var app_B30 = hide;
+
+var app_B31 = hide;
+var app_B32 = hide;
+var app_B33 = hide;
+var app_B34 = hide;
+var app_B35 = hide;
+var app_B36 = hide;
+var app_B37 = hide;
+var app_B38 = hide;
+var app_B39 = hide;
+var app_B40 = hide;
+
+var app_B41 = hide;
+var app_B42 = hide;
+var app_B43 = hide;
+var app_B44 = hide;
+var app_B45 = hide;
+var app_B46 = hide;
+var app_B47 = hide;
+var app_B48 = hide;
+var app_B49 = hide;
+var app_B50 = hide;
+
+var app_B51 = hide;
+var app_B52 = hide;
+var app_B53 = hide;
+var app_B54 = hide;
+var app_B55 = hide;
+var app_B56 = hide;
+var app_B57 = hide;
+var app_B58 = hide;
+var app_B59 = hide;
+var app_B60 = hide;
+
+
+
+// App store
+var app_B04 = [
+"appstore",
+"App Store",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="85.5 105.00646209716797 341 302.0205383300781"><path d="M305.646 123.531c-1.729-6.45-5.865-11.842-11.648-15.18-11.936-6.892-27.256-2.789-34.15 9.151L256 124.166l-3.848-6.665c-6.893-11.937-22.212-16.042-34.15-9.151h-.001c-11.938 6.893-16.042 22.212-9.15 34.151l18.281 31.664L159.678 291H110.5c-13.785 0-25 11.215-25 25s11.215 25 25 25h189.86l-28.868-50h-54.079l85.735-148.498c3.339-5.783 4.227-12.521 2.498-18.971z"></path><path d="M401.5 291h-49.178l-55.907-96.834-28.867 50 86.804 150.348c3.339 5.784 8.729 9.921 15.181 11.65 2.154.577 4.339.863 6.511.863 4.332 0 8.608-1.136 12.461-3.361 11.938-6.893 16.042-22.213 9.149-34.15L381.189 341H401.5c13.785 0 25-11.215 25-25s-11.215-25-25-25zM119.264 361l-4.917 8.516c-6.892 11.938-2.787 27.258 9.151 34.15a24.837 24.837 0 0012.458 3.344c8.646 0 17.067-4.484 21.693-12.495L176.999 361h-57.735z"></path></svg>',
+"itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software",
+]
+
+// Shortcuts
+var app_B05 = [
+"shortcuts",
+"Shortcuts",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="11.000237464904785 11.000237464904785 25.99978256225586 25.99978256225586"><radialGradient id="a" cx="32.217" cy="26.315" r="18.488" gradientUnits="userSpaceOnUse"><stop offset=".074" stop-color="#2080f3"></stop><stop offset="1" stop-color="#53d390" stop-opacity="0"></stop></radialGradient><path fill="url(#a)" d="M21.216 36.076l-7.05-5.237c-1.555-1.155-1.555-3.521 0-4.677l7.05-5.237a4.653 4.653 0 015.568 0l7.05 5.237c1.555 1.155 1.555 3.521 0 4.677l-7.05 5.237a4.656 4.656 0 01-5.568 0z"></path><radialGradient id="b" cx="21.652" cy="36" r="13.714" gradientTransform="matrix(.4789 -.8779 1.6064 .8762 -46.546 23.465)" gradientUnits="userSpaceOnUse"><stop offset=".074" stop-color="#50ce96" stop-opacity=".941"></stop><stop offset="1" stop-color="#2080f2" stop-opacity="0"></stop></radialGradient><path fill="url(#b)" d="M21.216 36.076l-7.05-5.237c-1.555-1.155-1.555-3.521 0-4.677l7.05-5.237a4.653 4.653 0 015.568 0l7.05 5.237c1.555 1.155 1.555 3.521 0 4.677l-7.05 5.237a4.656 4.656 0 01-5.568 0z"></path><radialGradient id="c" cx="10.043" cy="20.348" r="25.25" gradientUnits="userSpaceOnUse"><stop offset=".393" stop-color="#ef5d57"></stop><stop offset="1" stop-color="#e36001" stop-opacity="0"></stop></radialGradient><path fill="url(#c)" d="M21.216 27.076l-7.05-5.237c-1.555-1.155-1.555-3.521 0-4.677l7.05-5.237a4.653 4.653 0 015.568 0l7.05 5.237c1.555 1.155 1.555 3.521 0 4.677l-7.05 5.237a4.656 4.656 0 01-5.568 0z"></path><radialGradient id="d" cx="24.489" cy="11.641" r="21.038" gradientTransform="matrix(-.0232 .9997 -.8673 -.0202 35.155 -12.606)" gradientUnits="userSpaceOnUse"><stop offset=".064" stop-color="#eb6ad0"></stop><stop offset=".158" stop-color="#eb69c5" stop-opacity=".899"></stop><stop offset=".324" stop-color="#e968a8" stop-opacity=".722"></stop><stop offset=".54" stop-color="#e86679" stop-opacity=".491"></stop><stop offset=".797" stop-color="#e56339" stop-opacity=".217"></stop><stop offset="1" stop-color="#e36001" stop-opacity="0"></stop></radialGradient><path fill="url(#d)" d="M21.216 27.076l-7.05-5.237c-1.555-1.155-1.555-3.521 0-4.677l7.05-5.237a4.653 4.653 0 015.568 0l7.05 5.237c1.555 1.155 1.555 3.521 0 4.677l-7.05 5.237a4.656 4.656 0 01-5.568 0z"></path></svg>',
+"shortcuts://",
+]
+
+// Wallet
+var app_B06 = [
+"hidden-tablet grey-gradient",
+"Wallet",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M 7 6 C 4.2504839 6 2 8.2504839 2 11 L 2 17 L 2 23 L 2 25 L 2 29.923828 L 2 39 C 2 41.761 4.239 44 7 44 L 43 44 C 45.761 44 48 41.761 48 39 L 48 29.923828 L 48 25 L 48 23 L 48 17 L 48 11 C 48 8.2504839 45.749516 6 43 6 L 7 6 z M 7 8 L 43 8 C 44.668484 8 46 9.3315161 46 11 L 46 13.029297 C 45.160943 12.392748 44.127936 12 43 12 L 7 12 C 5.8720637 12 4.8390569 12.392748 4 13.029297 L 4 11 C 4 9.3315161 5.3315161 8 7 8 z M 7 14 L 43 14 C 44.668484 14 46 15.331516 46 17 L 46 19.029297 C 45.160943 18.392748 44.127936 18 43 18 L 7 18 C 5.8720637 18 4.8390569 18.392748 4 19.029297 L 4 17 C 4 15.331516 5.3315161 14 7 14 z M 7 20 L 43 20 C 44.668484 20 46 21.331516 46 23 L 46 25 L 35.615234 25 C 33.447234 25 31.465094 26.225062 30.496094 28.164062 L 30.121094 28.912109 C 29.150094 30.851109 27.169 32.076172 25 32.076172 C 22.831 32.076172 20.849859 30.851109 19.880859 28.912109 L 19.507812 28.164062 C 18.537813 26.224062 16.553766 25 14.384766 25 L 4 25 L 4 23 C 4 21.331516 5.3315161 20 7 20 z"></path></svg>',
+"wallet://",
+]
+
+
+
+// Outlook
+var app_B11 = [
+"hidden-mobile hidden-tablet outlook",
+"Outlook",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="M 432.828125 23.636719 L 156.347656 23.636719 C 138.023438 23.636719 123.171875 38.488281 123.171875 56.816406 L 123.171875 78.933594 L 466.003906 78.933594 L 466.003906 56.816406 C 466.003906 38.488281 451.152344 23.636719 432.828125 23.636719 Z M 476.402344 493.652344 C 470.097656 497.191406 462.6875 499.183594 454.945312 499.183594 L 134.230469 499.183594 C 109.789062 499.183594 89.992188 479.386719 89.992188 454.945312 L 89.992188 388.589844 L 189.523438 388.589844 C 201.578125 388.589844 212.75 384.71875 221.816406 378.085938 Z M 499.183594 323.121094 L 499.183594 454.945312 C 499.183594 462.910156 497.082031 470.429688 493.210938 476.953125 L 319.359375 398.101562 Z M 366.472656 101.050781 L 466.003906 101.050781 L 466.003906 178.464844 L 366.472656 178.464844 Z M 244.820312 101.050781 L 344.355469 101.050781 L 344.355469 178.464844 L 244.820312 178.464844 Z M 366.472656 200.585938 L 466.003906 200.585938 L 466.003906 278 L 366.472656 278 Z M 244.820312 200.585938 L 344.355469 200.585938 L 344.355469 278 L 244.820312 278 Z M 344.355469 300.117188 L 344.355469 363.707031 L 291.824219 385.605469 L 244.820312 364.261719 L 244.820312 300.117188 Z M 466.003906 300.117188 L 466.003906 312.945312 L 366.472656 354.527344 L 366.472656 300.117188 Z M 222.703125 101.050781 L 222.703125 134.230469 C 213.523438 127.261719 202.023438 123.171875 189.523438 123.171875 L 123.171875 123.171875 L 123.171875 101.050781 Z M 189.523438 366.472656 L 34.695312 366.472656 C 16.371094 366.472656 1.519531 351.621094 1.519531 333.296875 L 1.519531 178.464844 C 1.519531 160.140625 16.371094 145.289062 34.695312 145.289062 L 189.523438 145.289062 C 207.851562 145.289062 222.703125 160.140625 222.703125 178.464844 L 222.703125 333.296875 C 222.703125 351.621094 207.851562 366.472656 189.523438 366.472656 Z M 112.109375 189.523438 C 73.226562 189.523438 49.804688 219.230469 49.804688 255.878906 C 49.804688 292.53125 73.136719 322.234375 112.109375 322.234375 C 151.09375 322.234375 174.417969 292.53125 174.417969 255.890625 C 174.417969 219.230469 150.996094 189.523438 112.109375 189.523438 Z M 112.109375 299.839844 C 90.046875 299.839844 76.867188 280.167969 76.867188 255.890625 C 76.867188 231.617188 90.113281 211.941406 112.109375 211.941406 C 134.109375 211.941406 147.367188 231.628906 147.367188 255.890625 C 147.367188 280.15625 134.164062 299.839844 112.109375 299.839844 Z M 112.109375 299.839844 " /></g></svg>',
+"https://outlook.live.com",
+]
+
+// Outlook mobile
+var app_B12 = [
+"hidden-desktop outlook",
+"Outlook",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="M 432.828125 23.636719 L 156.347656 23.636719 C 138.023438 23.636719 123.171875 38.488281 123.171875 56.816406 L 123.171875 78.933594 L 466.003906 78.933594 L 466.003906 56.816406 C 466.003906 38.488281 451.152344 23.636719 432.828125 23.636719 Z M 476.402344 493.652344 C 470.097656 497.191406 462.6875 499.183594 454.945312 499.183594 L 134.230469 499.183594 C 109.789062 499.183594 89.992188 479.386719 89.992188 454.945312 L 89.992188 388.589844 L 189.523438 388.589844 C 201.578125 388.589844 212.75 384.71875 221.816406 378.085938 Z M 499.183594 323.121094 L 499.183594 454.945312 C 499.183594 462.910156 497.082031 470.429688 493.210938 476.953125 L 319.359375 398.101562 Z M 366.472656 101.050781 L 466.003906 101.050781 L 466.003906 178.464844 L 366.472656 178.464844 Z M 244.820312 101.050781 L 344.355469 101.050781 L 344.355469 178.464844 L 244.820312 178.464844 Z M 366.472656 200.585938 L 466.003906 200.585938 L 466.003906 278 L 366.472656 278 Z M 244.820312 200.585938 L 344.355469 200.585938 L 344.355469 278 L 244.820312 278 Z M 344.355469 300.117188 L 344.355469 363.707031 L 291.824219 385.605469 L 244.820312 364.261719 L 244.820312 300.117188 Z M 466.003906 300.117188 L 466.003906 312.945312 L 366.472656 354.527344 L 366.472656 300.117188 Z M 222.703125 101.050781 L 222.703125 134.230469 C 213.523438 127.261719 202.023438 123.171875 189.523438 123.171875 L 123.171875 123.171875 L 123.171875 101.050781 Z M 189.523438 366.472656 L 34.695312 366.472656 C 16.371094 366.472656 1.519531 351.621094 1.519531 333.296875 L 1.519531 178.464844 C 1.519531 160.140625 16.371094 145.289062 34.695312 145.289062 L 189.523438 145.289062 C 207.851562 145.289062 222.703125 160.140625 222.703125 178.464844 L 222.703125 333.296875 C 222.703125 351.621094 207.851562 366.472656 189.523438 366.472656 Z M 112.109375 189.523438 C 73.226562 189.523438 49.804688 219.230469 49.804688 255.878906 C 49.804688 292.53125 73.136719 322.234375 112.109375 322.234375 C 151.09375 322.234375 174.417969 292.53125 174.417969 255.890625 C 174.417969 219.230469 150.996094 189.523438 112.109375 189.523438 Z M 112.109375 299.839844 C 90.046875 299.839844 76.867188 280.167969 76.867188 255.890625 C 76.867188 231.617188 90.113281 211.941406 112.109375 211.941406 C 134.109375 211.941406 147.367188 231.628906 147.367188 255.890625 C 147.367188 280.15625 134.164062 299.839844 112.109375 299.839844 Z M 112.109375 299.839844 " /></g></svg>',
+"ms-outlook://",
+]
+
+// OneDrive
+var app_B13 = [
+"hidden-mobile onedrive",
+"OneDrive",
+"",
+'<svg data-bbox="0 9.594 50.023 30.407" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"> <g> <path d="M27.406 9.594c-1.816 0-3.379.355-4.75 1.094-1.418.707-2.996 2.019-3.75 3.093-.281.375-.543.719-.718.938-2.086-.79-4.56-.89-6.282-.281-3.539 1.14-6.11 4.582-6.219 8.374 0 .215-.011.422-.03.594-.036.012-.087.02-.126.032-2.215.582-3.992 1.968-4.906 3.843C-.012 28.2 0 28.785 0 30.406c0 1.746-.004 2.153.594 3.219.93 1.973 2.976 3.695 4.937 4.156.516.145 2.801.196 4.969.219-.969-1.543-1.5-3.438-1.5-5.594 0-1.484.156-2.37.625-3.468 1.008-2.442 3.371-4.317 6.375-5.125.059-.192.113-.407.188-.594 1.015-2.899 2.917-5.309 5.093-6.469l.032-.031h.03c2.063-1.032 3.321-1.313 5.657-1.313 3.441 0 5.559.864 7.938 3.281.886-.23 1.78-.375 2.687-.375.309 0 .61.036.906.063-.09-.297-.18-.602-.281-.906-1.668-4.785-5.922-7.875-10.844-7.875zM27 17.406c-2.016 0-3 .203-4.781 1.094-1.754.934-3.309 3-4.157 5.438-.199.496-.347 1.039-.375 1.437-.113.05-.304.145-.687.25-2.633.57-4.715 2.082-5.531 4.063-.367.863-.469 1.511-.469 2.718 0 3.828 1.89 6.547 5.219 7.469.039.012.082.023.125.031.77.11 3.86.094 15.343.094H46a.94.94 0 0 0 .438-.094l.624-.312c1.657-.828 2.688-2.574 2.938-4.938.23-3.351-1.242-5.668-4.281-6.718l-.282-.094-.03-.532c-.36-4.046-3.637-7-7.782-7-.996 0-1.98.192-2.938.532l-.312.093-.656-.625C31.625 18.105 30 17.407 27 17.407z" /></g></svg>',
+"https://purdue0-my.sharepoint.com",
+]
+
+// ClickUp
+var app_B14 = [
+"mstodo",
+"Microsoft To Do",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M18.04 24.97c.23-.24.46-.47.7-.71.23-.24.47-.48.7-.72l-7.18-7.28c-.52-.53-1.22-.83-1.96-.83s-1.44.3-1.96.83l-6.53 6.63a2.8 2.8 0 000 3.94l7.77 7.88c.06-.38.17-.74.32-1.09.14-.31.31-.61.53-.89.12-.18.27-.35.43-.52 1.51-1.54 3.02-3.06 4.54-4.58.88-.89 1.76-1.77 2.64-2.66zm30.17-10.44L41.59 7.8c-1.02-1.03-2.81-1.03-3.84 0L21.3 24.51c-.15.15-.29.3-.45.45v.01c-.23.24-.47.48-.7.71h-.01l-.7.71-1.26 1.28-1.37 1.37c-1.51 1.52-3.02 3.04-4.52 4.57-.17.17-.31.36-.43.57-.19.33-.31.7-.35 1.07-.02.23-.01.46.03.68.02.13.05.26.09.39.02.08.05.17.09.25.03.08.07.16.11.24.06.13.14.26.24.38.05.07.11.13.17.2l.17.19 6.47 6.57.05.05c.06.06.13.12.2.18.13.1.26.19.4.27.4.23.85.35 1.32.35.57 0 1.11-.18 1.56-.51.07-.05.13-.1.19-.15.06-.04.11-.09.16-.14l.04-.05 6.54-6.63 18.87-19.15a2.734 2.734 0 000-3.84z"/></svg>',
+"ms-to-do://",
+]
+
+// Notion
+var app_B15 = [
+"grey-gradient",
+"Notion",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="12 0.18999999999999906 487.619 510.941"><path d="M96.085 91.118c15.81 12.845 21.741 11.865 51.43 9.884l279.888-16.806c5.936 0 1-5.922-.98-6.906L379.94 43.686c-8.907-6.915-20.773-14.834-43.516-12.853L65.408 50.6c-9.884.98-11.858 5.922-7.922 9.883zm16.804 65.228v294.491c0 15.827 7.909 21.748 25.71 20.769l307.597-17.799c17.81-.979 19.794-11.865 19.794-24.722V136.57c0-12.836-4.938-19.758-15.84-18.77l-321.442 18.77c-11.863.997-15.82 6.931-15.82 19.776zm303.659 15.797c1.972 8.903 0 17.798-8.92 18.799l-14.82 2.953v217.412c-12.868 6.916-24.734 10.87-34.622 10.87-15.831 0-19.796-4.945-31.654-19.76l-96.944-152.19v147.248l30.677 6.922s0 17.78-24.75 17.78l-68.23 3.958c-1.982-3.958 0-13.832 6.921-15.81l17.805-4.935V210.7l-24.721-1.981c-1.983-8.903 2.955-21.74 16.812-22.736l73.195-4.934 100.889 154.171V198.836l-25.723-2.952c-1.974-10.884 5.927-18.787 15.819-19.767zM42.653 23.919l281.9-20.76c34.618-2.969 43.525-.98 65.283 14.825l89.986 63.247c14.848 10.876 19.797 13.837 19.797 25.693v346.883c0 21.74-7.92 34.597-35.608 36.564L136.64 510.14c-20.785.991-30.677-1.971-41.562-15.815l-66.267-85.978C16.938 392.52 12 380.68 12 366.828V58.495c0-17.778 7.922-32.608 30.653-34.576z" fill-rule="evenodd" /></svg>',
+"https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945",
+]
+
+// School email
+var app_B16 = [
+"hidden-mobile outlook-blue",
+"School",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="M 432.828125 23.636719 L 156.347656 23.636719 C 138.023438 23.636719 123.171875 38.488281 123.171875 56.816406 L 123.171875 78.933594 L 466.003906 78.933594 L 466.003906 56.816406 C 466.003906 38.488281 451.152344 23.636719 432.828125 23.636719 Z M 476.402344 493.652344 C 470.097656 497.191406 462.6875 499.183594 454.945312 499.183594 L 134.230469 499.183594 C 109.789062 499.183594 89.992188 479.386719 89.992188 454.945312 L 89.992188 388.589844 L 189.523438 388.589844 C 201.578125 388.589844 212.75 384.71875 221.816406 378.085938 Z M 499.183594 323.121094 L 499.183594 454.945312 C 499.183594 462.910156 497.082031 470.429688 493.210938 476.953125 L 319.359375 398.101562 Z M 366.472656 101.050781 L 466.003906 101.050781 L 466.003906 178.464844 L 366.472656 178.464844 Z M 244.820312 101.050781 L 344.355469 101.050781 L 344.355469 178.464844 L 244.820312 178.464844 Z M 366.472656 200.585938 L 466.003906 200.585938 L 466.003906 278 L 366.472656 278 Z M 244.820312 200.585938 L 344.355469 200.585938 L 344.355469 278 L 244.820312 278 Z M 344.355469 300.117188 L 344.355469 363.707031 L 291.824219 385.605469 L 244.820312 364.261719 L 244.820312 300.117188 Z M 466.003906 300.117188 L 466.003906 312.945312 L 366.472656 354.527344 L 366.472656 300.117188 Z M 222.703125 101.050781 L 222.703125 134.230469 C 213.523438 127.261719 202.023438 123.171875 189.523438 123.171875 L 123.171875 123.171875 L 123.171875 101.050781 Z M 189.523438 366.472656 L 34.695312 366.472656 C 16.371094 366.472656 1.519531 351.621094 1.519531 333.296875 L 1.519531 178.464844 C 1.519531 160.140625 16.371094 145.289062 34.695312 145.289062 L 189.523438 145.289062 C 207.851562 145.289062 222.703125 160.140625 222.703125 178.464844 L 222.703125 333.296875 C 222.703125 351.621094 207.851562 366.472656 189.523438 366.472656 Z M 112.109375 189.523438 C 73.226562 189.523438 49.804688 219.230469 49.804688 255.878906 C 49.804688 292.53125 73.136719 322.234375 112.109375 322.234375 C 151.09375 322.234375 174.417969 292.53125 174.417969 255.890625 C 174.417969 219.230469 150.996094 189.523438 112.109375 189.523438 Z M 112.109375 299.839844 C 90.046875 299.839844 76.867188 280.167969 76.867188 255.890625 C 76.867188 231.617188 90.113281 211.941406 112.109375 211.941406 C 134.109375 211.941406 147.367188 231.628906 147.367188 255.890625 C 147.367188 280.15625 134.164062 299.839844 112.109375 299.839844 Z M 112.109375 299.839844 " /></g></svg>',
+"https://outlook.office.com/mail/inbox",
+]
+
+// To do
+var app_B17 = [
+"clickup-teal",
+"To do",
+"",
+'<svg viewBox="0 0 405.272 405.272" xml:space="preserve"><g><path d="M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z" /></g></svg>',
+"https://app.clickup.com/8450846/v/l/6-48362200-1",
+]
+
+// Habits
+var app_B18 = [
+"clickup-purple",
+"Habits",
+"",
+'<svg viewBox="0 0 511.979 511.979" xml:space="preserve"><g><g><g><path d="M341.552,85.334c-0.077-0.001-0.152-0.012-0.229-0.012H222.159l27.582-27.582c8.331-8.331,8.331-21.839,0-30.17 c-8.331-8.331-21.839-8.331-30.17,0l-64,64c-0.497,0.497-0.967,1.02-1.413,1.563c-0.202,0.246-0.378,0.506-0.568,0.759 c-0.228,0.304-0.463,0.601-0.674,0.917c-0.203,0.303-0.379,0.618-0.564,0.929c-0.171,0.286-0.351,0.566-0.509,0.861 c-0.169,0.317-0.313,0.643-0.465,0.966c-0.145,0.308-0.299,0.611-0.43,0.926c-0.13,0.314-0.235,0.635-0.349,0.953 c-0.122,0.338-0.251,0.672-0.356,1.018c-0.096,0.318-0.167,0.642-0.248,0.964c-0.089,0.353-0.188,0.701-0.259,1.061 c-0.074,0.372-0.118,0.748-0.171,1.122c-0.045,0.314-0.104,0.622-0.136,0.94c-0.068,0.693-0.105,1.388-0.105,2.084 c0,0.007-0.001,0.014-0.001,0.021c0,0.008,0.001,0.015,0.001,0.023c0.001,0.695,0.037,1.39,0.105,2.082 c0.031,0.318,0.091,0.627,0.136,0.941c0.054,0.375,0.097,0.75,0.171,1.122c0.071,0.36,0.17,0.708,0.259,1.061 c0.081,0.322,0.151,0.645,0.248,0.963c0.105,0.346,0.235,0.68,0.356,1.019c0.114,0.318,0.219,0.638,0.348,0.951 c0.131,0.316,0.285,0.619,0.43,0.927c0.152,0.323,0.296,0.649,0.465,0.965c0.158,0.295,0.338,0.576,0.51,0.862 c0.185,0.31,0.361,0.625,0.564,0.928c0.212,0.317,0.448,0.615,0.676,0.919c0.189,0.252,0.364,0.512,0.566,0.757 c0.446,0.544,0.916,1.067,1.413,1.564l64,64c8.331,8.331,21.839,8.331,30.17,0c8.331-8.331,8.331-21.839,0-30.17l-27.582-27.582 h118.984c0.057,0,0.112,0.009,0.169,0.009c70.778,0,128,57.222,128,128c0,31.068-12.408,60.299-34.121,82.031 c-8.328,8.335-8.322,21.842,0.013,30.17c8.335,8.328,21.842,8.322,30.17-0.013c29.612-29.637,46.605-69.67,46.605-112.188 C511.979,161.736,435.783,85.464,341.552,85.334z" /><path d="M358.39,418.083c0.227-0.303,0.462-0.6,0.673-0.915c0.203-0.304,0.379-0.619,0.565-0.931 c0.171-0.286,0.35-0.565,0.507-0.859c0.17-0.318,0.314-0.645,0.467-0.97c0.145-0.306,0.298-0.608,0.428-0.922 c0.13-0.315,0.236-0.637,0.35-0.957c0.121-0.337,0.25-0.669,0.354-1.013c0.097-0.32,0.168-0.646,0.249-0.969 c0.089-0.351,0.187-0.698,0.258-1.055c0.074-0.375,0.118-0.753,0.173-1.13c0.044-0.311,0.104-0.617,0.135-0.932 c0.138-1.4,0.138-2.811,0-4.211c-0.031-0.316-0.09-0.622-0.135-0.933c-0.054-0.377-0.098-0.755-0.172-1.13 c-0.071-0.358-0.169-0.705-0.258-1.056c-0.081-0.323-0.152-0.648-0.249-0.968c-0.104-0.345-0.234-0.677-0.355-1.014 c-0.115-0.32-0.22-0.642-0.35-0.957c-0.13-0.314-0.283-0.615-0.428-0.921c-0.153-0.325-0.297-0.653-0.468-0.971 c-0.157-0.293-0.336-0.572-0.506-0.857c-0.186-0.312-0.363-0.628-0.566-0.932c-0.211-0.315-0.445-0.611-0.671-0.913 c-0.191-0.255-0.368-0.516-0.571-0.764c-0.439-0.535-0.903-1.05-1.392-1.54c-0.007-0.008-0.014-0.016-0.021-0.023l-64-64 c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17l27.582,27.582H170.836c-0.057,0-0.112-0.009-0.169-0.009 c-70.778,0-128-57.222-128-128c0-31.068,12.408-60.299,34.121-82.031c8.328-8.335,8.322-21.842-0.013-30.17 c-8.335-8.328-21.842-8.322-30.17,0.013C16.993,173.43,0,213.463,0,255.981c0,94.262,76.196,170.534,170.427,170.664 c0.077,0.001,0.152,0.012,0.229,0.012h119.163l-27.582,27.582c-8.331,8.331-8.331,21.839,0,30.17 c8.331,8.331,21.839,8.331,30.17,0l64-64c0.004-0.004,0.007-0.008,0.011-0.012c0.492-0.493,0.959-1.012,1.402-1.551 C358.024,418.597,358.2,418.337,358.39,418.083z" /></g></g></g></svg>',
+"https://app.clickup.com/8450846/v/l/81wry-329",
+]
+
+// Gmail
+var app_B19 = [
+"hidden-mobile google-red",
+"Gmail",
+"",
+'<svg data-bbox="1 7 48 36" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M5.5 7C3.02 7 1 9.02 1 11.5v.426L25 29l24-17.074V11.5C49 9.02 46.98 7 44.5 7zm.852 2h37.293L25 22zM1 14.027V38.5C1 40.98 3.02 43 5.5 43h39c2.48 0 4.5-2.02 4.5-4.5V14.027l-6 4.27V41H7V18.297z" /></g></svg>',
+"https://mail.google.com/mail/u/0/#inbox",
+]
+
+// Google Drive
+var app_B20 = [
+"hidden-mobile google-green",
+"Drive",
+"",
+'<svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m323.303 31h-133.799c-5.361 0-10.313 2.856-12.993 7.5s-2.681 10.356 0 15l143.042 247.5h168.726l-151.998-262.515c-2.68-4.629-7.632-7.485-12.978-7.485z" /><path d="m154.034 75.947-152.011 262.538c-2.622 4.512-2.695 10.049-.22 14.648l64.805 120c2.578 4.775 7.544 7.793 12.979 7.866h.22c5.347 0 10.313-2.856 12.993-7.5l145.494-251.757z" /><path d="m509.88 338.31c-2.695-4.526-7.588-7.31-12.876-7.31h-286.41l-86.678 150h308.284c5.508 0 10.576-3.018 13.198-7.866l64.805-120c2.504-4.658 2.387-10.283-.323-14.824z" /></svg>',
+"https://drive.google.com",
+]
+
+
+
+// Bose
+app_B21 = [
+"grey-gradient hidden-desktop",
+"Bose",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 31C115.39 31 0 145.39 0 286v120c0 24.814 20.186 45 45 45h15V301H45c-5.284 0-10.285 1.082-15 2.763V286C30 161.928 131.928 61 256 61s226 100.928 226 225v17.763c-4.715-1.681-9.716-2.763-15-2.763h-15v150h15c24.814 0 45-20.186 45-45V286c0-140.61-115.39-255-256-255z"/><path d="M135 271h-15c-16.569 0-30 13.431-30 30v150c0 16.569 13.431 30 30 30h15c8.284 0 15-6.716 15-15V286c0-8.284-6.716-15-15-15zM392 271h-15c-8.284 0-15 6.716-15 15v180c0 8.284 6.716 15 15 15h15c16.569 0 30-13.431 30-30V301c0-16.569-13.431-30-30-30z"/></svg>',
+"shortcuts://run-shortcut?name=Bose",
+]
+
+// UE Boom
+app_B22 = [
+"indigo-gradient hidden-desktop",
+"UE Boom",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M381.354 0H130.648c-24.813 0-45 20.187-45 45v422c0 24.813 20.187 45 45 45h250.705c24.813 0 45-20.187 45-45V45c.001-24.813-20.186-45-44.999-45zM256.001 72.544c27.351 0 49.523 22.172 49.523 49.523 0 27.351-22.172 49.523-49.523 49.523s-49.523-22.172-49.523-49.523c0-27.351 22.172-49.523 49.523-49.523zm0 372.942c-65.208 0-118.258-53.05-118.258-118.257s53.05-118.258 118.258-118.258 118.258 53.05 118.258 118.258-53.05 118.257-118.258 118.257z"/><path d="M256.001 277.338c-27.51 0-49.891 22.381-49.891 49.891 0 27.509 22.381 49.89 49.891 49.89s49.891-22.381 49.891-49.89c0-27.51-22.381-49.891-49.891-49.891z"/></svg>',
+"shortcuts://run-shortcut?name=UE%20BOOM",
+]
+
+
+
+
+
+
+
+
+
+// Google maps
+var app_B23 = [
+"google-green",
+"Google Maps",
+"",
+'<svg viewBox="0 0 512 512"><g id="surface20004239"><path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 397.554688 284.25 L 397.671875 284.25 C 397.671875 284.25 352.234375 350.90625 314.023438 400.445312 C 280.996094 443.234375 271.355469 479.878906 268.582031 497.597656 C 267.496094 504.105469 262.195312 508.925781 255.804688 508.925781 C 249.417969 508.925781 244.113281 504.105469 243.03125 497.597656 C 240.257812 479.878906 230.613281 443.234375 197.589844 400.445312 C 192.527344 393.816406 187.34375 386.945312 182.160156 379.957031 L 306.910156 231.699219 L 407.316406 112.613281 C 418.40625 135.875 424.550781 161.910156 424.550781 189.511719 C 424.550781 224.46875 414.546875 256.890625 397.554688 284.25 Z M 397.554688 284.25 "/><path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 306.910156 231.699219 L 182.160156 379.957031 C 148.167969 334.394531 113.9375 284.25 113.9375 284.25 L 114.058594 284.25 C 110.441406 278.464844 107.1875 272.558594 104.417969 266.414062 L 204.699219 147.324219 C 195.175781 158.777344 189.511719 173.480469 189.511719 189.511719 C 189.511719 226.15625 219.164062 255.804688 255.804688 255.804688 C 276.417969 255.804688 294.859375 246.40625 306.910156 231.699219 Z M 306.910156 231.699219 "/><path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 308.839844 23.660156 L 205.542969 146.363281 L 126.472656 77.417969 C 157.332031 39.085938 203.855469 14.738281 255.804688 14.738281 C 274.367188 14.738281 292.207031 17.875 308.839844 23.660156 Z M 308.839844 23.660156 "/><path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 205.542969 146.363281 L 204.699219 147.324219 L 104.417969 266.414062 C 93.328125 243.148438 87.058594 217.113281 87.058594 189.511719 C 87.058594 146.84375 101.886719 107.671875 126.472656 77.417969 Z M 205.542969 146.363281 "/><path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 306.910156 231.699219 C 316.433594 220.25 322.097656 205.542969 322.097656 189.511719 C 322.097656 152.871094 292.449219 123.21875 255.804688 123.21875 C 235.195312 123.21875 216.753906 132.621094 204.699219 147.324219 L 308.839844 23.660156 C 352.113281 38.363281 387.550781 70.789062 407.316406 112.613281 Z M 306.910156 231.699219 "/></g></svg>',
+"https://www.google.com/maps",
+]
+
+// Spanishdict
+var app_B24 = [
+"spanishdict",
+"SpanishDict",
+"",
+'<svg viewBox="34.54199981689453 34.54199981689453 108.5219955444336 108.5219955444336"><defs><clipPath id="a" clipPathUnits="userSpaceOnUse"><path d="M0 128h128V0H0z"></path></clipPath><clipPath id="b" clipPathUnits="userSpaceOnUse"><path d="M0 128h128V0H0z"></path></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 170.667)"></g><path d="M41.77 143.064h31.5l-4.53-60.841H45.87zM92.04 34.542l4.099 59.33h22.653l3.452-59.33z" data-color="2"></path><g clip-path="url(#b)" transform="matrix(1.33333 0 0 -1.33333 0 170.667)"><path d="M54.466 82.272c0-6.39-5.18-11.569-11.569-11.569-6.39 0-11.57 5.179-11.57 11.569 0 6.39 5.18 11.57 11.57 11.57 6.389 0 11.569-5.18 11.569-11.57M69.03 40.768c0 6.255 5.071 11.326 11.326 11.326 6.256 0 11.327-5.071 11.327-11.326 0-6.256-5.071-11.327-11.327-11.327-6.255 0-11.326 5.071-11.326 11.327" data-color="2"></path></g></svg>',
+"https://www.spanishdict.com",
+]
+
+
+
+
+
+
+
+// Notion work
+app_B31 = [
+"grey-gradient",
+"Notion",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="12 0.18999999999999906 487.619 510.941"><path d="M96.085 91.118c15.81 12.845 21.741 11.865 51.43 9.884l279.888-16.806c5.936 0 1-5.922-.98-6.906L379.94 43.686c-8.907-6.915-20.773-14.834-43.516-12.853L65.408 50.6c-9.884.98-11.858 5.922-7.922 9.883zm16.804 65.228v294.491c0 15.827 7.909 21.748 25.71 20.769l307.597-17.799c17.81-.979 19.794-11.865 19.794-24.722V136.57c0-12.836-4.938-19.758-15.84-18.77l-321.442 18.77c-11.863.997-15.82 6.931-15.82 19.776zm303.659 15.797c1.972 8.903 0 17.798-8.92 18.799l-14.82 2.953v217.412c-12.868 6.916-24.734 10.87-34.622 10.87-15.831 0-19.796-4.945-31.654-19.76l-96.944-152.19v147.248l30.677 6.922s0 17.78-24.75 17.78l-68.23 3.958c-1.982-3.958 0-13.832 6.921-15.81l17.805-4.935V210.7l-24.721-1.981c-1.983-8.903 2.955-21.74 16.812-22.736l73.195-4.934 100.889 154.171V198.836l-25.723-2.952c-1.974-10.884 5.927-18.787 15.819-19.767zM42.653 23.919l281.9-20.76c34.618-2.969 43.525-.98 65.283 14.825l89.986 63.247c14.848 10.876 19.797 13.837 19.797 25.693v346.883c0 21.74-7.92 34.597-35.608 36.564L136.64 510.14c-20.785.991-30.677-1.971-41.562-15.815l-66.267-85.978C16.938 392.52 12 380.68 12 366.828V58.495c0-17.778 7.922-32.608 30.653-34.576z" fill-rule="evenodd" /></svg>',
+"https://www.notion.so/Avalon-SteriTech-df1f5eb732e543a8982efba04950f17f",
+]
+
+// OneDrive work
+app_B32 = [
+"onedrive",
+"OneDrive",
+"",
+'<svg data-bbox="0 9.594 50.023 30.407" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"> <g> <path d="M27.406 9.594c-1.816 0-3.379.355-4.75 1.094-1.418.707-2.996 2.019-3.75 3.093-.281.375-.543.719-.718.938-2.086-.79-4.56-.89-6.282-.281-3.539 1.14-6.11 4.582-6.219 8.374 0 .215-.011.422-.03.594-.036.012-.087.02-.126.032-2.215.582-3.992 1.968-4.906 3.843C-.012 28.2 0 28.785 0 30.406c0 1.746-.004 2.153.594 3.219.93 1.973 2.976 3.695 4.937 4.156.516.145 2.801.196 4.969.219-.969-1.543-1.5-3.438-1.5-5.594 0-1.484.156-2.37.625-3.468 1.008-2.442 3.371-4.317 6.375-5.125.059-.192.113-.407.188-.594 1.015-2.899 2.917-5.309 5.093-6.469l.032-.031h.03c2.063-1.032 3.321-1.313 5.657-1.313 3.441 0 5.559.864 7.938 3.281.886-.23 1.78-.375 2.687-.375.309 0 .61.036.906.063-.09-.297-.18-.602-.281-.906-1.668-4.785-5.922-7.875-10.844-7.875zM27 17.406c-2.016 0-3 .203-4.781 1.094-1.754.934-3.309 3-4.157 5.438-.199.496-.347 1.039-.375 1.437-.113.05-.304.145-.687.25-2.633.57-4.715 2.082-5.531 4.063-.367.863-.469 1.511-.469 2.718 0 3.828 1.89 6.547 5.219 7.469.039.012.082.023.125.031.77.11 3.86.094 15.343.094H46a.94.94 0 0 0 .438-.094l.624-.312c1.657-.828 2.688-2.574 2.938-4.938.23-3.351-1.242-5.668-4.281-6.718l-.282-.094-.03-.532c-.36-4.046-3.637-7-7.782-7-.996 0-1.98.192-2.938.532l-.312.093-.656-.625C31.625 18.105 30 17.407 27 17.407z" /></g></svg>',
+"https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Avalon%20Steritech?csf=1&web=1&e=NLNgad",
+]
+
+// ClickUp
+app_B33 = [
+"clickup",
+"ClickUp",
+"",
+'<svg data-bbox="2 0 20 24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-type="shape"><g><path d="M2 18.439l3.69-2.828c1.961 2.56 4.044 3.739 6.363 3.739 2.307 0 4.33-1.166 6.203-3.704L22 18.405C19.298 22.065 15.941 24 12.053 24 8.178 24 4.788 22.078 2 18.439zM12.04 6.15l-6.568 5.66-3.036-3.52L12.055 0l9.543 8.296-3.05 3.509z" /></g></svg>',
+"https://app.clickup.com/8450846/v/l/81wry-488",
+]
+
+// Canvas
+app_B34 = [
+    "google-red",
+    "Canvas",
+    "",
+    '<svg x="0" y="0" viewBox="162.83 71.63 318.25 318.25" xml:space="preserve"><g><g id="art"><path class="st0" d="M209 230.4c0-23.2-17.3-42.8-40.4-45.6-7.7 29.9-7.7 61.3 0 91.2 23.1-2.8 40.4-22.3 40.4-45.6zM235.7 216c-8 0-14.5 6.4-14.5 14.4s6.4 14.5 14.4 14.5 14.5-6.4 14.5-14.4v-.1c.1-7.9-6.4-14.4-14.4-14.4zM434.9 230.4c0 23.2 17.3 42.8 40.4 45.6 7.7-29.9 7.7-61.3 0-91.2-23.1 2.9-40.4 22.4-40.4 45.6zM408.1 216c-8-.1-14.5 6.3-14.6 14.3-.1 8 6.3 14.5 14.3 14.6 8 .1 14.5-6.3 14.6-14.3v-.2c0-7.9-6.4-14.3-14.3-14.4zM321.6 343.7c-23.2 0-42.8 17.3-45.6 40.4 29.9 7.7 61.3 7.7 91.2 0-2.8-23.1-22.4-40.4-45.6-40.4zM321.6 302.6c-8 0-14.5 6.4-14.5 14.4s6.4 14.5 14.4 14.5 14.5-6.4 14.5-14.4v-.1c0-7.9-6.4-14.4-14.4-14.4zM321.6 117.8c23.2 0 42.8-17.3 45.6-40.4-29.9-7.7-61.3-7.7-91.2 0 2.8 23.1 22.4 40.4 45.6 40.4zM321.6 130.1c-8 0-14.4 6.5-14.4 14.4 0 8 6.5 14.4 14.4 14.4s14.4-6.5 14.4-14.4-6.4-14.4-14.4-14.4zM401.6 310.4c-16.4 16.4-18 42.4-3.7 60.7 26.6-15.7 48.8-37.9 64.5-64.5-18.3-14.1-44.4-12.5-60.8 3.8zM372.5 281.3c-5.6 5.6-5.6 14.8 0 20.4 5.6 5.6 14.8 5.6 20.4 0 5.6-5.6 5.6-14.8 0-20.4-5.6-5.6-14.8-5.6-20.4 0zM241.9 150.7c16.4-16.4 18-42.4 3.8-60.7-26.6 15.7-48.8 37.9-64.5 64.5 18.2 14.2 44.3 12.6 60.7-3.8zM250.6 159.4c-5.6 5.6-5.6 14.8 0 20.4 5.6 5.6 14.8 5.6 20.4 0 5.6-5.6 5.6-14.8 0-20.4-5.6-5.6-14.8-5.6-20.4 0zM401.5 150.5c16.4 16.4 42.5 18 60.7 3.8-15.7-26.6-37.9-48.8-64.5-64.5-14.2 18.3-12.6 44.3 3.8 60.7zM392.8 179.7c5.6-5.6 5.7-14.8 0-20.4-5.6-5.6-14.8-5.7-20.4 0-5.6 5.6-5.7 14.8 0 20.4 5.6 5.6 14.8 5.6 20.4 0zM241.8 310.3c-16.4-16.4-42.4-18-60.7-3.8 15.7 26.6 37.8 48.8 64.4 64.5 14.2-18.3 12.7-44.3-3.7-60.7zM250.5 281.1c-5.6 5.6-5.6 14.8 0 20.4s14.8 5.6 20.4 0c5.6-5.6 5.6-14.8 0-20.4-5.6-5.6-14.7-5.6-20.4 0z"></path></g></g></svg>',
+    "https://ivylearn.ivytech.edu/courses/1061922",
+]
+
+// Ivytech VHL
+app_B35 = [
+    "indigo-gradient",
+    "VHL",
+    "",
+    '<svg viewBox="0 -40 448 448" xmlns="http://www.w3.org/2000/svg"><path d="m408 319.929688v-319.929688l-12.207031 1.023438c-48.957031 4.046874-96.976563 15.75-142.304688 34.6875l-21.488281 8.921874v318.664063l15.648438-6.503906c46.90625-19.515625 96.570312-31.589844 147.199218-35.792969zm0 0" /><path d="m448 47.296875h-24v280c.015625 4.171875-3.183594 7.65625-7.34375 8l-20.488281 1.679687c-5.914063.488282-11.8125 1.09375-17.6875 1.816407-1.90625.230469-3.800781.535156-5.695313.800781-3.960937.527344-7.914062 1.0625-11.855468 1.6875-2.296876.367188-4.578126.796875-6.867188 1.199219-3.527344.617187-7.0625 1.230469-10.582031 1.925781-2.402344.480469-4.800781 1.019531-7.25 1.539062-3.351563.710938-6.703125 1.4375-10.03125 2.230469-2.496094.59375-4.984375 1.222657-7.464844 1.855469-3.238281.800781-6.460937 1.664062-9.679687 2.5625-2.503907.6875-5.007813 1.414062-7.503907 2.148438-3.199219.945312-6.351562 1.90625-9.511719 2.914062-2.472656.800781-4.949218 1.601562-7.414062 2.398438-3.164062 1.066406-6.3125 2.167968-9.449219 3.304687-2.398437.871094-4.800781 1.746094-7.253906 2.664063-1.097656.417968-2.1875.863281-3.28125 1.289062h183.359375zm0 0" /><path d="m52.207031 1.023438-12.207031-1.023438v319.953125l14.199219 1.207031c50.597656 4.230469 100.21875 16.378906 147.046875 36l14.753906 6.136719v-318.664063l-21.464844-8.914062c-45.332031-18.941406-93.359375-30.648438-142.328125-34.695312zm0 0" /><path d="m0 47.296875v320h183.488281c-.984375-.386719-1.96875-.800781-2.960937-1.167969-2.289063-.871094-4.597656-1.703125-6.902344-2.542968-3.25-1.179688-6.496094-2.328126-9.769531-3.425782-2.367188-.800781-4.742188-1.578125-7.121094-2.335937-3.246094-1.066407-6.503906-2.070313-9.765625-3.007813-2.402344-.703125-4.800781-1.410156-7.199219-2.082031-3.289062-.910156-6.585937-1.773437-9.890625-2.621094-2.398437-.617187-4.800781-1.234375-7.253906-1.808593-3.351562-.800782-6.722656-1.535157-10.089844-2.257813-2.398437-.519531-4.800781-1.046875-7.199218-1.527344-3.488282-.6875-6.992188-1.304687-10.496094-1.917969-2.296875-.402343-4.59375-.800781-6.894532-1.210937-3.867187-.613281-7.746093-1.132813-11.625-1.65625-1.960937-.261719-3.90625-.574219-5.863281-.796875-5.867187-.710938-11.734375-1.316406-17.601562-1.816406l-21.535157-1.824219c-4.152343-.355469-7.335937-3.835937-7.320312-8v-280zm0 0" /></svg>',
+    "https://m3a.vhlcentral.com/courses/824301/sections/1074846",
+]
+
+
+
+// Pocket
+var app_B41 = [
+"pocket hidden-mobile hidden-tablet",
+"Pocket",
+"",
+'<svg viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M480,32H32C14.368,32,0,46.368,0,64v176c0,132.352,107.648,240,240,240h32c132.352,0,240-107.648,240-240V64 C512,46.368,497.664,32,480,32z M406.624,214.624l-128,128C272.384,348.864,264.192,352,256,352s-16.384-3.136-22.624-9.376 l-128-128c-12.512-12.512-12.512-32.736,0-45.248c12.512-12.512,32.736-12.512,45.248,0L256,274.752l105.376-105.376 c12.512-12.512,32.736-12.512,45.248,0C419.136,181.888,419.136,202.112,406.624,214.624z" /></g></g></svg>',
+"https://getpocket.com/my-list/articles/unread",
+]
+
+// Pocket mobile
+var app_B42 = [
+"pocket hidden-desktop",
+"Pocket",
+"",
+'<svg viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M480,32H32C14.368,32,0,46.368,0,64v176c0,132.352,107.648,240,240,240h32c132.352,0,240-107.648,240-240V64 C512,46.368,497.664,32,480,32z M406.624,214.624l-128,128C272.384,348.864,264.192,352,256,352s-16.384-3.136-22.624-9.376 l-128-128c-12.512-12.512-12.512-32.736,0-45.248c12.512-12.512,32.736-12.512,45.248,0L256,274.752l105.376-105.376 c12.512-12.512,32.736-12.512,45.248,0C419.136,181.888,419.136,202.112,406.624,214.624z" /></g></g></svg>',
+"pocket://",
+]
+
+// Feedly
+var app_B43 = [
+"feedly",
+"Feedly",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><g id="surface62764904"><path d="M 200.363281 479.097656 L 311.324219 479.097656 C 329.113281 479.097656 346.117188 472.035156 358.71875 459.476562 L 492.65625 325.539062 C 518.773438 299.378906 518.773438 257 492.65625 230.839844 L 303.214844 41.398438 C 277.054688 15.28125 234.675781 15.28125 208.515625 41.398438 L 19.074219 230.839844 C -7.042969 257 -7.042969 299.378906 19.074219 325.539062 L 153.011719 459.476562 C 165.570312 472.035156 182.617188 479.097656 200.363281 479.097656 Z M 171.761719 351.917969 L 161.167969 341.320312 C 156.761719 336.960938 156.761719 329.898438 161.167969 325.539062 L 240.082031 246.621094 C 244.441406 242.261719 251.503906 242.261719 255.867188 246.621094 L 279.539062 270.296875 C 283.902344 274.65625 283.902344 281.71875 279.539062 286.082031 L 213.660156 351.917969 C 211.566406 354.007812 208.734375 355.1875 205.769531 355.1875 L 179.652344 355.1875 C 176.6875 355.1875 173.855469 354.007812 171.761719 351.917969 Z M 287.433594 404.453125 L 276.835938 415.09375 C 274.746094 417.1875 271.910156 418.363281 268.945312 418.363281 L 242.785156 418.363281 C 239.820312 418.363281 236.988281 417.1875 234.894531 415.09375 L 224.300781 404.453125 C 219.9375 400.09375 219.9375 393.03125 224.300781 388.671875 L 247.972656 364.996094 C 252.335938 360.636719 259.398438 360.636719 263.757812 364.996094 L 287.433594 388.671875 C 291.792969 393.03125 291.792969 400.09375 287.433594 404.453125 Z M 98.035156 262.40625 L 240.082031 120.355469 C 244.441406 115.996094 251.503906 115.996094 255.867188 120.355469 L 279.539062 144.03125 C 283.902344 148.390625 283.902344 155.453125 279.539062 159.816406 L 150.570312 288.785156 C 148.480469 290.875 145.601562 292.054688 142.679688 292.054688 L 116.519531 292.054688 C 113.554688 292.054688 110.722656 290.875 108.628906 288.785156 L 98.035156 278.1875 C 93.671875 273.828125 93.671875 266.765625 98.035156 262.40625 Z M 98.035156 262.40625 " /></g></svg>',
+"https://feedly.com/i/collection/content/user/a21f4f90-2ac3-4d5b-884f-8b5484ecd33c/category/a1a3affa-665d-4bb2-ad55-47a96356db6c",
+]
+
+// YouTube (Feedly)
+var app_B44 = [
+"youtube",
+"YouTube",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><g id="surface67940806"><path d="M 486.054688 134.308594 C 481.445312 108.859375 459.476562 90.328125 433.984375 84.542969 C 395.835938 76.453125 325.234375 70.667969 248.84375 70.667969 C 172.503906 70.667969 100.769531 76.453125 62.574219 84.542969 C 37.128906 90.328125 15.117188 107.683594 10.503906 134.308594 C 5.851562 163.234375 1.238281 203.734375 1.238281 255.804688 C 1.238281 307.875 5.851562 348.375 11.636719 377.304688 C 16.292969 402.75 38.257812 421.28125 63.707031 427.070312 C 104.207031 435.160156 173.632812 440.945312 250.019531 440.945312 C 326.410156 440.945312 395.835938 435.160156 436.335938 427.070312 C 461.78125 421.28125 483.75 403.925781 488.40625 377.304688 C 493.015625 348.375 498.800781 306.699219 499.976562 255.804688 C 497.625 203.734375 491.839844 163.234375 486.054688 134.308594 Z M 186.378906 336.804688 L 186.378906 174.808594 L 327.539062 255.804688 Z M 186.378906 336.804688 " /></g></svg>',
+"https://feedly.com/i/collection/content/user/a21f4f90-2ac3-4d5b-884f-8b5484ecd33c/category/7e61f497-937a-4423-a312-d71006ee098f",
+]
+
+
+
+// Snapchat
+app_B51 = [
+"snapchat hidden-tablet hidden-desktop",
+"Snapchat",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M46.773 35.078c-5.804-.957-8.457-6.969-8.543-7.164a1.904 1.904 0 00-.054-.133c-.176-.351-.352-.847-.203-1.199.254-.602 1.46-.984 2.183-1.215.254-.082.496-.156.684-.23 1.754-.696 2.629-1.602 2.61-2.703-.016-.887-.696-1.7-1.696-2.051a2.95 2.95 0 00-1.149-.223c-.273 0-.687.04-1.085.223-.668.312-1.254.48-1.672.5a1.823 1.823 0 01-.235-.024l.043-.687c.196-3.11.442-6.985-.61-9.34-3.1-6.941-9.671-7.48-11.612-7.48l-.883.007c-1.938 0-8.496.54-11.59 7.477-1.05 2.355-.809 6.226-.61 9.34l.008.117.036.566c-.434.078-1.282-.066-2.16-.476-1.196-.559-3.348.18-3.645 1.742-.133.691.027 2.004 2.574 3.008.191.078.43.152.688.234.718.23 1.925.61 2.18 1.215.148.352-.028.848-.235 1.273-.11.254-2.746 6.266-8.563 7.223a1.47 1.47 0 00-1.23 1.535c.012.2.062.399.144.594.528 1.238 2.446 2.09 6.024 2.672.062.21.133.523.172.695.074.356.156.715.265 1.09.106.356.47 1.18 1.602 1.18.344 0 .719-.074 1.121-.153.594-.117 1.336-.261 2.29-.261.53 0 1.077.047 1.628.136 1.016.168 1.934.82 3 1.57 1.664 1.18 3.55 2.512 6.477 2.512.078 0 .156-.003.23-.007.105.004.215.007.324.007 2.926 0 4.813-1.336 6.48-2.511 1.016-.723 1.977-1.399 2.997-1.57.55-.09 1.097-.137 1.629-.137.918 0 1.644.117 2.293.246.46.09.828.133 1.168.133.757 0 1.34-.434 1.55-1.16.11-.368.188-.723.266-1.083.031-.132.106-.468.172-.691 3.578-.582 5.496-1.434 6.02-2.66.085-.195.132-.399.148-.61a1.472 1.472 0 00-1.23-1.527z"/></svg>',
+"snapchat://",
+]
+
+// Linkedin
+app_B52 = [
+"linkedin",
+"LinkedIn",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><g id="surface63214634"><path d="M 57.96875 128.78125 L 58.625 128.78125 C 94.042969 128.78125 116.089844 103.394531 116.089844 71.664062 C 115.429688 39.230469 94.042969 14.542969 59.300781 14.542969 C 24.558594 14.542969 1.851562 39.230469 1.851562 71.664062 C 1.851562 103.394531 23.886719 128.78125 57.96875 128.78125 Z M 1.851562 166.863281 L 116.089844 166.863281 L 116.089844 496.890625 L 1.851562 496.890625 Z M 509.582031 287.449219 C 509.582031 220.847656 455.597656 166.863281 388.996094 166.863281 C 350.242188 166.863281 315.855469 185.21875 293.796875 213.625 L 293.796875 166.863281 L 179.554688 166.863281 L 179.554688 496.890625 L 293.796875 496.890625 L 293.796875 306.488281 C 293.796875 278.449219 316.53125 255.714844 344.570312 255.714844 C 372.609375 255.714844 395.34375 278.449219 395.34375 306.488281 L 395.34375 496.890625 L 509.582031 496.890625 C 509.582031 496.890625 509.582031 305.917969 509.582031 287.449219 Z M 509.582031 287.449219 " /></g></svg>',
+"https://www.linkedin.com",
+]
+
+
+// Whatsapp web
+app_B53 = [
+"whatsapp hidden-mobile hidden-tablet",
+"WhatsApp",
+"",
+'<svg viewBox="0 0 512 512"><g id="surface20353838"><path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 255.878906 1.519531 C 115.628906 1.519531 1.519531 115.628906 1.519531 255.878906 C 1.519531 299.675781 12.832031 342.738281 34.289062 380.738281 L 1.929688 496.195312 C 0.867188 499.992188 1.894531 504.058594 4.636719 506.878906 C 6.75 509.058594 9.625 510.242188 12.578125 510.242188 C 13.464844 510.242188 14.359375 510.132812 15.230469 509.921875 L 135.734375 480.074219 C 172.527344 499.824219 213.964844 510.242188 255.878906 510.242188 C 396.132812 510.242188 510.242188 396.132812 510.242188 255.878906 C 510.242188 115.628906 396.132812 1.519531 255.878906 1.519531 Z M 383.835938 345.636719 C 378.394531 360.699219 352.292969 374.445312 339.753906 376.292969 C 328.496094 377.941406 314.25 378.648438 298.613281 373.738281 C 289.136719 370.753906 276.96875 366.792969 261.386719 360.148438 C 195.882812 332.210938 153.109375 267.082031 149.832031 262.78125 C 146.570312 258.480469 123.171875 227.824219 123.171875 196.09375 C 123.171875 164.367188 140.035156 148.761719 146.03125 142.300781 C 152.023438 135.84375 159.089844 134.230469 163.449219 134.230469 C 167.804688 134.230469 172.152344 134.285156 175.964844 134.460938 C 179.980469 134.660156 185.367188 132.945312 190.664062 145.53125 C 196.105469 158.449219 209.167969 190.179688 210.78125 193.417969 C 212.417969 196.648438 213.5 200.417969 211.335938 204.722656 C 209.167969 209.023438 208.082031 211.710938 204.808594 215.480469 C 201.535156 219.253906 197.953125 223.886719 195.011719 226.785156 C 191.738281 230.003906 188.34375 233.484375 192.144531 239.945312 C 195.949219 246.402344 209.054688 267.515625 228.476562 284.613281 C 253.414062 306.574219 274.460938 313.386719 280.984375 316.617188 C 287.511719 319.847656 291.324219 319.304688 295.128906 315.003906 C 298.933594 310.691406 311.453125 296.167969 315.800781 289.722656 C 320.144531 283.273438 324.503906 284.335938 330.496094 286.492188 C 336.492188 288.636719 368.597656 304.230469 375.121094 307.460938 C 381.644531 310.691406 386.003906 312.304688 387.640625 314.992188 C 389.277344 317.667969 389.277344 330.585938 383.835938 345.636719 Z M 383.835938 345.636719 "/></g></svg>',
+"https://web.whatsapp.com",
+]
+
+// Messenger
+app_B54 = [
+"messenger",
+"Messenger",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><g id="surface20355045"><path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 255.910156 6.257812 C 118.066406 6.257812 6.257812 110.476562 6.257812 239.628906 C 6.257812 308.019531 37.71875 372.042969 93.09375 416.5625 L 93.09375 512.089844 L 186.460938 463.246094 C 209.226562 469.734375 232.039062 471.894531 255.910156 471.894531 C 393.753906 471.894531 505.5625 367.71875 505.5625 238.527344 C 505.5625 110.476562 393.753906 6.257812 255.910156 6.257812 Z M 280.882812 316.710938 L 217.921875 249.378906 L 100.683594 315.609375 L 230.9375 177.765625 L 295.003906 241.792969 L 408.972656 177.765625 Z M 280.882812 316.710938 "/></g></svg>',
+"https://www.messenger.com/t",
+]
+
+// Reddit
+app_B55 = [
+"reddit hidden-mobile",
+"Reddit",
+"",
+'<svg data-bbox="1.959 3 46.082 42" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M29 3c-2.105 0-4.566 1.652-4.938 9.031.313-.008.622-.031.938-.031.352 0 .715.02 1.063.031C26.3 7.598 27.355 5 29 5c.703 0 1.102.383 1.844 1.188.867.94 2 2.164 4.218 2.625A6.215 6.215 0 0 1 35 8c0-.422.043-.82.125-1.219-1.375-.375-2.102-1.168-2.813-1.937C31.52 3.984 30.61 3 29 3zm12 1c-2.207 0-4 1.797-4 4 0 2.203 1.793 4 4 4s4-1.797 4-4c0-2.203-1.793-4-4-4zM25 14C12.867 14 3 20.18 3 29s9.867 16 22 16 22-7.18 22-16-9.867-15-22-15zm-17.5.938c-1.46 0-2.848.597-3.906 1.656-1.723 1.722-2.078 4.199-1.094 6.25 1.512-2.926 4.113-5.422 7.469-7.282-.762-.386-1.606-.624-2.469-.624zm35 0c-.863 0-1.707.238-2.469.624 3.356 1.86 5.957 4.356 7.469 7.282.984-2.051.629-4.528-1.094-6.25-1.058-1.059-2.445-1.657-3.906-1.657zM17 23a3 3 0 1 1-.002 6.002A3 3 0 0 1 17 23zm16 0a3 3 0 1 1-.002 6.002A3 3 0 0 1 33 23zM16.062 34c.25.043.497.184.657.406.105.149 2.449 3.282 8.281 3.282 5.91 0 8.258-3.22 8.281-3.25.317-.45.953-.57 1.407-.25.449.316.535.921.218 1.374-.117.168-2.968 4.126-9.906 4.126-6.941 0-9.79-3.958-9.906-4.126-.317-.453-.235-1.058.219-1.374.226-.16.5-.231.75-.188z" /></g></svg>',
+"https://www.reddit.com",
+]
+
+// Twitter
+app_B56 = [
+"twitter hidden-mobile",
+"Twitter",
+"",
+'<svg data-bbox="-0.059 5.617 50.122 40.729" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M50.063 10.438a20.57 20.57 0 0 1-5.91 1.62 10.309 10.309 0 0 0 4.523-5.687 20.648 20.648 0 0 1-6.531 2.492 10.258 10.258 0 0 0-7.504-3.246c-5.68 0-10.286 4.602-10.286 10.281 0 .805.094 1.59.27 2.344-8.547-.43-16.121-4.523-21.195-10.746a10.243 10.243 0 0 0-1.39 5.172c0 3.566 1.812 6.715 4.573 8.562a10.274 10.274 0 0 1-4.66-1.289v.13c0 4.984 3.547 9.136 8.246 10.085a10.29 10.29 0 0 1-4.644.172c1.312 4.082 5.11 7.063 9.605 7.145A20.613 20.613 0 0 1 2.39 41.87c-.831 0-1.648-.047-2.449-.144a29.053 29.053 0 0 0 15.762 4.62c18.914 0 29.258-15.667 29.258-29.253 0-.446-.012-.895-.027-1.332a20.904 20.904 0 0 0 5.129-5.325z" /></g></svg>',
+"https://twitter.com",
+]
+
+// Groupme
+app_B57 = [
+"teal-gradient hidden-mobile hidden-tablet",
+"GroupMe",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><g id="surface67775530"><path d="M 139.261719 51.199219 C 90.871094 51.199219 51.199219 90.871094 51.199219 139.261719 L 51.199219 372.738281 C 51.199219 421.128906 90.871094 460.800781 139.261719 460.800781 L 212.378906 460.800781 L 248.21875 502.621094 C 250.164062 504.894531 253.007812 506.203125 256 506.203125 C 258.992188 506.203125 261.835938 504.894531 263.78125 502.621094 L 299.621094 460.800781 L 372.738281 460.800781 C 421.128906 460.800781 460.800781 421.128906 460.800781 372.738281 L 460.800781 139.261719 C 460.800781 90.871094 421.128906 51.199219 372.738281 51.199219 Z M 215.039062 112.640625 C 220.671875 112.640625 225.28125 117.246094 225.28125 122.878906 L 225.28125 153.601562 L 286.71875 153.601562 L 286.71875 122.878906 C 286.71875 117.246094 291.328125 112.640625 296.960938 112.640625 C 302.59375 112.640625 307.199219 117.246094 307.199219 122.878906 L 307.199219 153.601562 L 337.921875 153.601562 C 343.550781 153.601562 348.160156 158.207031 348.160156 163.839844 C 348.160156 169.472656 343.550781 174.078125 337.921875 174.078125 L 307.199219 174.078125 L 307.199219 235.519531 L 337.921875 235.519531 C 343.550781 235.519531 348.160156 240.128906 348.160156 245.761719 C 348.160156 251.390625 343.550781 256 337.921875 256 L 307.199219 256 L 307.199219 286.71875 C 307.199219 292.351562 302.59375 296.960938 296.960938 296.960938 C 291.328125 296.960938 286.71875 292.351562 286.71875 286.71875 L 286.71875 256 L 225.28125 256 L 225.28125 286.71875 C 225.28125 292.351562 220.671875 296.960938 215.039062 296.960938 C 209.40625 296.960938 204.800781 292.351562 204.800781 286.71875 L 204.800781 256 L 174.078125 256 C 168.449219 256 163.839844 251.390625 163.839844 245.761719 C 163.839844 240.128906 168.449219 235.519531 174.078125 235.519531 L 204.800781 235.519531 L 204.800781 174.078125 L 174.078125 174.078125 C 168.449219 174.078125 163.839844 169.472656 163.839844 163.839844 C 163.839844 158.207031 168.449219 153.601562 174.078125 153.601562 L 204.800781 153.601562 L 204.800781 122.878906 C 204.800781 117.246094 209.40625 112.640625 215.039062 112.640625 Z M 225.28125 174.078125 L 225.28125 235.519531 L 286.71875 235.519531 L 286.71875 174.078125 Z M 131.859375 297.058594 C 135.820312 296.542969 139.847656 298.394531 141.921875 302.078125 C 166.1875 343.757812 208.792969 368.640625 256 368.640625 C 303.105469 368.640625 345.707031 343.757812 370.078125 302.078125 C 372.945312 297.164062 379.1875 295.53125 384 298.398438 C 388.914062 301.164062 390.546875 307.507812 387.679688 312.320312 C 359.726562 360.449219 310.476562 389.121094 256 389.121094 C 201.421875 389.121094 152.171875 360.449219 124.320312 312.320312 C 121.453125 307.40625 123.085938 301.164062 128 298.398438 C 129.230469 297.683594 130.539062 297.234375 131.859375 297.058594 Z M 131.859375 297.058594 " /></g></svg>',
+"https://web.groupme.com/chats",
+]
+
+// Groupme
+app_B58 = [
+"teal-gradient hidden-desktop",
+"GroupMe",
+"",
+'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><g id="surface67775530"><path d="M 139.261719 51.199219 C 90.871094 51.199219 51.199219 90.871094 51.199219 139.261719 L 51.199219 372.738281 C 51.199219 421.128906 90.871094 460.800781 139.261719 460.800781 L 212.378906 460.800781 L 248.21875 502.621094 C 250.164062 504.894531 253.007812 506.203125 256 506.203125 C 258.992188 506.203125 261.835938 504.894531 263.78125 502.621094 L 299.621094 460.800781 L 372.738281 460.800781 C 421.128906 460.800781 460.800781 421.128906 460.800781 372.738281 L 460.800781 139.261719 C 460.800781 90.871094 421.128906 51.199219 372.738281 51.199219 Z M 215.039062 112.640625 C 220.671875 112.640625 225.28125 117.246094 225.28125 122.878906 L 225.28125 153.601562 L 286.71875 153.601562 L 286.71875 122.878906 C 286.71875 117.246094 291.328125 112.640625 296.960938 112.640625 C 302.59375 112.640625 307.199219 117.246094 307.199219 122.878906 L 307.199219 153.601562 L 337.921875 153.601562 C 343.550781 153.601562 348.160156 158.207031 348.160156 163.839844 C 348.160156 169.472656 343.550781 174.078125 337.921875 174.078125 L 307.199219 174.078125 L 307.199219 235.519531 L 337.921875 235.519531 C 343.550781 235.519531 348.160156 240.128906 348.160156 245.761719 C 348.160156 251.390625 343.550781 256 337.921875 256 L 307.199219 256 L 307.199219 286.71875 C 307.199219 292.351562 302.59375 296.960938 296.960938 296.960938 C 291.328125 296.960938 286.71875 292.351562 286.71875 286.71875 L 286.71875 256 L 225.28125 256 L 225.28125 286.71875 C 225.28125 292.351562 220.671875 296.960938 215.039062 296.960938 C 209.40625 296.960938 204.800781 292.351562 204.800781 286.71875 L 204.800781 256 L 174.078125 256 C 168.449219 256 163.839844 251.390625 163.839844 245.761719 C 163.839844 240.128906 168.449219 235.519531 174.078125 235.519531 L 204.800781 235.519531 L 204.800781 174.078125 L 174.078125 174.078125 C 168.449219 174.078125 163.839844 169.472656 163.839844 163.839844 C 163.839844 158.207031 168.449219 153.601562 174.078125 153.601562 L 204.800781 153.601562 L 204.800781 122.878906 C 204.800781 117.246094 209.40625 112.640625 215.039062 112.640625 Z M 225.28125 174.078125 L 225.28125 235.519531 L 286.71875 235.519531 L 286.71875 174.078125 Z M 131.859375 297.058594 C 135.820312 296.542969 139.847656 298.394531 141.921875 302.078125 C 166.1875 343.757812 208.792969 368.640625 256 368.640625 C 303.105469 368.640625 345.707031 343.757812 370.078125 302.078125 C 372.945312 297.164062 379.1875 295.53125 384 298.398438 C 388.914062 301.164062 390.546875 307.507812 387.679688 312.320312 C 359.726562 360.449219 310.476562 389.121094 256 389.121094 C 201.421875 389.121094 152.171875 360.449219 124.320312 312.320312 C 121.453125 307.40625 123.085938 301.164062 128 298.398438 C 129.230469 297.683594 130.539062 297.234375 131.859375 297.058594 Z M 131.859375 297.058594 " /></g></svg>',
+"groupme://",
+]
+
+
+
+    
+
+
+
+
+k = 1;
+appContainer[k] = app_B01[0];
+     appName[k] = app_B01[1];
+ appGradient[k] = app_B01[2];
+     appIcon[k] = app_B01[3];
+     appLink[k] = app_B01[4];
+k = 2;
+appContainer[k] = app_B02[0];
+     appName[k] = app_B02[1];
+ appGradient[k] = app_B02[2];
+     appIcon[k] = app_B02[3];
+     appLink[k] = app_B02[4];
+k = 3;
+appContainer[k] = app_B03[0];
+     appName[k] = app_B03[1];
+ appGradient[k] = app_B03[2];
+     appIcon[k] = app_B03[3];
+     appLink[k] = app_B03[4];
+k = 4;
+appContainer[k] = app_B04[0];
+     appName[k] = app_B04[1];
+ appGradient[k] = app_B04[2];
+     appIcon[k] = app_B04[3];
+     appLink[k] = app_B04[4];
+k = 5;
+appContainer[k] = app_B05[0];
+     appName[k] = app_B05[1];
+ appGradient[k] = app_B05[2];
+     appIcon[k] = app_B05[3];
+     appLink[k] = app_B05[4];
+k = 6;
+appContainer[k] = app_B06[0];
+     appName[k] = app_B06[1];
+ appGradient[k] = app_B06[2];
+     appIcon[k] = app_B06[3];
+     appLink[k] = app_B06[4];
+k = 7;
+appContainer[k] = app_B07[0];
+     appName[k] = app_B07[1];
+ appGradient[k] = app_B07[2];
+     appIcon[k] = app_B07[3];
+     appLink[k] = app_B07[4];
+k = 8;
+appContainer[k] = app_B08[0];
+     appName[k] = app_B08[1];
+ appGradient[k] = app_B08[2];
+     appIcon[k] = app_B08[3];
+     appLink[k] = app_B08[4];
+k = 9;
+appContainer[k] = app_B09[0];
+     appName[k] = app_B09[1];
+ appGradient[k] = app_B09[2];
+     appIcon[k] = app_B09[3];
+     appLink[k] = app_B09[4];
+k = 10;
+appContainer[k] = app_B10[0];
+     appName[k] = app_B10[1];
+ appGradient[k] = app_B10[2];
+     appIcon[k] = app_B10[3];
+     appLink[k] = app_B10[4];
+k = 11;
+appContainer[k] = app_B11[0];
+     appName[k] = app_B11[1];
+ appGradient[k] = app_B11[2];
+     appIcon[k] = app_B11[3];
+     appLink[k] = app_B11[4];
+k = 12;
+appContainer[k] = app_B12[0];
+     appName[k] = app_B12[1];
+ appGradient[k] = app_B12[2];
+     appIcon[k] = app_B12[3];
+     appLink[k] = app_B12[4];
+k = 13;
+appContainer[k] = app_B13[0];
+     appName[k] = app_B13[1];
+ appGradient[k] = app_B13[2];
+     appIcon[k] = app_B13[3];
+     appLink[k] = app_B13[4];
+k = 14;
+appContainer[k] = app_B14[0];
+     appName[k] = app_B14[1];
+ appGradient[k] = app_B14[2];
+     appIcon[k] = app_B14[3];
+     appLink[k] = app_B14[4];
+k = 15;
+appContainer[k] = app_B15[0];
+     appName[k] = app_B15[1];
+ appGradient[k] = app_B15[2];
+     appIcon[k] = app_B15[3];
+     appLink[k] = app_B15[4];
+k = 16;
+appContainer[k] = app_B16[0];
+     appName[k] = app_B16[1];
+ appGradient[k] = app_B16[2];
+     appIcon[k] = app_B16[3];
+     appLink[k] = app_B16[4];
+k = 17;
+appContainer[k] = app_B17[0];
+     appName[k] = app_B17[1];
+ appGradient[k] = app_B17[2];
+     appIcon[k] = app_B17[3];
+     appLink[k] = app_B17[4];
+k = 18;
+appContainer[k] = app_B18[0];
+     appName[k] = app_B18[1];
+ appGradient[k] = app_B18[2];
+     appIcon[k] = app_B18[3];
+     appLink[k] = app_B18[4];
+k = 19;
+appContainer[k] = app_B19[0];
+     appName[k] = app_B19[1];
+ appGradient[k] = app_B19[2];
+     appIcon[k] = app_B19[3];
+     appLink[k] = app_B19[4];
+k = 20;
+appContainer[k] = app_B20[0];
+     appName[k] = app_B20[1];
+ appGradient[k] = app_B20[2];
+     appIcon[k] = app_B20[3];
+     appLink[k] = app_B20[4];
+k = 21;
+appContainer[k] = app_B21[0];
+     appName[k] = app_B21[1];
+ appGradient[k] = app_B21[2];
+     appIcon[k] = app_B21[3];
+     appLink[k] = app_B21[4];
+k = 22;
+appContainer[k] = app_B22[0];
+     appName[k] = app_B22[1];
+ appGradient[k] = app_B22[2];
+     appIcon[k] = app_B22[3];
+     appLink[k] = app_B22[4];
+k = 23;
+appContainer[k] = app_B23[0];
+     appName[k] = app_B23[1];
+ appGradient[k] = app_B23[2];
+     appIcon[k] = app_B23[3];
+     appLink[k] = app_B23[4];
+k = 24;
+appContainer[k] = app_B24[0];
+     appName[k] = app_B24[1];
+ appGradient[k] = app_B24[2];
+     appIcon[k] = app_B24[3];
+     appLink[k] = app_B24[4];
+k = 25;
+appContainer[k] = app_B25[0];
+     appName[k] = app_B25[1];
+ appGradient[k] = app_B25[2];
+     appIcon[k] = app_B25[3];
+     appLink[k] = app_B25[4];
+k = 26;
+appContainer[k] = app_B26[0];
+     appName[k] = app_B26[1];
+ appGradient[k] = app_B26[2];
+     appIcon[k] = app_B26[3];
+     appLink[k] = app_B26[4];
+k = 27;
+appContainer[k] = app_B27[0];
+     appName[k] = app_B27[1];
+ appGradient[k] = app_B27[2];
+     appIcon[k] = app_B27[3];
+     appLink[k] = app_B27[4];
+k = 28;
+appContainer[k] = app_B28[0];
+     appName[k] = app_B28[1];
+ appGradient[k] = app_B28[2];
+     appIcon[k] = app_B28[3];
+     appLink[k] = app_B28[4];
+k = 29;
+appContainer[k] = app_B29[0];
+     appName[k] = app_B29[1];
+ appGradient[k] = app_B29[2];
+     appIcon[k] = app_B29[3];
+     appLink[k] = app_B29[4];
+k = 30;
+appContainer[k] = app_B30[0];
+     appName[k] = app_B30[1];
+ appGradient[k] = app_B30[2];
+     appIcon[k] = app_B30[3];
+     appLink[k] = app_B30[4];
+k = 31;
+appContainer[k] = app_B31[0];
+     appName[k] = app_B31[1];
+ appGradient[k] = app_B31[2];
+     appIcon[k] = app_B31[3];
+     appLink[k] = app_B31[4];
+k = 32;
+appContainer[k] = app_B32[0];
+     appName[k] = app_B32[1];
+ appGradient[k] = app_B32[2];
+     appIcon[k] = app_B32[3];
+     appLink[k] = app_B32[4];
+k = 33;
+appContainer[k] = app_B33[0];
+     appName[k] = app_B33[1];
+ appGradient[k] = app_B33[2];
+     appIcon[k] = app_B33[3];
+     appLink[k] = app_B33[4];
+k = 34;
+appContainer[k] = app_B34[0];
+     appName[k] = app_B34[1];
+ appGradient[k] = app_B34[2];
+     appIcon[k] = app_B34[3];
+     appLink[k] = app_B34[4];
+k = 35;
+appContainer[k] = app_B35[0];
+     appName[k] = app_B35[1];
+ appGradient[k] = app_B35[2];
+     appIcon[k] = app_B35[3];
+     appLink[k] = app_B35[4];
+k = 36;
+appContainer[k] = app_B36[0];
+     appName[k] = app_B36[1];
+ appGradient[k] = app_B36[2];
+     appIcon[k] = app_B36[3];
+     appLink[k] = app_B36[4];
+k = 37;
+appContainer[k] = app_B37[0];
+     appName[k] = app_B37[1];
+ appGradient[k] = app_B37[2];
+     appIcon[k] = app_B37[3];
+     appLink[k] = app_B37[4];
+k = 38;
+appContainer[k] = app_B38[0];
+     appName[k] = app_B38[1];
+ appGradient[k] = app_B38[2];
+     appIcon[k] = app_B38[3];
+     appLink[k] = app_B38[4];
+k = 39;
+appContainer[k] = app_B39[0];
+     appName[k] = app_B39[1];
+ appGradient[k] = app_B39[2];
+     appIcon[k] = app_B39[3];
+     appLink[k] = app_B39[4];
+k = 40;
+appContainer[k] = app_B40[0];
+     appName[k] = app_B40[1];
+ appGradient[k] = app_B40[2];
+     appIcon[k] = app_B40[3];
+     appLink[k] = app_B40[4];
+k = 41;
+appContainer[k] = app_B41[0];
+     appName[k] = app_B41[1];
+ appGradient[k] = app_B41[2];
+     appIcon[k] = app_B41[3];
+     appLink[k] = app_B41[4];
+k = 42;
+appContainer[k] = app_B42[0];
+     appName[k] = app_B42[1];
+ appGradient[k] = app_B42[2];
+     appIcon[k] = app_B42[3];
+     appLink[k] = app_B42[4];
+k = 43;
+appContainer[k] = app_B43[0];
+     appName[k] = app_B43[1];
+ appGradient[k] = app_B43[2];
+     appIcon[k] = app_B43[3];
+     appLink[k] = app_B43[4];
+k = 44;
+appContainer[k] = app_B44[0];
+     appName[k] = app_B44[1];
+ appGradient[k] = app_B44[2];
+     appIcon[k] = app_B44[3];
+     appLink[k] = app_B44[4];
+k = 45;
+appContainer[k] = app_B45[0];
+     appName[k] = app_B45[1];
+ appGradient[k] = app_B45[2];
+     appIcon[k] = app_B45[3];
+     appLink[k] = app_B45[4];
+k = 46;
+appContainer[k] = app_B46[0];
+     appName[k] = app_B46[1];
+ appGradient[k] = app_B46[2];
+     appIcon[k] = app_B46[3];
+     appLink[k] = app_B46[4];
+k = 47;
+appContainer[k] = app_B47[0];
+     appName[k] = app_B47[1];
+ appGradient[k] = app_B47[2];
+     appIcon[k] = app_B47[3];
+     appLink[k] = app_B47[4];
+k = 48;
+appContainer[k] = app_B48[0];
+     appName[k] = app_B48[1];
+ appGradient[k] = app_B48[2];
+     appIcon[k] = app_B48[3];
+     appLink[k] = app_B48[4];
+k = 49;
+appContainer[k] = app_B49[0];
+     appName[k] = app_B49[1];
+ appGradient[k] = app_B49[2];
+     appIcon[k] = app_B49[3];
+     appLink[k] = app_B49[4];
+k = 50;
+appContainer[k] = app_B50[0];
+     appName[k] = app_B50[1];
+ appGradient[k] = app_B50[2];
+     appIcon[k] = app_B50[3];
+     appLink[k] = app_B50[4];
+k = 51;
+appContainer[k] = app_B51[0];
+     appName[k] = app_B51[1];
+ appGradient[k] = app_B51[2];
+     appIcon[k] = app_B51[3];
+     appLink[k] = app_B51[4];
+k = 52;
+appContainer[k] = app_B52[0];
+     appName[k] = app_B52[1];
+ appGradient[k] = app_B52[2];
+     appIcon[k] = app_B52[3];
+     appLink[k] = app_B52[4];
+k = 53;
+appContainer[k] = app_B53[0];
+     appName[k] = app_B53[1];
+ appGradient[k] = app_B53[2];
+     appIcon[k] = app_B53[3];
+     appLink[k] = app_B53[4];
+k = 54;
+appContainer[k] = app_B54[0];
+     appName[k] = app_B54[1];
+ appGradient[k] = app_B54[2];
+     appIcon[k] = app_B54[3];
+     appLink[k] = app_B54[4];
+k = 55;
+appContainer[k] = app_B55[0];
+     appName[k] = app_B55[1];
+ appGradient[k] = app_B55[2];
+     appIcon[k] = app_B55[3];
+     appLink[k] = app_B55[4];
+k = 56;
+appContainer[k] = app_B56[0];
+     appName[k] = app_B56[1];
+ appGradient[k] = app_B56[2];
+     appIcon[k] = app_B56[3];
+     appLink[k] = app_B56[4];
+k = 57;
+appContainer[k] = app_B57[0];
+     appName[k] = app_B57[1];
+ appGradient[k] = app_B57[2];
+     appIcon[k] = app_B57[3];
+     appLink[k] = app_B57[4];
+k = 58;
+appContainer[k] = app_B58[0];
+     appName[k] = app_B58[1];
+ appGradient[k] = app_B58[2];
+     appIcon[k] = app_B58[3];
+     appLink[k] = app_B58[4];
+k = 59;
+appContainer[k] = app_B59[0];
+     appName[k] = app_B59[1];
+ appGradient[k] = app_B59[2];
+     appIcon[k] = app_B59[3];
+     appLink[k] = app_B59[4];
+k = 60;
+appContainer[k] = app_B60[0];
+     appName[k] = app_B60[1];
+ appGradient[k] = app_B60[2];
+     appIcon[k] = app_B60[3];
+     appLink[k] = app_B60[4];
 
 
 
@@ -813,68 +1605,68 @@ appContainer[k] = app_H60[0];
 }
 
 function bookmarkAppPopulate(){
-    var app_B01 = hide;
-    var app_B02 = hide;
-    var app_B03 = hide;
-    var app_B04 = hide;
-    var app_B05 = hide;
-    var app_B06 = hide;
-    var app_B07 = hide;
-    var app_B08 = hide;
-    var app_B09 = hide;
-    var app_B10 = hide;
+    var app_C01 = hide;
+    var app_C02 = hide;
+    var app_C03 = hide;
+    var app_C04 = hide;
+    var app_C05 = hide;
+    var app_C06 = hide;
+    var app_C07 = hide;
+    var app_C08 = hide;
+    var app_C09 = hide;
+    var app_C10 = hide;
     
-    var app_B11 = hide;
-    var app_B12 = hide;
-    var app_B13 = hide;
-    var app_B14 = hide;
-    var app_B15 = hide;
-    var app_B16 = hide;
-    var app_B16 = hide;
-    var app_B17 = hide;
-    var app_B18 = hide;
-    var app_B19 = hide;
-    var app_B20 = hide;
+    var app_C11 = hide;
+    var app_C12 = hide;
+    var app_C13 = hide;
+    var app_C14 = hide;
+    var app_C15 = hide;
+    var app_C16 = hide;
+    var app_C16 = hide;
+    var app_C17 = hide;
+    var app_C18 = hide;
+    var app_C19 = hide;
+    var app_C20 = hide;
     
-    var app_B21 = hide;
-    var app_B22 = hide;
-    var app_B23 = hide;
-    var app_B24 = hide;
-    var app_B25 = hide;
-    var app_B26 = hide;
-    var app_B26 = hide;
-    var app_B27 = hide;
-    var app_B28 = hide;
-    var app_B29 = hide;
-    var app_B30 = hide;
+    var app_C21 = hide;
+    var app_C22 = hide;
+    var app_C23 = hide;
+    var app_C24 = hide;
+    var app_C25 = hide;
+    var app_C26 = hide;
+    var app_C26 = hide;
+    var app_C27 = hide;
+    var app_C28 = hide;
+    var app_C29 = hide;
+    var app_C30 = hide;
     
-    var app_B31 = hide;
-    var app_B32 = hide;
-    var app_B33 = hide;
-    var app_B34 = hide;
-    var app_B35 = hide;
-    var app_B36 = hide;
-    var app_B36 = hide;
-    var app_B37 = hide;
-    var app_B38 = hide;
-    var app_B39 = hide;
-    var app_B40 = hide;
+    var app_C31 = hide;
+    var app_C32 = hide;
+    var app_C33 = hide;
+    var app_C34 = hide;
+    var app_C35 = hide;
+    var app_C36 = hide;
+    var app_C36 = hide;
+    var app_C37 = hide;
+    var app_C38 = hide;
+    var app_C39 = hide;
+    var app_C40 = hide;
     
-    var app_B41 = hide;
-    var app_B42 = hide;
-    var app_B43 = hide;
-    var app_B44 = hide;
-    var app_B45 = hide;
-    var app_B46 = hide;
-    var app_B46 = hide;
-    var app_B47 = hide;
-    var app_B48 = hide;
-    var app_B49 = hide;
-    var app_B50 = hide;
+    var app_C41 = hide;
+    var app_C42 = hide;
+    var app_C43 = hide;
+    var app_C44 = hide;
+    var app_C45 = hide;
+    var app_C46 = hide;
+    var app_C46 = hide;
+    var app_C47 = hide;
+    var app_C48 = hide;
+    var app_C49 = hide;
+    var app_C50 = hide;
     
     
     // Password generator
-    app_B01 = [
+    app_C01 = [
       "yellow-gradient",
       "Password",
       "",
@@ -883,7 +1675,7 @@ function bookmarkAppPopulate(){
     ]
     
     // SmartDNS
-    app_B02 = [
+    app_C02 = [
       "teal-gradient",
       "SmartDNS",
       "",
@@ -892,7 +1684,7 @@ function bookmarkAppPopulate(){
     ]
     
     // Home
-    app_B03 = [
+    app_C03 = [
       "home-gradient",
       "WIX",
       "",
@@ -901,7 +1693,7 @@ function bookmarkAppPopulate(){
     ]
 
     // COVID Tracker
-    app_B04 = [
+    app_C04 = [
     "orange-gradient",
     "COVID Tracker",
     "",
@@ -910,7 +1702,7 @@ function bookmarkAppPopulate(){
     ]
 
      // Purdue calendar
-    app_B05 = [
+    app_C05 = [
     "school-gradient",
     "Purdue Calendar",
     "",
@@ -924,7 +1716,7 @@ function bookmarkAppPopulate(){
 
 
     // PayMe
-    app_B11 = [
+    app_C11 = [
     "hsbc",
     "PayMe",
     "",
@@ -934,7 +1726,7 @@ function bookmarkAppPopulate(){
     ]
 
     // ZA Bank
-    app_B12 = [
+    app_C12 = [
     "zabank",
     "ZA Bank",
     "",
@@ -943,7 +1735,7 @@ function bookmarkAppPopulate(){
     ]
 
     // HSBC
-    app_B13 = [
+    app_C13 = [
     "hsbc",
     "HSBC",
     "",
@@ -954,7 +1746,7 @@ function bookmarkAppPopulate(){
 
 
     // Citi US
-    app_B15 = [
+    app_C15 = [
     "citi-blue",
     "Citi US",
     "",
@@ -963,7 +1755,7 @@ function bookmarkAppPopulate(){
     ]
 
     // Citi HK
-    app_B16 = [
+    app_C16 = [
     "citi-red",
     "Citi HK",
     "",
@@ -975,7 +1767,7 @@ function bookmarkAppPopulate(){
 
 
     // Venmo
-    app_B19 = [
+    app_C19 = [
     "venmo",
     "Venmo",
     "",
@@ -985,7 +1777,7 @@ function bookmarkAppPopulate(){
 
 
     // Walmart
-    app_B21 = [
+    app_C21 = [
     "walmart",
     "Walmart",
     "",
@@ -994,7 +1786,7 @@ function bookmarkAppPopulate(){
     ]
 
     // Amazon
-    app_B22 = [
+    app_C22 = [
     "amazon",
     "Amazon",
     "",
@@ -1003,7 +1795,7 @@ function bookmarkAppPopulate(){
     ]
 
     // Asos
-    app_B23 = [
+    app_C23 = [
     "grey-gradient",
     "ASOS",
     "",
@@ -1015,7 +1807,7 @@ function bookmarkAppPopulate(){
 
     
     // Icons8
-    app_B31 = [
+    app_C31 = [
       "icons8",
       "Icons8",
       "",
@@ -1024,7 +1816,7 @@ function bookmarkAppPopulate(){
     ]
     
     // Flaticon
-    app_B32 = [
+    app_C32 = [
       "flaticon",
       "FlatIcon",
       "",
@@ -1033,7 +1825,7 @@ function bookmarkAppPopulate(){
     ]
     
     // Colour picker
-    app_B33 = [
+    app_C33 = [
       "red-gradient",
       "Colour Picker",
       "",
@@ -1042,7 +1834,7 @@ function bookmarkAppPopulate(){
     ]
     
     // Average colour of image
-    app_B34 = [
+    app_C34 = [
       "teal-gradient",
       "Average Colour",
       "",
@@ -1051,7 +1843,7 @@ function bookmarkAppPopulate(){
     ]
     
     // SVGOMG
-    app_B35 = [
+    app_C35 = [
       "indigo-gradient",
       "SVGOMG",
       "",
@@ -1060,7 +1852,7 @@ function bookmarkAppPopulate(){
     ]
     
     // Notion apartment
-    app_B41 = [
+    app_C41 = [
       "grey-gradient",
       "Notion",
       "",
@@ -1069,7 +1861,7 @@ function bookmarkAppPopulate(){
     ]
     
     // OneDrive apartment
-    app_B42 = [
+    app_C42 = [
       "onedrive",
       "OneDrive",
       "",
@@ -1078,7 +1870,7 @@ function bookmarkAppPopulate(){
     ]
     
     // Granite
-    app_B43 = [
+    app_C43 = [
       "yellow-gradient",
       "Granite",
       "",
@@ -1087,7 +1879,7 @@ function bookmarkAppPopulate(){
     ]
     
     // Duke energy
-    app_B44 = [
+    app_C44 = [
       "duke-energy",
       "Duke Energy",
       "",
@@ -1096,7 +1888,7 @@ function bookmarkAppPopulate(){
     ]
     
     // Metronet
-    app_B45 = [
+    app_C45 = [
       "teal-gradient",
       "MetroNet",
       "",
@@ -1111,313 +1903,313 @@ function bookmarkAppPopulate(){
 
     
 
-    k = 101;
-    appContainer[k] = app_B01[0];
-         appName[k] = app_B01[1];
-     appGradient[k] = app_B01[2];
-         appIcon[k] = app_B01[3];
-         appLink[k] = app_B01[4];
-    k = 102;
-    appContainer[k] = app_B02[0];
-         appName[k] = app_B02[1];
-     appGradient[k] = app_B02[2];
-         appIcon[k] = app_B02[3];
-         appLink[k] = app_B02[4];
-    k = 103;
-    appContainer[k] = app_B03[0];
-         appName[k] = app_B03[1];
-     appGradient[k] = app_B03[2];
-         appIcon[k] = app_B03[3];
-         appLink[k] = app_B03[4];
-    k = 104;
-    appContainer[k] = app_B04[0];
-         appName[k] = app_B04[1];
-     appGradient[k] = app_B04[2];
-         appIcon[k] = app_B04[3];
-         appLink[k] = app_B04[4];
-    k = 105;
-    appContainer[k] = app_B05[0];
-         appName[k] = app_B05[1];
-     appGradient[k] = app_B05[2];
-         appIcon[k] = app_B05[3];
-         appLink[k] = app_B05[4];
-    k = 106;
-    appContainer[k] = app_B06[0];
-         appName[k] = app_B06[1];
-     appGradient[k] = app_B06[2];
-         appIcon[k] = app_B06[3];
-         appLink[k] = app_B06[4];
-    k = 107;
-    appContainer[k] = app_B07[0];
-         appName[k] = app_B07[1];
-     appGradient[k] = app_B07[2];
-         appIcon[k] = app_B07[3];
-         appLink[k] = app_B07[4];
-    k = 108
-    appContainer[k] = app_B08[0];
-         appName[k] = app_B08[1];
-     appGradient[k] = app_B08[2];
-         appIcon[k] = app_B08[3];
-         appLink[k] = app_B08[4];
-    k = 109
-    appContainer[k] = app_B09[0];
-         appName[k] = app_B09[1];
-     appGradient[k] = app_B09[2];
-         appIcon[k] = app_B09[3];
-         appLink[k] = app_B09[4];
-    k = 110
-    appContainer[k] = app_B10[0];
-         appName[k] = app_B10[1];
-     appGradient[k] = app_B10[2];
-         appIcon[k] = app_B10[3];
-         appLink[k] = app_B10[4];
-    k = 111;
-    appContainer[k] = app_B11[0];
-         appName[k] = app_B11[1];
-     appGradient[k] = app_B11[2];
-         appIcon[k] = app_B11[3];
-         appLink[k] = app_B11[4];
-    k = 112;
-    appContainer[k] = app_B12[0];
-         appName[k] = app_B12[1];
-     appGradient[k] = app_B12[2];
-         appIcon[k] = app_B12[3];
-         appLink[k] = app_B12[4];
-    k = 113;
-    appContainer[k] = app_B13[0];
-         appName[k] = app_B13[1];
-     appGradient[k] = app_B13[2];
-         appIcon[k] = app_B13[3];
-         appLink[k] = app_B13[4];
-    k = 114;
-    appContainer[k] = app_B14[0];
-         appName[k] = app_B14[1];
-     appGradient[k] = app_B14[2];
-         appIcon[k] = app_B14[3];
-         appLink[k] = app_B14[4];
-    k = 115;
-    appContainer[k] = app_B15[0];
-         appName[k] = app_B15[1];
-     appGradient[k] = app_B15[2];
-         appIcon[k] = app_B15[3];
-         appLink[k] = app_B15[4];
-    k = 116;
-    appContainer[k] = app_B16[0];
-         appName[k] = app_B16[1];
-     appGradient[k] = app_B16[2];
-         appIcon[k] = app_B16[3];
-         appLink[k] = app_B16[4];
-    k = 117;
-    appContainer[k] = app_B17[0];
-         appName[k] = app_B17[1];
-     appGradient[k] = app_B17[2];
-         appIcon[k] = app_B17[3];
-         appLink[k] = app_B17[4];
-    k = 118
-    appContainer[k] = app_B18[0];
-         appName[k] = app_B18[1];
-     appGradient[k] = app_B18[2];
-         appIcon[k] = app_B18[3];
-         appLink[k] = app_B18[4];
-    k = 119
-    appContainer[k] = app_B19[0];
-         appName[k] = app_B19[1];
-     appGradient[k] = app_B19[2];
-         appIcon[k] = app_B19[3];
-         appLink[k] = app_B19[4];
-    k = 120
-    appContainer[k] = app_B20[0];
-         appName[k] = app_B20[1];
-     appGradient[k] = app_B20[2];
-         appIcon[k] = app_B20[3];
-         appLink[k] = app_B20[4];
-    k = 121;
-    appContainer[k] = app_B21[0];
-         appName[k] = app_B21[1];
-     appGradient[k] = app_B21[2];
-         appIcon[k] = app_B21[3];
-         appLink[k] = app_B21[4];
-    k = 122;
-    appContainer[k] = app_B22[0];
-         appName[k] = app_B22[1];
-     appGradient[k] = app_B22[2];
-         appIcon[k] = app_B22[3];
-         appLink[k] = app_B22[4];
-    k = 123
-    appContainer[k] = app_B23[0];
-         appName[k] = app_B23[1];
-     appGradient[k] = app_B23[2];
-         appIcon[k] = app_B23[3];
-         appLink[k] = app_B23[4];
-    k = 124;
-    appContainer[k] = app_B24[0];
-         appName[k] = app_B24[1];
-     appGradient[k] = app_B24[2];
-         appIcon[k] = app_B24[3];
-         appLink[k] = app_B24[4];
-    k = 125;
-    appContainer[k] = app_B25[0];
-         appName[k] = app_B25[1];
-     appGradient[k] = app_B25[2];
-         appIcon[k] = app_B25[3];
-         appLink[k] = app_B25[4];
-    k = 126;
-    appContainer[k] = app_B26[0];
-         appName[k] = app_B26[1];
-     appGradient[k] = app_B26[2];
-         appIcon[k] = app_B26[3];
-         appLink[k] = app_B26[4];
-    k = 127;
-    appContainer[k] = app_B27[0];
-         appName[k] = app_B27[1];
-     appGradient[k] = app_B27[2];
-         appIcon[k] = app_B27[3];
-         appLink[k] = app_B27[4];
-    k = 128;
-    appContainer[k] = app_B28[0];
-         appName[k] = app_B28[1];
-     appGradient[k] = app_B28[2];
-         appIcon[k] = app_B28[3];
-         appLink[k] = app_B28[4];
-    k = 129;
-    appContainer[k] = app_B29[0];
-         appName[k] = app_B29[1];
-     appGradient[k] = app_B29[2];
-         appIcon[k] = app_B29[3];
-         appLink[k] = app_B29[4];
-    k = 130;
-    appContainer[k] = app_B30[0];
-         appName[k] = app_B30[1];
-     appGradient[k] = app_B30[2];
-         appIcon[k] = app_B30[3];
-         appLink[k] = app_B30[4];
-    k = 131;
-    appContainer[k] = app_B31[0];
-         appName[k] = app_B31[1];
-     appGradient[k] = app_B31[2];
-         appIcon[k] = app_B31[3];
-         appLink[k] = app_B31[4];
-    k = 132;
-    appContainer[k] = app_B32[0];
-         appName[k] = app_B32[1];
-     appGradient[k] = app_B32[2];
-         appIcon[k] = app_B32[3];
-         appLink[k] = app_B32[4];
-    k = 133;
-    appContainer[k] = app_B33[0];
-         appName[k] = app_B33[1];
-     appGradient[k] = app_B33[2];
-         appIcon[k] = app_B33[3];
-         appLink[k] = app_B33[4];
-    k = 134;
-    appContainer[k] = app_B34[0];
-         appName[k] = app_B34[1];
-     appGradient[k] = app_B34[2];
-         appIcon[k] = app_B34[3];
-         appLink[k] = app_B34[4];
-    k = 135;
-    appContainer[k] = app_B35[0];
-         appName[k] = app_B35[1];
-     appGradient[k] = app_B35[2];
-         appIcon[k] = app_B35[3];
-         appLink[k] = app_B35[4];
-    k = 136;
-    appContainer[k] = app_B36[0];
-         appName[k] = app_B36[1];
-     appGradient[k] = app_B36[2];
-         appIcon[k] = app_B36[3];
-         appLink[k] = app_B36[4];
-    k = 137;
-    appContainer[k] = app_B37[0];
-         appName[k] = app_B37[1];
-     appGradient[k] = app_B37[2];
-         appIcon[k] = app_B37[3];
-         appLink[k] = app_B37[4];
-    k = 138;
-    appContainer[k] = app_B38[0];
-         appName[k] = app_B38[1];
-     appGradient[k] = app_B38[2];
-         appIcon[k] = app_B38[3];
-         appLink[k] = app_B38[4];
-    k = 139;
-    appContainer[k] = app_B39[0];
-         appName[k] = app_B39[1];
-     appGradient[k] = app_B39[2];
-         appIcon[k] = app_B39[3];
-         appLink[k] = app_B39[4];
-    k = 140;
-    appContainer[k] = app_B40[0];
-         appName[k] = app_B40[1];
-     appGradient[k] = app_B40[2];
-         appIcon[k] = app_B40[3];
-         appLink[k] = app_B40[4];
-    k = 141;
-    appContainer[k] = app_B41[0];
-         appName[k] = app_B41[1];
-     appGradient[k] = app_B41[2];
-         appIcon[k] = app_B41[3];
-         appLink[k] = app_B41[4];
-    k = 142;
-    appContainer[k] = app_B42[0];
-         appName[k] = app_B42[1];
-     appGradient[k] = app_B42[2];
-         appIcon[k] = app_B42[3];
-         appLink[k] = app_B42[4];
-    k = 143;
-    appContainer[k] = app_B43[0];
-         appName[k] = app_B43[1];
-     appGradient[k] = app_B43[2];
-         appIcon[k] = app_B43[3];
-         appLink[k] = app_B43[4];
-    k = 144;
-    appContainer[k] = app_B44[0];
-         appName[k] = app_B44[1];
-     appGradient[k] = app_B44[2];
-         appIcon[k] = app_B44[3];
-         appLink[k] = app_B44[4];
-    k = 145;
-    appContainer[k] = app_B45[0];
-         appName[k] = app_B45[1];
-     appGradient[k] = app_B45[2];
-         appIcon[k] = app_B45[3];
-         appLink[k] = app_B45[4];
-    k = 146;
-    appContainer[k] = app_B46[0];
-         appName[k] = app_B46[1];
-     appGradient[k] = app_B46[2];
-         appIcon[k] = app_B46[3];
-         appLink[k] = app_B46[4];
-    k = 147;
-    appContainer[k] = app_B47[0];
-         appName[k] = app_B47[1];
-     appGradient[k] = app_B47[2];
-         appIcon[k] = app_B47[3];
-         appLink[k] = app_B47[4];
-    k = 148;
-    appContainer[k] = app_B48[0];
-         appName[k] = app_B48[1];
-     appGradient[k] = app_B48[2];
-         appIcon[k] = app_B48[3];
-         appLink[k] = app_B48[4];
-    k = 149;
-    appContainer[k] = app_B49[0];
-         appName[k] = app_B49[1];
-     appGradient[k] = app_B49[2];
-         appIcon[k] = app_B49[3];
-         appLink[k] = app_B49[4];
-    k = 150;
-    appContainer[k] = app_B50[0];
-         appName[k] = app_B50[1];
-     appGradient[k] = app_B50[2];
-         appIcon[k] = app_B50[3];
-         appLink[k] = app_B50[4];
+    k = 201;
+    appContainer[k] = app_C01[0];
+         appName[k] = app_C01[1];
+     appGradient[k] = app_C01[2];
+         appIcon[k] = app_C01[3];
+         appLink[k] = app_C01[4];
+    k = 202;
+    appContainer[k] = app_C02[0];
+         appName[k] = app_C02[1];
+     appGradient[k] = app_C02[2];
+         appIcon[k] = app_C02[3];
+         appLink[k] = app_C02[4];
+    k = 203;
+    appContainer[k] = app_C03[0];
+         appName[k] = app_C03[1];
+     appGradient[k] = app_C03[2];
+         appIcon[k] = app_C03[3];
+         appLink[k] = app_C03[4];
+    k = 204;
+    appContainer[k] = app_C04[0];
+         appName[k] = app_C04[1];
+     appGradient[k] = app_C04[2];
+         appIcon[k] = app_C04[3];
+         appLink[k] = app_C04[4];
+    k = 205;
+    appContainer[k] = app_C05[0];
+         appName[k] = app_C05[1];
+     appGradient[k] = app_C05[2];
+         appIcon[k] = app_C05[3];
+         appLink[k] = app_C05[4];
+    k = 206;
+    appContainer[k] = app_C06[0];
+         appName[k] = app_C06[1];
+     appGradient[k] = app_C06[2];
+         appIcon[k] = app_C06[3];
+         appLink[k] = app_C06[4];
+    k = 207;
+    appContainer[k] = app_C07[0];
+         appName[k] = app_C07[1];
+     appGradient[k] = app_C07[2];
+         appIcon[k] = app_C07[3];
+         appLink[k] = app_C07[4];
+    k = 208
+    appContainer[k] = app_C08[0];
+         appName[k] = app_C08[1];
+     appGradient[k] = app_C08[2];
+         appIcon[k] = app_C08[3];
+         appLink[k] = app_C08[4];
+    k = 209
+    appContainer[k] = app_C09[0];
+         appName[k] = app_C09[1];
+     appGradient[k] = app_C09[2];
+         appIcon[k] = app_C09[3];
+         appLink[k] = app_C09[4];
+    k = 210
+    appContainer[k] = app_C10[0];
+         appName[k] = app_C10[1];
+     appGradient[k] = app_C10[2];
+         appIcon[k] = app_C10[3];
+         appLink[k] = app_C10[4];
+    k = 211;
+    appContainer[k] = app_C11[0];
+         appName[k] = app_C11[1];
+     appGradient[k] = app_C11[2];
+         appIcon[k] = app_C11[3];
+         appLink[k] = app_C11[4];
+    k = 212;
+    appContainer[k] = app_C12[0];
+         appName[k] = app_C12[1];
+     appGradient[k] = app_C12[2];
+         appIcon[k] = app_C12[3];
+         appLink[k] = app_C12[4];
+    k = 213;
+    appContainer[k] = app_C13[0];
+         appName[k] = app_C13[1];
+     appGradient[k] = app_C13[2];
+         appIcon[k] = app_C13[3];
+         appLink[k] = app_C13[4];
+    k = 214;
+    appContainer[k] = app_C14[0];
+         appName[k] = app_C14[1];
+     appGradient[k] = app_C14[2];
+         appIcon[k] = app_C14[3];
+         appLink[k] = app_C14[4];
+    k = 215;
+    appContainer[k] = app_C15[0];
+         appName[k] = app_C15[1];
+     appGradient[k] = app_C15[2];
+         appIcon[k] = app_C15[3];
+         appLink[k] = app_C15[4];
+    k = 216;
+    appContainer[k] = app_C16[0];
+         appName[k] = app_C16[1];
+     appGradient[k] = app_C16[2];
+         appIcon[k] = app_C16[3];
+         appLink[k] = app_C16[4];
+    k = 217;
+    appContainer[k] = app_C17[0];
+         appName[k] = app_C17[1];
+     appGradient[k] = app_C17[2];
+         appIcon[k] = app_C17[3];
+         appLink[k] = app_C17[4];
+    k = 218
+    appContainer[k] = app_C18[0];
+         appName[k] = app_C18[1];
+     appGradient[k] = app_C18[2];
+         appIcon[k] = app_C18[3];
+         appLink[k] = app_C18[4];
+    k = 219
+    appContainer[k] = app_C19[0];
+         appName[k] = app_C19[1];
+     appGradient[k] = app_C19[2];
+         appIcon[k] = app_C19[3];
+         appLink[k] = app_C19[4];
+    k = 220
+    appContainer[k] = app_C20[0];
+         appName[k] = app_C20[1];
+     appGradient[k] = app_C20[2];
+         appIcon[k] = app_C20[3];
+         appLink[k] = app_C20[4];
+    k = 221;
+    appContainer[k] = app_C21[0];
+         appName[k] = app_C21[1];
+     appGradient[k] = app_C21[2];
+         appIcon[k] = app_C21[3];
+         appLink[k] = app_C21[4];
+    k = 222;
+    appContainer[k] = app_C22[0];
+         appName[k] = app_C22[1];
+     appGradient[k] = app_C22[2];
+         appIcon[k] = app_C22[3];
+         appLink[k] = app_C22[4];
+    k = 223
+    appContainer[k] = app_C23[0];
+         appName[k] = app_C23[1];
+     appGradient[k] = app_C23[2];
+         appIcon[k] = app_C23[3];
+         appLink[k] = app_C23[4];
+    k = 224;
+    appContainer[k] = app_C24[0];
+         appName[k] = app_C24[1];
+     appGradient[k] = app_C24[2];
+         appIcon[k] = app_C24[3];
+         appLink[k] = app_C24[4];
+    k = 225;
+    appContainer[k] = app_C25[0];
+         appName[k] = app_C25[1];
+     appGradient[k] = app_C25[2];
+         appIcon[k] = app_C25[3];
+         appLink[k] = app_C25[4];
+    k = 226;
+    appContainer[k] = app_C26[0];
+         appName[k] = app_C26[1];
+     appGradient[k] = app_C26[2];
+         appIcon[k] = app_C26[3];
+         appLink[k] = app_C26[4];
+    k = 227;
+    appContainer[k] = app_C27[0];
+         appName[k] = app_C27[1];
+     appGradient[k] = app_C27[2];
+         appIcon[k] = app_C27[3];
+         appLink[k] = app_C27[4];
+    k = 228;
+    appContainer[k] = app_C28[0];
+         appName[k] = app_C28[1];
+     appGradient[k] = app_C28[2];
+         appIcon[k] = app_C28[3];
+         appLink[k] = app_C28[4];
+    k = 229;
+    appContainer[k] = app_C29[0];
+         appName[k] = app_C29[1];
+     appGradient[k] = app_C29[2];
+         appIcon[k] = app_C29[3];
+         appLink[k] = app_C29[4];
+    k = 230;
+    appContainer[k] = app_C30[0];
+         appName[k] = app_C30[1];
+     appGradient[k] = app_C30[2];
+         appIcon[k] = app_C30[3];
+         appLink[k] = app_C30[4];
+    k = 231;
+    appContainer[k] = app_C31[0];
+         appName[k] = app_C31[1];
+     appGradient[k] = app_C31[2];
+         appIcon[k] = app_C31[3];
+         appLink[k] = app_C31[4];
+    k = 232;
+    appContainer[k] = app_C32[0];
+         appName[k] = app_C32[1];
+     appGradient[k] = app_C32[2];
+         appIcon[k] = app_C32[3];
+         appLink[k] = app_C32[4];
+    k = 233;
+    appContainer[k] = app_C33[0];
+         appName[k] = app_C33[1];
+     appGradient[k] = app_C33[2];
+         appIcon[k] = app_C33[3];
+         appLink[k] = app_C33[4];
+    k = 234;
+    appContainer[k] = app_C34[0];
+         appName[k] = app_C34[1];
+     appGradient[k] = app_C34[2];
+         appIcon[k] = app_C34[3];
+         appLink[k] = app_C34[4];
+    k = 235;
+    appContainer[k] = app_C35[0];
+         appName[k] = app_C35[1];
+     appGradient[k] = app_C35[2];
+         appIcon[k] = app_C35[3];
+         appLink[k] = app_C35[4];
+    k = 236;
+    appContainer[k] = app_C36[0];
+         appName[k] = app_C36[1];
+     appGradient[k] = app_C36[2];
+         appIcon[k] = app_C36[3];
+         appLink[k] = app_C36[4];
+    k = 237;
+    appContainer[k] = app_C37[0];
+         appName[k] = app_C37[1];
+     appGradient[k] = app_C37[2];
+         appIcon[k] = app_C37[3];
+         appLink[k] = app_C37[4];
+    k = 238;
+    appContainer[k] = app_C38[0];
+         appName[k] = app_C38[1];
+     appGradient[k] = app_C38[2];
+         appIcon[k] = app_C38[3];
+         appLink[k] = app_C38[4];
+    k = 239;
+    appContainer[k] = app_C39[0];
+         appName[k] = app_C39[1];
+     appGradient[k] = app_C39[2];
+         appIcon[k] = app_C39[3];
+         appLink[k] = app_C39[4];
+    k = 240;
+    appContainer[k] = app_C40[0];
+         appName[k] = app_C40[1];
+     appGradient[k] = app_C40[2];
+         appIcon[k] = app_C40[3];
+         appLink[k] = app_C40[4];
+    k = 241;
+    appContainer[k] = app_C41[0];
+         appName[k] = app_C41[1];
+     appGradient[k] = app_C41[2];
+         appIcon[k] = app_C41[3];
+         appLink[k] = app_C41[4];
+    k = 242;
+    appContainer[k] = app_C42[0];
+         appName[k] = app_C42[1];
+     appGradient[k] = app_C42[2];
+         appIcon[k] = app_C42[3];
+         appLink[k] = app_C42[4];
+    k = 243;
+    appContainer[k] = app_C43[0];
+         appName[k] = app_C43[1];
+     appGradient[k] = app_C43[2];
+         appIcon[k] = app_C43[3];
+         appLink[k] = app_C43[4];
+    k = 244;
+    appContainer[k] = app_C44[0];
+         appName[k] = app_C44[1];
+     appGradient[k] = app_C44[2];
+         appIcon[k] = app_C44[3];
+         appLink[k] = app_C44[4];
+    k = 245;
+    appContainer[k] = app_C45[0];
+         appName[k] = app_C45[1];
+     appGradient[k] = app_C45[2];
+         appIcon[k] = app_C45[3];
+         appLink[k] = app_C45[4];
+    k = 246;
+    appContainer[k] = app_C46[0];
+         appName[k] = app_C46[1];
+     appGradient[k] = app_C46[2];
+         appIcon[k] = app_C46[3];
+         appLink[k] = app_C46[4];
+    k = 247;
+    appContainer[k] = app_C47[0];
+         appName[k] = app_C47[1];
+     appGradient[k] = app_C47[2];
+         appIcon[k] = app_C47[3];
+         appLink[k] = app_C47[4];
+    k = 248;
+    appContainer[k] = app_C48[0];
+         appName[k] = app_C48[1];
+     appGradient[k] = app_C48[2];
+         appIcon[k] = app_C48[3];
+         appLink[k] = app_C48[4];
+    k = 249;
+    appContainer[k] = app_C49[0];
+         appName[k] = app_C49[1];
+     appGradient[k] = app_C49[2];
+         appIcon[k] = app_C49[3];
+         appLink[k] = app_C49[4];
+    k = 250;
+    appContainer[k] = app_C50[0];
+         appName[k] = app_C50[1];
+     appGradient[k] = app_C50[2];
+         appIcon[k] = app_C50[3];
+         appLink[k] = app_C50[4];
 
 
 
     var containerClass = "app-container ";
     var gradientClass = "app-icon-container ";
 
-    for (i = 101; i < 151; i++){
+    for (i = 201; i < 251; i++){
         var itemid = [
         "appContainer_".concat(i),
         "appName_".concat(i),
