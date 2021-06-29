@@ -348,6 +348,7 @@ body{
 
 .content-container{
     width: 100%;
+    position: relative;
 
     /* margin-left: 20px; */
     /* margin-right: 20px; */
@@ -360,6 +361,31 @@ body{
     /* -webkit-backdrop-filter: blur(25px); */
     background: var(--dark-layer-1);
     overflow: hidden;
+}
+.content-icon{
+    height: 10px;
+    width: 10px;
+    fill: #fff;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+.content-text-box{
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    margin: 0;
+    width: 100%;
+
+    /* position: -webkit-sticky; */
+}
+.content-text{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white-100);
+    cursor: default;
 }
 
 
@@ -401,22 +427,8 @@ body{
 
 
 
-.app-tray-text-box{
-    box-sizing: border-box;
-    padding-left: 15px;
-    padding-top: 12px;
-    padding-bottom: 10px;
-    margin: 0;
-    width: 100%;
 
-    /* position: -webkit-sticky; */
-}
-.app-tray-text{
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--white-100);
-    cursor: default;
-}
+
 
 
 
@@ -1001,7 +1013,7 @@ body{
     .title-text{
         color: var(--dark-layer-1);
     }
-    .app-tray-text{
+    .content-text{
         color: var(--dark-layer-1);
     }
     .wallpaper{
@@ -1094,7 +1106,7 @@ body{
         /* width: calc(100vw - 30px); */
         height: calc(100vh - 115px);
         padding: 15px;
-        padding-bottom: 120px;
+        padding-bottom: 115px;
 
         /* margin-left: 15px; */
     }

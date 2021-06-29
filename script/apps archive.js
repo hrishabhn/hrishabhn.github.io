@@ -39,8 +39,8 @@ var app_H01 = [
 //     <div class="app-popup-tab" onclick="popupAppHide()"></div>
 //     <div class="app-popup-modal">
 //         <div class="app-popup-card">
-//             <div class="app-tray-text-box">
-//                 <p1 id="app-popup-title" class="app-tray-text">Apps</p1>
+//             <div class="content-text-box">
+//                 <p1 id="app-popup-title" class="content-text">Apps</p1>
 //             </div>
 //             <div class="app-tray-wrapper">
 //                 <!-- app_101 --><div id="appContainer_101" class="app-container">
