@@ -62,6 +62,16 @@ body{
 .hidden-always{
     display: none !important;
 }
+/* .toggle-hide{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    opacity: 0;
+}
+.toggle-show{
+    position: relative; */
+}
 
 .wallpaper{
     display: block;
@@ -452,6 +462,7 @@ body{
 
     scroll-snap-align: none;
     scroll-margin-left: 90px;
+    transition: 0.25s;
 }
 .app-container:hover .app-icon-container{
     width: 64px;
