@@ -4,9 +4,9 @@ var testing = document.getElementById("main-2");
 
 function mainPage1(){
   document.getElementById("menu-1").className = "menu-item selected";
-  document.getElementById("menu-2").className = "menu-item";
+  // document.getElementById("menu-2").className = "menu-item";
   document.getElementById("menu-3").className = "menu-item";
-  document.getElementById("menu-4").className = "menu-item";
+  // document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item";
   
   // document.getElementById("menu-current").className = "menu-current menu-current-1";
@@ -25,9 +25,9 @@ function mainPage1(){
 
 function mainPage2(){
   document.getElementById("menu-1").className = "menu-item";
-  document.getElementById("menu-2").className = "menu-item selected";
+  // document.getElementById("menu-2").className = "menu-item selected";
   document.getElementById("menu-3").className = "menu-item";
-  document.getElementById("menu-4").className = "menu-item";
+  // document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item";
 
   // document.getElementById("menu-current").className = "menu-current menu-current-2";
@@ -46,9 +46,9 @@ function mainPage2(){
 
 function mainPage3(){
   document.getElementById("menu-1").className = "menu-item";
-  document.getElementById("menu-2").className = "menu-item";
+  // document.getElementById("menu-2").className = "menu-item";
   document.getElementById("menu-3").className = "menu-item selected";
-  document.getElementById("menu-4").className = "menu-item";
+  // document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item";
 
   // document.getElementById("menu-current").className = "menu-current menu-current-3";
@@ -67,9 +67,9 @@ function mainPage3(){
 
 function mainPage4(){
   document.getElementById("menu-1").className = "menu-item";
-  document.getElementById("menu-2").className = "menu-item";
+  // document.getElementById("menu-2").className = "menu-item";
   document.getElementById("menu-3").className = "menu-item";
-  document.getElementById("menu-4").className = "menu-item selected";
+  // document.getElementById("menu-4").className = "menu-item selected";
   document.getElementById("menu-5").className = "menu-item";
 
   // document.getElementById("menu-current").className = "menu-current menu-current-4";
@@ -88,9 +88,9 @@ function mainPage4(){
 
 function mainPage5(){
   document.getElementById("menu-1").className = "menu-item";
-  document.getElementById("menu-2").className = "menu-item";
+  // document.getElementById("menu-2").className = "menu-item";
   document.getElementById("menu-3").className = "menu-item";
-  document.getElementById("menu-4").className = "menu-item";
+  // document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item selected";
 
   // document.getElementById("menu-current").className = "menu-current menu-current-5";
