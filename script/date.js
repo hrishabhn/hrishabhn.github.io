@@ -91,10 +91,10 @@ function atHome(){
         // var lon = 141.133;
 
         if ((lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135)) {
-            document.getElementById("home-card").className = "content-container"
+            document.getElementById("smarthome-card").className = "smart-card-show content-container"
             console.log("at home")
         } else{
-            document.getElementById("home-card").className = "content-container hidden-always"
+            document.getElementById("smarthome-card").className = "smart-card-hide content-container"
             console.log("not at home")
         }
     }
