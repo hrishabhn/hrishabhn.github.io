@@ -80,37 +80,48 @@
 // }
 
 function atHome(){
-    // navigator.geolocation;
+
+    const successCallback = (position) => {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        // console.log(lat)
+        // console.log(lon)
+
+        // var lat = 10.262;
+        // var lon = 10.133;
+
+        if ((lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135)) {
+            document.getElementById("home-card").className = "content-container"
+        } else{
+            document.getElementById("home-card").className = "content-container hidden-always"
+        }
+    }
+
+    navigator.geolocation.getCurrentPosition(successCallback);
+    
     // var test = Geolocation.getCurrentPosition;
     // console.log(Geolocation)
     // navigator.geolocation.getCurrentPosition();
     // console.log(position.coords.latitude)
-    // var lat = position.coords.latitude;
-    // var lon = position.coords.longitude;
-    var lat = 22.262;
-    var lon = 114.133;
+    
 
     // x.innerHTML = "Latitude: " + lat + "<br>Longitude: " + lon;
 
-    if ((lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135)) {
-        document.getElementById("home-card").className = "content-container"
-    } else{
-        document.getElementById("home-card").className = "content-container hidden-always"
-    }
+    
 }
 
 function lights(){
-    if (document.getElementById("light-tray").classList == "smarthome-wrapper smarthome-wrapper-hide") {
-        document.getElementById("light-tray").classList = "smarthome-wrapper smarthome-wrapper-show"
+    if (document.getElementById("light-tray").classList == "smarthome-wrapper-hide smarthome-wrapper") {
+        document.getElementById("light-tray").classList = "smarthome-wrapper-show smarthome-wrapper"
     } else{
-        document.getElementById("light-tray").classList = "smarthome-wrapper smarthome-wrapper-hide"
+        document.getElementById("light-tray").classList = "smarthome-wrapper-hide smarthome-wrapper"
     }
 }
 function appleTV(){
-    if (document.getElementById("appletv-tray").classList == "smarthome-wrapper smarthome-wrapper-hide") {
-        document.getElementById("appletv-tray").classList = "smarthome-wrapper smarthome-wrapper-show"
+    if (document.getElementById("appletv-tray").classList == "smarthome-wrapper-hide smarthome-wrapper") {
+        document.getElementById("appletv-tray").classList = "smarthome-wrapper-show smarthome-wrapper"
     } else{
-        document.getElementById("appletv-tray").classList = "smarthome-wrapper smarthome-wrapper-hide"
+        document.getElementById("appletv-tray").classList = "smarthome-wrapper-hide smarthome-wrapper"
     }
     // document.getElementById("light-tray").classList.toggle("smarthome-wrapper-hide")
 }
