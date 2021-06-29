@@ -212,6 +212,11 @@
     cursor: default;
 }
 
+.home-card{
+    padding: 15px;
+    padding-bottom: 0px;
+    overflow-x: scroll;
+}
 
 
 

@@ -6,7 +6,7 @@
 .tv-media-card{
     height: 230px;
     width: 300px;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
     display: inline-block;
     position: relative;
