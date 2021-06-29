@@ -239,20 +239,22 @@
     overflow-y: hidden;
     scroll-snap-type: x proximity;
 
-    transition: all 0.25s;
+    transition: all 0.15s;
 }
 .smarthome-wrapper-show{
     margin-top: 10px;
     height: 115px;
-    transition: all 0.25s;
     opacity: 1;
 }
 .smarthome-wrapper-hide{
     margin-top: 0px;
     height: 0px;
-    transition: all 0.25s;
     opacity: 0;
 }
+/* .smarthome-wrapper-hide .app-container{
+    height: 0px;
+    transition: all 0.25s;
+} */
 
 
 
