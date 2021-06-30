@@ -29,14 +29,17 @@ const assets = [
   "/TV/background/loki.webp",
   "/TV/background/blind.jpg",
 
+  "/TV/title/manifest.png",
   "/TV/title/always.png",
   "/TV/background/ldr.png",
-  "/TV/background/mythic.png",
+  "/TV/background/rick.png",
   "/TV/background/loki.png",
   "/TV/background/blind.png",
 
   // "/TV/background/kim.svg",
-  
+  // "/TV/background/mythic.png",
+
+
   // "/TV/background/kim.webp",
   // "/TV/background/mythic.webp",
   // "/TV/background/atlanta.webp",
