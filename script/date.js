@@ -79,16 +79,21 @@
 //   }
 // }
 
-function atHome(){
+function locationSmartCards(){
 
     const successCallback = (position) => {
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
-        // console.log(lat)
-        // console.log(lon)
+        console.log(lat)
+        console.log(lon)
 
+        // HOME
         // var lat = 22.262;
-        // var lon = 141.133;
+        // var lon = 114.133;
+
+        // Tuen Mun
+        // var lat = 22.391
+        // var lon = 113.970
 
         if ((lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135)) {
             document.getElementById("smarthome-card").className = "smart-card-show content-container"
@@ -96,6 +101,14 @@ function atHome(){
         } else{
             document.getElementById("smarthome-card").className = "smart-card-hide content-container"
             console.log("not at home")
+        }
+
+        if ((lat > 22.389) && (lat < 22.393) && (lon > 113.968) && (lon < 113.972)) {
+            document.getElementById("office-card").className = "smart-card-show content-container"
+            console.log("at office")
+        } else{
+            document.getElementById("office-card").className = "smart-card-hide content-container"
+            console.log("not at office")
         }
     }
 
