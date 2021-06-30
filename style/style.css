@@ -67,12 +67,16 @@ body{
     display: block;
     position: fixed;
     top: 130px;
-    height: calc(100% - 230px);
     width: 100%;
 
     transition: 0.25s;
+    background-size: cover;
 
-    background: url(../images/test.jpg);
+    /* background: linear-gradient(to bottom right, #12c2e9, #f64f59); */
+
+
+
+    /* background: url(../images/test.jpg); */
 
     /* background:linear-gradient(to bottom,#000033,#660000); */
     /* background:linear-gradient(to bottom,#537895,#09203f); */
@@ -83,7 +87,6 @@ body{
     /* background: var(--dark-layer-1); */
     
     /* background: url('../images/wp-dark.png'); */
-    background-size: cover;
     /* opacity: 0.5; */
     /* background: var(--dark-layer-0); */
 }
