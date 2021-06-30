@@ -67,6 +67,7 @@ body{
     display: block;
     position: fixed;
     top: 130px;
+    height: calc(100vh - 230px);
     width: 100%;
 
     transition: 0.25s;
