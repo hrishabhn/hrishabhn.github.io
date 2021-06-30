@@ -651,19 +651,22 @@ show41 = [
 var book_1 = [
   "book-card homodeus-solid",
   "book-cover homodeus-cover",
-  "https://smart.link/o3waqx4wg1gdn?asin=B01N4DCBK6"
+  "audible://view?section=discover&asin=B01N4DCBK6",
+  // "https://smart.link/o3waqx4wg1gdn?asin=B01N4DCBK6",
 ]
 
 var book_2 = [
   "book-card ride-solid",
   "book-cover ride-cover",
-  "https://smart.link/o3waqx4wg1gdn?asin=0525499334"
+  "audible://view?section=discover&asin=0525499334",
+  // "https://smart.link/o3waqx4wg1gdn?asin=0525499334",
 ]
 
 var book_3 = [
   "book-card martian-solid",
   "book-cover martian-cover",
-  "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF"
+  "audible://view?section=discover&asin=B082BHJMFF",
+  // "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF",
 ]
 
 var bookSolid = [0,0,0,0,0];
