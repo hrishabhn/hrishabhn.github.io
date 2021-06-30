@@ -1271,7 +1271,7 @@ body{
     
         transition: all 0.25s;
     }
-    .app-container:active{
+    .app-container:hover{
         /* transform-origin: bottom; */
         /* opacity: 0.5; */
         scale: 0.9;
