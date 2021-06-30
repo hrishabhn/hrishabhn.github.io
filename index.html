@@ -31,7 +31,7 @@
     <script src="app.js"></script>
 </head>
 
-<body onload="homeAppPopulate();page2AppPopulate();page3AppPopulate();page5AppPopulate();mediaTVPopulate();atHome();timeSmartCards()">
+<body onload="homeAppPopulate();page2AppPopulate();page3AppPopulate();page5AppPopulate();mediaTVPopulate();locationSmartCards();timeSmartCards()">
     <div class="menu">
         <!-- <div id="menu-current" class="menu-current menu-current-1"></div> -->
         <div class="sidebar-menu">
@@ -321,6 +321,51 @@
                             <a class="app-link" href="shortcuts://run-shortcut?name=TV%20Hulu" target="_self"></a>
                         </div>
                     </div>
+                </div><div id="office-card" class="content-container smart-card-hide">
+                    <div class="content-text-box">
+                        <p1 class="content-text">Work</p1>
+                    </div>
+                    <div class="smart-card-info">
+                        <div class="smart-card-text">
+                            Office
+                        </div>
+                        <div>
+                            <svg class="smart-card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.998 511.998"><path d="M505.743 6.249c-6.08-6.101-15.211-7.893-23.168-4.672l-469.333 192C4.474 197.182-.881 206.121.122 215.55c.981 9.429 8.064 17.067 17.387 18.773l220.139 40.021 40.043 220.139c1.685 9.323 9.323 16.405 18.752 17.408.747.064 1.493.107 2.219.107 8.576 0 16.448-5.184 19.755-13.269l192-469.333c3.241-7.937 1.406-17.067-4.674-23.147z"/></svg>
+                        </div>
+                    </div>
+                    <div class="app-tray-wrapper">
+                        <div class="app-container zoom">
+                            <div class="app-icon-container">
+                                <div class="app-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="15 8 36 36"><path d="M33 8v36M21 9a12 12 0 0024 0M21 43a12 12 0 0124 0" stroke="#fff" stroke-width="5" fill="none"></path></svg>
+                                </div>
+                            </div>
+                            <div class="app-text">
+                                Zoom
+                            </div>
+                            <a class="app-link" href="https://us02web.zoom.us/j/81169547262?pwd=dzZCSUc5MmRRYVFvZU9HVTRLSWtlQT09" target="_self"></a>
+                        </div><div class="app-container zoom">
+                            <div class="app-icon-container">
+                                <div class="app-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="6.733736038208008 61.42400360107422 48.7239990234375 48.7239990234375"><g fill-rule="evenodd" clip-rule="evenodd"><path d="M28.085 80.393l-14.756 29.693H8.504l14.703-29.693h4.878zm9.335-18.79l-3.19 6.508-4.825-.066 3.134-6.442h4.881zM8.817 80.275h10.354L8.817 101.054V80.275zm.421-12.344h15.83l3.316-6.328H13.931c-1.987 0-4.693 1.505-4.693 3.438v2.89zm21.377 25.114l7.226 17.041H17.365l14.753-29.693h4.822l-6.325 12.652z"></path><path d="M51.634 110.148c1.204-.479 2.049-2.95 2.049-5.964 0-.42-.063-37.521 0-38.063.118-2.104-2.109-4.697-5.425-4.697h-6.68l-3.131 6.507h11.44l2.108 4.272H8.817v3.918h34.449l-8.257 16.503 7.592 17.462h4.878l-7.652-17.462 8.309-16.503h3.859l-8.254 16.621 7.893"></path></g></svg>
+                                </div>
+                            </div>
+                            <div class="app-text">
+                                KMB
+                            </div>
+                            <a class="app-link" href="mtrmobile://" target="_self"></a>
+                        </div><div class="app-container zoom">
+                            <div class="app-icon-container">
+                                <div class="app-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="36.80376434326172 293.55674743652344 104.9067611694336 104.9067611694336"><path d="M134.7 367.5C120 380.2 99.4 384.2 80.9 378c-18.5-6.2-32.2-21.7-35.8-40.5-.4-2.2-2.6-3.7-4.9-3.3-2.3.4-3.8 2.5-3.3 4.7 4.1 21.7 19.9 39.6 41.3 46.7 4.9 1.6 9.9 2.7 14.9 3.1 17 1.4 34.1-3.9 47.2-15.2 1.7-1.5 1.9-4 .4-5.7-1.6-1.6-4.3-1.8-6-.3M64 329.1c3.6 0 6.5-2.9 6.5-6.5s-2.9-6.5-6.5-6.5-6.5 2.9-6.5 6.5 2.9 6.5 6.5 6.5zm70.3 0c3.6 0 6.5-2.9 6.5-6.5s-2.9-6.5-6.5-6.5-6.5 2.9-6.5 6.5 2.9 6.5 6.5 6.5zm-31-1.2H83.6c-2.7 0-4.9-2.2-4.9-5s2.2-5 4.9-5h19.7l-6.1-6.3c-1.9-1.9-1.9-5.1 0-7 1.9-2 5-2 6.9 0l14.3 14.8c.9.9 1.4 2.2 1.4 3.5 0 1.3-.5 2.6-1.4 3.5l-14.3 14.8c-.9 1-2.2 1.5-3.5 1.5-1.3 0-2.5-.5-3.5-1.5-1.9-2-1.9-5.1 0-7l6.2-6.3z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="app-text">
+                                Citymapper
+                            </div>
+                            <a class="app-link" href="citymapper://" target="_self"></a>
+                        </div>
+                    </div>
                 </div>
                 <div id="morning-card" class="content-container smart-card-hide">
                     <div class="content-text-box">
@@ -354,7 +399,7 @@
                             <div class="app-text">
                                 KMB
                             </div>
-                            <a class="app-link" href="mtrmobile://" target="_self"></a>
+                            <a class="app-link" href="app1933://" target="_self"></a>
                         </div><div class="app-container citymapper">
                             <div class="app-icon-container">
                                 <div class="app-icon">
