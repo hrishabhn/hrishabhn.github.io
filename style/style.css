@@ -399,7 +399,7 @@ body{
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    scroll-snap-type: x proximity;
+    /* scroll-snap-type: x proximity; */
 
 }
 
@@ -416,7 +416,7 @@ body{
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    scroll-snap-type: x proximity;
+    /* scroll-snap-type: x proximity; */
 }
 
 
