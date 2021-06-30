@@ -22,20 +22,23 @@ const assets = [
 
   "/images/launch-12mini.png",
   
+  "/TV/background/manifest.webp",
   "/TV/background/always.jpg",
-  "/TV/background/kim.webp",
   "/TV/background/ldr.webp",
-  "/TV/background/mythic.webp",
+  "/TV/background/rick.jpg",
   "/TV/background/loki.webp",
   "/TV/background/blind.jpg",
 
   "/TV/title/always.png",
-  "/TV/background/kim.svg",
   "/TV/background/ldr.png",
   "/TV/background/mythic.png",
   "/TV/background/loki.png",
   "/TV/background/blind.png",
 
+  // "/TV/background/kim.svg",
+  
+  // "/TV/background/kim.webp",
+  // "/TV/background/mythic.webp",
   // "/TV/background/atlanta.webp",
   // "/TV/background/chernobyl.jpg",
   // "/TV/background/drive.webp",
