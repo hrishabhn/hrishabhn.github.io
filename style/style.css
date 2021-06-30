@@ -66,8 +66,8 @@ body{
 .wallpaper{
     display: block;
     position: fixed;
-    top: 115px;
-    height: calc(100% - 215px);
+    top: 130px;
+    height: calc(100% - 230px);
     width: 100%;
 
     transition: 0.25s;
@@ -116,7 +116,7 @@ body{
     display: flex;
     position: fixed;
     margin-left: 0px;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-bottom: 15px;
     /* padding: 0px; */
 
@@ -292,7 +292,7 @@ body{
 
     /* border-radius: 20px; */
 
-    padding: 20px;
+    padding: 30px;
     /* margin-left: 20px; */
     /* margin-right: 20px; */
 
@@ -1099,10 +1099,10 @@ body{
         display: none !important;
     }
     .main{
-        top: 115px;
+        top: 130px;
 
         /* width: calc(100vw - 30px); */
-        height: calc(100vh - 115px);
+        height: calc(100vh - 130px);
         padding: 15px;
         padding-bottom: 115px;
 
@@ -1128,10 +1128,13 @@ body{
         background-color: var(--black-60);
     }
     .title-box{   
-        height: 115px;
+        height: 130px;
 
         margin-left: 0px;
         padding-left: 15px;
+    }
+    .title-box-smaller{
+        height: 100px;
     }
     .menu{
         height: 100px;
@@ -1267,6 +1270,11 @@ body{
         margin-right: 10px;
     
         transition: 0.1s;
+    }
+    .app-container:active{
+        /* transform-origin: bottom; */
+        /* opacity: 0.5; */
+        scale: 0.9;
     }
 
     .app-container:hover .app-icon-container{
