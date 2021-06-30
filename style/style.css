@@ -1039,7 +1039,7 @@ body{
         color: var(--dark-layer-1);
     }
     .wallpaper{
-        background: var(--light-layer-0);
+        /* background: var(--light-layer-0); */
         /* background: url('../images/wp-light.jpg'); */
         /* background:linear-gradient(to bottom,#B7F8DB,#50A7C2); */
         /* background:linear-gradient(to bottom right,#ACB6E5,#74ebd5); */
