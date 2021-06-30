@@ -149,6 +149,13 @@ function timeSmartCards(){
         document.getElementById("afternoon-card").className = "smart-card-hide content-container";
         console.log("not afternoon");
     }
+    if ((hourNow > 16) && (hourNow < 21)) {
+        document.getElementById("evening-card").className = "smart-card-show content-container";
+        console.log("afternoon");
+    } else{
+        document.getElementById("evening-card").className = "smart-card-hide content-container";
+        console.log("not afternoon");
+    }
 
     if ((hourNow > 21) || (hourNow < 6)) {
         document.getElementById("night-card").className = "smart-card-show content-container";
