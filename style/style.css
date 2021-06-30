@@ -1269,7 +1269,7 @@ body{
     
         margin-right: 10px;
     
-        transition: 0.1s;
+        transition: all 0.25s;
     }
     .app-container:active{
         /* transform-origin: bottom; */
