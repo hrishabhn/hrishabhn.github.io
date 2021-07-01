@@ -174,8 +174,10 @@ function timeSmartCards(){
 function lights(){
     if (document.getElementById("light-tray").classList == "smarthome-wrapper-hide smarthome-wrapper") {
         document.getElementById("light-tray").classList = "smarthome-wrapper-show smarthome-wrapper"
+        console.log("at home")
     } else{
         document.getElementById("light-tray").classList = "smarthome-wrapper-hide smarthome-wrapper"
+        console.log("not at home")
     }
 }
 function appleTV(){
