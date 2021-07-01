@@ -1287,9 +1287,9 @@ body{
 
 
     .app-container{
-        width: 70px;
-        height: 70px;
-        border-radius: 25px;
+        width: 110px;
+        height: 85px;
+        border-radius: 20px;
     
         margin-right: 10px;
     
@@ -1302,8 +1302,8 @@ body{
     }
 
     .app-container:hover .app-icon-container{
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: auto;
     
         margin-top: 0px;
         margin-left: 0px;
@@ -1313,11 +1313,11 @@ body{
     
     
     .app-icon-container{
-        top: 0px;
-        left: 0px;
+        top: 15px;
+        left: 15px;
     
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: auto;
         border-radius: inherit;
     
         transition: 0.25s;
@@ -1326,12 +1326,14 @@ body{
     }
     .app-icon{
         fill: var(--white-100);
-        height: 25px;
-        width: 25px;
+        /* height: 25px; */
+        /* width: 25px; */
         transition: 0.25s;
     }
     .app-text{
-        display: none;
+        /* display: none; */
+        font-size: 12px;
+        padding: 0px;
     }
 
 
