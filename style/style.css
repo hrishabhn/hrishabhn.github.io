@@ -476,7 +476,7 @@ body{
     transition: all 0.25s;
 }
 .app-container:hover{
-    scale: 0.98;
+    scale: 0.95;
     /* transform: translate(0px,-2px); */
 }
 /* .app-container:hover .app-icon-container{
