@@ -1302,7 +1302,7 @@ body{
     .app-container:hover{
         /* transform-origin: bottom; */
         /* opacity: 0.5; */
-        scale: 0.9;
+        /* scale: 0.9; */
     }
 
     /* .app-container:hover .app-icon-container{
