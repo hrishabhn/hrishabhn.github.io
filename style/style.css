@@ -473,9 +473,13 @@ body{
 
     scroll-snap-align: none;
     scroll-margin-left: 90px;
-    transition: 0.25s;
+    transition: all 0.25s;
 }
-.app-container:hover .app-icon-container{
+.app-container:hover{
+    scale: 0.98;
+    /* transform: translate(0px,-2px); */
+}
+/* .app-container:hover .app-icon-container{
     width: 64px;
     height: 64px;
 
@@ -483,7 +487,7 @@ body{
     margin-left: -3px;
 
     transition: 0.25s;
-}
+} */
 
 
 .app-icon-container{
@@ -1291,9 +1295,9 @@ body{
         height: 85px;
         border-radius: 20px;
     
-        margin-right: 10px;
+        /* margin-right: 10px; */
     
-        transition: all 0.25s;
+        /* transition: all 0.25s; */
     }
     .app-container:hover{
         /* transform-origin: bottom; */
@@ -1301,7 +1305,7 @@ body{
         scale: 0.9;
     }
 
-    .app-container:hover .app-icon-container{
+    /* .app-container:hover .app-icon-container{
         width: auto;
         height: auto;
     
@@ -1309,7 +1313,7 @@ body{
         margin-left: 0px;
     
         transition: 0.25s;
-    }
+    } */
     
     
     .app-icon-container{
