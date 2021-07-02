@@ -177,12 +177,21 @@
     transition: 0.25s;
 }
 .search-icon-box{
-    height: 16px;
-    width: 16px;
+    /* height: 16px; */
+    /* width: 16px; */
 
     fill: var(--white-60);
     transition: 0.25s;
 }
+.search-icon{
+    height: 14px;
+    width: 14px;
+}
+
+
+
+
+
 .search-text-box{
     margin-left: 10px;
     height: 100%;
@@ -437,7 +446,7 @@
 
     .search-container{
         height: 40px;
-        padding-left: 13px;
+        padding-left: 10px;
         margin-top: 10px;
     }
     .search-text-box{
@@ -448,7 +457,7 @@
         width: 13px;
     } */
     .search-text{
-        font-size: 13px;
+        font-size: 14px;
     }
     .smarthome-wrapper-show{
         height: 70px;
