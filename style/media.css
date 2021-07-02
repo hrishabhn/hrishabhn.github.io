@@ -218,6 +218,11 @@
 
     scroll-snap-align: start;
     scroll-margin-left: 15px;
+
+    transition: all 0.25s;
+}
+.book-card:hover{
+    scale: 0.95;
 }
 .book-cover{
     width: 100%;
@@ -225,6 +230,7 @@
     background-size: cover;
     background-position: center;
     display: block;
+    border-radius: inherit;
 }
 .book-more-link{
     display: flex;
@@ -241,10 +247,10 @@
 
     transition: all 0.2s;
 }
-.book-more-link:hover{
+/* .book-more-link:hover{
     transition: 0.2s;
     -webkit-backdrop-filter: blur(3px);
-}
+} */
 
 
 
@@ -267,6 +273,11 @@
 
     scroll-snap-align: start;
     scroll-margin-left: 15px;
+
+    transition: all 0.25s;
+}
+.podcast-card:hover{
+    scale: 0.95;
 }
 .podcast-cover{
     width: 100%;
@@ -274,6 +285,7 @@
     background-size: cover;
     background-position: center;
     display: block;
+    border-radius: inherit;
 }
 .podcast-link{
     background-color: rgba(0, 0, 0, 0);
