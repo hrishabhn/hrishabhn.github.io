@@ -13,6 +13,7 @@ function mainPage1(){
 
   document.getElementById("title-text").innerHTML = "Home";
   document.getElementById("title-page").innerHTML = "Home";
+  document.getElementById("title-box").className = "title-box title-box-1";
 
   // document.getElementById("wallpaper").className = "wallpaper wp-1"
 
@@ -55,6 +56,7 @@ function mainPage3(){
 
   document.getElementById("title-text").innerHTML = "Apps";
   document.getElementById("title-page").innerHTML = "Apps";
+  document.getElementById("title-box").className = "title-box title-box-3";
 
   // document.getElementById("wallpaper").className = "wallpaper wp-3"
 
@@ -97,6 +99,7 @@ function mainPage5(){
 
   document.getElementById("title-text").innerHTML = "Media";
   document.getElementById("title-page").innerHTML = "Media";
+  document.getElementById("title-box").className = "title-box title-box-5";
 
   // document.getElementById("wallpaper").className = "wallpaper wp-5"
 
