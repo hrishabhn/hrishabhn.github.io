@@ -72,36 +72,20 @@ body{
 
     transition: 0.25s;
     background-size: cover;
-
-    /* background: linear-gradient(to bottom right, #12c2e9, #f64f59); */
-
-
-
-    /* background: url(../images/test.jpg); */
-
-    /* background:linear-gradient(to bottom,#000033,#660000); */
-    /* background:linear-gradient(to bottom,#537895,#09203f); */
-    /* background:linear-gradient(to bottom right,#141E30,#243B55); */
-
-    /* background:linear-gradient(to bottom,#183949,#183949); */
-
-    /* background: var(--dark-layer-1); */
-    
-    /* background: url('../images/wp-dark.png'); */
-    /* opacity: 0.5; */
-    /* background: var(--dark-layer-0); */
+    /* background: url(../images/grad.png); */
+    /* background: linear-gradient(to bottom right, #373B44, #4286f4); */
 }
 
-/* .wallpaper-blur{
+.wallpaper-blur{
     position: absolute;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
 
-    background: var(--white-20);
-    -webkit-backdrop-filter: blur(100px);
-} */
+    /* background: var(--black-20); */
+    /* -webkit-backdrop-filter: blur(100px); */
+}
 
 
 
