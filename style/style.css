@@ -1131,10 +1131,10 @@ body{
         display: none !important;
     }
     .main{
-        top: 130px;
+        top: 120px;
 
         /* width: calc(100vw - 30px); */
-        height: calc(100vh - 130px);
+        height: calc(100vh - 120px);
         padding: 15px;
         padding-bottom: 115px;
 
@@ -1160,7 +1160,7 @@ body{
         background-color: var(--black-60);
     }
     .title-box{   
-        height: 130px;
+        height: 120px;
 
         margin-left: 0px;
         padding-left: 15px;
