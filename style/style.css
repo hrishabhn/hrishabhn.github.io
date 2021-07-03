@@ -157,8 +157,8 @@ body{
     width: 270px;
     position: fixed;
     z-index: 100;
-    bottom: 30px;
-    right: 30px;
+    bottom: 40px;
+    right: 40px;
     padding: 15px;
     border-radius: 35px;
     /* overflow-x: hidden; */
