@@ -808,10 +808,10 @@ body{
     display: inline-flex;
     align-items: center;
 
-    background-color: var(--dark-layer-1);
+    background-color: var(--dark-layer-0);
     /* -webkit-backdrop-filter: blur(15px); */
     transition: 0.25s;
-    box-shadow: var(--shaded-dark);
+    /* box-shadow: var(--shaded-dark); */
 }
 .anchor-container:hover .anchor-icon-box{
     fill: var(--red-100);
@@ -1112,8 +1112,8 @@ body{
         background-color: var(--white-20);
     }
     .anchor-container{
-        background-color: var(--light-layer-1);
-        box-shadow: var(--shaded-light);
+        background-color: var(--light-layer-0);
+        /* box-shadow: var(--shaded-light); */
     }
     .anchor-text{
         color: var(--black-60);
