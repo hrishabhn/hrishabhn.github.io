@@ -395,7 +395,7 @@ body{
 
     /* background-color: var(--black-40); */
     /* -webkit-backdrop-filter: blur(25px); */
-    background: var(--dark-layer-1);
+    background: var(--dark-layer-0);
     overflow: hidden;
 
     box-shadow: var(--shaded-dark);
