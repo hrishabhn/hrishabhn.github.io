@@ -164,7 +164,7 @@
     display: inline-flex;
     align-items: center;
 
-    background-color: var(--dark-layer-0);
+    background-color: var(--dark-layer-1);
     /* -webkit-backdrop-filter: blur(15px); */
     transition: 0.25s;
     box-shadow: var(--shaded-dark);
