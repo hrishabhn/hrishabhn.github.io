@@ -385,16 +385,12 @@ body{
     width: 100%;
     position: relative;
 
-    /* margin-left: 20px; */
-    /* margin-right: 20px; */
     margin-top: 20px;
 
     border-radius: 15px;
 
     padding-bottom: 15px;
 
-    /* background-color: var(--black-40); */
-    /* -webkit-backdrop-filter: blur(25px); */
     background: var(--dark-layer-0);
     overflow: hidden;
 
@@ -1293,13 +1289,7 @@ body{
 
 
     .content-container{
-        /* width: 100%; */
-    
-        /* margin-left: 0px; */
-        /* margin-right: 0px; */
-        /* margin-top: 10px; */
-
-        /* -webkit-backdrop-filter: blur(25px); */
+        margin-top: 10px;
     }
     
     
