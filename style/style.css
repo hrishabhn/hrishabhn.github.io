@@ -1045,7 +1045,7 @@ body{
 
 @media screen and (prefers-color-scheme: light) {
     body{
-        background-color: var(--light-layer-0);
+        background-color: var(--light-layer-1);
     }
     .title-box{   
         /* background-color: var(--light-layer-2); */
