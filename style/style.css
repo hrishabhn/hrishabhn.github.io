@@ -1039,7 +1039,7 @@ body{
 /* @dark mode */
 
 @media screen and (prefers-color-scheme: light) {
-    body {
+    body{
         background-color: var(--light-layer-0);
     }
     .title-box{   
@@ -1093,7 +1093,7 @@ body{
         /* background-color: var(--black-10); */
     }
     .content-container{
-        background: var(--light-layer-2);
+        background: var(--light-layer-0);
     }
 
     .app-popup-card{
