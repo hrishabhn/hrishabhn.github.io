@@ -46,7 +46,8 @@
 
     --mobile-width: calc(100vw - 30px);
 
-    --shaded: 0 5px 30px -5px #00000033;
+    --shaded-light: 0 5px 30px -5px #00000033;
+    --shaded-dark: 0 5px 30px -5px #000;
 }
 
 ::-webkit-scrollbar {
@@ -54,7 +55,7 @@
 }
 
 body{
-    background-color: var(--dark-layer-0);
+    background-color: var(--dark-layer-1);
     /* -webkit-appearance: none; */
     -webkit-tap-highlight-color: transparent;
     min-height: 100vh;
@@ -397,8 +398,7 @@ body{
     background: var(--dark-layer-1);
     overflow: hidden;
 
-    box-shadow: var(--shaded);
-    /* box-shadow: 0 5px 30px -5px #00000033; */
+    box-shadow: var(--shaded-dark);
 }
 
 .content-text-box{
@@ -778,13 +778,17 @@ body{
 
     position: relative;
     z-index: 1;
+
+    /* margin: -50px 0px; */
+    /* padding: 50px 0px; */
+
     /* left: -70px; */
 
     /* margin-top: 10px; */
 
 
     /* padding-left: 90px; */
-    padding-right: 10px;
+    /* padding-right: 10px; */
 
     white-space: nowrap;
     overflow-x: scroll;
@@ -807,7 +811,7 @@ body{
     background-color: var(--dark-layer-1);
     /* -webkit-backdrop-filter: blur(15px); */
     transition: 0.25s;
-    box-shadow: var(--shaded);
+    box-shadow: var(--shaded-dark);
 }
 .anchor-container:hover .anchor-icon-box{
     fill: var(--red-100);
@@ -1095,6 +1099,7 @@ body{
     }
     .content-container{
         background: var(--light-layer-0);
+        box-shadow: var(--shaded-light);
     }
 
     .app-popup-card{
@@ -1108,6 +1113,7 @@ body{
     }
     .anchor-container{
         background-color: var(--light-layer-1);
+        box-shadow: var(--shaded-light);
     }
     .anchor-text{
         color: var(--black-60);
