@@ -21,6 +21,9 @@
     --light-layer-1-80: #f2f2f7cc;
     --dark-layer-1-80: #1c1c1ecc;
 
+    --light-layer-1-60: #f2f2f799;
+    --dark-layer-1-60: #1c1c1e99;
+
     --black-100: #000;
     --white-100: #fff;
 
@@ -55,7 +58,7 @@
 }
 
 body{
-    background-color: var(--dark-layer-1);
+    background-color: #121212;
     /* -webkit-appearance: none; */
     -webkit-tap-highlight-color: transparent;
     min-height: 100vh;
@@ -190,7 +193,7 @@ body{
     /* padding-right: 10px; */
     box-sizing: border-box;
 
-    background-color: var(--dark-layer-1-80);
+    background-color: var(--dark-layer-1-60);
     -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 0 15px #00000066;
 }
@@ -391,7 +394,7 @@ body{
 
     padding-bottom: 15px;
 
-    background: var(--dark-layer-0);
+    background: var(--dark-layer-1);
     overflow: hidden;
 
     box-shadow: var(--shaded-dark);
@@ -805,7 +808,7 @@ body{
     display: inline-flex;
     align-items: center;
 
-    background-color: var(--dark-layer-0);
+    background-color: var(--dark-layer-1);
     /* -webkit-backdrop-filter: blur(15px); */
     transition: 0.25s;
     /* box-shadow: var(--shaded-dark); */
@@ -1075,7 +1078,7 @@ body{
     }
 
     .menu{
-        background-color: var(--light-layer-1-80);
+        background-color: var(--light-layer-1-60);
     }
     .menu-current{
         background: var(--light-layer-1);
