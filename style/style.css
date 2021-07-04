@@ -46,8 +46,8 @@
 
     --mobile-width: calc(100vw - 30px);
 
-    --shaded-light: 0 5px 15px -5px #00000033;
-    --shaded-dark: 0 5px 15px -5px #000;
+    --shaded-light: 0 8px 12px -5px #00000033;
+    --shaded-dark: 0 8px 12px -5px #000;
 }
 
 ::-webkit-scrollbar {
@@ -645,7 +645,8 @@ body{
     width: calc((100vw - 40px) / 2);
     height: 115px;
     border-radius: 20px;
-    /* background: var(--dark-layer-1); */
+    background: var(--dark-layer-0);
+    box-shadow: var(--shaded-dark);
 
     margin-right: 10px;
 }
@@ -738,9 +739,9 @@ body{
 
     transition: inherit;
 
-    color: var(--white-100);
+    color: var(--light-layer-0);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .contact-link{
     display: inline-flex;
@@ -1116,6 +1117,14 @@ body{
     }
     .anchor-container:hover .anchor-text{
         color: var(--black-100);
+    }
+
+    .contact-container{
+        background: var(--light-layer-0);
+        box-shadow: var(--shaded-light);
+    }
+    .contact-text{
+        color: var(--dark-layer-1);
     }
 }
 
