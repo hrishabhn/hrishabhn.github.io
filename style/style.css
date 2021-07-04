@@ -45,6 +45,8 @@
     --red-80: #ff3b30cc;
 
     --mobile-width: calc(100vw - 30px);
+
+    --shaded: 0 5px 30px -5px #00000033;
 }
 
 ::-webkit-scrollbar {
@@ -395,7 +397,8 @@ body{
     background: var(--dark-layer-1);
     overflow: hidden;
 
-    box-shadow: 0 5px 30px -5px #00000033;
+    box-shadow: var(--shaded);
+    /* box-shadow: 0 5px 30px -5px #00000033; */
 }
 
 .content-text-box{
@@ -1090,7 +1093,7 @@ body{
         /* background-color: var(--black-10); */
     }
     .content-container{
-        background: var(--light-layer-1);
+        background: var(--light-layer-2);
     }
 
     .app-popup-card{
