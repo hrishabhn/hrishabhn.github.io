@@ -394,6 +394,8 @@ body{
     /* -webkit-backdrop-filter: blur(25px); */
     background: var(--dark-layer-1);
     overflow: hidden;
+
+    box-shadow: 0 5px 30px -5px #00000033;
 }
 
 .content-text-box{
@@ -1285,7 +1287,7 @@ body{
     
         /* margin-left: 0px; */
         /* margin-right: 0px; */
-        margin-top: 10px;
+        /* margin-top: 10px; */
 
         /* -webkit-backdrop-filter: blur(25px); */
     }
