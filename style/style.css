@@ -49,8 +49,8 @@
 
     --mobile-width: calc(100vw - 30px);
 
-    --shaded-light: 0 8px 12px -5px #00000033;
-    --shaded-dark: 0 8px 12px -5px #000;
+    --shaded-light: 0 5px 10px -5px #00000033;
+    --shaded-dark: 0 5px 10px -5px #000;
 }
 
 ::-webkit-scrollbar {
