@@ -177,20 +177,7 @@ show12 = [
   "https://www.imdb.com/title/tt8531222"
 ]
 
-// Blindspotting
-show13 = [
-  "blind-solid",
-  "blind-poster",
-  "blind-gradient",
-  "blind-title",
-  "Drama • Comedy • 1 Season • 2021 - Present",
-  "",
-  "hulu",
-  "Watch Download",
-  "https://www.tvtime.com/en/show/392720",
-  "https://reelgood.com/show/blindspotting-2021",
-  "https://www.imdb.com/title/tt11097374"
-]
+
 
 // New girl
 show14 = [
