@@ -678,51 +678,63 @@ bookCover[k] = book_3[1];
 
 // PODCASTS //
 
-//Pivot
+// Learn cantonese
 var pod1 = [
+  "podcast-card canto-solid",
+  "podcast-cover canto-cover",
+  "https://podcasts.apple.com/podcast/id1513774818"
+]
+
+// Acquired
+var pod2 = [
+  "podcast-card acquired-solid",
+  "podcast-cover acquired-cover",
+  "https://podcasts.apple.com/podcast/id1050462261"
+]
+
+
+
+
+// Founders
+var pod3 = [
   "podcast-card",
   "podcast-cover founders-cover",
   "https://podcasts.apple.com/podcast/id1509276485"
   
 ]
 
-//Pivot
-var pod2 = [
+// Pivot
+var pod4 = [
   "podcast-card pivot-solid",
   "podcast-cover pivot-cover",
   "https://podcasts.apple.com/podcast/id1073226719"
 ]
 
 //Lex fridman
-var pod3 = [
+var pod5 = [
   "podcast-card lex-solid",
   "podcast-cover lex-cover",
   "https://www.youtube.com/lexfridman/videos"
 ]
 
-//Acquired
-var pod4 = [
-  "podcast-card acquired-solid",
-  "podcast-cover acquired-cover",
-  "https://podcasts.apple.com/podcast/id1050462261"
-]
+
 
 //Yang
-var pod5 = [
+var pod6 = [
   "podcast-card yang-solid",
   "podcast-cover yang-cover",
   "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
 ]
 
 //Sway
-var pod6 = [
+var pod7 = [
   "podcast-card sway-solid",
   "podcast-cover sway-cover",
   "https://podcasts.apple.com/podcast/id1528594034"
 ]
 
 //Economist
-var pod7 = [
+var pod9 = [
   "podcast-card economist-solid",
   "podcast-cover economist-cover",
   "https://podcasts.apple.com/podcast/id151230264"
