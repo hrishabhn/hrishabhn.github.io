@@ -160,29 +160,29 @@ body{
     cursor: default;
 }
 .title-box-1{
-    background: #2c3e50;
+    background: #5e5ce6;
 }
 .title-box-2{
-    background: #d35400;
+    background: #ff9f0a;
 }
 .title-box-3{
-    background: #16a085;
+    background: #30d158;
 }
 .title-box-5{
-    background: #c0392b;
+    background: #ff453a;
 }
 @media screen and (prefers-color-scheme: light) {
     .title-box-1{
-        background: #34495e;
+        background: #5856d6;
     }
     .title-box-2{
-        background: #e67e22;
+        background: #ff9500;
     }
     .title-box-3{
-        background: #1abc9c;
+        background: #34c759;
     }
     .title-box-5{
-        background: #e74c3c;
+        background: #ff3b30;
     }
 }
 
