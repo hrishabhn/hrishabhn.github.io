@@ -1125,7 +1125,7 @@ body{
     }
 
     .contact-container{
-        background: var(--light-layer-0);
+        background: var(--light-layer-1);
         box-shadow: var(--shaded-light);
     }
     .contact-text{
