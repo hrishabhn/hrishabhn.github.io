@@ -53,8 +53,8 @@
 
     --mobile-width: calc(100vw - 30px);
 
-    --shaded-light: 0 5px 25px -10px #00000033;
-    --shaded-dark: 0 5px 25px -10px #000;
+    --shaded-light: 0 5px 15px 0px #00000033;
+    --shaded-dark: 0 5px 15px 0px #000;
 }
 
 ::-webkit-scrollbar {
@@ -62,7 +62,7 @@
 }
 
 body{
-    background-color: #121212;
+    background-color: #111;
     /* -webkit-appearance: none; */
     -webkit-tap-highlight-color: transparent;
     min-height: 100vh;
@@ -1047,8 +1047,8 @@ body{
 
 @media screen and (prefers-color-scheme: light) {
     body{
-        background-color: var(--light-layer-1);
-        /* background-color: #ededed; */
+        background-color: var(--light-layer-0);
+        /* background-color: #eee; */
     }
     .title-box{   
         /* background-color: var(--light-layer-2); */
@@ -1100,7 +1100,7 @@ body{
         color: var(--blue-light);
     }
     .content-container{
-        background: var(--light-layer-0);
+        background: var(--light-layer-1);
         box-shadow: var(--shaded-light);
     }
 
