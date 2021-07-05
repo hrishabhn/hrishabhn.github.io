@@ -151,3 +151,19 @@ var app_H01 = [
 
 //     </div>
 // </div>
+
+
+// Blindspotting
+show13 = [
+    "blind-solid",
+    "blind-poster",
+    "blind-gradient",
+    "blind-title",
+    "Drama • Comedy • 1 Season • 2021 - Present",
+    "",
+    "hulu",
+    "Watch Download",
+    "https://www.tvtime.com/en/show/392720",
+    "https://reelgood.com/show/blindspotting-2021",
+    "https://www.imdb.com/title/tt11097374"
+  ]
