@@ -211,22 +211,6 @@ body{
 
     box-shadow: 0 0 10px var(--black-60);
 }
-.menu-current-1{
-    left: 15px;
-}
-.menu-current-2{
-    left: 95px;
-}
-.menu-current-3{
-    left: 175px;
-}
-.menu-current-4{
-    left: 255px;
-}
-.menu-current-5{
-    left: 335px;
-}
-
 
 /* .sidebar{
     height: 100%;
@@ -260,13 +244,13 @@ body{
     height: 100%;
     border-radius: 25px;
 
-    transition: 0.25s;
     z-index: 10;
 }
 .menu-item{
     display: flex;
     justify-content: inherit;
     align-items: inherit;
+    flex-direction: column;
 
     text-decoration: none;
     cursor: default;
@@ -274,29 +258,36 @@ body{
     height: 100%;
     width: 100%;
     border-radius: inherit;
-    transition: 0.25s;
-    /* color: var(--white-60); */
+    transition: all 0.25s;
+
+    color: var(--white-60);
+    fill: var(--white-60);
 }
 .menu-item-icon{
+    display: block;
     height: 20px;
     width: 20px;
-    fill: var(--white-60);
-    transition: 0.25s;
-
 }
-.menu-item:hover .menu-item-icon{
+.menu-item-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    height: auto;
+    width: 100%;
+    font-weight: 600;
+    font-size: 10px;
+}
+.menu-item:hover{
     fill: var(--white-100);
-
-    transition: 0.25s;
+    color: var(--white-100);
 }
 .selected{
-    /* background-color: var(--white-10); */
-}
-.selected .menu-item-icon{
     fill: var(--red-100);
+    color: var(--red-100);
 }
-.selected:hover .menu-item-icon{
+.selected:hover{
     fill: var(--red-100);
+    color: var(--red-100);
 }
 
 
@@ -1080,22 +1071,17 @@ body{
     .menu{
         background-color: var(--light-layer-1-60);
     }
-    .menu-current{
-        background: var(--light-layer-1);
-        box-shadow: 0 0 10px var(--black-40);
-    }
-    .menu-item-icon{
+    .menu-item{
+        color: var(--black-60);
         fill: var(--black-60);
-    
     }
-    .menu-item:hover .menu-item-icon{
+    .menu-item:hover{
         fill: var(--black-100);
-    }
-    .selected:hover .menu-item-icon{
-        fill: var(--red-100);
+        color: var(--black-100);
     }
     .selected{
-        /* background-color: var(--black-10); */
+        fill: var(--red-100);
+        color: var(--red-100);
     }
     .content-container{
         background: var(--light-layer-0);
@@ -1206,34 +1192,16 @@ body{
         /* -webkit-backdrop-filter: blur(25px); */
         box-shadow: none;
     }
-    .menu-item-icon{
-        /* height: 20px; */
-        /* width: 20px; */
-    
-    }
 
 
 
 
-    .menu-current{
-        width: calc((100vw - 30px) / 5);
+    .menu-item{
+        transition: all 0s;
     }
-    .menu-current-2{
-        left: calc(15px + (1 * (100vw - 30px) / 5));
-    }
-    .menu-current-3{
-        left: calc(15px + (2 * (100vw - 30px) / 5));
-    }
-    .menu-current-4{
-        left: calc(15px + (3 * (100vw - 30px) / 5));
-    }
-    .menu-current-5{
-        left: calc(15px + (4 * (100vw - 30px) / 5));
-    }
-
-    .menu-item:hover .menu-item-icon{
-        transition: 0s;
+    .menu-item:hover{
         fill: var(--red-100);
+        color: var(--red-100);
     }
 
     /* .sidebar{
