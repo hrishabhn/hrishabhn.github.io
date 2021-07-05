@@ -1157,8 +1157,9 @@ body{
 
         /* width: calc(100vw - 30px); */
         height: calc(100vh - 110px);
-        padding: 15px;
-        padding-bottom: 115px;
+        padding: 5px 15px 100px;
+        
+        /* padding-bottom: 115px; */
 
         /* margin-left: 15px; */
     }
