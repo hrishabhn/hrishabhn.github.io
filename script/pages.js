@@ -27,8 +27,8 @@ function mainPage2(){
   // document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item";
 
-  document.getElementById("title-text").innerHTML = "Work & School";
-  document.getElementById("title-page").innerHTML = "Work & School";
+  document.getElementById("title-text").innerHTML = "Bookmarks";
+  document.getElementById("title-page").innerHTML = "Bookmarks";
   document.getElementById("title-box").className = "title-box title-box-2";
 
   document.getElementById("main-1").className = "main-left main";
