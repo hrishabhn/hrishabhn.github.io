@@ -49,8 +49,8 @@
 
     --mobile-width: calc(100vw - 30px);
 
-    --shaded-light: 0 5px 10px -5px #00000033;
-    --shaded-dark: 0 5px 10px -5px #000;
+    --shaded-light: 0 5px 25px -10px #00000033;
+    --shaded-dark: 0 5px 25px -10px #000;
 }
 
 ::-webkit-scrollbar {
@@ -193,7 +193,8 @@ body{
     /* padding-right: 10px; */
     box-sizing: border-box;
 
-    background-color: #12121299;
+    background-color: var(--dark-layer-1-60);
+    /* background-color: #12121299; */
     -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 0 15px #00000066;
 }
