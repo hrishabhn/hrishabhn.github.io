@@ -357,7 +357,7 @@
     }
 
     .search-container{
-        background-color: var(--light-layer-0);
+        background-color: var(--light-layer-1);
         box-shadow: var(--shaded-light);
     }
     .search-container:hover .search-icon-box{
