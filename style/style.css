@@ -162,6 +162,9 @@ body{
 .title-box-1{
     background: #2c3e50;
 }
+.title-box-2{
+    background: #d35400;
+}
 .title-box-3{
     background: #16a085;
 }
@@ -171,6 +174,9 @@ body{
 @media screen and (prefers-color-scheme: light) {
     .title-box-1{
         background: #34495e;
+    }
+    .title-box-2{
+        background: #e67e22;
     }
     .title-box-3{
         background: #1abc9c;
@@ -1193,8 +1199,8 @@ body{
         right: 0px;
         padding-top: 0px;
         padding-bottom: 25px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
         border-radius: 0px;
         /* box-sizing: border-box; */
     
