@@ -147,6 +147,37 @@ body{
 }
 
 
+.header-box{
+    height: 100px;
+    width: 100%;
+    
+    display: flex;
+    position: relative;
+    /* padding-left: 30px; */
+    padding-bottom: 15px;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    z-index: 50;
+
+    align-content: flex-end;
+    color: var(--light-layer-0);
+}
+.header-text{
+    font-weight: 700;
+    font-size: 32px;
+    background-color: transparent;
+    display: flex;
+    align-self: flex-end;
+
+    cursor: default;
+}
+
+
+
+
+
 .title-box{
     height: 100px;
     width: 100%;
@@ -325,32 +356,23 @@ body{
 
 
 .main-container{
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: fixed;
+    height: 100vh;
     max-width: 100%;
-    z-index: 100;
-
-
-    /* width: 100vw; */
-    /* height: 100vh; */
-    /* box-sizing: border-box; */
-    /* max-width: 100vw; */
-    /* width: calc(100vw - 110px); */
-    /* height: 200px; */
+    z-index: 10;
+    background: var(--black-100);
 }
 
 .main{
-    position: absolute;
-    top: 100px;
+    position: relative;
+    top: 0px;
     left: 0px;
 
     width: 100vw;
-    height: calc(100vh - 100px);
-
-    /* border-radius: 20px; */
+    height: calc(100vh - 0px);
 
     padding: 30px;
-    /* margin-left: 20px; */
-    /* margin-right: 20px; */
 
     box-sizing: border-box;
 
@@ -373,37 +395,12 @@ body{
 }
 
 
-
-.scrolling-wrapper{
-    width: 100vw;
-    /* height: 125px; */
-    box-sizing: border-box;
-
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    /* left: -70px; */
-
-    /* padding-left: 90px; */
-    padding-right: 10px;
-
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x proximity;
-
-    /* display: inline-flex; */
-}
 .scrolling-wrapper-padded{
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: -15px;
     margin-bottom: -15px;
 }
-.scrolling-wrapper-flex{
-    display: flex;
-}
-
 .content-container{
     width: 100%;
     min-height: 1%;
@@ -1121,6 +1118,12 @@ body{
         background-color: var(--light-layer-0);
         /* background-color: #eee; */
     }
+    .main-container{
+        background: var(--white-100);
+    }
+    .header-box{
+        color: var(--dark-layer-0);
+    }
     .title-box{   
         background-color: var(--white-80);
         color: var(--dark-layer-1);
@@ -1229,7 +1232,7 @@ body{
 
         /* width: calc(100vw - 30px); */
         height: calc(100vh - 0px);
-        padding: 150px 20px 100px;
+        padding: 0px 20px 100px;
         
         /* padding-bottom: 115px; */
 
@@ -1241,6 +1244,18 @@ body{
     .main-right{
         left: calc(115vw - 30px);
     }
+    .header-box{
+        height: 140px;
+        /* padding-left: 20px; */
+        padding-bottom: 10px;
+    }
+
+
+
+
+
+
+
 
 
 
@@ -1293,70 +1308,6 @@ body{
         fill: var(--blue-dark);
         color: var(--blue-dark);
     }
-
-    /* .sidebar{
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        width: 100%;
-        height: 25vw;
-        padding: 0px 2.5vw 6vw;
-        position: fixed;
-        z-index: 100;
-        top: auto;
-        bottom: 0px;
-    } */
-    /* .sidebar-menu{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    } */
-
-    /* .menu-item-container{
-        border-radius: 0px;
-        height: 100%;
-        width: 100%;
-    } */
-    /* .menu-item-icon{
-        height: 5.5vw;
-        width: 5.5vw;
-    } */
-    /* .selected{
-        background-color: transparent;
-    } */
-    /* .menu-item .menu-item-icon{
-        transition: 0s;
-    }
-    .menu-item:hover .menu-item-icon{
-        fill: var(--red-100);
-    
-        transition: 0s;
-    }
-    .selected .menu-item-icon{
-        fill: var(--red-100);
-    }
-    .selected:hover .menu-item-icon{
-        fill: var(--red-100);
-    } */
-   
-
-    
-
-    
-    
-
-    
-    .scrolling-wrapper{
-        padding-left: 0;
-        padding-right: 0;
-        width: 100%;
-        left: 0px;
-    }
-
-
-
 
     .content-container{
         /* margin-top: 15px; */
