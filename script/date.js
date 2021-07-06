@@ -189,6 +189,16 @@ function appleTV(){
     // document.getElementById("light-tray").classList.toggle("smarthome-wrapper-hide")
 }
 
+function expandContainer(){
+    if (document.getElementById("expand").classList == "content-container") {
+        document.getElementById("expand").classList = "content-container content-container-expanded"
+        console.log("opening")
+    } else{
+        document.getElementById("expand").classList = "content-container"
+        console.log("closing")
+    }
+}
+
 
 // 22.260, 114.131
 // 22.264, 114.135
