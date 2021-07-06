@@ -19,10 +19,14 @@
     --light-layer-3: #d1d1d6;
 
     --light-layer-1-80: #f2f2f7cc;
-    --dark-layer-1-80: #1c1c1ecc;
-
     --light-layer-1-60: #f2f2f799;
+    --light-layer-1-40: #f2f2f766;
+    --light-layer-1-20: #f2f2f733;
+
+    --dark-layer-1-80: #1c1c1ecc;
     --dark-layer-1-60: #1c1c1e99;
+    --dark-layer-1-40: #1c1c1e66;
+    --dark-layer-1-20: #1c1c1e33;
 
     --black-100: #000;
     --white-100: #fff;
@@ -54,7 +58,7 @@
     --mobile-width: calc(100vw - 30px);
 
     --shaded-light: 0 2.5px 10px 0px #00000033;
-    --shaded-dark:  0 2.5px 10px 0px #000;
+    --shaded-dark:  0 2.5px 10px 0px #00000099;
 
     --shaded-light-hover: 0 2.5px 5px 0px #00000033;
 
@@ -65,7 +69,8 @@
 }
 
 body{
-    background-color: #111;
+    /* background-color: #111; */
+    background-color: var(--dark-layer-0);
     /* -webkit-appearance: none; */
     -webkit-tap-highlight-color: transparent;
     min-height: 100vh;
@@ -79,12 +84,19 @@ body{
 .wallpaper{
     display: block;
     position: fixed;
-    top: 130px;
-    height: calc(100vh - 230px);
+    top: 110px;
+    height: calc(100vh - 110px);
     width: 100%;
 
     transition: 0.25s;
     background-size: cover;
+
+    background:
+        linear-gradient(red, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+    /* opacity: 0.4; */
     /* background: url(../images/grad.png); */
     /* background: linear-gradient(to bottom right, #373B44, #4286f4); */
 }
@@ -96,7 +108,7 @@ body{
     height: 100%;
     width: 100%;
 
-    /* background: var(--black-20); */
+    background: var(--black-80);
     /* -webkit-backdrop-filter: blur(100px); */
 }
 
@@ -399,8 +411,10 @@ body{
 
     padding-bottom: 15px;
 
-    background: var(--dark-layer-1);
+    background: var(--dark-layer-1-20);
     overflow: hidden;
+
+    -webkit-backdrop-filter: blur(100px);
 
     box-shadow: var(--shaded-dark);
 }
@@ -588,8 +602,8 @@ body{
     scroll-margin-left: 15px;
 }
 .tap-container:hover{
-    scale: 0.95;
-    box-shadow: var(--shaded-light-hover);
+    /* scale: 0.95; */
+    /* box-shadow: var(--shaded-light-hover); */
     /* transform: translateY(5px); */
 }
 .tap-icon-container{
@@ -1086,6 +1100,9 @@ body{
         /* background: var(--light-layer-1) */
 
     /* } */
+    .wallpaper-blur{
+        background: var(--white-80);
+    }
     .wp-3{
         background:linear-gradient(to bottom,#191,#090);
     }
