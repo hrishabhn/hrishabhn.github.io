@@ -1245,9 +1245,9 @@ body{
         left: calc(115vw - 30px);
     }
     .header-box{
-        height: 140px;
+        height: 130px;
         /* padding-left: 20px; */
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
 
 
