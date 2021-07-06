@@ -6,7 +6,7 @@ function mainPage1(){
   document.getElementById("menu-1").className = "menu-item selected";
   document.getElementById("menu-2").className = "menu-item";
   document.getElementById("menu-3").className = "menu-item";
-  // document.getElementById("menu-4").className = "menu-item";
+  document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item";
 
   // document.getElementById("title-text").innerHTML = "Home";
@@ -24,7 +24,7 @@ function mainPage2(){
   document.getElementById("menu-1").className = "menu-item";
   document.getElementById("menu-2").className = "menu-item selected";
   document.getElementById("menu-3").className = "menu-item";
-  // document.getElementById("menu-4").className = "menu-item";
+  document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item";
 
   // document.getElementById("title-text").innerHTML = "Bookmarks";
@@ -42,7 +42,7 @@ function mainPage3(){
   document.getElementById("menu-1").className = "menu-item";
   document.getElementById("menu-2").className = "menu-item";
   document.getElementById("menu-3").className = "menu-item selected";
-  // document.getElementById("menu-4").className = "menu-item";
+  document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item";
 
   // document.getElementById("title-text").innerHTML = "Apps";
@@ -60,11 +60,11 @@ function mainPage4(){
   document.getElementById("menu-1").className = "menu-item";
   document.getElementById("menu-2").className = "menu-item";
   document.getElementById("menu-3").className = "menu-item";
-  // document.getElementById("menu-4").className = "menu-item selected";
+  document.getElementById("menu-4").className = "menu-item selected";
   document.getElementById("menu-5").className = "menu-item";
 
-  // document.getElementById("title-text").innerHTML = "idk";
-  document.getElementById("title-page").innerHTML = "idk";
+  // document.getElementById("title-text").innerHTML = "School";
+  document.getElementById("title-page").innerHTML = "School";
   // document.getElementById("title-box").className = "title-box title-box-4";
 
   document.getElementById("main-1").className = "main-left main";
@@ -78,7 +78,7 @@ function mainPage5(){
   document.getElementById("menu-1").className = "menu-item";
   document.getElementById("menu-2").className = "menu-item";
   document.getElementById("menu-3").className = "menu-item";
-  // document.getElementById("menu-4").className = "menu-item";
+  document.getElementById("menu-4").className = "menu-item";
   document.getElementById("menu-5").className = "menu-item selected";
 
   // document.getElementById("title-text").innerHTML = "Media";
