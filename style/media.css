@@ -336,7 +336,6 @@
     /* border-radius: 40pt; */
     z-index: 5;
     justify-self: center;
-    display: none;
 }
 .tv-popup-tab{
     display: block;
