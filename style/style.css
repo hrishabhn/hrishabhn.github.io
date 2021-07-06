@@ -865,6 +865,8 @@ body{
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x proximity;
+
+    display: none;
 }
 .anchor-container{
     height: 100%;
