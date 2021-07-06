@@ -11,7 +11,7 @@ function mainPage1(){
 
   document.getElementById("title-text").innerHTML = "Home";
   document.getElementById("title-page").innerHTML = "Home";
-  document.getElementById("title-box").className = "title-box title-box-1";
+  // document.getElementById("title-box").className = "title-box title-box-1";
 
   document.getElementById("main-1").className = "main";
   document.getElementById("main-2").className = "main-right main";
@@ -29,7 +29,7 @@ function mainPage2(){
 
   document.getElementById("title-text").innerHTML = "Bookmarks";
   document.getElementById("title-page").innerHTML = "Bookmarks";
-  document.getElementById("title-box").className = "title-box title-box-2";
+  // document.getElementById("title-box").className = "title-box title-box-2";
 
   document.getElementById("main-1").className = "main-left main";
   document.getElementById("main-2").className = "main";
@@ -47,7 +47,7 @@ function mainPage3(){
 
   document.getElementById("title-text").innerHTML = "Apps";
   document.getElementById("title-page").innerHTML = "Apps";
-  document.getElementById("title-box").className = "title-box title-box-3";
+  // document.getElementById("title-box").className = "title-box title-box-3";
 
   document.getElementById("main-1").className = "main-left main";
   document.getElementById("main-2").className = "main-left main";
@@ -65,7 +65,7 @@ function mainPage4(){
 
   document.getElementById("title-text").innerHTML = "idk";
   document.getElementById("title-page").innerHTML = "idk";
-  document.getElementById("title-box").className = "title-box title-box-4";
+  // document.getElementById("title-box").className = "title-box title-box-4";
 
   document.getElementById("main-1").className = "main-left main";
   document.getElementById("main-2").className = "main-left main";
@@ -83,7 +83,7 @@ function mainPage5(){
 
   document.getElementById("title-text").innerHTML = "Media";
   document.getElementById("title-page").innerHTML = "Media";
-  document.getElementById("title-box").className = "title-box title-box-5";
+  // document.getElementById("title-box").className = "title-box title-box-5";
 
   document.getElementById("main-1").className = "main-left main";
   document.getElementById("main-2").className = "main-left main";
