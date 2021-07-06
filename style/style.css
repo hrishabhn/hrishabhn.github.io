@@ -168,7 +168,6 @@ body{
     background-color: var(--black-80);
 
     -webkit-backdrop-filter: blur(25px);
-    /* display: none; */
 }
 .title-text{
     font-weight: 700;
@@ -337,7 +336,6 @@ body{
     /* max-width: 100vw; */
     /* width: calc(100vw - 110px); */
     /* height: 200px; */
-    /* display: none; */
 }
 
 .main{
@@ -362,9 +360,6 @@ body{
     white-space: nowrap;
     overflow-y: scroll;
     overflow-x: hidden;
-
-    /* transition: 0.25s; */
-    /* display: none; */
 }
 .main-left{
     left: calc(90px - 100vw);
@@ -948,7 +943,6 @@ body{
     transition: all 0.2s;
     transition-timing-function: ease-in-out;
     pointer-events: none;
-    /* display: none; */
 }
 .background-blur-show{
     -webkit-backdrop-filter: blur(10px);
@@ -1415,7 +1409,6 @@ body{
         transition: 0.25s;
     }
     .app-text{
-        /* display: none; */
         font-size: 12px;
         padding: 0px;
     }
