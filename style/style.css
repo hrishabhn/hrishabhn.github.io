@@ -412,10 +412,10 @@ body{
 
     border-radius: 15px;
 
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 
     background: var(--dark-layer-1);
-    overflow: hidden;
+    overflow: visible;
 
     -webkit-backdrop-filter: blur(100px);
 
@@ -452,21 +452,21 @@ body{
     display: block;
     position: relative;
     height: 100px;
-    width: 100px;
-    background: aqua;
+    width: calc((100vw - 100px) / 2);
+    background: green;
 
-    margin: 20px;
-    border-radius: 20px;
+    margin: 0px 20px 10px;
+    border-radius: 10px;
 
     /* box-shadow: var(--element-light); */
     transition: all 0.2s;
 }
 .new-button:hover{
-    scale: 1.02;
+    scale: 1.1  ;
     box-shadow: var(--element-light-hover);
 }
 .new-button:active{
-    scale: 0.98;
+    scale: 0.95;
     box-shadow: var(--element-light);
 }
 
