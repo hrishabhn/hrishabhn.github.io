@@ -172,8 +172,8 @@ body{
     /* display: none; */
 }
 .title-text{
-    font-weight: 600;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 32px;
     /* color: var(--light-layer-0); */
     background-color: transparent;
     display: flex;
