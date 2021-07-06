@@ -58,7 +58,7 @@
     --mobile-width: calc(100vw - 30px);
 
     --shaded-light: 0 2.5px 10px 0px #00000033;
-    --shaded-dark:  0 2.5px 10px 0px #00000099;
+    --shaded-dark:  0 2.5px 10px 0px #000000ff;
 
     --shaded-light-hover: 0 2.5px 5px 0px #00000033;
 
@@ -69,8 +69,8 @@
 }
 
 body{
-    /* background-color: #111; */
-    background-color: var(--dark-layer-0);
+    background-color: #111;
+    /* background-color: var(--dark-layer-0); */
     /* -webkit-appearance: none; */
     -webkit-tap-highlight-color: transparent;
     min-height: 100vh;
@@ -411,7 +411,7 @@ body{
 
     padding-bottom: 15px;
 
-    background: var(--dark-layer-1-20);
+    background: var(--dark-layer-1);
     overflow: hidden;
 
     -webkit-backdrop-filter: blur(100px);
