@@ -57,7 +57,7 @@
 
     --mobile-width: calc(100vw - 30px);
 
-    --shaded-light: 0 5px 30px -5px #00000033;
+    --shaded-light: 0 10px 30px 0px var(--black-20);
     --shaded-dark:  0 5px 30px -5px #000000ff;
 
     --element-light: 0 5px 10px -5px #00000066;
@@ -459,15 +459,15 @@ body{
 .new-button{
     display: block;
     position: relative;
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     background: aqua;
 
     margin: 20px;
     border-radius: 20px;
 
     box-shadow: var(--element-light);
-    transition: all 0.15s;
+    transition: all 0.2s;
 }
 .new-button:hover{
     scale: 1.05;
@@ -475,10 +475,6 @@ body{
 }
 .new-button:active{
     scale: 0.95;
-    box-shadow: var(--element-light);
-}
-.new-button:visited{
-    scale: 1;
     box-shadow: var(--element-light);
 }
 
