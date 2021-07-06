@@ -408,7 +408,7 @@ body{
     top: 0px;
     left: 0px;
 
-    margin-top: 25px;
+    margin-top: 20px;
 
     border-radius: 15px;
 
@@ -1232,7 +1232,7 @@ body{
 
         /* width: calc(100vw - 30px); */
         height: calc(100vh - 0px);
-        padding: 0px 20px 100px;
+        padding: 0px 20px 105px;
         
         /* padding-bottom: 115px; */
 
