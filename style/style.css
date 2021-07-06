@@ -57,8 +57,13 @@
 
     --mobile-width: calc(100vw - 30px);
 
-    --shaded-light: 0 2.5px 30px 0px #00000033;
-    --shaded-dark:  0 2.5px 30px 0px #000000ff;
+    --shaded-light: 0 5px 30px -5px #00000033;
+    --shaded-dark:  0 5px 30px -5px #000000ff;
+
+    --element-light: 0 5px 10px -5px #00000066;
+    --element-dark:  0 5px 30px -5px #000000ff;
+
+    --element-light-hover: 0 10px 15px -5px #00000066;
 
     --shaded-light-hover: 0 2.5px 5px 0px #00000033;
 
@@ -69,8 +74,8 @@
 }
 
 body{
-    background-color: #111;
-    /* background-color: var(--dark-layer-0); */
+    /* background-color: #111; */
+    background-color: var(--dark-layer-0);
     /* -webkit-appearance: none; */
     -webkit-tap-highlight-color: transparent;
     min-height: 100vh;
@@ -406,11 +411,14 @@ body{
 
 .content-container{
     width: 100%;
+    min-height: 1%;
     position: relative;
+    top: 0px;
+    left: 0px;
 
-    margin-top: 20px;
+    margin-top: 15px;
 
-    border-radius: 8px;
+    border-radius: 15px;
 
     padding-bottom: 25px;
 
@@ -420,13 +428,23 @@ body{
     -webkit-backdrop-filter: blur(100px);
 
     box-shadow: var(--shaded-dark);
+    transition: all 0.25s
+}
+.content-container-expanded{
+    min-height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* bottom: 0px; */
+    z-index: 300;
+    background: blue !important;
 }
 
 .content-text-box{
     box-sizing: border-box;
-    padding-left: 25px;
-    padding-top: 22px;
-    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-top: 17px;
+    padding-bottom: 10px;
     margin: 0;
     width: 100%;
 
@@ -435,9 +453,38 @@ body{
 .content-text{
     font-weight: 500;
     font-size: 16px;
-    color: var(--white-100);
+    color: var(--white-80);
     cursor: default;
 }
+.new-button{
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background: aqua;
+
+    margin: 20px;
+    border-radius: 20px;
+
+    box-shadow: var(--element-light);
+    transition: all 0.15s;
+}
+.new-button:hover{
+    scale: 1.05;
+    box-shadow: var(--element-light-hover);
+}
+.new-button:active{
+    scale: 0.95;
+    box-shadow: var(--element-light);
+}
+.new-button:visited{
+    scale: 1;
+    box-shadow: var(--element-light);
+}
+
+
+
+
 
 
 .app-tray-wrapper{
@@ -595,7 +642,7 @@ body{
     /* background: var(--dark-layer-1); */
     transform-origin: bottom;
 
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-right: 10px;
 
     box-shadow: var(--shaded-light);
@@ -603,6 +650,7 @@ body{
 
     scroll-snap-align: start;
     scroll-margin-left: 15px;
+    display: none;
 }
 .tap-container:hover{
     /* scale: 0.95; */
@@ -1085,7 +1133,7 @@ body{
         /* background-color: var(--light-layer-2); */
     }
     .title-text{
-        /* color: var(--dark-layer-1); */
+        color: var(--dark-layer-0);
     }
     .content-text{
         color: var(--dark-layer-1);
@@ -1191,7 +1239,7 @@ body{
 
         /* width: calc(100vw - 30px); */
         height: calc(100vh - 110px);
-        padding: 15px 25px 100px;
+        padding: 15px 20px 100px;
         
         /* padding-bottom: 115px; */
 
@@ -1220,7 +1268,7 @@ body{
         height: 110px;
 
         margin-left: 0px;
-        padding-left: 15px;
+        padding-left: 20px;
         padding-bottom: 10px;
     }
     .title-box-smaller{
@@ -1321,7 +1369,7 @@ body{
 
 
     .content-container{
-        margin-top: 20px;
+        /* margin-top: 15px; */
     }
     
     
