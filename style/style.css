@@ -574,21 +574,23 @@ body{
     width: calc((100vw - 40px) / 2);
     /* max-width: 100px; */
     height: 120px;
-    border-radius: 10px;
+    border-radius: 15px;
     /* background: var(--dark-layer-1); */
+    transform-origin: bottom;
 
     margin-top: 10px;
     margin-right: 10px;
 
     box-shadow: var(--shaded-light);
-    transition: all 0.25s;
+    transition: all 0.15s;
 
     scroll-snap-align: start;
     scroll-margin-left: 15px;
 }
 .tap-container:hover{
+    scale: 0.95;
     box-shadow: var(--shaded-light-hover);
-    transform: translateY(5px);
+    /* transform: translateY(5px); */
 }
 .tap-icon-container{
     display: inline-flex;
