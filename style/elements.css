@@ -23,7 +23,9 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    width: calc((100vw - 280px - 70px) / 2);
+    vertical-align: top;
+    width: calc((100% - 10px) / 2);
+    /* width: calc((100vw - 280px - 70px) / 2); */
     /* max-width: 100px; */
     height: 120px;
     border-radius: 15px;
