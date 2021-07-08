@@ -1,0 +1,40 @@
+
+.new-button{
+    display: block;
+    position: relative;
+    height: 100px;
+    width: calc((100vw - 100px) / 2);
+    max-height: 50px;
+    max-width: 50px;
+    background: green;
+
+    margin: 0px 20px 10px;
+    border-radius: 10px;
+
+    /* box-shadow: var(--element-light); */
+    transition: all 0.2s;
+}
+.new-button:active{
+    scale: 0.9;
+    box-shadow: var(--element-light);
+}
+
+
+
+
+@media screen and (prefers-color-scheme: light) {
+   
+}
+
+
+
+@media(min-width: 450px){
+    .new-button:hover{
+        scale: 1.1  ;
+        box-shadow: var(--element-light-hover);
+    }
+    .new-button:active{
+        scale: 0.95;
+        box-shadow: var(--element-light);
+    }
+}
