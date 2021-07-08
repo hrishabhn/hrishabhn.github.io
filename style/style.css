@@ -1150,6 +1150,7 @@ body{
         margin-left: 0px;
         margin-top: 5px;
         font-size: 10px;
+        font-weight: 500;
     }
     .menu-item:hover{
         fill: var(--blue-dark);
