@@ -448,27 +448,6 @@ body{
     color: var(--white-80);
     cursor: default;
 }
-.new-button{
-    display: block;
-    position: relative;
-    height: 100px;
-    width: calc((100vw - 100px) / 2);
-    background: green;
-
-    margin: 0px 20px 10px;
-    border-radius: 10px;
-
-    /* box-shadow: var(--element-light); */
-    transition: all 0.2s;
-}
-.new-button:hover{
-    scale: 1.1  ;
-    box-shadow: var(--element-light-hover);
-}
-.new-button:active{
-    scale: 0.95;
-    box-shadow: var(--element-light);
-}
 
 
 
