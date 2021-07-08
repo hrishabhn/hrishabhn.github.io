@@ -281,6 +281,8 @@
 
 .smarthome-card{
     display: flex;
+    position: relative;
+    /* justify-content: right; */
     vertical-align: top;
     /* height: 80px; */
     width: 100%;
@@ -303,6 +305,7 @@
     align-items: center;
     height: 80px;
     width: 80px;
+    min-width: 80px;
     border-radius: 25px;
 
     /* background-color: rebeccapurple; */
@@ -312,6 +315,31 @@
     width: 30px;
     fill: white;
     /* background-color: blue; */
+}
+.smarthome-tray{
+    display: inline-flex;
+    /* flex-direction: row; */
+    /* flex-direction: row; */
+    /* align-self: flex-end; */
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 15px;
+
+    /* background-color: aquamarine; */
+
+    /* width: ; */
+    height: 80px;
+    width: 100%;
+}
+.smarthome-scene{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 0px 5px;
+
+    /* background-color: blueviolet; */
 }
 
 
