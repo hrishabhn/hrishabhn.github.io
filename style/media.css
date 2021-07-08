@@ -331,8 +331,8 @@
     width: 100vw;
     height: auto;
     max-height: 100vh;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     /* border-radius: 40pt; */
     z-index: 5;
     justify-self: center;
@@ -364,7 +364,7 @@
     margin-bottom: 0px;
     padding-bottom: 5vw;
 
-    box-shadow: 0 0 30px var(--black-100);
+    box-shadow: 0 0 50px var(--black-100);
 
     overflow: hidden;
 }
