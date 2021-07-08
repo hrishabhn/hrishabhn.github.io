@@ -19,7 +19,7 @@
     scroll-margin-left: 15px;
 }
 .tv-media-card:hover{
-    scale: 0.95;
+    scale: 1.01;
     overflow: hidden;
 }
 
