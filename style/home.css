@@ -338,8 +338,10 @@
     width: 50px;
     border-radius: 25px;
     margin: 0px 5px;
-
-    /* background-color: blueviolet; */
+    transition: all 0.15s;
+}
+.smarthome-scene:active{
+    scale: 0.95;
 }
 
 
