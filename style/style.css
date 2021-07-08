@@ -195,6 +195,7 @@ body{
     box-sizing: border-box;
 
     background-color: var(--dark-layer-1-80);
+    border-right: solid var(--white-10) 0.1px;
     /* background-color: #12121299; */
     /* -webkit-backdrop-filter: blur(20px); */
     /* box-shadow: 0 0 15px #00000066; */
@@ -232,7 +233,7 @@ body{
     width: 100%;
     border-radius: inherit;
 
-    color: var(--white-40);
+    color: var(--white-60);
     fill: var(--blue-dark);
 }
 .menu-item-icon{
@@ -972,10 +973,11 @@ body{
 
     .navbar{
         background-color: var(--light-layer-1-80);
+        border-right: solid var(--black-10) 0.1px;
     }
 
     .menu-item{
-        color: var(--black-40);
+        color: var(--black-60);
         fill: var(--blue-light);
     }
     .menu-item:hover{
@@ -1119,7 +1121,7 @@ body{
         /* padding-bottom: 25px;
         padding-left: 0px;
         padding-right: 0px; */
-        border-top: solid var(--white-20) 0.1px;
+        border-top: solid var(--white-10) 0.1px;
 
         /* box-sizing: border-box; */
     
@@ -1141,6 +1143,7 @@ body{
     .menu-item{
         flex-direction: column;
         fill: var(--white-40);
+        color: var(--white-40);
     }
     .menu-item-icon{
         height: 20px;
@@ -1242,10 +1245,11 @@ body{
 
     @media screen and (prefers-color-scheme: light) {
         .navbar{
-            border-top: solid var(--black-20) 0.1px;
+            border-top: solid var(--black-10) 0.1px;
         }
         .menu-item{
             fill: var(--black-40);
+            color: var(--black-40);
         }
         .menu-item:hover{
             fill: var(--blue-light);
