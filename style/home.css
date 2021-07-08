@@ -280,13 +280,41 @@
 
 
 .smarthome-card{
-    padding-left: 15px;
+    display: flex;
+    vertical-align: top;
+    /* height: 80px; */
+    width: 100%;
+    box-sizing: border-box;
+
+    padding-left: 20px;
+    margin-bottom: 10px;
+    /* background-color: blue; */
+    /* padding-left: 15px; */
 
     /* padding-bottom: 0px; */
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
+    /* overflow-x: scroll; */
+    /* scroll-snap-type: x proximity; */
     /* margin-bottom: 10px; */
 }
+.smarthome-app{
+    display: inline-flex;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 25px;
+
+    /* background-color: rebeccapurple; */
+}
+.smarthome-app-icon{
+    height: 30px;
+    width: 30px;
+    fill: white;
+    /* background-color: blue; */
+}
+
+
 
 .smarthome-wrapper{
     width: 100%;
