@@ -1115,11 +1115,12 @@ body{
         /* z-index: 100; */
         /* bottom: 0px; */
         /* right: 0px; */
-        padding-top: 0px;
-        padding-bottom: 25px;
+        padding: 0px 0px 25px;
+        /* padding-bottom: 25px;
         padding-left: 0px;
-        padding-right: 0px;
-        border-radius: 0px;
+        padding-right: 0px; */
+        border-top: solid var(--white-20) 0.1px;
+
         /* box-sizing: border-box; */
     
         /* background-color: var(--black-40); */
@@ -1240,6 +1241,9 @@ body{
     }
 
     @media screen and (prefers-color-scheme: light) {
+        .navbar{
+            border-top: solid var(--black-20) 0.1px;
+        }
         .menu-item{
             fill: var(--black-40);
         }
