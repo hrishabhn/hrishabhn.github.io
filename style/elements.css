@@ -12,12 +12,9 @@
     border-radius: 10px;
 
     /* box-shadow: var(--element-light); */
-    transition: all 0.2s;
+    transition: all 0.15s;
 }
-.new-button:active{
-    scale: 0.9;
-    box-shadow: var(--element-light);
-}
+
 
 
 
@@ -37,4 +34,104 @@
         scale: 0.95;
         box-shadow: var(--element-light);
     }
+    .tap-container:hover{
+        scale: 1.1;
+    }
+}
+
+@media(max-width: 450px){
+    .new-button{
+        max-width: initial;
+        max-height: initial;
+    }
+    .new-button:active{
+        scale: 0.9;
+    }
+    .tap-container:active{
+        scale: 0.9;
+    }
+    
+}
+
+
+.tap-container{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: calc((100vw - 50px) / 2);
+    /* max-width: 100px; */
+    height: 120px;
+    border-radius: 15px;
+
+    margin-top: 20px;
+    margin-right: 10px;
+
+    box-shadow: var(--shaded-light);
+    transition: all 0.15s;
+
+    /* scroll-snap-align: start; */
+    /* scroll-margin-left: 15px; */
+    /* display: none; */
+}
+
+.tap-icon-container{
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    top: 15px;
+    left: 15px;
+
+    /* width: 58px; */
+    /* height: 58px; */
+    /* border-radius: 25px; */
+
+    transition: 0.25s;
+
+    /* background-color: var(--black-20); */
+}
+.tap-icon{
+    fill: var(--white-100);
+    height: 30px;
+    /* min-width: 10px; */
+    width: 30px;
+    /* max-height: 22px; */
+    transition: 0.25s;
+    /* background-size: contain; */
+}
+.tap-text{
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    bottom: 15px;
+    left: 15px;
+    /* padding-left: 5px; */
+
+    transition: inherit;
+
+    color: var(--white-100);
+    font-size: 16px;
+    font-weight: 500;
+}
+.tap-link{
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    top: 0px;
+    left: 0px;
+
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
 }
