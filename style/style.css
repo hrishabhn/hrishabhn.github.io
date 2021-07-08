@@ -388,8 +388,8 @@ body{
     align-items: center;
     position: relative;
 
-    padding-left: 25px;
-    padding-right: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
 
     white-space: nowrap;
     overflow-x: scroll;
@@ -405,8 +405,8 @@ body{
     align-items: center;
     position: relative;
 
-    padding-left: 25px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
 
     white-space: nowrap;
     overflow-x: scroll;
