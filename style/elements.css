@@ -18,49 +18,12 @@
 
 
 
-
-@media screen and (prefers-color-scheme: light) {
-   
-}
-
-
-
-@media(min-width: 450px){
-    .new-button:hover{
-        scale: 1.1  ;
-        box-shadow: var(--element-light-hover);
-    }
-    .new-button:active{
-        scale: 0.95;
-        box-shadow: var(--element-light);
-    }
-    .tap-container:hover{
-        scale: 1.1;
-    }
-}
-
-@media(max-width: 450px){
-    .new-button{
-        max-width: initial;
-        max-height: initial;
-    }
-    .new-button:active{
-        scale: 0.9;
-    }
-    .tap-container:active{
-        /* scale: 0.9; */
-        opacity: 0.75;
-    }
-    
-}
-
-
 .tap-container{
     display: inline-flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    width: calc((100vw - 50px) / 2);
+    width: calc((100vw - 280px - 70px) / 2);
     /* max-width: 100px; */
     height: 120px;
     border-radius: 15px;
@@ -74,6 +37,10 @@
     /* scroll-snap-align: start; */
     /* scroll-margin-left: 15px; */
     /* display: none; */
+}
+.tap-container:active{
+    /* scale: 0.9; */
+    opacity: 0.75;
 }
 
 .tap-icon-container{
@@ -136,3 +103,41 @@
     width: 100%;
     z-index: 3;
 }
+
+
+@media screen and (prefers-color-scheme: light) {
+   
+}
+
+
+
+@media(min-width: 450px){
+    .new-button:hover{
+        scale: 1.1  ;
+        box-shadow: var(--element-light-hover);
+    }
+    .new-button:active{
+        scale: 0.95;
+        box-shadow: var(--element-light);
+    }
+}
+
+@media(max-width: 450px){
+    .new-button{
+        max-width: initial;
+        max-height: initial;
+    }
+    .new-button:active{
+        scale: 0.9;
+    }
+
+
+
+
+    .tap-container{
+        width: calc((100vw - 50px) / 2);
+    }
+    
+    
+}
+
