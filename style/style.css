@@ -289,6 +289,7 @@ body{
     height: auto;
     width: calc(100vw - 280px);
     z-index: 10;
+    background: var(--black-100);
 }
 
 .main{
@@ -936,6 +937,9 @@ body{
         background-color: var(--light-layer-0);
         /* background-color: #eee; */
     }
+    .main-container{
+        background: var(--white-100);
+    }
     .header-box{
         color: var(--dark-layer-0);
     }
@@ -969,18 +973,42 @@ body{
     .navbar{
         background-color: var(--light-layer-1-80);
     }
+
     .menu-item{
         color: var(--black-40);
-        fill: var(--black-40);
+        fill: var(--blue-light);
+    }
+    .menu-item:hover{
+        color: var(--black-100);
     }
     .selected{
-        fill: var(--blue-light);
-        color: var(--blue-light);
+        fill: var(--white-100);
+        color: var(--white-100);
+        background-color: var(--blue-light);
     }
     .selected:hover{
+        color: var(--white-100);
+    }
+
+
+
+
+
+
+
+
+    /* .menu-item{
+        color: var(--black-40);
+        fill: var(--black-40);
+    } */
+    /* .selected{
         fill: var(--blue-light);
         color: var(--blue-light);
-    }
+    } */
+    /* .selected:hover{
+        fill: var(--blue-light);
+        color: var(--blue-light);
+    } */
     .content-container{
         background: var(--light-layer-0);
         box-shadow: var(--shaded-light);
@@ -1211,6 +1239,21 @@ body{
     }
 
     @media screen and (prefers-color-scheme: light) {
-
+        .menu-item{
+            fill: var(--black-40);
+        }
+        .menu-item:hover{
+            fill: var(--blue-light);
+            color: var(--blue-light);
+        }
+        .selected{
+            background: none;
+            fill: var(--blue-light);
+            color: var(--blue-light);
+        }
+        .selected:hover{
+            fill: var(--blue-light);
+            color: var(--blue-light);
+        }
     }
 }
