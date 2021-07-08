@@ -320,7 +320,7 @@
     align-items: center;
     justify-content: flex-end;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 0 15px;
 
     /* background-color: aquamarine; */
 
@@ -333,19 +333,23 @@
     vertical-align: top;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
     margin: 0px 5px;
     transition: all 0.15s;
 }
 .smarthome-scene-icon{
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     fill: white;
 }
+/* .smarthome-scene:hover{
+    scale: 1.1;
+    box-shadow: var(--shaded-light);
+} */
 .smarthome-scene:active{
-    scale: 0.95;
+    scale: 0.9;
 }
 
 
