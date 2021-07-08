@@ -181,7 +181,7 @@ body{
 
 .navbar{
     height: 100%;
-    width: 300px;
+    width: 280px;
     position: fixed;
     z-index: 100;
     bottom: 0px;
@@ -217,10 +217,7 @@ body{
     height: 45px;
     border-radius: 15px;
 
-    /* padding-left: 15px; */
-
     z-index: 10;
-    /* background-color: gray; */
 }
 .menu-item{
     display: flex;
@@ -234,29 +231,41 @@ body{
     height: 100%;
     width: 100%;
     border-radius: inherit;
-    transition: all 0.25s;
 
     color: var(--white-40);
-    fill: var(--white-40);
+    fill: var(--blue-dark);
 }
 .menu-item-icon{
     display: block;
     height: 18px;
     width: 18px;
-    /* min-height: 20px; */
-    /* min-width: 20px; */
     padding: 0px 18px;
 }
 .menu-item-text{
     display: flex;
     justify-content: left;
-    /* margin-left: 15px; */
     height: auto;
     width: 100%;
     font-weight: 400;
     font-size: 14px;
+    transition: all 0.1s;
 }
 .menu-item:hover{
+    /* fill: var(--white-100); */
+    color: var(--white-100);
+}
+.selected{
+    fill: var(--white-100);
+    color: var(--white-100);
+    background-color: var(--blue-dark);
+}
+.selected:hover{
+    /* fill: var(--blue-dark); */
+    color: var(--white-100);
+}
+
+
+/* .menu-item:hover{
     fill: var(--blue-dark);
     color: var(--blue-dark);
 }
@@ -267,18 +276,16 @@ body{
 .selected:hover{
     fill: var(--blue-dark);
     color: var(--blue-dark);
-}
-
-
+} */
 
 
 .main-container{
     /* overflow: hidden; */
     position: fixed;
     top: 0px;
-    left: 300px;
+    left: 280px;
     height: auto;
-    width: calc(100vw - 300px);
+    width: calc(100vw - 280px);
     z-index: 10;
 }
 
@@ -1101,8 +1108,8 @@ body{
         padding-left: 0px;
     }
     .menu-item{
-        transition: all 0s;
         flex-direction: column;
+        fill: var(--white-40);
     }
     .menu-item-icon{
         height: 20px;
@@ -1114,9 +1121,19 @@ body{
         margin-top: 5px;
         font-size: 10px;
     }
+    .menu-item:hover{
+        fill: var(--blue-dark);
+        color: var(--blue-dark);
+    }
 
-    .content-container{
-        /* margin-top: 15px; */
+    .selected{
+        background: none;
+        fill: var(--blue-dark);
+        color: var(--blue-dark);
+    }
+    .selected:hover{
+        fill: var(--blue-dark);
+        color: var(--blue-dark);
     }
     
     
