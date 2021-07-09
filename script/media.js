@@ -1429,7 +1429,7 @@ function homeTVPopulate(){
   // var showPage = "TV/pages/tv-page-";
   // var linkEnd = ".html"
 
-  for (i = 1; i < 3; i++){
+  for (i = 1; i < 11; i++){
     var itemid = [
       "tv-card-".concat(i),
       "tv-link-".concat(i),
