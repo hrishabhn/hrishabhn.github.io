@@ -73,6 +73,7 @@
     display: flex;
     position: absolute;
     bottom: 0px;
+    vertical-align: bottom;
 
     height: 75%;
     width: 100%;
