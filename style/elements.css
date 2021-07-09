@@ -34,7 +34,7 @@
     margin-right: 10px;
 
     box-shadow: var(--shaded-light);
-    transition: all 0.15s;
+    transition: all 0.25s;
 
     /* scroll-snap-align: start; */
     /* scroll-margin-left: 15px; */
