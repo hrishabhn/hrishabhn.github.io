@@ -4,12 +4,12 @@
 
 .media-tray{
     position: relative;
-    /* white-space: nowrap; */
-    /* overflow-x: scroll; */
+    white-space: nowrap;
+    overflow-x: scroll;
     /* z-index: 1000; */
 
-    /* margin: -50px -20px; */
-    /* padding: 70px 20px 50px; */
+    margin: -50px -20px;
+    padding: 70px 20px 50px 20px;
     /* padding-top: 60px; */
 
 
@@ -20,19 +20,24 @@
     left: 0px;
     z-index: 0;
 
-    margin-top: 10px;
+    /* margin-top: 10px; */
 
     border-radius: 15px;
 
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 
-    overflow: visible;
+    /* overflow: visible; */
 
-    box-shadow: var(--shaded-light);
+    /* box-shadow: var(--shaded-light); */
     transition: all 0.25s
 }
 .media-tray:active{
     /* scale: 0.9; */
+}
+.media-tray-pad{
+    display: inline-flex;
+    height: 100%;
+    width: 10px;
 }
 
 .tv-card{
@@ -48,7 +53,7 @@
     border-radius: 15px;
     overflow: hidden;
 
-    margin-right: 10px;
+    /* margin-right: 10px; */
     /* margin-bottom: 0px; */
     transition: all 0.15s;
     /* background-color: blueviolet; */
@@ -58,6 +63,28 @@
 }
 
 .tv-card:active{
+    /* scale: 0.95; */
+}
+.tv-card-play{
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+
+
+    transition: all 0.15s;
+    box-shadow: var(--shaded-light);
+    background-color: var(--black-20);
+    -webkit-backdrop-filter: blur(10px);
+}
+.tv-card-play:hover{
+    /* scale: 1.1; */
+}
+.tv-card-play:active{
     scale: 0.9;
 }
 
