@@ -340,6 +340,7 @@ body{
     position: relative;
     top: 0px;
     left: 0px;
+    z-index: 0;
 
     margin-top: 20px;
 
@@ -352,9 +353,10 @@ body{
 
     -webkit-backdrop-filter: blur(100px);
 
-    box-shadow: var(--shaded-dark);
+    box-shadow: var(--shaded-light);
     transition: all 0.25s
 }
+
 .content-container-expanded{
     min-height: 100%;
     position: absolute;
@@ -381,6 +383,33 @@ body{
     color: var(--white-80);
     cursor: default;
 }
+
+.media-tray{
+    width: 100%;
+    min-height: 1%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+
+    margin-top: 20px;
+
+    border-radius: 15px;
+
+    padding-bottom: 0px;
+
+    overflow: visible;
+
+    box-shadow: var(--shaded-light);
+    transition: all 0.25s
+}
+
+
+
+
+
+
+
 
 
 
@@ -1018,7 +1047,7 @@ body{
     } */
     .content-container{
         background: var(--light-layer-0);
-        box-shadow: var(--shaded-light);
+        /* box-shadow: var(--shaded-light); */
     }
 
     .app-popup-card{
@@ -1072,6 +1101,8 @@ body{
     .main-container{
         left: 0px;
         width: 100vw;
+        min-width: none;
+        max-width: none;
     }
     .main{
         top: 0px;
@@ -1118,6 +1149,8 @@ body{
     .navbar{
         height: 85px;
         width: 100%;
+        min-width: none;
+        max-width: none;
         /* position: fixed; */
         /* z-index: 100; */
         /* bottom: 0px; */
