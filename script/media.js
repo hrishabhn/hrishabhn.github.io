@@ -81,7 +81,7 @@ show1 = [
 ]
 
 // Always sunny
-show3 = [
+show2 = [
   "always-solid",
   "always-poster",
   "always-gradient",
@@ -99,7 +99,7 @@ show3 = [
 
 
 // Love Death Robots
-show4 = [
+show3 = [
   "ldr-solid",
   "ldr-poster",
   "ldr-gradient",
@@ -1422,34 +1422,26 @@ function tvPage(n){
 
 
 function homeTVPopulate(){
-  var cardClass = "tv-media-card ";
-  var posterClass = "tv-media-poster ";
-  var gradientClass = "tv-media-gradient ";
-  var titleClass = "tv-media-title ";
-  var showPage = "TV/pages/tv-page-";
-  var linkEnd = ".html"
+  var cardClass = "tv-card ";
+  // var posterClass = "tv-poster ";
+  // var gradientClass = "tv-media-gradient ";
+  // var titleClass = "tv-media-title ";
+  // var showPage = "TV/pages/tv-page-";
+  // var linkEnd = ".html"
 
-  for (i = 1; i < 11; i++){
+  for (i = 1; i < 3; i++){
     var itemid = [
-      "card_".concat(i),
-      "poster_".concat(i),
-      "grad_".concat(i),
-      "title_".concat(i),
-      "desc_".concat(i),
-      "link_".concat(i),
-      // "service".concat(i),
-      // "page_".concat(i),
+      "tv-card-".concat(i),
+      "tv-link-".concat(i),
     ]
 
-    
-    document.getElementById(itemid[0]).className =        cardClass.concat(showSolid[i]);
-    document.getElementById(itemid[1]).className =     posterClass.concat(showPoster[i]);
-    document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
-    document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
-    document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
+    document.getElementById(itemid[0]).className =     cardClass.concat(showPoster[i]);
+    // document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
+    // document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
+    // document.getElementById(itemid[1]).innerHTML =                   showDescription[i];
     // document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);                  //showLink[i];
     // document.getElementById(itemid[6]).innerHTML =                       showService[i];
-    //document.getElementById(itemid[7]).href =                        showPage.concat(i);
+    document.getElementById(itemid[1]).href =                        showLink[i];
 
 
 
