@@ -50,6 +50,10 @@
 
     height: calc((100vw - 40px) * (1080 / 1920));
     width: calc(100vw - 40px);
+
+    max-height: 225px;
+    max-width: 400px;
+
     border-radius: 15px;
     overflow: hidden;
 
