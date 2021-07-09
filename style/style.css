@@ -58,14 +58,16 @@
     --mobile-width: calc(100vw - 30px);
 
     --shaded-light: 0 10px 30px 0px var(--black-20);
-    --shaded-dark:  0 5px 30px -5px #000000ff;
+    --shaded-dark:  0 10px 30px 0px var(--black-100);
 
     --element-light: 0 5px 20px -5px var(--black-20);
     --element-dark:  0 5px 30px -5px #000000ff;
 
     --element-light-hover: 0 10px 30px -5px var(--black-20);
 
-    --shaded-light-hover: 0 2.5px 5px 0px #00000033;
+    --shaded-light-hover: 0 2.5px 5px 0px var(--black-20);
+    --shaded-light-hover: 0 2.5px 5px 0px var(--black-100);
+
 
 }
 
@@ -384,7 +386,7 @@ body{
     cursor: default;
 }
 
-.media-tray{
+/* .media-tray{
     width: 100%;
     min-height: 1%;
     position: relative;
@@ -402,7 +404,7 @@ body{
 
     box-shadow: var(--shaded-light);
     transition: all 0.25s
-}
+} */
 
 
 
