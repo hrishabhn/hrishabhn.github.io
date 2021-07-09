@@ -786,6 +786,13 @@ var showIMDB = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 // showName[1] = 
   
   var k = 1;
+
+// var forge = "show".concat(k,"[1]");
+// forge = "TEST"
+// console.log(forge);
+
+
+
         showSolid[k] = show1[0];
        showPoster[k] = show1[1];
      showGradient[k] = show1[2];
