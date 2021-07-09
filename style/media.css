@@ -1212,14 +1212,15 @@
 @media(max-width: 450px){    
     .media-tray{
         margin: -50px -20px;
-        padding: 70px 10px 50px 20px;
+        padding: 60px 10px 50px 20px;
         width: calc(100% + 40px);
     }
 
 
     .tv-card{
         scroll-margin-left: 20px;
-        scroll-snap-align: start;
+        /* scroll-snap-align: start; */
+        scroll-snap-align: none;
     }
     
 
