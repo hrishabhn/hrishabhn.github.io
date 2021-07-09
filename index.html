@@ -32,7 +32,7 @@
     <script src="app.js"></script>
 </head>
 
-<body ontouchstart="" onload="homeAppPopulate();page2AppPopulate();page3AppPopulate();page4AppPopulate();page5AppPopulate();mediaTVPopulate();locationSmartCards();timeSmartCards()">
+<body ontouchstart="" onload="homeAppPopulate();homeTVPopulate();page2AppPopulate();page3AppPopulate();page4AppPopulate();page5AppPopulate();mediaTVPopulate();locationSmartCards();timeSmartCards()">
     <div class="navbar">
         <div class="navbar-menu">
             <!-- dashboard --><div class="menu-item-container">
@@ -261,13 +261,13 @@
                 
             </div>
             <div class="media-tray">
-                <div class="tv-card rick-poster">
-                    <a class="tv-card-play">
-                        WATCH
+                <div id="tv-card-1" class="tv-card rick-poster">
+                    <a id="tv-link-1" class="tv-card-play" target="_blank">
+                        <div class="tv-card-play-text">WATCH</div>
                     </a>
-                </div><div class="media-tray-pad"></div><div class="tv-card manifest-poster">
-                    <a class="tv-card-play">
-                        WATCH
+                </div><div class="media-tray-pad"></div><div id="tv-card-2" class="tv-card rick-poster">
+                    <a id="tv-link-2" class="tv-card-play" target="_blank">
+                        <div class="tv-card-play-text">WATCH</div>
                     </a>
                 </div>
             </div>
