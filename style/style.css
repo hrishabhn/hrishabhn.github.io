@@ -61,6 +61,7 @@
     --shaded-dark:  0 10px 30px 0px var(--black-100);
 
     --element-light: 0 5px 20px -5px var(--black-20);
+    --element-mid:   0 5px 20px 0px var(--black-60);
     --element-dark:  0 5px 30px -5px #000000ff;
 
     --element-light-hover: 0 10px 30px -5px var(--black-20);
