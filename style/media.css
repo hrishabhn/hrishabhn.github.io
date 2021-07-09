@@ -30,7 +30,8 @@
     /* overflow: visible; */
 
     /* box-shadow: var(--shaded-light); */
-    transition: all 0.25s
+    transition: all 0.25s;
+    scroll-snap-type: x mandatory;
 }
 .media-tray:active{
     /* scale: 0.9; */
@@ -60,6 +61,8 @@
     background-size: cover;
     box-shadow: var(--shaded-light);
     /* display: none; */
+    scroll-snap-align: start;
+    scroll-margin-left: 30px;
 }
 
 .tv-card:active{
@@ -1222,6 +1225,13 @@
         padding: 70px 10px 50px 20px;
         width: calc(100% + 40px);
     }
+
+
+    .tv-card{
+        scroll-margin-left: 20px;
+        scroll-snap-align: none;
+    }
+    
 
 
     
