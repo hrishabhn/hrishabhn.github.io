@@ -337,6 +337,7 @@ body{
     transition: all 0.25s
 }
 .content-image{
+    position: relative;
     width: 100%;
     height: calc((100vw - 40px) * (0.5625));
     /* background-color: #007aff; */
