@@ -277,6 +277,7 @@ body{
     border-radius: 25px;
     background: var(--white-20);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
     pointer-events: none;
@@ -1197,6 +1198,7 @@ body{
         width: 100%;
         z-index: 50;
         -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
         background-color: var(--black-60);
         /* background: linear-gradient(#00000099,#00000000); */
     }
