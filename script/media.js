@@ -1471,7 +1471,7 @@ function mediaTVPopulate(){
   // var showPage = "TV/pages/tv-page-";
   // var linkEnd = ".html"
 
-  for (i = 1; i < 51; i++){
+  for (i = 21; i < 51; i++){
     var itemid = [
       "card_".concat(i),
       "poster_".concat(i),
