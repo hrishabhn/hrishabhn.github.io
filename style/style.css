@@ -283,7 +283,7 @@ body{
     pointer-events: none;
 }
 .status-box-show{
-    top: 60px;
+    top: 40px;
 }
 .status-box-hide{
     top: -50px;
@@ -1260,6 +1260,12 @@ body{
         fill: var(--blue-dark);
         color: var(--blue-dark);
     }
+
+    .status-box-show{
+        top: 60px;
+    }
+
+
     
     .content-image{
         display: block;
