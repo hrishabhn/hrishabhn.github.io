@@ -161,17 +161,22 @@
 }
 
 .smart-card-show{
-    position: relative;
-    opacity: 1;
-    transition: opacity 1s;
+    /* position: relative; */
+    /* opacity: 1; */
+    transition: 5s;
+    /* margin-bottom: 0px; */
+    height: calc(((100vw - 40px) * (0.5625)) + 110px);
 }
 .smart-card-hide{
-    position: absolute !important;
-    bottom: 100%;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 5s;
-
+    /* position: absolute !important; */
+    /* bottom: 100%; */
+    /* pointer-events: none; */
+    /* opacity: 0; */
+    height: 0px;
+    margin: 0px !important;
+    padding: 0px !important;
+    transition: 5s;
+    /* margin-bottom: calc((((100vw - 40px) * (0.5625)) + 150px) * (-1)); */
 }
 
 

@@ -121,11 +121,11 @@ function smartCards(){
         }
 
         if (work) {
-            document.getElementById("office-card").className = "smart-card-show content-container"
+            // document.getElementById("office-card").className = "smart-card-show content-container"
             district = "Office"
             console.log("at office")
         } else{
-            document.getElementById("office-card").className = "smart-card-hide content-container"
+            // document.getElementById("office-card").className = "smart-card-show content-container"
             console.log("not at office")
         }
 
