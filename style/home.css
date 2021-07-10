@@ -189,7 +189,7 @@
     /* height: 100px; */
     /* width: 100px; */
 
-    box-shadow: 0 0 15px var(--black-60);
+    box-shadow: 0 0 5px var(--black-40);
     background: var(--black-20);
     -webkit-backdrop-filter: blur(100px);
 }
