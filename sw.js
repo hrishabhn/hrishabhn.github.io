@@ -8,6 +8,10 @@ const assets = [
   "/app.js",
 
   "/images/smarthome.jpg",
+  "/images/transport.png",
+  "/images/food.svg",
+  "/images/sleep.svg",
+
   // "/images/wp-dark.jpg",
 
   "/style/style.css",
