@@ -279,6 +279,7 @@ body{
     -webkit-backdrop-filter: blur(20px);
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
+    pointer-events: none;
 }
 .status-box-show{
     top: 60px;
