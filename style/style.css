@@ -1368,8 +1368,8 @@ body{
             color: var(--blue-light);
         }
         .notch-box{
-            background-color: var(--white-20);
-            /* background: linear-gradient(#ffffff99,#ffffff00); */
+            /* background-color: var(--white-20); */
+            background: linear-gradient(#ffffff,#ffffff00);
         }
     }
 }
