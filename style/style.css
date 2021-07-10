@@ -127,29 +127,6 @@ body{
 
 
 
-
-.wp-1{
-    /* background:linear-gradient(to bottom,#116,#006); */
-    background: var(--dark-layer-1);
-}
-.wp-2{
-    background:linear-gradient(to bottom,#131,#030);
-    /* transition: 0.25s; */
-}
-.wp-3{
-    /* background:linear-gradient(to bottom,#116,#006); */
-    background: var(--dark-layer-1);
-}
-.wp-4{
-    /* background:linear-gradient(to bottom,#116,#006); */
-    background: var(--dark-layer-1);
-}
-.wp-5{
-    background:linear-gradient(to bottom,#311,#300);
-    /* transition: 0.25s; */
-}
-
-
 .header-box{
     height: 60px;
     width: 100%;
@@ -352,22 +329,19 @@ body{
     padding-bottom: 20px;
 
     background: var(--dark-layer-1);
-    overflow: visible;
+    overflow: hidden;
 
     -webkit-backdrop-filter: blur(100px);
 
     box-shadow: var(--shaded-light);
     transition: all 0.25s
 }
-
-.content-container-expanded{
-    min-height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    /* bottom: 0px; */
-    z-index: 300;
-    background: blue !important;
+.content-image{
+    width: 100%;
+    height: calc((100vw - 40px) * (0.5625));
+    /* background-color: #007aff; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .content-text-box{
@@ -1009,28 +983,9 @@ body{
     .content-text{
         color: var(--dark-layer-1);
     }
-    .wallpaper{
-        /* background: var(--light-layer-0); */
-        /* background: url('../images/wp-light.jpg'); */
-        /* background:linear-gradient(to bottom,#B7F8DB,#50A7C2); */
-        /* background:linear-gradient(to bottom right,#ACB6E5,#74ebd5); */
-        /* background: blue; */
-        /* background-size: cover; */
-    }
-    /* .wp-1{ */
-        /* background:linear-gradient(to bottom,#99a,#99c); */
-        /* background:linear-gradient(to bottom,#1c1c1e,#33c); */
-        /* background: var(--light-layer-1) */
-
-    /* } */
+    
     .wallpaper-blur{
         background: var(--white-80);
-    }
-    .wp-3{
-        background:linear-gradient(to bottom,#191,#090);
-    }
-    .wp-3{
-        background:linear-gradient(to bottom,#911,#900);
     }
 
     .navbar{
