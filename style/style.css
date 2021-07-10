@@ -1126,9 +1126,10 @@ body{
         left: 0px;
         height: 50px;
         width: 100%;
-        z-index: 5;
-        -webkit-backdrop-filter: blur(10px);
-        background-color: var(--black-60);
+        z-index: 50;
+        /* -webkit-backdrop-filter: blur(1px); */
+        /* background-color: var(--black-60); */
+        background: linear-gradient(#00000099,#00000000);
     }
     .navbar{
         height: 85px;
@@ -1289,6 +1290,9 @@ body{
         .selected:hover{
             fill: var(--blue-light);
             color: var(--blue-light);
+        }
+        .notch-box{
+            background: linear-gradient(#ffffff99,#ffffff00);
         }
     }
 }
