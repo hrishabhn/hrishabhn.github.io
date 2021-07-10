@@ -107,9 +107,12 @@ function smartCards(){
         // var lon = 113.970
         var work = (lat > 22.389) && (lat < 22.393) && (lon > 113.968) && (lon < 113.972);
 
+        var district = "Out"
+
         if (home) {
             document.getElementById("smarthome-card").className = "smart-card-show content-container hidden-desktop"
             document.getElementById("transport-card").className = "smart-card-hide content-container hidden-desktop"
+            district = "Home"
             console.log("at home")
         } else{
             document.getElementById("smarthome-card").className = "smart-card-hide content-container hidden-desktop"
@@ -119,6 +122,7 @@ function smartCards(){
 
         if (work) {
             document.getElementById("office-card").className = "smart-card-show content-container"
+            district = "Office"
             console.log("at office")
         } else{
             document.getElementById("office-card").className = "smart-card-hide content-container"
@@ -146,6 +150,15 @@ function smartCards(){
             document.getElementById("sleep-card").className = "smart-card-hide content-container hidden-desktop";
             console.log("not night");
         }
+
+        document.getElementById("district").innerHTML = district;
+
+        setTimeout(function(){
+            document.getElementById("status-box").classList = "status-box status-box-show";
+        },500);
+        setTimeout(function(){
+            document.getElementById("status-box").classList = "status-box status-box-hide";
+        },2500);
         
     }
 
@@ -193,33 +206,34 @@ function smartCards(){
 
 // }
 
-function lights(){
-    if (document.getElementById("light-tray").classList == "smarthome-wrapper-hide smarthome-wrapper") {
-        document.getElementById("light-tray").classList = "smarthome-wrapper-show smarthome-wrapper"
-        console.log("at home")
-    } else{
-        document.getElementById("light-tray").classList = "smarthome-wrapper-hide smarthome-wrapper"
-        console.log("not at home")
-    }
-}
-function appleTV(){
-    if (document.getElementById("appletv-tray").classList == "smarthome-wrapper-hide smarthome-wrapper") {
-        document.getElementById("appletv-tray").classList = "smarthome-wrapper-show smarthome-wrapper"
-    } else{
-        document.getElementById("appletv-tray").classList = "smarthome-wrapper-hide smarthome-wrapper"
-    }
-    // document.getElementById("light-tray").classList.toggle("smarthome-wrapper-hide")
-}
 
-function expandContainer(){
-    if (document.getElementById("expand").classList == "content-container") {
-        document.getElementById("expand").classList = "content-container content-container-expanded"
-        console.log("opening")
-    } else{
-        document.getElementById("expand").classList = "content-container"
-        console.log("closing")
-    }
-}
+// function lights(){
+//     if (document.getElementById("light-tray").classList == "smarthome-wrapper-hide smarthome-wrapper") {
+//         document.getElementById("light-tray").classList = "smarthome-wrapper-show smarthome-wrapper"
+//         console.log("at home")
+//     } else{
+//         document.getElementById("light-tray").classList = "smarthome-wrapper-hide smarthome-wrapper"
+//         console.log("not at home")
+//     }
+// }
+// function appleTV(){
+//     if (document.getElementById("appletv-tray").classList == "smarthome-wrapper-hide smarthome-wrapper") {
+//         document.getElementById("appletv-tray").classList = "smarthome-wrapper-show smarthome-wrapper"
+//     } else{
+//         document.getElementById("appletv-tray").classList = "smarthome-wrapper-hide smarthome-wrapper"
+//     }
+//     // document.getElementById("light-tray").classList.toggle("smarthome-wrapper-hide")
+// }
+
+// function expandContainer(){
+//     if (document.getElementById("expand").classList == "content-container") {
+//         document.getElementById("expand").classList = "content-container content-container-expanded"
+//         console.log("opening")
+//     } else{
+//         document.getElementById("expand").classList = "content-container"
+//         console.log("closing")
+//     }
+// }
 
 
 // 22.260, 114.131
