@@ -229,6 +229,56 @@
     
 }
 
+.smart-card-tray{
+
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+
+    align-items: center;
+    /* justify-content: flex-end; */
+    position: relative;
+
+    padding-left: 10px;
+    padding-right: 100px;
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+
+    transition: all 0.15s;
+
+
+
+
+
+    /* background-color: aquamarine; */
+
+
+
+}
+.smart-card-app{
+    display: inline-flex;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+    border-radius: 100%;
+    margin-right: 10px;
+    /* margin: 0px 5px; */
+    transition: all 0.15s;
+}
+.smart-card-app:active{
+    scale: 0.9;
+}
+.smart-card-app-icon{
+    height: 22px;
+    width: 22px;
+    fill: white;
+}
 
 
 .smarthome-card{
@@ -251,14 +301,6 @@
     /* margin-bottom: 10px; */
 }
 .smarthome-app{
-    display: inline-flex;
-    vertical-align: top;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 80px;
-    min-width: 80px;
-    border-radius: 25px;
 
     /* background-color: rebeccapurple; */
 }
@@ -291,11 +333,7 @@
     margin: 0px 5px;
     transition: all 0.15s;
 }
-.smarthome-scene-icon{
-    height: 22px;
-    width: 22px;
-    fill: white;
-}
+
 /* .smarthome-scene:hover{
     scale: 1.1;
     box-shadow: var(--shaded-light);
@@ -344,7 +382,9 @@
 .smarthome-image{
     background: url(../images/smarthome.jpg);
 }
-
+.transport-image{
+    background: url(../images/transport.png);
+}
 
 
 
