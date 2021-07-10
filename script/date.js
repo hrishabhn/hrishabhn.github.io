@@ -97,9 +97,11 @@ function locationSmartCards(){
 
         if ((lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135)) {
             document.getElementById("smarthome-card").className = "smart-card-show content-container"
+            document.getElementById("transport-card").className = "smart-card-show content-container"
             console.log("at home")
         } else{
             document.getElementById("smarthome-card").className = "smart-card-hide content-container"
+            document.getElementById("transport-card").className = "smart-card-show content-container"
             console.log("not at home")
         }
 
@@ -137,12 +139,12 @@ function timeSmartCards(){
         // document.getElementById("morning-card-2").className = "smart-card-show content-container";
         console.log("morning");
     } else{
-        document.getElementById("morning-card-1").className = "smart-card-hide content-container";
+        document.getElementById("morning-card-1").className = "smart-card-show content-container";
         // document.getElementById("morning-card-2").className = "smart-card-hide content-container";
         console.log("not morning");
     }
 
-    if ((hourNow > 11) && (hourNow < 150)) {
+    if ((hourNow > 11) && (hourNow < 15)) {
         document.getElementById("afternoon-card").className = "smart-card-show content-container";
         console.log("afternoon");
     } else{
