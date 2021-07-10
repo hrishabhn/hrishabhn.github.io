@@ -140,10 +140,10 @@ function smartCards(){
             console.log("not evening");
         }
         if ((night) && (home)) {
-            document.getElementById("night-card").className = "smart-card-show content-container";
+            document.getElementById("sleep-card").className = "smart-card-show content-container hidden-desktop";
             console.log("night");
         } else{
-            document.getElementById("night-card").className = "smart-card-hide content-container";
+            document.getElementById("sleep-card").className = "smart-card-hide content-container hidden-desktop";
             console.log("not night");
         }
         

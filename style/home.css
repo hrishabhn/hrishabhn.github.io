@@ -281,104 +281,6 @@
 }
 
 
-.smarthome-card{
-    display: flex;
-    position: relative;
-    /* justify-content: right; */
-    vertical-align: top;
-    /* height: 80px; */
-    width: 100%;
-    box-sizing: border-box;
-
-    padding-left: 20px;
-
-    /* background-color: blue; */
-    /* padding-left: 15px; */
-
-    /* padding-bottom: 0px; */
-    /* overflow-x: scroll; */
-    /* scroll-snap-type: x proximity; */
-    /* margin-bottom: 10px; */
-}
-.smarthome-app{
-
-    /* background-color: rebeccapurple; */
-}
-.smarthome-app-icon{
-    height: 30px;
-    width: 30px;
-    fill: white;
-}
-.smarthome-tray{
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    padding: 0 15px;
-
-    /* background-color: aquamarine; */
-
-    /* width: ; */
-    height: 80px;
-    width: 100%;
-}
-.smarthome-scene{
-    display: inline-flex;
-    vertical-align: top;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    margin: 0px 5px;
-    transition: all 0.15s;
-}
-
-/* .smarthome-scene:hover{
-    scale: 1.1;
-    box-shadow: var(--shaded-light);
-} */
-.smarthome-scene:active{
-    scale: 0.9;
-}
-
-
-
-.smarthome-wrapper{
-    width: 100%;
-    box-sizing: border-box;
-
-    align-items: center;
-    position: relative;
-    /* display: block; */
-
-    padding-left: 15px;
-    padding-right: 5px;
-
-    /* margin-top: 10px; */
-
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x proximity;
-
-    transition: all 0.15s;
-}
-.smarthome-wrapper-show{
-    margin-top: 10px;
-    height: 115px;
-    opacity: 1;
-}
-.smarthome-wrapper-hide{
-    margin-top: 0px;
-    height: 0px;
-    opacity: 0;
-}
-/* .smarthome-wrapper-hide .app-container{
-    height: 0px;
-    transition: all 0.25s;
-} */
-
 .smarthome-image{
     background: url(../images/smarthome.jpg);
 }
@@ -387,6 +289,9 @@
 }
 .food-image{
     background: url(../images/food.svg);
+}
+.sleep-image{
+    background: url(../images/sleep.svg);
 }
 
 
