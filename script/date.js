@@ -111,7 +111,7 @@ function smartCards(){
 
         if (home) {
             document.getElementById("smarthome-card").className = "smart-card-show content-container hidden-desktop"
-            document.getElementById("transport-card").className = "smart-card-hide content-container hidden-desktop"
+            document.getElementById("transport-card").className = "smart-card-show content-container hidden-desktop"
             district = "Home"
             console.log("at home")
         } else{
