@@ -276,16 +276,16 @@ body{
     box-sizing: border-box;
     padding: 5px;
     border-radius: 25px;
-    background: var(--white-20);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    background: var(--dark-layer-2);
+    /* -webkit-backdrop-filter: blur(20px); */
+    /* backdrop-filter: blur(20px); */
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
     pointer-events: none;
 }
 .status-box-show{
     top: 40px;
-    box-shadow: 0 0 15px var(--black-20);
+    /* box-shadow: 0 0 15px var(--black-20); */
 }
 .status-box-hide{
     top: -45px;
@@ -320,7 +320,7 @@ body{
 }
 .status-text{
     color: var(--light-layer-0);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -1041,7 +1041,7 @@ body{
         color: var(--dark-layer-1);
     }
     .status-box{
-        background: var(--black-20);
+        background: var(--light-layer-2);
     }
     .status-icon-box{
         background: var(--light-layer-0);
@@ -1199,7 +1199,7 @@ body{
         /* -webkit-backdrop-filter: blur(10px); */
         /* backdrop-filter: blur(10px); */
         /* background-color: var(--black-60); */
-        background: linear-gradient(#000000,#00000000);
+        /* background: linear-gradient(#000000,#00000000); */
     }
     .navbar{
         height: 85px;
@@ -1263,10 +1263,6 @@ body{
     .selected:hover{
         fill: var(--blue-dark);
         color: var(--blue-dark);
-    }
-
-    .status-box-show{
-        top: 40px;
     }
 
 
@@ -1369,7 +1365,7 @@ body{
         }
         .notch-box{
             /* background-color: var(--white-20); */
-            background: linear-gradient(#ffffff,#ffffff00);
+            /* background: linear-gradient(#ffffff,#ffffff00); */
         }
     }
 }
