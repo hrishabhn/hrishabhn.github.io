@@ -142,7 +142,7 @@ function timeSmartCards(){
         console.log("not morning");
     }
 
-    if ((hourNow > 11) && (hourNow < 15)) {
+    if ((hourNow > 11) && (hourNow < 150)) {
         document.getElementById("afternoon-card").className = "smart-card-show content-container";
         console.log("afternoon");
     } else{
