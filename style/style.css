@@ -179,7 +179,7 @@ body{
     background-color: var(--dark-layer-1-80);
     border-right: solid var(--white-10) 0.1px;
     /* background-color: #12121299; */
-    /* -webkit-backdrop-filter: blur(20px); */
+
     /* box-shadow: 0 0 15px #00000066; */
 }
 .navbar-menu{
@@ -387,8 +387,6 @@ body{
 
     background: var(--dark-layer-1);
     overflow: hidden;
-
-    -webkit-backdrop-filter: blur(100px);
 
     box-shadow: var(--shaded-light);
     transition: all 0.25s
@@ -793,7 +791,7 @@ body{
     align-items: center;
 
     background-color: var(--dark-layer-1);
-    /* -webkit-backdrop-filter: blur(15px); */
+
     transition: 0.25s;
     /* box-shadow: var(--shaded-dark); */
 }
@@ -861,14 +859,11 @@ body{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: var(--black-60);
-    /* transition: 0.25s; */
-
 }
-.background-blur-hide{ 
+.background-blur-hide{
     -webkit-backdrop-filter: none;
+    backdrop-filter: none;
     background: none;
-    /* transition: 0.2s; */
-    /* transition-delay: 0.1s; */
 }
 
 
