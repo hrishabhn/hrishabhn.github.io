@@ -2659,7 +2659,7 @@ function page4AppPopulate(){
         "appLink_".concat(i),
         ]
 
-        console.log(i)
+        // console.log(i)
         document.getElementById(itemid[0]).className = containerClass.concat(appContainer[i]);
         document.getElementById(itemid[1]).innerHTML =                            appName[i];
         document.getElementById(itemid[2]).className =   gradientClass.concat(appGradient[i]);
