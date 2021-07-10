@@ -159,7 +159,7 @@ function smartCards(){
         },500);
         setTimeout(function(){
             document.getElementById("status-box").classList = "status-box status-box-hide";
-        },2500);
+        },4000);
         
     }
 
