@@ -7,8 +7,8 @@ const assets = [
   "/media.html",
   "/app.js",
 
-  "/images/wp-light.jpg",
-  "/images/wp-dark.jpg",
+  "/images/smarthome.jpg",
+  // "/images/wp-dark.jpg",
 
   "/style/style.css",
   "/style/brand.css",
@@ -27,14 +27,14 @@ const assets = [
   "/TV/background/ldr.webp",
   "/TV/background/rick.jpg",
   "/TV/background/loki.webp",
-  "/TV/background/blind.jpg",
+  // "/TV/background/blind.jpg",
 
   "/TV/title/manifest.png",
   "/TV/title/always.png",
   "/TV/background/ldr.png",
   "/TV/background/rick.png",
   "/TV/background/loki.png",
-  "/TV/background/blind.png",
+  // "/TV/background/blind.png",
 
   // "/TV/background/kim.svg",
   // "/TV/background/mythic.png",
