@@ -108,12 +108,12 @@ function smartCards(){
         var work = (lat > 22.389) && (lat < 22.393) && (lon > 113.968) && (lon < 113.972);
 
         if (home) {
-            document.getElementById("smarthome-card").className = "smart-card-show content-container"
-            document.getElementById("transport-card").className = "smart-card-show content-container"
+            document.getElementById("smarthome-card").className = "smart-card-show content-container hidden-desktop"
+            document.getElementById("transport-card").className = "smart-card-hide content-container hidden-desktop"
             console.log("at home")
         } else{
-            document.getElementById("smarthome-card").className = "smart-card-hide content-container"
-            document.getElementById("transport-card").className = "smart-card-show content-container"
+            document.getElementById("smarthome-card").className = "smart-card-hide content-container hidden-desktop"
+            document.getElementById("transport-card").className = "smart-card-show content-container hidden-desktop"
             console.log("not at home")
         }
 
@@ -126,17 +126,17 @@ function smartCards(){
         }
 
         if ((afternoon) && (!home)) {
-            document.getElementById("afternoon-card").className = "smart-card-show content-container";
+            document.getElementById("food-card").className = "smart-card-show content-container";
             console.log("afternoon");
         } else{
-            document.getElementById("afternoon-card").className = "smart-card-hide content-container";
+            document.getElementById("food-card").className = "smart-card-hide content-container";
             console.log("not afternoon");
         }
         if ((evening) && (!home)) {
-            document.getElementById("evening-card").className = "smart-card-show content-container";
+            document.getElementById("food-card").className = "smart-card-show content-container";
             console.log("evening");
         } else{
-            document.getElementById("evening-card").className = "smart-card-hide content-container";
+            document.getElementById("food-card").className = "smart-card-hide content-container";
             console.log("not evening");
         }
         if ((night) && (home)) {
