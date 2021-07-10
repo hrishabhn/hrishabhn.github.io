@@ -79,9 +79,19 @@
 //   }
 // }
 
-function locationSmartCards(){
+function smartCards(){
 
     const successCallback = (position) => {
+
+
+        var fullDate = new Date();
+        var hourNow = fullDate.getHours();
+        console.log(hourNow);
+
+        var afternoon = (hourNow > 11) && (hourNow < 15);
+        var evening = (hourNow > 16) && (hourNow < 21);
+        var night = (hourNow > 20) || (hourNow < 6);
+
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
         console.log(lat)
@@ -90,12 +100,14 @@ function locationSmartCards(){
         // HOME
         // var lat = 22.262;
         // var lon = 114.133;
+        var home = (lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135);
 
         // Tuen Mun
         // var lat = 22.391
         // var lon = 113.970
+        var work = (lat > 22.389) && (lat < 22.393) && (lon > 113.968) && (lon < 113.972);
 
-        if ((lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135)) {
+        if (home) {
             document.getElementById("smarthome-card").className = "smart-card-show content-container"
             document.getElementById("transport-card").className = "smart-card-show content-container"
             console.log("at home")
@@ -105,13 +117,36 @@ function locationSmartCards(){
             console.log("not at home")
         }
 
-        if ((lat > 22.389) && (lat < 22.393) && (lon > 113.968) && (lon < 113.972)) {
+        if (work) {
             document.getElementById("office-card").className = "smart-card-show content-container"
             console.log("at office")
         } else{
             document.getElementById("office-card").className = "smart-card-hide content-container"
             console.log("not at office")
         }
+
+        if ((afternoon) && (!home)) {
+            document.getElementById("afternoon-card").className = "smart-card-show content-container";
+            console.log("afternoon");
+        } else{
+            document.getElementById("afternoon-card").className = "smart-card-hide content-container";
+            console.log("not afternoon");
+        }
+        if ((evening) && (!home)) {
+            document.getElementById("evening-card").className = "smart-card-show content-container";
+            console.log("evening");
+        } else{
+            document.getElementById("evening-card").className = "smart-card-hide content-container";
+            console.log("not evening");
+        }
+        if ((night) && (home)) {
+            document.getElementById("night-card").className = "smart-card-show content-container";
+            console.log("night");
+        } else{
+            document.getElementById("night-card").className = "smart-card-hide content-container";
+            console.log("not night");
+        }
+        
     }
 
     navigator.geolocation.getCurrentPosition(successCallback);
@@ -127,51 +162,36 @@ function locationSmartCards(){
     
 }
 
-function timeSmartCards(){
-    var fullDate = new Date();
+// function timeSmartCards(){
 
-    var hourNow = fullDate.getHours();
-    // hourNow = 8;
-    console.log(hourNow);
 
-    if ((hourNow > 6) && (hourNow < 10)) {
-        // document.getElementById("morning-card-1").className = "smart-card-show content-container";
-        // document.getElementById("morning-card-2").className = "smart-card-show content-container";
-        console.log("morning");
-    } else{
-        // document.getElementById("morning-card-1").className = "smart-card-show content-container";
-        // document.getElementById("morning-card-2").className = "smart-card-hide content-container";
-        console.log("not morning");
-    }
-
-    if ((hourNow > 11) && (hourNow < 15)) {
-        document.getElementById("afternoon-card").className = "smart-card-show content-container";
-        console.log("afternoon");
-    } else{
-        document.getElementById("afternoon-card").className = "smart-card-hide content-container";
-        console.log("not afternoon");
-    }
-    if ((hourNow > 16) && (hourNow < 21)) {
-        document.getElementById("evening-card").className = "smart-card-show content-container";
-        console.log("afternoon");
-    } else{
-        document.getElementById("evening-card").className = "smart-card-hide content-container";
-        console.log("not afternoon");
-    }
-
-    if ((hourNow > 21) || (hourNow < 6)) {
-        document.getElementById("night-card").className = "smart-card-show content-container";
-        console.log("night");
-    } else{
-        document.getElementById("night-card").className = "smart-card-hide content-container";
-        console.log("not night");
-    }
+//     if ((hourNow > 11) && (hourNow < 15)) {
+//         document.getElementById("afternoon-card").className = "smart-card-show content-container";
+//         console.log("afternoon");
+//     } else{
+//         document.getElementById("afternoon-card").className = "smart-card-hide content-container";
+//         console.log("not afternoon");
+//     }
+//     if ((hourNow > 16) && (hourNow < 21)) {
+//         document.getElementById("evening-card").className = "smart-card-show content-container";
+//         console.log("evening");
+//     } else{
+//         document.getElementById("evening-card").className = "smart-card-hide content-container";
+//         console.log("not evening");
+//     }
+//     if ((hourNow > 21) || (hourNow < 6)) {
+//         document.getElementById("night-card").className = "smart-card-show content-container";
+//         console.log("night");
+//     } else{
+//         document.getElementById("night-card").className = "smart-card-hide content-container";
+//         console.log("not night");
+//     }
 
 
 
 
 
-}
+// }
 
 function lights(){
     if (document.getElementById("light-tray").classList == "smarthome-wrapper-hide smarthome-wrapper") {
