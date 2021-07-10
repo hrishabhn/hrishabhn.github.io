@@ -174,23 +174,6 @@
 
 }
 
-.smart-card-header-text-box{
-    /* box-sizing: border-box; */
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    margin: 0;
-    width: 100%;
-
-    /* position: -webkit-sticky; */
-}
-.smart-card-header-text{
-    font-weight: 600;
-    font-size: 24px;
-    color: var(--light-layer-0);
-    cursor: default;
-}
-
 
 .smart-card-info{
     display: flex;
