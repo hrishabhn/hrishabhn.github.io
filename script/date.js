@@ -151,6 +151,7 @@ function smartCards(){
             console.log("not night");
         }
 
+        // district = "West Lafayette"
         document.getElementById("district").innerHTML = district;
 
         setTimeout(function(){
