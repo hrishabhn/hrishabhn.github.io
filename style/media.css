@@ -59,7 +59,7 @@
 }
 
 .tv-card-gradient{
-    display: flex;
+    display: block;
     position: absolute;
     bottom: 0px;
     vertical-align: bottom;
@@ -93,7 +93,7 @@
     text-decoration: none;
 }
 .tv-card-play:hover{
-    /* scale: 1.1; */
+    scale: 1.1;
     /* box-shadow: var(--element-mid); */
 }
 .tv-card-play:active{
@@ -118,8 +118,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 15px;
-    left: 15px;
+    bottom: 20px;
+    left: 20px;
 
     background-position: 0 100%;
     fill: #fff;
@@ -1221,163 +1221,6 @@
         scroll-margin-left: 20px;
         /* scroll-snap-align: start; */
         scroll-snap-align: none;
-    }
-    
-
-
-    
-    
-    .tv-page{
-        padding-top: 0px;
-        height: 100vh;
-        box-sizing: border-box;
-    }
-    .tv-page-notch-solid{
-        display: none;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        height: 60px;
-        width: 100%;
-        z-index: 10;
-        background: #000000;
-    }
-    .tv-page-notch-grad{
-        display: none;
-        position: fixed;
-        top: 60px;
-        left: 0px;
-        height: 50px;
-        width: 100%;
-        z-index: 10;
-        background: linear-gradient(#000000,#00000000);
-    }
-
-
-
-
-    .tv-page-card{
-        height: 100%;
-        width: 100vw;
-        border-radius: 0px;
-
-        padding-left: 0px;
-        overflow: scroll;
-        /* border-top-left-radius: 30px; */
-        /* border-top-right-radius: 30px; */
-        /* background: none !important; */
-
-    }
-    .tv-page-poster{
-        width: 94vw;
-        min-height: 200px;
-        height: 52.875vw;
-
-        border-radius: 30px;
-        /* border-top-right-radius: inherit; */
-        margin-top: 15vw;
-        margin-left: 3vw;
-
-        box-shadow: 0 0 30px #00000066;
-
-        background-repeat: no-repeat;
-        display: block;
-        position: relative;
-    }
-    .tv-page-gradient{
-        display: none;
-        position: absolute;
-        bottom: 0px;
-    
-        width: 100%;
-        height: 50%;
-    }
-    .tv-page-title{
-        background-size: contain;
-        background-position: top;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        position: absolute;
-        top: 75vw;
-        left: 10vw;
-        display: flex;
-        max-width: 80vw;
-        min-height: 30vw;
-        max-height: 30vw;
-
-
-        /* margin-left: auto;
-        margin-right: auto;
-        max-height: 150px;
-        max-width: 60vw;
-        height: 1000px !important;
-        width: 3000px !important;
-        background-position: 0 100%;
-        background-color: #00000000; */
-    }
-   
-    .tv-page-description{
-    
-        font-size: 18px;
-        font-weight: 400;
-        color: #fff;
-        position: absolute;
-        left: 0;
-        bottom: 45vw;
-    
-        width: 100%;
-        height: 4vh;
-        text-align: center;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        box-sizing: border-box;
-        font-size: 14px;
-    
-
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    
-    .tv-play-button{
-        min-width: 90vw;
-    
-    }
-    
-    
-    .tv-page-button-tray{
-        padding-left: 20px;
-        padding-right: 0px;
-        /* padding-top: 0; */
-        /* padding-bottom: 0; */
-
-        margin-top: -30px;
-        margin-bottom: -30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-
-
-        height: 115px;
-
-        bottom: 30vw;
-        
-    }
-    .tv-page-button-container{
-        border-radius: 20px;
-        scroll-snap-align: none;
-        scroll-margin-left: 20px;
-        /* margin-right: 20px; */
-    }
-    .tv-page-icon{
-        top: 21.5px;
-        height: 14px;
-        width: 14px;
-    }
-    .tv-page-text-with-icon{
-        margin-left: 20px;
-    }
-    .tv-page-text{
-        font-size: 14px;
     }
 
 }
