@@ -135,11 +135,11 @@ function timeSmartCards(){
     console.log(hourNow);
 
     if ((hourNow > 6) && (hourNow < 10)) {
-        document.getElementById("morning-card-1").className = "smart-card-show content-container";
+        // document.getElementById("morning-card-1").className = "smart-card-show content-container";
         // document.getElementById("morning-card-2").className = "smart-card-show content-container";
         console.log("morning");
     } else{
-        document.getElementById("morning-card-1").className = "smart-card-show content-container";
+        // document.getElementById("morning-card-1").className = "smart-card-show content-container";
         // document.getElementById("morning-card-2").className = "smart-card-hide content-container";
         console.log("not morning");
     }
