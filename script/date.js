@@ -107,6 +107,13 @@ function smartCards(){
         // var lon = 113.970
         var work = (lat > 22.389) && (lat < 22.393) && (lon > 113.968) && (lon < 113.972);
 
+        var ktown = (lat > 22.279) && (lat < 22.285) && (lon > 114.125) && (lon < 114.130);
+
+
+        // 22.279,114.125 bottom left
+        // 22.285,114.130 top right
+
+
         var district = "Out"
 
         if (home) {
@@ -128,6 +135,16 @@ function smartCards(){
             // document.getElementById("office-card").className = "smart-card-show content-container"
             console.log("not at office")
         }
+
+        if (ktown) {
+            district = "Kennedy Town"
+            console.log("ktown")
+        } else{
+            console.log("not at ktown")
+        }
+
+
+
 
         if ((afternoon) && (!home)) {
             document.getElementById("food-card").className = "smart-card-show content-container";
