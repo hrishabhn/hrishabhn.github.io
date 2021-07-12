@@ -403,9 +403,11 @@ body{
 } */
 .content-image{
     position: relative;
-    display: none;
+    display: block;
     width: 100%;
-    height: calc((100vw - 40px) * (0.5625));
+    height: 300px;
+    /* height: calc(((100vw - 20px) / 2) * 0.5625); */
+    /* height: calc((100vw - 40px) * (0.5625)); */
     /* background-color: #007aff; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -1275,6 +1277,7 @@ body{
     }
     
     .content-image{
+        height: calc((100vw - 40px) * (0.5625));
         display: block;
     }
     
