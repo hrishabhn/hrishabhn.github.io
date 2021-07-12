@@ -36,12 +36,11 @@
     vertical-align: bottom;
     /* z-index: 0; */
 
-
-
-    height: calc((100vw - 40px) * (1080 / 1920));
+    height: calc((100vw - 40px) * (0.5625));
     width: calc(100vw - 40px);
     /* aspect-ratio: 16 / 9; */
 
+    min-height: 189px;
     max-height: 225px;
     max-width: 400px;
 
@@ -49,9 +48,8 @@
     overflow: hidden;
 
     margin-right: 10px;
-    /* margin-bottom: 0px; */
+
     transition: all 0.15s;
-    /* background-color: blueviolet; */
     background-size: cover;
     box-shadow: var(--shaded-light);
     /* display: none; */
