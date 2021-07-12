@@ -9,12 +9,9 @@ function widgets(){
         a = 0;
     }
 
-    // a = 1;
     weatherWidget(a);
     todayWidget(a);
-    if (a == 1) {
-        hideWidgets();
-    }
+    displayWidgets(a);
 }
 
 
@@ -121,6 +118,7 @@ function todayWidget(a) {
 
 
     if (a == 1) {
+        var widget = document.getElementById("today-widget");
         var weekday = document.getElementById("today-weekday")
         var date = document.getElementById("today-date")
 
@@ -128,9 +126,11 @@ function todayWidget(a) {
         date.innerHTML = dateNow + " " + monthNow
 
     } else {
+        var widget = document.getElementById("cal-widget");
         var weekday = document.getElementById("cal-weekday")
         var date = document.getElementById("cal-date")
 
+        widget.classList = "widget-container"
         weekday.innerHTML = weekdayNow
         date.innerHTML = dateNow
         // console.log(a)
@@ -168,9 +168,13 @@ function todayWidget(a) {
     // document.getElementById("time-now").innerHTML = timeNow
 }
 
-function hideWidgets() {
-    document.getElementById("weather-widget").classList = "hidden-always";
-    document.getElementById("cal-widget").classList = "hidden-always";
+function displayWidgets(a) {
+    if (a == 1) {
+        document.getElementById("weather-widget").classList = "hidden-always";
+        document.getElementById("cal-widget").classList = "hidden-always";
+    } else {
+        document.getElementById("today-widget").classList = "hidden-always";
+    }
 }
 
 
