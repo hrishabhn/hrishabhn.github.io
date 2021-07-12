@@ -52,7 +52,7 @@
     transition: all 0.15s;
 }
 .media-card:active{
-    scale: 0.95;
+    scale: 0.975;
 }
 .book-card{
     height: 300px;
