@@ -1,3 +1,15 @@
+function apps(){
+    homeAppPopulate()
+    smartAppPopulate()
+    page2AppPopulate()
+    page3AppPopulate()
+    page4AppPopulate()
+    page5AppPopulate()
+}
+
+
+
+
 var hide = [
   "hidden-always",
   "",

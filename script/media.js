@@ -1,3 +1,10 @@
+function media(){
+  tvPopulate()
+  // mediaTVPopulate()
+  bookPopulate()
+  podcastPopulate()
+}
+
 var hide = [
   "hidden-always",
   "hidden-always",
@@ -647,125 +654,7 @@ show41 = [
 
 
 
-// BOOKS //
-var book_1 = [
-  "book-card homodeus-solid",
-  "book-cover homodeus-cover",
-  "audible://view?section=discover&asin=B01N4DCBK6",
-  // "https://smart.link/o3waqx4wg1gdn?asin=B01N4DCBK6",
-]
 
-var book_2 = [
-  "book-card ride-solid",
-  "book-cover ride-cover",
-  "audible://view?section=discover&asin=0525499334",
-  // "https://smart.link/o3waqx4wg1gdn?asin=0525499334",
-]
-
-var book_3 = [
-  "book-card martian-solid",
-  "book-cover martian-cover",
-  "audible://view?section=discover&asin=B082BHJMFF",
-  // "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF",
-]
-
-var bookSolid = [0,0,0,0,0];
-var bookCover = [0,0,0,0,0];
-var bookLink = [0,0,0,0,0];
-
-var k = 1;
-bookSolid[k] = book_1[0];
-bookCover[k] = book_1[1];
- bookLink[k] = book_1[2];
-k = 2;
-bookSolid[k] = book_2[0];
-bookCover[k] = book_2[1];
- bookLink[k] = book_2[2];
-k = 3;
-bookSolid[k] = book_3[0];
-bookCover[k] = book_3[1];
- bookLink[k] = book_3[2];
-
-
-
-
-// PODCASTS //
-
-// Learn cantonese
-var pod1 = [
-  "podcast-card canto-solid",
-  "podcast-cover canto-cover",
-  "https://podcasts.apple.com/podcast/id1513774818"
-]
-
-// Acquired
-var pod2 = [
-  "podcast-card acquired-solid",
-  "podcast-cover acquired-cover",
-  "https://podcasts.apple.com/podcast/id1050462261"
-]
-
-
-
-
-// Founders
-var pod3 = [
-  "podcast-card",
-  "podcast-cover founders-cover",
-  "https://podcasts.apple.com/podcast/id1509276485"
-  
-]
-
-// Pivot
-var pod4 = [
-  "podcast-card pivot-solid",
-  "podcast-cover pivot-cover",
-  "https://podcasts.apple.com/podcast/id1073226719"
-]
-
-//Lex fridman
-var pod5 = [
-  "podcast-card lex-solid",
-  "podcast-cover lex-cover",
-  "https://www.youtube.com/lexfridman/videos"
-]
-
-
-
-//Yang
-var pod6 = [
-  "podcast-card yang-solid",
-  "podcast-cover yang-cover",
-  "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
-]
-
-//Sway
-var pod7 = [
-  "podcast-card sway-solid",
-  "podcast-cover sway-cover",
-  "https://podcasts.apple.com/podcast/id1528594034"
-]
-
-//Economist
-var pod9 = [
-  "podcast-card economist-solid",
-  "podcast-cover economist-cover",
-  "https://podcasts.apple.com/podcast/id151230264"
-]
-
-//Inet
-var pod8 = [
-  "podcast-card inet-solid",
-  "podcast-cover inet-cover",
-  "https://www.youtube.com/c/NewEconomicThinking/videos"
-]
-
-//samharris
-var pod9 = [
-  "podcast-card samharris-solid",
-  "podcast-cover samharris-cover",
-  "https://podcasts.apple.com/podcast/id733163012"
-]
 
 
 
@@ -1415,41 +1304,15 @@ showDescription[k] = show50[4];
 
 
 
-function tvPage(n){
-  var cardClass = "tv-page-card ";
-  var posterClass = "tv-page-poster ";
-  var gradientClass = "tv-page-gradient ";
-  var titleClass = "tv-page-title ";
-  var serviceClass = "tv-page-button-container tv-play-button ";
-
-
-  document.getElementById("card").className =                  cardClass.concat(showSolid[n]);
-  document.getElementById("poster").className =             posterClass.concat(showPoster[n]);
-  document.getElementById("grad").className =           gradientClass.concat(showGradient[n]);
-  document.getElementById("title").className =                titleClass.concat(showTitle[n]);
-  document.getElementById("desc").innerHTML =                             showDescription[n];
-  document.getElementById("link").href =                                         showLink[n];
-  document.getElementById("serviceGradient").className = serviceClass.concat(showServGrad[n]);
-  document.getElementById("service").innerHTML =                              showService[n];
-  document.getElementById("tv-time").href =                                    showTVtime[n];
-  document.getElementById("reelgood").href =                                 showReelgood[n];
-  document.getElementById("imdb").href =                                         showIMDB[n];
-}
-
-
-
-
-
-
-function homeTVPopulate(){
-  var cardClass = "tv-card ";
+function tvPopulate(){
+  var cardClass = "media-card tv-card ";
   // var posterClass = "tv-poster ";
   // var gradientClass = "tv-media-gradient ";
   var titleClass = "tv-card-title ";
   // var showPage = "TV/pages/tv-page-";
   // var linkEnd = ".html"
 
-  for (i = 1; i < 31; i++){
+  for (i = 1; i < 51; i++){
     var itemid = [
       "tv-card-".concat(i),
       "tv-link-".concat(i),
@@ -1471,121 +1334,180 @@ function homeTVPopulate(){
   }
 }
 
+function bookPopulate(){
+  var book_1 = [
+    "book-card homodeus-solid",
+    "homodeus-cover",
+    "audible://view?section=discover&asin=B01N4DCBK6",
+    // "https://smart.link/o3waqx4wg1gdn?asin=B01N4DCBK6",
+  ]
+
+  var book_2 = [
+    "book-card ride-solid",
+    "ride-cover",
+    "audible://view?section=discover&asin=0525499334",
+    // "https://smart.link/o3waqx4wg1gdn?asin=0525499334",
+  ]
+
+  var book_3 = [
+    "book-card martian-solid",
+    "martian-cover",
+    "audible://view?section=discover&asin=B082BHJMFF",
+    // "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF",
+  ]
+
+  // var bookSolid = [0,0,0,0,0];
+  var bookCover = [0,0,0,0,0];
+  var bookLink = [0,0,0,0,0];
+
+  var k = 1;
+  // bookSolid[k] = book_1[0];
+  bookCover[k] = book_1[1];
+   bookLink[k] = book_1[2];
+  k = 2;
+  // bookSolid[k] = book_2[0];
+  bookCover[k] = book_2[1];
+   bookLink[k] = book_2[2];
+  k = 3;
+  // bookSolid[k] = book_3[0];
+  bookCover[k] = book_3[1];
+   bookLink[k] = book_3[2];
 
 
-
-
-
-function mediaTVPopulate(){
-  var cardClass = "tv-media-card ";
-  var posterClass = "tv-media-poster ";
-  var gradientClass = "tv-media-gradient ";
-  var titleClass = "tv-media-title ";
-  // var showPage = "TV/pages/tv-page-";
-  // var linkEnd = ".html"
-
-  for (i = 31; i < 51; i++){
-    console.log(i)
-    var itemid = [
-      "card_".concat(i),
-      "poster_".concat(i),
-      "grad_".concat(i),
-      "title_".concat(i),
-      "desc_".concat(i),
-      "link_".concat(i),
-    ]
-
-    document.getElementById(itemid[0]).className =        cardClass.concat(showSolid[i]);
-    document.getElementById(itemid[1]).className =     posterClass.concat(showPoster[i]);
-    document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
-    document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
-    document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
-    // document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);
-  }
-
-  var cardClass = "book-card ";
-  var posterClass = "book-cover ";
+  var cardClass = "media-card book-card ";
 
   for (i = 1; i < 4; i++){
     var itemid = [
-      "bookCard".concat(i),
-      "bookCover".concat(i),
-      "bookLink".concat(i),
+      "book-".concat(i),
     ]
 
-    // document.getElementById(itemid[0]).className =        cardClass.concat(bookSolid[i]);
-    document.getElementById(itemid[1]).className =     posterClass.concat(bookCover[i]);
-    // document.getElementById(itemid[2]).className = gradientClass.concat(showGradient[i]);
-    // document.getElementById(itemid[3]).className =       titleClass.concat(showTitle[i]);
-    // document.getElementById(itemid[4]).innerHTML =                   showDescription[i];
-    // document.getElementById(itemid[5]).href =                        showPage.concat(i,linkEnd);
+    document.getElementById(itemid[0]).className = cardClass.concat(bookCover[i]);
+    document.getElementById(itemid[0]).href =                        bookLink[i];
   }
-
-
-
-
-
-
-  
-// // BOOKS //
-// //book 1
-//  document.getElementById("bookCard1").className =  book_1[0];
-// document.getElementById("bookCover1").className =  book_1[1];
-// //  document.getElementById("bookLink1").href =       book_1[2];
-
-// //book 2
-//  document.getElementById("bookCard2").className =  book_2[0];
-// document.getElementById("bookCover2").className =  book_2[1];
-// //  document.getElementById("bookLink2").href =       book_2[2];
-
-// //book 3
-//  document.getElementById("bookCard3").className =  book_3[0];
-// document.getElementById("bookCover3").className =  book_3[1];
-// //  document.getElementById("bookLink3").href =       book_3[2];
-
-  
-  // PODCASTS //
-
-  //pod 1
-  //  document.getElementById("podCard1").className = pod1[0];
-  document.getElementById("podCover_1").className = pod1[1];
-   document.getElementById("podLink_1").href =      pod1[2];
-
-  //pod 2
-  //  document.getElementById("podCard2").className = pod2[0];
-  document.getElementById("podCover_2").className = pod2[1];
-   document.getElementById("podLink_2").href =      pod2[2];
-
-   //pod 3
-  //  document.getElementById("podCard3").className = pod3[0];
-  document.getElementById("podCover_3").className = pod3[1];
-   document.getElementById("podLink_3").href =      pod3[2];
-
-   //pod 4
-  //  document.getElementById("podCard4").className = pod4[0];
-  document.getElementById("podCover_4").className = pod4[1];
-   document.getElementById("podLink_4").href =      pod4[2];
-
-   //pod 5
-  //  document.getElementById("podCard5").className = pod5[0];
-  document.getElementById("podCover_5").className = pod5[1];
-   document.getElementById("podLink_5").href =      pod5[2];
-
-  //pod 6
-  //  document.getElementById("podCard6").className = pod6[0];
-  document.getElementById("podCover_6").className = pod6[1];
-   document.getElementById("podLink_6").href =      pod6[2];
-
-   //pod 7
-  //  document.getElementById("podCard7").className = pod7[0];
-  document.getElementById("podCover_7").className = pod7[1];
-   document.getElementById("podLink_7").href =      pod7[2];
-
-   //pod 8
-  //  document.getElementById("podCard8").className = pod8[0];
-  document.getElementById("podCover_8").className = pod8[1];
-   document.getElementById("podLink_8").href =      pod8[2];
 }
+
+function podcastPopulate(){
+  // Learn cantonese
+  var pod_1 = [
+    "podcast-card canto-solid",
+    "podcast-cover canto-cover",
+    "https://podcasts.apple.com/podcast/id1513774818"
+  ]
+
+  // Acquired
+  var pod_2 = [
+    "podcast-card acquired-solid",
+    "podcast-cover acquired-cover",
+    "https://podcasts.apple.com/podcast/id1050462261"
+  ]
+
+  // Founders
+  var pod_3 = [
+    "podcast-card",
+    "podcast-cover founders-cover",
+    "https://podcasts.apple.com/podcast/id1509276485"
+    
+  ]
+
+  // Pivot
+  var pod_4 = [
+    "podcast-card pivot-solid",
+    "podcast-cover pivot-cover",
+    "https://podcasts.apple.com/podcast/id1073226719"
+  ]
+
+  //Lex fridman
+  var pod_5 = [
+    "podcast-card lex-solid",
+    "podcast-cover lex-cover",
+    "https://www.youtube.com/lexfridman/videos"
+  ]
+
+  //Yang
+  var pod_6 = [
+    "podcast-card yang-solid",
+    "podcast-cover yang-cover",
+    "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos"
+  ]
+
+  //Sway
+  var pod_7 = [
+    "podcast-card sway-solid",
+    "podcast-cover sway-cover",
+    "https://podcasts.apple.com/podcast/id1528594034"
+  ]
+
+  //Economist
+  var pod_8 = [
+    "podcast-card economist-solid",
+    "podcast-cover economist-cover",
+    "https://podcasts.apple.com/podcast/id151230264"
+  ]
+
+  // //Inet
+  // var pod_9 = [
+  //   "podcast-card inet-solid",
+  //   "podcast-cover inet-cover",
+  //   "https://www.youtube.com/c/NewEconomicThinking/videos"
+  // ]
+
+  // //samharris
+  // var pod_10 = [
+  //   "podcast-card samharris-solid",
+  //   "podcast-cover samharris-cover",
+  //   "https://podcasts.apple.com/podcast/id733163012"
+  // ]
+
+
+  var podCover = [0,0,0,0,0];
+  var podLink = [0,0,0,0,0];
+
+  var k = 1;
+  podCover[k] = pod_1[1];
+   podLink[k] = pod_1[2];
+  k = 2;
+  podCover[k] = pod_2[1];
+   podLink[k] = pod_2[2];
+  k = 3;
+  podCover[k] = pod_3[1];
+   podLink[k] = pod_3[2];
+  k = 4;
+  podCover[k] = pod_4[1];
+   podLink[k] = pod_4[2];
+  k = 5;
+  podCover[k] = pod_5[1];
+   podLink[k] = pod_5[2];
+  k = 6;
+  podCover[k] = pod_6[1];
+   podLink[k] = pod_6[2];
+  k = 7;
+  podCover[k] = pod_7[1];
+   podLink[k] = pod_7[2];
+  k = 8;
+  podCover[k] = pod_8[1];
+   podLink[k] = pod_8[2];
+  // k = 9;
+  // podCover[k] = pod_9[1];
+  //  podLink[k] = pod_9[2];
+  // k = 10;
+  // podCover[k] = pod_10[1];
+  //  podLink[k] = pod_10[2];
+
+  var cardClass = "media-card pod-card ";
+
+  for (i = 1; i < 9; i++){
+    var itemid = [
+      "pod-".concat(i),
+    ]
+    console.log(i)
+
+
+    document.getElementById(itemid[0]).className = cardClass.concat(podCover[i]);
+    document.getElementById(itemid[0]).href =                        podLink[i];
+  }
+}
+
+
 
 var tvModal = document.getElementById("tv-popup-modal");
 var bookModal = document.getElementById("book-popup-modal");

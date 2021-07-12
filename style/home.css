@@ -108,10 +108,13 @@
     text-decoration: none;
 
     box-shadow: var(--shaded-light);
-    transition: all 0s;
+    transition: scale 0.15s;
 
     color: var(--light-layer-0);
     fill: var(--light-layer-0);
+}
+.widget-container:active{
+    scale: 0.95;
 }
 #weather-info{
     display: flex;
@@ -190,7 +193,7 @@
 
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 15px;
+    margin-top: 30px;
     /* margin-right: 10px; */
 
     position: relative;
