@@ -120,19 +120,19 @@ function smartCards(){
             document.getElementById("smarthome-card").className = "smart-card-show content-container hidden-desktop"
             document.getElementById("transport-card").className = "smart-card-hide content-container hidden-desktop"
             district = "Baguio"
-            // console.log("at home")
+            console.log("at home")
         } else{
             document.getElementById("smarthome-card").className = "smart-card-hide content-container hidden-desktop"
             document.getElementById("transport-card").className = "smart-card-show content-container hidden-desktop"
-            // console.log("not at home")
+            console.log("not at home")
         }
 
         if (work) {
-            // document.getElementById("office-card").className = "smart-card-show content-container"
+            document.getElementById("office-card").className = "smart-card-show content-container"
             district = "Office"
             // console.log("at office")
         } else{
-            // document.getElementById("office-card").className = "smart-card-show content-container"
+            document.getElementById("office-card").className = "smart-card-show content-container"
             // console.log("not at office")
         }
 

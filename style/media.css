@@ -94,7 +94,8 @@
     text-decoration: none;
 }
 .tv-card-play:hover{
-    scale: 1.1;
+    /* scale: 1.1; */
+    background-color: var(--black-40);
     /* box-shadow: var(--element-mid); */
 }
 .tv-card-play:active{
@@ -1198,6 +1199,9 @@
 
     .tv-card-play{
         background-color: var(--white-20);
+    }
+    .tv-card-play:hover{
+        background-color: var(--white-40);
     }
     .tv-card-play-text{
         color: var(--black-80);
