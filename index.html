@@ -22,6 +22,7 @@
     <link rel="preload" href="script/apps.js" as="script">
     <link rel="preload" href="script/media.js" as="script">
     <link rel="preload" href="script/date.js" as="script">
+    <link rel="preload" href="script/weather.js" as="script">
 
     <meta name="mobile-wep-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,7 +33,7 @@
     <script src="app.js"></script>
 </head>
 
-<body ontouchstart="" onload="homeAppPopulate();smartAppPopulate();homeTVPopulate();page2AppPopulate();page3AppPopulate();page4AppPopulate();page5AppPopulate();mediaTVPopulate();smartCards();statusBar(1000,4000)">
+<body ontouchstart="" onload="homeAppPopulate();smartAppPopulate();homeTVPopulate();page2AppPopulate();page3AppPopulate();page4AppPopulate();page5AppPopulate();mediaTVPopulate();smartCards();statusBar(1000,4000);weatherWidget()">
     <div class="navbar">
         <div class="navbar-menu">
             <!-- dashboard --><div class="menu-item-container">
@@ -155,7 +156,7 @@
 
     </div>
     
-    <div class="notch-box"></div>
+    <!-- <div class="notch-box"></div> -->
 
     <div id="status-box" class="status-box status-box-hide">
         <div class="status-icon-box">
@@ -172,6 +173,7 @@
         <script src="script/media.js"></script>
         <script src="script/apps.js"></script>
         <script src="script/date.js"></script>
+        <script src="script/weather.js"></script>
         <script src="script/pages.js"></script>
 
         <div id="main-1" class="main">
@@ -202,6 +204,7 @@
                 </div>
             </div> -->
 
+            
             <span class="search-container hidden-tablet hidden-mobile">
                 <span class="search-icon-box">
                     <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005"><path d="M505.749 475.587l-145.6-145.6c28.203-34.837 45.184-79.104 45.184-127.317C405.333 90.926 314.41.003 202.666.003S0 90.925 0 202.669s90.923 202.667 202.667 202.667c48.213 0 92.48-16.981 127.317-45.184l145.6 145.6c4.16 4.16 9.621 6.251 15.083 6.251s10.923-2.091 15.083-6.251c8.341-8.341 8.341-21.824-.001-30.165zM202.667 362.669c-88.235 0-160-71.765-160-160s71.765-160 160-160 160 71.765 160 160-71.766 160-160 160z"/></svg>                </span>
@@ -217,7 +220,18 @@
                 </span>
                 <a class="search-button" href="google://search"></a>
             </span>
-            <div id="smarthome-card" class="content-container smart-card-hide">
+            <a id="weather-widget" class="widget-container widget-loading hidden-always" href="weather://">
+                <div id="weather-info">
+                    <div id="weather-location">
+                        <p>--</p>
+                    </div>
+                    <div id="weather-temp">
+                        <p>--&#176C</p>
+                    </div>
+                </div>
+                <div id="weather-icon"></div>
+                <div id="w-climate"></div>
+            </a><div id="smarthome-card" class="content-container smart-card-hide">
                 <div class="content-image smarthome-image"></div>
                 <div class="content-text-box">
                     <div class="content-text">
