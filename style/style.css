@@ -390,7 +390,7 @@ body{
 
     border-radius: 20px;
 
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
     background: var(--dark-layer-1);
     overflow: hidden;
@@ -417,10 +417,10 @@ body{
     display: flex;
     position: relative;
 
-    height: 50px;
+    height: 55px;
     width: 100%;
 
-    padding-left: 15px;
+    padding-left: 20px;
     /* padding-top: 15px; */
     padding-bottom: 10px;
 
@@ -506,8 +506,8 @@ body{
     align-items: center;
     position: relative;
 
-    padding-left: 15px;
-    padding-right: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
 
     white-space: nowrap;
     overflow-x: scroll;
@@ -1275,11 +1275,43 @@ body{
     .content-container{
         width: calc(100% - 10px);
         margin-top: 20px;
+        padding-bottom: 20px;
     }
     
     .content-image{
         height: calc((100vw - 40px) * (0.5625));
         display: block;
+    }
+    .content-text-box{
+        display: flex;
+        position: relative;
+    
+        height: 50px;
+        width: 100%;
+    
+        padding-left: 15px;
+        /* padding-top: 15px; */
+        padding-bottom: 10px;
+    
+        /* overflow: hidden; */
+        box-sizing: border-box;
+    
+        /* z-index: 50; */
+    
+        align-content: flex-end;
+        color: var(--light-layer-0);
+    }
+    .content-text{
+        font-weight: 600;
+        font-size: 24px;
+        display: flex;
+        align-self: flex-end;
+        cursor: default;
+    }
+
+    .app-tray-wrapper{
+        padding-left: 15px;
+        padding-right: 5px;
     }
     
 
