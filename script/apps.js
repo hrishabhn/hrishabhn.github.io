@@ -836,7 +836,7 @@ app_S32 = [
     "maps://",
 ]
 
-app_S33 = [
+app_S35 = [
     "mtr",
     "MTR",
     "",
@@ -852,7 +852,7 @@ app_S34 = [
     "shortcuts://run-shortcut?name=CityBus%20HK",
 ]
 
-app_S35 = [
+app_S33 = [
     "kmb",
     "KMB",
     "",
