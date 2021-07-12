@@ -1,9 +1,22 @@
+var fullDate = new Date();
+
+const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+const months = ["JAN","FEB","MAR","APR","MAY","JUN","July"]
+
+var hourNow = fullDate.getHours();
+
+var weekdayNow = fullDate.getDay()
+weekdayNow = weekDays[weekdayNow]
+
+var monthNow = fullDate.getMonth()
+monthNow = months[monthNow]
+
+var dateNow = fullDate.getDate();
+
 function widgets(){
-    var fullDate = new Date();
-    var hourNow = fullDate.getHours();
     var a;
 
-    if (hourNow < 10) {
+    if (hourNow > 10) {
         a = 1;
     } else {
         a = 0;
@@ -63,11 +76,29 @@ function weatherWidget(a) {
                         switch (iconValue) {
                             case 'Clouds':
                                 icon.innerHTML = cloudyIcon;
-                                widget.classList = "today-widget-container cloudy"
                                 break;
                             case 'Sunny':
                                 icon.innerHTML = sunnyIcon;
+                                break;
+                            default:
+                                console.log("error: no weather icon found");
+                                console.log(iconValue)
+                        }
+
+                        if (hourNow < 10) {
+                            iconValue = "Night"
+                        }
+
+
+                        switch (iconValue) {
+                            case 'Clouds':
+                                widget.classList = "today-widget-container cloudy"
+                                break;
+                            case 'Sunny':
                                 widget.classList = "today-widget-container sunny"
+                                break;
+                            case 'Night':
+                                widget.classList = "today-widget-container night"
                                 break;
                             default:
                                 widget.classList = "today-widget-container"
@@ -85,24 +116,39 @@ function weatherWidget(a) {
                         var temp = document.getElementById("weather-temp")
                         var icon = document.getElementById("weather-icon")
 
-                        // iconValue = "Sunny";
                         switch (iconValue) {
                             case 'Clouds':
                                 icon.innerHTML = cloudyIcon;
-                                // icon2.innerHTML = cloudyIcon;
-                                widget.classList = "widget-container cloudy"
                                 break;
                             case 'Sunny':
                                 icon.innerHTML = sunnyIcon;
-                                // icon2.innerHTML = sunnyIcon;
-                                widget.classList = "widget-container sunny"
                                 break;
                             default:
                                 console.log("error: no weather icon found");
                                 console.log(iconValue)
                         }
 
-                        
+                        if (hourNow < 10) {
+                            iconValue = "Night"
+                        }
+
+
+                        switch (iconValue) {
+                            case 'Clouds':
+                                widget.classList = "widget-container cloudy"
+                                break;
+                            case 'Sunny':
+                                widget.classList = "widget-container sunny"
+                                break;
+                            case 'Night':
+                                widget.classList = "widget-container night"
+                                break;
+                            default:
+                                widget.classList = "today-widget-container"
+                                console.log("error: no weather icon found");
+                                console.log(iconValue)
+                        }
+
                         city.innerHTML = cityValue
                         temp.innerHTML = tempValue + "&#176C"
                         // console.log(data)
@@ -113,25 +159,6 @@ function weatherWidget(a) {
 }
 
 function todayWidget(a) {
-
-    var fullDate = new Date();
-
-    var weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-
-    // var weekDays = ["SUN","MON","TUE","WED","THU","FRI","SAT"]
-    var months = ["JAN","FEB","MAR","APR","MAY","JUN","July"]
-
-    var weekdayNow = fullDate.getDay()
-    weekdayNow = weekDays[weekdayNow]
-
-    var monthNow = fullDate.getMonth()
-    monthNow = months[monthNow]
-
-    var dateNow = fullDate.getDate();
-
-    // var a = 1;
-
-
     if (a == 1) {
         var widget = document.getElementById("today-widget");
         var weekday = document.getElementById("today-weekday")
