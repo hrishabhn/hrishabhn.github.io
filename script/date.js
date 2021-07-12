@@ -97,29 +97,28 @@ function smartCards(){
         // console.log(lat)
         // console.log(lon)
 
-        // HOME
-        // var lat = 22.262;
-        // var lon = 114.133;
-        var home = (lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135);
 
-        // Tuen Mun
-        // var lat = 22.391
-        // var lon = 113.970
-        var work = (lat > 22.389) && (lat < 22.393) && (lon > 113.968) && (lon < 113.972);
-
-        var ktown = (lat > 22.279) && (lat < 22.285) && (lon > 114.125) && (lon < 114.130);
-
-
-        // 22.279,114.125 bottom left
-        // 22.285,114.130 top right
+        const home = (lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135);
+        const pokFuLam = (lat > 22.252) && (lat < 22.273) && (lon > 114.121) && (lon < 114.135);
+        const work = (lat > 22.3905) && (lat < 22.392) && (lon > 113.9695) && (lon < 113.971);
+        const cyberport = (lat > 22.260) && (lat < 22.264) && (lon > 114.127) && (lon < 114.131);
+        const ktown = (lat > 22.279) && (lat < 22.285) && (lon > 114.125) && (lon < 114.130);
+        const central = (lat > 22.281) && (lat < 22.290) && (lon > 114.156) && (lon < 114.159);
+        const causeway = (lat > 22.270) && (lat < 22.283) && (lon > 114.180) && (lon < 114.190);
+        const westKowloon = (lat > 22.298) && (lat < 22.308) && (lon > 114.154) && (lon < 114.165);
+        const tuenMun = (lat > 22.37) && (lat < 22.41) && (lon > 113.96) && (lon < 113.985);
 
 
-        var district = "Out"
+        // 22.273,114.121 top left
+        // 22.252,114.135 borrom right
+
+
+        var district = "Hong Kong"
 
         if (home) {
             document.getElementById("smarthome-card").className = "smart-card-show content-container hidden-desktop"
             document.getElementById("transport-card").className = "smart-card-hide content-container hidden-desktop"
-            district = "Baguio"
+            // district = "Baguio"
             console.log("at home")
         } else{
             document.getElementById("smarthome-card").className = "smart-card-hide content-container hidden-desktop"
@@ -129,19 +128,42 @@ function smartCards(){
 
         if (work) {
             document.getElementById("office-card").className = "smart-card-show content-container"
-            district = "Office"
+            // district = "Office"
             // console.log("at office")
         } else{
             document.getElementById("office-card").className = "smart-card-hide content-container"
             // console.log("not at office")
         }
 
+        if (pokFuLam) {
+            district = "Pok Fu Lam"
+        }
+        if (cyberport) {
+            district = "Cyberport"
+        }
+        if (home) {
+            district = "Baguio Villa"
+        }
         if (ktown) {
             district = "Kennedy Town"
-            // console.log("ktown")
-        } else{
-            // console.log("not at ktown")
         }
+        if (central) {
+            district = "Central"
+        }
+        if (causeway) {
+            district = "Causeway Bay"
+        }
+        if (westKowloon) {
+            district = "West Kowloon"
+        }
+        
+        if (tuenMun) {
+            district = "Tuen Mun"
+        }
+        if (work) {
+            district = "Office"
+        }
+
 
 
 
