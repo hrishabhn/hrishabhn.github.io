@@ -1499,7 +1499,7 @@ function podcastPopulate(){
     var itemid = [
       "pod-".concat(i),
     ]
-    console.log(i)
+    // console.log(i)
 
 
     document.getElementById(itemid[0]).className = cardClass.concat(podCover[i]);
