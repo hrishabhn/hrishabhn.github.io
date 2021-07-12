@@ -595,6 +595,7 @@
     .today-widget-container{
         width: calc((100% - 20px) / 1);
         margin-right: 20px;
+        margin-top: 20px;
     }
     .search-container{
         height: 40px;
