@@ -242,11 +242,11 @@
     font-size: 40px;
     font-weight: 300;
 }
-#weather-icon-2{
+#weather-icon{
     display: flex;
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 14px;
+    right: 14px;
 
     justify-self: flex-end;
     align-self: flex-end;
@@ -260,6 +260,9 @@
 }
 .sunny{
     background-image: url(../images/weather/sunny.jpg);
+}
+.night{
+    background-image: url(../images/weather/night.jpg);
 }
 
 
