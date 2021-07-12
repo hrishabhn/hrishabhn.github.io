@@ -16,7 +16,7 @@ var dateNow = fullDate.getDate();
 function widgets(){
     var a;
 
-    if (hourNow > 10) {
+    if (hourNow < 10) {
         a = 1;
     } else {
         a = 0;
@@ -85,7 +85,7 @@ function weatherWidget(a) {
                                 console.log(iconValue)
                         }
 
-                        if (hourNow < 10) {
+                        if ((hourNow > 18) && (hourNow < 6) {
                             iconValue = "Night"
                         }
 
@@ -128,7 +128,7 @@ function weatherWidget(a) {
                                 console.log(iconValue)
                         }
 
-                        if (hourNow < 10) {
+                        if ((hourNow > 18) && (hourNow < 6) {
                             iconValue = "Night"
                         }
 
