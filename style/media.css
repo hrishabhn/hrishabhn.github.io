@@ -1217,7 +1217,7 @@
     .media-tray{
         margin: -50px -20px;
         padding: 60px 10px 50px 20px;
-        width: calc(100% + 40px);
+        width: calc(100% + 30px);
     }
 
 
