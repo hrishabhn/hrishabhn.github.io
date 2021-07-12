@@ -49,6 +49,7 @@ function weatherWidget(a) {
                         // var temp = document.getElementById("today-temp")
                         var icon = document.getElementById("today-icon")
 
+                        // iconValue = "rain"
                         switch (iconValue) {
                             case 'Clouds':
                                 icon.innerHTML = cloudyIcon;
@@ -59,6 +60,7 @@ function weatherWidget(a) {
                                 widget.classList = "today-widget-container sunny"
                                 break;
                             default:
+                                widget.classList = "today-widget-container"
                                 console.log("error: no weather icon found");
                         }
 
