@@ -40,14 +40,24 @@ function weatherWidget(a) {
                     var cityValue = data['name'];
                     var tempValue = data['main']['temp'];
                     var iconValue = data['weather'][0]['main'];
+                    // console.log(data)
+                    var hiValue = data['main']['temp_max'];
+                    var loValue = data['main']['temp_min'];
 
                     tempValue = Math.round(tempValue);
+                    hiValue = Math.round(hiValue);
+                    loValue = Math.round(loValue);
+
+                    var hiloValue = 'H:' + hiValue + '&#176 ' + 'L:' + loValue + '&#176';
 
                     if (a == 1) {
+                        // console.log(hiloValue)
+
                         var widget = document.getElementById("today-widget");
                         // var city = document.getElementById("today-location")
                         // var temp = document.getElementById("today-temp")
                         var icon = document.getElementById("today-icon")
+                        var hilo = document.getElementById("today-hilo")
 
                         // iconValue = "rain"
                         switch (iconValue) {
@@ -62,9 +72,11 @@ function weatherWidget(a) {
                             default:
                                 widget.classList = "today-widget-container"
                                 console.log("error: no weather icon found");
+                                console.log(iconValue)
                         }
 
-                        // city.innerHTML = cityValue
+                        hilo.innerHTML = hiloValue
+                        // testing.innerHTML = "hiloValue"
                         // temp.innerHTML = tempValue + "&#176C"
                         
                     } else {
@@ -87,6 +99,7 @@ function weatherWidget(a) {
                                 break;
                             default:
                                 console.log("error: no weather icon found");
+                                console.log(iconValue)
                         }
 
                         
