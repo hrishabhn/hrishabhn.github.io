@@ -28,14 +28,20 @@ function weatherWidget() {
                 .then(response => response.json())
                 .then(data => {
                     var cityValue = data['name'];
-                    var tempValue = data['main']['temp']
+                    var tempValue = data['main']['temp']    
                     var iconValue = data['weather'][0]['main']
 
                     tempValue = Math.round(tempValue);
+
                     switch (iconValue) {
                         case 'Clouds':
                             icon.innerHTML = cloudyIcon;
                             widget.classList = "widget-container hidden-desktop cloudy"
+                            break;
+                        case 'Sunny':
+                            icon.innerHTML = sunnyIcon;
+                            widget.classList = "widget-container hidden-desktop sunny"
+                            break;
                         default:
                             console.log("error: no weather icon found");
                     }
@@ -43,7 +49,7 @@ function weatherWidget() {
                     
                     city.innerHTML = cityValue
                     temp.innerHTML = tempValue + "&#176C"
-                    console.log(data)
+                    // console.log(data)
                 })
         })
     }
