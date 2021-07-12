@@ -86,7 +86,7 @@ function smartCards(){
 
         var fullDate = new Date();
         var hourNow = fullDate.getHours();
-        console.log(hourNow);
+        // console.log(hourNow);
 
         var afternoon = (hourNow > 11) && (hourNow < 15);
         var evening = (hourNow > 16) && (hourNow < 21);
@@ -121,11 +121,11 @@ function smartCards(){
             document.getElementById("smarthome-card").className = "smart-card-show content-container hidden-desktop"
             document.getElementById("transport-card").className = "smart-card-hide content-container hidden-desktop"
             // district = "Baguio"
-            console.log("at home")
+            // console.log("at home")
         } else{
             document.getElementById("smarthome-card").className = "smart-card-hide content-container hidden-desktop"
             document.getElementById("transport-card").className = "smart-card-show content-container hidden-desktop"
-            console.log("not at home")
+            // console.log("not at home")
         }
 
         if (work) {
