@@ -150,9 +150,11 @@
     fill: white;
 }
 .cloudy{
-    background: url(../images/cloudy.jpg);
+    background: url(../images/weather/cloudy.jpg);
 }
-
+.sunny{
+    background: url(../images/weather/sunny.jpg);
+}
 
 
 
