@@ -119,7 +119,7 @@ function smartCards(){
         if (home) {
             document.getElementById("smarthome-card").className = "smart-card-show content-container hidden-desktop"
             document.getElementById("transport-card").className = "smart-card-hide content-container hidden-desktop"
-            district = "Home"
+            district = "Baguio"
             // console.log("at home")
         } else{
             document.getElementById("smarthome-card").className = "smart-card-hide content-container hidden-desktop"
