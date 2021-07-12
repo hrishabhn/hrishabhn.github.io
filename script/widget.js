@@ -85,7 +85,7 @@ function weatherWidget(a) {
                                 console.log(iconValue)
                         }
 
-                        if ((hourNow > 18) && (hourNow < 6) {
+                        if ((hourNow > 18) || (hourNow < 6)) {
                             iconValue = "Night"
                         }
 
@@ -128,7 +128,7 @@ function weatherWidget(a) {
                                 console.log(iconValue)
                         }
 
-                        if ((hourNow > 18) && (hourNow < 6) {
+                        if ((hourNow > 18) || (hourNow < 6)) {
                             iconValue = "Night"
                         }
 
