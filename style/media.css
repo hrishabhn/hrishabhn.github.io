@@ -9,12 +9,12 @@
     /* z-index: 1000; */
     box-sizing: border-box;
 
-    margin: -50px -30px;
-    padding: 70px 20px 50px 30px;
+    margin: -50px -40px;
+    padding: 70px 30px 50px 40px;
     /* padding-top: 60px; */
 
 
-    width: calc(100% + 60px);
+    width: calc(100% + 50px);
     min-height: 1px;
     position: relative;
     top: 0px;
@@ -51,10 +51,11 @@
 
     transition: all 0.15s;
     background-size: cover;
+    background-position: center center;
     box-shadow: var(--shaded-light);
     /* display: none; */
     scroll-snap-align: start;
-    scroll-margin-left: 30px;
+    scroll-margin-left: 40px;
 }
 
 .tv-card-gradient{
