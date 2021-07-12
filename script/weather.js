@@ -33,6 +33,7 @@ function weatherWidget() {
 
                     tempValue = Math.round(tempValue);
 
+                    // iconValue = "Sunny";
                     switch (iconValue) {
                         case 'Clouds':
                             icon.innerHTML = cloudyIcon;
