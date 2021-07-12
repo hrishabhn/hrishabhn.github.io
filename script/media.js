@@ -78,7 +78,7 @@ show1 = [
   "manifest-poster",
   "manifest-gradient",
   "manifest-title",
-  "Drama • Mystery • 3 Seasons • 2018 - Present",
+  "Drama • Mystery • 3 Seasons • 2018 - 2021",
   "https://www.hulu.com/series/manifest-a1e5ed46-2704-431e-94b0-9aea1560c712",
   "hulu-green",
   "Watch on Hulu",
