@@ -31,15 +31,16 @@
 }
 
 .tv-card{
-    display: inline-flex;
+    display: inline-block;
     position: relative;
-    vertical-align: top;
+    vertical-align: bottom;
     /* z-index: 0; */
 
 
 
     height: calc((100vw - 40px) * (1080 / 1920));
     width: calc(100vw - 40px);
+    /* aspect-ratio: 16 / 9; */
 
     max-height: 225px;
     max-width: 400px;
@@ -62,7 +63,7 @@
     display: block;
     position: absolute;
     bottom: 0px;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
 
     height: 75%;
     width: 100%;

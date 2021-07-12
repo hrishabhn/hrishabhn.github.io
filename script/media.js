@@ -96,8 +96,6 @@ show2 = [
   "It's Always Sunny in Philadelphia It's Always Sunny in Philadelphia It's Always Sunny in Philadelphia",
 ]
 
-
-
 // Love Death Robots
 show3 = [
   "ldr-solid",
@@ -111,6 +109,21 @@ show3 = [
   "https://www.tvtime.com/en/show/357888",
   "https://reelgood.com/show/love-death-robots-2019",
   "https://www.imdb.com/title/tt9561862",
+]
+
+// Love Death Robots
+show4 = [
+  "blackpink-solid",
+  "blackpink-poster",
+  "blackpink-gradient",
+  "blackpink-title",
+  "Documentary • Music • 2020",
+  "https://www.netflix.com/title/81106901",
+  "netflix",
+  "Watch on Netflix",
+  "",
+  "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
+  "https://www.imdb.com/title/tt13058290",
 ]
 
 // Rick and Morty

@@ -590,3 +590,16 @@
 .southpark-title{
     background-image: url('../TV/title/southpark.png');
 }
+
+.blackpink-solid{
+    background-color: #a6a8ab;
+}
+.blackpink-gradient{
+    background: linear-gradient(#00000000,#a6a8ab);
+}
+.blackpink-poster{
+    background-image: url('../TV/background/blackpink.webp');
+}
+.blackpink-title{
+    background-image: url('../TV/title/blackpink.png');
+}
