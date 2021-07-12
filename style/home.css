@@ -82,6 +82,82 @@
     /* background-color: #ff00ff33; */
 }
 
+.widget-loading{
+    background:linear-gradient(to bottom right,#1A1A1A,#000);
+}
+
+.widget-container{
+    width: calc((100% - 60px) / 2);
+    position: relative;
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+    /* justify-content: center; */
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+
+    margin-top: 30px;
+    margin-right: 30px;
+
+    border-radius: 20px;
+
+    padding: 12px 15px;
+
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    text-decoration: none;
+
+    box-shadow: var(--shaded-light);
+    transition: all 0s
+}
+#weather-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#weather-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+    color: var(--white-100);
+    font-size: 12px;
+    font-weight: 600;
+}
+#weather-temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-100);
+    font-size: 40px;
+    font-weight: 300;
+}
+#weather-icon{
+    display: flex;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    justify-self: flex-end;
+    align-self: flex-end;
+    flex-direction: column;
+    height: 18px;
+    width: 18px;
+    fill: white;
+}
+.cloudy{
+    background: url(../images/cloudy.jpg);
+}
+
+
+
+
+
+
 .search-container{
     box-sizing: border-box;
     height: 50px;
@@ -197,6 +273,7 @@
     /* box-shadow: 0 0 5px var(--black-40); */
     background: var(--black-20);
     -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
 }
 .smart-card-text{
     display: inline-flex;
@@ -308,6 +385,9 @@
 
 
 @media screen and (prefers-color-scheme: light) {
+    .widget-loading{
+        background:linear-gradient(to bottom right,#fff,#e6e6e6);
+    }
     .user-container{
         background-color: var(--light-layer-1);
     }
@@ -374,7 +454,10 @@
 
 
 @media(max-width: 450px){
-
+    .widget-container{
+        width: calc(100% - 10px);
+        margin-top: 20px;
+    }
     .search-container{
         height: 40px;
         width: calc(100% - 10px);
