@@ -1172,7 +1172,7 @@ body{
 
         /* width: calc(100vw - 30px); */
         height: calc(100vh - 0px);
-        padding: 0px 10px 105px 20px;
+        padding: 0px 0px 105px 20px;
         
         /* padding-bottom: 115px; */
 
@@ -1276,7 +1276,7 @@ body{
     }
 
     .content-container{
-        width: calc(100% - 10px);
+        width: calc(100% - 20px);
         margin-top: 20px;
         padding-bottom: 20px;
     }

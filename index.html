@@ -22,7 +22,7 @@
     <link rel="preload" href="script/apps.js" as="script">
     <link rel="preload" href="script/media.js" as="script">
     <link rel="preload" href="script/date.js" as="script">
-    <link rel="preload" href="script/weather.js" as="script">
+    <!-- <link rel="preload" href="script/widget.js" as="script"> -->
 
     <meta name="mobile-wep-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,7 +33,7 @@
     <script src="app.js"></script>
 </head>
 
-<body ontouchstart="" onload="homeAppPopulate();smartAppPopulate();homeTVPopulate();page2AppPopulate();page3AppPopulate();page4AppPopulate();page5AppPopulate();mediaTVPopulate();smartCards();statusBar(1000,4000);weatherWidget()">
+<body ontouchstart="" onload="homeAppPopulate();smartAppPopulate();homeTVPopulate();page2AppPopulate();page3AppPopulate();page4AppPopulate();page5AppPopulate();smartCards();statusBar(1000,4000);widgets()">
     <div class="navbar">
         <div class="navbar-menu">
             <!-- dashboard --><div class="menu-item-container">
@@ -173,7 +173,7 @@
         <script src="script/media.js"></script>
         <script src="script/apps.js"></script>
         <script src="script/date.js"></script>
-        <script src="script/weather.js"></script>
+        <script src="script/widget.js"></script>
         <script src="script/pages.js"></script>
 
         <div id="main-1" class="main">
@@ -220,7 +220,7 @@
                 </span>
                 <a class="search-button" href="google://search"></a>
             </span>
-            <a id="weather-widget" class="widget-container widget-loading hidden-always" href="weather://">
+            <a id="weather-widget" class="widget-container" href="weather://">
                 <div id="weather-info">
                     <div id="weather-location">
                         <p>--</p>
@@ -231,6 +231,15 @@
                 </div>
                 <div id="weather-icon"></div>
                 <div id="w-climate"></div>
+            </a><a id="today-widget" class="widget-container" href="ical://">
+                <div id="today-info">
+                    <div id="today-weekday">
+                        <p>--</p>
+                    </div>
+                    <div id="today-date">
+                        <p>--</p>
+                    </div>
+                </div>
             </a><div id="smarthome-card" class="content-container smart-card-hide">
                 <div class="content-image smarthome-image"></div>
                 <div class="content-text-box">

@@ -1485,6 +1485,7 @@ function mediaTVPopulate(){
   // var linkEnd = ".html"
 
   for (i = 31; i < 51; i++){
+    console.log(i)
     var itemid = [
       "card_".concat(i),
       "poster_".concat(i),

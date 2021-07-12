@@ -1,5 +1,10 @@
+function widgets(){
+    weatherWidget();
+    todayWidget();
+    // showWidgets();
+}
+
 function weatherWidget() {
-    var widget = document.getElementById("weather-widget")
     var city = document.getElementById("weather-location")
     var temp = document.getElementById("weather-temp")
     var icon = document.getElementById("weather-icon")
@@ -27,6 +32,7 @@ function weatherWidget() {
             fetch(api)
                 .then(response => response.json())
                 .then(data => {
+                    var widget = document.getElementById("weather-widget");
                     var cityValue = data['name'];
                     var tempValue = data['main']['temp']    
                     var iconValue = data['weather'][0]['main']
@@ -37,11 +43,11 @@ function weatherWidget() {
                     switch (iconValue) {
                         case 'Clouds':
                             icon.innerHTML = cloudyIcon;
-                            widget.classList = "widget-container hidden-desktop cloudy"
+                            widget.classList = "widget-container cloudy"
                             break;
                         case 'Sunny':
                             icon.innerHTML = sunnyIcon;
-                            widget.classList = "widget-container hidden-desktop sunny"
+                            widget.classList = "widget-container sunny"
                             break;
                         default:
                             console.log("error: no weather icon found");
@@ -54,14 +60,65 @@ function weatherWidget() {
                 })
         })
     }
+}
+
+
+
+
+function todayWidget(){
+
+    var fullDate = new Date();
+
+    var weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+    // var weekDays = ["SUN","MON","TUE","WED","THU","FRI","SAT"]
+    // // var months = ["JAN","FEB","MAR","APR","MAY","JUN","JUL"]
+
+    var weekday = document.getElementById("today-weekday")
+    var date = document.getElementById("today-date")
+    // var temp = document.getElementById("weather-temp")
+    // var icon = document.getElementById("weather-icon")
+
+    weekdayNow = fullDate.getDay()
+    weekdayNow = weekDays[weekdayNow]
+
+    dateNow = fullDate.getDate();
+
+
 
     
+    // console.log(weekdayNow)
 
-        // const api = `https://api.openweathermap.org/data/2.5/weather?q=Hong%20Kong&appid=2c11424ffd5a3ed7be3f73e6b9960fbe`;
-
-
-
-
+    weekday.innerHTML = weekdayNow
+    date.innerHTML = dateNow
 
 
+    // // monthNow = fullDate.getMonth()
+    // // monthNow = months[monthNow]
+
+
+    // hourNow = fullDate.getHours();
+    // minsNow = fullDate.getMinutes();
+    // var timeNow=('0'  + hourNow).slice(-2)+':'+('0' + minsNow).slice(-2);
+
+
+    // // timeNow = `${hourNow}:${minsNow}`;
+    // // timeNow = "00:00";
+    
+    // document.getElementById("date-text").innerHTML = dayNow
+    // // document.getElementById("date-month").innerHTML = monthNow
+    // document.getElementById("date-number").innerHTML = dateNow
+    // document.getElementById("time-now").innerHTML = timeNow
 }
+
+// function showWidgets(){
+//     console.log("bruh")
+//     var widget1 = document.getElementById("weather-widget");
+//     var widget2 = document.getElementById("today-widget");
+//     console.log("bruh")
+
+//     widget1.classList = "widget-container";
+//     widget2.classList = "widget-container";
+//     console.log("bruh")
+
+// }
