@@ -79,9 +79,9 @@ show1 = [
   "manifest-gradient",
   "manifest-title",
   "Drama • Mystery • 3 Seasons • 2018 - Present",
-  "https://www.netflix.com/title/80241318",
-  "netflix",
-  "Watch on Netflix",
+  "https://www.hulu.com/series/manifest-a1e5ed46-2704-431e-94b0-9aea1560c712",
+  "hulu-green",
+  "Watch on Hulu",
   "https://www.tvtime.com/en/show/349271",
   "https://reelgood.com/show/manifest-2018",
   "https://www.imdb.com/title/tt8421350"
