@@ -16,7 +16,7 @@ var dateNow = fullDate.getDate();
 function widgets(){
     var a;
 
-    if (hourNow < 10) {
+    if (hourNow < 9) {
         a = 1;
     } else {
         a = 0;
@@ -53,7 +53,7 @@ function weatherWidget(a) {
                     var cityValue = data['name'];
                     var tempValue = data['main']['temp'];
                     var iconValue = data['weather'][0]['main'];
-                    // console.log(data)
+                    console.log(data)
                     var hiValue = data['main']['temp_max'];
                     var loValue = data['main']['temp_min'];
 
