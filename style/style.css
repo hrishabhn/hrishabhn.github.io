@@ -468,40 +468,6 @@ body{
 }
 
 
-/* .media-tray{
-    width: 100%;
-    min-height: 1%;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 0;
-
-    margin-top: 20px;
-
-    border-radius: 15px;
-
-    padding-bottom: 0px;
-
-    overflow: visible;
-
-    box-shadow: var(--shaded-light);
-    transition: all 0.25s
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .app-tray-wrapper{
     width: 100%;
     box-sizing: border-box;
@@ -566,13 +532,13 @@ body{
 
     scroll-snap-align: none;
     scroll-margin-left: 90px;
-    transition: all 0.25s;
+    transition: all 0.15s;
 }
 .app-container:hover{
     opacity: 0.8;
 }
 .app-container:active{
-    scale: 0.9;
+    scale: 0.95;
 }
 
 
@@ -1325,6 +1291,9 @@ body{
     }
     .app-container:hover{
         opacity: 1;
+    }
+    .app-container:active{
+        scale: 0.9;
     }
     .app-icon-container{
         top: 0;
