@@ -220,14 +220,24 @@ function kmbWidget(route,stop,n) {
         .then(response => response.json())
         .then(data => {
             // console.log(data)
+            // console.log(data['data'][0]['eta'])
             var eta = Date.parse(data['data'][0]['eta']);
+
+            // console.log(eta)
+            // if (!eta) {
+            //     console.log("rip")
+            // } else {
+            //     console.log("norip")
+            // }
             // console.log(eta)
 
             eta = processETA(eta);
 
-            if (!eta) {
-                eta = "-";
-            }
+            // if (!eta) {
+            //     eta = "-";
+            //     display = "hidden-always"
+            //     console.log("idk man")
+            // }
 
             switch(stop) {
                 case "490F1A302D8C32FC":
@@ -302,6 +312,13 @@ function processETA(eta) {
 
 function busETAPopulate(route,stop,n,eta) {
     // console.log(eta)
+
+    if (!eta) {
+        var busCard = document.getElementById("bus-card-".concat(n))
+        busCard.classList = "hidden-always"
+    }
+
+
 
     var busRoute = document.getElementById("bus-route-".concat(n))
     busRoute.innerHTML = route;
