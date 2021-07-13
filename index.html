@@ -4,6 +4,7 @@
 <head>
     <meta name='viewport' content='viewport-fit=cover, height=device-height, width=device-width, initial-scale=1.0, user-scalable=no'>
     <link rel="stylesheet" href="style/brand.css">
+    <link rel="stylesheet" href="style/widgets.css">
     <link rel="stylesheet" href="style/elements.css">
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/media.css">
@@ -18,11 +19,11 @@
     <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="images/launch-12mini.png">
     <link rel="apple-touch-startup-image" media="screen and (device-width: 1194px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait" href="images/launch-ipad.png">
 
-    <link rel="preload" href="script/pages.js" as="script">
+    <!-- <link rel="preload" href="script/pages.js" as="script">
     <link rel="preload" href="script/apps.js" as="script">
     <link rel="preload" href="script/media.js" as="script">
     <link rel="preload" href="script/date.js" as="script">
-    <link rel="preload" href="script/widget.js" as="script">
+    <link rel="preload" href="script/widget.js" as="script"> -->
 
     <meta name="mobile-wep-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,7 +34,7 @@
     <script src="app.js"></script>
 </head>
 
-<body ontouchstart="" onload="apps();smartCards();media();statusBar(1000,4000);widgets()">
+<body ontouchstart="" onload="mainPopulate()">
     <div class="navbar">
         <div class="navbar-menu">
             <!-- dashboard --><div class="menu-item-container">
@@ -169,7 +170,14 @@
         </div>
     </div>
 
-    <div class="main-container">      
+    <div class="main-container">
+        <script src="script/load.js"></script>
+        <script src="script/calendar.js"></script>
+        <script src="script/location.js"></script>
+
+
+
+
         <script src="script/media.js"></script>
         <script src="script/apps.js"></script>
         <script src="script/date.js"></script>
@@ -258,6 +266,44 @@
                     </div>
                     <div id="cal-date">
                         <p>--</p>
+                    </div>
+                </div>
+            </a><a id="bus-widget" class="bus-widget-container">
+                <div id="bus-card-1" class="bus-info-card">
+                    <div class="bus-number">
+                        <p id="bus-route-1">---</p>
+                    </div><div class="bus-stop">
+                        <p id="bus-stop-1">--</p>
+                    </div>
+                    <div class="bus-eta">
+                        <p id="bus-eta-1">--</p>
+                    </div>
+                </div><div id="bus-card-2" class="bus-info-card">
+                    <div class="bus-number">
+                        <p id="bus-route-2">---</p>
+                    </div><div class="bus-stop">
+                        <p id="bus-stop-2">--</p>
+                    </div>
+                    <div class="bus-eta">
+                        <p id="bus-eta-2">--</p>
+                    </div>
+                </div><div id="bus-card-3" class="bus-info-card">
+                    <div class="bus-number">
+                        <p id="bus-route-3">---</p>
+                    </div><div class="bus-stop">
+                        <p id="bus-stop-3">--</p>
+                    </div>
+                    <div class="bus-eta">
+                        <p id="bus-eta-3">--</p>
+                    </div>
+                </div><div id="bus-card-4" class="bus-info-card">
+                    <div class="bus-number">
+                        <p id="bus-route-4">---</p>
+                    </div><div class="bus-stop">
+                        <p id="bus-stop-4">--</p>
+                    </div>
+                    <div class="bus-eta">
+                        <p id="bus-eta-4">--</p>
                     </div>
                 </div>
             </a><div id="smarthome-card" class="content-container smart-card-hide">
