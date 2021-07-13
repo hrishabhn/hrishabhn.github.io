@@ -1,21 +1,7 @@
-var fullDate = new Date();
-
-const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-const months = ["JAN","FEB","MAR","APR","MAY","JUN","July"]
-
-var hourNow = fullDate.getHours();
-
-var weekdayNow = fullDate.getDay()
-weekdayNow = weekDays[weekdayNow]
-
-var monthNow = fullDate.getMonth()
-monthNow = months[monthNow]
-
-var dateNow = fullDate.getDate();
 
 function widgets(){
     var a;
-
+    // console.log("1")
     if (hourNow < 9) {
         a = 1;
     } else {
@@ -53,7 +39,7 @@ function weatherWidget(a) {
                     var cityValue = data['name'];
                     var tempValue = data['main']['temp'];
                     var iconValue = data['weather'][0]['main'];
-                    console.log(data)
+                    // console.log(data)
                     var hiValue = data['main']['temp_max'];
                     var loValue = data['main']['temp_min'];
 
@@ -217,6 +203,115 @@ function displayWidgets(a) {
     } else {
         document.getElementById("today-widget").classList = "hidden-always";
     }
+}
+
+function kmbWidget(route,stop,n) {
+    // var api = `https://data.etabus.gov.hk/v1/transport/kmb/stop/${stop}`;
+    // fetch(api)
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         console.log(data)
+    //         stop_1 = data['data']['name_en'];
+    //         // busETAPopulate(eta_1,1)
+    //     })
+
+    var api = `https://data.etabus.gov.hk/v1/transport/kmb/eta/${stop}/${route}/1`;
+    fetch(api)
+        .then(response => response.json())
+        .then(data => {
+            // console.log(data)
+            var eta = Date.parse(data['data'][0]['eta']);
+            // console.log(eta)
+
+            eta = processETA(eta);
+
+            if (!eta) {
+                eta = "-";
+            }
+
+            switch(stop) {
+                case "490F1A302D8C32FC":
+                    stop = "Tuen Mun Fire Station"
+                    break
+                case "AD97EA183A25102C":
+                    stop = "Western Harbour Tunnel"
+                    break
+            }
+
+            // console.log(eta)
+            busETAPopulate(route,stop,n,eta)
+        })
+}
+
+
+function cityBusWidget(company,route,stop,n) {
+    // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route-stop/CTB/1/inbound`;
+    // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route/NWFB/970x`;
+    // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route-stop/NWFB/970x/outbound`;
+    // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/stop/002236`;
+    // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/stop/002314`;
+    var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/${company}/${stop}/${route}`;
+
+    
+
+
+    // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route-stop/${company}/${route}/${direction}`;
+    fetch(api)
+        .then(response => response.json())
+        .then(data => {
+            // console.log(data)
+
+            var eta = Date.parse(data['data'][0]['eta']);
+            eta = processETA(eta);
+            // eta = eta - fullDate;
+            // console.log(eta)
+
+
+
+            switch(stop) {
+                case "002665":
+                    stop = "Lower Baguio"
+                    break
+                case "002236":
+                    stop = "Queen Mary Hospital"
+                    break
+            }
+
+            busETAPopulate(route,stop,n,eta)
+        })
+}
+
+
+
+
+function processETA(eta) {
+    eta = eta - fullDate;
+    eta = eta / 60000;
+    eta = Math.round(eta);
+
+    if (eta < 1) {
+        eta = "Arriving";
+    }
+
+    if (eta < 0) {
+        eta = "-"
+    }
+
+    return eta;
+}
+
+function busETAPopulate(route,stop,n,eta) {
+    // console.log(eta)
+
+    var busRoute = document.getElementById("bus-route-".concat(n))
+    busRoute.innerHTML = route;
+
+
+    var busETA = document.getElementById("bus-eta-".concat(n))
+    busETA.innerHTML = eta;
+
+    var busStop = document.getElementById("bus-stop-".concat(n))
+    busStop.innerHTML = stop;
 }
 
 
