@@ -261,15 +261,18 @@
 }
 .bus-number{
     width: 90px;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
 }
 .bus-stop{
     /* margin-left: 10px; */
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
+    /* white-space: nowrap; */
 }
 .bus-eta{
+    font-size: 16px;
+    font-weight: 500;
     position: absolute;
     right: 0;
 }
