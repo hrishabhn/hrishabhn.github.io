@@ -1,0 +1,314 @@
+
+.today-widget-container{
+    width: calc((100% - 30px) / 1);
+    /* height: 200px; */
+    position: relative;
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+    /* justify-content: center; */
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+
+    margin-top: 30px;
+    margin-right: 30px;
+
+    border-radius: 20px;
+
+    /* padding: 15px 18px; */
+
+    background-color: var(--dark-layer-1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: default;
+
+    box-shadow: var(--shaded-light);
+    transition: scale 0.15s;
+
+    color: var(--light-layer-0);
+    fill: var(--light-layer-0);
+}
+.today-widget{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--black-20);
+    -webkit-backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    padding: 15px 18px;
+}
+
+.today-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.today-greeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-100);
+    font-size: 14px;
+    font-weight: 500;
+
+    padding-bottom: 4px;
+}
+#today-weekday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-100);
+    font-size: 40px;
+    font-weight: 400;
+}
+#today-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-100);
+    font-size: 24px;
+    font-weight: 500;
+}
+#today-hilo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-100);
+    font-size: 14px;
+    font-weight: 400;
+
+    padding-top: 8px;
+}
+.today-icon{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 18px;
+
+    justify-self: flex-end;
+    align-self: flex-end;
+    flex-direction: column;
+    height: 24px;
+    width: 24px;
+    fill: white;
+}
+
+
+
+
+.widget-container{
+    width: calc((100% - 60px) / 2);
+    position: relative;
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+    /* justify-content: center; */
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+
+    margin-top: 30px;
+    margin-right: 30px;
+
+    border-radius: 20px;
+
+    padding: 12px 15px;
+
+    background-color: var(--dark-layer-1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-decoration: none;
+
+    box-shadow: var(--shaded-light);
+    transition: scale 0.15s;
+
+    color: var(--light-layer-0);
+    fill: var(--light-layer-0);
+}
+.widget-container:active{
+    scale: 0.95;
+}
+#weather-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#weather-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-100);
+    font-size: 12px;
+    font-weight: 600;
+}
+#weather-temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-100);
+    font-size: 40px;
+    font-weight: 300;
+}
+#weather-icon{
+    display: flex;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    justify-self: flex-end;
+    align-self: flex-end;
+    flex-direction: column;
+    height: 18px;
+    width: 18px;
+    fill: white;
+}
+.cloudy{
+    background-image: url(../images/weather/cloudy.jpg);
+}
+.sunny{
+    background-image: url(../images/weather/sunny.jpg);
+}
+.night{
+    background-image: url(../images/weather/night.jpg);
+}
+
+
+
+#cal-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#cal-weekday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+
+    color: var(--red-100);
+}
+#cal-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.bus-widget-container{
+    width: calc((100% - 30px) / 1);
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    /* justify-content: center; */
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+
+    margin-top: 30px;
+    margin-right: 30px;
+
+    border-radius: 20px;
+
+    padding: 12px 15px;
+
+    background-color: var(--dark-layer-1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-decoration: none;
+
+    box-shadow: var(--shaded-light);
+    transition: scale 0.15s;
+
+    color: var(--light-layer-0);
+    fill: var(--light-layer-0);
+}
+.bus-info-card{
+    display: flex;
+    /* flex-basis: 100%; */
+    /* flex-wrap: wrap; */
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    /* flex-direction: row; */
+
+    height: 50px;
+    width: 100%;
+    /* background-color: blue; */
+    color: var(--light-layer-0);
+
+    /* border-top: 1px blue;
+    border-bottom-width: 1px; */
+    /* border-top-color: blue; */
+
+    /* border-top: 1px solid var(--white-10); */
+}
+.bus-number{
+    width: 90px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.bus-stop{
+    /* margin-left: 10px; */
+    font-size: 16px;
+    font-weight: 400;
+}
+.bus-eta{
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (prefers-color-scheme: light) {
+    .widget-container{
+        background-color: var(--light-layer-0);
+        color: var(--dark-layer-1);
+        fill: var(--dark-layer-1);
+    }
+    
+}
+
+
+
+
+@media(max-width: 450px){
+    .widget-container{
+        width: calc((100% - 40px) / 2);
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .today-widget-container{
+        width: calc((100% - 20px) / 1);
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .bus-widget-container{
+        width: calc((100% - 20px) / 1);
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}
+
