@@ -11,10 +11,8 @@
 
     margin: -50px -40px;
     padding: 60px 30px 50px 40px;
-    /* padding-top: 60px; */
-
-
     width: calc(100% + 50px);
+
     min-height: 1px;
     position: relative;
     top: 0px;
@@ -23,7 +21,7 @@
 
     /* margin-top: 10px; */
 
-    border-radius: 15px;
+    /* border-radius: 15px; */
 
 
     transition: all 0.25s;
@@ -1073,6 +1071,19 @@
     .media-tray{
         margin: -50px -20px;
         padding: 60px 10px 50px 20px;
-        width: calc(100% + 30px);
+        width: calc(100% + 20px);
+    }
+
+    .book-card{
+        height: calc((100vw - 50px) * (3 / 4));
+        width: calc((100vw - 50px) / 2);
+    }
+    .pod-card{
+        height: calc((100vw - 50px) / 2);
+        width: calc((100vw - 50px) / 2);
+    }
+
+    .media-card:active{
+        scale: 0.95;
     }
 }
