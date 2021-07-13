@@ -80,14 +80,7 @@
 // }
 
 function smartCards(){
-
     const successCallback = (position) => {
-
-
-        var fullDate = new Date();
-        var hourNow = fullDate.getHours();
-        // console.log(hourNow);
-
         var afternoon = (hourNow > 10) && (hourNow < 15);
         var evening = (hourNow > 16) && (hourNow < 21);
         var night = (hourNow > 20) || (hourNow < 6);
