@@ -290,7 +290,7 @@ function processETA(eta) {
     eta = Math.round(eta);
 
     if (eta < 1) {
-        eta = "Arriving";
+        eta = "Now";
     }
 
     if (eta < 0) {
