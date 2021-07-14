@@ -33,6 +33,9 @@
     color: var(--light-layer-0);
     fill: var(--light-layer-0);
 }
+.today-widget-container:active{
+    scale: 0.95;
+}
 .today-widget{
     width: 100%;
     height: 100%;
@@ -57,7 +60,7 @@
     font-size: 14px;
     font-weight: 500;
 
-    padding-bottom: 4px;
+    padding-bottom: 0px;
 }
 #today-weekday{
     display: flex;
@@ -73,30 +76,51 @@
     align-items: center;
     color: var(--white-100);
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
 }
 #today-hilo{
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--white-100);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 
     padding-top: 8px;
 }
-.today-icon{
+.today-weather{
     display: flex;
     position: absolute;
+    /* flex-direction: column; */
     top: 15px;
     right: 18px;
+    height: calc(100% - 30px);
+}
+#today-icon{
+    /* display: flex; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
 
-    justify-self: flex-end;
+    /* justify-self: flex-end;
     align-self: flex-end;
-    flex-direction: column;
+    flex-direction: column; */
     height: 24px;
     width: 24px;
     fill: white;
+}
+#today-temp{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* color: var(--white-100); */
+    font-size: 48px;
+    font-weight: 200;
+
+    /* padding-top: 8px; */
 }
 
 
