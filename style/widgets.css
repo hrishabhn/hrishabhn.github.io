@@ -248,7 +248,7 @@
 
     border-radius: 20px;
 
-    padding: 5px 20px;
+    padding: 10px 0px 5px;
 
     background-color: var(--dark-layer-1);
     background-size: cover;
@@ -284,34 +284,67 @@
 
     /* border-top: 1px solid var(--white-10); */
 }
-.bus-number-card{
-    display: flex;
+#bus-number-tray{
+    width: 100%;
+    box-sizing: border-box;
+
+    align-items: center;
+    position: relative;
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    /* display: flex; */
     /* flex-direction: column; */
-    align-items: flex-end;
+    /* align-items: flex-end; */
     /* height: 40px; */
     /* width: 90px; */
     font-size: 15px;
     font-weight: 400;
-    padding: 10px 0px 10px;
+    padding: 10px 18px 10px 20px;
     cursor: default;
 }
 .bus-number{
     padding: 4px 6px;
     border-style: solid;
     border-width: 2.5px;
-    border-radius: 13px;
-    margin-right: 8px;
+    border-radius: 12px;
+    margin-right: 2px;
     color: var(--white-100);
     /* background-clip: content-box; */
     /* width: 90px; */
     /* font-size: 24px; */
     /* font-weight: 500; */
+
+    display: inline-block;
+    position: relative;
+    /* width: max-content; */
+    /* padding: 0 100px; */
+
+
+    /* justify-content: center;
+    align-items: center;
+    vertical-align: top; */
+    /* width: 110px; */
+    /* height: 85px; */
+    /* border-radius: 20px; */
+    /* background: var(--dark-layer-1); */
+
+    /* margin-right: 10px; */
+
+    /* scroll-snap-align: none;
+    scroll-margin-left: 90px;
+    transition: all 0.15s; */
 }
 .bus-number:active{
     opacity: 0.75;
 }
 .bus-current{
     background: none !important;
+}
+.bus-card{
+    padding: 0px 20px;
 }
 .bus-card-line{
     display: block;
@@ -348,16 +381,22 @@
 }
 
 .kmb-route{
-    background: #E41F31;
-    border-color: #E41F31;
+    background: #ff3b30;
+    border-color: #ff3b30;
+    /* background: #E41F31;
+    border-color: #E41F31; */
 }
 .nwfb-route{
-    background: #0DAF55;
-    border-color: #0DAF55;
+    background: #34c759;
+    border-color: #34c759;
+    /* background: #0DAF55;
+    border-color: #0DAF55; */
 }
 .citybus-route{
-    background: #0060A9;
-    border-color: #0060A9;
+    background: #5856d6;
+    border-color: #5856d6;
+    /* background: #0060A9;
+    border-color: #0060A9; */
 }
 
 

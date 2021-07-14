@@ -79,139 +79,54 @@
 //   }
 // }
 
-function smartCards(){
-    const successCallback = (position) => {
-        var afternoon = (hourNow > 10) && (hourNow < 15);
-        var evening = (hourNow > 16) && (hourNow < 21);
-        var night = (hourNow > 20) || (hourNow < 6);
-
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
-        // console.log(lat)
-        // console.log(lon)
-
-        const pokFuLam = (lat > 22.252) && (lat < 22.273) && (lon > 114.121) && (lon < 114.135);
-        const cyberport = (lat > 22.260) && (lat < 22.264) && (lon > 114.127) && (lon < 114.131);
-        const home = (lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135);
-
-        const tuenMun = (lat > 22.37) && (lat < 22.41) && (lon > 113.96) && (lon < 113.985);
-        const work = (lat > 22.3905) && (lat < 22.392) && (lon > 113.9695) && (lon < 113.971);
-       
-        const ktown = (lat > 22.279) && (lat < 22.285) && (lon > 114.125) && (lon < 114.130);
-        const central = (lat > 22.281) && (lat < 22.290) && (lon > 114.156) && (lon < 114.159);
-        const causeway = (lat > 22.270) && (lat < 22.283) && (lon > 114.180) && (lon < 114.190);
-        const westKowloon = (lat > 22.298) && (lat < 22.308) && (lon > 114.154) && (lon < 114.165);
-        const tsimShaTsui = (lat > 22.292) && (lat < 22.303) && (lon > 114.165) && (lon < 114.177);
-
-
-        // 22.273,114.121 top left
-        // 22.252,114.135 borrom right
-
-
-        var district = "Hong Kong"
-
-        if (home) {
-            document.getElementById("smarthome-card").className = "smart-card-show content-container hidden-desktop"
-            document.getElementById("transport-card").className = "smart-card-hide content-container hidden-desktop"
-            // district = "Baguio"
-            // console.log("at home")
-        } else{
-            document.getElementById("smarthome-card").className = "smart-card-hide content-container hidden-desktop"
-            document.getElementById("transport-card").className = "smart-card-show content-container hidden-desktop"
-            // console.log("not at home")
-        }
-
-        if (work) {
-            document.getElementById("office-card").className = "smart-card-show content-container"
-            // district = "Office"
-            // console.log("at office")
-        } else{
-            document.getElementById("office-card").className = "smart-card-hide content-container"
-            // console.log("not at office")
-        }
-
-        if (pokFuLam) {
-            district = "Pok Fu Lam"
-        }
-        if (cyberport) {
-            district = "Cyberport"
-        }
-        if (home) {
-            district = "Baguio Villa"
-        }
-
-        if (tuenMun) {
-            district = "Tuen Mun"
-        }
-        if (work) {
-            district = "Office"
-        }
-
-
-        if (ktown) {
-            district = "Kennedy Town"
-        }
-        if (central) {
-            district = "Central"
-        }
-        if (causeway) {
-            district = "Causeway Bay"
-        }
-        if (westKowloon) {
-            district = "West Kowloon"
-        }
-        if (tsimShaTsui) {
-            district = "Tsim Sha Tsui"
-        }
-        
-        
-
-
-
-
-
-        if ((afternoon) && (!home)) {
-            document.getElementById("food-card").className = "smart-card-show content-container";
-            // console.log("afternoon");
-        } else{
-            document.getElementById("food-card").className = "smart-card-hide content-container";
-            // console.log("not afternoon");
-        }
-        if ((evening) && (!home)) {
-            document.getElementById("food-card").className = "smart-card-show content-container";
-            // console.log("evening");
-        } else{
-            document.getElementById("food-card").className = "smart-card-hide content-container";
-            // console.log("not evening");
-        }
-        if ((night) && (home)) {
-            document.getElementById("sleep-card").className = "smart-card-show content-container hidden-desktop";
-            // console.log("night");
-        } else{
-            document.getElementById("sleep-card").className = "smart-card-hide content-container hidden-desktop";
-            // console.log("not night");
-        }
-
-        // district = "West Lafayette"
-        document.getElementById("district").innerHTML = district;
+function smartCards(userLocale) {
+    // console.log(userLocale)
+    if (userLocale == "Baguio Villa") {
+        document.getElementById("smarthome-card").className = "smart-card-show content-container hidden-desktop"
+        document.getElementById("transport-card").className = "smart-card-hide content-container hidden-desktop"
+        // userLocale = "Baguio"
+        // console.log("at home")
+    } else{
+        document.getElementById("smarthome-card").className = "smart-card-hide content-container hidden-desktop"
+        document.getElementById("transport-card").className = "smart-card-show content-container hidden-desktop"
+        // console.log("not at home")
+        // console.log(userLocale)
 
     }
 
-    
+    if (userLocale == "Work") {
+        document.getElementById("office-card").className = "smart-card-show content-container"
+        // userLocale = "Office"
+        // console.log("at office")
+    } else{
+        document.getElementById("office-card").className = "smart-card-hide content-container"
+        // console.log("not at office")
+    }
 
-
-
-    navigator.geolocation.getCurrentPosition(successCallback);
-    
-    // var test = Geolocation.getCurrentPosition;
-    // console.log(Geolocation)
-    // navigator.geolocation.getCurrentPosition();
-    // console.log(position.coords.latitude)
-    
-
-    // x.innerHTML = "Latitude: " + lat + "<br>Longitude: " + lon;
 
     
+    
+    if ((timeOfDay == "afternoon") && !(userLocale == "Baguio Villa")) {
+        document.getElementById("food-card").className = "smart-card-show content-container";
+        // console.log("afternoon");
+    } else{
+        document.getElementById("food-card").className = "smart-card-hide content-container";
+        // console.log("not afternoon");
+    }
+    if ((timeOfDay == "evening") && !(userLocale == "Baguio Villa")) {
+        document.getElementById("food-card").className = "smart-card-show content-container";
+        // console.log("evening");
+    } else{
+        document.getElementById("food-card").className = "smart-card-hide content-container";
+        // console.log("not evening");
+    }
+    if ((timeOfDay == "night") && (userLocale == "Baguio Villa")) {
+        document.getElementById("sleep-card").className = "smart-card-show content-container hidden-desktop";
+        // console.log("night");
+    } else{
+        document.getElementById("sleep-card").className = "smart-card-hide content-container hidden-desktop";
+        // console.log("not night");
+    }
 }
 
 function statusBar(show,hide){

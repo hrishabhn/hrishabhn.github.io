@@ -1,8 +1,26 @@
-function buses() {
-    kmbWidget(1,"KMB","961","490F1A302D8C32FC",'AD97EA183A25102C')
+function buses(userLocale) {
+    busTray(userLocale)
+    // kmbWidget(1,"KMB","961","490F1A302D8C32FC",'AD97EA183A25102C')
     // kmbWidget("KMB","960","AD97EA183A25102C",2)
     // cityBusWidget("NWFB","970x","002231",3)
     // cityBusWidget("CTB","43m","002665",4)
+}
+
+function busTray(userLocale) {
+
+    var busNoTray = document.getElementById("bus-number-tray")
+    switch (userLocale) {
+        case "Baguio Villa":
+            var busOrder = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001629\')">970x</div><div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,\'KMB\',\'960\',\'AD97EA183A25102C\')">960</div><div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'AD97EA183A25102C\',\'490F1A302D8C32FC\')">961</div><div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget(4,\'CTB\',\'43m\',\'002665\',\'002314\')">43m</div><div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,\'NWFB\',\'971\',\'001629\')">971</div>';
+            // cityBusWidget(1,'NWFB','970x','002231');
+            break;
+        
+
+    }
+
+    // busNoTray.innerHTML = busOrder
+    // console.log(busNoTray)
+    
 }
 
 function buttonSelect(n) {
@@ -10,19 +28,16 @@ function buttonSelect(n) {
 
     var busDest1 = document.getElementById("bus-dest-1")
     busDest1.innerHTML = '--';
-
-    var busETA1 = document.getElementById("bus-eta-1")
-    busETA1.innerHTML = '--';
-
-    var busStop1 = document.getElementById("bus-stop-1")
-    busStop1.innerHTML = '--';
-
     var busDest2 = document.getElementById("bus-dest-2")
     busDest2.innerHTML = '--';
 
+    var busETA1 = document.getElementById("bus-eta-1")
+    busETA1.innerHTML = '--';
     var busETA2 = document.getElementById("bus-eta-2")
     busETA2.innerHTML = '--';
 
+    var busStop1 = document.getElementById("bus-stop-1")
+    busStop1.innerHTML = '--';
     var busStop2 = document.getElementById("bus-stop-2")
     busStop2.innerHTML = '--';
 
@@ -31,19 +46,24 @@ function buttonSelect(n) {
     var busButton3 = document.getElementById("bus-route-3")
     var busButton4 = document.getElementById("bus-route-4")
     var busButton5 = document.getElementById("bus-route-5")
+    var busButton6 = document.getElementById("bus-route-6")
+    var busButton7 = document.getElementById("bus-route-7")
     // console.log(busButton4)
 
-    busButton1.classList = "bus-number kmb-route";
-    busButton2.classList = "bus-number kmb-route";
-    busButton3.classList = "bus-number nwfb-route";
-    busButton4.classList = "bus-number citybus-route";
-    busButton5.classList = "bus-number nwfb-route";
+    busButton1.classList.remove("bus-current");
+    busButton2.classList.remove("bus-current");
+    busButton3.classList.remove("bus-current");
+    busButton4.classList.remove("bus-current");
+    busButton5.classList.remove("bus-current");
+    busButton6.classList.remove("bus-current");
+    busButton7.classList.remove("bus-current");
+
 
     var busCard1 = document.getElementById("bus-card-1")
-    busCard1.classList = ""
+    busCard1.classList = "bus-card"
 
     var busCard2 = document.getElementById("bus-card-2")
-    busCard2.classList = ""
+    busCard2.classList = "bus-card"
 
 
 
@@ -51,19 +71,25 @@ function buttonSelect(n) {
 
     switch (n) {
         case 1:
-            busButton1.classList = "bus-number kmb-route bus-current";
+            busButton1.classList.add("bus-current");
             break;
         case 2:
-            busButton2.classList = "bus-number kmb-route bus-current"
+            busButton2.classList.add("bus-current");
             break;
         case 3:
-            busButton3.classList = "bus-number nwfb-route bus-current"
+            busButton3.classList.add("bus-current");
             break;
         case 4:
-            busButton4.classList = "bus-number citybus-route bus-current"
+            busButton4.classList.add("bus-current");
             break;
         case 5:
-            busButton5.classList = "bus-number nwfb-route bus-current"
+            busButton5.classList.add("bus-current");
+            break;
+        case 6:
+            busButton6.classList.add("bus-current");
+            break;
+        case 7:
+            busButton7.classList.add("bus-current");
             break;
     }
 
@@ -93,7 +119,7 @@ function kmbWidget(n,company,route,stop1,stop2) {
             busAPIData(n,company,route,stop2,2,data)
         })
     } else {
-        document.getElementById("bus-card-2").classList = "hidden-always"
+        document.getElementById("bus-card-2").classList.add("hidden-always")
     }
 
     
@@ -136,7 +162,7 @@ function cityBusWidget(n,company,route,stop1,stop2) {
             busAPIData(n,company,route,stop2,2,data)
         })
     } else {
-        document.getElementById("bus-card-2").classList = "hidden-always"
+        document.getElementById("bus-card-2").classList.add("hidden-always")
     }
 }
 
@@ -147,10 +173,14 @@ function busAPIData(n,company,route,stop,stopN,data) {
     var eta2 = null;
     var eta3 = null;
 
-    var eta1 = Date.parse(data['data'][0]['eta']);
-    eta1 = processETA(eta1);
+    // var eta1 = Date.parse(data['data'][0]['eta']);
+    // eta1 = processETA(eta1);
 
-
+    if (data['data'][0]) {
+        var eta1 = Date.parse(data['data'][0]['eta']);
+        eta1 = processETA(eta1);
+        var dest = data['data'][0]['dest_en'];
+    }
     if (data['data'][1]) {
         var eta2 = Date.parse(data['data'][1]['eta']);
         eta2 = processETA(eta2);
@@ -160,7 +190,7 @@ function busAPIData(n,company,route,stop,stopN,data) {
         eta3 = processETA(eta3);
     }
 
-    var dest = data['data'][0]['dest_en'];
+
 
     switch(stop) {
         case "490F1A302D8C32FC":
@@ -170,6 +200,9 @@ function busAPIData(n,company,route,stop,stopN,data) {
             stop = "Western Harbour Tunnel"
             break
         case "002665":
+            stop = "Lower Baguio"
+            break
+        case "002314":
             stop = "Lower Baguio"
             break
         case "002231":
@@ -191,19 +224,30 @@ function busAPIData(n,company,route,stop,stopN,data) {
             dest = "Tuen Mun"
             break
         case "Cheung Sha Wan (Kom Tsun Street)":
-            dest = "Cheung Sha Wan"
+            dest = "Kowloon"
             break
         case "Shek Pai Wan":
             dest = "Aberdeen"
             break
+        case "Shek Tong Tsui":
+            dest = "Kennedy Town"
+            break
+        case "Tin Wan Estate":
+            dest = "Aberdeen"
+            break
     }
 
-    if (stopN == 1) {
-        busETAPopulate1(n,company,route,stop,eta1,eta2,eta3,dest)
+    if (dest) {
+        dest = "To: " + dest;
     }
-    if (stopN == 2) {
-        busETAPopulate2(n,company,route,stop,eta1,eta2,eta3,dest)
-    }
+
+    busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest)
+
+    // if (stopN == 1) {
+    // }
+    // if (stopN == 2) {
+    //     busETAPopulate2(n,company,route,stop,eta1,eta2,eta3,dest)
+    // }
 }
 
 
@@ -227,15 +271,21 @@ function processETA(eta) {
     return eta;
 }
 
-function busETAPopulate1(n,company,route,stop,eta1,eta2,eta3,dest) {
+function busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest) {
     // console.log(dest)
     // var busCard = document.getElementById("bus-card-".concat(n))
     // busCard.classList = "bus-info-card kmb"
 
-    if (!eta1) {
-        eta1 = "Last Bus Departed"
+    if ((!dest) || (!eta1)) {
+        dest = "Last Bus Departed"
+        eta1 = null;
+        console.log(eta1)
+
         // busCard.classList = "hidden-always"
     }
+
+    // console.log(dest)
+
 
     etaAll = eta1
     
@@ -261,79 +311,33 @@ function busETAPopulate1(n,company,route,stop,eta1,eta2,eta3,dest) {
 
     }
 
+    switch (stopN) {
+        case 1:
+            var busDest = document.getElementById("bus-dest-1")
+            var busStop = document.getElementById("bus-stop-1")
+            var busETA = document.getElementById("bus-eta-1")
+            break;
+        case 2:
+            var busDest = document.getElementById("bus-dest-2")
+            var busStop = document.getElementById("bus-stop-2")
+            var busETA = document.getElementById("bus-eta-2")
+            break;
+        case 3:
+            var busDest = document.getElementById("bus-dest-3")
+            var busStop = document.getElementById("bus-stop-3")
+            var busETA = document.getElementById("bus-eta-3")
+            break;
+
+    }
     
 
     // var busRoute = document.getElementById("bus-route-".concat(n))
     // busRoute.innerHTML = route;
     // busRoute.classList = numberClass;
-    var busDest1 = document.getElementById("bus-dest-1")
-    busDest1.innerHTML = ("To: ").concat(dest);
 
-    var busETA1 = document.getElementById("bus-eta-1")
-    busETA1.innerHTML = etaAll;
 
-    var busStop1 = document.getElementById("bus-stop-1")
-    busStop1.innerHTML = stop;
+
+    busDest.innerHTML = dest;
+    busETA.innerHTML = etaAll;
+    busStop.innerHTML = stop;
 }
-
-function busETAPopulate2(n,company,route,stop,eta1,eta2,eta3,dest) {
-    // console.log(dest)
-    // var busCard = document.getElementById("bus-card-".concat(n))
-    // busCard.classList = "bus-info-card kmb"
-
-    if (!eta1) {
-        eta1 = "Last Bus Departed"
-        // busCard.classList = "hidden-always"
-    }
-
-    etaAll = eta1
-    
-    if (eta2) {
-        etaAll = etaAll + ', ' + eta2;
-    }
-    if (eta3) {
-        etaAll = etaAll + ', ' + eta3;
-    }
-
-    switch (company) {
-        case "KMB":
-            var numberClass = "bus-number kmb-route";
-            break;
-        case "CTB":
-            var numberClass = "bus-number citybus-route";
-            break;
-        case "NWFB":
-            var numberClass = "bus-number nwfb-route";
-            break;
-        default:
-            var numberClass = "bus-number";
-
-    }
-
-    
-
-    // var busRoute = document.getElementById("bus-route-".concat(n))
-    // busRoute.innerHTML = route;
-    // busRoute.classList = numberClass;
-    var busDest2 = document.getElementById("bus-dest-2")
-    busDest2.innerHTML = ("To: ").concat(dest);
-
-    var busETA2 = document.getElementById("bus-eta-2")
-    busETA2.innerHTML = etaAll;
-
-    var busStop2 = document.getElementById("bus-stop-2")
-    busStop2.innerHTML = stop;
-}
-
-
-// function showWidgets(){
-//     console.log("bruh")
-//     var widget1 = document.getElementById("weather-widget");
-//     var widget2 = document.getElementById("cal-widget");
-//     console.log("bruh")
-
-//     widget1.classList = "widget-container";
-//     widget2.classList = "widget-container";
-//     console.log("bruh")
-
-// }

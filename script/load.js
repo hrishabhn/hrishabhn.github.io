@@ -1,21 +1,28 @@
 function mainPopulate(){
     calendarDate()
-    // getLocation()
-    // test()
-    smartCards()
+    getUserLocale()
+
+    todayWidget()
+
+
     apps()
     media()
+
     statusBar(1000,4000)
-    todayWidget()
-    buses()
     // lights()
+}
+
+function locationBasedLoad(userLocale) {
+    smartCards(userLocale)
+    buses(userLocale)
 }
 
 function mainRefresh() {
     calendarDate()
+    getUserLocale()
     smartCards()
     todayWidget()
-    buses()
+    // buses()
     statusBar(0,1500)
     // console.log("refreshed")
 }

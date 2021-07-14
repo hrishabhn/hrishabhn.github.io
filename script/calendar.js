@@ -15,6 +15,19 @@ function calendarDate() {
     dateNow = fullDate.getDate();
     // console.log(fullDate)
     // calendarLog()
+
+    if ((hourNow > 4) && (hourNow < 12)) {
+        timeOfDay = "morning"
+    }
+    if ((hourNow > 11) && (hourNow < 17)) {
+        timeOfDay = "afternoon"
+    }
+    if ((hourNow > 16) && (hourNow < 21)) {
+        timeOfDay = "evening"
+    }
+    if ((hourNow > 20) || (hourNow < 5)) {
+        timeOfDay = "night"
+    }
 }
 
 // function calendarLog() {
