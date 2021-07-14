@@ -73,11 +73,17 @@ function kmbWidget(company,route,stop,n) {
         .then(data => {
             // console.log(data)
             // console.log(data['data'][0]['eta'])
-            var eta = Date.parse(data['data'][0]['eta']);
+            var eta1 = Date.parse(data['data'][0]['eta']);
+            var eta2 = Date.parse(data['data'][1]['eta']);
+
             var dest = data['data'][0]['dest_en'];
             // console.log(dest)
             
-            eta = processETA(eta);
+            eta1 = processETA(eta1);
+            eta2 = processETA(eta2);
+
+            // console.log(eta2)
+
 
             // if (!eta) {
             //     eta = "-";
@@ -104,7 +110,7 @@ function kmbWidget(company,route,stop,n) {
             }
 
             // console.log(eta)
-            busETAPopulate(company,route,stop,n,eta,dest)
+            busETAPopulate(company,route,stop,n,eta1,eta2,dest)
         })
 }
 
@@ -129,11 +135,13 @@ function cityBusWidget(company,route,stop,n) {
         .then(data => {
             // console.log(data)
 
-            var eta = Date.parse(data['data'][0]['eta']);
+            var eta1 = Date.parse(data['data'][0]['eta']);
+            var eta2 = Date.parse(data['data'][1]['eta']);
             var dest = data['data'][0]['dest_en'];
             // console.log(dest)
 
-            eta = processETA(eta);
+            eta1 = processETA(eta1);
+            eta2 = processETA(eta2);
             // eta = eta - fullDate;
             // console.log(eta)
 
@@ -154,10 +162,8 @@ function cityBusWidget(company,route,stop,n) {
                 //     dest = "Tuen Mun"
                 //     break
             }
-            
-            
 
-            busETAPopulate(company,route,stop,n,eta,dest)
+            busETAPopulate(company,route,stop,n,eta1,eta2,dest)
         })
 }
 
@@ -180,13 +186,22 @@ function processETA(eta) {
     return eta;
 }
 
-function busETAPopulate(company,route,stop,n,eta,dest) {
+function busETAPopulate(company,route,stop,n,eta1,eta2,dest) {
     // console.log(dest)
     var busCard = document.getElementById("bus-card-".concat(n))
     // busCard.classList = "bus-info-card kmb"
 
-    if (!eta) {
-        busCard.classList = "hidden-always"
+    if (!eta1) {
+        eta1 = "Last Bus Departed"
+        // busCard.classList = "hidden-always"
+    }
+
+    etaAll = eta1
+    
+    if (eta2) {
+        etaAll = etaAll + ', ' + eta2;
+        // console.log(etaAll)
+        // console.log(eta2)
     }
 
     switch (company) {
@@ -213,7 +228,7 @@ function busETAPopulate(company,route,stop,n,eta,dest) {
     busDest.innerHTML = ("To: ").concat(dest);
 
     var busETA = document.getElementById("bus-eta")
-    busETA.innerHTML = eta;
+    busETA.innerHTML = etaAll;
 
     var busStop = document.getElementById("bus-stop")
     busStop.innerHTML = stop;
