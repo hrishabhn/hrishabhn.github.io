@@ -23,6 +23,7 @@ function kmbWidget(route,stop,n) {
             // console.log(data['data'][0]['eta'])
             var eta = Date.parse(data['data'][0]['eta']);
 
+            
             // console.log(eta)
             // if (!eta) {
             //     console.log("rip")
@@ -71,7 +72,7 @@ function cityBusWidget(company,route,stop,n) {
     fetch(api)
         .then(response => response.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
 
             var eta = Date.parse(data['data'][0]['eta']);
             eta = processETA(eta);
