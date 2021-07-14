@@ -13,7 +13,7 @@ function calendarDate() {
     monthNow = months[monthNow]
     
     dateNow = fullDate.getDate();
-    // console.log(dateNow)
+    // console.log(fullDate)
     // calendarLog()
 }
 
