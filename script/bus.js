@@ -8,14 +8,23 @@ function buses() {
 function buttonSelect(n) {
     calendarDate();
 
-    var busDest = document.getElementById("bus-dest-1")
-    busDest.innerHTML = '--';
+    var busDest1 = document.getElementById("bus-dest-1")
+    busDest1.innerHTML = '--';
 
-    var busETA = document.getElementById("bus-eta-1")
-    busETA.innerHTML = '--';
+    var busETA1 = document.getElementById("bus-eta-1")
+    busETA1.innerHTML = '--';
 
-    var busStop = document.getElementById("bus-stop-1")
-    busStop.innerHTML = '--';
+    var busStop1 = document.getElementById("bus-stop-1")
+    busStop1.innerHTML = '--';
+
+    var busDest2 = document.getElementById("bus-dest-2")
+    busDest2.innerHTML = '--';
+
+    var busETA2 = document.getElementById("bus-eta-2")
+    busETA2.innerHTML = '--';
+
+    var busStop2 = document.getElementById("bus-stop-2")
+    busStop2.innerHTML = '--';
 
     var busButton1 = document.getElementById("bus-route-1")
     var busButton2 = document.getElementById("bus-route-2")
