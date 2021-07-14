@@ -21,12 +21,14 @@ function buttonSelect(n) {
     var busButton2 = document.getElementById("bus-route-2")
     var busButton3 = document.getElementById("bus-route-3")
     var busButton4 = document.getElementById("bus-route-4")
+    var busButton5 = document.getElementById("bus-route-5")
     // console.log(busButton4)
 
     busButton1.classList = "bus-number kmb-route";
     busButton2.classList = "bus-number kmb-route";
     busButton3.classList = "bus-number nwfb-route";
     busButton4.classList = "bus-number citybus-route";
+    busButton5.classList = "bus-number nwfb-route";
 
 
 
@@ -46,7 +48,9 @@ function buttonSelect(n) {
             break;
         case 4:
             busButton4.classList = "bus-number citybus-route bus-current"
-            // console.log('huh')
+            break;
+        case 5:
+            busButton5.classList = "bus-number nwfb-route bus-current"
             break;
     }
 
@@ -75,12 +79,14 @@ function kmbWidget(company,route,stop,n) {
             // console.log(data['data'][0]['eta'])
             var eta1 = Date.parse(data['data'][0]['eta']);
             var eta2 = Date.parse(data['data'][1]['eta']);
+            var eta3 = Date.parse(data['data'][2]['eta']);
 
             var dest = data['data'][0]['dest_en'];
             // console.log(dest)
             
             eta1 = processETA(eta1);
             eta2 = processETA(eta2);
+            eta3 = processETA(eta3);
 
             // console.log(eta2)
 
@@ -110,7 +116,7 @@ function kmbWidget(company,route,stop,n) {
             }
 
             // console.log(eta)
-            busETAPopulate(company,route,stop,n,eta1,eta2,dest)
+            busETAPopulate(company,route,stop,n,eta1,eta2,eta3,dest)
         })
 }
 
@@ -137,11 +143,13 @@ function cityBusWidget(company,route,stop,n) {
 
             var eta1 = Date.parse(data['data'][0]['eta']);
             var eta2 = Date.parse(data['data'][1]['eta']);
+            var eta3 = Date.parse(data['data'][2]['eta']);
             var dest = data['data'][0]['dest_en'];
             // console.log(dest)
 
             eta1 = processETA(eta1);
             eta2 = processETA(eta2);
+            eta3 = processETA(eta3);
             // eta = eta - fullDate;
             // console.log(eta)
 
@@ -152,18 +160,24 @@ function cityBusWidget(company,route,stop,n) {
                 case "002231":
                     stop = "Queen Mary Hospital"
                     break
+                case "001629":
+                    stop = "Western Harbour Tunnel"
+                    break
             }
 
             switch(dest) {
                 case "Cheung Sha Wan (Kom Tsun Street)":
                     dest = "Cheung Sha Wan"
                     break
+                case "Shek Pai Wan":
+                    dest = "Aberdeen"
+                    break
                 // case "TUEN MUN (KIN SANG ESTATE)":
                 //     dest = "Tuen Mun"
                 //     break
             }
 
-            busETAPopulate(company,route,stop,n,eta1,eta2,dest)
+            busETAPopulate(company,route,stop,n,eta1,eta2,eta3,dest)
         })
 }
 
@@ -186,7 +200,7 @@ function processETA(eta) {
     return eta;
 }
 
-function busETAPopulate(company,route,stop,n,eta1,eta2,dest) {
+function busETAPopulate(company,route,stop,n,eta1,eta2,eta3,dest) {
     // console.log(dest)
     var busCard = document.getElementById("bus-card-".concat(n))
     // busCard.classList = "bus-info-card kmb"
@@ -200,8 +214,9 @@ function busETAPopulate(company,route,stop,n,eta1,eta2,dest) {
     
     if (eta2) {
         etaAll = etaAll + ', ' + eta2;
-        // console.log(etaAll)
-        // console.log(eta2)
+    }
+    if (eta3) {
+        etaAll = etaAll + ', ' + eta3;
     }
 
     switch (company) {
