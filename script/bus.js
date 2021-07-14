@@ -1,11 +1,52 @@
 function buses() {
-    kmbWidget("961","490F1A302D8C32FC",1)
-    kmbWidget("960","AD97EA183A25102C",2)
-    cityBusWidget("NWFB","970x","002231",3)
-    cityBusWidget("CTB","43m","002665",4)
+    kmbWidget("KMB","961","490F1A302D8C32FC",1)
+    // kmbWidget("KMB","960","AD97EA183A25102C",2)
+    // cityBusWidget("NWFB","970x","002231",3)
+    // cityBusWidget("CTB","43m","002665",4)
 }
 
-function kmbWidget(route,stop,n) {
+function buttonSelect(n) {
+    var busButton1 = document.getElementById("bus-route-1")
+    var busButton2 = document.getElementById("bus-route-2")
+    var busButton3 = document.getElementById("bus-route-3")
+    var busButton4 = document.getElementById("bus-route-4")
+    // console.log(busButton4)
+
+    busButton1.classList = "bus-number kmb-route";
+    busButton2.classList = "bus-number kmb-route";
+    busButton3.classList = "bus-number nwfb-route";
+    busButton4.classList = "bus-number citybus-route";
+
+
+
+
+
+
+
+    switch (n) {
+        case 1:
+            busButton1.classList = "bus-number kmb-route bus-current";
+            break;
+        case 2:
+            busButton2.classList = "bus-number kmb-route bus-current"
+            break;
+        case 3:
+            busButton3.classList = "bus-number nwfb-route bus-current"
+            break;
+        case 4:
+            busButton4.classList = "bus-number citybus-route bus-current"
+            // console.log('huh')
+            break;
+    }
+
+
+    // busButton1.classList = "bus-number kmb-route bus-current"
+
+}
+
+function kmbWidget(company,route,stop,n) {
+    buttonSelect(n)
+
     // var api = `https://data.etabus.gov.hk/v1/transport/kmb/stop/${stop}`;
     // fetch(api)
     //     .then(response => response.json())
@@ -50,12 +91,14 @@ function kmbWidget(route,stop,n) {
             }
 
             // console.log(eta)
-            busETAPopulate(route,stop,n,eta)
+            busETAPopulate(company,route,stop,n,eta)
         })
 }
 
 
 function cityBusWidget(company,route,stop,n) {
+    buttonSelect(n)
+
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route-stop/CTB/1/inbound`;
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/NWFB/002236/970x`;
 
@@ -90,7 +133,7 @@ function cityBusWidget(company,route,stop,n) {
                     break
             }
 
-            busETAPopulate(route,stop,n,eta)
+            busETAPopulate(company,route,stop,n,eta)
         })
 }
 
@@ -113,24 +156,48 @@ function processETA(eta) {
     return eta;
 }
 
-function busETAPopulate(route,stop,n,eta) {
+function busETAPopulate(company,route,stop,n,eta) {
     // console.log(eta)
+    var busCard = document.getElementById("bus-card-".concat(n))
+    // busCard.classList = "bus-info-card kmb"
 
     if (!eta) {
-        var busCard = document.getElementById("bus-card-".concat(n))
         busCard.classList = "hidden-always"
     }
 
+    switch (company) {
+        case "KMB":
+            var numberClass = "bus-number kmb-route";
+            break;
+        case "CTB":
+            var numberClass = "bus-number citybus-route";
+            break;
+        case "NWFB":
+            var numberClass = "bus-number nwfb-route";
+            break;
+        default:
+            var numberClass = "bus-number";
+
+    }
+
+    switch(stop) {
+        case "002665":
+            stop = "Lower Baguio"
+            break
+        case "002231":
+            stop = "Queen Mary Hospital"
+            break
+    }
+
+    // var busRoute = document.getElementById("bus-route-".concat(n))
+    // busRoute.innerHTML = route;
+    // busRoute.classList = numberClass;
 
 
-    var busRoute = document.getElementById("bus-route-".concat(n))
-    busRoute.innerHTML = route;
-
-
-    var busETA = document.getElementById("bus-eta-".concat(n))
+    var busETA = document.getElementById("bus-eta")
     busETA.innerHTML = eta;
 
-    var busStop = document.getElementById("bus-stop-".concat(n))
+    var busStop = document.getElementById("bus-stop")
     busStop.innerHTML = stop;
 }
 

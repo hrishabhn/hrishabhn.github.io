@@ -117,8 +117,8 @@
     /* justify-content: center; */
     /* align-items: center; */
     /* color: var(--white-100); */
-    font-size: 48px;
-    font-weight: 200;
+    font-size: 24px;
+    font-weight: 300;
 
     /* padding-top: 8px; */
 }
@@ -248,7 +248,7 @@
 
     border-radius: 20px;
 
-    padding: 12px 15px;
+    /* padding: 12px 15px; */
 
     background-color: var(--dark-layer-1);
     background-size: cover;
@@ -264,7 +264,7 @@
     fill: var(--light-layer-0);
 }
 .bus-info-card{
-    display: flex;
+    display: block;
     /* flex-basis: 100%; */
     /* flex-wrap: wrap; */
     position: relative;
@@ -272,7 +272,7 @@
     align-items: center;
     /* flex-direction: row; */
 
-    height: 50px;
+    height: 100px;
     width: 100%;
     /* background-color: blue; */
     /* color: var(--light-layer-0); */
@@ -283,15 +283,48 @@
 
     /* border-top: 1px solid var(--white-10); */
 }
-.bus-number{
-    width: 90px;
-    font-size: 24px;
+.bus-number-card{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-end;
+    /* height: 40px; */
+    /* width: 90px; */
+    font-size: 12px;
     font-weight: 500;
+    /* background: blue; */
+    padding: 15px 20px;
+
 }
+.bus-number{
+    padding: 5px 7px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 200px;
+    margin-right: 8px;
+    /* background-clip: content-box; */
+    /* width: 90px; */
+    /* font-size: 24px; */
+    /* font-weight: 500; */
+}
+/* .bus-number:active{
+    scale: 0.9;
+} */
+.bus-current{
+    background: none !important;
+}
+.bus-card-line{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: var(--white-10);
+}
+
+
 .bus-stop{
     /* margin-left: 10px; */
     font-size: 14px;
     font-weight: 400;
+    padding-left: 15px;
     /* white-space: nowrap; */
 }
 .bus-eta{
@@ -301,9 +334,18 @@
     right: 0;
 }
 
-
-
-
+.kmb-route{
+    background: #E41F31;
+    border-color: #E41F31;
+}
+.nwfb-route{
+    background: #0DAF55;
+    border-color: #0DAF55;
+}
+.citybus-route{
+    background: #0060A9;
+    border-color: #0060A9;
+}
 
 
 

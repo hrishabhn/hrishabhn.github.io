@@ -8,6 +8,7 @@ function mainPopulate(){
     statusBar(1000,4000)
     todayWidget()
     buses()
+    // lights()
 }
 
 function mainRefresh() {
