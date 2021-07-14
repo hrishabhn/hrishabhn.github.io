@@ -308,9 +308,9 @@
     /* font-size: 24px; */
     /* font-weight: 500; */
 }
-/* .bus-number:active{
-    scale: 0.9;
-} */
+.bus-number:active{
+    opacity: 0.75;
+}
 .bus-current{
     background: none !important;
 }
