@@ -1,5 +1,5 @@
 function buses() {
-    kmbWidget(1,"KMB","961","490F1A302D8C32FC",'490F1A302D8C32FC')
+    kmbWidget(1,"KMB","961","490F1A302D8C32FC",'AD97EA183A25102C')
     // kmbWidget("KMB","960","AD97EA183A25102C",2)
     // cityBusWidget("NWFB","970x","002231",3)
     // cityBusWidget("CTB","43m","002665",4)
@@ -39,7 +39,11 @@ function buttonSelect(n) {
     busButton4.classList = "bus-number citybus-route";
     busButton5.classList = "bus-number nwfb-route";
 
+    var busCard1 = document.getElementById("bus-card-1")
+    busCard1.classList = ""
 
+    var busCard2 = document.getElementById("bus-card-2")
+    busCard2.classList = ""
 
 
 
@@ -79,12 +83,20 @@ function kmbWidget(n,company,route,stop1,stop2) {
             busAPIData(n,company,route,stop1,1,data)
         })
 
-    var api = `https://data.etabus.gov.hk/v1/transport/kmb/eta/${stop2}/${route}/1`;
+    // console.log(stop2)
+
+    if (stop2) {
+        var api = `https://data.etabus.gov.hk/v1/transport/kmb/eta/${stop2}/${route}/1`;
     fetch(api)
         .then(response => response.json())
         .then(data => {
             busAPIData(n,company,route,stop2,2,data)
         })
+    } else {
+        document.getElementById("bus-card-2").classList = "hidden-always"
+    }
+
+    
 }
 
 
@@ -109,12 +121,23 @@ function cityBusWidget(n,company,route,stop1,stop2) {
             busAPIData(n,company,route,stop1,1,data)
         })
 
+    // fetch(api)
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         busAPIData(n,company,route,stop2,2,data)
+    //     })
+
+
+    if (stop2) {
     var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/${company}/${stop2}/${route}`;
     fetch(api)
         .then(response => response.json())
         .then(data => {
             busAPIData(n,company,route,stop2,2,data)
         })
+    } else {
+        document.getElementById("bus-card-2").classList = "hidden-always"
+    }
 }
 
 function busAPIData(n,company,route,stop,stopN,data) {
@@ -162,6 +185,9 @@ function busAPIData(n,company,route,stop,stopN,data) {
             dest = "Wan Chai"
             break
         case "TUEN MUN (KIN SANG ESTATE)":
+            dest = "Tuen Mun"
+            break
+        case "TUEN MUN (SHAN KING ESTATE)":
             dest = "Tuen Mun"
             break
         case "Cheung Sha Wan (Kom Tsun Street)":
