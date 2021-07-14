@@ -9,16 +9,20 @@ function buses(userLocale) {
 function busTray(userLocale) {
 
     var busNoTray = document.getElementById("bus-number-tray")
+    userLocale = "West Kowloon"
     switch (userLocale) {
         case "Baguio Villa":
-            var busOrder = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001629\')">970x</div><div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,\'KMB\',\'960\',\'AD97EA183A25102C\')">960</div><div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'AD97EA183A25102C\',\'490F1A302D8C32FC\')">961</div><div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget(4,\'CTB\',\'43m\',\'002665\',\'002314\')">43m</div><div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,\'NWFB\',\'971\',\'001629\')">971</div>';
+            var busOrder = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001629\')">970x</div><div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,\'KMB\',\'960\',\'AD97EA183A25102C\')">960</div><div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'AD97EA183A25102C\',\'490F1A302D8C32FC\',\'0F5CEC693FD6EB66\')">961</div><div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget(4,\'CTB\',\'43m\',\'002665\',\'002314\')">43m</div><div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,\'NWFB\',\'971\',\'001629\')">971</div><div id="bus-route-6" class="bus-number nwfb-route" onclick="cityBusWidget(6,\'NWFB\',\'904\',\'001629\')">904</div><div id="bus-route-7" class="bus-number kmb-route" onclick="kmbWidget(7,\'KMB\',\'904\',\'0F5CEC693FD6EB66\')">904</div>';
             // cityBusWidget(1,'NWFB','970x','002231');
+            break;
+        case "West Kowloon":
+            var busOrder = '<div id="bus-route-1" class="bus-number kmb-route" onclick="kmbWidget(1,\'KMB\',\'960\',\'AD97EA183A25102C\')">960</div><div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,\'KMB\',\'961\',\'AD97EA183A25102C\',\'490F1A302D8C32FC\',\'0F5CEC693FD6EB66\')">961</div><div id="bus-route-3" class="bus-number nwfb-route" onclick="cityBusWidget(3,\'NWFB\',\'971\',\'001629\')">971</div><div id="bus-route-4" class="bus-number nwfb-route" onclick="cityBusWidget(4,\'NWFB\',\'904\',\'001629\')">904</div><div id="bus-route-5" class="bus-number kmb-route" onclick="kmbWidget(5,\'KMB\',\'904\',\'0F5CEC693FD6EB66\')">904</div><div id="bus-route-6" class="bus-number nwfb-route" onclick="cityBusWidget(6,\'NWFB\',\'970x\',\'002231\',\'001629\')">970x</div><div id="bus-route-7" class="bus-number citybus-route" onclick="cityBusWidget(7,\'CTB\',\'43m\',\'002665\',\'002314\')">43m</div>';
             break;
         
 
     }
 
-    // busNoTray.innerHTML = busOrder
+    busNoTray.innerHTML = busOrder
     // console.log(busNoTray)
     
 }
