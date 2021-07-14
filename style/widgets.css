@@ -294,7 +294,7 @@
     font-weight: 400;
     /* background: blue; */
     padding: 10px 0px 10px;
-
+    cursor: default;
 }
 .bus-number{
     padding: 4px 6px;
