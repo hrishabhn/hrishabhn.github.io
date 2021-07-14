@@ -30,16 +30,22 @@ function buttonSelect(n) {
     busDest1.innerHTML = '--';
     var busDest2 = document.getElementById("bus-dest-2")
     busDest2.innerHTML = '--';
+    var busDest3 = document.getElementById("bus-dest-3")
+    busDest3.innerHTML = '--';
 
     var busETA1 = document.getElementById("bus-eta-1")
     busETA1.innerHTML = '--';
     var busETA2 = document.getElementById("bus-eta-2")
     busETA2.innerHTML = '--';
+    var busETA3 = document.getElementById("bus-eta-3")
+    busETA3.innerHTML = '--';
 
     var busStop1 = document.getElementById("bus-stop-1")
     busStop1.innerHTML = '--';
     var busStop2 = document.getElementById("bus-stop-2")
     busStop2.innerHTML = '--';
+    var busStop3 = document.getElementById("bus-stop-3")
+    busStop3.innerHTML = '--';
 
     var busButton1 = document.getElementById("bus-route-1")
     var busButton2 = document.getElementById("bus-route-2")
@@ -64,6 +70,9 @@ function buttonSelect(n) {
 
     var busCard2 = document.getElementById("bus-card-2")
     busCard2.classList = "bus-card"
+
+    var busCard3 = document.getElementById("bus-card-3")
+    busCard3.classList = "bus-card"
 
 
 
@@ -98,7 +107,7 @@ function buttonSelect(n) {
 
 }
 
-function kmbWidget(n,company,route,stop1,stop2) {
+function kmbWidget(n,company,route,stop1,stop2,stop3) {
     // var api = `https://data.etabus.gov.hk/v1/transport/kmb/stop/${stop}`;
     
     buttonSelect(n)
@@ -122,11 +131,22 @@ function kmbWidget(n,company,route,stop1,stop2) {
         document.getElementById("bus-card-2").classList.add("hidden-always")
     }
 
+    if (stop3) {
+        var api = `https://data.etabus.gov.hk/v1/transport/kmb/eta/${stop3}/${route}/1`;
+    fetch(api)
+        .then(response => response.json())
+        .then(data => {
+            busAPIData(n,company,route,stop3,3,data)
+        })
+    } else {
+        document.getElementById("bus-card-3").classList.add("hidden-always")
+    }
+
     
 }
 
 
-function cityBusWidget(n,company,route,stop1,stop2) {
+function cityBusWidget(n,company,route,stop1,stop2,stop3) {
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route-stop/CTB/1/inbound`;
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/NWFB/002236/970x`;
 
@@ -163,6 +183,17 @@ function cityBusWidget(n,company,route,stop1,stop2) {
         })
     } else {
         document.getElementById("bus-card-2").classList.add("hidden-always")
+    }
+
+    if (stop3) {
+        var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/${company}/${stop3}/${route}`;
+    fetch(api)
+        .then(response => response.json())
+        .then(data => {
+            busAPIData(n,company,route,stop3,3,data)
+        })
+    } else {
+        document.getElementById("bus-card-3").classList.add("hidden-always")
     }
 }
 
