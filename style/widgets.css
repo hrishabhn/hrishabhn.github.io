@@ -251,7 +251,7 @@
     height: 50px;
     width: 100%;
     /* background-color: blue; */
-    color: var(--light-layer-0);
+    /* color: var(--light-layer-0); */
 
     /* border-top: 1px blue;
     border-bottom-width: 1px; */
@@ -287,6 +287,11 @@
 
 @media screen and (prefers-color-scheme: light) {
     .widget-container{
+        background-color: var(--light-layer-0);
+        color: var(--dark-layer-1);
+        fill: var(--dark-layer-1);
+    }
+    .bus-widget-container{
         background-color: var(--light-layer-0);
         color: var(--dark-layer-1);
         fill: var(--dark-layer-1);
