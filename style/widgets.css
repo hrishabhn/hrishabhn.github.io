@@ -248,7 +248,7 @@
 
     border-radius: 20px;
 
-    /* padding: 12px 15px; */
+    padding: 5px 20px;
 
     background-color: var(--dark-layer-1);
     background-size: cover;
@@ -264,7 +264,7 @@
     fill: var(--light-layer-0);
 }
 .bus-info-card{
-    display: block;
+    display: flex;
     /* flex-basis: 100%; */
     /* flex-wrap: wrap; */
     position: relative;
@@ -272,8 +272,9 @@
     align-items: center;
     /* flex-direction: row; */
 
-    height: 100px;
+    height: 50px;
     width: 100%;
+    /* padding: 15px 0px; */
     /* background-color: blue; */
     /* color: var(--light-layer-0); */
 
@@ -289,10 +290,10 @@
     align-items: flex-end;
     /* height: 40px; */
     /* width: 90px; */
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     /* background: blue; */
-    padding: 15px 20px;
+    padding: 10px 0px 10px;
 
 }
 .bus-number{
@@ -324,7 +325,7 @@
     /* margin-left: 10px; */
     font-size: 14px;
     font-weight: 400;
-    padding-left: 15px;
+    /* padding-left: 15px; */
     /* white-space: nowrap; */
 }
 .bus-eta{
