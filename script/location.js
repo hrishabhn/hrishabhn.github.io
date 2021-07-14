@@ -69,12 +69,12 @@ function getUserLocale() {
         }
         
         document.getElementById("district").innerHTML = userLocale;
+        // userLocale = "West Kowloon"
 
         locationBasedLoad(userLocale);
     
     
     
-        // userLocale = "West Lafayette"
         // console.log(userLocale)
         // returnUserLocale(userLocale);
     
