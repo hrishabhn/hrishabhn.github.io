@@ -1,19 +1,36 @@
 <a id="bus-widget" class="bus-widget-container">
     <div class="bus-number-card">
-        <div id="bus-route-1" class="bus-number kmb-route" onclick="kmbWidget('KMB','961','490F1A302D8C32FC',1)">961</div>
-        <div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget('KMB','960','AD97EA183A25102C',2)">960</div>
-        <div id="bus-route-3" class="bus-number nwfb-route" onclick="cityBusWidget('NWFB','970x','002231',3)">970x</div>
-        <div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget('CTB','43m','002665',4)">43m</div>
+        <div id="bus-route-1" class="bus-number kmb-route" onclick="kmbWidget(1,'KMB','961','490F1A302D8C32FC','490F1A302D8C32FC')">961</div>
+        <div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,'KMB','960','AD97EA183A25102C','AD97EA183A25102C')">960</div>
+        <div id="bus-route-3" class="bus-number nwfb-route" onclick="cityBusWidget(3,'NWFB','970x','002231','002231')">970x</div>
+        <div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget(4,'CTB','43m','002665','002665')">43m</div>
+        <div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,'NWFB','971','001629','001629')">971</div>
     </div>
     <div class="bus-card-line"></div>
     <div id="bus-card" class="bus-info-card">
-        <div class="bus-stop">
-            <p id="bus-stop">--</p>
-        </div><div class="bus-stop">
-            <p id="bus-stop">--</p>
+        <div class="bus-info">
+            <div class="bus-dest">
+                <p id="bus-dest-1">--</p>
+            </div>
+            <div class="bus-stop">
+                <p id="bus-stop-1">--</p>
+            </div>
         </div>
         <div class="bus-eta">
-            <p id="bus-eta">--</p>
+            <p id="bus-eta-1">--</p>
+        </div>
+    </div><div class="bus-card-line"></div>
+    <div id="bus-card" class="bus-info-card">
+        <div class="bus-info">
+            <div class="bus-dest">
+                <p id="bus-dest-2">--</p>
+            </div>
+            <div class="bus-stop">
+                <p id="bus-stop-2">--</p>
+            </div>
+        </div>
+        <div class="bus-eta">
+            <p id="bus-eta-2">--</p>
         </div>
     </div>
 </a>
