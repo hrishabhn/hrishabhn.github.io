@@ -161,6 +161,36 @@
 .widget-container:active{
     scale: 0.95;
 }
+
+.widget-text-box{
+    display: flex;
+    position: relative;
+
+    height: 40px;
+    width: 100%;
+    
+    padding-left: 20px;
+    /* padding-bottom: 0px; */
+
+    overflow: hidden;
+    /* box-sizing: border-box; */
+
+    z-index: 50;
+
+    align-content: flex-end;
+    font-weight: 500;
+    font-size: 22px;
+}
+.widget-text{
+    display: flex;
+    align-self: flex-end;
+    cursor: default;
+}
+
+
+
+
+
 #weather-info{
     display: flex;
     justify-content: center;
@@ -248,7 +278,7 @@
 
     border-radius: 20px;
 
-    padding: 10px 0px 5px;
+    padding: 0px 0px 5px;
 
     background-color: var(--dark-layer-1);
     background-size: cover;
