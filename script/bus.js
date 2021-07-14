@@ -230,6 +230,9 @@ function busAPIData(n,company,route,stop,stopN,data) {
         case "AD97EA183A25102C":
             stop = "Western Harbour Tunnel"
             break
+        case "0F5CEC693FD6EB66":
+            stop = "Western Harbour Tunnel"
+            break
         case "002665":
             stop = "Lower Baguio"
             break
