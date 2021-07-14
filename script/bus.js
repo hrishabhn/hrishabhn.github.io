@@ -1,5 +1,5 @@
 function buses() {
-    kmbWidget("KMB","961","490F1A302D8C32FC",1)
+    kmbWidget(1,"KMB","961","490F1A302D8C32FC",'490F1A302D8C32FC')
     // kmbWidget("KMB","960","AD97EA183A25102C",2)
     // cityBusWidget("NWFB","970x","002231",3)
     // cityBusWidget("CTB","43m","002665",4)
@@ -8,13 +8,13 @@ function buses() {
 function buttonSelect(n) {
     calendarDate();
 
-    var busDest = document.getElementById("bus-dest")
+    var busDest = document.getElementById("bus-dest-1")
     busDest.innerHTML = '--';
 
-    var busETA = document.getElementById("bus-eta")
+    var busETA = document.getElementById("bus-eta-1")
     busETA.innerHTML = '--';
 
-    var busStop = document.getElementById("bus-stop")
+    var busStop = document.getElementById("bus-stop-1")
     busStop.innerHTML = '--';
 
     var busButton1 = document.getElementById("bus-route-1")
@@ -59,70 +59,27 @@ function buttonSelect(n) {
 
 }
 
-function kmbWidget(company,route,stop,n) {
-    buttonSelect(n)
-
+function kmbWidget(n,company,route,stop1,stop2) {
     // var api = `https://data.etabus.gov.hk/v1/transport/kmb/stop/${stop}`;
-    // fetch(api)
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         console.log(data)
-    //         stop_1 = data['data']['name_en'];
-    //         // busETAPopulate(eta_1,1)
-    //     })
-
-    var api = `https://data.etabus.gov.hk/v1/transport/kmb/eta/${stop}/${route}/1`;
+    
+    buttonSelect(n)
+    var api = `https://data.etabus.gov.hk/v1/transport/kmb/eta/${stop1}/${route}/1`;
     fetch(api)
         .then(response => response.json())
         .then(data => {
-            // console.log(data)
-            // console.log(data['data'][0]['eta'])
-            var eta1 = Date.parse(data['data'][0]['eta']);
-            var eta2 = Date.parse(data['data'][1]['eta']);
-            var eta3 = Date.parse(data['data'][2]['eta']);
+            busAPIData(n,company,route,stop1,1,data)
+        })
 
-            var dest = data['data'][0]['dest_en'];
-            // console.log(dest)
-            
-            eta1 = processETA(eta1);
-            eta2 = processETA(eta2);
-            eta3 = processETA(eta3);
-
-            // console.log(eta2)
-
-
-            // if (!eta) {
-            //     eta = "-";
-            //     display = "hidden-always"
-            //     console.log("idk man")
-            // }
-
-            switch(stop) {
-                case "490F1A302D8C32FC":
-                    stop = "Tuen Mun Fire Station"
-                    break
-                case "AD97EA183A25102C":
-                    stop = "Western Harbour Tunnel"
-                    break
-            }
-
-            switch(dest) {
-                case "WAN CHAI (HKCECE)":
-                    dest = "Wan Chai"
-                    break
-                case "TUEN MUN (KIN SANG ESTATE)":
-                    dest = "Tuen Mun"
-                    break
-            }
-
-            // console.log(eta)
-            busETAPopulate(company,route,stop,n,eta1,eta2,eta3,dest)
+    var api = `https://data.etabus.gov.hk/v1/transport/kmb/eta/${stop2}/${route}/1`;
+    fetch(api)
+        .then(response => response.json())
+        .then(data => {
+            busAPIData(n,company,route,stop2,2,data)
         })
 }
 
 
-function cityBusWidget(company,route,stop,n) {
-    buttonSelect(n)
+function cityBusWidget(n,company,route,stop1,stop2) {
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route-stop/CTB/1/inbound`;
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/NWFB/002236/970x`;
 
@@ -135,59 +92,94 @@ function cityBusWidget(company,route,stop,n) {
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/stop/002314`;
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route-stop/${company}/${route}/${direction}`;
 
-    var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/${company}/${stop}/${route}`;
+    buttonSelect(n)
+    var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/${company}/${stop1}/${route}`;
     fetch(api)
         .then(response => response.json())
         .then(data => {
-            // console.log(data)
-
-            var eta1 = Date.parse(data['data'][0]['eta']);
-            var eta2 = Date.parse(data['data'][1]['eta']);
-            var eta3 = Date.parse(data['data'][2]['eta']);
-            var dest = data['data'][0]['dest_en'];
-            // console.log(dest)
-
-            eta1 = processETA(eta1);
-            eta2 = processETA(eta2);
-            eta3 = processETA(eta3);
-            // eta = eta - fullDate;
-            // console.log(eta)
-
-            switch(stop) {
-                case "002665":
-                    stop = "Lower Baguio"
-                    break
-                case "002231":
-                    stop = "Queen Mary Hospital"
-                    break
-                case "001629":
-                    stop = "Western Harbour Tunnel"
-                    break
-            }
-
-            switch(dest) {
-                case "Cheung Sha Wan (Kom Tsun Street)":
-                    dest = "Cheung Sha Wan"
-                    break
-                case "Shek Pai Wan":
-                    dest = "Aberdeen"
-                    break
-                // case "TUEN MUN (KIN SANG ESTATE)":
-                //     dest = "Tuen Mun"
-                //     break
-            }
-
-            busETAPopulate(company,route,stop,n,eta1,eta2,eta3,dest)
+            busAPIData(n,company,route,stop1,1,data)
         })
+
+    var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/${company}/${stop2}/${route}`;
+    fetch(api)
+        .then(response => response.json())
+        .then(data => {
+            busAPIData(n,company,route,stop2,2,data)
+        })
+}
+
+function busAPIData(n,company,route,stop,stopN,data) {
+    // console.log(data)
+
+    var eta1 = null;
+    var eta2 = null;
+    var eta3 = null;
+
+    var eta1 = Date.parse(data['data'][0]['eta']);
+    eta1 = processETA(eta1);
+
+
+    if (data['data'][1]) {
+        var eta2 = Date.parse(data['data'][1]['eta']);
+        eta2 = processETA(eta2);
+    }
+    if (data['data'][2]) {
+        var eta3 = Date.parse(data['data'][2]['eta']);
+        eta3 = processETA(eta3);
+    }
+
+    var dest = data['data'][0]['dest_en'];
+
+    switch(stop) {
+        case "490F1A302D8C32FC":
+            stop = "Tuen Mun Fire Station"
+            break
+        case "AD97EA183A25102C":
+            stop = "Western Harbour Tunnel"
+            break
+        case "002665":
+            stop = "Lower Baguio"
+            break
+        case "002231":
+            stop = "Queen Mary Hospital"
+            break
+        case "001629":
+            stop = "Western Harbour Tunnel"
+            break
+    }
+
+    switch(dest) {
+        case "WAN CHAI (HKCECE)":
+            dest = "Wan Chai"
+            break
+        case "TUEN MUN (KIN SANG ESTATE)":
+            dest = "Tuen Mun"
+            break
+        case "Cheung Sha Wan (Kom Tsun Street)":
+            dest = "Cheung Sha Wan"
+            break
+        case "Shek Pai Wan":
+            dest = "Aberdeen"
+            break
+    }
+
+    if (stopN == 1) {
+        busETAPopulate1(n,company,route,stop,eta1,eta2,eta3,dest)
+    }
+    if (stopN == 2) {
+        busETAPopulate2(n,company,route,stop,eta1,eta2,eta3,dest)
+    }
 }
 
 
 
 
-function processETA(eta) {
+function processETA(eta) {    
     eta = eta - fullDate;
     eta = eta / 60000;
     eta = Math.round(eta);
+
+    // console.log(eta)
 
     if (eta < 1) {
         eta = "Now";
@@ -200,9 +192,9 @@ function processETA(eta) {
     return eta;
 }
 
-function busETAPopulate(company,route,stop,n,eta1,eta2,eta3,dest) {
+function busETAPopulate1(n,company,route,stop,eta1,eta2,eta3,dest) {
     // console.log(dest)
-    var busCard = document.getElementById("bus-card-".concat(n))
+    // var busCard = document.getElementById("bus-card-".concat(n))
     // busCard.classList = "bus-info-card kmb"
 
     if (!eta1) {
@@ -239,16 +231,64 @@ function busETAPopulate(company,route,stop,n,eta1,eta2,eta3,dest) {
     // var busRoute = document.getElementById("bus-route-".concat(n))
     // busRoute.innerHTML = route;
     // busRoute.classList = numberClass;
-    var busDest = document.getElementById("bus-dest")
-    busDest.innerHTML = ("To: ").concat(dest);
+    var busDest1 = document.getElementById("bus-dest-1")
+    busDest1.innerHTML = ("To: ").concat(dest);
 
-    var busETA = document.getElementById("bus-eta")
-    busETA.innerHTML = etaAll;
+    var busETA1 = document.getElementById("bus-eta-1")
+    busETA1.innerHTML = etaAll;
 
-    var busStop = document.getElementById("bus-stop")
-    busStop.innerHTML = stop;
+    var busStop1 = document.getElementById("bus-stop-1")
+    busStop1.innerHTML = stop;
 }
 
+function busETAPopulate2(n,company,route,stop,eta1,eta2,eta3,dest) {
+    // console.log(dest)
+    // var busCard = document.getElementById("bus-card-".concat(n))
+    // busCard.classList = "bus-info-card kmb"
+
+    if (!eta1) {
+        eta1 = "Last Bus Departed"
+        // busCard.classList = "hidden-always"
+    }
+
+    etaAll = eta1
+    
+    if (eta2) {
+        etaAll = etaAll + ', ' + eta2;
+    }
+    if (eta3) {
+        etaAll = etaAll + ', ' + eta3;
+    }
+
+    switch (company) {
+        case "KMB":
+            var numberClass = "bus-number kmb-route";
+            break;
+        case "CTB":
+            var numberClass = "bus-number citybus-route";
+            break;
+        case "NWFB":
+            var numberClass = "bus-number nwfb-route";
+            break;
+        default:
+            var numberClass = "bus-number";
+
+    }
+
+    
+
+    // var busRoute = document.getElementById("bus-route-".concat(n))
+    // busRoute.innerHTML = route;
+    // busRoute.classList = numberClass;
+    var busDest2 = document.getElementById("bus-dest-2")
+    busDest2.innerHTML = ("To: ").concat(dest);
+
+    var busETA2 = document.getElementById("bus-eta-2")
+    busETA2.innerHTML = etaAll;
+
+    var busStop2 = document.getElementById("bus-stop-2")
+    busStop2.innerHTML = stop;
+}
 
 
 // function showWidgets(){
