@@ -6,6 +6,13 @@ function buses() {
 }
 
 function buttonSelect(n) {
+    var busETA = document.getElementById("bus-eta")
+    busETA.innerHTML = '--';
+
+    var busStop = document.getElementById("bus-stop")
+    busStop.innerHTML = '--';
+
+    calendarDate();
     var busButton1 = document.getElementById("bus-route-1")
     var busButton2 = document.getElementById("bus-route-2")
     var busButton3 = document.getElementById("bus-route-3")
@@ -98,7 +105,6 @@ function kmbWidget(company,route,stop,n) {
 
 function cityBusWidget(company,route,stop,n) {
     buttonSelect(n)
-
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route-stop/CTB/1/inbound`;
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/NWFB/002236/970x`;
 
