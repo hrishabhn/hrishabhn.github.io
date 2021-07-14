@@ -6,14 +6,14 @@ function mainPopulate(){
     apps()
     media()
     statusBar(1000,4000)
-    widgets()
+    todayWidget()
     buses()
 }
 
 function mainRefresh() {
     calendarDate()
     smartCards()
-    widgets()
+    todayWidget()
     buses()
     statusBar(0,1500)
     // console.log("refreshed")
