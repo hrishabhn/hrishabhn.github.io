@@ -2,7 +2,7 @@
 function widgets(){
     var a;
     // console.log("1")
-    if (hourNow < 9) {
+    if (hourNow < 10) {
         a = 1;
     } else {
         a = 0;
