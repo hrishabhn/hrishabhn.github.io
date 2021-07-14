@@ -263,6 +263,7 @@
 
 .bus-widget-container{
     width: calc((100% - 30px) / 1);
+    /* height: max-content; */
     position: relative;
     display: inline-block;
     vertical-align: top;
