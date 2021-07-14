@@ -8,18 +8,18 @@ function mainPopulate(){
     statusBar(1000,4000)
     widgets()
     buses()
-    // busETAPopulate(961)
 }
 
 function mainRefresh() {
+    calendarDate()
     smartCards()
     widgets()
     buses()
     statusBar(0,1500)
-    console.log("refreshed")
+    // console.log("refreshed")
 }
 
 
-function test() {
-    console.log(lat)
-}
+// function test() {
+//     console.log(lat)
+// }
