@@ -290,17 +290,17 @@
     align-items: flex-end;
     /* height: 40px; */
     /* width: 90px; */
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     /* background: blue; */
     padding: 10px 0px 10px;
 
 }
 .bus-number{
-    padding: 5.5px 7.5px;
+    padding: 4px 6px;
     border-style: solid;
     border-width: 2.5px;
-    border-radius: 200px;
+    border-radius: 12.5px;
     margin-right: 8px;
     color: var(--white-100);
     /* background-clip: content-box; */
