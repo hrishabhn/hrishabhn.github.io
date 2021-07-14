@@ -8,6 +8,9 @@ function buses() {
 function buttonSelect(n) {
     calendarDate();
 
+    var busDest = document.getElementById("bus-dest")
+    busDest.innerHTML = '--';
+
     var busETA = document.getElementById("bus-eta")
     busETA.innerHTML = '--';
 
@@ -71,16 +74,9 @@ function kmbWidget(company,route,stop,n) {
             // console.log(data)
             // console.log(data['data'][0]['eta'])
             var eta = Date.parse(data['data'][0]['eta']);
-
+            var dest = data['data'][0]['dest_en'];
+            // console.log(dest)
             
-            // console.log(eta)
-            // if (!eta) {
-            //     console.log("rip")
-            // } else {
-            //     console.log("norip")
-            // }
-            // console.log(eta)
-
             eta = processETA(eta);
 
             // if (!eta) {
@@ -98,8 +94,17 @@ function kmbWidget(company,route,stop,n) {
                     break
             }
 
+            switch(dest) {
+                case "WAN CHAI (HKCECE)":
+                    dest = "Wan Chai"
+                    break
+                case "TUEN MUN (KIN SANG ESTATE)":
+                    dest = "Tuen Mun"
+                    break
+            }
+
             // console.log(eta)
-            busETAPopulate(company,route,stop,n,eta)
+            busETAPopulate(company,route,stop,n,eta,dest)
         })
 }
 
@@ -125,11 +130,12 @@ function cityBusWidget(company,route,stop,n) {
             // console.log(data)
 
             var eta = Date.parse(data['data'][0]['eta']);
+            var dest = data['data'][0]['dest_en'];
+            // console.log(dest)
+
             eta = processETA(eta);
             // eta = eta - fullDate;
             // console.log(eta)
-
-
 
             switch(stop) {
                 case "002665":
@@ -140,7 +146,18 @@ function cityBusWidget(company,route,stop,n) {
                     break
             }
 
-            busETAPopulate(company,route,stop,n,eta)
+            switch(dest) {
+                case "Cheung Sha Wan (Kom Tsun Street)":
+                    dest = "Cheung Sha Wan"
+                    break
+                // case "TUEN MUN (KIN SANG ESTATE)":
+                //     dest = "Tuen Mun"
+                //     break
+            }
+            
+            
+
+            busETAPopulate(company,route,stop,n,eta,dest)
         })
 }
 
@@ -163,8 +180,8 @@ function processETA(eta) {
     return eta;
 }
 
-function busETAPopulate(company,route,stop,n,eta) {
-    // console.log(eta)
+function busETAPopulate(company,route,stop,n,eta,dest) {
+    // console.log(dest)
     var busCard = document.getElementById("bus-card-".concat(n))
     // busCard.classList = "bus-info-card kmb"
 
@@ -187,19 +204,13 @@ function busETAPopulate(company,route,stop,n,eta) {
 
     }
 
-    switch(stop) {
-        case "002665":
-            stop = "Lower Baguio"
-            break
-        case "002231":
-            stop = "Queen Mary Hospital"
-            break
-    }
+    
 
     // var busRoute = document.getElementById("bus-route-".concat(n))
     // busRoute.innerHTML = route;
     // busRoute.classList = numberClass;
-
+    var busDest = document.getElementById("bus-dest")
+    busDest.innerHTML = ("To: ").concat(dest);
 
     var busETA = document.getElementById("bus-eta")
     busETA.innerHTML = eta;
