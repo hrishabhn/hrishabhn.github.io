@@ -4,6 +4,21 @@ function todayWidget(){
     calWidget();
 }
 
+function statusBar(show,hide){
+    setTimeout(function(){
+        document.getElementById("status-box").classList = "status-box status-box-show";
+        // console.log("showing")
+    },show);
+    setTimeout(function(){
+        document.getElementById("status-box").classList = "status-box status-box-hide";
+        // console.log("hiding")
+    },hide);
+}
+
+
+
+
+
 
 function weatherWidget() {
     var cloudyIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M18 5a8 8 0 00-7.121094 4.3691406A5 5 0 009 9a5 5 0 00-4.9492188 4.333984A6 6 0 000 19a6 6 0 006 6h18a6 6 0 006-6 6 6 0 00-4.017578-5.654297A8 8 0 0026 13a8 8 0 00-8-8z"/></svg>'
