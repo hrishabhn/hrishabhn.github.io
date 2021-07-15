@@ -294,6 +294,44 @@
     color: var(--light-layer-0);
     fill: var(--light-layer-0);
 }
+.bus-icon-container{
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    /* height: fit-content; */
+
+    /* height: 10px;
+    width: 10px; */
+    
+}
+.bus-icon{
+    display: block;
+    height: 10px;
+    width: 10px;
+}
+.bus-icon-hide{
+    opacity: 0;
+}
+.bus-icon-KMB{
+    fill: #ff3b30;
+}
+.bus-icon-NWFB{
+    fill: #ff9500;
+}
+.bus-icon-CTB{
+    fill: #5856d6;
+}
+
+
+
+
+
+
+
+
+
+
 .bus-info-card{
     display: flex;
     /* flex-basis: 100%; */
