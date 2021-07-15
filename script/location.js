@@ -76,7 +76,6 @@ function getUserLocale() {
         // userLocale = "West Highway"
 
         locationBasedLoad(userLocale);
-        document.getElementById("district").innerHTML = userLocale;
 
     
     
@@ -86,11 +85,12 @@ function getUserLocale() {
     
     }
     
-    if (navigator.geolocation.getCurrentPosition(successCallback)) {
+    if (navigator.geolocation.getCurrentPosition) {
+        // console.log('location real')
         navigator.geolocation.getCurrentPosition(successCallback);
     } else {
         userLocale = "no location"
-        // console.log('hmm')
+        // console.log('location false')
         // userLocale = "Kennedy Town"
         locationBasedLoad(userLocale);
     }
