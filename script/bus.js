@@ -75,6 +75,10 @@ function busTray(userLocale) {
 }
 
 function resetBusCards() {
+    var busIcon = document.getElementById("bus-icon")
+    busIcon.classList = "bus-icon bus-icon-hide"
+
+
     var busDest1 = document.getElementById("bus-dest-1")
     busDest1.innerHTML = '--';
     var busDest2 = document.getElementById("bus-dest-2")
@@ -451,6 +455,9 @@ function busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest) {
             break;
 
     }
+
+    var busIcon = document.getElementById("bus-icon")
+    busIcon.classList = ("bus-icon bus-icon-" + company)
     
 
     // var busRoute = document.getElementById("bus-route-".concat(n))
