@@ -7,6 +7,7 @@ function buses(userLocale) {
 }
 
 function busTray(userLocale) {
+    // console.log("hmm")
     var busNoTray = document.getElementById("bus-number-tray")
 
     const _970x = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001629\')">970x</div>'
