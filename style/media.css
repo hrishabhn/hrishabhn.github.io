@@ -1089,4 +1089,10 @@
     .media-card:active{
         scale: 0.95;
     }
+    .tv-card:active{
+        scale: 1;
+    }
+    
+
+
 }
