@@ -24,6 +24,7 @@ function getUserLocale() {
         const central = (lat > 22.281) && (lat < 22.290) && (lon > 114.156) && (lon < 114.159);
         const causeway = (lat > 22.270) && (lat < 22.283) && (lon > 114.180) && (lon < 114.190);
         const westKowloon = (lat > 22.298) && (lat < 22.308) && (lon > 114.154) && (lon < 114.165);
+        const westHighway = (lat > 22.308) && (lat < 22.37) && (lon > 113.960) && (lon < 114.165);
         const tsimShaTsui = (lat > 22.292) && (lat < 22.303) && (lon > 114.165) && (lon < 114.177);
     
     
@@ -65,14 +66,18 @@ function getUserLocale() {
         if (westKowloon) {
             userLocale = "West Kowloon"
         }
+        if (westHighway) {
+            userLocale = "West Highway"
+        }
         if (tsimShaTsui) {
             userLocale = "Tsim Sha Tsui"
         }
         
-        document.getElementById("district").innerHTML = userLocale;
-        // userLocale = "West Kowloon"
+        // userLocale = "West Highway"
 
         locationBasedLoad(userLocale);
+        document.getElementById("district").innerHTML = userLocale;
+
     
     
     
@@ -86,6 +91,7 @@ function getUserLocale() {
     } else {
         userLocale = "no location"
         // console.log('hmm')
+        // userLocale = "Kennedy Town"
         locationBasedLoad(userLocale);
     }
 }
