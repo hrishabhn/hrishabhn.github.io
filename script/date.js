@@ -127,7 +127,7 @@ function smartCards(userLocale) {
         document.getElementById("sleep-card").className = "smart-card-hide content-container hidden-desktop";
         // console.log("not night");
     }
-
+}
 
 // function timeSmartCards(){
 
