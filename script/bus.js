@@ -1,5 +1,6 @@
 function buses(userLocale) {
     busTray(userLocale)
+    resetBusCards()
     // kmbWidget(1,"KMB","961","490F1A302D8C32FC",'AD97EA183A25102C')
     // kmbWidget("KMB","960","AD97EA183A25102C",2)
     // cityBusWidget("NWFB","970x","002231",3)
@@ -37,9 +38,7 @@ function busTray(userLocale) {
 
 
     switch (userLocale) {
-        case "All":
-            var busOrder = _970x + _960 + _961 + _43m + _971 + _904nwfb + _904kmb;
-            break;
+            // var busOrder = _970x + _960 + _961 + _43m + _971 + _904nwfb + _904kmb;
         case "Pok Fu Lam":
         case "Baguio Villa":
             var busOrder = _970x_pfl + _971_pfl + _43m_pfl;
@@ -63,8 +62,10 @@ function busTray(userLocale) {
         case "West Highway":
             var busOrder = _961_wk_s + _971_wk + _970x_wk + _904nwfb + _904kmb
             break
+        case "All":
         default:
             busOrder = _970x + _960 + _961 + _43m + _971 + _904nwfb + _904kmb;
+            resetBusCards()
 
     }
 
@@ -73,9 +74,7 @@ function busTray(userLocale) {
     
 }
 
-function buttonSelect(n) {
-    calendarDate();
-
+function resetBusCards() {
     var busDest1 = document.getElementById("bus-dest-1")
     busDest1.innerHTML = '--';
     var busDest2 = document.getElementById("bus-dest-2")
@@ -96,6 +95,19 @@ function buttonSelect(n) {
     busStop2.innerHTML = '--';
     var busStop3 = document.getElementById("bus-stop-3")
     busStop3.innerHTML = '--';
+
+    document.getElementById("bus-card-1").classList.add("hidden-always")
+    document.getElementById("bus-card-2").classList.add("hidden-always")
+    document.getElementById("bus-card-3").classList.add("hidden-always")
+
+}
+
+function buttonSelect(n) {
+    calendarDate();
+
+    resetBusCards();
+
+    
 
     // for (i = 1, )
 
