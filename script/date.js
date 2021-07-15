@@ -127,18 +127,7 @@ function smartCards(userLocale) {
         document.getElementById("sleep-card").className = "smart-card-hide content-container hidden-desktop";
         // console.log("not night");
     }
-}
 
-function statusBar(show,hide){
-    setTimeout(function(){
-        document.getElementById("status-box").classList = "status-box status-box-show";
-        // console.log("showing")
-    },show);
-    setTimeout(function(){
-        document.getElementById("status-box").classList = "status-box status-box-hide";
-        // console.log("hiding")
-    },hide);
-}
 
 // function timeSmartCards(){
 
