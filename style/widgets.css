@@ -314,13 +314,13 @@
     opacity: 0;
 }
 .bus-icon-KMB{
-    fill: #ff3b30;
+    fill: #ff453a;
 }
 .bus-icon-NWFB{
-    fill: #ff9500;
+    fill: #30d158;
 }
 .bus-icon-CTB{
-    fill: #5856d6;
+    fill: #5e5ce6;
 }
 
 
@@ -371,15 +371,15 @@
     /* width: 90px; */
     font-size: 15px;
     font-weight: 400;
-    padding: 10px 15px 10px 20px;
+    padding: 10px 14px 10px 20px;
     cursor: default;
 }
 .bus-number{
-    padding: 4px 6px;
+    padding: 5px 8px;
     border-style: solid;
     border-width: 2px;
-    border-radius: 12px;
-    margin-right: 5px;
+    border-radius: 13px;
+    margin-right: 6px;
     /* color: var(--white-100); */
     /* background-clip: content-box; */
     /* width: 90px; */
