@@ -10,8 +10,8 @@ function busTray(userLocale) {
     // console.log("hmm")
     var busNoTray = document.getElementById("bus-number-tray")
 
-    const _970x = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001629\')">970x</div>'
-    const _970x_pfl = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\')">970x</div>'
+    const _970x = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001629\',\'001113\')">970x</div>'
+    const _970x_pfl = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001113\')">970x</div>'
     const _970x_wk = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'001629\')">970x</div>'
     
     const _960 = '<div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,\'KMB\',\'960\',\'AD97EA183A25102C\',\'25BC743BF6EB726E\')">960</div>'
@@ -217,7 +217,6 @@ function kmbWidget(n,company,route,stop1,stop2,stop3) {
     
 }
 
-
 function cityBusWidget(n,company,route,stop1,stop2,stop3) {
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route-stop/CTB/1/inbound`;
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/NWFB/002236/970x`;
@@ -314,6 +313,9 @@ function busAPIData(n,company,route,stop,stopN,data) {
             break
         case "002231":
             stop = "Queen Mary Hospital"
+            break
+        case "001113":
+            stop = "HKU MTR Station"
             break
         case "001083":
             stop = "Sands Street"
