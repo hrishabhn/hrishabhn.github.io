@@ -7,6 +7,7 @@ function getUserLocale() {
         // var evening = (hourNow > 16) && (hourNow < 21);
         // var night = (hourNow > 20) || (hourNow < 6);
     
+
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
         // console.log(lat)
@@ -80,5 +81,11 @@ function getUserLocale() {
     
     }
     
-    navigator.geolocation.getCurrentPosition(successCallback);
+    if (navigator.geolocation.getCurrentPosition(successCallback)) {
+        navigator.geolocation.getCurrentPosition(successCallback);
+    } else {
+        userLocale = "no location"
+        // console.log('hmm')
+        locationBasedLoad(userLocale);
+    }
 }
