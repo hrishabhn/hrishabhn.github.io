@@ -377,10 +377,10 @@
 .bus-number{
     padding: 4px 6px;
     border-style: solid;
-    border-width: 2.5px;
+    border-width: 2px;
     border-radius: 12px;
     margin-right: 5px;
-    color: var(--white-100);
+    /* color: var(--white-100); */
     /* background-clip: content-box; */
     /* width: 90px; */
     /* font-size: 24px; */
@@ -409,9 +409,40 @@
 .bus-number:active{
     opacity: 0.75;
 }
-.bus-current{
-    background: none !important;
+.bus-current.kmb-route{
+    background: #ff453a;
 }
+.bus-current.nwfb-route{
+    background: #30d158;
+}
+.bus-current.citybus-route{
+    background: #5e5ce6;
+}
+.bus-current{
+    color: var(--white-100);
+}
+.kmb-route{
+    /* background: #ff453a66; */
+    border-color: #ff453a;
+    /* background: #E41F31;
+    border-color: #E41F31; */
+}
+.nwfb-route{
+    /* background: #30d15833; */
+    border-color: #30d158;
+    /* background: #0DAF55;
+    border-color: #0DAF55; */
+}
+.citybus-route{
+    /* background: #5e5ce633; */
+    border-color: #5e5ce6;
+    /* background: #0060A9;
+    border-color: #0060A9; */
+}
+
+
+
+
 .bus-card{
     padding: 0px 20px;
 }
@@ -449,24 +480,7 @@
     right: 0;
 }
 
-.kmb-route{
-    background: #ff3b30;
-    border-color: #ff3b30;
-    /* background: #E41F31;
-    border-color: #E41F31; */
-}
-.nwfb-route{
-    background: #ff9500;
-    border-color: #ff9500;
-    /* background: #0DAF55;
-    border-color: #0DAF55; */
-}
-.citybus-route{
-    background: #5856d6;
-    border-color: #5856d6;
-    /* background: #0060A9;
-    border-color: #0060A9; */
-}
+
 
 
 
@@ -484,8 +498,8 @@
         fill: var(--dark-layer-1);
     }
 
-    .bus-current{
-        color: var(--dark-layer-1);
+    .bus-number{
+        /* color: var(--dark-layer-1); */
     }
     .bus-card-line{
         background: var(--black-10);
