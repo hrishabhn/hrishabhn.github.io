@@ -422,19 +422,19 @@
     color: var(--white-100);
 }
 .kmb-route{
-    /* background: #ff453a66; */
+    background: #ff453a33;
     border-color: #ff453a;
     /* background: #E41F31;
     border-color: #E41F31; */
 }
 .nwfb-route{
-    /* background: #30d15833; */
+    background: #30d15833;
     border-color: #30d158;
     /* background: #0DAF55;
     border-color: #0DAF55; */
 }
 .citybus-route{
-    /* background: #5e5ce633; */
+    background: #5e5ce633;
     border-color: #5e5ce6;
     /* background: #0060A9;
     border-color: #0060A9; */
