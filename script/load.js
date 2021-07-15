@@ -13,8 +13,14 @@ function mainPopulate(){
 }
 
 function locationBasedLoad(userLocale) {
+    document.getElementById("district").innerHTML = userLocale;
+
     smartCards(userLocale)
+    // console.log("bruhhh")
+
     buses(userLocale)
+    // console.log("bruhhh")
+
 }
 
 function mainRefresh() {
