@@ -18,16 +18,17 @@ function calendarDate() {
 
     if ((hourNow > 4) && (hourNow < 12)) {
         timeOfDay = "morning"
-    }
-    if ((hourNow > 11) && (hourNow < 17)) {
+    } else if ((hourNow > 11) && (hourNow < 17)) {
         timeOfDay = "afternoon"
-    }
-    if ((hourNow > 16) && (hourNow < 21)) {
+    }else if ((hourNow > 16) && (hourNow < 21)) {
         timeOfDay = "evening"
-    }
-    if ((hourNow > 20) || (hourNow < 5)) {
+    } else if ((hourNow > 20) || (hourNow < 5)) {
         timeOfDay = "night"
+    } else {
+        console.log('time broken')
     }
+
+    // timeOfDay = "afternoon"
 }
 
 // function calendarLog() {
