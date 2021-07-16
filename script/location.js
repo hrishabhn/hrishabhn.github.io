@@ -86,6 +86,7 @@ function getUserLocale() {
     }
     
     if (navigator.geolocation.getCurrentPosition) {
+        // console.log(navigator.geolocation.getCurrentPosition)
         // console.log('location real')
         navigator.geolocation.getCurrentPosition(successCallback);
     } else {
