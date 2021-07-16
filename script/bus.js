@@ -11,25 +11,26 @@ function busTray(userLocale) {
     // console.log("hmm")
     var busNoTray = document.getElementById("bus-number-tray")
 
-    const _970x = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001629\',\'001113\')">970x</div>'
-    const _970x_pfl = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001113\')">970x</div>'
-    const _970x_wk = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'001629\')">970x</div>'
+    const _970x = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001113\',\'001629\')">970x</div>'
+    const _970x_pfl = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001113\',\'001628\')">970x</div>'
+    const _970x_icc = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'001629\')">970x</div>'
     
     const _960 = '<div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,\'KMB\',\'960\',\'AD97EA183A25102C\',\'25BC743BF6EB726E\')">960</div>'
-    const _960_wk_n = '<div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,\'KMB\',\'960\',\'AD97EA183A25102C\')">960</div>'
+    const _960_icc_n = '<div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,\'KMB\',\'960\',\'AD97EA183A25102C\')">960</div>'
+    const _960_tm_n = '<div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,\'KMB\',\'960\',\'25BC743BF6EB726E\')">960</div>'
     
     const _961 = '<div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'AD97EA183A25102C\',\'490F1A302D8C32FC\',\'466111DE1A3E4656\')">961</div>'
     // const _961_N = '<div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'AD97EA183A25102C\')">961</div>'
-    const _961_wk_n = '<div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'AD97EA183A25102C\')">961</div>'
-    const _961_wk_s = '<div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'466111DE1A3E4656\')">961</div>'
+    const _961_icc_n = '<div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'AD97EA183A25102C\')">961</div>'
+    const _961_icc_s = '<div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'466111DE1A3E4656\')">961</div>'
     const _961_tm = '<div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'490F1A302D8C32FC\')">961</div>'
 
-    const _43m = '<div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget(4,\'CTB\',\'43m\',\'002665\',\'002314\',\'001083\')">43m</div>'
+    const _43m = '<div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget(4,\'CTB\',\'43m\',\'002665\',\'001083\',\'002314\')">43m</div>'
     const _43m_pfl = '<div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget(4,\'CTB\',\'43m\',\'002665\')">43m</div>'
     const _43m_ktown = '<div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget(4,\'CTB\',\'43m\',\'001083\')">43m</div>'
     
     const _971 =       '<div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,\'NWFB\',\'971\',\'001629\',\'002665\',\'001083\')">971</div>'
-    const _971_wk = '<div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,\'NWFB\',\'971\',\'001629\')">971</div>'
+    const _971_icc = '<div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,\'NWFB\',\'971\',\'001629\')">971</div>'
     const _971_pfl =   '<div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,\'NWFB\',\'971\',\'002665\')">971</div>'
     const _971_ktown = '<div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,\'NWFB\',\'971\',\'001083\')">971</div>'
     
@@ -48,9 +49,9 @@ function busTray(userLocale) {
             break;
         case "West Kowloon":
             if (timeOfDay == "morning") {
-                var busOrder = _960_wk_n + _961_wk_n
+                var busOrder = _960_icc_n + _961_icc_n
             } else if ((timeOfDay == "afternoon") || (timeOfDay == "evening")){
-                var busOrder = _971_wk + _970x_wk + _904nwfb + _904kmb
+                var busOrder = _971_icc + _970x_icc + _904nwfb + _904kmb
             } else {
                 var busOrder = _960 + _961 + _971 + _904nwfb + _904kmb + _970x
             }
@@ -60,7 +61,11 @@ function busTray(userLocale) {
             var busOrder = _961_tm
             break;
         case "West Highway":
-            var busOrder = _961_wk_s + _971_wk + _970x_wk + _904nwfb + _904kmb
+            if (timeOfDay == "morning") {
+                var busOrder = _960_tm_n
+            } else {
+                var busOrder = _961_icc_s + _971_icc + _970x_icc + _904nwfb + _904kmb
+            }
             break
         case "All":
         default:
@@ -318,6 +323,7 @@ function busAPIData(n,company,route,stop,stopN,data) {
         case "0F5CEC693FD6EB66":
         case "466111DE1A3E4656":
         case "001629":
+        case "001628":
             stop = "Western Harbour Tunnel"
             break
         case "25BC743BF6EB726E":
