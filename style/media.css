@@ -345,8 +345,10 @@
     z-index: 4;
 }
 .tv-popup-close{
-    display: block;
+    display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     top: 15px;
     right: 15px;
     height: 35px;
@@ -359,6 +361,11 @@
 }
 .tv-popup-close:active{
     opacity: 0.75;
+}
+.tv-popup-close-icon{
+    fill: var(--white-80);
+    height: 40%;
+    width: 40%;
 }
 
 
