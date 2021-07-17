@@ -1293,7 +1293,8 @@ body{
         opacity: 1;
     }
     .app-container:active{
-        scale: 0.9;
+        scale: 1;
+        opacity: 0.75;
     }
     .app-icon-container{
         top: 0;
