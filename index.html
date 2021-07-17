@@ -85,44 +85,30 @@
 
     <div id="tv-popup-modal" class="modal tv-popup-closed">
         <div class="tv-popup-tab" onclick="popupTVHide()"></div>
-
-
-        <!-- Modal content -->
         <div class="tv-popup-modal">
-
             <div id="card" class="tv-popup-card show-solid">
+                <div class="tv-popup-close" onclick="popupTVHide()"></div>
 
                 <span id="poster" class="tv-popup-poster show-poster">
                     <span id="grad" class="tv-popup-gradient show-gradient">
+                        <span id="title" class="tv-popup-title tv-title-size show-title"></span>
                     </span>
-    
                 </span>
-                <span id="title" class="tv-popup-title tv-title-size show-title"></span>
-    
-                <span id="desc" class="tv-popup-description">sfnasklfjn iudfbviudv sgbv mdsgbs mgbsf gb fsgbfgbsfgbfsb bsfgbfjskdfnlksj sfdnj
-                </span>
+                <span id="desc" class="tv-popup-description"></span>
     
                 <div class="tv-popup-button-tray">
-                    <span id="serviceGradient" class="tv-popup-button-container hulu">
-                        <span id="service" class="tv-popup-text tv-popup-text-with-icon">oijoijojio</span>
-                        <a id="link" class="tv-popup-link" target="_blank"></a>
-                        <svg class="tv-popup-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861"
-                                xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                                <g>
-                                    <path
-                                        d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z"
-                                        xmlns="http://www.w3.org/2000/svg" />
-                                </g>
-                        </svg>
-                    </span><span class="tv-time tv-popup-button-container">
-                        <span class="tv-time-text tv-popup-text">TV Time</span>
-                        <a id="tv-time" class="tv-popup-link" target="_blank"></a>
+                    <span class="tv-popup-button-container tv-popup-play">
+                        <p id="service" class="tv-popup-button-text"></p>
+                        <a id="tv-popup-link" class="tv-popup-link" target="_blank"></a>
+                    </span><span class="tv-popup-button-container">
+                        <p class="tv-popup-button-text">TV Time</p>
+                        <a id="tv-popup-tv-time" class="tv-popup-link" target="_blank"></a>
                     </span><span class="reelgood tv-popup-button-container">
-                        <span class="tv-popup-text">Reelgood</span>
-                        <a id="reelgood" class="tv-popup-link" target="_blank"></a>
+                        <p class="tv-popup-button-text">Reelgood</p>
+                        <a id="tv-popup-reelgood" class="tv-popup-link" target="_blank"></a>
                     </span><span class="imdb tv-popup-button-container">
-                        <span class="black-text tv-popup-text">IMDb</span>
-                        <a id="imdb" class="tv-popup-link" target="_blank"></a>
+                        <p class="tv-popup-button-text">IMDb</p>
+                        <a id="tv-popup-imdb" class="tv-popup-link" target="_blank"></a>
                     </span>
                 </div>
             </div>
@@ -161,7 +147,6 @@
         <script src="script/date.js"></script>
         <script src="script/widget.js"></script>
         <script src="script/bus.js"></script>
-        <script src="script/lights.js"></script>
         <script src="script/pages.js"></script>
 
         <div id="main-1" class="main">
