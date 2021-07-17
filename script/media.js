@@ -89,7 +89,8 @@ function tvData() {
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/349271",
     "https://reelgood.com/show/manifest-2018",
-    "https://www.imdb.com/title/tt8421350"
+    "https://www.imdb.com/title/tt8421350",
+    "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."
   ]
   
   // Always sunny
@@ -105,7 +106,7 @@ function tvData() {
     "https://www.tvtime.com/en/show/75805",
     "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
     "https://www.imdb.com/title/tt0472954",
-    "It's Always Sunny in Philadelphia It's Always Sunny in Philadelphia It's Always Sunny in Philadelphia",
+    "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
   ]
   
   // Love Death Robots
@@ -121,6 +122,7 @@ function tvData() {
     "https://www.tvtime.com/en/show/357888",
     "https://reelgood.com/show/love-death-robots-2019",
     "https://www.imdb.com/title/tt9561862",
+    "Terrifying creatures, wicked surprises and dark comedy converge in this NSFW anthology of animated stories presented by Tim Miller and David Fincher.",
   ]
   
   // Love Death Robots
@@ -614,13 +616,14 @@ function popupTVHide(){
   
 function tvPopup(n){
   showsAll = tvData()
-  console.log(showsAll[n])
+  // console.log(showsAll[n])
+  
 
   var cardClass = "tv-popup-card ";
   var posterClass = "tv-popup-poster ";
   var gradientClass = "tv-popup-gradient ";
   var titleClass = "tv-popup-title ";
-  var serviceClass = "tv-popup-button-container tv-play-button ";
+  // var serviceClass = "tv-popup-button-container tv-play-button ";
 
   document.getElementById("card").className =               cardClass.concat(showsAll[n][0]);
   document.getElementById("poster").className =           posterClass.concat(showsAll[n][1]);
@@ -633,6 +636,13 @@ function tvPopup(n){
   document.getElementById("tv-popup-tv-time").href =                                  showsAll[n][8];
   document.getElementById("tv-popup-reelgood").href =                                 showsAll[n][9];
   document.getElementById("tv-popup-imdb").href =                                     showsAll[n][10];
+  
+  if (showsAll[n][11]) {
+    // console.log(showsAll[n][11])
+    document.getElementById("tv-popup-summary").innerHTML = showsAll[n][11];
+  } else {
+    document.getElementById("tv-popup-summary").innerHTML = null;
+  }
 }
 
 function podData() {
