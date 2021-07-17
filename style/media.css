@@ -479,17 +479,17 @@
     justify-content: center;
     align-items: center;
 
-    border-radius: 5px;
+    border-radius: 10px;
     
-    height: 20px;
-    width: 30px;
+    height: 30px;
+    width: 45px;
     /* width: 10px; */
 
     background-color: #F5C518;
 }
 .imdb-icon{
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     fill: black;
 }
 
