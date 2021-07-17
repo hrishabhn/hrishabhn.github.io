@@ -351,8 +351,8 @@
     align-items: center;
     top: 15px;
     right: 15px;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border-radius: 100%;
     /* -webkit-backdrop-filter: blur(25px); */
     background-color: var(--dark-layer-1);
@@ -381,7 +381,7 @@
     position: relative;
 
     vertical-align: top;
-    padding-bottom: 25px;
+    padding-bottom: 45px;
 
     box-shadow: 0 0 50px var(--black-100);
 
