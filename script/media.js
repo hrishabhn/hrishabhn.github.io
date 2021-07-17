@@ -125,7 +125,7 @@ function tvData() {
     "Terrifying creatures, wicked surprises and dark comedy converge in this NSFW anthology of animated stories presented by Tim Miller and David Fincher.",
   ]
   
-  // Love Death Robots
+  // blackpink
   show4 = [
     "blackpink-solid",
     "blackpink-poster",
@@ -138,6 +138,7 @@ function tvData() {
     "",
     "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
     "https://www.imdb.com/title/tt13058290",
+    "Record-shattering Korean girl band BLACKPINK tell their story — and detail the hard fought journey of the dreams and trials behind their meteoric rise",
   ]
   
   // Rick and Morty
