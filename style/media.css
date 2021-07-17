@@ -483,14 +483,30 @@
     
     height: 30px;
     width: 45px;
-    /* width: 10px; */
 
     background-color: #F5C518;
+    margin-right: 8px;
 }
 .imdb-icon{
     height: 30px;
     width: 30px;
     fill: black;
+}
+
+.tv-popup-ratings-text{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+    height: 30px;
+
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 15px;
+
+    /* background-color: #F5C518; */
 }
 
 
