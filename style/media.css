@@ -327,7 +327,7 @@
 
     width: 100vw;
     height: auto;
-    max-height: 100vh;
+    max-height: 90vh;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     /* border-radius: 40pt; */
@@ -344,8 +344,194 @@
 
     z-index: 4;
 }
+.tv-popup-close{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    /* -webkit-backdrop-filter: blur(25px); */
+    background-color: var(--dark-layer-1);
+    z-index: 1;
+    transition: all 0s;
+}
+.tv-popup-close:active{
+    opacity: 0.75;
+}
+
+
+
+
 
 .tv-popup-card{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    box-sizing: border-box;
+
+    position: relative;
+
+    vertical-align: top;
+    padding-bottom: 25px;
+
+    box-shadow: 0 0 50px var(--black-100);
+
+    overflow: hidden;
+}
+.tv-popup-poster{
+    width: 100%;
+    height: 56.25vw;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center center;
+    display: block;
+    position: relative;
+}
+.tv-popup-gradient{
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    display: flex;
+    position: relative;
+    top: 60%;
+
+    width: 100%;
+    height: 40%;
+    padding-left: 20px;
+}
+.tv-popup-title{
+    display: block;
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    position: relative;
+
+    height: clamp(0px, 100%, 500px);
+    width: clamp(0px, 60%, 300px);
+
+    /* height: clamp(50vw); */
+
+    /* width: 80vw; */
+    /* height: 30vw; */
+    /* margin-left: 10vw; */
+    /* margin-top: -15vw; */
+    /* margin-bottom: 5vw; */
+}
+.tv-popup-description{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 10px 20px;
+
+    width: 100vw;
+    /* max-width: 100px; */
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+
+
+
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    /* width: 100%;
+    height: 4vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    box-sizing: border-box;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+
+}
+.tv-popup-button-tray{
+    position: relative;
+    box-sizing: border-box;
+
+    padding-left: 20px;
+    padding-right: 0;
+    margin-top: 10px;
+
+    /* height: 60px; */
+    width: 100vw;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+.tv-popup-button-container{
+    vertical-align: top;
+    /* height: 50px; */
+    box-sizing: border-box;
+    padding: 15px 20px;
+
+    align-items: center;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 15px;
+    text-decoration: none;
+
+    margin-right: 20px;
+    position: relative;
+    transition: all 0.15s;
+    background-color: var(--black-20);
+    overflow: hidden;
+}
+.tv-popup-button-text{
+    display: flex;
+    position: relative;
+    left: 0px;
+    bottom: 0%;
+
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    box-sizing: border-box;
+    z-index: 2;
+
+    background-color: transparent;
+
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.25s;
+}
+
+
+.tv-popup-link{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    z-index: 3;
+
+    background-color: transparent;
+
+    transition: 0.25s;
+}
+.tv-popup-button-container:active{
+    opacity: 0.75;
+}
+
+
+
+/* .tv-popup-card{
     height: 100%;
     width: 100%;
     border-radius: inherit;
@@ -402,16 +588,6 @@
     margin-bottom: 5vw;
 }
 .tv-popup-description{
-
-    /* font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-
-    display: inline-block;
-
-    overflow: hidden;
-    text-overflow: ellipsis; */
-
     display: flex;
     font-size: 14px;
     font-weight: 400;
@@ -430,7 +606,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    /* background-color: violet; */
+
 }
 .tv-popup-button-tray{
     position: relative;
@@ -461,7 +637,6 @@
 
     z-index: 1;
 
-    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
 
     margin-right: 5vw;
     position: relative;
@@ -529,17 +704,6 @@
 
 .tv-popup-button-container:hover{
     scale: 0.95;
-
-    /* height: 47px;
-
-    margin-top: -1px;
-    margin-bottom: -1px; */
-    /* margin-left: -2px; */
-    /* margin-right: 8px; */
-
-    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
-    
-    /* transition: 0.25s; */
 }
 
 
@@ -582,7 +746,6 @@
         font-size: 1vw;
     
         justify-content: left;
-        /* align-items: center; */
     
         padding-left: 2.5vw;
         padding-right: 5vw;
@@ -625,438 +788,7 @@
 
 
 
-
-
-
-
-.book-popup-open{
-    /* top: 0vh; */
-    scale: 1;
-
-    opacity: 1;
-    /* -webkit-backdrop-filter: blur(15px); */
-}
-.book-popup-closed{
-    /* top: 2vh; */
-    pointer-events: none;
-    opacity: 0;
-    scale: 0.9;
-    /* -webkit-backdrop-filter: blur(15px); */
-
-}
-.book-popup-modal{
-    display: block;
-    position: relative;
-    align-self: flex-end;
-
-    width: 100vw;
-    height: auto;
-    max-height: 90vh;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    /* border-radius: 40pt; */
-    z-index: 5;
-    justify-self: center;
-    display: none;
-
-}
-.book-popup-tab{
-    display: block;
-    position: absolute;
-    justify-self: center;
-    /* height: 10px; */
-
-    /* margin-bottom: 2.5vw; */
-    /* margin-left: 40vw; */
-    width: 100%;
-    height: 100%;
-    /* background-color: #ff00ff33; */
-    /* border-radius: 10px; */
-    z-index: 4;
-}
-
-.book-popup-card{
-    height: 100%;
-    width: 100%;
-    border-radius: inherit;
-
-    padding: 5vw 5vw 0 5vw;
-    box-sizing: border-box;
-
-    position: relative;
-
-
-    vertical-align: top;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 5vw;
-
-    box-shadow: 0 0 30px var(--black-100);
-
-    overflow: hidden;
-}
-.book-popup-poster{
-    width: 100%;
-    height: 150vw;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: center center;
-    display: block;
-    position: relative;
-
-    border-radius: 30px;
-
-    /* background-color: greenyellow; */
-    /* border-radius: 0; */
-    /* box-shadow: 0 0 30px var(--black-60); */
-}
-.book-popup-button-tray{
-    position: relative;
-    box-sizing: border-box;
-
-    padding-left: 0;
-    padding-bottom: 5vw;
-    padding-top: 5vw;
-    padding-right: 0;
-
-    /* margin-left: -5vw; */
-    /* margin-right: -5vw; */
-
-
-
-    height: 25vw;
-    /* max-height: 110px; */
-    width: 100vw;
-
-
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
-}
-.book-popup-button-container{
-    height: 100%;
-    box-sizing: border-box;
-
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
-    overflow: hidden;
-    border-radius: 6vw;
-    text-decoration: none;
-
-    z-index: 1;
-
-    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
-
-    margin-right: 5vw;
-    position: relative;
-    transition: 0.25s;
-    width: 42.5vw;
-}
-.book-popup-text{
-    display: flex;
-    position: relative;
-    left: 0px;
-    bottom: 0%;
-
-    height: 100%;
-    width: 100%;
-    border-radius: inherit;
-    box-sizing: border-box;
-    z-index: 2;
-
-    background-color: transparent;
-
-    text-decoration: none;
-    align-items: center;
-
-    padding-left: 6vw;
-    padding-right: 6vw;
-    color: white;
-    font-size: 3.5vw;
-    font-weight: 500;
-
-    transition: 0.25s;
-}
-
-
-.book-popup-link{
-    display: flex;
-    position: relative;
-    left: 0px;
-    bottom: 100%;
-
-    height: 100%;
-    width: 100%;
-    border-radius: inherit;
-    z-index: 3;
-
-    background-color: transparent;
-
-    transition: 0.25s;
-}
-
-
-
-.book-popup-button-container:hover{
-    /* height: 47px;
-
-    margin-top: -1px;
-    margin-bottom: -1px; */
-    /* margin-left: -2px; */
-    /* margin-right: 8px; */
-
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-    
-    transition: 0.25s;
-}
-
-
-
-@media(min-width: 450px){    
-
-    .book-popup-modal{
-        display: block;
-        position: relative;
-        align-self: flex-end;
-    
-        width: 80vw;
-
-        height: auto;
-        max-height: 90vh;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        /* border-radius: 40pt; */
-        z-index: 5;
-        /* overflow: hidden; */
-    }
-    .book-popup-tab{
-        display: block;
-        position: absolute;
-        justify-self: center;
-        /* height: 10px; */
-    
-        /* margin-bottom: 2.5vw; */
-        /* margin-left: 40vw; */
-        width: 100%;
-        height: 100%;
-        /* background-color: #ff00ff33; */
-        /* border-radius: 10px; */
-        z-index: 4;
-    }
-    
-    .book-popup-card{
-        height: 100%;
-        width: 100%;
-        border-radius: inherit;
-    
-        padding: 0vw;
-        box-sizing: border-box;
-    
-        position: relative;
-    
-    
-        vertical-align: top;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        padding-bottom: 20px;
-    
-        box-shadow: 0 0 30px var(--black-100);
-    
-        overflow: hidden;
-    }
-    .book-popup-poster{
-        width: 100%;
-        height: 45vw;
-
-
-
-    
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-position: center center;
-        display: block;
-        position: relative;
-    
-        /* background-color: greenyellow; */
-        border-radius: 0;
-        /* box-shadow: 0 0 30px var(--black-60); */
-    }
-    .book-popup-gradient{
-        display: block !important;
-        position: relative;
-        top: 15vw;
-    
-        width: 100%;
-        height: 30vw;
-    
-        transition: 0.25s;
-        display: none;
-    }
-    .book-popup-title{
-        display: block;
-        background-size: contain;
-        background-position-x: left;
-        background-position-y: bottom;
-        background-repeat: no-repeat;
-        position: relative;
-    
-        width: 40vw;
-        /* height: 100px; */
-        height: 20vw;
-        margin-left: 5vw;
-        margin-top: -15vw;
-        margin-bottom: 1vw;
-        /* background-color: #000000; */
-    }
-    .book-popup-description{
-    
-        display: flex;
-        font-size: 1vw;
-        font-weight: 400;
-        color: #fff;
-        position: relative;
-    
-        justify-content: left;
-        align-items: center;
-    
-        width: 100%;
-        height: 4vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
-        box-sizing: border-box;
-    
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        /* background-color: violet; */
-    }
-    .book-popup-button-tray{
-        position: relative;
-        box-sizing: border-box;
-    
-        padding-left: 5vw;
-        padding-bottom: 0px;
-        padding-top: 10px;
-        padding-right: 0;
-    
-        /* margin-left: -5vw; */
-        /* margin-right: -5vw; */
-    
-    
-    
-        height: 60px;
-        /* max-height: 110px; */
-        width: 100%;
-    
-    
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        scroll-snap-type: x mandatory;
-    }
-    .book-popup-button-container{
-        height: 100%;
-        box-sizing: border-box;
-    
-        align-items: center;
-        display: inline-block;
-        overflow: hidden;
-        border-radius: 20px;
-        text-decoration: none;
-    
-        z-index: 1;
-    
-        /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
-    
-        margin-right: 20px;
-        position: relative;
-        transition: 0.25s;
-    }
-    .book-popup-icon{
-        fill: #fff;
-        height: 14px;
-        width: 14px;
-        /* margin-top: 14px;
-        margin-left: 20px; */
-    
-        /* background: blue; */
-        position: absolute;
-        top: 18px;
-        left: 18px;
-        /* bottom: 80px; */
-        transition: 0.25s;
-    }
-    .book-popup-text-with-icon{
-        margin-left: 14px;
-    }
-    
-    .book-popup-text{
-        display: flex;
-        position: relative;
-        left: 0px;
-        bottom: 0%;
-    
-        height: 100%;
-        width: 100%;
-        border-radius: inherit;
-        box-sizing: border-box;
-        z-index: 2;
-    
-        background-color: transparent;
-    
-        text-decoration: none;
-        align-items: center;
-    
-        padding-left: 25px;
-        padding-right: 25px;
-        color: white;
-        font-size: 14px;
-        font-weight: 500;
-    
-        transition: 0.25s;
-    }
-    
-    
-    /* .book-popup-link{
-        display: flex;
-        position: relative;
-        left: 0px;
-        bottom: 100%;
-    
-        height: 100%;
-        width: 100%;
-        border-radius: inherit;
-        z-index: 3;
-    
-        background-color: transparent;
-    
-        transition: 0.25s;
-    } */
-    
-    
-    
-    .book-popup-button-container:hover{
-        /* height: 47px;
-    
-        margin-top: -1px;
-        margin-bottom: -1px; */
-        /* margin-left: -2px; */
-        /* margin-right: 8px; */
-    
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-        
-        transition: 0.25s;
-    }
-
-
-
-
-}
+ */
 
 
 @media screen and (prefers-color-scheme: light) {
@@ -1094,10 +826,6 @@
         bottom: 10px;
         left: 10px;
     }
-
-
-
-
     .book-card{
         height: calc((100vw - 50px) * (3 / 4));
         width: calc((100vw - 50px) / 2);
@@ -1115,5 +843,8 @@
     }
     
 
+    .tv-popup-play{
+        width: calc(100vw - 40px);
+    }
 
 }
