@@ -83,7 +83,7 @@ function tvData() {
     "manifest-poster",
     "manifest-gradient",
     "manifest-title",
-    "Drama • Mystery • 3 Seasons • 2018 - 2021",
+    "Drama &#149 Mystery &#149 3 Seasons &#149 2018 - 2021",
     "https://www.hulu.com/series/manifest-a1e5ed46-2704-431e-94b0-9aea1560c712",
     "hulu-green",
     "Watch on Hulu",
@@ -614,7 +614,7 @@ function popupTVHide(){
   
 function tvPopup(n){
   showsAll = tvData()
-  // console.log(showsAll[n])
+  console.log(showsAll[n])
 
   var cardClass = "tv-popup-card ";
   var posterClass = "tv-popup-poster ";
@@ -627,12 +627,12 @@ function tvPopup(n){
   document.getElementById("grad").className =           gradientClass.concat(showsAll[n][2]);
   document.getElementById("title").className =             titleClass.concat(showsAll[n][3]);
   document.getElementById("desc").innerHTML =                                showsAll[n][4];
-  document.getElementById("link").href =                                     showsAll[n][5];
-  document.getElementById("serviceGradient").className = serviceClass.concat(showsAll[n][6]);
+  document.getElementById("tv-popup-link").href =                                     showsAll[n][5];
+  // document.getElementById("serviceGradient").className = serviceClass.concat(showsAll[n][6]);
   document.getElementById("service").innerHTML =                             showsAll[n][7];
-  document.getElementById("tv-time").href =                                  showsAll[n][8];
-  document.getElementById("reelgood").href =                                 showsAll[n][9];
-  document.getElementById("imdb").href =                                     showsAll[n][10];
+  document.getElementById("tv-popup-tv-time").href =                                  showsAll[n][8];
+  document.getElementById("tv-popup-reelgood").href =                                 showsAll[n][9];
+  document.getElementById("tv-popup-imdb").href =                                     showsAll[n][10];
 }
 
 function podData() {
