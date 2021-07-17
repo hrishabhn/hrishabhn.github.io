@@ -410,10 +410,10 @@
 }
 
 .manifest-solid{
-    background-color: #FE9852;
+    background-color: #504A6A;
 }
 .manifest-gradient{
-    background: linear-gradient(#00000000,#FE9852);
+    background: linear-gradient(#00000000,#504A6A);
 }
 .manifest-poster{
     background-image: url('../TV/background/manifest.webp');
