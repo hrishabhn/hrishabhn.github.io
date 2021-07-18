@@ -166,7 +166,7 @@
     display: flex;
     position: relative;
 
-    height: 40px;
+    height: 30px;
     width: 100%;
     
     padding-left: 20px;
@@ -175,7 +175,7 @@
     overflow: hidden;
     /* box-sizing: border-box; */
 
-    z-index: 50;
+    /* z-index: 50; */
 
     align-content: flex-end;
     font-weight: 500;
@@ -259,6 +259,37 @@
     align-items: center;
     font-size: 40px;
     font-weight: 300;
+}
+
+
+
+.bus-popup-open{
+    scale: 1;
+    opacity: 1;
+}
+.bus-popup-closed{
+    /* top: 2vh; */
+    pointer-events: none;
+    opacity: 0;
+    scale: 0.9;
+}
+.bus-popup-modal{
+    display: block;
+    position: relative;
+    align-self: flex-end;
+
+    width: 100vw;
+    max-width: 800px;
+    /* height: 100vh; */
+    /* max-height: 90vh; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* border-radius: 40pt; */
+    padding: 25px 0px;
+    z-index: 5;
+    justify-self: center;
+    background-color: var(--dark-layer-1);
+    color: var(--light-layer-0);
 }
 
 .bus-widget-container{
