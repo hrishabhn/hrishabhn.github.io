@@ -107,7 +107,7 @@ function tvData() {
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/75805",
-    "",
+    "8.28",
     "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
     "90",
     "https://www.imdb.com/title/tt0472954",
@@ -126,7 +126,7 @@ function tvData() {
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/357888",
-    "",
+    "8.98",
     "https://reelgood.com/show/love-death-robots-2019",
     "86",
     "https://www.imdb.com/title/tt9561862",
@@ -144,7 +144,7 @@ function tvData() {
     "https://www.netflix.com/title/81106901",
     "netflix",
     "Watch on Netflix",
-    "https://www.tvtime.com/en/show/275274",
+    "",
     "",
     "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
     "63",
@@ -230,83 +230,83 @@ function tvData() {
   //   "https://www.imdb.com/title/tt0121955",
   // ]
   
-  // Dave
-  show12 = [
-    "dave-solid",
-    "dave-poster",
-    "dave-gradient",
-    "dave-title",
-    "Comedy &#149 2 Seasons &#149 2020 - 2021",
-    "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
-    "hulu-green",
-    "Watch on Hulu",
-    "https://www.tvtime.com/en/show/354905",
-    "",
-    "https://reelgood.com/show/dave-2020",
-    "",
-    "https://www.imdb.com/title/tt8531222",
-    "",
-    "",
-  ]
+  // // Dave
+  // show12 = [
+  //   "dave-solid",
+  //   "dave-poster",
+  //   "dave-gradient",
+  //   "dave-title",
+  //   "Comedy &#149 2 Seasons &#149 2020 - 2021",
+  //   "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
+  //   "hulu-green",
+  //   "Watch on Hulu",
+  //   "https://www.tvtime.com/en/show/354905",
+  //   "",
+  //   "https://reelgood.com/show/dave-2020",
+  //   "",
+  //   "https://www.imdb.com/title/tt8531222",
+  //   "",
+  //   "",
+  // ]
   
   
   
-  // New girl
-  show14 = [
-    "newgirl-solid",
-    "newgirl-poster",
-    "newgirl-gradient",
-    "newgirl-title",
-    "Comedy &#149 7 Seasons &#149 2011 - 2018",
-    "https://www.netflix.com/title/70196145",
-    "netflix",
-    "Watch on Netflix",
-    "https://www.tvtime.com/en/show/248682",
-    "",
-    "https://reelgood.com/show/new-girl-2011",
-    "",
-    "https://www.imdb.com/title/tt1826940",
-    "",
-    "",
-  ]
+  // // New girl
+  // show14 = [
+  //   "newgirl-solid",
+  //   "newgirl-poster",
+  //   "newgirl-gradient",
+  //   "newgirl-title",
+  //   "Comedy &#149 7 Seasons &#149 2011 - 2018",
+  //   "https://www.netflix.com/title/70196145",
+  //   "netflix",
+  //   "Watch on Netflix",
+  //   "https://www.tvtime.com/en/show/248682",
+  //   "",
+  //   "https://reelgood.com/show/new-girl-2011",
+  //   "",
+  //   "https://www.imdb.com/title/tt1826940",
+  //   "",
+  //   "",
+  // ]
   
-  // Fresh prince
-  show15 = [
-    "fresh-solid",
-    "fresh-poster",
-    "fresh-gradient",
-    "fresh-title",
-    "Comedy &#149 6 Seasons &#149 1990 - 1996",
-    "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
-    "hbo",
-    "Watch on HBO Max",
-    "https://www.tvtime.com/en/show/76738",
-    "",
-    "https://reelgood.com/show/the-fresh-prince-of-bel-air-1990",
-    "",
-    "https://www.imdb.com/title/tt0098800",
-    "",
-    "",
-  ]
+  // // Fresh prince
+  // show15 = [
+  //   "fresh-solid",
+  //   "fresh-poster",
+  //   "fresh-gradient",
+  //   "fresh-title",
+  //   "Comedy &#149 6 Seasons &#149 1990 - 1996",
+  //   "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
+  //   "hbo",
+  //   "Watch on HBO Max",
+  //   "https://www.tvtime.com/en/show/76738",
+  //   "",
+  //   "https://reelgood.com/show/the-fresh-prince-of-bel-air-1990",
+  //   "",
+  //   "https://www.imdb.com/title/tt0098800",
+  //   "",
+  //   "",
+  // ]
   
-  // Last week tonight
-  show16 = [
-    "last-solid",
-    "last-poster",
-    "last-gradient",
-    "last-title",
-    "Talk Show &#149 8 Seasons &#149 2020 - Present",
-    "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
-    "hbo",
-    "Watch on HBO Max",
-    "https://www.tvtime.com/en/show/278518",
-    "",
-    "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
-    "",
-    "https://www.imdb.com/title/tt3530232",
-    "",
-    "",
-  ]
+  // // Last week tonight
+  // show16 = [
+  //   "last-solid",
+  //   "last-poster",
+  //   "last-gradient",
+  //   "last-title",
+  //   "Talk Show &#149 8 Seasons &#149 2020 - Present",
+  //   "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
+  //   "hbo",
+  //   "Watch on HBO Max",
+  //   "https://www.tvtime.com/en/show/278518",
+  //   "",
+  //   "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
+  //   "",
+  //   "https://www.imdb.com/title/tt3530232",
+  //   "",
+  //   "",
+  // ]
   
   // Twin peaks
   show17 = [
