@@ -355,16 +355,17 @@
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    /* -webkit-backdrop-filter: blur(25px); */
-    background-color: var(--dark-layer-1);
+    -webkit-backdrop-filter: blur(25px);
+    background-color: var(--black-40);
     z-index: 1;
     transition: all 0s;
+    fill: var(--white-80);
 }
 .tv-popup-close:active{
     opacity: 0.75;
 }
 .tv-popup-close-icon{
-    fill: var(--white-80);
+    /* fill: var(--white-80); */
     height: 40%;
     width: 40%;
 }
@@ -410,7 +411,7 @@
 
     width: 100%;
     height: 40%;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 .tv-popup-title{
     display: block;
@@ -438,7 +439,7 @@
     position: relative;
 
     box-sizing: border-box;
-    padding: 10px 20px;
+    padding: 10px 40px;
 
     width: 100vw;
     /* max-width: 100px; */
@@ -465,7 +466,7 @@
 .tv-popup-ratings-container{
     display: flex;
     position: relative;
-    margin-left: 20px;
+    margin-left: 40px;
 
     /* height: 100px; */
     /* width: 100px; */
@@ -548,7 +549,7 @@
     position: relative;
     box-sizing: border-box;
 
-    padding-left: 20px;
+    padding-left: 40px;
     padding-right: 0;
     margin: 10px 0 20px;
 
@@ -624,7 +625,7 @@
 .tv-popup-summary{
     display: block;
     /* padding-left: 20px/; */
-    padding: 5px 20px 20px;
+    padding: 10px 40px 20px;
     color: var(--light-layer-0);
     font-size: 14px;
     font-weight: 400;
@@ -904,6 +905,10 @@
         color: var(--black-80);
     }
 
+    .tv-popup-close{
+        background-color: var(--white-40);
+        fill: var(--black-80);
+    }
 }
 
 
@@ -924,8 +929,8 @@
         width: 300px;
     }
     .tv-card-title{
-        bottom: 10px;
-        left: 10px;
+        bottom: 12.5px;
+        left: 12.5px;
     }
     .book-card{
         height: calc((100vw - 50px) * (3 / 4));
@@ -942,6 +947,26 @@
     .tv-card:active{
         scale: 1;
     }
+
+    .tv-popup-gradient{
+        padding-left: 20px;
+    }
+    .tv-popup-description{
+        padding: 10px 20px;
+    }
+    .tv-popup-ratings-container{
+        margin-left: 20px;
+    }
+    .tv-popup-button-tray{
+        padding-left: 20px;
+    }
+    .tv-popup-summary{
+        padding: 5px 20px 20px;
+    }
+
+
+
+
     
 
     .tv-popup-play{
