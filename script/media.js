@@ -183,13 +183,13 @@ function tvData() {
     "Action & Adventure &#149 Fantasy &#149 1 Season &#149 2021 - Present",
     "",
     "disney",
-    "Watch on Disney+",
+    "Watch on",
     "https://www.tvtime.com/en/show/362472",
-    "99%",
+    "9.74",
     "https://reelgood.com/show/loki-2021",
-    "8.7",
-    "https://www.imdb.com/title/tt9140554",
     "95",
+    "https://www.imdb.com/title/tt9140554",
+    "8.7",
     "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
   ]
   
