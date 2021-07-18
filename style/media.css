@@ -486,7 +486,7 @@
     
     margin-right: 5px;
 
-    transition: all 0.15s;
+    transition: all 0.1s;
 
     background-color: #00000000 !important;
     border-style: solid;
@@ -496,7 +496,7 @@
 }
 .tv-popup-ratings-container:active{
     opacity: 0.75;
-    scale: 0.9;
+    scale: 0.95;
 }
 .imdb-container{
     width: 45px;
@@ -527,7 +527,7 @@
     height: 100%;
 
     color: var(--white-80);
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     margin-right: 15px;
 
