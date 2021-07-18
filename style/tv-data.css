@@ -629,3 +629,29 @@
 .munich-title{
     background-image: url('../TV/title/munich.png');
 }
+
+.silence-solid{
+    background-color: #848186;
+}
+.silence-gradient{
+    background: linear-gradient(#00000000,#848186);
+}
+.silence-poster{
+    background-image: url('../TV/background/silence.jpg');
+}
+.silence-title{
+    background-image: url('../TV/title/silence.png');
+}
+
+.butch-solid{
+    background-color: #ac8541;
+}
+.butch-gradient{
+    background: linear-gradient(#00000000,#ac8541);
+}
+.butch-poster{
+    background-image: url('../TV/background/butch.jpg');
+}
+.butch-title{
+    background-image: url('../TV/title/butch.png');
+}
