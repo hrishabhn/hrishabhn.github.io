@@ -494,9 +494,13 @@
     border-color: var(--white-40);
     fill: var(--white-60);
 }
+/* .tv-popup-ratings-container:hover{
+    border-color: var(--white-100);
+    fill: var(--white-100);
+} */
 .tv-popup-ratings-container:active{
-    opacity: 0.5;
-    /* scale: 0.95; */
+    border-color: var(--white-20);
+    fill: var(--white-40);
 }
 .imdb-container{
     width: 45px;
@@ -507,7 +511,13 @@
     width: 30px;
     /* fill: black; */
 }
-
+.tv-time-container{
+    width: 25px;
+}
+.tv-time-icon{
+    height: 20px;
+    width: 20px;
+}
 .reelgood-container{
     width: 70px;
     /* background-color: #00dc89; */
