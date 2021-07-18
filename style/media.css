@@ -485,12 +485,42 @@
     width: 45px;
 
     background-color: #F5C518;
-    margin-right: 8px;
+    margin-right: 5px;
+
+    transition: all 0.15s;
+}
+.imdb-container:active{
+    opacity: 0.75;
 }
 .imdb-icon{
     height: 30px;
     width: 30px;
     fill: black;
+}
+
+.reelgood-container{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    
+    height: 30px;
+    width: 70px;
+
+    background-color: #00dc89;
+    margin-right: 5px;
+
+    transition: all 0.15s;
+}
+.reelgood-container:active{
+    opacity: 0.75;
+}
+.reelgood-icon{
+    height: 50px;
+    width: 50px;
+    fill: white;
 }
 
 .tv-popup-ratings-text{
@@ -520,7 +550,7 @@
 
     padding-left: 20px;
     padding-right: 0;
-    margin-top: 10px;
+    margin: 10px 0 20px;
 
     /* height: 60px; */
     width: 100vw;
@@ -594,7 +624,7 @@
 .tv-popup-summary{
     display: block;
     /* padding-left: 20px/; */
-    padding: 20px;
+    padding: 5px 20px 20px;
     color: var(--light-layer-0);
     font-size: 14px;
     font-weight: 400;
@@ -890,8 +920,8 @@
     .tv-card{
         border-radius: 10px;
 
-        height: 140px;
-        width: 250px;
+        height: 170px;
+        width: 300px;
     }
     .tv-card-title{
         bottom: 10px;
