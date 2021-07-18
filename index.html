@@ -145,6 +145,77 @@
         </div>
 
     </div>
+
+    <div id="bus-popup-modal" class="modal bus-popup-open">
+        <div class="tv-popup-tab" onclick="popupBusHide()"></div>
+        <div class="bus-popup-modal">
+            <div class="bus-icon-container">
+                <svg id="bus-icon" class="bus-icon bus-icon-hide" xmlns="http://www.w3.org/2000/svg" viewBox="72.34278106689453 89.03302764892578 350.6231994628906 350.6231994628906"><path d="M172.477 389.589c0-13.855-5.589-26.371-14.642-35.425-9.053-9.053-21.57-14.642-35.425-14.642-27.632-.079-50.146 22.436-50.066 50.066 0 13.855 5.59 26.37 14.643 35.423s21.569 14.642 35.423 14.642c27.631.082 50.146-22.433 50.067-50.064zM389.589 422.967c-18.421 0-33.377-14.957-33.378-33.378.079-64.472-26.213-122.883-68.566-165.235s-100.763-68.645-165.235-68.566c-18.42 0-33.377-14.957-33.378-33.378 0-18.42 14.957-33.377 33.377-33.377 82.894.079 158.072 33.692 212.467 88.088s88.009 129.575 88.088 212.467c.003 18.422-14.954 33.379-33.375 33.379z"></path><path d="M256 423.046c-18.42 0-33.456-15.035-33.456-33.456 0-27.553-11.178-52.586-29.363-70.77-18.105-18.105-43.139-29.284-70.77-29.363-18.421 0-33.456-15.036-33.456-33.456s15.035-33.456 33.456-33.456c46.052.079 87.773 18.814 118.002 49.043s48.964 71.951 49.043 118.002c0 18.421-15.036 33.456-33.456 33.456zM122.411 439.656c-13.855 0-26.37-5.59-35.423-14.642l70.849-70.849c9.053 9.053 14.642 21.57 14.642 35.425.077 27.63-22.438 50.145-50.068 50.066z"></path><path d="M256 423.046c-18.42 0-33.456-15.035-33.456-33.456 0-27.553-11.178-52.586-29.363-70.77l47.232-47.232c30.229 30.229 48.964 71.951 49.043 118.002 0 18.421-15.036 33.456-33.456 33.456zM389.589 422.967c-18.421 0-33.377-14.957-33.378-33.378.079-64.472-26.213-122.883-68.566-165.235l47.232-47.232c54.396 54.396 88.009 129.575 88.088 212.467.002 18.421-14.955 33.378-33.376 33.378z"></path></svg>
+            </div>
+            
+            
+            <div id="bus-card-1" class="bus-card hidden-always">
+                <div class="bus-info-card">
+                    <div class="bus-info">
+                        <div class="bus-dest">
+                            <p id="bus-dest-1">Destination</p>
+                        </div>
+                        <div class="bus-stop">
+                            <p id="bus-stop-1">Bus Stop</p>
+                        </div>
+                    </div>
+                    <div class="bus-eta">
+                        <p id="bus-eta-1">--</p>
+                    </div>
+                </div>
+                <div class="bus-card-line"></div>
+            </div><div id="bus-card-2" class="bus-card hidden-always">
+                <div class="bus-info-card">
+                    <div class="bus-info">
+                        <div class="bus-dest">
+                            <p id="bus-dest-2">--</p>
+                        </div>
+                        <div class="bus-stop">
+                            <p id="bus-stop-2">--</p>
+                        </div>
+                    </div>
+                    <div class="bus-eta">
+                        <p id="bus-eta-2">--</p>
+                    </div>
+                </div>
+                <div class="bus-card-line"></div>
+            </div><div id="bus-card-3" class="bus-card hidden-always">
+                <div class="bus-info-card">
+                    <div class="bus-info">
+                        <div class="bus-dest">
+                            <p id="bus-dest-3">--</p>
+                        </div>
+                        <div class="bus-stop">
+                            <p id="bus-stop-3">--</p>
+                        </div>
+                    </div>
+                    <div class="bus-eta">
+                        <p id="bus-eta-3">--</p>
+                    </div>
+                </div>
+                <div class="bus-card-line"></div>
+            </div>
+            <div class="widget-text-box" onclick="busTray('All')">
+                <div class="widget-text">
+                    Buses
+                </div>
+            </div>
+            <div id="bus-number-tray">
+                <!-- <div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,'NWFB','970x','002231','001629')">970x</div>
+                <div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,'KMB','960','AD97EA183A25102C')">960</div>
+                <div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,'KMB','961','AD97EA183A25102C','490F1A302D8C32FC','0F5CEC693FD6EB66')">961</div>
+                <div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget(4,'CTB','43m','002665','002314')">43m</div>
+                <div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,'NWFB','971','001629')">971</div>
+                <div id="bus-route-6" class="bus-number nwfb-route" onclick="cityBusWidget(6,'NWFB','904','001629')">904</div>
+                <div id="bus-route-7" class="bus-number kmb-route" onclick="kmbWidget(7,'KMB','904','0F5CEC693FD6EB66')">904</div> -->
+            </div>
+        </div>
+    </div>
     
     <!-- <div class="notch-box"></div> -->
 
@@ -239,24 +310,18 @@
                     </div>
                 </div>
                 
-            </a><a id="bus-widget" class="bus-widget-container">
+            </a>
+            
+            <a id="bus-widget" class="bus-widget-container">
                 <div class="bus-icon-container">
                     <svg id="bus-icon" class="bus-icon bus-icon-hide" xmlns="http://www.w3.org/2000/svg" viewBox="72.34278106689453 89.03302764892578 350.6231994628906 350.6231994628906"><path d="M172.477 389.589c0-13.855-5.589-26.371-14.642-35.425-9.053-9.053-21.57-14.642-35.425-14.642-27.632-.079-50.146 22.436-50.066 50.066 0 13.855 5.59 26.37 14.643 35.423s21.569 14.642 35.423 14.642c27.631.082 50.146-22.433 50.067-50.064zM389.589 422.967c-18.421 0-33.377-14.957-33.378-33.378.079-64.472-26.213-122.883-68.566-165.235s-100.763-68.645-165.235-68.566c-18.42 0-33.377-14.957-33.378-33.378 0-18.42 14.957-33.377 33.377-33.377 82.894.079 158.072 33.692 212.467 88.088s88.009 129.575 88.088 212.467c.003 18.422-14.954 33.379-33.375 33.379z"></path><path d="M256 423.046c-18.42 0-33.456-15.035-33.456-33.456 0-27.553-11.178-52.586-29.363-70.77-18.105-18.105-43.139-29.284-70.77-29.363-18.421 0-33.456-15.036-33.456-33.456s15.035-33.456 33.456-33.456c46.052.079 87.773 18.814 118.002 49.043s48.964 71.951 49.043 118.002c0 18.421-15.036 33.456-33.456 33.456zM122.411 439.656c-13.855 0-26.37-5.59-35.423-14.642l70.849-70.849c9.053 9.053 14.642 21.57 14.642 35.425.077 27.63-22.438 50.145-50.068 50.066z"></path><path d="M256 423.046c-18.42 0-33.456-15.035-33.456-33.456 0-27.553-11.178-52.586-29.363-70.77l47.232-47.232c30.229 30.229 48.964 71.951 49.043 118.002 0 18.421-15.036 33.456-33.456 33.456zM389.589 422.967c-18.421 0-33.377-14.957-33.378-33.378.079-64.472-26.213-122.883-68.566-165.235l47.232-47.232c54.396 54.396 88.009 129.575 88.088 212.467.002 18.421-14.955 33.378-33.376 33.378z"></path></svg>
                 </div>
-                <div class="widget-text-box" onclick="busTray('All')">
+                <div class="widget-text-box" onclick="popupBusShow('All')">
                     <div class="widget-text">
                         Buses
                     </div>
                 </div>
-                <div id="bus-number-tray">
-                    <!-- <div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,'NWFB','970x','002231','001629')">970x</div>
-                    <div id="bus-route-2" class="bus-number kmb-route" onclick="kmbWidget(2,'KMB','960','AD97EA183A25102C')">960</div>
-                    <div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,'KMB','961','AD97EA183A25102C','490F1A302D8C32FC','0F5CEC693FD6EB66')">961</div>
-                    <div id="bus-route-4" class="bus-number citybus-route" onclick="cityBusWidget(4,'CTB','43m','002665','002314')">43m</div>
-                    <div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,'NWFB','971','001629')">971</div>
-                    <div id="bus-route-6" class="bus-number nwfb-route" onclick="cityBusWidget(6,'NWFB','904','001629')">904</div>
-                    <div id="bus-route-7" class="bus-number kmb-route" onclick="kmbWidget(7,'KMB','904','0F5CEC693FD6EB66')">904</div> -->
-                </div>
+                <div id="bus-number-tray"></div>
                 <div id="bus-card-1" class="bus-card hidden-always">
                     <div class="bus-card-line"></div>
                     <div class="bus-info-card">
@@ -303,7 +368,9 @@
                         </div>
                     </div>
                 </div>
-            </a><div id="smarthome-card" class="content-container smart-card-hide">
+            </a>
+            
+            <div id="smarthome-card" class="content-container smart-card-hide">
                 <div class="content-image smarthome-image"></div>
                 <div class="content-text-box">
                     <div class="content-text">
