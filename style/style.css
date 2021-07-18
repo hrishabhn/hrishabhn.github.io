@@ -58,7 +58,7 @@
     --mobile-width: calc(100vw - 30px);
 
     --shaded-light: 0 10px 30px 0px var(--black-20);
-    --shaded-dark:  0 10px 30px 0px var(--black-60);
+    --shaded-dark:  0 10px 30px 0px var(--black-40);
 
     --element-light: 0 5px 20px -5px var(--black-20);
     --element-mid:   0 5px 20px 0px var(--black-60);
