@@ -603,3 +603,16 @@
 .blackpink-title{
     background-image: url('../TV/title/blackpink.png');
 }
+
+.lost-solid{
+    background-color: #6a5828;
+}
+.lost-gradient{
+    background: linear-gradient(#00000000,#6a5828);
+}
+.lost-poster{
+    background-image: url('../TV/background/lost.webp');
+}
+.lost-title{
+    background-image: url('../TV/title/lost.png');
+}
