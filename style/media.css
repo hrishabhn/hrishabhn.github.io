@@ -495,8 +495,8 @@
     fill: var(--white-60);
 }
 .tv-popup-ratings-container:active{
-    opacity: 0.75;
-    scale: 0.95;
+    opacity: 0.5;
+    /* scale: 0.95; */
 }
 .imdb-container{
     width: 45px;
