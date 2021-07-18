@@ -463,8 +463,9 @@
     text-overflow: ellipsis; */
 
 }
-.tv-popup-ratings-container{
+.tv-popup-ratings-tray{
     display: flex;
+    align-items: center;
     position: relative;
     margin-left: 40px;
 
@@ -474,54 +475,47 @@
     /* background-color: violet; */
 
 }
-.imdb-container{
+.tv-popup-ratings-container{
     display: inline-flex;
     position: relative;
     justify-content: center;
     align-items: center;
 
     border-radius: 10px;
-    
     height: 30px;
-    width: 45px;
-
-    background-color: #F5C518;
+    
     margin-right: 5px;
 
     transition: all 0.15s;
+
+    background-color: #00000000 !important;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--white-40);
+    fill: var(--white-60);
 }
-.imdb-container:active{
+.tv-popup-ratings-container:active{
     opacity: 0.75;
+    scale: 0.9;
+}
+.imdb-container{
+    width: 45px;
+    background-color: #F5C518;
 }
 .imdb-icon{
     height: 30px;
     width: 30px;
-    fill: black;
+    /* fill: black; */
 }
 
 .reelgood-container{
-    display: inline-flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 10px;
-    
-    height: 30px;
     width: 70px;
-
     background-color: #00dc89;
-    margin-right: 5px;
-
-    transition: all 0.15s;
-}
-.reelgood-container:active{
-    opacity: 0.75;
 }
 .reelgood-icon{
-    height: 50px;
-    width: 50px;
-    fill: white;
+    height: 60px;
+    width: 60px;
+    /* fill: var(--white-100); */
 }
 
 .tv-popup-ratings-text{
@@ -530,9 +524,9 @@
     justify-content: center;
     align-items: center;
     
-    height: 30px;
+    height: 100%;
 
-    color: white;
+    color: var(--white-80);
     font-size: 12px;
     font-weight: 600;
     margin-right: 15px;
@@ -970,7 +964,7 @@
     .tv-popup-description{
         padding: 10px 20px;
     }
-    .tv-popup-ratings-container{
+    .tv-popup-ratings-tray{
         margin-left: 20px;
     }
     .tv-popup-button-tray{
