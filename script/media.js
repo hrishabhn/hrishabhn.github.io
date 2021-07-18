@@ -781,7 +781,7 @@ var tvModal = document.getElementById("tv-popup-modal");
 var bgBlur = document.getElementById("background-blur");
 // var fgBlur = document.getElementById("foreground-blur");
 
-var bgWrap = document.getElementById("background-wrapper");
+// var bgWrap = document.getElementById("background-wrapper");
   
 function popupTVPopulate(n){
   tvPopup(n);
