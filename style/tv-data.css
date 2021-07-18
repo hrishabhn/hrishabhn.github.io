@@ -616,3 +616,16 @@
 .lost-title{
     background-image: url('../TV/title/lost.png');
 }
+
+.munich-solid{
+    background-color: #33302a;
+}
+.munich-gradient{
+    background: linear-gradient(#00000000,#33302a);
+}
+.munich-poster{
+    background-image: url('../TV/background/munich.jpg');
+}
+.munich-title{
+    background-image: url('../TV/title/munich.png');
+}
