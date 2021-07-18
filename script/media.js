@@ -144,6 +144,7 @@ function tvData() {
     "https://www.netflix.com/title/81106901",
     "netflix",
     "Watch on Netflix",
+    "https://www.tvtime.com/en/show/275274",
     "",
     "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
     "63",
@@ -796,7 +797,16 @@ function popupTVHide(){
 function tvPopup(n){
   showsAll = tvData()
   // console.log(showsAll[n])
-  
+
+  if (showsAll[n][9]){
+    showsAll[n][9] = showsAll[n][9] + "/10"
+  }
+  if (showsAll[n][11]){
+    showsAll[n][11] = showsAll[n][11] + "/100"
+  }
+  if (showsAll[n][13]){
+    showsAll[n][13] = showsAll[n][13] + "/10"
+  }
 
   var cardClass = "tv-popup-card ";
   var posterClass = "tv-popup-poster ";
@@ -813,11 +823,11 @@ function tvPopup(n){
   // document.getElementById("serviceGradient").className = serviceClass.concat(showsAll[n][6]);
   document.getElementById("service").innerHTML =                             showsAll[n][7];
   document.getElementById("tv-popup-tv-time").href =                         showsAll[n][8];
-  document.getElementById("tv-popup-tv-time-rating").innerHTML =             showsAll[n][9] + "/10";
+  document.getElementById("tv-popup-tv-time-rating").innerHTML =             showsAll[n][9];
   document.getElementById("tv-popup-reelgood").href =                        showsAll[n][10];
-  document.getElementById("tv-popup-reelgood-rating").innerHTML =            showsAll[n][11] + "/100";
+  document.getElementById("tv-popup-reelgood-rating").innerHTML =            showsAll[n][11];
   document.getElementById("tv-popup-imdb").href =                            showsAll[n][12];
-  document.getElementById("tv-popup-imdb-rating").innerHTML =                showsAll[n][13] + "/10";
+  document.getElementById("tv-popup-imdb-rating").innerHTML =                showsAll[n][13];
   document.getElementById("tv-popup-summary").innerHTML =                    showsAll[n][14];
 }
 
