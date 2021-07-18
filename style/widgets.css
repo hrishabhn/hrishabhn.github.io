@@ -281,7 +281,7 @@
 
     /* background-color: var(--black-40); */
     background-repeat: no-repeat;
-    background-image: url(../images/bus-night.jpg);
+    background-image: url(../images/bus.jpg);
     background-position-y: bottom;
     background-size: cover;
     transform-origin: bottom;
