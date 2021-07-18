@@ -83,8 +83,9 @@
 }
 
 .tv-card-gradient{
-    display: block;
+    display: flex;
     position: absolute;
+    vertical-align: bottom;
     bottom: 0px;
     /* vertical-align: bottom; */
 
