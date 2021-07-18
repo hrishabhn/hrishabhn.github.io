@@ -10,6 +10,10 @@ function getUserLocale() {
 
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
+
+        lat = 51.5
+        lon = 0
+
         // console.log(lat)
         // console.log(lon)
     
@@ -27,15 +31,19 @@ function getUserLocale() {
         const westHighway = (lat > 22.308) && (lat < 22.37) && (lon > 113.960) && (lon < 114.165);
         const tsimShaTsui = (lat > 22.292) && (lat < 22.303) && (lon > 114.165) && (lon < 114.177);
     
-    
+        const london = (lat > 51.2) && (lat < 51.7) && (lon > -0.5) && (lon < 0.3);
+
+
         // 22.273,114.121 top left
         // 22.252,114.135 borrom right
     
     
         var userLocale = "Hong Kong"
-    
         
-    
+        if (london) {
+            userLocale = "London (GGG Exclusive DLC)"
+        }
+
         if (pokFuLam) {
             userLocale = "Pok Fu Lam"
         }
