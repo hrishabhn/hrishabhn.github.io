@@ -122,7 +122,7 @@ function tvData() {
     "https://www.tvtime.com/en/show/357888",
     "https://reelgood.com/show/love-death-robots-2019",
     "https://www.imdb.com/title/tt9561862",
-    "Terrifying creatures, wicked surprises and dark comedy converge in this NSFW anthology of animated stories presented by Tim Miller and David Fincher.",
+    "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
   ]
   
   // blackpink
@@ -138,7 +138,7 @@ function tvData() {
     "",
     "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
     "https://www.imdb.com/title/tt13058290",
-    "Record-shattering Korean girl band BLACKPINK tell their story — and detail the hard fought journey of the dreams and trials behind their meteoric rise",
+    "Blackpink: Light Up the Sky is a 2020 documentary film directed by Caroline Suh, that tells the story of South Korean girl group Blackpink as bandmates and as individuals, and details their rise to fame.",
   ]
   
   // Rick and Morty
@@ -153,7 +153,8 @@ function tvData() {
     "Watch",
     "https://www.tvtime.com/en/show/275274",
     "https://reelgood.com/show/rick-and-morty-2013",
-    "https://www.imdb.com/title/tt2861424"
+    "https://www.imdb.com/title/tt2861424",
+    "After having been missing for nearly 20 years, Rick Sanchez suddenly arrives at daughter Beth's doorstep to move in with her and her family. Although Beth welcomes Rick into her home, her husband, Jerry, isn't as happy about the family reunion. Jerry is concerned about Rick, a sociopathic scientist, using the garage as his personal laboratory. In the lab, Rick works on a number of sci-fi gadgets, some of which could be considered dangerous. But that's not all Rick does that concerns Jerry. He also goes on adventures across the universe that often involve his grandchildren, Morty and Summer.",
   ]
   
   
@@ -170,25 +171,43 @@ function tvData() {
     "Watch on Disney+",
     "https://www.tvtime.com/en/show/362472",
     "https://reelgood.com/show/loki-2021",
-    "https://www.imdb.com/title/tt9140554"
+    "https://www.imdb.com/title/tt9140554",
+    "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
   ]
   
-  
-  
-  // South park
+  // Lost
   show11 = [
-    "southpark-solid",
-    "southpark-poster",
-    "southpark-gradient",
-    "southpark-title",
-    "Animation • Comedy • 24 Seasons 1997 - Present",
-    "https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series",
-    "hbo",
-    "Watch on HBO Max",
-    "https://www.tvtime.com/en/show/75897",
-    "https://reelgood.com/show/south-park-1997",
-    "https://www.imdb.com/title/tt0121955",
+    "lost-solid",
+    "lost-poster",
+    "lost-gradient",
+    "lost-title",
+    "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
+    "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
+    "hulu",
+    "Watch on Hulu",
+    "https://www.tvtime.com/en/show/73739",
+    "https://reelgood.com/show/lost-2004",
+    "https://www.imdb.com/title/tt0411008",
+    "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
   ]
+
+
+
+  
+  // // South park
+  // show11 = [
+  //   "southpark-solid",
+  //   "southpark-poster",
+  //   "southpark-gradient",
+  //   "southpark-title",
+  //   "Animation • Comedy • 24 Seasons 1997 - Present",
+  //   "https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series",
+  //   "hbo",
+  //   "Watch on HBO Max",
+  //   "https://www.tvtime.com/en/show/75897",
+  //   "https://reelgood.com/show/south-park-1997",
+  //   "https://www.imdb.com/title/tt0121955",
+  // ]
   
   // Dave
   show12 = [
