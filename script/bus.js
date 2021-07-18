@@ -477,3 +477,17 @@ function busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest) {
     busETA.innerHTML = etaAll;
     busStop.innerHTML = stop;
 }
+
+
+var busModal = document.getElementById("bus-popup-modal");
+var bgBlur = document.getElementById("background-blur");
+
+function popupBusShow(){
+  bgBlur.className = "background-blur background-blur-show";
+  busModal.className = "modal bus-popup-open";
+}
+
+function popupBusHide(){
+  bgBlur.className = "background-blur background-blur-hide";
+  busModal.className = "modal bus-popup-closed";
+}
