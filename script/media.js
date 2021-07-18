@@ -407,6 +407,43 @@ function tvData() {
     "A terrorist organisation kills eleven Israeli athletes at the 1972 Munich Olympics. However, a team of five men, headed by Avner Kaufman, is assigned the task of killing the terrorists as revenge.",
   ]
 
+  show22 = [
+    "silence-solid",
+    "silence-poster",
+    "silence-gradient",
+    "silence-title",
+    "Crime &#149 Drama &#149 Thriller &#149 1991",
+    "",
+    "black-gradient",
+    "Watch",
+    "",
+    "",
+    "https://reelgood.com/movie/the-silence-of-the-lambs-1991",
+    "88",
+    "https://www.imdb.com/title/tt0102926",
+    "8.6",
+    "Clarice Starling, an FBI agent, seeks help from Hannibal Lecter, a psychopathic serial killer and former psychiatrist, in order to apprehend another serial killer who has been claiming female victims.",
+  ]
+
+  show23 = [
+    "butch-solid",
+    "butch-poster",
+    "butch-gradient",
+    "butch-title",
+    "Biography &#149 Crime &#149 Drama &#149 1969",
+    "",
+    "black-gradient",
+    "Watch",
+    "",
+    "",
+    "https://reelgood.com/movie/butch-cassidy-and-the-sundance-kid-1969",
+    "78",
+    "https://www.imdb.com/title/tt0064115",
+    "8.0",
+    "Butch Cassidy and the Sundance Kid are two free-spirited leaders of a criminal gang. When their plan of robbing a bank goes astray, they flee to Bolivia in an attempt to outdo the law in the country.",
+  ]
+
+
   show28 = [
     "earth-solid",
     "earth-poster",
