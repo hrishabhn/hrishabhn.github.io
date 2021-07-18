@@ -500,7 +500,7 @@
 } */
 .tv-popup-ratings-container:active{
     border-color: var(--white-20);
-    fill: var(--white-40);
+    fill: var(--white-20);
 }
 .imdb-container{
     width: 45px;
