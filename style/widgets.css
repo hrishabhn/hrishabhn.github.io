@@ -264,7 +264,7 @@
 
 .bus-blur{
     position: fixed;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
     width: 100vw;
     /* max-width: 800px; */
     /* left: calc((100vw - 800px) / 2); */
@@ -570,11 +570,9 @@
         fill: var(--dark-layer-1);
     }
 
-    .bus-blur{
-        background-image: url(../images/bus-day.jpeg);    
+    .bus-popup-modal{
+        background-color: var(--white-40);
     }
-
-
 
 
 
