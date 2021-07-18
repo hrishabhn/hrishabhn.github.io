@@ -362,7 +362,7 @@
     fill: var(--white-80);
 }
 .tv-popup-close:active{
-    opacity: 0.75;
+    background-color: var(--black-10);
 }
 .tv-popup-close-icon{
     /* fill: var(--white-80); */
