@@ -88,8 +88,11 @@ function tvData() {
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/349271",
+    "",
     "https://reelgood.com/show/manifest-2018",
+    "81",
     "https://www.imdb.com/title/tt8421350",
+    "7.2",
     "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."
   ]
   
@@ -99,13 +102,16 @@ function tvData() {
     "always-poster",
     "always-gradient",
     "always-title",
-    "Comedy • 14 Seasons • 2005 - Present",
+    "Comedy &#149 14 Seasons &#149 2005 - Present",
     "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/75805",
+    "",
     "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+    "90",
     "https://www.imdb.com/title/tt0472954",
+    "8.8",
     "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
   ]
   
@@ -115,13 +121,16 @@ function tvData() {
     "ldr-poster",
     "ldr-gradient",
     "ldr-title",
-    "Animation • Sci-Fi • 2 Seasons • 2019 - Present",
+    "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
     "https://www.netflix.com/title/80174608",
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/357888",
+    "",
     "https://reelgood.com/show/love-death-robots-2019",
+    "86",
     "https://www.imdb.com/title/tt9561862",
+    "8.5",
     "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
   ]
   
@@ -131,13 +140,15 @@ function tvData() {
     "blackpink-poster",
     "blackpink-gradient",
     "blackpink-title",
-    "Documentary • Music • 2020",
+    "Documentary &#149 Music &#149 2020",
     "https://www.netflix.com/title/81106901",
     "netflix",
     "Watch on Netflix",
     "",
     "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
+    "63",
     "https://www.imdb.com/title/tt13058290",
+    "7.5",
     "Blackpink: Light Up the Sky is a 2020 documentary film directed by Caroline Suh, that tells the story of South Korean girl group Blackpink as bandmates and as individuals, and details their rise to fame.",
   ]
   
@@ -147,13 +158,16 @@ function tvData() {
     "rick-poster",
     "rick-gradient",
     "rick-title",
-    "Animation • Comedy • 5 Seasons • 2013 - Present",
+    "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
     "",
     "hulu",
     "Watch",
     "https://www.tvtime.com/en/show/275274",
+    "",
     "https://reelgood.com/show/rick-and-morty-2013",
+    "100",
     "https://www.imdb.com/title/tt2861424",
+    "9.2",
     "After having been missing for nearly 20 years, Rick Sanchez suddenly arrives at daughter Beth's doorstep to move in with her and her family. Although Beth welcomes Rick into her home, her husband, Jerry, isn't as happy about the family reunion. Jerry is concerned about Rick, a sociopathic scientist, using the garage as his personal laboratory. In the lab, Rick works on a number of sci-fi gadgets, some of which could be considered dangerous. But that's not all Rick does that concerns Jerry. He also goes on adventures across the universe that often involve his grandchildren, Morty and Summer.",
   ]
   
@@ -165,13 +179,16 @@ function tvData() {
     "loki-poster",
     "loki-gradient",
     "loki-title",
-    "Action & Adventure • Fantasy • 1 Season • 2021 - Present",
+    "Action & Adventure &#149 Fantasy &#149 1 Season &#149 2021 - Present",
     "",
     "disney",
     "Watch on Disney+",
     "https://www.tvtime.com/en/show/362472",
+    "99%",
     "https://reelgood.com/show/loki-2021",
+    "8.7",
     "https://www.imdb.com/title/tt9140554",
+    "95",
     "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
   ]
   
@@ -186,8 +203,11 @@ function tvData() {
     "hulu",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/73739",
+    "",
     "https://reelgood.com/show/lost-2004",
+    "91",
     "https://www.imdb.com/title/tt0411008",
+    "8.3",
     "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
   ]
 
@@ -200,7 +220,7 @@ function tvData() {
   //   "southpark-poster",
   //   "southpark-gradient",
   //   "southpark-title",
-  //   "Animation • Comedy • 24 Seasons 1997 - Present",
+  //   "Animation &#149 Comedy &#149 24 Seasons 1997 - Present",
   //   "https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series",
   //   "hbo",
   //   "Watch on HBO Max",
@@ -215,13 +235,17 @@ function tvData() {
     "dave-poster",
     "dave-gradient",
     "dave-title",
-    "Comedy • 2 Seasons • 2020 - 2021",
+    "Comedy &#149 2 Seasons &#149 2020 - 2021",
     "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/354905",
+    "",
     "https://reelgood.com/show/dave-2020",
-    "https://www.imdb.com/title/tt8531222"
+    "",
+    "https://www.imdb.com/title/tt8531222",
+    "",
+    "",
   ]
   
   
@@ -232,13 +256,17 @@ function tvData() {
     "newgirl-poster",
     "newgirl-gradient",
     "newgirl-title",
-    "Comedy • 7 Seasons • 2011 - 2018",
+    "Comedy &#149 7 Seasons &#149 2011 - 2018",
     "https://www.netflix.com/title/70196145",
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/248682",
+    "",
     "https://reelgood.com/show/new-girl-2011",
-    "https://www.imdb.com/title/tt1826940"
+    "",
+    "https://www.imdb.com/title/tt1826940",
+    "",
+    "",
   ]
   
   // Fresh prince
@@ -247,13 +275,17 @@ function tvData() {
     "fresh-poster",
     "fresh-gradient",
     "fresh-title",
-    "Comedy • 6 Seasons • 1990 - 1996",
+    "Comedy &#149 6 Seasons &#149 1990 - 1996",
     "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
     "hbo",
     "Watch on HBO Max",
     "https://www.tvtime.com/en/show/76738",
+    "",
     "https://reelgood.com/show/the-fresh-prince-of-bel-air-1990",
-    "https://www.imdb.com/title/tt0098800"
+    "",
+    "https://www.imdb.com/title/tt0098800",
+    "",
+    "",
   ]
   
   // Last week tonight
@@ -262,13 +294,17 @@ function tvData() {
     "last-poster",
     "last-gradient",
     "last-title",
-    "Talk Show • 8 Seasons • 2020 - Present",
+    "Talk Show &#149 8 Seasons &#149 2020 - Present",
     "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
     "hbo",
     "Watch on HBO Max",
     "https://www.tvtime.com/en/show/278518",
+    "",
     "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
-    "https://www.imdb.com/title/tt3530232"
+    "",
+    "https://www.imdb.com/title/tt3530232",
+    "",
+    "",
   ]
   
   // Twin peaks
@@ -277,13 +313,17 @@ function tvData() {
     "twinpeaks-poster",
     "twinpeaks-gradient",
     "twinpeaks-title",
-    "Mystery • 3 Seasons • 1990 - 1991",
+    "Mystery &#149 3 Seasons &#149 1990 - 1991",
     "https://www.hulu.com/series/twin-peaks-72678117-3cc6-45dc-a294-270ef30a937a",
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/70533",
+    "",
     "https://reelgood.com/show/twin-peaks-1990",
-    "https://www.imdb.com/title/tt0098936"
+    "",
+    "https://www.imdb.com/title/tt0098936",
+    "",
+    "",
   ]
   
   // Atlanta
@@ -292,13 +332,17 @@ function tvData() {
     "atlanta-poster",
     "atlanta-gradient",
     "atlanta-title",
-    "Comedy • 5 Seasons • 2016 - 2021",
+    "Comedy &#149 5 Seasons &#149 2016 - 2021",
     "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/313999",
+    "",
     "https://reelgood.com/show/atlanta-2016",
-    "https://www.imdb.com/title/tt4288182"
+    "",
+    "https://www.imdb.com/title/tt4288182",
+    "",
+    "",
   ]
   
   // Legion
@@ -307,13 +351,17 @@ function tvData() {
     "legion-poster",
     "legion-gradient",
     "legion-title",
-    "Sci-Fi • 3 Seasons • 2017 - 2019",
+    "Sci-Fi &#149 3 Seasons &#149 2017 - 2019",
     "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/320724",
+    "",
     "https://reelgood.com/show/legion-2017",
-    "https://www.imdb.com/title/tt5114356"
+    "",
+    "https://www.imdb.com/title/tt5114356",
+    "",
+    "",
   ]
   
   //Drive to survive
@@ -322,13 +370,17 @@ function tvData() {
     "drive-poster",
     "drive-gradient",
     "drive-title",
-    "Documentary • 3 Seasons • 2019 - Present",
+    "Documentary &#149 3 Seasons &#149 2019 - Present",
     "https://www.netflix.com/title/80204890",
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/359913",
+    "",
     "https://reelgood.com/show/formula-1-drive-to-survive-2019",
-    "https://www.imdb.com/title/tt8289930"
+    "",
+    "https://www.imdb.com/title/tt8289930",
+    "",
+    "",
   ]
   
   
@@ -338,59 +390,93 @@ function tvData() {
   // Movies
   
   show21 = [
+    "munich-solid",
+    "munich-poster",
+    "munich-gradient",
+    "munich-title",
+    "Action &#149 Drama &#149 History &#149 2005",
+    "",
+    "black-gradient",
+    "Watch",
+    "",
+    "",
+    "https://reelgood.com/movie/munich-2005",
+    "76",
+    "https://www.imdb.com/title/tt0408306",
+    "7.5",
+    "A terrorist organisation kills eleven Israeli athletes at the 1972 Munich Olympics. However, a team of five men, headed by Avner Kaufman, is assigned the task of killing the terrorists as revenge.",
+  ]
+
+  show28 = [
     "earth-solid",
     "earth-poster",
     "earth-gradient",
     "earth-title",
-    "Documentary • 2021",
+    "Documentary &#149 2021",
     "https://tv.apple.com/movie/the-year-earth-changed/umc.cmc.3fob3t7nfhehpb3ilgynzxmnu",
     "black-gradient",
     "Watch on TV+",
     "",
+    "",
     "https://reelgood.com/movie/the-year-earth-changed-2021",
-    "https://www.imdb.com/title/tt14372240"
+    "",
+    "https://www.imdb.com/title/tt14372240",
+    "",
+    "",
   ]
   
-  show22 = [
+  show27 = [
     "ghost-solid",
     "ghost-poster",
     "ghost-gradient",
     "ghost-title",
-    "Animation • Action • Crime • 1995",
+    "Animation &#149 Action &#149 Crime &#149 1995",
     "https://watch.amazon.com/detail?asin=B07WQZDXTM",
     "prime",
     "Watch on Prime Video",
     "",
+    "",
     "https://reelgood.com/movie/ghost-in-the-shell-1995",
-    "https://www.imdb.com/title/tt0113568"
+    "",
+    "https://www.imdb.com/title/tt0113568",
+    "",
+    "",
   ]
   
-  show23 = [
+  show29 = [
     "john-solid",
     "john-poster",
     "john-gradient",
     "john-title",
-    "Comedy • Drama • Fantasy • 1999",
+    "Comedy &#149 Drama &#149 Fantasy &#149 1999",
     "",
     "hulu",
     "Watch",
     "",
+    "",
     "https://reelgood.com/movie/being-john-malkovich-1999",
-    "https://www.imdb.com/title/tt0120601"
+    "",
+    "https://www.imdb.com/title/tt0120601",
+    "",
+    "",
   ]
   
-  show24 = [
+  show30 = [
     "knives-solid",
     "knives-poster",
     "knives-gradient",
     "knives-title",
-    "Comedy • Crime • Drama • 2019",
+    "Comedy &#149 Crime &#149 Drama &#149 2019",
     "https://watch.amazon.com/detail?asin=B081W68DP2",
     "prime",
     "Watch on Prime Video",
     "",
+    "",
     "https://reelgood.com/movie/knives-out-2019",
-    "https://www.imdb.com/title/tt8946378"
+    "",
+    "https://www.imdb.com/title/tt8946378",
+    "",
+    "",
   ]
   
   
@@ -405,13 +491,17 @@ function tvData() {
     "curb-poster",
     "curb-gradient",
     "curb-title",
-    "Comedy • 10 Seasons • 2000 - Present",
+    "Comedy &#149 10 Seasons &#149 2000 - Present",
     "https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series",
     "hbo",
     "Watch on HBO Max",
     "https://www.tvtime.com/en/show/76203",
+    "",
     "https://reelgood.com/show/curb-your-enthusiasm-2000",
-    "https://www.imdb.com/title/tt0264235"
+    "",
+    "https://www.imdb.com/title/tt0264235",
+    "",
+    "",
   ]
   
   // Spy
@@ -420,13 +510,17 @@ function tvData() {
     "spy-poster",
     "spy-gradient",
     "spy-title",
-    "Drama • 1 Season • 2019",
+    "Drama &#149 1 Season &#149 2019",
     "https://www.netflix.com/title/80178151",
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/368109",
+    "",
     "https://reelgood.com/show/the-spy-2019",
-    "https://www.imdb.com/title/tt5952634"
+    "",
+    "https://www.imdb.com/title/tt5952634",
+    "",
+    "",
   ]
   
   //Chernobyl
@@ -435,13 +529,17 @@ function tvData() {
     "chernobyl-poster",
     "chernobyl-gradient",
     "chernobyl-title",
-    "Thriller • 1 Season • 2019",
+    "Thriller &#149 1 Season &#149 2019",
     "https://play.hbomax.com/page/urn:hbo:page:GXJvkMAU0JIG6gAEAAAIo:type:series",
     "hbo",
     "Watch on HBO Max",
     "https://www.tvtime.com/en/show/360893",
+    "",
     "https://reelgood.com/show/chernobyl-2019",
-    "https://www.imdb.com/title/tt7366338"
+    "",
+    "https://www.imdb.com/title/tt7366338",
+    "",
+    "",
   ]
   
   //Human
@@ -450,13 +548,17 @@ function tvData() {
     "human-poster",
     "human-gradient",
     "human-title",
-    "Documentary • 1 Season • 2021 - Present",
+    "Documentary &#149 1 Season &#149 2021 - Present",
     "https://www.netflix.com/title/81139212",
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/402219",
+    "",
     "https://reelgood.com/show/human-the-world-within-2021",
-    "https://www.imdb.com/title/tt14574154"
+    "",
+    "https://www.imdb.com/title/tt14574154",
+    "",
+    "",
   ]
   
   //Line of duty 
@@ -465,13 +567,17 @@ function tvData() {
     "lineofduty-poster",
     "lineofduty-gradient",
     "lineofduty-title",
-    "Thriller • 6 Season • 2012 - Present",
+    "Thriller &#149 6 Season &#149 2012 - Present",
     "https://www.netflix.com/title/70263817",
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/260092",
+    "",
     "https://reelgood.com/show/line-of-duty-2012",
-    "https://www.imdb.com/title/tt2303687"
+    "",
+    "https://www.imdb.com/title/tt2303687",
+    "",
+    "",
   ]
   
   //Mindhunter
@@ -480,13 +586,17 @@ function tvData() {
     "mindhunter-poster",
     "mindhunter-gradient",
     "mindhunter-title",
-    "Crime • 2 Seasons • 2017 - 2019",
+    "Crime &#149 2 Seasons &#149 2017 - 2019",
     "https://www.netflix.com/title/80114855",
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/328708",
+    "",
     "https://reelgood.com/show/mindhunter-2017",
-    "https://www.imdb.com/title/tt5290382"
+    "",
+    "https://www.imdb.com/title/tt5290382",
+    "",
+    "",
   ]
   
   //Sweet tooth
@@ -495,13 +605,17 @@ function tvData() {
     "sweet-poster",
     "sweet-gradient",
     "sweet-title",
-    "Action & Adventure • 1 Season • 2021 - Present",
+    "Action & Adventure &#149 1 Season &#149 2021 - Present",
     "https://www.netflix.com/title/81221380",
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/355837",
+    "",
     "https://reelgood.com/show/sweet-tooth-2021",
-    "https://www.imdb.com/title/tt12809988"
+    "",
+    "https://www.imdb.com/title/tt12809988",
+    "",
+    "",
   ]
   
   // Startup
@@ -510,13 +624,17 @@ function tvData() {
     "startup-poster",
     "startup-gradient",
     "startup-title",
-    "Drama • Crime • 3 Seasons • 2016 - 2019",
+    "Drama &#149 Crime &#149 3 Seasons &#149 2016 - 2019",
     "https://www.netflix.com/title/80154285",
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/310614",
+    "",
     "https://reelgood.com/show/startup-2016",
-    "https://www.imdb.com/title/tt5028002"
+    "",
+    "https://www.imdb.com/title/tt5028002",
+    "",
+    "",
   ]
   
   // For all mankind
@@ -525,13 +643,17 @@ function tvData() {
     "mankind-poster",
     "mankind-gradient",
     "mankind-title",
-    "Sci-Fi • 2 Seasons • 2019 - Present",
+    "Sci-Fi &#149 2 Seasons &#149 2019 - Present",
     "https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
     "black-gradient",
     "Watch on  TV+",
     "https://www.tvtime.com/en/show/356202",
+    "",
     "https://reelgood.com/show/for-all-mankind-2019",
-    "https://www.imdb.com/title/tt7772588"
+    "",
+    "https://www.imdb.com/title/tt7772588",
+    "",
+    "Exploring the possibilities that might exist if the global space race had continued and where humanity would be now.",
   ]
   
   var showsAll = [
@@ -650,19 +772,16 @@ function tvPopup(n){
   document.getElementById("grad").className =           gradientClass.concat(showsAll[n][2]);
   document.getElementById("title").className =             titleClass.concat(showsAll[n][3]);
   document.getElementById("desc").innerHTML =                                showsAll[n][4];
-  document.getElementById("tv-popup-link").href =                                     showsAll[n][5];
+  document.getElementById("tv-popup-link").href =                            showsAll[n][5];
   // document.getElementById("serviceGradient").className = serviceClass.concat(showsAll[n][6]);
   document.getElementById("service").innerHTML =                             showsAll[n][7];
-  document.getElementById("tv-popup-tv-time").href =                                  showsAll[n][8];
-  document.getElementById("tv-popup-reelgood").href =                                 showsAll[n][9];
-  document.getElementById("tv-popup-imdb").href =                                     showsAll[n][10];
-  
-  if (showsAll[n][11]) {
-    // console.log(showsAll[n][11])
-    document.getElementById("tv-popup-summary").innerHTML = showsAll[n][11];
-  } else {
-    document.getElementById("tv-popup-summary").innerHTML = null;
-  }
+  document.getElementById("tv-popup-tv-time").href =                         showsAll[n][8];
+  // document.getElementById("tv-popup-tv-time-rating").innerHTML =             showsAll[n][9];
+  document.getElementById("tv-popup-reelgood").href =                        showsAll[n][10];
+  document.getElementById("tv-popup-reelgood-rating").innerHTML =            showsAll[n][11] + "/100";
+  document.getElementById("tv-popup-imdb").href =                            showsAll[n][12];
+  document.getElementById("tv-popup-imdb-rating").innerHTML =                showsAll[n][13] + "/10";
+  document.getElementById("tv-popup-summary").innerHTML =                    showsAll[n][14];
 }
 
 function podData() {
