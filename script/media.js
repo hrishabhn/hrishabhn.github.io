@@ -88,7 +88,7 @@ function tvData() {
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/349271",
-    "",
+    "9.46",
     "https://reelgood.com/show/manifest-2018",
     "81",
     "https://www.imdb.com/title/tt8421350",
@@ -203,7 +203,7 @@ function tvData() {
     "hulu",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/73739",
-    "",
+    "9.16",
     "https://reelgood.com/show/lost-2004",
     "91",
     "https://www.imdb.com/title/tt0411008",
@@ -813,7 +813,7 @@ function tvPopup(n){
   // document.getElementById("serviceGradient").className = serviceClass.concat(showsAll[n][6]);
   document.getElementById("service").innerHTML =                             showsAll[n][7];
   document.getElementById("tv-popup-tv-time").href =                         showsAll[n][8];
-  // document.getElementById("tv-popup-tv-time-rating").innerHTML =             showsAll[n][9];
+  document.getElementById("tv-popup-tv-time-rating").innerHTML =             showsAll[n][9] + "/10";
   document.getElementById("tv-popup-reelgood").href =                        showsAll[n][10];
   document.getElementById("tv-popup-reelgood-rating").innerHTML =            showsAll[n][11] + "/100";
   document.getElementById("tv-popup-imdb").href =                            showsAll[n][12];
