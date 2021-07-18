@@ -164,12 +164,12 @@ function tvData() {
     "hulu",
     "Watch",
     "https://www.tvtime.com/en/show/275274",
-    "",
+    "8.96",
     "https://reelgood.com/show/rick-and-morty-2013",
-    "100",
+    "--",
     "https://www.imdb.com/title/tt2861424",
     "9.2",
-    "After having been missing for nearly 20 years, Rick Sanchez suddenly arrives at daughter Beth's doorstep to move in with her and her family. Although Beth welcomes Rick into her home, her husband, Jerry, isn't as happy about the family reunion. Jerry is concerned about Rick, a sociopathic scientist, using the garage as his personal laboratory. In the lab, Rick works on a number of sci-fi gadgets, some of which could be considered dangerous. But that's not all Rick does that concerns Jerry. He also goes on adventures across the universe that often involve his grandchildren, Morty and Summer.",
+    "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
   ]
   
   
