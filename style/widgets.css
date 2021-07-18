@@ -264,7 +264,7 @@
 
 .bus-blur{
     position: fixed;
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 100vw;
     /* max-width: 800px; */
     /* left: calc((100vw - 800px) / 2); */
