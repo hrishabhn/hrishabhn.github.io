@@ -331,7 +331,7 @@
 .music-album{
     display: block;
     position: fixed;
-    top: 100px;
+    top: 95px;
     width: calc(100vw - 50px);
     height: calc((100vw - 50px));
 
@@ -355,7 +355,7 @@
     transition: all 0.5s cubic-bezier(.47,1.64,.41,.8);
 }
 .music-album-paused{
-    scale: 0.75;
+    scale: 0.65;
     box-shadow: 0px 10px 50px -20px var(--black-40);
 }
 
