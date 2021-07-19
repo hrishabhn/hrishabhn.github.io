@@ -212,7 +212,24 @@ function tvData() {
     "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
   ]
 
-
+  // family guy
+  show11 = [
+    "family-solid",
+    "family-poster",
+    "family-gradient",
+    "family-title",
+    "Animation &#149 Comedy &#149 19 Seasons &#149 1999 - Present",
+    "https://www.netflix.com/title/80192718",
+    "netflix",
+    "Watch on Netflix",
+    "https://www.tvtime.com/en/show/75978",
+    "7.58",
+    "https://reelgood.com/show/family-guy-1999",
+    "--",
+    "https://www.imdb.com/title/tt0182576",
+    "8.1",
+    "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
+  ]
 
   
   // // South park
