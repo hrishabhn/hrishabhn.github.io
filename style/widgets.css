@@ -352,6 +352,7 @@
     color: var(--light-layer-0);
     box-shadow: var(--shaded-dark);
     transition: all 0.15s;
+    transition-timing-function: ease-in-out;
 }
 
 .bus-widget-container{
