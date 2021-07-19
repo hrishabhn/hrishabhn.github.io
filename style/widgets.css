@@ -329,8 +329,8 @@
     /* margin-bottom: 40px; */
     z-index: 5;
     justify-self: center;
-    background-color: var(--dark-layer-1-40);
-    -webkit-backdrop-filter: blur(25px);
+    background-color: var(--dark-layer-1);
+    /* -webkit-backdrop-filter: blur(25px); */
     color: var(--light-layer-0);
     box-shadow: var(--shaded-dark);
 }
@@ -573,7 +573,8 @@
     }
 
     .bus-popup-modal{
-        background-color: var(--light-layer-1-40);
+        background-color: var(--light-layer-0);
+        color: var(--dark-layer-1);
     }
 
 
