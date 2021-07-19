@@ -213,7 +213,7 @@ function tvData() {
   ]
 
   // family guy
-  show11 = [
+  show12 = [
     "family-solid",
     "family-poster",
     "family-gradient",
