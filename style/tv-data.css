@@ -655,3 +655,16 @@
 .butch-title{
     background-image: url('../TV/title/butch.png');
 }
+
+.family-solid{
+    background-color: #0B6F38;
+}
+.family-gradient{
+    background: linear-gradient(#00000000,#0B6F38);
+}
+.family-poster{
+    background-image: url('../TV/background/family.webp');
+}
+.family-title{
+    background-image: url('../TV/title/family.svg');
+}
