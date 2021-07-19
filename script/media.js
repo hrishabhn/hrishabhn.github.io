@@ -208,7 +208,7 @@ function tvData() {
     "https://www.tvtime.com/en/show/75978",
     "7.58",
     "https://reelgood.com/show/family-guy-1999",
-    "--",
+    "81",
     "https://www.imdb.com/title/tt0182576",
     "8.1",
     "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
