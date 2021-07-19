@@ -279,7 +279,7 @@
     /* background: var(--black-20); */
 
     background-position: center center;
-    background-image: url(../images/ellie.jpg);
+    background-image: url(../images/end.jpg);
     /* background-color: rgba(0, 0, 0, 0.5); */
     /* background-blend-mode: multiply; */
 
@@ -334,7 +334,7 @@
 
     z-index: 100;
 
-    background-image: url(../images/ellie.jpg);
+    background-image: url(../images/end.jpg);
     background-size: cover;
     border-radius: 10px;
 
