@@ -261,6 +261,10 @@
     font-weight: 300;
 }
 
+.current-album{
+    background-image: url(../images/dababy.jpg);
+}
+
 
 .music-back{
     position: fixed;
@@ -279,7 +283,7 @@
     /* background: var(--black-20); */
 
     background-position: center center;
-    background-image: url(../images/end.jpg);
+    /* background-image: url(../images/end.jpg); */
     /* background-color: rgba(0, 0, 0, 0.5); */
     /* background-blend-mode: multiply; */
 
@@ -327,9 +331,9 @@
 .music-album{
     display: block;
     position: fixed;
-    top: 75px;
-    width: 85vw;
-    height: 85vw;
+    top: 100px;
+    width: calc(100vw - 50px);
+    height: calc(100vw - 50px);
 
     max-width: 400px;
     max-height: 400px;
@@ -341,7 +345,7 @@
 
     z-index: 100;
 
-    background-image: url(../images/end.jpg);
+    /* background-image: url(../images/end.jpg); */
     background-size: cover;
     border-radius: 10px;
 
