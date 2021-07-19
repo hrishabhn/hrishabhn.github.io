@@ -97,7 +97,7 @@ function tvData() {
   ]
   
   // Always sunny
-  show2 = [
+  show4 = [
     "always-solid",
     "always-poster",
     "always-gradient",
@@ -116,7 +116,7 @@ function tvData() {
   ]
   
   // Love Death Robots
-  show3 = [
+  show5 = [
     "ldr-solid",
     "ldr-poster",
     "ldr-gradient",
@@ -134,27 +134,10 @@ function tvData() {
     "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
   ]
   
-  // blackpink
-  show4 = [
-    "blackpink-solid",
-    "blackpink-poster",
-    "blackpink-gradient",
-    "blackpink-title",
-    "Documentary &#149 Music &#149 2020",
-    "https://www.netflix.com/title/81106901",
-    "netflix",
-    "Watch on Netflix",
-    "",
-    "",
-    "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
-    "63",
-    "https://www.imdb.com/title/tt13058290",
-    "7.5",
-    "Blackpink: Light Up the Sky is a 2020 documentary film directed by Caroline Suh, that tells the story of South Korean girl group Blackpink as bandmates and as individuals, and details their rise to fame.",
-  ]
+  
   
   // Rick and Morty
-  show7 = [
+  show3 = [
     "rick-solid",
     "rick-poster",
     "rick-gradient",
@@ -175,7 +158,7 @@ function tvData() {
   
   
   // Loki
-  show9 = [
+  show2 = [
     "loki-solid",
     "loki-poster",
     "loki-gradient",
@@ -323,6 +306,25 @@ function tvData() {
   //   "https://www.imdb.com/title/tt3530232",
   //   "",
   //   "",
+  // ]
+
+  // // blackpink
+  // show4 = [
+  //   "blackpink-solid",
+  //   "blackpink-poster",
+  //   "blackpink-gradient",
+  //   "blackpink-title",
+  //   "Documentary &#149 Music &#149 2020",
+  //   "https://www.netflix.com/title/81106901",
+  //   "netflix",
+  //   "Watch on Netflix",
+  //   "",
+  //   "",
+  //   "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
+  //   "63",
+  //   "https://www.imdb.com/title/tt13058290",
+  //   "7.5",
+  //   "Blackpink: Light Up the Sky is a 2020 documentary film directed by Caroline Suh, that tells the story of South Korean girl group Blackpink as bandmates and as individuals, and details their rise to fame.",
   // ]
   
   // Twin peaks
