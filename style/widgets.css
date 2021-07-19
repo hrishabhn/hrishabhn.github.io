@@ -310,9 +310,14 @@
 }
 .bus-popup-closed{
     pointer-events: none;
-    opacity: 0;
-    scale: 0.9;
+    /* transform: translateX(-50%); */
+    /* opacity: 0; */
+    /* scale: 0.9; */
 }
+.bus-popup-closed .bus-popup-modal{
+    transform: translateY(100%);
+}
+
 .bus-popup-modal{
     display: block;
     position: relative;
@@ -333,6 +338,7 @@
     /* -webkit-backdrop-filter: blur(25px); */
     color: var(--light-layer-0);
     box-shadow: var(--shaded-dark);
+    transition: inherit;
 }
 
 .bus-widget-container{
