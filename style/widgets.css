@@ -262,7 +262,7 @@
 }
 
 .current-album{
-    background-image: url(../images/dababy.jpg);
+    background-image: url(../images/cudi.jpg);
 }
 
 
@@ -290,7 +290,7 @@
     background-size: 150% 150%;
     background-repeat: no-repeat;
 
-    filter: saturate(calc(5 / 3)) brightness(calc(1 / 2));
+    filter: saturate(calc(6 / 3)) brightness(calc(1 / 2));
     /* filter: hue-rotate(90); */
 
     rotate: 180deg;
@@ -318,7 +318,7 @@
     pointer-events: none;
 }
 .music-blur-show{
-    -webkit-backdrop-filter: blur(250px);
+    -webkit-backdrop-filter: blur(200px);
     backdrop-filter: blur(125px);
     /* background: var(--black-40); */
 }
