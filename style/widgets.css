@@ -286,7 +286,7 @@
     background-size: 150% 150%;
     background-repeat: no-repeat;
 
-    filter: saturate(calc(5 / 3)) brightness(calc(3 / 5));
+    filter: saturate(calc(5 / 3)) brightness(calc(1 / 2));
     /* filter: hue-rotate(90); */
 
     rotate: 180deg;
@@ -327,10 +327,17 @@
 .music-album{
     display: block;
     position: fixed;
-    top: 10vh;
-    width: 90vw;
-    height: 90vw;
-    left: 5vw;
+    top: 75px;
+    width: 85vw;
+    height: 85vw;
+
+    max-width: 400px;
+    max-height: 400px;
+    left: 50%;
+
+
+    transform: translateX(-50%);
+    transform-origin: center left;
 
     z-index: 100;
 
@@ -340,7 +347,7 @@
 
     box-shadow: 0px 10px 50px -20px var(--black-80);
 
-    transition: all 0.5s;
+    transition: all 0.5s cubic-bezier(.47,1.64,.41,.8);
 }
 .music-album-paused{
     scale: 0.75;
