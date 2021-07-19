@@ -345,6 +345,7 @@
 
     z-index: 100;
 
+    background-position: center center;
     /* background-image: url(../images/end.jpg); */
     background-size: cover;
     border-radius: 10px;
