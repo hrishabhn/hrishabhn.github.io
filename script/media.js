@@ -547,7 +547,7 @@ function tvData() {
     "shadows-gradient",
     "shadows-title",
     "Comedy &#149 Fantasy &#149 Horror &#149 2 Seasons &#149 2019 - Present",
-    "",
+    "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/358211",
