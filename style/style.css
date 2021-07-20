@@ -601,7 +601,7 @@ body{
     z-index: 3;
 }
 .app-link:active{
-    background-color: var(--black-20);
+    background-color: var(--black-40);
 }
 
 
@@ -1289,7 +1289,7 @@ body{
     .app-container{
         width: 60px;
         height: 60px;
-        border-radius: 30px;
+        border-radius: 17.5px;
     }
     /* .app-container:hover{
         opacity: 1;
