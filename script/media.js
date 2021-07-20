@@ -75,7 +75,26 @@ function tvData() {
   var show49 = hide
   var show50 = hide
   
-  
+
+
+  // Loki
+  show1 = [
+    "loki-solid",
+    "loki-poster",
+    "loki-gradient",
+    "loki-title",
+    "Action & Adventure &#149 Fantasy &#149 1 Season &#149 2021 - Present",
+    "",
+    "disney",
+    "Watch",
+    "https://www.tvtime.com/en/show/362472",
+    "9.74",
+    "https://reelgood.com/show/loki-2021",
+    "95",
+    "https://www.imdb.com/title/tt9140554",
+    "8.7",
+    "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
+  ]
   
   // Manifest
   show2 = [
@@ -94,6 +113,25 @@ function tvData() {
     "https://www.imdb.com/title/tt8421350",
     "7.2",
     "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."
+  ]
+
+  // Rick and Morty
+  show5 = [
+    "rick-solid",
+    "rick-poster",
+    "rick-gradient",
+    "rick-title",
+    "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
+    "",
+    "hulu",
+    "Watch",
+    "https://www.tvtime.com/en/show/275274",
+    "8.96",
+    "https://reelgood.com/show/rick-and-morty-2013",
+    "100",
+    "https://www.imdb.com/title/tt2861424",
+    "9.2",
+    "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
   ]
   
   // Always sunny
@@ -116,7 +154,7 @@ function tvData() {
   ]
   
   // Love Death Robots
-  show5 = [
+  show6 = [
     "ldr-solid",
     "ldr-poster",
     "ldr-gradient",
@@ -134,46 +172,64 @@ function tvData() {
     "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
   ]
   
-  
-  
-  // Rick and Morty
+  // shadows
   show3 = [
-    "rick-solid",
-    "rick-poster",
-    "rick-gradient",
-    "rick-title",
-    "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
-    "",
-    "hulu",
-    "Watch",
-    "https://www.tvtime.com/en/show/275274",
-    "8.96",
-    "https://reelgood.com/show/rick-and-morty-2013",
-    "100",
-    "https://www.imdb.com/title/tt2861424",
-    "9.2",
-    "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
+    "shadows-solid",
+    "shadows-poster",
+    "shadows-gradient",
+    "shadows-title",
+    "Comedy &#149 Fantasy &#149 Horror &#149 2 Seasons &#149 2019 - Present",
+    "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
+    "hulu-green",
+    "Watch on Hulu",
+    "https://www.tvtime.com/en/show/358211",
+    "9.38",
+    "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
+    "86",
+    "https://www.imdb.com/title/tt7908628",
+    "8.5",
+    "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
   ]
   
   
-  
-  // Loki
-  show1 = [
-    "loki-solid",
-    "loki-poster",
-    "loki-gradient",
-    "loki-title",
-    "Action & Adventure &#149 Fantasy &#149 1 Season &#149 2021 - Present",
-    "",
-    "disney",
-    "Watch on",
-    "https://www.tvtime.com/en/show/362472",
-    "9.74",
-    "https://reelgood.com/show/loki-2021",
-    "95",
-    "https://www.imdb.com/title/tt9140554",
-    "8.7",
-    "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
+ 
+
+  // family guy
+  show11 = [
+    "family-solid",
+    "family-poster",
+    "family-gradient",
+    "family-title",
+    "Animation &#149 Comedy &#149 19 Seasons &#149 1999 - Present",
+    "https://www.netflix.com/title/80192718",
+    "netflix",
+    "Watch on Netflix",
+    "https://www.tvtime.com/en/show/75978",
+    "7.58",
+    "https://reelgood.com/show/family-guy-1999",
+    "81",
+    "https://www.imdb.com/title/tt0182576",
+    "8.1",
+    "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
+  ]
+
+  // Atlanta
+  show12 = [
+    "atlanta-solid",
+    "atlanta-poster",
+    "atlanta-gradient",
+    "atlanta-title",
+    "Comedy &#149 5 Seasons &#149 2016 - 2021",
+    "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
+    "hulu-green",
+    "Watch on Hulu",
+    "https://www.tvtime.com/en/show/313999",
+    "8.6",
+    "https://reelgood.com/show/atlanta-2016",
+    "83",
+    "https://www.imdb.com/title/tt4288182",
+    "8.6",
+    "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
   ]
   
   // Lost
@@ -193,25 +249,6 @@ function tvData() {
     "https://www.imdb.com/title/tt0411008",
     "8.3",
     "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
-  ]
-
-  // family guy
-  show11 = [
-    "family-solid",
-    "family-poster",
-    "family-gradient",
-    "family-title",
-    "Animation &#149 Comedy &#149 19 Seasons &#149 1999 - Present",
-    "https://www.netflix.com/title/80192718",
-    "netflix",
-    "Watch on Netflix",
-    "https://www.tvtime.com/en/show/75978",
-    "7.58",
-    "https://reelgood.com/show/family-guy-1999",
-    "81",
-    "https://www.imdb.com/title/tt0182576",
-    "8.1",
-    "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
   ]
 
   
@@ -346,24 +383,7 @@ function tvData() {
     "A crime drama mixed with healthy doses of the surreal, this series is about FBI Agent Dale Cooper, who travels to the small logging town of Twin Peaks to solve the murder of seemingly innocent high schooler Laura Palmer. Almost nothing is as it seems, however, and the show's sometimes eerie visuals, oddball characters and wild dream sequences drive the point home.",
   ]
   
-  // Atlanta
-  show12 = [
-    "atlanta-solid",
-    "atlanta-poster",
-    "atlanta-gradient",
-    "atlanta-title",
-    "Comedy &#149 5 Seasons &#149 2016 - 2021",
-    "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
-    "hulu-green",
-    "Watch on Hulu",
-    "https://www.tvtime.com/en/show/313999",
-    "8.6",
-    "https://reelgood.com/show/atlanta-2016",
-    "83",
-    "https://www.imdb.com/title/tt4288182",
-    "8.6",
-    "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
-  ]
+  
   
   // Legion
   show19 = [
@@ -463,6 +483,23 @@ function tvData() {
     "Butch Cassidy and the Sundance Kid are two free-spirited leaders of a criminal gang. When their plan of robbing a bank goes astray, they flee to Bolivia in an attempt to outdo the law in the country.",
   ]
 
+  show27 = [
+    "ghost-solid",
+    "ghost-poster",
+    "ghost-gradient",
+    "ghost-title",
+    "Animation &#149 Action &#149 Crime &#149 1995",
+    "https://watch.amazon.com/detail?asin=B07WQZDXTM",
+    "prime",
+    "Watch on Prime Video",
+    "",
+    "",
+    "https://reelgood.com/movie/ghost-in-the-shell-1995",
+    "",
+    "https://www.imdb.com/title/tt0113568",
+    "",
+    "",
+  ]
 
   show28 = [
     "earth-solid",
@@ -478,24 +515,6 @@ function tvData() {
     "https://reelgood.com/movie/the-year-earth-changed-2021",
     "",
     "https://www.imdb.com/title/tt14372240",
-    "",
-    "",
-  ]
-  
-  show27 = [
-    "ghost-solid",
-    "ghost-poster",
-    "ghost-gradient",
-    "ghost-title",
-    "Animation &#149 Action &#149 Crime &#149 1995",
-    "https://watch.amazon.com/detail?asin=B07WQZDXTM",
-    "prime",
-    "Watch on Prime Video",
-    "",
-    "",
-    "https://reelgood.com/movie/ghost-in-the-shell-1995",
-    "",
-    "https://www.imdb.com/title/tt0113568",
     "",
     "",
   ]
@@ -540,24 +559,7 @@ function tvData() {
   
   
 
-  // shadows
-  show42 = [
-    "shadows-solid",
-    "shadows-poster",
-    "shadows-gradient",
-    "shadows-title",
-    "Comedy &#149 Fantasy &#149 Horror &#149 2 Seasons &#149 2019 - Present",
-    "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
-    "hulu-green",
-    "Watch on Hulu",
-    "https://www.tvtime.com/en/show/358211",
-    "9.38",
-    "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
-    "86",
-    "https://www.imdb.com/title/tt7908628",
-    "8.5",
-    "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
-  ]
+  
   
   // New
   
