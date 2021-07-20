@@ -35,7 +35,7 @@
     overflow: hidden;
     display: inline-block;
     position: relative;
-    vertical-align: bottom;
+    vertical-align: center;
     margin-right: 10px;
     margin-bottom: 0px;
 
@@ -48,6 +48,9 @@
     scroll-margin-left: 15px; */
 
     transition: all 0.15s;
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    /* border-color: #1a1a1a; */
 }
 .media-card:active{
     scale: 0.975;
@@ -404,7 +407,7 @@
 }
 .tv-popup-gradient{
     /* justify-content: flex-end; */
-    vertical-align: bottom;
+    vertical-align: center;
     align-items: flex-end;
     display: flex;
     position: relative;
