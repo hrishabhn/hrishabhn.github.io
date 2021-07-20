@@ -3146,7 +3146,7 @@ function page5AppPopulate(){
     "Reelgood",
     "",
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43"><g fill-rule="evenodd"><path d="M21.775 20.787c3.093-1.23 6.272-4.398 6.272-9.787 0-6.573-4.61-10.99-11.47-10.99h-3.702v7.584h2.45c1.836 0 3.695 1.137 3.695 3.31 0 2.172-1.859 3.31-3.696 3.31H9.078V9.495L.195 14.31v18.415h8.883v-10.88h3.749l5.392 10.88h10.183l-6.627-11.938z" mask="url(#b)" transform="translate(14.365 9.956)"/><path d="M3.182 12.578V5.624l11.611 6.704-9.466 5.619v-5.369H3.182zM0 .113v27.052L23.428 13.64 0 .113z" mask="url(#d)" transform="translate(.205 .202)"/></g></svg>',
-    "https://reelgood.com",
+    "https://reelgood.com/userlist/tracking?filter-availability=all&filter-sort=3&tab=shows_watchnext",
     ]
 
     // TV Time
