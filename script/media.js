@@ -149,7 +149,7 @@ function tvData() {
     "https://www.tvtime.com/en/show/275274",
     "8.96",
     "https://reelgood.com/show/rick-and-morty-2013",
-    "--",
+    "100",
     "https://www.imdb.com/title/tt2861424",
     "9.2",
     "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
@@ -177,7 +177,7 @@ function tvData() {
   ]
   
   // Lost
-  show11 = [
+  show13 = [
     "lost-solid",
     "lost-poster",
     "lost-gradient",
@@ -196,7 +196,7 @@ function tvData() {
   ]
 
   // family guy
-  show12 = [
+  show11 = [
     "family-solid",
     "family-poster",
     "family-gradient",
@@ -338,16 +338,16 @@ function tvData() {
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/70533",
-    "",
+    "8.6",
     "https://reelgood.com/show/twin-peaks-1990",
-    "",
+    "89",
     "https://www.imdb.com/title/tt0098936",
-    "",
-    "",
+    "8.8",
+    "A crime drama mixed with healthy doses of the surreal, this series is about FBI Agent Dale Cooper, who travels to the small logging town of Twin Peaks to solve the murder of seemingly innocent high schooler Laura Palmer. Almost nothing is as it seems, however, and the show's sometimes eerie visuals, oddball characters and wild dream sequences drive the point home.",
   ]
   
   // Atlanta
-  show18 = [
+  show12 = [
     "atlanta-solid",
     "atlanta-poster",
     "atlanta-gradient",
@@ -357,12 +357,12 @@ function tvData() {
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/313999",
-    "",
+    "8.6",
     "https://reelgood.com/show/atlanta-2016",
-    "",
+    "83",
     "https://www.imdb.com/title/tt4288182",
-    "",
-    "",
+    "8.6",
+    "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
   ]
   
   // Legion
@@ -376,12 +376,12 @@ function tvData() {
     "hulu-green",
     "Watch on Hulu",
     "https://www.tvtime.com/en/show/320724",
-    "",
+    "9.26",
     "https://reelgood.com/show/legion-2017",
-    "",
+    "83",
     "https://www.imdb.com/title/tt5114356",
-    "",
-    "",
+    "8.2",
+    "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he's confronted with the possibility that the voices he hears and the visions he sees might be real.",
   ]
   
   //Drive to survive
@@ -395,12 +395,12 @@ function tvData() {
     "netflix",
     "Watch on Netflix",
     "https://www.tvtime.com/en/show/359913",
-    "",
+    "9.86",
     "https://reelgood.com/show/formula-1-drive-to-survive-2019",
-    "",
+    "73",
     "https://www.imdb.com/title/tt8289930",
-    "",
-    "",
+    "8.6",
+    "The drivers, managers and team owners in Formula 1 live life in the fast lane -- both on and off the track. This docuseries gives viewers exclusive, intimate access to the people in one of the world's greatest racing competitions.",
   ]
   
   
