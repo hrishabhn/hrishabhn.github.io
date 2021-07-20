@@ -539,30 +539,49 @@ function tvData() {
   
   
   
+
+  // shadows
+  show42 = [
+    "shadows-solid",
+    "shadows-poster",
+    "shadows-gradient",
+    "shadows-title",
+    "Comedy &#149 Fantasy &#149 Horror &#149 2 Seasons &#149 2019 - Present",
+    "",
+    "hulu-green",
+    "Watch on Hulu",
+    "https://www.tvtime.com/en/show/358211",
+    "9.38",
+    "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
+    "86",
+    "https://www.imdb.com/title/tt7908628",
+    "8.5",
+    "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
+  ]
   
   // New
   
-  // Curb
-  show32 = [
-    "curb-solid",
-    "curb-poster",
-    "curb-gradient",
-    "curb-title",
-    "Comedy &#149 10 Seasons &#149 2000 - Present",
-    "https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series",
-    "hbo",
-    "Watch on HBO Max",
-    "https://www.tvtime.com/en/show/76203",
-    "",
-    "https://reelgood.com/show/curb-your-enthusiasm-2000",
-    "",
-    "https://www.imdb.com/title/tt0264235",
-    "",
-    "",
-  ]
+  // // Curb
+  // show42 = [
+  //   "curb-solid",
+  //   "curb-poster",
+  //   "curb-gradient",
+  //   "curb-title",
+  //   "Comedy &#149 10 Seasons &#149 2000 - Present",
+  //   "https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series",
+  //   "hbo",
+  //   "Watch on HBO Max",
+  //   "https://www.tvtime.com/en/show/76203",
+  //   "",
+  //   "https://reelgood.com/show/curb-your-enthusiasm-2000",
+  //   "",
+  //   "https://www.imdb.com/title/tt0264235",
+  //   "",
+  //   "",
+  // ]
   
   // Spy
-  show33 = [
+  show43 = [
     "spy-solid",
     "spy-poster",
     "spy-gradient",
@@ -581,7 +600,7 @@ function tvData() {
   ]
   
   //Chernobyl
-  show34 = [
+  show44 = [
     "chernobyl-solid",
     "chernobyl-poster",
     "chernobyl-gradient",
@@ -600,7 +619,7 @@ function tvData() {
   ]
   
   //Human
-  show36 = [
+  show45 = [
     "human-solid",
     "human-poster",
     "human-gradient",
@@ -619,7 +638,7 @@ function tvData() {
   ]
   
   //Line of duty 
-  show37 = [
+  show46 = [
     "lineofduty-solid",
     "lineofduty-poster",
     "lineofduty-gradient",
@@ -638,7 +657,7 @@ function tvData() {
   ]
   
   //Mindhunter
-  show38 = [
+  show47 = [
     "mindhunter-solid",
     "mindhunter-poster",
     "mindhunter-gradient",
@@ -657,7 +676,7 @@ function tvData() {
   ]
   
   //Sweet tooth
-  show39 = [
+  show48 = [
     "sweet-solid",
     "sweet-poster",
     "sweet-gradient",
@@ -676,7 +695,7 @@ function tvData() {
   ]
   
   // Startup
-  show40 = [
+  show49 = [
     "startup-solid",
     "startup-poster",
     "startup-gradient",
@@ -695,7 +714,7 @@ function tvData() {
   ]
   
   // For all mankind
-  show41 = [
+  show50 = [
     "mankind-solid",
     "mankind-poster",
     "mankind-gradient",
