@@ -553,16 +553,16 @@
 }
 
 .rick-solid{
-    background-color: #255F97;
+    background-color: #2D1D54;
 }
 .rick-gradient{
-    background: linear-gradient(#00000000,#255F97);
+    background: linear-gradient(#00000000,#2D1D54);
 }
 .rick-poster{
-    background-image: url('../TV/background/rick.jpg');
+    background-image: url('../TV/background/rick.webp');
 }
 .rick-title{
-    background-image: url('../TV/title/rick.png');
+    background-image: url('../TV/title/rick.svg');
 }
 
 .dave-solid{
