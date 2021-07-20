@@ -78,7 +78,7 @@ function tvData() {
   
   
   // Manifest
-  show1 = [
+  show2 = [
     "manifest-solid",
     "manifest-poster",
     "manifest-gradient",
@@ -158,7 +158,7 @@ function tvData() {
   
   
   // Loki
-  show2 = [
+  show1 = [
     "loki-solid",
     "loki-poster",
     "loki-gradient",
