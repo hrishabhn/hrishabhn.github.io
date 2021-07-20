@@ -668,3 +668,16 @@
 .family-title{
     background-image: url('../TV/title/family.svg');
 }
+
+.shadows-solid{
+    background-color: #050514;
+}
+.shadows-gradient{
+    background: linear-gradient(#00000000,#050514);
+}
+.shadows-poster{
+    background-image: url('../TV/background/shadows.webp');
+}
+.shadows-title{
+    background-image: url('../TV/title/shadows.png');
+}
