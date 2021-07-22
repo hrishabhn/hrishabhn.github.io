@@ -34,10 +34,25 @@
     <script src="app.js"></script>
 </head>
 
-<body ontouchstart="" onload="mainPopulate()">
-    <div id="music-back" class="music-back music-back-show current-album"></div>
-    <div id="music-blur" class="music-blur music-blur-show"></div>
-    <div id="music-album" class="music-album current-album" onclick="albumPause()"></div>
+<body ontouchstart="" onload="getUserLocale()">
+    <!-- <div id="locale-pic" class="pokfulam">
+        <div id="locale-block" class="locale-block locale-block-show"></div>
+    </div> -->
+
+    <div id="back-image" class=""></div>
+    <div id="back-block" class="back-block-show"></div>
+    <div id="back-blur" class="music-blur music-blur-show"></div>
+
+    <div id="locale-container">
+        <div id="locale-image" class="locale-preload" onclick="albumPause()">
+            <div id="locale-block" class="locale-block-show"></div>
+        </div>
+    </div>
+    
+
+    <div id="locale-text" class="locale-text-preload"></div>
+
+    
 
     <script src="script/music.js"></script>
 </body>

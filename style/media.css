@@ -110,6 +110,9 @@
     height: 30px;
     width: 60px;
     border-radius: 12px;
+    /* border-style: solid; */
+    /* border-width: 0.1px; */
+    /* border-color: var(--white-10); */
 
 
     transition: all 0.15s;
