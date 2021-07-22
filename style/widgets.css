@@ -371,7 +371,7 @@
     z-index: 10;
     width: 100vw;
     height: calc(100vw - 50px + 95px);
-    max-height: 400px;
+    max-height: 495px;
 
     box-sizing: border-box;
     /* padding-top: 95px; */
@@ -469,7 +469,7 @@
     /* position: fixed; */
     /* background-color: khaki; */
 
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     z-index: 10;
 
