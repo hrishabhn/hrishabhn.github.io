@@ -681,3 +681,16 @@
 .shadows-title{
     background-image: url('../TV/title/shadows.png');
 }
+
+.ted-solid{
+    background-color: #35465e;
+}
+.ted-gradient{
+    background: linear-gradient(#00000000,#35465e);
+}
+.ted-poster{
+    background-image: url('../TV/background/ted.webp');
+}
+.ted-title{
+    background-image: url('../TV/title/ted.png');
+}
