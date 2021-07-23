@@ -95,83 +95,28 @@ function tvData() {
     "8.7",
     "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
   ]
-  
-  // Manifest
+
+
+
+  // Ted lasso
   show2 = [
-    "manifest-solid",
-    "manifest-poster",
-    "manifest-gradient",
-    "manifest-title",
-    "Drama &#149 Mystery &#149 3 Seasons &#149 2018 - 2021",
-    "https://www.hulu.com/series/manifest-a1e5ed46-2704-431e-94b0-9aea1560c712",
-    "hulu-green",
-    "Watch on Hulu",
-    "https://www.tvtime.com/en/show/349271",
-    "9.46",
-    "https://reelgood.com/show/manifest-2018",
-    "81",
-    "https://www.imdb.com/title/tt8421350",
-    "7.2",
-    "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."
+    "ted-solid",
+    "ted-poster",
+    "ted-gradient",
+    "ted-title",
+    "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
+    "",
+    "disney",
+    "Watch",
+    "https://www.tvtime.com/en/show/383203",
+    "9.82",
+    "https://reelgood.com/show/ted-lasso-2020",
+    "91",
+    "https://www.imdb.com/title/tt10986410",
+    "8.7",
+    "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
   ]
 
-  // Rick and Morty
-  show5 = [
-    "rick-solid",
-    "rick-poster",
-    "rick-gradient",
-    "rick-title",
-    "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
-    "",
-    "hulu",
-    "Watch",
-    "https://www.tvtime.com/en/show/275274",
-    "8.96",
-    "https://reelgood.com/show/rick-and-morty-2013",
-    "100",
-    "https://www.imdb.com/title/tt2861424",
-    "9.2",
-    "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
-  ]
-  
-  // Always sunny
-  show4 = [
-    "always-solid",
-    "always-poster",
-    "always-gradient",
-    "always-title",
-    "Comedy &#149 14 Seasons &#149 2005 - Present",
-    "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
-    "hulu-green",
-    "Watch on Hulu",
-    "https://www.tvtime.com/en/show/75805",
-    "8.28",
-    "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
-    "90",
-    "https://www.imdb.com/title/tt0472954",
-    "8.8",
-    "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
-  ]
-  
-  // Love Death Robots
-  show6 = [
-    "ldr-solid",
-    "ldr-poster",
-    "ldr-gradient",
-    "ldr-title",
-    "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
-    "https://www.netflix.com/title/80174608",
-    "netflix",
-    "Watch on Netflix",
-    "https://www.tvtime.com/en/show/357888",
-    "8.98",
-    "https://reelgood.com/show/love-death-robots-2019",
-    "86",
-    "https://www.imdb.com/title/tt9561862",
-    "8.5",
-    "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
-  ]
-  
   // shadows
   show3 = [
     "shadows-solid",
@@ -190,6 +135,86 @@ function tvData() {
     "8.5",
     "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
   ]
+  
+  // Manifest
+  show4 = [
+    "manifest-solid",
+    "manifest-poster",
+    "manifest-gradient",
+    "manifest-title",
+    "Drama &#149 Mystery &#149 3 Seasons &#149 2018 - 2021",
+    "https://www.hulu.com/series/manifest-a1e5ed46-2704-431e-94b0-9aea1560c712",
+    "hulu-green",
+    "Watch on Hulu",
+    "https://www.tvtime.com/en/show/349271",
+    "9.46",
+    "https://reelgood.com/show/manifest-2018",
+    "81",
+    "https://www.imdb.com/title/tt8421350",
+    "7.2",
+    "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."
+  ]
+
+  // Always sunny
+  show5 = [
+    "always-solid",
+    "always-poster",
+    "always-gradient",
+    "always-title",
+    "Comedy &#149 14 Seasons &#149 2005 - Present",
+    "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
+    "hulu-green",
+    "Watch on Hulu",
+    "https://www.tvtime.com/en/show/75805",
+    "8.28",
+    "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+    "90",
+    "https://www.imdb.com/title/tt0472954",
+    "8.8",
+    "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+  ]
+
+  // Rick and Morty
+  show6 = [
+    "rick-solid",
+    "rick-poster",
+    "rick-gradient",
+    "rick-title",
+    "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
+    "",
+    "hulu",
+    "Watch",
+    "https://www.tvtime.com/en/show/275274",
+    "8.96",
+    "https://reelgood.com/show/rick-and-morty-2013",
+    "100",
+    "https://www.imdb.com/title/tt2861424",
+    "9.2",
+    "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
+  ]
+  
+  
+  
+  // Love Death Robots
+  show7 = [
+    "ldr-solid",
+    "ldr-poster",
+    "ldr-gradient",
+    "ldr-title",
+    "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
+    "https://www.netflix.com/title/80174608",
+    "netflix",
+    "Watch on Netflix",
+    "https://www.tvtime.com/en/show/357888",
+    "8.98",
+    "https://reelgood.com/show/love-death-robots-2019",
+    "86",
+    "https://www.imdb.com/title/tt9561862",
+    "8.5",
+    "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
+  ]
+  
+  
   
   
  
