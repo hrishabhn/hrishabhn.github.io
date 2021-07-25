@@ -135,9 +135,28 @@ function tvData() {
     "8.5",
     "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
   ]
+
+  // drugs
+  show4 = [
+    "drugs-solid",
+    "drugs-poster",
+    "drugs-gradient",
+    "drugs-title",
+    "Comedy &#149 Crime &#149 Drama &#149 3 Seasons &#149 2019 - Present",
+    "https://www.netflix.com/title/80218448",
+    "netflix",
+    "Watch on Netflix",
+    "https://www.tvtime.com/en/show/361034",
+    "9.28",
+    "https://reelgood.com/show/how-to-sell-drugs-online-fast-2019",
+    "69",
+    "https://www.imdb.com/title/tt9184994",
+    "7.9",
+    "To win back the love of his life, a high school student and his best friend launch Europe's largest online drug business from their teenage bedroom.",
+  ]
   
   // Manifest
-  show4 = [
+  show7 = [
     "manifest-solid",
     "manifest-poster",
     "manifest-gradient",
@@ -156,7 +175,7 @@ function tvData() {
   ]
 
   // Always sunny
-  show5 = [
+  show8 = [
     "always-solid",
     "always-poster",
     "always-gradient",
@@ -175,7 +194,7 @@ function tvData() {
   ]
 
   // Rick and Morty
-  show6 = [
+  show9 = [
     "rick-solid",
     "rick-poster",
     "rick-gradient",
@@ -196,7 +215,7 @@ function tvData() {
   
   
   // Love Death Robots
-  show7 = [
+  show10 = [
     "ldr-solid",
     "ldr-poster",
     "ldr-gradient",
