@@ -694,3 +694,16 @@
 .ted-title{
     background-image: url('../TV/title/ted.png');
 }
+
+.drugs-solid{
+    background-color: #050373;
+}
+.drugs-gradient{
+    background: linear-gradient(#00000000,#050373);
+}
+.drugs-poster{
+    background-image: url('../TV/background/drugs.jpg');
+}
+.drugs-title{
+    background-image: url('../TV/title/drugs.png');
+}
