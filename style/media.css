@@ -88,15 +88,15 @@
 
 .tv-card-gradient{
     display: flex;
-    position: absolute;
-    vertical-align: bottom;
-    bottom: 0px;
+    position: relative;
+    /* vertical-align: bottom; */
+    /* bottom: 0px; */
     /* vertical-align: bottom; */
 
     height: 75%;
     width: 100%;
     /* background-color: violet; */
-    background: linear-gradient(#00000000,#00000099);
+    background: linear-gradient(#00000000,#00000066);
 }
 
 
