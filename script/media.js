@@ -624,6 +624,25 @@ function tvData() {
   //   "",
   // ]
   
+
+  show1 = [
+    "jojo-solid",
+    "jojo-poster",
+    "jojo-gradient",
+    "jojo-title",
+    "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
+    "https://www.netflix.com/title/80179831",
+    "netflix",
+    "Watch on Netflix",
+    "https://www.tvtime.com/en/show/262954",
+    "9.74",
+    "https://reelgood.com/show/jojos-bizarre-adventure-2012",
+    "72",
+    "https://www.imdb.com/title/tt2359704",
+    "8.4",
+    "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
+  ]
+  
   // Spy
   show43 = [
     "spy-solid",
