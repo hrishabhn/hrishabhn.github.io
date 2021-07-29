@@ -96,7 +96,7 @@
     height: 75%;
     width: 100%;
     /* background-color: violet; */
-    background: linear-gradient(#00000000,#00000066);
+    background: linear-gradient(#00000000,rgba(0, 0, 0, 0.5));
 }
 
 
