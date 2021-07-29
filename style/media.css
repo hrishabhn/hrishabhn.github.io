@@ -93,6 +93,7 @@
     /* bottom: 0px; */
     /* vertical-align: bottom; */
 
+    margin-bottom: -1px;
     height: 75%;
     width: 100%;
     /* background-color: violet; */
