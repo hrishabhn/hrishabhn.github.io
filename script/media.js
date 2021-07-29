@@ -96,25 +96,23 @@ function tvData() {
     "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
   ]
 
-
-
-  // Ted lasso
+  // drugs
   show2 = [
-    "ted-solid",
-    "ted-poster",
-    "ted-gradient",
-    "ted-title",
-    "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
-    "",
-    "disney",
-    "Watch",
-    "https://www.tvtime.com/en/show/383203",
-    "9.82",
-    "https://reelgood.com/show/ted-lasso-2020",
-    "91",
-    "https://www.imdb.com/title/tt10986410",
-    "8.7",
-    "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+    "drugs-solid",
+    "drugs-poster",
+    "drugs-gradient",
+    "drugs-title",
+    "Comedy &#149 Crime &#149 Drama &#149 3 Seasons &#149 2019 - Present",
+    "https://www.netflix.com/title/80218448",
+    "netflix",
+    "Watch on Netflix",
+    "https://www.tvtime.com/en/show/361034",
+    "9.28",
+    "https://reelgood.com/show/how-to-sell-drugs-online-fast-2019",
+    "71",
+    "https://www.imdb.com/title/tt9184994",
+    "7.9",
+    "To win back the love of his life, a high school student and his best friend launch Europe's largest online drug business from their teenage bedroom.",
   ]
 
   // shadows
@@ -136,23 +134,23 @@ function tvData() {
     "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
   ]
 
-  // drugs
+  // Ted lasso
   show4 = [
-    "drugs-solid",
-    "drugs-poster",
-    "drugs-gradient",
-    "drugs-title",
-    "Comedy &#149 Crime &#149 Drama &#149 3 Seasons &#149 2019 - Present",
-    "https://www.netflix.com/title/80218448",
-    "netflix",
-    "Watch on Netflix",
-    "https://www.tvtime.com/en/show/361034",
-    "9.28",
-    "https://reelgood.com/show/how-to-sell-drugs-online-fast-2019",
-    "69",
-    "https://www.imdb.com/title/tt9184994",
-    "7.9",
-    "To win back the love of his life, a high school student and his best friend launch Europe's largest online drug business from their teenage bedroom.",
+    "ted-solid",
+    "ted-poster",
+    "ted-gradient",
+    "ted-title",
+    "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
+    "",
+    "disney",
+    "Watch",
+    "https://www.tvtime.com/en/show/383203",
+    "9.82",
+    "https://reelgood.com/show/ted-lasso-2020",
+    "91",
+    "https://www.imdb.com/title/tt10986410",
+    "8.7",
+    "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
   ]
   
   // Manifest
