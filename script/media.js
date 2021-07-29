@@ -4,6 +4,120 @@ function media(){
   podPopulate()
 }
 
+
+  
+  // // South park
+  // show11 = [
+  //   "southpark-solid",
+  //   "southpark-poster",
+  //   "southpark-gradient",
+  //   "southpark-title",
+  //   "Animation &#149 Comedy &#149 24 Seasons 1997 - Present",
+  //   "https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series",
+  //   "hbo",
+  //   "Watch on HBO Max",
+  //   "https://www.tvtime.com/en/show/75897",
+  //   "https://reelgood.com/show/south-park-1997",
+  //   "https://www.imdb.com/title/tt0121955",
+  // ]
+  
+  // // Dave
+  // show12 = [
+  //   "dave-solid",
+  //   "dave-poster",
+  //   "dave-gradient",
+  //   "dave-title",
+  //   "Comedy &#149 2 Seasons &#149 2020 - 2021",
+  //   "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
+  //   "hulu-green",
+  //   "Watch on Hulu",
+  //   "https://www.tvtime.com/en/show/354905",
+  //   "",
+  //   "https://reelgood.com/show/dave-2020",
+  //   "",
+  //   "https://www.imdb.com/title/tt8531222",
+  //   "",
+  //   "",
+  // ]
+  
+  
+  
+  // // New girl
+  // show14 = [
+  //   "newgirl-solid",
+  //   "newgirl-poster",
+  //   "newgirl-gradient",
+  //   "newgirl-title",
+  //   "Comedy &#149 7 Seasons &#149 2011 - 2018",
+  //   "https://www.netflix.com/title/70196145",
+  //   "netflix",
+  //   "Watch on Netflix",
+  //   "https://www.tvtime.com/en/show/248682",
+  //   "",
+  //   "https://reelgood.com/show/new-girl-2011",
+  //   "",
+  //   "https://www.imdb.com/title/tt1826940",
+  //   "",
+  //   "",
+  // ]
+  
+  // // Fresh prince
+  // show15 = [
+  //   "fresh-solid",
+  //   "fresh-poster",
+  //   "fresh-gradient",
+  //   "fresh-title",
+  //   "Comedy &#149 6 Seasons &#149 1990 - 1996",
+  //   "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
+  //   "hbo",
+  //   "Watch on HBO Max",
+  //   "https://www.tvtime.com/en/show/76738",
+  //   "",
+  //   "https://reelgood.com/show/the-fresh-prince-of-bel-air-1990",
+  //   "",
+  //   "https://www.imdb.com/title/tt0098800",
+  //   "",
+  //   "",
+  // ]
+  
+  // // Last week tonight
+  // show16 = [
+  //   "last-solid",
+  //   "last-poster",
+  //   "last-gradient",
+  //   "last-title",
+  //   "Talk Show &#149 8 Seasons &#149 2020 - Present",
+  //   "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
+  //   "hbo",
+  //   "Watch on HBO Max",
+  //   "https://www.tvtime.com/en/show/278518",
+  //   "",
+  //   "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
+  //   "",
+  //   "https://www.imdb.com/title/tt3530232",
+  //   "",
+  //   "",
+  // ]
+
+  // // blackpink
+  // show4 = [
+  //   "blackpink-solid",
+  //   "blackpink-poster",
+  //   "blackpink-gradient",
+  //   "blackpink-title",
+  //   "Documentary &#149 Music &#149 2020",
+  //   "https://www.netflix.com/title/81106901",
+  //   "netflix",
+  //   "Watch on Netflix",
+  //   "",
+  //   "",
+  //   "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
+  //   "63",
+  //   "https://www.imdb.com/title/tt13058290",
+  //   "7.5",
+  //   "Blackpink: Light Up the Sky is a 2020 documentary film directed by Caroline Suh, that tells the story of South Korean girl group Blackpink as bandmates and as individuals, and details their rise to fame.",
+  // ]
+
 function tvData() {
   var hide = [
     "hidden-always",
@@ -134,24 +248,24 @@ function tvData() {
     "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
   ]
 
-  // Ted lasso
   show4 = [
-    "ted-solid",
-    "ted-poster",
-    "ted-gradient",
-    "ted-title",
-    "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
-    "",
-    "disney",
-    "Watch",
-    "https://www.tvtime.com/en/show/383203",
-    "9.82",
-    "https://reelgood.com/show/ted-lasso-2020",
-    "91",
-    "https://www.imdb.com/title/tt10986410",
-    "8.7",
-    "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+    "jojo-solid",
+    "jojo-poster",
+    "jojo-gradient",
+    "jojo-title",
+    "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
+    "https://www.netflix.com/title/80179831",
+    "netflix",
+    "Watch on Netflix",
+    "https://www.tvtime.com/en/show/262954",
+    "9.74",
+    "https://reelgood.com/show/jojos-bizarre-adventure-2012",
+    "72",
+    "https://www.imdb.com/title/tt2359704",
+    "8.4",
+    "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
   ]
+
   
   // Manifest
   show7 = [
@@ -172,27 +286,27 @@ function tvData() {
     "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."
   ]
 
-  // Always sunny
-  show8 = [
-    "always-solid",
-    "always-poster",
-    "always-gradient",
-    "always-title",
-    "Comedy &#149 14 Seasons &#149 2005 - Present",
-    "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
-    "hulu-green",
-    "Watch on Hulu",
-    "https://www.tvtime.com/en/show/75805",
-    "8.28",
-    "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
-    "90",
-    "https://www.imdb.com/title/tt0472954",
-    "8.8",
-    "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+  // Ted lasso
+  show9 = [
+    "ted-solid",
+    "ted-poster",
+    "ted-gradient",
+    "ted-title",
+    "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
+    "",
+    "disney",
+    "Watch",
+    "https://www.tvtime.com/en/show/383203",
+    "9.82",
+    "https://reelgood.com/show/ted-lasso-2020",
+    "91",
+    "https://www.imdb.com/title/tt10986410",
+    "8.7",
+    "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
   ]
 
   // Rick and Morty
-  show9 = [
+  show10 = [
     "rick-solid",
     "rick-poster",
     "rick-gradient",
@@ -212,24 +326,7 @@ function tvData() {
   
   
   
-  // Love Death Robots
-  show10 = [
-    "ldr-solid",
-    "ldr-poster",
-    "ldr-gradient",
-    "ldr-title",
-    "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
-    "https://www.netflix.com/title/80174608",
-    "netflix",
-    "Watch on Netflix",
-    "https://www.tvtime.com/en/show/357888",
-    "8.98",
-    "https://reelgood.com/show/love-death-robots-2019",
-    "86",
-    "https://www.imdb.com/title/tt9561862",
-    "8.5",
-    "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
-  ]
+  
   
   
   
@@ -255,8 +352,46 @@ function tvData() {
     "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
   ]
 
-  // Atlanta
+  // Love Death Robots
   show12 = [
+    "ldr-solid",
+    "ldr-poster",
+    "ldr-gradient",
+    "ldr-title",
+    "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
+    "https://www.netflix.com/title/80174608",
+    "netflix",
+    "Watch on Netflix",
+    "https://www.tvtime.com/en/show/357888",
+    "8.98",
+    "https://reelgood.com/show/love-death-robots-2019",
+    "86",
+    "https://www.imdb.com/title/tt9561862",
+    "8.5",
+    "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
+  ]
+
+  // Always sunny
+  show13 = [
+    "always-solid",
+    "always-poster",
+    "always-gradient",
+    "always-title",
+    "Comedy &#149 14 Seasons &#149 2005 - Present",
+    "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
+    "hulu-green",
+    "Watch on Hulu",
+    "https://www.tvtime.com/en/show/75805",
+    "8.28",
+    "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+    "90",
+    "https://www.imdb.com/title/tt0472954",
+    "8.8",
+    "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+  ]
+
+  // Atlanta
+  show14 = [
     "atlanta-solid",
     "atlanta-poster",
     "atlanta-gradient",
@@ -274,137 +409,8 @@ function tvData() {
     "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
   ]
   
-  // Lost
-  show13 = [
-    "lost-solid",
-    "lost-poster",
-    "lost-gradient",
-    "lost-title",
-    "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
-    "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
-    "hulu",
-    "Watch on Hulu",
-    "https://www.tvtime.com/en/show/73739",
-    "9.16",
-    "https://reelgood.com/show/lost-2004",
-    "91",
-    "https://www.imdb.com/title/tt0411008",
-    "8.3",
-    "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
-  ]
+  
 
-  
-  // // South park
-  // show11 = [
-  //   "southpark-solid",
-  //   "southpark-poster",
-  //   "southpark-gradient",
-  //   "southpark-title",
-  //   "Animation &#149 Comedy &#149 24 Seasons 1997 - Present",
-  //   "https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series",
-  //   "hbo",
-  //   "Watch on HBO Max",
-  //   "https://www.tvtime.com/en/show/75897",
-  //   "https://reelgood.com/show/south-park-1997",
-  //   "https://www.imdb.com/title/tt0121955",
-  // ]
-  
-  // // Dave
-  // show12 = [
-  //   "dave-solid",
-  //   "dave-poster",
-  //   "dave-gradient",
-  //   "dave-title",
-  //   "Comedy &#149 2 Seasons &#149 2020 - 2021",
-  //   "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
-  //   "hulu-green",
-  //   "Watch on Hulu",
-  //   "https://www.tvtime.com/en/show/354905",
-  //   "",
-  //   "https://reelgood.com/show/dave-2020",
-  //   "",
-  //   "https://www.imdb.com/title/tt8531222",
-  //   "",
-  //   "",
-  // ]
-  
-  
-  
-  // // New girl
-  // show14 = [
-  //   "newgirl-solid",
-  //   "newgirl-poster",
-  //   "newgirl-gradient",
-  //   "newgirl-title",
-  //   "Comedy &#149 7 Seasons &#149 2011 - 2018",
-  //   "https://www.netflix.com/title/70196145",
-  //   "netflix",
-  //   "Watch on Netflix",
-  //   "https://www.tvtime.com/en/show/248682",
-  //   "",
-  //   "https://reelgood.com/show/new-girl-2011",
-  //   "",
-  //   "https://www.imdb.com/title/tt1826940",
-  //   "",
-  //   "",
-  // ]
-  
-  // // Fresh prince
-  // show15 = [
-  //   "fresh-solid",
-  //   "fresh-poster",
-  //   "fresh-gradient",
-  //   "fresh-title",
-  //   "Comedy &#149 6 Seasons &#149 1990 - 1996",
-  //   "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
-  //   "hbo",
-  //   "Watch on HBO Max",
-  //   "https://www.tvtime.com/en/show/76738",
-  //   "",
-  //   "https://reelgood.com/show/the-fresh-prince-of-bel-air-1990",
-  //   "",
-  //   "https://www.imdb.com/title/tt0098800",
-  //   "",
-  //   "",
-  // ]
-  
-  // // Last week tonight
-  // show16 = [
-  //   "last-solid",
-  //   "last-poster",
-  //   "last-gradient",
-  //   "last-title",
-  //   "Talk Show &#149 8 Seasons &#149 2020 - Present",
-  //   "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
-  //   "hbo",
-  //   "Watch on HBO Max",
-  //   "https://www.tvtime.com/en/show/278518",
-  //   "",
-  //   "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
-  //   "",
-  //   "https://www.imdb.com/title/tt3530232",
-  //   "",
-  //   "",
-  // ]
-
-  // // blackpink
-  // show4 = [
-  //   "blackpink-solid",
-  //   "blackpink-poster",
-  //   "blackpink-gradient",
-  //   "blackpink-title",
-  //   "Documentary &#149 Music &#149 2020",
-  //   "https://www.netflix.com/title/81106901",
-  //   "netflix",
-  //   "Watch on Netflix",
-  //   "",
-  //   "",
-  //   "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
-  //   "63",
-  //   "https://www.imdb.com/title/tt13058290",
-  //   "7.5",
-  //   "Blackpink: Light Up the Sky is a 2020 documentary film directed by Caroline Suh, that tells the story of South Korean girl group Blackpink as bandmates and as individuals, and details their rise to fame.",
-  // ]
   
   // Twin peaks
   show17 = [
@@ -625,24 +631,27 @@ function tvData() {
   // ]
   
 
-  show1 = [
-    "jojo-solid",
-    "jojo-poster",
-    "jojo-gradient",
-    "jojo-title",
-    "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
-    "https://www.netflix.com/title/80179831",
-    "netflix",
-    "Watch on Netflix",
-    "https://www.tvtime.com/en/show/262954",
-    "9.74",
-    "https://reelgood.com/show/jojos-bizarre-adventure-2012",
-    "72",
-    "https://www.imdb.com/title/tt2359704",
-    "8.4",
-    "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
-  ]
   
+  
+  // Lost
+  show42 = [
+    "lost-solid",
+    "lost-poster",
+    "lost-gradient",
+    "lost-title",
+    "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
+    "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
+    "hulu",
+    "Watch on Hulu",
+    "https://www.tvtime.com/en/show/73739",
+    "9.16",
+    "https://reelgood.com/show/lost-2004",
+    "91",
+    "https://www.imdb.com/title/tt0411008",
+    "8.3",
+    "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
+  ]
+
   // Spy
   show43 = [
     "spy-solid",
