@@ -707,3 +707,16 @@
 .drugs-title{
     background-image: url('../TV/title/drugs.png');
 }
+
+.jojo-solid{
+    background-color: #2C2850;
+}
+.jojo-gradient{
+    background: linear-gradient(#00000000,#2C2850);
+}
+.jojo-poster{
+    background-image: url('../TV/background/jojo.webp');
+}
+.jojo-title{
+    background-image: url('../TV/title/jojo.png');
+}
