@@ -49,9 +49,9 @@
     scroll-margin-left: 15px; */
 
     transition: all 0.15s;
-    border-style: solid;
-    border-width: 0.1px;
-    border-color: #333;
+    /* border-style: solid; */
+    /* border-width: 0.1px; */
+    /* border-color: #333; */
 }
 .media-card:active{
     scale: 0.975;
@@ -93,7 +93,7 @@
     /* bottom: 0px; */
     /* vertical-align: bottom; */
 
-    margin-bottom: -1px;
+    /* margin-bottom: -1px; */
     height: 75%;
     width: 100%;
     /* background-color: violet; */
