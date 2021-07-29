@@ -50,8 +50,8 @@
 
     transition: all 0.15s;
     border-style: solid;
-    border-width: 1px;
-    border-color: #111;
+    border-width: 0.1px;
+    border-color: #333;
 }
 .media-card:active{
     scale: 0.975;
@@ -89,7 +89,7 @@
 .tv-card-gradient{
     display: flex;
     position: relative;
-    /* vertical-align: bottom; */
+    vertical-align: bottom;
     /* bottom: 0px; */
     /* vertical-align: bottom; */
 
@@ -346,7 +346,7 @@
 
     border-top-style: solid;
     border-width: 1px;
-    border-color: #111;
+    border-color: #333;
 }
 .tv-popup-tab{
     display: block;
@@ -941,9 +941,9 @@
     .media-card{
         border-color: #ccc;
     }
-    .tv-popup-modal{
+    /* .tv-popup-modal{
         border-color: #ccc;
-    }
+    } */
     .tv-popup-close{
         background-color: var(--white-40);
         fill: var(--black-80);
