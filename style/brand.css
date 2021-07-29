@@ -241,9 +241,12 @@
 .lifx{
     background:linear-gradient(to bottom right,#409,#21004d);
 }
-
 .hko{
     background: linear-gradient(to bottom right, #0060AD, #003561);
+}
+.cathay{
+    /* background: linear-gradient(to bottom right, #00645A, #00b09e); */
+    background: linear-gradient(to bottom right, #00645A, #00645A);
 }
 
 
