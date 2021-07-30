@@ -248,7 +248,9 @@
     /* background: linear-gradient(to bottom right, #00645A, #00b09e); */
     background: linear-gradient(to bottom right, #00645A, #00645A);
 }
-
+.drops{
+    background: linear-gradient(160deg,#fd9536,#a42f80 31%,#2c146c 79%);
+}
 
 
 /* MEDIA */
