@@ -20,7 +20,8 @@ function getUserLocale() {
         const pokFuLam = (lat > 22.252) && (lat < 22.273) && (lon > 114.121) && (lon < 114.135);
         const cyberport = (lat > 22.260) && (lat < 22.264) && (lon > 114.127) && (lon < 114.131);
         const home = (lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135);
-    
+
+        const westHighway = (lat > 22.308) && (lat < 22.41) && (lon > 113.96) && (lon < 114.165);
         const tuenMun = (lat > 22.37) && (lat < 22.41) && (lon > 113.96) && (lon < 113.985);
         const work = (lat > 22.3905) && (lat < 22.392) && (lon > 113.9695) && (lon < 113.971);
        
@@ -28,7 +29,6 @@ function getUserLocale() {
         const central = (lat > 22.281) && (lat < 22.290) && (lon > 114.156) && (lon < 114.159);
         const causeway = (lat > 22.270) && (lat < 22.283) && (lon > 114.180) && (lon < 114.190);
         const westKowloon = (lat > 22.298) && (lat < 22.308) && (lon > 114.154) && (lon < 114.165);
-        const westHighway = (lat > 22.308) && (lat < 22.37) && (lon > 113.960) && (lon < 114.165);
         const tsimShaTsui = (lat > 22.292) && (lat < 22.303) && (lon > 114.165) && (lon < 114.177);
     
         const london = (lat > 51.2) && (lat < 51.7) && (lon > -0.5) && (lon < 0.3);
