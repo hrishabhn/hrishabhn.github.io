@@ -26,6 +26,11 @@
     background-image: url('../books/martian.jpg');
 }
 
+.speechless-cover{
+    background-image: url('../books/speechless.jpg');
+}
+
+
 /* podcasts */
 
 .acquired-solid{

@@ -4,120 +4,6 @@ function media(){
   podPopulate()
 }
 
-
-  
-  // // South park
-  // show11 = [
-  //   "southpark-solid",
-  //   "southpark-poster",
-  //   "southpark-gradient",
-  //   "southpark-title",
-  //   "Animation &#149 Comedy &#149 24 Seasons 1997 - Present",
-  //   "https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series",
-  //   "hbo",
-  //   "Watch on HBO Max",
-  //   "https://www.tvtime.com/en/show/75897",
-  //   "https://reelgood.com/show/south-park-1997",
-  //   "https://www.imdb.com/title/tt0121955",
-  // ]
-  
-  // // Dave
-  // show12 = [
-  //   "dave-solid",
-  //   "dave-poster",
-  //   "dave-gradient",
-  //   "dave-title",
-  //   "Comedy &#149 2 Seasons &#149 2020 - 2021",
-  //   "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
-  //   "hulu-green",
-  //   "Watch on Hulu",
-  //   "https://www.tvtime.com/en/show/354905",
-  //   "",
-  //   "https://reelgood.com/show/dave-2020",
-  //   "",
-  //   "https://www.imdb.com/title/tt8531222",
-  //   "",
-  //   "",
-  // ]
-  
-  
-  
-  // // New girl
-  // show14 = [
-  //   "newgirl-solid",
-  //   "newgirl-poster",
-  //   "newgirl-gradient",
-  //   "newgirl-title",
-  //   "Comedy &#149 7 Seasons &#149 2011 - 2018",
-  //   "https://www.netflix.com/title/70196145",
-  //   "netflix",
-  //   "Watch on Netflix",
-  //   "https://www.tvtime.com/en/show/248682",
-  //   "",
-  //   "https://reelgood.com/show/new-girl-2011",
-  //   "",
-  //   "https://www.imdb.com/title/tt1826940",
-  //   "",
-  //   "",
-  // ]
-  
-  // // Fresh prince
-  // show15 = [
-  //   "fresh-solid",
-  //   "fresh-poster",
-  //   "fresh-gradient",
-  //   "fresh-title",
-  //   "Comedy &#149 6 Seasons &#149 1990 - 1996",
-  //   "https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series",
-  //   "hbo",
-  //   "Watch on HBO Max",
-  //   "https://www.tvtime.com/en/show/76738",
-  //   "",
-  //   "https://reelgood.com/show/the-fresh-prince-of-bel-air-1990",
-  //   "",
-  //   "https://www.imdb.com/title/tt0098800",
-  //   "",
-  //   "",
-  // ]
-  
-  // // Last week tonight
-  // show16 = [
-  //   "last-solid",
-  //   "last-poster",
-  //   "last-gradient",
-  //   "last-title",
-  //   "Talk Show &#149 8 Seasons &#149 2020 - Present",
-  //   "https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series",
-  //   "hbo",
-  //   "Watch on HBO Max",
-  //   "https://www.tvtime.com/en/show/278518",
-  //   "",
-  //   "https://reelgood.com/show/last-week-tonight-with-john-oliver-2014",
-  //   "",
-  //   "https://www.imdb.com/title/tt3530232",
-  //   "",
-  //   "",
-  // ]
-
-  // // blackpink
-  // show4 = [
-  //   "blackpink-solid",
-  //   "blackpink-poster",
-  //   "blackpink-gradient",
-  //   "blackpink-title",
-  //   "Documentary &#149 Music &#149 2020",
-  //   "https://www.netflix.com/title/81106901",
-  //   "netflix",
-  //   "Watch on Netflix",
-  //   "",
-  //   "",
-  //   "https://reelgood.com/movie/blackpink-light-up-the-sky-2020",
-  //   "63",
-  //   "https://www.imdb.com/title/tt13058290",
-  //   "7.5",
-  //   "Blackpink: Light Up the Sky is a 2020 documentary film directed by Caroline Suh, that tells the story of South Korean girl group Blackpink as bandmates and as individuals, and details their rise to fame.",
-  // ]
-
 function tvData() {
   var hide = [
     "hidden-always",
@@ -1043,7 +929,7 @@ function bookData(){
     // "https://smart.link/o3waqx4wg1gdn?asin=B01N4DCBK6",
   ]
 
-  var book_2 = [
+  var book_4 = [
     "ride-cover",
     "audible://view?section=discover&asin=0525499334",
     // "https://smart.link/o3waqx4wg1gdn?asin=0525499334",
@@ -1055,11 +941,17 @@ function bookData(){
     // "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF",
   ]
 
+  var book_2 = [
+    "speechless-cover",
+    "audible://view?section=discover&asin=1665046074",
+  ]
+
   var bookAll = [
     null,
     book_1,
     book_2,
     book_3,
+    book_4,
   ]
 
   return bookAll
@@ -1069,7 +961,7 @@ function bookPopulate() {
   bookAll = bookData()
   var cardClass = "media-card book-card ";
 
-  for (i = 1; i < 4; i++){
+  for (i = 1; i < 5; i++){
     var itemid = [
       "book-".concat(i),
     ]
