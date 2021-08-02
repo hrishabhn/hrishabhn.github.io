@@ -2,7 +2,7 @@ function calendarDate() {
     fullDate = new Date();
 
     const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-    const months = ["JAN","FEB","MAR","APR","MAY","JUN","July"]
+    const months = ["JAN","FEB","MAR","APR","MAY","JUN","July","August","September"]
 
     hourNow = fullDate.getHours();
 
