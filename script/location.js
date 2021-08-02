@@ -14,14 +14,14 @@ function getUserLocale() {
         // lat = 51.5
         // lon = 0
 
-        // console.log(lat)
-        // console.log(lon)
+        console.log(lat)
+        console.log(lon)
     
         const pokFuLam = (lat > 22.252) && (lat < 22.273) && (lon > 114.121) && (lon < 114.135);
         const cyberport = (lat > 22.260) && (lat < 22.264) && (lon > 114.127) && (lon < 114.131);
         const home = (lat > 22.260) && (lat < 22.264) && (lon > 114.131) && (lon < 114.135);
 
-        const westHighway = (lat > 22.308) && (lat < 22.41) && (lon > 113.96) && (lon < 114.165);
+        const westHighway = (lat > 22.308) && (lat < 22.37) && (lon > 113.96) && (lon < 114.165);
         const tuenMun = (lat > 22.37) && (lat < 22.41) && (lon > 113.96) && (lon < 113.985);
         const work = (lat > 22.3905) && (lat < 22.392) && (lon > 113.9695) && (lon < 113.971);
        
@@ -33,6 +33,7 @@ function getUserLocale() {
     
         const london = (lat > 51.2) && (lat < 51.7) && (lon > -0.5) && (lon < 0.3);
 
+        console.log(work)
 
         // 22.273,114.121 top left
         // 22.252,114.135 borrom right
