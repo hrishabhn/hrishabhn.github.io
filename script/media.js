@@ -4,6 +4,86 @@ function media(){
   podPopulate()
 }
 
+
+  // // Loki
+  // show1 = [
+  //   "loki-solid",
+  //   "loki-poster",
+  //   "loki-gradient",
+  //   "loki-title",
+  //   "Action & Adventure &#149 Fantasy &#149 1 Season &#149 2021 - Present",
+  //   "",
+  //   "disney",
+  //   "Watch",
+  //   "https://www.tvtime.com/en/show/362472",
+  //   "9.74",
+  //   "https://reelgood.com/show/loki-2021",
+  //   "95",
+  //   "https://www.imdb.com/title/tt9140554",
+  //   "8.7",
+  //   "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
+  // ]
+
+  // // drugs
+  // show2 = [
+  //   "drugs-solid",
+  //   "drugs-poster",
+  //   "drugs-gradient",
+  //   "drugs-title",
+  //   "Comedy &#149 Crime &#149 Drama &#149 3 Seasons &#149 2019 - Present",
+  //   "https://www.netflix.com/title/80218448",
+  //   "netflix",
+  //   "Watch on Netflix",
+  //   "https://www.tvtime.com/en/show/361034",
+  //   "9.28",
+  //   "https://reelgood.com/show/how-to-sell-drugs-online-fast-2019",
+  //   "71",
+  //   "https://www.imdb.com/title/tt9184994",
+  //   "7.9",
+  //   "To win back the love of his life, a high school student and his best friend launch Europe's largest online drug business from their teenage bedroom.",
+  // ]
+
+  // // shadows
+  // show3 = [
+  //   "shadows-solid",
+  //   "shadows-poster",
+  //   "shadows-gradient",
+  //   "shadows-title",
+  //   "Comedy &#149 Fantasy &#149 Horror &#149 2 Seasons &#149 2019 - Present",
+  //   "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
+  //   "hulu-green",
+  //   "Watch on Hulu",
+  //   "https://www.tvtime.com/en/show/358211",
+  //   "9.38",
+  //   "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
+  //   "86",
+  //   "https://www.imdb.com/title/tt7908628",
+  //   "8.5",
+  //   "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
+  // ]
+
+  
+
+  
+  // // Manifest
+  // show7 = [
+  //   "manifest-solid",
+  //   "manifest-poster",
+  //   "manifest-gradient",
+  //   "manifest-title",
+  //   "Drama &#149 Mystery &#149 3 Seasons &#149 2018 - 2021",
+  //   "https://www.hulu.com/series/manifest-a1e5ed46-2704-431e-94b0-9aea1560c712",
+  //   "hulu-green",
+  //   "Watch on Hulu",
+  //   "https://www.tvtime.com/en/show/349271",
+  //   "9.46",
+  //   "https://reelgood.com/show/manifest-2018",
+  //   "81",
+  //   "https://www.imdb.com/title/tt8421350",
+  //   "7.2",
+  //   "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."
+  // ]
+
 function tvData() {
   var hide = [
     "hidden-always",
@@ -75,64 +155,25 @@ function tvData() {
   var show49 = hide
   var show50 = hide
   
-
-
-  // Loki
+  // Always sunny
   show1 = [
-    "loki-solid",
-    "loki-poster",
-    "loki-gradient",
-    "loki-title",
-    "Action & Adventure &#149 Fantasy &#149 1 Season &#149 2021 - Present",
-    "",
-    "disney",
-    "Watch",
-    "https://www.tvtime.com/en/show/362472",
-    "9.74",
-    "https://reelgood.com/show/loki-2021",
-    "95",
-    "https://www.imdb.com/title/tt9140554",
-    "8.7",
-    "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
-  ]
-
-  // drugs
-  show2 = [
-    "drugs-solid",
-    "drugs-poster",
-    "drugs-gradient",
-    "drugs-title",
-    "Comedy &#149 Crime &#149 Drama &#149 3 Seasons &#149 2019 - Present",
-    "https://www.netflix.com/title/80218448",
-    "netflix",
-    "Watch on Netflix",
-    "https://www.tvtime.com/en/show/361034",
-    "9.28",
-    "https://reelgood.com/show/how-to-sell-drugs-online-fast-2019",
-    "71",
-    "https://www.imdb.com/title/tt9184994",
-    "7.9",
-    "To win back the love of his life, a high school student and his best friend launch Europe's largest online drug business from their teenage bedroom.",
-  ]
-
-  // shadows
-  show3 = [
-    "shadows-solid",
-    "shadows-poster",
-    "shadows-gradient",
-    "shadows-title",
-    "Comedy &#149 Fantasy &#149 Horror &#149 2 Seasons &#149 2019 - Present",
-    "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
+    "always-solid",
+    "always-poster",
+    "always-gradient",
+    "always-title",
+    "Comedy &#149 14 Seasons &#149 2005 - Present",
+    "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
     "hulu-green",
     "Watch on Hulu",
-    "https://www.tvtime.com/en/show/358211",
-    "9.38",
-    "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
-    "86",
-    "https://www.imdb.com/title/tt7908628",
-    "8.5",
-    "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
+    "https://www.tvtime.com/en/show/75805",
+    "8.28",
+    "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+    "90",
+    "https://www.imdb.com/title/tt0472954",
+    "8.8",
+    "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
   ]
+
 
   show4 = [
     "jojo-solid",
@@ -151,26 +192,6 @@ function tvData() {
     "8.4",
     "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
   ]
-
-  
-  // // Manifest
-  // show7 = [
-  //   "manifest-solid",
-  //   "manifest-poster",
-  //   "manifest-gradient",
-  //   "manifest-title",
-  //   "Drama &#149 Mystery &#149 3 Seasons &#149 2018 - 2021",
-  //   "https://www.hulu.com/series/manifest-a1e5ed46-2704-431e-94b0-9aea1560c712",
-  //   "hulu-green",
-  //   "Watch on Hulu",
-  //   "https://www.tvtime.com/en/show/349271",
-  //   "9.46",
-  //   "https://reelgood.com/show/manifest-2018",
-  //   "81",
-  //   "https://www.imdb.com/title/tt8421350",
-  //   "7.2",
-  //   "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."
-  // ]
 
   // Ted lasso
   show9 = [
@@ -257,24 +278,7 @@ function tvData() {
     "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
   ]
 
-  // Always sunny
-  show13 = [
-    "always-solid",
-    "always-poster",
-    "always-gradient",
-    "always-title",
-    "Comedy &#149 14 Seasons &#149 2005 - Present",
-    "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
-    "hulu-green",
-    "Watch on Hulu",
-    "https://www.tvtime.com/en/show/75805",
-    "8.28",
-    "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
-    "90",
-    "https://www.imdb.com/title/tt0472954",
-    "8.8",
-    "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
-  ]
+  
 
   // Atlanta
   show14 = [
