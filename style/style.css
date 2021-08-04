@@ -172,8 +172,8 @@ body{
     cursor: default;
 
     background-color: var(--blue-light);
-    border-bottom-left-radius: 150px 20px;
-    border-bottom-right-radius: 150px 20px;
+    border-bottom-left-radius: 100px 20px;
+    border-bottom-right-radius: 100px 20px;
 }
 
 .header-tray{
@@ -217,7 +217,7 @@ body{
     position: relative;
 
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     color: var(--light-layer-0);
     fill: var(--light-layer-0);
@@ -228,15 +228,15 @@ body{
     /* background-color: green; */
 }
 .header-tray-button:hover{
-    opacity: 0.8;
+    opacity: 0.5;
     /* background-color: var(--black-20); */
 }
 .header-tray-icon{
     display: flex;
     position: relative;
 
-    height: 22px;
-    width: 22px;
+    height: 20px;
+    width: 20px;
 
     margin-bottom: 10px;
 }
