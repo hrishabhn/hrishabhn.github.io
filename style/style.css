@@ -450,8 +450,8 @@ body{
 }
 
 
-.main-container{
-    /* overflow: hidden; */
+#main-container{
+    overflow: hidden;
     position: fixed;
     top: 0px;
     left: clamp(180px,20vw,280px);
@@ -461,6 +461,17 @@ body{
     width: 80vw;
     z-index: 10;
     background: var(--black-100);
+
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+}
+#main-container.sheetback{
+    scale: 0.9;
+    border-radius: 50px;
+
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: #808080; */
 }
 
 .main-new{
@@ -1173,7 +1184,7 @@ body{
         color: var(--dark-layer-1);
         fill: var(--dark-layer-1);
     }
-    .main-container{
+    #main-container{
         background: var(--white-100);
     }
     .header-box{
@@ -1301,7 +1312,7 @@ body{
     .hidden-mobile{
         display: none !important;
     }
-    .main-container{
+    #main-container{
         left: 0px;
         width: 100vw;
         min-width: none;
