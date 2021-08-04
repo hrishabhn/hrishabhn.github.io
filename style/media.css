@@ -314,19 +314,18 @@
 
 
 
-.tv-popup-open{
-    /* top: 0vh; */
+/* .tv-popup-open{
     scale: 1;
 
     opacity: 1;
-    /* -webkit-backdrop-filter: blur(15px); */
-}
+} */
 .tv-popup-closed{
     /* top: 2vh; */
     pointer-events: none;
-    opacity: 0;
-    scale: 0.9;
-    /* -webkit-backdrop-filter: blur(15px); */
+    /* opacity: 0; */
+    /* scale: 0.9; */
+
+    transform: translateY(100%);
 
 }
 .tv-popup-modal{
