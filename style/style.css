@@ -408,7 +408,7 @@ body{
 }
 .status-box-show{
     top: 40px;
-    box-shadow: var(--shaded-light);
+    box-shadow: 0 5px 15px 0px var(--black-40);
 
     /* box-shadow: 0 0 15px var(--black-20); */
 }
