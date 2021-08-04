@@ -230,24 +230,29 @@
     </div>
 
     <div class="main-container">
-        <script src="script/load.js"></script>
-        <script src="script/calendar.js"></script>
-        <script src="script/location.js"></script>
 
+        <div id="main-1" class="main-new">
 
-
-
-        <script src="script/media.js"></script>
-
-        <script src="script/apps.js"></script>
-        <script src="script/date.js"></script>
-        <script src="script/widget.js"></script>
-        <script src="script/bus.js"></script>
-        <script src="script/pages.js"></script>
-
-        <div id="main-1" class="main">
-            <div class="header-box">
-                <p1 class="header-text">Home</p1>
+            <div class="header-container">
+                <div class="header">
+                    Home
+                </div>
+                <div class="header-tray">
+                    <a class="header-tray-button" onclick="popupBusShow('All')"">
+                        <svg class="header-tray-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M53.333 234.667v-64C59.221 170.667 64 165.888 64 160s-4.779-10.667-10.667-10.667C23.915 149.333 0 173.269 0 202.667V224c0 17.643 14.357 32 32 32h21.333C59.221 256 64 251.221 64 245.333s-4.779-10.666-10.667-10.666z"/><path d="M458.667 149.333c-5.888 0-10.667 4.779-10.667 10.667s4.779 10.667 10.667 10.667v64c-5.888 0-10.667 4.779-10.667 10.667S452.779 256 458.667 256H480c17.643 0 32-14.357 32-32v-21.333c0-29.398-23.915-53.334-53.333-53.334z"/><path d="M181.333 448c-5.888 0-10.667 4.779-10.667 10.667h-64c0-5.888-4.779-10.667-10.667-10.667s-10.667 4.779-10.667 10.667V480c0 17.643 14.357 32 32 32H160c17.643 0 32-14.357 32-32v-21.333c0-5.888-4.779-10.667-10.667-10.667z"/><path d="M416 448c-5.888 0-10.667 4.779-10.667 10.667h-64c0-5.888-4.779-10.667-10.667-10.667S320 452.779 320 458.667V480c0 17.643 14.357 32 32 32h42.667c17.643 0 32-14.357 32-32v-21.333c0-5.888-4.779-10.667-10.667-10.667z"/><path d="M416 0H96C66.581 0 42.667 23.936 42.667 53.333V416c0 29.397 23.915 53.333 53.333 53.333h320c29.419 0 53.333-23.936 53.333-53.333V53.333C469.333 23.936 445.419 0 416 0zM138.667 42.667h234.667c17.643 0 32 14.357 32 32s-14.357 32-32 32H138.667c-17.643 0-32-14.357-32-32s14.357-32 32-32zm0 362.666c-17.643 0-32-14.357-32-32s14.357-32 32-32 32 14.357 32 32-14.358 32-32 32zm234.666 0c-17.643 0-32-14.357-32-32s14.357-32 32-32 32 14.357 32 32-14.357 32-32 32zm53.334-138.666c0 17.643-14.357 32-32 32H117.333c-17.643 0-32-14.357-32-32V160c0-17.643 14.357-32 32-32h277.333c17.643 0 32 14.357 32 32v106.667z"/></svg>
+                        <p>Bus</p>
+                    </a>
+                    <!-- <div class="vertical-divider"></div> -->
+                    <a class="header-tray-button" href="google://search">
+                        <svg class="header-tray-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005"><path d="M505.749 475.587l-145.6-145.6c28.203-34.837 45.184-79.104 45.184-127.317C405.333 90.926 314.41.003 202.666.003S0 90.925 0 202.669s90.923 202.667 202.667 202.667c48.213 0 92.48-16.981 127.317-45.184l145.6 145.6c4.16 4.16 9.621 6.251 15.083 6.251s10.923-2.091 15.083-6.251c8.341-8.341 8.341-21.824-.001-30.165zM202.667 362.669c-88.235 0-160-71.765-160-160s71.765-160 160-160 160 71.765 160 160-71.766 160-160 160z"/></svg>
+                        <p>Search</p>
+                    </a>
+                    <!-- <div class="vertical-divider"></div> -->
+                    <a class="header-tray-button">
+                        <svg class="header-tray-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005"><path d="M505.749 475.587l-145.6-145.6c28.203-34.837 45.184-79.104 45.184-127.317C405.333 90.926 314.41.003 202.666.003S0 90.925 0 202.669s90.923 202.667 202.667 202.667c48.213 0 92.48-16.981 127.317-45.184l145.6 145.6c4.16 4.16 9.621 6.251 15.083 6.251s10.923-2.091 15.083-6.251c8.341-8.341 8.341-21.824-.001-30.165zM202.667 362.669c-88.235 0-160-71.765-160-160s71.765-160 160-160 160 71.765 160 160-71.766 160-160 160z"/></svg>
+                        <p>Bus</p>
+                    </a>
+                </div>
             </div>
             
             <span class="search-container hidden-tablet hidden-mobile">
@@ -259,7 +264,8 @@
                 <a class="search-button" href="https://www.google.com.hk/webhp?hl=en"></a>
             </span><span class="search-container hidden-desktop">
                 <span class="search-icon-box">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005"><path d="M505.749 475.587l-145.6-145.6c28.203-34.837 45.184-79.104 45.184-127.317C405.333 90.926 314.41.003 202.666.003S0 90.925 0 202.669s90.923 202.667 202.667 202.667c48.213 0 92.48-16.981 127.317-45.184l145.6 145.6c4.16 4.16 9.621 6.251 15.083 6.251s10.923-2.091 15.083-6.251c8.341-8.341 8.341-21.824-.001-30.165zM202.667 362.669c-88.235 0-160-71.765-160-160s71.765-160 160-160 160 71.765 160 160-71.766 160-160 160z"/></svg>                </span>
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005"><path d="M505.749 475.587l-145.6-145.6c28.203-34.837 45.184-79.104 45.184-127.317C405.333 90.926 314.41.003 202.666.003S0 90.925 0 202.669s90.923 202.667 202.667 202.667c48.213 0 92.48-16.981 127.317-45.184l145.6 145.6c4.16 4.16 9.621 6.251 15.083 6.251s10.923-2.091 15.083-6.251c8.341-8.341 8.341-21.824-.001-30.165zM202.667 362.669c-88.235 0-160-71.765-160-160s71.765-160 160-160 160 71.765 160 160-71.766 160-160 160z"/></svg>
+                </span>
                 <span class="search-text-box">
                     <p class="search-text">Google</p>
                 </span>
@@ -3521,6 +3527,21 @@
         <div class="wallpaper-blur"></div>
     </div> -->
     <!-- <input type="file" name="cal.txt" id="inputfile">  -->
+
+    <script src="script/load.js"></script>
+    <script src="script/calendar.js"></script>
+    <script src="script/location.js"></script>
+
+
+
+
+    <script src="script/media.js"></script>
+
+    <script src="script/apps.js"></script>
+    <script src="script/date.js"></script>
+    <script src="script/widget.js"></script>
+    <script src="script/bus.js"></script>
+    <script src="script/pages.js"></script>
 </body>
 
 </html>""
