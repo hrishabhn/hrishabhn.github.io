@@ -105,3 +105,10 @@ function getUserLocale() {
         locationBasedLoad(userLocale);
     }
 }
+
+var globalLocale = null
+
+function storeLocale(input) {
+    globalLocale = input
+    // console.log(globalLocale)
+}
