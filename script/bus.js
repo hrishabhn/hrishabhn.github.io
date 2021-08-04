@@ -1,11 +1,31 @@
 function buses(userLocale) {
     busTray(userLocale)
-    resetBusCards()
+    // resetBusCards()
     // kmbWidget(1,"KMB","961","490F1A302D8C32FC",'AD97EA183A25102C')
     // kmbWidget("KMB","960","AD97EA183A25102C",2)
     // cityBusWidget("NWFB","970x","002231",3)
     // cityBusWidget("CTB","43m","002665",4)
 }
+
+var busesAll = false;
+
+function busShowAll() {
+    // var busTitle = document.getElementById("bus-title")
+    // console.log(globalLocale)
+    if (busesAll) {
+        // console.log("Show all")
+        // busTitle.innerHTML = ("Nearby Bus Routes")
+        buses(globalLocale)
+        busesAll = false
+    } else {
+        // console.log("Hide all")
+        // busTitle.innerHTML = ("All Bus Routes")
+        busTray("All")
+        busesAll = true
+    }
+    resetBusCards()
+}
+
 
 function busTray(userLocale) {
     // console.log("hmm")
@@ -37,6 +57,8 @@ function busTray(userLocale) {
     const _971_pfl =   '<div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,\'NWFB\',\'971\',\'002665\')">971</div>'
     const _971_ktown = '<div id="bus-route-5" class="bus-number nwfb-route" onclick="cityBusWidget(5,\'NWFB\',\'971\',\'001083\')">971</div>'
     
+    var busTitle = document.getElementById("bus-title")
+    busTitle.innerHTML = ("Nearby Bus Routes")
     
 
     switch (userLocale) {
@@ -71,7 +93,7 @@ function busTray(userLocale) {
         case "All":
         default:
             busOrder = _43m + _904nwfb + _904kmb + _960 + _961 + _970x + _971;
-            resetBusCards()
+            busTitle.innerHTML = ("All Bus Routes")
 
     }
 
