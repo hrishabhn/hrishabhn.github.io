@@ -170,7 +170,7 @@
     height: 30px;
     width: 100%;
     
-    padding-left: 20px;
+    padding-left: 30px;
     /* padding-bottom: 0px; */
 
     overflow: hidden;
@@ -567,12 +567,12 @@
     position: relative;
     align-self: flex-end;
 
-    width: calc(100vw - 25px);
+    width: calc(100vw - 0px);
     max-width: 800px;
     /* height: 100vh; */
     /* max-height: 90vh; */
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     /* border-radius: 25px; */
     padding: 25px 0px 25px;
     /* margin-bottom: 40px; */
@@ -622,8 +622,8 @@
 .bus-icon-container{
     display: block;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
     /* height: fit-content; */
 
     /* height: 10px;
@@ -696,7 +696,7 @@
     /* width: 90px; */
     font-size: 15px;
     font-weight: 400;
-    padding: 10px 14px 10px 20px;
+    padding: 10px 24px 10px 30px;
     cursor: default;
 }
 .bus-number{
@@ -769,7 +769,7 @@
 
 
 .bus-card{
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 .bus-card-line{
     display: block;
@@ -778,7 +778,8 @@
     background: var(--white-10);
 }
 .bus-dest{
-    /* display: block; */
+    display: flex;
+    align-items: center;
     /* margin-left: 10px; */
     font-size: 14px;
     font-weight: 500;
@@ -786,6 +787,14 @@
 
     /* padding-left: 15px; */
     /* white-space: nowrap; */
+}
+.bus-dir{
+    background-color: var(--light-layer-0);
+    color: var(--dark-layer-1);
+    font-size: 10px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
 .bus-stop{
@@ -839,7 +848,10 @@
     .bus-stop{
         /* color: var(--black-80); */
     }
-    
+    .bus-dir{
+        background-color: var(--dark-layer-1);
+        color: var(--light-layer-0);
+    }
 }
 
 
