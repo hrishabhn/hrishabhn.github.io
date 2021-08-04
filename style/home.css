@@ -10,7 +10,7 @@
 
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
     /* margin-right: 10px; */
 
     position: relative;
@@ -88,6 +88,8 @@
 }
 .smart-card-hide{
     position: absolute !important;
+    border: 0px !important;
+    /* top: -100px; */
     /* bottom: 100%; */
     /* pointer-events: none; */
     /* opacity: 0; */
