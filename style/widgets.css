@@ -509,7 +509,7 @@
     pointer-events: none;
 }
 .bus-blur-show{
-    /* -webkit-backdrop-filter: blur(25px); */
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: var(--black-20);
 }
