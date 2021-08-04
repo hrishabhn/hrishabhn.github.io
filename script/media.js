@@ -777,21 +777,21 @@ function tvPopulate() {
 }
 
 var tvModal = document.getElementById("tv-popup-modal");
-// var bookModal = document.getElementById("book-popup-modal");
 var bgBlur = document.getElementById("background-blur");
-// var fgBlur = document.getElementById("foreground-blur");
-
-// var bgWrap = document.getElementById("background-wrapper");
   
 function popupTVPopulate(n){
   tvPopup(n);
-  bgBlur.className = "background-blur background-blur-show";
+  // bgBlur.className = "background-blur background-blur-show";
+  busBlur.className = "bus-blur bus-blur-show";
   tvModal.className = "modal tv-popup-open";
+  mainContainer.classList.add("sheetback")
 }
 
 function popupTVHide(){
-  bgBlur.className = "background-blur background-blur-hide";
+  // bgBlur.className = "background-blur background-blur-hide";
+  busBlur.className = "bus-blur bus-blur-hide";
   tvModal.className = "modal tv-popup-closed";
+  mainContainer.classList.remove("sheetback")
 }
   
 function tvPopup(n){
