@@ -28,7 +28,7 @@ function busTray(userLocale) {
     const _961_icc_s = '<div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'466111DE1A3E4656\')">961</div>'
     const _961_tm = '<div id="bus-route-3" class="bus-number kmb-route" onclick="kmbWidget(3,\'KMB\',\'961\',\'490F1A302D8C32FC\')">961</div>'
 
-    const _970x = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001113\',\'001629\')">970x</div>'
+    const _970x = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001113\',\'001628\',\'001629\')">970x</div>'
     const _970x_pfl = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'002231\',\'001113\',\'001628\')">970x</div>'
     const _970x_icc = '<div id="bus-route-1" class="bus-number nwfb-route" onclick="cityBusWidget(1,\'NWFB\',\'970x\',\'001629\')">970x</div>'
     
@@ -91,6 +91,8 @@ function resetBusCards() {
     busDest2.innerHTML = '--';
     var busDest3 = document.getElementById("bus-dest-3")
     busDest3.innerHTML = '--';
+    var busDest4 = document.getElementById("bus-dest-4")
+    busDest4.innerHTML = '--';
 
     var busETA1 = document.getElementById("bus-eta-1")
     busETA1.innerHTML = '--';
@@ -98,6 +100,8 @@ function resetBusCards() {
     busETA2.innerHTML = '--';
     var busETA3 = document.getElementById("bus-eta-3")
     busETA3.innerHTML = '--';
+    var busETA4 = document.getElementById("bus-eta-4")
+    busETA4.innerHTML = '--';
 
     var busStop1 = document.getElementById("bus-stop-1")
     busStop1.innerHTML = '--';
@@ -105,11 +109,22 @@ function resetBusCards() {
     busStop2.innerHTML = '--';
     var busStop3 = document.getElementById("bus-stop-3")
     busStop3.innerHTML = '--';
+    var busStop4 = document.getElementById("bus-stop-4")
+    busStop4.innerHTML = '--';
+
+    var busDir1 = document.getElementById("bus-dir-1")
+    busDir1.innerHTML = '--';
+    var busDir2 = document.getElementById("bus-dir-2")
+    busDir2.innerHTML = '--';
+    var busDir3 = document.getElementById("bus-dir-3")
+    busDir3.innerHTML = '--';
+    var busDir4 = document.getElementById("bus-dir-4")
+    busDir4.innerHTML = '--';
 
     document.getElementById("bus-card-1").classList.add("hidden-always")
     document.getElementById("bus-card-2").classList.add("hidden-always")
     document.getElementById("bus-card-3").classList.add("hidden-always")
-
+    document.getElementById("bus-card-4").classList.add("hidden-always")
 }
 
 function buttonSelect(n) {
@@ -168,6 +183,9 @@ function buttonSelect(n) {
     var busCard3 = document.getElementById("bus-card-3")
     busCard3.classList = "bus-card"
 
+    var busCard4 = document.getElementById("bus-card-4")
+    busCard4.classList = "bus-card"
+
 
 
 
@@ -201,7 +219,7 @@ function buttonSelect(n) {
 
 }
 
-function kmbWidget(n,company,route,stop1,stop2,stop3) {
+function kmbWidget(n,company,route,stop1,stop2,stop3,stop4) {
     // var api = `https://data.etabus.gov.hk/v1/transport/kmb/stop/${stop}`;
     
     buttonSelect(n)
@@ -236,10 +254,21 @@ function kmbWidget(n,company,route,stop1,stop2,stop3) {
         document.getElementById("bus-card-3").classList.add("hidden-always")
     }
 
+    if (stop4) {
+        var api = `https://data.etabus.gov.hk/v1/transport/kmb/eta/${stop4}/${route}/1`;
+    fetch(api)
+        .then(response => response.json())
+        .then(data => {
+            busAPIData(n,company,route,stop4,4,data)
+        })
+    } else {
+        document.getElementById("bus-card-4").classList.add("hidden-always")
+    }
+
     
 }
 
-function cityBusWidget(n,company,route,stop1,stop2,stop3) {
+function cityBusWidget(n,company,route,stop1,stop2,stop3,stop4) {
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/route-stop/CTB/1/inbound`;
     // var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/NWFB/002236/970x`;
 
@@ -288,6 +317,17 @@ function cityBusWidget(n,company,route,stop1,stop2,stop3) {
     } else {
         document.getElementById("bus-card-3").classList.add("hidden-always")
     }
+
+    if (stop4) {
+        var api = `https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/${company}/${stop4}/${route}`;
+    fetch(api)
+        .then(response => response.json())
+        .then(data => {
+            busAPIData(n,company,route,stop4,4,data)
+        })
+    } else {
+        document.getElementById("bus-card-4").classList.add("hidden-always")
+    }
 }
 
 function busAPIData(n,company,route,stop,stopN,data) {
@@ -314,7 +354,7 @@ function busAPIData(n,company,route,stop,stopN,data) {
         eta3 = processETA(eta3);
     }
 
-    
+    var dir = "-";
 
     switch(stop) {
         case "490F1A302D8C32FC":
@@ -348,22 +388,36 @@ function busAPIData(n,company,route,stop,stopN,data) {
     switch(dest) {
         case "WAN CHAI (HKCECE)":
             dest = "Wan Chai"
+            dir = "S"
             break
         case "TUEN MUN (KIN SANG ESTATE)":
         case "TUEN MUN (SHAN KING ESTATE)":
             dest = "Tuen Mun"
+            dir = "N"
             break
         case "Cheung Sha Wan (Kom Tsun Street)":
         case "Hoi Lai Estate":
             dest = "Kowloon"
+            dir = "N"
+            break
+        case "Aberdeen":
+            dir = "S"
             break
         case "Shek Pai Wan":
+            dest = "Aberdeen"
+            dir = "E"
+            break
         case "Tin Wan Estate":
             dest = "Aberdeen"
+            dir = "S"
             break
         case "KENNEDY TOWN (BELCHER BAY)":
         case "Kennedy Town (Belcher Bay) ":
+            dir = "S"
+            dest = "Kennedy Town"
+            break
         case "Shek Tong Tsui":
+            dir = "W"
             dest = "Kennedy Town"
             break
     }
@@ -374,7 +428,7 @@ function busAPIData(n,company,route,stop,stopN,data) {
         dest = "To: " + dest;
     }
 
-    busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest)
+    busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest,dir)
 
     // if (stopN == 1) {
     // }
@@ -404,7 +458,7 @@ function processETA(eta) {
     return eta;
 }
 
-function busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest) {
+function busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest,dir) {
     // console.log(dest)
     // var busCard = document.getElementById("bus-card-".concat(n))
     // busCard.classList = "bus-info-card kmb"
@@ -449,16 +503,25 @@ function busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest) {
             var busDest = document.getElementById("bus-dest-1")
             var busStop = document.getElementById("bus-stop-1")
             var busETA = document.getElementById("bus-eta-1")
+            var busDir = document.getElementById("bus-dir-1")
             break;
         case 2:
             var busDest = document.getElementById("bus-dest-2")
             var busStop = document.getElementById("bus-stop-2")
             var busETA = document.getElementById("bus-eta-2")
+            var busDir = document.getElementById("bus-dir-2")
             break;
         case 3:
             var busDest = document.getElementById("bus-dest-3")
             var busStop = document.getElementById("bus-stop-3")
             var busETA = document.getElementById("bus-eta-3")
+            var busDir = document.getElementById("bus-dir-3")
+            break;
+        case 4:
+            var busDest = document.getElementById("bus-dest-4")
+            var busStop = document.getElementById("bus-stop-4")
+            var busETA = document.getElementById("bus-eta-4")
+            var busDir = document.getElementById("bus-dir-4")
             break;
 
     }
@@ -476,6 +539,7 @@ function busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest) {
     busDest.innerHTML = dest;
     busETA.innerHTML = etaAll;
     busStop.innerHTML = stop;
+    busDir.innerHTML = dir;
 }
 
 
