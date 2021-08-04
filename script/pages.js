@@ -13,7 +13,7 @@ function mainPage1(){
   document.getElementById("title-page").innerHTML = "Home";
   // document.getElementById("title-box").className = "title-box title-box-1";
 
-  document.getElementById("main-1").className = "main";
+  document.getElementById("main-1").className = "main-new";
   document.getElementById("main-2").className = "main-right main";
   document.getElementById("main-3").className = "main-right main";
   document.getElementById("main-4").className = "main-right main";
