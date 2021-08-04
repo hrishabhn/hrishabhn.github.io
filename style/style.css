@@ -228,7 +228,8 @@ body{
     /* background-color: green; */
 }
 .header-tray-button:hover{
-    background-color: var(--black-20);
+    opacity: 0.8;
+    /* background-color: var(--black-20); */
 }
 .header-tray-icon{
     display: flex;
@@ -1185,8 +1186,8 @@ body{
         box-shadow: var(--shaded-light);
     }
     .header-tray-button{
-        color: var(--dark-layer-1);
-        fill: var(--dark-layer-1);
+        color: var(--dark-layer-1-80);
+        fill: var(--dark-layer-1-80);
     }
     .subheader-box{
         color: var(--dark-layer-1);
