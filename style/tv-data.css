@@ -285,13 +285,13 @@
 
 
 .grandTour-solid{
-    background-color: #bdb6b3;
+    background-color: #C05D38;
 }
 .grandTour-gradient{
-    background: linear-gradient(#00000000,#bdb6b3);
+    background: linear-gradient(#00000000,#C05D38);
 }
 .grandTour-poster{
-    background-image: url('../TV/background/grandTour.webp');
+    background-image: url('../TV/background/lochdown.jpg');
 }
 .grandTour-title{
     background-image: url('../TV/title/grandTour.svg');
