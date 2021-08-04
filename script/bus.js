@@ -568,15 +568,18 @@ function busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest,dir) {
 var busModal = document.getElementById("bus-popup-modal");
 var busBlur = document.getElementById("bus-blur");
 var bgBlur = document.getElementById("background-blur");
+var mainContainer = document.getElementById("main-container");
 
 function popupBusShow(){
 //   bgBlur.className = "background-blur background-blur-show";
   busBlur.className = "bus-blur bus-blur-show";
   busModal.className = "modal bus-popup-open";
+  mainContainer.classList.add("sheetback")
 }
 
 function popupBusHide(){
 //   bgBlur.className = "background-blur background-blur-hide";
   busBlur.className = "bus-blur bus-blur-hide";
   busModal.className = "modal bus-popup-closed";
+  mainContainer.classList.remove("sheetback")
 }
