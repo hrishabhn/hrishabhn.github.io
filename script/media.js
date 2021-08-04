@@ -155,8 +155,27 @@ function tvData() {
   var show49 = hide
   var show50 = hide
   
-  // Always sunny
+
   show1 = [
+    "grandTour-solid",
+    "grandTour-poster",
+    "grandTour-gradient",
+    "grandTour-title",
+    "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
+    "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+    "prime",
+    "Watch on Prime Video",
+    "https://www.tvtime.com/en/show/314087",
+    "8.82",
+    "https://reelgood.com/show/the-grand-tour-2016",
+    "83",
+    "https://www.imdb.com/title/tt5712554",
+    "8.7",
+    "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
+  ]
+
+  // Always sunny
+  show3 = [
     "always-solid",
     "always-poster",
     "always-gradient",
