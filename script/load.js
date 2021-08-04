@@ -10,13 +10,14 @@ function mainPopulate(){
     statusBar(1000,4000)
     // mainPage5()
     // popupTVPopulate(1)
-    // popupBusShow()
+    popupBusShow()
 }
 
 function locationBasedLoad(userLocale) {
     document.getElementById("district").innerHTML = userLocale;
     smartCards(userLocale)
     buses(userLocale)
+    storeLocale(userLocale)
 }
 
 function mainRefresh() {
