@@ -147,7 +147,7 @@ body{
     
     width: 100%;
 
-    padding-left: clamp(180px, 20vw, 280px);
+    /* padding-left: clamp(180px, 20vw, 280px); */
 }
 
 
@@ -627,7 +627,7 @@ body{
     overflow: hidden;
     box-sizing: border-box;
 
-    z-index: 50;
+    /* z-index: 50; */
 
     align-content: flex-end;
     color: var(--light-layer-0);
@@ -1047,7 +1047,7 @@ body{
   height: 100%;
   overflow: auto; /* Enable scroll if needed */
   transition: all 0.3s;
-  transition-delay: 0.1s;
+  /* transition-delay: 0.1s; */
   transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 
   transform-origin: bottom center;
