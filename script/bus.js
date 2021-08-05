@@ -550,6 +550,7 @@ function busETAPopulate(n,company,route,stop,stopN,eta1,eta2,eta3,dest,dir) {
 
     var busIcon = document.getElementById("bus-icon")
     busIcon.classList = ("bus-icon bus-icon-" + company)
+    // busIcon.innerHTML = ('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-3.2422828674316406 0 88.30000305175781 88.30000305175781"><defs><path id="a" d="M0 0h321.8v128H0z"></path></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"></use></clipPath><path clip-path="url(#b)" d="M35.5 34.4L8.7 88.2H0l26.6-53.8z"></path><path clip-path="url(#b)" d="M52.4.3l-5.8 11.8-8.7-.1L43.5.3z"></path><path clip-path="url(#b)" d="M.5 34.2h18.8L.5 71.8z"></path><path clip-path="url(#b)" d="M1.3 11.8H30L36 .3H9.8C6.2.3 1.3 3 1.3 6.5v5.3z"></path><path clip-path="url(#b)" d="M40.1 57.3l13.1 30.9H16l26.8-53.8h8.7z"></path><path clip-path="url(#b)" d="M78.1 88.3c2.2-.9 3.7-5.3 3.7-10.8 0-.8-.1-68 0-69C82.1 4.7 78 0 72 0H59.9l-5.7 11.8H75l3.8 7.7H.5v7.1H63L48 56.5l13.8 31.7h8.8L56.8 56.5l15.1-29.9h7l-15 30.1 14.2 31.6z"></path></svg>')
     
 
     // var busRoute = document.getElementById("bus-route-".concat(n))
