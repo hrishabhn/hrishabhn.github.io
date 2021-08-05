@@ -26,5 +26,6 @@ function mainRefresh() {
     smartCards()
     todayWidget()
     statusBar(0,1500)
+    resetBusCards()
     // console.log("refreshed")
 }
