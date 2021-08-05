@@ -218,10 +218,12 @@
     background:linear-gradient(to bottom right,#1AC8FB,#1D70F1);
 }
 .kmb{
-    background:linear-gradient(to bottom right,#b83947,#6b212a);
+    /* background:linear-gradient(to bottom right,#b83947,#6b212a); */
+    background-color: #ED1D24;
 }
 .citymapper{
-    background:linear-gradient(to bottom right,#37ab2e,#1e5e19);
+    /* background:linear-gradient(to bottom right,#37ab2e,#1e5e19); */
+    background-color: #37ab2e;
 }
 .zoom{
     background:linear-gradient(to bottom right,#2d8cff,#2062b3);
@@ -233,10 +235,12 @@
     background:linear-gradient(to bottom right,#1db954,#126e32);
 }
 .citybus{
-    background:linear-gradient(to bottom right,#0060A9,#00345c);
+    /* background:linear-gradient(to bottom right,#0060A9,#00345c); */
+    background-color: #0060A9;
 }
 .mtr{
-    background:linear-gradient(to bottom right,#9C2133,#4f111a);
+    /* background:linear-gradient(to bottom right,#9C2133,#4f111a); */
+    background-color: #9C2133;
 }
 .lifx{
     background:linear-gradient(to bottom right,#409,#21004d);
