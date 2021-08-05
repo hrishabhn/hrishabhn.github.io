@@ -799,15 +799,14 @@ var tvModal = document.getElementById("tv-popup-modal");
 var bgBlur = document.getElementById("background-blur");
   
 function popupTVPopulate(n){
-  popupAllShow()
   tvPopup(n);
-
   tvModal.className = "modal tv-popup-open";
+  popupAllShow()
 }
 
 function popupTVHide(){
-  popupAllHide()
   tvModal.className = "modal tv-popup-closed";
+  popupAllHide()
 }
   
 function tvPopup(n){
