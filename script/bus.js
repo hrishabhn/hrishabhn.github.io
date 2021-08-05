@@ -572,15 +572,23 @@ var bgBlur = document.getElementById("background-blur");
 var mainContainer = document.getElementById("main-container");
 
 function popupBusShow(){
-//   bgBlur.className = "background-blur background-blur-show";
-  busBlur.className = "bus-blur bus-blur-show";
+  popupAllShow()
   busModal.className = "modal bus-popup-open";
-  mainContainer.classList.add("sheetback")
 }
 
 function popupBusHide(){
-//   bgBlur.className = "background-blur background-blur-hide";
-  busBlur.className = "bus-blur bus-blur-hide";
+  popupAllHide()
   busModal.className = "modal bus-popup-closed";
+}
+
+function popupAllShow(){
+    //   bgBlur.className = "background-blur background-blur-show";
+    busBlur.className = "bus-blur bus-blur-show";
+    mainContainer.classList.add("sheetback")
+}
+
+function popupAllHide(){
+    //   bgBlur.className = "background-blur background-blur-hide";
+  busBlur.className = "bus-blur bus-blur-hide";
   mainContainer.classList.remove("sheetback")
 }
