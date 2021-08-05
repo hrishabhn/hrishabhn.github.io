@@ -854,7 +854,8 @@
         margin-top: 20px;
     }
     .today-widget-container{
-        width: calc((100% - 20px) / 1);
+        width: calc((100% - 40px) / 1);
+        margin-left: 20px;
         margin-right: 20px;
         margin-top: 20px;
     }
