@@ -172,7 +172,12 @@ body{
 
     cursor: default;
 
+}
+.header.home{
     background-color: var(--blue-light);
+}
+.header.media{
+    background-color: var(--red-100);
 }
 
 .header-tray{
@@ -1031,7 +1036,7 @@ body{
 }
 
 
-.modal {
+.modal{
   display: flex;
   position: fixed;
   justify-content: center;
