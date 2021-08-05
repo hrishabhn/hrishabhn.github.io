@@ -464,6 +464,7 @@ body{
     z-index: 10;
     background: var(--black-100);
 
+    transform-origin: bottom;
     transition: all 0.25s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 
@@ -1328,8 +1329,8 @@ body{
         max-width: none;
     }
     #main-container.sheetback{
-        scale: 0.9;
-        border-radius: 50px;
+        scale: 0.95;
+        border-radius: 30px;
         background-color: var(--dark-layer-2);
     }
     .main-new{
