@@ -158,7 +158,7 @@ function tvData() {
 
   show1 = [
     "grandTour-solid",
-    "grandTour-poster",
+    "loki-poster",
     "grandTour-gradient",
     "grandTour-title",
     "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
