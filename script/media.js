@@ -799,18 +799,15 @@ var tvModal = document.getElementById("tv-popup-modal");
 var bgBlur = document.getElementById("background-blur");
   
 function popupTVPopulate(n){
+  popupAllShow()
   tvPopup(n);
-  // bgBlur.className = "background-blur background-blur-show";
-  busBlur.className = "bus-blur bus-blur-show";
+
   tvModal.className = "modal tv-popup-open";
-  mainContainer.classList.add("sheetback")
 }
 
 function popupTVHide(){
-  // bgBlur.className = "background-blur background-blur-hide";
-  busBlur.className = "bus-blur bus-blur-hide";
+  popupAllHide()
   tvModal.className = "modal tv-popup-closed";
-  mainContainer.classList.remove("sheetback")
 }
   
 function tvPopup(n){
