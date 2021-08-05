@@ -297,7 +297,7 @@
     display: flex;
     position: relative;
     left: 0px;
-    bottom: 0%;
+    bottom: 0px;
     cursor: default;
 
     height: 100%;
@@ -314,11 +314,10 @@
 
 
 
-/* .tv-popup-open{
-    scale: 1;
-
-    opacity: 1;
-} */
+.tv-popup-open{
+    pointer-events: initial;
+    transform: translateY(0%);
+}
 .tv-popup-closed{
     /* top: 2vh; */
     pointer-events: none;
