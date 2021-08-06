@@ -21,13 +21,15 @@
     background:linear-gradient(to bottom right,#ff9500,#b36800);
 }
 .red-gradient{
-    background:linear-gradient(to bottom right,#ff3b30,#b32922);
+    /* background:linear-gradient(to bottom right,#ff3b30,#b32922); */
+    background-color: #ff3b30;
 }
 .teal-gradient{
     background:linear-gradient(to bottom right,#5ac8fa,#3e8aad);
 }
 .yellow-gradient{
-    background:linear-gradient(to bottom right,#ffcc00,#b38f00);
+    /* background:linear-gradient(to bottom right,#ffcc00,#b38f00); */
+    background-color: #ffcc00;
 }
 .white-gradient{
     background:linear-gradient(to bottom right,#fff,#e6e6e6);
@@ -50,7 +52,8 @@
 
 
 .outlook{
-    background:linear-gradient(to bottom right,#0271C7,#01467a);
+    /* background:linear-gradient(to bottom right,#0271C7,#01467a); */
+    background-color: #0271C7;
 }
 .outlook-blue{
     background:linear-gradient(to bottom right,#7040FF,#4e2db3);
@@ -112,10 +115,12 @@
     background:linear-gradient(to bottom right,#7b68ee,#5447a1);
 }
 .google-red{
-    background:linear-gradient(to bottom right,#ea4335,#9e2f24);
+    /* background:linear-gradient(to bottom right,#ea4335,#9e2f24); */
+    background-color: #ea4335;
 }
 .google-green{
-    background:linear-gradient(to bottom right,#34a853,#1c5c2d);
+    /* background:linear-gradient(to bottom right,#34a853,#1c5c2d); */
+    background-color: #34a853;
 }
 .google-blue{
     background:linear-gradient(to bottom right,#4285f4,#2d5da8);
