@@ -36,6 +36,51 @@
 }
 
 
+.black{
+    background-color: var(--dark-layer-0);
+}
+
+@media(max-width: 450px){
+    .black{
+        background-color: var(--dark-layer-1);
+    }
+}
+
+/* ios colors */
+
+.blue{
+    background-color: var(--blue-dark);
+}
+.green{
+    background-color: var(--green-dark);
+}
+.indigo{
+    background-color: var(--indigo-dark);
+}
+.orange{
+    background-color: var(--orange-dark);
+}
+.red{
+    background-color: var(--red-dark);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .blue{
+        background-color: var(--blue-light);
+    }
+    .green{
+        background-color: var(--green-light);
+    }
+    .indigo{
+        background-color: var(--indigo-light);
+    }
+    .orange{
+        background-color: var(--orange-light);
+    }
+    .red{
+        background-color: var(--red-light);
+    }
+}
 
 
 
@@ -65,7 +110,8 @@
 
 
 .onedrive{
-    background:linear-gradient(to bottom right,#094AB2,#052A66);
+    /* background:linear-gradient(to bottom right,#094AB2,#052A66); */
+    background-color: #094AB2;
 }
 .clickup{
     background:linear-gradient(to bottom right,#49ccf9,#7b68ee);
@@ -151,7 +197,8 @@
     background:linear-gradient(to bottom right,#14BCD9,#005986);
 }
 .slack{
-    background:linear-gradient(to bottom right,#4A154B,#952a96);
+    /* background:linear-gradient(to bottom right,#4A154B,#952a96); */
+    background-color: #4A154B;
 }
 .facebook{
     background:linear-gradient(to bottom right,#4267b2,#263b66);
@@ -262,6 +309,9 @@
 }
 
 
+
+
+
 /* MEDIA */
 
 .tv-time-text{
@@ -273,3 +323,6 @@
 .hulu-solid{
     background: #1ce783;
 }
+
+
+
