@@ -195,7 +195,7 @@ body{
     height: 80px;
 
     /* padding: 0px 20px; */
-    margin: 0px 40px;
+    margin: 0px 30px;
 
     /* font-weight: 700; */
     /* font-size: 32px; */
@@ -1374,7 +1374,7 @@ body{
         border-bottom-right-radius: 400px 20px;
     }
     .header-tray{
-        margin: 0px 20px;
+        margin: 0px 15px;
     }
 
 
