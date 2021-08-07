@@ -32,7 +32,7 @@ function mainPage2(){
   // document.getElementById("title-box").className = "title-box title-box-2";
 
   document.getElementById("main-1").className = "hidden-always";
-  document.getElementById("main-2").className = "main";
+  document.getElementById("main-2").className = "main-new";
   document.getElementById("main-3").className = "hidden-always";
   document.getElementById("main-4").className = "hidden-always";
   document.getElementById("main-5").className = "hidden-always";
@@ -51,7 +51,7 @@ function mainPage3(){
 
   document.getElementById("main-1").className = "hidden-always";
   document.getElementById("main-2").className = "hidden-always";
-  document.getElementById("main-3").className = "main";
+  document.getElementById("main-3").className = "main-new";
   document.getElementById("main-4").className = "hidden-always";
   document.getElementById("main-5").className = "hidden-always";
 }
@@ -70,7 +70,7 @@ function mainPage4(){
   document.getElementById("main-1").className = "hidden-always";
   document.getElementById("main-2").className = "hidden-always";
   document.getElementById("main-3").className = "hidden-always";
-  document.getElementById("main-4").className = "main";
+  document.getElementById("main-4").className = "main-new";
   document.getElementById("main-5").className = "hidden-always";
 }
 
