@@ -48,11 +48,20 @@
 
 
 
-    --red-100: #ff3b30;
-    --red-80: #ff3b30cc;
-
     --blue-dark: #0a84ff;
     --blue-light: #007aff;
+
+    --red-dark: #ff453a;
+    --red-light: #ff3b30;
+
+    --indigo-dark: #5e5ce6;
+    --indigo-light: #5856d6;
+
+    --orange-dark: #ff9f0a;
+    --orange-light: #ff9500;
+
+    --green-dark: #30d158;
+    --green-light: #34c759;
 
 
     --mobile-width: calc(100vw - 30px);
@@ -174,10 +183,19 @@ body{
 
 }
 .header.home{
-    background-color: var(--blue-light);
+    background-color: var(--blue-dark);
+}
+.header.bookmarks{
+    background-color: var(--green-dark);
+}
+.header.apps{
+    background-color: var(--indigo-dark);
+}
+.header.school{
+    background-color: var(--orange-dark);
 }
 .header.media{
-    background-color: var(--red-100);
+    background-color: var(--red-dark);
 }
 
 .header-tray{
@@ -977,7 +995,7 @@ body{
     height: 20px;
     width: 20px;
 
-    fill: var(--red-80);
+    /* fill: var(--red-80); */
     transition: 0.25s;
 }
 .anchor-text-box{
@@ -1207,8 +1225,20 @@ body{
     .header-box{
         color: var(--dark-layer-1);
     }
-    .header{
-        background-color: var(--blue-dark);
+    .header.home{
+        background-color: var(--blue-light);
+    }
+    .header.bookmarks{
+        background-color: var(--green-light);
+    }
+    .header.apps{
+        background-color: var(--indigo-light);
+    }
+    .header.school{
+        background-color: var(--orange-light);
+    }
+    .header.media{
+        background-color: var(--red-light);
     }
     .header-tray{
         background-color: var(--light-layer-0);
