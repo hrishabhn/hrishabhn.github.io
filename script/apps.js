@@ -179,7 +179,7 @@ function homeAppPopulate(){
     ]
 
     // To do
-    var app_A12 = [
+    var app_A14 = [
     "red-gradient",
     "To do",
     "",
@@ -197,7 +197,7 @@ function homeAppPopulate(){
     ]
 
     // Travel
-    var app_A14 = [
+    var app_A15 = [
     "cathay",
     "Travel",
     "",
@@ -206,7 +206,7 @@ function homeAppPopulate(){
     ]
 
     // To do
-    var app_A15 = [
+    var app_A12 = [
     "clickup",
     "ClickUp",
     "",
