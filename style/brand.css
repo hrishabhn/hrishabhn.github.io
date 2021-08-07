@@ -51,22 +51,50 @@
 .blue{
     background-color: var(--blue-dark);
 }
+.brown{
+    background-color: var(--brown-dark);
+}
+.cyan{
+    background-color: var(--cyan-dark);
+}
 .green{
     background-color: var(--green-dark);
 }
 .indigo{
     background-color: var(--indigo-dark);
 }
+.mint{
+    background-color: var(--mint-dark);
+}
 .orange{
     background-color: var(--orange-dark);
+}
+.pink{
+    background-color: var(--pink-dark);
+}
+.purple{
+    background-color: var(--purple-dark);
 }
 .red{
     background-color: var(--red-dark);
 }
+.teal{
+    background-color: var(--teal-dark);
+}
+.yellow{
+    background-color: var(--yellow-dark);
+}
+
 
 @media screen and (prefers-color-scheme: light) {
     .blue{
         background-color: var(--blue-light);
+    }
+    .brown{
+        background-color: var(--brown-light);
+    }
+    .cyan{
+        background-color: var(--cyan-light);
     }
     .green{
         background-color: var(--green-light);
@@ -74,11 +102,26 @@
     .indigo{
         background-color: var(--indigo-light);
     }
+    .mint{
+        background-color: var(--mint-light);
+    }
     .orange{
         background-color: var(--orange-light);
     }
+    .pink{
+        background-color: var(--pink-light);
+    }
+    .purple{
+        background-color: var(--purple-light);
+    }
     .red{
         background-color: var(--red-light);
+    }
+    .teal{
+        background-color: var(--teal-light);
+    }
+    .yellow{
+        background-color: var(--yellow-light);
     }
 }
 
