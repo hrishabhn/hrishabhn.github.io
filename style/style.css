@@ -325,7 +325,7 @@ body{
     box-sizing: border-box;
 
     background-color: var(--dark-layer-1-80);
-    border-right: solid var(--white-10) 0.1px;
+    border-right: solid var(--white-10) 1px;
     /* background-color: #12121299; */
 
     /* box-shadow: 0 0 15px #00000066; */
@@ -1271,7 +1271,7 @@ body{
 
     .navbar{
         background-color: var(--light-layer-1-80);
-        border-right: solid var(--black-10) 0.1px;
+        border-right: solid var(--black-10) 1px;
     }
 
     .menu-item{
@@ -1437,7 +1437,7 @@ body{
         /* background: linear-gradient(#000000,#00000000); */
     }
     .navbar{
-        height: 85px;
+        height: 83px;
         width: 100%;
         min-width: none;
         max-width: none;
@@ -1449,7 +1449,7 @@ body{
         /* padding-bottom: 25px;
         padding-left: 0px;
         padding-right: 0px; */
-        border-top: solid var(--white-10) 0.1px;
+        border-top: solid var(--white-10) 1px;
 
         /* box-sizing: border-box; */
     
@@ -1578,7 +1578,7 @@ body{
 
     @media screen and (prefers-color-scheme: light) {
         .navbar{
-            border-top: solid var(--black-10) 0.1px;
+            border-top: solid var(--black-10) 1px;
         }
         .menu-item{
             fill: var(--black-40);
