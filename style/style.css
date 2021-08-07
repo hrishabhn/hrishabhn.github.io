@@ -757,6 +757,14 @@ body{
     scale: 0.9;
     transition-delay: 0.5s;
 }
+.app-container:active .app-icon-container{
+    fill: var(--white-20);
+    transition: 0.05s;
+}
+.app-container:active .app-text{
+    color: var(--white-20);
+    transition: 0.05s;
+}
 
 
 .app-icon-container{
@@ -779,7 +787,7 @@ body{
     /* height: 58px; */
     /* border-radius: 25px; */
 
-    /* transition: 0.25s; */
+    transition: 0.4s;
 
     /* background-color: var(--black-20); */
 }
@@ -802,7 +810,7 @@ body{
     /* left: 12.5px; */
     /* padding-left: 5px; */
 
-    transition: inherit;
+    transition: 0.4s;
 
     color: var(--white-100);
     font-size: 12px;
@@ -825,9 +833,9 @@ body{
     z-index: 3;
     transition: all 0.1s;
 }
-.app-link:active{
+/* .app-link:active{
     background-color: var(--black-40);
-}
+} */
 
 
 .contact-container{
