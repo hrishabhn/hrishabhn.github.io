@@ -944,22 +944,27 @@ function podPopulate() {
 function bookData(){
   var book_1 = [
     "west-cover",
-    "",
+    "ibooks://",
   ]
 
   var book_2 = [
+    "four-cover",
+    "ibooks://",
+  ]
+
+  var book_3 = [
     "homodeus-cover",
     "audible://view?section=discover&asin=B01N4DCBK6",
     // "https://smart.link/o3waqx4wg1gdn?asin=B01N4DCBK6",
   ]
 
-  var book_3 = [
+  var book_4 = [
     "ride-cover",
     "audible://view?section=discover&asin=0525499334",
     // "https://smart.link/o3waqx4wg1gdn?asin=0525499334",
   ]
 
-  var book_4 = [
+  var book_5 = [
     "martian-cover",
     "audible://view?section=discover&asin=B082BHJMFF",
     // "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF",
@@ -976,6 +981,7 @@ function bookData(){
     book_2,
     book_3,
     book_4,
+    book_5,
   ]
 
   return bookAll
@@ -985,7 +991,7 @@ function bookPopulate() {
   bookAll = bookData()
   var cardClass = "media-card book-card ";
 
-  for (i = 1; i < 5; i++){
+  for (i = 1; i < 6; i++){
     var itemid = [
       "book-".concat(i),
     ]
