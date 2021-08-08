@@ -943,27 +943,32 @@ function podPopulate() {
 
 function bookData(){
   var book_1 = [
+    "west-cover",
+    "",
+  ]
+
+  var book_2 = [
     "homodeus-cover",
     "audible://view?section=discover&asin=B01N4DCBK6",
     // "https://smart.link/o3waqx4wg1gdn?asin=B01N4DCBK6",
   ]
 
-  var book_4 = [
+  var book_3 = [
     "ride-cover",
     "audible://view?section=discover&asin=0525499334",
     // "https://smart.link/o3waqx4wg1gdn?asin=0525499334",
   ]
 
-  var book_3 = [
+  var book_4 = [
     "martian-cover",
     "audible://view?section=discover&asin=B082BHJMFF",
     // "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF",
   ]
 
-  var book_2 = [
-    "speechless-cover",
-    "audible://view?section=discover&asin=1665046074",
-  ]
+  // var book_ = [
+  //   "speechless-cover",
+  //   "audible://view?section=discover&asin=1665046074",
+  // ]
 
   var bookAll = [
     null,
