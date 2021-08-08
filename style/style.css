@@ -178,7 +178,7 @@ body{
     
     width: 100%;
 
-    padding-left: clamp(180px, 20vw, 280px);
+    /* padding-left: clamp(180px, 20vw, 280px); */
 }
 
 
