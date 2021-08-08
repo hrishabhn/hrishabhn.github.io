@@ -32,6 +32,9 @@
 .west-cover{
     background-image: url('../books/west.jpg');
 }
+.four-cover{
+    background-image: url('../books/four.jpg');
+}
 
 
 /* podcasts */
