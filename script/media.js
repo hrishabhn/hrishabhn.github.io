@@ -948,27 +948,53 @@ function bookData(){
   ]
 
   var book_2 = [
-    "four-cover",
-    "ibooks://",
-  ]
-
-  var book_3 = [
     "homodeus-cover",
     "audible://view?section=discover&asin=B01N4DCBK6",
     // "https://smart.link/o3waqx4wg1gdn?asin=B01N4DCBK6",
   ]
 
-  var book_4 = [
+  var book_3 = [
     "ride-cover",
     "audible://view?section=discover&asin=0525499334",
     // "https://smart.link/o3waqx4wg1gdn?asin=0525499334",
   ]
 
-  var book_5 = [
+  var book_4 = [
     "martian-cover",
     "audible://view?section=discover&asin=B082BHJMFF",
     // "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF",
   ]
+
+  var book_5 = [
+    "four-cover",
+    "ibooks://",
+  ]
+
+  var book_6 = [
+    "rules-cover",
+    "ibooks://",
+  ]
+
+  var book_7 = [
+    "hidden-always",
+    "",
+  ]
+
+  var book_8 = [
+    "hidden-always",
+    "",
+  ]
+
+  var book_9 = [
+    "hidden-always",
+    "",
+  ]
+
+  var book_10 = [
+    "hidden-always",
+    "",
+  ]
+  
 
   // var book_ = [
   //   "speechless-cover",
@@ -982,6 +1008,11 @@ function bookData(){
     book_3,
     book_4,
     book_5,
+    book_6,
+    book_7,
+    book_8,
+    book_9,
+    book_10,
   ]
 
   return bookAll
@@ -991,7 +1022,7 @@ function bookPopulate() {
   bookAll = bookData()
   var cardClass = "media-card book-card ";
 
-  for (i = 1; i < 6; i++){
+  for (i = 1; i < 11; i++){
     var itemid = [
       "book-".concat(i),
     ]
