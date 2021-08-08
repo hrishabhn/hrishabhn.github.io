@@ -52,7 +52,7 @@
     --blue-light: rgb(0, 122, 255);
 
     --brown-dark: rgb(172, 142, 104);
-    --blue-light: rgb(162, 132, 94);
+    --brown-light: rgb(162, 132, 94);
 
     --cyan-dark: rgb(100, 210, 255);
     --cyan-light: rgb(50, 173, 230);
@@ -178,7 +178,7 @@ body{
     
     width: 100%;
 
-    /* padding-left: clamp(180px, 20vw, 280px); */
+    padding-left: clamp(180px, 20vw, 280px);
 }
 
 
