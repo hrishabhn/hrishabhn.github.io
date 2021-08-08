@@ -29,6 +29,9 @@
 .speechless-cover{
     background-image: url('../books/speechless.jpg');
 }
+.west-cover{
+    background-image: url('../books/west.jpg');
+}
 
 
 /* podcasts */
