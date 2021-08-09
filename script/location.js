@@ -11,11 +11,11 @@ function getUserLocale() {
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
 
-        // lat = 51.5
-        // lon = 0
+        // lat = 22.418
+        // lon = 114.206
 
-        console.log(lat)
-        console.log(lon)
+        // console.log(lat)
+        // console.log(lon)
     
         const pokFuLam = (lat > 22.252) && (lat < 22.273) && (lon > 114.121) && (lon < 114.135);
         const cyberport = (lat > 22.260) && (lat < 22.264) && (lon > 114.127) && (lon < 114.131);
@@ -30,6 +30,7 @@ function getUserLocale() {
         const causeway = (lat > 22.270) && (lat < 22.283) && (lon > 114.180) && (lon < 114.190);
         const westKowloon = (lat > 22.298) && (lat < 22.308) && (lon > 114.154) && (lon < 114.165);
         const tsimShaTsui = (lat > 22.292) && (lat < 22.303) && (lon > 114.165) && (lon < 114.177);
+        const cuhk = (lat > 22.410) && (lat < 22.426) && (lon > 114.200) && (lon < 114.217);
     
         const london = (lat > 51.2) && (lat < 51.7) && (lon > -0.5) && (lon < 0.3);
 
@@ -80,6 +81,9 @@ function getUserLocale() {
         }
         if (tsimShaTsui) {
             userLocale = "Tsim Sha Tsui"
+        }
+        if (cuhk) {
+            userLocale = "CUHK"
         }
         
         // userLocale = "West Highway"
