@@ -94,7 +94,7 @@ function smartCards(userLocale) {
 
     }
 
-    if (userLocale == "Work") {
+    if (userLocale == "Office") {
         document.getElementById("office-card").className = "smart-card-show content-container"
         // userLocale = "Office"
         // console.log("at office")
@@ -104,27 +104,27 @@ function smartCards(userLocale) {
     }
 
 
+    var foodCard = document.getElementById("food-card")
     
+    foodCard.className = "smart-card-hide content-container";
+
     
     if ((timeOfDay == "afternoon") && !(userLocale == "Baguio Villa")) {
-        document.getElementById("food-card").className = "smart-card-show content-container";
+        foodCard.className = "smart-card-show content-container";
         // console.log("afternoon");
     } else{
-        document.getElementById("food-card").className = "smart-card-hide content-container";
         // console.log("not afternoon");
     }
     if ((timeOfDay == "evening") && !(userLocale == "Baguio Villa")) {
-        document.getElementById("food-card").className = "smart-card-show content-container";
+        foodCard.className = "smart-card-show content-container";
         // console.log("evening");
     } else{
-        document.getElementById("food-card").className = "smart-card-hide content-container";
         // console.log("not evening");
     }
     if ((timeOfDay == "night") && (userLocale == "Baguio Villa")) {
-        document.getElementById("sleep-card").className = "smart-card-show content-container hidden-desktop";
+        foodCard.className = "smart-card-show content-container";
         // console.log("night");
     } else{
-        document.getElementById("sleep-card").className = "smart-card-hide content-container hidden-desktop";
         // console.log("not night");
     }
 }
