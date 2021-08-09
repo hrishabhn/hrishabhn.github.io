@@ -330,14 +330,17 @@ body{
 
 .navbar{
     height: 100%;
-    width: clamp(180px, 20vw, 280px);
+    width: calc(clamp(180px, 20vw, 280px) + env(safe-area-inset-left));
     position: fixed;
     z-index: 100;
     bottom: 0px;
     left: 0px;
 
     padding: 110px 20px 0px;
+
+    padding-left: calc(20px + env(safe-area-inset-left));
     box-sizing: border-box;
+
 
     background-color: var(--dark-layer-1);
     border-right: solid var(--white-10) 1px;
@@ -491,11 +494,11 @@ body{
     overflow: hidden;
     position: fixed;
     top: 0px;
-    left: clamp(180px,20vw,280px);
+    left: calc(clamp(180px,20vw,280px) + env(safe-area-inset-left));
     height: auto;
-    max-width: calc(100vw - 180px);
-    min-width: calc(100vw - 280px);
-    width: 80vw;
+    max-width: calc(100vw - 180px - env(safe-area-inset-left));
+    min-width: calc(100vw - 280px - env(safe-area-inset-left));
+    width: calc(80vw - env(safe-area-inset-left));
     z-index: 10;
     background: var(--black-100);
 
