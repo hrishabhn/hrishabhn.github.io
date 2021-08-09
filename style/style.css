@@ -1386,11 +1386,12 @@ body{
         max-width: none;
     }
     #main-container.sheetback{
-        transform: translateY(10px);
-        scale: 0.95;
+        /* transform: translateY(10px); */
+        transform: scale(0.925);
+        /* scale: 0.925; */
         
         /* scale: 0.95; */
-        border-radius: 30px;
+        border-radius: 20px;
         background-color: var(--dark-layer-2);
     }
     .main-new{
