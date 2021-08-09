@@ -1555,6 +1555,9 @@ body{
         align-self: flex-end;
         cursor: default;
     }
+    .subheader-box{
+        padding-left: 20px;
+    }
 
     .app-tray-wrapper{
         padding-left: 20px;
