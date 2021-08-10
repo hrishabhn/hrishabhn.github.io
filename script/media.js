@@ -771,15 +771,12 @@ function tvData() {
   // console.log(showsAll[1][1])
 
   return showsAll
-
-
-
 }
 
 function tvPopulate() {
   showsAll = tvData()
 
-  var cardClass = "media-card tv-card ";
+  var cardClass = "preload-card media-card tv-card ";
   var titleClass = "tv-card-title ";
 
   for (i = 1; i < 51; i++){
@@ -793,6 +790,33 @@ function tvPopulate() {
     document.getElementById(itemid[1]).href =                        showsAll[i][5];
     document.getElementById(itemid[2]).className = titleClass.concat(showsAll[i][3]);
   }
+}
+
+function tvLoad(i) {
+  showsAll = tvData()
+  var item = document.getElementById("tv-card-".concat(i))
+
+  if (!(showsAll[i][1] == "hidden-always")) {
+    setTimeout(function() {   //  call a 3s setTimeout when the loop is called
+
+      item.classList.remove("preload-card")
+      
+      i++;
+      if (i < 51) {
+        tvLoad(i);
+      }
+    }, 50)
+  } else {
+    i++;
+    tvLoad(i)
+  }
+
+  // for (i = 1; i < 51; i++){
+  //   var item = document.getElementById("tv-card-".concat(i))
+  //   item.classList.remove("preload-card")
+  // }
+
+  
 }
 
 var tvModal = document.getElementById("tv-popup-modal");
