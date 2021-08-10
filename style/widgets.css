@@ -794,7 +794,7 @@
     /* margin-left: 10px; */
     font-size: 12px;
     font-weight: 400;
-    /* color: var(--white-80); */
+    color: var(--white-60);
     /* padding-left: 15px; */
     /* white-space: nowrap; */
 }
@@ -902,7 +902,7 @@
         background: var(--black-10);
     }
     .bus-stop{
-        /* color: var(--black-80); */
+        color: var(--black-60);
     }
     .bus-dir{
         background-color: var(--dark-layer-1);
