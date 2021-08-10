@@ -86,7 +86,7 @@ function getUserLocale() {
             userLocale = "CUHK"
         }
         
-        // userLocale = "Pok Fu Lam"
+        // userLocale = "West Highway"
 
         locationBasedLoad(userLocale);
 
