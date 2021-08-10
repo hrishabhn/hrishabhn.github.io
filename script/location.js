@@ -34,7 +34,7 @@ function getUserLocale() {
     
         const london = (lat > 51.2) && (lat < 51.7) && (lon > -0.5) && (lon < 0.3);
 
-        console.log(work)
+        // console.log(work)
 
         // 22.273,114.121 top left
         // 22.252,114.135 borrom right
@@ -86,7 +86,7 @@ function getUserLocale() {
             userLocale = "CUHK"
         }
         
-        // userLocale = "West Highway"
+        // userLocale = "Pok Fu Lam"
 
         locationBasedLoad(userLocale);
 
