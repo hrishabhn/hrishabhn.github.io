@@ -86,3 +86,16 @@ function calWidget() {
     weekday.innerHTML = weekdayNow
     date.innerHTML = dateNow + " " + monthNow
 }
+
+
+
+var sideModal = document.getElementById("side-popup-modal");
+
+function popupSideShow() {
+    sideModal.className = "side-modal side-popup-open";
+    // popupAllShow()
+}
+function popupSideHide() {
+    sideModal.className = "side-modal side-popup-closed";
+    // popupAllHide()
+}
