@@ -241,6 +241,7 @@ function buttonSelect(n) {
             break;
         case 7:
             busButton7.classList.add("bus-current");
+            break;
         case 8:
             busButton8.classList.add("bus-current");
             break;
