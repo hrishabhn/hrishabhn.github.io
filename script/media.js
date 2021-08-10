@@ -1047,4 +1047,13 @@ function bookPopulate() {
     document.getElementById(itemid[0]).href =                       bookAll[i][1];
   }
 
+  for (i = 1; i < 3; i++){
+    var itemid = [
+      "smart-book-".concat(i),
+    ]
+
+    document.getElementById(itemid[0]).className = cardClass.concat(bookAll[i][0]);
+    document.getElementById(itemid[0]).href =                       bookAll[i][1];
+  }
+
 }
