@@ -96,10 +96,17 @@ function smartCards(userLocale) {
 
     if (userLocale == "Office") {
         document.getElementById("office-card").className = "smart-card-show content-container"
-        // userLocale = "Office"
         // console.log("at office")
     } else{
         document.getElementById("office-card").className = "smart-card-hide content-container"
+        // console.log("not at office")
+    }
+
+    if (userLocale == "West Highway") {
+        document.getElementById("commute-card").className = "smart-card-show"
+        // console.log("at office")
+    } else{
+        document.getElementById("commute-card").className = "smart-card-hide"
         // console.log("not at office")
     }
 
