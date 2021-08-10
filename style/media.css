@@ -28,6 +28,11 @@
     scroll-snap-type: x mandatory;
 }
 
+.preload-card{
+    opacity: 0;
+    scale: 0.95;
+    /* -webkit-backdrop-filter: blur(100px); */
+}
 
 
 .media-card{
@@ -48,15 +53,14 @@
     /* scroll-snap-align: start;
     scroll-margin-left: 15px; */
 
-    transition: all 0.15s;
+    transition: all 0.5s;
     border-style: solid;
     border-width: 1px;
     border-color: var(--dark-layer-1);
 }
-.media-card:active{
-    /* scale: 0.975; */
+/* .media-card:active{
     opacity: 0.65;
-}
+} */
 .book-card{
     height: 300px;
     width: 200px;
