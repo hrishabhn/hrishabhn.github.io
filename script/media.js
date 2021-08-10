@@ -958,10 +958,10 @@ function bookData(){
   var book_9 = hide
   var book_10 = hide
 
-  // var book_1 = [
-  //   "west-cover",
-  //   "ibooks://",
-  // ]
+  var book_1 = [
+    "gweilo-cover",
+    "kindle://",
+  ]
 
   var book_2 = [
     "homodeus-cover",
