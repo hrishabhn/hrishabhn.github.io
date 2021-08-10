@@ -942,10 +942,26 @@ function podPopulate() {
 }
 
 function bookData(){
-  var book_1 = [
-    "west-cover",
-    "ibooks://",
+  var hide = [
+    "hidden-always",
+    "",
   ]
+
+  var book_1 = hide
+  var book_2 = hide
+  var book_3 = hide
+  var book_4 = hide
+  var book_5 = hide
+  var book_6 = hide
+  var book_7 = hide
+  var book_8 = hide
+  var book_9 = hide
+  var book_10 = hide
+
+  // var book_1 = [
+  //   "west-cover",
+  //   "ibooks://",
+  // ]
 
   var book_2 = [
     "homodeus-cover",
