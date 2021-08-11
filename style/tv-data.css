@@ -737,3 +737,16 @@
 .jojo-title{
     background-image: url('../TV/title/jojo.png');
 }
+
+.whatif-solid{
+    background-color: #0F0F38;
+}
+.whatif-gradient{
+    background: linear-gradient(#00000000,#0F0F38);
+}
+.whatif-poster{
+    background-image: url('../TV/background/whatif.webp');
+}
+.whatif-title{
+    background-image: url('../TV/title/whatif.png');
+}
