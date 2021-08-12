@@ -556,7 +556,23 @@ function tvData() {
   // ]
   
 
-  
+  show41 = [
+    "jeff-solid",
+    "jeff-poster",
+    "jeff-gradient",
+    "jeff-title",
+    "Documentary &#149 Comedy &#149 1 Season &#149 2019 - Present",
+    "https://www.disneyplus.com/series/the-world-according-to-jeff-goldblum/zs70p7I6A24m",
+    "disney",
+    "Watch on Disney+",
+    "https://www.tvtime.com/en/show/362437",
+    "8.42",
+    "https://reelgood.com/show/the-world-according-to-jeff-goldblum-2019",
+    "--",
+    "https://www.imdb.com/title/tt10196390",
+    "7.8",
+    'In each episode of this new 12-part series, Jeff Goldblum pulls on the thread of a deceptively familiar object to unravel a world of astonishing connections and fascinating science and history. Through the prism of his curious and witty mind, nothing is as it seems. These "modern marvels" are so commonplace, we often take them for granted…but Jeff Goldblum does not.',
+  ]
   
   // Lost
   show42 = [
