@@ -317,17 +317,16 @@
 
 
 .tv-popup-open{
-    pointer-events: initial;
-    transform: translateY(0%);
+    /* pointer-events: initial; */
+    /* transform: translateY(0%); */
+    transition: 0.2s;
 }
 .tv-popup-closed{
-    /* top: 2vh; */
     pointer-events: none;
-    /* opacity: 0; */
-    /* scale: 0.9; */
-
     transform: translateY(100%);
+    transition: 0.5s;
 
+    /* scale: 0.9; */
 }
 .tv-popup-modal{
     display: block;
