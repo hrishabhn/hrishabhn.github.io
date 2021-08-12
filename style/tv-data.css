@@ -750,3 +750,16 @@
 .whatif-title{
     background-image: url('../TV/title/whatif.png');
 }
+
+.jeff-solid{
+    background-color: #5AAFC7;
+}
+.jeff-gradient{
+    background: linear-gradient(#00000000,#5AAFC7);
+}
+.jeff-poster{
+    background-image: url('../TV/background/jeff.webp');
+}
+.jeff-title{
+    background-image: url('../TV/title/jeff.png');
+}
