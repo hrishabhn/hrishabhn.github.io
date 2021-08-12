@@ -11,8 +11,8 @@ function getUserLocale() {
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
 
-        // lat = 22.418
-        // lon = 114.206
+        // lat = 40.434
+        // lon = -86.925
 
         // console.log(lat)
         // console.log(lon)
@@ -34,7 +34,18 @@ function getUserLocale() {
     
         const london = (lat > 51.2) && (lat < 51.7) && (lon > -0.5) && (lon < 0.3);
 
-        // console.log(work)
+        const walmart = (lat > 40.4565) && (lat < 40.4592) && (lon > -86.9352) && (lon < -86.9312);
+        const zbt = (lat > 40.4337) && (lat < 40.4344) && (lon > -86.9255) && (lon < -86.9248);
+        const grantStation = (lat > 40.4191) && (lat < 40.4203) && (lon > -86.9103) && (lon < -86.9096);
+
+        // 40.4344, -86.9255
+        // 40.4337, -86.9248
+
+
+        // 40.4592, -86.9352
+        // 40.4565, -86.9312
+
+        // console.log(zbt)
 
         // 22.273,114.121 top left
         // 22.252,114.135 borrom right
@@ -86,6 +97,24 @@ function getUserLocale() {
             userLocale = "CUHK"
         }
         
+
+        if (walmart) {
+            userLocale = "Walmart"
+        }
+
+        if (zbt) {
+            userLocale = "ZBT"
+        }
+
+        if (grantStation) {
+            userLocale = "Grant Street Station"
+        }
+
+
+
+
+
+
         // userLocale = "West Highway"
 
         locationBasedLoad(userLocale);
