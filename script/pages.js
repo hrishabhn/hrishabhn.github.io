@@ -8,6 +8,7 @@ function mainPage(n) {
   var oldMenu = document.getElementById("menu-" + mainCurrent)
   oldMain.classList.add("hidden-always")
   oldMenu.classList.remove("selected")
+  var mainOld = mainCurrent
 
   mainCurrent = n;
   var newMain = document.getElementById("main-" + mainCurrent)
@@ -16,6 +17,7 @@ function mainPage(n) {
   newMenu.classList.add("selected")
 
   pageLoads(n)
+  pageReset(mainOld)
 }
 
 function pageLoads(n) {
@@ -37,6 +39,14 @@ function pageLoads(n) {
     case 5:
       title.innerHTML = "Media"
       tvLoad(1)
+      break
+  }
+}
+
+function pageReset(n) {
+  switch (n) {
+    case 5:
+      tvLoadReset()
       break
   }
 }
