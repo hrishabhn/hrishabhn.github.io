@@ -1089,7 +1089,6 @@ body{
   height: 100%;
   overflow: auto; /* Enable scroll if needed */
   /* transition: all 0.3s; */
-  /* transition: 0s !important; */
   /* transition-delay: 0.1s; */
   transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 
