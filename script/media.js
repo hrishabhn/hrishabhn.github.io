@@ -869,6 +869,13 @@ function tvLoad(i) {
   
 }
 
+function tvLoadReset() {
+  for (i = 1; i < 51; i++) {
+    var item = document.getElementById("tv-card-".concat(i))
+    item.classList.add("preload-card")
+  }
+}
+
 var tvModal = document.getElementById("tv-popup-modal");
 var bgBlur = document.getElementById("background-blur");
   
