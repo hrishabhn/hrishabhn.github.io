@@ -53,6 +53,7 @@
     /* scroll-snap-align: start;
     scroll-margin-left: 15px; */
 
+    transform-origin: bottom;
     transition: all 0.5s;
     border-style: solid;
     border-width: 1px;
