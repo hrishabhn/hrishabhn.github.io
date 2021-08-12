@@ -579,7 +579,7 @@ function tvData() {
     "made-poster",
     "made-gradient",
     "made-title",
-    "Documentary &#149 Comedy &#149 1 Season &#149 2020 - Present",
+    "Documentary &#149 1 Season &#149 2020 - Present",
     "https://www.disneyplus.com/series/made-in-a-day/4KaNRGuO6c7T",
     "disney",
     "Watch on Disney+",
