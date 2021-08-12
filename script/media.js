@@ -556,7 +556,7 @@ function tvData() {
   // ]
   
 
-  show41 = [
+  show40 = [
     "jeff-solid",
     "jeff-poster",
     "jeff-gradient",
@@ -572,6 +572,24 @@ function tvData() {
     "https://www.imdb.com/title/tt10196390",
     "7.8",
     'In each episode of this new 12-part series, Jeff Goldblum pulls on the thread of a deceptively familiar object to unravel a world of astonishing connections and fascinating science and history. Through the prism of his curious and witty mind, nothing is as it seems. These "modern marvels" are so commonplace, we often take them for granted…but Jeff Goldblum does not.',
+  ]
+
+  show41 = [
+    "made-solid",
+    "made-poster",
+    "made-gradient",
+    "made-title",
+    "Documentary &#149 Comedy &#149 1 Season &#149 2020 - Present",
+    "https://www.disneyplus.com/series/made-in-a-day/4KaNRGuO6c7T",
+    "disney",
+    "Watch on Disney+",
+    "https://www.tvtime.com/en/show/386921",
+    "9.92",
+    "https://reelgood.com/show/made-in-a-day-2020",
+    "--",
+    "https://www.imdb.com/title/tt12833474",
+    "7.6",
+    "There's a revolution in manufacturing. This is the story of how some of today's biggest brands, from Tesla Cars to Gibson Guitars, Tabasco to Space Rockets, are made today.",
   ]
   
   // Lost
