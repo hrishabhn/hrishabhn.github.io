@@ -763,3 +763,16 @@
 .jeff-title{
     background-image: url('../TV/title/jeff.png');
 }
+
+.made-solid{
+    background-color: #747431;
+}
+.made-gradient{
+    background: linear-gradient(#00000000,#747431);
+}
+.made-poster{
+    background-image: url('../TV/background/made.webp');
+}
+.made-title{
+    background-image: url('../TV/title/made.png');
+}
