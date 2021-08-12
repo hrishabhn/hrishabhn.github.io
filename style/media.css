@@ -436,6 +436,7 @@
     height: clamp(0px, 100%, 500px);
     width: clamp(0px, 60%, 300px);
 
+    margin-bottom: -20px;
     /* height: clamp(50vw); */
 
     /* width: 80vw; */
@@ -452,7 +453,7 @@
     position: relative;
 
     box-sizing: border-box;
-    padding: 10px 40px;
+    padding: 30px 40px 0px;
 
     width: 100vw;
     /* max-width: 100px; */
@@ -994,7 +995,7 @@
         padding-left: 20px;
     }
     .tv-popup-description{
-        padding: 10px 20px;
+        padding: 30px 20px 10px;
     }
     .tv-popup-ratings-tray{
         margin-left: 20px;
