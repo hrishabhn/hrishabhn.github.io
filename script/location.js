@@ -11,7 +11,7 @@ function getUserLocale() {
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
 
-        // lat = 40.434
+        // lat = 40.434 
         // lon = -86.925
 
         // console.log(lat)
