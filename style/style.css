@@ -1063,7 +1063,7 @@ body{
     /* background-color: #ffffff33; */
     /* -webkit-transition: all 0.25s; */
     transition: all 0.2s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
     pointer-events: none;
 }
 .background-blur-show{
