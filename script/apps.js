@@ -601,7 +601,7 @@ app_S35 = [
     "mtr",
     "MTR",
     "",
-    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="15 8 36 36"><path d="M33 8v36M21 9a12 12 0 0024 0M21 43a12 12 0 0124 0" stroke="#fff" stroke-width="5" fill="none"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="15 8 36 36"><path d="M33 8v36M21 9a12 12 0 0024 0M21 43a12 12 0 0124 0" stroke-width="5" fill="none"></path></svg>',
     "mtrmobile://",
 ]
 
