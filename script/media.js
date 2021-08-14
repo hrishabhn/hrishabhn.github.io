@@ -1039,35 +1039,35 @@ function bookData(){
   var book_9 = hide
   var book_10 = hide
 
-  var book_1 = [
+  var book_3 = [
     "gweilo-cover",
     "kindle://",
   ]
 
-  var book_2 = [
+  var book_4 = [
     "homodeus-cover",
     "audible://view?section=discover&asin=B01N4DCBK6",
     // "https://smart.link/o3waqx4wg1gdn?asin=B01N4DCBK6",
   ]
 
-  var book_3 = [
+  var book_5 = [
     "ride-cover",
     "audible://view?section=discover&asin=0525499334",
     // "https://smart.link/o3waqx4wg1gdn?asin=0525499334",
   ]
 
-  var book_4 = [
+  var book_6 = [
     "martian-cover",
     "audible://view?section=discover&asin=B082BHJMFF",
     // "https://smart.link/o3waqx4wg1gdn?asin=B082BHJMFF",
   ]
 
-  var book_5 = [
+  var book_2 = [
     "four-cover",
     "ibooks://",
   ]
 
-  var book_6 = [
+  var book_1 = [
     "rules-cover",
     "ibooks://",
   ]
