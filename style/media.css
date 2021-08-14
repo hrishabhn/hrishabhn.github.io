@@ -324,7 +324,7 @@
 .tv-popup-closed{
     pointer-events: none;
     transform: translateY(100%);
-    transition: 0.5s;
+    transition: 0.3s;
 
     /* scale: 0.9; */
 }
