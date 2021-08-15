@@ -41,6 +41,12 @@
 .gweilo-cover{
     background-image: url('../books/gweilo.jpg');
 }
+.culture-cover{
+    background-image: url('../books/culture.jpg');
+}
+.code-cover{
+    background-image: url('../books/code.jpg');
+}
 
 
 /* podcasts */
