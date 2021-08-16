@@ -48,12 +48,13 @@
     height: 100%;
     width: 100%;
 
-    background-color: var(--black-40);
 
     transition: all 0.25s;
-    opacity: 0;
 }
 .movie-play-container:hover{
+    background-color: var(--black-40);
+}
+.movie-play-container:hover .movie-play-icon{
     opacity: 1;
 }
 .movie-play-icon{
@@ -63,6 +64,9 @@
     fill: white;
     height: 24px;
     width: 24px;
+
+    transition: all 0.25s;
+    opacity: 0;
 }
 .movie-poster{
     display: flex;
@@ -159,7 +163,7 @@
     vertical-align: top;
 
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     overflow: hidden;
 
     text-decoration: none;
@@ -210,8 +214,8 @@
     position: relative;
     align-items: flex-end;
 
-    height: 120px;
-    width: 80px;
+    height: 90px;
+    width: 60px;
 
     border-radius: 5px;
 
@@ -247,7 +251,7 @@
     text-overflow: ellipsis;
     /* align-items: center; */
 
-    max-width: 150px;
+    max-width: 120px;
 
     /* width: 100%; */
 }
