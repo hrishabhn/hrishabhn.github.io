@@ -70,8 +70,9 @@ function movieHTML(data, n) {
 
         htmlString = `${htmlString}${movieCardHTML}`
     }
-
-    document.getElementById("movie-tray-".concat(n)).innerHTML = htmlString
+    var tray = document.getElementById("movie-tray-".concat(n))
+    tray.classList.add("media-tray")
+    tray.innerHTML = htmlString
 }
 
 function bookPopulate(){
