@@ -21,6 +21,7 @@ function newPopulate(){
     calWidget()
     weatherWidget()
 
+    apps()
     mediaPopulate()
 
 
