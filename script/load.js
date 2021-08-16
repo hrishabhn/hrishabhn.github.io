@@ -14,19 +14,31 @@ function mainPopulate(){
     // popupSideShow()
 }
 
+function newPopulate(){
+    calendarDate()
+    getUserLocale()
+
+    calWidget()
+    weatherWidget()
+    // apps()
+}
+
 function locationBasedLoad(userLocale) {
-    document.getElementById("district").innerHTML = userLocale;
-    smartCards(userLocale)
-    buses(userLocale)
     storeLocale(userLocale)
+
+    // statusBar(1000,4000)
+    document.getElementById("district").innerHTML = globalLocale;
+
+    // smartCards(globalLocale)
+    buses(globalLocale)
 }
 
 function mainRefresh() {
     calendarDate()
     getUserLocale()
-    smartCards()
-    todayWidget()
-    statusBar(0,1500)
+    // smartCards()
+    // todayWidget()
+    // statusBar(0,1500)
     resetBusCards()
     // console.log("refreshed")
 }
