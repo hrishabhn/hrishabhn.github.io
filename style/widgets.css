@@ -170,7 +170,7 @@
     height: 30px;
     width: 100%;
     
-    padding-left: 30px;
+    /* padding-left: 30px; */
     /* padding-bottom: 0px; */
 
     overflow: hidden;
@@ -625,8 +625,8 @@
 .bus-icon-container{
     display: block;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     /* height: fit-content; */
 
     /* height: 10px;
@@ -635,8 +635,8 @@
 }
 .bus-icon{
     display: block;
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
 }
 .bus-icon-hide{
     opacity: 0;
@@ -682,31 +682,19 @@
     /* border-top: 1px solid var(--white-10); */
 }
 #bus-number-tray{
-    width: 100%;
-    box-sizing: border-box;
 
-    align-items: center;
-    position: relative;
+    font-size: 12px;
+    font-weight: 300;
 
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: flex-end; */
-    /* height: 40px; */
-    /* width: 90px; */
-    font-size: 18px;
-    font-weight: 400;
-    padding: 10px 24px 10px 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     cursor: default;
 }
 .bus-number{
-    padding: 5px 8px;
+    padding: 4px 6px;
     border-style: solid;
     border-width: 2px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-right: 6px;
 
     display: inline-block;
@@ -759,9 +747,9 @@
 
 
 
-.bus-card{
-    padding: 0px 30px;
-}
+/* .bus-card{
+    padding: 0px 0px;
+} */
 .bus-card-line{
     display: block;
     height: 1px;
