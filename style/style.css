@@ -621,7 +621,7 @@ body{
     #col-container{
         display: flex;
         position: relative;
-        flex-direction: column;
+        flex-direction: column-reverse;
         box-sizing: border-box;
     
         height: 100%;
@@ -630,10 +630,11 @@ body{
     }
     #col-1{
         width: 100%;
+        margin-bottom: 15px;
     }
     #col-2{
         width: 100%;
-        margin: 15px 0px;
+        margin-bottom: 15px;
     }
     #col-2.big{
         width: 100%;
