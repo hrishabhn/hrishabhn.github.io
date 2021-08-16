@@ -1,5 +1,6 @@
 function mediaPopulate(){
     upNextPopulate()
+    bookPopulate()
 }
 
 function upNextPopulate(){
@@ -70,4 +71,47 @@ function movieHTML(data, n) {
     }
 
     document.getElementById("movie-tray-".concat(n)).innerHTML = htmlString
+}
+
+function bookPopulate(){
+    const bookData = [
+        {
+            name: "No Rules Rules",
+            id: "rules",
+            link: "ibooks://",
+            author: "Reed Hastings, Erin Meyer",
+        },
+        {
+            name: "Gweilo: Memories of a Hong Kong Childhood",
+            id: "gweilo",
+            link: "ibooks://",
+            author: "Martin Booth",
+        },
+        {
+            name: "The Four",
+            id: "four",
+            link: "ibooks://",
+            author: "Scott Galloway",
+        },
+        {
+            name: "Homo Deus",
+            id: "homodeus",
+            link: "ibooks://",
+            author: "Yuval Noah Harari",
+        },
+       
+        
+    ]
+
+    var dataLength = bookData.length
+
+    var htmlString = "";
+
+    for (i = 0; i < dataLength; i++) {
+        var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${bookData[i].link}"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
+
+        htmlString = `${htmlString}${bookCardHTML}`
+    }
+
+    document.getElementById("book-tray").innerHTML = htmlString
 }
