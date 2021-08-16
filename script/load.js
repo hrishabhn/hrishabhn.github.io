@@ -24,11 +24,7 @@ function newPopulate(){
     apps()
     mediaPopulate()
 
-
-
-
     // mainPage(5)
-    // apps()
 }
 
 function locationBasedLoad(userLocale) {
