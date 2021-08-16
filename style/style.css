@@ -268,8 +268,8 @@ body{
 
     /* background-color: crimson; */
 }
-#col-1 > *:not(:first-child) {
-    margin-top: 15px; 
+#col-1 > *:not(:last-child) {
+    margin-bottom: 15px; 
 } 
 
 #col-2{
