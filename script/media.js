@@ -1,6 +1,7 @@
 function mediaPopulate(){
     upNextPopulate()
     bookPopulate()
+    podPopulate()
 }
 
 function upNextPopulate(){
@@ -119,5 +120,87 @@ function bookPopulate(){
         htmlString = `${htmlString}${bookCardHTML}`
     }
 
-    document.getElementById("book-tray").innerHTML = htmlString
+    var tray = document.getElementById("book-tray")
+    tray.classList.add("media-tray")
+    tray.innerHTML = htmlString
+}
+
+function podPopulate(){
+    const podData = [
+        {
+            name: "Pivot",
+            id: "pivot",
+            link: "https://podcasts.apple.com/podcast/id1073226719",
+            author: "Kara Swisher & Scott Galloway",
+        },
+        {
+            name: "Founder's Journal",
+            id: "founders",
+            link: "https://podcasts.apple.com/podcast/id1509276485",
+            author: "Alex Lieberman",
+        },
+        {
+            name: "Sway",
+            id: "sway",
+            link: "https://podcasts.apple.com/podcast/id1528594034",
+            author: "Kara Swisher",
+        },
+        {
+            name: "Acquired",
+            id: "acquired",
+            link: "https://podcasts.apple.com/podcast/id1050462261",
+            author: "Scott Galloway",
+        },
+        {
+            name: "Learn Cantonese",
+            id: "canto",
+            link: "https://podcasts.apple.com/podcast/id1513774818",
+            author: "Scott Galloway",
+        },
+        {
+            name: "Lex Fridman Podcast",
+            id: "lex",
+            link: "https://www.youtube.com/lexfridman/videos",
+            author: "Lex Fridman",
+        },
+        {
+            name: "Yang Speaks",
+            id: "yang",
+            link: "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos",
+            author: "Andrew Yang & Zach??",
+        },
+        {
+            name: "Economist Radio",
+            id: "economist",
+            link: "https://podcasts.apple.com/podcast/id151230264",
+            author: "The Economist",
+        },
+        {
+            name: "INET",
+            id: "inet",
+            link: "https://www.youtube.com/c/NewEconomicThinking/videos",
+            author: "Rob Johnson",
+        },
+        {
+            name: "Making Sense",
+            id: "samharris",
+            link: "https://podcasts.apple.com/podcast/id733163012",
+            author: "Sam Harris",
+        },
+       
+        
+    ]
+
+    var dataLength = podData.length
+
+    var htmlString = "";
+
+    for (i = 0; i < dataLength; i++) {
+        var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${podData[i].link}"><div class="book-card-bg ${podData[i].id}-cover"><div class="book-card-fg"></div></div><div class="pod-poster ${podData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading">${podData[i].author}</p></div></div></a>`
+
+        htmlString = `${htmlString}${bookCardHTML}`
+    }
+    var tray = document.getElementById("pod-tray")
+    tray.classList.add("media-tray")
+    tray.innerHTML = htmlString
 }
