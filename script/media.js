@@ -82,6 +82,12 @@ function bookPopulate(){
             author: "Reed Hastings, Erin Meyer",
         },
         {
+            name: "Never Split the Difference",
+            id: "split",
+            link: "ibooks://",
+            author: "Chris Voss",
+        },
+        {
             name: "Gweilo: Memories of a Hong Kong Childhood",
             id: "gweilo",
             link: "ibooks://",
