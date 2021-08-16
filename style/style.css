@@ -420,7 +420,7 @@ body{
 
     width: 100%;
 
-    background-color: var(--dark-layer-1);
+    background-color: var(--dark-layer-2);
     text-decoration: none;
 }
 
@@ -533,7 +533,7 @@ body{
         color: var(--blue-dark)
     } */
     .content-container{
-        background-color: var(--light-layer-1);
+        background-color: var(--light-layer-2);
     }
     .content-title{
         color: var(--dark-layer-1);
