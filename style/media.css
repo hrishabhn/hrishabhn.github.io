@@ -214,8 +214,8 @@
     position: relative;
     align-items: flex-end;
 
-    height: 90px;
-    width: 60px;
+    height: 120px;
+    width: 80px;
 
     border-radius: 5px;
 
@@ -235,8 +235,8 @@
     position: relative;
     align-items: flex-end;
 
-    height: 60px;
-    width: 60px;
+    height: 90px;
+    width: 90px;
 
     border-radius: 5px;
 
@@ -278,16 +278,16 @@
 }
 .book-heading{
     display: inline-block;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
-    /* text-transform: uppercase; */
+    
     color: var(--light-layer-0);
 
     overflow: hidden;
     text-overflow: inherit;
 }
 .book-subheading{
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 400;
 
     margin-top: 4px;
