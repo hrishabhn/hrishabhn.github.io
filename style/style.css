@@ -268,6 +268,7 @@ body{
 
     /* background-color: crimson; */
 }
+
 #col-1 > *:not(:last-child) {
     margin-bottom: 15px; 
 } 
@@ -281,6 +282,9 @@ body{
     /* flex-grow: 1; */
 
     /* background-color: chartreuse; */
+}
+#col-2.big{
+    width: calc(100% - 15px);
 }
 
 .clickable{
@@ -627,6 +631,9 @@ body{
     #col-2{
         width: 100%;
         margin: 15px 0px;
+    }
+    #col-2.big{
+        width: 100%;
     }
 
 
