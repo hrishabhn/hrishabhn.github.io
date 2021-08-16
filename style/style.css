@@ -123,6 +123,11 @@ body{
     color: var(--light-layer-0);
     fill: var(--light-layer-0);
 }
+#everything{
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: scroll;
+}
 
 .hidden-always{
     display: none !important;
