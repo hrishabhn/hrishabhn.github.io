@@ -221,8 +221,11 @@ body{
     position: relative;
     flex-direction: column;
 }
-.main > *:not(:first-child) {
-    margin-top: 15px; 
+.main > *:not(:last-child) {
+    margin-bottom: 15px; 
+}
+.main >*:empty {
+    margin-bottom: 0px;
 }
 
 #header{
