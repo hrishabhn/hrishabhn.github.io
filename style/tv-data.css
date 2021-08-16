@@ -47,6 +47,9 @@
 .code-cover{
     background-image: url('../books/code.jpg');
 }
+.split-cover{
+    background-image: url('../books/split.jpg');
+}
 
 
 /* podcasts */
