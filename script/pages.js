@@ -17,28 +17,34 @@ function mainPage(n) {
   newMenu.classList.add("selected")
 
   pageLoads(n)
-  pageReset(mainOld)
+  // pageReset(mainOld)
 }
 
 function pageLoads(n) {
   var title = document.getElementById("title-page")
+  var header = document.getElementById("header")
 
   switch (n) {
     case 1:
       title.innerHTML = "Home"
+      header.innerHTML = "Home"
       break
     case 2:
       title.innerHTML = "Bookmarks"
+      header.innerHTML = "Bookmarks"
       break
     case 3:
       title.innerHTML = "Apps"
+      header.innerHTML = "Apps"
       break
     case 4:
       title.innerHTML = "School"
+      header.innerHTML = "School"
       break
     case 5:
       title.innerHTML = "Media"
-      tvLoad(1)
+      header.innerHTML = "Media"
+      // tvLoad(1)
       break
   }
 }
