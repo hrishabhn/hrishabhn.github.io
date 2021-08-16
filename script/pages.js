@@ -44,7 +44,6 @@ function pageLoads(n) {
     case 5:
       title.innerHTML = "Media"
       header.innerHTML = "Media"
-      // tvLoad(1)
       break
   }
 }
