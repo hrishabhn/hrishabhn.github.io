@@ -20,6 +20,13 @@ function newPopulate(){
 
     calWidget()
     weatherWidget()
+
+    mediaPopulate()
+
+
+
+
+    // mainPage(5)
     // apps()
 }
 
