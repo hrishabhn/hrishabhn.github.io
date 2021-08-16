@@ -34,8 +34,8 @@ function weatherWidget() {
                 .then(data => {
                     // var cityValue = data['name'];
                     var tempValue = data['main']['temp'];
-                    var iconValue = data['weather'][0]['main'];
-                    // console.log(data)
+                    var weatherValue = data['weather'][0]['main'];
+                    // console.log(weatherValue)
                     var hiValue = data['main']['temp_max'];
                     var loValue = data['main']['temp_min'];
 
@@ -43,48 +43,58 @@ function weatherWidget() {
                     hiValue = Math.round(hiValue);
                     loValue = Math.round(loValue);
 
-                    var hiloValue = 'H:' + hiValue + '&#176 ' + 'L:' + loValue + '&#176';
+                    // var hiloValue = 'H:' + hiValue + '&#176 ' + 'L:' + loValue + '&#176';
 
-                    var widget = document.getElementById("today-widget");
+                    var weather = document.getElementById("weather")
+
+                    weather.innerHTML = tempValue + "&#176C, " + weatherValue
+
+
+
+
+
+
+                    // var widget = document.getElementById("today-widget");
                     // var city = document.getElementById("today-location")
-                    var temp = document.getElementById("today-temp")
-                    var icon = document.getElementById("today-icon")
-                    var hilo = document.getElementById("today-hilo")
+                    // var temp = document.getElementById("today-temp")
+                    // var icon = document.getElementById("today-icon")
+                    // var hilo = document.getElementById("today-hilo")
 
 
-                    if ((hourNow > 18) || (hourNow < 6)) {
-                        iconValue = "Night"
-                    }
+                    // if ((hourNow > 18) || (hourNow < 6)) {
+                    //     iconValue = "Night"
+                    // }
 
-                    switch (iconValue) {
-                        case 'Clouds':
-                            widget.classList = "today-widget-container cloudy"
-                            break;
-                        case 'Sunny':
-                            widget.classList = "today-widget-container sunny"
-                            break;
-                        case 'Night':
-                            widget.classList = "today-widget-container night"
-                            break;
-                        default:
-                            widget.classList = "today-widget-container indigo-gradient"
-                            // console.log("error: no weather icon found");
-                            // console.log(iconValue)
-                    }
+                    // switch (iconValue) {
+                    //     case 'Clouds':
+                    //         widget.classList = "today-widget-container cloudy"
+                    //         break;
+                    //     case 'Sunny':
+                    //         widget.classList = "today-widget-container sunny"
+                    //         break;
+                    //     case 'Night':
+                    //         widget.classList = "today-widget-container night"
+                    //         break;
+                    //     default:
+                    //         widget.classList = "today-widget-container indigo-gradient"
+                    //         // console.log("error: no weather icon found");
+                    //         // console.log(iconValue)
+                    // }
 
-                    hilo.innerHTML = hiloValue
-                    temp.innerHTML = tempValue + "&#176"                    
+                    // hilo.innerHTML = hiloValue
+                    // temp.innerHTML = tempValue + "&#176"                    
                 })
         })
     }
 }
 
 function calWidget() {
-    var weekday = document.getElementById("today-weekday")
-    var date = document.getElementById("today-date")
+    document.getElementById("date-now").innerHTML = weekdayNow + ", " + dateNow + " " + monthNow
+    // var weekday = document.getElementById("today-weekday")
+    // var date = document.getElementById("today-date")
 
-    weekday.innerHTML = weekdayNow
-    date.innerHTML = dateNow + " " + monthNow
+    // weekday.innerHTML = weekdayNow
+    // date.innerHTML = dateNow + " " + monthNow
 }
 
 
