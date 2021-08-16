@@ -40,11 +40,6 @@
     background-color: var(--dark-layer-0);
 }
 
-@media(max-width: 450px){
-    .black{
-        background-color: var(--dark-layer-1);
-    }
-}
 
 /* ios colors */
 
