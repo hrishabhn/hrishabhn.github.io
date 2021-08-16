@@ -14,6 +14,9 @@
     /* padding-right: 15px; */
     /* margin: 0px -15px; */
 }
+.media-tray > *:not(:last-child) {
+    margin-right: 15px; 
+}
 
 .movie-card{
     display: inline-flex;
@@ -90,7 +93,7 @@
     background-size: contain;
     background-position: bottom left;
 }
-.movie-title.short{
+.movie-title.tall{
     height: 80%;
     width: 100%;
 }
@@ -138,8 +141,8 @@
     display: block;
     position: relative;
 
-    height: 22px;
-    width: 22px;
+    height: 16px;
+    width: 16px;
 }
 
 @media screen and (prefers-color-scheme: light) {
