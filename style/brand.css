@@ -237,10 +237,12 @@
     background:linear-gradient(to bottom right,#9BC0F9,#6c86ad);
 }
 .walmart{
-    background:linear-gradient(to bottom right,#0070DB,#004a8f);
+    /* background:linear-gradient(to bottom right,#0070DB,#004a8f); */
+    background-color: #0070DB;
 }
 .amazon{
-    background:linear-gradient(to bottom right,#1E2631,#4c617d);
+    /* background:linear-gradient(to bottom right,#1E2631,#4c617d); */
+    background-color: #1E2631;
 }
 .reddit{
     background:linear-gradient(to bottom right,#ff4500,#b33000);
@@ -280,8 +282,9 @@
 .messenger{
     background:linear-gradient(to bottom right,#0084ff,#005cb3);
 }
-.apple-gradient{
-    background:linear-gradient(to bottom right,#A2AAAD,#5b5f61);
+.apple{
+    /* background:linear-gradient(to bottom right,#A2AAAD,#5b5f61); */
+    background-color: #A2AAAD;
 }
 .ivytech{
     background:linear-gradient(to bottom right,#006648,#00b37d);
@@ -368,6 +371,9 @@
 }
 .drops{
     background: linear-gradient(160deg,#fd9536,#a42f80 31%,#2c146c 79%);
+}
+.target{
+    background-color: #c00;
 }
 
 
