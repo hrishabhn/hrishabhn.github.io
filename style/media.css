@@ -162,7 +162,7 @@
     align-items: center;
     vertical-align: top;
 
-    border-radius: 10px;
+    border-radius: inherit;
     padding: 10px;
     overflow: hidden;
 
