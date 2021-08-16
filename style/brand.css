@@ -51,6 +51,10 @@
 .blue{
     background-color: var(--blue-dark);
 }
+.blue-fg{
+    color: var(--blue-dark);
+    fill: var(--blue-dark);
+}
 .brown{
     background-color: var(--brown-dark);
 }
@@ -78,8 +82,16 @@
 .red{
     background-color: var(--red-dark);
 }
+.red-fg{
+    color: var(--red-dark);
+    fill: var(--red-dark);
+}
 .teal{
     background-color: var(--teal-dark);
+}
+.teal-fg{
+    color: var(--teal-dark);
+    fill: var(--teal-dark);
 }
 .yellow{
     background-color: var(--yellow-dark);
@@ -89,6 +101,10 @@
 @media screen and (prefers-color-scheme: light) {
     .blue{
         background-color: var(--blue-light);
+    }
+    .blue-fg{
+        color: var(--blue-light);
+        fill: var(--blue-light);
     }
     .brown{
         background-color: var(--brown-light);
@@ -117,8 +133,16 @@
     .red{
         background-color: var(--red-light);
     }
+    .red-fg{
+        color: var(--red-light);
+        fill: var(--red-light);
+    }
     .teal{
         background-color: var(--teal-light);
+    }
+    .teal-fg{
+        color: var(--teal-light);
+        fill: var(--teal-light);
     }
     .yellow{
         background-color: var(--yellow-light);
