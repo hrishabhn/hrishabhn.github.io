@@ -56,6 +56,19 @@ function pageReset(n) {
   }
 }
 
+function hideWidgets() {
+  document.getElementById("header").onclick = function(){ showWidgets() }
+  document.getElementById("col-1").classList.add("hidden-always")
+  document.getElementById("col-2").classList.add("big")
+}
+
+function showWidgets() {
+  document.getElementById("header").onclick = function(){ hideWidgets() }
+  document.getElementById("col-1").classList.remove("hidden-always")
+  document.getElementById("col-2").classList.remove("big")
+}
+
+
 // function mainPage1(){
 //   document.getElementById("main-1").className = "main-new";
 //   document.getElementById("main-2").className = "hidden-always";
