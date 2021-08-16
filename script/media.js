@@ -80,7 +80,7 @@ function bookPopulate(){
             name: "No Rules Rules",
             id: "rules",
             link: "ibooks://",
-            author: "Reed Hastings, Erin Meyer",
+            author: "Reed Hastings & Erin Meyer",
         },
         {
             name: "Never Split the Difference",
@@ -105,6 +105,18 @@ function bookPopulate(){
             id: "homodeus",
             link: "ibooks://",
             author: "Yuval Noah Harari",
+        },
+        {
+            name: "The Ride of a Lifetime",
+            id: "ride",
+            link: "ibooks://",
+            author: "Robert Iger",
+        },
+        {
+            name: "The Martian",
+            id: "martian",
+            link: "ibooks://",
+            author: "Andy Weir",
         },
        
         
@@ -149,13 +161,13 @@ function podPopulate(){
             name: "Acquired",
             id: "acquired",
             link: "https://podcasts.apple.com/podcast/id1050462261",
-            author: "Scott Galloway",
+            author: "Ben Gilbert & David Rosenthal",
         },
         {
             name: "Learn Cantonese",
             id: "canto",
             link: "https://podcasts.apple.com/podcast/id1513774818",
-            author: "Scott Galloway",
+            author: "Poetic Cantonese",
         },
         {
             name: "Lex Fridman Podcast",
