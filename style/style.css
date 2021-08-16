@@ -628,6 +628,10 @@ body{
         color: var(--dark-layer-1);
         fill: var(--dark-layer-1);
     }
+    .menu-item.selected{
+        color: var(--dark-layer-1);
+        fill: var(--dark-layer-1);
+    }
 
     /* .action{
         color: var(--light-layer-0);
@@ -767,6 +771,13 @@ body{
         height: 22px;
         width: 22px;
 
+    }
+
+
+    @media screen and (prefers-color-scheme: light) {
+        .navbar{
+            background-color: var(--light-layer-2);
+        }
     }
 
 }
