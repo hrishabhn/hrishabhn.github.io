@@ -572,7 +572,7 @@ body{
         height: auto;
         width: 100vw;
 
-        background-color: var(--dark-layer-2);
+        background-color: var(--dark-layer-1);
         /* -webkit-backdrop-filter: blur(25px); */
         /* backdrop-filter: blur(25px); */
     }
@@ -670,7 +670,7 @@ body{
 
     @media screen and (prefers-color-scheme: light) {
         .navbar{
-            background-color: var(--light-layer-2);
+            background-color: var(--light-layer-1);
         }
     }
 
