@@ -27,7 +27,7 @@ function upNextPopulate(){
         {
             name: "The Grand Tour",
             id: "grandTour",
-            link: "",
+            link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
             service: "Prime Video",
             titleStyle: "mid",
         },
@@ -51,7 +51,7 @@ function upNextPopulate(){
             name: "Rick and Morty",
             id: "rick",
             link: "",
-            service: "Download",
+            service: "Adult Swim",
             titleStyle: "wide",
         },
         
