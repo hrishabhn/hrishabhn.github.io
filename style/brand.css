@@ -192,13 +192,15 @@
     background:linear-gradient(to bottom right,#040405,#183949);
 }
 .hulu-green{
-    background:linear-gradient(to bottom right,#1ce783,#139c57);
+    /* background:linear-gradient(to bottom right,#1ce783,#139c57); */
+    background-color: #1ce783;
 }
 .netflix{
     background:linear-gradient(to bottom right,#e50914,#99060d);
 }
 .youtube{
-    background:linear-gradient(to bottom right,#f00,#b30000);
+    /* background:linear-gradient(to bottom right,#f00,#b30000); */
+    background-color: #f00;
 }
 .reelgood{
     /* background:linear-gradient(to bottom right,#00dc89,#008f58); */
@@ -208,10 +210,12 @@
     background: #545454;
 }
 .pocket{
-    background:linear-gradient(to bottom right,#EF3D55,#a32a3b);
+    /* background:linear-gradient(to bottom right,#EF3D55,#a32a3b); */
+    background-color: #EF3D55;
 }
 .feedly{
-    background:linear-gradient(to bottom right,#2bb24c,#18662c);
+    /* background:linear-gradient(to bottom right,#2bb24c,#18662c); */
+    background-color: #2bb24c;
 }
 .twitter{
     background:linear-gradient(to bottom right,#1da1f2,#146ea6);
@@ -302,13 +306,15 @@
     background:linear-gradient(to bottom right,#fffc00,#b3b000);
 }
 .audible{
-    background:linear-gradient(to bottom right,#F8991D,#ab6a15);
+    /* background:linear-gradient(to bottom right,#F8991D,#ab6a15); */
+    background-color: #F8991D;
 }
 .podcasts{
     background:linear-gradient(to bottom right,#D56EFD,#842BC1);
 }
 .books{
-    background:linear-gradient(to bottom right,#FC880F,#b0600b);
+    /* background:linear-gradient(to bottom right,#FC880F,#b0600b); */
+    background-color: #FC880F;
 }
 .mstodo{
     background:linear-gradient(to bottom right,#185ABD,#0f3670);
