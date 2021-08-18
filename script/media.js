@@ -175,7 +175,7 @@ function upNextPopulate(){
             service: "Apple TV+",
             description: "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
             summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-            titleStyle: "mid",
+            titleStyle: "wide",
             tvTimeID: "383203",
             reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
             imdbID: "tt10986410",
@@ -187,6 +187,7 @@ function upNextPopulate(){
             service: "Adult Swim",
             description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
             summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
+            titleStyle: "wide",
             tvTimeID: "275274",
             reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
             imdbID: "tt2861424",
@@ -204,13 +205,13 @@ function moviesPopulate(){
             id: "free",
             link: "",
             service: "Coming Soon",
-            // description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
-            // summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
+            description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
+            summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
             titleStyle: "wide",
-
-
-            tvTimeID: null
-        },        
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/free-guy-2020",
+            imdbID: "tt6264654",
+        },    
     ]
 
     movieHTML(upNextData, 2)
