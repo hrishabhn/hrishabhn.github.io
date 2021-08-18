@@ -52,7 +52,7 @@ function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, 
     document.getElementById("grad").className = gradientClass.concat(id,"-gradient");
     document.getElementById("title").className =   titleClass.concat(id,"-title ",titleStyle);
     // document.getElementById("desc").innerHTML = description;
-    document.getElementById("tv-popup-link").href = link;
+    // document.getElementById("tv-popup-link").href = link;
     // document.getElementById("serviceGradient").className = serviceClass.concat(showsAll[n][6]);
     document.getElementById("service").innerHTML = service;
 
@@ -64,6 +64,17 @@ function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, 
         descElement.innerHTML = description;
     } else {
         descElement.innerHTML = "";
+    }
+
+    var linkElement = document.getElementById("tv-popup-link")
+    var linkIcon = document.getElementById("tv-popup-button-icon")
+    if ((link !== "null") && (link !== "undefined")) {
+        linkIcon.classList.remove("hidden-always")
+        linkElement.href = link;
+        console.log('success')
+    } else {
+        linkIcon.classList.add("hidden-always")
+        linkElement.removeAttribute('href')
     }
 
     var tvTimeElement = document.getElementById("tv-popup-tv-time")
@@ -171,7 +182,7 @@ function upNextPopulate(){
         {
             name: "Ted Lasso",
             id: "ted",
-            link: "",
+            link: null,
             service: "Apple TV+",
             description: "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
             summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
@@ -183,7 +194,7 @@ function upNextPopulate(){
         {
             name: "Rick and Morty",
             id: "rick",
-            link: "",
+            link: null,
             service: "Adult Swim",
             description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
             summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
@@ -203,7 +214,7 @@ function moviesPopulate(){
         {
             name: "Free Guy",
             id: "free",
-            link: "#",
+            link: null,
             service: "Coming Soon",
             description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
             summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
