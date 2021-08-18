@@ -6,14 +6,14 @@ var mainCurrent = 1;
 function mainPage(n) {
   var oldMain = document.getElementById("main-" + mainCurrent)
   var oldMenu = document.getElementById("menu-" + mainCurrent)
-  oldMain.classList.add("hidden-always")
+  oldMain.classList.add("hidden")
   oldMenu.classList.remove("selected")
   var mainOld = mainCurrent
 
   mainCurrent = n;
   var newMain = document.getElementById("main-" + mainCurrent)
   var newMenu = document.getElementById("menu-" + mainCurrent)
-  newMain.classList.remove("hidden-always")
+  newMain.classList.remove("hidden")
   newMenu.classList.add("selected")
 
   pageLoads(n)
@@ -53,7 +53,7 @@ function pageReset(n) {
   switch (n) {
     case 5:
       showWidgets()
-      console.log("nice")
+      // console.log("nice")
       // tvLoadReset()
       break
   }
