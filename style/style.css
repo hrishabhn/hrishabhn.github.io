@@ -381,6 +381,8 @@ body{
 
     height: 100px;
     width: 100%;
+    min-width: calc((100% - 60px) / 5);
+
     /* flex-grow: 1; */
 
     border-radius: inherit;
@@ -547,22 +549,6 @@ body{
 
 
 
-/* .action{
-    color: var(--light-layer-0);
-    background-color: var(--light-layer-1);
-
-    color: var(--blue-dark)
-} */
-/* .content-container{
-    background-color: var(--light-layer-1);
-}
-.content-title{
-    color: var(--dark-layer-1);
-}
-.info-value-container{
-    color: var(--dark-layer-1-80);
-} */
-
 
 @media screen and (prefers-color-scheme: light) {
     body{
@@ -587,12 +573,6 @@ body{
         fill: var(--dark-layer-1);
     }
 
-    /* .action{
-        color: var(--light-layer-0);
-        background-color: var(--light-layer-1);
-    
-        color: var(--blue-dark)
-    } */
     .content-container{
         background-color: var(--light-layer-2);
     }
