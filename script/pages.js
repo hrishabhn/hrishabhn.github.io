@@ -17,7 +17,7 @@ function mainPage(n) {
   newMenu.classList.add("selected")
 
   pageLoads(n)
-  // pageReset(mainOld)
+  pageReset(mainOld)
 }
 
 function pageLoads(n) {
@@ -44,6 +44,7 @@ function pageLoads(n) {
     case 5:
       title.innerHTML = "Media"
       header.innerHTML = "Media"
+      hideWidgets()
       break
   }
 }
@@ -51,7 +52,9 @@ function pageLoads(n) {
 function pageReset(n) {
   switch (n) {
     case 5:
-      tvLoadReset()
+      showWidgets()
+      console.log("nice")
+      // tvLoadReset()
       break
   }
 }
