@@ -620,6 +620,17 @@ body{
     .hidden-mobile{
         display: none !important;
     }
+    #notch{
+        display: block;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+
+        z-index: 100;
+
+        background: linear-gradient(var(--dark-layer-1-80), #00000000);
+    }
+    
 
     .navbar{
         position: fixed;
@@ -730,10 +741,13 @@ body{
     }
 
 
-    /* @media screen and (prefers-color-scheme: light) {
-        .navbar{
+    @media screen and (prefers-color-scheme: light) {
+        /* .navbar{
             background-color: var(--light-layer-1);
+        } */
+        #notch{
+            background: linear-gradient(var(--light-layer-1-80), #ffffff00);
         }
-    } */
+    }
 
 }
