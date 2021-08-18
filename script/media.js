@@ -2,11 +2,115 @@ function mediaPopulate(){
     upNextPopulate()
     bookPopulate()
     podPopulate()
+    moviesPopulate()
 }
+
+
+var tvModal = document.getElementById("tv-popup-modal");
+var bgBlur = document.getElementById("background-blur");
+
+function popupTVShow(){
+    // tvPopup(n);
+    tvModal.className = "modal tv-popup-open";
+    popupAllShow()
+  }
+  
+  function popupTVHide(){
+    tvModal.className = "modal tv-popup-closed";
+    popupAllHide()
+  }
+
+
+function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, tvTimeRate, reelgoodLink, reelgoodRate, imdbID, imdbRate){
+    popupTVShow()
+    
+    // showsAll = tvData()
+    // console.log(showsAll[n])
+  
+    // if (showsAll[n][9]){
+    //   showsAll[n][9] = showsAll[n][9] + "/10"
+    // }
+    // if (showsAll[n][11]){
+    //   showsAll[n][11] = showsAll[n][11] + "/100"
+    // }
+    // if (showsAll[n][13]){
+    //   showsAll[n][13] = showsAll[n][13] + "/10"
+    // }
+  
+    var cardClass = "tv-popup-card ";
+    var posterClass = "tv-popup-poster ";
+    var gradientClass = "tv-popup-gradient ";
+    var titleClass = "tv-popup-title ";
+    // var serviceClass = "tv-popup-button-container tv-play-button ";
+
+    if (!(service == "Coming Soon")) {
+        service = "Watch on " + service
+    }
+  
+    document.getElementById("card").className =     cardClass.concat(id,"-solid");
+    document.getElementById("poster").className = posterClass.concat(id,"-poster");
+    document.getElementById("grad").className = gradientClass.concat(id,"-gradient");
+    document.getElementById("title").className =   titleClass.concat(id,"-title ",titleStyle);
+    // document.getElementById("desc").innerHTML = description;
+    document.getElementById("tv-popup-link").href = link;
+    // document.getElementById("serviceGradient").className = serviceClass.concat(showsAll[n][6]);
+    document.getElementById("service").innerHTML = service;
+
+    // console.log(typeof tvTimeID)
+
+
+    var descElement = document.getElementById("desc")
+    if ((description !== "null") && (description !== "undefined")) {
+        descElement.innerHTML = description;
+    } else {
+        descElement.innerHTML = "";
+    }
+
+    var tvTimeElement = document.getElementById("tv-popup-tv-time")
+    if ((tvTimeID !== "null") && (tvTimeID !== "undefined")) {
+        tvTimeElement.href = "https://www.tvtime.com/en/show/" + tvTimeID;
+        tvTimeElement.classList.remove("hidden-always")
+    } else {
+        tvTimeElement.classList.add("hidden-always")
+    }
+
+    var reelgoodElement = document.getElementById("tv-popup-reelgood")
+    if ((reelgoodLink !== "null") && (reelgoodLink !== "undefined")) {
+        reelgoodElement.href = reelgoodLink;
+        reelgoodElement.classList.remove("hidden-always")
+    } else {
+        reelgoodElement.classList.add("hidden-always")
+    }
+
+    var imdbElement = document.getElementById("tv-popup-imdb")
+    if ((reelgoodLink !== "null") && (reelgoodLink !== "undefined")) {
+        imdbElement.href = "https://www.imdb.com/title/" + imdbID;
+        imdbElement.classList.remove("hidden-always")
+    } else {
+        imdbElement.classList.add("hidden-always")
+    }
+    
+    var summaryElement = document.getElementById("tv-popup-summary")
+    if ((summary !== "null") && (summary !== "undefined")) {
+        summaryElement.innerHTML = summary;
+        summaryElement.classList.remove("hidden-always")
+    } else {
+        summaryElement.classList.add("hidden-always")
+    }
+
+
+
+
+
+
+    // document.getElementById("tv-popup-tv-time-rating").innerHTML = tvTimeRate;
+    // document.getElementById("tv-popup-reelgood-rating").innerHTML = reelgoodRate;
+    // document.getElementById("tv-popup-imdb-rating").innerHTML = imdbRate;
+  }
 
 function upNextPopulate(){
     const upNextData = [
-        {
+       {
             name: "Jojo's Bizzare Adventures",
             id: "jojo",
             link: "https://www.hulu.com/series/jojos-bizarre-adventure-3f2ffb64-2424-44a5-b229-4371dccb1d6f",
@@ -14,6 +118,13 @@ function upNextPopulate(){
             description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
             summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
             titleStyle: "tall",
+            // tvTimeID: "262954",
+            tvTimeID: null,
+            // tvTimeRate: "9.74",
+            reelgoodLink: "https://reelgood.com/show/jojos-bizarre-adventure-2012",
+            // reelgoodRate: "72",
+            imdbID: "tt2359704",
+            // imdbRate: "8.4",
         },
         {
             name: "It's Always Sunny in Philadelphia",
@@ -23,13 +134,27 @@ function upNextPopulate(){
             description: "Comedy &#149 14 Seasons &#149 2005 - Present",
             summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
             titleStyle: "tall",
+            tvTimeID: "75805",
+            // tvTimeRate: "8.28",
+            reelgoodLink: "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+            // reelgoodRate: "90",
+            imdbID: "tt0472954",
+            // imdbRate: "8.8",
         },
         {
             name: "The Grand Tour",
             id: "grandTour",
             link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
             service: "Prime Video",
+            description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
+            summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
             titleStyle: "mid",
+            tvTimeID: "314087",
+            // tvTimeRate: "8.82",
+            reelgoodLink: "https://reelgood.com/show/the-grand-tour-2016",
+            // reelgoodRate: "83",
+            imdbID: "tt5712554",
+            // imdbRate: "8.7",
         },
         {
             name: "What If?",
@@ -39,25 +164,56 @@ function upNextPopulate(){
             description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
             summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
             titleStyle: "mid",
+            tvTimeID: "367147",
+            reelgoodLink: "https://reelgood.com/show/what-if-2021",
+            imdbID: "tt10168312",
         },
         {
             name: "Ted Lasso",
             id: "ted",
             link: "",
             service: "Apple TV+",
-            titleStyle: "wide",
+            description: "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
+            summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+            titleStyle: "mid",
+            tvTimeID: "383203",
+            reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
+            imdbID: "tt10986410",
         },
         {
             name: "Rick and Morty",
             id: "rick",
             link: "",
             service: "Adult Swim",
-            titleStyle: "wide",
+            description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
+            summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
+            tvTimeID: "275274",
+            reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
+            imdbID: "tt2861424",
         },
         
     ]
 
     movieHTML(upNextData, 1)
+}
+
+function moviesPopulate(){
+    const upNextData = [
+        {
+            name: "Free Guy",
+            id: "free",
+            link: "",
+            service: "Coming Soon",
+            // description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
+            // summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
+            titleStyle: "wide",
+
+
+            tvTimeID: null
+        },        
+    ]
+
+    movieHTML(upNextData, 2)
 }
 
 function movieHTML(data, n) {
@@ -66,7 +222,7 @@ function movieHTML(data, n) {
     var htmlString = "";
 
     for (i = 0; i < dataLength; i++) {
-        var movieCardHTML = `<div class="movie-card"><div class="movie-poster ${data[i].id}-poster"><div class="movie-gradient"><div class="movie-title ${data[i].titleStyle} ${data[i].id}-title"></div></div><a class="movie-play-container" target="_blank" href="${data[i].link}"><svg class="movie-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><div class="movie-info"><div class="movie-textbox"><p class="movie-heading">${data[i].name}</p><p class="movie-subheading">${data[i].service}</p></div><div class="movie-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"/><circle cx="192" cy="192" r="42.667"/><circle cx="192" cy="341.333" r="42.667"/></svg></div></div></div>`
+        var movieCardHTML = `<div class="movie-card"><div class="movie-poster ${data[i].id}-poster"><div class="movie-gradient"><div class="movie-title ${data[i].titleStyle} ${data[i].id}-title"></div></div><a class="movie-play-container" target="_blank" href="${data[i].link}"><svg class="movie-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="movie-info" onclick='tvPopup("${data[i].id}", "${data[i].link}", "${data[i].service}", "${data[i].description}", "${data[i].summary}", "${data[i].titleStyle}", "${data[i].tvTimeID}", "${data[i].tvTimeRate}", "${data[i].reelgoodLink}", "${data[i].reelgoodRate}", "${data[i].imdbID}", "${data[i].imdbRate}")'><div class="movie-textbox"><p class="movie-heading">${data[i].name}</p><p class="movie-subheading">${data[i].service}</p></div><div class="movie-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"/><circle cx="192" cy="192" r="42.667"/><circle cx="192" cy="341.333" r="42.667"/></svg></div></a></div>`
 
         htmlString = `${htmlString}${movieCardHTML}`
     }
