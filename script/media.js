@@ -212,6 +212,18 @@ function upNextPopulate(){
 function moviesPopulate(){
     const upNextData = [
         {
+            name: "Ghost in the Shell",
+            id: "ghost",
+            link: "https://watch.amazon.com/detail?asin=B07WQZDXTM",
+            service: "Prime Video",
+            description: "Animation &#149 Action &#149 Crime &#149 1995",
+            summary: "In the year 2029, the barriers of our world have been broken down by the net and by cybernetics, but this brings new vulnerability to humans in the form of brain-hacking. When a highly-wanted hacker known as The Puppetmaster begins involving them in politics, Section 9, a group of cybernetically enhanced cops, are called in to investigate and stop the Puppetmaster.",
+            titleStyle: "wide",
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/ghost-in-the-shell-1995",
+            imdbID: "tt0113568",
+        },
+        {
             name: "Free Guy",
             id: "free",
             link: null,
@@ -222,7 +234,7 @@ function moviesPopulate(){
             tvTimeID: null,
             reelgoodLink: "https://reelgood.com/movie/free-guy-2020",
             imdbID: "tt6264654",
-        },    
+        },
     ]
 
     movieHTML(upNextData, 2)
