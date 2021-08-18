@@ -155,97 +155,97 @@ function tvData() {
   var show49 = hide
   var show50 = hide
 
-  show1 = [
-    "whatif-solid",
-    "whatif-poster",
-    "whatif-gradient",
-    "whatif-title",
-    "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
-    "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
-    "disney",
-    "Watch on Disney+",
-    "https://www.tvtime.com/en/show/367147",
-    "9.58",
-    "https://reelgood.com/show/what-if-2021",
-    "59",
-    "https://www.imdb.com/title/tt10168312",
-    "8.5",
-    "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
-  ]
+  // show1 = [
+  //   "whatif-solid",
+  //   "whatif-poster",
+  //   "whatif-gradient",
+  //   "whatif-title",
+  //   "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
+  //   "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
+  //   "disney",
+  //   "Watch on Disney+",
+  //   "https://www.tvtime.com/en/show/367147",
+  //   "9.58",
+  //   "https://reelgood.com/show/what-if-2021",
+  //   "59",
+  //   "https://www.imdb.com/title/tt10168312",
+  //   "8.5",
+  //   "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
+  // ]
   
-  show2 = [
-    "jojo-solid",
-    "jojo-poster",
-    "jojo-gradient",
-    "jojo-title",
-    "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
-    "https://www.hulu.com/series/jojos-bizarre-adventure-3f2ffb64-2424-44a5-b229-4371dccb1d6f",
-    "netflix",
-    "Watch on Hulu",
-    "https://www.tvtime.com/en/show/262954",
-    "9.74",
-    "https://reelgood.com/show/jojos-bizarre-adventure-2012",
-    "72",
-    "https://www.imdb.com/title/tt2359704",
-    "8.4",
-    "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
-  ]
+  // show2 = [
+  //   "jojo-solid",
+  //   "jojo-poster",
+  //   "jojo-gradient",
+  //   "jojo-title",
+  //   "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
+  //   "https://www.hulu.com/series/jojos-bizarre-adventure-3f2ffb64-2424-44a5-b229-4371dccb1d6f",
+  //   "netflix",
+  //   "Watch on Hulu",
+  //   "https://www.tvtime.com/en/show/262954",
+  //   "9.74",
+  //   "https://reelgood.com/show/jojos-bizarre-adventure-2012",
+  //   "72",
+  //   "https://www.imdb.com/title/tt2359704",
+  //   "8.4",
+  //   "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
+  // ]
 
-  show3 = [
-    "grandTour-solid",
-    "grandTour-poster",
-    "grandTour-gradient",
-    "grandTour-title",
-    "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-    "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-    "prime",
-    "Watch on Prime Video",
-    "https://www.tvtime.com/en/show/314087",
-    "8.82",
-    "https://reelgood.com/show/the-grand-tour-2016",
-    "83",
-    "https://www.imdb.com/title/tt5712554",
-    "8.7",
-    "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-  ]
+  // show3 = [
+  //   "grandTour-solid",
+  //   "grandTour-poster",
+  //   "grandTour-gradient",
+  //   "grandTour-title",
+  //   "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
+  //   "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+  //   "prime",
+  //   "Watch on Prime Video",
+  //   "https://www.tvtime.com/en/show/314087",
+  //   "8.82",
+  //   "https://reelgood.com/show/the-grand-tour-2016",
+  //   "83",
+  //   "https://www.imdb.com/title/tt5712554",
+  //   "8.7",
+  //   "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
+  // ]
 
-  // Always sunny
-  show4 = [
-    "always-solid",
-    "always-poster",
-    "always-gradient",
-    "always-title",
-    "Comedy &#149 14 Seasons &#149 2005 - Present",
-    "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
-    "hulu-green",
-    "Watch on Hulu",
-    "https://www.tvtime.com/en/show/75805",
-    "8.28",
-    "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
-    "90",
-    "https://www.imdb.com/title/tt0472954",
-    "8.8",
-    "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
-  ]
+  // // Always sunny
+  // show4 = [
+  //   "always-solid",
+  //   "always-poster",
+  //   "always-gradient",
+  //   "always-title",
+  //   "Comedy &#149 14 Seasons &#149 2005 - Present",
+  //   "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
+  //   "hulu-green",
+  //   "Watch on Hulu",
+  //   "https://www.tvtime.com/en/show/75805",
+  //   "8.28",
+  //   "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+  //   "90",
+  //   "https://www.imdb.com/title/tt0472954",
+  //   "8.8",
+  //   "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+  // ]
 
-  // Ted lasso
-  show9 = [
-    "ted-solid",
-    "ted-poster",
-    "ted-gradient",
-    "ted-title",
-    "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
-    "",
-    "disney",
-    "Watch",
-    "https://www.tvtime.com/en/show/383203",
-    "9.82",
-    "https://reelgood.com/show/ted-lasso-2020",
-    "91",
-    "https://www.imdb.com/title/tt10986410",
-    "8.7",
-    "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-  ]
+  // // Ted lasso
+  // show9 = [
+  //   "ted-solid",
+  //   "ted-poster",
+  //   "ted-gradient",
+  //   "ted-title",
+  //   "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
+  //   "",
+  //   "disney",
+  //   "Watch",
+  //   "https://www.tvtime.com/en/show/383203",
+  //   "9.82",
+  //   "https://reelgood.com/show/ted-lasso-2020",
+  //   "91",
+  //   "https://www.imdb.com/title/tt10986410",
+  //   "8.7",
+  //   "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+  // ]
 
   // Rick and Morty
   show10 = [
@@ -876,19 +876,10 @@ function tvLoadReset() {
   }
 }
 
-var tvModal = document.getElementById("tv-popup-modal");
-var bgBlur = document.getElementById("background-blur");
-  
-function popupTVPopulate(n){
-  tvPopup(n);
-  tvModal.className = "modal tv-popup-open";
-  popupAllShow()
-}
+  var tvModal = document.getElementById("tv-popup-modal");
+  var bgBlur = document.getElementById("background-blur");
+    
 
-function popupTVHide(){
-  tvModal.className = "modal tv-popup-closed";
-  popupAllHide()
-}
   
 function tvPopup(n){
   showsAll = tvData()
