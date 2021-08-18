@@ -272,6 +272,13 @@ body{
     position: relative;
     flex-direction: column;
 }
+.main.hidden{
+    max-height: 0px !important;
+    /* position: absolute; */
+    opacity: 0;
+    pointer-events: none;
+}
+
 .main > *:not(:last-child) {
     margin-bottom: 15px; 
 }
