@@ -785,3 +785,16 @@
 .made-title{
     background-image: url('../TV/title/made.png');
 }
+
+.free-solid{
+    background-color: #747431;
+}
+.free-gradient{
+    background: linear-gradient(#00000000,#747431);
+}
+.free-poster{
+    background-image: url('../TV/background/free.webp');
+}
+.free-title{
+    background-image: url('../TV/title/free.png');
+}
