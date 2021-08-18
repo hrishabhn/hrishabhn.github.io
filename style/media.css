@@ -136,12 +136,12 @@
 }
 .movie-heading{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     /* text-transform: uppercase; */
 }
 .movie-subheading{
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 400;
 
     margin-top: 4px;
     color: var(--white-60);
