@@ -793,6 +793,55 @@
     right: 0;
 }
 
+#flight-no{
+    display: flex;
+    position: relative;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.flight-route-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.flight-icon{
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 30px;
+
+    fill: white;
+}
+.flight-time-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
