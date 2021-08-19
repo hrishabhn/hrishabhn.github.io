@@ -218,7 +218,8 @@
     background-color: #2bb24c;
 }
 .twitter{
-    background:linear-gradient(to bottom right,#1da1f2,#146ea6);
+    /* background:linear-gradient(to bottom right,#1da1f2,#146ea6); */
+    background-color: #1da1f2;
 }
 .clickup-teal{
     background:linear-gradient(to bottom right,#49ccf9,#328fad);
@@ -249,10 +250,12 @@
     background-color: #1E2631;
 }
 .reddit{
-    background:linear-gradient(to bottom right,#ff4500,#b33000);
+    /* background:linear-gradient(to bottom right,#ff4500,#b33000); */
+    background-color: #ff4500;
 }
 .linkedin{
-    background:linear-gradient(to bottom right,#0c63c3,#073c75);
+    /* background:linear-gradient(to bottom right,#0c63c3,#073c75); */
+    background-color: #0c63c3;
 }
 
 .icons8{
@@ -281,10 +284,12 @@
     background:linear-gradient(to bottom right,#00a8e1,#006f94);
 }
 .whatsapp{
-    background:linear-gradient(to bottom right,#25d366,#188741);
+    /* background:linear-gradient(to bottom right,#25d366,#188741); */
+    background-color: #25d366;
 }
 .messenger{
-    background:linear-gradient(to bottom right,#0084ff,#005cb3);
+    /* background:linear-gradient(to bottom right,#0084ff,#005cb3); */
+    background-color: #0084ff;
 }
 .apple{
     /* background:linear-gradient(to bottom right,#A2AAAD,#5b5f61); */
@@ -380,6 +385,9 @@
 }
 .target{
     background-color: #c00;
+}
+.brightspace{
+    background-color: #E87511;
 }
 
 
