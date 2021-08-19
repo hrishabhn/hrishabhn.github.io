@@ -311,7 +311,8 @@
     background:linear-gradient(to bottom right,#113ccf,#0a2682);
 }
 .snapchat{
-    background:linear-gradient(to bottom right,#fffc00,#b3b000);
+    /* background:linear-gradient(to bottom right,#fffc00,#b3b000); */
+    background-color: #D9D600;
 }
 .audible{
     /* background:linear-gradient(to bottom right,#F8991D,#ab6a15); */
@@ -397,6 +398,9 @@
 }
 .purdue{
     background-color: #D7C688;
+}
+.remind{
+    background-color: #4886BD;
 }
 
 
