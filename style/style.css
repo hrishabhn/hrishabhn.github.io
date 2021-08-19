@@ -132,6 +132,7 @@ body{
 
 .hidden-always{
     display: none !important;
+    margin: 0px !important;
 }
 .spacer{
     flex-grow: 1;
@@ -373,7 +374,7 @@ body{
     border-radius: 10px;
 }
 
-.action-tray > *:not(:first-child) {
+.action-tray > *:not(:first-child){
     margin-left: 15px; 
 }
 
@@ -598,18 +599,21 @@ body{
 @media(min-width: 1100px){
     .hidden-desktop{
         display: none !important;
+        margin: 0px !important;
     }
 }
 
 @media(max-width: 1100px) and (min-width: 450px){
     .hidden-tablet{
         display: none !important;
+        margin: 0px !important;
     }
 }
 
 @media(max-width: 450px){
     .hidden-mobile{
         display: none !important;
+        margin: 0px !important;
     }
     #notch{
         display: block;
