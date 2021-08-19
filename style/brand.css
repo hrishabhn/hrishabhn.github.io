@@ -265,14 +265,16 @@
     background:linear-gradient(to bottom right,#0E2A47,#1e5794);
 }
 .duke-energy{
-    background:linear-gradient(to bottom right,#14BCD9,#005986);
+    /* background:linear-gradient(to bottom right,#14BCD9,#005986); */
+    background-color: #005986;
 }
 .slack{
     /* background:linear-gradient(to bottom right,#4A154B,#952a96); */
     background-color: #4A154B;
 }
 .facebook{
-    background:linear-gradient(to bottom right,#4267b2,#263b66);
+    /* background:linear-gradient(to bottom right,#4267b2,#263b66); */
+    background-color: #4267b2;
 }
 .imdb{
     background: #F5C518;
@@ -388,6 +390,9 @@
 }
 .brightspace{
     background-color: #E87511;
+}
+.purdue{
+    background-color: #D7C688;
 }
 
 
