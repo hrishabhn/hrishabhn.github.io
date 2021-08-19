@@ -264,6 +264,8 @@ body{
     /* flex-direction: column; */
     position: relative;
     top: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     margin-left: 235px;
     width: calc(100% - 235px);
@@ -397,6 +399,7 @@ body{
     margin-top: 0px;
     color: var(--white-100);
     fill: var(--white-100);
+
     /* background-color: var(--dark-layer-1); */
 
     /* color: var(--blue-light) */
@@ -407,6 +410,11 @@ body{
 
     height: 22px;
     width: 22px;
+}
+.action-text{
+
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .link-tray{
     display: flex;
@@ -610,7 +618,7 @@ body{
 
         z-index: 100;
 
-        background: linear-gradient(var(--dark-layer-1-80), #00000000);
+        background: linear-gradient(#121212cc, #12121200);
     }
     
 
@@ -728,7 +736,7 @@ body{
             background-color: var(--light-layer-1);
         } */
         #notch{
-            background: linear-gradient(var(--light-layer-1-80), #ffffff00);
+            background: linear-gradient(#ffffffcc, #ffffff00);
         }
     }
 
