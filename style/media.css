@@ -163,13 +163,18 @@
     align-items: flex-start;
     vertical-align: top;
 
-    border-radius: inherit;
-    padding: 12px;
+    border-radius: 15px;
+    padding: 15px;
     overflow: hidden;
 
     text-decoration: none;
     vertical-align: top;
 }
+/* .tv-card:hover .tv-card-poster{
+    transition: all 0.25s;
+    scale: 1.02;
+    z-index: 10;
+} */
 .tv-card-bg{
     display: block;
     position: absolute;
@@ -218,11 +223,22 @@
 
     box-shadow: 0px 5px 20px -5px var(--black-60);
 
+    transition: all 0.15s;
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+    outline: none;
+
     /* border-style: solid; */
     /* border-width: 1px; */
     /* border-color: var(--dark-layer-1); */
 
 }
+.tv-card-poster:active{
+    box-shadow: 0px 5px 20px -5px var(--black-40);
+    scale: 0.95;
+}
+
+
+
 .tv-gradient{
     display: flex;
     position: relative;
@@ -430,6 +446,15 @@
 
 }
 
+/* .book-card:active .book-poster{
+    box-shadow: 0px 5px 20px -5px var(--black-40);
+    scale: 0.95;
+}
+.book-card:active .pod-poster{
+    box-shadow: 0px 5px 20px -5px var(--black-40);
+    scale: 0.95;
+} */
+
 .book-info{
     display: inline-flex;
     position: relative;
@@ -482,12 +507,15 @@
 .tv-popup-open{
     /* pointer-events: initial; */
     /* transform: translateY(0%); */
-    transition: 0.2s;
+    transition: 0.3s;
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+
 }
 .tv-popup-closed{
     pointer-events: none;
     transform: translateY(100%);
     transition: 0.3s;
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 
     /* scale: 0.9; */
 }
