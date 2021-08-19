@@ -139,13 +139,14 @@ body{
 
 .navbar{
     display: inline-flex;
-    position: relative;
+    position: fixed;
     box-sizing: border-box;
+    flex-direction: column;
 
-    padding: 0px 20px;
-    padding-top: 100px;
+    padding: 100px 20px 20px;
+    /* padding-top: 100px; */
 
-    height: 100rem;
+    height: 100%;
     width: 200px;
     z-index: 100;
     background-color: var(--dark-layer-1);
@@ -155,7 +156,7 @@ body{
 .navbar-menu{
     display: flex;
     position: relative;
-
+    flex-grow: 1;
     width: 100%;
     flex-direction: column;
 }
@@ -264,7 +265,7 @@ body{
     position: relative;
     top: 0px;
 
-    margin-left: 35px;
+    margin-left: 235px;
     width: calc(100% - 235px);
 }
 .main{
