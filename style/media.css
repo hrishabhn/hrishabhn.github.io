@@ -282,7 +282,7 @@
     transition: all 0.25s;
 }
 .tv-play-container:hover{
-    background-color: var(--black-40);
+    background-color: var(--black-20);
 }
 .tv-play-container:hover .tv-play-icon{
     opacity: 1;
