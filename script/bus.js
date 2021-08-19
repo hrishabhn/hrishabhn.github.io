@@ -321,6 +321,10 @@ function cityBusWidget(n,company,route,stop1,stop2,stop3,stop4) {
         .then(data => {
             busAPIData(n,company,route,stop1,1,data)
         })
+        // .catch(data => {
+
+        //     console.log('nowjjifi')
+        // })
 
     // fetch(api)
     //     .then(response => response.json())
