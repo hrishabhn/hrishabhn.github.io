@@ -24,7 +24,8 @@ function newPopulate(){
     apps()
     mediaPopulate()
 
-    // mainPage(5)
+    // mainPage(4)
+    flightPull()
 }
 
 function locationBasedLoad(userLocale) {
