@@ -365,7 +365,7 @@ body{
     /* background-color: chartreuse; */
 }
 #col-2.big{
-    width: calc(100% - 15px);
+    width: calc(100% - 0px);
 }
 
 .clickable{
