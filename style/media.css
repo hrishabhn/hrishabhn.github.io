@@ -526,7 +526,7 @@
     box-sizing: border-box;
 
     width: 100vw;
-    max-width: 800px;
+    max-width: 100vmin;
     height: auto;
     max-height: 90vh;
     border-top-left-radius: 20px;
@@ -596,7 +596,7 @@
 .tv-popup-poster{
     width: 100%;
     height: 56.25vw;
-    max-height: 450px;
+    max-height: 56.25vmin;
 
     background-size: cover;
     background-repeat: no-repeat;
