@@ -21,11 +21,13 @@
     --light-layer-1-60: #f2f2f799;
     --light-layer-1-40: #f2f2f766;
     --light-layer-1-20: #f2f2f733;
+    --light-layer-1-00: #f2f2f700;
 
     --dark-layer-1-80: #1c1c1ecc;
     --dark-layer-1-60: #1c1c1e99;
     --dark-layer-1-40: #1c1c1e66;
     --dark-layer-1-20: #1c1c1e33;
+    --dark-layer-1-00: #1c1c1e00;
 
     --black-100: #000;
     --white-100: #fff;
@@ -44,6 +46,9 @@
 
     --black-10: rgba(0, 0, 0, 0.1);
     --white-10: rgba(255, 255, 255, 0.1);
+
+    --black-00: #00000000;
+    --white-00: #ffffff00;
 
 
 
@@ -682,7 +687,7 @@ body{
 
         z-index: 100;
 
-        background: linear-gradient(#121212cc, #12121200);
+        background: linear-gradient(var(--black-80), var(--black-00));
     }
     
 
@@ -801,7 +806,7 @@ body{
             background-color: var(--light-layer-1);
         } */
         #notch{
-            background: linear-gradient(#ffffffcc, #ffffff00);
+            background: linear-gradient(var(--light-layer-1-80), var(--light-layer-1-00));
         }
     }
 
