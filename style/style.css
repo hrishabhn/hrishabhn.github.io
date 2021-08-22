@@ -669,6 +669,23 @@ body{
         display: none !important;
         margin: 0px !important;
     }
+
+
+    #notch{
+        display: block;
+        position: fixed;
+        height: 20px;
+        width: 100%;
+
+        z-index: 100;
+
+        background-color: var(--dark-layer-2);
+    }
+    @media screen and (prefers-color-scheme: light) {
+        #notch{
+            background-color: var(--light-layer-2);
+        }
+    }
 }
 
 @media(max-width: 450px){
