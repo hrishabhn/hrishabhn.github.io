@@ -732,6 +732,15 @@
     width: 60px;
     /* fill: var(--white-100); */
 }
+.reddit-container{
+    width: 25px;
+    /* background-color: #00dc89; */
+}
+.reddit-icon{
+    height: 18px;
+    width: 18px;
+    /* fill: var(--white-100); */
+}
 
 .tv-popup-ratings-text{
     display: inline-flex;
