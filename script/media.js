@@ -21,7 +21,7 @@ function popupTVShow(){
   }
 
 
-function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, tvTimeRate, reelgoodLink, reelgoodRate, imdbID, imdbRate){
+function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, tvTimeRate, reelgoodLink, reelgoodRate, imdbID, imdbRate, redditLink){
     popupTVShow()
     
     // showsAll = tvData()
@@ -71,7 +71,6 @@ function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, 
     if ((link !== "null") && (link !== "undefined")) {
         linkIcon.classList.remove("hidden-always")
         linkElement.href = link;
-        console.log('success')
     } else {
         linkIcon.classList.add("hidden-always")
         linkElement.removeAttribute('href')
@@ -99,6 +98,14 @@ function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, 
         imdbElement.classList.remove("hidden-always")
     } else {
         imdbElement.classList.add("hidden-always")
+    }
+
+    var redditElement = document.getElementById("tv-popup-reddit")
+    if ((redditLink !== "null") && (redditLink !== "undefined")) {
+        redditElement.href = redditLink;
+        redditElement.classList.remove("hidden-always")
+    } else {
+        redditElement.classList.add("hidden-always")
     }
     
     var summaryElement = document.getElementById("tv-popup-summary")
@@ -191,6 +198,19 @@ function upNextPopulate(){
             tvTimeID: "383203",
             reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
             imdbID: "tt10986410",
+            redditLink: "https://www.reddit.com/r/TedLasso"
+        },
+        {
+            name: "What We Do in the Shadows",
+            id: "shadows",
+            link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
+            service: "Hulu",
+            description: "Comedy &#149 Drama &#149 Fantasy &#149 3 Seasons &#149 2019 - Present",
+            summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
+            titleStyle: "mid",
+            tvTimeID: "358211",
+            reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
+            imdbID: "tt7908628",
         },
         {
             name: "Rick and Morty",
@@ -255,7 +275,7 @@ function movieHTML(data, n) {
         }
 
         var movieCardHTML = `<div class="tv-card" target="_blank" href="${htmlLink}"><div class="tv-card-bg ${data[i].id}-poster"><div class="tv-card-fg"></div></div><div class="tv-card-poster ${data[i].id}-poster">
-        <div class="tv-gradient"><div class="tv-title ${data[i].titleStyle} ${data[i].id}-title"></div></div><a class="tv-play-container" target="_blank"${htmlLink}><svg class="tv-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="tv-info" onclick='tvPopup("${data[i].id}", "${data[i].link}", "${data[i].service}", "${data[i].description}", "${data[i].summary}", "${data[i].titleStyle}", "${data[i].tvTimeID}", "${data[i].tvTimeRate}", "${data[i].reelgoodLink}", "${data[i].reelgoodRate}", "${data[i].imdbID}", "${data[i].imdbRate}")'><div class="tv-textbox"><p class="tv-heading">${data[i].name}</p><p class="tv-subheading">${data[i].service}</p></div><div class="tv-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"></circle><circle cx="192" cy="192" r="42.667"></circle><circle cx="192" cy="341.333" r="42.667"></circle></svg></div></a></div>`
+        <div class="tv-gradient"><div class="tv-title ${data[i].titleStyle} ${data[i].id}-title"></div></div><a class="tv-play-container" target="_blank"${htmlLink}><svg class="tv-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="tv-info" onclick='tvPopup("${data[i].id}", "${data[i].link}", "${data[i].service}", "${data[i].description}", "${data[i].summary}", "${data[i].titleStyle}", "${data[i].tvTimeID}", "${data[i].tvTimeRate}", "${data[i].reelgoodLink}", "${data[i].reelgoodRate}", "${data[i].imdbID}", "${data[i].imdbRate}", "${data[i].redditLink}")'><div class="tv-textbox"><p class="tv-heading">${data[i].name}</p><p class="tv-subheading">${data[i].service}</p></div><div class="tv-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"></circle><circle cx="192" cy="192" r="42.667"></circle><circle cx="192" cy="341.333" r="42.667"></circle></svg></div></a></div>`
 
 
         // var movieCardHTML = `<div class="movie-card"><div class="movie-poster ${data[i].id}-poster"><div class="movie-gradient"><div class="movie-title ${data[i].titleStyle} ${data[i].id}-title"></div></div><a class="movie-play-container" target="_blank"${htmlLink}><svg class="movie-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="movie-info" onclick='tvPopup("${data[i].id}", "${data[i].link}", "${data[i].service}", "${data[i].description}", "${data[i].summary}", "${data[i].titleStyle}", "${data[i].tvTimeID}", "${data[i].tvTimeRate}", "${data[i].reelgoodLink}", "${data[i].reelgoodRate}", "${data[i].imdbID}", "${data[i].imdbRate}")'><div class="movie-textbox"><p class="movie-heading">${data[i].name}</p><p class="movie-subheading">${data[i].service}</p></div><div class="movie-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"/><circle cx="192" cy="192" r="42.667"/><circle cx="192" cy="341.333" r="42.667"/></svg></div></a></div>`
