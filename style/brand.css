@@ -92,6 +92,16 @@
     background-color: var(--yellow-dark);
 }
 
+.primary-fg{
+    color: var(--white-100);
+    fill: var(--white-100);
+}
+.secondary-fg{
+    color: var(--white-80);
+    fill: var(--white-80);
+}
+
+
 
 @media screen and (prefers-color-scheme: light) {
     .blue{
@@ -141,6 +151,15 @@
     }
     .yellow{
         background-color: var(--yellow-light);
+    }
+
+    .primary-fg{
+        color: var(--dark-layer-1);
+        fill: var(--dark-layer-1);
+    }
+    .secondary-fg{
+        color: var(--dark-layer-1-80);
+        fill: var(--dark-layer-1-80);
     }
 }
 
