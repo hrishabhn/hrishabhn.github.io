@@ -152,7 +152,9 @@
     .yellow{
         background-color: var(--yellow-light);
     }
-
+    .primary-bg{
+        background-color: var(--white-100);
+    }
     .primary-fg{
         color: var(--dark-layer-1);
         fill: var(--dark-layer-1);
