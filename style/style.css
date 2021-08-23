@@ -144,8 +144,8 @@ body{
 }
 .spacer-15{
     flex-grow: 1;
-    height: 15px;
-    width: 15px;
+    min-height: 15px;
+    min-width: 15px;
 }
 .hstack{
     display: flex;
