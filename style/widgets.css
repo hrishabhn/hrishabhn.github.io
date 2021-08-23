@@ -239,6 +239,9 @@
     background-image: url(../images/weather/night.jpg);
 }
 
+#weather{
+    text-transform: capitalize;
+}
 
 
 #cal-info{
