@@ -35,8 +35,9 @@ function getUserLocale() {
         const london = (lat > 51.2) && (lat < 51.7) && (lon > -0.5) && (lon < 0.3);
 
 
-        // 40.4299, -86.9145
-        // 40.4291, -86.9134
+        // 40.4255, -86.9135
+        // 40.4246, -86.9118
+        const stewart = (lat > 40.4246) && (lat < 40.4255) && (lon > -86.9135) && (lon < -86.9118);
         const frny = (lat > 40.4291) && (lat < 40.4299) && (lon > -86.9145) && (lon < -86.9134);
 
 
@@ -104,6 +105,9 @@ function getUserLocale() {
         }
         
 
+        if (stewart) {
+            userLocale = "Stewart Center"
+        }
         if (frny) {
             userLocale = "Forney Hall"
         }
