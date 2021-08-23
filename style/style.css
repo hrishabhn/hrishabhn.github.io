@@ -142,6 +142,11 @@ body{
 .spacer{
     flex-grow: 1;
 }
+.spacer-15{
+    flex-grow: 1;
+    height: 15px;
+    width: 15px;
+}
 .hstack{
     display: flex;
     position: relative;
