@@ -72,7 +72,7 @@ function productivityApps() {
         {
             name: "Google Drive",
             background: "google-green hidden-mobile",
-            link: "https://purdue.brightspace.com",
+            link: "https://drive.google.com",
             target: "self",
             icon: '<svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m323.303 31h-133.799c-5.361 0-10.313 2.856-12.993 7.5s-2.681 10.356 0 15l143.042 247.5h168.726l-151.998-262.515c-2.68-4.629-7.632-7.485-12.978-7.485z" /><path d="m154.034 75.947-152.011 262.538c-2.622 4.512-2.695 10.049-.22 14.648l64.805 120c2.578 4.775 7.544 7.793 12.979 7.866h.22c5.347 0 10.313-2.856 12.993-7.5l145.494-251.757z" /><path d="m509.88 338.31c-2.695-4.526-7.588-7.31-12.876-7.31h-286.41l-86.678 150h308.284c5.508 0 10.576-3.018 13.198-7.866l64.805-120c2.504-4.658 2.387-10.283-.323-14.824z" /></svg>',
         },
@@ -375,7 +375,7 @@ function financeApps() {
         },
     ]
 
-    actionPopulate(appData, "finance-tray", "Social")
+    actionPopulate(appData, "finance-tray", "Finance")
 }
 function socialApps() {
     const appData = [
@@ -509,23 +509,11 @@ function courseApps(locale) {
         case "Forney Hall":
             nuclApps(true)
             break
-        case "Stewart Center":
+        case "WALC":
             ie335Apps(true)
             break
     }
 }
-
-function smartTitle(title) {
-    var titleElement = document.getElementById('smart-title')
-
-    if (title) {
-        titleElement.classList.add('content-container')
-        var titleHTML = `<div class="content-title">${title}</div>`
-        titleElement.innerHTML = titleHTML
-    }
-
-}
-
 function nuclApps(smart) {
     const appData = [
         {
@@ -567,10 +555,9 @@ function nuclApps(smart) {
 
 
     if (!smart) {
-        actionPopulate(appData, "nucl-tray")
+        actionPopulate(appData, "nucl-tray", "NUCL 273")
     } else {
-        smartTitle('NUCL 273')
-        actionPopulate(appData, "smart-tray")
+        actionPopulate(appData, "smart-tray", "NUCL 273")
     }
 }
 
@@ -629,10 +616,9 @@ function ie335Apps(smart) {
 
 
     if (!smart) {
-        actionPopulate(appData, "ie-335-tray")
+        actionPopulate(appData, "ie-335-tray", "IE 335")
     } else {
-        smartTitle('IE 335')
-        actionPopulate(appData, "smart-tray")
+        actionPopulate(appData, "smart-tray", "IE 335")
     }
 }
 
@@ -880,19 +866,34 @@ function videoApps() {
 
 
 
-function actionPopulate(data, tray) {
+function actionPopulate(data, tray, title) {
     var dataLength = data.length
 
     var htmlString = "";
 
     for (i = 0; i < dataLength; i++) {
-        var appHTML = `<a class="clickable action ${data[i].background}" href="${data[i].link}" target="_${data[i].target}"><div class="action-icon">${data[i].icon}</div><div class="spacer"></div><p class="action-text">${data[i].name}</p></a>`
+        var trigger = ``
+
+        if (data[i].link) {
+            trigger += `href="${data[i].link}" target="_${data[i].target}"`
+        }
+        if (data[i].function) {
+            trigger += `onclick="${data[i].function}"`
+        }
+
+        var appHTML = `<a class="clickable action ${data[i].background}" ${trigger}><div class="action-icon">${data[i].icon}</div><div class="spacer"></div><p class="action-text">${data[i].name}</p></a>`
 
         htmlString = `${htmlString}${appHTML}`
     }
 
+    if (title !== undefined) {
+        var titleHTML = `<div class="content-container"><div class="content-title">${title}</div></div><div class="spacer-15"></div>`
+    } else {
+        var titleHTML = ``
+    }
+
+    htmlString = `${titleHTML}<div class="action-tray">${htmlString}</div>`
     var container = document.getElementById(tray)
-    container.classList.add("action-tray")
     container.innerHTML = htmlString
 }
 
@@ -902,8 +903,16 @@ function linkPopulate(data, tray, title) {
     var htmlString = "";
 
     for (i = 0; i < dataLength; i++) {
-        // var appHTML = `<a class="clickable action ${data[i].background}" href="${data[i].link}" target="${data[i].target}"><div class="action-icon">${data[i].icon}</div><div class="spacer"></div><p>${data[i].name}</p></a>`
-        var appHTML = `<a class="clickable link-container ${data[i].background}" href="${data[i].link}" target="_${data[i].target}"><div class="link-icon">${data[i].icon}</div><p>${data[i].name}</p></a>`
+        var trigger = ``
+
+        if (data[i].link) {
+            trigger += `href="${data[i].link}" target="_${data[i].target}"`
+        }
+        if (data[i].function) {
+            trigger += `onclick="${data[i].function}"`
+        }
+
+        var appHTML = `<a class="clickable link-container ${data[i].background}" ${trigger}><div class="link-icon">${data[i].icon}</div><p>${data[i].name}</p></a>`
 
         htmlString = `${htmlString}${appHTML}`
     }
