@@ -34,10 +34,11 @@ function weatherWidget() {
                 .then(data => {
                     // var cityValue = data['name'];
                     var tempValue = data['main']['temp'];
-                    var weatherValue = data['weather'][0]['main'];
+                    var weatherValue = data['weather'][0]['description'];
                     // console.log(weatherValue)
                     var hiValue = data['main']['temp_max'];
                     var loValue = data['main']['temp_min'];
+                    console.log(data)
 
                     tempValue = Math.round(tempValue);
                     hiValue = Math.round(hiValue);
@@ -46,6 +47,7 @@ function weatherWidget() {
                     // var hiloValue = 'H:' + hiValue + '&#176 ' + 'L:' + loValue + '&#176';
 
                     var weather = document.getElementById("weather")
+                    // weatherValue = weatherValue.charAt(0).toUpperCase() + weatherValue.slice(1);
 
                     weather.innerHTML = tempValue + "&#176C, " + weatherValue
 
