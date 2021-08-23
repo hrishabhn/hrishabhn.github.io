@@ -1,6 +1,8 @@
 // var userLocale;
 
 function getUserLocale() {
+    document.getElementById("district").innerHTML = '----';
+
     const successCallback = (position) => {
         // console.log(timeOfDay)
         // var afternoon = ;
@@ -14,8 +16,7 @@ function getUserLocale() {
         // lat = 40.434 
         // lon = -86.925
 
-        // console.log(lat)
-        // console.log(lon)
+        // console.log(lat + "\n" + lon)
     
         const pokFuLam = (lat > 22.252) && (lat < 22.273) && (lon > 114.121) && (lon < 114.135);
         const cyberport = (lat > 22.260) && (lat < 22.264) && (lon > 114.127) && (lon < 114.131);
@@ -35,30 +36,17 @@ function getUserLocale() {
         const london = (lat > 51.2) && (lat < 51.7) && (lon > -0.5) && (lon < 0.3);
 
 
-        // 40.4255, -86.9135
-        // 40.4246, -86.9118
+
         const stewart = (lat > 40.4246) && (lat < 40.4255) && (lon > -86.9135) && (lon < -86.9118);
         const frny = (lat > 40.4291) && (lat < 40.4299) && (lon > -86.9145) && (lon < -86.9134);
-
+        const walc = (lat > 40.4268) && (lat < 40.4278) && (lon > -86.9136) && (lon < -86.9127);
 
         const walmart = (lat > 40.4565) && (lat < 40.4592) && (lon > -86.9352) && (lon < -86.9312);
         const zbt = (lat > 40.4337) && (lat < 40.4344) && (lon > -86.9255) && (lon < -86.9248);
         const grantStation = (lat > 40.4191) && (lat < 40.4203) && (lon > -86.9103) && (lon < -86.9096);
-
-        // 40.4344, -86.9255
-        // 40.4337, -86.9248
-
-
-        // 40.4592, -86.9352
-        // 40.4565, -86.9312
-
-        // console.log(zbt)
-
-        // 22.273,114.121 top left
-        // 22.252,114.135 borrom right
     
     
-        var userLocale = "Hong Kong"
+        var userLocale = "West Lafayette"
         
         if (london) {
             userLocale = "London (GGG Exclusive DLC)"
@@ -111,6 +99,10 @@ function getUserLocale() {
         if (frny) {
             userLocale = "Forney Hall"
         }
+        if (walc) {
+            userLocale = "WALC"
+        }
+
         if (walmart) {
             userLocale = "Walmart"
         }
