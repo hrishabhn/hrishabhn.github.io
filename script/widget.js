@@ -38,7 +38,7 @@ function weatherWidget() {
                     // console.log(weatherValue)
                     var hiValue = data['main']['temp_max'];
                     var loValue = data['main']['temp_min'];
-                    console.log(data)
+                    // console.log(data)
 
                     tempValue = Math.round(tempValue);
                     hiValue = Math.round(hiValue);
