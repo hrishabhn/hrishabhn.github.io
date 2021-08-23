@@ -163,7 +163,7 @@
     align-items: flex-start;
     vertical-align: top;
 
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 15px;
     overflow: hidden;
 
@@ -305,8 +305,8 @@
     align-items: center;
     box-sizing: border-box;
 
-    margin-top: 12px;
-    padding: 0px 2px;
+    /* margin: 25px 0px 10px; */
+    padding: 20px 2px 10px;
     /* padding: 10px 10px; */
     width: 100%;
 
