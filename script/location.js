@@ -16,7 +16,7 @@ function getUserLocale() {
         // lat = 40.434 
         // lon = -86.925
 
-        // console.log(lat + "\n" + lon)
+        console.log(lat + "\n" + lon)
     
         const pokFuLam = (lat > 22.252) && (lat < 22.273) && (lon > 114.121) && (lon < 114.135);
         const cyberport = (lat > 22.260) && (lat < 22.264) && (lon > 114.127) && (lon < 114.131);
