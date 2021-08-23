@@ -24,7 +24,7 @@ function newPopulate(){
     apps()
     mediaPopulate()
 
-    // mainPage(5)
+    // mainPage(4)
     // flightPull()
 }
 
@@ -36,6 +36,7 @@ function locationBasedLoad(userLocale) {
 
     // smartCards(globalLocale)
     buses(globalLocale)
+    courseApps(globalLocale)
 }
 
 function mainRefresh() {
