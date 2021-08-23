@@ -16,7 +16,7 @@ function getUserLocale() {
         // lat = 40.434 
         // lon = -86.925
 
-        console.log(lat + "\n" + lon)
+        console.log(lat + ", " + lon)
     
         const pokFuLam = (lat > 22.252) && (lat < 22.273) && (lon > 114.121) && (lon < 114.135);
         const cyberport = (lat > 22.260) && (lat < 22.264) && (lon > 114.127) && (lon < 114.131);
@@ -37,7 +37,7 @@ function getUserLocale() {
 
 
 
-        const stewart = (lat > 40.4246) && (lat < 40.4255) && (lon > -86.9135) && (lon < -86.9118);
+        const stew = (lat > 40.4246) && (lat < 40.4255) && (lon > -86.9136) && (lon < -86.9118);
         const frny = (lat > 40.4291) && (lat < 40.4299) && (lon > -86.9145) && (lon < -86.9134);
         const walc = (lat > 40.4268) && (lat < 40.4278) && (lon > -86.9136) && (lon < -86.9127);
 
@@ -45,6 +45,7 @@ function getUserLocale() {
         const zbt = (lat > 40.4337) && (lat < 40.4344) && (lon > -86.9255) && (lon < -86.9248);
         const grantStation = (lat > 40.4191) && (lat < 40.4203) && (lon > -86.9103) && (lon < -86.9096);
     
+        console.log(stew)
     
         var userLocale = "West Lafayette"
         
@@ -93,7 +94,7 @@ function getUserLocale() {
         }
         
 
-        if (stewart) {
+        if (stew) {
             userLocale = "Stewart Center"
         }
         if (frny) {
