@@ -50,6 +50,9 @@
     color: var(--blue-dark);
     fill: var(--blue-dark);
 }
+.blue-border{
+    border-color: var(--blue-dark);
+}
 .brown{
     background-color: var(--brown-dark);
 }
@@ -59,6 +62,9 @@
 .green{
     background-color: var(--green-dark);
 }
+.green-border{
+    border-color: var(--green-dark);
+}
 .indigo{
     background-color: var(--indigo-dark);
 }
@@ -67,6 +73,9 @@
 }
 .orange{
     background-color: var(--orange-dark);
+}
+.orange-border{
+    border-color: var(--orange-dark);
 }
 .pink{
     background-color: var(--pink-dark);
@@ -81,12 +90,18 @@
     color: var(--red-dark);
     fill: var(--red-dark);
 }
+.red-border{
+    border-color: var(--red-dark);
+}
 .teal{
     background-color: var(--teal-dark);
 }
 .teal-fg{
     color: var(--teal-dark);
     fill: var(--teal-dark);
+}
+.teal-border{
+    border-color: var(--teal-dark);
 }
 .yellow{
     background-color: var(--yellow-dark);
@@ -111,6 +126,9 @@
         color: var(--blue-light);
         fill: var(--blue-light);
     }
+    .blue-border{
+        border-color: var(--blue-light);
+    }
     .brown{
         background-color: var(--brown-light);
     }
@@ -120,6 +138,9 @@
     .green{
         background-color: var(--green-light);
     }
+    .green-border{
+        border-color: var(--green-light);
+    }
     .indigo{
         background-color: var(--indigo-light);
     }
@@ -128,6 +149,9 @@
     }
     .orange{
         background-color: var(--orange-light);
+    }
+    .orange-border{
+        border-color: var(--orange-light);
     }
     .pink{
         background-color: var(--pink-light);
@@ -142,12 +166,18 @@
         color: var(--red-light);
         fill: var(--red-light);
     }
+    .red-border{
+        border-color: var(--red-light);
+    }
     .teal{
         background-color: var(--teal-light);
     }
     .teal-fg{
         color: var(--teal-light);
         fill: var(--teal-light);
+    }
+    .teal-border{
+        border-color: var(--teal-light);
     }
     .yellow{
         background-color: var(--yellow-light);
