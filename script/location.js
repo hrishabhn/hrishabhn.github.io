@@ -34,6 +34,12 @@ function getUserLocale() {
     
         const london = (lat > 51.2) && (lat < 51.7) && (lon > -0.5) && (lon < 0.3);
 
+
+        // 40.4299, -86.9145
+        // 40.4291, -86.9134
+        const frny = (lat > 40.4291) && (lat < 40.4299) && (lon > -86.9145) && (lon < -86.9134);
+
+
         const walmart = (lat > 40.4565) && (lat < 40.4592) && (lon > -86.9352) && (lon < -86.9312);
         const zbt = (lat > 40.4337) && (lat < 40.4344) && (lon > -86.9255) && (lon < -86.9248);
         const grantStation = (lat > 40.4191) && (lat < 40.4203) && (lon > -86.9103) && (lon < -86.9096);
@@ -98,14 +104,15 @@ function getUserLocale() {
         }
         
 
+        if (frny) {
+            userLocale = "Forney Hall"
+        }
         if (walmart) {
             userLocale = "Walmart"
         }
-
         if (zbt) {
             userLocale = "ZBT"
         }
-
         if (grantStation) {
             userLocale = "Grant Street Station"
         }
