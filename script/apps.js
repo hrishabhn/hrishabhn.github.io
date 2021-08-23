@@ -13,8 +13,8 @@ function apps(){
     pinnedAApps()
 
     schoolApps()
-    nuclApps()
-    ie335Apps()
+    nuclApps(false)
+    ie335Apps(false)
     iiseApps()
     geareApps()
     zbtApps()
@@ -504,7 +504,29 @@ function schoolApps() {
     actionPopulate(appData, "school-1-tray")
 }
 
-function nuclApps() {
+function courseApps(locale) {
+    switch(locale) {
+        case "Forney Hall":
+            nuclApps(true)
+            break
+        case "Stewart Center":
+            ie335Apps(true)
+            break
+    }
+}
+
+function smartTitle(title) {
+    var titleElement = document.getElementById('smart-title')
+
+    if (title) {
+        titleElement.classList.add('content-container')
+        var titleHTML = `<div class="content-title">${title}</div>`
+        titleElement.innerHTML = titleHTML
+    }
+
+}
+
+function nuclApps(smart) {
     const appData = [
         {
             name: "Brightspace",
@@ -543,10 +565,16 @@ function nuclApps() {
         },
     ]
 
-    actionPopulate(appData, "nucl-tray")
+
+    if (!smart) {
+        actionPopulate(appData, "nucl-tray")
+    } else {
+        smartTitle('NUCL 273')
+        actionPopulate(appData, "smart-tray")
+    }
 }
 
-function ie335Apps() {
+function ie335Apps(smart) {
     const appData = [
         {
             name: "Brightspace",
@@ -599,7 +627,13 @@ function ie335Apps() {
         },
     ]
 
-    actionPopulate(appData, "ie-335-tray")
+
+    if (!smart) {
+        actionPopulate(appData, "ie-335-tray")
+    } else {
+        smartTitle('IE 335')
+        actionPopulate(appData, "smart-tray")
+    }
 }
 
 function iiseApps() {
