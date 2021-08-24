@@ -1,8 +1,9 @@
 function mediaPopulate(){
-    upNextPopulate()
     bookPopulate()
     podPopulate()
-    moviesPopulate()
+    upNextPopulate('up-next-tray')
+    myListPopulate('my-list-tray')
+    moviesPopulate('movie-tray')
 }
 
 
@@ -126,8 +127,8 @@ function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, 
     // document.getElementById("tv-popup-imdb-rating").innerHTML = imdbRate;
   }
 
-function upNextPopulate(){
-    const upNextData = [
+function upNextPopulate(tray) {
+    const movieData = [
        {
             name: "Jojo's Bizzare Adventures",
             id: "jojo",
@@ -159,21 +160,6 @@ function upNextPopulate(){
             // reelgoodRate: "90",
             imdbID: "tt0472954",
             // imdbRate: "8.8",
-        },
-        {
-            name: "The Grand Tour",
-            id: "grandTour",
-            link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-            service: "Prime Video",
-            description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-            titleStyle: "mid",
-            tvTimeID: "314087",
-            // tvTimeRate: "8.82",
-            reelgoodLink: "https://reelgood.com/show/the-grand-tour-2016",
-            // reelgoodRate: "83",
-            imdbID: "tt5712554",
-            // imdbRate: "8.7",
         },
         {
             name: "What If?",
@@ -227,11 +213,55 @@ function upNextPopulate(){
         
     ]
 
-    movieHTML(upNextData, 1)
+    movieHTML(movieData, tray)
 }
+function myListPopulate(tray){
+    const movieData = [
+        {
+            name: "The Grand Tour",
+            id: "grandTour",
+            link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+            service: "Prime Video",
+            description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
+            summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
+            titleStyle: "mid",
+            tvTimeID: "314087",
+            // tvTimeRate: "8.82",
+            reelgoodLink: "https://reelgood.com/show/the-grand-tour-2016",
+            // reelgoodRate: "83",
+            imdbID: "tt5712554",
+            // imdbRate: "8.7",
+        },
+        {
+            name: "Dave",
+            id: "dave",
+            link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
+            service: "Hulu",
+            description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
+            summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
+            titleStyle: "mid",
+            tvTimeID: "354905",
+            reelgoodLink: "https://reelgood.com/show/dave-2020",
+            imdbID: "tt8531222",
+        },
+        {
+            name: "Free Guy",
+            id: "free",
+            link: null,
+            service: "Coming Soon",
+            description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
+            summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
+            titleStyle: "wide",
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/free-guy-2020",
+            imdbID: "tt6264654",
+        },
+    ]
 
-function moviesPopulate(){
-    const upNextData = [
+    movieHTML(movieData, tray)
+}
+function moviesPopulate(tray){
+    const movieData = [
         {
             name: "Ghost in the Shell",
             id: "ghost",
@@ -258,10 +288,10 @@ function moviesPopulate(){
         },
     ]
 
-    movieHTML(upNextData, 2)
+    movieHTML(movieData, tray)
 }
 
-function movieHTML(data, n) {
+function movieHTML(data, tray) {
     var dataLength = data.length
 
     var htmlString = "";
@@ -281,9 +311,9 @@ function movieHTML(data, n) {
 
         htmlString = `${htmlString}${movieCardHTML}`
     }
-    var tray = document.getElementById("movie-tray-".concat(n))
-    tray.classList.add("media-tray")
-    tray.innerHTML = htmlString
+    var trayElement = document.getElementById(tray)
+    trayElement.classList.add("media-tray")
+    trayElement.innerHTML = htmlString
 }
 
 function bookPopulate(){
