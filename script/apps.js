@@ -566,37 +566,37 @@ function courseSwitch(n) {
         case 1:
             course_1.classList.add('blue')
             course_1.classList.add('current')
-            eceApps('smart-tray','action',false)
+            eceApps('smart-tray','link',true)
             break
         case 2:
             course_2.classList.add('orange')
             course_2.classList.add('current')
-            ie335Apps('smart-tray','action',false)
+            ie335Apps('smart-tray','link',true)
             break
         case 3:
             course_3.classList.add('teal')
             course_3.classList.add('current')
-            ie386Apps('smart-tray','action',false)
+            ie386Apps('smart-tray','link',true)
             break
         case 4:
             course_4.classList.add('green')
             course_4.classList.add('current')
-            nuclApps('smart-tray','action',false)
+            nuclApps('smart-tray','link',true)
             break
         case 5:
             course_5.classList.add('red')
             course_5.classList.add('current')
-            spanApps('smart-tray','action',false)
+            spanApps('smart-tray','link',true)
             break
         case 6:
             course_6.classList.add('indigo')
             course_6.classList.add('current')
-            iiseApps('smart-tray','action',false)
+            iiseApps('smart-tray','link',true)
             break
         case 7:
             course_7.classList.add('brown')
             course_7.classList.add('current')
-            geareApps('smart-tray','action',false)
+            geareApps('smart-tray','link',true)
             break
     }
 
