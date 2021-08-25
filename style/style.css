@@ -403,6 +403,7 @@ body{
 .clickable{
     transition-property: scale, opacity;
     transition-duration: 0.35s, 0.4s;
+    transition-delay: 0s, 0.15s;
     transition-timing-function: all cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
     outline: none;
 }
