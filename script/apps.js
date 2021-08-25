@@ -18,8 +18,8 @@ function apps(){
     eceApps('ece-tray','action',true)
     spanApps('span-tray','action',true)
     ie386Apps('ie-386-tray','action',true)
-    iiseApps()
-    geareApps()
+    iiseApps('iise-tray','link',true)
+    geareApps('geare-tray','link',true)
     zbtApps()
 
     newsApps()
@@ -531,18 +531,24 @@ function courseSwitch(n) {
     var course_3 = document.getElementById('course-3')
     var course_4 = document.getElementById('course-4')
     var course_5 = document.getElementById('course-5')
+    var course_6 = document.getElementById('course-6')
+    var course_7 = document.getElementById('course-7')
 
     course_1.classList.remove('blue')
     course_2.classList.remove('orange')
     course_3.classList.remove('teal')
     course_4.classList.remove('green')
     course_5.classList.remove('red')
+    course_6.classList.remove('indigo')
+    course_7.classList.remove('brown')
 
     course_1.classList.remove('current')
     course_2.classList.remove('current')
     course_3.classList.remove('current')
     course_4.classList.remove('current')
     course_5.classList.remove('current')
+    course_6.classList.remove('current')
+    course_7.classList.remove('current')
 
     switch(n) {
         case 1:
@@ -569,6 +575,16 @@ function courseSwitch(n) {
             course_5.classList.add('red')
             course_5.classList.add('current')
             spanApps('smart-tray','action',false)
+            break
+        case 6:
+            course_6.classList.add('indigo')
+            course_6.classList.add('current')
+            iiseApps('smart-tray','action',false)
+            break
+        case 7:
+            course_7.classList.add('brown')
+            course_7.classList.add('current')
+            geareApps('smart-tray','action',false)
             break
     }
 
@@ -866,7 +882,10 @@ function ie386Apps(dest, type, showTitle) {
     appType(type, appData, dest, title)
 }
 
-function iiseApps() {
+function iiseApps(dest, type, showTitle) {
+    if (showTitle) {
+        var title = "IISE"
+    }
     const appData = [
         {
             name: "Slack",
@@ -897,10 +916,14 @@ function iiseApps() {
             icon: '<svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m323.303 31h-133.799c-5.361 0-10.313 2.856-12.993 7.5s-2.681 10.356 0 15l143.042 247.5h168.726l-151.998-262.515c-2.68-4.629-7.632-7.485-12.978-7.485z" /><path d="m154.034 75.947-152.011 262.538c-2.622 4.512-2.695 10.049-.22 14.648l64.805 120c2.578 4.775 7.544 7.793 12.979 7.866h.22c5.347 0 10.313-2.856 12.993-7.5l145.494-251.757z" /><path d="m509.88 338.31c-2.695-4.526-7.588-7.31-12.876-7.31h-286.41l-86.678 150h308.284c5.508 0 10.576-3.018 13.198-7.866l64.805-120c2.504-4.658 2.387-10.283-.323-14.824z" /></svg>',
         },
     ]
-    linkPopulate(appData, "iise-tray", "IISE")
+
+    appType(type, appData, dest, title)
 }
 
-function geareApps() {
+function geareApps(dest, type, showTitle) {
+    if (showTitle) {
+        var title = "GEARE"
+    }
     const appData = [
         {
             name: "Slack",
@@ -931,7 +954,7 @@ function geareApps() {
             icon: '<svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m323.303 31h-133.799c-5.361 0-10.313 2.856-12.993 7.5s-2.681 10.356 0 15l143.042 247.5h168.726l-151.998-262.515c-2.68-4.629-7.632-7.485-12.978-7.485z" /><path d="m154.034 75.947-152.011 262.538c-2.622 4.512-2.695 10.049-.22 14.648l64.805 120c2.578 4.775 7.544 7.793 12.979 7.866h.22c5.347 0 10.313-2.856 12.993-7.5l145.494-251.757z" /><path d="m509.88 338.31c-2.695-4.526-7.588-7.31-12.876-7.31h-286.41l-86.678 150h308.284c5.508 0 10.576-3.018 13.198-7.866l64.805-120c2.504-4.658 2.387-10.283-.323-14.824z" /></svg>',
         },
     ]
-    linkPopulate(appData, "geare-tray", "GEARE")
+    appType(type, appData, dest, title)
 }
 
 function zbtApps() {
