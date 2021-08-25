@@ -517,10 +517,10 @@ function schoolApps() {
 function courseApps(locale) {
     switch(locale) {
         case "Forney Hall":
-            nuclApps(true)
+            courseSwitch(4)
             break
         case "Stewart Center":
-            ie335Apps(true)
+            courseSwitch(2)
             break
     }
 }
@@ -538,25 +538,36 @@ function courseSwitch(n) {
     course_4.classList.remove('green')
     course_5.classList.remove('red')
 
+    course_1.classList.remove('current')
+    course_2.classList.remove('current')
+    course_3.classList.remove('current')
+    course_4.classList.remove('current')
+    course_5.classList.remove('current')
+
     switch(n) {
         case 1:
             course_1.classList.add('blue')
+            course_1.classList.add('current')
             eceApps('smart-tray','action',false)
             break
         case 2:
             course_2.classList.add('orange')
+            course_2.classList.add('current')
             ie335Apps('smart-tray','action',false)
             break
         case 3:
             course_3.classList.add('teal')
+            course_3.classList.add('current')
             ie386Apps('smart-tray','action',false)
             break
         case 4:
             course_4.classList.add('green')
+            course_4.classList.add('current')
             nuclApps('smart-tray','action',false)
             break
         case 5:
             course_5.classList.add('red')
+            course_5.classList.add('current')
             spanApps('smart-tray','action',false)
             break
     }
