@@ -56,6 +56,9 @@
 .brown{
     background-color: var(--brown-dark);
 }
+.brown-border{
+    border-color: var(--brown-dark);
+}
 .cyan{
     background-color: var(--cyan-dark);
 }
@@ -67,6 +70,9 @@
 }
 .indigo{
     background-color: var(--indigo-dark);
+}
+.indigo-border{
+    border-color: var(--indigo-dark);
 }
 .mint{
     background-color: var(--mint-dark);
@@ -132,6 +138,9 @@
     .brown{
         background-color: var(--brown-light);
     }
+    .brown-border{
+        border-color: var(--brown-light);
+    }
     .cyan{
         background-color: var(--cyan-light);
     }
@@ -143,6 +152,9 @@
     }
     .indigo{
         background-color: var(--indigo-light);
+    }
+    .indigo-border{
+        border-color: var(--indigo-light);
     }
     .mint{
         background-color: var(--mint-light);
