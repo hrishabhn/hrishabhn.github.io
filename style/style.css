@@ -471,6 +471,11 @@ body{
 
     /* color: var(--blue-light) */
 }
+.action.white{
+    color: var(--black-100);
+    fill: var(--black-100);
+}
+
 .action-icon{
     display: block;
     position: relative;
@@ -478,6 +483,7 @@ body{
     height: 22px;
     width: 22px;
 }
+
 .action-text{
 
     overflow: hidden;
