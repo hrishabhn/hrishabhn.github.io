@@ -420,12 +420,12 @@ body{
 }
 
 .clickable-fg{
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 
 .clickable-fg:active{
-    transition: 0.05s;
+    transition: 0s;
     color: var(--white-20);
     fill: var(--white-20);
 }
