@@ -42,7 +42,12 @@
 .white{
     background-color: #fff;
 }
-
+.gray1{
+    background-color: var(--dark-layer-1);
+}
+.gray2{
+    background-color: var(--dark-layer-2);
+}
 
 /* ios colors */
 
