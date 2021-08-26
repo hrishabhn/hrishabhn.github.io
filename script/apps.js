@@ -25,6 +25,8 @@ function apps(){
     newsApps()
     audioApps()
     videoApps()
+
+    
     // homeAppPopulate()
     // smartAppPopulate()
     // page2AppPopulate()
