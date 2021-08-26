@@ -110,6 +110,13 @@ function noteApps() {
             icon: '<svg viewBox="0 0 405.272 405.272" xml:space="preserve"><g><path d="M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z" /></g></svg>',
         },
         {
+            name: "Roku",
+            background: "roku only-mobile",
+            link: "roku://remote",
+            target: "self",
+            icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.49838167428970337 -343.9178841114044 999.0048828125 999.0048828125"><defs><clipPath clipPathUnits="userSpaceOnUse" id="g"><path d="M430.311 715.04H594V792H430.311v-76.96z"></path></clipPath><clipPath clipPathUnits="userSpaceOnUse" id="a"><path d="M100.767 751.969h558.72v-790.2h-558.72v790.2z"></path></clipPath><clipPath clipPathUnits="userSpaceOnUse" id="b"><path d="M17.61 663.003h337.679v-76.32H17.609v76.32z"></path></clipPath><clipPath clipPathUnits="userSpaceOnUse" id="c"><path d="M17.324 482.196h442.08v-76.32H17.324v76.32z"></path></clipPath><clipPath clipPathUnits="userSpaceOnUse" id="d"><path d="M172.438 319.436h431.28v-76.32h-431.28v76.32z"></path></clipPath><clipPath clipPathUnits="userSpaceOnUse" id="e"><path d="M172.438 131.755h431.28V10.795h-431.28v120.96z"></path></clipPath><clipPath clipPathUnits="userSpaceOnUse" id="f"><path d="M17.141 296.076h153.36V10.596H17.141v285.48z"></path></clipPath></defs><g clip-path="url(#g)" transform="matrix(7.55785 0 0 -7.55785 -3370.794 5860.601)"><path d="M466.883 761.872c0 3.755-3.021 6.779-6.715 6.779h-3.33v-13.498h3.33c3.694 0 6.715 3.026 6.715 6.719m15.148-26.91h-12.224l-9.705 13.469h-3.264v-13.44h-10.773v40.375h15.433c8.897 0 16.159-6.05 16.159-13.494 0-4.54-2.784-8.595-7.021-11.076l11.395-15.833"></path><path d="M494.18 759.449c-2.845 0-5.265-3.867-5.265-8.654s2.42-8.659 5.265-8.659c2.911 0 5.327 3.872 5.327 8.659 0 4.787-2.416 8.654-5.327 8.654m16.582-8.654c0-9.145-7.437-16.468-16.582-16.468-9.142 0-16.524 7.323-16.524 16.468 0 9.138 7.382 16.465 16.524 16.465 9.145 0 16.582-7.327 16.582-16.465M536.043 766.59l-12.41-12.408v12.45h-10.77v-31.64h10.77v12.834l12.956-12.834h13.557l-16.464 16.466 13.637 13.632v-18.776c0-6.234 3.75-11.987 13.19-11.987 4.482 0 8.595 2.542 10.594 4.842l4.843-4.177h2.3v31.598h-10.772v-20.458c-1.213-2.117-2.903-3.448-5.515-3.448-2.65 0-3.866 1.571-3.866 6.596v17.31h-22.05z"></path></g></svg>',
+        },
+        {
             name: "Homework",
             background: "green",
             link: "https://app.clickup.com/8450846/v/l/4-20137584-1",
