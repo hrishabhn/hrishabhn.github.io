@@ -85,6 +85,9 @@
 .mint{
     background-color: var(--mint-dark);
 }
+.mint-border{
+    border-color: var(--mint-dark);
+}
 .orange{
     background-color: var(--orange-dark);
 }
@@ -166,6 +169,9 @@
     }
     .mint{
         background-color: var(--mint-light);
+    }
+    .mint-border{
+        border-color: var(--mint-light);
     }
     .orange{
         background-color: var(--orange-light);
