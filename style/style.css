@@ -142,6 +142,10 @@ body{
 .spacer{
     flex-grow: 1;
 }
+.spacer-10{
+    min-height: 10px;
+    min-width: 10px;
+}
 .spacer-15{
     /* flex-grow: 1; */
     min-height: 15px;
@@ -662,19 +666,20 @@ body{
 
     cursor: default;
 
-    border-radius: 12px;
+    border-radius: 10px;
     border-style: solid;
-    border-width: 3px;
-    padding: 8px 10px;
+    border-width: 2.5px;
+    padding: 8px 8px;
     flex-grow: 1;
     /* width: 100%; */
 
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
 
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    /* vertical-align: top; */
     /* background-color: blue; */
 }
 
