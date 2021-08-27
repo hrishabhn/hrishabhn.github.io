@@ -188,7 +188,7 @@ function notionApps() {
         // },
     ]
 
-    linkPopulate(appData, "notion-tray", "Notes")
+    linkPopulate(appData, "notion-tray", "Notes", null)
 }
 
 
@@ -421,7 +421,7 @@ function financeApps() {
         },
     ]
 
-    actionPopulate(appData, "finance-tray", "Finance")
+    actionPopulate(appData, "finance-tray", "Finance", 'only-mobile')
 }
 function socialApps() {
     const appData = [
@@ -1215,7 +1215,7 @@ function videoApps() {
 
 
 
-function actionPopulate(data, tray, title) {
+function actionPopulate(data, tray, title, devices) {
     // console.log(data, tray, title)
     var dataLength = data.length
 
@@ -1244,10 +1244,11 @@ function actionPopulate(data, tray, title) {
 
     htmlString = `${titleHTML}<div class="action-tray">${htmlString}</div>`
     var container = document.getElementById(tray)
+    container.classList.add(devices)
     container.innerHTML = htmlString
 }
 
-function linkPopulate(data, tray, title) {
+function linkPopulate(data, tray, title, devices) {
     var dataLength = data.length
 
     var htmlString = "";
@@ -1270,6 +1271,7 @@ function linkPopulate(data, tray, title) {
     htmlString = `<div class="content-title">${title}</div><div class="link-tray">${htmlString}</div>`
     var container = document.getElementById(tray)
     container.classList.add("content-container")
+    container.classList.add(devices)
     container.innerHTML = htmlString
 }
 
