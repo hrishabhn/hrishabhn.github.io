@@ -768,6 +768,8 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     rotate: 180deg;
+
+    /* transition: all 1s; */
 }
 #side-popup-fg{
     display: block;
