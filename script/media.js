@@ -1,5 +1,5 @@
 function mediaPopulate(){
-    bookPopulate()
+    bookPopulate(bookData)
     podPopulate(podData)
     upNextPopulate('up-next-tray')
     myListPopulate('my-list-tray')
@@ -347,58 +347,61 @@ function movieHTML(data, tray) {
     trayElement.innerHTML = htmlString
 }
 
-function bookPopulate(){
-    const bookData = [
-        {
-            name: "No Rules Rules",
-            id: "rules",
-            link: "ibooks://",
-            author: "Reed Hastings & Erin Meyer",
-        },
-        {
-            name: "Never Split the Difference",
-            id: "split",
-            link: "ibooks://",
-            author: "Chris Voss",
-        },
-        {
-            name: "Gweilo: Memories of a Hong Kong Childhood",
-            id: "gweilo",
-            link: "ibooks://",
-            author: "Martin Booth",
-        },
-        {
-            name: "The Four",
-            id: "four",
-            link: "ibooks://",
-            author: "Scott Galloway",
-        },
-        {
-            name: "Homo Deus",
-            id: "homodeus",
-            link: "ibooks://",
-            author: "Yuval Noah Harari",
-        },
-        {
-            name: "The Ride of a Lifetime",
-            id: "ride",
-            link: "ibooks://",
-            author: "Robert Iger",
-        },
-        {
-            name: "The Martian",
-            id: "martian",
-            link: "ibooks://",
-            author: "Andy Weir",
-        },
-    ]
+const bookData = [
+    {
+        name: "No Rules Rules",
+        id: "rules",
+        link: "ibooks://",
+        author: "Reed Hastings & Erin Meyer",
+    },
+    {
+        name: "Never Split the Difference",
+        id: "split",
+        link: "ibooks://",
+        author: "Chris Voss",
+    },
+    {
+        name: "Gweilo: Memories of a Hong Kong Childhood",
+        id: "gweilo",
+        link: "ibooks://",
+        author: "Martin Booth",
+    },
+    {
+        name: "The Four",
+        id: "four",
+        link: "ibooks://",
+        author: "Scott Galloway",
+    },
+    {
+        name: "Homo Deus",
+        id: "homodeus",
+        link: "ibooks://",
+        author: "Yuval Noah Harari",
+    },
+    {
+        name: "The Ride of a Lifetime",
+        id: "ride",
+        link: "ibooks://",
+        author: "Robert Iger",
+    },
+    {
+        name: "The Martian",
+        id: "martian",
+        link: "ibooks://",
+        author: "Andy Weir",
+    },
+]
+
+function bookPopulate(bookData){
+    
 
     var dataLength = bookData.length
 
     var htmlString = "";
 
     for (i = 0; i < dataLength; i++) {
-        var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${bookData[i].link}"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
+        // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${bookData[i].link}"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
+        var bookCardHTML = `<a class="book-card clickable" target="_blank" onclick="showMediaPopup('book',${i})"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
 
         htmlString = `${htmlString}${bookCardHTML}`
     }
@@ -504,15 +507,20 @@ function hideMediaPopup() {
 }
 
 function populateMediaPopup(type,n) {
+    var mediaData;
+
     if (type == 'pod') {
-        const mediaData = podData[n]
-
-        document.getElementById('side-popup-bg').classList = podData[n].id + '-cover'
-        document.getElementById('side-popup-poster').classList = podData[n].id + '-cover'
-        document.getElementById('side-popup-title').innerHTML = podData[n].name
-        document.getElementById('side-popup-subtitle').innerHTML = podData[n].author
-        document.getElementById('side-popup-link').href = podData[n].link
-
-        console.log(mediaData)
+        mediaData = podData[n]
+        document.getElementById('side-popup-poster').classList = 'pod'
+    } else if (type == 'book') {
+        mediaData = bookData[n]
+        document.getElementById('side-popup-poster').classList = 'book'
     }
+
+
+    document.getElementById('side-popup-bg').classList = mediaData.id + '-cover'
+    document.getElementById('side-popup-poster').classList.add(mediaData.id + '-cover')
+    document.getElementById('side-popup-title').innerHTML = mediaData.name
+    document.getElementById('side-popup-subtitle').innerHTML = mediaData.author
+    document.getElementById('side-popup-link').href = mediaData.link
 }
