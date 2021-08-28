@@ -801,3 +801,16 @@
 .free-title{
     background-image: url('../TV/title/free.png');
 }
+
+.futurama-solid{
+    background-color: #E25924;
+}
+.futurama-gradient{
+    background: linear-gradient(#00000000,#E25924);
+}
+.futurama-poster{
+    background-image: url('../TV/background/futurama.jpg');
+}
+.futurama-title{
+    background-image: url('../TV/title/futurama.png');
+}
