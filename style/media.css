@@ -582,6 +582,8 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     rotate: 180deg;
+
+    /* opacity: 0.8; */
 }
 .book-card-fg{
     display: block;
@@ -609,6 +611,7 @@
     background-size: cover;
     background-position: center center;
 
+    /* box-shadow: 0px 5px 20px -5px var(--black-60); */
 
     /* border-style: solid; */
     /* border-width: 1px; */
