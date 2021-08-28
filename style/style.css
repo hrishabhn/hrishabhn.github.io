@@ -420,9 +420,19 @@ body{
 
     filter: brightness(0.75);
 }
-
+.clickable-2{
+    transition-property: all;
+    transition-duration: 0.1s;
+    /* transition-delay: 0.15s; */
+    transition-timing-function: all cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+    outline: none;
+}
 .clickable-2:active{
+    /* transition-property: all; */
+    transition-duration: 0.05s;
+    /* transition-delay: 0s; */
     opacity: 0.5;
+    /* filter: brightness(0.75); */
 }
 
 .clickable-fg{
