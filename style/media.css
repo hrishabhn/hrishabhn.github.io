@@ -462,10 +462,7 @@
     /* padding: 10px 10px; */
     width: 100%;
 
-    transition: all 0.15s;
-}
-.tv-info:active{
-    opacity: 0.5;
+    cursor: default;
 }
 .tv-textbox{
     display: flex;
