@@ -589,6 +589,7 @@ body{
     cursor: default;
 }
 
+
 .content-icon{
     display: flex;
     position: relative;
@@ -608,7 +609,21 @@ body{
     width: 100%;
 }
 
+.media-title{
+    display: flex;
+    position: relative;
 
+
+    /* color: var(--light-layer-0); */
+    font-size: 18px;
+    font-weight: 700;
+    cursor: default;
+
+    /* border-top: solid 1px var(--white-20); */
+    margin-top: 12px;
+    margin-bottom: 8px !important;
+    /* text-transform: uppercase; */
+}
 
 
 .info-card{
