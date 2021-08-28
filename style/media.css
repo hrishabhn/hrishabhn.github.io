@@ -355,48 +355,13 @@
     align-items: flex-start;
     vertical-align: top;
 
-    border-radius: 10px;
-    padding: 15px;
+    /* border-radius: 10px; */
+    /* padding: 15px; */
     overflow: hidden;
 
     text-decoration: none;
     vertical-align: top;
-}
-/* .tv-card:hover .tv-card-poster{
-    transition: all 0.25s;
-    scale: 1.02;
-    z-index: 10;
-} */
-.tv-card-bg{
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: inherit;
-
-    height: 100%;
-    width: 100%;
-
-    filter: saturate(2) brightness(0.5);
-
-    overflow: hidden;
-    background-position: center center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    rotate: 180deg;
-}
-.tv-card-fg{
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: inherit;
-
-    height: 100%;
-    width: 100%;
-
-    -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: blur(200px);
+    /* background-color: var(--white-100); */
 }
 .tv-card-poster{
     display: flex;
@@ -413,7 +378,7 @@
     background-size: cover;
     background-position: center center;
 
-    box-shadow: 0px 5px 20px -5px var(--black-60);
+    /* box-shadow: 0px 5px 20px -5px var(--black-60); */
 
     transition: all 0.15s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
@@ -424,11 +389,6 @@
     /* border-color: var(--dark-layer-1); */
 
 }
-.tv-card-poster:active{
-    box-shadow: 0px 5px 20px -5px var(--black-40);
-    scale: 0.95;
-}
-
 
 
 .tv-gradient{
@@ -498,7 +458,7 @@
     box-sizing: border-box;
 
     /* margin: 25px 0px 10px; */
-    padding: 20px 2px 10px;
+    padding: 8px 2px 10px;
     /* padding: 10px 10px; */
     width: 100%;
 
@@ -519,15 +479,15 @@
 }
 .tv-heading{
     font-size: 14px;
-    font-weight: 400;
-    color: var(--white-100);
+    font-weight: 500;
+    /* color: var(--white-100); */
 }
 .tv-subheading{
     font-size: 10px;
     font-weight: 400;
 
     margin-top: 4px;
-    color: var(--white-60);
+    /* color: var(--white-60); */
 }
 .tv-icon{
     display: block;
