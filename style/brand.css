@@ -132,7 +132,11 @@
     color: var(--white-80);
     fill: var(--white-80);
 }
-
+.image-border{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+}
 
 
 @media screen and (prefers-color-scheme: light) {
@@ -218,6 +222,9 @@
     .secondary-fg{
         color: var(--dark-layer-1-80);
         fill: var(--dark-layer-1-80);
+    }
+    .image-border{
+        border-color: #ccc;
     }
 }
 
