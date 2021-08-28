@@ -253,8 +253,6 @@
     background:linear-gradient(to bottom right,#DC3B1B,#8f2611);
 
 }
-
-
 .onedrive{
     /* background:linear-gradient(to bottom right,#094AB2,#052A66); */
     background-color: #094AB2;
@@ -504,7 +502,9 @@
 .doordash{
     background-color: #FF3008;
 }
-
+.onenote{
+    background-color: #80397B;
+}
 
 
 
