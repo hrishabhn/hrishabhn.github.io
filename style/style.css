@@ -553,6 +553,10 @@ body{
 
     /* color: var(--blue-light) */
 }
+.link-container.white{
+    color: var(--black-100);
+    fill: var(--black-100);
+}
 .link-icon{
     display: block;
     position: relative;
