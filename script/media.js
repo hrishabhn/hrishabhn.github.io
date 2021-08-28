@@ -1,10 +1,24 @@
 function mediaPopulate(){
     bookPopulate()
-    podPopulate()
+    podPopulate(podData)
     upNextPopulate('up-next-tray')
     myListPopulate('my-list-tray')
     moviesPopulate('movie-tray')
+    // tvBig('always')
 }
+
+function tvBig(id,link){
+    const tvBigElement = document.getElementById("tv-big-current")
+    const tvBigTitle = document.getElementById('tv-big-title')
+    const tvBigPlay = document.getElementById('tv-big-play')
+    // var tvBigName = document.getElementById('tv-big-name')
+    // var tvBigDescription = document.getElementById('tv-big-desc')
+    tvBigElement.classList = id + '-poster'
+    tvBigTitle.classList = id + '-title'
+
+    tvBigPlay.href = link
+}
+
 
 
 var tvModal = document.getElementById("tv-popup-modal");
@@ -125,11 +139,33 @@ function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, 
     // document.getElementById("tv-popup-tv-time-rating").innerHTML = tvTimeRate;
     // document.getElementById("tv-popup-reelgood-rating").innerHTML = reelgoodRate;
     // document.getElementById("tv-popup-imdb-rating").innerHTML = imdbRate;
-  }
+}
+
+
+
+  
+
+
+
 
 function upNextPopulate(tray) {
     const movieData = [
-       {
+        {
+            name: "It's Always Sunny in Philadelphia",
+            id: "always",
+            link: "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
+            service: "Hulu",
+            description: "Comedy &#149 14 Seasons &#149 2005 - Present",
+            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+            titleStyle: "tall",
+            tvTimeID: "75805",
+            // tvTimeRate: "8.28",
+            reelgoodLink: "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+            // reelgoodRate: "90",
+            imdbID: "tt0472954",
+            // imdbRate: "8.8",
+        },
+        {
             name: "Jojo's Bizzare Adventures",
             id: "jojo",
             link: "https://www.netflix.com/title/80179831",
@@ -145,21 +181,6 @@ function upNextPopulate(tray) {
             // reelgoodRate: "72",
             imdbID: "tt2359704",
             // imdbRate: "8.4",
-        },
-        {
-            name: "It's Always Sunny in Philadelphia",
-            id: "always",
-            link: "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
-            service: "Hulu",
-            description: "Comedy &#149 14 Seasons &#149 2005 - Present",
-            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
-            titleStyle: "tall",
-            tvTimeID: "75805",
-            // tvTimeRate: "8.28",
-            reelgoodLink: "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
-            // reelgoodRate: "90",
-            imdbID: "tt0472954",
-            // imdbRate: "8.8",
         },
         {
             name: "What If?",
@@ -304,6 +325,16 @@ function movieHTML(data, tray) {
             var htmlLink = ``
         }
 
+        // var movieCardHTML = `<div class="tv-small-poster ${data[i].id}-poster"><div class="tv-small-gradient"><div class="tv-small-title ${data[i].titleStyle} ${data[i].id}-title"></div></div><a class="tv-play-container" target="_blank"${htmlLink} onmouseover="tvBig('${data[i].id}','${data[i].link}')"><svg class="tv-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div>`
+
+        
+        // <div class="tv-card" target="_blank" href="${htmlLink}">
+        
+        
+        // <a class="tv-info" onclick='tvPopup("${data[i].id}", "${data[i].link}", "${data[i].service}", "${data[i].description}", "${data[i].summary}", "${data[i].titleStyle}", "${data[i].tvTimeID}", "${data[i].tvTimeRate}", "${data[i].reelgoodLink}", "${data[i].reelgoodRate}", "${data[i].imdbID}", "${data[i].imdbRate}", "${data[i].redditLink}")'><div class="tv-textbox"><p class="tv-heading">${data[i].name}</p><p class="tv-subheading">${data[i].service}</p></div><div class="tv-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"></circle><circle cx="192" cy="192" r="42.667"></circle><circle cx="192" cy="341.333" r="42.667"></circle></svg></div></a></div>
+
+
+
         var movieCardHTML = `<div class="tv-card" target="_blank" href="${htmlLink}"><div class="tv-card-bg ${data[i].id}-poster"><div class="tv-card-fg"></div></div><div class="tv-card-poster ${data[i].id}-poster"><div class="tv-gradient"><div class="tv-title ${data[i].titleStyle} ${data[i].id}-title"></div></div><a class="tv-play-container" target="_blank"${htmlLink}><svg class="tv-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="tv-info" onclick='tvPopup("${data[i].id}", "${data[i].link}", "${data[i].service}", "${data[i].description}", "${data[i].summary}", "${data[i].titleStyle}", "${data[i].tvTimeID}", "${data[i].tvTimeRate}", "${data[i].reelgoodLink}", "${data[i].reelgoodRate}", "${data[i].imdbID}", "${data[i].imdbRate}", "${data[i].redditLink}")'><div class="tv-textbox"><p class="tv-heading">${data[i].name}</p><p class="tv-subheading">${data[i].service}</p></div><div class="tv-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"></circle><circle cx="192" cy="192" r="42.667"></circle><circle cx="192" cy="341.333" r="42.667"></circle></svg></div></a></div>`
 
 
@@ -360,8 +391,6 @@ function bookPopulate(){
             link: "ibooks://",
             author: "Andy Weir",
         },
-       
-        
     ]
 
     var dataLength = bookData.length
@@ -379,82 +408,111 @@ function bookPopulate(){
     tray.innerHTML = htmlString
 }
 
-function podPopulate(){
-    const podData = [
-        {
-            name: "Pivot",
-            id: "pivot",
-            link: "https://podcasts.apple.com/podcast/id1073226719",
-            author: "Kara Swisher & Scott Galloway",
-        },
-        {
-            name: "Founder's Journal",
-            id: "founders",
-            link: "https://podcasts.apple.com/podcast/id1509276485",
-            author: "Alex Lieberman",
-        },
-        {
-            name: "Sway",
-            id: "sway",
-            link: "https://podcasts.apple.com/podcast/id1528594034",
-            author: "Kara Swisher",
-        },
-        {
-            name: "Acquired",
-            id: "acquired",
-            link: "https://podcasts.apple.com/podcast/id1050462261",
-            author: "Ben Gilbert & David Rosenthal",
-        },
-        {
-            name: "Learn Cantonese",
-            id: "canto",
-            link: "https://podcasts.apple.com/podcast/id1513774818",
-            author: "Poetic Cantonese",
-        },
-        {
-            name: "Lex Fridman Podcast",
-            id: "lex",
-            link: "https://www.youtube.com/lexfridman/videos",
-            author: "Lex Fridman",
-        },
-        {
-            name: "Yang Speaks",
-            id: "yang",
-            link: "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos",
-            author: "Andrew Yang & Zach??",
-        },
-        {
-            name: "Economist Radio",
-            id: "economist",
-            link: "https://podcasts.apple.com/podcast/id151230264",
-            author: "The Economist",
-        },
-        {
-            name: "INET",
-            id: "inet",
-            link: "https://www.youtube.com/c/NewEconomicThinking/videos",
-            author: "Rob Johnson",
-        },
-        {
-            name: "Making Sense",
-            id: "samharris",
-            link: "https://podcasts.apple.com/podcast/id733163012",
-            author: "Sam Harris",
-        },
-       
-        
-    ]
+const podData = [
+    {
+        name: "Pivot",
+        id: "pivot",
+        link: "https://podcasts.apple.com/podcast/id1073226719",
+        author: "Kara Swisher & Scott Galloway",
+    },
+    {
+        name: "Founder's Journal",
+        id: "founders",
+        link: "https://podcasts.apple.com/podcast/id1509276485",
+        author: "Alex Lieberman",
+    },
+    {
+        name: "Sway",
+        id: "sway",
+        link: "https://podcasts.apple.com/podcast/id1528594034",
+        author: "Kara Swisher",
+    },
+    {
+        name: "Acquired",
+        id: "acquired",
+        link: "https://podcasts.apple.com/podcast/id1050462261",
+        author: "Ben Gilbert & David Rosenthal",
+    },
+    {
+        name: "Learn Cantonese",
+        id: "canto",
+        link: "https://podcasts.apple.com/podcast/id1513774818",
+        author: "Poetic Cantonese",
+    },
+    {
+        name: "Lex Fridman Podcast",
+        id: "lex",
+        link: "https://www.youtube.com/lexfridman/videos",
+        author: "Lex Fridman",
+    },
+    {
+        name: "Yang Speaks",
+        id: "yang",
+        link: "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos",
+        author: "Andrew Yang & Zach??",
+    },
+    {
+        name: "Economist Radio",
+        id: "economist",
+        link: "https://podcasts.apple.com/podcast/id151230264",
+        author: "The Economist",
+    },
+    {
+        name: "INET",
+        id: "inet",
+        link: "https://www.youtube.com/c/NewEconomicThinking/videos",
+        author: "Rob Johnson",
+    },
+    {
+        name: "Making Sense",
+        id: "samharris",
+        link: "https://podcasts.apple.com/podcast/id733163012",
+        author: "Sam Harris",
+    },   
+]
+
+function podPopulate(podData){
+    
 
     var dataLength = podData.length
 
     var htmlString = "";
 
     for (i = 0; i < dataLength; i++) {
-        var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${podData[i].link}"><div class="book-card-bg ${podData[i].id}-cover"><div class="book-card-fg"></div></div><div class="pod-poster ${podData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading">${podData[i].author}</p></div></div></a>`
+        // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${podData[i].link}"><div class="book-card-bg ${podData[i].id}-cover"><div class="book-card-fg"></div></div><div class="pod-poster ${podData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading">${podData[i].author}</p></div></div></a>`
+        var bookCardHTML = `<a class="book-card clickable" target="_blank" onclick="showMediaPopup('pod',${i})"><div class="book-card-bg ${podData[i].id}-cover"><div class="book-card-fg"></div></div><div class="pod-poster ${podData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading">${podData[i].author}</p></div></div></a>`
 
         htmlString = `${htmlString}${bookCardHTML}`
     }
     var tray = document.getElementById("pod-tray")
     tray.classList.add("media-tray")
     tray.innerHTML = htmlString
+}
+
+
+var sideModal = document.getElementById('side-popup-modal')
+
+function showMediaPopup(type,n) {
+    populateMediaPopup(type,n)
+    sideModal.classList = 'show'
+    popupAllShow()
+}
+
+function hideMediaPopup() {
+    sideModal.classList = 'hide'
+    popupAllHide()
+}
+
+function populateMediaPopup(type,n) {
+    if (type == 'pod') {
+        const mediaData = podData[n]
+
+        document.getElementById('side-popup-bg').classList = podData[n].id + '-cover'
+        document.getElementById('side-popup-poster').classList = podData[n].id + '-cover'
+        document.getElementById('side-popup-title').innerHTML = podData[n].name
+        document.getElementById('side-popup-subtitle').innerHTML = podData[n].author
+        document.getElementById('side-popup-link').href = podData[n].link
+
+        console.log(mediaData)
+    }
 }
