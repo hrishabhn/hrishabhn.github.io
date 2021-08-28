@@ -401,7 +401,7 @@ function bookPopulate(bookData){
 
     for (i = 0; i < dataLength; i++) {
         // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${bookData[i].link}"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
-        var bookCardHTML = `<a class="book-card clickable" target="_blank" onclick="showMediaPopup('book',${i})"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
+        var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('book',${i})"><div class="media-poster book-poster ${bookData[i].id}-cover image-border"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading secondary-fg">${bookData[i].author}</p></div></div></a>`
 
         htmlString = `${htmlString}${bookCardHTML}`
     }
@@ -417,6 +417,12 @@ const podData = [
         id: "pivot",
         link: "https://podcasts.apple.com/podcast/id1073226719",
         author: "Kara Swisher & Scott Galloway",
+    },
+    {
+        name: "Waveform",
+        id: "waveform",
+        link: "https://www.youtube.com/Waveform/videos",
+        author: "Marques Brownlee",
     },
     {
         name: "Founder's Journal",
@@ -483,7 +489,7 @@ function podPopulate(podData){
 
     for (i = 0; i < dataLength; i++) {
         // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${podData[i].link}"><div class="book-card-bg ${podData[i].id}-cover"><div class="book-card-fg"></div></div><div class="pod-poster ${podData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading">${podData[i].author}</p></div></div></a>`
-        var bookCardHTML = `<a class="book-card clickable" target="_blank" onclick="showMediaPopup('pod',${i})"><div class="book-card-bg ${podData[i].id}-cover"><div class="book-card-fg"></div></div><div class="pod-poster ${podData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading">${podData[i].author}</p></div></div></a>`
+        var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('pod',${i})"><div class="media-poster pod-poster ${podData[i].id}-cover image-border"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading secondary-fg">${podData[i].author}</p></div></div></a>`
 
         htmlString = `${htmlString}${bookCardHTML}`
     }
