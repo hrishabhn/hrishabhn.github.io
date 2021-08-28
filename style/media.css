@@ -599,7 +599,7 @@
 .tv-popup-open{
     /* pointer-events: initial; */
     /* transform: translateY(0%); */
-    transition: 0.4s;
+    transition: 0.3s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 
 }
@@ -948,9 +948,9 @@
 
     transition: 0.25s;
 }
-.tv-popup-button-container:active{
+/* .tv-popup-button-container:active{
     opacity: 0.75;
-}
+} */
 
 .tv-popup-summary{
     display: block;
