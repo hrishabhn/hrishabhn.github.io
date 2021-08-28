@@ -599,19 +599,21 @@
 .tv-popup-open{
     /* pointer-events: initial; */
     /* transform: translateY(0%); */
-    transition: 0.2s;
+    transition: 0.4s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 
 }
 .tv-popup-closed{
     pointer-events: none;
-    /* transform: translateY(25%); */
-    scale: 0.85;
-    opacity: 0;
+    transform: translateY(100%);
+    /* scale: 0.85; */
+    /* opacity: 0; */
     transition: 0.2s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 
     /* scale: 0.9; */
+
+    /* filter: blur(10px); */
 }
 .tv-popup-modal{
     display: block;
