@@ -847,10 +847,11 @@ body{
     align-items: flex-start;
 
     width: 100%;
+    max-width: 80vw;
     box-sizing: border-box;
 
-    padding: 0px 10px;
-    margin: 50px 0px 30px;
+    padding: 0px 5px;
+    margin: 30px 0px 20px;
     font-size: 20px;
 }
 #side-popup-title{
