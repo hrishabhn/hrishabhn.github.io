@@ -2,9 +2,10 @@ function mediaPopulate(){
     bookPopulate(bookData)
     podPopulate(podData)
     movieHTML(movieData1,'up-next-tray')
-    movieHTML(movieData2,'my-list-tray')
-    movieHTML(movieData3,'movie-tray')
-    movieHTML(movieData4,'new-show-tray')
+    movieHTML(movieData2,'coming-soon-tray')
+    movieHTML(movieData3,'my-list-tray')
+    movieHTML(movieData4,'movie-tray')
+    movieHTML(movieData5,'new-show-tray')
     // tvBig('always')
 }
 
@@ -175,6 +176,8 @@ const movieData1 = [
         imdbID: "tt2359704",
         // imdbRate: "8.4",
     },
+]
+const movieData2 = [
     {
         name: "What If?",
         id: "whatif",
@@ -226,7 +229,7 @@ const movieData1 = [
     },
     
 ]
-const movieData2 = [
+const movieData3 = [
     {
         name: "The Grand Tour",
         id: "grandTour",
@@ -339,7 +342,7 @@ const movieData2 = [
         // imdbID: "tt5712554",
     },
 ]
-const movieData3 = [
+const movieData4 = [
     {
         name: "Ghost in the Shell",
         id: "ghost",
@@ -401,7 +404,7 @@ const movieData3 = [
         // imdbID: "tt6264654",
     },
 ]
-const movieData4 = [
+const movieData5 = [
     {
         name: "Lost",
         id: "lost",
