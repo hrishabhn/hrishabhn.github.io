@@ -1,11 +1,11 @@
 function mediaPopulate(){
     bookPopulate(bookData)
     podPopulate(podData)
-    movieHTML(movieData1,'up-next-tray')
-    movieHTML(movieData2,'coming-soon-tray')
-    movieHTML(movieData3,'my-list-tray')
-    movieHTML(movieData4,'movie-tray')
-    movieHTML(movieData5,'new-show-tray')
+    movieHTML(1,movieData1,'up-next-tray')
+    movieHTML(2,movieData2,'coming-soon-tray')
+    movieHTML(3,movieData3,'my-list-tray')
+    movieHTML(4,movieData4,'movie-tray')
+    movieHTML(5,movieData5,'new-show-tray')
     // tvBig('always')
 }
 
@@ -30,15 +30,12 @@ function popupTVShow(){
     // tvPopup(n);
     tvModal.className = "modal tv-popup-open";
     popupAllShow()
-  }
-  
-  function popupTVHide(){
+}
+function popupTVHide(){
     tvModal.className = "modal tv-popup-closed";
     popupAllHide()
-  }
-
-
-function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, tvTimeRate, reelgoodLink, reelgoodRate, imdbID, imdbRate, redditLink){
+}
+function tvPopup(movie){
     popupTVShow()
     
     // showsAll = tvData()
@@ -60,74 +57,79 @@ function tvPopup(id, link, service, description, summary, titleStyle, tvTimeID, 
     var titleClass = "tv-popup-title ";
     // var serviceClass = "tv-popup-button-container tv-play-button ";
 
-    if (!(service == "Coming Soon")) {
-        service = "Watch on " + service
+    var serviceText;
+
+
+    if (!(movie.service == "Coming Soon")) {
+        serviceText = "Watch on " + movie.service
+    } else {
+        serviceText = movie.service
     }
-  
-    document.getElementById("card").className =     cardClass.concat(id,"-solid");
-    document.getElementById("poster").className = posterClass.concat(id,"-poster");
-    document.getElementById("grad").className = gradientClass.concat(id,"-gradient");
-    document.getElementById("title").className =   titleClass.concat(id,"-title ",titleStyle);
+
+    document.getElementById("card").className =     cardClass.concat(movie.id,"-solid");
+    document.getElementById("poster").className = posterClass.concat(movie.id,"-poster");
+    document.getElementById("grad").className = gradientClass.concat(movie.id,"-gradient");
+    document.getElementById("title").className =   titleClass.concat(movie.id,"-title ",movie.titleStyle);
     // document.getElementById("desc").innerHTML = description;
     // document.getElementById("tv-popup-link").href = link;
     // document.getElementById("serviceGradient").className = serviceClass.concat(showsAll[n][6]);
-    document.getElementById("service").innerHTML = service;
+    document.getElementById("service").innerHTML = serviceText;
 
     // console.log(typeof tvTimeID)
 
 
     var descElement = document.getElementById("desc")
-    if ((description !== "null") && (description !== "undefined")) {
-        descElement.innerHTML = description;
+    if (movie.description) {
+        descElement.innerHTML = movie.description;
     } else {
         descElement.innerHTML = "";
     }
 
     var linkElement = document.getElementById("tv-popup-link")
     var linkIcon = document.getElementById("tv-popup-button-icon")
-    if ((link !== "null") && (link !== "undefined")) {
+    if (movie.link) {
         linkIcon.classList.remove("hidden-always")
-        linkElement.href = link;
+        linkElement.href = movie.link;
     } else {
         linkIcon.classList.add("hidden-always")
         linkElement.removeAttribute('href')
     }
 
     var tvTimeElement = document.getElementById("tv-popup-tv-time")
-    if ((tvTimeID !== "null") && (tvTimeID !== "undefined")) {
-        tvTimeElement.href = "https://www.tvtime.com/en/show/" + tvTimeID;
+    if (movie.tvTimeID) {
+        tvTimeElement.href = "https://www.tvtime.com/en/show/" + movie.tvTimeID;
         tvTimeElement.classList.remove("hidden-always")
     } else {
         tvTimeElement.classList.add("hidden-always")
     }
 
     var reelgoodElement = document.getElementById("tv-popup-reelgood")
-    if ((reelgoodLink !== "null") && (reelgoodLink !== "undefined")) {
-        reelgoodElement.href = reelgoodLink;
+    if (movie.reelgoodLink) {
+        reelgoodElement.href = movie.reelgoodLink;
         reelgoodElement.classList.remove("hidden-always")
     } else {
         reelgoodElement.classList.add("hidden-always")
     }
 
     var imdbElement = document.getElementById("tv-popup-imdb")
-    if ((imdbID !== "null") && (imdbID !== "undefined")) {
-        imdbElement.href = "https://www.imdb.com/title/" + imdbID;
+    if (movie.imdbID) {
+        imdbElement.href = "https://www.imdb.com/title/" + movie.imdbID;
         imdbElement.classList.remove("hidden-always")
     } else {
         imdbElement.classList.add("hidden-always")
     }
 
     var redditElement = document.getElementById("tv-popup-reddit")
-    if ((redditLink !== "null") && (redditLink !== "undefined")) {
-        redditElement.href = redditLink;
+    if (movie.redditLink) {
+        redditElement.href = movie.redditLink;
         redditElement.classList.remove("hidden-always")
     } else {
         redditElement.classList.add("hidden-always")
     }
     
     var summaryElement = document.getElementById("tv-popup-summary")
-    if ((summary !== "null") && (summary !== "undefined")) {
-        summaryElement.innerHTML = summary;
+    if (movie.summary) {
+        summaryElement.innerHTML = movie.summary;
         summaryElement.classList.remove("hidden-always")
     } else {
         summaryElement.classList.add("hidden-always")
@@ -158,6 +160,18 @@ const movieData1 = [
         // reelgoodRate: "90",
         imdbID: "tt0472954",
         // imdbRate: "8.8",
+    },
+    {
+        name: "Brooklyn Nine-Nine",
+        id: "brooklyn",
+        link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
+        service: "Hulu",
+        description: "Comedy &#149 Crime &#149 8 Seasons &#149 2013 - Present",
+        summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record. Other members of the precinct include Sgt Terry Jeffords, a devoted family man, Detective Charles Boyle, a hard worker who idolizes Jake, and Rosa Diaz, a sexy-yet-intimidating detective. Civilian office manager Gina Linetti is tasked with cleaning up everyone's mess, while somehow getting involved in everyone's business.",
+        titleStyle: "mid",
+        tvTimeID: "269586",
+        reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
+        imdbID: "tt2467372",
     },
     {
         name: "Atlanta",
@@ -467,7 +481,7 @@ const movieData5 = [
     },
 ]
 
-function movieHTML(data,tray) {
+function movieHTML(dataN,data,tray) {
     var dataLength = data.length
 
     var htmlString = "";
@@ -495,7 +509,7 @@ function movieHTML(data,tray) {
 
         // var movieCardHTML = `<div class="movie-card"><div class="movie-poster ${data[i].id}-poster"><div class="movie-gradient"><div class="movie-title ${data[i].titleStyle} ${data[i].id}-title"></div></div><a class="movie-play-container" target="_blank"${htmlLink}><svg class="movie-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="movie-info" onclick='tvPopup("${data[i].id}", "${data[i].link}", "${data[i].service}", "${data[i].description}", "${data[i].summary}", "${data[i].titleStyle}", "${data[i].tvTimeID}", "${data[i].tvTimeRate}", "${data[i].reelgoodLink}", "${data[i].reelgoodRate}", "${data[i].imdbID}", "${data[i].imdbRate}")'><div class="movie-textbox"><p class="movie-heading">${data[i].name}</p><p class="movie-subheading">${data[i].service}</p></div><div class="movie-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"/><circle cx="192" cy="192" r="42.667"/><circle cx="192" cy="341.333" r="42.667"/></svg></div></a></div>`
 
-        var movieCardHTML = `<div class="tv-card" target="_blank" href="${htmlLink}"><div class="tv-card-poster ${data[i].id}-poster image-border"><div class="tv-gradient"><div class="tv-title ${data[i].titleStyle} ${data[i].id}-title"></div></div><a class="tv-play-container" target="_blank"${htmlLink}><svg class="tv-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="tv-info clickable" onclick='tvPopup("${data[i].id}", "${data[i].link}", "${data[i].service}", "${data[i].description}", "${data[i].summary}", "${data[i].titleStyle}", "${data[i].tvTimeID}", "${data[i].tvTimeRate}", "${data[i].reelgoodLink}", "${data[i].reelgoodRate}", "${data[i].imdbID}", "${data[i].imdbRate}", "${data[i].redditLink}")'><div class="tv-textbox"><p class="tv-heading">${data[i].name}</p><p class="tv-subheading secondary-fg">${data[i].service}</p></div><div class="tv-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"></circle><circle cx="192" cy="192" r="42.667"></circle><circle cx="192" cy="341.333" r="42.667"></circle></svg></div></a></div>`
+        var movieCardHTML = `<div class="tv-card" target="_blank" href="${htmlLink}"><div class="tv-card-poster ${data[i].id}-poster image-border"><div class="tv-gradient"><div class="tv-title ${data[i].titleStyle} ${data[i].id}-title"></div></div><a class="tv-play-container" target="_blank"${htmlLink}><svg class="tv-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="tv-info clickable" onclick='tvPopup(movieData${dataN}[${i}])'><div class="tv-textbox"><p class="tv-heading">${data[i].name}</p><p class="tv-subheading secondary-fg">${data[i].service}</p></div><div class="tv-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"></circle><circle cx="192" cy="192" r="42.667"></circle><circle cx="192" cy="341.333" r="42.667"></circle></svg></div></a></div>`
 
 
         htmlString = `${htmlString}${movieCardHTML}`
