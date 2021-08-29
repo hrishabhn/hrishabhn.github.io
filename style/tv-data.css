@@ -814,3 +814,16 @@
 .futurama-title{
     background-image: url('../TV/title/futurama.png');
 }
+
+.brooklyn-solid{
+    background-color: #8b6a4b;
+}
+.brooklyn-gradient{
+    background: linear-gradient(#00000000,#8b6a4b);
+}
+.brooklyn-poster{
+    background-image: url('../TV/background/brooklyn.webp');
+}
+.brooklyn-title{
+    background-image: url('../TV/title/brooklyn.png');
+}
