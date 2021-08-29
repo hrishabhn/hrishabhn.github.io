@@ -142,6 +142,10 @@ body{
 .spacer{
     flex-grow: 1;
 }
+.spacer-5{
+    min-height: 5px;
+    min-width: 5px;
+}
 .spacer-10{
     min-height: 10px;
     min-width: 10px;
@@ -750,7 +754,7 @@ body{
     flex-grow: 1;
 
     border-radius: 10px;
-    padding: 12px 12px;
+    padding: 10px 10px;
 
     font-size: 10px;
     font-weight: 500;
