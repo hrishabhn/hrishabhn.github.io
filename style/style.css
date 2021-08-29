@@ -1087,7 +1087,7 @@ body{
     }
 
 
-    #notch{
+    /* #notch{
         display: block;
         position: fixed;
         height: 20px;
@@ -1096,11 +1096,6 @@ body{
         z-index: 200;
 
         background-color: #121212;
-    }
-    /* @media screen and (prefers-color-scheme: light) {
-        #notch{
-            background-color: var(--light-layer-2);
-        }
     } */
 }
 
