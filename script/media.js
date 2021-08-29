@@ -265,6 +265,18 @@ const movieData2 = [
         reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
         imdbID: "tt2861424",
     },
+    {
+        name: "Sex Education",
+        id: "edu",
+        link: "https://www.netflix.com/title/80197526",
+        service: "Netflix",
+        description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
+        summary: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
+        titleStyle: "wide",
+        tvTimeID: "356317",
+        reelgoodLink: "https://reelgood.com/show/sex-education-2019",
+        imdbID: "tt7767422",
+    },
     
 ]
 const movieData3 = [
