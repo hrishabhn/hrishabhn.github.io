@@ -440,6 +440,9 @@
     .tv-play-container:hover{
         background-color: var(--black-20);
     }
+    .tv-play-container .tv-play-icon{
+        transition: all 0.25s;
+    }
     .tv-play-container:hover .tv-play-icon{
         opacity: 1;
     }
@@ -447,12 +450,18 @@
 @media(max-width: 450px){
     .tv-play-container{
         transition: all 0.4s;
+        transition-delay: 0.15s;
     }
     .tv-play-container:active{
         transition: all 0.05s;
         background-color: var(--black-40);
     }
+    .tv-play-container .tv-play-icon{
+        transition: all 0.4s;
+        transition-delay: 0.15s;
+    }
     .tv-play-container:active .tv-play-icon{
+        transition: all 0.05s;
         opacity: 1;
     }
 }
@@ -468,7 +477,6 @@
     height: 24px;
     width: 24px;
 
-    transition: all 0.25s;
     opacity: 0;
 }
 
