@@ -167,7 +167,7 @@ const movieData1 = [
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
         service: "Hulu",
         description: "Comedy &#149 Crime &#149 8 Seasons &#149 2013 - Present",
-        summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record. Other members of the precinct include Sgt Terry Jeffords, a devoted family man, Detective Charles Boyle, a hard worker who idolizes Jake, and Rosa Diaz, a sexy-yet-intimidating detective. Civilian office manager Gina Linetti is tasked with cleaning up everyone's mess, while somehow getting involved in everyone's business.",
+        summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
         titleStyle: "mid",
         tvTimeID: "269586",
         reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
