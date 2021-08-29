@@ -716,10 +716,10 @@ body{
     cursor: default;
 
     border-radius: 10px;
-    border-style: solid;
-    border-width: 2.5px;
-    padding: 8px 8px;
-    flex-grow: 1;
+    /* border-style: solid;
+    border-width: 2.5px; */
+    padding: 10px 20px;
+    /* flex-grow: 1; */
     /* width: 100%; */
 
     font-size: 12px;
@@ -729,12 +729,47 @@ body{
     white-space: nowrap;
     text-overflow: ellipsis;
     /* vertical-align: top; */
-    /* background-color: blue; */
+    background-color: var(--dark-layer-1);
 }
 
 .course-switch.current{
     color: white;
+    fill: white;
 }
+
+.course-switch{
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    box-sizing: border-box;
+
+    height: 100%;
+    /* width: 100%; */
+    flex-grow: 1;
+
+    border-radius: 10px;
+    padding: 10px 10px;
+
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+
+    margin-top: 0px;
+    color: var(--white-100);
+    fill: var(--white-100);
+}
+.course-switch-icon{
+    display: block;
+    position: relative;
+
+    height: 12px;
+    width: 12px;
+    margin-right: 8px;
+}
+
 
 
 #side-popup-modal{
