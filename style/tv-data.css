@@ -827,3 +827,16 @@
 .brooklyn-title{
     background-image: url('../TV/title/brooklyn.png');
 }
+
+.edu-solid{
+    background-color: #6d6256;
+}
+.edu-gradient{
+    background: linear-gradient(#00000000,#6d6256);
+}
+.edu-poster{
+    background-image: url('../TV/background/edu.webp');
+}
+.edu-title{
+    background-image: url('../TV/title/edu.png');
+}
