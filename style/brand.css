@@ -511,7 +511,7 @@
     background: linear-gradient(to bottom right, #00645A, #00645A);
 }
 .drops{
-    background: linear-gradient(160deg,#fd9536,#a42f80 31%,#2c146c 79%);
+    background: linear-gradient(135deg, rgb(218, 140, 92) 0%, rgb(130, 44, 138) 50%, rgb(44, 20, 108) 100%);
 }
 .target{
     background-color: #c00;
@@ -548,6 +548,9 @@
 }
 .symbolab{
     background-color: #e02443;
+}
+.duolingo{
+    background-color: #58CC02;
 }
 
 
