@@ -318,7 +318,8 @@
     background-color: #34a853;
 }
 .google-blue{
-    background:linear-gradient(to bottom right,#4285f4,#2d5da8);
+    /* background:linear-gradient(to bottom right,#4285f4,#2d5da8); */
+    background-color: #4285f4;
 }
 .google-maps{
     background:linear-gradient(to bottom right,#9BC0F9,#6c86ad);
