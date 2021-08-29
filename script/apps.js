@@ -40,11 +40,11 @@ function apps(){
     // page5AppPopulate()
 }
 
-function appType(type, appData, dest, title) {
+function appType(type, appData, dest, title, devices) {
     if (type == "action") {
-        actionPopulate(appData, dest, title)
+        actionPopulate(appData, dest, title, devices)
     } else {
-        linkPopulate(appData, dest, title)
+        linkPopulate(appData, dest, title, devices)
     }
 }
 
