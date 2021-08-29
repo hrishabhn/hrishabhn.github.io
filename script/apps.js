@@ -646,11 +646,11 @@ function courseSwitch(n) {
     var course_8 = document.getElementById('course-8')
 
     course_1.classList.remove('blue')
-    course_2.classList.remove('orange')
-    course_3.classList.remove('teal')
-    course_4.classList.remove('green')
-    course_5.classList.remove('red')
-    course_6.classList.remove('mint')
+    course_2.classList.remove('mint')
+    course_3.classList.remove('orange')
+    course_4.classList.remove('teal')
+    course_5.classList.remove('green')
+    course_6.classList.remove('red')
     course_7.classList.remove('indigo')
     course_8.classList.remove('brown')
 
@@ -670,29 +670,29 @@ function courseSwitch(n) {
             eceApps('smart-tray','link',true)
             break
         case 2:
-            course_2.classList.add('orange')
+            course_2.classList.add('mint')
             course_2.classList.add('current')
-            ie335Apps('smart-tray','link',true)
+            engrApps('smart-tray','link',true)
             break
         case 3:
-            course_3.classList.add('teal')
+            course_3.classList.add('orange')
             course_3.classList.add('current')
-            ie386Apps('smart-tray','link',true)
+            ie335Apps('smart-tray','link',true)
             break
         case 4:
-            course_4.classList.add('green')
+            course_4.classList.add('teal')
             course_4.classList.add('current')
-            nuclApps('smart-tray','link',true)
+            ie386Apps('smart-tray','link',true)
             break
         case 5:
-            course_5.classList.add('red')
+            course_5.classList.add('green')
             course_5.classList.add('current')
-            spanApps('smart-tray','link',true)
+            nuclApps('smart-tray','link',true)
             break
         case 6:
-            course_6.classList.add('mint')
+            course_6.classList.add('red')
             course_6.classList.add('current')
-            engrApps('smart-tray','link',true)
+            spanApps('smart-tray','link',true)
             break
         case 7:
             course_7.classList.add('indigo')
