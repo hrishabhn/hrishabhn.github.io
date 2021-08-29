@@ -750,7 +750,7 @@ body{
     flex-grow: 1;
 
     border-radius: 10px;
-    padding: 10px 10px;
+    padding: 12px 12px;
 
     font-size: 10px;
     font-weight: 500;
@@ -1003,6 +1003,9 @@ body{
         fill: var(--dark-layer-1);
     }
 
+    #user-icon{
+        background-color: var(--black-20);
+    }
     .content-container{
         background-color: var(--light-layer-0);
     }
@@ -1011,6 +1014,11 @@ body{
     }
     .info-value-container{
         color: var(--dark-layer-1-80);
+    }
+
+
+    .course-switch{
+        background-color: var(--light-layer-0);
     }
 }
 
@@ -1223,12 +1231,6 @@ body{
 
         height: 22px;
         width: 22px;
-
-    }
-    .course-switch{
-        /* font-size: 10px; */
-        /* font-weight: 400; */
-        /* min-width: calc((100vw - 40px - 30px) / 3); */
 
     }
 
