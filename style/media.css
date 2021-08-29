@@ -431,14 +431,35 @@
     width: 100%;
 
 
-    transition: all 0.25s;
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 }
-.tv-play-container:hover{
-    background-color: var(--black-20);
+@media(min-width: 450px){
+    .tv-play-container{
+        transition: all 0.25s;
+    }
+    .tv-play-container:hover{
+        background-color: var(--black-20);
+    }
+    .tv-play-container:hover .tv-play-icon{
+        opacity: 1;
+    }
 }
-.tv-play-container:hover .tv-play-icon{
-    opacity: 1;
+@media(max-width: 450px){
+    .tv-play-container{
+        transition: all 0.4s;
+    }
+    .tv-play-container:active{
+        transition: all 0.05s;
+        background-color: var(--black-40);
+    }
+    .tv-play-container:active .tv-play-icon{
+        opacity: 1;
+    }
 }
+
+
+
+
 .tv-play-icon{
     display: block;
     position: relative;
