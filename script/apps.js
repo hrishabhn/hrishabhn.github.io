@@ -12,6 +12,8 @@ function apps(){
     socialApps()
     pinnedAApps()
 
+    courseSwitchLoad()
+
     schoolApps()
     nuclApps('nucl-tray','action',true)
     ie335Apps('ie-335-tray','action',true)
@@ -602,8 +604,17 @@ function courseApps(locale) {
             break
     }
 }
+function courseSwitchLoad() {
+    const n = getCookie('course')
+    // console.log(typeof n)
+    courseSwitch(parseInt(n))
+}
+
 function courseSwitch(n) {
     document.getElementById('smart-tray').innerHTML = null
+    document.cookie =`course=${n}`;
+    console.log(document.cookie)
+
     var course_1 = document.getElementById('course-1')
     var course_2 = document.getElementById('course-2')
     var course_3 = document.getElementById('course-3')
