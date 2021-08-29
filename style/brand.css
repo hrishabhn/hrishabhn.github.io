@@ -64,6 +64,10 @@
 .brown{
     background-color: var(--brown-dark);
 }
+.brown-fg{
+    color: var(--brown-dark);
+    fill: var(--brown-dark);
+}
 .brown-border{
     border-color: var(--brown-dark);
 }
@@ -73,11 +77,19 @@
 .green{
     background-color: var(--green-dark);
 }
+.green-fg{
+    color: var(--green-dark);
+    fill: var(--green-dark);
+}
 .green-border{
     border-color: var(--green-dark);
 }
 .indigo{
     background-color: var(--indigo-dark);
+}
+.indigo-fg{
+    color: var(--indigo-dark);
+    fill: var(--indigo-dark);
 }
 .indigo-border{
     border-color: var(--indigo-dark);
@@ -85,11 +97,19 @@
 .mint{
     background-color: var(--mint-dark);
 }
+.mint-fg{
+    color: var(--mint-dark);
+    fill: var(--mint-dark);
+}
 .mint-border{
     border-color: var(--mint-dark);
 }
 .orange{
     background-color: var(--orange-dark);
+}
+.orange-fg{
+    color: var(--orange-dark);
+    fill: var(--orange-dark);
 }
 .orange-border{
     border-color: var(--orange-dark);
@@ -153,6 +173,10 @@
     .brown{
         background-color: var(--brown-light);
     }
+    .brown-fg{
+        color: var(--brown-light);
+        fill: var(--brown-light);
+    }
     .brown-border{
         border-color: var(--brown-light);
     }
@@ -162,11 +186,19 @@
     .green{
         background-color: var(--green-light);
     }
+    .green-fg{
+        color: var(--green-light);
+        fill: var(--green-light);
+    }
     .green-border{
         border-color: var(--green-light);
     }
     .indigo{
         background-color: var(--indigo-light);
+    }
+    .indigo-fg{
+        color: var(--indigo-light);
+        fill: var(--indigo-light);
     }
     .indigo-border{
         border-color: var(--indigo-light);
@@ -174,11 +206,19 @@
     .mint{
         background-color: var(--mint-light);
     }
+    .mint-fg{
+        color: var(--mint-light);
+        fill: var(--mint-light);
+    }
     .mint-border{
         border-color: var(--mint-light);
     }
     .orange{
         background-color: var(--orange-light);
+    }
+    .orange-fg{
+        color: var(--orange-light);
+        fill: var(--orange-light);
     }
     .orange-border{
         border-color: var(--orange-light);
