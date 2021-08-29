@@ -567,6 +567,7 @@ body{
     /* background-color: var(--dark-layer-1); */
 
     /* color: var(--blue-light) */
+    /* cursor: default; */
 }
 .link-container.white{
     color: var(--black-100);
