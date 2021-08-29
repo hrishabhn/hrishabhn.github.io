@@ -452,7 +452,8 @@
     background:linear-gradient(to bottom right,#185ABD,#0f3670);
 }
 .shortcuts{
-    background:linear-gradient(to bottom right,#1D1F5A,#3539a6);
+    /* background:linear-gradient(to bottom right,#1D1F5A,#3539a6); */
+    background-color: #1D1F5A;
 }
 .venmo{
     /* background:linear-gradient(to bottom right,#3d95ce,#275e82); */
@@ -472,7 +473,8 @@
     background-color: #003B70;
 }
 .appstore{
-    background:linear-gradient(to bottom right,#1AC8FB,#1D70F1);
+    /* background:linear-gradient(to bottom right,#1AC8FB,#1D70F1); */
+    background-color: #1AC8FB;
 }
 .kmb{
     /* background:linear-gradient(to bottom right,#b83947,#6b212a); */
