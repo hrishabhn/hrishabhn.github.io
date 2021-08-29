@@ -22,7 +22,7 @@ function mainPage(n) {
 
 function pageLoads(n) {
   var title = document.getElementById("title-page")
-  var header = document.getElementById("header")
+  var header = document.getElementById("header-text")
 
   switch (n) {
     case 1:
