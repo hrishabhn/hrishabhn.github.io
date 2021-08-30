@@ -1,6 +1,7 @@
 function mediaPopulate(){
     bookPopulate(bookData)
     podPopulate(podData)
+    newsPopulate(newsData)
     movieHTML(1,movieData1,'up-next-tray')
     movieHTML(2,movieData2,'coming-soon-tray')
     movieHTML(3,movieData3,'my-list-tray')
@@ -682,6 +683,50 @@ function podPopulate(podData){
     tray.innerHTML = htmlString
 }
 
+const newsData = [
+    {
+        name: "Morning Brew",
+        bg: "white",
+        fg: "brew-fg",
+        link: "https://www.morningbrew.com/daily/issues/latest",
+    },
+    {
+        name: "Sidekick",
+        bg: "sidekick-bg",
+        fg: "sidekick-fg",
+        link: "https://www.morningbrew.com/sidekick/issues/latest",
+    },
+    {
+        name: "No Mercy/No Malice",
+        bg: "nomercy-bg",
+        fg: null,
+        link: "https://www.profgalloway.com",
+    },
+]
+
+function newsPopulate(newsData){
+    var dataLength = newsData.length
+
+    var htmlString = "";
+
+    for (i = 0; i < dataLength; i++) {
+
+        if (newsData[i].fg) {
+            var fgHTML = `<div class="news-image ${newsData[i].fg}"></div>`
+        } else {
+            var fgHTML = ``
+        }
+
+        var newsCardHTML = `
+        <a class="news-card clickable ${newsData[i].bg}" target="_blank" href="${newsData[i].link}">${fgHTML}</a>
+        `
+
+        htmlString = `${htmlString}${newsCardHTML}`
+    }
+    var tray = document.getElementById("news-tray")
+    tray.classList.add("media-tray")
+    tray.innerHTML = htmlString
+}
 
 var sideModal = document.getElementById('side-popup-modal')
 
