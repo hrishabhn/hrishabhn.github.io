@@ -134,6 +134,12 @@
 .brew-fg{
     background-image: url('../news/brew.png');
 }
+.citylab-fg{
+    background-image: url('../news/citylab.svg');
+}
+.techbrew-fg{
+    background-image: url('../news/techbrew.png');
+}
 
 
 .fargo-solid{
