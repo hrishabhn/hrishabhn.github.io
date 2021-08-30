@@ -937,7 +937,7 @@ function eceApps(dest, type, showTitle) {
         {
             name: "OneNote",
             background: "onenote",
-            link: "onenote:https://purdue0-my.sharepoint.com/personal/hnadkarn_purdue_edu/Documents/Fall%202021/ECE%2020001/ECE%20200011/",
+            link: "onenote:https://purdue0-my.sharepoint.com/personal/hnadkarn_purdue_edu/Documents/Fall%202021/ECE%2020001/ECE%2020001",
             target: "blank",
             icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M48 34h-1v12h1c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2zm0-14h-1v12h1c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2zM29.638.229a1 1 0 00-.825-.212l-28 5.333A1 1 0 000 6.333v37.334c0 .48.341.893.813.982l28 5.333a1.006 1.006 0 00.825-.211c.229-.191.362-.473.362-.771V1c0-.298-.133-.581-.362-.771zm-8.333 34.027H17.573L10.81 22.58c-.398-.683-.672-1.196-.824-1.542h-.045c.061.656.092 1.659.092 3.006v10.212h-3.49V15.673h3.982l6.512 11.313c.298.509.572 1.015.823 1.516h.045c-.061-.432-.09-1.283-.09-2.553V15.673h3.49v18.583z"/><path d="M48 5H32v10h6v2h-6v3h6v2h-6v3h6v2h-6v3h6v2h-6v3h6v2h-6v9h12a1 1 0 001-1V18h3c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2z"/></svg>',
         },
