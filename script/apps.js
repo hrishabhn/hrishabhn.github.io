@@ -19,6 +19,7 @@ function apps(){
     courseSwitchLoad()
 
     schoolApps()
+    // appType('action',learningApps,'learning-tray','Learning',null)
     // nuclApps('nucl-tray','action',true)
     // ie335Apps('ie-335-tray','action',true)
     // eceApps('ece-tray','action',true)
