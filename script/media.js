@@ -161,6 +161,7 @@ const movieData1 = [
         // reelgoodRate: "90",
         imdbID: "tt0472954",
         // imdbRate: "8.8",
+        redditLink: "https://www.reddit.com/r/IASIP",
     },
     {
         name: "Brooklyn Nine-Nine",
@@ -240,7 +241,7 @@ const movieData2 = [
         tvTimeID: "383203",
         reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
         imdbID: "tt10986410",
-        redditLink: "https://www.reddit.com/r/TedLasso"
+        redditLink: "https://www.reddit.com/r/TedLasso",
     },
     {
         name: "What We Do in the Shadows",
@@ -253,6 +254,7 @@ const movieData2 = [
         tvTimeID: "358211",
         reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
         imdbID: "tt7908628",
+        redditLink: "https://www.reddit.com/r/WhatWeDointheShadows",
     },
     {
         name: "Rick and Morty",
@@ -265,6 +267,7 @@ const movieData2 = [
         tvTimeID: "275274",
         reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
         imdbID: "tt2861424",
+        redditLink: "https://www.reddit.com/r/rickandmorty",
     },
     {
         name: "Sex Education",
@@ -277,6 +280,7 @@ const movieData2 = [
         tvTimeID: "356317",
         reelgoodLink: "https://reelgood.com/show/sex-education-2019",
         imdbID: "tt7767422",
+        redditLink: "https://www.reddit.com/r/NetflixSexEducation",
     },
     
 ]
