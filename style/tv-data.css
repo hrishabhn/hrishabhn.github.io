@@ -120,9 +120,20 @@
     background-image: url('../podcasts/waveform.jpeg');
 }
 
+/* news */
 
-
-
+.nomercy-bg{
+    background-image: url('../news/nomercy.jpg');
+}
+.sidekick-bg{
+    background-color: #3539A9;
+}
+.sidekick-fg{
+    background-image: url('../news/sidekick.png');
+}
+.brew-fg{
+    background-image: url('../news/brew.png');
+}
 
 
 .fargo-solid{
