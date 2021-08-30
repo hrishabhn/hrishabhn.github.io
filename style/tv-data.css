@@ -141,6 +141,16 @@
     background-image: url('../news/techbrew.png');
 }
 
+/* youtube */
+
+.wendover-bg{
+    background-image: url('../media-image/wendover.jpg');
+    background-size: 200%;
+}
+.realeng-bg{
+    background-image: url('../media-image/realeng.png');
+    background-size: 160%;
+}
 
 .fargo-solid{
     background-color: #28374E;

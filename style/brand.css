@@ -124,6 +124,10 @@
 .purple{
     background-color: var(--purple-dark);
 }
+.purple-fg{
+    color: var(--purple-dark);
+    fill: var(--purple-dark);
+}
 .red{
     background-color: var(--red-dark);
 }
@@ -236,6 +240,10 @@
     }
     .purple{
         background-color: var(--purple-light);
+    }
+    .purple-fg{
+        color: var(--purple-light);
+        fill: var(--purple-light);
     }
     .red{
         background-color: var(--red-light);

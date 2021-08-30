@@ -2,6 +2,7 @@ function mediaPopulate(){
     bookPopulate(bookData)
     podPopulate(podData)
     newsPopulate(newsData)
+    youtubePopulate(youtubeData)
     movieHTML(1,movieData1,'up-next-tray')
     movieHTML(2,movieData2,'coming-soon-tray')
     movieHTML(3,movieData3,'my-list-tray')
@@ -734,12 +735,51 @@ function newsPopulate(newsData){
         }
 
         var newsCardHTML = `
-        <a class="news-card clickable ${newsData[i].bg}" target="_blank" href="${newsData[i].link}">${fgHTML}</a>
+        <a class="news-card image-border clickable ${newsData[i].bg}" target="_blank" href="${newsData[i].link}">${fgHTML}</a>
         `
 
         htmlString = `${htmlString}${newsCardHTML}`
     }
     var tray = document.getElementById("news-tray")
+    tray.classList.add("media-tray")
+    tray.innerHTML = htmlString
+}
+
+const youtubeData = [
+    {
+        name: "Wendover Productions",
+        bg: "wendover-bg",
+        fg: null,
+        link: "https://nebula.app/wendover",
+    },
+    {
+        name: "Real Engineering",
+        bg: "realeng-bg",
+        fg: null,
+        link: "https://nebula.app/realengineering",
+    },
+]
+
+function youtubePopulate(youtubeData){
+    var dataLength = youtubeData.length
+
+    var htmlString = "";
+
+    for (i = 0; i < dataLength; i++) {
+
+        if (youtubeData[i].fg) {
+            var fgHTML = `<div class="news-image ${youtubeData[i].fg}"></div>`
+        } else {
+            var fgHTML = ``
+        }
+
+        var newsCardHTML = `
+        <a class="youtube-card image-border clickable ${youtubeData[i].bg}" target="_blank" href="${youtubeData[i].link}">${fgHTML}</a>
+        `
+
+        htmlString = `${htmlString}${newsCardHTML}`
+    }
+    var tray = document.getElementById("youtube-tray")
     tray.classList.add("media-tray")
     tray.innerHTML = htmlString
 }
