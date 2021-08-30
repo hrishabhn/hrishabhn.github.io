@@ -753,7 +753,10 @@ function courseApps(locale) {
 function courseSwitchLoad() {
     const n = getCookie('course')
     // console.log(typeof n)
-    courseSwitch(parseInt(n))
+    if (n) {
+        console.log(n)
+        courseSwitch(parseInt(n))
+    }
 }
 
 function courseSwitch(n) {
