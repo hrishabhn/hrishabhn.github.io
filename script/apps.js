@@ -723,8 +723,7 @@ function courseSwitchLoad() {
 
 function courseSwitch(n) {
     document.getElementById('smart-tray').innerHTML = null
-    document.cookie =`course=${n}`;
-    console.log(document.cookie)
+    // console.log(document.cookie)
 
     var course_1 = document.getElementById('course-1')
     var course_2 = document.getElementById('course-2')
@@ -804,7 +803,7 @@ function courseSwitch(n) {
             break
     }
 
-
+    document.cookie =`course=${n}`;
     // console.log(course_1)
 
 
