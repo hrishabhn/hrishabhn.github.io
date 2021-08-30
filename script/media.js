@@ -700,7 +700,19 @@ const newsData = [
         name: "No Mercy/No Malice",
         bg: "nomercy-bg",
         fg: null,
-        link: "https://www.profgalloway.com",
+        link: "https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.profgalloway.com%2Ffeed",
+    },
+    {
+        name: "CityLab",
+        bg: "gray1",
+        fg: "citylab-fg",
+        link: "https://www.bloomberg.com/citylab",
+    },
+    {
+        name: "Emerging Tech Brew",
+        bg: "white",
+        fg: 'techbrew-fg',
+        link: "https://www.morningbrew.com/emerging-tech/issues/latest",
     },
 ]
 
