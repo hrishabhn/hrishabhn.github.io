@@ -64,97 +64,101 @@
     background-color: #0b1312;
 }
 .acquired-cover{
-    background-image: url('../podcasts/acquired.jpeg');
+    background-image: url('../media-image/podcasts/acquired.jpeg');
 }
 
 .economist-solid{
     background-color: #751612;
 }
 .economist-cover{
-    background-image: url('../podcasts/economist.jpeg');
+    background-image: url('../media-image/podcasts/economist.jpeg');
 }
 
 .inet-solid{
     background-color: #93969e;
 }
 .inet-cover{
-    background-image: url('../podcasts/inet.jpeg');
+    background-image: url('../media-image/podcasts/inet.jpeg');
 }
 
 .lex-solid{
     background-color: #2e2c2a;
 }
 .lex-cover{
-    background-image: url('../podcasts/lex.jpeg');
+    background-image: url('../media-image/podcasts/lex.jpeg');
 }
 
 .pivot-solid{
     background-color: #958988;
 }
 .pivot-cover{
-    background-image: url('../podcasts/pivot.jpeg');
+    background-image: url('../media-image/podcasts/pivot.jpeg');
 }
 
 .samharris-solid{
     background-color: #3e3d3c;
 }
 .samharris-cover{
-    background-image: url('../podcasts/samharris.jpeg');
+    background-image: url('../media-image/podcasts/samharris.jpeg');
 }
 
 .sway-solid{
     background-color: #945877;
 }
 .sway-cover{
-    background-image: url('../podcasts/sway.jpeg');
+    background-image: url('../media-image/podcasts/sway.jpeg');
 }
 
 .yang-solid{
     background-color: #143b65;
 }
 .yang-cover{
-    background-image: url('../podcasts/yang.jpeg');
+    background-image: url('../media-image/podcasts/yang.jpeg');
 }
 
 .founders-cover{
-    background-image: url('../podcasts/founders-journal.jpeg');
+    background-image: url('../media-image/podcasts/founders-journal.jpeg');
 }
 .canto-cover{
-    background-image: url('../podcasts/canto.jpeg');
+    background-image: url('../media-image/podcasts/canto.jpeg');
 }
 .waveform-cover{
-    background-image: url('../podcasts/waveform.jpeg');
+    background-image: url('../media-image/podcasts/waveform.jpeg');
 }
 
 /* news */
 
 .nomercy-bg{
-    background-image: url('../news/nomercy.jpg');
+    background-image: url('../media-image/news/nomercy.jpg');
 }
 .sidekick-bg{
     background-color: #3539A9;
 }
 .sidekick-fg{
-    background-image: url('../news/sidekick.png');
+    background-image: url('../media-image/news/sidekick.png');
 }
 .brew-fg{
-    background-image: url('../news/brew.png');
+    background-image: url('../media-image/news/brew.png');
 }
 .citylab-fg{
-    background-image: url('../news/citylab.svg');
+    background-image: url('../media-image/news/citylab.svg');
 }
 .techbrew-fg{
-    background-image: url('../news/techbrew.png');
+    background-image: url('../media-image/news/techbrew.png');
+}
+.scmp-bg{
+    background-image: url('../media-image/news/scmp.png');
+    background-size: 120%;
 }
 
 /* youtube */
 
 .wendover-bg{
-    background-image: url('../media-image/wendover.jpg');
+    background-image: url('../media-image/youtube/wendover.jpg');
     background-size: 200%;
 }
 .realeng-bg{
-    background-image: url('../media-image/realeng.png');
+    background-image: url('../media-image/youtube/realeng.png');
     background-size: 160%;
 }
 
