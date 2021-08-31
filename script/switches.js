@@ -1,7 +1,10 @@
 function switches() {
     courseSwitchApps()
     courseSwitchLoad()
+
+    mediaSwitchApps()
 }
+
 const courseData = [
     {
         name: 'EBEC 101',
@@ -65,27 +68,24 @@ const courseData = [
     },
 ]
 
+
+
 function courseSwitchApps() {
     const dataLength = courseData.length
     var htmlString = "";
 
     for (i = 0; i < dataLength; i++) {
-        var courseHTML = `<div id="course-${i}" class="course-switch clickable-2 ${courseData[i].color}-fg" onclick="courseSwitch(${i})">
-        <div class="course-switch-icon">
-            ${courseData[i].icon}
-        </div>
-        <div class="spacer"></div>
-        <p>${courseData[i].name}</p>
-        </div>`
+        const courseId = `course-${i}`
+        const courseColor = `${courseData[i].color}-fg`
+        const courseTrigger = `courseSwitch(${i})`
+
+        var courseHTML = switchHTML(courseId,courseColor,courseTrigger,courseData[i].name,courseData[i].icon)
 
         if (i < (dataLength - 1)) {
             courseHTML = appendSpacer(courseHTML,8)
         }
 
-
-
         htmlString = `${htmlString}${courseHTML}`
-
     }
 
     htmlString = hstackEmbed(htmlString)
@@ -116,7 +116,7 @@ function courseSwitchLoad() {
 }
 
 function courseSwitch(n) {
-    clearElement('smart-tray')
+    clearElement('course-switch-content-tray')
     // console.log(document.cookie)
     const courseSwitcheElements = [];
 
@@ -130,8 +130,93 @@ function courseSwitch(n) {
     courseSwitcheElements[n].classList.add(courseData[n].color)
     courseSwitcheElements[n].classList.add('current')
 
-    appType('link',courseData[n].apps,'smart-tray',courseData[n].name,null)
+    appType('link',courseData[n].apps,'course-switch-content-tray',courseData[n].name,null)
 
     document.cookie =`course=${n}`;
 }
 
+const mediaSwitchTray = 'media-switch-content-tray'
+
+const mediaSwitchData = [
+    {
+        name: 'Books',
+        color: 'orange',
+        icon: '<svg viewBox="0 -40 448 448" xmlns="http://www.w3.org/2000/svg"><path d="m408 319.929688v-319.929688l-12.207031 1.023438c-48.957031 4.046874-96.976563 15.75-142.304688 34.6875l-21.488281 8.921874v318.664063l15.648438-6.503906c46.90625-19.515625 96.570312-31.589844 147.199218-35.792969zm0 0" /><path d="m448 47.296875h-24v280c.015625 4.171875-3.183594 7.65625-7.34375 8l-20.488281 1.679687c-5.914063.488282-11.8125 1.09375-17.6875 1.816407-1.90625.230469-3.800781.535156-5.695313.800781-3.960937.527344-7.914062 1.0625-11.855468 1.6875-2.296876.367188-4.578126.796875-6.867188 1.199219-3.527344.617187-7.0625 1.230469-10.582031 1.925781-2.402344.480469-4.800781 1.019531-7.25 1.539062-3.351563.710938-6.703125 1.4375-10.03125 2.230469-2.496094.59375-4.984375 1.222657-7.464844 1.855469-3.238281.800781-6.460937 1.664062-9.679687 2.5625-2.503907.6875-5.007813 1.414062-7.503907 2.148438-3.199219.945312-6.351562 1.90625-9.511719 2.914062-2.472656.800781-4.949218 1.601562-7.414062 2.398438-3.164062 1.066406-6.3125 2.167968-9.449219 3.304687-2.398437.871094-4.800781 1.746094-7.253906 2.664063-1.097656.417968-2.1875.863281-3.28125 1.289062h183.359375zm0 0" /><path d="m52.207031 1.023438-12.207031-1.023438v319.953125l14.199219 1.207031c50.597656 4.230469 100.21875 16.378906 147.046875 36l14.753906 6.136719v-318.664063l-21.464844-8.914062c-45.332031-18.941406-93.359375-30.648438-142.328125-34.695312zm0 0" /><path d="m0 47.296875v320h183.488281c-.984375-.386719-1.96875-.800781-2.960937-1.167969-2.289063-.871094-4.597656-1.703125-6.902344-2.542968-3.25-1.179688-6.496094-2.328126-9.769531-3.425782-2.367188-.800781-4.742188-1.578125-7.121094-2.335937-3.246094-1.066407-6.503906-2.070313-9.765625-3.007813-2.402344-.703125-4.800781-1.410156-7.199219-2.082031-3.289062-.910156-6.585937-1.773437-9.890625-2.621094-2.398437-.617187-4.800781-1.234375-7.253906-1.808593-3.351562-.800782-6.722656-1.535157-10.089844-2.257813-2.398437-.519531-4.800781-1.046875-7.199218-1.527344-3.488282-.6875-6.992188-1.304687-10.496094-1.917969-2.296875-.402343-4.59375-.800781-6.894532-1.210937-3.867187-.613281-7.746093-1.132813-11.625-1.65625-1.960937-.261719-3.90625-.574219-5.863281-.796875-5.867187-.710938-11.734375-1.316406-17.601562-1.816406l-21.535157-1.824219c-4.152343-.355469-7.335937-3.835937-7.320312-8v-280zm0 0" /></svg>',
+        populate: function() {
+            bookPopulate(bookData,mediaSwitchTray)
+        },
+    },
+    {
+        name: 'Podcasts',
+        color: 'purple',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="23.878997802734375 25.78700065612793 464.2480163574219 486.2120361328125" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><path d="M298.719,508.446c-13.887,2.341-28.16,3.553-42.715,3.553c-13.354,0-26.467-1.024-39.267-2.988 c-8.61-37.073-25.14-134.74-17.032-164.174c7.262-26.331,48.88-29.957,57.96-29.957c9.08,0,50.698,3.626,57.961,29.957 C323.713,374.125,307.37,470.966,298.719,508.446z"></path><circle cx="256" cy="238.38" r="55.39"></circle><path d="M256.003,104.572c-84.553,0-153.339,68.786-153.339,153.339c0,53.655,27.711,100.968,69.58,128.376 c-0.846-14.838-0.773-28.4,0.69-39.111c-23.949-22.277-38.943-54.053-38.943-89.266c0-67.281,54.732-122.013,122.013-122.013 c67.271,0,122.013,54.732,122.013,122.013c0,33.761-13.803,64.366-36.039,86.476c1.787,10.553,2.017,24.325,1.243,39.549 c39.926-27.679,66.121-73.853,66.121-126.025C409.342,173.358,340.546,104.572,256.003,104.572z"></path><path d="M256.003,25.787c-128,0-232.124,104.124-232.124,232.124c0,102.985,67.427,190.527,160.455,220.808 c-1.975-10.836-4.033-22.977-5.893-35.589C106.123,412.734,55.195,341.148,55.195,257.911 c0-110.728,90.081-200.798,200.808-200.798c110.717,0,200.798,90.07,200.798,200.798c0,81.857-49.246,152.451-119.672,183.683 c-1.849,12.706-3.918,24.973-5.914,35.934c91.199-31.326,156.912-117.938,156.912-219.617 C488.127,129.911,383.993,25.787,256.003,25.787z"></path></g></svg>',
+        populate: function() {
+            podPopulate(podData,mediaSwitchTray)
+        },
+    },
+    {
+        name: 'Up next',
+        color: 'red',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M494.601 67.065H17.399C7.79 67.065 0 74.855 0 84.464v259.371c0 9.609 7.79 17.399 17.399 17.399h477.202c9.609 0 17.399-7.79 17.399-17.399V84.464c0-9.609-7.79-17.399-17.399-17.399zM355.423 414.75h-59.069v-23.331h-80.708v23.331h-59.07c-8.335 0-15.093 6.757-15.093 15.093 0 8.335 6.757 15.093 15.093 15.093h198.847c8.335 0 15.093-6.757 15.093-15.093 0-8.335-6.757-15.093-15.093-15.093z"/></svg>',
+        populate: function() {
+            movieHTML(0,mediaSwitchTray)
+        },
+    },
+    {
+        name: 'My list',
+        color: 'blue',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M257 0C116.39 0 0 114.39 0 255s116.39 257 257 257 255-116.39 255-257S397.61 0 257 0zm135 285H287v107c0 16.54-13.47 30-30 30-16.54 0-30-13.46-30-30V285H120c-16.54 0-30-13.46-30-30s13.46-30 30-30h107V120c0-16.54 13.46-30 30-30 16.53 0 30 13.46 30 30v105h105c16.53 0 30 13.46 30 30s-13.47 30-30 30z"/></svg>',
+        populate: function() {
+            movieHTML(1,mediaSwitchTray)
+        },
+    },
+    {
+        name: 'Apps',
+        color: 'green',
+        icon: '<svg x="0px" y="0px" viewBox="0 0 469.333 469.333"><g><path d="M170.667,0h-128C19.135,0,0,19.135,0,42.667v128c0,23.531,19.135,42.667,42.667,42.667h128 c23.531,0,42.667-19.135,42.667-42.667v-128C213.333,19.135,194.198,0,170.667,0z"/><path d="M426.667,0h-128C275.135,0,256,19.135,256,42.667v128c0,23.531,19.135,42.667,42.667,42.667h128 c23.531,0,42.667-19.135,42.667-42.667v-128C469.333,19.135,450.198,0,426.667,0z"/><path d="M170.667,256h-128C19.135,256,0,275.135,0,298.667v128c0,23.531,19.135,42.667,42.667,42.667h128 c23.531,0,42.667-19.135,42.667-42.667v-128C213.333,275.135,194.198,256,170.667,256z"/><path d="M416,341.333h-32v-32c0-5.896-4.771-10.667-10.667-10.667H352c-5.896,0-10.667,4.771-10.667,10.667v32h-32 c-5.896,0-10.667,4.771-10.667,10.667v21.333c0,5.896,4.771,10.667,10.667,10.667h32v32c0,5.896,4.771,10.667,10.667,10.667 h21.333c5.896,0,10.667-4.771,10.667-10.667v-32h32c5.896,0,10.667-4.771,10.667-10.667V352 C426.667,346.104,421.896,341.333,416,341.333z"/></g></svg>',
+        populate: function() {
+            appType('link',videoApps,mediaSwitchTray,'TV & Video',null)
+        },
+    },
+]
+
+function mediaSwitchApps() {
+    const dataLength = mediaSwitchData.length
+    var htmlString = "";
+
+    for (i = 0; i < dataLength; i++) {
+        const mediaId = `media-switch-${i}`
+        const mediaColor = `${mediaSwitchData[i].color}-fg`
+        const mediaTrigger = `mediaSwitch(${i})`
+
+        var mediaHTML = switchHTML(mediaId,mediaColor,mediaTrigger,mediaSwitchData[i].name,mediaSwitchData[i].icon)
+
+        if (i < (dataLength - 1)) {
+            mediaHTML = appendSpacer(mediaHTML,8)
+        }
+
+        htmlString = `${htmlString}${mediaHTML}`
+    }
+
+    htmlString = hstackEmbed(htmlString)
+    htmlString = scrollEmbed(htmlString)
+
+    var container = document.getElementById('media-switch-tray')
+    container.innerHTML = htmlString
+}
+
+function mediaSwitch(n) {
+    clearElement('media-switch-content-tray')
+    const mediaSwitcheElements = [];
+
+    for (i = 0; i < mediaSwitchData.length; i++) {
+        mediaSwitcheElements[i] = document.getElementById(`media-switch-${i}`)
+        mediaSwitcheElements[i].classList.remove(mediaSwitchData[i].color)
+        mediaSwitcheElements[i].classList.remove('current')
+    }
+
+    mediaSwitcheElements[n].classList.add(mediaSwitchData[n].color)
+    mediaSwitcheElements[n].classList.add('current')
+
+    mediaSwitchData[n].populate()
+}
