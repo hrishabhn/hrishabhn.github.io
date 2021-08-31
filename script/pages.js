@@ -61,14 +61,14 @@ function pageReset(n) {
 
 function hideWidgets() {
   document.getElementById("header").onclick = function(){ showWidgets() }
-  document.getElementById("col-1").classList.add("hidden-always")
-  document.getElementById("col-2").classList.add("big")
+  document.getElementById('widgetbar').classList.add("hidden-always")
+  document.getElementById('main-container').classList.add('right')
 }
 
 function showWidgets() {
   document.getElementById("header").onclick = function(){ hideWidgets() }
-  document.getElementById("col-1").classList.remove("hidden-always")
-  document.getElementById("col-2").classList.remove("big")
+  document.getElementById('widgetbar').classList.remove("hidden-always")
+  document.getElementById('main-container').classList.remove('right')
 }
 
 
