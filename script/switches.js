@@ -1,8 +1,20 @@
 function switches() {
     courseSwitchApps()
-    courseSwitchLoad()
-
     mediaSwitchApps()
+    switchLoad()
+}
+
+function switchLoad() {
+    const course = getCookie('course')
+    // console.log(typeof n)
+    if (course) {
+        courseSwitch(parseInt(course))
+    }
+    const media = getCookie('mediaSwitch')
+    console.log(media)
+    if (media) {
+        mediaSwitch(parseInt(media))
+    }
 }
 
 const courseData = [
@@ -70,6 +82,8 @@ const courseData = [
 
 
 
+
+
 function courseSwitchApps() {
     const dataLength = courseData.length
     var htmlString = "";
@@ -82,7 +96,7 @@ function courseSwitchApps() {
         var courseHTML = switchHTML(courseId,courseColor,courseTrigger,courseData[i].name,courseData[i].icon)
 
         if (i < (dataLength - 1)) {
-            courseHTML = appendSpacer(courseHTML,8)
+            courseHTML = appendSpacer(courseHTML,10)
         }
 
         htmlString = `${htmlString}${courseHTML}`
@@ -106,14 +120,7 @@ function courseApps(locale) {
             break
     }
 }
-function courseSwitchLoad() {
-    const n = getCookie('course')
-    // console.log(typeof n)
-    if (n) {
-        console.log(n)
-        courseSwitch(parseInt(n))
-    }
-}
+
 
 function courseSwitch(n) {
     clearElement('course-switch-content-tray')
@@ -192,7 +199,7 @@ function mediaSwitchApps() {
         var mediaHTML = switchHTML(mediaId,mediaColor,mediaTrigger,mediaSwitchData[i].name,mediaSwitchData[i].icon)
 
         if (i < (dataLength - 1)) {
-            mediaHTML = appendSpacer(mediaHTML,8)
+            mediaHTML = appendSpacer(mediaHTML,10)
         }
 
         htmlString = `${htmlString}${mediaHTML}`
@@ -219,4 +226,6 @@ function mediaSwitch(n) {
     mediaSwitcheElements[n].classList.add('current')
 
     mediaSwitchData[n].populate()
+    setCookie('mediaSwitch',n,2)
+    // document.cookie =`mediaSwitch=${n}`;
 }
