@@ -119,7 +119,6 @@
             </div>
         </div>
 
-
         <div class="navbar">
             <div class="navbar-menu">
                 <a id="menu-1" class="menu-item selected" target="_self"  onclick="mainPage(1);mainRefresh()">
@@ -179,12 +178,179 @@
                 </a>
             </div>
         </div>
-        <div class="main-container">
+        <div id="widgetbar">
+            <div class="hstack user-box">
+                <div class="spacer"></div>
+                <div id="user-icon">HN</div>
+            </div>
+            <a class="content-container clickable-system" href="ical://">
+                <div class="hstack">
+                    <div  class="content-icon primary-fg">
+                        <svg class="icon" viewBox="0 0 299.063 299.063" xmlns="http://www.w3.org/2000/svg"><path d="M258.343 26.972H40.72c-19.202 0-34.769 15.567-34.769 34.769v202.553c0 19.202 15.567 34.769 34.769 34.769h217.623c19.202 0 34.769-15.567 34.769-34.769V61.741c0-19.203-15.567-34.769-34.769-34.769z" fill="#ebf0f3"/><path d="M293.112 92.299V50.171c0-19.202-15.567-34.769-34.769-34.769H40.72c-19.202 0-34.769 15.567-34.769 34.769v42.128z" fill="#ce412d"/><path d="M293.112 100.159V61.741c0-19.202-15.567-34.769-34.769-34.769H40.72c-19.202 0-34.769 15.567-34.769 34.769v38.418z" fill="#e56353"/><path d="M62.902 45.645c-6.702 0-12.135 5.433-12.135 12.135S56.2 69.914 62.902 69.914s12.134-5.433 12.134-12.134c.001-6.702-5.432-12.135-12.134-12.135z" fill="#d15241"/><path d="M62.902 0a6.493 6.493 0 00-6.492 6.492v50.581a6.492 6.492 0 1012.984 0V6.492A6.492 6.492 0 0062.902 0z" fill="#4d5c7d"/><path d="M120.655 45.645c-6.702 0-12.135 5.433-12.135 12.135s5.433 12.134 12.135 12.134 12.134-5.433 12.134-12.134c.001-6.702-5.432-12.135-12.134-12.135z" fill="#d15241"/><path d="M120.655 0a6.493 6.493 0 00-6.492 6.492v50.581a6.492 6.492 0 1012.984 0V6.492A6.493 6.493 0 00120.655 0z" fill="#4d5c7d"/><path d="M178.408 45.645c-6.702 0-12.135 5.433-12.135 12.135s5.433 12.134 12.135 12.134 12.134-5.433 12.134-12.134c0-6.702-5.432-12.135-12.134-12.135z" fill="#d15241"/><path d="M178.408 0a6.493 6.493 0 00-6.492 6.492v50.581a6.492 6.492 0 1012.984 0V6.492A6.493 6.493 0 00178.408 0z" fill="#4d5c7d"/><path d="M236.161 45.645c-6.702 0-12.135 5.433-12.135 12.135s5.433 12.134 12.135 12.134 12.134-5.433 12.134-12.134c0-6.702-5.433-12.135-12.134-12.135z" fill="#d15241"/><path d="M236.16 0a6.493 6.493 0 00-6.492 6.492v50.581a6.492 6.492 0 1012.984 0V6.492A6.492 6.492 0 00236.16 0z" fill="#4d5c7d"/><g fill="#e56353"><path d="M111.907 148.197h26.245v26.245h-26.245zM160.911 148.197h26.245v26.245h-26.245zM209.916 148.197h26.245v26.245h-26.245zM62.902 189.34h26.245v26.245H62.902zM111.907 189.34h26.245v26.245h-26.245zM160.911 189.34h26.245v26.245h-26.245zM209.916 189.34h26.245v26.245h-26.245zM62.902 230.483h26.245v26.245H62.902zM111.907 230.483h26.245v26.245h-26.245zM160.911 230.483h26.245v26.245h-26.245z"/></g></svg>
+                    </div>
+                    <div class="content-title secondary-fg" id="date-now">
+                        ---
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+            </a>
+            <div class="spacer-10"></div>
+            <a class="content-container clickable-system" href="maps://">
+                <div class="hstack">
+                    <div  class="content-icon primary-fg">
+                        <svg class="icon blue-fg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.998 511.998"><path d="M505.743 6.249c-6.08-6.101-15.211-7.893-23.168-4.672l-469.333 192C4.474 197.182-.881 206.121.122 215.55c.981 9.429 8.064 17.067 17.387 18.773l220.139 40.021 40.043 220.139c1.685 9.323 9.323 16.405 18.752 17.408.747.064 1.493.107 2.219.107 8.576 0 16.448-5.184 19.755-13.269l192-469.333c3.241-7.937 1.406-17.067-4.674-23.147z"/></svg>
+                    </div>
+                    <div class="content-title secondary-fg" id="district">
+                        ---
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+            </a>
+            <div class="spacer-10"></div>
+            <a class="content-container clickable-system" href="weather://">
+                <div class="hstack">
+                    <div class="content-icon primary-fg">
+                        <svg class="icon" viewBox="1 0 471 472" xmlns="http://www.w3.org/2000/svg"><path d="M400.336 192c0 66.273-53.727 120-120 120-66.277 0-120-53.727-120-120s53.723-120 120-120c66.273 0 120 53.727 120 120zm0 0M280.336 48c-4.422 0-8-3.582-8-8V8a8 8 0 0116 0v32a8 8 0 01-8 8zm0 0M464.336 200h-32c-4.422 0-8-3.582-8-8s3.578-8 8-8h32a8 8 0 010 16zm0 0" fill="#fdd020"/><path d="M376.336 296c-5.852 0-11.691.586-17.426 1.742a71.862 71.862 0 00-100.648-51.094c-18.078-49.796-73.102-75.507-122.899-57.43-49.797 18.083-75.508 73.106-57.43 122.903C34.314 313.5-.144 349.601.509 393.242 1.164 436.88 36.69 471.93 80.336 472h296c48.598 0 88-39.398 88-88s-39.402-88-88-88zm0 0" fill="#a3d4f7"/><g fill="#fdd020"><path d="M168.336 80l-32-32M168.336 88a7.994 7.994 0 01-5.656-2.344l-32-32a8.001 8.001 0 01-2.184-7.781 8.002 8.002 0 0113.496-3.531l32 32a8.005 8.005 0 011.73 8.719A7.996 7.996 0 01168.337 88zm0 0M392.336 80l32-32M392.336 88a7.998 7.998 0 01-5.656-13.656l32-32a7.992 7.992 0 017.777-2.18c2.797.73 4.984 2.914 5.715 5.711s-.102 5.773-2.18 7.781l-32 32A8.001 8.001 0 01392.336 88zm0 0"/></g></svg>
+                    </div>
+                    <div class="content-title secondary-fg" id="weather">
+                        ---
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+            </a>
+            <div class="spacer-10"></div>
+            <div class="content-container">
+                <div class="bus-icon-container">
+                    <svg id="bus-icon" class="bus-icon bus-icon-hide" xmlns="http://www.w3.org/2000/svg" viewBox="72.34278106689453 89.03302764892578 350.6231994628906 350.6231994628906"><path d="M172.477 389.589c0-13.855-5.589-26.371-14.642-35.425-9.053-9.053-21.57-14.642-35.425-14.642-27.632-.079-50.146 22.436-50.066 50.066 0 13.855 5.59 26.37 14.643 35.423s21.569 14.642 35.423 14.642c27.631.082 50.146-22.433 50.067-50.064zM389.589 422.967c-18.421 0-33.377-14.957-33.378-33.378.079-64.472-26.213-122.883-68.566-165.235s-100.763-68.645-165.235-68.566c-18.42 0-33.377-14.957-33.378-33.378 0-18.42 14.957-33.377 33.377-33.377 82.894.079 158.072 33.692 212.467 88.088s88.009 129.575 88.088 212.467c.003 18.422-14.954 33.379-33.375 33.379z"></path><path d="M256 423.046c-18.42 0-33.456-15.035-33.456-33.456 0-27.553-11.178-52.586-29.363-70.77-18.105-18.105-43.139-29.284-70.77-29.363-18.421 0-33.456-15.036-33.456-33.456s15.035-33.456 33.456-33.456c46.052.079 87.773 18.814 118.002 49.043s48.964 71.951 49.043 118.002c0 18.421-15.036 33.456-33.456 33.456zM122.411 439.656c-13.855 0-26.37-5.59-35.423-14.642l70.849-70.849c9.053 9.053 14.642 21.57 14.642 35.425.077 27.63-22.438 50.145-50.068 50.066z"></path><path d="M256 423.046c-18.42 0-33.456-15.035-33.456-33.456 0-27.553-11.178-52.586-29.363-70.77l47.232-47.232c30.229 30.229 48.964 71.951 49.043 118.002 0 18.421-15.036 33.456-33.456 33.456zM389.589 422.967c-18.421 0-33.377-14.957-33.378-33.378.079-64.472-26.213-122.883-68.566-165.235l47.232-47.232c54.396 54.396 88.009 129.575 88.088 212.467.002 18.421-14.955 33.378-33.376 33.378z"></path></svg>
+                </div>
+                <div class="content-title info-title" id="bus-title" onclick="busShowAll()">
+                    Buses
+                </div>
+                <div id="bus-number-tray" class="scrolling-tray">
+                    <div class="bus-number")">----</div>
+                </div>
+                <div id="bus-card-1" class="bus-card hidden-always">
+                    <!-- <div class="bus-card-line"></div> -->
+                    <div class="bus-info-card">
+                        <div class="bus-info">
+                            <div class="bus-dest">
+                                <div id="bus-dir-1" class="bus-dir">-</div>
+                                <p id="bus-dest-1">Destination</p>
+                            </div>
+                            <div class="bus-stop">
+                                <p id="bus-stop-1">Bus Stop</p>
+                            </div>
+                        </div>
+                        <div class="bus-eta">
+                            <p id="bus-eta-1">--</p>
+                        </div>
+                    </div>
+                </div><div id="bus-card-2" class="bus-card hidden-always">
+                    <div class="bus-card-line"></div>
+                    <div class="bus-info-card">
+                        <div class="bus-info">
+                            <div class="bus-dest">
+                                <div id="bus-dir-2" class="bus-dir">-</div>
+                                <p id="bus-dest-2">--</p>
+                            </div>
+                            <div class="bus-stop">
+                                <p id="bus-stop-2">--</p>
+                            </div>
+                        </div>
+                        <div class="bus-eta">
+                            <p id="bus-eta-2">--</p>
+                        </div>
+                    </div>
+                </div><div id="bus-card-3" class="bus-card hidden-always">
+                    <div class="bus-card-line"></div>
+                    <div class="bus-info-card">
+                        <div class="bus-info">
+                            <div class="bus-dest">
+                                <div id="bus-dir-3" class="bus-dir">-</div>
+                                <p id="bus-dest-3">--</p>
+                            </div>
+                            <div class="bus-stop">
+                                <p id="bus-stop-3">--</p>
+                            </div>
+                        </div>
+                        <div class="bus-eta">
+                            <p id="bus-eta-3">--</p>
+                        </div>
+                    </div>
+                </div><div id="bus-card-4" class="bus-card hidden-always">
+                    <div class="bus-card-line"></div>
+                    <div class="bus-info-card">
+                        <div class="bus-info">
+                            <div class="bus-dest">
+                                <div id="bus-dir-4" class="bus-dir">-</div>
+                                <p id="bus-dest-4">--</p>
+                            </div>
+                            <div class="bus-stop">
+                                <p id="bus-stop-4">--</p>
+                            </div>
+                        </div>
+                        <div class="bus-eta">
+                            <p id="bus-eta-4">--</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="content-container">
+                <div class="info-card">
+                    <a id="flight-no" onclick="flightPull()">
+                        --
+                    </a>
+                    <div class="flight-route-container">
+                        <div class="dep-container">
+                            <div class="airport" id="dep-airport">
+                                ---
+                            </div>
+                            <div class="flight-time" id="dep-time">
+                                --:--
+                            </div>
+                            <div class="gate" id="dep-gate">
+                                Gate: -
+                            </div>
+                            <div class="gate" id="dep-terminal">
+                                Terminal: -
+                            </div>
+                        </div>
+                        
+                        <div class="spacer"></div>
+                        <div class="flight-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"/></svg>
+                        </div>
+                        <div class="spacer"></div>
+                        <div class="arr-container">
+                            <div class="airport" id="arr-airport">
+                                ---
+                            </div>
+                            <div class="flight-time" id="arr-time">
+                                --:--
+                            </div>
+                            <div class="gate" id="arr-gate">
+                                Gate: -
+                            </div>
+                            <div class="gate" id="arr-terminal">
+                                Terminal: -
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="spacer"></div> -->
+
+            
+        </div>
+        <div id="main-container">
             <div class="main-wrapper">
                 <a id="header" onclick="hideWidgets()">
                     <p id="header-text">Home</p>
-                    <div class="spacer"></div>
-                    <div id="user-icon">HN</div>
+                    <!-- <div class="spacer"></div> -->
                 </a>
 
                 <a class="content-container clickable-system only-desktop" href="https://www.google.com">
@@ -209,171 +375,7 @@
                     </div>
                 </a>
                 <div id="col-container">
-                    <div id="col-1">
-                        <div class="hstack">
-                            <a class="content-container clickable-system" href="ical://">
-                                <div class="hstack">
-                                    <div  class="content-icon primary-fg">
-                                        <svg class="icon" viewBox="0 0 299.063 299.063" xmlns="http://www.w3.org/2000/svg"><path d="M258.343 26.972H40.72c-19.202 0-34.769 15.567-34.769 34.769v202.553c0 19.202 15.567 34.769 34.769 34.769h217.623c19.202 0 34.769-15.567 34.769-34.769V61.741c0-19.203-15.567-34.769-34.769-34.769z" fill="#ebf0f3"/><path d="M293.112 92.299V50.171c0-19.202-15.567-34.769-34.769-34.769H40.72c-19.202 0-34.769 15.567-34.769 34.769v42.128z" fill="#ce412d"/><path d="M293.112 100.159V61.741c0-19.202-15.567-34.769-34.769-34.769H40.72c-19.202 0-34.769 15.567-34.769 34.769v38.418z" fill="#e56353"/><path d="M62.902 45.645c-6.702 0-12.135 5.433-12.135 12.135S56.2 69.914 62.902 69.914s12.134-5.433 12.134-12.134c.001-6.702-5.432-12.135-12.134-12.135z" fill="#d15241"/><path d="M62.902 0a6.493 6.493 0 00-6.492 6.492v50.581a6.492 6.492 0 1012.984 0V6.492A6.492 6.492 0 0062.902 0z" fill="#4d5c7d"/><path d="M120.655 45.645c-6.702 0-12.135 5.433-12.135 12.135s5.433 12.134 12.135 12.134 12.134-5.433 12.134-12.134c.001-6.702-5.432-12.135-12.134-12.135z" fill="#d15241"/><path d="M120.655 0a6.493 6.493 0 00-6.492 6.492v50.581a6.492 6.492 0 1012.984 0V6.492A6.493 6.493 0 00120.655 0z" fill="#4d5c7d"/><path d="M178.408 45.645c-6.702 0-12.135 5.433-12.135 12.135s5.433 12.134 12.135 12.134 12.134-5.433 12.134-12.134c0-6.702-5.432-12.135-12.134-12.135z" fill="#d15241"/><path d="M178.408 0a6.493 6.493 0 00-6.492 6.492v50.581a6.492 6.492 0 1012.984 0V6.492A6.493 6.493 0 00178.408 0z" fill="#4d5c7d"/><path d="M236.161 45.645c-6.702 0-12.135 5.433-12.135 12.135s5.433 12.134 12.135 12.134 12.134-5.433 12.134-12.134c0-6.702-5.433-12.135-12.134-12.135z" fill="#d15241"/><path d="M236.16 0a6.493 6.493 0 00-6.492 6.492v50.581a6.492 6.492 0 1012.984 0V6.492A6.492 6.492 0 00236.16 0z" fill="#4d5c7d"/><g fill="#e56353"><path d="M111.907 148.197h26.245v26.245h-26.245zM160.911 148.197h26.245v26.245h-26.245zM209.916 148.197h26.245v26.245h-26.245zM62.902 189.34h26.245v26.245H62.902zM111.907 189.34h26.245v26.245h-26.245zM160.911 189.34h26.245v26.245h-26.245zM209.916 189.34h26.245v26.245h-26.245zM62.902 230.483h26.245v26.245H62.902zM111.907 230.483h26.245v26.245h-26.245zM160.911 230.483h26.245v26.245h-26.245z"/></g></svg>
-                                    </div>
-                                    <div class="content-title secondary-fg" id="date-now">
-                                        ---
-                                    </div>
-                                    <div class="spacer"></div>
-                                </div>
-                            </a>
-                            <div class="spacer-15"></div>
-                            <a class="content-container clickable-system" href="maps://">
-                                <div class="hstack">
-                                    <div  class="content-icon primary-fg">
-                                        <svg class="icon blue-fg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.998 511.998"><path d="M505.743 6.249c-6.08-6.101-15.211-7.893-23.168-4.672l-469.333 192C4.474 197.182-.881 206.121.122 215.55c.981 9.429 8.064 17.067 17.387 18.773l220.139 40.021 40.043 220.139c1.685 9.323 9.323 16.405 18.752 17.408.747.064 1.493.107 2.219.107 8.576 0 16.448-5.184 19.755-13.269l192-469.333c3.241-7.937 1.406-17.067-4.674-23.147z"/></svg>
-                                    </div>
-                                    <div class="content-title secondary-fg" id="district">
-                                        ---
-                                    </div>
-                                    <div class="spacer"></div>
-                                </div>
-                            </a>
-                        </div>
-    
-
-                        <a class="content-container clickable-system" href="weather://">
-                            <div class="hstack">
-                                <div class="content-icon primary-fg">
-                                    <svg class="icon" viewBox="1 0 471 472" xmlns="http://www.w3.org/2000/svg"><path d="M400.336 192c0 66.273-53.727 120-120 120-66.277 0-120-53.727-120-120s53.723-120 120-120c66.273 0 120 53.727 120 120zm0 0M280.336 48c-4.422 0-8-3.582-8-8V8a8 8 0 0116 0v32a8 8 0 01-8 8zm0 0M464.336 200h-32c-4.422 0-8-3.582-8-8s3.578-8 8-8h32a8 8 0 010 16zm0 0" fill="#fdd020"/><path d="M376.336 296c-5.852 0-11.691.586-17.426 1.742a71.862 71.862 0 00-100.648-51.094c-18.078-49.796-73.102-75.507-122.899-57.43-49.797 18.083-75.508 73.106-57.43 122.903C34.314 313.5-.144 349.601.509 393.242 1.164 436.88 36.69 471.93 80.336 472h296c48.598 0 88-39.398 88-88s-39.402-88-88-88zm0 0" fill="#a3d4f7"/><g fill="#fdd020"><path d="M168.336 80l-32-32M168.336 88a7.994 7.994 0 01-5.656-2.344l-32-32a8.001 8.001 0 01-2.184-7.781 8.002 8.002 0 0113.496-3.531l32 32a8.005 8.005 0 011.73 8.719A7.996 7.996 0 01168.337 88zm0 0M392.336 80l32-32M392.336 88a7.998 7.998 0 01-5.656-13.656l32-32a7.992 7.992 0 017.777-2.18c2.797.73 4.984 2.914 5.715 5.711s-.102 5.773-2.18 7.781l-32 32A8.001 8.001 0 01392.336 88zm0 0"/></g></svg>
-                                </div>
-                                <div class="content-title secondary-fg" id="weather">
-                                    ---
-                                </div>
-                                <div class="spacer"></div>
-                            </div>
-                        </a>
-
-                        <div class="content-container">
-                            <div class="bus-icon-container">
-                                <svg id="bus-icon" class="bus-icon bus-icon-hide" xmlns="http://www.w3.org/2000/svg" viewBox="72.34278106689453 89.03302764892578 350.6231994628906 350.6231994628906"><path d="M172.477 389.589c0-13.855-5.589-26.371-14.642-35.425-9.053-9.053-21.57-14.642-35.425-14.642-27.632-.079-50.146 22.436-50.066 50.066 0 13.855 5.59 26.37 14.643 35.423s21.569 14.642 35.423 14.642c27.631.082 50.146-22.433 50.067-50.064zM389.589 422.967c-18.421 0-33.377-14.957-33.378-33.378.079-64.472-26.213-122.883-68.566-165.235s-100.763-68.645-165.235-68.566c-18.42 0-33.377-14.957-33.378-33.378 0-18.42 14.957-33.377 33.377-33.377 82.894.079 158.072 33.692 212.467 88.088s88.009 129.575 88.088 212.467c.003 18.422-14.954 33.379-33.375 33.379z"></path><path d="M256 423.046c-18.42 0-33.456-15.035-33.456-33.456 0-27.553-11.178-52.586-29.363-70.77-18.105-18.105-43.139-29.284-70.77-29.363-18.421 0-33.456-15.036-33.456-33.456s15.035-33.456 33.456-33.456c46.052.079 87.773 18.814 118.002 49.043s48.964 71.951 49.043 118.002c0 18.421-15.036 33.456-33.456 33.456zM122.411 439.656c-13.855 0-26.37-5.59-35.423-14.642l70.849-70.849c9.053 9.053 14.642 21.57 14.642 35.425.077 27.63-22.438 50.145-50.068 50.066z"></path><path d="M256 423.046c-18.42 0-33.456-15.035-33.456-33.456 0-27.553-11.178-52.586-29.363-70.77l47.232-47.232c30.229 30.229 48.964 71.951 49.043 118.002 0 18.421-15.036 33.456-33.456 33.456zM389.589 422.967c-18.421 0-33.377-14.957-33.378-33.378.079-64.472-26.213-122.883-68.566-165.235l47.232-47.232c54.396 54.396 88.009 129.575 88.088 212.467.002 18.421-14.955 33.378-33.376 33.378z"></path></svg>
-                            </div>
-                            <div class="content-title info-title" id="bus-title" onclick="busShowAll()">
-                                Buses
-                            </div>
-                            <div id="bus-number-tray" class="scrolling-tray">
-                                <div class="bus-number")">----</div>
-                            </div>
-                            <div id="bus-card-1" class="bus-card hidden-always">
-                                <!-- <div class="bus-card-line"></div> -->
-                                <div class="bus-info-card">
-                                    <div class="bus-info">
-                                        <div class="bus-dest">
-                                            <div id="bus-dir-1" class="bus-dir">-</div>
-                                            <p id="bus-dest-1">Destination</p>
-                                        </div>
-                                        <div class="bus-stop">
-                                            <p id="bus-stop-1">Bus Stop</p>
-                                        </div>
-                                    </div>
-                                    <div class="bus-eta">
-                                        <p id="bus-eta-1">--</p>
-                                    </div>
-                                </div>
-                            </div><div id="bus-card-2" class="bus-card hidden-always">
-                                <div class="bus-card-line"></div>
-                                <div class="bus-info-card">
-                                    <div class="bus-info">
-                                        <div class="bus-dest">
-                                            <div id="bus-dir-2" class="bus-dir">-</div>
-                                            <p id="bus-dest-2">--</p>
-                                        </div>
-                                        <div class="bus-stop">
-                                            <p id="bus-stop-2">--</p>
-                                        </div>
-                                    </div>
-                                    <div class="bus-eta">
-                                        <p id="bus-eta-2">--</p>
-                                    </div>
-                                </div>
-                            </div><div id="bus-card-3" class="bus-card hidden-always">
-                                <div class="bus-card-line"></div>
-                                <div class="bus-info-card">
-                                    <div class="bus-info">
-                                        <div class="bus-dest">
-                                            <div id="bus-dir-3" class="bus-dir">-</div>
-                                            <p id="bus-dest-3">--</p>
-                                        </div>
-                                        <div class="bus-stop">
-                                            <p id="bus-stop-3">--</p>
-                                        </div>
-                                    </div>
-                                    <div class="bus-eta">
-                                        <p id="bus-eta-3">--</p>
-                                    </div>
-                                </div>
-                            </div><div id="bus-card-4" class="bus-card hidden-always">
-                                <div class="bus-card-line"></div>
-                                <div class="bus-info-card">
-                                    <div class="bus-info">
-                                        <div class="bus-dest">
-                                            <div id="bus-dir-4" class="bus-dir">-</div>
-                                            <p id="bus-dest-4">--</p>
-                                        </div>
-                                        <div class="bus-stop">
-                                            <p id="bus-stop-4">--</p>
-                                        </div>
-                                    </div>
-                                    <div class="bus-eta">
-                                        <p id="bus-eta-4">--</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-    
-    
-                        <div class="content-container">
-                            <div class="info-card">
-                                <a id="flight-no" onclick="flightPull()">
-                                    --
-                                </a>
-                                <div class="flight-route-container">
-                                    <div class="dep-container">
-                                        <div class="airport" id="dep-airport">
-                                            ---
-                                        </div>
-                                        <div class="flight-time" id="dep-time">
-                                            --:--
-                                        </div>
-                                        <div class="gate" id="dep-gate">
-                                            Gate: -
-                                        </div>
-                                        <div class="gate" id="dep-terminal">
-                                            Terminal: -
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="spacer"></div>
-                                    <div class="flight-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"/></svg>
-                                    </div>
-                                    <div class="spacer"></div>
-                                    <div class="arr-container">
-                                        <div class="airport" id="arr-airport">
-                                            ---
-                                        </div>
-                                        <div class="flight-time" id="arr-time">
-                                            --:--
-                                        </div>
-                                        <div class="gate" id="arr-gate">
-                                            Gate: -
-                                        </div>
-                                        <div class="gate" id="arr-terminal">
-                                            Terminal: -
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        
-                    </div><div id="col-2">
+                    <div id="col-2">
                         <div id="main-1" class="main">
                             <div id="productivity-tray"></div>
                             <div id="note-tray"></div>
