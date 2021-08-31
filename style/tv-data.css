@@ -867,3 +867,17 @@
 .edu-title{
     background-image: url('../TV/title/edu.png');
 }
+
+.yourname-solid{
+    background-color: #768a8e;
+}
+.yourname-gradient{
+    background: linear-gradient(#00000000,#768a8e);
+}
+.yourname-poster{
+    background-image: url('../TV/background/yourname.webp');
+}
+.yourname-title{
+    background-image: url('../TV/title/yourname.png');
+}
+
