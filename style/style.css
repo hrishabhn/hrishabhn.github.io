@@ -724,13 +724,13 @@ body{
     background-color: var(--dark-layer-1);
 } */
 
-.course-switch.current{
+.switch-container.current{
     color: white;
     fill: white;
 }
 
 
-.course-switch{
+.switch-container{
     display: inline-flex;
     position: relative;
     align-items: flex-start;
@@ -757,7 +757,7 @@ body{
     fill: var(--white-100);
     background-color: var(--dark-layer-1);
 }
-.course-switch-icon{
+.switch-icon{
     display: block;
     position: relative;
 
