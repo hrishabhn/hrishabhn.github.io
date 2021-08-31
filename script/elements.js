@@ -23,7 +23,7 @@ function clearElement(id) {
 }
 
 function switchHTML(id,color,trigger,name,icon) {
-    var html = `<div id="${id}" class="switch-container clickable-2 ${color}" onclick="${trigger}">
+    var html = `<div id="${id}" class="switch-container clickable-switch ${color}" onclick="${trigger}">
         <div class="switch-icon">
             ${icon}
         </div>
