@@ -142,6 +142,10 @@ body{
 .spacer{
     flex-grow: 1;
 }
+.spacer-scroll{
+    width: 100%;
+    height: 100%;
+}
 .spacer-5{
     min-height: 5px;
     min-width: 5px;
@@ -183,6 +187,10 @@ body{
     flex-direction: row;
     width: 100%;
     overflow: scroll;
+}
+.scroll.expanded{
+    width: calc(100% + 30px);
+    margin: 0px -15px;
 }
 
 .navbar{
@@ -484,8 +492,8 @@ body{
 
 .clickable-fg:active{
     transition: 0s;
-    color: var(--white-20);
-    fill: var(--white-20);
+    color: var(--white-40);
+    fill: var(--white-40);
 }
 
 
@@ -549,26 +557,8 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.link-tray{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    width: clac(100%);
-    overflow-x: scroll;
-    /* box-sizing: border-box; */
 
-    margin-top: 8px;
-    margin-left: -15px;
-    margin-right: -15px;
-    padding: 0px 15px 0px;
-    /* height: 20px; */
-}
-
-.link-tray > *{
-    margin-right: 8px; 
-}
-
-.link-container{
+.link-button{
     display: inline-flex;
     position: relative;
     align-items: center;
@@ -596,7 +586,7 @@ body{
     /* color: var(--blue-light) */
     /* cursor: default; */
 }
-.link-container.white{
+.link-button.white{
     color: var(--black-100);
     fill: var(--black-100);
 }
