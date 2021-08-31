@@ -50,6 +50,12 @@
 .split-cover{
     background-image: url('../books/split.jpg');
 }
+.jordan-cover{
+    background-image: url('../books/jordan.jpg');
+}
+.expats-cover{
+    background-image: url('../books/expats.jpg');
+}
 
 
 /* podcasts */
