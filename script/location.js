@@ -40,6 +40,9 @@ function getUserLocale() {
         const stew = (lat > 40.4246) && (lat < 40.4255) && (lon > -86.9136) && (lon < -86.9118);
         const frny = (lat > 40.4291) && (lat < 40.4299) && (lon > -86.9145) && (lon < -86.9134);
         const walc = (lat > 40.4268) && (lat < 40.4278) && (lon > -86.9136) && (lon < -86.9127);
+        const rawls = (lat > 40.4234) && (lat < 40.4240) && (lon > -86.9104) && (lon < -86.9092);
+
+
 
         const walmart = (lat > 40.4565) && (lat < 40.4592) && (lon > -86.9352) && (lon < -86.9312);
         const zbt = (lat > 40.4337) && (lat < 40.4344) && (lon > -86.9255) && (lon < -86.9248);
@@ -102,6 +105,9 @@ function getUserLocale() {
         }
         if (walc) {
             userLocale = "WALC"
+        }
+        if (rawls) {
+            userLocale = "Rawls Hall"
         }
 
         if (walmart) {
