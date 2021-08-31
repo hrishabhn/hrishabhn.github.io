@@ -602,15 +602,3 @@ function popupBusHide(){
   popupAllHide()
   busModal.className = "modal bus-popup-closed";
 }
-
-function popupAllShow(){
-  bgBlur.className = "background-blur background-blur-show";
-    // busBlur.className = "bus-blur bus-blur-show";
-//   mainContainer.classList.add("sheetback")
-}
-
-function popupAllHide(){
-  bgBlur.className = "background-blur background-blur-hide";
-//   busBlur.className = "bus-blur bus-blur-hide";
-//   mainContainer.classList.remove("sheetback")
-}
