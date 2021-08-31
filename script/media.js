@@ -1,6 +1,6 @@
 function mediaPopulate(){
-    bookPopulate(bookData)
-    podPopulate(podData)
+    bookPopulate(bookData,'book-tray')
+    podPopulate(podData,'pod-tray')
     newsPopulate(newsData)
     youtubePopulate(youtubeData)
     movieHTML(1,movieData1,'up-next-tray')
@@ -619,7 +619,7 @@ const bookData = [
     },
 ]
 
-function bookPopulate(bookData){
+function bookPopulate(bookData,tray){
     
 
     var dataLength = bookData.length
@@ -633,7 +633,7 @@ function bookPopulate(bookData){
         htmlString = `${htmlString}${bookCardHTML}`
     }
 
-    var tray = document.getElementById("book-tray")
+    var tray = document.getElementById(tray)
     tray.classList.add("media-tray")
     tray.innerHTML = htmlString
 }
@@ -707,7 +707,7 @@ const podData = [
     },   
 ]
 
-function podPopulate(podData){
+function podPopulate(podData,tray){
     
 
     var dataLength = podData.length
@@ -720,7 +720,7 @@ function podPopulate(podData){
 
         htmlString = `${htmlString}${bookCardHTML}`
     }
-    var tray = document.getElementById("pod-tray")
+    var tray = document.getElementById(tray)
     tray.classList.add("media-tray")
     tray.innerHTML = htmlString
 }
@@ -733,10 +733,10 @@ const newsData = [
         link: "https://www.morningbrew.com/daily/issues/latest",
     },
     {
-        name: "Sidekick",
-        bg: "sidekick-bg",
-        fg: "sidekick-fg",
-        link: "https://www.morningbrew.com/sidekick/issues/latest",
+        name: "SCMP",
+        bg: "scmp-bg",
+        fg: null,
+        link: "https://www.scmp.com",
     },
     {
         name: "No Mercy/No Malice",
@@ -755,6 +755,12 @@ const newsData = [
         bg: "white",
         fg: 'techbrew-fg',
         link: "https://www.morningbrew.com/emerging-tech/issues/latest",
+    },
+    {
+        name: "Sidekick",
+        bg: "sidekick-bg",
+        fg: "sidekick-fg",
+        link: "https://www.morningbrew.com/sidekick/issues/latest",
     },
 ]
 
