@@ -576,6 +576,18 @@ const bookData = [
         author: "Chris Voss",
     },
     {
+        name: "12 Rules for Life",
+        id: "jordan",
+        link: "ibooks://",
+        author: "Jordan B. Peterson",
+    },
+    {
+        name: "The Expatriates",
+        id: "expats",
+        link: "ibooks://",
+        author: "Janice Y. K. Lee",
+    },
+    {
         name: "Gweilo: Memories of a Hong Kong Childhood",
         id: "gweilo",
         link: "ibooks://",
