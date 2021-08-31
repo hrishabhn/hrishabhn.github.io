@@ -891,3 +891,16 @@
     background-image: url('../TV/title/yourname.png');
 }
 
+.cowboy-solid{
+    background-color: #599DAA;
+}
+.cowboy-gradient{
+    background: linear-gradient(#00000000,#599DAA);
+}
+.cowboy-poster{
+    background-image: url('../TV/background/cowboy.webp');
+}
+.cowboy-title{
+    background-image: url('../TV/title/cowboy.png');
+}
+
