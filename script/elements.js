@@ -21,3 +21,15 @@ function appendSpacer(html,n) {
 function clearElement(id) {
     document.getElementById(id).innerHTML = null
 }
+
+function switchHTML(id,color,trigger,name,icon) {
+    var html = `<div id="${id}" class="switch-container clickable-2 ${color}" onclick="${trigger}">
+        <div class="switch-icon">
+            ${icon}
+        </div>
+        <div class="spacer"></div>
+        <p>${name}</p>
+        </div>`
+
+    return html
+}
