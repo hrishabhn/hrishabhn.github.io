@@ -22,6 +22,7 @@ function newPopulate(){
     weatherWidget()
 
     apps()
+    switches()
     mediaPopulate()
 
     // mainPage(5)
