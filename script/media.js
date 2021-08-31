@@ -190,6 +190,18 @@ const movieData1 = [
         imdbID: "tt2467372",
     },
     {
+        name: "Cowboy Bebop",
+        id: "cowboy",
+        link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
+        service: "Hulu",
+        description: "Animation &#149 Action &#149 Adventure &#149 1 Season &#149 1998 - 1999",
+        // summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
+        titleStyle: "mid",
+        tvTimeID: "76885",
+        reelgoodLink: "https://reelgood.com/show/cowboy-bebop-1998",
+        imdbID: "tt0213338",
+    },
+    {
         name: "Atlanta",
         id: "atlanta",
         link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
