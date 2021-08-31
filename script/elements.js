@@ -1,5 +1,6 @@
 function contentTitleHTML(title) {
-    var titleHTML = `<div class="content-container"><div class="content-title">${title}</div></div><div class="spacer-15"></div>`
+    // var titleHTML = `<div class="content-container"><div class="content-title">${title}</div></div><div class="spacer-15"></div>`
+    var titleHTML = `<div class="content-title">${title}</div>`
     return titleHTML
 }
 
@@ -10,6 +11,20 @@ function hstackEmbed(html) {
 
 function scrollEmbed(html) {
     html = `<div class="scroll">${html}</div>`
+    return html
+}
+function scrollContentEmbed(html) {
+    html = `<div class="scroll expanded">${html}</div>`
+    return html
+}
+
+function contentContainerEmbed(html) {
+    html = `<div class="content-container">${html}</div>`
+    return html
+}
+
+function linkTrayEmbed(html) {
+    html = `<div class="link-tray">${html}</div>`
     return html
 }
 
