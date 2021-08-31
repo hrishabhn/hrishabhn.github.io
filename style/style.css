@@ -445,14 +445,31 @@ body{
 
     filter: brightness(0.75);
 }
-.clickable-2{
+.clickable-system{
+    transition-property: scale, filter;
+    transition-duration: 0.35s, 0.4s;
+    transition-delay: 0s, 0.15s;
+    transition-timing-function: all cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+    outline: none;
+}
+.clickable-system:active{
+    transition-property: scale, filter;
+    transition-duration: 0.35s, 0.05s;
+    transition-delay: 0.5s, 0s;
+    /* opacity: 0.75; */
+    scale: 0.9;
+
+    filter: brightness(0.5);
+}
+
+.clickable-switch{
     transition-property: all;
     transition-duration: 0.1s;
     /* transition-delay: 0.15s; */
     transition-timing-function: all cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
     outline: none;
 }
-.clickable-2:active{
+.clickable-switch:active{
     /* transition-property: all; */
     transition-duration: 0.05s;
     /* transition-delay: 0s; */
@@ -1007,6 +1024,9 @@ body{
 
     .switch-container{
         background-color: var(--light-layer-0);
+    }
+    .clickable-system:active{
+        filter: brightness(0.85);
     }
 }
 
