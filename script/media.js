@@ -147,6 +147,19 @@ function tvPopup(movie){
     // document.getElementById("tv-popup-imdb-rating").innerHTML = imdbRate;
 }
 
+
+function popupAllShow(){
+    bgBlur.className = "background-blur background-blur-show";
+      // busBlur.className = "bus-blur bus-blur-show";
+  //   mainContainer.classList.add("sheetback")
+  }
+  
+  function popupAllHide(){
+    bgBlur.className = "background-blur background-blur-hide";
+  //   busBlur.className = "bus-blur bus-blur-hide";
+  //   mainContainer.classList.remove("sheetback")
+  }
+
 const movieData1 = [
     {
         name: "It's Always Sunny in Philadelphia",
@@ -386,6 +399,18 @@ const movieData4 = [
         tvTimeID: null,
         reelgoodLink: "https://reelgood.com/movie/ghost-in-the-shell-1995",
         imdbID: "tt0113568",
+    },
+    {
+        name: "Your Name.",
+        id: "yourname",
+        link: null,
+        service: "Download",
+        description: "Animation &#149 Action &#149 Crime &#149 1995",
+        summary: "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
+        titleStyle: "mid",
+        tvTimeID: null,
+        reelgoodLink: "https://reelgood.com/movie/your-name-2016",
+        imdbID: "tt5311514",
     },
     {
         name: "Free Guy",
