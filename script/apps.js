@@ -1126,8 +1126,9 @@ const newsApps = [
     },
     {
         name: "Pocket",
-        background: "pocket hidden-mobile hidden-tablet",
+        background: "pocket",
         link: "https://getpocket.com/my-list/articles/unread",
+        devices: 'only-desktop',
         target: "blank",
         icon: '<svg viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M480,32H32C14.368,32,0,46.368,0,64v176c0,132.352,107.648,240,240,240h32c132.352,0,240-107.648,240-240V64 C512,46.368,497.664,32,480,32z M406.624,214.624l-128,128C272.384,348.864,264.192,352,256,352s-16.384-3.136-22.624-9.376 l-128-128c-12.512-12.512-12.512-32.736,0-45.248c12.512-12.512,32.736-12.512,45.248,0L256,274.752l105.376-105.376 c12.512-12.512,32.736-12.512,45.248,0C419.136,181.888,419.136,202.112,406.624,214.624z" /></g></g></svg>',
     },
@@ -1135,6 +1136,7 @@ const newsApps = [
         name: "Pocket",
         background: "pocket hidden-desktop",
         link: "pocket://",
+        devices: 'hidden-desktop',
         target: "blank",
         icon: '<svg viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M480,32H32C14.368,32,0,46.368,0,64v176c0,132.352,107.648,240,240,240h32c132.352,0,240-107.648,240-240V64 C512,46.368,497.664,32,480,32z M406.624,214.624l-128,128C272.384,348.864,264.192,352,256,352s-16.384-3.136-22.624-9.376 l-128-128c-12.512-12.512-12.512-32.736,0-45.248c12.512-12.512,32.736-12.512,45.248,0L256,274.752l105.376-105.376 c12.512-12.512,32.736-12.512,45.248,0C419.136,181.888,419.136,202.112,406.624,214.624z" /></g></g></svg>',
     },
@@ -1281,6 +1283,8 @@ function actionPopulate(data, tray, title, devices) {
 
     if (title) {
         var titleHTML = contentTitleHTML(title)
+        titleHTML = contentContainerEmbed(titleHTML)
+        titleHTML = appendSpacer(titleHTML,15)
     } else {
         var titleHTML = ``
     }
@@ -1295,6 +1299,7 @@ function linkPopulate(data, tray, title, devices) {
     var dataLength = data.length
 
     var htmlString = "";
+    htmlString = appendSpacer(htmlString,15)
 
     for (i = 0; i < dataLength; i++) {
         var trigger = ``
@@ -1306,14 +1311,31 @@ function linkPopulate(data, tray, title, devices) {
             trigger += `onclick="${data[i].function}"`
         }
 
-        var appHTML = `<a class="clickable-fg link-container ${data[i].background}" ${trigger}><div class="link-icon">${data[i].icon}</div><p>${data[i].name}</p></a>`
+        var appHTML = `<a class="clickable-fg link-button ${data[i].background}" ${trigger}><div class="link-icon">${data[i].icon}</div><p>${data[i].name}</p></a>`
+
+        if (i < dataLength - 1) {
+            appHTML = appendSpacer(appHTML,8)
+        }
+
+        if (data[i].devices) {
+            appHTML = `<div class="hstack ${data[i].devices}">${appHTML}</div>`
+        } else {
+            appHTML = `<div class="hstack">${appHTML}</div>`
+        }
 
         htmlString = `${htmlString}${appHTML}`
     }
 
-    htmlString = `<div class="content-title">${title}</div><div class="link-tray">${htmlString}</div>`
+    htmlString = appendSpacer(htmlString,15)
+    htmlString = appendSpacer(htmlString,'scroll')
+    htmlString = scrollContentEmbed(htmlString)
+
+    var titleString = contentTitleHTML(title)
+    titleString = appendSpacer(titleString,8)
+    htmlString = `${titleString}${htmlString}`
+
+    htmlString = contentContainerEmbed(htmlString)
     var container = document.getElementById(tray)
-    container.classList.add("content-container")
     container.classList.add(devices)
     container.innerHTML = htmlString
 }
