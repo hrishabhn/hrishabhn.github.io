@@ -13,10 +13,6 @@ function scrollEmbed(html,margin) {
     html = `<div class="scroll margin-${margin}">${html}</div>`
     return html
 }
-function scrollContentEmbed(html) {
-    html = `<div class="scroll expanded">${html}</div>`
-    return html
-}
 
 function contentContainerEmbed(html) {
     html = `<div class="content-container">${html}</div>`
