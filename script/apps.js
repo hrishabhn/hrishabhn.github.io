@@ -1311,7 +1311,7 @@ function linkPopulate(data, tray, title, devices) {
             trigger += `onclick="${data[i].function}"`
         }
 
-        var appHTML = `<a class="clickable-fg link-button ${data[i].background}" ${trigger}><div class="link-icon">${data[i].icon}</div><p>${data[i].name}</p></a>`
+        var appHTML = `<a class="clickable-fg link-button ${data[i].background}" ${trigger}><div class="link-icon">${data[i].icon}</div><div class="spacer"></div><p>${data[i].name}</p></a>`
 
         if (i < dataLength - 1) {
             appHTML = appendSpacer(appHTML,8)
