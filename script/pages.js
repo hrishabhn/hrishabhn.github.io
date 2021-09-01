@@ -17,7 +17,7 @@ function mainPage(n) {
   newMenu.classList.add("selected")
 
   pageLoads(n)
-  pageReset(mainOld)
+  // pageReset(mainOld)
 }
 
 function pageLoads(n) {
@@ -44,20 +44,20 @@ function pageLoads(n) {
     case 5:
       title.innerHTML = "Media"
       header.innerHTML = "Media"
-      hideWidgets()
+      // hideWidgets()
       break
   }
 }
 
-function pageReset(n) {
-  switch (n) {
-    case 5:
-      showWidgets()
-      // console.log("nice")
-      // tvLoadReset()
-      break
-  }
-}
+// function pageReset(n) {
+//   switch (n) {
+//     case 5:
+//       showWidgets()
+//       // console.log("nice")
+//       // tvLoadReset()
+//       break
+//   }
+// }
 
 function hideWidgets() {
   document.getElementById('sidebar-button-right').onclick = function(){ showWidgets() }
