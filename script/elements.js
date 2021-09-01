@@ -9,8 +9,8 @@ function hstackEmbed(html) {
     return html
 }
 
-function scrollEmbed(html) {
-    html = `<div class="scroll">${html}</div>`
+function scrollEmbed(html,margin) {
+    html = `<div class="scroll margin-${margin}">${html}</div>`
     return html
 }
 function scrollContentEmbed(html) {
