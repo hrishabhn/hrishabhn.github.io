@@ -398,7 +398,7 @@ body{
     /* padding-right: 335px; */
     padding-top: 25px;
     min-height: 85px;
-    z-index: 500;
+    /* z-index: 500; */
 }
 /* #header-text{
     width: 100%;
