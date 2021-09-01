@@ -142,6 +142,9 @@ body{
 .spacer{
     flex-grow: 1;
 }
+.spacer-n{
+    flex-grow: 1;
+}
 .spacer-scroll{
     width: 100%;
     height: 100%;
