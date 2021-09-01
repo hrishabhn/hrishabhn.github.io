@@ -329,6 +329,7 @@ body{
 
     margin-left: 200px;
     padding: 0px 35px;
+    /* padding-top: 120px; */
     width: calc(100% - 500px);
 
     transition: 0.3s;
@@ -377,13 +378,24 @@ body{
 
     align-items: center;
 
+    top: 0px;
+    left: 0px;
+
     font-size: 20px;
     font-weight: 600;
-    /* width: 100%; */
+    width: 100%;
 
+    /* padding-left: 235px; */
+    /* padding-right: 335px; */
     padding-top: 25px;
     min-height: 85px;
+    z-index: 500;
 }
+/* #header-text{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+} */
 .user-box{
     max-height: 100px;
 }
@@ -449,6 +461,7 @@ body{
     padding: 20px;
 
     background-color: var(--dark-layer-2);
+    /* background-color: #debc87; */
 
 
     transition: 0.3s;
