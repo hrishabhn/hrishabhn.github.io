@@ -1328,7 +1328,7 @@ function linkPopulate(data, tray, title, devices) {
 
     htmlString = appendSpacer(htmlString,15)
     htmlString = appendSpacer(htmlString,'scroll')
-    htmlString = scrollContentEmbed(htmlString)
+    htmlString = scrollEmbed(htmlString,15)
 
     var titleString = contentTitleHTML(title)
     titleString = appendSpacer(titleString,8)
