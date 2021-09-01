@@ -588,11 +588,11 @@ function movieHTML(n,tray) {
     }
     
     htmlString = appendSpacer(htmlString,35)
+    htmlString = appendSpacer(htmlString,'n')
     htmlString = hstackEmbed(htmlString)
     htmlString = scrollEmbed(htmlString,35)
 
     var trayElement = document.getElementById(tray)
-    // trayElement.classList.add("media-tray")
     trayElement.innerHTML = htmlString
 }
 
@@ -654,22 +654,27 @@ const bookData = [
 ]
 
 function bookPopulate(bookData,tray){
-    
-
     var dataLength = bookData.length
 
     var htmlString = "";
+    htmlString = appendSpacer(htmlString,35)
 
     for (i = 0; i < dataLength; i++) {
         // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${bookData[i].link}"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
         var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('book',${i})"><div class="media-poster book-poster ${bookData[i].id}-cover image-border"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading secondary-fg">${bookData[i].author}</p></div></div></a>`
 
         htmlString = `${htmlString}${bookCardHTML}`
+        if (i < dataLength - 1) {
+            htmlString = appendSpacer(htmlString,10)
+        }
     }
 
-    var tray = document.getElementById(tray)
-    tray.classList.add("media-tray")
-    tray.innerHTML = htmlString
+    htmlString = appendSpacer(htmlString,35)
+    htmlString = hstackEmbed(htmlString)
+    htmlString = scrollEmbed(htmlString,35)
+
+    var trayElement = document.getElementById(tray)
+    trayElement.innerHTML = htmlString
 }
 
 const podData = [
@@ -747,16 +752,24 @@ function podPopulate(podData,tray){
     var dataLength = podData.length
 
     var htmlString = "";
+    htmlString = appendSpacer(htmlString,35)
 
     for (i = 0; i < dataLength; i++) {
         // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${podData[i].link}"><div class="book-card-bg ${podData[i].id}-cover"><div class="book-card-fg"></div></div><div class="pod-poster ${podData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading">${podData[i].author}</p></div></div></a>`
         var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('pod',${i})"><div class="media-poster pod-poster ${podData[i].id}-cover image-border"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading secondary-fg">${podData[i].author}</p></div></div></a>`
 
         htmlString = `${htmlString}${bookCardHTML}`
+        if (i < dataLength - 1) {
+            htmlString = appendSpacer(htmlString,10)
+        }
     }
-    var tray = document.getElementById(tray)
-    tray.classList.add("media-tray")
-    tray.innerHTML = htmlString
+
+    htmlString = appendSpacer(htmlString,35)
+    htmlString = hstackEmbed(htmlString)
+    htmlString = scrollEmbed(htmlString,35)
+
+    var trayElement = document.getElementById(tray)
+    trayElement.innerHTML = htmlString
 }
 
 const newsData = [
@@ -802,6 +815,7 @@ function newsPopulate(newsData){
     var dataLength = newsData.length
 
     var htmlString = "";
+    htmlString = appendSpacer(htmlString,35)
 
     for (i = 0; i < dataLength; i++) {
 
@@ -816,10 +830,19 @@ function newsPopulate(newsData){
         `
 
         htmlString = `${htmlString}${newsCardHTML}`
+        if (i < dataLength - 1) {
+            htmlString = appendSpacer(htmlString,10)
+        }
     }
-    var tray = document.getElementById("news-tray")
-    tray.classList.add("media-tray")
-    tray.innerHTML = htmlString
+
+    htmlString = appendSpacer(htmlString,35)
+    htmlString = appendSpacer(htmlString,'n')
+    htmlString = hstackEmbed(htmlString)
+    htmlString = scrollEmbed(htmlString,35)
+
+    var tray = 'news-tray'
+    var trayElement = document.getElementById(tray)
+    trayElement.innerHTML = htmlString
 }
 
 const youtubeData = [
@@ -841,6 +864,7 @@ function youtubePopulate(youtubeData){
     var dataLength = youtubeData.length
 
     var htmlString = "";
+    htmlString = appendSpacer(htmlString,35)
 
     for (i = 0; i < dataLength; i++) {
 
@@ -855,10 +879,19 @@ function youtubePopulate(youtubeData){
         `
 
         htmlString = `${htmlString}${newsCardHTML}`
+        if (i < dataLength - 1) {
+            htmlString = appendSpacer(htmlString,10)
+        }
     }
-    var tray = document.getElementById("youtube-tray")
-    tray.classList.add("media-tray")
-    tray.innerHTML = htmlString
+
+    htmlString = appendSpacer(htmlString,35)
+    htmlString = appendSpacer(htmlString,'n')
+    htmlString = hstackEmbed(htmlString)
+    htmlString = scrollEmbed(htmlString,35)
+
+    var tray = 'youtube-tray'
+    var trayElement = document.getElementById(tray)
+    trayElement.innerHTML = htmlString
 }
 
 var sideModal = document.getElementById('side-popup-modal')
