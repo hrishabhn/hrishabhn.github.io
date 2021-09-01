@@ -38,13 +38,14 @@ function clearElement(id) {
 }
 
 function switchHTML(id,color,trigger,name,icon) {
-    var html = `<div id="${id}" class="switch-container clickable-switch ${color}" onclick="${trigger}">
-        <div class="switch-icon">
-            ${icon}
-        </div>
-        <div class="spacer"></div>
-        <p>${name}</p>
-        </div>`
+    var html = 
+    `<div id="${id}" class="switch-container clickable-switch ${color}" onclick="${trigger}">
+            <div class="switch-icon">
+                ${icon}
+            </div>
+            <div class="spacer"></div>
+            <p>${name}</p>
+    </div>`
 
     return html
 }
