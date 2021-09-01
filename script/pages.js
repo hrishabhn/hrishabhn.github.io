@@ -60,15 +60,20 @@ function pageReset(n) {
 }
 
 function hideWidgets() {
-  document.getElementById("header").onclick = function(){ showWidgets() }
-  document.getElementById('widgetbar').classList.add("hidden-always")
-  document.getElementById('main-container').classList.add('right')
+  document.getElementById('sidebar-button-right').onclick = function(){ showWidgets() }
+  // document.getElementById('widgetbar').classList.add('only-mobile')
+  document.getElementById('widgetbar').classList.add('hide')
+  document.getElementById('sidebar-button-right').classList.add('hide')
+  // document.getElementById('widgetbar').classList.add('show')
+  // document.getElementById('main-container').classList.add('right')
 }
 
 function showWidgets() {
-  document.getElementById("header").onclick = function(){ hideWidgets() }
-  document.getElementById('widgetbar').classList.remove("hidden-always")
-  document.getElementById('main-container').classList.remove('right')
+  document.getElementById('sidebar-button-right').onclick = function(){ hideWidgets() }
+  // document.getElementById('widgetbar').classList.remove('only-mobile')
+  document.getElementById('widgetbar').classList.remove('hide')
+  document.getElementById('sidebar-button-right').classList.remove('hide')
+  // document.getElementById('main-container').classList.remove('right')
 }
 
 
