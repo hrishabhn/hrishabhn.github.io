@@ -550,6 +550,7 @@ function movieHTML(n,tray) {
     var dataLength = data.length
 
     var htmlString = "";
+    htmlString = appendSpacer(htmlString,35)
 
     for (i = 0; i < dataLength; i++) {
         if ((data[i].link !== null) && (data[i].link !== undefined)) {
@@ -585,9 +586,10 @@ function movieHTML(n,tray) {
             htmlString = appendSpacer(htmlString,8)
         }
     }
-
+    
+    htmlString = appendSpacer(htmlString,35)
     htmlString = hstackEmbed(htmlString)
-    htmlString = scrollEmbed(htmlString)
+    htmlString = scrollEmbed(htmlString,35)
 
     var trayElement = document.getElementById(tray)
     // trayElement.classList.add("media-tray")
