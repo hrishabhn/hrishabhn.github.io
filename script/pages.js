@@ -22,28 +22,34 @@ function mainPage(n) {
 
 function pageLoads(n) {
   var title = document.getElementById("title-page")
-  var header = document.getElementById("header-text")
+  var headerText = document.getElementById("header-text")
+  var header = document.getElementById("header")
 
   switch (n) {
     case 1:
       title.innerHTML = "Home"
-      header.innerHTML = "Home"
+      headerText.innerHTML = "Home"
+      // header.classList = 'blue'
       break
     case 2:
       title.innerHTML = "Bookmarks"
-      header.innerHTML = "Bookmarks"
+      headerText.innerHTML = "Bookmarks"
+      // header.classList = 'cyan'
       break
     case 3:
       title.innerHTML = "Apps"
-      header.innerHTML = "Apps"
+      headerText.innerHTML = "Apps"
+      // header.classList = 'blue'
       break
     case 4:
       title.innerHTML = "School"
-      header.innerHTML = "School"
+      headerText.innerHTML = "School"
+      // header.classList = ''
       break
     case 5:
       title.innerHTML = "Media"
-      header.innerHTML = "Media"
+      headerText.innerHTML = "Media"
+      // header.classList = 'red'
       // hideWidgets()
       break
   }
