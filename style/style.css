@@ -163,6 +163,11 @@ body{
     min-height: 15px;
     min-width: 15px;
 }
+.spacer-35{
+    /* flex-grow: 1; */
+    min-height: 35px;
+    min-width: 35px;
+}
 .hstack{
     display: flex;
     position: relative;
@@ -188,9 +193,13 @@ body{
     width: 100%;
     overflow: scroll;
 }
-.scroll.expanded{
+.scroll.margin-15{
     width: calc(100% + 30px);
     margin: 0px -15px;
+}
+.scroll.margin-35{
+    width: calc(100% + 70px);
+    margin: 0px -35px;
 }
 
 .navbar{
@@ -645,8 +654,8 @@ body{
     border-radius: 10px;
     padding: 10px;
 
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     text-decoration: none;
     white-space: nowrap;
 
