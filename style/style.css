@@ -424,7 +424,7 @@ body{
     height: 60px;
     width: 60px;
     border-radius: 100%;
-    background-color: var(--white-20);
+    background-color: var(--dark-layer-1);
 
     border-width: 3px;
     border-style: solid;
