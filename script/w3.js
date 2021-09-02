@@ -2,7 +2,8 @@ function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   let expires = "expires="+d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  // document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  document.cookie = cname + "=" + cvalue + ";" + expires;
 }
 
 function getCookie(cname) {
@@ -29,4 +30,6 @@ function clearCookies() {
         var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
         document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
+
+    console.log('cookies cleared')
 }
