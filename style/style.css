@@ -235,9 +235,8 @@ body{
     font-size: 20px;
     font-weight: 600;
 
-    /* opacity: 0.5; */
+    opacity: 0.9;
 
-    margin-bottom: 20px;
     padding-left: 12px;
     
 }
@@ -250,6 +249,7 @@ body{
 
     opacity: 0.5;
 
+    margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 12px;
 }
@@ -302,6 +302,8 @@ body{
 }
 .menu-item-icon{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 10px;
     width: 10px;
     min-height: 10px;
@@ -311,10 +313,6 @@ body{
     margin-right: 12px;
 
     border-radius: 100%;
-}
-.menu-svg{
-    height: 100%;
-    width: 100%;
 }
 .menu-item-text{
     display: flex;
@@ -751,6 +749,32 @@ body{
 #widgetbar.state1{
     transform: translateX(100%);
 }
+.sidebar-button{
+    display: flex;
+    position: relative;
+    /* box-sizing: border-box; */
+
+    height: 14px;
+    width: 14px;
+    padding: 10px;
+    border-radius: 10px;
+
+    /* transition: 0.3s; */
+    /* transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); easeOutQuad */
+}
+.sidebar-button:hover{
+    background: var(--dark-layer-1);
+}
+.sidebar-button.open{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    z-index: 1;
+}
+
+
+
+
 #sidebar-button-right{
     box-sizing: border-box;
     height: 40px;
@@ -768,9 +792,9 @@ body{
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
     z-index: 100;
 }
-#sidebar-button-right.state1{
+/* #sidebar-button-right.state1{
     right: 20px;
-}
+} */
 
 
 #col-2{
@@ -1349,6 +1373,9 @@ body{
     } */
     #widgetbar{
         background-color: var(--light-layer-2);
+    }
+    .sidebar-button:hover{
+        background: var(--light-layer-0);
     }
     #user-select-modal{
         background-color: var(--light-layer-1);
