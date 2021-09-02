@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
@@ -88,6 +87,8 @@
     --yellow-dark: rgb(255, 214, 10);
     --yellow-light: rgb(255, 204, 0);
 
+    --apple: -apple-system, BlinkMacSystemFont, sans-serif;
+    --asap: 'Asap', sans-serif;
 
 
     --mobile-width: calc(100vw - 30px);
@@ -114,6 +115,8 @@
 }
 
 body{
+    font-family: var(--apple);
+
     display: block;
     /* flex-direction: row; */
     -webkit-tap-highlight-color: transparent;
@@ -127,6 +130,7 @@ body{
     /* background-color: #121212; */
     color: var(--light-layer-0);
     fill: var(--light-layer-0);
+    /* opacity: 0; */
 }
 #everything{
     /* display: flex; */
@@ -225,6 +229,7 @@ body{
     width: 200px;
     z-index: 100;
     background-color: var(--dark-layer-2);
+    cursor: default;
 
 }
 
@@ -244,7 +249,7 @@ body{
     display: flex;
     position: relative;
 
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 600;
 
     opacity: 0.5;
@@ -322,7 +327,7 @@ body{
     font-weight: 500;
     font-size: 13px;
     transition: all 0.1s;
-    font-family: 'Asap', sans-serif;
+    font-family: var(--asap);
     /* filter: brightness(0.75); */
 }
 
@@ -391,6 +396,9 @@ body{
 
     transition: 0.3s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+}
+#main-container.preload{
+    opacity: 0;
 }
 #main-container.state1{
     width: calc(100% - 200px);
@@ -477,12 +485,15 @@ body{
     padding-bottom: 100px;
 
     background-color: var(--black-100);
+    font-family: var(--asap);
+
     /* -webkit-backdrop-filter: blur(20px); */
 
     z-index: 500;
 
     transition: all 0.4s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+
 }
 #user-select-modal.closed{
     /* transform: translateY(100%); */
@@ -510,6 +521,7 @@ body{
     font-weight: 500;
 
     cursor: default;
+    font-family: var(--apple);
 }
 #user-select-close:hover{
     background-color: var(--dark-layer-1-20);
@@ -518,22 +530,24 @@ body{
     display: flex;
     position: relative;
     box-sizing: border-box;
-
-    width: 100%;
+    flex-direction: column;
+    align-self: flex-start;
+    /* width: 100%; */
     padding: 0px 10vw;
 
     font-size: 24px;
     font-weight: 600;
-
-    margin-bottom: 30px;
 }
-.user-select-title p{
-    padding-bottom: 8px;
+.user-select-line{
+    display: flex;
+    position: relative;
 
+    border-radius: 100px;
+    height: 4px;
+    width: 100%;
 
-    border-bottom-style: solid;
-    border-bottom-width: 4px;
-
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 #user-select-all{
@@ -599,7 +613,7 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
 
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 
 }
 
@@ -765,11 +779,15 @@ body{
 .sidebar-button:hover{
     background: var(--dark-layer-1);
 }
+.sidebar-button.close{
+    position: relative;
+    align-self: flex-end;
+}
 .sidebar-button.open{
     position: absolute;
     top: 30px;
     right: 35px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 
