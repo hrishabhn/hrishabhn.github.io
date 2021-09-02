@@ -4,6 +4,8 @@ function calendarDate() {
     const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
     const months = ["JAN","FEB","MAR","APR","MAY","JUN","July","August","September"]
 
+    minuteNow = fullDate.getMinutes();
+
     hourNow = fullDate.getHours();
 
     weekdayNow = fullDate.getDay()
