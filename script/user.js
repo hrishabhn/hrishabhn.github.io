@@ -9,7 +9,7 @@ function checkUser() {
 
 function userLoad() {
     // userSelectOpen()
-    clearCookies()
+    // clearCookies()
     checkUser()
     userSelectPopulate()
 }
