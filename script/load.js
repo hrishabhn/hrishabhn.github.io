@@ -18,8 +18,7 @@ function newPopulate(){
     calendarDate()
     getUserLocale()
 
-    calWidget()
-    weatherWidget()
+    todayWidget()
 
     apps()
     switches()
@@ -57,7 +56,7 @@ function mainRefresh() {
     calendarDate()
     getUserLocale()
     // smartCards()
-    // todayWidget()
+    todayWidget()
     // statusBar(0,1500)
     resetBusCards()
     // console.log("refreshed")
