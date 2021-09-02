@@ -1,15 +1,21 @@
 function checkUser() {
     let userID = getCookie('userID');
     if (userID != "") {
-        userCurrent(userID)
+        return userID
     } else {
         userSelectOpen()
+        return null
     }
 }
 
 function userLoad() {
-    // userSelectOpen()
     // clearCookies()
+
+    if (checkUser()) {
+        userCurrent(checkUser())
+    } else {
+        userSelectOpen()
+    }
     checkUser()
     userSelectPopulate()
 }
@@ -20,8 +26,13 @@ function userSelectOpen() {
 }
 
 function userSelectClose() {
-    var userSelectModal = document.getElementById('user-select-modal')
-    userSelectModal.classList = 'closed'
+    if (checkUser()) {
+        var userSelectModal = document.getElementById('user-select-modal')
+        userSelectModal.classList = 'closed'
+    } else {
+        alert('pick a user bro')
+    }
+
 }
 
 const userList = [
@@ -93,8 +104,13 @@ function setUser(i) {
 
 function userCurrent(i) {
     var userCurrentIcon = document.getElementById('user-current-icon')
+    var userName = document.getElementById('user-current-name')
     // console.log(userList[i])
     userCurrentIcon.classList = `user-image-${userList[i].id}`
     userCurrentIcon.classList.add('clickable')
+    userName.innerHTML = `${userList[i].name.first} ${userList[i].name.last}`
+
+    console.log(i)
+    document.getElementById('main-container').classList.remove('preload')
     // console.log(userCurrentIcon)
 }
