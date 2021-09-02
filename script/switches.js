@@ -11,7 +11,7 @@ function switchLoad() {
         courseSwitch(parseInt(course))
     }
     const media = getCookie('mediaSwitch')
-    console.log(media)
+    // console.log(media)
     if (media) {
         mediaSwitch(parseInt(media))
     }
