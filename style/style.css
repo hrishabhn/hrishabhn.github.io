@@ -1560,8 +1560,8 @@ body{
         /* max-height: 50vh; */
     }
     #user-select-close{
-        top: 70px;
-        right: 30px;
+        top: 60px;
+        right: 10px;
     }
 
     #col-container{
