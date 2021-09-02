@@ -499,7 +499,7 @@ body{
 }
 
 #user-select-all{
-    max-width: 80vw;
+    width: 80vw;
 }
 
 .user-select-card{
@@ -507,8 +507,7 @@ body{
     position: relative;
 
     height: 160px;
-    width: 240px;
-    min-width: 240px;
+    min-width: 160px;
     padding: 10px;
     border-radius: 20px;
 
