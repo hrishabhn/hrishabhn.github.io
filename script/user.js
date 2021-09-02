@@ -53,20 +53,6 @@ const userList = [
         last: 'DeMuro',
        }
     },
-    {
-       id: 099,
-       name: {
-        first: 'Doug',
-        last: 'DeMuro',
-       }
-    },
-    {
-       id: 099,
-       name: {
-        first: 'Doug',
-        last: 'DeMuro',
-       }
-    },
 ]
 
 function userSelectPopulate() {
@@ -90,9 +76,10 @@ function userSelectPopulate() {
         }
 
         htmlString = `${htmlString}${userCardHTML}`
-    }
+    }    
     htmlString = appendSpacer(htmlString,1000)
-
+    htmlString = appendSpacer(htmlString,'n')
+    htmlString = hstackEmbed(htmlString)
     htmlString = scrollEmbed(htmlString,1000)
 
     userSelectAll.innerHTML = htmlString
