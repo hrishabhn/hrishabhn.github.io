@@ -2,6 +2,7 @@
 function todayWidget(){
     weatherWidget();
     calWidget();
+    timeWidget(hourNow,minuteNow)
 }
 
 function statusBar(show,hide){
@@ -99,6 +100,26 @@ function calWidget() {
     // date.innerHTML = dateNow + " " + monthNow
 }
 
+function timeWidget(hour,minute) {
+    // minute = 0
+    // hour = 0
+
+    var ampm = 'am'
+
+    if (hour > 12) {
+        hour -= 12
+        ampm = 'pm'
+    }
+
+    if (minute < 10) {
+        minute = `0${minute}`
+    }
+    if (hour == 0) {
+        hour = '12'
+    }
+
+    document.getElementById('navbar-time').innerHTML = `${hour}:${minute}${ampm}`
+}
 
 
 var sideModal = document.getElementById("side-popup-modal");
