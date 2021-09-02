@@ -28,6 +28,7 @@ function newPopulate(){
     // mainPage(5)
     // flightPull()
     // showMediaPopup()
+    userLoad()
 }
 function openFullscreen() {
     const elem = document.documentElement
