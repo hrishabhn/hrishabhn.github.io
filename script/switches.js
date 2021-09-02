@@ -80,10 +80,6 @@ const courseData = [
     },
 ]
 
-
-
-
-
 function courseSwitchApps() {
     const dataLength = courseData.length
     var htmlString = "";
@@ -109,7 +105,6 @@ function courseSwitchApps() {
     container.innerHTML = htmlString
 }
 
-
 function courseApps(locale) {
     switch(locale) {
         case "Forney Hall":
@@ -120,7 +115,6 @@ function courseApps(locale) {
             break
     }
 }
-
 
 function courseSwitch(n) {
     clearElement('course-switch-content-tray')
@@ -229,3 +223,4 @@ function mediaSwitch(n) {
     setCookie('mediaSwitch',n,2)
     // document.cookie =`mediaSwitch=${n}`;
 }
+
