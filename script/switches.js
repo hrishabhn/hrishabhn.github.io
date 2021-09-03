@@ -6,7 +6,7 @@ function switches() {
 
 function switchLoad() {
     const course = getCookie('course')
-    // console.log(typeof n)
+    // console.log(course)
     if (course) {
         courseSwitch(parseInt(course))
     }
@@ -105,20 +105,21 @@ function courseSwitchApps() {
     container.innerHTML = htmlString
 }
 
-function courseApps(locale) {
-    switch(locale) {
-        case "Forney Hall":
-            courseSwitch(4)
-            break
-        case "Stewart Center":
-            courseSwitch(2)
-            break
-    }
-}
+// function courseApps(locale) {
+//     switch(locale) {
+//         case "Forney Hall":
+//             courseSwitch(4)
+//             break
+//         case "Stewart Center":
+//             courseSwitch(2)
+//             break
+//     }
+// }
 
 function courseSwitch(n) {
     clearElement('course-switch-content-tray')
     // console.log(document.cookie)
+    // console.log(n)
     const courseSwitcheElements = [];
 
     for (i = 0; i < courseData.length; i++) {
