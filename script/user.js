@@ -11,24 +11,27 @@ function checkUser() {
 function userLoad() {
     // clearCookies()
 
+    userSelectPopulate()
     if (checkUser()) {
         userCurrent(checkUser())
     } else {
         userSelectOpen()
     }
     checkUser()
-    userSelectPopulate()
 }
 
 function userSelectOpen() {
     var userSelectModal = document.getElementById('user-select-modal')
     userSelectModal.classList = 'open'
+    userSelectLoad(0)
+
 }
 
 function userSelectClose() {
     if (checkUser()) {
         var userSelectModal = document.getElementById('user-select-modal')
         userSelectModal.classList = 'closed'
+        userSelectReset()
     } else {
         alert('pick a user bro')
     }
@@ -75,7 +78,7 @@ function userSelectPopulate() {
 
     for (i = 0; i < dataLength; i++) {
         var userCardHTML = `
-        <div class="user-select-card clickable" onClick="setUser(${i})">
+        <div id="user-select-card-${i}" class="user-select-card preload" onClick="setUser(${i})">
             <div class="vstack">
                 <div class="user-select-icon user-image-${userList[i].id}"></div>
                 <p class="user-select-name">${userList[i].name.first}</p>
@@ -94,6 +97,29 @@ function userSelectPopulate() {
     htmlString = scrollEmbed(htmlString,1000)
 
     userSelectAll.innerHTML = htmlString
+
+    // userSelectLoad(0)
+}
+
+function userSelectLoad(i) {
+    const dataLength = userList.length
+    var userCard = document.getElementById(`user-select-card-${i}`)
+    setTimeout(function() {
+        userCard.classList.remove('preload')
+        i++
+        if (i < dataLength) {
+            userSelectLoad(i)
+        }
+    }, 100);
+}
+
+function userSelectReset() {
+    const dataLength = userList.length
+
+    for (i = 0; i < dataLength; i++) {
+        var userCard = document.getElementById(`user-select-card-${i}`)
+        userCard.classList.add('preload')
+    }
 }
 
 function setUser(i) {
