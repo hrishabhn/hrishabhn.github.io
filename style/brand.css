@@ -334,7 +334,8 @@
     background-color: #1ce783;
 }
 .netflix{
-    background:linear-gradient(to bottom right,#e50914,#99060d);
+    /* background:linear-gradient(to bottom right,#e50914,#99060d); */
+    background-color: #e50914;
 }
 .youtube{
     /* background:linear-gradient(to bottom right,#f00,#b30000); */
