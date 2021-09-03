@@ -1382,6 +1382,10 @@ body{
     .navbar{
         background-color: var(--light-layer-2);
     }
+    .menu-item:hover .menu-item-bg{
+        filter: brightness(0);
+    
+    }
     /* .menu-item{
         color: var(--dark-layer-1-40);
         fill: var(--dark-layer-1-40);
