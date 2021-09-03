@@ -310,6 +310,14 @@ body{
     opacity: 0;
     z-index: -1;
 }
+.menu-item:hover .menu-item-bg{
+    opacity: 0.05;
+    filter: brightness(100);
+
+}
+.menu-item.selected:hover .menu-item-bg{
+    filter: none;
+}
 .menu-item.selected .menu-item-bg{
     opacity: 0.25;
 }
