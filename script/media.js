@@ -9,6 +9,13 @@ function mediaPopulate() {
     movieHTML(3, 'movie-tray')
     movieHTML(4, 'new-show-tray')
     // tvBig('always')
+
+
+    movieHTML(0, 'up-next-tray-2')
+    movieHTML(1, 'coming-soon-tray-2')
+    movieHTML(2, 'my-list-tray-2')
+    movieHTML(3, 'movie-tray-2')
+    movieHTML(4, 'new-show-tray-2')
 }
 
 function tvBig(id, link) {
