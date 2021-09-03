@@ -1209,6 +1209,7 @@ body{
     background-position: center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-image: var(--poster);
     rotate: 180deg;
 
     /* transition: all 1s; */
@@ -1260,6 +1261,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-image: var(--poster);
 
     box-shadow: 0px 5px 20px -5px var(--black-60);
     box-shadow: 0px 10px 50px -20px var(--black-60);
