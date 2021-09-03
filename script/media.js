@@ -1116,18 +1116,27 @@ function hideMediaPopup() {
 
 function populateMediaPopup(type, n) {
     var mediaData;
+    var mediaType;
 
     if (type == 'pod') {
         mediaData = podData[n]
         document.getElementById('side-popup-poster').classList = 'pod'
+        mediaType = 'podcasts'
     } else if (type == 'book') {
         mediaData = bookData[n]
         document.getElementById('side-popup-poster').classList = 'book'
+        mediaType = 'books'
     }
 
+    // document.getElementById('poster').style.setProperty('--poster',`url('TV/background/${movie.id}.${movie.style.posterType}')`)
 
-    document.getElementById('side-popup-bg').classList = mediaData.id + '-cover'
-    document.getElementById('side-popup-poster').classList.add(mediaData.id + '-cover')
+
+    document.getElementById('side-popup-bg').style.setProperty('--poster',`url('media-image/${mediaType}/${mediaData.id}.${mediaData.coverType}')`)
+    document.getElementById('side-popup-poster').style.setProperty('--poster',`url('media-image/${mediaType}/${mediaData.id}.${mediaData.coverType}')`)
+
+
+    // document.getElementById('side-popup-bg').classList = mediaData.id + '-cover'
+    // document.getElementById('side-popup-poster').classList.add(mediaData.id + '-cover')
     document.getElementById('side-popup-title').innerHTML = mediaData.name
     document.getElementById('side-popup-subtitle').innerHTML = mediaData.author
     document.getElementById('side-popup-link').href = mediaData.link
