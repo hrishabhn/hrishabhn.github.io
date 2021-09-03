@@ -50,7 +50,7 @@ function locationBasedLoad(userLocale) {
 
     // smartCards(globalLocale)
     buses(globalLocale)
-    courseApps(globalLocale)
+    // courseApps(globalLocale)
 }
 
 function mainRefresh() {
