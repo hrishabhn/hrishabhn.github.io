@@ -110,7 +110,7 @@ function userCurrent(i) {
     userCurrentIcon.classList.add('clickable')
     userName.innerHTML = `${userList[i].name.first} ${userList[i].name.last}`
 
-    console.log(i)
+    // console.log(i)
     document.getElementById('main-container').classList.remove('preload')
     // console.log(userCurrentIcon)
 }
