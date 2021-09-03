@@ -1050,9 +1050,63 @@
 
 
 
+/* big */
 
 
 
+
+
+
+
+
+
+
+
+
+.big-tv-card{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+
+    border-radius: 10px;
+    /* padding: 12px 15px; */
+
+    width: 100%;
+
+    /* background-color: var(--dark-layer-1); */
+    text-decoration: none;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+
+.tv-poster-big{
+    display: flex;
+    position: relative;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* border-radius: 10px; */
+
+    height: 170px;
+    /* width: 300px; */
+    aspect-ratio: 1 / 1;
+
+    height: 100px;
+    width: 100%;
+}
+
+.tv-poster-big .gradient{
+    display: flex;
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(transparent,var(--color));
+}
 
 
 @media screen and (prefers-color-scheme: light) {
