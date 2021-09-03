@@ -1,6 +1,6 @@
 function menuLoad() {
   menuSwitchApps()
-  menuSwitch(8)
+  menuSwitch(1)
 }
 
 const menuData = [
