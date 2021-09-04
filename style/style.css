@@ -251,6 +251,21 @@ body{
     padding-left: 12px;
     
 }
+
+
+#navbar-date{
+    margin-top: 2px;
+
+    display: flex;
+    position: relative;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    opacity: 0.8;
+
+    padding-left: 12px;
+}
 .navbar-title{
     display: flex;
     position: relative;
@@ -261,7 +276,7 @@ body{
     opacity: 0.5;
 
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding-left: 12px;
 
     text-transform: uppercase;
