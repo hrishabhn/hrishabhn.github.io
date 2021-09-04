@@ -3,6 +3,7 @@ function todayWidget(){
     weatherWidget();
     calWidget();
     timeWidget(hourNow,minuteNow)
+    dateWidget()
 }
 
 function statusBar(show,hide){
@@ -119,6 +120,10 @@ function timeWidget(hour,minute) {
     }
 
     document.getElementById('navbar-time').innerHTML = `${hour}:${minute}${ampm}`
+}
+
+function dateWidget() {
+    document.getElementById('navbar-date').innerHTML = `${weekdayNow}, ${dateNow} ${monthNow}`
 }
 
 
