@@ -1649,6 +1649,7 @@ body{
     }
     .sidebar-button.open{
         top: 80px;
+        right: 20px;
     }
 
 
