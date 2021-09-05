@@ -218,7 +218,7 @@ const movieData1 = [
         info: {
             service: "Hulu",
             description: "Animation &#149 Action &#149 Adventure &#149 1 Season &#149 1998 - 1999",
-            // summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
+            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
         },
         style: {
             color: '599DAA',
