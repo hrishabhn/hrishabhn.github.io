@@ -33,7 +33,7 @@ function apps(){
     appType('link',videoApps,'video-tray','TV & Video',null)
 
 
-    appType('link',videoApps,'video-tray-2','TV & Video',null)
+    // appType('link',videoApps,'video-tray-2','TV & Video',null)
 }
 
 function appType(type, appData, dest, title, devices) {
