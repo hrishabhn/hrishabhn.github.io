@@ -16,18 +16,32 @@ function mediaPopulate() {
     movieHTML(2, 'my-list-tray-2')
     movieHTML(3, 'movie-tray-2')
     movieHTML(4, 'new-show-tray-2')
+
+    tvPreview(0,0)
 }
 
-function tvBig(id, link) {
-    const tvBigElement = document.getElementById("tv-big-current")
-    const tvBigTitle = document.getElementById('tv-big-title')
-    const tvBigPlay = document.getElementById('tv-big-play')
-    // var tvBigName = document.getElementById('tv-big-name')
-    // var tvBigDescription = document.getElementById('tv-big-desc')
-    tvBigElement.classList = id + '-poster'
-    tvBigTitle.classList = id + '-title'
+function tvPreview(i,j) {
+    // console.log(movieData[i][j])
+    const movie = movieData[i][j]
 
-    tvBigPlay.href = link
+    const posterElement = document.getElementById('tv-preview-poster')
+    const titleElement = document.getElementById('tv-preview-title')
+    const descElement = document.getElementById('tv-preview-description')
+    const linkElement = document.getElementById('tv-preview-link')
+
+    posterElement.style.setProperty('--poster',`url('TV/background/${movie.id}.${movie.style.posterType}')`)
+    titleElement.style.setProperty('--title',`url('TV/title/${movie.id}.${movie.style.titleType}')`)
+    descElement.innerHTML = movie.info.description
+    linkElement.href = movie.link
+
+    // const tvBigTitle = document.getElementById('tv-big-title')
+    // const tvBigPlay = document.getElementById('tv-big-play')
+    // // var tvBigName = document.getElementById('tv-big-name')
+    // // var tvBigDescription = document.getElementById('tv-big-desc')
+    // tvBigElement.classList = id + '-poster'
+    // tvBigTitle.classList = id + '-title'
+
+    // tvBigPlay.href = link
 }
 
 var tvModal = document.getElementById("tv-popup-modal");
@@ -398,6 +412,27 @@ const movieData2 = [
 
 ]
 const movieData3 = [
+    {
+        name: "Money Heist",
+        id: "money",
+        link: "https://www.netflix.com/title/80192098",
+        info: {
+            service: "Netflix",
+            description: "Acttion &#149 Crime &#149 Mystery &#149 3 Seasons &#149 2017 - Present",
+            summary: "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
+        },
+        style: {
+            color: '3f1513',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "327417",
+            reelgoodLink: "https://reelgood.com/show/money-heist-2017",
+            imdbID: "tt6468322",
+        },
+    },
     {
         name: "The Grand Tour",
         id: "grandTour",
@@ -772,7 +807,7 @@ function movieHTML(n, tray) {
 
         // var movieCardHTML = `<div class="tv-card ${data[i].id}-solid" target="_blank" href="${htmlLink}"><div class="tv-card-poster ${data[i].id}-poster"><div class="tv-gradient ${data[i].id}-gradient"><div class="tv-title ${data[i].titleSize} ${data[i].id}-title"></div></div><a class="tv-play-container" target="_blank"${htmlLink}><svg class="tv-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="tv-info clickable" onclick='tvPopup(movieData[${n}][${i}])'><div class="tv-textbox"><p class="tv-heading">${data[i].name}</p><p class="tv-subheading secondary-fg">${data[i].service}</p></div><div class="tv-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"></circle><circle cx="192" cy="192" r="42.667"></circle><circle cx="192" cy="341.333" r="42.667"></circle></svg></div></a></div>`
 
-        var movieCardHTML = `<div class="tv-card" target="_blank" href="${htmlLink}"><div class="tv-card-poster image-border" style="--poster: url('TV/background/${data[i].id}.${data[i].style.posterType}');"><div class="tv-gradient"><div class="tv-title ${data[i].style.titleSize}" style="--title: url('TV/title/${data[i].id}.${data[i].style.titleType}');"></div></div><a class="tv-play-container" target="_blank"${htmlLink}><svg class="tv-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="tv-info clickable" onclick='tvPopup(movieData[${n}][${i}])'><div class="tv-textbox"><p class="tv-heading">${data[i].name}</p><p class="tv-subheading secondary-fg">${data[i].info.service}</p></div><div class="tv-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"></circle><circle cx="192" cy="192" r="42.667"></circle><circle cx="192" cy="341.333" r="42.667"></circle></svg></div></a></div>`
+        var movieCardHTML = `<div class="tv-card" target="_blank" href="${htmlLink}"><div class="tv-card-poster image-border" style="--poster: url('TV/background/${data[i].id}.${data[i].style.posterType}');"><div class="tv-gradient"><div class="tv-title ${data[i].style.titleSize}" style="--title: url('TV/title/${data[i].id}.${data[i].style.titleType}');"></div></div><a class="tv-play-container" target="_blank"${htmlLink} onmouseover="tvPreview(${n},${i})"><svg class="tv-play-icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></g></svg></a></div><a class="tv-info clickable" onclick='tvPopup(movieData[${n}][${i}])'><div class="tv-textbox"><p class="tv-heading">${data[i].name}</p><p class="tv-subheading secondary-fg">${data[i].info.service}</p></div><div class="tv-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"></circle><circle cx="192" cy="192" r="42.667"></circle><circle cx="192" cy="341.333" r="42.667"></circle></svg></div></a></div>`
 
 
         htmlString = `${htmlString}${movieCardHTML}`
