@@ -460,6 +460,15 @@ body{
     opacity: 0;
     pointer-events: none;
 }
+.main.main-tv{
+    position: fixed;
+    height: 100%;
+    width: calc(100% - 200px);
+    top: 0px;
+    left: 200px;
+    overflow: scroll;
+
+}
 
 .main > *:not(:last-child) {
     margin-bottom: 15px; 
