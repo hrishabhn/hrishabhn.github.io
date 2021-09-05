@@ -95,6 +95,9 @@
 }
 .tv-preview-tray{
     padding: 0px 35px;
+    background-color: black;
+    color: white;
+    fill: white;
 }
 
 
