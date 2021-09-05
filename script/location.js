@@ -46,7 +46,7 @@ function getUserLocale() {
 
         const walmart = (lat > 40.4565) && (lat < 40.4592) && (lon > -86.9352) && (lon < -86.9312);
         const zbt = (lat > 40.4337) && (lat < 40.4344) && (lon > -86.9255) && (lon < -86.9248);
-        const grantStation = (lat > 40.4191) && (lat < 40.4203) && (lon > -86.9103) && (lon < -86.9096);
+        const grantStation = (lat > 40.4191) && (lat < 40.4203) && (lon > -86.9104) && (lon < -86.9096);
     
         // console.log(stew)
     
