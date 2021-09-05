@@ -89,6 +89,8 @@
 
     --apple: -apple-system, BlinkMacSystemFont, sans-serif;
     --asap: 'Asap', sans-serif;
+    --sora: 'Sora', sans-serif;
+    --manrope: 'Manrope', sans-serif;
 
 
     --mobile-width: calc(100vw - 30px);
@@ -182,6 +184,18 @@ body{
     /* min-height: 1000px; */
     min-width: 1000px;
 }
+.radius-10{
+    border-radius: 10px;
+}
+
+
+.hline{
+    display: flex;
+    height: 1px;
+    width: 100%;
+
+    background-color: var(--white-20);
+}
 .hstack{
     display: flex;
     position: relative;
@@ -200,6 +214,11 @@ body{
     justify-content: center;
     flex-grow: 1;
 }
+.fill-parent{
+    height: 100%;
+    width: 100%;
+}
+
 .scroll{
     display: flex;
     position: relative;
@@ -530,7 +549,7 @@ body{
     padding-bottom: 100px;
 
     background-color: var(--black-100);
-    font-family: var(--asap);
+    font-family: var(--manrope);
 
     /* -webkit-backdrop-filter: blur(20px); */
 
@@ -1027,7 +1046,9 @@ body{
 
 
 
-
+.content{
+    background-color: var(--dark-layer-1);
+}
 
 .content-container{
     display: flex;
@@ -1046,6 +1067,14 @@ body{
 
     background-color: var(--dark-layer-1);
     text-decoration: none;
+}
+.padding-8-10{
+    padding: 8px 10px;
+    box-sizing: border-box;
+}
+.padding-12-15{
+    padding: 12px 15px;
+    box-sizing: border-box;
 }
 
 .content-title{
@@ -1094,7 +1123,55 @@ body{
     margin-bottom: 8px !important;
     /* text-transform: uppercase; */
 }
+.widget-card{
+    overflow: hidden;
+    background-color: var(--dark-layer-1);
+    width: 100%;
+    flex-grow: 0;
+}
+.widget-title{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
 
+    height: 100%;
+    width: 100%;
+
+}
+.widget-title-bg{
+    display: flex;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    /* z-index: -1; */
+    opacity: 0.4;
+}
+.widget-title p{
+    z-index: 1;
+    padding: 8px 10px;
+    font-family: var(--manrope);
+    font-size: 12px;
+    font-weight: 600;
+}
+.widget-button{
+    display: flex;
+    position: relative;
+
+    font-family: var(--asap);
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+
+    padding: 6px 8px;
+    border-radius: 8px;
+    white-space: nowrap;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+}
 
 .info-card{
     display: inline-flex;
@@ -1443,6 +1520,12 @@ body{
         background-color: var(--light-layer-0);
     }
     
+    .hline{
+        background-color: var(--black-20);
+    }
+    .content{
+        background-color: var(--light-layer-0);
+    }
     .content-container{
         background-color: var(--light-layer-0);
     }
