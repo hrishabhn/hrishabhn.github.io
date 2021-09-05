@@ -46,12 +46,14 @@ function weatherWidget() {
                     hiValue = Math.round(hiValue);
                     loValue = Math.round(loValue);
 
+                    var tempElement = document.getElementById('weather-temp')
+                    tempElement.innerHTML = tempValue + '&#176'
                     // var hiloValue = 'H:' + hiValue + '&#176 ' + 'L:' + loValue + '&#176';
 
-                    var weather = document.getElementById("weather")
+                    // var weather = document.getElementById("weather")
                     // weatherValue = weatherValue.charAt(0).toUpperCase() + weatherValue.slice(1);
 
-                    weather.innerHTML = tempValue + "&#176C, " + weatherValue
+                    // weather.innerHTML = tempValue + "&#176C, " + weatherValue
 
 
 
