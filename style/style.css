@@ -1149,7 +1149,7 @@ body{
     width: 100%;
 
     /* z-index: -1; */
-    opacity: 0.4;
+    opacity: 0.75;
 }
 .widget-title p{
     z-index: 1;
@@ -1157,6 +1157,22 @@ body{
     font-family: var(--manrope);
     font-size: 12px;
     font-weight: 600;
+    filter: brightness(2);
+}
+.widget-image{
+    height: 60px;
+    width: 60px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    /* background-color: red; */
+}
+.widget-image-icon{
+    height: 20px;
+    width: 20px;
+
 }
 .widget-subtitle{
     z-index: 1;
@@ -1186,17 +1202,10 @@ body{
 }
 
 
-.cal-icon{
-    height: 60px;
-    width: 60px;
-
-    flex-grow: 0;
-    flex-shrink: 0;
-    border-radius: 10px;
-    text-transform: uppercase;
-    /* background-color: red; */
+#weather-temp{
+    font-size: 26px;
+    font-weight: 300;
 }
-
 #cal-icon-weekday{
     font-size: 12px;
     font-weight: 400;
@@ -1542,6 +1551,9 @@ body{
 
     #widgetbar.state1{
         box-shadow: var(--shaded-light);
+    }
+    .widget-title p{
+        filter: brightness(0.8);
     }
     .sidebar-button:hover{
         background: var(--light-layer-0);
