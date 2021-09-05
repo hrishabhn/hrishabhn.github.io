@@ -74,6 +74,13 @@
 .cyan{
     background-color: var(--cyan-dark);
 }
+.cyan-fg{
+    color: var(--cyan-dark);
+    fill: var(--cyan-dark);
+}
+.cyan-border{
+    border-color: var(--cyan-dark);
+}
 .green{
     background-color: var(--green-dark);
 }
@@ -190,6 +197,13 @@
     }
     .cyan{
         background-color: var(--cyan-light);
+    }
+    .cyan-fg{
+        color: var(--cyan-light);
+        fill: var(--cyan-light);
+    }
+    .cyan-border{
+        border-color: var(--cyan-light);
     }
     .green{
         background-color: var(--green-light);
