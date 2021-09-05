@@ -1603,9 +1603,12 @@ body{
     }
 
     #navbar-menu{
+        box-sizing: border-box;
         width: 100%;
         flex-direction: row;
         height: 60px;
+
+        padding: 5px 10px;
     }
 
 
@@ -1615,10 +1618,11 @@ body{
         height: 100%;
     }
     .menu-item-icon{
-        scale: 1.5;
+        margin: 0px;
+        scale: 2;
         /* height: 22px; */
         /* width: 22px; */
-        /* background: none !important; */
+        background: none !important;
     }
     .menu-item-text{
         display: none;
