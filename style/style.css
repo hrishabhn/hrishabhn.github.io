@@ -454,7 +454,7 @@ body{
 }
 #main-container.state1{
     pointer-events: none;
-    filter: blur(5px);
+    filter: blur(8px);
     /* width: calc(100% - 500px); */
 }
 
@@ -1579,7 +1579,7 @@ body{
     }
 
     #widgetbar.state1{
-        box-shadow: var(--shaded-light);
+        box-shadow: var(--shaded-dark);
     }
     .widget-title p{
         filter: brightness(0.8);
