@@ -59,7 +59,7 @@ function weatherWidget() {
                     var currentIcons = []
                     var temps = []
 
-                    for (i = 0; i < 48; i++) {
+                    for (i = 0; i < 25; i++) {
                         fullDates[i] = new Date(hourlyData[i].dt * 1000)
 
                         hours[i] = fullDates[i].getHours()
@@ -121,7 +121,7 @@ function weatherWidget() {
                     var itemHTML
 
                     htmlString = appendSpacer(htmlString,8)
-                    for (i = 1; i < 48; i++) {
+                    for (i = 1; i < 25; i++) {
                         itemHTML = `
                         <div class="weather-item vstack">
                             <p class="weather-item-time">${hours[i]}</p>
