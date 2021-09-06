@@ -836,7 +836,9 @@ body{
 }
 #widgetbar.state1{
     transform: translateX(00%);
-    box-shadow: var(--shaded-dark);
+    /* box-shadow: 0 10px 30px 0px var(--black-20); */
+    box-shadow: 0px 0px 50px var(--black-80)
+;
 }
 .sidebar-button{
     display: flex;
@@ -1584,7 +1586,7 @@ body{
     }
 
     #widgetbar.state1{
-        box-shadow: var(--shaded-dark);
+        box-shadow: 0px 0px 50px var(--black-40)
     }
     .widget-title p{
         filter: brightness(0.8);
