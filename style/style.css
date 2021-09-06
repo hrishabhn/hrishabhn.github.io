@@ -256,6 +256,7 @@ body{
 
     overflow-y: scroll;
 
+    /* background-color: #222526; */
 }
 
 #navbar-time{
@@ -807,8 +808,8 @@ body{
 #widgetbar.state1{
     transform: translateX(00%);
     /* box-shadow: 0 10px 30px 0px var(--black-20); */
-    box-shadow: 0px 0px 50px var(--black-80)
-;
+    box-shadow: 0px 0px 50px 10px var(--black-60)
+    ;
 }
 .sidebar-button{
     display: flex;
@@ -1137,13 +1138,26 @@ body{
     /* z-index: -1; */
     opacity: 0.4;
 }
+.widget-title-content{
+    filter: brightness(2);
+    padding: 8px 12px;
+}
 .widget-title p{
     z-index: 1;
-    padding: 8px 12px;
+    /* padding: 8px 12px; */
     font-family: var(--asap);
     font-size: 16px;
     font-weight: 500;
-    filter: brightness(2);
+}
+.widget-title-icon{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    height: 12px;
+    width: 12px;
+
 }
 .widget-image{
     height: 60px;
@@ -1576,9 +1590,9 @@ body{
     }
 
     #widgetbar.state1{
-        box-shadow: 0px 0px 50px var(--black-40)
+        box-shadow: 0px 0px 50px 10px var(--black-20)
     }
-    .widget-title p{
+    .widget-title-content{
         filter: brightness(0.8);
     }
     .sidebar-button:hover{
