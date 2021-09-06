@@ -29,6 +29,7 @@ function newPopulate(){
     // showMediaPopup()
     userLoad()
     // tvPopup(movieData[0][0])
+    // widgetBarState()
 }
 function openFullscreen() {
     const elem = document.documentElement
