@@ -169,7 +169,7 @@ function userCurrent(i) {
     // console.log(userList[i])
     userCurrentIcon.classList = `user-image-${userList[i].id}`
     userCurrentIcon.classList.add('clickable')
-    userName.innerHTML = `${userList[i].name.first} ${userList[i].name.last}`
+    userName.innerHTML = `${userList[i].name.first}`
 
     // console.log(i)
     document.getElementById('main-container').classList.remove('preload')
