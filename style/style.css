@@ -1206,6 +1206,35 @@ body{
     font-size: 26px;
     font-weight: 300;
 }
+.weather-item{
+    display: flex;
+    position: relative;
+    
+    height: 60px;
+    width: 32px;
+    flex-grow: 0;
+}
+.weather-item-time{
+    font-size: 8px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.weather-item-icon{
+    display: flex;
+    position: relative;
+
+    height: 12px;
+    width: 12px;
+    margin: 4px 0px;
+}
+.weather-item-temp{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+
+
 #cal-icon-weekday{
     font-size: 12px;
     font-weight: 400;
