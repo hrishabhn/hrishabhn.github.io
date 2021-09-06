@@ -911,6 +911,17 @@ body{
     fill: var(--white-40);
 }
 
+.clickable-text{
+    transition: 0.4s;
+    transition-delay: 0.15s;
+    transition-timing-function: all cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+}
+.clickable-text:active{
+    transition: 0.05s;
+    transition-delay: 0s;
+    opacity: 0.4;
+}
+
 
 .action-tray{
     display: flex;
