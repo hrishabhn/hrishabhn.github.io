@@ -454,7 +454,7 @@ body{
 }
 #main-container.state1{
     pointer-events: none;
-    filter: blur(8px);
+    filter: blur(5px);
     /* width: calc(100% - 500px); */
 }
 
@@ -1111,6 +1111,8 @@ body{
     position: relative;
     height: 100%;
     width: 100%;
+}
+.icon.stroke {
     stroke: var(--white-100);
 }
 
@@ -1203,7 +1205,10 @@ body{
 .widget-content{
     padding-left: 10px;
 }
-
+#weather-widget-content{
+    height: 80px;
+    flex-shrink: 0;
+}
 
 #weather-temp{
     font-size: 26px;
@@ -1213,9 +1218,10 @@ body{
     display: flex;
     position: relative;
     
-    height: 60px;
+    height: 100%;
     width: 32px;
     flex-grow: 0;
+    flex-shrink: 0;
 }
 .weather-item-time{
     font-size: 8px;
@@ -1229,7 +1235,7 @@ body{
 
     height: 12px;
     width: 12px;
-    margin: 4px 0px;
+    margin: 8px 0px;
 }
 .weather-item-temp{
     font-size: 10px;
@@ -1566,7 +1572,7 @@ body{
     
     }
 
-    .icon{
+    .icon.stroke{
         stroke: var(--dark-layer-1);
     }
     /* .menu-item{
