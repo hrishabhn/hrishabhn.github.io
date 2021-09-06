@@ -166,31 +166,6 @@ function popupAllHide() {
 
 const movieData1 = [
     {
-        name: "It's Always Sunny in Philadelphia",
-        id: "always",
-        link: "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
-        info: {
-            service: "Hulu",
-            description: "Comedy &#149 14 Seasons &#149 2005 - Present",
-            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
-        },
-        style: {
-            color: '5c666a',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: "tall",
-        },
-        apps: {
-            tvTimeID: "75805",
-            // tvTimeRate: "8.28",
-            reelgoodLink: "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
-            // reelgoodRate: "90",
-            imdbID: "tt0472954",
-            // imdbRate: "8.8",
-            redditLink: "https://www.reddit.com/r/IASIP",
-        },
-    },
-    {
         name: "Brooklyn Nine-Nine",
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
@@ -407,6 +382,31 @@ const movieData2 = [
             reelgoodLink: "https://reelgood.com/show/sex-education-2019",
             imdbID: "tt7767422",
             redditLink: "https://www.reddit.com/r/NetflixSexEducation",
+        },
+    },
+    {
+        name: "It's Always Sunny in Philadelphia",
+        id: "always",
+        link: "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
+        info: {
+            service: "Hulu",
+            description: "Comedy &#149 14 Seasons &#149 2005 - Present",
+            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+        },
+        style: {
+            color: '5c666a',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: "tall",
+        },
+        apps: {
+            tvTimeID: "75805",
+            // tvTimeRate: "8.28",
+            reelgoodLink: "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+            // reelgoodRate: "90",
+            imdbID: "tt0472954",
+            // imdbRate: "8.8",
+            redditLink: "https://www.reddit.com/r/IASIP",
         },
     },
 
