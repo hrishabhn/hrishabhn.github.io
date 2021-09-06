@@ -1,9 +1,39 @@
+function createWidget(widget) {
+    var widgetCard = document.createElement('div')
+    widgetCard.classList = 'widget-card content1 vstack radius-10'
+
+    var widgetTitle = document.createElement('div')
+    widgetTitle.classList = 'widget-title'
+
+    // var 
+
+
+    widgetTitle.innerHTML = widget.title
+
+    widgetCard.append(widgetTitle)
+
+    console.log(widgetCard)
+    document.getElementById('main-1').prepend(widgetCard)
+}
+
+
+
+
+
 
 function todayWidget(){
     weatherWidget();
     calWidget();
     timeWidget(hourNow,minuteNow)
     dateWidget()
+
+
+    // const testWidget = {
+    //     title: 'Userselectthing',
+    //     color: 'red',
+    // }
+
+    // createWidget(testWidget)
 }
 
 function statusBar(show,hide){
