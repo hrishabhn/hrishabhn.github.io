@@ -51,7 +51,7 @@ function weatherWidget() {
                     var hourlyData = data['hourly']
                     var currentData = data['current']
 
-                    // console.log(hourlyData[0].weather[0])
+                    console.log(currentData)
                     
                     var fullDates = []
                     var hours = []
@@ -59,7 +59,9 @@ function weatherWidget() {
                     var currentIcons = []
                     var temps = []
 
-                    for (i = 0; i < 25; i++) {
+                    const dataLength = 25
+
+                    for (i = 1; i < dataLength; i++) {
                         fullDates[i] = new Date(hourlyData[i].dt * 1000)
 
                         hours[i] = fullDates[i].getHours()
@@ -84,6 +86,17 @@ function weatherWidget() {
 
                         conditions[i] = hourlyData[i].weather[0]
 
+                        temps[i] = Math.round(hourlyData[i].temp)
+                    }
+
+                    hours[0] = `NOW`
+                    conditions[0] = currentData.weather[0]
+                    temps[0] = Math.round(currentData.temp)
+
+
+                    // console.log(conditions)
+
+                    for (i = 0; i < dataLength; i++) {
                         switch (conditions[i].description) {
                             case 'clear sky':
                                 if (!isNight) {
@@ -108,20 +121,14 @@ function weatherWidget() {
                             default:
                                 currentIcons[i] = weatherIcons.error
                         }
-
-
-                        temps[i] = Math.round(hourlyData[i].temp)
                     }
-
-                    console.log(conditions)
-
 
 
                     var htmlString = ''
                     var itemHTML
 
                     htmlString = appendSpacer(htmlString,8)
-                    for (i = 1; i < 25; i++) {
+                    for (i = 0; i < 25; i++) {
                         itemHTML = `
                         <div class="weather-item vstack">
                             <p class="weather-item-time">${hours[i]}</p>
