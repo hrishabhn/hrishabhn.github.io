@@ -1163,6 +1163,8 @@ body{
     font-size: 12px;
     font-weight: 500;
     color: white;
+    text-decoration: none;
+    cursor: default;
 
     padding: 8px 10px;
     border-radius: 10px;
