@@ -19,6 +19,7 @@ function newPopulate(){
     getUserLocale()
 
     todayWidget()
+    allWidgets.initial()
 
     apps()
     switches()
@@ -29,7 +30,9 @@ function newPopulate(){
     // showMediaPopup()
     userLoad()
     // tvPopup(movieData[0][0])
-    // widgetBarState()
+    widgetBarState()
+
+    // console.log(getCoords())
 }
 function openFullscreen() {
     const elem = document.documentElement
@@ -47,7 +50,7 @@ function locationBasedLoad(userLocale) {
     storeLocale(userLocale)
 
     // statusBar(1000,4000)
-    document.getElementById("district").innerHTML = globalLocale;
+    document.getElementById("locale-current").innerHTML = globalLocale;
 
     // smartCards(globalLocale)
     buses(globalLocale)
@@ -59,6 +62,7 @@ function mainRefresh() {
     getUserLocale()
     // smartCards()
     todayWidget()
+    allWidgets.refresh()
     // statusBar(0,1500)
     resetBusCards()
     // console.log("refreshed")
