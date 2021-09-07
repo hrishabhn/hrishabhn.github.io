@@ -1,7 +1,13 @@
+const weekDays = {
+    long: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    short: ["SUN","MON","TUE","WED","THU","FRI","SAT"]
+}
+
+
 function calendarDate() {
     fullDate = new Date();
 
-    const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    
     const months = ["JAN","FEB","MAR","APR","MAY","JUN","July","August","September"]
 
     minuteNow = fullDate.getMinutes();
@@ -9,7 +15,7 @@ function calendarDate() {
     hourNow = fullDate.getHours();
 
     weekdayNow = fullDate.getDay()
-    weekdayNow = weekDays[weekdayNow]
+
     
     monthNow = fullDate.getMonth()
     monthNow = months[monthNow]
