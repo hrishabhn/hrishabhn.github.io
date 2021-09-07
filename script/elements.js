@@ -1,3 +1,5 @@
+const parser = new DOMParser()
+
 function contentTitleHTML(title) {
     // var titleHTML = `<div class="content-container"><div class="content-title">${title}</div></div><div class="spacer-15"></div>`
     var titleHTML = `<div class="content-title">${title}</div>`
@@ -27,6 +29,12 @@ function linkTrayEmbed(html) {
 function appendSpacer(html,n) {
     html = `${html}<div class="spacer-${n}"></div>`
     return html
+}
+
+function createSpacer(n) {
+    var spacer = document.createElement('div')
+    spacer.classList = `spacer-${n}`
+    return spacer
 }
 
 function clearElement(id) {
