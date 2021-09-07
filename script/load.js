@@ -30,7 +30,7 @@ function newPopulate(){
     // showMediaPopup()
     userLoad()
     // tvPopup(movieData[0][0])
-    widgetBarState()
+    // widgetBarState()
 
     // console.log(getCoords())
 }
