@@ -1,7 +1,5 @@
-// var userLocale;
-
 function getUserLocale() {
-    document.getElementById("district").innerHTML = '----';
+    // document.getElementById("district").innerHTML = '----';
 
     const successCallback = (position) => {
         // console.log(timeOfDay)
@@ -136,6 +134,8 @@ function getUserLocale() {
         // returnUserLocale(userLocale);
     
     }
+
+    // console.log(successCallback)
     
     if (navigator.geolocation.getCurrentPosition) {
         // console.log(navigator.geolocation.getCurrentPosition)
@@ -149,7 +149,7 @@ function getUserLocale() {
     }
 }
 
-var globalLocale = null
+var globalLocale;
 
 function storeLocale(input) {
     globalLocale = input
