@@ -118,18 +118,10 @@ function getUserLocale() {
             userLocale = "Grant Street Station"
         }
 
-
-
-
-
-
         // userLocale = "West Highway"
 
         locationBasedLoad(userLocale);
 
-    
-    
-    
         // console.log(userLocale)
         // returnUserLocale(userLocale);
     
