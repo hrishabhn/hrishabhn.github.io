@@ -361,11 +361,10 @@ body{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    height: 2px;
-    width: 2px;
-    min-height: 26px;
-    min-width: 26px;
-    padding: 8px;
+    height: 24px;
+    width: 24px;
+    flex-shrink: 0;
+    padding: 7px;
     margin-left: 12px;
     margin-right: 8px;
 
