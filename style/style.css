@@ -673,8 +673,8 @@ body{
 
     height: 80px;
     width: 80px;
-    border-radius: 5px;
-    background-color: var(--dark-layer-1);
+    border-radius: 10px;
+    /* background-color: var(--dark-layer-1); */
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -685,9 +685,9 @@ body{
 }
 
 #user-current-name{
-    font-size: 20px;
-    font-weight: 400;
-    font-family: var(--asap);
+    /* font-size: 20px; */
+    /* font-weight: 400; */
+    /* font-family: var(--asap); */
 }
 
 
@@ -1140,7 +1140,7 @@ body{
 }
 .widget-title-content{
     filter: brightness(2);
-    padding: 8px 12px;
+    padding: 16px 12px;
 }
 .widget-title p{
     z-index: 1;
@@ -1155,13 +1155,13 @@ body{
     justify-content: center;
     align-items: center;
 
-    height: 12px;
-    width: 12px;
+    height: 16px;
+    width: 16px;
 
 }
 .widget-image{
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
 
     flex-grow: 0;
     flex-shrink: 0;
@@ -1175,10 +1175,10 @@ body{
 
 }
 .widget-subtitle{
-    z-index: 1;
-    font-family: var(--manrope);
-    font-size: 14px;
-    font-weight: 600;
+    /* z-index: 1; */
+    font-family: var(--asap);
+    font-size: 24px;
+    font-weight: 500;
 }
 .widget-button{
     display: flex;
@@ -1243,11 +1243,11 @@ body{
 
 
 #cal-icon-weekday{
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
 }
 #cal-icon-date{
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 400;
 }
 
