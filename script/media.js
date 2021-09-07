@@ -196,8 +196,8 @@ const movieData1 = [
             summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
         },
         style: {
-            color: '599DAA',
-            posterType: 'webp',
+            color: '330A06',
+            posterType: 'jpg',
             titleType: 'png',
             titleSize: "mid",
         },
