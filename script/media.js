@@ -866,7 +866,7 @@ const bookData = [
     {
         name: "Faster Than Normal",
         id: "faster",
-        link: "audible://view?section=discover&asin=B07648CSNN",
+        link: "audible://view?section=discover&asin=B0763VPQF6",
         author: "Peter Shankman",
         coverType: 'jpg',
     },
