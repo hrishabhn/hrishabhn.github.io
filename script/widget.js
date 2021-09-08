@@ -11,7 +11,7 @@ function createWidget(widget) {
     var titleHTML = `
     <div class="widget-title">
         <div class="widget-title-bg ${widget.color}"></div>
-        <div class="widget-title-content hstack">
+        <div class="widget-title-content hstack flex-grow">
             <p class="${widget.color}-fg">${widget.title}</p>
             <div class="spacer"></div>
             <div class="widget-title-icon ${widget.color}-fg">
