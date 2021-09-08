@@ -114,7 +114,7 @@ function userSelectPopulate() {
     for (i = 0; i < dataLength; i++) {
         var userCardHTML = `
         <div id="user-select-card-${i}" class="user-select-card preload" onClick="setUser(${i})">
-            <div class="vstack">
+            <div class="vstack flex-grow">
                 <div class="user-select-icon user-image-${userList[i].id}"></div>
                 <p class="user-select-name">${userList[i].name.first}</p>
             </div>
