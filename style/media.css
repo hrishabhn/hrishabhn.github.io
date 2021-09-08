@@ -610,6 +610,59 @@
     /* fill: white; */
 }
 
+.media-big-card{
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px;
+
+    text-decoration: none;
+    vertical-align: top;
+
+    cursor: default;
+
+    height: 190px;
+
+    /* margin-bottom: 0!important; */
+}
+
+.media-big-poster{
+    display: block;
+    position: relative;
+    align-items: flex-end;
+
+    border-radius: 5px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: var(--poster);
+
+    flex-shrink: 0;
+
+    height: 100%;
+}
+.book-big-poster{
+    width: 100px;
+}
+.media-big-title{
+    align-self: flex-start;
+    font-size: 24px;
+    font-weight: 500;
+}
+.media-big-subtitle{
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+.media-big-link{
+    align-self: flex-start;
+    background-color: white;
+    color: var(--dark-layer-1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 
 .media-card{
     display: inline-flex;
