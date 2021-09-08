@@ -10,6 +10,7 @@ function mediaPopulate() {
     movieHTML(4, 'new-show-tray')
     // tvBig('always')
 
+    bookBigPopulate('main-7')
 
     movieHTML(0, 'up-next-tray-2')
     movieHTML(1, 'coming-soon-tray-2')
@@ -863,6 +864,13 @@ const bookData = [
         coverType: 'jpg',
     },
     {
+        name: "Faster Than Normal",
+        id: "faster",
+        link: "audible://view?section=discover&asin=B07648CSNN",
+        author: "Peter Shankman",
+        coverType: 'jpg',
+    },
+    {
         name: "12 Rules for Life",
         id: "jordan",
         link: "ibooks://",
@@ -893,21 +901,21 @@ const bookData = [
     {
         name: "Homo Deus",
         id: "homodeus",
-        link: "ibooks://",
+        link: "audible://view?section=discover&asin=B01N4DCBK6",
         author: "Yuval Noah Harari",
         coverType: 'jpg',
     },
     {
         name: "The Ride of a Lifetime",
         id: "ride",
-        link: "ibooks://",
+        link: "audible://view?section=discover&asin=0525499334",
         author: "Robert Iger",
         coverType: 'jpg',
     },
     {
         name: "The Martian",
         id: "martian",
-        link: "ibooks://",
+        link: "audible://view?section=discover&asin=B082BHJMFF",
         author: "Andy Weir",
         coverType: 'jpg',
     },
@@ -932,6 +940,41 @@ function bookPopulate(bookData, tray) {
     htmlString = appendSpacer(htmlString, 35)
     htmlString = hstackEmbed(htmlString)
     htmlString = scrollEmbed(htmlString, 35)
+
+    var trayElement = document.getElementById(tray)
+    trayElement.innerHTML = htmlString
+}
+
+function bookBigPopulate(tray) {
+    var dataLength = bookData.length
+
+    var htmlString = "";
+    // htmlString = appendSpacer(htmlString, 35)
+
+    for (i = 0; i < dataLength; i++) {
+        // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${bookData[i].link}"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
+        // var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('book',${i})"><div class="media-poster book-poster image-border" style="--poster: url('media-image/books/${bookData[i].id}.${bookData[i].coverType}');"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading secondary-fg">${bookData[i].author}</p></div></div></a>`
+        var bookCardHTML = `
+        <div class="media-big-card hstack content1">
+            <a class="media-big-poster book-big-poster clickable" style="--poster: url('media-image/books/${bookData[i].id}.${bookData[i].coverType}');" target="_blank" href="${bookData[i].link}"></a>
+            <div class="spacer-15"></div>
+            <div class="vstack fill-parent">
+                <div class="spacer fill-parent"></div>
+                <div class="media-big-title">${bookData[i].name}</div>
+                <div class="media-big-subtitle">${bookData[i].author}</div>
+            </div>
+            <div class="spacer"></div>
+        </div>`
+
+        htmlString = `${htmlString}${bookCardHTML}`
+        // if (i < dataLength - 1) {
+        //     htmlString = appendSpacer(htmlString, 10)
+        // }
+    }
+
+    // htmlString = appendSpacer(htmlString, 35)
+    // htmlString = hstackEmbed(htmlString)
+    // htmlString = scrollEmbed(htmlString, 35)
 
     var trayElement = document.getElementById(tray)
     trayElement.innerHTML = htmlString
