@@ -166,6 +166,28 @@ function popupAllHide() {
 
 const movieData1 = [
     {
+        name: "Rick and Morty",
+        id: "rick",
+        link: null,
+        info: {
+            service: "Adult Swim",
+            description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
+            summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
+        },
+        style: {
+            color: '2D1D54',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "275274",
+            reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
+            imdbID: "tt2861424",
+            redditLink: "https://www.reddit.com/r/rickandmorty",
+        },
+    },
+    {
         name: "Brooklyn Nine-Nine",
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
@@ -338,28 +360,6 @@ const movieData2 = [
             reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
             imdbID: "tt7908628",
             redditLink: "https://www.reddit.com/r/WhatWeDointheShadows",
-        },
-    },
-    {
-        name: "Rick and Morty",
-        id: "rick",
-        link: null,
-        info: {
-            service: "Adult Swim",
-            description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
-            summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
-        },
-        style: {
-            color: '2D1D54',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "275274",
-            reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
-            imdbID: "tt2861424",
-            redditLink: "https://www.reddit.com/r/rickandmorty",
         },
     },
     {
