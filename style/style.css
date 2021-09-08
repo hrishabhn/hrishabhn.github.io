@@ -188,6 +188,9 @@ body{
     border-radius: 10px;
 }
 
+.flex-grow{
+    flex-grow: 1;
+}
 
 .hline{
     display: flex;
@@ -203,7 +206,7 @@ body{
 
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 .vstack{
     display: flex;
@@ -212,7 +215,7 @@ body{
 
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 .fill-parent{
     height: 100%;
