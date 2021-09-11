@@ -98,11 +98,18 @@ function courseSwitchApps() {
         htmlString = `${htmlString}${courseHTML}`
     }
 
-    htmlString = hstackEmbed(htmlString)
-    htmlString = scrollEmbed(htmlString)
+    var hstack = document.createElement('div')
+    hstack.classList.add('hstack','spacer')
+    hstack.innerHTML = htmlString
+    
+    var scrollWrapper = document.createElement('div')
+    scrollWrapper.classList.add('srcoll')
+    scrollWrapper.append(hstack)
+    
+    console.log(scrollWrapper)
 
     var container = document.getElementById('course-switch-tray')
-    container.innerHTML = htmlString
+    container.append(scrollWrapper)
 }
 
 // function courseApps(locale) {
@@ -200,11 +207,18 @@ function mediaSwitchApps() {
         htmlString = `${htmlString}${mediaHTML}`
     }
 
-    htmlString = hstackEmbed(htmlString)
-    htmlString = scrollEmbed(htmlString)
+    var hstack = document.createElement('div')
+    hstack.classList.add('hstack','spacer')
+    hstack.innerHTML = htmlString
+    
+    var scrollWrapper = document.createElement('div')
+    scrollWrapper.classList.add('srcoll')
+    scrollWrapper.append(hstack)
+    
+    console.log(scrollWrapper)
 
     var container = document.getElementById('media-switch-tray')
-    container.innerHTML = htmlString
+    container.append(scrollWrapper)
 }
 
 function mediaSwitch(n) {
