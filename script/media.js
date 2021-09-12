@@ -189,6 +189,27 @@ const movieData1 = [
         },
     },
     {
+        name: "Atlanta",
+        id: "atlanta",
+        link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
+        info: {
+            service: "Hulu",
+            description: "Comedy &#149 Drama &#149 Music &#149 2 Seasons &#149 2016 - Present",
+            summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
+        },
+        style: {
+            color: '584029',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "313999",
+            reelgoodLink: "https://reelgood.com/show/atlanta-2016",
+            imdbID: "tt4288182",
+        },
+    },
+    {
         name: "Brooklyn Nine-Nine",
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
@@ -228,70 +249,6 @@ const movieData1 = [
             tvTimeID: "76885",
             reelgoodLink: "https://reelgood.com/show/cowboy-bebop-1998",
             imdbID: "tt0213338",
-        },
-    },
-    {
-        name: "Love Death Robots",
-        id: "ldr",
-        link: 'https://www.netflix.com/title/80174608',
-        info: {
-            service: "Netflix",
-            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present", 
-            summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
-        },
-        style: {
-            color: '200f17',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "357888",
-            reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
-            imdbID: "tt9561862",
-            redditLink: "https://www.reddit.com/r/LoveDeathAndRobots",
-        },
-    },
-    {
-        name: "Atlanta",
-        id: "atlanta",
-        link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
-        info: {
-            service: "Hulu",
-            description: "Comedy &#149 5 Seasons &#149 2016 - 2021",
-            summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
-        },
-        style: {
-            color: '584029',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "313999",
-            reelgoodLink: "https://reelgood.com/show/atlanta-2016",
-            imdbID: "tt4288182",
-        },
-    },
-    {
-        name: "Dave",
-        id: "dave",
-        link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
-        info: {
-            service: "Hulu",
-            description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
-            summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
-        },
-        style: {
-            color: '889898',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "354905",
-            reelgoodLink: "https://reelgood.com/show/dave-2020",
-            imdbID: "tt8531222",
         },
     },
     {
@@ -436,6 +393,49 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: "Dave",
+        id: "dave",
+        link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
+        info: {
+            service: "Hulu",
+            description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
+            summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
+        },
+        style: {
+            color: '889898',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "354905",
+            reelgoodLink: "https://reelgood.com/show/dave-2020",
+            imdbID: "tt8531222",
+        },
+    },
+    {
+        name: "Love Death Robots",
+        id: "ldr",
+        link: 'https://www.netflix.com/title/80174608',
+        info: {
+            service: "Netflix",
+            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present", 
+            summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
+        },
+        style: {
+            color: '200f17',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "357888",
+            reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
+            imdbID: "tt9561862",
+            redditLink: "https://www.reddit.com/r/LoveDeathAndRobots",
+        },
+    },
+    {
         name: "Money Heist",
         id: "money",
         link: "https://www.netflix.com/title/80192098",
@@ -558,17 +558,22 @@ const movieData3 = [
     {
         name: "Legion",
         id: "legion",
-        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+        link: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
         info: {
             service: "Hulu",
-            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
+            description: "Sci-Fi &#149 3 Seasons &#149 2017 - 2019",
+            summary: "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he's confronted with the possibility that the voices he hears and the visions he sees might be real.",
         },
         style: {
-            color: '870093',
-            posterType: 'webp',
+            color: '862849',
+            posterType: 'jpg',
             titleType: 'png',
             titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "320724",
+            reelgoodLink: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
+            imdbID: "tt5114356",
         },
     },
     {
@@ -595,7 +600,7 @@ const movieData4 = [
         link: null,
         info: {
             service: "Disney+",
-            description: "Animation &#149 Action &#149 Crime &#149 1995",
+            description: "Action &#149 Adventure &#149 Fantasy &#149 2021",
             summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
         },
         style: {
