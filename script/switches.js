@@ -99,11 +99,11 @@ function courseSwitchApps() {
     }
 
     var hstack = document.createElement('div')
-    hstack.classList.add('hstack','spacer')
+    hstack.classList = 'hstack spacer'
     hstack.innerHTML = htmlString
-    
+
     var scrollWrapper = document.createElement('div')
-    scrollWrapper.classList.add('srcoll')
+    scrollWrapper.classList = 'scroll radius-10'
     scrollWrapper.append(hstack)
 
     var container = document.getElementById('course-switch-tray')
@@ -206,11 +206,11 @@ function mediaSwitchApps() {
     }
 
     var hstack = document.createElement('div')
-    hstack.classList.add('hstack','spacer')
+    hstack.classList = 'hstack spacer'
     hstack.innerHTML = htmlString
-    
+
     var scrollWrapper = document.createElement('div')
-    scrollWrapper.classList.add('srcoll')
+    scrollWrapper.classList = 'scroll radius-10'
     scrollWrapper.append(hstack)
 
     var container = document.getElementById('media-switch-tray')
