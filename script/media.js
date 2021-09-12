@@ -584,6 +584,27 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
+        name: "Shang-Chi",
+        id: "shang",
+        link: null,
+        info: {
+            service: "Disney+",
+            description: "Animation &#149 Action &#149 Crime &#149 1995",
+            summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+        },
+        style: {
+            color: '4b3831',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/shangchi-and-the-legend-of-the-ten-rings-2021",
+            imdbID: 'tt9376612',
+        },
+    },
+    {
         name: "Ghost in the Shell",
         id: "ghost",
         link: "https://watch.amazon.com/detail?asin=B07WQZDXTM",
