@@ -124,6 +124,7 @@
 
 }
 .tv-preview-tray{
+    margin-bottom: 0px !important;
     padding: 0px 35px;
     background-color: black;
     color: white;
