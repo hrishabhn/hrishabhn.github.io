@@ -75,8 +75,8 @@ function searchLoad() {
     const searchElement = document.getElementById('google-search')
 
     if ('ontouchstart' in document.documentElement) {
-        searchElement.href = 'https://www.google.com'
-    } else {
         searchElement.href = 'google://search'
+    } else {
+        searchElement.href = 'https://www.google.com'
     }
 }
