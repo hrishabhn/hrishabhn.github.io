@@ -231,6 +231,28 @@ const movieData1 = [
         },
     },
     {
+        name: "Love Death Robots",
+        id: "ldr",
+        link: 'https://www.netflix.com/title/80174608',
+        info: {
+            service: "Netflix",
+            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present", 
+            summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
+        },
+        style: {
+            color: '200f17',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "357888",
+            reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
+            imdbID: "tt9561862",
+            redditLink: "https://www.reddit.com/r/LoveDeathAndRobots",
+        },
+    },
+    {
         name: "Atlanta",
         id: "atlanta",
         link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
@@ -515,22 +537,6 @@ const movieData3 = [
             posterType: 'webp',
             titleType: 'svg',
             titleSize: "mid",
-        },
-    },
-    {
-        name: "Love Death + Robots",
-        id: "ldr",
-        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-        info: {
-            service: "Netflix",
-            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-        },
-        style: {
-            color: '200f17',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
         },
     },
     {
