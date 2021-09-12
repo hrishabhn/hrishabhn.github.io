@@ -29,6 +29,7 @@ function newPopulate(){
     // flightPull()
     // showMediaPopup()
     userLoad()
+    searchLoad()
     // tvPopup(movieData[0][0])
     // widgetBarState()
 
@@ -66,4 +67,16 @@ function mainRefresh() {
     // statusBar(0,1500)
     resetBusCards()
     // console.log("refreshed")
+}
+
+
+
+function searchLoad() {
+    const searchElement = document.getElementById('google-search')
+
+    if ('ontouchstart' in document.documentElement) {
+        searchElement.href = 'https://www.google.com'
+    } else {
+        searchElement.href = 'google://search'
+    }
 }
