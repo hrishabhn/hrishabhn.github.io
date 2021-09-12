@@ -105,8 +105,6 @@ function courseSwitchApps() {
     var scrollWrapper = document.createElement('div')
     scrollWrapper.classList.add('srcoll')
     scrollWrapper.append(hstack)
-    
-    console.log(scrollWrapper)
 
     var container = document.getElementById('course-switch-tray')
     container.append(scrollWrapper)
@@ -214,8 +212,6 @@ function mediaSwitchApps() {
     var scrollWrapper = document.createElement('div')
     scrollWrapper.classList.add('srcoll')
     scrollWrapper.append(hstack)
-    
-    console.log(scrollWrapper)
 
     var container = document.getElementById('media-switch-tray')
     container.append(scrollWrapper)
