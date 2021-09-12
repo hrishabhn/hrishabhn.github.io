@@ -394,7 +394,7 @@ body{
     width: 100vw;
     left: 0px;
     top: 0px;
-    z-index: 200;
+    z-index: 550;
     /* background-color: #ffffff33; */
     /* -webkit-transition: all 0.25s; */
     pointer-events: none;
@@ -419,7 +419,7 @@ body{
     display: flex;
     position: fixed;
     justify-content: center;
-    z-index: 200;
+    z-index: 600;
     left: 0px;
     top: 0px;
     width: 100%; 
@@ -485,12 +485,24 @@ body{
 .main.main-tv{
     position: fixed;
     height: 100%;
-    width: calc(100% - 200px);
+    width: calc(100% - 00px);
     top: 0px;
-    left: 200px;
+    left: 00px;
     overflow: scroll;
 
+    z-index: 500;
+
+    transition: all 0.4s;
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 }
+
+.main.main-tv.hidden{
+    position: fixed;
+    /* opacity: 1; */
+    border-radius: 50px;
+    scale: 0.98;
+}
+
 
 .main > *:not(:last-child) {
     margin-bottom: 15px; 
