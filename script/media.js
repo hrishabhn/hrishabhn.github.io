@@ -189,27 +189,6 @@ const movieData1 = [
         },
     },
     {
-        name: "Atlanta",
-        id: "atlanta",
-        link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
-        info: {
-            service: "Hulu",
-            description: "Comedy &#149 Drama &#149 Music &#149 2 Seasons &#149 2016 - Present",
-            summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
-        },
-        style: {
-            color: '584029',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "313999",
-            reelgoodLink: "https://reelgood.com/show/atlanta-2016",
-            imdbID: "tt4288182",
-        },
-    },
-    {
         name: "Brooklyn Nine-Nine",
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
@@ -819,6 +798,31 @@ const movieData5 = [
         },
     },
 ]
+const movieData6 = [
+    {
+        name: "Atlanta",
+        id: "atlanta",
+        link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
+        info: {
+            service: "Hulu",
+            description: "Comedy &#149 Drama &#149 Music &#149 2 Seasons &#149 2016 - Present",
+            summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
+        },
+        style: {
+            color: '584029',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "313999",
+            reelgoodLink: "https://reelgood.com/show/atlanta-2016",
+            imdbID: "tt4288182",
+        },
+    },
+]
+
+
 
 const movieData = [
     movieData1,
