@@ -1321,6 +1321,7 @@ body{
     /* width: 100%; */
     min-width: 70px;
     flex-grow: 1;
+    flex-shrink: 0;
 
     border-radius: 10px;
     padding: 10px;
