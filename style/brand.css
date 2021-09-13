@@ -309,6 +309,18 @@
 
 
 
+/* MEDIA */
+
+.tv-time-text{
+    color: #FBD736 !important;
+}
+.black-text{
+    color: #000 !important;
+}
+.hulu-solid{
+    background: #1ce783;
+}
+
 
 
 
@@ -604,21 +616,6 @@
 .meijer{
     background-color: #DD1321;
 }
-
-
-
-
-/* MEDIA */
-
-.tv-time-text{
-    color: #FBD736 !important;
+.asana{
+    background-color: #F06A6A;
 }
-.black-text{
-    color: #000 !important;
-}
-.hulu-solid{
-    background: #1ce783;
-}
-
-
-
