@@ -1092,12 +1092,8 @@
     position: relative;
     box-sizing: border-box;
 
-    padding-left: 30px;
-    padding-right: 0;
-    margin: 10px 0 10px;
-
-    /* height: 60px; */
-    width: 100vw;
+    padding: 10px 30px 0px;
+    width: 100%;
 
     overflow-x: scroll;
     overflow-y: hidden;
@@ -1294,7 +1290,7 @@
         width: 100%;
     }
     .tv-popup-button-tray{
-        padding: 20px;
+        padding: 10px 20px 0px;
     }
     #tv-popup-summary{
         padding: 15px 20px 45px;
