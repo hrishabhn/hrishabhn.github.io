@@ -351,6 +351,11 @@
     /* background:linear-gradient(to bottom right,#e50914,#99060d); */
     background-color: #e50914;
 }
+.netflix-fg{
+    color: #e50914;
+    fill: #e50914;
+}
+
 .youtube{
     /* background:linear-gradient(to bottom right,#f00,#b30000); */
     background-color: #f00;
@@ -479,6 +484,10 @@
 .books{
     /* background:linear-gradient(to bottom right,#FC880F,#b0600b); */
     background-color: #FC880F;
+}
+.books-fg{
+    color: #FC880F;
+    fill: #FC880F;
 }
 .mstodo{
     background:linear-gradient(to bottom right,#185ABD,#0f3670);
