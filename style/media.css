@@ -64,13 +64,12 @@
     position: absolute;
     box-sizing: border-box;
 
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    padding: 15px;
+    height: 60px;
+    width: 60px;
+    padding: 20px;
 
-    top: 5px;
-    left: 30px;
+    top: 0px;
+    left: 0px;
 
     z-index: 1;
 
