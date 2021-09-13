@@ -661,6 +661,28 @@ const movieData4 = [
 ]
 const movieData5 = [
     {
+        name: "Only Murders in the Building",
+        id: "murders",
+        link: "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
+        info: {
+            service: "Hulu",
+            description: "Crime &#149 Comedy &#149 1 Season &#149 2021 - Present",
+            summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
+        },
+        style: {
+            color: '292A27',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "399959",
+            reelgoodLink: "https://reelgood.com/show/only-murders-in-the-building-2021",
+            imdbID: "tt12851524",
+            redditLink: 'https://www.reddit.com/r/OnlyMurdersHulu',
+        },
+    },
+    {
         name: "Lost",
         id: "lost",
         link: "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
