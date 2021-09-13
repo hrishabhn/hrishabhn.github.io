@@ -25,11 +25,15 @@ function tvPreview(i,j) {
     // console.log(movieData[i][j])
     const movie = movieData[i][j]
 
+    const headerElement = document.getElementById('tv-preview-header')
+    const headerText = document.getElementById('tv-preview-header-text')
     const posterElement = document.getElementById('tv-preview-poster')
     const titleElement = document.getElementById('tv-preview-title')
     const descElement = document.getElementById('tv-preview-description')
     const linkElement = document.getElementById('tv-preview-link')
 
+    headerElement.style.setProperty('--color',`#${movie.style.color}cc`)
+    headerText.innerHTML = movie.name
     posterElement.style.setProperty('--poster',`url('TV/background/${movie.id}.${movie.style.posterType}')`)
     titleElement.style.setProperty('--title',`url('TV/title/${movie.id}.${movie.style.titleType}')`)
     descElement.innerHTML = movie.info.description
