@@ -1014,7 +1014,7 @@
     position: relative;
 
     height: clamp(0px, 100%, 500px);
-    width: clamp(0px, 60%, 200px);
+    width: clamp(0px, 60%, 300px);
 
     margin-bottom: -20px;
     /* height: clamp(50vw); */
@@ -1072,6 +1072,8 @@
     font-size: 12px;
     color: white;
     fill: white;
+
+    opacity: 0.8;
 }
 .tv-popup-app-icon{
     display: flex;
