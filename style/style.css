@@ -492,15 +492,14 @@ body{
 
     z-index: 500;
 
-    transition: all 0.4s;
-    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+    /* transition: all 0.4s; */
+    /* transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);*/
 }
 
 .main.main-tv.hidden{
     position: fixed;
-    /* opacity: 1; */
-    border-radius: 50px;
-    scale: 0.98;
+    /* border-radius: 50px; */
+    /* scale: 0.98; */
 }
 
 
