@@ -1059,7 +1059,7 @@
 }
 .tv-popup-tray{
     margin: 20px 0px;
-    margin-left: 30px;
+    padding: 0px 30px;
 }
 .tv-popup-app{
     display: flex;
@@ -1189,8 +1189,8 @@
     font-size: 12px;
     font-weight: 500;
 
-    -webkit-backdrop-filter: brightness(0.5);
-    backdrop-filter: brightness(0.5);
+    -webkit-backdrop-filter: brightness(0.75);
+    backdrop-filter: brightness(0.75);
 }
 
 
@@ -1287,10 +1287,14 @@
         padding: 30px 20px 10px;
     }
     .tv-popup-tray{
-        margin-left: 20px;
+        padding: 0px 20px;
+    }
+
+    .tv-popup-app{
+        width: 100%;
     }
     .tv-popup-button-tray{
-        padding-left: 20px;
+        padding: 20px;
     }
     #tv-popup-summary{
         padding: 15px 20px 45px;
