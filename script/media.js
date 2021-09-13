@@ -846,6 +846,28 @@ const movieData6 = [
             redditLink: "https://www.reddit.com/r/IASIP",
         },
     },
+    {
+        name: "Manifest",
+        id: "manifest",
+        link: "https://www.hulu.com/series/manifest-a1e5ed46-2704-431e-94b0-9aea1560c712",
+        info: {
+            service: "Hulu",
+            description: "Drama &#149 Mystery &#149 4 Seasons &#149 2018 - Present",
+            summary: "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."
+        },
+        style: {
+            color: '504A6A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "349271",
+            reelgoodLink: "https://reelgood.com/show/manifest-2018",
+            imdbID: "tt8421350",
+            redditLink: 'https://www.reddit.com/r/ManifestNBC',
+        },
+    },
 ]
 
 
