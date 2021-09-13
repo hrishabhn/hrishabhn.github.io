@@ -131,6 +131,13 @@ function tvPopup(movie) {
         } else {
             redditElement.classList.add("hidden-always")
         }
+
+        if (movie.apps.subReddit) {
+            redditElement.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
+            redditElement.classList.remove("hidden-always")
+        } else {
+            redditElement.classList.add("hidden-always")
+        }
     } else {
         tvTimeElement.classList.add("hidden-always")
         reelgoodElement.classList.add("hidden-always")
@@ -190,6 +197,50 @@ const movieData1 = [
             reelgoodLink: "https://reelgood.com/show/only-murders-in-the-building-2021",
             imdbID: "tt12851524",
             redditLink: 'https://www.reddit.com/r/OnlyMurdersHulu',
+        },
+    },
+    {
+        name: "What We Do in the Shadows",
+        id: "shadows",
+        link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
+        info: {
+            service: "Hulu",
+            description: "Comedy &#149 Drama &#149 Fantasy &#149 3 Seasons &#149 2019 - Present",
+            summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
+        },
+        style: {
+            color: '050514',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "358211",
+            reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
+            imdbID: "tt7908628",
+            subReddit: 'WhatWeDointheShadows',
+        },
+    },
+    {
+        name: "What If?",
+        id: "whatif",
+        link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
+        info: {
+            service: "Disney+",
+            description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
+            summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
+        },
+        style: {
+            color: '0F0F38',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "367147",
+            reelgoodLink: "https://reelgood.com/show/what-if-2021",
+            imdbID: "tt10168312",
+            subReddit: 'MarvelsWhatIf',
         },
     },
     {
@@ -261,27 +312,6 @@ const movieData1 = [
 ]
 const movieData2 = [
     {
-        name: "What If?",
-        id: "whatif",
-        link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
-        info: {
-            service: "Disney+",
-            description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
-            summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
-        },
-        style: {
-            color: '0F0F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "367147",
-            reelgoodLink: "https://reelgood.com/show/what-if-2021",
-            imdbID: "tt10168312",
-        },
-    },
-    {
         name: "Ted Lasso",
         id: "ted",
         link: null,
@@ -301,28 +331,6 @@ const movieData2 = [
             reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
             imdbID: "tt10986410",
             redditLink: "https://www.reddit.com/r/TedLasso",
-        },
-    },
-    {
-        name: "What We Do in the Shadows",
-        id: "shadows",
-        link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
-        info: {
-            service: "Hulu",
-            description: "Comedy &#149 Drama &#149 Fantasy &#149 3 Seasons &#149 2019 - Present",
-            summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
-        },
-        style: {
-            color: '050514',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "358211",
-            reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
-            imdbID: "tt7908628",
-            redditLink: "https://www.reddit.com/r/WhatWeDointheShadows",
         },
     },
     {
@@ -350,49 +358,6 @@ const movieData2 = [
 
 ]
 const movieData3 = [
-    {
-        name: "Dave",
-        id: "dave",
-        link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
-        info: {
-            service: "Hulu",
-            description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
-            summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
-        },
-        style: {
-            color: '889898',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "354905",
-            reelgoodLink: "https://reelgood.com/show/dave-2020",
-            imdbID: "tt8531222",
-        },
-    },
-    {
-        name: "Love Death Robots",
-        id: "ldr",
-        link: 'https://www.netflix.com/title/80174608',
-        info: {
-            service: "Netflix",
-            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present", 
-            summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
-        },
-        style: {
-            color: '200f17',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "357888",
-            reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
-            imdbID: "tt9561862",
-            redditLink: "https://www.reddit.com/r/LoveDeathAndRobots",
-        },
-    },
     {
         name: "Money Heist",
         id: "money",
@@ -434,6 +399,49 @@ const movieData3 = [
             reelgoodLink: "https://reelgood.com/show/billions-2016",
             imdbID: "tt4270492",
             redditLink: 'https://www.reddit.com/r/Billions'
+        },
+    },
+    {
+        name: "Dave",
+        id: "dave",
+        link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
+        info: {
+            service: "Hulu",
+            description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
+            summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
+        },
+        style: {
+            color: '889898',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "354905",
+            reelgoodLink: "https://reelgood.com/show/dave-2020",
+            imdbID: "tt8531222",
+        },
+    },
+    {
+        name: "Love Death Robots",
+        id: "ldr",
+        link: 'https://www.netflix.com/title/80174608',
+        info: {
+            service: "Netflix",
+            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present", 
+            summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
+        },
+        style: {
+            color: '200f17',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "357888",
+            reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
+            imdbID: "tt9561862",
+            redditLink: "https://www.reddit.com/r/LoveDeathAndRobots",
         },
     },
     {
@@ -686,6 +694,50 @@ const movieData4 = [
     },
 ]
 const movieData5 = [
+    {
+        name: "The Expanse",
+        id: "expanse",
+        link: "https://watch.amazon.com/detail?asin=B08MMJTJSH",
+        info: {
+            service: "Prime Video",
+            description: "Action &#149 Adventure &#149 Sci-Fi &#149 6 Seasons &#149 2015 - Present",
+            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
+        },
+        style: {
+            color: '466A83',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: "280619",
+            reelgoodLink: "https://reelgood.com/show/the-expanse-2015",
+            imdbID: "tt3230854",
+            subReddit: 'TheExpanse',
+        },
+    },
+    {
+        name: "Y: The Last Man",
+        id: "lastman",
+        link: "https://www.hulu.com/series/y-the-last-man-9fb2d79b-1280-48be-b185-f989b9c9519a",
+        info: {
+            service: "Hulu",
+            description: 'Action &#149 Adventure &#149 Drama &#148 1 Season &#149 2021 - Present',
+            summary: 'A drama based on DC Comics\' acclaimed series by Brian K. Vaughan and Pia Guerra, Y: The Last Man traverses a post-apocalyptic world in which a cataclysmic event decimates every mammal with a Y chromosome but for one cisgender man and his pet monkey. The series follows the survivors in this new world as they struggle with their efforts to restore what was lost and the opportunity to build something better.',
+        },
+        style: {
+            color: '5D080D',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: "399959",
+            reelgoodLink: 'https://reelgood.com/show/y-the-last-man-2021',
+            imdbID: "tt8042500",
+            subReddit: 'YTheLastMan',
+        },  
+    },
     {
         name: "Lost",
         id: "lost",
