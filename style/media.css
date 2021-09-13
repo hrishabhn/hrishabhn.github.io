@@ -55,8 +55,8 @@
     /* min-height: calc((100vw - 200px) * 0.5625); */
     width: 100%;
 
-    /* padding-bottom: 100px; */
-    margin-bottom: -100px;
+    /* padding-bottom: 40%; */
+    margin-bottom: -20%;
 }
 
 .tv-preview-close{
@@ -103,9 +103,9 @@
     bottom: 0px;
     left: 0px;
 
-    height: 70%;
+    height: 100%;
     width: 100%;
-    padding: 0px 35px 100px;
+    padding: 0px 35px 20%;
 
     background-image: linear-gradient(#00000000, #000000);
 
@@ -121,7 +121,7 @@
     background-image: var(--title);
 
     height: 100%;
-    width: min(60%, 500px);
+    width: min(60%, 400px);
 
     /* height: clamp(0px, 100%, 500px); */
     /* width: clamp(0px, 60%, 300px); */
