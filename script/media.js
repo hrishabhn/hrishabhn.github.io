@@ -178,6 +178,28 @@ function popupAllHide() {
 
 const movieData1 = [
     {
+        name: 'Narcos: Mexico',
+        id: 'narcos',
+        link: 'https://www.netflix.com/title/80997085',
+        info: {
+            service: 'Netflix',
+            description: 'Crime &#149 Drama &#149 3 Seasons &#149 2018 - Present',
+            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '353232',
+            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
+            imdbID: 'tt8714904',
+            // redditLink: null,
+        },
+    },
+    {
         name: "Only Murders in the Building",
         id: "murders",
         link: "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
