@@ -178,50 +178,6 @@ function popupAllHide() {
 
 const movieData1 = [
     {
-        name: 'Dark',
-        id: 'dark',
-        link: 'https://www.netflix.com/title/80100172',
-        info: {
-            service: 'Netflix',
-            description: 'Crime &#149 Drama &#149 Mystery &#149 3 Seasons &#149 2017 - 2020',
-            summary: "When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. The mystery-drama series introduces an intricate puzzle filled with twists that includes a web of curious characters, all of whom have a connection to the town's troubled history -- whether they know it or not. The story includes supernatural elements that tie back to the same town in 1986. 'Dark' represents the first German original series produced for Netflix.",
-        },
-        style: {
-            color: '3f3a2d',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '334824',
-            reelgoodLink: 'https://reelgood.com/show/dark-2017',
-            imdbID: 'tt5753856',
-            // redditLink: null,
-        },
-    },
-    {
-        name: 'Fringe',
-        id: 'fringe',
-        link: 'https://watch.amazon.com/detail?asin=B001FVV2X2',
-        info: {
-            service: 'Prime Video',
-            description: 'Drama &#149 Mystery &#149 Sci-Fi &#149 5 Seasons &#149 2008 - 2013',
-            summary: "FBI Special Agent Olivia Dunham is assigned to the bureau's Fringe Division, in which she investigates unusual crimes and occurrences. Assisting Olivia in her investigations are once-institutionalised scientist Dr Walter Bishop, his jack-of-all-trades son, Peter, and FBI Junior Agent Astrid Farnsworth. As the team investigates cases of science gone awry, they discover connections to their own past and to a parallel universe. As the team explores life and solves cases in these interconnected worlds, new discoveries and complications continue to arise.",
-        },
-        style: {
-            color: '7a726b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: '82066',
-            reelgoodLink: null,
-            imdbID: 'tt1119644',
-            redditLink: null,
-        },
-    },
-    {
         name: "Only Murders in the Building",
         id: "murders",
         link: "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
@@ -738,6 +694,50 @@ const movieData4 = [
     },
 ]
 const movieData5 = [
+    {
+        name: 'Dark',
+        id: 'dark',
+        link: 'https://www.netflix.com/title/80100172',
+        info: {
+            service: 'Netflix',
+            description: 'Crime &#149 Drama &#149 Mystery &#149 3 Seasons &#149 2017 - 2020',
+            summary: "When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. The mystery-drama series introduces an intricate puzzle filled with twists that includes a web of curious characters, all of whom have a connection to the town's troubled history -- whether they know it or not. The story includes supernatural elements that tie back to the same town in 1986. 'Dark' represents the first German original series produced for Netflix.",
+        },
+        style: {
+            color: '3f3a2d',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '334824',
+            reelgoodLink: 'https://reelgood.com/show/dark-2017',
+            imdbID: 'tt5753856',
+            // redditLink: null,
+        },
+    },
+    {
+        name: 'Fringe',
+        id: 'fringe',
+        link: 'https://watch.amazon.com/detail?asin=B001FVV2X2',
+        info: {
+            service: 'Prime Video',
+            description: 'Drama &#149 Mystery &#149 Sci-Fi &#149 5 Seasons &#149 2008 - 2013',
+            summary: "FBI Special Agent Olivia Dunham is assigned to the bureau's Fringe Division, in which she investigates unusual crimes and occurrences. Assisting Olivia in her investigations are once-institutionalised scientist Dr Walter Bishop, his jack-of-all-trades son, Peter, and FBI Junior Agent Astrid Farnsworth. As the team investigates cases of science gone awry, they discover connections to their own past and to a parallel universe. As the team explores life and solves cases in these interconnected worlds, new discoveries and complications continue to arise.",
+        },
+        style: {
+            color: '7a726b',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '82066',
+            reelgoodLink: null,
+            imdbID: 'tt1119644',
+            redditLink: null,
+        },
+    },
     {
         name: "The Expanse",
         id: "expanse",
