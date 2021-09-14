@@ -228,7 +228,7 @@ const movieData1 = [
         info: {
             service: "Showtime",
             description: "Drama &#149 Money &#149 5 Seasons &#149 2016 - Present",
-            summary: 'U.S. Attorney Chuck Rhoades goes after hedge fund king Bobby "Axe" Axelrod in a battle between two powerful New York figures.',
+            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
         },
         style: {
             color: '6f4c2d',
