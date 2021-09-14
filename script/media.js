@@ -222,6 +222,28 @@ const movieData1 = [
         },
     },
     {
+        name: "Billions",
+        id: "billions",
+        link: null,
+        info: {
+            service: "Showtime",
+            description: "Drama &#149 Money &#149 5 Seasons &#149 2016 - Present",
+            summary: 'U.S. Attorney Chuck Rhoades goes after hedge fund king Bobby "Axe" Axelrod in a battle between two powerful New York figures.',
+        },
+        style: {
+            color: '6f4c2d',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "279536",
+            reelgoodLink: "https://reelgood.com/show/billions-2016",
+            imdbID: "tt4270492",
+            redditLink: 'https://www.reddit.com/r/Billions'
+        },
+    },
+    {
         name: "What If?",
         id: "whatif",
         link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
@@ -377,28 +399,6 @@ const movieData3 = [
             tvTimeID: "327417",
             reelgoodLink: "https://reelgood.com/show/money-heist-2017",
             imdbID: "tt6468322",
-        },
-    },
-    {
-        name: "Billions",
-        id: "billions",
-        link: null,
-        info: {
-            service: "Showtime",
-            description: "Drama &#149 Money &#149 5 Seasons &#149 2016 - Present",
-            summary: 'U.S. Attorney Chuck Rhoades goes after hedge fund king Bobby "Axe" Axelrod in a battle between two powerful New York figures.',
-        },
-        style: {
-            color: '6f4c2d',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "279536",
-            reelgoodLink: "https://reelgood.com/show/billions-2016",
-            imdbID: "tt4270492",
-            redditLink: 'https://www.reddit.com/r/Billions'
         },
     },
     {
