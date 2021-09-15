@@ -126,7 +126,7 @@ function menuSwitchApps() {
 
       var menuItemHTML = `<a id="menu-${i}" class="menu-item ${device}" target="_self" ${action}>
           <div class="menu-item-bg ${menuData[i].color}"></div>
-          <span class="menu-item-icon ${menuData[i].color}">
+          <span class="menu-item-icon ${menuData[i].color}-fg">
               ${menuData[i].icon}
           </span><span class="menu-item-text primary-fg">
               ${menuData[i].name}
