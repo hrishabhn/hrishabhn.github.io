@@ -418,6 +418,61 @@ const userWidget = {
     refresh: false,
 }
 
+const countdownData = [
+    {
+        name: 'BDubs',
+        date: 'Sep 16, 2021 20:00:00',
+    },
+    {
+        name: 'Exams',
+        date: 'Sep 27, 2021',
+    },
+    {
+        name: 'Utah',
+        date: 'Oct 8, 2021',
+    },
+    {
+        name: 'Christmas',
+        date: 'Dec 18, 2021',
+    },
+    {
+        name: 'Madrid',
+        date: 'Jan 31, 2022',
+    },
+]
+
+var allCountdowns = true
+
+function showAllCountdowns() {
+
+    if (countdownData.length > 3){
+        if (allCountdowns) {
+            for (i = 3; i < countdownData.length; i++) {
+                var card = document.getElementById(`countdown-card-${i}`)
+                var line = document.getElementById(`countdown-line-${i - 1}`)
+                
+                console.log(card)
+                card.classList.add('hidden-always')
+                line.classList.add('hidden-always')
+            }
+            allCountdowns = false
+        } else {
+            for (i = 3; i < countdownData.length; i++) {
+                var card = document.getElementById(`countdown-card-${i}`)
+                var line = document.getElementById(`countdown-line-${i - 1}`)
+
+                console.log(card)
+                card.classList.remove('hidden-always')
+                line.classList.remove('hidden-always')
+            }
+            allCountdowns = true
+        }
+
+
+        
+    }
+}
+
 const countdownWidget = {
     title: 'Countdown',
     id: 'countdown',
@@ -429,52 +484,40 @@ const countdownWidget = {
         bodyElement.classList = 'vstack spacer padding-0-15 fill-parent'
         return(bodyElement)
     },
-    // buttons: [
-    //     {
-    //         primary: false,
-    //         text: 'New',
-    //     },
-    //     {
-    //         primary: true,
-    //         text: 'Switch User',
-    //         action: function() { userSelectOpen() },
-    //     },
-    // ],
-    countdownData: [
+    buttons: [
+        // {
+        //     primary: false,
+        //     text: 'New',
+        // },
         {
-            name: 'Utah',
-            date: 'Oct 8, 2021',
-        },
-        {
-            name: 'Exam',
-            date: 'Sep 20, 2021',
-        },
-        {
-            name: 'BDubs',
-            date: 'Sep 16, 2021 20:00:00',
+            primary: true,
+            text: 'Show All',
+            action: function() { showAllCountdowns() },
         },
     ],
     initial: function() {
         const parent = document.getElementById(`${this.id}-widget-content`)
         var htmlString = ``
 
-        for (i = 0; i < this.countdownData.length; i++) {
-            const countdownReturn = countdownCalculate(this.countdownData[i].date)
-            console.log(countdownReturn)
+        for (i = 0; i < countdownData.length; i++) {
+            const countdownReturn = countdownCalculate(countdownData[i].date)
+            // console.log(countdownReturn)
 
             var itemHTML = `
-            <div class="hstack spacer fill-parent countdown-card">
-                <div id="countdown-name-1" class="countdown-name">${this.countdownData[i].name}</div>
+            <div id="countdown-card-${i}" class="hstack spacer fill-parent countdown-card">
+                <div id="countdown-name-${i}" class="countdown-name">${countdownData[i].name}</div>
                 <div class="spacer"></div>
                 <div class="vstack">
-                    <div id="countdown-num-1" class="countdown-num">${countdownReturn[0]}</div>
-                    <div id="countdown-days-1" class="countdown-days">${countdownReturn[1]}</div>
+                    <div id="countdown-num-${i}" class="countdown-num">${countdownReturn[0]}</div>
+                    <div id="countdown-days-${i}" class="countdown-days">${countdownReturn[1]}</div>
                 </div>
             </div>
             `
 
-            if (i < this.countdownData.length - 1) {
-                itemHTML = appendHLine(itemHTML)
+            if (i < countdownData.length - 1) {
+                var line = returnHline(`countdown-line-${i}`)
+                itemHTML = `${itemHTML}${line}`
+            //     itemHTML = appendHLine(itemHTML)
             }
 
             htmlString = `${htmlString}${itemHTML}`
@@ -486,6 +529,7 @@ const countdownWidget = {
         parent.innerHTML = htmlString
     },
     populate: function() {
+        showAllCountdowns()
         // const countdown = countdownCalculate()
     },
     refresh: false,
@@ -673,7 +717,6 @@ const flightWidget = {
         parent.innerHTML = contentHTML
     },
     populate: function() {
-
     },
     refresh: false,
 }
