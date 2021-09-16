@@ -1,8 +1,9 @@
 function flightPull() {
-    var api = `http://api.aviationstack.com/v1/flights?access_key=d522684e79577a51d55352e99848f7f0&flight_iata=KE37`;
+    var api = `http://api.aviationstack.com/v1/flights?access_key=d522684e79577a51d55352e99848f7f0&flight_iata=UA2007`;
     fetch(api)
         .then(response => response.json())
         .then(data => {
+            console.log(data)
             const flightData = {
                 depCode: data["data"][0]["departure"]["iata"],
                 arrCode: data["data"][0]["arrival"]["iata"],
