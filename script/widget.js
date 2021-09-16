@@ -86,7 +86,33 @@ function createWidget(widget) {
     // widget.populate()
 }
 
+function countdownCalculate(date) {
+    var futureDate = new Date(date).getTime()
+    // console.log(futureDate)
+    var nowDate = new Date().getTime()
+    var distance = futureDate - nowDate
+    // console.log(distance)
 
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if (days > 0) {
+        return [days,'days']
+    } else if (hours > 0) {
+        return [hours,'hours']
+    } else if (minutes > 0) {
+        return [minutes,'minutes']
+    } else {
+        return [seconds,'seconds']
+    }
+
+
+    var string = `${days}`
+    return [string,'days']
+    console.log(string)
+}
 
 const weatherWidget = {
     title: 'Weather',
@@ -392,6 +418,79 @@ const userWidget = {
     refresh: false,
 }
 
+const countdownWidget = {
+    title: 'Countdown',
+    id: 'countdown',
+    color: 'indigo',
+    icon: '<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve"><path d="M256 0C114.841 0 0 114.841 0 256s114.841 256 256 256 256-114.841 256-256S397.159 0 256 0zm116.101 291.335H250.952c-.244 0-.48-.029-.721-.036-.241.009-.477.036-.721.036-11.948 0-21.634-9.686-21.634-21.634V93.747c0-11.948 9.686-21.634 21.634-21.634s21.634 9.686 21.634 21.634v154.321h100.958c11.948 0 21.634 9.686 21.634 21.634s-9.687 21.633-21.635 21.633z"/></svg>',
+    body: function() {
+        var bodyElement = document.createElement('div')
+        bodyElement.id = `${this.id}-widget-content`
+        bodyElement.classList = 'vstack spacer padding-0-15 fill-parent'
+        return(bodyElement)
+    },
+    // buttons: [
+    //     {
+    //         primary: false,
+    //         text: 'New',
+    //     },
+    //     {
+    //         primary: true,
+    //         text: 'Switch User',
+    //         action: function() { userSelectOpen() },
+    //     },
+    // ],
+    countdownData: [
+        {
+            name: 'Utah',
+            date: 'Oct 8, 2021',
+        },
+        {
+            name: 'Exam',
+            date: 'Sep 20, 2021',
+        },
+        {
+            name: 'BDubs',
+            date: 'Sep 16, 2021 20:00:00',
+        },
+    ],
+    initial: function() {
+        const parent = document.getElementById(`${this.id}-widget-content`)
+        var htmlString = ``
+
+        for (i = 0; i < this.countdownData.length; i++) {
+            const countdownReturn = countdownCalculate(this.countdownData[i].date)
+            console.log(countdownReturn)
+
+            var itemHTML = `
+            <div class="hstack spacer fill-parent countdown-card">
+                <div id="countdown-name-1" class="countdown-name">${this.countdownData[i].name}</div>
+                <div class="spacer"></div>
+                <div class="vstack">
+                    <div id="countdown-num-1" class="countdown-num">${countdownReturn[0]}</div>
+                    <div id="countdown-days-1" class="countdown-days">${countdownReturn[1]}</div>
+                </div>
+            </div>
+            `
+
+            if (i < this.countdownData.length - 1) {
+                itemHTML = appendHLine(itemHTML)
+            }
+
+            htmlString = `${htmlString}${itemHTML}`
+        }
+
+
+        
+
+        parent.innerHTML = htmlString
+    },
+    populate: function() {
+        // const countdown = countdownCalculate()
+    },
+    refresh: false,
+}
+
 const busWidget = {
     title: 'Bus',
     id: 'bus',
@@ -583,6 +682,7 @@ const allWidgets = {
     widgets: [
         // flightWidget,
         userWidget,
+        countdownWidget,
         weatherWidget,
         localeWidget,
         calWidget,
