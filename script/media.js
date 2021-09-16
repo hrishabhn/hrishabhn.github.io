@@ -8,6 +8,7 @@ function mediaPopulate() {
     movieHTML(2, 'my-list-tray')
     movieHTML(3, 'movie-tray')
     movieHTML(4, 'new-show-tray')
+    movieHTML(5, 'paused-tray')
     // tvBig('always')
 
     bookBigPopulate('main-7')
@@ -17,6 +18,7 @@ function mediaPopulate() {
     movieHTML(2, 'my-list-tray-2')
     movieHTML(3, 'movie-tray-2')
     movieHTML(4, 'new-show-tray-2')
+    movieHTML(5, 'paused-tray-2')
 
     tvPreview(0,0)
 }
@@ -176,7 +178,7 @@ function popupAllHide() {
     //   mainContainer.classList.remove("sheetback")
 }
 
-const movieData1 = [
+const movieData0 = [
     {
         name: "Only Murders in the Building",
         id: "murders",
@@ -332,7 +334,7 @@ const movieData1 = [
         },
     },
 ]
-const movieData2 = [
+const movieData1 = [
     {
         name: "Ted Lasso",
         id: "ted",
@@ -379,7 +381,7 @@ const movieData2 = [
     },
 
 ]
-const movieData3 = [
+const movieData2 = [
     {
         name: "Money Heist",
         id: "money",
@@ -467,67 +469,6 @@ const movieData3 = [
         },
     },
     {
-        name: "The Grand Tour",
-        id: "grandTour",
-        link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-        info: {
-            service: "Prime Video",
-            description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-        },
-        style: {
-            color: 'C05D38',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "314087",
-            // tvTimeRate: "8.82",
-            reelgoodLink: "https://reelgood.com/show/the-grand-tour-2016",
-            // reelgoodRate: "83",
-            imdbID: "tt5712554",
-            // imdbRate: "8.7",
-        },
-    },
-    {
-        name: "Futurama",
-        id: "futurama",
-        link: "https://www.hulu.com/series/futurama-85bf4cc1-cd8b-4469-ad87-7289217a0b74",
-        info: {
-            service: "Hulu",
-            description: "Animation &#149 Comedy &#149 Sci-Fi &#149 8 Seasons &#149 1999 - 2013",
-            summary: "Accidentally frozen, pizza-deliverer Fry wakes up 1,000 years in the future. He is taken in by his sole descendant, an elderly and addled scientist who owns a small cargo delivery service. Among the other crew members are Capt. Leela, accountant Hermes, intern Amy, obnoxious robot Bender and lobsterlike moocher Dr. Zoidberg.",
-        },
-        style: {
-            color: 'E25924',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "314087",
-            reelgoodLink: "https://reelgood.com/show/futurama-1999",
-            // imdbID: "tt5712554",
-        },
-    },
-    {
-        name: "Family Guy",
-        id: "family",
-        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-        info: {
-            service: "Hulu",
-            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-        },
-        style: {
-            color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: "mid",
-        },
-    },
-    {
         name: "Twin Peaks",
         id: "twinpeaks",
         // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
@@ -543,45 +484,8 @@ const movieData3 = [
             titleSize: "tall",
         },
     },
-    {
-        name: "Legion",
-        id: "legion",
-        link: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
-        info: {
-            service: "Hulu",
-            description: "Sci-Fi &#149 3 Seasons &#149 2017 - 2019",
-            summary: "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he's confronted with the possibility that the voices he hears and the visions he sees might be real.",
-        },
-        style: {
-            color: '862849',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "320724",
-            reelgoodLink: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
-            imdbID: "tt5114356",
-        },
-    },
-    {
-        name: "Formula 1: Drive to Survive",
-        id: "drive",
-        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-        info: {
-            service: "Netflix",
-            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-        },
-        style: {
-            color: '4d5372',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-    },
 ]
-const movieData4 = [
+const movieData3 = [
     {
         name: "Shang-Chi",
         id: "shang",
@@ -715,7 +619,7 @@ const movieData4 = [
         },
     },
 ]
-const movieData5 = [
+const movieData4 = [
     {
         name: 'Dark',
         id: 'dark',
@@ -895,7 +799,107 @@ const movieData5 = [
         },
     },
 ]
-const movieData6 = [
+const movieData5 = [
+    {
+        name: "Legion",
+        id: "legion",
+        link: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
+        info: {
+            service: "Hulu",
+            description: "Sci-Fi &#149 3 Seasons &#149 2017 - 2019",
+            summary: "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he's confronted with the possibility that the voices he hears and the visions he sees might be real.",
+        },
+        style: {
+            color: '862849',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "320724",
+            reelgoodLink: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
+            imdbID: "tt5114356",
+        },
+    },
+    {
+        name: "Formula 1: Drive to Survive",
+        id: "drive",
+        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+        info: {
+            service: "Netflix",
+            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
+            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
+        },
+        style: {
+            color: '4d5372',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+    },
+    {
+        name: "The Grand Tour",
+        id: "grandTour",
+        link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+        info: {
+            service: "Prime Video",
+            description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
+            summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
+        },
+        style: {
+            color: 'C05D38',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "314087",
+            // tvTimeRate: "8.82",
+            reelgoodLink: "https://reelgood.com/show/the-grand-tour-2016",
+            // reelgoodRate: "83",
+            imdbID: "tt5712554",
+            // imdbRate: "8.7",
+        },
+    },
+    {
+        name: "Futurama",
+        id: "futurama",
+        link: "https://www.hulu.com/series/futurama-85bf4cc1-cd8b-4469-ad87-7289217a0b74",
+        info: {
+            service: "Hulu",
+            description: "Animation &#149 Comedy &#149 Sci-Fi &#149 8 Seasons &#149 1999 - 2013",
+            summary: "Accidentally frozen, pizza-deliverer Fry wakes up 1,000 years in the future. He is taken in by his sole descendant, an elderly and addled scientist who owns a small cargo delivery service. Among the other crew members are Capt. Leela, accountant Hermes, intern Amy, obnoxious robot Bender and lobsterlike moocher Dr. Zoidberg.",
+        },
+        style: {
+            color: 'E25924',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "314087",
+            reelgoodLink: "https://reelgood.com/show/futurama-1999",
+            // imdbID: "tt5712554",
+        },
+    },
+    {
+        name: "Family Guy",
+        id: "family",
+        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+        info: {
+            service: "Hulu",
+            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
+            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
+        },
+        style: {
+            color: '0B6F38',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: "mid",
+        },
+    },
+]
+const movieDataArchive = [
     {
         name: "Rick and Morty",
         id: "rick",
@@ -991,6 +995,7 @@ const movieData6 = [
 
 
 const movieData = [
+    movieData0,
     movieData1,
     movieData2,
     movieData3,
