@@ -1196,7 +1196,7 @@ body{
 .widget-subtitle{
     /* z-index: 1; */
     font-family: var(--asap);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 .widget-button{
@@ -1204,14 +1204,14 @@ body{
     position: relative;
 
     font-family: var(--apple);
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     color: white;
     text-decoration: none;
     cursor: default;
 
-    padding: 8px 10px;
-    border-radius: 10px;
+    padding: 6px 8px;
+    border-radius: 8px;
     white-space: nowrap;
 
     border-style: solid;
