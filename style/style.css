@@ -194,7 +194,8 @@ body{
 
 .hline{
     display: flex;
-    height: 2px;
+    flex-shrink: 0;
+    height: 1px;
     width: 100%;
 
     background-color: var(--white-20);
