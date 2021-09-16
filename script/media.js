@@ -9,16 +9,19 @@ function mediaPopulate() {
     movieHTML(3, 'movie-tray')
     movieHTML(4, 'new-show-tray')
     movieHTML(5, 'paused-tray')
+    movieHTML(6, 'waiting-tray')
     // tvBig('always')
 
     bookBigPopulate('main-7')
 
     movieHTML(0, 'up-next-tray-2')
-    movieHTML(1, 'coming-soon-tray-2')
+    movieHTML(1, 'weekly-tray-2')
     movieHTML(2, 'my-list-tray-2')
     movieHTML(3, 'movie-tray-2')
     movieHTML(4, 'new-show-tray-2')
     movieHTML(5, 'paused-tray-2')
+    movieHTML(6, 'soon-tray-2')
+
 
     tvPreview(0,0)
 }
@@ -38,7 +41,16 @@ function tvPreview(i,j) {
     headerText.innerHTML = movie.name
     posterElement.style.setProperty('--poster',`url('TV/background/${movie.id}.${movie.style.posterType}')`)
     titleElement.style.setProperty('--title',`url('TV/title/${movie.id}.${movie.style.titleType}')`)
-    descElement.innerHTML = movie.info.description
+    
+    if (movie.info.description) {
+        descElement.innerHTML = movie.info.description
+        descElement.classList.remove('hidden-always')
+    } else {
+        descElement.classList.add('hidden-always')
+    }
+
+
+
     linkElement.href = movie.link
 
     // const tvBigTitle = document.getElementById('tv-big-title')
@@ -67,7 +79,7 @@ function tvPopup(movie) {
 
     var serviceText;
 
-    if (!(movie.info.service == "Coming Soon")) {
+    if ((!(movie.info.service.includes('Coming Soon'))) &&(!(movie.info.service.includes('Returns')))) {
         serviceText = "Watch on " + movie.info.service
     } else {
         serviceText = movie.info.service
@@ -178,7 +190,53 @@ function popupAllHide() {
     //   mainContainer.classList.remove("sheetback")
 }
 
+
+// {
+//     name: 'Title',
+//     id: 'identifier',
+//     // link: 'watchlink',
+//     info: {
+//         // service: 'service',
+//         // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
+//         // summary: "summary",
+//     },
+//     style: {
+//         // color: '000000',
+//         // posterType: 'webp',
+//         // titleType: 'png',
+//         // titleSize: 'wide',
+//     },
+//     apps: {
+//         // tvTimeID: null,
+//         // reelgoodLink: 'link',
+//         // imdbID: 'identifier',
+//         // subReddit: null,
+//     },
+// },
+
 const movieData0 = [
+    {
+        name: "Billions",
+        id: "billions",
+        link: null,
+        info: {
+            service: "Showtime",
+            description: "Drama &#149 Money &#149 5 Seasons &#149 2016 - Present",
+            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
+        },
+        style: {
+            color: '6f4c2d',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "279536",
+            reelgoodLink: "https://reelgood.com/show/billions-2016",
+            imdbID: "tt4270492",
+            redditLink: 'https://www.reddit.com/r/Billions'
+        },
+    },
     {
         name: "Only Murders in the Building",
         id: "murders",
@@ -221,28 +279,6 @@ const movieData0 = [
             reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
             imdbID: "tt7908628",
             subReddit: 'WhatWeDointheShadows',
-        },
-    },
-    {
-        name: "Billions",
-        id: "billions",
-        link: null,
-        info: {
-            service: "Showtime",
-            description: "Drama &#149 Money &#149 5 Seasons &#149 2016 - Present",
-            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
-        },
-        style: {
-            color: '6f4c2d',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "279536",
-            reelgoodLink: "https://reelgood.com/show/billions-2016",
-            imdbID: "tt4270492",
-            redditLink: 'https://www.reddit.com/r/Billions'
         },
     },
     {
@@ -899,50 +935,7 @@ const movieData5 = [
         },
     },
 ]
-const movieDataArchive = [
-    {
-        name: "Rick and Morty",
-        id: "rick",
-        link: null,
-        info: {
-            service: "Adult Swim",
-            description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
-            summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
-        },
-        style: {
-            color: '2D1D54',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "275274",
-            reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
-            imdbID: "tt2861424",
-            redditLink: "https://www.reddit.com/r/rickandmorty",
-        },
-    },
-    {
-        name: "Atlanta",
-        id: "atlanta",
-        link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
-        info: {
-            service: "Hulu",
-            description: "Comedy &#149 Drama &#149 Music &#149 2 Seasons &#149 2016 - Present",
-            summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
-        },
-        style: {
-            color: '584029',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "313999",
-            reelgoodLink: "https://reelgood.com/show/atlanta-2016",
-            imdbID: "tt4288182",
-        },
-    },
+const movieData6 = [
     {
         name: "It's Always Sunny in Philadelphia",
         id: "always",
@@ -966,6 +959,250 @@ const movieDataArchive = [
             imdbID: "tt0472954",
             // imdbRate: "8.8",
             redditLink: "https://www.reddit.com/r/IASIP",
+        },
+    },
+    {
+        name: "The Mandalorian",
+        id: "mando",
+        link: null,
+        info: {
+            service: "Returns on December 24th",
+            // description: "Action &#149 Adventure &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
+            // summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
+        },
+        style: {
+            color: '4d627f',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: "361753",
+            reelgoodLink: "https://reelgood.com/show/the-mandalorian-2019",
+            imdbID: 'tt8111088',
+            subReddit: 'TheMandalorianTV',
+        },
+    },
+    // unknown date
+    {
+        name: "Atlanta",
+        id: "atlanta",
+        link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
+        info: {
+            service: "Hulu",
+            description: "Comedy &#149 Drama &#149 Music &#149 2 Seasons &#149 2016 - Present",
+            summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
+        },
+        style: {
+            color: '584029',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "313999",
+            reelgoodLink: "https://reelgood.com/show/atlanta-2016",
+            imdbID: "tt4288182",
+        },
+    },
+    {
+        name: 'The Boys',
+        id: 'boys',
+        // link: 'watchlink',
+        info: {
+            service: 'Coming Soon',
+            // description: 'Action &#149 Crime &#149 Drama &#149 2 Seasons &#149 2019 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '660000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/the-boys-2019',
+            imdbID: 'tt1190634',
+            subReddit: 'TheBoys',
+        },
+    },
+    {
+        name: 'F is for Family',
+        id: 'fisforfam',
+        link: 'https://www.netflix.com/title/80028732',
+        info: {
+            service: 'Coming Soon',
+            description: 'Animation &#149 Comedy &#149 Drama &#149 4 Seasons &#149 2015 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '0B6F38',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
+            imdbID: 'tt4326894',
+            subReddit: null,
+        },
+    },
+    {
+        name: 'Invincible',
+        id: 'invincible',
+        // link: 'watchlink',
+        info: {
+            service: 'Coming Soon',
+            // description: 'Action &#149 Animation &#149 Superhero &#149 ___ Seasons &#149 Y000 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '6C7866',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/invincible-2021',
+            // imdbID: 'identifier',
+            // subReddit: null,
+        },
+    },
+    {
+        name: 'Mythic Quest',
+        id: 'mythic',
+        link: null,
+        info: {
+            service: 'Coming Soon',
+            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Y999',
+            // summary: "summary",
+        },
+        style: {
+            color: '2F322F',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/mythic-quest-2020',
+            // imdbID: 'identifier',
+            subReddit: 'MythicQuest',
+        },
+    },
+    {
+        name: 'Ozark',
+        id: 'ozark',
+        link: 'https://www.netflix.com/title/80117552',
+        info: {
+            service: 'Coming Soon',
+            description: 'Crime &#149 Drama &#149 Thriller &#149 3 Seasons &#149 2017 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '660000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/ozark-2017',
+            imdbID: 'tt5071412',
+            subReddit: 'Ozark',
+        },
+    },
+    {
+        name: 'Peaky Blinders',
+        id: 'peaky',
+        link: 'https://www.netflix.com/title/80002479',
+        info: {
+            service: 'Coming Soon',
+            description: 'Crime &#149 Drama &#149 5 Seasons &#149 2013 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '493c35',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/peaky-blinders-2013',
+            imdbID: 'tt2442560',
+            // subReddit: null,
+        },
+    },
+    {
+        name: 'Snowfall',
+        id: 'snowfall',
+        // link: 'watchlink',
+        info: {
+            service: 'Coming Soon',
+            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Y999',
+            // summary: "summary",
+        },
+        style: {
+            color: '1A114D',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: null,
+        },
+    },
+    {
+        name: 'Snowpiercer',
+        id: 'snowpiercer',
+        link: null,
+        info: {
+            service: 'Coming Soon',
+            description: 'Action &#149 Drama &#149 Sci-Fi &#149 2 Seasons &#149 2020 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '444743',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
+            imdbID: 'tt6156584',
+            // subReddit: null,
+        },
+    },
+]
+const movieDataArchive = [
+    {
+        name: "Rick and Morty",
+        id: "rick",
+        link: null,
+        info: {
+            service: "Adult Swim",
+            description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
+            summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
+        },
+        style: {
+            color: '2D1D54',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "275274",
+            reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
+            imdbID: "tt2861424",
+            redditLink: "https://www.reddit.com/r/rickandmorty",
         },
     },
     {
@@ -1001,6 +1238,7 @@ const movieData = [
     movieData3,
     movieData4,
     movieData5,
+    movieData6,
 ]
 
 function movieHTML(n, tray) {
