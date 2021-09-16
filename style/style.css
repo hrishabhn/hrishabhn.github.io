@@ -496,14 +496,16 @@ body{
 
     z-index: 500;
 
-    /* transition: all 0.4s; */
-    /* transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);*/
+    transform-origin: center bottom;
+    transition: all 0.4s;
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 .main.main-tv.hidden{
     position: fixed;
-    /* border-radius: 50px; */
-    /* scale: 0.98; */
+    /* transform: translateY(5%); */
+    border-radius: 50px;
+    scale: 0.98;
 }
 
 
@@ -641,14 +643,19 @@ body{
     cursor: default;
     background-color: var(--dark-layer-1);
     transition: all 0.4s;
-    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+    transition-timing-function: all cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 
+    opacity: 1;
     /* transform-origin: center bottom; */
+}
+.user-select-card:active{
+    filter: brightness(0.5);
 }
 .user-select-card.preload{
     opacity: 0;
     scale: 0.9;
 }
+
 
 
 .user-select-icon{
