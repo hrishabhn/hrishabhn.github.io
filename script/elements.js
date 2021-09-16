@@ -53,3 +53,8 @@ function switchHTML(id,color,trigger,name,icon) {
 
     return html
 }
+
+function appendHLine(html) {
+    html = `${html}<div class="hline"></div>`
+    return html
+}
