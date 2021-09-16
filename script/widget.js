@@ -175,10 +175,10 @@ const weatherWidget = {
                         var hourlyData = data['hourly']
                         var currentData = data['current']
     
-                        // console.log(currentData)
                         
                         var fullDates = []
                         var hours = []
+                        var isNight = []
                         var conditions = []
                         var currentIcons = []
                         var temps = []
@@ -190,12 +190,14 @@ const weatherWidget = {
     
                             hours[i] = fullDates[i].getHours()
     
-                            if ((hours[i] < 8 ) && (hours[i] > 5)) {
-                                var isNight = false
+                            if ((hours[i] < 20 ) && (hours[i] > 5)) {
+                                isNight[i] = false
                             } else {
-                                var isNight = true
+                                isNight[i] = true
                             }
     
+                            console.log(hours[i])
+                            console.log(isNight[i])
     
                             if (hours[i] > 12) {
                                 hours[i] -= 12
@@ -223,7 +225,7 @@ const weatherWidget = {
                         for (let i = 0; i < dataLength; i++) {
                             switch (conditions[i].description) {
                                 case 'clear sky':
-                                    if (!isNight) {
+                                    if (!isNight[i]) {
                                         currentIcons[i] = weatherIcons.sun
                                     } else {
                                         currentIcons[i] = weatherIcons.moon
@@ -236,7 +238,7 @@ const weatherWidget = {
                                 case 'broken clouds':
                                 case 'scattered clouds':
                                 case 'overcast clouds':
-                                    if (!isNight) {
+                                    if (!isNight[i]) {
                                         currentIcons[i] = weatherIcons.sunCloud
                                     } else {
                                         currentIcons[i] = weatherIcons.moonCloud
@@ -251,14 +253,24 @@ const weatherWidget = {
                         var htmlString = ''
                         var itemHTML
     
-                        htmlString = appendSpacer(htmlString,8)
+                        htmlString = appendSpacer(htmlString,15)
                         for (let i = 0; i < 25; i++) {
-                            itemHTML = `
-                            <div id="weather-item-${i}" class="weather-item vstack">
-                                <p id="weather-item-time-${i}" class="weather-item-time">${hours[i]}</p>
-                                <div id="weather-item-icon-${i}" class="weather-item-icon">${currentIcons[i]}</div>
-                                <p  id="weather-item-temp-${i}" class="weather-item-temp">${temps[i]}&#176</p>
-                            </div>`
+
+                            if (i > 0) {
+                                itemHTML = `
+                                <div id="weather-item-${i}" class="weather-item vstack">
+                                    <p id="weather-item-time-${i}" class="weather-item-time">${hours[i]}</p>
+                                    <div id="weather-item-icon-${i}" class="weather-item-icon">${currentIcons[i]}</div>
+                                    <p id="weather-item-temp-${i}" class="weather-item-temp">${temps[i]}&#176</p>
+                                </div>`
+                            } else {
+                                itemHTML = `
+                                <div id="weather-item-${i}" class="weather-item now vstack">
+                                    <div id="weather-item-icon-${i}" class="weather-item-icon now">${currentIcons[i]}</div>
+                                    <p id="weather-item-temp-${i}" class="weather-item-temp now">${temps[i]}&#176</p>
+                                    <p class="weather-item-time now">${currentData.weather[0].main}</p>
+                                </div>`
+                            }
     
                             htmlString = `${htmlString}${itemHTML}`
     
@@ -451,7 +463,7 @@ function showAllCountdowns() {
                 var card = document.getElementById(`countdown-card-${i}`)
                 var line = document.getElementById(`countdown-line-${i - 1}`)
                 
-                console.log(card)
+                // console.log(card)
                 card.classList.add('hidden-always')
                 line.classList.add('hidden-always')
             }
@@ -724,9 +736,9 @@ const flightWidget = {
 const allWidgets = {
     widgets: [
         // flightWidget,
+        weatherWidget,
         userWidget,
         countdownWidget,
-        weatherWidget,
         localeWidget,
         calWidget,
         busWidget,
