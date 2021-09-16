@@ -450,7 +450,7 @@ body{
     margin-left: 200px;
     padding: 0px 35px;
     /* padding-top: 120px; */
-    width: calc(100% - 200px);
+    width: calc(100% - 500px);
 
     transition: 0.3s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
@@ -687,8 +687,8 @@ body{
     align-items: center;
     justify-content: center;
 
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 10px;
     /* background-color: var(--dark-layer-1); */
 
@@ -805,7 +805,7 @@ body{
     position: fixed;
     flex-direction: column;
     box-sizing: border-box;
-    width: 400px;
+    width: 300px;
     height: 100vh;
 
     bottom: 0px;
@@ -819,13 +819,12 @@ body{
     transition: 0.3s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
     z-index: 100;
-    transform: translateX(100%);
+    transform: translateX(0%);
 }
 #widgetbar.state1{
     transform: translateX(00%);
     /* box-shadow: 0 10px 30px 0px var(--black-20); */
-    box-shadow: 0px 0px 50px 10px var(--black-60)
-    ;
+    box-shadow: 0px 0px 50px 10px var(--black-60);
 }
 .sidebar-button{
     display: flex;
@@ -1079,6 +1078,10 @@ body{
     padding: 12px 15px;
     box-sizing: border-box;
 }
+.padding-0-15{
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
 
 .content-title{
     display: flex;
@@ -1156,13 +1159,13 @@ body{
 }
 .widget-title-content{
     filter: brightness(2);
-    padding: 16px 12px;
+    padding: 10px 12px;
 }
 .widget-title p{
     z-index: 1;
     /* padding: 8px 12px; */
-    font-family: var(--asap);
-    font-size: 16px;
+    font-family: var(--apple);
+    font-size: 12px;
     font-weight: 500;
 }
 .widget-title-icon{
@@ -1171,8 +1174,8 @@ body{
     justify-content: center;
     align-items: center;
 
-    height: 16px;
-    width: 16px;
+    height: 14px;
+    width: 14px;
 
 }
 .widget-image{
@@ -1265,6 +1268,22 @@ body{
 #cal-icon-date{
     font-size: 38px;
     font-weight: 400;
+}
+
+.countdown-card{
+    padding: 10px 0px;
+}
+.countdown-name{
+    font-size: 16px;
+    font-weight: 500;
+}
+.countdown-num{
+    font-size: 24px;
+    font-weight: 400;
+}
+.countdown-days{
+    font-size: 10px;
+    font-weight: 500;
 }
 
 .info-card{
@@ -1734,20 +1753,12 @@ body{
         padding: 0px 0px 20px;
         /* padding-bottom: 20px; */
     }
-    /* #main-container{
+    #main-container{
         width: calc(100% - 200px);
     }
-    #main-container.state1{
-        pointer-events: none;
-        filter: blur(5px);
-    } */
-    /* #widgetbar{
+    #widgetbar{
         transform: translateX(100%);
     }
-    #widgetbar.state1{
-        transform: translateX(0%);
-        box-shadow: var(--shaded-dark);
-    } */
     #col-2{
         width: 100%;
         margin-bottom: 15px;
