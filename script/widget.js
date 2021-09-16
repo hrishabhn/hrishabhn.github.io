@@ -736,8 +736,8 @@ const flightWidget = {
 const allWidgets = {
     widgets: [
         // flightWidget,
-        weatherWidget,
         userWidget,
+        weatherWidget,
         countdownWidget,
         localeWidget,
         calWidget,
