@@ -58,3 +58,6 @@ function appendHLine(html) {
     html = `${html}<div class="hline"></div>`
     return html
 }
+function returnHline(id) {
+    return `<div id="${id}" class="hline"></div>`
+}
