@@ -25,32 +25,6 @@
     background-image: url('../TV/title/atlanta.png');
 }
 
-.snowfall-solid{
-    background-color: #1A114D;
-}
-.snowfall-gradient{
-    background: linear-gradient(#00000000,#1A114D);
-}
-.snowfall-poster{
-    background-image: url('../TV/background/snowfall.jpeg');
-}
-.snowfall-title{
-    background-image: url('../TV/title/snowfall.png');
-}
-
-.mythic-solid{
-    background-color: #2F322F;
-}
-.mythic-gradient{
-    background: linear-gradient(#00000000,#2F322F);
-}
-.mythic-poster{
-    background-image: url('../TV/background/mythic.webp');
-}
-.mythic-title{
-    background-image: url('../TV/title/mythic.png');
-}
-
 .spy-solid{
     background-color: #7f6b57;
 }
