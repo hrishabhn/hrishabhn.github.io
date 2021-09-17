@@ -522,6 +522,11 @@
     text-decoration: none;
     vertical-align: top;
     /* background-color: var(--white-100); */
+    flex-shrink: 0;
+
+    scroll-snap-align: start;
+    scroll-margin-left: 35px;
+
 }
 .tv-card-poster{
     display: flex;
