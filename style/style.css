@@ -1869,7 +1869,7 @@ body{
     }
     .menu-item-icon{
         margin: 0px;
-        scale: 2;
+        scale: 1.6;
         /* height: 22px; */
         /* width: 22px; */
         background: none !important;
