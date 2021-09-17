@@ -35,9 +35,9 @@ function tvPreview(i,j) {
     const posterElement = document.getElementById('tv-preview-poster')
     const titleElement = document.getElementById('tv-preview-title')
     const descElement = document.getElementById('tv-preview-description')
-    const linkElement = document.getElementById('tv-preview-link')
+    // const linkElement = document.getElementById('tv-preview-link')
 
-    headerElement.style.setProperty('--color',`#${movie.style.color}cc`)
+    headerElement.style.setProperty('--color',`#${movie.style.color}`)
     headerText.innerHTML = movie.name
     posterElement.style.setProperty('--poster',`url('TV/background/${movie.id}.${movie.style.posterType}')`)
     titleElement.style.setProperty('--title',`url('TV/title/${movie.id}.${movie.style.titleType}')`)
@@ -51,7 +51,7 @@ function tvPreview(i,j) {
 
 
 
-    linkElement.href = movie.link
+    // linkElement.href = movie.link
 
     // const tvBigTitle = document.getElementById('tv-big-title')
     // const tvBigPlay = document.getElementById('tv-big-play')
