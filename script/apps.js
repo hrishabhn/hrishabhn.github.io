@@ -10,7 +10,7 @@ function apps(){
 
     apartmentApps()
 
-    appType('action',iosSystemApps,'ios-system-tray',null,null)
+    appType('action',iosSystemApps,'ios-system-tray',null,'hidden-desktop')
     financeApps()
     appType('action',learningApps,'learning-tray','Learning',null)
     socialApps()
