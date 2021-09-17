@@ -26,6 +26,23 @@ function mediaPopulate() {
     tvPreview(0,0)
 }
 
+function scrollTVPreview(i) {
+
+    for (j = 0; j < movieData[i].length; j++) {
+        var element = document.getElementById(`tv-card-${i}-${j}`).getBoundingClientRect()
+        
+        if ((element.x < 40) && (element.x > 0)){
+            tvPreview(i,j)
+        }
+
+
+        console.log(element.x)
+    }
+
+
+
+}
+
 function tvPreview(i,j) {
     // console.log(movieData[i][j])
     const movie = movieData[i][j]
