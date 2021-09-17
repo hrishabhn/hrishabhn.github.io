@@ -196,8 +196,8 @@ const weatherWidget = {
                                 isNight[i] = true
                             }
     
-                            console.log(hours[i])
-                            console.log(isNight[i])
+                            // console.log(hours[i])
+                            // console.log(isNight[i])
     
                             if (hours[i] > 12) {
                                 hours[i] -= 12
@@ -431,10 +431,6 @@ const userWidget = {
 }
 
 const countdownData = [
-    {
-        name: 'BDubs',
-        date: 'Sep 16, 2021 20:00:00',
-    },
     {
         name: 'Exams',
         date: 'Sep 27, 2021',
