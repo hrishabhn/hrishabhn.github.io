@@ -35,7 +35,7 @@ const menuData = [
     type: 'page',
     name: 'School',
     icon: '<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M361 8.787V100h91.213zM149.565 250.713h53.077l-26.417-69.999z"/><path d="M346 130c-8.284 0-15-6.716-15-15V0H66c-8.284 0-15 6.716-15 15v482c0 8.284 6.716 15 15 15h380c8.284 0 15-6.716 15-15V130zm-80 40h15v-15c0-8.284 6.716-15 15-15s15 6.716 15 15v15h15c8.284 0 15 6.716 15 15s-6.716 15-15 15h-15v15c0 8.284-6.716 15-15 15s-15-6.716-15-15v-15h-15c-8.284 0-15-6.716-15-15s6.716-15 15-15zm-21.542 149.034c-1.744.658-3.534.97-5.294.97-6.062 0-11.77-3.701-14.036-9.708l-11.164-29.583H138.14l-11.283 29.626c-2.949 7.742-11.615 11.627-19.356 8.679-7.742-2.948-11.627-11.615-8.679-19.356l60.08-157.747c.043-.114.088-.227.134-.339 2.873-7.024 9.633-11.568 17.222-11.575h.019c7.582 0 14.341 4.528 17.226 11.541.056.136.109.272.161.409l59.534 157.753c2.923 7.751-.99 16.405-8.74 19.33zM386 450H266c-8.284 0-15-6.716-15-15s6.716-15 15-15h120c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60H266c-8.284 0-15-6.716-15-15s6.716-15 15-15h120c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/></svg>',
-    color: 'blue',
+    color: 'mint',
     trigger: 'menuSwitch(4)',
   },
   {
@@ -172,9 +172,11 @@ function menuSwitch(n) {
 
   var title = document.getElementById("title-page")
   var headerText = document.getElementById("header-text")
+  var headerBox = document.getElementById('header')
 
   title.innerHTML = menuData[n].name
   headerText.innerHTML = menuData[n].name
+  headerBox.classList = menuData[n].color
 }
 
 
