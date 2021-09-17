@@ -236,6 +236,7 @@ body{
     flex-direction: row;
     width: 100%;
     overflow: scroll;
+    scroll-snap-type: x mandatory;
 }
 .scroll.margin-15{
     width: calc(100% + 30px);
