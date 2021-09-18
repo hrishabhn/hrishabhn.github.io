@@ -537,11 +537,13 @@ body{
     top: 0px;
     left: 0px;
 
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     letter-spacing: 0.5px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-family: var(--asap);
     width: 100vw;
+    /* padding: 0px 20px; */
 
     /* padding-left: 235px; */
     /* padding-right: 335px; */
