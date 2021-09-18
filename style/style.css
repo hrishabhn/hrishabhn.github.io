@@ -161,6 +161,7 @@ body{
 .spacer-x{
     min-height: var(--size);
     min-width: var(--size);
+    flex-shrink: 0;
 }
 .spacer-5{
     min-height: 5px;
@@ -540,13 +541,15 @@ body{
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    width: 100%;
+    width: 100vw;
 
     /* padding-left: 235px; */
     /* padding-right: 335px; */
     /* padding-top: 25px; */
     height: 60px;
     z-index: 500;
+
+    overflow-x: auto;
 }
 /* #header-text{
     width: 100%;
