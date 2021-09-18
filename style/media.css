@@ -45,12 +45,15 @@
 
     white-space: nowrap;
     flex-shrink: 0;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     padding: 8px 10px;
     border-radius: 10px;
 }
 .media-page-switch:hover{
+    background-color: var(--black-20);
+}
+.media-page-switch.selected{
     background-color: var(--black-20);
 }
 
