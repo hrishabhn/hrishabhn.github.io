@@ -172,6 +172,6 @@ function userCurrent(i) {
     userName.innerHTML = `${userList[i].name.first}`
 
     // console.log(i)
-    document.getElementById('main-container').classList.remove('preload')
+    // document.getElementById('main-container').classList.remove('preload')
     // console.log(userCurrentIcon)
 }
