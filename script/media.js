@@ -58,7 +58,8 @@ function tvPreview(i,j) {
     headerText.innerHTML = movie.name
     posterElement.style.setProperty('--poster',`url('TV/background/${movie.id}.${movie.style.posterType}')`)
     titleElement.style.setProperty('--title',`url('TV/title/${movie.id}.${movie.style.titleType}')`)
-    
+    titleElement.classList = movie.style.titleSize
+
     if (movie.info.description) {
         descElement.innerHTML = movie.info.description
         descElement.classList.remove('hidden-always')
@@ -539,6 +540,28 @@ const movieData2 = [
     },
 ]
 const movieData3 = [
+    {
+        name: 'Eternals',
+        id: 'eternals',
+        // link: 'watchlink',
+        info: {
+            service: 'Coming Soon',
+            description: 'Action &#149 Adventure &#149 Drama &#149 2021',
+            summary: "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
+        },
+        style: {
+            color: '645542',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/movie/this-is-the-end-2013',
+            imdbID: 'tt9032400',
+            // subReddit: null,
+        },
+    },
     {
         name: 'This is the End',
         id: 'theend',
