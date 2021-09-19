@@ -181,12 +181,22 @@
     background-image: var(--title);
 
     /* height: 100%; */
-    width: min(60%, 400px);
+    /* width: min(60%, 400px); */
     flex-shrink: 0;
     flex-grow: 1;
     /* min-height: 100px; */
     /* height: clamp(0px, 100%, 500px); */
     /* width: clamp(0px, 60%, 300px); */
+}
+
+#tv-preview-title.wide{
+    width: min(80%, 600px);
+}
+#tv-preview-title.mid{
+    width: min(70%, 450px);
+}
+#tv-preview-title.tall{
+    width: min(60%, 300px);
 }
 
 #tv-preview-description{
@@ -1366,7 +1376,14 @@
         margin-bottom: 0px;
         font-size: 14px;
     }
-    #tv-preview-title{
+
+    #tv-preview-title.wide{
+        width: 60%;
+    }
+    #tv-preview-title.mid{
+        width: 50%;
+    }
+    #tv-preview-title.tall{
         width: 40%;
     }
     .tv-preview-tray{
