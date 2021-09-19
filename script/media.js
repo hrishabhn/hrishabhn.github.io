@@ -557,7 +557,7 @@ const movieData3 = [
         },
         apps: {
             // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/movie/this-is-the-end-2013',
+            reelgoodLink: 'https://reelgood.com/movie/eternals-2021',
             imdbID: 'tt9032400',
             // subReddit: null,
         },
