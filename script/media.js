@@ -540,6 +540,28 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: 'This is the End',
+        id: 'theend',
+        // link: 'watchlink',
+        info: {
+            service: 'Starz',
+            description: 'Comedy &#149 2013',
+            summary: "Six Los Angeles celebrities are stuck in James Franco's house after a series of devastating events just destroyed the city. Inside, the group not only have to face the apocalypse, but themselves.",
+        },
+        style: {
+            color: '3b2420',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/movie/this-is-the-end-2013',
+            imdbID: 'tt1245492',
+            // subReddit: null,
+        },
+    },
+    {
         name: "Shang-Chi",
         id: "shang",
         link: null,
