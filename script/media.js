@@ -21,6 +21,7 @@ function mediaPopulate() {
     movieHTML(4, 'new-show-tray-2')
     movieHTML(5, 'paused-tray-2')
     movieHTML(6, 'soon-tray-2')
+    movieHTML(7, 'rewatch-tray-2')
 
 
     tvPreview(0,0)
@@ -124,7 +125,7 @@ function tvPopup(movie) {
     var linkIcon = document.getElementById("tv-popup-button-icon")
     if (movie.link) {
         linkIcon.classList.remove("hidden-always")
-        linkElement.href = movie.link;
+        linkElement.href = processLink(movie)
     } else {
         linkIcon.classList.add("hidden-always")
         linkElement.removeAttribute('href')
@@ -135,33 +136,54 @@ function tvPopup(movie) {
     var imdbElement = document.getElementById("tv-popup-imdb")
     var redditElement = document.getElementById("tv-popup-reddit")
 
+    var tvTimeSpacer = document.getElementById('tv-time-spacer')
+    var reelgoodSpacer = document.getElementById('reelgood-spacer')
+    var imdbSpacer = document.getElementById('imdb-spacer')
+    var redditSpacer = document.getElementById('reddit-spacer')
+
     if (movie.apps) {
         if (movie.apps.tvTimeID) {
             tvTimeElement.href = "https://www.tvtime.com/en/show/" + movie.apps.tvTimeID;
             tvTimeElement.classList.remove("hidden-always")
+
+            tvTimeSpacer.classList.remove('hidden-always')
         } else {
             tvTimeElement.classList.add("hidden-always")
+
+            tvTimeSpacer.classList.add('hidden-always')
         }
     
         if (movie.apps.reelgoodLink) {
             reelgoodElement.href = movie.apps.reelgoodLink;
             reelgoodElement.classList.remove("hidden-always")
+
+            reelgoodSpacer.classList.remove('hidden-always')
         } else {
             reelgoodElement.classList.add("hidden-always")
+
+            reelgoodSpacer.classList.add('hidden-always')
         }
     
         if (movie.apps.imdbID) {
             imdbElement.href = "https://www.imdb.com/title/" + movie.apps.imdbID;
             imdbElement.classList.remove("hidden-always")
+
+            imdbSpacer.classList.remove('hidden-always')
         } else {
             imdbElement.classList.add("hidden-always")
+
+            imdbSpacer.classList.add('hidden-always')
         }
     
         if (movie.apps.redditLink) {
             redditElement.href = movie.apps.redditLink;
             redditElement.classList.remove("hidden-always")
+
+            // redditSpacer.classList.remove('hidden-always')
         } else {
             redditElement.classList.add("hidden-always")
+
+            // redditSpacer.classList.add('hidden-always')
         }
 
         if (movie.apps.subReddit) {
@@ -195,6 +217,15 @@ function tvPopup(movie) {
     // document.getElementById("tv-popup-imdb-rating").innerHTML = imdbRate;
 }
 
+function processLink(movie) {
+    if (movie.link.netflix) {
+        return `https://www.netflix.com/title/${movie.link.netflix}`
+    } else if (movie.link.amazon) {
+        return movie.link.amazon
+    } else {
+        return movie.link
+    }
+}
 
 function popupAllShow() {
     bgBlur.className = "background-blur background-blur-show";
@@ -231,7 +262,6 @@ function popupAllHide() {
 //         // subReddit: null,
 //     },
 // },
-
 const movieData0 = [
     {
         name: "Billions",
@@ -719,6 +749,28 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
+        name: 'For All Mankind',
+        id: 'mankind',
+        link: 'https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7',
+        info: {
+            service: 'TV+',
+            description: 'Sci-Fi &#149 2 Seasons &#149 2019 - Present',
+            summary: "Exploring the possibilities that might exist if the global space race had continued and where humanity would be now.",
+        },
+        style: {
+            color: '3e587a',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '356202',
+            reelgoodLink: 'https://reelgood.com/show/for-all-mankind-2019',
+            imdbID: 'tt7772588',
+            // subReddit: null,
+        },
+    },
+    {
         name: 'Dark',
         id: 'dark',
         link: 'https://www.netflix.com/title/80100172',
@@ -763,28 +815,6 @@ const movieData4 = [
         },
     },
     {
-        name: "The Expanse",
-        id: "expanse",
-        link: 'https://watch.amazon.com/detail?asin=B08MMJTJSH',
-        info: {
-            service: "Prime Video",
-            description: "Action &#149 Adventure &#149 Sci-Fi &#149 6 Seasons &#149 2015 - Present",
-            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
-        },
-        style: {
-            color: '466A83',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: "280619",
-            reelgoodLink: "https://reelgood.com/show/the-expanse-2015",
-            imdbID: "tt3230854",
-            subReddit: 'TheExpanse',
-        },
-    },
-    {
         name: "Y: The Last Man",
         id: "lastman",
         link: "https://www.hulu.com/series/y-the-last-man-9fb2d79b-1280-48be-b185-f989b9c9519a",
@@ -805,27 +835,6 @@ const movieData4 = [
             imdbID: "tt8042500",
             subReddit: 'YTheLastMan',
         },  
-    },
-    {
-        name: "Lost",
-        id: "lost",
-        link: "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
-        info: {
-            service: "Hulu",
-            description: "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
-            summary: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
-        },
-        style: {
-            color: '6a5828',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "73739",
-            reelgoodLink: "https://reelgood.com/show/lost-2004",
-            imdbID: "tt0411008",
-        },
     },
     {
         name: "The Spy",
@@ -898,6 +907,50 @@ const movieData4 = [
     },
 ]
 const movieData5 = [
+    {
+        name: 'Curb Your Enthusiasm',
+        id: 'curb',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series',
+        info: {
+            service: 'HBO Max',
+            description: 'Comedy &#149 10 Seasons &#149 2000 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '746e6e',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '76203',
+            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
+            imdbID: 'tt0264235',
+            // subReddit: null,
+        },
+    },
+    {
+        name: 'South Park',
+        id: 'southpark',
+        // link: 'watchlink',
+        info: {
+            service: 'HBO Max',
+            // description: 'Animation &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: 'b8c2c0',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: null,
+        },
+    },
     {
         name: "Legion",
         id: "legion",
@@ -1090,6 +1143,28 @@ const movieData6 = [
         },
     },
     {
+        name: "The Expanse",
+        id: "expanse",
+        link: 'https://watch.amazon.com/detail?asin=B08MMJTJSH',
+        info: {
+            service: "Prime Video",
+            description: "Action &#149 Adventure &#149 Sci-Fi &#149 6 Seasons &#149 2015 - Present",
+            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
+        },
+        style: {
+            color: '466A83',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: "280619",
+            reelgoodLink: "https://reelgood.com/show/the-expanse-2015",
+            imdbID: "tt3230854",
+            subReddit: 'TheExpanse',
+        },
+    },
+    {
         name: 'F is for Family',
         id: 'fisforfam',
         link: 'https://www.netflix.com/title/80028732',
@@ -1130,6 +1205,50 @@ const movieData6 = [
             // tvTimeID: null,
             reelgoodLink: 'https://reelgood.com/show/invincible-2021',
             // imdbID: 'identifier',
+            // subReddit: null,
+        },
+    },
+    {
+        name: 'Loki',
+        id: 'loki',
+        // link: 'watchlink',
+        info: {
+            service: 'Coming Soon',
+            description: 'Action & Adventure &#149 Fantasy &#149 1 Season &#149 2021 - Present',
+            summary: "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
+        },
+        style: {
+            color: 'a87643',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '362472',
+            reelgoodLink: 'https://reelgood.com/show/loki-2021',
+            imdbID: 'tt9140554',
+            // subReddit: null,
+        },
+    },
+    {
+        name: 'Manifest',
+        id: 'manifest',
+        // link: 'watchlink',
+        info: {
+            service: 'Coming Soon',
+            description: 'Drama &#149 Mystery &#149 3 Seasons &#149 2018 - Present',
+            summary: "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds.",
+        },
+        style: {
+            color: '504A6A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '349271',
+            reelgoodLink: 'https://reelgood.com/show/manifest-2018',
+            imdbID: 'tt8421350',
             // subReddit: null,
         },
     },
@@ -1244,6 +1363,119 @@ const movieData6 = [
         },
     },
 ]
+const movieData7 = [
+    {
+        name: 'Game of Thrones',
+        id: 'gameofthrones',
+        // link: 'watchlink',
+        info: {
+            service: 'HBO Max',
+            description: 'Action &#149 Adventure &#149 Fantasy &#149 8 Seasons &#149 2011 - 2019',
+            summary: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+        },
+        style: {
+            color: '4e3e46',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            // reelgoodLink: 'link',
+            imdbID: 'tt0944947',
+            // subReddit: null,
+        },
+    },
+    {
+        name: 'How I Met Your Mother',
+        id: 'himym',
+        link: 'https://www.hulu.com/series/how-i-met-your-mother-bc68ac79-3ace-4427-9ec0-5ee6f314d194',
+        info: {
+            service: 'Hulu',
+            // description: 'Comedy &#149 Romance &#149 9 Seasons &#149 2005 - 2014',
+            // summary: "summary",
+        },
+        style: {
+            color: 'C7A533',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: 'tall',
+        },
+        apps: {
+            tvTimeID: '75760',
+            reelgoodLink: 'https://reelgood.com/show/how-i-met-your-mother-2005',
+            imdbID: 'tt0460649',
+            subReddit: 'HIMYM',
+        },
+    },
+    {
+        name: "Lost",
+        id: "lost",
+        link: "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
+        info: {
+            service: "Hulu",
+            description: "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
+            summary: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
+        },
+        style: {
+            color: '6a5828',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "73739",
+            reelgoodLink: "https://reelgood.com/show/lost-2004",
+            imdbID: "tt0411008",
+        },
+    },
+    {
+        name: 'New Girl',
+        id: 'newgirl',
+        link: {
+            netflix: '70196145',
+        },
+        info: {
+            service: 'Netflix',
+            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: 'a59c4f',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: null,
+        },
+    },
+    {
+        name: 'The Office',
+        id: 'office',
+        link: 'https://www.peacocktv.com/watch/asset/tv/the-office/4902514835143843112',
+        info: {
+            service: 'Peacock',
+            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '7E6C64',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/the-office-2005',
+            // imdbID: 'identifier',
+            // subReddit: null,
+        },
+    },
+]
 const movieDataArchive = [
     {
         name: "Rick and Morty",
@@ -1301,6 +1533,7 @@ const movieData = [
     movieData4,
     movieData5,
     movieData6,
+    movieData7,
 ]
 
 function movieHTML(n, tray) {
@@ -1313,7 +1546,7 @@ function movieHTML(n, tray) {
 
     for (i = 0; i < dataLength; i++) {
         if ((data[i].link !== null) && (data[i].link !== undefined)) {
-            var htmlLink = `href="${data[i].link}"`
+            var htmlLink = `href="${processLink(data[i])}"`
         } else {
             var htmlLink = ``
         }
