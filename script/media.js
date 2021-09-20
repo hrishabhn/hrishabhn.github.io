@@ -1613,6 +1613,20 @@ const bookData = [
         coverType: 'jpg',
     },
     {
+        name: "Boy",
+        id: "boy",
+        link: "ibooks://",
+        author: "Roald Dahl",
+        coverType: 'jpg',
+    },
+    {
+        name: "Going Solo",
+        id: "goingsolo",
+        link: "ibooks://",
+        author: "Roald Dahl",
+        coverType: 'jpg',
+    },
+    {
         name: "12 Rules for Life",
         id: "jordan",
         link: "ibooks://",
