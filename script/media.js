@@ -256,13 +256,35 @@ function popupAllHide() {
 //         // titleSize: 'wide',
 //     },
 //     apps: {
-//         // tvTimeID: null,
+//         // tvTimeID: 'identifier',
 //         // reelgoodLink: 'link',
 //         // imdbID: 'identifier',
-//         // subReddit: null,
+//         // subReddit: 'subreddit',
 //     },
 // },
 const movieData0 = [
+    {
+        name: 'Foundation',
+        id: 'foundation',
+        link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
+        info: {
+            service: ' TV+',
+            description: 'Drama &#149 Sci-Fi &#149 1 Season &#149 2021 - Present',
+            summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
+        },
+        style: {
+            color: '70655B',
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/foundation-2020',
+            imdbID: 'tt0804484',
+            subReddit: 'FoundationTV',
+        },
+    },
     {
         name: "Billions",
         id: "billions",
@@ -753,7 +775,7 @@ const movieData4 = [
         id: 'mankind',
         link: 'https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7',
         info: {
-            service: 'TV+',
+            service: ' TV+',
             description: 'Sci-Fi &#149 2 Seasons &#149 2019 - Present',
             summary: "Exploring the possibilities that might exist if the global space race had continued and where humanity would be now.",
         },
