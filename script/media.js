@@ -1613,6 +1613,20 @@ const bookData = [
         coverType: 'jpg',
     },
     {
+        name: "The Future is Asian",
+        id: "future",
+        link: "ibooks://",
+        author: "Parag Khanna",
+        coverType: 'jpg',
+    },
+    {
+        name: "The Raging 2020s",
+        id: "raging",
+        link: "ibooks://",
+        author: "Alec Ross",
+        coverType: 'jpg',
+    },
+    {
         name: "Boy",
         id: "boy",
         link: "ibooks://",
