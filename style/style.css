@@ -1802,8 +1802,14 @@ body{
         padding: 0px 0px 20px;
         /* padding-bottom: 20px; */
     }
+    #header{
+        padding-top: 20px;
+    }
     #main-container{
         width: calc(100% - 200px);
+    }
+    .main-wrapper{
+        padding-top: 105px;
     }
     #widgetbar{
         transform: translateX(100%);
