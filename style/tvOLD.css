@@ -116,18 +116,6 @@
     background-image: url('../TV/title/mindhunter.svg');
 }
 
-.mankind-solid{
-    background-color: #3e587a;
-}
-.mankind-gradient{
-    background: linear-gradient(#00000000,#3e587a);
-}
-.mankind-poster{
-    background-image: url('../TV/background/mankind.webp');
-}
-.mankind-title{
-    background-image: url('../TV/title/mankind.png');
-}
 
 .drive-solid{
     background-color: #4d5372;
@@ -182,18 +170,6 @@
     background-image: url('../TV/title/line.png');
 }
 
-.gameofthrones-solid{
-    background-color: #4e3e46;
-}
-.gameofthrones-gradient{
-    background: linear-gradient(#00000000,#4e3e46);
-}
-.gameofthrones-poster{
-    background-image: url('../TV/background/gameofthrones.jpg');
-}
-.gameofthrones-title{
-    background-image: url('../TV/title/gameofthrones.svg');
-}
 
 .human-solid{
     background-color: #445359;
@@ -260,19 +236,6 @@
     background-image: url('../TV/title/last.svg');
 }
 
-.loki-solid{
-    background-color: #a87643;
-}
-.loki-gradient{
-    background: linear-gradient(#00000000,#a87643);
-}
-.loki-poster{
-    background-image: url('../TV/background/loki.webp');
-}
-.loki-title{
-    background-image: url('../TV/title/loki.png');
-}
-
 .lupin-solid{
     background-color: #716f73;
 }
@@ -284,19 +247,6 @@
 }
 .lupin-title{
     background-image: url('../TV/title/lupin.png');
-}
-
-.manifest-solid{
-    background-color: #504A6A;
-}
-.manifest-gradient{
-    background: linear-gradient(#00000000,#504A6A);
-}
-.manifest-poster{
-    background-image: url('../TV/background/manifest.webp');
-}
-.manifest-title{
-    background-image: url('../TV/title/manifest.png');
 }
 
 .blind-solid{
@@ -312,18 +262,6 @@
     background-image: url('../TV/title/blind.png');
 }
 
-.curb-solid{
-    background-color: #746e6e;
-}
-.curb-gradient{
-    background: linear-gradient(#00000000,#746e6e);
-}
-.curb-poster{
-    background-image: url('../TV/background/curb.jpg');
-}
-.curb-title{
-    background-image: url('../TV/title/curb.png');
-}
 
 .fresh-solid{
     background-color: #72429A;
@@ -442,31 +380,6 @@
     background-image: url('../TV/title/rick.svg');
 }
 
-.dave-solid{
-    background-color: #889898;
-}
-.dave-gradient{
-    background: linear-gradient(#00000000,#889898);
-}
-.dave-poster{
-    background-image: url('../TV/background/dave.webp');
-}
-.dave-title{
-    background-image: url('../TV/title/dave.png');
-}
-
-.southpark-solid{
-    background-color: #b8c2c0;
-}
-.southpark-gradient{
-    background: linear-gradient(#00000000,#b8c2c0);
-}
-.southpark-poster{
-    background-image: url('../TV/background/southpark.jpg');
-}
-.southpark-title{
-    background-image: url('../TV/title/southpark.png');
-}
 
 .blackpink-solid{
     background-color: #a6a8ab;
