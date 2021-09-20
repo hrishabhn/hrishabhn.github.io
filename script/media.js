@@ -264,28 +264,6 @@ function popupAllHide() {
 // },
 const movieData0 = [
     {
-        name: 'Foundation',
-        id: 'foundation',
-        link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
-        info: {
-            service: ' TV+',
-            description: 'Drama &#149 Sci-Fi &#149 1 Season &#149 2021 - Present',
-            summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
-        },
-        style: {
-            color: '70655B',
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/show/foundation-2020',
-            imdbID: 'tt0804484',
-            subReddit: 'FoundationTV',
-        },
-    },
-    {
         name: "Billions",
         id: "billions",
         link: null,
@@ -770,6 +748,28 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
+    {
+        name: 'Foundation',
+        id: 'foundation',
+        link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
+        info: {
+            service: ' TV+',
+            description: 'Drama &#149 Sci-Fi &#149 1 Season &#149 2021 - Present',
+            summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
+        },
+        style: {
+            color: '70655B',
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/foundation-2020',
+            imdbID: 'tt0804484',
+            subReddit: 'FoundationTV',
+        },
+    },
     {
         name: 'For All Mankind',
         id: 'mankind',
