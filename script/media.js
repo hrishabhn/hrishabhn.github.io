@@ -274,7 +274,7 @@ const movieData0 = [
             summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
         },
         style: {
-            color: '2',
+            color: '6f4c2d',
             posterType: 'webp',
             titleType: 'png',
             titleSize: "wide",
