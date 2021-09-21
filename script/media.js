@@ -1,5 +1,5 @@
 function mediaPopulate() {
-    bookPopulate(bookData, 'book-tray')
+    bookPopulate(bookData0, 'book-tray')
     podPopulate(podData, 'pod-tray')
     newsPopulate(newsData)
     youtubePopulate(youtubeData)
@@ -12,7 +12,7 @@ function mediaPopulate() {
     // movieHTML(6, 'waiting-tray')
     // tvBig('always')
 
-    bookBigPopulate('main-7')
+    bookBigPopulate(0)
 
     movieHTML(0, 'up-next-tray-2')
     movieHTML(1, 'weekly-tray-2')
@@ -23,8 +23,8 @@ function mediaPopulate() {
     movieHTML(6, 'soon-tray-2')
     movieHTML(7, 'rewatch-tray-2')
 
-
     tvPreview(0,0)
+    mediaPageSwitch(1)
 }
 
 function scrollTVPreview(i) {
@@ -48,8 +48,8 @@ function tvPreview(i,j) {
     // console.log(movieData[i][j])
     const movie = movieData[i][j]
 
-    const headerElement = document.getElementById('tv-preview-header')
-    const headerText = document.getElementById('tv-preview-header-text')
+    const headerElement = document.getElementById('media-page-header')
+    const headerText = document.getElementById('media-page-header-text')
     const posterElement = document.getElementById('tv-preview-poster')
     const titleElement = document.getElementById('tv-preview-title')
     const descElement = document.getElementById('tv-preview-description')
@@ -1612,7 +1612,7 @@ function movieHTML(n, tray) {
     trayElement.innerHTML = htmlString
 }
 
-const bookData = [
+const bookData0 = [
     {
         name: "No Rules Rules",
         id: "rules",
@@ -1713,6 +1713,10 @@ const bookData = [
     },
 ]
 
+const bookData = [
+    bookData0,
+]
+
 function bookPopulate(bookData, tray) {
     var dataLength = bookData.length
 
@@ -1737,38 +1741,43 @@ function bookPopulate(bookData, tray) {
     trayElement.innerHTML = htmlString
 }
 
-function bookBigPopulate(tray) {
-    var dataLength = bookData.length
+function bookBigPopulate(n, tray) {
+    var dataLength = bookData[n].length
 
-    var htmlString = "";
-    // htmlString = appendSpacer(htmlString, 35)
+    var htmlString = '';
+    htmlString = appendSpacer(htmlString, 35)
 
     for (i = 0; i < dataLength; i++) {
         // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${bookData[i].link}"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
         // var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('book',${i})"><div class="media-poster book-poster image-border" style="--poster: url('media-image/books/${bookData[i].id}.${bookData[i].coverType}');"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading secondary-fg">${bookData[i].author}</p></div></div></a>`
-        var bookCardHTML = `
-        <div class="media-big-card hstack content1">
-            <a class="media-big-poster book-big-poster clickable" style="--poster: url('media-image/books/${bookData[i].id}.${bookData[i].coverType}');" target="_blank" href="${bookData[i].link}"></a>
-            <div class="spacer-15"></div>
-            <div class="vstack fill-parent">
-                <div class="spacer fill-parent"></div>
-                <div class="media-big-title">${bookData[i].name}</div>
-                <div class="media-big-subtitle">${bookData[i].author}</div>
-            </div>
-            <div class="spacer"></div>
-        </div>`
+        // var bookCardHTML = `
+        // <div class="media-big-card hstack content1">
+        //     <a class="media-big-poster book-big-poster clickable" style="--poster: url('media-image/books/${bookData[i].id}.${bookData[i].coverType}');" target="_blank" href="${bookData[i].link}"></a>
+        //     <div class="spacer-15"></div>
+        //     <div class="vstack fill-parent">
+        //         <div class="spacer fill-parent"></div>
+        //         <div class="media-big-title">${bookData[i].name}</div>
+        //         <div class="media-big-subtitle">${bookData[i].author}</div>
+        //     </div>
+        //     <div class="spacer"></div>
+        // </div>`
+
+        var bookCardHTML = `<a class="media-page-card book image-border clickable" style="--poster: url('media-image/books/${bookData[n][i].id}.jpg');" href="${bookData[n][i].link}"></a>`
 
         htmlString = `${htmlString}${bookCardHTML}`
-        // if (i < dataLength - 1) {
-        //     htmlString = appendSpacer(htmlString, 10)
-        // }
+        if (i < dataLength - 1) {
+            htmlString = appendSpacer(htmlString, 15)
+        }
+
+        console.log(i)
+        console.log(bookData[n][i].id)
     }
 
-    // htmlString = appendSpacer(htmlString, 35)
-    // htmlString = hstackEmbed(htmlString)
-    // htmlString = scrollEmbed(htmlString, 35)
+    htmlString = appendSpacer(htmlString, 35)
+    htmlString = appendSpacer(htmlString, 'n')
+    htmlString = `<div class="scroll margin-35">${htmlString}</div>`
 
-    var trayElement = document.getElementById(tray)
+    var trayElement = document.getElementById(`book-tray-${n}`)
     trayElement.innerHTML = htmlString
 }
 
