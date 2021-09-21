@@ -35,7 +35,7 @@ function scrollTVPreview(i) {
 
     for (j = 0; j < movieData[i].length; j++) {
         var element = document.getElementById(`tv-card-${i}-${j}`).getBoundingClientRect()
-        
+
         if ((element.x < 40) && (element.x > 0)){
             tvPreview(i,j)
         }
@@ -156,7 +156,7 @@ function tvPopup(movie) {
 
             tvTimeSpacer.classList.add('hidden-always')
         }
-    
+
         if (movie.apps.reelgoodLink) {
             reelgoodElement.href = movie.apps.reelgoodLink;
             reelgoodElement.classList.remove("hidden-always")
@@ -167,7 +167,7 @@ function tvPopup(movie) {
 
             reelgoodSpacer.classList.add('hidden-always')
         }
-    
+
         if (movie.apps.imdbID) {
             imdbElement.href = "https://www.imdb.com/title/" + movie.apps.imdbID;
             imdbElement.classList.remove("hidden-always")
@@ -178,16 +178,13 @@ function tvPopup(movie) {
 
             imdbSpacer.classList.add('hidden-always')
         }
-    
-        if (movie.apps.redditLink) {
-            redditElement.href = movie.apps.redditLink;
-            redditElement.classList.remove("hidden-always")
 
-            // redditSpacer.classList.remove('hidden-always')
+
+        if (movie.apps.subreddit) {
+            redditElement.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
+            redditElement.classList.remove("hidden-always")
         } else {
             redditElement.classList.add("hidden-always")
-
-            // redditSpacer.classList.add('hidden-always')
         }
 
         if (movie.apps.subReddit) {
@@ -286,7 +283,7 @@ const movieData0 = [
             tvTimeID: "279536",
             reelgoodLink: "https://reelgood.com/show/billions-2016",
             imdbID: "tt4270492",
-            redditLink: 'https://www.reddit.com/r/Billions'
+            subReddit: 'Billions'
         },
     },
     {
@@ -442,7 +439,7 @@ const movieData1 = [
             tvTimeID: "383203",
             reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
             imdbID: "tt10986410",
-            redditLink: "https://www.reddit.com/r/TedLasso",
+            subReddit: "TedLasso",
         },
     },
     {
@@ -464,7 +461,7 @@ const movieData1 = [
             tvTimeID: "356317",
             reelgoodLink: "https://reelgood.com/show/sex-education-2019",
             imdbID: "tt7767422",
-            redditLink: "https://www.reddit.com/r/NetflixSexEducation",
+            subReddit: "NetflixSexEducation",
         },
     },
 
@@ -510,7 +507,7 @@ const movieData2 = [
             tvTimeID: '353232',
             reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
             imdbID: 'tt8714904',
-            // redditLink: null,
+            // subReddit: null,
         },
     },
     {
@@ -540,7 +537,7 @@ const movieData2 = [
         link: 'https://www.netflix.com/title/80174608',
         info: {
             service: "Netflix",
-            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present", 
+            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
             summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
         },
         style: {
@@ -553,7 +550,7 @@ const movieData2 = [
             tvTimeID: "357888",
             reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
             imdbID: "tt9561862",
-            redditLink: "https://www.reddit.com/r/LoveDeathAndRobots",
+            subReddit: "LoveDeathAndRobots",
         },
     },
     {
@@ -815,7 +812,7 @@ const movieData4 = [
             tvTimeID: '334824',
             reelgoodLink: 'https://reelgood.com/show/dark-2017',
             imdbID: 'tt5753856',
-            // redditLink: null,
+            // subReddit: null,
         },
     },
     {
@@ -837,7 +834,7 @@ const movieData4 = [
             tvTimeID: '82066',
             reelgoodLink: null,
             imdbID: 'tt1119644',
-            redditLink: null,
+            subReddit: null,
         },
     },
     {
@@ -860,7 +857,7 @@ const movieData4 = [
             reelgoodLink: 'https://reelgood.com/show/y-the-last-man-2021',
             imdbID: "tt8042500",
             subReddit: 'YTheLastMan',
-        },  
+        },
     },
     {
         name: "The Spy",
@@ -1099,7 +1096,7 @@ const movieData6 = [
             // reelgoodRate: "90",
             imdbID: "tt0472954",
             // imdbRate: "8.8",
-            redditLink: "https://www.reddit.com/r/IASIP",
+            subReddit: "IASIP",
         },
     },
     {
@@ -1522,7 +1519,7 @@ const movieDataArchive = [
             tvTimeID: "275274",
             reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
             imdbID: "tt2861424",
-            redditLink: "https://www.reddit.com/r/rickandmorty",
+            subReddit: "rickandmorty",
         },
     },
     {
@@ -1544,7 +1541,7 @@ const movieDataArchive = [
             tvTimeID: "349271",
             reelgoodLink: "https://reelgood.com/show/manifest-2018",
             imdbID: "tt8421350",
-            redditLink: 'https://www.reddit.com/r/ManifestNBC',
+            subReddit: 'ManifestNBC',
         },
     },
 ]
