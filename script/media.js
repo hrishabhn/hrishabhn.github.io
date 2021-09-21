@@ -321,7 +321,7 @@ const movieData0 = [
             summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
         },
         style: {
-            color: '050514',
+            color: '1C2C70',
             posterType: 'webp',
             titleType: 'png',
             titleSize: "mid",
