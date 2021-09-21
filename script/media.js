@@ -28,7 +28,7 @@ function mediaPopulate() {
     movieHTML(7, 'rewatch-tray-2')
 
     tvPreview(0,0)
-    mediaPageSwitch(1)
+    mediaPageSwitch(0)
 }
 
 function scrollTVPreview(i) {
