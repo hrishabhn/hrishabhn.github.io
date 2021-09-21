@@ -13,6 +13,10 @@ function mediaPopulate() {
     // tvBig('always')
 
     bookBigPopulate(0)
+    bookBigPopulate(1)
+    bookBigPopulate(2)
+    bookBigPopulate(3)
+    bookBigPopulate(4)
 
     movieHTML(0, 'up-next-tray-2')
     movieHTML(1, 'weekly-tray-2')
@@ -1621,75 +1625,15 @@ const bookData0 = [
         coverType: 'jpg',
     },
     {
-        name: "Never Split the Difference",
-        id: "split",
-        link: "ibooks://",
-        author: "Chris Voss",
-        coverType: 'jpg',
-    },
-    {
         name: "Faster Than Normal",
         id: "faster",
         link: "audible://view?section=discover&asin=B0763VPQF6",
         author: "Peter Shankman",
         coverType: 'jpg',
     },
-    {
-        name: "The Future is Asian",
-        id: "future",
-        link: "ibooks://",
-        author: "Parag Khanna",
-        coverType: 'jpg',
-    },
-    {
-        name: "The Raging 2020s",
-        id: "raging",
-        link: "ibooks://",
-        author: "Alec Ross",
-        coverType: 'jpg',
-    },
-    {
-        name: "Boy",
-        id: "boy",
-        link: "ibooks://",
-        author: "Roald Dahl",
-        coverType: 'jpg',
-    },
-    {
-        name: "Going Solo",
-        id: "goingsolo",
-        link: "ibooks://",
-        author: "Roald Dahl",
-        coverType: 'jpg',
-    },
-    {
-        name: "12 Rules for Life",
-        id: "jordan",
-        link: "ibooks://",
-        author: "Jordan B. Peterson",
-        coverType: 'jpg',
-    },
-    {
-        name: "The Expatriates",
-        id: "expats",
-        link: "ibooks://",
-        author: "Janice Y. K. Lee",
-        coverType: 'jpg',
-    },
-    {
-        name: "Gweilo: Memories of a Hong Kong Childhood",
-        id: "gweilo",
-        link: "ibooks://",
-        author: "Martin Booth",
-        coverType: 'jpg',
-    },
-    {
-        name: "The Four",
-        id: "four",
-        link: "ibooks://",
-        author: "Scott Galloway",
-        coverType: 'jpg',
-    },
+]
+
+const bookData1 = [
     {
         name: "Homo Deus",
         id: "homodeus",
@@ -1713,8 +1657,84 @@ const bookData0 = [
     },
 ]
 
+const bookData2 = [
+    {
+        name: "Never Split the Difference",
+        id: "split",
+        link: "ibooks://",
+        author: "Chris Voss",
+        coverType: 'jpg',
+    },
+    {
+        name: "The Four",
+        id: "four",
+        link: "ibooks://",
+        author: "Scott Galloway",
+        coverType: 'jpg',
+    },
+]
+
+const bookData3 = [
+    {
+        name: "The Future is Asian",
+        id: "future",
+        link: "ibooks://",
+        author: "Parag Khanna",
+        coverType: 'jpg',
+    },
+    {
+        name: "The Raging 2020s",
+        id: "raging",
+        link: "ibooks://",
+        author: "Alec Ross",
+        coverType: 'jpg',
+    },
+    {
+        name: "12 Rules for Life",
+        id: "jordan",
+        link: "ibooks://",
+        author: "Jordan B. Peterson",
+        coverType: 'jpg',
+    },
+    {
+        name: "The Expatriates",
+        id: "expats",
+        link: "ibooks://",
+        author: "Janice Y. K. Lee",
+        coverType: 'jpg',
+    },
+    {
+        name: "Gweilo: Memories of a Hong Kong Childhood",
+        id: "gweilo",
+        link: "ibooks://",
+        author: "Martin Booth",
+        coverType: 'jpg',
+    },
+]
+
+const bookData4 = [
+    {
+        name: "Boy",
+        id: "boy",
+        link: "ibooks://",
+        author: "Roald Dahl",
+        coverType: 'jpg',
+    },
+    {
+        name: "Going Solo",
+        id: "goingsolo",
+        link: "ibooks://",
+        author: "Roald Dahl",
+        coverType: 'jpg',
+    },
+]
+
 const bookData = [
     bookData0,
+    bookData1,
+    bookData2,
+    bookData3,
+    bookData4
 ]
 
 function bookPopulate(bookData, tray) {
@@ -1768,9 +1788,6 @@ function bookBigPopulate(n, tray) {
         if (i < dataLength - 1) {
             htmlString = appendSpacer(htmlString, 15)
         }
-
-        console.log(i)
-        console.log(bookData[n][i].id)
     }
 
     htmlString = appendSpacer(htmlString, 35)
