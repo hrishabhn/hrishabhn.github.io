@@ -528,6 +528,10 @@ body{
 .main >*:empty {
     margin-bottom: 0px;
 }
+.main.main-tv > *:not(:last-child) {
+    margin-bottom: 0px; 
+}
+
 
 #header{
     display: flex;
