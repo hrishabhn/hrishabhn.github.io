@@ -331,28 +331,6 @@ const movieData0 = [
         },
     },
     {
-        name: "What If?",
-        id: "whatif",
-        link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
-        info: {
-            service: "Disney+",
-            description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
-            summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
-        },
-        style: {
-            color: '0F0F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "367147",
-            reelgoodLink: "https://reelgood.com/show/what-if-2021",
-            imdbID: "tt10168312",
-            subReddit: 'MarvelsWhatIf',
-        },
-    },
-    {
         name: "Brooklyn Nine-Nine",
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
@@ -365,57 +343,12 @@ const movieData0 = [
             color: '8b6a4b',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "mid",
+            titleSize: "tall",
         },
         apps: {
             tvTimeID: "269586",
             reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
             imdbID: "tt2467372",
-        },
-    },
-    {
-        name: "Cowboy Bebop",
-        id: "cowboy",
-        link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
-        info: {
-            service: "Hulu",
-            description: "Animation &#149 Action &#149 Adventure &#149 1 Season &#149 1998 - 1999",
-            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
-        },
-        style: {
-            color: '330A06',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "76885",
-            reelgoodLink: "https://reelgood.com/show/cowboy-bebop-1998",
-            imdbID: "tt0213338",
-        },
-    },
-    {
-        name: "Jojo's Bizzare Adventures",
-        id: "jojo",
-        link: "https://www.netflix.com/title/80179831",
-        info: {
-            service: "Netflix",
-            description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
-            summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
-        },
-        style: {
-            color: '2C2850',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "tall",
-        },
-        apps: {
-            tvTimeID: "262954",
-            // tvTimeRate: "9.74",
-            reelgoodLink: "https://reelgood.com/show/jojos-bizarre-adventure-2012",
-            // reelgoodRate: "72",
-            imdbID: "tt2359704",
-            // imdbRate: "8.4",
         },
     },
 ]
@@ -467,6 +400,73 @@ const movieData1 = [
 
 ]
 const movieData2 = [
+    {
+        name: "What If?",
+        id: "whatif",
+        link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
+        info: {
+            service: "Disney+",
+            description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
+            summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
+        },
+        style: {
+            color: '0F0F38',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "367147",
+            reelgoodLink: "https://reelgood.com/show/what-if-2021",
+            imdbID: "tt10168312",
+            subReddit: 'MarvelsWhatIf',
+        },
+    },
+    {
+        name: "Cowboy Bebop",
+        id: "cowboy",
+        link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
+        info: {
+            service: "Hulu",
+            description: "Animation &#149 Action &#149 Adventure &#149 1 Season &#149 1998 - 1999",
+            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
+        },
+        style: {
+            color: '330A06',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "76885",
+            reelgoodLink: "https://reelgood.com/show/cowboy-bebop-1998",
+            imdbID: "tt0213338",
+        },
+    },
+    {
+        name: "Jojo's Bizzare Adventures",
+        id: "jojo",
+        link: "https://www.netflix.com/title/80179831",
+        info: {
+            service: "Netflix",
+            description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
+            summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
+        },
+        style: {
+            color: '2C2850',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "tall",
+        },
+        apps: {
+            tvTimeID: "262954",
+            // tvTimeRate: "9.74",
+            reelgoodLink: "https://reelgood.com/show/jojos-bizarre-adventure-2012",
+            // reelgoodRate: "72",
+            imdbID: "tt2359704",
+            // imdbRate: "8.4",
+        },
+    },
     {
         name: "Money Heist",
         id: "money",
@@ -551,22 +551,6 @@ const movieData2 = [
             reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
             imdbID: "tt9561862",
             subReddit: "LoveDeathAndRobots",
-        },
-    },
-    {
-        name: "Twin Peaks",
-        id: "twinpeaks",
-        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-        info: {
-            service: "Hulu",
-            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-        },
-        style: {
-            color: '300',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: "tall",
         },
     },
 ]
@@ -930,6 +914,22 @@ const movieData4 = [
     },
 ]
 const movieData5 = [
+    {
+        name: "Twin Peaks",
+        id: "twinpeaks",
+        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+        info: {
+            service: "Hulu",
+            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
+            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
+        },
+        style: {
+            color: '300',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: "tall",
+        },
+    },
     {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
