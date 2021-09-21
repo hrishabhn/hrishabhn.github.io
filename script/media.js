@@ -31,6 +31,19 @@ function mediaPopulate() {
     mediaPageSwitch(0)
 }
 
+// function pullWidgy() {
+//   let n = 0
+//   let image
+//   fetch('https://hrishabhn.github.io/script/widgy.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         image = `https://hrishabhn.github.io/TV/background/${data[n]['id']}.webp`
+//         return image
+//     });
+//
+//     return image
+// }
+
 function scrollTVPreview(i) {
 
     for (j = 0; j < movieData[i].length; j++) {
