@@ -1,22 +1,22 @@
 ﻿[
   {
     "name": "Billions",
-    "id": "billions",
+    "image": "https://hrishabhn.github.io/TV/background/billions.webp",
     "service": "Downloads"
   },
   {
     "name": "Only Murders in the Building",
-    "id": "murders",
+    "image": "https://hrishabhn.github.io/TV/background/murdrs.webp",
     "service": "Hulu"
   },
   {
     "name": "What We Do in the Shadows",
-    "id": "shadows",
+    "image": "https://hrishabhn.github.io/TV/background/shadows.webp",
     "service": "Hulu"
   },
   {
-    "name": "Brooklyn Nine-Ten",
-    "id": "brooklyn",
-    "service": "Netflix"
+    "name": "Brooklyn Nine-Nine",
+    "image": "https://hrishabhn.github.io/TV/background/brooklyn.webp",
+    "service": "Hulu"
   }
 ]
