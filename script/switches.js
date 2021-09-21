@@ -2,6 +2,8 @@ function switches() {
     courseSwitchApps()
     mediaSwitchApps()
     switchLoad()
+
+    mediaPageApps()
 }
 
 function switchLoad() {
@@ -235,3 +237,87 @@ function mediaSwitch(n) {
     // document.cookie =`mediaSwitch=${n}`;
 }
 
+const mediaPageData = [
+    {
+        name: 'TV & Movies',
+        style: {
+            color: 'e50914',
+        },
+    },
+    {
+        name: 'Books',
+        style: {
+            color: 'FC880F',
+        },
+    },
+    {
+        name: 'Podcasts',
+        style: {
+            color: '842BC1',
+        },
+    },
+    {
+        name: 'News',
+        style: {
+            color: 'FC880F',
+        },
+    },
+    {
+        name: 'YouTube',
+        style: {
+            color: 'f00',
+        },
+    },
+]
+
+function mediaPageApps() {
+    const dataLength = mediaPageData.length
+    var htmlString = '';
+
+    htmlString = appendSpacer(htmlString,15)
+
+    for (i = 0; i < dataLength; i++) {
+        var mediaHTML = `<div id="media-page-switch-${i}" class="media-page-switch clickable" onclick="mediaPageSwitch(${i})">${mediaPageData[i].name}</div>`
+
+        if (i < (dataLength - 1)) {
+            mediaHTML = appendSpacer(mediaHTML,10)
+        }
+
+        htmlString = `${htmlString}${mediaHTML}`
+    }
+
+    htmlString = appendSpacer(htmlString,15)
+
+    var hstack = document.createElement('div')
+    hstack.classList = 'hstack'
+    hstack.innerHTML = htmlString
+
+    var scrollWrapper = document.createElement('div')
+    scrollWrapper.classList = 'scroll'
+    scrollWrapper.append(hstack)
+
+    var container = document.getElementById('media-page-switch-tray')
+    container.append(scrollWrapper)
+}
+
+function mediaPageSwitch(n) {
+    for (i = 0; i < mediaPageData.length; i++) {
+        document.getElementById(`main-8-${i}`).classList.add('hidden-always')
+        document.getElementById(`media-page-switch-${i}`).classList.remove('selected')
+    }
+
+    const headerElement = document.getElementById('media-page-header')
+    const headerText = document.getElementById('media-page-header-text')
+
+    
+    if (mediaPageData[n].style) {
+        headerElement.style.setProperty('--color',`#${mediaPageData[n].style.color}`)
+    }
+    headerText.innerHTML = mediaPageData[n].name
+
+    
+
+
+    document.getElementById(`main-8-${n}`).classList.remove('hidden-always')
+    document.getElementById(`media-page-switch-${n}`).classList.add('selected')
+}
