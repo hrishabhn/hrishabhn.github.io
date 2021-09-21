@@ -308,7 +308,7 @@ const movieData0 = [
             tvTimeID: "399959",
             reelgoodLink: "https://reelgood.com/show/only-murders-in-the-building-2021",
             imdbID: "tt12851524",
-            redditLink: 'https://www.reddit.com/r/OnlyMurdersHulu',
+            subReddit: 'OnlyMurdersHulu',
         },
     },
     {
