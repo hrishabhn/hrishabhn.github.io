@@ -231,7 +231,7 @@
     color: var(--dark-layer-1);
 
 }
-.tv-preview-tray{
+.media-page-body{
     margin-bottom: 0px !important;
     padding: 0px 35px;
     background-color: black;
@@ -1315,10 +1315,10 @@
     .tv-preview-gradient{
         background-image: linear-gradient(#0E1F2700, #0E1F27);
     }
-    .tv-preview-tray{
-        background-color: #0E1F27;
+    .media-page-body{
+        background-color: var(--dark-layer-1);
     }
-    .tv-preview-tray .image-border{
+    .media-page-body .image-border{
         border-color: var(--dark-layer-3);
     }
 }
@@ -1350,8 +1350,8 @@
     #tv-preview-title.tall{
         width: 40%;
     }
-    .tv-preview-tray{
-        padding: 0px 20px;
+    .media-page-body{
+        padding: 0px 20px 50px;
         /* overflow: hidden; */
     }
 
