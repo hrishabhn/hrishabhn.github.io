@@ -6,15 +6,15 @@
     "service": "Downloads"
   },
   {
-    "name": "Only Murders in the Building",
-    "id": "murders",
-    "image": "https://hrishabhn.github.io/TV/background/murders.webp",
-    "service": "Hulu"
-  },
-  {
     "name": "What We Do in the Shadows",
     "id": "shadows",
     "image": "https://hrishabhn.github.io/TV/background/shadows.webp",
+    "service": "Hulu"
+  },
+  {
+    "name": "Only Murders in the Building",
+    "id": "murders",
+    "image": "https://hrishabhn.github.io/TV/background/murders.webp",
     "service": "Hulu"
   },
   {
