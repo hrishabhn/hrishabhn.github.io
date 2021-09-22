@@ -591,49 +591,6 @@ const movieData3 = [
         },
     },
     {
-        name: 'This is the End',
-        id: 'theend',
-        // link: 'watchlink',
-        info: {
-            service: 'Starz',
-            description: 'Comedy &#149 2013',
-            summary: "Six Los Angeles celebrities are stuck in James Franco's house after a series of devastating events just destroyed the city. Inside, the group not only have to face the apocalypse, but themselves.",
-        },
-        style: {
-            color: '3b2420',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/movie/this-is-the-end-2013',
-            imdbID: 'tt1245492',
-            // subReddit: null,
-        },
-    },
-    {
-        name: "Shang-Chi",
-        id: "shang",
-        link: null,
-        info: {
-            service: "Disney+",
-            description: "Action &#149 Adventure &#149 Fantasy &#149 2021",
-            summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
-        },
-        style: {
-            color: '4b3831',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: null,
-            reelgoodLink: "https://reelgood.com/movie/shangchi-and-the-legend-of-the-ten-rings-2021",
-            imdbID: 'tt9376612',
-        },
-    },
-    {
         name: "Ghost in the Shell",
         id: "ghost",
         link: "https://watch.amazon.com/detail?asin=B07WQZDXTM",
@@ -1513,6 +1470,49 @@ const movieData7 = [
     },
 ]
 const movieDataArchive = [
+    {
+        name: 'This is the End',
+        id: 'theend',
+        // link: 'watchlink',
+        info: {
+            service: 'Starz',
+            description: 'Comedy &#149 2013',
+            summary: "Six Los Angeles celebrities are stuck in James Franco's house after a series of devastating events just destroyed the city. Inside, the group not only have to face the apocalypse, but themselves.",
+        },
+        style: {
+            color: '3b2420',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/movie/this-is-the-end-2013',
+            imdbID: 'tt1245492',
+            // subReddit: null,
+        },
+    },
+    {
+        name: "Shang-Chi",
+        id: "shang",
+        link: null,
+        info: {
+            service: "Disney+",
+            description: "Action &#149 Adventure &#149 Fantasy &#149 2021",
+            summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+        },
+        style: {
+            color: '4b3831',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/shangchi-and-the-legend-of-the-ten-rings-2021",
+            imdbID: 'tt9376612',
+        },
+    },
     {
         name: "Rick and Morty",
         id: "rick",
