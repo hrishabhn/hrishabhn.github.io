@@ -278,52 +278,6 @@ function popupAllHide() {
 // },
 const movieData0 = [
     {
-        name: 'Squid Game',
-        id: 'squid',
-        link: {
-            netflix: '81040344',
-        },
-        info: {
-            service: 'Netflix',
-            description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
-            summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
-        },
-        style: {
-            color: '7C4E31',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/squid-game-2021',
-            imdbID: 'tt10919420',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Nine Perfect Strangers',
-        id: 'nine',
-        link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
-        info: {
-            service: 'Hulu',
-            description: 'Drama &#149 Mystery &#149 1 Season &#149 2021 - Present',
-            summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
-        },
-        style: {
-            color: '6b7790',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/nine-perfect-strangers',
-            imdbID: 'tt8760932',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: "Billions",
         id: "billions",
         link: null,
@@ -749,6 +703,52 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
+    {
+        name: 'Squid Game',
+        id: 'squid',
+        link: {
+            netflix: '81040344',
+        },
+        info: {
+            service: 'Netflix',
+            description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
+            summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
+        },
+        style: {
+            color: '7C4E31',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/squid-game-2021',
+            imdbID: 'tt10919420',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Nine Perfect Strangers',
+        id: 'nine',
+        link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
+        info: {
+            service: 'Hulu',
+            description: 'Drama &#149 Mystery &#149 1 Season &#149 2021 - Present',
+            summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
+        },
+        style: {
+            color: '6b7790',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/nine-perfect-strangers',
+            imdbID: 'tt8760932',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Foundation',
         id: 'foundation',
