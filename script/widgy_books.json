@@ -1,0 +1,15 @@
+﻿[
+  {
+    "name": "No Rules Rules",
+    "id": "rules",
+    "image": "https://hrishabhn.github.io/media-image/books/rules.jpg",
+    "Author": "Reed Hastings & Erin Meyer"
+  },
+  {
+    "name": "Faster Than Normal",
+    "id": "Faster",
+    "image": "https://hrishabhn.github.io/media-image/books/faster.jpg",
+    "Author": "Peter Shankman"
+  },
+
+]
