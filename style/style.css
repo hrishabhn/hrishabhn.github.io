@@ -8,8 +8,10 @@
 :root{
     --dark-layer-0: #000;
     --dark-layer-1: #1c1c1e;
-    --dark-layer-2: #2c2c2e;
-    --dark-layer-3: #3a3a3c;
+    --dark-layer-2: rgb(44, 44, 46);
+    --dark-layer-3: rgb(58, 58, 60);
+    --dark-layer-5: rgb(72, 72, 74);
+    --dark-layer-6: #636366;
 
     --light-layer-0: #fff;
     --light-layer-1: #f2f2f7;
