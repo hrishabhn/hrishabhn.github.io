@@ -173,10 +173,13 @@ function menuSwitch(n) {
   var title = document.getElementById("title-page")
   var headerText = document.getElementById("header-text")
   var headerBox = document.getElementById('header')
+  var body = document.getElementById('body')
 
   title.innerHTML = menuData[n].name
   headerText.innerHTML = menuData[n].name
   headerBox.classList = menuData[n].color
+  body.classList = menuData[n].color
+
 }
 
 
