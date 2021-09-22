@@ -167,7 +167,7 @@ function menuSwitch(n) {
   var newMenu = document.getElementById("menu-" + n)
   newMain.classList.remove("hidden")
   newMenu.classList.add("selected")
-  
+
   mainCurrent = n;
 
   var title = document.getElementById("title-page")
