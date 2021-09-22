@@ -432,8 +432,12 @@ const userWidget = {
 
 const countdownData = [
     {
-        name: 'Exams',
+        name: 'Start of Exams',
         date: 'Sep 27, 2021',
+    },
+    {
+        name: 'End of Exams',
+        date: 'Oct 1, 2021',
     },
     {
         name: 'Utah',
