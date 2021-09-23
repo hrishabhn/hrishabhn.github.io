@@ -131,6 +131,7 @@ body{
     text-decoration: none;
 
     /* background-color: var(--dark-layer-0); */
+    background-color: var(--color);
     /* background-color: #121212; */
     color: var(--light-layer-0);
     fill: var(--light-layer-0);
