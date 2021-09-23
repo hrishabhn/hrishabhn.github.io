@@ -308,10 +308,13 @@ function mediaPageSwitch(n) {
 
     const headerElement = document.getElementById('media-page-header')
     const headerText = document.getElementById('media-page-header-text')
+    const body = document.getElementById('body')
 
     
     if (mediaPageData[n].style) {
         headerElement.style.setProperty('--color',`#${mediaPageData[n].style.color}`)
+        body.classList = ''
+        body.style.setProperty('--color',`#${mediaPageData[n].style.color}`)
     }
     headerText.innerHTML = mediaPageData[n].name
 
