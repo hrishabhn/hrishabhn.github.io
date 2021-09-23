@@ -281,6 +281,30 @@ function popupAllHide() {
 // },
 const movieData0 = [
     {
+        name: 'Squid Game',
+        id: 'squid',
+        link: {
+            netflix: '81040344',
+        },
+        info: {
+            service: 'Netflix',
+            description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
+            summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
+        },
+        style: {
+            color: '7C4E31',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/squid-game-2021',
+            imdbID: 'tt10919420',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: "Billions",
         id: "billions",
         link: null,
@@ -391,28 +415,6 @@ const movieData1 = [
             subReddit: "TedLasso",
         },
     },
-    {
-        name: "Sex Education",
-        id: "edu",
-        link: "https://www.netflix.com/title/80197526",
-        info: {
-            service: "Netflix",
-            description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
-            summary: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
-        },
-        style: {
-            color: '6d6256',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "356317",
-            reelgoodLink: "https://reelgood.com/show/sex-education-2019",
-            imdbID: "tt7767422",
-            subReddit: "NetflixSexEducation",
-        },
-    },
 
 ]
 const movieData2 = [
@@ -436,6 +438,28 @@ const movieData2 = [
             reelgoodLink: "https://reelgood.com/show/what-if-2021",
             imdbID: "tt10168312",
             subReddit: 'MarvelsWhatIf',
+        },
+    },
+    {
+        name: "Sex Education",
+        id: "edu",
+        link: "https://www.netflix.com/title/80197526",
+        info: {
+            service: "Netflix",
+            description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
+            summary: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
+        },
+        style: {
+            color: '6d6256',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "356317",
+            reelgoodLink: "https://reelgood.com/show/sex-education-2019",
+            imdbID: "tt7767422",
+            subReddit: "NetflixSexEducation",
         },
     },
     {
@@ -725,30 +749,6 @@ const movieData4 = [
             tvTimeID: '295648',
             reelgoodLink: 'https://reelgood.com/show/superstore-2015',
             imdbID: 'tt4477976',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Squid Game',
-        id: 'squid',
-        link: {
-            netflix: '81040344',
-        },
-        info: {
-            service: 'Netflix',
-            description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
-            summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
-        },
-        style: {
-            color: '7C4E31',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/squid-game-2021',
-            imdbID: 'tt10919420',
             // subReddit: 'subreddit',
         },
     },
