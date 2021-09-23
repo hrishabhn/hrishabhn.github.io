@@ -292,7 +292,7 @@ const movieData0 = [
             summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
         },
         style: {
-            color: '7C4E31',
+            color: '3f1513', // 7C4E31
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
