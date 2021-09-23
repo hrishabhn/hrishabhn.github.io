@@ -87,30 +87,42 @@ function createWidget(widget) {
 }
 
 function countdownCalculate(date) {
+    if (!date) {
+        return null
+    }
+
+
     var futureDate = new Date(date).getTime()
     // console.log(futureDate)
     var nowDate = new Date().getTime()
     var distance = futureDate - nowDate
-    // console.log(distance)
+    var past = false
+
+    if (distance < 0) {
+        distance = nowDate - futureDate
+        past = true
+    }
+    console.log(distance)
+    console.log(past)
 
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var result
 
     if (days > 0) {
-        return [days,'days']
+        result = [days,'days']
     } else if (hours > 0) {
-        return [hours,'hours']
+        result = [hours,'hours']
     } else if (minutes > 0) {
-        return [minutes,'minutes']
+        result = [minutes,'minutes']
     } else {
-        return [seconds,'seconds']
+        result = [seconds,'seconds']
     }
 
 
-    var string = `${days}`
-    return [string,'days']
+    return result
     console.log(string)
 }
 
@@ -432,6 +444,14 @@ const userWidget = {
 
 const countdownData = [
     {
+        name: 'Start of Fall 2021',
+        date: 'Aug 23, 2021',
+    },
+    {
+        name: 'Past Countdowns',
+        date: null,
+    },
+    {
         name: 'Start of Exams',
         date: 'Sep 27, 2021',
     },
@@ -518,17 +538,31 @@ const countdownWidget = {
         for (i = 0; i < countdownData.length; i++) {
             const countdownReturn = countdownCalculate(countdownData[i].date)
             // console.log(countdownReturn)
-
-            var itemHTML = `
-            <div id="countdown-card-${i}" class="hstack spacer fill-parent countdown-card">
-                <div id="countdown-name-${i}" class="countdown-name">${countdownData[i].name}</div>
-                <div class="spacer"></div>
-                <div class="vstack">
-                    <div id="countdown-num-${i}" class="countdown-num">${countdownReturn[0]}</div>
-                    <div id="countdown-days-${i}" class="countdown-days">${countdownReturn[1]}</div>
+            
+            if (countdownReturn) {
+                var itemHTML = `
+                <div id="countdown-card-${i}" class="hstack spacer fill-parent countdown-card">
+                    <div id="countdown-name-${i}" class="countdown-name">${countdownData[i].name}</div>
+                    <div class="spacer"></div>
+                    <div class="vstack">
+                        <div id="countdown-num-${i}" class="countdown-num">${countdownReturn[0]}</div>
+                        <div id="countdown-days-${i}" class="countdown-days">${countdownReturn[1]}</div>
+                    </div>
                 </div>
-            </div>
-            `
+                `
+            } else {
+                itemHTML = `
+                <div id="countdown-card-${i}" class="hstack spacer fill-parent countdown-card">
+                    <div id="countdown-name-${i}" class="countdown-name">${countdownData[i].name}</div>
+                    <div class="spacer"></div>
+                    <div class="vstack">
+                        <div id="countdown-num-${i}" class="countdown-num"></div>
+                        <div id="countdown-days-${i}" class="countdown-days"></div>
+                    </div>
+                </div>`
+            }
+
+            
 
             if (i < countdownData.length - 1) {
                 var line = returnHline(`countdown-line-${i}`)
