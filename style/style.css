@@ -142,6 +142,7 @@ body{
     width: 100vw;
     height: 100vh;
     overflow: scroll;
+    background-color: black;
 }
 
 .hidden-always{
@@ -467,7 +468,6 @@ body{
 
     transition: 0.3s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
-    background-color: black;
 }
 /* #main-container.preload{
     opacity: 0;
@@ -1694,7 +1694,7 @@ body{
     .sidebar-button:hover{
         background: var(--light-layer-0);
     }
-    #main-container{
+    #everything{
         background-color: var(--light-layer-1);
     }
     #user-select-modal{
