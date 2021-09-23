@@ -707,6 +707,28 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
+        name: 'Superstore',
+        id: 'superstore',
+        link: 'https://www.hulu.com/series/superstore-727810b8-e54b-4f01-9381-a79ab5661bf7',
+        info: {
+            service: 'Hulu',
+            description: 'Comedy &#149 6 Seasons &#149 2015 - 2021',
+            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
+        },
+        style: {
+            color: '0070DB',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '295648',
+            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
+            imdbID: 'tt4477976',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Squid Game',
         id: 'squid',
         link: {
