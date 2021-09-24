@@ -281,30 +281,6 @@ function popupAllHide() {
 // },
 const movieData0 = [
     {
-        name: 'Squid Game',
-        id: 'squid',
-        link: {
-            netflix: '81040344',
-        },
-        info: {
-            service: 'Netflix',
-            description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
-            summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
-        },
-        style: {
-            color: '3f1513', // 7C4E31
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '383275',
-            reelgoodLink: 'https://reelgood.com/show/squid-game-2021',
-            imdbID: 'tt10919420',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: "Billions",
         id: "billions",
         link: null,
@@ -1424,6 +1400,30 @@ const movieData6 = [
             reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
             imdbID: 'tt6156584',
             // subReddit: null,
+        },
+    },
+    {
+        name: 'Squid Game',
+        id: 'squid',
+        link: {
+            netflix: '81040344',
+        },
+        info: {
+            service: 'Netflix',
+            description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
+            summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
+        },
+        style: {
+            color: '3f1513', // 7C4E31
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '383275',
+            reelgoodLink: 'https://reelgood.com/show/squid-game-2021',
+            imdbID: 'tt10919420',
+            // subReddit: 'subreddit',
         },
     },
 ]
