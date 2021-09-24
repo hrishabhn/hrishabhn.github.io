@@ -1881,6 +1881,13 @@ function bookBigPopulate(n, tray) {
 
 const podData = [
     {
+        name: "Flagrant 2",
+        id: "flagrant",
+        link: "https://www.youtube.com/c/Flagrant2/videos",
+        author: "Andrew Schulz & Aakash Singh",
+        coverType: 'jpeg',
+    },
+    {
         name: "Pivot",
         id: "pivot",
         link: "https://podcasts.apple.com/podcast/id1073226719",
