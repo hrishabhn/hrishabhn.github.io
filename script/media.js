@@ -1423,7 +1423,7 @@ const movieData6 = [
             tvTimeID: '383275',
             reelgoodLink: 'https://reelgood.com/show/squid-game-2021',
             imdbID: 'tt10919420',
-            // subReddit: 'subreddit',
+            subReddit: 'squidgame',
         },
     },
 ]
