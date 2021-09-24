@@ -1,11 +1,5 @@
 ﻿[
   {
-    "name": "Squid Game",
-    "id": "squid",
-    "image": "https://hrishabhn.github.io/TV/background/squid.webp",
-    "service": "Netflix"
-  },
-  {
     "name": "Billions",
     "id": "billions",
     "image": "https://hrishabhn.github.io/TV/background/billions.webp",
