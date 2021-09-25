@@ -444,14 +444,6 @@ const userWidget = {
 
 const countdownData = [
     {
-        name: 'Start of Fall 2021',
-        date: 'Aug 23, 2021',
-    },
-    {
-        name: 'Past Countdowns',
-        date: null,
-    },
-    {
         name: 'Start of Exams',
         date: 'Sep 27, 2021',
     },
@@ -464,6 +456,10 @@ const countdownData = [
         date: 'Oct 8, 2021',
     },
     {
+        name: 'Halloween',
+        date: 'Oct 31, 2021',
+    },
+    {
         name: 'Thanksgiving',
         date: 'Nov 24, 2021',
     },
@@ -474,6 +470,14 @@ const countdownData = [
     {
         name: 'Madrid',
         date: 'Jan 31, 2022',
+    },
+    {
+        name: 'Past Countdowns',
+        date: null,
+    },
+    {
+        name: 'Start of Fall 2021',
+        date: 'Aug 23, 2021',
     },
 ]
 
