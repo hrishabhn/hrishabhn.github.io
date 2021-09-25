@@ -281,25 +281,25 @@ function popupAllHide() {
 // },
 const movieData0 = [
     {
-        name: "Billions",
-        id: "billions",
-        link: null,
+        name: 'Nine Perfect Strangers',
+        id: 'nine',
+        link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
         info: {
-            service: "Showtime",
-            description: "Drama &#149 Money &#149 5 Seasons &#149 2016 - Present",
-            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
+            service: 'Hulu',
+            description: 'Drama &#149 Mystery &#149 1 Season &#149 2021 - Present',
+            summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
         },
         style: {
-            color: '6f4c2d',
+            color: '6b7790',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
-            tvTimeID: "279536",
-            reelgoodLink: "https://reelgood.com/show/billions-2016",
-            imdbID: "tt4270492",
-            subReddit: 'Billions'
+            tvTimeID: '376815',
+            reelgoodLink: 'https://reelgood.com/show/nine-perfect-strangers',
+            imdbID: 'tt8760932',
+            // subReddit: 'subreddit',
         },
     },
     {
@@ -370,6 +370,28 @@ const movieData0 = [
 ]
 const movieData1 = [
     {
+        name: "Billions",
+        id: "billions",
+        link: null,
+        info: {
+            service: "Showtime",
+            description: "Drama &#149 Money &#149 5 Seasons &#149 2016 - Present",
+            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
+        },
+        style: {
+            color: '6f4c2d',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "279536",
+            reelgoodLink: "https://reelgood.com/show/billions-2016",
+            imdbID: "tt4270492",
+            subReddit: 'Billions'
+        },
+    },
+    {
         name: "Ted Lasso",
         id: "ted",
         link: null,
@@ -394,6 +416,28 @@ const movieData1 = [
 
 ]
 const movieData2 = [
+    {
+        name: 'Superstore',
+        id: 'superstore',
+        link: 'https://www.hulu.com/series/superstore-727810b8-e54b-4f01-9381-a79ab5661bf7',
+        info: {
+            service: 'Hulu',
+            description: 'Comedy &#149 6 Seasons &#149 2015 - 2021',
+            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
+        },
+        style: {
+            color: '0070DB',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '295648',
+            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
+            imdbID: 'tt4477976',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: "What If?",
         id: "whatif",
@@ -706,50 +750,6 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
-    {
-        name: 'Superstore',
-        id: 'superstore',
-        link: 'https://www.hulu.com/series/superstore-727810b8-e54b-4f01-9381-a79ab5661bf7',
-        info: {
-            service: 'Hulu',
-            description: 'Comedy &#149 6 Seasons &#149 2015 - 2021',
-            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
-        },
-        style: {
-            color: '0070DB',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '295648',
-            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
-            imdbID: 'tt4477976',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Nine Perfect Strangers',
-        id: 'nine',
-        link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
-        info: {
-            service: 'Hulu',
-            description: 'Drama &#149 Mystery &#149 1 Season &#149 2021 - Present',
-            summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
-        },
-        style: {
-            color: '6b7790',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/nine-perfect-strangers',
-            imdbID: 'tt8760932',
-            // subReddit: 'subreddit',
-        },
-    },
     {
         name: 'Foundation',
         id: 'foundation',
