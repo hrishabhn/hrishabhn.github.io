@@ -325,28 +325,6 @@ const movieData0 = [
         },
     },
     {
-        name: "What We Do in the Shadows",
-        id: "shadows",
-        link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
-        info: {
-            service: "Hulu",
-            description: "Comedy &#149 Drama &#149 Fantasy &#149 3 Seasons &#149 2019 - Present",
-            summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
-        },
-        style: {
-            color: '1C2C70',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "358211",
-            reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
-            imdbID: "tt7908628",
-            subReddit: 'WhatWeDointheShadows',
-        },
-    },
-    {
         name: "Brooklyn Nine-Nine",
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
@@ -411,6 +389,28 @@ const movieData1 = [
             reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
             imdbID: "tt10986410",
             subReddit: "TedLasso",
+        },
+    },
+    {
+        name: "What We Do in the Shadows",
+        id: "shadows",
+        link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
+        info: {
+            service: "Hulu",
+            description: "Comedy &#149 Drama &#149 Fantasy &#149 3 Seasons &#149 2019 - Present",
+            summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
+        },
+        style: {
+            color: '1C2C70',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "358211",
+            reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
+            imdbID: "tt7908628",
+            subReddit: 'WhatWeDointheShadows',
         },
     },
 
