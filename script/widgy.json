@@ -12,15 +12,15 @@
     "service": "Hulu"
   },
   {
-    "name": "What We Do in the Shadows",
-    "id": "shadows",
-    "image": "https://hrishabhn.github.io/TV/background/shadows.webp",
-    "service": "Hulu"
-  },
-  {
     "name": "Brooklyn Nine-Nine",
     "id": "brooklyn",
     "image": "https://hrishabhn.github.io/TV/background/brooklyn.webp",
+    "service": "Hulu"
+  },
+  {
+    "name": "Superstore",
+    "id": "superstore",
+    "image": "https://hrishabhn.github.io/TV/background/superstore.webp",
     "service": "Hulu"
   }
 ]
