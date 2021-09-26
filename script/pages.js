@@ -177,7 +177,7 @@ function menuSwitch(n) {
 
   title.innerHTML = menuData[n].name
   headerText.innerHTML = menuData[n].name
-  headerBox.classList = menuData[n].color
+  // headerBox.classList = menuData[n].color
   body.classList = menuData[n].color
 
 }
