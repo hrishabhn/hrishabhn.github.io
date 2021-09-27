@@ -2021,7 +2021,9 @@ const podData3 = [
     {
         name: "Learn Cantonese",
         id: "canto",
-        link: "https://podcasts.apple.com/podcast/id1513774818",
+        link: {
+            apple: 'id1513774818'
+        },
         author: "Poetic Cantonese",
         coverType: 'jpeg',
     },
@@ -2060,7 +2062,7 @@ function podBigPopulate(n) {
     for (i = 0; i < dataLength; i++) {
         const link = processLinkPod(podData[n][i].link)
 
-        var podCardHTML = `<a class="media-page-card pod image-border clickable" style="--poster: url('media-image/podcasts/${podData[n][i].id}.${podData[n][i].coverType}');" href="${link}"></a>`
+        var podCardHTML = `<a class="media-page-card pod image-border clickable" style="--poster: url('media-image/podcasts/${podData[n][i].id}.${podData[n][i].coverType}');" href="${link}" target="_blank"></a>`
 
         htmlString = `${htmlString}${podCardHTML}`
         if (i < dataLength - 1) {
