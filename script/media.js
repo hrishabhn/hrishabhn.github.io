@@ -413,6 +413,28 @@ const movieData1 = [
             subReddit: 'WhatWeDointheShadows',
         },
     },
+    {
+        name: 'Foundation',
+        id: 'foundation',
+        link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
+        info: {
+            service: ' TV+',
+            description: 'Drama &#149 Sci-Fi &#149 1 Season &#149 2021 - Present',
+            summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
+        },
+        style: {
+            color: '70655B',
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '366972',
+            reelgoodLink: 'https://reelgood.com/show/foundation-2020',
+            imdbID: 'tt0804484',
+            subReddit: 'FoundationTV',
+        },
+    },
 
 ]
 const movieData2 = [
@@ -750,28 +772,6 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
-    {
-        name: 'Foundation',
-        id: 'foundation',
-        link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
-        info: {
-            service: ' TV+',
-            description: 'Drama &#149 Sci-Fi &#149 1 Season &#149 2021 - Present',
-            summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
-        },
-        style: {
-            color: '70655B',
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/show/foundation-2020',
-            imdbID: 'tt0804484',
-            subReddit: 'FoundationTV',
-        },
-    },
     {
         name: 'For All Mankind',
         id: 'mankind',
@@ -1541,6 +1541,28 @@ const movieData7 = [
     },
 ]
 const movieDataArchive = [
+    {
+        name: 'Fargo',
+        id: 'fargo',
+        link: 'https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50',
+        info: {
+            service: 'Hulu',
+            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '28374E',
+            // posterType: 'webp',
+            // titleType: 'png',
+            // titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'This is the End',
         id: 'theend',
