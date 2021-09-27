@@ -18,9 +18,9 @@
     "service": "Hulu"
   },
   {
-    "name": "Superstore",
-    "id": "superstore",
-    "image": "https://hrishabhn.github.io/TV/background/superstore.webp",
-    "service": "Hulu"
+    "name": "Foundation",
+    "id": "foundation",
+    "image": "https://hrishabhn.github.io/TV/background/foundation.webp",
+    "service": " TV+"
   }
 ]
