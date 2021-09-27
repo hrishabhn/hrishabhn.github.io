@@ -1,6 +1,7 @@
 function menuLoad() {
   menuSwitchApps()
   menuSwitch(1)
+  // mediaPageSwitch(0)
   // tvPopup(movieData[0][0])
 }
 
