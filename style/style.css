@@ -139,11 +139,11 @@ body{
 }
 #everything{
     /* display: flex; */
-    top: 80px;
+    top: 60px;
 
     position: relative;
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
     overflow: scroll;
     background-color: black;
 }
@@ -272,7 +272,7 @@ body{
     /* padding-top: 100px; */
     border-radius: 10px;
 
-    height: calc(100% - 120px);
+    height: calc(100% - 100px);
     width: 180px;
     z-index: 100;
     background-color: var(--dark-layer-1);
@@ -567,8 +567,8 @@ body{
 
     padding-left: 220px;
     /* padding-right: 335px; */
-    padding-top: 20px;
-    height: 80px;
+    /* padding-top: 20px; */
+    height: 60px;
     z-index: 500;
 
     overflow-x: auto;
@@ -852,7 +852,7 @@ body{
     flex-direction: column;
     box-sizing: border-box;
     width: 280px;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 100px);
 
     bottom: 20px;
     right: 20px;
