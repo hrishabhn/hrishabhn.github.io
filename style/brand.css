@@ -493,6 +493,10 @@
 .podcasts{
     background:linear-gradient(to bottom right,#D56EFD,#842BC1);
 }
+.podcasts-fg{
+    color: #842BC1;
+    fill: #842BC1;
+}
 .books{
     /* background:linear-gradient(to bottom right,#FC880F,#b0600b); */
     background-color: #FC880F;
