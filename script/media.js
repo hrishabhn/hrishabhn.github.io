@@ -1955,7 +1955,9 @@ const podData0 = [
     {
         name: "INET",
         id: "inet",
-        link: "https://www.youtube.com/c/NewEconomicThinking/videos",
+        link: {
+            youtube: 'NewEconomicThinking'
+        },
         author: "Rob Johnson",
         coverType: 'jpeg',
     },
@@ -1975,7 +1977,9 @@ const podData1 = [
     {
         name: "Lex Fridman Podcast",
         id: "lex",
-        link: "https://www.youtube.com/lexfridman/videos",
+        link: {
+            youtube: 'lexfridman'
+        },
         author: "Lex Fridman",
         coverType: 'jpeg',
     },
@@ -1986,7 +1990,9 @@ const podData2 = [
     {
         name: "Acquired",
         id: "acquired",
-        link: "https://podcasts.apple.com/podcast/id1050462261",
+        link: {
+            apple: 'id1050462261'
+        },
         author: "Ben Gilbert & David Rosenthal",
         coverType: 'jpeg',
     },
@@ -1994,7 +2000,7 @@ const podData2 = [
         name: 'Land of the Giants',
         id: 'giants',
         link: {
-            apple: ''
+            apple: 'id1465767420'
         },
         author: 'Recode',
         coverType: 'jpeg',
