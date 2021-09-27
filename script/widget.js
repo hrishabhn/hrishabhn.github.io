@@ -102,8 +102,8 @@ function countdownCalculate(date) {
         distance = nowDate - futureDate
         past = true
     }
-    console.log(distance)
-    console.log(past)
+    // console.log(distance)
+    // console.log(past)
 
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
