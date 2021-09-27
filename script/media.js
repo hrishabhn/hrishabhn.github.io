@@ -1,6 +1,6 @@
 function mediaPopulate() {
     bookPopulate(bookData0, 'book-tray')
-    podPopulate(podData, 'pod-tray')
+    podPopulate(podData0, 'pod-tray')
     newsPopulate(newsData)
     youtubePopulate(youtubeData)
     // movieHTML(0, 'up-next-tray')
@@ -17,6 +17,13 @@ function mediaPopulate() {
     bookBigPopulate(2)
     bookBigPopulate(3)
     bookBigPopulate(4)
+
+
+    podBigPopulate(0)
+    podBigPopulate(1)
+    podBigPopulate(2)
+    podBigPopulate(3)
+
 
     movieHTML(0, 'up-next-tray-2')
     movieHTML(1, 'weekly-tray-2')
@@ -145,7 +152,7 @@ function tvPopup(movie) {
     var linkIcon = document.getElementById("tv-popup-button-icon")
     if (movie.link) {
         linkIcon.classList.remove("hidden-always")
-        linkElement.href = processLink(movie)
+        linkElement.href = processLinkTV(movie)
     } else {
         linkIcon.classList.add("hidden-always")
         linkElement.removeAttribute('href')
@@ -234,13 +241,23 @@ function tvPopup(movie) {
     // document.getElementById("tv-popup-imdb-rating").innerHTML = imdbRate;
 }
 
-function processLink(movie) {
+function processLinkTV(movie) {
     if (movie.link.netflix) {
         return `https://www.netflix.com/title/${movie.link.netflix}`
     } else if (movie.link.amazon) {
         return movie.link.amazon
     } else {
         return movie.link
+    }
+}
+
+function processLinkPod(link) {
+    if (link.apple) {
+        return `https://podcasts.apple.com/podcast/${link.apple}`
+    } else if (link.youtube) {
+        return `https://www.youtube.com/c/${link.youtube}/videos`
+    } else {
+        return link
     }
 }
 
@@ -1652,8 +1669,6 @@ const movieDataArchive = [
     },
 ]
 
-
-
 const movieData = [
     movieData0,
     movieData1,
@@ -1675,7 +1690,7 @@ function movieHTML(n, tray) {
 
     for (i = 0; i < dataLength; i++) {
         if ((data[i].link !== null) && (data[i].link !== undefined)) {
-            var htmlLink = `href="${processLink(data[i])}"`
+            var htmlLink = `href="${processLinkTV(data[i])}"`
         } else {
             var htmlLink = ``
         }
@@ -1864,7 +1879,7 @@ function bookPopulate(bookData, tray) {
     trayElement.innerHTML = htmlString
 }
 
-function bookBigPopulate(n, tray) {
+function bookBigPopulate(n) {
     var dataLength = bookData[n].length
 
     var htmlString = '';
@@ -1901,61 +1916,33 @@ function bookBigPopulate(n, tray) {
     trayElement.innerHTML = htmlString
 }
 
-const podData = [
+// business podcasts
+const podData0 = [
     {
-        name: "Flagrant 2",
-        id: "flagrant",
-        link: "https://www.youtube.com/c/Flagrant2/videos",
-        author: "Andrew Schulz & Aakash Singh",
-        coverType: 'jpeg',
-    },
-    {
-        name: "Pivot",
-        id: "pivot",
-        link: "https://podcasts.apple.com/podcast/id1073226719",
-        author: "Kara Swisher & Scott Galloway",
-        coverType: 'jpeg',
-    },
-    {
-        name: "Waveform",
-        id: "waveform",
-        link: "https://www.youtube.com/Waveform/videos",
-        author: "Marques Brownlee",
+        name: "Sway",
+        id: "sway",
+        link: {
+            apple: 'id1528594034'
+        },
+        author: "Kara Swisher",
         coverType: 'jpeg',
     },
     {
         name: "Founder's Journal",
         id: "founders",
-        link: "https://podcasts.apple.com/podcast/id1509276485",
+        link: {
+            apple: 'id1509276485'
+        },
         author: "Alex Lieberman",
         coverType: 'jpeg',
     },
     {
-        name: "Sway",
-        id: "sway",
-        link: "https://podcasts.apple.com/podcast/id1528594034",
-        author: "Kara Swisher",
-        coverType: 'jpeg',
-    },
-    {
-        name: "Acquired",
-        id: "acquired",
-        link: "https://podcasts.apple.com/podcast/id1050462261",
-        author: "Ben Gilbert & David Rosenthal",
-        coverType: 'jpeg',
-    },
-    {
-        name: "Learn Cantonese",
-        id: "canto",
-        link: "https://podcasts.apple.com/podcast/id1513774818",
-        author: "Poetic Cantonese",
-        coverType: 'jpeg',
-    },
-    {
-        name: "Lex Fridman Podcast",
-        id: "lex",
-        link: "https://www.youtube.com/lexfridman/videos",
-        author: "Lex Fridman",
+        name: "Pivot",
+        id: "pivot",
+        link: {
+            apple: 'id1073226719'
+        },
+        author: "Kara Swisher & Scott Galloway",
         coverType: 'jpeg',
     },
     {
@@ -1966,27 +1953,122 @@ const podData = [
         coverType: 'jpeg',
     },
     {
-        name: "Economist Radio",
-        id: "economist",
-        link: "https://podcasts.apple.com/podcast/id151230264",
-        author: "The Economist",
-        coverType: 'jpeg',
-    },
-    {
         name: "INET",
         id: "inet",
         link: "https://www.youtube.com/c/NewEconomicThinking/videos",
         author: "Rob Johnson",
         coverType: 'jpeg',
     },
+]
+
+// tech podcasts
+const podData1 = [
     {
-        name: "Making Sense",
-        id: "samharris",
-        link: "https://podcasts.apple.com/podcast/id733163012",
-        author: "Sam Harris",
+        name: "Waveform",
+        id: "waveform",
+        link: {
+            youtube: 'Waveform'
+        },
+        author: "Marques Brownlee",
+        coverType: 'jpeg',
+    },
+    {
+        name: "Lex Fridman Podcast",
+        id: "lex",
+        link: "https://www.youtube.com/lexfridman/videos",
+        author: "Lex Fridman",
         coverType: 'jpeg',
     },
 ]
+
+// story podcasts
+const podData2 = [
+    {
+        name: "Acquired",
+        id: "acquired",
+        link: "https://podcasts.apple.com/podcast/id1050462261",
+        author: "Ben Gilbert & David Rosenthal",
+        coverType: 'jpeg',
+    },
+    {
+        name: 'Land of the Giants',
+        id: 'giants',
+        link: {
+            apple: ''
+        },
+        author: 'Recode',
+        coverType: 'jpeg',
+    }
+]
+
+// other podcasts
+const podData3 = [
+    {
+        name: "Flagrant 2",
+        id: "flagrant",
+        link: {
+            youtube: 'Flagrant2'
+        },
+        author: "Andrew Schulz & Aakash Singh",
+        coverType: 'jpeg',
+    },
+    {
+        name: "Learn Cantonese",
+        id: "canto",
+        link: "https://podcasts.apple.com/podcast/id1513774818",
+        author: "Poetic Cantonese",
+        coverType: 'jpeg',
+    },
+]
+
+const podDataArchive = [
+    // {
+    //     name: "Economist Radio",
+    //     id: "economist",
+    //     link: "https://podcasts.apple.com/podcast/id151230264",
+    //     author: "The Economist",
+    //     coverType: 'jpeg',
+    // },
+    // {
+    //     name: "Making Sense",
+    //     id: "samharris",
+    //     link: "https://podcasts.apple.com/podcast/id733163012",
+    //     author: "Sam Harris",
+    //     coverType: 'jpeg',
+    // },
+]
+
+const podData = [
+    podData0,
+    podData1,
+    podData2,
+    podData3,
+]
+
+function podBigPopulate(n) {
+    var dataLength = podData[n].length
+
+    var htmlString = '';
+    htmlString = appendSpacer(htmlString, 35)
+
+    for (i = 0; i < dataLength; i++) {
+        const link = processLinkPod(podData[n][i].link)
+
+        var podCardHTML = `<a class="media-page-card pod image-border clickable" style="--poster: url('media-image/podcasts/${podData[n][i].id}.${podData[n][i].coverType}');" href="${link}"></a>`
+
+        htmlString = `${htmlString}${podCardHTML}`
+        if (i < dataLength - 1) {
+            htmlString = appendSpacer(htmlString, 15)
+        }
+    }
+
+    htmlString = appendSpacer(htmlString, 35)
+    htmlString = appendSpacer(htmlString, 'n')
+    htmlString = `<div class="scroll margin-35">${htmlString}</div>`
+
+    var trayElement = document.getElementById(`pod-tray-${n}`)
+    trayElement.innerHTML = htmlString
+}
 
 function podPopulate(podData, tray) {
 
@@ -1996,9 +2078,13 @@ function podPopulate(podData, tray) {
     var htmlString = "";
     htmlString = appendSpacer(htmlString, 35)
 
+
     for (i = 0; i < dataLength; i++) {
+        const link = processLinkPod(podData[i].link)
+
         // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${podData[i].link}"><div class="book-card-bg ${podData[i].id}-cover"><div class="book-card-fg"></div></div><div class="pod-poster ${podData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading">${podData[i].author}</p></div></div></a>`
-        var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('pod',${i})"><div class="media-poster pod-poster image-border" style="--poster: url('media-image/podcasts/${podData[i].id}.${podData[i].coverType}');"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading secondary-fg">${podData[i].author}</p></div></div></a>`
+        // var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('pod',${i})"><div class="media-poster pod-poster image-border" style="--poster: url('media-image/podcasts/${podData[i].id}.${podData[i].coverType}');"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading secondary-fg">${podData[i].author}</p></div></div></a>`
+        var bookCardHTML = `<a class="media-card clickable" target="_blank" href="${link}""><div class="media-poster pod-poster image-border" style="--poster: url('media-image/podcasts/${podData[i].id}.${podData[i].coverType}');"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading secondary-fg">${podData[i].author}</p></div></div></a>`
 
         htmlString = `${htmlString}${bookCardHTML}`
         if (i < dataLength - 1) {
@@ -2013,6 +2099,8 @@ function podPopulate(podData, tray) {
     var trayElement = document.getElementById(tray)
     trayElement.innerHTML = htmlString
 }
+
+
 
 const newsData = [
     {
