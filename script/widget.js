@@ -444,6 +444,26 @@ const userWidget = {
 
 const countdownData = [
     {
+        name: 'Spanish Exam',
+        date: 'Sep 27, 2021 16:30:00',
+    },
+    {
+        name: 'ECE Exam',
+        date: 'Sep 27, 2021 20:00:00',
+    },
+    {
+        name: 'NUCL Exam',
+        date: 'Sep 29, 2021 20:00:00',
+    },
+    {
+        name: 'IE 386 Exam',
+        date: 'Sep 30, 2021 09:30:00',
+    },
+    {
+        name: 'IE 335 Quiz',
+        date: 'Oct 1, 2021 12:30:00',
+    },
+    {
         name: 'End of Exams',
         date: 'Oct 2, 2021',
     },
@@ -472,13 +492,14 @@ const countdownData = [
         date: null,
     },
     {
-        name: 'Start of Exams',
-        date: 'Sep 27, 2021',
-    },
-    {
         name: 'Start of Fall 2021',
         date: 'Aug 23, 2021',
     },
+
+    // {
+    //     name: 'Start of Exams',
+    //     date: 'Sep 27, 2021',
+    // },
 ]
 
 var allCountdowns = true
