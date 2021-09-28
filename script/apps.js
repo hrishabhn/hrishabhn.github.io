@@ -32,17 +32,6 @@ function appType(type, appData, dest, title, devices) {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 function actionPopulate(data, tray, title, devices) {
     // console.log(data, tray, title)
     var dataLength = data.length
