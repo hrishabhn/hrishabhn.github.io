@@ -158,14 +158,14 @@ function menuSwitch(n) {
 
   var title = document.getElementById("title-page")
   var headerText = document.getElementById("header-text")
-  var headerBox = document.getElementById('header')
+  // var headerBox = document.getElementById('header')
   var body = document.getElementById('body')
 
-  if (pages[n]) {
-    title.innerHTML = pages[n].info.name
-    headerText.innerHTML = pages[n].info.name
-    // headerBox.classList = pages[n].style
-    body.classList = pages[n].info.style
+  if (pages.items[n]) {
+    title.innerHTML = pages.items[n].info.name
+    headerText.innerHTML = pages.items[n].info.name
+    // headerBox.classList = pages.items[n].style
+    body.classList = pages.items[n].info.style
 
   }
 
