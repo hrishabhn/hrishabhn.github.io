@@ -515,6 +515,30 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
+        name: 'Dear White People',
+        id: 'dear',
+        link: {
+            netflix: '80095698'
+        },
+        info: {
+            service: 'Netflix',
+            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '813a2a',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'tall',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/dear-white-people-2017',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'For All Mankind',
         id: 'mankind',
         link: 'https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7',
