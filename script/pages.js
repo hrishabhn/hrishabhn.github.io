@@ -1,6 +1,6 @@
 function menuLoad() {
   menuSwitchApps()
-  menuSwitch(1)
+  menuSwitch(0)
   // mediaPageSwitch(0)
   // tvPopup(movieData[0][0])
 }
@@ -154,13 +154,14 @@ function menuSwitch(n) {
   var headerText = document.getElementById("header-text")
   var headerBox = document.getElementById('header')
   var body = document.getElementById('body')
+  
+  if (pages[n]) {
+    title.innerHTML = pages[n].info.name
+    headerText.innerHTML = pages[n].info.name
+    // headerBox.classList = pages[n].style
+    body.classList = pages[n].info.style
 
-  // console.log(pages[1])
-
-  title.innerHTML = menuData[n].name
-  headerText.innerHTML = menuData[n].name
-  // headerBox.classList = pages[n].style
-  body.classList = menuData[n].style
+  }
 
 }
 
