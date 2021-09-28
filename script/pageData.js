@@ -63,37 +63,30 @@ const page1 = {
             id:'shopping-tray',
         },
         {
-            type: 'target',
-            id:'pinned-bookmarks-tray',
+            type: 'link-tray',
+            title: 'Pinned',
+            devices: null,
+            data: pinnedBookmarksApps,
         },
         {
-            type: 'target',
-            id:'design-tray',
+            type: 'link-tray',
+            title: 'Design',
+            devices: null,
+            data: designApps,
         },
         {
-            type: 'target',
-            id:'apartment-tray',
-        },
-        {
-            type: 'target',
-            id:'course-switch-content-tray',
-        },
-        {
-            type: 'target',
-            id:'media-switch-tray',
-        },
-        {
-            type: 'target',
-            id:'media-switch-content-tray',
+            type: 'link-tray',
+            title: 'Apartment',
+            devices: null,
+            data: apartmentApps,
         },
     ],
     render: function() {
         pageRender(this.content,1)
         
         appType('action',shoppingApps,'shopping-tray',null,null)
-        appType('link',pinnedBookmarksApps,'pinned-bookmarks-tray','Pinned',null)
-        appType('link',designApps,'design-tray','Design',null)
-        appType('link',apartmentApps,'apartment-tray','Apartment',null)
+        // appType('link',pinnedBookmarksApps,'pinned-bookmarks-tray','Pinned',null)
+        // appType('link',designApps,'design-tray','Design',null)
     }
 }
 const page2 = {
@@ -146,14 +139,14 @@ const page3 = {
     },
     content: [
         {
-            type: 'target',
-            id:'school-1-tray',
+            type: 'action-tray',
+            title: null,
+            devices: null,
+            data: schoolApps,
         },
     ],
     render: function() {
         pageRender(this.content,3)
-        
-        appType('action',schoolApps,'school-1-tray',null,null)
     }
 }
 const page4 = {
@@ -225,7 +218,8 @@ function pageRender(content,n) {
     const mainTarget = document.getElementById(`main-${n}`)
     mainTarget.innerHTML = ''
 
-    for (i = 0; i < content.length; i++) {
+
+    for (let i = 0; i < content.length; i++) {
 
         if (content[i].type == 'target') {
             var element = document.createElement('div')
@@ -234,8 +228,17 @@ function pageRender(content,n) {
             var element = document.createElement('div')
             element.classList = 'media-title'
             element.innerHTML = content[i].title
+        } else if (content[i].type == 'action-tray') {
+            element = actionElements(content[i].data, content[i].title, content[i].devices)
+        } else if (content[i].type == 'link-tray') {
+            element = linkElements(content[i].data, content[i].title, content[i].devices)
         }
 
+        if (n == 1){
+            console.log(element)
+            console.log(content.length)
+            console.log(i)
+        }
 
         mainTarget.append(element)
     }
