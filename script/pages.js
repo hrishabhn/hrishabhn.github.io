@@ -75,7 +75,7 @@ const menuItems = {
     var htmlString = ''
     var j = 0
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
 
 
       if (i > 5) {
@@ -117,7 +117,7 @@ const menuItems = {
     var container = document.getElementById('navbar-menu')
     container.innerHTML = htmlString
 
-    menuSwitch(4)
+    menuSwitch(1)
   },
 }
 
@@ -126,7 +126,7 @@ var mainCurrent = 1;
 function menuSwitch(n) {
   // const menuSwitchElements = []
 
-  // for (i = 0; i < menuItems.data.length; i++) {
+  // for (let i = 0; i < menuItems.data.length; i++) {
   //   // menuSwitchElements[i] = document.getElementById(`menu-${i}`)
   //   // menuSwitchElements[i].classList.re
   // }
