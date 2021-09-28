@@ -21,7 +21,7 @@ function newPopulate(){
     todayWidget()
     allWidgets.initial()
 
-    pageContent()
+    pages.render()
 
     
     apps()
