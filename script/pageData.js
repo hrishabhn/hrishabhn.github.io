@@ -8,12 +8,28 @@ const page0 = {
     },
     content: [
         {
-            type: 'target',
-            id:'productivity-tray',
+            type: 'action-tray',
+            title: null,
+            devices: null,
+            data: productivityApps,
         },
         {
-            type: 'target',
-            id:'note-tray',
+            type: 'action-tray',
+            title: null,
+            devices: null,
+            data: noteApps,
+        },
+        {
+            type: 'link-tray',
+            title: 'Notes',
+            devices: null,
+            data: noteApps,
+        },
+        {
+            type: 'link-tray',
+            title: 'Pinned',
+            devices: null,
+            data: pinnedHomeApps,
         },
         {
             type: 'target',
@@ -42,11 +58,6 @@ const page0 = {
     ],
     render: function() {
         pageRender(this.content,0)
-        
-        appType('action',productivityApps,'productivity-tray',null,null)
-        appType('action',noteApps,'note-tray',null,null)
-        appType('link',pinnedHomeApps,'pinned-home-tray','Pinned',null)
-        appType('link',notionApps,'notion-tray','Notion',null)
     }
 }
 const page1 = {
@@ -59,8 +70,10 @@ const page1 = {
     },
     content: [
         {
-            type: 'target',
-            id:'shopping-tray',
+            type: 'action-tray',
+            title: null,
+            devices: null,
+            data: shoppingApps,
         },
         {
             type: 'link-tray',
@@ -83,10 +96,6 @@ const page1 = {
     ],
     render: function() {
         pageRender(this.content,1)
-        
-        appType('action',shoppingApps,'shopping-tray',null,null)
-        // appType('link',pinnedBookmarksApps,'pinned-bookmarks-tray','Pinned',null)
-        // appType('link',designApps,'design-tray','Design',null)
     }
 }
 const page2 = {
@@ -99,34 +108,38 @@ const page2 = {
     },
     content: [
         {
-            type: 'target',
-            id:'ios-system-tray',
+            type: 'action-tray',
+            title: null,
+            devices: 'hidden-desktop',
+            data: iosSystemApps,
         },
         {
-            type: 'target',
-            id:'finance-tray',
+            type: 'action-tray',
+            title: 'Finance',
+            devices: 'only-mobile',
+            data: financeApps,
         },
         {
-            type: 'target',
-            id:'learning-tray',
+            type: 'action-tray',
+            title: 'Learning',
+            devices: null,
+            data: learningApps,
         },
         {
-            type: 'target',
-            id:'social-tray',
+            type: 'action-tray',
+            title: 'Social',
+            devices: null,
+            data: socialApps,
         },
         {
-            type: 'target',
-            id:'pinned-social-tray',
+            type: 'link-tray',
+            title: 'Pinned',
+            devices: null,
+            data: pinnedAppsApps,
         },
     ],
     render: function() {
         pageRender(this.content,2)
-        
-        appType('action',iosSystemApps,'ios-system-tray',null,'hidden-desktop')
-        appType('action',financeApps,'finance-tray','Finance','only-mobile')
-        appType('action',learningApps,'learning-tray','Learning',null)
-        appType('action',socialApps,'social-tray','Social',null)
-        appType('link',pinnedAppsApps,'pinned-social-tray','Pinned',null)
     }
 }
 const page3 = {
@@ -159,8 +172,10 @@ const page4 = {
     },
     content: [
         {
-            type: 'target',
-            id:'news-app-tray',
+            type: 'link-tray',
+            title: 'News',
+            devices: null,
+            data: newsApps,
         },
         {
             type: 'target',
@@ -175,26 +190,23 @@ const page4 = {
             id:'youtube-tray',
         },
         {
-            type: 'target',
-            id:'audio-tray',
+            type: 'link-tray',
+            title: 'Audio',
+            devices: null,
+            data: audioApps,
         },
         {
-            type: 'target',
-            id:'news-tray',
-        },
-        {
-            type: 'target',
-            id:'video-tray',
+            type: 'link-tray',
+            title: 'TV & Video',
+            devices: null,
+            data: videoApps,
         },
     ],
     render: function() {
         pageRender(this.content,4)
         
-        appType('link',newsApps,'news-app-tray','News',null)
         newsPopulate(newsData)
         youtubePopulate(youtubeData)
-        appType('link',audioApps,'audio-tray','Audio',null)
-        appType('link',videoApps,'video-tray','TV & Video',null) 
     }
 }
 
@@ -232,12 +244,6 @@ function pageRender(content,n) {
             element = actionElements(content[i].data, content[i].title, content[i].devices)
         } else if (content[i].type == 'link-tray') {
             element = linkElements(content[i].data, content[i].title, content[i].devices)
-        }
-
-        if (n == 1){
-            console.log(element)
-            console.log(content.length)
-            console.log(i)
         }
 
         mainTarget.append(element)
