@@ -23,7 +23,7 @@ const page0 = {
             type: 'link-tray',
             title: 'Notes',
             devices: null,
-            data: noteApps,
+            data: notionApps,
         },
         {
             type: 'link-tray',
