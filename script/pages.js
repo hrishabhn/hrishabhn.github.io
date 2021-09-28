@@ -71,57 +71,54 @@ const menuItems = {
     },
   ],
   render: function() {
-    menuSwitchApps()
-    menuSwitch(0)
-  },
-}
+    const dataLength = this.data.length
+    var htmlString = ''
+    var j = 0
 
-function menuSwitchApps() {
-  const dataLength = menuItems.data.length
-  var htmlString = ''
-  var j = 0
-
-  for (i = 0; i < dataLength; i++) {
+    for (i = 0; i < dataLength; i++) {
 
 
-    if (i > 5) {
-      var device = 'hidden-mobile'
-    } else {
-      var device = ''
-    }
-
-
-
-
-
-    if (menuItems.data[i].type == 'page') {
-      if (menuItems.data[i].trigger) {
-        var action = `onclick="${menuItems.data[i].trigger}"`
-      } else if (menuItems.data[i].link) {
-        var action = `href="${menuItems.data[i].link}"`
+      if (i > 5) {
+        var device = 'hidden-mobile'
+      } else {
+        var device = ''
       }
 
-      var menuItemHTML = `<a id="menu-${j}" class="menu-item ${device}" target="_self" ${action}>
-          <div class="menu-item-bg ${menuItems.data[i].style}"></div>
-          <span class="menu-item-icon ${menuItems.data[i].style}-fg">
-              ${menuItems.data[i].icon}
-          </span><span class="menu-item-text primary-fg">
-              ${menuItems.data[i].name}
-          </span>
-      </a>`
 
-      j++
-    } else if (menuItems.data[i].type == 'title') {
-      var menuItemHTML = `<div class="navbar-title hidden-mobile">${menuItems.data[i].name}</div>`
-    } else if (menuItems.data[i].type == 'spacer') {
-      var menuItemHTML = appendSpacer('','scroll')
-      // menuItemHTML = `<div class = "hidden-mobile">${menuItemHTML}</div>`
+
+
+
+      if (this.data[i].type == 'page') {
+        if (this.data[i].trigger) {
+          var action = `onclick="${this.data[i].trigger}"`
+        } else if (this.data[i].link) {
+          var action = `href="${this.data[i].link}"`
+        }
+
+        var menuItemHTML = `<a id="menu-${j}" class="menu-item ${device}" target="_self" ${action}>
+            <div class="menu-item-bg ${this.data[i].style}"></div>
+            <span class="menu-item-icon ${this.data[i].style}-fg">
+                ${this.data[i].icon}
+            </span><span class="menu-item-text primary-fg">
+                ${this.data[i].name}
+            </span>
+        </a>`
+
+        j++
+      } else if (this.data[i].type == 'title') {
+        var menuItemHTML = `<div class="navbar-title hidden-mobile">${this.data[i].name}</div>`
+      } else if (this.data[i].type == 'spacer') {
+        var menuItemHTML = appendSpacer('','scroll')
+        // menuItemHTML = `<div class = "hidden-mobile">${menuItemHTML}</div>`
+      }
+
+      htmlString = `${htmlString}${menuItemHTML}`
     }
+    var container = document.getElementById('navbar-menu')
+    container.innerHTML = htmlString
 
-    htmlString = `${htmlString}${menuItemHTML}`
-  }
-  var container = document.getElementById('navbar-menu')
-  container.innerHTML = htmlString
+    menuSwitch(0)
+  },
 }
 
 var mainCurrent = 1;
