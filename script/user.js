@@ -111,7 +111,7 @@ function userSelectPopulate() {
     
     htmlString = appendSpacer(htmlString,1000)
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         var userCardHTML = `
         <div id="user-select-card-${i}" class="user-select-card preload" onClick="setUser(${i})">
             <div class="vstack flex-grow">
@@ -151,7 +151,7 @@ function userSelectLoad(i) {
 function userSelectReset() {
     const dataLength = userList.length
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         var userCard = document.getElementById(`user-select-card-${i}`)
         userCard.classList.add('preload')
     }
