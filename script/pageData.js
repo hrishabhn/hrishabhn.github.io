@@ -182,28 +182,12 @@ const page4 = {
             id:'youtube-tray',
         },
         {
-            type: 'media-title',
-            title: 'Books',
-        },
-        {
-            type: 'target',
-            id:'book-tray',
-        },
-        {
             type: 'target',
             id:'audio-tray',
         },
         {
             type: 'target',
             id:'news-tray',
-        },
-        {
-            type: 'media-title',
-            title: 'Podcasts',
-        },
-        {
-            type: 'target',
-            id:'pod-tray',
         },
         {
             type: 'target',
@@ -214,6 +198,8 @@ const page4 = {
         pageRender(this.content,4)
         
         appType('link',newsApps,'news-app-tray','News',null)
+        newsPopulate(newsData)
+        youtubePopulate(youtubeData)
         appType('link',audioApps,'audio-tray','Audio',null)
         appType('link',videoApps,'video-tray','TV & Video',null) 
     }
