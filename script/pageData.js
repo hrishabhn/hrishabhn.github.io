@@ -240,10 +240,8 @@ function pageRender(content,n) {
             var element = document.createElement('div')
             element.classList = 'media-title'
             element.innerHTML = content[i].title
-        } else if (content[i].type == 'action-tray') {
-            element = actionElements(content[i].data, content[i].title, content[i].devices)
-        } else if (content[i].type == 'link-tray') {
-            element = linkElements(content[i].data, content[i].title, content[i].devices)
+        } else if ((content[i].type == 'link-tray') || (content[i].type == 'action-tray')) {
+            element = appRowElement(content[i].type,content[i].data, content[i].title, content[i].devices)
         }
 
         mainTarget.append(element)
