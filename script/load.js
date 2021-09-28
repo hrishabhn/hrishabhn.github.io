@@ -21,6 +21,9 @@ function newPopulate(){
     todayWidget()
     allWidgets.initial()
 
+    pageContent()
+
+    
     apps()
     switches()
     mediaPopulate()
