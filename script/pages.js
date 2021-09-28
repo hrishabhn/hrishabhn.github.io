@@ -1,10 +1,3 @@
-function menuLoad() {
-  menuItems.render()
-  // mediaPageSwitch(0)
-  // tvPopup(movieData[0][0])
-
-}
-
 const menuItems = {
   data: [
     {
