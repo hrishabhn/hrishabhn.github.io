@@ -270,7 +270,7 @@ function movieHTML(n, tray) {
     var htmlString = "";
     htmlString = appendSpacer(htmlString, 35)
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         if ((data[i].link !== null) && (data[i].link !== undefined)) {
             var htmlLink = `href="${processLinkTV(data[i])}"`
         } else {
@@ -323,7 +323,7 @@ function bookPopulate(bookData, tray) {
     var htmlString = "";
     htmlString = appendSpacer(htmlString, 35)
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${bookData[i].link}"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
         var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('book',${i})"><div class="media-poster book-poster image-border" style="--poster: url('media-image/books/${bookData[i].id}.${bookData[i].coverType}');"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading secondary-fg">${bookData[i].author}</p></div></div></a>`
 
@@ -347,7 +347,7 @@ function bookBigPopulate(n) {
     var htmlString = '';
     htmlString = appendSpacer(htmlString, 35)
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${bookData[i].link}"><div class="book-card-bg ${bookData[i].id}-cover"><div class="book-card-fg"></div></div><div class="book-poster ${bookData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading">${bookData[i].author}</p></div></div></a>`
         // var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('book',${i})"><div class="media-poster book-poster image-border" style="--poster: url('media-image/books/${bookData[i].id}.${bookData[i].coverType}');"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${bookData[i].name}</p><p class="book-subheading secondary-fg">${bookData[i].author}</p></div></div></a>`
         // var bookCardHTML = `
@@ -384,7 +384,7 @@ function podBigPopulate(n) {
     var htmlString = '';
     htmlString = appendSpacer(htmlString, 35)
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         const link = processLinkPod(podData[n][i].link)
 
         var podCardHTML = `<a class="media-page-card pod image-border clickable" style="--poster: url('media-image/podcasts/${podData[n][i].id}.${podData[n][i].coverType}');" href="${link}" target="_blank"></a>`
@@ -412,7 +412,7 @@ function podPopulate(podData, tray) {
     htmlString = appendSpacer(htmlString, 35)
 
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         const link = processLinkPod(podData[i].link)
 
         // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${podData[i].link}"><div class="book-card-bg ${podData[i].id}-cover"><div class="book-card-fg"></div></div><div class="pod-poster ${podData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading">${podData[i].author}</p></div></div></a>`
@@ -480,7 +480,7 @@ function newsPopulate(newsData) {
     var htmlString = "";
     htmlString = appendSpacer(htmlString, 35)
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
 
         if (newsData[i].fg) {
             var fgHTML = `<div class="news-image ${newsData[i].fg}"></div>`
@@ -529,7 +529,7 @@ function youtubePopulate(youtubeData) {
     var htmlString = "";
     htmlString = appendSpacer(htmlString, 35)
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
 
         if (youtubeData[i].fg) {
             var fgHTML = `<div class="news-image ${youtubeData[i].fg}"></div>`
