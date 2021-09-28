@@ -1,26 +1,4 @@
 function apps(){
-    appType('action',productivityApps,'productivity-tray',null,null)
-    appType('action',noteApps,'note-tray',null,null)
-    appType('link',pinnedHomeApps,'pinned-home-tray','Pinned',null)
-    appType('link',notionApps,'notion-tray','Notion',null)
-
-    appType('action',shoppingApps,'shopping-tray',null,null)
-    appType('link',pinnedBookmarksApps,'pinned-bookmarks-tray','Pinned',null)
-    appType('link',designApps,'design-tray','Design',null)
-    appType('link',apartmentApps,'apartment-tray','Apartment',null)
-
-    appType('action',iosSystemApps,'ios-system-tray',null,'hidden-desktop')
-    appType('action',financeApps,'finance-tray','Finance','only-mobile')
-    appType('action',learningApps,'learning-tray','Learning',null)
-    appType('action',socialApps,'social-tray','Social',null)
-    appType('link',pinnedAppsApps,'pinned-social-tray','Pinned',null)
-
-    appType('action',schoolApps,'school-1-tray',null,null)
-
-    appType('link',newsApps,'news-app-tray','News',null)
-    appType('link',audioApps,'audio-tray','Audio',null)
-    appType('link',videoApps,'video-tray','TV & Video',null)
-
     appType('link',videoApps,'video-tray-2','TV & Video',null)
 }
 
