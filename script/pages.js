@@ -117,7 +117,7 @@ const menuItems = {
     var container = document.getElementById('navbar-menu')
     container.innerHTML = htmlString
 
-    menuSwitch(1)
+    menuSwitch(4)
   },
 }
 
