@@ -560,7 +560,7 @@ const countdownWidget = {
         const parent = document.getElementById(`${this.id}-widget-content`)
         var htmlString = ``
 
-        for (i = 0; i < countdownData.length; i++) {
+        for (let i = 0; i < countdownData.length; i++) {
             const countdownReturn = countdownCalculate(countdownData[i].date)
             // console.log(countdownReturn)
             
