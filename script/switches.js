@@ -86,7 +86,7 @@ function courseSwitchApps() {
     const dataLength = courseData.length
     var htmlString = "";
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         const courseId = `course-${i}`
         const courseColor = `${courseData[i].color}-fg`
         const courseTrigger = `courseSwitch(${i})`
@@ -129,7 +129,7 @@ function courseSwitch(n) {
     // console.log(n)
     const courseSwitcheElements = [];
 
-    for (i = 0; i < courseData.length; i++) {
+    for (let i = 0; i < courseData.length; i++) {
         courseSwitcheElements[i] = document.getElementById(`course-${i}`)
         // console.log(courseSwitcheElements[i])
         courseSwitcheElements[i].classList.remove(courseData[i].color)
@@ -193,7 +193,7 @@ function mediaSwitchApps() {
     const dataLength = mediaSwitchData.length
     var htmlString = "";
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         const mediaId = `media-switch-${i}`
         const mediaColor = `${mediaSwitchData[i].color}-fg`
         const mediaTrigger = `mediaSwitch(${i})`
@@ -223,7 +223,7 @@ function mediaSwitch(n) {
     clearElement('media-switch-content-tray')
     const mediaSwitcheElements = [];
 
-    for (i = 0; i < mediaSwitchData.length; i++) {
+    for (let i = 0; i < mediaSwitchData.length; i++) {
         mediaSwitcheElements[i] = document.getElementById(`media-switch-${i}`)
         mediaSwitcheElements[i].classList.remove(mediaSwitchData[i].color)
         mediaSwitcheElements[i].classList.remove('current')
@@ -276,7 +276,7 @@ function mediaPageApps() {
 
     htmlString = appendSpacer(htmlString,15)
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         var mediaHTML = `<div id="media-page-switch-${i}" class="media-page-switch clickable" onclick="mediaPageSwitch(${i})">${mediaPageData[i].name}</div>`
 
         if (i < (dataLength - 1)) {
@@ -301,7 +301,7 @@ function mediaPageApps() {
 }
 
 function mediaPageSwitch(n) {
-    for (i = 0; i < mediaPageData.length; i++) {
+    for (let i = 0; i < mediaPageData.length; i++) {
         document.getElementById(`main-8-${i}`).classList.add('hidden-always')
         document.getElementById(`media-page-switch-${i}`).classList.remove('selected')
     }
