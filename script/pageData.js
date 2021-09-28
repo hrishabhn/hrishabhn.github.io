@@ -1,116 +1,10 @@
 function pageContent() {
-    pageRender(main1.content,1)
-    pageRender(main2Content,2)
-    pageRender(main3Content,3)
-    pageRender(main4Content,4)
-    pageRender(main5Content,5)
+    main1.render()
+    main2.render()
+    main3.render()
+    main4.render()
+    main5.render()
 }
-
-// const main1Content = 
-const main2Content = [
-    {
-        type: 'target',
-        id:'shopping-tray',
-    },
-    {
-        type: 'target',
-        id:'pinned-bookmarks-tray',
-    },
-    {
-        type: 'target',
-        id:'design-tray',
-    },
-    {
-        type: 'target',
-        id:'apartment-tray',
-    },
-    {
-        type: 'target',
-        id:'course-switch-content-tray',
-    },
-    {
-        type: 'target',
-        id:'media-switch-tray',
-    },
-    {
-        type: 'target',
-        id:'media-switch-content-tray',
-    },
-]
-const main3Content = [
-    {
-        type: 'target',
-        id:'ios-system-tray',
-    },
-    {
-        type: 'target',
-        id:'finance-tray',
-    },
-    {
-        type: 'target',
-        id:'learning-tray',
-    },
-    {
-        type: 'target',
-        id:'social-tray',
-    },
-    {
-        type: 'target',
-        id:'pinned-social-tray',
-    },
-]
-const main4Content = [
-    {
-        type: 'target',
-        id:'school-1-tray',
-    },
-]
-const main5Content = [
-    {
-        type: 'target',
-        id:'news-app-tray',
-    },
-    {
-        type: 'target',
-        id:'news-tray',
-    },
-    {
-        type: 'media-title',
-        title: 'YouTube',
-    },
-    {
-        type: 'target',
-        id:'youtube-tray',
-    },
-    {
-        type: 'media-title',
-        title: 'Books',
-    },
-    {
-        type: 'target',
-        id:'book-tray',
-    },
-    {
-        type: 'target',
-        id:'audio-tray',
-    },
-    {
-        type: 'target',
-        id:'news-tray',
-    },
-    {
-        type: 'media-title',
-        title: 'Podcasts',
-    },
-    {
-        type: 'target',
-        id:'pod-tray',
-    },
-    {
-        type: 'target',
-        id:'video-tray',
-    },
-]
 
 const main1 = {
     content: [
@@ -147,6 +41,155 @@ const main1 = {
             id:'media-switch-content-tray',
         },
     ],
+    render: function() {
+        pageRender(this.content,1)
+        
+        appType('action',productivityApps,'productivity-tray',null,null)
+        appType('action',noteApps,'note-tray',null,null)
+        appType('link',pinnedHomeApps,'pinned-home-tray','Pinned',null)
+        appType('link',notionApps,'notion-tray','Notion',null)
+    }
+}
+const main2 = {
+    content: [
+        {
+            type: 'target',
+            id:'shopping-tray',
+        },
+        {
+            type: 'target',
+            id:'pinned-bookmarks-tray',
+        },
+        {
+            type: 'target',
+            id:'design-tray',
+        },
+        {
+            type: 'target',
+            id:'apartment-tray',
+        },
+        {
+            type: 'target',
+            id:'course-switch-content-tray',
+        },
+        {
+            type: 'target',
+            id:'media-switch-tray',
+        },
+        {
+            type: 'target',
+            id:'media-switch-content-tray',
+        },
+    ],
+    render: function() {
+        pageRender(this.content,2)
+        
+        appType('action',shoppingApps,'shopping-tray',null,null)
+        appType('link',pinnedBookmarksApps,'pinned-bookmarks-tray','Pinned',null)
+        appType('link',designApps,'design-tray','Design',null)
+        appType('link',apartmentApps,'apartment-tray','Apartment',null)
+    }
+}
+const main3 = {
+    content: [
+        {
+            type: 'target',
+            id:'ios-system-tray',
+        },
+        {
+            type: 'target',
+            id:'finance-tray',
+        },
+        {
+            type: 'target',
+            id:'learning-tray',
+        },
+        {
+            type: 'target',
+            id:'social-tray',
+        },
+        {
+            type: 'target',
+            id:'pinned-social-tray',
+        },
+    ],
+    render: function() {
+        pageRender(this.content,3)
+        
+        appType('action',iosSystemApps,'ios-system-tray',null,'hidden-desktop')
+        appType('action',financeApps,'finance-tray','Finance','only-mobile')
+        appType('action',learningApps,'learning-tray','Learning',null)
+        appType('action',socialApps,'social-tray','Social',null)
+        appType('link',pinnedAppsApps,'pinned-social-tray','Pinned',null)
+    }
+}
+const main4 = {
+    content: [
+        {
+            type: 'target',
+            id:'school-1-tray',
+        },
+    ],
+    render: function() {
+        pageRender(this.content,4)
+        
+        appType('action',schoolApps,'school-1-tray',null,null)
+    }
+}
+const main5 = {
+    content: [
+        {
+            type: 'target',
+            id:'news-app-tray',
+        },
+        {
+            type: 'target',
+            id:'news-tray',
+        },
+        {
+            type: 'media-title',
+            title: 'YouTube',
+        },
+        {
+            type: 'target',
+            id:'youtube-tray',
+        },
+        {
+            type: 'media-title',
+            title: 'Books',
+        },
+        {
+            type: 'target',
+            id:'book-tray',
+        },
+        {
+            type: 'target',
+            id:'audio-tray',
+        },
+        {
+            type: 'target',
+            id:'news-tray',
+        },
+        {
+            type: 'media-title',
+            title: 'Podcasts',
+        },
+        {
+            type: 'target',
+            id:'pod-tray',
+        },
+        {
+            type: 'target',
+            id:'video-tray',
+        },
+    ],
+    render: function() {
+        pageRender(this.content,5)
+        
+        appType('link',newsApps,'news-app-tray','News',null)
+        appType('link',audioApps,'audio-tray','Audio',null)
+        appType('link',videoApps,'video-tray','TV & Video',null) 
+    }
 }
 
 
