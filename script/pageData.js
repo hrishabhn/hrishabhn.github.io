@@ -1,11 +1,3 @@
-function pageContent() {
-    page0.render()
-    page1.render()
-    page2.render()
-    page3.render()
-    page4.render()
-}
-
 const page0 = {
     info: {
         type: 'page',
@@ -227,13 +219,20 @@ const page4 = {
     }
 }
 
-const pages = [
-    page0,
-    page1,
-    page2,
-    page3,
-    page4,
-]
+const pages = {
+    items: [
+        page0,
+        page1,
+        page2,
+        page3,
+        page4,
+    ],
+    render: function() {
+        for (let i = 0; i < this.items.length; i++) {
+            this.items[i].render()
+        }
+    },
+}
 
 
 function pageRender(content,n) {
