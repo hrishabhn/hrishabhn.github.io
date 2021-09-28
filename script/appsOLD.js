@@ -108,7 +108,7 @@ function actionPopulate(data, tray) {
 
     var htmlString = "";
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         var appHTML = `<a class="clickable action ${data[i].background}" href="${data[i].link}" target="${data[i].target}"><div class="action-icon">${data[i].icon}</div><div class="spacer"></div><p>${data[i].name}</p></a>`
 
         htmlString = `${htmlString}${appHTML}`
@@ -124,7 +124,7 @@ function linkPopulate(data, tray, title) {
 
     var htmlString = "";
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
         // var appHTML = `<a class="clickable action ${data[i].background}" href="${data[i].link}" target="${data[i].target}"><div class="action-icon">${data[i].icon}</div><div class="spacer"></div><p>${data[i].name}</p></a>`
         var appHTML = `<a class="clickable link-container ${data[i].background}" href="${data[i].link}" target="${data[i].target}"><div class="link-icon">${data[i].icon}</div><p>${data[i].name}</p></a>`
 
