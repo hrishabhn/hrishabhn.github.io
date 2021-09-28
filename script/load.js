@@ -27,7 +27,7 @@ function newPopulate(){
     apps()
     switches()
     mediaPopulate()
-    menuLoad()
+    menuItems.render()
 
     // flightPull()
     // showMediaPopup()
