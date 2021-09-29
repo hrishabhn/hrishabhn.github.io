@@ -2,7 +2,7 @@
 const bookData0 = [
     {
         name: 'No Rules Rules',
-        id: 'rules',
+        id: 'noRules',
         link: 'ibooks://',
         author: 'Reed Hastings & Erin Meyer',
         coverType: 'jpg',
@@ -23,7 +23,7 @@ const bookData0 = [
     },
     {
         name: 'Going Solo',
-        id: 'goingsolo',
+        id: 'goingSolo',
         link: 'ibooks://',
         author: 'Roald Dahl',
         coverType: 'jpg',
@@ -34,17 +34,6 @@ const bookData0 = [
 
 const bookData1 = [
     {
-        name: 'Homo Deus',
-        id: 'homodeus',
-        link: {
-            audible: 'B01N4DCBK6',
-        },
-        author: 'Yuval Noah Harari',
-        coverType: 'jpg',
-        progress: '7h 22m left',
-        format: 'AudioBook',
-    },
-    {
         name: 'The Ride of a Lifetime',
         id: 'ride',
         link: {
@@ -53,6 +42,17 @@ const bookData1 = [
         author: 'Robert Iger',
         coverType: 'jpg',
         progress: '4h 39m left',
+        format: 'AudioBook',
+    },
+    {
+        name: 'Homo Deus',
+        id: 'homodeus',
+        link: {
+            audible: 'B01N4DCBK6',
+        },
+        author: 'Yuval Noah Harari',
+        coverType: 'jpg',
+        progress: '7h 22m left',
         format: 'AudioBook',
     },
     {
@@ -66,9 +66,6 @@ const bookData1 = [
         progress: '29%',
         format: 'EBook',
     },
-]
-
-const bookData2 = [
     {
         name: 'Never Split the Difference',
         id: 'split',
@@ -79,20 +76,16 @@ const bookData2 = [
         format: 'EBook',
     },
 ]
-
-const bookData3 = [
+const bookData2 = [
     {
         name: '12 Rules for Life',
-        id: 'jordan',
+        id: '12rules',
         link: 'ibooks://',
         author: 'Jordan B. Peterson',
         coverType: 'jpg',
         progress: 'NEW',
         format: 'EBook',
     },
-]
-
-const bookData4 = [
     {
         name: 'The Four',
         id: 'four',
@@ -138,9 +131,27 @@ const bookData4 = [
         progress: 'NEW',
         format: 'EBook',
     },
+    {
+        name: 'The Culture Map',
+        id: 'cultureMap',
+        link: 'ibooks://',
+        author: 'Erin Meyer',
+        coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
+    },
+    {
+        name: 'The Culture Code',
+        id: 'cultureCode',
+        link: 'ibooks://',
+        author: 'Daniel Coyle',
+        coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
+    },
 ]
 
-const bookData5 = [
+const bookData3 = [
     {
         name: 'Boy',
         id: 'boy',
@@ -166,6 +177,4 @@ const bookData = [
     bookData1,
     bookData2,
     bookData3,
-    bookData4,
-    bookData5,
 ]

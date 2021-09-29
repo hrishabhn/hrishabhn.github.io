@@ -118,6 +118,7 @@ const menuItems = {
     container.innerHTML = htmlString
 
     menuSwitch(0)
+    // mediaPageSwitch(1)
   },
 }
 

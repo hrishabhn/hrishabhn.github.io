@@ -1,5 +1,7 @@
 function apps(){
     linkPopulate(videoApps,'video-tray-2','TV & Video',null)
+    linkPopulate(bookApps,'book-app-tray','Apps',null)
+    
 }
 
 function appType(type, appData, dest, title, devices) {

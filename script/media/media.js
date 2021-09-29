@@ -3,8 +3,6 @@ function mediaPopulate() {
     bookBigPopulate(1)
     bookBigPopulate(2)
     bookBigPopulate(3)
-    bookBigPopulate(4)
-    bookBigPopulate(5)
 
 
     podBigPopulate(0)

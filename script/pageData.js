@@ -55,12 +55,18 @@ const page0 = {
             type: 'target',
             id:'media-switch-content-tray',
         },
+        {
+            type: 'action-tray',
+            title: 'Media',
+            devices: null,
+            data: mediaShortcuts,
+        },
     ],
     render: function() {
         pageRender(this.content,0)
     },
     open: function() {
-        
+
     }
 }
 const page1 = {
