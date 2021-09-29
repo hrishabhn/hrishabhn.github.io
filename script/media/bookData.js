@@ -22,6 +22,15 @@ const bookData0 = [
         format: 'AudioBook',
     },
     {
+        name: '12 Rules for Life',
+        id: '12rules',
+        link: 'ibooks://',
+        author: 'Jordan B. Peterson',
+        coverType: 'jpg',
+        progress: '9%',
+        format: 'EBook & Audiobook',
+    },
+    {
         name: 'Going Solo',
         id: 'goingSolo',
         link: 'ibooks://',
@@ -77,15 +86,6 @@ const bookData1 = [
     },
 ]
 const bookData2 = [
-    {
-        name: '12 Rules for Life',
-        id: '12rules',
-        link: 'ibooks://',
-        author: 'Jordan B. Peterson',
-        coverType: 'jpg',
-        progress: 'NEW',
-        format: 'EBook',
-    },
     {
         name: 'The Four',
         id: 'four',
