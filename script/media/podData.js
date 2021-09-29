@@ -5,7 +5,7 @@ const podData0 = [
         name: "Sway",
         id: "sway",
         link: {
-            apple: 'id1528594034'
+            applePod: 'id1528594034'
         },
         author: "Kara Swisher",
         coverType: 'jpeg',
@@ -14,7 +14,7 @@ const podData0 = [
         name: "Founder's Journal",
         id: "founders",
         link: {
-            apple: 'id1509276485'
+            applePod: 'id1509276485'
         },
         author: "Alex Lieberman",
         coverType: 'jpeg',
@@ -23,7 +23,7 @@ const podData0 = [
         name: "Pivot",
         id: "pivot",
         link: {
-            apple: 'id1073226719'
+            applePod: 'id1073226719'
         },
         author: "Kara Swisher & Scott Galloway",
         coverType: 'jpeg',
@@ -74,7 +74,7 @@ const podData2 = [
         name: "Acquired",
         id: "acquired",
         link: {
-            apple: 'id1050462261'
+            applePod: 'id1050462261'
         },
         author: "Ben Gilbert & David Rosenthal",
         coverType: 'jpeg',
@@ -83,7 +83,7 @@ const podData2 = [
         name: 'Land of the Giants',
         id: 'giants',
         link: {
-            apple: 'id1465767420'
+            applePod: 'id1465767420'
         },
         author: 'Recode',
         coverType: 'jpeg',
@@ -105,7 +105,7 @@ const podData3 = [
         name: "Learn Cantonese",
         id: "canto",
         link: {
-            apple: 'id1513774818'
+            applePod: 'id1513774818'
         },
         author: "Poetic Cantonese",
         coverType: 'jpeg',
