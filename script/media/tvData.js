@@ -227,7 +227,9 @@ const movieData2 = [
     {
         name: "Sex Education",
         id: "edu",
-        link: "https://www.netflix.com/title/80197526",
+        link: {
+            netflix: '80197526'
+        },
         info: {
             service: "Netflix",
             description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
