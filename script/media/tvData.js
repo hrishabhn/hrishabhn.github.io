@@ -272,7 +272,9 @@ const movieData2 = [
     {
         name: "Jojo's Bizzare Adventures",
         id: "jojo",
-        link: "https://www.netflix.com/title/80179831",
+        link: {
+            netflix: '80179831'
+        },
         info: {
             service: "Netflix",
             description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
@@ -296,7 +298,9 @@ const movieData2 = [
     {
         name: "Money Heist",
         id: "money",
-        link: "https://www.netflix.com/title/80192098",
+        link: {
+            netflix: '80192098'
+        },
         info: {
             service: "Netflix",
             description: "Action &#149 Crime &#149 Mystery &#149 3 Seasons &#149 2017 - Present",
@@ -406,7 +410,9 @@ const movieData3 = [
     {
         name: "Ghost in the Shell",
         id: "ghost",
-        link: "https://watch.amazon.com/detail?asin=B07WQZDXTM",
+        link: {
+            primeVideo: 'B07WQZDXTM',
+        },
         info: {
             service: "Prime Video",
             description: "Animation &#149 Action &#149 Crime &#149 1995",
@@ -587,7 +593,9 @@ const movieData4 = [
     {
         name: 'Fringe',
         id: 'fringe',
-        link: 'https://watch.amazon.com/detail?asin=B001FVV2X2',
+        link: {
+            primeVideo: 'B001FVV2X2',
+        },
         info: {
             service: 'Prime Video',
             description: 'Drama &#149 Mystery &#149 Sci-Fi &#149 5 Seasons &#149 2008 - 2013',
@@ -631,7 +639,9 @@ const movieData4 = [
     {
         name: "The Spy",
         id: "spy",
-        link: "https://www.netflix.com/title/80178151",
+        link: {
+            netflix: '80178151'
+        },
         info: {
             service: "Netflix",
             // description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
@@ -799,7 +809,9 @@ const movieData5 = [
     {
         name: "The Grand Tour",
         id: "grandTour",
-        link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+        link: {
+            primeVideo: 'B08QM4K1K5',
+        },
         info: {
             service: "Prime Video",
             description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
@@ -953,7 +965,9 @@ const movieData6 = [
     {
         name: "The Expanse",
         id: "expanse",
-        link: 'https://watch.amazon.com/detail?asin=B08MMJTJSH',
+        link: {
+            primeVideo: 'B08MMJTJSH',
+        },
         info: {
             service: "Prime Video",
             description: "Action &#149 Adventure &#149 Sci-Fi &#149 6 Seasons &#149 2015 - Present",
