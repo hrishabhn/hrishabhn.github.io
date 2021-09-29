@@ -48,7 +48,7 @@ function scrollTVPreview(i) {
         }
 
 
-        console.log(element.x)
+        // console.log(element.x)
     }
 
 
@@ -139,7 +139,7 @@ function tvPopup(movie) {
     var linkIcon = document.getElementById("tv-popup-button-icon")
     if (movie.link) {
         linkIcon.classList.remove("hidden-always")
-        linkElement.href = processLinkTV(movie)
+        linkElement.href = processLink(movie.link)
     } else {
         linkIcon.classList.add("hidden-always")
         linkElement.removeAttribute('href')
@@ -228,25 +228,20 @@ function tvPopup(movie) {
     // document.getElementById("tv-popup-imdb-rating").innerHTML = imdbRate;
 }
 
-function processLinkTV(movie) {
-    if (movie.link.netflix) {
-        return `https://www.netflix.com/title/${movie.link.netflix}`
-    } else if (movie.link.amazon) {
-        return movie.link.amazon
+function processLink(linkItem) {
+    if (linkItem.netflix) {
+        return `https://www.netflix.com/title/${linkItem.netflix}`
+    } else if (linkItem.amazon) {
+        return linkItem.amazon
+    } else if (linkItem.applePod) {
+        return `https://podcasts.apple.com/podcast/${linkItem.applePod}`
+    } else if (linkItem.youtube) {
+        return `https://www.youtube.com/c/${linkItem.youtube}/videos`
     } else {
-        return movie.link
+        return linkItem
     }
 }
 
-function processLinkPod(link) {
-    if (link.apple) {
-        return `https://podcasts.apple.com/podcast/${link.apple}`
-    } else if (link.youtube) {
-        return `https://www.youtube.com/c/${link.youtube}/videos`
-    } else {
-        return link
-    }
-}
 
 function popupAllShow() {
     bgBlur.className = "background-blur background-blur-show";
@@ -272,7 +267,7 @@ function movieHTML(n, tray) {
 
     for (let i = 0; i < dataLength; i++) {
         if ((data[i].link !== null) && (data[i].link !== undefined)) {
-            var htmlLink = `href="${processLinkTV(data[i])}"`
+            var htmlLink = `href="${processLink(data[i].link)}"`
         } else {
             var htmlLink = ``
         }
@@ -385,7 +380,7 @@ function podBigPopulate(n) {
     htmlString = appendSpacer(htmlString, 35)
 
     for (let i = 0; i < dataLength; i++) {
-        const link = processLinkPod(podData[n][i].link)
+        const link = processLink(podData[n][i].link)
 
         var podCardHTML = `<a class="media-page-card pod image-border clickable" style="--poster: url('media-image/podcasts/${podData[n][i].id}.${podData[n][i].coverType}');" href="${link}" target="_blank"></a>`
 
@@ -413,7 +408,7 @@ function podPopulate(podData, tray) {
 
 
     for (let i = 0; i < dataLength; i++) {
-        const link = processLinkPod(podData[i].link)
+        const link = processLink(podData[i].link)
 
         // var bookCardHTML = `<a class="book-card clickable" target="_blank" href="${podData[i].link}"><div class="book-card-bg ${podData[i].id}-cover"><div class="book-card-fg"></div></div><div class="pod-poster ${podData[i].id}-cover"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading">${podData[i].author}</p></div></div></a>`
         // var bookCardHTML = `<a class="media-card clickable" target="_blank" onclick="showMediaPopup('pod',${i})"><div class="media-poster pod-poster image-border" style="--poster: url('media-image/podcasts/${podData[i].id}.${podData[i].coverType}');"></div><div class="book-info"><div class="book-textbox"><p class="book-heading">${podData[i].name}</p><p class="book-subheading secondary-fg">${podData[i].author}</p></div></div></a>`
