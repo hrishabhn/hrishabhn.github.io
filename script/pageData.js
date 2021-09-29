@@ -58,6 +58,9 @@ const page0 = {
     ],
     render: function() {
         pageRender(this.content,0)
+    },
+    open: function() {
+        
     }
 }
 const page1 = {
