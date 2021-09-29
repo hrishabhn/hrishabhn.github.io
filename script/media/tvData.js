@@ -872,28 +872,25 @@ const movieData5 = [
 ]
 const movieData6 = [
     {
-        name: "It's Always Sunny in Philadelphia",
-        id: "always",
-        link: "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
+        name: 'Fairfax',
+        id: 'fairfax',
+        // link: 'watchlink',
         info: {
-            service: "Hulu",
-            description: "Comedy &#149 14 Seasons &#149 2005 - Present",
-            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+            service: 'Premiers on Oct 29',
+            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
+            // summary: "summary",
         },
         style: {
-            color: '5c666a',
+            color: '0B6F38',
             posterType: 'jpg',
-            titleType: 'png',
-            titleSize: "tall",
+            // titleType: 'png',
+            // titleSize: 'wide',
         },
         apps: {
-            tvTimeID: "75805",
-            // tvTimeRate: "8.28",
-            reelgoodLink: "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
-            // reelgoodRate: "90",
-            imdbID: "tt0472954",
-            // imdbRate: "8.8",
-            subReddit: "IASIP",
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            imdbID: 'tt7492014',
+            // subReddit: 'subreddit',
         },
     },
     {
@@ -919,6 +916,31 @@ const movieData6 = [
         },
     },
     // unknown date
+    {
+        name: "It's Always Sunny in Philadelphia",
+        id: "always",
+        link: "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
+        info: {
+            service: "Hulu",
+            description: "Comedy &#149 14 Seasons &#149 2005 - Present",
+            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+        },
+        style: {
+            color: '5c666a',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: "tall",
+        },
+        apps: {
+            tvTimeID: "75805",
+            // tvTimeRate: "8.28",
+            reelgoodLink: "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+            // reelgoodRate: "90",
+            imdbID: "tt0472954",
+            // imdbRate: "8.8",
+            subReddit: "IASIP",
+        },
+    },
     {
         name: "Atlanta",
         id: "atlanta",
