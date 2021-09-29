@@ -786,7 +786,7 @@ const movieData5 = [
         },
         apps: {
             tvTimeID: "320724",
-            reelgoodLink: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
+            // reelgoodLink: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
             imdbID: "tt5114356",
         },
     },
