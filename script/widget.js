@@ -457,7 +457,7 @@ const countdownData = [
     },
     {
         name: 'End of Exams',
-        date: 'Oct 2, 2021',
+        date: 'Oct 1, 2021 13:30:00',
     },
     {
         name: 'Utah',
