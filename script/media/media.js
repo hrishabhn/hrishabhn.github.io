@@ -239,6 +239,8 @@ function processLink(linkItem) {
         return `https://www.youtube.com/c/${linkItem.youtube}/videos`
     } else if (linkItem.primeVideo) {
         return `https://watch.amazon.com/detail?asin=${linkItem.primeVideo}`
+    } else if (linkItem.audible) {
+        return `audible://view?section=discover&asin=${linkItem.audible}`
     } else {
         return linkItem
     }
@@ -359,7 +361,7 @@ function bookBigPopulate(n) {
         //     <div class="spacer"></div>
         // </div>`
 
-        var bookCardHTML = `<a class="media-page-card book image-border clickable" style="--poster: url('media-image/books/${bookData[n][i].id}.jpg');" href="${bookData[n][i].link}"></a>`
+        var bookCardHTML = `<a class="media-page-card book image-border clickable" style="--poster: url('media-image/books/${bookData[n][i].id}.jpg');" href="${processLink(bookData[n][i].link)}"></a>`
 
         htmlString = `${htmlString}${bookCardHTML}`
         if (i < dataLength - 1) {
