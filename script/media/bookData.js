@@ -10,7 +10,10 @@ const bookData0 = [
     {
         name: 'Faster Than Normal',
         id: 'faster',
-        link: 'audible://view?section=discover&asin=B0763VPQF6',
+        // link: 'audible://view?section=discover&asin=B0763VPQF6',
+        link: {
+            audible: 'B0763VPQF6',
+        },
         author: 'Peter Shankman',
         coverType: 'jpg',
     },
@@ -20,21 +23,27 @@ const bookData1 = [
     {
         name: 'Homo Deus',
         id: 'homodeus',
-        link: 'audible://view?section=discover&asin=B01N4DCBK6',
+        link: {
+            audible: 'B01N4DCBK6',
+        },
         author: 'Yuval Noah Harari',
         coverType: 'jpg',
     },
     {
         name: 'The Ride of a Lifetime',
         id: 'ride',
-        link: 'audible://view?section=discover&asin=0525499334',
+        link: {
+            audible: '0525499334',
+        },
         author: 'Robert Iger',
         coverType: 'jpg',
     },
     {
         name: 'The Martian',
         id: 'martian',
-        link: 'audible://view?section=discover&asin=B082BHJMFF',
+        link: {
+            audible: 'B082BHJMFF',
+        },
         author: 'Andy Weir',
         coverType: 'jpg',
     },
