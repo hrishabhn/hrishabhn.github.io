@@ -6,6 +6,8 @@ const bookData0 = [
         link: 'ibooks://',
         author: 'Reed Hastings & Erin Meyer',
         coverType: 'jpg',
+        progress: '48%',
+        format: 'EBook',
     },
     {
         name: 'Faster Than Normal',
@@ -16,6 +18,17 @@ const bookData0 = [
         },
         author: 'Peter Shankman',
         coverType: 'jpg',
+        progress: '3h 16m left',
+        format: 'AudioBook',
+    },
+    {
+        name: 'Going Solo',
+        id: 'goingsolo',
+        link: 'ibooks://',
+        author: 'Roald Dahl',
+        coverType: 'jpg',
+        progress: '4%',
+        format: 'EBook',
     },
 ]
 
@@ -28,6 +41,8 @@ const bookData1 = [
         },
         author: 'Yuval Noah Harari',
         coverType: 'jpg',
+        progress: '7h 22m left',
+        format: 'AudioBook',
     },
     {
         name: 'The Ride of a Lifetime',
@@ -37,6 +52,8 @@ const bookData1 = [
         },
         author: 'Robert Iger',
         coverType: 'jpg',
+        progress: '4h 39m left',
+        format: 'AudioBook',
     },
     {
         name: 'The Martian',
@@ -46,6 +63,8 @@ const bookData1 = [
         },
         author: 'Andy Weir',
         coverType: 'jpg',
+        progress: '29%',
+        format: 'EBook',
     },
 ]
 
@@ -56,6 +75,8 @@ const bookData2 = [
         link: 'ibooks://',
         author: 'Chris Voss',
         coverType: 'jpg',
+        progress: '4%',
+        format: 'EBook',
     },
     {
         name: 'The Four',
@@ -63,6 +84,8 @@ const bookData2 = [
         link: 'ibooks://',
         author: 'Scott Galloway',
         coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook & Audiobook',
     },
 ]
 
@@ -73,6 +96,8 @@ const bookData3 = [
         link: 'ibooks://',
         author: 'Parag Khanna',
         coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
     },
     {
         name: 'The Raging 2020s',
@@ -80,6 +105,8 @@ const bookData3 = [
         link: 'ibooks://',
         author: 'Alec Ross',
         coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
     },
     {
         name: '12 Rules for Life',
@@ -87,6 +114,8 @@ const bookData3 = [
         link: 'ibooks://',
         author: 'Jordan B. Peterson',
         coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
     },
     {
         name: 'The Expatriates',
@@ -94,6 +123,8 @@ const bookData3 = [
         link: 'ibooks://',
         author: 'Janice Y. K. Lee',
         coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
     },
     {
         name: 'Gweilo: Memories of a Hong Kong Childhood',
@@ -101,6 +132,8 @@ const bookData3 = [
         link: 'ibooks://',
         author: 'Martin Booth',
         coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
     },
 ]
 
@@ -111,13 +144,17 @@ const bookData4 = [
         link: 'ibooks://',
         author: 'Roald Dahl',
         coverType: 'jpg',
+        progress: 'FINISHED',
+        format: 'EBook',
     },
     {
-        name: 'Going Solo',
-        id: 'goingsolo',
+        name: 'Has the West Lost It?',
+        id: 'west',
         link: 'ibooks://',
-        author: 'Roald Dahl',
+        author: 'Kishore Mahbubani',
         coverType: 'jpg',
+        progress: 'FINISHED',
+        format: 'EBook',
     },
 ]
 

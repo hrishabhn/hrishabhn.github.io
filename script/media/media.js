@@ -361,7 +361,16 @@ function bookBigPopulate(n) {
         //     <div class="spacer"></div>
         // </div>`
 
-        var bookCardHTML = `<a class="media-page-card book image-border clickable" style="--poster: url('media-image/books/${bookData[n][i].id}.jpg');" href="${processLink(bookData[n][i].link)}"></a>`
+        var bookCardHTML = `
+        <div class="vstack media-page-item">
+            <a class="media-page-card book image-border clickable" style="--poster: url('media-image/books/${bookData[n][i].id}.${bookData[n][i].coverType}');" href="${processLink(bookData[n][i].link)}"></a>
+            <div class="hstack fill-parent media-page-card-info">
+                <p>${bookData[n][i].progress}</p>
+                <div class="spacer"></div>
+                <p>${bookData[n][i].format}</p>
+            </div>
+        </div>
+        `
 
         htmlString = `${htmlString}${bookCardHTML}`
         if (i < dataLength - 1) {

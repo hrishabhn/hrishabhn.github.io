@@ -769,6 +769,20 @@
     height: 240px;
     width: 160px;
 }
+.media-page-card-info{
+    padding: 6px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0;
+
+    transition: all 0.1s;
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+}
+
+.media-page-item:hover .media-page-card-info{
+    transition: all 0.4s;
+    opacity: 0.6;
+}
 
 .media-page-card.pod{
     height: 200px;
@@ -826,7 +840,7 @@
     height: 90px;
     width: 90px;
 }
-.book-info{
+/* .book-info{
     display: inline-flex;
     position: relative;
     align-self: flex-end;
@@ -834,8 +848,7 @@
     box-sizing: border-box;
 
     padding-left: 10px;
-    /* width: 100%; */
-}
+} */
 .book-textbox{
     display: flex;
     position: relative;
@@ -1325,6 +1338,15 @@
     }
     .media-page-body .image-border{
         border-color: var(--dark-layer-3);
+    }
+}
+
+@media(max-width: 1100px){
+
+    .media-page-card-info{
+        font-size: 10px;
+        font-weight: 600;
+        opacity: 0.6;
     }
 }
 
