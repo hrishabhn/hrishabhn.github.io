@@ -237,6 +237,8 @@ function processLink(linkItem) {
         return `https://podcasts.apple.com/podcast/${linkItem.applePod}`
     } else if (linkItem.youtube) {
         return `https://www.youtube.com/c/${linkItem.youtube}/videos`
+    } else if (linkItem.primeVideo) {
+        return `https://watch.amazon.com/detail?asin=${linkItem.primeVideo}`
     } else {
         return linkItem
     }
