@@ -78,6 +78,21 @@ const bookData2 = [
         progress: '4%',
         format: 'EBook',
     },
+]
+
+const bookData3 = [
+    {
+        name: '12 Rules for Life',
+        id: 'jordan',
+        link: 'ibooks://',
+        author: 'Jordan B. Peterson',
+        coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
+    },
+]
+
+const bookData4 = [
     {
         name: 'The Four',
         id: 'four',
@@ -87,9 +102,6 @@ const bookData2 = [
         progress: 'NEW',
         format: 'EBook & Audiobook',
     },
-]
-
-const bookData3 = [
     {
         name: 'The Future is Asian',
         id: 'future',
@@ -104,15 +116,6 @@ const bookData3 = [
         id: 'raging',
         link: 'ibooks://',
         author: 'Alec Ross',
-        coverType: 'jpg',
-        progress: 'NEW',
-        format: 'EBook',
-    },
-    {
-        name: '12 Rules for Life',
-        id: 'jordan',
-        link: 'ibooks://',
-        author: 'Jordan B. Peterson',
         coverType: 'jpg',
         progress: 'NEW',
         format: 'EBook',
@@ -137,7 +140,7 @@ const bookData3 = [
     },
 ]
 
-const bookData4 = [
+const bookData5 = [
     {
         name: 'Boy',
         id: 'boy',
@@ -163,5 +166,6 @@ const bookData = [
     bookData1,
     bookData2,
     bookData3,
-    bookData4
+    bookData4,
+    bookData5,
 ]
