@@ -442,6 +442,10 @@
     width: 16px;
 }
 
+.media-shadow{
+    box-shadow: 0 5px 8px var(--black-40);
+}
+
 
 #tv-big-card{
     display: flex;
@@ -456,7 +460,7 @@
     background-repeat: no-repeat;
 
     border-radius: 18px;
-    box-shadow: 0 5px 8px var(--black-40);
+
 
     overflow: hidden;
 }
@@ -537,8 +541,8 @@
     color: white;
     cursor: pointer;
 
-    -webkit-backdrop-filter: blur(25px) saturate(2) brightness(0.5);
-    background-color: var(--white-20);
+    -webkit-backdrop-filter: blur(15px) saturate(2) brightness(0.5);
+    background-color: var(--white-10);
 }
 #tv-big-more{
     display: flex;
@@ -552,8 +556,8 @@
     width: 35px;
     border-radius: 10px;
 
-    -webkit-backdrop-filter: blur(25px) saturate(2) brightness(0.5);
-    background-color: var(--white-20);
+    -webkit-backdrop-filter: blur(15px) saturate(2) brightness(0.5);
+    background-color: var(--white-10);
 }
 
 #tv-big-desc{
@@ -656,17 +660,9 @@
     background-position: center center;
     background-image: var(--poster);
 
-    /* box-shadow: 0px 5px 20px -5px var(--black-60); */
-
     transition: all 0.15s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
     outline: none;
-    
-    box-shadow: 0 5px 8px var(--black-30);
-    /* border-style: solid; */
-    /* border-width: 1px; */
-    /* border-color: var(--dark-layer-1); */
-
 }
 
 
@@ -874,8 +870,6 @@
     background-position: center center;
     background-image: var(--poster);
 
-    box-shadow: 0 5px 8px var(--black-40);
-
 }
 .media-page-card.book{
     height: 232.5px;
@@ -903,98 +897,6 @@
 
 
 
-
-.media-card{
-    display: inline-flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    vertical-align: top;
-
-    border-radius: 10px;
-    padding: 12px;
-    overflow: hidden;
-
-    text-decoration: none;
-    vertical-align: top;
-
-    /* max-width: 300px; */
-    /* height: fit-content;  */
-    /* height: 100px; */
-    /* width: fit-content; */
-    background-color: var(--dark-layer-1);
-    cursor: default;
-    
-
-    /* border-style: solid; */
-    /* border-width: 1px; */
-    /* border-color: var(--dark-layer-1); */
-}
-.media-poster{
-    display: block;
-    position: relative;
-    align-items: flex-end;
-
-    border-radius: 5px;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-image: var(--poster);
-}
-.book-poster{
-    height: 105px;
-    width: 70px;
-    /* box-shadow: 0px 5px 20px -5px var(--black-60); */
-}
-.pod-poster{
-    height: 90px;
-    width: 90px;
-}
-/* .book-info{
-    display: inline-flex;
-    position: relative;
-    align-self: flex-end;
-    align-items: center;
-    box-sizing: border-box;
-
-    padding-left: 10px;
-} */
-.book-textbox{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    box-sizing: border-box;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    /* align-items: center; */
-
-    max-width: 120px;
-
-    /* width: 100%; */
-}
-.book-heading{
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-
-    /* color: var(--light-layer-0); */
-
-    overflow: hidden;
-    text-overflow: inherit;
-}
-.book-subheading{
-    font-size: 10px;
-    font-weight: 400;
-
-    margin-top: 4px;
-    /* color: var(--white-60); */
-
-    overflow: hidden;
-    text-overflow: inherit;
-}
 .news-card{
     display: inline-flex;
     position: relative;
@@ -1149,7 +1051,7 @@
     vertical-align: top;
     /* padding-bottom: 25px; */
 
-    box-shadow: 0 0 50px var(--black-100);
+    box-shadow: 0 0 50px var(--black-80);
 
     overflow: hidden;
 
@@ -1455,7 +1357,7 @@
     .media-page-body .image-border{
         border-color: var(--dark-layer-3);
     }
-    .media-page-card{
+    .media-shadowd{
         box-shadow: 0 5px 8px var(--black-20);
     }
 }
