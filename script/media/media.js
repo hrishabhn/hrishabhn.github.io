@@ -11,13 +11,14 @@ function mediaPopulate() {
 
     movieBig(0,0)
     movieExpandedHTML(0,'up-next-tray')
-    movieHTML(1, 'weekly-tray-2')
+    movieExpandedHTML(1,'weekly-tray')
     movieHTML(2, 'my-list-tray-2')
     movieExpandedHTML(3,'movie-tray')
     movieExpandedHTML(4,'new-show-tray')
     movieHTML(5, 'paused-tray-2')
-    movieHTML(6, 'soon-tray-2')
-    movieHTML(7, 'rewatch-tray-2')
+    movieExpandedHTML(6,'soon-tray')
+    movieHTML(7, 'up-to-date-tray')
+    movieHTML(8, 'rewatch-tray-2')
 
     // tvPreview(0,0)
     mediaPageSwitch(0)
@@ -267,7 +268,7 @@ function movieBig(i,j) {
     var link = document.getElementById('tv-big-play')
     var more = document.getElementById('tv-big-more')
 
-    console.log(link)
+    // console.log(link)
 
     card.style.setProperty('--poster',`url('TV/background/${movie.id}.${movie.style.posterType}')`)
     title.style.setProperty('--poster',`url('TV/title/${movie.id}.${movie.style.titleType}')`)
@@ -378,6 +379,15 @@ function movieExpandedHTML(n, tray) {
                 var col = '000000'
             }
 
+            if (data[i].info.date) {
+                var dateHTML = `<p class="desc">${countdownCalculate(data[i].info.date)[0]} ${countdownCalculate(data[i].info.date)[1]}</p>`
+                // console.log(countdownCalculate(data[i].info.date))
+            } else if (data[i].info.weekday) {
+                var dateHTML = `<p class="desc">${data[i].info.weekday}</p>`
+            } else {
+                var dateHTML = ``
+            }
+
             var movieCardHTML = `<div class="hstack tv-card-expanded">
                 <div id="tv-card-${n}-${i}" class="tv-card" target="_blank" href="${htmlLink}"><div class="tv-card-poster" style="--poster: url('TV/background/${data[i].id}.${data[i].style.posterType}');"><div class="tv-gradient" style="--col1: #${col}00; --col2: #00000080;"><div class="tv-title ${data[i].style.titleSize}" style="--title: url('TV/title/${data[i].id}.${data[i].style.titleType}');"></div></div><a class="tv-play-container" target="_blank"${htmlLink}></a></div>
                                                     
@@ -390,8 +400,9 @@ function movieExpandedHTML(n, tray) {
                     <p class="title">${data[i].name}</p>
                     <div class="spacer-x" style="--size: 2px;"></div>
                     <p class="summary">${data[i].info.summary}</p>
+                    <div class="spacer-x" style="--size: 4px;"></div>
+                    ${dateHTML}
                     <div class="spacer-x" style="--size: 40px;"></div>
-
                 </a>
             </div>`
 
@@ -410,7 +421,7 @@ function movieExpandedHTML(n, tray) {
 
     // htmlString = scrollEmbed(htmlString, 35)
 
-    console.log(trayElement)
+    // console.log(trayElement)
 
     var trayElement = document.getElementById(tray)
     trayElement.innerHTML = htmlString
