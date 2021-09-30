@@ -542,7 +542,7 @@
     cursor: pointer;
 
     -webkit-backdrop-filter: blur(15px) saturate(2) brightness(0.5);
-    background-color: var(--white-10);
+    background-color: var(--white-20);
 }
 #tv-big-more{
     display: flex;
@@ -557,7 +557,7 @@
     border-radius: 10px;
 
     -webkit-backdrop-filter: blur(15px) saturate(2) brightness(0.5);
-    background-color: var(--white-10);
+    background-color: var(--white-20);
 }
 
 #tv-big-desc{
