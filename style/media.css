@@ -669,17 +669,34 @@
 .tv-play-container{
     display: flex;
     position: absolute;
+    box-sizing: border-box;
 
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     border-radius: inherit;
 
     height: 100%;
     width: 100%;
 
+    padding: 5px;
+
 
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 }
+.tv-play-icon{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 100%;
+    padding: 5px;
+
+    height: 20px;
+    width: 20px;
+
+    opacity: 0;
+    fill: white;
+}
+
 @media(min-width: 450px){
     .tv-play-container{
         transition: all 0.25s;
@@ -716,16 +733,6 @@
 
 
 
-.tv-play-icon{
-    display: block;
-    position: relative;
-
-    fill: white;
-    height: 24px;
-    width: 24px;
-
-    opacity: 0;
-}
 
 
 .tv-card:hover .tv-info{
