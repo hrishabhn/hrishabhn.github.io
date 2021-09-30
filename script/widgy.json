@@ -1,8 +1,8 @@
 ﻿[
   {
-    "name": "Nine Perfect Strangers",
-    "id": "nine",
-    "image": "https://hrishabhn.github.io/TV/background/nine.webp",
+    "name": "Cowboy Bebop",
+    "id": "cowboy",
+    "image": "https://hrishabhn.github.io/TV/background/cowboy.jpeg",
     "service": "Hulu"
   },
   {
@@ -12,15 +12,15 @@
     "service": "Hulu"
   },
   {
+    "name": "Nine Perfect Strangers",
+    "id": "nine",
+    "image": "https://hrishabhn.github.io/TV/background/nine.webp",
+    "service": "Hulu"
+  },
+  {
     "name": "Brooklyn Nine-Nine",
     "id": "brooklyn",
     "image": "https://hrishabhn.github.io/TV/background/brooklyn.webp",
     "service": "Hulu"
-  },
-  {
-    "name": "Foundation",
-    "id": "foundation",
-    "image": "https://hrishabhn.github.io/TV/background/foundation.webp",
-    "service": " TV+"
   }
 ]
