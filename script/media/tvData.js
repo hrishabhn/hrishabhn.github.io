@@ -1024,6 +1024,32 @@ const movieData6 = [
         },
     },
     {
+        name: 'Cowboy Bebop',
+        id: 'cowboy2',
+        link: {
+            netflix: '80207033'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Premiers on Nov 19',
+            description: 'Action &#149 Adventure &#149 Crime &#149 1 Season &#149 2021 - Present',
+            summary: "A ragtag crew of bounty hunters chases down the galaxy's most dangerous criminals. They'll save the world ... for the right price. A live-action series.",
+        },
+        style: {
+            color: '66472A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '367234',
+            reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-2021',
+            imdbID: 'tt1267295',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: "The Mandalorian",
         id: "mando",
         link: null,
