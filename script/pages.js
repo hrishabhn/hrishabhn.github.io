@@ -117,7 +117,7 @@ const menuItems = {
     var container = document.getElementById('navbar-menu')
     container.innerHTML = htmlString
 
-    menuSwitch(5)
+    menuSwitch(0)
     // mediaPageSwitch(1)
   },
 }
