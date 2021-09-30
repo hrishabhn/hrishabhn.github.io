@@ -628,7 +628,7 @@
     align-items: flex-end;
     height: 50%;
     width: 100%;
-    background-image: linear-gradient(#00000000,var(--black-60));
+    background-image: linear-gradient(var(--col1),var(--col2));
     padding: 10px;
 }
 .tv-title{
