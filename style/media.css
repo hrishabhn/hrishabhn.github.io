@@ -1361,6 +1361,9 @@
     .media-page-body .image-border{
         border-color: var(--dark-layer-3);
     }
+    .media-page-card{
+        box-shadow: 0 5px 8px var(--black-20);
+    }
 }
 
 @media(max-width: 1100px){
