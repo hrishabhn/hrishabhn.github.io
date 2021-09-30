@@ -832,7 +832,6 @@
     /* white-space: nowrap; */
     /* text-overflow: ellipsis; */
     width: 100%;
-    /* -webkit-line-clamp: 4; */
     -webkit-box-orient: vertical;
 }
 
@@ -849,7 +848,7 @@
     font-weight: 500;
 }
 .tv-card-extra .summary{
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     font-size: 10px;
     font-weight: 400;
     opacity: 0.4;
