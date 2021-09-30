@@ -59,7 +59,16 @@ const movieData0 = [
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            description: "Crime &#149 Comedy &#149 1 Season &#149 2021 - Present",
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'comedy',
+                ],
+            },
+            // description: "Crime &#149 Comedy &#149 1 Season &#149 2021 - Present",
             summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
         },
         style: {
@@ -705,7 +714,7 @@ const movieData4 = [
             service: 'hulu',
             studio: '',
             location: 'Hulu',
-            description: 'Action &#149 Adventure &#149 Drama &#148 1 Season &#149 2021 - Present',
+            description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
             summary: 'A drama based on DC Comics\' acclaimed series by Brian K. Vaughan and Pia Guerra, Y: The Last Man traverses a post-apocalyptic world in which a cataclysmic event decimates every mammal with a Y chromosome but for one cisgender man and his pet monkey. The series follows the survivors in this new world as they struggle with their efforts to restore what was lost and the opportunity to build something better.',
         },
         style: {
