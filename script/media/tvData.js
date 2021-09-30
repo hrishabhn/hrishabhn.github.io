@@ -112,6 +112,28 @@ const movieData1 = [
         },
     },
     {
+        name: 'Foundation',
+        id: 'foundation',
+        link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
+        info: {
+            service: ' TV+',
+            description: 'Drama &#149 Sci-Fi &#149 1 Season &#149 2021 - Present',
+            summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
+        },
+        style: {
+            color: '70655B',
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '366972',
+            reelgoodLink: 'https://reelgood.com/show/foundation-2020',
+            imdbID: 'tt0804484',
+            subReddit: 'FoundationTV',
+        },
+    },
+    {
         name: "Ted Lasso",
         id: "ted",
         link: null,
@@ -153,28 +175,6 @@ const movieData1 = [
             reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
             imdbID: "tt7908628",
             subReddit: 'WhatWeDointheShadows',
-        },
-    },
-    {
-        name: 'Foundation',
-        id: 'foundation',
-        link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
-        info: {
-            service: ' TV+',
-            description: 'Drama &#149 Sci-Fi &#149 1 Season &#149 2021 - Present',
-            summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
-        },
-        style: {
-            color: '70655B',
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '366972',
-            reelgoodLink: 'https://reelgood.com/show/foundation-2020',
-            imdbID: 'tt0804484',
-            subReddit: 'FoundationTV',
         },
     },
 
