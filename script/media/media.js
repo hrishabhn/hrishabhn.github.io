@@ -129,8 +129,8 @@ function tvPopup(i,j) {
     document.getElementById('service').innerHTML = locationText;
 
     var descElement = document.getElementById("desc")
-    if (movie.info.description) {
-        descElement.innerHTML = movie.info.description;
+    if ((movie.info.description) || (movie.info.desc)) {
+        descElement.innerHTML = processDesc(movie)
     } else {
         descElement.innerHTML = "";
     }
@@ -395,7 +395,7 @@ function movieExpandedHTML(n, tray) {
             </div>
                 <div class="spacer-x" style="--size: 15px;"></div>
                 <a class="vstack clickable-text tv-card-extra" onclick="tvPopup(${n},${i})">
-                    <p class="desc">${data[i].info.description}</p>
+                    <p class="desc">${processDesc(data[i],'genre')}</p>
                     <div class="spacer-x" style="--size: 4px;"></div>
                     <p class="title">${data[i].name}</p>
                     <div class="spacer-x" style="--size: 2px;"></div>
@@ -715,4 +715,73 @@ function populateMediaPopup(type, n) {
     document.getElementById('side-popup-title').innerHTML = mediaData.name
     document.getElementById('side-popup-subtitle').innerHTML = mediaData.author
     document.getElementById('side-popup-link').href = mediaData.link
+}
+
+function processDesc(movie,type) {
+    if (movie.info.description) {
+        return movie.info.description
+    } else if (movie.info.desc) {
+        var descItem = movie.info.desc
+        var descString = ``
+
+        if (!type){
+            if (descItem.genre) {
+                descString = `${processDescGenre(descItem)}`
+            }
+    
+            if (descItem.seasons) {
+    
+                descString = `${descString} &#149 ${processDescSeasons(descItem)}`
+            }
+    
+            if (descItem.yearStart) {
+    
+                descString = `${descString} &#149 ${processDescYear(descItem)}`
+            }
+    
+            // console.log(yearString)
+        } else if (type == 'genre') {
+            if (descItem.genre) {
+                descString = `${processDescGenre(descItem)}`
+            }
+        }
+
+        return(descString)
+    }
+}
+
+function processDescGenre(descItem) {
+    var genreString = ``
+    
+    for (i = 0; i < descItem.genre.length; i++) {
+        genreString = `${genreString}${descItem.genre[i]}`
+
+        if (i < descItem.genre.length - 1) {
+            genreString = `${genreString} &#149 `
+        }
+    }
+
+    return genreString
+}
+
+function processDescSeasons(descItem) {
+    if (descItem.seasons > 1) {
+        var seasonString = `${descItem.seasons} seasons`
+    } else {
+        var seasonString = `${descItem.seasons} season`
+    }
+
+    return seasonString
+}
+
+function processDescYear(descItem) {
+    var yearString = `${descItem.yearStart}`
+    
+    if (descItem.yearEnd) {
+        var yearString = `${yearString} - ${descItem.yearEnd}`
+    } else {
+        var yearString = `${yearString} - Present`
+    }
+
+    return yearString
 }
