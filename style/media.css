@@ -242,134 +242,6 @@
 }
 
 
-#tv-big-container{
-    display: flex;
-    position: fixed;
-
-    flex-direction: column;
-
-    top: 0px;
-    right: 0px;
-
-    /* z-index: 1000; */
-    height: 100%;
-    width: calc(100vw - 200px);
-
-    /* background-color: var(--black-60); */
-
-    /* overflow-y: scroll; */
-}
-
-#tv-big-current{
-
-    display: flex;
-    position: relative;
-
-    align-items: flex-end;
-    box-sizing: border-box;
-
-    top: 0px;
-    right: 0px;
-
-    width: 100%;
-    /* height: 100px; */
-
-    height: calc((100vw - 200px) * 0.5625);
-
-    /* background-color: blue; */
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-    margin-bottom: -100px;
-    padding-bottom: 100px;
-}
-
-.tv-big-gradient{
-    display: flex;
-    position: absolute;
-
-    bottom: 0px;
-    left: 0px;
-
-    height: 80%;
-    width: 100%;
-
-    background-image: linear-gradient(#00000000, #000000);
-}
-
-
-.tv-big-info{
-    padding-left: 40px;
-    width: 100%;
-    /* height: 100%; */
-}
-#tv-big-title{
-    display: flex;
-    position: relative;
-    align-self: flex-start;
-
-    /* height: 100%; */
-    height: 200px;
-    width: 50%;
-    max-width: 800px;
-
-    /* flex-grow: 1; */
-
-
-
-
-    background-size: contain;
-    background-position: bottom left;
-    background-repeat: no-repeat;
-
-    /* height: clamp(0px, 100%, 500px); */
-    /* width: clamp(0px, 60%, 300px); */
-
-    /* margin-bottom: -20px; */
-    /* height: clamp(50vw); */
-
-    /* width: 80vw; */
-    /* height: 30vw; */
-    /* margin-left: 10vw; */
-    /* margin-top: -15vw; */
-    /* margin-bottom: 5vw; */
-}
-#tv-big-desc{
-    display: flex;
-    position: relative;
-
-    align-self: flex-start;
-
-    font-size: 16px;
-    font-weight: 500;
-}
-
-#tv-big-play{
-    align-self: flex-start;
-    vertical-align: center;
-    box-sizing: border-box;
-    padding: 12.5px 20px;
-
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
-    overflow: hidden;
-    border-radius: 10px;
-    text-decoration: none;
-
-    margin-right: 20px;
-    position: relative;
-    transition: all 0.1s;
-    background-color: var(--white-100);
-    color: var(--dark-layer-1);
-    fill: var(--dark-layer-1);
-    overflow: hidden;
-
-    font-size: 14px;
-    font-weight: 600;
-}
 
 
 
@@ -570,6 +442,149 @@
     width: 16px;
 }
 
+
+#tv-big-card{
+    display: flex;
+    position: relative;
+
+    height: calc((100vw - 70px) * (0.4));
+    width: calc(100vw - 70px);
+
+    background-image: var(--poster);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    border-radius: 20px;
+    box-shadow: 0 5px 8px var(--black-40);
+
+    overflow: hidden;
+}
+
+
+.tv-big-gradient{
+    display: flex;
+    position: absolute;
+
+    bottom: 0px;
+    left: 0px;
+
+    height: 40%;
+    width: 100%;
+
+    background-image: linear-gradient(#00000000, var(--black-50));
+}
+#tv-big-title{
+    display: flex;
+    position: absolute;
+
+    bottom: 30px;
+    left: 30px;
+
+    height: 200px;
+    width: 30%;
+
+    background-image: var(--poster);
+
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+#tv-big-service{
+    display: flex;
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    height: 80px;
+    width: 80px;
+
+    background-image: var(--service);
+
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+#tv-big-play{
+    display: flex;
+    position: absolute;
+
+    bottom: 30px;
+    right: 30px;
+
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+
+    -webkit-backdrop-filter: blur(200px) saturate(2) brightness(0.5);
+    background-color: var(--white-20);
+}
+#tv-big-desc{
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .tv-big-info{
+    padding-left: 40px;
+    width: 100%;
+} */
+/* #tv-big-title{
+    display: flex;
+    position: relative;
+    align-self: flex-start;
+
+
+    height: 200px;
+    width: 50%;
+    max-width: 800px;
+
+
+
+
+
+
+} */
+/* #tv-big-desc{
+    display: flex;
+    position: relative;
+
+    align-self: flex-start;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#tv-big-play{
+    align-self: flex-start;
+    vertical-align: center;
+    box-sizing: border-box;
+    padding: 12.5px 20px;
+
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 10px;
+    text-decoration: none;
+
+    margin-right: 20px;
+    position: relative;
+    transition: all 0.1s;
+    background-color: var(--white-100);
+    color: var(--dark-layer-1);
+    fill: var(--dark-layer-1);
+    overflow: hidden;
+
+    font-size: 14px;
+    font-weight: 600;
+} */
 
 .tv-card{
     display: inline-flex;
@@ -1386,24 +1401,35 @@
     .tv-preview-header-back{
         height: 150px;
     }
-    .tv-preview-gradient{
-        padding: 0px 20px 25px;
+    #tv-big-card{
+        height: calc((100vw - 40px) * (1080 / 1920));
+        width: calc(100vw - 40px);
+        border-radius: 15px;
     }
-    #tv-preview-container{
-        margin-bottom: -25px;
+    #tv-big-title{
+        bottom: 15px;
+        left: 15px;
     }
-    #tv-preview-description{
-        margin-bottom: 0px;
-        font-size: 14px;
-    }
+    #tv-big-service{
+        top: 15px;
+        right: 15px;
 
-    #tv-preview-title.wide{
+        height: 30px;
+        width: 30px;
+    }
+    #tv-big-play{
+        bottom: 15px;
+        right: 15px;
+
+        font-size: 10px;
+    }
+    #tv-big-title.wide{
         width: 60%;
     }
-    #tv-preview-title.mid{
+    #tv-big-title.mid{
         width: 50%;
     }
-    #tv-preview-title.tall{
+    #tv-big-title.tall{
         width: 40%;
     }
     .media-page-body{
