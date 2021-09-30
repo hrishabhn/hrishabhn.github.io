@@ -9,6 +9,8 @@
 //         // service: 'service',
 //         // studio: 'studio',
 //         // location: 'location',
+//         // date: '',
+//         // weekday: '',
 //         // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
 //         // summary: "summary",
 //     },
@@ -130,6 +132,7 @@ const movieData1 = [
             service: '',
             studio: 'showtime',
             location: "Showtime",
+            weekday: 'Sundays',
             description: "Drama &#149 Money &#149 5 Seasons &#149 2016 - Present",
             summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
         },
@@ -1004,11 +1007,12 @@ const movieData6 = [
         id: 'fairfax',
         // link: 'watchlink',
         info: {
-            service: '',
-            studio: '',
-            location: 'Premiers on Oct 29',
-            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
-            // summary: "summary",
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            date: 'Oct 29, 2021',
+            description: 'Animation &#149 Comedy &#149 1 Season &#149 2021 - Present',
+            summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
         },
         style: {
             color: '0B6F38',
@@ -1027,12 +1031,13 @@ const movieData6 = [
         name: 'Cowboy Bebop',
         id: 'cowboy2',
         link: {
-            netflix: '80207033'
+            netflix: '80207033',
         },
         info: {
             service: 'netflix',
             studio: 'netflix',
-            location: 'Premiers on Nov 19',
+            location: 'Netflix',
+            date: 'Nov 19, 2021',
             description: 'Action &#149 Adventure &#149 Crime &#149 1 Season &#149 2021 - Present',
             summary: "A ragtag crew of bounty hunters chases down the galaxy's most dangerous criminals. They'll save the world ... for the right price. A live-action series.",
         },
@@ -1054,11 +1059,12 @@ const movieData6 = [
         id: "mando",
         link: null,
         info: {
-            service: '',
-            studio: '',
-            location: "Returns on December 24th",
-            // description: "Action &#149 Adventure &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
-            // summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
+            service: 'disney',
+            studio: 'disney',
+            location: 'Disney+',
+            date: 'Dec 24, 2021',
+            description: 'Action &#149 Adventure &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present',
+            summary: "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
         },
         style: {
             color: '4d627f',
@@ -1073,34 +1079,8 @@ const movieData6 = [
             subReddit: 'TheMandalorianTV',
         },
     },
-    // unknown date
-    {
-        name: "It's Always Sunny in Philadelphia",
-        id: "always",
-        link: "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
-        info: {
-            service: 'hulu',
-            studio: '',
-            location: 'Hulu',
-            description: "Comedy &#149 14 Seasons &#149 2005 - Present",
-            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
-        },
-        style: {
-            color: '5c666a',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: "tall",
-        },
-        apps: {
-            tvTimeID: "75805",
-            // tvTimeRate: "8.28",
-            reelgoodLink: "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
-            // reelgoodRate: "90",
-            imdbID: "tt0472954",
-            // imdbRate: "8.8",
-            subReddit: "IASIP",
-        },
-    },
+]
+const movieData7 = [
     {
         name: "Atlanta",
         id: "atlanta",
@@ -1220,6 +1200,33 @@ const movieData6 = [
             reelgoodLink: 'https://reelgood.com/show/invincible-2021',
             // imdbID: 'identifier',
             // subReddit: null,
+        },
+    },
+    {
+        name: "It's Always Sunny in Philadelphia",
+        id: "always",
+        link: "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
+        info: {
+            service: 'hulu',
+            studio: '',
+            location: 'Hulu',
+            description: "Comedy &#149 14 Seasons &#149 2005 - Present",
+            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+        },
+        style: {
+            color: '5c666a',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: "tall",
+        },
+        apps: {
+            tvTimeID: "75805",
+            // tvTimeRate: "8.28",
+            reelgoodLink: "https://reelgood.com/show/its-always-sunny-in-philadelphia-2005",
+            // reelgoodRate: "90",
+            imdbID: "tt0472954",
+            // imdbRate: "8.8",
+            subReddit: "IASIP",
         },
     },
     {
@@ -1416,8 +1423,9 @@ const movieData6 = [
             subReddit: 'squidgame',
         },
     },
+
 ]
-const movieData7 = [
+const movieData8 = [
     {
         name: 'Game of Thrones',
         id: 'gameofthrones',
@@ -1671,4 +1679,5 @@ const movieData = [
     movieData5,
     movieData6,
     movieData7,
+    movieData8,
 ]
