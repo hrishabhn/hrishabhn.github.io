@@ -4,14 +4,13 @@ function mediaPopulate() {
     bookBigPopulate(2)
     bookBigPopulate(3)
 
-
     podBigPopulate(0)
     podBigPopulate(1)
     podBigPopulate(2)
     podBigPopulate(3)
 
-
-    movieHTML(0, 'up-next-tray-2')
+    movieBig(0,0)
+    movieExpandedHTML(0,'up-next-tray')
     movieHTML(1, 'weekly-tray-2')
     movieHTML(2, 'my-list-tray-2')
     movieHTML(3, 'movie-tray-2')
@@ -21,7 +20,6 @@ function mediaPopulate() {
     movieHTML(7, 'rewatch-tray-2')
 
     // tvPreview(0,0)
-    movieBig(0,0)
     mediaPageSwitch(0)
 }
 
@@ -356,6 +354,65 @@ function movieHTML(n, tray) {
     trayElement.innerHTML = htmlString
 }
 
+function movieExpandedHTML(n, tray) {
+    const data = movieData[n]
+
+    var dataLength = data.length
+
+    var htmlString = "";
+    htmlString = appendSpacer(htmlString, 35)
+
+    for (let i = 0; i < dataLength; i++) {
+        if ((i + n) > 0) {
+            if ((data[i].link !== null) && (data[i].link !== undefined)) {
+                var htmlLink = `href="${processLink(data[i].link)}"`
+            } else {
+                var htmlLink = ``
+            }
+
+            if (data[i].style.color) {
+                var col = data[i].style.color
+            } else {
+                var col = '000000'
+            }
+
+            var movieCardHTML = `<div class="hstack tv-card-expanded">
+                <div id="tv-card-${n}-${i}" class="tv-card" target="_blank" href="${htmlLink}"><div class="tv-card-poster" style="--poster: url('TV/background/${data[i].id}.${data[i].style.posterType}');"><div class="tv-gradient" style="--col1: #${col}00; --col2: #00000080;"><div class="tv-title ${data[i].style.titleSize}" style="--title: url('TV/title/${data[i].id}.${data[i].style.titleType}');"></div></div><a class="tv-play-container" target="_blank"${htmlLink}></a></div>
+                                                    
+                <div class="spacer-x" style="--size: 50px;"></div>
+            </div>
+                <div class="spacer-x" style="--size: 15px;"></div>
+                <a class="vstack clickable-text tv-card-extra" onclick="tvPopup(${n},${i})">
+                    <p class="desc">${data[i].info.description}</p>
+                    <div class="spacer-x" style="--size: 4px;"></div>
+                    <p class="title">${data[i].name}</p>
+                    <div class="spacer-x" style="--size: 2px;"></div>
+                    <p class="summary">${data[i].info.summary}</p>
+                    <div class="spacer-x" style="--size: 50px;"></div>
+
+                </a>
+            </div>`
+
+
+            htmlString = `${htmlString}${movieCardHTML}`
+            if (i < dataLength - 1) {
+                htmlString = appendSpacer(htmlString, 30)
+            }
+        }
+    }
+
+    htmlString = appendSpacer(htmlString, 35)
+    htmlString = appendSpacer(htmlString, 'n')
+    // htmlString = hstackEmbed(htmlString)
+    htmlString = `<div class="scroll margin-35">${htmlString}</div>`
+
+    // htmlString = scrollEmbed(htmlString, 35)
+
+    console.log(trayElement)
+
+    var trayElement = document.getElementById(tray)
+    trayElement.innerHTML = htmlString
+}
 
 function bookPopulate(bookData, tray) {
     var dataLength = bookData.length
