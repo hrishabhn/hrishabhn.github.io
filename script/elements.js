@@ -27,7 +27,7 @@ function linkTrayEmbed(html) {
 }
 
 function appendSpacer(html,n) {
-    html = `${html}<div class="spacer-${n}"></div>`
+    html = `${html}<div class="spacer-x" style="--size: ${n}px;"></div>`
     return html
 }
 
