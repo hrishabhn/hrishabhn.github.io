@@ -11,7 +11,15 @@
 //         // location: 'location',
 //         // date: '',
 //         // weekday: '',
-//         // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
+//         // desc: {
+//         // //    seasons: 1,
+//         // //    yearStart: 2021,
+//         // //    yearEnd: null,
+//         // //    genre: [
+//         // //        'crime',
+//         // //        'comedy',
+//         // //    ],
+//         // },
 //         // summary: "summary",
 //     },
 //     style: {
@@ -36,7 +44,16 @@ const movieData0 = [
             service: 'hulu',
             // studio: '',
             location: 'Hulu',
-            description: "Animation &#149 Action &#149 Adventure &#149 1 Season &#149 1998 - 1999",
+            desc: {
+                seasons: 1,
+                yearStart: 1998,
+                yearEnd: 1999,
+                genre: [
+                    'animation',
+                    'action',
+                    'adventure',
+                ],
+            },
             summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
         },
         style: {
@@ -68,7 +85,6 @@ const movieData0 = [
                     'comedy',
                 ],
             },
-            // description: "Crime &#149 Comedy &#149 1 Season &#149 2021 - Present",
             summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
         },
         style: {
@@ -92,7 +108,15 @@ const movieData0 = [
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            description: 'Drama &#149 Mystery &#149 1 Season &#149 2021 - Present',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'mystery',
+                ],
+            },
             summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
         },
         style: {
@@ -116,7 +140,15 @@ const movieData0 = [
             service: 'hulu',
             studio: 'nbc',
             location: 'Hulu',
-            description: "Comedy &#149 Crime &#149 8 Seasons &#149 2013 - Present",
+            desc: {
+                seasons: 8,
+                yearStart: 2013,
+                yearEnd: 2021,
+                genre: [
+                    'comedy',
+                    'crime',
+                ],
+            },
             summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
         },
         style: {
@@ -142,7 +174,15 @@ const movieData1 = [
             studio: 'showtime',
             location: "Showtime",
             weekday: 'Sundays',
-            description: "Drama &#149 Money &#149 5 Seasons &#149 2016 - Present",
+            desc: {
+                seasons: 5,
+                yearStart: 2016,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'money',
+                ],
+            },
             summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
         },
         style: {
@@ -166,7 +206,16 @@ const movieData1 = [
             service: 'appleTV',
             studio: 'appleTV',
             location: ' TV+',
-            description: 'Drama &#149 Sci-Fi &#149 1 Season &#149 2021 - Present',
+            weekday: 'Fridays',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'sci-fi',
+                ],
+            },
             summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
         },
         style: {
@@ -190,7 +239,17 @@ const movieData1 = [
             service: 'appleTV',
             studio: 'appleTV',
             location: "Apple TV+",
-            description: "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
+            weekday: 'Fridays',
+            desc: {
+                seasons: 2,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'drama',
+                    'sport',
+                ],
+            },
             summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
         },
         style: {
@@ -214,7 +273,17 @@ const movieData1 = [
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            description: "Comedy &#149 Drama &#149 Fantasy &#149 3 Seasons &#149 2019 - Present",
+            weekday: 'Fridays',
+            desc: {
+                seasons: 3,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'Comedy',
+                    'Drama',
+                    'Fantasy',
+                ],
+            },
             summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
         },
         style: {
@@ -1091,6 +1160,42 @@ const movieData6 = [
 ]
 const movieData7 = [
     {
+        name: 'Alice in Borderland',
+        id: 'alice',
+        link: {
+            netflix: '80200575'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Coming Soon',
+            // date: '',
+            // weekday: '',
+            // desc: {
+            //     seasons: 2,
+            //     yearStart: 2020,
+            //     yearEnd: null,
+            //     genre: [
+            //         'crime',
+            //         'comedy',
+            //     ],
+            // },
+            // summary: "summary",
+        },
+        style: {
+            // color: '000000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: "Atlanta",
         id: "atlanta",
         link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
@@ -1135,6 +1240,42 @@ const movieData7 = [
             reelgoodLink: 'https://reelgood.com/show/the-boys-2019',
             imdbID: 'tt1190634',
             subReddit: 'TheBoys',
+        },
+    },
+    {
+        name: 'Disenchantment',
+        id: 'disenchant',
+        link: {
+            netflix: '80095697'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Coming Soon',
+            // date: '',
+            // weekday: '',
+            // desc: {
+            //     seasons: 2,
+            //     yearStart: 2020,
+            //     yearEnd: null,
+            //     genre: [
+            //         'crime',
+            //         'comedy',
+            //     ],
+            // },
+            // summary: "summary",
+        },
+        style: {
+            // color: '000000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
         },
     },
     {
@@ -1185,6 +1326,42 @@ const movieData7 = [
             reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
             imdbID: 'tt4326894',
             subReddit: null,
+        },
+    },
+    {
+        name: 'Falcon and the Winter Soldier',
+        id: 'falcon',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Disney+',
+            // date: '',
+            // weekday: '',
+            // desc: {
+            // //    seasons: 1,
+            // //    yearStart: 2021,
+            // //    yearEnd: null,
+            // //    genre: [
+            // //        'crime',
+            // //        'comedy',
+            // //    ],
+            // },
+            // summary: "summary",
+        },
+        style: {
+            // color: '000000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
         },
     },
     {
@@ -1267,7 +1444,7 @@ const movieData7 = [
         id: 'manifest',
         // link: 'watchlink',
         info: {
-            service: '',
+            service: 'netflix',
             studio: '',
             location: 'Coming Soon',
             description: 'Drama &#149 Mystery &#149 3 Seasons &#149 2018 - Present',
@@ -1283,7 +1460,7 @@ const movieData7 = [
             tvTimeID: '349271',
             reelgoodLink: 'https://reelgood.com/show/manifest-2018',
             imdbID: 'tt8421350',
-            // subReddit: null,
+            subReddit: 'ManifestNBC',
         },
     },
     {
@@ -1335,6 +1512,42 @@ const movieData7 = [
         },
     },
     {
+        name: 'Paradise PD',
+        id: 'paradise',
+        link: {
+            netflix: '80191522'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            // desc: {
+            // //    seasons: 1,
+            // //    yearStart: 2021,
+            // //    yearEnd: null,
+            // //    genre: [
+            // //        'crime',
+            // //        'comedy',
+            // //    ],
+            // },
+            // summary: "summary",
+        },
+        style: {
+            // color: '000000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Peaky Blinders',
         id: 'peaky',
         link: 'https://www.netflix.com/title/80002479',
@@ -1356,6 +1569,30 @@ const movieData7 = [
             reelgoodLink: 'https://reelgood.com/show/peaky-blinders-2013',
             imdbID: 'tt2442560',
             // subReddit: null,
+        },
+    },
+    {
+        name: "Rick and Morty",
+        id: "rick",
+        link: null,
+        info: {
+            service: '',
+            studio: '',
+            location: "Adult Swim",
+            description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
+            summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
+        },
+        style: {
+            color: '2D1D54',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "275274",
+            reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
+            imdbID: "tt2861424",
+            subReddit: "rickandmorty",
         },
     },
     {
@@ -1627,54 +1864,6 @@ const movieDataArchive = [
             tvTimeID: null,
             reelgoodLink: "https://reelgood.com/movie/shangchi-and-the-legend-of-the-ten-rings-2021",
             imdbID: 'tt9376612',
-        },
-    },
-    {
-        name: "Rick and Morty",
-        id: "rick",
-        link: null,
-        info: {
-            service: '',
-            studio: '',
-            location: "Adult Swim",
-            description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
-            summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
-        },
-        style: {
-            color: '2D1D54',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "275274",
-            reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
-            imdbID: "tt2861424",
-            subReddit: "rickandmorty",
-        },
-    },
-    {
-        name: "Manifest",
-        id: "manifest",
-        link: "https://www.hulu.com/series/manifest-a1e5ed46-2704-431e-94b0-9aea1560c712",
-        info: {
-            service: 'hulu',
-            studio: '',
-            location: 'Hulu',
-            description: "Drama &#149 Mystery &#149 4 Seasons &#149 2018 - Present",
-            summary: "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."
-        },
-        style: {
-            color: '504A6A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "349271",
-            reelgoodLink: "https://reelgood.com/show/manifest-2018",
-            imdbID: "tt8421350",
-            subReddit: 'ManifestNBC',
         },
     },
 ]

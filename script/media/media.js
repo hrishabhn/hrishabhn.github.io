@@ -272,7 +272,7 @@ function movieBig(i,j) {
 
     card.style.setProperty('--poster',`url('TV/background/${movie.id}.${movie.style.posterType}')`)
     title.style.setProperty('--poster',`url('TV/title/${movie.id}.${movie.style.titleType}')`)
-    desc.innerHTML = movie.info.description
+    desc.innerHTML = processDesc(movie)
 
     if (movie.info.studio) {
         serv.style.setProperty('--service',`url('media-image/service/${movie.info.studio}.svg')`)
