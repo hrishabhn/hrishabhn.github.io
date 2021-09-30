@@ -42,6 +42,9 @@
     --black-40: #00000066;
     --white-40: #ffffff66;
 
+    --black-30: rgba(0, 0, 0, 0.3);
+    --white-30: rgba(255, 255, 255, 0.3);
+
     --black-20: #00000033;
     --white-20: #ffffff33;
 
@@ -210,7 +213,7 @@ body{
 .hline{
     display: flex;
     flex-shrink: 0;
-    height: 1px;
+    height: 0.5px;
     width: 100%;
 
     background-color: var(--white-20);
@@ -523,7 +526,7 @@ body{
     transition: all 0.4s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 
-    color: white;
+    /* color: white; */
 }
 
 .main.main-tv.hidden{
@@ -1165,14 +1168,15 @@ body{
 
 
     /* color: var(--light-layer-0); */
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     cursor: default;
 
     /* border-top: solid 1px var(--white-20); */
     margin-top: 12px;
-    margin-bottom: 8px !important;
+    margin-bottom: 12px !important;
     /* text-transform: uppercase; */
+    opacity: 0.8;
 }
 .widget-card{
     overflow: hidden;
