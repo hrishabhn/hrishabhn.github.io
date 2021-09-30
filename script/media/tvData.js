@@ -27,6 +27,29 @@
 // },
 const movieData0 = [
     {
+        name: "Cowboy Bebop",
+        id: "cowboy",
+        link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            description: "Animation &#149 Action &#149 Adventure &#149 1 Season &#149 1998 - 1999",
+            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "76885",
+            reelgoodLink: "https://reelgood.com/show/cowboy-bebop-1998",
+            imdbID: "tt0213338",
+        },
+    },
+    {
         name: "Only Murders in the Building",
         id: "murders",
         link: "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
@@ -270,29 +293,6 @@ const movieData2 = [
             reelgoodLink: "https://reelgood.com/show/sex-education-2019",
             imdbID: "tt7767422",
             subReddit: "NetflixSexEducation",
-        },
-    },
-    {
-        name: "Cowboy Bebop",
-        id: "cowboy",
-        link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
-        info: {
-            service: 'hulu',
-            studio: '',
-            location: 'Hulu',
-            description: "Animation &#149 Action &#149 Adventure &#149 1 Season &#149 1998 - 1999",
-            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
-        },
-        style: {
-            color: '330A06',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "76885",
-            reelgoodLink: "https://reelgood.com/show/cowboy-bebop-1998",
-            imdbID: "tt0213338",
         },
     },
     {

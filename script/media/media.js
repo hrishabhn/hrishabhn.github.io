@@ -21,7 +21,7 @@ function mediaPopulate() {
     movieHTML(7, 'rewatch-tray-2')
 
     // tvPreview(0,0)
-    movieBig(movieData[0][0])
+    movieBig(0,0)
     mediaPageSwitch(0)
 }
 
@@ -216,7 +216,7 @@ function tvPopup(i,j) {
         summaryElement.classList.add("hidden-always")
     }
 
-    document.getElementById('tv-popup-big').onclick = function() { movieBig(movieData[i][j]) }
+    document.getElementById('tv-popup-big').onclick = function() { movieBig(i,j) }
 
 
 
@@ -257,19 +257,27 @@ function popupAllHide() {
     //   mainContainer.classList.remove("sheetback")
 }
 
-function movieBig(movie) {
+function movieBig(i,j) {
+    const movie = movieData[i][j]
+
     var card = document.getElementById('tv-big-card')
     var title = document.getElementById('tv-big-title')
     var desc = document.getElementById('tv-big-desc')
     var serv = document.getElementById('tv-big-service')
     var link = document.getElementById('tv-big-play')
+    var more = document.getElementById('tv-big-more')
 
     console.log(link)
 
     card.style.setProperty('--poster',`url('TV/background/${movie.id}.${movie.style.posterType}')`)
     title.style.setProperty('--poster',`url('TV/title/${movie.id}.${movie.style.titleType}')`)
     desc.innerHTML = movie.info.description
-    serv.style.setProperty('--service',`url('media-image/service/${movie.info.studio}.svg')`)
+
+    if (movie.info.studio) {
+        serv.style.setProperty('--service',`url('media-image/service/${movie.info.studio}.svg')`)
+    } else {
+        serv.style.setProperty('--service',`url('media-image/service/${movie.info.service}.svg')`)
+    }
 
     if (movie.link) {
         link.href = movie.link
@@ -277,7 +285,8 @@ function movieBig(movie) {
         link.removeAttribute('href')
     }
 
-    
+    more.onclick = function() { tvPopup(i,j) }
+
 
 }
 
