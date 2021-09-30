@@ -13,8 +13,8 @@ function mediaPopulate() {
     movieExpandedHTML(0,'up-next-tray')
     movieHTML(1, 'weekly-tray-2')
     movieHTML(2, 'my-list-tray-2')
-    movieHTML(3, 'movie-tray-2')
-    movieHTML(4, 'new-show-tray-2')
+    movieExpandedHTML(3,'movie-tray')
+    movieExpandedHTML(4,'new-show-tray')
     movieHTML(5, 'paused-tray-2')
     movieHTML(6, 'soon-tray-2')
     movieHTML(7, 'rewatch-tray-2')
@@ -225,6 +225,8 @@ function tvPopup(i,j) {
 }
 
 function processLink(linkItem) {
+    // console.log(linkItem)
+
     if (linkItem.netflix) {
         return `https://www.netflix.com/title/${linkItem.netflix}`
     } else if (linkItem.amazon) {
@@ -278,7 +280,7 @@ function movieBig(i,j) {
     }
 
     if (movie.link) {
-        link.href = movie.link
+        link.href = processLink(movie.link)
     } else {
         link.removeAttribute('href')
     }
