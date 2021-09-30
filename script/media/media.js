@@ -111,7 +111,7 @@ function tvPopup(i,j) {
 
     var locationText;
 
-    if ((!(movie.info.location.includes('Coming Soon'))) &&(!(movie.info.location.includes('Returns')))) {
+    if ((!(movie.info.location.includes('Coming Soon'))) && (!(movie.info.location.includes('Returns')) && (!(movie.info.location.includes('Premiers'))))) {
         locationText = "Watch on " + movie.info.location
     } else {
         locationText = movie.info.location
