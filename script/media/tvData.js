@@ -1219,6 +1219,40 @@ const movieData7 = [
         },
     },
     {
+        name: 'Attack on Titan',
+        id: 'attack',
+        link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            // desc: {
+            // //    seasons: 1,
+            // //    yearStart: 2021,
+            // //    yearEnd: null,
+            // //    genre: [
+            // //        'crime',
+            // //        'comedy',
+            // //    ],
+            // },
+            // summary: "summary",
+        },
+        style: {
+            // color: '000000',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'The Boys',
         id: 'boys',
         // link: 'watchlink',
