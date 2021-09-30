@@ -362,7 +362,7 @@ function bookBigPopulate(n) {
 
         var bookCardHTML = `
         <div class="vstack media-page-item">
-            <a class="media-page-card book image-border clickable" style="--poster: url('media-image/books/${bookData[n][i].id}.${bookData[n][i].coverType}');" href="${processLink(bookData[n][i].link)}"></a>
+            <a class="media-page-card book clickable" style="--poster: url('media-image/books/${bookData[n][i].id}.${bookData[n][i].coverType}');" href="${processLink(bookData[n][i].link)}"></a>
             <div class="hstack fill-parent media-page-card-info">
                 <p>${bookData[n][i].progress}</p>
                 <div class="spacer"></div>
