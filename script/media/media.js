@@ -191,7 +191,7 @@ function tvPopup(i,j) {
         }
 
 
-        if (movie.apps.subreddit) {
+        if (movie.apps.subReddit) {
             redditElement.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
             redditElement.classList.remove("hidden-always")
 
@@ -200,13 +200,6 @@ function tvPopup(i,j) {
             redditElement.classList.add("hidden-always")
 
             redditSpacer.classList.add('hidden-always')
-        }
-
-        if (movie.apps.subReddit) {
-            redditElement.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
-            redditElement.classList.remove("hidden-always")
-        } else {
-            redditElement.classList.add("hidden-always")
         }
     } else {
         tvTimeElement.classList.add("hidden-always")
