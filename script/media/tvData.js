@@ -2,9 +2,12 @@
 // {
 //     name: 'Title',
 //     id: 'identifier',
-//     // link: 'watchlink',
+//     // link: {
+//     //     netflix: '80197526'
+//     // },
 //     info: {
 //         // service: 'service',
+//         // studio: 'studio',
 //         // location: 'location',
 //         // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
 //         // summary: "summary",
@@ -29,6 +32,7 @@ const movieData0 = [
         link: "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
         info: {
             service: 'hulu',
+            studio: 'hulu',
             location: 'Hulu',
             description: "Crime &#149 Comedy &#149 1 Season &#149 2021 - Present",
             summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
@@ -52,6 +56,7 @@ const movieData0 = [
         link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
         info: {
             service: 'hulu',
+            studio: 'hulu',
             location: 'Hulu',
             description: 'Drama &#149 Mystery &#149 1 Season &#149 2021 - Present',
             summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
@@ -75,6 +80,7 @@ const movieData0 = [
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
         info: {
             service: 'hulu',
+            studio: 'nbc',
             location: 'Hulu',
             description: "Comedy &#149 Crime &#149 8 Seasons &#149 2013 - Present",
             summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
@@ -99,6 +105,7 @@ const movieData1 = [
         link: null,
         info: {
             service: '',
+            studio: 'showtime',
             location: "Showtime",
             description: "Drama &#149 Money &#149 5 Seasons &#149 2016 - Present",
             summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
@@ -122,6 +129,7 @@ const movieData1 = [
         link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
         info: {
             service: 'appleTV',
+            studio: 'appleTV',
             location: ' TV+',
             description: 'Drama &#149 Sci-Fi &#149 1 Season &#149 2021 - Present',
             summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
@@ -145,6 +153,7 @@ const movieData1 = [
         link: null,
         info: {
             service: 'appleTV',
+            studio: 'appleTV',
             location: "Apple TV+",
             description: "Comedy &#149 Drama &#149 Sport &#149 2 Seasons &#149 2020 - Present",
             summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
@@ -168,6 +177,7 @@ const movieData1 = [
         link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
         info: {
             service: 'hulu',
+            studio: 'fx',
             location: 'Hulu',
             description: "Comedy &#149 Drama &#149 Fantasy &#149 3 Seasons &#149 2019 - Present",
             summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
@@ -194,6 +204,7 @@ const movieData2 = [
         link: 'https://www.hulu.com/series/superstore-727810b8-e54b-4f01-9381-a79ab5661bf7',
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: 'Comedy &#149 6 Seasons &#149 2015 - 2021',
             summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
@@ -217,6 +228,7 @@ const movieData2 = [
         link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
         info: {
             service: '',
+            studio: '',
             location: "Disney+",
             description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
             summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
@@ -242,6 +254,7 @@ const movieData2 = [
         },
         info: {
             service: 'netflix',
+            studio: '',
             location: "Netflix",
             description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
             summary: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
@@ -265,6 +278,7 @@ const movieData2 = [
         link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: "Animation &#149 Action &#149 Adventure &#149 1 Season &#149 1998 - 1999",
             summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
@@ -289,6 +303,7 @@ const movieData2 = [
         },
         info: {
             service: 'netflix',
+            studio: '',
             location: "Netflix",
             description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
             summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
@@ -316,6 +331,7 @@ const movieData2 = [
         },
         info: {
             service: 'netflix',
+            studio: '',
             location: "Netflix",
             description: "Action &#149 Crime &#149 Mystery &#149 3 Seasons &#149 2017 - Present",
             summary: "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
@@ -338,6 +354,7 @@ const movieData2 = [
         link: 'https://www.netflix.com/title/80997085',
         info: {
             service: 'netflix',
+            studio: '',
             location: 'Netflix',
             description: 'Crime &#149 Drama &#149 3 Seasons &#149 2018 - Present',
             summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
@@ -361,6 +378,7 @@ const movieData2 = [
         link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
             summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
@@ -383,6 +401,7 @@ const movieData2 = [
         link: 'https://www.netflix.com/title/80174608',
         info: {
             service: 'netflix',
+            studio: '',
             location: "Netflix",
             description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
             summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
@@ -408,6 +427,7 @@ const movieData3 = [
         // link: 'watchlink',
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             description: 'Action &#149 Adventure &#149 Drama &#149 2021',
             summary: "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
@@ -433,6 +453,7 @@ const movieData3 = [
         },
         info: {
             service: '',
+            studio: '',
             location: "Prime Video",
             description: "Animation &#149 Action &#149 Crime &#149 1995",
             summary: "In the year 2029, the barriers of our world have been broken down by the net and by cybernetics, but this brings new vulnerability to humans in the form of brain-hacking. When a highly-wanted hacker known as The Puppetmaster begins involving them in politics, Section 9, a group of cybernetically enhanced cops, are called in to investigate and stop the Puppetmaster.",
@@ -455,6 +476,7 @@ const movieData3 = [
         link: null,
         info: {
             service: '',
+            studio: '',
             location: "Download",
             description: "Animation &#149 Drama &#149 Fantasy &#149 2016",
             summary: "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
@@ -477,6 +499,7 @@ const movieData3 = [
         link: null,
         info: {
             service: '',
+            studio: '',
             location: "Coming Soon",
             description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
             summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
@@ -499,6 +522,7 @@ const movieData3 = [
         // link: null,
         info: {
             service: '',
+            studio: '',
             location: "Prime Video",
             // description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
             // summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
@@ -516,6 +540,7 @@ const movieData3 = [
         // link: null,
         info: {
             service: '',
+            studio: '',
             location: "Download",
             // description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
             // summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
@@ -533,6 +558,7 @@ const movieData3 = [
         // link: null,
         info: {
             service: '',
+            studio: '',
             location: "Apple TV+",
             // description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
             // summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
@@ -554,6 +580,7 @@ const movieData4 = [
         },
         info: {
             service: 'netflix',
+            studio: '',
             location: 'Netflix',
             // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
             // summary: "summary",
@@ -577,6 +604,7 @@ const movieData4 = [
         link: 'https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7',
         info: {
             service: '',
+            studio: '',
             location: ' TV+',
             description: 'Sci-Fi &#149 2 Seasons &#149 2019 - Present',
             summary: "Exploring the possibilities that might exist if the global space race had continued and where humanity would be now.",
@@ -600,6 +628,7 @@ const movieData4 = [
         link: 'https://www.netflix.com/title/80100172',
         info: {
             service: 'netflix',
+            studio: '',
             location: 'Netflix',
             description: 'Crime &#149 Drama &#149 Mystery &#149 3 Seasons &#149 2017 - 2020',
             summary: "When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. The mystery-drama series introduces an intricate puzzle filled with twists that includes a web of curious characters, all of whom have a connection to the town's troubled history -- whether they know it or not. The story includes supernatural elements that tie back to the same town in 1986. 'Dark' represents the first German original series produced for Netflix.",
@@ -625,6 +654,7 @@ const movieData4 = [
         },
         info: {
             service: '',
+            studio: '',
             location: 'Prime Video',
             description: 'Drama &#149 Mystery &#149 Sci-Fi &#149 5 Seasons &#149 2008 - 2013',
             summary: "FBI Special Agent Olivia Dunham is assigned to the bureau's Fringe Division, in which she investigates unusual crimes and occurrences. Assisting Olivia in her investigations are once-institutionalised scientist Dr Walter Bishop, his jack-of-all-trades son, Peter, and FBI Junior Agent Astrid Farnsworth. As the team investigates cases of science gone awry, they discover connections to their own past and to a parallel universe. As the team explores life and solves cases in these interconnected worlds, new discoveries and complications continue to arise.",
@@ -648,6 +678,7 @@ const movieData4 = [
         link: "https://www.hulu.com/series/y-the-last-man-9fb2d79b-1280-48be-b185-f989b9c9519a",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: 'Action &#149 Adventure &#149 Drama &#148 1 Season &#149 2021 - Present',
             summary: 'A drama based on DC Comics\' acclaimed series by Brian K. Vaughan and Pia Guerra, Y: The Last Man traverses a post-apocalyptic world in which a cataclysmic event decimates every mammal with a Y chromosome but for one cisgender man and his pet monkey. The series follows the survivors in this new world as they struggle with their efforts to restore what was lost and the opportunity to build something better.',
@@ -673,6 +704,7 @@ const movieData4 = [
         },
         info: {
             service: 'netflix',
+            studio: '',
             location: "Netflix",
             // description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
             // summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
@@ -690,6 +722,7 @@ const movieData4 = [
         // link: null,
         info: {
             service: '',
+            studio: '',
             location: "HBO Max",
             // description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
             // summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
@@ -707,6 +740,7 @@ const movieData4 = [
         link: "https://www.hulu.com/series/line-of-duty-0efc0f95-c575-46da-b28f-a30a13d86b37",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: "Thriller &#149 6 Season &#149 2012 - Present",
             summary: "After refusing to help cover up an unlawful and fatal shooting by members of his team, Detective Sergeant Steve Arnott is transferred to Anti-Corruption Unit 12, AC-12. Run by zealous Superintendent Ted Hastings, the department is responsible for investigating possible corruption within the Central Police force. Working alongside DS Arnott is Detective Inspector Kate Fleming, who is an undercover specialist. With the help and oversight of Hastings, Arnott and Fleming take on difficult cases, which lead from laddering to mishandling evidence.",
@@ -729,6 +763,7 @@ const movieData4 = [
         // link: null,
         info: {
             service: 'netflix',
+            studio: '',
             location: "Netflix",
             // description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
             // summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
@@ -748,6 +783,7 @@ const movieData5 = [
         // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
             // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
@@ -765,6 +801,7 @@ const movieData5 = [
         link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series',
         info: {
             service: '',
+            studio: '',
             location: 'HBO Max',
             description: 'Comedy &#149 10 Seasons &#149 2000 - Present',
             // summary: "summary",
@@ -788,6 +825,7 @@ const movieData5 = [
         // link: 'watchlink',
         info: {
             service: '',
+            studio: '',
             location: 'HBO Max',
             // description: 'Animation &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
             // summary: "summary",
@@ -811,6 +849,7 @@ const movieData5 = [
         link: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: "Sci-Fi &#149 3 Seasons &#149 2017 - 2019",
             summary: "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he's confronted with the possibility that the voices he hears and the visions he sees might be real.",
@@ -833,6 +872,7 @@ const movieData5 = [
         // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
         info: {
             service: 'netflix',
+            studio: '',
             location: "Netflix",
             // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
             // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
@@ -852,6 +892,7 @@ const movieData5 = [
         },
         info: {
             service: '',
+            studio: '',
             location: "Prime Video",
             description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
             summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
@@ -877,6 +918,7 @@ const movieData5 = [
         link: "https://www.hulu.com/series/futurama-85bf4cc1-cd8b-4469-ad87-7289217a0b74",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: "Animation &#149 Comedy &#149 Sci-Fi &#149 8 Seasons &#149 1999 - 2013",
             summary: "Accidentally frozen, pizza-deliverer Fry wakes up 1,000 years in the future. He is taken in by his sole descendant, an elderly and addled scientist who owns a small cargo delivery location. Among the other crew members are Capt. Leela, accountant Hermes, intern Amy, obnoxious robot Bender and lobsterlike moocher Dr. Zoidberg.",
@@ -899,6 +941,7 @@ const movieData5 = [
         // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
             // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
@@ -918,6 +961,7 @@ const movieData6 = [
         // link: 'watchlink',
         info: {
             service: '',
+            studio: '',
             location: 'Premiers on Oct 29',
             // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
             // summary: "summary",
@@ -941,6 +985,7 @@ const movieData6 = [
         link: null,
         info: {
             service: '',
+            studio: '',
             location: "Returns on December 24th",
             // description: "Action &#149 Adventure &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
             // summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
@@ -965,6 +1010,7 @@ const movieData6 = [
         link: "https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: "Comedy &#149 14 Seasons &#149 2005 - Present",
             summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
@@ -991,6 +1037,7 @@ const movieData6 = [
         link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: "Comedy &#149 Drama &#149 Music &#149 2 Seasons &#149 2016 - Present",
             summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
@@ -1013,6 +1060,7 @@ const movieData6 = [
         // link: 'watchlink',
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             // description: 'Action &#149 Crime &#149 Drama &#149 2 Seasons &#149 2019 - Present',
             // summary: "summary",
@@ -1038,6 +1086,7 @@ const movieData6 = [
         },
         info: {
             service: '',
+            studio: '',
             location: "Prime Video",
             description: "Action &#149 Adventure &#149 Sci-Fi &#149 6 Seasons &#149 2015 - Present",
             summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
@@ -1061,6 +1110,7 @@ const movieData6 = [
         link: 'https://www.netflix.com/title/80028732',
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             description: 'Animation &#149 Comedy &#149 Drama &#149 4 Seasons &#149 2015 - Present',
             // summary: "summary",
@@ -1084,6 +1134,7 @@ const movieData6 = [
         // link: 'watchlink',
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             // description: 'Action &#149 Animation &#149 Superhero &#149 ___ Seasons &#149 Y000 - Present',
             // summary: "summary",
@@ -1107,6 +1158,7 @@ const movieData6 = [
         // link: 'watchlink',
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             description: 'Action & Adventure &#149 Fantasy &#149 1 Season &#149 2021 - Present',
             summary: "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
@@ -1130,6 +1182,7 @@ const movieData6 = [
         // link: 'watchlink',
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             description: 'Drama &#149 Mystery &#149 3 Seasons &#149 2018 - Present',
             summary: "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds.",
@@ -1153,6 +1206,7 @@ const movieData6 = [
         link: null,
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Y999',
             // summary: "summary",
@@ -1176,6 +1230,7 @@ const movieData6 = [
         link: 'https://www.netflix.com/title/80117552',
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             description: 'Crime &#149 Drama &#149 Thriller &#149 3 Seasons &#149 2017 - Present',
             // summary: "summary",
@@ -1199,6 +1254,7 @@ const movieData6 = [
         link: 'https://www.netflix.com/title/80002479',
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             description: 'Crime &#149 Drama &#149 5 Seasons &#149 2013 - Present',
             // summary: "summary",
@@ -1222,6 +1278,7 @@ const movieData6 = [
         // link: 'watchlink',
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Y999',
             // summary: "summary",
@@ -1245,6 +1302,7 @@ const movieData6 = [
         link: null,
         info: {
             service: '',
+            studio: '',
             location: 'Coming Soon',
             description: 'Action &#149 Drama &#149 Sci-Fi &#149 2 Seasons &#149 2020 - Present',
             // summary: "summary",
@@ -1270,6 +1328,7 @@ const movieData6 = [
         },
         info: {
             service: 'netflix',
+            studio: '',
             location: 'Netflix',
             description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
             summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
@@ -1295,6 +1354,7 @@ const movieData7 = [
         // link: 'watchlink',
         info: {
             service: '',
+            studio: '',
             location: 'HBO Max',
             description: 'Action &#149 Adventure &#149 Fantasy &#149 8 Seasons &#149 2011 - 2019',
             summary: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
@@ -1318,6 +1378,7 @@ const movieData7 = [
         link: 'https://www.hulu.com/series/how-i-met-your-mother-bc68ac79-3ace-4427-9ec0-5ee6f314d194',
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             // description: 'Comedy &#149 Romance &#149 9 Seasons &#149 2005 - 2014',
             // summary: "summary",
@@ -1341,6 +1402,7 @@ const movieData7 = [
         link: "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
             summary: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
@@ -1365,6 +1427,7 @@ const movieData7 = [
         },
         info: {
             service: 'netflix',
+            studio: '',
             location: 'Netflix',
             // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
             // summary: "summary",
@@ -1388,6 +1451,7 @@ const movieData7 = [
         link: 'https://www.peacocktv.com/watch/asset/tv/the-office/4902514835143843112',
         info: {
             service: '',
+            studio: '',
             location: 'Peacock',
             // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
             // summary: "summary",
@@ -1413,6 +1477,7 @@ const movieDataArchive = [
         link: 'https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50',
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
             // summary: "summary",
@@ -1436,6 +1501,7 @@ const movieDataArchive = [
         // link: 'watchlink',
         info: {
             service: '',
+            studio: '',
             location: 'Starz',
             description: 'Comedy &#149 2013',
             summary: "Six Los Angeles celebrities are stuck in James Franco's house after a series of devastating events just destroyed the city. Inside, the group not only have to face the apocalypse, but themselves.",
@@ -1459,6 +1525,7 @@ const movieDataArchive = [
         link: null,
         info: {
             service: '',
+            studio: '',
             location: "Disney+",
             description: "Action &#149 Adventure &#149 Fantasy &#149 2021",
             summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
@@ -1481,6 +1548,7 @@ const movieDataArchive = [
         link: null,
         info: {
             service: '',
+            studio: '',
             location: "Adult Swim",
             description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
             summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
@@ -1504,6 +1572,7 @@ const movieDataArchive = [
         link: "https://www.hulu.com/series/manifest-a1e5ed46-2704-431e-94b0-9aea1560c712",
         info: {
             service: 'hulu',
+            studio: '',
             location: 'Hulu',
             description: "Drama &#149 Mystery &#149 4 Seasons &#149 2018 - Present",
             summary: "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds."

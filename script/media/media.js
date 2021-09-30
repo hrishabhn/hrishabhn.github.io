@@ -269,8 +269,15 @@ function movieBig(movie) {
     card.style.setProperty('--poster',`url('TV/background/${movie.id}.${movie.style.posterType}')`)
     title.style.setProperty('--poster',`url('TV/title/${movie.id}.${movie.style.titleType}')`)
     desc.innerHTML = movie.info.description
-    serv.style.setProperty('--service',`url('media-image/service/${movie.info.service}.svg')`)
-    link.href = movie.link
+    serv.style.setProperty('--service',`url('media-image/service/${movie.info.studio}.svg')`)
+
+    if (movie.link) {
+        link.href = movie.link
+    } else {
+        link.removeAttribute('href')
+    }
+
+    
 
 }
 
