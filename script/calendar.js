@@ -8,7 +8,7 @@ function calendarDate() {
     fullDate = new Date();
 
     
-    const months = ["JAN","FEB","MAR","APR","MAY","JUN","July","August","September"]
+    const months = ["JAN","FEB","MAR","APR","MAY","JUN","July","August","September",'October']
 
     minuteNow = fullDate.getMinutes();
 
