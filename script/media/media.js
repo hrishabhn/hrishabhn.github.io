@@ -1,3 +1,6 @@
+var movieBigIndex
+
+
 function mediaPopulate() {
     bookBigPopulate(0)
     bookBigPopulate(1)
@@ -9,7 +12,10 @@ function mediaPopulate() {
     podBigPopulate(2)
     podBigPopulate(3)
 
-    movieBig(0,0)
+    movieBigIndex = Math.floor(Math.random() * movieData0.length)
+    console.log(movieBigIndex)
+
+    movieBig(0,movieBigIndex)
     movieExpandedHTML(0,'up-next-tray')
     movieExpandedHTML(1,'weekly-tray')
     movieHTML(2, 'my-list-tray-2')
@@ -366,7 +372,7 @@ function movieExpandedHTML(n, tray) {
     htmlString = appendSpacer(htmlString, 35)
 
     for (let i = 0; i < dataLength; i++) {
-        if ((i + n) > 0) {
+        if ((n != 0) || (i != movieBigIndex)) {
             if ((data[i].link !== null) && (data[i].link !== undefined)) {
                 var htmlLink = `href="${processLink(data[i].link)}"`
             } else {
