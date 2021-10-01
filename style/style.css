@@ -151,7 +151,7 @@ body{
     width: 100vw;
     height: calc(100vh - 60px);
     overflow: scroll;
-    background-color: black;
+    background-color: var(--dark-layer-2);
 }
 
 .hidden-always{
