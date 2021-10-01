@@ -21,7 +21,7 @@ function mediaPopulate() {
     movieHTML(8, 'rewatch-tray-2')
 
     // tvPreview(0,0)
-    mediaPageSwitch(0)
+    // mediaPageSwitch(0)
 }
 
 // function pullWidgy() {
