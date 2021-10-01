@@ -270,18 +270,18 @@ body{
     position: fixed;
     box-sizing: border-box;
     flex-direction: column;
-    bottom: 20px;
-    left: 20px;
+    bottom: 0px;
+    left: 0px;
 
 
-    padding: 20px 10px 20px;
+    padding: 20px 10px 20px 20px;
     /* padding-top: 100px; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
 
-    height: calc(100% - 100px);
-    width: 180px;
+    height: calc(100% - 60px);
+    width: 200px;
     z-index: 100;
-    background-color: var(--dark-layer-1);
+    /* background-color: var(--dark-layer-1); */
     cursor: default;
 
     overflow-y: scroll;
@@ -857,16 +857,17 @@ body{
     position: fixed;
     flex-direction: column;
     box-sizing: border-box;
-    width: 280px;
-    height: calc(100vh - 100px);
+    width: 300px;
+    height: calc(100vh - 60px);
 
-    bottom: 20px;
-    right: 20px;
-    padding: 20px;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px 0px;
+    padding-right: 20px;
 
-    border-radius: 10px;
+    /* border-radius: 10px; */
 
-    background-color: var(--dark-layer-2);
+    /* background-color: var(--dark-layer-1); */
     /* background-color: #debc87; */
     overflow: scroll;
 
@@ -1679,7 +1680,7 @@ body{
 
 
     .navbar{
-        background-color: var(--light-layer-2);
+        /* background-color: var(--light-layer-2); */
     }
     .menu-item:hover .menu-item-bg{
         filter: brightness(0);
@@ -1702,7 +1703,7 @@ body{
         fill: var(--dark-layer-1);
     } */
     #widgetbar{
-        background-color: var(--light-layer-2);
+        /* background-color: var(--light-layer-2); */
     }
 
     #widgetbar.state1{
@@ -1715,7 +1716,7 @@ body{
         background: var(--light-layer-0);
     }
     #everything{
-        background-color: var(--light-layer-1);
+        background-color: var(--light-layer-2);
     }
     #user-select-modal{
         background-color: var(--light-layer-1);
