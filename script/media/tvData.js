@@ -676,6 +676,41 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
+        name: 'Archer',
+        id: 'archer',
+        link: 'https://www.hulu.com/series/archer-22b4b3c8-0827-42d2-a841-50e8f3464dc2',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 12,
+               yearStart: 2009,
+               yearEnd: null,
+               genre: [
+                   'action',
+                   'animation',
+                   'crime',
+               ],
+            },
+            summary: "Covert black ops and espionage take a back seat to zany personalities and relationships between secret agents and drones.",
+        },
+        style: {
+            color: '337799',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '110381',
+            reelgoodLink: 'https://reelgood.com/show/archer-2009',
+            imdbID: 'tt1486217',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Dear White People',
         id: 'dear',
         link: {
