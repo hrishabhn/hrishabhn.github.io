@@ -69,38 +69,6 @@ const movieData0 = [
         },
     },
     {
-        name: "Only Murders in the Building",
-        id: "murders",
-        link: "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
-        info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'comedy',
-                ],
-            },
-            summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
-        },
-        style: {
-            color: '292A27',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "399959",
-            reelgoodLink: "https://reelgood.com/show/only-murders-in-the-building-2021",
-            imdbID: "tt12851524",
-            subReddit: 'OnlyMurdersHulu',
-        },
-    },
-    {
         name: 'Nine Perfect Strangers',
         id: 'nine',
         link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
@@ -166,36 +134,37 @@ const movieData0 = [
 ]
 const movieData1 = [
     {
-        name: "Billions",
-        id: "billions",
-        link: null,
+        name: "Only Murders in the Building",
+        id: "murders",
+        link: "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
         info: {
-            service: '',
-            studio: 'showtime',
-            location: "Showtime",
-            weekday: 'Sundays',
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            weekday: 'Tuesdays',
             desc: {
-                seasons: 5,
-                yearStart: 2016,
+                seasons: 1,
+                yearStart: 2021,
                 yearEnd: null,
                 genre: [
+                    'crime',
+                    'comedy',
                     'drama',
-                    'money',
                 ],
             },
-            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
+            summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
         },
         style: {
-            color: '6f4c2d',
+            color: '292A27',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: "mid",
         },
         apps: {
-            tvTimeID: "279536",
-            reelgoodLink: "https://reelgood.com/show/billions-2016",
-            imdbID: "tt4270492",
-            subReddit: 'Billions'
+            tvTimeID: "399959",
+            reelgoodLink: "https://reelgood.com/show/only-murders-in-the-building-2021",
+            imdbID: "tt12851524",
+            subReddit: 'OnlyMurdersHulu',
         },
     },
     {
@@ -299,7 +268,39 @@ const movieData1 = [
             subReddit: 'WhatWeDointheShadows',
         },
     },
-
+    {
+        name: "Billions",
+        id: "billions",
+        link: null,
+        info: {
+            service: '',
+            studio: 'showtime',
+            location: "Showtime",
+            weekday: 'Sundays',
+            desc: {
+                seasons: 5,
+                yearStart: 2016,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'money',
+                ],
+            },
+            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
+        },
+        style: {
+            color: '6f4c2d',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "279536",
+            reelgoodLink: "https://reelgood.com/show/billions-2016",
+            imdbID: "tt4270492",
+            subReddit: 'Billions'
+        },
+    },
 ]
 const movieData2 = [
     {
