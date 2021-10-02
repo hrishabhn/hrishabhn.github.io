@@ -714,29 +714,36 @@
 }
 .tv-play-icon{
     display: flex;
-    position: relative;
+    position: absolute;
     box-sizing: border-box;
     border-radius: 100%;
-    padding: 5px;
+    padding: 8px;
 
-    height: 20px;
-    width: 20px;
+    bottom: 5px;
+    right: 5px;
+
+
+    height: 30px;
+    width: 30px;
 
     opacity: 0;
     fill: white;
+
+    -webkit-backdrop-filter: blur(5px) saturate(2) brightness(0.5);
+    background-color: var(--white-10);
 }
 
 @media(min-width: 450px){
     .tv-play-container{
         transition: all 0.25s;
     }
-    .tv-play-container:hover{
+    .tv-card-poster:hover .tv-play-container{
         background-color: var(--black-20);
     }
-    .tv-play-container .tv-play-icon{
+    .tv-card-poster .tv-play-icon{
         transition: all 0.25s;
     }
-    .tv-play-container:hover .tv-play-icon{
+    .tv-card-poster:hover .tv-play-icon{
         opacity: 1;
     }
 }
@@ -749,13 +756,8 @@
         transition: all 0.05s;
         background-color: var(--black-40);
     }
-    .tv-play-container .tv-play-icon{
-        transition: all 0.4s;
-        transition-delay: 0.15s;
-    }
-    .tv-play-container:active .tv-play-icon{
-        transition: all 0.05s;
-        opacity: 1;
+    .tv-play-icon{
+        pointer-events: none;
     }
 }
 
