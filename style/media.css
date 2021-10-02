@@ -444,7 +444,15 @@
 
 .media-shadow{
     box-shadow: 0 5px 8px var(--black-40);
+    transform-origin: bottom center;
 }
+.media-shadow:active{
+    transition: all 0.05s;
+    box-shadow: 0 5px 8px var(--black-20);
+    transform: scale(0.995);
+    /* transform: translateY(2px); */
+}
+
 
 
 #tv-big-card{
@@ -660,11 +668,10 @@
     background-position: center center;
     background-image: var(--poster);
 
-    transition: all 0.15s;
+    transition: all 0.4s;
     transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
     outline: none;
 }
-
 
 .tv-gradient{
     display: flex;
@@ -717,20 +724,23 @@
     position: absolute;
     box-sizing: border-box;
     border-radius: 100%;
-    padding: 8px;
+    padding: 6px;
 
     bottom: 5px;
     right: 5px;
 
 
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 
     opacity: 0;
     fill: white;
 
     -webkit-backdrop-filter: blur(5px) saturate(2) brightness(0.5);
     background-color: var(--white-10);
+}
+.tv-play-icon:hover{
+    background-color: var(--white-20);
 }
 
 @media(min-width: 450px){
@@ -1359,7 +1369,7 @@
     .media-page-body .image-border{
         border-color: var(--dark-layer-3);
     }
-    .media-shadowd{
+    .media-shadow{
         box-shadow: 0 5px 8px var(--black-20);
     }
 }
