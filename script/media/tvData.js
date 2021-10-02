@@ -69,38 +69,6 @@ const movieData0 = [
         },
     },
     {
-        name: 'Nine Perfect Strangers',
-        id: 'nine',
-        link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
-        info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'mystery',
-                ],
-            },
-            summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
-        },
-        style: {
-            color: '6b7790',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '376815',
-            reelgoodLink: 'https://reelgood.com/show/nine-perfect-strangers',
-            imdbID: 'tt8760932',
-            subReddit: 'nineperfectstrangers',
-        },
-    },
-    {
         name: "Brooklyn Nine-Nine",
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
@@ -1555,6 +1523,38 @@ const movieData7 = [
             reelgoodLink: 'https://reelgood.com/show/mythic-quest-2020',
             // imdbID: 'identifier',
             subReddit: 'MythicQuest',
+        },
+    },
+    {
+        name: 'Nine Perfect Strangers',
+        id: 'nine',
+        link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'mystery',
+                ],
+            },
+            summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
+        },
+        style: {
+            color: '6b7790',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '376815',
+            reelgoodLink: 'https://reelgood.com/show/nine-perfect-strangers',
+            imdbID: 'tt8760932',
+            subReddit: 'nineperfectstrangers',
         },
     },
     {
