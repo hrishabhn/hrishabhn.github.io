@@ -277,7 +277,7 @@ function mediaPageApps() {
     htmlString = appendSpacer(htmlString,15)
 
     for (let i = 0; i < dataLength; i++) {
-        var mediaHTML = `<div id="media-page-switch-${i}" class="media-page-switch clickable" onclick="mediaPageSwitch(${i});movieBig(0,0)">${mediaPageData[i].name}</div>`
+        var mediaHTML = `<div id="media-page-switch-${i}" class="media-page-switch clickable" onclick="mediaPageSwitch(${i});movieBig(0,movieBigIndex)">${mediaPageData[i].name}</div>`
 
         if (i < (dataLength - 1)) {
             mediaHTML = appendSpacer(mediaHTML,10)
