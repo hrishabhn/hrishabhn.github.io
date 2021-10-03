@@ -73,39 +73,6 @@ const movieData0 = [
         },
     },
     {
-        name: "Billions",
-        id: "billions",
-        link: null,
-        info: {
-            service: '',
-            studio: 'showtime',
-            location: "Showtime",
-            weekday: 'Sundays',
-            desc: {
-                seasons: 5,
-                yearStart: 2016,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'money',
-                ],
-            },
-            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
-        },
-        style: {
-            color: '6f4c2d',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "279536",
-            reelgoodLink: "https://reelgood.com/show/billions-2016",
-            imdbID: "tt4270492",
-            subReddit: 'Billions'
-        },
-    },
-    {
         name: "Cowboy Bebop",
         id: "cowboy",
         link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
@@ -1195,6 +1162,39 @@ const movieData6 = [
             reelgoodLink: "https://reelgood.com/show/the-mandalorian-2019",
             imdbID: 'tt8111088',
             subReddit: 'TheMandalorianTV',
+        },
+    },
+    {
+        name: "Billions",
+        id: "billions",
+        link: null,
+        info: {
+            service: '',
+            studio: 'showtime',
+            location: "Showtime",
+            date: 'Jan 23, 2022',
+            desc: {
+                seasons: 5,
+                yearStart: 2016,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'money',
+                ],
+            },
+            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
+        },
+        style: {
+            color: '6f4c2d',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "279536",
+            reelgoodLink: "https://reelgood.com/show/billions-2016",
+            imdbID: "tt4270492",
+            subReddit: 'Billions'
         },
     },
 ]
