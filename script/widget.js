@@ -445,7 +445,7 @@ const userWidget = {
 const countdownData = [
     {
         name: 'Utah',
-        date: 'Oct 8, 2021',
+        date: 'Oct 8, 2021 08:50:00',
     },
     {
         name: 'Halloween',
@@ -488,18 +488,18 @@ const countdownData = [
     //     name: 'NUCL Exam',
     //     date: 'Sep 29, 2021 20:00:00',
     // },
-    {
-        name: 'IE 386 Exam',
-        date: 'Sep 30, 2021 09:30:00',
-    },
-    {
-        name: 'IE 335 Quiz',
-        date: 'Oct 1, 2021 12:30:00',
-    },
-    {
-        name: 'End of Exams',
-        date: 'Oct 1, 2021 13:30:00',
-    },
+    // {
+    //     name: 'IE 386 Exam',
+    //     date: 'Sep 30, 2021 09:30:00',
+    // },
+    // {
+    //     name: 'IE 335 Quiz',
+    //     date: 'Oct 1, 2021 12:30:00',
+    // },
+    // {
+    //     name: 'End of Exams',
+    //     date: 'Oct 1, 2021 13:30:00',
+    // },
 ]
 
 var allCountdowns = true
