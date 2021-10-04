@@ -37,40 +37,6 @@
 // },
 const movieData0 = [
     {
-        name: 'The Problem With John Stewart',
-        id: 'problem',
-        link: 'https://tv.apple.com/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob',
-        info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
-            // date: '',
-            weekday: 'Thursday',
-            desc: {
-               seasons: 1,
-               yearStart: 2021,
-               yearEnd: null,
-               genre: [
-                   'comedy',
-                   'talk show',
-               ],
-            },
-            summary: "It's easy to feel overwhelmed by the world's problems. It's harder to pinpoint the systems responsible for creating them. In this series, Jon Stewart brings together people impacted by different parts of a problem to discuss how we come up with change.",
-        },
-        style: {
-            color: '334348',
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/the-problem-with-jon-stewart-2021',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Midnight Mass',
         id: 'midnight',
         link: {
@@ -238,6 +204,40 @@ const movieData1 = [
             reelgoodLink: "https://reelgood.com/show/only-murders-in-the-building-2021",
             imdbID: "tt12851524",
             subReddit: 'OnlyMurdersHulu',
+        },
+    },
+    {
+        name: 'The Problem With John Stewart',
+        id: 'problem',
+        link: 'https://tv.apple.com/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob',
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            // date: '',
+            weekday: 'Thursdays',
+            desc: {
+               seasons: 1,
+               yearStart: 2021,
+               yearEnd: null,
+               genre: [
+                   'comedy',
+                   'talk show',
+               ],
+            },
+            summary: "It's easy to feel overwhelmed by the world's problems. It's harder to pinpoint the systems responsible for creating them. In this series, Jon Stewart brings together people impacted by different parts of a problem to discuss how we come up with change.",
+        },
+        style: {
+            color: '334348',
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-problem-with-jon-stewart-2021',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
         },
     },
     {
