@@ -207,7 +207,7 @@ const movieData1 = [
         },
     },
     {
-        name: 'The Problem With John Stewart',
+        name: 'The Problem With Jon Stewart',
         id: 'problem',
         link: 'https://tv.apple.com/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob',
         info: {
