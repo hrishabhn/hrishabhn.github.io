@@ -234,9 +234,9 @@ const movieData1 = [
             titleSize: 'wide',
         },
         apps: {
-            // tvTimeID: 'identifier',
+            tvTimeID: '400756',
             reelgoodLink: 'https://reelgood.com/show/the-problem-with-jon-stewart-2021',
-            // imdbID: 'identifier',
+            imdbID: 'tt15084142',
             // subReddit: 'subreddit',
         },
     },
