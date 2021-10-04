@@ -378,6 +378,40 @@ const movieData1 = [
 ]
 const movieData2 = [
     {
+        name: 'The Simpsons',
+        id: 'simpsons',
+        link: 'https://www.hulu.com/series/the-simpsons-47332072-d7fb-48b3-a5f7-ca8c6915ca27',
+        info: {
+            service: 'hulu',
+            studio: 'fox',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 33,
+               yearStart: 1989,
+               yearEnd: 2021,
+               genre: [
+                   'animation',
+                   'comedy',
+               ],
+            },
+            summary: "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie.",
+        },
+        style: {
+            color: '685467',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-simpsons-1989',
+            imdbID: 'tt0096697',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Superstore',
         id: 'superstore',
         link: 'https://www.hulu.com/series/superstore-727810b8-e54b-4f01-9381-a79ab5661bf7',
@@ -750,6 +784,78 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
+    {
+        name: 'The Witcher',
+        id: 'witcher',
+        link: {
+            netflix: '80189685'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 1,
+               yearStart: 2019,
+               yearEnd: null,
+               genre: [
+                   'action',
+                   'adventure',
+                   'fantasy',
+               ],
+            },
+            summary: "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+        },
+        style: {
+            color: '515d63',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-witcher-2020',
+            imdbID: 'tt5180504',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Vikings',
+        id: 'vikings',
+        link: 'https://www.hulu.com/series/vikings-8bc072a3-4a5e-47cb-9cb6-bc3dc3785fe1',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 6,
+               yearStart: 2013,
+               yearEnd: 2021,
+               genre: [
+                   'action',
+                   'adventure',
+                   'history',
+               ],
+            },
+            summary: "Ragnar is pitted against Rollo over a land dispute he's trying to settle on behalf of King Horik. A deadly fever hits Kattegat putting Ragnar's wife and daughter's lives in grave danger.",
+        },
+        style: {
+            color: '4f6368',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/vikings-2013',
+            imdbID: 'tt2306299',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Dear White People',
         id: 'dear',
