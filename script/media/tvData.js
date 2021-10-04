@@ -341,6 +341,40 @@ const movieData1 = [
             subReddit: 'WhatWeDointheShadows',
         },
     },
+    {
+        name: 'Family Guy',
+        id: 'family',
+        link: 'https://www.hulu.com/series/family-guy-3c3c0f8b-7366-4d15-88ab-18050285978e',
+        info: {
+            service: 'hulu',
+            studio: 'fox',
+            location: 'Hulu',
+            // date: '',
+            weekday: 'Sundays',
+            desc: {
+               seasons: 20,
+               yearStart: 1999,
+               yearEnd: null,
+               genre: [
+                   'animation',
+                   'comedy',
+               ],
+            },
+            summary: "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
+        },
+        style: {
+            color: '0B6F38',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '75978',
+            reelgoodLink: 'https://reelgood.com/show/family-guy-1999',
+            imdbID: 'tt0182576',
+            // subReddit: 'subreddit',
+        },
+    },
 ]
 const movieData2 = [
     {
@@ -1099,24 +1133,6 @@ const movieData5 = [
             tvTimeID: "314087",
             reelgoodLink: "https://reelgood.com/show/futurama-1999",
             // imdbID: "tt5712554",
-        },
-    },
-    {
-        name: "Family Guy",
-        id: "family",
-        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-        info: {
-            service: 'hulu',
-            studio: '',
-            location: 'Hulu',
-            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-        },
-        style: {
-            color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: "mid",
         },
     },
 ]
