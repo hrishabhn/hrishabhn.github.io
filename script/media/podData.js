@@ -29,9 +29,20 @@ const podData0 = [
         coverType: 'jpeg',
     },
     {
-        name: "Yang Speaks",
-        id: "yang",
-        link: "https://www.youtube.com/channel/UCJjLcmTHbVigXBb1ul0m5sw/videos",
+        name: "Prof G Show",
+        id: "profg",
+        link: {
+            applePod: 'id1498802610'
+        },
+        author: "Kara Swisher & Scott Galloway",
+        coverType: 'jpeg',
+    },
+    {
+        name: "Forward",
+        id: "forward",
+        link: {
+            youtube: 'forwardpod'
+        },
         author: "Andrew Yang & Zach??",
         coverType: 'jpeg',
     },
