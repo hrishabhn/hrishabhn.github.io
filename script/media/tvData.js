@@ -378,6 +378,42 @@ const movieData1 = [
 ]
 const movieData2 = [
     {
+        name: 'South Park',
+        id: 'southpark',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Downloaded',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 24,
+               yearStart: 1997,
+               yearEnd: null,
+               genre: [
+                   'animation',
+                   'comedy',
+               ],
+            },
+            summary: "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
+        },
+        style: {
+            color: 'b8c2c0',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '75897',
+            reelgoodLink: 'https://reelgood.com/show/south-park-1997',
+            imdbID: 'tt0121955',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'The Simpsons',
         id: 'simpsons',
         link: 'https://www.hulu.com/series/the-simpsons-47332072-d7fb-48b3-a5f7-ca8c6915ca27',
@@ -1122,30 +1158,6 @@ const movieData5 = [
             tvTimeID: '76203',
             reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
             imdbID: 'tt0264235',
-            // subReddit: null,
-        },
-    },
-    {
-        name: 'South Park',
-        id: 'southpark',
-        // link: 'watchlink',
-        info: {
-            service: '',
-            studio: '',
-            location: 'HBO Max',
-            // description: 'Animation &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
-            // summary: "summary",
-        },
-        style: {
-            color: 'b8c2c0',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: null,
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
             // subReddit: null,
         },
     },
