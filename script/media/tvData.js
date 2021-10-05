@@ -648,6 +648,32 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: 'Lo and Behold: Reveries of the Connected World',
+        id: 'loAndBehold',
+        link: {
+            primeVideo: 'B01KH1DOA4'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            description: 'Documentary &#149 Technology &#149 Sci-Fi &#149 2016',
+            summary: "Oscar-nominated documentarian Werner Herzog (Grizzly Man, Cave of Forgotten Dreams) chronicles the virtual world. He leads viewers on a journey that reveals the ways the online world has transformed how virtually everything in the real world works.",
+        },
+        style: {
+            color: '747a71',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/lo-and-behold-reveries-of-the-connected-world-2016',
+            imdbID: 'tt5275828',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Eternals',
         id: 'eternals',
         // link: 'watchlink',
@@ -694,52 +720,6 @@ const movieData3 = [
             tvTimeID: null,
             reelgoodLink: "https://reelgood.com/movie/ghost-in-the-shell-1995",
             imdbID: "tt0113568",
-        },
-    },
-    {
-        name: "Your Name.",
-        id: "yourname",
-        link: null,
-        info: {
-            service: '',
-            studio: '',
-            location: "Download",
-            description: "Animation &#149 Drama &#149 Fantasy &#149 2016",
-            summary: "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
-        },
-        style: {
-            color: '768a8e',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: null,
-            reelgoodLink: "https://reelgood.com/movie/your-name-2016",
-            imdbID: "tt5311514",
-        },
-    },
-    {
-        name: "Free Guy",
-        id: "free",
-        link: null,
-        info: {
-            service: '',
-            studio: '',
-            location: "Coming Soon",
-            description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
-            summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
-        },
-        style: {
-            color: '599DAA',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: null,
-            reelgoodLink: "https://reelgood.com/movie/free-guy-2020",
-            imdbID: "tt6264654",
         },
     },
     {
@@ -2069,6 +2049,52 @@ const movieData8 = [
     },
 ]
 const movieDataArchive = [
+    {
+        name: "Your Name.",
+        id: "yourname",
+        link: null,
+        info: {
+            service: '',
+            studio: '',
+            location: "Download",
+            description: "Animation &#149 Drama &#149 Fantasy &#149 2016",
+            summary: "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
+        },
+        style: {
+            color: '768a8e',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/your-name-2016",
+            imdbID: "tt5311514",
+        },
+    },
+    {
+        name: "Free Guy",
+        id: "free",
+        link: null,
+        info: {
+            service: '',
+            studio: '',
+            location: "Coming Soon",
+            description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
+            summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
+        },
+        style: {
+            color: '599DAA',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/free-guy-2020",
+            imdbID: "tt6264654",
+        },
+    },
     {
         name: 'Fargo',
         id: 'fargo',
