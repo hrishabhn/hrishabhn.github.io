@@ -6,7 +6,7 @@ const bookData0 = [
         link: 'ibooks://',
         author: 'Reed Hastings & Erin Meyer',
         coverType: 'jpg',
-        progress: '48%',
+        progress: '51%',
         format: 'EBook',
     },
     {
