@@ -43,22 +43,22 @@ function mediaPopulate() {
 //     return image
 // }
 
-function scrollTVPreview(i) {
+// function scrollTVPreview(i) {
 
-    for (j = 0; j < movieData[i].length; j++) {
-        var element = document.getElementById(`tv-card-${i}-${j}`).getBoundingClientRect()
+//     for (j = 0; j < movieData[i].length; j++) {
+//         var element = document.getElementById(`tv-card-${i}-${j}`).getBoundingClientRect()
 
-        if ((element.x < 40) && (element.x > 0)){
-            tvPreview(i,j)
-        }
-
-
-        // console.log(element.x)
-    }
+//         if ((element.x < 40) && (element.x > 0)){
+//             tvPreview(i,j)
+//         }
 
 
+//         // console.log(element.x)
+//     }
 
-}
+
+
+// }
 
 function tvPreview(i,j) {
     // console.log(movieData[i][j])
@@ -417,7 +417,7 @@ function movieExpandedHTML(n, tray) {
                             <div class="tv-title ${data[i].style.titleSize}" style="--title: url('TV/title/${data[i].id}.${data[i].style.titleType}');"></div>
                         </div>
                         <a class="tv-play-container" target="_blank"${htmlLink}></a>
-                        <a class="clickable tv-play-icon" onclick="tvPopup(${n},${i})">
+                        <a id="tv-play-icon-${n}-${i}" class="clickable tv-play-icon" onclick="contextShow('tv',[${n},${i}])">
                             <svg class="icon" viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"/><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"/><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"/></svg>
                         </a>
                     </div>
