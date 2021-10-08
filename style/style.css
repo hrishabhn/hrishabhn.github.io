@@ -1707,7 +1707,7 @@ body{
     background-color: var(--dark-layer-1-50);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
-    box-shadow: 0px 0px 30px -5px var(--black-60);
+    box-shadow: 0px 0px 30px -5px var(--black-40);
     border-radius: 12px;
     overflow: hidden;
     transform-origin: bottom left;
