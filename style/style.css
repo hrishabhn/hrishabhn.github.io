@@ -216,7 +216,7 @@ body{
 .hline{
     display: flex;
     flex-shrink: 0;
-    height: 0.5px;
+    height: 1px;
     width: 100%;
 
     background-color: var(--white-20);
@@ -1669,6 +1669,82 @@ body{
     margin-right: 8px;
 }
 
+#context-modal{
+    display: flex;
+    position: fixed;
+
+    top: 0px;
+    left: 0px;
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 550;
+
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--black-40);
+
+    transition: opacity 0.15s;
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+
+}
+#context-modal.visible{
+    /* opacity: 1; */
+    pointer-events: initial;
+    /* transition: opacity 0.25s; */
+
+}
+
+
+#context-menu{
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    /* top: 0; */
+    /* left: 0; */
+    flex-direction: column;
+    width: 150px;
+    background-color: var(--dark-layer-1-50);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px -5px var(--black-60);
+    border-radius: 12px;
+    overflow: hidden;
+    transform-origin: bottom left;
+    scale: 0;
+    transition: scale 0.15s;
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+}
+#context-menu.visible{
+    transition: scale 0.25s;
+    scale: 1;
+}
+#context-menu a{
+    display: inline-flex;
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+
+    padding: 10px 12px;
+    font-size: 12px;
+    text-decoration: none;
+    /* background-color: var(--indigo-dark); */
+}
+#context-menu a:hover{
+    background-color: var(--white-10);
+}
+#context-menu a:active{
+    background-color: var(--white-20);
+}
+#context-menu a .context-icon{
+    display: flex;
+    position: relative;
+    height: 10px;
+    width: 10px;
+
+    /* background-color: khaki; */
+}
+
 
 
 @media screen and (prefers-color-scheme: light) {
@@ -1750,6 +1826,16 @@ body{
     }
     .clickable-system:active{
         filter: brightness(0.85);
+    }
+
+
+
+    #context-menu{
+        background-color: var(--white-60);
+        box-shadow: 0px 0px 30px -5px var(--black-20);
+    }
+    #context-menu a:hover{
+        background-color: var(--black-10);
     }
 }
 
