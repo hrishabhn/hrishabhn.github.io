@@ -37,6 +37,42 @@
 // },
 const movieData0 = [
     {
+        name: 'Memories of the Alhambra',
+        id: 'memories',
+        link: {
+            netflix: '81004280'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 1,
+               yearStart: 2018,
+               yearEnd: 2019,
+               genre: [
+                   'drama',
+                   'sci-fi',
+               ],
+            },
+            summary: "A frantic young man is running scared in Barcelona. CEO Yoo Jin-woo heads to Granada on a quest after getting a strange call while on business in Spain.",
+        },
+        style: {
+            color: 'a6886c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/memories-of-the-alhambra-2018',
+            imdbID: 'tt8236556',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Midnight Mass',
         id: 'midnight',
         link: {
