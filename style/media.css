@@ -767,7 +767,7 @@
         background-color: var(--black-40);
     }
     .tv-play-icon{
-        pointer-events: none;
+        opacity: 1;
     }
 }
 
