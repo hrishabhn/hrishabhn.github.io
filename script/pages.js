@@ -117,8 +117,9 @@ const menuItems = {
     var container = document.getElementById('navbar-menu')
     container.innerHTML = htmlString
 
+    mediaPageSwitch(0)
     menuSwitch(0)
-    // mediaPageSwitch(1)
+    // tvPopup(0,0)
   },
 }
 
