@@ -6,10 +6,15 @@
     "Author": "Reed Hastings & Erin Meyer"
   },
   {
+    "name": "Homo Deus",
+    "id": "homodeus",
+    "image": "https://hrishabhn.github.io/media-image/books/homodeus.jpg",
+    "Author": "Yuval Noah Harari"
+  },
+  {
     "name": "Faster Than Normal",
     "id": "Faster",
     "image": "https://hrishabhn.github.io/media-image/books/faster.jpg",
     "Author": "Peter Shankman"
-  },
-
+  }
 ]
