@@ -684,6 +684,34 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: 'No Time to Die',
+        id: 'noTime',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Coming Soon',
+            // date: '',
+            // weekday: '',            
+            description: 'Action &#149 Spy &#149 2021',
+            summary: 'James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.',
+        },
+        style: {
+            color: '3c4749',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/no-time-to-die-2020',
+            imdbID: 'tt2382320',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Lo and Behold: Reveries of the Connected World',
         id: 'loAndBehold',
         link: {
