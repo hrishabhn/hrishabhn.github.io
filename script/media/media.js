@@ -25,6 +25,7 @@ function mediaPopulate() {
     movieExpandedHTML(6,'soon-tray')
     movieHTML(7, 'up-to-date-tray')
     movieHTML(8, 'rewatch-tray-2')
+    movieExpandedHTML(9,'recent-movie-tray')
 
     // tvPreview(0,0)
     // mediaPageSwitch(0)

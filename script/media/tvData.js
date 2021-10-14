@@ -684,34 +684,6 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
-        name: 'No Time to Die',
-        id: 'noTime',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Coming Soon',
-            // date: '',
-            // weekday: '',            
-            description: 'Action &#149 Spy &#149 2021',
-            summary: 'James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.',
-        },
-        style: {
-            color: '3c4749',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/movie/no-time-to-die-2020',
-            imdbID: 'tt2382320',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Lo and Behold: Reveries of the Connected World',
         id: 'loAndBehold',
         link: {
@@ -1302,24 +1274,35 @@ const movieData6 = [
     {
         name: 'Fairfax',
         id: 'fairfax',
-        // link: 'watchlink',
+        link: {
+            primeVideo: 'B09HSV9MHL'
+        },
         info: {
             service: 'prime',
             studio: 'prime',
             location: 'Prime Video',
             date: 'Oct 29, 2021',
-            description: 'Animation &#149 Comedy &#149 1 Season &#149 2021 - Present',
+            // weekday: '',
+            desc: {
+               seasons: 1,
+               yearStart: 2021,
+               yearEnd: null,
+               genre: [
+                   'animation',
+                   'comedy',
+               ],
+            },
             summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
         },
         style: {
-            color: '0B6F38',
-            posterType: 'jpg',
-            // titleType: 'png',
-            // titleSize: 'wide',
+            color: 'dedccc',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
         },
         apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
+            tvTimeID: '382466',
+            reelgoodLink: 'https://reelgood.com/show/fairfax-2021',
             imdbID: 'tt7492014',
             // subReddit: 'subreddit',
         },
@@ -2112,6 +2095,85 @@ const movieData8 = [
         },
     },
 ]
+const movieData9 = [
+
+    {
+        name: 'No Time to Die',
+        id: 'noTime',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Coming Soon',
+            // date: '',
+            // weekday: '',            
+            description: 'Action &#149 Spy &#149 2021',
+            summary: 'James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.',
+        },
+        style: {
+            color: '3c4749',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/no-time-to-die-2020',
+            imdbID: 'tt2382320',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'This is the End',
+        id: 'theend',
+        // link: 'watchlink',
+        info: {
+            service: '',
+            studio: '',
+            location: 'Starz',
+            description: 'Comedy &#149 2013',
+            summary: "Six Los Angeles celebrities are stuck in James Franco's house after a series of devastating events just destroyed the city. Inside, the group not only have to face the apocalypse, but themselves.",
+        },
+        style: {
+            color: '3b2420',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/movie/this-is-the-end-2013',
+            imdbID: 'tt1245492',
+            // subReddit: null,
+        },
+    },
+    {
+        name: "Shang-Chi",
+        id: "shang",
+        link: null,
+        info: {
+            service: '',
+            studio: '',
+            location: "Disney+",
+            description: "Action &#149 Adventure &#149 Fantasy &#149 2021",
+            summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+        },
+        style: {
+            color: '4b3831',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/shangchi-and-the-legend-of-the-ten-rings-2021",
+            imdbID: 'tt9376612',
+        },
+    },
+]
+
 const movieDataArchive = [
     {
         name: "Your Name.",
@@ -2183,53 +2245,6 @@ const movieDataArchive = [
             // subReddit: 'subreddit',
         },
     },
-    {
-        name: 'This is the End',
-        id: 'theend',
-        // link: 'watchlink',
-        info: {
-            service: '',
-            studio: '',
-            location: 'Starz',
-            description: 'Comedy &#149 2013',
-            summary: "Six Los Angeles celebrities are stuck in James Franco's house after a series of devastating events just destroyed the city. Inside, the group not only have to face the apocalypse, but themselves.",
-        },
-        style: {
-            color: '3b2420',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/movie/this-is-the-end-2013',
-            imdbID: 'tt1245492',
-            // subReddit: null,
-        },
-    },
-    {
-        name: "Shang-Chi",
-        id: "shang",
-        link: null,
-        info: {
-            service: '',
-            studio: '',
-            location: "Disney+",
-            description: "Action &#149 Adventure &#149 Fantasy &#149 2021",
-            summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
-        },
-        style: {
-            color: '4b3831',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: null,
-            reelgoodLink: "https://reelgood.com/movie/shangchi-and-the-legend-of-the-ten-rings-2021",
-            imdbID: 'tt9376612',
-        },
-    },
 ]
 
 const movieData = [
@@ -2242,4 +2257,5 @@ const movieData = [
     movieData6,
     movieData7,
     movieData8,
+    movieData9,
 ]
