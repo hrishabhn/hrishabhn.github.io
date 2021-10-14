@@ -66,7 +66,7 @@ const movieData0 = [
             titleSize: 'wide',
         },
         apps: {
-            // tvTimeID: 'identifier',
+            tvTimeID: '348488',
             reelgoodLink: 'https://reelgood.com/show/memories-of-the-alhambra-2018',
             imdbID: 'tt8236556',
             // subReddit: 'subreddit',
@@ -837,39 +837,87 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
-        name: 'The Witcher',
-        id: 'witcher',
-        link: {
-            netflix: '80189685'
-        },
+        name: 'Dopesick',
+        id: 'dopesick',
+        link: 'https://www.hulu.com/series/dopesick-227de06a-d3d4-42e0-9df1-bb5495e1738d',
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
             // date: '',
-            // weekday: '',
+            weekday: 'Wednesdays',
             desc: {
                seasons: 1,
-               yearStart: 2019,
+               yearStart: 2021,
                yearEnd: null,
                genre: [
-                   'action',
-                   'adventure',
-                   'fantasy',
+                   'drama',
                ],
             },
-            summary: "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+            summary: "From Executive Producer Danny Strong and starring and executive produced by Michael Keaton, “Dopesick” examines how one company triggered the worst drug epidemic in American history. The series takes viewers to the epicenter of America’s struggle with opioid addiction, from the boardrooms of Big Pharma, to a distressed Virginia mining community, to the hallways of the DEA. Defying all the odds, heroes will emerge in an intense and thrilling ride to take down the craven corporate forces behind this national crisis and their allies. The limited series is inspired by the New York Times bestselling book by Beth Macy.",
         },
         style: {
-            color: '515d63',
+            color: '339999',
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
         },
         apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/the-witcher-2020',
-            imdbID: 'tt5180504',
+            tvTimeID: '390716',
+            reelgoodLink: 'https://reelgood.com/show/dopesick-2021',
+            imdbID: 'tt9174558',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'The Spy',
+        id: 'spy',
+        link: {
+            netflix: '80178151'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            description: 'Drama &#149 1 Season &#149 2019',
+            summary: "In the 1960s, Israeli clerk-turned-secret agent Eli Cohen goes deep undercover inside Syria on a perilous, years-long mission to spy for Mossad.",
+        },
+        style: {
+            color: '7f6b57',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '368109',
+            reelgoodLink: 'https://reelgood.com/show/the-spy-2019',
+            imdbID: 'tt5952634',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Chernobyl',
+        id: 'chernobyl',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'hbo',
+            // studio: '',
+            location: 'HBO Max',
+            description: 'History &#149 Thriller &#149 1 Season &#149 2019',
+            summary: "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+        },
+        style: {
+            color: '86a097',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '360893',
+            reelgoodLink: 'https://reelgood.com/show/chernobyl-2019',
+            imdbID: 'tt7366338',
             // subReddit: 'subreddit',
         },
     },
@@ -905,6 +953,115 @@ const movieData4 = [
             // tvTimeID: 'identifier',
             reelgoodLink: 'https://reelgood.com/show/vikings-2013',
             imdbID: 'tt2306299',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Ghosts',
+        id: 'ghosts',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 3,
+               yearStart: 2019,
+               yearEnd: null,
+               genre: [
+                   'comedy',
+                   'fantasy',
+               ],
+            },
+            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
+        },
+        style: {
+            color: '513d35',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: 'tt8594324',
+            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Succession',
+        id: 'succession',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 2,
+               yearStart: 2018,
+               yearEnd: null,
+               genre: [
+                   'comedy',
+                   'drama',
+               ],
+            },
+            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
+        },
+        style: {
+            color: '43332d',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/succession-2018',
+            imdbID: 'tt7660850',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'The Witcher',
+        id: 'witcher',
+        link: {
+            netflix: '80189685'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 1,
+               yearStart: 2019,
+               yearEnd: null,
+               genre: [
+                   'action',
+                   'adventure',
+                   'fantasy',
+               ],
+            },
+            summary: "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+        },
+        style: {
+            color: '515d63',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-witcher-2020',
+            imdbID: 'tt5180504',
             // subReddit: 'subreddit',
         },
     },
@@ -1030,58 +1187,6 @@ const movieData4 = [
             reelgoodLink: 'https://reelgood.com/show/y-the-last-man-2021',
             imdbID: "tt8042500",
             subReddit: 'YTheLastMan',
-        },
-    },
-    {
-        name: 'The Spy',
-        id: 'spy',
-        link: {
-            netflix: '80178151'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            description: 'Drama &#149 1 Season &#149 2019',
-            summary: "In the 1960s, Israeli clerk-turned-secret agent Eli Cohen goes deep undercover inside Syria on a perilous, years-long mission to spy for Mossad.",
-        },
-        style: {
-            color: '7f6b57',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: '368109',
-            reelgoodLink: 'https://reelgood.com/show/the-spy-2019',
-            imdbID: 'tt5952634',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Chernobyl',
-        id: 'chernobyl',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'hbo',
-            // studio: '',
-            location: 'HBO Max',
-            description: 'History &#149 Thriller &#149 1 Season &#149 2019',
-            summary: "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
-        },
-        style: {
-            color: '86a097',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '360893',
-            reelgoodLink: 'https://reelgood.com/show/chernobyl-2019',
-            imdbID: 'tt7366338',
-            // subReddit: 'subreddit',
         },
     },
     {
