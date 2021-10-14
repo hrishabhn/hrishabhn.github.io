@@ -10,6 +10,17 @@ const bookData0 = [
         format: 'EBook',
     },
     {
+        name: 'Homo Deus',
+        id: 'homodeus',
+        link: {
+            audible: 'B01N4DCBK6',
+        },
+        author: 'Yuval Noah Harari',
+        coverType: 'jpg',
+        progress: '7h 22m left',
+        format: 'AudioBook',
+    },
+    {
         name: 'Faster Than Normal',
         id: 'faster',
         // link: 'audible://view?section=discover&asin=B0763VPQF6',
@@ -21,6 +32,9 @@ const bookData0 = [
         progress: '3h 16m left',
         format: 'AudioBook',
     },
+]
+
+const bookData1 = [
     {
         name: '12 Rules for Life',
         id: '12rules',
@@ -39,9 +53,6 @@ const bookData0 = [
         progress: '4%',
         format: 'EBook',
     },
-]
-
-const bookData1 = [
     {
         name: 'The Ride of a Lifetime',
         id: 'ride',
@@ -51,17 +62,6 @@ const bookData1 = [
         author: 'Robert Iger',
         coverType: 'jpg',
         progress: '4h 39m left',
-        format: 'AudioBook',
-    },
-    {
-        name: 'Homo Deus',
-        id: 'homodeus',
-        link: {
-            audible: 'B01N4DCBK6',
-        },
-        author: 'Yuval Noah Harari',
-        coverType: 'jpg',
-        progress: '7h 22m left',
         format: 'AudioBook',
     },
     {
