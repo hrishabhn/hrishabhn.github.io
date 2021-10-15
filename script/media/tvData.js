@@ -683,6 +683,31 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: 'Zindagi Na Milegi Dobara',
+        id: 'zindagi',
+        link: {
+            netflix: '70202336'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            description: 'Drama &#149 Romance &#149 2011',
+            summary: "Three friends on an adventurous road trip/bachelor party in Spain learn some lessons about themselves and each other that will change them forever.",
+        },
+        style: {
+            color: '313B47',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/zindagi-na-milegi-dobara-2011',
+            imdbID: 'tt1562872',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Lo and Behold: Reveries of the Connected World',
         id: 'loAndBehold',
         link: {

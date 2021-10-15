@@ -444,10 +444,6 @@ const userWidget = {
 
 const countdownData = [
     {
-        name: 'Utah',
-        date: 'Oct 8, 2021 08:50:00',
-    },
-    {
         name: 'Halloween',
         date: 'Oct 31, 2021',
     },
@@ -499,6 +495,10 @@ const countdownData = [
     // {
     //     name: 'End of Exams',
     //     date: 'Oct 1, 2021 13:30:00',
+    // },
+    // {
+    //     name: 'Utah',
+    //     date: 'Oct 8, 2021 08:50:00',
     // },
 ]
 
