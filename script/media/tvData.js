@@ -343,40 +343,6 @@ const movieData1 = [
         },
     },
     {
-        name: "Ted Lasso",
-        id: "ted",
-        link: null,
-        info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: "Apple TV+",
-            weekday: 'Fridays',
-            desc: {
-                seasons: 2,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'drama',
-                    'sport',
-                ],
-            },
-            summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-        },
-        style: {
-            color: '35465e',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: "383203",
-            reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
-            imdbID: "tt10986410",
-            subReddit: "TedLasso",
-        },
-    },
-    {
         name: "What We Do in the Shadows",
         id: "shadows",
         link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
@@ -1440,6 +1406,43 @@ const movieData6 = [
         },
     },
     {
+        name: 'The Expanse',
+        id: 'expanse',
+        link: {
+            primeVideo: 'B08MMJTJSH',
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            date: 'Dec 10, 2021',
+            // weekday: '',
+            desc: {
+               seasons: 6,
+               yearStart: 2015,
+               yearEnd: null,
+               genre: [
+                   'action',
+                   'adventure',
+                   'sci-fi',
+               ],
+            },
+            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
+        },
+        style: {
+            color: '466A83',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '280619',
+            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
+            imdbID: 'tt3230854',
+            subReddit: 'TheExpanse',
+        },
+    },
+    {
         name: "The Mandalorian",
         id: "mando",
         link: null,
@@ -1462,6 +1465,41 @@ const movieData6 = [
             reelgoodLink: "https://reelgood.com/show/the-mandalorian-2019",
             imdbID: 'tt8111088',
             subReddit: 'TheMandalorianTV',
+        },
+    },
+    {
+        name: 'Attack on Titan',
+        id: 'attack',
+        link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            date: 'Jan 9, 2022',
+            // weekday: '',
+            desc: {
+               seasons: 4,
+               yearStart: 2013,
+               yearEnd: 2022,
+               genre: [
+                   'action',
+                   'adventure',
+                   'animation',
+               ],
+            },
+            summary: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+        },
+        style: {
+            color: 'a98264',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '267440',
+            reelgoodLink: 'https://reelgood.com/show/attack-on-titan-2013',
+            imdbID: 'tt2560140',
+            subReddit: 'attackontitan',
         },
     },
     {
@@ -1559,40 +1597,6 @@ const movieData7 = [
         },
     },
     {
-        name: 'Attack on Titan',
-        id: 'attack',
-        link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
-        info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
-            // date: '',
-            // weekday: '',
-            // desc: {
-            // //    seasons: 1,
-            // //    yearStart: 2021,
-            // //    yearEnd: null,
-            // //    genre: [
-            // //        'crime',
-            // //        'comedy',
-            // //    ],
-            // },
-            // summary: "summary",
-        },
-        style: {
-            // color: '000000',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'The Boys',
         id: 'boys',
         // link: 'watchlink',
@@ -1650,32 +1654,6 @@ const movieData7 = [
             // reelgoodLink: 'link',
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: "The Expanse",
-        id: "expanse",
-        link: {
-            primeVideo: 'B08MMJTJSH',
-        },
-        info: {
-            service: '',
-            studio: '',
-            location: "Prime Video",
-            description: "Action &#149 Adventure &#149 Sci-Fi &#149 6 Seasons &#149 2015 - Present",
-            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
-        },
-        style: {
-            color: '466A83',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: "280619",
-            reelgoodLink: "https://reelgood.com/show/the-expanse-2015",
-            imdbID: "tt3230854",
-            subReddit: 'TheExpanse',
         },
     },
     {
@@ -2075,7 +2053,40 @@ const movieData7 = [
             subReddit: 'squidgame',
         },
     },
-
+    {
+        name: "Ted Lasso",
+        id: "ted",
+        link: null,
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: "Apple TV+",
+            weekday: 'Fridays',
+            desc: {
+                seasons: 2,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'drama',
+                    'sport',
+                ],
+            },
+            summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+        },
+        style: {
+            color: '35465e',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: "383203",
+            reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
+            imdbID: "tt10986410",
+            subReddit: "TedLasso",
+        },
+    },
 ]
 const movieData8 = [
     {
