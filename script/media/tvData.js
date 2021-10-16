@@ -683,6 +683,30 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: 'Dil Chahta Hai',
+        id: 'dil',
+        link: {
+            netflix: '60021525'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            description: 'Comedy &#149 Drama &#149 2001',
+            summary: "Inseparable childhood friends Akash, Sameer and Siddharth are just out of college. Nothing comes between them -- until they each fall in love.",
+        },
+        style: {
+            color: 'a5a39e',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/dil-chahta-hai-2001',
+            imdbID: 'tt0292490',
+        },
+    },
+    {
         name: 'Lo and Behold: Reveries of the Connected World',
         id: 'loAndBehold',
         link: {

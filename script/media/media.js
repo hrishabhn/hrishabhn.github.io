@@ -1,4 +1,6 @@
-var movieBigIndex
+var movieBigI
+var movieBigJ
+
 
 
 function mediaPopulate() {
@@ -12,10 +14,13 @@ function mediaPopulate() {
     podBigPopulate(2)
     podBigPopulate(3)
 
-    movieBigIndex = Math.floor(Math.random() * movieData0.length)
-    console.log(movieBigIndex)
+    const randomLists = [0,3,4]
 
-    movieBig(0,movieBigIndex)
+    movieBigI = randomLists[Math.floor(Math.random() * randomLists.length)]
+    movieBigJ = Math.floor(Math.random() * movieData[movieBigI].length)
+    // console.log(randomLists[movieBigI])
+
+    movieBig(movieBigI,movieBigJ)
     movieExpandedHTML(0,'up-next-tray')
     movieExpandedHTML(1,'weekly-tray')
     movieHTML(2, 'my-list-tray-2')
@@ -388,7 +393,7 @@ function movieExpandedHTML(n, tray) {
     htmlString = appendSpacer(htmlString, 35)
 
     for (let i = 0; i < dataLength; i++) {
-        if ((n != 0) || (i != movieBigIndex)) {
+        if ((n != movieBigI) || (i != movieBigJ)) {
             if ((data[i].link !== null) && (data[i].link !== undefined)) {
                 var htmlLink = `href="${processLink(data[i].link)}"`
             } else {
