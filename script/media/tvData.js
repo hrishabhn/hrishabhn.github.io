@@ -683,31 +683,6 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
-        name: 'Zindagi Na Milegi Dobara',
-        id: 'zindagi',
-        link: {
-            netflix: '70202336'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            description: 'Drama &#149 Romance &#149 2011',
-            summary: "Three friends on an adventurous road trip/bachelor party in Spain learn some lessons about themselves and each other that will change them forever.",
-        },
-        style: {
-            color: '313B47',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tall',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/zindagi-na-milegi-dobara-2011',
-            imdbID: 'tt1562872',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Lo and Behold: Reveries of the Connected World',
         id: 'loAndBehold',
         link: {
@@ -731,30 +706,6 @@ const movieData3 = [
             reelgoodLink: 'https://reelgood.com/movie/lo-and-behold-reveries-of-the-connected-world-2016',
             imdbID: 'tt5275828',
             // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Eternals',
-        id: 'eternals',
-        // link: 'watchlink',
-        info: {
-            service: '',
-            studio: '',
-            location: 'Coming Soon',
-            description: 'Action &#149 Adventure &#149 Drama &#149 2021',
-            summary: "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
-        },
-        style: {
-            color: '645542',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/movie/eternals-2021',
-            imdbID: 'tt9032400',
-            // subReddit: null,
         },
     },
     {
@@ -1401,6 +1352,31 @@ const movieData6 = [
             reelgoodLink: 'https://reelgood.com/show/fairfax-2021',
             imdbID: 'tt7492014',
             // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Eternals',
+        id: 'eternals',
+        // link: 'watchlink',
+        info: {
+            service: '',
+            studio: '',
+            location: 'Coming Soon',
+            date: 'Nov 5, 2021',
+            description: 'Action &#149 Adventure &#149 Drama &#149 2021',
+            summary: "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
+        },
+        style: {
+            color: '645542',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/movie/eternals-2021',
+            imdbID: 'tt9032400',
+            // subReddit: null,
         },
     },
     {
@@ -2237,7 +2213,31 @@ const movieData8 = [
     },
 ]
 const movieData9 = [
-
+    {
+        name: 'Zindagi Na Milegi Dobara',
+        id: 'zindagi',
+        link: {
+            netflix: '70202336'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            description: 'Drama &#149 Romance &#149 2011',
+            summary: "Three friends on an adventurous road trip/bachelor party in Spain learn some lessons about themselves and each other that will change them forever.",
+        },
+        style: {
+            color: '313B47',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/zindagi-na-milegi-dobara-2011',
+            imdbID: 'tt1562872',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'No Time to Die',
         id: 'noTime',
@@ -2264,6 +2264,29 @@ const movieData9 = [
             reelgoodLink: 'https://reelgood.com/movie/no-time-to-die-2020',
             imdbID: 'tt2382320',
             // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: "Free Guy",
+        id: "free",
+        link: null,
+        info: {
+            service: '',
+            studio: '',
+            location: "Coming Soon",
+            description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
+            summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
+        },
+        style: {
+            color: '599DAA',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "wide",
+        },
+        apps: {
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/free-guy-2020",
+            imdbID: "tt6264654",
         },
     },
     {
@@ -2337,29 +2360,6 @@ const movieDataArchive = [
             tvTimeID: null,
             reelgoodLink: "https://reelgood.com/movie/your-name-2016",
             imdbID: "tt5311514",
-        },
-    },
-    {
-        name: "Free Guy",
-        id: "free",
-        link: null,
-        info: {
-            service: '',
-            studio: '',
-            location: "Coming Soon",
-            description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
-            summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
-        },
-        style: {
-            color: '599DAA',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "wide",
-        },
-        apps: {
-            tvTimeID: null,
-            reelgoodLink: "https://reelgood.com/movie/free-guy-2020",
-            imdbID: "tt6264654",
         },
     },
     {
