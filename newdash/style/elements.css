@@ -120,14 +120,20 @@
     flex-direction: row;
     justify-content: flex-start;
 
+
     width: calc(100% - 80px);
     padding: 10px 12px;
 
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
 
     text-decoration: none;
     border-radius: 10px;
+}
+
+#search .icon{
+    width: 13px;
+    height: 13px;
 }
 
 .card-shadow{
