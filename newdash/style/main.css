@@ -257,10 +257,11 @@ svg{
         background-color: #000;
     }
     #header{
-        height: 120px;
+        height: 140px;
         padding-left: 20px;
 
         font-size: 30px;
+        font-weight: 700;
     }
     #leftbar{
         flex-direction: row;
@@ -273,10 +274,10 @@ svg{
     }
     #main{
         position: fixed;
-        top: 120px;
+        top: 140px;
         left: 0px;
 
-        height: calc(100% - 120px);
+        height: calc(100% - 140px);
         width: 100%;
         /* border-radius: 10px; */
     }
