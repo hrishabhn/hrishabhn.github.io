@@ -419,9 +419,9 @@ const movieData2 = [
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
+            service: 'hbo',
             // studio: 'studio',
-            location: 'Downloaded',
+            location: 'HBO Max',
             // date: '',
             // weekday: '',
             desc: {
@@ -511,8 +511,8 @@ const movieData2 = [
         id: "whatif",
         link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
         info: {
-            service: '',
-            studio: '',
+            service: 'disney',
+            studio: 'disney',
             location: "Disney+",
             description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
             summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
@@ -538,7 +538,7 @@ const movieData2 = [
         },
         info: {
             service: 'netflix',
-            studio: '',
+            studio: 'netflix',
             location: "Netflix",
             description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
             summary: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
@@ -592,7 +592,7 @@ const movieData2 = [
         },
         info: {
             service: 'netflix',
-            studio: '',
+            studio: 'netflix',
             location: "Netflix",
             description: "Action &#149 Crime &#149 Mystery &#149 3 Seasons &#149 2017 - Present",
             summary: "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
@@ -615,7 +615,7 @@ const movieData2 = [
         link: 'https://www.netflix.com/title/80997085',
         info: {
             service: 'netflix',
-            studio: '',
+            studio: 'netflix',
             location: 'Netflix',
             description: 'Crime &#149 Drama &#149 3 Seasons &#149 2018 - Present',
             summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
@@ -662,7 +662,7 @@ const movieData2 = [
         link: 'https://www.netflix.com/title/80174608',
         info: {
             service: 'netflix',
-            studio: '',
+            studio: 'netflix',
             location: "Netflix",
             description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
             summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
