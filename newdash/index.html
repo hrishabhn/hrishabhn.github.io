@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name='viewport' content='viewport-fit=cover, height=device-height, width=device-width, initial-scale=1.0, user-scalable=no'>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/color.css">
+    <link rel="stylesheet" href="style/brand.css">
+    <link rel="stylesheet" href="style/elements.css">
+    <link rel="stylesheet" href="style/apps.css">
+
+    <link rel="stylesheet" href="style/video.css">
+
+    <link rel="stylesheet" href="style/leftbar.css">
+    <link rel="stylesheet" href="style/rightbar.css">
+
+
+    <link rel="stylesheet" href="style/devices.css">
+    <!-- <link rel="manifest" href="manifest.json"> -->
+
+    <!-- <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/home.png" />
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="images/launch-12mini.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 1194px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait" href="images/launch-ipad.png"> -->
+
+    <meta name="mobile-wep-app-capable" content="yes"></meta>
+    <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
+    
+    <!-- <meta id="theme" name="theme-color" content="#e50914"> -->
+
+    <title id="title-page">Dashboard</title>
+
+    <!-- <script src="app.js"></script> -->
+</head>
+<body id="body" ontouchstart="" onload="loadApp()">
+    <div id="header" class="">Dashboard</div>
+    <div id="leftbar" class=""></div>
+    <div id="rightbar" class="layer2">
+        <div class="widget-card ">
+            <p class="title">User</p>
+            <div class="hline"></div>
+            <p class="info">Hrishabh</p>
+        </div>
+        <div class="widget-card">
+            <p class="title">Widget 2</p>
+        </div>
+    </div>
+    <div id="main" class="">
+        <div class="page">
+            
+<!-- 
+            <div class="hstack">
+                <div class="tv-poster" style="--poster: url(media-image/TV/background/dopesick.webp);">
+                    <div class="gradient" style="--col: #00000000;"></div>
+                    <div class="title wide" style="--title: url(media-image/TV/title/dopesick.png);"></div>
+                    <a class="play"></a>
+                    <a class="more">
+                        <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
+                    </a>
+                </div>
+                <div class="spacer-x" style="--size: 15px;"></div>
+
+                <a class="tv-mid-info clickable" onclick="">
+                    <p class="desc">drama</p>
+                    <div class="spacer-x" style="--size: 4px;"></div>
+                    <p class="title">Dopesick</p>
+                    <div class="spacer-x" style="--size: 2px;"></div>
+                    <p class="summary">From Executive Producer Danny Strong and starring and executive produced by Michael Keaton, â€œDopesickâ€ examines how one company triggered the worst drug epidemic in American history. The series takes viewers to the epicenter of Americaâ€™s struggle with opioid addiction, from the boardrooms of Big Pharma, to a distressed Virginia mining community, to the hallways of the DEA. Defying all the odds, heroes will emerge in an intense and thrilling ride to take down the craven corporate forces behind this national crisis and their allies. The limited series is inspired by the New York Times bestselling book by Beth Macy.</p>
+                    <div class="spacer-x" style="--size: 4px;"></div>
+                    <p class="desc">Wednesdays</p>
+                </a>
+            </div> -->
+
+
+
+
+
+            <!-- <div id="tv-big-card" class="card-shadow">
+                <div class="gradient"></div>
+                <div class="button-tray">
+                    <a id="tv-big-play" class="clickable">Watch</a>
+                    <div class="spacer-x" style="--size: 10px;"></div>
+                    <a id="tv-big-more" class="clickable"><svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg></a>
+                </div>
+                <div id="tv-big-title"></div>
+                <div id="tv-big-service"></div>
+            </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="bookmark-tray layer-1">
+                <div class="title">Productivity</div>
+                <div class="spacer-x" style="--size: 10px;"></div>
+                <div class="hline"></div>
+                <div class="spacer-x" style="--size: 10px;"></div>
+                <div class="hscroll">
+                    <div class="spacer-x" style="--size: 25px;"></div>
+                    <div class="bookmark-container ">
+                        <div class="vstack">
+                            <a class="icon outlook" href="ms-outlook://" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="1.5190010070800781 12.5775146484375 497.6650085449219 497.6650085449219"><path d="M432.828 23.637h-276.48c-18.325 0-33.176 14.851-33.176 33.18v22.117h342.832V56.816c0-18.328-14.852-33.18-33.176-33.18zm43.574 470.015c-6.304 3.54-13.714 5.532-21.457 5.532H134.23c-24.44 0-44.238-19.797-44.238-44.239V388.59h99.531c12.055 0 23.227-3.871 32.293-10.504zm22.782-170.53v131.823c0 7.965-2.102 15.485-5.973 22.008l-173.852-78.851zM366.473 101.05h99.53v77.414h-99.53zm-121.653 0h99.535v77.414H244.82zm121.653 99.535h99.53V278h-99.53zm-121.653 0h99.535V278H244.82zm99.535 99.531v63.59l-52.53 21.898-47.005-21.343v-64.145zm121.649 0v12.828l-99.531 41.582v-54.41zm-243.3-199.066v33.18c-9.18-6.97-20.68-11.06-33.18-11.06h-66.352v-22.12zm-33.18 265.422H34.694c-18.324 0-33.175-14.852-33.175-33.176V178.465c0-18.324 14.851-33.176 33.175-33.176h154.828c18.329 0 33.18 14.852 33.18 33.176v154.832c0 18.324-14.851 33.176-33.18 33.176zm-77.415-176.95c-38.882 0-62.304 29.707-62.304 66.356 0 36.652 23.332 66.355 62.304 66.355 38.985 0 62.309-29.703 62.309-66.343 0-36.66-23.422-66.368-62.309-66.368zm0 110.317c-22.062 0-35.242-19.672-35.242-43.95 0-24.273 13.246-43.949 35.242-43.949 22 0 35.258 19.688 35.258 43.95 0 24.265-13.203 43.949-35.258 43.949zm0 0"></path></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>Outlook</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                    <div class="bookmark-container only-desktop">
+                        <div class="vstack">
+                            <a class="icon onedrive" href="https://purdue0-my.sharepoint.com" target="_self"><svg data-bbox="0 9.594 50.023 30.407" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"> <g> <path d="M27.406 9.594c-1.816 0-3.379.355-4.75 1.094-1.418.707-2.996 2.019-3.75 3.093-.281.375-.543.719-.718.938-2.086-.79-4.56-.89-6.282-.281-3.539 1.14-6.11 4.582-6.219 8.374 0 .215-.011.422-.03.594-.036.012-.087.02-.126.032-2.215.582-3.992 1.968-4.906 3.843C-.012 28.2 0 28.785 0 30.406c0 1.746-.004 2.153.594 3.219.93 1.973 2.976 3.695 4.937 4.156.516.145 2.801.196 4.969.219-.969-1.543-1.5-3.438-1.5-5.594 0-1.484.156-2.37.625-3.468 1.008-2.442 3.371-4.317 6.375-5.125.059-.192.113-.407.188-.594 1.015-2.899 2.917-5.309 5.093-6.469l.032-.031h.03c2.063-1.032 3.321-1.313 5.657-1.313 3.441 0 5.559.864 7.938 3.281.886-.23 1.78-.375 2.687-.375.309 0 .61.036.906.063-.09-.297-.18-.602-.281-.906-1.668-4.785-5.922-7.875-10.844-7.875zM27 17.406c-2.016 0-3 .203-4.781 1.094-1.754.934-3.309 3-4.157 5.438-.199.496-.347 1.039-.375 1.437-.113.05-.304.145-.687.25-2.633.57-4.715 2.082-5.531 4.063-.367.863-.469 1.511-.469 2.718 0 3.828 1.89 6.547 5.219 7.469.039.012.082.023.125.031.77.11 3.86.094 15.343.094H46a.94.94 0 0 0 .438-.094l.624-.312c1.657-.828 2.688-2.574 2.938-4.938.23-3.351-1.242-5.668-4.281-6.718l-.282-.094-.03-.532c-.36-4.046-3.637-7-7.782-7-.996 0-1.98.192-2.938.532l-.312.093-.656-.625C31.625 18.105 30 17.407 27 17.407z"></path></g></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>OneDrive</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                    <div class="bookmark-container hidden-desktop">
+                        <div class="vstack">
+                            <a class="icon onedrive" href="ms-onedrive://" target="_self"><svg data-bbox="0 9.594 50.023 30.407" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"> <g> <path d="M27.406 9.594c-1.816 0-3.379.355-4.75 1.094-1.418.707-2.996 2.019-3.75 3.093-.281.375-.543.719-.718.938-2.086-.79-4.56-.89-6.282-.281-3.539 1.14-6.11 4.582-6.219 8.374 0 .215-.011.422-.03.594-.036.012-.087.02-.126.032-2.215.582-3.992 1.968-4.906 3.843C-.012 28.2 0 28.785 0 30.406c0 1.746-.004 2.153.594 3.219.93 1.973 2.976 3.695 4.937 4.156.516.145 2.801.196 4.969.219-.969-1.543-1.5-3.438-1.5-5.594 0-1.484.156-2.37.625-3.468 1.008-2.442 3.371-4.317 6.375-5.125.059-.192.113-.407.188-.594 1.015-2.899 2.917-5.309 5.093-6.469l.032-.031h.03c2.063-1.032 3.321-1.313 5.657-1.313 3.441 0 5.559.864 7.938 3.281.886-.23 1.78-.375 2.687-.375.309 0 .61.036.906.063-.09-.297-.18-.602-.281-.906-1.668-4.785-5.922-7.875-10.844-7.875zM27 17.406c-2.016 0-3 .203-4.781 1.094-1.754.934-3.309 3-4.157 5.438-.199.496-.347 1.039-.375 1.437-.113.05-.304.145-.687.25-2.633.57-4.715 2.082-5.531 4.063-.367.863-.469 1.511-.469 2.718 0 3.828 1.89 6.547 5.219 7.469.039.012.082.023.125.031.77.11 3.86.094 15.343.094H46a.94.94 0 0 0 .438-.094l.624-.312c1.657-.828 2.688-2.574 2.938-4.938.23-3.351-1.242-5.668-4.281-6.718l-.282-.094-.03-.532c-.36-4.046-3.637-7-7.782-7-.996 0-1.98.192-2.938.532l-.312.093-.656-.625C31.625 18.105 30 17.407 27 17.407z"></path></g></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>OneDrive</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                    <div class="bookmark-container ">
+                        <div class="vstack">
+                            <a class="icon indigo" href="maps://" target="_self"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M135 275l-30 71 30-10 30 10z"></path><path d="M407 0H105C47.103 0 0 47.103 0 105v302c0 57.897 47.103 105 105 105h302c57.897 0 105-47.103 105-105V105C512 47.103 464.897 0 407 0zM74.999 36.282v81.143L35.197 77.623c7.273-18.48 21.67-33.394 39.802-41.341zm90 348.438V482h-60v-97.282C78.538 373.121 60 346.691 60 316c0-30.691 18.538-57.121 44.999-68.718V30h60v217.28C191.46 258.877 210 285.308 210 316s-18.54 57.123-45.001 68.72zm269.378 92.083l-37.451-37.451C382.069 447.416 365.06 452 347 452c-57.897 0-105-47.103-105-105 0-17.607 4.345-34.664 12.631-49.942l-59.633-59.633v-84.853L317.8 275.374c6.939-3.127 13.422-7.307 19.195-12.475L347 253.944l10.004 8.956C370.765 275.217 388.52 282 407 282c3.928 0 7.884-.309 11.757-.918l9.313-1.465 5.359 7.755C445.578 304.954 452 325.573 452 347c0 18.06-4.584 35.068-12.648 49.926l37.451 37.451c-7.621 19.362-23.064 34.805-42.426 42.426zM482 250.512C363.614 243.084 268.916 148.386 261.488 30h75.213c7.111 76.944 68.355 138.188 145.299 145.299v75.213z"></path><path d="M420.677 333H273.323c-.866 4.58-1.323 9.26-1.323 14 0 41.355 33.645 75 75 75s75-33.645 75-75c0-4.74-.457-9.42-1.323-14z"></path></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>Maps</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                    <div class="bookmark-container hidden-mobile">
+                        <div class="vstack">
+                            <a class="icon google-red" href="https://mail.google.com/mail/u/0/#inbox" target="_self"><svg data-bbox="1 7 48 36" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M5.5 7C3.02 7 1 9.02 1 11.5v.426L25 29l24-17.074V11.5C49 9.02 46.98 7 44.5 7zm.852 2h37.293L25 22zM1 14.027V38.5C1 40.98 3.02 43 5.5 43h39c2.48 0 4.5-2.02 4.5-4.5V14.027l-6 4.27V41H7V18.297z"></path></g></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>Gmail</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                    <div class="bookmark-container hidden-mobile">
+                        <div class="vstack">
+                            <a class="icon google-green" href="https://drive.google.com" target="_self"><svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m323.303 31h-133.799c-5.361 0-10.313 2.856-12.993 7.5s-2.681 10.356 0 15l143.042 247.5h168.726l-151.998-262.515c-2.68-4.629-7.632-7.485-12.978-7.485z"></path><path d="m154.034 75.947-152.011 262.538c-2.622 4.512-2.695 10.049-.22 14.648l64.805 120c2.578 4.775 7.544 7.793 12.979 7.866h.22c5.347 0 10.313-2.856 12.993-7.5l145.494-251.757z"></path><path d="m509.88 338.31c-2.695-4.526-7.588-7.31-12.876-7.31h-286.41l-86.678 150h308.284c5.508 0 10.576-3.018 13.198-7.866l64.805-120c2.504-4.658 2.387-10.283-.323-14.824z"></path></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>Google Drive</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                </div>
+            </div> -->
+
+
+<!-- 
+
+            <div class="app-list-tray">
+                <div class="app-list layer1">
+                    <div class="item">Hello</div>
+
+                </div>
+
+
+                <div class="spacer-x" style="--size: 30px;"></div>
+
+                <div class="app-list layer1">
+                    <div class="item">Hello</div>
+
+                </div>
+                <div class="spacer-x" style="--size: 30px;"></div>
+
+
+                <div class="app-list layer1">
+                    <div class="title">Productivity</div>
+                    <div class="spacer-x" style="--size: 10px;"></div>
+                    <div class="hline"></div>
+
+                    <div class="spacer-x" style="--size: 5px;"></div>
+
+                    <a class="item">
+                        <div class="icon chase"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="242.260986328125 0.26698315143585205 54.9830322265625 54.9830322265625"><path d="M261.929.275a1.94 1.94 0 0 0-1.941 1.94V15.82h35.94L279.562.276 261.93.275"/><path d="M297.244 19.937A1.934 1.934 0 0 0 295.303 18H281.7V53.94l15.538-16.375.006-17.629"/><path d="M277.579 55.242c1.07 0 1.939-.87 1.939-1.943V39.697h-35.943l16.37 15.543 17.634.002"/><path d="M242.261 35.582c0 1.073.87 1.947 1.944 1.947h13.6V1.584l-15.541 16.37-.003 17.628"/></svg></div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                        <p>Chase</p>
+                    </a>
+                    <div class="spacer-x" style="--size: 5px;"></div>
+
+                    <a class="item">
+                        <div class="icon google-red"><svg data-bbox="1 7 48 36" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M5.5 7C3.02 7 1 9.02 1 11.5v.426L25 29l24-17.074V11.5C49 9.02 46.98 7 44.5 7zm.852 2h37.293L25 22zM1 14.027V38.5C1 40.98 3.02 43 5.5 43h39c2.48 0 4.5-2.02 4.5-4.5V14.027l-6 4.27V41H7V18.297z" /></g></svg></div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                        <p>Gmail</p>
+                    </a>
+
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+
+<script src="script/load.js"></script>
+<script src="script/apps/appData.js"></script>
+<script src="script/apps/apps.js"></script>
+
+
+<script src="script/media/media.js"></script>
+<script src="script/media/tvData.js"></script>
+<script src="script/media/video.js"></script>
+
+<script src="script/elements.js"></script>
+
+<script src="script/pageData.js"></script>
+</html>

@@ -1,0 +1,56 @@
+.layer0{
+    background-color: var(--dark-layer-0);
+}
+.layer1{
+    background-color: var(--dark-layer-1);
+}
+.layer2{
+    background-color: var(--dark-layer-2);
+}
+.layer3{
+    background-color: var(--dark-layer-3);
+}
+
+
+
+.layer-1{
+    background-color: var(--dark-layer-2);
+}
+@media screen and (prefers-color-scheme: light) {
+    .layer0{
+        background-color: var(--light-layer-0);
+    }
+    .layer1{
+        background-color: var(--light-layer-1);
+    }
+    .layer2{
+        background-color: var(--light-layer-2);
+    }
+    .layer3{
+        background-color: var(--light-layer-3);
+    }
+
+
+
+    .layer-1{
+        background-color: var(--light-layer-0);
+    }
+
+}
+
+
+@media(max-width: 450px){
+    .layer-1{
+        background-color: var(--dark-layer-1);
+    }
+
+
+    @media screen and (prefers-color-scheme: light) {
+
+        .layer-1{
+            background-color: var(--light-layer-0);
+        }
+
+    }
+}
+
