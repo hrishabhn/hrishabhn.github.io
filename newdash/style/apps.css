@@ -48,7 +48,6 @@
 
 .bookmark-tray{
     flex-direction: column;
-    width: calc(100% - 80px);
     border-radius: 10px;
     padding: 10px 0px 15px;
 }
@@ -154,6 +153,14 @@
     font-weight: 400;
 }
 
+
+
+.action{
+    height: 200px;
+    width: 100px;
+
+}
+
 @media screen and (prefers-color-scheme: light) {
     .app-list .item:hover{
         background-color: var(--black-10);
@@ -167,10 +174,6 @@
 
 
 @media(max-width: 450px){
-    .bookmark-tray{
-        width: calc(100% - 40px);
-    }
-
     .app-list-tray{
         flex-direction: column;
         width: 100%;

@@ -215,7 +215,7 @@ function appListRender(content) {
 
 function bookmarkRender(content) {
     var container = document.createElement('div')
-    container.classList = `bookmark-tray layer-1 card-shadow ${content.devices}`
+    container.classList = `bookmark-tray layer-1 card-shadow page-width ${content.devices}`
 
     var title = document.createElement('div')
     title.classList = 'title'
