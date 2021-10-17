@@ -23,6 +23,10 @@
 
     background-color: var(--white-10);
 }
+.hline.list{
+    width: calc(100% - 58px);
+    margin-left: 58px;
+}
 .hline-content{
     flex-shrink: 0;
     height: 1px;
