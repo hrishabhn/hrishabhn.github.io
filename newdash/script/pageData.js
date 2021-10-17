@@ -201,7 +201,7 @@ const pageData3 = {
     info: {
         id: '3',
         type: 'page',
-        name: 'Video',
+        name: 'TV & Movies',
         style: 'red',
         icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 24 24"><path d="M5 6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5zm5 18a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10z"/></svg>',
     },
@@ -530,6 +530,8 @@ function openPage(n) {
 
     document.getElementById(`page-${n}`).classList.remove('hidden')
     document.getElementById(`menu-item-${n}`).classList.add('selected')
+
+    document.getElementById('header').innerHTML = pageData[n].info.name
 
     oldPage = n
 }
