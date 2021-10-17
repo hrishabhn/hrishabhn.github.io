@@ -292,7 +292,7 @@ svg{
             background-color: var(--light-layer-1);
         }
         #leftbar{
-            background-color: var(--light-layer-1-40-40);
+            background-color: var(--light-layer-1-60);
         }
     }
 }
