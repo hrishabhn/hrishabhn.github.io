@@ -181,13 +181,13 @@ function appListRender(content) {
     list.append(title)
     list.append(spacerElement(10))
     list.append(hlineElement())
-    list.append(spacerElement(6))
+    // list.append(spacerElement(6))
 
     for (let i = 0; i < content.data.length; i++) {
         var vstack = document.createElement('div')
         vstack.classList = `vstack ${content.data[i].devices}`
 
-        vstack.append(spacerElement(2))
+        // vstack.append(spacerElement(2))
 
         var button = document.createElement('a')
         button.classList = `item button-text`
@@ -197,11 +197,16 @@ function appListRender(content) {
 
         button.innerHTML = `
         <div class="icon  ${content.data[i].background}">${content.data[i].icon}</div>
-        <div class="spacer-x" style="--size: 10px;"></div>
+        <div class="spacer-x" style="--size: 15px;"></div>
         <p> ${content.data[i].name}</p>
         `
 
         vstack.append(button)
+
+        if (i < content.data.length - 1) {
+            vstack.append(hlineListElement())
+        }
+
         list.append(vstack)
     }
 
