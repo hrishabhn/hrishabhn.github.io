@@ -1,5 +1,5 @@
 function pageDataRender() {
-    for (i = 0; i < pageData.length; i++) {
+    for (let i = 0; i < pageData.length; i++) {
         pageData[i].render()
     }
 
@@ -22,7 +22,7 @@ const pageData0 = {
         {
             type: 'search',
             engine: 'Google',
-            link: 'https://google.com',
+            link: googleLoad(),
             render: function() {
                 return searchElement(this)
             }
