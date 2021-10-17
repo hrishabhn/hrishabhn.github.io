@@ -241,12 +241,13 @@ function pageRender(content,n) {
 
 
     for (let i = 0; i < content.length; i++) {
+        var element = null
 
         if (content[i].type == 'target') {
-            var element = document.createElement('div')
+            element = document.createElement('div')
             element.id = content[i].id
         } else if (content[i].type == 'media-title'){
-            var element = document.createElement('div')
+            element = document.createElement('div')
             element.classList = 'media-title'
             element.innerHTML = content[i].title
         } else if ((content[i].type == 'link-tray') || (content[i].type == 'action-tray')) {
