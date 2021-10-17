@@ -56,6 +56,11 @@ function hlineContentElement() {
     hline.classList = 'hline-content'
     return hline
 }
+function hlineListElement() {
+    var hline = document.createElement('div')
+    hline.classList = 'hline list'
+    return hline
+}
 
 function hscrollElement(child) {
     var hscroll = document.createElement('div')
