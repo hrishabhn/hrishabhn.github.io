@@ -30,6 +30,17 @@
     cursor: default;
 }
 
+.hscroll-media{
+    flex-direction: row;
+    height: fit-content;
+    width: calc(100% - 40px);
+    overflow-x: scroll;
+    justify-content: flex-start;
+    margin: 0px;
+    scroll-snap-type: x mandatory;
+}
+
+
 
 @media screen and (prefers-color-scheme: light) {
     .media-shadow{
@@ -41,5 +52,9 @@
 @media(max-width: 450px){
     .media-card{
         scroll-margin-left: 15px;
+    }
+
+    .hscroll-media{
+        width: 100%;
     }
 }
