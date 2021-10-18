@@ -86,8 +86,8 @@
 .bookmark-container .icon{
     height: 65px;
     width: 65px;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 18px;
+    border-radius: 12px;
     fill: white;
 }
 .bookmark-container .icon.white{
