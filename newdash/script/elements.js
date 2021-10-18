@@ -8,16 +8,16 @@ function scrollEmbed(html,margin) {
     return html
 }
 
-function contentTitleHTML(title) {
-    // var titleHTML = `<div class="content-container"><div class="content-title">${title}</div></div><div class="spacer-15"></div>`
-    var titleHTML = `<div class="content-title">${title}</div>`
-    return titleHTML
-}
+// function contentTitleHTML(title) {
+//     // var titleHTML = `<div class="content-container"><div class="content-title">${title}</div></div><div class="spacer-15"></div>`
+//     var titleHTML = `<div class="content-title">${title}</div>`
+//     return titleHTML
+// }
 
-function contentContainerEmbed(html) {
-    html = `<div class="content-container layer1">${html}</div>`
-    return html
-}
+// function contentContainerEmbed(html) {
+//     html = `<div class="content-container layer1">${html}</div>`
+//     return html
+// }
 
 // 
 
@@ -68,15 +68,15 @@ function hscrollElement(child) {
     return hscroll
 }
 
-function contentContainerElement(child) {
-    var container = document.createElement('div')
-    container.classList = 'content-container layer1'
+// function contentContainerElement(child) {
+//     var container = document.createElement('div')
+//     container.classList = 'content-container layer1'
     
-    if (child) {
-        container.append(child)
-    }
-    return container
-}
+//     if (child) {
+//         container.append(child)
+//     }
+//     return container
+// }
 
 function searchElement(contentItem) {
     // console.log(contentItem)
