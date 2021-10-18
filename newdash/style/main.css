@@ -10,13 +10,17 @@
     --dark-layer-1: #1c1c1e;
     --dark-layer-2: rgb(44, 44, 46);
     --dark-layer-3: rgb(58, 58, 60);
-    --dark-layer-5: rgb(72, 72, 74);
-    --dark-layer-6: #636366;
+    --dark-layer-4: rgb(72, 72, 74);
+    --dark-layer-5: rgb(99, 99, 102);
+    --dark-layer-6: rgb(142, 142, 147);
 
     --light-layer-0: #fff;
-    --light-layer-1: #f2f2f7;
-    --light-layer-2: #e5e5ea;
-    --light-layer-3: #d1d1d6;
+    --light-layer-1: rgb(242, 242, 247);
+    --light-layer-2: rgb(229, 229, 234);
+    --light-layer-3: rgb(209, 209, 214);
+    --light-layer-4: rgb(199, 199, 204);
+    --light-layer-5: rgb(174, 174, 178);
+    --light-layer-6: rgb(142, 142, 147);
 
     --light-layer-1-80: #f2f2f7cc;
     --light-layer-1-60: #f2f2f799;
