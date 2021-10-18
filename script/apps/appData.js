@@ -114,6 +114,14 @@ const productivityApps = [
 ]
 const homeAppsApps = [
     {
+        name: "iMessage",
+        background: "green",
+        devices: '',
+        link: "messages://",
+        target: "self",
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 3 46 46"><path d="M25 4C12.318 4 2 12.972 2 24c0 6.187 3.334 12.065 8.951 15.839-.133 1.053-.665 3.601-2.769 6.585l-1.105 1.567L9.054 48c5.432 0 9.103-3.33 10.309-4.604 1.834.401 3.728.604 5.637.604 12.682 0 23-8.972 23-20S37.682 4 25 4z"/></svg>',
+    },
+    {
         name: "Slack",
         background: "slack",
         devices: '',
