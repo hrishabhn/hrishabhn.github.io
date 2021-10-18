@@ -278,7 +278,7 @@ function pageShortcutTrayRender(object) {
 }
 
 function pageShortcutString(page,subtext) {
-    console.log(page.info.style)
+    // console.log(page.info.style)
 
     // var shortcut = document.createElement('a')
     // shortcut.classList = 'shortcut layer-1 clickable card-shadow'
