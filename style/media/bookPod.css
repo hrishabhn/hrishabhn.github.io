@@ -40,6 +40,6 @@
 
 @media(max-width: 450px){
     .media-card{
-        scroll-margin-left: 20px;
+        scroll-margin-left: 15px;
     }
 }
