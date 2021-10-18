@@ -794,6 +794,7 @@ function openPage(n) {
     document.getElementById(`menu-item-${n}`).classList.add('selected')
 
     document.getElementById('header').innerHTML = pageData[n].info.name
+    headerScroll(n)
 
     oldPage = n
 }
