@@ -164,9 +164,9 @@
         flex-shrink: 0;
     }
     .page-width{
-        width: calc(100% - 40px);
+        width: calc(100% - 30px);
     }
     .hline-content{
-        width: calc(100% - 40px);
+        width: calc(100% - 30px);
     }
 }
