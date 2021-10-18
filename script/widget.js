@@ -8,3 +8,7 @@ function googleLoad() {
 
     return link
 }
+
+function insertAfter(newNode, existingNode) {
+    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+}
