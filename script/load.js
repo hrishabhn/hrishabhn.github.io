@@ -1,6 +1,7 @@
 function loadApp() {
     baseElements[0].render()
     pageDataRender()
+    loadSwitches()
     // console.log(dateNow())
     // console.log(processMonth(dateNow()[1],'long'))
     // console.log(processDay(dateNow()[3],'long'))
