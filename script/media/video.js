@@ -92,7 +92,7 @@ function tvMidElement(a,b) {
         </a>
     </div>
     <div class="spacer-x" style="--size: 15px;"></div>
-    <a class="tv-mid-info clickable" onclick="tvPopup(${a},${b})">
+    <a class="tv-mid-info clickable-text" onclick="tvPopup(${a},${b})">
         <p class="desc">${processDesc(data,'genre')}</p>
         <div class="spacer-x" style="--size: 4px;"></div>
         <p class="title">${data.name}</p>

@@ -86,6 +86,11 @@
     filter: brightness(0.75);
 }
 
+.clickable-text:active{
+    opacity: 0.6;
+}
+
+
 .page-width{
     width: calc(100% - 80px);
 }
