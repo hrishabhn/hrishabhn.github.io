@@ -250,3 +250,49 @@ function bookmarkRender(content) {
 
     return container
 }
+
+function pageShortcutTrayRender(object) {
+    const pages = object.pages
+    const subtext = object.subtext
+
+    var tray = document.createElement('div')
+    tray.classList = 'shortcut-tray page-width'
+
+    tray.innerHTML = `
+    <div class="subtray">
+        ${pageShortcutString(pages[0],subtext[0])}
+        <div class="spacer-x" style="--size: 15px;"></div>
+        <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
+        ${pageShortcutString(pages[1],subtext[1])}
+    </div>
+    <div class="spacer-x" style="--size: 15px;"></div>
+    <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
+    <div class="subtray">
+        ${pageShortcutString(pages[2],subtext[2])}
+        <div class="spacer-x" style="--size: 15px;"></div>
+        <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
+        ${pageShortcutString(pages[3],subtext[3])}
+    </div>`
+
+    return tray
+}
+
+function pageShortcutString(page,subtext) {
+    console.log(page.info.style)
+
+    // var shortcut = document.createElement('a')
+    // shortcut.classList = 'shortcut layer-1 clickable card-shadow'
+    // shortcut.onclick = function() { pageData[page.info.id].open() }
+    
+    // console.log(shortcut)
+
+    var htmlString = `
+    <a class="shortcut layer-1 clickable card-shadow" onclick="pageData[${page.info.id}].open()">
+        <div class="icon ${page.info.style}">${page.info.icon}</div>
+        <div class="grow"></div>
+        <p class="text">${page.info.name}</p>
+        <p class="subtext">${subtext}</p>
+    </a>`
+
+    return htmlString
+}

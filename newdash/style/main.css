@@ -269,7 +269,7 @@ svg{
         width: 100%;
         padding: 0px;
         padding-bottom: 30px;
-        background-color: var(--black-30);
+        background-color: var(--black-60);
         -webkit-backdrop-filter: blur(25px);
     }
     #main{

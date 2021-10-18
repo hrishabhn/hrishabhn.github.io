@@ -278,7 +278,6 @@
     }
 
     .tv-poster{
-        scroll-snap-align: start;
         scroll-margin-left: 20px;
     }
 

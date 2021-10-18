@@ -153,12 +153,35 @@
     font-weight: 400;
 }
 
+.shortcut-tray .subtray{
+    width: calc((100% - 20px) / 2);
+}
 
+.shortcut{
+    align-items: flex-start;
+    flex-direction: column;
+    height: 110px;
+    width: calc((100% - 20px) / 2);
+    padding: 15px;
+    border-radius: 10px;
+}
+.shortcut .icon{
+    height: 28px;
+    width: 28px;
 
-.action{
-    height: 200px;
-    width: 100px;
-
+    padding: 8px;
+    border-radius: 20px;
+    fill: white;
+}
+.shortcut .text{
+    font-size: 15px;
+    font-weight: 500;
+}
+.shortcut .subtext{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-top: 2px;
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -182,5 +205,19 @@
 
     .app-list{
         width: calc(100% - 40px);
+    }
+    .shortcut-tray{
+        flex-direction: column;
+    }
+    .shortcut-tray .subtray{
+        width: 100%;
+    }
+    .shortcut{
+        align-items: flex-start;
+        flex-direction: column;
+        height: 110px;
+        width: calc((100% - 15px) * 0.5);
+        padding: 15px;
+        border-radius: 10px;
     }
 }

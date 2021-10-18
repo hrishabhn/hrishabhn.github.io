@@ -1,0 +1,37 @@
+.media-shadow{
+    box-shadow: 0 5px 8px var(--black-40);
+}
+
+.media-card{
+    flex-direction: column;
+    scroll-snap-align: start;
+    scroll-margin-left: 40px;
+}
+.media-card .poster{
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: var(--poster);
+}
+.media-card .book{
+    height: 225px;
+    width: 150px;
+}
+.media-card .pod{
+    height: 200px;
+    width: 200px;
+}
+.media-card .info{
+    padding: 8px 0px;
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 0.8;
+    cursor: default;
+}
+
+@media(max-width: 450px){
+    .media-card{
+        scroll-margin-left: 20px;
+    }
+}
