@@ -1,5 +1,7 @@
 function loadSwitches() {
-    courseSwitch(getCookie('course'))
+    if (getCookie('course')) {
+        courseSwitch(getCookie('course'))
+    }
 }
 
 const courseData = [
@@ -70,11 +72,13 @@ function courseSwitch(newCourseIndex) {
 
     const oldCourseData = courseData[oldCourseIndex]
     const newCourseData = courseData[newCourseIndex]
-    
-    var oldCourseElement = document.getElementById(`course-switch-${oldCourseIndex}`)
-    oldCourseElement.classList.remove(oldCourseData.color,'selected')
-    oldCourseElement.children[0].classList.add(oldCourseData.color)
-    oldCourseElement.children[0].classList.remove(`${oldCourseData.color}-fg`)
+
+    if (oldCourseIndex) {
+        var oldCourseElement = document.getElementById(`course-switch-${oldCourseIndex}`)
+        oldCourseElement.classList.remove(oldCourseData.color,'selected')
+        oldCourseElement.children[0].classList.add(oldCourseData.color)
+        oldCourseElement.children[0].classList.remove(`${oldCourseData.color}-fg`)
+    }
 
     var newCourseElement = document.getElementById(`course-switch-${newCourseIndex}`)
     newCourseElement.classList.add(newCourseData.color,'selected')
@@ -91,7 +95,12 @@ function courseSwitch(newCourseIndex) {
     )
     newTray.id = 'course-tray'
 
-    oldTray.parentNode.replaceChild(newTray,oldTray)
-    
+    if (oldTray) {
+        oldTray.parentNode.replaceChild(newTray,oldTray)
+    } else {
+        insertAfter(newTray,document.getElementById('course-switch-tray'))
+        insertAfter(spacerContentElement(),document.getElementById('course-switch-tray'))
+    }
+
     setCookie('course',newCourseIndex,10)
 }
