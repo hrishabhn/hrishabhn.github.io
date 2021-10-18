@@ -35,7 +35,7 @@ const pageData0 = {
             type: 'shortcut-tray',
             render: function() {
                 return pageShortcutTrayRender([pageData[2],pageData[3],pageData[4],pageData[5]])
-            },
+            }
         },
         {
             type: 'spacer-content',
@@ -47,6 +47,53 @@ const pageData0 = {
             data: productivityApps,
             render: function () {
                 return bookmarkRender(this)
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            type: 'course-switch',
+            data: courseData,
+            render: function() {
+
+                var tray = document.createElement('div')
+                tray.classList = 'page-width'
+                // tray.innerHTML = courseHTML
+
+                for (let i = 0; i < this.data.length; i++) {
+                    var courseElement = document.createElement('a')
+                    courseElement.id = `course-switch-${i}`
+                    courseElement.classList = 'switch layer-1 card-shadow clickable'
+                    courseElement.style.setProperty('--width',`calc((100% - (15px* (10 - 1))) / 10)`)
+                    courseElement.onclick = function() { courseSwitch(i) }
+                    courseElement.innerHTML = `
+                    <div class="icon ${this.data[i].color}">${this.data[i].icon}</div>
+                    <div class="grow"></div>
+                    <p class="text">${this.data[i].name}</p>`
+
+                    tray.append(courseElement)
+
+                    if (i < this.data.length - 1) {
+                        tray.append(spacerElement(15))
+                    }
+                }
+
+                return tray
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            type: 'apps',
+            title: courseData[getCookie('course')].name,
+            devices: null,
+            data: courseData[getCookie('course')].apps,
+            render: function () {
+                var tray = bookmarkRender(this)
+                tray.id = 'course-tray'
+                return tray
             }
         },
         {
