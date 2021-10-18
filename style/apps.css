@@ -204,7 +204,7 @@
     }
 
     .app-list{
-        width: calc(100% - 40px);
+        width: calc(100% - 30px);
     }
     .shortcut-tray{
         flex-direction: column;
