@@ -40,6 +40,11 @@ function spacerElement(x,devices) {
     return spacer
 }
 
+function spacerContentElement() {
+    var spacerContent = document.createElement('div')
+    spacerContent.classList = 'spacer-content'
+    return spacerContent
+}
 function spacerAppListElement() {
     var spacerAppList = document.createElement('div')
     spacerAppList.classList = 'spacer-app-list'
