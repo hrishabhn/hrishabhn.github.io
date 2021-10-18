@@ -31,6 +31,37 @@ function tvBig(a,b) {
     }
 
     more.onclick = function() { tvPopup(a,b) }
+
+    const tvTime = document.getElementById('tv-big-tvtime')
+    const reelgood = document.getElementById('tv-big-reelgood')
+    const imdb = document.getElementById('tv-big-imdb')
+    const reddit = document.getElementById('tv-big-reddit')
+
+    if (movie.apps.tvTimeID) {
+        tvTime.href = `https://www.tvtime.com/en/show/${movie.apps.tvTimeID}`
+    } else {
+        tvTime.removeAttribute.href
+    }
+    if (movie.apps.reelgoodLink) {
+        reelgood.href = movie.apps.reelgoodLink
+    } else {
+        reelgood.removeAttribute.href
+    }
+    if (movie.apps.imdbID) {
+        imdb.href = `https://www.imdb.com/title/${movie.apps.imdbID}`
+    } else {
+        imdb.removeAttribute.href
+    }
+    if (movie.apps.subReddit) {
+        reddit.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
+    } else {
+        reddit.removeAttribute.href
+    }
+
+
+
+
+
 }
 
 function tvMidTray(a) {
