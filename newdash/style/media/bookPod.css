@@ -30,6 +30,14 @@
     cursor: default;
 }
 
+
+@media screen and (prefers-color-scheme: light) {
+    .media-shadow{
+        box-shadow: 0 5px 8px var(--black-20);
+    }
+}
+
+
 @media(max-width: 450px){
     .media-card{
         scroll-margin-left: 20px;
