@@ -55,9 +55,9 @@
     .menu-item{
         flex-direction: column;
         justify-content: center;
-        width: auto;
+        width: 20%;
         height: 100%;
-        flex-grow: 1;
+        /* flex-grow: 1; */
         padding: 0px;
         margin: 0px;
         opacity: 0.4;
