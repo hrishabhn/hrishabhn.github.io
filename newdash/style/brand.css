@@ -48,6 +48,18 @@
 .gray2{
     background-color: var(--dark-layer-2);
 }
+.gray3{
+    background-color: var(--dark-layer-3);
+}
+.gray4{
+    background-color: var(--dark-layer-4);
+}
+.gray5{
+    background-color: var(--dark-layer-5);
+}
+.gray6{
+    background-color: var(--dark-layer-6);
+}
 
 /* ios colors */
 
@@ -175,6 +187,27 @@
 
 
 @media screen and (prefers-color-scheme: light) {
+    .gray1{
+        background-color: var(--light-layer-1);
+    }
+    .gray2{
+        background-color: var(--light-layer-2);
+    }
+    .gray3{
+        background-color: var(--light-layer-3);
+    }
+    .gray4{
+        background-color: var(--light-layer-4);
+    }
+    .gray5{
+        background-color: var(--light-layer-5);
+    }
+    .gray6{
+        background-color: var(--light-layer-6);
+    }
+
+
+    
     .blue{
         background-color: var(--blue-light);
     }
