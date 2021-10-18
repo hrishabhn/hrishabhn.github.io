@@ -746,6 +746,9 @@ function renderPageElement(page) {
     var pageElement = document.createElement('div')
     pageElement.id = `page-${page.info.id}`
     pageElement.classList = 'page hidden'
+    pageElement.onscroll = function() {
+        headerScroll(page.info.id)
+    }
 
     for (let i = 0; i < page.content.length; i++) {
         // console.log(renderContent(page.content[i]))
