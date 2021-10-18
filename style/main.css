@@ -282,7 +282,6 @@ svg{
 
         background-color: var(--dark-layer-1-60);
         -webkit-backdrop-filter: blur(25px);
-        /* display: none; */
     }
 
     #leftbar{
@@ -313,6 +312,10 @@ svg{
     @media screen and (prefers-color-scheme: light) {
         body{
             background-color: var(--light-layer-1);
+        }
+        #header.small{
+            border-block-color: var(--black-10);
+            background-color: var(--light-layer-1-60);
         }
         #leftbar{
             background-color: var(--light-layer-1-60);
