@@ -90,6 +90,11 @@ const pageData0 = {
             type: 'app-list-tray',
             content: [
                 {
+                    title: 'Apps',
+                    devices: null,
+                    data: homeAppsApps,
+                },
+                {
                     title: 'Pinned',
                     devices: null,
                     data: pinnedHomeApps,
