@@ -34,9 +34,9 @@ function tvBig(a,b) {
 }
 
 function tvMidTray(a) {
-    var tray = document.createElement('div')
-    tray.classList = 'hscroll'
-    tray.append(spacerElement(40))
+    var tray = hscrollMediaElement()
+    tray.append(spacerElement(15))
+    tray.append(spacerElement(5,'hidden-mobile'))
 
     // console.log(movieData[a].length)
 
@@ -44,10 +44,12 @@ function tvMidTray(a) {
         tray.append(tvMidElement(a,b))
 
         if (b < movieData[a].length) {
-            tray.append(spacerElement(40))
+            tray.append(spacerElement(15))
+            tray.append(spacerElement(5,'hidden-mobile'))
         }
     }
-    tray.append(spacerElement(40))
+    tray.append(spacerElement(15))
+    tray.append(spacerElement(5,'hidden-mobile'))
 
     return tray
 }
@@ -106,20 +108,22 @@ function tvMidElement(a,b) {
 
 
 function tvSmallTray(a) {
-    var tray = document.createElement('div')
-    tray.classList = 'hscroll'
-    tray.append(spacerElement(40))
+    var tray = hscrollMediaElement()
+    tray.append(spacerElement(15))
+    tray.append(spacerElement(5,'hidden-mobile'))
 
     // console.log(movieData[a].length)
 
     for (let b = 0; b < movieData[a].length; b++) {
         tray.append(tvSmallElement(a,b))
 
-        if (b < movieData[a].length) {
-            tray.append(spacerElement(40))
+        if (b < movieData[a].length - 1) {
+            tray.append(spacerElement(15))
+            tray.append(spacerElement(5,'hidden-mobile'))
         }
     }
-    tray.append(spacerElement(40))
+    tray.append(spacerElement(15))
+    tray.append(spacerElement(5,'hidden-mobile'))
 
     return tray
 }
