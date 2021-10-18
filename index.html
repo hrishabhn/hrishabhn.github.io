@@ -1,35 +1,29 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta name='viewport' content='viewport-fit=cover, height=device-height, width=device-width, initial-scale=1.0, user-scalable=no'>
-    <link rel="stylesheet" href="style/widgets.css">
-    <link rel="stylesheet" href="style/elements.css">
-    <link rel="stylesheet" href="style/home.css">
-    <link rel="stylesheet" href="style/media.css">
-    <link rel="stylesheet" href="style/tv-data.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/color.css">
     <link rel="stylesheet" href="style/brand.css">
+    <link rel="stylesheet" href="style/elements.css">
+    <link rel="stylesheet" href="style/apps.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/media/video.css">
+    <link rel="stylesheet" href="style/media/bookPod.css">
+
+    <link rel="stylesheet" href="style/leftbar.css">
+    <link rel="stylesheet" href="style/rightbar.css">
 
 
-    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style/devices.css">
+    <!-- <link rel="manifest" href="manifest.json"> -->
 
-    <link rel="icon" type="image/png" href="images/icon.png">
+    <!-- <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="apple-touch-icon" href="images/home.png" />
     <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="images/launch-12mini.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 1194px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait" href="images/launch-ipad.png">
-
-    <!-- <link rel="preload" href="script/pages.js" as="script">
-    <link rel="preload" href="script/apps.js" as="script">
-    <link rel="preload" href="script/media.js" as="script">
-    <link rel="preload" href="script/date.js" as="script">
-    <link rel="preload" href="script/widget.js" as="script"> -->
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 1194px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait" href="images/launch-ipad.png"> -->
 
     <meta name="mobile-wep-app-capable" content="yes"></meta>
     <meta name="apple-mobile-web-app-capable" content="yes"></meta>
@@ -39,459 +33,247 @@
 
     <title id="title-page">Dashboard</title>
 
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
 </head>
-
-<body id="body" ontouchstart="" onload="newPopulate()">
-    <div id="everything">
-
-        <div id="background-blur" class="background-blur background-blur-hide"></div>
-
-        <div id="user-select-modal" class="closed">
-            <div id="user-select-close" class="clickable blue-fg" onclick="userSelectClose()">Close</div>
-            <div class="vstack">
-                <div class="user-select-title">
-                    <p>Select a user</p>
-                    <div class="user-select-line blue"></div>
-                </div>
-                <div id="user-select-all"></div>
-                <div class="spacer-x" style="--size: 15px"></div>
-                <a class="content-container clickable-system" href="https://www.google.com">
-                    <div class="hstack">
-                        <div  class="content-icon primary-fg">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path></svg>
-                        </div>
-                        <div class="content-title secondary-fg">
-                            Google
-                        </div>
-                        <div class="spacer"></div>
-                    </div>
-                </a>
-            </div>
-            <div id="user-select-close" class="clickable blue-fg" onclick="userSelectClose()">Close</div>
+<body id="body" ontouchstart="" onload="loadApp()">
+    <div id="header" class="">Dashboard</div>
+    <div id="leftbar" class=""></div>
+    <div id="rightbar" class="layer2">
+        <div class="widget-card ">
+            <p class="title">User</p>
+            <div class="hline"></div>
+            <p class="info">Hrishabh</p>
         </div>
-
-
-        <div id="tv-popup-modal" class="modal tv-popup-closed">
-            <div class="tv-popup-tab" onclick="popupTVHide()"></div>
-            <div class="tv-popup-modal">
-                <div id="card" class="tv-popup-card show-solid">
-                    <div class="tv-popup-close" onclick="popupTVHide()">
-                        <svg class="tv-popup-close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.333 348.334"><path d="M336.559 68.611L231.016 174.165l105.543 105.549c15.699 15.705 15.699 41.145 0 56.85-7.844 7.844-18.128 11.769-28.407 11.769-10.296 0-20.581-3.919-28.419-11.769L174.167 231.003 68.609 336.563c-7.843 7.844-18.128 11.769-28.416 11.769-10.285 0-20.563-3.919-28.413-11.769-15.699-15.698-15.699-41.139 0-56.85l105.54-105.549L11.774 68.611c-15.699-15.699-15.699-41.145 0-56.844 15.696-15.687 41.127-15.687 56.829 0l105.563 105.554L279.721 11.767c15.705-15.687 41.139-15.687 56.832 0 15.705 15.699 15.705 41.145.006 56.844z"/></svg>
-                    </div>
-    
-                    <span id="poster" class="tv-popup-poster show-poster">
-                        <span id="grad" class="tv-popup-gradient">
-                            <span id="title" class="tv-popup-title tv-title-size show-title"></span>
-                        </span>
-                    </span>
-                    <span id="desc" class="tv-popup-description"></span>
-                    
-    
-                    <div class="tv-popup-button-tray">
-                        <span class="tv-popup-button-container tv-popup-play clickable">
-                            <div id="tv-popup-button-icon" class="tv-popup-button-icon">
-                                <svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg" /></g></svg>
-                            </div>
-                            <p id="service" class="tv-popup-button-text"></p>
-                            <a id="tv-popup-link" class="tv-popup-link" target="_blank"></a>
-                        </span>
-                    </div>
-                    <span class="hstack tv-popup-tray">
-                        <a id="tv-popup-tv-time" class="tv-popup-app vstack clickable" target="_blank">
-                            <div class="tv-popup-app-icon">
-                                <svg class="icon" id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 875 875">
-                                    <rect class="cls-2" x="175.34" y="174.74" width="174.91" height="174.91"/>
-                                    <rect class="cls-3" x="350.26" y="174.74" width="174.91" height="174.91"/>
-                                    <rect class="cls-4" x="525.17" y="174.74" width="174.91" height="174.91"/>
-                                    <rect class="cls-5" x="350.26" y="349.66" width="174.91" height="174.91"/>
-                                    <rect class="cls-6" x="350.26" y="524.57" width="174.91" height="174.91"/>
-                                </svg>
-                            </div>
-                            <div class="spacer-8"></div>
-                            <p>TV Time</p>
-                        </a><div id="tv-time-spacer" class="spacer-10"></div><a id="tv-popup-reelgood" class="tv-popup-app vstack clickable" target="_blank">
-                            <div class="tv-popup-app-icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="m14.21 11.477 2.475 4.441h-3.803l-2.014-4.047h-1.4v4.047H6.151v-6.85l3.317-1.791v1.755h2.333c.686 0 1.38-.423 1.38-1.231 0-.809-.694-1.232-1.38-1.232h-.915V3.75h1.382c2.563 0 4.284 1.642 4.284 4.087 0 2.005-1.187 3.183-2.342 3.641zM0 0l8.75 5.032L0 10.064V0zm1.189 4.637h.8v1.997l3.536-2.09L1.189 2.05v2.587z"/></svg>
-                            </div>
-                            <div class="spacer-8"></div>
-                            <p>Reelgood</p>
-                        </a><div id="reelgood-spacer" class="spacer-10"></div><a id="tv-popup-imdb" class="tv-popup-app vstack clickable" target="_blank">
-                            <div class="tv-popup-app-icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="69.3499984741211 -75.6249885559082 440.6999816894531 440.6999816894531"><path d="M69.35 58.24h45.63v175.65H69.35V58.24Z"></path><path d="M201.2 139.15c-3.92-26.77-6.1-41.65-6.53-44.62-1.91-14.33-3.73-26.8-5.47-37.44h-59.16v175.65h39.97l.14-115.98 16.82 115.98h28.47l15.95-118.56.15 118.56h39.84V57.09h-59.61l-10.57 82.06Z"></path><path d="M346.71 93.63c.5 2.24.76 7.32.76 15.26v68.1c0 11.69-.76 18.85-2.27 21.49-1.52 2.64-5.56 3.95-12.11 3.95V87.13c4.97 0 8.36.53 10.16 1.57 1.8 1.05 2.96 2.69 3.46 4.93Zm20.61 137.32c5.43-1.19 9.99-3.29 13.69-6.28 3.69-3 6.28-7.15 7.76-12.46 1.49-5.3 2.37-15.83 2.37-31.58v-61.68c0-16.62-.65-27.76-1.66-33.42-1.02-5.67-3.55-10.82-7.6-15.44-4.06-4.62-9.98-7.94-17.76-9.96-7.79-2.02-20.49-3.04-42.58-3.04H287.5v175.65h55.28c12.74-.4 20.92-.99 24.54-1.79Z"></path><path d="M464.76 204.7c-.84 2.23-4.52 3.36-7.3 3.36-2.72 0-4.53-1.08-5.45-3.25-.92-2.16-1.37-7.09-1.37-14.81v-46.42c0-8 .4-12.99 1.21-14.98.8-1.97 2.56-2.97 5.28-2.97 2.78 0 6.51 1.13 7.47 3.4.95 2.27 1.43 7.12 1.43 14.55v45.01c-.29 9.25-.71 14.62-1.27 16.11Zm-58.08 26.51h41.08c1.71-6.71 2.65-10.44 2.84-11.19 3.72 4.5 7.81 7.88 12.3 10.12 4.47 2.25 11.16 3.37 16.34 3.37 7.21 0 13.43-1.89 18.68-5.68 5.24-3.78 8.58-8.26 10-13.41 1.42-5.16 2.13-13 2.13-23.54V141.6c0-10.6-.24-17.52-.71-20.77s-1.87-6.56-4.2-9.95c-2.33-3.39-5.72-6.02-10.16-7.9-4.44-1.88-9.68-2.82-15.72-2.82-5.25 0-11.97 1.05-16.45 3.12-4.47 2.07-8.53 5.21-12.17 9.42V55.56h-43.96v175.65Z"></path></svg>
-                            </div>
-                            <div class="spacer-8"></div>
-                            <p>IMDb</p>
-                        </a><div id="imdb-spacer" class="spacer-10"></div><a id="tv-popup-reddit" class="tv-popup-app vstack clickable" target="_blank">
-                            <div class="tv-popup-app-icon">
-                                <svg class="icon" data-bbox="1.959 3 46.082 42" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M29 3c-2.105 0-4.566 1.652-4.938 9.031.313-.008.622-.031.938-.031.352 0 .715.02 1.063.031C26.3 7.598 27.355 5 29 5c.703 0 1.102.383 1.844 1.188.867.94 2 2.164 4.218 2.625A6.215 6.215 0 0 1 35 8c0-.422.043-.82.125-1.219-1.375-.375-2.102-1.168-2.813-1.937C31.52 3.984 30.61 3 29 3zm12 1c-2.207 0-4 1.797-4 4 0 2.203 1.793 4 4 4s4-1.797 4-4c0-2.203-1.793-4-4-4zM25 14C12.867 14 3 20.18 3 29s9.867 16 22 16 22-7.18 22-16-9.867-15-22-15zm-17.5.938c-1.46 0-2.848.597-3.906 1.656-1.723 1.722-2.078 4.199-1.094 6.25 1.512-2.926 4.113-5.422 7.469-7.282-.762-.386-1.606-.624-2.469-.624zm35 0c-.863 0-1.707.238-2.469.624 3.356 1.86 5.957 4.356 7.469 7.282.984-2.051.629-4.528-1.094-6.25-1.058-1.059-2.445-1.657-3.906-1.657zM17 23a3 3 0 1 1-.002 6.002A3 3 0 0 1 17 23zm16 0a3 3 0 1 1-.002 6.002A3 3 0 0 1 33 23zM16.062 34c.25.043.497.184.657.406.105.149 2.449 3.282 8.281 3.282 5.91 0 8.258-3.22 8.281-3.25.317-.45.953-.57 1.407-.25.449.316.535.921.218 1.374-.117.168-2.968 4.126-9.906 4.126-6.941 0-9.79-3.958-9.906-4.126-.317-.453-.235-1.058.219-1.374.226-.16.5-.231.75-.188z" /></g></svg>
-                            </div>
-                            <div class="spacer-8"></div>
-                            <p>Reddit</p>
-                        </a><div id="reddit-spacer" class="spacer-10"></div><a id="tv-popup-big" class="tv-popup-app vstack clickable" target="_blank">
-                            <div class="tv-popup-app-icon">
-                                <svg class="icon" viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg"><path d="M408 184H272a8 8 0 0 1-8-8V40c0-22.09-17.91-40-40-40s-40 17.91-40 40v136a8 8 0 0 1-8 8H40c-22.09 0-40 17.91-40 40s17.91 40 40 40h136a8 8 0 0 1 8 8v136c0 22.09 17.91 40 40 40s40-17.91 40-40V272a8 8 0 0 1 8-8h136c22.09 0 40-17.91 40-40s-17.91-40-40-40zm0 0"/></svg>
-                            </div>
-                            <div class="spacer-8"></div>
-                            <p>Preview</p>
-                        </a>
-                        <div class="spacer"></div>
-                    </span>
-                    <span id="tv-popup-summary" onclick="popupTVHide()"></span>
-                </div>
-    
-    
-    
-    
-            </div>
-    
+        <div class="widget-card">
+            <p class="title">Widget 2</p>
         </div>
-
-        <div id="side-popup-modal" class="hide">
-            <a class="side-popup-tab" onclick="hideMediaPopup()"></a>
-            <div class="side-popup-card">
-                <div id="side-popup-bg">
-                    <div id="side-popup-fg"></div>
+    </div>
+    <div id="main" class="">
+        <div class="page">
+            <!-- <div class="vstack media-card">
+                <a class="book clickable media-shadow" style="--poster: url('../media-image/books/noRules.jpg');" href="ibooks://"></a>
+                <div class="info fill-width">
+                    <p>51%</p>
+                    <div class="grow"></div>
+                    <p>EBook</p>
                 </div>
+            </div> -->
 
-                <div class="side-popup-content">
-                    <div id="side-popup-poster"></div>
-                    <div class="vstack side-popup-info">
-                        <div id="side-popup-title"></div>
-                        <div id="side-popup-subtitle"></div>
-                    </div>
-                    <a id="side-popup-link" class="clickable" target="_blank">
-                        <div class="side-popup-link-icon">
-                            <svg class="icon" data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg" /></g></svg>
-                        </div>
-                        <p>Play</p>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="shortcut-tray page-width">
+                <div class="subtray">
+                    <a class="shortcut layer-1 clickable card-shadow" onclick="pageData[3].open()">
+                        <div class="icon red"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 24 24"><path d="M5 6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5zm5 18a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10z"/></svg></div>
+                        <div class="grow"></div>
+                        <p class="text">TV & Video</p>
+                        <p class="subtext">Watch</p>
+                    </a>
+                    <div class="spacer-x" style="--size: 15px;"></div>
+                    <div class="spacer-x hidden-mobile" style="--size: 15px;"></div>
+                    <a class="shortcut layer-1 clickable card-shadow" onclick="pageData[3].open()">
+                        <div class="icon red"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 24 24"><path d="M5 6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5zm5 18a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10z"/></svg></div>
+                        <div class="grow"></div>
+                        <p class="text">TV & Video</p>
+                        <p class="subtext">Watch</p>
                     </a>
                 </div>
-            </div>
-        </div>
+                <div class="spacer-x" style="--size: 15px;"></div>
+                <div class="spacer-x hidden-mobile" style="--size: 15px;"></div>
+                <div class="subtray">
+                    <a class="shortcut layer-1 clickable card-shadow" onclick="pageData[3].open()">
+                        <div class="icon red"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 24 24"><path d="M5 6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5zm5 18a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10z"/></svg></div>
+                        <div class="grow"></div>
+                        <p class="text">TV & Video</p>
+                        <p class="subtext">Watch</p>
+                    </a>
+                    <div class="spacer-x" style="--size: 15px;"></div>
+                    <div class="spacer-x hidden-mobile" style="--size: 15px;"></div>
+                    <a class="shortcut layer-1 clickable card-shadow" onclick="pageData[3].open()">
+                        <div class="icon red"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 24 24"><path d="M5 6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5zm5 18a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10z"/></svg></div>
+                        <div class="grow"></div>
+                        <p class="text">TV & Video</p>
+                        <p class="subtext">Watch</p>
+                    </a>
+                </div>
+            </div> -->
+<!-- 
+            <div class="hstack">
+                <div class="tv-poster" style="--poster: url(media-image/TV/background/dopesick.webp);">
+                    <div class="gradient" style="--col: #00000000;"></div>
+                    <div class="title wide" style="--title: url(media-image/TV/title/dopesick.png);"></div>
+                    <a class="play"></a>
+                    <a class="more">
+                        <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
+                    </a>
+                </div>
+                <div class="spacer-x" style="--size: 15px;"></div>
 
-        <div class="navbar">
-            <div id="navbar-time" class="hidden-mobile">-:-</div>
-            <div id="navbar-date" class="hidden-mobile"></div>
-            <div id="navbar-menu"></div>
-        </div>
-        <div id="widgetbar">
-            <div id="widgetbar-content" class="vstack">
-                <div class="sidebar-button close clickable-system hidden-desktop" onclick="widgetBarState()">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492 492"><path d="M300.188 246L484.14 62.04c5.06-5.064 7.852-11.82 7.86-19.024 0-7.208-2.792-13.972-7.86-19.028L468.02 7.872C462.952 2.796 456.196.016 448.984.016c-7.2 0-13.956 2.78-19.024 7.856L246.008 191.82 62.048 7.872C56.988 2.796 50.228.016 43.02.016c-7.2 0-13.96 2.78-19.02 7.856L7.872 23.988c-10.496 10.496-10.496 27.568 0 38.052L191.828 246 7.872 429.952C2.808 435.024.02 441.78.02 448.984c0 7.204 2.788 13.96 7.852 19.028l16.124 16.116c5.06 5.072 11.824 7.856 19.02 7.856 7.208 0 13.968-2.784 19.028-7.856l183.96-183.952 183.952 183.952c5.068 5.072 11.824 7.856 19.024 7.856h.008c7.204 0 13.96-2.784 19.028-7.856l16.12-16.116c5.06-5.064 7.852-11.824 7.852-19.028 0-7.204-2.792-13.96-7.852-19.028L300.188 246z"/></svg>
+                <a class="tv-mid-info clickable" onclick="">
+                    <p class="desc">drama</p>
+                    <div class="spacer-x" style="--size: 4px;"></div>
+                    <p class="title">Dopesick</p>
+                    <div class="spacer-x" style="--size: 2px;"></div>
+                    <p class="summary">From Executive Producer Danny Strong and starring and executive produced by Michael Keaton, â€œDopesickâ€ examines how one company triggered the worst drug epidemic in American history. The series takes viewers to the epicenter of Americaâ€™s struggle with opioid addiction, from the boardrooms of Big Pharma, to a distressed Virginia mining community, to the hallways of the DEA. Defying all the odds, heroes will emerge in an intense and thrilling ride to take down the craven corporate forces behind this national crisis and their allies. The limited series is inspired by the New York Times bestselling book by Beth Macy.</p>
+                    <div class="spacer-x" style="--size: 4px;"></div>
+                    <p class="desc">Wednesdays</p>
+                </a>
+            </div> -->
+
+
+
+
+
+            <!-- <div id="tv-big-card" class="card-shadow">
+                <div class="gradient"></div>
+                <div class="button-tray">
+                    <a id="tv-big-play" class="clickable">Watch</a>
+                    <div class="spacer-x" style="--size: 10px;"></div>
+                    <a id="tv-big-more" class="clickable"><svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg></a>
+                </div>
+                <div id="tv-big-title"></div>
+                <div id="tv-big-service"></div>
+            </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="bookmark-tray layer-1">
+                <div class="title">Productivity</div>
+                <div class="spacer-x" style="--size: 10px;"></div>
+                <div class="hline"></div>
+                <div class="spacer-x" style="--size: 10px;"></div>
+                <div class="hscroll">
+                    <div class="spacer-x" style="--size: 25px;"></div>
+                    <div class="bookmark-container ">
+                        <div class="vstack">
+                            <a class="icon outlook" href="ms-outlook://" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="1.5190010070800781 12.5775146484375 497.6650085449219 497.6650085449219"><path d="M432.828 23.637h-276.48c-18.325 0-33.176 14.851-33.176 33.18v22.117h342.832V56.816c0-18.328-14.852-33.18-33.176-33.18zm43.574 470.015c-6.304 3.54-13.714 5.532-21.457 5.532H134.23c-24.44 0-44.238-19.797-44.238-44.239V388.59h99.531c12.055 0 23.227-3.871 32.293-10.504zm22.782-170.53v131.823c0 7.965-2.102 15.485-5.973 22.008l-173.852-78.851zM366.473 101.05h99.53v77.414h-99.53zm-121.653 0h99.535v77.414H244.82zm121.653 99.535h99.53V278h-99.53zm-121.653 0h99.535V278H244.82zm99.535 99.531v63.59l-52.53 21.898-47.005-21.343v-64.145zm121.649 0v12.828l-99.531 41.582v-54.41zm-243.3-199.066v33.18c-9.18-6.97-20.68-11.06-33.18-11.06h-66.352v-22.12zm-33.18 265.422H34.694c-18.324 0-33.175-14.852-33.175-33.176V178.465c0-18.324 14.851-33.176 33.175-33.176h154.828c18.329 0 33.18 14.852 33.18 33.176v154.832c0 18.324-14.851 33.176-33.18 33.176zm-77.415-176.95c-38.882 0-62.304 29.707-62.304 66.356 0 36.652 23.332 66.355 62.304 66.355 38.985 0 62.309-29.703 62.309-66.343 0-36.66-23.422-66.368-62.309-66.368zm0 110.317c-22.062 0-35.242-19.672-35.242-43.95 0-24.273 13.246-43.949 35.242-43.949 22 0 35.258 19.688 35.258 43.95 0 24.265-13.203 43.949-35.258 43.949zm0 0"></path></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>Outlook</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                    <div class="bookmark-container only-desktop">
+                        <div class="vstack">
+                            <a class="icon onedrive" href="https://purdue0-my.sharepoint.com" target="_self"><svg data-bbox="0 9.594 50.023 30.407" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"> <g> <path d="M27.406 9.594c-1.816 0-3.379.355-4.75 1.094-1.418.707-2.996 2.019-3.75 3.093-.281.375-.543.719-.718.938-2.086-.79-4.56-.89-6.282-.281-3.539 1.14-6.11 4.582-6.219 8.374 0 .215-.011.422-.03.594-.036.012-.087.02-.126.032-2.215.582-3.992 1.968-4.906 3.843C-.012 28.2 0 28.785 0 30.406c0 1.746-.004 2.153.594 3.219.93 1.973 2.976 3.695 4.937 4.156.516.145 2.801.196 4.969.219-.969-1.543-1.5-3.438-1.5-5.594 0-1.484.156-2.37.625-3.468 1.008-2.442 3.371-4.317 6.375-5.125.059-.192.113-.407.188-.594 1.015-2.899 2.917-5.309 5.093-6.469l.032-.031h.03c2.063-1.032 3.321-1.313 5.657-1.313 3.441 0 5.559.864 7.938 3.281.886-.23 1.78-.375 2.687-.375.309 0 .61.036.906.063-.09-.297-.18-.602-.281-.906-1.668-4.785-5.922-7.875-10.844-7.875zM27 17.406c-2.016 0-3 .203-4.781 1.094-1.754.934-3.309 3-4.157 5.438-.199.496-.347 1.039-.375 1.437-.113.05-.304.145-.687.25-2.633.57-4.715 2.082-5.531 4.063-.367.863-.469 1.511-.469 2.718 0 3.828 1.89 6.547 5.219 7.469.039.012.082.023.125.031.77.11 3.86.094 15.343.094H46a.94.94 0 0 0 .438-.094l.624-.312c1.657-.828 2.688-2.574 2.938-4.938.23-3.351-1.242-5.668-4.281-6.718l-.282-.094-.03-.532c-.36-4.046-3.637-7-7.782-7-.996 0-1.98.192-2.938.532l-.312.093-.656-.625C31.625 18.105 30 17.407 27 17.407z"></path></g></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>OneDrive</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                    <div class="bookmark-container hidden-desktop">
+                        <div class="vstack">
+                            <a class="icon onedrive" href="ms-onedrive://" target="_self"><svg data-bbox="0 9.594 50.023 30.407" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"> <g> <path d="M27.406 9.594c-1.816 0-3.379.355-4.75 1.094-1.418.707-2.996 2.019-3.75 3.093-.281.375-.543.719-.718.938-2.086-.79-4.56-.89-6.282-.281-3.539 1.14-6.11 4.582-6.219 8.374 0 .215-.011.422-.03.594-.036.012-.087.02-.126.032-2.215.582-3.992 1.968-4.906 3.843C-.012 28.2 0 28.785 0 30.406c0 1.746-.004 2.153.594 3.219.93 1.973 2.976 3.695 4.937 4.156.516.145 2.801.196 4.969.219-.969-1.543-1.5-3.438-1.5-5.594 0-1.484.156-2.37.625-3.468 1.008-2.442 3.371-4.317 6.375-5.125.059-.192.113-.407.188-.594 1.015-2.899 2.917-5.309 5.093-6.469l.032-.031h.03c2.063-1.032 3.321-1.313 5.657-1.313 3.441 0 5.559.864 7.938 3.281.886-.23 1.78-.375 2.687-.375.309 0 .61.036.906.063-.09-.297-.18-.602-.281-.906-1.668-4.785-5.922-7.875-10.844-7.875zM27 17.406c-2.016 0-3 .203-4.781 1.094-1.754.934-3.309 3-4.157 5.438-.199.496-.347 1.039-.375 1.437-.113.05-.304.145-.687.25-2.633.57-4.715 2.082-5.531 4.063-.367.863-.469 1.511-.469 2.718 0 3.828 1.89 6.547 5.219 7.469.039.012.082.023.125.031.77.11 3.86.094 15.343.094H46a.94.94 0 0 0 .438-.094l.624-.312c1.657-.828 2.688-2.574 2.938-4.938.23-3.351-1.242-5.668-4.281-6.718l-.282-.094-.03-.532c-.36-4.046-3.637-7-7.782-7-.996 0-1.98.192-2.938.532l-.312.093-.656-.625C31.625 18.105 30 17.407 27 17.407z"></path></g></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>OneDrive</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                    <div class="bookmark-container ">
+                        <div class="vstack">
+                            <a class="icon indigo" href="maps://" target="_self"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M135 275l-30 71 30-10 30 10z"></path><path d="M407 0H105C47.103 0 0 47.103 0 105v302c0 57.897 47.103 105 105 105h302c57.897 0 105-47.103 105-105V105C512 47.103 464.897 0 407 0zM74.999 36.282v81.143L35.197 77.623c7.273-18.48 21.67-33.394 39.802-41.341zm90 348.438V482h-60v-97.282C78.538 373.121 60 346.691 60 316c0-30.691 18.538-57.121 44.999-68.718V30h60v217.28C191.46 258.877 210 285.308 210 316s-18.54 57.123-45.001 68.72zm269.378 92.083l-37.451-37.451C382.069 447.416 365.06 452 347 452c-57.897 0-105-47.103-105-105 0-17.607 4.345-34.664 12.631-49.942l-59.633-59.633v-84.853L317.8 275.374c6.939-3.127 13.422-7.307 19.195-12.475L347 253.944l10.004 8.956C370.765 275.217 388.52 282 407 282c3.928 0 7.884-.309 11.757-.918l9.313-1.465 5.359 7.755C445.578 304.954 452 325.573 452 347c0 18.06-4.584 35.068-12.648 49.926l37.451 37.451c-7.621 19.362-23.064 34.805-42.426 42.426zM482 250.512C363.614 243.084 268.916 148.386 261.488 30h75.213c7.111 76.944 68.355 138.188 145.299 145.299v75.213z"></path><path d="M420.677 333H273.323c-.866 4.58-1.323 9.26-1.323 14 0 41.355 33.645 75 75 75s75-33.645 75-75c0-4.74-.457-9.42-1.323-14z"></path></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>Maps</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                    <div class="bookmark-container hidden-mobile">
+                        <div class="vstack">
+                            <a class="icon google-red" href="https://mail.google.com/mail/u/0/#inbox" target="_self"><svg data-bbox="1 7 48 36" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M5.5 7C3.02 7 1 9.02 1 11.5v.426L25 29l24-17.074V11.5C49 9.02 46.98 7 44.5 7zm.852 2h37.293L25 22zM1 14.027V38.5C1 40.98 3.02 43 5.5 43h39c2.48 0 4.5-2.02 4.5-4.5V14.027l-6 4.27V41H7V18.297z"></path></g></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>Gmail</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                    <div class="bookmark-container hidden-mobile">
+                        <div class="vstack">
+                            <a class="icon google-green" href="https://drive.google.com" target="_self"><svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m323.303 31h-133.799c-5.361 0-10.313 2.856-12.993 7.5s-2.681 10.356 0 15l143.042 247.5h168.726l-151.998-262.515c-2.68-4.629-7.632-7.485-12.978-7.485z"></path><path d="m154.034 75.947-152.011 262.538c-2.622 4.512-2.695 10.049-.22 14.648l64.805 120c2.578 4.775 7.544 7.793 12.979 7.866h.22c5.347 0 10.313-2.856 12.993-7.5l145.494-251.757z"></path><path d="m509.88 338.31c-2.695-4.526-7.588-7.31-12.876-7.31h-286.41l-86.678 150h308.284c5.508 0 10.576-3.018 13.198-7.866l64.805-120c2.504-4.658 2.387-10.283-.323-14.824z"></path></svg></a>
+                            <div class="spacer-x" style="--size: 4px;"></div>
+                            <p>Google Drive</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                    </div>
+                </div>
+            </div> -->
+
+
+<!-- 
+
+            <div class="app-list-tray">
+                <div class="app-list layer1">
+                    <div class="item">Hello</div>
+
                 </div>
 
 
-                <div class="spacer-10 only-mobile"></div>
-                <!-- <div class="content-container">
-                    <div class="bus-icon-container">
-                        <svg id="bus-icon" class="bus-icon bus-icon-hide" xmlns="http://www.w3.org/2000/svg" viewBox="72.34278106689453 89.03302764892578 350.6231994628906 350.6231994628906"><path d="M172.477 389.589c0-13.855-5.589-26.371-14.642-35.425-9.053-9.053-21.57-14.642-35.425-14.642-27.632-.079-50.146 22.436-50.066 50.066 0 13.855 5.59 26.37 14.643 35.423s21.569 14.642 35.423 14.642c27.631.082 50.146-22.433 50.067-50.064zM389.589 422.967c-18.421 0-33.377-14.957-33.378-33.378.079-64.472-26.213-122.883-68.566-165.235s-100.763-68.645-165.235-68.566c-18.42 0-33.377-14.957-33.378-33.378 0-18.42 14.957-33.377 33.377-33.377 82.894.079 158.072 33.692 212.467 88.088s88.009 129.575 88.088 212.467c.003 18.422-14.954 33.379-33.375 33.379z"></path><path d="M256 423.046c-18.42 0-33.456-15.035-33.456-33.456 0-27.553-11.178-52.586-29.363-70.77-18.105-18.105-43.139-29.284-70.77-29.363-18.421 0-33.456-15.036-33.456-33.456s15.035-33.456 33.456-33.456c46.052.079 87.773 18.814 118.002 49.043s48.964 71.951 49.043 118.002c0 18.421-15.036 33.456-33.456 33.456zM122.411 439.656c-13.855 0-26.37-5.59-35.423-14.642l70.849-70.849c9.053 9.053 14.642 21.57 14.642 35.425.077 27.63-22.438 50.145-50.068 50.066z"></path><path d="M256 423.046c-18.42 0-33.456-15.035-33.456-33.456 0-27.553-11.178-52.586-29.363-70.77l47.232-47.232c30.229 30.229 48.964 71.951 49.043 118.002 0 18.421-15.036 33.456-33.456 33.456zM389.589 422.967c-18.421 0-33.377-14.957-33.378-33.378.079-64.472-26.213-122.883-68.566-165.235l47.232-47.232c54.396 54.396 88.009 129.575 88.088 212.467.002 18.421-14.955 33.378-33.376 33.378z"></path></svg>
-                    </div>
-                    <div class="content-title info-title" id="bus-title" onclick="busShowAll()">
-                        Buses
-                    </div>
-                    <div id="bus-number-tray" class="scrolling-tray">
-                        <div class="bus-number")">----</div>
-                    </div>
-                    <div id="bus-card-1" class="bus-card hidden-always">
-                        <div class="bus-info-card">
-                            <div class="bus-info">
-                                <div class="bus-dest">
-                                    <div id="bus-dir-1" class="bus-dir">-</div>
-                                    <p id="bus-dest-1">Destination</p>
-                                </div>
-                                <div class="bus-stop">
-                                    <p id="bus-stop-1">Bus Stop</p>
-                                </div>
-                            </div>
-                            <div class="bus-eta">
-                                <p id="bus-eta-1">--</p>
-                            </div>
-                        </div>
-                    </div><div id="bus-card-2" class="bus-card hidden-always">
-                        <div class="bus-card-line"></div>
-                        <div class="bus-info-card">
-                            <div class="bus-info">
-                                <div class="bus-dest">
-                                    <div id="bus-dir-2" class="bus-dir">-</div>
-                                    <p id="bus-dest-2">--</p>
-                                </div>
-                                <div class="bus-stop">
-                                    <p id="bus-stop-2">--</p>
-                                </div>
-                            </div>
-                            <div class="bus-eta">
-                                <p id="bus-eta-2">--</p>
-                            </div>
-                        </div>
-                    </div><div id="bus-card-3" class="bus-card hidden-always">
-                        <div class="bus-card-line"></div>
-                        <div class="bus-info-card">
-                            <div class="bus-info">
-                                <div class="bus-dest">
-                                    <div id="bus-dir-3" class="bus-dir">-</div>
-                                    <p id="bus-dest-3">--</p>
-                                </div>
-                                <div class="bus-stop">
-                                    <p id="bus-stop-3">--</p>
-                                </div>
-                            </div>
-                            <div class="bus-eta">
-                                <p id="bus-eta-3">--</p>
-                            </div>
-                        </div>
-                    </div><div id="bus-card-4" class="bus-card hidden-always">
-                        <div class="bus-card-line"></div>
-                        <div class="bus-info-card">
-                            <div class="bus-info">
-                                <div class="bus-dest">
-                                    <div id="bus-dir-4" class="bus-dir">-</div>
-                                    <p id="bus-dest-4">--</p>
-                                </div>
-                                <div class="bus-stop">
-                                    <p id="bus-stop-4">--</p>
-                                </div>
-                            </div>
-                            <div class="bus-eta">
-                                <p id="bus-eta-4">--</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div> -->
-                <!-- <div class="content-container">
-                    <div class="info-card">
-                        <a id="flight-no" onclick="flightPull()">
-                            --
-                        </a>
-                        <div class="flight-route-container">
-                            <div class="dep-container">
-                                <div class="airport" id="dep-airport">
-                                    ---
-                                </div>
-                                <div class="flight-time" id="dep-time">
-                                    --:--
-                                </div>
-                                <div class="gate" id="dep-gate">
-                                    Gate: -
-                                </div>
-                                <div class="gate" id="dep-terminal">
-                                    Terminal: -
-                                </div>
-                            </div>
-                            
-                            <div class="spacer"></div>
-                            <div class="flight-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"/></svg>
-                            </div>
-                            <div class="spacer"></div>
-                            <div class="arr-container">
-                                <div class="airport" id="arr-airport">
-                                    ---
-                                </div>
-                                <div class="flight-time" id="arr-time">
-                                    --:--
-                                </div>
-                                <div class="gate" id="arr-gate">
-                                    Gate: -
-                                </div>
-                                <div class="gate" id="arr-terminal">
-                                    Terminal: -
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="spacer"></div>
-            </div>
-            
+                <div class="spacer-x" style="--size: 30px;"></div>
 
-            <!-- <div class="spacer"></div> -->
+                <div class="app-list layer1">
+                    <div class="item">Hello</div>
 
-            
-        </div>
-
-        <div id="main-container">
-            <div class="main-wrapper">
-                <a id="header">
-                    <p id="header-text">Home</p>
-                    <div class="fill-parent hstack">
-                        <div class="spacer"></div>
-                        <div class="sidebar-button open clickable-system hidden-desktop" onclick="widgetBarState()">
-                            <svg class="icon stroke" xmlns="http://www.w3.org/2000/svg" viewBox="6 6 36 36"><path stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" d="M6 11h36M6 37h36M6 24h36"></path></svg>
-                        </div>
-                        <div class="spacer-15"></div>
-                    </div>
-                </a>
-
-                <a id='google-search' class="content-container clickable-system" href="https://www.google.com">
-                    <div class="hstack">
-                        <div  class="content-icon primary-fg">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path></svg>
-                        </div>
-                        <div class="content-title secondary-fg">
-                            Google
-                        </div>
-                        <div class="spacer"></div>
-                    </div>
-                </a>
-                <div id="col-container">
-                    <div id="col-2">
-                        <div id="main-0" class="main hidden"></div>
-                        <div id="main-1" class="main hidden"></div>
-                        <div id="main-2" class="main hidden"></div>
-                        <div id="main-3" class="main hidden"></div>
-                        <div id="main-4" class="main hidden"></div>
-                        <div id="main-5" class="main main-tv hidden">
-                            <div class="tv-preview-header-back"></div>
-
-                            <div id="context-modal" onclick="contextHide()"></div>
-                            <div id="context-menu"></div>
-                            <div id="main-8-0">
-                                <div class="media-page-body">
-                                    <div class="spacer-x" style="--size: 20px;"></div>
-                                    <div class="media-title">Keep Watching</div>
-                                    <div id="tv-big-card" class="media-shadow" style="--poster: url('TV/background/mankind.webp');">
-                                        <div class="tv-big-gradient"></div>
-                                        <div id="tv-big-title" style="--poster: url('TV/title/mankind.png');"></div>
-                                        <div id="tv-big-service"></div>
-                                        <div class=" tv-big-button-tray">
-                                            <a id="tv-big-play" class="clickable" target="_blank">&#9658 Watch</a>
-                                            <div class="spacer-x" style="--size: 8px;"></div>
-                                            <a id="tv-big-more" class="clickable">
-                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><circle cx="192" cy="42.667" r="42.667"></circle><circle cx="192" cy="192" r="42.667"></circle><circle cx="192" cy="341.333" r="42.667"></circle></svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div id="tv-big-desc" class="media-title">slsolskfblkdshbvldjfh</div>
-                                    <div class="spacer-x hidden-mobile" style="--size: 20px;"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">Up next</div>
-                                    <div id="up-next-tray"></div>
-                                    <div id="video-tray-2" style="margin: 0px 0px;"></div>
-                                    <div class="media-title">Weekly</div>
-                                    <div id="weekly-tray"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">My list</div>
-                                    <div id="my-list-tray-2"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">Movies</div>
-                                    <div id="movie-tray"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">New</div>
-                                    <div id="new-show-tray"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">Paused</div>
-                                    <div id="paused-tray-2"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">Coming soon</div>
-                                    <div id="soon-tray"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">Up to Date</div>
-                                    <div id="up-to-date-tray"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">Rewatch</div>
-                                    <div id="rewatch-tray-2"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">Recently Watched Movies</div>
-                                    <div id="recent-movie-tray"></div>
-                                </div>
-                            </div>
-                            <div id="main-8-1" class="hidden-always">
-                                <div class="media-page-body">
-                                    <div class="spacer-15"></div>
-                                    <div class="media-title">Reading now</div>
-                                    <div id="book-tray-0"></div>
-                                    <div id="book-app-tray" style="margin: 10px 0px 0px;"></div>
-                                    <div class="spacer-15"></div>
-                                    <div class="media-title">Paused</div>
-                                    <div id="book-tray-1"></div>
-                                    <div class="spacer-15"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">To read</div>
-                                    <div id="book-tray-2"></div>
-                                    <div class="spacer-15"></div>
-                                    <div class="hline"></div>
-                                    <div class="media-title">Finished</div>
-                                    <div id="book-tray-3"></div>
-                                    <div class="spacer-x" style="--size: 30px;"></div>
-                                </div>
-                            </div>
-                            <div id="main-8-2" class="hidden-always">
-                                <div class="media-page-body">
-                                    <div class="spacer-15"></div>
-                                    <div class="media-title">Business & Economics</div>
-                                    <div id="pod-tray-0"></div>
-                                    <div class="spacer-15"></div>
-                                    <div class="media-title">Technology</div>
-                                    <div id="pod-tray-1"></div>
-                                    <div class="spacer-15"></div>
-                                    <div class="media-title">Stories</div>
-                                    <div id="pod-tray-2"></div>
-                                    <div class="spacer-15"></div>
-                                    <div class="media-title">Other</div>
-                                    <div id="pod-tray-3"></div>
-
-
-                                    <div class="spacer-x" style="--size: 30px;"></div>
-                                </div>
-                            </div>
-                            <div id="main-8-3" class="hidden-always">333333</div>
-                            <div id="main-8-4" class="hidden-always">444444</div>
-                            
-                            <div id="media-page-header">
-                                <div class="row1 hstack">
-                                    <p id="media-page-header-text"></p>
-                                    <a class="tv-preview-close clickable" onclick="menuSwitch(0)">
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492 492"><path d="M300.188 246L484.14 62.04c5.06-5.064 7.852-11.82 7.86-19.024 0-7.208-2.792-13.972-7.86-19.028L468.02 7.872C462.952 2.796 456.196.016 448.984.016c-7.2 0-13.956 2.78-19.024 7.856L246.008 191.82 62.048 7.872C56.988 2.796 50.228.016 43.02.016c-7.2 0-13.96 2.78-19.02 7.856L7.872 23.988c-10.496 10.496-10.496 27.568 0 38.052L191.828 246 7.872 429.952C2.808 435.024.02 441.78.02 448.984c0 7.204 2.788 13.96 7.852 19.028l16.124 16.116c5.06 5.072 11.824 7.856 19.02 7.856 7.208 0 13.968-2.784 19.028-7.856l183.96-183.952 183.952 183.952c5.068 5.072 11.824 7.856 19.024 7.856h.008c7.204 0 13.96-2.784 19.028-7.856l16.12-16.116c5.06-5.064 7.852-11.824 7.852-19.028 0-7.204-2.792-13.96-7.852-19.028L300.188 246z"></path></svg>
-                                    </a>
-                                </div>
-                                <div class="row2 hstack">
-                                    <div id="media-page-switch-tray"></div>
-                                </div>
-                            </div>
-                            
-
-                        </div>
-    
-                    </div>
                 </div>
-            </div>
+                <div class="spacer-x" style="--size: 30px;"></div>
+
+
+                <div class="app-list layer1">
+                    <div class="title">Productivity</div>
+                    <div class="spacer-x" style="--size: 10px;"></div>
+                    <div class="hline"></div>
+
+                    <div class="spacer-x" style="--size: 5px;"></div>
+
+                    <a class="item">
+                        <div class="icon chase"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="242.260986328125 0.26698315143585205 54.9830322265625 54.9830322265625"><path d="M261.929.275a1.94 1.94 0 0 0-1.941 1.94V15.82h35.94L279.562.276 261.93.275"/><path d="M297.244 19.937A1.934 1.934 0 0 0 295.303 18H281.7V53.94l15.538-16.375.006-17.629"/><path d="M277.579 55.242c1.07 0 1.939-.87 1.939-1.943V39.697h-35.943l16.37 15.543 17.634.002"/><path d="M242.261 35.582c0 1.073.87 1.947 1.944 1.947h13.6V1.584l-15.541 16.37-.003 17.628"/></svg></div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                        <p>Chase</p>
+                    </a>
+                    <div class="spacer-x" style="--size: 5px;"></div>
+
+                    <a class="item">
+                        <div class="icon google-red"><svg data-bbox="1 7 48 36" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M5.5 7C3.02 7 1 9.02 1 11.5v.426L25 29l24-17.074V11.5C49 9.02 46.98 7 44.5 7zm.852 2h37.293L25 22zM1 14.027V38.5C1 40.98 3.02 43 5.5 43h39c2.48 0 4.5-2.02 4.5-4.5V14.027l-6 4.27V41H7V18.297z" /></g></svg></div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                        <p>Gmail</p>
+                    </a>
+
+                </div>
+            </div> -->
         </div>
-
-
     </div>
-
-
-
-
-
-
-    <script src="script/load.js"></script>
-    
-    <script src="script/media/bookData.js"></script>
-    <script src="script/media/podData.js"></script>
-    <script src="script/media/tvData.js"></script>
-    <script src="script/appData.js"></script>
-    <script src="script/pageData.js"></script>
-
-    <script src="script/calendar.js"></script>
-    <script src="script/location.js"></script>
-
-
-
-    <script src="script/media/media.js"></script>
-    <script src="script/elements.js"></script>
-
-    <script src="script/apps.js"></script>
-    <script src="script/switches.js"></script>
-    <script src="script/date.js"></script>
-    <script src="script/widget.js"></script>
-    <script src="script/bus.js"></script>
-    <script src="script/flight.js"></script>
-    <script src="script/pages.js"></script>
-    <script src="script/w3.js"></script>
-    <script src="script/user.js"></script>
 </body>
 
+<script src="script/load.js"></script>
+<script src="script/apps/appData.js"></script>
+<script src="script/apps/apps.js"></script>
+
+<script src="script/widget.js"></script>
+
+
+<script src="script/media/media.js"></script>
+<script src="script/media/tvData.js"></script>
+<script src="script/media/video.js"></script>
+<script src="script/media/bookData.js"></script>
+<script src="script/media/podData.js"></script>
+<script src="script/media/bookPod.js"></script>
+
+<script src="script/elements.js"></script>
+
+<script src="script/pageData.js"></script>
 </html>

@@ -1,213 +1,172 @@
-.status-box{
-    display: flex;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-
-    height: 45px;
-    box-sizing: border-box;
-    padding: 5px;
-    border-radius: 25px;
-    background: var(--dark-layer-2);
-    transition: all 0.5s;
-    transition-timing-function: ease-in-out;
-    pointer-events: none;
-}
-.status-box-show{
-    top: 40px;
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.3);
-}
-.status-box-hide{
-    top: -45px;
-}
-
-.status-icon-box{
+.hstack{
     display: flex;
     position: relative;
+    flex-direction: row;
+
     align-items: center;
     justify-content: center;
-    height: 35px;
-    width: 35px;
-    background: var(--dark-layer-1);
-    fill: var(--light-layer-0);
-    border-radius: 100%;
 }
-.status-icon{
-    height: 12px;
-    width: 12px;    
-}
-.status-text-box{
+.vstack{
     display: flex;
     position: relative;
+    flex-direction: column;
+
     align-items: center;
     justify-content: center;
-    height: 35px;
-    min-width: 50px;
-    padding: 0px 10px;
-}
-.status-text{
-    color: var(--light-layer-0);
-    font-size: 13px;
-    font-weight: 600;
 }
 
+.hline{
+    flex-shrink: 0;
+    height: 1px;
+    width: 100%;
+    border-radius: 5px;
 
+    background-color: var(--white-10);
+}
+.hline.list{
+    width: calc(100% - 58px);
+    margin-left: 58px;
+}
+.hline-content{
+    flex-shrink: 0;
+    height: 1px;
+    width: calc(100% - 80px);
+    border-radius: 5px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.new-button{
-    display: block;
-    position: relative;
-    height: 100px;
-    width: calc((100vw - 100px) / 2);
-    max-height: 50px;
-    max-width: 50px;
-    background: green;
-
-    margin: 0px 20px 10px;
-    border-radius: 10px;
-
-    /* box-shadow: var(--element-light); */
-    transition: all 0.15s;
+    background-color: var(--white-10);
+}
+.hscroll{
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    margin: 0px;
+    scroll-snap-type: x mandatory;
 }
 
 
-
-
-.tap-container{
-    display: inline-flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    vertical-align: top;
-    width: calc((100% - 20px) / 2);
-    /* width: calc((100vw - 280px - 70px) / 2); */
-    /* max-width: 100px; */
-    height: 120px;
-    border-radius: 15px;
-
-    margin-top: 20px;
-    margin-right: 10px;
-
-    box-shadow: var(--shaded-light);
-    transition: all 0.25s;
-
-    /* scroll-snap-align: start; */
-    /* scroll-margin-left: 15px; */
-    /* display: none; */
+.spacer-x{
+    height: var(--size);
+    width: var(--size);
+    flex-shrink: 0;
 }
-.tap-container:active{
-    /* scale: 0.9; */
-    opacity: 0.75;
+.spacer-content{
+    height: 20px;
+    width: 20px;
+    flex-shrink: 0;
 }
-
-.tap-icon-container{
-    display: inline-flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-
-    top: 15px;
-    left: 15px;
-
-    /* width: 58px; */
-    /* height: 58px; */
-    /* border-radius: 25px; */
-
-    transition: 0.25s;
-
-    /* background-color: var(--black-20); */
-}
-.tap-icon{
-    fill: var(--white-100);
+.spacer-app-list{
     height: 30px;
-    /* min-width: 10px; */
     width: 30px;
-    /* max-height: 22px; */
-    transition: 0.25s;
-    /* background-size: contain; */
+    flex-shrink: 0;
 }
-.tap-text{
-    display: inline-flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
 
-    bottom: 15px;
-    left: 15px;
-    /* padding-left: 5px; */
-
-    transition: inherit;
-
-    color: var(--white-100);
-    font-size: 16px;
-    font-weight: 500;
+.grow{
+    flex-grow: 1;
 }
-.tap-link{
-    display: inline-flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
-
-    top: 0px;
-    left: 0px;
-
-    border-radius: inherit;
+.fill-parent{
     height: 100%;
     width: 100%;
-    z-index: 3;
+}
+.fill-width{
+    width: 100%;
+}
+.fill-height{
+    height: 100%;
 }
 
+
+.clickable{
+    /* transition: all 0.2s; */
+}
+
+.clickable:active{
+    /* transition: all 0s; */
+    filter: brightness(0.75);
+}
+
+.page-width{
+    width: calc(100% - 80px);
+}
+
+/* .clickable{
+    transition-property: scale, filter;
+    transition-duration: 0.35s, 0.4s;
+    transition-delay: 0s, 0.15s;
+    transition-timing-function: all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    outline: none;
+}
+.clickable:active{
+    transition-property: scale, filter;
+    transition-duration: 0.35s, 0.05s;
+    transition-delay: 0.5s, 0s;
+    scale: 0.9;
+
+    filter: brightness(0.75);
+} */
+
+
+.content-container{
+    flex-direction: column;
+    
+    width: calc(100% - 30px);
+    padding: 12px 0px;
+    border-radius: 10px;
+
+    /* background-color: var(--dark-layer-2); */
+}
+
+.content-title{
+    font-size: 16px;
+    font-weight: 600;
+    cursor: default;
+
+    align-self: flex-start;
+    padding-left: 15px;
+}
+
+#search{
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 10px 12px;
+
+    font-weight: 400;
+    font-size: 14px;
+
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#search .icon{
+    width: 13px;
+    height: 13px;
+}
+
+.card-shadow{
+    box-shadow: 0 8px 24px var(--black-10);
+}
 
 @media screen and (prefers-color-scheme: light) {
-   
-}
-
-
-
-@media(min-width: 450px){
-    .new-button:hover{
-        scale: 1.1  ;
-        box-shadow: var(--element-light-hover);
+    .hline{
+        background-color: var(--black-10);
     }
-    .new-button:active{
-        scale: 0.95;
-        box-shadow: var(--element-light);
+    .hline-content{
+        background-color: var(--black-10);
     }
 }
 
 @media(max-width: 450px){
-    .new-button{
-        max-width: initial;
-        max-height: initial;
+    .spacer-app-list{
+        height: 20px;
+        width: 20px;
+        flex-shrink: 0;
     }
-    .new-button:active{
-        scale: 0.9;
+    .page-width{
+        width: calc(100% - 40px);
     }
-
-
-
-
-    .tap-container{
-        width: calc((100vw - 50px) / 2);
+    .hline-content{
+        width: calc(100% - 40px);
     }
-    
-    
 }
-

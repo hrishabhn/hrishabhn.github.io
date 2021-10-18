@@ -1,84 +1,132 @@
-function mainPopulate(){
-    calendarDate()
-    getUserLocale()
+function loadApp() {
+    baseElements[0].render()
+    pageDataRender()
+    // console.log(dateNow())
+    // console.log(processMonth(dateNow()[1],'long'))
+    // console.log(processDay(dateNow()[3],'long'))
 
-    todayWidget()
 
-    apps()
-    media()
-
-    statusBar(1000,4000)
-    // mainPage(5)
-    // popupTVPopulate(1)
-    // popupBusShow()
-    // popupSideShow()
+    // console.log(processTime(dateNow()[4],dateNow()[5]))
 }
 
-function newPopulate(){
-    calendarDate()
-    getUserLocale()
+const body = document.getElementById('body')
 
-    todayWidget()
-    allWidgets.initial()
+const baseElements = [
+    {
+        id: 'leftbar',
+        render: function() {
+            const element = document.getElementById(this.id)
 
-    pages.render()
+            var time = document.createElement('div')
+            time.classList = 'time hidden-mobile'
+            time.innerHTML = processTime(dateNow().hour,dateNow().minute)
 
-    
-    apps()
-    switches()
-    mediaPopulate()
-    menuItems.render()
+            var date = document.createElement('div')
+            date.classList = 'date hidden-mobile'
+            date.innerHTML = `${processDay(dateNow().day,'long')}, ${dateNow().date} ${processMonth(dateNow().month,'long')}`
 
-    // flightPull()
-    // showMediaPopup()
-    userLoad()
-    searchLoad()
-    // widgetBarState()
+            // console.log(processDay(dateNow().day,'long'))
 
-    // console.log(getCoords())
-}
-function openFullscreen() {
-    const elem = document.documentElement
-
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
+            element.append(time)
+            element.append(date)
+        },
     }
+]
+
+
+
+
+
+
+function dateNow() {
+    var date = new Date()
+    // console.log(date)
+
+    const dateObject = {
+        year: date.getFullYear(),
+        month: date.getMonth(),
+        date: date.getDate(),
+        day: date.getDay(),
+        hour: date.getHours(),
+        minute: date.getMinutes(),
+        second: date.getSeconds(),
+    }
+
+    return dateObject
 }
 
-function locationBasedLoad(userLocale) {
-    storeLocale(userLocale)
+function processMonth(monthIndex,type) {
+    if (type == 'short') {
+        var months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct']
+    } else if (type == 'long') {
+        var months = ['january','february','march','april','may','june','july','august','september','october']
+    }
 
-    // statusBar(1000,4000)
-    document.getElementById("locale-current").innerHTML = globalLocale;
-
-    // smartCards(globalLocale)
-    buses(globalLocale)
-    // courseApps(globalLocale)
+    return months[monthIndex]
 }
 
-function mainRefresh() {
-    calendarDate()
-    getUserLocale()
-    // smartCards()
-    todayWidget()
-    allWidgets.refresh()
-    // statusBar(0,1500)
-    resetBusCards()
-    // console.log("refreshed")
+function processDay(dayIndex,type) {
+    if (type == 'short') {
+        var days = ['sun','mon','tue','wed','thu','fri','sat']
+    } else if (type == 'long') {
+        var days = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+    }
+
+    return days[dayIndex]
+}
+
+function processTime(hours,mins) {
+    var ampm = 'am'
+
+    if (hours > 12) {
+        hours = hours - 12
+        ampm = 'pm'
+    }
+
+    if (hours == 0) {
+        hours = 12
+    }
+
+    return `${hours}:${mins}${ampm}`
 }
 
 
+function countdownCalculate(date) {
+    if (!date) {
+        return null
+    }
 
-function searchLoad() {
-    const searchElement = document.getElementById('google-search')
 
-    if ('ontouchstart' in document.documentElement) {
-        searchElement.href = 'google://search'
+    var futureDate = new Date(date).getTime()
+    // console.log(futureDate)
+    var nowDate = new Date().getTime()
+    var distance = futureDate - nowDate
+    var past = false
+
+    if (distance < 0) {
+        distance = nowDate - futureDate
+        past = true
+    }
+    // console.log(distance)
+    // console.log(past)
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var result
+
+    if (days > 0) {
+        result = [days,'days']
+    } else if (hours > 0) {
+        result = [hours,'hours']
+    } else if (minutes > 0) {
+        result = [minutes,'minutes']
     } else {
-        searchElement.href = 'https://www.google.com'
+        result = [seconds,'seconds']
     }
+
+
+    return result
+    console.log(string)
 }

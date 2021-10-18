@@ -10,7 +10,7 @@ function bookTrayElement(a) {
         var book = document.createElement('div')
         book.classList = 'media-card'
         book.innerHTML = `
-        <a class="book poster clickable media-shadow" style="--poster: url('../media-image/books/${bookCurrentData.id}.${bookCurrentData.coverType}');" href="${processLink(bookCurrentData.link)}"></a>
+        <a class="book poster clickable media-shadow" style="--poster: url('media-image/books/${bookCurrentData.id}.${bookCurrentData.coverType}');" href="${processLink(bookCurrentData.link)}"></a>
         <div class="info fill-width">
             <p>${bookCurrentData.progress}</p>
             <div class="grow"></div>
@@ -42,7 +42,7 @@ function podTrayElement(a) {
         var pod = document.createElement('div')
         pod.classList = 'media-card'
         pod.innerHTML = `
-        <a class="pod poster clickable media-shadow" style="--poster: url('../media-image/podcasts/${podCurrentData.id}.${podCurrentData.coverType}');" href="${processLink(podCurrentData.link)}"></a>
+        <a class="pod poster clickable media-shadow" style="--poster: url('media-image/podcasts/${podCurrentData.id}.${podCurrentData.coverType}');" href="${processLink(podCurrentData.link)}"></a>
         <div class="info fill-width">
             <p>${podCurrentData.name}</p>
             <div class="grow"></div>
