@@ -83,7 +83,7 @@ function searchElement(contentItem) {
     var element = document.createElement('a')
     element.id = 'search'
     element.href = contentItem.link
-    element.target = '_blank'
+    // element.target = '_blank'
     element.classList = 'layer-1 button-text card-shadow clickable page-width'
 
     var icon = document.createElement('div')
