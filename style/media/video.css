@@ -51,9 +51,10 @@
     padding: 0px 10px;
     border-radius: 10px;
 }
-#tv-big-card .button-tray #tv-big-more{
+#tv-big-card .button-tray .app{
     width: 30px;
     padding: 8px;
+    fill: white;
 }
 #tv-big-title{
     position: absolute;
