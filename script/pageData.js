@@ -59,6 +59,7 @@ const pageData0 = {
 
                 var tray = document.createElement('div')
                 tray.classList = 'page-width'
+                tray.id = 'course-switch-tray'
                 // tray.innerHTML = courseHTML
 
                 for (let i = 0; i < this.data.length; i++) {
@@ -79,20 +80,6 @@ const pageData0 = {
                     }
                 }
 
-                return tray
-            }
-        },
-        {
-            type: 'spacer-content',
-        },
-        {
-            type: 'apps',
-            title: courseData[getCookie('course')].name,
-            devices: null,
-            data: courseData[getCookie('course')].apps,
-            render: function () {
-                var tray = bookmarkRender(this)
-                tray.id = 'course-tray'
                 return tray
             }
         },
