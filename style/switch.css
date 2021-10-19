@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 70px;
     width: var(--dataLength);
-    width: calc((100% - (15px* (var(--dataLength) - 1))) / var(--dataLength));
+    width: calc((100% - (15px * (var(--dataLength) - 1))) / var(--dataLength));
     /* flex-grow: 1; */
     padding: 10px;
     border-radius: 10px;
@@ -34,4 +34,22 @@
 .switch .text{
     font-size: 12px;
     font-weight: 500;
+}
+
+@media(max-width: 450px){
+    .switch{
+        padding: 0;
+        background: none;
+        height: auto;
+        width: calc((100% - (10px * (var(--dataLength) - 1))) / var(--dataLength));
+    }
+    .switch .text{
+        display: none;
+    }
+
+    .switch .icon{
+        width: 100%;
+
+    }
+
 }
