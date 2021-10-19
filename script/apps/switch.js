@@ -86,7 +86,7 @@ function courseSwitch(newCourseIndex) {
     newCourseElement.children[0].classList.add(`${newCourseData.color}-fg`)
 
     var oldTray = document.getElementById('course-tray')
-    var newTray = bookmarkRender(
+    var newTray = appLinkRender(
         {
             title: courseData[newCourseIndex].name,
             devices: null,
