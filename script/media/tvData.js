@@ -867,6 +867,42 @@ const movieData4 = [
         },
     },
     {
+        name: 'Succession',
+        id: 'succession',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 2,
+               yearStart: 2018,
+               yearEnd: null,
+               genre: [
+                   'comedy',
+                   'drama',
+               ],
+            },
+            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
+        },
+        style: {
+            color: '43332d',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/succession-2018',
+            imdbID: 'tt7660850',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'The Spy',
         id: 'spy',
         link: {
@@ -986,42 +1022,6 @@ const movieData4 = [
             tvTimeID: 'tt8594324',
             reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
             // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Succession',
-        id: 'succession',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            // date: '',
-            // weekday: '',
-            desc: {
-               seasons: 2,
-               yearStart: 2018,
-               yearEnd: null,
-               genre: [
-                   'comedy',
-                   'drama',
-               ],
-            },
-            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
-        },
-        style: {
-            color: '43332d',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/succession-2018',
-            imdbID: 'tt7660850',
             // subReddit: 'subreddit',
         },
     },
