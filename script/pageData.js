@@ -66,7 +66,7 @@ const pageData0 = {
                     var courseElement = document.createElement('a')
                     courseElement.id = `course-switch-${i}`
                     courseElement.classList = 'switch layer-1 card-shadow clickable'
-                    courseElement.style.setProperty('--width',`calc((100% - (15px* (10 - 1))) / 10)`)
+                    courseElement.style.setProperty('--dataLength',this.data.length)
                     courseElement.onclick = function() { courseSwitch(i) }
                     courseElement.innerHTML = `
                     <div class="icon ${this.data[i].color}">${this.data[i].icon}</div>
