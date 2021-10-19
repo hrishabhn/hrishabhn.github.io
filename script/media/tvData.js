@@ -649,6 +649,34 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: 'Dave Chappelle: The Closer',
+        id: 'closer',
+        link: {
+            netflix: '81228510'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            description: 'Comedy Special &#149 2001',
+            summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight — and get a few things off his chest.",
+        },
+        style: {
+            color: '6d223c',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/dave-chappelle-the-closer-2021',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Dil Chahta Hai',
         id: 'dil',
         link: {
