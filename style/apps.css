@@ -86,7 +86,17 @@
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.25;
+}
+.link .fg{
+    position: absolute;
+    --dif: 2px;
+    top: var(--dif);
+    left: var(--dif);
+    height: calc(100% - (2 * var(--dif)));
+    width: calc(100% - (2 * var(--dif)));
+    border-radius: calc(10px - var(--dif));
+    opacity: 0;
 }
 .link .icon{
     height: 24px;
@@ -193,6 +203,7 @@
     width: calc((100% - 20px) / 2);
     padding: 15px;
     border-radius: 10px;
+    text-decoration: none;
 }
 .shortcut .icon{
     height: 28px;
