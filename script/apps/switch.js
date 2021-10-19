@@ -102,5 +102,5 @@ function courseSwitch(newCourseIndex) {
         insertAfter(spacerContentElement(),document.getElementById('course-switch-tray'))
     }
 
-    setCookie('course',newCourseIndex,10)
+    setCookie('course',newCourseIndex,1/24)
 }
