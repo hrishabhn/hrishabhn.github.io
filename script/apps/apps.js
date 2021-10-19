@@ -293,3 +293,50 @@ function pageShortcutString(page) {
 
     return htmlString
 }
+
+
+function appLinkRender(content) {
+    var container = document.createElement('div')
+    container.classList = `bookmark-tray layer-1 card-shadow page-width ${content.devices}`
+
+    var title = document.createElement('div')
+    title.classList = 'title'
+    title.innerHTML = content.title
+
+    container.append(title)
+    container.append(spacerElement(10))
+    container.append(hlineElement())
+    container.append(spacerElement(10))
+
+    var hscroll = hscrollElement()
+
+    for (let i = 0; i < content.data.length; i++) {
+        var link = document.createElement('div')
+        link.classList = `${content.data[i].devices}`
+        // link.innerHTML = `
+        // <div class="bookmark-container ${content.data[i].devices}">
+        //     <div class="vstack">
+        //         <a class="icon ${content.data[i].background}" href="${content.data[i].link}" target="_${content.data[i].target}">${content.data[i].icon}</svg></a>
+        //         <div class="spacer-x" style="--size: 4px;"></div>
+        //         <p>${content.data[i].name}</p>
+        //     </div>
+        //     <div class="spacer-x" style="--size: 10px;"></div>
+        // </div>`
+        link.innerHTML = `
+            <a class="link layer-1 clickable" href="${content.data[i].link}" target="_${content.data[i].target}">
+                <div class="bg ${content.data[i].background}"></div>
+                <div class="icon ${content.data[i].background}">${content.data[i].icon}</div>
+                <div class="grow"></div>
+                <p class="text button-text">${content.data[i].name}</p>
+            </a>
+            <div class="spacer-x" style="--size: 10px;"></div>`
+
+        hscroll.append(link)
+        // console.log(content.data[i])
+    }
+
+    container.append(hscroll)
+    // console.log(content.data)
+
+    return container
+}
