@@ -325,6 +325,7 @@ function appLinkRender(content) {
         link.innerHTML = `
             <a class="link layer-1 clickable" href="${content.data[i].link}" target="_${content.data[i].target}">
                 <div class="bg ${content.data[i].background}"></div>
+                <div class="fg layer-1"></div>
                 <div class="icon ${content.data[i].background}">${content.data[i].icon}</div>
                 <div class="grow"></div>
                 <p class="text button-text">${content.data[i].name}</p>
