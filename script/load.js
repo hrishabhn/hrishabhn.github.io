@@ -88,6 +88,10 @@ function processTime(hours,mins) {
         hours = 12
     }
 
+    if (mins < 10) {
+        mins = `0${mins}`
+    }
+
     return `${hours}:${mins}${ampm}`
 }
 
