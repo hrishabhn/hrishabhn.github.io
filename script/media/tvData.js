@@ -37,39 +37,6 @@
 // },
 const movieData0 = [
     {
-        name: 'Dopesick',
-        id: 'dopesick',
-        link: 'https://www.hulu.com/series/dopesick-227de06a-d3d4-42e0-9df1-bb5495e1738d',
-        info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
-            // date: '',
-            weekday: 'Wednesdays',
-            desc: {
-               seasons: 1,
-               yearStart: 2021,
-               yearEnd: null,
-               genre: [
-                   'drama',
-               ],
-            },
-            summary: "From Executive Producer Danny Strong and starring and executive produced by Michael Keaton, “Dopesick” examines how one company triggered the worst drug epidemic in American history. The series takes viewers to the epicenter of America’s struggle with opioid addiction, from the boardrooms of Big Pharma, to a distressed Virginia mining community, to the hallways of the DEA. Defying all the odds, heroes will emerge in an intense and thrilling ride to take down the craven corporate forces behind this national crisis and their allies. The limited series is inspired by the New York Times bestselling book by Beth Macy.",
-        },
-        style: {
-            color: '339999',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '390716',
-            reelgoodLink: 'https://reelgood.com/show/dopesick-2021',
-            imdbID: 'tt9174558',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: "Brooklyn Nine-Nine",
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
@@ -98,6 +65,41 @@ const movieData0 = [
             tvTimeID: "269586",
             reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
             imdbID: "tt2467372",
+        },
+    },
+    {
+        name: 'Archer',
+        id: 'archer',
+        link: 'https://www.hulu.com/series/archer-22b4b3c8-0827-42d2-a841-50e8f3464dc2',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 12,
+               yearStart: 2009,
+               yearEnd: null,
+               genre: [
+                   'action',
+                   'animation',
+                   'crime',
+               ],
+            },
+            summary: "Covert black ops and espionage take a back seat to zany personalities and relationships between secret agents and drones.",
+        },
+        style: {
+            color: '337799',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '110381',
+            reelgoodLink: 'https://reelgood.com/show/archer-2009',
+            imdbID: 'tt1486217',
+            // subReddit: 'subreddit',
         },
     },
     {
@@ -173,6 +175,39 @@ const movieData0 = [
         },
     },
     {
+        name: 'Dopesick',
+        id: 'dopesick',
+        link: 'https://www.hulu.com/series/dopesick-227de06a-d3d4-42e0-9df1-bb5495e1738d',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            // date: '',
+            weekday: 'Wednesdays',
+            desc: {
+               seasons: 1,
+               yearStart: 2021,
+               yearEnd: null,
+               genre: [
+                   'drama',
+               ],
+            },
+            summary: "From Executive Producer Danny Strong and starring and executive produced by Michael Keaton, “Dopesick” examines how one company triggered the worst drug epidemic in American history. The series takes viewers to the epicenter of America’s struggle with opioid addiction, from the boardrooms of Big Pharma, to a distressed Virginia mining community, to the hallways of the DEA. Defying all the odds, heroes will emerge in an intense and thrilling ride to take down the craven corporate forces behind this national crisis and their allies. The limited series is inspired by the New York Times bestselling book by Beth Macy.",
+        },
+        style: {
+            color: '339999',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '390716',
+            reelgoodLink: 'https://reelgood.com/show/dopesick-2021',
+            imdbID: 'tt9174558',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: "Cowboy Bebop",
         id: "cowboy",
         link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
@@ -202,41 +237,6 @@ const movieData0 = [
             tvTimeID: "76885",
             reelgoodLink: "https://reelgood.com/show/cowboy-bebop-1998",
             imdbID: "tt0213338",
-        },
-    },
-    {
-        name: 'Archer',
-        id: 'archer',
-        link: 'https://www.hulu.com/series/archer-22b4b3c8-0827-42d2-a841-50e8f3464dc2',
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            // date: '',
-            // weekday: '',
-            desc: {
-               seasons: 12,
-               yearStart: 2009,
-               yearEnd: null,
-               genre: [
-                   'action',
-                   'animation',
-                   'crime',
-               ],
-            },
-            summary: "Covert black ops and espionage take a back seat to zany personalities and relationships between secret agents and drones.",
-        },
-        style: {
-            color: '337799',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '110381',
-            reelgoodLink: 'https://reelgood.com/show/archer-2009',
-            imdbID: 'tt1486217',
-            // subReddit: 'subreddit',
         },
     },
 ]
