@@ -76,7 +76,8 @@ const pageData0 = {
                     tray.append(courseElement)
 
                     if (i < this.data.length - 1) {
-                        tray.append(spacerElement(15))
+                        tray.append(spacerElement(10))
+                        tray.append(spacerElement(5,'hidden-mobile'))
                     }
                 }
 
