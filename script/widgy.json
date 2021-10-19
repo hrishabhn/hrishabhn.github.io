@@ -1,26 +1,32 @@
 ﻿[
   {
-    "name": "Midnight Mass",
-    "id": "midnight",
-    "image": "https://hrishabhn.github.io/TV/background/midnight.webp",
-    "service": "Netflix"
-  },
-  {
-    "name": "Cowboy Bebop",
-    "id": "cowboy",
-    "image": "https://hrishabhn.github.io/TV/background/cowboy.jpeg",
+    "name": "Brooklyn Nine-Nine",
+    "id": "brooklyn",
+    "image": "https://hrishabhn.github.io/media-image/TV/background/brooklyn.webp",
     "service": "Hulu"
   },
   {
     "name": "Archer",
     "id": "archer",
-    "image": "https://hrishabhn.github.io/TV/background/archer.webp",
+    "image": "https://hrishabhn.github.io/media-image/TV/background/archer.webp",
     "service": "Hulu"
   },
   {
-    "name": "Brooklyn Nine-Nine",
-    "id": "brooklyn",
-    "image": "https://hrishabhn.github.io/TV/background/brooklyn.webp",
+    "name": "Memories of the Alhambra",
+    "id": "memories",
+    "image": "https://hrishabhn.github.io/media-image/TV/background/memories.webp",
+    "service": "Hulu"
+  },
+  {
+    "name": "Midnight Mass",
+    "id": "midnight",
+    "image": "https://hrishabhn.github.io/media-image/TV/background/midnight.webp",
+    "service": "Netflix"
+  },
+  {
+    "name": "Cowboy Bebop",
+    "id": "cowboy",
+    "image": "https://hrishabhn.github.io/media-image/TV/background/cowboy.jpeg",
     "service": "Hulu"
   }
 ]
