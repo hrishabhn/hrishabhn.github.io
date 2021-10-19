@@ -29,12 +29,12 @@ const podData0 = [
         coverType: 'jpeg',
     },
     {
-        name: "Prof G Show",
-        id: "profg",
+        name: "Business Casual",
+        id: "businessCasual",
         link: {
-            applePod: 'id1498802610'
+            applePod: 'id1480059697'
         },
-        author: "Kara Swisher & Scott Galloway",
+        author: "Morning Brew Podcasts",
         coverType: 'jpeg',
     },
     {
@@ -43,7 +43,7 @@ const podData0 = [
         link: {
             youtube: 'forwardpod'
         },
-        author: "Andrew Yang & Zach??",
+        author: "Andrew Yang & Zach Graumann",
         coverType: 'jpeg',
     },
     {
@@ -53,6 +53,15 @@ const podData0 = [
             youtube: 'NewEconomicThinking'
         },
         author: "Rob Johnson",
+        coverType: 'jpeg',
+    },
+    {
+        name: "Prof G Show",
+        id: "profg",
+        link: {
+            applePod: 'id1498802610'
+        },
+        author: "Kara Swisher & Scott Galloway",
         coverType: 'jpeg',
     },
 ]
@@ -66,6 +75,24 @@ const podData1 = [
             youtube: 'Waveform'
         },
         author: "Marques Brownlee",
+        coverType: 'jpeg',
+    },
+    {
+        name: "Decoder",
+        id: "decoder",
+        link: {
+            applePod: 'id1011668648'
+        },
+        author: "Nilay Patel",
+        coverType: 'jpeg',
+    },
+    {
+        name: "The Vergecast",
+        id: "vergecast",
+        link: {
+            applePod: 'id430333725'
+        },
+        author: "The Verge",
         coverType: 'jpeg',
     },
     {
