@@ -2,7 +2,8 @@
     align-items: flex-start;
     flex-direction: column;
     height: 70px;
-    width: var(--width);
+    width: var(--dataLength);
+    width: calc((100% - (15px* (var(--dataLength) - 1))) / var(--dataLength));
     /* flex-grow: 1; */
     padding: 10px;
     border-radius: 10px;
