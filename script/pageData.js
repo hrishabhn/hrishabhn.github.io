@@ -46,7 +46,7 @@ const pageData0 = {
             devices: null,
             data: productivityApps,
             render: function () {
-                return bookmarkRender(this)
+                return appLinkRender(this)
             }
         },
         {
@@ -174,7 +174,7 @@ const pageData2 = {
             devices: null,
             data: shoppingApps,
             render: function () {
-                return bookmarkRender(this)
+                return appLinkRender(this)
             }
         },
         {
@@ -186,7 +186,7 @@ const pageData2 = {
             // devices: 'hidden-desktop',
             data: iosSystemApps,
             render: function () {
-                return bookmarkRender(this)
+                return appLinkRender(this)
             }
         },
         {
@@ -199,7 +199,7 @@ const pageData2 = {
             // devices: 'hidden-desktop',
             data: financeApps,
             render: function () {
-                return bookmarkRender(this)
+                return appLinkRender(this)
             }
         },
         {
@@ -212,7 +212,7 @@ const pageData2 = {
             devices: null,
             data: learningApps,
             render: function () {
-                return bookmarkRender(this)
+                return appLinkRender(this)
             }
         },
         {
@@ -224,7 +224,7 @@ const pageData2 = {
             devices: null,
             data: socialApps,
             render: function () {
-                return bookmarkRender(this)
+                return appLinkRender(this)
             }
         },
         {
@@ -335,7 +335,7 @@ const pageData3 = {
             devices: null,
             data: videoApps,
             render: function () {
-                return bookmarkRender(this)
+                return appLinkRender(this)
             }
         },
         {
@@ -571,7 +571,7 @@ const pageData4 = {
             devices: null,
             data: bookApps,
             render: function () {
-                return bookmarkRender(this)
+                return appLinkRender(this)
             }
         },
         {
