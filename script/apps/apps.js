@@ -340,3 +340,46 @@ function appLinkRender(content) {
 
     return container
 }
+
+
+function appShortcutTrayRender(content) {
+    var tray = document.createElement('div')
+    tray.classList = 'shortcut-tray page-width'
+
+    tray.innerHTML = `
+    <div class="subtray">
+        ${appShortcutString(content.data[0])}
+        <div class="spacer-x" style="--size: 15px;"></div>
+        <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
+        ${appShortcutString(content.data[1])}
+    </div>
+    <div class="spacer-x" style="--size: 15px;"></div>
+    <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
+    <div class="subtray">
+        ${appShortcutString(content.data[2])}
+        <div class="spacer-x" style="--size: 15px;"></div>
+        <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
+        ${appShortcutString(content.data[3])}
+    </div>`
+
+    return tray
+}
+
+function appShortcutString(app) {
+    // console.log(page.info.style)
+
+    // var shortcut = document.createElement('a')
+    // shortcut.classList = 'shortcut layer-1 clickable card-shadow'
+    // shortcut.onclick = function() { pageData[page.info.id].open() }
+    
+    // console.log(shortcut)
+
+    var htmlString = `
+    <a class="shortcut layer-1 clickable card-shadow" href="${app.link}" target="_${app.target}">
+        <div class="icon ${app.background}">${app.icon}</div>
+        <div class="grow"></div>
+        <p class="text button-text">${app.name}</p>
+    </a>`
+
+    return htmlString
+}
