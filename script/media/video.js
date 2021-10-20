@@ -40,22 +40,22 @@ function tvBig(a,b) {
     if (movie.apps.tvTimeID) {
         tvTime.href = `https://www.tvtime.com/en/show/${movie.apps.tvTimeID}`
     } else {
-        tvTime.removeAttribute.href
+        tvTime.removeAttribute('href')
     }
     if (movie.apps.reelgoodLink) {
         reelgood.href = movie.apps.reelgoodLink
     } else {
-        reelgood.removeAttribute.href
+        reelgood.removeAttribute('href')
     }
     if (movie.apps.imdbID) {
         imdb.href = `https://www.imdb.com/title/${movie.apps.imdbID}`
     } else {
-        imdb.removeAttribute.href
+        imdb.removeAttribute('href')
     }
     if (movie.apps.subReddit) {
         reddit.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
     } else {
-        reddit.removeAttribute.href
+        reddit.removeAttribute('href')
     }
 
 
