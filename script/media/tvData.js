@@ -869,9 +869,7 @@ const movieData4 = [
     {
         name: 'Succession',
         id: 'succession',
-        // link: {
-        //     netflix: '80197526'
-        // },
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GWukCJAq-nIuHwwEAAAB4:type:series',
         info: {
             service: 'hbo',
             studio: 'hbo',
