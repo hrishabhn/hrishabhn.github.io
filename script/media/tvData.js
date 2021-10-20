@@ -103,6 +103,74 @@ const movieData0 = [
         },
     },
     {
+        name: 'Succession',
+        id: 'succession',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GWukCJAq-nIuHwwEAAAB4:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 2,
+               yearStart: 2018,
+               yearEnd: null,
+               genre: [
+                   'comedy',
+                   'drama',
+               ],
+            },
+            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
+        },
+        style: {
+            color: '43332d',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/succession-2018',
+            imdbID: 'tt7660850',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Ghosts',
+        id: 'ghosts',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 3,
+               yearStart: 2019,
+               yearEnd: null,
+               genre: [
+                   'comedy',
+                   'fantasy',
+               ],
+            },
+            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
+        },
+        style: {
+            color: '513d35',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: 'tt8594324',
+            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Memories of the Alhambra',
         id: 'memories',
         link: {
@@ -867,40 +935,6 @@ const movieData4 = [
         },
     },
     {
-        name: 'Succession',
-        id: 'succession',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GWukCJAq-nIuHwwEAAAB4:type:series',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            // date: '',
-            // weekday: '',
-            desc: {
-               seasons: 2,
-               yearStart: 2018,
-               yearEnd: null,
-               genre: [
-                   'comedy',
-                   'drama',
-               ],
-            },
-            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
-        },
-        style: {
-            color: '43332d',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/succession-2018',
-            imdbID: 'tt7660850',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'The Spy',
         id: 'spy',
         link: {
@@ -984,42 +1018,6 @@ const movieData4 = [
             // tvTimeID: 'identifier',
             reelgoodLink: 'https://reelgood.com/show/vikings-2013',
             imdbID: 'tt2306299',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Ghosts',
-        id: 'ghosts',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            // date: '',
-            // weekday: '',
-            desc: {
-               seasons: 3,
-               yearStart: 2019,
-               yearEnd: null,
-               genre: [
-                   'comedy',
-                   'fantasy',
-               ],
-            },
-            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
-        },
-        style: {
-            color: '513d35',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: 'tt8594324',
-            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
-            // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
     },
