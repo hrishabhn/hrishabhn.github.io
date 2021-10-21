@@ -152,6 +152,18 @@ function tvMidElement(a,b) {
     return movieCardElement
 }
 
+function tvPopup(a,b) {
+    showModal(movieData[a][b].name,tvPopupElement(a,b))
+}
+
+function processLocation(location) {
+    if (location == 'Coming Soon') {
+        return location
+    } else {
+        return `Watch on ${location}`
+    }
+
+}
 
 function tvSmallTray(a) {
     var tray = hscrollMediaElement()
