@@ -148,7 +148,7 @@
 .app-list{
     flex-direction: column;
     width: calc((100% - 140px) / 3);
-    border-radius: 10px;
+    border-radius: 12px;
     padding-top: 10px;
     flex-grow: 1;
     overflow: hidden;
@@ -188,7 +188,7 @@
 }
 
 .app-list .item p{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
 }
 
