@@ -1,7 +1,7 @@
-function googleLoad() {
-    if ('ontouchstart' in document.documentElement) {
-        link = 'google://search'
-    } else {
+    function googleLoad() {
+        if ('ontouchstart' in document.documentElement) {
+            link = 'google://search'
+        } else {
         link = 'https://www.google.com'
     }
 
@@ -94,11 +94,9 @@ const countdownData = [
 function coundownPopulate() {
     const data = countdownData[0]
 
-    console.log(countdownCalculate(data.date))
     document.getElementById('countdown-no').innerHTML = countdownCalculate(data.date)[0]
     document.getElementById('countdown-period').innerHTML = countdownCalculate(data.date)[1]
     document.getElementById('countdown-name').innerHTML = data.name
-
 }
 
 
