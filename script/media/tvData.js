@@ -37,6 +37,40 @@
 // },
 const movieData0 = [
     {
+        name: 'Succession',
+        id: 'succession',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GWukCJAq-nIuHwwEAAAB4:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 2,
+               yearStart: 2018,
+               yearEnd: null,
+               genre: [
+                   'comedy',
+                   'drama',
+               ],
+            },
+            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
+        },
+        style: {
+            color: '43332d',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '338186',
+            reelgoodLink: 'https://reelgood.com/show/succession-2018',
+            imdbID: 'tt7660850',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: "Brooklyn Nine-Nine",
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
@@ -65,6 +99,34 @@ const movieData0 = [
             tvTimeID: "269586",
             reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
             imdbID: "tt2467372",
+        },
+    },
+    {
+        name: 'Dave Chappelle: The Closer',
+        id: 'closer',
+        link: {
+            netflix: '81228510'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            description: 'Comedy Special &#149 2001',
+            summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight — and get a few things off his chest.",
+        },
+        style: {
+            color: '6d223c',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/dave-chappelle-the-closer-2021',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
         },
     },
     {
@@ -99,40 +161,6 @@ const movieData0 = [
             tvTimeID: '110381',
             reelgoodLink: 'https://reelgood.com/show/archer-2009',
             imdbID: 'tt1486217',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Succession',
-        id: 'succession',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GWukCJAq-nIuHwwEAAAB4:type:series',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            // date: '',
-            // weekday: '',
-            desc: {
-               seasons: 2,
-               yearStart: 2018,
-               yearEnd: null,
-               genre: [
-                   'comedy',
-                   'drama',
-               ],
-            },
-            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
-        },
-        style: {
-            color: '43332d',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: '338186',
-            reelgoodLink: 'https://reelgood.com/show/succession-2018',
-            imdbID: 'tt7660850',
             // subReddit: 'subreddit',
         },
     },
@@ -716,34 +744,6 @@ const movieData2 = [
     },
 ]
 const movieData3 = [
-    {
-        name: 'Dave Chappelle: The Closer',
-        id: 'closer',
-        link: {
-            netflix: '81228510'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            description: 'Comedy Special &#149 2001',
-            summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight — and get a few things off his chest.",
-        },
-        style: {
-            color: '6d223c',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/movie/dave-chappelle-the-closer-2021',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
     {
         name: 'Dil Chahta Hai',
         id: 'dil',
