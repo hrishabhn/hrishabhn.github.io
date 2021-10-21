@@ -741,9 +741,6 @@ const pageData6 = {
     },
     content: [
         {
-            type: 'spacer-content',
-        },
-        {
             type: 'shortcut-tray',
             render: function() {
                 var widget1 = document.createElement('a')
