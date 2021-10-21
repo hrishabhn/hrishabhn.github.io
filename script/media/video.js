@@ -32,36 +32,51 @@ function tvBig(a,b) {
 
     more.onclick = function() { tvPopup(a,b) }
 
-    const tvTime = document.getElementById('tv-big-tvtime')
-    const reelgood = document.getElementById('tv-big-reelgood')
-    const imdb = document.getElementById('tv-big-imdb')
-    const reddit = document.getElementById('tv-big-reddit')
+    const tvTimeElement = document.getElementById('tv-big-tvtime')
+    const tvTimeSpacer = document.getElementById('tv-big-tvtime-spacer')
+    const reelgoodElement = document.getElementById('tv-big-reelgood')
+    const reelgoodSpacer = document.getElementById('tv-big-reelgood-spacer')
+    const imdbElement = document.getElementById('tv-big-imdb')
+    const imdbSpacer = document.getElementById('tv-big-imdb-spacer')
+    const redditElement = document.getElementById('tv-big-reddit')
+    const redditSpacer = document.getElementById('tv-big-reddit-spacer')
 
     if (movie.apps.tvTimeID) {
-        tvTime.href = `https://www.tvtime.com/en/show/${movie.apps.tvTimeID}`
+        tvTimeElement.href = `https://www.tvtime.com/en/show/${movie.apps.tvTimeID}`
+        tvTimeElement.classList.remove('hidden-always')
+        tvTimeSpacer.classList.remove('hidden-always')
     } else {
-        tvTime.removeAttribute('href')
+        tvTimeElement.removeAttribute('href')
+        tvTimeElement.classList.add('hidden-always')
+        tvTimeSpacer.classList.add('hidden-always')
     }
     if (movie.apps.reelgoodLink) {
-        reelgood.href = movie.apps.reelgoodLink
+        reelgoodElement.href = movie.apps.reelgoodLink
+        reelgoodElement.classList.remove('hidden-always')
+        reelgoodSpacer.classList.remove('hidden-always')
     } else {
-        reelgood.removeAttribute('href')
+        reelgoodElement.removeAttribute('href')
+        reelgoodElement.classList.add('hidden-always')
+        reelgoodSpacer.classList.add('hidden-always')
     }
     if (movie.apps.imdbID) {
-        imdb.href = `https://www.imdb.com/title/${movie.apps.imdbID}`
+        imdbElement.href = `https://www.imdb.com/title/${movie.apps.imdbID}`
+        imdbElement.classList.remove('hidden-always')
+        imdbSpacer.classList.remove('hidden-always')
     } else {
-        imdb.removeAttribute('href')
+        imdbElement.removeAttribute('href')
+        imdbElement.classList.add('hidden-always')
+        imdbSpacer.classList.add('hidden-always')
     }
     if (movie.apps.subReddit) {
-        reddit.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
+        redditElement.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
+        redditElement.classList.remove('hidden-always')
+        redditSpacer.classList.remove('hidden-always')
     } else {
-        reddit.removeAttribute('href')
+        redditElement.removeAttribute('href')
+        redditElement.classList.add('hidden-always')
+        redditSpacer.classList.add('hidden-always')
     }
-
-
-
-
-
 }
 
 function tvMidTray(a) {
