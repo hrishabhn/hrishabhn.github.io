@@ -1,0 +1,73 @@
+.widget{
+    align-items: flex-start;
+    flex-direction: column;
+    height: 110px;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.widget p{
+    cursor: default;
+}
+.widget .icon{
+    height: 28px;
+    width: 28px;
+
+    padding: 8px;
+    border-radius: 20px;
+    fill: white;
+}
+.widget .text{
+    font-size: 15px;
+    font-weight: 500;
+}
+.widget .subtext{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-top: 2px;
+}
+
+
+
+#user-image{
+    height: 28px;
+    width: 28px;
+    border-radius: 80px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    background-image: var(--user);
+}
+
+#weather-temp{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.countdown-info{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#countdown-no{
+    font-size: 24px;
+    font-weight: 300;
+}
+#countdown-period{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+@media(max-width: 450px){
+    .widget{
+        /* width: calc((100% - 15px) * 0.5); */
+    }
+}

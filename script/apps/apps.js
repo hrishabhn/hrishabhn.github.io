@@ -113,9 +113,6 @@ function appRender(type,data,title,devices) {
         return container
     }
 }
-
-
-
 function bookmarkRenderOLD(content) {
     const data = content.data
     var htmlString = ``
@@ -150,7 +147,6 @@ function bookmarkRenderOLD(content) {
     container.innerHTML = htmlString
     return container
 }
-
 function appListTrayRender(appListTray) {
     var element = document.createElement('div')
     element.classList = 'app-list-tray'
@@ -168,8 +164,6 @@ function appListTrayRender(appListTray) {
 
     return element
 }
-
-
 function appListRender(content) {
     var list = document.createElement('div')
     list.classList = 'app-list layer-1 card-shadow'
@@ -250,51 +244,6 @@ function bookmarkRender(content) {
 
     return container
 }
-
-function pageShortcutTrayRender(pages) {
-    var tray = document.createElement('div')
-    tray.classList = 'shortcut-tray page-width'
-
-    tray.innerHTML = `
-    <div class="subtray">
-        ${pageShortcutString(pages[0])}
-        <div class="spacer-x" style="--size: 15px;"></div>
-        <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
-        ${pageShortcutString(pages[1])}
-    </div>
-    <div class="spacer-x" style="--size: 15px;"></div>
-    <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
-    <div class="subtray">
-        ${pageShortcutString(pages[2])}
-        <div class="spacer-x" style="--size: 15px;"></div>
-        <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
-        ${pageShortcutString(pages[3])}
-    </div>`
-
-    return tray
-}
-
-function pageShortcutString(page) {
-    // console.log(page.info.style)
-
-    // var shortcut = document.createElement('a')
-    // shortcut.classList = 'shortcut layer-1 clickable card-shadow'
-    // shortcut.onclick = function() { pageData[page.info.id].open() }
-    
-    // console.log(shortcut)
-
-    var htmlString = `
-    <a class="shortcut layer-1 clickable card-shadow" onclick="pageData[${page.info.id}].open()">
-        <div class="icon ${page.info.style}">${page.info.icon}</div>
-        <div class="grow"></div>
-        <p class="text">${page.info.name}</p>
-        <p class="subtext">${page.info.subtext}</p>
-    </a>`
-
-    return htmlString
-}
-
-
 function appLinkRender(content) {
     var container = document.createElement('div')
     container.classList = `bookmark-tray layer-1 card-shadow page-width ${content.devices}`
@@ -343,44 +292,71 @@ function appLinkRender(content) {
 }
 
 
-function appShortcutTrayRender(content) {
-    var tray = document.createElement('div')
-    tray.classList = 'shortcut-tray page-width'
+function pageShortcutElement(n) {
+    const page = pageData[n]
 
-    tray.innerHTML = `
-    <div class="subtray">
-        ${appShortcutString(content.data[0])}
-        <div class="spacer-x" style="--size: 15px;"></div>
-        <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
-        ${appShortcutString(content.data[1])}
-    </div>
-    <div class="spacer-x" style="--size: 15px;"></div>
-    <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
-    <div class="subtray">
-        ${appShortcutString(content.data[2])}
-        <div class="spacer-x" style="--size: 15px;"></div>
-        <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
-        ${appShortcutString(content.data[3])}
-    </div>`
+    var shortcut = document.createElement('a')
+    shortcut.classList = 'shortcut layer-1 clickable card-shadow'
+    shortcut.onclick = function() { pageData[n].open() }
 
-    return tray
+    shortcut.innerHTML = `
+    <div class="icon ${page.info.style}">${page.info.icon}</div>
+    <div class="grow"></div>
+    <p class="text">${page.info.name}</p>
+    <p class="subtext">${page.info.subtext}</p>`
+
+    return shortcut
+}
+function combineSubColElements(subCol1,subCol2) {
+    var container = document.createElement('div')
+    container.classList = 'fill-width'
+    container.append(subCol1)
+    container.append(spacerElement(15))
+    container.append(spacerElement(5,'hidden-mobile'))
+    container.append(subCol2)
+
+    return container
 }
 
-function appShortcutString(app) {
-    // console.log(page.info.style)
 
-    // var shortcut = document.createElement('a')
-    // shortcut.classList = 'shortcut layer-1 clickable card-shadow'
-    // shortcut.onclick = function() { pageData[page.info.id].open() }
+// function appShortcutTrayRender(content) {
+//     var tray = document.createElement('div')
+//     tray.classList = 'shortcut-tray page-width'
+
+//     tray.innerHTML = `
+//     <div class="subtray">
+//         ${appShortcutString(content.data[0])}
+//         <div class="spacer-x" style="--size: 15px;"></div>
+//         <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
+//         ${appShortcutString(content.data[1])}
+//     </div>
+//     <div class="spacer-x" style="--size: 15px;"></div>
+//     <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
+//     <div class="subtray">
+//         ${appShortcutString(content.data[2])}
+//         <div class="spacer-x" style="--size: 15px;"></div>
+//         <div class="spacer-x hidden-mobile" style="--size: 5px;"></div>
+//         ${appShortcutString(content.data[3])}
+//     </div>`
+
+//     return tray
+// }
+
+// function appShortcutString(app) {
+//     // console.log(page.info.style)
+
+//     // var shortcut = document.createElement('a')
+//     // shortcut.classList = 'shortcut layer-1 clickable card-shadow'
+//     // shortcut.onclick = function() { pageData[page.info.id].open() }
     
-    // console.log(shortcut)
+//     // console.log(shortcut)
 
-    var htmlString = `
-    <a class="shortcut layer-1 clickable card-shadow" href="${app.link}" target="_${app.target}">
-        <div class="icon ${app.background}">${app.icon}</div>
-        <div class="grow"></div>
-        <p class="text button-text">${app.name}</p>
-    </a>`
+//     var htmlString = `
+//     <a class="shortcut layer-1 clickable card-shadow" href="${app.link}" target="_${app.target}">
+//         <div class="icon ${app.background}">${app.icon}</div>
+//         <div class="grow"></div>
+//         <p class="text button-text">${app.name}</p>
+//     </a>`
 
-    return htmlString
-}
+//     return htmlString
+// }

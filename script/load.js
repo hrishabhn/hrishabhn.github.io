@@ -8,6 +8,19 @@ function loadApp() {
 
 
     // console.log(processTime(dateNow()[4],dateNow()[5]))
+    widgetPopulate()
+    openFirstPage()
+}
+
+function openFirstPage() {
+    const pageCookie = getCookie('page')
+    // console.log(pageCookie)
+    if (pageCookie) {
+        pageData[pageCookie].open()
+    } else {
+        pageData[0].open()
+    }
+
 }
 
 const body = document.getElementById('body')

@@ -110,3 +110,27 @@ function searchElement(contentItem) {
 
     return element
 }
+
+
+function colContainerRender(content1,content2) {
+    var container = document.createElement('div')
+    container.classList = 'col-container page-width'
+    
+    container.append(colRender(content1))
+    container.append(spacerElement(15))
+    container.append(spacerElement(5,'hidden-mobile'))
+    container.append(colRender(content2))
+
+    return container
+}
+function colRender(content) {
+    var col = document.createElement('div')
+    col.classList = 'col'
+    col.append(content)
+
+    // for (let i = 0; i < content.length; i++) {
+    //     col.append(content[i])
+    // }
+
+    return col
+}

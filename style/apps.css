@@ -192,6 +192,15 @@
     font-weight: 400;
 }
 
+.col-container .col{
+    width: calc((100% - 20px) / 2);
+    height: 100%;
+}
+
+.subcol{
+    width: calc((100% - 20px) / 2);
+}
+
 .shortcut-tray .subtray{
     width: calc((100% - 20px) / 2);
 }
@@ -245,6 +254,17 @@
 
     .app-list{
         width: calc(100% - 30px);
+    }
+    .col-container{
+        flex-direction: column;
+    }
+    .col-container .col{
+        width: 100%;
+        /* height: calc((100% - 15px) * 0.5); */
+        height: fit-content;
+    }
+    .subcol{
+        width: calc((100% - 15px) * 0.5);
     }
     .shortcut-tray{
         flex-direction: column;

@@ -168,6 +168,11 @@
         width: 20px;
         flex-shrink: 0;
     }
+    .spacer-content{
+        height: 15px;
+        width: 15px;
+        flex-shrink: 0;
+    }
     .page-width{
         width: calc(100% - 30px);
     }
