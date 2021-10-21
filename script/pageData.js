@@ -737,6 +737,8 @@ const pageData6 = {
             render: function() {
                 var widget1 = document.createElement('a')
                 widget1.classList = 'widget subcol clickable fill-parent layer-1 card-shadow button-text'
+                // widget1.onclick = function() { showModal(movieData[0][0].name,tvPopupElement(0,0)) }
+
                 widget1.innerHTML = `
                 <div id="user-image" style="--user: url(user-image/monke.jpg);"></div>
                 <div class="grow"></div>
