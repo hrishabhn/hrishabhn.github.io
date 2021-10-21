@@ -135,6 +135,6 @@ function countdownCalculate(date) {
         result = [seconds,'seconds']
     }
 
-
+    // console.log(result)
     return result
 }
