@@ -983,7 +983,7 @@ const movieData4 = [
         // },
         info: {
             service: 'hbo',
-            // studio: '',
+            studio: 'hbo',
             location: 'HBO Max',
             description: 'History &#149 Thriller &#149 1 Season &#149 2019',
             summary: "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
