@@ -51,7 +51,7 @@ const movieData0 = [
                yearStart: 2018,
                yearEnd: null,
                genre: [
-                   'comedy',
+                //    'comedy',
                    'drama',
                ],
             },
