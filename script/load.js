@@ -10,6 +10,8 @@ function loadApp() {
     // console.log(processTime(dateNow()[4],dateNow()[5]))
     widgetPopulate()
     openFirstPage()
+    // tvPopup(0,0)
+    // testTV()
 }
 
 function openFirstPage() {
@@ -20,7 +22,15 @@ function openFirstPage() {
     } else {
         pageData[0].open()
     }
+}
 
+
+function testTV() {
+    for (let i = 0; i < movieData.length; i++) {
+        for (let j = 0; j < movieData[i].length; j++) {
+            tvPopup(i,j)
+        }
+    }
 }
 
 const body = document.getElementById('body')
