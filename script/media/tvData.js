@@ -71,37 +71,6 @@ const movieData0 = [
         },
     },
     {
-        name: "Brooklyn Nine-Nine",
-        id: "brooklyn",
-        link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
-        info: {
-            service: 'hulu',
-            studio: 'nbc',
-            location: 'Hulu',
-            desc: {
-                seasons: 8,
-                yearStart: 2013,
-                yearEnd: 2021,
-                genre: [
-                    'comedy',
-                    'crime',
-                ],
-            },
-            summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
-        },
-        style: {
-            color: '8b6a4b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "tall",
-        },
-        apps: {
-            tvTimeID: "269586",
-            reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
-            imdbID: "tt2467372",
-        },
-    },
-    {
         name: 'Dave Chappelle: The Closer',
         id: 'closer',
         link: {
@@ -2190,6 +2159,37 @@ const movieData7 = [
     },
 ]
 const movieData8 = [
+    {
+        name: "Brooklyn Nine-Nine",
+        id: "brooklyn",
+        link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
+        info: {
+            service: 'hulu',
+            studio: 'nbc',
+            location: 'Hulu',
+            desc: {
+                seasons: 8,
+                yearStart: 2013,
+                yearEnd: 2021,
+                genre: [
+                    'comedy',
+                    'crime',
+                ],
+            },
+            summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
+        },
+        style: {
+            color: '8b6a4b',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "tall",
+        },
+        apps: {
+            tvTimeID: "269586",
+            reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
+            imdbID: "tt2467372",
+        },
+    },
     {
         name: 'Game of Thrones',
         id: 'gameofthrones',
