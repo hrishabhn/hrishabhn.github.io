@@ -113,12 +113,11 @@ const movieData0 = [
             location: 'Netflix',
             // date: '',
             // weekday: '',
-            // description: 'Comedy Special &#149 2001',
             desc: {
                 year: 2021,
                 genre: [
                     'comedy',
-                    'special',
+                    // 'special',
                 ],
             },
             summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight - and get a few things off his chest.",
@@ -559,7 +558,16 @@ const movieData2 = [
             service: 'hulu',
             studio: '',
             location: 'Hulu',
-            description: 'Comedy &#149 6 Seasons &#149 2015 - 2021',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 6,
+               yearStart: 2015,
+               yearEnd: 2021,
+               genre: [
+                   'comedy',
+               ],
+            },
             summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
         },
         style: {
@@ -2406,14 +2414,21 @@ const movieData9 = [
         },
     },
     {
-        name: "Shang-Chi",
-        id: "shang",
+        name: 'Shang-Chi',
+        id: 'shang',
         link: null,
         info: {
-            service: '',
-            studio: '',
-            location: "Disney+",
-            description: "Action &#149 Adventure &#149 Fantasy &#149 2021",
+            service: 'disney',
+            studio: 'disney',
+            location: 'Disney+',
+            desc: {
+               year: 2021,
+               genre: [
+                   'action',
+                   'adventure',
+                   'fantasy',
+               ],
+            },
             summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
         },
         style: {
