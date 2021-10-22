@@ -31,7 +31,7 @@
     <meta name="mobile-wep-app-capable" content="yes"></meta>
     <meta name="apple-mobile-web-app-capable" content="yes"></meta>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
-    
+
     <!-- <meta id="theme" name="theme-color" content="#e50914"> -->
 
     <title id="title-page">Dashboard</title>
@@ -53,14 +53,79 @@
     </div>
     <div id ="modal-container" class="hide">
         <a onclick="hideModal()" class="modal-close"></a>
-        <div class="modal-card layer-1 card-shadow">
-            <p id="modal-title"></p>
-            <div id="modal-body" class="vstack fill-width"></div>
-            <div class="grow"></div>
+        <div class="modal-scroll">
+            <a class="grow fill-width" onclick="hideModal();console.log('nice')" style="min-height: 50px;"></a>
+            <div class="modal-card layer-1 card-shadow">
+                <p id="modal-title"></p>
+                <div id="modal-body" class="vstack fill-width"></div>
+                <div class="grow"></div>
+            </div>
+            <a class="grow fill-width" onclick="hideModal();console.log('nice')" style="min-height: 0px;"></a>
         </div>
     </div>
     <div id="main">
         <div class="page">
+            <!-- <div class="tv-popup">
+                <div class="suggest">
+                    <div class="hscroll">
+                        <div class="card layer-1">
+                            <a class="poster" onclick="tvPopup(0,0)" style="--poster: url(media-image/TV/background/succession.webp);">
+                                <div class="gradient" style="--col: #00000000;"></div>
+                                <div class="title" style="--title: url(media-image/TV/title/succession.png);"></div>
+                            </a>
+                            <div class="info">
+                                <p class="desc">comedy drama</p>
+                                <div class="spacer-x" style="--size: 5px;"></div>
+                                <p class="title">Succession</p>
+                                <div class="spacer-x" style="--size: 2px;"></div>
+                                <p class="summary">When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.</p>
+                            </div>
+                        </div>
+                        <div class="spacer-x" style="--size: 15px;"></div>
+                        <div class="card layer-1">
+                            <a class="poster" onclick="tvPopup(0,0)" style="--poster: url(media-image/TV/background/succession.webp);">
+                                <div class="gradient" style="--col: #00000000;"></div>
+                                <div class="title" style="--title: url(media-image/TV/title/succession.png);"></div>
+                            </a>
+                            <div class="info">
+                                <p class="desc">comedy drama</p>
+                                <div class="spacer-x" style="--size: 5px;"></div>
+                                <p class="title">Succession</p>
+                                <div class="spacer-x" style="--size: 2px;"></div>
+                                <p class="summary">When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.</p>
+                            </div>
+                        </div>
+                        <div class="spacer-x" style="--size: 15px;"></div>
+                        <div class="card layer-1">
+                            <a class="poster" onclick="tvPopup(0,0)" style="--poster: url(media-image/TV/background/succession.webp);">
+                                <div class="gradient" style="--col: #00000000;"></div>
+                                <div class="title" style="--title: url(media-image/TV/title/succession.png);"></div>
+                            </a>
+                            <div class="info">
+                                <p class="desc">comedy drama</p>
+                                <div class="spacer-x" style="--size: 5px;"></div>
+                                <p class="title">Succession</p>
+                                <div class="spacer-x" style="--size: 2px;"></div>
+                                <p class="summary">When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.</p>
+                            </div>
+                        </div>
+                        <div class="spacer-x" style="--size: 15px;"></div>
+                        <div class="card layer-1">
+                            <a class="poster" onclick="tvPopup(0,0)" style="--poster: url(media-image/TV/background/succession.webp);">
+                                <div class="gradient" style="--col: #00000000;"></div>
+                                <div class="title" style="--title: url(media-image/TV/title/succession.png);"></div>
+                            </a>
+                            <div class="info">
+                                <p class="desc">comedy drama</p>
+                                <div class="spacer-x" style="--size: 5px;"></div>
+                                <p class="title">Succession</p>
+                                <div class="spacer-x" style="--size: 2px;"></div>
+                                <p class="summary">When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
             <!-- <div class="fill-width">lol</div> -->
 
             <!-- <div class="col-container page-width">
@@ -185,7 +250,7 @@
                     </a>
                 </div>
             </div> -->
-<!-- 
+<!--
             <div class="hstack">
                 <div class="tv-poster" style="--poster: url(media-image/TV/background/dopesick.webp);">
                     <div class="gradient" style="--col: #00000000;"></div>
@@ -293,7 +358,7 @@
             </div> -->
 
 
-<!-- 
+<!--
 
             <div class="app-list-tray">
                 <div class="app-list layer1">

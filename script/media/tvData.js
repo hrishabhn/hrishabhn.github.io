@@ -351,9 +351,9 @@ const movieData1 = [
                 yearStart: 2019,
                 yearEnd: null,
                 genre: [
-                    'Comedy',
-                    'Drama',
-                    'Fantasy',
+                    'comedy',
+                    'drama',
+                    'fantasy',
                 ],
             },
             summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",

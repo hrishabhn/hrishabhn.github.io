@@ -12,6 +12,10 @@ function insertAfter(newNode, existingNode) {
     existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
 }
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 function headerScroll(page) {
     var header = document.getElementById('header')
     var pageElement = document.getElementById(`page-${page}`)

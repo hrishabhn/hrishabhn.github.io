@@ -16,6 +16,9 @@
 .layer-1{
     background-color: var(--dark-layer-2);
 }
+.layer-2{
+    background-color: var(--dark-layer-3);
+}
 @media screen and (prefers-color-scheme: light) {
     .layer0{
         background-color: var(--light-layer-0);
