@@ -33,6 +33,14 @@ function widgetPopulate() {
 
 const countdownData = [
     {
+        name: 'SPAN 202 Exam',
+        date: 'Oct 25, 2021',
+    },
+    {
+        name: 'NUCL 273 Exam',
+        date: 'Oct 27, 2021',
+    },
+    {
         name: 'Halloween',
         date: 'Oct 31, 2021',
     },
