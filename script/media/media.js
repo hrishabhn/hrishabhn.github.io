@@ -32,12 +32,10 @@ function processDesc(movie,type) {
             }
     
             if (descItem.seasons) {
-    
                 descString = `${descString} &#149 ${processDescSeasons(descItem)}`
             }
     
-            if (descItem.yearStart) {
-    
+            if ((descItem.year) || (descItem.yearStart)) {
                 descString = `${descString} &#149 ${processDescYear(descItem)}`
             }
     
@@ -77,13 +75,18 @@ function processDescSeasons(descItem) {
 }
 
 function processDescYear(descItem) {
-    var yearString = `${descItem.yearStart}`
-    
-    if (descItem.yearEnd) {
-        var yearString = `${yearString} - ${descItem.yearEnd}`
-    } else {
-        var yearString = `${yearString} - Present`
+    if (descItem.yearStart) {
+        var yearString = `${descItem.yearStart}`
+        
+        if (descItem.yearEnd) {
+            var yearString = `${yearString} - ${descItem.yearEnd}`
+        } else {
+            var yearString = `${yearString} - Present`
+        }
+    } else if (descItem.year) {
+        var yearString = `${descItem.year}`
     }
+
 
     return yearString
 }

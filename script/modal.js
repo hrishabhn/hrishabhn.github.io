@@ -97,15 +97,14 @@ function tvPopupSuggest(a,b) {
     suggestElement.classList = 'suggest'
 
     for (let i = 0; i < genre.length; i++) {
-        suggestElement.append(tvPopupSuggestRow(genre[i]))
+        suggestElement.append(tvPopupSuggestRow(genre[i],a,b))
     }
 
     return suggestElement.outerHTML
 }
 
-function tvPopupSuggestRow(genre) {
-    const sameMovies = sameGenre(genre)
-
+function tvPopupSuggestRow(genre,a,b) {
+    const sameMovies = sameGenre(genre,a,b)
 
     var vstack = document.createElement('div')
     vstack.classList = 'vstack fill-width'
@@ -153,7 +152,7 @@ function tvPopupSuggestRow(genre) {
             hscroll.append(spacerElement(5,'hidden-mobile'))
         }
 
-        console.log(movie)
+        // console.log(movie)
     }
 
     hscroll.append(spacerElement(20))
@@ -167,7 +166,7 @@ function tvPopupSuggestRow(genre) {
     return vstack
 }
 
-function sameGenre(genre) {
+function sameGenre(genre,a,b) {
     var sameMovies = []
 
     for (let i = 0; i < movieData.length; i++) {
@@ -175,16 +174,14 @@ function sameGenre(genre) {
             if (movieData[i][j].info.desc) {
                 for (let k = 0; k < movieData[i][j].info.desc.genre.length; k++) {
                     if (movieData[i][j].info.desc.genre[k] == genre) {
-                        sameMovies.push([i,j])
+                        if ((a != i) && (b != j)) {
+                            sameMovies.push([i,j])
+                        }
                     }
-
-                    // console.log(movieData[i][j].info.desc.genre[k])
                 }
             }
         }
     }
-
-
 
     return sameMovies
 }

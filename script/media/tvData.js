@@ -113,8 +113,15 @@ const movieData0 = [
             location: 'Netflix',
             // date: '',
             // weekday: '',
-            description: 'Comedy Special &#149 2001',
-            summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight — and get a few things off his chest.",
+            // description: 'Comedy Special &#149 2001',
+            desc: {
+                year: 2021,
+                genre: [
+                    'comedy',
+                    'special',
+                ],
+            },
+            summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight - and get a few things off his chest.",
         },
         style: {
             color: '6d223c',
