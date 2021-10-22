@@ -91,29 +91,32 @@ function tvPopupElement(a,b) {
 }
 
 function tvPopupSuggest(a,b) {
-    if (movieData[a][b].info.desc) {
-        const genre = movieData[a][b].info.desc.genre
-        // console.log(genre)
-    
+    if ((movieData[a][b].info.desc) || (movieData[a][b].info.service)) {
         var suggestElement = document.createElement('div')
         suggestElement.classList = 'suggest'
-    
-        for (let i = 0; i < genre.length; i++) {
-            const sameMovies = sameGenre(genre[i],a,b)
 
-            suggestElement.append(tvPopupSuggestRow(sameMovies,genre[i],a,b))
+        if (movieData[a][b].info.desc) {
+            const genre = movieData[a][b].info.desc.genre
+        
+            for (let i = 0; i < genre.length; i++) {
+                const sameMovies = sameGenre(genre[i],a,b)
+    
+                suggestElement.append(tvPopupSuggestRow(sameMovies,genre[i],a,b))
+            }
         }
 
         if (movieData[a][b].info.service) {
             const sameMovies = sameService(movieData[a][b].info.service,a,b)
-
             suggestElement.append(tvPopupSuggestRow(sameMovies,movieData[a][b].info.location,a,b))
         }
-    
+
         return suggestElement.outerHTML
     } else {
         return document.createElement('div').outerHTML
     }
+
+
+
 }
 
 function tvPopupSuggestRow(sameMovies,title,a,b) {
@@ -187,7 +190,7 @@ function sameGenre(genre,a,b) {
             if (movieData[i][j].info.desc) {
                 for (let k = 0; k < movieData[i][j].info.desc.genre.length; k++) {
                     if (movieData[i][j].info.desc.genre[k] == genre) {
-                        if ((a != i) && (b != j)) {
+                        if ((a != i) || (b != j)) {
                             sameMovies.push([i,j])
                         }
                     }
@@ -205,14 +208,14 @@ function sameService(service,a,b) {
         for (let j = 0; j < movieData[i].length; j++) {
             if (movieData[i][j].info.service) {
                 if (movieData[i][j].info.service == service) {
-                    if ((a != i) && (b != j)) {
+                    if ((a != i) || (b != j)) {
                         sameMovies.push([i,j])
                     }
                 }
             }
         }
     }
-
+    
     return sameMovies
 }
 
