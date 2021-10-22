@@ -90,17 +90,21 @@ function tvPopupElement(a,b) {
 }
 
 function tvPopupSuggest(a,b) {
-    const genre = movieData[a][b].info.desc.genre
-    // console.log(genre)
-
-    var suggestElement = document.createElement('div')
-    suggestElement.classList = 'suggest'
-
-    for (let i = 0; i < genre.length; i++) {
-        suggestElement.append(tvPopupSuggestRow(genre[i],a,b))
+    if (movieData[a][b].info.desc) {
+        const genre = movieData[a][b].info.desc.genre
+        // console.log(genre)
+    
+        var suggestElement = document.createElement('div')
+        suggestElement.classList = 'suggest'
+    
+        for (let i = 0; i < genre.length; i++) {
+            suggestElement.append(tvPopupSuggestRow(genre[i],a,b))
+        }
+    
+        return suggestElement.outerHTML
+    } else {
+        return document.createElement('div').outerHTML
     }
-
-    return suggestElement.outerHTML
 }
 
 function tvPopupSuggestRow(genre,a,b) {
