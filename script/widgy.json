@@ -1,15 +1,27 @@
 ﻿[
   {
-    "name": "Brooklyn Nine-Nine",
-    "id": "brooklyn",
-    "image": "https://hrishabhn.github.io/media-image/TV/background/brooklyn.webp",
-    "service": "Hulu"
+    "name": "Succession",
+    "id": "succession",
+    "image": "https://hrishabhn.github.io/media-image/TV/background/succession.webp",
+    "service": "HBO Max"
+  },
+  {
+    "name": "Dave Chappelle: The Closer",
+    "id": "closer",
+    "image": "https://hrishabhn.github.io/media-image/TV/background/closer.jpg",
+    "service": "Netflix"
   },
   {
     "name": "Archer",
     "id": "archer",
     "image": "https://hrishabhn.github.io/media-image/TV/background/archer.webp",
     "service": "Hulu"
+  },
+  {
+    "name": "Ghosts",
+    "id": "ghosts",
+    "image": "https://hrishabhn.github.io/media-image/TV/background/ghosts.webp",
+    "service": "HBO Max"
   },
   {
     "name": "Memories of the Alhambra",
