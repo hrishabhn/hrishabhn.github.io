@@ -37,6 +37,10 @@ const countdownData = [
         date: 'Oct 31, 2021',
     },
     {
+        name: 'San Diego',
+        date: 'Nov 20, 2021 00:09:30',
+    },
+    {
         name: 'Thanksgiving',
         date: 'Nov 24, 2021',
     },
