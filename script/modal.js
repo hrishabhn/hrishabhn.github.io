@@ -82,7 +82,8 @@ function tvPopupElement(a,b) {
     </div>
     ${tvPopupSuggest(a,b)}
     <div class="spacer-x" style="--size: 30px;"></div>
-    <div class="spacer-x only-mobile" style="--size: 30px;"></div>`
+    <div class="spacer-x only-mobile" style="--size: 30px;"></div>
+    <div class="grow"></div>`
 
     // container.innerHTML = ('nicsdjkcnlsk')
 
