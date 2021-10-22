@@ -99,7 +99,15 @@ function tvPopupSuggest(a,b) {
         suggestElement.classList = 'suggest'
     
         for (let i = 0; i < genre.length; i++) {
-            suggestElement.append(tvPopupSuggestRow(genre[i],a,b))
+            const sameMovies = sameGenre(genre[i],a,b)
+
+            suggestElement.append(tvPopupSuggestRow(sameMovies,genre[i],a,b))
+        }
+
+        if (movieData[a][b].info.service) {
+            const sameMovies = sameService(movieData[a][b].info.service,a,b)
+
+            suggestElement.append(tvPopupSuggestRow(sameMovies,movieData[a][b].info.location,a,b))
         }
     
         return suggestElement.outerHTML
@@ -108,8 +116,8 @@ function tvPopupSuggest(a,b) {
     }
 }
 
-function tvPopupSuggestRow(genre,a,b) {
-    const sameMovies = sameGenre(genre,a,b)
+function tvPopupSuggestRow(sameMovies,title,a,b) {
+    // const sameMovies = sameGenre(genre,a,b)
 
     var vstack = document.createElement('div')
     vstack.classList = 'vstack fill-width'
@@ -120,7 +128,7 @@ function tvPopupSuggestRow(genre,a,b) {
     <div class="fill-width">
     <div class="spacer-x" style="--size: 20px;"></div>
     <div class="spacer-x hidden-mobile" style="--size: 10px;"></div>
-    <div class="media-title">More in ${capitalizeFirstLetter(genre)}</div>
+    <div class="media-title">More in ${capitalizeFirstLetter(title)}</div>
         <div class="grow"></div>
     </div>`
 
@@ -182,6 +190,23 @@ function sameGenre(genre,a,b) {
                         if ((a != i) && (b != j)) {
                             sameMovies.push([i,j])
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    return sameMovies
+}
+function sameService(service,a,b) {
+    var sameMovies = []
+
+    for (let i = 0; i < movieData.length; i++) {
+        for (let j = 0; j < movieData[i].length; j++) {
+            if (movieData[i][j].info.service) {
+                if (movieData[i][j].info.service == service) {
+                    if ((a != i) && (b != j)) {
+                        sameMovies.push([i,j])
                     }
                 }
             }
