@@ -4,18 +4,18 @@ function loadApp() {
     loadSwitches()
 
     widgetPopulate()
-    openFirstPage(0)
+    openFirstPage()
     // tvPopup(0,0)
     // testTV()
 }
 
-function openFirstPage(n) {
+function openFirstPage() {
     const pageCookie = getCookie('page')
     // console.log(pageCookie)
     if (pageCookie) {
         pageData[pageCookie].open()
     } else {
-        pageData[n].open()
+        pageData[0].open()
     }
 }
 
