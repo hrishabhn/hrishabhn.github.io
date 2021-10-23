@@ -72,7 +72,7 @@ function tvPopupElement(a,b) {
     <div class="poster" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
         <div class="gradient" style="--col: #00000000;"></div>
         <div class="title" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
-        <div class="close floating clickable"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.8 16.2-7-7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l7 7c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0z"/><path d="m7.8 14.8 7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-7 7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"/></svg></div>
+        <a class="close floating clickable" onclick="hideModal()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.8 16.2-7-7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l7 7c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0z"/><path d="m7.8 14.8 7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-7 7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"/></svg></a>
     </div>
 
     <div class="info">
