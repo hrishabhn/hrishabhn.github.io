@@ -71,3 +71,28 @@
         /* width: calc((100% - 15px) * 0.5); */
     }
 }
+
+
+/* .paycard{
+    flex-direction: column;
+    height: 500px;
+    width: 375px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+
+    border-radius: 10px;
+}
+.paycard .top-half{
+
+    width: 100%;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.paycard .icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+} */
