@@ -13,6 +13,9 @@
 
 
 
+.layer-0{
+    background-color: var(--dark-layer-1);
+}
 .layer-1{
     background-color: var(--dark-layer-2);
 }
@@ -35,6 +38,9 @@
 
 
 
+    .layer-0{
+        background-color: var(--light-layer-1);
+    }
     .layer-1{
         background-color: var(--light-layer-0);
     }
