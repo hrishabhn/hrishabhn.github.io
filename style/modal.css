@@ -143,11 +143,11 @@
 }
 .tv-popup .poster .close{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     height: 25px;
     width: 25px;
-    border-radius: 50px;
+    border-radius: 100px;
     fill: var(--white-100);
 }
 
@@ -283,6 +283,13 @@
 @media(max-width: 450px){
     .tv-popup .poster .title{
         left: 20px;
+    }
+
+    .tv-popup .poster .close{
+        top: 10px;
+        right: 10px;
+        height: 30px;
+        width: 30px;
     }
     .tv-popup .info{
         padding: 0px 20px;
