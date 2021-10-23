@@ -2,25 +2,20 @@ function loadApp() {
     baseElements[0].render()
     pageDataRender()
     loadSwitches()
-    // console.log(dateNow())
-    // console.log(processMonth(dateNow()[1],'long'))
-    // console.log(processDay(dateNow()[3],'long'))
 
-
-    // console.log(processTime(dateNow()[4],dateNow()[5]))
     widgetPopulate()
-    openFirstPage()
+    openFirstPage(0)
     // tvPopup(0,0)
     // testTV()
 }
 
-function openFirstPage() {
+function openFirstPage(n) {
     const pageCookie = getCookie('page')
     // console.log(pageCookie)
     if (pageCookie) {
         pageData[pageCookie].open()
     } else {
-        pageData[0].open()
+        pageData[n].open()
     }
 }
 

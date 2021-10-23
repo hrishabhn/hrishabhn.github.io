@@ -42,9 +42,6 @@
     cursor: pointer;
     height: 100%;  
     border-radius: 10px;
-
-    -webkit-backdrop-filter: blur(15px) saturate(2) brightness(0.5);
-    background-color: var(--white-30);
 }
 
 #tv-big-card .button-tray #tv-big-play{
@@ -185,9 +182,7 @@
         border-radius: 30px;
         fill: white;
         padding: 6px;
-    
-        -webkit-backdrop-filter: blur(15px) saturate(2) brightness(0.5);
-        background-color: var(--white-20);
+        
         opacity: 0;
         transition: all 0.25s;
     }

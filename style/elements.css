@@ -153,6 +153,11 @@
     box-shadow: 0 8px 24px var(--black-10);
 }
 
+.floating{
+    -webkit-backdrop-filter: blur(15px) saturate(2) brightness(0.5);
+    background-color: var(--white-20);
+}
+
 @media screen and (prefers-color-scheme: light) {
     .hline{
         background-color: var(--black-10);

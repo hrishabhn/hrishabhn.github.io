@@ -133,7 +133,7 @@ function tvMidElement(a,b) {
         <div class="gradient" style="--col: #${col}00;"></div>
         <div class="title ${data.style.titleSize}" style="--title: url(media-image/TV/title/${data.id}.${data.style.titleType});"></div>
         <a class="play" ${htmlLink} target="_blank"></a>
-        <a class="more clickable" onclick="tvBig(${a},${b})">
+        <a class="more floating clickable" onclick="tvBig(${a},${b})">
             <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
         </a>
     </div>
@@ -215,7 +215,7 @@ function tvSmallElement(a,b) {
         <div class="gradient" style="--col: #${col}00;"></div>
         <div class="title ${data.style.titleSize}" style="--title: url(media-image/TV/title/${data.id}.${data.style.titleType});"></div>
         <a class="play" ${htmlLink} target="_blank"></a>
-        <a class="more clickable" onclick="tvBig(${a},${b})">
+        <a class="more floating clickable" onclick="tvBig(${a},${b})">
             <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
         </a>
     </div>`
