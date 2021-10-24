@@ -38,37 +38,33 @@
 const movieData0 = [
     {
         name: 'The Sopranos',
-        id: 'identifier',
-        // link: {
-        //     netflix: '80197526'
-        // },
+        id: 'sopranos',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2b9AHpHo7DwvwIAT4i:type:series',
         info: {
-            // service: 'service',
-            // studio: 'studio',
-            // location: 'location',
-            // date: '',
-            // weekday: '',
-            // desc: {
-            // //    seasons: 1,
-            // //    yearStart: 2021,
-            // //    yearEnd: null,
-            // //    genre: [
-            // //        'crime',
-            // //        'comedy',
-            // //    ],
-            // },
-            // summary: "summary",
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            desc: {
+                seasons: 6,
+                yearStart: 1999,
+                yearEnd: 2007,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "James Gandolfini stars in this acclaimed series about a mob boss whose professional and private strains land him in therapy.",
         },
         style: {
-            // color: '000000',
-            // posterType: 'webp',
-            // titleType: 'png',
-            // titleSize: 'wide',
+            color: '443a3c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
         },
         apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
+            tvTimeID: '75299',
+            reelgoodLink: 'https://reelgood.com/show/the-sopranos-1999',
+            imdbID: 'tt0141842',
             // subReddit: 'subreddit',
         },
     },
