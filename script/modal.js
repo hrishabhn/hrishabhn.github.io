@@ -53,17 +53,23 @@ function allCountdownsElement() {
     return container
 }
 
-function tvPopup(a,b) {
-    showModal(null,tvPopupElement(a,b))
+function tvPopup(a,b,old) {
+    showModal(null,tvPopupElement(a,b,old))
 }
 
-function tvPopupElement(a,b) {
+function tvPopupElement(a,b,old) {
     const movie = movieData[a][b]
 
     if (movie.link) {
         var linkHTML = `href="${processLink(movie.link)}"`
     } else {
         var linkHTML = ``
+    }
+
+    if (old) {
+        var backButton = `<a class="floating clickable" style="padding: 5px 7px 5px 5px;" onclick="tvPopup(${old[0]},${old[1]},null)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="5.07 6.368 11.263 11.263"><path d="m9.929 12 3.821-3.821a1.061 1.061 0 0 0-1.5-1.5l-4.614 4.614a.999.999 0 0 0 0 1.414l4.614 4.614a1.061 1.061 0 0 0 1.5-1.5L9.929 12z"/></svg></a>`
+    } else {
+        var backButton = ``
     }
 
     var container = document.createElement('div')
@@ -103,8 +109,11 @@ function tvPopupElement(a,b) {
             <div class="spacer-x" style="--size: 10px;"></div>
         </div>
         ${tvPopupAppTray(a,b)}
-
-        <a class="close floating clickable" onclick="hideModal()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.8 16.2-7-7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l7 7c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0z"/><path d="m7.8 14.8 7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-7 7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"/></svg></a>
+        <div class="top-tray">
+            ${backButton}
+            <div class="grow"></div>
+            <a class="floating clickable" style="padding: 0px;" onclick="hideModal()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.8 16.2-7-7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l7 7c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0z"/><path d="m7.8 14.8 7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-7 7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"/></svg></a>
+        </div>
     </div>
     <div class="spacer-x" style="--size: 20px;"></div>
     ${tvPopupSuggest(a,b)}
@@ -241,7 +250,7 @@ function tvPopupSuggest(a,b) {
     }
 }
 
-function tvPopupSuggestRow(sameMovies,title,a,b) {
+function tvPopupSuggestRow(sameMovies,title,oldA,oldB) {
     // const sameMovies = sameGenre(genre,a,b)
 
     var vstack = document.createElement('div')
@@ -280,7 +289,7 @@ function tvPopupSuggestRow(sameMovies,title,a,b) {
         }
 
         card.innerHTML = `
-        <a class="poster clickable" onclick="tvPopup(${a},${b})" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
+        <a class="poster clickable" onclick="tvPopup(${a},${b},[${oldA},${oldB}])" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
             <div class="gradient" style="--col: #${movie.style.color}00;"></div>
             <div class="title" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
         </a>
