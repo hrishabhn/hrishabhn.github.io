@@ -190,8 +190,8 @@
     /* height: 200px; */
     width: 100%;
     border-radius: 10px;
-    padding: 15px;
-    padding-right: 5px;
+    padding: 20px;
+    padding-right: 10px;
 }
 .tv-popup .info .video-app-tray .video-app{
     flex-grow: 1;
