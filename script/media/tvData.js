@@ -105,6 +105,110 @@ const movieData0 = [
         },
     },
     {
+        name: "Cowboy Bebop",
+        id: "cowboy",
+        link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            desc: {
+                seasons: 1,
+                yearStart: 1998,
+                yearEnd: 1999,
+                genre: [
+                    'animation',
+                    'action',
+                    'adventure',
+                ],
+            },
+            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "76885",
+            reelgoodLink: "https://reelgood.com/show/cowboy-bebop-1998",
+            imdbID: "tt0213338",
+        },
+    },
+]
+const movieData1 = [
+    {
+        name: "What We Do in the Shadows",
+        id: "shadows",
+        link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            weekday: 'Fridays',
+            desc: {
+                seasons: 3,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'drama',
+                    'fantasy',
+                ],
+            },
+            summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
+        },
+        style: {
+            color: '1C2C70',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "358211",
+            reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
+            imdbID: "tt7908628",
+            subReddit: 'WhatWeDointheShadows',
+        },
+    },
+    {
+        name: 'Family Guy',
+        id: 'family',
+        link: 'https://www.hulu.com/series/family-guy-3c3c0f8b-7366-4d15-88ab-18050285978e',
+        info: {
+            service: 'hulu',
+            studio: 'fox',
+            location: 'Hulu',
+            // date: '',
+            weekday: 'Sundays',
+            desc: {
+               seasons: 20,
+               yearStart: 1999,
+               yearEnd: null,
+               genre: [
+                   'animation',
+                   'comedy',
+               ],
+            },
+            summary: "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
+        },
+        style: {
+            color: '0B6F38',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '75978',
+            reelgoodLink: 'https://reelgood.com/show/family-guy-1999',
+            imdbID: 'tt0182576',
+            // subReddit: 'subreddit',
+        },
+    },
+]
+const movieData2 = [
+    {
         name: 'Archer',
         id: 'archer',
         link: 'https://www.hulu.com/series/archer-22b4b3c8-0827-42d2-a841-50e8f3464dc2',
@@ -278,110 +382,6 @@ const movieData0 = [
             // subReddit: 'subreddit',
         },
     },
-    {
-        name: "Cowboy Bebop",
-        id: "cowboy",
-        link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            desc: {
-                seasons: 1,
-                yearStart: 1998,
-                yearEnd: 1999,
-                genre: [
-                    'animation',
-                    'action',
-                    'adventure',
-                ],
-            },
-            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
-        },
-        style: {
-            color: '994d33',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "76885",
-            reelgoodLink: "https://reelgood.com/show/cowboy-bebop-1998",
-            imdbID: "tt0213338",
-        },
-    },
-]
-const movieData1 = [
-    {
-        name: "What We Do in the Shadows",
-        id: "shadows",
-        link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            weekday: 'Fridays',
-            desc: {
-                seasons: 3,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'drama',
-                    'fantasy',
-                ],
-            },
-            summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
-        },
-        style: {
-            color: '1C2C70',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "358211",
-            reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
-            imdbID: "tt7908628",
-            subReddit: 'WhatWeDointheShadows',
-        },
-    },
-    {
-        name: 'Family Guy',
-        id: 'family',
-        link: 'https://www.hulu.com/series/family-guy-3c3c0f8b-7366-4d15-88ab-18050285978e',
-        info: {
-            service: 'hulu',
-            studio: 'fox',
-            location: 'Hulu',
-            // date: '',
-            weekday: 'Sundays',
-            desc: {
-               seasons: 20,
-               yearStart: 1999,
-               yearEnd: null,
-               genre: [
-                   'animation',
-                   'comedy',
-               ],
-            },
-            summary: "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
-        },
-        style: {
-            color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: '75978',
-            reelgoodLink: 'https://reelgood.com/show/family-guy-1999',
-            imdbID: 'tt0182576',
-            // subReddit: 'subreddit',
-        },
-    },
-]
-const movieData2 = [
     {
         name: 'The Problem With Jon Stewart',
         id: 'problem',
