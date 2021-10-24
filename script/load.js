@@ -4,8 +4,8 @@ function loadApp() {
     loadSwitches()
 
     widgetPopulate()
-    openFirstPage(3)
-    tvPopup(0,0)
+    openFirstPage(0)
+    // tvPopup(0,0)
     // testTV()
 }
 
