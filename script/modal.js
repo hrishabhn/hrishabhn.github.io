@@ -115,7 +115,6 @@ function tvPopupElement(a,b,old) {
             <a class="floating clickable" style="padding: 0px;" onclick="hideModal()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.8 16.2-7-7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l7 7c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0z"/><path d="m7.8 14.8 7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-7 7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"/></svg></a>
         </div>
     </div>
-    <div class="spacer-x" style="--size: 20px;"></div>
     ${tvPopupSuggest(a,b)}
     <div class="spacer-x" style="--size: 30px;"></div>
     <div class="spacer-x only-mobile" style="--size: 30px;"></div>
