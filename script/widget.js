@@ -37,32 +37,44 @@ function widgetPopulate() {
 
 const countdownData = [
     {
-        name: 'SPAN 202 Exam',
-        date: 'Oct 25, 2021',
+        name: 'SPAN Exam 2',
+        date: 'Oct 25, 2021 16:30:00',
     },
     {
-        name: 'NUCL 273 Exam',
-        date: 'Oct 27, 2021',
+        name: 'NUCL Exam 2',
+        date: 'Oct 27, 2021 20:00:00',
     },
     {
         name: 'Halloween',
         date: 'Oct 31, 2021',
     },
     {
+        name: 'ECE Exam 2',
+        date: 'Nov 1, 2021',
+    },
+    {
+        name: 'IE 386 Exam 2',
+        date: 'Nov 4, 2021 09:30:00',
+    },
+    {
+        name: 'IE 335 Quiz 4',
+        date: 'Nov 5, 2021 12:30:00',
+    },
+    {
         name: 'San Diego',
         date: 'Nov 20, 2021 00:09:30',
     },
-    {
-        name: 'Thanksgiving',
-        date: 'Nov 24, 2021',
-    },
+    // {
+    //     name: 'Thanksgiving',
+    //     date: 'Nov 24, 2021',
+    // },
     {
         name: 'Christmas',
         date: 'Dec 18, 2021',
     },
     {
         name: 'Madrid',
-        date: 'Jan 31, 2022',
+        date: 'Jan 28, 2022',
     },
     {
         name: 'Past Countdowns',
