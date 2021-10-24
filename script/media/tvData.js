@@ -67,7 +67,7 @@ const movieData0 = [
             tvTimeID: '338186',
             reelgoodLink: 'https://reelgood.com/show/succession-2018',
             imdbID: 'tt7660850',
-            // subReddit: 'subreddit',
+            subReddit: 'SuccessionTV',
         },
     },
     {
@@ -2188,6 +2188,7 @@ const movieData8 = [
             tvTimeID: "269586",
             reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
             imdbID: "tt2467372",
+            subReddit: 'brooklynninenine',
         },
     },
     {
