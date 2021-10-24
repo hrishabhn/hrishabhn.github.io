@@ -67,7 +67,7 @@ function tvPopupElement(a,b,old) {
     }
 
     if (old) {
-        var backButton = `<a class="floating clickable" style="padding: 5px 7px 5px 5px;" onclick="tvPopup(${old[0]},${old[1]},null)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="5.07 6.368 11.263 11.263"><path d="m9.929 12 3.821-3.821a1.061 1.061 0 0 0-1.5-1.5l-4.614 4.614a.999.999 0 0 0 0 1.414l4.614 4.614a1.061 1.061 0 0 0 1.5-1.5L9.929 12z"/></svg></a>`
+        var backButton = `<a class="floating clickable" style="padding: 8px 10px 8px 8px;" onclick="tvPopup(${old[0]},${old[1]},null)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="5.07 6.368 11.263 11.263"><path d="m9.929 12 3.821-3.821a1.061 1.061 0 0 0-1.5-1.5l-4.614 4.614a.999.999 0 0 0 0 1.414l4.614 4.614a1.061 1.061 0 0 0 1.5-1.5L9.929 12z"/></svg></a>`
     } else {
         var backButton = ``
     }
