@@ -196,7 +196,7 @@
 .tv-popup .info .video-app-tray .video-app{
     flex-grow: 1;
     flex-direction: column;
-
+    width: 50px;
     font-size: 10px;
     font-weight: 400;
     color: white;
