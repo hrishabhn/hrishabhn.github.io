@@ -184,7 +184,7 @@ function appListRender(content) {
         // vstack.append(spacerElement(2))
 
         var button = document.createElement('a')
-        button.classList = `item button-text`
+        button.classList = `item button-fg`
         button.href = content.data[i].link
         button.target = `_${content.data[i].target}`
 
@@ -277,7 +277,7 @@ function appLinkRender(content) {
                 <div class="fg layer-1"></div>
                 <div class="icon ${content.data[i].background}">${content.data[i].icon}</div>
                 <div class="grow"></div>
-                <p class="text button-text">${content.data[i].name}</p>
+                <p class="text button-fg">${content.data[i].name}</p>
             </a>
             <div class="spacer-x" style="--size: 10px;"></div>`
 
@@ -355,7 +355,7 @@ function combineSubColElements(subCol1,subCol2) {
 //     <a class="shortcut layer-1 clickable card-shadow" href="${app.link}" target="_${app.target}">
 //         <div class="icon ${app.background}">${app.icon}</div>
 //         <div class="grow"></div>
-//         <p class="text button-text">${app.name}</p>
+//         <p class="text button-fg">${app.name}</p>
 //     </a>`
 
 //     return htmlString

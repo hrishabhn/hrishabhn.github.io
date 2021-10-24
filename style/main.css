@@ -169,7 +169,7 @@ body > *, div, a, p{
     text-decoration: none;
 }
 
-.button-text{
+.button-fg{
     color: #fff;
     fill: #fff;
 }
@@ -264,7 +264,7 @@ svg{
         color: var(--dark-layer-1);
         fill: var(--dark-layer-1);
     }
-    .button-text{
+    .button-fg{
         color: var(--dark-layer-1);
         fill: var(--dark-layer-1);
     }
