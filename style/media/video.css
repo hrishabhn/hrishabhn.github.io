@@ -166,11 +166,11 @@
     opacity: 1;
 } */
 
-.tv-poster .more{
+/* .tv-poster .more{
     display: none;
-}
+} */
 
-@media(min-width: 450px){
+/* @media(min-width: 450px){ */
     .tv-poster .more{
         display: flex;
         position: absolute;
@@ -190,7 +190,7 @@
         opacity: 1;
     }
 
-}
+/* } */
 
 
 .tv-mid-info{
