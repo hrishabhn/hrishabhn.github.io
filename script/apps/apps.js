@@ -258,6 +258,7 @@ function appLinkRender(content) {
     container.append(spacerElement(10))
 
     var hscroll = hscrollElement()
+    hscroll.append(spacerElement(15))
 
     for (let i = 0; i < content.data.length; i++) {
         var link = document.createElement('div')
