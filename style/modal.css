@@ -252,6 +252,8 @@
     overflow: hidden;
     scroll-snap-align: start;
     scroll-margin-left: 30px;
+    background-color: var(--col);
+    color: white;
 }
 
 .tv-popup .suggest .card .poster{
@@ -293,8 +295,12 @@
 
 .tv-popup .suggest .card .info{
     padding: 10px;
+    -webkit-backdrop-filter: saturate(2) brightness(0.5);
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    color: white;
 }
-.tv-popup .suggest .card .info p{
+.tv-popup .suggest .card .info .text{
     display: -webkit-box;
     overflow: hidden;
     width: 100%;
@@ -320,6 +326,39 @@
 
     padding: 0;
 }
+.tv-popup .suggest .card .info .play{
+    padding: 0px 10px;
+    height: 30px;
+    border-radius: 8px;
+
+    background-color: var(--white-10);
+    color: white;
+    fill: white;
+
+    font-size: 10px;
+    font-weight: 400;
+}
+.tv-popup .suggest .card .info .play .icon{
+    height: 10px;
+    width: 10px;
+}
+
+
+.tv-popup .suggest .card .info .service{
+    height: 10px;
+    width: 30px;
+    margin-top: 10px;
+
+    background-image: var(--service);
+
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    opacity: 0.75;
+}
+
+
 
 @media screen and (prefers-color-scheme: light) {
     .tv-popup .current .poster .gradient{
