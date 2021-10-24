@@ -70,7 +70,7 @@ function tvPopupElement(a,b) {
     container.classList = 'tv-popup vstack fill-parent'
     container.innerHTML = `
     <div class="current">
-        <div class="header only-mobile" style="--col: #${movie.style.color};"></div>
+        <div class="header only-mobile" style="--col: #${movie.style.color};">${movie.name}</div>
         <div class="poster card-shadow" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
             <div class="gradient" style="--col: #${movie.style.color}00;"></div>
             <div class="title" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
