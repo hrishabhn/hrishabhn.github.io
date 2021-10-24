@@ -41,9 +41,9 @@
     width: 100%;
     overflow-x: scroll;
     justify-content: flex-start;
-    margin: 0px;
     scroll-snap-type: x mandatory;
 }
+
 
 
 .spacer-x{
