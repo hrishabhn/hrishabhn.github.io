@@ -93,7 +93,7 @@ function tvPopupElement(a,b) {
             </a>
             <div class="grow hidden-mobile"></div>
         </div>
-        <div class="spacer-x" style="--size: 10px;"></div>
+        <div class="spacer-x" style="--size: 20px;"></div>
         <div class="summary">${movie.info.summary}</div>
         <div class="spacer-x" style="--size: 20px;"></div>
         
