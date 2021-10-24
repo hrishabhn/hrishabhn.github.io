@@ -110,20 +110,15 @@
 .tv-popup .current{
     flex-direction: column;
     width: 100%;
-    background-color: var(--dark-layer-2);
 }
-
-.tv-popup .current .header{
-    height: 100px;
+.tv-popup .current .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-
-    align-items: flex-end;
-    font-size: 17px;
-    font-weight: 600;
-    color: white;
-    padding-bottom: 12px;
-
     background-color: var(--col);
+    filter: saturate(2) brightness(0.5);
 }
 .tv-popup .current .poster{
     width: 100%;
@@ -133,6 +128,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-image: var(--poster);
+
+    overflow: hidden;
 }
 
 .tv-popup .current .poster .gradient{
@@ -146,17 +143,7 @@
     /* -webkit-backdrop-filter: blur(10px) brightness(0.6); */
     /* -webkit-mask-image: linear-gradient(to bottom,transparent 40%,#000 80%); */
 }
-
-/* .tv-popup .current .more{
-    flex-direction: column;
-    width: 100%;
-    padding: 0px 30px;
-    
-    
-    height: 100px;
-} */
-
-.tv-popup .current .title{
+.tv-popup .current .poster .title{
     position: absolute;
     bottom: 20px;
     left: 30px;
@@ -168,35 +155,20 @@
     background-position: bottom left;
     background-image: var(--title);
 }
-.tv-popup .current .close{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    height: 25px;
-    width: 25px;
-    border-radius: 100px;
-    fill: var(--white-100);
-}
 
-.tv-popup .info{
+.tv-popup .current .info{
     flex-direction: column;
     width: 100%;
     padding: 0px 30px;
+    color: white;
 }
-
-.tv-popup .info .desc{
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-
+.tv-popup .current .info .name{
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: capitalize;
     cursor: default;
 }
-
-.tv-popup .info .play{
+.tv-popup .current .info .play{
     padding: 12px 15px;
     border-radius: 8px;
     overflow: hidden;
@@ -206,29 +178,43 @@
     text-decoration: none;
     color: #fff;
     fill: white;
-    background-color: var(--col);
+    /* background-color: var(--col); */
+    background-color: white;
+    color: var(--dark-layer-1);
+    fill: var(--dark-layer-1);
 }
-
-.tv-popup .info .play .icon{
+.tv-popup .current .info .play .icon{
     height: 12px;
     width: 12px;
 }
-/* .tv-popup .info .play p{
+
+.tv-popup .current .info .desc{
+    /* display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; */
+
+
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: capitalize;
     cursor: default;
-} */
-.tv-popup .info .summary{
+    opacity: 0.8;
+}
+.tv-popup .current .info .summary{
     justify-content: flex-start;
     width: 100%;
     font-size: 12px;
     font-weight: 400;
-    opacity: 0.8;
     cursor: default;
 }
 .tv-popup .video-app-tray{
     /* height: 200px; */
     width: 100%;
+    padding: 15px 0px;
     padding-left: 30px;
     padding-right: 20px;
+    background-color: var(--black-30);
 }
 .tv-popup .video-app-tray .video-app{
     padding: 12px 15px;
@@ -236,20 +222,27 @@
 
     font-size: 12px;
     font-weight: 500;
+
+    background-color: var(--white-10);
+    color: white;
+    fill: white;
 }
 .tv-popup .video-app-tray .video-app .icon{
     height: 14px;
     width: 14px;
-    /* padding: 8px;
-    border-radius: 100px;
-
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--white-80); */
 }
 
 
 
+.tv-popup .current .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 100px;
+    fill: var(--white-100);
+}
 
 
 .tv-popup .suggest{
@@ -309,6 +302,7 @@
 }
 
 .tv-popup .suggest .card .info{
+    flex-direction: column;
     padding: 10px;
     -webkit-backdrop-filter: saturate(calc(3 / 2)) brightness(calc(2 / 3));
     border-bottom-left-radius: inherit;
@@ -379,7 +373,7 @@
     /* .tv-popup .current .poster .gradient{
         -webkit-backdrop-filter: blur(10px) brightness(0.9);
     } */
-    .tv-popup .info .video-app-tray .video-app .icon{
+    .tv-popup .current .info .video-app-tray .video-app .icon{
         border-color: var(--dark-layer-1-80);
     }
 
@@ -389,41 +383,42 @@
 
 }
 @media(max-width: 450px){
-    .tv-popup .current .title{
-        bottom: 20px;
-        left: 20px;
+    .tv-popup .current{
+        padding: 100px 0px 0px;
     }
-
-    .tv-popup .current .close{
-        top: 60px;
-        right: 10px;
-        height: 30px;
-        width: 30px;
-        -webkit-backdrop-filter: none;
-        background: none;
+    .tv-popup .current .poster{
+        width: calc(100% - 100px);
+        border-radius: 8px;
+        box-shadow: 0px 10px 50px -20px var(--dark-layer-1);
     }
-    .tv-popup .info{
+    .tv-popup .current .poster .title{
+        bottom: 10px;
+        left: 10px;
+    }
+    .tv-popup .current .info{
         padding: 0px 20px;
     }
-
-    .tv-popup .info .desc{
+    .tv-popup .current .info .play{
         font-size: 12px;
         font-weight: 500;
 
-        max-width: calc(100vw - 40px);
-    }
-    .tv-popup .info .play{
-        padding: 12px 15px;
-
-        font-size: 12px;
-        font-weight: 500;
-
-        min-width: calc(100vw - 100px);
+        min-width: calc(100vw - 150px);
     }
     .tv-popup .video-app-tray{
         padding-left: 20px;
         padding-right: 10px;
     }
+
+
+    .tv-popup .current .close{
+        top: 65px;
+        right: 10px;
+        /* height: 25px; */
+        /* width: 25px; */
+        -webkit-backdrop-filter: none;
+        background-color: var(--black-30);
+    }
+
 
 
     .tv-popup .suggest .card{
