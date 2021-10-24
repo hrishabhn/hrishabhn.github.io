@@ -37,38 +37,6 @@
 // },
 const movieData0 = [
     {
-        name: 'The Sopranos',
-        id: 'sopranos',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2b9AHpHo7DwvwIAT4i:type:series',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            desc: {
-                seasons: 6,
-                yearStart: 1999,
-                yearEnd: 2007,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "James Gandolfini stars in this acclaimed series about a mob boss whose professional and private strains land him in therapy.",
-        },
-        style: {
-            color: '443a3c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: '75299',
-            reelgoodLink: 'https://reelgood.com/show/the-sopranos-1999',
-            imdbID: 'tt0141842',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Succession',
         id: 'succession',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GWukCJAq-nIuHwwEAAAB4:type:series',
@@ -909,6 +877,38 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
+    {
+        name: 'The Sopranos',
+        id: 'sopranos',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2b9AHpHo7DwvwIAT4i:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            desc: {
+                seasons: 6,
+                yearStart: 1999,
+                yearEnd: 2007,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "James Gandolfini stars in this acclaimed series about a mob boss whose professional and private strains land him in therapy.",
+        },
+        style: {
+            color: '443a3c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '75299',
+            reelgoodLink: 'https://reelgood.com/show/the-sopranos-1999',
+            imdbID: 'tt0141842',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'My Name',
         id: 'myname',
