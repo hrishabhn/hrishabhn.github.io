@@ -80,6 +80,35 @@ function tvPopupElement(a,b) {
         <div class="spacer-x" style="--size: 10px;"></div>
         <a class="play clickable" ${linkHTML} target="_blank">${processLocation(movie.info.location)}</a>
         <div class="summary">${movie.info.summary}</div>
+        <div class="spacer-x" style="--size: 20px;"></div>
+        <div class="video-app-tray testing layer-2 card-shadow">
+            <div class="grow">
+                <div class="video-app clickable">
+                    <div class="icon"><svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 875 875"><rect class="cls-2" x="175.34" y="174.74" width="174.91" height="174.91"></rect><rect class="cls-3" x="350.26" y="174.74" width="174.91" height="174.91"></rect><rect class="cls-4" x="525.17" y="174.74" width="174.91" height="174.91"></rect><rect class="cls-5" x="350.26" y="349.66" width="174.91" height="174.91"></rect><rect class="cls-6" x="350.26" y="524.57" width="174.91" height="174.91"></rect></svg></div>
+                    <div class="spacer-x" style="--size: 8px;"></div>
+                    <div class="text">TV Time</div>
+                </div>
+                <div class="spacer-x" style="--size: 10px;"></div>
+                <div class="video-app clickable">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="m14.21 11.477 2.475 4.441h-3.803l-2.014-4.047h-1.4v4.047H6.151v-6.85l3.317-1.791v1.755h2.333c.686 0 1.38-.423 1.38-1.231 0-.809-.694-1.232-1.38-1.232h-.915V3.75h1.382c2.563 0 4.284 1.642 4.284 4.087 0 2.005-1.187 3.183-2.342 3.641zM0 0l8.75 5.032L0 10.064V0zm1.189 4.637h.8v1.997l3.536-2.09L1.189 2.05v2.587z"></path></svg></div>
+                    <div class="spacer-x" style="--size: 8px;"></div>
+                    <div class="text">Reelgood</div>
+                </div>
+                <div class="spacer-x" style="--size: 10px;"></div>
+                <div class="video-app clickable">
+                    <div class="icon"><svg data-bbox="1.959 3 46.082 42" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><path d="M29 3c-2.105 0-4.566 1.652-4.938 9.031.313-.008.622-.031.938-.031.352 0 .715.02 1.063.031C26.3 7.598 27.355 5 29 5c.703 0 1.102.383 1.844 1.188.867.94 2 2.164 4.218 2.625A6.215 6.215 0 0 1 35 8c0-.422.043-.82.125-1.219-1.375-.375-2.102-1.168-2.813-1.937C31.52 3.984 30.61 3 29 3zm12 1c-2.207 0-4 1.797-4 4 0 2.203 1.793 4 4 4s4-1.797 4-4c0-2.203-1.793-4-4-4zM25 14C12.867 14 3 20.18 3 29s9.867 16 22 16 22-7.18 22-16-9.867-15-22-15zm-17.5.938c-1.46 0-2.848.597-3.906 1.656-1.723 1.722-2.078 4.199-1.094 6.25 1.512-2.926 4.113-5.422 7.469-7.282-.762-.386-1.606-.624-2.469-.624zm35 0c-.863 0-1.707.238-2.469.624 3.356 1.86 5.957 4.356 7.469 7.282.984-2.051.629-4.528-1.094-6.25-1.058-1.059-2.445-1.657-3.906-1.657zM17 23a3 3 0 1 1-.002 6.002A3 3 0 0 1 17 23zm16 0a3 3 0 1 1-.002 6.002A3 3 0 0 1 33 23zM16.062 34c.25.043.497.184.657.406.105.149 2.449 3.282 8.281 3.282 5.91 0 8.258-3.22 8.281-3.25.317-.45.953-.57 1.407-.25.449.316.535.921.218 1.374-.117.168-2.968 4.126-9.906 4.126-6.941 0-9.79-3.958-9.906-4.126-.317-.453-.235-1.058.219-1.374.226-.16.5-.231.75-.188z"></path></svg></div>
+                    <div class="spacer-x" style="--size: 8px;"></div>
+                    <div class="text">IMDb</div>
+                </div>
+                <div class="spacer-x" style="--size: 10px;"></div>
+                <div class="video-app clickable">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="m14.21 11.477 2.475 4.441h-3.803l-2.014-4.047h-1.4v4.047H6.151v-6.85l3.317-1.791v1.755h2.333c.686 0 1.38-.423 1.38-1.231 0-.809-.694-1.232-1.38-1.232h-.915V3.75h1.382c2.563 0 4.284 1.642 4.284 4.087 0 2.005-1.187 3.183-2.342 3.641zM0 0l8.75 5.032L0 10.064V0zm1.189 4.637h.8v1.997l3.536-2.09L1.189 2.05v2.587z"></path></svg></div>
+                    <div class="spacer-x" style="--size: 8px;"></div>
+                    <div class="text">Reddit</div>
+                </div>
+                <div class="spacer-x" style="--size: 10px;"></div>
+            </div>
+        </div>
     </div>
     ${tvPopupSuggest(a,b)}
     <div class="spacer-x" style="--size: 30px;"></div>
