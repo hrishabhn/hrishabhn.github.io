@@ -412,5 +412,8 @@
     .tv-popup .suggest .card{
         scroll-margin-left: 20px;
     }
+    .tv-popup .suggest .card .info .play{
+        min-width: auto;
+    }
 
 }
