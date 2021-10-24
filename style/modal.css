@@ -113,8 +113,14 @@
     background-color: var(--dark-layer-2);
 }
 
+.tv-popup .current .header{
+    position: -webkit-sticky;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
 
-
+    background-color: var(--col);
+}
 .tv-popup .current .poster{
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -385,10 +391,12 @@
     }
 
     .tv-popup .current .close{
-        top: 10px;
+        top: 50px;
         right: 10px;
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
+        -webkit-backdrop-filter: none;
+        background: none;
     }
     .tv-popup .info{
         padding: 0px 20px;
