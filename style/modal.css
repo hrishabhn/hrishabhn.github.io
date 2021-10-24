@@ -295,7 +295,7 @@
 
 .tv-popup .suggest .card .info{
     padding: 10px;
-    -webkit-backdrop-filter: saturate(2) brightness(0.5);
+    -webkit-backdrop-filter: saturate(calc(3 / 2)) brightness(calc(2 / 3));
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     color: white;
@@ -366,6 +366,10 @@
     }
     .tv-popup .info .video-app-tray .video-app .icon{
         border-color: var(--dark-layer-1-80);
+    }
+
+    .tv-popup .suggest .card .info{
+        -webkit-backdrop-filter: saturate(calc(5 / 4)) brightness(calc(4 / 5));
     }
 
 }
