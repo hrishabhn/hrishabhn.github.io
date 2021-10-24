@@ -11,8 +11,6 @@
     background-color: var(--dark-layer-3);
 }
 
-
-
 .layer-0{
     background-color: var(--dark-layer-1);
 }
@@ -21,6 +19,18 @@
 }
 .layer-2{
     background-color: var(--dark-layer-3);
+}
+.layer-fg{
+    background-color: var(--light-layer-0);
+}
+
+a{
+    color: #fff;
+    fill: #fff;
+}
+a.layer-fg{
+    color: var(--dark-layer-1);
+    fill: var(--dark-layer-1);
 }
 @media screen and (prefers-color-scheme: light) {
     .layer0{
@@ -47,7 +57,18 @@
     .layer-2{
         background-color: var(--light-layer-1);
     }
+    .layer-fg{
+        background-color: var(--dark-layer-1);
+    }
 
+    a{
+        color: var(--dark-layer-1);
+        fill: var(--dark-layer-1);
+    }
+    a.layer-fg{
+        color: var(--light-layer-0);
+        fill: var(--light-layer-0);
+    }
 }
 
 
