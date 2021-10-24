@@ -383,40 +383,6 @@ const movieData2 = [
         },
     },
     {
-        name: 'The Problem With Jon Stewart',
-        id: 'problem',
-        link: 'https://tv.apple.com/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob',
-        info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
-            // date: '',
-            weekday: 'Thursdays',
-            desc: {
-               seasons: 1,
-               yearStart: 2021,
-               yearEnd: null,
-               genre: [
-                   'comedy',
-                   'talk show',
-               ],
-            },
-            summary: "It's easy to feel overwhelmed by the world's problems. It's harder to pinpoint the systems responsible for creating them. In this series, Jon Stewart brings together people impacted by different parts of a problem to discuss how we come up with change.",
-        },
-        style: {
-            color: '334348',
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '400756',
-            reelgoodLink: 'https://reelgood.com/show/the-problem-with-jon-stewart-2021',
-            imdbID: 'tt15084142',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Foundation',
         id: 'foundation',
         link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
@@ -2477,6 +2443,40 @@ const movieData9 = [
 ]
 
 const movieDataArchive = [
+    {
+        name: 'The Problem With Jon Stewart',
+        id: 'problem',
+        link: 'https://tv.apple.com/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob',
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            // date: '',
+            weekday: 'Thursdays',
+            desc: {
+               seasons: 1,
+               yearStart: 2021,
+               yearEnd: null,
+               genre: [
+                   'comedy',
+                   'talk show',
+               ],
+            },
+            summary: "It's easy to feel overwhelmed by the world's problems. It's harder to pinpoint the systems responsible for creating them. In this series, Jon Stewart brings together people impacted by different parts of a problem to discuss how we come up with change.",
+        },
+        style: {
+            color: '334348',
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '400756',
+            reelgoodLink: 'https://reelgood.com/show/the-problem-with-jon-stewart-2021',
+            imdbID: 'tt15084142',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: "Your Name.",
         id: "yourname",
