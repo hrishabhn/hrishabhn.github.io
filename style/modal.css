@@ -133,8 +133,8 @@
     width: 100%;
 
     -webkit-backdrop-filter: blur(10px) brightness(0.6);
-    -webkit-mask-image: linear-gradient(to bottom,transparent 50%,#000 80%);
-    mask-image: linear-gradient(to bottom,transparent 50%,#000 80%);
+    -webkit-mask-image: linear-gradient(to bottom,transparent 40%,#000 80%);
+    /* mask-image: linear-gradient(to bottom,transparent 50%,#000 100%); */
 }
 
 /* .tv-popup .current .more{
@@ -149,7 +149,7 @@
 .tv-popup .current .title{
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 30px;
     height: 25%;
     width: 60%;
 
@@ -322,9 +322,8 @@
 }
 
 @media screen and (prefers-color-scheme: light) {
-    .tv-popup .poster .gradient{
-    
-        /* background-image: linear-gradient(var(--col),var(--light-layer-0)); */
+    .tv-popup .current .poster .gradient{
+        -webkit-backdrop-filter: blur(10px) brightness(0.9);
     }
     .tv-popup .info .video-app-tray .video-app .icon{
         border-color: var(--dark-layer-1-80);
@@ -332,11 +331,12 @@
 
 }
 @media(max-width: 450px){
-    .tv-popup .poster .title{
+    .tv-popup .current .title{
+        bottom: 20px;
         left: 20px;
     }
 
-    .tv-popup .poster .close{
+    .tv-popup .current .close{
         top: 10px;
         right: 10px;
         height: 30px;
