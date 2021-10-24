@@ -175,26 +175,24 @@
 }
 
 .tv-popup .info .desc{
-    justify-content: flex-start;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+
+    font-size: 14px;
+    font-weight: 500;
     text-transform: capitalize;
     cursor: default;
 }
 
 .tv-popup .info .play{
-    width: 100%;
-    padding: 10px;
+    padding: 12px 15px;
     border-radius: 8px;
 
     font-size: 14px;
     font-weight: 500;
-    /* cursor: pointer; */
     text-decoration: none;
-
-    /* background-color: white; */
-    /* color: var(--dark-layer-1); */
 }
 .tv-popup .info .play .icon{
     height: 12px;
@@ -351,6 +349,21 @@
     }
     .tv-popup .info{
         padding: 0px 20px;
+    }
+
+    .tv-popup .info .desc{
+        font-size: 12px;
+        font-weight: 500;
+
+        max-width: calc(100vw - 40px);
+    }
+    .tv-popup .info .play{
+        padding: 12px 15px;
+
+        font-size: 12px;
+        font-weight: 500;
+
+        min-width: calc(100vw - 100px);
     }
 
 
