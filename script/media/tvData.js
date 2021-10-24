@@ -45,7 +45,7 @@ const movieData0 = [
             studio: 'hbo',
             location: 'HBO Max',
             // date: '',
-            // weekday: '',
+            weekday: 'Sundays',
             desc: {
                 seasons: 2,
                 yearStart: 2018,
@@ -58,7 +58,7 @@ const movieData0 = [
             summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
         },
         style: {
-            color: '43332d',
+            color: '555962',
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',

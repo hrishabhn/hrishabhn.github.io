@@ -158,7 +158,16 @@ function processLocation(location) {
     } else {
         return `Watch on ${location}`
     }
+}
 
+function processService(movie) {
+    if (movie.info.studio) {
+        return movie.info.studio
+    } else if (movie.info.service) {
+        return movie.info.service
+    } else {
+        return null
+    }
 }
 
 function tvSmallTray(a) {
