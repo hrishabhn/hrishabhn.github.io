@@ -200,7 +200,7 @@ const movieData2 = [
             color: '337799',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: 'wide',
+            titleSize: 'mid',
         },
         apps: {
             tvTimeID: '110381',

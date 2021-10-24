@@ -168,6 +168,23 @@
     text-transform: capitalize;
     cursor: default;
 }
+.tv-popup .current .info .title-mob{
+    width: calc(100vw - 175px);
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: var(--title);
+}
+.tv-popup .current .info .title-mob.wide{
+    height: 40px;
+}
+.tv-popup .current .info .title-mob.mid{
+    height: 50px;
+}
+.tv-popup .current .info .title-mob.tall{
+    height: 70px;
+}
 .tv-popup .current .info .play{
     padding: 12px 15px;
     border-radius: 8px;
@@ -389,7 +406,7 @@
     .tv-popup .current .poster{
         width: calc(100% - 100px);
         border-radius: 8px;
-        box-shadow: 0px 10px 50px -20px var(--dark-layer-1);
+        box-shadow: 0px 15px 40px -15px var(--dark-layer-1);
     }
     .tv-popup .current .poster .title{
         bottom: 10px;

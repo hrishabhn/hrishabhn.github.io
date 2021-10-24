@@ -72,16 +72,19 @@ function tvPopupElement(a,b) {
     <div class="current">
         <div class="bg" style="--col: #${movie.style.color};"></div>
         <div class="poster card-shadow" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
-            <div class="gradient" style="--col: #${movie.style.color}00;"></div>
-            <div class="title" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
+            <div class="gradient hidden-mobile" style="--col: #${movie.style.color}00;"></div>
+            <div class="title hidden-mobile" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
         </div>
         <div class="spacer-x" style="--size: 15px;"></div>
+        <div class="spacer-x only-mobile" style="--size: 10px;"></div>
         <div class="info">
-            <div class="fill-width">
+            <div class="fill-width hidden-mobile">
                 <div class="name">${movie.name}</div>
                 <div class="grow hidden-mobile"></div>
             </div>
+            <div class="title-mob only-mobile ${movie.style.titleSize}" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
             <div class="spacer-x" style="--size: 8px;"></div>
+            <div class="spacer-x only-mobile" style="--size: 12px;"></div>
             <div class="fill-width">
                 <a class="play clickable card-shadow" ${linkHTML} style="--col: #${movie.style.color};" target="_blank">
                     <div class="icon"><svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></svg></div>
