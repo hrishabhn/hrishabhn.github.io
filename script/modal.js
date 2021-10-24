@@ -96,8 +96,9 @@ function tvPopupElement(a,b) {
         <div class="spacer-x" style="--size: 10px;"></div>
         <div class="summary">${movie.info.summary}</div>
         <div class="spacer-x" style="--size: 20px;"></div>
-        ${tvPopupAppTray(a,b)}
+        
     </div>
+    ${tvPopupAppTray(a,b)}
     ${tvPopupSuggest(a,b)}
     <div class="spacer-x" style="--size: 30px;"></div>
     <div class="spacer-x only-mobile" style="--size: 30px;"></div>
@@ -113,11 +114,11 @@ function tvPopupAppTray(a,b) {
 
     if (movie.apps) {
         var tray = document.createElement('div')
-        tray.classList = 'video-app-tray layer-1 card-shadow'
+        tray.classList = 'video-app-tray hscroll'
 
         if (movie.apps.tvTimeID) {
             var button = document.createElement('a')
-            button.classList = 'video-app clickable button-fg'
+            button.classList = 'video-app layer-1 clickable button-fg'
             button.href = `https://www.tvtime.com/en/show/${movie.apps.tvTimeID}`
             button.target = `_blank`
 
@@ -130,7 +131,7 @@ function tvPopupAppTray(a,b) {
         }
         if (movie.apps.reelgoodLink) {
             var button = document.createElement('a')
-            button.classList = 'video-app clickable button-fg'
+            button.classList = 'video-app layer-1 clickable button-fg'
             button.href = movie.apps.reelgoodLink
             button.target = `_blank`
 
@@ -143,7 +144,7 @@ function tvPopupAppTray(a,b) {
         }
         if (movie.apps.imdbID) {
             var button = document.createElement('a')
-            button.classList = 'video-app clickable button-fg'
+            button.classList = 'video-app layer-1 clickable button-fg'
             button.href = `https://www.imdb.com/title/${movie.apps.imdbID}`
             button.target = `_blank`
 
@@ -156,7 +157,7 @@ function tvPopupAppTray(a,b) {
         }
         if (movie.apps.subReddit) {
             var button = document.createElement('a')
-            button.classList = 'video-app clickablet button-fg'
+            button.classList = 'video-app layer-1 clickable button-fg'
             button.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
             button.target = `_blank`
 
