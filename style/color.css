@@ -44,11 +44,17 @@
     .layer-1{
         background-color: var(--light-layer-0);
     }
+    .layer-2{
+        background-color: var(--light-layer-1);
+    }
 
 }
 
 
 @media(max-width: 450px){
+    .layer-0{
+        background-color: var(--dark-layer-0);
+    }
     .layer-1{
         background-color: var(--dark-layer-1);
     }
@@ -56,6 +62,9 @@
 
     @media screen and (prefers-color-scheme: light) {
 
+        .layer-0{
+            background-color: var(--light-layer-1);
+        }
         .layer-1{
             background-color: var(--light-layer-0);
         }

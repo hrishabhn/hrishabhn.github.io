@@ -729,6 +729,36 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: 'Dune',
+        id: 'dune',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GYUjdLgBiJp5otAEAAAAJ:type:feature',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            desc: {
+                year: 2021,
+                genre: [
+                    'action',
+                    'adventure',
+                    'drama',
+                ],
+            },
+            summary: "A mythic and emotionally charged epic hero's journey, Dune is Academy Award nominee Denis Villeneuve's visuallystunning adaptation of Frank Herbert's seminal bestseller of the same name.",
+        },
+        style: {
+            color: '6f897e',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/dune-2020',
+            imdbID: 'tt1160419',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Dil Chahta Hai',
         id: 'dil',
         link: {

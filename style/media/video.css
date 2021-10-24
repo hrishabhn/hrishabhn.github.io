@@ -244,6 +244,7 @@
     /* opacity: 0.8; */
 
     padding: 8px 0px 10px;
+    cursor: default;
 }
 
 @media(max-width: 450px){

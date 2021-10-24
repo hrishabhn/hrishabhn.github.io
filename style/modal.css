@@ -72,6 +72,7 @@
     font-size: 18px;
     font-weight: 600;
     padding: 15px 15px 10px;
+    cursor: default;
 }
 
 #modal-body .item{
@@ -101,9 +102,9 @@
 #modal-body .tv-popup{
     width: 100vw;
     max-width: 900px;
-    color: white;
+    /* color: white; */
     min-height: calc(100vh - 80px);
-    background-color: var(--dark-layer-2);
+    /* background-color: var(--dark-layer-2); */
 
 }
 
@@ -123,10 +124,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 60%;
+    height: 50%;
     width: 100%;
 
-    background-image: linear-gradient(var(--col),var(--dark-layer-2));
+    -webkit-backdrop-filter: blur(10px) brightness(0.6);
+    -webkit-mask-image: linear-gradient(to bottom,transparent,#000 80%);
 }
 
 .tv-popup .poster .title{
@@ -163,6 +165,7 @@
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
+    cursor: default;
 }
 
 .tv-popup .info .play{
@@ -185,6 +188,7 @@
     font-weight: 400;
     padding-top: 10px;
     opacity: 0.8;
+    cursor: default;
 }
 .tv-popup .info .video-app-tray{
     /* height: 200px; */
@@ -199,7 +203,7 @@
     width: 50px;
     font-size: 10px;
     font-weight: 400;
-    color: white;
+    /* color: white; */
     cursor: default;
 }
 .tv-popup .info .video-app-tray .video-app .icon{
@@ -212,7 +216,7 @@
     border-width: 2px;
     border-color: var(--white-80);
 
-    fill: white;
+    /* fill: white; */
 }
 
 
@@ -255,6 +259,9 @@
     width: 100%;
 
     background-image: linear-gradient(var(--col),#00000099);
+
+    -webkit-backdrop-filter: none;
+    -webkit-mask-image: none;
 }
 
 .tv-popup .suggest .card .poster .title{
@@ -302,11 +309,6 @@
 
 @media screen and (prefers-color-scheme: light) {
     .tv-popup .poster .gradient{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 60%;
-        width: 100%;
     
         /* background-image: linear-gradient(var(--col),var(--light-layer-0)); */
     }

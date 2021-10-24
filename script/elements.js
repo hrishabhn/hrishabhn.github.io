@@ -94,7 +94,7 @@ function searchElement(contentItem) {
     element.id = 'search'
     element.href = contentItem.link
     // element.target = '_blank'
-    element.classList = 'layer-1 button-text card-shadow clickable page-width'
+    element.classList = 'layer-1 button-fg card-shadow clickable page-width'
 
     var icon = document.createElement('div')
     icon.classList = 'icon'
