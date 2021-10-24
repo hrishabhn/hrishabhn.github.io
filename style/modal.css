@@ -134,6 +134,7 @@
 
     -webkit-backdrop-filter: blur(10px) brightness(0.6);
     -webkit-mask-image: linear-gradient(to bottom,transparent 50%,#000 80%);
+    mask-image: linear-gradient(to bottom,transparent 50%,#000 80%);
 }
 
 /* .tv-popup .current .more{
@@ -189,11 +190,18 @@
 
     font-size: 14px;
     font-weight: 500;
-    cursor: pointer;
+    /* cursor: pointer; */
     text-decoration: none;
 
     /* background-color: white; */
     /* color: var(--dark-layer-1); */
+}
+.tv-popup .info .play .icon{
+    height: 12px;
+    width: 12px;
+}
+.tv-popup .info .play p{
+    cursor: default;
 }
 .tv-popup .info .summary{
     justify-content: flex-start;
@@ -324,6 +332,9 @@
     .tv-popup .poster .gradient{
     
         /* background-image: linear-gradient(var(--col),var(--light-layer-0)); */
+    }
+    .tv-popup .info .video-app-tray .video-app .icon{
+        border-color: var(--dark-layer-1-80);
     }
 
 }
