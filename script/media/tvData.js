@@ -71,40 +71,6 @@ const movieData0 = [
         },
     },
     {
-        name: 'Dave Chappelle: The Closer',
-        id: 'closer',
-        link: {
-            netflix: '81228510'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                year: 2021,
-                genre: [
-                    'comedy',
-                    // 'special',
-                ],
-            },
-            summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight - and get a few things off his chest.",
-        },
-        style: {
-            color: '6d223c',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/movie/dave-chappelle-the-closer-2021',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: "Cowboy Bebop",
         id: "cowboy",
         link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
@@ -2342,6 +2308,40 @@ const movieData8 = [
     },
 ]
 const movieData9 = [
+    {
+        name: 'Dave Chappelle: The Closer',
+        id: 'closer',
+        link: {
+            netflix: '81228510'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                year: 2021,
+                genre: [
+                    'comedy',
+                    // 'special',
+                ],
+            },
+            summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight - and get a few things off his chest.",
+        },
+        style: {
+            color: '6d223c',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/dave-chappelle-the-closer-2021',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Zindagi Na Milegi Dobara',
         id: 'zindagi',
