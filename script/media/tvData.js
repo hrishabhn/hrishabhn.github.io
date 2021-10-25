@@ -71,40 +71,6 @@ const movieData0 = [
         },
     },
     {
-        name: 'Succession',
-        id: 'succession',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GWukCJAq-nIuHwwEAAAB4:type:series',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            // date: '',
-            weekday: 'Sundays',
-            desc: {
-                seasons: 2,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    //    'comedy',
-                    'drama',
-                ],
-            },
-            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
-        },
-        style: {
-            color: '555962',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '338186',
-            reelgoodLink: 'https://reelgood.com/show/succession-2018',
-            imdbID: 'tt7660850',
-            subReddit: 'SuccessionTV',
-        },
-    },
-    {
         name: "Cowboy Bebop",
         id: "cowboy",
         link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
@@ -170,6 +136,40 @@ const movieData1 = [
             reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
             imdbID: "tt7908628",
             subReddit: 'WhatWeDointheShadows',
+        },
+    },
+    {
+        name: 'Succession',
+        id: 'succession',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GWukCJAq-nIuHwwEAAAB4:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            weekday: 'Sundays',
+            desc: {
+                seasons: 2,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    //    'comedy',
+                    'drama',
+                ],
+            },
+            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
+        },
+        style: {
+            color: '555962',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '338186',
+            reelgoodLink: 'https://reelgood.com/show/succession-2018',
+            imdbID: 'tt7660850',
+            subReddit: 'SuccessionTV',
         },
     },
     {
