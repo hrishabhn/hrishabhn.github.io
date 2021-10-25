@@ -6,7 +6,7 @@ const bookData0 = [
         link: 'ibooks://',
         author: 'Reed Hastings & Erin Meyer',
         coverType: 'jpg',
-        progress: '68%',
+        progress: '77%',
         format: 'EBook',
     },
     {
@@ -35,6 +35,15 @@ const bookData0 = [
 ]
 
 const bookData1 = [
+    {
+        name: 'The Culture Map',
+        id: 'cultureMap',
+        link: 'ibooks://',
+        author: 'Erin Meyer',
+        coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
+    },
     {
         name: '12 Rules for Life',
         id: '12rules',
@@ -127,15 +136,6 @@ const bookData2 = [
         id: 'gweilo',
         link: 'ibooks://',
         author: 'Martin Booth',
-        coverType: 'jpg',
-        progress: 'NEW',
-        format: 'EBook',
-    },
-    {
-        name: 'The Culture Map',
-        id: 'cultureMap',
-        link: 'ibooks://',
-        author: 'Erin Meyer',
         coverType: 'jpg',
         progress: 'NEW',
         format: 'EBook',
