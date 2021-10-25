@@ -402,7 +402,7 @@
 }
 @media(max-width: 450px){
     .tv-popup .current{
-        padding: 100px 0px 0px;
+        padding: 110px 0px 0px;
     }
     .tv-popup .current .poster{
         width: calc(100% - 40px);
