@@ -5,7 +5,7 @@ function loadApp() {
 
     widgetPopulate()
     openFirstPage(0)
-    // tvPopup(0,0,null)
+    // tvPopup(0,0,[1,0])
     // testTV()
 }
 
