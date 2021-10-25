@@ -37,6 +37,40 @@
 // },
 const movieData0 = [
     {
+        name: 'South Park',
+        id: 'southpark',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 24,
+                yearStart: 1997,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
+        },
+        style: {
+            color: 'A14533',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '75897',
+            reelgoodLink: 'https://reelgood.com/show/south-park-1997',
+            imdbID: 'tt0121955',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Succession',
         id: 'succession',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GWukCJAq-nIuHwwEAAAB4:type:series',
@@ -379,42 +413,6 @@ const movieData2 = [
             reelgoodLink: 'https://reelgood.com/show/foundation-2020',
             imdbID: 'tt0804484',
             subReddit: 'FoundationTV',
-        },
-    },
-    {
-        name: 'South Park',
-        id: 'southpark',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 24,
-                yearStart: 1997,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
-        },
-        style: {
-            color: 'b8c2c0',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '75897',
-            reelgoodLink: 'https://reelgood.com/show/south-park-1997',
-            imdbID: 'tt0121955',
-            // subReddit: 'subreddit',
         },
     },
     {
