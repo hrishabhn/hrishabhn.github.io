@@ -104,6 +104,113 @@ const movieData0 = [
         },
     },
     {
+        name: 'Archer',
+        id: 'archer',
+        link: 'https://www.hulu.com/series/archer-22b4b3c8-0827-42d2-a841-50e8f3464dc2',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 12,
+                yearStart: 2009,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'animation',
+                    'crime',
+                ],
+            },
+            summary: "Covert black ops and espionage take a back seat to zany personalities and relationships between secret agents and drones.",
+        },
+        style: {
+            color: '337799',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '110381',
+            reelgoodLink: 'https://reelgood.com/show/archer-2009',
+            imdbID: 'tt1486217',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Memories of the Alhambra',
+        id: 'memories',
+        link: {
+            netflix: '81004280'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2018,
+                yearEnd: 2019,
+                genre: [
+                    'drama',
+                    'sci-fi',
+                ],
+            },
+            summary: "A frantic young man is running scared in Barcelona. CEO Yoo Jin-woo heads to Granada on a quest after getting a strange call while on business in Spain.",
+        },
+        style: {
+            color: 'a6886c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '348488',
+            reelgoodLink: 'https://reelgood.com/show/memories-of-the-alhambra-2018',
+            imdbID: 'tt8236556',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Midnight Mass',
+        id: 'midnight',
+        link: {
+            netflix: '81083626'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'horror',
+                ],
+            },
+            summary: "The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.",
+        },
+        style: {
+            color: '3c2e2c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '367226',
+            reelgoodLink: 'https://reelgood.com/show/midnight-mass',
+            imdbID: 'tt10574558',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: "Cowboy Bebop",
         id: "cowboy",
         link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
@@ -208,6 +315,39 @@ const movieData1 = [
 ]
 const movieData2 = [
     {
+        name: 'Curb Your Enthusiasm',
+        id: 'curb',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series',
+        info: {
+            service: 'hbo',
+            studio: '',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 11,
+               yearStart: 2000,
+               yearEnd: null,
+               genre: [
+                   'comedy',
+               ],
+            },
+            summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
+        },
+        style: {
+            color: '746e6e',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '76203',
+            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
+            imdbID: 'tt0264235',
+            // subReddit: null,
+        },
+    },
+    {
         name: 'Family Guy',
         id: 'family',
         link: 'https://www.hulu.com/series/family-guy-3c3c0f8b-7366-4d15-88ab-18050285978e',
@@ -242,41 +382,6 @@ const movieData2 = [
         },
     },
     {
-        name: 'Archer',
-        id: 'archer',
-        link: 'https://www.hulu.com/series/archer-22b4b3c8-0827-42d2-a841-50e8f3464dc2',
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 12,
-                yearStart: 2009,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'animation',
-                    'crime',
-                ],
-            },
-            summary: "Covert black ops and espionage take a back seat to zany personalities and relationships between secret agents and drones.",
-        },
-        style: {
-            color: '337799',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: '110381',
-            reelgoodLink: 'https://reelgood.com/show/archer-2009',
-            imdbID: 'tt1486217',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Ghosts',
         id: 'ghosts',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
@@ -307,78 +412,6 @@ const movieData2 = [
             tvTimeID: 'tt8594324',
             reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
             // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Memories of the Alhambra',
-        id: 'memories',
-        link: {
-            netflix: '81004280'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2018,
-                yearEnd: 2019,
-                genre: [
-                    'drama',
-                    'sci-fi',
-                ],
-            },
-            summary: "A frantic young man is running scared in Barcelona. CEO Yoo Jin-woo heads to Granada on a quest after getting a strange call while on business in Spain.",
-        },
-        style: {
-            color: 'a6886c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '348488',
-            reelgoodLink: 'https://reelgood.com/show/memories-of-the-alhambra-2018',
-            imdbID: 'tt8236556',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Midnight Mass',
-        id: 'midnight',
-        link: {
-            netflix: '81083626'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'horror',
-                ],
-            },
-            summary: "The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.",
-        },
-        style: {
-            color: '3c2e2c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '367226',
-            reelgoodLink: 'https://reelgood.com/show/midnight-mass',
-            imdbID: 'tt10574558',
             // subReddit: 'subreddit',
         },
     },
@@ -1261,30 +1294,6 @@ const movieData5 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: "tall",
-        },
-    },
-    {
-        name: 'Curb Your Enthusiasm',
-        id: 'curb',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series',
-        info: {
-            service: '',
-            studio: '',
-            location: 'HBO Max',
-            description: 'Comedy &#149 10 Seasons &#149 2000 - Present',
-            // summary: "summary",
-        },
-        style: {
-            color: '746e6e',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '76203',
-            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
-            imdbID: 'tt0264235',
-            // subReddit: null,
         },
     },
     {
