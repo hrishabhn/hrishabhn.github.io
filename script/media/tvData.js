@@ -37,6 +37,39 @@
 // },
 const movieData0 = [
     {
+        name: 'Dopesick',
+        id: 'dopesick',
+        link: 'https://www.hulu.com/series/dopesick-227de06a-d3d4-42e0-9df1-bb5495e1738d',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            // date: '',
+            weekday: 'Wednesdays',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                ],
+            },
+            summary: "From Executive Producer Danny Strong and starring and executive produced by Michael Keaton, “Dopesick” examines how one company triggered the worst drug epidemic in American history. The series takes viewers to the epicenter of America’s struggle with opioid addiction, from the boardrooms of Big Pharma, to a distressed Virginia mining community, to the hallways of the DEA. Defying all the odds, heroes will emerge in an intense and thrilling ride to take down the craven corporate forces behind this national crisis and their allies. The limited series is inspired by the New York Times bestselling book by Beth Macy.",
+        },
+        style: {
+            color: '339999',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '390716',
+            reelgoodLink: 'https://reelgood.com/show/dopesick-2021',
+            imdbID: 'tt9174558',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'South Park',
         id: 'southpark',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series',
@@ -172,6 +205,8 @@ const movieData1 = [
             subReddit: 'SuccessionTV',
         },
     },
+]
+const movieData2 = [
     {
         name: 'Family Guy',
         id: 'family',
@@ -206,8 +241,6 @@ const movieData1 = [
             // subReddit: 'subreddit',
         },
     },
-]
-const movieData2 = [
     {
         name: 'Archer',
         id: 'archer',
@@ -346,39 +379,6 @@ const movieData2 = [
             tvTimeID: '367226',
             reelgoodLink: 'https://reelgood.com/show/midnight-mass',
             imdbID: 'tt10574558',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Dopesick',
-        id: 'dopesick',
-        link: 'https://www.hulu.com/series/dopesick-227de06a-d3d4-42e0-9df1-bb5495e1738d',
-        info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
-            // date: '',
-            weekday: 'Wednesdays',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                ],
-            },
-            summary: "From Executive Producer Danny Strong and starring and executive produced by Michael Keaton, “Dopesick” examines how one company triggered the worst drug epidemic in American history. The series takes viewers to the epicenter of America’s struggle with opioid addiction, from the boardrooms of Big Pharma, to a distressed Virginia mining community, to the hallways of the DEA. Defying all the odds, heroes will emerge in an intense and thrilling ride to take down the craven corporate forces behind this national crisis and their allies. The limited series is inspired by the New York Times bestselling book by Beth Macy.",
-        },
-        style: {
-            color: '339999',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '390716',
-            reelgoodLink: 'https://reelgood.com/show/dopesick-2021',
-            imdbID: 'tt9174558',
             // subReddit: 'subreddit',
         },
     },
@@ -841,6 +841,42 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
+    {
+        name: 'You',
+        id: 'you',
+        link: {
+            netflix: '80211991'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 3,
+               yearStart: 2018,
+               yearEnd: null,
+               genre: [
+                   'drama',
+                   'romance',
+               ],
+            },
+            summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
+        },
+        style: {
+            color: '655b3f',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '336924',
+            reelgoodLink: 'https://reelgood.com/show/you-2018',
+            imdbID: 'tt7335184',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'The Sopranos',
         id: 'sopranos',
@@ -1434,6 +1470,42 @@ const movieData6 = [
         },
     },
     {
+        name: 'F is for Family',
+        id: 'fisforfam',
+        link: {
+            netflix: '80028732'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            date: 'Nov 25, 2021',
+            // weekday: '',
+            desc: {
+               seasons: 5,
+               yearStart: 2015,
+               yearEnd: null,
+               genre: [
+                   'animation',
+                   'comedy',
+               ],
+            },
+            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
+        },
+        style: {
+            color: '0B6F38',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '287299',
+            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
+            imdbID: 'tt4326894',
+            subReddit: null,
+        },
+    },
+    {
         name: 'The Expanse',
         id: 'expanse',
         link: {
@@ -1528,6 +1600,42 @@ const movieData6 = [
             reelgoodLink: 'https://reelgood.com/show/attack-on-titan-2013',
             imdbID: 'tt2560140',
             subReddit: 'attackontitan',
+        },
+    },
+    {
+        name: 'Ozark',
+        id: 'ozark',
+        link: {
+            netflix: '80117552'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Neftlix',
+            date: 'Jan 21, 2022',
+            // weekday: '',
+            desc: {
+               seasons: 4,
+               yearStart: 2017,
+               yearEnd: null,
+               genre: [
+                   'crime',
+                   'drama',
+               ],
+            },
+            summary: "After his business partner cheats a dangerous client, financial adviser Marty must devise a radical plan to save the lives of himself and his family.",
+        },
+        style: {
+            color: '660000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '329089',
+            reelgoodLink: 'https://reelgood.com/show/ozark-2017',
+            imdbID: 'tt5071412',
+            subReddit: 'Ozark',
         },
     },
     {
@@ -1682,30 +1790,6 @@ const movieData7 = [
             // reelgoodLink: 'link',
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'F is for Family',
-        id: 'fisforfam',
-        link: 'https://www.netflix.com/title/80028732',
-        info: {
-            service: '',
-            studio: '',
-            location: 'Coming Soon',
-            description: 'Animation &#149 Comedy &#149 Drama &#149 4 Seasons &#149 2015 - Present',
-            // summary: "summary",
-        },
-        style: {
-            color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
-            imdbID: 'tt4326894',
-            subReddit: null,
         },
     },
     {
@@ -1931,30 +2015,6 @@ const movieData7 = [
             reelgoodLink: "https://reelgood.com/show/only-murders-in-the-building-2021",
             imdbID: "tt12851524",
             subReddit: 'OnlyMurdersHulu',
-        },
-    },
-    {
-        name: 'Ozark',
-        id: 'ozark',
-        link: 'https://www.netflix.com/title/80117552',
-        info: {
-            service: '',
-            studio: '',
-            location: 'Coming Soon',
-            description: 'Crime &#149 Drama &#149 Thriller &#149 3 Seasons &#149 2017 - Present',
-            // summary: "summary",
-        },
-        style: {
-            color: '660000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/show/ozark-2017',
-            imdbID: 'tt5071412',
-            subReddit: 'Ozark',
         },
     },
     {
