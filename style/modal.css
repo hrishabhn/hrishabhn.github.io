@@ -35,7 +35,7 @@
     transform: scale(0.98);
 }
 
-.modal-scroll{
+#modal-scroll{
     flex-direction: column;
     height: 100vh;
     overflow-y: scroll;
