@@ -37,10 +37,6 @@ function widgetPopulate() {
 
 const countdownData = [
     {
-        name: 'SPAN Exam 2',
-        date: 'Oct 25, 2021 16:30:00',
-    },
-    {
         name: 'NUCL Exam 2',
         date: 'Oct 27, 2021 20:00:00',
     },
@@ -116,6 +112,10 @@ const countdownData = [
     // {
     //     name: 'Utah',
     //     date: 'Oct 8, 2021 08:50:00',
+    // },
+    // {
+    //     name: 'SPAN Exam 2',
+    //     date: 'Oct 25, 2021 16:30:00',
     // },
 ]
 
