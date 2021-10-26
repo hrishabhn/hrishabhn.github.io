@@ -23,13 +23,13 @@ function hideModal() {
     // console.log('hide')
 }
 
-function modalScroll() {
-    const modalBody = document.getElementById('modal-scroll')
+// function modalScroll() {
+//     const modalBody = document.getElementById('modal-scroll')
 
-    if (modalBody.scrollTop < 0) {
-        hideModal()
-    }
-}
+//     if (modalBody.scrollTop < 0) {
+//         hideModal()
+//     }
+// }
 
 function allCountdownsElement() {
     var container = document.createElement('div')
