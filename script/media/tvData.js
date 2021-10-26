@@ -73,6 +73,42 @@ const movieData0 = [
         },
     },
     {
+        name: 'You',
+        id: 'you',
+        link: {
+            netflix: '80211991'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+               seasons: 3,
+               yearStart: 2018,
+               yearEnd: null,
+               genre: [
+                   'drama',
+                   'romance',
+               ],
+            },
+            summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
+        },
+        style: {
+            color: '655b3f',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '336924',
+            reelgoodLink: 'https://reelgood.com/show/you-2018',
+            imdbID: 'tt7335184',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Dopesick',
         id: 'dopesick',
         link: 'https://www.hulu.com/series/dopesick-227de06a-d3d4-42e0-9df1-bb5495e1738d',
@@ -910,42 +946,6 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
-    {
-        name: 'You',
-        id: 'you',
-        link: {
-            netflix: '80211991'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-               seasons: 3,
-               yearStart: 2018,
-               yearEnd: null,
-               genre: [
-                   'drama',
-                   'romance',
-               ],
-            },
-            summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
-        },
-        style: {
-            color: '655b3f',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: '336924',
-            reelgoodLink: 'https://reelgood.com/show/you-2018',
-            imdbID: 'tt7335184',
-            // subReddit: 'subreddit',
-        },
-    },
     {
         name: 'The Sopranos',
         id: 'sopranos',
