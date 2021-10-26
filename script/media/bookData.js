@@ -17,7 +17,7 @@ const bookData0 = [
         },
         author: 'Yuval Noah Harari',
         coverType: 'jpg',
-        progress: '2h 55m left',
+        progress: '2h 29m left',
         format: 'AudioBook',
     },
     {
