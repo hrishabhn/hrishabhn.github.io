@@ -118,6 +118,7 @@ function tvPopupElement(a,b,old) {
         </div>
         ${tvPopupAppTray(a,b)}
         <div class="top-tray">
+            <div class="bg" style="--col: #${movie.style.color}cc;"></div>
             ${backButton}
             <div class="grow"></div>
             <a class="floating clickable" style="padding: 0px;" onclick="hideModal()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.8 16.2-7-7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l7 7c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0z"/><path d="m7.8 14.8 7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-7 7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"/></svg></a>
