@@ -23,6 +23,14 @@ function hideModal() {
     // console.log('hide')
 }
 
+function modalScroll() {
+    const modalBody = document.getElementById('modal-scroll')
+
+    if (modalBody.scrollTop < 0) {
+        hideModal()
+    }
+}
+
 function allCountdownsElement() {
     var container = document.createElement('div')
     container.classList = 'countdown vstack fill-parent'
@@ -368,6 +376,7 @@ function sameService(service,a,b) {
     
     return sameMovies
 }
+
 
 
 function removeAllChildNodes(parent) {
