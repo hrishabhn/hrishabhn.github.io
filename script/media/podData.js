@@ -11,13 +11,22 @@ const podData0 = [
         coverType: 'jpeg',
     },
     {
-        name: "Founder's Journal",
-        id: "founders",
+        name: "Business Casual",
+        id: "businessCasual",
         link: {
-            applePod: 'id1509276485'
+            applePod: 'id1480059697'
         },
-        author: "Alex Lieberman",
+        author: "Morning Brew Podcasts",
         coverType: 'jpeg',
+    },
+    {
+        name: "The Intelligence",
+        id: "intelligence",
+        link: {
+            applePod: 'id1449631195'
+        },
+        author: "The Economist",
+        coverType: 'png',
     },
     {
         name: "Pivot",
@@ -26,15 +35,6 @@ const podData0 = [
             applePod: 'id1073226719'
         },
         author: "Kara Swisher & Scott Galloway",
-        coverType: 'jpeg',
-    },
-    {
-        name: "Business Casual",
-        id: "businessCasual",
-        link: {
-            applePod: 'id1480059697'
-        },
-        author: "Morning Brew Podcasts",
         coverType: 'jpeg',
     },
     {
@@ -62,6 +62,15 @@ const podData0 = [
             applePod: 'id1498802610'
         },
         author: "Kara Swisher & Scott Galloway",
+        coverType: 'jpeg',
+    },
+    {
+        name: "Founder's Journal",
+        id: "founders",
+        link: {
+            applePod: 'id1509276485'
+        },
+        author: "Alex Lieberman",
         coverType: 'jpeg',
     },
 ]
