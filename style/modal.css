@@ -102,6 +102,7 @@
 #modal-body .tv-popup{
     width: 100vw;
     max-width: 900px;
+    max-width: max(calc(100vw - (150px * (16 / 9))),900px);
     /* color: white; */
     min-height: calc(100vh - 80px);
     /* background-color: var(--dark-layer-2); */
