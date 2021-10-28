@@ -259,25 +259,26 @@
 
 .tv-popup .video-app-tray{
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     padding-left: 20px;
-    background-color: var(--black-30);
+    /* background-color: var(--black-30); */
 }
 .tv-popup .video-app-tray .video-app{
-    padding: 12px 15px;
+    padding: 10px 12px;
     border-radius: 80px;
 
     font-size: 10px;
     font-weight: 500;
+    /* text-transform: uppercase; */
 
-    background-color: var(--white-10);
-    color: white;
-    fill: white;
+    /* background-color: var(--white-10); */
+    /* color: white; */
+    /* fill: white; */
 }
 .tv-popup .video-app-tray .video-app .icon{
-    height: 14px;
-    width: 14px;
+    height: 10px;
+    width: 10px;
 }
 
 .tv-popup .current .top-tray{

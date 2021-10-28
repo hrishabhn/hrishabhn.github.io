@@ -106,7 +106,7 @@ const movieData0 = [
             tvTimeID: '76203',
             reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
             imdbID: 'tt0264235',
-            // subReddit: null,
+            subReddit: 'curb',
         },
     },
     {
