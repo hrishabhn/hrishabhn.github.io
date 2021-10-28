@@ -8,7 +8,7 @@
 
     background-color: var(--black-80);
 
-    transition: 0.25s;
+    /* transition: 0.25s; */
 
     /* overflow-y: scroll; */
     /* padding: 10vh 0; */
@@ -31,9 +31,9 @@
     width: 100%;
 }
 
-#modal-container.hide .modal-card{
+/* #modal-container.hide .modal-card{
     transform: scale(0.98);
-}
+} */
 
 #modal-scroll{
     flex-direction: column;
