@@ -37,42 +37,6 @@
 // },
 const movieData0 = [
     {
-        name: 'Inside Job',
-        id: 'insideJob',
-        link: {
-            netflix: '80995819'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            date: '',
-            weekday: '',
-            desc: {
-               seasons: 1,
-               yearStart: 2021,
-               yearEnd: null,
-               genre: [
-                   'animation',
-                   'comedy',
-               ],
-            },
-            summary: "Lizard people? Real. The moon landing? Fake. Managing the world's conspiracies is a full-time job for an awkward genius and her dysfunctional co-workers.",
-        },
-        style: {
-            color: '1e3d51',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '365098',
-            reelgoodLink: 'https://reelgood.com/show/inside-job-2021',
-            imdbID: 'tt10231312',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'You',
         id: 'you',
         link: {
@@ -105,6 +69,42 @@ const movieData0 = [
             tvTimeID: '336924',
             reelgoodLink: 'https://reelgood.com/show/you-2018',
             imdbID: 'tt7335184',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Inside Job',
+        id: 'insideJob',
+        link: {
+            netflix: '80995819'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            date: '',
+            weekday: '',
+            desc: {
+               seasons: 1,
+               yearStart: 2021,
+               yearEnd: null,
+               genre: [
+                   'animation',
+                   'comedy',
+               ],
+            },
+            summary: "Lizard people? Real. The moon landing? Fake. Managing the world's conspiracies is a full-time job for an awkward genius and her dysfunctional co-workers.",
+        },
+        style: {
+            color: '1e3d51',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '365098',
+            reelgoodLink: 'https://reelgood.com/show/inside-job-2021',
+            imdbID: 'tt10231312',
             // subReddit: 'subreddit',
         },
     },
