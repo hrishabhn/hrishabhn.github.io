@@ -301,6 +301,8 @@ function tvPopupSuggest(a,b) {
 
         if (movieData[a][b].info.cast) {
             suggestElement.append(tvPopupCastBig(a,b))
+            suggestElement.append(spacerElement(10))
+            suggestElement.append(hlineElement())
         }
 
 
@@ -331,7 +333,7 @@ function tvPopupCastBig(a,b) {
     var vstack = document.createElement('div')
     vstack.classList = 'vstack fill-width'
 
-    var htmlString = spacerElement(20).outerHTML
+    var htmlString = spacerElement(10).outerHTML
 
     htmlString = `${htmlString}
     <div class="fill-width">
