@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style/modal.css">
 
     <link rel="stylesheet" href="style/media/video.css">
+    <link rel="stylesheet" href="style/media/tvModal.css">
     <link rel="stylesheet" href="style/media/bookPod.css">
 
     <link rel="stylesheet" href="style/leftbar.css">
@@ -23,10 +24,10 @@
     <link rel="stylesheet" href="style/devices.css">
     <!-- <link rel="manifest" href="manifest.json"> -->
 
-    <!-- <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="apple-touch-icon" href="images/home.png" />
     <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="images/launch-12mini.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 1194px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait" href="images/launch-ipad.png"> -->
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 1194px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait" href="images/launch-ipad.png">
 
     <meta name="mobile-wep-app-capable" content="yes"></meta>
     <meta name="apple-mobile-web-app-capable" content="yes"></meta>
@@ -56,7 +57,7 @@
         <div id="modal-scroll">
             <a class="spacer-x fill-width hidden-mobile" onclick="hideModal()" style="--size: 50px;"></a>
             <a class="grow fill-width" onclick="hideModal()" style="min-height: 0px;"></a>
-            <div class="modal-card layer-0 card-shadow">
+            <div class="modal-card layer-1 card-shadow">
                 <p id="modal-title"></p>
                 <div id="modal-body" class="vstack fill-width"></div>
                 <div class="grow"></div>
@@ -64,6 +65,11 @@
             <a class="grow fill-width" onclick="hideModal()" style="min-height: 0px;"></a>
         </div>
     </div>
+    <div id="tv-modal-container" class="hide">
+        <a onclick="tvPopupHide()" class="modal-close"></a>
+        <div id="tv-modal-body" class="layer-0"></div>
+    </div>
+        
     <div id="main">
         <div class="page">
             <!-- <div class="paycard layer-1 card-shadow">
@@ -428,6 +434,7 @@
 <script src="script/media/media.js"></script>
 <script src="script/media/tvData.js"></script>
 <script src="script/media/video.js"></script>
+<script src="script/media/tvModal.js"></script>
 <script src="script/media/bookData.js"></script>
 <script src="script/media/podData.js"></script>
 <script src="script/media/bookPod.js"></script>
