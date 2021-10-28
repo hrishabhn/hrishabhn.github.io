@@ -35,6 +35,15 @@
 //         // subReddit: 'subreddit',
 //     },
 // },
+
+// cast: [
+//     {
+//         actor: 'name',
+//         image: 'url',
+//         char: 'name',
+//     },
+// ],
+
 const movieData0 = [
     {
         name: 'You',
@@ -53,14 +62,22 @@ const movieData0 = [
                 yearStart: 2018,
                 yearEnd: null,
                 genre: [
-                    'drama',
                     'romance',
+                    'thriller',
                 ],
             },
             summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
             cast: [
-                'Penn Badgley',
-                'Elizabeth Lail',
+                {
+                    actor: 'Penn Badgley',
+                    image: 'https://media1.popsugar-assets.com/files/thumbor/5hs8f5F2K3qAi5JiZn4XoBIJUAE/0x150:3648x3798/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/10/28/859/n/1922398/d130310f5f99c8a0122de3.83461725_/i/Penn-Badgley.jpg',
+                    char: 'Joe Goldberg',
+                },
+                {
+                    actor: 'Elizabeth Lail',
+                    image: 'https://www.thewikifeed.com/wp-content/uploads/2021/06/elizabeth-lail-1.jpg',
+                    char: 'Guinevere Beck',
+                },
             ],
         },
         style: {
@@ -95,6 +112,38 @@ const movieData0 = [
                 ],
             },
             summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
+            cast: [
+                {
+                    actor: 'Larry David',
+                    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg/1280px-Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg',
+                    char: 'Larry David',
+                },
+                {
+                    actor: 'Jeff Garlin',
+                    image: 'https://static.wikia.nocookie.net/disney/images/2/27/Jeff_Garlin.jpg',
+                    char: 'Jeff Greene',
+                },
+                {
+                    actor: 'Cheryl Hines',
+                    // image: 'url',
+                    char: 'Cheryl David',
+                },
+                {
+                    actor: 'Susie Essman',
+                    // image: 'url',
+                    char: 'Susie Greene',
+                },
+                {
+                    actor: 'J.B. Smoove',
+                    // image: 'url',
+                    char: 'Leon Black',
+                },
+                {
+                    actor: 'Richard Lewis',
+                    // image: 'url',
+                    char: 'Richard Lewis',
+                },
+            ],
         },
         style: {
             color: '746e6e',
@@ -264,7 +313,7 @@ const movieData0 = [
                 yearStart: 2018,
                 yearEnd: 2019,
                 genre: [
-                    'drama',
+                    'romance',
                     'sci-fi',
                 ],
             },
@@ -2338,7 +2387,7 @@ const movieData7 = [
     {
         name: "Ted Lasso",
         id: "ted",
-        link: null,
+        link: 'https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy',
         info: {
             service: 'appleTV',
             studio: 'appleTV',
@@ -2355,6 +2404,48 @@ const movieData7 = [
                 ],
             },
             summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+            cast: [
+                {
+                    actor: 'Jason Sudeikis',
+                    image: 'https://is2-ssl.mzstatic.com/image/thumb/AgXPsy2GlFurBYHRquyjeQ/492x492ve.webp',
+                    char: 'Ted Lasso',
+                },
+                {
+                    actor: 'Hannah Waddingham',
+                    image: 'https://is3-ssl.mzstatic.com/image/thumb/U6GiaSTux3G9QH9TlhMRZg/492x492ve.webp',
+                    char: 'Rebecca Welton',
+                },
+                {
+                    actor: 'Juno Temple',
+                    image: 'https://is1-ssl.mzstatic.com/image/thumb/yuUiq_Yf9rwApABQwQ2Puw/492x492ve.webp',
+                    char: 'Keeley Jones',
+                },
+                {
+                    actor: 'Jeremy Swift',
+                    image: 'https://is4-ssl.mzstatic.com/image/thumb/37A2yAcEOqpu6sMk6of4Dg/492x492ve.webp',
+                    char: 'Higgins',
+                },
+                {
+                    actor: 'Phil Dunster',
+                    image: 'https://is3-ssl.mzstatic.com/image/thumb/r7YVz00Gfg-4PCrlnBj4jA/492x492ve.webp',
+                    char: 'Jaime Tartt',
+                },
+                {
+                    actor: 'Brett Goldstein',
+                    image: 'https://is3-ssl.mzstatic.com/image/thumb/nxwtHIicKZUbrQQ_0GlISA/492x492ve.webp',
+                    char: 'Roy Kent',
+                },
+                {
+                    actor: 'Brendan Hunt',
+                    image: 'https://is3-ssl.mzstatic.com/image/thumb/tjFBadTW13u_cEJJXNjH9A/492x492ve.webp',
+                    char: 'Coach Beard',
+                },
+                {
+                    actor: 'Nick Mohammed',
+                    image: 'https://is2-ssl.mzstatic.com/image/thumb/3oivPHwZya0T-EKJHJXSvA/492x492ve.webp',
+                    char: 'Nathan Shelley',
+                },
+            ],
         },
         style: {
             color: '35465e',

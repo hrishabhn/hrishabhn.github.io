@@ -64,7 +64,7 @@ function tvPopupElement(a,b,old) {
             </div>
             <div class="spacer-x" style="--size: 10px;"></div>
             <div class="summary">${movie.info.summary}</div>
-            ${tvPopupCast(a,b)}
+            ${tvPopupCastSmall(a,b)}
         </div>
         ${tvPopupAppTray(a,b)}
         <div class="top-tray">
@@ -83,7 +83,7 @@ function tvPopupElement(a,b,old) {
 
     return container
 }
-function tvPopupCast(a,b) {
+function tvPopupCastSmall(a,b) {
     const movie = movieData[a][b]
     
     if (movie.info.cast) {
@@ -99,12 +99,12 @@ function tvPopupCast(a,b) {
             var star = document.createElement('a')
             star.target = `_blank`
             if ('ontouchstart' in document.documentElement) {
-                star.href = `google://search?q=${movie.info.cast[i]}`
+                star.href = `google://search?q=${movie.info.cast[i].actor}`
             } else {
-                star.href = `http://www.google.com/search?q=${movie.info.cast[i]}`
+                star.href = `http://www.google.com/search?q=${movie.info.cast[i].actor}`
             }
 
-            star.innerHTML = `${movie.info.cast[i]}`
+            star.innerHTML = `${movie.info.cast[i].actor}`
             cast.append(star)
 
             if (i < movie.info.cast.length - 1) {
@@ -261,9 +261,18 @@ function tvPopupAppTray(a,b) {
 }
 
 function tvPopupSuggest(a,b) {
-    if ((movieData[a][b].info.desc) || (movieData[a][b].info.service)) {
+
+
+    if ((movieData[a][b].info.desc) || (movieData[a][b].info.service) || movieData[a][b].info.cast) {
         var suggestElement = document.createElement('div')
         suggestElement.classList = 'suggest'
+
+
+        if (movieData[a][b].info.cast) {
+            suggestElement.append(tvPopupCastBig(a,b))
+        }
+
+
 
         if (movieData[a][b].info.desc) {
             const genre = movieData[a][b].info.desc.genre
@@ -285,6 +294,62 @@ function tvPopupSuggest(a,b) {
         return document.createElement('div').outerHTML
     }
 }
+function tvPopupCastBig(a,b) {
+    const cast = movieData[a][b].info.cast
+
+    var vstack = document.createElement('div')
+    vstack.classList = 'vstack fill-width'
+
+    var htmlString = spacerElement(20).outerHTML
+
+    htmlString = `${htmlString}
+    <div class="fill-width">
+        <div class="spacer-x" style="--size: 20px;"></div>
+        <div class="media-title">Cast</div>
+        <div class="grow"></div>
+    </div>`
+
+    var hscroll = document.createElement('div')
+    hscroll.classList = 'hscroll'
+
+    hscroll.append(spacerElement(20))
+
+    for (let i = 0; i < cast.length; i++) {
+        var card = document.createElement('div')
+        card.classList = 'cast-card'
+
+        if (cast[i].image) {
+            var image = `<a class="image image-border clickable card-shadow" href="${googleSearch(cast[i].actor)}" target="_blank" style="--image: url('${cast[i].image}');"></a>`
+        } else {
+
+            var initials = cast[i].actor.match(/\b(\w)/g); // ['J','S','O','N']
+            var initials = initials.join(''); // JSON
+
+            var image = `<a class="image layer-1 clickable card-shadow" href="${googleSearch(cast[i].actor)}" target="_blank">${initials}</a>`
+        }
+
+
+        card.innerHTML = `
+        ${image}
+        <div class="spacer-x" style="--size: 8px;"></div>
+        <p class="text">${cast[i].actor}</p>
+        <div class="spacer-x" style="--size: 2px;"></div>
+        <p class="subtext">${cast[i].char}</p>`
+
+        hscroll.append(card)
+
+        if (i < cast.length - 1) {
+            hscroll.append(spacerElement(20))
+        }
+    }
+
+    hscroll.append(spacerElement(20))
+
+    htmlString = `${htmlString}${hscroll.outerHTML}`
+    vstack.innerHTML = htmlString
+    return vstack
+}
+
 function tvPopupSuggestRow(sameMovies,title,oldA,oldB) {
     // const sameMovies = sameGenre(genre,a,b)
 
