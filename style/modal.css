@@ -147,7 +147,7 @@
 .tv-popup .current .poster .title{
     position: absolute;
     bottom: 20px;
-    left: 30px;
+    left: 20px;
     height: 25%;
     width: 60%;
 
@@ -160,7 +160,7 @@
 .tv-popup .current .info{
     flex-direction: column;
     width: 100%;
-    padding: 0px 30px;
+    padding: 0px 20px;
     color: white;
 }
 .tv-popup .current .info .name{
@@ -261,7 +261,7 @@
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 30px;
+    padding-left: 20px;
     background-color: var(--black-30);
 }
 .tv-popup .video-app-tray .video-app{
@@ -308,7 +308,7 @@
     border-radius: 5px;
     overflow: hidden;
     scroll-snap-align: start;
-    scroll-margin-left: 30px;
+    scroll-margin-left: 20px;
     background-color: var(--col);
     color: white;
 }
@@ -444,16 +444,16 @@
         bottom: 10px;
         left: 10px;
     }
-    .tv-popup .current .info{
+    /* .tv-popup .current .info{
         padding: 0px 20px;
-    }
+    } */
     .tv-popup .current .info .play{
         min-width: calc(100vw - 150px);
     }
-    .tv-popup .video-app-tray{
+    /* .tv-popup .video-app-tray{
         padding-left: 20px;
         padding-right: 10px;
-    }
+    } */
 
     .tv-popup .current .top-tray{
         position: fixed;
@@ -488,11 +488,11 @@
 
 
 
-    .tv-popup .suggest .card{
+    /* .tv-popup .suggest .card{
         scroll-margin-left: 20px;
-    }
-    .tv-popup .suggest .card .info .play{
+    } */
+    /* .tv-popup .suggest .card .info .play{
         min-width: auto;
-    }
+    } */
 
 }
