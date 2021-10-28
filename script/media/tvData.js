@@ -764,6 +764,32 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: 'Knives Out',
+        id: 'knives',
+        link: {
+            primeVideo: 'B081W68DP2'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            description: 'Comedy &#149 Crime &#149 Drama &#149 2019',
+            summary: "A detective investigates the death of a patriarch of an eccentric, combative family.",
+        },
+        style: {
+            color: '3d250f',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/knives-out-2019',
+            imdbID: 'tt8946378',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Jurassic Park',
         id: 'jurassic1',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYJlJDwG96Q_DwgEAAAA1:type:feature',
@@ -895,32 +921,6 @@ const movieData3 = [
             tvTimeID: null,
             reelgoodLink: "https://reelgood.com/movie/ghost-in-the-shell-1995",
             imdbID: "tt0113568",
-        },
-    },
-    {
-        name: 'Knives Out',
-        id: 'knives',
-        link: {
-            primeVideo: 'B081W68DP2'
-        },
-        info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
-            description: 'Comedy &#149 Crime &#149 Drama &#149 2019',
-            summary: "A detective investigates the death of a patriarch of an eccentric, combative family.",
-        },
-        style: {
-            color: '3d250f',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/movie/knives-out-2019',
-            imdbID: 'tt8946378',
-            // subReddit: 'subreddit',
         },
     },
     {
