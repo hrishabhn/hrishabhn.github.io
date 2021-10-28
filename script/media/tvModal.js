@@ -3,8 +3,6 @@ function tvPopupShow(a,b,old) {
     var modal = document.getElementById('tv-modal-container')
     var modalBodyElement = document.getElementById('tv-modal-body')
 
-    console.log(modalBodyElement)
-
     removeAllChildNodes(modalBodyElement)
     modalBodyElement.append(tvPopupElement(a,b,old))
 
@@ -15,7 +13,25 @@ function tvPopupHide() {
     modal.classList = 'hide'
 }
 
+function previousMovie(a,b) {
+    if (b > 0) {
+        return [a,b - 1]
+    } else if (b == 0) {
+        return [a - 1,movieData[a - 1].length - 1]
+    }
+}
+
+function nextMovie(a,b) {
+    if (b != (movieData[a].length) - 1) {
+        return [a,b + 1]
+    } else if (b == (movieData[a].length) - 1) {
+        return [a + 1,0]
+    }
+}
+
+
 function tvPopupElement(a,b,old) {
+    // console.log(a,b)
     const movie = movieData[a][b]
 
     if (movie.link) {
@@ -24,10 +40,23 @@ function tvPopupElement(a,b,old) {
         var linkHTML = ``
     }
 
-    if (old) {
-        var backButton = `<a class="floating clickable" style="padding: 8px 10px 8px 8px;" onclick="tvPopupShow(${old[0]},${old[1]},null)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="5.07 6.368 11.263 11.263"><path d="m9.929 12 3.821-3.821a1.061 1.061 0 0 0-1.5-1.5l-4.614 4.614a.999.999 0 0 0 0 1.414l4.614 4.614a1.061 1.061 0 0 0 1.5-1.5L9.929 12z"/></svg></a>`
+    // if (old) {
+    //     // var backButton = `<a class="floating clickable" style="padding: 8px 10px 8px 8px;" onclick="tvPopupShow(${old[0]},${old[1]},null)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="5.07 6.368 11.263 11.263"><path d="m9.929 12 3.821-3.821a1.061 1.061 0 0 0-1.5-1.5l-4.614 4.614a.999.999 0 0 0 0 1.414l4.614 4.614a1.061 1.061 0 0 0 1.5-1.5L9.929 12z"/></svg></a>`
+    //     var backButton = `<a class="floating clickable" style="padding: 6px;" onclick="tvPopupShow(${old[0]},${old[1]},null)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 5.342c-.256 0-.512.1-.707.295l-5.656 5.656a.999.999 0 0 0 0 1.414l5.656 5.656a.999.999 0 0 0 1.414 0l.086-.086a.999.999 0 0 0 0-1.414L6.93 13H20a1 1 0 0 0 0-2H6.93l3.863-3.863a.999.999 0 0 0 0-1.414l-.086-.086A.998.998 0 0 0 10 5.342z"/></svg></a>`
+    // } else {
+    //     var backButton = ``
+    // }
+
+    if ((a + b) > 0) {
+        var leftButton = `<a class="floating clickable" style="padding: 2px;" onclick="tvPopupShow(${previousMovie(a,b)[0]},${previousMovie(a,b)[1]})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9.929 12 3.821-3.821a1.061 1.061 0 0 0-1.5-1.5l-4.614 4.614a.999.999 0 0 0 0 1.414l4.614 4.614a1.061 1.061 0 0 0 1.5-1.5L9.929 12z"/></svg></a>`
     } else {
-        var backButton = ``
+        var leftButton = ``
+    }
+
+    if (!((a == (movieData.length - 1)) && (b == (movieData[movieData.length - 1].length - 1)))) {
+        var rightButton = `<a class="floating clickable" style="padding: 2px;" onclick="tvPopupShow(${nextMovie(a,b)[0]},${nextMovie(a,b)[1]})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.071 12 9.25 8.179a1.061 1.061 0 0 1 1.5-1.5l4.614 4.614a.999.999 0 0 1 0 1.414l-4.614 4.614a1.061 1.061 0 0 1-1.5-1.5L13.071 12z"/></svg></a>`
+    } else {
+        var rightButton = ``
     }
 
     var container = document.createElement('div')
@@ -69,8 +98,10 @@ function tvPopupElement(a,b,old) {
         ${tvPopupAppTray(a,b)}
         <div class="top-tray">
             <div class="bg only-mobile" style="--col: #${movie.style.color}cc;"></div>
-            ${backButton}
+            ${leftButton}
             <div class="grow"></div>
+            ${rightButton}
+            <div class="spacer-x" style="--size: 8px;"></div>
             <a class="floating clickable" style="padding: 0px;" onclick="tvPopupHide()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.8 16.2-7-7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l7 7c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0z"/><path d="m7.8 14.8 7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-7 7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"/></svg></a>
         </div>
     </div>
