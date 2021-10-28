@@ -49,13 +49,13 @@ const movieData0 = [
             // date: '',
             // weekday: '',
             desc: {
-               seasons: 3,
-               yearStart: 2018,
-               yearEnd: null,
-               genre: [
-                   'drama',
-                   'romance',
-               ],
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'romance',
+                ],
             },
             summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
         },
@@ -85,13 +85,13 @@ const movieData0 = [
             date: '',
             weekday: '',
             desc: {
-               seasons: 1,
-               yearStart: 2021,
-               yearEnd: null,
-               genre: [
-                   'animation',
-                   'comedy',
-               ],
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
             },
             summary: "Lizard people? Real. The moon landing? Fake. Managing the world's conspiracies is a full-time job for an awkward genius and her dysfunctional co-workers.",
         },
@@ -397,12 +397,12 @@ const movieData2 = [
             // date: '',
             // weekday: '',
             desc: {
-               seasons: 11,
-               yearStart: 2000,
-               yearEnd: null,
-               genre: [
-                   'comedy',
-               ],
+                seasons: 11,
+                yearStart: 2000,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                ],
             },
             summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
         },
@@ -763,6 +763,35 @@ const movieData2 = [
     },
 ]
 const movieData3 = [
+    {
+        name: 'Jurassic Park',
+        id: 'jurassic1',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GYJlJDwG96Q_DwgEAAAA1:type:feature',
+        info: {
+            service: 'hbo',
+            studio: 'universal',
+            location: 'HBO Max',
+            desc: {
+                year: 1993,
+                genre: [
+                    'action',
+                    'adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+        },
+        style: {
+            color: '3c2d2a',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/jurassic-park-1993',
+            imdbID: 'tt0107290',
+        },
+    },
     {
         name: 'Dune',
         id: 'dune',
@@ -1527,13 +1556,13 @@ const movieData6 = [
             date: 'Nov 25, 2021',
             // weekday: '',
             desc: {
-               seasons: 5,
-               yearStart: 2015,
-               yearEnd: null,
-               genre: [
-                   'animation',
-                   'comedy',
-               ],
+                seasons: 5,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
             },
             summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
         },
@@ -1660,13 +1689,13 @@ const movieData6 = [
             date: 'Jan 21, 2022',
             // weekday: '',
             desc: {
-               seasons: 4,
-               yearStart: 2017,
-               yearEnd: null,
-               genre: [
-                   'crime',
-                   'drama',
-               ],
+                seasons: 4,
+                yearStart: 2017,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
             },
             summary: "After his business partner cheats a dangerous client, financial adviser Marty must devise a radical plan to save the lives of himself and his family.",
         },
@@ -1714,6 +1743,38 @@ const movieData6 = [
             reelgoodLink: "https://reelgood.com/show/billions-2016",
             imdbID: "tt4270492",
             subReddit: 'Billions'
+        },
+    },
+    {
+        name: 'Jurassic World: Dominion',
+        id: 'jurassic6',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            studio: 'universal',
+            location: 'Coming Soon',
+            date: 'Jun 10, 2022',
+            desc: {
+                year: 2022,
+                genre: [
+                    'action',
+                    'adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "Coming soon.",
+        },
+        style: {
+            color: '595441',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/jurassic-world-dominion-2021',
+            imdbID: 'tt8041270',
         },
     },
 ]
