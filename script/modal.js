@@ -348,7 +348,6 @@ function tvPopupSuggestRow(sameMovies,title,oldA,oldB) {
     htmlString = `${htmlString}
     <div class="fill-width">
     <div class="spacer-x" style="--size: 20px;"></div>
-    <div class="spacer-x hidden-mobile" style="--size: 10px;"></div>
     <div class="media-title">More in ${capitalizeFirstLetter(title)}</div>
         <div class="grow"></div>
     </div>`
@@ -357,7 +356,7 @@ function tvPopupSuggestRow(sameMovies,title,oldA,oldB) {
     hscroll.classList = 'hscroll'
 
     hscroll.append(spacerElement(20))
-    hscroll.append(spacerElement(10,'hidden-mobile'))
+    // hscroll.append(spacerElement(10,'hidden-mobile'))
 
     for (let i = 0; i < sameMovies.length; i++) {
         const a = sameMovies[i][0]
