@@ -488,7 +488,7 @@ const movieData1 = [
                 },
                 {
                     actor: 'Alan Ruck',
-                    image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png/revision/latest?cb=20190929222712',
+                    image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
                     char: 'Connor Roy',
                 },
             ],
@@ -2579,7 +2579,7 @@ const movieData8 = [
                 },
                 {
                     actor: 'Cobie Smulders',
-                    image: 'https://static.wikia.nocookie.net/snicket/images/d/d7/Cobiesmulders5.jpg/revision/latest?cb=20191203215251',
+                    image: 'https://static.wikia.nocookie.net/snicket/images/d/d7/Cobiesmulders5.jpg',
                     char: 'Robin Scherbatsky',
                 },
                 {
@@ -2654,12 +2654,12 @@ const movieData8 = [
             cast: [
                 {
                     actor: 'Zooey Deschanel',
-                    image: 'https://static.wikia.nocookie.net/disney/images/7/79/Zooey_Deschanel.jpg/revision/latest?cb=20191103185701',
+                    image: 'https://static.wikia.nocookie.net/disney/images/7/79/Zooey_Deschanel.jpg',
                     char: 'Jessica Day',
                 },
                 {
                     actor: 'Jake Johnson',
-                    image: 'https://static.wikia.nocookie.net/smurfs/images/8/8c/Jake-johnson-paleyfest-2012-02.jpg/revision/latest/top-crop/width/360/height/450?cb=20170906165142',
+                    image: 'https://static.wikia.nocookie.net/smurfs/images/8/8c/Jake-johnson-paleyfest-2012-02.jpg',
                     char: 'Nick',
                 },
                 {
@@ -2674,7 +2674,7 @@ const movieData8 = [
                 },
                 {
                     actor: 'Lamorne Morris',
-                    image: 'https://static.wikia.nocookie.net/newgirl/images/7/76/Morris.jpg/revision/latest?cb=20111208084201',
+                    image: 'https://static.wikia.nocookie.net/newgirl/images/7/76/Morris.jpg',
                     char: 'Winston Bishop',
                 },
                 {
@@ -2689,7 +2689,7 @@ const movieData8 = [
                 },
                 {
                     actor: 'Nelson Franklin',
-                    image: 'https://static.wikia.nocookie.net/marvelmovies/images/5/59/Nelson_Franklin.jpg/revision/latest?cb=20200423111629',
+                    image: 'https://static.wikia.nocookie.net/marvelmovies/images/5/59/Nelson_Franklin.jpg',
                     char: 'Robby',
                 },
                 {
