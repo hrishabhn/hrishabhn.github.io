@@ -58,6 +58,10 @@ const movieData0 = [
                 ],
             },
             summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
+            cast: [
+                'Penn Badgley',
+                'Elizabeth Lail',
+            ],
         },
         style: {
             color: '655b3f',
@@ -69,7 +73,7 @@ const movieData0 = [
             tvTimeID: '336924',
             reelgoodLink: 'https://reelgood.com/show/you-2018',
             imdbID: 'tt7335184',
-            // subReddit: 'subreddit',
+            subReddit: 'YouOnLifetime',
         },
     },
     {

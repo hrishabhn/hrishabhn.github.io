@@ -226,19 +226,49 @@
     font-weight: 400;
     cursor: default;
 }
-.tv-popup .video-app-tray{
-    /* height: 200px; */
+.tv-popup .current .info .cast{
+    display: inline-block;
     width: 100%;
-    padding: 15px 0px;
+
+    font-size: 11px;
+    font-weight: 400;
+    cursor: default;
+
+    /* justify-content: flex-start;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: default; */
+}
+.tv-popup .current .info .cast .starring{
+    opacity: 0.6;
+}
+.tv-popup .current .info .cast p{
+    opacity: 0.8;
+    white-space: pre;
+}
+.tv-popup .current .info .cast a{
+    color: white;
+    opacity: 0.8;
+    white-space: pre;
+    font-weight: 500;
+}
+.tv-popup .current .info .cast a:hover{
+    text-decoration: underline;
+}
+
+.tv-popup .video-app-tray{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 30px;
-    padding-right: 20px;
     background-color: var(--black-30);
 }
 .tv-popup .video-app-tray .video-app{
     padding: 12px 15px;
-    border-radius: 8px;
+    border-radius: 80px;
 
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
 
     background-color: var(--white-10);
