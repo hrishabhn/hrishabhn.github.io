@@ -369,7 +369,7 @@
     }
     .tv-popup .current .poster{
         width: calc(100% - 40px);
-        aspect-ratio: 16 / 10;
+        aspect-ratio: 16 / 9;
         border-radius: 8px;
         box-shadow: 0px 20px 30px -15px var(--dark-layer-1-80);
     }
