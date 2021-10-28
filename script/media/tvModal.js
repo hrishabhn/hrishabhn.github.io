@@ -301,7 +301,7 @@ function tvPopupSuggest(a,b) {
 
         if (movieData[a][b].info.cast) {
             suggestElement.append(tvPopupCastBig(a,b))
-            suggestElement.append(spacerElement(10))
+            suggestElement.append(spacerElement(20))
             suggestElement.append(hlineElement())
         }
 
