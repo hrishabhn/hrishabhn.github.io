@@ -1494,13 +1494,21 @@ const movieData6 = [
     {
         name: 'Eternals',
         id: 'eternals',
-        // link: 'watchlink',
+        // link: {
+        //     netflix: '80197526'
+        // },
         info: {
-            service: '',
-            studio: '',
+            // service: 'service',
+            studio: 'marvel',
             location: 'Coming Soon',
             date: 'Nov 5, 2021',
-            description: 'Action &#149 Adventure &#149 Drama &#149 2021',
+            desc: {
+                year: 2021,
+                genre: [
+                    'sci-fi',
+                    'MCU',
+                ],
+            },
             summary: "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
         },
         style: {
@@ -1510,10 +1518,8 @@ const movieData6 = [
             titleSize: 'wide',
         },
         apps: {
-            // tvTimeID: null,
             reelgoodLink: 'https://reelgood.com/movie/eternals-2021',
             imdbID: 'tt9032400',
-            // subReddit: null,
         },
     },
     {
@@ -1614,6 +1620,37 @@ const movieData6 = [
             reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
             imdbID: 'tt3230854',
             subReddit: 'TheExpanse',
+        },
+    },
+    {
+        name: "The King's Man",
+        id: 'kingsMan',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Coming Soon',
+            date: 'Dec 22, 2021',
+            desc: {
+                year: 2021,
+                genre: [
+                    'spy',
+                    'comedy',
+                ],
+            },
+            summary: "In the early years of the 20th century, the Kingsman agency is formed to stand against a cabal plotting a war to wipe out millions.",
+        },
+        style: {
+            color: '444f52',
+            posterType: 'webp',
+            // titleType: 'png',
+            // titleSize: 'wide',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/the-kings-man-2020',
+            imdbID: 'tt6856242',
         },
     },
     {
@@ -1988,12 +2025,25 @@ const movieData7 = [
     {
         name: 'Loki',
         id: 'loki',
-        // link: 'watchlink',
+        // link: {
+        //     netflix: '80197526'
+        // },
         info: {
-            service: '',
-            studio: '',
-            location: 'Coming Soon',
-            description: 'Action & Adventure &#149 Fantasy &#149 1 Season &#149 2021 - Present',
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Disney+',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'fantasy',
+                    'sci-fi',
+                    'MCU',
+                ],
+            },
             summary: "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
         },
         style: {
