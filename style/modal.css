@@ -93,6 +93,14 @@
     font-weight: 400;
 }
 
+
+#modal-body .summary{
+    padding: 0px 15px 15px;
+    width: 300px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 /* #modal-body .tv-popup{
     width: 100vw;
     max-width: 900px;

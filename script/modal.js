@@ -61,6 +61,23 @@ function allCountdownsElement() {
     return container
 }
 
+function tvSummaryElement(a,b) {
+    var container = document.createElement('div')
+    container.classList = 'summary vstack fill-parent'
+    container.append(hlineElement())
+    container.append(spacerElement(5))
+
+    var summary = document.createElement('p')
+
+    if (movieData[a][b].info.summary) {
+        summary.innerHTML = movieData[a][b].info.summary
+    } else {
+        summary.innerHTML = 'No summary'
+    }
+
+    container.append(summary)
+    return container
+}
 
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {

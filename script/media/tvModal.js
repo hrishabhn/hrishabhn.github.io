@@ -92,7 +92,7 @@ function tvPopupElement(a,b,old) {
                 <div class="grow hidden-mobile"></div>
             </div>
             <div class="spacer-x" style="--size: 10px;"></div>
-            <div class="summary">${movie.info.summary}</div>
+            <a class="summary" onclick="showModal('${movie.name}',tvSummaryElement(${a},${b}))">${movie.info.summary}</a>
             ${tvPopupCastSmall(a,b)}
         </div>
         ${tvPopupAppTray(a,b)}

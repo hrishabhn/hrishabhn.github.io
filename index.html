@@ -52,10 +52,14 @@
             <p class="title">Widget 2</p>
         </div>
     </div>
+    <div id="tv-modal-container" class="hide">
+        <a onclick="tvPopupHide()" class="modal-close"></a>
+        <div id="tv-modal-body" class="layer-0"></div>
+    </div>
     <div id ="modal-container" class="hide">
         <a onclick="hideModal()" class="modal-close"></a>
         <div id="modal-scroll">
-            <a class="spacer-x fill-width hidden-mobile" onclick="hideModal()" style="--size: 50px;"></a>
+            <!-- <a class="spacer-x fill-width hidden-mobile" onclick="hideModal()" style="--size: 50px;"></a> -->
             <a class="grow fill-width" onclick="hideModal()" style="min-height: 0px;"></a>
             <div class="modal-card layer-1 card-shadow">
                 <p id="modal-title"></p>
@@ -64,10 +68,6 @@
             </div>
             <a class="grow fill-width" onclick="hideModal()" style="min-height: 0px;"></a>
         </div>
-    </div>
-    <div id="tv-modal-container" class="hide">
-        <a onclick="tvPopupHide()" class="modal-close"></a>
-        <div id="tv-modal-body" class="layer-0"></div>
     </div>
         
     <div id="main">

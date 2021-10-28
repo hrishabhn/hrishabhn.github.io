@@ -143,6 +143,11 @@
     opacity: 0.8;
 }
 .tv-popup .current .info .summary{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
     justify-content: flex-start;
     width: 100%;
     font-size: 13px;
