@@ -276,7 +276,7 @@ const movieData0 = [
                 yearStart: 2009,
                 yearEnd: null,
                 genre: [
-                    'action',
+                    'action & adventure',
                     'animation',
                     'crime',
                 ],
@@ -382,8 +382,7 @@ const movieData0 = [
                 yearEnd: 1999,
                 genre: [
                     'animation',
-                    'action',
-                    'adventure',
+                    'action & adventure',
                 ],
             },
             summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
@@ -456,6 +455,43 @@ const movieData1 = [
                 ],
             },
             summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
+            cast: [
+                {
+                    actor: 'Brian Cox',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
+                    char: 'Logan Roy',
+                },
+                {
+                    actor: 'Jeremy Strong',
+                    image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
+                    char: 'Kendall Roy',
+                },
+                {
+                    actor: 'Sarah Snook',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
+                    char: 'Shiv Roy',
+                },
+                {
+                    actor: 'Matthew Macfadyen',
+                    image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
+                    char: 'Tom Wambsgans',
+                },
+                {
+                    actor: 'Kieran Culkin',
+                    image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+                    char: 'Roman Roy',
+                },
+                {
+                    actor: 'Nicholas Braun',
+                    image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
+                    char: 'Greg Hirsch',
+                },
+                {
+                    actor: 'Alan Ruck',
+                    image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png/revision/latest?cb=20190929222712',
+                    char: 'Connor Roy',
+                },
+            ],
         },
         style: {
             color: '555962',
@@ -853,8 +889,7 @@ const movieData3 = [
             desc: {
                 year: 1993,
                 genre: [
-                    'action',
-                    'adventure',
+                    'action & adventure',
                     'sci-fi',
                 ],
             },
@@ -882,8 +917,7 @@ const movieData3 = [
             desc: {
                 year: 2021,
                 genre: [
-                    'action',
-                    'adventure',
+                    'action & adventure',
                     'drama',
                 ],
             },
@@ -1077,7 +1111,7 @@ const movieData4 = [
                 yearStart: 2021,
                 yearEnd: null,
                 genre: [
-                    'action',
+                    'action & adventure',
                     'crime',
                     'drama',
                 ],
@@ -1164,8 +1198,7 @@ const movieData4 = [
                 yearStart: 2013,
                 yearEnd: 2021,
                 genre: [
-                    'action',
-                    'adventure',
+                    'action & adventure',
                     'history',
                 ],
             },
@@ -1201,8 +1234,7 @@ const movieData4 = [
                 yearStart: 2019,
                 yearEnd: null,
                 genre: [
-                    'action',
-                    'adventure',
+                    'action & adventure',
                     'fantasy',
                 ],
             },
@@ -1655,8 +1687,7 @@ const movieData6 = [
                 yearStart: 2015,
                 yearEnd: null,
                 genre: [
-                    'action',
-                    'adventure',
+                    'action & adventure',
                     'sci-fi',
                 ],
             },
@@ -1746,8 +1777,7 @@ const movieData6 = [
                 yearStart: 2013,
                 yearEnd: 2022,
                 genre: [
-                    'action',
-                    'adventure',
+                    'action & adventure',
                     'animation',
                 ],
             },
@@ -1849,8 +1879,7 @@ const movieData6 = [
             desc: {
                 year: 2022,
                 genre: [
-                    'action',
-                    'adventure',
+                    'action & adventure',
                     'sci-fi',
                 ],
             },
@@ -2527,13 +2556,14 @@ const movieData8 = [
             // studio: 'studio',
             location: 'Hulu',
             desc: {
-               seasons: 9,
-               yearStart: 2005,
-               yearEnd: 2014,
-               genre: [
-                   'comedy',
-                   'romance',
-               ],
+                seasons: 9,
+                yearStart: 2005,
+                yearEnd: 2014,
+                genre: [
+                    'comedy',
+                    'romance',
+                    'friends',
+                ],
             },
             summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
             cast: [
@@ -2608,10 +2638,66 @@ const movieData8 = [
         },
         info: {
             service: 'netflix',
-            studio: '',
+            // studio: 'studio',
             location: 'Netflix',
-            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
-            // summary: "summary",
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'romance',
+                    'friends',
+                ],
+            },
+            summary: "Searching for answers, a socially awkward but endearing teacher moves in with three bachelors who think they understand love but are equally as lost.",
+            cast: [
+                {
+                    actor: 'Zooey Deschanel',
+                    image: 'https://static.wikia.nocookie.net/disney/images/7/79/Zooey_Deschanel.jpg/revision/latest?cb=20191103185701',
+                    char: 'Jessica Day',
+                },
+                {
+                    actor: 'Jake Johnson',
+                    image: 'https://static.wikia.nocookie.net/smurfs/images/8/8c/Jake-johnson-paleyfest-2012-02.jpg/revision/latest/top-crop/width/360/height/450?cb=20170906165142',
+                    char: 'Nick',
+                },
+                {
+                    actor: 'Max Greenfield',
+                    image: 'https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w425-q80/cast/neighborhood_max_800x1000.jpg',
+                    char: 'Schmidt',
+                },
+                {
+                    actor: 'Hannah Simone',
+                    image: 'https://media.glamour.com/photos/5695a50d16d0dc3747ed0549/master/pass/beauty-2014-07-hannah-simone-without-bangs-hair-main.jpg',
+                    char: 'Cece Parekh',
+                },
+                {
+                    actor: 'Lamorne Morris',
+                    image: 'https://static.wikia.nocookie.net/newgirl/images/7/76/Morris.jpg/revision/latest?cb=20111208084201',
+                    char: 'Winston Bishop',
+                },
+                {
+                    actor: 'Damon Wayans Jr.',
+                    image: 'https://i.ticketweb.com/i/00/09/10/86/11/Original.jpg?v=2?v=3',
+                    char: 'Coach',
+                },
+                {
+                    actor: 'Nasim Pedrad',
+                    image: 'https://m.media-amazon.com/images/M/MV5BMjI2NTY1NzEzM15BMl5BanBnXkFtZTgwNzExMjg1NTM@._V1_.jpg',
+                    char: 'Aly Nelson',
+                },
+                {
+                    actor: 'Nelson Franklin',
+                    image: 'https://static.wikia.nocookie.net/marvelmovies/images/5/59/Nelson_Franklin.jpg/revision/latest?cb=20200423111629',
+                    char: 'Robby',
+                },
+                {
+                    actor: 'Megan Fox',
+                    image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgwMTU4NzU4OTc3MDIxMDUw/gettyimages-843456920.jpg',
+                    char: 'Reagan',
+                },
+            ],
         },
         style: {
             color: 'a59c4f',
@@ -2622,10 +2708,12 @@ const movieData8 = [
         apps: {
             // tvTimeID: null,
             // reelgoodLink: 'link',
-            // imdbID: 'identifier',
+            imdbID: 'tt1826940',
             // subReddit: null,
         },
     },
+
+
     {
         name: 'The Office',
         id: 'office',
@@ -2797,9 +2885,9 @@ const movieData9 = [
             desc: {
                 year: 2021,
                 genre: [
-                    'action',
-                    'adventure',
+                    'action & adventure',
                     'fantasy',
+                    'MCU',
                 ],
             },
             summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
