@@ -73,6 +73,39 @@ const movieData0 = [
         },
     },
     {
+        name: 'Curb Your Enthusiasm',
+        id: 'curb',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series',
+        info: {
+            service: 'hbo',
+            studio: '',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 11,
+                yearStart: 2000,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
+        },
+        style: {
+            color: '746e6e',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '76203',
+            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
+            imdbID: 'tt0264235',
+            // subReddit: null,
+        },
+    },
+    {
         name: 'Inside Job',
         id: 'insideJob',
         link: {
@@ -386,39 +419,6 @@ const movieData1 = [
     },
 ]
 const movieData2 = [
-    {
-        name: 'Curb Your Enthusiasm',
-        id: 'curb',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series',
-        info: {
-            service: 'hbo',
-            studio: '',
-            location: 'HBO Max',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 11,
-                yearStart: 2000,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                ],
-            },
-            summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
-        },
-        style: {
-            color: '746e6e',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '76203',
-            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
-            imdbID: 'tt0264235',
-            // subReddit: null,
-        },
-    },
     {
         name: 'Family Guy',
         id: 'family',
