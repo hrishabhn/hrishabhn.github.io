@@ -30,7 +30,7 @@ function tvBig(a,b) {
         link.removeAttribute('href')
     }
 
-    more.onclick = function() { tvPopup(a,b) }
+    more.onclick = function() { tvPopupShow(a,b) }
 
     const tvTimeElement = document.getElementById('tv-big-tvtime')
     const tvTimeSpacer = document.getElementById('tv-big-tvtime-spacer')
@@ -138,7 +138,7 @@ function tvMidElement(a,b) {
         </a>
     </div>
     <div class="spacer-x" style="--size: 15px;"></div>
-    <a class="tv-mid-info clickable-text" onclick="tvPopup(${a},${b})">
+    <a class="tv-mid-info clickable-text" onclick="tvPopupShow(${a},${b})">
         <p class="desc">${processDesc(data,'genre')}</p>
         <div class="spacer-x" style="--size: 4px;"></div>
         <p class="title">${data.name}</p>

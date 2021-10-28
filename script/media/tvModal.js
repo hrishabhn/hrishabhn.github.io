@@ -65,7 +65,6 @@ function tvPopupElement(a,b,old) {
             <div class="spacer-x" style="--size: 10px;"></div>
             <div class="summary">${movie.info.summary}</div>
             ${tvPopupCast(a,b)}
-            <div class="spacer-x" style="--size: 10px;"></div>
         </div>
         ${tvPopupAppTray(a,b)}
         <div class="top-tray">
@@ -154,7 +153,7 @@ function tvPopupAppTray(a,b) {
         // google
 
         var button = document.createElement('a')
-        button.classList = 'video-app layer-1 clickable button-fg'
+        button.classList = 'video-app layer-1 clickable button-fg card-shadow'
         if ('ontouchstart' in document.documentElement) {
             button.href = `google://search?q=${movie.name}`
         } else {
@@ -167,12 +166,12 @@ function tvPopupAppTray(a,b) {
         <div class="spacer-x" style="--size: 5px;"></div>
         <div class="text">Google</div>`
         tray.append(button)
-        tray.append(spacerElement(10))
+        tray.append(spacerElement(8))
 
 
         if (movie.apps.tvTimeID) {
             var button = document.createElement('a')
-            button.classList = 'video-app layer-1 clickable button-fg'
+            button.classList = 'video-app layer-1 clickable button-fg card-shadow'
             button.href = `https://www.tvtime.com/en/show/${movie.apps.tvTimeID}`
             button.target = `_blank`
             
@@ -181,11 +180,11 @@ function tvPopupAppTray(a,b) {
             <div class="spacer-x" style="--size: 8px;"></div>
             <div class="text">TV Time</div>`
             tray.append(button)
-            tray.append(spacerElement(10))
+            tray.append(spacerElement(8))
         }
         if (movie.apps.reelgoodLink) {
             var button = document.createElement('a')
-            button.classList = 'video-app layer-1 clickable button-fg'
+            button.classList = 'video-app layer-1 clickable button-fg card-shadow'
             button.href = movie.apps.reelgoodLink
             button.target = `_blank`
 
@@ -194,11 +193,11 @@ function tvPopupAppTray(a,b) {
             <div class="spacer-x" style="--size: 8px;"></div>
             <div class="text">Reelgood</div>`
             tray.append(button)
-            tray.append(spacerElement(10))
+            tray.append(spacerElement(8))
         }
         if (movie.apps.imdbID) {
             var button = document.createElement('a')
-            button.classList = 'video-app layer-1 clickable button-fg'
+            button.classList = 'video-app layer-1 clickable button-fg card-shadow'
             button.href = `https://www.imdb.com/title/${movie.apps.imdbID}`
             button.target = `_blank`
 
@@ -207,11 +206,11 @@ function tvPopupAppTray(a,b) {
             <div class="spacer-x" style="--size: 8px;"></div>
             <div class="text">IMDb</div>`
             tray.append(button)
-            tray.append(spacerElement(10))
+            tray.append(spacerElement(8))
         }
         if (movie.apps.subReddit) {
             var button = document.createElement('a')
-            button.classList = 'video-app layer-1 clickable button-fg'
+            button.classList = 'video-app layer-1 clickable button-fg card-shadow'
             button.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
             button.target = `_blank`
 
@@ -220,7 +219,7 @@ function tvPopupAppTray(a,b) {
             <div class="spacer-x" style="--size: 8px;"></div>
             <div class="text">Reddit</div>`
             tray.append(button)
-            tray.append(spacerElement(10))
+            tray.append(spacerElement(8))
         }
 
         return tray.outerHTML
