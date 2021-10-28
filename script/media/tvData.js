@@ -2524,10 +2524,45 @@ const movieData8 = [
         link: 'https://www.hulu.com/series/how-i-met-your-mother-bc68ac79-3ace-4427-9ec0-5ee6f314d194',
         info: {
             service: 'hulu',
-            studio: '',
+            // studio: 'studio',
             location: 'Hulu',
-            // description: 'Comedy &#149 Romance &#149 9 Seasons &#149 2005 - 2014',
-            // summary: "summary",
+            desc: {
+               seasons: 9,
+               yearStart: 2005,
+               yearEnd: 2014,
+               genre: [
+                   'comedy',
+                   'romance',
+               ],
+            },
+            summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
+            cast: [
+                {
+                    actor: 'Josh Radnor',
+                    image: 'https://m.media-amazon.com/images/M/MV5BMjAwNTUxMTM4OF5BMl5BanBnXkFtZTcwNjUyNzc4Mg@@._V1_UY264_CR4,0,178,264_AL_.jpg',
+                    char: 'Ted Mosby',
+                },
+                {
+                    actor: 'Jason Segel',
+                    image: 'https://m.media-amazon.com/images/M/MV5BMTUwNzcxNzM1Nl5BMl5BanBnXkFtZTgwNzA5NzU4MjE@._V1_.jpg',
+                    char: 'Marshall Eriksen',
+                },
+                {
+                    actor: 'Cobie Smulders',
+                    image: 'https://static.wikia.nocookie.net/snicket/images/d/d7/Cobiesmulders5.jpg/revision/latest?cb=20191203215251',
+                    char: 'Robin Scherbatsky',
+                },
+                {
+                    actor: 'Neil Patrick Harris',
+                    image: 'https://m.media-amazon.com/images/M/MV5BMTUxNjQ4MjU5Ml5BMl5BanBnXkFtZTcwMTY5NzAzNw@@._V1_.jpg',
+                    char: 'Barney Stinson',
+                },
+                {
+                    actor: 'Alyson Hannigan',
+                    image: 'https://m.media-amazon.com/images/M/MV5BMTkxODc5ODI5OV5BMl5BanBnXkFtZTcwNzExOTUyNw@@._V1_.jpg',
+                    char: 'Lily Aldrin',
+                },
+            ],
         },
         style: {
             color: 'C7A533',
