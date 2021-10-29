@@ -2348,27 +2348,62 @@ const movieData7 = [
         },
     },
     {
-        name: "Rick and Morty",
-        id: "rick",
-        link: null,
+        name: 'Rick and Morty',
+        id: 'rick',
+        // link: {
+        //     netflix: '80197526'
+        // },
         info: {
-            service: '',
-            studio: '',
-            location: "Adult Swim",
-            description: "Animation &#149 Comedy &#149 5 Seasons &#149 2013 - Present",
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Adult Swim',
+            date: '',
+            weekday: '',
+            desc: {
+                seasons: 5,
+                yearStart: 2013,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                    'sci-fi',
+                ],
+            },
             summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
+            cast: [
+                {
+                    actor: 'Justin Roiland',
+                    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Justin_Roiland_%2836434635662%29.jpg/1200px-Justin_Roiland_%2836434635662%29.jpg',
+                    char: 'Rick Sanchez, Morty Smith',
+                },
+                {
+                    actor: 'Chris Parnell',
+                    image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg/revision/latest?cb=20200428144852',
+                    char: 'Jerry Smith',
+                },
+                {
+                    actor: 'Sarah Chalke',
+                    image: 'https://www.northernstars.ca/wp-content/uploads/2017/08/Sarah_Chalke-500-640x800.jpg',
+                    char: 'Beth Smith',
+                },
+                {
+                    actor: 'Spencer Grammer',
+                    // image: 'url',
+                    char: 'Summer Smith',
+                },
+            ],
         },
         style: {
             color: '2D1D54',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
-            tvTimeID: "275274",
-            reelgoodLink: "https://reelgood.com/show/rick-and-morty-2013",
-            imdbID: "tt2861424",
-            subReddit: "rickandmorty",
+            tvTimeID: '275274',
+            reelgoodLink: 'https://reelgood.com/show/rick-and-morty-2013',
+            imdbID: 'tt2861424',
+            subReddit: 'rickandmorty',
         },
     },
     {
