@@ -2767,9 +2767,11 @@ const movieData8 = [
         },
         style: {
             color: '6a5828',
-            posterType: 'webp',
+            posterType: 'jpg',
             titleType: 'png',
-            titleSize: 'wide',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: "73739",
@@ -2804,10 +2806,12 @@ const movieData8 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             // tvTimeID: null,
-            // reelgoodLink: 'link',
+            reelgoodLink: 'https://reelgood.com/show/new-girl-2011',
             imdbID: 'tt1826940',
             // subReddit: null,
         },
@@ -2877,6 +2881,8 @@ const movieData8 = [
             posterType: 'jpg',
             titleType: 'svg',
             titleSize: 'wide',
+            mobileType: 'png',
+            mobileSize: '8 / 10',
         },
         apps: {
             // tvTimeID: null,
@@ -2939,6 +2945,8 @@ const movieData9 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'tall',
+            mobileType: 'jpg',
+            mobileSize: '1',
         },
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/zindagi-na-milegi-dobara-2011',
@@ -2966,6 +2974,8 @@ const movieData9 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -2990,6 +3000,8 @@ const movieData9 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: null,
@@ -3044,6 +3056,8 @@ const movieData9 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: null,
