@@ -5,35 +5,37 @@
 //     // link: {
 //     //     netflix: '80197526'
 //     // },
-//     info: {
+//     // info: {
 //         // service: 'service',
 //         // studio: 'studio',
 //         // location: 'location',
 //         // date: '',
 //         // weekday: '',
 //         // desc: {
-//         // //    seasons: 1,
-//         // //    yearStart: 2021,
-//         // //    yearEnd: null,
-//         // //    genre: [
-//         // //        'crime',
-//         // //        'comedy',
-//         // //    ],
+//         //     seasons: 1,
+//         //     yearStart: 2021,
+//         //     yearEnd: null,
+//         //     genre: [
+//         //         'crime',
+//         //         'comedy',
+//         //     ],
 //         // },
 //         // summary: "summary",
 //     },
-//     style: {
-//         // color: '000000',
-//         // posterType: 'webp',
-//         // titleType: 'png',
-//         // titleSize: 'wide',
-//     },
-//     apps: {
-//         // tvTimeID: 'identifier',
-//         // reelgoodLink: 'link',
-//         // imdbID: 'identifier',
-//         // subReddit: 'subreddit',
-//     },
+//     // style: {
+//     //     color: '000000',
+//     //     posterType: 'webp',
+//     //     titleType: 'png',
+//     //     titleSize: 'wide',
+//     //     mobileType: 'webp',
+//     //     mobileSize: '4 / 5',
+//     // },
+//     // apps: {
+//     //     // tvTimeID: 'identifier',
+//     //     // reelgoodLink: 'link',
+//     //     // imdbID: 'identifier',
+//     //     // subReddit: 'subreddit',
+//     // },
 // },
 
 // cast: [
