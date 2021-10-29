@@ -197,13 +197,28 @@ const movieData0 = [
             imdbID: 'tt8910922',
             // subReddit: 'subreddit',
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
+        cast: [
+            {
+                actor: 'Justin Roiland',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Justin_Roiland_%2836434635662%29.jpg/1200px-Justin_Roiland_%2836434635662%29.jpg',
+                char: 'Korvo',
+            },
+            {
+                actor: 'Thomas Middlditch',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTkwNjMwMDAzN15BMl5BanBnXkFtZTgwOTU3NjMwMTE@._V1_.jpg',
+                char: 'Terry',
+            },
+            {
+                actor: 'Sean Giambrone',
+                image: 'https://pbs.twimg.com/profile_images/1058413246015631360/R87z0r6T.jpg',
+                char: 'Yumyulack',
+            },
+            {
+                actor: 'Mary Mack',
+                image: 'https://m.media-amazon.com/images/M/MV5BNzE3ZWM5MDgtMDY0NC00NTZiLTk1YjYtNDg1ZmM1MzM1YTMyXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg',
+                char: 'Jesse',
+            },
+        ],
     },
     {
         name: 'Inside Job',
