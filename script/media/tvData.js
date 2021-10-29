@@ -224,7 +224,7 @@ const movieData0 = [
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'webp',
-            mobileSize: '4 / 5',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '390716',
@@ -431,7 +431,9 @@ const movieData0 = [
             color: '994d33',
             posterType: 'jpeg',
             titleType: 'png',
-            titleSize: "mid",
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: "76885",
@@ -645,6 +647,8 @@ const movieData2 = [
             posterType: 'webp',
             titleType: 'webp',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '366972',
@@ -1130,6 +1134,8 @@ const movieData4 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '75299',
@@ -1219,6 +1225,8 @@ const movieData4 = [
             posterType: 'jpg',
             titleType: 'svg',
             titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '360893',
@@ -1253,6 +1261,8 @@ const movieData4 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -1339,6 +1349,8 @@ const movieData4 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '356202',
@@ -2517,7 +2529,9 @@ const movieData7 = [
             color: '35465e',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: "383203",

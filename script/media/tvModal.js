@@ -58,7 +58,7 @@ function tvPopupHeaderScroll() {
 }
 
 function tvPopupElement(a,b,old) {
-    // console.log(a,b)
+    console.log(a,b)
     const movie = movieData[a][b]
 
     if (movie.link) {
@@ -162,7 +162,7 @@ function tvPopupElement(a,b,old) {
 function tvPopupCastSmall(a,b) {
     const movie = movieData[a][b]
     
-    if (movie.info.cast) {
+    if (movie.cast) {
         var cast = document.createElement('div')
         cast.classList = 'cast fill-width'
 
@@ -170,20 +170,21 @@ function tvPopupCastSmall(a,b) {
         starring.classList = 'starring'
         starring.innerHTML = 'Starring: '
         cast.append(starring)
+        const n = 5
 
-        for (i = 0; i < movie.info.cast.length; i++) {
+        for (i = 0; (i < movie.cast.length) && (i < n); i++) {
             var star = document.createElement('a')
             star.target = `_blank`
             if ('ontouchstart' in document.documentElement) {
-                star.href = `google://search?q=${movie.info.cast[i].actor}`
+                star.href = `google://search?q=${movie.cast[i].actor}`
             } else {
-                star.href = `http://www.google.com/search?q=${movie.info.cast[i].actor}`
+                star.href = `http://www.google.com/search?q=${movie.cast[i].actor}`
             }
 
-            star.innerHTML = `${movie.info.cast[i].actor}`
+            star.innerHTML = `${movie.cast[i].actor}`
             cast.append(star)
 
-            if (i < movie.info.cast.length - 1) {
+            if ((i < movie.cast.length - 1) && (i < n - 1)) {
                 var comma = document.createElement('p')
                 comma.innerHTML = ', '
                 cast.append(comma)
@@ -340,12 +341,12 @@ function tvPopupAppTray(a,b) {
 function tvPopupSuggest(a,b) {
 
 
-    if ((movieData[a][b].info.desc) || (movieData[a][b].info.service) || movieData[a][b].info.cast) {
+    if ((movieData[a][b].info.desc) || (movieData[a][b].info.service) || movieData[a][b].cast) {
         var suggestElement = document.createElement('div')
         suggestElement.classList = 'suggest'
 
 
-        if (movieData[a][b].info.cast) {
+        if (movieData[a][b].cast) {
             suggestElement.append(tvPopupCastBig(a,b))
             suggestElement.append(spacerElement(20))
             suggestElement.append(hlineElement())
@@ -374,7 +375,7 @@ function tvPopupSuggest(a,b) {
     }
 }
 function tvPopupCastBig(a,b) {
-    const cast = movieData[a][b].info.cast
+    const cast = movieData[a][b].cast
 
     var vstack = document.createElement('div')
     vstack.classList = 'vstack fill-width'
