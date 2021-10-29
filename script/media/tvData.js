@@ -948,6 +948,8 @@ const movieData3 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'tall',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
         },
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/jurassic-park-1993',
