@@ -1826,15 +1826,27 @@ const movieData6 = [
         },
     },
     {
-        name: "The Mandalorian",
-        id: "mando",
-        link: null,
+        name: 'The Mandalorian',
+        id: 'mando',
+        // link: {
+        //     netflix: '80197526'
+        // },
         info: {
             service: 'disney',
-            studio: 'disney',
+            studio: 'starwars',
             location: 'Disney+',
             date: 'Dec 24, 2021',
-            description: 'Action &#149 Adventure &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                    'star wars',
+                ],
+            },
             summary: "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
         },
         style: {
@@ -1846,8 +1858,8 @@ const movieData6 = [
             mobileSize: '7 / 10',
         },
         apps: {
-            tvTimeID: "361753",
-            reelgoodLink: "https://reelgood.com/show/the-mandalorian-2019",
+            tvTimeID: '361753',
+            reelgoodLink: 'https://reelgood.com/show/the-mandalorian-2019',
             imdbID: 'tt8111088',
             subReddit: 'TheMandalorianTV',
         },
