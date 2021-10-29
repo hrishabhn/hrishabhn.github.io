@@ -2713,10 +2713,12 @@ const movieData8 = [
             summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
         },
         style: {
-            color: 'C7A533',
-            posterType: 'webp',
+            color: '60B9C6',
+            posterType: 'jpg',
             titleType: 'svg',
             titleSize: 'tall',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '75760',
