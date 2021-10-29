@@ -116,7 +116,7 @@ const movieData0 = [
             summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
         },
         style: {
-            color: '746e6e',
+            color: 'FDC801',
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
