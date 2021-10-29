@@ -248,6 +248,8 @@ const movieData0 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '1',
         },
         apps: {
             tvTimeID: '365098',
