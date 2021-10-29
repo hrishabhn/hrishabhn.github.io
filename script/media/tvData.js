@@ -1135,16 +1135,26 @@ const movieData3 = [
         },
     },
     {
-        name: "Ghost in the Shell",
-        id: "ghost",
+        name: 'Ghost in the Shell',
+        id: 'ghost',
         link: {
-            primeVideo: 'B07WQZDXTM',
+            primeVideo: 'B07WQZDXTM'
         },
         info: {
-            service: '',
-            studio: '',
-            location: "Prime Video",
-            description: "Animation &#149 Action &#149 Crime &#149 1995",
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                year: 1995,
+                genre: [
+                    'animation',
+                    'crime',
+                    'sci-fi',
+                ],
+            },
             summary: "In the year 2029, the barriers of our world have been broken down by the net and by cybernetics, but this brings new vulnerability to humans in the form of brain-hacking. When a highly-wanted hacker known as The Puppetmaster begins involving them in politics, Section 9, a group of cybernetically enhanced cops, are called in to investigate and stop the Puppetmaster.",
         },
         style: {
@@ -1156,10 +1166,17 @@ const movieData3 = [
             mobileSize: '7 / 10',
         },
         apps: {
-            tvTimeID: null,
-            reelgoodLink: "https://reelgood.com/movie/ghost-in-the-shell-1995",
-            imdbID: "tt0113568",
+            reelgoodLink: 'https://reelgood.com/movie/ghost-in-the-shell-1995',
+            imdbID: 'tt0113568',
+            // subReddit: 'subreddit',
         },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
     },
     {
         name: 'Being John Malkovich',
