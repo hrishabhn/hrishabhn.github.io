@@ -1129,6 +1129,42 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
+        name: 'Q: Into the Storm',
+        id: 'qanon',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GYDk9Ig48c5i6hgEAAAA7:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'documentary',
+                    'politics',
+                ],
+            },
+            summary: "This six-part docuseries charts a labyrinthine journey to uncover the inner workings of Qanon, a massive online conspiracy movement.",
+        },
+        style: {
+            color: '2c2433',
+            posterType: 'webp',
+            titleType: 'jpeg',
+            titleSize: 'wide',
+            mobileType: 'jpeg',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '397561',
+            reelgoodLink: 'https://reelgood.com/show/q-into-the-storm-2021',
+            imdbID: 'tt14215442',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'The Sopranos',
         id: 'sopranos',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2b9AHpHo7DwvwIAT4i:type:series',
