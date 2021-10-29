@@ -98,11 +98,11 @@ const movieData0 = [
     {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2bygQ1go7DwvwIAT3r:type:series',
+        link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
         info: {
             service: 'hbo',
             studio: '',
-            location: 'HBO Max',
+            location: 'Hulu',
             // date: '',
             // weekday: '',
             desc: {
