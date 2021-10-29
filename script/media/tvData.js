@@ -2684,6 +2684,8 @@ const movieData8 = [
             posterType: 'jpg',
             titleType: 'svg',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             // tvTimeID: null,
