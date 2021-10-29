@@ -510,7 +510,7 @@
         /* height: 30px; */
         /* width: 30px; */
         /* -webkit-backdrop-filter: none; */
-        background-color: var(--black-30);
+        /* background-color: var(--black-30); */
     }
 
     .tv-popup #tv-popup-current .close{
