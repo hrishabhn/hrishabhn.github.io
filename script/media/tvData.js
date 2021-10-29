@@ -75,6 +75,8 @@ const movieData0 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '336924',
@@ -400,6 +402,8 @@ const movieData0 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '1',
         },
         apps: {
             tvTimeID: '367226',
@@ -765,7 +769,7 @@ const movieData2 = [
             color: '6d6256',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
             tvTimeID: "356317",
@@ -819,7 +823,9 @@ const movieData2 = [
             color: '3f1513',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '10 / 9',
         },
         apps: {
             tvTimeID: "327417",
@@ -843,6 +849,8 @@ const movieData2 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '1',
         },
         apps: {
             tvTimeID: '353232',
@@ -889,7 +897,7 @@ const movieData2 = [
             color: '200f17',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
             tvTimeID: "357888",
@@ -918,6 +926,8 @@ const movieData3 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -978,6 +988,8 @@ const movieData3 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
         },
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/dune-2020',
@@ -1052,7 +1064,9 @@ const movieData3 = [
             color: '313C82',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: null,
@@ -1078,6 +1092,8 @@ const movieData3 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -1450,7 +1466,7 @@ const movieData4 = [
             color: '262841',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
             tvTimeID: '260092',
@@ -1519,7 +1535,7 @@ const movieData5 = [
             color: '862849',
             posterType: 'jpg',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
             tvTimeID: "320724",
@@ -1542,7 +1558,7 @@ const movieData5 = [
             color: '4d5372',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
     },
     {
@@ -1588,7 +1604,7 @@ const movieData5 = [
             color: 'E25924',
             posterType: 'jpg',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
             tvTimeID: "314087",
@@ -1914,7 +1930,7 @@ const movieData6 = [
             color: '6f4c2d',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
             tvTimeID: "279536",
@@ -2007,7 +2023,7 @@ const movieData7 = [
             color: '584029',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
             tvTimeID: "313999",
@@ -2717,7 +2733,7 @@ const movieData8 = [
             color: '6a5828',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
             tvTimeID: "73739",
@@ -2937,7 +2953,7 @@ const movieData9 = [
             color: '599DAA',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "wide",
+            titleSize: 'wide',
         },
         apps: {
             tvTimeID: null,

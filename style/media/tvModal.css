@@ -94,7 +94,7 @@
 
     overflow: hidden;
 
-    margin-bottom: -200px;
+    margin-bottom: calc(-100px + (-300px * (1 - var(--size))));
 }
 .tv-popup #tv-popup-current .poster-mob .gradient{
     position: absolute;
