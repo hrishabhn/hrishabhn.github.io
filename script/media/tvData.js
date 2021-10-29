@@ -366,6 +366,8 @@ const movieData0 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '1000 / 973',
         },
         apps: {
             tvTimeID: '348488',
@@ -1317,6 +1319,8 @@ const movieData4 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -1367,7 +1371,7 @@ const movieData4 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
-            mobileType: 'webp',
+            mobileType: 'jpg',
             mobileSize: '2 / 3',
         },
         apps: {
@@ -1393,6 +1397,8 @@ const movieData4 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '334824',
@@ -1492,6 +1498,8 @@ const movieData4 = [
             posterType: 'webp',
             titleType: 'svg',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '10 / 11',
         },
         apps: {
             tvTimeID: '328708',
@@ -1532,10 +1540,12 @@ const movieData5 = [
             summary: "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he's confronted with the possibility that the voices he hears and the visions he sees might be real.",
         },
         style: {
-            color: '862849',
+            color: '0b276d',
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: "320724",
