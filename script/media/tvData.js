@@ -163,6 +163,49 @@ const movieData0 = [
         ],
     },
     {
+        name: 'Solar Opposites',
+        id: 'solar',
+        link: 'https://www.hulu.com/series/solar-opposites-f089664b-1a87-433b-86a5-24e7da5a246a',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 2,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "A team of four aliens escape their exploding home world only to crash land into a move-in ready home in suburban America. They are evenly split on whether Earth is awful or awesome. Korvo (Justin Roiland) and Yumyulack (Sean Giambrone) only see the pollution, crass consumerism, and human frailty while Terry (Thomas Middleditch) and Jesse (Mary Mack) love humans and all their TV, junk food and fun stuff. Their mission: protect the Pupa, a living super computer that will one day evolve into its true form, consume them and terraform the Earth.",
+        },
+        style: {
+            color: '3B347A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '375892',
+            reelgoodLink: 'https://reelgood.com/show/solar-opposites-2020',
+            imdbID: 'tt8910922',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
+    {
         name: 'Inside Job',
         id: 'insideJob',
         link: {
@@ -482,6 +525,33 @@ const movieData1 = [
             imdbID: "tt7908628",
             subReddit: 'WhatWeDointheShadows',
         },
+        cast: [
+            {
+                actor: 'Kayvan Novak',
+                image: 'https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/6201/original/Kayvan-Novak.jpg',
+                char: 'Nandor the Relentless',
+            },
+            {
+                actor: 'Matt Berry',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTgzMjQ0NTc5Nl5BMl5BanBnXkFtZTcwMDc0MDYwOA@@._V1_.jpg',
+                char: 'Laszlo Cravensworth',
+            },
+            {
+                actor: 'Natasia Demetriou',
+                image: 'https://www.unitedagents.co.uk/sites/default/files/thumbnails/image/natasia-demetriou-headshot.jpg',
+                char: 'Nadja',
+            },
+            {
+                actor: 'Harvey Guillen',
+                image: 'https://m.media-amazon.com/images/M/MV5BNjUxYjViMTYtZWZkOS00MzVjLTk4MmYtNTcyMzdjYzQ3NWNhXkEyXkFqcGdeQXVyNzY4MDEyMDI@._V1_.jpg',
+                char: 'Guillermo de la Cruz',
+            },
+            {
+                actor: 'Mark Proksch',
+                image: 'https://cps-static.rovicorp.com/2/Open/Getty_Images_406/Person/1177610/_derived_jpg_q90_310x470_m0/Mark_Proksch_C_V01.jpg',
+                char: 'Colin Robinson',
+            },
+        ],
     },
     {
         name: 'Succession',
