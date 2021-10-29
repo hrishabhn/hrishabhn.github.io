@@ -150,6 +150,8 @@ const movieData0 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '76203',
@@ -458,7 +460,9 @@ const movieData1 = [
             color: '1C2C70',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: "mid",
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: "358211",
@@ -530,6 +534,8 @@ const movieData1 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '4 / 5',
         },
         apps: {
             tvTimeID: '338186',

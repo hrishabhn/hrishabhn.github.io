@@ -29,6 +29,33 @@ function nextMovie(a,b) {
     }
 }
 
+function tvPopupHeaderScroll() {
+    const header = document.getElementById('tv-top-tray')
+    // const pageElement = document.getElementById(`tv-modal-container`)
+    const title = document.getElementById('tv-popup-title-mob')
+
+    // console.log(pageElement.scrollTop)
+    // console.log(current.offsetHeight)
+
+    // console.log(current.childNodes[11].childNodes[3].getBoundingClientRect().top)
+
+    if (title.getBoundingClientRect().top < 100) {
+        header.classList.add('scrolled')
+    } else {
+        header.classList.remove('scrolled')
+    }
+
+
+
+    // if (pageElement.scrollTop > (current.offsetHeight - 100)) {
+    //     header.classList.add('scrolled')
+    // } else {
+    //     header.classList.remove('scrolled')
+    // }
+
+    // console.log(pageElement.scrollTop)
+    // console.log(header)
+}
 
 function tvPopupElement(a,b,old) {
     // console.log(a,b)
@@ -59,15 +86,33 @@ function tvPopupElement(a,b,old) {
         var rightButton = ``
     }
 
-    var container = document.createElement('div')
-    container.classList = 'tv-popup vstack fill-parent'
-    container.innerHTML = `
-    <div class="current">
-        <div class="bg" style="--col: #${movie.style.color};"></div>
+    if (movie.style.mobileType) {
+        var poster = `
+        <div class="poster-mob card-shadow only-mobile" style="--poster: url(media-image/TV/mobile/${movie.id}.${movie.style.mobileType});--size: ${movie.style.mobileSize};">
+            <div class="gradient" style="--col1: #${movie.style.color}00;--col2: #${movie.style.color};"></div>
+        </div>
+        <div class="poster card-shadow hidden-mobile" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
+            <div class="gradient hidden-mobile" style="--col: #${movie.style.color}00;"></div>
+            <div class="title hidden-mobile" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
+        </div>`
+    } else {
+        var poster = `
+        <div class="spacer-x only-mobile" style="--size: 110px;"></div>
         <div class="poster card-shadow" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
             <div class="gradient hidden-mobile" style="--col: #${movie.style.color}00;"></div>
             <div class="title hidden-mobile" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
-        </div>
+        </div>`
+    }
+
+
+
+
+    var container = document.createElement('div')
+    container.classList = 'tv-popup vstack fill-parent'
+    container.innerHTML = `
+    <div id="tv-popup-current">
+        <div class="bg" style="--col: #${movie.style.color};"></div>
+        ${poster}
         <div class="spacer-x" style="--size: 15px;"></div>
         <div class="spacer-x only-mobile" style="--size: 10px;"></div>
         <div class="info">
@@ -75,7 +120,7 @@ function tvPopupElement(a,b,old) {
                 <div class="name">${movie.name}</div>
                 <div class="grow hidden-mobile"></div>
             </div>
-            <div class="title-mob only-mobile ${movie.style.titleSize}" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
+            <div id="tv-popup-title-mob" class="title-mob only-mobile ${movie.style.titleSize}" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
             <div class="spacer-x" style="--size: 8px;"></div>
             <div class="spacer-x only-mobile" style="--size: 12px;"></div>
             <div class="fill-width">
@@ -96,7 +141,7 @@ function tvPopupElement(a,b,old) {
             ${tvPopupCastSmall(a,b)}
         </div>
         ${tvPopupAppTray(a,b)}
-        <div class="top-tray">
+        <div id="tv-top-tray">
             <div class="bg only-mobile" style="--col: #${movie.style.color}cc;"></div>
             ${leftButton}
             <div class="grow"></div>
