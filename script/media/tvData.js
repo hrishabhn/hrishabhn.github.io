@@ -2,50 +2,48 @@
 // {
 //     name: 'Title',
 //     id: 'identifier',
-//     // link: {
-//     //     netflix: '80197526'
-//     // },
-//     // info: {
-//         // service: 'service',
-//         // studio: 'studio',
-//         // location: 'location',
-//         // date: '',
-//         // weekday: '',
-//         // desc: {
-//         //     seasons: 1,
-//         //     yearStart: 2021,
-//         //     yearEnd: null,
-//         //     genre: [
-//         //         'crime',
-//         //         'comedy',
-//         //     ],
-//         // },
-//         // summary: "summary",
+//     link: {
+//         netflix: '80197526'
 //     },
-//     // style: {
-//     //     color: '000000',
-//     //     posterType: 'webp',
-//     //     titleType: 'png',
-//     //     titleSize: 'wide',
-//     //     mobileType: 'webp',
-//     //     mobileSize: '2 / 3',
-//     // },
-//     // apps: {
-//     //     // tvTimeID: 'identifier',
-//     //     // reelgoodLink: 'link',
-//     //     // imdbID: 'identifier',
-//     //     // subReddit: 'subreddit',
-//     // },
+//     info: {
+//         service: 'service',
+//         studio: 'studio',
+//         location: 'location',
+//         date: '',
+//         weekday: '',
+//         desc: {
+//             seasons: 1,
+//             yearStart: 2021,
+//             yearEnd: null,
+//             genre: [
+//                 'crime',
+//                 'comedy',
+//             ],
+//         },
+//         summary: "summary",
+//     },
+//     style: {
+//         color: '000000',
+//         posterType: 'webp',
+//         titleType: 'png',
+//         titleSize: 'wide',
+//         mobileType: 'webp',
+//         mobileSize: '2 / 3',
+//     },
+//     apps: {
+//         tvTimeID: 'identifier',
+//         reelgoodLink: 'link',
+//         imdbID: 'identifier',
+//         subReddit: 'subreddit',
+//     },
+//     cast: [
+//         {
+//             actor: 'name',
+//             image: 'url',
+//             char: 'name',
+//         },
+//     ],
 // },
-
-// cast: [
-//     {
-//         actor: 'name',
-//         image: 'url',
-//         char: 'name',
-//     },
-// ],
-
 const movieData0 = [
     {
         name: 'You',
