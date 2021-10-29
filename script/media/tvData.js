@@ -1163,6 +1163,57 @@ const movieData4 = [
         },
     },
     {
+        name: 'Maid',
+        id: 'maid',
+        link: {
+            netflix: '81166770'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 1,
+                year: 2021,
+                genre: [
+                    'drama',
+                ],
+            },
+            summary: "After fleeing an abusive relationship, a young mother finds a job cleaning houses as she fights to provide for her child and build them a better future.",
+        },
+        style: {
+            color: '6c737a',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/maid-2021',
+            imdbID: 'tt11337908',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Margaret Qualley',
+                image: 'https://m.media-amazon.com/images/M/MV5BYWZmMDFlMDYtYzk3My00YTg1LTllZWUtYzY2Y2QyNjk2NTZmXkEyXkFqcGdeQXVyMzcxMTAwMDM@._V1_.jpg',
+                char: 'Alex',
+            },
+            {
+                actor: 'Nick Robinson',
+                image: 'https://m.media-amazon.com/images/M/MV5BNzViMjQ4NzQtZDBhNC00ZTlhLTk4NzktYTYyYzE4NjFiZjQ1XkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg',
+                char: 'Sean',
+            },
+            {
+                actor: 'Rylea Nevea Whittet',
+                // image: 'url',
+                char: 'Maddy',
+            },
+        ],
+    },
+    {
         name: 'My Name',
         id: 'myname',
         link: {
