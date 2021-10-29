@@ -223,6 +223,8 @@ const movieData0 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '4 / 5',
         },
         apps: {
             tvTimeID: '390716',
@@ -324,6 +326,8 @@ const movieData0 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '4 / 5',
         },
         apps: {
             tvTimeID: '110381',
