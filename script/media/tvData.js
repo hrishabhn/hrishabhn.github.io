@@ -142,22 +142,22 @@ const movieData0 = [
             },
             {
                 actor: 'Cheryl Hines',
-                // image: 'url',
+                image: 'https://deadline.com/wp-content/uploads/2019/03/cheryl-hines-e1553018614527.jpg',
                 char: 'Cheryl David',
             },
             {
                 actor: 'Susie Essman',
-                // image: 'url',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Susie_Essman_at_the_2009_Tribeca_Film_Festival.jpg',
                 char: 'Susie Greene',
             },
             {
                 actor: 'J.B. Smoove',
-                // image: 'url',
+                image: 'https://static.wikia.nocookie.net/harleyquinntv/images/d/d0/J._B._Smoove.jpg',
                 char: 'Leon Black',
             },
             {
                 actor: 'Richard Lewis',
-                // image: 'url',
+                image: 'https://preview.redd.it/kii4ah8ff8d51.jpg',
                 char: 'Richard Lewis',
             },
         ],
@@ -306,12 +306,12 @@ const movieData0 = [
         cast: [
             {
                 actor: 'H. Jon Benjamin',
-                image: 'https://static.wikia.nocookie.net/wordgirl/images/7/7a/IMG_0630.JPG/revision/latest?cb=20170805034912',
+                image: 'https://static.wikia.nocookie.net/wordgirl/images/7/7a/IMG_0630.JPG',
                 char: 'Sterling Archer',
             },
             {
                 actor: 'Aisha Tyler',
-                image: 'https://static.wikia.nocookie.net/modernfamily/images/d/d5/Aisha-Tyler.jpg/revision/latest?cb=20140630111504',
+                image: 'https://static.wikia.nocookie.net/modernfamily/images/d/d5/Aisha-Tyler.jpg',
                 char: 'Lana Kane',
             },
             {
@@ -321,7 +321,7 @@ const movieData0 = [
             },
             {
                 actor: 'Chris Parnell',
-                image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg/revision/latest?cb=20200428144852',
+                image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg',
                 char: 'Cyril Figgis',
             },
             {
@@ -2552,7 +2552,7 @@ const movieData7 = [
             },
             {
                 actor: 'Chris Parnell',
-                image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg/revision/latest?cb=20200428144852',
+                image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg',
                 char: 'Jerry Smith',
             },
             {
