@@ -76,7 +76,7 @@ const movieData0 = [
             titleType: 'png',
             titleSize: 'mid',
             mobileType: 'jpg',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '336924',
@@ -961,7 +961,7 @@ const movieData3 = [
             titleType: 'png',
             titleSize: 'tall',
             mobileType: 'jpg',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/jurassic-park-1993',
@@ -991,7 +991,7 @@ const movieData3 = [
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'jpg',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/dune-2020',
@@ -1068,7 +1068,7 @@ const movieData3 = [
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'jpg',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: null,
@@ -1095,7 +1095,7 @@ const movieData3 = [
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'jpg',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -1320,7 +1320,7 @@ const movieData4 = [
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'jpg',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -1398,7 +1398,7 @@ const movieData4 = [
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'jpg',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '334824',
@@ -1545,7 +1545,7 @@ const movieData5 = [
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'jpg',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: "320724",
@@ -1685,6 +1685,8 @@ const movieData6 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/eternals-2021',
@@ -1782,6 +1784,8 @@ const movieData6 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '280619',
@@ -1838,6 +1842,8 @@ const movieData6 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: "361753",
@@ -1872,6 +1878,8 @@ const movieData6 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '267440',
@@ -1908,6 +1916,8 @@ const movieData6 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '329089',
@@ -1941,6 +1951,8 @@ const movieData6 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: "279536",
