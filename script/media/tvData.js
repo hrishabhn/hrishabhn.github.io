@@ -122,8 +122,8 @@ const movieData0 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '76203',
