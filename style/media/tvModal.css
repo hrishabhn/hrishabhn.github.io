@@ -211,8 +211,10 @@
     border-color: var(--white-60);
 }
 .tv-popup .video-app-tray .video-app .icon{
-    height: 10px;
-    width: 10px;
+    height: calc(10px - (2 * var(--size)));
+    width: calc(10px - (2 * var(--size)));
+    margin: var(--size);
+
 }
 
 .tv-popup .current .top-tray{
