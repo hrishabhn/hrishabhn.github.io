@@ -28,7 +28,7 @@
 //     //     titleType: 'png',
 //     //     titleSize: 'wide',
 //     //     mobileType: 'webp',
-//     //     mobileSize: '4 / 5',
+//     //     mobileSize: '2 / 3',
 //     // },
 //     // apps: {
 //     //     // tvTimeID: 'identifier',
@@ -69,18 +69,6 @@ const movieData0 = [
                 ],
             },
             summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
-            cast: [
-                {
-                    actor: 'Penn Badgley',
-                    image: 'https://media1.popsugar-assets.com/files/thumbor/5hs8f5F2K3qAi5JiZn4XoBIJUAE/0x150:3648x3798/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/10/28/859/n/1922398/d130310f5f99c8a0122de3.83461725_/i/Penn-Badgley.jpg',
-                    char: 'Joe Goldberg',
-                },
-                {
-                    actor: 'Elizabeth Lail',
-                    image: 'https://www.thewikifeed.com/wp-content/uploads/2021/06/elizabeth-lail-1.jpg',
-                    char: 'Guinevere Beck',
-                },
-            ],
         },
         style: {
             color: '655b3f',
@@ -94,6 +82,18 @@ const movieData0 = [
             imdbID: 'tt7335184',
             subReddit: 'YouOnLifetime',
         },
+        cast: [
+            {
+                actor: 'Penn Badgley',
+                image: 'https://media1.popsugar-assets.com/files/thumbor/5hs8f5F2K3qAi5JiZn4XoBIJUAE/0x150:3648x3798/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/10/28/859/n/1922398/d130310f5f99c8a0122de3.83461725_/i/Penn-Badgley.jpg',
+                char: 'Joe Goldberg',
+            },
+            {
+                actor: 'Elizabeth Lail',
+                image: 'https://www.thewikifeed.com/wp-content/uploads/2021/06/elizabeth-lail-1.jpg',
+                char: 'Guinevere Beck',
+            },
+        ],
     },
     {
         name: 'Curb Your Enthusiasm',
@@ -114,38 +114,6 @@ const movieData0 = [
                 ],
             },
             summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
-            cast: [
-                {
-                    actor: 'Larry David',
-                    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg/1280px-Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg',
-                    char: 'Larry David',
-                },
-                {
-                    actor: 'Jeff Garlin',
-                    image: 'https://static.wikia.nocookie.net/disney/images/2/27/Jeff_Garlin.jpg',
-                    char: 'Jeff Greene',
-                },
-                {
-                    actor: 'Cheryl Hines',
-                    // image: 'url',
-                    char: 'Cheryl David',
-                },
-                {
-                    actor: 'Susie Essman',
-                    // image: 'url',
-                    char: 'Susie Greene',
-                },
-                {
-                    actor: 'J.B. Smoove',
-                    // image: 'url',
-                    char: 'Leon Black',
-                },
-                {
-                    actor: 'Richard Lewis',
-                    // image: 'url',
-                    char: 'Richard Lewis',
-                },
-            ],
         },
         style: {
             color: '746e6e',
@@ -161,6 +129,38 @@ const movieData0 = [
             imdbID: 'tt0264235',
             subReddit: 'curb',
         },
+        cast: [
+            {
+                actor: 'Larry David',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg/1280px-Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg',
+                char: 'Larry David',
+            },
+            {
+                actor: 'Jeff Garlin',
+                image: 'https://static.wikia.nocookie.net/disney/images/2/27/Jeff_Garlin.jpg',
+                char: 'Jeff Greene',
+            },
+            {
+                actor: 'Cheryl Hines',
+                // image: 'url',
+                char: 'Cheryl David',
+            },
+            {
+                actor: 'Susie Essman',
+                // image: 'url',
+                char: 'Susie Greene',
+            },
+            {
+                actor: 'J.B. Smoove',
+                // image: 'url',
+                char: 'Leon Black',
+            },
+            {
+                actor: 'Richard Lewis',
+                // image: 'url',
+                char: 'Richard Lewis',
+            },
+        ],
     },
     {
         name: 'Inside Job',
@@ -288,38 +288,6 @@ const movieData0 = [
                 ],
             },
             summary: "Covert black ops and espionage take a back seat to zany personalities and relationships between secret agents and drones.",
-            cast: [
-                {
-                    actor: 'H. Jon Benjamin',
-                    image: 'https://static.wikia.nocookie.net/wordgirl/images/7/7a/IMG_0630.JPG/revision/latest?cb=20170805034912',
-                    char: 'Sterling Archer',
-                },
-                {
-                    actor: 'Aisha Tyler',
-                    image: 'https://static.wikia.nocookie.net/modernfamily/images/d/d5/Aisha-Tyler.jpg/revision/latest?cb=20140630111504',
-                    char: 'Lana Kane',
-                },
-                {
-                    actor: 'Jessica Walter',
-                    image: 'https://i.guim.co.uk/img/media/2210d59881f244fafa78bffd007fa65eb016fc05/0_88_3000_1801/master/3000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=c1328f0a445403ca26fb753cd33bf947',
-                    char: 'Malory Archer',
-                },
-                {
-                    actor: 'Chris Parnell',
-                    image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg/revision/latest?cb=20200428144852',
-                    char: 'Cyril Figgis',
-                },
-                {
-                    actor: 'Judy Greer',
-                    image: 'https://m.media-amazon.com/images/M/MV5BMTg5MTAyMzMzMl5BMl5BanBnXkFtZTcwMDY2Mzc2NQ@@._V1_.jpg',
-                    char: 'Cheryl Tunt',
-                },
-                {
-                    actor: 'Amber Nash',
-                    // image: 'url',
-                    char: 'Pam Poovey',
-                },
-            ],
         },
         style: {
             color: '337799',
@@ -327,7 +295,7 @@ const movieData0 = [
             titleType: 'png',
             titleSize: 'mid',
             mobileType: 'webp',
-            mobileSize: '4 / 5',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '110381',
@@ -335,6 +303,38 @@ const movieData0 = [
             imdbID: 'tt1486217',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'H. Jon Benjamin',
+                image: 'https://static.wikia.nocookie.net/wordgirl/images/7/7a/IMG_0630.JPG/revision/latest?cb=20170805034912',
+                char: 'Sterling Archer',
+            },
+            {
+                actor: 'Aisha Tyler',
+                image: 'https://static.wikia.nocookie.net/modernfamily/images/d/d5/Aisha-Tyler.jpg/revision/latest?cb=20140630111504',
+                char: 'Lana Kane',
+            },
+            {
+                actor: 'Jessica Walter',
+                image: 'https://i.guim.co.uk/img/media/2210d59881f244fafa78bffd007fa65eb016fc05/0_88_3000_1801/master/3000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=c1328f0a445403ca26fb753cd33bf947',
+                char: 'Malory Archer',
+            },
+            {
+                actor: 'Chris Parnell',
+                image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg/revision/latest?cb=20200428144852',
+                char: 'Cyril Figgis',
+            },
+            {
+                actor: 'Judy Greer',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTg5MTAyMzMzMl5BMl5BanBnXkFtZTcwMDY2Mzc2NQ@@._V1_.jpg',
+                char: 'Cheryl Tunt',
+            },
+            {
+                actor: 'Amber Nash',
+                // image: 'url',
+                char: 'Pam Poovey',
+            },
+        ],
     },
     {
         name: 'Memories of the Alhambra',
@@ -497,43 +497,6 @@ const movieData1 = [
                 ],
             },
             summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
-            cast: [
-                {
-                    actor: 'Brian Cox',
-                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
-                    char: 'Logan Roy',
-                },
-                {
-                    actor: 'Jeremy Strong',
-                    image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
-                    char: 'Kendall Roy',
-                },
-                {
-                    actor: 'Sarah Snook',
-                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
-                    char: 'Shiv Roy',
-                },
-                {
-                    actor: 'Matthew Macfadyen',
-                    image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
-                    char: 'Tom Wambsgans',
-                },
-                {
-                    actor: 'Kieran Culkin',
-                    image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
-                    char: 'Roman Roy',
-                },
-                {
-                    actor: 'Nicholas Braun',
-                    image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
-                    char: 'Greg Hirsch',
-                },
-                {
-                    actor: 'Alan Ruck',
-                    image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
-                    char: 'Connor Roy',
-                },
-            ],
         },
         style: {
             color: '555962',
@@ -549,6 +512,43 @@ const movieData1 = [
             imdbID: 'tt7660850',
             subReddit: 'SuccessionTV',
         },
+        cast: [
+            {
+                actor: 'Brian Cox',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
+                char: 'Logan Roy',
+            },
+            {
+                actor: 'Jeremy Strong',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
+                char: 'Kendall Roy',
+            },
+            {
+                actor: 'Sarah Snook',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
+                char: 'Shiv Roy',
+            },
+            {
+                actor: 'Matthew Macfadyen',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
+                char: 'Tom Wambsgans',
+            },
+            {
+                actor: 'Kieran Culkin',
+                image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+                char: 'Roman Roy',
+            },
+            {
+                actor: 'Nicholas Braun',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
+                char: 'Greg Hirsch',
+            },
+            {
+                actor: 'Alan Ruck',
+                image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
+                char: 'Connor Roy',
+            },
+        ],
     },
 ]
 const movieData2 = [
@@ -2382,28 +2382,6 @@ const movieData7 = [
                 ],
             },
             summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
-            cast: [
-                {
-                    actor: 'Justin Roiland',
-                    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Justin_Roiland_%2836434635662%29.jpg/1200px-Justin_Roiland_%2836434635662%29.jpg',
-                    char: 'Rick Sanchez, Morty Smith',
-                },
-                {
-                    actor: 'Chris Parnell',
-                    image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg/revision/latest?cb=20200428144852',
-                    char: 'Jerry Smith',
-                },
-                {
-                    actor: 'Sarah Chalke',
-                    image: 'https://www.northernstars.ca/wp-content/uploads/2017/08/Sarah_Chalke-500-640x800.jpg',
-                    char: 'Beth Smith',
-                },
-                {
-                    actor: 'Spencer Grammer',
-                    // image: 'url',
-                    char: 'Summer Smith',
-                },
-            ],
         },
         style: {
             color: '2D1D54',
@@ -2417,6 +2395,28 @@ const movieData7 = [
             imdbID: 'tt2861424',
             subReddit: 'rickandmorty',
         },
+        cast: [
+            {
+                actor: 'Justin Roiland',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Justin_Roiland_%2836434635662%29.jpg/1200px-Justin_Roiland_%2836434635662%29.jpg',
+                char: 'Rick Sanchez, Morty Smith',
+            },
+            {
+                actor: 'Chris Parnell',
+                image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg/revision/latest?cb=20200428144852',
+                char: 'Jerry Smith',
+            },
+            {
+                actor: 'Sarah Chalke',
+                image: 'https://www.northernstars.ca/wp-content/uploads/2017/08/Sarah_Chalke-500-640x800.jpg',
+                char: 'Beth Smith',
+            },
+            {
+                actor: 'Spencer Grammer',
+                // image: 'url',
+                char: 'Summer Smith',
+            },
+        ],
     },
     {
         name: 'Snowfall',
@@ -2512,48 +2512,6 @@ const movieData7 = [
                 ],
             },
             summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-            cast: [
-                {
-                    actor: 'Jason Sudeikis',
-                    image: 'https://is2-ssl.mzstatic.com/image/thumb/AgXPsy2GlFurBYHRquyjeQ/492x492ve.webp',
-                    char: 'Ted Lasso',
-                },
-                {
-                    actor: 'Hannah Waddingham',
-                    image: 'https://is3-ssl.mzstatic.com/image/thumb/U6GiaSTux3G9QH9TlhMRZg/492x492ve.webp',
-                    char: 'Rebecca Welton',
-                },
-                {
-                    actor: 'Juno Temple',
-                    image: 'https://is1-ssl.mzstatic.com/image/thumb/yuUiq_Yf9rwApABQwQ2Puw/492x492ve.webp',
-                    char: 'Keeley Jones',
-                },
-                {
-                    actor: 'Jeremy Swift',
-                    image: 'https://is4-ssl.mzstatic.com/image/thumb/37A2yAcEOqpu6sMk6of4Dg/492x492ve.webp',
-                    char: 'Higgins',
-                },
-                {
-                    actor: 'Phil Dunster',
-                    image: 'https://is3-ssl.mzstatic.com/image/thumb/r7YVz00Gfg-4PCrlnBj4jA/492x492ve.webp',
-                    char: 'Jaime Tartt',
-                },
-                {
-                    actor: 'Brett Goldstein',
-                    image: 'https://is3-ssl.mzstatic.com/image/thumb/nxwtHIicKZUbrQQ_0GlISA/492x492ve.webp',
-                    char: 'Roy Kent',
-                },
-                {
-                    actor: 'Brendan Hunt',
-                    image: 'https://is3-ssl.mzstatic.com/image/thumb/tjFBadTW13u_cEJJXNjH9A/492x492ve.webp',
-                    char: 'Coach Beard',
-                },
-                {
-                    actor: 'Nick Mohammed',
-                    image: 'https://is2-ssl.mzstatic.com/image/thumb/3oivPHwZya0T-EKJHJXSvA/492x492ve.webp',
-                    char: 'Nathan Shelley',
-                },
-            ],
         },
         style: {
             color: '35465e',
@@ -2567,6 +2525,48 @@ const movieData7 = [
             imdbID: "tt10986410",
             subReddit: "TedLasso",
         },
+        cast: [
+            {
+                actor: 'Jason Sudeikis',
+                image: 'https://is2-ssl.mzstatic.com/image/thumb/AgXPsy2GlFurBYHRquyjeQ/492x492ve.webp',
+                char: 'Ted Lasso',
+            },
+            {
+                actor: 'Hannah Waddingham',
+                image: 'https://is3-ssl.mzstatic.com/image/thumb/U6GiaSTux3G9QH9TlhMRZg/492x492ve.webp',
+                char: 'Rebecca Welton',
+            },
+            {
+                actor: 'Juno Temple',
+                image: 'https://is1-ssl.mzstatic.com/image/thumb/yuUiq_Yf9rwApABQwQ2Puw/492x492ve.webp',
+                char: 'Keeley Jones',
+            },
+            {
+                actor: 'Jeremy Swift',
+                image: 'https://is4-ssl.mzstatic.com/image/thumb/37A2yAcEOqpu6sMk6of4Dg/492x492ve.webp',
+                char: 'Higgins',
+            },
+            {
+                actor: 'Phil Dunster',
+                image: 'https://is3-ssl.mzstatic.com/image/thumb/r7YVz00Gfg-4PCrlnBj4jA/492x492ve.webp',
+                char: 'Jaime Tartt',
+            },
+            {
+                actor: 'Brett Goldstein',
+                image: 'https://is3-ssl.mzstatic.com/image/thumb/nxwtHIicKZUbrQQ_0GlISA/492x492ve.webp',
+                char: 'Roy Kent',
+            },
+            {
+                actor: 'Brendan Hunt',
+                image: 'https://is3-ssl.mzstatic.com/image/thumb/tjFBadTW13u_cEJJXNjH9A/492x492ve.webp',
+                char: 'Coach Beard',
+            },
+            {
+                actor: 'Nick Mohammed',
+                image: 'https://is2-ssl.mzstatic.com/image/thumb/3oivPHwZya0T-EKJHJXSvA/492x492ve.webp',
+                char: 'Nathan Shelley',
+            },
+        ],
     },
 ]
 const movieData8 = [
@@ -2645,33 +2645,6 @@ const movieData8 = [
                 ],
             },
             summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
-            cast: [
-                {
-                    actor: 'Josh Radnor',
-                    image: 'https://m.media-amazon.com/images/M/MV5BMjAwNTUxMTM4OF5BMl5BanBnXkFtZTcwNjUyNzc4Mg@@._V1_UY264_CR4,0,178,264_AL_.jpg',
-                    char: 'Ted Mosby',
-                },
-                {
-                    actor: 'Jason Segel',
-                    image: 'https://m.media-amazon.com/images/M/MV5BMTUwNzcxNzM1Nl5BMl5BanBnXkFtZTgwNzA5NzU4MjE@._V1_.jpg',
-                    char: 'Marshall Eriksen',
-                },
-                {
-                    actor: 'Cobie Smulders',
-                    image: 'https://static.wikia.nocookie.net/snicket/images/d/d7/Cobiesmulders5.jpg',
-                    char: 'Robin Scherbatsky',
-                },
-                {
-                    actor: 'Neil Patrick Harris',
-                    image: 'https://m.media-amazon.com/images/M/MV5BMTUxNjQ4MjU5Ml5BMl5BanBnXkFtZTcwMTY5NzAzNw@@._V1_.jpg',
-                    char: 'Barney Stinson',
-                },
-                {
-                    actor: 'Alyson Hannigan',
-                    image: 'https://m.media-amazon.com/images/M/MV5BMTkxODc5ODI5OV5BMl5BanBnXkFtZTcwNzExOTUyNw@@._V1_.jpg',
-                    char: 'Lily Aldrin',
-                },
-            ],
         },
         style: {
             color: 'C7A533',
@@ -2685,6 +2658,33 @@ const movieData8 = [
             imdbID: 'tt0460649',
             subReddit: 'HIMYM',
         },
+        cast: [
+            {
+                actor: 'Josh Radnor',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjAwNTUxMTM4OF5BMl5BanBnXkFtZTcwNjUyNzc4Mg@@._V1_UY264_CR4,0,178,264_AL_.jpg',
+                char: 'Ted Mosby',
+            },
+            {
+                actor: 'Jason Segel',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTUwNzcxNzM1Nl5BMl5BanBnXkFtZTgwNzA5NzU4MjE@._V1_.jpg',
+                char: 'Marshall Eriksen',
+            },
+            {
+                actor: 'Cobie Smulders',
+                image: 'https://static.wikia.nocookie.net/snicket/images/d/d7/Cobiesmulders5.jpg',
+                char: 'Robin Scherbatsky',
+            },
+            {
+                actor: 'Neil Patrick Harris',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTUxNjQ4MjU5Ml5BMl5BanBnXkFtZTcwMTY5NzAzNw@@._V1_.jpg',
+                char: 'Barney Stinson',
+            },
+            {
+                actor: 'Alyson Hannigan',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTkxODc5ODI5OV5BMl5BanBnXkFtZTcwNzExOTUyNw@@._V1_.jpg',
+                char: 'Lily Aldrin',
+            },
+        ],
     },
     {
         name: "Lost",
@@ -2730,53 +2730,6 @@ const movieData8 = [
                 ],
             },
             summary: "Searching for answers, a socially awkward but endearing teacher moves in with three bachelors who think they understand love but are equally as lost.",
-            cast: [
-                {
-                    actor: 'Zooey Deschanel',
-                    image: 'https://static.wikia.nocookie.net/disney/images/7/79/Zooey_Deschanel.jpg',
-                    char: 'Jessica Day',
-                },
-                {
-                    actor: 'Jake Johnson',
-                    image: 'https://static.wikia.nocookie.net/smurfs/images/8/8c/Jake-johnson-paleyfest-2012-02.jpg',
-                    char: 'Nick',
-                },
-                {
-                    actor: 'Max Greenfield',
-                    image: 'https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w425-q80/cast/neighborhood_max_800x1000.jpg',
-                    char: 'Schmidt',
-                },
-                {
-                    actor: 'Hannah Simone',
-                    image: 'https://media.glamour.com/photos/5695a50d16d0dc3747ed0549/master/pass/beauty-2014-07-hannah-simone-without-bangs-hair-main.jpg',
-                    char: 'Cece Parekh',
-                },
-                {
-                    actor: 'Lamorne Morris',
-                    image: 'https://static.wikia.nocookie.net/newgirl/images/7/76/Morris.jpg',
-                    char: 'Winston Bishop',
-                },
-                {
-                    actor: 'Damon Wayans Jr.',
-                    image: 'https://i.ticketweb.com/i/00/09/10/86/11/Original.jpg?v=2?v=3',
-                    char: 'Coach',
-                },
-                {
-                    actor: 'Nasim Pedrad',
-                    image: 'https://m.media-amazon.com/images/M/MV5BMjI2NTY1NzEzM15BMl5BanBnXkFtZTgwNzExMjg1NTM@._V1_.jpg',
-                    char: 'Aly Nelson',
-                },
-                {
-                    actor: 'Nelson Franklin',
-                    image: 'https://static.wikia.nocookie.net/marvelmovies/images/5/59/Nelson_Franklin.jpg',
-                    char: 'Robby',
-                },
-                {
-                    actor: 'Megan Fox',
-                    image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgwMTU4NzU4OTc3MDIxMDUw/gettyimages-843456920.jpg',
-                    char: 'Reagan',
-                },
-            ],
         },
         style: {
             color: 'a59c4f',
@@ -2790,6 +2743,53 @@ const movieData8 = [
             imdbID: 'tt1826940',
             // subReddit: null,
         },
+        cast: [
+            {
+                actor: 'Zooey Deschanel',
+                image: 'https://static.wikia.nocookie.net/disney/images/7/79/Zooey_Deschanel.jpg',
+                char: 'Jessica Day',
+            },
+            {
+                actor: 'Jake Johnson',
+                image: 'https://static.wikia.nocookie.net/smurfs/images/8/8c/Jake-johnson-paleyfest-2012-02.jpg',
+                char: 'Nick',
+            },
+            {
+                actor: 'Max Greenfield',
+                image: 'https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w425-q80/cast/neighborhood_max_800x1000.jpg',
+                char: 'Schmidt',
+            },
+            {
+                actor: 'Hannah Simone',
+                image: 'https://media.glamour.com/photos/5695a50d16d0dc3747ed0549/master/pass/beauty-2014-07-hannah-simone-without-bangs-hair-main.jpg',
+                char: 'Cece Parekh',
+            },
+            {
+                actor: 'Lamorne Morris',
+                image: 'https://static.wikia.nocookie.net/newgirl/images/7/76/Morris.jpg',
+                char: 'Winston Bishop',
+            },
+            {
+                actor: 'Damon Wayans Jr.',
+                image: 'https://i.ticketweb.com/i/00/09/10/86/11/Original.jpg?v=2?v=3',
+                char: 'Coach',
+            },
+            {
+                actor: 'Nasim Pedrad',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjI2NTY1NzEzM15BMl5BanBnXkFtZTgwNzExMjg1NTM@._V1_.jpg',
+                char: 'Aly Nelson',
+            },
+            {
+                actor: 'Nelson Franklin',
+                image: 'https://static.wikia.nocookie.net/marvelmovies/images/5/59/Nelson_Franklin.jpg',
+                char: 'Robby',
+            },
+            {
+                actor: 'Megan Fox',
+                image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgwMTU4NzU4OTc3MDIxMDUw/gettyimages-843456920.jpg',
+                char: 'Reagan',
+            },
+        ],
     },
 
 
