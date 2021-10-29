@@ -506,11 +506,11 @@
     .tv-popup #tv-popup-current #tv-top-tray.scrolled .bg{
         background-color: var(--col);
     }
-    .tv-popup #tv-popup-current #tv-top-tray a{
+    .tv-popup #tv-popup-current #tv-top-tray.scrolled a{
         /* height: 30px; */
         /* width: 30px; */
         /* -webkit-backdrop-filter: none; */
-        /* background-color: var(--black-30); */
+        background-color: var(--black-20);
     }
 
     .tv-popup #tv-popup-current .close{

@@ -7,10 +7,10 @@
 //     },
 //     info: {
 //         service: 'service',
-//         studio: 'studio',
+//         // studio: 'studio',
 //         location: 'location',
-//         date: '',
-//         weekday: '',
+//         // date: '',
+//         // weekday: '',
 //         desc: {
 //             seasons: 1,
 //             yearStart: 2021,
@@ -31,18 +31,18 @@
 //         mobileSize: '2 / 3',
 //     },
 //     apps: {
-//         tvTimeID: 'identifier',
-//         reelgoodLink: 'link',
-//         imdbID: 'identifier',
-//         subReddit: 'subreddit',
+//         // tvTimeID: 'identifier',
+//         // reelgoodLink: 'link',
+//         // imdbID: 'identifier',
+//         // subReddit: 'subreddit',
 //     },
-//     cast: [
-//         {
-//             actor: 'name',
-//             image: 'url',
-//             char: 'name',
-//         },
-//     ],
+//     // cast: [
+//     //     {
+//     //         actor: 'name',
+//     //         image: 'url',
+//     //         char: 'name',
+//     //     },
+//     // ],
 // },
 const movieData0 = [
     {
