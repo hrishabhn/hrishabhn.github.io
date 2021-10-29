@@ -282,6 +282,38 @@ const movieData0 = [
                 ],
             },
             summary: "Covert black ops and espionage take a back seat to zany personalities and relationships between secret agents and drones.",
+            cast: [
+                {
+                    actor: 'H. Jon Benjamin',
+                    image: 'https://static.wikia.nocookie.net/wordgirl/images/7/7a/IMG_0630.JPG/revision/latest?cb=20170805034912',
+                    char: 'Sterling Archer',
+                },
+                {
+                    actor: 'Aisha Tyler',
+                    image: 'https://static.wikia.nocookie.net/modernfamily/images/d/d5/Aisha-Tyler.jpg/revision/latest?cb=20140630111504',
+                    char: 'Lana Kane',
+                },
+                {
+                    actor: 'Jessica Walter',
+                    image: 'https://i.guim.co.uk/img/media/2210d59881f244fafa78bffd007fa65eb016fc05/0_88_3000_1801/master/3000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=c1328f0a445403ca26fb753cd33bf947',
+                    char: 'Malory Archer',
+                },
+                {
+                    actor: 'Chris Parnell',
+                    image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg/revision/latest?cb=20200428144852',
+                    char: 'Cyril Figgis',
+                },
+                {
+                    actor: 'Judy Greer',
+                    image: 'https://m.media-amazon.com/images/M/MV5BMTg5MTAyMzMzMl5BMl5BanBnXkFtZTcwMDY2Mzc2NQ@@._V1_.jpg',
+                    char: 'Cheryl Tunt',
+                },
+                {
+                    actor: 'Amber Nash',
+                    // image: 'url',
+                    char: 'Pam Poovey',
+                },
+            ],
         },
         style: {
             color: '337799',
