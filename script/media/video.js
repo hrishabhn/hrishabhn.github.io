@@ -309,3 +309,88 @@ function tvSmallElement(a,b) {
 
     return movieCardElement
 }
+
+
+function tvHuluTray(a) {
+    var tray = hscrollElement()
+    tray.classList.add('page-width')
+
+    for (let b = 0; b < movieData[a].length; b++) {
+        tray.append(tvHuluElement(a,b))
+
+        if (b < movieData[a].length - 1) {
+            tray.append(spacerElement(5))
+        }
+    }
+
+    return tray
+}
+
+function tvHuluElement(a,b) {
+    const movie = movieData[a][b]
+
+    if ((movie.link !== null) && (movie.link !== undefined)) {
+        var htmlLink = `href="${processLink(movie.link)}"`
+    } else {
+        var htmlLink = ``
+    }
+
+    if (movie.style.color) {
+        var col = movie.style.color
+    } else {
+        var col = '000000'
+    }
+
+    if (movie.info.date) {
+        var dateHTML = `<div class="spacer-x" style="--size: 4px;"></div><p class="desc">${countdownCalculate(movie.info.date)[0]} ${countdownCalculate(movie.info.date)[1]}</p>`
+        // console.log(countdownCalculate(movie.info.date))
+    } else if (movie.info.weekday) {
+        var dateHTML = `<div class="spacer-x" style="--size: 4px;"></div><p class="desc">${movie.info.weekday}</p>`
+    } else {
+        var dateHTML = ``
+    }
+
+
+    var movieCardElement = document.createElement('div')
+    movieCardElement.classList = 'hulu-card'
+    movieCardElement.style.setProperty('--col',`#${movie.style.color}`)
+
+
+    // var movieCardHTML = `
+    // <div class="tv-poster" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
+    //     <div class="gradient" style="--col: #${col}00;"></div>
+    //     <div class="title ${data.style.titleSize}" style="--title: url(media-image/TV/title/${data.id}.${data.style.titleType});"></div>
+    //     <a class="play" ${htmlLink} target="_blank"></a>
+    //     <a class="more floating clickable" onclick="tvPopupShow(${a},${b})">
+    //         <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
+    //     </a>
+    // </div>`
+
+    var movieCardHTML = `
+    <div class="bg"></div>
+    <div class="poster-container">
+        <div class="poster" style="--poster: url(media-image/TV/mobile/${movie.id}.${movie.style.mobileType}); --ratio: ${movie.style.mobileSize};">
+            <div class="service" style="--service: url(media-image/service/${processService(movie)}.svg);"></div>
+            <div class="gradient" style="--col1: #${movie.style.color}00;--col2: #${movie.style.color};"></div>
+        </div>
+        </div>
+    <div class="title ${movie.style.titleSize}" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
+    <div class="spacer-x" style="--size: 8px;"></div>
+    <div class="desc">${processDesc(movie)}</div>
+    <div class="spacer-x" style="--size: 10px;"></div>
+    <div class="info">
+        <a class="play clickable" href="${processLink(movie.link)}" target="_blank">
+            <div class="icon"><svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></svg></div>
+            <div class="spacer-x" style="--size: 8px;"></div>
+            <p>WATCH</p>
+            <div class="grow"></div>
+        </a>
+        <a>
+
+        </a>
+    </div>`
+
+    movieCardElement.innerHTML = movieCardHTML
+
+    return movieCardElement
+}

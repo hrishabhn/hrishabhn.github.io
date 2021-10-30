@@ -290,7 +290,7 @@ const movieData0 = [
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'webp',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '390716',
@@ -361,7 +361,7 @@ const movieData0 = [
             titleType: 'png',
             titleSize: 'mid',
             mobileType: 'webp',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '110381',
@@ -503,7 +503,7 @@ const movieData0 = [
             titleType: 'png',
             titleSize: 'mid',
             mobileType: 'webp',
-            mobileSize: '2 / 3',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: "76885",

@@ -329,7 +329,7 @@ const pageData3 = {
         {
             type: 'tv-med',
             render: function() {
-                return tvMidTray(0)
+                return tvHuluTray(0)
             }
         },
         {
