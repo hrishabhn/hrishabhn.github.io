@@ -379,7 +379,7 @@ function tvHuluElement(a,b) {
     <div class="desc">${processDesc(movie)}</div>
     <div class="spacer-x" style="--size: 10px;"></div>
     <div class="info">
-        <a class="play clickable" href="${processLink(movie.link)}" target="_blank">
+        <a class="play clickable" ${htmlLink} target="_blank">
             <div class="icon" style="padding: 10px;"><svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></svg></div>
             <div class="spacer-x" style="--size: 8px;"></div>
             <p>WATCH</p>
