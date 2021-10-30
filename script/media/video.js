@@ -225,10 +225,14 @@ function tvMidElement(a,b) {
 }
 
 function processLocation(location) {
-    if (location == 'Coming Soon') {
-        return location
+    if (location) {
+        if (location == 'Coming Soon') {
+            return location
+        } else {
+            return `Watch on ${location}`
+        }
     } else {
-        return `Watch on ${location}`
+        return `Watch`
     }
 }
 
