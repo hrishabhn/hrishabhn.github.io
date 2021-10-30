@@ -93,6 +93,11 @@ const movieData0 = [
                 image: 'https://www.thewikifeed.com/wp-content/uploads/2021/06/elizabeth-lail-1.jpg',
                 char: 'Guinevere Beck',
             },
+            {
+                actor: 'Shay Mitchell',
+                image: 'https://media.self.com/photos/603d499db090d0bf156c1013/1:1/w_2332,h_2332,c_limit/1205249363',
+                char: 'Peach Salinger',
+            },
         ],
     },
     {
