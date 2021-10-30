@@ -8,6 +8,7 @@ function videoRefresh() {
 
 function tvBig(a,b) {
     const movie = movieData[a][b]
+    // console.log(movie.name)
 
     var card = document.getElementById('tv-big-card')
     var title = document.getElementById('tv-big-title')
@@ -15,13 +16,28 @@ function tvBig(a,b) {
     var link = document.getElementById('tv-big-play')
     var more = document.getElementById('tv-big-more')
 
+    // if (movie.style.mobileType) {
+    //     card.style.setProperty('--poster',`url('media-image/TV/mobile/${movie.id}.${movie.style.mobileType}')`)
+    //     card.style.setProperty('--ratio',movie.style.mobileSize)
+    // } else {
+
+    // }
+
+
+
+
+
+
+
     card.style.setProperty('--poster',`url('media-image/TV/background/${movie.id}.${movie.style.posterType}')`)
     title.style.setProperty('--title',`url('media-image/TV/title/${movie.id}.${movie.style.titleType}')`)
 
     if (movie.info.studio) {
         serv.style.setProperty('--service',`url('media-image/service/${movie.info.studio}.svg')`)
-    } else {
+    } else if (movie.info.service) {
         serv.style.setProperty('--service',`url('media-image/service/${movie.info.service}.svg')`)
+    } else { 
+        serv.style.removeProperty('--service')
     }
 
     if (movie.link) {
@@ -32,51 +48,51 @@ function tvBig(a,b) {
 
     more.onclick = function() { tvPopupShow(a,b) }
 
-    const tvTimeElement = document.getElementById('tv-big-tvtime')
-    const tvTimeSpacer = document.getElementById('tv-big-tvtime-spacer')
-    const reelgoodElement = document.getElementById('tv-big-reelgood')
-    const reelgoodSpacer = document.getElementById('tv-big-reelgood-spacer')
-    const imdbElement = document.getElementById('tv-big-imdb')
-    const imdbSpacer = document.getElementById('tv-big-imdb-spacer')
-    const redditElement = document.getElementById('tv-big-reddit')
-    const redditSpacer = document.getElementById('tv-big-reddit-spacer')
+    // const tvTimeElement = document.getElementById('tv-big-tvtime')
+    // const tvTimeSpacer = document.getElementById('tv-big-tvtime-spacer')
+    // const reelgoodElement = document.getElementById('tv-big-reelgood')
+    // const reelgoodSpacer = document.getElementById('tv-big-reelgood-spacer')
+    // const imdbElement = document.getElementById('tv-big-imdb')
+    // const imdbSpacer = document.getElementById('tv-big-imdb-spacer')
+    // const redditElement = document.getElementById('tv-big-reddit')
+    // const redditSpacer = document.getElementById('tv-big-reddit-spacer')
 
-    if (movie.apps.tvTimeID) {
-        tvTimeElement.href = `https://www.tvtime.com/en/show/${movie.apps.tvTimeID}`
-        tvTimeElement.classList.remove('hidden-always')
-        tvTimeSpacer.classList.remove('hidden-always')
-    } else {
-        tvTimeElement.removeAttribute('href')
-        tvTimeElement.classList.add('hidden-always')
-        tvTimeSpacer.classList.add('hidden-always')
-    }
-    if (movie.apps.reelgoodLink) {
-        reelgoodElement.href = movie.apps.reelgoodLink
-        reelgoodElement.classList.remove('hidden-always')
-        reelgoodSpacer.classList.remove('hidden-always')
-    } else {
-        reelgoodElement.removeAttribute('href')
-        reelgoodElement.classList.add('hidden-always')
-        reelgoodSpacer.classList.add('hidden-always')
-    }
-    if (movie.apps.imdbID) {
-        imdbElement.href = `https://www.imdb.com/title/${movie.apps.imdbID}`
-        imdbElement.classList.remove('hidden-always')
-        imdbSpacer.classList.remove('hidden-always')
-    } else {
-        imdbElement.removeAttribute('href')
-        imdbElement.classList.add('hidden-always')
-        imdbSpacer.classList.add('hidden-always')
-    }
-    if (movie.apps.subReddit) {
-        redditElement.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
-        redditElement.classList.remove('hidden-always')
-        redditSpacer.classList.remove('hidden-always')
-    } else {
-        redditElement.removeAttribute('href')
-        redditElement.classList.add('hidden-always')
-        redditSpacer.classList.add('hidden-always')
-    }
+    // if (movie.apps.tvTimeID) {
+    //     tvTimeElement.href = `https://www.tvtime.com/en/show/${movie.apps.tvTimeID}`
+    //     tvTimeElement.classList.remove('hidden-always')
+    //     tvTimeSpacer.classList.remove('hidden-always')
+    // } else {
+    //     tvTimeElement.removeAttribute('href')
+    //     tvTimeElement.classList.add('hidden-always')
+    //     tvTimeSpacer.classList.add('hidden-always')
+    // }
+    // if (movie.apps.reelgoodLink) {
+    //     reelgoodElement.href = movie.apps.reelgoodLink
+    //     reelgoodElement.classList.remove('hidden-always')
+    //     reelgoodSpacer.classList.remove('hidden-always')
+    // } else {
+    //     reelgoodElement.removeAttribute('href')
+    //     reelgoodElement.classList.add('hidden-always')
+    //     reelgoodSpacer.classList.add('hidden-always')
+    // }
+    // if (movie.apps.imdbID) {
+    //     imdbElement.href = `https://www.imdb.com/title/${movie.apps.imdbID}`
+    //     imdbElement.classList.remove('hidden-always')
+    //     imdbSpacer.classList.remove('hidden-always')
+    // } else {
+    //     imdbElement.removeAttribute('href')
+    //     imdbElement.classList.add('hidden-always')
+    //     imdbSpacer.classList.add('hidden-always')
+    // }
+    // if (movie.apps.subReddit) {
+    //     redditElement.href = `https://www.reddit.com/r/${movie.apps.subReddit}`
+    //     redditElement.classList.remove('hidden-always')
+    //     redditSpacer.classList.remove('hidden-always')
+    // } else {
+    //     redditElement.removeAttribute('href')
+    //     redditElement.classList.add('hidden-always')
+    //     redditSpacer.classList.add('hidden-always')
+    // }
 }
 
 function tvMidTray(a) {
