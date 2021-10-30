@@ -93,7 +93,63 @@ function tvBig(a,b) {
     //     redditElement.classList.add('hidden-always')
     //     redditSpacer.classList.add('hidden-always')
     // }
+
+    if (movie.style.mobileType) {
+        card.classList.add('hidden-mobile')
+        tvBigMob(a,b)
+        console.log('yamob')
+    } else {
+        card.classList.remove('hidden-mobile')
+        tvBigMob(null)
+        console.log('nomob')
+    }
+
 }
+
+function tvBigMob(a,b) {
+    const card = document.getElementById('tv-big-card-mob')
+
+    if (a != null) {
+
+        const movie = movieData[a][b]
+        // console.log(movie.name)
+    
+        const gradient = document.getElementById('tv-big-grad-mob')
+        const title = document.getElementById('tv-big-title-mob')
+        // const serv = document.getElementById('tv-big-service-mob')
+        const link = document.getElementById('tv-big-play-mob')
+        const more = document.getElementById('tv-big-more-mob')
+
+        card.classList.remove('hidden-always')
+    
+        card.style.setProperty('--poster',`url('media-image/TV/mobile/${movie.id}.${movie.style.mobileType}')`)
+        card.style.setProperty('--ratio',movie.style.mobileSize)
+        gradient.style.setProperty('--col1',`#${movie.style.color}00`)
+        gradient.style.setProperty('--col2',`#${movie.style.color}`)
+        title.style.setProperty('--title',`url('media-image/TV/title/${movie.id}.${movie.style.titleType}')`)
+    
+    
+        // if (movie.info.studio) {
+        //     serv.style.setProperty('--service',`url('media-image/service/${movie.info.studio}.svg')`)
+        // } else if (movie.info.service) {
+        //     serv.style.setProperty('--service',`url('media-image/service/${movie.info.service}.svg')`)
+        // } else { 
+        //     serv.style.removeProperty('--service')
+        // }
+    
+        if (movie.link) {
+            link.href = processLink(movie.link)
+        } else {
+            link.removeAttribute('href')
+        }
+    
+        more.onclick = function() { tvPopupShow(a,b) }
+    } else {
+        card.classList.add('hidden-always')
+        console.log('noooo')
+    }
+}
+
 
 function tvMidTray(a) {
     var tray = hscrollMediaElement()

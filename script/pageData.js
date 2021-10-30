@@ -263,11 +263,11 @@ const pageData3 = {
         menuMobile: false,
     },
     content: [
-        {
-            render: function() {
-                return mediaTitleElement('Watch Now')
-            },
-        },
+        // {
+        //     render: function() {
+        //         return mediaTitleElement('Watch Now')
+        //     },
+        // },
         {
             type: 'tv-big',
             render: function () {
@@ -283,6 +283,29 @@ const pageData3 = {
                 </div>
                 <div id="tv-big-title"></div>
                 <div id="tv-big-service"></div>`
+
+                return tvBigCard
+            }
+        },
+        {
+            type: 'tv-big-mob',
+            render: function () {
+                var tvBigCard = document.createElement('div')
+                tvBigCard.id = 'tv-big-card-mob'
+                tvBigCard.classList = 'card-shadow'
+                tvBigCard.innerHTML = `
+                <div id="tv-big-grad-mob"></div>
+                <div id="tv-big-title-mob"></div>
+                <div class="spacer-x" style="--size: 15px;"></div>
+                <div>
+                    <a id="tv-big-play-mob" class="clickable card-shadow" target="_blank">
+                        <div class="icon"><svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></svg></div>
+                        <div class="spacer-x" style="--size: 5px;"></div>
+                        <p>Watch</p>
+                    </a>
+                    <div class="spacer-x" style="--size: 15px;"></div>
+                    <a id="tv-big-more-mob" class="clickable card-shadow" onclick="tvPopupShow(1,0)">Details</a>
+                </div>`
 
                 return tvBigCard
             }
