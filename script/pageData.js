@@ -509,7 +509,7 @@ const pageData3 = {
         },
         {
             render: function() {
-                return mediaTitleElement('Rewatch')
+                return mediaTitleElement('Finished')
             },
         },
         {
@@ -531,13 +531,35 @@ const pageData3 = {
         },
         {
             render: function() {
-                return mediaTitleElement('Recently Watched Movies')
+                return mediaTitleElement('Classic Movies')
             },
         },
         {
             type: 'tv-med',
             render: function() {
                 return tvMidTray(9)
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            render: function() {
+                return hlineContentElement()
+            },
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            render: function() {
+                return mediaTitleElement('Recently Watched Movies')
+            },
+        },
+        {
+            type: 'tv-med',
+            render: function() {
+                return tvSmallTray(10)
             }
         },
         {
