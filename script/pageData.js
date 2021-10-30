@@ -292,7 +292,7 @@ const pageData3 = {
             render: function () {
                 var tvBigCard = document.createElement('div')
                 tvBigCard.id = 'tv-big-card-mob'
-                tvBigCard.classList = 'card-shadow'
+                tvBigCard.classList = 'only-mobile card-shadow'
                 tvBigCard.innerHTML = `
                 <div id="tv-big-grad-mob"></div>
                 <div id="tv-big-title-mob"></div>
