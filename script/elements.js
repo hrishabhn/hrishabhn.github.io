@@ -77,6 +77,11 @@ function hscrollMediaElement(child) {
     hscroll.classList = 'hscroll-media'
     return hscroll
 }
+function hscrollHuluElement(child) {
+    var hscroll = document.createElement('div')
+    hscroll.classList = 'hscroll-hulu'
+    return hscroll
+}
 
 // function contentContainerElement(child) {
 //     var container = document.createElement('div')

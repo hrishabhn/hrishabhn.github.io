@@ -312,8 +312,8 @@ function tvSmallElement(a,b) {
 
 
 function tvHuluTray(a) {
-    var tray = hscrollElement()
-    tray.classList.add('page-width')
+    var tray = hscrollHuluElement()
+    // tray.classList.add('page-width')
 
     for (let b = 0; b < movieData[a].length; b++) {
         tray.append(tvHuluElement(a,b))
@@ -322,6 +322,10 @@ function tvHuluTray(a) {
             tray.append(spacerElement(5))
         }
     }
+
+    tray.append(spacerElement(20))
+    tray.append(spacerElement(20,'hidden-mobile'))
+
 
     return tray
 }
