@@ -36,7 +36,7 @@ function tvBig(a,b) {
         serv.style.setProperty('--service',`url('media-image/service/${movie.info.studio}.svg')`)
     } else if (movie.info.service) {
         serv.style.setProperty('--service',`url('media-image/service/${movie.info.service}.svg')`)
-    } else { 
+    } else {
         serv.style.removeProperty('--service')
     }
 
@@ -113,7 +113,7 @@ function tvBigMob(a,b) {
 
         const movie = movieData[a][b]
         // console.log(movie.name)
-    
+
         const gradient = document.getElementById('tv-big-grad-mob')
         const title = document.getElementById('tv-big-title-mob')
         // const serv = document.getElementById('tv-big-service-mob')
@@ -121,28 +121,28 @@ function tvBigMob(a,b) {
         const more = document.getElementById('tv-big-more-mob')
 
         card.classList.remove('hidden-always')
-    
+
         card.style.setProperty('--poster',`url('media-image/TV/mobile/${movie.id}.${movie.style.mobileType}')`)
         card.style.setProperty('--ratio',movie.style.mobileSize)
         gradient.style.setProperty('--col1',`#${movie.style.color}00`)
         gradient.style.setProperty('--col2',`#${movie.style.color}`)
         title.style.setProperty('--title',`url('media-image/TV/title/${movie.id}.${movie.style.titleType}')`)
-    
-    
+
+
         // if (movie.info.studio) {
         //     serv.style.setProperty('--service',`url('media-image/service/${movie.info.studio}.svg')`)
         // } else if (movie.info.service) {
         //     serv.style.setProperty('--service',`url('media-image/service/${movie.info.service}.svg')`)
-        // } else { 
+        // } else {
         //     serv.style.removeProperty('--service')
         // }
-    
+
         if (movie.link) {
             link.href = processLink(movie.link)
         } else {
             link.removeAttribute('href')
         }
-    
+
         more.onclick = function() { tvPopupShow(a,b) }
     } else {
         card.classList.add('hidden-always')
@@ -321,7 +321,7 @@ function tvHuluTray(a) {
         tray.append(tvHuluElement(a,b))
 
         if (b < movieData[a].length - 1) {
-            tray.append(spacerElement(5))
+            tray.append(spacerElement(10))
         }
     }
 
