@@ -163,11 +163,6 @@
     overflow: hidden;
 
     scroll-snap-align: start;
-    transition: all 0.4s;
-}
-.hulu-card:active{
-    transform: scale(0.95);
-    transition: all 0.1s;
 }
 
 .hulu-card .bg{
@@ -422,7 +417,7 @@
 
 .media-title{
     justify-content: flex-start;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     /* opacity: 0.8; */
 
