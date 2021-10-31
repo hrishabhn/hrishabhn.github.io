@@ -770,6 +770,30 @@ const pageData6 = {
     },
     content: [
         {
+            type: 'flight',
+            render: function() {
+                return colContainerRender(
+                    flightCard(0),
+                    flightCard(1)
+                )
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            type: 'flight',
+            render: function() {
+                return colContainerRender(
+                    flightCard(2),
+                    flightCard(3)
+                )
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
             type: 'shortcut-tray',
             render: function() {
                 var widget1 = document.createElement('a')
