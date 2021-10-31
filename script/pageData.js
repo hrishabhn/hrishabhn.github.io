@@ -840,7 +840,7 @@ const pageData6 = {
                 <div class="grow"></div>
                 <p id="current-location" class="text">----</p>
                 <p class="subtext">Location</p>`
-                
+
 
                 return colContainerRender(
                     combineSubColElements(widget1,widget2),
