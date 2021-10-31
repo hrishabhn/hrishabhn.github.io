@@ -254,37 +254,27 @@
     width: 100%;
     background-color: var(--black-20);
     color: white;
-    padding: 10px;
+    fill: white;
+    /* padding: 10px; */
 
     font-size: 10px;
     font-weight: 600;
 }
 .hulu-card .info .play{
     flex-grow: 1;
-    color: white;
-}
-.hulu-card .info .icon{
-    height: 30px;
-    width: 30px;
-
-
-    background-color: white;
-    fill: var(--dark-layer-1);
-    border-radius: 100px;
-
+    padding: 12px;
     font-size: 10px;
     font-weight: 600;
 }
+.hulu-card .info .play .icon{
+    height: 12px;
+    width: 12px;
+}
 
 .hulu-card .info .more{
-    opacity: 0;
-    transition: all 0.05s;
+    height: 14px;
+    width: 14px;
 }
-.hulu-card:hover .info .more{
-    opacity: 1;
-    /* transition: all 0.4s; */
-}
-
 
 .tv-poster{
     width: 240px;
