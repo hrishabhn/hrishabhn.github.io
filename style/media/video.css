@@ -163,6 +163,11 @@
     overflow: hidden;
 
     scroll-snap-align: start;
+    transition: all 0.4s;
+}
+.hulu-card:active{
+    transform: scale(0.95);
+    transition: all 0.1s;
 }
 
 .hulu-card .bg{
