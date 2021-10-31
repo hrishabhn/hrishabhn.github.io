@@ -152,9 +152,8 @@ function tvBigMob(a,b) {
 
 
 function tvMidTray(a) {
-    var tray = hscrollMediaElement()
-    tray.append(spacerElement(15))
-    tray.append(spacerElement(5,'hidden-mobile'))
+    var tray = hscrollHuluElement()
+    tray.append(spacerElement(15,'only-mobile'))
 
     // console.log(movieData[a].length)
 
@@ -167,7 +166,7 @@ function tvMidTray(a) {
         }
     }
     tray.append(spacerElement(15))
-    tray.append(spacerElement(5,'hidden-mobile'))
+    tray.append(spacerElement(25,'hidden-mobile'))
 
     return tray
 }
@@ -247,22 +246,19 @@ function processService(movie) {
 }
 
 function tvSmallTray(a) {
-    var tray = hscrollMediaElement()
-    tray.append(spacerElement(15))
-    tray.append(spacerElement(5,'hidden-mobile'))
-
-    // console.log(movieData[a].length)
+    var tray = hscrollHuluElement()
+    tray.append(spacerElement(15,'only-mobile'))
 
     for (let b = 0; b < movieData[a].length; b++) {
         tray.append(tvSmallElement(a,b))
 
         if (b < movieData[a].length - 1) {
-            tray.append(spacerElement(15))
-            tray.append(spacerElement(5,'hidden-mobile'))
+            tray.append(spacerElement(4))
+            // tray.append(spacerElement(5,'hidden-mobile'))
         }
     }
     tray.append(spacerElement(15))
-    tray.append(spacerElement(5,'hidden-mobile'))
+    tray.append(spacerElement(25,'hidden-mobile'))
 
     return tray
 }
@@ -325,8 +321,8 @@ function tvHuluTray(a) {
         }
     }
 
-    tray.append(spacerElement(20))
-    tray.append(spacerElement(20,'hidden-mobile'))
+    tray.append(spacerElement(15))
+    tray.append(spacerElement(25,'hidden-mobile'))
 
 
     return tray
