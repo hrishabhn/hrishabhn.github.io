@@ -315,11 +315,13 @@ function tvHuluTray(a) {
     var tray = hscrollHuluElement()
     // tray.classList.add('page-width')
 
+    tray.append(spacerElement(20,'only-mobile'))
+
     for (let b = 0; b < movieData[a].length; b++) {
         tray.append(tvHuluElement(a,b))
 
         if (b < movieData[a].length - 1) {
-            tray.append(spacerElement(15))
+            tray.append(spacerElement(5))
         }
     }
 
