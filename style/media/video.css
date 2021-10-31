@@ -159,7 +159,7 @@
     /* width: calc((100% - ((5 - 1) * 5px)) / 5); */
     width: 240px;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
 
     scroll-snap-align: start;
@@ -467,7 +467,10 @@
     }
 
     .hscroll-hulu{
-        width: calc(100% - 15px);
-        margin-left: 15px;
+        width: calc(100% - 0px);
+        margin-left: 0;
+    }
+    .hulu-card{
+        scroll-margin-left: 20px;
     }
 }
