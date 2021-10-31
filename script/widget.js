@@ -37,16 +37,8 @@ function widgetPopulate() {
 
 const countdownData = [
     {
-        name: 'NUCL Exam 2',
-        date: 'Oct 27, 2021 20:00:00',
-    },
-    {
-        name: 'Halloween',
-        date: 'Oct 31, 2021',
-    },
-    {
         name: 'ECE Exam 2',
-        date: 'Nov 1, 2021',
+        date: 'Nov 1, 2021 20:00:00',
     },
     {
         name: 'IE 386 Exam 2',
@@ -65,8 +57,16 @@ const countdownData = [
     //     date: 'Nov 24, 2021',
     // },
     {
-        name: 'Christmas',
+        name: 'Winter Break',
         date: 'Dec 18, 2021',
+    },
+    {
+        name: 'Christmas',
+        date: 'Dec 25, 2021',
+    },
+    {
+        name: 'New Year',
+        date: 'Jan 1, 2022',
     },
     {
         name: 'Madrid',
@@ -116,6 +116,14 @@ const countdownData = [
     // {
     //     name: 'SPAN Exam 2',
     //     date: 'Oct 25, 2021 16:30:00',
+    // },
+    // {
+    //     name: 'NUCL Exam 2',
+    //     date: 'Oct 27, 2021 20:00:00',
+    // },
+    // {
+    //     name: 'Halloween',
+    //     date: 'Oct 31, 2021',
     // },
 ]
 

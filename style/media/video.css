@@ -225,8 +225,8 @@
     background-image: var(--title);
 }
 .hulu-card .title.tall{
-    height: 100px;
-    width: calc(100% - 40px);
+    height: 80px;
+    width: 50%;
 }
 .hulu-card .title.mid{
     height: 80px;
@@ -236,6 +236,7 @@
 .hulu-card .title.wide{
     height: 80px;
     width: 80%;
+    max-width: calc(100% - 30px);
 }
 
 .hulu-card .info{

@@ -163,10 +163,47 @@ const movieData0 = [
             },
             {
                 actor: 'Richard Lewis',
-                image: 'https://preview.redd.it/kii4ah8ff8d51.jpg',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTA5NDIzMzk0ODJeQTJeQWpwZ15BbWU2MDA3OTI0Mw@@._V1_UX178_CR0,0,178,264_AL_.jpg',
                 char: 'Richard Lewis',
             },
         ],
+    },
+    {
+        name: 'Cowboy Bebop',
+        id: 'cowboy',
+        link: {
+            netflix: '80001312'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            desc: {
+                seasons: 1,
+                yearStart: 1998,
+                yearEnd: 1999,
+                genre: [
+                    'action',
+                    'animation',
+                    'sci-fi',
+                ],
+            },
+            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '76885',
+            reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-1998',
+            imdbID: 'tt0213338',
+            // subReddit: 'subreddit',
+        },
     },
     {
         name: 'Solar Opposites',
@@ -402,115 +439,6 @@ const movieData0 = [
             },
         ],
     },
-    {
-        name: 'Memories of the Alhambra',
-        id: 'memories',
-        link: {
-            netflix: '81004280'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2018,
-                yearEnd: 2019,
-                genre: [
-                    'romance',
-                    'sci-fi',
-                ],
-            },
-            summary: "A frantic young man is running scared in Barcelona. CEO Yoo Jin-woo heads to Granada on a quest after getting a strange call while on business in Spain.",
-        },
-        style: {
-            color: 'a6886c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '1000 / 973',
-        },
-        apps: {
-            tvTimeID: '348488',
-            reelgoodLink: 'https://reelgood.com/show/memories-of-the-alhambra-2018',
-            imdbID: 'tt8236556',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Midnight Mass',
-        id: 'midnight',
-        link: {
-            netflix: '81083626'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'horror',
-                ],
-            },
-            summary: "The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.",
-        },
-        style: {
-            color: '3c2e2c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '367226',
-            reelgoodLink: 'https://reelgood.com/show/midnight-mass',
-            imdbID: 'tt10574558',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: "Cowboy Bebop",
-        id: "cowboy",
-        link: "https://www.hulu.com/series/cowboy-bebop-af54be93-ee11-475c-b786-3543a9a7d4ba",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            desc: {
-                seasons: 1,
-                yearStart: 1998,
-                yearEnd: 1999,
-                genre: [
-                    'animation',
-                    'action & adventure',
-                ],
-            },
-            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
-        },
-        style: {
-            color: '994d33',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: "76885",
-            reelgoodLink: "https://reelgood.com/show/cowboy-bebop-1998",
-            imdbID: "tt0213338",
-        },
-    },
 ]
 const movieData1 = [
     {
@@ -651,6 +579,82 @@ const movieData1 = [
     },
 ]
 const movieData2 = [
+    {
+        name: 'Memories of the Alhambra',
+        id: 'memories',
+        link: {
+            netflix: '81004280'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2018,
+                yearEnd: 2019,
+                genre: [
+                    'romance',
+                    'sci-fi',
+                ],
+            },
+            summary: "A frantic young man is running scared in Barcelona. CEO Yoo Jin-woo heads to Granada on a quest after getting a strange call while on business in Spain.",
+        },
+        style: {
+            color: 'a6886c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '1000 / 973',
+        },
+        apps: {
+            tvTimeID: '348488',
+            reelgoodLink: 'https://reelgood.com/show/memories-of-the-alhambra-2018',
+            imdbID: 'tt8236556',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Midnight Mass',
+        id: 'midnight',
+        link: {
+            netflix: '81083626'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'horror',
+                ],
+            },
+            summary: "The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.",
+        },
+        style: {
+            color: '3c2e2c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '367226',
+            reelgoodLink: 'https://reelgood.com/show/midnight-mass',
+            imdbID: 'tt10574558',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Family Guy',
         id: 'family',
@@ -975,30 +979,6 @@ const movieData2 = [
             imdbID: "tt8531222",
         },
     },
-    {
-        name: "Love Death Robots",
-        id: "ldr",
-        link: 'https://www.netflix.com/title/80174608',
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: "Netflix",
-            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
-            summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
-        },
-        style: {
-            color: '200f17',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: "357888",
-            reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
-            imdbID: "tt9561862",
-            subReddit: "LoveDeathAndRobots",
-        },
-    },
 ]
 const movieData3 = [
     {
@@ -1027,36 +1007,6 @@ const movieData3 = [
             reelgoodLink: 'https://reelgood.com/movie/knives-out-2019',
             imdbID: 'tt8946378',
             // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Jurassic Park',
-        id: 'jurassic1',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GYJlJDwG96Q_DwgEAAAA1:type:feature',
-        info: {
-            service: 'hbo',
-            studio: 'universal',
-            location: 'HBO Max',
-            desc: {
-                year: 1993,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
-            summary: "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
-        },
-        style: {
-            color: '3c2d2a',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tall',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/jurassic-park-1993',
-            imdbID: 'tt0107290',
         },
     },
     {
@@ -2445,6 +2395,30 @@ const movieData7 = [
         },
     },
     {
+        name: "Love Death Robots",
+        id: "ldr",
+        link: 'https://www.netflix.com/title/80174608',
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: "Netflix",
+            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
+            summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
+        },
+        style: {
+            color: '200f17',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: "357888",
+            reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
+            imdbID: "tt9561862",
+            subReddit: "LoveDeathAndRobots",
+        },
+    },
+    {
         name: 'Manifest',
         id: 'manifest',
         // link: 'watchlink',
@@ -3090,6 +3064,36 @@ const movieData8 = [
     },
 ]
 const movieData9 = [
+    {
+        name: 'Jurassic Park',
+        id: 'jurassic1',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GYJlJDwG96Q_DwgEAAAA1:type:feature',
+        info: {
+            service: 'hbo',
+            studio: 'universal',
+            location: 'HBO Max',
+            desc: {
+                year: 1993,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+        },
+        style: {
+            color: '3c2d2a',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/jurassic-park-1993',
+            imdbID: 'tt0107290',
+        },
+    },
     {
         name: 'Raiders of the Lost Ark',
         id: 'indiana1',
