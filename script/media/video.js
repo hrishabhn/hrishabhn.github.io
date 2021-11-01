@@ -317,7 +317,7 @@ function tvHuluTray(a) {
         tray.append(tvHuluElement(a,b))
 
         if (b < movieData[a].length - 1) {
-            tray.append(spacerElement(10))
+            tray.append(spacerElement(5))
         }
     }
 

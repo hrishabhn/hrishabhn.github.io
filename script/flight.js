@@ -112,7 +112,7 @@ const flightData = [
         seat: '-',
         duration: '6h 21m',
         date: 'Tue, 30 Nov 2021',
-        airline: airlineData.spirit,
+        airline: airlineData.cathay,
     },
 ]
 
