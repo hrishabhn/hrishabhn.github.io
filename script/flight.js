@@ -191,8 +191,10 @@ function flightCard(n) {
         <div class="left">
             <p class="flight-no">${flight.number}</p>
         </div>
-        <div class="airline-logo" style="--darkLogo: #${flight.airline.logo.darkCol}; --lightLogo: #${flight.airline.logo.lightCol};">
-            ${flight.airline.logo.svg}
+        <div class="grow">
+            <div class="airline-logo" style="--darkLogo: #${flight.airline.logo.darkCol}; --lightLogo: #${flight.airline.logo.lightCol};">
+                ${flight.airline.logo.svg}
+            </div>
         </div>
         <div class="right">
             <div class="icon image-border" style="fill: #${flight.airline.iconfg}; padding: ${flight.airline.iconPad};">${flight.airline.icon}</div>
