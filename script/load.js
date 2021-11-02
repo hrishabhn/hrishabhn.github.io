@@ -52,3 +52,14 @@ const baseElements = [
     }
 ]
 
+function checkPass() {
+    if (!getCookie('verified')) {
+        var pass = prompt('Enter password:')
+
+        while (pass != 'pass') {
+            pass = prompt('Wrong password, try again:')
+        }
+        
+        setCookie('verified',true,(3 / 86400))
+    }
+}
