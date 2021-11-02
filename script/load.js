@@ -59,7 +59,7 @@ function checkPass() {
         while (pass != 'pass') {
             pass = prompt('Wrong password, try again:')
         }
-        
-        setCookie('verified',true,(3 / 86400))
+
+        setCookie('verified',true,14)
     }
 }
