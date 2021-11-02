@@ -549,11 +549,11 @@ const movieData1 = [
     {
         name: 'Succession',
         id: 'succession',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GWukCJAq-nIuHwwEAAAB4:type:series',
+        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
         info: {
             service: 'hbo',
             studio: 'hbo',
-            location: 'HBO Max',
+            location: 'Hulu',
             // date: '',
             weekday: 'Sundays',
             desc: {
