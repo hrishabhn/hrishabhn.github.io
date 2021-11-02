@@ -53,6 +53,8 @@ const baseElements = [
 ]
 
 function checkPass() {
+    console.log(getCookie('verified'))
+
     if (!getCookie('verified')) {
         var pass = prompt('Enter password:')
 
@@ -61,5 +63,6 @@ function checkPass() {
         }
 
         setCookie('verified',true,14)
+        console.log(getCookie('verified'))
     }
 }
