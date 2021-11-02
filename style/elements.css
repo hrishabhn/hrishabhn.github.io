@@ -15,6 +15,14 @@
     justify-content: center;
 }
 
+.vline{
+    flex-shrink: 0;
+    width: 1px;
+    height: 100%;
+    border-radius: 5px;
+
+    background-color: var(--white-10);
+}
 .hline{
     flex-shrink: 0;
     height: 1px;
@@ -156,7 +164,7 @@
 }
 
 .card-shadow{
-    /* box-shadow: 0 8px 24px var(--black-10); */
+    box-shadow: 0 8px 24px var(--black-10);
 }
 
 .floating{
@@ -165,7 +173,7 @@
 }
 
 @media screen and (prefers-color-scheme: light) {
-    .hline{
+    .hline, .vline{
         background-color: var(--black-10);
     }
     .hline-content{

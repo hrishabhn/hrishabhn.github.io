@@ -776,30 +776,30 @@ const pageData6 = {
         secure: true,
     },
     content: [
-        {
-            type: 'flight',
-            render: function() {
-                return colContainerRender(
-                    flightCard(0),
-                    flightCard(1)
-                )
-            }
-        },
-        {
-            type: 'spacer-content',
-        },
-        {
-            type: 'flight',
-            render: function() {
-                return colContainerRender(
-                    flightCard(2),
-                    flightCard(3)
-                )
-            }
-        },
-        {
-            type: 'spacer-content',
-        },
+        // {
+        //     type: 'flight',
+        //     render: function() {
+        //         return colContainerRender(
+        //             flightCard(0),
+        //             flightCard(1)
+        //         )
+        //     }
+        // },
+        // {
+        //     type: 'spacer-content',
+        // },
+        // {
+        //     type: 'flight',
+        //     render: function() {
+        //         return colContainerRender(
+        //             flightCard(2),
+        //             flightCard(3)
+        //         )
+        //     }
+        // },
+        // {
+        //     type: 'spacer-content',
+        // },
         {
             type: 'shortcut-tray',
             render: function() {
@@ -854,6 +854,21 @@ const pageData6 = {
                     combineSubColElements(widget3,widget4)
                 )
             }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            type: 'flight',
+            render: function() {
+                return colContainerRender(
+                    tripCard(0),
+                    tripCard(1),
+                )
+            }
+        },
+        {
+            type: 'spacer-content',
         },
     ],
     render: function() { renderPage(this) },
@@ -923,7 +938,7 @@ function openPage(n) {
     if (pageData[n].info.secure) {
         checkPass()
     }
-    
+
     document.getElementById(`page-${oldPage}`).classList.add('hidden')
     document.getElementById(`menu-item-${oldPage}`).classList.remove('selected')
 
