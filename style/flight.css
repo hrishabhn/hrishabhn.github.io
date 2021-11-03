@@ -129,6 +129,10 @@
     overflow: hidden;
     height: 200px;
     width: 100%;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #222;
 }
 .trip-shortcut .bg{
     position: absolute;
@@ -149,7 +153,7 @@
     width: 100%;
     padding: 15px;
 
-    background-image: linear-gradient(#00000000,#000000cc);
+    background-image: linear-gradient(#00000000,#00000099);
     color: white;
 }
 .trip-shortcut .gradient .title{
@@ -385,6 +389,9 @@
 
 
 @media screen and (prefers-color-scheme: light) {
+    .trip-shortcut{
+        border-color: #ddd;
+    }
     .trip-container .highlight{
         background-color: var(--black-10);
     }
