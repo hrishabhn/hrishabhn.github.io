@@ -1,7 +1,6 @@
 function bookTrayElement(a) {
-    var tray = hscrollMediaElement()
-    tray.append(spacerElement(15))
-    tray.append(spacerElement(5,'hidden-mobile'))
+    var tray = hscrollHuluElement()
+    tray.append(spacerElement(15,'only-mobile'))
 
     for (let b = 0; b < bookData[a].length; b++) {
         var bookCurrentData = bookData[a][b]
@@ -18,21 +17,19 @@ function bookTrayElement(a) {
         
         tray.append(book)
         if (b < bookData[a].length - 1) {
-            tray.append(spacerElement(15))
-            tray.append(spacerElement(5,'hidden-mobile'))
+            tray.append(spacerElement(10))
         }
     }
 
     tray.append(spacerElement(15))
-    tray.append(spacerElement(5,'hidden-mobile'))
+    tray.append(spacerElement(25,'hidden-mobile'))
 
     return tray
 }
 
 function podTrayElement(a) {
-    var tray = hscrollMediaElement()
-    tray.append(spacerElement(15))
-    tray.append(spacerElement(5,'hidden-mobile'))
+    var tray = hscrollHuluElement()
+    tray.append(spacerElement(15,'only-mobile'))
 
     for (let b = 0; b < podData[a].length; b++) {
         var podCurrentData = podData[a][b]
@@ -49,13 +46,12 @@ function podTrayElement(a) {
         
         tray.append(pod)
         if (b < podData[a].length - 1) {
-            tray.append(spacerElement(15))
-            tray.append(spacerElement(5,'hidden-mobile'))
+            tray.append(spacerElement(10))
         }
     }
 
     tray.append(spacerElement(15))
-    tray.append(spacerElement(5,'hidden-mobile'))
+    tray.append(spacerElement(25,'hidden-mobile'))
 
     return tray
 }
