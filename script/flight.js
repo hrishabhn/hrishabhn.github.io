@@ -880,7 +880,7 @@ function tripShortcut(n) {
     const trip = tripData[n]
 
     var shortcut = document.createElement('a')
-    shortcut.classList = 'trip-shortcut layer-1 card-shadow clickable image-border'
+    shortcut.classList = 'trip-shortcut layer-1 card-shadow clickable'
     shortcut.onclick = function() { showModal(null,tripCard(n)) }
 
     shortcut.innerHTML = `
