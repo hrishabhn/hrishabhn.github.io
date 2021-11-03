@@ -23,7 +23,6 @@ const bookData0 = [
     {
         name: 'Faster Than Normal',
         id: 'faster',
-        // link: 'audible://view?section=discover&asin=B0763VPQF6',
         link: {
             audible: 'B0763VPQF6',
         },
