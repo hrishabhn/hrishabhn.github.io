@@ -45,49 +45,7 @@
 //     //     },
 //     // ],
 // },
-const movieData0 = [
-{
-    name: 'Avatar',
-    id: 'avatar',
-    // link: {
-    //     netflix: '80197526'
-    // },
-    info: {
-        service: 'disney',
-        // studio: 'studio',
-        location: 'Disney+',
-        // date: '',
-        // weekday: '',
-        desc: {
-            year: 2009,
-            genre: [
-                'adventure',
-                'sci-fi',
-            ],
-        },
-        summary: "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
-    },
-    style: {
-        color: '106888',
-        posterType: 'jpg',
-        titleType: 'png',
-        titleSize: 'mid',
-        mobileType: 'jpg',
-        mobileSize: '7 / 10',
-    },
-    apps: {
-        reelgoodLink: 'https://reelgood.com/movie/avatar-2009',
-        imdbID: 'tt0499549',
-        // subReddit: 'subreddit',
-    },
-    // cast: [
-    //     {
-    //         actor: 'name',
-    //         image: 'url',
-    //         char: 'name',
-    //     },
-    // ],
-},
+    const movieData0 = [
     {
         name: 'You',
         id: 'you',
@@ -3331,7 +3289,48 @@ const movieData9 = [
             // subReddit: 'subreddit',
         },
     },
-
+    {
+        name: 'Avatar',
+        id: 'avatar',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'disney',
+            // studio: 'studio',
+            location: 'Disney+',
+            // date: '',
+            // weekday: '',
+            desc: {
+                year: 2009,
+                genre: [
+                    'adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+        },
+        style: {
+            color: '106888',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/avatar-2009',
+            imdbID: 'tt0499549',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
 ]
 const movieData10 = [
     {
