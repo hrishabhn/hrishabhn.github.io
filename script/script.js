@@ -1,5 +1,10 @@
 function dateNow() {
-    var date = new Date()
+    return processDate(new Date())
+}
+
+function processDate(dateString) {
+    console.log(dateString)
+    var date = new Date(dateString)
     // console.log(date)
 
     const dateObject = {
