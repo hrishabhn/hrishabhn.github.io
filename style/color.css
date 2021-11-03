@@ -1,24 +1,12 @@
-.layer0{
-    background-color: var(--dark-layer-0);
-}
-.layer1{
-    background-color: var(--dark-layer-1);
-}
-.layer2{
-    background-color: var(--dark-layer-2);
-}
-.layer3{
-    background-color: var(--dark-layer-3);
-}
-
 .layer-0{
-    background-color: var(--dark-layer-1);
+    /* background-color: var(--dark-layer-1); */
+    background-color: #121212;
 }
 .layer-1{
-    background-color: var(--dark-layer-2);
+    background-color: var(--dark-layer-1);
 }
 .layer-2{
-    background-color: var(--dark-layer-3);
+    background-color: var(--dark-layer-2);
 }
 .layer-fg{
     background-color: var(--light-layer-0);
@@ -33,21 +21,6 @@ a.layer-fg{
     fill: var(--dark-layer-1);
 }
 @media screen and (prefers-color-scheme: light) {
-    .layer0{
-        background-color: var(--light-layer-0);
-    }
-    .layer1{
-        background-color: var(--light-layer-1);
-    }
-    .layer2{
-        background-color: var(--light-layer-2);
-    }
-    .layer3{
-        background-color: var(--light-layer-3);
-    }
-
-
-
     .layer-0{
         background-color: var(--light-layer-1);
     }
@@ -80,16 +53,13 @@ a.layer-fg{
         background-color: var(--dark-layer-1);
     }
 
-
     @media screen and (prefers-color-scheme: light) {
-
         .layer-0{
             background-color: var(--light-layer-1);
         }
         .layer-1{
             background-color: var(--light-layer-0);
         }
-
     }
 }
 
