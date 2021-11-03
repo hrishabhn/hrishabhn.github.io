@@ -11,10 +11,12 @@
 #modal-container.hide{
     opacity: 0;
     pointer-events: none;
+    transition: all 0s;
 }
 #modal-container.show{
     opacity: 1;
     pointer-events: initial;
+    transition: all 0.25s;
 }
 
 .modal-close{
@@ -25,9 +27,9 @@
     width: 100%;
 }
 
-/* #modal-container.hide .modal-card{
+#modal-container.hide .modal-card{
     transform: scale(0.98);
-} */
+}
 
 #modal-scroll{
     flex-direction: column;
