@@ -904,7 +904,7 @@ function tripCard(n) {
     var tripTitle = document.createElement('div')
     tripTitle.classList = `main-header ${trip.color}`
     tripTitle.innerHTML = `
-    <a class="vstack header-textbox" onclick="hideModal()">
+    <a class="vstack header-textbox clickable-text" onclick="hideModal()">
         <p class="title">${trip.name}</p>
         <div class="spacer-x" style="--size: 2px;"></div>
         <p class="subtitle">${trip.subhead} &#149 ${countdownCalculate(trip.start)[0]} ${countdownCalculate(trip.start)[1]}</p>
@@ -976,7 +976,6 @@ function flightCard(flight) {
             </div>
             <div class="grow"></div>
         </div>
-        <div class="grow"></div>
     </div>
     ${airportCard(flight.arr)}`
 
@@ -1026,7 +1025,6 @@ function busCard(bus) {
             </div>
             <div class="grow"></div>
         </div>
-        <div class="grow"></div>
     </div>
     ${busportCard(bus.arr)}`
 

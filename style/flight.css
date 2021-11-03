@@ -188,7 +188,7 @@
     flex-direction: column;
     width: 100%;
     border-radius: 10px;
-    min-width: 300px;
+    min-width: max(20vw,500px);
     overflow: hidden;
 }
 .trip-container .highlight{
@@ -205,13 +205,13 @@
     color: white;
 }
 .trip-container .main-header .header-textbox .title{
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 700;
 }
 .trip-container .main-header .header-textbox .subtitle{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 .trip-container .main-header .notion{
     height: 30px;
@@ -233,19 +233,19 @@
     width: 100%;
     justify-content: flex-start;
     
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
 }
 .trip-container .section .subheader .subtitle{
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 500;
     opacity: 0.5;
 }
 
 .trip-container .section .time{
-    min-width: 50px;
+    min-width: 55px;
     justify-content: flex-end;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
 }
 .trip-container .section .time.duration{
@@ -267,11 +267,11 @@
     align-items: flex-start;
 }
 .trip-container .section .flight-container .airport .info .name{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
 }
 .trip-container .section .flight-container .airport .info .detail{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     opacity: 0.4;
 }
@@ -283,17 +283,18 @@
 }
 .trip-container .section .flight-container .flight .main{
     min-width: 200px;
+    flex-grow: 1;
     padding: 10px;
     border-radius: 8px;
     margin: 10px 0;
 }
 .trip-container .section .flight-container .flight .main .logo{
-    height: 25px;
-    width: 25px;
+    height: 32px;
+    width: 32px;
     fill: var(--darkCol);
 }
 .trip-container .section .flight-container .flight .main .info{
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 400;
 }
 .trip-container .section .flight-container .flight .main .info p{
@@ -319,18 +320,18 @@
     border: solid 1px var(--white-10);
 }
 .trip-container .section .transit .main .code{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
 }
 .trip-container .section .transit .main .info{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
 }
 
 .trip-container .section .flight-container .timeline{
     position: absolute;
     top: 0;
-    left: 69px;
+    left: 74px;
     height: calc(100% - 30px);
     margin: 15px 0;
     width: 2px;
@@ -338,7 +339,7 @@
 .trip-container .section .transit .timeline{
     position: absolute;
     top: 0;
-    left: 69px;
+    left: 74px;
     height: calc(100% + 30px);
     margin: -15px 0;
     width: 2px;
@@ -400,12 +401,10 @@
 
 
 @media(max-width: 450px){
-
-
     .trip-container{
         min-width: 100vw;
         min-height: 100vh;
-        padding-top: 155px;
+        padding-top: 130px;
         justify-content: flex-start;
     }
     .trip-container .highlight{
@@ -416,12 +415,8 @@
         top: 0;
         left: 0;
         padding: 15px 20px;
-        padding-top: 90px;
+        padding-top: 65px;
         z-index: 2;
-    }
-    .trip-container .main-header .header-textbox .title{
-        font-size: 30px;
-        font-weight: 700;
     }
 
     @media screen and (prefers-color-scheme: light) {
