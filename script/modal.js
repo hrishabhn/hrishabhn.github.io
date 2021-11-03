@@ -85,14 +85,18 @@ function removeAllChildNodes(parent) {
     }
 }
 
-function openModal(content,n) {
+var currentModal = -1
+
+function openModal(content) {
+    currentModal++
+
     var modal = document.createElement('div')
-    modal.id = `modal-${n}`
+    modal.id = `modal-${currentModal}`
     modal.classList = 'modal preload'
 
     var close = document.createElement('a')
     close.classList = 'close'
-    close.onclick = function() { closeModal(n) }
+    close.onclick = function() { closeModal(currentModal) }
     modal.append(close)
 
     var scroll = document.createElement('div')
@@ -115,7 +119,9 @@ function openModal(content,n) {
     var container = document.getElementById('modal-tray')
     container.append(modal)
 
-    setTimeout(() => { removePreloadModal(n) }, 0);
+    setTimeout(() => { 
+        removePreloadModal(currentModal) 
+    }, 0);
 }
 
 function removePreloadModal(n) {
@@ -123,7 +129,8 @@ function removePreloadModal(n) {
     modal.classList.remove('preload')
 }
 
-function closeModal(n) {
-    var modal = document.getElementById(`modal-${n}`)
+function closeModal() {
+    var modal = document.getElementById(`modal-${currentModal}`)
     modal.remove()
+    currentModal--
 }
