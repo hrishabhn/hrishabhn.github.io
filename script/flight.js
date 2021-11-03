@@ -377,6 +377,39 @@
 // }
 
 
+const aircraftData = {
+    a320: {
+        manufacturer: 'Airbus',
+        name: 'A320',
+        id: 'a320',
+        imageType: 'png'
+    },
+    a320neo: {
+        manufacturer: 'Airbus',
+        name: 'A320neo',
+        id: 'a320neo',
+        imageType: 'png'
+    },
+    a321: {
+        manufacturer: 'Airbus',
+        name: 'A321',
+        id: 'a321',
+        imageType: 'jpg'
+    },
+    a321neo: {
+        manufacturer: 'Airbus',
+        name: 'A321neo',
+        id: 'a321neo',
+        imageType: 'jpg'
+    },
+    e175: {
+        manufacturer: 'Embraer',
+        name: 'E175',
+        id: 'e175',
+        imageType: 'png'
+    },
+}
+
 const airlineData = {
     frontier: {
         name: 'Frontier Airlines',
@@ -551,7 +584,7 @@ const flightData = [
             gate: '-',
         },
         seat: '-',
-        aircraft: 'A321',
+        aircraft: aircraftData.a321,
         duration: '4h 14m',
         date: 'Sat, 20 Nov 2021',
         airline: airlineData.frontier,
@@ -573,7 +606,7 @@ const flightData = [
             gate: '-',
         },
         seat: '-',
-        aircraft: 'A320',
+        aircraft: aircraftData.a320,
         duration: '1h 13m',
         date: 'Tue, 30 Nov 2021',
         airline: airlineData.frontier,
@@ -595,7 +628,7 @@ const flightData = [
             gate: '-',
         },
         seat: '-',
-        aircraft: 'A320',
+        aircraft: aircraftData.a320,
         duration: '1h 18m',
         date: 'Tue, 30 Nov 2021',
         airline: airlineData.spirit,
@@ -617,7 +650,7 @@ const flightData = [
             gate: '-',
         },
         seat: '-',
-        aircraft: 'A320',
+        aircraft: aircraftData.a320,
         duration: '3h 21m',
         date: 'Tue, 30 Nov 2021',
         airline: airlineData.spirit,
@@ -639,7 +672,7 @@ const flightData = [
             gate: '-',
         },
         seat: '-',
-        aircraft: 'E175',
+        aircraft: aircraftData.e175,
         duration: '2h 4m',
         date: 'Sun, 19 Nov 2021',
         airline: airlineData.spirit,
@@ -958,6 +991,19 @@ function tripCard(n) {
 function flightCard(flight) {
     // console.log(flight)
 
+    var main = document.createElement('a')
+    main.classList = 'main highlight clickable'
+    main.onclick = function() { openModal(aircraftCard(flight.aircraft)) }
+
+    main.innerHTML = `
+    <div class="logo" style="--darkCol: #${flight.airline.logo.darkCol}; --lightCol: #${flight.airline.logo.lightCol};">${flight.airline.icon.svg}</div>
+    <div class="spacer-x" style="--size: 8px;"></div>
+    <div class="info vstack">
+        <p class="line1">${flight.number}</p>
+        <p class="line2">${flight.aircraft.manufacturer} ${flight.aircraft.name}</p>
+    </div>
+    <div class="grow"></div>`
+
     var card = document.createElement('div')
     card.classList = 'flight-container'
 
@@ -967,17 +1013,10 @@ function flightCard(flight) {
     <div class="flight">
         <p class="time duration">${flight.duration}</p>
         <div class="lefticon blue" style="transform: rotate(90deg);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>
-        <a class="main highlight clickable" onclick="openModal(tripCard(1),2)">
-            <div class="logo" style="--darkCol: #${flight.airline.logo.darkCol}; --lightCol: #${flight.airline.logo.lightCol};">${flight.airline.icon.svg}</div>
-            <div class="spacer-x" style="--size: 8px;"></div>
-            <div class="info vstack">
-                <p class="line1">${flight.number}</p>
-                <p class="line2">${flight.aircraft}</p>
-            </div>
-            <div class="grow"></div>
-        </a>
     </div>
     ${airportCard(flight.arr)}`
+
+    card.childNodes[5].append(main)
 
     return card
 }
@@ -1069,6 +1108,18 @@ function transitCard(transit) {
         <div class="grow"></div>
     </div>
     <div class="grow"></div>`
+
+    return card
+}
+
+function aircraftCard(aircraft) {
+    console.log(aircraft)
+
+    var card = document.createElement('div')
+    card.classList = 'aircraft-card layer-1 card-shadow'
+    card.innerHTML = `
+    <div class="title">${aircraft.manufacturer} ${aircraft.name}</div>
+    <div class="image" style="background-image: url('images/aircraft/${aircraft.id}.${aircraft.imageType}');"></div>`
 
     return card
 }

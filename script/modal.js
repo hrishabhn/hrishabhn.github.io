@@ -96,7 +96,7 @@ function openModal(content) {
 
     var close = document.createElement('a')
     close.classList = 'close'
-    close.onclick = function() { closeModal(currentModal) }
+    close.onclick = function() { closeModal() }
     modal.append(close)
 
     var scroll = document.createElement('div')

@@ -151,7 +151,7 @@
     align-items: flex-start;
     height: 100%;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
 
     background-image: linear-gradient(#00000000,#00000099);
     color: white;
@@ -387,6 +387,32 @@
     border-radius: inherit;
 }
 
+
+
+
+
+
+
+.aircraft-card{
+    flex-direction: column;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+}
+.aircraft-card .title{
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 500;
+}
+.aircraft-card .image{
+    width: 100%;
+    aspect-ratio: 5 / 2;
+
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 @media screen and (prefers-color-scheme: light) {
     .trip-shortcut{
