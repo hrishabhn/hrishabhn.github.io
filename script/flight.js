@@ -811,7 +811,7 @@ const tripData = [
         start: 'Dec 23, 2021',
         sections: [
             {
-                date: 'Sun, 23 Dec 2021',
+                date: '23 Dec 2021',
                 name: 'New York - Boston',
                 duration: 'To book',
                 direction: 'One-Way',
@@ -829,7 +829,7 @@ const tripData = [
         start: 'Jan 2, 2022',
         sections: [
             {
-                date: 'Sun, 2 Dec 2022',
+                date: '2 Dec 2022',
                 name: 'Boston - Toronto',
                 duration: 'To book',
                 direction: 'One-Way',
@@ -847,7 +847,7 @@ const tripData = [
         start: 'Jan 28, 2022',
         sections: [
             {
-                date: 'Sun, 16 Dec 2022',
+                date: '16 Dec 2022',
                 name: 'Toronto - Madrid',
                 duration: 'To book',
                 direction: 'One-Way',
@@ -865,7 +865,7 @@ const tripData = [
         start: 'June 2, 2022',
         sections: [
             {
-                date: 'Sun, 2 June 2022',
+                date: '2 June 2022',
                 name: 'Madrid - Hong Kong',
                 duration: 'To book',
                 direction: 'One-Way',
