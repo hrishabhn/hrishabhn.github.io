@@ -196,7 +196,7 @@
     overflow: hidden;
 }
 .trip-container .highlight{
-    background-color: var(--black-20);
+    background-color: var(--white-10);
 }
 .trip-container .main-header{
     width: 100%;
@@ -414,9 +414,6 @@
         padding-top: 130px;
         justify-content: flex-start;
     }
-    .trip-container .highlight{
-        background-color: var(--white-10);
-    }
     .trip-container .main-header{
         position: fixed;
         top: 0;
@@ -424,13 +421,6 @@
         padding: 15px 20px;
         padding-top: 65px;
         z-index: 2;
-    }
-
-    @media screen and (prefers-color-scheme: light) {
-
-        .trip-container .highlight{
-            background-color: var(--black-10);
-        }
     }
 }
 
