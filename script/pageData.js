@@ -34,8 +34,8 @@ const pageData0 = {
             type: 'shortcut-tray',
             render: function() {
                 return colContainerRender(
-                    combineSubColElements(pageShortcutElement(2),pageShortcutElement(3)),
-                    combineSubColElements(pageShortcutElement(4),pageShortcutElement(5))
+                    combineSubColElements(pageShortcutElement(3),pageShortcutElement(4)),
+                    combineSubColElements(pageShortcutElement(5),pageShortcutElement(7))
                 )
             }
         },
@@ -776,30 +776,6 @@ const pageData6 = {
         secure: true,
     },
     content: [
-        // {
-        //     type: 'flight',
-        //     render: function() {
-        //         return colContainerRender(
-        //             flightCard(0),
-        //             flightCard(1)
-        //         )
-        //     }
-        // },
-        // {
-        //     type: 'spacer-content',
-        // },
-        // {
-        //     type: 'flight',
-        //     render: function() {
-        //         return colContainerRender(
-        //             flightCard(2),
-        //             flightCard(3)
-        //         )
-        //     }
-        // },
-        // {
-        //     type: 'spacer-content',
-        // },
         {
             type: 'shortcut-tray',
             render: function() {
@@ -858,12 +834,52 @@ const pageData6 = {
         {
             type: 'spacer-content',
         },
+    ],
+    render: function() { renderPage(this) },
+    open: function() { openPage(this.info.id) },
+}
+const pageData7 = {
+    info: {
+        id: '7',
+        type: 'page',
+        name: 'Travel',
+        subtext: 'Go',
+        style: 'green',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M497.535 14.465c-19.569-19.568-51.395-19.241-70.557.726L322.092 124.488 66.131 39.781 12.4 93.513l213.352 131.365-107.956 112.494-69.231-11.366L0 374.571l101.78 35.649L137.429 512l48.565-48.565-11.366-69.231 112.494-107.955L418.487 499.6l53.732-53.732-84.706-255.961L496.808 85.022c19.968-19.162 20.295-50.988.727-70.557z"></path></svg>',
+        menuMobile: false,
+        secure: true,
+    },
+    content: [
         {
-            type: 'flight',
+            type: 'shortcut-tray',
             render: function() {
                 return colContainerRender(
-                    tripCard(0),
-                    tripCard(1),
+                    tripShortcut(0),
+                    tripShortcut(1),
+                )
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            type: 'shortcut-tray',
+            render: function() {
+                return colContainerRender(
+                    tripShortcut(2),
+                    tripShortcut(3),
+                )
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            type: 'shortcut-tray',
+            render: function() {
+                return colContainerRender(
+                    tripShortcut(4),
+                    tripShortcut(5),
                 )
             }
         },
@@ -883,6 +899,7 @@ const pageData = [
     pageData4,
     pageData5,
     pageData6,
+    pageData7,
 ]
 
 function renderPage(page) {
