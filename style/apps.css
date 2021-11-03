@@ -233,11 +233,6 @@
     .app-list .item:hover{
         background-color: var(--black-10);
     }
-
-
-    .app-list{
-        background-color: #fff;
-    }
 }
 
 
