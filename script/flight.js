@@ -904,7 +904,7 @@ function tripCard(n) {
     var tripTitle = document.createElement('div')
     tripTitle.classList = `main-header ${trip.color}`
     tripTitle.innerHTML = `
-    <a class="vstack header-textbox clickable-text" onclick="hideModal()">
+    <a class="vstack header-textbox clickable-text" onclick="closeModal()">
         <p class="title">${trip.name}</p>
         <div class="spacer-x" style="--size: 2px;"></div>
         <p class="subtitle">${trip.subhead} &#149 ${countdownCalculate(trip.start)[0]} ${countdownCalculate(trip.start)[1]}</p>
@@ -967,7 +967,7 @@ function flightCard(flight) {
     <div class="flight">
         <p class="time duration">${flight.duration}</p>
         <div class="lefticon blue" style="transform: rotate(90deg);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>
-        <div class="main highlight">
+        <a class="main highlight clickable" onclick="openModal(tripCard(1),2)">
             <div class="logo" style="--darkCol: #${flight.airline.logo.darkCol}; --lightCol: #${flight.airline.logo.lightCol};">${flight.airline.icon.svg}</div>
             <div class="spacer-x" style="--size: 8px;"></div>
             <div class="info vstack">
@@ -975,7 +975,7 @@ function flightCard(flight) {
                 <p class="line2">${flight.aircraft}</p>
             </div>
             <div class="grow"></div>
-        </div>
+        </a>
     </div>
     ${airportCard(flight.arr)}`
 
