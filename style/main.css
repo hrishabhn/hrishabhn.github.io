@@ -154,6 +154,7 @@ body{
     text-decoration: none;
 
     background-color: var(--dark-layer-1);
+    background-color: #121212;
     color: #fff;
     fill: #fff;
 }
