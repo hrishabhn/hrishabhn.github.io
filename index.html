@@ -72,19 +72,306 @@
     <div id="modal-container" class="hide">
         <a onclick="hideModal()" class="modal-close"></a>
         <div id="modal-scroll">
-            <!-- <a class="spacer-x fill-width hidden-mobile" onclick="hideModal()" style="--size: 50px;"></a> -->
+            <a class="spacer-x fill-width hidden-mobile" onclick="hideModal()" style="--size: 50px;"></a>
             <a class="grow fill-width" onclick="hideModal()" style="min-height: 0px;"></a>
             <div class="modal-card layer-1 card-shadow">
                 <p id="modal-title"></p>
                 <div id="modal-body" class="vstack fill-width"></div>
                 <div class="grow"></div>
-            </div>
+            </div><a class="spacer-x fill-width hidden-mobile" onclick="hideModal()" style="--size: 50px;"></a>
             <a class="grow fill-width" onclick="hideModal()" style="min-height: 0px;"></a>
         </div>
     </div>
 
     <div id="main">
         <div class="page">
+            <!-- <a class="trip-shortcut layer-1 card-shadow clickable image-border">
+                <div class="bg" style="background-image: url(https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/images/hero_media_image/2016-11/Hero_San%20Diego%20Skyline_John%20Bahu.jpg?h=3767f04f&itok=R32qq4Na);"></div>
+                <div class="gradient">
+                    <p>San Diego</p>
+                </div>
+            </a> -->
+
+
+
+
+
+
+            <!-- <div class="trip-container layer-1 card-shadow">
+                <div class="title">Thanksgiving in San Diego</div>
+                <div class="hline"></div>
+                <div class="section">
+                    <div class="subtitle">
+                        <p>Wed, Jul 21</p>
+                        <div class="text-divider layer-fg"></div>
+                        <p>West Lafayette - San Diego</p>
+                        <div class="text-divider layer-fg"></div>
+                        <p>7h 34m</p>
+                        <div class="grow"></div>
+                        <div class="direction blue-fg">
+                            <div class="bg blue"></div>
+                            <p>Outbound</p>
+                        </div>
+                    </div>
+                    <div class="spacer-x" style="--size: 10px;"></div>
+                    <div class="flight-container">
+                        <div class="airport">
+                            <div class="fill-width">
+                                <p class="time">1:20pm</p>
+                                <div class="node up layer-fg"></div>
+                                <div class="info">
+                                    <p class="name">Indianapolis</p>
+                                    <p class="detail">Terminal 1 &#149 Gate 65</p>
+                                    <div class="grow"></div>
+                                </div>
+                                <div class="grow"></div>
+                            </div>
+                        </div>
+                        <div class="flight">
+                            <p class="time duration">3h 37m</p>
+                            <div class="lefticon" style="transform: rotate(90deg);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>
+                            <div class="main">
+                                <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="19.315 19.631 19.445 23.689"><path d="M19.465 19.63c-.922 4.785 2.469 13.847 8.598 17.796h.002c.7.439 1.08.568 1.08.568.09.037.027.103-.018.131l-7.906 5.06c-.026.017-.087.064-.063.114.02.038.1.015.121.008 6.345-2.23 10.95-4.064 13.764-5.4 2.854-1.356 3.813-2.13 3.709-2.516-.099-.363-1.157-.208-2.03-.287a12.382 12.382 0 0 1-3.035-.641c-4.575-1.617-8.645-3.676-14.222-14.832Z"/></svg></div>
+                                <div class="spacer-x" style="--size: 8px;"></div>
+                                <div class="info vstack">
+                                    <p class="line1">CX 828</p>
+                                    <p class="line2">A350-1000</p>
+                                </div>
+                                <div class="grow"></div>
+                            </div>
+                            <div class="grow"></div>
+                        </div>
+                        <div class="airport">
+                            <div class="fill-width">
+                                <p class="time">1:20pm</p>
+                                <div class="node up layer-fg"></div>
+                                <div class="info">
+                                    <p class="name">Indianapolis</p>
+                                    <p class="detail">Terminal 1 &#149 Gate 65</p>
+                                    <div class="grow"></div>
+                                </div>
+                                <div class="grow"></div>
+                            </div>
+                        </div>
+                        <div class="transit fill-width">
+                            <p class="time duration">3h 37m</p>
+                            <div class="lefticon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve"><path d="M23 28H3c-.6 0-1 .4-1 1s.4 1 1 1h20c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="M25 11c-.7 0-1.4.2-2 .6V11c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1v6.2C3 22.6 7.5 27 13 27c4.2 0 7.8-2.5 9.3-6.1.7.7 1.6 1.1 2.7 1.1 2.2 0 4-1.8 4-4v-3c0-2.2-1.8-4-4-4zm2 7c0 1.1-.9 2-2 2s-2-.9-2-2v-3c0-1.1.9-2 2-2s2 .9 2 2v3z"/><path d="M13 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.3-1.1-.2-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/><path d="M9 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.2-1.1-.1-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/><path d="M17 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.3-1.1-.2-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/></svg></div>
+                            <div class="main">
+                                <div class="code">LAS</div>
+                                <p class="info">Transfer to CX 888</p>
+                                <div class="grow"></div>
+                            </div>
+                            <div class="grow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+
+
+
+            <!-- <div class="trip-card">
+                <div class="flight layer-1 card-shadow">
+                    <div class="header">
+                        <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="19.315 19.631 19.445 23.689"><path d="M19.465 19.63c-.922 4.785 2.469 13.847 8.598 17.796h.002c.7.439 1.08.568 1.08.568.09.037.027.103-.018.131l-7.906 5.06c-.026.017-.087.064-.063.114.02.038.1.015.121.008 6.345-2.23 10.95-4.064 13.764-5.4 2.854-1.356 3.813-2.13 3.709-2.516-.099-.363-1.157-.208-2.03-.287a12.382 12.382 0 0 1-3.035-.641c-4.575-1.617-8.645-3.676-14.222-14.832Z"/></svg></div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                        <div class="info">
+                            <p class="date">Tue, 2 Nov</p>
+                            <div class="spacer-x" style="--size: 2px;"></div>
+                            <p class="flight-no">CX 828</p>
+                        </div>
+                        <div class="grow"></div>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="airport">
+                        <div class="vstack">
+                            <div class="small padded fill-width">
+                                <p>From</p>
+                                <div class="grow"></div>
+                            </div>
+                            <div class="big fill-width">
+                                <div class="node up">
+                                    <div class="bg blue"></div>
+                                    <div class="fg blue"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3.171 17.657 17.657"><path d="M14 5.342c-.256 0-.512.1-.707.295l-.086.086a.999.999 0 0 0 0 1.414L17.07 11H4a1 1 0 0 0 0 2h13.07l-3.863 3.863a.999.999 0 0 0 0 1.414l.086.086a.999.999 0 0 0 1.414 0l5.656-5.656a.999.999 0 0 0 0-1.414l-5.656-5.656A.998.998 0 0 0 14 5.342z"/></svg></div>
+                                </div>
+                                <p>Indianapolis</p>
+                                <div class="grow"></div>
+                            </div>
+                            <div class="med padded fill-width">
+                                <p>IND</p>
+                                <div class="grow"></div>
+                            </div>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="vstack fill-height">
+                            <div class="time green-fg fill-width">
+                                <div class="grow"></div>
+                                <p>9:41 AM</p>
+                            </div>
+                            <div class="gate fill-width">
+                                <div class="grow"></div>
+                                <p>Terminal 1 &#149 Gate 65</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hline sub"></div>
+                    <div class="travel">
+                        <div class="icon" style="transform: rotate(90deg);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>
+                        <div>
+                            <p class="med">4h 23m &#149 2348mi</p>
+                        </div>
+                        <div class="grow"></div>
+                    </div>
+                    <div class="hline sub"></div>
+                    <div class="airport">
+                        <div class="vstack">
+                            <div class="small padded fill-width">
+                                <p>To</p>
+                                <div class="grow"></div>
+                            </div>
+                            <div class="big fill-width">
+                                <div class="node down">
+                                    <div class="bg blue"></div>
+                                    <div class="fg blue"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3.171 17.657 17.657"><path d="M14 5.342c-.256 0-.512.1-.707.295l-.086.086a.999.999 0 0 0 0 1.414L17.07 11H4a1 1 0 0 0 0 2h13.07l-3.863 3.863a.999.999 0 0 0 0 1.414l.086.086a.999.999 0 0 0 1.414 0l5.656-5.656a.999.999 0 0 0 0-1.414l-5.656-5.656A.998.998 0 0 0 14 5.342z"/></svg></div>
+                                </div>
+                                <p>Las Vegas</p>
+                                <div class="grow"></div>
+                            </div>
+                            <div class="med padded fill-width">
+                                <p>LAS</p>
+                                <div class="grow"></div>
+                            </div>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="vstack fill-height">
+                            <div class="time green-fg fill-width">
+                                <div class="grow"></div>
+                                <p>12:47 PM</p>
+                            </div>
+                            <div class="gate fill-width">
+                                <div class="grow"></div>
+                                <p>Terminal 1 &#149 Gate 65</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="item layer-1 clickable">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.928 2.5 93.999 93.999" xml:space="preserve"><path d="m83.028 57.888-.049-.013s-.411-.109-1.011-.136c-.225-.026-.412-.087-.664-.087h-23.15s-.264.004-.648.064a5.607 5.607 0 0 0-.715.017l-19.346 1.692-3.387-9.307h29.991s4.502 0 4.502-4.502v-.052s0-4.503-4.502-4.503H30.762l-5.735-15.756-.021-.052V9.254s0-6.754-6.753-6.754c0 0-6.753 0-6.753 6.754v16.857s.008 1.133.469 2.468c.082.43.193.874.366 1.348l15.678 43.076s.396 1.063 1.289 2.162c.951 1.396 2.591 2.609 5.451 2.609h14.365v11.571H30.629s-3.377 0-3.377 3.377v.401s0 3.376 3.377 3.376h45.893s3.376 0 3.376-3.376v-.401s0-3.377-3.376-3.377H58.033V77.774h18.188l.092-.003h2.416c1.355.065 3.71-.286 4.521-3.316l2.963-11.054s1.164-4.348-3.185-5.513"/></svg>
+                            </div>
+                            <div class="spacer-x" style="--size: 10px;"></div>
+                            <p>32J</p>
+                        </div>
+                        <div class="spacer-x" style="--size: 10px;"></div>
+                        <div class="item layer-1 clickable">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M497.535 14.465c-19.569-19.568-51.395-19.241-70.557.726L322.092 124.488 66.131 39.781 12.4 93.513l213.352 131.365-107.956 112.494-69.231-11.366L0 374.571l101.78 35.649L137.429 512l48.565-48.565-11.366-69.231 112.494-107.955L418.487 499.6l53.732-53.732-84.706-255.961L496.808 85.022c19.968-19.162 20.295-50.988.727-70.557z"></path></svg>
+                            </div>
+                            <div class="spacer-x" style="--size: 10px;"></div>
+                            <p>A35K</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer-x" style="--size: 10px;"></div>
+                <div class="flight layer-1 card-shadow">
+                    <div class="travel">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve"><path d="M23 28H3c-.6 0-1 .4-1 1s.4 1 1 1h20c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="M25 11c-.7 0-1.4.2-2 .6V11c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1v6.2C3 22.6 7.5 27 13 27c4.2 0 7.8-2.5 9.3-6.1.7.7 1.6 1.1 2.7 1.1 2.2 0 4-1.8 4-4v-3c0-2.2-1.8-4-4-4zm2 7c0 1.1-.9 2-2 2s-2-.9-2-2v-3c0-1.1.9-2 2-2s2 .9 2 2v3z"/><path d="M13 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.3-1.1-.2-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/><path d="M9 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.2-1.1-.1-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/><path d="M17 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.3-1.1-.2-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/></svg>
+                        </div>
+                        <div>
+                            <p class="med">1h 34m Transit</p>
+                        </div>
+                        <div class="grow"></div>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+
+
+                    <!-- <div class="fill-width">
+                        <div class="info">
+                            <p class="small">From</p>
+                            <div class="overlay">
+                                <div class="node">
+                                    <div class="bg">
+                                        <div class="fg"></div>
+                                    </div>
+                                </div>
+                                <p class="big">Indianapolis</p>
+                            </div>
+                            <p class="med">IND</p>
+                            <div class="spacer-x" style="--size: 20px;"></div>
+                            <div class="overlay">
+                                <div class="plane">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg>
+                                </div>
+                                <p class="time">4h 12m</p>
+                            </div>
+                            <div class="spacer-x" style="--size: 20px;"></div>
+                            <p class="small">To</p>
+                            <div class="overlay">
+                                <div class="node">
+                                    <div class="bg">
+                                        <div class="fg"></div>
+                                    </div>
+                                </div>
+                                <p class="big">Las Vegas</p>
+                            </div>
+                            <p class="med">LAS</p>
+                        </div>
+                    </div> -->
+                    <!-- <div>From</div>
+                    <div>Indianapolis</div>
+                    <div class="header">
+                        <div class="vstack">
+                            <p class="airline">JetBlue Airways</p>
+                            <p class="flight-no">B61523</p>
+                        </div>
+                        <div class="grow"></div>
+                    </div>
+                    <div class="spacer-x" style="--size: 10px;"></div>
+                    <div class="hline"></div>
+                    <div class="spacer-x" style="--size: 5px;"></div>
+                    <div class="info">
+                        <div class="vstack org">
+                            <p class="city">Indianapolis</p>
+                            <p class="airport">IND</p>
+                            <p class="terminal">Terminal -</p>
+                            <p class="terminal">Gate -</p>
+                            <div class="spacer-x" style="--size: 10px;"></div>
+                            <p class="deparr">Depart</p>
+                            <p class="time">10:00am</p>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="vstack des">
+                          <p class="city">Las Vegas</p>
+                          <p class="airport">LAS</p>
+                          <p class="terminal">Terminal -</p>
+                          <p class="terminal">Gate -</p>
+                          <div class="spacer-x" style="--size: 10px;"></div>
+                          <p class="deparr">Arrive</p>
+                          <p class="time">11:00am</p>
+                        </div>
+                    </div> -->
+
+
+
+                <!-- <div class="airline" style="background-color: #005d63;">
+                    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="4.13 1.751 22.254 1.947"><path d="m6.974 1.75-.797 1.671c-.119.229-.25.234-.25.234l-.013.013h.546l-.013-.013s-.153-.03-.055-.234l.142-.294h.684l.138.294c.097.204-.055.234-.055.234l-.012.013h.751l-.013-.013s-.138-.001-.25-.234zm5.745 0-.797 1.671c-.12.229-.25.234-.25.234l-.013.013h.545l-.012-.013s-.153-.03-.056-.234l.143-.294h.683l.139.294c.097.204-.056.234-.056.234l-.012.013h.751l-.012-.013s-.139-.001-.251-.234zm-7.511.064c-.662 0-1.078.408-1.078.956 0 .441.343.928 1.05.928.267 0 .579-.106.579-.106l.143-.489-.016.01s-.232.382-.663.382c-.393 0-.663-.257-.663-.727s.263-.776.677-.776c.43 0 .584.334.584.334l.01.009V1.94s-.257-.126-.623-.126zm2.585.008-.001.364.012-.01s.098-.157.313-.157h.306v1.403c0 .216-.121.234-.121.234l-.013.012h.652l-.012-.012s-.122-.018-.122-.234l.001-1.403h.3c.214 0 .318.157.318.157l.012.01.001-.364s-.03.02-.245.02H8.038c-.215 0-.245-.02-.245-.02zm3.15.02.011.012s.123.016.123.231v.525h-.897v-.525c0-.215.123-.23.123-.23l.012-.012h-.652l.013.012s.121.015.121.23v1.337c0 .216-.121.234-.121.234l-.013.012h.652l-.012-.012s-.123-.018-.123-.234V2.79h.897v.633c0 .216-.121.234-.121.234l-.013.012h.653l-.013-.012s-.122-.018-.122-.234V2.085c0-.215.12-.23.12-.23l.014-.012zm2.416 0 .012.013s.109.018.251.233c.06.091.365.518.53.767v.567c0 .216-.122.234-.122.234l-.013.012h.652l-.012-.012s-.122-.018-.122-.234v-.567c.164-.25.469-.674.53-.765.14-.215.303-.235.303-.235l.012-.012h-.572l.013.012s.161.045.04.235c-.06.092-.24.35-.403.598-.164-.249-.341-.508-.4-.6-.122-.19.04-.233.04-.233l.012-.012zm-6.468.537.257.593h-.539zm5.744 0 .257.593h-.538z"/><path d="m17.92 2.972.282-.593.257.593zm1.168.45-.802-1.671-.797 1.67c-.12.229-.25.234-.25.234l-.013.013h.545l-.012-.013s-.153-.03-.056-.234l.143-.294h.683l.139.294c.097.204-.056.234-.056.234l-.012.013h.75l-.012-.013s-.138-.001-.25-.234z"/><path d="m24.416 1.854.012-.011h-.652l.012.011s.122.019.122.234v1.337c0 .215-.122.233-.122.233l-.012.012h.652l-.012-.012s-.122-.018-.122-.233V2.088c0-.215.122-.234.122-.234"/><path d="M20.352 3.495c-.392 0-.663-.257-.663-.727s.263-.776.678-.776c.429 0 .584.334.584.334l.01.009V1.94s-.258-.126-.624-.126c-.662 0-1.077.408-1.077.956 0 .441.343.928 1.05.928.267 0 .578-.106.578-.106l.143-.49-.016.011s-.232.382-.663.382"/><path d="m22.257 1.843.012.012s.122.018.122.233v1.337c0 .215-.122.233-.122.233l-.012.012h.652l-.013-.012s-.121-.018-.121-.233v-.647h.385c.214 0 .232.094.232.094l.013.013v-.392l-.013.012s-.018.094-.232.094h-.385v-.584h.462c.215 0 .305.123.305.123l.012.01v-.326s-.03.02-.246.02z"/><path d="m21.907 1.854.012-.011h-.653l.013.011s.122.019.122.234v1.337c0 .215-.122.233-.122.233l-.013.012h.653l-.012-.012s-.123-.018-.123-.233V2.088c0-.215.123-.234.123-.234"/><path d="M26.368 3.113s-.231.382-.663.382c-.392 0-.664-.257-.664-.727s.264-.776.678-.776a.64.64 0 0 1 .585.334l.01.009V1.94s-.258-.127-.624-.127c-.662 0-1.078.41-1.078.957 0 .441.343.928 1.051.928.267 0 .578-.106.578-.106l.143-.49z"/><path d="M16.536 2.088v-.07h.086c.105 0 .213 0 .279.02.172.052.259.183.259.39 0 .169-.108.42-.404.42a.573.573 0 0 1-.22-.055zm.347.935c.402 0 .642-.305.642-.6 0-.162-.06-.452-.467-.555a1.34 1.34 0 0 0-.324-.025h-.716l.012.011s.122.019.122.234v1.337c0 .215-.122.233-.122.233l-.012.012h.652l-.012-.012s-.122-.018-.122-.233v-.466a.854.854 0 0 0 .347.064z"/></svg></div>
+                </div>
+                <div class="content layer-1 card-shadow">
+                    <div class="name">Trip to San Diego</div>
+                    <div class="grow"></div>
+
+                </div>
+                <div class="grow"></div> -->
+
+
+
 
             <!-- <div class="flight-card layer-1 card-shadow clickable" style="--col: #248168;">
             <div class="header">
