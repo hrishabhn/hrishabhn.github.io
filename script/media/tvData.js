@@ -47,61 +47,6 @@
 // },
     const movieData0 = [
     {
-        name: 'You',
-        id: 'you',
-        link: {
-            netflix: '80211991'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    'romance',
-                    'thriller',
-                ],
-            },
-            summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
-        },
-        style: {
-            color: '655b3f',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '336924',
-            reelgoodLink: 'https://reelgood.com/show/you-2018',
-            imdbID: 'tt7335184',
-            subReddit: 'YouOnLifetime',
-        },
-        cast: [
-            {
-                actor: 'Penn Badgley',
-                image: 'https://media1.popsugar-assets.com/files/thumbor/5hs8f5F2K3qAi5JiZn4XoBIJUAE/0x150:3648x3798/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/10/28/859/n/1922398/d130310f5f99c8a0122de3.83461725_/i/Penn-Badgley.jpg',
-                char: 'Joe Goldberg',
-            },
-            {
-                actor: 'Elizabeth Lail',
-                image: 'https://www.thewikifeed.com/wp-content/uploads/2021/06/elizabeth-lail-1.jpg',
-                char: 'Guinevere Beck',
-            },
-            {
-                actor: 'Shay Mitchell',
-                image: 'https://media.self.com/photos/603d499db090d0bf156c1013/1:1/w_2332,h_2332,c_limit/1205249363',
-                char: 'Peach Salinger',
-            },
-        ],
-    },
-    {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
         link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
@@ -516,6 +461,61 @@ const movieData1 = [
     },
 ]
 const movieData2 = [
+    {
+        name: 'You',
+        id: 'you',
+        link: {
+            netflix: '80211991'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    'romance',
+                    'thriller',
+                ],
+            },
+            summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
+        },
+        style: {
+            color: '655b3f',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '336924',
+            reelgoodLink: 'https://reelgood.com/show/you-2018',
+            imdbID: 'tt7335184',
+            subReddit: 'YouOnLifetime',
+        },
+        cast: [
+            {
+                actor: 'Penn Badgley',
+                image: 'https://media1.popsugar-assets.com/files/thumbor/5hs8f5F2K3qAi5JiZn4XoBIJUAE/0x150:3648x3798/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/10/28/859/n/1922398/d130310f5f99c8a0122de3.83461725_/i/Penn-Badgley.jpg',
+                char: 'Joe Goldberg',
+            },
+            {
+                actor: 'Elizabeth Lail',
+                image: 'https://www.thewikifeed.com/wp-content/uploads/2021/06/elizabeth-lail-1.jpg',
+                char: 'Guinevere Beck',
+            },
+            {
+                actor: 'Shay Mitchell',
+                image: 'https://media.self.com/photos/603d499db090d0bf156c1013/1:1/w_2332,h_2332,c_limit/1205249363',
+                char: 'Peach Salinger',
+            },
+        ],
+    },
     {
         name: 'Memories of the Alhambra',
         id: 'memories',
