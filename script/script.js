@@ -81,7 +81,11 @@ function countdownCalculate(date) {
     var result
 
     if (days > 0) {
-        result = [days,'days']
+        if (days < 2) {
+            result = [days * 24 + hours, 'hours']
+        } else {
+            result = [days,'days']
+        }
     } else if (hours > 0) {
         result = [hours,'hours']
     } else if (minutes > 0) {
