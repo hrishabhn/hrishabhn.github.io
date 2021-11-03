@@ -37,10 +37,6 @@ function widgetPopulate() {
 
 const countdownData = [
     {
-        name: 'ECE Exam 2',
-        date: 'Nov 1, 2021 20:00:00',
-    },
-    {
         name: 'IE 386 Exam 2',
         date: 'Nov 4, 2021 09:30:00',
     },
@@ -124,6 +120,10 @@ const countdownData = [
     // {
     //     name: 'Halloween',
     //     date: 'Oct 31, 2021',
+    // },
+    // {
+    //     name: 'ECE Exam 2',
+    //     date: 'Nov 1, 2021 20:00:00',
     // },
 ]
 
