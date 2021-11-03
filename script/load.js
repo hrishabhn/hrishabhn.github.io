@@ -7,6 +7,8 @@ function loadApp() {
     openFirstPage(0)
     // tvPopupShow(0,0)
     // testTV()
+
+    // showModal(null,tripCard(0))
 }
 
 function openFirstPage(n) {
