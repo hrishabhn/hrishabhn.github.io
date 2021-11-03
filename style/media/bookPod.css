@@ -5,7 +5,7 @@
 .media-card{
     flex-direction: column;
     scroll-snap-align: start;
-    scroll-margin-left: 40px;
+    scroll-margin-left: 0px;
 }
 .media-card .poster{
     border-radius: 5px;
