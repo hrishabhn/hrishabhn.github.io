@@ -138,6 +138,7 @@
     pointer-events: auto;
     transform-origin: bottom center;
     transition: all 0.25s;
+    z-index: 1;
 }
 #modal-tray .modal .vertical{
     flex-direction: column;
