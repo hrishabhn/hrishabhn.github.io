@@ -22,9 +22,9 @@ function processDate(dateString) {
 
 function processMonth(monthIndex,type) {
     if (type == 'short') {
-        var months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct']
+        var months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
     } else if (type == 'long') {
-        var months = ['january','february','march','april','may','june','july','august','september','october']
+        var months = ['january','february','march','april','may','june','july','august','september','october','november','december']
     }
 
     return months[monthIndex]
