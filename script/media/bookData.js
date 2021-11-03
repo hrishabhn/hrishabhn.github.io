@@ -44,6 +44,15 @@ const bookData1 = [
         format: 'EBook',
     },
     {
+        name: 'Brave New World',
+        id: 'braveNewWorld',
+        link: 'ibooks://',
+        author: 'Aldous Huxley',
+        coverType: 'jpg',
+        progress: '22%',
+        format: 'EBook',
+    },
+    {
         name: '12 Rules for Life',
         id: '12rules',
         link: 'ibooks://',
