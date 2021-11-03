@@ -190,7 +190,7 @@
 
 .trip-container{
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     border-radius: 10px;
     min-width: max(20vw,500px);
     overflow: hidden;

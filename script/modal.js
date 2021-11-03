@@ -84,3 +84,46 @@ function removeAllChildNodes(parent) {
         parent.removeChild(parent.firstChild);
     }
 }
+
+function openModal(content,n) {
+    var modal = document.createElement('div')
+    modal.id = `modal-${n}`
+    modal.classList = 'modal preload'
+
+    var close = document.createElement('a')
+    close.classList = 'close'
+    close.onclick = function() { closeModal(n) }
+    modal.append(close)
+
+    var scroll = document.createElement('div')
+    scroll.classList = 'vertical'
+
+
+    var spacer1 = document.createElement('a')
+    var spacer2 = document.createElement('a')
+    spacer1.classList = 'spacer-x'
+    spacer2.classList = 'spacer-x'
+    spacer1.style.setProperty('--size','40px')
+    spacer2.style.setProperty('--size','40px')
+
+    scroll.append(spacer1)
+    scroll.append(content)
+    scroll.append(spacer2)
+
+    modal.append(scroll)
+
+    var container = document.getElementById('modal-tray')
+    container.append(modal)
+
+    setTimeout(() => { removePreloadModal(n) }, 0);
+}
+
+function removePreloadModal(n) {
+    var modal = document.getElementById(`modal-${n}`)
+    modal.classList.remove('preload')
+}
+
+function closeModal(n) {
+    var modal = document.getElementById(`modal-${n}`)
+    modal.remove()
+}

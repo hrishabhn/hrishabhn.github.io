@@ -881,7 +881,7 @@ function tripShortcut(n) {
 
     var shortcut = document.createElement('a')
     shortcut.classList = 'trip-shortcut layer-1 card-shadow clickable'
-    shortcut.onclick = function() { showModal(null,tripCard(n)) }
+    shortcut.onclick = function() { openModal(tripCard(n),0) }
 
     shortcut.innerHTML = `
     <div class="bg" style="background-image: url(${trip.image});"></div>

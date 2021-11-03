@@ -3,7 +3,7 @@ function dateNow() {
 }
 
 function processDate(dateString) {
-    console.log(dateString)
+    // console.log(dateString)
     var date = new Date(dateString)
     // console.log(date)
 
