@@ -43,6 +43,14 @@
 //     image: `media-image/TV/background/${movieData[0][0].id}.${movieData[0][0].style.posterType}`,
 //     render: function() { return homeCardTrip(this) }
 // },
+// {
+//     type: 'book',
+//     action: function() { pageData3.open() },
+//     text: bookData[0][0].name,
+//     subtext: bookData[0][0].author,
+//     image: `media-image/books/${bookData[0][0].id}.${bookData[0][0].coverType}`,
+//     render: function() { return homeCardBook(this) }
+// },
 
 const homeCardData = [
     {
@@ -57,19 +65,19 @@ const homeCardData = [
         render: function() { return homeCardBasic(this) }
     },
     {
+        type: 'book',
+        action: function() { pageData3.open() },
+        text: bookData[0][0].name,
+        subtext: bookData[0][0].author,
+        image: `media-image/books/${bookData[0][0].id}.${bookData[0][0].coverType}`,
+        render: function() { return homeCardBook(this) }
+    },
+    {
         type: 'tv',
         action: function() { tvPopupShow(0,0) },
         text: movieData[0][0].name,
         // subtext: `${processDesc(movieData[0][0])}`,
         image: `media-image/TV/background/${movieData[0][0].id}.${movieData[0][0].style.posterType}`,
-        render: function() { return homeCardTV(this) }
-    },
-    {
-        type: 'tv',
-        action: function() { tvPopupShow(0,3) },
-        text: movieData[0][3].name,
-        subtext: `${processDesc(movieData[0][3])}`,
-        image: `media-image/TV/background/${movieData[0][3].id}.${movieData[0][3].style.posterType}`,
         render: function() { return homeCardTV(this) }
     },
     {
@@ -79,6 +87,22 @@ const homeCardData = [
         subtext: `${tripData[0].subhead} &#149 ${countdownCalculate(tripData[0].start)[0]} ${countdownCalculate(tripData[0].start)[1]}`,
         image: tripData[0].image,
         render: function() { return homeCardTrip(this) }
+    },
+    {
+        type: 'book',
+        action: function() { pageData3.open() },
+        text: bookData[0][1].name,
+        subtext: bookData[0][1].author,
+        image: `media-image/books/${bookData[0][1].id}.${bookData[0][1].coverType}`,
+        render: function() { return homeCardBook(this) }
+    },
+    {
+        type: 'tv',
+        action: function() { tvPopupShow(0,3) },
+        text: movieData[0][3].name,
+        subtext: `${processDesc(movieData[0][3])}`,
+        image: `media-image/TV/background/${movieData[0][3].id}.${movieData[0][3].style.posterType}`,
+        render: function() { return homeCardTV(this) }
     },
     {
         type: 'trip',
@@ -163,12 +187,27 @@ function homeCardTV(data) {
 
     return card
 }
+function homeCardBook(data) {
+    var card = document.createElement('a')
+    card.classList = 'homecard basic book clickable layer-1'
+    card.onclick = function () { pageData[4].open() }
+    card.innerHTML = `
+    <div class="cover" style="background-image: url(${data.image});"></div>
+    <div class="info fill-height">
+        <div class="grow"></div>
+        <p class="text">${data.text}</p>
+        <p class="subtext">${data.subtext}</p>
+    </div>
+    <div class="grow"></div>`
+
+    return card
+}
 
 function homeCardTray() {
     var tray = document.createElement('div')
     tray.classList = 'hscroll-homecard'
     tray.append(spacerElement(15))
-    tray.append(spacerElement(5,'hidden-mobile'))
+    // tray.append(spacerElement(5,'hidden-mobile'))
 
     for (let i = 0; i < homeCardData.length; i++) {
         console.log(homeCardData[i].render())
@@ -176,11 +215,11 @@ function homeCardTray() {
 
 
         tray.append(spacerElement(15))
-        tray.append(spacerElement(5,'hidden-mobile'))
+        // tray.append(spacerElement(5,'hidden-mobile'))
     }
 
 
-    tray.append(spacerElement(20,'hidden-mobile'))
+    tray.append(spacerElement(25,'hidden-mobile'))
 
 
     // tray.innerHTML = `
