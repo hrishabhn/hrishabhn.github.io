@@ -166,8 +166,9 @@ function homeCardTV(data) {
 
 function homeCardTray() {
     var tray = document.createElement('div')
-    tray.classList = 'hscroll-hulu'
-    tray.append(spacerElement(15,'only-mobile'))
+    tray.classList = 'hscroll-homecard'
+    tray.append(spacerElement(15))
+    tray.append(spacerElement(5,'hidden-mobile'))
 
     for (let i = 0; i < homeCardData.length; i++) {
         console.log(homeCardData[i].render())
@@ -178,6 +179,8 @@ function homeCardTray() {
         tray.append(spacerElement(5,'hidden-mobile'))
     }
 
+
+    tray.append(spacerElement(20,'hidden-mobile'))
 
 
     // tray.innerHTML = `
