@@ -51,6 +51,11 @@ function spacerAppListElement() {
     return spacerAppList
 }
 
+function growElement() {
+    var grow = document.createElement('div')
+    grow.classList = 'grow'
+    return grow
+}
 function hlineElement() {
     var hline = document.createElement('div')
     hline.classList = 'hline'

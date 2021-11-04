@@ -1063,7 +1063,7 @@ function flightCard(flight) {
 
     var main = document.createElement('a')
     main.classList = 'main highlight clickable'
-    main.onclick = function() { openModal(aircraftCard(flight.aircraft)) }
+    main.onclick = function() { openModal(flightDetail(flight)) }
 
     main.innerHTML = `
     <div class="logo" style="--darkCol: #${flight.airline.icon.darkCol}; --lightCol: #${flight.airline.icon.lightCol};">${flight.airline.icon.svg}</div>
@@ -1190,6 +1190,74 @@ function aircraftCard(aircraft) {
     card.innerHTML = `
     <div class="title">${aircraft.manufacturer} ${aircraft.name}</div>
     <div class="image" style="background-image: url('images/aircraft/${aircraft.id}.${aircraft.imageType}');"></div>`
+
+    return card
+}
+
+function flightDetail(flight) {
+    var card = document.createElement('div')
+    card.classList = 'flight-card layer-1'
+    card.style.setProperty('--bgCol',`#${flight.airline.color.bg}`)
+    card.style.setProperty('--fgCol',`#${flight.airline.color.fg}`)
+
+    card.innerHTML = `
+    <div></div>
+    <div class="orgdes fill-width">
+        <div class="org">
+            <div class="city">${flight.dep.city}</div>
+            <div class="airport">${flight.dep.airport}</div>
+            <div class="time">${flight.dep.time}</div>
+        </div>
+        <div class="vstack">
+            <div class="spacer-x" style="--size: 10px;"></div>
+            <div class="plane"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>
+            <div class="duration">${flight.duration}</div>
+        </div>
+        <div class="des">
+        <div class="city">${flight.arr.city}</div>
+        <div class="airport">${flight.arr.airport}</div>
+        <div class="time">${flight.arr.time}</div>
+        </div>
+    </div>`
+
+    var info = document.createElement('div')
+    info.classList = 'info'
+
+    var flightNo = document.createElement('a')
+    flightNo.classList = 'vstack'
+    flightNo.innerHTML = `
+    <p class="text">Flight</p>
+    <p class="subtext">${flight.number}</p>`
+
+    var aircraftName = document.createElement('a')
+    aircraftName.classList = 'vstack clickable-text'
+    aircraftName.innerHTML = `
+    <p class="text">Aircraft</p>
+    <p class="subtext">${flight.aircraft.name}</p>`
+    aircraftName.onclick = function () { openModal(aircraftCard(flight.aircraft)) }
+
+    var terminal = document.createElement('a')
+    terminal.classList = 'vstack'
+    terminal.innerHTML = `
+    <p class="text">Terminal</p>
+    <p class="subtext">${flight.dep.terminal}</p>`
+
+    var gate = document.createElement('a')
+    gate.classList = 'vstack'
+    gate.innerHTML = `
+    <p class="text">Gate</p>
+    <p class="subtext">${flight.dep.gate}</p>`
+
+    info.append(flightNo)
+    info.append(growElement())
+    info.append(aircraftName)
+    info.append(growElement())
+    info.append(terminal)
+    info.append(growElement())
+    info.append(gate)
+    card.append(info)
+
+
 
     return card
 }

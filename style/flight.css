@@ -1,127 +1,81 @@
 .flight-card{
     flex-direction: column;
-    width: calc(100% / 1);
-    height: 100%;
+    width: 300px;
+    /* height: 500px; */
     border-radius: 10px;
     overflow: hidden;
-}
-.flight-card .header{
-    width: 100%;
-    padding: 12px 15px;
-}
-/* .flight-card .header .bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--col);
-    filter: saturate(2) brightness(0.5);
-} */
 
-.flight-card .header > *{
-    /* flex-grow: 1; */
-    flex-basis: 70px;
+    background-color: var(--bgCol);
+    color: var(--fgCol);
+    fill: var(--fgCol);
 }
-.flight-card .header .left{
-    justify-content: flex-start;
+.flight-card .orgdes{
+    width: 100%;
+    padding: 20px 20px 20px;
 }
-.flight-card .header .right{
-    justify-content: flex-end;
+.flight-card .orgdes .org,.des{
+    flex-direction: column;
+    flex-basis: 90px;
+    flex-grow: 1;
 }
-
-.flight-card .header .icon{
-    height: 40px;
-    width: 40px;
-    border-radius: 100px;
-    background-color: var(--col);
-    fill: white;
+.flight-card .orgdes .city{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.6;
+    text-transform: uppercase;
 }
-.flight-card .header .flight-no{
-    flex-basis: initial;
-    font-size: 16px;
+.flight-card .orgdes .airport{
+    font-size: 30px;
     font-weight: 600;
 }
-.flight-card .header .airline-logo{
-    /* flex-basis: initial; */
-    height: 100%;
-    max-width: 140px;
-    flex-grow: 1;
-    /* width: 80px; */
-    fill: var(--darkLogo);
-    /* filter: brightness(0) invert(1); */
-    align-items: flex-start;
+.flight-card .orgdes .time{
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.8;
 }
-.airline-logo svg{
-    max-height: 25px;
+.flight-card .orgdes .plane{
+    height: 30px;
+    width: 30px;
 }
+.flight-card .orgdes .duration{
+    font-size: 10px;
+    font-weight: 500;
 
-
-.flight-card .tear{
-    width: 100%;
-    margin: 0px -15px;
-}
-.flight-card .tear .punch{
-    height: 20px;
-    width: 20px;
-    margin: 0px -10px;
+    padding: 2px 5px;
+    margin-top: 10px;
+    border: solid 1px var(--fgCol);
     border-radius: 100px;
-    z-index: 1;
-
-}
-.flight-card .tear .perf{
-    width: 100%;
-    border-top-style: dashed;
-    border-top-width: 1px;
-    border-top-color: white;
-    opacity: 0.4;
-}
-
-
-.flight-card p{
-    /* flex-basis: 100px;
-    flex-grow: 1; */
-    /* color: var(--col); */
-}
-
-.flight-card .body{
-    width: 100%;
-    padding: 15px;
-    padding-top: 0px;
 }
 .flight-card .org{
     align-items: flex-start;
-    flex-basis: 100px;
-    flex-grow: 1;
 }
 .flight-card .des{
     align-items: flex-end;
-    flex-basis: 100px;
-    flex-grow: 1;
 }
-.flight-card .city{
-    font-size: 12px;
+.flight-card .info{
+    padding: 0 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.flight-card .info a{
+    color: var(--fgCol);
+}
+.flight-card .info > *{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flight-card .info .text{
+    font-size: 14px;
     font-weight: 400;
 }
-.flight-card .airport{
-    font-size: 22px;
-    font-weight: 600;
-    font-family: ui-rounded;
-}
-.flight-card .deparr{
-    font-size: 10px;
+.flight-card .info .subtext{
+    font-size: 12px;
     font-weight: 400;
     opacity: 0.6;
 }
-.flight-card .time{
-    font-size: 12px;
-    font-weight: 500;
-}
-.flight-card .plane{
-    width: 40px;
-    height: 40px;
-    /* fill: var(--col); */
-}
+
+
 
 .trip-shortcut{
     width: 100%;
