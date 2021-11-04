@@ -7,7 +7,7 @@ function loadApp() {
     openFirstPage(0)
     // tvPopupShow(0,0)
     // testTV()
-
+    // openModal(flightDetail(flightData[2]))
     // showModal(null,tripCard(0))
     // openModal(tripCard(0))
 }
