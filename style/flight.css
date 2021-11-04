@@ -134,11 +134,11 @@
     border-width: 1px;
     border-color: #222;
 
-    box-shadow: 2px 4px 12px rgba(0,0,0,.08) !important;
+    box-shadow: 0px 4px 12px rgba(0,0,0,.08) !important;
     transition: all .3s cubic-bezier(0,0,.5,1);
 }
 .trip-shortcut:hover{
-    box-shadow: 2px 4px 16px rgba(0,0,0,.16) !important;
+    box-shadow: 0px 4px 16px rgba(0,0,0,.16) !important;
     transform: scale3d(1.01,1.01,1.01);
 }
 .trip-shortcut .bg{
