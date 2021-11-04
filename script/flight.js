@@ -402,6 +402,12 @@ const aircraftData = {
         id: 'a321neo',
         imageType: 'jpg'
     },
+    a35k: {
+        manufacturer: 'Airbus',
+        name: 'A350-1000',
+        id: 'a35k',
+        imageType: 'jpg'
+    },
     e175: {
         manufacturer: 'Embraer',
         name: 'E175',
@@ -677,6 +683,28 @@ const flightData = [
         date: 'Sun, 19 Nov 2021',
         airline: airlineData.spirit,
     },
+    {
+        number: 'CX 888',
+        dep: {
+            airport: 'ORD',
+            city: 'Chicago',
+            time: '1:20pm',
+            terminal: '-',
+            gate: '-',
+        },
+        arr: {
+            airport: 'HKG',
+            city: 'Hong Kong',
+            time: '7:00am',
+            terminal: '-',
+            gate: '-',
+        },
+        seat: '-',
+        aircraft: aircraftData.a35k,
+        duration: '2h 4m',
+        date: 'Sun, 19 Nov 2021',
+        airline: airlineData.cathay,
+    },
 ]
 
 const tripData = [
@@ -903,6 +931,13 @@ const tripData = [
                 duration: 'To book',
                 direction: 'One-Way',
                 content: [
+                    {
+                        type: 'flight',
+                        data: flightData[5],
+                        render: function () {
+                            return flightCard(this.data)
+                        },
+                    },
                 ],
             },
         ],
