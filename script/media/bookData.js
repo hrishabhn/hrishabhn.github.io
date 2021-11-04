@@ -6,7 +6,7 @@ const bookData0 = [
         link: 'ibooks://',
         author: 'Reed Hastings & Erin Meyer',
         coverType: 'jpg',
-        progress: '88%',
+        progress: '90%',
         format: 'EBook',
     },
     {
@@ -17,7 +17,7 @@ const bookData0 = [
         },
         author: 'Yuval Noah Harari',
         coverType: 'jpg',
-        progress: '1h 27m left',
+        progress: '34m left',
         format: 'AudioBook',
     },
     {
