@@ -997,6 +997,7 @@ function tripShortcut(n) {
 
 
 function tripCard(n) {
+    checkPass()
     const trip = tripData[n]
     // console.log(trip)
 
