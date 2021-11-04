@@ -90,6 +90,15 @@ const pageData0 = {
             type: 'spacer-content',
         },
         {
+            type: 'home-tray',
+            render: function() {
+                return homeCardTray()
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
             type: 'app-list-tray',
             content: [
                 {
