@@ -92,7 +92,11 @@ function countdownCalculate(date) {
             result = [days,'days']
         }
     } else if (hours > 0) {
-        result = [hours,'hours']
+        if (hours < 2) {
+            result = [hours * 60 + minutes, 'minutes']
+        } else {
+            result = [hours,'hours']
+        }
     } else if (minutes > 0) {
         result = [minutes,'minutes']
     } else {
