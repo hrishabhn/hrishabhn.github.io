@@ -9,6 +9,7 @@ function loadApp() {
     // testTV()
 
     // showModal(null,tripCard(0))
+    // openModal(tripCard(0))
 }
 
 function openFirstPage(n) {
