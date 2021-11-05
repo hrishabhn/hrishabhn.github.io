@@ -2,6 +2,28 @@ function dateNow() {
     return processDate(new Date())
 }
 
+function timeOfDay() {
+    if ((dateNow().hour > 0) && (dateNow().hour < 4)) {
+        var t = 0
+    } else if ((dateNow().hour > 3) && (dateNow().hour < 7)) {
+        var t = 1
+    } else if ((dateNow().hour > 6) && (dateNow().hour < 10)) {
+        var t = 2
+    } else if ((dateNow().hour > 9) && (dateNow().hour < 13)) {
+        var t = 3
+    } else if ((dateNow().hour > 12) && (dateNow().hour < 16)) {
+        var t = 4
+    } else if ((dateNow().hour > 15) && (dateNow().hour < 19)) {
+        var t = 5
+    } else if ((dateNow().hour > 18) && (dateNow().hour < 21)) {
+        var t = 6
+    } else if (dateNow().hour > 20) {
+        var t = 7
+    }
+
+    return t
+}
+
 function processDate(dateString) {
     // console.log(dateString)
     var date = new Date(dateString)
