@@ -10,15 +10,13 @@ const bookData0 = [
         format: 'EBook',
     },
     {
-        name: 'Homo Deus',
-        id: 'homodeus',
-        link: {
-            audible: 'B01N4DCBK6',
-        },
-        author: 'Yuval Noah Harari',
+        name: 'Going Solo',
+        id: 'goingSolo',
+        link: 'ibooks://',
+        author: 'Roald Dahl',
         coverType: 'jpg',
-        progress: '34m left',
-        format: 'AudioBook',
+        progress: '4%',
+        format: 'EBook',
     },
     {
         name: 'Faster Than Normal',
@@ -60,15 +58,6 @@ const bookData1 = [
         coverType: 'jpg',
         progress: '9%',
         format: 'EBook & Audiobook',
-    },
-    {
-        name: 'Going Solo',
-        id: 'goingSolo',
-        link: 'ibooks://',
-        author: 'Roald Dahl',
-        coverType: 'jpg',
-        progress: '4%',
-        format: 'EBook',
     },
     {
         name: 'The Ride of a Lifetime',
@@ -161,19 +150,30 @@ const bookData2 = [
 
 const bookData3 = [
     {
-        name: 'Boy',
-        id: 'boy',
-        link: 'ibooks://',
-        author: 'Roald Dahl',
+        name: 'Homo Deus',
+        id: 'homodeus',
+        link: {
+            audible: 'B01N4DCBK6',
+        },
+        author: 'Yuval Noah Harari',
         coverType: 'jpg',
         progress: 'FINISHED',
-        format: 'EBook',
+        format: 'AudioBook',
     },
     {
         name: 'Has the West Lost It?',
         id: 'west',
         link: 'ibooks://',
         author: 'Kishore Mahbubani',
+        coverType: 'jpg',
+        progress: 'FINISHED',
+        format: 'EBook',
+    },
+    {
+        name: 'Boy',
+        id: 'boy',
+        link: 'ibooks://',
+        author: 'Roald Dahl',
         coverType: 'jpg',
         progress: 'FINISHED',
         format: 'EBook',
