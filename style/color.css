@@ -10,6 +10,8 @@
 }
 .layer-fg{
     background-color: var(--light-layer-0);
+    color: var(--dark-layer-1);
+    fill: var(--dark-layer-1);
 }
 
 a{
@@ -32,6 +34,8 @@ a.layer-fg{
     }
     .layer-fg{
         background-color: var(--dark-layer-1);
+        color: white;
+        fill: white;
     }
 
     a{

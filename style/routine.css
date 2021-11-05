@@ -27,6 +27,7 @@
     padding: 30px;
     border-radius: 100px;
     transition: all 0.15s;
+    fill: white;
 }
 .routine-card.done .icon{
     transform: scale(0.8);
@@ -38,8 +39,7 @@
     height: 30px;
     width: 30px;
     border-radius: 100px;
-    fill: black;
-    padding: 5px;
+    padding: 6px;
     transition: all 0.15s;
 }
 .routine-card.undone  .check{
@@ -48,10 +48,11 @@
 .routine-card p{
     font-size: 12px;
     font-weight: 400;
-    width: 100px;
+    width: 90px;
     text-align: center;
     flex-grow: 1;
     align-items: flex-start;
+    cursor: default;
 }
 .routine-card.done .icon, .routine-card.done p{
     filter: brightness(0.5);

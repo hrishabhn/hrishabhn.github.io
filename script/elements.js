@@ -45,6 +45,11 @@ function spacerContentElement() {
     spacerContent.classList = 'spacer-content'
     return spacerContent
 }
+function spacerContentNegElement() {
+    var spacerContent = document.createElement('div')
+    spacerContent.classList = 'spacer-content neg'
+    return spacerContent
+}
 function spacerAppListElement() {
     var spacerAppList = document.createElement('div')
     spacerAppList.classList = 'spacer-app-list'

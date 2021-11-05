@@ -1,6 +1,4 @@
 function loadApp() {
-    routineLoad()
-
     baseElements[0].render()
     pageDataRender()
     loadSwitches()
@@ -57,17 +55,24 @@ const baseElements = [
     }
 ]
 
-function checkPass() {
-    console.log(getCookie('verified'))
+function behindPass() {
+    if (!checkPass()) {
+        getPass()
 
-    if (!getCookie('verified')) {
-        var pass = prompt('Enter password:')
-
-        while (pass != 'pass') {
-            pass = prompt('Wrong password, try again:')
-        }
-
-        setCookie('verified',true,14)
-        console.log(getCookie('verified'))
     }
+}
+
+function checkPass() {
+    return (!!getCookie('verified'))
+}
+
+function getPass() {
+    var pass = prompt('Enter password:')
+
+    while (pass != 'pass') {
+        pass = prompt('Wrong password, try again:')
+    }
+
+    setCookie('verified',true,14)
+    console.log(getCookie('verified'))
 }

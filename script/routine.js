@@ -1,15 +1,41 @@
 function routineLoad() {
-    for (let i = 0; i < routineData.length; i++) {
-        for (let j = 0; j < routineData[i].length; j++) {
-            routineCookies(i, j)
+    if (checkPass()) {
+        console.log(dateNow().hour)
+    
+        const time = timeOfDay()
+    
+        if ((time == 2) || (time == 3)) {
+            var i = 0
+        } else if ((time == 6) || (time == 7)) {
+            var i = 1
         }
+    
+    
+        for (let i = 0; i < routineData.length; i++) {
+            for (let j = 0; j < routineData[i].length; j++) {
+                routineCookies(i, j)
+            }
+        }
+    
+        if (i) {
+            return routineTray(i)
+        } else {
+            var spacer  = document.createElement('div')
+            spacer.classList = 'spacer-content neg'
+            return spacerContentNegElement()
+        }
+
+
+
+    } else {
+        return spacerContentNegElement()
     }
 }
 
 function routineCookies(i, j) {
     // console.log(i, j)
     if (!(getCookie(`routine-${i}-${j}`))) {
-        setCookie(`routine-${i}-${j}`, 0, 1 / 6)
+        setCookie(`routine-${i}-${j}`, 0, 1 / 3)
     }
 
 
@@ -110,7 +136,7 @@ function routineItem(i, j) {
     <div class="icon layer-1 card-shadow ${data.color}">${data.icon}</div>
     <div class="spacer-x" style="--size: 10px;"></div>
     <p>${data.name}</p>
-    <div class="check layer-fg card-shadow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="23.945 25.661 52.108 52.108" xml:space="preserve"><path d="m43.263 69-.077-.001a3 3 0 0 1-2.107-.943L24.761 50.723a3 3 0 0 1 4.369-4.113l14.242 15.129 27.606-26.473a2.999 2.999 0 1 1 4.152 4.331L45.339 68.166a3 3 0 0 1-2.076.834z"/></svg></div>`
+    <div class="check layer-fg card-shadow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="65.19 65.191 174.621 174.621" style="enable-background:new 0 0 305.002 305.002" xml:space="preserve"><path d="m218.473 93.97-90.546 90.547-41.398-41.398c-4.882-4.881-12.796-4.881-17.678 0-4.881 4.882-4.881 12.796 0 17.678l50.237 50.237a12.465 12.465 0 0 0 8.839 3.661c3.199 0 6.398-1.221 8.839-3.661l99.385-99.385c4.881-4.882 4.881-12.796 0-17.678-4.882-4.882-12.797-4.882-17.678-.001z"/></svg></div>`
 
     if (data.complete) {
         item.classList.add('done')

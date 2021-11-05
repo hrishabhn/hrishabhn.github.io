@@ -20,6 +20,15 @@ const pageData0 = {
     },
     content: [
         {
+            type: 'routine',
+            render: function() {
+                return routineLoad()
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
             type: 'search',
             engine: 'Google',
             link: googleLoad(),
@@ -956,7 +965,7 @@ function renderContent(content) {
 var oldPage = 0
 function openPage(n) {
     if (pageData[n].info.secure) {
-        checkPass()
+        behindPass()
     }
 
     document.getElementById(`page-${oldPage}`).classList.add('hidden')
