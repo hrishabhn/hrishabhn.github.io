@@ -18,7 +18,7 @@
 // },
 // {
 //     type: 'flight',
-//     action: function() {  },
+//     action: function() { openModal(flightDetail(flightData[0])) },
 //     text: `${flightData[0].airline.name} ${flightData[0].number}`,
 //     subtext: `${flightData[0].dep.airport} &#8594 ${flightData[0].arr.airport}`,
 //     // gate: flightData[0].dep.gate,
@@ -106,7 +106,7 @@ const homeCardData = [
     },
     {
         type: 'trip',
-        action: function() { openModal(tripCard(0)) },
+        action: function() { openModal(tripCard(1)) },
         text: tripData[1].name,
         subtext: `${tripData[1].subhead} &#149 ${countdownCalculate(tripData[1].start)[0]} ${countdownCalculate(tripData[1].start)[1]}`,
         image: tripData[1].image,
