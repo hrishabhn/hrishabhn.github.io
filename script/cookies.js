@@ -21,6 +21,13 @@ function getCookie(cname) {
   return "";
 }
 
+function removeCookie(cname) {
+  const d = new Date();
+  d.setTime(d.getTime());
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + '' + ";" + expires;
+}
+
 
 function googleSearch(query) {
   if ('ontouchstart' in document.documentElement) {

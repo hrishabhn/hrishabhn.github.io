@@ -210,10 +210,7 @@ function homeCardTray() {
     // tray.append(spacerElement(5,'hidden-mobile'))
 
     for (let i = 0; i < homeCardData.length; i++) {
-        console.log(homeCardData[i].render())
         tray.append(homeCardData[i].render())
-
-
         tray.append(spacerElement(15))
         // tray.append(spacerElement(5,'hidden-mobile'))
     }

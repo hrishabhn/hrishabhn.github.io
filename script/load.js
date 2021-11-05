@@ -1,4 +1,6 @@
 function loadApp() {
+    routineLoad()
+
     baseElements[0].render()
     pageDataRender()
     loadSwitches()

@@ -1,0 +1,58 @@
+.routine-container{
+    flex-direction: column;
+    border-radius: 10px;
+}
+.routine-container .title{
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px;
+    padding-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.routine-tray{
+    width: 100%;
+    padding: 20px;
+    padding-top: 10px;
+}
+.routine-card{
+    flex-direction: column;
+    height: 100%;
+
+}
+.routine-card .icon{
+    height: 100px;
+    width: 100px;
+    padding: 30px;
+    border-radius: 100px;
+    transition: all 0.15s;
+}
+.routine-card.done .icon{
+    transform: scale(0.8);
+}
+.routine-card .check{
+    position: absolute;
+    top: calc(-5px + 100px - 30px);
+    right: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    fill: black;
+    padding: 5px;
+    transition: all 0.15s;
+}
+.routine-card.undone  .check{
+    transform: scale(0);
+}
+.routine-card p{
+    font-size: 12px;
+    font-weight: 400;
+    width: 100px;
+    text-align: center;
+    flex-grow: 1;
+    align-items: flex-start;
+}
+.routine-card.done .icon, .routine-card.done p{
+    filter: brightness(0.5);
+}
