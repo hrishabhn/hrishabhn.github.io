@@ -22,7 +22,7 @@ const pageData0 = {
         {
             type: 'routine',
             render: function() {
-                return routineLoad()
+                return secureElement(routineLoad())
             }
         },
         {

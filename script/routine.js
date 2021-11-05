@@ -1,33 +1,24 @@
 function routineLoad() {
-    if (checkPass()) {
-        console.log(dateNow().hour)
-    
-        const time = timeOfDay()
-    
-        if ((time == 2) || (time == 3)) {
-            var i = 0
-        } else if ((time == 6) || (time == 7)) {
-            var i = 1
-        }
-    
-    
-        for (let i = 0; i < routineData.length; i++) {
-            for (let j = 0; j < routineData[i].length; j++) {
-                routineCookies(i, j)
-            }
-        }
-    
-        if (i) {
-            return routineTray(i)
-        } else {
-            var spacer  = document.createElement('div')
-            spacer.classList = 'spacer-content neg'
-            return spacerContentNegElement()
-        }
+    const time = timeOfDay()
+
+    if ((time == 2) || (time == 3)) {
+        var i = 0
+    } else if ((time == 6) || (time == 7)) {
+        var i = 1
+    }
 
 
+    for (let i = 0; i < routineData.length; i++) {
+        for (let j = 0; j < routineData[i].length; j++) {
+            routineCookies(i, j)
+        }
+    }
 
+    if (i) {
+        return routineTray(i)
     } else {
+        var spacer  = document.createElement('div')
+        spacer.classList = 'spacer-content neg'
         return spacerContentNegElement()
     }
 }
@@ -108,8 +99,6 @@ function routineTray(i) {
     tray.classList = 'routine-tray'
     var tray = hscrollElement()
     tray.append(spacerElement(20))
-    console.log(routineData[i])
-    // console.log(i)
 
     for (let j = 0; j < routineData[i].data.length; j++) {
         tray.append(routineItem(i, j))

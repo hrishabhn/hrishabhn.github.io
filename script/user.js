@@ -18,3 +18,11 @@ function getPass() {
     setCookie('verified',true,14)
     console.log(getCookie('verified'))
 }
+
+function secureElement(element) {
+    console.log(checkPass())
+
+    if (checkPass()) {
+        return element
+    } else { return(spacerContentNegElement()) }
+}

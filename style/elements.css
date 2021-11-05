@@ -198,6 +198,7 @@
         width: 15px;
         flex-shrink: 0;
     }
+    .spacer-content.neg{
         margin: -15px 0;
     }
     .page-width{
