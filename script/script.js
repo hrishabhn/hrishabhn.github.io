@@ -78,7 +78,13 @@ function processTime(hours,mins) {
         mins = `0${mins}`
     }
 
-    return `${hours}:${mins}${ampm}`
+    if (mins == 0) {
+        mins = ''
+    } else {
+        mins = `:${mins}`
+    }
+
+    return `${hours}${mins}${ampm}`
 }
 
 
@@ -129,3 +135,11 @@ function countdownCalculate(date) {
     return result
     console.log(string)
 }
+
+function googleSearch(query) {
+    if ('ontouchstart' in document.documentElement) {
+      return `google://search?q=${query}`
+    } else {
+      return `http://www.google.com/search?q=${query}`
+    }
+  }

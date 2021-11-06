@@ -20,8 +20,6 @@ function getPass() {
 }
 
 function secureElement(element) {
-    console.log(checkPass())
-
     if (checkPass()) {
         return element
     } else { return(spacerContentNegElement()) }

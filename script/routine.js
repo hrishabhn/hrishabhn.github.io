@@ -3,7 +3,7 @@ function routineLoad() {
 
     if ((time == 2) || (time == 3)) {
         var i = 0
-    } else if ((time == 6) || (time == 7)) {
+    } else if ((time == 6) || (time == 7) || (time == 0)) {
         var i = 1
     }
 
@@ -83,24 +83,40 @@ const routineData = [
 
 function routineTray(i) {
     var container = document.createElement('div')
-    container.classList = 'routine-container page-width layer-1 card-shadow'
+    container.id = 'routine-container'
+    container.classList = 'routine-container page-width layer-1 card-shadow '
     
-    var title = document.createElement('div')
+    var title = document.createElement('a')
     title.classList = 'title'
-    title.innerHTML = routineData[i].greeting
+    title.onclick = function() {routineAllToggle()}
+    title.innerHTML = `
+    <p>${routineData[i].greeting}</p>
+    <div class="grow"></div>
+    <div class="full-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.071 12 9.25 8.179a1.061 1.061 0 0 1 1.5-1.5l4.614 4.614a.999.999 0 0 1 0 1.414l-4.614 4.614a1.061 1.061 0 0 1-1.5-1.5L13.071 12z"></path></svg>
+    </div>`
     container.append(title)
     container.append(spacerElement(15))
-    
-    var tray = hscrollHuluElement()
-    var tray = document.createElement('div')
-    tray.classList = 'routine-tray'
+
+    // var tray = hscrollHuluElement()
+    // var tray = document.createElement('div')
+    // tray.classList = 'routine-tray'
     var tray = hscrollElement()
     tray.append(spacerElement(20))
+
+    var product = 1
 
     for (let j = 0; j < routineData[i].data.length; j++) {
         tray.append(routineItem(i, j))
         tray.append(spacerElement(20))
+
+        product = product * routineData[i].data[j].complete
     }
+
+    if (product) {
+        container.classList.add('all-done')
+    }
+
     tray.append(growElement())
     container.append(tray)
     container.append(spacerElement(20))
@@ -148,4 +164,9 @@ function routineSwitchToggle(i, j) {
         element.classList.remove('undone')
         audioPass.play()
     }
+}
+
+function routineAllToggle() {
+    const element = document.getElementById('routine-container')
+    element.classList.toggle('all-done')
 }

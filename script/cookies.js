@@ -27,12 +27,3 @@ function removeCookie(cname) {
   let expires = "expires=" + d.toUTCString();
   document.cookie = cname + "=" + '' + ";" + expires;
 }
-
-
-function googleSearch(query) {
-  if ('ontouchstart' in document.documentElement) {
-    return `google://search?q=${query}`
-  } else {
-    return `http://www.google.com/search?q=${query}`
-  }
-}
