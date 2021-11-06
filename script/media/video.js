@@ -352,6 +352,14 @@ function tvHuluElement(a,b) {
         var dateHTML = ``
     }
 
+    var service = processService(movie)
+
+    if (service) {
+        var serviceHTML = `style="--service: url(media-image/service/${processService(movie)}.svg);"`
+    } else {
+        var serviceHTML = ``
+    }
+
 
     var movieCardElement = document.createElement('div')
     movieCardElement.classList = 'hulu-card'
@@ -368,11 +376,13 @@ function tvHuluElement(a,b) {
     //     </a>
     // </div>`
 
+
+
     var movieCardHTML = `
     <div class="bg"></div>
     <div class="poster-container">
         <div class="poster" style="--poster: url(media-image/TV/mobile/${movie.id}.${movie.style.mobileType}); --ratio: ${movie.style.mobileSize};">
-            <div class="service" style="--service: url(media-image/service/${processService(movie)}.svg);"></div>
+            <div class="service" ${serviceHTML}></div>
             <div class="gradient" style="--col1: #${movie.style.color}00;--col2: #${movie.style.color};"></div>
         </div>
     </div>
