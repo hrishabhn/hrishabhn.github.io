@@ -119,7 +119,7 @@ function eventColor(calendar) {
 
 function eventLink() {
     if ('ontouchstart' in document.documentElement) {
-        return `calendar://`
+        return `calshow://`
     } else {
         return `ical://`
     }
