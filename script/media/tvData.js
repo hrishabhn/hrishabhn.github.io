@@ -307,6 +307,8 @@
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '75897',
