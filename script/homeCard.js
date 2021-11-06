@@ -126,7 +126,7 @@ function homeCardBasic(data) {
 
 
     var card = document.createElement('a')
-    card.classList = 'homecard basic clickable layer-1'
+    card.classList = 'homecard basic clickable layer-1 hover-shadow'
     card.onclick = function () { data.action() }
     card.innerHTML = `
     <div class="icon ${data.color}">${data.icon}</div>
@@ -139,7 +139,7 @@ function homeCardBasic(data) {
 }
 function homeCardTrip(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard trip border clickable layer-1'
+    card.classList = 'homecard trip border clickable layer-1 hover-shadow'
     card.onclick = function () { data.action() }
     card.innerHTML = `
     <div class="bg" style="background-image: url(${data.image});"></div>
@@ -160,7 +160,7 @@ function homeCardFlight(data) {
     } else { var gate = `` }
 
     var card = document.createElement('a')
-    card.classList = 'homecard basic flight border clickable layer-1'
+    card.classList = 'homecard basic flight border clickable layer-1 hover-shadow'
     card.style.setProperty('--fgCol',`#${data.color.fg}`)
     card.style.setProperty('--bgCol',`#${data.color.bg}`)
     card.onclick = function () { data.action() }
@@ -177,7 +177,7 @@ function homeCardFlight(data) {
 
 function homeCardTV(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard tv clickable layer-1'
+    card.classList = 'homecard tv clickable layer-1 hover-shadow'
     card.onclick = function () { data.action() }
     card.innerHTML = `
     <div class="bg" style="background-image: url(${data.image});"></div>
@@ -189,7 +189,7 @@ function homeCardTV(data) {
 }
 function homeCardBook(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard basic book clickable layer-1'
+    card.classList = 'homecard basic book clickable layer-1 hover-shadow'
     card.onclick = function () { pageData[4].open() }
     card.innerHTML = `
     <div class="cover" style="background-image: url(${data.image});"></div>
