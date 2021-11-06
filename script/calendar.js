@@ -10,7 +10,7 @@ async function fetchEvents() {
     var eventData = []
 
     for (let i = 0; i < totalEvents; i++) {
-        let response = await fetch(`https://hrishabhn.github.io/calendar/event${i + 1}.json`);
+        let response = await fetch(`calendar/event${i + 1}.json`);
         let data = JSON.parse(await response.text())
 
         eventData.push(data)
