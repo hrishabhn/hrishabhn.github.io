@@ -10,6 +10,7 @@ function loadApp() {
     // openModal(flightDetail(flightData[2]))
     // showModal(null,tripCard(0))
     // openModal(tripCard(0))
+    calTest()
 }
 
 function openFirstPage(n) {
