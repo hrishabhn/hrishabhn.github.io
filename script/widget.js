@@ -37,10 +37,6 @@ function widgetPopulate() {
 
 const countdownData = [
     {
-        name: 'IE 335 Quiz 4',
-        date: 'Nov 5, 2021 12:30:00 GMT-04:00',
-    },
-    {
         name: 'San Diego',
         date: 'Nov 20, 2021 00:09:30',
     },
@@ -125,6 +121,10 @@ const countdownData = [
     //     name: 'IE 386 Exam 2',
     //     date: 'Nov 4, 2021 09:30:00 GMT-04:00',
     // },
+    {
+        name: 'IE 335 Quiz 4',
+        date: 'Nov 5, 2021 12:30:00 GMT-04:00',
+    },
 ]
 
 function coundownPopulate() {
