@@ -28,9 +28,6 @@ function routineCookies(i, j) {
     if (!(getCookie(`routine-${i}-${j}`))) {
         setCookie(`routine-${i}-${j}`, 0, 1 / 3)
     }
-
-
-    // removeCookie(`routine-${i}-${j}`)
 }
 
 const routineData = [
