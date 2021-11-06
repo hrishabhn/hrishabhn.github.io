@@ -20,6 +20,17 @@ const pageData0 = {
     },
     content: [
         {
+            type: 'search',
+            engine: 'Google',
+            link: googleLoad(),
+            render: function() {
+                return searchElement(this)
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
             type: 'routine',
             render: function() {
                 return secureElement(routineLoad())
@@ -29,11 +40,9 @@ const pageData0 = {
             type: 'spacer-content',
         },
         {
-            type: 'search',
-            engine: 'Google',
-            link: googleLoad(),
+            type: 'calendar',
             render: function() {
-                return searchElement(this)
+                return secureElement(calendarTrayRender())
             }
         },
         {
