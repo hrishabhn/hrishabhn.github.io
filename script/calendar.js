@@ -3,7 +3,7 @@ function calTest() {
 }
 
 async function fetchText() {
-    let response = await fetch('/readme.txt');
+    let response = await fetch('calendar/event1.json');
     let data = await response.text();
     console.log(data);
 }
