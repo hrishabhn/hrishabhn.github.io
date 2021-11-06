@@ -124,7 +124,7 @@ function tvPopupElement(a,b,old) {
             <div class="spacer-x" style="--size: 8px;"></div>
             <div class="spacer-x only-mobile" style="--size: 12px;"></div>
             <div class="fill-width">
-                <a class="play clickable card-shadow" ${linkHTML} style="--col: #${movie.style.color};" target="_blank">
+                <a class="play clickable card-shadow" ${linkHTML} style="--col: #${movie.style.color};" target="_blank" onclick="serviceAudio('${movie.info.service}')">
                     <div class="icon"><svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></svg></div>
                     <div class="spacer-x" style="--size: 5px;"></div>
                     <p>${processLocation(movie.info.location)}</p>
@@ -549,3 +549,18 @@ function sameService(service,a,b) {
     return sameMovies
 }
 
+function serviceAudio(service) {
+    if (service == 'netflix') {
+        var sound = new Audio('audio/netflix.mp3')
+        console.log(sound)
+        sound.play()
+    } else if (service == 'hulu') {
+        var sound = new Audio('audio/hulu.mp3')
+        console.log(sound)
+        sound.play()
+    } else if (service == 'hbo') {
+        var sound = new Audio('audio/hbo.mp3')
+        console.log(sound)
+        sound.play()
+    }
+}
