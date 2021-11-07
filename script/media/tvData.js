@@ -921,6 +921,39 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: 'Eternals',
+        id: 'eternals',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            studio: 'marvel',
+            location: 'Coming Soon',
+            date: 'Nov 5, 2021',
+            desc: {
+                year: 2021,
+                genre: [
+                    'sci-fi',
+                    'MCU',
+                ],
+            },
+            summary: "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
+        },
+        style: {
+            color: '645542',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/eternals-2021',
+            imdbID: 'tt9032400',
+        },
+    },
+    {
         name: 'Knives Out',
         id: 'knives',
         link: {
@@ -997,6 +1030,8 @@ const movieData3 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '10 / 10',
         },
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/dil-chahta-hai-2001',
@@ -1021,6 +1056,8 @@ const movieData3 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '10 / 10',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -1117,6 +1154,8 @@ const movieData3 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -1708,75 +1747,6 @@ const movieData5 = [
     },
 ]
 const movieData6 = [
-    {
-        name: 'Fairfax',
-        id: 'fairfax',
-        link: {
-            primeVideo: 'B09HSV9MHL'
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            date: 'Oct 29, 2021',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
-        },
-        style: {
-            color: 'dedccc',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '382466',
-            reelgoodLink: 'https://reelgood.com/show/fairfax-2021',
-            imdbID: 'tt7492014',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Eternals',
-        id: 'eternals',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            studio: 'marvel',
-            location: 'Coming Soon',
-            date: 'Nov 5, 2021',
-            desc: {
-                year: 2021,
-                genre: [
-                    'sci-fi',
-                    'MCU',
-                ],
-            },
-            summary: "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
-        },
-        style: {
-            color: '645542',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/eternals-2021',
-            imdbID: 'tt9032400',
-        },
-    },
     {
         name: 'Cowboy Bebop',
         id: 'cowboy2',
@@ -3715,6 +3685,42 @@ const movieData10 = [
 ]
 
 const movieDataArchive = [
+    {
+        name: 'Fairfax',
+        id: 'fairfax',
+        link: {
+            primeVideo: 'B09HSV9MHL'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            date: 'Oct 29, 2021',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
+        },
+        style: {
+            color: 'dedccc',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '382466',
+            reelgoodLink: 'https://reelgood.com/show/fairfax-2021',
+            imdbID: 'tt7492014',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'The Problem With Jon Stewart',
         id: 'problem',

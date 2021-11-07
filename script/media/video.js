@@ -390,8 +390,8 @@ function tvHuluElement(a,b) {
     <div class="spacer-x" style="--size: 8px;"></div>
     <div class="desc">${processDesc(movie)}</div>
     <div class="spacer-x" style="--size: 10px;"></div>
-    <a class="info clickable" onclick="tvPopupShow(${a},${b})">
-        <p>WATCH</p>
+    <a class="info clickable-text" onclick="tvPopupShow(${a},${b})">
+        <p>MORE</p>
         <div class="grow"></div>
         <div class="icon">
             <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>

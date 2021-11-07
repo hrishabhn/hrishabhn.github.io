@@ -65,7 +65,7 @@ function processDay(dayIndex,type) {
 function processTime(hours,mins) {
     var ampm = 'am'
 
-    if (hours > 12) {
+    if (hours > 11) {
         hours = hours - 12
         ampm = 'pm'
     }
