@@ -3372,6 +3372,64 @@ const movieData9 = [
 ]
 const movieData10 = [
     {
+        name: 'Crazy Rich Asians',
+        id: 'crazyRich',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GX6QtHQxBD5nCwwEAAAHM:type:feature',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            desc: {
+                year: 2018,
+                genre: [
+                    'drama',
+                    'romance',
+                ],
+            },
+            summary: "An American-born Chinese economics professor accompanies her boyfriend to Singapore for his best friend's wedding, only to get thrust into the lives of Asia's rich and famous.",
+        },
+        style: {
+            color: '76665b',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/crazy-rich-asians-2018',
+            imdbID: 'tt3104988',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Constance Wu',
+                image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3NDc1NzUxNDE3ODgyMjc4/gettyimages-632702568.jpg',
+                char: 'Rachel Chu',
+            },
+            {
+                actor: 'Henry Golding',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTEzNzcwODU0ODJeQTJeQWpwZ15BbWU4MDQ5MzE4MDYz._V1_.jpg',
+                char: 'Nick Young',
+            },
+            {
+                actor: ' Michelle Yeoh',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTg0NTI0NDkzOF5BMl5BanBnXkFtZTcwMjYwMTIwNw@@._V1_.jpg',
+                char: 'Eleanor Young',
+            },
+            {
+                actor: 'Gemma Chan',
+                image: 'https://m.media-amazon.com/images/M/MV5BYTI3ZDEwYjktZjVhYS00NTlhLTkwOWEtNjM1MzEyMWU5M2QyXkEyXkFqcGdeQXVyMTE3ODY2Nzk@._V1_.jpg',
+                char: 'Astrid Young Teo',
+            },
+            {
+                actor: 'Jimmy O. Yang',
+                image: 'https://static.wikia.nocookie.net/criminalminds/images/0/0e/Jimmy_O._Yang.jpg',
+                char: 'Bernard Tai',
+            },
+        ],
+    },
+    {
         name: 'Dave Chappelle: The Closer',
         id: 'closer',
         link: {
