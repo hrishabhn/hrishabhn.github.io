@@ -272,8 +272,17 @@ function appLinkRender(content) {
         //     </div>
         //     <div class="spacer-x" style="--size: 10px;"></div>
         // </div>`
+
+        if (content.data[i].link) {
+            var trigger = `href="${content.data[i].link}" target="_${content.data[i].target}"`
+        } else if (content.data[i].action) {
+            var trigger = `onclick="${content.data[i].action}"`
+        } else {
+            var trigger = `onclick=""`
+        }
+        
         link.innerHTML = `
-            <a class="link layer-1 clickable" href="${content.data[i].link}" target="_${content.data[i].target}">
+            <a class="link layer-1 clickable" ${trigger}>
                 <div class="bg ${content.data[i].background}"></div>
                 <div class="fg layer-1"></div>
                 <div class="icon ${content.data[i].background}">${content.data[i].icon}</div>
