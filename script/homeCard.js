@@ -97,6 +97,14 @@ const homeCardData = [
         render: function() { return homeCardTV(this) }
     },
     {
+        type: 'tv',
+        action: function() { tvPopupShow(0,2) },
+        text: movieData[0][2].name,
+        subtext: `${processDesc(movieData[0][2])}`,
+        image: `media-image/TV/background/${movieData[0][2].id}.${movieData[0][2].style.posterType}`,
+        render: function() { return homeCardTV(this) }
+    },
+    {
         type: 'book',
         action: function() { pageData3.open() },
         text: bookData[0][1].name,
@@ -104,14 +112,14 @@ const homeCardData = [
         image: `media-image/books/${bookData[0][1].id}.${bookData[0][1].coverType}`,
         render: function() { return homeCardBook(this) }
     },
-    {
-        type: 'trip',
-        action: function() { openModal(tripCard(1)) },
-        text: tripData[1].name,
-        subtext: `${tripData[1].subhead} &#149 ${countdownCalculate(tripData[1].start)[0]} ${countdownCalculate(tripData[1].start)[1]}`,
-        image: tripData[1].image,
-        render: function() { return homeCardTrip(this) }
-    },
+    // {
+    //     type: 'trip',
+    //     action: function() { openModal(tripCard(1)) },
+    //     text: tripData[1].name,
+    //     subtext: `${tripData[1].subhead} &#149 ${countdownCalculate(tripData[1].start)[0]} ${countdownCalculate(tripData[1].start)[1]}`,
+    //     image: tripData[1].image,
+    //     render: function() { return homeCardTrip(this) }
+    // },
 ]
 
 

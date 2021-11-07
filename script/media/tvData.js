@@ -152,6 +152,54 @@
         },
     },
     {
+        name: 'Ghosts',
+        id: 'ghosts',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'fantasy',
+                ],
+            },
+            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
+        },
+        style: {
+            color: '513d35',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'png',
+            mobileSize: '3 / 4',
+        },
+        apps: {
+            tvTimeID: 'tt8594324',
+            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
+            imdbID: 'tt8594324',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Charlotte Ritchie',
+                image: 'https://images.mubicdn.net/images/cast_member/562435/cache-635452-1611181278/image-w856.jpg',
+                char: 'Alison Cooper',
+            },
+            {
+                actor: 'Kiell Smith-Bynoe',
+                image: 'https://i.guim.co.uk/img/media/e95bb7a992d5b17c209a47dd27f7f6fa6c203bc0/1678_445_3832_2299/master/3832.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e6a9a7cb8ff5a39bbf8c6422c9b624dd',
+                char: 'Mike Cooper',
+            },
+        ],
+    },
+    {
         name: 'Cowboy Bebop',
         id: 'cowboy',
         link: {
@@ -625,40 +673,6 @@ const movieData2 = [
             tvTimeID: '75978',
             reelgoodLink: 'https://reelgood.com/show/family-guy-1999',
             imdbID: 'tt0182576',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Ghosts',
-        id: 'ghosts',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 3,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'fantasy',
-                ],
-            },
-            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
-        },
-        style: {
-            color: '513d35',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: 'tt8594324',
-            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
-            // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
     },
