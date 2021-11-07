@@ -1,7 +1,7 @@
 .calendar-event{
     align-items: flex-start;
     height: 70px;
-    width: 250px;
+    min-width: 250px;
     border-radius: 10px;
     overflow: hidden;
 
@@ -39,4 +39,18 @@
     font-size: 12px;
     font-weight: 400;
     opacity: 0.6;
+    text-transform: capitalize;
+}
+.calendar-event .countdown{
+    flex-direction: column;
+    height: 100%;
+    margin-right: 10px;
+}
+.calendar-event .big{
+    font-size: 24px;
+    font-weight: 300;
+}
+.calendar-event .small{
+    font-size: 10px;
+    font-weight: 400;
 }
