@@ -40,6 +40,7 @@
     font-weight: 400;
     opacity: 0.6;
     text-transform: capitalize;
+    margin-top: 2px;
 }
 .calendar-event .countdown{
     flex-direction: column;
