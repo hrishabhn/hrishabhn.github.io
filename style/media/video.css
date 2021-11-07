@@ -255,25 +255,13 @@
     background-color: var(--black-20);
     color: white;
     fill: white;
-    /* padding: 10px; */
+    padding: 12px 15px;
 
     font-size: 10px;
     font-weight: 600;
 }
-.hulu-card .info .play{
-    flex-grow: 1;
-    padding: 15px 15px;
-    font-size: 10px;
-    font-weight: 600;
-    color: white;
-    fill: white;
-}
-.hulu-card .info .play .icon{
-    height: 12px;
-    width: 12px;
-}
 
-.hulu-card .info .more{
+.hulu-card .info .icon{
     height: 14px;
     width: 14px;
     fill: white;
