@@ -4,7 +4,7 @@ async function calTest() {
     calendarTrayPopulate()
 }
 
-const totalEvents = 3
+const totalEvents = 10
 async function fetchEvents() {
 
     var eventData = []
