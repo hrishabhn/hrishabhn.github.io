@@ -51,18 +51,34 @@
 //     image: `media-image/books/${bookData[0][0].id}.${bookData[0][0].coverType}`,
 //     render: function() { return homeCardBook(this) }
 // },
+// {
+//     type: 'countdown',
+//     action: function() { showModal('Countdowns',allCountdownsElement()) },
+//     text: countdownData[0].name,
+//     subtext: 'Countdown',
+//     dataBig: countdownCalculate(countdownData[0].date)[0],
+//     dataSmall: countdownCalculate(countdownData[0].date)[1],
+//     color: 'indigo',
+//     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M25 2C12.317 2 2 12.317 2 25s10.317 23 23 23 23-10.317 23-23S37.683 2 25 2zm0 26c-.462 0-.895-.113-1.286-.3l-6.007 6.007a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414l6.007-6.007A2.969 2.969 0 0 1 22 25a2.99 2.99 0 0 1 2-2.816V8a1 1 0 1 1 2 0v14.184A2.99 2.99 0 0 1 28 25a3 3 0 0 1-3 3z"></path></svg>',
+//     render: function() { return homeCardBasic(this) }
+// },
 
 const homeCardData = [
     {
-        type: 'countdown',
-        action: function() { showModal('Countdowns',allCountdownsElement()) },
-        text: countdownData[0].name,
-        subtext: 'Countdown',
-        dataBig: countdownCalculate(countdownData[0].date)[0],
-        dataSmall: countdownCalculate(countdownData[0].date)[1],
-        color: 'indigo',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M25 2C12.317 2 2 12.317 2 25s10.317 23 23 23 23-10.317 23-23S37.683 2 25 2zm0 26c-.462 0-.895-.113-1.286-.3l-6.007 6.007a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414l6.007-6.007A2.969 2.969 0 0 1 22 25a2.99 2.99 0 0 1 2-2.816V8a1 1 0 1 1 2 0v14.184A2.99 2.99 0 0 1 28 25a3 3 0 0 1-3 3z"></path></svg>',
-        render: function() { return homeCardBasic(this) }
+        type: 'trip',
+        action: function() { openModal(tripCard(0)) },
+        text: tripData[0].name,
+        subtext: `${tripData[0].subhead} &#149 ${countdownCalculate(tripData[0].start)[0]} ${countdownCalculate(tripData[0].start)[1]}`,
+        image: tripData[0].image,
+        render: function() { return homeCardTrip(this) }
+    },
+    {
+        type: 'tv',
+        action: function() { tvPopupShow(0,0) },
+        text: movieData[0][0].name,
+        // subtext: `${processDesc(movieData[0][0])}`,
+        image: `media-image/TV/background/${movieData[0][0].id}.${movieData[0][0].style.posterType}`,
+        render: function() { return homeCardTV(this) }
     },
     {
         type: 'book',
@@ -74,19 +90,11 @@ const homeCardData = [
     },
     {
         type: 'tv',
-        action: function() { tvPopupShow(0,0) },
-        text: movieData[0][0].name,
-        // subtext: `${processDesc(movieData[0][0])}`,
-        image: `media-image/TV/background/${movieData[0][0].id}.${movieData[0][0].style.posterType}`,
+        action: function() { tvPopupShow(0,1) },
+        text: movieData[0][1].name,
+        subtext: `${processDesc(movieData[0][1])}`,
+        image: `media-image/TV/background/${movieData[0][1].id}.${movieData[0][1].style.posterType}`,
         render: function() { return homeCardTV(this) }
-    },
-    {
-        type: 'trip',
-        action: function() { openModal(tripCard(0)) },
-        text: tripData[0].name,
-        subtext: `${tripData[0].subhead} &#149 ${countdownCalculate(tripData[0].start)[0]} ${countdownCalculate(tripData[0].start)[1]}`,
-        image: tripData[0].image,
-        render: function() { return homeCardTrip(this) }
     },
     {
         type: 'book',
@@ -95,14 +103,6 @@ const homeCardData = [
         subtext: bookData[0][1].author,
         image: `media-image/books/${bookData[0][1].id}.${bookData[0][1].coverType}`,
         render: function() { return homeCardBook(this) }
-    },
-    {
-        type: 'tv',
-        action: function() { tvPopupShow(0,3) },
-        text: movieData[0][3].name,
-        subtext: `${processDesc(movieData[0][3])}`,
-        image: `media-image/TV/background/${movieData[0][3].id}.${movieData[0][3].style.posterType}`,
-        render: function() { return homeCardTV(this) }
     },
     {
         type: 'trip',
