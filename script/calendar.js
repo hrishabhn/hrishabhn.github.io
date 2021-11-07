@@ -86,7 +86,7 @@ function eventLocation(location) {
     if (location) {
         return location
     } else {
-        return '-'
+        return ''
     }
 }
 
