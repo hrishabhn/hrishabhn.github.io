@@ -15,7 +15,7 @@ function tvAllCardElement() {
     card.classList = 'tv-all-card layer-0'
     card.innerHTML = `
     <p class="header" onclick="closeModal()">All TV & Movies</p>
-    <input type="text" onkeyup="filterTest()" id="tv-all-search" class="layer-1 button-text" placeholder="Search"></input>`
+    <input type="text" onkeyup="filterTest()" id="tv-all-search" class="layer-1" placeholder="Search"></input>`
 
     var tray = document.createElement('div')
     tray.classList = 'tv-all-tray'
