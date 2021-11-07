@@ -34,6 +34,7 @@ function calendarTrayRender(eventData) {
 function calendarEventRender(n) {
     var card = document.createElement('a')
     card.classList = 'calendar-event clickable'
+    card.id = `event-${n}-card`
     card.href = eventLink()
     card.innerHTML = `
     <div class="bg"></div>
@@ -62,7 +63,8 @@ async function calendarTrayPopulate() {
     // console.log(eventData)
 
     for (i = 1; i < totalEvents + 1; i++) {
-        const card = document.getElementById(`event-${i}`)
+        const container = document.getElementById(`event-${i}`)
+        const card = document.getElementById(`event-${i}-card`)
         const title = document.getElementById(`event-${i}-title`)
         const location = document.getElementById(`event-${i}-location`)
         const time = document.getElementById(`event-${i}-time`)
@@ -76,10 +78,10 @@ async function calendarTrayPopulate() {
             card.classList.add('now')
         }
         if (ended) {
-            card.classList.add('hidden-always')
+            container.classList.add('hidden-always')
         }
 
-        card.style.setProperty('--col', `#${eventColor(await eventData[i - 1].calendar)}`)
+        container.style.setProperty('--col', `#${eventColor(await eventData[i - 1].calendar)}`)
         location.innerHTML = eventLocation(await eventData[i - 1].location)
         title.innerHTML = await eventData[i - 1].name
         time.innerHTML = `${eventDate(await eventData[i - 1].start)} &#149 ${eventTime(await eventData[i - 1].start, await eventData[i - 1].end, await eventData[i - 1].allDay)}`
@@ -140,8 +142,10 @@ function eventColor(calendar) {
         return '00FA92'
     } else if (calendar == 'Travel') {
         return '0E61B9'
+    } else if (calendar == 'Work') {
+        return '005392'
     } else {
-        return 'f0f'
+        return '000'
     }
 }
 
