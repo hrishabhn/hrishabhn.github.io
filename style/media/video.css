@@ -401,9 +401,50 @@
 }
 
 
+.tv-all-card{
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 100vw;
+    min-height: calc(100vh - 80px);
+}
+.tv-all-card .header{
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+#tv-all-search{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-user-select: initial;
 
 
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    box-shadow: 0 8px 24px 0px var(--black-10);
+    transition: all 0.4s;
+}
+#tv-all-search:focus{
+    box-shadow: 0 8px 30px 0px var(--black-20);
+}
 
+
+.tv-all-tray{
+    display: block;
+    width: 1096px;
+    margin: 0px -2px;
+}
+.tv-all-tray .tv-poster{
+    margin: 0px 2px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
 
 
 
@@ -457,5 +498,24 @@
     }
     .hulu-card{
         scroll-margin-left: 15px;
+    }
+
+
+
+    .tv-all-card{
+        padding: 15px;
+        padding-top: 100px;
+        min-height: 100vh;
+    }
+    .tv-all-card .header{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .tv-all-tray{
+        display: block;
+        width: calc(100% + 4px);
+    }
+    .tv-all-tray .tv-poster{
+        width: calc(((100vw - 30px) / 2) - 2px);
     }
 }
