@@ -46,7 +46,6 @@ function calendarEventRender(n) {
         <p id="event-${n}-time" class="time">-</p>
     </div>
     <div class="grow"><div class="spacer-x" style="--size: 4px;"></div></div>
-
     <div class="countdown">
         <p id="event-${n}-countdown-big" class="big">-</p>
         <p id="event-${n}-countdown-small" class="small">-</p>
