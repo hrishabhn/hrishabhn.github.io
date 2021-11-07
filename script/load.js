@@ -7,9 +7,6 @@ function loadApp() {
     openFirstPage(0)
     // tvPopupShow(0,0)
     // testTV()
-    // openModal(flightDetail(flightData[2]))
-    // showModal(null,tripCard(0))
-    // openModal(tripCard(0))
     calTest()
 }
 
@@ -22,7 +19,6 @@ function openFirstPage(n) {
         pageData[n].open()
     }
 }
-
 
 // function testTV() {
 //     for (let i = 0; i < movieData.length; i++) {
