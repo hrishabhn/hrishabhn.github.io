@@ -2844,6 +2844,49 @@ const movieData7 = [
 ]
 const movieData8 = [
     {
+        name: 'Bojack Horseman',
+        id: 'bojack',
+        link: {
+            netflix: '70300800'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 6,
+                yearStart: 2014,
+                yearEnd: 2020,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Meet the most beloved sitcom horse of the '90s, 20 years later. He’s a curmudgeon with a heart of...not quite gold...but something like gold. Copper?",
+        },
+        style: {
+            color: '656592',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/bojack-horseman-2014',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
+    {
         name: "Brooklyn Nine-Nine",
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
