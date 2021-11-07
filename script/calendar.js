@@ -152,6 +152,8 @@ function eventColor(calendar) {
         return '0E61B9'
     } else if (calendar == 'Work') {
         return '005392'
+    }  else if (calendar == 'Errands') {
+        return 'FF40FF'
     } else {
         return '000'
     }
