@@ -514,6 +514,7 @@
         padding-top: 100px;
         padding-bottom: 55px;
         min-height: 100vh;
+        min-width: 100vw;
     }
     .tv-all-card .header{
         font-size: 30px;
