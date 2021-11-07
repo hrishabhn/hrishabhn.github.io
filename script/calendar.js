@@ -90,8 +90,10 @@ async function calendarTrayPopulate() {
             countdownBig.innerHTML = countdownCalculate(await eventData[i - 1].start)[0]
             countdownSmall.innerHTML = countdownCalculate(await eventData[i - 1].start)[1]
         } else {
-            countdownBig.innerHTML = countdownCalculate(await eventData[i - 1].end)[0]
-            countdownSmall.innerHTML = countdownCalculate(await eventData[i - 1].end)[1]
+            countdownBig.innerHTML = ''
+            countdownSmall.innerHTML = ''
+            // countdownBig.innerHTML = countdownCalculate(await eventData[i - 1].end)[0]
+            // countdownSmall.innerHTML = countdownCalculate(await eventData[i - 1].end)[1]
         }
 
 
