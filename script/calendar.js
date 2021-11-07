@@ -25,7 +25,6 @@ function calendarTrayRender(eventData) {
     tray.append(spacerElement(15, 'only-mobile'))
     for (let i = 1; i < totalEvents + 1; i++) {
         tray.append(calendarEventRender(i))
-        tray.append(spacerElement(15))
     }
     tray.append(spacerElement(25))
 
@@ -35,7 +34,6 @@ function calendarTrayRender(eventData) {
 function calendarEventRender(n) {
     var card = document.createElement('a')
     card.classList = 'calendar-event clickable'
-    card.id = `event-${n}`
     card.href = eventLink()
     card.innerHTML = `
     <div class="bg"></div>
@@ -50,8 +48,13 @@ function calendarEventRender(n) {
         <p id="event-${n}-countdown-big" class="big">-</p>
         <p id="event-${n}-countdown-small" class="small">-</p>
     </div>`
+    
+    var container = document.createElement('div')
+    container.id = `event-${n}`
+    container.append(card)
+    container.append(spacerElement(15))
 
-    return card
+    return container
 }
 
 async function calendarTrayPopulate() {
@@ -65,6 +68,16 @@ async function calendarTrayPopulate() {
         const time = document.getElementById(`event-${i}-time`)
         const countdownBig = document.getElementById(`event-${i}-countdown-big`)
         const countdownSmall = document.getElementById(`event-${i}-countdown-small`)
+
+        const started = (new Date(await eventData[i - 1].start)) < new Date()
+        const ended = (new Date(await eventData[i - 1].end)) < new Date()
+
+        if (started) {
+            card.classList.add('now')
+        }
+        if (ended) {
+            card.classList.add('hidden-always')
+        }
 
         card.style.setProperty('--col', `#${eventColor(await eventData[i - 1].calendar)}`)
         location.innerHTML = eventLocation(await eventData[i - 1].location)
