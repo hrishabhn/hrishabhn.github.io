@@ -3455,6 +3455,8 @@ const movieData10 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -3561,6 +3563,8 @@ const movieData10 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             // tvTimeID: null,
@@ -3624,8 +3628,8 @@ const movieData10 = [
             posterType: 'jpg',
             titleType: 'png',
             titleSize: 'mid',
-            // mobileType: 'jpg',
-            // mobileSize: '7 / 10',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/road-to-perdition-2002',

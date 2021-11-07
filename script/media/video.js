@@ -97,11 +97,11 @@ function tvBig(a,b) {
     if (movie.style.mobileType) {
         card.classList.add('hidden-mobile')
         tvBigMob(a,b)
-        console.log('yamob')
+        // console.log('yamob')
     } else {
         card.classList.remove('hidden-mobile')
         tvBigMob(null)
-        console.log('nomob')
+        // console.log('nomob')
     }
 
 }

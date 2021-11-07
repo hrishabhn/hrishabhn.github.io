@@ -584,7 +584,7 @@ const pageData3 = {
         {
             type: 'tv-med',
             render: function() {
-                return tvSmallTray(10)
+                return tvHuluTray(10)
             }
         },
         {
