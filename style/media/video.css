@@ -425,6 +425,7 @@
 
     font-size: 14px;
     font-weight: 500;
+    color: white;
     border: none;
     outline: none;
     box-shadow: 0 8px 24px 0px var(--black-10);
@@ -459,6 +460,12 @@
 
     padding: 8px 0px 10px;
     cursor: default;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    #tv-all-search{
+        color: var(--dark-layer-1);
+    }
 }
 
 @media(max-width: 450px){
@@ -505,6 +512,7 @@
     .tv-all-card{
         padding: 15px;
         padding-top: 100px;
+        padding-bottom: 55px;
         min-height: 100vh;
     }
     .tv-all-card .header{
