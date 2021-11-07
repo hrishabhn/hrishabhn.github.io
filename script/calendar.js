@@ -40,10 +40,16 @@ function calendarEventRender(n) {
     card.innerHTML = `
     <div class="bg"></div>
     <div class="color"></div>
-    <div class="vstack grow fill-height">
+    <div class="vstack fill-height">
         <p id="event-${n}-title" class="title" >-</p>
         <p id="event-${n}-location" class="location">-</p>
         <p id="event-${n}-time" class="time">-</p>
+    </div>
+    <div class="grow"><div class="spacer-x" style="--size: 4px;"></div></div>
+
+    <div class="countdown">
+        <p id="event-${n}-countdown-big" class="big">-</p>
+        <p id="event-${n}-countdown-small" class="small">-</p>
     </div>`
 
     return card
@@ -58,24 +64,28 @@ async function calendarTrayPopulate() {
         const title = document.getElementById(`event-${i}-title`)
         const location = document.getElementById(`event-${i}-location`)
         const time = document.getElementById(`event-${i}-time`)
+        const countdownBig = document.getElementById(`event-${i}-countdown-big`)
+        const countdownSmall = document.getElementById(`event-${i}-countdown-small`)
 
         card.style.setProperty('--col', `#${eventColor(await eventData[i - 1].calendar)}`)
         location.innerHTML = eventLocation(await eventData[i - 1].location)
         title.innerHTML = await eventData[i - 1].name
-        time.innerHTML = `${eventTime(await eventData[i - 1].start, await eventData[i - 1].end)}`
+        time.innerHTML = `${eventDate(await eventData[i - 1].start)} &#149 ${eventTime(await eventData[i - 1].start, await eventData[i - 1].end, await eventData[i - 1].allDay)}`
 
+        countdownBig.innerHTML = countdownCalculate(await eventData[i - 1].start)[0]
+        countdownSmall.innerHTML = countdownCalculate(await eventData[i - 1].start)[1]
 
         // eventLocation(await eventData[i - 1].location)
 
 
         // console.log(await eventData[i - 1].location)
-        // console.log(document.getElementById(`event-${i}-location`))
-        // document.getElementById(`event-${i}-location`) = 'nice'
-        // document.getElementById(`event-${i}-time`) = 'nice'
+        // console.log(document.getElementById(`event - ${ i } -location`))
+        // document.getElementById(`event - ${ i } -location`) = 'nice'
+        // document.getElementById(`event - ${ i } -time`) = 'nice'
 
 
         //eventLocation(await eventData[i - 1].location)
-        // document.getElementById(`event-${i}-time`) = eventData[i - 1].start
+        // document.getElementById(`event - ${ i } -time`) = eventData[i - 1].start
 
     }
 
@@ -90,13 +100,19 @@ function eventLocation(location) {
     }
 }
 
-function eventTime(start, end) {
-    const startString = `${processTime(processDate(start).hour, processDate(start).minute)}`
-    const endString = `${processTime(processDate(end).hour, processDate(end).minute)}`
-
-    // console.log(endString)
-
-    return `${startString} - ${endString}`
+function eventDate(start) {
+    return processDay(processDate(start).day,'short')
+    
+}
+function eventTime(start, end, allDay) {
+    if (allDay == 'Yes') {
+        return `All day`
+    } else {
+        const startString = `${processTime(processDate(start).hour, processDate(start).minute)} `
+        const endString = `${processTime(processDate(end).hour, processDate(end).minute)} `
+    
+        return `${startString} - ${endString} `
+    }
 }
 
 function eventColor(calendar) {
