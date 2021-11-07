@@ -390,18 +390,13 @@ function tvHuluElement(a,b) {
     <div class="spacer-x" style="--size: 8px;"></div>
     <div class="desc">${processDesc(movie)}</div>
     <div class="spacer-x" style="--size: 10px;"></div>
-    <div class="info">
-        <a class="play clickable" ${htmlLink} target="_blank">
-            <div class="icon"><svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></svg></div>
-            <div class="spacer-x" style="--size: 8px;"></div>
-            <p>WATCH</p>
-            <div class="grow"></div>
-        </a>
-        <a class="more clickable" onclick="tvPopupShow(${a},${b})">
+    <a class="info clickable" onclick="tvPopupShow(${a},${b})">
+        <p>WATCH</p>
+        <div class="grow"></div>
+        <div class="icon">
             <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
-        </a>
-        <div class="spacer-x" style="--size: 12px;"></div>
-    </div>`
+        </div>
+    </a>`
 
     movieCardElement.innerHTML = movieCardHTML
 
