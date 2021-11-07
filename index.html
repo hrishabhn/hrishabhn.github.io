@@ -68,11 +68,11 @@
             <p class="title">Widget 2</p>
         </div>
     </div>
+    <div id="modal-tray"></div>
     <div id="tv-modal-container" class="hide" onscroll="tvPopupHeaderScroll()">
         <a onclick="tvPopupHide()" class="modal-close"></a>
         <div id="tv-modal-body" class="layer-0"></div>
     </div>
-    <div id="modal-tray"></div>
     <div id="modal-container" class="hide">
         <a onclick="hideModal()" class="modal-close"></a>
         <div id="modal-scroll">
@@ -89,6 +89,56 @@
 
     <div id="main">
         <div class="page">
+            <!-- <div class="tv-all-card">
+                <input type="text" onkeyup="filterTest()" id="tv-all-search" class="layer-1 button-text" placeholder="Search"></input>
+                <div class="tv-all-tray">
+                    <div class="tv-all-item tv-poster" style="--poster: url(media-image/TV/background/you.webp);" data-name="Show 1">
+                        <div class="gradient" style="--col: #655b3f00;"></div>
+                        <div class="title mid" style="--title: url(media-image/TV/title/you.png);"></div>
+                        <a class="play" href="https://www.netflix.com/title/80211991" target="_blank"></a>
+                        <a class="more floating clickable" onclick="tvPopupShow(2,0)">
+                            <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
+                        </a>
+                    </div><div class="tv-all-item tv-poster" style="--poster: url(media-image/TV/background/you.webp);" data-name="Show 2">
+                        <div class="gradient" style="--col: #655b3f00;"></div>
+                        <div class="title mid" style="--title: url(media-image/TV/title/you.png);"></div>
+                        <a class="play" href="https://www.netflix.com/title/80211991" target="_blank"></a>
+                        <a class="more floating clickable" onclick="tvPopupShow(2,0)">
+                            <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
+                        </a>
+                    </div><div class="tv-all-item tv-poster" style="--poster: url(media-image/TV/background/you.webp);" data-name="Show 3">
+                        <div class="gradient" style="--col: #655b3f00;"></div>
+                        <div class="title mid" style="--title: url(media-image/TV/title/you.png);"></div>
+                        <a class="play" href="https://www.netflix.com/title/80211991" target="_blank"></a>
+                        <a class="more floating clickable" onclick="tvPopupShow(2,0)">
+                            <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
+                        </a>
+                    </div><div class="tv-all-item tv-poster" style="--poster: url(media-image/TV/background/you.webp);" data-name="Show 4">
+                        <div class="gradient" style="--col: #655b3f00;"></div>
+                        <div class="title mid" style="--title: url(media-image/TV/title/you.png);"></div>
+                        <a class="play" href="https://www.netflix.com/title/80211991" target="_blank"></a>
+                        <a class="more floating clickable" onclick="tvPopupShow(2,0)">
+                            <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
+                        </a>
+                    </div><div class="tv-all-item tv-poster" style="--poster: url(media-image/TV/background/you.webp);" data-name="Show 5">
+                        <div class="gradient" style="--col: #655b3f00;"></div>
+                        <div class="title mid" style="--title: url(media-image/TV/title/you.png);"></div>
+                        <a class="play" href="https://www.netflix.com/title/80211991" target="_blank"></a>
+                        <a class="more floating clickable" onclick="tvPopupShow(2,0)">
+                            <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
+                        </a>
+                    </div><div class="tv-all-item tv-poster" style="--poster: url(media-image/TV/background/you.webp);" data-name="Show 6">
+                        <div class="gradient" style="--col: #655b3f00;"></div>
+                        <div class="title mid" style="--title: url(media-image/TV/title/you.png);"></div>
+                        <a class="play" href="https://www.netflix.com/title/80211991" target="_blank"></a>
+                        <a class="more floating clickable" onclick="tvPopupShow(2,0)">
+                            <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div> -->
+           
             <!-- <div class="calendar-event card-shadow clickable" style="--col: #f00;">
                 <div class="bg"></div>
                 <p class="title">SPAN 202</p>
@@ -966,6 +1016,7 @@
 <script src="script/media/bookData.js"></script>
 <script src="script/media/podData.js"></script>
 <script src="script/media/bookPod.js"></script>
+<script src="script/media/tvAll.js"></script>
 
 <script src="script/user.js"></script>
 <script src="script/elements.js"></script>
