@@ -159,7 +159,7 @@ body{
     fill: #fff;
 }
 
-body > *, div, a, p{
+body > *, div, a, p, input{
     display: inline-flex;
     position: relative;
     align-items: center;
