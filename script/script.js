@@ -15,9 +15,9 @@ function timeOfDay() {
         var t = 4
     } else if ((dateNow().hour > 15) && (dateNow().hour < 19)) {
         var t = 5
-    } else if ((dateNow().hour > 18) && (dateNow().hour < 21)) {
+    } else if ((dateNow().hour > 18) && (dateNow().hour < 22)) {
         var t = 6
-    } else if (dateNow().hour > 20) {
+    } else if ((dateNow().hour > 21) || (dateNow().hour < 1)) {
         var t = 7
     }
 
