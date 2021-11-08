@@ -4,7 +4,7 @@ async function calTest() {
     calendarTrayPopulate()
 }
 
-const totalEvents = 10
+const totalEvents = 20
 async function fetchEvents() {
 
     var eventData = []
@@ -77,9 +77,9 @@ async function calendarTrayPopulate() {
         if (started) {
             card.classList.add('now')
         }
-        if (ended) {
-            container.classList.add('hidden-always')
-        }
+        // if (ended) {
+        //     container.classList.add('hidden-always')
+        // }
 
         container.style.setProperty('--col', `#${eventColor(await eventData[i - 1].calendar)}`)
         location.innerHTML = eventLocation(await eventData[i - 1].location)
