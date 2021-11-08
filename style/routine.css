@@ -23,7 +23,7 @@
     margin-bottom: -15px;
 }
 #routine-container .hscroll{
-    height: 150px;
+    height: 110px;
     transition: all 0.25s;
 }
 #routine-container.all-done .hscroll{
@@ -36,7 +36,67 @@
     padding: 20px;
     padding-top: 10px;
 }
+
 .routine-card{
+    padding: 15px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.routine-card .info{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.routine-card .info .text{
+    font-size: 16px;
+    font-weight: 500;
+}
+.routine-card .info .subtext{
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+.routine-card .icon{
+    height: 32px;
+    width: 32px;
+    
+    padding: 8px;
+    border-radius: 20px;
+    fill: white;
+}
+/* .routine-card .check{
+    height: 40px;
+    width: 40px;
+
+    background-color: red;
+} */
+
+.routine-card .alldays{
+
+}
+.routine-card .alldays .item{
+    flex-direction: column;
+    cursor: default;
+}
+.routine-card .alldays .item .day{
+    font-size: 8px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.routine-card .alldays .item .num{
+    height: 22px;
+    width: 22px;
+    border-radius: 100px;
+
+    font-size: 10px;
+    font-weight: 400;
+}
+.routine-card .alldays .item .num.done{
+    color: white;
+}
+
+
+/* .routine-card{
     flex-direction: column;
     height: 100%;
 
@@ -76,4 +136,4 @@
 }
 .routine-card.done .icon, .routine-card.done p{
     filter: brightness(0.5);
-}
+} */
