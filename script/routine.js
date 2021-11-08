@@ -7,8 +7,6 @@ function routineLoad() {
         var n = 1
     }
 
-    var n = 0
-
     for (let i = 0; i < routineData.length; i++) {
         for (let j = 0; j < routineData[i].length; j++) {
             routineCookies(i, j)
