@@ -131,9 +131,72 @@ function countdownCalculate(date) {
         result = [seconds,'seconds']
     }
 
+    var resultObject = {
+        only: {
+            days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+            hours: Math.floor(distance / (1000 * 60 * 60)),
+            minutes: Math.floor(distance / (1000 * 60)),
+            seconds: Math.floor(distance / 1000),
+        },
+        part: {
 
-    return result
+            days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+            minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+            seconds: Math.floor((distance % (1000 * 60)) / 1000),
+        },
+        past: past,
+    }
+
+    // console.log(resultObject)
+
+    return resultObject
     console.log(string)
+}
+
+function countdownProcess(date,type) {
+    const countdownResult = countdownCalculate(date)
+    // console.log(countdownResult.only.days)
+
+    if (type == 'short') {
+        if (countdownResult.only.days > 0) {
+            if (countdownResult.only.days < 2) {
+                result = {
+                    num: countdownResult.only.hours,
+                    word: 'hours',
+                }
+            } else {
+                result = {
+                    num: countdownResult.only.days,
+                    word: 'days',
+                }
+            }
+        } else if (countdownResult.only.hours > 0) {
+            if (countdownResult.only.hours < 2) {
+                result = {
+                    num: countdownResult.only.minutes,
+                    word: 'minutes',
+                }
+            } else {
+                result = {
+                    num: countdownResult.only.hours,
+                    word: 'hours',
+                }
+            }
+        } else if (countdownResult.only.minutes > 0) {
+            result = {
+                num: countdownResult.only.minutes,
+                word: 'minutes',
+            }
+        } else {
+            result = {
+                num: countdownResult.only.seconds,
+                word: 'seconds',
+            }
+        }
+
+        return result
+    }
 }
 
 function googleSearch(query) {

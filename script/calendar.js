@@ -87,8 +87,8 @@ async function calendarTrayPopulate() {
         time.innerHTML = `${eventDate(await eventData[i - 1].start)} &#149 ${eventTime(await eventData[i - 1].start, await eventData[i - 1].end, await eventData[i - 1].allDay)}`
 
         if (!started) {
-            countdownBig.innerHTML = countdownCalculate(await eventData[i - 1].start)[0]
-            countdownSmall.innerHTML = countdownCalculate(await eventData[i - 1].start)[1]
+            countdownBig.innerHTML = countdownProcess((await eventData[i - 1].start),'short').num
+            countdownSmall.innerHTML = countdownProcess((await eventData[i - 1].start),'short').word
         } else {
             countdownBig.innerHTML = ''
             countdownSmall.innerHTML = ''

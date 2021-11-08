@@ -187,8 +187,7 @@ function tvMidElement(a,b) {
     }
 
     if (data.info.date) {
-        var dateHTML = `<div class="spacer-x" style="--size: 4px;"></div><p class="desc">${countdownCalculate(data.info.date)[0]} ${countdownCalculate(data.info.date)[1]}</p>`
-        // console.log(countdownCalculate(data.info.date))
+        var dateHTML = `<div class="spacer-x" style="--size: 4px;"></div><p class="desc">${countdownProcess((data.info.date),'short').num} ${countdownProcess((data.info.date),'short').word}</p>`
     } else if (data.info.weekday) {
         var dateHTML = `<div class="spacer-x" style="--size: 4px;"></div><p class="desc">${data.info.weekday}</p>`
     } else {
@@ -278,16 +277,6 @@ function tvSmallElement(a,b) {
         var col = '000000'
     }
 
-    if (data.info.date) {
-        var dateHTML = `<div class="spacer-x" style="--size: 4px;"></div><p class="desc">${countdownCalculate(data.info.date)[0]} ${countdownCalculate(data.info.date)[1]}</p>`
-        // console.log(countdownCalculate(data.info.date))
-    } else if (data.info.weekday) {
-        var dateHTML = `<div class="spacer-x" style="--size: 4px;"></div><p class="desc">${data.info.weekday}</p>`
-    } else {
-        var dateHTML = ``
-    }
-
-
     var movieCardElement = document.createElement('div')
     // movieCardElement.classList = 'tv-mid-card'
 
@@ -341,15 +330,6 @@ function tvHuluElement(a,b) {
         var col = movie.style.color
     } else {
         var col = '000000'
-    }
-
-    if (movie.info.date) {
-        var dateHTML = `<div class="spacer-x" style="--size: 4px;"></div><p class="desc">${countdownCalculate(movie.info.date)[0]} ${countdownCalculate(movie.info.date)[1]}</p>`
-        // console.log(countdownCalculate(movie.info.date))
-    } else if (movie.info.weekday) {
-        var dateHTML = `<div class="spacer-x" style="--size: 4px;"></div><p class="desc">${movie.info.weekday}</p>`
-    } else {
-        var dateHTML = ``
     }
 
     var service = processService(movie)

@@ -41,8 +41,8 @@ function allCountdownsElement() {
         if (countdownData[i].date) {
             var info = `
             <div class="vstack">
-                <p class="countdown-no">${countdownCalculate(countdownData[i].date)[0]}</p>
-                <p class="countdown-period">${countdownCalculate(countdownData[i].date)[1]}</p>
+                <p class="countdown-no">${countdownProcess((countdownData[i].date),'short').num}</p>
+                <p class="countdown-period">${countdownProcess((countdownData[i].date),'short').word}</p>
             </div>`
         } else {
             var info = ``

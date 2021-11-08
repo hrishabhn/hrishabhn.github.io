@@ -121,16 +121,16 @@ const countdownData = [
     //     name: 'IE 386 Exam 2',
     //     date: 'Nov 4, 2021 09:30:00 GMT-04:00',
     // },
-    {
-        name: 'IE 335 Quiz 4',
-        date: 'Nov 5, 2021 12:30:00 GMT-04:00',
-    },
+    // {
+    //     name: 'IE 335 Quiz 4',
+    //     date: 'Nov 5, 2021 12:30:00 GMT-04:00',
+    // },
 ]
 
 function coundownPopulate() {
     const data = countdownData[0]
 
-    document.getElementById('countdown-no').innerHTML = countdownCalculate(data.date)[0]
-    document.getElementById('countdown-period').innerHTML = countdownCalculate(data.date)[1]
+    document.getElementById('countdown-no').innerHTML = countdownProcess((data.date),'short').num
+    document.getElementById('countdown-period').innerHTML = countdownProcess((data.date),'short').word
     document.getElementById('countdown-name').innerHTML = data.name
 }
