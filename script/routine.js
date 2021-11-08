@@ -90,6 +90,10 @@ function routineItemContent(i,j) {
     var item = document.createElement('div')
     item.classList = 'vstack'
 
+    if (cookieData[cookieData.length - 1].done) {
+        item.classList.add('todaydone')
+    }
+
     item.innerHTML = `
     <div class="hstack fill-width">
         <div class="info">
@@ -98,7 +102,10 @@ function routineItemContent(i,j) {
             <p class="subtext">${calcStreak(i,j)}</p>
         </div>
         <div class="grow"></div>
-        <div class="icon ${routineData[i].data[j].color}">${routineData[i].data[j].icon}</div>
+        <div class="icon ${routineData[i].data[j].color}">
+            ${routineData[i].data[j].icon}
+            <div class="check layer-fg card-shadow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="65.19 65.191 174.621 174.621" style="enable-background:new 0 0 305.002 305.002" xml:space="preserve"><path d="m218.473 93.97-90.546 90.547-41.398-41.398c-4.882-4.881-12.796-4.881-17.678 0-4.881 4.882-4.881 12.796 0 17.678l50.237 50.237a12.465 12.465 0 0 0 8.839 3.661c3.199 0 6.398-1.221 8.839-3.661l99.385-99.385c4.881-4.882 4.881-12.796 0-17.678-4.882-4.882-12.797-4.882-17.678-.001z"/></svg></div>
+        </div>
     </div>
     <div class="spacer-x" style="--size: 10px;"></div>`
 
@@ -248,6 +255,11 @@ const routineData = [
                 name: 'Emails',
                 color: 'indigo',
                 icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20"><path d="M4 4c-.93 0-1.7076875.6429063-1.9296875 1.5039062L12 11.726562l9.935547-6.2050776C21.719547 4.6504844 20.937 4 20 4H4zM2 7.734375V18c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7.7558594L12 14 2 7.734375z"/></svg>',
+            },
+            {
+                name: 'Vitamins',
+                color: 'purple',
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M44.910156 5.085938C42.273438 2.453125 38.769531 1 35.039063 1c-3.726563 0-7.230469 1.453125-9.871094 4.089844-.792969.796875-19.246094 19.25-20.082031 20.082031-5.437501 5.441406-5.437501 14.296875 0 19.738281C7.726563 47.546875 11.230469 49 14.960938 49c3.726562 0 7.230468-1.449219 9.871093-4.089844.675782-.679687 19.238282-19.242187 20.082032-20.082031 5.441406-5.441406 5.4375-14.296875-.003907-19.742187ZM43.5 23.410156c-.367187.371094-4.152344 4.152344-8.339844 8.335938L18.25 14.835938c4.195313-4.195313 7.984375-7.984375 8.335938-8.332032C28.847656 4.242188 31.847656 3 35.039063 3c3.195312 0 6.199218 1.242188 8.457031 3.503906 4.660156 4.660157 4.664062 12.25.003906 16.90625Z"/></svg>',
             },
             {
                 name: "Tomorrow's Agenda",
