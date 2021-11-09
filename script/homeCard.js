@@ -65,6 +65,12 @@
 
 const homeCardData = [
     {
+        type: 'flight',
+        n: 5,
+        // gate: flightData[0].dep.gate,
+        render: function() { return homeCardFlight(this) }
+    },
+    {
         type: 'book',
         a: 0,
         b: 0,
@@ -156,6 +162,8 @@ function homeCardTrip(data) {
 }
 
 function homeCardFlight(data) {
+    flight = flightData[data.n]
+
     if (data.gate) {
         var gate = `
         <div class="data">
@@ -165,15 +173,15 @@ function homeCardFlight(data) {
 
     var card = document.createElement('a')
     card.classList = 'homecard basic flight border clickable layer-1 hover-shadow'
-    card.style.setProperty('--fgCol',`#${flightData[data.n].airline.color.fg}`)
-    card.style.setProperty('--bgCol',`#${flightData[data.n].airline.color.bg}`)
-    card.onclick = function () { openModal(flightDetail(flightData[data.n])) }
+    card.style.setProperty('--fgCol',`#${flight.airline.color.fg}`)
+    card.style.setProperty('--bgCol',`#${flight.airline.color.bg}`)
+    card.onclick = function () { openModal(flightDetail(flight)) }
     card.innerHTML = `
     <div class="bg"></div>
-    <div class="logo">${flightData[data.n].airline.icon.svg}</div>
+    <div class="logo">${flight.airline.icon.svg}</div>
     <div class="grow"></div>
-    <p class="text">${flightData[data.n].airline.name} ${flightData[data.n].number}</p>
-    <p class="subtext">${flightData[data.n].dep.airport} &#8594 ${flightData[data.n].arr.airport}</p>
+    <p class="text">${flight.airline.name} ${flight.number}</p>
+    <p class="subtext">${flight.dep.airport} &#8594 ${flight.arr.airport}</p>
     ${gate}`
 
     return card
