@@ -335,13 +335,12 @@
     height: 20px;
     width: 20px;
     border-radius: inherit;
-    opacity: 0.6;
 }
 .trip-container .section .flight-container .node .fg{
     position: absolute;
     top: 0;
     left: 0;
-
+    
     height: 14px;
     width: 14px;
     margin: 3px;
