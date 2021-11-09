@@ -16,14 +16,15 @@
 }
 .flight-card .header .icon{
     height: 30px;
-    width: 30px;
+    width: 50px;
+    justify-content: flex-start;
 }
 .flight-card .header .logo{
     height: 20px;
     width: 150px;
     justify-content: flex-end;
 }
-.flight-card .header .logo svg{
+.flight-card .header svg{
     max-width: 100%;
     width: initial;
 }
