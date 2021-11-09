@@ -162,7 +162,7 @@ function homeCardTrip(data) {
 }
 
 function homeCardFlight(data) {
-    flight = flightData[data.n]
+    const flight = flightData[data.n]
 
     if (data.gate) {
         var gate = `
