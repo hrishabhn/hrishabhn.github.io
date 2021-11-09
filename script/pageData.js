@@ -304,7 +304,7 @@ const pageData3 = {
             render: function () {
                 var tvBigCard = document.createElement('div')
                 tvBigCard.id = 'tv-big-card'
-                tvBigCard.classList = 'card-shadow'
+                tvBigCard.classList = 'card-shadow page-width'
                 tvBigCard.innerHTML = `
                 <div class="gradient"></div>
                 <div class="button-tray">
@@ -969,6 +969,11 @@ function renderPageElement(page) {
     pageElement.onscroll = function() {
         headerScroll(page.info.id)
     }
+
+    var headerElement = document.createElement('div')
+    headerElement.classList = 'page-header page-width'
+    headerElement.innerHTML = page.info.name
+    pageElement.append(headerElement)
 
     for (let i = 0; i < page.content.length; i++) {
         // console.log(renderContent(page.content[i]))

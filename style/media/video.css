@@ -1,5 +1,4 @@
 #tv-big-card{
-    width: calc(100% - 80px);
     aspect-ratio: 16 / 8;
 
     border-radius: 10px;
@@ -148,8 +147,9 @@
 .hscroll-hulu{
     flex-direction: row;
     height: fit-content;
-    width: calc(100% - 40px);
-    margin-left: 40px;
+    width: calc(100% - 20px + 0px);
+    margin-left: 20px;
+    /* margin-right: -220px; */
     overflow-x: scroll;
     justify-content: flex-start;
     scroll-snap-type: x mandatory;
@@ -470,7 +470,6 @@
 
 @media(max-width: 450px){
     #tv-big-card{
-        width: calc(100% - 30px);
         aspect-ratio: 16 / 9;
         border-radius: 10px;
     }

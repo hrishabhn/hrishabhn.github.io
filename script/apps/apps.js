@@ -149,7 +149,7 @@ function bookmarkRenderOLD(content) {
 }
 function appListTrayRender(appListTray) {
     var element = document.createElement('div')
-    element.classList = 'app-list-tray'
+    element.classList = 'app-list-tray page-width'
     element.append(spacerElement(40,'hidden-mobile'))
 
     for (let i = 0; i < appListTray.content.length; i++) {
@@ -157,7 +157,7 @@ function appListTrayRender(appListTray) {
         element.append(appListRender(appListTray.content[i]))
 
         if (i < appListTray.content.length - 1) {
-            element.append(spacerAppListElement())
+            element.append(spacerElement(20))
         }
     }
     element.append(spacerElement(40,'hidden-mobile'))

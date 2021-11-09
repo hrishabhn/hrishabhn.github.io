@@ -137,13 +137,12 @@
 
 
 .app-list-tray{
-    width: 100%;
     align-items: flex-start;
 }
 
 .app-list{
     flex-direction: column;
-    width: calc((100% - 140px) / 3);
+    width: calc((100% - 40px) / 3);
     border-radius: 12px;
     padding-top: 10px;
     flex-grow: 1;
@@ -239,7 +238,6 @@
 @media(max-width: 450px){
     .app-list-tray{
         flex-direction: column;
-        width: 100%;
         align-items: center;
     }
 
