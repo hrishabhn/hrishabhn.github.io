@@ -130,8 +130,8 @@ function eventTime(start, end, allDay) {
     if (allDay == 'Yes') {
         return `All day`
     } else {
-        const startString = `${processTime(processDate(start).hour, processDate(start).minute)} `
-        const endString = `${processTime(processDate(end).hour, processDate(end).minute)} `
+        const startString = `${processTime(new Date(start))} `
+        const endString = `${processTime(new Date(end))} `
     
         return `${startString} - ${endString} `
     }
