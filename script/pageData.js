@@ -105,10 +105,16 @@ const pageData0 = {
             }
         },
         {
+            type: 'spacer-content',
+        },
+        {
             type: 'home-tray',
             render: function() {
-                return homeCardTray()
+                return homeCardTray(0)
             }
+        },
+        {
+            type: 'spacer-content',
         },
         {
             type: 'app-list-tray',
@@ -872,41 +878,69 @@ const pageData7 = {
     },
     content: [
         {
-            type: 'shortcut-tray',
             render: function() {
-                return colContainerRender(
-                    tripShortcut(0),
-                    tripShortcut(1),
-                )
+                return mediaTitleElement('Trips')
+            },
+        },
+        {
+            type: 'home-tray',
+            render: function() {
+                return homeCardTray(1)
             }
         },
         {
             type: 'spacer-content',
         },
         {
-            type: 'shortcut-tray',
             render: function() {
-                return colContainerRender(
-                    tripShortcut(2),
-                    tripShortcut(3),
-                )
+                return mediaTitleElement('Flights')
+            },
+        },
+        {
+            type: 'home-tray',
+            render: function() {
+                return homeCardTray(2)
             }
         },
         {
             type: 'spacer-content',
         },
-        {
-            type: 'shortcut-tray',
-            render: function() {
-                return colContainerRender(
-                    tripShortcut(4),
-                    tripShortcut(5),
-                )
-            }
-        },
-        {
-            type: 'spacer-content',
-        },
+        // {
+        //     type: 'shortcut-tray',
+        //     render: function() {
+        //         return colContainerRender(
+        //             tripShortcut(0),
+        //             tripShortcut(1),
+        //         )
+        //     }
+        // },
+        // {
+        //     type: 'spacer-content',
+        // },
+        // {
+        //     type: 'shortcut-tray',
+        //     render: function() {
+        //         return colContainerRender(
+        //             tripShortcut(2),
+        //             tripShortcut(3),
+        //         )
+        //     }
+        // },
+        // {
+        //     type: 'spacer-content',
+        // },
+        // {
+        //     type: 'shortcut-tray',
+        //     render: function() {
+        //         return colContainerRender(
+        //             tripShortcut(4),
+        //             tripShortcut(5),
+        //         )
+        //     }
+        // },
+        // {
+        //     type: 'spacer-content',
+        // },
     ],
     render: function() { renderPage(this) },
     open: function() { openPage(this.info.id) },

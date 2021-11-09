@@ -380,6 +380,7 @@ const flightData = [
             airport: 'ORD',
             city: 'Chicago',
             time: '1:20pm',
+            date: new Date('Dec 19, 2021 15:24:00 EST'),
             terminal: '-',
             gate: '-',
         },
@@ -387,6 +388,7 @@ const flightData = [
             airport: 'HKG',
             city: 'Hong Kong',
             time: '7:00am',
+            date: new Date('Dec 19, 2021 15:24:00 EST'),
             terminal: '-',
             gate: '-',
         },
@@ -583,6 +585,24 @@ const tripData = [
             {
                 date: '2 Dec 2022',
                 name: 'Boston - Toronto',
+                duration: 'To book',
+                direction: 'One-Way',
+                content: [
+                ],
+            },
+        ],
+    },
+    {
+        name: 'London',
+        subhead: 'January',
+        color: 'indigo',
+        notion: 'link',
+        image: 'https://london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg',
+        start: 'Jan 17, 2022',
+        sections: [
+            {
+                date: 'Jan 17, 2022',
+                name: 'Toronto - London',
                 duration: 'To book',
                 direction: 'One-Way',
                 content: [

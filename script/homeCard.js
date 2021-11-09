@@ -64,68 +64,135 @@
 // },
 
 const homeCardData = [
-    {
-        type: 'book',
-        a: 0,
-        b: 0,
-        render: function() { return homeCardBook(this) }
-    },
-    {
-        type: 'tv',
-        a: 0,
-        b: 0,
-        render: function() { return homeCardTV(this) }
-    },
-    {
-        type: 'tv',
-        a: 0,
-        b: 1,
-        render: function() { return homeCardTV(this) }
-    },
-    {
-        type: 'trip',
-        n: 0,
-        render: function() { return homeCardTrip(this) }
-    },
-    {
-        type: 'book',
-        a: 0,
-        b: 1,
-        render: function() { return homeCardBook(this) }
-    },
-    {
-        type: 'tv',
-        a: 0,
-        b: 2,
-        render: function() { return homeCardTV(this) }
-    },
-    {
-        type: 'flight',
-        n: 0,
-        // gate: flightData[0].dep.gate,
-        render: function() { return homeCardFlight(this) }
-    },
-    {
-        type: 'flight',
-        n: 2,
-        // gate: flightData[0].dep.gate,
-        render: function() { return homeCardFlight(this) }
-    },
-    {
-        type: 'trip',
-        n: 1,
-        render: function() { return homeCardTrip(this) }
-    },
+    [
+        {
+            type: 'book',
+            a: 0,
+            b: 0,
+            render: function() { return homeCardBook(this) }
+        },
+        {
+            type: 'tv',
+            a: 0,
+            b: 0,
+            render: function() { return homeCardTV(this) }
+        },
+        {
+            type: 'tv',
+            a: 0,
+            b: 1,
+            render: function() { return homeCardTV(this) }
+        },
+        {
+            type: 'trip',
+            n: 0,
+            render: function() { return homeCardTrip(this) }
+        },
+        {
+            type: 'book',
+            a: 0,
+            b: 1,
+            render: function() { return homeCardBook(this) }
+        },
+        {
+            type: 'tv',
+            a: 0,
+            b: 2,
+            render: function() { return homeCardTV(this) }
+        },
+        {
+            type: 'flight',
+            n: 0,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+        {
+            type: 'flight',
+            n: 2,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+        {
+            type: 'trip',
+            n: 1,
+            render: function() { return homeCardTrip(this) }
+        },
+    ],
+    [
+        {
+            type: 'trip',
+            n: 0,
+            render: function() { return homeCardTrip(this) }
+        },
+        {
+            type: 'trip',
+            n: 1,
+            render: function() { return homeCardTrip(this) }
+        },
+        {
+            type: 'trip',
+            n: 2,
+            render: function() { return homeCardTrip(this) }
+        },
+        {
+            type: 'trip',
+            n: 3,
+            render: function() { return homeCardTrip(this) }
+        },
+        {
+            type: 'trip',
+            n: 4,
+            render: function() { return homeCardTrip(this) }
+        },
+        {
+            type: 'trip',
+            n: 5,
+            render: function() { return homeCardTrip(this) }
+        },
+    ],
+    [
+        {
+            type: 'flight',
+            n: 0,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+        {
+            type: 'flight',
+            n: 1,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+        {
+            type: 'flight',
+            n: 2,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+        {
+            type: 'flight',
+            n: 3,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+        {
+            type: 'flight',
+            n: 4,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+
+    ],
 ]
 
-function homeCardTray() {
-    var tray = document.createElement('div')
-    tray.classList = 'hscroll-homecard'
-    tray.append(spacerElement(15))
-    // tray.append(spacerElement(5,'hidden-mobile'))
 
-    for (let i = 0; i < homeCardData.length; i++) {
-        tray.append(homeCardData[i].render())
+
+function homeCardTray(n) {
+    var tray = hscrollHuluElement()
+    tray.append(spacerElement(15,'only-mobile'))
+
+    for (let i = 0; i < homeCardData[n].length; i++) {
+        tray.append(homeCardData[n][i].render())
         tray.append(spacerElement(15))
         // tray.append(spacerElement(5,'hidden-mobile'))
     }
@@ -145,7 +212,7 @@ function homeCardBasic(data) {
 
 
     var card = document.createElement('a')
-    card.classList = 'homecard basic clickable layer-1 hover-shadow'
+    card.classList = 'homecard basic clickable layer-1'
     card.onclick = function () { data.action() }
     card.innerHTML = `
     <div class="icon ${data.color}">${data.icon}</div>
@@ -158,7 +225,7 @@ function homeCardBasic(data) {
 }
 function homeCardTrip(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard trip clickable layer-1 hover-shadow'
+    card.classList = 'homecard trip clickable layer-1 border'
     card.onclick = function () { openModal(tripCard(data.n)) }
     card.innerHTML = `
     <div class="bg" style="background-image: url(${tripData[data.n].image});"></div>
@@ -181,7 +248,7 @@ function homeCardFlight(data) {
     } else { var gate = `` }
 
     var card = document.createElement('a')
-    card.classList = 'homecard basic flight border clickable layer-1 hover-shadow'
+    card.classList = 'homecard basic flight border clickable layer-1'
     card.style.setProperty('--fgCol',`#${flight.airline.color.fg}`)
     card.style.setProperty('--bgCol',`#${flight.airline.color.bg}`)
     card.onclick = function () { openModal(flightDetail(flight)) }
@@ -198,7 +265,7 @@ function homeCardFlight(data) {
 
 function homeCardTV(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard tv clickable layer-1 hover-shadow'
+    card.classList = 'homecard tv clickable layer-1'
     card.onclick = function () { tvPopupShow(data.a,data.b) }
     card.innerHTML = `
     <div class="bg" style="background-image: url(media-image/TV/background/${movieData[data.a][data.b].id}.${movieData[data.a][data.b].style.posterType});"></div>
@@ -210,7 +277,7 @@ function homeCardTV(data) {
 }
 function homeCardBook(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard basic book clickable layer-1 hover-shadow'
+    card.classList = 'homecard basic book clickable layer-1'
     card.onclick = function () { pageData[4].open() }
     card.innerHTML = `
     <div class="cover" style="background-image: url(media-image/books/${bookData[data.a][data.b].id}.${bookData[data.a][data.b].coverType});"></div>
