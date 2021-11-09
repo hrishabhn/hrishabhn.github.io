@@ -399,7 +399,7 @@ function tvPopupCastBig(a,b) {
         card.classList = 'cast-card'
 
         if (cast[i].image) {
-            var image = `<a class="image image-border clickable card-shadow" href="${googleSearch(cast[i].actor)}" target="_blank" style="--image: url('${cast[i].image}');"></a>`
+            var image = `<a class="image clickable card-shadow" href="${googleSearch(cast[i].actor)}" target="_blank" style="--image: url('${cast[i].image}');"></a>`
         } else {
 
             var initials = cast[i].actor.match(/\b(\w)/g); // ['J','S','O','N']
@@ -413,7 +413,7 @@ function tvPopupCastBig(a,b) {
         ${image}
         <div class="spacer-x" style="--size: 8px;"></div>
         <p class="text">${cast[i].actor}</p>
-        <div class="spacer-x" style="--size: 2px;"></div>
+        <div class="spacer-x" style="--size: 4px;"></div>
         <p class="subtext">${cast[i].char}</p>`
 
         hscroll.append(card)
