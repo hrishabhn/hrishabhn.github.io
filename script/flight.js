@@ -851,7 +851,11 @@ function flightDetail(flight) {
     card.style.setProperty('--fgCol',`#${flight.airline.color.fg}`)
 
     card.innerHTML = `
-    <div>hello</div>
+    <div class="header fill-width">
+        <div class="icon">${flight.airline.icon.svg}</div>
+        <div class="grow"></div>
+        <div class="logo">${flight.airline.logo.svg}</div>
+    </div>
     <div class="orgdes fill-width">
         <div class="org">
             <div class="city">${flight.dep.city}</div>
