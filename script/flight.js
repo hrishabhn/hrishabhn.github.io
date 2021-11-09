@@ -1059,7 +1059,7 @@ function tripCard(n) {
 
 
 function flightCard(flight) {
-    console.log(flight)
+    // console.log(flight)
 
     var main = document.createElement('a')
     main.classList = 'main highlight clickable'
