@@ -575,7 +575,7 @@ const busData = [
         arr: {
             airport: 'LAF',
             city: 'West Lafayette',
-            time: '9:00am',
+            time: '9am',
             stop: 'Union Club Hotel',
         },
         seat: '-',
