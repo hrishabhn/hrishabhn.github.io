@@ -10,7 +10,7 @@ function routineLoad() {
     // updating, refreshing and creating cookies
     for (let i = 0; i < routineData.length; i++) {
         for (let j = 0; j < routineData[i].data.length; j++) {
-            setCookie(`routine-${i}-${j}`, JSON.stringify(refreshRoutineCookie(i, j)), 1 / 3)
+            setCookie(`routine-${i}-${j}`, JSON.stringify(refreshRoutineCookie(i, j)), 10)
         }
     }
 
@@ -69,7 +69,7 @@ function refreshRoutineCookie(i,j) {
 function toggleCookie(i,j,k) {
     var cookieData = JSON.parse(getCookie(`routine-${i}-${j}`))
     cookieData[k].done = !cookieData[k].done
-    setCookie(`routine-${i}-${j}`,JSON.stringify(cookieData),1)
+    setCookie(`routine-${i}-${j}`,JSON.stringify(cookieData),10)
 }
 
 function routineItem(i, j) {
@@ -337,25 +337,25 @@ function routineTray(i) {
 //     return item
 // }
 
-function routineSwitchToggle(i, j) {
-    const element = document.getElementById(`routine-${i}-${j}`)
-    const complete = parseInt(getCookie(`routine-${i}-${j}`))
-    const audioPass = new Audio('audio/complete.m4a')
-    // console.log(complete)
+// function routineSwitchToggle(i, j) {
+//     const element = document.getElementById(`routine-${i}-${j}`)
+//     const complete = parseInt(getCookie(`routine-${i}-${j}`))
+//     const audioPass = new Audio('audio/complete.m4a')
+//     // console.log(complete)
 
-    if (complete) {
-        setCookie(`routine-${i}-${j}`, 0, 1 / 6)
-        element.classList.remove('done')
-        element.classList.add('undone')
-    } else {
-        setCookie(`routine-${i}-${j}`, 1, 1 / 6)
-        element.classList.add('done')
-        element.classList.remove('undone')
-        audioPass.play()
-    }
-}
+//     if (complete) {
+//         setCookie(`routine-${i}-${j}`, 0, 1 / 6)
+//         element.classList.remove('done')
+//         element.classList.add('undone')
+//     } else {
+//         setCookie(`routine-${i}-${j}`, 1, 1 / 6)
+//         element.classList.add('done')
+//         element.classList.remove('undone')
+//         audioPass.play()
+//     }
+// }
 
-function routineAllToggle() {
-    const element = document.getElementById('routine-container')
-    element.classList.toggle('all-done')
-}
+// function routineAllToggle() {
+//     const element = document.getElementById('routine-container')
+//     element.classList.toggle('all-done')
+// }
