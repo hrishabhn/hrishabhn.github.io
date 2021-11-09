@@ -71,12 +71,6 @@ const homeCardData = [
         render: function() { return homeCardBook(this) }
     },
     {
-        type: 'book',
-        a: 0,
-        b: 1,
-        render: function() { return homeCardBook(this) }
-    },
-    {
         type: 'tv',
         a: 0,
         b: 0,
@@ -87,6 +81,17 @@ const homeCardData = [
         a: 0,
         b: 1,
         render: function() { return homeCardTV(this) }
+    },
+    {
+        type: 'trip',
+        n: 0,
+        render: function() { return homeCardTrip(this) }
+    },
+    {
+        type: 'book',
+        a: 0,
+        b: 1,
+        render: function() { return homeCardBook(this) }
     },
     {
         type: 'tv',
@@ -105,11 +110,6 @@ const homeCardData = [
         n: 2,
         // gate: flightData[0].dep.gate,
         render: function() { return homeCardFlight(this) }
-    },
-    {
-        type: 'trip',
-        n: 0,
-        render: function() { return homeCardTrip(this) }
     },
     {
         type: 'trip',
@@ -143,7 +143,7 @@ function homeCardBasic(data) {
 }
 function homeCardTrip(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard trip border clickable layer-1 hover-shadow'
+    card.classList = 'homecard trip clickable layer-1 hover-shadow'
     card.onclick = function () { openModal(tripCard(data.n)) }
     card.innerHTML = `
     <div class="bg" style="background-image: url(${tripData[data.n].image});"></div>
