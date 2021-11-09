@@ -38,7 +38,7 @@ const baseElements = [
 
             var time = document.createElement('div')
             time.classList = 'time hidden-mobile'
-            time.innerHTML = processTime(dateNow().hour,dateNow().minute)
+            time.innerHTML = processTime(new Date())
 
             var date = document.createElement('div')
             date.classList = 'date hidden-mobile'
