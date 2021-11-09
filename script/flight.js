@@ -1,382 +1,3 @@
-// function OLDflightCard(n) {
-//     const flight = flightData[n]
-
-//     var card = document.createElement('div')
-//     card.classList = 'flight-card-old layer-1 card-shadow'
-//     card.style.setProperty('--col', `#${flight.airline.color}`)
-
-//     card.innerHTML = `
-//     <div class="bg top" style="color: #${flight.airline.text};">${flight.number}</div>
-//     <div class="fill-width grow">
-//         <div class="airline" style="--airline: url(${flight.airline.logo});"></div>
-//         <div class="vstack fill-height cut">
-//             <div class="cutout layer-0"></div>
-//             <div class="perforation"></div>
-//             <div class="cutout layer-0"></div>
-//         </div>
-//         <div class="info">
-//             <div class="dep-arr fill-width">
-//                 <div class="item">
-//                     <p class="city">${flight.dep.airport}</p>
-//                     <p class="time">${flight.dep.time}</p>
-//                 </div>
-//                 <div class="grow"></div>
-//                 <div class="item">
-//                     <div class="plane">
-//                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M497.535 14.465c-19.569-19.568-51.395-19.241-70.557.726L322.092 124.488 66.131 39.781 12.4 93.513l213.352 131.365-107.956 112.494-69.231-11.366L0 374.571l101.78 35.649L137.429 512l48.565-48.565-11.366-69.231 112.494-107.955L418.487 499.6l53.732-53.732-84.706-255.961L496.808 85.022c19.968-19.162 20.295-50.988.727-70.557z"></path></svg>
-//                     </div>
-//                     <p class="time">${flight.duration}</p>
-//                 </div>
-//                 <div class="grow"></div>
-//                 <div class="item">
-//                 <p class="city">${flight.arr.airport}</p>
-//                 <p class="time">${flight.arr.time}</p>
-//                 </div>
-//             </div>
-//             <div class="spacer-x" style="--size: 20px;"></div>
-//             <div class="locations fill-width">
-//                 <div class="item">
-//                     <p class="text">Terminal</p>
-//                     <p class="subtext">${flight.dep.terminal}</p>
-//                 </div>
-//                 <div class="grow"></div>
-//                 <div class="item">
-//                     <p class="text">Gate</p>
-//                     <p class="subtext">${flight.dep.gate}</p>
-//                 </div>
-//                 <div class="grow"></div>
-//                 <div class="item">
-//                     <p class="text">Seat</p>
-//                     <p class="subtext">${flight.seat}</p>
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-//     <div class="bg bottom"></div>`
-
-//     return card
-// }
-
-
-// function flightCard(n) {
-//     const flight = flightData[n]
-
-//     var card = document.createElement('div')
-//     card.classList = 'flight-card layer-1 card-shadow'
-//     card.style.setProperty('--col', `#${flight.airline.color}`)
-
-//     card.innerHTML = `
-//     <div class="header">
-//         <div class="left">
-//             <p class="flight-no">${flight.number}</p>
-//         </div>
-//         <div class="grow">
-//             <div class="airline-logo" style="--darkLogo: #${flight.airline.logo.darkCol}; --lightLogo: #${flight.airline.logo.lightCol};">
-//                 ${flight.airline.logo.svg}
-//             </div>
-//         </div>
-//         <div class="right">
-//             <div class="icon image-border" style="fill: #${flight.airline.iconfg}; padding: ${flight.airline.iconPad};">${flight.airline.icon}</div>
-//         </div>
-//     </div>
-//     <div class="spacer-x" style="--size: 2px;"></div>
-//     <div class="tear fill-width">
-//         <div class="punch layer-0"></div>
-//         <div class="perf"></div>
-//         <div class="punch layer-0"></div>
-//     </div>
-//     <div class="spacer-x" style="--size: 10px;"></div>
-//     <div class="body">
-//         <div class="vstack org">
-//             <p class="city">${flight.dep.city}</p>
-//             <p class="airport">${flight.dep.airport}</p>
-//             <div class="spacer-x" style="--size: 10px;"></div>
-//             <p class="deparr">Depart</p>
-//             <p class="time">${flight.dep.time}</p>
-//         </div>
-//         <div class="plane">
-//             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"/></svg>
-//         </div>
-//         <div class="vstack des">
-//             <p class="city">${flight.arr.city}</p>
-//             <p class="airport">${flight.arr.airport}</p>
-//             <div class="spacer-x" style="--size: 10px;"></div>
-//             <p class="deparr">Arrive</p>
-//             <p class="time">${flight.arr.time}</p>
-//         </div>
-//     </div>`
-
-//     return card
-// }
-
-
-
-// function tripCard(n) {
-//     const trip = tripData[n]
-//     // console.log(trip)
-
-//     var tripCard = document.createElement('div')
-//     tripCard.classList = 'trip-card'
-
-//     for (let i = 0; i < trip.flights.length; i++) {
-//         tripCard.append(flightCard(trip.flights[i]))
-//         // console.log(trip.flights[i])
-
-//         if (i < trip.flights.length - 1) {
-//             tripCard.append(spacerElement(20))
-
-//             var transit = document.createElement('div')
-//             transit.classList = 'flight layer-1 card-shadow'
-//             transit.innerHTML = `
-//             <div class="flight layer-1 card-shadow">
-//                <div class="travel">
-//                     <div class="icon">
-//                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve"><path d="M23 28H3c-.6 0-1 .4-1 1s.4 1 1 1h20c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="M25 11c-.7 0-1.4.2-2 .6V11c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1v6.2C3 22.6 7.5 27 13 27c4.2 0 7.8-2.5 9.3-6.1.7.7 1.6 1.1 2.7 1.1 2.2 0 4-1.8 4-4v-3c0-2.2-1.8-4-4-4zm2 7c0 1.1-.9 2-2 2s-2-.9-2-2v-3c0-1.1.9-2 2-2s2 .9 2 2v3z"/><path d="M13 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.3-1.1-.2-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/><path d="M9 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.2-1.1-.1-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/><path d="M17 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.3-1.1-.2-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/></svg>
-//                     </div>
-//                     <div>
-//                         <p class="med">${trip.transit[i].time}</p>
-//                     </div>
-//                     <div class="grow"></div>
-//                 </div>
-//             </div>`
-
-//             tripCard.append(transit)
-//             tripCard.append(spacerElement(20))
-//         }
-//     }
-
-
-
-//     // tripCard.innerHTML = `
-//     // <div class="trip-card">
-//     //     <div class="flight layer-1 card-shadow">
-//     //         <div class="header">
-//     //             <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="19.315 19.631 19.445 23.689"><path d="M19.465 19.63c-.922 4.785 2.469 13.847 8.598 17.796h.002c.7.439 1.08.568 1.08.568.09.037.027.103-.018.131l-7.906 5.06c-.026.017-.087.064-.063.114.02.038.1.015.121.008 6.345-2.23 10.95-4.064 13.764-5.4 2.854-1.356 3.813-2.13 3.709-2.516-.099-.363-1.157-.208-2.03-.287a12.382 12.382 0 0 1-3.035-.641c-4.575-1.617-8.645-3.676-14.222-14.832Z"/></svg></div>
-//     //             <div class="spacer-x" style="--size: 10px;"></div>
-//     //             <div class="info">
-//     //                 <p class="date">Tue, 2 Nov</p>
-//     //                 <div class="spacer-x" style="--size: 2px;"></div>
-//     //                 <p class="flight-no">CX 828</p>
-//     //             </div>
-//     //             <div class="grow"></div>
-//     //         </div>
-//     //         <div class="hline"></div>
-//     //         <div class="airport">
-//     //             <div class="vstack">
-//     //                 <div class="small padded fill-width">
-//     //                     <p>From</p>
-//     //                     <div class="grow"></div>
-//     //                 </div>
-//     //                 <div class="big fill-width">
-//     //                     <div class="node up">
-//     //                         <div class="bg blue"></div>
-//     //                         <div class="fg blue"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3.171 17.657 17.657"><path d="M14 5.342c-.256 0-.512.1-.707.295l-.086.086a.999.999 0 0 0 0 1.414L17.07 11H4a1 1 0 0 0 0 2h13.07l-3.863 3.863a.999.999 0 0 0 0 1.414l.086.086a.999.999 0 0 0 1.414 0l5.656-5.656a.999.999 0 0 0 0-1.414l-5.656-5.656A.998.998 0 0 0 14 5.342z"/></svg></div>
-//     //                     </div>
-//     //                     <p>Indianapolis</p>
-//     //                     <div class="grow"></div>
-//     //                 </div>
-//     //                 <div class="med padded fill-width">
-//     //                     <p>IND</p>
-//     //                     <div class="grow"></div>
-//     //                 </div>
-//     //             </div>
-//     //             <div class="grow"></div>
-//     //             <div class="vstack fill-height">
-//     //                 <div class="time green-fg fill-width">
-//     //                     <div class="grow"></div>
-//     //                     <p>9:41 AM</p>
-//     //                 </div>
-//     //                 <div class="gate fill-width">
-//     //                     <div class="grow"></div>
-//     //                     <p>Terminal 1 &#149 Gate 65</p>
-//     //                 </div>
-//     //             </div>
-//     //         </div>
-//     //         <div class="hline sub"></div>
-//     //         <div class="travel">
-//     //             <div class="icon" style="transform: rotate(90deg);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>
-//     //             <div>
-//     //                 <p class="med">4h 23m &#149 2348mi</p>
-//     //             </div>
-//     //             <div class="grow"></div>
-//     //         </div>
-//     //         <div class="hline sub"></div>
-//     //         <div class="airport">
-//     //             <div class="vstack">
-//     //                 <div class="small padded fill-width">
-//     //                     <p>To</p>
-//     //                     <div class="grow"></div>
-//     //                 </div>
-//     //                 <div class="big fill-width">
-//     //                     <div class="node down">
-//     //                         <div class="bg blue"></div>
-//     //                         <div class="fg blue"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3.171 17.657 17.657"><path d="M14 5.342c-.256 0-.512.1-.707.295l-.086.086a.999.999 0 0 0 0 1.414L17.07 11H4a1 1 0 0 0 0 2h13.07l-3.863 3.863a.999.999 0 0 0 0 1.414l.086.086a.999.999 0 0 0 1.414 0l5.656-5.656a.999.999 0 0 0 0-1.414l-5.656-5.656A.998.998 0 0 0 14 5.342z"/></svg></div>
-//     //                     </div>
-//     //                     <p>Las Vegas</p>
-//     //                     <div class="grow"></div>
-//     //                 </div>
-//     //                 <div class="med padded fill-width">
-//     //                     <p>LAS</p>
-//     //                     <div class="grow"></div>
-//     //                 </div>
-//     //             </div>
-//     //             <div class="grow"></div>
-//     //             <div class="vstack fill-height">
-//     //                 <div class="time green-fg fill-width">
-//     //                     <div class="grow"></div>
-//     //                     <p>12:47 PM</p>
-//     //                 </div>
-//     //                 <div class="gate fill-width">
-//     //                     <div class="grow"></div>
-//     //                     <p>Terminal 1 &#149 Gate 65</p>
-//     //                 </div>
-//     //             </div>
-//     //         </div>
-//     //         <div class="footer">
-//     //             <div class="item layer-1 clickable">
-//     //                 <div class="icon">
-//     //                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.928 2.5 93.999 93.999" xml:space="preserve"><path d="m83.028 57.888-.049-.013s-.411-.109-1.011-.136c-.225-.026-.412-.087-.664-.087h-23.15s-.264.004-.648.064a5.607 5.607 0 0 0-.715.017l-19.346 1.692-3.387-9.307h29.991s4.502 0 4.502-4.502v-.052s0-4.503-4.502-4.503H30.762l-5.735-15.756-.021-.052V9.254s0-6.754-6.753-6.754c0 0-6.753 0-6.753 6.754v16.857s.008 1.133.469 2.468c.082.43.193.874.366 1.348l15.678 43.076s.396 1.063 1.289 2.162c.951 1.396 2.591 2.609 5.451 2.609h14.365v11.571H30.629s-3.377 0-3.377 3.377v.401s0 3.376 3.377 3.376h45.893s3.376 0 3.376-3.376v-.401s0-3.377-3.376-3.377H58.033V77.774h18.188l.092-.003h2.416c1.355.065 3.71-.286 4.521-3.316l2.963-11.054s1.164-4.348-3.185-5.513"/></svg>
-//     //                 </div>
-//     //                 <div class="spacer-x" style="--size: 10px;"></div>
-//     //                 <p>32J</p>
-//     //             </div>
-//     //             <div class="spacer-x" style="--size: 10px;"></div>
-//     //             <div class="item layer-1 clickable">
-//     //                 <div class="icon">
-//     //                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M497.535 14.465c-19.569-19.568-51.395-19.241-70.557.726L322.092 124.488 66.131 39.781 12.4 93.513l213.352 131.365-107.956 112.494-69.231-11.366L0 374.571l101.78 35.649L137.429 512l48.565-48.565-11.366-69.231 112.494-107.955L418.487 499.6l53.732-53.732-84.706-255.961L496.808 85.022c19.968-19.162 20.295-50.988.727-70.557z"></path></svg>
-//     //                 </div>
-//     //                 <div class="spacer-x" style="--size: 10px;"></div>
-//     //                 <p>A35K</p>
-//     //             </div>
-//     //         </div>
-//     //     </div>
-//     //     <div class="spacer-x" style="--size: 10px;"></div>
-//     //     <div class="flight layer-1 card-shadow">
-//     //         <div class="travel">
-//     //             <div class="icon">
-//     //                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve"><path d="M23 28H3c-.6 0-1 .4-1 1s.4 1 1 1h20c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="M25 11c-.7 0-1.4.2-2 .6V11c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1v6.2C3 22.6 7.5 27 13 27c4.2 0 7.8-2.5 9.3-6.1.7.7 1.6 1.1 2.7 1.1 2.2 0 4-1.8 4-4v-3c0-2.2-1.8-4-4-4zm2 7c0 1.1-.9 2-2 2s-2-.9-2-2v-3c0-1.1.9-2 2-2s2 .9 2 2v3z"/><path d="M13 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.3-1.1-.2-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/><path d="M9 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.2-1.1-.1-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/><path d="M17 9c.2 0 .4-.1.6-.2.5-.3.6-.9.3-1.4-1-1.5-1-3.4 0-4.9.3-.5.2-1.1-.3-1.4-.5-.3-1.1-.2-1.4.3-1.4 2.2-1.4 5 0 7.1.2.3.5.5.8.5z"/></svg>
-//     //             </div>
-//     //             <div>
-//     //                 <p class="med">1h 34m Transit</p>
-//     //             </div>
-//     //             <div class="grow"></div>
-//     //         </div>
-//     //     </div>
-//     // </div>`
-
-//     return tripCard
-// }
-// function flightCard(flight) {
-//     // console.log(flight)
-
-//     var card = document.createElement('div')
-//     card.classList = 'flight layer-1 card-shadow'
-
-//     card.innerHTML = `
-//     <div class="header">
-//         <div class="icon" style="--colDark: #${flight.airline.icon.darkCol}; --colLight: #${flight.airline.icon.lightCol};">${flight.airline.icon.svg}</div>
-//         <div class="spacer-x" style="--size: 10px;"></div>
-//         <div class="info">
-//             <p class="date">${flight.date}</p>
-//             <div class="spacer-x" style="--size: 2px;"></div>
-//             <p class="flight-no">${flight.number}</p>
-//         </div>
-//         <div class="grow"></div>
-//     </div>
-//     <div class="hline"></div>
-//     <div class="airport">
-//         <div class="vstack">
-//             <div class="small padded fill-width">
-//                 <p>From</p>
-//                 <div class="grow"></div>
-//             </div>
-//             <div class="big fill-width">
-//                 <div class="node up">
-//                     <div class="bg blue"></div>
-//                     <div class="fg blue"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3.171 17.657 17.657"><path d="M14 5.342c-.256 0-.512.1-.707.295l-.086.086a.999.999 0 0 0 0 1.414L17.07 11H4a1 1 0 0 0 0 2h13.07l-3.863 3.863a.999.999 0 0 0 0 1.414l.086.086a.999.999 0 0 0 1.414 0l5.656-5.656a.999.999 0 0 0 0-1.414l-5.656-5.656A.998.998 0 0 0 14 5.342z"/></svg></div>
-//                 </div>
-//                 <p>${flight.dep.city}</p>
-//                 <div class="grow"></div>
-//             </div>
-//             <div class="med padded fill-width">
-//                 <p>${flight.dep.airport}</p>
-//                 <div class="grow"></div>
-//             </div>
-//         </div>
-//         <div class="grow"></div>
-//         <div class="vstack fill-height">
-//             <div class="time green-fg fill-width">
-//                 <div class="grow"></div>
-//                 <p>${flight.dep.time}</p>
-//             </div>
-//             <div class="gate fill-width">
-//                 <div class="grow"></div>
-//                 <p>Terminal ${flight.dep.terminal} &#149 Gate ${flight.dep.gate}</p>
-//             </div>
-//         </div>
-//     </div>
-//     <div class="hline sub"></div>
-//     <div class="travel">
-//         <div class="icon" style="transform: rotate(90deg);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>
-//         <div>
-//             <p class="med">${flight.duration} &#149 9999mi</p>
-//         </div>
-//         <div class="grow"></div>
-//     </div>
-//     <div class="hline sub"></div>
-//     <div class="airport">
-//         <div class="vstack">
-//             <div class="small padded fill-width">
-//                 <p>To</p>
-//                 <div class="grow"></div>
-//             </div>
-//             <div class="big fill-width">
-//                 <div class="node down">
-//                     <div class="bg blue"></div>
-//                     <div class="fg blue"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3.171 17.657 17.657"><path d="M14 5.342c-.256 0-.512.1-.707.295l-.086.086a.999.999 0 0 0 0 1.414L17.07 11H4a1 1 0 0 0 0 2h13.07l-3.863 3.863a.999.999 0 0 0 0 1.414l.086.086a.999.999 0 0 0 1.414 0l5.656-5.656a.999.999 0 0 0 0-1.414l-5.656-5.656A.998.998 0 0 0 14 5.342z"/></svg></div>
-//                 </div>
-//                 <p>${flight.arr.city}</p>
-//                 <div class="grow"></div>
-//             </div>
-//             <div class="med padded fill-width">
-//                 <p>${flight.arr.airport}</p>
-//                 <div class="grow"></div>
-//             </div>
-//         </div>
-//         <div class="grow"></div>
-//         <div class="vstack fill-height">
-//             <div class="time green-fg fill-width">
-//                 <div class="grow"></div>
-//                 <p>${flight.arr.time}</p>
-//             </div>
-//             <div class="gate fill-width">
-//                 <div class="grow"></div>
-//                 <p>Terminal ${flight.arr.terminal} &#149 Gate ${flight.arr.gate}</p>
-//             </div>
-//         </div>
-//     </div>
-//     <div class="footer">
-//         <div class="item layer-1 clickable">
-//             <div class="icon">
-//                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.928 2.5 93.999 93.999" xml:space="preserve"><path d="m83.028 57.888-.049-.013s-.411-.109-1.011-.136c-.225-.026-.412-.087-.664-.087h-23.15s-.264.004-.648.064a5.607 5.607 0 0 0-.715.017l-19.346 1.692-3.387-9.307h29.991s4.502 0 4.502-4.502v-.052s0-4.503-4.502-4.503H30.762l-5.735-15.756-.021-.052V9.254s0-6.754-6.753-6.754c0 0-6.753 0-6.753 6.754v16.857s.008 1.133.469 2.468c.082.43.193.874.366 1.348l15.678 43.076s.396 1.063 1.289 2.162c.951 1.396 2.591 2.609 5.451 2.609h14.365v11.571H30.629s-3.377 0-3.377 3.377v.401s0 3.376 3.377 3.376h45.893s3.376 0 3.376-3.376v-.401s0-3.377-3.376-3.377H58.033V77.774h18.188l.092-.003h2.416c1.355.065 3.71-.286 4.521-3.316l2.963-11.054s1.164-4.348-3.185-5.513"/></svg>
-//             </div>
-//             <div class="spacer-x" style="--size: 10px;"></div>
-//             <p>${flight.seat}</p>
-//         </div>
-//         <div class="spacer-x" style="--size: 10px;"></div>
-//         <div class="item layer-1 clickable">
-//             <div class="icon">
-//                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M497.535 14.465c-19.569-19.568-51.395-19.241-70.557.726L322.092 124.488 66.131 39.781 12.4 93.513l213.352 131.365-107.956 112.494-69.231-11.366L0 374.571l101.78 35.649L137.429 512l48.565-48.565-11.366-69.231 112.494-107.955L418.487 499.6l53.732-53.732-84.706-255.961L496.808 85.022c19.968-19.162 20.295-50.988.727-70.557z"></path></svg>
-//             </div>
-//             <div class="spacer-x" style="--size: 10px;"></div>
-//             <p>${flight.aircraft}</p>
-//         </div>
-//     </div>`
-
-//     return card
-// }
-
-
 const aircraftData = {
     a320: {
         manufacturer: 'Airbus',
@@ -550,17 +171,18 @@ const busData = [
             airport: 'LAF',
             city: 'West Lafayette',
             time: '9:30am',
+            date: new Date('Nov 20, 2021 09:30:00 EST'),
             stop: 'Union Club Hotel',
         },
         arr: {
             airport: 'IND',
             city: 'Indianapolis',
             time: '11:15am',
+            date: new Date('Nov 20, 2021 11:15:00 EST'),
             stop: 'Departures',
         },
         seat: '-',
         aircraft: 'Coach',
-        duration: '1h 45m',
         date: 'Sat, 20 Nov 2021',
         airline: airlineData.reindeer,
     },
@@ -570,17 +192,18 @@ const busData = [
             airport: 'IND',
             city: 'Indianapolis',
             time: '7:15am',
+            date: new Date('Dec 1, 2021 07:15:00 EST'),
             stop: 'Arrivals',
         },
         arr: {
             airport: 'LAF',
             city: 'West Lafayette',
             time: '9am',
+            date: new Date('Dec 1, 2021 09:00:00 EST'),
             stop: 'Union Club Hotel',
         },
         seat: '-',
         aircraft: 'Coach',
-        duration: '1h 45m',
         date: 'Wed, 1 Dec 2021',
         airline: airlineData.reindeer,
     },
@@ -590,17 +213,18 @@ const busData = [
             airport: 'LAF',
             city: 'West Lafayette',
             time: '9:30am',
+            date: new Date('Dec 19, 2021 09:30:00 EST'),
             stop: 'Union Club Hotel',
         },
         arr: {
             airport: 'IND',
             city: 'Indianapolis',
             time: '11:15am',
+            date: new Date('Dec 19, 2021 11:15:00 EST'),
             stop: 'Departures',
         },
         seat: '-',
         aircraft: 'Coach',
-        duration: '1h 45m',
         date: 'Sun, 19 Nov 2021',
         airline: airlineData.reindeer,
     },
@@ -613,6 +237,7 @@ const flightData = [
             airport: 'IND',
             city: 'Indianapolis',
             time: '1:28pm',
+            date: new Date('Nov 20, 2021 13:28:00 EST'),
             terminal: '-',
             gate: '-',
         },
@@ -620,6 +245,7 @@ const flightData = [
             airport: 'LAS',
             city: 'Las Vegas',
             time: '2:42pm',
+            date: new Date('Nov 20, 2021 14:42:00 PST'),
             terminal: '-',
             gate: '-',
         },
@@ -635,6 +261,7 @@ const flightData = [
             airport: 'LAS',
             city: 'Las Vegas',
             time: '3:59pm',
+            date: new Date('Nov 20, 2021 15:59:00 PST'),
             terminal: '3',
             gate: '-',
         },
@@ -642,6 +269,7 @@ const flightData = [
             airport: 'SAN',
             city: 'San Diego',
             time: '5:12pm',
+            date: new Date('Nov 20, 2021 17:12:00 PST'),
             terminal: '-',
             gate: '-',
         },
@@ -657,6 +285,7 @@ const flightData = [
             airport: 'SAN',
             city: 'San Diego',
             time: '7:37pm',
+            date: new Date('Nov 30, 2021 19:37:00 PST'),
             terminal: '-',
             gate: '-',
         },
@@ -664,6 +293,7 @@ const flightData = [
             airport: 'LAS',
             city: 'Las Vegas',
             time: '8:55pm',
+            date: new Date('Nov 30, 2021 20:55:00 PST'),
             terminal: '-',
             gate: '-',
         },
@@ -679,6 +309,7 @@ const flightData = [
             airport: 'LAS',
             city: 'Las Vegas',
             time: '11:50pm',
+            date: new Date('Nov 30, 2021 23:50:00 PST'),
             terminal: '-',
             gate: '-',
         },
@@ -686,6 +317,7 @@ const flightData = [
             airport: 'IND',
             city: 'Indianapolis',
             time: '6:11am',
+            date: new Date('Dec 1, 2021 06:11:00 EST'),
             terminal: '-',
             gate: '-',
         },
@@ -1081,7 +713,7 @@ function flightCard(flight) {
     <div class="timeline blue"></div>
     ${airportCard(flight.dep)}
     <div class="flight">
-        <p class="time duration">${flight.duration}</p>
+        <p class="time duration">${durationCalculate(flight.dep.date,flight.arr.date)}</p>
         <div class="lefticon blue" style="transform: rotate(90deg);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>
     </div>
     ${airportCard(flight.arr)}`
@@ -1092,6 +724,12 @@ function flightCard(flight) {
 }
 
 function airportCard(deparr) {
+    if ((new Date()).getTime() > deparr.date.getTime()) {
+        var nodeClass = 'blue'
+    } else {
+        var nodeClass = 'layer-0'
+    }
+
     var card = document.createElement('div')
     card.classList = 'airport'
     card.innerHTML = `
@@ -1099,7 +737,7 @@ function airportCard(deparr) {
         <p class="time">${deparr.time}</p>
         <div class="node up">
             <div class="bg blue"></div>
-            <div class="fg blue"></div>
+            <div class="fg ${nodeClass}"></div>
         </div>
         <div class="info">
             <p class="name">${deparr.city}</p>
@@ -1123,7 +761,7 @@ function busCard(bus) {
     <div class="timeline red"></div>
     ${busportCard(bus.dep)}
     <div class="flight">
-        <p class="time duration">${bus.duration}</p>
+        <p class="time duration">${durationCalculate(bus.dep.date,bus.arr.date)}</p>
         <div class="lefticon red"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M12 0C5.437 0 3 2.168 3 8v33c0 1.36.398 2.34 1 3.063V47c0 1.652 1.348 3 3 3h4c1.652 0 3-1.348 3-3v-1h22v1c0 1.652 1.348 3 3 3h4c1.652 0 3-1.348 3-3v-2.938c.602-.722 1-1.703 1-3.062V9c0-4.355-.54-9-7-9Zm3 4h21a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H15c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1Zm-4 7h28c2 0 3 1 3 3v12c0 2-1.953 2.938-3 2.938L11 29c-2 0-3-1-3-3V14c0-2 1-3 3-3Zm-9 1c-1.102 0-2 .898-2 2v8c0 1.102.898 2 2 2Zm46 0v12c1.105 0 2-.898 2-2v-8c0-1.102-.895-2-2-2ZM11.5 34a3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 1 0-7Zm27 0a3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 1 0-7Z"/></svg></div>
         <div class="main highlight">
             <div class="logo" style="--darkCol: #${bus.airline.logo.darkCol}; --lightCol: #${bus.airline.logo.lightCol};">${bus.airline.icon.svg}</div>
@@ -1141,6 +779,12 @@ function busCard(bus) {
 }
 
 function busportCard(deparr) {
+    if ((new Date()).getTime() > deparr.date.getTime()) {
+        var nodeClass = 'red'
+    } else {
+        var nodeClass = 'layer-0'
+    }
+    
     var card = document.createElement('div')
     card.classList = 'airport'
     card.innerHTML = `
@@ -1148,7 +792,7 @@ function busportCard(deparr) {
         <p class="time">${deparr.time}</p>
         <div class="node up">
             <div class="bg red"></div>
-            <div class="fg red"></div>
+            <div class="fg ${nodeClass}"></div>
         </div>
         <div class="info">
             <p class="name">${deparr.city}</p>
