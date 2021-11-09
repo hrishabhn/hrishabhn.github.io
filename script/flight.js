@@ -648,7 +648,7 @@ const flightData = [
         seat: '-',
         aircraft: aircraftData.a320,
         duration: '1h 13m',
-        date: 'Tue, 30 Nov 2021',
+        date: 'Tue, 20 Nov 2021',
         airline: airlineData.frontier,
     },
     {
