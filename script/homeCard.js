@@ -65,12 +65,6 @@
 
 const homeCardData = [
     {
-        type: 'flight',
-        n: 5,
-        // gate: flightData[0].dep.gate,
-        render: function() { return homeCardFlight(this) }
-    },
-    {
         type: 'book',
         a: 0,
         b: 0,
@@ -124,6 +118,21 @@ const homeCardData = [
     },
 ]
 
+function homeCardTray() {
+    var tray = document.createElement('div')
+    tray.classList = 'hscroll-homecard'
+    tray.append(spacerElement(15))
+    // tray.append(spacerElement(5,'hidden-mobile'))
+
+    for (let i = 0; i < homeCardData.length; i++) {
+        tray.append(homeCardData[i].render())
+        tray.append(spacerElement(15))
+        // tray.append(spacerElement(5,'hidden-mobile'))
+    }
+    tray.append(spacerElement(25,'hidden-mobile'))
+
+    return tray
+}
 
 
 function homeCardBasic(data) {
@@ -213,61 +222,4 @@ function homeCardBook(data) {
     <div class="grow"></div>`
 
     return card
-}
-
-function homeCardTray() {
-    var tray = document.createElement('div')
-    tray.classList = 'hscroll-homecard'
-    tray.append(spacerElement(15))
-    // tray.append(spacerElement(5,'hidden-mobile'))
-
-    for (let i = 0; i < homeCardData.length; i++) {
-        tray.append(homeCardData[i].render())
-        tray.append(spacerElement(15))
-        // tray.append(spacerElement(5,'hidden-mobile'))
-    }
-
-
-    tray.append(spacerElement(25,'hidden-mobile'))
-
-
-    // tray.innerHTML = `
-    // <div class="homecard basic clickable layer-1">
-    //     <div class="icon red"><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 24 24"><path d="M5 6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5zm5 18a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10z"></path></svg></div>
-    //     <div class="grow"></div>
-    //     <p class="text">TV &amp; Movies</p>
-    //     <p class="subtext">Watch</p>
-    // </div>
-    // <div class="spacer-x" style="--size: 20px;"></div>
-    // <a class="homecard basic flight clickable layer-1" style="--fgCol: #1c1c1e;--bgCol: #ffec00;">
-    //     <div class="bg"></div>
-    //     <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0.13193467259407043 2.2258338928222656 16.509334564208984 16.509334564208984"><path d="M5.722 12.772c-.027.448.076.807.454 1.034.375.247.997.38 2.03.38 1.055 0 2.22-.202 2.407-1.078.138-.65-.296-.831-1.434-.965l-4.135-.516c-2.71-.337-3.915-1.325-3.475-3.39.7-3.3 3.749-4.332 8.305-4.332 3.233 0 7.194.582 6.73 4.04h-5.342c.064-.517-.202-.853-.635-1.033-.428-.2-1.042-.27-1.649-.27-1.369 0-2.243.315-2.42 1.146-.081.382.162.718 1.345.853l4.013.449c3.2.36 4.601 1.369 4.097 3.748-.612 2.873-3.636 4.218-8.686 4.218-3.368 0-7.798-.603-7.127-4.284z"></path></svg></div>                    <div class="grow"></div>
-    //     <p class="text">Cathay Pacific 826</p>
-    //     <p class="subtext">HKG &#8594 YYZ</p>
-    //     <div class="data">
-    //         <p class="big">65</p>
-    //         <p class="small">gate</p>
-    //     </div>
-    // </a>
-    // <div class="spacer-x" style="--size: 20px;"></div>
-    // <a class="homecard basic clickable layer-1">
-    //     <div class="icon red"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M25 2C12.317 2 2 12.317 2 25s10.317 23 23 23 23-10.317 23-23S37.683 2 25 2zm0 26c-.462 0-.895-.113-1.286-.3l-6.007 6.007a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414l6.007-6.007A2.969 2.969 0 0 1 22 25a2.99 2.99 0 0 1 2-2.816V8a1 1 0 1 1 2 0v14.184A2.99 2.99 0 0 1 28 25a3 3 0 0 1-3 3z"></path></svg></div>
-    //     <div class="grow"></div>
-    //     <p class="text">IE 386 Exam 2</p>
-    //     <p class="subtext">Countdown</p>
-    //     <div class="data">
-    //         <p class="big">7</p>
-    //         <p class="small">hours</p>
-    //     </div>
-    // </a>
-    // <div class="spacer-x" style="--size: 20px;"></div>
-    // <a class="homecard trip clickable layer-1">
-    //     <div class="bg" style="background-image: url(https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/images/hero_media_image/2016-11/Hero_San%20Diego%20Skyline_John%20Bahu.jpg?h=3767f04f&amp;itok=R32qq4Na);"></div>
-    //     <div class="gradient">
-    //         <p class="text">San Diego</p>
-    //         <p class="subtext">Thanksgiving &#149 16 days</p>
-    //     </div>
-    // </a>`
-
-    return tray
 }
