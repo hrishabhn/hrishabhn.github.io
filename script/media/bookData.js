@@ -1,15 +1,6 @@
 
 const bookData0 = [
     {
-        name: 'No Rules Rules',
-        id: 'noRules',
-        link: 'ibooks://',
-        author: 'Reed Hastings & Erin Meyer',
-        coverType: 'jpg',
-        progress: '90%',
-        format: 'EBook',
-    },
-    {
         name: 'Going Solo',
         id: 'goingSolo',
         link: 'ibooks://',
@@ -150,6 +141,15 @@ const bookData2 = [
 
 const bookData3 = [
     {
+        name: 'No Rules Rules',
+        id: 'noRules',
+        link: 'ibooks://',
+        author: 'Reed Hastings & Erin Meyer',
+        coverType: 'jpg',
+        progress: 'Finished',
+        format: 'EBook',
+    },
+    {
         name: 'Homo Deus',
         id: 'homodeus',
         link: {
@@ -168,6 +168,28 @@ const bookData3 = [
         coverType: 'jpg',
         progress: 'FINISHED',
         format: 'EBook',
+    },
+    {
+        name: 'Sapiens',
+        id: 'sapiens',
+        link: {
+            audible: 'B0741G911Q',
+        },
+        author: 'Yuval Noah Harari',
+        coverType: 'jpg',
+        progress: 'FINISHED',
+        format: 'AudioBook',
+    },
+    {
+        name: "The Hitchhiker's Guide to the Galaxy",
+        id: 'hitchhiker',
+        link: {
+            audible: 'B002VA9SWS',
+        },
+        author: 'Douglas Adams',
+        coverType: 'jpg',
+        progress: 'FINISHED',
+        format: 'AudioBook',
     },
     {
         name: 'Boy',
