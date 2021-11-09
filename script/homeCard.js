@@ -65,52 +65,56 @@
 
 const homeCardData = [
     {
+        type: 'book',
+        a: 0,
+        b: 0,
+        render: function() { return homeCardBook(this) }
+    },
+    {
+        type: 'book',
+        a: 0,
+        b: 1,
+        render: function() { return homeCardBook(this) }
+    },
+    {
+        type: 'tv',
+        a: 0,
+        b: 0,
+        render: function() { return homeCardTV(this) }
+    },
+    {
+        type: 'tv',
+        a: 0,
+        b: 1,
+        render: function() { return homeCardTV(this) }
+    },
+    {
+        type: 'tv',
+        a: 0,
+        b: 2,
+        render: function() { return homeCardTV(this) }
+    },
+    {
+        type: 'flight',
+        n: 0,
+        // gate: flightData[0].dep.gate,
+        render: function() { return homeCardFlight(this) }
+    },
+    {
+        type: 'flight',
+        n: 2,
+        // gate: flightData[0].dep.gate,
+        render: function() { return homeCardFlight(this) }
+    },
+    {
         type: 'trip',
-        action: function() { openModal(tripCard(0)) },
-        text: tripData[0].name,
-        subtext: `${tripData[0].subhead} &#149 ${countdownProcess((tripData[0].start),'short').num} ${countdownProcess((tripData[0].start),'short').word}`,
-        image: tripData[0].image,
+        n: 0,
         render: function() { return homeCardTrip(this) }
     },
     {
-        type: 'tv',
-        action: function() { tvPopupShow(0,0) },
-        text: movieData[0][0].name,
-        // subtext: `${processDesc(movieData[0][0])}`,
-        image: `media-image/TV/background/${movieData[0][0].id}.${movieData[0][0].style.posterType}`,
-        render: function() { return homeCardTV(this) }
-    },
-    {
-        type: 'book',
-        action: function() { pageData3.open() },
-        text: bookData[0][0].name,
-        subtext: bookData[0][0].author,
-        image: `media-image/books/${bookData[0][0].id}.${bookData[0][0].coverType}`,
-        render: function() { return homeCardBook(this) }
-    },
-    {
-        type: 'tv',
-        action: function() { tvPopupShow(0,1) },
-        text: movieData[0][1].name,
-        subtext: `${processDesc(movieData[0][1])}`,
-        image: `media-image/TV/background/${movieData[0][1].id}.${movieData[0][1].style.posterType}`,
-        render: function() { return homeCardTV(this) }
-    },
-    {
-        type: 'tv',
-        action: function() { tvPopupShow(0,2) },
-        text: movieData[0][2].name,
-        subtext: `${processDesc(movieData[0][2])}`,
-        image: `media-image/TV/background/${movieData[0][2].id}.${movieData[0][2].style.posterType}`,
-        render: function() { return homeCardTV(this) }
-    },
-    {
-        type: 'book',
-        action: function() { pageData3.open() },
-        text: bookData[0][1].name,
-        subtext: bookData[0][1].author,
-        image: `media-image/books/${bookData[0][1].id}.${bookData[0][1].coverType}`,
-        render: function() { return homeCardBook(this) }
+        type: 'trip',
+        n: 1,
+        render: function() { return homeCardTrip(this) }
     },
 ]
 
@@ -140,12 +144,12 @@ function homeCardBasic(data) {
 function homeCardTrip(data) {
     var card = document.createElement('a')
     card.classList = 'homecard trip border clickable layer-1 hover-shadow'
-    card.onclick = function () { data.action() }
+    card.onclick = function () { openModal(tripCard(data.n)) }
     card.innerHTML = `
-    <div class="bg" style="background-image: url(${data.image});"></div>
+    <div class="bg" style="background-image: url(${tripData[data.n].image});"></div>
     <div class="gradient">
-        <p class="text">${data.text}</p>
-        <p class="subtext">${data.subtext}</p>
+        <p class="text">${tripData[data.n].name}</p>
+        <p class="subtext">${tripData[data.n].subhead} &#149 ${countdownProcess((tripData[data.n].start),'short').num} ${countdownProcess((tripData[data.n].start),'short').word}</p>
     </div>`
 
     return card
@@ -161,15 +165,15 @@ function homeCardFlight(data) {
 
     var card = document.createElement('a')
     card.classList = 'homecard basic flight border clickable layer-1 hover-shadow'
-    card.style.setProperty('--fgCol',`#${data.color.fg}`)
-    card.style.setProperty('--bgCol',`#${data.color.bg}`)
-    card.onclick = function () { data.action() }
+    card.style.setProperty('--fgCol',`#${flightData[data.n].airline.color.fg}`)
+    card.style.setProperty('--bgCol',`#${flightData[data.n].airline.color.bg}`)
+    card.onclick = function () { openModal(flightDetail(flightData[data.n])) }
     card.innerHTML = `
     <div class="bg"></div>
-    <div class="logo">${data.logo}</div>
+    <div class="logo">${flightData[data.n].airline.icon.svg}</div>
     <div class="grow"></div>
-    <p class="text">${data.text}</p>
-    <p class="subtext">${data.subtext}</p>
+    <p class="text">${flightData[data.n].airline.name} ${flightData[data.n].number}</p>
+    <p class="subtext">${flightData[data.n].dep.airport} &#8594 ${flightData[data.n].arr.airport}</p>
     ${gate}`
 
     return card
@@ -178,11 +182,11 @@ function homeCardFlight(data) {
 function homeCardTV(data) {
     var card = document.createElement('a')
     card.classList = 'homecard tv clickable layer-1 hover-shadow'
-    card.onclick = function () { data.action() }
+    card.onclick = function () { tvPopupShow(data.a,data.b) }
     card.innerHTML = `
-    <div class="bg" style="background-image: url(${data.image});"></div>
+    <div class="bg" style="background-image: url(media-image/TV/background/${movieData[data.a][data.b].id}.${movieData[data.a][data.b].style.posterType});"></div>
     <div class="gradient">
-        <p class="text">${data.text}</p>
+        <p class="text">${movieData[data.a][data.b].name}</p>
     </div>`
 
     return card
@@ -192,11 +196,11 @@ function homeCardBook(data) {
     card.classList = 'homecard basic book clickable layer-1 hover-shadow'
     card.onclick = function () { pageData[4].open() }
     card.innerHTML = `
-    <div class="cover" style="background-image: url(${data.image});"></div>
+    <div class="cover" style="background-image: url(media-image/books/${bookData[data.a][data.b].id}.${bookData[data.a][data.b].coverType});"></div>
     <div class="info fill-height">
         <div class="grow"></div>
-        <p class="text">${data.text}</p>
-        <p class="subtext">${data.subtext}</p>
+        <p class="text">${bookData[data.a][data.b].name}</p>
+        <p class="subtext">${bookData[data.a][data.b].author}</p>
     </div>
     <div class="grow"></div>`
 
