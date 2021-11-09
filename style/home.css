@@ -86,12 +86,18 @@
 }
 .homecard .logo{
     height: 30px;
-    width: 30px;
+    width: 60px;
 
     padding: 0px;
     border-radius: 20px;
+    justify-content: flex-start;
     /* fill: var(--darkCol); */
 }
+.homecard .logo svg{
+    width: initial;
+    max-width: 100%;
+}
+
 /* @media screen and (prefers-color-scheme: light) {
     .homecard .logo{
         fill: var(--lightCol);
