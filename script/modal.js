@@ -105,8 +105,10 @@ function openModal(content) {
 
     var spacer1 = document.createElement('a')
     var spacer2 = document.createElement('a')
-    spacer1.classList = 'spacer-x hidden-mobile'
-    spacer2.classList = 'spacer-x hidden-mobile'
+    spacer1.classList = 'spacer-x hidden-mobile fill-width'
+    spacer2.classList = 'spacer-x hidden-mobile fill-width'
+    spacer1.onclick = function() { closeModal() }
+    spacer2.onclick = function() { closeModal() }
     spacer1.style.setProperty('--size','40px')
     spacer2.style.setProperty('--size','40px')
 
