@@ -62,7 +62,10 @@ function processDay(dayIndex,type) {
     return days[dayIndex]
 }
 
-function processTime(hours,mins) {
+function processTime(date) {
+    hours = date.getHours()
+    mins = date.getMinutes()
+
     var ampm = 'am'
 
     if (hours > 11) {
@@ -196,6 +199,18 @@ function countdownProcess(date,type) {
         }
 
         return result
+    }
+}
+
+function durationCalculate(start,end) {
+    var difference = end.getTime() - start.getTime()
+    var hours = Math.floor(difference / (1000 * 60 * 60))
+    var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+    
+    if (hours) {
+        return `${hours}h ${minutes}m`
+    } else {
+        return `${minutes}m`
     }
 }
 
