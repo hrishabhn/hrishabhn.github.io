@@ -11,3 +11,7 @@
     flex-direction: column;
     width: 100%;
 }
+#rightbar .close{
+    height: 100px;
+    width: 100%;
+}

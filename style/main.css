@@ -183,6 +183,12 @@ body > *, div, a, p, input{
     font-size: 24px;
     font-weight: 600;
 }
+.page-header .icon{
+    height: 30px;
+    width: 30px;
+    padding: 8px;
+    border-radius: 10px;
+}
 #leftbar{
     position: fixed;
     bottom: 0px;
@@ -318,7 +324,25 @@ svg{
         z-index: 10;
     }
     #rightbar{
-        display: none;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    
+        height: 100vh;
+        width: 100vw;
+        border-top-left-radius: 10px;
+
+        z-index: 10;
+    }
+    #rightbar.hide{
+        transform: translateX(100%);
+        pointer-events: none;
+        transition: all 0s;
+    }
+    #rightbar.show{
+        transform: translateX(0%);
+        opacity: 1;
+        pointer-events: initial;
+        transition: all 0.3s;
     }
     #main{
         position: fixed;

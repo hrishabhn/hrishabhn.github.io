@@ -6,12 +6,21 @@ function rightbarRender() {
     }
 }
 
+function rightBarToggle() {
+    const righbarElement = document.getElementById('rightbar')
+    righbarElement.classList.toggle('hide')
+    righbarElement.classList.toggle('show')
+}
+
 const rightBarContent = [
-    // {
-    //     render: function() {
-    //         return routineTrayElement(0)
-    //     }
-    // },
+    {
+        render: function() {
+            var close = document.createElement('a')
+            close.classList = 'close only-mobile'
+            close.onclick = function () { rightBarToggle() }
+            return close
+        }
+    },
     {
         render: function() {
             return secureElement(routineLoad())
