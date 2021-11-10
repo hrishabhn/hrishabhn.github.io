@@ -322,6 +322,9 @@ svg{
         -webkit-backdrop-filter: blur(25px);
         z-index: 10;
     }
+    #rightbar{
+        display: none;
+    }
     #main{
         position: fixed;
         top: 0px;
