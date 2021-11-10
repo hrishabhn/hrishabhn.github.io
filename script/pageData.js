@@ -1027,7 +1027,7 @@ function renderPageElement(page) {
     headerElement.classList = 'page-header page-width'
     headerElement.innerHTML = page.info.name
     // headerElement.innerHTML = `<p>${page.info.name}</p>`
-    headerElement.innerHTML = `<p>${page.info.name}</p><div class="grow"></div><a class="icon clickable layer-0" onclick="rightBarToggle()"><svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg></a>`
+    headerElement.innerHTML = `<p>${page.info.name}</p><div class="grow"></div><a class="icon clickable layer-0 only-mobile" onclick="rightBarToggle()"><svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg></a>`
     pageElement.append(headerElement)
 
     for (let i = 0; i < page.content.length; i++) {
