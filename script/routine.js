@@ -224,11 +224,14 @@ function calcStreak(i,j) {
 
     var streak
 
-    for (item of cookieData) {
+    for (let k = 0; k < cookieData.length; k++) {
+        const item = cookieData[k]
         if (item.done) {
             streak++ 
         } else {
-            streak = 0
+            if (!(k == cookieData.length - 1)) {
+                streak = 0
+            }
         }
     }
 
