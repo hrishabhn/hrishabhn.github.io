@@ -172,20 +172,6 @@ body > *, div, a, p, input{
 
 
 #header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    justify-content: flex-start;
-    align-items: flex-end;
-
-    width: 100%;
-    height: 60px;
-    padding: 0px 0px 10px 280px;
-
-    font-size: 24px;
-    font-weight: 600;
-
-    /* background-color: black; */
     display: none;
 }
 .page-header{
@@ -283,35 +269,42 @@ svg{
         background-color: #000;
     }
     #header{
-        height: 140px;
-        padding-left: 15px;
-
-        font-size: 30px;
-        font-weight: 700;
-    }
-    .page-header{
-        height: 150px;
-
-        font-size: 30px;
-        font-weight: 700;
-    }
-    #header.small{
-        z-index: 10;
+        position: fixed;
+        display: flex;
         height: 100px;
-        padding-left: 0px;
-        padding-bottom: 12px;
+        width: 100vw;
+        z-index: 10;
         justify-content: center;
+        padding-bottom: 12px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: flex-end;
+        
         font-size: 17px;
         font-weight: 600;
-
+        
         border-bottom-style: solid;
         border-bottom-width: 0.1px;
         border-block-color: var(--white-10);
 
         background-color: var(--dark-layer-1-50);
         -webkit-backdrop-filter: blur(25px);
+
+        transition: all 0.2s;
+        opacity: 0;
+    }
+    #header.small{
+        opacity: 1;
     }
 
+
+    .page-header{
+        height: 150px;
+
+        font-size: 30px;
+        font-weight: 700;
+    }
     #leftbar{
         flex-direction: row;
         height: 90px;
@@ -344,7 +337,7 @@ svg{
         body{
             background-color: var(--light-layer-1);
         }
-        #header.small{
+        #header{
             border-block-color: var(--black-10);
             background-color: var(--light-layer-1-50);
         }
