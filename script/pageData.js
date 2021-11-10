@@ -21,8 +21,8 @@ const pageData0 = {
     content: [
         {
             type: 'search',
-            engine: 'Google',
-            link: googleLoad(),
+            engine: 'You',
+            link: 'https://you.com',
             render: function() {
                 return searchElement(this)
             }
@@ -55,6 +55,17 @@ const pageData0 = {
                     combineSubColElements(pageShortcutElement(1),pageShortcutElement(3)),
                     combineSubColElements(pageShortcutElement(4),pageShortcutElement(8))
                 )
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            type: 'search',
+            engine: 'Google',
+            link: googleLoad(),
+            render: function() {
+                return searchElement(this)
             }
         },
         {
