@@ -1,0 +1,26 @@
+.login-card{
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+    flex-direction: column;
+}
+.login-card .icon{
+    height: 80px;
+    width: 80px;
+}
+.login-card .prompt{
+    font-size: 36px;
+    font-weight: 500;
+}
+#password-field{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-user-select: initial;
+
+    font-size: 14px;
+    font-weight: 400;
+    background: none;
+    outline: none;
+}
