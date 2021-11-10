@@ -2,7 +2,6 @@ function rightbarRender() {
     const righbarElement = document.getElementById('rightbar')
 
     for (const content of rightBarContent) {
-        console.log(content.render())
         righbarElement.append(content.render())
     }
 }
