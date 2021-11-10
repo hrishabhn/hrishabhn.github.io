@@ -7,14 +7,17 @@ function rightbarRender() {
 }
 
 const rightBarContent = [
+    // {
+    //     render: function() {
+    //         return routineTrayElement(0)
+    //     }
+    // },
     {
-        type: 'routine',
         render: function() {
             return secureElement(routineLoad())
         }
     },
     {
-        type: 'calendar',
         render: function() {
             return secureElement(calendarTrayRender())
         }

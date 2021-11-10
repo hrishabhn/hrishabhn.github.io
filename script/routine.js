@@ -1,215 +1,3 @@
-function routineLoad() {
-    const time = timeOfDay()
-
-    if ((time == 2) || (time == 3)) {
-        var n = 0
-    } else if ((time == 6) || (time == 7) || (time == 0)) {
-        var n = 1
-    }
-
-    // updating, refreshing and creating cookies
-    for (let i = 0; i < routineData.length; i++) {
-        for (let j = 0; j < routineData[i].data.length; j++) {
-            setCookie(`routine-${i}-${j}`, JSON.stringify(refreshRoutineCookie(i, j)), 10)
-        }
-    }
-
-    if (n + 1) {
-        return routineTray(n)
-    } else {
-        return document.createElement('div')
-    }
-}
-function refreshRoutineCookie(i,j) {
-    // console.log(getCookie(`routine-${i}-${j}`))
-    // removeCookie(`routine-${i}-${j}`)
-
-    if (!getCookie(`routine-${i}-${j}`)) {
-        var data = []
-
-        for (let p = 0; p < 7; p++) {
-            var day = new Date((new Date).valueOf() - (86400000 * p))
-
-            var item = {
-                date: `${processMonth(day.getMonth(),'short')} ${day.getDate()}, ${(day.getFullYear())}`,
-                done: false,
-            }
-
-            data.unshift(item)
-        }
-        return data
-    } else {
-        var data = JSON.parse(getCookie(`routine-${i}-${j}`))
-
-        const lastDate = new Date(data[data.length - 1].date)
-        const updatedToday = lastDate.getDate() == (new Date()).getDate()
-
-        if (!updatedToday) {
-            data.shift()
-            const today = {
-                date: `${processMonth((new Date()).getMonth(),'short')} ${(new Date()).getDate()}, ${(new Date().getFullYear())}`,
-                done: false,
-            }
-            data.push(today)
-        }
-
-        return data
-    }
-}
-// function routineTest() {
-//     var i = 1
-//     for (let j = 0; j < routineData[i].data.length; j++){
-//         updateRoutineItem(i,j)
-//     }
-// }
-
-
-function toggleCookie(i,j,k) {
-    var cookieData = JSON.parse(getCookie(`routine-${i}-${j}`))
-    cookieData[k].done = !cookieData[k].done
-    setCookie(`routine-${i}-${j}`,JSON.stringify(cookieData),10)
-}
-
-function routineItem(i, j) {
-    // const data = routineData[i].data[j]
-
-    var item = document.createElement('div')
-    item.classList = 'routine-card layer-2'
-
-    item.id = `routine-${i}-${j}`
-    // item.onclick = function () { routineSwitchToggle(i, j) }
-    item.append(routineItemContent(i,j))
-
-    return item
-}
-function routineItemContent(i,j) {
-    const cookieData = JSON.parse(getCookie(`routine-${i}-${j}`))
-
-    var item = document.createElement('div')
-    item.classList = 'vstack fill-width'
-
-    if (cookieData[cookieData.length - 1].done) {
-        item.classList.add('todaydone')
-    }
-
-    item.innerHTML = `
-    <div class="hstack fill-width">
-        <div class="info">
-            <p class="text">${routineData[i].data[j].name}</p>
-            <div class="spacer-x" style="--size: 2px;"></div>
-            <p class="subtext">${calcStreak(i,j)}</p>
-        </div>
-        <div class="grow"></div>
-        <div class="icon ${routineData[i].data[j].color}">
-            ${routineData[i].data[j].icon}
-            <div class="check layer-fg card-shadow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="65.19 65.191 174.621 174.621" style="enable-background:new 0 0 305.002 305.002" xml:space="preserve"><path d="m218.473 93.97-90.546 90.547-41.398-41.398c-4.882-4.881-12.796-4.881-17.678 0-4.881 4.882-4.881 12.796 0 17.678l50.237 50.237a12.465 12.465 0 0 0 8.839 3.661c3.199 0 6.398-1.221 8.839-3.661l99.385-99.385c4.881-4.882 4.881-12.796 0-17.678-4.882-4.882-12.797-4.882-17.678-.001z"/></svg></div>
-        </div>
-    </div>
-    <div class="spacer-x" style="--size: 10px;"></div>`
-
-    item.append(routineItemDays(i,j,cookieData))
-
-    return item
-}
-function calcStreak(i,j) {
-    const cookieData = JSON.parse(getCookie(`routine-${i}-${j}`))
-
-    var streak
-
-    for (item of cookieData) {
-        if (item.done) {
-            streak++ 
-        } else {
-            streak = 0
-        }
-    }
-
-    if (streak) {
-        return `${streak} day streak`
-    } else {
-        return 'No streak, keep trying!'
-    }
-
-    console.log(streak)
-    return 'streak'
-}
-
-
-
-function updateRoutineItem(i,j) {
-    var item = document.getElementById(`routine-${i}-${j}`)
-    removeAllChildNodes(item)
-    item.append(routineItemContent(i,j))
-}
-function routineItemDays(i,j,cookieData) {
-    var alldays = document.createElement('div')
-    alldays.classList = 'alldays'
-    
-    for (let k = 0; k < cookieData.length; k++) {
-        // console.log(cookieData[i].date)
-        const date = new Date(cookieData[k].date)
-        const done = cookieData[k].done
-
-        var day = document.createElement('a')
-        day.onclick = function() { toggleCookie(i,j,k); updateRoutineItem(i,j) }
-        day.classList = 'item clickable'
-        
-        var num = document.createElement('p')
-        num.classList = 'num image-border'
-        num.innerHTML = date.getDate()
-        if (done) {
-            num.classList = `num done ${routineData[i].data[j].color}`
-        } else {
-            num.classList = 'num image-border'
-        }
-
-        day.innerHTML = `
-        <p class="day">${processDay(date.getDay(),'short')}</p>
-        <div class="spacer-x" style="--size: 2px;"></div>
-        ${num.outerHTML}
-        `
-        alldays.append(day)
-
-        if (k < cookieData.length - 1) {
-            alldays.append(growElement())
-        }
-    }
-
-    return alldays
-}
-
-
-// function routineLoad() {
-//     const time = timeOfDay()
-
-//     if ((time == 2) || (time == 3)) {
-//         var n = 0
-//     } else if ((time == 6) || (time == 7) || (time == 0)) {
-//         var n = 1
-//     }
-
-//     for (let i = 0; i < routineData.length; i++) {
-//         for (let j = 0; j < routineData[i].length; j++) {
-//             routineCookies(i, j)
-//         }
-//     }
-
-//     if (n + 1) {
-//         return routineTray(n)
-//     } else {
-//         var spacer  = document.createElement('div')
-//         spacer.classList = 'spacer-content neg'
-//         return spacerContentNegElement()
-//     }
-// }
-
-// function routineCookies(i, j) {
-//     // console.log(i, j)
-//     if (!(getCookie(`routine-${i}-${j}`))) {
-//         setCookie(`routine-${i}-${j}`, 0, 1 / 3)
-//     }
-// }
-
 const routineData = [
     {
         greeting: 'Good morning.',
@@ -268,46 +56,397 @@ const routineData = [
     },
 ]
 
-function routineTray(i) {
+function routineLoad() {
+    const time = timeOfDay()
+
+    if ((time == 2) || (time == 3)) {
+        var n = 0
+    } else if ((time == 6) || (time == 7) || (time == 0)) {
+        var n = 1
+    }
+
+    if (n + 1) {
+        return routineTrayElement(n)
+    } else {
+        return document.createElement('div')
+    }
+
+}
+function routineCookieLoad(i,j) {
+    // clearAllCookies()
+
+    if (!getCookie(`routine-${i}-${j}`)) {
+        var newData = []
+        for (let k = 6; k >= 0; k--) {
+            var dateItem = new Date((new Date).getTime() - 86400000 * k)
+
+            const item = {
+                date: `${processMonth(dateItem.getMonth(),'short')} ${dateItem.getDate()}, ${dateItem.getFullYear()}`,
+                done: false,
+            }
+
+            newData.push(item)
+        }
+        setCookie(`routine-${i}-${j}`,JSON.stringify(newData),7)
+    } else {
+        var oldData = JSON.parse(getCookie(`routine-${i}-${j}`))
+
+        const lastDate = new Date(oldData[oldData.length - 1].date)
+        const updatedToday = lastDate.getDate() == (new Date()).getDate()
+
+        if (!updatedToday) {
+            oldData.shift()
+
+            dateItem = new Date()
+            const item = {
+                date: `${processMonth(dateItem.getMonth(),'short')} ${dateItem.getDate()}, ${dateItem.getFullYear()}`,
+                done: false,
+            }
+            oldData.push(item)
+            console.log(oldData)
+        }
+        setCookie(`routine-${i}-${j}`,JSON.stringify(oldData),7)
+    }
+}
+
+function routineTrayElement(i) {
     var tray = document.createElement('div')
     tray.classList = 'tray'
-    // container.id = 'routine-container'
-    // container.classList = 'routine-container page-width layer-1 card-shadow '
+    tray.append(rightbarTitleElement('Good morning.'))
     
-
-    // title.onclick = function() {routineAllToggle()}
-    // title.innerHTML = `
-    // <p>${routineData[i].greeting}</p>
-    // <div class="grow"></div>
-    // <div class="full-icon">
-    //     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.071 12 9.25 8.179a1.061 1.061 0 0 1 1.5-1.5l4.614 4.614a.999.999 0 0 1 0 1.414l-4.614 4.614a1.061 1.061 0 0 1-1.5-1.5L13.071 12z"></path></svg>
-    // </div>`
-    tray.append(rightbarTitleElement('Good night.'))
-
-    // var tray = hscrollHuluElement()
-    // var tray = document.createElement('div')
-    // tray.classList = 'routine-tray'
-    // var tray = hscrollElement()
-    // tray.append(spacerElement(20))
-
-    var product = 1
-
     for (let j = 0; j < routineData[i].data.length; j++) {
-        tray.append(routineItem(i, j))
+        routineCookieLoad(i,j)
+        tray.append(routineCardElement(i,j))
         tray.append(spacerElement(10))
-
-        product = product * routineData[i].data[j].complete
     }
 
-    if (product) {
-        container.classList.add('all-done')
-    }
-
-    // tray.append(growElement())
-    // container.append(tray)
-    // container.append(spacerElement(20))
     return tray
 }
+
+function routineCardElement(i,j) {
+    var item = document.createElement('div')
+    item.classList = 'routine-card layer-2'
+    item.id = `routine-${i}-${j}`
+    if (JSON.parse(getCookie(`routine-${i}-${j}`))[6].done) {
+        item.classList.add('today-done')
+    } else {
+        item.classList.remove('today-done')
+    }
+
+    item.innerHTML = `
+    <div class="hstack fill-width">
+        <div class="info">
+            <p class="text">${routineData[i].data[j].name}</p>
+            <div class="spacer-x" style="--size: 2px;"></div>
+            <p class="subtext">${calcStreak(i,j)}</p>
+        </div>
+        <div class="grow"></div>
+        <div id="routine-${i}-${j}-icon" class="icon ${routineData[i].data[j].color}">
+            ${routineData[i].data[j].icon}
+        </div>
+        <div class="check layer-fg card-shadow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="65.19 65.191 174.621 174.621" style="enable-background:new 0 0 305.002 305.002" xml:space="preserve"><path d="m218.473 93.97-90.546 90.547-41.398-41.398c-4.882-4.881-12.796-4.881-17.678 0-4.881 4.882-4.881 12.796 0 17.678l50.237 50.237a12.465 12.465 0 0 0 8.839 3.661c3.199 0 6.398-1.221 8.839-3.661l99.385-99.385c4.881-4.882 4.881-12.796 0-17.678-4.882-4.882-12.797-4.882-17.678-.001z"/></svg></div>
+    </div>
+    <div class="spacer-x" style="--size: 10px;"></div>`
+
+    item.append(routineItemDaysElement(i,j))
+
+    return item
+}
+
+function routineItemDaysElement(i,j) {
+    const data = JSON.parse(getCookie(`routine-${i}-${j}`))
+
+    var container = document.createElement('div')
+    container.classList = 'alldays'
+
+    for (let k = 0; k < 7; k++) {
+        const date = new Date(data[k].date)
+        const done = data[k].done
+
+        var day = document.createElement('a')
+        day.classList = 'item clickable'
+        day.id = `routine-${i}-${j}-${k}`
+        day.onclick = function() { toggleCookie(i,j,k); toggleDay(i,j,k) }
+        
+        day.innerHTML = `
+        <p class="day">${processDay(date.getDay(),'short')}</p>
+        <div class="spacer-x" style="--size: 2px;"></div>
+        `
+        var num = document.createElement('p')
+        if (done) {
+            num.classList = `num done ${routineData[i].data[j].color}`
+        } else {
+            num.classList = 'num image-border'
+        }
+        num.innerHTML = date.getDate()
+        day.append(num)
+
+        container.append(day)
+
+        if (k < 6) {
+            container.append(growElement())
+        }
+    }
+
+    return container
+}
+
+function toggleDay(i,j,k) {
+    const complete = JSON.parse(getCookie(`routine-${i}-${j}`))[k].done
+    const audio = new Audio('audio/complete.m4a')
+    console.log(complete)
+
+    var dayNum = document.getElementById(`routine-${i}-${j}-${k}`).childNodes[5]
+    if (complete) {
+        dayNum.classList = `num done ${routineData[i].data[j].color}`
+        audio.play()
+    } else {
+        dayNum.classList = `num image-border`
+    }
+
+    if (k == 6) {
+        var card = document.getElementById(`routine-${i}-${j}`)
+        if (JSON.parse(getCookie(`routine-${i}-${j}`))[6].done) {
+            card.classList.add('today-done')
+        } else {
+            card.classList.remove('today-done')
+        }
+    }
+}
+function toggleCookie(i,j,k) {
+    var cookieData = JSON.parse(getCookie(`routine-${i}-${j}`))
+    cookieData[k].done = !cookieData[k].done
+    setCookie(`routine-${i}-${j}`,JSON.stringify(cookieData),7)
+}
+
+function calcStreak(i,j) {
+    const cookieData = JSON.parse(getCookie(`routine-${i}-${j}`))
+
+    var streak
+
+    for (item of cookieData) {
+        if (item.done) {
+            streak++ 
+        } else {
+            streak = 0
+        }
+    }
+
+    if (streak) {
+        return `${streak} day streak`
+    } else {
+        return 'No streak, keep trying!'
+    }
+
+    console.log(streak)
+    return 'streak'
+}
+
+// function routineTest() {
+//     var i = 1
+//     for (let j = 0; j < routineData[i].data.length; j++){
+//         updateRoutineItem(i,j)
+//     }
+// }
+
+
+// function refreshRoutineCookie(i,j) {
+//     // console.log(JSON.parse(getCookie(`routine-${i}-${j}`)))
+//     // removeCookie(`routine-${i}-${j}`)
+
+//     if (!getCookie(`routine-${i}-${j}`)) {
+//         var data = []
+
+//         for (let p = 0; p < 7; p++) {
+//             var day = new Date((new Date).valueOf() - (86400000 * p))
+
+//             var item = {
+//                 date: `${processMonth(day.getMonth(),'short')} ${day.getDate()}, ${(day.getFullYear())}`,
+//                 done: false,
+//             }
+
+//             data.unshift(item)
+//         }
+//         return data
+//     } else {
+//         var data = JSON.parse(getCookie(`routine-${i}-${j}`))
+
+//         const lastDate = new Date(data[data.length - 1].date)
+//         const updatedToday = lastDate.getDate() == (new Date()).getDate()
+
+//         if (!updatedToday) {
+//             data.shift()
+//             const today = {
+//                 date: `${processMonth((new Date()).getMonth(),'short')} ${(new Date()).getDate()}, ${(new Date().getFullYear())}`,
+//                 done: false,
+//             }
+//             data.push(today)
+//         }
+
+//         return data
+//     }
+// }
+
+
+// function routineItem(i, j) {
+//     // const data = routineData[i].data[j]
+
+//     var item = document.createElement('div')
+//     item.classList = 'routine-card layer-2'
+
+//     item.id = `routine-${i}-${j}`
+//     // item.onclick = function () { routineSwitchToggle(i, j) }
+//     item.append(routineItemContent(i,j))
+
+//     return item
+// }
+// function routineItemContent(i,j) {
+//     const cookieData = JSON.parse(getCookie(`routine-${i}-${j}`))
+
+//     var item = document.createElement('div')
+//     item.classList = 'vstack fill-width'
+
+//     if (cookieData[cookieData.length - 1].done) {
+//         item.classList.add('todaydone')
+//     }
+
+//     item.innerHTML = `
+//     <div class="hstack fill-width">
+//         <div class="info">
+//             <p class="text">${routineData[i].data[j].name}</p>
+//             <div class="spacer-x" style="--size: 2px;"></div>
+//             <p class="subtext">${calcStreak(i,j)}</p>
+//         </div>
+//         <div class="grow"></div>
+//         <div class="icon ${routineData[i].data[j].color}">
+//             ${routineData[i].data[j].icon}
+//             <div class="check layer-fg card-shadow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="65.19 65.191 174.621 174.621" style="enable-background:new 0 0 305.002 305.002" xml:space="preserve"><path d="m218.473 93.97-90.546 90.547-41.398-41.398c-4.882-4.881-12.796-4.881-17.678 0-4.881 4.882-4.881 12.796 0 17.678l50.237 50.237a12.465 12.465 0 0 0 8.839 3.661c3.199 0 6.398-1.221 8.839-3.661l99.385-99.385c4.881-4.882 4.881-12.796 0-17.678-4.882-4.882-12.797-4.882-17.678-.001z"/></svg></div>
+//         </div>
+//     </div>
+//     <div class="spacer-x" style="--size: 10px;"></div>`
+
+//     item.append(routineItemDays(i,j,cookieData))
+
+//     return item
+// }
+
+
+
+// function updateRoutineItem(i,j) {
+//     var item = document.getElementById(`routine-${i}-${j}`)
+//     removeAllChildNodes(item)
+//     item.append(routineItemContent(i,j))
+// }
+// function routineItemDays(i,j,cookieData) {
+//     var alldays = document.createElement('div')
+//     alldays.classList = 'alldays'
+    
+//     for (let k = 0; k < cookieData.length; k++) {
+//         // console.log(cookieData[i].date)
+//         const date = new Date(cookieData[k].date)
+//         const done = cookieData[k].done
+
+//         var day = document.createElement('a')
+//         day.onclick = function() { toggleCookie(i,j,k); updateRoutineItem(i,j) }
+//         day.classList = 'item clickable'
+        
+//         var num = document.createElement('p')
+//         num.classList = 'num image-border'
+//         num.innerHTML = date.getDate()
+//         if (done) {
+//             num.classList = `num done ${routineData[i].data[j].color}`
+//         } else {
+//             num.classList = 'num image-border'
+//         }
+
+//         day.innerHTML = `
+//         <p class="day">${processDay(date.getDay(),'short')}</p>
+//         <div class="spacer-x" style="--size: 2px;"></div>
+//         ${num.outerHTML}
+//         `
+//         alldays.append(day)
+
+//         if (k < cookieData.length - 1) {
+//             alldays.append(growElement())
+//         }
+//     }
+
+//     return alldays
+// }
+
+
+// function routineLoad() {
+//     const time = timeOfDay()
+
+//     if ((time == 2) || (time == 3)) {
+//         var n = 0
+//     } else if ((time == 6) || (time == 7) || (time == 0)) {
+//         var n = 1
+//     }
+
+//     for (let i = 0; i < routineData.length; i++) {
+//         for (let j = 0; j < routineData[i].length; j++) {
+//             routineCookies(i, j)
+//         }
+//     }
+
+//     if (n + 1) {
+//         return routineTray(n)
+//     } else {
+//         var spacer  = document.createElement('div')
+//         spacer.classList = 'spacer-content neg'
+//         return spacerContentNegElement()
+//     }
+// }
+
+// function routineCookies(i, j) {
+//     // console.log(i, j)
+//     if (!(getCookie(`routine-${i}-${j}`))) {
+//         setCookie(`routine-${i}-${j}`, 0, 1 / 3)
+//     }
+// }
+
+
+// function routineTray(i) {
+//     var tray = document.createElement('div')
+//     tray.classList = 'tray'
+//     // container.id = 'routine-container'
+//     // container.classList = 'routine-container page-width layer-1 card-shadow '
+    
+
+//     // title.onclick = function() {routineAllToggle()}
+//     // title.innerHTML = `
+//     // <p>${routineData[i].greeting}</p>
+//     // <div class="grow"></div>
+//     // <div class="full-icon">
+//     //     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.071 12 9.25 8.179a1.061 1.061 0 0 1 1.5-1.5l4.614 4.614a.999.999 0 0 1 0 1.414l-4.614 4.614a1.061 1.061 0 0 1-1.5-1.5L13.071 12z"></path></svg>
+//     // </div>`
+//     tray.append(rightbarTitleElement('Good night.'))
+
+//     // var tray = hscrollHuluElement()
+//     // var tray = document.createElement('div')
+//     // tray.classList = 'routine-tray'
+//     // var tray = hscrollElement()
+//     // tray.append(spacerElement(20))
+
+//     var product = 1
+
+//     for (let j = 0; j < routineData[i].data.length; j++) {
+//         tray.append(routineItem(i, j))
+//         tray.append(spacerElement(10))
+
+//         product = product * routineData[i].data[j].complete
+//     }
+
+//     if (product) {
+//         container.classList.add('all-done')
+//     }
+
+//     // tray.append(growElement())
+//     // container.append(tray)
+//     // container.append(spacerElement(20))
+//     return tray
+// }
 
 // function routineItem(i, j) {
 //     const data = routineData[i].data[j]
