@@ -1,15 +1,15 @@
-#routine-container{
+/* #routine-container{
     flex-direction: column;
     border-radius: 10px;
-}
-#routine-container .title{
+} */
+/* #routine-container .title{
     width: 100%;
     padding: 20px;
     padding-bottom: 0;
     font-size: 24px;
     font-weight: 600;
-}
-#routine-container .full-icon{
+} */
+/* #routine-container .full-icon{
     height: 30px;
     width: 30px;
     transform: rotate(90deg);
@@ -17,12 +17,12 @@
 }
 #routine-container.all-done .full-icon{
     transform: rotate(180deg);
-}
+} */
 
-#routine-container.all-done .title{
+/* #routine-container.all-done .title{
     margin-bottom: -15px;
-}
-#routine-container .hscroll{
+} */
+/* #routine-container .hscroll{
     height: 110px;
     transition: all 0.25s;
 }
@@ -35,10 +35,12 @@
     width: 100%;
     padding: 20px;
     padding-top: 10px;
-}
+} */
 
 .routine-card{
-    padding: 15px;
+    flex-direction: column;
+    width: calc(100% - 30px);
+    padding: 12px;
     border-radius: 10px;
     flex-direction: column;
 }
@@ -48,7 +50,7 @@
 }
 
 .routine-card .info .text{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 .routine-card .info .subtext{
@@ -83,7 +85,7 @@
 }
 
 .routine-card .alldays{
-
+    width: 100%;
 }
 .routine-card .alldays .item{
     flex-direction: column;
