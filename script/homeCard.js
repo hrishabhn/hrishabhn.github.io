@@ -278,7 +278,7 @@ function homeCardTV(data) {
 function homeCardBook(data) {
     var card = document.createElement('a')
     card.classList = 'homecard basic book clickable layer-1'
-    card.onclick = function () { pageData[4].open() }
+    card.onclick = function () { pageData[5].open() }
     card.innerHTML = `
     <div class="cover" style="background-image: url(media-image/books/${bookData[data.a][data.b].id}.${bookData[data.a][data.b].coverType});"></div>
     <div class="info fill-height">
