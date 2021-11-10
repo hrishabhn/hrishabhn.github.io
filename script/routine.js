@@ -17,9 +17,7 @@ function routineLoad() {
     if (n + 1) {
         return routineTray(n)
     } else {
-        var spacer  = document.createElement('div')
-        spacer.classList = 'spacer-content neg'
-        return spacerContentNegElement()
+        return document.createElement('div')
     }
 }
 function refreshRoutineCookie(i,j) {
@@ -88,7 +86,7 @@ function routineItemContent(i,j) {
     const cookieData = JSON.parse(getCookie(`routine-${i}-${j}`))
 
     var item = document.createElement('div')
-    item.classList = 'vstack'
+    item.classList = 'vstack fill-width'
 
     if (cookieData[cookieData.length - 1].done) {
         item.classList.add('todaydone')
@@ -173,7 +171,7 @@ function routineItemDays(i,j,cookieData) {
         alldays.append(day)
 
         if (k < cookieData.length - 1) {
-            alldays.append(spacerElement(10))
+            alldays.append(growElement())
         }
     }
 
@@ -271,33 +269,32 @@ const routineData = [
 ]
 
 function routineTray(i) {
-    var container = document.createElement('div')
-    container.id = 'routine-container'
-    container.classList = 'routine-container page-width layer-1 card-shadow '
+    var tray = document.createElement('div')
+    tray.classList = 'tray'
+    // container.id = 'routine-container'
+    // container.classList = 'routine-container page-width layer-1 card-shadow '
     
-    var title = document.createElement('a')
-    title.classList = 'title'
-    title.onclick = function() {routineAllToggle()}
-    title.innerHTML = `
-    <p>${routineData[i].greeting}</p>
-    <div class="grow"></div>
-    <div class="full-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.071 12 9.25 8.179a1.061 1.061 0 0 1 1.5-1.5l4.614 4.614a.999.999 0 0 1 0 1.414l-4.614 4.614a1.061 1.061 0 0 1-1.5-1.5L13.071 12z"></path></svg>
-    </div>`
-    container.append(title)
-    container.append(spacerElement(15))
+
+    // title.onclick = function() {routineAllToggle()}
+    // title.innerHTML = `
+    // <p>${routineData[i].greeting}</p>
+    // <div class="grow"></div>
+    // <div class="full-icon">
+    //     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.071 12 9.25 8.179a1.061 1.061 0 0 1 1.5-1.5l4.614 4.614a.999.999 0 0 1 0 1.414l-4.614 4.614a1.061 1.061 0 0 1-1.5-1.5L13.071 12z"></path></svg>
+    // </div>`
+    tray.append(rightbarTitleElement('Good night.'))
 
     // var tray = hscrollHuluElement()
     // var tray = document.createElement('div')
     // tray.classList = 'routine-tray'
-    var tray = hscrollElement()
-    tray.append(spacerElement(20))
+    // var tray = hscrollElement()
+    // tray.append(spacerElement(20))
 
     var product = 1
 
     for (let j = 0; j < routineData[i].data.length; j++) {
         tray.append(routineItem(i, j))
-        tray.append(spacerElement(20))
+        tray.append(spacerElement(10))
 
         product = product * routineData[i].data[j].complete
     }
@@ -306,10 +303,10 @@ function routineTray(i) {
         container.classList.add('all-done')
     }
 
-    tray.append(growElement())
-    container.append(tray)
-    container.append(spacerElement(20))
-    return container
+    // tray.append(growElement())
+    // container.append(tray)
+    // container.append(spacerElement(20))
+    return tray
 }
 
 // function routineItem(i, j) {
