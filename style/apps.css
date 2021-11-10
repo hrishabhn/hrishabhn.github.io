@@ -242,7 +242,7 @@
     }
 
     .app-list{
-        width: calc(100% - 30px);
+        width: 100%;
     }
     .col-container{
         flex-direction: column;
