@@ -93,7 +93,7 @@ function calendarEventRender(n) {
     //     <p id="event-${n}-countdown-big" class="big">-</p>
     //     <p id="event-${n}-countdown-small" class="small">-</p>
     // </div>`
-    
+
     var container = document.createElement('div')
     container.classList = 'vstack fill-width'
     container.id = `event-${n}`
@@ -118,11 +118,13 @@ async function calendarTrayPopulate() {
 
         const started = (new Date(await eventData[i - 1].start)) < new Date()
         const ended = (new Date(await eventData[i - 1].end)) < new Date()
+        const soon = (new Date(await eventData[i - 1].start)) < new Date((new Date).getTime() + 86400000)
+        console.log(soon)
 
         if (started) {
             card.classList.add('now')
         }
-        if (ended) {
+        if (ended || (!soon)) {
             container.classList.add('hidden-always')
         }
 
@@ -169,7 +171,7 @@ function eventLocation(location) {
 
 function eventDate(start) {
     return processDay(processDate(start).day,'short')
-    
+
 }
 function eventTime(start, end, allDay) {
     if (allDay == 'Yes') {
@@ -177,7 +179,7 @@ function eventTime(start, end, allDay) {
     } else {
         const startString = `${processTime(new Date(start))} `
         const endString = `${processTime(new Date(end))} `
-    
+
         return `${startString} - ${endString} `
     }
 }

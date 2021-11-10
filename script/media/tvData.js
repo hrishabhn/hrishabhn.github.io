@@ -2828,6 +2828,84 @@ const movieData7 = [
 ]
 const movieData8 = [
     {
+        name: 'Blue Mountain State',
+        id: 'bms',
+        link: {
+            primeVideo: 'B08CG43CLR'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            desc: {
+                seasons: 3,
+                yearStart: 2010,
+                yearEnd: 2011,
+                genre: [
+                    'comedy',
+                    'sports',
+                ],
+            },
+            summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
+        },
+        style: {
+            color: '7d7787',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'png',
+            mobileSize: '9 / 10',
+        },
+        apps: {
+            tvTimeID: '134511',
+            reelgoodLink: 'https://reelgood.com/show/blue-mountain-state-2010',
+            imdbID: 'tt1344204',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Darin Brooks',
+                image: 'https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w425-q80/cast/bb_cast_darin_brooks_800x1000.jpg',
+                char: 'Alex Moran',
+            },
+            {
+                actor: 'Alan Ritchson',
+                image: 'https://static.wikia.nocookie.net/tmnt/images/5/50/Alan-ritchson-premiere-steam-01.jpg',
+                char: 'name',
+            },
+            {
+                actor: 'Chris Romano',
+                image: 'https://www.themoviedb.org/t/p/w235_and_h235_face/qaUN5cJYHWBwDBn40yEuWXQwMfg.jpg',
+                char: 'Sammy Cacciatore',
+            },
+            {
+                actor: 'Ed Marino',
+                image: 'https://playersbio.com/wp-content/uploads/2020/06/ed-003.jpg',
+                char: 'Coach Marty Daniels',
+            },
+            {
+                actor: 'Denise Richards',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Denise_Richards_2009.jpg',
+                char: 'Debra',
+            },
+            {
+                actor: 'Frankie Shaw',
+                image: 'https://m.media-amazon.com/images/M/MV5BNzliMWQ1OTItMjhiNy00YzExLWE3NzEtZDgwYTM0ODA2NTYzXkEyXkFqcGdeQXVyNzMzNzYzNg@@._V1_.jpg',
+                char: 'Mary Jo Cacciatore',
+            },
+            {
+                actor: 'Sam Jones III',
+                image: 'https://static.wikia.nocookie.net/tvdatabase/images/7/74/Sam_Jones%2C_III.jpg',
+                char: 'Craig Shilo',
+            },
+            {
+                actor: 'Page Kennedy',
+                image: 'https://parlemag.com/wp-content/uploads/2016/06/Page-Kennedy.jpg',
+                char: 'Radon Randell',
+            },
+        ],
+    },
+    {
         name: 'Bojack Horseman',
         id: 'bojack',
         link: {
