@@ -52,8 +52,8 @@ const pageData0 = {
             type: 'shortcut-tray',
             render: function() {
                 return colContainerRender(
-                    combineSubColElements(pageShortcutElement(3),pageShortcutElement(4)),
-                    combineSubColElements(pageShortcutElement(5),pageShortcutElement(7))
+                    combineSubColElements(pageShortcutElement(1),pageShortcutElement(3)),
+                    combineSubColElements(pageShortcutElement(4),pageShortcutElement(8))
                 )
             }
         },
@@ -154,7 +154,7 @@ const pageData1 = {
         subtext: 'Go',
         style: 'green',
         icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 423.936 423.936"><path d="M327.68 0H96.256c-22.528 0-40.96 18.432-40.96 40.96v357.376c0 9.728 5.632 18.944 14.336 23.04 9.216 4.096 19.456 3.072 27.136-3.072l.512-.512 114.688-96.768 114.688 96.768.512.512c4.608 3.584 10.24 5.632 15.872 5.632 3.584 0 7.68-1.024 11.264-3.072 8.704-4.096 14.336-13.312 14.336-23.04V40.96C368.64 18.432 350.208 0 327.68 0z"/></svg>',
-        menuMobile: true,
+        menuMobile: false,
         secure: false,
     },
     content: [
@@ -288,9 +288,9 @@ const pageData3 = {
         type: 'page',
         name: 'School',
         subtext: 'Learn',
-        style: 'green',
+        style: 'yellow',
         icon: '<svg x="0px" y="0px" viewBox="0 0 469.333 469.333"><g><path d="M170.667,0h-128C19.135,0,0,19.135,0,42.667v128c0,23.531,19.135,42.667,42.667,42.667h128 c23.531,0,42.667-19.135,42.667-42.667v-128C213.333,19.135,194.198,0,170.667,0z"/><path d="M426.667,0h-128C275.135,0,256,19.135,256,42.667v128c0,23.531,19.135,42.667,42.667,42.667h128 c23.531,0,42.667-19.135,42.667-42.667v-128C469.333,19.135,450.198,0,426.667,0z"/><path d="M170.667,256h-128C19.135,256,0,275.135,0,298.667v128c0,23.531,19.135,42.667,42.667,42.667h128 c23.531,0,42.667-19.135,42.667-42.667v-128C213.333,275.135,194.198,256,170.667,256z"/><path d="M416,341.333h-32v-32c0-5.896-4.771-10.667-10.667-10.667H352c-5.896,0-10.667,4.771-10.667,10.667v32h-32 c-5.896,0-10.667,4.771-10.667,10.667v21.333c0,5.896,4.771,10.667,10.667,10.667h32v32c0,5.896,4.771,10.667,10.667,10.667 h21.333c5.896,0,10.667-4.771,10.667-10.667v-32h32c5.896,0,10.667-4.771,10.667-10.667V352 C426.667,346.104,421.896,341.333,416,341.333z"/></g></svg>',
-        menuMobile: true,
+        menuMobile: false,
         secure: false,
     },
     content: [
@@ -759,7 +759,7 @@ const pageData6 = {
         subtext: 'Listen',
         style: 'purple',
         icon: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="23.878997802734375 25.78700065612793 464.2480163574219 486.2120361328125" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><path d="M298.719,508.446c-13.887,2.341-28.16,3.553-42.715,3.553c-13.354,0-26.467-1.024-39.267-2.988 c-8.61-37.073-25.14-134.74-17.032-164.174c7.262-26.331,48.88-29.957,57.96-29.957c9.08,0,50.698,3.626,57.961,29.957 C323.713,374.125,307.37,470.966,298.719,508.446z"></path><circle cx="256" cy="238.38" r="55.39"></circle><path d="M256.003,104.572c-84.553,0-153.339,68.786-153.339,153.339c0,53.655,27.711,100.968,69.58,128.376 c-0.846-14.838-0.773-28.4,0.69-39.111c-23.949-22.277-38.943-54.053-38.943-89.266c0-67.281,54.732-122.013,122.013-122.013 c67.271,0,122.013,54.732,122.013,122.013c0,33.761-13.803,64.366-36.039,86.476c1.787,10.553,2.017,24.325,1.243,39.549 c39.926-27.679,66.121-73.853,66.121-126.025C409.342,173.358,340.546,104.572,256.003,104.572z"></path><path d="M256.003,25.787c-128,0-232.124,104.124-232.124,232.124c0,102.985,67.427,190.527,160.455,220.808 c-1.975-10.836-4.033-22.977-5.893-35.589C106.123,412.734,55.195,341.148,55.195,257.911 c0-110.728,90.081-200.798,200.808-200.798c110.717,0,200.798,90.07,200.798,200.798c0,81.857-49.246,152.451-119.672,183.683 c-1.849,12.706-3.918,24.973-5.914,35.934c91.199-31.326,156.912-117.938,156.912-219.617 C488.127,129.911,383.993,25.787,256.003,25.787z"></path></g></svg>',
-        menuMobile: false,
+        menuMobile: true,
         secure: false,
     },
     content: [
@@ -923,7 +923,7 @@ const pageData8 = {
         type: 'page',
         name: 'Travel',
         subtext: 'Go',
-        style: 'green',
+        style: 'blue',
         icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M497.535 14.465c-19.569-19.568-51.395-19.241-70.557.726L322.092 124.488 66.131 39.781 12.4 93.513l213.352 131.365-107.956 112.494-69.231-11.366L0 374.571l101.78 35.649L137.429 512l48.565-48.565-11.366-69.231 112.494-107.955L418.487 499.6l53.732-53.732-84.706-255.961L496.808 85.022c19.968-19.162 20.295-50.988.727-70.557z"></path></svg>',
         menuMobile: false,
         secure: true,
@@ -1066,20 +1066,34 @@ function renderContent(content) {
 var oldPage = 0
 function openPage(n) {
     if (pageData[n].info.secure) {
-        behindPass()
+        behindPass(n)
+        
+        if (checkPass()) {
+            document.getElementById(`page-${oldPage}`).classList.add('hidden')
+            document.getElementById(`menu-item-${oldPage}`).classList.remove('selected')
+
+            document.getElementById(`page-${n}`).classList.remove('hidden')
+            document.getElementById(`menu-item-${n}`).classList.add('selected')
+
+            document.getElementById('header').innerHTML = pageData[n].info.name
+            headerScroll(n)
+            setCookie('page',n,10/86400)
+            oldPage = n
+
+        }
+
+    } else {
+        document.getElementById(`page-${oldPage}`).classList.add('hidden')
+        document.getElementById(`menu-item-${oldPage}`).classList.remove('selected')
+
+        document.getElementById(`page-${n}`).classList.remove('hidden')
+        document.getElementById(`menu-item-${n}`).classList.add('selected')
+
+        document.getElementById('header').innerHTML = pageData[n].info.name
+        headerScroll(n)
+        setCookie('page',n,10/86400)
+        oldPage = n
     }
-
-    document.getElementById(`page-${oldPage}`).classList.add('hidden')
-    document.getElementById(`menu-item-${oldPage}`).classList.remove('selected')
-
-    document.getElementById(`page-${n}`).classList.remove('hidden')
-    document.getElementById(`menu-item-${n}`).classList.add('selected')
-
-    document.getElementById('header').innerHTML = pageData[n].info.name
-    headerScroll(n)
-    setCookie('page',n,10/86400)
-
-    oldPage = n
 }
 
 function renderMenuElement(page) {
