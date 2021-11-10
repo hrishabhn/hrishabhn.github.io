@@ -36,15 +36,15 @@ const pageData0 = {
                 return secureElement(routineLoad())
             }
         },
-        {
-            type: 'spacer-content',
-        },
-        {
-            type: 'calendar',
-            render: function() {
-                return secureElement(calendarTrayRender())
-            }
-        },
+        // {
+        //     type: 'spacer-content',
+        // },
+        // {
+        //     type: 'calendar',
+        //     render: function() {
+        //         return secureElement(calendarTrayRender())
+        //     }
+        // },
         {
             type: 'spacer-content',
         },
@@ -285,6 +285,58 @@ const pageData2 = {
 const pageData3 = {
     info: {
         id: '3',
+        type: 'page',
+        name: 'School',
+        subtext: 'Learn',
+        style: 'green',
+        icon: '<svg x="0px" y="0px" viewBox="0 0 469.333 469.333"><g><path d="M170.667,0h-128C19.135,0,0,19.135,0,42.667v128c0,23.531,19.135,42.667,42.667,42.667h128 c23.531,0,42.667-19.135,42.667-42.667v-128C213.333,19.135,194.198,0,170.667,0z"/><path d="M426.667,0h-128C275.135,0,256,19.135,256,42.667v128c0,23.531,19.135,42.667,42.667,42.667h128 c23.531,0,42.667-19.135,42.667-42.667v-128C469.333,19.135,450.198,0,426.667,0z"/><path d="M170.667,256h-128C19.135,256,0,275.135,0,298.667v128c0,23.531,19.135,42.667,42.667,42.667h128 c23.531,0,42.667-19.135,42.667-42.667v-128C213.333,275.135,194.198,256,170.667,256z"/><path d="M416,341.333h-32v-32c0-5.896-4.771-10.667-10.667-10.667H352c-5.896,0-10.667,4.771-10.667,10.667v32h-32 c-5.896,0-10.667,4.771-10.667,10.667v21.333c0,5.896,4.771,10.667,10.667,10.667h32v32c0,5.896,4.771,10.667,10.667,10.667 h21.333c5.896,0,10.667-4.771,10.667-10.667v-32h32c5.896,0,10.667-4.771,10.667-10.667V352 C426.667,346.104,421.896,341.333,416,341.333z"/></g></svg>',
+        menuMobile: true,
+        secure: false,
+    },
+    content: [
+        {
+            type: 'apps',
+            title: 'IISE',
+            devices: null,
+            data: iiseApps,
+            render: function () {
+                return appLinkRender(this)
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            type: 'apps',
+            title: 'IISE',
+            devices: null,
+            data: geareApps,
+            render: function () {
+                return appLinkRender(this)
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            type: 'apps',
+            title: 'IISE',
+            devices: null,
+            data: zbtApps,
+            render: function () {
+                return appLinkRender(this)
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+    ],
+    render: function() { renderPage(this) },
+    open: function() { openPage(this.info.id) },
+}
+const pageData4 = {
+    info: {
+        id: '4',
         type: 'page',
         name: 'TV & Movies',
         subtext: 'Watch',
@@ -603,9 +655,9 @@ const pageData3 = {
         videoRefresh()
     },
 }
-const pageData4 = {
+const pageData5 = {
     info: {
-        id: '4',
+        id: '5',
         type: 'page',
         name: 'Books',
         subtext: 'Read',
@@ -699,9 +751,9 @@ const pageData4 = {
     render: function() { renderPage(this) },
     open: function() { openPage(this.info.id) },
 }
-const pageData5 = {
+const pageData6 = {
     info: {
-        id: '5',
+        id: '6',
         type: 'page',
         name: 'Podcasts',
         subtext: 'Listen',
@@ -791,9 +843,9 @@ const pageData5 = {
     render: function() { renderPage(this) },
     open: function() { openPage(this.info.id) },
 }
-const pageData6 = {
+const pageData7 = {
     info: {
-        id: '6',
+        id: '7',
         type: 'page',
         name: 'Settings',
         subtext: 'Manage',
@@ -865,9 +917,9 @@ const pageData6 = {
     render: function() { renderPage(this) },
     open: function() { openPage(this.info.id) },
 }
-const pageData7 = {
+const pageData8 = {
     info: {
-        id: '7',
+        id: '8',
         type: 'page',
         name: 'Travel',
         subtext: 'Go',
@@ -955,6 +1007,7 @@ const pageData = [
     pageData5,
     pageData6,
     pageData7,
+    pageData8,
 ]
 
 function renderPage(page) {

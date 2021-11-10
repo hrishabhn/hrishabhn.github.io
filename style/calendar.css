@@ -1,8 +1,7 @@
 .calendar-event{
     align-items: flex-start;
-    height: 70px;
-    min-width: 250px;
-    border-radius: 10px;
+    width: calc(100% - 30px);
+    /* border-radius: 5px; */
     overflow: hidden;
     scroll-snap-align: start;
     /* background-color: var(--col); */
@@ -10,33 +9,44 @@
 .calendar-event .bg{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
     height: 100%;
     width: 100%;
+    border-radius: 5px;
     background-color: var(--col);
     opacity: 0.15;
 }
 .calendar-event .color{
     height: 100%;
-    width: 10px;
+    width: 5px;
+    border-radius: 100px;
     background-color: var(--col);
 }
 .calendar-event .vstack{
-    padding: 0 10px;
+    padding: 5px;
     align-items: flex-start;
     justify-content: center;
 }
+.calendar-event .vstack p{
+    display: block;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
 .calendar-event .title{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
 }
 .calendar-event .location{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     opacity: 0.8;
 }
 .calendar-event .time{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     opacity: 0.6;
     text-transform: capitalize;

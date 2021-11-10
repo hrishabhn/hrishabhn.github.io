@@ -21,12 +21,11 @@ async function fetchEvents() {
 
 function calendarTrayRender(eventData) {
 
-    var tray = hscrollHuluElement()
-    tray.append(spacerElement(15, 'only-mobile'))
+    var tray = document.createElement('div')
+    tray.classList = 'tray'
     for (let i = 1; i < totalEvents + 1; i++) {
         tray.append(calendarEventRender(i))
     }
-    tray.append(spacerElement(25))
 
     return tray
 }
@@ -36,24 +35,68 @@ function calendarEventRender(n) {
     card.classList = 'calendar-event clickable'
     card.id = `event-${n}-card`
     card.href = eventLink()
+    // card.innerHTML = `
+    // <div id="event-x" class="vstack fill-width" style="--col: #ccc;">
+    //     <a class="calendar-event clickable now" id="event-x-card" href="ical://">
+    //         <div class="color"></div>
+    //         <div class="spacer-x" style="--size: 3px;"></div>
+    //         <div class="grow">
+    //             <div class="bg"></div>
+    //             <div class="vstack fill-height">
+    //                 <p id="event-x-title" class="title">-</p>
+    //                 <p id="event-x-location" class="location">-</p>
+    //                 <p id="event-x-time" class="time">-</p>
+    //             </div>
+    //             <div class="grow"></div>
+    //             <div class="countdown">
+    //                 <p id="event-x-countdown-big" class="big">-</p>
+    //                 <p id="event-x-countdown-small" class="small">-</p>
+    //             </div>
+    //         </div>
+    //     </a>
+    //     <div class="spacer-x" style="--size: 5px;"></div>
+    // </div>
+    // `
+
+
     card.innerHTML = `
-    <div class="bg"></div>
     <div class="color"></div>
-    <div class="vstack fill-height">
-        <p id="event-${n}-title" class="title" >-</p>
-        <p id="event-${n}-location" class="location">-</p>
-        <p id="event-${n}-time" class="time">-</p>
+    <div class="spacer-x" style="--size: 3px;"></div>
+    <div class="grow">
+        <div class="bg"></div>
+        <div class="vstack fill-height">
+            <p id="event-${n}-title" class="title">-</p>
+            <p id="event-${n}-location" class="location">-</p>
+            <p id="event-${n}-time" class="time">-</p>
+        </div>
+        <div class="grow"></div>
+        <div class="countdown">
+            <p id="event-${n}-countdown-big" class="big">-</p>
+            <p id="event-${n}-countdown-small" class="small">-</p>
+        </div>
     </div>
-    <div class="grow"><div class="spacer-x" style="--size: 4px;"></div></div>
-    <div class="countdown">
-        <p id="event-${n}-countdown-big" class="big">-</p>
-        <p id="event-${n}-countdown-small" class="small">-</p>
-    </div>`
+    `
+
+
+    // card.innerHTML = `
+    // <div class="bg"></div>
+    // <div class="color"></div>
+    // <div class="vstack fill-height">
+    //     <p id="event-${n}-title" class="title" >-</p>
+    //     <p id="event-${n}-location" class="location">-</p>
+    //     <p id="event-${n}-time" class="time">-</p>
+    // </div>
+    // <div class="grow"><div class="spacer-x" style="--size: 4px;"></div></div>
+    // <div class="countdown">
+    //     <p id="event-${n}-countdown-big" class="big">-</p>
+    //     <p id="event-${n}-countdown-small" class="small">-</p>
+    // </div>`
     
     var container = document.createElement('div')
+    container.classList = 'vstack fill-width'
     container.id = `event-${n}`
     container.append(card)
-    container.append(spacerElement(15))
+    container.append(spacerElement(5))
 
     return container
 }

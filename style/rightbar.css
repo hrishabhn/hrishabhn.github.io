@@ -1,24 +1,13 @@
-.widget-card{
-    width: 100%;
-    padding: 15px;
-    flex-direction: column;
-}
-
-.widget-card .title{
+#rightbar .section-title{
     width: 100%;
     font-size: 14px;
     font-weight: 600;
     justify-content: flex-start;
+    padding: 0 15px;
 
     margin-bottom: 8px;
 }
-
-.widget-card .info{
+#rightbar .tray{
+    flex-direction: column;
     width: 100%;
-    font-size: 12px;
-    font-weight: 500;
-    justify-content: flex-start;
-    opacity: 0.8;
-
-    margin-top: 5px;
 }

@@ -1,6 +1,7 @@
 function loadApp() {
     baseElements[0].render()
     pageDataRender()
+    rightbarRender()
     loadSwitches()
 
     widgetPopulate()
