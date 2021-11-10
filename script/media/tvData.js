@@ -45,7 +45,7 @@
 //     //     },
 //     // ],
 // },
-    const movieData0 = [
+const movieData0 = [
     {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
