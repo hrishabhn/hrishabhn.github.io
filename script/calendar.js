@@ -119,7 +119,7 @@ async function calendarTrayPopulate() {
         const started = (new Date(await eventData[i - 1].start)) < new Date()
         const ended = (new Date(await eventData[i - 1].end)) < new Date()
         const soon = (new Date(await eventData[i - 1].start)) < new Date((new Date).getTime() + 86400000)
-        console.log(soon)
+        // console.log(soon)
 
         if (started) {
             card.classList.add('now')
