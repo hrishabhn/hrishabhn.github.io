@@ -23,6 +23,8 @@ function calendarTrayRender(eventData) {
 
     var tray = document.createElement('div')
     tray.classList = 'tray'
+    tray.append(rightbarTitleElement('Up next'))
+
     for (let i = 1; i < totalEvents + 1; i++) {
         tray.append(calendarEventRender(i))
     }
