@@ -9,8 +9,9 @@ function rightbarRender() {
 
 const rightBarContent = [
     {
+        type: 'routine',
         render: function() {
-            return rightbarTitleElement('Up next')
+            return secureElement(routineLoad())
         }
     },
     {
