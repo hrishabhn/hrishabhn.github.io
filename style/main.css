@@ -293,9 +293,11 @@ svg{
 
         transition: all 0.2s;
         opacity: 0;
+        pointer-events: none;
     }
     #header.small{
         opacity: 1;
+        pointer-events: initial;
     }
 
 
