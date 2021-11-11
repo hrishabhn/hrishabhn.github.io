@@ -229,7 +229,7 @@ function homeCardBasic(data) {
 function homeCardTrip(data) {
     var card = document.createElement('a')
     card.classList = 'homecard trip clickable layer-1 border'
-    card.onclick = function () { openModal(tripCard(data.n)) }
+    card.onclick = function () { openModal(secureModal(tripCard(data.n))) }
     card.innerHTML = `
     <div class="bg" style="background-image: url(${tripData[data.n].image});"></div>
     <div class="gradient">
@@ -254,7 +254,7 @@ function homeCardFlight(data) {
     card.classList = 'homecard basic flight border clickable layer-1'
     card.style.setProperty('--fgCol',`#${flight.airline.color.fg}`)
     card.style.setProperty('--bgCol',`#${flight.airline.color.bg}`)
-    card.onclick = function () { openModal(flightDetail(flight)) }
+    card.onclick = function () { secureModal(openModal(flightDetail(flight))) }
     card.innerHTML = `
     <div class="bg"></div>
     <div class="logo">${flight.airline.icon.svg}</div>

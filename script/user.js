@@ -22,10 +22,28 @@ function checkInput(n) {
     }
 }
 
-function passCard(n) {
-    var container = document.createElement('div')
-    container.classList = 'login-container'
+function secureModal(modalElement) {
+    if (checkPass()) {
+        return modalElement
+    } else {
+        return needPassCard()
+    }
+}
 
+function needPassCard() {
+    var card = document.createElement('div')
+    card.classList = 'login-card denied layer-1 card-shadow'
+    card.innerHTML = `
+    <div class="vstack">
+    <div class="icon blue-fg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve"><path d="M418.4 232.7h-23.3v-93.1C395.1 62.5 332.6 0 255.5 0S115.9 62.5 115.9 139.6v93.1H92.6c-12.8 0-23.3 10.4-23.3 23.3v232.7c0 12.9 10.4 23.3 23.3 23.3h325.8c12.8 0 23.3-10.4 23.3-23.3V256c0-12.9-10.5-23.3-23.3-23.3zm-69.8 0H162.4v-93.1c0-51.4 41.7-93.1 93.1-93.1s93.1 41.7 93.1 93.1v93.1z"/></svg></div>
+    <div class="spacer-x" style="--size: 30px;"></div>
+    <p class="prompt">Password required.</p>
+    </div>`
+
+    return card
+}
+
+function passCard(n) {
     var card = document.createElement('div')
     card.classList = 'login-card layer-1 card-shadow'
     card.innerHTML = `
@@ -37,8 +55,7 @@ function passCard(n) {
     <input type="text" id="password-field" class="image-border" placeholder="Password" onkeyup="checkInput(${n})">
     </div>`
 
-    container.append(card)
-    return container
+    return card
 }
 
 function secureElement(element) {
