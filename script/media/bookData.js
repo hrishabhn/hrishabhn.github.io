@@ -6,7 +6,7 @@ const bookData0 = [
         link: 'ibooks://',
         author: 'Roald Dahl',
         coverType: 'jpg',
-        progress: '4%',
+        progress: '14%',
         format: 'EBook',
     },
     {
@@ -17,7 +17,7 @@ const bookData0 = [
         },
         author: 'Peter Shankman',
         coverType: 'jpg',
-        progress: '3h 16m left',
+        progress: '3h 0m left',
         format: 'AudioBook',
     },
 ]
