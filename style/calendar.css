@@ -53,9 +53,9 @@
     margin-top: 2px;
 }
 .calendar-event .countdown{
+    padding: 5px;
     flex-direction: column;
-    height: 100%;
-    margin-right: 10px;
+    height: 100%;;
 }
 .calendar-event .big{
     font-size: 24px;
