@@ -95,7 +95,7 @@ function calendarEventRender(n) {
     // </div>`
 
     var container = document.createElement('div')
-    container.classList = 'vstack fill-width'
+    container.classList = 'vstack fill-width hidden-always'
     container.id = `event-${n}`
     container.append(card)
     container.append(spacerElement(5))
@@ -126,6 +126,8 @@ async function calendarTrayPopulate() {
         }
         if (ended || (!soon)) {
             container.classList.add('hidden-always')
+        } else {
+            container.classList.remove('hidden-always')
         }
 
         container.style.setProperty('--col', `#${eventColor(await eventData[i - 1].calendar)}`)
