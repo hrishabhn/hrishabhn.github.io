@@ -112,7 +112,7 @@ function routineCookieLoad(i,j) {
 function routineTrayElement(i) {
     var tray = document.createElement('div')
     tray.classList = 'tray'
-    tray.append(rightbarTitleElement('Good morning.'))
+    tray.append(rightbarTitleElement(routineData[i].greeting))
     
     for (let j = 0; j < routineData[i].data.length; j++) {
         routineCookieLoad(i,j)
