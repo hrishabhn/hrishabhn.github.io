@@ -158,12 +158,6 @@ const homeCardData = [
             render: function() { return homeCardFlight(this) }
         },
         {
-            type: 'train',
-            n: 0,
-            // gate: flightData[0].dep.gate,
-            render: function() { return homeCardFlight(this) }
-        },
-        {
             type: 'flight',
             n: 0,
             // gate: flightData[0].dep.gate,
@@ -188,8 +182,20 @@ const homeCardData = [
             render: function() { return homeCardFlight(this) }
         },
         {
+            type: 'bus',
+            n: 1,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+        {
             type: 'flight',
             n: 4,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+        {
+            type: 'train',
+            n: 0,
             // gate: flightData[0].dep.gate,
             render: function() { return homeCardFlight(this) }
         },
@@ -280,7 +286,7 @@ function homeCardFlight(data) {
     }
 
     var card = document.createElement('a')
-    card.classList = 'homecard basic flight border clickable layer-1 snap'
+    card.classList = 'homecard basic flight clickable layer-1 snap'
     card.style.setProperty('--fgCol',`#${flight.airline.color.fg}`)
     card.style.setProperty('--bgCol',`#${flight.airline.color.bg}`)
     card.onclick = function () { secureModal(openModal(flightDetail(flight,data.type))) }
