@@ -150,6 +150,7 @@
     background-color: white;
     color: var(--dark-layer-1);
     fill: var(--dark-layer-1);
+    cursor: pointer;
 }
 .tv-popup #tv-popup-current .info .play .icon{
     height: 12px;

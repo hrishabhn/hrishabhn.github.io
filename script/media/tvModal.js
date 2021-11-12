@@ -61,11 +61,11 @@ function tvPopupElement(a,b,old) {
     console.log(a,b)
     const movie = movieData[a][b]
 
-    if (movie.link) {
-        var linkHTML = `href="${processLink(movie.link)}"`
-    } else {
-        var linkHTML = ``
-    }
+    // if (movie.link) {
+    //     var linkHTML = `href="${processLink(movie.link)}"`
+    // } else {
+    //     var linkHTML = ``
+    // }
 
     // if (old) {
     //     // var backButton = `<a class="floating clickable" style="padding: 8px 10px 8px 8px;" onclick="tvPopupShow(${old[0]},${old[1]},null)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="5.07 6.368 11.263 11.263"><path d="m9.929 12 3.821-3.821a1.061 1.061 0 0 0-1.5-1.5l-4.614 4.614a.999.999 0 0 0 0 1.414l4.614 4.614a1.061 1.061 0 0 0 1.5-1.5L9.929 12z"/></svg></a>`
@@ -104,9 +104,6 @@ function tvPopupElement(a,b,old) {
         </div>`
     }
 
-
-
-
     var container = document.createElement('div')
     container.classList = 'tv-popup vstack fill-parent'
     container.innerHTML = `
@@ -124,7 +121,7 @@ function tvPopupElement(a,b,old) {
             <div class="spacer-x" style="--size: 8px;"></div>
             <div class="spacer-x only-mobile" style="--size: 12px;"></div>
             <div class="fill-width">
-                <a class="play clickable card-shadow" ${linkHTML} style="--col: #${movie.style.color};" target="_blank" onclick="serviceAudio('${movie.info.service}')">
+                <a class="play clickable card-shadow" style="--col: #${movie.style.color};" target="_blank" onclick="openShow(${a},${b})">
                     <div class="icon"><svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></svg></div>
                     <div class="spacer-x" style="--size: 5px;"></div>
                     <p>${processLocation(movie.info.location)}</p>
@@ -548,6 +545,16 @@ function sameService(service,a,b) {
     
     return sameMovies
 }
+
+function openShow(a,b) {
+    const movie = movieData[a][b]
+
+    serviceAudio(movie.info.service)
+    if (movie.link) {
+        window.open(processLink(movie.link),'_blank')
+    }
+}
+
 
 function serviceAudio(service) {
     if (service == 'netflix') {
