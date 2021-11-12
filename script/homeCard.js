@@ -152,6 +152,18 @@ const homeCardData = [
     ],
     [
         {
+            type: 'bus',
+            n: 0,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+        {
+            type: 'train',
+            n: 0,
+            // gate: flightData[0].dep.gate,
+            render: function() { return homeCardFlight(this) }
+        },
+        {
             type: 'flight',
             n: 0,
             // gate: flightData[0].dep.gate,
@@ -244,14 +256,28 @@ function homeCardTrip(data) {
 }
 
 function homeCardFlight(data) {
-    const flight = flightData[data.n]
+    if (data.type == 'flight') {
+        var flight = flightData[data.n]
+        var text = `<p class="text">${flight.airline.name} ${flight.number}</p>`
+    } else if (data.type == 'bus') {
+        var flight = busData[data.n]
+        var text = `<p class="text">${flight.airline.name}</p>`
+    } else if (data.type == 'train') {
+        var flight = trainData[data.n]
+        var text = `<p class="text">${flight.airline.name}</p>`
+    }
 
     if (data.gate) {
-        var gate = `
+        var detail = `
         <div class="data">
             <p class="big">${data.gate}</p><p class="small">gate</p>
         </div>`
-    } else { var gate = `` }
+    } else {
+        var detail = `
+        <div class="data">
+            <p class="big">${flight.dep.date.getDate()}</p><p class="small">${processMonth(flight.dep.date.getMonth(),'short')}</p>
+        </div>`
+    }
 
     var card = document.createElement('a')
     card.classList = 'homecard basic flight border clickable layer-1'
@@ -262,9 +288,9 @@ function homeCardFlight(data) {
     <div class="bg"></div>
     <div class="logo">${flight.airline.icon.svg}</div>
     <div class="grow"></div>
-    <p class="text">${flight.airline.name} ${flight.number}</p>
+    ${text}
     <p class="subtext">${flight.dep.airport} &#8594 ${flight.arr.airport}</p>
-    ${gate}`
+    ${detail}`
 
     return card
 }

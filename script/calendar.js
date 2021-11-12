@@ -144,7 +144,7 @@ async function calendarTrayPopulate() {
             // countdownSmall.innerHTML = countdownCalculate(await eventData[i - 1].end)[1]
         }
 
-        console.log(!!(await eventData[i - 1].link))
+        // console.log(!!(await eventData[i - 1].link))
 
         if (!!(await eventData[i - 1].link)) {
             card.href = await eventData[i - 1].link
