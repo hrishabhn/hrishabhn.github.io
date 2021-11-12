@@ -419,7 +419,7 @@ const tripData = [
                         type: 'bus',
                         data: busData[0],
                         render: function () {
-                            return busCard(this.data)
+                            return flightCard(this.data,'bus')
                         },
                     },
                     {
@@ -437,7 +437,7 @@ const tripData = [
                         type: 'flight',
                         data: flightData[0],
                         render: function () {
-                            return flightCard(this.data)
+                            return flightCard(this.data,'flight')
                         },
                     },
                     {
@@ -455,7 +455,7 @@ const tripData = [
                         type: 'flight',
                         data: flightData[1],
                         render: function () {
-                            return flightCard(this.data)
+                            return flightCard(this.data,'flight')
                         },
                     },
                 ],
@@ -470,7 +470,7 @@ const tripData = [
                         type: 'flight',
                         data: flightData[2],
                         render: function () {
-                            return flightCard(this.data)
+                            return flightCard(this.data,'flight')
                         },
                     },
                     {
@@ -488,7 +488,7 @@ const tripData = [
                         type: 'flight',
                         data: flightData[3],
                         render: function () {
-                            return flightCard(this.data)
+                            return flightCard(this.data,'flight')
                         },
                     },
                     {
@@ -506,7 +506,7 @@ const tripData = [
                         type: 'bus',
                         data: busData[1],
                         render: function () {
-                            return busCard(this.data)
+                            return flightCard(this.data,'bus')
                         },
                     },
                 ],
@@ -531,7 +531,7 @@ const tripData = [
                         type: 'bus',
                         data: busData[0],
                         render: function () {
-                            return busCard(this.data)
+                            return flightCard(this.data,'bus')
                         },
                     },
                     {
@@ -549,7 +549,7 @@ const tripData = [
                         type: 'flight',
                         data: flightData[4],
                         render: function () {
-                            return flightCard(this.data)
+                            return flightCard(this.data,'flight')
                         },
                     },
                 ],
@@ -646,7 +646,7 @@ const tripData = [
                         type: 'flight',
                         data: flightData[5],
                         render: function () {
-                            return flightCard(this.data)
+                            return flightCard(this.data,'flight')
                         },
                     },
                 ],
@@ -735,19 +735,32 @@ function tripCard(n) {
 }
 
 
-function flightCard(flight) {
+function flightCard(flight,type) {
     // console.log(flight)
 
+    if (type == 'flight') {
+        var info = `
+        <p class="line1">${flight.airline.name} ${flight.number}</p>
+        <p class="line2">${flight.aircraft.manufacturer} ${flight.aircraft.name}</p>`
+        var color = 'blue'
+        var lefticon = `<div class="lefticon blue" style="transform: rotate(90deg);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>`
+    } else if (type == 'bus') {
+        var info = `
+        <p class="line1">${flight.number}</p>
+        <p class="line2">${flight.aircraft}</p>`
+        var color = 'red'
+        var lefticon = `<div class="lefticon red"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M12 0C5.437 0 3 2.168 3 8v33c0 1.36.398 2.34 1 3.063V47c0 1.652 1.348 3 3 3h4c1.652 0 3-1.348 3-3v-1h22v1c0 1.652 1.348 3 3 3h4c1.652 0 3-1.348 3-3v-2.938c.602-.722 1-1.703 1-3.062V9c0-4.355-.54-9-7-9Zm3 4h21a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H15c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1Zm-4 7h28c2 0 3 1 3 3v12c0 2-1.953 2.938-3 2.938L11 29c-2 0-3-1-3-3V14c0-2 1-3 3-3Zm-9 1c-1.102 0-2 .898-2 2v8c0 1.102.898 2 2 2Zm46 0v12c1.105 0 2-.898 2-2v-8c0-1.102-.895-2-2-2ZM11.5 34a3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 1 0-7Zm27 0a3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 1 0-7Z"/></svg></div>`
+    }
+
     var main = document.createElement('a')
-    main.classList = 'main highlight clickable'
+    main.classList = 'main highlight clickable-text'
     main.onclick = function() { openModal(flightDetail(flight)) }
 
     main.innerHTML = `
     <div class="logo" style="--darkCol: #${flight.airline.icon.darkCol}; --lightCol: #${flight.airline.icon.lightCol};">${flight.airline.icon.svg}</div>
     <div class="spacer-x" style="--size: 8px;"></div>
     <div class="info vstack">
-        <p class="line1">${flight.airline.name} ${flight.number}</p>
-        <p class="line2">${flight.aircraft.manufacturer} ${flight.aircraft.name}</p>
+       ${info}
     </div>
     <div class="grow"></div>`
 
@@ -755,22 +768,33 @@ function flightCard(flight) {
     card.classList = 'flight-container'
 
     card.innerHTML = `
-    <div class="timeline blue"></div>
-    ${airportCard(flight.dep)}
+    <div class="timeline ${color}"></div>
+    ${airportCard(flight.dep,type)}
     <div class="flight">
         <p class="time duration">${durationCalculate(flight.dep.date,flight.arr.date)}</p>
-        <div class="lefticon blue" style="transform: rotate(90deg);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>
+        ${lefticon}
     </div>
-    ${airportCard(flight.arr)}`
+    ${airportCard(flight.arr,type)}`
 
     card.childNodes[5].append(main)
 
     return card
 }
 
-function airportCard(deparr) {
+function airportCard(deparr,type) {
+
+    if (type == 'flight') {
+        var color = 'blue'
+        var detail = `<p class="detail">Terminal ${deparr.terminal} &#149 Gate ${deparr.gate}</p>`
+    } else if (type == 'bus') {
+        var color = 'red'
+        var detail = `<p class="detail">${deparr.stop}</p>`
+    }
+
+
+
     if ((new Date()).getTime() > deparr.date.getTime()) {
-        var nodeClass = 'blue'
+        var nodeClass = color
     } else {
         var nodeClass = 'layer-0'
     }
@@ -781,12 +805,12 @@ function airportCard(deparr) {
     <div class="fill-width">
         <p class="time">${deparr.time}</p>
         <div class="node up">
-            <div class="bg blue"></div>
+            <div class="bg ${color}"></div>
             <div class="fg ${nodeClass}"></div>
         </div>
         <div class="info">
             <p class="name">${deparr.city}</p>
-            <p class="detail">Terminal ${deparr.terminal} &#149 Gate ${deparr.gate}</p>
+            ${detail}
             <div class="grow"></div>
         </div>
         <div class="grow"></div>
@@ -913,42 +937,47 @@ function flightDetail(flight) {
         </div>
     </div>`
 
-    var info = document.createElement('div')
-    info.classList = 'info'
+    if (flight.dep.terminal) {
+        var info = document.createElement('div')
+        info.classList = 'info'
+    
+        var flightNo = document.createElement('a')
+        flightNo.classList = 'vstack'
+        flightNo.innerHTML = `
+        <p class="text">Flight</p>
+        <p class="subtext">${flight.airline.code} ${flight.number}</p>`
+    
+        var aircraftName = document.createElement('a')
+        aircraftName.classList = 'vstack clickable-text'
+        aircraftName.innerHTML = `
+        <p class="text">Aircraft</p>
+        <p class="subtext">${flight.aircraft.name}</p>`
+        aircraftName.onclick = function () { openModal(aircraftCard(flight.aircraft)) }
+    
+        var terminal = document.createElement('a')
+        terminal.classList = 'vstack'
+        terminal.innerHTML = `
+        <p class="text">Terminal</p>
+        <p class="subtext">${flight.dep.terminal}</p>`
+    
+        var gate = document.createElement('a')
+        gate.classList = 'vstack'
+        gate.innerHTML = `
+        <p class="text">Gate</p>
+        <p class="subtext">${flight.dep.gate}</p>`
+    
+        info.append(flightNo)
+        info.append(growElement())
+        info.append(aircraftName)
+        info.append(growElement())
+        info.append(terminal)
+        info.append(growElement())
+        info.append(gate)
+        card.append(info)
 
-    var flightNo = document.createElement('a')
-    flightNo.classList = 'vstack'
-    flightNo.innerHTML = `
-    <p class="text">Flight</p>
-    <p class="subtext">${flight.airline.code} ${flight.number}</p>`
+    }
+    
 
-    var aircraftName = document.createElement('a')
-    aircraftName.classList = 'vstack clickable-text'
-    aircraftName.innerHTML = `
-    <p class="text">Aircraft</p>
-    <p class="subtext">${flight.aircraft.name}</p>`
-    aircraftName.onclick = function () { openModal(aircraftCard(flight.aircraft)) }
-
-    var terminal = document.createElement('a')
-    terminal.classList = 'vstack'
-    terminal.innerHTML = `
-    <p class="text">Terminal</p>
-    <p class="subtext">${flight.dep.terminal}</p>`
-
-    var gate = document.createElement('a')
-    gate.classList = 'vstack'
-    gate.innerHTML = `
-    <p class="text">Gate</p>
-    <p class="subtext">${flight.dep.gate}</p>`
-
-    info.append(flightNo)
-    info.append(growElement())
-    info.append(aircraftName)
-    info.append(growElement())
-    info.append(terminal)
-    info.append(growElement())
-    info.append(gate)
-    card.append(info)
 
 
 
