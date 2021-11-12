@@ -2115,6 +2115,44 @@ const movieData6 = [
         },
     },
     {
+        name: 'Snowpiercer',
+        id: 'snowpiercer',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'hbo',
+            // studio: 'tnt',
+            location: 'HBO Max',
+            date: 'Jan 24, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'sci-fi',
+                ],
+            },
+            summary: "Set more than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
+        },
+        style: {
+            color: '444743',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
+            imdbID: 'tt6156584',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Jurassic World: Dominion',
         id: 'jurassic6',
         // link: {
@@ -2641,30 +2679,6 @@ const movieData7 = [
             // tvTimeID: null,
             // reelgoodLink: 'link',
             // imdbID: 'identifier',
-            // subReddit: null,
-        },
-    },
-    {
-        name: 'Snowpiercer',
-        id: 'snowpiercer',
-        link: null,
-        info: {
-            // service: '',
-            // studio: '',
-            location: 'Coming Soon',
-            description: 'Action &#149 Drama &#149 Sci-Fi &#149 2 Seasons &#149 2020 - Present',
-            // summary: "summary",
-        },
-        style: {
-            color: '444743',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
-            imdbID: 'tt6156584',
             // subReddit: null,
         },
     },
