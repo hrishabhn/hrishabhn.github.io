@@ -150,14 +150,14 @@ const movieData0 = [
                 char: 'Susie Greene',
             },
             {
-                actor: 'J.B. Smoove',
-                image: 'https://static.wikia.nocookie.net/harleyquinntv/images/d/d0/J._B._Smoove.jpg',
-                char: 'Leon Black',
-            },
-            {
                 actor: 'Richard Lewis',
                 image: 'https://m.media-amazon.com/images/M/MV5BMTA5NDIzMzk0ODJeQTJeQWpwZ15BbWU2MDA3OTI0Mw@@._V1_UX178_CR0,0,178,264_AL_.jpg',
                 char: 'Richard Lewis',
+            },
+            {
+                actor: 'J.B. Smoove',
+                image: 'https://static.wikia.nocookie.net/harleyquinntv/images/d/d0/J._B._Smoove.jpg',
+                char: 'Leon Black',
             },
         ],
     },
