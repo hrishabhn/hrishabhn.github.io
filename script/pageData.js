@@ -21,28 +21,18 @@ const pageData0 = {
     content: [
         {
             type: 'search',
-            engine: 'You',
-            link: 'https://you.com',
+            engine: 'Google',
+            link: googleLoad(),
             render: function() {
                 return searchElement(this)
             }
         },
         // {
-        //     type: 'spacer-content',
-        // },
-        // {
-        //     type: 'routine',
+        //     type: 'search',
+        //     engine: 'You',
+        //     link: 'https://you.com',
         //     render: function() {
-        //         return secureElement(routineLoad())
-        //     }
-        // },
-        // {
-        //     type: 'spacer-content',
-        // },
-        // {
-        //     type: 'calendar',
-        //     render: function() {
-        //         return secureElement(calendarTrayRender())
+        //         return searchElement(this)
         //     }
         // },
         {
@@ -55,17 +45,6 @@ const pageData0 = {
                     combineSubColElements(pageShortcutElement(1),pageShortcutElement(3)),
                     combineSubColElements(pageShortcutElement(4),pageShortcutElement(8))
                 )
-            }
-        },
-        {
-            type: 'spacer-content',
-        },
-        {
-            type: 'search',
-            engine: 'Google',
-            link: googleLoad(),
-            render: function() {
-                return searchElement(this)
             }
         },
         {
