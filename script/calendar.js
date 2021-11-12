@@ -36,7 +36,6 @@ function calendarEventRender(n) {
     var card = document.createElement('a')
     card.classList = 'calendar-event clickable'
     card.id = `event-${n}-card`
-    card.href = eventLink()
     // card.innerHTML = `
     // <div id="event-x" class="vstack fill-width" style="--col: #ccc;">
     //     <a class="calendar-event clickable now" id="event-x-card" href="ical://">
@@ -145,22 +144,16 @@ async function calendarTrayPopulate() {
             // countdownSmall.innerHTML = countdownCalculate(await eventData[i - 1].end)[1]
         }
 
+        console.log(!!(await eventData[i - 1].link))
 
-        // eventLocation(await eventData[i - 1].location)
-
-
-        // console.log(await eventData[i - 1].location)
-        // console.log(document.getElementById(`event - ${ i } -location`))
-        // document.getElementById(`event - ${ i } -location`) = 'nice'
-        // document.getElementById(`event - ${ i } -time`) = 'nice'
-
-
-        //eventLocation(await eventData[i - 1].location)
-        // document.getElementById(`event - ${ i } -time`) = eventData[i - 1].start
-
+        if (!!(await eventData[i - 1].link)) {
+            card.href = await eventData[i - 1].link
+            card.style.setProperty('cursor','pointer')
+        } else {
+            // card.href = eventLink()
+            card.style.setProperty('cursor','default')
+        }
     }
-
-
 }
 
 function eventLocation(location) {
