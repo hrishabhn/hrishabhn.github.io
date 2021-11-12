@@ -243,7 +243,7 @@ function homeCardBasic(data) {
 }
 function homeCardTrip(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard trip clickable layer-1 border'
+    card.classList = 'homecard trip clickable layer-1 border snap'
     card.onclick = function () { openModal(secureModal(tripCard(data.n))) }
     card.innerHTML = `
     <div class="bg" style="background-image: url(${tripData[data.n].image});"></div>
@@ -280,10 +280,10 @@ function homeCardFlight(data) {
     }
 
     var card = document.createElement('a')
-    card.classList = 'homecard basic flight border clickable layer-1'
+    card.classList = 'homecard basic flight border clickable layer-1 snap'
     card.style.setProperty('--fgCol',`#${flight.airline.color.fg}`)
     card.style.setProperty('--bgCol',`#${flight.airline.color.bg}`)
-    card.onclick = function () { secureModal(openModal(flightDetail(flight))) }
+    card.onclick = function () { secureModal(openModal(flightDetail(flight,data.type))) }
     card.innerHTML = `
     <div class="bg"></div>
     <div class="logo">${flight.airline.icon.svg}</div>
@@ -297,7 +297,7 @@ function homeCardFlight(data) {
 
 function homeCardTV(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard tv clickable layer-1'
+    card.classList = 'homecard tv clickable layer-1 snap'
     card.onclick = function () { tvPopupShow(data.a,data.b) }
     card.innerHTML = `
     <div class="bg" style="background-image: url(media-image/TV/background/${movieData[data.a][data.b].id}.${movieData[data.a][data.b].style.posterType});"></div>
@@ -309,7 +309,7 @@ function homeCardTV(data) {
 }
 function homeCardBook(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard basic book clickable layer-1'
+    card.classList = 'homecard basic book clickable layer-1 snap'
     card.onclick = function () { pageData[5].open() }
     card.innerHTML = `
     <div class="cover" style="background-image: url(media-image/books/${bookData[data.a][data.b].id}.${bookData[data.a][data.b].coverType});"></div>

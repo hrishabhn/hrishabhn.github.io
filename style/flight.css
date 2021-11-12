@@ -272,7 +272,7 @@
     flex-grow: 1;
     padding: 10px;
     border-radius: 8px;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 .trip-container .section .flight-container .flight .main .logo{
     height: 32px;
@@ -301,7 +301,7 @@
     min-width: 200px;
     padding: 10px;
     border-radius: 8px;
-    margin: 40px 0;
+    margin: 50px 0;
 
     border: solid 1px var(--white-10);
 }

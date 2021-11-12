@@ -807,13 +807,13 @@ function flightCard(flight,type) {
         var info = `
         <p class="line1">${flight.number}</p>
         <p class="line2">${flight.aircraft}</p>`
-        var color = 'green'
-        var lefticon = `<div class="lefticon green">${transportIcons.train}</div>`
+        var color = 'cyan'
+        var lefticon = `<div class="lefticon cyan">${transportIcons.train}</div>`
     }
 
     var main = document.createElement('a')
     main.classList = 'main highlight clickable-text'
-    main.onclick = function() { openModal(flightDetail(flight)) }
+    main.onclick = function() { openModal(flightDetail(flight,type)) }
 
     main.innerHTML = `
     <div class="logo" style="--darkCol: #${flight.airline.icon.darkCol}; --lightCol: #${flight.airline.icon.lightCol};">${flight.airline.icon.svg}</div>
@@ -849,7 +849,7 @@ function airportCard(deparr,type) {
         var color = 'red'
         var detail = `<p class="detail">${deparr.stop}</p>`
     } else if (type == 'train') {
-        var color = 'green'
+        var color = 'cyan'
         var detail = `<p class="detail">${deparr.stop}</p>`
     }
 
@@ -969,7 +969,18 @@ function aircraftCard(aircraft) {
     return card
 }
 
-function flightDetail(flight) {
+function flightDetail(flight,type) {
+    console.log(type)
+    if (type == 'flight') {
+        plane = transportIcons.plane
+    } else if (type == 'bus') {
+        plane = transportIcons.bus
+    } else if (type == 'train') {
+        plane = transportIcons.train
+    }
+
+
+
     var card = document.createElement('div')
     card.classList = 'flight-card layer-1'
     card.style.setProperty('--bgCol',`#${flight.airline.color.bg}`)
@@ -989,7 +1000,7 @@ function flightDetail(flight) {
         </div>
         <div class="vstack">
             <div class="spacer-x" style="--size: 10px;"></div>
-            <div class="plane"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M510 255c0-20.4-17.85-38.25-38.25-38.25H331.5L204 12.75h-51l63.75 204H76.5l-38.25-51H0L25.5 255 0 344.25h38.25l38.25-51h140.25l-63.75 204h51l127.5-204h140.25c20.4 0 38.25-17.85 38.25-38.25z"></path></svg></div>
+            <div class="plane">${plane}</div>
             <div class="duration">${durationCalculate(flight.dep.date,flight.arr.date)}</div>
         </div>
         <div class="des">
