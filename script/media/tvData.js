@@ -45,6 +45,16 @@
 //     //     },
 //     // ],
 // },
+
+
+// schitts creek
+// narcos
+// mr pickles
+// kim
+// breaking bad
+// bad education
+// arrested dev
+
 const movieData0 = [
     {
         name: 'Curb Your Enthusiasm',
@@ -2828,272 +2838,6 @@ const movieData7 = [
 ]
 const movieData8 = [
     {
-        name: 'Blue Mountain State',
-        id: 'bms',
-        link: {
-            primeVideo: 'B08CG43CLR'
-        },
-        info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
-            desc: {
-                seasons: 3,
-                yearStart: 2010,
-                yearEnd: 2011,
-                genre: [
-                    'comedy',
-                    'sports',
-                ],
-            },
-            summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
-        },
-        style: {
-            color: '7d7787',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'tall',
-            mobileType: 'png',
-            mobileSize: '9 / 10',
-        },
-        apps: {
-            tvTimeID: '134511',
-            reelgoodLink: 'https://reelgood.com/show/blue-mountain-state-2010',
-            imdbID: 'tt1344204',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Darin Brooks',
-                image: 'https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w425-q80/cast/bb_cast_darin_brooks_800x1000.jpg',
-                char: 'Alex Moran',
-            },
-            {
-                actor: 'Alan Ritchson',
-                image: 'https://static.wikia.nocookie.net/tmnt/images/5/50/Alan-ritchson-premiere-steam-01.jpg',
-                char: 'name',
-            },
-            {
-                actor: 'Chris Romano',
-                image: 'https://www.themoviedb.org/t/p/w235_and_h235_face/qaUN5cJYHWBwDBn40yEuWXQwMfg.jpg',
-                char: 'Sammy Cacciatore',
-            },
-            {
-                actor: 'Ed Marino',
-                image: 'https://playersbio.com/wp-content/uploads/2020/06/ed-003.jpg',
-                char: 'Coach Marty Daniels',
-            },
-            {
-                actor: 'Denise Richards',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Denise_Richards_2009.jpg',
-                char: 'Debra',
-            },
-            {
-                actor: 'Frankie Shaw',
-                image: 'https://m.media-amazon.com/images/M/MV5BNzliMWQ1OTItMjhiNy00YzExLWE3NzEtZDgwYTM0ODA2NTYzXkEyXkFqcGdeQXVyNzMzNzYzNg@@._V1_.jpg',
-                char: 'Mary Jo Cacciatore',
-            },
-            {
-                actor: 'Sam Jones III',
-                image: 'https://static.wikia.nocookie.net/tvdatabase/images/7/74/Sam_Jones%2C_III.jpg',
-                char: 'Craig Shilo',
-            },
-            {
-                actor: 'Page Kennedy',
-                image: 'https://parlemag.com/wp-content/uploads/2016/06/Page-Kennedy.jpg',
-                char: 'Radon Randell',
-            },
-        ],
-    },
-    {
-        name: 'Bojack Horseman',
-        id: 'bojack',
-        link: {
-            netflix: '70300800'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            desc: {
-                seasons: 6,
-                yearStart: 2014,
-                yearEnd: 2020,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Meet the most beloved sitcom horse of the '90s, 20 years later. He’s a curmudgeon with a heart of...not quite gold...but something like gold. Copper?",
-        },
-        style: {
-            color: '656592',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/bojack-horseman-2014',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
-    },
-    {
-        name: "Brooklyn Nine-Nine",
-        id: "brooklyn",
-        link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
-        info: {
-            service: 'hulu',
-            studio: 'nbc',
-            location: 'Hulu',
-            desc: {
-                seasons: 8,
-                yearStart: 2013,
-                yearEnd: 2021,
-                genre: [
-                    'comedy',
-                    'crime',
-                ],
-            },
-            summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
-        },
-        style: {
-            color: '8b6a4b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "tall",
-        },
-        apps: {
-            tvTimeID: "269586",
-            reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
-            imdbID: "tt2467372",
-            subReddit: 'brooklynninenine',
-        },
-    },
-    {
-        name: 'Game of Thrones',
-        id: 'gameofthrones',
-        // link: 'watchlink',
-        info: {
-            // service: '',
-            // studio: '',
-            location: 'HBO Max',
-            description: 'Action &#149 Adventure &#149 Fantasy &#149 8 Seasons &#149 2011 - 2019',
-            summary: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
-        },
-        style: {
-            color: '4e3e46',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: null,
-            // reelgoodLink: 'link',
-            imdbID: 'tt0944947',
-            // subReddit: null,
-        },
-    },
-    {
-        name: 'How I Met Your Mother',
-        id: 'himym',
-        link: 'https://www.hulu.com/series/how-i-met-your-mother-bc68ac79-3ace-4427-9ec0-5ee6f314d194',
-        info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
-            desc: {
-                seasons: 9,
-                yearStart: 2005,
-                yearEnd: 2014,
-                genre: [
-                    'comedy',
-                    'romance',
-                    'friends',
-                ],
-            },
-            summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
-        },
-        style: {
-            color: '60B9C6',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'tall',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '75760',
-            reelgoodLink: 'https://reelgood.com/show/how-i-met-your-mother-2005',
-            imdbID: 'tt0460649',
-            subReddit: 'HIMYM',
-        },
-        cast: [
-            {
-                actor: 'Josh Radnor',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjAwNTUxMTM4OF5BMl5BanBnXkFtZTcwNjUyNzc4Mg@@._V1_UY264_CR4,0,178,264_AL_.jpg',
-                char: 'Ted Mosby',
-            },
-            {
-                actor: 'Jason Segel',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTUwNzcxNzM1Nl5BMl5BanBnXkFtZTgwNzA5NzU4MjE@._V1_.jpg',
-                char: 'Marshall Eriksen',
-            },
-            {
-                actor: 'Cobie Smulders',
-                image: 'https://static.wikia.nocookie.net/snicket/images/d/d7/Cobiesmulders5.jpg',
-                char: 'Robin Scherbatsky',
-            },
-            {
-                actor: 'Neil Patrick Harris',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTUxNjQ4MjU5Ml5BMl5BanBnXkFtZTcwMTY5NzAzNw@@._V1_.jpg',
-                char: 'Barney Stinson',
-            },
-            {
-                actor: 'Alyson Hannigan',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTkxODc5ODI5OV5BMl5BanBnXkFtZTcwNzExOTUyNw@@._V1_.jpg',
-                char: 'Lily Aldrin',
-            },
-        ],
-    },
-    {
-        name: "Lost",
-        id: "lost",
-        link: "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            description: "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
-            summary: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
-        },
-        style: {
-            color: '6a5828',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: "73739",
-            reelgoodLink: "https://reelgood.com/show/lost-2004",
-            imdbID: "tt0411008",
-        },
-    },
-    {
         name: 'New Girl',
         id: 'newgirl',
         link: {
@@ -3177,18 +2921,186 @@ const movieData8 = [
             },
         ],
     },
-
-
+    {
+        name: 'The League',
+        id: 'league',
+        link: 'https://www.hulu.com/series/the-league-6723b153-45c2-43a4-947f-7cc64ef7f2a3',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            desc: {
+                seasons: 7,
+                yearStart: 2009,
+                yearEnd: 2015,
+                genre: [
+                    'comedy',
+                    'sports',
+                ],
+            },
+            summary: "The League is an American sitcom and semi-improvised comedy about a about a fantasy football league and its members and their everyday lives.",
+        },
+        style: {
+            color: '003A6E',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-league-2009',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Bojack Horseman',
+        id: 'bojack',
+        link: {
+            netflix: '70300800'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 6,
+                yearStart: 2014,
+                yearEnd: 2020,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Meet the most beloved sitcom horse of the '90s, 20 years later. He’s a curmudgeon with a heart of...not quite gold...but something like gold. Copper?",
+        },
+        style: {
+            color: '656592',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/bojack-horseman-2014',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
+    {
+        name: 'Game of Thrones',
+        id: 'gameofthrones',
+        // link: 'watchlink',
+        info: {
+            // service: '',
+            // studio: '',
+            location: 'HBO Max',
+            description: 'Action &#149 Adventure &#149 Fantasy &#149 8 Seasons &#149 2011 - 2019',
+            summary: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+        },
+        style: {
+            color: '4e3e46',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: null,
+            // reelgoodLink: 'link',
+            imdbID: 'tt0944947',
+            // subReddit: null,
+        },
+    },
+    {
+        name: 'Fresh Prince of Bel-Air',
+        id: 'fresh',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            desc: {
+                seasons: 6,
+                yearStart: 1990,
+                yearEnd: 1996,
+                genre: [
+                    'comedy',
+                    'family',
+                ],
+            },
+            summary: "Will, a street-smart teenager, moves from the tough streets of West Philly to posh Bel-Air to live with his Uncle Philip, Aunt Vivian, his cousins — spoiled Hilary, preppy Carlton and young Ashley — and their sophisticated British butler, Geoffrey. Though Will’s antics and upbringing contrast greatly with the upper-class lifestyle of his extended relatives, he soon finds himself right at home as a loved part of the family.",
+        },
+        style: {
+            color: '754A9E',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '76738',
+            reelgoodLink: 'https://reelgood.com/show/the-fresh-prince-of-bel-air-1990',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: "Lost",
+        id: "lost",
+        link: "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            description: "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
+            summary: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
+        },
+        style: {
+            color: '6a5828',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: "73739",
+            reelgoodLink: "https://reelgood.com/show/lost-2004",
+            imdbID: "tt0411008",
+        },
+    },
     {
         name: 'The Office',
         id: 'office',
         link: 'https://www.peacocktv.com/watch/asset/tv/the-office/4902514835143843112',
         info: {
-            // service: '',
-            // studio: '',
+            // service: 'peacock',
+            // studio: 'studio',
             location: 'Peacock',
-            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
-            // summary: "summary",
+            desc: {
+                seasons: 9,
+                yearStart: 2005,
+                yearEnd: 2013,
+                genre: [
+                    'comedy',
+                    'mockumentary',
+                ],
+            },
+            summary: "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
         },
         style: {
             color: '7E6C64',
@@ -3204,6 +3116,254 @@ const movieData8 = [
             // imdbID: 'identifier',
             // subReddit: null,
         },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
+    {
+        name: "Brooklyn Nine-Nine",
+        id: "brooklyn",
+        link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
+        info: {
+            service: 'hulu',
+            studio: 'nbc',
+            location: 'Hulu',
+            desc: {
+                seasons: 8,
+                yearStart: 2013,
+                yearEnd: 2021,
+                genre: [
+                    'comedy',
+                    'crime',
+                ],
+            },
+            summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
+        },
+        style: {
+            color: '8b6a4b',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "tall",
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: "269586",
+            reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
+            imdbID: "tt2467372",
+            subReddit: 'brooklynninenine',
+        },
+    },
+    {
+        name: 'Silicon Valley',
+        id: 'silicon',
+        link: 'https://www.hulu.com/series/silicon-valley-a53a72e7-afd9-4f50-bda8-ae887ff0683d',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'Hulu',
+            desc: {
+                seasons: 6,
+                yearStart: 2014,
+                yearEnd: 2019,
+                genre: [
+                    'comedy',
+                    'tech',
+                ],
+            },
+            summary: "In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. Partially inspired by Mike Judge’s own experiences as a Silicon Valley engineer in the late ‘80s, Silicon Valley is an American sitcom that centers around six programmers who are living together and trying to make it big in the Silicon Valley.",
+        },
+        style: {
+            color: 'D4584B',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '8.4 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/silicon-valley-2014',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Blue Mountain State',
+        id: 'bms',
+        link: {
+            primeVideo: 'B08CG43CLR'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            desc: {
+                seasons: 3,
+                yearStart: 2010,
+                yearEnd: 2011,
+                genre: [
+                    'comedy',
+                    'sports',
+                ],
+            },
+            summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
+        },
+        style: {
+            color: '7d7787',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'png',
+            mobileSize: '9 / 10',
+        },
+        apps: {
+            tvTimeID: '134511',
+            reelgoodLink: 'https://reelgood.com/show/blue-mountain-state-2010',
+            imdbID: 'tt1344204',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Darin Brooks',
+                image: 'https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w425-q80/cast/bb_cast_darin_brooks_800x1000.jpg',
+                char: 'Alex Moran',
+            },
+            {
+                actor: 'Alan Ritchson',
+                image: 'https://static.wikia.nocookie.net/tmnt/images/5/50/Alan-ritchson-premiere-steam-01.jpg',
+                char: 'name',
+            },
+            {
+                actor: 'Chris Romano',
+                image: 'https://www.themoviedb.org/t/p/w235_and_h235_face/qaUN5cJYHWBwDBn40yEuWXQwMfg.jpg',
+                char: 'Sammy Cacciatore',
+            },
+            {
+                actor: 'Ed Marino',
+                image: 'https://playersbio.com/wp-content/uploads/2020/06/ed-003.jpg',
+                char: 'Coach Marty Daniels',
+            },
+            {
+                actor: 'Denise Richards',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Denise_Richards_2009.jpg',
+                char: 'Debra',
+            },
+            {
+                actor: 'Frankie Shaw',
+                image: 'https://m.media-amazon.com/images/M/MV5BNzliMWQ1OTItMjhiNy00YzExLWE3NzEtZDgwYTM0ODA2NTYzXkEyXkFqcGdeQXVyNzMzNzYzNg@@._V1_.jpg',
+                char: 'Mary Jo Cacciatore',
+            },
+            {
+                actor: 'Sam Jones III',
+                image: 'https://static.wikia.nocookie.net/tvdatabase/images/7/74/Sam_Jones%2C_III.jpg',
+                char: 'Craig Shilo',
+            },
+            {
+                actor: 'Page Kennedy',
+                image: 'https://parlemag.com/wp-content/uploads/2016/06/Page-Kennedy.jpg',
+                char: 'Radon Randell',
+            },
+        ],
+    },
+    {
+        name: 'White Collar',
+        id: 'whiteCollar',
+        link: 'https://www.hulu.com/series/white-collar-58d3d0ce-8d86-4ccd-bd0c-104551448432',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            desc: {
+                seasons: 6,
+                yearStart: 2009,
+                yearEnd: 2014,
+                genre: [
+                    'crime',
+                ],
+            },
+            summary: "White Collar is about the unlikely partnership of a con artist and an FBI agent who have been playing cat and mouse for years. Neal Caffrey (Matt Bomer), a charming criminal mastermind, is finally caught by his nemesis, FBI Agent Peter Burke (Tim DeKay.)",
+        },
+        style: {
+            color: '615c59',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '9 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/white-collar-2009',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'How I Met Your Mother',
+        id: 'himym',
+        link: 'https://www.hulu.com/series/how-i-met-your-mother-bc68ac79-3ace-4427-9ec0-5ee6f314d194',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            desc: {
+                seasons: 9,
+                yearStart: 2005,
+                yearEnd: 2014,
+                genre: [
+                    'comedy',
+                    'romance',
+                    'friends',
+                ],
+            },
+            summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
+        },
+        style: {
+            color: '60B9C6',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'tall',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '75760',
+            reelgoodLink: 'https://reelgood.com/show/how-i-met-your-mother-2005',
+            imdbID: 'tt0460649',
+            subReddit: 'HIMYM',
+        },
+        cast: [
+            {
+                actor: 'Josh Radnor',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjAwNTUxMTM4OF5BMl5BanBnXkFtZTcwNjUyNzc4Mg@@._V1_UY264_CR4,0,178,264_AL_.jpg',
+                char: 'Ted Mosby',
+            },
+            {
+                actor: 'Jason Segel',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTUwNzcxNzM1Nl5BMl5BanBnXkFtZTgwNzA5NzU4MjE@._V1_.jpg',
+                char: 'Marshall Eriksen',
+            },
+            {
+                actor: 'Cobie Smulders',
+                image: 'https://static.wikia.nocookie.net/snicket/images/d/d7/Cobiesmulders5.jpg',
+                char: 'Robin Scherbatsky',
+            },
+            {
+                actor: 'Neil Patrick Harris',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTUxNjQ4MjU5Ml5BMl5BanBnXkFtZTcwMTY5NzAzNw@@._V1_.jpg',
+                char: 'Barney Stinson',
+            },
+            {
+                actor: 'Alyson Hannigan',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTkxODc5ODI5OV5BMl5BanBnXkFtZTcwNzExOTUyNw@@._V1_.jpg',
+                char: 'Lily Aldrin',
+            },
+        ],
     },
 ]
 const movieData9 = [
