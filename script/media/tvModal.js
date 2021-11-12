@@ -152,6 +152,7 @@ function tvPopupElement(a,b,old) {
     <div class="spacer-x only-mobile" style="--size: 30px;"></div>
     <div class="grow"></div>`
 
+    container.append(serviceAudio(movie.info.service))
     // container.innerHTML = ('nicsdjkcnlsk')
 
     return container
@@ -548,16 +549,26 @@ function sameService(service,a,b) {
 
 async function openShow(a,b) {
     const movie = movieData[a][b]
-
-    if (movie.info.service == 'netflix') {
-        (new Audio('audio/netflix.mp3')).play()
-    } else if (movie.info.service == 'hulu') {
-        (new Audio('audio/hulu.mp3')).play()
-    } else if (movie.info.service == 'hbo') {
-        (new Audio('audio/hbo.mp3')).play()
+    const audio = document.getElementById('tv-popup-audio')
+    if (audio) {
+        audio.play()
     }
 
     if (movie.link) {
         window.open(processLink(movie.link),'_blank')
     }
+}
+
+function serviceAudio(service) {
+    if (service == 'netflix') {
+        var audio = new Audio('audio/netflix.mp3')
+    } else if (service == 'hulu') {
+        var audio = new Audio('audio/hulu.mp3')
+    } else if (service == 'hbo') {
+        var audio = new Audio('audio/hbo.mp3')
+    } else {
+        return document.createElement('div')
+    }
+    audio.id = 'tv-popup-audio'
+    return audio
 }
