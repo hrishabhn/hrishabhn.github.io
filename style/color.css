@@ -1,5 +1,9 @@
+body{
+    background-color: #121212;
+    color: #fff;
+    fill: #fff;
+}
 .layer-0{
-    /* background-color: var(--dark-layer-1); */
     background-color: #121212;
 }
 .layer-1{
@@ -23,6 +27,11 @@ a.layer-fg{
     fill: var(--dark-layer-1);
 }
 @media screen and (prefers-color-scheme: light) {
+    body{
+        background-color: var(--light-layer-1);
+        color: var(--dark-layer-1);
+        fill: var(--dark-layer-1);
+    }
     .layer-0{
         background-color: var(--light-layer-1);
     }
@@ -50,6 +59,9 @@ a.layer-fg{
 
 
 @media(max-width: 450px){
+    body{
+        background-color: #000;
+    }
     .layer-0{
         background-color: var(--dark-layer-0);
     }
@@ -58,6 +70,9 @@ a.layer-fg{
     }
 
     @media screen and (prefers-color-scheme: light) {
+        body{
+            background-color: var(--light-layer-1);
+        }
         .layer-0{
             background-color: var(--light-layer-1);
         }

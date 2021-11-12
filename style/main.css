@@ -152,11 +152,6 @@ body{
 
     flex-shrink: 0;
     text-decoration: none;
-
-    background-color: var(--dark-layer-1);
-    background-color: #121212;
-    color: #fff;
-    fill: #fff;
 }
 
 body > *, div, a, p, input{
@@ -269,11 +264,6 @@ svg{
 }
 
 @media screen and (prefers-color-scheme: light) {
-    body{
-        background-color: var(--light-layer-1);
-        color: var(--dark-layer-1);
-        fill: var(--dark-layer-1);
-    }
     input{
         color: var(--dark-layer-1);
         fill: var(--dark-layer-1);
@@ -293,10 +283,6 @@ svg{
 
 
 @media(max-width: 450px){
-
-    body{
-        background-color: #000;
-    }
     #header{
         position: fixed;
         display: flex;
@@ -385,9 +371,6 @@ svg{
 
 
     @media screen and (prefers-color-scheme: light) {
-        body{
-            background-color: var(--light-layer-1);
-        }
         #header{
             border-block-color: var(--black-10);
             background-color: var(--light-layer-1-50);
