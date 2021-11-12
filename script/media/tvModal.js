@@ -546,28 +546,18 @@ function sameService(service,a,b) {
     return sameMovies
 }
 
-function openShow(a,b) {
+async function openShow(a,b) {
     const movie = movieData[a][b]
 
-    serviceAudio(movie.info.service)
+    if (movie.info.service == 'netflix') {
+        (new Audio('audio/netflix.mp3')).play()
+    } else if (movie.info.service == 'hulu') {
+        (new Audio('audio/hulu.mp3')).play()
+    } else if (movie.info.service == 'hbo') {
+        (new Audio('audio/hbo.mp3')).play()
+    }
+
     if (movie.link) {
         window.open(processLink(movie.link),'_blank')
-    }
-}
-
-
-function serviceAudio(service) {
-    if (service == 'netflix') {
-        var sound = new Audio('audio/netflix.mp3')
-        console.log(sound)
-        sound.play()
-    } else if (service == 'hulu') {
-        var sound = new Audio('audio/hulu.mp3')
-        console.log(sound)
-        sound.play()
-    } else if (service == 'hbo') {
-        var sound = new Audio('audio/hbo.mp3')
-        console.log(sound)
-        sound.play()
     }
 }
