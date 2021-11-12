@@ -57,6 +57,44 @@
 
 const movieData0 = [
     {
+        name: 'Inside Job',
+        id: 'insideJob',
+        link: {
+            netflix: '80995819'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            date: '',
+            weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Lizard people? Real. The moon landing? Fake. Managing the world's conspiracies is a full-time job for an awkward genius and her dysfunctional co-workers.",
+        },
+        style: {
+            color: '1e3d51',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '365098',
+            reelgoodLink: 'https://reelgood.com/show/inside-job-2021',
+            imdbID: 'tt10231312',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
         link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
@@ -124,42 +162,50 @@ const movieData0 = [
         ],
     },
     {
-        name: 'Inside Job',
-        id: 'insideJob',
+        name: 'Arcane',
+        id: 'arcane',
         link: {
-            netflix: '80995819'
+            netflix: '81435684'
         },
         info: {
             service: 'netflix',
-            // studio: 'studio',
+            studio: 'netflix',
             location: 'Netflix',
-            date: '',
-            weekday: '',
+            // date: '',
+            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
                 yearEnd: null,
                 genre: [
+                    'action & adventure',
                     'animation',
-                    'comedy',
+                    'fantasy',
                 ],
             },
-            summary: "Lizard people? Real. The moon landing? Fake. Managing the world's conspiracies is a full-time job for an awkward genius and her dysfunctional co-workers.",
+            summary: "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
         },
         style: {
-            color: '1e3d51',
+            color: '994d33',
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '1',
+            mobileType: 'jpg',
+            mobileSize: '8 / 10',
         },
         apps: {
-            tvTimeID: '365098',
-            reelgoodLink: 'https://reelgood.com/show/inside-job-2021',
-            imdbID: 'tt10231312',
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/arcane-2021',
+            // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
     },
     {
         name: 'Ghosts',
