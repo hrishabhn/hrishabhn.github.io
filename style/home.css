@@ -1,21 +1,4 @@
-.hscroll-homecard{
-    flex-direction: row;
-    height: fit-content;
-    width: calc(100% - 25px);
-    padding: 20px 0;
-    margin-left: 25px;
-    overflow-x: scroll;
-    justify-content: flex-start;
-    scroll-snap-type: x mandatory;
-}
 
-@media(max-width: 450px){
-    .hscroll-homecard{
-        width: calc(100% - 0px);
-        padding: 15px 0;
-        margin-left: 0;
-    }
-}
 .homecard{
     height: 130px;
     min-width: 200px;
@@ -26,9 +9,6 @@
     align-items: flex-start;
     text-decoration: none;
     overflow: hidden;
-
-    scroll-snap-align: start;
-    scroll-margin-left: 0px;
     fill: white;
 }
 .homecard.border{

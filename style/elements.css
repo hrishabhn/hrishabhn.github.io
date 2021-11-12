@@ -104,7 +104,8 @@
 
 
 .page-width{
-    width: calc(100% - 320px);
+    width: calc(100% - 520px);
+    margin-left: 200px;
     margin-right: 280px;
 }
 
@@ -208,7 +209,7 @@
     }
     .page-width{
         width: calc(100% - 30px);
-        margin-right: 0;
+        margin: 0;
     }
     .hline-content{
         width: calc(100% - 30px);

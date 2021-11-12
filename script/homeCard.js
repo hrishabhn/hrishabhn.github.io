@@ -189,6 +189,9 @@ const homeCardData = [
 
 function homeCardTray(n) {
     var tray = hscrollHuluElement()
+    tray.append(spacerElement(100,'hidden-mobile'))
+    tray.append(spacerElement(100,'hidden-mobile'))
+    tray.append(spacerElement(20,'hidden-mobile'))
     tray.append(spacerElement(15,'only-mobile'))
 
     for (let i = 0; i < homeCardData[n].length; i++) {
@@ -215,7 +218,7 @@ function homeCardBasic(data) {
 
 
     var card = document.createElement('a')
-    card.classList = 'homecard basic clickable layer-1'
+    card.classList = 'homecard basic clickable layer-1 snap'
     card.onclick = function () { data.action() }
     card.innerHTML = `
     <div class="icon ${data.color}">${data.icon}</div>

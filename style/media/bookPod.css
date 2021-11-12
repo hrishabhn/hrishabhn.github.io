@@ -4,8 +4,6 @@
 
 .media-card{
     flex-direction: column;
-    scroll-snap-align: start;
-    scroll-margin-left: 0px;
 }
 .media-card .poster{
     border-radius: 5px;
@@ -55,10 +53,6 @@
 
 
 @media(max-width: 450px){
-    .media-card{
-        scroll-margin-left: 15px;
-    }
-
     .hscroll-media{
         width: 100%;
     }

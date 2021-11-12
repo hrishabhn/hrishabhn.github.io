@@ -147,12 +147,14 @@
 .hscroll-hulu{
     flex-direction: row;
     height: fit-content;
-    width: calc(100% - 20px + 0px);
-    margin-left: 20px;
-    /* margin-right: -220px; */
+    width: 100%;
     overflow-x: scroll;
     justify-content: flex-start;
     scroll-snap-type: x mandatory;
+}
+.hscroll-hulu .snap{
+    scroll-snap-align: start;
+    scroll-margin-left: 220px;
 }
 
 .hulu-card{
@@ -161,8 +163,6 @@
     flex-direction: column;
     border-radius: 8px;
     overflow: hidden;
-
-    scroll-snap-align: start;
 }
 
 .hulu-card .bg{
@@ -279,10 +279,6 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-image: var(--poster);
-
-    scroll-snap-align: start;
-    scroll-margin-left: 0px;
-
 }
 .tv-poster .title{
     position: absolute;
@@ -502,7 +498,7 @@
         width: calc(100% - 0px);
         margin-left: 0;
     }
-    .hulu-card{
+    .hscroll-hulu .snap{
         scroll-margin-left: 15px;
     }
 

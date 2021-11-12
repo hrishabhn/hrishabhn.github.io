@@ -153,6 +153,9 @@ function tvBigMob(a,b) {
 
 function tvMidTray(a) {
     var tray = hscrollHuluElement()
+    tray.append(spacerElement(100,'hidden-mobile'))
+    tray.append(spacerElement(100,'hidden-mobile'))
+    tray.append(spacerElement(20,'hidden-mobile'))
     tray.append(spacerElement(15,'only-mobile'))
 
     // console.log(movieData[a].length)
@@ -200,7 +203,7 @@ function tvMidElement(a,b) {
 
 
     var movieCardElement = document.createElement('div')
-    movieCardElement.classList = 'tv-mid-card'
+    movieCardElement.classList = 'tv-mid-card snap'
 
     var movieCardHTML = `
     <div class="tv-poster" style="--poster: url(media-image/TV/background/${data.id}.${data.style.posterType});">
@@ -250,6 +253,9 @@ function processService(movie) {
 
 function tvSmallTray(a) {
     var tray = hscrollHuluElement()
+    tray.append(spacerElement(100,'hidden-mobile'))
+    tray.append(spacerElement(100,'hidden-mobile'))
+    tray.append(spacerElement(20,'hidden-mobile'))
     tray.append(spacerElement(15,'only-mobile'))
 
     for (let b = 0; b < movieData[a].length; b++) {
@@ -286,7 +292,7 @@ function tvSmallElement(a,b) {
     }
 
     var movieCardElement = document.createElement('div')
-    // movieCardElement.classList = 'tv-mid-card'
+    movieCardElement.classList = 'snap'
 
     var movieCardHTML = `
     <div class="tv-poster" style="--poster: url(media-image/TV/background/${data.id}.${data.style.posterType});">
@@ -308,8 +314,11 @@ function tvHuluTray(a) {
     var tray = hscrollHuluElement()
     // tray.classList.add('page-width')
 
-    tray.append(spacerElement(20,'only-mobile'))
-
+    tray.append(spacerElement(100,'hidden-mobile'))
+    tray.append(spacerElement(100,'hidden-mobile'))
+    tray.append(spacerElement(20,'hidden-mobile'))
+    tray.append(spacerElement(15,'only-mobile'))
+    
     for (let b = 0; b < movieData[a].length; b++) {
         tray.append(tvHuluElement(a,b))
 
@@ -353,7 +362,7 @@ function tvHuluElement(a,b) {
 
 
     var movieCardElement = document.createElement('div')
-    movieCardElement.classList = 'hulu-card'
+    movieCardElement.classList = 'hulu-card snap'
     movieCardElement.style.setProperty('--col',`#${movie.style.color}`)
 
 
