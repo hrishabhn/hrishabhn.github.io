@@ -161,13 +161,18 @@ const movieData0 = [
             imdbID: 'tt11126994',
             // subReddit: 'subreddit',
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         // image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
+        cast: [
+            {
+                actor: 'Shohreh Aghdashloo',
+                // image: 'url',
+                char: 'Grayson',
+            },
+            {
+                actor: 'JB Blanc',
+                // image: 'url',
+                char: 'Vander',
+            },
+        ],
     },
     {
         name: 'Narcos: Mexico',
