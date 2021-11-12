@@ -57,44 +57,6 @@
 
 const movieData0 = [
     {
-        name: 'Inside Job',
-        id: 'insideJob',
-        link: {
-            netflix: '80995819'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            date: '',
-            weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Lizard people? Real. The moon landing? Fake. Managing the world's conspiracies is a full-time job for an awkward genius and her dysfunctional co-workers.",
-        },
-        style: {
-            color: '1e3d51',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '365098',
-            reelgoodLink: 'https://reelgood.com/show/inside-job-2021',
-            imdbID: 'tt10231312',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
         link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
@@ -172,7 +134,7 @@ const movieData0 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
+            weekday: 'Saturdays',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -206,6 +168,42 @@ const movieData0 = [
         //         char: 'name',
         //     },
         // ],
+    },
+    {
+        name: 'Narcos: Mexico',
+        id: 'narcos',
+        link: {
+            netflix: '80997085'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: 2021,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '353232',
+            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
+            imdbID: 'tt8714904',
+            // subReddit: null,
+        },
     },
     {
         name: 'Ghosts',
@@ -937,32 +935,6 @@ const movieData2 = [
             tvTimeID: "327417",
             reelgoodLink: "https://reelgood.com/show/money-heist-2017",
             imdbID: "tt6468322",
-        },
-    },
-    {
-        name: 'Narcos: Mexico',
-        id: 'narcos',
-        link: 'https://www.netflix.com/title/80997085',
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            description: 'Crime &#149 Drama &#149 3 Seasons &#149 2018 - Present',
-            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '353232',
-            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
-            imdbID: 'tt8714904',
-            // subReddit: null,
         },
     },
     {
@@ -2422,6 +2394,44 @@ const movieData7 = [
             // tvTimeID: 'identifier',
             // reelgoodLink: 'link',
             // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Inside Job',
+        id: 'insideJob',
+        link: {
+            netflix: '80995819'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            date: '',
+            weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Lizard people? Real. The moon landing? Fake. Managing the world's conspiracies is a full-time job for an awkward genius and her dysfunctional co-workers.",
+        },
+        style: {
+            color: '1e3d51',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '365098',
+            reelgoodLink: 'https://reelgood.com/show/inside-job-2021',
+            imdbID: 'tt10231312',
             // subReddit: 'subreddit',
         },
     },
