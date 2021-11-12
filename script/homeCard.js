@@ -198,8 +198,8 @@ function homeCardTray(n) {
     }
     tray.append(spacerElement(100,'hidden-mobile'))
     tray.append(spacerElement(100,'hidden-mobile'))
-    tray.append(spacerElement(85,'hidden-mobile'))
-
+    tray.append(spacerElement(80,'hidden-mobile'))
+    tray.append(spacerElement(5,'hidden-mobile'))
 
     return tray
 }
