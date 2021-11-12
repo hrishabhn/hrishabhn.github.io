@@ -3034,7 +3034,7 @@ const movieData8 = [
                 yearEnd: 2015,
                 genre: [
                     'comedy',
-                    'sports',
+                    'sport',
                 ],
             },
             summary: "The League is an American sitcom and semi-improvised comedy about a about a fantasy football league and its members and their everyday lives.",
@@ -3307,7 +3307,7 @@ const movieData8 = [
                 yearEnd: 2011,
                 genre: [
                     'comedy',
-                    'sports',
+                    'sport',
                 ],
             },
             summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
