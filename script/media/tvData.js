@@ -156,7 +156,7 @@ const movieData0 = [
             mobileSize: '8 / 10',
         },
         apps: {
-            // tvTimeID: 'identifier',
+            tvTimeID: '371028',
             reelgoodLink: 'https://reelgood.com/show/arcane-2021',
             imdbID: 'tt11126994',
             // subReddit: 'subreddit',
@@ -164,7 +164,7 @@ const movieData0 = [
         // cast: [
         //     {
         //         actor: 'name',
-        //         image: 'url',
+        //         // image: 'url',
         //         char: 'name',
         //     },
         // ],
