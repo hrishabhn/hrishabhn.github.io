@@ -1191,6 +1191,45 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
+        name: 'Dexter',
+        id: 'dexter',
+        link: {
+            primeVideo: 'B000JO9JHW'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 9,
+                yearStart: 2006,
+                yearEnd: 2013,
+                genre: [
+                    'crime',
+                    'drama',
+                    'mystery',
+                ],
+            },
+            summary: "He's smart. He's lovable. He's Dexter Morgan, America's favorite serial killer, who spends his days solving crimes and nights committing them. Golden Globe winner Michael C. Hall stars in the hit SHOWTIME Original Series.",
+        },
+        style: {
+            color: 'b11016',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '79349',
+            reelgoodLink: 'https://reelgood.com/show/dexter-2006',
+            imdbID: 'tt0773262',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Q: Into the Storm',
         id: 'qanon',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYDk9Ig48c5i6hgEAAAA7:type:series',
