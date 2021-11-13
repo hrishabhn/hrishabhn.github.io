@@ -159,7 +159,7 @@ const movieData0 = [
             tvTimeID: '371028',
             reelgoodLink: 'https://reelgood.com/show/arcane-2021',
             imdbID: 'tt11126994',
-            // subReddit: 'subreddit',
+            subReddit: 'ArcaneAnimatedSeries',
         },
         cast: [
             {
@@ -1918,12 +1918,12 @@ const movieData6 = [
             summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
         },
         style: {
-            color: 'e9d81b',
+            color: '699933',
             posterType: 'jpeg',
             titleType: 'png',
             titleSize: 'tall',
             mobileType: 'webp',
-            mobileSize: '8 / 10',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '75805',
