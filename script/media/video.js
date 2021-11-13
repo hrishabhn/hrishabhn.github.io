@@ -361,7 +361,7 @@ function tvHuluElement(a,b) {
     }
 
     if (movie.info.date) {
-        var dateHTML = `<div class="spacer-x" style="--size: 8px;"></div><p class="detail">Returns in ${countdownProcess((movie.info.date),'short').num} ${countdownProcess((movie.info.date),'short').word}</p>`
+        var dateHTML = `<div class="spacer-x" style="--size: 8px;"></div><p class="detail">Releases in ${countdownProcess((movie.info.date),'short').num} ${countdownProcess((movie.info.date),'short').word}</p>`
     } else if (movie.info.weekday) {
         var dateHTML = `<div class="spacer-x" style="--size: 8px;"></div><p class="detail">Every ${movie.info.weekday}</p>`
     } else {
