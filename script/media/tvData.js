@@ -57,6 +57,57 @@
 
 const movieData0 = [
     {
+        name: 'Arcane',
+        id: 'arcane',
+        link: {
+            netflix: '81435684'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            weekday: 'Saturday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'animation',
+                    'fantasy',
+                ],
+            },
+            summary: "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '371028',
+            reelgoodLink: 'https://reelgood.com/show/arcane-2021',
+            imdbID: 'tt11126994',
+            subReddit: 'ArcaneAnimatedSeries',
+        },
+        cast: [
+            {
+                actor: 'Shohreh Aghdashloo',
+                // image: 'url',
+                char: 'Grayson',
+            },
+            {
+                actor: 'JB Blanc',
+                // image: 'url',
+                char: 'Vander',
+            },
+        ],
+    },
+    {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
         link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
@@ -124,90 +175,40 @@ const movieData0 = [
         ],
     },
     {
-        name: 'Arcane',
-        id: 'arcane',
+        name: 'Cowboy Bebop',
+        id: 'cowboy',
         link: {
-            netflix: '81435684'
+            netflix: '80001312'
         },
         info: {
             service: 'netflix',
-            studio: 'netflix',
+            // studio: 'studio',
             location: 'Netflix',
-            // date: '',
-            weekday: 'Saturday',
             desc: {
                 seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
+                yearStart: 1998,
+                yearEnd: 1999,
                 genre: [
-                    'action & adventure',
+                    'action',
                     'animation',
-                    'fantasy',
+                    'sci-fi',
                 ],
             },
-            summary: "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
         },
         style: {
             color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '8 / 10',
-        },
-        apps: {
-            tvTimeID: '371028',
-            reelgoodLink: 'https://reelgood.com/show/arcane-2021',
-            imdbID: 'tt11126994',
-            subReddit: 'ArcaneAnimatedSeries',
-        },
-        cast: [
-            {
-                actor: 'Shohreh Aghdashloo',
-                // image: 'url',
-                char: 'Grayson',
-            },
-            {
-                actor: 'JB Blanc',
-                // image: 'url',
-                char: 'Vander',
-            },
-        ],
-    },
-    {
-        name: 'Narcos: Mexico',
-        id: 'narcos',
-        link: {
-            netflix: '80997085'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: 2021,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'webp',
+            posterType: 'jpeg',
             titleType: 'png',
             titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '1',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
         },
         apps: {
-            tvTimeID: '353232',
-            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
-            imdbID: 'tt8714904',
-            // subReddit: null,
+            tvTimeID: '76885',
+            reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-1998',
+            imdbID: 'tt0213338',
+            // subReddit: 'subreddit',
         },
     },
     {
@@ -259,40 +260,39 @@ const movieData0 = [
         ],
     },
     {
-        name: 'Cowboy Bebop',
-        id: 'cowboy',
+        name: 'Narcos: Mexico',
+        id: 'narcos',
         link: {
-            netflix: '80001312'
+            netflix: '80997085'
         },
         info: {
             service: 'netflix',
-            // studio: 'studio',
+            studio: 'netflix',
             location: 'Netflix',
             desc: {
-                seasons: 1,
-                yearStart: 1998,
-                yearEnd: 1999,
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: 2021,
                 genre: [
-                    'action',
-                    'animation',
-                    'sci-fi',
+                    'crime',
+                    'drama',
                 ],
             },
-            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
+            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
         },
         style: {
-            color: '994d33',
-            posterType: 'jpeg',
+            color: '5980C4',
+            posterType: 'webp',
             titleType: 'png',
             titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
+            mobileType: 'jpg',
+            mobileSize: '1',
         },
         apps: {
-            tvTimeID: '76885',
-            reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-1998',
-            imdbID: 'tt0213338',
-            // subReddit: 'subreddit',
+            tvTimeID: '353232',
+            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
+            imdbID: 'tt8714904',
+            // subReddit: null,
         },
     },
     {
