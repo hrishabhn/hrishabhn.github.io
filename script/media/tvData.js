@@ -134,7 +134,7 @@ const movieData0 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            weekday: 'Saturdays',
+            weekday: 'Saturday',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -411,7 +411,7 @@ const movieData1 = [
             studio: 'hbo',
             location: 'Hulu',
             // date: '',
-            weekday: 'Sundays',
+            weekday: 'Sunday',
             desc: {
                 seasons: 2,
                 yearStart: 2018,
@@ -599,7 +599,7 @@ const movieData2 = [
             studio: 'hulu',
             location: 'Hulu',
             // date: '',
-            weekday: 'Wednesdays',
+            weekday: 'Wednesday',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -710,7 +710,7 @@ const movieData2 = [
             studio: 'fox',
             location: 'Hulu',
             // date: '',
-            weekday: 'Sundays',
+            weekday: 'Sunday',
             desc: {
                 seasons: 20,
                 yearStart: 1999,
@@ -743,7 +743,7 @@ const movieData2 = [
             service: 'appleTV',
             studio: 'appleTV',
             location: ' TV+',
-            weekday: 'Fridays',
+            weekday: 'Friday',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -2613,7 +2613,7 @@ const movieData7 = [
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            // weekday: 'Tuesdays',
+            // weekday: 'Tuesday',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -2816,7 +2816,7 @@ const movieData7 = [
             service: 'appleTV',
             studio: 'appleTV',
             location: "Apple TV+",
-            weekday: 'Fridays',
+            weekday: 'Friday',
             desc: {
                 seasons: 2,
                 yearStart: 2020,
@@ -2894,7 +2894,7 @@ const movieData7 = [
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            weekday: 'Fridays',
+            weekday: 'Friday',
             desc: {
                 seasons: 3,
                 yearStart: 2019,
@@ -4096,7 +4096,7 @@ const movieDataArchive = [
             studio: 'appleTV',
             location: ' TV+',
             // date: '',
-            weekday: 'Thursdays',
+            weekday: 'Thursday',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
