@@ -163,6 +163,7 @@
     flex-direction: column;
     border-radius: 8px;
     overflow: hidden;
+    height: 100%;
 }
 
 .hulu-card .bg{
@@ -182,6 +183,7 @@
     overflow: hidden;
     margin-bottom: -80px;
     align-items: flex-start;
+    flex-grow: 1;
 }
 .hulu-card .poster-container .poster{
     width: 100%;
@@ -219,11 +221,24 @@
     display: block;
     color: white;
     font-size: 10px;
+    font-weight: 400;
     width: calc(100% - 30px);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-transform: capitalize;
+}
+.hulu-card .detail{
+    display: block;
+    color: white;
+    font-size: 8px;
+    font-weight: 500;
+    width: calc(100% - 30px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    opacity: 0.8;
 }
 
 .hulu-card .title{
@@ -252,13 +267,14 @@
 
 .hulu-card .info{
     width: 100%;
-    background-color: var(--black-20);
+    background-color: var(--col);
     color: white;
     fill: white;
     padding: 12px 15px;
 
     font-size: 10px;
     font-weight: 600;
+    /* -webkit-backdrop-filter: saturate(calc(2 / 3)) brightness(calc(3 / 2)); */
 }
 
 .hulu-card .info .icon{
