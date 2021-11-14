@@ -157,7 +157,7 @@ const movieData0 = [
             tvTimeID: '76885',
             reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-1998',
             imdbID: 'tt0213338',
-            // subReddit: 'subreddit',
+            subReddit: 'cowboybebop',
         },
     },
     {
@@ -1869,7 +1869,16 @@ const movieData6 = [
             studio: 'netflix',
             location: 'Netflix',
             date: 'Nov 19, 2021',
-            description: 'Action &#149 Adventure &#149 Crime &#149 1 Season &#149 2021 - Present',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'sci-fi',
+                ],
+            },
             summary: "A ragtag crew of bounty hunters chases down the galaxy's most dangerous criminals. They'll save the world ... for the right price. A live-action series.",
         },
         style: {
@@ -1877,13 +1886,42 @@ const movieData6 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'mid',
+            // mobileType: 'jpg',
+            // mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '367234',
             reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-2021',
             imdbID: 'tt1267295',
-            // subReddit: 'subreddit',
+            subReddit: 'cowboybebop',
         },
+        cast: [
+            {
+                actor: 'John Cho',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjM4Nzk2NjUxNF5BMl5BanBnXkFtZTgwMzY3NDI2MTI@._V1_.jpg',
+                char: 'Spike Spiegel',
+            },
+            {
+                actor: 'Daniella Pineda',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Daniella-Pineda_%28cropped%29.jpg',
+                char: 'Faye Valentine',
+            },
+            {
+                actor: 'Mustafa Shakir',
+                image: 'https://m.media-amazon.com/images/M/MV5BODAyN2U5MTYtNWRlNi00MDAwLWJjNTctZGVhMDg2MzQ1MWUwXkEyXkFqcGdeQXVyMTcwNDQyNDk@._V1_.jpg',
+                char: 'Jet Black',
+            },
+            {
+                actor: 'Elena Satine',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Actress_Elena_Satine_%28cropped_-_Medium_shot%29.jpg',
+                char: 'Julia',
+            },
+            {
+                actor: 'Alex Hassell',
+                image: 'https://www.thewikifeed.com/wp-content/uploads/2021/08/alex-hassell-1.jpg',
+                char: 'Vicious',
+            },
+        ],
     },
     {
         name: 'F is for Family',
