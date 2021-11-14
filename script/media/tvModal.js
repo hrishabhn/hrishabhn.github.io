@@ -566,6 +566,8 @@ function serviceAudio(service) {
         var audio = new Audio('audio/hulu.mp3')
     } else if (service == 'hbo') {
         var audio = new Audio('audio/hbo.mp3')
+    } else if (service == 'prime') {
+        var audio = new Audio('audio/prime.mp3')
     } else {
         return document.createElement('div')
     }
