@@ -84,6 +84,12 @@ const homeCardData = [
             render: function() { return homeCardTV(this) }
         },
         {
+            type: 'tv',
+            a: 0,
+            b: 2,
+            render: function() { return homeCardTV(this) }
+        },
+        {
             type: 'trip',
             n: 0,
             render: function() { return homeCardTrip(this) }
@@ -93,12 +99,6 @@ const homeCardData = [
             a: 0,
             b: 1,
             render: function() { return homeCardBook(this) }
-        },
-        {
-            type: 'tv',
-            a: 0,
-            b: 2,
-            render: function() { return homeCardTV(this) }
         },
         {
             type: 'flight',
