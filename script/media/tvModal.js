@@ -454,53 +454,50 @@ function tvPopupSuggestRow(sameMovies,title,oldA,oldB) {
         const b = sameMovies[i][1]
         const movie = movieData[a][b]
 
-        var card = document.createElement('div')
-        card.classList = 'card layer-1'
-        card.style.setProperty('--col',`#${movie.style.color}`)
+        // var card = document.createElement('div')
+        // card.classList = 'card layer-1'
+        // card.style.setProperty('--col',`#${movie.style.color}`)
 
 
-        if (movie.link) {
-            var link = `href="${processLink(movie.link)}"`
-        } else {
-            var link = ''
-        }
+        // if (movie.link) {
+        //     var link = `href="${processLink(movie.link)}"`
+        // } else {
+        //     var link = ''
+        // }
 
-        card.innerHTML = `
-        <a class="poster clickable" onclick="tvPopupShow(${a},${b},[${oldA},${oldB}])" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
-            <div class="gradient" style="--col: #${movie.style.color}00;"></div>
-            <div class="title" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
-        </a>
-        <div class="info">
-            <p class="text desc">${processDesc(movie,'genre')}</p>
-            <div class="spacer-x" style="--size: 5px;"></div>
-            <p class="text title">${movie.name}</p>
-            <div class="spacer-x" style="--size: 2px;"></div>
-            <p class="text summary">${movie.info.summary}</p>
-            <div class="spacer-x" style="--size: 10px;"></div>
-            <div class="fill-width">
-                <a class="play clickable" ${link} target="_blank">
-                    <div class="icon"><svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></svg></div>
-                    <div class="spacer-x" style="--size: 5px;"></div>
-                    <p>Watch</p>
-                </a>
-                <div class="grow"></div>
-                <div class="service" style="--service: url('media-image/service/${processService(movie)}.svg');"></div>
-            </div>
-        </div>
-        `
+        // card.innerHTML = `
+        // <a class="poster clickable" onclick="tvPopupShow(${a},${b},[${oldA},${oldB}])" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
+        //     <div class="gradient" style="--col: #${movie.style.color}00;"></div>
+        //     <div class="title" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
+        // </a>
+        // <div class="info">
+        //     <p class="text desc">${processDesc(movie,'genre')}</p>
+        //     <div class="spacer-x" style="--size: 5px;"></div>
+        //     <p class="text title">${movie.name}</p>
+        //     <div class="spacer-x" style="--size: 2px;"></div>
+        //     <p class="text summary">${movie.info.summary}</p>
+        //     <div class="spacer-x" style="--size: 10px;"></div>
+        //     <div class="fill-width">
+        //         <a class="play clickable" ${link} target="_blank">
+        //             <div class="icon"><svg data-bbox="15.49 8.193 132.882 147.475" viewBox="0 0 163.861 163.861" xmlns="http://www.w3.org/2000/svg" data-type="shape"><path d="M39.564 11.445C26.27 3.818 15.49 10.065 15.49 25.388v113.074c0 15.338 10.78 21.577 24.075 13.958l98.832-56.68c13.3-7.629 13.3-19.99 0-27.617L39.564 11.445z" xmlns="http://www.w3.org/2000/svg"></path></svg></div>
+        //             <div class="spacer-x" style="--size: 5px;"></div>
+        //             <p>Watch</p>
+        //         </a>
+        //         <div class="grow"></div>
+        //         <div class="service" style="--service: url('media-image/service/${processService(movie)}.svg');"></div>
+        //     </div>
+        // </div>
+        // `
 
-        hscroll.append(card)
+        // hscroll.append(card)
+        hscroll.append(tvSmallElement(a,b))
 
         if (i < sameMovies.length - 1) {
-            hscroll.append(spacerElement(10))
-            hscroll.append(spacerElement(5,'hidden-mobile'))
+            hscroll.append(spacerElement(4))
         }
-
-        // console.log(movie)
     }
 
     hscroll.append(spacerElement(20))
-    hscroll.append(spacerElement(10,'hidden-mobile'))
 
 
 
