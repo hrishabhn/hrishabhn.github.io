@@ -57,57 +57,6 @@
 
 const movieData0 = [
     {
-        name: 'Arcane',
-        id: 'arcane',
-        link: {
-            netflix: '81435684'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            weekday: 'Saturday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'animation',
-                    'fantasy',
-                ],
-            },
-            summary: "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
-        },
-        style: {
-            color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '8 / 10',
-        },
-        apps: {
-            tvTimeID: '371028',
-            reelgoodLink: 'https://reelgood.com/show/arcane-2021',
-            imdbID: 'tt11126994',
-            subReddit: 'ArcaneAnimatedSeries',
-        },
-        cast: [
-            {
-                actor: 'Shohreh Aghdashloo',
-                // image: 'url',
-                char: 'Grayson',
-            },
-            {
-                actor: 'JB Blanc',
-                // image: 'url',
-                char: 'Vander',
-            },
-        ],
-    },
-    {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
         link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
@@ -472,6 +421,82 @@ const movieData1 = [
                 actor: 'Alan Ruck',
                 image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
                 char: 'Connor Roy',
+            },
+        ],
+    },
+    {
+        name: 'Arcane',
+        id: 'arcane',
+        link: {
+            netflix: '81435684'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            weekday: 'Saturday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'animation',
+                    'fantasy',
+                ],
+            },
+            summary: "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '371028',
+            reelgoodLink: 'https://reelgood.com/show/arcane-2021',
+            imdbID: 'tt11126994',
+            subReddit: 'ArcaneAnimatedSeries',
+        },
+        cast: [
+            {
+                actor: 'Hailee Steinfeld',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
+                char: 'Vi',
+            },
+            {
+                actor: 'Mia Sinclair Jenness',
+                // image: 'url',
+                char: 'Powder',
+            },
+            {
+                actor: 'Kevin Alejandro',
+                image: 'https://arealnews.com/wp-content/uploads/2021/10/kevin3-1.jpg',
+                char: 'Jayce',
+            },
+            {
+                actor: 'Harry Lloyd',
+                image: 'https://musicimage.xboxlive.com/catalog/video.contributor.90371b00-0200-11db-89ca-0019b92a3933/image?locale=en-us&target=circle',
+                char: 'Viktor',
+            },
+            {
+                actor: 'Katie Leung',
+                image: 'https://static.wikia.nocookie.net/harrypotter/images/b/b3/Katie_Leung_by_Faye_Thomas_2014.jpg',
+                char: 'Caitlyn',
+            },
+            {
+                actor: 'Shohreh Aghdashloo',
+                image: 'https://m.media-amazon.com/images/M/MV5BZDI0M2Q1NzYtYzIxNy00MWE4LTg4NDgtOWRhZDdkYTAxZTBhXkEyXkFqcGdeQXVyNTY3MzA5MzA@._V1_.jpg',
+                char: 'Grayson',
+            },
+            {
+                actor: 'JB Blanc',
+                // image: 'url',
+                char: 'Vander',
             },
         ],
     },
