@@ -438,15 +438,9 @@ const pageData4 = {
             }
         },
         {
-            type: 'spacer-content',
-        },
-        {
             render: function() {
-                return hlineContentElement()
-            },
-        },
-        {
-            type: 'spacer-content',
+                return spacerElement(20)
+            }
         },
         {
             render: function() {
@@ -460,15 +454,9 @@ const pageData4 = {
             }
         },
         {
-            type: 'spacer-content',
-        },
-        {
             render: function() {
-                return hlineContentElement()
-            },
-        },
-        {
-            type: 'spacer-content',
+                return spacerElement(20)
+            }
         },
         {
             render: function() {
@@ -482,15 +470,9 @@ const pageData4 = {
             }
         },
         {
-            type: 'spacer-content',
-        },
-        {
             render: function() {
-                return hlineContentElement()
-            },
-        },
-        {
-            type: 'spacer-content',
+                return spacerElement(20)
+            }
         },
         {
             render: function() {
@@ -504,15 +486,9 @@ const pageData4 = {
             }
         },
         {
-            type: 'spacer-content',
-        },
-        {
             render: function() {
-                return hlineContentElement()
-            },
-        },
-        {
-            type: 'spacer-content',
+                return spacerElement(20)
+            }
         },
         {
             render: function() {
@@ -526,15 +502,9 @@ const pageData4 = {
             }
         },
         {
-            type: 'spacer-content',
-        },
-        {
             render: function() {
-                return hlineContentElement()
-            },
-        },
-        {
-            type: 'spacer-content',
+                return spacerElement(20)
+            }
         },
         {
             render: function() {
@@ -548,15 +518,9 @@ const pageData4 = {
             }
         },
         {
-            type: 'spacer-content',
-        },
-        {
             render: function() {
-                return hlineContentElement()
-            },
-        },
-        {
-            type: 'spacer-content',
+                return spacerElement(20)
+            }
         },
         {
             render: function() {
@@ -570,15 +534,9 @@ const pageData4 = {
             }
         },
         {
-            type: 'spacer-content',
-        },
-        {
             render: function() {
-                return hlineContentElement()
-            },
-        },
-        {
-            type: 'spacer-content',
+                return spacerElement(20)
+            }
         },
         {
             render: function() {
@@ -592,15 +550,9 @@ const pageData4 = {
             }
         },
         {
-            type: 'spacer-content',
-        },
-        {
             render: function() {
-                return hlineContentElement()
-            },
-        },
-        {
-            type: 'spacer-content',
+                return spacerElement(20)
+            }
         },
         {
             render: function() {
@@ -614,15 +566,9 @@ const pageData4 = {
             }
         },
         {
-            type: 'spacer-content',
-        },
-        {
             render: function() {
-                return hlineContentElement()
-            },
-        },
-        {
-            type: 'spacer-content',
+                return spacerElement(20)
+            }
         },
         {
             render: function() {
@@ -634,6 +580,9 @@ const pageData4 = {
             render: function() {
                 return tvHuluTray(10)
             }
+        },
+        {
+            type: 'spacer-content',
         },
         {
             type: 'spacer-content',
