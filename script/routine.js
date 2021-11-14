@@ -61,7 +61,7 @@ function routineLoad() {
 
     if ((time == 2) || (time == 3)) {
         var n = 0
-    } else if ((time == 6) || (time == 7) || (time == 0)) {
+    } else if ((time == 5) || (time == 6) || (time == 7) || (time == 0)) {
         var n = 1
     }
 
