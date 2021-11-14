@@ -3751,6 +3751,39 @@ const movieData9 = [
 ]
 const movieData10 = [
     {
+        name: 'Scary Movie',
+        id: 'scaryMovie',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Philo',
+            desc: {
+                year: 2000,
+                genre: [
+                    'comedy',
+                    'horror',
+                ],
+            },
+            summary: "A familiar-looking group of teenagers find themselves being stalked by a more-than-vaguely recognizable masked killer! As the victims begin to pile up and the laughs pile on, none of your favorite scary movies escape the razor-sharp satire of this outrageously funny parody!",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/scary-movie-2000',
+            imdbID: 'tt0175142',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Crazy Rich Asians',
         id: 'crazyRich',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GX6QtHQxBD5nCwwEAAAHM:type:feature',
