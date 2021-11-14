@@ -124,6 +124,42 @@ const movieData0 = [
         ],
     },
     {
+        name: 'Narcos: Mexico',
+        id: 'narcos',
+        link: {
+            netflix: '80997085'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: 2021,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '353232',
+            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
+            imdbID: 'tt8714904',
+            // subReddit: null,
+        },
+    },
+    {
         name: 'Cowboy Bebop',
         id: 'cowboy',
         link: {
@@ -207,42 +243,6 @@ const movieData0 = [
                 char: 'Mike Cooper',
             },
         ],
-    },
-    {
-        name: 'Narcos: Mexico',
-        id: 'narcos',
-        link: {
-            netflix: '80997085'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: 2021,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '353232',
-            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
-            imdbID: 'tt8714904',
-            // subReddit: null,
-        },
     },
     {
         name: 'South Park',
