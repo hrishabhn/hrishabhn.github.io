@@ -5,7 +5,7 @@ function pageDataRender() {
 }
 
 const mainElement = document.getElementById('main')
-const leftbarElement = document.getElementById('leftbar')
+const navbarElement = document.getElementById('navbar')
 
 const pageData0 = {
     info: {
@@ -952,7 +952,7 @@ const pageData = [
 
 function renderPage(page) {
     mainElement.append(renderPageElement(page))
-    leftbarElement.append(renderMenuElement(page))
+    // navbarElement.append(renderMenuElement(page))
 }
 
 function renderPageElement(page) {
@@ -967,7 +967,7 @@ function renderPageElement(page) {
     headerElement.classList = 'page-header page-width'
     headerElement.innerHTML = page.info.name
     // headerElement.innerHTML = `<p>${page.info.name}</p>`
-    headerElement.innerHTML = `<p>${page.info.name}</p><div class="grow"></div><a class="icon clickable layer-0 only-mobile" onclick="rightBarToggle()"><svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg></a>`
+    headerElement.innerHTML = `<p>${page.info.name}</p><div class="grow"></div><a class="icon clickable layer-0 only-mobile" onclick="widgetbarToggle()"><svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg></a>`
     pageElement.append(headerElement)
 
     for (let i = 0; i < page.content.length; i++) {
@@ -1013,9 +1013,11 @@ function openPage(n) {
         if (checkPass()) {
             document.getElementById(`page-${oldPage}`).classList.add('hidden')
             document.getElementById(`menu-item-${oldPage}`).classList.remove('selected')
+            document.getElementById(`menu-item-${oldPage}`).classList.remove('blue-fg')
 
             document.getElementById(`page-${n}`).classList.remove('hidden')
             document.getElementById(`menu-item-${n}`).classList.add('selected')
+            document.getElementById(`menu-item-${n}`).classList.add('blue-fg')
 
             document.getElementById('header').innerHTML = pageData[n].info.name
             headerScroll(n)
@@ -1027,32 +1029,15 @@ function openPage(n) {
     } else {
         document.getElementById(`page-${oldPage}`).classList.add('hidden')
         document.getElementById(`menu-item-${oldPage}`).classList.remove('selected')
+        document.getElementById(`menu-item-${oldPage}`).classList.remove('blue-fg')
 
         document.getElementById(`page-${n}`).classList.remove('hidden')
         document.getElementById(`menu-item-${n}`).classList.add('selected')
+        document.getElementById(`menu-item-${n}`).classList.add('blue-fg')
 
         document.getElementById('header').innerHTML = pageData[n].info.name
         headerScroll(n)
         setCookie('page',n,10/86400)
         oldPage = n
     }
-}
-
-function renderMenuElement(page) {
-    var menuItem = document.createElement('div')
-    menuItem.id = `menu-item-${page.info.id}`
-    menuItem.classList = 'menu-item'
-    menuItem.onclick = function() { page.open() }
-
-    if (!page.info.menuMobile) {
-        menuItem.classList.add('hidden-mobile')
-    }
-
-    var menuItemContent = `
-    <div class="icon">${page.info.icon}</div>
-    <div class="spacer-x hidden-mobile" style="--size: 10px;"></div>
-    <p>${page.info.name}</p>`
-
-    menuItem.innerHTML = menuItemContent
-    return menuItem
 }

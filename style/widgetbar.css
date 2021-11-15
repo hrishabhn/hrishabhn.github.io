@@ -1,4 +1,4 @@
-#rightbar .section-title{
+#widgetbar .section-title{
     width: 100%;
     font-size: 16px;
     font-weight: 600;
@@ -7,11 +7,11 @@
 
     margin-bottom: 8px;
 }
-#rightbar .tray{
+#widgetbar .tray{
     flex-direction: column;
     width: 100%;
 }
-#rightbar .close{
+#widgetbar .close{
     height: 100px;
     width: 100%;
 }

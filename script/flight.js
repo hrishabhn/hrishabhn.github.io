@@ -789,7 +789,7 @@ function tripCard(n) {
 
 
 function flightCard(flight,type) {
-    console.log(flight.dep.stop)
+    // console.log(flight.dep.stop)
 
     if (type == 'flight') {
         var info = `

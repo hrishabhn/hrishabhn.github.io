@@ -18,13 +18,14 @@
     <link rel="stylesheet" href="style/routine.css">
     <link rel="stylesheet" href="style/calendar.css">
     <link rel="stylesheet" href="style/user.css">
-
+    
+    <link rel="stylesheet" href="style/spotlight.css">
     <link rel="stylesheet" href="style/media/video.css">
     <link rel="stylesheet" href="style/media/tvModal.css">
     <link rel="stylesheet" href="style/media/bookPod.css">
 
-    <link rel="stylesheet" href="style/leftbar.css">
-    <link rel="stylesheet" href="style/rightbar.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/widgetbar.css">
 
 
     <link rel="stylesheet" href="style/devices.css">
@@ -49,7 +50,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
-    <!-- <meta id="theme" name="theme-color" content="#e50914"> -->
+    <!-- <meta id="theme" name="theme-color" content="#1c1c1e"> -->
 
     <title id="title-page">Dashboard</title>
 
@@ -58,9 +59,23 @@
 
 <body id="body" ontouchstart="" onload="loadApp()">
     <div id="header">Dashboard</div>
-    <div id="leftbar" class="layer-0-trans"></div>
-    <div id="rightbar" class="hide layer-0-trans"></div>
+    <div id="navbar" class="layer-1"></div>
+    <a class="spot-button clickable layer-0-trans only-mobile" onclick="spotlightShow()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path></svg></a>
+    <div id="widgetbar" class="hide layer-0"></div>
     <div id="modal-tray"></div>
+    <div id="spotlight-container" class="hide">
+        <a class="close" onclick="spotlightHide()"></a>
+        <div class="spotlight-tray layer-0-trans">
+            <div class="spotlight-search-container">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path></svg></div>
+                <div class="spacer-x" style="--size: 8px;"></div>
+                <input type="text" id="spotlight-search"></input>
+            </div>
+            <!-- <div class="hline"></div> -->
+            <div id="spotlight-result"></div>
+
+        </div>
+    </div>
     <div id="tv-modal-container" class="hide" onscroll="tvPopupHeaderScroll()">
         <a onclick="tvPopupHide()" class="modal-close"></a>
         <div id="tv-modal-body" class="layer-0"></div>
@@ -78,7 +93,7 @@
             <a class="grow fill-width" onclick="hideModal()" style="min-height: 0px;"></a>
         </div>
     </div>
-    <div id="main">
+    <div id="main" class="layer-0">
         <div class="page">
             <!-- <div class="routine-other-container">
                 <a class="layer-1 clickable">
@@ -1063,6 +1078,7 @@
 <script src="script/load.js"></script>
 <script src="script/apps/appData.js"></script>
 <script src="script/apps/apps.js"></script>
+<script src="script/apps/searchData.js"></script>
 
 <script src="script/widget.js"></script>
 <script src="script/modal.js"></script>
@@ -1085,8 +1101,11 @@
 <script src="script/elements.js"></script>
 <script src="script/apps/switch.js"></script>
 
+<script src="script/search.js"></script>
+<script src="script/spotlight.js"></script>
 
-<script src="script/rightbar.js"></script>
+<script src="script/navbar.js"></script>
+<script src="script/widgetbar.js"></script>
 <script src="script/pageData.js"></script>
 <script src="script/homeCard.js"></script>
 

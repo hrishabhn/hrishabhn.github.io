@@ -42,21 +42,21 @@ function processDate(dateString) {
     return dateObject
 }
 
-function processMonth(monthIndex,type) {
+function processMonth(monthIndex, type) {
     if (type == 'short') {
-        var months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
+        var months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
     } else if (type == 'long') {
-        var months = ['january','february','march','april','may','june','july','august','september','october','november','december']
+        var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
     }
 
     return months[monthIndex]
 }
 
-function processDay(dayIndex,type) {
+function processDay(dayIndex, type) {
     if (type == 'short') {
-        var days = ['sun','mon','tue','wed','thu','fri','sat']
+        var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
     } else if (type == 'long') {
-        var days = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+        var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
     }
 
     return days[dayIndex]
@@ -120,18 +120,18 @@ function countdownCalculate(date) {
         if (days < 2) {
             result = [days * 24 + hours, 'hours']
         } else {
-            result = [days,'days']
+            result = [days, 'days']
         }
     } else if (hours > 0) {
         if (hours < 2) {
             result = [hours * 60 + minutes, 'minutes']
         } else {
-            result = [hours,'hours']
+            result = [hours, 'hours']
         }
     } else if (minutes > 0) {
-        result = [minutes,'minutes']
+        result = [minutes, 'minutes']
     } else {
-        result = [seconds,'seconds']
+        result = [seconds, 'seconds']
     }
 
     var resultObject = {
@@ -157,7 +157,7 @@ function countdownCalculate(date) {
     console.log(string)
 }
 
-function countdownProcess(date,type) {
+function countdownProcess(date, type) {
     const countdownResult = countdownCalculate(date)
     // console.log(countdownResult.only.days)
 
@@ -202,11 +202,11 @@ function countdownProcess(date,type) {
     }
 }
 
-function durationCalculate(start,end) {
+function durationCalculate(start, end) {
     var difference = end.getTime() - start.getTime()
     var hours = Math.floor(difference / (1000 * 60 * 60))
     var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
-    
+
     if (hours) {
         return `${hours}h ${minutes}m`
     } else {
@@ -216,8 +216,8 @@ function durationCalculate(start,end) {
 
 function googleSearch(query) {
     if ('ontouchstart' in document.documentElement) {
-      return `google://search?q=${query}`
+        return `google://search?q=${query}`
     } else {
-      return `http://www.google.com/search?q=${query}`
+        return `http://www.google.com/search?q=${query}`
     }
-  }
+}
