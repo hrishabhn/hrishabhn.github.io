@@ -22,7 +22,7 @@ body{
     -webkit-backdrop-filter: blur(25px);
 }
 .layer-1-trans{
-    background-color: var(--white-05);
+    background-color: rgba(255, 255, 255, 0.075);
 }
 
 
@@ -58,7 +58,7 @@ a.layer-fg{
         background-color: var(--light-layer-1-60);
     }
     .layer-1-trans{
-        background-color: var(--dark-layer-1-05);
+        background-color: rgba(28, 28, 30, 0.075);
     }
 
     a{
