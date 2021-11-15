@@ -254,7 +254,7 @@ function routineOtherButton(i) {
 
 
     var button = document.createElement('a')
-    button.classList = 'layer-1-trans clickable'
+    button.classList = 'layer-1-trans clickable-text'
     button.onclick = function() { openModal(routineModal(i)) }
     button.innerHTML = `
     <div class="icon">
