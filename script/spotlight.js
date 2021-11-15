@@ -73,9 +73,9 @@ function spotlightSearch(e) {
             var n = 0
             for (let i = 0; i < results.length; i++) {
                 if (results[i].results.length) {
-                    if (n) {
-                        resultElement.append(spotlightDividerElement(20))
-                    }
+                    // if (n) {
+                    resultElement.append(spotlightDividerElement(20))
+                    // }
         
                     resultElement.append(spotlightResultTitle(results[i]))
                     var subtray = document.createElement('div')

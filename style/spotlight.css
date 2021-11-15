@@ -84,6 +84,7 @@
     width: 100%;
     max-height: calc(100vh - 200px);
     overflow-y: scroll;
+    /* border-top: solid 1px #ccc; */
     /* padding-bottom: 20px; */
 }
 
