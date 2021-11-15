@@ -1,7 +1,7 @@
 function loadApp() {
     baseElements[0].render()
     pageDataRender()
-    rightbarRender()
+    widgetbarRender()
     loadSwitches()
 
     widgetPopulate()
@@ -41,7 +41,6 @@ function keyUp(e) {
     if (e.key == '/') {
         // document.getElementById('global-search').focus()
         spotlightShow()
-        document.getElementById('spotlight-search').focus()
     }
 }
 
@@ -49,6 +48,5 @@ function keyDown(e) {
     if (e.keyCode == 27) {
         e.preventDefault()
         spotlightHide()
-        document.getElementById('spotlight-search').blur()
     }
 }

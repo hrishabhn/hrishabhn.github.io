@@ -6,7 +6,7 @@
 }
 #navbar .side.left{
     justify-content: flex-start;
-    /* padding-left: 40px; */
+    padding-left: 10px;
 }
 #navbar .side.right{
     justify-content: flex-end;
@@ -19,6 +19,10 @@
     cursor: default;
 }
 
+#navbar .item.search{
+    width: 40px;
+    padding: 12px;
+}
 #navbar .item.user{
     font-size: 16px;
     font-weight: 500;
@@ -156,7 +160,7 @@
 }
 #global-result .result .info p{
     display: block;
-    max-width: 155px;
+    max-width: calc(100% - 180px);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -258,6 +262,42 @@
 
 
 @media(max-width: 450px){
+    #navbar{
+        box-shadow: none;
+    }
+    #navbar .side{
+        position: fixed;
+        top: 30px;
+        min-width: auto;
+        width: 50vw;
+        height: 60px;
+        /* padding: 0 15px; */
+        /* background-color: blue; */
+        display: none;
+    }
+    #navbar .side.left{
+        left: 0;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    #navbar .side.right{
+        right: 0;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+
+
+
+
+
+
+
+    .menu-tray{
+        height: 100%;
+        width: 100%;
+    
+    }
+
     .menu-item{
         flex-direction: column;
         justify-content: center;
@@ -277,6 +317,9 @@
         font-size: 10px;
         font-weight: 400;
         margin-top: 8px;
+    }
+    .menu-item .select-line{
+        display: none;
     }
     .menu-item:hover, .menu-item.selected{
         background-color: transparent;

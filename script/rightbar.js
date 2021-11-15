@@ -1,23 +1,23 @@
-function rightbarRender() {
-    const righbarElement = document.getElementById('rightbar')
+function widgetbarRender() {
+    const righbarElement = document.getElementById('widgetbar')
 
-    for (const content of rightBarContent) {
+    for (const content of widgetbarContent) {
         righbarElement.append(content.render())
     }
 }
 
-function rightBarToggle() {
-    const righbarElement = document.getElementById('rightbar')
+function widgetbarToggle() {
+    const righbarElement = document.getElementById('widgetbar')
     righbarElement.classList.toggle('hide')
     righbarElement.classList.toggle('show')
 }
 
-const rightBarContent = [
+const widgetbarContent = [
     {
         render: function() {
             var close = document.createElement('a')
             close.classList = 'close only-mobile'
-            close.onclick = function () { rightBarToggle() }
+            close.onclick = function () { widgetbarToggle() }
             return close
         }
     },
@@ -33,7 +33,7 @@ const rightBarContent = [
     },
 ]
 
-function rightbarTitleElement(text) {
+function widgetbarTitleElement(text) {
     var title = document.createElement('div')
     title.classList = 'section-title'
     title.innerHTML = text

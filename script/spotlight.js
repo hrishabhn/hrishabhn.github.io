@@ -2,6 +2,7 @@ function spotlightShow() {
     const container = document.getElementById('spotlight-container')
     container.classList.remove('hide')
     container.classList.add('show')
+    document.getElementById('spotlight-search').focus()
 
     document.getElementById('spotlight-search').onkeyup = function(e) { spotlightSearch(e) }
 }
@@ -9,6 +10,7 @@ function spotlightHide() {
     const container = document.getElementById('spotlight-container')
     container.classList.add('hide')
     container.classList.remove('show')
+    document.getElementById('spotlight-search').blur()
 }
 
 // var spotlightPosition

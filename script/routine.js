@@ -78,7 +78,7 @@ function routineLoad() {
 
         var tray = document.createElement('div')
         tray.classList = 'tray'
-        tray.append(rightbarTitleElement('Routines'))
+        tray.append(widgetbarTitleElement('Routines'))
         tray.append(routineOtherContainer(null))
         tray.append(spacerElement(15))
 
@@ -133,7 +133,7 @@ function routineModal(i) {
 function routineTrayElement(i) {
     var tray = document.createElement('div')
     tray.classList = 'tray'
-    tray.append(rightbarTitleElement(`Good ${routineData[i].time}.`))
+    tray.append(widgetbarTitleElement(`Good ${routineData[i].time}.`))
     
     for (let j = 0; j < routineData[i].data.length; j++) {
         routineCookieLoad(i,j)
@@ -508,7 +508,7 @@ function calcStreak(i,j) {
 //     // <div class="full-icon">
 //     //     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.071 12 9.25 8.179a1.061 1.061 0 0 1 1.5-1.5l4.614 4.614a.999.999 0 0 1 0 1.414l-4.614 4.614a1.061 1.061 0 0 1-1.5-1.5L13.071 12z"></path></svg>
 //     // </div>`
-//     tray.append(rightbarTitleElement('Good night.'))
+//     tray.append(widgetbarTitleElement('Good night.'))
 
 //     // var tray = hscrollHuluElement()
 //     // var tray = document.createElement('div')

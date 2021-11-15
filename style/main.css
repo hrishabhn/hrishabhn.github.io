@@ -205,13 +205,13 @@ input{
     /* padding: 70px 20px 0; */
     /* padding-top: 70px; */
     /* padding-left: 20px; */
-    z-index: 1000;
+    z-index: 2;
     /* overflow-y: scroll; */
     /* border-bottom: solid 1px #333; */
     box-shadow: 0 0 30px #00000033;
 }
 
-#rightbar{
+#widgetbar{
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -279,7 +279,7 @@ svg.stroke{
 
     }
     
-    #rightbar{
+    #widgetbar{
         border-left: solid 1px #ccc;
     }
     svg.stroke{
@@ -340,7 +340,7 @@ svg.stroke{
         z-index: 10;
         border-right: none;
     }
-    #rightbar{
+    #widgetbar{
         padding-top: 0px;
         padding-bottom: 50px;
     
@@ -351,12 +351,12 @@ svg.stroke{
         border-left: none;
 
     }
-    #rightbar.hide{
+    #widgetbar.hide{
         transform: translateX(100%);
         pointer-events: none;
         transition: all 0s;
     }
-    #rightbar.show{
+    #widgetbar.show{
         transform: translateX(0%);
         opacity: 1;
         pointer-events: initial;
