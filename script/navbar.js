@@ -35,41 +35,41 @@ function navbarLeft() {
     var container = document.createElement('div')
     container.classList = 'side left hidden-mobile'
 
-    var searchContainer = document.createElement('div')
-    searchContainer.classList = 'global-search-container'
+    // var searchContainer = document.createElement('div')
+    // searchContainer.classList = 'global-search-container'
 
-    var searchIcon = document.createElement('div')
-    searchIcon.classList = 'icon'
-    searchIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path></svg>'
-    searchContainer.append(searchIcon)
+    // var searchIcon = document.createElement('div')
+    // searchIcon.classList = 'icon'
+    // searchIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path></svg>'
+    // searchContainer.append(searchIcon)
 
-    searchContainer.append(spacerElement(10))
+    // searchContainer.append(spacerElement(10))
     
-    var searchBox = document.createElement('input')
-    searchBox.id = 'global-search'
-    searchBox.onkeyup = function(e) { globalSearch(e) }
-    searchBox.onfocus = function() { globalSearch() }
-    // searchBox.onblur = function() {
-    //     // var x = MouseEvent.clientX, y = MouseEvent.clientY,
-    //     // elementMouseIsOver = document.elementFromPoint(x, y);
-    //     // console.log(elementMouseIsOver)
+    // var searchBox = document.createElement('input')
+    // searchBox.id = 'global-search'
+    // searchBox.onkeyup = function(e) { globalSearch(e) }
+    // searchBox.onfocus = function() { globalSearch() }
+    // // searchBox.onblur = function() {
+    // //     // var x = MouseEvent.clientX, y = MouseEvent.clientY,
+    // //     // elementMouseIsOver = document.elementFromPoint(x, y);
+    // //     // console.log(elementMouseIsOver)
 
-    //     // document.getElementById('global-result').classList.add('hidden-always')
+    // //     // document.getElementById('global-result').classList.add('hidden-always')
+    // // }
+    // searchContainer.append(searchBox)
+
+    // var searchClose = document.createElement('a')
+    // searchClose.classList = 'close clickable'
+    // searchClose.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="7.5 7.5 9 9"><path d="m14.8 16.2-7-7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l7 7c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0z"></path><path d="m7.8 14.8 7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-7 7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"></path></svg>`
+    // searchClose.onclick = function() {
+    //     document.getElementById('global-search').value = ''
+    //     globalResultHide()
     // }
-    searchContainer.append(searchBox)
+    // searchContainer.append(searchClose)
 
-    var searchClose = document.createElement('a')
-    searchClose.classList = 'close clickable'
-    searchClose.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="7.5 7.5 9 9"><path d="m14.8 16.2-7-7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l7 7c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0z"></path><path d="m7.8 14.8 7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-7 7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"></path></svg>`
-    searchClose.onclick = function() {
-        document.getElementById('global-search').value = ''
-        globalResultHide()
-    }
-    searchContainer.append(searchClose)
+    // searchContainer.append(navbarSearchChild())
 
-    searchContainer.append(navbarSearchChild())
-
-    container.append(searchContainer)
+    // container.append(searchContainer)
 
     return container
 }
@@ -85,12 +85,12 @@ function navbarRight() {
     return container
 }
 
-function navbarSearchChild() {
-    var card = document.createElement('div')
-    card.id = 'global-result'
-    card.classList = 'layer-0-trans hidden-always'
-    return card
-}
+// function navbarSearchChild() {
+//     var card = document.createElement('div')
+//     card.id = 'global-result'
+//     card.classList = 'layer-0-trans hidden-always'
+//     return card
+// }
 
 
 function menuTray() {
