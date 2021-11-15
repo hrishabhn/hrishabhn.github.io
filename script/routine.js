@@ -125,7 +125,7 @@ function routineCookieLoad(i,j) {
 
 function routineModal(i) {
     var card = document.createElement('div')
-    card.classList = 'routine-modal layer-0'
+    card.classList = 'routine-modal layer-0-trans'
     card.append(routineTrayElement(i))
     return card
 }
@@ -254,7 +254,7 @@ function routineOtherButton(i) {
 
 
     var button = document.createElement('a')
-    button.classList = 'layer-1 clickable'
+    button.classList = 'layer-1-trans clickable'
     button.onclick = function() { openModal(routineModal(i)) }
     button.innerHTML = `
     <div class="icon">
