@@ -6,11 +6,11 @@
 }
 #navbar .side.left{
     justify-content: flex-start;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 #navbar .side.right{
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 #navbar .item{
     height: 40px;

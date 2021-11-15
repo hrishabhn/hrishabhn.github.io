@@ -108,9 +108,9 @@
 
 
 .page-width{
-    width: calc(100% - 360px);
+    width: calc(100% - 50px);
     /* margin-left: 200px; */
-    margin-right: 280px;
+    /* margin-right: 280px; */
 }
 
 /* .clickable{

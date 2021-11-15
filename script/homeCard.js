@@ -207,9 +207,7 @@ const homeCardData = [
 
 function homeCardTray(n) {
     var tray = hscrollHuluElement()
-    tray.append(spacerElement(100,'hidden-mobile'))
-    tray.append(spacerElement(100,'hidden-mobile'))
-    tray.append(spacerElement(20,'hidden-mobile'))
+    tray.append(spacerElement(25,'hidden-mobile'))
     tray.append(spacerElement(15,'only-mobile'))
 
     for (let i = 0; i < homeCardData[n].length; i++) {
@@ -217,10 +215,8 @@ function homeCardTray(n) {
         tray.append(spacerElement(15))
         // tray.append(spacerElement(5,'hidden-mobile'))
     }
-    tray.append(spacerElement(100,'hidden-mobile'))
-    tray.append(spacerElement(100,'hidden-mobile'))
-    tray.append(spacerElement(80,'hidden-mobile'))
-    tray.append(spacerElement(5,'hidden-mobile'))
+    tray.append(spacerElement(10,'hidden-mobile'))
+    // tray.append(spacerElement(5,'only-mobile'))
 
     return tray
 }
