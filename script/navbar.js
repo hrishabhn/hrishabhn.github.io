@@ -33,7 +33,7 @@ const baseElements = [
 
 function navbarLeft() {
     var container = document.createElement('div')
-    container.classList = 'side left'
+    container.classList = 'side left hidden-mobile'
 
     var searchContainer = document.createElement('div')
     searchContainer.classList = 'global-search-container'
@@ -75,7 +75,7 @@ function navbarLeft() {
 }
 function navbarRight() {
     var container = document.createElement('div')
-    container.classList = 'side right'
+    container.classList = 'side right hidden-mobile'
 
     var user = document.createElement('a')
     user.classList = 'user item clickable layer-2'
