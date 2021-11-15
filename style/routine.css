@@ -1,3 +1,23 @@
+.routine-modal{
+    border-radius: 10px;
+    padding-top: 12px;
+}
+.routine-modal .section-title{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: flex-start;
+    padding: 0 15px;
+
+    margin-bottom: 8px;
+}
+
+.routine-modal .tray{
+    flex-direction: column;
+    width: 300px;
+}
+
+
 /* #routine-container{
     flex-direction: column;
     border-radius: 10px;
@@ -153,3 +173,26 @@
 .routine-card.done .icon, .routine-card.done p{
     filter: brightness(0.5);
 } */
+
+
+.routine-other-container{
+    width: calc(100% - 30px);
+}
+.routine-other-container a{
+    padding: 10px 12px;
+    cursor: default;
+    border-radius: 8px;
+    justify-content: flex-start;
+
+    flex-basis: 80px;
+    flex-grow: 1;
+}
+.routine-other-container a p{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.routine-other-container a .icon{
+    height: 12px;
+    width: 12px;
+}

@@ -17,6 +17,14 @@ body{
     color: var(--dark-layer-1);
     fill: var(--dark-layer-1);
 }
+.layer-0-trans{
+    background-color: rgba(18, 18, 18, 0.6);
+    -webkit-backdrop-filter: blur(25px);
+}
+.layer-1-trans{
+    background-color: var(--white-05);
+}
+
 
 a{
     color: #fff;
@@ -45,6 +53,12 @@ a.layer-fg{
         background-color: var(--dark-layer-1);
         color: white;
         fill: white;
+    }
+    .layer-0-trans{
+        background-color: var(--light-layer-1-60);
+    }
+    .layer-1-trans{
+        background-color: var(--dark-layer-1-05);
     }
 
     a{

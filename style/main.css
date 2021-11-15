@@ -31,6 +31,7 @@
     --light-layer-1-30: rgba(242, 242, 247, 0.3);
     --light-layer-1-20: rgba(242, 242, 247, 0.2);
     --light-layer-1-10: rgba(242, 242, 247, 0.1);
+    --light-layer-1-05: rgba(242, 242, 247, 0.05);
 
     --dark-layer-1-90: rgba(28, 28, 30, 0.9);
     --dark-layer-1-80: rgba(28, 28, 30, 0.8);
@@ -41,6 +42,7 @@
     --dark-layer-1-30: rgba(28, 28, 30, 0.3);
     --dark-layer-1-20: rgba(28, 28, 30, 0.2);
     --dark-layer-1-10: rgba(28, 28, 30, 0.1);
+    --dark-layer-1-05: rgba(28, 28, 30, 0.05);
 
 
     --black-100: #000;
@@ -72,6 +74,9 @@
 
     --black-10: rgba(0, 0, 0, 0.1);
     --white-10: rgba(255, 255, 255, 0.1);
+
+    --black-05: rgba(0, 0, 0, 0.05);
+    --white-05: rgba(255, 255, 255, 0.05);
 
     --black-00: #00000000;
     --white-00: #ffffff00;
@@ -222,11 +227,6 @@ input{
     border-left: solid 1px #333;
 }
 
-.layer-0-trans{
-    background-color: #121212cc;
-    -webkit-backdrop-filter: blur(25px);
-}
-
 #main{
     position: fixed;
     top: 0px;
@@ -262,6 +262,9 @@ svg{
     width: 100%;
     flex-shrink: 0;
 }
+svg.stroke{
+    stroke: #fff;
+}
 
 @media screen and (prefers-color-scheme: light) {
     input{
@@ -275,9 +278,8 @@ svg{
     #rightbar{
         border-left: solid 1px #ccc;
     }
-    
-    .layer-0-trans{
-        background-color: var(--light-layer-1-80);
+    svg.stroke{
+        stroke: var(--dark-layer-1);
     }
 }
 

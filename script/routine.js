@@ -1,6 +1,7 @@
 const routineData = [
     {
-        greeting: 'Good morning.',
+        time: 'morning',
+        icon: '<svg class="stroke" xmlns="http://www.w3.org/2000/svg" viewBox="1 1 28 28"><path d="M15 8a7 7 0 1 0 0 14 7 7 0 1 0 0-14Z"/><path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M15 2v3m0 20v3m13-13h-3M5 15H2m22.192-9.192-2.121 2.121M7.929 22.071l-2.121 2.121m18.384 0-2.121-2.121M7.929 7.929 5.808 5.808"/></svg>',
         data: [
             {
                 name: 'Get Ready',
@@ -25,7 +26,8 @@ const routineData = [
         ],
     },
     {
-        greeting: 'Good night.',
+        time: 'night',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="3 0.73597693 25.01425171 25.01425171"><path d="M21.984375 2.4863281A1.0001 1.0001 0 0 0 21 3.5V4h-.5a1.0001 1.0001 0 1 0 0 2h.5v.5a1.0001 1.0001 0 1 0 2 0V6h.5a1.0001 1.0001 0 1 0 0-2H23v-.5a1.0001 1.0001 0 0 0-1.015625-1.0136719zM8.5136719 6.046875a1.0001 1.0001 0 0 0-.0800781.0039062C5.3980951 6.3391319 3 8.8892308 3 12c0 1.574112.6175159 3.00727 1.6171875 4.080078C3.6339019 16.899532 3 18.11811 3 19.5 3 21.985 5.015 24 7.5 24h15c2.485 0 4.5-2.015 4.5-4.5 0-1.965-1.268438-3.618422-3.023438-4.232422C23.853562 12.892578 21.906 11 19.5 11c-.486 0-.944812.096281-1.382812.238281C16.991187 9.3032812 14.9 8 12.5 8c-1.290021 0-2.488548.3801109-3.4980469 1.0292969C9.0018572 9.019295 9 9.0100264 9 9c0-.5241267.1462539-1.010175.4003906-1.4609375a1.0001 1.0001 0 0 0-.8867187-1.4921875zM25.984375 7.9863281A1.0001 1.0001 0 0 0 25 9a1.0001 1.0001 0 1 0 0 2 1.0001 1.0001 0 1 0 2 0 1.0001 1.0001 0 1 0 0-2 1.0001 1.0001 0 0 0-1.015625-1.0136719zm-18.8476562.5078125C7.1156199 8.674507 7 8.8132397 7 9c0 2.749516 2.2504839 5 5 5 .18676 0 .325493-.11562.505859-.136719C11.84329 15.131864 10.539523 16 9 16c-2.2203746 0-4-1.779625-4-4 0-1.539523.8681356-2.8432898 2.1367188-3.5058594z"/></svg>',
         data: [
             {
                 name: 'Dinner',
@@ -52,6 +54,11 @@ const routineData = [
                 color: 'red',
                 icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 4 22 22"><path d="M24 4H6a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM7 23a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm4 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm4 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm4 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm-1-5a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm5 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-5H6V6h18v4z"></path></svg>',
             },
+            {
+                name: 'Read',
+                color: 'orange',
+                icon: '<svg viewBox="0 -40 448 448" xmlns="http://www.w3.org/2000/svg"><path d="m408 319.929688v-319.929688l-12.207031 1.023438c-48.957031 4.046874-96.976563 15.75-142.304688 34.6875l-21.488281 8.921874v318.664063l15.648438-6.503906c46.90625-19.515625 96.570312-31.589844 147.199218-35.792969zm0 0"></path><path d="m448 47.296875h-24v280c.015625 4.171875-3.183594 7.65625-7.34375 8l-20.488281 1.679687c-5.914063.488282-11.8125 1.09375-17.6875 1.816407-1.90625.230469-3.800781.535156-5.695313.800781-3.960937.527344-7.914062 1.0625-11.855468 1.6875-2.296876.367188-4.578126.796875-6.867188 1.199219-3.527344.617187-7.0625 1.230469-10.582031 1.925781-2.402344.480469-4.800781 1.019531-7.25 1.539062-3.351563.710938-6.703125 1.4375-10.03125 2.230469-2.496094.59375-4.984375 1.222657-7.464844 1.855469-3.238281.800781-6.460937 1.664062-9.679687 2.5625-2.503907.6875-5.007813 1.414062-7.503907 2.148438-3.199219.945312-6.351562 1.90625-9.511719 2.914062-2.472656.800781-4.949218 1.601562-7.414062 2.398438-3.164062 1.066406-6.3125 2.167968-9.449219 3.304687-2.398437.871094-4.800781 1.746094-7.253906 2.664063-1.097656.417968-2.1875.863281-3.28125 1.289062h183.359375zm0 0"></path><path d="m52.207031 1.023438-12.207031-1.023438v319.953125l14.199219 1.207031c50.597656 4.230469 100.21875 16.378906 147.046875 36l14.753906 6.136719v-318.664063l-21.464844-8.914062c-45.332031-18.941406-93.359375-30.648438-142.328125-34.695312zm0 0"></path><path d="m0 47.296875v320h183.488281c-.984375-.386719-1.96875-.800781-2.960937-1.167969-2.289063-.871094-4.597656-1.703125-6.902344-2.542968-3.25-1.179688-6.496094-2.328126-9.769531-3.425782-2.367188-.800781-4.742188-1.578125-7.121094-2.335937-3.246094-1.066407-6.503906-2.070313-9.765625-3.007813-2.402344-.703125-4.800781-1.410156-7.199219-2.082031-3.289062-.910156-6.585937-1.773437-9.890625-2.621094-2.398437-.617187-4.800781-1.234375-7.253906-1.808593-3.351562-.800782-6.722656-1.535157-10.089844-2.257813-2.398437-.519531-4.800781-1.046875-7.199218-1.527344-3.488282-.6875-6.992188-1.304687-10.496094-1.917969-2.296875-.402343-4.59375-.800781-6.894532-1.210937-3.867187-.613281-7.746093-1.132813-11.625-1.65625-1.960937-.261719-3.90625-.574219-5.863281-.796875-5.867187-.710938-11.734375-1.316406-17.601562-1.816406l-21.535157-1.824219c-4.152343-.355469-7.335937-3.835937-7.320312-8v-280zm0 0"></path></svg>',
+            },
         ],
     },
 ]
@@ -61,14 +68,21 @@ function routineLoad() {
 
     if ((time == 2) || (time == 3)) {
         var n = 0
-    } else if ((time == 5) || (time == 6) || (time == 7) || (time == 0)) {
+    } else if ((time == 6) || (time == 7) || (time == 0)) {
         var n = 1
     }
 
     if (n + 1) {
         return routineTrayElement(n)
     } else {
-        return document.createElement('div')
+
+        var tray = document.createElement('div')
+        tray.classList = 'tray'
+        tray.append(rightbarTitleElement('Routines'))
+        tray.append(routineOtherContainer(null))
+        tray.append(spacerElement(15))
+
+        return tray
     }
 
 }
@@ -109,10 +123,17 @@ function routineCookieLoad(i,j) {
     }
 }
 
+function routineModal(i) {
+    var card = document.createElement('div')
+    card.classList = 'routine-modal layer-0'
+    card.append(routineTrayElement(i))
+    return card
+}
+
 function routineTrayElement(i) {
     var tray = document.createElement('div')
     tray.classList = 'tray'
-    tray.append(rightbarTitleElement(routineData[i].greeting))
+    tray.append(rightbarTitleElement(`Good ${routineData[i].time}.`))
     
     for (let j = 0; j < routineData[i].data.length; j++) {
         routineCookieLoad(i,j)
@@ -120,12 +141,17 @@ function routineTrayElement(i) {
         tray.append(spacerElement(10))
     }
 
+    tray.append(routineOtherContainer(i))
+    tray.append(spacerElement(15))
+
+
+
     return tray
 }
 
 function routineCardElement(i,j) {
     var item = document.createElement('div')
-    item.classList = 'routine-card layer-2'
+    item.classList = 'routine-card layer-1-trans'
     item.id = `routine-${i}-${j}`
     if (JSON.parse(getCookie(`routine-${i}-${j}`))[6].done) {
         item.classList.add('today-done')
@@ -191,6 +217,61 @@ function routineItemDaysElement(i,j) {
     return container
 }
 
+function routineOtherContainer(i) {
+    var container = document.createElement('div')
+    container.classList = 'routine-other-container'
+
+    if (i == 0) {
+        container.append(routineOtherButton(1))
+    } else if (i == 1) {
+        container.append(routineOtherButton(0))
+    } else {
+        container.append(routineOtherButton(0))
+        container.append(spacerElement(10))
+        container.append(routineOtherButton(1))
+    }
+
+
+    // `<div class="routine-other-container">
+    //     <a class="layer-1 clickable">
+    //         <div class="icon">
+    //             <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 1 28 28"><path d="M15 8a7 7 0 1 0 0 14 7 7 0 1 0 0-14Z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M15 2v3m0 20v3m13-13h-3M5 15H2m22.192-9.192-2.121 2.121M7.929 22.071l-2.121 2.121m18.384 0-2.121-2.121M7.929 7.929 5.808 5.808"/></svg>
+    //         </div>
+    //         <div class="spacer-x" style="--size: 5px;"></div>
+    //         <p>Morning</p>
+    //     </a>
+    //     <div class="spacer-x" style="--size: 5px;"></div>
+    //     <a class="layer-1 clickable">
+    //         <p>Night</p>
+    //     </a>
+    // </div>`
+
+
+    return container
+}
+
+function routineOtherButton(i) {
+
+
+    var button = document.createElement('a')
+    button.classList = 'layer-1 clickable'
+    button.onclick = function() { openModal(routineModal(i)) }
+    button.innerHTML = `
+    <div class="icon">
+        ${routineData[i].icon}
+    </div>
+    <div class="spacer-x" style="--size: 5px;"></div>
+    <p>${routineData[i].time}</p>
+    
+    
+    `
+
+
+
+    return button
+}
+
+
 function toggleDay(i,j,k) {
     const complete = JSON.parse(getCookie(`routine-${i}-${j}`))[k].done
     const audio = new Audio('audio/complete.m4a')
@@ -221,28 +302,31 @@ function toggleCookie(i,j,k) {
 
 function calcStreak(i,j) {
     const cookieData = JSON.parse(getCookie(`routine-${i}-${j}`))
+    // console.log(cookieData)
 
-    var streak
+    var streak = 0
 
     for (let k = 0; k < cookieData.length; k++) {
         const item = cookieData[k]
+        console.log(item.done)
         if (item.done) {
             streak++ 
         } else {
-            if (!(k == cookieData.length - 1)) {
-                streak = 0
-            }
+            streak = 0
+            // if (!(k == cookieData.length - 1)) {
+            //     streak = 0
+            // }
         }
     }
 
     if (streak) {
-        return `${streak} day streak`
+        if (streak == 7) {
+            return `7 day streak. Keep it up!`
+        }
+        return `${streak} day streak.`
     } else {
         return 'No streak, keep trying!'
     }
-
-    console.log(streak)
-    return 'streak'
 }
 
 // function routineTest() {
