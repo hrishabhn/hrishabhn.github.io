@@ -329,7 +329,8 @@ svg.stroke{
         font-weight: 700;
     }
     #navbar{
-        flex-direction: row;
+        top: auto;
+        bottom: 0;
         height: 90px;
         width: 100%;
         padding: 0px;
@@ -372,6 +373,7 @@ svg.stroke{
     }
 
     .page{
+        padding-top: 0;
         padding-bottom: 90px;
     }
 
