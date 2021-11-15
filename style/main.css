@@ -193,21 +193,22 @@ input{
     padding: 8px;
     border-radius: 10px;
 }
-#leftbar{
+#navbar{
     position: fixed;
-    bottom: 0px;
+    top: 0px;
     left: 0px ;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    /* justify-content: flex-start; */
 
-    height: 100%;
-    width: 200px;
-    padding: 70px 20px 0;
+    height: 60px;
+    width: 100%;
+    /* padding: 70px 20px 0; */
     /* padding-top: 70px; */
     /* padding-left: 20px; */
-    z-index: 1;
-    overflow-y: scroll;
-    border-right: solid 1px #333;
+    z-index: 1000;
+    /* overflow-y: scroll; */
+    /* border-bottom: solid 1px #333; */
+    box-shadow: 0 0 30px #00000033;
 }
 
 #rightbar{
@@ -234,6 +235,7 @@ input{
 
     height: calc(100% - 0px);
     width: calc(100% - 0px);
+    /* padding-top: 60px; */
     /* border-radius: 10px; */
     /* background-color: red; */
 }
@@ -242,7 +244,7 @@ input{
     position: absolute;
     top: 0px;
     left: 0px;
-    /* padding-top: 10px; */
+    padding-top: 60px;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
@@ -271,8 +273,10 @@ svg.stroke{
         color: var(--dark-layer-1);
         fill: var(--dark-layer-1);
     }
-    #leftbar{
+    #navbar{
         border-right: solid 1px #ccc;
+        box-shadow: 0 0 30px #00000022;
+
     }
     
     #rightbar{
@@ -324,7 +328,7 @@ svg.stroke{
         font-size: 30px;
         font-weight: 700;
     }
-    #leftbar{
+    #navbar{
         flex-direction: row;
         height: 90px;
         width: 100%;
@@ -377,7 +381,7 @@ svg.stroke{
             border-block-color: var(--black-10);
             background-color: var(--light-layer-1-50);
         }
-        #leftbar{
+        #navbar{
             background-color: var(--light-layer-1-60);
         }
     }

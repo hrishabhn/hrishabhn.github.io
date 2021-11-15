@@ -154,7 +154,7 @@
 }
 .hscroll-hulu .snap{
     scroll-snap-align: start;
-    scroll-margin-left: 220px;
+    scroll-margin-left: 40px;
 }
 
 .hulu-card{

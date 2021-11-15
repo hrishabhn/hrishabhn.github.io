@@ -11,6 +11,7 @@ function loadApp() {
     // tvPopupShow(0,0)
     // testTV()
     calTest()
+    // spotlightShow()
 }
 
 function openFirstPage(n) {
@@ -33,24 +34,21 @@ function openFirstPage(n) {
 
 const body = document.getElementById('body')
 
-const baseElements = [
-    {
-        id: 'leftbar',
-        render: function() {
-            const element = document.getElementById(this.id)
+document.addEventListener('keyup',keyUp)
+document.addEventListener('keydown',keyDown)
 
-            var time = document.createElement('div')
-            time.classList = 'time hidden-mobile'
-            time.innerHTML = processTime(new Date())
-
-            var date = document.createElement('div')
-            date.classList = 'date hidden-mobile'
-            date.innerHTML = `${processDay(dateNow().day,'long')}, ${dateNow().date} ${processMonth(dateNow().month,'long')}`
-
-            // console.log(processDay(dateNow().day,'long'))
-
-            element.append(time)
-            element.append(date)
-        },
+function keyUp(e) {
+    if (e.key == '/') {
+        // document.getElementById('global-search').focus()
+        spotlightShow()
+        document.getElementById('spotlight-search').focus()
     }
-]
+}
+
+function keyDown(e) {
+    if (e.keyCode == 27) {
+        e.preventDefault()
+        spotlightHide()
+        document.getElementById('spotlight-search').blur()
+    }
+}

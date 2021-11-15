@@ -108,8 +108,8 @@
 
 
 .page-width{
-    width: calc(100% - 520px);
-    margin-left: 200px;
+    width: calc(100% - 360px);
+    /* margin-left: 200px; */
     margin-right: 280px;
 }
 
