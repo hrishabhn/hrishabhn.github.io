@@ -167,7 +167,7 @@ function routineCardElement(i,j) {
             <p class="subtext">${calcStreak(i,j)}</p>
         </div>
         <div class="grow"></div>
-        <div id="routine-${i}-${j}-icon" class="icon ${routineData[i].data[j].color}">
+        <div id="routine-${i}-${j}-icon" class="icon ${routineData[i].data[j].color} clickable" onclick="toggleCookie(${i},${j},6); toggleDay(${i},${j},6)">
             ${routineData[i].data[j].icon}
         </div>
         <div class="check layer-fg card-shadow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="65.19 65.191 174.621 174.621" style="enable-background:new 0 0 305.002 305.002" xml:space="preserve"><path d="m218.473 93.97-90.546 90.547-41.398-41.398c-4.882-4.881-12.796-4.881-17.678 0-4.881 4.882-4.881 12.796 0 17.678l50.237 50.237a12.465 12.465 0 0 0 8.839 3.661c3.199 0 6.398-1.221 8.839-3.661l99.385-99.385c4.881-4.882 4.881-12.796 0-17.678-4.882-4.882-12.797-4.882-17.678-.001z"/></svg></div>
@@ -275,7 +275,7 @@ function routineOtherButton(i) {
 function toggleDay(i,j,k) {
     const complete = JSON.parse(getCookie(`routine-${i}-${j}`))[k].done
     const audio = new Audio('audio/complete.m4a')
-    console.log(complete)
+    // console.log(complete)
 
     var dayNum = document.getElementById(`routine-${i}-${j}-${k}`).childNodes[5]
     if (complete) {
@@ -308,7 +308,7 @@ function calcStreak(i,j) {
 
     for (let k = 0; k < cookieData.length; k++) {
         const item = cookieData[k]
-        console.log(item.done)
+        // console.log(item.done)
         if (item.done) {
             streak++ 
         } else {
