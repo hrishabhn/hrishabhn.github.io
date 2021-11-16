@@ -81,7 +81,7 @@ function spotlightSearch(e) {
                     var subtray = document.createElement('div')
                     subtray.classList = 'subtray vstack fill-width'
         
-                    for (let j = 0; ((j < results[i].results.length) && (j < 5)); j++) {
+                    for (let j = 0; ((j < results[i].results.length) && (j < 10)); j++) {
                         var result = results[i].results[j]
                         result.id = `result-${n}`
         

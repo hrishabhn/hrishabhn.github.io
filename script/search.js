@@ -500,6 +500,10 @@ function globalSearchEngine(query) {
             name: 'Walmart',
             link: `https://www.walmart.com/search?q=`
         },
+        {
+            name: 'Reddit',
+            link: `http://www.google.com/search?q=site:reddit.com%20`
+        },
     ]
 
     var results = []
@@ -562,10 +566,12 @@ function globalSearchEngine(query) {
             info.append(text)
     
             container.append(info)
+
             
             results.push(container)
         }
     }
+    console.log(results)
 
 
 
