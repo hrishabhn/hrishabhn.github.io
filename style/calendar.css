@@ -1,6 +1,6 @@
 .calendar-event{
     align-items: flex-start;
-    width: calc(100% - 30px);
+    width: calc(100% - 40px);
     /* border-radius: 5px; */
     overflow: hidden;
     scroll-snap-align: start;

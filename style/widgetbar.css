@@ -18,7 +18,7 @@
 
 
 #widgetbar .tray .homecard{
-    width: calc(100% - 30px);
+    width: calc(100% - 40px);
     max-width: initial;
     border-radius: 5px;
 }
