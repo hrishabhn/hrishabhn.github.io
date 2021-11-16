@@ -30,6 +30,14 @@ function secureModal(modalElement) {
     }
 }
 
+function secureSearch(results) {
+    if (checkPass()) {
+        return results
+    } else {
+        return []
+    }
+}
+
 function needPassCard() {
     var card = document.createElement('div')
     card.classList = 'login-card denied layer-1 card-shadow'

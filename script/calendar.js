@@ -28,6 +28,7 @@ function calendarTrayRender(eventData) {
     for (let i = 1; i < totalEvents + 1; i++) {
         tray.append(calendarEventRender(i))
     }
+    tray.append(spacerElement(15))
 
     return tray
 }

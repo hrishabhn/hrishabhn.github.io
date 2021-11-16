@@ -7,19 +7,19 @@ function globalSearchResults(query) {
         },
         {
             name: 'Notion',
-            results: globalSearchNotion(query),
+            results: secureSearch(globalSearchNotion(query)),
         },
         {
             name: 'Trips',
-            results: globalSearchTrip(query),
+            results: secureSearch(globalSearchTrip(query)),
         },
         {
             name: 'Flights',
-            results: globalSearchFlight(query),
+            results: secureSearch(globalSearchFlight(query)),
         },
         {
             name: 'Buses',
-            results: globalSearchBus(query),
+            results: secureSearch(globalSearchBus(query)),
         },
         {
             name: 'TV & Movies',

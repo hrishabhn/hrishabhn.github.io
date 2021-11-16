@@ -31,6 +31,9 @@ const widgetbarContent = [
             return secureElement(calendarTrayRender())
         }
     },
+    {
+        render: function() { return secureElement(widgetBarFlightTray()) }
+    },
 ]
 
 function widgetbarTitleElement(text) {
@@ -38,4 +41,18 @@ function widgetbarTitleElement(text) {
     title.classList = 'section-title'
     title.innerHTML = text
     return title
+}
+
+function widgetBarFlightTray() {
+    var tray = document.createElement('div')
+    tray.classList = 'tray'
+    tray.append(widgetbarTitleElement('Travel'))
+
+    tray.append(homeCardFlight({type: 'bus', n: 0}))
+    tray.append(spacerElement(10))
+    tray.append(homeCardFlight({type: 'flight', n: 0}))
+    tray.append(spacerElement(10))
+    tray.append(homeCardFlight({type: 'flight', n: 1}))
+
+    return tray
 }
