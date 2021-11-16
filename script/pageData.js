@@ -428,13 +428,13 @@ const pageData4 = {
         },
         {
             render: function() {
-                return mediaTitleElement('Weekly')
+                return mediaTitleElement('My list')
             },
         },
         {
             type: 'tv-med',
             render: function() {
-                return tvMidTray(1)
+                return tvHuluTray(1)
             }
         },
         {
@@ -444,7 +444,7 @@ const pageData4 = {
         },
         {
             render: function() {
-                return mediaTitleElement('My List')
+                return mediaTitleElement('Recent')
             },
         },
         {
