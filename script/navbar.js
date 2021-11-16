@@ -92,10 +92,25 @@ function navbarRight() {
     var container = document.createElement('div')
     container.classList = 'side right'
 
+    var temp = document.createElement('a')
+    temp.classList = 'temp item clickable layer-2'
+    temp.id = 'temp'
+    temp.innerHTML = '48&#0176'
+    container.append(temp)
+
+    // var temp = document.createElement('a')
+    // temp.classList = 'temp item clickable layer-2'
+    // temp.id = 'temp'
+    // temp.innerHTML = '48&#0176'
+    // container.append(temp)
+
+    container.append(spacerElement(10))
+
     var user = document.createElement('a')
     user.classList = 'user item clickable layer-2'
     user.innerHTML = 'HN'
     container.append(user)
+
 
     return container
 }

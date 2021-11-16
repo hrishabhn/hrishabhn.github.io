@@ -12,6 +12,8 @@ function loadApp() {
     // testTV()
     calTest()
     // spotlightShow()
+
+    weatherPopulate()
 }
 
 function openFirstPage(n) {
