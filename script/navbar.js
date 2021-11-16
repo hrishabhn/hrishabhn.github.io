@@ -92,17 +92,23 @@ function navbarRight() {
     var container = document.createElement('div')
     container.classList = 'side right'
 
-    var temp = document.createElement('a')
-    temp.classList = 'temp item clickable layer-2'
-    temp.id = 'temp'
-    temp.innerHTML = '48&#0176'
-    container.append(temp)
+    var weather = document.createElement('a')
+    weather.classList = 'weather item clickable layer-2'
+    
+    var icon = document.createElement('div')
+    icon.id = 'temp-icon'
+    icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 26 26"><path d="M17.5 3c-2.4 0-4.491188 1.3032813-5.617188 3.2382812C11.444813 6.0962813 10.986 6 10.5 6c-2.33 0-4.222125 1.777875-4.453125 4.046875C3.777875 10.277875 2 12.17 2 14.5 2 16.985 4.015 19 6.5 19h17c2.485 0 4.5-2.015 4.5-4.5 0-2.323-1.767344-4.212172-4.027344-4.451172C23.987656 9.8678281 24 9.685 24 9.5 24 5.91 21.09 3 17.5 3zM7.984375 20.986328A1.0001 1.0001 0 0 0 7 22v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672zm10 0A1.0001 1.0001 0 0 0 17 22v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672zm-5 2A1.0001 1.0001 0 0 0 12 24v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672zm10 0A1.0001 1.0001 0 0 0 22 24v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672z"></path></svg>'
+    weather.append(icon)
+    
+    weather.append(spacerElement(8))
 
-    // var temp = document.createElement('a')
-    // temp.classList = 'temp item clickable layer-2'
-    // temp.id = 'temp'
-    // temp.innerHTML = '48&#0176'
-    // container.append(temp)
+    var temp = document.createElement('p')
+    temp.id = 'temp'
+    temp.innerHTML = '-&#0176'
+    weather.append(temp)
+
+
+    container.append(weather)
 
     container.append(spacerElement(10))
 

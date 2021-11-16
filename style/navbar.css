@@ -28,6 +28,17 @@
     font-weight: 500;
     font-family: ui-rounded;
 }
+#navbar .item.weather{
+    padding: 0 10px;
+}
+#navbar .item #temp{
+    font-size: 18px;
+    font-weight: 300;
+}
+#navbar .item #temp-icon{
+    height: 14px;
+    width: 14px;
+}
 
 .global-search-container{
     height: 40px;
