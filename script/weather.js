@@ -19,7 +19,7 @@ async function weatherPop(input) {
     
     const temp = data.main.temp
     const icon = weatherIcon(data.weather[0].icon)
-    console.log(icon)
+    // console.log(icon)
 
     document.getElementById('temp').innerHTML = `${Math.round(temp)}&#0176`
 }
@@ -29,7 +29,7 @@ function weatherIcon(code) {
 
 
 
-    console.log(code)
+    // console.log(code)
     
 
 
