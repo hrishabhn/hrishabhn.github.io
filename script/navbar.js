@@ -107,8 +107,23 @@ function navbarRight() {
     temp.innerHTML = '-&#0176'
     weather.append(temp)
 
-
     container.append(weather)
+
+    container.append(spacerElement(10))
+
+    var focusContainer = document.createElement('div')
+    
+    var focus = document.createElement('a')
+    focus.classList = 'focus item clickable layer-2'
+    focus.innerHTML = currentFocus().icon
+    focus.onclick = function() { focusMenuToggle() }
+
+    focusContainer.append(focus)
+    focusContainer.append(focusMenuElement())
+
+
+    container.append(focusContainer)
+
 
     container.append(spacerElement(10))
 
