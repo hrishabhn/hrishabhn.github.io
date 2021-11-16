@@ -56,6 +56,52 @@
 // arrested dev
 
 const movieData0 = [
+    // {
+    //     name: 'Title',
+    //     id: 'identifier',
+    //     link: {
+    //         netflix: '80197526'
+    //     },
+    //     info: {
+    //         service: 'service',
+    //         // studio: 'studio',
+    //         location: 'location',
+    //         // date: '',
+    //         // weekday: '',
+    //         desc: {
+    //             seasons: 1,
+    //             year: 2021,
+    //             yearStart: 2021,
+    //             yearEnd: null,
+    //             genre: [
+    //                 'crime',
+    //                 'comedy',
+    //             ],
+    //         },
+    //         summary: "summary",
+    //     },
+    //     style: {
+    //         color: '000000',
+    //         posterType: 'jpg',
+    //         titleType: 'png',
+    //         titleSize: 'wide',
+    //         mobileType: 'jpg',
+    //         mobileSize: '7 / 10',
+    //     },
+    //     apps: {
+    //         // tvTimeID: 'identifier',
+    //         // reelgoodLink: 'link',
+    //         // imdbID: 'identifier',
+    //         // subReddit: 'subreddit',
+    //     },
+    //     // cast: [
+    //     //     {
+    //     //         actor: 'name',
+    //     //         image: 'url',
+    //     //         char: 'name',
+    //     //     },
+    //     // ],
+    // },
     {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
@@ -499,6 +545,74 @@ const movieData1 = [
                 char: 'Vander',
             },
         ],
+    },
+    {
+        name: 'Chernobyl',
+        id: 'chernobyl',
+        link: 'https://www.hulu.com/series/chernobyl-849bed9a-2da8-484b-8cdf-d7000090fc5d',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'Hulu',
+            desc: {
+                seasons: 1,
+                year: 2019,
+                genre: [
+                    'drama',
+                    'history',
+                    'thriller',
+                ],
+            },
+            summary: "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+        },
+        style: {
+            color: '86a097',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '360893',
+            reelgoodLink: 'https://reelgood.com/show/chernobyl-2019',
+            imdbID: 'tt7366338',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'The Sopranos',
+        id: 'sopranos',
+        link: 'https://www.hulu.com/series/the-sopranos-4e03024d-2f23-423a-934c-23adf1e62fe9',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'Hulu',
+            desc: {
+                seasons: 6,
+                yearStart: 1999,
+                yearEnd: 2007,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "James Gandolfini stars in this acclaimed series about a mob boss whose professional and private strains land him in therapy.",
+        },
+        style: {
+            color: '443a3c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '75299',
+            reelgoodLink: 'https://reelgood.com/show/the-sopranos-1999',
+            imdbID: 'tt0141842',
+            subReddit: 'thesopranos',
+        },
     },
 ]
 const movieData2 = [
@@ -1001,74 +1115,6 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
-    {
-        name: 'Chernobyl',
-        id: 'chernobyl',
-        link: 'https://www.hulu.com/series/chernobyl-849bed9a-2da8-484b-8cdf-d7000090fc5d',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
-            desc: {
-                seasons: 1,
-                year: 2019,
-                genre: [
-                    'drama',
-                    'history',
-                    'thriller',
-                ],
-            },
-            summary: "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
-        },
-        style: {
-            color: '86a097',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '360893',
-            reelgoodLink: 'https://reelgood.com/show/chernobyl-2019',
-            imdbID: 'tt7366338',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'The Sopranos',
-        id: 'sopranos',
-        link: 'https://www.hulu.com/series/the-sopranos-4e03024d-2f23-423a-934c-23adf1e62fe9',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
-            desc: {
-                seasons: 6,
-                yearStart: 1999,
-                yearEnd: 2007,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "James Gandolfini stars in this acclaimed series about a mob boss whose professional and private strains land him in therapy.",
-        },
-        style: {
-            color: '443a3c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '75299',
-            reelgoodLink: 'https://reelgood.com/show/the-sopranos-1999',
-            imdbID: 'tt0141842',
-            subReddit: 'thesopranos',
-        },
-    },
     {
         name: 'Maid',
         id: 'maid',
