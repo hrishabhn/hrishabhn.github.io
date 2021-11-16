@@ -56,52 +56,42 @@
 // arrested dev
 
 const movieData0 = [
-    // {
-    //     name: 'Title',
-    //     id: 'identifier',
-    //     link: {
-    //         netflix: '80197526'
-    //     },
-    //     info: {
-    //         service: 'service',
-    //         // studio: 'studio',
-    //         location: 'location',
-    //         // date: '',
-    //         // weekday: '',
-    //         desc: {
-    //             seasons: 1,
-    //             year: 2021,
-    //             yearStart: 2021,
-    //             yearEnd: null,
-    //             genre: [
-    //                 'crime',
-    //                 'comedy',
-    //             ],
-    //         },
-    //         summary: "summary",
-    //     },
-    //     style: {
-    //         color: '000000',
-    //         posterType: 'jpg',
-    //         titleType: 'png',
-    //         titleSize: 'wide',
-    //         mobileType: 'jpg',
-    //         mobileSize: '7 / 10',
-    //     },
-    //     apps: {
-    //         // tvTimeID: 'identifier',
-    //         // reelgoodLink: 'link',
-    //         // imdbID: 'identifier',
-    //         // subReddit: 'subreddit',
-    //     },
-    //     // cast: [
-    //     //     {
-    //     //         actor: 'name',
-    //     //         image: 'url',
-    //     //         char: 'name',
-    //     //     },
-    //     // ],
-    // },
+    {
+        name: 'Narcos: Mexico',
+        id: 'narcos',
+        link: {
+            netflix: '80997085'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: 2021,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '353232',
+            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
+            imdbID: 'tt8714904',
+            // subReddit: null,
+        },
+    },
     {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
@@ -168,42 +158,6 @@ const movieData0 = [
                 char: 'Leon Black',
             },
         ],
-    },
-    {
-        name: 'Narcos: Mexico',
-        id: 'narcos',
-        link: {
-            netflix: '80997085'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: 2021,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '353232',
-            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
-            imdbID: 'tt8714904',
-            // subReddit: null,
-        },
     },
     {
         name: 'Cowboy Bebop',
@@ -613,6 +567,90 @@ const movieData1 = [
             imdbID: 'tt0141842',
             subReddit: 'thesopranos',
         },
+    },
+    {
+        name: 'Fleabag',
+        id: 'fleabag',
+        link: {
+            primeVideo: 'B0875QQMD2'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            desc: {
+                seasons: 2,
+                yearStart: 2016,
+                yearEnd: 2019,
+                genre: [
+                    'comedy',
+                    'drama',
+                ],
+            },
+            summary: "Fleabag is a hilarious and poignant window into the mind of a dry-witted, sexual, angry, grief-riddled woman, as she hurls herself at modern living in London. Award-winning playwright Phoebe Waller-Bridge writes and stars as Fleabag, an unfiltered woman trying to heal, while rejecting anyone who tries to help her and keeping up her bravado all along.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '9 / 10',
+        },
+        apps: {
+            // tvTimeID: '',
+            reelgoodLink: 'https://reelgood.com/show/fleabag-2016',
+            imdbID: 'tt5687612',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
+    {
+        name: 'Final Space',
+        id: 'finalSpace',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXbJCBwcZGnepwwEAAAhh:type:series',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: 2021,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "An astronaut named Gary and his planet-destroying sidekick Mooncake embark on serialized journeys through space in order to unlock the mystery of “Final Space,” the last point in the universe, if it actually does exist.",
+        },
+        style: {
+            color: '0b276d',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'jpg',
+            mobileSize: '10 / 9.2',
+        },
+        apps: {
+            tvTimeID: '332353',
+            reelgoodLink: 'https://reelgood.com/show/final-space',
+            imdbID: 'tt6317068',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
     },
 ]
 const movieData2 = [
