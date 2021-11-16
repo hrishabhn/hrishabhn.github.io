@@ -651,82 +651,6 @@ const movieData2 = [
         },
     },
     {
-        name: 'Memories of the Alhambra',
-        id: 'memories',
-        link: {
-            netflix: '81004280'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2018,
-                yearEnd: 2019,
-                genre: [
-                    'romance',
-                    'sci-fi',
-                ],
-            },
-            summary: "A frantic young man is running scared in Barcelona. CEO Yoo Jin-woo heads to Granada on a quest after getting a strange call while on business in Spain.",
-        },
-        style: {
-            color: 'a6886c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '1000 / 973',
-        },
-        apps: {
-            tvTimeID: '348488',
-            reelgoodLink: 'https://reelgood.com/show/memories-of-the-alhambra-2018',
-            imdbID: 'tt8236556',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Midnight Mass',
-        id: 'midnight',
-        link: {
-            netflix: '81083626'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'horror',
-                ],
-            },
-            summary: "The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.",
-        },
-        style: {
-            color: '3c2e2c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '367226',
-            reelgoodLink: 'https://reelgood.com/show/midnight-mass',
-            imdbID: 'tt10574558',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Family Guy',
         id: 'family',
         link: 'https://www.hulu.com/series/family-guy-3c3c0f8b-7366-4d15-88ab-18050285978e',
@@ -827,167 +751,6 @@ const movieData2 = [
             reelgoodLink: 'https://reelgood.com/show/the-simpsons-1989',
             imdbID: 'tt0096697',
             // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Superstore',
-        id: 'superstore',
-        link: 'https://www.hulu.com/series/superstore-727810b8-e54b-4f01-9381-a79ab5661bf7',
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: 2021,
-                genre: [
-                    'comedy',
-                ],
-            },
-            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
-        },
-        style: {
-            color: '0070DB',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '295648',
-            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
-            imdbID: 'tt4477976',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: "What If?",
-        id: "whatif",
-        link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
-        info: {
-            service: 'disney',
-            studio: 'disney',
-            location: "Disney+",
-            description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
-            summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
-        },
-        style: {
-            color: '0F0F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "367147",
-            reelgoodLink: "https://reelgood.com/show/what-if-2021",
-            imdbID: "tt10168312",
-            subReddit: 'MarvelsWhatIf',
-        },
-    },
-    {
-        name: "Sex Education",
-        id: "edu",
-        link: {
-            netflix: '80197526'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: "Netflix",
-            description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
-            summary: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
-        },
-        style: {
-            color: '6d6256',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: "356317",
-            reelgoodLink: "https://reelgood.com/show/sex-education-2019",
-            imdbID: "tt7767422",
-            subReddit: "NetflixSexEducation",
-        },
-    },
-    {
-        name: "Jojo's Bizzare Adventures",
-        id: "jojo",
-        link: {
-            netflix: '80179831'
-        },
-        info: {
-            service: 'netflix',
-            // studio: '',
-            location: "Netflix",
-            description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
-            summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
-        },
-        style: {
-            color: '2C2850',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "tall",
-        },
-        apps: {
-            tvTimeID: "262954",
-            // tvTimeRate: "9.74",
-            reelgoodLink: "https://reelgood.com/show/jojos-bizarre-adventure-2012",
-            // reelgoodRate: "72",
-            imdbID: "tt2359704",
-            // imdbRate: "8.4",
-        },
-    },
-    {
-        name: "Money Heist",
-        id: "money",
-        link: {
-            netflix: '80192098'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: "Netflix",
-            description: "Action &#149 Crime &#149 Mystery &#149 3 Seasons &#149 2017 - Present",
-            summary: "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
-        },
-        style: {
-            color: '3f1513',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '10 / 9',
-        },
-        apps: {
-            tvTimeID: "327417",
-            reelgoodLink: "https://reelgood.com/show/money-heist-2017",
-            imdbID: "tt6468322",
-        },
-    },
-    {
-        name: "Dave",
-        id: "dave",
-        link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
-            summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
-        },
-        style: {
-            color: '889898',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "354905",
-            reelgoodLink: "https://reelgood.com/show/dave-2020",
-            imdbID: "tt8531222",
         },
     },
 ]
@@ -1744,6 +1507,210 @@ const movieData4 = [
     },
 ]
 const movieData5 = [
+    {
+        name: 'Memories of the Alhambra',
+        id: 'memories',
+        link: {
+            netflix: '81004280'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2018,
+                yearEnd: 2019,
+                genre: [
+                    'romance',
+                    'sci-fi',
+                ],
+            },
+            summary: "A frantic young man is running scared in Barcelona. CEO Yoo Jin-woo heads to Granada on a quest after getting a strange call while on business in Spain.",
+        },
+        style: {
+            color: 'a6886c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '1000 / 973',
+        },
+        apps: {
+            tvTimeID: '348488',
+            reelgoodLink: 'https://reelgood.com/show/memories-of-the-alhambra-2018',
+            imdbID: 'tt8236556',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Midnight Mass',
+        id: 'midnight',
+        link: {
+            netflix: '81083626'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'horror',
+                ],
+            },
+            summary: "The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.",
+        },
+        style: {
+            color: '3c2e2c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '367226',
+            reelgoodLink: 'https://reelgood.com/show/midnight-mass',
+            imdbID: 'tt10574558',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: "What If?",
+        id: "whatif",
+        link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
+        info: {
+            service: 'disney',
+            studio: 'disney',
+            location: "Disney+",
+            description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
+            summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
+        },
+        style: {
+            color: '0F0F38',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "367147",
+            reelgoodLink: "https://reelgood.com/show/what-if-2021",
+            imdbID: "tt10168312",
+            subReddit: 'MarvelsWhatIf',
+        },
+    },
+    {
+        name: "Sex Education",
+        id: "edu",
+        link: {
+            netflix: '80197526'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: "Netflix",
+            description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
+            summary: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
+        },
+        style: {
+            color: '6d6256',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: "356317",
+            reelgoodLink: "https://reelgood.com/show/sex-education-2019",
+            imdbID: "tt7767422",
+            subReddit: "NetflixSexEducation",
+        },
+    },
+    {
+        name: "Jojo's Bizzare Adventures",
+        id: "jojo",
+        link: {
+            netflix: '80179831'
+        },
+        info: {
+            service: 'netflix',
+            // studio: '',
+            location: "Netflix",
+            description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
+            summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
+        },
+        style: {
+            color: '2C2850',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "tall",
+        },
+        apps: {
+            tvTimeID: "262954",
+            // tvTimeRate: "9.74",
+            reelgoodLink: "https://reelgood.com/show/jojos-bizarre-adventure-2012",
+            // reelgoodRate: "72",
+            imdbID: "tt2359704",
+            // imdbRate: "8.4",
+        },
+    },
+    {
+        name: "Money Heist",
+        id: "money",
+        link: {
+            netflix: '80192098'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: "Netflix",
+            description: "Action &#149 Crime &#149 Mystery &#149 3 Seasons &#149 2017 - Present",
+            summary: "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
+        },
+        style: {
+            color: '3f1513',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '10 / 9',
+        },
+        apps: {
+            tvTimeID: "327417",
+            reelgoodLink: "https://reelgood.com/show/money-heist-2017",
+            imdbID: "tt6468322",
+        },
+    },
+    {
+        name: "Dave",
+        id: "dave",
+        link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
+            summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
+        },
+        style: {
+            color: '889898',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "354905",
+            reelgoodLink: "https://reelgood.com/show/dave-2020",
+            imdbID: "tt8531222",
+        },
+    },
     {
         name: "Twin Peaks",
         id: "twinpeaks",
@@ -4147,6 +4114,39 @@ const movieData10 = [
 ]
 
 const movieDataArchive = [
+    {
+        name: 'Superstore',
+        id: 'superstore',
+        link: 'https://www.hulu.com/series/superstore-727810b8-e54b-4f01-9381-a79ab5661bf7',
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: 2021,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
+        },
+        style: {
+            color: '0070DB',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '295648',
+            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
+            imdbID: 'tt4477976',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Fairfax',
         id: 'fairfax',
