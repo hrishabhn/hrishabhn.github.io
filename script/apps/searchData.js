@@ -1,3 +1,13 @@
+const redditSearchData = [
+    'Purdue',
+    'suggestmeabook',
+    'televisionsuggestions',
+    'Notion',
+]
+const twitterSearchData = [
+    'tripperhead',
+]
+
 const notionSearchData = [
     {
         name: "Inbox",

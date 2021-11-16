@@ -38,6 +38,14 @@ function globalSearchResults(query) {
             results: globalSearchPod(query),
         },
         {
+            name: 'Reddit',
+            results: globalSearchReddit(query),
+        },
+        {
+            name: 'Twitter',
+            results: globalSearchTwitter(query),
+        },
+        {
             name: 'Search Websites',
             results: globalSearchEngine(query),
         },
@@ -369,6 +377,48 @@ function globalSearchNotion(query) {
 
     return results
 }
+function globalSearchReddit(query) {
+    var results = []
+
+    for (let i = 0; i < redditSearchData.length; i++) {
+        const subReddit = redditSearchData[i]
+        const name = `r/${subReddit}`.toUpperCase().includes(query.toUpperCase())
+
+        if (name) {
+            const data = {
+                name: `r/${subReddit}`,
+                background: 'reddit',
+                link: `https://www.reddit.com/r/${subReddit}`,
+                icon: '<svg data-bbox="1.959 3 46.082 42" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M29 3c-2.105 0-4.566 1.652-4.938 9.031.313-.008.622-.031.938-.031.352 0 .715.02 1.063.031C26.3 7.598 27.355 5 29 5c.703 0 1.102.383 1.844 1.188.867.94 2 2.164 4.218 2.625A6.215 6.215 0 0 1 35 8c0-.422.043-.82.125-1.219-1.375-.375-2.102-1.168-2.813-1.937C31.52 3.984 30.61 3 29 3zm12 1c-2.207 0-4 1.797-4 4 0 2.203 1.793 4 4 4s4-1.797 4-4c0-2.203-1.793-4-4-4zM25 14C12.867 14 3 20.18 3 29s9.867 16 22 16 22-7.18 22-16-9.867-15-22-15zm-17.5.938c-1.46 0-2.848.597-3.906 1.656-1.723 1.722-2.078 4.199-1.094 6.25 1.512-2.926 4.113-5.422 7.469-7.282-.762-.386-1.606-.624-2.469-.624zm35 0c-.863 0-1.707.238-2.469.624 3.356 1.86 5.957 4.356 7.469 7.282.984-2.051.629-4.528-1.094-6.25-1.058-1.059-2.445-1.657-3.906-1.657zM17 23a3 3 0 1 1-.002 6.002A3 3 0 0 1 17 23zm16 0a3 3 0 1 1-.002 6.002A3 3 0 0 1 33 23zM16.062 34c.25.043.497.184.657.406.105.149 2.449 3.282 8.281 3.282 5.91 0 8.258-3.22 8.281-3.25.317-.45.953-.57 1.407-.25.449.316.535.921.218 1.374-.117.168-2.968 4.126-9.906 4.126-6.941 0-9.79-3.958-9.906-4.126-.317-.453-.235-1.058.219-1.374.226-.16.5-.231.75-.188z"></path></g></svg>',
+            }
+
+            results.push(spotlightSocialElement(data))
+        }
+    }
+
+    return results
+}
+function globalSearchTwitter(query) {
+    var results = []
+
+    for (let i = 0; i < twitterSearchData.length; i++) {
+        const handle = twitterSearchData[i]
+        const name = `@${handle}`.toUpperCase().includes(query.toUpperCase())
+
+        if (name) {
+            const data = {
+                name: `@${handle}`,
+                background: 'twitter',
+                link: `https://www.twitter.com/${handle}`,
+                icon: '<svg data-bbox="-0.059 5.617 50.122 40.729" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-type="shape"><g><path d="M50.063 10.438a20.57 20.57 0 0 1-5.91 1.62 10.309 10.309 0 0 0 4.523-5.687 20.648 20.648 0 0 1-6.531 2.492 10.258 10.258 0 0 0-7.504-3.246c-5.68 0-10.286 4.602-10.286 10.281 0 .805.094 1.59.27 2.344-8.547-.43-16.121-4.523-21.195-10.746a10.243 10.243 0 0 0-1.39 5.172c0 3.566 1.812 6.715 4.573 8.562a10.274 10.274 0 0 1-4.66-1.289v.13c0 4.984 3.547 9.136 8.246 10.085a10.29 10.29 0 0 1-4.644.172c1.312 4.082 5.11 7.063 9.605 7.145A20.613 20.613 0 0 1 2.39 41.87c-.831 0-1.648-.047-2.449-.144a29.053 29.053 0 0 0 15.762 4.62c18.914 0 29.258-15.667 29.258-29.253 0-.446-.012-.895-.027-1.332a20.904 20.904 0 0 0 5.129-5.325z"></path></g></svg>',
+            }
+
+            results.push(spotlightSocialElement(data))
+        }
+    }
+
+    return results
+}
 
 function globalSearchApps(query) {
     var results = []
@@ -401,6 +451,32 @@ function globalSearchSchool(query) {
     return results
 }
 
+function spotlightSocialElement(data) {
+    var container = document.createElement('a')
+    container.classList = 'result clickable'
+    container.href = data.link
+    container.target = '_blank'
+
+    var icon = document.createElement('div')
+    icon.classList = 'icon social'
+    icon.classList.add(data.background)
+    icon.innerHTML = data.icon
+    container.append(icon)
+
+    container.append(spacerElement(15))
+
+    var info = document.createElement('div')
+    info.classList = 'info'
+
+    var text = document.createElement('p')
+    text.classList = 'text'
+    text.innerHTML = data.name
+    info.append(text)
+
+    container.append(info)
+    
+    return container
+}
 function spotlightAppElement(data) {
     var container = document.createElement('a')
     container.classList = 'result clickable'
@@ -571,26 +647,6 @@ function globalSearchEngine(query) {
             results.push(container)
         }
     }
-    console.log(results)
-
-
-
-
-                // container.onclick = function() { globalResultHide() }
-            
-                // image.style.setProperty('background-image',`url("media-image/podcasts/${podData[i][j].id}.${podData[i][j].coverType}")`)
-            
-                
-            
-                
-
-                // var subtext = document.createElement('p')
-                // subtext.classList = 'subtext'
-                // subtext.innerHTML = podData[i][j].author
-                // info.append(subtext)
-
-
-
 
     return results
 }
