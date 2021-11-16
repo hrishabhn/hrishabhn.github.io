@@ -1002,88 +1002,47 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
-        name: 'Dexter',
-        id: 'dexter',
-        link: {
-            primeVideo: 'B000JO9JHW'
-        },
-        info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 9,
-                yearStart: 2006,
-                yearEnd: 2013,
-                genre: [
-                    'crime',
-                    'drama',
-                    'mystery',
-                ],
-            },
-            summary: "He's smart. He's lovable. He's Dexter Morgan, America's favorite serial killer, who spends his days solving crimes and nights committing them. Golden Globe winner Michael C. Hall stars in the hit SHOWTIME Original Series.",
-        },
-        style: {
-            color: 'b11016',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '79349',
-            reelgoodLink: 'https://reelgood.com/show/dexter-2006',
-            imdbID: 'tt0773262',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Q: Into the Storm',
-        id: 'qanon',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GYDk9Ig48c5i6hgEAAAA7:type:series',
+        name: 'Chernobyl',
+        id: 'chernobyl',
+        link: 'https://www.hulu.com/series/chernobyl-849bed9a-2da8-484b-8cdf-d7000090fc5d',
         info: {
             service: 'hbo',
             studio: 'hbo',
-            location: 'HBO Max',
-            // date: '',
-            // weekday: '',
+            location: 'Hulu',
             desc: {
                 seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
+                year: 2019,
                 genre: [
-                    'documentary',
-                    'politics',
+                    'drama',
+                    'history',
+                    'thriller',
                 ],
             },
-            summary: "This six-part docuseries charts a labyrinthine journey to uncover the inner workings of Qanon, a massive online conspiracy movement.",
+            summary: "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
         },
         style: {
-            color: '2c2433',
-            posterType: 'webp',
-            titleType: 'jpeg',
+            color: '86a097',
+            posterType: 'jpg',
+            titleType: 'svg',
             titleSize: 'wide',
-            mobileType: 'jpeg',
+            mobileType: 'webp',
             mobileSize: '2 / 3',
         },
         apps: {
-            tvTimeID: '397561',
-            reelgoodLink: 'https://reelgood.com/show/q-into-the-storm-2021',
-            imdbID: 'tt14215442',
+            tvTimeID: '360893',
+            reelgoodLink: 'https://reelgood.com/show/chernobyl-2019',
+            imdbID: 'tt7366338',
             // subReddit: 'subreddit',
         },
     },
     {
         name: 'The Sopranos',
         id: 'sopranos',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2b9AHpHo7DwvwIAT4i:type:series',
+        link: 'https://www.hulu.com/series/the-sopranos-4e03024d-2f23-423a-934c-23adf1e62fe9',
         info: {
             service: 'hbo',
             studio: 'hbo',
-            location: 'HBO Max',
+            location: 'Hulu',
             desc: {
                 seasons: 6,
                 yearStart: 1999,
@@ -1107,7 +1066,7 @@ const movieData4 = [
             tvTimeID: '75299',
             reelgoodLink: 'https://reelgood.com/show/the-sopranos-1999',
             imdbID: 'tt0141842',
-            // subReddit: 'subreddit',
+            subReddit: 'thesopranos',
         },
     },
     {
@@ -1162,43 +1121,6 @@ const movieData4 = [
         ],
     },
     {
-        name: 'My Name',
-        id: 'myname',
-        link: {
-            netflix: '81011211'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            date: '',
-            weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "Following her father's murder, a revenge-driven woman puts her trust in a powerful crime boss - and enters the police force under his direction.",
-        },
-        style: {
-            color: '682008',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: '397441',
-            reelgoodLink: 'https://reelgood.com/show/my-name-2021',
-            imdbID: 'tt12940504',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'The Spy',
         id: 'spy',
         link: {
@@ -1225,30 +1147,92 @@ const movieData4 = [
         },
     },
     {
-        name: 'Chernobyl',
-        id: 'chernobyl',
-        // link: {
-        //     netflix: '80197526'
-        // },
+        name: "Line of Duty",
+        id: "lineofduty",
+        link: "https://www.hulu.com/series/line-of-duty-0efc0f95-c575-46da-b28f-a30a13d86b37",
         info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            description: 'History &#149 Thriller &#149 1 Season &#149 2019',
-            summary: "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            description: "Thriller &#149 6 Season &#149 2012 - Present",
+            summary: "After refusing to help cover up an unlawful and fatal shooting by members of his team, Detective Sergeant Steve Arnott is transferred to Anti-Corruption Unit 12, AC-12. Run by zealous Superintendent Ted Hastings, the department is responsible for investigating possible corruption within the Central Police force. Working alongside DS Arnott is Detective Inspector Kate Fleming, who is an undercover specialist. With the help and oversight of Hastings, Arnott and Fleming take on difficult cases, which lead from laddering to mishandling evidence.",
         },
         style: {
-            color: '86a097',
-            posterType: 'jpg',
-            titleType: 'svg',
+            color: '262841',
+            posterType: 'webp',
+            titleType: 'png',
             titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
         },
         apps: {
-            tvTimeID: '360893',
-            reelgoodLink: 'https://reelgood.com/show/chernobyl-2019',
-            imdbID: 'tt7366338',
+            tvTimeID: '260092',
+            reelgoodLink: "https://reelgood.com/show/line-of-duty-2012",
+            imdbID: "tt2303687",
+        },
+    },
+    {
+        name: 'Dexter',
+        id: 'dexter',
+        link: {
+            primeVideo: 'B000JO9JHW'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 9,
+                yearStart: 2006,
+                yearEnd: 2013,
+                genre: [
+                    'crime',
+                    'drama',
+                    'mystery',
+                ],
+            },
+            summary: "He's smart. He's lovable. He's Dexter Morgan, America's favorite serial killer, who spends his days solving crimes and nights committing them. Golden Globe winner Michael C. Hall stars in the hit SHOWTIME Original Series.",
+        },
+        style: {
+            color: 'b11016',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '79349',
+            reelgoodLink: 'https://reelgood.com/show/dexter-2006',
+            imdbID: 'tt0773262',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Mindhunter',
+        id: 'mindhunter',
+        link: {
+            netflix: '80114855'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            description: 'Crime &#149 Drama &#149 Thriller &#149 2 Seasons &#149 2017 - 2019',
+            summary: "In the late 1970s two FBI agents expand criminal science by delving into the psychology of murder and getting uneasily close to all-too-real monsters.",
+        },
+        style: {
+            color: '838383',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '10 / 11',
+        },
+        apps: {
+            tvTimeID: '328708',
+            reelgoodLink: 'https://reelgood.com/show/mindhunter-2017',
+            imdbID: 'tt5290382',
             // subReddit: 'subreddit',
         },
     },
@@ -1285,6 +1269,79 @@ const movieData4 = [
             // tvTimeID: 'identifier',
             reelgoodLink: 'https://reelgood.com/show/vikings-2013',
             imdbID: 'tt2306299',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Q: Into the Storm',
+        id: 'qanon',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GYDk9Ig48c5i6hgEAAAA7:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'documentary',
+                    'politics',
+                ],
+            },
+            summary: "This six-part docuseries charts a labyrinthine journey to uncover the inner workings of Qanon, a massive online conspiracy movement.",
+        },
+        style: {
+            color: '2c2433',
+            posterType: 'webp',
+            titleType: 'jpeg',
+            titleSize: 'wide',
+            mobileType: 'jpeg',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '397561',
+            reelgoodLink: 'https://reelgood.com/show/q-into-the-storm-2021',
+            imdbID: 'tt14215442',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'My Name',
+        id: 'myname',
+        link: {
+            netflix: '81011211'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            date: '',
+            weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "Following her father's murder, a revenge-driven woman puts her trust in a powerful crime boss - and enters the police force under his direction.",
+        },
+        style: {
+            color: '682008',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '397441',
+            reelgoodLink: 'https://reelgood.com/show/my-name-2021',
+            imdbID: 'tt12940504',
             // subReddit: 'subreddit',
         },
     },
@@ -1452,57 +1509,6 @@ const movieData4 = [
             reelgoodLink: 'https://reelgood.com/show/y-the-last-man-2021',
             imdbID: "tt8042500",
             subReddit: 'YTheLastMan',
-        },
-    },
-    {
-        name: "Line of Duty",
-        id: "lineofduty",
-        link: "https://www.hulu.com/series/line-of-duty-0efc0f95-c575-46da-b28f-a30a13d86b37",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            description: "Thriller &#149 6 Season &#149 2012 - Present",
-            summary: "After refusing to help cover up an unlawful and fatal shooting by members of his team, Detective Sergeant Steve Arnott is transferred to Anti-Corruption Unit 12, AC-12. Run by zealous Superintendent Ted Hastings, the department is responsible for investigating possible corruption within the Central Police force. Working alongside DS Arnott is Detective Inspector Kate Fleming, who is an undercover specialist. With the help and oversight of Hastings, Arnott and Fleming take on difficult cases, which lead from laddering to mishandling evidence.",
-        },
-        style: {
-            color: '262841',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '260092',
-            reelgoodLink: "https://reelgood.com/show/line-of-duty-2012",
-            imdbID: "tt2303687",
-        },
-    },
-    {
-        name: 'Mindhunter',
-        id: 'mindhunter',
-        link: {
-            netflix: '80114855'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            description: 'Crime &#149 Drama &#149 Thriller &#149 2 Seasons &#149 2017 - 2019',
-            summary: "In the late 1970s two FBI agents expand criminal science by delving into the psychology of murder and getting uneasily close to all-too-real monsters.",
-        },
-        style: {
-            color: '838383',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '10 / 11',
-        },
-        apps: {
-            tvTimeID: '328708',
-            reelgoodLink: 'https://reelgood.com/show/mindhunter-2017',
-            imdbID: 'tt5290382',
-            // subReddit: 'subreddit',
         },
     },
 ]
