@@ -10,6 +10,10 @@ function globalSearchResults(query) {
             results: secureSearch(globalSearchNotion(query)),
         },
         {
+            name: 'School',
+            results: secureSearch(globalSearchSchool(query)),
+        },
+        {
             name: 'Trips',
             results: secureSearch(globalSearchTrip(query)),
         },
@@ -381,6 +385,22 @@ function globalSearchApps(query) {
     return results
 }
 
+function globalSearchSchool(query) {
+    var results = []
+
+    for (let i = 0; i < schoolSearchData.length; i++) {
+        const data = schoolSearchData[i]
+        const name = schoolSearchData[i].name.toUpperCase().includes(query.toUpperCase())
+        // console.log(name)
+
+        if (name) {
+            results.push(spotlightTrayElement(data))
+        }
+    }
+
+    return results
+}
+
 function spotlightAppElement(data) {
     var container = document.createElement('a')
     container.classList = 'result clickable'
@@ -404,6 +424,56 @@ function spotlightAppElement(data) {
     info.append(text)
 
     container.append(info)
+    
+    return container
+}
+function spotlightTrayElement(data) {
+    let container = document.createElement('div')
+    container.classList = 'result'
+
+    let vstack = document.createElement('div')
+    vstack.classList = 'vstack fill-width'
+    vstack.style.setProperty('align-items','flex-start')
+    // console.log(data)
+
+    let header = document.createElement('p')
+    header.classList = 'text'
+    header.innerHTML = data.name
+    vstack.append(header)
+
+    vstack.append(spacerElement(8))
+
+    let hscroll = hscrollElement()
+
+    for (let i = 0; i < data.apps.length; i++) {
+        const app = data.apps[i]
+
+        let appStack = document.createElement('div')
+        appStack.classList = 'vstack'
+
+        let appIcon = document.createElement('a')
+        appIcon.classList = `icon ${app.background} clickable`
+        appIcon.innerHTML = app.icon
+        appIcon.href = app.link
+        appIcon.target = '_blank'
+        appStack.append(appIcon)
+
+        let textbox = document.createElement('div')
+        textbox.style.setProperty('width','100%')
+
+        let appText = document.createElement('p')
+        appText.classList = 'app-text'
+        appText.innerHTML = app.name
+        textbox.append(appText)
+        appStack.append(textbox)
+
+        hscroll.append(appStack)
+        hscroll.append(spacerElement(10))
+    }
+
+    hscroll.append(growElement())
+    vstack.append(hscroll)
+    container.append(vstack)
     
     return container
 }

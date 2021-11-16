@@ -172,18 +172,18 @@
     flex-direction: column;
     align-items: flex-start;
 }
-#spotlight-result .result .info p{
+#spotlight-result .result p{
     display: block;
     max-width: calc(100%);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-#spotlight-result .result .info p.text{
+#spotlight-result .result p.text{
     font-size: 14px;
     font-weight: 500;
 }
-#spotlight-result .result .info p.subtext{
+#spotlight-result .result p.subtext{
     font-size: 14px;
     font-weight: 400;
     opacity: 0.6;
@@ -201,6 +201,19 @@
     font-weight: 500;
     opacity: 0.8;
     text-transform: uppercase;
+}
+
+#spotlight-result .result .app-text{
+    display: block;
+    max-width: calc(100% + 10px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    margin-top: 5px;
+
+    font-size: 8px;
+    font-weight: 500;
 }
 
 

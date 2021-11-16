@@ -125,7 +125,7 @@ function routineCookieLoad(i,j) {
 
 function routineModal(i) {
     var card = document.createElement('div')
-    card.classList = 'routine-modal layer-0-trans'
+    card.classList = 'routine-modal layer-0'
     card.append(routineTrayElement(i))
     return card
 }
@@ -151,7 +151,7 @@ function routineTrayElement(i) {
 
 function routineCardElement(i,j) {
     var item = document.createElement('div')
-    item.classList = 'routine-card layer-1-trans'
+    item.classList = 'routine-card layer-1'
     item.id = `routine-${i}-${j}`
     if (JSON.parse(getCookie(`routine-${i}-${j}`))[6].done) {
         item.classList.add('today-done')
@@ -254,7 +254,7 @@ function routineOtherButton(i) {
 
 
     var button = document.createElement('a')
-    button.classList = 'layer-1-trans clickable-text'
+    button.classList = 'layer-1 clickable-text'
     button.onclick = function() { openModal(routineModal(i)) }
     button.innerHTML = `
     <div class="icon">
