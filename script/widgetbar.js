@@ -32,7 +32,7 @@ const widgetbarContent = [
         }
     },
     {
-        render: function() { return secureElement(widgetBarFlightTray()) }
+        render: function() { return secureElement(widgetBarHomecardTray()) }
     },
 ]
 
@@ -43,11 +43,13 @@ function widgetbarTitleElement(text) {
     return title
 }
 
-function widgetBarFlightTray() {
+function widgetBarHomecardTray() {
     var tray = document.createElement('div')
     tray.classList = 'tray'
     tray.append(widgetbarTitleElement('Travel'))
 
+    tray.append(homeCardTrip({type: 'trip', n: 0}))
+    tray.append(spacerElement(10))
     tray.append(homeCardFlight({type: 'bus', n: 0}))
     tray.append(spacerElement(10))
     tray.append(homeCardFlight({type: 'flight', n: 0}))

@@ -245,7 +245,7 @@ function homeCardBasic(data) {
 }
 function homeCardTrip(data) {
     var card = document.createElement('a')
-    card.classList = 'homecard trip clickable layer-1 border snap'
+    card.classList = 'homecard trip clickable layer-1 snap'
     card.onclick = function () { openModal(secureModal(tripCard(data.n))) }
     card.innerHTML = `
     <div class="bg" style="background-image: url(${tripData[data.n].image});"></div>

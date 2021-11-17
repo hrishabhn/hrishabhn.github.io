@@ -22,3 +22,12 @@
     max-width: initial;
     border-radius: 5px;
 }
+
+#widgetbar .tray .homecard.basic {
+    padding: 12px;
+}
+
+#widgetbar .tray .homecard.basic .data{
+    top: 12px;
+    right: 12px;
+}

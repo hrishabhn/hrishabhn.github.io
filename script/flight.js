@@ -339,16 +339,16 @@ const flightData = [
             city: 'Indianapolis',
             time: '1:28pm',
             date: new Date('Nov 20, 2021 13:28:00 EST'),
-            terminal: '-',
-            gate: '-',
+            terminal: null,
+            gate: '999',
         },
         arr: {
             airport: 'LAS',
             city: 'Las Vegas',
             time: '2:42pm',
             date: new Date('Nov 20, 2021 14:42:00 PST'),
-            terminal: '-',
-            gate: '-',
+            terminal: '3',
+            gate: null,
         },
         seat: '-',
         aircraft: aircraftData.a321,
@@ -364,15 +364,15 @@ const flightData = [
             time: '3:59pm',
             date: new Date('Nov 20, 2021 15:59:00 PST'),
             terminal: '3',
-            gate: '-',
+            gate: null,
         },
         arr: {
             airport: 'SAN',
             city: 'San Diego',
             time: '5:12pm',
             date: new Date('Nov 20, 2021 17:12:00 PST'),
-            terminal: '-',
-            gate: '-',
+            terminal: '1',
+            gate: null,
         },
         seat: '-',
         aircraft: aircraftData.a320,
@@ -387,16 +387,16 @@ const flightData = [
             city: 'San Diego',
             time: '7:37pm',
             date: new Date('Nov 30, 2021 19:37:00 PST'),
-            terminal: '-',
-            gate: '-',
+            terminal: '1',
+            gate: null,
         },
         arr: {
             airport: 'LAS',
             city: 'Las Vegas',
             time: '8:55pm',
             date: new Date('Nov 30, 2021 20:55:00 PST'),
-            terminal: '-',
-            gate: '-',
+            terminal: '1',
+            gate: null,
         },
         seat: '-',
         aircraft: aircraftData.a320,
@@ -411,16 +411,16 @@ const flightData = [
             city: 'Las Vegas',
             time: '11:50pm',
             date: new Date('Nov 30, 2021 23:50:00 PST'),
-            terminal: '-',
-            gate: '-',
+            terminal: '1',
+            gate: null,
         },
         arr: {
             airport: 'IND',
             city: 'Indianapolis',
             time: '6:11am',
             date: new Date('Dec 1, 2021 06:11:00 EST'),
-            terminal: '-',
-            gate: '-',
+            terminal: null,
+            gate: null,
         },
         seat: '-',
         aircraft: aircraftData.a320,
@@ -435,16 +435,16 @@ const flightData = [
             city: 'Indianapolis',
             time: '1:20pm',
             date: new Date('Dec 19, 2021 13:20:00 EST'),
-            terminal: '-',
-            gate: '-',
+            terminal: null,
+            gate: null,
         },
         arr: {
             airport: 'LGA',
             city: 'New York',
             date: new Date('Dec 19, 2021 15:24:00 EST'),
             time: '3:24pm',
-            terminal: '-',
-            gate: '-',
+            terminal: null,
+            gate: null,
         },
         seat: '-',
         aircraft: aircraftData.e175,
@@ -459,16 +459,16 @@ const flightData = [
             city: 'Chicago',
             time: '1:20pm',
             date: new Date('Dec 19, 2021 15:24:00 EST'),
-            terminal: '-',
-            gate: '-',
+            terminal: null,
+            gate: null,
         },
         arr: {
             airport: 'HKG',
             city: 'Hong Kong',
             time: '7:00am',
             date: new Date('Dec 19, 2021 15:24:00 EST'),
-            terminal: '-',
-            gate: '-',
+            terminal: null,
+            gate: null,
         },
         seat: '-',
         aircraft: aircraftData.a35k,
@@ -871,7 +871,7 @@ function airportCard(deparr,type) {
 
     if (type == 'flight') {
         var color = 'blue'
-        var detail = `<p class="detail">Terminal ${deparr.terminal} &#149 Gate ${deparr.gate}</p>`
+        var detail = `<p class="detail">${processDepArrDetail(deparr)}</p>`
     } else if (type == 'bus') {
         var color = 'red'
         var detail = `<p class="detail">${deparr.stop}</p>`
@@ -1039,8 +1039,9 @@ function flightDetail(flight,type) {
             <div class="time">${flight.dep.time}</div>
         </div>
         <div class="vstack">
-            <div class="spacer-x" style="--size: 10px;"></div>
+            <div class="spacer-x" style="--size: 30px;"></div>
             <div class="plane">${plane}</div>
+            <div class="spacer-x" style="--size: 5px;"></div>
             <div class="duration">${durationCalculate(flight.dep.date,flight.arr.date)}</div>
         </div>
         <div class="des">
@@ -1050,7 +1051,7 @@ function flightDetail(flight,type) {
         </div>
     </div>`
 
-    if (flight.dep.terminal) {
+    if (type == 'flight') {
         var info = document.createElement('div')
         info.classList = 'info'
     
@@ -1072,13 +1073,22 @@ function flightDetail(flight,type) {
         terminal.innerHTML = `
         <p class="text">Terminal</p>
         <p class="subtext">${flight.dep.terminal}</p>`
-    
-        var gate = document.createElement('a')
-        gate.classList = 'vstack'
-        gate.innerHTML = `
-        <p class="text">Gate</p>
-        <p class="subtext">${flight.dep.gate}</p>`
-    
+        
+        if (flight.dep.gate) {
+            var gate = document.createElement('a')
+            gate.classList = 'vstack'
+            gate.innerHTML = `
+            <p class="text">Gate</p>
+            <p class="subtext">${processGate(flight.dep.gate)}</p>`
+            
+        } else {
+            var gate = document.createElement('a')
+            gate.classList = 'vstack'
+            gate.innerHTML = `
+            <p class="text">Date</p>
+            <p class="subtext">${flight.dep.date.getDate()} ${processMonth(flight.dep.date.getMonth(),'short')}</p>`
+        }
+
         info.append(flightNo)
         info.append(growElement())
         info.append(aircraftName)
@@ -1086,13 +1096,34 @@ function flightDetail(flight,type) {
         info.append(terminal)
         info.append(growElement())
         info.append(gate)
+        
         card.append(info)
-
     }
     
-
-
-
-
     return card
+}
+
+function processDepArrDetail(deparr) {
+    
+    if (deparr.gate) {
+        var result = `Gate ${deparr.gate}`
+    } else {
+        var result = `Gate -`
+    }
+    
+    if (deparr.terminal) {
+        var result = `Terminal ${deparr.terminal} &#149 ${result}`
+    }
+    return result
+
+    console.log(deparr.terminal)
+    return `Terminal X &#149 Gate Y`
+}
+
+function processGate(gate) {
+    if (gate) {
+        return gate
+    } else {
+        return '-'
+    }
 }
