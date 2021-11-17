@@ -592,11 +592,11 @@ const tripData = [
         ],
     },
     {
-        name: 'New York',
-        subhead: 'Christmas',
-        color: 'green',
+        name: 'Winter Break',
+        subhead: 'New York & Boston',
+        color: 'red',
         notion: 'https://www.notion.so/New-York-Christmas-657c508a638e4490ab7464a64070d952',
-        image: 'https://worldstrides.com/wp-content/uploads/2019/05/Aerial-view-of-lower-Manhattan-NYC.jpg',
+        image: 'https://balance.media/wp-content/uploads/2019/11/andre-benz-OlhdrYx8yaQ-unsplash-scaled.jpg',
         start: 'Dec 19, 2021 09:30:00',
         sections: [
             {
@@ -631,19 +631,8 @@ const tripData = [
                         },
                     },
                 ],
-            },
-        ],
-    },
-    {
-        name: 'Boston',
-        subhead: 'Christmas',
-        color: 'red',
-        notion: 'link',
-        image: 'https://static.onecms.io/wp-content/uploads/sites/28/2021/02/23/boston-massachusetts-BOSTONTG0221.jpg',
-        start: 'Dec 23, 2021',
-        sections: [
-            {
-                date: '23 Dec 2021',
+            },{
+                date: 'Thu, 23 Dec 2021',
                 name: 'New York - Boston',
                 duration: '4h 42m',
                 direction: 'One-Way',
