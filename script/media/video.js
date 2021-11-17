@@ -1,6 +1,7 @@
 function videoRefresh() {
-    const randomLists = [0,3,4]
-    const movieBigA = randomLists[Math.floor(Math.random() * randomLists.length)]
+    // const randomLists = [0,3,4]
+    // const movieBigA = randomLists[Math.floor(Math.random() * randomLists.length)]
+    const movieBigA = Math.round(Math.random())
     const movieBigB = Math.floor(Math.random() * movieData[movieBigA].length)
 
     tvBig(movieBigA,movieBigB)
