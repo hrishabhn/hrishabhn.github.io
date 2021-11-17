@@ -1,14 +1,66 @@
+.siri-top{
+    margin-top: 100px;
+    width: 100vw;
+    max-width: 800px;
+    border-radius: 10px;
+    flex-direction: column;
+
+    /* height: 300px; */
+}
+.siri-top .header{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+.siri-top .header p1{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.siri-top .header p2{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.siri-top .suggest-tray{
+    width: 100%;
+    padding: 0 20px 20px;
+}
+
+
+.siri-top .suggest-tray .icon{
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+    border-radius: 8px;
+    fill: white;
+}
+.siri-top .suggest-tray .app-text{
+    display: block;
+    max-width: calc(100% + 10px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    margin-top: 5px;
+
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+
 .siri-container{
     /* height: 500px; */
     width: 100vw;
-    max-width: 600px;
+    max-width: 800px;
     border-radius: 10px;
     flex-direction: column;
 }
 .siri-input-container{
     height: 500px;
-    width: 100vw;
-    max-width: 600px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -20,6 +72,11 @@
 .siri-input-container .icon{
     height: 18px;
     width: 18px;
+}
+.siri-input-container .clear{
+    height: 22px;
+    width: 22px;
+    border-radius: 100px;
 }
 
 #siri-search {
