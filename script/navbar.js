@@ -36,13 +36,28 @@ function navbarLeft() {
     container.classList = 'side left'
 
     var search = document.createElement('a')
-    search.classList = 'basic item clickable layer-2'
+    search.classList = 'basic item'
     search.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path></svg>'
-    search.onclick = function() {
-        spotlightShow()
-        document.getElementById('spotlight-search').focus()
-    }
+    search.onclick = function() { spotlightShow() }
     container.append(search)
+    container.append(spacerElement(5))
+
+    var weather = document.createElement('a')
+    weather.classList = 'weather item'
+    
+    var icon = document.createElement('div')
+    icon.id = 'temp-icon'
+    icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 26 26"><path d="M17.5 3c-2.4 0-4.491188 1.3032813-5.617188 3.2382812C11.444813 6.0962813 10.986 6 10.5 6c-2.33 0-4.222125 1.777875-4.453125 4.046875C3.777875 10.277875 2 12.17 2 14.5 2 16.985 4.015 19 6.5 19h17c2.485 0 4.5-2.015 4.5-4.5 0-2.323-1.767344-4.212172-4.027344-4.451172C23.987656 9.8678281 24 9.685 24 9.5 24 5.91 21.09 3 17.5 3zM7.984375 20.986328A1.0001 1.0001 0 0 0 7 22v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672zm10 0A1.0001 1.0001 0 0 0 17 22v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672zm-5 2A1.0001 1.0001 0 0 0 12 24v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672zm10 0A1.0001 1.0001 0 0 0 22 24v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672z"></path></svg>'
+    weather.append(icon)
+    
+    weather.append(spacerElement(5))
+
+    var temp = document.createElement('p')
+    temp.id = 'temp'
+    temp.innerHTML = '-&#0176'
+    weather.append(temp)
+
+    container.append(weather)
 
     return container
 
@@ -92,47 +107,24 @@ function navbarRight() {
     var container = document.createElement('div')
     container.classList = 'side right'
 
-    var weather = document.createElement('a')
-    weather.classList = 'weather item clickable layer-2'
-    
-    var icon = document.createElement('div')
-    icon.id = 'temp-icon'
-    icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 26 26"><path d="M17.5 3c-2.4 0-4.491188 1.3032813-5.617188 3.2382812C11.444813 6.0962813 10.986 6 10.5 6c-2.33 0-4.222125 1.777875-4.453125 4.046875C3.777875 10.277875 2 12.17 2 14.5 2 16.985 4.015 19 6.5 19h17c2.485 0 4.5-2.015 4.5-4.5 0-2.323-1.767344-4.212172-4.027344-4.451172C23.987656 9.8678281 24 9.685 24 9.5 24 5.91 21.09 3 17.5 3zM7.984375 20.986328A1.0001 1.0001 0 0 0 7 22v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672zm10 0A1.0001 1.0001 0 0 0 17 22v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672zm-5 2A1.0001 1.0001 0 0 0 12 24v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672zm10 0A1.0001 1.0001 0 0 0 22 24v1a1.0001 1.0001 0 1 0 2 0v-1a1.0001 1.0001 0 0 0-1.015625-1.013672z"></path></svg>'
-    weather.append(icon)
-    
-    weather.append(spacerElement(8))
-
-    var temp = document.createElement('p')
-    temp.id = 'temp'
-    temp.innerHTML = '-&#0176'
-    weather.append(temp)
-
-    container.append(weather)
-    container.append(spacerElement(10))
 
     var focusContainer = document.createElement('div')
     
     var focus = document.createElement('a')
-    focus.classList = 'basic item clickable layer-2'
+    focus.classList = 'basic item'
     focus.innerHTML = currentFocus().icon
     focus.onclick = function() { focusMenuToggle() }
 
     focusContainer.append(focus)
     focusContainer.append(focusMenuElement())
 
+    
 
     container.append(focusContainer)
-    container.append(spacerElement(10))
-
-    var idea = document.createElement('a')
-    idea.classList = 'basic item clickable layer-2'
-    idea.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 4 40 40"><path d="M16.415 31.906 16.88 34h14.24l.465-2.094c.315-1.417.988-2.752 2.041-3.751C36.395 25.53 38 21.864 38 18c0-7.718-6.283-13.975-14-13.978-7.717.003-14 6.26-14 13.978 0 3.864 1.605 7.53 4.373 10.155 1.054.999 1.727 2.334 2.042 3.751z"/><path d="m17.547 37 .946 4.259C18.849 42.861 20.27 44 21.91 44h4.18c1.64 0 3.061-1.139 3.417-2.741L30.453 37H17.547z"/></svg>'
-    idea.href = 'https://www.notion.so/Inbox-90dd1c97df2d4bee8c605c27dfb5fb54'
-    container.append(idea)
-    container.append(spacerElement(10))
+    container.append(spacerElement(5))
 
     var user = document.createElement('a')
-    user.classList = 'user item clickable layer-2'
+    user.classList = 'user item'
     user.innerHTML = 'HN'
     container.append(user)
 
