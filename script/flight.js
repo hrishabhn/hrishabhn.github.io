@@ -1068,11 +1068,21 @@ function flightDetail(flight,type) {
         <p class="subtext">${flight.aircraft.name}</p>`
         aircraftName.onclick = function () { openModal(aircraftCard(flight.aircraft)) }
     
-        var terminal = document.createElement('a')
-        terminal.classList = 'vstack'
-        terminal.innerHTML = `
-        <p class="text">Terminal</p>
-        <p class="subtext">${flight.dep.terminal}</p>`
+        info.append(flightNo)
+        info.append(growElement())
+        info.append(aircraftName)
+
+        if (flight.dep.terminal) {
+            var terminal = document.createElement('a')
+            terminal.classList = 'vstack'
+            terminal.innerHTML = `
+            <p class="text">Terminal</p>
+            <p class="subtext">${flight.dep.terminal}</p>`
+
+            info.append(growElement())
+            info.append(terminal)
+        }
+
         
         if (flight.dep.gate) {
             var gate = document.createElement('a')
@@ -1089,11 +1099,6 @@ function flightDetail(flight,type) {
             <p class="subtext">${flight.dep.date.getDate()} ${processMonth(flight.dep.date.getMonth(),'short')}</p>`
         }
 
-        info.append(flightNo)
-        info.append(growElement())
-        info.append(aircraftName)
-        info.append(growElement())
-        info.append(terminal)
         info.append(growElement())
         info.append(gate)
         
