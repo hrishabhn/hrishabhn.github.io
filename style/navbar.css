@@ -19,11 +19,7 @@
     cursor: default;
 }
 
-#navbar .item.search{
-    width: 40px;
-    padding: 12px;
-}
-#navbar .item.focus{
+#navbar .item.basic{
     width: 40px;
     padding: 12px;
 }
