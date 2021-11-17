@@ -1,6 +1,7 @@
 const focusData = [
     {
-        name: 'Chilling',
+        name: 'None',
+        color: 'layer-2',
         icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20"><path d="M12 3a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4zm0 11c-3.004 0-9 1.508-9 4.5V20c0 .552.448 1 1 1h16c.552 0 1-.448 1-1v-1.5c0-2.992-5.996-4.5-9-4.5z"/></svg>',
         apps: [
             {
@@ -43,46 +44,55 @@ const focusData = [
     },
     {
         name: 'Watching',
+        color: 'red',
         icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 24 24"><path d="M5 6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5zm5 18a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10z"></path></svg>',
         apps: videoApps,
     },
     {
         name: 'Reading',
+        color: 'orange',
         icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 24 24"><path d="M5 6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5zm5 18a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10z"></path></svg>',
         apps: bookApps,
     },
     {
         name: courseData[0].name,
+        color: courseData[0].color,
         icon: courseData[0].icon,
         apps: ebecApps,
     },
     {
         name: courseData[1].name,
+        color: courseData[1].color,
         icon: courseData[1].icon,
         apps: eceApps,
     },
     {
         name: courseData[2].name,
+        color: courseData[2].color,
         icon: courseData[2].icon,
         apps: engrApps,
     },
     {
         name: courseData[3].name,
+        color: courseData[3].color,
         icon: courseData[3].icon,
         apps: ie335Apps,
     },
     {
         name: courseData[4].name,
+        color: courseData[4].color,
         icon: courseData[4].icon,
         apps: ie386Apps,
     },
     {
         name: courseData[5].name,
+        color: courseData[5].color,
         icon: courseData[5].icon,
         apps: nuclApps,
     },
     {
         name: courseData[6].name,
+        color: courseData[6].color,
         icon: courseData[6].icon,
         apps: spanApps,
     },
