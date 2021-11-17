@@ -233,6 +233,10 @@ input{
     /* border-radius: 10px; */
     /* background-color: red; */
 }
+#main.full{
+    left: 0px;
+    width: calc(100% - 0px);
+}
 
 .page{
     position: absolute;
