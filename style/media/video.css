@@ -1,6 +1,6 @@
 #tv-big-card{
     width: 100%;
-    aspect-ratio: 18 / 9;
+    aspect-ratio: 17 / 9;
 
     /* border-radius: 10px; */
     overflow: hidden;
@@ -8,7 +8,7 @@
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-image: var(--poster);
 }
 
@@ -64,7 +64,7 @@
 }
 #tv-big-title{
     position: absolute;
-    bottom: 170px;
+    bottom: 175px;
     left: 25px;
 
     height: 200px;
