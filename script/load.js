@@ -24,10 +24,14 @@ function openFirstPage(n) {
     if (pageCookie) {
         pageData[pageCookie].open()
     } else {
-        if (!('ontouchstart' in document.documentElement)) {
-            pageData[9].open()
-        } else {
+        if (n) {
             pageData[n].open()
+        } else {
+            if (!('ontouchstart' in document.documentElement)) {
+                pageData[9].open()
+            } else {
+                pageData[0].open()
+            }
         }
     }
 }
