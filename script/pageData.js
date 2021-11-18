@@ -968,25 +968,7 @@ const pageData9 = {
         {
             type: 'siri-top',
             render: function() {
-                return assistantTop()
-            }
-        },
-        {
-            type: 'spacer-content',
-        },
-        {
-            type: 'siri-input',
-            render: function() {
-                return assistantContainer()
-            }
-        },
-        {
-            type: 'spacer-content',
-        },
-        {
-            type: 'grow',
-            render: function() {
-                return growElement()
+                return assistantFull()
             }
         },
     ],

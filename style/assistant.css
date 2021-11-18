@@ -1,54 +1,24 @@
+.siri-full{
+    /* min-height: calc(100vh - 60px); */
+    flex-direction: column;
+    padding: calc((100vh - 60px - 200px) / 2) 0;
+    /* justify-content: flex-start; */
+}
+
 .siri-top{
-    margin-top: 100px;
+    /* margin-top: -100px; */
     width: 100vw;
     max-width: 800px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     flex-direction: column;
 
     /* height: 300px; */
 }
-.siri-top .pinned{
-    width: 100%;
-    padding: 10px;
-    /* background-color: red; */
-}
-
-.siri-top .pinned .item{
-    height: 30px;
-    min-width: 30px;
-    border-radius: 10px;
-    cursor: default;
-    opacity: 0.6;
-    /* background-color: var(--white-05); */
-}
-.siri-top .pinned .item:hover{
-    background-color: var(--white-10);
-}
-.siri-top .pinned .item:active{
-    background-color: var(--white-20);
-}
-
-.siri-top .pinned .item.basic{
-    width: 30px;
-    padding: 7px;
-}
-
-.siri-top .pinned .item.focus{
-    padding: 0 10px;
-    font-size: 12px;
-    font-weight: 500;
-}
-.siri-top .pinned .item.focus .icon{
-    height: 14px;
-    width: 14px;
-}
-
-
 
 .siri-top .logo{
     width: 80%;
     max-width: 200px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 20px;
 }
 
@@ -61,7 +31,9 @@
 
 .siri-top .suggest-tray{
     width: 100%;
-    padding: 20px 20px;
+    padding: 0px 0px;
+    height: 100px;
+    align-items: flex-start;
 }
 
 
@@ -85,6 +57,47 @@
     font-weight: 400;
 }
 
+.siri-pinned{
+    width: 100%;
+    max-width: 800px;
+    padding: 5px;
+    border-radius: 10px;
+
+    /* height: 100px; */
+
+}
+
+.siri-pinned .item{
+    height: 30px;
+    min-width: 30px;
+    border-radius: 8px;
+    cursor: default;
+    opacity: 0.6;
+    /* background-color: var(--white-05); */
+}
+.siri-pinned .item:hover{
+    background-color: var(--white-10);
+}
+.siri-pinned .item:active{
+    background-color: var(--white-20);
+}
+
+.siri-pinned .item.basic{
+    width: 30px;
+    padding: 8px;
+}
+
+.siri-pinned .item.focus{
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.siri-pinned .item.focus .icon{
+    height: 14px;
+    width: 14px;
+}
+
+
 
 
 .siri-container{
@@ -101,13 +114,13 @@
 }
 
 .siri-input-container{
-    height: 60px;
+    height: 50px;
     width: 100%;
     padding: 12px 15px;
 }
 .siri-input-container .icon{
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
 }
 .siri-input-container .clear{
     height: 22px;
@@ -123,7 +136,7 @@
     height: 100%;
     flex-grow: 1;
     -webkit-user-select: initial;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -269,10 +282,10 @@
 
 @media screen and (prefers-color-scheme: light) {
 
-    .siri-top .pinned .item:hover{
+    .siri-pinned .item:hover{
         background-color: var(--black-10);
     }
-    .siri-top .pinned .item:active{
+    .siri-pinned .item:active{
         background-color: var(--black-20);
     }
     /* .siri-tray{
