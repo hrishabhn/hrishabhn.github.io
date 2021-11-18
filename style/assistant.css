@@ -1,12 +1,15 @@
 .siri-full{
     flex-direction: column;
     padding: calc((100vh - 60px - 200px) / 2) 0;
+    width: calc(100vw - 30px);
+    max-width: 800px;
 }
 
 .siri-top{
     /* margin-top: -100px; */
-    width: 100vw;
-    max-width: 800px;
+    /* width: calc(100vw - 30px); */
+    /* max-width: 800px;w */
+    width: 100%;
     /* border-radius: 10px; */
     flex-direction: column;
 
@@ -100,8 +103,7 @@
 
 .siri-container{
     /* height: 500px; */
-    width: 100vw;
-    max-width: 800px;
+    width: 100%;
     border-radius: 10px;
     flex-direction: column;
 }
