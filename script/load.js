@@ -17,12 +17,18 @@ function loadApp() {
 }
 
 function openFirstPage(n) {
+
+
     const pageCookie = getCookie('page')
     // console.log(pageCookie)
     if (pageCookie) {
         pageData[pageCookie].open()
     } else {
-        pageData[n].open()
+        if (!('ontouchstart' in document.documentElement)) {
+            pageData[9].open()
+        } else {
+            pageData[n].open()
+        }
     }
 }
 
