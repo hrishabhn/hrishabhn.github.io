@@ -389,4 +389,12 @@
     #siri-result .result .logo{
         fill: var(--lightCol);
     }
+
+
+    #siri-extra:hover a{
+        background-color: var(--black-05);
+    }
+    #siri-extra a:active{
+        background-color: var(--black-10);
+    }
 }
