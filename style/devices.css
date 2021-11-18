@@ -20,7 +20,7 @@
 }
 
 
-@media(max-width: 1100px) and (min-width: 450px){
+@media(max-width: 1200px) and (min-width: 450px){
     .only-desktop{
         display: none !important;
         margin: 0px !important;
