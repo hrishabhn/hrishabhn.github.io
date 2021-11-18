@@ -971,6 +971,35 @@ const pageData9 = {
                 return assistantFull()
             }
         },
+        {
+            type: 'siri-top',
+            render: function() {
+                return assistantExtraElement()
+            }
+        },
+        {
+            type: 'tv-med',
+            render: function() {
+                return siriExtraTray()
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
+        {
+            render: function() {
+                return mediaTitleElement('Up Next')
+            },
+        },
+        {
+            type: 'tv-med',
+            render: function() {
+                return tvHuluTray(0)
+            }
+        },
+        {
+            type: 'spacer-content',
+        },
     ],
     render: function() { renderPage(this) },
     open: function() {

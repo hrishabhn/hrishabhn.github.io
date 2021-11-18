@@ -217,7 +217,105 @@ function siriSearch(e) {
 
 
 
-function assistantExtra() {
+function assistantExtraElement() {
+    var container = document.createElement('div')
+    container.id = 'siri-extra'
+    container.onclick = function() { assistantExtraShow(oldPage,this) }
 
-    
+
+
+    var extra = document.createElement('a')
+    // extra.classList = 'clickable'
+    extra.innerHTML = '<svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>'
+    container.append(extra)
+
+    return container
+
+}
+
+function assistantExtraShow() {
+    const page = document.getElementById(`page-${oldPage}`)
+    const extra = document.getElementById('siri-extra')
+    // console.log(page.scrollTop)
+    console.log(extra.offsetTop - 60)
+
+    page.scrollTop = extra.offsetTop - 60
+
+}
+
+const siriExtraData = [
+    { render: function() { return siriExtraWidgetTV(0,0) } },
+    { render: function() { return siriExtraWidgetTV(0,1) } },
+    { render: function() { return siriExtraWidgetTV(0,2) } },
+    { render: function() { return siriExtraWidgetTV(1,5) } },
+]
+
+function siriExtraTray() {
+    let tray = document.createElement('div')
+    tray.classList = 'siri-extra-tray'
+
+    for (let i = 0; i < siriExtraData.length; i++) {
+        tray.append(siriExtraData[i].render())
+
+        if (i < siriExtraData.length - 1) {
+            tray.append(spacerElement(32))
+        }
+    }
+
+    return tray
+}
+
+function siriExtraWidgetBase() {
+    let widget = document.createElement('a')
+    widget.classList = 'siri-extra-widget layer-1 clickable'
+    // widget.append(homeCardData[0][1].render())
+    return widget
+}
+function siriExtraWidgetBg(hex) {
+    let elem = document.createElement('div')
+    elem.classList = 'bg'
+    elem.style.setProperty('background-color',`#${hex}`)
+    return elem
+}
+function siriExtraWidgetInfo(text,subtext) {
+    let elem = document.createElement('div')
+    elem.classList = 'info'
+
+    let textElem = document.createElement('p')
+    textElem.classList = 'text'
+    textElem.innerHTML = text
+
+    let subtextElem = document.createElement('p')
+    subtextElem.classList = 'subtext'
+    subtextElem.innerHTML = subtext
+
+    elem.append(textElem)
+    elem.append(spacerElement(2))
+    elem.append(subtextElem)
+
+    return elem
+}
+
+function siriExtraWidgetTV(a,b) {
+    const movie = movieData[a][b]
+    // console.log(movie)
+
+    let widget = siriExtraWidgetBase()
+    widget.classList.add('tv')
+    widget.append(siriExtraWidgetBg(movie.style.color))
+    // widget.style.setProperty('background-color',`#${movie.style.color}`)
+    // widget.style.setProperty('background-image',`url('media-image/TV/background/${movie.id}.${movie.style.posterType}')`)
+    // widget.append(siriExtraWidgetBlur())
+
+    let poster = document.createElement('div')
+    poster.classList = 'poster'
+    poster.style.setProperty('background-image',`url('media-image/TV/background/${movie.id}.${movie.style.posterType}')`)
+    widget.append(poster)
+
+    let grow = growElement()
+    grow.classList.add('fill-width')
+    grow.append(siriExtraWidgetInfo(movie.name,movie.info.location))
+    widget.append(grow)
+
+    return widget
 }

@@ -24,6 +24,12 @@ body{
 .layer-1-trans{
     background-color: rgba(255, 255, 255, 0.075);
 }
+.layer-hover:hover{
+    background-color: var(--white-10);
+}
+.layer-hover:active{
+    background-color: var(--white-20);
+}
 
 
 a{
@@ -59,6 +65,12 @@ a.layer-fg{
     }
     .layer-1-trans{
         background-color: rgba(28, 28, 30, 0.075);
+    }
+    .layer-hover:hover{
+        background-color: var(--black-10);
+    }
+    .layer-hover:active{
+        background-color: var(--black-20);
     }
 
     a{
