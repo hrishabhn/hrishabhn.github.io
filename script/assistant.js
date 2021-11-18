@@ -246,8 +246,10 @@ function assistantExtraShow() {
 const siriExtraData = [
     { render: function() { return siriExtraWidgetTV(0,0) } },
     { render: function() { return siriExtraWidgetTV(0,1) } },
+    { render: function() { return siriExtraWidgetWeather() } },
     { render: function() { return siriExtraWidgetTV(0,2) } },
     { render: function() { return siriExtraWidgetTV(1,5) } },
+    // { render: function() { return siriExtraWidgetTV(0,2) } },
 ]
 
 function siriExtraTray() {
@@ -258,7 +260,7 @@ function siriExtraTray() {
         tray.append(siriExtraData[i].render())
 
         if (i < siriExtraData.length - 1) {
-            tray.append(spacerElement(32))
+            tray.append(spacerElement(10))
         }
     }
 
@@ -303,9 +305,6 @@ function siriExtraWidgetTV(a,b) {
     let widget = siriExtraWidgetBase()
     widget.classList.add('tv')
     widget.append(siriExtraWidgetBg(movie.style.color))
-    // widget.style.setProperty('background-color',`#${movie.style.color}`)
-    // widget.style.setProperty('background-image',`url('media-image/TV/background/${movie.id}.${movie.style.posterType}')`)
-    // widget.append(siriExtraWidgetBlur())
 
     let poster = document.createElement('div')
     poster.classList = 'poster'
@@ -314,8 +313,51 @@ function siriExtraWidgetTV(a,b) {
 
     let grow = growElement()
     grow.classList.add('fill-width')
-    grow.append(siriExtraWidgetInfo(movie.name,movie.info.location))
+    // grow.append(siriExtraWidgetInfo(movie.name,movie.info.location))
     widget.append(grow)
+
+    return widget
+}
+function siriExtraWidgetWeather() {
+    let widget = siriExtraWidgetBase()
+    widget.classList.add('weather')
+
+    let city = document.createElement('p')
+    city.classList = 'city'
+    city.innerHTML = 'Hong Kong'
+    widget.append(city)
+
+    let temp = document.createElement('p')
+    temp.classList = 'temp'
+    temp.innerHTML = '26&#0176'
+    widget.append(temp)
+
+    widget.append(growElement())
+
+    let icon = document.createElement('div')
+    icon.classList = 'icon yellow-fg'
+    icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 26 26"><circle cx="15" cy="15" r="6"/><path d="M15 6a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zm0 22a1 1 0 0 1-1-1v-2a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zM5 16H3a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zm22 0h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zM6.51 24.49a1 1 0 0 1-.7-.3 1 1 0 0 1 0-1.41l1.41-1.42a1 1 0 0 1 1.42 1.42l-1.42 1.41a1 1 0 0 1-.71.3zM22.07 8.93a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.42l1.42-1.41a1 1 0 0 1 1.41 1.41l-1.41 1.42a1 1 0 0 1-.71.29zm1.42 15.56a1 1 0 0 1-.71-.3l-1.42-1.41a1 1 0 0 1 1.42-1.42l1.41 1.42a1 1 0 0 1 0 1.41 1 1 0 0 1-.7.3zM7.93 8.93a1 1 0 0 1-.71-.29L5.81 7.22a1 1 0 0 1 1.41-1.41l1.42 1.41a1 1 0 0 1 0 1.42 1 1 0 0 1-.71.29z"/></svg>'
+    widget.append(icon)
+
+    let condition = document.createElement('p')
+    condition.classList = 'condition'
+    condition.innerHTML = 'Mostly Sunny'
+    widget.append(condition)
+
+    let hilo = document.createElement('p')
+    hilo.classList = 'hilo'
+    hilo.innerHTML = 'H: 26c L: 19'
+    widget.append(hilo)
+
+    // let poster = document.createElement('div')
+    // poster.classList = 'poster'
+    // poster.style.setProperty('background-image',`url('media-image/TV/background/${movie.id}.${movie.style.posterType}')`)
+    // widget.append(poster)
+
+    // let grow = growElement()
+    // grow.classList.add('fill-width')
+    // // grow.append(siriExtraWidgetInfo(movie.name,movie.info.location))
+    // widget.append(grow)
 
     return widget
 }

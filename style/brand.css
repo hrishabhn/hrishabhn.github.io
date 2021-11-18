@@ -170,6 +170,10 @@
 .yellow{
     background-color: var(--yellow-dark);
 }
+.yellow-fg{
+    color: var(--yellow-dark);
+    fill: var(--yellow-dark);
+}
 
 .primary-fg{
     color: var(--white-100);
@@ -314,6 +318,10 @@
     }
     .yellow{
         background-color: var(--yellow-light);
+    }
+    .yellow-fg{
+        color: var(--yellow-light);
+        fill: var(--yellow-light);
     }
     .primary-bg{
         background-color: var(--white-100);
