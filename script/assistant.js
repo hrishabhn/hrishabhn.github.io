@@ -244,12 +244,12 @@ function assistantExtraShow() {
 }
 
 const siriExtraData = [
+    { render: function() { return siriExtraWidgetWeather() } },
+    { render: function() { return siriExtraWidgetFlight('bus',0) } },
+    { render: function() { return siriExtraWidgetFlight('flight',0) } },
     { render: function() { return siriExtraWidgetTV(0,0) } },
     { render: function() { return siriExtraWidgetTV(0,1) } },
-    { render: function() { return siriExtraWidgetWeather() } },
     { render: function() { return siriExtraWidgetTV(0,2) } },
-    { render: function() { return siriExtraWidgetTV(1,5) } },
-    // { render: function() { return siriExtraWidgetTV(0,2) } },
 ]
 
 function siriExtraTray() {
@@ -260,7 +260,7 @@ function siriExtraTray() {
         tray.append(siriExtraData[i].render())
 
         if (i < siriExtraData.length - 1) {
-            tray.append(spacerElement(10))
+            tray.append(spacerElement(14))
         }
     }
 
@@ -304,6 +304,7 @@ function siriExtraWidgetTV(a,b) {
 
     let widget = siriExtraWidgetBase()
     widget.classList.add('tv')
+    widget.onclick = function() { tvPopupShow(a,b) }
     widget.append(siriExtraWidgetBg(movie.style.color))
 
     let poster = document.createElement('div')
@@ -313,7 +314,7 @@ function siriExtraWidgetTV(a,b) {
 
     let grow = growElement()
     grow.classList.add('fill-width')
-    // grow.append(siriExtraWidgetInfo(movie.name,movie.info.location))
+    grow.append(siriExtraWidgetInfo(movie.name,movie.info.location))
     widget.append(grow)
 
     return widget
@@ -358,6 +359,72 @@ function siriExtraWidgetWeather() {
     // grow.classList.add('fill-width')
     // // grow.append(siriExtraWidgetInfo(movie.name,movie.info.location))
     // widget.append(grow)
+
+    return widget
+}
+
+function siriExtraWidgetFlight(type,n) {
+    let text = document.createElement('p')
+    text.classList = 'text'
+
+    if (type == 'flight') {
+        var flight = flightData[n]
+        text.innerHTML = `${flight.airline.name} ${flight.number}`
+    } else if (type == 'bus') {
+        var flight = busData[n]
+        text.innerHTML = `${flight.airline.name}`
+    } else if (type == 'train') {
+        var flight = trainData[n]
+        text.innerHTML = `${flight.airline.name}`
+    }
+
+    let widget = siriExtraWidgetBase()
+    widget.classList.add('flight')
+
+    widget.style.setProperty('background-color',`#${flight.airline.color.bg}`)
+    widget.style.setProperty('color',`#${flight.airline.color.fg}`)
+    widget.style.setProperty('fill',`#${flight.airline.color.fg}`)
+
+    widget.onclick = function () { secureModal(openModal(flightDetail(flight,type))) }
+
+    let logo = document.createElement('div')
+    logo.classList = 'logo'
+    logo.innerHTML = flight.airline.icon.svg
+    widget.append(logo)
+
+    widget.append(growElement())
+    widget.append(text)
+
+    let subtext = document.createElement('p')
+    subtext.classList = 'subtext'
+    subtext.innerHTML = `${flight.dep.airport} &#8594 ${flight.arr.airport}`
+    widget.append(subtext)
+
+
+
+    // var detail = `
+    // <div class="data">
+    //     <p class="big">${flight.dep.date.getDate()}</p><p class="small">${processMonth(flight.dep.date.getMonth(),'short')}</p>
+    // </div>`
+
+    // var card = document.createElement('a')
+    // card.classList = 'homecard basic flight clickable layer-1 snap'
+    // card.style.setProperty('--fgCol',`#${flight.airline.color.fg}`)
+    // card.style.setProperty('--bgCol',`#${flight.airline.color.bg}`)
+    // card.onclick = function () { secureModal(openModal(flightDetail(flight,data.type))) }
+    // card.innerHTML = `
+    // <div class="bg"></div>
+    // <div class="logo">${flight.airline.icon.svg}</div>
+    // <div class="grow"></div>
+    // ${text}
+    // <p class="subtext">${flight.dep.airport} &#8594 ${flight.arr.airport}</p>
+    // ${detail}`
+
+
+
+
+
+
 
     return widget
 }

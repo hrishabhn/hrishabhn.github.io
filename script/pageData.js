@@ -986,20 +986,20 @@ const pageData9 = {
         {
             type: 'spacer-content',
         },
-        {
-            render: function() {
-                return mediaTitleElement('Up Next')
-            },
-        },
-        {
-            type: 'tv-med',
-            render: function() {
-                return tvHuluTray(0)
-            }
-        },
-        {
-            type: 'spacer-content',
-        },
+        // {
+        //     render: function() {
+        //         return mediaTitleElement('Up Next')
+        //     },
+        // },
+        // {
+        //     type: 'tv-med',
+        //     render: function() {
+        //         return tvHuluTray(0)
+        //     }
+        // },
+        // {
+        //     type: 'spacer-content',
+        // },
     ],
     render: function() { renderPage(this) },
     open: function() {

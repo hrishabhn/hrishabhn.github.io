@@ -308,7 +308,7 @@
 
 .siri-extra-tray{
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     /* height: 500px; */
 
     /* background-color: red; */
@@ -319,7 +319,7 @@
 .siri-extra-widget{
     width: 155px;
     height: 155px;
-    border-radius: 15px;
+    border-radius: 20px;
     flex-direction: column;
 
     background-size: 100% 100%;
@@ -341,7 +341,7 @@
 /* tv */
 .siri-extra-widget.tv .poster{
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 10;
 
     background-size: cover;
     background-position: center center;
@@ -350,8 +350,7 @@
 .siri-extra-widget.tv .info{
     width: 100%;
     height: 100%;
-    padding: 15px 15px;
-    /* padding-bottom: 30px; */
+    padding: 10px 15px;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -378,7 +377,7 @@
 .siri-extra-widget.weather{
     background-image: linear-gradient(#054684,#5F93C8);
     align-items: flex-start;
-    padding: 18px;
+    padding: 15px;
 }
 .siri-extra-widget.weather .city{
     font-size: 14px;
@@ -398,6 +397,48 @@
     opacity: 0.8;
 }
 
+/* flight */
+
+
+.siri-extra-widget.flight{
+    align-items: flex-start;
+    padding: 15px;
+}
+.siri-extra-widget.flight .logo{
+    height: 30px;
+    width: 60px;
+
+    padding: 0px;
+    border-radius: 20px;
+    justify-content: flex-start;
+}
+.siri-extra-widget.flight .logo svg{
+    width: initial;
+    max-width: 100%;
+}
+
+.siri-extra-widget.flight .text{
+    font-size: 12px;
+    font-weight: 500;
+
+    max-width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.siri-extra-widget.flight .subtext{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-top: 2px;
+
+    max-width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 
 @media screen and (prefers-color-scheme: light) {
