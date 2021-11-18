@@ -2,6 +2,24 @@ function assistantTop() {
     let container = document.createElement('div')
     container.classList = 'siri-top layer-1'
 
+    var focus = document.createElement('a')
+
+    if (currentFocus().name != 'None') {
+        focus.classList = 'focus item'
+        // focus.classList.add(`${currentFocus().color}-fg`)
+        focus.onclick = function() { focusMenuToggle() }
+
+        let focusIcon = document.createElement('div')
+        focusIcon.classList = 'icon'
+        focusIcon.innerHTML = currentFocus().icon
+        focus.append(focusIcon)
+        
+        focus.append(spacerElement(8))
+
+        let focusText = document.createElement('p')
+        focusText.innerHTML = currentFocus().name
+        focus.append(focusText)
+    }
 
     let todo = document.createElement('a')
     todo.classList = 'basic item'
@@ -17,9 +35,10 @@ function assistantTop() {
     idea.classList = 'basic item'
     idea.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 4 40 40"><path d="M16.415 31.906 16.88 34h14.24l.465-2.094c.315-1.417.988-2.752 2.041-3.751C36.395 25.53 38 21.864 38 18c0-7.718-6.283-13.975-14-13.978-7.717.003-14 6.26-14 13.978 0 3.864 1.605 7.53 4.373 10.155 1.054.999 1.727 2.334 2.042 3.751z"/><path d="m17.547 37 .946 4.259C18.849 42.861 20.27 44 21.91 44h4.18c1.64 0 3.061-1.139 3.417-2.741L30.453 37H17.547z"/></svg>'
     idea.href = 'https://www.notion.so/Inbox-90dd1c97df2d4bee8c605c27dfb5fb54'
-    
+
     let pinned = document.createElement('div')
     pinned.classList = 'pinned'
+    pinned.append(focus)
     pinned.append(growElement())
     pinned.append(todo)
     pinned.append(spacerElement(2))
@@ -34,20 +53,31 @@ function assistantTop() {
     container.append(logo)
 
 
-    let header = document.createElement('div')
-    header.classList = 'header'
+    // let header = document.createElement('div')
+    // header.classList = 'header'
 
-    if (currentFocus().name != 'None') {
-        let focus = document.createElement('p')
-        focus.classList = 'layer-2 clickable'
-        focus.classList.add(`${currentFocus().color}-fg`)
-        focus.onclick = function() { focusMenuToggle() }
-        focus.innerHTML = currentFocus().name
+    // if (currentFocus().name != 'None') {
+    //     let focus = document.createElement('a')
+    //     focus.classList = 'focus layer-1 clickable-text'
+    //     // focus.classList.add(`${currentFocus().color}-fg`)
+    //     focus.onclick = function() { focusMenuToggle() }
+
+    //     let focusIcon = document.createElement('div')
+    //     focusIcon.classList = 'icon'
+    //     focusIcon.innerHTML = currentFocus().icon
+    //     focus.append(focusIcon)
+        
+    //     focus.append(spacerElement(5))
+
+    //     let focusText = document.createElement('p')
+    //     focusText.innerHTML = currentFocus().name
+    //     focus.append(focusText)
+
     
-        header.append(focus)
-    }
+    //     header.append(focus)
+    // }
     
-    container.append(header)
+    // container.append(header)
 
     // apps
     let tray = document.createElement('div')
@@ -115,6 +145,10 @@ function assistantInputElement() {
 
     var input = document.createElement('input')
     input.id = 'siri-search'
+    input.autocomplete = 'off'
+    input.autocorrect = false
+    input.autocapitalize = 'off'
+    input.spellcheck = false
     input.onkeyup = function(e) { siriSearch(e) }
     container.append(input)
 

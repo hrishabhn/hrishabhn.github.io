@@ -33,6 +33,18 @@
     padding: 7px;
 }
 
+.siri-top .pinned .item.focus{
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.siri-top .pinned .item.focus .icon{
+    height: 14px;
+    width: 14px;
+}
+
+
+
 .siri-top .logo{
     width: 80%;
     max-width: 200px;
@@ -45,13 +57,6 @@
     flex-direction: column;
     /* align-items: flex-start; */
     /* padding: 20px; */
-}
-.siri-top .header p{
-    padding: 10px;
-    font-size: 12px;
-    font-weight: 400;
-    border-radius: 100px;
-    cursor: default;
 }
 
 .siri-top .suggest-tray{
