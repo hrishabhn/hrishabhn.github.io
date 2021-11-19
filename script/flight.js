@@ -340,7 +340,7 @@ const flightData = [
             time: '1:28pm',
             date: new Date('Nov 20, 2021 13:28:00 EST'),
             terminal: null,
-            gate: '999',
+            gate: 'A3',
         },
         arr: {
             airport: 'LAS',
@@ -350,7 +350,7 @@ const flightData = [
             terminal: '3',
             gate: null,
         },
-        seat: '-',
+        seat: '11E',
         aircraft: aircraftData.a321,
         duration: '4h 14m',
         date: 'Sat, 20 Nov 2021',
@@ -364,7 +364,7 @@ const flightData = [
             time: '3:59pm',
             date: new Date('Nov 20, 2021 15:59:00 PST'),
             terminal: '3',
-            gate: null,
+            gate: 'D17',
         },
         arr: {
             airport: 'SAN',
@@ -374,7 +374,7 @@ const flightData = [
             terminal: '1',
             gate: null,
         },
-        seat: '-',
+        seat: '34B',
         aircraft: aircraftData.a320,
         duration: '1h 13m',
         date: 'Tue, 20 Nov 2021',
@@ -1097,6 +1097,15 @@ function flightDetail(flight,type) {
             gate.innerHTML = `
             <p class="text">Date</p>
             <p class="subtext">${flight.dep.date.getDate()} ${processMonth(flight.dep.date.getMonth(),'short')}</p>`
+        }
+        if (flight.seat) {
+            var seat = document.createElement('a')
+            seat.classList = 'vstack'
+            seat.innerHTML = `
+            <p class="text">Seat</p>
+            <p class="subtext">${flight.seat}</p>`
+            info.append(growElement())
+            info.append(seat)    
         }
 
         info.append(growElement())
