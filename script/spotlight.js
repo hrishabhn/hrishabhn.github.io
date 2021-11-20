@@ -16,7 +16,7 @@ function spotlightHide() {
 // var spotlightPosition
 // var totalResults
 
-function spotlightSearch(e) {
+async function spotlightSearch(e) {
     const input = document.getElementById('spotlight-search')
     const query = input.value
     const resultElement = document.getElementById('spotlight-result')
@@ -96,8 +96,6 @@ function spotlightSearch(e) {
                     resultElement.append(subtray)
                 }
             }
-
-            // console.log(await wikiSearch(query))
             // totalResults = n
         }
     }
@@ -117,38 +115,3 @@ function spotlightDividerElement(size) {
     divider.classList = 'divider layer-1-trans'
     return divider
 }
-
-// async function wikiSearch(query) {
-//     // https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&titles=Curb+Your+Enthusiasm&list=&meta=&pithumbsize=1000
-//    // https://www.mediawiki.org/w/api.php?action=query&format=json&prop=pageimages&titles=Curb%20Your%20Enthusiasm&list=&meta=
-
-//     // get matching title
-//     let url1 = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${query}&origin=*&format=json`
-//     let response1 = await fetch(url1)
-//     let data1 = JSON.parse(await response1.text())
-//     let title = data1.query.search[0].title
-
-//     // get images on matching title page
-//     let url2 = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=images&titles=${title.split(' ').join('%20')}&origin=*`
-//     let response2 = await fetch(url2)
-//     let data2 = JSON.parse(await response2.text())
-//     let file = data2.query.pages
-//     let images = file[Object.keys(file)[0]].images
-//     let image = images[0].title
-
-//     console.log(image)
-
-//     // get url of images
-//     let url3 = `https://en.wikipedia.org/w/api.php?action=query&titles=File:Tedlassotitlecard.jpg&prop=imageinfo&iiprop=url`
-
-
-
-
-//     // var div = document.createElement('div')
-//     // div.innerHTML = data.query.search[0].snippet
-
-
-
-//     // console.log(query)
-//     // return div.firstChild
-// }

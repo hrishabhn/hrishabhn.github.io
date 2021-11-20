@@ -211,9 +211,17 @@ function siriSearch(e) {
                     resultElement.append(subtray)
                 }
             }
+
+            // resultElement.append(await wikiSearchElement(query))
+
         }
     }
 }
+
+
+
+
+
 
 
 
@@ -428,3 +436,4 @@ function siriExtraWidgetFlight(type,n) {
 
     return widget
 }
+

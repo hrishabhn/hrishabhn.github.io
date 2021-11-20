@@ -765,3 +765,95 @@ function containsActor(i,j,query) {
 
 //     return container
 // }
+
+
+
+async function wikiSearch(query) {
+
+
+
+
+
+
+
+    // https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&titles=Curb+Your+Enthusiasm&list=&meta=&pithumbsize=1000
+   // https://www.mediawiki.org/w/api.php?action=query&format=json&prop=pageimages&titles=Curb%20Your%20Enthusiasm&list=&meta=
+
+    // get matching title
+    let url1 = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${query}&origin=*&format=json`
+    let response1 = await fetch(url1)
+    let data1 = JSON.parse(await response1.text())
+    let title = data1.query.search[0].title
+
+    // get images on matching title page
+    // let url2 = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=images&titles=${title.split(' ').join('%20')}&origin=*`
+
+    // get page body
+    let url2 = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=${title.split(' ').join('%20')}&formatversion=2&exsentences=10&exlimit=1&explaintext=1&origin=*`
+    // let url2 = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=explaintext&titles=${title.split(' ').join('%20')}&origin=*`
+    let response2 = await fetch(url2)
+    let data2 = JSON.parse(await response2.text())
+    // let file = data2.query.pages
+    // let images = file[Object.keys(file)[0]].images
+    // let image = images[0].title
+
+    // prop=extracts&exintro&explaintext
+
+    // console.log(data1)
+
+    let results = {
+        title: title,
+        body: data2.query.pages[0].extract
+    }
+
+    return results
+
+    // get url of images
+    // let url3 = `https://en.wikipedia.org/w/api.php?action=query&titles=File:Tedlassotitlecard.jpg&prop=imageinfo&iiprop=url`
+
+
+
+
+    // var div = document.createElement('div')
+    // div.innerHTML = data.query.search[0].snippet
+
+
+
+    // console.log(query)
+    // return div.firstChild
+}
+
+async function wikiSearchElement(query) {
+    let results = await wikiSearch(query)
+
+    var container = document.createElement('a')
+    container.classList = 'result clickable'
+    // container.onclick = function() { globalResultHide() }
+    // container.href = processLink(podData[i][j].link)
+    // container.target = '_blank'
+
+    // var image = document.createElement('div')
+    // image.classList = 'image pod'
+    // image.style.setProperty('background-image',`url("media-image/podcasts/${podData[i][j].id}.${podData[i][j].coverType}")`)
+
+    // container.append(image)
+
+    // container.append(spacerElement(15))
+
+    var info = document.createElement('div')
+    info.classList = 'info'
+    
+    var text = document.createElement('p')
+    text.classList = 'text'
+    text.innerHTML = results.title
+    info.append(text)
+
+    var subtext = document.createElement('p')
+    subtext.classList = 'subtext'
+    subtext.innerHTML = results.body
+    info.append(subtext)
+
+    container.append(info)
+
+    return container
+}
