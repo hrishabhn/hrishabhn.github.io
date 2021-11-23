@@ -79,11 +79,6 @@ function tvSummaryElement(a,b) {
     return container
 }
 
-function removeAllChildNodes(parent) {
-    while (parent.firstChild) {
-        parent.removeChild(parent.firstChild);
-    }
-}
 
 var currentModal = -1
 

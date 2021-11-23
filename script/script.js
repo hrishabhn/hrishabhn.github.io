@@ -221,3 +221,10 @@ function googleSearch(query) {
         return `http://www.google.com/search?q=${query}`
     }
 }
+
+
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
