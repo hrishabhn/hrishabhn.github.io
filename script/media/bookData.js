@@ -6,7 +6,7 @@ const bookData0 = [
         link: 'ibooks://',
         author: 'Roald Dahl',
         coverType: 'jpg',
-        progress: '51%',
+        progress: '85%',
         format: 'EBook',
     },
     {

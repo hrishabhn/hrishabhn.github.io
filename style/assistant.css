@@ -443,6 +443,8 @@
 }
 
 
+
+
 @media screen and (prefers-color-scheme: light) {
 
     .siri-pinned .item:hover{
@@ -468,4 +470,17 @@
     #siri-extra a:active{
         background-color: var(--black-10);
     }
+}
+
+@media(max-width: 450px){
+
+    #siri-extra{
+        height: 55px;
+        margin-top: calc(-55px - 30px);
+        width: 100%;
+    }
+
+
+
+
 }
