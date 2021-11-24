@@ -3906,6 +3906,39 @@ const movieData9 = [
 ]
 const movieData10 = [
     {
+        name: 'Harold & Kumar Go To White Castle',
+        id: 'haroldAndKumar',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            desc: {
+                year: 2004,
+                genre: [
+                    'crime',
+                    'adventure',
+                ],
+            },
+            summary: "Nerdy accountant Harold and his irrepressible friend, Kumar, get stoned watching television and find themselves utterly bewitched by a commercial for White Castle. Convinced there must be one nearby, the two set out on a late-night odyssey that takes them deep into New Jersey. Somehow, the boys manage to run afoul of rednecks, cops and even a car-stealing Neil Patrick Harris before getting anywhere near their beloved sliders.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '12.4 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/harold-kumar-go-to-white-castle-2004',
+            imdbID: 'tt0366551',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Scary Movie',
         id: 'scaryMovie',
         // link: {
