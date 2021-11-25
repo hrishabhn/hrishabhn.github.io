@@ -3,6 +3,7 @@ const focusData = [
         name: 'None',
         color: 'layer-2',
         icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20"><path d="M12 3a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4zm0 11c-3.004 0-9 1.508-9 4.5V20c0 .552.448 1 1 1h16c.552 0 1-.448 1-1v-1.5c0-2.992-5.996-4.5-9-4.5z"/></svg>',
+        action: function() { setFocus(0) },
         apps: [
             {
                 name: "Outlook",
@@ -46,56 +47,84 @@ const focusData = [
         name: 'Watching',
         color: 'red',
         icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 24 24"><path d="M5 6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5zm5 18a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10z"></path></svg>',
+        action: function() { setFocus(1) },
         apps: videoApps,
     },
     {
         name: 'Reading',
         color: 'orange',
         icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 24 24"><path d="M5 6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5zm5 18a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10z"></path></svg>',
+        action: function() { setFocus(2) },
         apps: bookApps,
     },
     {
         name: courseData[0].name,
         color: courseData[0].color,
         icon: courseData[0].icon,
+        action: function() { setFocus(3) },
         apps: ebecApps,
     },
     {
         name: courseData[1].name,
         color: courseData[1].color,
         icon: courseData[1].icon,
+        action: function() { setFocus(4) },
         apps: eceApps,
     },
     {
         name: courseData[2].name,
         color: courseData[2].color,
         icon: courseData[2].icon,
+        action: function() { setFocus(5) },
         apps: engrApps,
     },
     {
         name: courseData[3].name,
         color: courseData[3].color,
         icon: courseData[3].icon,
+        action: function() { setFocus(6) },
         apps: ie335Apps,
     },
     {
         name: courseData[4].name,
         color: courseData[4].color,
         icon: courseData[4].icon,
+        action: function() { setFocus(7) },
         apps: ie386Apps,
     },
     {
         name: courseData[5].name,
         color: courseData[5].color,
         icon: courseData[5].icon,
+        action: function() { setFocus(8) },
         apps: nuclApps,
     },
     {
         name: courseData[6].name,
         color: courseData[6].color,
         icon: courseData[6].icon,
+        action: function() { setFocus(9) },
         apps: spanApps,
     },
+]
+
+const focusMenuData = [
+    [
+        focusData[0],
+    ],
+    [
+        focusData[1],
+        focusData[2],
+    ],
+    [
+        focusData[3],
+        focusData[4],
+        focusData[5],
+        focusData[6],
+        focusData[7],
+        focusData[8],
+        focusData[9],
+    ],
 ]
 
 function focusMenuModal() {
@@ -172,4 +201,70 @@ function focusMenuToggle() {
 function focusMenuHide() {
     let modal = document.getElementById('focus-modal')
     modal.classList.add('hide')
+}
+
+
+
+function contextModalShow(data,e) {
+    // data = focusData
+    // console.log(e)
+
+    x = e.pageX
+    y = e.pageY
+
+    let container = document.getElementById('context-modal')
+    container.classList = 'show'
+
+    let menu = document.getElementById('context-menu')
+    menu.style.setProperty('top',`${y}px`)
+    menu.style.setProperty('left',`${x}px`)
+
+    // console.log(menu.style.getPropertyValue('top'))
+
+    removeAllChildNodes(menu)
+
+    for (let i = 0; i < data.length; i++) {
+        let subtray = document.createElement('div')
+        subtray.classList = 'subtray'
+
+        for (let j = 0; j < data[i].length; j++) {
+            let itemData = data[i][j]
+
+            let item = document.createElement('a')
+            item.classList = 'item clickable-text'
+            item.onclick = function() { itemData.action() }
+            
+            let icon = document.createElement('div')
+            icon.classList = 'icon'
+            icon.innerHTML = itemData.icon
+            item.append(icon)
+    
+            item.append(spacerElement(8))
+    
+            let text = document.createElement('p')
+            text.innerHTML = itemData.name
+            item.append(text)
+    
+            item.append(growElement())
+    
+            subtray.append(item)
+
+            if (i < data[i].length - 1) {
+                subtray.append(spacerElement(4))
+                // menu.append(hlineElement())
+            }
+        }
+
+        menu.append(subtray)
+
+        if (i < data.length - 1) {
+            menu.append(hlineElement())
+        }
+
+
+    }
+}
+function contextModalHide() {
+    let container = document.getElementById('context-modal')
+    container.classList = 'hide'
 }

@@ -5,7 +5,7 @@ function loadApp() {
     loadSwitches()
 
     widgetPopulate()
-    openFirstPage(0)
+    openFirstPage()
     // openModal(tripCard(0))
     // openModal(flightDetail(flightData[0],'flight'))
     // tvPopupShow(0,0)

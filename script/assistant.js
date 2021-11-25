@@ -71,7 +71,7 @@ function assistantPinned() {
     if (currentFocus().name != 'None') {
         focus.classList = 'focus item'
         // focus.classList.add(`${currentFocus().color}-fg`)
-        focus.onclick = function() { focusMenuToggle() }
+        focus.onclick = function(e) { contextModalShow(focusMenuData,e) }
 
         let focusIcon = document.createElement('div')
         focusIcon.classList = 'icon'
