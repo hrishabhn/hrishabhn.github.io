@@ -57,40 +57,80 @@
 
 const movieData0 = [
     {
-        name: 'Narcos: Mexico',
-        id: 'narcos',
+        name: 'Arcane',
+        id: 'arcane',
         link: {
-            netflix: '80997085'
+            netflix: '81435684'
         },
         info: {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
+            // date: '',
+            weekday: 'Saturday',
             desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: 2021,
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
                 genre: [
-                    'crime',
-                    'drama',
+                    'action & adventure',
+                    'animation',
+                    'fantasy',
                 ],
             },
-            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
+            summary: "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
         },
         style: {
-            color: '5980C4',
+            color: '994d33',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: 'mid',
+            titleSize: 'wide',
             mobileType: 'jpg',
-            mobileSize: '1',
+            mobileSize: '8 / 10',
         },
         apps: {
-            tvTimeID: '353232',
-            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
-            imdbID: 'tt8714904',
-            // subReddit: null,
+            tvTimeID: '371028',
+            reelgoodLink: 'https://reelgood.com/show/arcane-2021',
+            imdbID: 'tt11126994',
+            subReddit: 'ArcaneAnimatedSeries',
         },
+        cast: [
+            {
+                actor: 'Hailee Steinfeld',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
+                char: 'Vi',
+            },
+            {
+                actor: 'Mia Sinclair Jenness',
+                // image: 'url',
+                char: 'Powder',
+            },
+            {
+                actor: 'Kevin Alejandro',
+                image: 'https://arealnews.com/wp-content/uploads/2021/10/kevin3-1.jpg',
+                char: 'Jayce',
+            },
+            {
+                actor: 'Harry Lloyd',
+                image: 'https://musicimage.xboxlive.com/catalog/video.contributor.90371b00-0200-11db-89ca-0019b92a3933/image?locale=en-us&target=circle',
+                char: 'Viktor',
+            },
+            {
+                actor: 'Katie Leung',
+                image: 'https://static.wikia.nocookie.net/harrypotter/images/b/b3/Katie_Leung_by_Faye_Thomas_2014.jpg',
+                char: 'Caitlyn',
+            },
+            {
+                actor: 'Shohreh Aghdashloo',
+                image: 'https://m.media-amazon.com/images/M/MV5BZDI0M2Q1NzYtYzIxNy00MWE4LTg4NDgtOWRhZDdkYTAxZTBhXkEyXkFqcGdeQXVyNTY3MzA5MzA@._V1_.jpg',
+                char: 'Grayson',
+            },
+            {
+                actor: 'JB Blanc',
+                // image: 'url',
+                char: 'Vander',
+            },
+        ],
     },
     {
         name: 'Curb Your Enthusiasm',
@@ -194,6 +234,42 @@ const movieData0 = [
             reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-1998',
             imdbID: 'tt0213338',
             subReddit: 'cowboybebop',
+        },
+    },
+    {
+        name: 'Narcos: Mexico',
+        id: 'narcos',
+        link: {
+            netflix: '80997085'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: 2021,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '353232',
+            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
+            imdbID: 'tt8714904',
+            // subReddit: null,
         },
     },
     {
@@ -425,80 +501,107 @@ const movieData1 = [
         ],
     },
     {
-        name: 'Arcane',
-        id: 'arcane',
+        name: 'Cowboy Bebop',
+        id: 'cowboy2',
         link: {
-            netflix: '81435684'
+            netflix: '80207033',
         },
         info: {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            // date: '',
-            weekday: 'Saturday',
+            // date: 'Nov 19, 2021',
+            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
                 yearEnd: null,
                 genre: [
-                    'action & adventure',
-                    'animation',
-                    'fantasy',
+                    'action',
+                    'sci-fi',
                 ],
             },
-            summary: "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+            summary: "A ragtag crew of bounty hunters chases down the galaxy's most dangerous criminals. They'll save the world ... for the right price. A live-action series.",
         },
         style: {
-            color: '994d33',
+            color: '66472A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpeg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '367234',
+            reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-2021',
+            imdbID: 'tt1267295',
+            subReddit: 'cowboybebop',
+        },
+        cast: [
+            {
+                actor: 'John Cho',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjM4Nzk2NjUxNF5BMl5BanBnXkFtZTgwMzY3NDI2MTI@._V1_.jpg',
+                char: 'Spike Spiegel',
+            },
+            {
+                actor: 'Daniella Pineda',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Daniella-Pineda_%28cropped%29.jpg',
+                char: 'Faye Valentine',
+            },
+            {
+                actor: 'Mustafa Shakir',
+                image: 'https://m.media-amazon.com/images/M/MV5BODAyN2U5MTYtNWRlNi00MDAwLWJjNTctZGVhMDg2MzQ1MWUwXkEyXkFqcGdeQXVyMTcwNDQyNDk@._V1_.jpg',
+                char: 'Jet Black',
+            },
+            {
+                actor: 'Elena Satine',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Actress_Elena_Satine_%28cropped_-_Medium_shot%29.jpg',
+                char: 'Julia',
+            },
+            {
+                actor: 'Alex Hassell',
+                image: 'https://www.thewikifeed.com/wp-content/uploads/2021/08/alex-hassell-1.jpg',
+                char: 'Vicious',
+            },
+        ],
+    },
+    {
+        name: 'F is for Family',
+        id: 'fisforfam',
+        link: {
+            netflix: '80028732'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            // date: 'Nov 25, 2021',
+            // weekday: '',
+            desc: {
+                seasons: 5,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
+        },
+        style: {
+            color: '0B6F38',
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'jpg',
-            mobileSize: '8 / 10',
+            mobileSize: '1',
         },
         apps: {
-            tvTimeID: '371028',
-            reelgoodLink: 'https://reelgood.com/show/arcane-2021',
-            imdbID: 'tt11126994',
-            subReddit: 'ArcaneAnimatedSeries',
+            tvTimeID: '287299',
+            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
+            imdbID: 'tt4326894',
+            subReddit: null,
         },
-        cast: [
-            {
-                actor: 'Hailee Steinfeld',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
-                char: 'Vi',
-            },
-            {
-                actor: 'Mia Sinclair Jenness',
-                // image: 'url',
-                char: 'Powder',
-            },
-            {
-                actor: 'Kevin Alejandro',
-                image: 'https://arealnews.com/wp-content/uploads/2021/10/kevin3-1.jpg',
-                char: 'Jayce',
-            },
-            {
-                actor: 'Harry Lloyd',
-                image: 'https://musicimage.xboxlive.com/catalog/video.contributor.90371b00-0200-11db-89ca-0019b92a3933/image?locale=en-us&target=circle',
-                char: 'Viktor',
-            },
-            {
-                actor: 'Katie Leung',
-                image: 'https://static.wikia.nocookie.net/harrypotter/images/b/b3/Katie_Leung_by_Faye_Thomas_2014.jpg',
-                char: 'Caitlyn',
-            },
-            {
-                actor: 'Shohreh Aghdashloo',
-                image: 'https://m.media-amazon.com/images/M/MV5BZDI0M2Q1NzYtYzIxNy00MWE4LTg4NDgtOWRhZDdkYTAxZTBhXkEyXkFqcGdeQXVyNTY3MzA5MzA@._V1_.jpg',
-                char: 'Grayson',
-            },
-            {
-                actor: 'JB Blanc',
-                // image: 'url',
-                char: 'Vander',
-            },
-        ],
     },
     {
         name: "Joanna Lumley's Trans-Siberian Adventure",
@@ -1950,107 +2053,6 @@ const movieData5 = [
     },
 ]
 const movieData6 = [
-    {
-        name: 'Cowboy Bebop',
-        id: 'cowboy2',
-        link: {
-            netflix: '80207033',
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            date: 'Nov 19, 2021',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'sci-fi',
-                ],
-            },
-            summary: "A ragtag crew of bounty hunters chases down the galaxy's most dangerous criminals. They'll save the world ... for the right price. A live-action series.",
-        },
-        style: {
-            color: '66472A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            // mobileType: 'jpg',
-            // mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '367234',
-            reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-2021',
-            imdbID: 'tt1267295',
-            subReddit: 'cowboybebop',
-        },
-        cast: [
-            {
-                actor: 'John Cho',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjM4Nzk2NjUxNF5BMl5BanBnXkFtZTgwMzY3NDI2MTI@._V1_.jpg',
-                char: 'Spike Spiegel',
-            },
-            {
-                actor: 'Daniella Pineda',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Daniella-Pineda_%28cropped%29.jpg',
-                char: 'Faye Valentine',
-            },
-            {
-                actor: 'Mustafa Shakir',
-                image: 'https://m.media-amazon.com/images/M/MV5BODAyN2U5MTYtNWRlNi00MDAwLWJjNTctZGVhMDg2MzQ1MWUwXkEyXkFqcGdeQXVyMTcwNDQyNDk@._V1_.jpg',
-                char: 'Jet Black',
-            },
-            {
-                actor: 'Elena Satine',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Actress_Elena_Satine_%28cropped_-_Medium_shot%29.jpg',
-                char: 'Julia',
-            },
-            {
-                actor: 'Alex Hassell',
-                image: 'https://www.thewikifeed.com/wp-content/uploads/2021/08/alex-hassell-1.jpg',
-                char: 'Vicious',
-            },
-        ],
-    },
-    {
-        name: 'F is for Family',
-        id: 'fisforfam',
-        link: {
-            netflix: '80028732'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            date: 'Nov 25, 2021',
-            // weekday: '',
-            desc: {
-                seasons: 5,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
-        },
-        style: {
-            color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '287299',
-            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
-            imdbID: 'tt4326894',
-            subReddit: null,
-        },
-    },
     {
         name: "It's Always Sunny in Philadelphia",
         id: 'always',
@@ -3905,6 +3907,39 @@ const movieData9 = [
     },
 ]
 const movieData10 = [
+    {
+        name: 'Soul',
+        id: 'soul',
+        link: 'https://www.disneyplus.com/en-gb/movies/soul/77zlWrb9vRYp',
+        info: {
+            service: 'disney',
+            // studio: 'pixar',
+            location: 'Disney+',
+            // date: '',
+            // weekday: '',
+            desc: {
+                year: 2020,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Jamie Foxx leads an all-star cast in this hilarious, heart-filled adventure. Pixar’s 'Soul' introduces Joe, who lands the gig of his life at the best jazz club in town. But one misstep lands Joe in a fantastical place: The Great Before. There, he teams up with soul 22 (Tina Fey), and together they find the answers to some of life’s biggest questions.",
+        },
+        style: {
+            color: '232e43',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/soul-2020-1',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Harold & Kumar Go To White Castle',
         id: 'haroldAndKumar',
