@@ -3908,6 +3908,46 @@ const movieData9 = [
 ]
 const movieData10 = [
     {
+        name: 'Lord of the Rings: Fellowship of the Ring',
+        id: 'lotr1',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GYG9OEApMzVPDfAEAAAAE:type:feature',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+                year: 2001,
+                genre: [
+                    'adventure',
+                    'fantasy',
+                ],
+            },
+            summary: "With the help of a courageous fellowship of friends and allies, Frodo embarks on a perilous mission to destroy the legendary One Ring.",
+        },
+        style: {
+            color: '7e763f',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/the-lord-of-the-rings-the-fellowship-of-the-ring-2001',
+            imdbID: 'tt0120737',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
+    {
         name: 'Soul',
         id: 'soul',
         link: 'https://www.disneyplus.com/en-gb/movies/soul/77zlWrb9vRYp',
