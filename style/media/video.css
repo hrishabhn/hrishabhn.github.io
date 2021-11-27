@@ -280,17 +280,25 @@
     background-color: var(--col);
     color: white;
     fill: white;
+    /* padding: 12px 15px; */
+}
+.hulu-card .info .more{
+    justify-content: flex-start;
     padding: 12px 15px;
-
     font-size: 10px;
     font-weight: 600;
-    /* -webkit-backdrop-filter: saturate(calc(2 / 3)) brightness(calc(3 / 2)); */
+    cursor: default;
+    flex-grow: 1;
 }
-
 .hulu-card .info .icon{
     height: 14px;
     width: 14px;
-    fill: white;
+    fill: var(--white-70);
+    margin: 12px 0;
+    margin-right: 15px;
+}
+.hulu-card .info .icon:hover{
+    fill: var(--white-100);
 }
 
 .tv-poster{
