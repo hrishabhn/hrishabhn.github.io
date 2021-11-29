@@ -57,40 +57,6 @@
 
 const movieData0 = [
     {
-        name: 'Love Island',
-        id: 'loveIsland',
-        link: 'https://www.hulu.com/series/love-island-uk-e3b93210-7e03-471f-8270-0e17161809a8',
-        info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
-            // date: '',
-            desc: {
-                seasons: 7,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'reality',
-                ],
-            },
-            summary: "Reality show. Glamorous singles live in a beautiful villa under the watchful gaze of the audience at home, who have the power to decide who stays and who goes.",
-        },
-        style: {
-            color: 'ea80ff',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '296669',
-            reelgoodLink: 'https://reelgood.com/show/love-island-2015',
-            imdbID: 'tt4770018',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Arcane',
         id: 'arcane',
         link: {
@@ -580,6 +546,40 @@ const movieData1 = [
                 char: 'Connor Roy',
             },
         ],
+    },
+    {
+        name: 'Love Island',
+        id: 'loveIsland',
+        link: 'https://www.hulu.com/series/love-island-uk-e3b93210-7e03-471f-8270-0e17161809a8',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            // date: '',
+            desc: {
+                seasons: 7,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'reality',
+                ],
+            },
+            summary: "Reality show. Glamorous singles live in a beautiful villa under the watchful gaze of the audience at home, who have the power to decide who stays and who goes.",
+        },
+        style: {
+            color: 'ea80ff',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '296669',
+            reelgoodLink: 'https://reelgood.com/show/love-island-2015',
+            imdbID: 'tt4770018',
+            // subReddit: 'subreddit',
+        },
     },
     {
         name: 'Cowboy Bebop',
