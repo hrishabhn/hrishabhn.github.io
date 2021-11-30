@@ -2142,7 +2142,7 @@ const movieData6 = [
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            date: 'Dec 1, 2021',
+            date: 'Dec 1, 2021 23:00:00',
             // weekday: '',
             desc: {
                 seasons: 15,
