@@ -1,12 +1,12 @@
 
 const bookData0 = [
     {
-        name: 'Going Solo',
-        id: 'goingSolo',
+        name: 'Gweilo: Memories of a Hong Kong Childhood',
+        id: 'gweilo',
         link: 'ibooks://',
-        author: 'Roald Dahl',
+        author: 'Martin Booth',
         coverType: 'jpg',
-        progress: '91%',
+        progress: 'NEW',
         format: 'EBook',
     },
     {
@@ -120,15 +120,6 @@ const bookData2 = [
         format: 'EBook',
     },
     {
-        name: 'Gweilo: Memories of a Hong Kong Childhood',
-        id: 'gweilo',
-        link: 'ibooks://',
-        author: 'Martin Booth',
-        coverType: 'jpg',
-        progress: 'NEW',
-        format: 'EBook',
-    },
-    {
         name: 'The Culture Code',
         id: 'cultureCode',
         link: 'ibooks://',
@@ -140,6 +131,15 @@ const bookData2 = [
 ]
 
 const bookData3 = [
+    {
+        name: 'Going Solo',
+        id: 'goingSolo',
+        link: 'ibooks://',
+        author: 'Roald Dahl',
+        coverType: 'jpg',
+        progress: 'Finished',
+        format: 'EBook',
+    },
     {
         name: 'No Rules Rules',
         id: 'noRules',
