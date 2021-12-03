@@ -57,6 +57,116 @@
 
 const movieData0 = [
     {
+        name: "It's Always Sunny in Philadelphia",
+        id: 'always',
+        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            // date: 'Dec 2, 2021 02:00:00',
+            weekday: 'Thursday',
+            desc: {
+                seasons: 15,
+                yearStart: 2005,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'friends',
+                ],
+            },
+            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+        },
+        style: {
+            color: '699933',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '75805',
+            reelgoodLink: 'https://reelgood.com/show/its-always-sunny-in-philadelphia-2005',
+            imdbID: 'tt0472954',
+            subReddit: 'IASIP',
+        },
+        cast: [
+            {
+                actor: 'Charlie Day',
+                image: 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
+                char: 'Charlie Kelly',
+            },
+            {
+                actor: 'Glenn Howerton',
+                image: 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
+                char: 'Dennis Reynolds',
+            },
+            {
+                actor: 'Rob McElenney',
+                image: 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
+                char: 'Mac',
+            },
+            {
+                actor: 'Kaitlin Olson',
+                image: 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
+                char: 'Dee Reynolds',
+            },
+            {
+                actor: 'Danny DeVito',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
+                char: 'Frank Reynolds',
+            },
+        ],
+    },
+    {
+        name: 'Hawkeye',
+        id: 'hawkeye',
+        link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Disney+',
+            weekday: 'Wednesday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'mcu',
+                ],
+            },
+            summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '367146',
+            reelgoodLink: 'https://reelgood.com/show/hawkeye-2021',
+            imdbID: 'tt10160804',
+            subReddit: 'HAWKEYE',
+        },
+        cast: [
+            {
+                actor: 'Jeremy Renner',
+                image: 'https://static.wikia.nocookie.net/marvelmovies/images/2/24/Jeremy_Renner.jpg',
+                char: 'Clint Barton/Hawkeye',
+            },
+            {
+                actor: 'Hailee Steinfeld',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
+                char: 'Kate Bishop',
+            },
+        ],
+    },
+    {
         name: 'Arcane',
         id: 'arcane',
         link: {
@@ -200,6 +310,46 @@ const movieData0 = [
         ],
     },
     {
+        name: 'F is for Family',
+        id: 'fisforfam',
+        link: {
+            netflix: '80028732'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            // date: 'Nov 25, 2021',
+            // weekday: '',
+            desc: {
+                seasons: 5,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
+        },
+        style: {
+            color: '0B6F38',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '287299',
+            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
+            imdbID: 'tt4326894',
+            subReddit: null,
+        },
+    },
+]
+const movieData1 = [
+    {
         name: 'Cowboy Bebop',
         id: 'cowboy',
         link: {
@@ -273,50 +423,140 @@ const movieData0 = [
         },
     },
     {
-        name: 'Ghosts',
-        id: 'ghosts',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
+        name: 'Succession',
+        id: 'succession',
+        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
         info: {
             service: 'hbo',
             studio: 'hbo',
-            location: 'HBO Max',
+            location: 'Hulu',
             // date: '',
-            // weekday: '',
+            weekday: 'Sunday',
             desc: {
-                seasons: 3,
-                yearStart: 2019,
+                seasons: 2,
+                yearStart: 2018,
                 yearEnd: null,
                 genre: [
-                    'comedy',
-                    'fantasy',
+                    //    'comedy',
+                    'drama',
                 ],
             },
-            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
+            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
         },
         style: {
-            color: '513d35',
+            color: '555962',
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
-            mobileType: 'png',
-            mobileSize: '3 / 4',
+            mobileType: 'webp',
+            mobileSize: '4 / 5',
         },
         apps: {
-            tvTimeID: 'tt8594324',
-            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
-            imdbID: 'tt8594324',
-            // subReddit: 'subreddit',
+            tvTimeID: '338186',
+            reelgoodLink: 'https://reelgood.com/show/succession-2018',
+            imdbID: 'tt7660850',
+            subReddit: 'SuccessionTV',
         },
         cast: [
             {
-                actor: 'Charlotte Ritchie',
-                image: 'https://images.mubicdn.net/images/cast_member/562435/cache-635452-1611181278/image-w856.jpg',
-                char: 'Alison Cooper',
+                actor: 'Brian Cox',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
+                char: 'Logan Roy',
             },
             {
-                actor: 'Kiell Smith-Bynoe',
-                image: 'https://i.guim.co.uk/img/media/e95bb7a992d5b17c209a47dd27f7f6fa6c203bc0/1678_445_3832_2299/master/3832.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e6a9a7cb8ff5a39bbf8c6422c9b624dd',
-                char: 'Mike Cooper',
+                actor: 'Jeremy Strong',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
+                char: 'Kendall Roy',
+            },
+            {
+                actor: 'Sarah Snook',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
+                char: 'Shiv Roy',
+            },
+            {
+                actor: 'Matthew Macfadyen',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
+                char: 'Tom Wambsgans',
+            },
+            {
+                actor: 'Kieran Culkin',
+                image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+                char: 'Roman Roy',
+            },
+            {
+                actor: 'Nicholas Braun',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
+                char: 'Greg Hirsch',
+            },
+            {
+                actor: 'Alan Ruck',
+                image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
+                char: 'Connor Roy',
+            },
+        ],
+    },
+    {
+        name: 'Cowboy Bebop',
+        id: 'cowboy2',
+        link: {
+            netflix: '80207033',
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: 'Nov 19, 2021',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'sci-fi',
+                ],
+            },
+            summary: "A ragtag crew of bounty hunters chases down the galaxy's most dangerous criminals. They'll save the world ... for the right price. A live-action series.",
+        },
+        style: {
+            color: '66472A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpeg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '367234',
+            reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-2021',
+            imdbID: 'tt1267295',
+            subReddit: 'cowboybebop',
+        },
+        cast: [
+            {
+                actor: 'John Cho',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjM4Nzk2NjUxNF5BMl5BanBnXkFtZTgwMzY3NDI2MTI@._V1_.jpg',
+                char: 'Spike Spiegel',
+            },
+            {
+                actor: 'Daniella Pineda',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Daniella-Pineda_%28cropped%29.jpg',
+                char: 'Faye Valentine',
+            },
+            {
+                actor: 'Mustafa Shakir',
+                image: 'https://m.media-amazon.com/images/M/MV5BODAyN2U5MTYtNWRlNi00MDAwLWJjNTctZGVhMDg2MzQ1MWUwXkEyXkFqcGdeQXVyMTcwNDQyNDk@._V1_.jpg',
+                char: 'Jet Black',
+            },
+            {
+                actor: 'Elena Satine',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Actress_Elena_Satine_%28cropped_-_Medium_shot%29.jpg',
+                char: 'Julia',
+            },
+            {
+                actor: 'Alex Hassell',
+                image: 'https://www.thewikifeed.com/wp-content/uploads/2021/08/alex-hassell-1.jpg',
+                char: 'Vicious',
             },
         ],
     },
@@ -426,190 +666,7 @@ const movieData0 = [
         ],
     },
 ]
-const movieData1 = [
-    {
-        name: "It's Always Sunny in Philadelphia",
-        id: 'always',
-        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            // date: 'Dec 2, 2021 02:00:00',
-            weekday: 'Thursday',
-            desc: {
-                seasons: 15,
-                yearStart: 2005,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'friends',
-                ],
-            },
-            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
-        },
-        style: {
-            color: '699933',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'tall',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '75805',
-            reelgoodLink: 'https://reelgood.com/show/its-always-sunny-in-philadelphia-2005',
-            imdbID: 'tt0472954',
-            subReddit: 'IASIP',
-        },
-        cast: [
-            {
-                actor: 'Charlie Day',
-                image: 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
-                char: 'Charlie Kelly',
-            },
-            {
-                actor: 'Glenn Howerton',
-                image: 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
-                char: 'Dennis Reynolds',
-            },
-            {
-                actor: 'Rob McElenney',
-                image: 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
-                char: 'Mac',
-            },
-            {
-                actor: 'Kaitlin Olson',
-                image: 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
-                char: 'Dee Reynolds',
-            },
-            {
-                actor: 'Danny DeVito',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
-                char: 'Frank Reynolds',
-            },
-        ],
-    },
-    {
-        name: 'Hawkeye',
-        id: 'hawkeye',
-        link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
-        info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Disney+',
-            weekday: 'Wednesday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'mcu',
-                ],
-            },
-            summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '367146',
-            reelgoodLink: 'https://reelgood.com/show/hawkeye-2021',
-            imdbID: 'tt10160804',
-            subReddit: 'HAWKEYE',
-        },
-        cast: [
-            {
-                actor: 'Jeremy Renner',
-                image: 'https://static.wikia.nocookie.net/marvelmovies/images/2/24/Jeremy_Renner.jpg',
-                char: 'Clint Barton/Hawkeye',
-            },
-            {
-                actor: 'Hailee Steinfeld',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
-                char: 'Kate Bishop',
-            },
-        ],
-    },
-    {
-        name: 'Succession',
-        id: 'succession',
-        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
-            // date: '',
-            weekday: 'Sunday',
-            desc: {
-                seasons: 2,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    //    'comedy',
-                    'drama',
-                ],
-            },
-            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
-        },
-        style: {
-            color: '555962',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '4 / 5',
-        },
-        apps: {
-            tvTimeID: '338186',
-            reelgoodLink: 'https://reelgood.com/show/succession-2018',
-            imdbID: 'tt7660850',
-            subReddit: 'SuccessionTV',
-        },
-        cast: [
-            {
-                actor: 'Brian Cox',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
-                char: 'Logan Roy',
-            },
-            {
-                actor: 'Jeremy Strong',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
-                char: 'Kendall Roy',
-            },
-            {
-                actor: 'Sarah Snook',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
-                char: 'Shiv Roy',
-            },
-            {
-                actor: 'Matthew Macfadyen',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
-                char: 'Tom Wambsgans',
-            },
-            {
-                actor: 'Kieran Culkin',
-                image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
-                char: 'Roman Roy',
-            },
-            {
-                actor: 'Nicholas Braun',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
-                char: 'Greg Hirsch',
-            },
-            {
-                actor: 'Alan Ruck',
-                image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
-                char: 'Connor Roy',
-            },
-        ],
-    },
+const movieData2 = [
     {
         name: 'Love Island',
         id: 'loveIsland',
@@ -644,298 +701,6 @@ const movieData1 = [
             // subReddit: 'subreddit',
         },
     },
-    {
-        name: 'Cowboy Bebop',
-        id: 'cowboy2',
-        link: {
-            netflix: '80207033',
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: 'Nov 19, 2021',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'sci-fi',
-                ],
-            },
-            summary: "A ragtag crew of bounty hunters chases down the galaxy's most dangerous criminals. They'll save the world ... for the right price. A live-action series.",
-        },
-        style: {
-            color: '66472A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpeg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '367234',
-            reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-2021',
-            imdbID: 'tt1267295',
-            subReddit: 'cowboybebop',
-        },
-        cast: [
-            {
-                actor: 'John Cho',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjM4Nzk2NjUxNF5BMl5BanBnXkFtZTgwMzY3NDI2MTI@._V1_.jpg',
-                char: 'Spike Spiegel',
-            },
-            {
-                actor: 'Daniella Pineda',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Daniella-Pineda_%28cropped%29.jpg',
-                char: 'Faye Valentine',
-            },
-            {
-                actor: 'Mustafa Shakir',
-                image: 'https://m.media-amazon.com/images/M/MV5BODAyN2U5MTYtNWRlNi00MDAwLWJjNTctZGVhMDg2MzQ1MWUwXkEyXkFqcGdeQXVyMTcwNDQyNDk@._V1_.jpg',
-                char: 'Jet Black',
-            },
-            {
-                actor: 'Elena Satine',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Actress_Elena_Satine_%28cropped_-_Medium_shot%29.jpg',
-                char: 'Julia',
-            },
-            {
-                actor: 'Alex Hassell',
-                image: 'https://www.thewikifeed.com/wp-content/uploads/2021/08/alex-hassell-1.jpg',
-                char: 'Vicious',
-            },
-        ],
-    },
-    {
-        name: 'F is for Family',
-        id: 'fisforfam',
-        link: {
-            netflix: '80028732'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            // date: 'Nov 25, 2021',
-            // weekday: '',
-            desc: {
-                seasons: 5,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
-        },
-        style: {
-            color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '287299',
-            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
-            imdbID: 'tt4326894',
-            subReddit: null,
-        },
-    },
-    {
-        name: "Joanna Lumley's Trans-Siberian Adventure",
-        id: 'joanna',
-        link: {
-            primeVideo: 'B08VH1HD6F'
-        },
-        info: {
-            service: 'prime',
-            studio: 'bbc',
-            location: 'Prime Video',
-            desc: {
-                seasons: 1,
-                year: 2015,
-                genre: [
-                    'documentary',
-                    'travel',
-                ],
-            },
-            summary: "British actor Joanna Lumley (Absolutely Fabulous) last visited the USSR in 1966 on a modeling job. Almost 50 years later, she finds herself back there on a romantic rail trip from Hong Kong to Moscow via China and Mongolia. It's a journey of nearly 6,000 miles from east to west taking in a panorama of vistas, people and places and immense superpowers steeped in rich history and radical change.",
-        },
-        style: {
-            color: '757077',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'png',
-            mobileSize: '8.7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/joanna-lumleys-transsiberian-adventure-2015',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Chernobyl',
-        id: 'chernobyl',
-        link: 'https://www.hulu.com/series/chernobyl-849bed9a-2da8-484b-8cdf-d7000090fc5d',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
-            desc: {
-                seasons: 1,
-                year: 2019,
-                genre: [
-                    'drama',
-                    'history',
-                    'thriller',
-                ],
-            },
-            summary: "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
-        },
-        style: {
-            color: '86a097',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '360893',
-            reelgoodLink: 'https://reelgood.com/show/chernobyl-2019',
-            imdbID: 'tt7366338',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'The Sopranos',
-        id: 'sopranos',
-        link: 'https://www.hulu.com/series/the-sopranos-4e03024d-2f23-423a-934c-23adf1e62fe9',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
-            desc: {
-                seasons: 6,
-                yearStart: 1999,
-                yearEnd: 2007,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "James Gandolfini stars in this acclaimed series about a mob boss whose professional and private strains land him in therapy.",
-        },
-        style: {
-            color: '443a3c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '75299',
-            reelgoodLink: 'https://reelgood.com/show/the-sopranos-1999',
-            imdbID: 'tt0141842',
-            subReddit: 'thesopranos',
-        },
-    },
-    {
-        name: 'Fleabag',
-        id: 'fleabag',
-        link: {
-            primeVideo: 'B0875QQMD2'
-        },
-        info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
-            desc: {
-                seasons: 2,
-                yearStart: 2016,
-                yearEnd: 2019,
-                genre: [
-                    'comedy',
-                    'drama',
-                ],
-            },
-            summary: "Fleabag is a hilarious and poignant window into the mind of a dry-witted, sexual, angry, grief-riddled woman, as she hurls herself at modern living in London. Award-winning playwright Phoebe Waller-Bridge writes and stars as Fleabag, an unfiltered woman trying to heal, while rejecting anyone who tries to help her and keeping up her bravado all along.",
-        },
-        style: {
-            color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '9 / 10',
-        },
-        apps: {
-            // tvTimeID: '',
-            reelgoodLink: 'https://reelgood.com/show/fleabag-2016',
-            imdbID: 'tt5687612',
-            // subReddit: 'subreddit',
-        },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
-    },
-    {
-        name: 'Final Space',
-        id: 'finalSpace',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GXbJCBwcZGnepwwEAAAhh:type:series',
-        info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: 2021,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "An astronaut named Gary and his planet-destroying sidekick Mooncake embark on serialized journeys through space in order to unlock the mystery of “Final Space,” the last point in the universe, if it actually does exist.",
-        },
-        style: {
-            color: '0b276d',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tall',
-            mobileType: 'jpg',
-            mobileSize: '10 / 9.2',
-        },
-        apps: {
-            tvTimeID: '332353',
-            reelgoodLink: 'https://reelgood.com/show/final-space',
-            imdbID: 'tt6317068',
-            // subReddit: 'subreddit',
-        },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
-    },
-]
-const movieData2 = [
     {
         name: 'You',
         id: 'you',
@@ -1371,13 +1136,6 @@ const movieData3 = [
             imdbID: 'tt0113568',
             // subReddit: 'subreddit',
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
     },
     {
         name: 'Being John Malkovich',
@@ -1435,6 +1193,227 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
+    {
+        name: 'Ghosts',
+        id: 'ghosts',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'fantasy',
+                ],
+            },
+            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
+        },
+        style: {
+            color: '513d35',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'png',
+            mobileSize: '3 / 4',
+        },
+        apps: {
+            tvTimeID: 'tt8594324',
+            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
+            imdbID: 'tt8594324',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Charlotte Ritchie',
+                image: 'https://images.mubicdn.net/images/cast_member/562435/cache-635452-1611181278/image-w856.jpg',
+                char: 'Alison Cooper',
+            },
+            {
+                actor: 'Kiell Smith-Bynoe',
+                image: 'https://i.guim.co.uk/img/media/e95bb7a992d5b17c209a47dd27f7f6fa6c203bc0/1678_445_3832_2299/master/3832.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e6a9a7cb8ff5a39bbf8c6422c9b624dd',
+                char: 'Mike Cooper',
+            },
+        ],
+    },
+    {
+        name: "Joanna Lumley's Trans-Siberian Adventure",
+        id: 'joanna',
+        link: {
+            primeVideo: 'B08VH1HD6F'
+        },
+        info: {
+            service: 'prime',
+            studio: 'bbc',
+            location: 'Prime Video',
+            desc: {
+                seasons: 1,
+                year: 2015,
+                genre: [
+                    'documentary',
+                    'travel',
+                ],
+            },
+            summary: "British actor Joanna Lumley (Absolutely Fabulous) last visited the USSR in 1966 on a modeling job. Almost 50 years later, she finds herself back there on a romantic rail trip from Hong Kong to Moscow via China and Mongolia. It's a journey of nearly 6,000 miles from east to west taking in a panorama of vistas, people and places and immense superpowers steeped in rich history and radical change.",
+        },
+        style: {
+            color: '757077',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'png',
+            mobileSize: '8.7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/joanna-lumleys-transsiberian-adventure-2015',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Chernobyl',
+        id: 'chernobyl',
+        link: 'https://www.hulu.com/series/chernobyl-849bed9a-2da8-484b-8cdf-d7000090fc5d',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'Hulu',
+            desc: {
+                seasons: 1,
+                year: 2019,
+                genre: [
+                    'drama',
+                    'history',
+                    'thriller',
+                ],
+            },
+            summary: "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+        },
+        style: {
+            color: '86a097',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '360893',
+            reelgoodLink: 'https://reelgood.com/show/chernobyl-2019',
+            imdbID: 'tt7366338',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'The Sopranos',
+        id: 'sopranos',
+        link: 'https://www.hulu.com/series/the-sopranos-4e03024d-2f23-423a-934c-23adf1e62fe9',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'Hulu',
+            desc: {
+                seasons: 6,
+                yearStart: 1999,
+                yearEnd: 2007,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "James Gandolfini stars in this acclaimed series about a mob boss whose professional and private strains land him in therapy.",
+        },
+        style: {
+            color: '443a3c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '75299',
+            reelgoodLink: 'https://reelgood.com/show/the-sopranos-1999',
+            imdbID: 'tt0141842',
+            subReddit: 'thesopranos',
+        },
+    },
+    {
+        name: 'Fleabag',
+        id: 'fleabag',
+        link: {
+            primeVideo: 'B0875QQMD2'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            desc: {
+                seasons: 2,
+                yearStart: 2016,
+                yearEnd: 2019,
+                genre: [
+                    'comedy',
+                    'drama',
+                ],
+            },
+            summary: "Fleabag is a hilarious and poignant window into the mind of a dry-witted, sexual, angry, grief-riddled woman, as she hurls herself at modern living in London. Award-winning playwright Phoebe Waller-Bridge writes and stars as Fleabag, an unfiltered woman trying to heal, while rejecting anyone who tries to help her and keeping up her bravado all along.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '9 / 10',
+        },
+        apps: {
+            // tvTimeID: '',
+            reelgoodLink: 'https://reelgood.com/show/fleabag-2016',
+            imdbID: 'tt5687612',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Final Space',
+        id: 'finalSpace',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXbJCBwcZGnepwwEAAAhh:type:series',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: 2021,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "An astronaut named Gary and his planet-destroying sidekick Mooncake embark on serialized journeys through space in order to unlock the mystery of “Final Space,” the last point in the universe, if it actually does exist.",
+        },
+        style: {
+            color: '0b276d',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'jpg',
+            mobileSize: '10 / 9.2',
+        },
+        apps: {
+            tvTimeID: '332353',
+            reelgoodLink: 'https://reelgood.com/show/final-space',
+            imdbID: 'tt6317068',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Maid',
         id: 'maid',
@@ -3342,13 +3321,6 @@ const movieData8 = [
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
     },
     {
         name: 'Game of Thrones',
@@ -3468,13 +3440,6 @@ const movieData8 = [
             // imdbID: 'identifier',
             // subReddit: null,
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
     },
     {
         name: "Brooklyn Nine-Nine",
@@ -3978,13 +3943,6 @@ const movieData9 = [
             imdbID: 'tt0499549',
             // subReddit: 'subreddit',
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
     },
 ]
 const movieData10 = [
@@ -4020,13 +3978,6 @@ const movieData10 = [
             imdbID: 'tt0120737',
             // subReddit: 'subreddit',
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
     },
     {
         name: 'Soul',
