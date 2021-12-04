@@ -297,6 +297,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    cursor: default;
 
     /* min-width: 10px; */
     /* width: 120px; */

@@ -91,8 +91,45 @@ const movieData0 = [
             tvTimeID: '287299',
             reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
             imdbID: 'tt4326894',
-            subReddit: null,
+            subReddit: 'fisforfamily',
         },
+        cast: [
+            {
+                actor: 'Bill Burr',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Bill_Burr_by_Gage_Skidmore.jpg',
+                char: 'Frank Murphy',
+            },
+            {
+                actor: 'Laura Dern',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjI3NzY0MDQxMF5BMl5BanBnXkFtZTcwNzMwMzcyNw@@._V1_.jpg',
+                char: 'Sue Murphy',
+            },
+            {
+                actor: 'Justin Long',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjIwNTEwODY4NF5BMl5BanBnXkFtZTgwMzg0ODMwMjE@._V1_.jpg',
+                char: 'Kevin Murphy',
+            },
+            {
+                actor: 'Debi Derryberry',
+                // image: 'url',
+                char: 'Maureen Murphy',
+            },
+            {
+                actor: 'Haley Reinhart',
+                // image: 'url',
+                char: 'Bill Murphy',
+            },
+            {
+                actor: 'Sam Rockwell',
+                // image: 'url',
+                char: 'Vic',
+            },
+            {
+                actor: 'Trevor Devall',
+                // image: 'url',
+                char: 'Goomer',
+            },
+        ],
     },
     {
         name: 'Arcane',
