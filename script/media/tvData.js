@@ -57,114 +57,42 @@
 
 const movieData0 = [
     {
-        name: "It's Always Sunny in Philadelphia",
-        id: 'always',
-        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
+        name: 'F is for Family',
+        id: 'fisforfam',
+        link: {
+            netflix: '80028732'
+        },
         info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            // date: 'Dec 2, 2021 02:00:00',
-            weekday: 'Thursday',
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            // date: 'Nov 25, 2021',
+            // weekday: '',
             desc: {
-                seasons: 15,
-                yearStart: 2005,
+                seasons: 5,
+                yearStart: 2015,
                 yearEnd: null,
                 genre: [
+                    'animation',
                     'comedy',
-                    'friends',
                 ],
             },
-            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
         },
         style: {
-            color: '699933',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'tall',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '75805',
-            reelgoodLink: 'https://reelgood.com/show/its-always-sunny-in-philadelphia-2005',
-            imdbID: 'tt0472954',
-            subReddit: 'IASIP',
-        },
-        cast: [
-            {
-                actor: 'Charlie Day',
-                image: 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
-                char: 'Charlie Kelly',
-            },
-            {
-                actor: 'Glenn Howerton',
-                image: 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
-                char: 'Dennis Reynolds',
-            },
-            {
-                actor: 'Rob McElenney',
-                image: 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
-                char: 'Mac',
-            },
-            {
-                actor: 'Kaitlin Olson',
-                image: 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
-                char: 'Dee Reynolds',
-            },
-            {
-                actor: 'Danny DeVito',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
-                char: 'Frank Reynolds',
-            },
-        ],
-    },
-    {
-        name: 'Hawkeye',
-        id: 'hawkeye',
-        link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
-        info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Disney+',
-            weekday: 'Wednesday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'mcu',
-                ],
-            },
-            summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'jpg',
+            color: '0B6F38',
+            posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'jpg',
-            mobileSize: '7 / 10',
+            mobileSize: '1',
         },
         apps: {
-            tvTimeID: '367146',
-            reelgoodLink: 'https://reelgood.com/show/hawkeye-2021',
-            imdbID: 'tt10160804',
-            subReddit: 'HAWKEYE',
+            tvTimeID: '287299',
+            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
+            imdbID: 'tt4326894',
+            subReddit: null,
         },
-        cast: [
-            {
-                actor: 'Jeremy Renner',
-                image: 'https://static.wikia.nocookie.net/marvelmovies/images/2/24/Jeremy_Renner.jpg',
-                char: 'Clint Barton/Hawkeye',
-            },
-            {
-                actor: 'Hailee Steinfeld',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
-                char: 'Kate Bishop',
-            },
-        ],
     },
     {
         name: 'Arcane',
@@ -243,6 +171,53 @@ const movieData0 = [
         ],
     },
     {
+        name: 'Hawkeye',
+        id: 'hawkeye',
+        link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Disney+',
+            weekday: 'Wednesday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'mcu',
+                ],
+            },
+            summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '367146',
+            reelgoodLink: 'https://reelgood.com/show/hawkeye-2021',
+            imdbID: 'tt10160804',
+            subReddit: 'HAWKEYE',
+        },
+        cast: [
+            {
+                actor: 'Jeremy Renner',
+                image: 'https://static.wikia.nocookie.net/marvelmovies/images/2/24/Jeremy_Renner.jpg',
+                char: 'Clint Barton/Hawkeye',
+            },
+            {
+                actor: 'Hailee Steinfeld',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
+                char: 'Kate Bishop',
+            },
+        ],
+    },
+    {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
         link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
@@ -309,46 +284,71 @@ const movieData0 = [
             },
         ],
     },
-    {
-        name: 'F is for Family',
-        id: 'fisforfam',
-        link: {
-            netflix: '80028732'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            // date: 'Nov 25, 2021',
-            // weekday: '',
-            desc: {
-                seasons: 5,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
-        },
-        style: {
-            color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '287299',
-            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
-            imdbID: 'tt4326894',
-            subReddit: null,
-        },
-    },
 ]
 const movieData1 = [
+    {
+        name: "It's Always Sunny in Philadelphia",
+        id: 'always',
+        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            // date: 'Dec 2, 2021 02:00:00',
+            weekday: 'Thursday',
+            desc: {
+                seasons: 15,
+                yearStart: 2005,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'friends',
+                ],
+            },
+            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+        },
+        style: {
+            color: '699933',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '75805',
+            reelgoodLink: 'https://reelgood.com/show/its-always-sunny-in-philadelphia-2005',
+            imdbID: 'tt0472954',
+            subReddit: 'IASIP',
+        },
+        cast: [
+            {
+                actor: 'Charlie Day',
+                image: 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
+                char: 'Charlie Kelly',
+            },
+            {
+                actor: 'Glenn Howerton',
+                image: 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
+                char: 'Dennis Reynolds',
+            },
+            {
+                actor: 'Rob McElenney',
+                image: 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
+                char: 'Mac',
+            },
+            {
+                actor: 'Kaitlin Olson',
+                image: 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
+                char: 'Dee Reynolds',
+            },
+            {
+                actor: 'Danny DeVito',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
+                char: 'Frank Reynolds',
+            },
+        ],
+    },
     {
         name: 'Cowboy Bebop',
         id: 'cowboy',
