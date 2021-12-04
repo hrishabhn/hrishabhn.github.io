@@ -253,8 +253,8 @@ function assistantExtraShow() {
 
 const siriExtraData = [
     { render: function() { return siriExtraWidgetWeather() } },
-    { render: function() { return siriExtraWidgetFlight('bus',0) } },
-    { render: function() { return siriExtraWidgetFlight('flight',0) } },
+    // { render: function() { return siriExtraWidgetFlight('bus',0) } },
+    // { render: function() { return siriExtraWidgetFlight('flight',0) } },
     { render: function() { return siriExtraWidgetTV(0,0) } },
     { render: function() { return siriExtraWidgetTV(0,1) } },
     { render: function() { return siriExtraWidgetTV(0,2) } },
