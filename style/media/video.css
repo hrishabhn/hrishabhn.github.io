@@ -28,7 +28,7 @@
     bottom: 115px;
     left: 25px;
 
-    height: 40px;
+    height: 35px;
 
     color: white;
     /* fill: white; */
@@ -41,23 +41,23 @@
     text-decoration: none;
     cursor: pointer;
     height: 100%;
-    border-radius: 100px;
+    border-radius: 12px;
 }
 
 #tv-big-card .button-tray a .icon{
-    height: 12px;
-    width: 12px;
+    height: 10px;
+    width: 10px;
 }
 
 #tv-big-card .button-tray a#tv-big-play{
     color: var(--dark-layer-1);
     fill: var(--dark-layer-1);
 
-    padding: 0px 20px;
+    padding: 0px 15px;
     background-color: white;
 }
 #tv-big-card .button-tray a.app{
-    width: 40px;
+    width: 35px;
     padding: 10px;
     fill: white;
     border: solid 2px white;
