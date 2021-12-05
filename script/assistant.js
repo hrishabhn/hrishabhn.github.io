@@ -178,6 +178,9 @@ function siriSearch(e) {
                 window.open(currentResult.href,'_blank')
             }
         }
+        if (!query) {
+            window.open('http://www.google.com','_self')
+        }
     } else {
         // return elements
         removeAllChildNodes(resultElement)
