@@ -10,15 +10,6 @@ const bookData0 = [
         format: 'EBook',
     },
     {
-        name: 'Project Hail Mary',
-        id: 'project',
-        link: 'ibooks://',
-        author: 'Andy Weir',
-        coverType: 'jpg',
-        progress: 'NEW',
-        format: 'Ebook',
-    },
-    {
         name: 'Faster Than Normal',
         id: 'faster',
         link: {
@@ -32,6 +23,24 @@ const bookData0 = [
 ]
 
 const bookData1 = [
+    {
+        name: 'Project Hail Mary',
+        id: 'project',
+        link: 'ibooks://',
+        author: 'Andy Weir',
+        coverType: 'jpg',
+        progress: 'NEW',
+        format: 'Ebook',
+    },
+    {
+        name: 'Ready Player One',
+        id: 'ready',
+        link: 'ibooks://',
+        author: 'Ernest Cline',
+        coverType: 'jpg',
+        progress: 'NEW',
+        format: 'Ebook',
+    },
     {
         name: 'The Culture Map',
         id: 'cultureMap',
