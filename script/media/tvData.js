@@ -2310,6 +2310,38 @@ const movieData6 = [
         },
     },
     {
+        name: 'Spider-Man: No Way Home',
+        id: 'spiderMan3',
+        // link: '',
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Coming Soon',
+            date: '15 Dec, 2021',
+            desc: {
+                year: 2021,
+                genre: [
+                    'sci-fi',
+                    'MCU',
+                ],
+            },
+            summary: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+        },
+        style: {
+            color: 'af0000',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/spiderman-no-way-home-2021',
+            imdbID: 'tt10872600',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: "The King's Man",
         id: 'kingsMan',
         // link: {
