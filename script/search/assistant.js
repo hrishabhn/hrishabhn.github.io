@@ -175,7 +175,7 @@ function siriSearch(e) {
             if (currentResult.onclick) {
                 currentResult.onclick()
             } else if (currentResult.href) {
-                window.open(currentResult.href,'_blank')
+                window.open(currentResult.href,'_self')
             }
         }
         if (!query) {
