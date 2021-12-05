@@ -181,6 +181,15 @@ const bookData3 = [
         format: 'AudioBook',
     },
     {
+        name: 'Animal Farm',
+        id: 'animalFarm',
+        link: '',
+        author: 'George Orwell',
+        coverType: 'jpg',
+        progress: 'Finished',
+        format: 'Audiobook',
+    },
+    {
         name: "The Hitchhiker's Guide to the Galaxy",
         id: 'hitchhiker',
         link: {
@@ -190,6 +199,24 @@ const bookData3 = [
         coverType: 'jpg',
         progress: 'FINISHED',
         format: 'AudioBook',
+    },
+    {
+        name: 'The Age of Surveillance Capitalism',
+        id: 'surveillance',
+        link: '',
+        author: 'Shoshana Zuboff',
+        coverType: 'jpg',
+        progress: 'Finished',
+        format: 'Hardcover',
+    },
+    {
+        name: '1984',
+        id: '1984',
+        link: '',
+        author: 'George Orwell',
+        coverType: 'jpg',
+        progress: 'Finished',
+        format: 'Audiobook',
     },
     {
         name: 'Boy',
