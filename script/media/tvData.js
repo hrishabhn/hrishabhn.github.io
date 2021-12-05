@@ -142,7 +142,7 @@ const movieData0 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            weekday: 'Saturday',
+            // weekday: 'Saturday',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -263,7 +263,7 @@ const movieData0 = [
             // studio: '',
             location: 'Hulu',
             // date: '',
-            // weekday: '',
+            weekday: 'Sunday',
             desc: {
                 seasons: 11,
                 yearStart: 2000,
