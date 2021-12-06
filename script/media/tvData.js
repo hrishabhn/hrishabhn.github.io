@@ -350,7 +350,7 @@ const movieData1 = [
             titleType: 'png',
             titleSize: 'wide',
             mobileType: 'webp',
-            mobileSize: '4 / 5',
+            mobileSize: '2 / 3',
         },
         apps: {
             tvTimeID: '338186',
