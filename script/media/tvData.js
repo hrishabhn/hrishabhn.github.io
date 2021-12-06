@@ -331,7 +331,7 @@ const movieData1 = [
             service: 'hbo',
             studio: 'hbo',
             location: 'Hulu',
-            // date: '',
+            date: '5 Dec, 2021 21:00:00',
             weekday: 'Sunday',
             desc: {
                 seasons: 2,
@@ -404,7 +404,7 @@ const movieData1 = [
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            // date: 'Dec 2, 2021 02:00:00',
+            date: 'Dec 9, 2021 03:00:00',
             weekday: 'Thursday',
             desc: {
                 seasons: 15,
