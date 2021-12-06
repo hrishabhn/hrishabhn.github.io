@@ -24,6 +24,24 @@ const bookData0 = [
 
 const bookData1 = [
     {
+        name: 'A Short History of Nearly Everything',
+        id: 'short',
+        link: 'ibooks://',
+        author: 'Bill Bryson',
+        coverType: 'jpg',
+        progress: 'NEW',
+        format: 'Ebook',
+    },
+    {
+        name: "100 Things We've Lost to the Internet",
+        id: 'lost',
+        link: 'ibooks://',
+        author: 'Pamela Paul',
+        coverType: 'jpg',
+        progress: 'NEW',
+        format: 'Ebook',
+    },
+    {
         name: 'Project Hail Mary',
         id: 'project',
         link: 'ibooks://',

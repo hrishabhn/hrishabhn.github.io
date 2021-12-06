@@ -2,6 +2,10 @@
 function globalSearchResults(query) {
     var results = [
         {
+            name: 'Focus',
+            results: globalSearchFocus(query),
+        },
+        {
             name: 'Apps',
             results: globalSearchApps(query),
         },
@@ -434,6 +438,26 @@ function globalSearchApps(query) {
 
     return results
 }
+function globalSearchFocus(query) {
+    var results = []
+
+    for (let i = 0; i < focusData.length; i++) {
+        const data = focusData[i]
+        const name = data.name.toUpperCase().includes(query.toUpperCase())
+
+        if (name) {
+            // results.push(spotlightAppElement({
+            //     name: data.name,
+            //     background: data.color,
+            //     action: function() { data.action() },
+            //     icon: data.icon,
+            // }))
+            results.push(spotlightAppElement(data))
+        }
+    }
+
+    return results
+}
 
 function globalSearchSchool(query) {
     var results = []
@@ -480,8 +504,14 @@ function spotlightSocialElement(data) {
 function spotlightAppElement(data) {
     var container = document.createElement('a')
     container.classList = 'result clickable'
-    container.href = data.link
-    container.target = '_blank'
+
+    if (data.link) {
+        container.href = data.link
+        container.target = '_blank'
+    } else if (data.action) {
+        container.onclick = function() { data.action() }
+    }
+
 
     var icon = document.createElement('div')
     icon.classList = 'icon'
