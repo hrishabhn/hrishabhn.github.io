@@ -324,6 +324,79 @@ const movieData0 = [
 ]
 const movieData1 = [
     {
+        name: 'Succession',
+        id: 'succession',
+        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'Hulu',
+            // date: '',
+            weekday: 'Sunday',
+            desc: {
+                seasons: 2,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    //    'comedy',
+                    'drama',
+                ],
+            },
+            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
+        },
+        style: {
+            color: '555962',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '4 / 5',
+        },
+        apps: {
+            tvTimeID: '338186',
+            reelgoodLink: 'https://reelgood.com/show/succession-2018',
+            imdbID: 'tt7660850',
+            subReddit: 'SuccessionTV',
+        },
+        cast: [
+            {
+                actor: 'Brian Cox',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
+                char: 'Logan Roy',
+            },
+            {
+                actor: 'Jeremy Strong',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
+                char: 'Kendall Roy',
+            },
+            {
+                actor: 'Sarah Snook',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
+                char: 'Shiv Roy',
+            },
+            {
+                actor: 'Matthew Macfadyen',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
+                char: 'Tom Wambsgans',
+            },
+            {
+                actor: 'Kieran Culkin',
+                image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+                char: 'Roman Roy',
+            },
+            {
+                actor: 'Nicholas Braun',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
+                char: 'Greg Hirsch',
+            },
+            {
+                actor: 'Alan Ruck',
+                image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
+                char: 'Connor Roy',
+            },
+        ],
+    },
+    {
         name: "It's Always Sunny in Philadelphia",
         id: 'always',
         link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
@@ -385,6 +458,44 @@ const movieData1 = [
                 char: 'Frank Reynolds',
             },
         ],
+    },
+    {
+        name: 'The Expanse',
+        id: 'expanse',
+        link: {
+            primeVideo: 'B08MMJTJSH',
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            date: 'Dec 10, 2021',
+            // weekday: 'Friday',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
+        },
+        style: {
+            color: '466A83',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '280619',
+            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
+            imdbID: 'tt3230854',
+            subReddit: 'TheExpanse',
+        },
     },
     {
         name: 'Cowboy Bebop',
@@ -458,79 +569,6 @@ const movieData1 = [
             imdbID: 'tt8714904',
             // subReddit: null,
         },
-    },
-    {
-        name: 'Succession',
-        id: 'succession',
-        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
-            // date: '',
-            weekday: 'Sunday',
-            desc: {
-                seasons: 2,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    //    'comedy',
-                    'drama',
-                ],
-            },
-            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
-        },
-        style: {
-            color: '555962',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '4 / 5',
-        },
-        apps: {
-            tvTimeID: '338186',
-            reelgoodLink: 'https://reelgood.com/show/succession-2018',
-            imdbID: 'tt7660850',
-            subReddit: 'SuccessionTV',
-        },
-        cast: [
-            {
-                actor: 'Brian Cox',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
-                char: 'Logan Roy',
-            },
-            {
-                actor: 'Jeremy Strong',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
-                char: 'Kendall Roy',
-            },
-            {
-                actor: 'Sarah Snook',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
-                char: 'Shiv Roy',
-            },
-            {
-                actor: 'Matthew Macfadyen',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
-                char: 'Tom Wambsgans',
-            },
-            {
-                actor: 'Kieran Culkin',
-                image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
-                char: 'Roman Roy',
-            },
-            {
-                actor: 'Nicholas Braun',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
-                char: 'Greg Hirsch',
-            },
-            {
-                actor: 'Alan Ruck',
-                image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
-                char: 'Connor Roy',
-            },
-        ],
     },
     {
         name: 'Cowboy Bebop',
@@ -2271,44 +2309,6 @@ const movieData5 = [
     },
 ]
 const movieData6 = [
-    {
-        name: 'The Expanse',
-        id: 'expanse',
-        link: {
-            primeVideo: 'B08MMJTJSH',
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            date: 'Dec 10, 2021',
-            // weekday: 'Friday',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
-            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
-        },
-        style: {
-            color: '466A83',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '280619',
-            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
-            imdbID: 'tt3230854',
-            subReddit: 'TheExpanse',
-        },
-    },
     {
         name: 'Spider-Man: No Way Home',
         id: 'spiderMan3',
