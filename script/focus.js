@@ -212,12 +212,7 @@ function contextModalShow(data,e) {
     x = e.pageX
     y = e.pageY
 
-    let container = document.getElementById('context-modal')
-    container.classList = 'show'
-
     let menu = document.getElementById('context-menu')
-    menu.style.setProperty('top',`${y}px`)
-    menu.style.setProperty('left',`${x}px`)
 
     // console.log(menu.style.getPropertyValue('top'))
 
@@ -263,6 +258,38 @@ function contextModalShow(data,e) {
 
 
     }
+    
+    menu.style.removeProperty('bottom')
+    menu.style.removeProperty('right')
+
+    menu.style.setProperty('top',`${y}px`)
+    menu.style.setProperty('left',`${x}px`)
+
+
+
+
+
+    let menuWidth = menu.offsetWidth
+    let menuHeight = menu.offsetHeight
+
+    let windowWidth = window.innerWidth
+    let windowHeight = window.innerHeight
+
+    let overflowY = (windowHeight - (y + menuHeight)) < 0
+    let overflowX = (windowWidth - (x + menuWidth)) < 0
+
+    if (overflowY) {
+        menu.style.removeProperty('top')
+        menu.style.setProperty('bottom','10px')
+    }
+    if (overflowX) {
+        menu.style.removeProperty('left')
+        menu.style.setProperty('right','10px')
+    }
+
+    let container = document.getElementById('context-modal')
+    container.classList = 'show'
+
 }
 function contextModalHide() {
     let container = document.getElementById('context-modal')
