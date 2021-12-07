@@ -279,10 +279,6 @@ function contextModalShow(data,e) {
     menu.style.setProperty('top',`${y}px`)
     menu.style.setProperty('left',`${x}px`)
 
-
-
-
-
     let menuWidth = menu.offsetWidth
     let menuHeight = menu.offsetHeight
 
