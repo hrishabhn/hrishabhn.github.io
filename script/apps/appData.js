@@ -939,7 +939,7 @@ const ie335Apps = [
         devices: '',
         link: "https://www.gradescope.com/courses/289871",
         target: "self",
-        icon: iconData['gradescope'],
+        icon: iconData['camera'],
     },
     {
         name: "Piazza",
@@ -1021,7 +1021,7 @@ const eceApps = [
         devices: '',
         link: "https://www.gradescope.com/courses/290156",
         target: "self",
-        icon: iconData['gradescope'],
+        icon: iconData['camera'],
     },
     {
         name: "Piazza",
@@ -1095,7 +1095,7 @@ const ebecApps = [
         devices: '',
         link: "https://www.gradescope.com/courses/301332",
         target: "self",
-        icon: iconData['gradescope'],
+        icon: iconData['camera'],
     },
     {
         name: "Syllabus",
