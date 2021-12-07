@@ -56,14 +56,14 @@ const countdownData = [
         name: 'Madrid',
         date: 'Jan 28, 2022',
     },
-    {
-        name: 'Past Countdowns',
-        date: null,
-    },
-    {
-        name: 'Start of Fall 2021',
-        date: 'Aug 23, 2021',
-    },
+    // {
+    //     name: 'Past Countdowns',
+    //     date: null,
+    // },
+    // {
+    //     name: 'Start of Fall 2021',
+    //     date: 'Aug 23, 2021',
+    // },
 
     // {
     //     name: 'Start of Exams',

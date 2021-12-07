@@ -159,7 +159,7 @@ function countdownCalculate(date) {
 
 function countdownProcess(date, type) {
     const countdownResult = countdownCalculate(date)
-    // console.log(countdownResult.only.days)
+    // console.log(countdownResult)
 
     if (type == 'short') {
         if (countdownResult.only.days > 0) {

@@ -227,33 +227,47 @@ function contextModalShow(data,e) {
 
             let item = document.createElement('a')
             item.classList = 'item clickable-text'
-            item.onclick = function() { itemData.action() }
+            if (itemData.action) {
+                item.onclick = function() { itemData.action() }
+            }
             
-            let icon = document.createElement('div')
-            icon.classList = 'icon'
-            icon.innerHTML = itemData.icon
-            item.append(icon)
-    
-            item.append(spacerElement(8))
-    
             let text = document.createElement('p')
             text.innerHTML = itemData.name
             item.append(text)
-    
+
             item.append(growElement())
+            
+            if (itemData.icon) {
+                let icon = document.createElement('div')
+                icon.classList = 'icon'
+                icon.innerHTML = itemData.icon
+                item.append(icon)
+            } else if (itemData.data) {
+                let data = document.createElement('div')
+                data.classList = 'data'
+                data.innerHTML = `
+                <div class="data">
+                    <p class="value">${itemData.data[0]}</p>
+                    <p class="unit">${itemData.data[1]}</p>
+                </div>`
+                item.append(data)
+            }
+
     
             subtray.append(item)
-
-            if (i < data[i].length - 1) {
-                subtray.append(spacerElement(4))
-                // menu.append(hlineElement())
+            
+            if (j < data[i].length - 1) {
+                // subtray.append(spacerElement(40))
+                subtray.append(hlineElement())
             }
         }
 
         menu.append(subtray)
 
         if (i < data.length - 1) {
-            menu.append(hlineElement())
+            var divider = document.createElement('div')
+            divider.classList = ('divider')
+            menu.append(divider)
         }
 
 

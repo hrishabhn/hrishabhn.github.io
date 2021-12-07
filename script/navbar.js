@@ -107,6 +107,22 @@ function navbarRight() {
     var container = document.createElement('div')
     container.classList = 'side right'
 
+    let count = document.createElement('a')
+    count.classList = 'basic item'
+    count.innerHTML = iconData['calendar']
+
+    var countMenuData = [[]]
+    for (let i = 0; i < countdownData.length; i++) {
+        countMenuData[0].push({
+            name: countdownData[i].name,
+            data: [countdownProcess(countdownData[i].date,'short').num,countdownProcess(countdownData[i].date,'short').word],
+
+        })
+    }
+    count.onclick = function(e) { contextModalShow(countMenuData,e) }
+    container.append(count)
+    container.append(spacerElement(5))
+
 
     var focusContainer = document.createElement('div')
     

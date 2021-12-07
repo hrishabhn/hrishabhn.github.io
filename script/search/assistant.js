@@ -68,22 +68,21 @@ function assistantPinned() {
 
     var focus = document.createElement('a')
 
-    if (currentFocus().name != 'None') {
-        focus.classList = 'focus item'
-        // focus.classList.add(`${currentFocus().color}-fg`)
-        focus.onclick = function(e) { contextModalShow(focusMenuData,e) }
+    focus.classList = 'focus item'
+    // focus.classList.add(`${currentFocus().color}-fg`)
+    focus.onclick = function(e) { contextModalShow(focusMenuData,e) }
 
-        let focusIcon = document.createElement('div')
-        focusIcon.classList = 'icon'
-        focusIcon.innerHTML = currentFocus().icon
-        focus.append(focusIcon)
-        
-        focus.append(spacerElement(8))
+    let focusIcon = document.createElement('div')
+    focusIcon.classList = 'icon'
+    focusIcon.innerHTML = currentFocus().icon
+    focus.append(focusIcon)
+    
+    focus.append(spacerElement(8))
 
-        let focusText = document.createElement('p')
-        focusText.innerHTML = currentFocus().name
-        focus.append(focusText)
-    }
+    let focusText = document.createElement('p')
+    focusText.innerHTML = currentFocus().name
+    focus.append(focusText)
+
 
     let todo = document.createElement('a')
     todo.classList = 'basic item'

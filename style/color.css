@@ -32,6 +32,12 @@ body{
 }
 
 
+.layer-1-blur{
+    background-color: var(--dark-layer-1-80);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+
 a{
     color: #fff;
     fill: #fff;
@@ -72,6 +78,12 @@ a.layer-fg{
     .layer-hover:active{
         background-color: var(--black-20);
     }
+
+
+    .layer-1-blur{
+        background-color: var(--white-80);
+    }
+
 
     a{
         color: var(--dark-layer-1);
