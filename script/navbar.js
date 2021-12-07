@@ -107,6 +107,42 @@ function navbarRight() {
     var container = document.createElement('div')
     container.classList = 'side right'
 
+    let watch = document.createElement('a')
+    watch.classList = 'basic item'
+    watch.innerHTML = iconData['tv']
+    let watchMenuData = []
+
+    for (let a = 0; a < 1; a++) {
+        let sectionData = []
+        for (let b = 0; b < movieData[a].length; b++){
+            
+            let movie = movieData[a][b]
+
+            sectionData.push({
+                image: `media-image/TV/background/${movie.id}.${movie.style.posterType}`,
+                name: movie.name,
+                subtext: movie.info.location,
+                // logo: `<div class="logo" style="--darkCol: #${flight.airline.icon.darkCol}; --lightCol: #${flight.airline.icon.lightCol};">${flight.airline.icon.svg}</div>`,
+                action: function() { tvPopupShow(a,b)}
+            })
+
+
+
+        }
+        watchMenuData.push(sectionData)
+    }
+
+    // for (let i = 0; i < countdownData.length; i++) {
+    //     countMenuData[0].push({
+    //         name: countdownData[i].name,
+    //         data: [countdownProcess(countdownData[i].date,'short').num,countdownProcess(countdownData[i].date,'short').word],
+    //         action: function() { showModal('Countdowns',allCountdownsElement()) }
+    //     })
+    // }
+    watch.onclick = function(e) { contextModalShow(watchMenuData,e) }
+    container.append(watch)
+    container.append(spacerElement(5))
+
     let count = document.createElement('a')
     count.classList = 'basic item'
     count.innerHTML = iconData['calendar']
