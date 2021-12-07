@@ -228,6 +228,18 @@ function contextModalShow(data,e) {
                 item.onclick = function() { itemData.action() }
             }
             
+            if (itemData.image) {
+                let image = document.createElement('div')
+                image.classList = 'image'
+                image.style.setProperty('background-image',`url(${itemData.image})`)
+
+                item.append(image)
+                item.append(spacerElement(8))
+            }
+
+
+
+
             let textStack = document.createElement('div')
             textStack.classList = 'vstack textstack'
 

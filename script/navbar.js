@@ -122,18 +122,19 @@ function navbarRight() {
     container.append(count)
     container.append(spacerElement(5))
 
+    let tripNo = 1
     let trip = document.createElement('a')
     trip.classList = 'basic item'
     trip.innerHTML = iconData['plane']
     let tripMenuData = [
             [{
-            image: '',
-            name: 'New York',
-            subtext: '23 December',
+            image: tripData[tripNo].image,
+            name: tripData[tripNo].name,
+            subtext: tripData[tripNo].subhead,
+            action: function () { openModal(secureModal(tripCard(tripNo))) }
         }]
     ]
 
-    let tripNo = 1
     for (let i = 0; i < tripData[tripNo].sections.length; i++) {
         let section = tripData[tripNo].sections[i]
         let sectionData = [
