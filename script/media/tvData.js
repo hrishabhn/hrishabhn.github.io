@@ -222,7 +222,7 @@ const movieData0 = [
                 yearEnd: null,
                 genre: [
                     'crime',
-                    'mcu',
+                    'MCU',
                 ],
             },
             summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
