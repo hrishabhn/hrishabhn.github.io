@@ -254,148 +254,8 @@ const movieData0 = [
             },
         ],
     },
-    {
-        name: 'Curb Your Enthusiasm',
-        id: 'curb',
-        link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
-        info: {
-            service: 'hbo',
-            // studio: '',
-            location: 'Hulu',
-            // date: '',
-            weekday: 'Sunday',
-            desc: {
-                seasons: 11,
-                yearStart: 2000,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                ],
-            },
-            summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
-        },
-        style: {
-            color: 'FDC801',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '76203',
-            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
-            imdbID: 'tt0264235',
-            subReddit: 'curb',
-        },
-        cast: [
-            {
-                actor: 'Larry David',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg/1280px-Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg',
-                char: 'Larry David',
-            },
-            {
-                actor: 'Jeff Garlin',
-                image: 'https://static.wikia.nocookie.net/disney/images/2/27/Jeff_Garlin.jpg',
-                char: 'Jeff Greene',
-            },
-            {
-                actor: 'Cheryl Hines',
-                image: 'https://deadline.com/wp-content/uploads/2019/03/cheryl-hines-e1553018614527.jpg',
-                char: 'Cheryl David',
-            },
-            {
-                actor: 'Susie Essman',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Susie_Essman_at_the_2009_Tribeca_Film_Festival.jpg',
-                char: 'Susie Greene',
-            },
-            {
-                actor: 'Richard Lewis',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTA5NDIzMzk0ODJeQTJeQWpwZ15BbWU2MDA3OTI0Mw@@._V1_UX178_CR0,0,178,264_AL_.jpg',
-                char: 'Richard Lewis',
-            },
-            {
-                actor: 'J.B. Smoove',
-                image: 'https://static.wikia.nocookie.net/harleyquinntv/images/d/d0/J._B._Smoove.jpg',
-                char: 'Leon Black',
-            },
-        ],
-    },
 ]
 const movieData1 = [
-    {
-        name: 'Succession',
-        id: 'succession',
-        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
-            date: '5 Dec, 2021 21:00:00',
-            weekday: 'Sunday',
-            desc: {
-                seasons: 2,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    //    'comedy',
-                    'drama',
-                ],
-            },
-            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
-        },
-        style: {
-            color: '555962',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '338186',
-            reelgoodLink: 'https://reelgood.com/show/succession-2018',
-            imdbID: 'tt7660850',
-            subReddit: 'SuccessionTV',
-        },
-        cast: [
-            {
-                actor: 'Brian Cox',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
-                char: 'Logan Roy',
-            },
-            {
-                actor: 'Jeremy Strong',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
-                char: 'Kendall Roy',
-            },
-            {
-                actor: 'Sarah Snook',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
-                char: 'Shiv Roy',
-            },
-            {
-                actor: 'Matthew Macfadyen',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
-                char: 'Tom Wambsgans',
-            },
-            {
-                actor: 'Kieran Culkin',
-                image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
-                char: 'Roman Roy',
-            },
-            {
-                actor: 'Nicholas Braun',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
-                char: 'Greg Hirsch',
-            },
-            {
-                actor: 'Alan Ruck',
-                image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
-                char: 'Connor Roy',
-            },
-        ],
-    },
     {
         name: "It's Always Sunny in Philadelphia",
         id: 'always',
@@ -496,6 +356,146 @@ const movieData1 = [
             imdbID: 'tt3230854',
             subReddit: 'TheExpanse',
         },
+    },
+    {
+        name: 'Succession',
+        id: 'succession',
+        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'Hulu',
+            date: '12 Dec, 2021 21:00:00',
+            weekday: 'Sunday',
+            desc: {
+                seasons: 2,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    //    'comedy',
+                    'drama',
+                ],
+            },
+            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
+        },
+        style: {
+            color: '555962',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '338186',
+            reelgoodLink: 'https://reelgood.com/show/succession-2018',
+            imdbID: 'tt7660850',
+            subReddit: 'SuccessionTV',
+        },
+        cast: [
+            {
+                actor: 'Brian Cox',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
+                char: 'Logan Roy',
+            },
+            {
+                actor: 'Jeremy Strong',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
+                char: 'Kendall Roy',
+            },
+            {
+                actor: 'Sarah Snook',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
+                char: 'Shiv Roy',
+            },
+            {
+                actor: 'Matthew Macfadyen',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
+                char: 'Tom Wambsgans',
+            },
+            {
+                actor: 'Kieran Culkin',
+                image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+                char: 'Roman Roy',
+            },
+            {
+                actor: 'Nicholas Braun',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
+                char: 'Greg Hirsch',
+            },
+            {
+                actor: 'Alan Ruck',
+                image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
+                char: 'Connor Roy',
+            },
+        ],
+    },
+    {
+        name: 'Curb Your Enthusiasm',
+        id: 'curb',
+        link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
+        info: {
+            service: 'hbo',
+            // studio: '',
+            location: 'Hulu',
+            date: '12 Dec, 2021 22:30:00',
+            weekday: 'Sunday',
+            desc: {
+                seasons: 11,
+                yearStart: 2000,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
+        },
+        style: {
+            color: 'FDC801',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '76203',
+            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
+            imdbID: 'tt0264235',
+            subReddit: 'curb',
+        },
+        cast: [
+            {
+                actor: 'Larry David',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg/1280px-Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg',
+                char: 'Larry David',
+            },
+            {
+                actor: 'Jeff Garlin',
+                image: 'https://static.wikia.nocookie.net/disney/images/2/27/Jeff_Garlin.jpg',
+                char: 'Jeff Greene',
+            },
+            {
+                actor: 'Cheryl Hines',
+                image: 'https://deadline.com/wp-content/uploads/2019/03/cheryl-hines-e1553018614527.jpg',
+                char: 'Cheryl David',
+            },
+            {
+                actor: 'Susie Essman',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Susie_Essman_at_the_2009_Tribeca_Film_Festival.jpg',
+                char: 'Susie Greene',
+            },
+            {
+                actor: 'Richard Lewis',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTA5NDIzMzk0ODJeQTJeQWpwZ15BbWU2MDA3OTI0Mw@@._V1_UX178_CR0,0,178,264_AL_.jpg',
+                char: 'Richard Lewis',
+            },
+            {
+                actor: 'J.B. Smoove',
+                image: 'https://static.wikia.nocookie.net/harleyquinntv/images/d/d0/J._B._Smoove.jpg',
+                char: 'Leon Black',
+            },
+        ],
     },
     {
         name: 'Cowboy Bebop',
