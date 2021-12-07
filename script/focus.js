@@ -209,9 +209,6 @@ function contextModalShow(data,e) {
     // data = focusData
     // console.log(e)
 
-    x = e.pageX
-    y = e.pageY
-
     let menu = document.getElementById('context-menu')
 
     // console.log(menu.style.getPropertyValue('top'))
@@ -231,9 +228,22 @@ function contextModalShow(data,e) {
                 item.onclick = function() { itemData.action() }
             }
             
+            let textStack = document.createElement('div')
+            textStack.classList = 'vstack textstack'
+
             let text = document.createElement('p')
             text.innerHTML = itemData.name
-            item.append(text)
+            textStack.append(text)
+
+            if (itemData.subtext) {
+                let subtext = document.createElement('p')
+                subtext.classList = 'subtext'
+                subtext.innerHTML = itemData.subtext
+                textStack.append(subtext)
+
+            }
+
+            item.append(textStack)
 
             item.append(growElement())
             
@@ -251,6 +261,11 @@ function contextModalShow(data,e) {
                     <p class="unit">${itemData.data[1]}</p>
                 </div>`
                 item.append(data)
+            } else if (itemData.logo) {
+                let logo = document.createElement('div')
+                logo.classList = 'logo'
+                logo.innerHTML = itemData.logo
+                item.append(logo)
             }
 
     
@@ -272,6 +287,13 @@ function contextModalShow(data,e) {
 
 
     }
+
+    var x = e.pageX
+    var y = e.pageY
+    
+    if (y < 70) { y = 70 }
+    
+
     
     menu.style.removeProperty('bottom')
     menu.style.removeProperty('right')

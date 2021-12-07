@@ -110,18 +110,56 @@ function navbarRight() {
     let count = document.createElement('a')
     count.classList = 'basic item'
     count.innerHTML = iconData['calendar']
-
-    var countMenuData = [[]]
+    let countMenuData = [[]]
     for (let i = 0; i < countdownData.length; i++) {
         countMenuData[0].push({
             name: countdownData[i].name,
             data: [countdownProcess(countdownData[i].date,'short').num,countdownProcess(countdownData[i].date,'short').word],
-
+            action: function() { showModal('Countdowns',allCountdownsElement()) }
         })
     }
     count.onclick = function(e) { contextModalShow(countMenuData,e) }
     container.append(count)
     container.append(spacerElement(5))
+
+    let trip = document.createElement('a')
+    trip.classList = 'basic item'
+    trip.innerHTML = iconData['plane']
+    let tripMenuData = [
+            [{
+            image: '',
+            name: 'New York',
+            subtext: '23 December',
+        }]
+    ]
+
+    let tripNo = 1
+    for (let i = 0; i < tripData[tripNo].sections.length; i++) {
+        let section = tripData[tripNo].sections[i]
+        let sectionData = [
+            
+        ]
+        for (let j = 0; j < section.content.length; j++){
+            
+            if (section.content[j].type != 'transit') {
+                let flight = section.content[j].data
+                
+                sectionData.push({
+                    name: flightCardText(flight,section.content[j].type).line1,
+                    subtext: flightCardText(flight,section.content[j].type).line2,
+                    logo: `<div class="logo" style="--darkCol: #${flight.airline.icon.darkCol}; --lightCol: #${flight.airline.icon.lightCol};">${flight.airline.icon.svg}</div>`,
+                    action: function() { openModal(flightDetail(flight,section.content[j].type) )}
+                })
+            }
+
+
+        }
+        tripMenuData.push(sectionData)
+    }
+    trip.onclick = function(e) { contextModalShow(tripMenuData,e) }
+    container.append(trip)
+    container.append(spacerElement(5))
+
 
 
     var focusContainer = document.createElement('div')

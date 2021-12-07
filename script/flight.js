@@ -882,26 +882,31 @@ function tripCard(n) {
     return tripCard
 }
 
+function flightCardText(flight,type) {
+    if (type == 'flight') {
+        var line1 = `${flight.airline.name} ${flight.number}`
+        var line2 = `${flight.aircraft.manufacturer} ${flight.aircraft.name}`
+    } else if ((type == 'bus') || (type == 'train')) {
+        var line1 = flight.number
+        var line2 = flight.aircraft
+    }
+
+    return {
+        line1: line1,
+        line2: line2,
+    }
+}
 
 function flightCard(flight,type) {
     // console.log(flight.dep.stop)
 
     if (type == 'flight') {
-        var info = `
-        <p class="line1">${flight.airline.name} ${flight.number}</p>
-        <p class="line2">${flight.aircraft.manufacturer} ${flight.aircraft.name}</p>`
         var color = 'blue'
         var lefticon = `<div class="lefticon blue" style="transform: rotate(90deg);">${transportIcons.plane}</div>`
     } else if (type == 'bus') {
-        var info = `
-        <p class="line1">${flight.number}</p>
-        <p class="line2">${flight.aircraft}</p>`
         var color = 'red'
         var lefticon = `<div class="lefticon red">${transportIcons.bus}</div>`
     } else if (type == 'train') {
-        var info = `
-        <p class="line1">${flight.number}</p>
-        <p class="line2">${flight.aircraft}</p>`
         var color = 'cyan'
         var lefticon = `<div class="lefticon cyan">${transportIcons.train}</div>`
     }
@@ -914,7 +919,8 @@ function flightCard(flight,type) {
     <div class="logo" style="--darkCol: #${flight.airline.icon.darkCol}; --lightCol: #${flight.airline.icon.lightCol};">${flight.airline.icon.svg}</div>
     <div class="spacer-x" style="--size: 8px;"></div>
     <div class="info vstack">
-       ${info}
+        <p class="line1">${flightCardText(flight,type).line1}</p>
+        <p class="line2">${flightCardText(flight,type).line2}</p>
     </div>
     <div class="grow"></div>`
 
