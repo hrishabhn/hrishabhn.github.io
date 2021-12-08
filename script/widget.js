@@ -45,16 +45,24 @@ const countdownData = [
         date: 'Dec 19, 2021',
     },
     {
+        name: 'Boston',
+        date: 'Dec 23, 2021',
+    },
+    {
         name: 'Christmas',
         date: 'Dec 25, 2021',
     },
     {
-        name: 'New Year',
+        name: 'New Years',
         date: 'Jan 1, 2022',
     },
     {
+        name: 'Toronto',
+        date: 'Dec 3, 2021',
+    },
+    {
         name: 'Madrid',
-        date: 'Jan 28, 2022',
+        date: 'Jan 27, 2022',
     },
     // {
     //     name: 'Past Countdowns',
