@@ -329,8 +329,8 @@ const movieData1 = [
             service: 'prime',
             studio: 'prime',
             location: 'Prime Video',
-            date: 'Dec 10, 2021',
-            // weekday: 'Friday',
+            date: 'Dec 9, 2021 19:00:00',
+            // weekday: 'Thursday',
             desc: {
                 seasons: 6,
                 yearStart: 2015,
