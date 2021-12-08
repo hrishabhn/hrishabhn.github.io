@@ -185,6 +185,12 @@ const appSearchData = [
         link: 'https://b-ok.cc',
         icon: iconData['book'],
     },
+    {
+        name: 'Fast',
+        background: 'netflix',
+        link: 'https://fast.com',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -31.31999969 141.15002441 141.15002441"><path d="M70.62 40.57v9.5A19.78 19.78 0 0 1 91 70.51h9.47a29.24 29.24 0 0 0-29.85-29.94Zm35.85-5.91a49.53 49.53 0 0 0-35.23-14.65h-.59v10.16a39.66 39.66 0 0 1 40.21 40.33h10.16v-.59a49.53 49.53 0 0 0-14.55-35.25Z"/><path d="M0 70.48a70.575 70.575 0 0 1 141.15 0v7.38h-19v-7.3h9.39v-.08a61 61 0 0 0-121.91 0v.08h9.39v7.3h-19v-7.38Z"/><path d="m75.69 64.36-5-54.66-5 54.66a8 8 0 1 0 10 0Z"/></svg>',
+    },
     // design
     {
         name: "Icons8",
