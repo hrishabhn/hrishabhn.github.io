@@ -168,8 +168,7 @@ function appListRender(content) {
     var list = document.createElement('div')
     list.classList = 'app-list layer-1 card-shadow'
 
-    var title = document.createElement('div')
-    title.classList = 'title'
+    var title = titleElement()
     title.innerHTML = content.title
 
     list.append(title)
@@ -211,8 +210,7 @@ function bookmarkRender(content) {
     var container = document.createElement('div')
     container.classList = `bookmark-tray layer-1 card-shadow page-width ${content.devices}`
 
-    var title = document.createElement('div')
-    title.classList = 'title'
+    var title = titleElement()
     title.innerHTML = content.title
 
     container.append(title)
@@ -248,8 +246,7 @@ function appLinkRender(content) {
     var container = document.createElement('div')
     container.classList = `bookmark-tray layer-1 card-shadow page-width ${content.devices}`
 
-    var title = document.createElement('div')
-    title.classList = 'title'
+    var title = titleElement()
     title.innerHTML = content.title
 
     container.append(title)
