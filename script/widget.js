@@ -142,3 +142,61 @@ function coundownPopulate() {
     document.getElementById('countdown-period').innerHTML = countdownProcess((data.date),'short').word
     document.getElementById('countdown-name').innerHTML = data.name
 }
+
+function countdownModalElement(data) {
+    let card = document.createElement('div')
+    card.classList = 'countdown-big layer-1'
+
+    let title = titleElement()
+    title.innerHTML = data.name
+    card.append(title)
+
+    let hstack = document.createElement('div')
+
+    if (countdownCalculate(data.date).only.days) {
+        hstack.append(coutdownVstackElement(countdownCalculate(data.date).part.days,'days'))
+        hstack.append(spacerElement(40))
+    }
+
+    if (countdownCalculate(data.date).only.hours) {
+        hstack.append(coutdownVstackElement(countdownCalculate(data.date).part.hours,'hours'))
+        hstack.append(spacerElement(40))
+    }
+
+    if (countdownCalculate(data.date).only.minutes) {
+        hstack.append(coutdownVstackElement(countdownCalculate(data.date).part.minutes,'minutes'))
+        // hstack.append(spacerElement(40))
+    }
+    
+    // hstack.append(coutdownVstackElement(countdownCalculate(data.date).part.seconds,'seconds'))
+
+    
+    
+    
+    
+    
+    card.append(hstack)
+    
+    // let countdown = document.createElement('div')
+    // countdown.classList = 'time'
+    // countdown.innerHTML = countdownProcess(data.date,'long')
+    // card.append(countdown)
+    return card
+}
+
+function coutdownVstackElement(num,unit) {
+    let vstack = document.createElement('div')
+    vstack.classList = 'vstack'
+    
+    let numElem = document.createElement('p')
+    numElem.classList = 'num'
+    numElem.innerHTML = num
+    vstack.append(numElem)
+
+    let unitElem = document.createElement('p')
+    unitElem.classList = 'unit'
+    unitElem.innerHTML = unit
+    vstack.append(unitElem)
+
+    return(vstack)
+}
