@@ -44,6 +44,7 @@ function navbarLeft() {
 
     var weather = document.createElement('a')
     weather.classList = 'weather item'
+    weather.id = 'temp-button'
     
     var icon = document.createElement('div')
     icon.id = 'temp-icon'
@@ -151,7 +152,7 @@ function navbarRight() {
         countMenuData[0].push({
             name: countdownData[i].name,
             data: [countdownProcess(countdownData[i].date,'short').num,countdownProcess(countdownData[i].date,'short').word],
-            action: function() { showModal('Countdowns',allCountdownsElement()) }
+            action: function() { openModal(countdownModalElement(countdownData[i])) }
         })
     }
     count.onclick = function(e) { contextModalShow(countMenuData,e) }

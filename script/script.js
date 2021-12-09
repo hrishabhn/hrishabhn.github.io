@@ -200,6 +200,18 @@ function countdownProcess(date, type) {
 
         return result
     }
+    //  else if (type == 'long') {
+    //     let string = ''
+
+    //     if (countdownResult.part.days) {
+    //         string = `${countdownResult.part.days}:`
+    //     }
+
+    //     string = `${string}${countdownResult.part.hours}:${countdownResult.part.minutes}`
+
+
+    //     return string
+    // }
 }
 
 function durationCalculate(start, end) {

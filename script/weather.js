@@ -22,6 +22,7 @@ async function weatherPop(input) {
     // console.log(icon)
 
     document.getElementById('temp').innerHTML = `${Math.round(temp)}&#0176`
+    document.getElementById('temp-button').href = `https://weather.com/en-GB/weather/today/l/${lat},${lon}`
 }
 
 function weatherIcon(code) {

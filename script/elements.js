@@ -149,3 +149,9 @@ function colRender(content) {
 
     return col
 }
+
+function titleElement() {
+    let title = document.createElement('div')
+    title.classList = 'title'
+    return title
+}
