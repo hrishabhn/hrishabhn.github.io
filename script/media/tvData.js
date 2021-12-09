@@ -55,7 +55,7 @@
 // bad education
 // arrested dev
 
-const movieData0 = [
+let movieData0 = [
     {
         name: 'F is for Family',
         id: 'fisforfam',
@@ -255,181 +255,7 @@ const movieData0 = [
         ],
     },
 ]
-const movieData1 = [
-    {
-        name: "It's Always Sunny in Philadelphia",
-        id: 'always',
-        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            date: 'Dec 9, 2021 03:00:00',
-            weekday: 'Thursday',
-            desc: {
-                seasons: 15,
-                yearStart: 2005,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'friends',
-                ],
-            },
-            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
-        },
-        style: {
-            color: '699933',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'tall',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '75805',
-            reelgoodLink: 'https://reelgood.com/show/its-always-sunny-in-philadelphia-2005',
-            imdbID: 'tt0472954',
-            subReddit: 'IASIP',
-        },
-        cast: [
-            {
-                actor: 'Charlie Day',
-                image: 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
-                char: 'Charlie Kelly',
-            },
-            {
-                actor: 'Glenn Howerton',
-                image: 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
-                char: 'Dennis Reynolds',
-            },
-            {
-                actor: 'Rob McElenney',
-                image: 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
-                char: 'Mac',
-            },
-            {
-                actor: 'Kaitlin Olson',
-                image: 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
-                char: 'Dee Reynolds',
-            },
-            {
-                actor: 'Danny DeVito',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
-                char: 'Frank Reynolds',
-            },
-        ],
-    },
-    {
-        name: 'The Expanse',
-        id: 'expanse',
-        link: {
-            primeVideo: 'B08MMJTJSH',
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            date: 'Dec 9, 2021 19:00:00',
-            // weekday: 'Thursday',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
-            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
-        },
-        style: {
-            color: '466A83',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '280619',
-            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
-            imdbID: 'tt3230854',
-            subReddit: 'TheExpanse',
-        },
-    },
-    {
-        name: 'Succession',
-        id: 'succession',
-        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
-            date: '12 Dec, 2021 21:00:00',
-            weekday: 'Sunday',
-            desc: {
-                seasons: 2,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    //    'comedy',
-                    'drama',
-                ],
-            },
-            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
-        },
-        style: {
-            color: '555962',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '338186',
-            reelgoodLink: 'https://reelgood.com/show/succession-2018',
-            imdbID: 'tt7660850',
-            subReddit: 'SuccessionTV',
-        },
-        cast: [
-            {
-                actor: 'Brian Cox',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
-                char: 'Logan Roy',
-            },
-            {
-                actor: 'Jeremy Strong',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
-                char: 'Kendall Roy',
-            },
-            {
-                actor: 'Sarah Snook',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
-                char: 'Shiv Roy',
-            },
-            {
-                actor: 'Matthew Macfadyen',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
-                char: 'Tom Wambsgans',
-            },
-            {
-                actor: 'Kieran Culkin',
-                image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
-                char: 'Roman Roy',
-            },
-            {
-                actor: 'Nicholas Braun',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
-                char: 'Greg Hirsch',
-            },
-            {
-                actor: 'Alan Ruck',
-                image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
-                char: 'Connor Roy',
-            },
-        ],
-    },
+let movieData1 = [
     {
         name: 'Curb Your Enthusiasm',
         id: 'curb',
@@ -741,6 +567,197 @@ const movieData1 = [
         ],
     },
 ]
+
+
+let soonMovies = [
+    {
+        name: "It's Always Sunny in Philadelphia",
+        id: 'always',
+        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            date: 'Dec 9, 2021 03:00:00',
+            // weekday: 'Thursday',
+            desc: {
+                seasons: 15,
+                yearStart: 2005,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'friends',
+                ],
+            },
+            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+        },
+        style: {
+            color: '699933',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '75805',
+            reelgoodLink: 'https://reelgood.com/show/its-always-sunny-in-philadelphia-2005',
+            imdbID: 'tt0472954',
+            subReddit: 'IASIP',
+        },
+        cast: [
+            {
+                actor: 'Charlie Day',
+                image: 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
+                char: 'Charlie Kelly',
+            },
+            {
+                actor: 'Glenn Howerton',
+                image: 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
+                char: 'Dennis Reynolds',
+            },
+            {
+                actor: 'Rob McElenney',
+                image: 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
+                char: 'Mac',
+            },
+            {
+                actor: 'Kaitlin Olson',
+                image: 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
+                char: 'Dee Reynolds',
+            },
+            {
+                actor: 'Danny DeVito',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
+                char: 'Frank Reynolds',
+            },
+        ],
+    },
+    {
+        name: 'The Expanse',
+        id: 'expanse',
+        link: {
+            primeVideo: 'B08MMJTJSH',
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            date: 'Dec 9, 2021 19:00:00',
+            // weekday: 'Thursday',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
+        },
+        style: {
+            color: '466A83',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '280619',
+            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
+            imdbID: 'tt3230854',
+            subReddit: 'TheExpanse',
+        },
+    },
+    {
+        name: 'Succession',
+        id: 'succession',
+        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'Hulu',
+            date: '12 Dec, 2021 21:00:00',
+            weekday: 'Sunday',
+            desc: {
+                seasons: 2,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    //    'comedy',
+                    'drama',
+                ],
+            },
+            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
+        },
+        style: {
+            color: '555962',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '338186',
+            reelgoodLink: 'https://reelgood.com/show/succession-2018',
+            imdbID: 'tt7660850',
+            subReddit: 'SuccessionTV',
+        },
+        cast: [
+            {
+                actor: 'Brian Cox',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
+                char: 'Logan Roy',
+            },
+            {
+                actor: 'Jeremy Strong',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
+                char: 'Kendall Roy',
+            },
+            {
+                actor: 'Sarah Snook',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
+                char: 'Shiv Roy',
+            },
+            {
+                actor: 'Matthew Macfadyen',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
+                char: 'Tom Wambsgans',
+            },
+            {
+                actor: 'Kieran Culkin',
+                image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+                char: 'Roman Roy',
+            },
+            {
+                actor: 'Nicholas Braun',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
+                char: 'Greg Hirsch',
+            },
+            {
+                actor: 'Alan Ruck',
+                image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
+                char: 'Connor Roy',
+            },
+        ],
+    },
+]
+
+for (const movie of soonMovies.reverse()) {
+    let soon = (new Date(movie.info.date) > new Date)
+
+    if (soon) {
+        movieData1.unshift(movie)
+    } else {
+        movieData0.unshift(movie)
+    }
+}
+
+
+
 const movieData2 = [
     {
         name: 'Love Island',
