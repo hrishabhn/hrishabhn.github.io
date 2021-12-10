@@ -139,7 +139,7 @@ function tvPopupElement(a,b,old) {
         </div>
         ${tvPopupAppTray(a,b)}
         <div id="tv-top-tray">
-            <div class="bg only-mobile" style="--col: #${movie.style.color}cc;"></div>
+            <div class="bg only-mobile" style="--col: #${movie.style.color};"></div>
             ${leftButton}
             <div class="grow"></div>
             ${rightButton}

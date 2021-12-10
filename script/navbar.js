@@ -236,9 +236,13 @@ function menuTray() {
     var tray = document.createElement('div')
     tray.classList = 'menu-tray'
 
-    for (let i = 0; i < pageData.length; i++) {
-        tray.append(renderMenuElement(pageData[i]))
+    for (let page in pageData) {
+        tray.append(renderMenuElement(pageData[page]))
     }
+
+    // for (let i = 0; i < pageData.length; i++) {
+    //     tray.append(renderMenuElement(pageData[i]))
+    // }
 
     return tray
 }

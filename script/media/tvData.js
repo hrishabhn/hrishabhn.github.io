@@ -637,7 +637,7 @@ let soonMovies = [
         name: 'The Expanse',
         id: 'expanse',
         link: {
-            primeVideo: 'B08MMJTJSH',
+            primeVideo: 'B09LGJ5QNB',
         },
         info: {
             service: 'prime',

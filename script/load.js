@@ -4,7 +4,7 @@ function loadApp() {
     widgetbarRender()
     loadSwitches()
 
-    widgetPopulate()
+    // widgetPopulate()
     openFirstPage()
     // openModal(tripCard(0))
     // openModal(flightDetail(flightData[0],'flight'))
@@ -28,9 +28,9 @@ function openFirstPage(n) {
             pageData[n].open()
         } else {
             if (!('ontouchstart' in document.documentElement)) {
-                pageData[9].open()
+                pageData['assistant'].open()
             } else {
-                pageData[0].open()
+                pageData['home'].open()
             }
         }
     }

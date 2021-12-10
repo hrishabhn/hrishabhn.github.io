@@ -1,15 +1,19 @@
 function pageDataRender() {
-    for (let i = 0; i < pageData.length; i++) {
-        pageData[i].render()
+    for (let page in pageData) {
+        pageData[page].render()
     }
+
+    // for (let i = 0; i < pageData.length; i++) {
+    //     pageData[i].render()
+    // }
 }
 
 const mainElement = document.getElementById('main')
 const navbarElement = document.getElementById('navbar')
 
-const pageData0 = {
+const pageDataHome = {
     info: {
-        id: '0',
+        id: 'home',
         type: 'page',
         name: 'Home',
         subtext: 'Start',
@@ -30,25 +34,17 @@ const pageData0 = {
             }
         },
         // {
-        //     type: 'search',
-        //     engine: 'You',
-        //     link: 'https://you.com',
+        //     type: 'spacer-content',
+        // },
+        // {
+        //     type: 'shortcut-tray',
         //     render: function() {
-        //         return searchElement(this)
+        //         return colContainerRender(
+        //             combineSubColElements(pageShortcutElement(1),pageShortcutElement(3)),
+        //             combineSubColElements(pageShortcutElement(4),pageShortcutElement(8))
+        //         )
         //     }
         // },
-        {
-            type: 'spacer-content',
-        },
-        {
-            type: 'shortcut-tray',
-            render: function() {
-                return colContainerRender(
-                    combineSubColElements(pageShortcutElement(1),pageShortcutElement(3)),
-                    combineSubColElements(pageShortcutElement(4),pageShortcutElement(8))
-                )
-            }
-        },
         {
             type: 'spacer-content',
         },
@@ -140,7 +136,7 @@ const pageData0 = {
 }
 const pageData1 = {
     info: {
-        id: '1',
+        id: 'bookmarks',
         type: 'page',
         name: 'Bookmarks',
         subtext: 'Go',
@@ -184,7 +180,7 @@ const pageData1 = {
 }
 const pageData2 = {
     info: {
-        id: '2',
+        id: 'apps',
         type: 'page',
         name: 'Apps',
         subtext: 'Launch',
@@ -280,7 +276,7 @@ const pageData2 = {
 }
 const pageData3 = {
     info: {
-        id: '3',
+        id: 'school',
         type: 'page',
         name: 'School',
         subtext: 'Learn',
@@ -334,7 +330,7 @@ const pageData3 = {
 }
 const pageData4 = {
     info: {
-        id: '4',
+        id: 'tv',
         type: 'page',
         name: 'TV & Movies',
         subtext: 'Watch',
@@ -346,11 +342,6 @@ const pageData4 = {
         widget: false,
     },
     content: [
-        // {
-        //     render: function() {
-        //         return mediaTitleElement('Watch Now')
-        //     },
-        // },
         {
             type: 'tv-big',
             render: function () {
@@ -602,7 +593,7 @@ const pageData4 = {
 }
 const pageData5 = {
     info: {
-        id: '5',
+        id: 'books',
         type: 'page',
         name: 'Books',
         subtext: 'Read',
@@ -700,7 +691,7 @@ const pageData5 = {
 }
 const pageData6 = {
     info: {
-        id: '6',
+        id: 'podcasts',
         type: 'page',
         name: 'Podcasts',
         subtext: 'Listen',
@@ -794,7 +785,7 @@ const pageData6 = {
 }
 const pageData7 = {
     info: {
-        id: '7',
+        id: 'settings',
         type: 'page',
         name: 'Settings',
         subtext: 'Manage',
@@ -871,7 +862,7 @@ const pageData7 = {
 }
 const pageData8 = {
     info: {
-        id: '8',
+        id: 'travel',
         type: 'page',
         name: 'Travel',
         subtext: 'Go',
@@ -951,9 +942,9 @@ const pageData8 = {
     render: function() { renderPage(this) },
     open: function() { openPage(this.info.id) },
 }
-const pageData9 = {
+const pageDataAssistant = {
     info: {
-        id: '9',
+        id: 'assistant',
         type: 'page',
         name: 'Assistant',
         subtext: 'Go',
@@ -1008,18 +999,18 @@ const pageData9 = {
     },
 }
 
-const pageData = [
-    pageData0,
-    pageData1,
-    pageData2,
-    pageData3,
-    pageData4,
-    pageData5,
-    pageData6,
-    pageData7,
-    pageData8,
-    pageData9,
-]
+const pageData = {
+    'assistant': pageDataAssistant,
+    'home': pageDataHome,
+    'bookmarks': pageData1,
+    'apps': pageData2,
+    // 'school': pageData3,
+    'tv': pageData4,
+    'books': pageData5,
+    'podcasts' : pageData6,
+    // 'settings': pageData7,
+    'travel': pageData8,
+}
 
 function renderPage(page) {
     mainElement.append(renderPageElement(page))
@@ -1078,18 +1069,20 @@ function renderContent(content) {
     return contentElement
 }
 
-var oldPage = 0
-function openPage(n) {
-    if (pageData[n].info.secure) {
-        behindPass(n)
-        
-        if (checkPass()) {
-            doOpenPagePlease(n)
-        }
+var oldPage = 'home'
+function openPage(id) {
+    doOpenPagePlease(id)
 
-    } else {
-        doOpenPagePlease(n)
-    }
+    // if (pageData[n].info.secure) {
+    //     behindPass(n)
+        
+    //     if (checkPass()) {
+    //         doOpenPagePlease(n)
+    //     }
+
+    // } else {
+    //     doOpenPagePlease(n)
+    // }
 }
 
 function doOpenPagePlease(n) {
@@ -1097,6 +1090,9 @@ function doOpenPagePlease(n) {
     document.getElementById(`menu-item-${oldPage}`).classList.remove('selected')
     document.getElementById(`menu-item-${oldPage}`).classList.remove('blue-fg')
     
+    // console.log(pageData[n])
+    // console.log([n])
+
     if (pageData[n].info.widget) {
         document.getElementById('widgetbar').classList.remove('only-mobile')
         document.getElementById('main').classList.remove('full')

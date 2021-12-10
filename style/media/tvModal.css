@@ -493,9 +493,9 @@
         z-index: 10;
         transition: all 0.1s;
     }
-    .tv-popup #tv-popup-current #tv-top-tray.scrolled{
+    /* .tv-popup #tv-popup-current #tv-top-tray.scrolled{
         -webkit-backdrop-filter: blur(25px);
-    }
+    } */
     .tv-popup #tv-popup-current #tv-top-tray .bg{
         position: absolute;
         top: 0;
