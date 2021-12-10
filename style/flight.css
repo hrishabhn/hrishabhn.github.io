@@ -194,8 +194,19 @@
 }
 .trip-container .main-header{
     width: 100%;
-    justify-content: flex-start;
-    padding: 15px 20px;
+    height: 300px;
+    /* justify-content: flex-start; */
+    align-items: flex-end;
+    padding: 15px 15px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.trip-container .main-header .blurbox{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-backdrop-filter: brightness(0.5) saturate(calc(2)) blur(25px);
 }
 .trip-container .main-header .header-textbox{
     flex-direction: column;
