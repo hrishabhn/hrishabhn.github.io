@@ -33,18 +33,18 @@ const pageDataHome = {
                 return searchElement(this)
             }
         },
-        // {
-        //     type: 'spacer-content',
-        // },
-        // {
-        //     type: 'shortcut-tray',
-        //     render: function() {
-        //         return colContainerRender(
-        //             combineSubColElements(pageShortcutElement(1),pageShortcutElement(3)),
-        //             combineSubColElements(pageShortcutElement(4),pageShortcutElement(8))
-        //         )
-        //     }
-        // },
+        {
+            type: 'spacer-content',
+        },
+        {
+            type: 'shortcut-tray',
+            render: function() {
+                return colContainerRender(
+                    combineSubColElements(pageShortcutElement('bookmarks'),pageShortcutElement('apps')),
+                    combineSubColElements(pageShortcutElement('tv'),pageShortcutElement('travel'))
+                )
+            }
+        },
         {
             type: 'spacer-content',
         },
