@@ -257,73 +257,6 @@ let movieData0 = [
 ]
 let movieData1 = [
     {
-        name: 'Curb Your Enthusiasm',
-        id: 'curb',
-        link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
-        info: {
-            service: 'hbo',
-            // studio: '',
-            location: 'Hulu',
-            date: '12 Dec, 2021 22:30:00',
-            weekday: 'Sunday',
-            desc: {
-                seasons: 11,
-                yearStart: 2000,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                ],
-            },
-            summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
-        },
-        style: {
-            color: 'FDC801',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '76203',
-            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
-            imdbID: 'tt0264235',
-            subReddit: 'curb',
-        },
-        cast: [
-            {
-                actor: 'Larry David',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg/1280px-Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg',
-                char: 'Larry David',
-            },
-            {
-                actor: 'Jeff Garlin',
-                image: 'https://static.wikia.nocookie.net/disney/images/2/27/Jeff_Garlin.jpg',
-                char: 'Jeff Greene',
-            },
-            {
-                actor: 'Cheryl Hines',
-                image: 'https://deadline.com/wp-content/uploads/2019/03/cheryl-hines-e1553018614527.jpg',
-                char: 'Cheryl David',
-            },
-            {
-                actor: 'Susie Essman',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Susie_Essman_at_the_2009_Tribeca_Film_Festival.jpg',
-                char: 'Susie Greene',
-            },
-            {
-                actor: 'Richard Lewis',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTA5NDIzMzk0ODJeQTJeQWpwZ15BbWU2MDA3OTI0Mw@@._V1_UX178_CR0,0,178,264_AL_.jpg',
-                char: 'Richard Lewis',
-            },
-            {
-                actor: 'J.B. Smoove',
-                image: 'https://static.wikia.nocookie.net/harleyquinntv/images/d/d0/J._B._Smoove.jpg',
-                char: 'Leon Black',
-            },
-        ],
-    },
-    {
         name: 'Cowboy Bebop',
         id: 'cowboy',
         link: {
@@ -578,7 +511,7 @@ let soonMovies = [
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            date: 'Dec 9, 2021 03:00:00',
+            date: 'Dec 16, 2021 03:00:00',
             // weekday: 'Thursday',
             desc: {
                 seasons: 15,
@@ -643,7 +576,7 @@ let soonMovies = [
             service: 'prime',
             studio: 'prime',
             location: 'Prime Video',
-            date: 'Dec 9, 2021 19:00:00',
+            date: 'Dec 16, 2021 19:00:00',
             // weekday: 'Thursday',
             desc: {
                 seasons: 6,
@@ -741,6 +674,73 @@ let soonMovies = [
                 actor: 'Alan Ruck',
                 image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
                 char: 'Connor Roy',
+            },
+        ],
+    },
+    {
+        name: 'Curb Your Enthusiasm',
+        id: 'curb',
+        link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
+        info: {
+            service: 'hbo',
+            // studio: '',
+            location: 'Hulu',
+            date: '12 Dec, 2021 22:30:00',
+            weekday: 'Sunday',
+            desc: {
+                seasons: 11,
+                yearStart: 2000,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
+        },
+        style: {
+            color: 'FDC801',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '76203',
+            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
+            imdbID: 'tt0264235',
+            subReddit: 'curb',
+        },
+        cast: [
+            {
+                actor: 'Larry David',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg/1280px-Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg',
+                char: 'Larry David',
+            },
+            {
+                actor: 'Jeff Garlin',
+                image: 'https://static.wikia.nocookie.net/disney/images/2/27/Jeff_Garlin.jpg',
+                char: 'Jeff Greene',
+            },
+            {
+                actor: 'Cheryl Hines',
+                image: 'https://deadline.com/wp-content/uploads/2019/03/cheryl-hines-e1553018614527.jpg',
+                char: 'Cheryl David',
+            },
+            {
+                actor: 'Susie Essman',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Susie_Essman_at_the_2009_Tribeca_Film_Festival.jpg',
+                char: 'Susie Greene',
+            },
+            {
+                actor: 'Richard Lewis',
+                image: 'https://m.media-amazon.com/images/M/MV5BMTA5NDIzMzk0ODJeQTJeQWpwZ15BbWU2MDA3OTI0Mw@@._V1_UX178_CR0,0,178,264_AL_.jpg',
+                char: 'Richard Lewis',
+            },
+            {
+                actor: 'J.B. Smoove',
+                image: 'https://static.wikia.nocookie.net/harleyquinntv/images/d/d0/J._B._Smoove.jpg',
+                char: 'Leon Black',
             },
         ],
     },
