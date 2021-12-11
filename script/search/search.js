@@ -441,7 +441,7 @@ function globalSearchApps(query) {
 function globalSearchFocus(query) {
     var results = []
 
-    for (let i = 0; i < focusData.length; i++) {
+    for (let i = 0; (i < focusData.length) && (results.length < 5); i++) {
         const data = focusData[i]
         const name = data.name.toUpperCase().includes(query.toUpperCase())
 
