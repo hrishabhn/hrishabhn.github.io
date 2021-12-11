@@ -167,7 +167,7 @@
 }
 
 .card-shadow{
-    /* box-shadow: 0 8px 24px 0px var(--black-10); */
+    box-shadow: 0 8px 24px 0px var(--black-10);
 }
 
 
