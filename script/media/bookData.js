@@ -6,7 +6,7 @@ const bookData0 = [
         link: 'ibooks://',
         author: 'Bill Bryson',
         coverType: 'jpg',
-        progress: 'NEW',
+        progress: '9%',
         format: 'Ebook',
     },
     {
@@ -15,7 +15,7 @@ const bookData0 = [
         link: 'ibooks://',
         author: 'Martin Booth',
         coverType: 'jpg',
-        progress: 'NEW',
+        progress: '6%',
         format: 'EBook',
     },
     {
