@@ -196,7 +196,7 @@ function siriSearch(e) {
                     var subtray = document.createElement('div')
                     subtray.classList = 'subtray vstack fill-width'
         
-                    for (let j = 0; ((j < results[i].results.length) && (j < 10)); j++) {
+                    for (let j = 0; ((j < results[i].results.length)); j++) {
                         var result = results[i].results[j]
                         result.id = `result-${n}`
         

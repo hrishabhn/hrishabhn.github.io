@@ -231,7 +231,7 @@ function globalSearchMovie(query) {
     var results = []
 
     for (let i = 0; i < movieData.length; i++) {
-        for (let j = 0; j < movieData[i].length; j++) {
+        for (let j = 0; (j < movieData[i].length) && (results.length < 5); j++) {
             const name = movieData[i][j].name.toUpperCase().includes(query.toUpperCase())
             const genre = containsGenre(i,j,query)
             const actor = containsActor(i,j,query)
@@ -427,7 +427,7 @@ function globalSearchTwitter(query) {
 function globalSearchApps(query) {
     var results = []
 
-    for (let i = 0; i < appSearchData.length; i++) {
+    for (let i = 0; i < (appSearchData.length) && (results.length < 5); i++) {
         const data = appSearchData[i]
         const name = data.name.toUpperCase().includes(query.toUpperCase())
 
