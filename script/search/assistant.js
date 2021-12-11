@@ -56,14 +56,12 @@ function assistantTop() {
 
     container.append(tray)
 
-    container.append(tray)
-    
     return container
 }
 
 function assistantPinned() {
     let pinned = document.createElement('div')
-    pinned.classList = 'siri-pinned layer-1'
+    pinned.classList = 'siri-pinned layer-1 card-shadow'
 
 
     var focus = document.createElement('a')
@@ -112,7 +110,7 @@ function assistantPinned() {
 
 function assistantContainer() {
     let container = document.createElement('div')
-    container.classList = 'siri-container layer-1'
+    container.classList = 'siri-container layer-1 card-shadow'
     container.append(assistantInputElement())
     container.append(assistantResultElement())
     return container
