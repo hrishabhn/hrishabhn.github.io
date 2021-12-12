@@ -1070,19 +1070,16 @@ function renderContent(content) {
 }
 
 var oldPage = 'home'
-function openPage(id) {
-    doOpenPagePlease(id)
-
-    // if (pageData[n].info.secure) {
-    //     behindPass(n)
+function openPage(id) {    
+    if (pageData[id].info.secure) {
+        behindPass(id)
         
-    //     if (checkPass()) {
-    //         doOpenPagePlease(n)
-    //     }
-
-    // } else {
-    //     doOpenPagePlease(n)
-    // }
+        if (checkPass()) {
+            doOpenPagePlease(id)
+        }
+    } else {
+        doOpenPagePlease(id)
+    }
 }
 
 function doOpenPagePlease(n) {

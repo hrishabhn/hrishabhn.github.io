@@ -60,7 +60,7 @@ function passCard(n) {
     <div class="spacer-x" style="--size: 30px;"></div>
     <p class="prompt">Please enter password.</p>
     <div class="spacer-x" style="--size: 20px;"></div>
-    <input type="text" id="password-field" class="image-border" placeholder="Password" onkeyup="checkInput(${n})">
+    <input type="text" id="password-field" class="image-border" placeholder="Password" onkeyup="checkInput('${n}')">
     </div>`
 
     return card
