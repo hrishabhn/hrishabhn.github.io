@@ -216,9 +216,18 @@
     min-width: 80px;
     height: 100%;
     /* border-radius: 8px; */
+    padding: 0 10px;
     cursor: default;
     opacity: 0.6;
     transition: all 0.15s;
+}
+.menu-item .content{
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    /* background-color: red; */
 }
 .menu-item .icon{
     height: 14px;
@@ -232,7 +241,7 @@
 }
 .menu-item .select-line{
     height: 3px;
-    width: calc(100% - 20px);
+    width: 100%;
     border-radius: 100px 100px 0 0;
     opacity: 0;
 }
@@ -240,12 +249,11 @@
 .menu-item.selected .select-line{
     opacity: 1;
 }
-.menu-item:hover{
+.menu-item:hover, .menu-item.selected{
     opacity: 1;
-    background-color: var(--white-05);
 }
-.menu-item.selected{
-    opacity: 1;
+.menu-item:hover .content{
+    background-color: var(--white-05);
 }
 
 
@@ -361,6 +369,9 @@
     }
     .menu-item.selected{
         opacity: 1;
+    }
+    .menu-item:hover .content{
+        background: none;
     }
 
 }

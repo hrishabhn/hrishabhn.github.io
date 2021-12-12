@@ -257,15 +257,24 @@ function renderMenuElement(page) {
         menuItem.classList.add('hidden-mobile')
     }
 
-    var menuItemContent = `
-    <div class="grow"></div>
+    let content = document.createElement('div')
+    content.classList = 'content'
+
+    content.innerHTML = `
+
     <div class="icon">${page.info.icon}</div>
-    <div class="spacer-x hidden-mobile" style="--size: 10px;"></div>
+    <div class="spacer-x hidden-mobile" style="--size: 8px;"></div>
     <p>${page.info.name}</p>
-    <div class="grow"></div>
-    <div class="select-line blue"></div>
     `
 
-    menuItem.innerHTML = menuItemContent
+    let line = document.createElement('div')
+    line.classList = 'select-line blue'
+
+    menuItem.append(growElement())
+    menuItem.append(content)
+    menuItem.append(growElement())
+    menuItem.append(line)
+
+
     return menuItem
 }
