@@ -216,7 +216,7 @@
     min-width: 80px;
     height: 100%;
     /* border-radius: 8px; */
-    padding: 0 10px;
+    padding: 0 0px;
     cursor: default;
     opacity: 0.6;
     transition: all 0.15s;
@@ -224,7 +224,7 @@
 .menu-item .content{
     flex-direction: column;
     flex-grow: 1;
-    width: 100%;
+    /* width: 100%; */
     padding: 8px 10px;
     border-radius: 8px;
     /* background-color: red; */
@@ -241,7 +241,7 @@
 }
 .menu-item .select-line{
     height: 3px;
-    width: 100%;
+    width: calc(100% - 20px);
     border-radius: 100px 100px 0 0;
     opacity: 0;
 }
