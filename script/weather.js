@@ -17,12 +17,15 @@ async function weatherPop(input) {
     let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`)
     let data = JSON.parse(await response.text())
     
+    // console.log(data)
+
     const temp = data.main.temp
     const icon = weatherIcon(data.weather[0].icon)
     // console.log(icon)
 
     document.getElementById('temp').innerHTML = `${Math.round(temp)}&#0176`
     document.getElementById('temp-button').href = `https://weather.com/en-GB/weather/today/l/${lat},${lon}`
+    document.getElementById('temp-icon').innerHTML = icon
 }
 
 function weatherIcon(code) {
