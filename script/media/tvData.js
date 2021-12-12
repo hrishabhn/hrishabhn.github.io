@@ -57,81 +57,6 @@
 
 let movieData0 = [
     {
-        name: 'F is for Family',
-        id: 'fisforfam',
-        link: {
-            netflix: '80028732'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            // date: 'Nov 25, 2021',
-            // weekday: '',
-            desc: {
-                seasons: 5,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
-        },
-        style: {
-            color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '287299',
-            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
-            imdbID: 'tt4326894',
-            subReddit: 'fisforfamily',
-        },
-        cast: [
-            {
-                actor: 'Bill Burr',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Bill_Burr_by_Gage_Skidmore.jpg',
-                char: 'Frank Murphy',
-            },
-            {
-                actor: 'Laura Dern',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjI3NzY0MDQxMF5BMl5BanBnXkFtZTcwNzMwMzcyNw@@._V1_.jpg',
-                char: 'Sue Murphy',
-            },
-            {
-                actor: 'Justin Long',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjIwNTEwODY4NF5BMl5BanBnXkFtZTgwMzg0ODMwMjE@._V1_.jpg',
-                char: 'Kevin Murphy',
-            },
-            {
-                actor: 'Debi Derryberry',
-                // image: 'url',
-                char: 'Maureen Murphy',
-            },
-            {
-                actor: 'Haley Reinhart',
-                // image: 'url',
-                char: 'Bill Murphy',
-            },
-            {
-                actor: 'Sam Rockwell',
-                // image: 'url',
-                char: 'Vic',
-            },
-            {
-                actor: 'Trevor Devall',
-                // image: 'url',
-                char: 'Goomer',
-            },
-        ],
-    },
-    {
         name: 'Arcane',
         id: 'arcane',
         link: {
@@ -3312,6 +3237,81 @@ const movieData7 = [
     },
 ]
 const movieData8 = [
+    {
+        name: 'F is for Family',
+        id: 'fisforfam',
+        link: {
+            netflix: '80028732'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            // date: 'Nov 25, 2021',
+            // weekday: '',
+            desc: {
+                seasons: 5,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
+        },
+        style: {
+            color: '0B6F38',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '287299',
+            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
+            imdbID: 'tt4326894',
+            subReddit: 'fisforfamily',
+        },
+        cast: [
+            {
+                actor: 'Bill Burr',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Bill_Burr_by_Gage_Skidmore.jpg',
+                char: 'Frank Murphy',
+            },
+            {
+                actor: 'Laura Dern',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjI3NzY0MDQxMF5BMl5BanBnXkFtZTcwNzMwMzcyNw@@._V1_.jpg',
+                char: 'Sue Murphy',
+            },
+            {
+                actor: 'Justin Long',
+                image: 'https://m.media-amazon.com/images/M/MV5BMjIwNTEwODY4NF5BMl5BanBnXkFtZTgwMzg0ODMwMjE@._V1_.jpg',
+                char: 'Kevin Murphy',
+            },
+            {
+                actor: 'Debi Derryberry',
+                // image: 'url',
+                char: 'Maureen Murphy',
+            },
+            {
+                actor: 'Haley Reinhart',
+                // image: 'url',
+                char: 'Bill Murphy',
+            },
+            {
+                actor: 'Sam Rockwell',
+                // image: 'url',
+                char: 'Vic',
+            },
+            {
+                actor: 'Trevor Devall',
+                // image: 'url',
+                char: 'Goomer',
+            },
+        ],
+    },
     {
         name: 'New Girl',
         id: 'newgirl',
