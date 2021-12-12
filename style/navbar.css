@@ -215,7 +215,7 @@
     flex-direction: column;
     min-width: 80px;
     height: 100%;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     cursor: default;
     opacity: 0.6;
     transition: all 0.15s;
@@ -240,7 +240,11 @@
 .menu-item.selected .select-line{
     opacity: 1;
 }
-.menu-item:hover, .menu-item.selected{
+.menu-item:hover{
+    opacity: 1;
+    background-color: var(--white-05);
+}
+.menu-item.selected{
     opacity: 1;
 }
 
@@ -345,14 +349,18 @@
     .menu-item .select-line{
         display: none;
     }
-    .menu-item:hover, .menu-item.selected{
-        background-color: transparent;
-    }
 
     .menu-item.selected{
         opacity: 1;
         fill: var(--blue-dark);
         color: var(--blue-dark);
+    }
+
+    .menu-item:hover{
+        opacity: 0.4;
+    }
+    .menu-item.selected{
+        opacity: 1;
     }
 
 }
