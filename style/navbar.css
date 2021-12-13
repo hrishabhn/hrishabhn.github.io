@@ -227,7 +227,6 @@
     /* width: 100%; */
     padding: 8px 10px;
     border-radius: 8px;
-    /* background-color: red; */
 }
 .menu-item .icon{
     height: 14px;
@@ -292,6 +291,9 @@
     }
     #global-result .result .logo{
         fill: var(--lightCol);
+    }
+    .menu-item:hover .content{
+        background-color: var(--black-05);
     }
 }
 
@@ -373,5 +375,4 @@
     .menu-item:hover .content{
         background: none;
     }
-
 }
