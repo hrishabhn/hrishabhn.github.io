@@ -78,7 +78,7 @@ const countdownData = [
     },
     {
         name: 'Toronto',
-        date: 'Dec 3, 2021',
+        date: 'Jan 3, 2022',
     },
     {
         name: 'Madrid',
