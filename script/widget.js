@@ -37,18 +37,6 @@ function widgetPopulate() {
 
 const countdownData = [
     {
-        name: 'ECE Final',
-        date: 'Dec 14, 2021 08:00:00',
-    },
-    {
-        name: 'IE 386 Final',
-        date: 'Dec 14, 2021 19:00:00',
-    },
-    {
-        name: 'NUCL Final',
-        date: 'Dec 15, 2021 08:00:00',
-    },
-    {
         name: 'IE 335 Final',
         date: 'Dec 17, 2021 15:30:00',
     },
@@ -62,7 +50,7 @@ const countdownData = [
     },
     {
         name: 'New York',
-        date: 'Dec 19, 2021',
+        date: 'Dec 19, 2021 09:30:00',
     },
     {
         name: 'Boston',
@@ -80,10 +68,12 @@ const countdownData = [
         name: 'Toronto',
         date: 'Jan 3, 2022',
     },
-    {
-        name: 'Madrid',
-        date: 'Jan 27, 2022',
-    },
+    // {
+    //     name: 'Madrid',
+    //     date: 'Jan 27, 2022',
+    // },
+
+
     // {
     //     name: 'Past Countdowns',
     //     date: null,
@@ -152,6 +142,18 @@ const countdownData = [
     // {
     //     name: 'San Diego',
     //     date: 'Nov 20, 2021 00:09:30',
+    // },
+    // {
+    //     name: 'ECE Final',
+    //     date: 'Dec 14, 2021 08:00:00',
+    // },
+    // {
+    //     name: 'IE 386 Final',
+    //     date: 'Dec 14, 2021 19:00:00',
+    // },
+    // {
+    //     name: 'NUCL Final',
+    //     date: 'Dec 15, 2021 08:00:00',
     // },
 ]
 
