@@ -57,6 +57,90 @@
 
 let movieData0 = [
     {
+        name: 'Narcos: Mexico',
+        id: 'narcos',
+        link: {
+            netflix: '80997085'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: 2021,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '353232',
+            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
+            imdbID: 'tt8714904',
+            // subReddit: null,
+        },
+    },
+    {
+        name: 'Ghosts',
+        id: 'ghosts',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'fantasy',
+                ],
+            },
+            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
+        },
+        style: {
+            color: '513d35',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'png',
+            mobileSize: '3 / 4',
+        },
+        apps: {
+            tvTimeID: '361701',
+            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
+            imdbID: 'tt8594324',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Charlotte Ritchie',
+                image: 'https://images.mubicdn.net/images/cast_member/562435/cache-635452-1611181278/image-w856.jpg',
+                char: 'Alison Cooper',
+            },
+            {
+                actor: 'Kiell Smith-Bynoe',
+                image: 'https://i.guim.co.uk/img/media/e95bb7a992d5b17c209a47dd27f7f6fa6c203bc0/1678_445_3832_2299/master/3832.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e6a9a7cb8ff5a39bbf8c6422c9b624dd',
+                char: 'Mike Cooper',
+            },
+        ],
+    },
+    {
         name: 'Arcane',
         id: 'arcane',
         link: {
@@ -216,42 +300,6 @@ let movieData1 = [
             reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-1998',
             imdbID: 'tt0213338',
             subReddit: 'cowboybebop',
-        },
-    },
-    {
-        name: 'Narcos: Mexico',
-        id: 'narcos',
-        link: {
-            netflix: '80997085'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: 2021,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '353232',
-            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
-            imdbID: 'tt8714904',
-            // subReddit: null,
         },
     },
     {
@@ -436,7 +484,7 @@ let soonMovies = [
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            date: 'Dec 16, 2021 03:00:00',
+            date: 'Dec 23, 2021 03:00:00',
             // weekday: 'Thursday',
             desc: {
                 seasons: 15,
@@ -501,7 +549,7 @@ let soonMovies = [
             service: 'prime',
             studio: 'prime',
             location: 'Prime Video',
-            date: 'Dec 16, 2021 19:00:00',
+            date: 'Dec 23, 2021 19:00:00',
             // weekday: 'Thursday',
             desc: {
                 seasons: 6,
@@ -1192,54 +1240,6 @@ const movieData4 = [
                 actor: 'George Takei',
                 // image: 'url',
                 char: 'Shinji Yokohama',
-            },
-        ],
-    },
-    {
-        name: 'Ghosts',
-        id: 'ghosts',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 3,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'fantasy',
-                ],
-            },
-            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
-        },
-        style: {
-            color: '513d35',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'png',
-            mobileSize: '3 / 4',
-        },
-        apps: {
-            tvTimeID: 'tt8594324',
-            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
-            imdbID: 'tt8594324',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Charlotte Ritchie',
-                image: 'https://images.mubicdn.net/images/cast_member/562435/cache-635452-1611181278/image-w856.jpg',
-                char: 'Alison Cooper',
-            },
-            {
-                actor: 'Kiell Smith-Bynoe',
-                image: 'https://i.guim.co.uk/img/media/e95bb7a992d5b17c209a47dd27f7f6fa6c203bc0/1678_445_3832_2299/master/3832.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e6a9a7cb8ff5a39bbf8c6422c9b624dd',
-                char: 'Mike Cooper',
             },
         ],
     },
