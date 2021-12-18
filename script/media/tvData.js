@@ -4093,6 +4093,46 @@ const movieData9 = [
 ]
 const movieData10 = [
     {
+        name: 'Spider-Man',
+        id: 'spider_1_1',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            studio: 'marvel',
+            location: 'Download',
+            desc: {
+                year: 2002,
+                genre: [
+                    'action',
+                    'sci-fi',
+                ],
+            },
+            summary: "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+        },
+        style: {
+            color: '9a6732',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/spider-man-2002',
+            imdbID: 'tt0145487',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
+    {
         name: 'Lord of the Rings: Fellowship of the Ring',
         id: 'lotr1',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYG9OEApMzVPDfAEAAAAE:type:feature',

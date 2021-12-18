@@ -5,10 +5,11 @@ function loadApp() {
     loadSwitches()
 
     // widgetPopulate()
-    openFirstPage()
+    // openFirstPage()
+    openFirstPage('tv')
+    tvPopupShow(0,3)
     // openModal(tripCard(1))
     // openModal(flightDetail(flightData[0],'flight'))
-    // tvPopupShow(0,0)
     // testTV()
     calTest()
     // spotlightShow()

@@ -511,7 +511,7 @@ const pageData4 = {
         {
             type: 'tv-med',
             render: function() {
-                return tvMidTray(6)
+                return tvHuluTray(6)
             }
         },
         {
