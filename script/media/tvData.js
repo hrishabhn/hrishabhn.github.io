@@ -2235,6 +2235,8 @@ const movieData6 = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/the-kings-man-2020',

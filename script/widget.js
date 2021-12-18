@@ -37,18 +37,6 @@ function widgetPopulate() {
 
 const countdownData = [
     {
-        name: 'IE 335 Final',
-        date: 'Dec 17, 2021 15:30:00',
-    },
-    {
-        name: 'SPAN Final',
-        date: 'Dec 17, 2021 19:00:00',
-    },
-    {
-        name: 'End of Semester',
-        date: 'Dec 17, 2021 21:00:00',
-    },
-    {
         name: 'New York',
         date: 'Dec 19, 2021 09:30:00',
     },
@@ -154,6 +142,18 @@ const countdownData = [
     // {
     //     name: 'NUCL Final',
     //     date: 'Dec 15, 2021 08:00:00',
+    // },
+    // {
+    //     name: 'IE 335 Final',
+    //     date: 'Dec 17, 2021 15:30:00',
+    // },
+    // {
+    //     name: 'SPAN Final',
+    //     date: 'Dec 17, 2021 19:00:00',
+    // },
+    // {
+    //     name: 'End of Semester',
+    //     date: 'Dec 17, 2021 21:00:00',
     // },
 ]
 
