@@ -537,7 +537,7 @@ let soonMovies = [
             service: 'hbo',
             // studio: '',
             location: 'Hulu',
-            date: '12 Dec, 2021 22:30:00',
+            date: '19 Dec, 2021 22:30:00',
             weekday: 'Sunday',
             desc: {
                 seasons: 11,
