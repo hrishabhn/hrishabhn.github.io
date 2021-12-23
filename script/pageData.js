@@ -825,7 +825,7 @@ const pageData7 = {
 
                 var widget3 = document.createElement('a')
                 widget3.classList = 'widget subcol clickable fill-parent layer-1 card-shadow button-fg'
-                widget3.onclick = function() { showModal('Countdowns',allCountdownsElement()) }
+                // widget3.onclick = function() { showModal('Countdowns',allCountdownsElement()) }
 
                 widget3.innerHTML = `
                 <div class="icon red"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M25 2C12.317 2 2 12.317 2 25s10.317 23 23 23 23-10.317 23-23S37.683 2 25 2zm0 26c-.462 0-.895-.113-1.286-.3l-6.007 6.007a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414l6.007-6.007A2.969 2.969 0 0 1 22 25a2.99 2.99 0 0 1 2-2.816V8a1 1 0 1 1 2 0v14.184A2.99 2.99 0 0 1 28 25a3 3 0 0 1-3 3z"/></svg></div>

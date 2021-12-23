@@ -1,36 +1,3 @@
-function showModal(title,body) {
-    var modal = document.getElementById('modal-container')
-    var titleElement = document.getElementById('modal-title')
-    var modalBodyElement = document.getElementById('modal-body')
-
-    if (title) {
-        titleElement.innerHTML = title
-        titleElement.classList.remove('hidden-always')
-    } else {
-        titleElement.classList.add('hidden-always')
-    }
-
-    removeAllChildNodes(modalBodyElement)
-    modalBodyElement.append(body)
-
-    modal.classList = 'show'
-    // console.log('show')
-}
-
-function hideModal() {
-    var modal = document.getElementById('modal-container')
-    modal.classList = 'hide'
-    // console.log('hide')
-}
-
-// function modalScroll() {
-//     const modalBody = document.getElementById('modal-scroll')
-
-//     if (modalBody.scrollTop < 0) {
-//         hideModal()
-//     }
-// }
-
 function allCountdownsElement() {
     var container = document.createElement('div')
     container.classList = 'countdown vstack fill-parent'
@@ -61,22 +28,22 @@ function allCountdownsElement() {
     return container
 }
 
-function tvSummaryElement(a,b) {
-    var container = document.createElement('div')
-    container.classList = 'summary vstack fill-parent'
-    container.append(hlineElement())
-    container.append(spacerElement(5))
-
-    var summary = document.createElement('p')
-
+function tvSummary(a,b) {
     if (movieData[a][b].info.summary) {
-        summary.innerHTML = movieData[a][b].info.summary
+        var str = movieData[a][b].info.summary
     } else {
-        summary.innerHTML = 'No summary'
+        var str = 'No summary'
     }
 
-    container.append(summary)
-    return container
+    return str
+}
+
+function modalTextElement(text) {
+    let elem = document.createElement('div')
+    elem.classList = 'modal-text layer-1'
+    elem.innerHTML = text
+
+    return elem
 }
 
 
@@ -87,7 +54,7 @@ function openModal(content) {
 
     var modal = document.createElement('div')
     modal.id = `modal-${currentModal}`
-    modal.classList = 'modal preload'
+    modal.classList = 'modal'
 
     var close = document.createElement('a')
     close.classList = 'close'
@@ -116,9 +83,9 @@ function openModal(content) {
     var container = document.getElementById('modal-tray')
     container.append(modal)
 
-    setTimeout(() => { 
-        removePreloadModal(currentModal) 
-    }, 0);
+    // setTimeout(() => { 
+    //     removePreloadModal(currentModal) 
+    // }, 0);
 }
 
 function removePreloadModal(n) {

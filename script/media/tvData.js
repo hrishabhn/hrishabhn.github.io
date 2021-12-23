@@ -57,6 +57,64 @@
 
 let movieData0 = [
     {
+        name: 'Hit Monkey',
+        id: 'hitMonkey',
+        link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
+        info: {
+            service: 'hulu',
+            studio: 'marvel',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'animation',
+                ],
+            },
+            summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
+        },
+        style: {
+            color: '3B347A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '361835',
+            reelgoodLink: 'https://reelgood.com/movie/hit-monkey-2021',
+            imdbID: 'tt9811316',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Fred Tatasciore',
+                // image: 'url',
+                char: 'Hit-Monkey',
+            },
+            {
+                actor: 'Jason Sudeikis',
+                image: 'https://is2-ssl.mzstatic.com/image/thumb/AgXPsy2GlFurBYHRquyjeQ/492x492ve.webp',
+                char: 'Bryce',
+            },
+            {
+                actor: 'Olivia Munn',
+                image: 'https://celebmafia.com/wp-content/uploads/2019/09/olivia-munn-2019-creative-arts-emmy-awards-in-la-17.jpg',
+                char: 'Akiko',
+            },
+            {
+                actor: 'George Takei',
+                // image: 'url',
+                char: 'Shinji Yokohama',
+            },
+        ],
+    },
+    {
         name: 'Narcos: Mexico',
         id: 'narcos',
         link: {
@@ -585,7 +643,7 @@ let soonMovies = [
             service: 'hbo',
             // studio: '',
             location: 'Hulu',
-            date: '19 Dec, 2021 22:30:00',
+            date: '26 Dec, 2021 22:30:00',
             weekday: 'Sunday',
             desc: {
                 seasons: 11,
@@ -1185,64 +1243,6 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
-    {
-        name: 'Hit Monkey',
-        id: 'hitMonkey',
-        link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
-        info: {
-            service: 'hulu',
-            studio: 'marvel',
-            location: 'Hulu',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'animation',
-                ],
-            },
-            summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
-        },
-        style: {
-            color: '3B347A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '361835',
-            reelgoodLink: 'https://reelgood.com/movie/hit-monkey-2021',
-            imdbID: 'tt9811316',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Fred Tatasciore',
-                // image: 'url',
-                char: 'Hit-Monkey',
-            },
-            {
-                actor: 'Jason Sudeikis',
-                image: 'https://is2-ssl.mzstatic.com/image/thumb/AgXPsy2GlFurBYHRquyjeQ/492x492ve.webp',
-                char: 'Bryce',
-            },
-            {
-                actor: 'Olivia Munn',
-                image: 'https://celebmafia.com/wp-content/uploads/2019/09/olivia-munn-2019-creative-arts-emmy-awards-in-la-17.jpg',
-                char: 'Akiko',
-            },
-            {
-                actor: 'George Takei',
-                // image: 'url',
-                char: 'Shinji Yokohama',
-            },
-        ],
-    },
     {
         name: "Joanna Lumley's Trans-Siberian Adventure",
         id: 'joanna',
