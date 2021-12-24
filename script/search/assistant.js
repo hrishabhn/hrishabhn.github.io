@@ -226,30 +226,50 @@ function siriSearch(e) {
 
 
 function assistantExtraElement() {
-    var container = document.createElement('div')
+    let container = document.createElement('div')
     container.id = 'siri-extra'
-    container.onclick = function() { assistantExtraShow(oldPage,this) }
+    // container.classList = 'blue clickable'
+
+    let input = document.createElement('input')
+    input.id = 'siri-task'
+    input.classList = 'layer-0'
+    // input.placeholder = 'Task'
+    input.onkeyup = function() {
+        setCookie('currentTask',input.value,1)
+    }
+
+    // setCookie('currentTask','Idk about this',10)
+    // removeCookie('currentTask')
+
+    if (getCookie('currentTask')) {
+        input.value = getCookie('currentTask')
+    }
+
+    container.append(input)
+
+
+    // container.onclick = function() { assistantExtraShow(oldPage,this) }
 
 
 
-    var extra = document.createElement('a')
-    // extra.classList = 'clickable'
-    extra.innerHTML = '<svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>'
-    container.append(extra)
+    // var extra = document.createElement('a')
+    // // extra.classList = 'clickable'
+    // extra.innerHTML = '<svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>'
+    // container.append(extra)
 
     return container
 
 }
 
-function assistantExtraShow() {
-    const page = document.getElementById(`page-${oldPage}`)
-    const extra = document.getElementById('siri-extra')
-    // console.log(page.scrollTop)
-    console.log(extra.offsetTop - 60)
+// function assistantExtraShow() {
+//     const page = document.getElementById(`page-${oldPage}`)
+//     const extra = document.getElementById('siri-extra')
+//     // console.log(page.scrollTop)
+//     console.log(extra.offsetTop - 60)
 
-    page.scrollTop = extra.offsetTop - 60
+//     page.scrollTop = extra.offsetTop - 60
 
-}
+// }
 
 const siriExtraData = [
     { render: function() { return siriExtraWidgetWeather() } },
