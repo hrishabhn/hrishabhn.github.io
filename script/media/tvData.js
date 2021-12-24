@@ -87,7 +87,7 @@ let movieData0 = [
         },
         apps: {
             tvTimeID: '361835',
-            reelgoodLink: 'https://reelgood.com/movie/hit-monkey-2021',
+            reelgoodLink: 'https://reelgood.com/show/marvels-hitmonkey-2021',
             imdbID: 'tt9811316',
             // subReddit: 'subreddit',
         },
@@ -324,6 +324,52 @@ let movieData0 = [
 ]
 let movieData1 = [
     {
+        name: 'The Grand Tour',
+        id: 'grandTour',
+        link: {
+            primeVideo: 'B08QM4K1K5',
+        },
+        info: {
+            service: 'prime',
+            // studio: 'prime',
+            location: 'Prime Video',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2016,
+                yearEnd: null,
+                genre: [
+                    'cars',
+                    'comedy',
+                    'travel',
+                ],
+            },
+            summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
+        },
+        style: {
+            color: '667a88',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '314087',
+            reelgoodLink: 'https://reelgood.com/show/the-grand-tour-2016',
+            imdbID: 'tt5712554',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
+    {
         name: 'Cowboy Bebop',
         id: 'cowboy',
         link: {
@@ -534,69 +580,6 @@ let movieData1 = [
 
 
 let soonMovies = [
-    {
-        name: "It's Always Sunny in Philadelphia",
-        id: 'always',
-        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            date: 'Dec 23, 2021 03:00:00',
-            // weekday: 'Thursday',
-            desc: {
-                seasons: 15,
-                yearStart: 2005,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'friends',
-                ],
-            },
-            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
-        },
-        style: {
-            color: '699933',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'tall',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '75805',
-            reelgoodLink: 'https://reelgood.com/show/its-always-sunny-in-philadelphia-2005',
-            imdbID: 'tt0472954',
-            subReddit: 'IASIP',
-        },
-        cast: [
-            {
-                actor: 'Charlie Day',
-                image: 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
-                char: 'Charlie Kelly',
-            },
-            {
-                actor: 'Glenn Howerton',
-                image: 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
-                char: 'Dennis Reynolds',
-            },
-            {
-                actor: 'Rob McElenney',
-                image: 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
-                char: 'Mac',
-            },
-            {
-                actor: 'Kaitlin Olson',
-                image: 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
-                char: 'Dee Reynolds',
-            },
-            {
-                actor: 'Danny DeVito',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
-                char: 'Frank Reynolds',
-            },
-        ],
-    },
     {
         name: 'The Expanse',
         id: 'expanse',
@@ -2126,34 +2109,6 @@ const movieData5 = [
         },
     },
     {
-        name: "The Grand Tour",
-        id: "grandTour",
-        link: {
-            primeVideo: 'B08QM4K1K5',
-        },
-        info: {
-            // service: '',
-            // studio: '',
-            location: "Prime Video",
-            description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-        },
-        style: {
-            color: 'C05D38',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "314087",
-            // tvTimeRate: "8.82",
-            reelgoodLink: "https://reelgood.com/show/the-grand-tour-2016",
-            // reelgoodRate: "83",
-            imdbID: "tt5712554",
-            // imdbRate: "8.7",
-        },
-    },
-    {
         name: "Futurama",
         id: "futurama",
         link: "https://www.hulu.com/series/futurama-85bf4cc1-cd8b-4469-ad87-7289217a0b74",
@@ -2497,6 +2452,69 @@ const movieData7 = [
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
+    },
+    {
+        name: "It's Always Sunny in Philadelphia",
+        id: 'always',
+        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            // date: 'Dec 23, 2021 03:00:00',
+            // weekday: 'Thursday',
+            desc: {
+                seasons: 15,
+                yearStart: 2005,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'friends',
+                ],
+            },
+            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+        },
+        style: {
+            color: '699933',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '75805',
+            reelgoodLink: 'https://reelgood.com/show/its-always-sunny-in-philadelphia-2005',
+            imdbID: 'tt0472954',
+            subReddit: 'IASIP',
+        },
+        cast: [
+            {
+                actor: 'Charlie Day',
+                image: 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
+                char: 'Charlie Kelly',
+            },
+            {
+                actor: 'Glenn Howerton',
+                image: 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
+                char: 'Dennis Reynolds',
+            },
+            {
+                actor: 'Rob McElenney',
+                image: 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
+                char: 'Mac',
+            },
+            {
+                actor: 'Kaitlin Olson',
+                image: 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
+                char: 'Dee Reynolds',
+            },
+            {
+                actor: 'Danny DeVito',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
+                char: 'Frank Reynolds',
+            },
+        ],
     },
     {
         name: "Atlanta",
