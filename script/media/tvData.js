@@ -115,6 +115,42 @@ let movieData0 = [
         ],
     },
     {
+        name: 'Fairfax',
+        id: 'fairfax',
+        link: {
+            primeVideo: 'B09HSV9MHL'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            date: 'Oct 29, 2021',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
+        },
+        style: {
+            color: 'dedccc',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '382466',
+            reelgoodLink: 'https://reelgood.com/show/fairfax-2021',
+            imdbID: 'tt7492014',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Ghosts',
         id: 'ghosts',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
@@ -238,89 +274,6 @@ let movieData0 = [
             },
         ],
     },
-    {
-        name: 'Fairfax',
-        id: 'fairfax',
-        link: {
-            primeVideo: 'B09HSV9MHL'
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            date: 'Oct 29, 2021',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
-        },
-        style: {
-            color: 'dedccc',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '382466',
-            reelgoodLink: 'https://reelgood.com/show/fairfax-2021',
-            imdbID: 'tt7492014',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Hawkeye',
-        id: 'hawkeye',
-        link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
-        info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Disney+',
-            weekday: 'Wednesday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'MCU',
-                ],
-            },
-            summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '367146',
-            reelgoodLink: 'https://reelgood.com/show/hawkeye-2021',
-            imdbID: 'tt10160804',
-            subReddit: 'HAWKEYE',
-        },
-        cast: [
-            {
-                actor: 'Jeremy Renner',
-                image: 'https://static.wikia.nocookie.net/marvelmovies/images/2/24/Jeremy_Renner.jpg',
-                char: 'Clint Barton/Hawkeye',
-            },
-            {
-                actor: 'Hailee Steinfeld',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
-                char: 'Kate Bishop',
-            },
-        ],
-    },
 ]
 let movieData1 = [
     {
@@ -405,6 +358,91 @@ let movieData1 = [
             imdbID: 'tt0213338',
             subReddit: 'cowboybebop',
         },
+    },
+    {
+        name: "Clarkson's Farm",
+        id: 'clarkson',
+        link: {
+            primeVideo: 'B095RYWGNR'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'reality',
+                ],
+            },
+            summary: "An intense, arduous and frequently hilarious year in the life of Britain’s most unlikely farmer, Jeremy Clarkson. Join Jeremy and his rag-tag band of agricultural associates as they face-up to a backdrop of unhelpful weather, disobedient animals, unresponsive crops and an unexpected pandemic. This is Jeremy Clarkson as you’ve never seen him before.",
+        },
+        style: {
+            color: '5b4f43',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '960 / 1008',
+        },
+        apps: {
+            tvTimeID: '378165',
+            reelgoodLink: 'https://reelgood.com/show/clarksons-farm-2021',
+            imdbID: 'tt10541088',
+            subReddit: 'ClarksonsFarm',
+        },
+    },
+    {
+        name: 'Hawkeye',
+        id: 'hawkeye',
+        link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Disney+',
+            weekday: 'Wednesday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'MCU',
+                ],
+            },
+            summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '367146',
+            reelgoodLink: 'https://reelgood.com/show/hawkeye-2021',
+            imdbID: 'tt10160804',
+            subReddit: 'HAWKEYE',
+        },
+        cast: [
+            {
+                actor: 'Jeremy Renner',
+                image: 'https://static.wikia.nocookie.net/marvelmovies/images/2/24/Jeremy_Renner.jpg',
+                char: 'Clint Barton/Hawkeye',
+            },
+            {
+                actor: 'Hailee Steinfeld',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
+                char: 'Kate Bishop',
+            },
+        ],
     },
     {
         name: 'Cowboy Bebop',
