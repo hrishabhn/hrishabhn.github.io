@@ -239,6 +239,42 @@ let movieData0 = [
         ],
     },
     {
+        name: 'Fairfax',
+        id: 'fairfax',
+        link: {
+            primeVideo: 'B09HSV9MHL'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            date: 'Oct 29, 2021',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
+        },
+        style: {
+            color: 'dedccc',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+        },
+        apps: {
+            tvTimeID: '382466',
+            reelgoodLink: 'https://reelgood.com/show/fairfax-2021',
+            imdbID: 'tt7492014',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Hawkeye',
         id: 'hawkeye',
         link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
@@ -4595,42 +4631,6 @@ const movieDataArchive = [
             tvTimeID: '295648',
             reelgoodLink: 'https://reelgood.com/show/superstore-2015',
             imdbID: 'tt4477976',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Fairfax',
-        id: 'fairfax',
-        link: {
-            primeVideo: 'B09HSV9MHL'
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            date: 'Oct 29, 2021',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
-        },
-        style: {
-            color: 'dedccc',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '382466',
-            reelgoodLink: 'https://reelgood.com/show/fairfax-2021',
-            imdbID: 'tt7492014',
             // subReddit: 'subreddit',
         },
     },
