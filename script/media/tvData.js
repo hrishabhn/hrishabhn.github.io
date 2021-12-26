@@ -57,6 +57,42 @@
 
 let movieData0 = [
     {
+        name: 'Industry',
+        id: 'industry',
+        link: 'https://www.hulu.com/series/industry-6ff820e0-f28e-405a-a771-9dc2b01d5e97',
+        info: {
+            service: 'hulu',
+            studio: 'hbo',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'money',
+                ],
+            },
+            summary: "This series follows a group of young graduates competing for a limited set of permanent positions at a top investment bank in London",
+        },
+        style: {
+            color: '615e65',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '371796',
+            reelgoodLink: 'https://reelgood.com/show/industry-2020',
+            imdbID: 'tt7671070',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Hit Monkey',
         id: 'hitMonkey',
         link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
