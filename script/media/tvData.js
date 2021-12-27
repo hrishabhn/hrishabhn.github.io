@@ -3566,12 +3566,20 @@ const movieData8 = [
     {
         name: 'Game of Thrones',
         id: 'gameofthrones',
-        // link: 'watchlink',
+        link: 'https://www.hulu.com/series/game-of-thrones-6a787bf6-cc23-47a2-a2f3-747e22c30d1c',
         info: {
-            // service: '',
-            // studio: '',
-            location: 'HBO Max',
-            description: 'Action &#149 Adventure &#149 Fantasy &#149 8 Seasons &#149 2011 - 2019',
+            service: 'hulu',
+            studio: 'hbo',
+            location: 'Hulu',
+            desc: {
+                seasons: 8,
+                yearStart: 2011,
+                yearEnd: 2019,
+                genre: [
+                    'adventure',
+                    'fantasy',
+                ],
+            },
             summary: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
         },
         style: {
