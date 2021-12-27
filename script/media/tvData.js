@@ -2240,39 +2240,6 @@ const movieData6 = [
         },
     },
     {
-        name: "The King's Man",
-        id: 'kingsMan',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Coming Soon',
-            date: 'Dec 22, 2021',
-            desc: {
-                year: 2021,
-                genre: [
-                    'spy',
-                    'comedy',
-                ],
-            },
-            summary: "In the early years of the 20th century, the Kingsman agency is formed to stand against a cabal plotting a war to wipe out millions.",
-        },
-        style: {
-            color: '444f52',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/the-kings-man-2020',
-            imdbID: 'tt6856242',
-        },
-    },
-    {
         name: 'The Mandalorian',
         id: 'mando',
         // link: {
@@ -4221,6 +4188,73 @@ const movieData9 = [
 ]
 const movieData10 = [
     {
+        name: 'A Very Harold & Kumar Christmas',
+        id: 'haroldAndKumar3',
+        link: {
+            netflix: '70178622'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            desc: {
+                year: 2011,
+                genre: [
+                    'comedy',
+                    'adventure',
+                ],
+            },
+            summary: "After Kumar burns down Harold's family Christmas tree, the stoner pals tangle with mobsters on a pot-fueled Christmas Eve adventure through Manhattan.",
+        },
+        style: {
+            color: '274223',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: "The King's Man",
+        id: 'kingsMan',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Coming Soon',
+            // date: 'Dec 22, 2021',
+            desc: {
+                year: 2021,
+                genre: [
+                    'spy',
+                    'comedy',
+                ],
+            },
+            summary: "In the early years of the 20th century, the Kingsman agency is formed to stand against a cabal plotting a war to wipe out millions.",
+        },
+        style: {
+            color: '444f52',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/the-kings-man-2020',
+            imdbID: 'tt6856242',
+        },
+    },
+    {
         name: 'Spider-Man',
         id: 'spider_1_1',
         // link: {
@@ -4339,7 +4373,7 @@ const movieData10 = [
             desc: {
                 year: 2004,
                 genre: [
-                    'crime',
+                    'comedy',
                     'adventure',
                 ],
             },
