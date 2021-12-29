@@ -244,7 +244,9 @@
     border-radius: 100px 100px 0 0;
     opacity: 0;
 }
-
+.menu-item:hover.menu-item:active{
+    opacity: 0.6;
+}
 .menu-item.selected .select-line{
     opacity: 1;
 }
