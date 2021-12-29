@@ -250,7 +250,7 @@ function menuTray() {
 function renderMenuElement(page) {
     var menuItem = document.createElement('div')
     menuItem.id = `menu-item-${page.info.id}`
-    menuItem.classList = 'menu-item clickable'
+    menuItem.classList = 'menu-item'
     menuItem.onclick = function() { page.open() }
 
     if (!page.info.menuMobile) {
