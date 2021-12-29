@@ -57,42 +57,6 @@
 
 let movieData0 = [
     {
-        name: 'Industry',
-        id: 'industry',
-        link: 'https://www.hulu.com/series/industry-6ff820e0-f28e-405a-a771-9dc2b01d5e97',
-        info: {
-            service: 'hulu',
-            studio: 'hbo',
-            location: 'Hulu',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'money',
-                ],
-            },
-            summary: "This series follows a group of young graduates competing for a limited set of permanent positions at a top investment bank in London",
-        },
-        style: {
-            color: '615e65',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '371796',
-            reelgoodLink: 'https://reelgood.com/show/industry-2020',
-            imdbID: 'tt7671070',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Hit Monkey',
         id: 'hitMonkey',
         link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
@@ -149,6 +113,43 @@ let movieData0 = [
                 char: 'Shinji Yokohama',
             },
         ],
+    },
+    {
+        name: 'Cowboy Bebop',
+        id: 'cowboy',
+        link: {
+            netflix: '80001312'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            desc: {
+                seasons: 1,
+                yearStart: 1998,
+                yearEnd: 1999,
+                genre: [
+                    'action',
+                    'animation',
+                    'sci-fi',
+                ],
+            },
+            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '76885',
+            reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-1998',
+            imdbID: 'tt0213338',
+            subReddit: 'cowboybebop',
+        },
     },
     {
         name: 'Fairfax',
@@ -359,43 +360,6 @@ let movieData1 = [
         // ],
     },
     {
-        name: 'Cowboy Bebop',
-        id: 'cowboy',
-        link: {
-            netflix: '80001312'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            desc: {
-                seasons: 1,
-                yearStart: 1998,
-                yearEnd: 1999,
-                genre: [
-                    'action',
-                    'animation',
-                    'sci-fi',
-                ],
-            },
-            summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
-        },
-        style: {
-            color: '994d33',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '76885',
-            reelgoodLink: 'https://reelgood.com/show/cowboy-bebop-1998',
-            imdbID: 'tt0213338',
-            subReddit: 'cowboybebop',
-        },
-    },
-    {
         name: "Clarkson's Farm",
         id: 'clarkson',
         link: {
@@ -432,53 +396,6 @@ let movieData1 = [
             imdbID: 'tt10541088',
             subReddit: 'ClarksonsFarm',
         },
-    },
-    {
-        name: 'Hawkeye',
-        id: 'hawkeye',
-        link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
-        info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Disney+',
-            weekday: 'Wednesday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'MCU',
-                ],
-            },
-            summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '367146',
-            reelgoodLink: 'https://reelgood.com/show/hawkeye-2021',
-            imdbID: 'tt10160804',
-            subReddit: 'HAWKEYE',
-        },
-        cast: [
-            {
-                actor: 'Jeremy Renner',
-                image: 'https://static.wikia.nocookie.net/marvelmovies/images/2/24/Jeremy_Renner.jpg',
-                char: 'Clint Barton/Hawkeye',
-            },
-            {
-                actor: 'Hailee Steinfeld',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
-                char: 'Kate Bishop',
-            },
-        ],
     },
     {
         name: 'Cowboy Bebop',
@@ -542,6 +459,110 @@ let movieData1 = [
                 actor: 'Alex Hassell',
                 image: 'https://www.thewikifeed.com/wp-content/uploads/2021/08/alex-hassell-1.jpg',
                 char: 'Vicious',
+            },
+        ],
+    },
+]
+
+
+let soonMovies = [
+    {
+        name: 'The Expanse',
+        id: 'expanse',
+        link: {
+            primeVideo: 'B09LGJ5QNB',
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            date: 'Dec 30, 2021 19:00:00',
+            // weekday: 'Thursday',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
+        },
+        style: {
+            color: '466A83',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '280619',
+            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
+            imdbID: 'tt3230854',
+            subReddit: 'TheExpanse',
+        },
+    },
+]
+
+for (const movie of soonMovies.reverse()) {
+    let soon = (new Date(movie.info.date) > new Date)
+
+    if (soon) {
+        movieData1.unshift(movie)
+    } else {
+        movieData0.unshift(movie)
+    }
+}
+
+
+
+const movieData2 = [
+    {
+        name: 'Hawkeye',
+        id: 'hawkeye',
+        link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Disney+',
+            weekday: 'Wednesday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'MCU',
+                ],
+            },
+            summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '367146',
+            reelgoodLink: 'https://reelgood.com/show/hawkeye-2021',
+            imdbID: 'tt10160804',
+            subReddit: 'HAWKEYE',
+        },
+        cast: [
+            {
+                actor: 'Jeremy Renner',
+                image: 'https://static.wikia.nocookie.net/marvelmovies/images/2/24/Jeremy_Renner.jpg',
+                char: 'Clint Barton/Hawkeye',
+            },
+            {
+                actor: 'Hailee Steinfeld',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
+                char: 'Kate Bishop',
             },
         ],
     },
@@ -650,63 +671,6 @@ let movieData1 = [
             },
         ],
     },
-]
-
-
-let soonMovies = [
-    {
-        name: 'The Expanse',
-        id: 'expanse',
-        link: {
-            primeVideo: 'B09LGJ5QNB',
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            date: 'Dec 30, 2021 19:00:00',
-            // weekday: 'Thursday',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
-            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
-        },
-        style: {
-            color: '466A83',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '280619',
-            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
-            imdbID: 'tt3230854',
-            subReddit: 'TheExpanse',
-        },
-    },
-]
-
-for (const movie of soonMovies.reverse()) {
-    let soon = (new Date(movie.info.date) > new Date)
-
-    if (soon) {
-        movieData1.unshift(movie)
-    } else {
-        movieData0.unshift(movie)
-    }
-}
-
-
-
-const movieData2 = [
     {
         name: 'Love Island',
         id: 'loveIsland',
@@ -2674,6 +2638,42 @@ const movieData7 = [
             // reelgoodLink: 'link',
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Industry',
+        id: 'industry',
+        link: 'https://www.hulu.com/series/industry-6ff820e0-f28e-405a-a771-9dc2b01d5e97',
+        info: {
+            service: 'hulu',
+            studio: 'hbo',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'money',
+                ],
+            },
+            summary: "This series follows a group of young graduates competing for a limited set of permanent positions at a top investment bank in London",
+        },
+        style: {
+            color: '615e65',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '371796',
+            reelgoodLink: 'https://reelgood.com/show/industry-2020',
+            imdbID: 'tt7671070',
+            subReddit: 'IndustryOnHBO',
         },
     },
     {
