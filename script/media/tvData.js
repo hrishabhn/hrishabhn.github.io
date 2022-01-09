@@ -57,45 +57,6 @@
 
 let movieData0 = [
     {
-        name: 'The Book of Boba Fett',
-        id: 'boba',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'disney',
-            studio: 'starwars',
-            location: 'Disney+',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                    'star wars',
-                ],
-            },
-            summary: "Legendary bounty hunter Boba Fett and mercenary Fennec Shand must navigate the galaxy’s underworld when they return to the sands of Tatooine to stake their claim on the territory once ruled by Jabba the Hutt and his crime syndicate.",
-        },
-        style: {
-            color: '7d7e42',
-            posterType: 'webp',
-            // titleType: 'png',
-            // titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '393589',
-            reelgoodLink: 'https://reelgood.com/show/the-book-of-boba-fett-2021',
-            imdbID: 'tt13668894',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'The Office',
         id: 'office',
         link: {
@@ -388,6 +349,45 @@ let movieData0 = [
     },
 ]
 let movieData1 = [
+    {
+        name: 'The Book of Boba Fett',
+        id: 'boba',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'disney',
+            studio: 'starwars',
+            location: 'Disney+',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                    'star wars',
+                ],
+            },
+            summary: "Legendary bounty hunter Boba Fett and mercenary Fennec Shand must navigate the galaxy’s underworld when they return to the sands of Tatooine to stake their claim on the territory once ruled by Jabba the Hutt and his crime syndicate.",
+        },
+        style: {
+            color: '7d7e42',
+            posterType: 'webp',
+            // titleType: 'png',
+            // titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '393589',
+            reelgoodLink: 'https://reelgood.com/show/the-book-of-boba-fett-2021',
+            imdbID: 'tt13668894',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'The Grand Tour',
         id: 'grandTour',
