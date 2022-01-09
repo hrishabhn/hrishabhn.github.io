@@ -354,6 +354,11 @@ function tvHuluElement(a,b) {
         var dateHTML = ``
     }
 
+    if (movie.style.titleType) {
+        var title = `<div class="title ${movie.style.titleSize}" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>`
+    } else {
+        var title = `<p class="title-text">The Book of Boba Fett</p>`
+    }
 
 
     var movieCardElement = document.createElement('div')
@@ -368,7 +373,7 @@ function tvHuluElement(a,b) {
             <div class="gradient" style="--col1: #${movie.style.color}00;--col2: #${movie.style.color};"></div>
         </div>
     </div>
-    <div class="title ${movie.style.titleSize}" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
+    ${title}
     <div class="spacer-x" style="--size: 8px;"></div>
     <p class="desc">${processDesc(movie)}</p>
     ${dateHTML}
