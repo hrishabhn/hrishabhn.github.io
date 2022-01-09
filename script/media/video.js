@@ -357,7 +357,7 @@ function tvHuluElement(a,b) {
     if (movie.style.titleType) {
         var title = `<div class="title ${movie.style.titleSize}" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>`
     } else {
-        var title = `<p class="title-text">The Book of Boba Fett</p>`
+        var title = `<p class="title-text">${movie.name}</p>`
     }
 
 
