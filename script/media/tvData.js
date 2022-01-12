@@ -57,6 +57,37 @@
 
 let movieData0 = [
     {
+        name: "Don't Look Up",
+        id: 'dontLookUp',
+        link: {
+            netflix: '81252357'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                year: 2021,
+                genre: [
+                    'sci-fi',
+                ],
+            },
+            summary: "Two astronomers go on a media tour to warn humankind of a planet-killing comet hurtling toward Earth. The response from a distracted world: Meh.",
+        },
+        style: {
+            color: '3d3554',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/dont-look-up',
+            imdbID: 'tt11286314',
+        },
+    },
+    {
         name: 'The Office',
         id: 'office',
         link: {
