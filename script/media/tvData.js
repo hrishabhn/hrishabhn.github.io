@@ -582,7 +582,7 @@ let soonMovies = [
             service: 'prime',
             studio: 'prime',
             location: 'Prime Video',
-            date: 'Dec 30, 2021 19:00:00',
+            date: 'Jan 13, 2022 19:00:00',
             // weekday: 'Thursday',
             desc: {
                 seasons: 6,
