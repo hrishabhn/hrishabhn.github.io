@@ -457,13 +457,6 @@ let movieData1 = [
             imdbID: 'tt5712554',
             // subReddit: 'subreddit',
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
     },
     {
         name: "Clarkson's Farm",
@@ -608,6 +601,80 @@ let soonMovies = [
             reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
             imdbID: 'tt3230854',
             subReddit: 'TheExpanse',
+        },
+    },
+    {
+        name: 'Attack on Titan',
+        id: 'attack',
+        link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            date: 'Jan 16, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2013,
+                yearEnd: 2022,
+                genre: [
+                    'action & adventure',
+                    'animation',
+                ],
+            },
+            summary: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+        },
+        style: {
+            color: 'a98264',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '267440',
+            reelgoodLink: 'https://reelgood.com/show/attack-on-titan-2013',
+            imdbID: 'tt2560140',
+            subReddit: 'attackontitan',
+        },
+    },
+    {
+        name: 'Ozark',
+        id: 'ozark',
+        link: {
+            netflix: '80117552'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Neftlix',
+            date: 'Jan 21, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2017,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "After his business partner cheats a dangerous client, financial adviser Marty must devise a radical plan to save the lives of himself and his family.",
+        },
+        style: {
+            color: '660000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '329089',
+            reelgoodLink: 'https://reelgood.com/show/ozark-2017',
+            imdbID: 'tt5071412',
+            subReddit: 'Ozark',
         },
     },
 ]
@@ -1064,6 +1131,38 @@ const movieData2 = [
     },
 ]
 const movieData3 = [
+    {
+        name: 'Spider-Man: No Way Home',
+        id: 'spiderMan3',
+        // link: '',
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Coming Soon',
+            date: '15 Dec, 2021',
+            desc: {
+                year: 2021,
+                genre: [
+                    'sci-fi',
+                    'MCU',
+                ],
+            },
+            summary: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+        },
+        style: {
+            color: 'af0000',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/spiderman-no-way-home-2021',
+            imdbID: 'tt10872600',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Eternals',
         id: 'eternals',
@@ -2211,38 +2310,6 @@ const movieData5 = [
 ]
 const movieData6 = [
     {
-        name: 'Spider-Man: No Way Home',
-        id: 'spiderMan3',
-        // link: '',
-        info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Coming Soon',
-            date: '15 Dec, 2021',
-            desc: {
-                year: 2021,
-                genre: [
-                    'sci-fi',
-                    'MCU',
-                ],
-            },
-            summary: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
-        },
-        style: {
-            color: 'af0000',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/spiderman-no-way-home-2021',
-            imdbID: 'tt10872600',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'The Mandalorian',
         id: 'mando',
         // link: {
@@ -2279,80 +2346,6 @@ const movieData6 = [
             reelgoodLink: 'https://reelgood.com/show/the-mandalorian-2019',
             imdbID: 'tt8111088',
             subReddit: 'TheMandalorianTV',
-        },
-    },
-    {
-        name: 'Attack on Titan',
-        id: 'attack',
-        link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
-        info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
-            date: 'Jan 9, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2013,
-                yearEnd: 2022,
-                genre: [
-                    'action & adventure',
-                    'animation',
-                ],
-            },
-            summary: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
-        },
-        style: {
-            color: 'a98264',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '267440',
-            reelgoodLink: 'https://reelgood.com/show/attack-on-titan-2013',
-            imdbID: 'tt2560140',
-            subReddit: 'attackontitan',
-        },
-    },
-    {
-        name: 'Ozark',
-        id: 'ozark',
-        link: {
-            netflix: '80117552'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Neftlix',
-            date: 'Jan 21, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2017,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "After his business partner cheats a dangerous client, financial adviser Marty must devise a radical plan to save the lives of himself and his family.",
-        },
-        style: {
-            color: '660000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '329089',
-            reelgoodLink: 'https://reelgood.com/show/ozark-2017',
-            imdbID: 'tt5071412',
-            subReddit: 'Ozark',
         },
     },
     {
@@ -2426,6 +2419,118 @@ const movieData6 = [
             reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
             imdbID: 'tt6156584',
             // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Snowfall',
+        id: 'snowfall',
+        link: 'https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            date: '23 Feb, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 5,
+                yearStart: 2017,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "Snowfall is a one-hour drama set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it.",
+        },
+        style: {
+            color: '1A114D',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '328092',
+            reelgoodLink: 'https://reelgood.com/show/snowfall-2017',
+            imdbID: 'tt6439752',
+            subReddit: 'SnowFall',
+        },
+    },
+    {
+        name: 'Atlanta',
+        id: 'atlanta',
+        link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            date: '23 March, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2016,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'drama',
+                    'music',
+                ],
+            },
+            summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
+        },
+        style: {
+            color: '041f41',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '313999',
+            reelgoodLink: 'https://reelgood.com/show/atlanta-2016',
+            imdbID: 'tt4288182',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'The Boys',
+        id: 'boys',
+        link: {
+            primeVideo: 'B08F81VWVD'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            date: '3 Jun, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'crime',
+                    'sci-fi',
+                ],
+            },
+            summary: "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
+        },
+        style: {
+            color: '660000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-boys-2019',
+            imdbID: 'tt1190634',
+            subReddit: 'TheBoys',
         },
     },
     {
@@ -2559,53 +2664,6 @@ const movieData7 = [
                 char: 'Frank Reynolds',
             },
         ],
-    },
-    {
-        name: "Atlanta",
-        id: "atlanta",
-        link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            description: "Comedy &#149 Drama &#149 Music &#149 2 Seasons &#149 2016 - Present",
-            summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
-        },
-        style: {
-            color: '584029',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: "313999",
-            reelgoodLink: "https://reelgood.com/show/atlanta-2016",
-            imdbID: "tt4288182",
-        },
-    },
-    {
-        name: 'The Boys',
-        id: 'boys',
-        // link: 'watchlink',
-        info: {
-            // service: '',
-            // studio: '',
-            location: 'Coming Soon',
-            // description: 'Action &#149 Crime &#149 Drama &#149 2 Seasons &#149 2019 - Present',
-            // summary: "summary",
-        },
-        style: {
-            color: '660000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/show/the-boys-2019',
-            imdbID: 'tt1190634',
-            subReddit: 'TheBoys',
-        },
     },
     {
         name: 'Curb Your Enthusiasm',
@@ -3173,30 +3231,6 @@ const movieData7 = [
                 char: 'Summer Smith',
             },
         ],
-    },
-    {
-        name: 'Snowfall',
-        id: 'snowfall',
-        // link: 'watchlink',
-        info: {
-            // service: '',
-            // studio: '',
-            location: 'Coming Soon',
-            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Y999',
-            // summary: "summary",
-        },
-        style: {
-            color: '1A114D',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            // tvTimeID: null,
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
-            // subReddit: null,
-        },
     },
     {
         name: 'Succession',
