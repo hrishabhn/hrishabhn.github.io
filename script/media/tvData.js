@@ -5026,5 +5026,3 @@ const movieData = [
     movieData9,
     movieData10,
 ]
-
-export default movieData
