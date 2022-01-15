@@ -383,9 +383,7 @@ let movieData1 = [
     {
         name: 'The Book of Boba Fett',
         id: 'boba',
-        // link: {
-        //     netflix: '80197526'
-        // },
+        link: 'https://www.disneyplus.com/series/the-book-of-boba-fett/57TL7zLNu2wf',
         info: {
             service: 'disney',
             studio: 'starwars',
@@ -5028,3 +5026,5 @@ const movieData = [
     movieData9,
     movieData10,
 ]
+
+export default movieData
