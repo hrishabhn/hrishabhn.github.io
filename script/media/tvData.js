@@ -57,6 +57,42 @@
 
 let movieData0 = [
     {
+        name: 'How I Met Your Father',
+        id: 'himyf',
+        link: 'https://www.hulu.com/series/how-i-met-your-father-42771fe9-3174-43bc-ab6a-d8c3e618b934',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'romance',
+                ],
+            },
+            summary: "In the near future, Sophie is telling her son the story of how she met his father: a story that catapults us back to the present where Sophie and her close-knit group of friends are in the midst of figuring out who they are, what they want out of life, and how to fall in love in the age of dating apps and limitless options.",
+        },
+        style: {
+            color: '3d250f',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '401513',
+            reelgoodLink: 'https://reelgood.com/uk/show/how-i-met-your-father-2022',
+            imdbID: 'tt14500082',
+            subReddit: 'HowIMetYourFather',
+        },
+    },
+    {
         name: 'Yellowjackets',
         id: 'yellowjackets',
         // link: {
