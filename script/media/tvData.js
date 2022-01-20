@@ -87,7 +87,7 @@ let movieData0 = [
         },
         apps: {
             tvTimeID: '401513',
-            reelgoodLink: 'https://reelgood.com/uk/show/how-i-met-your-father-2022',
+            reelgoodLink: 'https://reelgood.com/show/how-i-met-your-father-2022',
             imdbID: 'tt14500082',
             subReddit: 'HowIMetYourFather',
         },
