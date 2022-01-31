@@ -57,6 +57,124 @@
 
 let movieData0 = [
     {
+        name: 'Soy Georgina',
+        id: 'georgina',
+        link: {
+            netflix: '81423622'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                year: 2022,
+                genre: [
+                    'comedy',
+                    'documentary',
+                ],
+            },
+            summary: "Join Georgina Rodríguez — mom, influencer, businesswoman and Cristiano Ronaldo's partner — in this emotional and in-depth portrait of her daily life.",
+        },
+        style: {
+            color: '8f7d4b',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '768 / 1024',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
+    {
+        name: 'The Expanse',
+        id: 'expanse',
+        link: {
+            primeVideo: 'B09LGJ5QNB',
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            // date: 'Jan 13, 2022 19:00:00',
+            // weekday: 'Thursday',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
+        },
+        style: {
+            color: '466A83',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '280619',
+            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
+            imdbID: 'tt3230854',
+            subReddit: 'TheExpanse',
+        },
+    },
+    {
+        name: 'Attack on Titan',
+        id: 'attack',
+        link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            // date: 'Jan 16, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2013,
+                yearEnd: 2022,
+                genre: [
+                    'action & adventure',
+                    'animation',
+                ],
+            },
+            summary: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+        },
+        style: {
+            color: 'a98264',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '267440',
+            reelgoodLink: 'https://reelgood.com/show/attack-on-titan-2013',
+            imdbID: 'tt2560140',
+            subReddit: 'attackontitan',
+        },
+    },
+    {
         name: 'Yellowjackets',
         id: 'yellowjackets',
         // link: {
@@ -96,6 +214,43 @@ let movieData0 = [
         },
     },
     {
+        name: 'Superstore',
+        id: 'superstore',
+        link: {
+            netflix: '80061132'
+        },
+        info: {
+            service: 'netflix',
+            // studio: '',
+            location: 'Netflix',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: 2021,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
+        },
+        style: {
+            color: '0070DB',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '295648',
+            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
+            imdbID: 'tt4477976',
+            // subReddit: 'subreddit',
+        },
+    },
+]
+let movieData1 = [
+    {
         name: "Don't Look Up",
         id: 'dontLookUp',
         link: {
@@ -127,43 +282,43 @@ let movieData0 = [
         },
     },
     {
-        name: 'The Office',
-        id: 'office',
+        name: 'Ozark',
+        id: 'ozark',
         link: {
-            netflix: '70136120'
+            netflix: '80117552'
         },
         info: {
             service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            studio: 'netflix',
+            location: 'Neftlix',
+            date: 'Jan 21, 2022',
+            // weekday: '',
             desc: {
-                seasons: 9,
-                yearStart: 2005,
-                yearEnd: 2013,
+                seasons: 4,
+                yearStart: 2017,
+                yearEnd: null,
                 genre: [
-                    'comedy',
-                    'mockumentary',
+                    'crime',
+                    'drama',
                 ],
             },
-            summary: "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
+            summary: "After his business partner cheats a dangerous client, financial adviser Marty must devise a radical plan to save the lives of himself and his family.",
         },
         style: {
-            color: '7E6C64',
-            posterType: 'jpg',
-            titleType: 'svg',
+            color: '660000',
+            posterType: 'webp',
+            titleType: 'png',
             titleSize: 'wide',
-            mobileType: 'png',
-            mobileSize: '8 / 10',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
-            tvTimeID: '73244',
-            reelgoodLink: 'https://reelgood.com/show/the-office-2005',
-            imdbID: 'tt0386676',
-            subReddit: 'DunderMifflin',
+            tvTimeID: '329089',
+            reelgoodLink: 'https://reelgood.com/show/ozark-2017',
+            imdbID: 'tt5071412',
+            subReddit: 'Ozark',
         },
     },
-]
-let movieData1 = [
     {
         name: 'Hit Monkey',
         id: 'hitMonkey',
@@ -463,30 +618,30 @@ let movieData1 = [
 
 let soonMovies = [
     {
-        name: 'The Expanse',
-        id: 'expanse',
+        name: 'Snowpiercer',
+        id: 'snowpiercer',
         link: {
-            primeVideo: 'B09LGJ5QNB',
+            netflix: '80177458'
         },
         info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            date: 'Jan 13, 2022 19:00:00',
-            // weekday: 'Thursday',
+            service: 'netflix',
+            // studio: 'tnt',
+            location: 'Netflix',
+            date: 'Feb 1, 2022',
+            // weekday: '',
             desc: {
-                seasons: 6,
-                yearStart: 2015,
+                seasons: 3,
+                yearStart: 2020,
                 yearEnd: null,
                 genre: [
-                    'action & adventure',
+                    'drama',
                     'sci-fi',
                 ],
             },
-            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
+            summary: "Set more than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
         },
         style: {
-            color: '466A83',
+            color: '444743',
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'wide',
@@ -494,46 +649,10 @@ let soonMovies = [
             mobileSize: '7 / 10',
         },
         apps: {
-            tvTimeID: '280619',
-            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
-            imdbID: 'tt3230854',
-            subReddit: 'TheExpanse',
-        },
-    },
-    {
-        name: 'Attack on Titan',
-        id: 'attack',
-        link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
-        info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
-            date: 'Jan 16, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2013,
-                yearEnd: 2022,
-                genre: [
-                    'action & adventure',
-                    'animation',
-                ],
-            },
-            summary: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
-        },
-        style: {
-            color: 'a98264',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '267440',
-            reelgoodLink: 'https://reelgood.com/show/attack-on-titan-2013',
-            imdbID: 'tt2560140',
-            subReddit: 'attackontitan',
+            tvTimeID: '364928',
+            reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
+            imdbID: 'tt6156584',
+            subReddit: 'snowpiercer',
         },
     },
     {
@@ -544,7 +663,7 @@ let soonMovies = [
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            date: 'Jan 25, 2022',
+            date: 'Feb 1, 2022',
             // weekday: '',
             desc: {
                 seasons: 1,
@@ -570,44 +689,6 @@ let soonMovies = [
             reelgoodLink: 'https://reelgood.com/show/how-i-met-your-father-2022',
             imdbID: 'tt14500082',
             subReddit: 'HowIMetYourFather',
-        },
-    },
-    {
-        name: 'Ozark',
-        id: 'ozark',
-        link: {
-            netflix: '80117552'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Neftlix',
-            date: 'Jan 21, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2017,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "After his business partner cheats a dangerous client, financial adviser Marty must devise a radical plan to save the lives of himself and his family.",
-        },
-        style: {
-            color: '660000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '329089',
-            reelgoodLink: 'https://reelgood.com/show/ozark-2017',
-            imdbID: 'tt5071412',
-            subReddit: 'Ozark',
         },
     },
 ]
@@ -2457,44 +2538,6 @@ const movieData6 = [
         },
     },
     {
-        name: 'Snowpiercer',
-        id: 'snowpiercer',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'hbo',
-            // studio: 'tnt',
-            location: 'HBO Max',
-            date: 'Jan 24, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 3,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'sci-fi',
-                ],
-            },
-            summary: "Set more than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
-        },
-        style: {
-            color: '444743',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
-            imdbID: 'tt6156584',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Snowfall',
         id: 'snowfall',
         link: 'https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6',
@@ -3811,6 +3854,42 @@ const movieData8 = [
         },
     },
     {
+        name: 'The Office',
+        id: 'office',
+        link: {
+            netflix: '70136120'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            desc: {
+                seasons: 9,
+                yearStart: 2005,
+                yearEnd: 2013,
+                genre: [
+                    'comedy',
+                    'mockumentary',
+                ],
+            },
+            summary: "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
+        },
+        style: {
+            color: '7E6C64',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'wide',
+            mobileType: 'png',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '73244',
+            reelgoodLink: 'https://reelgood.com/show/the-office-2005',
+            imdbID: 'tt0386676',
+            subReddit: 'DunderMifflin',
+        },
+    },
+    {
         name: 'Fresh Prince of Bel-Air',
         id: 'fresh',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series',
@@ -4972,39 +5051,6 @@ const movieData10 = [
 ]
 
 const movieDataArchive = [
-    {
-        name: 'Superstore',
-        id: 'superstore',
-        link: 'https://www.hulu.com/series/superstore-727810b8-e54b-4f01-9381-a79ab5661bf7',
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: 2021,
-                genre: [
-                    'comedy',
-                ],
-            },
-            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
-        },
-        style: {
-            color: '0070DB',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-        },
-        apps: {
-            tvTimeID: '295648',
-            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
-            imdbID: 'tt4477976',
-            // subReddit: 'subreddit',
-        },
-    },
     {
         name: 'The Problem With Jon Stewart',
         id: 'problem',
