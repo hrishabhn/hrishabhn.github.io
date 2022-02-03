@@ -215,46 +215,35 @@
     flex-direction: column;
     min-width: 80px;
     height: 100%;
-    /* border-radius: 8px; */
-    padding: 0 0px;
     cursor: default;
     opacity: 0.6;
-    transition: all 0.15s;
-}
-.menu-item .content{
-    flex-direction: column;
-    flex-grow: 1;
-    /* width: 100%; */
-    padding: 8px 10px;
-    border-radius: 8px;
+    padding: 0px 12px;
 }
 .menu-item .icon{
     height: 14px;
     width: 14px;
-    /* padding: 6px; */
-    /* border-radius: 8px; */
 }
 .menu-item p{
     font-size: 10px;
     font-weight: 400;
 }
-.menu-item .select-line{
-    height: 3px;
-    width: calc(100% - 20px);
-    border-radius: 100px 100px 0 0;
+.menu-item .bg{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    border-radius: 8px;
     opacity: 0;
 }
 .menu-item:hover.menu-item:active{
     opacity: 0.6;
 }
-.menu-item.selected .select-line{
-    opacity: 1;
-}
 .menu-item:hover, .menu-item.selected{
     opacity: 1;
 }
-.menu-item:hover .content{
-    background-color: var(--white-05);
+.menu-item:hover .bg, .menu-item.selected .bg{
+    opacity: 0.2;
 }
 
 

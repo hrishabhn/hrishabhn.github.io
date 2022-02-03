@@ -18,7 +18,7 @@ function tvBig(a,b) {
     var more = document.getElementById('tv-big-more')
 
     // if (movie.style.mobileType) {
-    //     card.style.setProperty('--poster',`url('media-image/TV/mobile/${movie.id}.${movie.style.mobileType}')`)
+    //     card.style.setProperty('--poster',`url('../../media-image/TV/mobile/${movie.id}.${movie.style.mobileType}')`)
     //     card.style.setProperty('--ratio',movie.style.mobileSize)
     // } else {
 
@@ -30,13 +30,13 @@ function tvBig(a,b) {
 
 
 
-    card.style.setProperty('--poster',`url('media-image/TV/background/${movie.id}.${movie.style.posterType}')`)
-    title.style.setProperty('--title',`url('media-image/TV/title/${movie.id}.${movie.style.titleType}')`)
+    card.style.setProperty('--poster',`url('../../media-image/TV/background/${movie.id}.${movie.style.posterType}')`)
+    title.style.setProperty('--title',`url('../../media-image/TV/title/${movie.id}.${movie.style.titleType}')`)
 
     if (movie.info.studio) {
-        serv.style.setProperty('--service',`url('media-image/service/${movie.info.studio}.svg')`)
+        serv.style.setProperty('--service',`url('../../media-image/service/${movie.info.studio}.svg')`)
     } else if (movie.info.service) {
-        serv.style.setProperty('--service',`url('media-image/service/${movie.info.service}.svg')`)
+        serv.style.setProperty('--service',`url('../../media-image/service/${movie.info.service}.svg')`)
     } else {
         serv.style.removeProperty('--service')
     }
@@ -123,17 +123,17 @@ function tvBigMob(a,b) {
 
         card.classList.remove('hidden-always')
 
-        card.style.setProperty('--poster',`url('media-image/TV/mobile/${movie.id}.${movie.style.mobileType}')`)
+        card.style.setProperty('--poster',`url('../../media-image/TV/mobile/${movie.id}.${movie.style.mobileType}')`)
         card.style.setProperty('--ratio',movie.style.mobileSize)
         gradient.style.setProperty('--col1',`#${movie.style.color}00`)
         gradient.style.setProperty('--col2',`#${movie.style.color}`)
-        title.style.setProperty('--title',`url('media-image/TV/title/${movie.id}.${movie.style.titleType}')`)
+        title.style.setProperty('--title',`url('../../media-image/TV/title/${movie.id}.${movie.style.titleType}')`)
 
 
         // if (movie.info.studio) {
-        //     serv.style.setProperty('--service',`url('media-image/service/${movie.info.studio}.svg')`)
+        //     serv.style.setProperty('--service',`url('../../media-image/service/${movie.info.studio}.svg')`)
         // } else if (movie.info.service) {
-        //     serv.style.setProperty('--service',`url('media-image/service/${movie.info.service}.svg')`)
+        //     serv.style.setProperty('--service',`url('../../media-image/service/${movie.info.service}.svg')`)
         // } else {
         //     serv.style.removeProperty('--service')
         // }
@@ -200,9 +200,9 @@ function tvMidElement(a,b) {
     movieCardElement.classList = 'tv-mid-card snap'
 
     var movieCardHTML = `
-    <div class="tv-poster" style="--poster: url(media-image/TV/background/${data.id}.${data.style.posterType});">
+    <div class="tv-poster" style="--poster: url(../../media-image/TV/background/${data.id}.${data.style.posterType});">
         <div class="gradient" style="--col: #${col}00;"></div>
-        <div class="title ${data.style.titleSize}" style="--title: url(media-image/TV/title/${data.id}.${data.style.titleType});"></div>
+        <div class="title ${data.style.titleSize}" style="--title: url(../../media-image/TV/title/${data.id}.${data.style.titleType});"></div>
         <a class="play" ${htmlLink} target="_blank"></a>
         <a class="more floating clickable" onclick="tvBig(${a},${b})">
             <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
@@ -283,9 +283,9 @@ function tvSmallElement(a,b) {
     movieCardElement.classList = 'snap'
 
     var movieCardHTML = `
-    <div class="tv-poster" style="--poster: url(media-image/TV/background/${data.id}.${data.style.posterType});">
+    <div class="tv-poster" style="--poster: url(../../media-image/TV/background/${data.id}.${data.style.posterType});">
         <div class="gradient" style="--col: #${col}00;"></div>
-        <div class="title ${data.style.titleSize}" style="--title: url(media-image/TV/title/${data.id}.${data.style.titleType});"></div>
+        <div class="title ${data.style.titleSize}" style="--title: url(../../media-image/TV/title/${data.id}.${data.style.titleType});"></div>
         <a class="play" ${htmlLink} target="_blank"></a>
         <a class="more floating clickable" onclick="tvPopupShow(${a},${b})">
             <svg viewBox="0 0 515.555 515.555" xmlns="http://www.w3.org/2000/svg"><path d="M496.679 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M303.347 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path><path d="M110.014 212.208c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138 65.971-25.167 91.138 0"></path></svg>
@@ -334,7 +334,7 @@ function tvHuluElement(a,b) {
     var service = processService(movie)
 
     if (service) {
-        var serviceHTML = `style="--service: url(media-image/service/${processService(movie)}.svg);"`
+        var serviceHTML = `style="--service: url(../../media-image/service/${processService(movie)}.svg);"`
     } else {
         var serviceHTML = ``
     }
@@ -355,7 +355,7 @@ function tvHuluElement(a,b) {
     }
 
     if (movie.style.titleType) {
-        var title = `<div class="title ${movie.style.titleSize}" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>`
+        var title = `<div class="title ${movie.style.titleSize}" style="--title: url(../../media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>`
     } else {
         var title = `<p class="title-text">${movie.name}</p>`
     }
@@ -368,7 +368,7 @@ function tvHuluElement(a,b) {
     var movieCardHTML = `
     <div class="bg"></div>
     <div class="poster-container">
-        <div class="poster" style="--poster: url(media-image/TV/mobile/${movie.id}.${movie.style.mobileType}); --ratio: ${movie.style.mobileSize};">
+        <div class="poster" style="--poster: url(../../media-image/TV/mobile/${movie.id}.${movie.style.mobileType}); --ratio: ${movie.style.mobileSize};">
             <div class="service" ${serviceHTML}></div>
             <div class="gradient" style="--col1: #${movie.style.color}00;--col2: #${movie.style.color};"></div>
         </div>

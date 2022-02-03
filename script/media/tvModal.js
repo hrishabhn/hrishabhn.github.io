@@ -88,19 +88,19 @@ function tvPopupElement(a,b,old) {
 
     if (movie.style.mobileType) {
         var poster = `
-        <div class="poster-mob card-shadow only-mobile" style="--poster: url(media-image/TV/mobile/${movie.id}.${movie.style.mobileType});--size: ${movie.style.mobileSize};">
+        <div class="poster-mob card-shadow only-mobile" style="--poster: url(../../media-image/TV/mobile/${movie.id}.${movie.style.mobileType});--size: ${movie.style.mobileSize};">
             <div class="gradient" style="--col1: #${movie.style.color}00;--col2: #${movie.style.color};"></div>
         </div>
-        <div class="poster card-shadow hidden-mobile" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
+        <div class="poster card-shadow hidden-mobile" style="--poster: url(../../media-image/TV/background/${movie.id}.${movie.style.posterType});">
             <div class="gradient hidden-mobile" style="--col: #${movie.style.color}00;"></div>
-            <div class="title hidden-mobile" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
+            <div class="title hidden-mobile" style="--title: url(../../media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
         </div>`
     } else {
         var poster = `
         <div class="spacer-x only-mobile" style="--size: 110px;"></div>
-        <div class="poster card-shadow" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
+        <div class="poster card-shadow" style="--poster: url(../../media-image/TV/background/${movie.id}.${movie.style.posterType});">
             <div class="gradient hidden-mobile" style="--col: #${movie.style.color}00;"></div>
-            <div class="title hidden-mobile" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
+            <div class="title hidden-mobile" style="--title: url(../../media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
         </div>`
     }
 
@@ -117,7 +117,7 @@ function tvPopupElement(a,b,old) {
                 <div class="name">${movie.name}</div>
                 <div class="grow hidden-mobile"></div>
             </div>
-            <div id="tv-popup-title-mob" class="title-mob only-mobile ${movie.style.titleSize}" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
+            <div id="tv-popup-title-mob" class="title-mob only-mobile ${movie.style.titleSize}" style="--title: url(../../media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
             <div class="spacer-x" style="--size: 8px;"></div>
             <div class="spacer-x only-mobile" style="--size: 12px;"></div>
             <div class="fill-width">
@@ -466,9 +466,9 @@ function tvPopupSuggestRow(sameMovies,title,oldA,oldB) {
         // }
 
         // card.innerHTML = `
-        // <a class="poster clickable" onclick="tvPopupShow(${a},${b},[${oldA},${oldB}])" style="--poster: url(media-image/TV/background/${movie.id}.${movie.style.posterType});">
+        // <a class="poster clickable" onclick="tvPopupShow(${a},${b},[${oldA},${oldB}])" style="--poster: url(../../media-image/TV/background/${movie.id}.${movie.style.posterType});">
         //     <div class="gradient" style="--col: #${movie.style.color}00;"></div>
-        //     <div class="title" style="--title: url(media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
+        //     <div class="title" style="--title: url(../../media-image/TV/title/${movie.id}.${movie.style.titleType});"></div>
         // </a>
         // <div class="info">
         //     <p class="text desc">${processDesc(movie,'genre')}</p>
@@ -484,7 +484,7 @@ function tvPopupSuggestRow(sameMovies,title,oldA,oldB) {
         //             <p>Watch</p>
         //         </a>
         //         <div class="grow"></div>
-        //         <div class="service" style="--service: url('media-image/service/${processService(movie)}.svg');"></div>
+        //         <div class="service" style="--service: url('../../media-image/service/${processService(movie)}.svg');"></div>
         //     </div>
         // </div>
         // `

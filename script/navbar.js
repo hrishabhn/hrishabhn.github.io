@@ -257,24 +257,11 @@ function renderMenuElement(page) {
         menuItem.classList.add('hidden-mobile')
     }
 
-    let content = document.createElement('div')
-    content.classList = 'content'
-
-    content.innerHTML = `
-
+    menuItem.innerHTML = `
+    <div class="bg blue"></div>
     <div class="icon">${page.info.icon}</div>
     <div class="spacer-x hidden-mobile" style="--size: 8px;"></div>
-    <p>${page.info.name}</p>
-    `
-
-    let line = document.createElement('div')
-    line.classList = 'select-line blue'
-
-    menuItem.append(growElement())
-    menuItem.append(content)
-    menuItem.append(growElement())
-    menuItem.append(line)
-
+    <p>${page.info.name}</p>`
 
     return menuItem
 }

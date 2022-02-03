@@ -175,45 +175,6 @@ let movieData0 = [
         },
     },
     {
-        name: 'Yellowjackets',
-        id: 'yellowjackets',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'showtime',
-            // studio: 'studio',
-            location: 'Downloaded',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'horror',
-                    'mystery',
-                ],
-            },
-            summary: "A wildly talented high school girl soccer team becomes the (un)lucky survivors of a plane crash deep in the Ontario wilderness.",
-        },
-        style: {
-            color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'png',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '399731',
-            reelgoodLink: 'https://reelgood.com/show/yellowjackets-2021',
-            imdbID: 'tt11041332',
-            subReddit: 'Yellowjackets',
-        },
-    },
-    {
         name: 'Superstore',
         id: 'superstore',
         link: {
@@ -663,7 +624,7 @@ let soonMovies = [
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            date: 'Feb 1, 2022',
+            date: 'Feb 8, 2022',
             // weekday: '',
             desc: {
                 seasons: 1,
@@ -3587,6 +3548,43 @@ const movieData7 = [
                 char: 'Colin Robinson',
             },
         ],
+    },
+    {
+        name: 'Yellowjackets',
+        id: 'yellowjackets',
+        link: '',
+        info: {
+            service: 'showtime',
+            // studio: 'studio',
+            location: 'Downloaded',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'horror',
+                    'mystery',
+                ],
+            },
+            summary: "A wildly talented high school girl soccer team becomes the (un)lucky survivors of a plane crash deep in the Ontario wilderness.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'png',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '399731',
+            reelgoodLink: 'https://reelgood.com/show/yellowjackets-2021',
+            imdbID: 'tt11041332',
+            subReddit: 'Yellowjackets',
+        },
     },
 ]
 const movieData8 = [
