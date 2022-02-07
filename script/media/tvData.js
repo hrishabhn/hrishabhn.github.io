@@ -57,50 +57,6 @@
 
 let movieData0 = [
     {
-        name: 'Soy Georgina',
-        id: 'georgina',
-        link: {
-            netflix: '81423622'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                year: 2022,
-                genre: [
-                    'comedy',
-                    'documentary',
-                ],
-            },
-            summary: "Join Georgina Rodríguez — mom, influencer, businesswoman and Cristiano Ronaldo's partner — in this emotional and in-depth portrait of her daily life.",
-        },
-        style: {
-            color: '8f7d4b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '768 / 1024',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
-    },
-    {
         name: 'The Expanse',
         id: 'expanse',
         link: {
@@ -174,6 +130,52 @@ let movieData0 = [
             subReddit: 'attackontitan',
         },
     },
+]
+let movieData1 = [
+    {
+        name: 'Soy Georgina',
+        id: 'georgina',
+        link: {
+            netflix: '81423622'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                year: 2022,
+                genre: [
+                    'comedy',
+                    'documentary',
+                ],
+            },
+            summary: "Join Georgina Rodríguez — mom, influencer, businesswoman and Cristiano Ronaldo's partner — in this emotional and in-depth portrait of her daily life.",
+        },
+        style: {
+            color: '8f7d4b',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '768 / 1024',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         image: 'url',
+        //         char: 'name',
+        //     },
+        // ],
+    },
     {
         name: 'Superstore',
         id: 'superstore',
@@ -206,11 +208,9 @@ let movieData0 = [
             tvTimeID: '295648',
             reelgoodLink: 'https://reelgood.com/show/superstore-2015',
             imdbID: 'tt4477976',
-            // subReddit: 'subreddit',
+            subReddit: 'superstore',
         },
     },
-]
-let movieData1 = [
     {
         name: "Don't Look Up",
         id: 'dontLookUp',
@@ -1106,38 +1106,6 @@ const movieData2 = [
     },
 ]
 const movieData3 = [
-    {
-        name: 'Spider-Man: No Way Home',
-        id: 'spiderMan3',
-        // link: '',
-        info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Coming Soon',
-            date: '15 Dec, 2021',
-            desc: {
-                year: 2021,
-                genre: [
-                    'sci-fi',
-                    'MCU',
-                ],
-            },
-            summary: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
-        },
-        style: {
-            color: 'af0000',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/spiderman-no-way-home-2021',
-            imdbID: 'tt10872600',
-            // subReddit: 'subreddit',
-        },
-    },
     {
         name: 'Eternals',
         id: 'eternals',
@@ -4451,6 +4419,38 @@ const movieData9 = [
     },
 ]
 const movieData10 = [
+    {
+        name: 'Spider-Man: No Way Home',
+        id: 'spiderMan3',
+        // link: '',
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Coming Soon',
+            // date: '15 Dec, 2021',
+            desc: {
+                year: 2021,
+                genre: [
+                    'sci-fi',
+                    'MCU',
+                ],
+            },
+            summary: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+        },
+        style: {
+            color: 'af0000',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/spiderman-no-way-home-2021',
+            imdbID: 'tt10872600',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Spider-Man 3',
         id: 'spider_1_3',

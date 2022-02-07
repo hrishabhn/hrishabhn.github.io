@@ -1,5 +1,36 @@
-
 const bookData0 = [
+    {
+        name: 'Gweilo: Memories of a Hong Kong Childhood',
+        id: 'gweilo',
+        link: 'kindle://',
+        author: 'Martin Booth',
+        coverType: 'jpg',
+        progress: '6%',
+        format: 'EBook',
+        style: 'secondary',
+    },
+    {
+        name: "100 Things We've Lost to the Internet",
+        id: 'lost',
+        link: 'kindle://',
+        author: 'Pamela Paul',
+        coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
+        style: 'orange',
+    },
+    {
+        name: '12 Rules for Life',
+        id: '12rules',
+        link: 'ibooks://',
+        author: 'Jordan B. Peterson',
+        coverType: 'jpg',
+        progress: '9%',
+        format: 'EBook & Audiobook',
+        style: 'secondary',
+    },
+]
+const bookData1 = [
     {
         name: 'A Short History of Nearly Everything',
         id: 'short',
@@ -7,16 +38,8 @@ const bookData0 = [
         author: 'Bill Bryson',
         coverType: 'jpg',
         progress: '9%',
-        format: 'Ebook',
-    },
-    {
-        name: 'Gweilo: Memories of a Hong Kong Childhood',
-        id: 'gweilo',
-        link: 'ibooks://',
-        author: 'Martin Booth',
-        coverType: 'jpg',
-        progress: '6%',
         format: 'EBook',
+        style: 'purple',
     },
     {
         name: 'Faster Than Normal',
@@ -28,18 +51,7 @@ const bookData0 = [
         coverType: 'jpg',
         progress: '3h 0m left',
         format: 'AudioBook',
-    },
-]
-
-const bookData1 = [
-    {
-        name: "100 Things We've Lost to the Internet",
-        id: 'lost',
-        link: 'ibooks://',
-        author: 'Pamela Paul',
-        coverType: 'jpg',
-        progress: 'NEW',
-        format: 'Ebook',
+        style: 'blue',
     },
     {
         name: 'Project Hail Mary',
@@ -48,7 +60,8 @@ const bookData1 = [
         author: 'Andy Weir',
         coverType: 'jpg',
         progress: 'NEW',
-        format: 'Ebook',
+        format: 'EBook',
+        style: 'brown',
     },
     {
         name: 'Ready Player One',
@@ -57,7 +70,8 @@ const bookData1 = [
         author: 'Ernest Cline',
         coverType: 'jpg',
         progress: 'NEW',
-        format: 'Ebook',
+        format: 'EBook',
+        // style: 'secondary',
     },
     {
         name: 'The Culture Map',
@@ -67,6 +81,7 @@ const bookData1 = [
         coverType: 'jpg',
         progress: 'NEW',
         format: 'EBook',
+        // style: 'secondary',
     },
     {
         name: 'Brave New World',
@@ -76,15 +91,7 @@ const bookData1 = [
         coverType: 'jpg',
         progress: '22%',
         format: 'EBook',
-    },
-    {
-        name: '12 Rules for Life',
-        id: '12rules',
-        link: 'ibooks://',
-        author: 'Jordan B. Peterson',
-        coverType: 'jpg',
-        progress: '9%',
-        format: 'EBook & Audiobook',
+        // style: 'secondary',
     },
     {
         name: 'The Ride of a Lifetime',
@@ -96,6 +103,7 @@ const bookData1 = [
         coverType: 'jpg',
         progress: '4h 39m left',
         format: 'AudioBook',
+        // style: 'secondary',
     },
     {
         name: 'The Martian',
@@ -107,6 +115,7 @@ const bookData1 = [
         coverType: 'jpg',
         progress: '29%',
         format: 'EBook',
+        // style: 'secondary',
     },
     {
         name: 'Never Split the Difference',
@@ -116,6 +125,7 @@ const bookData1 = [
         coverType: 'jpg',
         progress: '4%',
         format: 'EBook',
+        // style: 'secondary',
     },
 ]
 const bookData2 = [
@@ -127,6 +137,7 @@ const bookData2 = [
         coverType: 'jpg',
         progress: 'NEW',
         format: 'EBook & Audiobook',
+        style: 'secondary',
     },
     {
         name: 'The Future is Asian',
@@ -136,6 +147,7 @@ const bookData2 = [
         coverType: 'jpg',
         progress: 'NEW',
         format: 'EBook',
+        // style: 'secondary',
     },
     {
         name: 'The Raging 2020s',
@@ -145,6 +157,7 @@ const bookData2 = [
         coverType: 'jpg',
         progress: 'NEW',
         format: 'EBook',
+        // style: 'secondary',
     },
     {
         name: 'The Expatriates',
@@ -154,6 +167,7 @@ const bookData2 = [
         coverType: 'jpg',
         progress: 'NEW',
         format: 'EBook',
+        // style: 'secondary',
     },
     {
         name: 'The Culture Code',
@@ -163,9 +177,9 @@ const bookData2 = [
         coverType: 'jpg',
         progress: 'NEW',
         format: 'EBook',
+        // style: 'secondary',
     },
 ]
-
 const bookData3 = [
     {
         name: 'Going Solo',
@@ -175,6 +189,7 @@ const bookData3 = [
         coverType: 'jpg',
         progress: 'Finished',
         format: 'EBook',
+        // style: 'secondary',
     },
     {
         name: 'No Rules Rules',
@@ -184,6 +199,7 @@ const bookData3 = [
         coverType: 'jpg',
         progress: 'Finished',
         format: 'EBook',
+        style: 'red',
     },
     {
         name: 'Homo Deus',
@@ -195,6 +211,7 @@ const bookData3 = [
         coverType: 'jpg',
         progress: 'FINISHED',
         format: 'AudioBook',
+        style: 'secondary',
     },
     {
         name: 'Has the West Lost It?',
@@ -204,6 +221,7 @@ const bookData3 = [
         coverType: 'jpg',
         progress: 'FINISHED',
         format: 'EBook',
+        // style: 'secondary',
     },
     {
         name: 'Sapiens',
@@ -215,6 +233,7 @@ const bookData3 = [
         coverType: 'jpg',
         progress: 'FINISHED',
         format: 'AudioBook',
+        // style: 'secondary',
     },
     {
         name: 'Animal Farm',
@@ -223,7 +242,8 @@ const bookData3 = [
         author: 'George Orwell',
         coverType: 'jpg',
         progress: 'Finished',
-        format: 'Audiobook',
+        format: 'AudioBook',
+        style: 'red',
     },
     {
         name: "The Hitchhiker's Guide to the Galaxy",
@@ -235,6 +255,7 @@ const bookData3 = [
         coverType: 'jpg',
         progress: 'FINISHED',
         format: 'AudioBook',
+        // style: 'secondary',
     },
     {
         name: 'The Age of Surveillance Capitalism',
@@ -252,7 +273,8 @@ const bookData3 = [
         author: 'George Orwell',
         coverType: 'jpg',
         progress: 'Finished',
-        format: 'Audiobook',
+        format: 'AudioBook',
+        // style: 'secondary',
     },
     {
         name: 'Boy',
@@ -262,6 +284,7 @@ const bookData3 = [
         coverType: 'jpg',
         progress: 'FINISHED',
         format: 'EBook',
+        // style: 'secondary',
     },
 ]
 
