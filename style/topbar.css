@@ -1,8 +1,14 @@
 .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+
     grid-column: 1 / -1;
     box-shadow: 0 0 30px #00000022;
     z-index: 1;
-    height: 100%;
+    /* height: 100%; */
 
     padding: 0px 10px;
 }
