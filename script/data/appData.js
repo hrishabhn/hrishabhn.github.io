@@ -38,13 +38,6 @@ const appData = {
     ],
     'notion': [
         {
-            name: 'Travel',
-            link: 'https://app.clickup.com/8450846/v/l/6-48362200-1',
-            desc: 'Details & Documents',
-            thumb: 'travel.png',
-            accent: '00AAF0'
-        },
-        {
             name: 'Inbox',
             link: 'https://www.notion.so/Inbox-90dd1c97df2d4bee8c605c27dfb5fb54',
             desc: 'Ideas & Notes',
@@ -124,34 +117,6 @@ const appData = {
             desc: 'Shopping',
             thumb: 'amazon.jpeg',
             accent: 'bea977',
-        },
-        {
-            name: 'Flaticon',
-            link: 'https://www.flaticon.com',
-            desc: 'Free Icons',
-            thumb: 'flaticon.png',
-            accent: '0E2A47',
-        },
-        {
-            name: 'Icons8',
-            link: 'https://icons8.com',
-            desc: 'Free Icons',
-            thumb: 'icons8.png',
-            accent: '1fb141',
-        },
-        {
-            name: 'Average Colour',
-            link: 'https://matkl.github.io/average-color',
-            desc: 'Get Average Colour of Image',
-            thumb: 'color.png',
-            // style: 'red',
-        },
-        {
-            name: 'Colour Picker',
-            link: 'https://image-color.com',
-            desc: 'Find Colour From Image',
-            thumb: 'picker.png',
-            // style: 'red',
         },
         {
             name: 'Pirate Bay',
@@ -274,13 +239,20 @@ const appData = {
     ],
     'travel': [
         {
+            name: 'Travel',
+            link: 'https://www.notion.so/Travel-798b2161bfef4ec7b4c93f4ce98fdffa',
+            desc: 'Details & Documents',
+            thumb: 'travel.png',
+            accent: '00AAF0'
+        },
+        {
             name: 'IB 3164',
             trigger: function() {
                 addModalLayer(flightDetailCard('mad-lhr'))
             },
             desc: 'MAD &#8594 LHR',
             thumb: 'iberia.jpeg',
-            accent: 'D6192D',
+            accent: airlineData['iberia'].color,
             tags: [
                 'madrid',
                 'london',
@@ -293,7 +265,7 @@ const appData = {
             },
             desc: 'LHR &#8594 MAD',
             thumb: 'ba.jpeg',
-            accent: '0035AD',
+            accent: airlineData['british'].color,
             tags: [
                 'madrid',
                 'london',
@@ -345,7 +317,57 @@ const appData = {
             ],
         },
     ],
-
+    'design': [
+        {
+            name: 'Flaticon',
+            link: 'https://www.flaticon.com',
+            desc: 'Free Icons',
+            thumb: 'flaticon.png',
+            accent: '0E2A47',
+        },
+        {
+            name: 'Icons8',
+            link: 'https://icons8.com',
+            desc: 'Free Icons',
+            thumb: 'icons8.png',
+            accent: '1fb141',
+        },
+        {
+            name: 'Average Colour',
+            link: 'https://matkl.github.io/average-color',
+            desc: 'Get Average Colour of Image',
+            thumb: 'color.png',
+            // style: 'red',
+        },
+        {
+            name: 'Colour Picker',
+            link: 'https://image-color.com',
+            desc: 'Find Colour From Image',
+            thumb: 'picker.png',
+            // style: 'red',
+        },
+        {
+            name: 'SVG OMG',
+            link: 'https://jakearchibald.github.io/svgomg',
+            desc: 'Clean Up SVGs',
+            thumb: 'svg.png',
+            // style: 'red',
+        },
+        {
+            name: 'Fix SVG',
+            link: 'https://jsfiddle.net/fr1ke0sm/1',
+            desc: 'Remove Whitespace (Square)',
+            thumb: 'svg.png',
+            // style: 'red',
+        },
+        {
+            name: 'Fix SVG',
+            link: 'https://jsfiddle.net/knLbjc9a/4',
+            desc: 'Remove Whitespace (All)',
+            thumb: 'svg.png',
+            // style: 'red',
+        },
+    ],
 
 
     // school

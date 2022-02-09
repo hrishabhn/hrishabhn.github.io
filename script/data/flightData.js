@@ -2,10 +2,29 @@ const airlineData = {
     'iberia': {
         code: 'IB',
         thumb: thumbData['iberia'],
+        color: 'D6192D',
+        link: {
+            mobile: 'iberia://',
+            desktop: 'https://www.iberia.com',
+        },
     },
     'british': {
         code: 'BA',
         thumb: thumbData['british'],
+        color: '0035AD',
+        link: {
+            mobile: 'iberia://',
+            desktop: 'https://www.iberia.com',
+        },
+    },
+}
+
+const aircraftData = {
+    'a321': {
+        name: 'A321',
+    },
+    'a320neo': {
+        name: 'A320neo',
     },
 }
 
@@ -30,11 +49,13 @@ const flightData = {
             terminal: '5',
             gate: '69',
         },
-        duration: '2h 30m',
+        duration: '2h 25m',
         date: 'Thu, 17 Feb',
         seat: '99Z',
         airline: airlineData['iberia'],
-        aircraft: 'A321',
+        aircraft: aircraftData['a321'],
+        return: 'lhr-mad',
+        link: 'https://www.notion.so/Feb-2022-London-7bbb8355d70342d087d2f8e7cf43effc'
     },
     'lhr-mad': {
         number: '464',
@@ -60,6 +81,8 @@ const flightData = {
         date: 'Sun, 20 Feb',
         seat: '99Z',
         airline: airlineData['british'],
-        aircraft: 'A320neo',
+        aircraft: aircraftData['a320neo'],
+        return: 'mad-lhr',
+        link: 'https://www.notion.so/Feb-2022-London-7bbb8355d70342d087d2f8e7cf43effc'
     },
 }

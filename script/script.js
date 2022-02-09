@@ -240,3 +240,19 @@ function removeAllChildNodes(parent) {
         parent.removeChild(parent.firstChild);
     }
 }
+
+
+function processDeviceLink(linkObject) {
+    if (linkObject.mobile) {
+        if ('ontouchstart' in document.documentElement) {
+            var result = linkObject.mobile
+        } else {
+            var result = linkObject.desktop
+        }
+
+    } else {
+        var result = linkObject
+    }
+
+    return result
+}

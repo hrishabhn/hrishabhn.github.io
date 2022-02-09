@@ -3,6 +3,7 @@ function flightDetailCard(flightKey) {
 
     let card = document.createElement('div')
     card.classList = 'flight-detail-card layer-1'
+    card.style.setProperty('--col',`#${flight.airline.color}`)
     card.innerHTML = `
     <div class="header">
         <div class="thumb" style="background-image: url(./appThumb/${flight.airline.thumb});"></div>
@@ -11,34 +12,93 @@ function flightDetailCard(flightKey) {
             <p class="text">${flight.dep.city} to ${flight.arr.city}</p>
         </div>
     </div>
-    <div class="fill-width vstack">
-        <div class="action-tray">
-            <a class="action clickable blue">
-                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.1026 4.43011c.5113-.20876 1.0951.0365 1.3038.54781 1.6701 4.09049-.2921 8.76038-4.3825 10.43038-2.36101.964-4.91572.7169-6.97196-.4481-.48051-.2723-.64933-.8826-.37707-1.3631.27226-.4805.8825-.6493 1.36302-.377 1.54625.8761 3.46007 1.0592 5.23001.3366 3.0678-1.2525 4.5394-4.75493 3.2869-7.82279-.2088-.51131.0365-1.09505.5478-1.3038ZM2.19544 9.52389c.06597.25007.14896.49911.24969.74591.10074.2467.21579.4827.34369.7075.27315.48.10544 1.0905-.37457 1.3637-.48001.2731-1.09057.1054-1.36371-.3746-.170573-.2998-.323506-.6136-.457025-.9407-.133519-.327-.243949-.6582-.331921-.9917-.14087-.53399.17784-1.0811.711857-1.22197.534019-.14087 1.081119.17784 1.221989.71186Zm.26371-5.91686c.47709.27823.63829.89053.36007 1.36761-.26431.45322-.46866.93955-.60738 1.44554-.14602.53263-.69618.84604-1.228814.70001C.450396 6.97416.136992 6.424.283019 5.89137c.184683-.67363.456647-1.3209.808521-1.92428.27823-.47708.89053-.63829 1.36761-.36006ZM10.1104.28485c.6737.184683 1.3209.456647 1.9243.80853.4771.27822.6383.89052.3601 1.3676-.2782.47709-.8905.63829-1.3676.36007-.4532-.26431-.9396-.46865-1.44557-.60738-.53263-.14602-.84603-.69618-.70001-1.228813.14603-.53263.69619-.846034 1.22878-.700007ZM7.18978.975282c.14087.534018-.17784 1.081118-.71186 1.221988-.25007.06597-.49914.14896-.74587.24969-.24674.10074-.48272.21579-.7075.3437-.48001.27314-1.09057.10543-1.36371-.37458-.27314-.48001-.10543-1.09057.37458-1.36371.29977-.170572.61362-.323505.94065-.457024.32702-.133519.65823-.243949.99172-.331921.53402-.140869 1.08112.17784 1.22199.711857Z"/></svg></div>
-                <p>Status</p>
-            </a>
-            ${spacerElement(10).outerHTML}
-            <a class="action clickable blue">
-                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.1026 4.43011c.5113-.20876 1.0951.0365 1.3038.54781 1.6701 4.09049-.2921 8.76038-4.3825 10.43038-2.36101.964-4.91572.7169-6.97196-.4481-.48051-.2723-.64933-.8826-.37707-1.3631.27226-.4805.8825-.6493 1.36302-.377 1.54625.8761 3.46007 1.0592 5.23001.3366 3.0678-1.2525 4.5394-4.75493 3.2869-7.82279-.2088-.51131.0365-1.09505.5478-1.3038ZM2.19544 9.52389c.06597.25007.14896.49911.24969.74591.10074.2467.21579.4827.34369.7075.27315.48.10544 1.0905-.37457 1.3637-.48001.2731-1.09057.1054-1.36371-.3746-.170573-.2998-.323506-.6136-.457025-.9407-.133519-.327-.243949-.6582-.331921-.9917-.14087-.53399.17784-1.0811.711857-1.22197.534019-.14087 1.081119.17784 1.221989.71186Zm.26371-5.91686c.47709.27823.63829.89053.36007 1.36761-.26431.45322-.46866.93955-.60738 1.44554-.14602.53263-.69618.84604-1.228814.70001C.450396 6.97416.136992 6.424.283019 5.89137c.184683-.67363.456647-1.3209.808521-1.92428.27823-.47708.89053-.63829 1.36761-.36006ZM10.1104.28485c.6737.184683 1.3209.456647 1.9243.80853.4771.27822.6383.89052.3601 1.3676-.2782.47709-.8905.63829-1.3676.36007-.4532-.26431-.9396-.46865-1.44557-.60738-.53263-.14602-.84603-.69618-.70001-1.228813.14603-.53263.69619-.846034 1.22878-.700007ZM7.18978.975282c.14087.534018-.17784 1.081118-.71186 1.221988-.25007.06597-.49914.14896-.74587.24969-.24674.10074-.48272.21579-.7075.3437-.48001.27314-1.09057.10543-1.36371-.37458-.27314-.48001-.10543-1.09057.37458-1.36371.29977-.170572.61362-.323505.94065-.457024.32702-.133519.65823-.243949.99172-.331921.53402-.140869 1.08112.17784 1.22199.711857Z"/></svg></div>
-                <p>Status</p>
-            </a>
-        </div>
-        <div class="status-bar">
-            <p>Departs in 7 days</p>
-        </div>
-        ${flightDetailCardDepArr(flight.dep,'dep').outerHTML}
-        <div class="duration-bar">
-            <div></div>
-            <div class="line layer-fg"></div>
-            <p>Total 2h 35m &#149 1,244km</p>
-            <div class="line layer-fg"></div>
-        </div>
-        ${flightDetailCardDepArr(flight.arr,'arr').outerHTML}
-    </div>
-    ${spacerElement(40,'only-mobile').outerHTML}
     `
 
+    let rest = document.createElement('div')
+    rest.classList = 'fill-width vstack'
+
+    rest.innerHTML = `
+    <div class="status-bar">
+    <p>Departs in 7 days</p>
+    </div>
+    ${flightDetailCardDepArr(flight.dep,'dep').outerHTML}
+    <div class="duration-bar">
+    <div></div>
+    <div class="line layer-fg"></div>
+    <p>Total ${flight.duration}</p>
+    <div class="line layer-fg"></div>
+    </div>
+    ${flightDetailCardDepArr(flight.arr,'arr').outerHTML}
+    ${flightDetailCardExtras(flight).outerHTML}
+    `
+    rest.prepend(flightDetailCardActionTray(flight))
+
+    card.append(spacerElement(20))
+    card.append(rest)
+    card.append(spacerElement(15))
+    card.append(spacerElement(40,'only-mobile'))
+
+
+
     return card
+}
+
+function flightDetailCardActionTray(flight) {
+    const actionData = [
+        {
+            icon: iconData['ticket'],
+            text: 'Ticket',
+            link: flight.link,
+        },
+        // {
+        //     icon: iconData['status'],
+        //     text: 'Status',
+        // },
+        {
+            icon: iconData['exit'],
+            text: 'App',
+            link: processDeviceLink(flight.airline.link),
+        },
+        {
+            icon: iconData['reverse'],
+            text: 'Other Leg',
+            trigger: function() { addModalLayer(flightDetailCard(flight.return)) }
+        },
+    ]
+
+    let tray = document.createElement('div')
+    tray.classList = 'action-tray'
+    
+    for (let i = 0; i < actionData.length; i++) {
+        let data = actionData[i]
+
+        let action = document.createElement('a')
+        action.classList = 'action clickable'
+        action.target = '_blank'
+        if (i > 0) {
+            action.classList.add('secondary')
+        } else {
+            action.classList.add('primary')
+        }
+
+        action.innerHTML = `
+        <div class="icon">${data.icon}</div>
+        <p>${data.text}</p>
+        
+        `
+
+        if (data.link) {
+            action.href = data.link
+        } else if (data.trigger) {
+            action.onclick = function() { data.trigger() }
+        }
+
+        tray.append(action)
+        tray.append(spacerElement(10))
+    }
+    tray.lastChild.remove()
+
+    return tray
 }
 
 function flightDetailCardDepArr(flightDepArr, depArr) {
@@ -70,4 +130,37 @@ function dashIfFalse(input) {
     } else {
         return '--'
     }
+}
+
+function flightDetailCardExtras(flight) {
+    let tray = document.createElement('div')
+    tray.classList = 'extras-tray'
+
+    const extraData = [
+        {
+            icon: iconData['plane'],
+            text: flight.aircraft.name,
+            subtext: 'Aircraft',
+        },
+        {
+            icon: iconData['seat'],
+            text: 'Seat --',
+            subtext: 'Economy',
+        },
+    ]
+
+    for (const data of extraData) {
+        let item = document.createElement('a')
+        item.innerHTML = `
+        <div class="icon">${data.icon}</div>
+        <p class="text">${data.text}</p>
+        <p class="subtext">${data.subtext}</p>
+        `
+
+        tray.append(item)
+    }
+
+
+
+    return tray
 }
