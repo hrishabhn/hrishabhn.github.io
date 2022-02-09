@@ -288,7 +288,9 @@ const appData = {
         },
         {
             name: 'BA 464',
-            link: 'https://www.iberia.com',
+            trigger: function() {
+                addModalLayer(flightDetailCard('lhr-mad'))
+            },
             desc: 'LHR &#8594 MAD',
             thumb: 'ba.jpeg',
             accent: '0035AD',
