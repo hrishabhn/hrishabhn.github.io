@@ -1,0 +1,19 @@
+.focus-cards{
+    width: 100%;
+    /* min-height: 100%; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 30px;
+
+    /* flex-wrap: wrap; */
+}
+
+.focus-item{
+    /* flex: 1 0 200px; */
+    height: 200px;
+    margin: 5px;
+    background-color: red;
+    border: solid 5px green;
+}

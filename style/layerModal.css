@@ -1,0 +1,36 @@
+#layer-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+#layer-modal.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#layer-modal .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+#layer-modal .layer .close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--black-50);
+}
+
+@media(max-width: 450px){
+    #layer-modal .layer{
+        align-items: flex-end;
+    }
+
+}

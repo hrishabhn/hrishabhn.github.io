@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name='viewport'
+        content='viewport-fit=cover, height=device-height, width=device-width, initial-scale=1.0, user-scalable=no'>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/color.css">
+    <link rel="stylesheet" href="style/brand.css">
+    <link rel="stylesheet" href="style/elements.css">
+    <link rel="stylesheet" href="style/devices.css">
+    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="style/defaultDash.css">
+    <link rel="stylesheet" href="style/topbar.css">
+    <link rel="stylesheet" href="style/context.css">
+    <link rel="stylesheet" href="style/flight.css">
+    <link rel="stylesheet" href="style/layerModal.css">
+
+
+    <link rel="stylesheet" href="style/media/media.css">
+    <link rel="stylesheet" href="style/media/tvDetail.css">
+
+    <link rel="stylesheet" href="style/spotlight.css">
+    <link rel="stylesheet" href="style/focus.css">
+
+
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/home.png" />
+    <link rel="apple-touch-startup-image"
+        media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        href="images/launch-12mini.png">
+    <link rel="apple-touch-startup-image"
+        media="screen and (device-width: 1194px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait"
+        href="images/launch-ipad.png">
+
+    <meta name="mobile-wep-app-capable" content="yes">
+    </meta>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    </meta>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    </meta>
+
+
+    <title id="title-page">Dashboard</title>
+</head>
+
+<body id="body" ontouchstart="" onload="loadApp()">
+    <div class="main">
+        <div id="topbar" class="topbar layer-1"></div>
+        <div id="rest-of-stuff" class="layer-0">
+            <div id="splash"></div>
+            <div id="home-all"></div>
+        </div>
+        
+
+    </div>
+    <div id="tv-modal">
+        <a class="close" onclick="hideTVDetail()"></a>
+    </div>
+    <div id="context-modal" class="hide">
+        <div class="close" onclick="contextModalHide()"></div>
+        <div id="context-menu" class="layer-1-blur"></div>
+    </div>
+    <div id="layer-modal" class="hide"></div>
+</body>
+
+<script src="script/load.js"></script>
+
+<script src="script/spotlight.js"></script>
+<script src="script/search/mediaSearch.js"></script>
+
+<script src="script/media/tvDetail.js"></script>
+<script src="script/media/mediaScript.js"></script>
+
+<script src="script/context.js"></script>
+
+<script src="script/defaultDash.js"></script>
+
+<script src="script/cookies.js"></script>
+<script src="script/script.js"></script>
+<script src="script/elements.js"></script>
+
+<script src="script/elems/appCard.js"></script>
+<script src="script/elems/topbar.js"></script>
+<script src="script/elems/splash.js"></script>
+
+<script src="script/pageScripts/flight.js"></script>
+<script src="script/pageScripts/layerModal.js"></script>
+
+<!-- <script src="../hrishabhn.github.io/script/media/tvData.js"></script> -->
+<script src="../hrishabhn.github.io/script/media/bookData.js"></script>
+<script src="script/data/podData.js"></script>
+<script src="script/data/tvData.js"></script>
+<!-- <script src="script/data/bookData.js"></script> -->
+<!-- <script src="../hrishabhn.github.io/script/media/podData.js"></script> -->
+
+<script src="script/data/iconData.js"></script>
+<script src="script/data/colorData.js"></script>
+<script src="script/data/appData.js"></script>
+<script src="script/data/focusData.js"></script>
+<script src="script/data/flightData.js"></script>
+
+
+
+
+
+
+
+
+</html>
