@@ -207,6 +207,13 @@ const appData = {
             style: 'indigo',
         },
         {
+            name: 'Goodreads',
+            link: 'https://www.goodreads.com',
+            desc: 'Reviews and Charts',
+            thumb: 'goodreads.jpeg',
+            accent: '382110',
+        },
+        {
             name: 'SCMP',
             link: 'https://www.scmp.com',
             desc: 'Hong Kong News',
