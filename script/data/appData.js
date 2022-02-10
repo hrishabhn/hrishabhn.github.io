@@ -85,7 +85,7 @@ const appData = {
     'bookmarks': [
         {
             name: 'Old',
-            link: 'file:///Users/hrishabh/Documents/GitHub/hrishabhn.github.io/index.html',
+            link: 'file:///Users/hrishabh/Documents/GitHub/oldDash/index.html',
             desc: 'Previous Version',
             thumb: thumbData['more'],
             style: 'secondary',
@@ -367,8 +367,14 @@ const appData = {
             thumb: 'svg.png',
             // style: 'red',
         },
+        {
+            name: 'Book Covers',
+            link: 'https://www.ereader-palace.com/get-high-resolution-cover-image-amazon-kindle-ebooks',
+            desc: 'High Resolution Covers',
+            thumb: thumbData['book'],
+            // style: 'red',
+        },
     ],
-
 
     // school
 
