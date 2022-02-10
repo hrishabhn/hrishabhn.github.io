@@ -77,35 +77,45 @@ let focusData = [
             style: 'secondary',
             apps: appData['sail'],
         },
-        'mse': {
-            name: 'Materials Science',
-            desc: 'Materials Science & Engineering',
+        'indorg': {
+            name: 'Industrial Organisation',
+            desc: '13186',
             thumb: thumbData['atom'],
             style: 'secondary',
-            apps: appData['mse'],
+            apps: appData['indorg'],
         },
-        'mattech': {
-            name: 'Materials Technology',
-            desc: 'Description',
-            thumb: thumbData['diamond'],
+        'finecon': {
+            name: 'Financial Economics',
+            desc: '13648',
+            thumb: thumbData['finance'],
             style: 'secondary',
-            apps: appData['mse'],
+            apps: appData['finecon'],
         },
         'manage': {
-            name: 'Management',
-            desc: 'Introduction to Engineering Management',
-            thumb: thumbData['work'],
+            name: 'Engineering Management',
+            desc: '14197',
+            thumb: thumbData['plane'],
             style: 'secondary',
-            apps: appData['mse'],
+            apps: appData['manage'],
         },
         'controls': {
-            name: 'Controls',
-            desc: 'Introduction to Engineering Management',
+            name: 'Control Engineering',
+            desc: '15514',
             thumb: thumbData['work'],
             style: 'secondary',
             apps: appData['controls'],
         },
 
+
+        // 'mse': {
+        //     name: 'Materials Science',
+        //     thumb: thumbData['atom'],
+        //     apps: appData['mse'],
+        // },
+        // 'mattech': {
+        //     name: 'Materials Technology',
+        //     thumb: thumbData['diamond'],
+        // },
     },
     {
         'travel': {

@@ -1,3 +1,39 @@
+const commonApps = {
+    onedrive: function (link) {
+        return {
+            name: 'OneDrive',
+            link: link,
+            desc: 'Files',
+            thumb: 'onedrive.jpeg',
+            accent: colorData['onedrive'],
+        }
+    },
+    notion: function (link) {
+        return {
+            name: 'Notion',
+            link: link,
+            desc: 'Notes',
+            thumb: 'notion.jpeg',
+            style: 'secondary',
+        }
+    },
+    aula: function (id, n) {
+        if (n) {
+            var nStr = ` (${n})`
+        } else {
+            var nStr = ``
+        }
+
+        return {
+            name: `Aula Global${nStr}`,
+            link: `https://aulaglobal.uc3m.es/course/view.php?id=${id}`,
+            desc: 'Learn',
+            thumb: thumbData['course'],
+            style: 'purple',
+        }
+    },
+}
+
 const appData = {
     'main': [
         {
@@ -7,20 +43,8 @@ const appData = {
             thumb: 'outlook.jpeg',
             accent: '0078d4',
         },
-        {
-            name: 'OneDrive',
-            link: 'https://purdue0-my.sharepoint.com',
-            desc: 'Files',
-            thumb: 'onedrive.jpeg',
-            accent: colorData['onedrive'],
-        },
-        {
-            name: 'Notion',
-            link: 'https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945',
-            desc: 'Notes',
-            thumb: 'notion.jpeg',
-            style: 'secondary',
-        },
+        commonApps.onedrive('https://purdue0-my.sharepoint.com'),
+        commonApps.notion('https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945'),
         {
             name: 'Tasks',
             link: 'https://app.clickup.com/8450846/v/l/6-48362200-1',
@@ -268,7 +292,7 @@ const appData = {
         },
         {
             name: 'IB 3164',
-            trigger: function() {
+            trigger: function () {
                 addModalLayer(flightDetailCard('mad-lhr'))
             },
             desc: 'MAD &#8594 LHR',
@@ -281,7 +305,7 @@ const appData = {
         },
         {
             name: 'BA 464',
-            trigger: function() {
+            trigger: function () {
                 addModalLayer(flightDetailCard('lhr-mad'))
             },
             desc: 'LHR &#8594 MAD',
@@ -398,24 +422,6 @@ const appData = {
     ],
 
     // school
-
-
-    // {
-    //     name: 'OneDrive',
-    //     // link: 'https://purdue0-my.sharepoint.com',
-    //     desc: 'Files',
-    //     thumb: 'onedrive.jpeg',
-    //     accent: colorData['onedrive'],
-    // },
-    // {
-    //     name: 'Notion',
-    //     // link: 'https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945',
-    //     desc: 'Notes',
-    //     thumb: 'notion.jpeg',
-    //     style: 'secondary',
-    // },
-
-
     'sail': [
         {
             name: 'Brightspace',
@@ -424,84 +430,58 @@ const appData = {
             thumb: thumbData['course'],
             style: 'orange',
         },
-        // {
-        //     name: 'OneDrive',
-        //     // link: 'https://purdue0-my.sharepoint.com',
-        //     desc: 'Files',
-        //     thumb: 'onedrive.jpeg',
-        //     accent: colorData['onedrive'],
-        // },
-        // {
-        //     name: 'Notion',
-        //     // link: 'https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945',
-        //     desc: 'Notes',
-        //     thumb: 'notion.jpeg',
-        //     style: 'secondary',
-        // },
+        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/SAIL'),
+        commonApps.notion('https://www.notion.so/SAIL-5b633671d2f843578da9226cb83201d1'),
     ],
-    'mse': [
-        {
-            name: 'Aula Global',
-            link: 'https://aulaglobal.uc3m.es/course/view.php?id=126601',
-            desc: 'Learn',
-            thumb: thumbData['course'],
-            style: 'purple',
-        },
-        {
-            name: 'OneDrive',
-            link: 'https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Materials%20Science%20Engineering',
-            desc: 'Files',
-            thumb: 'onedrive.jpeg',
-            accent: colorData['onedrive'],
-        },
-        {
-            name: 'Notion',
-            link: 'https://www.notion.so/Materials-Science-2e67bf77c9ce40d0a55ebcf6f27b0b2d',
-            desc: 'Notes',
-            thumb: 'notion.jpeg',
-            style: 'secondary',
-        },
+    'indorg': [
+        // commonApps.aula('https://aulaglobal.uc3m.es/course/view.php?id=126601'),
+        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Industrial%20Organisation'),
+        commonApps.notion('https://www.notion.so/Industrial-Organisation-6f9a042e98f6458a9f509689c2025571'),
+    ],
+    'finecon': [
+        // commonApps.aula('https://aulaglobal.uc3m.es/course/view.php?id=126601'),
+        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Financial%20Economics'),
+        commonApps.notion('https://www.notion.so/Financial-Economics-f175d589aae64f7b9ecd3c101be4ff53'),
     ],
     'manage': [
-        {
-            name: 'Aula Global',
-            link: 'https://aulaglobal.uc3m.es/course/view.php?id=126601',
-            desc: 'Learn',
-            thumb: thumbData['course'],
-            style: 'purple',
-        },
-        {
-            name: 'Notion',
-            link: 'https://www.notion.so/Engineering-Management-42466297fd4148a7bf275247cde1becb',
-            desc: 'Notes',
-            thumb: 'notion.jpeg',
-            style: 'secondary',
-        },
+        commonApps.aula('126308',1),
+        commonApps.aula('132011',2),
+        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Management'),
+        commonApps.notion('https://www.notion.so/Engineering-Management-42466297fd4148a7bf275247cde1becb'),
     ],
     'controls': [
-        {
-            name: 'Aula Global',
-            link: 'https://aulaglobal.uc3m.es/course/view.php?id=127222',
-            desc: 'Learn',
-            thumb: thumbData['course'],
-            style: 'purple',
-        },
-        {
-            name: 'OneDrive',
-            link: 'https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Controls',
-            desc: 'Files',
-            thumb: 'onedrive.jpeg',
-            accent: colorData['onedrive'],
-        },
-        {
-            name: 'Notion',
-            link: 'https://www.notion.so/Controls-a33110b68afe4e468d12bbb96b1e31dd',
-            desc: 'Notes',
-            thumb: 'notion.jpeg',
-            style: 'secondary',
-        },
+        commonApps.aula('127222'),
+        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Controls'),
+        commonApps.notion('https://www.notion.so/Controls-a33110b68afe4e468d12bbb96b1e31dd'),
     ],
+
+
+
+    // 'mse': [
+    //     {
+    //         name: 'Aula Global',
+    //         link: 'https://aulaglobal.uc3m.es/course/view.php?id=126601',
+    //         desc: 'Learn',
+    //         thumb: thumbData['course'],
+    //         style: 'purple',
+    //     },
+    //     {
+    //         name: 'OneDrive',
+    //         link: 'https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Materials%20Science%20Engineering',
+    //         desc: 'Files',
+    //         thumb: 'onedrive.jpeg',
+    //         accent: colorData['onedrive'],
+    //     },
+    //     {
+    //         name: 'Notion',
+    //         link: 'https://www.notion.so/Materials-Science-2e67bf77c9ce40d0a55ebcf6f27b0b2d',
+    //         desc: 'Notes',
+    //         thumb: 'notion.jpeg',
+    //         style: 'secondary',
+    //     },
+    // ],
 }
+
 
 
 
@@ -570,3 +550,6 @@ const schoolApps = [
 //     },
 // ]
 
+function oneDriveApp(link) {
+
+}

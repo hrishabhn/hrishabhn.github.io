@@ -60,6 +60,7 @@ const thumbData = {
     'note': 'note.png',
     'pod': 'podcasts.png',
     'svg': 'svg.png',
+    'finance': 'finance.png',
 
     // brands
     'iberia': 'iberia.jpeg',
