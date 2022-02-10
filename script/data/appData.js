@@ -139,6 +139,13 @@ const appData = {
             thumb: 'spanishdict.jpeg',
             accent: '1b85e5',
         },
+        {
+            name: 'Password Generator',
+            link: 'https://passwordsgenerator.net/?length=15&symbols=0&numbers=1&lowercase=1&uppercase=1&similar=1&ambiguous=1&client=1&autoselect=0',
+            desc: 'Secure Passwords',
+            thumb: 'key.png',
+            style: 'yellow',
+        },
     ],
     'video': [
         {
