@@ -8,9 +8,9 @@ function splashLoad() {
     focus.append(spacerElement(2))
 
     let date = document.createElement('p')
+    date.classList = 'subtext'
     date.innerHTML = `${processDay(processDate(new Date).day, 'short')}, ${new Date().getDate()} ${processMonth(processDate(new Date).month, 'short')}`
 
-    // focus.append(taskCont)
     focus.append(date)
 
     let appTray = document.createElement('div')

@@ -22,16 +22,15 @@
 #splash .focus p {
     width: 100%;
     justify-content: flex-start;
-    font-size: 16px;
-    font-weight: 500;
 }
 #splash .focus p.text{
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
 }
 #splash .focus p.subtext{
     font-size: 16px;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 
