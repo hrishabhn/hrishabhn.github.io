@@ -132,6 +132,13 @@ const appData = {
             thumb: 'download.png',
             style: 'blue',
         },
+        {
+            name: 'SpanishDict',
+            link: 'https://www.spanishdict.com',
+            desc: 'Learn & Translate',
+            thumb: 'spanishdict.jpeg',
+            accent: '1b85e5',
+        },
     ],
     'video': [
         {
