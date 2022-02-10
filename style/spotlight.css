@@ -18,56 +18,6 @@
     cursor: default;
 }
 
-#splash .task-cont {
-    width: 100%;
-    transition: all 0.25s;
-    margin-bottom: 5px;
-}
-
-#splash .task-cont:focus-within {
-    box-shadow: 0 2px 0 var(--white-50);
-}
-
-@media screen and (prefers-color-scheme: light) {
-    #splash .task-cont:focus-within {
-        box-shadow: 0 2px 0 var(--dark-layer-1-50);
-    }
-
-}
-
-#splash input#task {
-    flex-grow: 1;
-    justify-content: flex-start;
-    max-width: calc(100vw - 100px);
-    font-size: 36px;
-    font-weight: 600;
-}
-
-#splash .task-cont:hover .task-clear, #splash .task-cont:focus-within .task-clear {
-    opacity: 1;
-    pointer-events: initial;
-}
-
-#splash .task-cont .task-clear {
-    padding: 3px 5px;
-    border-radius: 5px;
-
-    font-size: 10px;
-    font-weight: 500;
-
-    background-color: var(--white-10);
-
-    opacity: 0;
-    pointer-events: none;
-}
-
-@media screen and (prefers-color-scheme: light) {
-    #splash .task-cont .task-clear {
-        background-color: var(--dark-layer-1-10);
-    }
-}
-
-
 
 #splash .focus p {
     width: 100%;
@@ -75,6 +25,15 @@
     font-size: 16px;
     font-weight: 500;
 }
+#splash .focus p.text{
+    font-size: 30px;
+    font-weight: 500;
+}
+#splash .focus p.subtext{
+    font-size: 16px;
+    font-weight: 400;
+}
+
 
 #splash .focus-apps {
     width: 100%;
@@ -157,4 +116,65 @@
     #results .divider {
         background-color: var(--black-05);
     }
+}
+
+
+#splash #widget-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+
+}
+
+#splash #widget-card #tasks-card {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 12px;
+    padding: 5px 0;
+
+    background-color: var(--white-05);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    #splash #widget-card #tasks-card {
+        background-color: var(--dark-layer-1-05);
+    }
+}
+
+#splash #widget-card #tasks-card .item {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 8px 15px;
+}
+#splash #widget-card #tasks-card .item.done a {
+    background-color: var(--white-20);
+}
+
+#splash #widget-card #tasks-card .item a {
+    height: 8px;
+    width: 8px;
+    border-radius: 100px;
+
+    background-color: var(--white-50);
+
+}
+
+@media screen and (prefers-color-scheme: light) {
+    #splash #widget-card #tasks-card .item a {
+
+    background-color: var(--dark-layer-1-20);
+    }
+}
+
+#splash #widget-card #tasks-card .item input {
+    flex-grow: 1;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#splash #widget-card #tasks-card .line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
 }

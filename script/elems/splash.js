@@ -4,40 +4,13 @@ function splashLoad() {
     let focus = document.createElement('div')
     focus.classList = 'focus limit'
 
+    focus.innerHTML = `<p class="text">${getFocus().name}</p>`
+    focus.append(spacerElement(2))
 
-
-    let taskCont = document.createElement('div')
-    taskCont.classList = 'task-cont'
-
-    let taskInput = document.createElement('input')
-    taskInput.type = 'text'
-    taskInput.placeholder = 'Current Task'
-    taskInput.id = 'task'
-    taskInput.onkeyup = function (e) { setCookie('task', taskInput.value, 1) }
-    if (getCookie('task')) {
-        taskInput.value = getCookie('task')
-    } else {
-        taskInput.value = getFocus().name
-    }
-    
-    let taskClear = document.createElement('a')
-    taskClear.classList = 'task-clear clickable-o'
-    taskClear.innerHTML = 'Clear'
-    taskClear.onclick = function() {
-        taskInput.value = ''
-        taskInput.focus()
-        // taskInput.value = getFocus().name
-        removeCookie('task')
-    }
-    
-    taskCont.append(taskInput)
-    taskCont.append(taskClear)
-    
-    
     let date = document.createElement('p')
-    date.innerHTML = `${processDay(processDate(new Date).day,'short')}, ${new Date().getDate()} ${processMonth(processDate(new Date).month,'short')}`
-    
-    focus.append(taskCont)
+    date.innerHTML = `${processDay(processDate(new Date).day, 'short')}, ${new Date().getDate()} ${processMonth(processDate(new Date).month, 'short')}`
+
+    // focus.append(taskCont)
     focus.append(date)
 
     let appTray = document.createElement('div')
@@ -59,6 +32,8 @@ function splashLoad() {
     splash.append(focus)
     splash.append(spacerElement(20))
     splash.append(createSpotlight())
+    splash.append(spacerElement(10))
+    splash.append(widgetCard())
     splash.append(spacerElement(50))
     splash.append(growElement())
     splash.append(appTray)
@@ -97,4 +72,94 @@ function pElement(text) {
     let elem = document.createElement('p')
     elem.innerHTML = text
     return elem
+}
+
+function widgetCard() {
+    let card = document.createElement('div')
+    card.id = 'widget-card'
+    card.classList = 'limit'
+
+    card.append(tasksCard())
+
+
+    return card
+}
+
+function tasksCard() {
+    let tasksCard = document.createElement('div')
+    tasksCard.id = 'tasks-card'
+
+    if (getCookie('task-list')) {
+        var taskData = JSON.parse(getCookie('task-list'))
+        console.log(taskData)
+    } else {
+        var taskData = []
+    }
+    taskData.push('')
+
+
+    for (const data of taskData) {
+        let item = document.createElement('div')
+        item.classList = 'item'
+
+        let check = document.createElement('a')
+        check.classList = 'clickable-o'
+
+        let input = document.createElement('input')
+        input.value = data
+        input.placeholder = 'New'
+        input.onkeyup = function (e) {
+            setTasks()
+
+            if (e.key == 'Enter') {
+                refreshTasks()
+            }
+
+            if (e.key == 'ArrowUp') {
+                e.preventDefault()
+                if (item.previousElementSibling) {
+                    item.previousElementSibling.lastChild.focus()
+                }
+            }
+            if (e.key == 'ArrowDown') {
+                e.preventDefault()
+                if (item.nextElementSibling) {
+                    item.nextElementSibling.lastChild.focus()
+                }
+            }
+        }
+
+        item.append(check)
+        item.append(spacerElement(8))
+        item.append(input)
+
+        tasksCard.append(item)
+    }
+
+    return tasksCard
+}
+
+function setTasks() {
+    let tasksCard = document.getElementById('tasks-card')
+
+    let nodes = tasksCard.childNodes
+    let data = []
+
+
+    for (let i = 0; i < nodes.length; i++) {
+        let value = nodes[i].lastChild.value
+
+        if (value) {
+            data.push(value)
+        }
+    }
+
+    setCookie('task-list', JSON.stringify(data), 7)
+}
+
+function refreshTasks() {
+    let old = document.getElementById('tasks-card')
+    let newCard = tasksCard()
+    old.parentNode.replaceChild(newCard, old)
+    newCard.lastChild.lastChild.focus()
 }
