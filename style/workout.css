@@ -1,0 +1,49 @@
+#workout-card {
+    flex-direction: column;
+
+    width: 375px;
+
+
+    height: 500px;
+    border-radius: 10px;
+
+
+}
+
+#workout-card .item {
+    flex-direction: column;
+    width: 300px;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+#workout-card .item .title {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#workout-card .item .tray {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#workout-card .item .tray a {
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: default;
+    transition: scale 0.2s;
+    /* transform-origin: bottom center; */
+}
+#workout-card .item .tray a.done {
+    filter: brightness(0.5);
+    scale: 0.9;
+
+}

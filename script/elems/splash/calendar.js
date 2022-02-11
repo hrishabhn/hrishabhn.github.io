@@ -61,7 +61,6 @@ function calendarCard() {
         noMore.classList = ('no-more')
         card.append(noMore)
     }
-    console.log(displayedEvents)
 
     card.append(growElement())
     return card
