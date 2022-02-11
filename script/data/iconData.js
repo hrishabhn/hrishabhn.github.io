@@ -63,6 +63,7 @@ const thumbData = {
     'svg': 'svg.png',
     'finance': 'finance.png',
     'calculus': 'calculus.png',
+    'gym': 'gym.png',
 
     // brands
     'iberia': 'iberia.jpeg',

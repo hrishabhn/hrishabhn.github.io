@@ -131,6 +131,19 @@ let focusData = [
             //     ]
             // },
         },
+        'workout': {
+            name: 'Workout',
+            desc: 'Routines & Apps',
+            thumb: thumbData['gym'],
+            style: 'secondary',
+            apps: appData['main'],
+            trays: function () {
+                return [
+                    workoutCard(),
+                    spacerElement(40),
+                ]
+            },
+        },
     },
 ]
 

@@ -2,6 +2,7 @@ function workoutData() {
     const workoutDataRaw = [
         {
             name: 'Back Squat',
+            style: 'red',
             complete: [
                 false,
                 false,
@@ -10,6 +11,7 @@ function workoutData() {
         },
         {
             name: 'Bench Press',
+            style: 'blue',
             complete: [
                 false,
                 false,
@@ -20,6 +22,7 @@ function workoutData() {
         },
         {
             name: 'Barbell Row',
+            style: 'green',
             complete: [
                 false,
                 false,
@@ -37,7 +40,28 @@ function workoutData() {
 function workoutCard() {
     let card = document.createElement('div')
     card.id = 'workout-card'
-    card.classList = 'layer-0'
+    card.classList = 'layer-1'
+
+    let header = document.createElement('div')
+    header.classList = 'header'
+
+    let headerText = pElement('Workout')
+
+    let reset = document.createElement('a')
+    reset.classList = 'blue-fg clickable-o'
+    reset.innerHTML = 'Reset'
+    reset.onclick = function () {
+        removeCookie('workout')
+        let oldCard = document.getElementById('workout-card')
+        oldCard.parentElement.replaceChild(workoutCard(),oldCard)
+    }
+
+    header.append(headerText)
+    header.append(growElement())
+    header.append(reset)
+
+    card.append(header)
+
 
     for (let i = 0; i < workoutData().length; i++) {
         card.append(workoutItem(i))
@@ -47,24 +71,34 @@ function workoutCard() {
 
     return card
 
-    
+
 }
 
 function workoutItem(i) {
     const data = workoutData()[i]
     let item = document.createElement('div')
-    item.classList = 'item layer-1'
+    item.classList = 'item layer-2'
     item.id = `workout-${i}`
 
-    let title = pElement(data.name)
+    let title = document.createElement('div')
     title.classList = 'title'
+
+    let icon = document.createElement('a')
+    icon.classList = 'icon clickable'
+    icon.innerHTML = iconData['arrow']
+    icon.href = googleSearch(data.name)
+    icon.target = '_blank'
+
+    title.append(pElement(data.name))
+    title.append(growElement())
+    title.append(icon)
 
     let tray = document.createElement('div')
     tray.classList = 'tray'
     for (let j = 0; j < data.complete.length; j++) {
         let button = document.createElement('a')
         button.innerHTML = j + 1
-        button.classList = 'blue clickable-o'
+        button.classList = `${workoutData()[i].style} clickable-o`
         button.id = `workout-${i}-${j}`
         if (data.complete[j]) { button.classList.add('done') }
         button.onclick = function () { updateWorkout(i, j) }

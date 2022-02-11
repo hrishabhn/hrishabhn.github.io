@@ -1,5 +1,6 @@
 let events_all = [
 {"location":"2.3.D04","end":"2022-02-11T11:00:00+01:00","start":"2022-02-11T09:00:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
+{"location":"","end":"2022-02-12T11:30:00+01:00","start":"2022-02-12T10:30:00+01:00","allDay":"No","calendar":"Personal","link":"","name":"Gym"},
 {"location":"10.2.11","end":"2022-02-14T14:00:00+01:00","start":"2022-02-14T12:30:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp.60,61 y 62"},
 {"location":"6.1.06","end":"2022-02-14T16:00:00+01:00","start":"2022-02-14T14:30:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
 {"location":"2.3.D04","end":"2022-02-15T11:00:00+01:00","start":"2022-02-15T09:00:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
