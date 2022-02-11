@@ -63,6 +63,8 @@ function processDay(dayIndex, type) {
 }
 
 function processTime(date) {
+    date = new Date(date)
+
     hours = date.getHours()
     mins = date.getMinutes()
 

@@ -81,9 +81,7 @@ function widgetCard() {
 
     card.append(tasksCard())
     card.append(flightCountdownCard('mad-lhr'))
-    card.append(flightCountdownCard('lhr-mad'))
-
-    calendarCard()
+    card.append(calendarCard())
 
     return card
 }
