@@ -59,7 +59,7 @@ function tvDetail(i,j) {
 
     let goog = document.createElement('a')
     goog.classList = 'app clickable card-shadow'
-    goog.href = `http://www.google.com/search?q=${movie.name}`
+    goog.href = googleSearch(movie.name)
     goog.target = '_blank'
     goog.innerHTML = `
     <div class="icon" style="--size: 0px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="2.762 3 24 24"><path d="M15 13h10v4H15z"></path><path d="M22.733 13c.166.641.267 1.307.267 2a8 8 0 1 1-8-8 7.96 7.96 0 0 1 5.245 1.969l2.841-2.84A11.962 11.962 0 0 0 15.003 3C8.374 3 3 8.373 3 15s5.374 12 12.003 12c10.01 0 12.266-9.293 11.327-14h-3.597z"></path></svg></div>

@@ -168,13 +168,6 @@ let movieData1 = [
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         image: 'url',
-        //         char: 'name',
-        //     },
-        // ],
     },
     {
         name: 'Superstore',
@@ -624,7 +617,7 @@ let soonMovies = [
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            date: 'Feb 8, 2022',
+            date: 'Feb 15, 2022',
             // weekday: '',
             desc: {
                 seasons: 1,
