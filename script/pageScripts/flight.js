@@ -3,7 +3,7 @@ function flightDetailCard(flightKey) {
 
     let card = document.createElement('div')
     card.classList = 'flight-detail-card layer-1'
-    card.style.setProperty('--col',`#${flight.airline.color}`)
+    card.style.setProperty('--col',`#${flight.airline.accent}`)
     card.innerHTML = `
     <div class="header">
         <div class="thumb" style="background-image: url(./appThumb/${flight.airline.thumb});"></div>

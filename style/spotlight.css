@@ -120,25 +120,31 @@
 
 #splash #widget-card {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     column-gap: 10px;
 
 }
-
-#splash #widget-card #tasks-card {
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 12px;
-    padding: 5px 0;
-
+#splash #widget-card .card-item{
     background-color: var(--white-05);
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (prefers-color-scheme: light) {
-    #splash #widget-card #tasks-card {
+    #splash #widget-card .card-item {
         background-color: var(--dark-layer-1-05);
     }
 }
+
+
+#splash #widget-card #tasks-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px 0;
+}
+
 
 #splash #widget-card #tasks-card .item {
     width: 100%;
@@ -176,4 +182,53 @@
     width: 100%;
     height: 1px;
     background-color: white;
+}
+
+
+/*  */
+#splash #widget-card .flight-countdown{
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 12px 15px;
+}
+
+#splash #widget-card .flight-countdown .top{
+    width: 100%;
+    align-items: flex-start;
+}
+
+#splash #widget-card .flight-countdown .logo.icon{
+    width: 35px;
+    height: 35px;
+}
+
+#splash #widget-card .flight-countdown .number{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+#splash #widget-card .flight-countdown .dest{
+    width: 100%;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+#splash #widget-card .flight-countdown .dest .icon{
+    height: 16px;
+    width: 16px;
+    padding: 2px;
+    border-radius: 100px;
+    transform: rotate(90deg);
+}
+
+#splash #widget-card .flight-countdown .count{
+    font-size: 20px;
+    font-weight: 400;
+}
+#splash #widget-card .flight-countdown .date{
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 0.5;
 }

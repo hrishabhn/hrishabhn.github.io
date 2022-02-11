@@ -94,14 +94,14 @@ let focusData = [
         'manage': {
             name: 'Engineering Management',
             desc: '14197',
-            thumb: thumbData['plane'],
+            thumb: thumbData['work'],
             style: 'secondary',
             apps: appData['manage'],
         },
         'controls': {
             name: 'Control Engineering',
             desc: '15514',
-            thumb: thumbData['work'],
+            thumb: thumbData['calculus'],
             style: 'secondary',
             apps: appData['controls'],
         },
@@ -123,12 +123,13 @@ let focusData = [
             desc: 'Flights & Hotels',
             thumb: thumbData['plane'],
             style: 'secondary',
-            apps: appData['travel'],trays: function () {
-                return [
-                    flightDetailCard('mad-lhr'),
-                    flightDetailCard('lhr-mad'),
-                ]
-            },
+            apps: appData['travel'],
+            // trays: function () {
+            //     return [
+            //         flightDetailCard('mad-lhr'),
+            //         flightDetailCard('lhr-mad'),
+            //     ]
+            // },
         },
     },
 ]

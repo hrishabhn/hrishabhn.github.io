@@ -80,7 +80,10 @@ function widgetCard() {
     card.classList = 'limit'
 
     card.append(tasksCard())
+    card.append(flightCountdownCard('mad-lhr'))
+    card.append(flightCountdownCard('lhr-mad'))
 
+    calendarCard()
 
     return card
 }
@@ -88,10 +91,10 @@ function widgetCard() {
 function tasksCard() {
     let tasksCard = document.createElement('div')
     tasksCard.id = 'tasks-card'
+    tasksCard.classList = 'card-item'
 
     if (getCookie('task-list')) {
         var taskData = JSON.parse(getCookie('task-list'))
-        console.log(taskData)
     } else {
         var taskData = []
     }
@@ -162,4 +165,61 @@ function refreshTasks() {
     let newCard = tasksCard()
     old.parentNode.replaceChild(newCard, old)
     newCard.lastChild.lastChild.focus()
+}
+
+function flightCountdownCard(flightKey) {
+    const flight = flightData[flightKey]
+
+    let card = document.createElement('div')
+    card.classList = 'flight-countdown card-item clickable'
+    card.onclick = function () {
+        addModalLayer(flightDetailCard(flightKey))
+    }
+
+    let top = document.createElement('div')
+    top.classList = 'top'
+
+    let icon = iconElement(flight.airline.logo.icon)
+    icon.classList.add('logo')
+    let number = pElement(`${flight.airline.code} ${flight.number}`)
+    number.classList = 'number'
+
+    top.append(icon)
+    top.append(growElement())
+    top.append(number)
+
+
+    let dest = document.createElement('div')
+    dest.classList = `dest`
+
+    let destIcon = iconElement(iconData['plane'])
+    destIcon.classList.add(flight.airline.style)
+    destIcon.classList.add('secondary-fg')
+
+    let destText = pElement(flight.arr.city)
+    destText.classList.add(`${flight.airline.style}-fg`)
+    
+    dest.append(destIcon)
+    dest.append(spacerElement(5))
+    dest.append(destText)
+    dest.append(growElement())
+
+
+    let count = document.createElement('div')
+    count.classList = 'count'
+    count.innerHTML = '6 Days'
+    let date = document.createElement('div')
+    date.classList = 'date'
+    date.innerHTML = 'Thu 31 Dec, 4:30pm'
+
+    card.append(top)
+    card.append(growElement())
+    card.append(spacerElement(20))
+    card.append(dest)
+    card.append(spacerElement(5))
+    card.append(count)
+    card.append(spacerElement(2))
+    card.append(date)
+
+    return card
 }

@@ -434,12 +434,13 @@ const appData = {
         commonApps.notion('https://www.notion.so/SAIL-5b633671d2f843578da9226cb83201d1'),
     ],
     'indorg': [
-        // commonApps.aula('https://aulaglobal.uc3m.es/course/view.php?id=126601'),
+        commonApps.aula('123832'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Industrial%20Organisation'),
         commonApps.notion('https://www.notion.so/Industrial-Organisation-6f9a042e98f6458a9f509689c2025571'),
     ],
     'finecon': [
-        // commonApps.aula('https://aulaglobal.uc3m.es/course/view.php?id=126601'),
+        commonApps.aula('131130',1),
+        commonApps.aula('123356',2),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Financial%20Economics'),
         commonApps.notion('https://www.notion.so/Financial-Economics-f175d589aae64f7b9ecd3c101be4ff53'),
     ],
@@ -453,6 +454,14 @@ const appData = {
         commonApps.aula('127222'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Controls'),
         commonApps.notion('https://www.notion.so/Controls-a33110b68afe4e468d12bbb96b1e31dd'),
+        {
+            name: 'Control Systems',
+            link: 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo',
+            desc: 'YouTube Lectures',
+            thumb: 'youtube.jpeg',
+            accent: colorData['google'].red,
+        },
+        // https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo
     ],
 
 
