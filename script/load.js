@@ -8,6 +8,7 @@ function loadApp() {
     bodyLoad()
 
     // skipToContent()
+    // addModalLayer(workoutCard())
 }
 
 function bodyLoad() {
