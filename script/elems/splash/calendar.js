@@ -40,24 +40,30 @@ function calendarCard() {
             futureCard.append(dot)
 
             futureEvents++
+            countedEvents++
         }
     }
-
+    
+    let futureCardText = pElement(`${futureEvents} more events`)
     if (futureEvents > 1) {
-        var futureCardText = pElement(`${futureEvents} more events`)
-    } else {
-        var futureCardText = pElement(`${futureEvents} more event`)
+        futureCardText.concat('s')
     }
-
 
     futureCard.append(futureCardText)
     futureCard.append(growElement())
     
     if (futureEvents > 0) {
         card.append(futureCard)
-
     }
 
+    if (!displayedEvents) {
+        let noMore = pElement('No more events today')
+        noMore.classList = ('no-more')
+        card.append(noMore)
+    }
+    console.log(displayedEvents)
+
+    card.append(growElement())
     return card
 }
 

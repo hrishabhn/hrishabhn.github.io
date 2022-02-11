@@ -79,9 +79,10 @@ function widgetCard() {
     card.id = 'widget-card'
     card.classList = 'limit'
 
-    card.append(tasksCard())
-    card.append(flightCountdownCard('mad-lhr'))
     card.append(calendarCard())
+    card.append(worldClockCard())
+    card.append(flightCountdownCard('mad-lhr'))
+    card.append(tasksCard())
 
     return card
 }
@@ -196,7 +197,7 @@ function flightCountdownCard(flightKey) {
 
     let destText = pElement(flight.arr.city)
     destText.classList.add(`${flight.airline.style}-fg`)
-    
+
     dest.append(destIcon)
     dest.append(spacerElement(5))
     dest.append(destText)
@@ -218,6 +219,51 @@ function flightCountdownCard(flightKey) {
     card.append(count)
     card.append(spacerElement(2))
     card.append(date)
+
+    return card
+}
+
+function worldClockCard() {
+    const clockData = [
+        {
+            name: 'Hong Kong',
+            offset: '+7',
+        },
+        {
+            name: 'West Lafayette',
+            offset: '-6',
+        },
+        {
+            name: 'London',
+            offset: '-1',
+        },
+    ]
+
+
+    let card = document.createElement('div')
+    card.classList = 'world-clock card-item'
+
+    for (data of clockData) {
+        let item = document.createElement('div')
+        item.classList = 'row clickable'
+        item.innerHTML = `
+        <div class="left">
+            <p class="offset">${data.offset}HR</p>
+            <p class="city">${data.name}</p>
+        </div>
+        <div class="grow"></div>
+        <div class="time">${processTime(new Date().getTime() + ((1000 * 60 * 60 * parseInt(data.offset))))}</div>
+        `
+
+        card.append(item)
+        card.append(hlineElement())
+    }
+    card.lastChild.remove()
+
+
+
+
+    card.append(growElement())
 
     return card
 }
