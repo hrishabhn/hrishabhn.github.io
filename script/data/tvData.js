@@ -311,22 +311,18 @@ let movieData1 = [
         cast: [
             {
                 actor: 'Fred Tatasciore',
-                // image: 'url',
                 char: 'Hit-Monkey',
             },
             {
                 actor: 'Jason Sudeikis',
-                image: 'https://is2-ssl.mzstatic.com/image/thumb/AgXPsy2GlFurBYHRquyjeQ/492x492ve.webp',
                 char: 'Bryce',
             },
             {
                 actor: 'Olivia Munn',
-                image: 'https://celebmafia.com/wp-content/uploads/2019/09/olivia-munn-2019-creative-arts-emmy-awards-in-la-17.jpg',
                 char: 'Akiko',
             },
             {
                 actor: 'George Takei',
-                // image: 'url',
                 char: 'Shinji Yokohama',
             },
         ],
@@ -442,12 +438,10 @@ let movieData1 = [
         cast: [
             {
                 actor: 'Charlotte Ritchie',
-                image: 'https://images.mubicdn.net/images/cast_member/562435/cache-635452-1611181278/image-w856.jpg',
                 char: 'Alison Cooper',
             },
             {
                 actor: 'Kiell Smith-Bynoe',
-                image: 'https://i.guim.co.uk/img/media/e95bb7a992d5b17c209a47dd27f7f6fa6c203bc0/1678_445_3832_2299/master/3832.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e6a9a7cb8ff5a39bbf8c6422c9b624dd',
                 char: 'Mike Cooper',
             },
         ],
@@ -493,37 +487,30 @@ let movieData1 = [
         cast: [
             {
                 actor: 'Hailee Steinfeld',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
                 char: 'Vi',
             },
             {
                 actor: 'Mia Sinclair Jenness',
-                // image: 'url',
                 char: 'Powder',
             },
             {
                 actor: 'Kevin Alejandro',
-                image: 'https://arealnews.com/wp-content/uploads/2021/10/kevin3-1.jpg',
                 char: 'Jayce',
             },
             {
                 actor: 'Harry Lloyd',
-                image: 'https://musicimage.xboxlive.com/catalog/video.contributor.90371b00-0200-11db-89ca-0019b92a3933/image?locale=en-us&target=circle',
                 char: 'Viktor',
             },
             {
                 actor: 'Katie Leung',
-                image: 'https://static.wikia.nocookie.net/harrypotter/images/b/b3/Katie_Leung_by_Faye_Thomas_2014.jpg',
                 char: 'Caitlyn',
             },
             {
                 actor: 'Shohreh Aghdashloo',
-                image: 'https://m.media-amazon.com/images/M/MV5BZDI0M2Q1NzYtYzIxNy00MWE4LTg4NDgtOWRhZDdkYTAxZTBhXkEyXkFqcGdeQXVyNTY3MzA5MzA@._V1_.jpg',
                 char: 'Grayson',
             },
             {
                 actor: 'JB Blanc',
-                // image: 'url',
                 char: 'Vander',
             },
         ],
@@ -736,12 +723,10 @@ const movieData2 = [
         cast: [
             {
                 actor: 'Jeremy Renner',
-                image: 'https://static.wikia.nocookie.net/marvelmovies/images/2/24/Jeremy_Renner.jpg',
                 char: 'Clint Barton/Hawkeye',
             },
             {
                 actor: 'Hailee Steinfeld',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/1200px-Hailee_Steinfeld_by_Gage_Skidmore.jpg',
                 char: 'Kate Bishop',
             },
         ],
@@ -821,32 +806,26 @@ const movieData2 = [
         cast: [
             {
                 actor: 'H. Jon Benjamin',
-                image: 'https://static.wikia.nocookie.net/wordgirl/images/7/7a/IMG_0630.JPG',
                 char: 'Sterling Archer',
             },
             {
                 actor: 'Aisha Tyler',
-                image: 'https://static.wikia.nocookie.net/modernfamily/images/d/d5/Aisha-Tyler.jpg',
                 char: 'Lana Kane',
             },
             {
                 actor: 'Jessica Walter',
-                image: 'https://i.guim.co.uk/img/media/2210d59881f244fafa78bffd007fa65eb016fc05/0_88_3000_1801/master/3000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=c1328f0a445403ca26fb753cd33bf947',
                 char: 'Malory Archer',
             },
             {
                 actor: 'Chris Parnell',
-                image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg',
                 char: 'Cyril Figgis',
             },
             {
                 actor: 'Judy Greer',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTg5MTAyMzMzMl5BMl5BanBnXkFtZTcwMDY2Mzc2NQ@@._V1_.jpg',
                 char: 'Cheryl Tunt',
             },
             {
                 actor: 'Amber Nash',
-                // image: 'url',
                 char: 'Pam Poovey',
             },
         ],
@@ -925,17 +904,14 @@ const movieData2 = [
         cast: [
             {
                 actor: 'Penn Badgley',
-                image: 'https://media1.popsugar-assets.com/files/thumbor/5hs8f5F2K3qAi5JiZn4XoBIJUAE/0x150:3648x3798/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/10/28/859/n/1922398/d130310f5f99c8a0122de3.83461725_/i/Penn-Badgley.jpg',
                 char: 'Joe Goldberg',
             },
             {
                 actor: 'Elizabeth Lail',
-                image: 'https://www.thewikifeed.com/wp-content/uploads/2021/06/elizabeth-lail-1.jpg',
                 char: 'Guinevere Beck',
             },
             {
                 actor: 'Shay Mitchell',
-                image: 'https://media.self.com/photos/603d499db090d0bf156c1013/1:1/w_2332,h_2332,c_limit/1205249363',
                 char: 'Peach Salinger',
             },
         ],
@@ -978,22 +954,18 @@ const movieData2 = [
         cast: [
             {
                 actor: 'Justin Roiland',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Justin_Roiland_%2836434635662%29.jpg/1200px-Justin_Roiland_%2836434635662%29.jpg',
                 char: 'Korvo',
             },
             {
                 actor: 'Thomas Middlditch',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTkwNjMwMDAzN15BMl5BanBnXkFtZTgwOTU3NjMwMTE@._V1_.jpg',
                 char: 'Terry',
             },
             {
                 actor: 'Sean Giambrone',
-                image: 'https://pbs.twimg.com/profile_images/1058413246015631360/R87z0r6T.jpg',
                 char: 'Yumyulack',
             },
             {
                 actor: 'Mary Mack',
-                image: 'https://m.media-amazon.com/images/M/MV5BNzE3ZWM5MDgtMDY0NC00NTZiLTk1YjYtNDg1ZmM1MzM1YTMyXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg',
                 char: 'Jesse',
             },
         ],
@@ -1492,27 +1464,22 @@ const movieData4 = [
         cast: [
             {
                 actor: 'John Cho',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjM4Nzk2NjUxNF5BMl5BanBnXkFtZTgwMzY3NDI2MTI@._V1_.jpg',
                 char: 'Spike Spiegel',
             },
             {
                 actor: 'Daniella Pineda',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Daniella-Pineda_%28cropped%29.jpg',
                 char: 'Faye Valentine',
             },
             {
                 actor: 'Mustafa Shakir',
-                image: 'https://m.media-amazon.com/images/M/MV5BODAyN2U5MTYtNWRlNi00MDAwLWJjNTctZGVhMDg2MzQ1MWUwXkEyXkFqcGdeQXVyMTcwNDQyNDk@._V1_.jpg',
                 char: 'Jet Black',
             },
             {
                 actor: 'Elena Satine',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Actress_Elena_Satine_%28cropped_-_Medium_shot%29.jpg',
                 char: 'Julia',
             },
             {
                 actor: 'Alex Hassell',
-                image: 'https://www.thewikifeed.com/wp-content/uploads/2021/08/alex-hassell-1.jpg',
                 char: 'Vicious',
             },
         ],
@@ -1726,17 +1693,14 @@ const movieData4 = [
         cast: [
             {
                 actor: 'Margaret Qualley',
-                image: 'https://m.media-amazon.com/images/M/MV5BYWZmMDFlMDYtYzk3My00YTg1LTllZWUtYzY2Y2QyNjk2NTZmXkEyXkFqcGdeQXVyMzcxMTAwMDM@._V1_.jpg',
                 char: 'Alex',
             },
             {
                 actor: 'Nick Robinson',
-                image: 'https://m.media-amazon.com/images/M/MV5BNzViMjQ4NzQtZDBhNC00ZTlhLTk4NzktYTYyYzE4NjFiZjQ1XkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg',
                 char: 'Sean',
             },
             {
                 actor: 'Rylea Nevea Whittet',
-                // image: 'url',
                 char: 'Maddy',
             },
         ],
@@ -2717,27 +2681,22 @@ const movieData7 = [
         cast: [
             {
                 actor: 'Charlie Day',
-                image: 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
                 char: 'Charlie Kelly',
             },
             {
                 actor: 'Glenn Howerton',
-                image: 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
                 char: 'Dennis Reynolds',
             },
             {
                 actor: 'Rob McElenney',
-                image: 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
                 char: 'Mac',
             },
             {
                 actor: 'Kaitlin Olson',
-                image: 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
                 char: 'Dee Reynolds',
             },
             {
                 actor: 'Danny DeVito',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
                 char: 'Frank Reynolds',
             },
         ],
@@ -2779,32 +2738,26 @@ const movieData7 = [
         cast: [
             {
                 actor: 'Larry David',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg/1280px-Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg',
                 char: 'Larry David',
             },
             {
                 actor: 'Jeff Garlin',
-                image: 'https://static.wikia.nocookie.net/disney/images/2/27/Jeff_Garlin.jpg',
                 char: 'Jeff Greene',
             },
             {
                 actor: 'Cheryl Hines',
-                image: 'https://deadline.com/wp-content/uploads/2019/03/cheryl-hines-e1553018614527.jpg',
                 char: 'Cheryl David',
             },
             {
                 actor: 'Susie Essman',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Susie_Essman_at_the_2009_Tribeca_Film_Festival.jpg',
                 char: 'Susie Greene',
             },
             {
                 actor: 'Richard Lewis',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTA5NDIzMzk0ODJeQTJeQWpwZ15BbWU2MDA3OTI0Mw@@._V1_UX178_CR0,0,178,264_AL_.jpg',
                 char: 'Richard Lewis',
             },
             {
                 actor: 'J.B. Smoove',
-                image: 'https://static.wikia.nocookie.net/harleyquinntv/images/d/d0/J._B._Smoove.jpg',
                 char: 'Leon Black',
             },
         ],
@@ -3253,22 +3206,18 @@ const movieData7 = [
         cast: [
             {
                 actor: 'Justin Roiland',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Justin_Roiland_%2836434635662%29.jpg/1200px-Justin_Roiland_%2836434635662%29.jpg',
                 char: 'Rick Sanchez, Morty Smith',
             },
             {
                 actor: 'Chris Parnell',
-                image: 'https://static.wikia.nocookie.net/adam-ruins-everything/images/9/96/Chris_Parnell.jpg',
                 char: 'Jerry Smith',
             },
             {
                 actor: 'Sarah Chalke',
-                image: 'https://www.northernstars.ca/wp-content/uploads/2017/08/Sarah_Chalke-500-640x800.jpg',
                 char: 'Beth Smith',
             },
             {
                 actor: 'Spencer Grammer',
-                // image: 'url',
                 char: 'Summer Smith',
             },
         ],
@@ -3311,37 +3260,30 @@ const movieData7 = [
         cast: [
             {
                 actor: 'Brian Cox',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCskxSLQJuuUMd17lJgBxYuOsEv8yk1mCm-UK1Pz6U_B8eXgad',
                 char: 'Logan Roy',
             },
             {
                 actor: 'Jeremy Strong',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Jeremy_Strong_2014.jpg',
                 char: 'Kendall Roy',
             },
             {
                 actor: 'Sarah Snook',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCbLwd8jRGCMOF2czavGhVXHGPG0DsLIxKBTjMqP_w-JqgiKwZzFfmRwHeb_ABBpAp3s&usqp=CAU',
                 char: 'Shiv Roy',
             },
             {
                 actor: 'Matthew Macfadyen',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_.jpg',
                 char: 'Tom Wambsgans',
             },
             {
                 actor: 'Kieran Culkin',
-                image: 'https://m.media-amazon.com/images/M/MV5BYzZkNzYyNTYtMDY2ZS00YmI4LWI5YzctZjBiN2FkY2NkNWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
                 char: 'Roman Roy',
             },
             {
                 actor: 'Nicholas Braun',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Nicholas_Braun_2017.jpg',
                 char: 'Greg Hirsch',
             },
             {
                 actor: 'Alan Ruck',
-                image: 'https://static.wikia.nocookie.net/theloudhouse/images/1/17/Alan_Ruck.png',
                 char: 'Connor Roy',
             },
         ],
@@ -3410,42 +3352,34 @@ const movieData7 = [
         cast: [
             {
                 actor: 'Jason Sudeikis',
-                image: 'https://is2-ssl.mzstatic.com/image/thumb/AgXPsy2GlFurBYHRquyjeQ/492x492ve.webp',
                 char: 'Ted Lasso',
             },
             {
                 actor: 'Hannah Waddingham',
-                image: 'https://is3-ssl.mzstatic.com/image/thumb/U6GiaSTux3G9QH9TlhMRZg/492x492ve.webp',
                 char: 'Rebecca Welton',
             },
             {
                 actor: 'Juno Temple',
-                image: 'https://is1-ssl.mzstatic.com/image/thumb/yuUiq_Yf9rwApABQwQ2Puw/492x492ve.webp',
                 char: 'Keeley Jones',
             },
             {
                 actor: 'Jeremy Swift',
-                image: 'https://is4-ssl.mzstatic.com/image/thumb/37A2yAcEOqpu6sMk6of4Dg/492x492ve.webp',
                 char: 'Higgins',
             },
             {
                 actor: 'Phil Dunster',
-                image: 'https://is3-ssl.mzstatic.com/image/thumb/r7YVz00Gfg-4PCrlnBj4jA/492x492ve.webp',
                 char: 'Jaime Tartt',
             },
             {
                 actor: 'Brett Goldstein',
-                image: 'https://is3-ssl.mzstatic.com/image/thumb/nxwtHIicKZUbrQQ_0GlISA/492x492ve.webp',
                 char: 'Roy Kent',
             },
             {
                 actor: 'Brendan Hunt',
-                image: 'https://is3-ssl.mzstatic.com/image/thumb/tjFBadTW13u_cEJJXNjH9A/492x492ve.webp',
                 char: 'Coach Beard',
             },
             {
                 actor: 'Nick Mohammed',
-                image: 'https://is2-ssl.mzstatic.com/image/thumb/3oivPHwZya0T-EKJHJXSvA/492x492ve.webp',
                 char: 'Nathan Shelley',
             },
         ],
@@ -3488,27 +3422,22 @@ const movieData7 = [
         cast: [
             {
                 actor: 'Kayvan Novak',
-                image: 'https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/6201/original/Kayvan-Novak.jpg',
                 char: 'Nandor the Relentless',
             },
             {
                 actor: 'Matt Berry',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTgzMjQ0NTc5Nl5BMl5BanBnXkFtZTcwMDc0MDYwOA@@._V1_.jpg',
                 char: 'Laszlo Cravensworth',
             },
             {
                 actor: 'Natasia Demetriou',
-                image: 'https://www.unitedagents.co.uk/sites/default/files/thumbnails/image/natasia-demetriou-headshot.jpg',
                 char: 'Nadja',
             },
             {
                 actor: 'Harvey Guillen',
-                image: 'https://m.media-amazon.com/images/M/MV5BNjUxYjViMTYtZWZkOS00MzVjLTk4MmYtNTcyMzdjYzQ3NWNhXkEyXkFqcGdeQXVyNzY4MDEyMDI@._V1_.jpg',
                 char: 'Guillermo de la Cruz',
             },
             {
                 actor: 'Mark Proksch',
-                image: 'https://cps-static.rovicorp.com/2/Open/Getty_Images_406/Person/1177610/_derived_jpg_q90_310x470_m0/Mark_Proksch_C_V01.jpg',
                 char: 'Colin Robinson',
             },
         ],
@@ -3592,37 +3521,30 @@ const movieData8 = [
         cast: [
             {
                 actor: 'Bill Burr',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Bill_Burr_by_Gage_Skidmore.jpg',
                 char: 'Frank Murphy',
             },
             {
                 actor: 'Laura Dern',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjI3NzY0MDQxMF5BMl5BanBnXkFtZTcwNzMwMzcyNw@@._V1_.jpg',
                 char: 'Sue Murphy',
             },
             {
                 actor: 'Justin Long',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjIwNTEwODY4NF5BMl5BanBnXkFtZTgwMzg0ODMwMjE@._V1_.jpg',
                 char: 'Kevin Murphy',
             },
             {
                 actor: 'Debi Derryberry',
-                // image: 'url',
                 char: 'Maureen Murphy',
             },
             {
                 actor: 'Haley Reinhart',
-                // image: 'url',
                 char: 'Bill Murphy',
             },
             {
                 actor: 'Sam Rockwell',
-                // image: 'url',
                 char: 'Vic',
             },
             {
                 actor: 'Trevor Devall',
-                // image: 'url',
                 char: 'Goomer',
             },
         ],
@@ -3666,47 +3588,38 @@ const movieData8 = [
         cast: [
             {
                 actor: 'Zooey Deschanel',
-                image: 'https://static.wikia.nocookie.net/disney/images/7/79/Zooey_Deschanel.jpg',
                 char: 'Jessica Day',
             },
             {
                 actor: 'Jake Johnson',
-                image: 'https://static.wikia.nocookie.net/smurfs/images/8/8c/Jake-johnson-paleyfest-2012-02.jpg',
                 char: 'Nick',
             },
             {
                 actor: 'Max Greenfield',
-                image: 'https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w425-q80/cast/neighborhood_max_800x1000.jpg',
                 char: 'Schmidt',
             },
             {
                 actor: 'Hannah Simone',
-                image: 'https://media.glamour.com/photos/5695a50d16d0dc3747ed0549/master/pass/beauty-2014-07-hannah-simone-without-bangs-hair-main.jpg',
                 char: 'Cece Parekh',
             },
             {
                 actor: 'Lamorne Morris',
-                image: 'https://static.wikia.nocookie.net/newgirl/images/7/76/Morris.jpg',
                 char: 'Winston Bishop',
             },
             {
                 actor: 'Damon Wayans Jr.',
-                image: 'https://i.ticketweb.com/i/00/09/10/86/11/Original.jpg?v=2?v=3',
                 char: 'Coach',
             },
             {
                 actor: 'Nasim Pedrad',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjI2NTY1NzEzM15BMl5BanBnXkFtZTgwNzExMjg1NTM@._V1_.jpg',
                 char: 'Aly Nelson',
             },
             {
                 actor: 'Nelson Franklin',
-                image: 'https://static.wikia.nocookie.net/marvelmovies/images/5/59/Nelson_Franklin.jpg',
                 char: 'Robby',
             },
             {
                 actor: 'Megan Fox',
-                image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgwMTU4NzU4OTc3MDIxMDUw/gettyimages-843456920.jpg',
                 char: 'Reagan',
             },
         ],
@@ -4016,42 +3929,34 @@ const movieData8 = [
         cast: [
             {
                 actor: 'Darin Brooks',
-                image: 'https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w425-q80/cast/bb_cast_darin_brooks_800x1000.jpg',
                 char: 'Alex Moran',
             },
             {
                 actor: 'Alan Ritchson',
-                image: 'https://static.wikia.nocookie.net/tmnt/images/5/50/Alan-ritchson-premiere-steam-01.jpg',
                 char: 'name',
             },
             {
                 actor: 'Chris Romano',
-                image: 'https://www.themoviedb.org/t/p/w235_and_h235_face/qaUN5cJYHWBwDBn40yEuWXQwMfg.jpg',
                 char: 'Sammy Cacciatore',
             },
             {
                 actor: 'Ed Marino',
-                image: 'https://playersbio.com/wp-content/uploads/2020/06/ed-003.jpg',
                 char: 'Coach Marty Daniels',
             },
             {
                 actor: 'Denise Richards',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Denise_Richards_2009.jpg',
                 char: 'Debra',
             },
             {
                 actor: 'Frankie Shaw',
-                image: 'https://m.media-amazon.com/images/M/MV5BNzliMWQ1OTItMjhiNy00YzExLWE3NzEtZDgwYTM0ODA2NTYzXkEyXkFqcGdeQXVyNzMzNzYzNg@@._V1_.jpg',
                 char: 'Mary Jo Cacciatore',
             },
             {
                 actor: 'Sam Jones III',
-                image: 'https://static.wikia.nocookie.net/tvdatabase/images/7/74/Sam_Jones%2C_III.jpg',
                 char: 'Craig Shilo',
             },
             {
                 actor: 'Page Kennedy',
-                image: 'https://parlemag.com/wp-content/uploads/2016/06/Page-Kennedy.jpg',
                 char: 'Radon Randell',
             },
         ],
@@ -4126,27 +4031,22 @@ const movieData8 = [
         cast: [
             {
                 actor: 'Josh Radnor',
-                image: 'https://m.media-amazon.com/images/M/MV5BMjAwNTUxMTM4OF5BMl5BanBnXkFtZTcwNjUyNzc4Mg@@._V1_UY264_CR4,0,178,264_AL_.jpg',
                 char: 'Ted Mosby',
             },
             {
                 actor: 'Jason Segel',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTUwNzcxNzM1Nl5BMl5BanBnXkFtZTgwNzA5NzU4MjE@._V1_.jpg',
                 char: 'Marshall Eriksen',
             },
             {
                 actor: 'Cobie Smulders',
-                image: 'https://static.wikia.nocookie.net/snicket/images/d/d7/Cobiesmulders5.jpg',
                 char: 'Robin Scherbatsky',
             },
             {
                 actor: 'Neil Patrick Harris',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTUxNjQ4MjU5Ml5BMl5BanBnXkFtZTcwMTY5NzAzNw@@._V1_.jpg',
                 char: 'Barney Stinson',
             },
             {
                 actor: 'Alyson Hannigan',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTkxODc5ODI5OV5BMl5BanBnXkFtZTcwNzExOTUyNw@@._V1_.jpg',
                 char: 'Lily Aldrin',
             },
         ],
@@ -4811,27 +4711,22 @@ const movieData10 = [
         cast: [
             {
                 actor: 'Constance Wu',
-                image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3NDc1NzUxNDE3ODgyMjc4/gettyimages-632702568.jpg',
                 char: 'Rachel Chu',
             },
             {
                 actor: 'Henry Golding',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTEzNzcwODU0ODJeQTJeQWpwZ15BbWU4MDQ5MzE4MDYz._V1_.jpg',
                 char: 'Nick Young',
             },
             {
                 actor: ' Michelle Yeoh',
-                image: 'https://m.media-amazon.com/images/M/MV5BMTg0NTI0NDkzOF5BMl5BanBnXkFtZTcwMjYwMTIwNw@@._V1_.jpg',
                 char: 'Eleanor Young',
             },
             {
                 actor: 'Gemma Chan',
-                image: 'https://m.media-amazon.com/images/M/MV5BYTI3ZDEwYjktZjVhYS00NTlhLTkwOWEtNjM1MzEyMWU5M2QyXkEyXkFqcGdeQXVyMTE3ODY2Nzk@._V1_.jpg',
                 char: 'Astrid Young Teo',
             },
             {
                 actor: 'Jimmy O. Yang',
-                image: 'https://static.wikia.nocookie.net/criminalminds/images/0/0e/Jimmy_O._Yang.jpg',
                 char: 'Bernard Tai',
             },
         ],

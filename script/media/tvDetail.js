@@ -1,14 +1,14 @@
 const tvModal = document.getElementById('tv-modal')
 
-function showTVDetail(i,j) {
+function showTVDetail(i, j) {
     removeAllChildNodes(tvModal)
-    
+
     let close = document.createElement('a')
     close.classList = 'close'
-    close.onclick = function() { hideTVDetail() }
+    close.onclick = function () { hideTVDetail() }
     tvModal.append(close)
 
-    tvModal.append(tvDetail(i,j))
+    tvModal.append(tvDetail(i, j))
     tvModal.classList.add('open')
 }
 
@@ -17,7 +17,7 @@ function hideTVDetail() {
 }
 
 
-function tvDetail(i,j) {
+function tvDetail(i, j) {
     let movie = movieData[i][j]
     let card = document.createElement('div')
     card.classList = 'tv-detail-card'
@@ -116,22 +116,51 @@ function tvDetail(i,j) {
         tray.append(redd)
         tray.append(spacerElement(8))
     }
-    
+
     info.append(tray)
     card.append(info)
 
-    // if (movie.cast) {
-    //     let cast = document.createElement('div')
-    //     cast.classList = 'layer-0 vstack fill-width'
+    if (movie.cast) {
+        let cast = document.createElement('div')
+        cast.classList = 'cast layer-0 primary-fg'
+
+        let title = document.createElement('div')
+        title.classList = 'title'
+        title.innerHTML = 'Cast'
+
+        cast.append(title)
+        let tray = document.createElement('div')
+        tray.classList = 'cast-tray'
 
 
-    //     cast.innerHTML = 'nice'
+        for (const data of movie.cast) {
+            let card = document.createElement('div')
+            card.classList = 'actor'
 
-        
-        
-    //     card.append(cast)
-    //     console.log(movie.cast)
-    // }
+            let image = document.createElement('a')
+            image.classList = 'image layer-1 clickable'
+            image.href = googleSearch(data.actor)
+            image.target = '_blank'
+
+            if (actorData[data.actor]) {
+                image.style.setProperty('background-image', `url(${actorData[data.actor]})`)
+            } else {
+                image.innerHTML = `${data.actor.split(' ')[0][0]}${data.actor.split(' ')[1][0]}`
+            }
+
+
+            card.append(image)
+            card.append(textboxBase(data.actor, data.char))
+
+            tray.append(spacerElement(20))
+            tray.append(card)
+        }
+
+        cast.append(tray)
+
+        card.append(cast)
+
+    }
 
     return card
 }

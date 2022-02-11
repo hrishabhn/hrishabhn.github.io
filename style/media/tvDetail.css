@@ -6,6 +6,7 @@
     width: 100vw;
     z-index: 1;
     overflow-y: scroll;
+    align-items: flex-start;
 
     pointer-events: none;
     opacity: 0;
@@ -15,11 +16,11 @@
     opacity: 1;
 }
 #tv-modal .close{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: var(--black-50);
 }
 
@@ -34,6 +35,7 @@
     justify-content: flex-start;
     border-radius: 10px;
     overflow: hidden;
+    margin: 50px 0;
 }
 .tv-detail-card .bg{
     position: absolute;
@@ -112,3 +114,86 @@
     height: calc(10px - (2 * var(--size)));
     width: calc(10px - (2 * var(--size)));
 }
+
+.tv-detail-card .cast{
+    width: 100%;
+    flex-direction: column;
+}
+.tv-detail-card .cast .title{
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 15px 20px 10px;
+}
+
+.tv-detail-card .cast .cast-tray{
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
+
+
+.tv-detail-card .cast .actor{
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.tv-detail-card .cast .actor .image{
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+
+    font-family: ui-rounded;
+    font-size: 40px;
+
+    background-size: cover;
+    background-position: center top;
+
+    box-shadow: 0 8px 24px 0px var(--black-10);
+}
+
+.tv-detail-card .cast .actor .textbox { 
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+}
+.tv-detail-card .cast .actor .textbox p{
+    display: block;
+    max-width: 100%;
+    padding: 0px 8px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+.tv-detail-card .cast .actor .textbox .name{
+    opacity: 0.8;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.tv-detail-card .cast .actor .textbox .desc{
+    opacity: 0.6;
+}
+
+
+.tv-popup .cast-card p{
+
+    /* min-width: 10px; */
+    /* width: 120px; */
+    /* margin: auto; */
+
+
+    /* -webkit-box-orient: vertical; */
+    /* -webkit-line-clamp: 1; */
+}
+.tv-popup .cast-card .text{
+    opacity: 0.8;
+}
+.tv-popup .cast-card .subtext{
+    opacity: 0.6;
+}
+
