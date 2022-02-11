@@ -123,6 +123,8 @@
     grid-template-columns: 1fr 1fr 1fr 2fr;
     column-gap: 10px;
 
+    overflow-x: scroll;
+    justify-content: flex-start;
 }
 #splash #widget-card .card-item{
     background-color: var(--white-05);
