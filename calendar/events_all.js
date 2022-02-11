@@ -1,0 +1,17 @@
+let events_all = [
+{"location":"2.3.D04","end":"2022-02-11T11:00:00+01:00","start":"2022-02-11T09:00:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
+{"location":"10.2.11","end":"2022-02-14T14:00:00+01:00","start":"2022-02-14T12:30:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp.60,61 y 62"},
+{"location":"6.1.06","end":"2022-02-14T16:00:00+01:00","start":"2022-02-14T14:30:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
+{"location":"2.3.D04","end":"2022-02-15T11:00:00+01:00","start":"2022-02-15T09:00:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
+{"location":"2.3.B03","end":"2022-02-15T17:00:00+01:00","start":"2022-02-15T15:00:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Fundamentos de gestión empresarial, grupo 18"},
+{"location":"6.1.03","end":"2022-02-16T17:45:00+01:00","start":"2022-02-16T16:15:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
+{"location":"","end":"2022-02-18T00:00:00+01:00","start":"2022-02-17T00:00:00+01:00","allDay":"Yes","calendar":"Birthdays","link":"addressbook:\/\/2E272CD3-21DB-43A7-9549-2937F21BAA4E:ABPerson","name":"Raphael Cheng’s Birthday"},
+{"location":"10.1.7","end":"2022-02-17T14:00:00+01:00","start":"2022-02-17T12:30:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp. 62"},
+{"location":"4.0.E03","end":"2022-02-17T17:00:00+01:00","start":"2022-02-17T15:00:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Fundamentos de gestión empresarial, grp.18 y 19"},
+{"location":"Madrid Barajas International Airport, Madrid, Spain","end":"2022-02-17T19:55:00+01:00","start":"2022-02-17T17:20:00+01:00","allDay":"No","calendar":"Travel","link":"https:\/\/links.appintheair.mobi\/a\/key_live_jmcwCsEPIK1Fhb9bqFDawflibpe3hWrO?tripID=6737882815725568&feature=deeplink&channel=aita-ios&campaign=calendar","name":"IB 3164 MAD[4S] ✈︎ LHR[5]"},
+{"location":"2.3.D04","end":"2022-02-18T11:00:00+01:00","start":"2022-02-18T09:00:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
+{"location":"London Heathrow Airport","end":"2022-02-20T20:20:00+01:00","start":"2022-02-20T17:55:00+01:00","allDay":"No","calendar":"Travel","link":"https:\/\/links.appintheair.mobi\/a\/key_live_jmcwCsEPIK1Fhb9bqFDawflibpe3hWrO?tripID=5135447603085312&feature=deeplink&channel=aita-ios&campaign=calendar","name":"IB 7466 LHR[5] ✈︎ MAD[4S]"},
+{"location":"London Heathrow Airport, London, United Kingdom","end":"2022-02-20T20:20:00+01:00","start":"2022-02-20T17:55:00+01:00","allDay":"No","calendar":"Travel","link":"https:\/\/links.appintheair.mobi\/a\/key_live_jmcwCsEPIK1Fhb9bqFDawflibpe3hWrO?tripID=5407423018106880&feature=deeplink&channel=aita-ios&campaign=calendar","name":"BA 464 LHR[5] ✈︎ MAD[4S]"},
+{"location":"10.2.11","end":"2022-02-21T14:00:00+01:00","start":"2022-02-21T12:30:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp.60,61 y 62"},
+{"location":"6.1.06","end":"2022-02-21T16:00:00+01:00","start":"2022-02-21T14:30:00+01:00","allDay":"No","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
+]
