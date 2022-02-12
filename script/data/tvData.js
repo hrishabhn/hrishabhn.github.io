@@ -57,44 +57,6 @@
 
 let movieData0 = [
     {
-        name: 'The Expanse',
-        id: 'expanse',
-        link: {
-            primeVideo: 'B09LGJ5QNB',
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            // date: 'Jan 13, 2022 19:00:00',
-            // weekday: 'Thursday',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
-            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
-        },
-        style: {
-            color: '466A83',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '280619',
-            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
-            imdbID: 'tt3230854',
-            subReddit: 'TheExpanse',
-        },
-    },
-    {
         name: 'Attack on Titan',
         id: 'attack',
         link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
@@ -559,44 +521,6 @@ let movieData1 = [
 
 let soonMovies = [
     {
-        name: 'Snowpiercer',
-        id: 'snowpiercer',
-        link: {
-            netflix: '80177458'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'tnt',
-            location: 'Netflix',
-            date: 'Feb 1, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 3,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'sci-fi',
-                ],
-            },
-            summary: "Set more than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
-        },
-        style: {
-            color: '444743',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '364928',
-            reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
-            imdbID: 'tt6156584',
-            subReddit: 'snowpiercer',
-        },
-    },
-    {
         name: 'How I Met Your Father',
         id: 'himyf',
         link: 'https://www.hulu.com/series/how-i-met-your-father-42771fe9-3174-43bc-ab6a-d8c3e618b934',
@@ -712,6 +636,44 @@ for (const movie of soonMovies.reverse()) {
 
 
 const movieData2 = [
+    {
+        name: 'Snowpiercer',
+        id: 'snowpiercer',
+        link: {
+            netflix: '80177458'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'tnt',
+            location: 'Netflix',
+            // date: 'Feb 1, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'sci-fi',
+                ],
+            },
+            summary: "Set more than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
+        },
+        style: {
+            color: '444743',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '364928',
+            reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
+            imdbID: 'tt6156584',
+            subReddit: 'snowpiercer',
+        },
+    },
     {
         name: 'Hawkeye',
         id: 'hawkeye',
@@ -3507,6 +3469,44 @@ const movieData7 = [
     },
 ]
 const movieData8 = [
+    {
+        name: 'The Expanse',
+        id: 'expanse',
+        link: {
+            primeVideo: 'B09LGJ5QNB',
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            // date: 'Jan 13, 2022 19:00:00',
+            // weekday: 'Thursday',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
+        },
+        style: {
+            color: '466A83',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '280619',
+            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
+            imdbID: 'tt3230854',
+            subReddit: 'TheExpanse',
+        },
+    },
     {
         name: 'F is for Family',
         id: 'fisforfam',
