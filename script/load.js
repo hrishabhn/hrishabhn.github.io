@@ -7,8 +7,12 @@ function loadApp() {
     spotlightLoad()
     bodyLoad()
 
+
+    // Testing
     // skipToContent()
     // addModalLayer(workoutCard())
+    // showTVDetail(0,0)
+    // castJSONStr(0,0)
 }
 
 function bodyLoad() {
@@ -24,4 +28,16 @@ function bodyLoad() {
 
 function skipToContent() {
     document.getElementById('rest-of-stuff').scrollTop = window.innerHeight - 60
+}
+
+function castJSONStr(i,j) {
+    const movie = movieData[i][j]
+
+    let str = ''
+
+    for (const item of movie.cast) {
+        str = str.concat(`'${item.actor}': '',\n`)
+    }
+
+    console.log(str)
 }

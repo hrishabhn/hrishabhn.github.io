@@ -91,4 +91,10 @@ const actorData = {
     ' Michelle Yeoh': 'https://m.media-amazon.com/images/M/MV5BMTg0NTI0NDkzOF5BMl5BanBnXkFtZTcwMjYwMTIwNw@@._V1_.jpg',
     'Gemma Chan': 'https://m.media-amazon.com/images/M/MV5BYTI3ZDEwYjktZjVhYS00NTlhLTkwOWEtNjM1MzEyMWU5M2QyXkEyXkFqcGdeQXVyMTE3ODY2Nzk@._V1_.jpg',
     'Jimmy O. Yang': 'https://static.wikia.nocookie.net/criminalminds/images/0/0e/Jimmy_O._Yang.jpg',
+    'Hilary Duff': 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Hilary_Duff_Vogue_2019_2.png',
+    'Christopher Lowell': 'https://celebindia.com/wp-content/uploads/2021/11/chris.jpg',
+    'Francia Raisa': '',
+    'Suraj Sharma': '',
+    'Tom Ainsley': '',
+    'Tien Tran': '',
 }

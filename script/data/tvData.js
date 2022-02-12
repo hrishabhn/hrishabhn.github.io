@@ -631,6 +631,32 @@ let soonMovies = [
             imdbID: 'tt14500082',
             subReddit: 'HowIMetYourFather',
         },
+        cast: [
+            {
+                actor: 'Hilary Duff',
+                char: 'Sophie',
+            },
+            {
+                actor: 'Christopher Lowell',
+                char: 'Jesse',
+            },
+            {
+                actor: 'Francia Raisa',
+                char: 'Valentina',
+            },
+            {
+                actor: 'Suraj Sharma',
+                char: 'Sid',
+            },
+            {
+                actor: 'Tom Ainsley',
+                char: 'Charlie',
+            },
+            {
+                actor: 'Tien Tran',
+                char: 'Ellen',
+            },
+        ],
     },
     {
         name: 'Disenchantment',

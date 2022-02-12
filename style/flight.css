@@ -20,16 +20,14 @@
     padding: 0 15px;
 }
 
-.flight-detail-card .header .thumb {
+.flight-detail-card .header .icon {
     height: 50px;
     width: 50px;
-    border-radius: 10px;
-    /* background-color: red; */
 }
 
 .flight-detail-card .header .textbox {
     flex-direction: column;
-    margin-left: 8px;
+    margin-left: 12px;
 }
 
 .flight-detail-card .header .textbox .subtext {

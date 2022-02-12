@@ -6,7 +6,7 @@ function flightDetailCard(flightKey) {
     card.style.setProperty('--col',`#${flight.airline.accent}`)
     card.innerHTML = `
     <div class="header">
-        <div class="thumb" style="background-image: url(./appThumb/${flight.airline.thumb});"></div>
+        ${iconElement(flight.airline.logo.icon).outerHTML}
         <div class="textbox">
             <p class="subtext">${flight.airline.code} ${flight.number} &#149 ${flight.date}</p>
             <p class="text">${flight.dep.city} to ${flight.arr.city}</p>
