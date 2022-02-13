@@ -3,15 +3,7 @@ let splash = document.getElementById('splash')
 function splashLoad() {
     let focus = document.createElement('div')
     focus.classList = 'focus limit'
-
     focus.innerHTML = `<p class="text">${getFocus().name}</p>`
-    focus.append(spacerElement(2))
-
-    // let date = document.createElement('p')
-    // date.classList = 'subtext'
-    // date.innerHTML = `${processDay(processDate(new Date).day, 'short')}, ${new Date().getDate()} ${processMonth(processDate(new Date).month, 'short')}`
-
-    // focus.append(date)
 
     let appTray = document.createElement('div')
     appTray.classList = 'focus-apps'
@@ -23,14 +15,10 @@ function splashLoad() {
     }
     appTray.append(growElement())
 
-    // appTray.append(appCard(appData['main'][0]))
-    // appTray.append(appCard(appData['main'][1]))
-    // appTray.append(appCard(appData['main'][2]))
-
     splash.append(growElement())
     splash.append(spacerElement(50))
     splash.append(focus)
-    splash.append(spacerElement(20))
+    splash.append(spacerElement(10))
     splash.append(createSpotlight())
     splash.append(spacerElement(10))
     splash.append(widgetCard())
