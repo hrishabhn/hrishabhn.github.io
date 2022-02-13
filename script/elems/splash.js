@@ -7,11 +7,11 @@ function splashLoad() {
     focus.innerHTML = `<p class="text">${getFocus().name}</p>`
     focus.append(spacerElement(2))
 
-    let date = document.createElement('p')
-    date.classList = 'subtext'
-    date.innerHTML = `${processDay(processDate(new Date).day, 'short')}, ${new Date().getDate()} ${processMonth(processDate(new Date).month, 'short')}`
+    // let date = document.createElement('p')
+    // date.classList = 'subtext'
+    // date.innerHTML = `${processDay(processDate(new Date).day, 'short')}, ${new Date().getDate()} ${processMonth(processDate(new Date).month, 'short')}`
 
-    focus.append(date)
+    // focus.append(date)
 
     let appTray = document.createElement('div')
     appTray.classList = 'focus-apps'
@@ -206,10 +206,14 @@ function flightCountdownCard(flightKey) {
 
     let count = document.createElement('div')
     count.classList = 'count'
-    count.innerHTML = '6 Days'
+    count.innerHTML = `${countdownProcess(flight.date,'short').num} ${countdownProcess(flight.date,'short').word}`
+
     let date = document.createElement('div')
     date.classList = 'date'
-    date.innerHTML = 'Thu 31 Dec, 4:30pm'
+    date.innerHTML = `${processDate(flight.date).day.short} ${processDate(flight.date).date} ${processDate(flight.date).month.short}, ${processTime(flight.date)}`
+
+    console.log(processDate(flight.date).day.short)
+    
 
     card.append(top)
     card.append(growElement())
