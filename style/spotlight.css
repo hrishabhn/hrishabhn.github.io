@@ -274,36 +274,46 @@
     border-radius: 100px;
     background-color: var(--col);
 }
-.event .textbox{
+.event .info{
     height: 100%;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-direction: column;
     padding: 5px 5px;
 
     border-radius: 3px;
     overflow: hidden;
 }
-.event .textbox .bg{
+.event .info .bg{
     opacity: 0.25;
     /* filter: brightness(0.5) saturate(2); */
 }
-.event.started .textbox .bg{
+.event.started .info .bg{
     opacity: 0.5;
 }
-.event .textbox p{
-    width: 100%;
-    justify-content: flex-start;
+.event .info .textbox{
+    height: 100%;
+    max-width: calc(100% - 20px);
+    flex-direction: column;
+    align-items: flex-start;
 }
-.event .textbox .name{
+
+.event .info .textbox p{
+    max-width: 100%;
+    display: block;
+}
+.event .info .name{
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 2px;
 }
-.event .textbox .desc{
+.event .info .desc{
     font-size: 10px;
     font-weight: 400;
     opacity: 0.8;
+}
+.event .info .icon{
+    height: 14px;
+    width: 14px;
 }
 
 .event.future p{

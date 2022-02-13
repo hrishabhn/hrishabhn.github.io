@@ -62,7 +62,7 @@ function flightDetailCardActionTray(flight) {
         {
             icon: iconData['reverse'],
             text: 'Other Leg',
-            trigger: function() { addModalLayer(flightDetailCard(flight.return)) }
+            trigger: function() { flightData[flight.return].detail() }
         },
     ]
 

@@ -292,9 +292,7 @@ const appData = {
         },
         {
             name: 'IB 3164',
-            trigger: function () {
-                addModalLayer(flightDetailCard('mad-lhr'))
-            },
+            trigger: function () { flightData['mad-lhr'].detail() },
             desc: 'MAD &#8594 LHR',
             thumb: 'iberia.jpeg',
             accent: airlineData['iberia'].color,
@@ -305,9 +303,7 @@ const appData = {
         },
         {
             name: 'BA 464',
-            trigger: function () {
-                addModalLayer(flightDetailCard('lhr-mad'))
-            },
+            trigger: function () { flightData['lhr-mad'].detail() },
             desc: 'LHR &#8594 MAD',
             thumb: 'ba.jpeg',
             accent: airlineData['british'].color,
@@ -439,14 +435,14 @@ const appData = {
         commonApps.notion('https://www.notion.so/Industrial-Organisation-6f9a042e98f6458a9f509689c2025571'),
     ],
     'finecon': [
-        commonApps.aula('131130',1),
-        commonApps.aula('123356',2),
+        commonApps.aula('131130', 1),
+        commonApps.aula('123356', 2),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Financial%20Economics'),
         commonApps.notion('https://www.notion.so/Financial-Economics-f175d589aae64f7b9ecd3c101be4ff53'),
     ],
     'manage': [
-        commonApps.aula('126308',1),
-        commonApps.aula('132011',2),
+        commonApps.aula('126308', 1),
+        commonApps.aula('132011', 2),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Management'),
         commonApps.notion('https://www.notion.so/Engineering-Management-42466297fd4148a7bf275247cde1becb'),
     ],

@@ -159,9 +159,7 @@ function flightCountdownCard(flightKey) {
 
     let card = document.createElement('div')
     card.classList = 'flight-countdown card-item clickable'
-    card.onclick = function () {
-        addModalLayer(flightDetailCard(flightKey))
-    }
+    card.onclick = function () { flight.detail() }
 
     let top = document.createElement('div')
     top.classList = 'top'
@@ -194,7 +192,7 @@ function flightCountdownCard(flightKey) {
 
     let count = document.createElement('div')
     count.classList = 'count'
-    count.innerHTML = `${countdownProcess(flight.date,'short').num} ${countdownProcess(flight.date,'short').word}`
+    count.innerHTML = `${countdownProcess(flight.date, 'short').num} ${countdownProcess(flight.date, 'short').word}`
 
     let date = document.createElement('div')
     date.classList = 'date'

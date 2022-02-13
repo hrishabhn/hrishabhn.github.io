@@ -23,8 +23,38 @@ for (const event of events_all) {
         'Fundamentos de gestión empresarial, grp.18 y 19': 'Engineering Management',
     }
 
-    if (eventNameData[event.name]) {
-        event.name = eventNameData[event.name]
+    if (eventNameData[event.name]) { event.name = eventNameData[event.name] }
+
+    const eventTrigger = {
+        'Industrial Organisation': function () { focusData[1]['indorg'].trigger() },
+        'Financial Economics': function () { focusData[1]['finecon'].trigger() },
+        'Engineering Management': function () { focusData[1]['manage'].trigger() },
+        'Controls Engineering': function () { focusData[1]['controls'].trigger() },
+        'Gym': function () { focusData[2]['workout'].trigger() },
+    }
+
+    if (eventTrigger[event.name]) {
+        event.trigger = function () { eventTrigger[event.name]() }
+    }
+
+
+
+    const eventNotesIcon = {
+        'sport': iconData['ball'],
+    }
+
+    if (eventNotesIcon[event.notes]) { event.icon = eventNotesIcon[event.notes] }
+
+    if (event.notes.includes('https://www.appintheair.mobi/cal')) {
+        event.icon = iconData['plane']
+        delete event.link
+
+        let flightNo = event.notes.split('\n')[0].split(' ').at(-1)
+
+        for (const key in flightData) {
+            let match = flightData[key].number == flightNo
+            if (match) { event.trigger = function () { flightData[key].detail() } }
+        }
     }
 }
 
