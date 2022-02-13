@@ -145,7 +145,11 @@ function tvDetail(i, j) {
             if (actorData[data.actor]) {
                 image.style.setProperty('background-image', `url(${actorData[data.actor]})`)
             } else {
-                image.innerHTML = `${data.actor.split(' ')[0][0]}${data.actor.split(' ')[1][0]}`
+                let str = ''
+                for (const word of data.actor.split(' ')) {
+                    str = str.concat(word[0])
+                }
+                image.innerHTML = str
             }
 
 
