@@ -1,17 +1,31 @@
-for (let i = 0; i < events_all.length; i++) {
-    if (events_all[i].allDay == 'No') {
-        events_all[i].allDay = false
-        events_all[i].duration = `${processTime(events_all[i].start)} - ${processTime(events_all[i].end)}`
+for (const event of events_all) {
+    if (event.allDay == 'No') {
+        event.allDay = false
+        event.duration = `${processTime(event.start)} - ${processTime(event.end)}`
     } else {
-        events_all[i].allDay = true
-        events_all[i].duration = 'All Day'
+        event.allDay = true
+        event.duration = 'All Day'
     }
 
-    events_all[i].isToday = (new Date(events_all[i].start).getDate()) == new Date().getDate()
-    events_all[i].hasStarted = (new Date(events_all[i].start) < new Date())
-    events_all[i].hasEnded = (new Date(events_all[i].end) < new Date())
+    event.isToday = (new Date(event.start).getDate()) == new Date().getDate()
+    event.isTmr = new Date(event.start).getDate() == new Date(new Date().getTime() + (1000 * 60 * 60 * 24)).getDate()
+    event.hasStarted = (new Date(event.start) < new Date())
+    event.hasEnded = (new Date(event.end) < new Date())
 
-    events_all[i].color = eventColor(events_all[i].calendar)
+    event.color = eventColor(event.calendar)
+
+    const eventNameData = {
+        'Economía Financiera, grp.60,61 y 62': 'Financial Economics',
+        'Economía Financiera, grp. 62': 'Financial Economics',
+        'Organización Industrial, grupo 70': 'Industrial Organisation',
+        'Ingeniería de Control I, grupo 39': 'Controls Engineering',
+        'Fundamentos de gestión empresarial, grupo 18': 'Engineering Management',
+        'Fundamentos de gestión empresarial, grp.18 y 19': 'Engineering Management',
+    }
+
+    if (eventNameData[event.name]) {
+        event.name = eventNameData[event.name]
+    }
 }
 
 function eventColor(calendar) {
@@ -28,5 +42,15 @@ function eventColor(calendar) {
         return data[calendar]
     } else {
         return '000'
+    }
+}
+
+let todayEvents = []
+let tmrEvents = []
+
+for (const event of events_all) {
+    if (!event.hasEnded) {
+        if (event.isToday) { todayEvents.push(event) }
+        if (event.isTmr) { tmrEvents.push(event) }
     }
 }
