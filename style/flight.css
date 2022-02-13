@@ -28,13 +28,14 @@
 .flight-detail-card .header .textbox {
     flex-direction: column;
     margin-left: 12px;
+    align-items: flex-start;
 }
 
 .flight-detail-card .header .textbox .subtext {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     opacity: 0.6;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .flight-detail-card .header .textbox .text {

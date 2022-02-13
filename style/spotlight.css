@@ -228,11 +228,13 @@
 #splash #widget-card .flight-countdown .count{
     font-size: 20px;
     font-weight: 400;
+    text-transform: capitalize;
 }
 #splash #widget-card .flight-countdown .date{
     font-size: 10px;
     font-weight: 400;
     opacity: 0.5;
+    text-transform: capitalize;
 }
 
 

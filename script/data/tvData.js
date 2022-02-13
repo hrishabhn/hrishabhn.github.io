@@ -57,6 +57,71 @@
 
 let movieData0 = [
     {
+        name: 'Superstore',
+        id: 'superstore',
+        link: {
+            netflix: '80061132'
+        },
+        info: {
+            service: 'netflix',
+            // studio: '',
+            location: 'Netflix',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: 2021,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
+        },
+        style: {
+            color: '0070DB',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '295648',
+            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
+            imdbID: 'tt4477976',
+            subReddit: 'superstore',
+        },
+        cast: [
+            {
+                actor: 'Ben Feldman',
+                char: 'Jonah Simms',
+            },
+            {
+                actor: 'America Ferrera',
+                char: 'Amy Sosa',
+            },
+            {
+                actor: 'Mark McKinney',
+                char: 'Glenn Sturgis',
+            },
+            {
+                actor: 'Lauren Ash',
+                char: 'Dina Fox',
+            },
+            {
+                actor: 'Colton Dunn',
+                char: 'Garrett McNeill',
+            },
+            {
+                actor: 'Nichole Sakura',
+                char: 'Cheyenne Lee',
+            },
+            {
+                actor: 'Nico Santos',
+                char: 'Mateo Liwanag',
+            },
+        ],
+    },
+    {
         name: 'Attack on Titan',
         id: 'attack',
         link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
@@ -129,41 +194,6 @@ let movieData1 = [
             // reelgoodLink: 'link',
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Superstore',
-        id: 'superstore',
-        link: {
-            netflix: '80061132'
-        },
-        info: {
-            service: 'netflix',
-            // studio: '',
-            location: 'Netflix',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: 2021,
-                genre: [
-                    'comedy',
-                ],
-            },
-            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
-        },
-        style: {
-            color: '0070DB',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '295648',
-            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
-            imdbID: 'tt4477976',
-            subReddit: 'superstore',
         },
     },
     {

@@ -8,7 +8,7 @@ function flightDetailCard(flightKey) {
     <div class="header">
         ${iconElement(flight.airline.logo.icon).outerHTML}
         <div class="textbox">
-            <p class="subtext">${flight.airline.code} ${flight.number} &#149 ${flight.date}</p>
+            <p class="subtext">${flight.airline.code} ${flight.number} &#149 ${processDate(flight.date).day.short} ${processDate(flight.date).date} ${processDate(flight.date).month.short}</p>
             <p class="text">${flight.dep.city} to ${flight.arr.city}</p>
         </div>
     </div>

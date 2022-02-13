@@ -31,9 +31,17 @@ function processDate(dateString) {
 
     const dateObject = {
         year: date.getFullYear(),
-        month: date.getMonth(),
+        month: {
+            index: date.getMonth(),
+            short: processMonth(date.getMonth(), 'short'),
+            long: processMonth(date.getMonth(), 'long'),
+        },
         date: date.getDate(),
-        day: date.getDay(),
+        day: {
+            index: date.getDay(),
+            short: processDay(date.getDay(), 'short'),
+            long: processDay(date.getDay(), 'long'),
+        },
         hour: date.getHours(),
         minute: date.getMinutes(),
         second: date.getSeconds(),
