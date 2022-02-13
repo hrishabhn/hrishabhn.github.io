@@ -200,9 +200,6 @@ function flightCountdownCard(flightKey) {
     date.classList = 'date'
     date.innerHTML = `${processDate(flight.date).day.short} ${processDate(flight.date).date} ${processDate(flight.date).month.short}, ${processTime(flight.date)}`
 
-    console.log(processDate(flight.date).day.short)
-    
-
     card.append(top)
     card.append(growElement())
     card.append(spacerElement(20))

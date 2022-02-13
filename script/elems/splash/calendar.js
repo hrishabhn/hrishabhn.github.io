@@ -1,4 +1,6 @@
 function calendarCard() {
+    // base card with header
+
     let card = document.createElement('div')
     card.classList = 'cal-card card-item'
 
@@ -8,61 +10,98 @@ function calendarCard() {
     `
 
     card.append(spacerElement(8))
-    // card.append(growElement())
+
+    // initialise variables
 
     let displayedEvents = 0
     let countedEvents = 0
 
-    for (let i = 0; (i < events_all.length) && (displayedEvents < 2); i++) {
-        const event = events_all[i]
+    // console.log(!!todayEvents[0])
 
-        if (!event.hasEnded && event.isToday) {
+    let shownTmr = false
+
+    // today's events
+
+    while (todayEvents[0] && (displayedEvents < 2)) {
+        const event = todayEvents.shift()
+
+        card.append(eventCardElem(event))
+        card.append(spacerElement(5))
+
+        displayedEvents++
+        countedEvents++
+    }
+
+
+    function futureCard(events) {
+        let moreData = {
+            number: 0,
+            colors: {}
+        }
+
+        for (const event of events) {
+            moreData.number++
+            countedEvents++
+
+            if (!moreData.colors[event.color]) {
+                moreData.colors[event.color] = true
+            }
+        }
+
+        return futureCardElem(moreData)
+    }
+
+
+    // more events today
+    if (todayEvents[0]) {
+        card.append(futureCard(todayEvents))
+    }
+
+    // tomorrow
+
+    if (tmrEvents[0] && (displayedEvents < 2)) {
+        let tmrTitle = pElement('TOMORROW')
+        tmrTitle.classList = 'tmr-title'
+        card.append(tmrTitle)
+
+        while (tmrEvents[0] && (displayedEvents < 2)) {
+            const event = tmrEvents.shift()
+
             card.append(eventCardElem(event))
             card.append(spacerElement(5))
 
             displayedEvents++
-        }
-        // card.lastChild.remove()
-        countedEvents++
-    }
-    
-    let futureCard = document.createElement('div')
-    futureCard.classList = 'event future'
-    let futureEvents = 0
-
-    for (let i = countedEvents; (i < events_all.length); i++) {
-        const event = events_all[i]
-
-        if (!event.hasEnded && event.isToday) {
-            let dot = document.createElement('div')
-            dot.classList = 'col-block'
-            dot.style.setProperty('background-color',`#${event.color}`)
-            futureCard.append(dot)
-
-            futureEvents++
             countedEvents++
         }
     }
-    
-    let futureCardText = pElement(`${futureEvents} more events`)
-    if (futureEvents > 1) {
-        futureCardText.concat('s')
-    }
 
-    futureCard.append(futureCardText)
-    futureCard.append(growElement())
-    
-    if (futureEvents > 0) {
-        card.append(futureCard)
-    }
-
-    if (!displayedEvents) {
-        let noMore = pElement('No more events today')
-        noMore.classList = ('no-more')
-        card.append(noMore)
+    // more events tmr
+    if (tmrEvents[0]) {
+        card.append(futureCard(tmrEvents))
     }
 
     card.append(growElement())
+    return card
+}
+
+
+
+function futureCardElem(data) {
+    let card = document.createElement('div')
+    card.classList = 'event future'
+
+    for (const color in data.colors) {
+        let dot = document.createElement('div')
+        dot.classList = 'col-block'
+        dot.style.setProperty('background-color', `#${color}`)
+        card.append(dot)
+    }
+
+    let textStr = `${data.number} more event`
+    if (data.number > 1) { textStr = textStr.concat('s') }
+    card.append(pElement(textStr))
+    card.append(growElement())
+
     return card
 }
 
@@ -83,20 +122,3 @@ function eventCardElem(event) {
 
     return eventCard
 }
-
-
-// function eventColor(calendar) {
-//     // console.log(calendar == 'Fall 2021')
-
-    // if (calendar == 'Clubs') {
-//         return '00FA92'
-//     } else if (calendar == 'Travel') {
-//         return '0E61B9'
-//     } else if (calendar == 'Work') {
-//         return '005392'
-//     }  else if (calendar == 'Errands') {
-//         return 'FF40FF'
-//     } else {
-//         return '000'
-//     }
-// }

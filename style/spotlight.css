@@ -253,6 +253,13 @@
     font-weight: 300;
 }
 
+#splash #widget-card .tmr-title{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.75;
+    margin: 4px 0;
+}
+
 #splash #widget-card .cal-card .event{
     width: 100%;
     min-height: 20px;
