@@ -260,21 +260,21 @@
     margin: 4px 0;
 }
 
-#splash #widget-card .cal-card .event{
+.event{
     width: 100%;
     min-height: 20px;
     cursor: default;
 
     /* background-color: red; */
 }
-#splash #widget-card .cal-card .event .col-block{
+.event .col-block{
     height: 100%;
     width: 4px;
     margin-right: 3px;
     border-radius: 100px;
     background-color: var(--col);
 }
-#splash #widget-card .cal-card .event .textbox{
+.event .textbox{
     height: 100%;
     flex-grow: 1;
     flex-shrink: 1;
@@ -284,29 +284,29 @@
     border-radius: 3px;
     overflow: hidden;
 }
-#splash #widget-card .cal-card .event .textbox .bg{
+.event .textbox .bg{
     opacity: 0.25;
     /* filter: brightness(0.5) saturate(2); */
 }
-#splash #widget-card .cal-card .event.started .textbox .bg{
+.event.started .textbox .bg{
     opacity: 0.5;
 }
-#splash #widget-card .cal-card .event .textbox p{
+.event .textbox p{
     width: 100%;
     justify-content: flex-start;
 }
-#splash #widget-card .cal-card .event .textbox .name{
+.event .textbox .name{
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 2px;
 }
-#splash #widget-card .cal-card .event .textbox .desc{
+.event .textbox .desc{
     font-size: 10px;
     font-weight: 400;
     opacity: 0.8;
 }
 
-#splash #widget-card .cal-card .event.future p{
+.event.future p{
     font-size: 12px;
     font-weight: 500;
 }

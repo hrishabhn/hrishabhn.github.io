@@ -49,6 +49,7 @@ function spotlightRun(e) {
                 searchAppsRow(searchApps(q, appData['utilities']), 'Utilities'),
                 searchAppsRow(searchApps(q, appData['profiles']), 'Social Media Pages'),
                 searchAppsRow(searchApps(q, appData['design']), 'Social Media Pages'),
+                // searchCalRow(searchCal(q)),
                 searchMoviesRow(searchMovies(q), 'TV & Movies'),
                 searchBookPodRow(searchBooks(q), 'Books', 'book'),
                 searchBookPodRow(searchPods(q), 'Podcasts', 'pod'),
@@ -238,48 +239,6 @@ function searchAppsRow(data, title) {
     row.append(tray)
     return row
 }
-
-
-// function searchFocus(q) {
-//     let results = []
-//     for (let i = 0; i < focusData.length; i++) {
-//         for (const focus in focusData[i]) {
-//             const name = focusData[i][focus].name.toUpperCase().includes(q)
-    
-//             if (name) {
-//                 results.push(focus)
-//             }
-//         }
-
-//     }
-//     return results
-// }
-// function searchFocusRow(data) {
-//     let row = rowBase(null)
-//     let tray = trayBase()
-
-//     for (let k = 0; k < data.length; k++) {
-//         const focus = focusData[data[k]]
-
-//         let box = boxBase(null, `focus-${k}`)
-//         let card = document.createElement('a')
-//         card.classList = 'result-card focus card-shadow layer-1'
-//         card.onclick = function () { setFocus(data[k]) }
-//         card.innerHTML = `
-//         <p class="name">${focus.name}</p>
-//         `
-
-//         box.append(card)
-//         tray.append(box)
-
-//         if (k < data.length - 1) {
-//             tray.append(spacerElement(10))
-//         }
-//     }
-//     row.append(tray)
-//     return row
-// }
-
 
 
 function rowBase(title) {
