@@ -32,6 +32,15 @@ const commonApps = {
             style: 'purple',
         }
     },
+    syllabus: function (id) {
+        return {
+            name: 'Syllabus',
+            link: `./course/${id}_syllabus.pdf`,
+            desc: 'Course Rules',
+            thumb: thumbData['book'],
+            style: 'red',
+        }
+    },
 }
 
 const appData = {
@@ -426,11 +435,13 @@ const appData = {
             thumb: thumbData['course'],
             style: 'orange',
         },
+        commonApps.syllabus('sail'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/SAIL'),
         commonApps.notion('https://www.notion.so/SAIL-5b633671d2f843578da9226cb83201d1'),
     ],
     'indorg': [
         commonApps.aula('123832'),
+        commonApps.syllabus('indorg'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Industrial%20Organisation'),
         commonApps.notion('https://www.notion.so/Industrial-Organisation-6f9a042e98f6458a9f509689c2025571'),
     ],
@@ -443,6 +454,7 @@ const appData = {
     'manage': [
         commonApps.aula('126308', 1),
         commonApps.aula('132011', 2),
+        commonApps.syllabus('manage'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Management'),
         commonApps.notion('https://www.notion.so/Engineering-Management-42466297fd4148a7bf275247cde1becb'),
     ],

@@ -67,7 +67,7 @@ function calendarCard() {
     }
 
     // more events tmr
-    if (tmrEvents[0]) {
+    if (tmrEvents[0] && (displayedEvents > 2)) {
         card.append(futureCard(tmrEvents))
     }
 
@@ -86,6 +86,8 @@ function calendarCard() {
 
 
 function futureCardElem(data) {
+    console.log(data)
+
     let card = document.createElement('div')
     card.classList = 'event future'
 
