@@ -80,18 +80,24 @@ function tvDetail(i, j) {
         tray.append(tvti)
         tray.append(spacerElement(8))
     }
+
+    // reelgood
+    let reel = document.createElement('a')
+    reel.classList = 'app clickable card-shadow'
     if (movie.apps.reelgoodLink) {
-        let reel = document.createElement('a')
-        reel.classList = 'app clickable card-shadow'
         reel.href = movie.apps.reelgoodLink
-        reel.target = '_blank'
-        reel.innerHTML = `
-        <div class="icon" style="--size: -2px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="m14.21 11.477 2.475 4.441h-3.803l-2.014-4.047h-1.4v4.047H6.151v-6.85l3.317-1.791v1.755h2.333c.686 0 1.38-.423 1.38-1.231 0-.809-.694-1.232-1.38-1.232h-.915V3.75h1.382c2.563 0 4.284 1.642 4.284 4.087 0 2.005-1.187 3.183-2.342 3.641zM0 0l8.75 5.032L0 10.064V0zm1.189 4.637h.8v1.997l3.536-2.09L1.189 2.05v2.587z"></path></svg></div>
-        <div class="spacer-x" style="--size: 8px;"></div>
-        <div class="text">Reelgood</div>`
-        tray.append(reel)
-        tray.append(spacerElement(8))
+    } else {
+        reel.href = `https://reelgood.com/search?q=${movie.name}`
     }
+    reel.target = '_blank'
+    reel.innerHTML = `
+    <div class="icon" style="--size: -2px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="m14.21 11.477 2.475 4.441h-3.803l-2.014-4.047h-1.4v4.047H6.151v-6.85l3.317-1.791v1.755h2.333c.686 0 1.38-.423 1.38-1.231 0-.809-.694-1.232-1.38-1.232h-.915V3.75h1.382c2.563 0 4.284 1.642 4.284 4.087 0 2.005-1.187 3.183-2.342 3.641zM0 0l8.75 5.032L0 10.064V0zm1.189 4.637h.8v1.997l3.536-2.09L1.189 2.05v2.587z"></path></svg></div>
+    <div class="spacer-x" style="--size: 8px;"></div>
+    <div class="text">Reelgood</div>`
+    tray.append(reel)
+    tray.append(spacerElement(8))
+    
+    // imdb
     if (movie.apps.imdbID) {
         let imdb = document.createElement('a')
         imdb.classList = 'app clickable card-shadow'
