@@ -1,7 +1,7 @@
 function workoutData() {
     const workoutDataRaw = [
         {
-            name: 'Back Squat',
+            name: 'Back Squat (x5)',
             style: 'red',
             complete: [
                 false,
@@ -10,19 +10,42 @@ function workoutData() {
             ],
         },
         {
-            name: 'Bench Press',
+            name: 'Bench Press (x5)',
             style: 'blue',
             complete: [
-                false,
-                false,
                 false,
                 false,
                 false,
             ],
         },
         {
-            name: 'Barbell Row',
+            name: 'Barbell Row (x5) OR',
             style: 'green',
+            complete: [
+                false,
+                false,
+                false,
+            ],
+        },
+        {
+            name: 'Deadlift (x5) OR',
+            style: 'purple',
+            complete: [
+                false,
+            ],
+        },
+        {
+            name: 'Standing Press (x5)',
+            style: 'orange',
+            complete: [
+                false,
+                false,
+                false,
+            ],
+        },
+        {
+            name: 'Barbell Curl (x2)',
+            style: 'cyan',
             complete: [
                 false,
                 false,
