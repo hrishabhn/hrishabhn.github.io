@@ -57,6 +57,44 @@
 
 let movieData0 = [
     {
+        name: 'Elite',
+        id: 'elite',
+        link: {
+            netflix: '80200942'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'thriller',
+                ],
+            },
+            summary: "When three working-class teens enroll in an exclusive private school in Spain, the clash between them and the wealthy students leads to murder.",
+        },
+        style: {
+            color: colorData['fluent'].red,
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '346328',
+            reelgoodLink: 'https://reelgood.com/show/elite-2018',
+            imdbID: 'tt7134908',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Superstore',
         id: 'superstore',
         link: {
