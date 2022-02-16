@@ -57,44 +57,6 @@
 
 let movieData0 = [
     {
-        name: 'Elite',
-        id: 'elite',
-        link: {
-            netflix: '80200942'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'thriller',
-                ],
-            },
-            summary: "When three working-class teens enroll in an exclusive private school in Spain, the clash between them and the wealthy students leads to murder.",
-        },
-        style: {
-            color: colorData['fluent'].red,
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tall',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '346328',
-            reelgoodLink: 'https://reelgood.com/show/elite-2018',
-            imdbID: 'tt7134908',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Superstore',
         id: 'superstore',
         link: {
@@ -197,6 +159,83 @@ let movieData0 = [
     },
 ]
 let movieData1 = [
+    {
+        name: 'Elite',
+        id: 'elite',
+        link: {
+            netflix: '80200942'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'thriller',
+                ],
+            },
+            summary: "When three working-class teens enroll in an exclusive private school in Spain, the clash between them and the wealthy students leads to murder.",
+        },
+        style: {
+            color: colorData['fluent'].red,
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '346328',
+            reelgoodLink: 'https://reelgood.com/show/elite-2018',
+            imdbID: 'tt7134908',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Money Heist',
+        id: 'money',
+        link: {
+            netflix: '80192098'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2017,
+                yearEnd: 2021,
+                genre: [
+                    'action',
+                    'crime',
+                    'mystery',
+                ],
+            },
+            summary: "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
+        },
+        style: {
+            color: '3f1513',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '10 / 9',
+        },
+        apps: {
+            tvTimeID: '327417',
+            reelgoodLink: 'https://reelgood.com/show/money-heist-2017',
+            imdbID: 'tt6468322',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Soy Georgina',
         id: 'georgina',
@@ -2341,33 +2380,6 @@ const movieData5 = [
             // reelgoodRate: "72",
             imdbID: "tt2359704",
             // imdbRate: "8.4",
-        },
-    },
-    {
-        name: "Money Heist",
-        id: "money",
-        link: {
-            netflix: '80192098'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: "Netflix",
-            description: "Action &#149 Crime &#149 Mystery &#149 3 Seasons &#149 2017 - Present",
-            summary: "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
-        },
-        style: {
-            color: '3f1513',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '10 / 9',
-        },
-        apps: {
-            tvTimeID: "327417",
-            reelgoodLink: "https://reelgood.com/show/money-heist-2017",
-            imdbID: "tt6468322",
         },
     },
     {
