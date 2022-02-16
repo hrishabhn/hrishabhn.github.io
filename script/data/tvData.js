@@ -40,7 +40,6 @@
 //     // cast: [
 //     //     {
 //     //         actor: 'name',
-//     //         image: 'url',
 //     //         char: 'name',
 //     //     },
 //     // ],
@@ -122,6 +121,90 @@ let movieData0 = [
         ],
     },
     {
+        name: 'Reacher',
+        id: 'reacher',
+        link: {
+            primeVideo: 'B09ML341D8'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "Jack Reacher was arrested for murder and now the police need his help. Based on the books by Lee Child.",
+        },
+        style: {
+            color: colorData.fluent['green20'],
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '366924',
+            reelgoodLink: 'https://reelgood.com/show/reacher-2022',
+            imdbID: 'tt9288030',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Alan Ritchson',
+                char: 'Jack Reacher',
+            },
+        ],
+    },
+    {
+        name: 'Disenchantment',
+        id: 'disenchant',
+        link: {
+            netflix: '80095697'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '9 Feb, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'adventure',
+                    'fantasy',
+                ],
+            },
+            summary: "Princess duties call, but she'd rather be drinking. Free-spirited Bean exasperates the king as she wreaks havoc with her demon and elf pals.",
+        },
+        style: {
+            color: '4b718b',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '340234',
+            reelgoodLink: 'https://reelgood.com/show/disenchantment-2018',
+            imdbID: 'tt5363918',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Attack on Titan',
         id: 'attack',
         link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
@@ -159,44 +242,6 @@ let movieData0 = [
     },
 ]
 let movieData1 = [
-    {
-        name: 'Elite',
-        id: 'elite',
-        link: {
-            netflix: '80200942'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'thriller',
-                ],
-            },
-            summary: "When three working-class teens enroll in an exclusive private school in Spain, the clash between them and the wealthy students leads to murder.",
-        },
-        style: {
-            color: colorData['fluent'].red,
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tall',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '346328',
-            reelgoodLink: 'https://reelgood.com/show/elite-2018',
-            imdbID: 'tt7134908',
-            // subReddit: 'subreddit',
-        },
-    },
     {
         name: 'Money Heist',
         id: 'money',
@@ -635,7 +680,7 @@ let soonMovies = [
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            date: 'Feb 15, 2022',
+            date: 'Feb 22, 2022',
             // weekday: '',
             desc: {
                 seasons: 1,
@@ -688,45 +733,6 @@ let soonMovies = [
                 char: 'Ellen',
             },
         ],
-    },
-    {
-        name: 'Disenchantment',
-        id: 'disenchant',
-        link: {
-            netflix: '80095697'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            date: '9 Feb, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'adventure',
-                    'fantasy',
-                ],
-            },
-            summary: "Princess duties call, but she'd rather be drinking. Free-spirited Bean exasperates the king as she wreaks havoc with her demon and elf pals.",
-        },
-        style: {
-            color: '4b718b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '340234',
-            reelgoodLink: 'https://reelgood.com/show/disenchantment-2018',
-            imdbID: 'tt5363918',
-            // subReddit: 'subreddit',
-        },
     },
 ]
 
@@ -1444,6 +1450,44 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
+    {
+        name: 'Elite',
+        id: 'elite',
+        link: {
+            netflix: '80200942'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'thriller',
+                ],
+            },
+            summary: "When three working-class teens enroll in an exclusive private school in Spain, the clash between them and the wealthy students leads to murder.",
+        },
+        style: {
+            color: colorData['fluent'].red,
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '346328',
+            reelgoodLink: 'https://reelgood.com/show/elite-2018',
+            imdbID: 'tt7134908',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'The Book of Boba Fett',
         id: 'boba',
@@ -4039,7 +4083,7 @@ const movieData8 = [
             },
             {
                 actor: 'Alan Ritchson',
-                char: 'name',
+                char: 'Thad Castle',
             },
             {
                 actor: 'Chris Romano',
