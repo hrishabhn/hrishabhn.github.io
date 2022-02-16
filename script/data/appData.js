@@ -366,6 +366,16 @@ const appData = {
                 'reddit',
             ],
         },
+        {
+            name: 'r/iOSBeta',
+            link: 'https://www.reddit.com/r/iOSBeta',
+            desc: 'iOS Beta',
+            thumb: 'reddit.jpeg',
+            accent: colorData['reddit'],
+            tags: [
+                'reddit',
+            ],
+        },
     ],
     'design': [
         {
