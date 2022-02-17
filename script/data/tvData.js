@@ -692,6 +692,9 @@ let soonMovies = [
                 ],
             },
             summary: "In the near future, Sophie is telling her son the story of how she met his father: a story that catapults us back to the present where Sophie and her close-knit group of friends are in the midst of figuring out who they are, what they want out of life, and how to fall in love in the age of dating apps and limitless options.",
+            tags: [
+                'himym',
+            ]
         },
         style: {
             color: '3d250f',
@@ -802,10 +805,12 @@ const movieData2 = [
                 yearEnd: null,
                 genre: [
                     'crime',
-                    'MCU',
                 ],
             },
             summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
+            tags: [
+                'mcu',
+            ]
         },
         style: {
             color: '5980C4',
@@ -1226,10 +1231,12 @@ const movieData3 = [
                 year: 2021,
                 genre: [
                     'sci-fi',
-                    'MCU',
                 ],
             },
             summary: "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
+            tags: [
+                'mcu',
+            ]
         },
         style: {
             color: '645542',
@@ -3027,10 +3034,12 @@ const movieData7 = [
                 genre: [
                     'fantasy',
                     'sci-fi',
-                    'MCU',
                 ],
             },
             summary: "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
+            tags: [
+                'mcu',
+            ]
         },
         style: {
             color: 'a87643',
@@ -4061,6 +4070,9 @@ const movieData8 = [
                 ],
             },
             summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
+            tags: [
+                'bms',
+            ]
         },
         style: {
             color: '7d7787',
@@ -4163,6 +4175,9 @@ const movieData8 = [
                 ],
             },
             summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
+            tags: [
+                'himym',
+            ]
         },
         style: {
             color: '60B9C6',
@@ -4512,10 +4527,12 @@ const movieData10 = [
                 year: 2021,
                 genre: [
                     'sci-fi',
-                    'MCU',
                 ],
             },
             summary: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+            tags: [
+                'mcu',
+            ]
         },
         style: {
             color: 'af0000',
@@ -5038,10 +5055,12 @@ const movieData10 = [
                 genre: [
                     'action & adventure',
                     'fantasy',
-                    'MCU',
                 ],
             },
             summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+            tags: [
+                'mcu',
+            ]
         },
         style: {
             color: '4b3831',

@@ -17,8 +17,17 @@ function searchMovies(q) {
     for (let i = 0; i < movieData.length; i++) {
         for (let j = 0; (j < movieData[i].length) && (results.length < len); j++) {
             const name = movieData[i][j].name.toUpperCase().includes(q)
+            let tags = false
 
-            if (name) {
+            if (movieData[i][j].info.tags) {
+                for (const tag of movieData[i][j].info.tags) {
+                    if (tag.toUpperCase().includes(q)) {
+                        tags = true
+                    }
+                }
+            }
+
+            if (name || tags) {
                 results.push([i, j])
             }
         }
