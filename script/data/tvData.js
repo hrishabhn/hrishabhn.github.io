@@ -56,67 +56,56 @@
 
 let movieData0 = [
     {
-        name: 'Superstore',
-        id: 'superstore',
-        link: {
-            netflix: '80061132'
-        },
+        name: 'Hit Monkey',
+        id: 'hitMonkey',
+        link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
         info: {
-            service: 'netflix',
-            // studio: '',
-            location: 'Netflix',
+            service: 'hulu',
+            studio: 'marvel',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
             desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: 2021,
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
                 genre: [
-                    'comedy',
+                    'action',
+                    'animation',
                 ],
             },
-            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
+            summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
         },
         style: {
-            color: '0070DB',
+            color: '3B347A',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: 'widest',
+            titleSize: 'mid',
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
         apps: {
-            tvTimeID: '295648',
-            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
-            imdbID: 'tt4477976',
-            subReddit: 'superstore',
+            tvTimeID: '361835',
+            reelgoodLink: 'https://reelgood.com/show/marvels-hitmonkey-2021',
+            imdbID: 'tt9811316',
+            // subReddit: 'subreddit',
         },
         cast: [
             {
-                actor: 'Ben Feldman',
-                char: 'Jonah Simms',
+                actor: 'Fred Tatasciore',
+                char: 'Hit-Monkey',
             },
             {
-                actor: 'America Ferrera',
-                char: 'Amy Sosa',
+                actor: 'Jason Sudeikis',
+                char: 'Bryce',
             },
             {
-                actor: 'Mark McKinney',
-                char: 'Glenn Sturgis',
+                actor: 'Olivia Munn',
+                char: 'Akiko',
             },
             {
-                actor: 'Lauren Ash',
-                char: 'Dina Fox',
-            },
-            {
-                actor: 'Colton Dunn',
-                char: 'Garrett McNeill',
-            },
-            {
-                actor: 'Nichole Sakura',
-                char: 'Cheyenne Lee',
-            },
-            {
-                actor: 'Nico Santos',
-                char: 'Mateo Liwanag',
+                actor: 'George Takei',
+                char: 'Shinji Yokohama',
             },
         ],
     },
@@ -282,41 +271,77 @@ let movieData1 = [
         },
     },
     {
-        name: 'Soy Georgina',
-        id: 'georgina',
+        name: 'Blue Mountain State',
+        id: 'bms',
         link: {
-            netflix: '81423622'
+            primeVideo: 'B08CG43CLR'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
             desc: {
-                seasons: 1,
-                year: 2022,
+                seasons: 3,
+                yearStart: 2010,
+                yearEnd: 2011,
                 genre: [
                     'comedy',
-                    'documentary',
+                    'sport',
                 ],
             },
-            summary: "Join Georgina Rodríguez — mom, influencer, businesswoman and Cristiano Ronaldo's partner — in this emotional and in-depth portrait of her daily life.",
+            summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
+            tags: [
+                'bms',
+            ]
         },
         style: {
-            color: '8f7d4b',
+            color: '7d7787',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '768 / 1024',
+            titleSize: 'tallest',
+            mobileType: 'png',
+            mobileSize: '9 / 10',
         },
         apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
+            tvTimeID: '134511',
+            reelgoodLink: 'https://reelgood.com/show/blue-mountain-state-2010',
+            imdbID: 'tt1344204',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'Darin Brooks',
+                char: 'Alex Moran',
+            },
+            {
+                actor: 'Alan Ritchson',
+                char: 'Thad Castle',
+            },
+            {
+                actor: 'Chris Romano',
+                char: 'Sammy Cacciatore',
+            },
+            {
+                actor: 'Ed Marino',
+                char: 'Coach Marty Daniels',
+            },
+            {
+                actor: 'Denise Richards',
+                char: 'Debra',
+            },
+            {
+                actor: 'Frankie Shaw',
+                char: 'Mary Jo Cacciatore',
+            },
+            {
+                actor: 'Sam Jones III',
+                char: 'Craig Shilo',
+            },
+            {
+                actor: 'Page Kennedy',
+                char: 'Radon Randell',
+            },
+        ],
     },
     {
         name: "Don't Look Up",
@@ -388,60 +413,6 @@ let movieData1 = [
         },
     },
     {
-        name: 'Hit Monkey',
-        id: 'hitMonkey',
-        link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
-        info: {
-            service: 'hulu',
-            studio: 'marvel',
-            location: 'Hulu',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'animation',
-                ],
-            },
-            summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
-        },
-        style: {
-            color: '3B347A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '361835',
-            reelgoodLink: 'https://reelgood.com/show/marvels-hitmonkey-2021',
-            imdbID: 'tt9811316',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Fred Tatasciore',
-                char: 'Hit-Monkey',
-            },
-            {
-                actor: 'Jason Sudeikis',
-                char: 'Bryce',
-            },
-            {
-                actor: 'Olivia Munn',
-                char: 'Akiko',
-            },
-            {
-                actor: 'George Takei',
-                char: 'Shinji Yokohama',
-            },
-        ],
-    },
-    {
         name: 'Cowboy Bebop',
         id: 'cowboy',
         link: {
@@ -478,6 +449,127 @@ let movieData1 = [
             subReddit: 'cowboybebop',
         },
     },
+]
+
+
+let soonMovies = [
+    {
+        name: 'How I Met Your Father',
+        id: 'himyf',
+        link: 'https://www.hulu.com/series/how-i-met-your-father-42771fe9-3174-43bc-ab6a-d8c3e618b934',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            date: 'Feb 22, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'romance',
+                ],
+            },
+            summary: "In the near future, Sophie is telling her son the story of how she met his father: a story that catapults us back to the present where Sophie and her close-knit group of friends are in the midst of figuring out who they are, what they want out of life, and how to fall in love in the age of dating apps and limitless options.",
+            tags: [
+                'himym',
+            ]
+        },
+        style: {
+            color: '3d250f',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '401513',
+            reelgoodLink: 'https://reelgood.com/show/how-i-met-your-father-2022',
+            imdbID: 'tt14500082',
+            subReddit: 'HowIMetYourFather',
+        },
+        cast: [
+            {
+                actor: 'Hilary Duff',
+                char: 'Sophie',
+            },
+            {
+                actor: 'Christopher Lowell',
+                char: 'Jesse',
+            },
+            {
+                actor: 'Francia Raisa',
+                char: 'Valentina',
+            },
+            {
+                actor: 'Suraj Sharma',
+                char: 'Sid',
+            },
+            {
+                actor: 'Tom Ainsley',
+                char: 'Charlie',
+            },
+            {
+                actor: 'Tien Tran',
+                char: 'Ellen',
+            },
+        ],
+    },
+]
+
+for (const movie of soonMovies.reverse()) {
+    let soon = (new Date(movie.info.date) > new Date)
+
+    if (soon) {
+        movieData1.unshift(movie)
+    } else {
+        movieData0.unshift(movie)
+    }
+}
+
+
+
+const movieData2 = [
+    {
+        name: 'Soy Georgina',
+        id: 'georgina',
+        link: {
+            netflix: '81423622'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                year: 2022,
+                genre: [
+                    'comedy',
+                    'documentary',
+                ],
+            },
+            summary: "Join Georgina Rodríguez — mom, influencer, businesswoman and Cristiano Ronaldo's partner — in this emotional and in-depth portrait of her daily life.",
+        },
+        style: {
+            color: '8f7d4b',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '768 / 1024',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Fairfax',
         id: 'fairfax',
@@ -488,7 +580,7 @@ let movieData1 = [
             service: 'prime',
             studio: 'prime',
             location: 'Prime Video',
-            date: 'Oct 29, 2021',
+            // date: 'Oct 29, 2021',
             // weekday: '',
             desc: {
                 seasons: 1,
@@ -668,90 +760,6 @@ let movieData1 = [
             // subReddit: 'subreddit',
         },
     },
-]
-
-
-let soonMovies = [
-    {
-        name: 'How I Met Your Father',
-        id: 'himyf',
-        link: 'https://www.hulu.com/series/how-i-met-your-father-42771fe9-3174-43bc-ab6a-d8c3e618b934',
-        info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
-            date: 'Feb 22, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'romance',
-                ],
-            },
-            summary: "In the near future, Sophie is telling her son the story of how she met his father: a story that catapults us back to the present where Sophie and her close-knit group of friends are in the midst of figuring out who they are, what they want out of life, and how to fall in love in the age of dating apps and limitless options.",
-            tags: [
-                'himym',
-            ]
-        },
-        style: {
-            color: '3d250f',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '401513',
-            reelgoodLink: 'https://reelgood.com/show/how-i-met-your-father-2022',
-            imdbID: 'tt14500082',
-            subReddit: 'HowIMetYourFather',
-        },
-        cast: [
-            {
-                actor: 'Hilary Duff',
-                char: 'Sophie',
-            },
-            {
-                actor: 'Christopher Lowell',
-                char: 'Jesse',
-            },
-            {
-                actor: 'Francia Raisa',
-                char: 'Valentina',
-            },
-            {
-                actor: 'Suraj Sharma',
-                char: 'Sid',
-            },
-            {
-                actor: 'Tom Ainsley',
-                char: 'Charlie',
-            },
-            {
-                actor: 'Tien Tran',
-                char: 'Ellen',
-            },
-        ],
-    },
-]
-
-for (const movie of soonMovies.reverse()) {
-    let soon = (new Date(movie.info.date) > new Date)
-
-    if (soon) {
-        movieData1.unshift(movie)
-    } else {
-        movieData0.unshift(movie)
-    }
-}
-
-
-
-const movieData2 = [
     {
         name: 'Snowpiercer',
         id: 'snowpiercer',
@@ -3603,6 +3611,71 @@ const movieData7 = [
 ]
 const movieData8 = [
     {
+        name: 'Superstore',
+        id: 'superstore',
+        link: {
+            netflix: '80061132'
+        },
+        info: {
+            service: 'netflix',
+            // studio: '',
+            location: 'Netflix',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: 2021,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
+        },
+        style: {
+            color: '0070DB',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '295648',
+            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
+            imdbID: 'tt4477976',
+            subReddit: 'superstore',
+        },
+        cast: [
+            {
+                actor: 'Ben Feldman',
+                char: 'Jonah Simms',
+            },
+            {
+                actor: 'America Ferrera',
+                char: 'Amy Sosa',
+            },
+            {
+                actor: 'Mark McKinney',
+                char: 'Glenn Sturgis',
+            },
+            {
+                actor: 'Lauren Ash',
+                char: 'Dina Fox',
+            },
+            {
+                actor: 'Colton Dunn',
+                char: 'Garrett McNeill',
+            },
+            {
+                actor: 'Nichole Sakura',
+                char: 'Cheyenne Lee',
+            },
+            {
+                actor: 'Nico Santos',
+                char: 'Mateo Liwanag',
+            },
+        ],
+    },
+    {
         name: 'The Expanse',
         id: 'expanse',
         link: {
@@ -4049,79 +4122,6 @@ const movieData8 = [
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
-    },
-    {
-        name: 'Blue Mountain State',
-        id: 'bms',
-        link: {
-            primeVideo: 'B08CG43CLR'
-        },
-        info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
-            desc: {
-                seasons: 3,
-                yearStart: 2010,
-                yearEnd: 2011,
-                genre: [
-                    'comedy',
-                    'sport',
-                ],
-            },
-            summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
-            tags: [
-                'bms',
-            ]
-        },
-        style: {
-            color: '7d7787',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'tallest',
-            mobileType: 'png',
-            mobileSize: '9 / 10',
-        },
-        apps: {
-            tvTimeID: '134511',
-            reelgoodLink: 'https://reelgood.com/show/blue-mountain-state-2010',
-            imdbID: 'tt1344204',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Darin Brooks',
-                char: 'Alex Moran',
-            },
-            {
-                actor: 'Alan Ritchson',
-                char: 'Thad Castle',
-            },
-            {
-                actor: 'Chris Romano',
-                char: 'Sammy Cacciatore',
-            },
-            {
-                actor: 'Ed Marino',
-                char: 'Coach Marty Daniels',
-            },
-            {
-                actor: 'Denise Richards',
-                char: 'Debra',
-            },
-            {
-                actor: 'Frankie Shaw',
-                char: 'Mary Jo Cacciatore',
-            },
-            {
-                actor: 'Sam Jones III',
-                char: 'Craig Shilo',
-            },
-            {
-                actor: 'Page Kennedy',
-                char: 'Radon Randell',
-            },
-        ],
     },
     {
         name: 'White Collar',
