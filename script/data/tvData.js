@@ -110,51 +110,6 @@ let movieData0 = [
         ],
     },
     {
-        name: 'Reacher',
-        id: 'reacher',
-        link: {
-            primeVideo: 'B09ML341D8'
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "Jack Reacher was arrested for murder and now the police need his help. Based on the books by Lee Child.",
-        },
-        style: {
-            color: colorData.fluent['green20'],
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '366924',
-            reelgoodLink: 'https://reelgood.com/show/reacher-2022',
-            imdbID: 'tt9288030',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Alan Ritchson',
-                char: 'Jack Reacher',
-            },
-        ],
-    },
-    {
         name: 'Disenchantment',
         id: 'disenchant',
         link: {
@@ -517,6 +472,42 @@ let soonMovies = [
                 char: 'Ellen',
             },
         ],
+    },
+    {
+        name: 'Snowfall',
+        id: 'snowfall',
+        link: 'https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            date: '23 Feb, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 5,
+                yearStart: 2017,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "Snowfall is a one-hour drama set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it.",
+        },
+        style: {
+            color: colorData['fluent'].cyanBlue20,
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '328092',
+            reelgoodLink: 'https://reelgood.com/show/snowfall-2017',
+            imdbID: 'tt6439752',
+            subReddit: 'SnowFall',
+        },
     },
 ]
 
@@ -2590,42 +2581,6 @@ const movieData6 = [
         },
     },
     {
-        name: 'Snowfall',
-        id: 'snowfall',
-        link: 'https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6',
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            date: '23 Feb, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 5,
-                yearStart: 2017,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "Snowfall is a one-hour drama set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it.",
-        },
-        style: {
-            color: '1A114D',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '328092',
-            reelgoodLink: 'https://reelgood.com/show/snowfall-2017',
-            imdbID: 'tt6439752',
-            subReddit: 'SnowFall',
-        },
-    },
-    {
         name: 'Atlanta',
         id: 'atlanta',
         link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
@@ -3295,6 +3250,51 @@ const movieData7 = [
             imdbID: 'tt2442560',
             // subReddit: null,
         },
+    },
+    {
+        name: 'Reacher',
+        id: 'reacher',
+        link: {
+            primeVideo: 'B09ML341D8'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "Jack Reacher was arrested for murder and now the police need his help. Based on the books by Lee Child.",
+        },
+        style: {
+            color: colorData.fluent['green20'],
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '366924',
+            reelgoodLink: 'https://reelgood.com/show/reacher-2022',
+            imdbID: 'tt9288030',
+            subReddit: 'JackReacher',
+        },
+        cast: [
+            {
+                actor: 'Alan Ritchson',
+                char: 'Jack Reacher',
+            },
+        ],
     },
     {
         name: 'Rick and Morty',

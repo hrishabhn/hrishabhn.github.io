@@ -6,7 +6,9 @@ const colorData = {
     },
     'fluent': {
         red: 'd13438',
-        green20: '0b6a0b'
+        green20: '0b6a0b',
+        cyanBlue20: '004e8c',
+
     },
     'onedrive': '094AB2',
     'ibooks': 'FC880F',
