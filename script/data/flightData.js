@@ -360,7 +360,7 @@ let flightData = {
         },
         duration: '2h 25m',
         start: 'Sun, 20 Feb',
-        date: '20 Feb, 2022',
+        date: '20 Feb, 2022 16:55:00',
         seat: '99Z',
         airline: airlineData['british'],
         aircraft: aircraftData['a320neo'],

@@ -164,3 +164,12 @@ function flightDetailCardExtras(flight) {
 
     return tray
 }
+
+function firstFlight() {
+    for (const key in flightData) {
+        let future = new Date(flightData[key].date) > new Date
+        if (future) {
+            return flightData[key]
+        }
+    }
+}

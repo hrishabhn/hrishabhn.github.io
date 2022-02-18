@@ -155,7 +155,7 @@ function refreshTasks() {
 }
 
 function flightCountdownCard(flightKey) {
-    const flight = flightData[flightKey]
+    const flight = firstFlight()
 
     let card = document.createElement('div')
     card.classList = 'flight-countdown card-item clickable'
