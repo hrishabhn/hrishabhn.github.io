@@ -1,8 +1,7 @@
 let events_all = [
 {"location":"10.2.11","end":"2022-02-21T14:00:00+01:00","start":"2022-02-21T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp.60,61 y 62"},
 {"location":"6.1.06","end":"2022-02-21T16:00:00+01:00","start":"2022-02-21T14:30:00+01:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
-{"location":"","end":"2022-02-21T23:15:00+01:00","start":"2022-02-21T21:15:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"SAIL Study"},
-{"location":"https:\/\/purdue-edu.zoom.us\/j\/98610821425?pwd=UWQ5Nkwrd0dxUmtDZ1hMTDlXQzFjdz09","end":"2022-02-21T22:15:00+01:00","start":"2022-02-21T21:15:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"SAIL Meeting"},
+{"location":"","end":"2022-02-21T23:30:00+01:00","start":"2022-02-21T21:30:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"SAIL Study"},
 {"location":"2.3.D04","end":"2022-02-22T11:00:00+01:00","start":"2022-02-22T09:00:00+01:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
 {"location":"2.3.B03","end":"2022-02-22T17:00:00+01:00","start":"2022-02-22T15:00:00+01:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Fundamentos de gestión empresarial, grupo 18"},
 {"location":"https:\/\/purdue-edu.zoom.us\/j\/98610821425?pwd=UWQ5Nkwrd0dxUmtDZ1hMTDlXQzFjdz09","end":"2022-02-22T21:00:00+01:00","start":"2022-02-22T20:00:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"SAIL Meeting"},
