@@ -70,6 +70,3 @@ for (let day of spendingData.days) {
     day.total = total
     spendingData.weekTotal += total
 }
-
-
-console.log(spendingData)
