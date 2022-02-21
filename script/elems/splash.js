@@ -29,7 +29,7 @@ function splashLoad() {
 
 function createSpotlight() {
     let tray = document.createElement('div')
-    tray.classList = 'spotlight-tray limit'
+    tray.classList = 'spotlight-tray limit layer-1 card-shadow'
 
 
 
@@ -68,8 +68,9 @@ function widgetCard() {
     card.classList = 'limit'
 
     card.append(calendarCard())
-    card.append(worldClockCard())
-    card.append(flightCountdownCard('mad-lhr'))
+    card.append(budgetCard())
+    // card.append(worldClockCard())
+    // card.append(flightCountdownCard('mad-lhr'))
     card.append(tasksCard())
 
     return card
@@ -78,7 +79,7 @@ function widgetCard() {
 function tasksCard() {
     let tasksCard = document.createElement('div')
     tasksCard.id = 'tasks-card'
-    tasksCard.classList = 'card-item'
+    tasksCard.classList = 'card-item layer-1 card-shadow'
 
     if (getCookie('task-list')) {
         var taskData = JSON.parse(getCookie('task-list'))

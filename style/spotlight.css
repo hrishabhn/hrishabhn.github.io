@@ -62,14 +62,14 @@
     border-radius: 10px;
     justify-content: flex-start;
 
-    background-color: var(--white-05);
+    /* background-color: var(--white-05); */
 }
 
-@media screen and (prefers-color-scheme: light) {
+/* @media screen and (prefers-color-scheme: light) {
     .spotlight-tray {
         background-color: var(--dark-layer-1-05);
     }
-}
+} */
 
 .spotlight-container {
     width: 100%;
@@ -120,24 +120,24 @@
 
 #splash #widget-card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr;
     column-gap: 10px;
 
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     justify-content: flex-start;
 }
 #splash #widget-card .card-item{
-    background-color: var(--white-05);
+    /* background-color: var(--white-05); */
     border-radius: 12px;
     width: 100%;
     height: 100%;
 }
 
-@media screen and (prefers-color-scheme: light) {
+/* @media screen and (prefers-color-scheme: light) {
     #splash #widget-card .card-item {
         background-color: var(--dark-layer-1-05);
     }
-}
+} */
 
 
 #splash #widget-card #tasks-card {
@@ -362,4 +362,81 @@
 #splash #widget-card .world-clock .hline{
     width: calc(100% - 15px);
     margin-left: 15px;
+}
+
+
+.budget-card{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 15px;
+}
+
+.budget-card .title{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.budget-card .spent{
+    font-family: ui-rounded;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 2px 0;
+}
+.budget-card .available{
+    font-family: ui-rounded;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.budget-card .chart{
+    width: 100%;
+    flex-grow: 1;
+    padding: 10px 0 5px;
+}
+
+.budget-card .chart .col{
+    height: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.budget-card .chart .col p{
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+    font-family: ui-rounded;
+}
+
+.budget-card .chart .col .bar{
+    width: 100%;
+    flex-grow: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: flex-end;
+    min-height: 70px;
+}
+
+.budget-card .chart .col .bar .bar-body{
+    width: 100%;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.budget-card .chart .col .bar .bar-body .box{
+    width: 100%;
+}
+
+.budget-card .icon-tray{
+    width: 100%;
+    margin: 5px 0;
+}
+
+.budget-card .icon-tray .icon{
+    height: 22px;
+    width: 22px;
+    padding: 5px;
+    border-radius: 100px;
+    fill: white;
 }

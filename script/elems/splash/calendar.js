@@ -1,7 +1,7 @@
 function calendarCard() {
     // base card with header
     let card = document.createElement('div')
-    card.classList = 'cal-card card-item'
+    card.classList = 'cal-card card-item layer-1 card-shadow'
 
     card.innerHTML = `
     <p class="day red-fg">${processDay(new Date().getDay(), 'long').toUpperCase()}</p>
