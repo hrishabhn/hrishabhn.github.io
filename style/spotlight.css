@@ -406,6 +406,8 @@
     font-weight: 500;
     opacity: 0.5;
     font-family: ui-rounded;
+    text-transform: uppercase;
+    width: 12px;
 }
 
 .budget-card .chart .col .bar{

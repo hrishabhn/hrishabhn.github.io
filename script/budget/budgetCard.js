@@ -26,7 +26,7 @@ function budgetCardChart() {
     let chart = document.createElement('div')
     chart.classList = 'chart'
 
-    for (let i = 0; i < 7; i ++) {
+    for (let i = 0; i < 7; i++) {
         let col = document.createElement('div')
         col.classList = 'col'
 
@@ -43,7 +43,7 @@ function budgetCardChart() {
             box.classList = 'box'
             box.classList.add(spendingCategories[cat].col)
             let boxHeight = (spendingData.days[i].spend[cat] / spendingData.days[i].total) * 100
-            box.style.setProperty('height',`${boxHeight}%`)
+            box.style.setProperty('height', `${boxHeight}%`)
 
             barBody.append(box)
         }
@@ -51,8 +51,10 @@ function budgetCardChart() {
         bar.append(barBody)
         col.append(bar)
         col.append(spacerElement(5))
-        col.append(pElement('M'))
+        col.append(pElement(processDay(((i + 1) % 7), 'letter')))
 
+        console.log()
+        console.log((i + 1) % 7)
 
         chart.append(col)
         chart.append(growElement())

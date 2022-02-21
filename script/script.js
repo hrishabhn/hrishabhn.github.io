@@ -65,6 +65,8 @@ function processDay(dayIndex, type) {
         var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
     } else if (type == 'long') {
         var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+    } else if (type == 'letter') {
+        var days = ['s', 'm', 't', 'w', 't', 'f', 's']
     }
 
     return days[dayIndex]
