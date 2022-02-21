@@ -20,6 +20,16 @@ const bookData0 = [
         style: 'orange',
     },
     {
+        name: "Stolen Focus",
+        id: 'focus',
+        link: 'kindle://',
+        author: 'Johann Hari',
+        coverType: 'jpg',
+        progress: 'NEW',
+        format: 'EBook',
+        style: 'secondary',
+    },
+    {
         name: '12 Rules for Life',
         id: '12rules',
         link: 'ibooks://',
