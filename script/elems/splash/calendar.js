@@ -107,7 +107,7 @@ function futureCardElem(data) {
 }
 
 function eventCardElem(event) {
-    let eventCard = document.createElement('div')
+    let eventCard = document.createElement('a')
     eventCard.classList = 'event clickable'
     eventCard.style.setProperty('--col', `#${event.color}`)
     if (event.hasStarted) { eventCard.classList.add('started') }
@@ -126,6 +126,7 @@ function eventCardElem(event) {
 
     if (event.link) {
         eventCard.href = event.link
+        eventCard.style.setProperty('cursor', 'pointer')
     } else if (event.trigger) {
         eventCard.onclick = function () { event.trigger() }
         eventCard.style.setProperty('cursor', 'pointer')

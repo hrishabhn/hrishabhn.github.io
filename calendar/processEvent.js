@@ -26,6 +26,7 @@ for (const event of events_all) {
     if (eventNameData[event.name]) { event.name = eventNameData[event.name] }
 
     const eventTrigger = {
+        'SAIL Study': function () { focusData[1]['sail'].trigger() },
         'Industrial Organisation': function () { focusData[1]['indorg'].trigger() },
         'Financial Economics': function () { focusData[1]['finecon'].trigger() },
         'Engineering Management': function () { focusData[1]['manage'].trigger() },
@@ -33,7 +34,13 @@ for (const event of events_all) {
         'Gym': function () { focusData[2]['workout'].trigger() },
     }
 
-    if (eventTrigger[event.name]) {
+    if (event.location.includes('https')) {
+        if (event.location.includes('zoom')) {
+            event.icon = iconData['video-call']
+        }
+
+        event.link = event.location
+    } else if (eventTrigger[event.name]) {
         event.trigger = function () { eventTrigger[event.name]() }
     }
 
