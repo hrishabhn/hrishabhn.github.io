@@ -231,6 +231,7 @@
     font-weight: 500;
 
     -webkit-backdrop-filter: blur(25px) brightness(0.5) saturate(2);
+    color: white;
     /* background-color: var(--white-20); */
     /* box-shadow: 0 0px 2px 0px var(--black-50); */
 }

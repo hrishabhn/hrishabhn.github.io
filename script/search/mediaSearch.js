@@ -249,6 +249,10 @@ function searchBookPodRow(results, title, type) {
         card.href = processLink(item.link)
         card.target = '_blank'
 
+        if ((item.progress) && (item.progress != 'NEW')) {
+            card.append(mediaTimeElem(item.progress))
+        }
+
         tray.append(card)
 
         if (k < results.length - 1) {
