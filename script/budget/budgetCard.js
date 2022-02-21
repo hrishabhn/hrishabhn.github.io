@@ -53,9 +53,6 @@ function budgetCardChart() {
         col.append(spacerElement(5))
         col.append(pElement(processDay(((i + 1) % 7), 'letter')))
 
-        console.log()
-        console.log((i + 1) % 7)
-
         chart.append(col)
         chart.append(growElement())
     }

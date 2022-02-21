@@ -86,7 +86,7 @@ function calendarCard() {
 
 
 function futureCardElem(data) {
-    console.log(data)
+    // console.log(data)
 
     let card = document.createElement('div')
     card.classList = 'event future'
