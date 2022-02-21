@@ -1,4 +1,13 @@
 const commonApps = {
+    finder: function (link) {
+        return {
+            name: 'Folder',
+            link: link,
+            desc: 'Files',
+            thumb: 'files.jpeg',
+            style: 'blue',
+        }
+    },
     onedrive: function (link) {
         return {
             name: 'OneDrive',
@@ -300,6 +309,13 @@ const appData = {
             accent: '00AAF0'
         },
         {
+            name: 'Flighty',
+            link: 'flighty://',
+            desc: 'Flight Log & Status',
+            thumb: 'flighty.jpeg',
+            style: 'secondary'
+        },
+        {
             name: 'IB 3164',
             trigger: function () { flightData['mad-lhr'].detail() },
             desc: 'MAD &#8594 LHR',
@@ -369,6 +385,16 @@ const appData = {
         {
             name: 'r/iOSBeta',
             link: 'https://www.reddit.com/r/iOSBeta',
+            desc: 'iOS Beta',
+            thumb: 'reddit.jpeg',
+            accent: colorData['reddit'],
+            tags: [
+                'reddit',
+            ],
+        },
+        {
+            name: 'r/macOSBeta',
+            link: 'https://www.reddit.com/r/macOSBeta',
             desc: 'iOS Beta',
             thumb: 'reddit.jpeg',
             accent: colorData['reddit'],
@@ -452,6 +478,7 @@ const appData = {
     'indorg': [
         commonApps.aula('123832'),
         commonApps.syllabus('indorg'),
+        commonApps.finder('shortcuts://run-shortcut?name=Industrial%20Organisation%20Folder'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Industrial%20Organisation'),
         commonApps.notion('https://www.notion.so/Industrial-Organisation-6f9a042e98f6458a9f509689c2025571'),
     ],
