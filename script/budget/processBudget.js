@@ -30,6 +30,10 @@ const spendingCategories = {
         col: 'green',
         icon: iconData['basket'],
     },
+    'Health': {
+        col: 'pink',
+        icon: iconData['heart'],
+    },
 }
 
 

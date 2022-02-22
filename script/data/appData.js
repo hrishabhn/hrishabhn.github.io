@@ -497,6 +497,7 @@ const appData = {
     ],
     'controls': [
         commonApps.aula('127222'),
+        commonApps.syllabus('controls'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Controls'),
         commonApps.notion('https://www.notion.so/Controls-a33110b68afe4e468d12bbb96b1e31dd'),
         {
