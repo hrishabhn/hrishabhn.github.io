@@ -80,12 +80,12 @@ let movieData0 = [
             ]
         },
         style: {
-            color: '7d7787',
+            color: colorData.fluent.blue10,
             posterType: 'webp',
             titleType: 'png',
-            titleSize: 'tallest',
+            titleSize: 'mid',
             mobileType: 'png',
-            mobileSize: '9 / 10',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '134511',

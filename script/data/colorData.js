@@ -8,7 +8,8 @@ const colorData = {
         red: 'd13438',
         green20: '0b6a0b',
         cyanBlue20: '004e8c',
-
+        pinkRed10: '750b1c',
+        blue10: '4f6bed',
     },
     'onedrive': '094AB2',
     'ibooks': 'FC880F',
