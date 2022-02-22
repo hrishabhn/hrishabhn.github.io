@@ -509,6 +509,44 @@ let soonMovies = [
             subReddit: 'SnowFall',
         },
     },
+    {
+        name: 'Peaky Blinders',
+        id: 'peaky',
+        link: {
+            netflix: '80002479'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            date: '27 Feb 2022',
+            // weekday: '',
+            desc: {
+                seasons: 6,
+                yearStart: 2013,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby, a crime boss set on moving up in the world no matter the cost.",
+        },
+        style: {
+            color: '493c35',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            // mobileType: 'jpg',
+            // mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/peaky-blinders-2013',
+            imdbID: 'tt2442560',
+            // subReddit: 'subreddit',
+        },
+    },
 ]
 
 for (const movie of soonMovies.reverse()) {
@@ -3225,30 +3263,6 @@ const movieData7 = [
             // reelgoodLink: 'link',
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Peaky Blinders',
-        id: 'peaky',
-        link: 'https://www.netflix.com/title/80002479',
-        info: {
-            // service: '',
-            // studio: '',
-            location: 'Coming Soon',
-            description: 'Crime &#149 Drama &#149 5 Seasons &#149 2013 - Present',
-            // summary: "summary",
-        },
-        style: {
-            color: '493c35',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/show/peaky-blinders-2013',
-            imdbID: 'tt2442560',
-            // subReddit: null,
         },
     },
     {
