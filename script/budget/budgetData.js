@@ -3,4 +3,7 @@ let budgetData = [
     { "amount": 15.7, "name": "Ramen", "category": "Grocery", "date": "2022-02-21T20:07:10+01:00" },
     { "amount": 11.08, "name": "Five Guys", "category": "Food", "date": "2022-02-21T20:07:43+01:00" },
     { "amount": 11.27, "name": "Ear Plugs", "category": "Health", "date": "2022-02-22T00:58:16+01:00" },
+
+{"amount":8.5,"name":"Breakfast","category":"Food","date":"2022-02-22T12:12:19+01:00"},
+
 ]
