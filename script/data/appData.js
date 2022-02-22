@@ -50,6 +50,43 @@ const commonApps = {
             style: 'red',
         }
     },
+
+    reddit: function (sub) {
+        return {
+            name: `r/${sub}`,
+            link: `https://www.reddit.com/r/${sub}`,
+            desc: 'Subreddit',
+            thumb: 'reddit.jpeg',
+            accent: colorData['reddit'],
+            tags: [
+                'reddit',
+            ],
+        }
+    },
+    twitter: function (handle, desc) {
+        return {
+            name: `@${handle}`,
+            link: `https://twitter.com/${handle}`,
+            desc: desc,
+            thumb: 'twitter.jpeg',
+            accent: colorData['twitter'],
+            tags: [
+                'twitter',
+            ],
+        }
+    },
+    youtube: function (name, link, desc) {
+        return {
+            name: name,
+            link: link,
+            desc: desc,
+            thumb: 'youtube.jpeg',
+            accent: colorData['google'].red,
+            tags: [
+                'youtube',
+            ],
+        }
+    },
 }
 
 const appData = {
@@ -239,6 +276,7 @@ const appData = {
             thumb: 'prime.jpeg',
             accent: null,
         },
+        commonApps.youtube('YouTube', 'https://www.youtube.com','Watch Videos')
     ],
     'read': [
         {
@@ -362,46 +400,10 @@ const appData = {
         },
     ],
     'profiles': [
-        {
-            name: '@tripperhead',
-            link: 'https://twitter.com/tripperhead',
-            desc: 'HK COVID-19 News',
-            thumb: 'twitter.jpeg',
-            accent: colorData['twitter'],
-            tags: [
-                'twitter',
-            ],
-        },
-        {
-            name: 'r/Purdue',
-            link: 'https://www.reddit.com/r/Purdue',
-            desc: 'Purdue Subreddit',
-            thumb: 'reddit.jpeg',
-            accent: colorData['reddit'],
-            tags: [
-                'reddit',
-            ],
-        },
-        {
-            name: 'r/iOSBeta',
-            link: 'https://www.reddit.com/r/iOSBeta',
-            desc: 'iOS Beta',
-            thumb: 'reddit.jpeg',
-            accent: colorData['reddit'],
-            tags: [
-                'reddit',
-            ],
-        },
-        {
-            name: 'r/macOSBeta',
-            link: 'https://www.reddit.com/r/macOSBeta',
-            desc: 'iOS Beta',
-            thumb: 'reddit.jpeg',
-            accent: colorData['reddit'],
-            tags: [
-                'reddit',
-            ],
-        },
+        commonApps.twitter('tripperhead', 'HK COVID-19 News'),
+        commonApps.reddit('Purdue'),
+        commonApps.reddit('iOSBeta'),
+        commonApps.reddit('macOSBeta'),
     ],
     'design': [
         {
@@ -500,13 +502,7 @@ const appData = {
         commonApps.syllabus('controls'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Controls'),
         commonApps.notion('https://www.notion.so/Controls-a33110b68afe4e468d12bbb96b1e31dd'),
-        {
-            name: 'Control Systems',
-            link: 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo',
-            desc: 'YouTube Lectures',
-            thumb: 'youtube.jpeg',
-            accent: colorData['google'].red,
-        },
+        commonApps.youtube('Control Systems', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo', 'YouTube Lectures'),
         // https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo
     ],
 
