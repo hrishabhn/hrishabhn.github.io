@@ -1,6 +1,7 @@
 function budgetCard() {
     let card = document.createElement('div')
-    card.classList = 'budget-card card-item layer-1 card-shadow'
+    card.classList = 'budget-card card-item layer-1 clickable-o card-shadow'
+    card.onclick = function(e) {contextModalShow(budgetMenuData, e)}
 
     let title = pElement(`This Week's Spending:`)
     title.classList = 'title'
@@ -16,7 +17,6 @@ function budgetCard() {
     card.append(avail)
 
     let chart = budgetCardChart()
-    chart.onclick = function(e) {contextModalShow(budgetMenuData, e)}
     card.append(chart)
     card.append(budgetCardIcons())
 
@@ -57,7 +57,7 @@ function budgetCard() {
 
 function budgetCardChart() {
     let chart = document.createElement('div')
-    chart.classList = 'chart clickable-o'
+    chart.classList = 'chart'
 
     for (let i = 0; i < 7; i++) {
         let col = document.createElement('div')

@@ -2,7 +2,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 12px 15px;
-    cursor: default;
+    cursor: pointer;
 }
 
 .budget-card .title {
@@ -29,7 +29,6 @@
     width: 100%;
     flex-grow: 1;
     padding: 10px 0 5px;
-    cursor: pointer;
 }
 
 .budget-card .chart .col {
