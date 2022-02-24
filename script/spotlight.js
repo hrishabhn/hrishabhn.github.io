@@ -272,20 +272,9 @@ function textboxBase(name, desc) {
     let textbox = document.createElement('div')
     textbox.classList = 'textbox'
 
-    if (name) {
-        let p1 = document.createElement('p')
-        p1.classList = 'name'
-        p1.innerHTML = name
-        textbox.append(p1)
-    }
-
-    if (desc) {
-        let p2 = document.createElement('p')
-        p2.classList = 'desc'
-        p2.innerHTML = desc
-        textbox.append(p2)
-    }
-
+    if (name) textbox.append(nameElement(name))
+    if (desc) textbox.append(descElement(desc))
+    
     return textbox
 }
 
