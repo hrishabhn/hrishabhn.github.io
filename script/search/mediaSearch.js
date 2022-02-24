@@ -122,14 +122,6 @@ function searchMoviesRowBig(results, title) {
             card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
         }
 
-
-        // let playTray = playTrayBase()
-        // textbox.append(playTray)
-        // if (movie.link) { playTray.href = processLink(movie.link) }
-        // playTray.target = '_blank'
-
-
-
         if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
         tray.append(card)

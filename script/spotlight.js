@@ -274,61 +274,10 @@ function textboxBase(name, desc) {
 
     if (name) textbox.append(nameElement(name))
     if (desc) textbox.append(descElement(desc))
-    
+
     return textbox
 }
 
-
-
-
-// function boxBase(color, id) {
-
-//     if (!color) { var color = 'ffffff' }
-
-//     let box = document.createElement('div')
-//     box.classList = 'result-box'
-//     box.innerHTML = `<div class="back" style="--col: #${color};--col40: #${color}66;--col60: #${color}99;"></div>`
-//     box.id = id
-//     box.onmouseover = function () { mouseHover(id) }
-//     return box
-// }
-
-function playTrayBase() {
-    let playTray = document.createElement('a')
-    playTray.classList = 'play-tray clickable-o'
-
-    let icon = document.createElement('div')
-    icon.classList = 'icon play'
-    icon.innerHTML = iconData['play']
-    playTray.append(icon)
-
-    let text = document.createElement('p')
-    text.innerHTML = 'Watch'
-    playTray.append(text)
-
-
-    playTray.append(growElement())
-
-
-
-
-    return playTray
-
-}
-
-
-
-
-
-function mediaThumbAppIcon(app) {
-    let icon = document.createElement('div')
-    icon.classList = 'item'
-    icon.id = 'serv'
-    icon.style.setProperty('background-image', `url(./appThumb/${app}.jpeg)`)
-
-
-    return icon
-}
 
 document.addEventListener('keyup', keyPress)
 
