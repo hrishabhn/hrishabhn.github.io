@@ -32,14 +32,21 @@ function contextModalShow(data, e) {
     let menu = document.getElementById('context-menu')
     removeAllChildNodes(menu)
 
-    console.log(data)
     for (const tray of data) {
-        for (const item of tray) {
-            menu.append(menuItemElem(item))
-            menu.append(hlineElement())
+        if (tray[0]) {
+            for (const item of tray) {
+                menu.append(menuItemElem(item))
+                menu.append(hlineElement())
+            }
+            menu.lastChild.remove()
+            menu.append(dividerElem())
+        } else if (tray.name) {
+            let title = 
+            menu.append(titleElement(tray.name))
+            menu.append(hlineListElement(12))
         }
-        menu.lastChild.remove()
-        menu.append(dividerElem())
+
+
     }
     menu.lastChild.remove()
 

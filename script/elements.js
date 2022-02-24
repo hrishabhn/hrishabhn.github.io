@@ -66,14 +66,10 @@ function hlineElement() {
     hline.classList = 'hline'
     return hline
 }
-function hlineContentElement() {
-    var hline = document.createElement('div')
-    hline.classList = 'hline-content'
-    return hline
-}
-function hlineListElement() {
+function hlineListElement(left) {
     var hline = document.createElement('div')
     hline.classList = 'hline list'
+    hline.style.setProperty('--left', `${left}px`)
     return hline
 }
 
@@ -145,11 +141,6 @@ function colRender(content) {
     return col
 }
 
-function titleElement() {
-    let title = document.createElement('div')
-    title.classList = 'title'
-    return title
-}
 
 function bgElement(col) {
     let bg = document.createElement('div')
@@ -163,6 +154,12 @@ function gradElement() {
     return grad
 }
 
+function titleElement(title) {
+    let elem = document.createElement('p')
+    elem.classList = 'title'
+    elem.innerHTML = title
+    return elem
+}
 
 function iconElement(svgStr) {
     let icon = document.createElement('div')

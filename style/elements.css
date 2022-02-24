@@ -31,17 +31,10 @@
 
     background-color: var(--white-10);
 }
-.hline.list{
-    width: calc(100% - 58px);
-    margin-left: 58px;
-}
-.hline-content{
-    flex-shrink: 0;
-    height: 1px;
-    width: calc(100% - 40px);
-    border-radius: 5px;
 
-    background-color: var(--white-10);
+.hline.list{
+    width: calc(100% - var(--left));
+    margin-left: var(--left);
 }
 .hscroll{
     flex-direction: row;
@@ -196,9 +189,6 @@
     .hline, .vline{
         background-color: var(--black-10);
     }
-    .hline-content{
-        background-color: var(--black-10);
-    }
     .image-border{
         border-color: #ccc;
     }
@@ -216,9 +206,6 @@
     .page-width{
         width: calc(100% - 30px);
         margin: 0;
-    }
-    .hline-content{
-        width: calc(100% - 30px);
     }
 }
 

@@ -20,7 +20,10 @@ function budgetCard() {
 
     let budgetMenuData = []
     for (const day of spendingData.days) {
-        console.log(day.date)
+        budgetMenuData.push({
+            type: 'title',
+            name: processDay(day.date.getDay(), 'short'),
+        })
 
         let budgetMenuDayData = []
         for (const item of day.trans) {
@@ -32,12 +35,12 @@ function budgetCard() {
                 data: {
                     value: `€${item.amount}`,
                 },
-    
             })
         }
+        budgetMenuDayData.reverse()
         budgetMenuData.push(budgetMenuDayData)
     }
-
+    budgetMenuData.reverse()
 
 
     card.onclick = function (e) {
