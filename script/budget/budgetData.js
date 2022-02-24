@@ -9,4 +9,5 @@ let budgetData = [
     { "amount": 20.53, "name": "Dia", "category": "Grocery", "date": "2022-02-23T11:55:07+01:00" },
     { "amount": 7.49, "name": "Jolibee", "category": "Food", "date": "2022-02-23T18:12:29+01:00" },
     { "amount": 19, "name": "Dubliners", "category": "Drinks", "date": "2022-02-23T23:09:32+01:00" },
+    { "amount": 11, "name": "Thai Food", "category": "Food", "date": "2022-02-24T19:04:57+01:00" },
 ]

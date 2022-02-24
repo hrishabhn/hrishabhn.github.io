@@ -45,7 +45,7 @@ function budgetCard() {
             budgetMenuData.push(budgetMenuDayData)
             budgetMenuData.push({
                 type: 'title',
-                name: processDay(day.date.getDay(), 'long'),
+                name: (day.date.getDate() == new Date().getDate()) ? 'Today' : processDay(day.date.getDay(), 'long'),
             })
         }
     }
