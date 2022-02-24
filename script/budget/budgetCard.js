@@ -1,6 +1,6 @@
 function budgetCard() {
     let card = document.createElement('div')
-    card.classList = 'budget-card card-item layer-1 clickable-o card-shadow'
+    card.classList = 'budget-card card-item layer-1 card-shadow'
 
     let title = pElement(`This Week's Spending:`)
     title.classList = 'title'
@@ -15,37 +15,41 @@ function budgetCard() {
     card.append(spent)
     card.append(avail)
 
-    card.append(budgetCardChart())
+    let chart = budgetCardChart()
+    chart.onclick = function(e) {contextModalShow(budgetMenuData, e)}
+    card.append(chart)
     card.append(budgetCardIcons())
 
     let budgetMenuData = []
     for (const day of spendingData.days) {
-        budgetMenuData.push({
-            type: 'title',
-            name: processDay(day.date.getDay(), 'short'),
-        })
+        if (day.trans.length) {
 
-        let budgetMenuDayData = []
-        for (const item of day.trans) {
-            budgetMenuDayData.push({
-                type: 'icon',
-                name: item.name,
-                icon: spendingCategories[item.category].icon,
-                style: spendingCategories[item.category].col,
-                data: {
-                    value: `€${item.amount}`,
-                },
+            
+
+            let budgetMenuDayData = []
+            
+            for (const item of day.trans) {
+                budgetMenuDayData.push({
+                    type: 'icon',
+                    name: item.name,
+                    icon: spendingCategories[item.category].icon,
+                    style: spendingCategories[item.category].col,
+                    data: {
+                        value: `€${item.amount}`,
+                    },
+                })
+            }
+
+
+            budgetMenuDayData.reverse()
+            budgetMenuData.push(budgetMenuDayData)
+            budgetMenuData.push({
+                type: 'title',
+                name: processDay(day.date.getDay(), 'long'),
             })
         }
-        budgetMenuDayData.reverse()
-        budgetMenuData.push(budgetMenuDayData)
     }
     budgetMenuData.reverse()
-
-
-    card.onclick = function (e) {
-        contextModalShow(budgetMenuData, e)
-    }
 
     return card
 }
@@ -53,7 +57,7 @@ function budgetCard() {
 
 function budgetCardChart() {
     let chart = document.createElement('div')
-    chart.classList = 'chart'
+    chart.classList = 'chart clickable-o'
 
     for (let i = 0; i < 7; i++) {
         let col = document.createElement('div')
