@@ -34,7 +34,7 @@ body{
 
 
 .layer-1-blur{
-    background-color: var(--dark-layer-1-80);
+    background-color: var(--dark-layer-1-50);
     -webkit-backdrop-filter: blur(25px);
 }
 
@@ -82,7 +82,7 @@ a.layer-fg{
 
 
     .layer-1-blur{
-        background-color: var(--white-80);
+        background-color: var(--white-50);
     }
 
 

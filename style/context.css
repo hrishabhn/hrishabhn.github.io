@@ -22,10 +22,11 @@
 #context-menu {
     position: absolute;
     flex-direction: column;
+    justify-content: flex-start;
     min-width: 200px;
     border-radius: 12px;
     box-shadow: 0 10px 30px -5px var(--black-80);
-    overflow: hidden;
+    overflow-y: scroll;
     transform-origin: top left;
 }
 

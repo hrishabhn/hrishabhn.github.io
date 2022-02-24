@@ -53,7 +53,8 @@ for (let trans of budgetData) {
     }
 }
 
-for (let day of spendingData.days) {
+for (let i = 0; i < spendingData.days.length; i++) {
+    let day = spendingData.days[i]
     let categorySpend = {}
     let total = 0
 
@@ -70,8 +71,8 @@ for (let day of spendingData.days) {
         }
     }
     total = parseFloat(total.toFixed(12))
-    
     day.spend = categorySpend
     day.total = total
+    day.date = new Date(thisMon().getTime() + (1000 * 60 * 60 * 24 * i))
     spendingData.weekTotal += total
 }

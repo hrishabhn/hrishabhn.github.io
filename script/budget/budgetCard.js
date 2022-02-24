@@ -19,20 +19,29 @@ function budgetCard() {
     card.append(budgetCardIcons())
 
     let budgetMenuData = []
-    for (const item of budgetData) {
-        budgetMenuData.push({
-            type: 'icon',
-            name: item.name,
-            icon: spendingCategories[item.category].icon,
-            style: spendingCategories[item.category].col,
-            data: {
-                value: `€${item.amount}`,
-            },
-        })
+    for (const day of spendingData.days) {
+        console.log(day.date)
+
+        let budgetMenuDayData = []
+        for (const item of day.trans) {
+            budgetMenuDayData.push({
+                type: 'icon',
+                name: item.name,
+                icon: spendingCategories[item.category].icon,
+                style: spendingCategories[item.category].col,
+                data: {
+                    value: `€${item.amount}`,
+                },
+    
+            })
+        }
+        budgetMenuData.push(budgetMenuDayData)
     }
 
+
+
     card.onclick = function (e) {
-        contextModalShow([budgetMenuData], e)
+        contextModalShow(budgetMenuData, e)
     }
 
     return card

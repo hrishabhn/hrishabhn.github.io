@@ -65,7 +65,7 @@ function contextModalShow(data, e) {
     let overflowX = (windowWidth - (x + menuWidth)) < 0
 
     if (overflowY) {
-        menu.style.removeProperty('top')
+        // menu.style.removeProperty('top')
         menu.style.setProperty('bottom', '10px')
     }
     if (overflowX) {
