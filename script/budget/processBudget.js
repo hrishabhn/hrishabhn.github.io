@@ -69,6 +69,7 @@ for (let day of spendingData.days) {
             spendingData.maxDaily = total
         }
     }
+    total = parseFloat(total.toFixed(12))
     
     day.spend = categorySpend
     day.total = total

@@ -18,6 +18,21 @@ function budgetCard() {
     card.append(budgetCardChart())
     card.append(budgetCardIcons())
 
+    let budgetMenuData = []
+    for (const item of budgetData) {
+        budgetMenuData.push({
+            type: 'icon',
+            name: item.name,
+            icon: spendingCategories[item.category].icon,
+            style: spendingCategories[item.category].col,
+            data: item.amount,
+        })
+    }
+
+    card.onclick = function (e) {
+        contextModalShow([budgetMenuData], e)
+    }
+
     return card
 }
 

@@ -1,9 +1,9 @@
-function appendSpacer(html,n) {
+function appendSpacer(html, n) {
     html = `${html}<div class="spacer-x" style="--size: ${n}px;"></div>`
     return html
 }
 
-function scrollEmbed(html,margin) {
+function scrollEmbed(html, margin) {
     html = `<div class="scroll margin-${margin}">${html}</div>`
     return html
 }
@@ -28,10 +28,10 @@ function contentTitleElement(title) {
     return element
 }
 
-function spacerElement(x,devices) {
+function spacerElement(x, devices) {
     var spacer = document.createElement('div')
     spacer.classList = 'spacer-x'
-    spacer.style.setProperty('--size',`${x}px`)
+    spacer.style.setProperty('--size', `${x}px`)
 
     if (devices) {
         spacer.classList.add(devices)
@@ -96,7 +96,7 @@ function hscrollHuluElement(child) {
 // function contentContainerElement(child) {
 //     var container = document.createElement('div')
 //     container.classList = 'content-container layer1'
-    
+
 //     if (child) {
 //         container.append(child)
 //     }
@@ -127,13 +127,13 @@ function searchElement(contentItem) {
 }
 
 
-function colContainerRender(content1,content2) {
+function colContainerRender(content1, content2) {
     var container = document.createElement('div')
     container.classList = 'col-container page-width'
-    
+
     container.append(colRender(content1))
     container.append(spacerElement(15))
-    container.append(spacerElement(5,'hidden-mobile'))
+    container.append(spacerElement(5, 'hidden-mobile'))
     container.append(colRender(content2))
 
     return container
@@ -159,11 +159,39 @@ function titleElement() {
 function bgElement(col) {
     let bg = document.createElement('div')
     bg.classList = 'bg'
-    bg.style.setProperty('background-color',`#${col}`)
+    bg.style.setProperty('background-color', `#${col}`)
     return bg
 }
 function gradElement() {
     let grad = document.createElement('div')
     grad.classList = 'grad'
     return grad
+}
+
+
+function iconElement(svgStr) {
+    let icon = document.createElement('div')
+    icon.classList = 'icon'
+
+    if (svgStr) { icon.innerHTML = svgStr }
+    return icon
+}
+function thumbElement(thumb) {
+    let elem = document.createElement('div')
+    elem.classList = 'thumb'
+
+    if (thumb) { elem.style.setProperty('background-image', `url(./appThumb/${thumb}`) }
+    return elem
+}
+
+function itemElement() {
+    let item = document.createElement('a')
+    item.classList = 'item'
+    return item
+}
+function nameElement(name) {
+    let elem = document.createElement('p')
+    elem.classList = 'name'
+    elem.innerHTML = name
+    return elem
 }

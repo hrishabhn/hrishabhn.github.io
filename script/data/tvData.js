@@ -91,7 +91,7 @@ let movieData0 = [
             tvTimeID: '134511',
             reelgoodLink: 'https://reelgood.com/show/blue-mountain-state-2010',
             imdbID: 'tt1344204',
-            // subReddit: 'subreddit',
+            subReddit: 'BMS',
         },
         cast: [
             {
@@ -416,7 +416,7 @@ let soonMovies = [
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            date: 'Feb 22, 2022',
+            date: 'Mar 1, 2022',
             // weekday: '',
             desc: {
                 seasons: 1,
@@ -478,10 +478,10 @@ let soonMovies = [
         id: 'snowfall',
         link: 'https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6',
         info: {
-            service: 'hulu',
+            service: 'hbo',
             studio: 'fx',
-            location: 'Hulu',
-            date: '23 Feb, 2022',
+            location: 'HBO Max',
+            date: '30 Feb, 2022',
             // weekday: '',
             desc: {
                 seasons: 5,

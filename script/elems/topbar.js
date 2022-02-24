@@ -1,52 +1,6 @@
 const topbar = document.getElementById('topbar')
 
 function topbarLoad() {
-    // const topbarApps = [
-    //     {
-    //         icon: iconData['folder'],
-    //         link: 'https://purdue0-my.sharepoint.com',
-    //     },
-    //     {
-    //         icon: iconData['tick'],
-    //         link: 'https://app.clickup.com/8450846/v/l/6-48362200-1',
-    //     },
-    //     {
-    //         icon: iconData['book'],
-    //         link: 'https://app.clickup.com/8450846/v/l/6-48362200-1',
-    //     },
-    // ]
-
-
-    // const topbarApps = [
-    //     {
-    //         name: 'OneDrive',
-    //         link: 'https://purdue0-my.sharepoint.com',
-    //         desc: 'Files',
-    //         thumb: 'onedrive.jpeg',
-    //         accent: colorData['onedrive'],
-    //     },
-    //     {
-    //         name: 'Notion',
-    //         link: 'https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945',
-    //         desc: 'Notes',
-    //         thumb: 'notion.jpeg',
-    //         style: 'secondary',
-    //     },
-    //     {
-    //         name: 'ClickUp',
-    //         link: 'https://app.clickup.com/8450846/v/l/6-48362200-1',
-    //         desc: 'Tasks',
-    //         thumb: 'clickup.jpeg',
-    //         accent: '49CCF9'
-    //     },
-    // ]
-
-
-
-
-
-
-
     let left = document.createElement('div')
     left.classList = 'side'
     left.innerHTML = `
@@ -76,12 +30,25 @@ function topbarLoad() {
         thumb: focus.thumb,
         style: focus.style,
     })
-    focusAppElem.onclick = function(e) {
-        contextModalShow(focusData,e)
+
+    let focusMenuData = []
+    for (const tray of focusData) {
+        let focusMenuTray = []
+
+        for (const item in tray) {
+            focusMenuTray.push({
+                type: 'thumb',
+                name: tray[item].name,
+                thumb: tray[item].thumb,
+                trigger: function () { tray[item].trigger() }
+            })
+        }
+        focusMenuData.push(focusMenuTray)
     }
 
-
-
+    focusAppElem.onclick = function (e) {
+        contextModalShow(focusMenuData, e)
+    }
 
     let right = document.createElement('div')
     right.classList = 'side'
@@ -89,46 +56,7 @@ function topbarLoad() {
     right.append(focusAppElem)
     right.prepend(growElement())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     topbar.append(left)
     topbar.append(appTray)
     topbar.append(right)
-
-
-
-
-
-
-}
-
-function itemElement() {
-    let item = document.createElement('a')
-    item.classList = 'item'
-    return item
-}
-
-function iconElement(svgStr) {
-    let icon = document.createElement('div')
-    icon.classList = 'icon'
-
-    if (svgStr) { icon.innerHTML = svgStr }
-    return icon
 }

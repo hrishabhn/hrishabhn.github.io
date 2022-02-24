@@ -1,38 +1,48 @@
+function menuItemElem(item) {
+    let elem = document.createElement('div')
+    elem.classList = 'item'
+
+    if (item.type == 'thumb') {
+        elem.append(thumbElement(item.thumb))
+    } else if (item.type == 'icon') {
+        let icon = iconElement(item.icon)
+        icon.classList.add(item.style)
+        elem.append(icon)
+    }
+
+    elem.append(nameElement(item.name))
+
+    if (item.trigger) {
+        elem.onclick = function () {
+            item.trigger()
+        }
+    }
+
+    // if (item.data) {
+
+    // }
+
+
+
+    return elem
+}
+
+
+
 function contextModalShow(data, e) {
     let menu = document.getElementById('context-menu')
     removeAllChildNodes(menu)
 
-
-
-    for (let i = 0; i < data.length; i++) {
-        for (const key in data[i]) {
-            let item = data[i][key]
-
-            console.log(item)
-
-            let elem = document.createElement('div')
-            elem.classList = 'item'
-            elem.innerHTML = `
-            <div class="thumb" style="background-image: url(./appThumb/${item.thumb});"></div>
-            <p class="name">${item.name}</p>
-            `
-            if (item.trigger) {
-                elem.onclick = function () {
-                    item.trigger()
-                }
-            }
-    
-    
-            menu.append(elem)
+    console.log(data)
+    for (const tray of data) {
+        for (const item of tray) {
+            menu.append(menuItemElem(item))
             menu.append(hlineElement())
         }
         menu.lastChild.remove()
         menu.append(dividerElem())
     }
     menu.lastChild.remove()
-
-
-
 
 
     var x = e.pageX

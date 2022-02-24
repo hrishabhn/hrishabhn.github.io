@@ -13,6 +13,11 @@ function loadApp() {
     // addModalLayer(workoutCard())
     // showTVDetail(0,0)
     // castJSONStr(0,0)
+
+    // busTest()
+    // tripTest()
+    // addModalLayer(budgetDetailCard())
+
 }
 
 function bodyLoad() {

@@ -225,6 +225,13 @@ const appData = {
             thumb: 'key.png',
             style: 'yellow',
         },
+        {
+            name: 'Glovo',
+            link: 'https://glovoapp.com/es/en/madrid',
+            desc: 'Food Delivery',
+            thumb: 'glovo.jpeg',
+            accent: 'ffc244',
+        },
     ],
     'video': [
         {
@@ -485,8 +492,8 @@ const appData = {
         commonApps.notion('https://www.notion.so/Industrial-Organisation-6f9a042e98f6458a9f509689c2025571'),
     ],
     'finecon': [
-        commonApps.aula('131130', 1),
-        commonApps.aula('123356', 2),
+        commonApps.aula('131130', 'Mon'),
+        commonApps.aula('123356', 'Thu'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Financial%20Economics'),
         commonApps.notion('https://www.notion.so/Financial-Economics-f175d589aae64f7b9ecd3c101be4ff53'),
     ],
