@@ -1,6 +1,6 @@
 function budgetCard() {
     let card = document.createElement('div')
-    card.classList = 'budget-card card-item layer-1 card-shadow'
+    card.classList = 'budget-card card-item layer-1 clickable-o card-shadow'
 
     let title = pElement(`This Week's Spending:`)
     title.classList = 'title'
@@ -25,7 +25,9 @@ function budgetCard() {
             name: item.name,
             icon: spendingCategories[item.category].icon,
             style: spendingCategories[item.category].col,
-            data: item.amount,
+            data: {
+                value: `€${item.amount}`,
+            },
         })
     }
 

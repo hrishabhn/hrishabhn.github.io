@@ -11,6 +11,7 @@ function menuItemElem(item) {
     }
 
     elem.append(nameElement(item.name))
+    elem.append(growElement())
 
     if (item.trigger) {
         elem.onclick = function () {
@@ -18,16 +19,14 @@ function menuItemElem(item) {
         }
     }
 
-    // if (item.data) {
-
-    // }
+    if (item.data) {
+        elem.append(dataElem(item.data.value))
+    }
 
 
 
     return elem
 }
-
-
 
 function contextModalShow(data, e) {
     let menu = document.getElementById('context-menu')

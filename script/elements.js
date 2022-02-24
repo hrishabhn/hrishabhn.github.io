@@ -196,3 +196,22 @@ function descElement(desc) {
     elem.innerHTML = desc
     return elem
 }
+
+function dataElem(value, unit) {
+    let elem = document.createElement('div')
+    elem.classList = 'data'
+
+    let valueElem = document.createElement('p')
+    valueElem.classList = 'value'
+    valueElem.innerHTML = value
+    elem.append(valueElem)
+
+    if (unit) {
+        let unitElem = document.createElement('p')
+        unitElem.classList = 'unit'
+        unitElem.innerHTML = unit
+        elem.append(unitElem)
+    }
+
+    return elem
+}
