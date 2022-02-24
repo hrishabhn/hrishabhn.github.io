@@ -44,6 +44,10 @@
     font-size: 12px;
     font-weight: 500;
 }
+#context-menu .item .data{
+    flex-direction: column;
+    margin: 2px 0;
+}
 #context-menu .item .data .value{
     font-size: 16px;
     font-weight: 400;
