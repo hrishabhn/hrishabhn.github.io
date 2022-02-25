@@ -3,7 +3,7 @@ function flightDetailCard(flightKey) {
 
     let card = document.createElement('div')
     card.classList = 'flight-detail-card layer-1'
-    card.style.setProperty('--col',`#${flight.airline.accent}`)
+    card.style.setProperty('--col', `#${flight.airline.accent}`)
     card.innerHTML = `
     <div class="header">
         ${iconElement(flight.airline.logo.icon).outerHTML}
@@ -21,14 +21,14 @@ function flightDetailCard(flightKey) {
     <div class="status-bar">
     <p>Departs in 7 days</p>
     </div>
-    ${flightDetailCardDepArr(flight.dep,'dep').outerHTML}
+    ${flightDetailCardDepArr(flight.dep, 'dep').outerHTML}
     <div class="duration-bar">
     <div></div>
     <div class="line layer-fg"></div>
     <p>Total ${flight.duration}</p>
     <div class="line layer-fg"></div>
     </div>
-    ${flightDetailCardDepArr(flight.arr,'arr').outerHTML}
+    ${flightDetailCardDepArr(flight.arr, 'arr').outerHTML}
     ${flightDetailCardExtras(flight).outerHTML}
     `
     rest.prepend(flightDetailCardActionTray(flight))
@@ -36,7 +36,7 @@ function flightDetailCard(flightKey) {
     card.append(spacerElement(20))
     card.append(rest)
     card.append(spacerElement(15))
-    card.append(spacerElement(40,'only-mobile'))
+    card.append(spacerElement(40, 'only-mobile'))
 
 
 
@@ -62,13 +62,13 @@ function flightDetailCardActionTray(flight) {
         {
             icon: iconData['reverse'],
             text: 'Other Leg',
-            trigger: function() { flightData[flight.return].detail() }
+            trigger: function () { flightData[flight.return].detail() }
         },
     ]
 
     let tray = document.createElement('div')
     tray.classList = 'action-tray'
-    
+
     for (let i = 0; i < actionData.length; i++) {
         let data = actionData[i]
 
@@ -90,7 +90,7 @@ function flightDetailCardActionTray(flight) {
         if (data.link) {
             action.href = data.link
         } else if (data.trigger) {
-            action.onclick = function() { data.trigger() }
+            action.onclick = function () { data.trigger() }
         }
 
         tray.append(action)

@@ -19,7 +19,7 @@ const spendingCategories = {
         icon: iconData['coffee'],
     },
     'Drinks': {
-        col: 'red',
+        col: 'yellow',
         icon: iconData['beer'],
     },
     'Food': {
