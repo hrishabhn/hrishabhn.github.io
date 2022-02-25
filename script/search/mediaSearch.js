@@ -43,7 +43,7 @@ function searchMoviesRow(results, title) {
         let movie = movieData[results[k][0]][results[k][1]]
 
         let card = cardBase()
-        card.classList.add('info-card', 'movie')
+        card.classList.add('info-card', 'movie', 'clickable-o')
         card.onclick = function () { showTVDetail(results[k][0], results[k][1]) }
         if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
@@ -86,7 +86,7 @@ function searchMoviesRowBig(results, title) {
 
         let card = cardBase()
         card.onclick = function () { showTVDetail(results[k][0], results[k][1]) }
-        card.classList.add('info-card', 'movie-big')
+        card.classList.add('info-card', 'movie-big', 'clickable-o')
         // card.classList.remove('card-hover')
 
         card.append(bgElement(movie.style.color))
@@ -137,14 +137,14 @@ function searchMoviesRowBig(results, title) {
 
 function mediaNewOrSoon(dateStr) {
     let date = new Date(dateStr)
-    
+
     let future = (new Date()) < new Date(date)
 
     if (future) {
         let result = countdownProcess(date, 'short')
 
         return `${result.num} ${result.word.toUpperCase()}`
-    } else { return 'NEW' }    
+    } else { return 'NEW' }
 }
 function mediaTimeElem(str) {
     let elem = document.createElement('div')
