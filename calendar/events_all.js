@@ -1,8 +1,8 @@
 let events_all = [
-{"location":"10.1.7","end":"2022-02-24T14:00:00+01:00","start":"2022-02-24T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp. 62","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp. 62"},
-{"location":"4.0.E03","end":"2022-02-24T17:00:00+01:00","start":"2022-02-24T15:00:00+01:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grp.18 y 19","calendar":"Spring 2022","link":"","name":"Fundamentos de gestión empresarial, grp.18 y 19"},
 {"location":"2.3.D04","end":"2022-02-25T11:00:00+01:00","start":"2022-02-25T09:00:00+01:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
 {"location":"Orange\nPlaza de la Puerta del Sol, 12, 28013 Madrid, Spain","end":"2022-02-25T12:00:00+01:00","start":"2022-02-25T10:00:00+01:00","allDay":"No","notes":"","calendar":"Errands","link":"","name":"Orange SIM Card"},
+{"location":"","end":"2022-02-25T15:15:00+01:00","start":"2022-02-25T14:00:00+01:00","allDay":"No","notes":"","calendar":"Errands","link":"","name":"Gym"},
+{"location":"","end":"2022-02-25T20:00:00+01:00","start":"2022-02-25T18:30:00+01:00","allDay":"No","notes":"","calendar":"Errands","link":"","name":"ESN Card"},
 {"location":"","end":"2022-03-01T00:00:00+01:00","start":"2022-02-28T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 5"},
 {"location":"10.2.11","end":"2022-02-28T14:00:00+01:00","start":"2022-02-28T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp.60,61 y 62"},
 {"location":"6.1.06","end":"2022-02-28T16:00:00+01:00","start":"2022-02-28T14:30:00+01:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
@@ -13,6 +13,8 @@ let events_all = [
 {"location":"10.1.7","end":"2022-03-03T14:00:00+01:00","start":"2022-03-03T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp. 62","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp. 62"},
 {"location":"4.0.E03","end":"2022-03-03T17:00:00+01:00","start":"2022-03-03T15:00:00+01:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grp.18 y 19","calendar":"Spring 2022","link":"","name":"Fundamentos de gestión empresarial, grp.18 y 19"},
 {"location":"2.3.D04","end":"2022-03-04T11:00:00+01:00","start":"2022-03-04T09:00:00+01:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
-{"location":"","end":"2022-03-08T00:00:00+01:00","start":"2022-03-07T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Financial Economics Exam 1"},
 {"location":"","end":"2022-03-08T00:00:00+01:00","start":"2022-03-07T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 6"},
+{"location":"","end":"2022-03-08T00:00:00+01:00","start":"2022-03-07T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Financial Economics Exam 1"},
+{"location":"10.2.11","end":"2022-03-07T14:00:00+01:00","start":"2022-03-07T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp.60,61 y 62"},
+{"location":"6.1.06","end":"2022-03-07T16:00:00+01:00","start":"2022-03-07T14:30:00+01:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
 ]

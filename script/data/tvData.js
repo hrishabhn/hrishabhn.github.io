@@ -56,6 +56,41 @@
 
 let movieData0 = [
     {
+        name: 'Abbott Elementary',
+        id: 'abbott',
+        link: 'https://www.hulu.com/series/abbott-elementary-7c33eeb2-5d16-4a10-ad9e-ee31f9fff15c',
+        info: {
+            service: 'hulu',
+            studio: 'abc',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "A group of dedicated, passionate teachers -- and a slightly tone-deaf principal -- find themselves thrown together in a Philadelphia public school where, despite the odds stacked against them, they are determined to help their students succeed in life. Though these incredible public servants may be outnumbered and underfunded, they love what they do -- even if they don't love the school district's less-than-stellar attitude toward educating children.",
+        },
+        style: {
+            color: 'e6c8a0',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/abbott-elementary-2021',
+            imdbID: 'tt14218830',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Blue Mountain State',
         id: 'bms',
         link: {
