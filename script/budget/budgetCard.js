@@ -6,10 +6,10 @@ function budgetCard() {
     let title = pElement(`This Week's Spending:`)
     title.classList = 'title'
 
-    let spent = pElement(`&#128 ${spendingData.weekTotal}`)
+    let spent = pElement(`&#128 ${spendingData.totalSpent}`)
     spent.classList = 'spent'
 
-    let avail = pElement(`&#128 ${spendingData.weekly - spendingData.weekTotal} Available`)
+    let avail = pElement(`&#128 ${spendingData.totalRemaining} Available`)
     avail.classList = 'available'
 
     card.append(title)

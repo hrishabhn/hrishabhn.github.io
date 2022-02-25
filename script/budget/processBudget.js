@@ -1,5 +1,4 @@
 let spendingData = {
-    weekly: 200,
     days: [
         { trans: [], },
         { trans: [], },
@@ -9,8 +8,10 @@ let spendingData = {
         { trans: [], },
         { trans: [], },
     ],
+    totalAvailable: 200,
+    totalSpent: 0,
+    totalRemaining: 0,
     maxDaily: 0,
-    weekTotal: 0,
 }
 
 const spendingCategories = {
@@ -33,6 +34,10 @@ const spendingCategories = {
     'Health': {
         col: 'pink',
         icon: iconData['heart'],
+    },
+    'Subscription': {
+        col: 'mint',
+        icon: iconData['repeat'],
     },
 }
 
@@ -74,5 +79,9 @@ for (let i = 0; i < spendingData.days.length; i++) {
     day.spend = categorySpend
     day.total = total
     day.date = new Date(thisMon().getTime() + (1000 * 60 * 60 * 24 * i))
-    spendingData.weekTotal += total
+    spendingData.totalSpent += total
 }
+
+spendingData.totalRemaining = parseFloat((spendingData.totalAvailable - spendingData.totalSpent).toFixed(12))
+
+console.log(spendingData.totalRemaining)

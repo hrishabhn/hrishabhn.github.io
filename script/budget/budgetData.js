@@ -11,4 +11,6 @@ let budgetData = [
     { "amount": 19, "name": "Dubliners", "category": "Drinks", "date": "2022-02-23T23:09:32+01:00" },
     { "amount": 11, "name": "Thai Food", "category": "Food", "date": "2022-02-24T19:04:57+01:00" },
     { "amount": 9, "name": "ESN Event", "category": "Drinks", "date": "2022-02-24T21:04:01+01:00" },
+    { "amount": 9.73, "name": "Steak", "category": "Grocery", "date": "2022-02-25T16:03:55+01:00" },
+    { "amount": 20, "name": "Orange Data Plan", "category": "Subscription", "date": "2022-02-25T16:04:15+01:00" },
 ]
