@@ -80,14 +80,14 @@ let focusData = [
         'indorg': {
             name: 'Industrial Organisation',
             desc: '13186',
-            thumb: thumbData['atom'],
+            thumb: thumbData['finance'],
             style: 'secondary',
             apps: appData['indorg'],
         },
         'finecon': {
             name: 'Financial Economics',
             desc: '13648',
-            thumb: thumbData['finance'],
+            thumb: thumbData['money'],
             style: 'secondary',
             apps: appData['finecon'],
         },
