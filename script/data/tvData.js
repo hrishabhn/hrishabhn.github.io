@@ -56,12 +56,54 @@
 
 let movieData0 = [
     {
-        name: 'Abbott Elementary',
-        id: 'abbott',
-        link: 'https://www.hulu.com/series/abbott-elementary-7c33eeb2-5d16-4a10-ad9e-ee31f9fff15c',
+        name: 'Severance',
+        id: 'severance',
+        link: 'https://tv.apple.com/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx',
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'mystery',
+                ],
+            },
+            summary: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+        },
+        style: {
+            color: colorData.fluent.gray20,
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'widest',
+            mobileType: 'png',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '371980',
+            reelgoodLink: 'https://reelgood.com/show/severance-2022',
+            imdbID: 'tt11280740',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         char: 'name',
+        //     },
+        // ],
+    },
+    {
+        name: 'Hit Monkey',
+        id: 'hitMonkey',
+        link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
         info: {
             service: 'hulu',
-            studio: 'abc',
+            studio: 'marvel',
             location: 'Hulu',
             // date: '',
             // weekday: '',
@@ -70,13 +112,14 @@ let movieData0 = [
                 yearStart: 2021,
                 yearEnd: null,
                 genre: [
-                    'comedy',
+                    'action',
+                    'animation',
                 ],
             },
-            summary: "A group of dedicated, passionate teachers -- and a slightly tone-deaf principal -- find themselves thrown together in a Philadelphia public school where, despite the odds stacked against them, they are determined to help their students succeed in life. Though these incredible public servants may be outnumbered and underfunded, they love what they do -- even if they don't love the school district's less-than-stellar attitude toward educating children.",
+            summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
         },
         style: {
-            color: 'e6c8a0',
+            color: '3B347A',
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'mid',
@@ -84,12 +127,106 @@ let movieData0 = [
             mobileSize: '2 / 3',
         },
         apps: {
-            tvTimeID: '402910',
-            reelgoodLink: 'https://reelgood.com/show/abbott-elementary-2021',
-            imdbID: 'tt14218830',
+            tvTimeID: '361835',
+            reelgoodLink: 'https://reelgood.com/show/marvels-hitmonkey-2021',
+            imdbID: 'tt9811316',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'Fred Tatasciore',
+                char: 'Hit-Monkey',
+            },
+            {
+                actor: 'Jason Sudeikis',
+                char: 'Bryce',
+            },
+            {
+                actor: 'Olivia Munn',
+                char: 'Akiko',
+            },
+            {
+                actor: 'George Takei',
+                char: 'Shinji Yokohama',
+            },
+        ],
     },
+    {
+        name: 'Ozark',
+        id: 'ozark',
+        link: {
+            netflix: '80117552'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Neftlix',
+            // date: 'Jan 21, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2017,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "After his business partner cheats a dangerous client, financial adviser Marty must devise a radical plan to save the lives of himself and his family.",
+        },
+        style: {
+            color: '660000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '329089',
+            reelgoodLink: 'https://reelgood.com/show/ozark-2017',
+            imdbID: 'tt5071412',
+            subReddit: 'Ozark',
+        },
+    },
+    {
+        name: 'Attack on Titan',
+        id: 'attack',
+        link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            // date: 'Jan 16, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2013,
+                yearEnd: 2022,
+                genre: [
+                    'action & adventure',
+                    'animation',
+                ],
+            },
+            summary: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+        },
+        style: {
+            color: 'a98264',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '267440',
+            reelgoodLink: 'https://reelgood.com/show/attack-on-titan-2013',
+            imdbID: 'tt2560140',
+            subReddit: 'attackontitan',
+        },
+    },
+]
+let movieData1 = [
     {
         name: 'Blue Mountain State',
         id: 'bms',
@@ -164,58 +301,43 @@ let movieData0 = [
         ],
     },
     {
-        name: 'Hit Monkey',
-        id: 'hitMonkey',
-        link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
+        name: 'Money Heist',
+        id: 'money',
+        link: {
+            netflix: '80192098'
+        },
         info: {
-            service: 'hulu',
-            studio: 'marvel',
-            location: 'Hulu',
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
             // date: '',
             // weekday: '',
             desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
+                seasons: 4,
+                yearStart: 2017,
+                yearEnd: 2021,
                 genre: [
                     'action',
-                    'animation',
+                    'crime',
+                    'mystery',
                 ],
             },
-            summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
+            summary: "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
         },
         style: {
-            color: '3B347A',
+            color: '3f1513',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '10 / 9',
         },
         apps: {
-            tvTimeID: '361835',
-            reelgoodLink: 'https://reelgood.com/show/marvels-hitmonkey-2021',
-            imdbID: 'tt9811316',
+            tvTimeID: '327417',
+            reelgoodLink: 'https://reelgood.com/show/money-heist-2017',
+            imdbID: 'tt6468322',
             // subReddit: 'subreddit',
         },
-        cast: [
-            {
-                actor: 'Fred Tatasciore',
-                char: 'Hit-Monkey',
-            },
-            {
-                actor: 'Jason Sudeikis',
-                char: 'Bryce',
-            },
-            {
-                actor: 'Olivia Munn',
-                char: 'Akiko',
-            },
-            {
-                actor: 'George Takei',
-                char: 'Shinji Yokohama',
-            },
-        ],
     },
     {
         name: 'Disenchantment',
@@ -257,83 +379,6 @@ let movieData0 = [
         },
     },
     {
-        name: 'Attack on Titan',
-        id: 'attack',
-        link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
-        info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
-            // date: 'Jan 16, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2013,
-                yearEnd: 2022,
-                genre: [
-                    'action & adventure',
-                    'animation',
-                ],
-            },
-            summary: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
-        },
-        style: {
-            color: 'a98264',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '267440',
-            reelgoodLink: 'https://reelgood.com/show/attack-on-titan-2013',
-            imdbID: 'tt2560140',
-            subReddit: 'attackontitan',
-        },
-    },
-]
-let movieData1 = [
-    {
-        name: 'Money Heist',
-        id: 'money',
-        link: {
-            netflix: '80192098'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2017,
-                yearEnd: 2021,
-                genre: [
-                    'action',
-                    'crime',
-                    'mystery',
-                ],
-            },
-            summary: "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
-        },
-        style: {
-            color: '3f1513',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '10 / 9',
-        },
-        apps: {
-            tvTimeID: '327417',
-            reelgoodLink: 'https://reelgood.com/show/money-heist-2017',
-            imdbID: 'tt6468322',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: "Don't Look Up",
         id: 'dontLookUp',
         link: {
@@ -362,44 +407,6 @@ let movieData1 = [
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/dont-look-up',
             imdbID: 'tt11286314',
-        },
-    },
-    {
-        name: 'Ozark',
-        id: 'ozark',
-        link: {
-            netflix: '80117552'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Neftlix',
-            date: 'Jan 21, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2017,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "After his business partner cheats a dangerous client, financial adviser Marty must devise a radical plan to save the lives of himself and his family.",
-        },
-        style: {
-            color: '660000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '329089',
-            reelgoodLink: 'https://reelgood.com/show/ozark-2017',
-            imdbID: 'tt5071412',
-            subReddit: 'Ozark',
         },
     },
     {
@@ -516,7 +523,7 @@ let soonMovies = [
             service: 'hbo',
             studio: 'fx',
             location: 'HBO Max',
-            date: '30 Feb, 2022',
+            date: '24 Feb, 2022',
             // weekday: '',
             desc: {
                 seasons: 5,
@@ -576,7 +583,7 @@ let soonMovies = [
             // mobileSize: '7 / 10',
         },
         apps: {
-            // tvTimeID: 'identifier',
+            tvTimeID: '270915',
             reelgoodLink: 'https://reelgood.com/show/peaky-blinders-2013',
             imdbID: 'tt2442560',
             // subReddit: 'subreddit',
@@ -1529,6 +1536,41 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
+    {
+        name: 'Abbott Elementary',
+        id: 'abbott',
+        link: 'https://www.hulu.com/series/abbott-elementary-7c33eeb2-5d16-4a10-ad9e-ee31f9fff15c',
+        info: {
+            service: 'hulu',
+            studio: 'abc',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "A group of dedicated, passionate teachers -- and a slightly tone-deaf principal -- find themselves thrown together in a Philadelphia public school where, despite the odds stacked against them, they are determined to help their students succeed in life. Though these incredible public servants may be outnumbered and underfunded, they love what they do -- even if they don't love the school district's less-than-stellar attitude toward educating children.",
+        },
+        style: {
+            color: 'e6c8a0',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '402910',
+            reelgoodLink: 'https://reelgood.com/show/abbott-elementary-2021',
+            imdbID: 'tt14218830',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Elite',
         id: 'elite',
@@ -3499,7 +3541,7 @@ const movieData7 = [
         info: {
             service: 'appleTV',
             studio: 'appleTV',
-            location: "Apple TV+",
+            location: ' TV+',
             weekday: 'Friday',
             desc: {
                 seasons: 2,
