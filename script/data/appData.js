@@ -101,6 +101,13 @@ const appData = {
         commonApps.onedrive('https://purdue0-my.sharepoint.com'),
         commonApps.notion('https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945'),
         {
+            name: 'TickTick',
+            link: 'ticktick://',
+            desc: 'To do list',
+            thumb: 'ticktick.jpeg',
+            style: 'blue'
+        },
+        {
             name: 'Tasks',
             link: 'https://app.clickup.com/8450846/v/l/6-48362200-1',
             desc: 'Tasks',
