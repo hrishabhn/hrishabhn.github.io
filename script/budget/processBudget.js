@@ -83,5 +83,3 @@ for (let i = 0; i < spendingData.days.length; i++) {
 }
 
 spendingData.totalRemaining = parseFloat((spendingData.totalAvailable - spendingData.totalSpent).toFixed(12))
-
-console.log(spendingData.totalRemaining)

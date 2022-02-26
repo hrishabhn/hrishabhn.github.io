@@ -27,8 +27,13 @@ for (const event of events_all) {
 
     const eventTrigger = {
         'SAIL Study': function () { focusData[1]['sail'].trigger() },
+
         'Industrial Organisation': function () { focusData[1]['indorg'].trigger() },
+        'Industrial Organisation Study': function () { focusData[1]['indorg'].trigger() },
+
         'Financial Economics': function () { focusData[1]['finecon'].trigger() },
+        'Financial Economics Study': function () { focusData[1]['finecon'].trigger() },
+
         'Engineering Management': function () { focusData[1]['manage'].trigger() },
         'Controls Engineering': function () { focusData[1]['controls'].trigger() },
         'Gym': function () { focusData[2]['workout'].trigger() },
@@ -43,8 +48,6 @@ for (const event of events_all) {
     } else if (eventTrigger[event.name]) {
         event.trigger = function () { eventTrigger[event.name]() }
     }
-
-
 
     const eventNotesIcon = {
         'sport': iconData['ball'],
@@ -73,6 +76,7 @@ function eventColor(calendar) {
         'Key Dates': 'FFFF0B',
         'Work': '005392',
         'Errands': 'FF40FF',
+        'Outings': 'FB0207',
     }
 
     if (data[calendar]) {
