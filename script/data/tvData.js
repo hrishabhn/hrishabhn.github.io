@@ -672,8 +672,8 @@ let soonMovies = [
             posterType: 'webp',
             titleType: 'png',
             titleSize: 'widest',
-            // mobileType: 'jpg',
-            // mobileSize: '7 / 10',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             tvTimeID: '270915',
