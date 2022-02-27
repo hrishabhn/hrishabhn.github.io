@@ -89,6 +89,32 @@ let movieData0 = [
             imdbID: 'tt14218830',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'Quinta Brunson',
+                char: 'Janine Teagues',
+            },
+            {
+                actor: 'Tyler James Williams',
+                char: 'Gregory Eddie',
+            },
+            {
+                actor: 'Janelle James',
+                char: 'Ava Coleman',
+            },
+            {
+                actor: 'Lisa Ann Walter',
+                char: 'Melissa Schemmenti',
+            },
+            {
+                actor: 'Sheryl Lee Ralph',
+                char: 'Barbara Howard',
+            },
+            {
+                actor: 'Chris Perfetti',
+                char: 'Jacob Hill',
+            },
+        ],
     },
     {
         name: 'Elite',
@@ -163,12 +189,6 @@ let movieData0 = [
             imdbID: 'tt11280740',
             // subReddit: 'subreddit',
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         char: 'name',
-        //     },
-        // ],
     },
     {
         name: 'Hit Monkey',

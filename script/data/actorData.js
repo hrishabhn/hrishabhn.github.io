@@ -104,4 +104,10 @@ const actorData = {
     'Colton Dunn': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymDpOuLsBek6CVMbt4kIfRbsSOvcOW3qwlzD2pHDS5bKTWj_U',
     'Nichole Sakura': 'https://m.media-amazon.com/images/M/MV5BZDY1ZTRiMjAtZTdhZi00NzgxLThkYzYtMmVhZmZkN2JjN2JlXkEyXkFqcGdeQXVyMjAzMzg4NzA@._V1_.jpg',
     'Nico Santos': 'https://mx.web.img3.acsta.net/pictures/17/04/10/17/44/161323.jpg',
+    'Quinta Brunson': 'https://variety.com/wp-content/uploads/2021/02/Quinta-Brunson-Photo-Credit-Sela-Shiloni-e1613510769150.jpg',
+    'Tyler James Williams': 'https://m.media-amazon.com/images/M/MV5BODYzNTQyMDk3N15BMl5BanBnXkFtZTgwMDEwMDIxNzM@._V1_.jpg',
+    'Janelle James': 'https://pbs.twimg.com/profile_images/1487083562675412998/f6MU2WmD_400x400.jpg',
+    'Lisa Ann Walter': 'https://m.media-amazon.com/images/M/MV5BYmJjYThlYjctYzlkNC00MjdmLTg2NzItNWEyNDlmZDUxNDA4XkEyXkFqcGdeQXVyNTgwNzc2MjE@._V1_.jpg',
+    'Sheryl Lee Ralph': 'https://m.media-amazon.com/images/M/MV5BMjIxMTUzNjcwM15BMl5BanBnXkFtZTcwNzM1MTU0Nw@@._V1_.jpg',
+    'Chris Perfetti': 'https://ntvb.tmsimg.com/assets/assets/775318_v9_bb.jpg',
 }
