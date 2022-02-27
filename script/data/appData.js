@@ -483,6 +483,13 @@ const appData = {
             thumb: thumbData['book'],
             // style: 'red',
         },
+        {
+            name: 'Round Corners',
+            link: 'https://www.quickpicturetools.com/en/rounded_corners/',
+            desc: 'Add Corner Radius to Image',
+            thumb: 'corner.png',
+            style: 'blue',
+        },
     ],
 
     // school
