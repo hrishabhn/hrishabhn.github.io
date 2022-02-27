@@ -93,8 +93,11 @@ for (let i = 0; i < spendingData.days.length; i++) {
     spendingData.totalSpent += total
 }
 
-spendingData.totalRemaining = parseFloat((spendingData.totalAvailable - spendingData.totalSpent).toFixed(12))
+spendingData.totalSpent = fixFloat(spendingData.totalSpent)
+spendingData.totalRemaining = fixFloat(spendingData.totalAvailable - spendingData.totalSpent)
 
 function fixFloat(input) {
     return parseFloat(input.toFixed(12))
 }
+
+console.log(spendingData)

@@ -548,42 +548,6 @@ let soonMovies = [
         ],
     },
     {
-        name: 'Snowfall',
-        id: 'snowfall',
-        link: 'https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6',
-        info: {
-            service: 'hbo',
-            studio: 'fx',
-            location: 'HBO Max',
-            date: '24 Feb, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 5,
-                yearStart: 2017,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "Snowfall is a one-hour drama set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it.",
-        },
-        style: {
-            color: colorData['fluent'].cyanBlue20,
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '328092',
-            reelgoodLink: 'https://reelgood.com/show/snowfall-2017',
-            imdbID: 'tt6439752',
-            subReddit: 'SnowFall',
-        },
-    },
-    {
         name: 'Peaky Blinders',
         id: 'peaky',
         link: {
@@ -619,6 +583,42 @@ let soonMovies = [
             reelgoodLink: 'https://reelgood.com/show/peaky-blinders-2013',
             imdbID: 'tt2442560',
             // subReddit: 'subreddit',
+        },
+    },
+    {
+        name: 'Snowfall',
+        id: 'snowfall',
+        link: 'https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6',
+        info: {
+            service: 'hbo',
+            studio: 'fx',
+            location: 'HBO Max',
+            date: '3 Mar, 2022',
+            // weekday: '',
+            desc: {
+                seasons: 5,
+                yearStart: 2017,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "Snowfall is a one-hour drama set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it.",
+        },
+        style: {
+            color: colorData['fluent'].cyanBlue20,
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '328092',
+            reelgoodLink: 'https://reelgood.com/show/snowfall-2017',
+            imdbID: 'tt6439752',
+            subReddit: 'SnowFall',
         },
     },
     {

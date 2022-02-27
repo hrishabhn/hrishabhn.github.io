@@ -32,7 +32,8 @@ function spotlightRun(e) {
                     target.onclick()
                 }
             } else {
-                window.open(`https://neeva.com/search?q=${qOrig}`, '_self')
+                window.open(`https://www.google.com/search?q=${qOrig}`, '_self')
+                // window.open(`https://neeva.com/search?q=${qOrig}`, '_self')
             }
         } else {
             removeAllChildNodes(resultElem())

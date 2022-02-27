@@ -290,6 +290,9 @@
 .event.started .info .bg{
     opacity: 0.5;
 }
+.event.all-day .info .bg{
+    opacity: 0;
+}
 .event .info .textbox{
     height: 100%;
     max-width: calc(100% - 20px);
@@ -304,7 +307,7 @@
 .event .info .name{
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 2px;
+
 }
 .event .info .desc{
     font-size: 14px;

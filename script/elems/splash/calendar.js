@@ -42,6 +42,8 @@ function calendarCard() {
 
         displayedEvents++
         countedEvents++
+
+        if (event.allDay) { displayedEvents-- }
     }
 
     // more events today
@@ -63,6 +65,8 @@ function calendarCard() {
 
             displayedEvents++
             countedEvents++
+
+            if (event.allDay) { displayedEvents-- }
         }
     }
 
@@ -119,7 +123,14 @@ function eventCardElem(event) {
     info.classList = 'info'
 
     info.append(bgElement(event.color))
-    info.append(textboxBase(event.name, event.duration))
+    if (!event.allDay) {
+        info.append(textboxBase(event.name, event.duration))
+    } else {
+        info.append(textboxBase(event.name, null))
+        eventCard.classList.add('all-day')
+        // displayedEvents--
+    }
+
     info.append(growElement())
 
     if (event.icon) { info.append(iconElement(event.icon)) }

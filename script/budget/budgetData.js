@@ -17,5 +17,9 @@ let budgetData = [
     { "amount": 14, "name": "Haircut", "category": "Coffee", "date": "2022-02-25T22:19:19+01:00" },
     { "amount": 13.25, "name": "Study Beers", "category": "Drinks", "date": "2022-02-26T18:53:47+01:00" },
     { "amount": 17.56, "name": "Corte Ingles", "category": "Grocery", "date": "2022-02-26T19:27:36+01:00" },
-    { "amount": 18.25, "name": "Bule Bule", "category": "Drinks", "date": "2022-02-26T21:53:58+01:00" },
+    { "amount": 17, "name": "Bule Bule", "category": "Drinks", "date": "2022-02-26T21:53:58+01:00" },
+
+{"amount":10.2,"name":"Lunch","category":"Food","date":"2022-02-27T17:30:53+01:00"},
+
+
 ]
