@@ -278,7 +278,7 @@
     height: 100%;
     flex-grow: 1;
     flex-shrink: 1;
-    padding: 5px 5px;
+    padding: 5px;
 
     border-radius: 3px;
     overflow: hidden;
@@ -298,6 +298,9 @@
     max-width: calc(100% - 20px);
     flex-direction: column;
     align-items: flex-start;
+}
+.event.all-day .info{
+    padding: 0 5px;
 }
 
 .event .info .textbox p{
