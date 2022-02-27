@@ -239,6 +239,13 @@ const appData = {
             thumb: 'glovo.jpeg',
             accent: 'ffc244',
         },
+        {
+            name: 'Symbolab',
+            link: 'https://www.symbolab.com',
+            desc: 'Calculator',
+            thumb: 'symbolab.jpeg',
+            accent: 'e02342',
+        },
     ],
     'video': [
         {

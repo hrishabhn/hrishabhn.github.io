@@ -12,12 +12,15 @@ let spendingData = {
     totalSpent: 0,
     totalRemaining: 0,
     maxDaily: 0,
+    categories: {
+
+    }
 }
 
 const spendingCategories = {
-    'Coffee': {
-        col: 'orange',
-        icon: iconData['coffee'],
+    'Grocery': {
+        col: 'green',
+        icon: iconData['basket'],
     },
     'Drinks': {
         col: 'yellow',
@@ -27,9 +30,9 @@ const spendingCategories = {
         col: 'blue',
         icon: iconData['book'],
     },
-    'Grocery': {
-        col: 'green',
-        icon: iconData['basket'],
+    'Coffee': {
+        col: 'orange',
+        icon: iconData['coffee'],
     },
     'Health': {
         col: 'pink',
@@ -39,6 +42,10 @@ const spendingCategories = {
         col: 'mint',
         icon: iconData['repeat'],
     },
+}
+
+for (const cat in spendingCategories) {
+    spendingData.categories[cat] = 0
 }
 
 
@@ -69,13 +76,17 @@ for (let i = 0; i < spendingData.days.length; i++) {
 
     for (const trans of day.trans) {
         categorySpend[trans.category] += trans.amount
+        spendingData.categories[trans.category] += fixFloat(trans.amount)
+        spendingData.categories[trans.category] = fixFloat(spendingData.categories[trans.category])
         total += trans.amount
 
         if (total > spendingData.maxDaily) {
             spendingData.maxDaily = total
         }
     }
-    total = parseFloat(total.toFixed(12))
+
+    total = fixFloat(total)
+
     day.spend = categorySpend
     day.total = total
     day.date = new Date(thisMon().getTime() + (1000 * 60 * 60 * 24 * i))
@@ -83,3 +94,7 @@ for (let i = 0; i < spendingData.days.length; i++) {
 }
 
 spendingData.totalRemaining = parseFloat((spendingData.totalAvailable - spendingData.totalSpent).toFixed(12))
+
+function fixFloat(input) {
+    return parseFloat(input.toFixed(12))
+}

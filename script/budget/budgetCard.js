@@ -1,7 +1,6 @@
 function budgetCard() {
     let card = document.createElement('div')
-    card.classList = 'budget-card card-item layer-1 clickable-o card-shadow'
-    card.onclick = function(e) {contextModalShow(budgetMenuData, e)}
+    card.classList = 'budget-card card-item layer-1 card-shadow'
 
     let title = pElement(`This Week's Spending:`)
     title.classList = 'title'
@@ -20,44 +19,13 @@ function budgetCard() {
     card.append(chart)
     card.append(budgetCardIcons())
 
-    let budgetMenuData = []
-    for (const day of spendingData.days) {
-        if (day.trans.length) {
-
-            
-
-            let budgetMenuDayData = []
-            
-            for (const item of day.trans) {
-                budgetMenuDayData.push({
-                    type: 'icon',
-                    name: item.name,
-                    icon: spendingCategories[item.category].icon,
-                    style: spendingCategories[item.category].col,
-                    data: {
-                        value: `€${item.amount}`,
-                    },
-                })
-            }
-
-
-            budgetMenuDayData.reverse()
-            budgetMenuData.push(budgetMenuDayData)
-            budgetMenuData.push({
-                type: 'title',
-                name: (day.date.getDate() == new Date().getDate()) ? 'Today' : processDay(day.date.getDay(), 'long'),
-            })
-        }
-    }
-    budgetMenuData.reverse()
-
     return card
 }
 
-
 function budgetCardChart() {
     let chart = document.createElement('div')
-    chart.classList = 'chart'
+    chart.classList = 'chart clickable-o'
+    chart.onclick = function (e) { contextModalShow(budgetMenuData(), e) }
 
     for (let i = 0; i < 7; i++) {
         let col = document.createElement('div')
@@ -96,7 +64,8 @@ function budgetCardChart() {
 
 function budgetCardIcons() {
     let tray = document.createElement('div')
-    tray.classList = 'icon-tray'
+    tray.classList = 'icon-tray clickable-o'
+    tray.onclick = function (e) { contextModalShow(budgetMenuCatData(), e) }
 
     for (const cat in spendingCategories) {
         let icon = (iconElement(spendingCategories[cat].icon))
@@ -106,6 +75,56 @@ function budgetCardIcons() {
     }
     tray.lastChild.remove()
     tray.append(growElement())
-
+    
     return tray
 }
+
+function budgetMenuCatData() {
+    let data = []
+    for (const cat in spendingData.categories) {
+        data.push({
+            type: 'icon',
+            name: cat,
+            icon: spendingCategories[cat].icon,
+            style: spendingCategories[cat].col,
+            data: {
+                value: `€${spendingData.categories[cat]}`,
+            },
+        })
+    }
+
+    return [data]
+}
+
+function budgetMenuData() {
+    let data = []
+    for (const day of spendingData.days) {
+        if (day.trans.length) {
+            let dayData = []
+
+            for (const item of day.trans) {
+                dayData.push({
+                    type: 'icon',
+                    name: item.name,
+                    icon: spendingCategories[item.category].icon,
+                    style: spendingCategories[item.category].col,
+                    data: {
+                        value: `€${item.amount}`,
+                    },
+                })
+            }
+
+
+            dayData.reverse()
+            data.push(dayData)
+            data.push({
+                type: 'title',
+                name: (day.date.getDate() == new Date().getDate()) ? 'Today' : processDay(day.date.getDay(), 'long'),
+            })
+        }
+    }
+    data.reverse()
+
+    return data
+}
+
