@@ -168,6 +168,22 @@ const appData = {
             style: 'teal',
         },
     ],
+    'shopping': [
+        {
+            name: 'Amazon',
+            link: 'https://www.amazon.es',
+            desc: 'Shopping',
+            thumb: 'amazon.jpeg',
+            accent: 'bea977',
+        },
+        {
+            name: 'ASOS',
+            link: 'https://www.asos.com',
+            desc: 'Clothes',
+            thumb: 'asos.jpeg',
+            style: 'secondary',
+        },
+    ],
     'bookmarks': [
         {
             name: 'Old',
@@ -196,13 +212,6 @@ const appData = {
             desc: 'Navigation & Transportation',
             thumb: 'apple_maps.jpeg',
             style: 'green',
-        },
-        {
-            name: 'Amazon',
-            link: 'https://www.amazon.es',
-            desc: 'Shopping',
-            thumb: 'amazon.jpeg',
-            accent: 'bea977',
         },
         {
             name: 'Pirate Bay',

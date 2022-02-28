@@ -42,6 +42,7 @@ function spotlightRun(e) {
                 searchAppsRow(searchApps(q, appData['main']), 'Apps'),
                 searchAppsRow(searchApps(q, appData['notion']), 'Notion'),
                 searchAppsRow(searchApps(q, appData['school']), 'School'),
+                searchAppsRow(searchApps(q, appData['shopping']), 'Shopping'),
                 searchAppsRow(searchApps(q, appData['bookmarks']), 'Bookmarks'),
                 searchAppsRow(searchApps(q, appData['video']), 'Video'),
                 searchAppsRow(searchApps(q, appData['read']), 'Read'),
