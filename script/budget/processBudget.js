@@ -56,7 +56,7 @@ function thisMon() {
 }
 
 for (let trans of budgetData) {
-    let thisWeek = new Date(trans.date).getDate() >= thisMon().getDate()
+    let thisWeek = new Date(trans.date).getTime() >= thisMon().getTime()
     if (thisWeek) {
         // append transactions to specific day
         let myDayIndex = (new Date(trans.date).getDay() + 6) % 7

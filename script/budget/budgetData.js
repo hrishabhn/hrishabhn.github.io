@@ -18,14 +18,14 @@ let budgetData = [
     { "amount": 13.25, "name": "Study Beers", "category": "Drinks", "date": "2022-02-26T18:53:47+01:00" },
     { "amount": 17.56, "name": "Corte Ingles", "category": "Grocery", "date": "2022-02-26T19:27:36+01:00" },
     { "amount": 17, "name": "Bule Bule", "category": "Drinks", "date": "2022-02-26T21:53:58+01:00" },
+    { "amount": 10.2, "name": "Lunch", "category": "Food", "date": "2022-02-27T17:30:53+01:00" },
 
-{"amount":10.2,"name":"Lunch","category":"Food","date":"2022-02-27T17:30:53+01:00"},
-
-
-
-{"amount":2.45,"name":"Breakfast","category":"Food","date":"2022-02-28T13:51:41+01:00"},
+    { "amount": 2.45, "name": "Breakfast", "category": "Food", "date": "2022-02-28T13:51:41+01:00" },
+    { "amount": 12.05, "name": "Lunch", "category": "Food", "date": "2022-02-28T21:15:55+01:00" },
 
 
-{"amount":12.05,"name":"Lunch","category":"Food","date":"2022-02-28T21:15:55+01:00"},
+    { "amount": 14.13, "name": "Sushi", "category": "Food", "date": "2022-03-01T14:01:31+01:00" },
+
+
 
 ]
