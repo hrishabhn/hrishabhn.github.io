@@ -56,6 +56,42 @@
 
 let movieData0 = [
     {
+        name: 'The Adventures of Tintin',
+        id: 'tintin',
+        link: {
+            primeVideo: 'B0827XZNV3'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            desc: {
+                seasons: 3,
+                yearStart: 1991,
+                yearEnd: 1992,
+                genre: [
+                    'adventure',
+                    'crime',
+                ],
+            },
+            summary: "Travel with Tintin, the young and intrepid Belgian reporter, and his faithful dog Snowy as they take you from Tibet to the Moon, or from Egypt to the depths of the sea -- solving mysteries, pursuing truth and justice, and gambling with their lives.",
+        },
+        style: {
+            color: '4e432e',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '350522',
+            reelgoodLink: 'https://reelgood.com/show/the-adventures-of-tintin-1991',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Elite',
         id: 'elite',
         link: {
