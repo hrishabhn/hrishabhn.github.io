@@ -245,11 +245,11 @@
     padding: 12px 15px;
 }
 #splash #widget-card .cal-card .day{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 #splash #widget-card .cal-card .date{
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 300;
 }
 
@@ -308,12 +308,12 @@
     display: block;
 }
 .event .info .name{
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
 
 }
 .event .info .desc{
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 400;
     opacity: 0.8;
 }

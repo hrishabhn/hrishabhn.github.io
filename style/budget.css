@@ -6,21 +6,19 @@
 }
 
 .budget-card .title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     opacity: 0.8;
 }
 
 .budget-card .spent {
-    font-family: ui-rounded;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 500;
     margin: 2px 0;
 }
 
 .budget-card .available {
-    font-family: ui-rounded;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     opacity: 0.5;
 }
@@ -50,7 +48,7 @@
 .budget-card .chart .col .bar {
     width: 100%;
     flex-grow: 1;
-    border-radius: 5px;
+    border-radius: 3px;
     overflow: hidden;
     align-items: flex-end;
     min-height: 70px;
@@ -59,7 +57,7 @@
 .budget-card .chart .col .bar .bar-body {
     width: 100%;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: inherit;
     overflow: hidden;
 }
 

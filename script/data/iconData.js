@@ -76,7 +76,8 @@ const thumbData = {
 
     // brands
     'iberia': 'iberia.jpeg',
-    'british': 'ba.jpeg'
+    'british': 'ba.jpeg',
+    'ryanair': 'ryanair.jpeg',
 
 
 }

@@ -87,6 +87,21 @@ const commonApps = {
             ],
         }
     },
+
+    flight: function(key) {
+        const flight = flightData[key]
+        return {
+            name: `${flight.airline.code} ${flight.number}`,
+            trigger: function () { flightData[key].detail() },
+            desc: `${flight.dep.code} &#8594 ${flight.arr.code}`,
+            thumb: flight.airline.thumb,
+            accent: flight.airline.color,
+            tags: [
+                flight.dep.city,
+                flight.arr.city,
+            ],
+        }
+    }
 }
 
 const appData = {
@@ -383,28 +398,8 @@ const appData = {
             thumb: 'flighty.jpeg',
             style: 'secondary'
         },
-        {
-            name: 'IB 3164',
-            trigger: function () { flightData['mad-lhr'].detail() },
-            desc: 'MAD &#8594 LHR',
-            thumb: 'iberia.jpeg',
-            accent: airlineData['iberia'].color,
-            tags: [
-                'madrid',
-                'london',
-            ],
-        },
-        {
-            name: 'BA 464',
-            trigger: function () { flightData['lhr-mad'].detail() },
-            desc: 'LHR &#8594 MAD',
-            thumb: 'ba.jpeg',
-            accent: airlineData['british'].color,
-            tags: [
-                'madrid',
-                'london',
-            ],
-        },
+        commonApps.flight('mad-tfs'),
+        commonApps.flight('tfs-mad'),
     ],
     'utilities': [
         {
