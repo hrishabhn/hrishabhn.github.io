@@ -1,7 +1,7 @@
 .info-card {
     flex-direction: column;
     /* border: solid 1px var(--white-10); */
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
