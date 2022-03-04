@@ -99,5 +99,3 @@ spendingData.totalRemaining = fixFloat(spendingData.totalAvailable - spendingDat
 function fixFloat(input) {
     return parseFloat(input.toFixed(12))
 }
-
-console.log(spendingData)
