@@ -1,7 +1,7 @@
 function todayCard() {
     let card = document.createElement('a')
     card.classList = 'today-card card-item clickable-o layer-1 card-shadow'
-    card.href = 'ticktick://'
+    card.href = 'ticktick://v1/show?smartlist=today'
 
     let title = titleElement('Today')
     title.classList.add('blue-fg')

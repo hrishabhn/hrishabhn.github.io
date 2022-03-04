@@ -43,6 +43,10 @@ function createSpotlight() {
     input.id = 'spotlight'
     input.onkeyup = function (e) { spotlightRun(e) }
 
+    input.autocomplete = 'off'
+    input.spellcheck = 'false'
+    input.autocorrect = 'off'
+
     container.append(iconElement(iconData['search']))
     container.append(input)
 

@@ -79,7 +79,7 @@ function searchMoviesRow(results, title) {
 
 function searchMoviesRowBig(results, title) {
     let row = rowBase(title)
-    let tray = trayBase()
+    let nodes = []
 
     for (let k = 0; k < results.length; k++) {
         let movie = movieData[results[k][0]][results[k][1]]
@@ -87,7 +87,6 @@ function searchMoviesRowBig(results, title) {
         let card = cardBase()
         card.onclick = function () { showTVDetail(results[k][0], results[k][1]) }
         card.classList.add('info-card', 'movie-big', 'clickable-o')
-        // card.classList.remove('card-hover')
 
         card.append(bgElement(movie.style.color))
 
@@ -124,16 +123,31 @@ function searchMoviesRowBig(results, title) {
 
         if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
-        tray.append(card)
-
-        if (k < results.length - 1) {
-            tray.append(spacerElement(15))
-        }
+        nodes.push(card)
     }
 
-    row.append(tray)
+    row.append(mediaTray(nodes))
     return row
 }
+
+function mediaTray(nodes) {
+    let tray = trayBase()
+    tray.classList.add('unpad')
+
+    tray.append(spacerElement(20))
+
+    for (const node of nodes) {
+        tray.append(node)
+        tray.append(spacerElement(12))
+    }
+
+    tray.lastChild.remove()
+    tray.append(spacerElement(20))
+
+
+    return tray
+}
+
 
 function mediaNewOrSoon(dateStr) {
     let date = new Date(dateStr)
