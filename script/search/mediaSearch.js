@@ -10,7 +10,6 @@ function rowMovies(i) {
 function searchMovies(q) {
     let results = []
 
-
     // const genre = containsGenre(i,j,query)
     // const actor = containsActor(i,j,query)
 
@@ -71,8 +70,6 @@ function searchMoviesRow(results, title) {
     row.append(trayWithKids(nodes))
     return row
 }
-
-
 function searchMoviesRowBig(results, title) {
     let row = rowBase(title)
     let nodes = []
@@ -218,7 +215,7 @@ function searchPods(q) {
 
 function searchBookPodRow(results, title, type) {
     let row = rowBase(title)
-    let tray = trayBase()
+    let nodes = []
 
     if (type == 'book') {
         var data = bookData
@@ -252,13 +249,9 @@ function searchBookPodRow(results, title, type) {
             card.append(mediaTimeElem(item.progress))
         }
 
-        tray.append(card)
-
-        if (k < results.length - 1) {
-            tray.append(spacerElement(15))
-        }
+        nodes.push(card)
     }
 
-    row.append(tray)
+    row.append(trayWithKids(nodes))
     return row
 }
