@@ -14,9 +14,9 @@ let events_all = [
 {"location":"2.3.D04","end":"2022-03-11T11:00:00+01:00","start":"2022-03-11T09:00:00+01:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
 {"location":"","end":"2022-03-15T00:00:00+01:00","start":"2022-03-14T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 7"},
 {"location":"","end":"2022-03-15T00:00:00+01:00","start":"2022-03-14T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/28CA2D8A-7766-4E71-88E7-F02DCD16AE0A:ABPerson","name":"Krish Buxani’s 22nd Birthday"},
-{"location":"10.2.11","end":"2022-03-14T14:00:00+01:00","start":"2022-03-14T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp.60,61 y 62"},
 {"location":"","end":"2022-03-14T14:00:00+01:00","start":"2022-03-14T12:30:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Financial Economics"},
-{"location":"6.1.06","end":"2022-03-14T16:00:00+01:00","start":"2022-03-14T14:30:00+01:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
+{"location":"10.2.11","end":"2022-03-14T14:00:00+01:00","start":"2022-03-14T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp.60,61 y 62"},
 {"location":"","end":"2022-03-14T16:00:00+01:00","start":"2022-03-14T14:30:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Industrial Organization"},
+{"location":"6.1.06","end":"2022-03-14T16:00:00+01:00","start":"2022-03-14T14:30:00+01:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
 {"location":"","end":"2022-03-14T19:30:00+01:00","start":"2022-03-14T18:00:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Commercial Law"},
 ]

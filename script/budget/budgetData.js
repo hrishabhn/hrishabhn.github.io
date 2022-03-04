@@ -30,4 +30,9 @@ let budgetData = [
     { "amount": 13, "name": "Drinks", "category": "Drinks", "date": "2022-03-02T22:07:00+01:00" },
     { "amount": 10.95, "name": "Lunch", "category": "Food", "date": "2022-03-03T14:36:00+01:00" },
     { "amount": 21.82, "name": "Grocery", "category": "Grocery", "date": "2022-03-03T18:12:00+01:00" },
+
+
+
+
+
 ]

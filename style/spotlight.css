@@ -146,7 +146,11 @@
     align-items: flex-start;
     padding: 5px 0;
 }
-
+/* #tasks-card .title{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 15px 0;
+} */
 
 #splash #widget-card #tasks-card .item {
     width: 100%;
