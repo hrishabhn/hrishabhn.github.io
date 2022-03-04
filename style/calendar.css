@@ -1,0 +1,92 @@
+#splash #widget-card .cal-card{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 15px;
+}
+#splash #widget-card .cal-card .day{
+    font-size: 14px;
+    font-weight: 500;
+}
+#splash #widget-card .cal-card .date{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#splash #widget-card .tmr-title{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.75;
+    margin: 4px 0;
+}
+
+.event{
+    width: 100%;
+    min-height: 20px;
+    cursor: default;
+
+    /* background-color: red; */
+}
+.event .col-block{
+    height: 100%;
+    width: 4px;
+    margin-right: 3px;
+    border-radius: 100px;
+    background-color: var(--col);
+}
+.event .info{
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 5px;
+
+    border-radius: 3px;
+    overflow: hidden;
+}
+.event .info .bg{
+    opacity: 0.25;
+    /* filter: brightness(0.5) saturate(2); */
+}
+.event.started .info .bg{
+    opacity: 0.5;
+}
+.event.all-day .info .bg{
+    opacity: 0;
+}
+.event .info .textbox{
+    height: 100%;
+    max-width: calc(100% - 20px);
+    flex-direction: column;
+    align-items: flex-start;
+}
+.event.all-day .info{
+    padding: 0 5px;
+}
+
+.event .info .textbox p{
+    max-width: 100%;
+    display: block;
+}
+.event .info .name{
+    font-size: 13px;
+    font-weight: 500;
+
+}
+.event .info .desc{
+    font-size: 11px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.event .info .icon{
+    height: 16px;
+    width: 16px;
+}
+
+.event.future p{
+    font-size: 12px;
+    font-weight: 500;
+}
+#splash #widget-card .no-more{
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+}

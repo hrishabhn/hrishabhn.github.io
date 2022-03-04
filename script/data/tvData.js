@@ -13,8 +13,8 @@
 //         // weekday: '',
 //         desc: {
 //             seasons: 1,
-//             year: 2021,
-//             yearStart: 2021,
+//             year: 2022,
+//             yearStart: 2022,
 //             yearEnd: null,
 //             genre: [
 //                 'crime',
@@ -613,7 +613,7 @@ let soonMovies = [
             service: 'hbo',
             studio: 'fx',
             location: 'HBO Max',
-            date: '3 Mar, 2022',
+            date: '10 Mar, 2022',
             // weekday: '',
             desc: {
                 seasons: 5,
