@@ -68,6 +68,7 @@ function widgetCard() {
     card.classList = 'limit'
 
     card.append(calendarCard())
+    card.append(todayCard())
     card.append(budgetCard())
     // card.append(worldClockCard())
     card.append(flightCountdownCard('mad-tfs'))
