@@ -3,6 +3,7 @@
     /* border: solid 1px var(--white-10); */
     border-radius: 8px;
     overflow: hidden;
+    cursor: default;
 }
 
 .info-card .textbox {
