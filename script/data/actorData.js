@@ -110,4 +110,10 @@ const actorData = {
     'Lisa Ann Walter': 'https://m.media-amazon.com/images/M/MV5BYmJjYThlYjctYzlkNC00MjdmLTg2NzItNWEyNDlmZDUxNDA4XkEyXkFqcGdeQXVyNTgwNzc2MjE@._V1_.jpg',
     'Sheryl Lee Ralph': 'https://m.media-amazon.com/images/M/MV5BMjIxMTUzNjcwM15BMl5BanBnXkFtZTcwNzM1MTU0Nw@@._V1_.jpg',
     'Chris Perfetti': 'https://ntvb.tmsimg.com/assets/assets/775318_v9_bb.jpg',
+    'Adam Scott': 'https://static.wikia.nocookie.net/memoryalpha/images/3/36/Adam_Scott.jpg/revision/latest?cb=20200603120918&path-prefix=es',
+    'Britt Lower': 'https://images.fandango.com/ImageRenderer/0/0/redesign/static/img/default_poster.png/0/images/masterrepository/performer%20images/p786449/BrittLower.jpg',
+    'Zach Cherry': 'https://m.media-amazon.com/images/M/MV5BODEyN2Y4YjEtNjUyOC00N2QzLTk0NmEtMDMxYjY3YjI1YWJiXkEyXkFqcGdeQXVyNTg0ODkzOTA@._V1_.jpg',
+    'John Turturro': 'https://medias.unifrance.org/medias/116/172/175220/format_page/media.jpg',
+    'Christopher Walken': 'https://m.media-amazon.com/images/M/MV5BMjA4ODUyNDQ2NV5BMl5BanBnXkFtZTYwODk2MTYz._V1_UY264_CR2,0,178,264_AL_.jpg',
+    'Dichen Lachman': 'https://static.wikia.nocookie.net/marvelmovies/images/8/84/Dichen_Lachman.jpg',
 }

@@ -277,7 +277,7 @@ const appData = {
             link: 'https://www.tvtime.com/en',
             desc: 'Track',
             thumb: 'tvTime.jpeg',
-            // accent: 'secondary',
+            accent: 'fbd737',
         },
         {
             name: 'Reelgood',

@@ -56,42 +56,6 @@
 
 let movieData0 = [
     {
-        name: 'The Adventures of Tintin',
-        id: 'tintin',
-        link: {
-            primeVideo: 'B0827XZNV3'
-        },
-        info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
-            desc: {
-                seasons: 3,
-                yearStart: 1991,
-                yearEnd: 1992,
-                genre: [
-                    'adventure',
-                    'crime',
-                ],
-            },
-            summary: "Travel with Tintin, the young and intrepid Belgian reporter, and his faithful dog Snowy as they take you from Tibet to the Moon, or from Egypt to the depths of the sea -- solving mysteries, pursuing truth and justice, and gambling with their lives.",
-        },
-        style: {
-            color: '4e432e',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '350522',
-            reelgoodLink: 'https://reelgood.com/show/the-adventures-of-tintin-1991',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
         name: 'Elite',
         id: 'elite',
         link: {
@@ -128,96 +92,6 @@ let movieData0 = [
             imdbID: 'tt7134908',
             // subReddit: 'subreddit',
         },
-    },
-    {
-        name: 'Severance',
-        id: 'severance',
-        link: 'https://tv.apple.com/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx',
-        info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'mystery',
-                ],
-            },
-            summary: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
-        },
-        style: {
-            color: colorData.fluent.gray20,
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'widest',
-            mobileType: 'png',
-            mobileSize: '8 / 10',
-        },
-        apps: {
-            tvTimeID: '371980',
-            reelgoodLink: 'https://reelgood.com/show/severance-2022',
-            imdbID: 'tt11280740',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Hit Monkey',
-        id: 'hitMonkey',
-        link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
-        info: {
-            service: 'hulu',
-            studio: 'marvel',
-            location: 'Hulu',
-            // date: '',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'animation',
-                ],
-            },
-            summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
-        },
-        style: {
-            color: '3B347A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '361835',
-            reelgoodLink: 'https://reelgood.com/show/marvels-hitmonkey-2021',
-            imdbID: 'tt9811316',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Fred Tatasciore',
-                char: 'Hit-Monkey',
-            },
-            {
-                actor: 'Jason Sudeikis',
-                char: 'Bryce',
-            },
-            {
-                actor: 'Olivia Munn',
-                char: 'Akiko',
-            },
-            {
-                actor: 'George Takei',
-                char: 'Shinji Yokohama',
-            },
-        ],
     },
     {
         name: 'Ozark',
@@ -295,6 +169,42 @@ let movieData0 = [
     },
 ]
 let movieData1 = [
+    {
+        name: 'The Adventures of Tintin',
+        id: 'tintin',
+        link: {
+            primeVideo: 'B0827XZNV3'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            desc: {
+                seasons: 3,
+                yearStart: 1991,
+                yearEnd: 1992,
+                genre: [
+                    'adventure',
+                    'crime',
+                ],
+            },
+            summary: "Travel with Tintin, the young and intrepid Belgian reporter, and his faithful dog Snowy as they take you from Tibet to the Moon, or from Egypt to the depths of the sea -- solving mysteries, pursuing truth and justice, and gambling with their lives.",
+        },
+        style: {
+            color: '4e432e',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '350522',
+            reelgoodLink: 'https://reelgood.com/show/the-adventures-of-tintin-1991',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
     {
         name: 'Blue Mountain State',
         id: 'bms',
@@ -519,6 +429,80 @@ let movieData1 = [
 
 let soonMovies = [
     {
+        name: 'Severance',
+        id: 'severance',
+        link: 'https://tv.apple.com/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx',
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            date: '4 Mar 2022',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'mystery',
+                ],
+            },
+            summary: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+        },
+        style: {
+            color: colorData.fluent.gray20,
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'widest',
+            mobileType: 'png',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '371980',
+            reelgoodLink: 'https://reelgood.com/show/severance-2022',
+            imdbID: 'tt11280740',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Adam Scott',
+                char: 'Mark',
+            },
+            {
+                actor: 'Britt Lower',
+                char: 'Helly',
+            },
+            {
+                actor: 'Patricia Arquette',
+                char: 'Harmony Cobel',
+            },
+            {
+                actor: 'Zach Cherry',
+                char: 'Dylan',
+            },
+            {
+                actor: 'Tramell Tillman',
+                char: 'Milchick',
+            },
+            {
+                actor: 'Jen Tullock',
+                char: 'Devon',
+            },
+            {
+                actor: 'John Turturro',
+                char: 'Irving',
+            },
+            {
+                actor: 'Christopher Walken',
+                char: 'Burt',
+            },
+            {
+                actor: 'Dichen Lachman',
+                char: 'Ms. Casey',
+            },
+        ],
+    },
+    {
         name: 'How I Met Your Father',
         id: 'himyf',
         link: 'https://www.hulu.com/series/how-i-met-your-father-42771fe9-3174-43bc-ab6a-d8c3e618b934',
@@ -526,7 +510,7 @@ let soonMovies = [
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            date: 'Mar 1, 2022',
+            date: 'Mar 8, 2022',
             // weekday: '',
             desc: {
                 seasons: 1,
@@ -3050,6 +3034,60 @@ const movieData7 = [
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
+    },
+    {
+        name: 'Hit Monkey',
+        id: 'hitMonkey',
+        link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
+        info: {
+            service: 'hulu',
+            studio: 'marvel',
+            location: 'Hulu',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'animation',
+                ],
+            },
+            summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
+        },
+        style: {
+            color: '3B347A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '361835',
+            reelgoodLink: 'https://reelgood.com/show/marvels-hitmonkey-2021',
+            imdbID: 'tt9811316',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Fred Tatasciore',
+                char: 'Hit-Monkey',
+            },
+            {
+                actor: 'Jason Sudeikis',
+                char: 'Bryce',
+            },
+            {
+                actor: 'Olivia Munn',
+                char: 'Akiko',
+            },
+            {
+                actor: 'George Takei',
+                char: 'Shinji Yokohama',
+            },
+        ],
     },
     {
         name: 'Industry',

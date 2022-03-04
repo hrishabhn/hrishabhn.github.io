@@ -18,6 +18,7 @@ function loadApp() {
     // tripTest()
     // addModalLayer(budgetDetailCard())
 
+    // addModalLayer(tripCard('tenerife'))
 }
 
 function bodyLoad() {
@@ -37,6 +38,7 @@ function skipToContent() {
 
 function castJSONStr(i, j) {
     const movie = movieData[i][j]
+    console.log(movie)
 
     let str = ''
 

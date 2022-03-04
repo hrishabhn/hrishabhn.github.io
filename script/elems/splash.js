@@ -70,7 +70,7 @@ function widgetCard() {
     card.append(calendarCard())
     card.append(budgetCard())
     // card.append(worldClockCard())
-    // card.append(flightCountdownCard('mad-lhr'))
+    card.append(flightCountdownCard('mad-tfs'))
     card.append(tasksCard())
 
     return card
@@ -159,7 +159,7 @@ function flightCountdownCard(flightKey) {
     const flight = firstFlight()
 
     let card = document.createElement('div')
-    card.classList = 'flight-countdown card-item clickable'
+    card.classList = 'flight-countdown card-item clickable layer-1 card-shadow'
     card.onclick = function () { flight.detail() }
 
     let top = document.createElement('div')

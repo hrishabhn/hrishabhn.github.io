@@ -18,6 +18,7 @@ const colorData = {
     'purdue': 'D7C688',
     'twitter': '1da1f2',
     'reddit': 'ff4500',
+    'kmb': 'ED1F28',
 }
 
 // https://developer.microsoft.com/en-us/fluentui#/styles/web/colors/shared

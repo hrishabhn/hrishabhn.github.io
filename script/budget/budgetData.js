@@ -22,10 +22,12 @@ let budgetData = [
 
     { "amount": 2.45, "name": "Breakfast", "category": "Food", "date": "2022-02-28T13:51:41+01:00" },
     { "amount": 12.05, "name": "Lunch", "category": "Food", "date": "2022-02-28T21:15:55+01:00" },
-
-
     { "amount": 14.13, "name": "Sushi", "category": "Food", "date": "2022-03-01T14:01:31+01:00" },
-
-
-
+    { "amount": 7, "name": "100 Montaditos", "category": "Drinks", "date": "2022-03-01T17:06:00+01:00" },
+    { "amount": 8.04, "name": "Tacos", "category": "Food", "date": "2022-03-01T23:06:00+01:00" },
+    { "amount": 1.7, "name": "Breakfast", "category": "Food", "date": "2022-03-02T10:53:00+01:00" },
+    { "amount": 6, "name": "Lunch", "category": "Food", "date": "2022-03-02T15:20:00+01:00" },
+    { "amount": 13, "name": "Drinks", "category": "Drinks", "date": "2022-03-02T22:07:00+01:00" },
+    { "amount": 10.95, "name": "Lunch", "category": "Food", "date": "2022-03-03T14:36:00+01:00" },
+    { "amount": 21.82, "name": "Grocery", "category": "Grocery", "date": "2022-03-03T18:12:00+01:00" },
 ]
