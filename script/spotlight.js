@@ -228,17 +228,13 @@ function searchApps(q, data) {
 
 function searchAppsRow(data, title) {
     let row = rowBase(title)
-    let tray = trayBase()
+    let nodes = []
 
     for (let k = 0; k < data.length; k++) {
         let card = appCard(data[k])
-        tray.append(card)
-
-        if (k < data.length - 1) {
-            tray.append(spacerElement(10))
-        }
+        nodes.push(card)
     }
-    row.append(tray)
+    row.append(trayWithKids(nodes, 10))
     return row
 }
 
