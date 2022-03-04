@@ -1,0 +1,18 @@
+.today-card {
+    cursor: default;
+}
+.today-card .item {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 2px 0;
+}
+.today-card .item .check {
+    height: 6px;
+    width: 6px;
+    border-radius: 100px;
+    opacity: 0.5;
+}
+.today-card .item p {
+    font-size: 13px;
+    font-weight: 400;
+}
