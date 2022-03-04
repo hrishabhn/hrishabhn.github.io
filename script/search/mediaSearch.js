@@ -37,7 +37,7 @@ function searchMovies(q) {
 }
 function searchMoviesRow(results, title) {
     let row = rowBase(title)
-    let tray = trayBase()
+    let nodes = []
 
     for (let k = 0; k < results.length; k++) {
         let movie = movieData[results[k][0]][results[k][1]]
@@ -65,14 +65,10 @@ function searchMoviesRow(results, title) {
             card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
         }
 
-        tray.append(card)
-
-        if (k < results.length - 1) {
-            tray.append(spacerElement(15))
-        }
+        nodes.push(card)
     }
 
-    row.append(tray)
+    row.append(trayWithKids(nodes))
     return row
 }
 
@@ -126,24 +122,21 @@ function searchMoviesRowBig(results, title) {
         nodes.push(card)
     }
 
-    row.append(mediaTray(nodes))
+    row.append(trayWithKids(nodes))
     return row
 }
 
-function mediaTray(nodes) {
+function trayWithKids(nodes) {
     let tray = trayBase()
     tray.classList.add('unpad')
 
     tray.append(spacerElement(20))
-
     for (const node of nodes) {
         tray.append(node)
         tray.append(spacerElement(12))
     }
-
     tray.lastChild.remove()
     tray.append(spacerElement(20))
-
 
     return tray
 }
