@@ -25,7 +25,7 @@ function spotlightRun(e) {
 
             if (row) {
                 let target = row.lastChild.firstChild
-
+                if (target.classList.value == 'spacer-x') { target = target.nextSibling }
                 if (target.href) {
                     window.open(target.href, '_self')
                 } else if (target.onclick) {
