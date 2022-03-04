@@ -3,8 +3,10 @@ function calendarCard() {
     let card = document.createElement('div')
     card.classList = 'cal-card card-item layer-1 card-shadow'
 
+    let day = capitalizeFirstLetter(processDay(new Date().getDay(), 'long'))
+
     card.innerHTML = `
-    <p class="day red-fg">${processDay(new Date().getDay(), 'long').toUpperCase()}</p>
+    <p class="day red-fg">${day}</p>
     <p class="date">${new Date().getDate()}</p>
     `
 
@@ -54,7 +56,7 @@ function calendarCard() {
     // tomorrow
     if (tmrEvents[0] && (displayedEvents < 2)) {
         let tmrTitle = pElement('TOMORROW')
-        tmrTitle.classList = 'tmr-title'
+        tmrTitle.classList = 'sub-title'
         card.append(tmrTitle)
 
         while (tmrEvents[0] && (displayedEvents < 2)) {
@@ -78,7 +80,7 @@ function calendarCard() {
     // no events today or tmr
     if (!displayedEvents) {
         let noMore = pElement('No more events today or tomorrow')
-        noMore.classList = 'tmr-title'
+        noMore.classList = 'sub-title'
         card.append(noMore)
 
     }

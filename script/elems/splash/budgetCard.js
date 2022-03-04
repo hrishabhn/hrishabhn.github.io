@@ -2,8 +2,8 @@ function budgetCard() {
     let card = document.createElement('div')
     card.classList = 'budget-card card-item layer-1 card-shadow'
 
-    let title = pElement(`This Week's Spending:`)
-    title.classList = 'title'
+    let title = titleElement('Spending')
+    title.classList.add('green-fg')
 
     let spent = pElement(`&#128 ${spendingData.totalSpent}`)
     spent.classList = 'spent'

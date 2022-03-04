@@ -150,12 +150,8 @@ function tvDetail(i, j) {
     if (movie.cast) {
         let cast = document.createElement('div')
         cast.classList = 'cast layer-0 primary-fg'
-
-        let title = document.createElement('div')
-        title.classList = 'title'
-        title.innerHTML = 'Cast'
-
-        cast.append(title)
+        
+        cast.append(titleElement('Cast'))
         let tray = document.createElement('div')
         tray.classList = 'cast-tray'
 

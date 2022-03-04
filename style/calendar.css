@@ -12,13 +12,6 @@
     font-weight: 300;
 }
 
-#splash #widget-card .tmr-title{
-    font-size: 12px;
-    font-weight: 500;
-    opacity: 0.75;
-    margin: 4px 0;
-}
-
 .event{
     width: 100%;
     min-height: 20px;
@@ -85,11 +78,6 @@
     font-size: 12px;
     font-weight: 500;
 }
-#splash #widget-card .no-more{
-    font-size: 14px;
-    font-weight: 500;
-    opacity: 0.5;
-}
 
 
 
@@ -100,10 +88,6 @@
     justify-content: flex-start;
     padding: 12px 15px;
     cursor: default;
-}
-.today-card .title{
-    font-size: 14px;
-    font-weight: 500;
 }
 .today-card .item {
     width: 100%;

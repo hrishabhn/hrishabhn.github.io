@@ -30,9 +30,10 @@ let budgetData = [
     { "amount": 13, "name": "Drinks", "category": "Drinks", "date": "2022-03-02T22:07:00+01:00" },
     { "amount": 10.95, "name": "Lunch", "category": "Food", "date": "2022-03-03T14:36:00+01:00" },
     { "amount": 21.82, "name": "Grocery", "category": "Grocery", "date": "2022-03-03T18:12:00+01:00" },
-
-
-
-
-
+    { "amount": 10.9, "name": "Pres", "category": "Drinks", "date": "2022-03-03T23:24:00+01:00" },
+    { "amount": 2.6, "name": "McDonald’s Beer", "category": "Drinks", "date": "2022-03-03T23:59:59+01:00" },
+    { "amount": 20, "name": "Teatro Kapital", "category": "Drinks", "date": "2022-03-03T23:59:59+01:00" },
+    { "amount": 21.8, "name": "Lunch", "category": "Food", "date": "2022-03-04T14:14:00+01:00" },
+    { "amount": 3.6, "name": "Milkshake", "category": "Food", "date": "2022-03-04T16:04:00+01:00" },
+    { "amount": 10.9, "name": "Chinese Grocery", "category": "Food", "date": "2022-03-04T15:26:00+01:00" },
 ]
