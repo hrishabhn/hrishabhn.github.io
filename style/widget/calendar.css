@@ -11,8 +11,6 @@
     width: 100%;
     min-height: 20px;
     cursor: default;
-
-    /* background-color: red; */
 }
 .event .col-block{
     height: 100%;
@@ -55,12 +53,12 @@
     display: block;
 }
 .event .info .name{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
 
 }
 .event .info .desc{
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 400;
     opacity: 0.8;
 }
