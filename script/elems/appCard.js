@@ -14,7 +14,6 @@ function appCard(app) {
         var thumb = `<div class="thumb" style="background-image: url(./appThumb/${app.thumb});"></div>`
     } else if (app.icon) {
         var thumb = `<div class="thumb ${app.style}">${app.icon}</div>`
-
     }
 
     if (app.accent) {
@@ -24,16 +23,15 @@ function appCard(app) {
         card.style.setProperty('--brand-col-light', `var(--${app.style}-light)`)
     }
 
-
-
+    if (app.searchBase) card.setAttribute('searchBase', app.searchBase)
 
     card.innerHTML = `
-        ${thumb}
-        <div class="textbox">
-            <p class="name">${app.name}</p>
-            <p class="desc">${app.desc}</p>
-        </div>
-        `
+    ${thumb}
+    <div class="textbox">
+        <p class="name">${app.name}</p>
+        <p class="desc">${app.desc}</p>
+    </div>
+    `
 
     return card
 }
