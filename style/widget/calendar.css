@@ -30,7 +30,6 @@
 }
 .event .info .bg{
     opacity: 0.25;
-    /* filter: brightness(0.5) saturate(2); */
 }
 .event.started .info .bg{
     opacity: 0.5;

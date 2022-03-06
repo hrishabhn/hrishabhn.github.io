@@ -63,9 +63,6 @@
 
 .topbar .quick-apps {
     height: 100%;
-
-
-    /* background-color: red; */
 }
 
 @media(max-width: 450px) {

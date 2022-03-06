@@ -1,11 +1,7 @@
 #splash {
     width: 100%;
     min-height: calc(100vh - 60px);
-
-    /* justify-content: flex-start; */
     flex-direction: column;
-
-    /* background-color: red; */
 }
 
 #splash .limit {
@@ -108,14 +104,7 @@
 #results {
     width: 100%;
     flex-direction: column;
-    /* height: 2000px; */
-
-
-    /* height: 10px; */
     width: 100%;
-    /* background-color: red; */
-
-    /* display: none; */
 }
 
 #results .divider {
