@@ -36,7 +36,8 @@ let budgetData = [
     { "amount": 21.8, "name": "Lunch", "category": "Food", "date": "2022-03-04T14:14:00+01:00" },
     { "amount": 3.6, "name": "Milkshake", "category": "Food", "date": "2022-03-04T16:04:00+01:00" },
     { "amount": 10.9, "name": "Chinese Grocery", "category": "Food", "date": "2022-03-04T15:26:00+01:00" },
-
-
-
+    { "amount": 1.1, "name": "Breakfast", "category": "Food", "date": "2022-03-05T09:32:00+01:00" },
+    { "amount": 2.5, "name": "Beer", "category": "Drinks", "date": "2022-03-05T04:07:00+01:00" },
+    { "amount": 8.49, "name": "KFC", "category": "Food", "date": "2022-03-05T18:37:00+01:00" },
+    { "amount": 45.5, "name": "Bule Bule", "category": "Drinks", "date": "2022-03-05T11:59:00+01:00" },
 ]

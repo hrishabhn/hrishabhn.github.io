@@ -67,15 +67,18 @@
     fill: white;
 }
 
+.budget-card .add {
+    position: absolute;
+    top: 12px;
+    right: 15px;
 
+    height: 18px;
+    width: 18px;
+    border-radius: 100px;
+    fill: white;
+}
 
-/* detail */
-
-.budget-detail {
-    height: 500px;
-    width: 400px;
-
-
-
-
+.budget-card .icon {
+    height: 10px;
+    width: 10px;
 }

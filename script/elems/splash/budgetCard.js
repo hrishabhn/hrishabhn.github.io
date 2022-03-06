@@ -11,9 +11,17 @@ function budgetCard() {
     let avail = pElement(`&#128 ${spendingData.totalRemaining} Available`)
     avail.classList = 'available'
 
+    let add = document.createElement('a')
+    add.classList = 'add green clickable'
+    add.append(iconElement(iconData['plus']))
+    add.onclick = function () {
+        addModalLayer(budgetModal())
+    }
+
     card.append(title)
     card.append(spent)
     card.append(avail)
+    card.append(add)
 
     let chart = budgetCardChart()
     card.append(chart)
@@ -75,7 +83,7 @@ function budgetCardIcons() {
     }
     tray.lastChild.remove()
     tray.append(growElement())
-    
+
     return tray
 }
 
