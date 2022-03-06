@@ -285,6 +285,7 @@ const appData = {
         {
             name: 'Reelgood',
             link: 'https://reelgood.com',
+            searchBase: 'https://reelgood.com/search?q=',
             desc: 'Find Streaming Service',
             thumb: 'reelgood.jpeg',
             accent: '00dc89',
@@ -292,6 +293,7 @@ const appData = {
         {
             name: 'IMDb',
             link: 'https://imdb.com',
+            searchBase: 'https://www.imdb.com/find?q=',
             desc: 'Search Movies & TV',
             thumb: 'imdb.jpeg',
             accent: 'F5C518',
@@ -299,6 +301,7 @@ const appData = {
         {
             name: 'JustWatch',
             link: 'https://www.justwatch.com/es',
+            searchBase: 'https://www.justwatch.com/es/buscar?q=',
             desc: 'Find Streaming Service',
             thumb: 'justWatch.jpeg',
             accent: 'fbc500',
