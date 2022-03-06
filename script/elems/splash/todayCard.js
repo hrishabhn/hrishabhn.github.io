@@ -17,7 +17,6 @@ function todayCard() {
 
             let text = pElement(task)
 
-
             item.append(check)
             item.append(spacerElement(5))
             item.append(text)
@@ -25,14 +24,8 @@ function todayCard() {
             card.append(item)
         }
     } else {
-
-        let noMore = pElement('No more tasks today')
-        noMore.classList = 'sub-title'
-        card.append(noMore)
-
-
+        card.append(subtitleElement('No more tasks today'))
     }
-
 
     return card
 }

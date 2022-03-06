@@ -21,9 +21,9 @@ function scrollEmbed(html, margin) {
 
 // 
 
-function contentTitleElement(title) {
+function subtitleElement(title) {
     var element = document.createElement('div')
-    element.classList = 'content-title'
+    element.classList = 'sub-title'
     element.innerHTML = title
     return element
 }
@@ -191,6 +191,11 @@ function descElement(desc) {
     let elem = document.createElement('p')
     elem.classList = 'desc'
     elem.innerHTML = desc
+    return elem
+}
+function headerElement() {
+    let elem = document.createElement('div')
+    elem.classList = 'header'
     return elem
 }
 
