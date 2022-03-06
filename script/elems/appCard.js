@@ -23,7 +23,9 @@ function appCard(app) {
         card.style.setProperty('--brand-col-light', `var(--${app.style}-light)`)
     }
 
-    if (app.searchBase) card.setAttribute('searchBase', app.searchBase)
+    if (app.searchBase) {
+        card.setAttribute('engineData', JSON.stringify(app))
+    }
 
     card.innerHTML = `
     ${thumb}

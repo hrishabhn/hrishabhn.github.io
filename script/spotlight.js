@@ -35,6 +35,16 @@ function spotlightRun(e) {
                 window.open(`https://www.google.com/search?q=${qOrig}`, '_self')
                 // window.open(`https://neeva.com/search?q=${qOrig}`, '_self')
             }
+        } else if (e.key == 'Tab') {
+            let row = document.getElementById('row-0')
+            if (row) {
+                let target = row.lastChild.firstChild
+                if (target.classList.value == 'spacer-x') { target = target.nextSibling }
+                
+                if (target.getAttribute('engineData')) {
+                    startSearchEngine(JSON.parse(target.getAttribute('engineData')))
+                }
+            }
         } else {
             removeAllChildNodes(resultElem())
             let resultRowArray = [
@@ -277,10 +287,22 @@ function textboxBase(name, desc) {
 }
 
 
-document.addEventListener('keyup', keyPress)
+document.addEventListener('keydown', keyPress)
 
 function keyPress(e) {
+    // console.log(e)
+
     if (e.key == '/') {
-        spotlightElem().focus()
+
+        if (!(document.activeElement == spotlightElem())) {
+            e.preventDefault()
+            spotlightElem().focus()
+        }
+    } else if (e.key == 'Tab') {
+        if (document.activeElement == spotlightElem()) {
+            e.preventDefault()
+        }
+    } else if (e.key == 'Escape') {
+        e.preventDefault()
     }
 }

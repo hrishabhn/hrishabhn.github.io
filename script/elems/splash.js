@@ -31,8 +31,6 @@ function createSpotlight() {
     let tray = document.createElement('div')
     tray.classList = 'spotlight-tray limit layer-1 card-shadow'
 
-
-
     let container = document.createElement('div')
     container.classList = 'spotlight-container'
 
@@ -58,6 +56,39 @@ function createSpotlight() {
     tray.append(result)
 
     return tray
+}
+
+function resetSpotlight() {
+    let container = (spotlightElem().parentElement)
+    let thumb = container.childNodes[1]
+    let input = container.lastChild
+
+    thumb.remove()
+    input.value = ''
+    input.placeholder = 'Search'
+    input.onkeyup = function (e) { spotlightRun(e) }
+}
+
+function startSearchEngine(data) {
+    let container = (spotlightElem().parentElement)
+    let input = container.lastChild
+
+    removeAllChildNodes(resultElem())
+
+    input.before(thumbElement(data.thumb))
+    input.value = ''
+    input.placeholder = `Search ${data.name}`
+    input.onkeyup = function (e) {
+        if (e.key == 'Enter') {
+            if (input.value) {
+                window.open(`${data.searchBase}${input.value}`, '_self')
+            }
+        } else if (e.key == 'Backspace') {
+            if (!input.value) {
+                resetSpotlight()
+            }
+        }
+    }
 }
 
 function pElement(text) {
