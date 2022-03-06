@@ -11,7 +11,7 @@ function appCard(app) {
 
 
     if (app.thumb) {
-        var thumb = `<div class="thumb" style="background-image: url(./appThumb/${app.thumb});"></div>`
+        var thumb = thumbElement(app.thumb).outerHTML
     } else if (app.icon) {
         var thumb = `<div class="thumb ${app.style}">${app.icon}</div>`
     }
