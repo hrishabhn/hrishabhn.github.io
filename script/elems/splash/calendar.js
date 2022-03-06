@@ -16,7 +16,6 @@ function calendarCard() {
     let displayedEvents = 0
     let countedEvents = 0
 
-
     function futureCard(events) {
         let moreData = {
             number: 0,
@@ -73,7 +72,7 @@ function calendarCard() {
     }
 
     // more events tmr
-    if (tmrEvents[0] && (displayedEvents > 2)) {
+    if (tmrEvents[0]) {
         card.append(futureCard(tmrEvents))
     }
 

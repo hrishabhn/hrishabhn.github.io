@@ -35,7 +35,10 @@ for (const event of events_all) {
         'Financial Economics Study': function () { focusData[1]['finecon'].trigger() },
 
         'Engineering Management': function () { focusData[1]['manage'].trigger() },
+
         'Controls Engineering': function () { focusData[1]['controls'].trigger() },
+        'Controls Study': function () { focusData[1]['controls'].trigger() },
+
         'Gym': function () { focusData[2]['workout'].trigger() },
     }
 
