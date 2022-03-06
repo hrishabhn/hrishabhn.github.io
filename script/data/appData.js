@@ -55,6 +55,7 @@ const commonApps = {
         return {
             name: `r/${sub}`,
             link: `https://www.reddit.com/r/${sub}`,
+            // searchBase: 'https://www.google.com/search?q=site:reddit.com+',
             desc: 'Subreddit',
             thumb: thumbData.reddit,
             accent: colorData['reddit'],
@@ -79,6 +80,7 @@ const commonApps = {
         return {
             name: name,
             link: link,
+            searchBase: 'https://www.youtube.com/results?search_query=',
             desc: desc,
             thumb: 'youtube.jpeg',
             accent: colorData['google'].red,
@@ -217,6 +219,7 @@ const appData = {
         {
             name: 'Google Maps',
             link: 'https://www.google.com/maps',
+            searchBase: 'https://www.google.com/maps/search/?api=1&query=',
             desc: 'Navigation & Transportation',
             thumb: 'google_maps.jpeg',
             accent: colorData['google'].green,
@@ -303,10 +306,10 @@ const appData = {
         {
             name: 'Netflix',
             link: 'https://netflix.com',
+            searchBase: 'https://www.netflix.com/search?q=',
             desc: 'Watch',
             thumb: 'netflix.jpeg',
             accent: 'e50914',
-            searchBase: 'https://www.netflix.com/search?q=',
         },
         {
             name: 'Hulu',
