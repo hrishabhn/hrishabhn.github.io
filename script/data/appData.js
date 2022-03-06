@@ -348,6 +348,7 @@ const appData = {
         {
             name: 'Goodreads',
             link: 'https://www.goodreads.com',
+            searchBase: 'https://www.goodreads.com/search?q=',
             desc: 'Reviews and Charts',
             thumb: 'goodreads.jpeg',
             accent: '382110',

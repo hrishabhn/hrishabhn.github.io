@@ -43,7 +43,7 @@ function createSpotlight() {
 
     input.autocomplete = 'off'
     input.spellcheck = 'false'
-    input.autocorrect = 'off'
+    // input.autocorrect = 'off'
 
     container.append(iconElement(iconData['search']))
     container.append(input)

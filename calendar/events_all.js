@@ -1,5 +1,4 @@
 let events_all = [
-{"location":"","end":"2022-03-06T22:00:00+01:00","start":"2022-03-06T21:00:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Controls Study"},
 {"location":"","end":"2022-03-08T00:00:00+01:00","start":"2022-03-07T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 6"},
 {"location":"10.2.11","end":"2022-03-07T14:00:00+01:00","start":"2022-03-07T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp.60,61 y 62"},
 {"location":"6.1.06","end":"2022-03-07T16:00:00+01:00","start":"2022-03-07T14:30:00+01:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
@@ -13,10 +12,11 @@ let events_all = [
 {"location":"2.3.D04","end":"2022-03-11T11:00:00+01:00","start":"2022-03-11T09:00:00+01:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
 {"location":"","end":"2022-03-15T00:00:00+01:00","start":"2022-03-14T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 7"},
 {"location":"","end":"2022-03-15T00:00:00+01:00","start":"2022-03-14T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/28CA2D8A-7766-4E71-88E7-F02DCD16AE0A:ABPerson","name":"Krish Buxani’s 22nd Birthday"},
-{"location":"","end":"2022-03-14T14:00:00+01:00","start":"2022-03-14T12:30:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Financial Economics"},
 {"location":"10.2.11","end":"2022-03-14T14:00:00+01:00","start":"2022-03-14T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Economía Financiera, grp.60,61 y 62"},
-{"location":"","end":"2022-03-14T16:00:00+01:00","start":"2022-03-14T14:30:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Industrial Organization"},
 {"location":"6.1.06","end":"2022-03-14T16:00:00+01:00","start":"2022-03-14T14:30:00+01:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
-{"location":"","end":"2022-03-14T19:30:00+01:00","start":"2022-03-14T18:00:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Commercial Law"},
 {"location":"","end":"2022-03-16T00:00:00+01:00","start":"2022-03-15T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Controls Exam 1"},
+{"location":"2.3.D04","end":"2022-03-15T11:00:00+01:00","start":"2022-03-15T09:00:00+01:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Ingeniería de Control I, grupo 39"},
+{"location":"2.3.B03","end":"2022-03-15T17:00:00+01:00","start":"2022-03-15T15:00:00+01:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Fundamentos de gestión empresarial, grupo 18"},
+{"location":"https:\/\/purdue-edu.zoom.us\/j\/93539416828?pwd=MnF3a1Y5MjNuaFpSekliSmhMM0s2QT09","end":"2022-03-15T20:00:00+01:00","start":"2022-03-15T19:00:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"SAIL Meeting"},
+{"location":"6.1.03","end":"2022-03-16T17:45:00+01:00","start":"2022-03-16T16:15:00+01:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Organización Industrial, grupo 70"},
 ]

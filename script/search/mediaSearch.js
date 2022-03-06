@@ -44,6 +44,10 @@ function searchMoviesRow(results, title) {
         let card = cardBase()
         card.classList.add('info-card', 'movie', 'clickable-o')
         card.onclick = function () { showTVDetail(results[k][0], results[k][1]) }
+        card.oncontextmenu = function (e) {
+            e.preventDefault()
+            contextModalShow([movieApps(movie)], e)
+        }
         if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
         let thumb = thumbBase(`../hrishabhn.github.io/media-image/TV/background/${movie.id}.${movie.style.posterType}`)
@@ -79,6 +83,10 @@ function searchMoviesRowBig(results, title) {
 
         let card = cardBase()
         card.onclick = function () { showTVDetail(results[k][0], results[k][1]) }
+        card.oncontextmenu = function (e) {
+            e.preventDefault()
+            contextModalShow([movieApps(movie)], e)
+        }
         card.classList.add('info-card', 'movie-big', 'clickable-o')
 
         card.append(bgElement(movie.style.color))

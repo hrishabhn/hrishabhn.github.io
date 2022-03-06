@@ -283,80 +283,6 @@ let movieData1 = [
 
 let soonMovies = [
     {
-        name: 'Severance',
-        id: 'severance',
-        link: 'https://tv.apple.com/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx',
-        info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
-            date: '4 Mar 2022',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'mystery',
-                ],
-            },
-            summary: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
-        },
-        style: {
-            color: colorData.fluent.gray20,
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'widest',
-            mobileType: 'png',
-            mobileSize: '8 / 10',
-        },
-        apps: {
-            tvTimeID: '371980',
-            reelgoodLink: 'https://reelgood.com/show/severance-2022',
-            imdbID: 'tt11280740',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Adam Scott',
-                char: 'Mark',
-            },
-            {
-                actor: 'Britt Lower',
-                char: 'Helly',
-            },
-            {
-                actor: 'Patricia Arquette',
-                char: 'Harmony Cobel',
-            },
-            {
-                actor: 'Zach Cherry',
-                char: 'Dylan',
-            },
-            {
-                actor: 'Tramell Tillman',
-                char: 'Milchick',
-            },
-            {
-                actor: 'Jen Tullock',
-                char: 'Devon',
-            },
-            {
-                actor: 'John Turturro',
-                char: 'Irving',
-            },
-            {
-                actor: 'Christopher Walken',
-                char: 'Burt',
-            },
-            {
-                actor: 'Dichen Lachman',
-                char: 'Ms. Casey',
-            },
-        ],
-    },
-    {
         name: 'How I Met Your Father',
         id: 'himyf',
         link: 'https://www.hulu.com/series/how-i-met-your-father-42771fe9-3174-43bc-ab6a-d8c3e618b934',
@@ -494,6 +420,80 @@ let soonMovies = [
             imdbID: 'tt6439752',
             subReddit: 'SnowFall',
         },
+    },
+    {
+        name: 'Severance',
+        id: 'severance',
+        link: 'https://tv.apple.com/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx',
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            date: '11 Mar 2022',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'mystery',
+                ],
+            },
+            summary: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+        },
+        style: {
+            color: colorData.fluent.gray20,
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'widest',
+            mobileType: 'png',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '371980',
+            reelgoodLink: 'https://reelgood.com/show/severance-2022',
+            imdbID: 'tt11280740',
+            subReddit: 'SeveranceAppleTVPlus',
+        },
+        cast: [
+            {
+                actor: 'Adam Scott',
+                char: 'Mark',
+            },
+            {
+                actor: 'Britt Lower',
+                char: 'Helly',
+            },
+            {
+                actor: 'Patricia Arquette',
+                char: 'Harmony Cobel',
+            },
+            {
+                actor: 'Zach Cherry',
+                char: 'Dylan',
+            },
+            {
+                actor: 'Tramell Tillman',
+                char: 'Milchick',
+            },
+            {
+                actor: 'Jen Tullock',
+                char: 'Devon',
+            },
+            {
+                actor: 'John Turturro',
+                char: 'Irving',
+            },
+            {
+                actor: 'Christopher Walken',
+                char: 'Burt',
+            },
+            {
+                actor: 'Dichen Lachman',
+                char: 'Ms. Casey',
+            },
+        ],
     },
     {
         name: 'Abbott Elementary',

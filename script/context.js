@@ -1,5 +1,5 @@
 function menuItemElem(item) {
-    let elem = document.createElement('div')
+    let elem = document.createElement('a')
     elem.classList = 'item'
 
     if (item.type == 'thumb') {
@@ -18,17 +18,22 @@ function menuItemElem(item) {
             item.trigger()
         }
     }
+    
+    if (item.link) {
+        elem.href = item.link
+        elem.style.cursor = 'pointer'
+    }
 
     if (item.data) {
         elem.append(dataElem(item.data.value))
     }
 
-
-
     return elem
 }
 
 function contextModalShow(data, e) {
+    console.log(data)
+    
     let menu = document.getElementById('context-menu')
     removeAllChildNodes(menu)
 
