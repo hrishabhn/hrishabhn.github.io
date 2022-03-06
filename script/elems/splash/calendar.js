@@ -15,6 +15,7 @@ function calendarCard() {
     // initialise variables
     let displayedEvents = 0
     let countedEvents = 0
+    let showingTmr = false
 
     function futureCard(events) {
         let moreData = {
@@ -67,10 +68,11 @@ function calendarCard() {
 
             if (event.allDay) { displayedEvents-- }
         }
+        showingTmr = true
     }
 
     // more events tmr
-    if (tmrEvents[0]) {
+    if (tmrEvents[0] && (showingTmr)) {
         card.append(futureCard(tmrEvents))
     }
 
