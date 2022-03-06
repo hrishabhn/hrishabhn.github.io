@@ -56,7 +56,7 @@ const commonApps = {
             name: `r/${sub}`,
             link: `https://www.reddit.com/r/${sub}`,
             desc: 'Subreddit',
-            thumb: 'reddit.jpeg',
+            thumb: thumbData.reddit,
             accent: colorData['reddit'],
             tags: [
                 'reddit',
@@ -306,6 +306,7 @@ const appData = {
             desc: 'Watch',
             thumb: 'netflix.jpeg',
             accent: 'e50914',
+            searchBase: 'https://www.netflix.com/search?q=',
         },
         {
             name: 'Hulu',

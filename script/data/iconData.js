@@ -79,6 +79,6 @@ const thumbData = {
     'iberia': 'iberia.jpeg',
     'british': 'ba.jpeg',
     'ryanair': 'ryanair.jpeg',
-
+    'reddit': 'reddit.jpeg'
 
 }
