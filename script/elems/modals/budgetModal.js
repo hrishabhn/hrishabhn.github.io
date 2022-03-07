@@ -31,12 +31,12 @@ function budgetModal() {
         }
 
         if (!dateInputs.date.length) {
-            dateInputs.date = new Date().getDate()
+            dateInputs.date = new Date().getDate().toString()
         }
 
 
         for (const item in dateInputs) {
-            while(dateInputs[item].length < 2) {
+            while (dateInputs[item].length < 2) {
                 console.log(dateInputs[item].length)
                 dateInputs[item] = `0${dateInputs[item]}`
             }

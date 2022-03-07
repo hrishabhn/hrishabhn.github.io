@@ -167,7 +167,7 @@ const appData = {
             name: 'Homework',
             link: 'https://app.clickup.com/8450846/v/l/4-20137584-1',
             desc: 'Assignments',
-            icon: iconData['book'],
+            thumb: thumbData['book'],
             style: 'red',
         },
         {
@@ -586,15 +586,15 @@ const appData = {
 //     },
 // ]
 
-const schoolApps = [
-    {
-        name: 'My Study Abroad',
-        style: {
-            bgClass: 'blue',
-        },
-        icon: iconData['book'],
-    },
-]
+// const schoolApps = [
+//     {
+//         name: 'My Study Abroad',
+//         style: {
+//             bgClass: 'blue',
+//         },
+//         icon: iconData['book'],
+//     },
+// ]
 
 
 

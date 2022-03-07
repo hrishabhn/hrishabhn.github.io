@@ -2,19 +2,7 @@ function appCard(app) {
     let card = document.createElement('a')
     card.classList = 'app-card layer-1 clickable-o card-hover'
     card.target = '_blank'
-
-    if (app.link) {
-        card.href = app.link
-    } else if (app.trigger) {
-        card.onclick = function () { app.trigger() }
-    }
-
-
-    if (app.thumb) {
-        var thumb = thumbElement(app.thumb).outerHTML
-    } else if (app.icon) {
-        var thumb = `<div class="thumb ${app.style}">${app.icon}</div>`
-    }
+    card = linkOrTrigger(card, app)
 
     if (app.accent) {
         card.style.setProperty('--brand-col', `#${app.accent}`)
@@ -25,37 +13,21 @@ function appCard(app) {
 
     if (app.searchBase) {
         card.setAttribute('engineData', JSON.stringify(app))
+        let icon = iconElement(iconData['search'])
+        icon.classList = 'search'
+        card.append(icon)
     }
 
-    card.innerHTML = `
-    ${thumb}
-    <div class="textbox">
-        <p class="name">${app.name}</p>
-        <p class="desc">${app.desc}</p>
-    </div>
-    `
-
+    card.append(thumbElement(app.thumb))
+    card.append(textboxBase(app.name, app.desc))
+    
     return card
 }
 
 function appCardSmall(app) {
     let card = document.createElement('a')
     card.classList = 'app-card-small layer-1 clickable-o card-hover'
-    // card.target = '_blank'
-
-    if (app.link) {
-        card.href = app.link
-    } else if (app.trigger) {
-        card.onclick = function () { app.trigger() }
-    }
-
-
-    if (app.thumb) {
-        var thumb = `<div class="thumb" style="background-image: url(./appThumb/${app.thumb});"></div>`
-    } else if (app.icon) {
-        var thumb = `<div class="thumb ${app.style}">${app.icon}</div>`
-
-    }
+    card = linkOrTrigger(card, app)
 
     if (app.accent) {
         card.style.setProperty('--brand-col', `#${app.accent}`)
@@ -64,10 +36,7 @@ function appCardSmall(app) {
         card.style.setProperty('--brand-col-light', `var(--${app.style}-light)`)
     }
 
-
-
-
-    card.innerHTML = thumb
+    card.append(thumbElement(app.thumb))
 
     return card
 }

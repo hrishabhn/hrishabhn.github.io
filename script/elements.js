@@ -99,23 +99,23 @@ function hscrollHuluElement(child) {
 //     return container
 // }
 
-function searchElement(contentItem) {
-    // console.log(contentItem)
-    var element = document.createElement('a')
-    element.id = 'search'
-    element.href = contentItem.link
-    // element.target = '_blank'
-    element.classList = 'layer-1 button-fg card-shadow clickable page-width'
-    element.append(iconElement(iconData['search']))
-    element.append(spacerElement(10))
+// function searchElement(contentItem) {
+//     // console.log(contentItem)
+//     var element = document.createElement('a')
+//     element.id = 'search'
+//     element.href = contentItem.link
+//     // element.target = '_blank'
+//     element.classList = 'layer-1 button-fg card-shadow clickable page-width'
+//     element.append(iconElement(iconData['search']))
+//     element.append(spacerElement(10))
 
-    var text = document.createElement('p')
-    text.innerHTML = contentItem.engine
-    element.append(text)
-    // console.log(element)
+//     var text = document.createElement('p')
+//     text.innerHTML = contentItem.engine
+//     element.append(text)
+//     // console.log(element)
 
-    return element
-}
+//     return element
+// }
 
 
 function colContainerRender(content1, content2) {

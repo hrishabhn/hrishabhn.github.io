@@ -46,9 +46,8 @@ function tvDetail(i, j) {
     `
 
     if (movie.info.summary) {
-        let sum = document.createElement('p')
+        let sum = pElement(movie.info.summary)
         sum.classList = 'summary'
-        sum.innerHTML = movie.info.summary
         info.append(sum)
     }
 

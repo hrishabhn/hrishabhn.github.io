@@ -5,7 +5,7 @@ const bookData0 = [
         link: 'kindle://',
         author: 'Andy Weir',
         coverType: 'jpg',
-        progress: '2%',
+        progress: '6%',
         format: 'EBook',
         style: 'brown',
     },
