@@ -1000,6 +1000,86 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
+        name: 'The Boys Presents: Diabolical',
+        id: 'diabolical',
+        link: {
+            primeVideo: 'B09KKMBRC8'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'sci-fi',
+                ],
+            },
+            summary: "From some of the most unhinged and maniacal minds in Hollywood today comes Diabolical, a collection of eight irreverent and emotionally shocking animated short films. Featuring stories by Seth Rogen, Awkwafina, Andy Samberg, Aisha Tyler, Justin Roiland, and more, each episode plunges elbow-deep into unseen crevices of The Boys Universe.",
+        },
+        style: {
+            color: colorData.fluent.red,
+            // posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            // mobileType: 'jpg',
+            // mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-boys-presents-diabolical-2022',
+            imdbID: 'tt16350094',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Grey Griffin',
+                char: 'Multiple',
+            },
+            {
+                actor: 'Antony Starr',
+                char: 'Homelander',
+            },
+            {
+                actor: 'Ben Schwartz',
+                char: 'Multiple',
+            },
+            {
+                actor: 'Chris Diamantopoulos',
+                char: 'Multiple',
+            },
+            {
+                actor: 'Angela Marie Volpe',
+                char: 'Multiple',
+            },
+            {
+                actor: 'Seth Rogen',
+                char: 'Drug Dealer',
+            },
+            {
+                actor: 'Awkwafina',
+                char: 'Multiple',
+            },
+            {
+                actor: 'John DiMaggio',
+                char: 'Groundhawk',
+            },
+            {
+                actor: 'Simon Pegg',
+                char: 'Hughie',
+            },
+            {
+                actor: 'Kumail Nanjiani',
+                char: 'Vik',
+            },
+        ],
+    },
+    {
         name: 'The Book of Boba Fett',
         id: 'boba',
         link: 'https://www.disneyplus.com/series/the-book-of-boba-fett/57TL7zLNu2wf',
