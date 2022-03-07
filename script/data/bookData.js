@@ -1,5 +1,15 @@
 const bookData0 = [
     {
+        name: 'Project Hail Mary',
+        id: 'project',
+        link: 'kindle://',
+        author: 'Andy Weir',
+        coverType: 'jpg',
+        progress: '2%',
+        format: 'EBook',
+        style: 'brown',
+    },
+    {
         name: 'Gweilo: Memories of a Hong Kong Childhood',
         id: 'gweilo',
         link: 'kindle://',
@@ -62,16 +72,6 @@ const bookData1 = [
         progress: '3h 0m left',
         format: 'AudioBook',
         style: 'blue',
-    },
-    {
-        name: 'Project Hail Mary',
-        id: 'project',
-        link: 'ibooks://',
-        author: 'Andy Weir',
-        coverType: 'jpg',
-        progress: 'NEW',
-        format: 'EBook',
-        style: 'brown',
     },
     {
         name: 'Ready Player One',
