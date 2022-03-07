@@ -73,7 +73,7 @@ for (const event of events_all) {
 
 function eventColor(calendar) {
     const data = {
-        'Spring 2022': '999',
+        'Spring 2022': colorData.fluent.red,
         'Personal': 'FF9200',
         'Travel': '0E61B9',
         'Key Dates': 'FFFF0B',
