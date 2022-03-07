@@ -4484,15 +4484,45 @@ const movieData8 = [
 ]
 const movieData9 = [
     {
+        name: 'Cars 2',
+        id: 'cars2',
+        // link: 'https://www.disneyplus.com/movies/cars-2',
+        info: {
+            service: 'disney',
+            studio: 'disney',
+            location: 'Disney+',
+            desc: {
+                year: 2011,
+                genre: [
+                    'adventure',
+                    'animation',
+                    'cars',
+                ],
+            },
+            summary: "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international espionage.",
+        },
+        style: {
+            color: '1E374D',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/cars-2-2011',
+            imdbID: 'tt1216475',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Cars',
-        id: 'cars',
+        id: 'cars1',
         // link: 'https://www.disneyplus.com/movies/cars',
         info: {
             service: 'disney',
             studio: 'disney',
             location: 'Disney+',
-            // date: '',
-            // weekday: '',
             desc: {
                 year: 2006,
                 genre: [
