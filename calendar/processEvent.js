@@ -14,16 +14,16 @@ for (const event of events_all) {
 
     event.color = eventColor(event.calendar)
 
-    const eventNameData = {
-        'Economía Financiera, grp.60,61 y 62': 'Financial Economics',
-        'Economía Financiera, grp. 62': 'Financial Economics',
-        'Organización Industrial, grupo 70': 'Industrial Organisation',
-        'Ingeniería de Control I, grupo 39': 'Controls Engineering',
-        'Fundamentos de gestión empresarial, grupo 18': 'Engineering Management',
-        'Fundamentos de gestión empresarial, grp.18 y 19': 'Engineering Management',
-    }
+    // const eventNameData = {
+    //     'Economía Financiera, grp.60,61 y 62': 'Financial Economics',
+    //     'Economía Financiera, grp. 62': 'Financial Economics',
+    //     'Organización Industrial, grupo 70': 'Industrial Organisation',
+    //     'Ingeniería de Control I, grupo 39': 'Controls Engineering',
+    //     'Fundamentos de gestión empresarial, grupo 18': 'Engineering Management',
+    //     'Fundamentos de gestión empresarial, grp.18 y 19': 'Engineering Management',
+    // }
 
-    if (eventNameData[event.name]) { event.name = eventNameData[event.name] }
+    // if (eventNameData[event.name]) { event.name = eventNameData[event.name] }
 
     const eventTrigger = {
         'SAIL Study': function () { focusData[1]['sail'].trigger() },
@@ -43,7 +43,7 @@ for (const event of events_all) {
     }
 
     if (event.location.includes('https')) {
-        if (event.location.includes('zoom')) {
+        if ((event.location.includes('zoom')  || (event.location.includes('webex')))) {
             event.icon = iconData['video-call']
         }
 
