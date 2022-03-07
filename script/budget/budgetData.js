@@ -41,6 +41,5 @@ let budgetData = [
     { "amount": 8.49, "name": "KFC", "category": "Food", "date": "2022-03-05T18:37:00+01:00" },
     { "amount": 45.5, "name": "Bule Bule", "category": "Drinks", "date": "2022-03-05T11:59:00+01:00" },
 
-
-
+    { "amount": 2.2, "name": "Breakfast", "category": "Food", "date": "2022-03-07T10:18:32+01:00" },
 ]

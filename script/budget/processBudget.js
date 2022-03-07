@@ -52,6 +52,7 @@ for (const cat in spendingCategories) {
 function thisMon() {
     let prevMonday = new Date()
     prevMonday.setDate(prevMonday.getDate() - (prevMonday.getDay() + 6) % 7)
+    prevMonday.setHours(0, 0, 0, 0)
     return prevMonday
 }
 
