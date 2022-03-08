@@ -194,6 +194,13 @@ const appData = {
             accent: 'bea977',
         },
         {
+            name: 'Apple',
+            link: 'https://www.apple.com',
+            desc: 'Online Store',
+            thumb: 'apple.png',
+            accent: '555555',
+        },
+        {
             name: 'ASOS',
             link: 'https://www.asos.com',
             desc: 'Clothes',
@@ -352,6 +359,13 @@ const appData = {
             desc: 'Reviews and Charts',
             thumb: 'goodreads.jpeg',
             accent: '382110',
+        },
+        {
+            name: 'Pocket',
+            link: 'https://getpocket.com',
+            desc: 'Saved Articles',
+            thumb: 'pocket.jpeg',
+            accent: 'EF4056',
         },
         {
             name: 'SCMP',

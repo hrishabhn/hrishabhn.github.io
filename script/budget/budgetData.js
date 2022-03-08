@@ -43,4 +43,14 @@ let budgetData = [
 
     { "amount": 2.2, "name": "Breakfast", "category": "Food", "date": "2022-03-07T10:18:32+01:00" },
     { "amount": 37.7, "name": "Chinese Grocery", "category": "Grocery", "date": "2022-03-07T00:00:00+01:00" },
+	{"amount":3,"name":"Breakfast","category":"Food","date":"2022-03-08T10:58:00+01:00"},
+
+
+{"amount":7.45,"name":"Lunch","category":"Food","date":"2022-03-08T14:51:55+01:00"},
+
+
+
+
+{"amount":3.9,"name":"Snack","category":"Food","date":"2022-03-08T20:04:55+01:00"},
+
 ]
