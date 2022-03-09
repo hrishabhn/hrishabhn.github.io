@@ -1,6 +1,6 @@
 function budgetModal() {
     let card = document.createElement('div')
-    card.classList = 'budget-modal layer-0'
+    card.classList = 'budget-modal layer-0 card-shadow'
 
     card.append(titleElement('Create Transaction'))
     card.append(spacerElement(5))
