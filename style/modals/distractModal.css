@@ -1,0 +1,40 @@
+.distract-modal{
+    flex-direction: column;
+    width: 300px;
+    max-width: 100vw;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.distract-modal .textbox{
+    flex-direction: column;
+    width: 100%;
+}
+.distract-modal .textbox p{
+    width: 100%;
+    text-align: center;
+}
+
+.distract-modal .textbox .name{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.distract-modal .textbox .desc{
+    font-size: 14px;
+    font-weight: 400;
+}
+.distract-modal .code{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.distract-modal input{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 400;
+}

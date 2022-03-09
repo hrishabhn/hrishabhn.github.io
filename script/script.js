@@ -273,12 +273,15 @@ function capitalizeFirstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
-function linkOrTrigger(elem, data) {
-    if (data.link) {
-        elem.href = data.link
-    } else if (data.trigger) {
-        elem.onclick = function () { data.trigger() }
+function openApp(data, force) {
+    if (!data.distract || !getFocus().work || force) {
+        if (data.link) {
+            window.open(data.link)
+        } else if (data.trigger) {
+            data.trigger()
+        }
+    } else {
+        addModalLayer(distractModal(data))
+        document.getElementById('distract-input').focus()
     }
-
-    return elem
 }

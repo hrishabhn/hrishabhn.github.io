@@ -6,6 +6,7 @@ const commonApps = {
             desc: 'Files',
             thumb: 'files.jpeg',
             style: 'blue',
+            distract: false,
         }
     },
     onedrive: function (link) {
@@ -15,6 +16,7 @@ const commonApps = {
             desc: 'Files',
             thumb: 'onedrive.jpeg',
             accent: colorData['onedrive'],
+            distract: false,
         }
     },
     notion: function (link) {
@@ -24,6 +26,7 @@ const commonApps = {
             desc: 'Notes',
             thumb: 'notion.jpeg',
             style: 'secondary',
+            distract: false,
         }
     },
     aula: function (id, n) {
@@ -39,6 +42,7 @@ const commonApps = {
             desc: 'Learn',
             thumb: thumbData['course'],
             style: 'purple',
+            distract: false,
         }
     },
     syllabus: function (id) {
@@ -48,6 +52,7 @@ const commonApps = {
             desc: 'Course Rules',
             thumb: thumbData['book'],
             style: 'red',
+            distract: false,
         }
     },
 
@@ -59,6 +64,7 @@ const commonApps = {
             desc: 'Subreddit',
             thumb: thumbData.reddit,
             accent: colorData['reddit'],
+            distract: true,
             tags: [
                 'reddit',
             ],
@@ -71,6 +77,7 @@ const commonApps = {
             desc: desc,
             thumb: 'twitter.jpeg',
             accent: colorData['twitter'],
+            distract: true,
             tags: [
                 'twitter',
             ],
@@ -84,13 +91,14 @@ const commonApps = {
             desc: desc,
             thumb: 'youtube.jpeg',
             accent: colorData['google'].red,
+            distract: true,
             tags: [
                 'youtube',
             ],
         }
     },
 
-    flight: function(key) {
+    flight: function (key) {
         const flight = flightData[key]
         return {
             name: `${flight.airline.code} ${flight.number}`,
@@ -98,6 +106,7 @@ const commonApps = {
             desc: `${flight.dep.code} &#8594 ${flight.arr.code}`,
             thumb: flight.airline.thumb,
             accent: flight.airline.color,
+            distract: false,
             tags: [
                 flight.dep.city,
                 flight.arr.city,
@@ -114,6 +123,7 @@ const appData = {
             desc: 'Email',
             thumb: 'outlook.jpeg',
             accent: '0078d4',
+            distract: false,
         },
         commonApps.onedrive('https://purdue0-my.sharepoint.com'),
         commonApps.notion('https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945'),
@@ -122,21 +132,24 @@ const appData = {
             link: 'ticktick://',
             desc: 'To do list',
             thumb: 'ticktick.jpeg',
-            style: 'blue'
+            style: 'blue',
+            distract: false,
         },
         {
             name: 'Tasks',
             link: 'https://app.clickup.com/8450846/v/l/6-48362200-1',
             desc: 'Tasks',
             thumb: 'double-check.png',
-            style: 'blue'
+            style: 'blue',
+            distract: false,
         },
         {
             name: 'Homework',
             link: 'https://app.clickup.com/8450846/v/l/4-54680096-1',
             desc: 'Tasks',
             thumb: thumbData['course'],
-            style: 'blue'
+            style: 'blue',
+            distract: false,
         },
     ],
     'notion': [
@@ -145,21 +158,24 @@ const appData = {
             link: 'https://www.notion.so/Inbox-90dd1c97df2d4bee8c605c27dfb5fb54',
             desc: 'Ideas & Notes',
             thumb: 'inbox.png',
-            accent: 'F4B459'
+            accent: 'F4B459',
+            distract: false,
         },
         {
             name: 'Accounts',
             link: 'https://www.notion.so/Accounts-ec9ee8a777504363a574706d8c820b99',
             desc: 'Websites and Apps',
             thumb: thumbData['user'],
-            accent: '607D8B'
+            accent: '607D8B',
+            distract: false,
         },
         {
             name: 'College',
             link: 'https://www.notion.so/College-fe3b0260a5944eb9a88f36efb2f69123',
             desc: 'School, Clubs & Courses',
             thumb: thumbData['tv'],
-            accent: 'F4B459'
+            accent: 'F4B459',
+            distract: false,
         },
     ],
     'school': [
@@ -169,6 +185,7 @@ const appData = {
             desc: 'Assignments',
             thumb: thumbData['book'],
             style: 'red',
+            distract: false,
         },
         {
             name: 'myPurdue',
@@ -176,6 +193,7 @@ const appData = {
             desc: 'Academics & Registration',
             thumb: 'purdue.jpeg',
             accent: colorData['purdue'],
+            distract: false,
         },
         {
             name: 'My Study Abroad',
@@ -183,6 +201,7 @@ const appData = {
             desc: 'Study Abroad Portal',
             thumb: thumbData['plane'],
             style: 'teal',
+            distract: false,
         },
     ],
     'shopping': [
@@ -192,6 +211,7 @@ const appData = {
             desc: 'Shopping',
             thumb: 'amazon.jpeg',
             accent: 'bea977',
+            distract: false,
         },
         {
             name: 'Apple',
@@ -199,6 +219,7 @@ const appData = {
             desc: 'Online Store',
             thumb: 'apple.png',
             accent: '555555',
+            distract: false,
         },
         {
             name: 'ASOS',
@@ -206,6 +227,7 @@ const appData = {
             desc: 'Clothes',
             thumb: 'asos.jpeg',
             style: 'secondary',
+            distract: false,
         },
     ],
     'bookmarks': [
@@ -215,6 +237,7 @@ const appData = {
             desc: 'Previous Version',
             thumb: thumbData['more'],
             style: 'secondary',
+            distract: false,
         },
         {
             name: 'Gmail',
@@ -222,6 +245,7 @@ const appData = {
             desc: 'Email',
             thumb: 'gmail.jpeg',
             accent: colorData['google'].red,
+            distract: false,
         },
         {
             name: 'Google Maps',
@@ -230,6 +254,7 @@ const appData = {
             desc: 'Navigation & Transportation',
             thumb: 'google_maps.jpeg',
             accent: colorData['google'].green,
+            distract: false,
         },
         {
             name: 'Apple Maps',
@@ -237,6 +262,7 @@ const appData = {
             desc: 'Navigation & Transportation',
             thumb: 'apple_maps.jpeg',
             style: 'green',
+            distract: false,
         },
         {
             name: 'Pirate Bay',
@@ -244,6 +270,7 @@ const appData = {
             desc: 'Movies & TV Shows',
             thumb: 'pirate.png',
             accent: 'a4724e',
+            distract: false,
         },
         {
             name: 'RARBG',
@@ -251,6 +278,7 @@ const appData = {
             desc: 'Movies & TV Shows',
             thumb: 'download.png',
             style: 'blue',
+            distract: false,
         },
         {
             name: 'SpanishDict',
@@ -258,6 +286,7 @@ const appData = {
             desc: 'Learn & Translate',
             thumb: 'spanishdict.jpeg',
             accent: '1b85e5',
+            distract: false,
         },
         {
             name: 'Password Generator',
@@ -265,6 +294,7 @@ const appData = {
             desc: 'Secure Passwords',
             thumb: 'key.png',
             style: 'yellow',
+            distract: false,
         },
         {
             name: 'Glovo',
@@ -272,6 +302,7 @@ const appData = {
             desc: 'Food Delivery',
             thumb: 'glovo.jpeg',
             accent: 'ffc244',
+            distract: false,
         },
         {
             name: 'Symbolab',
@@ -279,6 +310,7 @@ const appData = {
             desc: 'Calculator',
             thumb: 'symbolab.jpeg',
             accent: 'e02342',
+            distract: false,
         },
     ],
     'video': [
@@ -288,6 +320,7 @@ const appData = {
             desc: 'Track',
             thumb: 'tvTime.jpeg',
             accent: 'fbd737',
+            distract: true,
         },
         {
             name: 'Reelgood',
@@ -296,6 +329,7 @@ const appData = {
             desc: 'Find Streaming Service',
             thumb: 'reelgood.jpeg',
             accent: '00dc89',
+            distract: true,
         },
         {
             name: 'IMDb',
@@ -304,6 +338,7 @@ const appData = {
             desc: 'Search Movies & TV',
             thumb: 'imdb.jpeg',
             accent: 'F5C518',
+            distract: true,
         },
         {
             name: 'JustWatch',
@@ -312,6 +347,7 @@ const appData = {
             desc: 'Find Streaming Service',
             thumb: 'justWatch.jpeg',
             accent: 'fbc500',
+            distract: true,
         },
         {
             name: 'Netflix',
@@ -320,6 +356,7 @@ const appData = {
             desc: 'Watch',
             thumb: 'netflix.jpeg',
             accent: 'e50914',
+            distract: true,
         },
         {
             name: 'Hulu',
@@ -327,6 +364,7 @@ const appData = {
             desc: 'Watch',
             thumb: 'hulu.jpeg',
             accent: '1ce783',
+            distract: true,
         },
         {
             name: 'Prime Video',
@@ -334,8 +372,9 @@ const appData = {
             desc: 'Watch',
             thumb: 'prime.jpeg',
             accent: null,
+            distract: true,
         },
-        commonApps.youtube('YouTube', 'https://www.youtube.com','Watch Videos')
+        commonApps.youtube('YouTube', 'https://www.youtube.com', 'Watch Videos')
     ],
     'read': [
         {
@@ -344,6 +383,7 @@ const appData = {
             desc: 'Read',
             thumb: 'ibooks.jpeg',
             accent: colorData['ibooks'],
+            distract: false,
         },
         {
             name: 'Kindle',
@@ -351,6 +391,7 @@ const appData = {
             desc: 'Read',
             thumb: 'kindle.jpeg',
             style: 'indigo',
+            distract: false,
         },
         {
             name: 'Goodreads',
@@ -359,6 +400,7 @@ const appData = {
             desc: 'Reviews and Charts',
             thumb: 'goodreads.jpeg',
             accent: '382110',
+            distract: true,
         },
         {
             name: 'Pocket',
@@ -366,6 +408,7 @@ const appData = {
             desc: 'Saved Articles',
             thumb: 'pocket.jpeg',
             accent: 'EF4056',
+            distract: true,
         },
         {
             name: 'SCMP',
@@ -373,6 +416,7 @@ const appData = {
             desc: 'Hong Kong News',
             thumb: 'scmp.jpeg',
             accent: 'ffca05',
+            distract: true,
         },
         {
             name: 'The Verge',
@@ -380,6 +424,7 @@ const appData = {
             desc: 'Tech News',
             thumb: 'verge.png',
             accent: 'FA4B2A',
+            distract: true,
         },
         {
             name: 'No Mercy / No Malice',
@@ -387,6 +432,7 @@ const appData = {
             desc: 'Newsletter',
             thumb: 'nmnm.png',
             style: 'red',
+            distract: false,
         },
     ],
     'listen': [
@@ -396,6 +442,7 @@ const appData = {
             desc: 'Listen',
             thumb: 'podcasts.jpeg',
             style: 'purple',
+            distract: false,
         },
         {
             name: 'Audible',
@@ -403,6 +450,7 @@ const appData = {
             desc: 'AudioBooks',
             thumb: 'audible.jpeg',
             accent: 'F8991D',
+            distract: false,
         },
     ],
     'travel': [
@@ -411,14 +459,16 @@ const appData = {
             link: 'https://www.notion.so/Travel-798b2161bfef4ec7b4c93f4ce98fdffa',
             desc: 'Details & Documents',
             thumb: 'travel.png',
-            accent: '00AAF0'
+            accent: '00AAF0',
+            distract: false,
         },
         {
             name: 'Flighty',
             link: 'flighty://',
             desc: 'Flight Log & Status',
             thumb: 'flighty.jpeg',
-            style: 'secondary'
+            style: 'secondary',
+            distract: false,
         },
         commonApps.flight('mad-tfs'),
         commonApps.flight('tfs-mad'),
@@ -430,6 +480,7 @@ const appData = {
             desc: 'Cases & Vaccinations',
             thumb: 'virus.png',
             style: 'red',
+            distract: false,
         },
         {
             name: 'FAST Speed Test',
@@ -437,6 +488,7 @@ const appData = {
             desc: 'Internet Speed Test',
             thumb: 'fast.jpeg',
             style: 'red',
+            distract: false,
         },
         {
             name: 'Speedtest by Ookla',
@@ -444,6 +496,7 @@ const appData = {
             desc: 'Internet Speed Test',
             thumb: 'ookla.jpeg',
             accent: '141526',
+            distract: false,
         },
     ],
     'profiles': [
@@ -459,6 +512,7 @@ const appData = {
             desc: 'Free Icons',
             thumb: 'flaticon.png',
             accent: '0E2A47',
+            distract: false,
         },
         {
             name: 'Icons8',
@@ -466,6 +520,7 @@ const appData = {
             desc: 'Free Icons',
             thumb: 'icons8.png',
             accent: '1fb141',
+            distract: false,
         },
         {
             name: 'Average Colour',
@@ -473,6 +528,7 @@ const appData = {
             desc: 'Get Average Colour of Image',
             thumb: 'color.png',
             // style: 'red',
+            distract: false,
         },
         {
             name: 'Colour Picker',
@@ -480,6 +536,7 @@ const appData = {
             desc: 'Find Colour From Image',
             thumb: 'picker.png',
             // style: 'red',
+            distract: false,
         },
         {
             name: 'SVG OMG',
@@ -487,6 +544,7 @@ const appData = {
             desc: 'Clean Up SVGs',
             thumb: 'svg.png',
             // style: 'red',
+            distract: false,
         },
         {
             name: 'Fix SVG',
@@ -494,6 +552,7 @@ const appData = {
             desc: 'Remove Whitespace (Square)',
             thumb: 'svg.png',
             // style: 'red',
+            distract: false,
         },
         {
             name: 'Fix SVG',
@@ -501,6 +560,7 @@ const appData = {
             desc: 'Remove Whitespace (All)',
             thumb: 'svg.png',
             // style: 'red',
+            distract: false,
         },
         {
             name: 'Book Covers',
@@ -508,6 +568,7 @@ const appData = {
             desc: 'High Resolution Covers',
             thumb: thumbData['book'],
             // style: 'red',
+            distract: false,
         },
         {
             name: 'Round Corners',
@@ -515,6 +576,7 @@ const appData = {
             desc: 'Add Corner Radius to Image',
             thumb: 'corner.png',
             style: 'blue',
+            distract: false,
         },
     ],
 
@@ -526,6 +588,7 @@ const appData = {
             desc: 'Learn',
             thumb: thumbData['course'],
             style: 'orange',
+            distract: false,
         },
         commonApps.syllabus('sail'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/SAIL'),
@@ -559,102 +622,4 @@ const appData = {
         commonApps.youtube('Control Systems', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo', 'YouTube Lectures'),
         // https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo
     ],
-
-
-
-    // 'mse': [
-    //     {
-    //         name: 'Aula Global',
-    //         link: 'https://aulaglobal.uc3m.es/course/view.php?id=126601',
-    //         desc: 'Learn',
-    //         thumb: thumbData['course'],
-    //         style: 'purple',
-    //     },
-    //     {
-    //         name: 'OneDrive',
-    //         link: 'https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Materials%20Science%20Engineering',
-    //         desc: 'Files',
-    //         thumb: 'onedrive.jpeg',
-    //         accent: colorData['onedrive'],
-    //     },
-    //     {
-    //         name: 'Notion',
-    //         link: 'https://www.notion.so/Materials-Science-2e67bf77c9ce40d0a55ebcf6f27b0b2d',
-    //         desc: 'Notes',
-    //         thumb: 'notion.jpeg',
-    //         style: 'secondary',
-    //     },
-    // ],
-}
-
-
-
-
-// const prodApps = [
-//     {
-//         name: 'Gmail',
-//         style: {
-//             bgCol: 'ea4335',
-//         },
-//         icon: iconData['gmail'],
-//     },
-// ]
-
-// const schoolApps = [
-//     {
-//         name: 'My Study Abroad',
-//         style: {
-//             bgClass: 'blue',
-//         },
-//         icon: iconData['book'],
-//     },
-// ]
-
-
-
-// const notionApps = [
-//     {
-//         name: 'College',
-//         link: 'https://www.notion.so/College-fe3b0260a5944eb9a88f36efb2f69123',
-//         style: {
-//             bgClass: 'cyan',
-//         },
-//         icon: iconData['grade'],
-//     },
-//     {
-//         name: 'UC3M',
-//         link: 'https://www.notion.so/UC3M-946102702eb24209a3ce657c170e27f0',
-//         style: {
-//             bgClass: 'cathay',
-//         },
-//         icon: iconData['plane'],
-//     },
-//     {
-//         name: 'Accounts',
-//         link: 'https://www.notion.so/Accounts-ec9ee8a777504363a574706d8c820b99',
-//         style: {
-//             bgClass: 'mint',
-//         },
-//         icon: iconData['user'],
-//     },
-//     {
-//         name: 'Internship',
-//         link: 'https://www.notion.so/Internship-6d479c8f6fad4c0b8846daf98b215e2e',
-//         style: {
-//             bgClass: 'indigo',
-//         },
-//         icon: iconData['work'],
-//     },
-//     {
-//         name: 'Recipes',
-//         link: 'https://www.notion.so/Recipes-643a00434d5c48109d3630af84339053',
-//         style: {
-//             bgClass: 'orange',
-//         },
-//         icon: iconData['cook'],
-//     },
-// ]
-
-function oneDriveApp(link) {
-
 }

@@ -2,7 +2,7 @@ function appCard(app) {
     let card = document.createElement('a')
     card.classList = 'app-card layer-1 clickable-o card-hover'
     card.target = '_blank'
-    card = linkOrTrigger(card, app)
+    card.onclick = function () { openApp(app) }
 
     if (app.accent) {
         card.style.setProperty('--brand-col', `#${app.accent}`)
@@ -20,14 +20,14 @@ function appCard(app) {
 
     card.append(thumbElement(app.thumb))
     card.append(textboxBase(app.name, app.desc))
-    
+
     return card
 }
 
 function appCardSmall(app) {
     let card = document.createElement('a')
     card.classList = 'app-card-small layer-1 clickable-o card-hover'
-    card = linkOrTrigger(card, app)
+    card.onclick = function () { openApp(app) }
 
     if (app.accent) {
         card.style.setProperty('--brand-col', `#${app.accent}`)

@@ -6,6 +6,7 @@ let focusData = [
             thumb: thumbData['user'],
             style: 'secondary',
             apps: appData['main'],
+            work: false,
             // trays: function () {
             //     return [
             //         focusTray(),
@@ -20,6 +21,7 @@ let focusData = [
             thumb: thumbData['tv'],
             style: 'secondary',
             apps: appData['video'],
+            work: false,
             trays: function () {
                 return [
                     // searchMoviesRow(searchMovies(''),'TV & Movies'),
@@ -43,6 +45,7 @@ let focusData = [
             thumb: thumbData['book'],
             style: 'secondary',
             apps: appData['read'],
+            work: false,
             trays: function () {
                 return [
                     searchBookPodRow(rowBooks(0), 'Reading Now', 'book'),
@@ -58,6 +61,7 @@ let focusData = [
             thumb: thumbData['pod'],
             style: 'secondary',
             apps: appData['listen'],
+            work: false,
             trays: function () {
                 return [
                     searchBookPodRow(rowPods(0), 'Top', 'pod'),
@@ -76,6 +80,7 @@ let focusData = [
             thumb: thumbData['globe'],
             style: 'secondary',
             apps: appData['sail'],
+            work: true,
         },
         'indorg': {
             name: 'Industrial Organisation',
@@ -83,6 +88,7 @@ let focusData = [
             thumb: thumbData['finance'],
             style: 'secondary',
             apps: appData['indorg'],
+            work: true,
         },
         'finecon': {
             name: 'Financial Economics',
@@ -90,6 +96,7 @@ let focusData = [
             thumb: thumbData['money'],
             style: 'secondary',
             apps: appData['finecon'],
+            work: true,
         },
         'manage': {
             name: 'Engineering Management',
@@ -97,6 +104,7 @@ let focusData = [
             thumb: thumbData['work'],
             style: 'secondary',
             apps: appData['manage'],
+            work: true,
         },
         'controls': {
             name: 'Control Engineering',
@@ -104,6 +112,7 @@ let focusData = [
             thumb: thumbData['calculus'],
             style: 'secondary',
             apps: appData['controls'],
+            work: true,
         },
 
 
@@ -124,6 +133,7 @@ let focusData = [
             thumb: thumbData['plane'],
             style: 'secondary',
             apps: appData['travel'],
+            work: false,
             // trays: function () {
             //     return [
             //         flightDetailCard('mad-lhr'),
@@ -137,6 +147,7 @@ let focusData = [
             thumb: thumbData['gym'],
             style: 'secondary',
             apps: appData['main'],
+            work: false,
             trays: function () {
                 return [
                     workoutCard(),
@@ -151,9 +162,7 @@ let focusData = [
 for (let i = 0; i < focusData.length; i++) {
     for (const focus in focusData[i]) {
         focusData[i][focus].trigger = function () { setFocus(`${i}-${focus}`) }
-
     }
-
 }
 
 
