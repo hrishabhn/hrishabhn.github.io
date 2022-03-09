@@ -276,7 +276,7 @@ function capitalizeFirstLetter(str) {
 function openApp(data, force) {
     if (!data.distract || !getFocus().work || force) {
         if (data.link) {
-            window.open(data.link)
+            window.open(data.link, '_self')
         } else if (data.trigger) {
             data.trigger()
         }

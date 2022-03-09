@@ -40,7 +40,7 @@ function spotlightRun(e) {
             if (row) {
                 let target = row.lastChild.firstChild
                 if (target.classList.value == 'spacer-x') { target = target.nextSibling }
-                
+
                 if (target.getAttribute('engineData')) {
                     startSearchEngine(JSON.parse(target.getAttribute('engineData')))
                 }
@@ -220,8 +220,8 @@ function searchApps(q, data) {
         const name = data[i].name.toUpperCase().includes(q)
         const desc = data[i].desc.toUpperCase().includes(q)
 
+        let tagMatch = false
         if (data[i].tags) {
-            var tagMatch = false
             for (const tag of data[i].tags) {
                 if (tag.toUpperCase().includes(q)) {
                     tagMatch = true

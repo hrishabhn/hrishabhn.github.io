@@ -507,6 +507,17 @@ const appData = {
     ],
     'design': [
         {
+            name: 'Visual Studio Code',
+            link: 'vscode://',
+            desc: 'Code',
+            thumb: 'vscode.png',
+            accent: '0098FF',
+            distract: true,
+            tags: [
+                'vsc',
+            ],
+        },
+        {
             name: 'Flaticon',
             link: 'https://www.flaticon.com',
             desc: 'Free Icons',
