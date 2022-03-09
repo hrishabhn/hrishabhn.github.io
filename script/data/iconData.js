@@ -79,6 +79,12 @@ const thumbData = {
     'iberia': 'iberia.jpeg',
     'british': 'ba.jpeg',
     'ryanair': 'ryanair.jpeg',
-    'reddit': 'reddit.jpeg'
+    'reddit': 'reddit.jpeg',
 
+    // flags
+    'hk': 'hk.png',
+    'usa': 'usa.png',
+    'uk': 'uk.png',
+    'india': 'india.png',
+    'australia': 'australia.png',
 }

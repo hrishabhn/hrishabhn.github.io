@@ -590,6 +590,7 @@ const appData = {
             distract: false,
         },
     ],
+    'worldClock': [],
 
     // school
     'sail': [
@@ -633,4 +634,17 @@ const appData = {
         commonApps.youtube('Control Systems', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo', 'YouTube Lectures'),
         // https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo
     ],
+}
+
+for (const city of worldClockData) {
+    appData.worldClock.push({
+        name: processTime(new Date().getTime() + ((1000 * 60 * 60 * parseInt(city.offset)))),
+        desc: `${city.city} Time`,
+        thumb: city.thumb,
+        style: city.style,
+        distract: false,
+        tags: [
+            'world clock'
+        ],
+    })
 }
