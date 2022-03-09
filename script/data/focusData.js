@@ -7,6 +7,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['main'],
             work: false,
+            distract: false,
             // trays: function () {
             //     return [
             //         focusTray(),
@@ -22,6 +23,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['video'],
             work: false,
+            distract: true,
             trays: function () {
                 return [
                     // searchMoviesRow(searchMovies(''),'TV & Movies'),
@@ -46,6 +48,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['read'],
             work: false,
+            distract: false,
             trays: function () {
                 return [
                     searchBookPodRow(rowBooks(0), 'Reading Now', 'book'),
@@ -62,6 +65,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['listen'],
             work: false,
+            distract: false,
             trays: function () {
                 return [
                     searchBookPodRow(rowPods(0), 'Top', 'pod'),
@@ -81,6 +85,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['sail'],
             work: true,
+            distract: false,
         },
         'indorg': {
             name: 'Industrial Organisation',
@@ -89,6 +94,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['indorg'],
             work: true,
+            distract: false,
         },
         'finecon': {
             name: 'Financial Economics',
@@ -97,6 +103,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['finecon'],
             work: true,
+            distract: false,
         },
         'manage': {
             name: 'Engineering Management',
@@ -105,6 +112,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['manage'],
             work: true,
+            distract: false,
         },
         'controls': {
             name: 'Control Engineering',
@@ -113,6 +121,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['controls'],
             work: true,
+            distract: false,
         },
 
 
@@ -134,6 +143,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['travel'],
             work: false,
+            distract: false,
             // trays: function () {
             //     return [
             //         flightDetailCard('mad-lhr'),
@@ -148,6 +158,7 @@ let focusData = [
             style: 'secondary',
             apps: appData['main'],
             work: false,
+            distract: false,
             trays: function () {
                 return [
                     workoutCard(),
@@ -203,7 +214,8 @@ function focusApps() {
                 trigger: function () { setFocus(`${i}-${focus}`) },
                 desc: focusItemData.desc,
                 thumb: focusItemData.thumb,
-                style: focusItemData.style
+                style: focusItemData.style,
+                distract: focusItemData.distract,
             }
 
             apps.push(data)
