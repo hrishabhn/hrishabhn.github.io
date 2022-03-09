@@ -290,7 +290,7 @@ let soonMovies = [
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            date: 'Mar 8, 2022',
+            date: 'Mar 15, 2022',
             // weekday: '',
             desc: {
                 seasons: 1,
