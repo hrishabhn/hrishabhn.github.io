@@ -30,14 +30,8 @@ const commonApps = {
         }
     },
     aula: function (id, n) {
-        if (n) {
-            var nStr = ` (${n})`
-        } else {
-            var nStr = ``
-        }
-
         return {
-            name: `Aula Global${nStr}`,
+            name: n ? `Aula Global (${n})` : 'Aula Global',
             link: `https://aulaglobal.uc3m.es/course/view.php?id=${id}`,
             desc: 'Learn',
             thumb: thumbData['course'],
@@ -614,8 +608,8 @@ const appData = {
         commonApps.notion('https://www.notion.so/Industrial-Organisation-6f9a042e98f6458a9f509689c2025571'),
     ],
     'finecon': [
-        commonApps.aula('131130', 'Mon'),
-        commonApps.aula('123356', 'Thu'),
+        commonApps.aula('131130', 'Lectures'),
+        commonApps.aula('123356', 'Problems'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Financial%20Economics'),
         commonApps.notion('https://www.notion.so/Financial-Economics-f175d589aae64f7b9ecd3c101be4ff53'),
     ],
@@ -639,6 +633,7 @@ const appData = {
 for (const city of worldClockData) {
     appData.worldClock.push({
         name: processTime(new Date().getTime() + ((1000 * 60 * 60 * parseInt(city.offset)))),
+        link: googleSearch(`${city.city} time now`),
         desc: `${city.city} Time`,
         thumb: city.thumb,
         style: city.style,

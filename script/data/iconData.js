@@ -87,4 +87,7 @@ const thumbData = {
     'uk': 'uk.png',
     'india': 'india.png',
     'australia': 'australia.png',
+    'sa': 'sa.png',
+    'zim': 'zim.png',
+    'canada': 'canada.png',
 }

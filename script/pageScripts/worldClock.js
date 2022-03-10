@@ -18,6 +18,24 @@ const worldClockData = [
         style: 'blue',
     },
     {
+        city: 'Toronto',
+        thumb: thumbData.canada,
+        offset: '-6',
+        style: 'red',
+    },
+    {
+        city: 'Johannesburg',
+        thumb: thumbData.sa,
+        offset: '+1',
+        style: 'green',
+    },
+    {
+        city: 'Harare',
+        thumb: thumbData.zim,
+        offset: '+1',
+        style: 'orange',
+    },
+    {
         city: 'Los Angeles',
         thumb: thumbData.usa,
         offset: '-9',

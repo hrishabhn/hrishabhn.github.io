@@ -43,16 +43,14 @@ let budgetData = [
 
     { "amount": 2.2, "name": "Breakfast", "category": "Food", "date": "2022-03-07T10:18:32+01:00" },
     { "amount": 37.7, "name": "Chinese Grocery", "category": "Grocery", "date": "2022-03-07T00:00:00+01:00" },
-	{"amount":3,"name":"Breakfast","category":"Food","date":"2022-03-08T10:58:00+01:00"},
+    { "amount": 3, "name": "Breakfast", "category": "Food", "date": "2022-03-08T10:58:00+01:00" },
+    { "amount": 7.45, "name": "Lunch", "category": "Food", "date": "2022-03-08T14:51:55+01:00" },
+    { "amount": 3.9, "name": "Snack", "category": "Food", "date": "2022-03-08T20:04:55+01:00" },
+    { "amount": 7.95, "name": "Popeye’s", "category": "Food", "date": "2022-03-09T18:28:20+01:00" },
+    { "amount": 15, "name": "Commo", "category": "Drinks", "date": "2022-03-09T20:48:00+01:00" },
+    { "amount": 6.5, "name": "Shawarma", "category": "Food", "date": "2022-03-09T23:59:00+01:00" },
 
-
-{"amount":7.45,"name":"Lunch","category":"Food","date":"2022-03-08T14:51:55+01:00"},
-
-
-
-
-{"amount":3.9,"name":"Snack","category":"Food","date":"2022-03-08T20:04:55+01:00"},
-
+{"amount":1.8,"name":"Breakfast","category":"Food","date":"2022-03-10T12:10:54+01:00"},
 
 
 
