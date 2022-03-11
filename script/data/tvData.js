@@ -205,79 +205,6 @@ let movieData1 = [
             // subReddit: 'subreddit',
         },
     },
-    {
-        name: 'Blue Mountain State',
-        id: 'bms',
-        link: {
-            primeVideo: 'B08CG43CLR'
-        },
-        info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
-            desc: {
-                seasons: 3,
-                yearStart: 2010,
-                yearEnd: 2011,
-                genre: [
-                    'comedy',
-                    'sport',
-                ],
-            },
-            summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
-            tags: [
-                'bms',
-            ]
-        },
-        style: {
-            color: colorData.fluent.blue10,
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'png',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '134511',
-            reelgoodLink: 'https://reelgood.com/show/blue-mountain-state-2010',
-            imdbID: 'tt1344204',
-            subReddit: 'BMS',
-        },
-        cast: [
-            {
-                actor: 'Darin Brooks',
-                char: 'Alex Moran',
-            },
-            {
-                actor: 'Alan Ritchson',
-                char: 'Thad Castle',
-            },
-            {
-                actor: 'Chris Romano',
-                char: 'Sammy Cacciatore',
-            },
-            {
-                actor: 'Ed Marino',
-                char: 'Coach Marty Daniels',
-            },
-            {
-                actor: 'Denise Richards',
-                char: 'Debra',
-            },
-            {
-                actor: 'Frankie Shaw',
-                char: 'Mary Jo Cacciatore',
-            },
-            {
-                actor: 'Sam Jones III',
-                char: 'Craig Shilo',
-            },
-            {
-                actor: 'Page Kennedy',
-                char: 'Radon Randell',
-            },
-        ],
-    },
 ]
 
 
@@ -393,7 +320,7 @@ let soonMovies = [
             service: 'hbo',
             studio: 'fx',
             location: 'HBO Max',
-            date: '10 Mar, 2022',
+            date: '10 Mar, 2022 10:00:00',
             // weekday: '',
             desc: {
                 seasons: 5,
@@ -429,7 +356,7 @@ let soonMovies = [
             service: 'appleTV',
             studio: 'appleTV',
             location: ' TV+',
-            date: '11 Mar 2022',
+            date: '11 Mar 2022 08:00:00',
             // weekday: '',
             desc: {
                 seasons: 1,
@@ -4260,6 +4187,79 @@ const movieData8 = [
             imdbID: 'tt0386676',
             subReddit: 'DunderMifflin',
         },
+    },
+    {
+        name: 'Blue Mountain State',
+        id: 'bms',
+        link: {
+            primeVideo: 'B08CG43CLR'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            desc: {
+                seasons: 3,
+                yearStart: 2010,
+                yearEnd: 2011,
+                genre: [
+                    'comedy',
+                    'sport',
+                ],
+            },
+            summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
+            tags: [
+                'bms',
+            ]
+        },
+        style: {
+            color: colorData.fluent.blue10,
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'png',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '134511',
+            reelgoodLink: 'https://reelgood.com/show/blue-mountain-state-2010',
+            imdbID: 'tt1344204',
+            subReddit: 'BMS',
+        },
+        cast: [
+            {
+                actor: 'Darin Brooks',
+                char: 'Alex Moran',
+            },
+            {
+                actor: 'Alan Ritchson',
+                char: 'Thad Castle',
+            },
+            {
+                actor: 'Chris Romano',
+                char: 'Sammy Cacciatore',
+            },
+            {
+                actor: 'Ed Marino',
+                char: 'Coach Marty Daniels',
+            },
+            {
+                actor: 'Denise Richards',
+                char: 'Debra',
+            },
+            {
+                actor: 'Frankie Shaw',
+                char: 'Mary Jo Cacciatore',
+            },
+            {
+                actor: 'Sam Jones III',
+                char: 'Craig Shilo',
+            },
+            {
+                actor: 'Page Kennedy',
+                char: 'Radon Randell',
+            },
+        ],
     },
     {
         name: 'Fresh Prince of Bel-Air',
