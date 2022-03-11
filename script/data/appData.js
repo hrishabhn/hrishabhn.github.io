@@ -85,7 +85,7 @@ const commonApps = {
             desc: desc,
             thumb: 'youtube.jpeg',
             accent: colorData['google'].red,
-            distract: true,
+            // distract: true,
             tags: [
                 'youtube',
             ],
