@@ -116,4 +116,12 @@ const actorData = {
     'John Turturro': 'https://medias.unifrance.org/medias/116/172/175220/format_page/media.jpg',
     'Christopher Walken': 'https://m.media-amazon.com/images/M/MV5BMjA4ODUyNDQ2NV5BMl5BanBnXkFtZTYwODk2MTYz._V1_UY264_CR2,0,178,264_AL_.jpg',
     'Dichen Lachman': 'https://static.wikia.nocookie.net/marvelmovies/images/8/84/Dichen_Lachman.jpg',
+    'Itzan Escamilla': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5JOBhJM2PnCIWnXFIbB5TxX5-dNgX7RPkk64huusYyvbcexp',
+    'Omar Ayuso': 'http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRI8hAOrz2Oza7P3bL7vUvo29y6NhBjZHAsFVe3hzHxk7t84KWW2a-j1oZW8MfD',
+    'Miguel Bernardeau': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPmiVMT-ZlhJL7DjYvtq57m_4gus5SQDGBOBN2aCR-2wgSbvyi',
+    'Arón Piper': 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRCtzLOGW8UI-O_GBG1HO5JihIw-TVlXTvs5LEPpHQBzPT6v44Ijle9Qz7f2cEE',
+    'Mina El Hammani': 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQjxZWZ07GWHjbNgqr6EytV6DJ6IL1AWmInM4wi3Fqv4eJmzzaZCCOAwdFBxAqO',
+    'Álvaro Rico': 'http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQ-k0MDBwupIIf91Cz33cfpj5LuBz9A6bOxpmWabEl8vZcF5ieE9HM8qfyfSzY0',
+    'Ester Expósito': 'https://m.media-amazon.com/images/M/MV5BZWEzZDczZTAtMzM1MC00YWQ5LTg0OWUtMGQ5NTMzNzA5YzJiXkEyXkFqcGdeQXVyNjYzNDE4ODA@._V1_.jpg',
+    'Danna Paola': 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTsScW3a6XoHHL4jEWGL5tVoREDdl8FC2mQMIeDs-SO-fVSEJ_58ymXWMG9fSMU',
 }
