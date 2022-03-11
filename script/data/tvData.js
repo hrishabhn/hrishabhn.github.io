@@ -216,6 +216,45 @@ let movieData0 = [
 ]
 let movieData1 = [
     {
+        name: 'Formula 1: Drive to Survive',
+        id: 'drive',
+        link: {
+            netflix: '80204890'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'cars',
+                    'documentary',
+                    'sport',
+                ],
+            },
+            summary: "Drivers, managers and team owners live life in the fast lane — both on and off the track — during each cutthroat season of Formula 1 racing.",
+        },
+        style: {
+            color: '4d5372',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            // mobileType: 'jpg',
+            // mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/formula-1-drive-to-survive-2019',
+            imdbID: 'tt8289930',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'The Adventures of Tintin',
         id: 'tintin',
         link: {
@@ -2739,24 +2778,6 @@ const movieData5 = [
             tvTimeID: "320724",
             // reelgoodLink: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
             imdbID: "tt5114356",
-        },
-    },
-    {
-        name: "Formula 1: Drive to Survive",
-        id: "drive",
-        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-        info: {
-            service: 'netflix',
-            // studio: '',
-            location: "Netflix",
-            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-        },
-        style: {
-            color: '4d5372',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
         },
     },
     {

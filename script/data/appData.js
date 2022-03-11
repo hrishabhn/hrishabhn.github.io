@@ -171,6 +171,14 @@ const appData = {
             accent: 'F4B459',
             distract: false,
         },
+        {
+            name: 'Spain',
+            link: 'https://www.notion.so/UC3M-946102702eb24209a3ce657c170e27f0',
+            desc: 'Study Abroad & Paperwork',
+            thumb: thumbData['spain'],
+            style: 'yellow',
+            distract: false,
+        },
     ],
     'school': [
         {
@@ -285,6 +293,7 @@ const appData = {
         {
             name: 'SpanishDict',
             link: 'https://www.spanishdict.com',
+            searchBase: 'https://www.spanishdict.com/translate/',
             desc: 'Learn & Translate',
             thumb: 'spanishdict.jpeg',
             accent: '1b85e5',

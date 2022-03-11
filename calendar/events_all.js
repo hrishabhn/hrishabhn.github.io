@@ -1,9 +1,9 @@
 let events_all = [
-{"location":"10.1.7","end":"2022-03-10T14:00:00+01:00","start":"2022-03-10T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp. 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
-{"location":"","end":"2022-03-10T13:00:00+01:00","start":"2022-03-10T12:30:00+01:00","allDay":"No","notes":"","calendar":"Key Dates","link":"","name":"Financial Economics Exam 1"},
-{"location":"4.0.E03","end":"2022-03-10T17:00:00+01:00","start":"2022-03-10T15:00:00+01:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grp.18 y 19","calendar":"Spring 2022","link":"","name":"Engineering Management"},
 {"location":"","end":"2022-03-12T00:00:00+01:00","start":"2022-03-11T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/67435F39-3D6C-4D53-A5EE-FE1F5278E333:ABPerson","name":"Grant Hollyer’s 21st Birthday"},
 {"location":"2.3.D04","end":"2022-03-11T11:00:00+01:00","start":"2022-03-11T09:00:00+01:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
+{"location":"","end":"2022-03-11T18:00:00+01:00","start":"2022-03-11T16:15:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Controls Study"},
+{"location":"","end":"2022-03-11T18:30:00+01:00","start":"2022-03-11T18:00:00+01:00","allDay":"No","notes":"","calendar":"Errands","link":"","name":"Printing"},
+{"location":"","end":"2022-03-11T21:30:00+01:00","start":"2022-03-11T19:00:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Controls Study"},
 {"location":"","end":"2022-03-12T11:30:00+01:00","start":"2022-03-12T10:30:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Gym"},
 {"location":"","end":"2022-03-15T00:00:00+01:00","start":"2022-03-14T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 7"},
 {"location":"","end":"2022-03-15T00:00:00+01:00","start":"2022-03-14T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/28CA2D8A-7766-4E71-88E7-F02DCD16AE0A:ABPerson","name":"Krish Buxani’s 22nd Birthday"},

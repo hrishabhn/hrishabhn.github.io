@@ -1,8 +1,14 @@
 const worldClockData = [
     {
-        offset: '+7',
+        city: 'Madrid',
+        thumb: thumbData.spain,
+        offset: '0',
+        style: 'yellow',
+    },
+    {
         city: 'Hong Kong',
         thumb: thumbData.hk,
+        offset: '+7',
         style: 'red',
     },
     {

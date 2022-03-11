@@ -1,6 +1,6 @@
 let tasks_all = [
-	'SoFi HK',
+	'DNI',
+	'Return Amazon',
 	'Controls Homework 1',
-	'Vitium Rent',
-	'Toiler Paper',
+	'Buy pen refill',
 ]
