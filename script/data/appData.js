@@ -259,6 +259,14 @@ const appData = {
             distract: false,
         },
         {
+            name: 'Citymapper',
+            link: 'https://citymapper.com',
+            desc: 'Navigation & Transportation',
+            thumb: 'citymapper.jpeg',
+            accent: '2dc922',
+            distract: false,
+        },
+        {
             name: 'Pirate Bay',
             link: 'https://thepiratebay.org',
             desc: 'Movies & TV Shows',
