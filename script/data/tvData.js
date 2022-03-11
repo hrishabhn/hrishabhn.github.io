@@ -128,6 +128,52 @@ let movieData0 = [
             imdbID: 'tt7134908',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'Itzan Escamilla',
+                char: 'Samuel Garcia',
+            },
+            {
+                actor: 'Omar Ayuso',
+                char: 'Omar Shanaa',
+            },
+            {
+                actor: 'Miguel Bernardeau',
+                char: 'Guzmán Nunier',
+            },
+            {
+                actor: 'Arón Piper',
+                char: 'Ander Muñoz',
+            },
+            {
+                actor: 'Claudia Salas',
+                char: 'Rebeka Parrilla',
+            },
+            {
+                actor: 'Georgina Amorós',
+                char: 'Cayetana Grajera',
+            },
+            {
+                actor: 'Mina El Hammani',
+                char: 'Nadia Shanaa',
+            },
+            {
+                actor: 'Elisabet Gelabert',
+                char: 'Szucena',
+            },
+            {
+                actor: 'Álvaro Rico',
+                char: 'Polo Benavent',
+            },
+            {
+                actor: 'Ester Expósito',
+                char: 'Carla Roson',
+            },
+            {
+                actor: 'Danna Paola',
+                char: 'Lu Montesinos',
+            },
+        ],
     },
     {
         name: 'Ozark',
