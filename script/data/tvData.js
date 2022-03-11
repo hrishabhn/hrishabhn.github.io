@@ -686,6 +686,41 @@ const movieData2 = [
 ]
 const movieData3 = [
     {
+        name: 'Jurassic World: Dominion',
+        id: 'jurassic6',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            studio: 'universal',
+            location: 'Coming Soon',
+            date: 'Jun 10, 2022',
+            desc: {
+                year: 2022,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "Four years after the destruction of Isla Nublar, dinosaurs now live--and hunt--alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history's most fearsome creatures.",
+        },
+        style: {
+            color: colorData.fluent.cyan30,
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '1000 / 1204',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/jurassic-world-dominion-2021',
+            imdbID: 'tt8041270',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Eternals',
         id: 'eternals',
         // link: {
@@ -695,7 +730,7 @@ const movieData3 = [
             // service: 'service',
             studio: 'marvel',
             location: 'Coming Soon',
-            date: 'Nov 5, 2021',
+            // date: 'Nov 5, 2021',
             desc: {
                 year: 2021,
                 genre: [
@@ -2704,45 +2739,6 @@ const movieData5 = [
 ]
 const movieData6 = [
     {
-        name: 'The Mandalorian',
-        id: 'mando',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'disney',
-            studio: 'starwars',
-            location: 'Disney+',
-            date: 'Dec 24, 2021',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                    'star wars',
-                ],
-            },
-            summary: "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
-        },
-        style: {
-            color: '4d627f',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '361753',
-            reelgoodLink: 'https://reelgood.com/show/the-mandalorian-2019',
-            imdbID: 'tt8111088',
-            subReddit: 'TheMandalorianTV',
-        },
-    },
-    {
         name: 'Atlanta',
         id: 'atlanta',
         link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
@@ -2816,37 +2812,6 @@ const movieData6 = [
             reelgoodLink: 'https://reelgood.com/show/the-boys-2019',
             imdbID: 'tt1190634',
             subReddit: 'TheBoys',
-        },
-    },
-    {
-        name: 'Jurassic World: Dominion',
-        id: 'jurassic6',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            studio: 'universal',
-            location: 'Coming Soon',
-            date: 'Jun 10, 2022',
-            desc: {
-                year: 2022,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
-            summary: "Coming soon.",
-        },
-        style: {
-            color: '595441',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tallest',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/jurassic-world-dominion-2021',
-            imdbID: 'tt8041270',
         },
     },
 ]
@@ -3255,6 +3220,45 @@ const movieData7 = [
             reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
             imdbID: "tt9561862",
             subReddit: "LoveDeathAndRobots",
+        },
+    },
+    {
+        name: 'The Mandalorian',
+        id: 'mando',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'disney',
+            studio: 'starwars',
+            location: 'Disney+',
+            // date: 'Dec 24, 2021',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                    'star wars',
+                ],
+            },
+            summary: "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
+        },
+        style: {
+            color: '4d627f',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '361753',
+            reelgoodLink: 'https://reelgood.com/show/the-mandalorian-2019',
+            imdbID: 'tt8111088',
+            subReddit: 'TheMandalorianTV',
         },
     },
     {
