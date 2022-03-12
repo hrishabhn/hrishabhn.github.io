@@ -600,6 +600,14 @@ const appData = {
             style: 'blue',
             distract: false,
         },
+        {
+            name: 'Fanart',
+            link: 'https://fanart.tv',
+            desc: 'TV & Movie Art',
+            thumb: 'fanart.png',
+            accent: '22B6E0',
+            distract: true,
+        },
     ],
     'worldClock': [],
 

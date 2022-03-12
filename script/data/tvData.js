@@ -212,6 +212,28 @@ let movieData0 = [
             imdbID: 'tt5071412',
             subReddit: 'Ozark',
         },
+        cast: [
+            {
+                actor: 'Jason Bateman',
+                char: 'Marty Byrde',
+            },
+            {
+                actor: 'Laura Linney',
+                char: 'Wendy Byrde',
+            },
+            {
+                actor: 'Sofia Hublitz',
+                char: 'Charlotte Byrde',
+            },
+            {
+                actor: 'Skylar Gaertner',
+                char: 'Jonah Byrde',
+            },
+            {
+                actor: 'Julia Garner',
+                char: 'Ruth Langmore',
+            },
+        ],
     },
 ]
 let movieData1 = [
@@ -1046,6 +1068,85 @@ const movieData3 = [
     },
 ]
 const movieData4 = [
+    {
+        name: 'Inventing Anna',
+        id: 'anna',
+        link: {
+            netflix: '81008305'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                year: 2022,
+                genre: [
+                    'drama',
+                ],
+            },
+            summary: "Audacious entrepreneur or con artist? A journalist chases down the story of Anna Delvey, who convinced New York's elite she was a German heiress.",
+        },
+        style: {
+            color: '000000',
+            color: colorData['fluent'].red,
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'png',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/inventing-anna-2022',
+            imdbID: 'tt8740976',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Anna Chlumsky',
+                char: 'Vivian Kent',
+            },
+            {
+                actor: 'Julia Garner',
+                char: 'Anna Delvey',
+            },
+            {
+                actor: 'Arian Moayed',
+                char: 'Todd',
+            },
+            {
+                actor: 'Katie Lowes',
+                char: 'Rachel',
+            },
+            {
+                actor: 'Alexis Floyd',
+                char: 'Neff',
+            },
+            {
+                actor: 'Anders Holm',
+                char: 'Jack',
+            },
+            {
+                actor: 'Anna Deavere Smith',
+                char: 'Maud',
+            },
+            {
+                actor: 'Jeff Perry',
+                char: 'Lou',
+            },
+            {
+                actor: 'Terry Kinney',
+                char: 'Barry',
+            },
+            {
+                actor: 'Laverne Cox',
+                char: 'Kacy Duke',
+            },
+        ],
+    },
     {
         name: 'The Boys Presents: Diabolical',
         id: 'diabolical',

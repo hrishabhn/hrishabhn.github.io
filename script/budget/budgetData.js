@@ -56,4 +56,9 @@ let budgetData = [
 
 
 
+
+{"amount":4.42,"name":"4.42","category":"Subscription","date":"2022-03-12T02:12:18+01:00"},
+
+
+
 ]
