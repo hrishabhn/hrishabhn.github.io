@@ -87,6 +87,13 @@
     margin-right: 8px;
     fill: white;
 }
+#context-menu .item .col-block {
+    height: 100%;
+    min-height: 20px;
+    width: 3px;
+    border-radius: 100px;
+    margin-right: 5px;
+}
 
 @media screen and (prefers-color-scheme: light) {
     #context-menu {

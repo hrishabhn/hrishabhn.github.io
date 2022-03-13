@@ -8,6 +8,11 @@ function menuItemElem(item) {
         let icon = iconElement(item.icon)
         icon.classList.add(item.style)
         elem.append(icon)
+    } else if (item.type == 'col-block') {
+        let block = document.createElement('div')
+        block.classList = 'col-block'
+        block.style.setProperty('background-color', `#${item.color}`)
+        elem.append(block)
     }
 
     elem.append(textboxBase(item.name, item.desc))
@@ -47,7 +52,6 @@ function contextModalShow(data, e) {
             menu.lastChild.remove()
             menu.append(dividerElem())
         } else if (tray.name) {
-            let title = 
             menu.append(titleElement(tray.name))
             menu.append(hlineListElement(12))
         }

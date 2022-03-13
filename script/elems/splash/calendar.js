@@ -20,10 +20,13 @@ function calendarCard() {
     function futureCard(events) {
         let moreData = {
             number: 0,
-            colors: {}
+            colors: {},
+            events: [],
         }
 
         for (const event of events) {
+            moreData.events.push(event)
+
             moreData.number++
             countedEvents++
 
@@ -88,8 +91,23 @@ function calendarCard() {
 
 
 function futureCardElem(data) {
+    console.log(data.events)
+    let menuData = []
+
+    for (const event of data.events) {
+        menuData.push({
+            type: 'col-block',
+            name: event.name,
+            desc: event.duration,
+            color: event.color,
+        })
+    }
+
     let card = document.createElement('div')
     card.classList = 'event future'
+    card.onclick = function (e) {
+        contextModalShow([menuData], e)
+    }
 
     for (const color in data.colors) {
         let dot = document.createElement('div')
