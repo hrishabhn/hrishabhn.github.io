@@ -168,7 +168,8 @@ function eventCardElem(event) {
 //         let card = eventCardElem(data[k])
 //         tray.append(card)
 
-}//             tray.append(spacerElement(10))
+//         if (k < data.length - 1) {
+//             tray.append(spacerElement(10))
 //         }
 //     }
 //     row.append(tray)
