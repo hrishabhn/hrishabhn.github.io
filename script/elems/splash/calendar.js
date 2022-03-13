@@ -88,8 +88,6 @@ function calendarCard() {
 
 
 function futureCardElem(data) {
-    // console.log(data)
-
     let card = document.createElement('div')
     card.classList = 'event future'
 
@@ -126,7 +124,6 @@ function eventCardElem(event) {
     } else {
         info.append(textboxBase(event.name, null))
         eventCard.classList.add('all-day')
-        // displayedEvents--
     }
 
     info.append(growElement())
