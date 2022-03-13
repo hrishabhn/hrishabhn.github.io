@@ -53,12 +53,8 @@ let budgetData = [
     { "amount": 8.8, "name": "Ramen", "category": "Food", "date": "2022-03-10T10:06:00+01:00" },
     { "amount": 3.4, "name": "Frozen Yogurt", "category": "Food", "date": "2022-03-10T10:38:00+01:00" },
     { "amount": 10.8, "name": "Lunch", "category": "Food", "date": "2022-03-11T12:23:00+01:00" },
-
-
-
-
-{"amount":4.42,"name":"4.42","category":"Subscription","date":"2022-03-12T02:12:18+01:00"},
-
-
-
+    { "amount": 4.42, "name": "YouTube Premium", "category": "Subscription", "date": "2022-03-12T02:12:18+01:00" },
+    { "amount": 22.68, "name": "Dia", "category": "Grocery", "date": "2022-03-12T14:10:57+01:00" },
+    { "amount": 14.5, "name": "Dinner", "category": "Food", "date": "2022-03-12T19:54:00+01:00" },
+    { "amount": 7, "name": "Drinks", "category": "Drinks", "date": "2022-03-12T22:49:00+01:00" },
 ]

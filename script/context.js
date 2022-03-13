@@ -25,6 +25,7 @@ function menuItemElem(item) {
     }
 
     if (item.data) {
+        elem.append(spacerElement(10))
         elem.append(dataElem(item.data.value))
     }
 
