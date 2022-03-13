@@ -20,13 +20,13 @@ const worldClockData = [
     {
         city: 'West Lafayette',
         thumb: thumbData.usa,
-        offset: '-6',
+        offset: '-5',
         style: 'blue',
     },
     {
         city: 'Toronto',
         thumb: thumbData.canada,
-        offset: '-6',
+        offset: '-5',
         style: 'red',
     },
     {
@@ -44,7 +44,7 @@ const worldClockData = [
     {
         city: 'Los Angeles',
         thumb: thumbData.usa,
-        offset: '-9',
+        offset: '-8',
         style: 'blue',
     },
     {

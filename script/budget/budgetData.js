@@ -57,4 +57,6 @@ let budgetData = [
     { "amount": 22.68, "name": "Dia", "category": "Grocery", "date": "2022-03-12T14:10:57+01:00" },
     { "amount": 14.5, "name": "Dinner", "category": "Food", "date": "2022-03-12T19:54:00+01:00" },
     { "amount": 7, "name": "Drinks", "category": "Drinks", "date": "2022-03-12T22:49:00+01:00" },
+    { "amount": 8, "name": "Starbucks", "category": "Food", "date": "2022-03-13T00:00:00+01:00" },
+    { "amount": 15.1, "name": "Udon", "category": "Food", "date": "2022-03-13T15:53:00+01:00" },
 ]
