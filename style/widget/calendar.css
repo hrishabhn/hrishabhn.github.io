@@ -50,6 +50,9 @@
 .event .info .textbox p{
     max-width: 100%;
     display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .event .info .name{
     font-size: 12px;
