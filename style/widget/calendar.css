@@ -44,7 +44,7 @@
     align-items: flex-start;
 }
 .event.all-day .info{
-    padding: 0 5px;
+    padding: 0 2px;
 }
 
 .event .info .textbox p{
@@ -57,7 +57,6 @@
 .event .info .name{
     font-size: 12px;
     font-weight: 500;
-
 }
 .event .info .desc{
     font-size: 10px;
