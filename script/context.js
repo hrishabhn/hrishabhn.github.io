@@ -10,7 +10,7 @@ function menuItemElem(item) {
         elem.append(icon)
     }
 
-    elem.append(nameElement(item.name))
+    elem.append(textboxBase(item.name, item.desc))
     elem.append(growElement())
 
     if (item.trigger) {
