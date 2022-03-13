@@ -108,7 +108,7 @@ function futureCardElem(data) {
 
 function eventCardElem(event) {
     let eventCard = document.createElement('a')
-    eventCard.classList = 'event clickable'
+    eventCard.classList = 'event clickable-o'
     eventCard.style.setProperty('--col', `#${event.color}`)
     if (event.hasStarted) { eventCard.classList.add('started') }
 
