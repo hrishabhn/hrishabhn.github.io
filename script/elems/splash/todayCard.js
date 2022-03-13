@@ -1,6 +1,6 @@
 function todayCard() {
-    let card = document.createElement('a')
-    card.classList = 'today-card card-item clickable-o layer-1 card-shadow'
+    let card = widgetItemElement('a')
+    card.classList.add('today-card', 'clickable-o')
     card.href = 'ticktick://v1/show?smartlist=today'
 
     let title = titleElement('Today')

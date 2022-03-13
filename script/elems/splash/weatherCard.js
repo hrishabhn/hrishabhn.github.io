@@ -1,7 +1,7 @@
 function weatherCard(data) {
-    let card = document.createElement('div')
+    let card = widgetItemElement('a')
     card.id = 'weather-card'
-    card.classList = 'card-item clickable-o layer-1 card-shadow'
+    card.classList.add('clickable-o')
 
 
 

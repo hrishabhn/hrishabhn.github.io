@@ -1,6 +1,6 @@
 function budgetCard() {
-    let card = document.createElement('div')
-    card.classList = 'budget-card card-item layer-1 card-shadow'
+    let card = widgetItemElement('div')
+    card.classList.add('budget-card')
 
     let title = titleElement('Spending')
     title.classList.add('green-fg')

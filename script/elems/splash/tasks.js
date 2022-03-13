@@ -1,8 +1,7 @@
 
 function tasksCard() {
-    let tasksCard = document.createElement('div')
+    let tasksCard = widgetItemElement('div')
     tasksCard.id = 'tasks-card'
-    tasksCard.classList = 'card-item layer-1 card-shadow'
 
     let title = titleElement('Ideas')
     title.classList.add('yellow-fg')

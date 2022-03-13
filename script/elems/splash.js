@@ -111,13 +111,18 @@ function widgetCard() {
 
     return card
 }
+function widgetItemElement(type) {
+    let card = document.createElement(type)
+    card.classList = 'card-item layer-1 card-shadow'
+    return card
+}
 
 
 function flightCountdownCard(flightKey) {
     const flight = firstFlight()
 
-    let card = document.createElement('div')
-    card.classList = 'flight-countdown card-item clickable layer-1 card-shadow'
+    let card = widgetItemElement('div')
+    card.classList.add('flight-countdown', 'clickable-o')
     card.onclick = function () { flight.detail() }
 
     let top = document.createElement('div')
