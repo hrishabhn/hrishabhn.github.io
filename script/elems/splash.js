@@ -105,7 +105,8 @@ function widgetCard() {
     card.append(calendarCard())
     card.append(todayCard())
     card.append(budgetCard())
-    card.append(flightCountdownCard('mad-tfs'))
+    // card.append(flightCountdownCard('mad-tfs'))
+    card.append(weatherCard())
     card.append(tasksCard())
 
     return card

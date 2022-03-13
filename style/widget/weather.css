@@ -1,0 +1,14 @@
+#weather-card .temp {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#weather-card .icon {
+    width: 20px;
+    height: 20px;
+}
+
+#weather-card .status, #weather-card .hilo {
+    font-size: 14px;
+    font-weight: 400;
+}

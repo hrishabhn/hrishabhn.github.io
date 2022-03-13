@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="style/widget/tasks.css">
     <link rel="stylesheet" href="style/modals/budgetModal.css">
     <link rel="stylesheet" href="style/modals/distractModal.css">
+    <link rel="stylesheet" href="style/widget/weather.css">
 
 
     <link rel="stylesheet" href="style/media/media.css">
@@ -56,15 +57,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+        <meta name="theme-color" content="#2c2c2e" media="(prefers-color-scheme: dark)">
+        <meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)">
 
     <title id="title-page">Dashboard</title>
 </head>
 
-<body id="body" ontouchstart="" onload="loadApp()">
+<body id="body" ontouchstart="" onload="loadApp()" class="layer-0">
     <div class="main">
         <div></div>
         <div id="topbar" class="topbar layer-1"></div>
-        <div id="rest-of-stuff" class="layer-0">
+        <div id="rest-of-stuff">
             <div id="splash"></div>
             <div id="home-all"></div>
         </div>
@@ -106,6 +109,7 @@
 <script src="script/elems/splash/todayCard.js"></script>
 <script src="script/elems/splash/budgetCard.js"></script>
 <script src="script/elems/splash/tasks.js"></script>
+<script src="script/elems/splash/weatherCard.js"></script>
 
 <script src="script/elems/modals/budgetModal.js"></script>
 <script src="script/elems/modals/distractModal.js"></script>

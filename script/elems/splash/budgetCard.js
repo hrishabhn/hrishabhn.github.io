@@ -25,7 +25,7 @@ function budgetCard() {
 
     let chart = budgetCardChart()
     card.append(chart)
-    card.append(budgetCardIcons())
+    // card.append(budgetCardIcons())
 
     return card
 }
