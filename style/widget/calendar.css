@@ -23,16 +23,20 @@
     height: 100%;
     flex-grow: 1;
     flex-shrink: 1;
-    padding: 5px;
+    /* padding: 5px; */
+    padding: 3px 1px;
 
     border-radius: 3px;
     overflow: hidden;
 }
 .event .info .bg{
-    opacity: 0.25;
+    opacity: 0;
+}
+.event.started .info{
+    padding: 5px;
 }
 .event.started .info .bg{
-    opacity: 0.5;
+    opacity: 0.25;
 }
 .event.all-day .info .bg{
     opacity: 0;
