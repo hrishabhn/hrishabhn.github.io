@@ -146,32 +146,31 @@ function eventCardElem(event) {
 }
 
 
-function searchCal(q) {
-    let results = []
-    for (const event of events_all) {
-        const name = event.name.toUpperCase().includes(q)
-        const location = event.location.toUpperCase().includes(q)
+// function searchCal(q) {
+//     let results = []
+//     for (const event of events_all) {
+//         const name = event.name.toUpperCase().includes(q)
+//         const location = event.location.toUpperCase().includes(q)
 
-        if (name || location) {
-            results.push(event)
-        }
-    }
+//         if (name || location) {
+//             results.push(event)
+//         }
+//     }
 
-    return results
-}
+//     return results
+// }
 
-function searchCalRow(data) {
-    let row = rowBase('Calendar Events')
-    let tray = trayBase()
+// function searchCalRow(data) {
+//     let row = rowBase('Calendar Events')
+//     let tray = trayBase()
 
-    for (let k = 0; k < data.length; k++) {
-        let card = eventCardElem(data[k])
-        tray.append(card)
+//     for (let k = 0; k < data.length; k++) {
+//         let card = eventCardElem(data[k])
+//         tray.append(card)
 
-        if (k < data.length - 1) {
-            tray.append(spacerElement(10))
-        }
-    }
-    row.append(tray)
-    return row
-}
+}//             tray.append(spacerElement(10))
+//         }
+//     }
+//     row.append(tray)
+//     return row
+// }
