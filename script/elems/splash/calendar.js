@@ -41,14 +41,13 @@ function calendarCard() {
     // today's events
     while (todayEvents[0] && (displayedEvents < 2)) {
         const event = todayEvents.shift()
-
+        if (!event.allDay) {
         card.append(eventCardElem(event))
         card.append(spacerElement(5))
 
         displayedEvents++
         countedEvents++
-
-        if (event.allDay) { displayedEvents-- }
+        }
     }
 
     // more events today
@@ -62,14 +61,13 @@ function calendarCard() {
 
         while (tmrEvents[0] && (displayedEvents < 2)) {
             const event = tmrEvents.shift()
-
+            if (!event.allDay) {
             card.append(eventCardElem(event))
             card.append(spacerElement(5))
 
             displayedEvents++
             countedEvents++
-
-            if (event.allDay) { displayedEvents-- }
+            }
         }
         showingTmr = true
     }
