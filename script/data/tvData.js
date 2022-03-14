@@ -5607,6 +5607,39 @@ const movieData10 = [
             // subReddit: 'subreddit',
         },
     },
+    {
+        name: 'The Social Dilemma',
+        id: 'social',
+        link: {
+            netflix: '81254224'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                year: 2020,
+                genre: [
+                    'documentary',
+                ],
+            },
+            summary: "This documentary-drama hybrid explores the dangerous human impact of social networking, with tech experts sounding the alarm on their own creations.",
+        },
+        style: {
+            color: 'F7ECBD',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            imdbID: 'tt11464826',
+            // subReddit: 'subreddit',
+        },
+    },
 ]
 
 const movieDataArchive = [
