@@ -238,6 +238,41 @@ let movieData0 = [
 ]
 let movieData1 = [
     {
+        name: 'Silicon Valley',
+        id: 'silicon',
+        // link: 'https://www.hulu.com/series/silicon-valley-a53a72e7-afd9-4f50-bda8-ae887ff0683d',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2WugfAylFvjSoJATvA:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            desc: {
+                seasons: 6,
+                yearStart: 2014,
+                yearEnd: 2019,
+                genre: [
+                    'comedy',
+                    'tech',
+                ],
+            },
+            summary: "In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. Partially inspired by Mike Judge’s own experiences as a Silicon Valley engineer in the late ‘80s, Silicon Valley is an American sitcom that centers around six programmers who are living together and trying to make it big in the Silicon Valley.",
+        },
+        style: {
+            color: 'D4584B',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '8.4 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/silicon-valley-2014',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    {
         name: 'Formula 1: Drive to Survive',
         id: 'drive',
         link: {
@@ -589,6 +624,44 @@ let soonMovies = [
                 char: 'Jacob Hill',
             },
         ],
+    },
+    {
+        name: 'WeCrashed',
+        id: 'wecrashed',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'apple',
+            studio: 'apple',
+            location: 'Apple TV+',
+            date: '18 March 2022',
+            // weekday: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'biography',
+                    'drama',
+                ],
+            },
+            summary: "Inspired by actual events—and the love story at the center of it all. WeWork grew from a single coworking space into a global brand worth $47 billion in under a decade. Then, in less than a year, its valuation dropped $40 billion. What happened?",
+        },
+        style: {
+            color: colorData.fluent.cyan30,
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/wecrashed',
+            imdbID: 'tt12005128',
+            // subReddit: 'subreddit',
+        },
     },
 ]
 
