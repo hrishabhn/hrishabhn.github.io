@@ -1069,6 +1069,49 @@ const movieData3 = [
 ]
 const movieData4 = [
     {
+        name: 'Somebody Feed Phil',
+        id: 'phil',
+        link: {
+            netflix: '80146601'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 4,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    'documentary',
+                    'food',
+                    'travel',
+                ],
+            },
+            summary: "\"Everybody Loves Raymond\" creator Phil Rosenthal travels the globe to take in the local cuisine and culture of Bangkok, Lisbon, Mexico City and more.",
+        },
+        style: {
+            color: '000000',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/somebody-feed-phil-2018',
+            imdbID: 'tt7752034',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Phil Rosenthal',
+                char: 'Self',
+            },
+        ],
+    },
+    {
         name: 'Inventing Anna',
         id: 'anna',
         link: {

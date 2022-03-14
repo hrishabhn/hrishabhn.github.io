@@ -66,4 +66,10 @@ let budgetData = [
 
 
 
+
+{"amount":5.4,"name":"Starbucks","category":"Food","date":"2022-03-14T15:28:37+01:00"},
+
+
+{"amount":1.8,"name":"Snack","category":"Food","date":"2022-03-14T17:44:25+01:00"},
+
 ]
