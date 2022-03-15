@@ -18,7 +18,12 @@ function appCard(app) {
         card.append(icon)
     }
 
-    card.append(thumbElement(app.thumb))
+    if (app.thumb) {
+        card.append(thumbElement(app.thumb))
+    } else if (app.icon) {
+        card.append(iconElement(app.icon))
+    }
+
     card.append(textboxBase(app.name, app.desc))
 
     return card
@@ -36,7 +41,11 @@ function appCardSmall(app) {
         card.style.setProperty('--brand-col-light', `var(--${app.style}-light)`)
     }
 
-    card.append(thumbElement(app.thumb))
+    if (app.thumb) {
+        card.append(thumbElement(app.thumb))
+    } else if (app.icon) {
+        card.append(iconElement(app.icon))
+    }
 
     return card
 }

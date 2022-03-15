@@ -15,7 +15,43 @@ function topbarLoad() {
     let appTray = document.createElement('div')
     appTray.classList = 'quick-apps'
 
-    for (const app of appData['main']) {
+    const topbarApps = [
+        {
+            name: 'Outlook',
+            link: 'ms-outlook://',
+            desc: 'Email',
+            icon: iconData.outlook,
+            accent: '0078d4',
+            distract: false,
+        },
+        {
+            name: 'OneDrive',
+            link: 'https://purdue0-my.sharepoint.com',
+            desc: 'Files',
+            icon: iconData.onedrive,
+            accent: colorData['onedrive'],
+            distract: false,
+
+        },
+        {
+            name: 'Notion',
+            link: 'https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945',
+            desc: 'Notes',
+            icon: iconData.notion,
+            style: 'secondary',
+            distract: false,
+        },
+        {
+            name: 'TickTick',
+            link: 'ticktick://',
+            desc: 'To do list',
+            icon: iconData.ticktick,
+            style: 'blue',
+            distract: false,
+        },
+    ]
+
+    for (const app of topbarApps) {
         let appCard = appCardSmall(app)
         appCard.append(appCardSmallHover(app))
 
