@@ -60,16 +60,8 @@ let budgetData = [
     { "amount": 8, "name": "Starbucks", "category": "Food", "date": "2022-03-13T00:00:00+01:00" },
     { "amount": 15.1, "name": "Udon", "category": "Food", "date": "2022-03-13T15:53:00+01:00" },
 
-
-
-
-
-
-
-
-{"amount":5.4,"name":"Starbucks","category":"Food","date":"2022-03-14T15:28:37+01:00"},
-
-
-{"amount":1.8,"name":"Snack","category":"Food","date":"2022-03-14T17:44:25+01:00"},
-
+    { "amount": 5.4, "name": "Starbucks", "category": "Food", "date": "2022-03-14T15:28:37+01:00" },
+    { "amount": 1.8, "name": "Snack", "category": "Food", "date": "2022-03-14T17:44:25+01:00" },
+    { "amount": 1.5, "name": "Beer", "category": "Drinks", "date": "2022-03-14T18:32:00+01:00" },
+    { "amount": 7.49, "name": "KFC", "category": "Food", "date": "2022-03-15T12:37:00+01:00" },
 ]
