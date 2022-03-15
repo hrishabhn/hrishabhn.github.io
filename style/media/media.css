@@ -260,3 +260,47 @@
 
     background-color: white;
 }
+
+.actor-card{
+    flex-direction: column;
+}
+.actor-card .image{
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+
+    font-family: ui-rounded;
+    font-size: 40px;
+
+    background-size: cover;
+    background-position: center top;
+
+    box-shadow: 0 8px 24px 0px var(--black-10);
+}
+
+.actor-card .textbox { 
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+}
+.actor-card .textbox p{
+    display: block;
+    max-width: 100%;
+    padding: 0px 8px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+.actor-card .textbox .name{
+    opacity: 0.8;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.actor-card .textbox .desc{
+    opacity: 0.6;
+}

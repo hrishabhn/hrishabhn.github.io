@@ -64,6 +64,7 @@ function spotlightRun(e) {
                 searchAppsRow(searchApps(q, appData['worldClock']), 'World Clock'),
                 // searchCalRow(searchCal(q)),
                 searchMoviesRow(searchMovies(q), 'TV & Movies'),
+                searchActorsRow(searchActors(q)),
                 searchBookPodRow(searchBooks(q), 'Books', 'book'),
                 searchBookPodRow(searchPods(q), 'Podcasts', 'pod'),
             ]

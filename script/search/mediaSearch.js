@@ -16,7 +16,16 @@ function searchMovies(q) {
     for (let i = 0; i < movieData.length; i++) {
         for (let j = 0; (j < movieData[i].length) && (results.length < len); j++) {
             const name = movieData[i][j].name.toUpperCase().includes(q)
+            let cast = false
             let tags = false
+
+            if (movieData[i][j].cast) {
+                for (const actor of movieData[i][j].cast) {
+                    if ((actor.actor.toUpperCase().includes(q)) || (actor.char.toUpperCase().includes(q))) {
+                        cast = true
+                    }
+                }
+            }
 
             if (movieData[i][j].info.tags) {
                 for (const tag of movieData[i][j].info.tags) {
@@ -26,7 +35,7 @@ function searchMovies(q) {
                 }
             }
 
-            if (name || tags) {
+            if (name || cast || tags) {
                 results.push([i, j])
             }
         }
@@ -128,6 +137,55 @@ function searchMoviesRowBig(results, title) {
     }
 
     row.append(trayWithKids(nodes))
+    return row
+}
+
+function searchActors(q) {
+    let results = []
+
+    for (let i = 0; i < movieData.length; i++) {
+        for (let j = 0; (j < movieData[i].length) && (results.length < 10); j++) {
+            if (movieData[i][j].cast) {
+                for (const actor of movieData[i][j].cast) {
+                    if (actor.actor.toUpperCase().includes(q)) {
+                        if (!results.includes(actor.actor)) results.push(actor.actor)
+                    }
+                }
+            }
+        }
+    }
+
+    return results
+}
+
+function searchActorsRow(results) {
+    let row = rowBase('Actors')
+    let nodes = []
+
+    for (const actor of results) {
+        let card = document.createElement('div')
+        card.classList = 'actor-card'
+
+        let image = document.createElement('div')
+        image.classList = 'image layer-1 clickable-o'
+
+        if (actorData[actor]) {
+            image.style.setProperty('background-image', `url(${actorData[actor]})`)
+        } else {
+            let str = ''
+            for (const word of actor.split(' ')) {
+                str = str.concat(word[0])
+            }
+            image.innerHTML = str
+        }
+
+        card.append(image)
+        card.append(textboxBase(actor, null))
+
+        nodes.push(card)
+    }
+
+    row.append(trayWithKids(nodes, 20))
     return row
 }
 
