@@ -245,23 +245,29 @@ function searchBookPodRow(results, title, type) {
             card.style.setProperty('--brand-col-light', `var(--${item.style}-light)`)
         }
 
-        card.innerHTML = `
-        <div class="thumb" style="background-image: url(../hrishabhn.github.io/media-image/${folder}/${item.id}.${item.coverType});"></div>
-        <div class="textbox">
-            <p class="name">${item.name}</p>
-            <p class="desc">${item.author}</p>
-        </div>
-        `
+        let thumb = thumbBase(`../hrishabhn.github.io/media-image/${folder}/${item.id}.${item.coverType}`)
+        card.append(thumb)
+        card.append(textboxBase(item.name, item.author))
+
         card.href = processLink(item.link)
         card.target = '_blank'
 
-        if ((item.progress) && (item.progress != 'NEW')) {
-            card.append(mediaTimeElem(item.progress))
-        }
+        if ((item.progress) && (item.progress != 'NEW')) card.append(mediaTimeElem(item.progress))
+        if (!!parseFloat(item.progress)) thumb.append(mediaProgressBarElem(parseFloat(item.progress)))
 
         nodes.push(card)
     }
 
     row.append(trayWithKids(nodes))
     return row
+}
+function mediaProgressBarElem(progress) {
+    let elem = document.createElement('div')
+    elem.classList = 'progress'
+
+    let bar = document.createElement('div')
+    bar.style.setProperty('width', `${progress}%`)
+
+    elem.append(bar)
+    return elem
 }
