@@ -19,11 +19,12 @@ body{
     fill: var(--dark-layer-1);
 }
 
-.layer-hover:hover{
-    background-color: var(--white-10);
+.layer-hover:hover {
+    background-color: var(--white-05);
 }
-.layer-hover:active{
-    background-color: var(--white-20);
+
+.layer-hover:active {
+    background-color: var(--white-10);
 }
 
 
@@ -62,11 +63,11 @@ a.layer-fg{
         fill: white;
     }
 
-    .layer-hover:hover{
-        background-color: var(--black-10);
+    .layer-hover:hover {
+        background-color: var(--black-05);
     }
-    .layer-hover:active{
-        background-color: var(--black-20);
+    .layer-hover:active {
+        background-color: var(--black-10);
     }
 
 

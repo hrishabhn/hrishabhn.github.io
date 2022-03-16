@@ -8,62 +8,31 @@
     grid-column: 1 / -1;
     box-shadow: 0 0 30px #00000022;
     z-index: 1;
-    /* height: 100%; */
 
     padding: 0px 10px;
 }
 
 .topbar .item {
-    height: 30px;
-    padding: 0px 10px;
+    height: 40px;
+    padding: 0 10px;
     border-radius: 10px;
 
     font-size: 18px;
     font-weight: 300;
 
     cursor: default;
-
-
-
-    /* background-color: var(--black-20); */
 }
-
-.topbar .item:hover {
-    background-color: var(--white-05);
-}
-
-.topbar .item:active {
-    background-color: var(--white-10);
-}
-
-@media screen and (prefers-color-scheme: light) {
-    .topbar .item:hover {
-        background-color: var(--black-05);
-    }
-
-    .topbar .item:active {
-        background-color: var(--black-10);
-    }
-}
-
 .topbar .item .icon {
-    height: 14px;
-    width: 14px;
+    height: 20px;
+    width: 20px;
 }
 
 .topbar .side {
     height: 100%;
     flex-grow: 1;
     min-width: 100px;
-
-
-    /* background-color: blue; */
 }
 
-
-.topbar .quick-apps {
-    height: 100%;
-}
 
 @media(max-width: 450px) {
     .topbar .quick-apps {
@@ -72,25 +41,6 @@
 
 }
 
-
-
-
-#date {
-    flex-direction: column;
-
-    /* height: 50px; */
-    padding: 0px 10px;
-    border-radius: 10px;
-
-    /* box-shadow: 0 0 0 1px black; */
-}
-
-#date .day {
-    font-size: 12px;
-    font-weight: 500;
-}
-
-#date .num {
-    font-size: 24px;
-    font-weight: 300;
+#dnd.item .icon{
+    transition: all 0.5s;
 }

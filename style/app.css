@@ -106,8 +106,3 @@
         box-shadow: 0 0 5px var(--black-30);
     }
 }
-
-
-#dnd.app-card-small .icon{
-    transition: all 0.5s;
-}
