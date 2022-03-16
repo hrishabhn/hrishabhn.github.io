@@ -57,6 +57,20 @@ function topbarLoad() {
     }
     appTray.lastChild.remove()
 
+    // right
+
+    // dnd
+    let dndAppElem = appCardSmall({
+        name: 'Do Not Disturb',
+        icon: iconData.moon,
+        trigger: function() { toggleDND() }
+    })
+
+    if (isDND()) dndAppElem.firstChild.classList.add('blue-fg')
+
+    dndAppElem.id = 'dnd'
+
+    // focus
 
     let focus = getFocus()
     let focusAppElem = appCardSmall({
@@ -86,6 +100,8 @@ function topbarLoad() {
     let right = document.createElement('div')
     right.classList = 'side'
 
+    right.append(dndAppElem)
+    right.append(spacerElement(10))
     right.append(focusAppElem)
     right.prepend(growElement())
 
