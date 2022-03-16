@@ -119,6 +119,45 @@ const allPods = {
         coverType: 'jpeg',
         // style: 'secondary',
     },
+    'acquired': {
+        name: 'Acquired',
+        id: 'acquired',
+        link: {
+            applePod: 'id1050462261'
+        },
+        author: 'Ben Gilbert & David Rosenthal',
+        coverType: 'jpeg',
+        style: 'secondary',
+    },
+    'giants': {
+        name: 'Land of the Giants',
+        id: 'giants',
+        link: {
+            applePod: 'id1465767420'
+        },
+        author: 'Recode',
+        coverType: 'jpeg',
+    },
+    'flagrant': {
+        name: 'Flagrant 2',
+        id: 'flagrant',
+        link: {
+            youtube: 'Flagrant2'
+        },
+        author: 'Andrew Schulz & Aakash Singh',
+        coverType: 'jpeg',
+        style: 'red',
+    },
+    'canto': {
+        name: 'Learn Cantonese',
+        id: 'canto',
+        link: {
+            applePod: 'id1513774818'
+        },
+        author: 'Poetic Cantonese',
+        coverType: 'jpeg',
+        // style: 'blue',
+    },
 }
 
 // top
@@ -147,49 +186,14 @@ const podData2 = [
 
 // story podcasts
 const podData3 = [
-    {
-        name: 'Acquired',
-        id: 'acquired',
-        link: {
-            applePod: 'id1050462261'
-        },
-        author: 'Ben Gilbert & David Rosenthal',
-        coverType: 'jpeg',
-        style: 'secondary',
-    },
-    {
-        name: 'Land of the Giants',
-        id: 'giants',
-        link: {
-            applePod: 'id1465767420'
-        },
-        author: 'Recode',
-        coverType: 'jpeg',
-    }
+    allPods.acquired,
+    allPods.giants,
 ]
 
 // other podcasts
 const podData4 = [
-    {
-        name: 'Flagrant 2',
-        id: 'flagrant',
-        link: {
-            youtube: 'Flagrant2'
-        },
-        author: 'Andrew Schulz & Aakash Singh',
-        coverType: 'jpeg',
-        style: 'red',
-    },
-    {
-        name: 'Learn Cantonese',
-        id: 'canto',
-        link: {
-            applePod: 'id1513774818'
-        },
-        author: 'Poetic Cantonese',
-        coverType: 'jpeg',
-        // style: 'blue',
-    },
+    allPods.flagrant,
+    allPods.canto,
 ]
 
 // const podDataArchive = [
