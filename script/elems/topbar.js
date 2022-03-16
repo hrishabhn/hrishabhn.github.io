@@ -26,10 +26,9 @@ function topbarLeft() {
     let dnd = topbarItemElem()
     dnd.id = 'dnd'
     dnd.append(iconElement(iconData.moon))
-    dnd.onclick = function () {
-        toggleDND()
-    }
+    dnd.onclick = function () { toggleDND() }
 
+    if (isDND()) dnd.firstChild.classList.add('blue-fg')
 
     // left.append(temp)
     // left.append(spacerElement(5))
@@ -89,19 +88,7 @@ function topbarMiddle() {
 }
 
 function topbarRight() {
-    // dnd
-    let dndAppElem = appCardSmall({
-        name: 'Do Not Disturb',
-        icon: iconData.moon,
-        trigger: function () { toggleDND() }
-    })
-
-    if (isDND()) dndAppElem.firstChild.classList.add('blue-fg')
-
-    dndAppElem.id = 'dnd'
-
     // focus
-
     let focus = getFocus()
     let focusAppElem = appCardSmall({
         thumb: focus.thumb,
@@ -131,8 +118,6 @@ function topbarRight() {
     let right = document.createElement('div')
     right.classList = 'side'
 
-    right.append(dndAppElem)
-    right.append(spacerElement(10))
     right.append(focusAppElem)
     right.prepend(growElement())
 
