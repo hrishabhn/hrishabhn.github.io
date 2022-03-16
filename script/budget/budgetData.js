@@ -67,4 +67,9 @@ let budgetData = [
     { "amount": 13, "name": "Fontana de Oro", "category": "Drinks", "date": "2022-03-15T20:34:00+01:00" },
     { "amount": 6.5, "name": "Shawarma", "category": "Food", "date": "2022-03-15T23:08:00+01:00" },
     { "amount": 3, "name": "Breakfast", "category": "Food", "date": "2022-03-16T10:23:00+01:00" },
+
+{"amount":1.5,"name":"100 M","category":"Drinks","date":"2022-03-14T18:33:30+01:00"},
+
+
+
 ]
