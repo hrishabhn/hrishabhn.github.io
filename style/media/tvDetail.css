@@ -183,7 +183,15 @@
     border: solid 2px white;
     background-color: white;
     color: var(--dark-layer-1);
+    fill: var(--dark-layer-1);
 }
+.tv-detail-card .info .play .icon{
+    height: 14px;
+    width: 14px;
+    margin-right: 8px;
+}
+
+
 @media(max-width: 450px) {
     .tv-detail-card .info .play{
         width: 100%;

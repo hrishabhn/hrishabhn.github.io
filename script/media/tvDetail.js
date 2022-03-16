@@ -55,19 +55,16 @@ function tvDetail(i, j) {
         card.style.setProperty('margin', '0 50px')
     }
 
-    if (movie.link) {
-        var play = `<a href="${processLink(movie.link)}" target="_blank" class="play clickable">Watch on ${movie.info.location}</a>`
-    } else {
-        var play = `<a target="_blank" class="play clickable">Watch on ${movie.info.location}</a>`
-    }
-
-    let info = document.createElement('div')
+    let info = textboxBase(movie.name, processDesc(movie))
+    info.firstChild.classList.add('hidden-mobile')
     info.classList = 'info'
-    info.innerHTML = `
-    <p class="name hidden-mobile">${movie.name}</p>
-    ${play}
-    <p class="desc">${processDesc(movie)}</p>
-    `
+
+    let play = aElement(iconData.play, `Watch on ${movie.info.location}`)
+    play.classList = 'play clickable'
+    if (movie.link) play.href=`${processLink(movie.link)}`
+
+
+    info.firstChild.after(play)
 
     if (movie.info.summary) {
         let sum = pElement(movie.info.summary)
