@@ -4652,6 +4652,265 @@ const allMovies = {
             },
         ],
     },
+    'jurassic1': {
+        name: 'Jurassic Park',
+        id: 'jurassic1',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GYJlJDwG96Q_DwgEAAAA1:type:feature',
+        info: {
+            service: 'hbo',
+            studio: 'universal',
+            location: 'HBO Max',
+            desc: {
+                year: 1993,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+        },
+        style: {
+            color: '3c2d2a',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tallest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/jurassic-park-1993',
+            imdbID: 'tt0107290',
+        },
+    },
+    'indiana1': {
+        name: 'Raiders of the Lost Ark',
+        id: 'indiana1',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            // location: 'location',
+            desc: {
+                year: 1981,
+                genre: [
+                    'action',
+                    'adventure',
+                ],
+            },
+            summary: "When Dr. Indiana Jones - the tweed-suited professor who just happens to be a celebrated archaeologist - is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
+        },
+        style: {
+            color: '9a6a45',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/raiders-of-the-lost-ark-1981',
+            imdbID: 'tt0082971',
+            // subReddit: 'subreddit',
+        },
+    },
+    'walle': {
+        name: 'Wall-E',
+        id: 'walle',
+        link: 'https://www.disneyplus.com/movies/wall-e/5G1wpZC2Lb6I',
+        info: {
+            service: 'disney',
+            studio: 'disney',
+            location: 'Disney+',
+            desc: {
+                year: 2008,
+                genre: [
+                    'animation',
+                    'adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+        },
+        style: {
+            color: '232055',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/walle-2008',
+            imdbID: 'tt0910970',
+            // subReddit: 'subreddit',
+        },
+    },
+    'saving': {
+        name: 'Saving Private Ryan',
+        id: 'saving',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            // location: 'location',
+            desc: {
+                year: 1998,
+                genre: [
+                    'drama',
+                    'war',
+                ],
+            },
+            summary: "As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.",
+        },
+        style: {
+            color: '6f716b',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/saving-private-ryan-1998',
+            imdbID: 'tt0120815',
+            // subReddit: 'subreddit',
+        },
+    },
+    'backToTheFuture1': {
+        name: 'Back to the Future',
+        id: 'backToTheFuture1',
+        // link: 'https://www.disneyplus.com/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ',
+        info: {
+            // service: 'disney',
+            // studio: 'starwars',
+            // location: 'Disney+',
+            desc: {
+                year: 1985,
+                genre: [
+                    'adventure',
+                    'comedy',
+                    'sci-fi',
+                ],
+            },
+            summary: "Eighties teenager Marty McFly is accidentally sent back in time to 1955, inadvertently disrupting his parents' first meeting and attracting his mother's romantic interest. Marty must repair the damage to history by rekindling his parents' romance and - with the help of his eccentric inventor friend Doc Brown - return to 1985.",
+        },
+        style: {
+            color: '605267',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/back-to-the-future-1985',
+            imdbID: 'tt0088763',
+            // subReddit: 'subreddit',
+        },
+    },
+    'starwars4': {
+        name: 'Star Wars: Episode IV - A New Hope',
+        id: 'starwars4',
+        link: 'https://www.disneyplus.com/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ',
+        info: {
+            service: 'disney',
+            studio: 'starwars',
+            location: 'Disney+',
+            desc: {
+                year: 1977,
+                genre: [
+                    'adventure',
+                    'sci-fi',
+                    'star wars',
+                ],
+            },
+            summary: "Luke Skywalker begins a journey that will change the galaxy in Star Wars: Episode IV - A New Hope. Nineteen years after the formation of the Empire, Luke is thrust into the struggle of the Rebel Alliance when he meets Obi-Wan Kenobi, who has lived for years in seclusion on the desert planet of Tatooine. Obi-Wan begins Luke’s Jedi training as Luke joins him on a daring mission to rescue the beautiful Rebel leader Princess Leia from the clutches of Darth Vader and the evil Empire. Contains tobacco depictions.",
+        },
+        style: {
+            color: '372f35',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/star-wars-1977',
+            imdbID: 'tt0076759',
+            // subReddit: 'subreddit',
+        },
+    },
+    'interstellar': {
+        name: 'Interstellar',
+        id: 'interstellar',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            // location: 'location',
+            desc: {
+                year: 2014,
+                genre: [
+                    'drama',
+                    'sci-fi',
+                ],
+            },
+            summary: "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+        },
+        style: {
+            color: '94a6ac',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/interstellar-2014',
+            imdbID: 'tt0816692',
+            // subReddit: 'subreddit',
+        },
+    },
+    'avatar': {
+        name: 'Avatar',
+        id: 'avatar',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'disney',
+            // studio: 'studio',
+            location: 'Disney+',
+            // date: '',
+            desc: {
+                year: 2009,
+                genre: [
+                    'adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+        },
+        style: {
+            color: '106888',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/avatar-2009',
+            imdbID: 'tt0499549',
+            // subReddit: 'subreddit',
+        },
+    },
 }
 
 
@@ -4810,265 +5069,14 @@ const movieData8 = [
     allMovies.himym,
 ]
 const movieData9 = [
-    {
-        name: 'Jurassic Park',
-        id: 'jurassic1',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GYJlJDwG96Q_DwgEAAAA1:type:feature',
-        info: {
-            service: 'hbo',
-            studio: 'universal',
-            location: 'HBO Max',
-            desc: {
-                year: 1993,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
-            summary: "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
-        },
-        style: {
-            color: '3c2d2a',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tallest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/jurassic-park-1993',
-            imdbID: 'tt0107290',
-        },
-    },
-    {
-        name: 'Raiders of the Lost Ark',
-        id: 'indiana1',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            // studio: 'studio',
-            // location: 'location',
-            desc: {
-                year: 1981,
-                genre: [
-                    'action',
-                    'adventure',
-                ],
-            },
-            summary: "When Dr. Indiana Jones - the tweed-suited professor who just happens to be a celebrated archaeologist - is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
-        },
-        style: {
-            color: '9a6a45',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/raiders-of-the-lost-ark-1981',
-            imdbID: 'tt0082971',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Wall-E',
-        id: 'walle',
-        link: 'https://www.disneyplus.com/movies/wall-e/5G1wpZC2Lb6I',
-        info: {
-            service: 'disney',
-            studio: 'disney',
-            location: 'Disney+',
-            desc: {
-                year: 2008,
-                genre: [
-                    'animation',
-                    'adventure',
-                    'sci-fi',
-                ],
-            },
-            summary: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
-        },
-        style: {
-            color: '232055',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/walle-2008',
-            imdbID: 'tt0910970',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Saving Private Ryan',
-        id: 'saving',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            // studio: 'studio',
-            // location: 'location',
-            desc: {
-                year: 1998,
-                genre: [
-                    'drama',
-                    'war',
-                ],
-            },
-            summary: "As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.",
-        },
-        style: {
-            color: '6f716b',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/saving-private-ryan-1998',
-            imdbID: 'tt0120815',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Back to the Future',
-        id: 'backToTheFuture1',
-        // link: 'https://www.disneyplus.com/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ',
-        info: {
-            // service: 'disney',
-            // studio: 'starwars',
-            // location: 'Disney+',
-            desc: {
-                year: 1985,
-                genre: [
-                    'adventure',
-                    'comedy',
-                    'sci-fi',
-                ],
-            },
-            summary: "Eighties teenager Marty McFly is accidentally sent back in time to 1955, inadvertently disrupting his parents' first meeting and attracting his mother's romantic interest. Marty must repair the damage to history by rekindling his parents' romance and - with the help of his eccentric inventor friend Doc Brown - return to 1985.",
-        },
-        style: {
-            color: '605267',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/back-to-the-future-1985',
-            imdbID: 'tt0088763',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Star Wars: Episode IV - A New Hope',
-        id: 'starwars4',
-        link: 'https://www.disneyplus.com/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ',
-        info: {
-            service: 'disney',
-            studio: 'starwars',
-            location: 'Disney+',
-            desc: {
-                year: 1977,
-                genre: [
-                    'adventure',
-                    'sci-fi',
-                    'star wars',
-                ],
-            },
-            summary: "Luke Skywalker begins a journey that will change the galaxy in Star Wars: Episode IV - A New Hope. Nineteen years after the formation of the Empire, Luke is thrust into the struggle of the Rebel Alliance when he meets Obi-Wan Kenobi, who has lived for years in seclusion on the desert planet of Tatooine. Obi-Wan begins Luke’s Jedi training as Luke joins him on a daring mission to rescue the beautiful Rebel leader Princess Leia from the clutches of Darth Vader and the evil Empire. Contains tobacco depictions.",
-        },
-        style: {
-            color: '372f35',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/star-wars-1977',
-            imdbID: 'tt0076759',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Interstellar',
-        id: 'interstellar',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            // studio: 'studio',
-            // location: 'location',
-            desc: {
-                year: 2014,
-                genre: [
-                    'drama',
-                    'sci-fi',
-                ],
-            },
-            summary: "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
-        },
-        style: {
-            color: '94a6ac',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/interstellar-2014',
-            imdbID: 'tt0816692',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Avatar',
-        id: 'avatar',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'disney',
-            // studio: 'studio',
-            location: 'Disney+',
-            // date: '',
-            desc: {
-                year: 2009,
-                genre: [
-                    'adventure',
-                    'sci-fi',
-                ],
-            },
-            summary: "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
-        },
-        style: {
-            color: '106888',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/avatar-2009',
-            imdbID: 'tt0499549',
-            // subReddit: 'subreddit',
-        },
-    },
+    allMovies.jurassic1,
+    allMovies.indiana1,
+    allMovies.walle,
+    allMovies.saving,
+    allMovies.backToTheFuture1,
+    allMovies.starwars4,
+    allMovies.interstellar,
+    allMovies.avatar,
 ]
 const movieData10 = [
     {
