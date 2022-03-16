@@ -306,7 +306,7 @@ const allMovies = {
             service: 'hulu',
             studio: 'abc',
             location: 'Hulu',
-            date: '16 March 2022',
+            date: '22 March 2022',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -395,17 +395,45 @@ const allMovies = {
             // subReddit: 'subreddit',
         },
     },
-}
-
-
-
-
-
-
-
-
-let movieData0 = [
-    {
+    'drive': {
+        name: 'Formula 1: Drive to Survive',
+        id: 'drive',
+        link: {
+            netflix: '80204890'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'cars',
+                    'documentary',
+                    'sport',
+                ],
+            },
+            summary: "Drivers, managers and team owners live life in the fast lane — both on and off the track — during each cutthroat season of Formula 1 racing.",
+        },
+        style: {
+            color: '4d5372',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            // mobileType: 'jpg',
+            // mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/formula-1-drive-to-survive-2019',
+            imdbID: 'tt8289930',
+            // subReddit: 'subreddit',
+        },
+    },
+    'attack': {
         name: 'Attack on Titan',
         id: 'attack',
         link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
@@ -440,7 +468,7 @@ let movieData0 = [
             subReddit: 'attackontitan',
         },
     },
-    {
+    'elite': {
         name: 'Elite',
         id: 'elite',
         link: {
@@ -523,7 +551,7 @@ let movieData0 = [
             },
         ],
     },
-    {
+    'ozark': {
         name: 'Ozark',
         id: 'ozark',
         link: {
@@ -582,49 +610,7 @@ let movieData0 = [
             },
         ],
     },
-]
-let movieData1 = [
-    allMovies.silicon,
-    {
-        name: 'Formula 1: Drive to Survive',
-        id: 'drive',
-        link: {
-            netflix: '80204890'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'cars',
-                    'documentary',
-                    'sport',
-                ],
-            },
-            summary: "Drivers, managers and team owners live life in the fast lane — both on and off the track — during each cutthroat season of Formula 1 racing.",
-        },
-        style: {
-            color: '4d5372',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            // mobileType: 'jpg',
-            // mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/formula-1-drive-to-survive-2019',
-            imdbID: 'tt8289930',
-            // subReddit: 'subreddit',
-        },
-    },
-    allMovies.peaky,
-    {
+    'tintin': {
         name: 'The Adventures of Tintin',
         id: 'tintin',
         link: {
@@ -660,31 +646,7 @@ let movieData1 = [
             // subReddit: 'subreddit',
         },
     },
-]
-
-
-let soonMovies = [
-    allMovies.himyf,
-    allMovies.snowfall,
-    allMovies.severance,
-    allMovies.abbott,
-    allMovies.wecrashed,
-]
-
-for (const movie of soonMovies.reverse()) {
-    let soon = (new Date(movie.info.date) > new Date)
-
-    if (soon) {
-        movieData1.unshift(movie)
-    } else {
-        movieData0.unshift(movie)
-    }
-}
-
-
-
-const movieData2 = [
-    {
+    'money': {
         name: 'Money Heist',
         id: 'money',
         link: {
@@ -722,7 +684,7 @@ const movieData2 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'disenchant': {
         name: 'Disenchantment',
         id: 'disenchant',
         link: {
@@ -760,7 +722,7 @@ const movieData2 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'dontLookUp': {
         name: "Don't Look Up",
         id: 'dontLookUp',
         link: {
@@ -791,7 +753,7 @@ const movieData2 = [
             imdbID: 'tt11286314',
         },
     },
-    {
+    'cowboy': {
         name: 'Cowboy Bebop',
         id: 'cowboy',
         link: {
@@ -828,7 +790,7 @@ const movieData2 = [
             subReddit: 'cowboybebop',
         },
     },
-    {
+    'grandTour': {
         name: 'The Grand Tour',
         id: 'grandTour',
         link: {
@@ -866,6 +828,54 @@ const movieData2 = [
             // subReddit: 'subreddit',
         },
     },
+}
+
+
+
+
+
+
+
+
+let movieData0 = [
+    allMovies.elite,
+    allMovies.silicon,
+]
+let movieData1 = [
+    allMovies.attack,
+    allMovies.ozark,
+    allMovies.peaky,
+    allMovies.drive,
+    allMovies.tintin,
+]
+
+
+let soonMovies = [
+    allMovies.himyf,
+    allMovies.snowfall,
+    allMovies.severance,
+    allMovies.abbott,
+    allMovies.wecrashed,
+]
+
+for (const movie of soonMovies.reverse()) {
+    let soon = (new Date(movie.info.date) > new Date)
+
+    if (soon) {
+        movieData1.unshift(movie)
+    } else {
+        movieData0.unshift(movie)
+    }
+}
+
+
+
+const movieData2 = [
+    allMovies.money,
+    allMovies.disenchant,
+    allMovies.dontLookUp,
+    allMovies.cowboy,
+    allMovies.grandTour,
 ]
 const movieData3 = [
     {
