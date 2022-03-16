@@ -2040,6 +2040,923 @@ const allMovies = {
             subReddit: 'YTheLastMan',
         },
     },
+    'georgina': {
+        name: 'Soy Georgina',
+        id: 'georgina',
+        link: {
+            netflix: '81423622'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            desc: {
+                seasons: 1,
+                year: 2022,
+                genre: [
+                    'comedy',
+                    'documentary',
+                ],
+            },
+            summary: "Join Georgina Rodríguez — mom, influencer, businesswoman and Cristiano Ronaldo's partner — in this emotional and in-depth portrait of her daily life.",
+        },
+        style: {
+            color: '8f7d4b',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '768 / 1024',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'fairfax': {
+        name: 'Fairfax',
+        id: 'fairfax',
+        link: {
+            primeVideo: 'B09HSV9MHL'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            // date: 'Oct 29, 2021',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
+        },
+        style: {
+            color: 'dedccc',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            tvTimeID: '382466',
+            reelgoodLink: 'https://reelgood.com/show/fairfax-2021',
+            imdbID: 'tt7492014',
+            // subReddit: 'subreddit',
+        },
+    },
+    'ghosts': {
+        name: 'Ghosts',
+        id: 'ghosts',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            // date: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'fantasy',
+                ],
+            },
+            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
+        },
+        style: {
+            color: '513d35',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'png',
+            mobileSize: '3 / 4',
+        },
+        apps: {
+            tvTimeID: '361701',
+            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
+            imdbID: 'tt8594324',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Charlotte Ritchie',
+                char: 'Alison Cooper',
+            },
+            {
+                actor: 'Kiell Smith-Bynoe',
+                char: 'Mike Cooper',
+            },
+        ],
+    },
+    'arcane': {
+        name: 'Arcane',
+        id: 'arcane',
+        link: {
+            netflix: '81435684'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // weekday: 'Saturday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'animation',
+                    'fantasy',
+                ],
+            },
+            summary: "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '371028',
+            reelgoodLink: 'https://reelgood.com/show/arcane-2021',
+            imdbID: 'tt11126994',
+            subReddit: 'ArcaneAnimatedSeries',
+        },
+        cast: [
+            {
+                actor: 'Hailee Steinfeld',
+                char: 'Vi',
+            },
+            {
+                actor: 'Mia Sinclair Jenness',
+                char: 'Powder',
+            },
+            {
+                actor: 'Kevin Alejandro',
+                char: 'Jayce',
+            },
+            {
+                actor: 'Harry Lloyd',
+                char: 'Viktor',
+            },
+            {
+                actor: 'Katie Leung',
+                char: 'Caitlyn',
+            },
+            {
+                actor: 'Shohreh Aghdashloo',
+                char: 'Grayson',
+            },
+            {
+                actor: 'JB Blanc',
+                char: 'Vander',
+            },
+        ],
+    },
+    'snowpiercer': {
+        name: 'Snowpiercer',
+        id: 'snowpiercer',
+        link: {
+            netflix: '80177458'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'tnt',
+            location: 'Netflix',
+            // date: 'Feb 1, 2022',
+            desc: {
+                seasons: 3,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'sci-fi',
+                ],
+            },
+            summary: "Set more than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
+        },
+        style: {
+            color: '444743',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '364928',
+            reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
+            imdbID: 'tt6156584',
+            subReddit: 'snowpiercer',
+        },
+    },
+    'hawkeye': {
+        name: 'Hawkeye',
+        id: 'hawkeye',
+        link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Disney+',
+            weekday: 'Wednesday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                ],
+            },
+            summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
+            tags: [
+                'mcu',
+            ]
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '367146',
+            reelgoodLink: 'https://reelgood.com/show/hawkeye-2021',
+            imdbID: 'tt10160804',
+            subReddit: 'HAWKEYE',
+        },
+        cast: [
+            {
+                actor: 'Jeremy Renner',
+                char: 'Clint Barton/Hawkeye',
+            },
+            {
+                actor: 'Hailee Steinfeld',
+                char: 'Kate Bishop',
+            },
+        ],
+    },
+    'southpark': {
+        name: 'South Park',
+        id: 'southpark',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            // date: '',
+            desc: {
+                seasons: 24,
+                yearStart: 1997,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
+        },
+        style: {
+            color: 'A14533',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '75897',
+            reelgoodLink: 'https://reelgood.com/show/south-park-1997',
+            imdbID: 'tt0121955',
+            // subReddit: 'subreddit',
+        },
+    },
+    'archer': {
+        name: 'Archer',
+        id: 'archer',
+        link: 'https://www.hulu.com/series/archer-22b4b3c8-0827-42d2-a841-50e8f3464dc2',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            // date: '',
+            desc: {
+                seasons: 12,
+                yearStart: 2009,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'animation',
+                    'crime',
+                ],
+            },
+            summary: "Covert black ops and espionage take a back seat to zany personalities and relationships between secret agents and drones.",
+        },
+        style: {
+            color: '337799',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '110381',
+            reelgoodLink: 'https://reelgood.com/show/archer-2009',
+            imdbID: 'tt1486217',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'H. Jon Benjamin',
+                char: 'Sterling Archer',
+            },
+            {
+                actor: 'Aisha Tyler',
+                char: 'Lana Kane',
+            },
+            {
+                actor: 'Jessica Walter',
+                char: 'Malory Archer',
+            },
+            {
+                actor: 'Chris Parnell',
+                char: 'Cyril Figgis',
+            },
+            {
+                actor: 'Judy Greer',
+                char: 'Cheryl Tunt',
+            },
+            {
+                actor: 'Amber Nash',
+                char: 'Pam Poovey',
+            },
+        ],
+    },
+    'loveIsland': {
+        name: 'Love Island',
+        id: 'loveIsland',
+        link: 'https://www.hulu.com/series/love-island-uk-e3b93210-7e03-471f-8270-0e17161809a8',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            // date: '',
+            desc: {
+                seasons: 7,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'reality',
+                ],
+            },
+            summary: "Reality show. Glamorous singles live in a beautiful villa under the watchful gaze of the audience at home, who have the power to decide who stays and who goes.",
+        },
+        style: {
+            color: 'ea80ff',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '296669',
+            reelgoodLink: 'https://reelgood.com/show/love-island-2015',
+            imdbID: 'tt4770018',
+            // subReddit: 'subreddit',
+        },
+    },
+    'you': {
+        name: 'You',
+        id: 'you',
+        link: {
+            netflix: '80211991'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    'romance',
+                    'thriller',
+                ],
+            },
+            summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
+        },
+        style: {
+            color: '655b3f',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '336924',
+            reelgoodLink: 'https://reelgood.com/show/you-2018',
+            imdbID: 'tt7335184',
+            subReddit: 'YouOnLifetime',
+        },
+        cast: [
+            {
+                actor: 'Penn Badgley',
+                char: 'Joe Goldberg',
+            },
+            {
+                actor: 'Elizabeth Lail',
+                char: 'Guinevere Beck',
+            },
+            {
+                actor: 'Shay Mitchell',
+                char: 'Peach Salinger',
+            },
+        ],
+    },
+    'solar': {
+        name: 'Solar Opposites',
+        id: 'solar',
+        link: 'https://www.hulu.com/series/solar-opposites-f089664b-1a87-433b-86a5-24e7da5a246a',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            // date: '',
+            desc: {
+                seasons: 2,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "A team of four aliens escape their exploding home world only to crash land into a move-in ready home in suburban America. They are evenly split on whether Earth is awful or awesome. Korvo (Justin Roiland) and Yumyulack (Sean Giambrone) only see the pollution, crass consumerism, and human frailty while Terry (Thomas Middleditch) and Jesse (Mary Mack) love humans and all their TV, junk food and fun stuff. Their mission: protect the Pupa, a living super computer that will one day evolve into its true form, consume them and terraform the Earth.",
+        },
+        style: {
+            color: '3B347A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '375892',
+            reelgoodLink: 'https://reelgood.com/show/solar-opposites-2020',
+            imdbID: 'tt8910922',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Justin Roiland',
+                char: 'Korvo',
+            },
+            {
+                actor: 'Thomas Middlditch',
+                char: 'Terry',
+            },
+            {
+                actor: 'Sean Giambrone',
+                char: 'Yumyulack',
+            },
+            {
+                actor: 'Mary Mack',
+                char: 'Jesse',
+            },
+        ],
+    },
+    'dopesick': {
+        name: 'Dopesick',
+        id: 'dopesick',
+        link: 'https://www.hulu.com/series/dopesick-227de06a-d3d4-42e0-9df1-bb5495e1738d',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            // date: '',
+            weekday: 'Wednesday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                ],
+            },
+            summary: "From Executive Producer Danny Strong and starring and executive produced by Michael Keaton, “Dopesick” examines how one company triggered the worst drug epidemic in American history. The series takes viewers to the epicenter of America’s struggle with opioid addiction, from the boardrooms of Big Pharma, to a distressed Virginia mining community, to the hallways of the DEA. Defying all the odds, heroes will emerge in an intense and thrilling ride to take down the craven corporate forces behind this national crisis and their allies. The limited series is inspired by the New York Times bestselling book by Beth Macy.",
+        },
+        style: {
+            color: '339999',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '390716',
+            reelgoodLink: 'https://reelgood.com/show/dopesick-2021',
+            imdbID: 'tt9174558',
+            // subReddit: 'subreddit',
+        },
+    },
+    'family': {
+        name: 'Family Guy',
+        id: 'family',
+        link: 'https://www.hulu.com/series/family-guy-3c3c0f8b-7366-4d15-88ab-18050285978e',
+        info: {
+            service: 'hulu',
+            studio: 'fox',
+            location: 'Hulu',
+            // date: '',
+            weekday: 'Sunday',
+            desc: {
+                seasons: 20,
+                yearStart: 1999,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
+        },
+        style: {
+            color: '0B6F38',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '75978',
+            reelgoodLink: 'https://reelgood.com/show/family-guy-1999',
+            imdbID: 'tt0182576',
+            // subReddit: 'subreddit',
+        },
+    },
+    'foundation': {
+        name: 'Foundation',
+        id: 'foundation',
+        link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            weekday: 'Friday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'sci-fi',
+                ],
+            },
+            summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
+        },
+        style: {
+            color: '70655B',
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '366972',
+            reelgoodLink: 'https://reelgood.com/show/foundation-2020',
+            imdbID: 'tt0804484',
+            subReddit: 'FoundationTV',
+        },
+    },
+    'simpsons': {
+        name: 'The Simpsons',
+        id: 'simpsons',
+        link: 'https://www.hulu.com/series/the-simpsons-47332072-d7fb-48b3-a5f7-ca8c6915ca27',
+        info: {
+            service: 'hulu',
+            studio: 'fox',
+            location: 'Hulu',
+            // date: '',
+            desc: {
+                seasons: 33,
+                yearStart: 1989,
+                yearEnd: 2021,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie.",
+        },
+        style: {
+            color: '685467',
+            posterType: 'webp',
+            titleType: 'svg',
+            titleSize: 'widest',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-simpsons-1989',
+            imdbID: 'tt0096697',
+            // subReddit: 'subreddit',
+        },
+    },
+    'billions': {
+        name: "Billions",
+        id: "billions",
+        link: null,
+        info: {
+            // service: '',
+            studio: 'showtime',
+            location: 'Showtime',
+            // date: 'Jan 23, 2022',
+            desc: {
+                seasons: 5,
+                yearStart: 2016,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'money',
+                ],
+            },
+            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
+        },
+        style: {
+            color: '6f4c2d',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: "279536",
+            reelgoodLink: "https://reelgood.com/show/billions-2016",
+            imdbID: "tt4270492",
+            subReddit: 'Billions'
+        },
+    },
+    'memories': {
+        name: 'Memories of the Alhambra',
+        id: 'memories',
+        link: {
+            netflix: '81004280'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2018,
+                yearEnd: 2019,
+                genre: [
+                    'romance',
+                    'sci-fi',
+                ],
+            },
+            summary: "A frantic young man is running scared in Barcelona. CEO Yoo Jin-woo heads to Granada on a quest after getting a strange call while on business in Spain.",
+        },
+        style: {
+            color: 'a6886c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '1000 / 973',
+        },
+        apps: {
+            tvTimeID: '348488',
+            reelgoodLink: 'https://reelgood.com/show/memories-of-the-alhambra-2018',
+            imdbID: 'tt8236556',
+            // subReddit: 'subreddit',
+        },
+    },
+    'midnight': {
+        name: 'Midnight Mass',
+        id: 'midnight',
+        link: {
+            netflix: '81083626'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'horror',
+                ],
+            },
+            summary: "The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.",
+        },
+        style: {
+            color: '3c2e2c',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '367226',
+            reelgoodLink: 'https://reelgood.com/show/midnight-mass',
+            imdbID: 'tt10574558',
+            // subReddit: 'subreddit',
+        },
+    },
+    'whatif': {
+        name: "What If?",
+        id: "whatif",
+        link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
+        info: {
+            service: 'disney',
+            studio: 'disney',
+            location: "Disney+",
+            description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
+            summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
+        },
+        style: {
+            color: '0F0F38',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "367147",
+            reelgoodLink: "https://reelgood.com/show/what-if-2021",
+            imdbID: "tt10168312",
+            subReddit: 'MarvelsWhatIf',
+        },
+    },
+    'edu': {
+        name: "Sex Education",
+        id: "edu",
+        link: {
+            netflix: '80197526'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: "Netflix",
+            description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
+            summary: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
+        },
+        style: {
+            color: '6d6256',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            tvTimeID: "356317",
+            reelgoodLink: "https://reelgood.com/show/sex-education-2019",
+            imdbID: "tt7767422",
+            subReddit: "NetflixSexEducation",
+        },
+    },
+    'jojo': {
+        name: "Jojo's Bizzare Adventures",
+        id: "jojo",
+        link: {
+            netflix: '80179831'
+        },
+        info: {
+            service: 'netflix',
+            // studio: '',
+            location: "Netflix",
+            description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
+            summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
+        },
+        style: {
+            color: '2C2850',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "tall",
+        },
+        apps: {
+            tvTimeID: "262954",
+            // tvTimeRate: "9.74",
+            reelgoodLink: "https://reelgood.com/show/jojos-bizarre-adventure-2012",
+            // reelgoodRate: "72",
+            imdbID: "tt2359704",
+            // imdbRate: "8.4",
+        },
+    },
+    'dave': {
+        name: "Dave",
+        id: "dave",
+        link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
+            summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
+        },
+        style: {
+            color: '889898',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "354905",
+            reelgoodLink: "https://reelgood.com/show/dave-2020",
+            imdbID: "tt8531222",
+        },
+    },
+    'twinpeaks': {
+        name: "Twin Peaks",
+        id: "twinpeaks",
+        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
+            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
+        },
+        style: {
+            color: '300',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: "tall",
+        },
+    },
+    'legion': {
+        name: "Legion",
+        id: "legion",
+        link: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            description: "Sci-Fi &#149 3 Seasons &#149 2017 - 2019",
+            summary: "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he's confronted with the possibility that the voices he hears and the visions he sees might be real.",
+        },
+        style: {
+            color: '0b276d',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: "320724",
+            // reelgoodLink: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
+            imdbID: "tt5114356",
+        },
+    },
+    'futurama': {
+        name: "Futurama",
+        id: "futurama",
+        link: "https://www.hulu.com/series/futurama-85bf4cc1-cd8b-4469-ad87-7289217a0b74",
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            description: "Animation &#149 Comedy &#149 Sci-Fi &#149 8 Seasons &#149 1999 - 2013",
+            summary: "Accidentally frozen, pizza-deliverer Fry wakes up 1,000 years in the future. He is taken in by his sole descendant, an elderly and addled scientist who owns a small cargo delivery location. Among the other crew members are Capt. Leela, accountant Hermes, intern Amy, obnoxious robot Bender and lobsterlike moocher Dr. Zoidberg.",
+        },
+        style: {
+            color: 'E25924',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            tvTimeID: "314087",
+            reelgoodLink: "https://reelgood.com/show/futurama-1999",
+            // imdbID: "tt5712554",
+        },
+    },
 }
 
 
@@ -2128,923 +3045,31 @@ const movieData4 = [
     allMovies.lastman,
 ]
 const movieData5 = [
-    {
-        name: 'Soy Georgina',
-        id: 'georgina',
-        link: {
-            netflix: '81423622'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            desc: {
-                seasons: 1,
-                year: 2022,
-                genre: [
-                    'comedy',
-                    'documentary',
-                ],
-            },
-            summary: "Join Georgina Rodríguez — mom, influencer, businesswoman and Cristiano Ronaldo's partner — in this emotional and in-depth portrait of her daily life.",
-        },
-        style: {
-            color: '8f7d4b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '768 / 1024',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Fairfax',
-        id: 'fairfax',
-        link: {
-            primeVideo: 'B09HSV9MHL'
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            // date: 'Oct 29, 2021',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
-        },
-        style: {
-            color: 'dedccc',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            tvTimeID: '382466',
-            reelgoodLink: 'https://reelgood.com/show/fairfax-2021',
-            imdbID: 'tt7492014',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Ghosts',
-        id: 'ghosts',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            // date: '',
-            desc: {
-                seasons: 3,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'fantasy',
-                ],
-            },
-            summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
-        },
-        style: {
-            color: '513d35',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'png',
-            mobileSize: '3 / 4',
-        },
-        apps: {
-            tvTimeID: '361701',
-            reelgoodLink: 'https://reelgood.com/show/ghosts-2019',
-            imdbID: 'tt8594324',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Charlotte Ritchie',
-                char: 'Alison Cooper',
-            },
-            {
-                actor: 'Kiell Smith-Bynoe',
-                char: 'Mike Cooper',
-            },
-        ],
-    },
-    {
-        name: 'Arcane',
-        id: 'arcane',
-        link: {
-            netflix: '81435684'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // weekday: 'Saturday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'animation',
-                    'fantasy',
-                ],
-            },
-            summary: "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
-        },
-        style: {
-            color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '8 / 10',
-        },
-        apps: {
-            tvTimeID: '371028',
-            reelgoodLink: 'https://reelgood.com/show/arcane-2021',
-            imdbID: 'tt11126994',
-            subReddit: 'ArcaneAnimatedSeries',
-        },
-        cast: [
-            {
-                actor: 'Hailee Steinfeld',
-                char: 'Vi',
-            },
-            {
-                actor: 'Mia Sinclair Jenness',
-                char: 'Powder',
-            },
-            {
-                actor: 'Kevin Alejandro',
-                char: 'Jayce',
-            },
-            {
-                actor: 'Harry Lloyd',
-                char: 'Viktor',
-            },
-            {
-                actor: 'Katie Leung',
-                char: 'Caitlyn',
-            },
-            {
-                actor: 'Shohreh Aghdashloo',
-                char: 'Grayson',
-            },
-            {
-                actor: 'JB Blanc',
-                char: 'Vander',
-            },
-        ],
-    },
-    {
-        name: 'Snowpiercer',
-        id: 'snowpiercer',
-        link: {
-            netflix: '80177458'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'tnt',
-            location: 'Netflix',
-            // date: 'Feb 1, 2022',
-            desc: {
-                seasons: 3,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'sci-fi',
-                ],
-            },
-            summary: "Set more than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
-        },
-        style: {
-            color: '444743',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '364928',
-            reelgoodLink: 'https://reelgood.com/show/snowpiercer-1',
-            imdbID: 'tt6156584',
-            subReddit: 'snowpiercer',
-        },
-    },
-    {
-        name: 'Hawkeye',
-        id: 'hawkeye',
-        link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
-        info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Disney+',
-            weekday: 'Wednesday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                ],
-            },
-            summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
-            tags: [
-                'mcu',
-            ]
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '367146',
-            reelgoodLink: 'https://reelgood.com/show/hawkeye-2021',
-            imdbID: 'tt10160804',
-            subReddit: 'HAWKEYE',
-        },
-        cast: [
-            {
-                actor: 'Jeremy Renner',
-                char: 'Clint Barton/Hawkeye',
-            },
-            {
-                actor: 'Hailee Steinfeld',
-                char: 'Kate Bishop',
-            },
-        ],
-    },
-    {
-        name: 'South Park',
-        id: 'southpark',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series',
-        info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
-            // date: '',
-            desc: {
-                seasons: 24,
-                yearStart: 1997,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
-        },
-        style: {
-            color: 'A14533',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '75897',
-            reelgoodLink: 'https://reelgood.com/show/south-park-1997',
-            imdbID: 'tt0121955',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Archer',
-        id: 'archer',
-        link: 'https://www.hulu.com/series/archer-22b4b3c8-0827-42d2-a841-50e8f3464dc2',
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            // date: '',
-            desc: {
-                seasons: 12,
-                yearStart: 2009,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'animation',
-                    'crime',
-                ],
-            },
-            summary: "Covert black ops and espionage take a back seat to zany personalities and relationships between secret agents and drones.",
-        },
-        style: {
-            color: '337799',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '110381',
-            reelgoodLink: 'https://reelgood.com/show/archer-2009',
-            imdbID: 'tt1486217',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'H. Jon Benjamin',
-                char: 'Sterling Archer',
-            },
-            {
-                actor: 'Aisha Tyler',
-                char: 'Lana Kane',
-            },
-            {
-                actor: 'Jessica Walter',
-                char: 'Malory Archer',
-            },
-            {
-                actor: 'Chris Parnell',
-                char: 'Cyril Figgis',
-            },
-            {
-                actor: 'Judy Greer',
-                char: 'Cheryl Tunt',
-            },
-            {
-                actor: 'Amber Nash',
-                char: 'Pam Poovey',
-            },
-        ],
-    },
-    {
-        name: 'Love Island',
-        id: 'loveIsland',
-        link: 'https://www.hulu.com/series/love-island-uk-e3b93210-7e03-471f-8270-0e17161809a8',
-        info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
-            // date: '',
-            desc: {
-                seasons: 7,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'reality',
-                ],
-            },
-            summary: "Reality show. Glamorous singles live in a beautiful villa under the watchful gaze of the audience at home, who have the power to decide who stays and who goes.",
-        },
-        style: {
-            color: 'ea80ff',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '296669',
-            reelgoodLink: 'https://reelgood.com/show/love-island-2015',
-            imdbID: 'tt4770018',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'You',
-        id: 'you',
-        link: {
-            netflix: '80211991'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    'romance',
-                    'thriller',
-                ],
-            },
-            summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
-        },
-        style: {
-            color: '655b3f',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '336924',
-            reelgoodLink: 'https://reelgood.com/show/you-2018',
-            imdbID: 'tt7335184',
-            subReddit: 'YouOnLifetime',
-        },
-        cast: [
-            {
-                actor: 'Penn Badgley',
-                char: 'Joe Goldberg',
-            },
-            {
-                actor: 'Elizabeth Lail',
-                char: 'Guinevere Beck',
-            },
-            {
-                actor: 'Shay Mitchell',
-                char: 'Peach Salinger',
-            },
-        ],
-    },
-    {
-        name: 'Solar Opposites',
-        id: 'solar',
-        link: 'https://www.hulu.com/series/solar-opposites-f089664b-1a87-433b-86a5-24e7da5a246a',
-        info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
-            // date: '',
-            desc: {
-                seasons: 2,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "A team of four aliens escape their exploding home world only to crash land into a move-in ready home in suburban America. They are evenly split on whether Earth is awful or awesome. Korvo (Justin Roiland) and Yumyulack (Sean Giambrone) only see the pollution, crass consumerism, and human frailty while Terry (Thomas Middleditch) and Jesse (Mary Mack) love humans and all their TV, junk food and fun stuff. Their mission: protect the Pupa, a living super computer that will one day evolve into its true form, consume them and terraform the Earth.",
-        },
-        style: {
-            color: '3B347A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '8 / 10',
-        },
-        apps: {
-            tvTimeID: '375892',
-            reelgoodLink: 'https://reelgood.com/show/solar-opposites-2020',
-            imdbID: 'tt8910922',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Justin Roiland',
-                char: 'Korvo',
-            },
-            {
-                actor: 'Thomas Middlditch',
-                char: 'Terry',
-            },
-            {
-                actor: 'Sean Giambrone',
-                char: 'Yumyulack',
-            },
-            {
-                actor: 'Mary Mack',
-                char: 'Jesse',
-            },
-        ],
-    },
-    {
-        name: 'Dopesick',
-        id: 'dopesick',
-        link: 'https://www.hulu.com/series/dopesick-227de06a-d3d4-42e0-9df1-bb5495e1738d',
-        info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
-            // date: '',
-            weekday: 'Wednesday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                ],
-            },
-            summary: "From Executive Producer Danny Strong and starring and executive produced by Michael Keaton, “Dopesick” examines how one company triggered the worst drug epidemic in American history. The series takes viewers to the epicenter of America’s struggle with opioid addiction, from the boardrooms of Big Pharma, to a distressed Virginia mining community, to the hallways of the DEA. Defying all the odds, heroes will emerge in an intense and thrilling ride to take down the craven corporate forces behind this national crisis and their allies. The limited series is inspired by the New York Times bestselling book by Beth Macy.",
-        },
-        style: {
-            color: '339999',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '390716',
-            reelgoodLink: 'https://reelgood.com/show/dopesick-2021',
-            imdbID: 'tt9174558',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Family Guy',
-        id: 'family',
-        link: 'https://www.hulu.com/series/family-guy-3c3c0f8b-7366-4d15-88ab-18050285978e',
-        info: {
-            service: 'hulu',
-            studio: 'fox',
-            location: 'Hulu',
-            // date: '',
-            weekday: 'Sunday',
-            desc: {
-                seasons: 20,
-                yearStart: 1999,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
-        },
-        style: {
-            color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: '75978',
-            reelgoodLink: 'https://reelgood.com/show/family-guy-1999',
-            imdbID: 'tt0182576',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Foundation',
-        id: 'foundation',
-        link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
-        info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
-            weekday: 'Friday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'sci-fi',
-                ],
-            },
-            summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
-        },
-        style: {
-            color: '70655B',
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '366972',
-            reelgoodLink: 'https://reelgood.com/show/foundation-2020',
-            imdbID: 'tt0804484',
-            subReddit: 'FoundationTV',
-        },
-    },
-    {
-        name: 'The Simpsons',
-        id: 'simpsons',
-        link: 'https://www.hulu.com/series/the-simpsons-47332072-d7fb-48b3-a5f7-ca8c6915ca27',
-        info: {
-            service: 'hulu',
-            studio: 'fox',
-            location: 'Hulu',
-            // date: '',
-            desc: {
-                seasons: 33,
-                yearStart: 1989,
-                yearEnd: 2021,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie.",
-        },
-        style: {
-            color: '685467',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: 'widest',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/the-simpsons-1989',
-            imdbID: 'tt0096697',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: "Billions",
-        id: "billions",
-        link: null,
-        info: {
-            // service: '',
-            studio: 'showtime',
-            location: 'Showtime',
-            // date: 'Jan 23, 2022',
-            desc: {
-                seasons: 5,
-                yearStart: 2016,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'money',
-                ],
-            },
-            summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
-        },
-        style: {
-            color: '6f4c2d',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: "279536",
-            reelgoodLink: "https://reelgood.com/show/billions-2016",
-            imdbID: "tt4270492",
-            subReddit: 'Billions'
-        },
-    },
-    {
-        name: 'Memories of the Alhambra',
-        id: 'memories',
-        link: {
-            netflix: '81004280'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2018,
-                yearEnd: 2019,
-                genre: [
-                    'romance',
-                    'sci-fi',
-                ],
-            },
-            summary: "A frantic young man is running scared in Barcelona. CEO Yoo Jin-woo heads to Granada on a quest after getting a strange call while on business in Spain.",
-        },
-        style: {
-            color: 'a6886c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '1000 / 973',
-        },
-        apps: {
-            tvTimeID: '348488',
-            reelgoodLink: 'https://reelgood.com/show/memories-of-the-alhambra-2018',
-            imdbID: 'tt8236556',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Midnight Mass',
-        id: 'midnight',
-        link: {
-            netflix: '81083626'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'horror',
-                ],
-            },
-            summary: "The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.",
-        },
-        style: {
-            color: '3c2e2c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '367226',
-            reelgoodLink: 'https://reelgood.com/show/midnight-mass',
-            imdbID: 'tt10574558',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: "What If?",
-        id: "whatif",
-        link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
-        info: {
-            service: 'disney',
-            studio: 'disney',
-            location: "Disney+",
-            description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
-            summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
-        },
-        style: {
-            color: '0F0F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "367147",
-            reelgoodLink: "https://reelgood.com/show/what-if-2021",
-            imdbID: "tt10168312",
-            subReddit: 'MarvelsWhatIf',
-        },
-    },
-    {
-        name: "Sex Education",
-        id: "edu",
-        link: {
-            netflix: '80197526'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: "Netflix",
-            description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
-            summary: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
-        },
-        style: {
-            color: '6d6256',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            tvTimeID: "356317",
-            reelgoodLink: "https://reelgood.com/show/sex-education-2019",
-            imdbID: "tt7767422",
-            subReddit: "NetflixSexEducation",
-        },
-    },
-    {
-        name: "Jojo's Bizzare Adventures",
-        id: "jojo",
-        link: {
-            netflix: '80179831'
-        },
-        info: {
-            service: 'netflix',
-            // studio: '',
-            location: "Netflix",
-            description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
-            summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
-        },
-        style: {
-            color: '2C2850',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "tall",
-        },
-        apps: {
-            tvTimeID: "262954",
-            // tvTimeRate: "9.74",
-            reelgoodLink: "https://reelgood.com/show/jojos-bizarre-adventure-2012",
-            // reelgoodRate: "72",
-            imdbID: "tt2359704",
-            // imdbRate: "8.4",
-        },
-    },
-    {
-        name: "Dave",
-        id: "dave",
-        link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
-            summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
-        },
-        style: {
-            color: '889898',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "354905",
-            reelgoodLink: "https://reelgood.com/show/dave-2020",
-            imdbID: "tt8531222",
-        },
-    },
-    {
-        name: "Twin Peaks",
-        id: "twinpeaks",
-        // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
-            // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
-        },
-        style: {
-            color: '300',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: "tall",
-        },
-    },
-    {
-        name: "Legion",
-        id: "legion",
-        link: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            description: "Sci-Fi &#149 3 Seasons &#149 2017 - 2019",
-            summary: "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he's confronted with the possibility that the voices he hears and the visions he sees might be real.",
-        },
-        style: {
-            color: '0b276d',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: "320724",
-            // reelgoodLink: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
-            imdbID: "tt5114356",
-        },
-    },
-    {
-        name: "Futurama",
-        id: "futurama",
-        link: "https://www.hulu.com/series/futurama-85bf4cc1-cd8b-4469-ad87-7289217a0b74",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            description: "Animation &#149 Comedy &#149 Sci-Fi &#149 8 Seasons &#149 1999 - 2013",
-            summary: "Accidentally frozen, pizza-deliverer Fry wakes up 1,000 years in the future. He is taken in by his sole descendant, an elderly and addled scientist who owns a small cargo delivery location. Among the other crew members are Capt. Leela, accountant Hermes, intern Amy, obnoxious robot Bender and lobsterlike moocher Dr. Zoidberg.",
-        },
-        style: {
-            color: 'E25924',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            tvTimeID: "314087",
-            reelgoodLink: "https://reelgood.com/show/futurama-1999",
-            // imdbID: "tt5712554",
-        },
-    },
+    allMovies.georgina,
+    allMovies.fairfax,
+    allMovies.ghosts,
+    allMovies.arcane,
+    allMovies.snowpiercer,
+    allMovies.hawkeye,
+    allMovies.southpark,
+    allMovies.archer,
+    allMovies.loveIsland,
+    allMovies.you,
+    allMovies.solar,
+    allMovies.dopesick,
+    allMovies.family,
+    allMovies.foundation,
+    allMovies.simpsons,
+    allMovies.billions,
+    allMovies.memories,
+    allMovies.midnight,
+    allMovies.whatif,
+    allMovies.edu,
+    allMovies.jojo,
+    allMovies.dave,
+    allMovies.twinpeaks,
+    allMovies.legion,
+    allMovies.futurama,
 ]
 const movieData6 = [
     {
