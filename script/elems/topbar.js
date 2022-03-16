@@ -1,6 +1,11 @@
-const topbar = document.getElementById('topbar')
-
 function topbarLoad() {
+    const topbar = document.getElementById('topbar')
+    topbar.append(topbarLeft())
+    topbar.append(topbarMiddle())
+    topbar.append(topbarRight())
+}
+
+function topbarLeft() {
     let left = document.createElement('div')
     left.classList = 'side'
     left.innerHTML = `
@@ -12,6 +17,10 @@ function topbarLoad() {
     `
     left.append(growElement())
 
+    return left
+}
+
+function topbarMiddle() {
     let appTray = document.createElement('div')
     appTray.classList = 'quick-apps'
 
@@ -57,13 +66,15 @@ function topbarLoad() {
     }
     appTray.lastChild.remove()
 
-    // right
+    return appTray
+}
 
+function topbarRight() {
     // dnd
     let dndAppElem = appCardSmall({
         name: 'Do Not Disturb',
         icon: iconData.moon,
-        trigger: function() { toggleDND() }
+        trigger: function () { toggleDND() }
     })
 
     if (isDND()) dndAppElem.firstChild.classList.add('blue-fg')
@@ -106,7 +117,5 @@ function topbarLoad() {
     right.append(focusAppElem)
     right.prepend(growElement())
 
-    topbar.append(left)
-    topbar.append(appTray)
-    topbar.append(right)
+    return right
 }
