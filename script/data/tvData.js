@@ -3031,6 +3031,983 @@ const allMovies = {
             subReddit: 'TheBoys',
         },
     },
+    'alice': {
+        name: 'Alice in Borderland',
+        id: 'alice',
+        link: {
+            netflix: '80200575'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Coming Soon',
+            // date: '',
+            // desc: {
+            //     seasons: 2,
+            //     yearStart: 2020,
+            //     yearEnd: null,
+            //     genre: [
+            //         'crime',
+            //         'comedy',
+            //     ],
+            // },
+            // summary: "summary",
+        },
+        style: {
+            // color: '000000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'always': {
+        name: "It's Always Sunny in Philadelphia",
+        id: 'always',
+        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            // date: 'Dec 23, 2021 03:00:00',
+            // weekday: 'Thursday',
+            desc: {
+                seasons: 15,
+                yearStart: 2005,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'friends',
+                ],
+            },
+            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
+        },
+        style: {
+            color: '699933',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: 'tallest',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '75805',
+            reelgoodLink: 'https://reelgood.com/show/its-always-sunny-in-philadelphia-2005',
+            imdbID: 'tt0472954',
+            subReddit: 'IASIP',
+        },
+        cast: [
+            {
+                actor: 'Charlie Day',
+                char: 'Charlie Kelly',
+            },
+            {
+                actor: 'Glenn Howerton',
+                char: 'Dennis Reynolds',
+            },
+            {
+                actor: 'Rob McElenney',
+                char: 'Mac',
+            },
+            {
+                actor: 'Kaitlin Olson',
+                char: 'Dee Reynolds',
+            },
+            {
+                actor: 'Danny DeVito',
+                char: 'Frank Reynolds',
+            },
+        ],
+    },
+    'curb': {
+        name: 'Curb Your Enthusiasm',
+        id: 'curb',
+        link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
+        info: {
+            service: 'hbo',
+            // studio: '',
+            location: 'Hulu',
+            // date: '26 Dec, 2021 22:30:00',
+            // weekday: 'Sunday',
+            desc: {
+                seasons: 11,
+                yearStart: 2000,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
+        },
+        style: {
+            color: 'FDC801',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '76203',
+            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
+            imdbID: 'tt0264235',
+            subReddit: 'curb',
+        },
+        cast: [
+            {
+                actor: 'Larry David',
+                char: 'Larry David',
+            },
+            {
+                actor: 'Jeff Garlin',
+                char: 'Jeff Greene',
+            },
+            {
+                actor: 'Cheryl Hines',
+                char: 'Cheryl David',
+            },
+            {
+                actor: 'Susie Essman',
+                char: 'Susie Greene',
+            },
+            {
+                actor: 'Richard Lewis',
+                char: 'Richard Lewis',
+            },
+            {
+                actor: 'J.B. Smoove',
+                char: 'Leon Black',
+            },
+        ],
+    },
+    'falcon': {
+        name: 'Falcon and the Winter Soldier',
+        id: 'falcon',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Disney+',
+            // date: '',
+            // desc: {
+            // //    seasons: 1,
+            // //    yearStart: 2021,
+            // //    yearEnd: null,
+            // //    genre: [
+            // //        'crime',
+            // //        'comedy',
+            // //    ],
+            // },
+            // summary: "summary",
+        },
+        style: {
+            // color: '000000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'hitMonkey': {
+        name: 'Hit Monkey',
+        id: 'hitMonkey',
+        link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
+        info: {
+            service: 'hulu',
+            studio: 'marvel',
+            location: 'Hulu',
+            // date: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'animation',
+                ],
+            },
+            summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
+        },
+        style: {
+            color: '3B347A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '361835',
+            reelgoodLink: 'https://reelgood.com/show/marvels-hitmonkey-2021',
+            imdbID: 'tt9811316',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Fred Tatasciore',
+                char: 'Hit-Monkey',
+            },
+            {
+                actor: 'Jason Sudeikis',
+                char: 'Bryce',
+            },
+            {
+                actor: 'Olivia Munn',
+                char: 'Akiko',
+            },
+            {
+                actor: 'George Takei',
+                char: 'Shinji Yokohama',
+            },
+        ],
+    },
+    'industry': {
+        name: 'Industry',
+        id: 'industry',
+        link: 'https://www.hulu.com/series/industry-6ff820e0-f28e-405a-a771-9dc2b01d5e97',
+        info: {
+            service: 'hulu',
+            studio: 'hbo',
+            location: 'Hulu',
+            // date: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'money',
+                ],
+            },
+            summary: "This series follows a group of young graduates competing for a limited set of permanent positions at a top investment bank in London",
+        },
+        style: {
+            color: '615e65',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '371796',
+            reelgoodLink: 'https://reelgood.com/show/industry-2020',
+            imdbID: 'tt7671070',
+            subReddit: 'IndustryOnHBO',
+        },
+    },
+    'insideJob': {
+        name: 'Inside Job',
+        id: 'insideJob',
+        link: {
+            netflix: '80995819'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            date: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Lizard people? Real. The moon landing? Fake. Managing the world's conspiracies is a full-time job for an awkward genius and her dysfunctional co-workers.",
+        },
+        style: {
+            color: '1e3d51',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '365098',
+            reelgoodLink: 'https://reelgood.com/show/inside-job-2021',
+            imdbID: 'tt10231312',
+            // subReddit: 'subreddit',
+        },
+    },
+    'invincible': {
+        name: 'Invincible',
+        id: 'invincible',
+        // link: 'watchlink',
+        info: {
+            // service: '',
+            // studio: '',
+            location: 'Coming Soon',
+            // description: 'Action &#149 Animation &#149 Superhero &#149 ___ Seasons &#149 Y000 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '6C7866',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/invincible-2021',
+            // imdbID: 'identifier',
+            // subReddit: null,
+        },
+    },
+    'loki': {
+        name: 'Loki',
+        id: 'loki',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Disney+',
+            // date: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'fantasy',
+                    'sci-fi',
+                ],
+            },
+            summary: "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
+            tags: [
+                'mcu',
+            ]
+        },
+        style: {
+            color: 'a87643',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            tvTimeID: '362472',
+            reelgoodLink: 'https://reelgood.com/show/loki-2021',
+            imdbID: 'tt9140554',
+            // subReddit: null,
+        },
+    },
+    'ldr': {
+        name: "Love Death Robots",
+        id: "ldr",
+        link: 'https://www.netflix.com/title/80174608',
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: "Netflix",
+            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
+            summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
+        },
+        style: {
+            color: '200f17',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            tvTimeID: "357888",
+            reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
+            imdbID: "tt9561862",
+            subReddit: "LoveDeathAndRobots",
+        },
+    },
+    'mando': {
+        name: 'The Mandalorian',
+        id: 'mando',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'disney',
+            studio: 'starwars',
+            location: 'Disney+',
+            // date: 'Dec 24, 2021',
+            desc: {
+                seasons: 1,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                    'star wars',
+                ],
+            },
+            summary: "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
+        },
+        style: {
+            color: '4d627f',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '361753',
+            reelgoodLink: 'https://reelgood.com/show/the-mandalorian-2019',
+            imdbID: 'tt8111088',
+            subReddit: 'TheMandalorianTV',
+        },
+    },
+    'manifest': {
+        name: 'Manifest',
+        id: 'manifest',
+        // link: 'watchlink',
+        info: {
+            service: 'netflix',
+            // studio: '',
+            location: 'Coming Soon',
+            description: 'Drama &#149 Mystery &#149 3 Seasons &#149 2018 - Present',
+            summary: "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds.",
+        },
+        style: {
+            color: '504A6A',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            tvTimeID: '349271',
+            reelgoodLink: 'https://reelgood.com/show/manifest-2018',
+            imdbID: 'tt8421350',
+            subReddit: 'ManifestNBC',
+        },
+    },
+    'mythic': {
+        name: 'Mythic Quest',
+        id: 'mythic',
+        link: null,
+        info: {
+            // service: '',
+            // studio: '',
+            location: 'Coming Soon',
+            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Y999',
+            // summary: "summary",
+        },
+        style: {
+            color: '2F322F',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/mythic-quest-2020',
+            // imdbID: 'identifier',
+            subReddit: 'MythicQuest',
+        },
+    },
+    'narcos': {
+        name: 'Narcos: Mexico',
+        id: 'narcos',
+        link: {
+            netflix: '80997085'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 3,
+                yearStart: 2018,
+                yearEnd: 2021,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '353232',
+            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
+            imdbID: 'tt8714904',
+            // subReddit: null,
+        },
+    },
+    'nine': {
+        name: 'Nine Perfect Strangers',
+        id: 'nine',
+        link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'mystery',
+                ],
+            },
+            summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
+        },
+        style: {
+            color: '6b7790',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            tvTimeID: '376815',
+            reelgoodLink: 'https://reelgood.com/show/nine-perfect-strangers',
+            imdbID: 'tt8760932',
+            subReddit: 'nineperfectstrangers',
+        },
+    },
+    'murders': {
+        name: "Only Murders in the Building",
+        id: "murders",
+        link: "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            // weekday: 'Tuesday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'comedy',
+                    'drama',
+                ],
+            },
+            summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
+        },
+        style: {
+            color: '292A27',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: "399959",
+            reelgoodLink: "https://reelgood.com/show/only-murders-in-the-building-2021",
+            imdbID: "tt12851524",
+            subReddit: 'OnlyMurdersHulu',
+        },
+    },
+    'paradise': {
+        name: 'Paradise PD',
+        id: 'paradise',
+        link: {
+            netflix: '80191522'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            // desc: {
+            // //    seasons: 1,
+            // //    yearStart: 2021,
+            // //    yearEnd: null,
+            // //    genre: [
+            // //        'crime',
+            // //        'comedy',
+            // //    ],
+            // },
+            // summary: "summary",
+        },
+        style: {
+            // color: '000000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'reacher': {
+        name: 'Reacher',
+        id: 'reacher',
+        link: {
+            primeVideo: 'B09ML341D8'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            // date: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "Jack Reacher was arrested for murder and now the police need his help. Based on the books by Lee Child.",
+        },
+        style: {
+            color: colorData.fluent['green20'],
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '366924',
+            reelgoodLink: 'https://reelgood.com/show/reacher-2022',
+            imdbID: 'tt9288030',
+            subReddit: 'JackReacher',
+        },
+        cast: [
+            {
+                actor: 'Alan Ritchson',
+                char: 'Jack Reacher',
+            },
+        ],
+    },
+    'rick': {
+        name: 'Rick and Morty',
+        id: 'rick',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Adult Swim',
+            // date: '',
+            desc: {
+                seasons: 5,
+                yearStart: 2013,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                    'sci-fi',
+                ],
+            },
+            summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
+        },
+        style: {
+            color: '2D1D54',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            tvTimeID: '275274',
+            reelgoodLink: 'https://reelgood.com/show/rick-and-morty-2013',
+            imdbID: 'tt2861424',
+            subReddit: 'rickandmorty',
+        },
+        cast: [
+            {
+                actor: 'Justin Roiland',
+                char: 'Rick Sanchez, Morty Smith',
+            },
+            {
+                actor: 'Chris Parnell',
+                char: 'Jerry Smith',
+            },
+            {
+                actor: 'Sarah Chalke',
+                char: 'Beth Smith',
+            },
+            {
+                actor: 'Spencer Grammer',
+                char: 'Summer Smith',
+            },
+        ],
+    },
+    'succession': {
+        name: 'Succession',
+        id: 'succession',
+        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'Hulu',
+            // date: '12 Dec, 2021 21:00:00',
+            // weekday: 'Sunday',
+            desc: {
+                seasons: 2,
+                yearStart: 2018,
+                yearEnd: null,
+                genre: [
+                    //    'comedy',
+                    'drama',
+                ],
+            },
+            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
+        },
+        style: {
+            color: '555962',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '338186',
+            reelgoodLink: 'https://reelgood.com/show/succession-2018',
+            imdbID: 'tt7660850',
+            subReddit: 'SuccessionTV',
+        },
+        cast: [
+            {
+                actor: 'Brian Cox',
+                char: 'Logan Roy',
+            },
+            {
+                actor: 'Jeremy Strong',
+                char: 'Kendall Roy',
+            },
+            {
+                actor: 'Sarah Snook',
+                char: 'Shiv Roy',
+            },
+            {
+                actor: 'Matthew Macfadyen',
+                char: 'Tom Wambsgans',
+            },
+            {
+                actor: 'Kieran Culkin',
+                char: 'Roman Roy',
+            },
+            {
+                actor: 'Nicholas Braun',
+                char: 'Greg Hirsch',
+            },
+            {
+                actor: 'Alan Ruck',
+                char: 'Connor Roy',
+            },
+        ],
+    },
+    'squid': {
+        name: 'Squid Game',
+        id: 'squid',
+        link: {
+            netflix: '81040344',
+        },
+        info: {
+            service: 'netflix',
+            // studio: '',
+            location: 'Netflix',
+            description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
+            summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
+        },
+        style: {
+            color: '3f1513', // 7C4E31
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+        },
+        apps: {
+            tvTimeID: '383275',
+            reelgoodLink: 'https://reelgood.com/show/squid-game-2021',
+            imdbID: 'tt10919420',
+            subReddit: 'squidgame',
+        },
+    },
+    'ted': {
+        name: "Ted Lasso",
+        id: "ted",
+        link: 'https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy',
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            weekday: 'Friday',
+            desc: {
+                seasons: 2,
+                yearStart: 2020,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'drama',
+                    'sport',
+                ],
+            },
+            summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+        },
+        style: {
+            color: '35465e',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: "383203",
+            reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
+            imdbID: "tt10986410",
+            subReddit: "TedLasso",
+        },
+        cast: [
+            {
+                actor: 'Jason Sudeikis',
+                char: 'Ted Lasso',
+            },
+            {
+                actor: 'Hannah Waddingham',
+                char: 'Rebecca Welton',
+            },
+            {
+                actor: 'Juno Temple',
+                char: 'Keeley Jones',
+            },
+            {
+                actor: 'Jeremy Swift',
+                char: 'Higgins',
+            },
+            {
+                actor: 'Phil Dunster',
+                char: 'Jaime Tartt',
+            },
+            {
+                actor: 'Brett Goldstein',
+                char: 'Roy Kent',
+            },
+            {
+                actor: 'Brendan Hunt',
+                char: 'Coach Beard',
+            },
+            {
+                actor: 'Nick Mohammed',
+                char: 'Nathan Shelley',
+            },
+        ],
+    },
+    'shadows': {
+        name: "What We Do in the Shadows",
+        id: "shadows",
+        link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            weekday: 'Friday',
+            desc: {
+                seasons: 3,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'drama',
+                    'fantasy',
+                ],
+            },
+            summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
+        },
+        style: {
+            color: '1C2C70',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: "358211",
+            reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
+            imdbID: "tt7908628",
+            subReddit: 'WhatWeDointheShadows',
+        },
+        cast: [
+            {
+                actor: 'Kayvan Novak',
+                char: 'Nandor the Relentless',
+            },
+            {
+                actor: 'Matt Berry',
+                char: 'Laszlo Cravensworth',
+            },
+            {
+                actor: 'Natasia Demetriou',
+                char: 'Nadja',
+            },
+            {
+                actor: 'Harvey Guillen',
+                char: 'Guillermo de la Cruz',
+            },
+            {
+                actor: 'Mark Proksch',
+                char: 'Colin Robinson',
+            },
+        ],
+    },
+    'yellowjackets': {
+        name: 'Yellowjackets',
+        id: 'yellowjackets',
+        link: '',
+        info: {
+            service: 'showtime',
+            // studio: 'studio',
+            location: 'Downloaded',
+            // date: '',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'horror',
+                    'mystery',
+                ],
+            },
+            summary: "A wildly talented high school girl soccer team becomes the (un)lucky survivors of a plane crash deep in the Ontario wilderness.",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'png',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '399731',
+            reelgoodLink: 'https://reelgood.com/show/yellowjackets-2021',
+            imdbID: 'tt11041332',
+            subReddit: 'Yellowjackets',
+        },
+    },
 }
 
 
@@ -3051,8 +4028,6 @@ let movieData1 = [
     allMovies.drive,
     allMovies.tintin,
 ]
-
-
 let soonMovies = [
     allMovies.himyf,
     allMovies.snowfall,
@@ -3070,8 +4045,6 @@ for (const movie of soonMovies.reverse()) {
         movieData0.unshift(movie)
     }
 }
-
-
 
 const movieData2 = [
     allMovies.money,
@@ -3150,983 +4123,30 @@ const movieData6 = [
     allMovies.boys,
 ]
 const movieData7 = [
-    {
-        name: 'Alice in Borderland',
-        id: 'alice',
-        link: {
-            netflix: '80200575'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Coming Soon',
-            // date: '',
-            // desc: {
-            //     seasons: 2,
-            //     yearStart: 2020,
-            //     yearEnd: null,
-            //     genre: [
-            //         'crime',
-            //         'comedy',
-            //     ],
-            // },
-            // summary: "summary",
-        },
-        style: {
-            // color: '000000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: "It's Always Sunny in Philadelphia",
-        id: 'always',
-        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            // date: 'Dec 23, 2021 03:00:00',
-            // weekday: 'Thursday',
-            desc: {
-                seasons: 15,
-                yearStart: 2005,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'friends',
-                ],
-            },
-            summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
-        },
-        style: {
-            color: '699933',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'tallest',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '75805',
-            reelgoodLink: 'https://reelgood.com/show/its-always-sunny-in-philadelphia-2005',
-            imdbID: 'tt0472954',
-            subReddit: 'IASIP',
-        },
-        cast: [
-            {
-                actor: 'Charlie Day',
-                char: 'Charlie Kelly',
-            },
-            {
-                actor: 'Glenn Howerton',
-                char: 'Dennis Reynolds',
-            },
-            {
-                actor: 'Rob McElenney',
-                char: 'Mac',
-            },
-            {
-                actor: 'Kaitlin Olson',
-                char: 'Dee Reynolds',
-            },
-            {
-                actor: 'Danny DeVito',
-                char: 'Frank Reynolds',
-            },
-        ],
-    },
-    {
-        name: 'Curb Your Enthusiasm',
-        id: 'curb',
-        link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
-        info: {
-            service: 'hbo',
-            // studio: '',
-            location: 'Hulu',
-            // date: '26 Dec, 2021 22:30:00',
-            // weekday: 'Sunday',
-            desc: {
-                seasons: 11,
-                yearStart: 2000,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                ],
-            },
-            summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
-        },
-        style: {
-            color: 'FDC801',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '76203',
-            reelgoodLink: 'https://reelgood.com/show/curb-your-enthusiasm-2000',
-            imdbID: 'tt0264235',
-            subReddit: 'curb',
-        },
-        cast: [
-            {
-                actor: 'Larry David',
-                char: 'Larry David',
-            },
-            {
-                actor: 'Jeff Garlin',
-                char: 'Jeff Greene',
-            },
-            {
-                actor: 'Cheryl Hines',
-                char: 'Cheryl David',
-            },
-            {
-                actor: 'Susie Essman',
-                char: 'Susie Greene',
-            },
-            {
-                actor: 'Richard Lewis',
-                char: 'Richard Lewis',
-            },
-            {
-                actor: 'J.B. Smoove',
-                char: 'Leon Black',
-            },
-        ],
-    },
-    {
-        name: 'Falcon and the Winter Soldier',
-        id: 'falcon',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Disney+',
-            // date: '',
-            // desc: {
-            // //    seasons: 1,
-            // //    yearStart: 2021,
-            // //    yearEnd: null,
-            // //    genre: [
-            // //        'crime',
-            // //        'comedy',
-            // //    ],
-            // },
-            // summary: "summary",
-        },
-        style: {
-            // color: '000000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Hit Monkey',
-        id: 'hitMonkey',
-        link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
-        info: {
-            service: 'hulu',
-            studio: 'marvel',
-            location: 'Hulu',
-            // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'animation',
-                ],
-            },
-            summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
-        },
-        style: {
-            color: '3B347A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '361835',
-            reelgoodLink: 'https://reelgood.com/show/marvels-hitmonkey-2021',
-            imdbID: 'tt9811316',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Fred Tatasciore',
-                char: 'Hit-Monkey',
-            },
-            {
-                actor: 'Jason Sudeikis',
-                char: 'Bryce',
-            },
-            {
-                actor: 'Olivia Munn',
-                char: 'Akiko',
-            },
-            {
-                actor: 'George Takei',
-                char: 'Shinji Yokohama',
-            },
-        ],
-    },
-    {
-        name: 'Industry',
-        id: 'industry',
-        link: 'https://www.hulu.com/series/industry-6ff820e0-f28e-405a-a771-9dc2b01d5e97',
-        info: {
-            service: 'hulu',
-            studio: 'hbo',
-            location: 'Hulu',
-            // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'money',
-                ],
-            },
-            summary: "This series follows a group of young graduates competing for a limited set of permanent positions at a top investment bank in London",
-        },
-        style: {
-            color: '615e65',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '371796',
-            reelgoodLink: 'https://reelgood.com/show/industry-2020',
-            imdbID: 'tt7671070',
-            subReddit: 'IndustryOnHBO',
-        },
-    },
-    {
-        name: 'Inside Job',
-        id: 'insideJob',
-        link: {
-            netflix: '80995819'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Lizard people? Real. The moon landing? Fake. Managing the world's conspiracies is a full-time job for an awkward genius and her dysfunctional co-workers.",
-        },
-        style: {
-            color: '1e3d51',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '365098',
-            reelgoodLink: 'https://reelgood.com/show/inside-job-2021',
-            imdbID: 'tt10231312',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Invincible',
-        id: 'invincible',
-        // link: 'watchlink',
-        info: {
-            // service: '',
-            // studio: '',
-            location: 'Coming Soon',
-            // description: 'Action &#149 Animation &#149 Superhero &#149 ___ Seasons &#149 Y000 - Present',
-            // summary: "summary",
-        },
-        style: {
-            color: '6C7866',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/show/invincible-2021',
-            // imdbID: 'identifier',
-            // subReddit: null,
-        },
-    },
-    {
-        name: 'Loki',
-        id: 'loki',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Disney+',
-            // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'fantasy',
-                    'sci-fi',
-                ],
-            },
-            summary: "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
-            tags: [
-                'mcu',
-            ]
-        },
-        style: {
-            color: 'a87643',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            tvTimeID: '362472',
-            reelgoodLink: 'https://reelgood.com/show/loki-2021',
-            imdbID: 'tt9140554',
-            // subReddit: null,
-        },
-    },
-    {
-        name: "Love Death Robots",
-        id: "ldr",
-        link: 'https://www.netflix.com/title/80174608',
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: "Netflix",
-            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
-            summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
-        },
-        style: {
-            color: '200f17',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            tvTimeID: "357888",
-            reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
-            imdbID: "tt9561862",
-            subReddit: "LoveDeathAndRobots",
-        },
-    },
-    {
-        name: 'The Mandalorian',
-        id: 'mando',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'disney',
-            studio: 'starwars',
-            location: 'Disney+',
-            // date: 'Dec 24, 2021',
-            desc: {
-                seasons: 1,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                    'star wars',
-                ],
-            },
-            summary: "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
-        },
-        style: {
-            color: '4d627f',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '361753',
-            reelgoodLink: 'https://reelgood.com/show/the-mandalorian-2019',
-            imdbID: 'tt8111088',
-            subReddit: 'TheMandalorianTV',
-        },
-    },
-    {
-        name: 'Manifest',
-        id: 'manifest',
-        // link: 'watchlink',
-        info: {
-            service: 'netflix',
-            // studio: '',
-            location: 'Coming Soon',
-            description: 'Drama &#149 Mystery &#149 3 Seasons &#149 2018 - Present',
-            summary: "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds.",
-        },
-        style: {
-            color: '504A6A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            tvTimeID: '349271',
-            reelgoodLink: 'https://reelgood.com/show/manifest-2018',
-            imdbID: 'tt8421350',
-            subReddit: 'ManifestNBC',
-        },
-    },
-    {
-        name: 'Mythic Quest',
-        id: 'mythic',
-        link: null,
-        info: {
-            // service: '',
-            // studio: '',
-            location: 'Coming Soon',
-            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Y999',
-            // summary: "summary",
-        },
-        style: {
-            color: '2F322F',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/show/mythic-quest-2020',
-            // imdbID: 'identifier',
-            subReddit: 'MythicQuest',
-        },
-    },
-    {
-        name: 'Narcos: Mexico',
-        id: 'narcos',
-        link: {
-            netflix: '80997085'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: 2021,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '353232',
-            reelgoodLink: 'https://reelgood.com/show/narcos-mexico-2018',
-            imdbID: 'tt8714904',
-            // subReddit: null,
-        },
-    },
-    {
-        name: 'Nine Perfect Strangers',
-        id: 'nine',
-        link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
-        info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'mystery',
-                ],
-            },
-            summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
-        },
-        style: {
-            color: '6b7790',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            tvTimeID: '376815',
-            reelgoodLink: 'https://reelgood.com/show/nine-perfect-strangers',
-            imdbID: 'tt8760932',
-            subReddit: 'nineperfectstrangers',
-        },
-    },
-    {
-        name: "Only Murders in the Building",
-        id: "murders",
-        link: "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
-        info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
-            // weekday: 'Tuesday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'comedy',
-                    'drama',
-                ],
-            },
-            summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
-        },
-        style: {
-            color: '292A27',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: "399959",
-            reelgoodLink: "https://reelgood.com/show/only-murders-in-the-building-2021",
-            imdbID: "tt12851524",
-            subReddit: 'OnlyMurdersHulu',
-        },
-    },
-    {
-        name: 'Paradise PD',
-        id: 'paradise',
-        link: {
-            netflix: '80191522'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            // desc: {
-            // //    seasons: 1,
-            // //    yearStart: 2021,
-            // //    yearEnd: null,
-            // //    genre: [
-            // //        'crime',
-            // //        'comedy',
-            // //    ],
-            // },
-            // summary: "summary",
-        },
-        style: {
-            // color: '000000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Reacher',
-        id: 'reacher',
-        link: {
-            primeVideo: 'B09ML341D8'
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "Jack Reacher was arrested for murder and now the police need his help. Based on the books by Lee Child.",
-        },
-        style: {
-            color: colorData.fluent['green20'],
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '366924',
-            reelgoodLink: 'https://reelgood.com/show/reacher-2022',
-            imdbID: 'tt9288030',
-            subReddit: 'JackReacher',
-        },
-        cast: [
-            {
-                actor: 'Alan Ritchson',
-                char: 'Jack Reacher',
-            },
-        ],
-    },
-    {
-        name: 'Rick and Morty',
-        id: 'rick',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Adult Swim',
-            // date: '',
-            desc: {
-                seasons: 5,
-                yearStart: 2013,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                    'sci-fi',
-                ],
-            },
-            summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
-        },
-        style: {
-            color: '2D1D54',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            tvTimeID: '275274',
-            reelgoodLink: 'https://reelgood.com/show/rick-and-morty-2013',
-            imdbID: 'tt2861424',
-            subReddit: 'rickandmorty',
-        },
-        cast: [
-            {
-                actor: 'Justin Roiland',
-                char: 'Rick Sanchez, Morty Smith',
-            },
-            {
-                actor: 'Chris Parnell',
-                char: 'Jerry Smith',
-            },
-            {
-                actor: 'Sarah Chalke',
-                char: 'Beth Smith',
-            },
-            {
-                actor: 'Spencer Grammer',
-                char: 'Summer Smith',
-            },
-        ],
-    },
-    {
-        name: 'Succession',
-        id: 'succession',
-        link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
-            // date: '12 Dec, 2021 21:00:00',
-            // weekday: 'Sunday',
-            desc: {
-                seasons: 2,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    //    'comedy',
-                    'drama',
-                ],
-            },
-            summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
-        },
-        style: {
-            color: '555962',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '338186',
-            reelgoodLink: 'https://reelgood.com/show/succession-2018',
-            imdbID: 'tt7660850',
-            subReddit: 'SuccessionTV',
-        },
-        cast: [
-            {
-                actor: 'Brian Cox',
-                char: 'Logan Roy',
-            },
-            {
-                actor: 'Jeremy Strong',
-                char: 'Kendall Roy',
-            },
-            {
-                actor: 'Sarah Snook',
-                char: 'Shiv Roy',
-            },
-            {
-                actor: 'Matthew Macfadyen',
-                char: 'Tom Wambsgans',
-            },
-            {
-                actor: 'Kieran Culkin',
-                char: 'Roman Roy',
-            },
-            {
-                actor: 'Nicholas Braun',
-                char: 'Greg Hirsch',
-            },
-            {
-                actor: 'Alan Ruck',
-                char: 'Connor Roy',
-            },
-        ],
-    },
-    {
-        name: 'Squid Game',
-        id: 'squid',
-        link: {
-            netflix: '81040344',
-        },
-        info: {
-            service: 'netflix',
-            // studio: '',
-            location: 'Netflix',
-            description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
-            summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
-        },
-        style: {
-            color: '3f1513', // 7C4E31
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-        },
-        apps: {
-            tvTimeID: '383275',
-            reelgoodLink: 'https://reelgood.com/show/squid-game-2021',
-            imdbID: 'tt10919420',
-            subReddit: 'squidgame',
-        },
-    },
-    {
-        name: "Ted Lasso",
-        id: "ted",
-        link: 'https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy',
-        info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
-            weekday: 'Friday',
-            desc: {
-                seasons: 2,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'drama',
-                    'sport',
-                ],
-            },
-            summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-        },
-        style: {
-            color: '35465e',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: "383203",
-            reelgoodLink: "https://reelgood.com/show/ted-lasso-2020",
-            imdbID: "tt10986410",
-            subReddit: "TedLasso",
-        },
-        cast: [
-            {
-                actor: 'Jason Sudeikis',
-                char: 'Ted Lasso',
-            },
-            {
-                actor: 'Hannah Waddingham',
-                char: 'Rebecca Welton',
-            },
-            {
-                actor: 'Juno Temple',
-                char: 'Keeley Jones',
-            },
-            {
-                actor: 'Jeremy Swift',
-                char: 'Higgins',
-            },
-            {
-                actor: 'Phil Dunster',
-                char: 'Jaime Tartt',
-            },
-            {
-                actor: 'Brett Goldstein',
-                char: 'Roy Kent',
-            },
-            {
-                actor: 'Brendan Hunt',
-                char: 'Coach Beard',
-            },
-            {
-                actor: 'Nick Mohammed',
-                char: 'Nathan Shelley',
-            },
-        ],
-    },
-    {
-        name: "What We Do in the Shadows",
-        id: "shadows",
-        link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            weekday: 'Friday',
-            desc: {
-                seasons: 3,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'drama',
-                    'fantasy',
-                ],
-            },
-            summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
-        },
-        style: {
-            color: '1C2C70',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: "358211",
-            reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
-            imdbID: "tt7908628",
-            subReddit: 'WhatWeDointheShadows',
-        },
-        cast: [
-            {
-                actor: 'Kayvan Novak',
-                char: 'Nandor the Relentless',
-            },
-            {
-                actor: 'Matt Berry',
-                char: 'Laszlo Cravensworth',
-            },
-            {
-                actor: 'Natasia Demetriou',
-                char: 'Nadja',
-            },
-            {
-                actor: 'Harvey Guillen',
-                char: 'Guillermo de la Cruz',
-            },
-            {
-                actor: 'Mark Proksch',
-                char: 'Colin Robinson',
-            },
-        ],
-    },
-    {
-        name: 'Yellowjackets',
-        id: 'yellowjackets',
-        link: '',
-        info: {
-            service: 'showtime',
-            // studio: 'studio',
-            location: 'Downloaded',
-            // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'horror',
-                    'mystery',
-                ],
-            },
-            summary: "A wildly talented high school girl soccer team becomes the (un)lucky survivors of a plane crash deep in the Ontario wilderness.",
-        },
-        style: {
-            color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'png',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '399731',
-            reelgoodLink: 'https://reelgood.com/show/yellowjackets-2021',
-            imdbID: 'tt11041332',
-            subReddit: 'Yellowjackets',
-        },
-    },
+    allMovies.alice,
+    allMovies.always,
+    allMovies.curb,
+    allMovies.falcon,
+    allMovies.hitMonkey,
+    allMovies.industry,
+    allMovies.insideJob,
+    allMovies.invincible,
+    allMovies.loki,
+    allMovies.ldr,
+    allMovies.mando,
+    allMovies.manifest,
+    allMovies.mythic,
+    allMovies.narcos,
+    allMovies.nine,
+    allMovies.murders,
+    allMovies.paradise,
+    allMovies.reacher,
+    allMovies.rick,
+    allMovies.succession,
+    allMovies.squid,
+    allMovies.ted,
+    allMovies.shadows,
+    allMovies.yellowjackets,
 ]
 const movieData8 = [
     {
