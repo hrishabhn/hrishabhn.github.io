@@ -828,57 +828,7 @@ const allMovies = {
             // subReddit: 'subreddit',
         },
     },
-}
-
-
-
-
-
-
-
-
-let movieData0 = [
-    allMovies.elite,
-    allMovies.silicon,
-]
-let movieData1 = [
-    allMovies.attack,
-    allMovies.ozark,
-    allMovies.peaky,
-    allMovies.drive,
-    allMovies.tintin,
-]
-
-
-let soonMovies = [
-    allMovies.himyf,
-    allMovies.snowfall,
-    allMovies.severance,
-    allMovies.abbott,
-    allMovies.wecrashed,
-]
-
-for (const movie of soonMovies.reverse()) {
-    let soon = (new Date(movie.info.date) > new Date)
-
-    if (soon) {
-        movieData1.unshift(movie)
-    } else {
-        movieData0.unshift(movie)
-    }
-}
-
-
-
-const movieData2 = [
-    allMovies.money,
-    allMovies.disenchant,
-    allMovies.dontLookUp,
-    allMovies.cowboy,
-    allMovies.grandTour,
-]
-const movieData3 = [
-    {
+    'jurassic6': {
         name: 'Jurassic World: Dominion',
         id: 'jurassic6',
         // link: {
@@ -913,7 +863,7 @@ const movieData3 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'eternals': {
         name: 'Eternals',
         id: 'eternals',
         // link: {
@@ -948,7 +898,7 @@ const movieData3 = [
             imdbID: 'tt9032400',
         },
     },
-    {
+    'knives': {
         name: 'Knives Out',
         id: 'knives',
         link: {
@@ -976,7 +926,7 @@ const movieData3 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'dune': {
         name: 'Dune',
         id: 'dune',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYUjdLgBiJp5otAEAAAAJ:type:feature',
@@ -1007,7 +957,7 @@ const movieData3 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'dil': {
         name: 'Dil Chahta Hai',
         id: 'dil',
         link: {
@@ -1033,7 +983,7 @@ const movieData3 = [
             imdbID: 'tt0292490',
         },
     },
-    {
+    'loAndBehold': {
         name: 'Lo and Behold: Reveries of the Connected World',
         id: 'loAndBehold',
         link: {
@@ -1061,7 +1011,7 @@ const movieData3 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'ghost': {
         name: 'Ghost in the Shell',
         id: 'ghost',
         link: {
@@ -1097,7 +1047,7 @@ const movieData3 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'john': {
         name: 'Being John Malkovich',
         id: 'john',
         // link: {
@@ -1125,7 +1075,7 @@ const movieData3 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'earth': {
         name: 'The Year the Earth Changed',
         id: 'earth',
         link: 'https://tv.apple.com/movie/the-year-earth-changed/umc.cmc.3fob3t7nfhehpb3ilgynzxmnu',
@@ -1151,9 +1101,7 @@ const movieData3 = [
             // subReddit: 'subreddit',
         },
     },
-]
-const movieData4 = [
-    {
+    'phil': {
         name: 'Somebody Feed Phil',
         id: 'phil',
         link: {
@@ -1196,7 +1144,7 @@ const movieData4 = [
             },
         ],
     },
-    {
+    'anna': {
         name: 'Inventing Anna',
         id: 'anna',
         link: {
@@ -1274,7 +1222,7 @@ const movieData4 = [
             },
         ],
     },
-    {
+    'diabolical': {
         name: 'The Boys Presents: Diabolical',
         id: 'diabolical',
         link: {
@@ -1353,7 +1301,7 @@ const movieData4 = [
             },
         ],
     },
-    {
+    'boba': {
         name: 'The Book of Boba Fett',
         id: 'boba',
         link: 'https://www.disneyplus.com/series/the-book-of-boba-fett/57TL7zLNu2wf',
@@ -1389,7 +1337,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'clarkson': {
         name: "Clarkson's Farm",
         id: 'clarkson',
         link: {
@@ -1426,7 +1374,7 @@ const movieData4 = [
             subReddit: 'ClarksonsFarm',
         },
     },
-    {
+    'cowboy2': {
         name: 'Cowboy Bebop',
         id: 'cowboy2',
         link: {
@@ -1485,7 +1433,7 @@ const movieData4 = [
             },
         ],
     },
-    {
+    'joanna': {
         name: "Joanna Lumley's Trans-Siberian Adventure",
         id: 'joanna',
         link: {
@@ -1520,7 +1468,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'chernobyl': {
         name: 'Chernobyl',
         id: 'chernobyl',
         link: 'https://www.hulu.com/series/chernobyl-849bed9a-2da8-484b-8cdf-d7000090fc5d',
@@ -1554,7 +1502,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'sopranos': {
         name: 'The Sopranos',
         id: 'sopranos',
         link: 'https://www.hulu.com/series/the-sopranos-4e03024d-2f23-423a-934c-23adf1e62fe9',
@@ -1588,7 +1536,7 @@ const movieData4 = [
             subReddit: 'thesopranos',
         },
     },
-    {
+    'fleabag': {
         name: 'Fleabag',
         id: 'fleabag',
         link: {
@@ -1624,7 +1572,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'finalSpace': {
         name: 'Final Space',
         id: 'finalSpace',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GXbJCBwcZGnepwwEAAAhh:type:series',
@@ -1658,7 +1606,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'maid': {
         name: 'Maid',
         id: 'maid',
         link: {
@@ -1706,7 +1654,7 @@ const movieData4 = [
             },
         ],
     },
-    {
+    'spy': {
         name: 'The Spy',
         id: 'spy',
         link: {
@@ -1732,7 +1680,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'lineofduty': {
         name: "Line of Duty",
         id: "lineofduty",
         link: "https://www.hulu.com/series/line-of-duty-0efc0f95-c575-46da-b28f-a30a13d86b37",
@@ -1755,7 +1703,7 @@ const movieData4 = [
             imdbID: "tt2303687",
         },
     },
-    {
+    'dexter': {
         name: 'Dexter',
         id: 'dexter',
         link: {
@@ -1793,7 +1741,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'mindhunter': {
         name: 'Mindhunter',
         id: 'mindhunter',
         link: {
@@ -1821,7 +1769,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'vikings': {
         name: 'Vikings',
         id: 'vikings',
         link: 'https://www.hulu.com/series/vikings-8bc072a3-4a5e-47cb-9cb6-bc3dc3785fe1',
@@ -1856,7 +1804,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'qanon': {
         name: 'Q: Into the Storm',
         id: 'qanon',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYDk9Ig48c5i6hgEAAAA7:type:series',
@@ -1891,7 +1839,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'myname': {
         name: 'My Name',
         id: 'myname',
         link: {
@@ -1927,7 +1875,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'witcher': {
         name: 'The Witcher',
         id: 'witcher',
         link: {
@@ -1964,7 +1912,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'dear': {
         name: 'Dear White People',
         id: 'dear',
         link: {
@@ -1990,7 +1938,7 @@ const movieData4 = [
             // subReddit: 'subreddit',
         },
     },
-    {
+    'mankind': {
         name: 'For All Mankind',
         id: 'mankind',
         link: 'https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7',
@@ -2016,7 +1964,7 @@ const movieData4 = [
             // subReddit: null,
         },
     },
-    {
+    'dark': {
         name: 'Dark',
         id: 'dark',
         link: 'https://www.netflix.com/title/80100172',
@@ -2042,7 +1990,7 @@ const movieData4 = [
             // subReddit: null,
         },
     },
-    {
+    'fringe': {
         name: 'Fringe',
         id: 'fringe',
         link: {
@@ -2068,7 +2016,7 @@ const movieData4 = [
             subReddit: null,
         },
     },
-    {
+    'lastman': {
         name: "Y: The Last Man",
         id: "lastman",
         link: "https://www.hulu.com/series/y-the-last-man-9fb2d79b-1280-48be-b185-f989b9c9519a",
@@ -2092,6 +2040,92 @@ const movieData4 = [
             subReddit: 'YTheLastMan',
         },
     },
+}
+
+
+
+
+
+
+
+
+let movieData0 = [
+    allMovies.elite,
+    allMovies.silicon,
+]
+let movieData1 = [
+    allMovies.attack,
+    allMovies.ozark,
+    allMovies.peaky,
+    allMovies.drive,
+    allMovies.tintin,
+]
+
+
+let soonMovies = [
+    allMovies.himyf,
+    allMovies.snowfall,
+    allMovies.severance,
+    allMovies.abbott,
+    allMovies.wecrashed,
+]
+
+for (const movie of soonMovies.reverse()) {
+    let soon = (new Date(movie.info.date) > new Date)
+
+    if (soon) {
+        movieData1.unshift(movie)
+    } else {
+        movieData0.unshift(movie)
+    }
+}
+
+
+
+const movieData2 = [
+    allMovies.money,
+    allMovies.disenchant,
+    allMovies.dontLookUp,
+    allMovies.cowboy,
+    allMovies.grandTour,
+]
+const movieData3 = [
+    allMovies.jurassic6,
+    allMovies.eternals,
+    allMovies.knives,
+    allMovies.dune,
+    allMovies.dil,
+    allMovies.loAndBehold,
+    allMovies.ghost,
+    allMovies.john,
+    allMovies.earth,
+]
+const movieData4 = [
+    allMovies.phil,
+    allMovies.anna,
+    allMovies.diabolical,
+    allMovies.boba,
+    allMovies.clarkson,
+    allMovies.cowboy2,
+    allMovies.joanna,
+    allMovies.chernobyl,
+    allMovies.sopranos,
+    allMovies.fleabag,
+    allMovies.finalSpace,
+    allMovies.maid,
+    allMovies.spy,
+    allMovies.lineofduty,
+    allMovies.dexter,
+    allMovies.mindhunter,
+    allMovies.vikings,
+    allMovies.qanon,
+    allMovies.myname,
+    allMovies.witcher,
+    allMovies.dear,
+    allMovies.mankind,
+    allMovies.dark,
+    allMovies.fringe,
+    allMovies.lastman,
 ]
 const movieData5 = [
     {
