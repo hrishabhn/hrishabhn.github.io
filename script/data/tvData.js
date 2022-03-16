@@ -2957,6 +2957,80 @@ const allMovies = {
             // imdbID: "tt5712554",
         },
     },
+    'atlanta': {
+        name: 'Atlanta',
+        id: 'atlanta',
+        link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
+        info: {
+            service: 'hulu',
+            studio: 'fx',
+            location: 'Hulu',
+            date: '23 March, 2022',
+            desc: {
+                seasons: 3,
+                yearStart: 2016,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'drama',
+                    'music',
+                ],
+            },
+            summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
+        },
+        style: {
+            color: '041f41',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '313999',
+            reelgoodLink: 'https://reelgood.com/show/atlanta-2016',
+            imdbID: 'tt4288182',
+            // subReddit: 'subreddit',
+        },
+    },
+    'boys': {
+        name: 'The Boys',
+        id: 'boys',
+        link: {
+            primeVideo: 'B08F81VWVD'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            date: '3 Jun, 2022',
+            desc: {
+                seasons: 3,
+                yearStart: 2019,
+                yearEnd: null,
+                genre: [
+                    'action',
+                    'crime',
+                    'sci-fi',
+                ],
+            },
+            summary: "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
+        },
+        style: {
+            color: '660000',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-boys-2019',
+            imdbID: 'tt1190634',
+            subReddit: 'TheBoys',
+        },
+    },
 }
 
 
@@ -3072,80 +3146,8 @@ const movieData5 = [
     allMovies.futurama,
 ]
 const movieData6 = [
-    {
-        name: 'Atlanta',
-        id: 'atlanta',
-        link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
-        info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
-            date: '23 March, 2022',
-            desc: {
-                seasons: 3,
-                yearStart: 2016,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'drama',
-                    'music',
-                ],
-            },
-            summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
-        },
-        style: {
-            color: '041f41',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '313999',
-            reelgoodLink: 'https://reelgood.com/show/atlanta-2016',
-            imdbID: 'tt4288182',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'The Boys',
-        id: 'boys',
-        link: {
-            primeVideo: 'B08F81VWVD'
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            date: '3 Jun, 2022',
-            desc: {
-                seasons: 3,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'crime',
-                    'sci-fi',
-                ],
-            },
-            summary: "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
-        },
-        style: {
-            color: '660000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/the-boys-2019',
-            imdbID: 'tt1190634',
-            subReddit: 'TheBoys',
-        },
-    },
+    allMovies.atlanta,
+    allMovies.boys,
 ]
 const movieData7 = [
     {
