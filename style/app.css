@@ -99,6 +99,7 @@
 
     transition: inherit;
     opacity: 0;
+    white-space: nowrap;
 }
 @media screen and (prefers-color-scheme: light) {
     .app-card-small .hover-detail{
