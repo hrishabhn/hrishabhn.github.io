@@ -5713,18 +5713,11 @@ const allMovies = {
     },
 }
 
-
-
-
-
-
-
-
-let movieData0 = [
+let movieDataUpNext = [
     allMovies.elite,
     allMovies.silicon,
 ]
-let movieData1 = [
+let movieDataMyList = [
     allMovies.attack,
     allMovies.ozark,
     allMovies.peaky,
@@ -5743,20 +5736,20 @@ for (const movie of soonMovies.reverse()) {
     let soon = (new Date(movie.info.date) > new Date)
 
     if (soon) {
-        movieData1.unshift(movie)
+        movieDataMyList.unshift(movie)
     } else {
-        movieData0.unshift(movie)
+        movieDataUpNext.unshift(movie)
     }
 }
 
-const movieData2 = [
+const movieDataRecent = [
     allMovies.money,
     allMovies.disenchant,
     allMovies.dontLookUp,
     allMovies.cowboy,
     allMovies.grandTour,
 ]
-const movieData3 = [
+const movieDataMovies = [
     allMovies.jurassic6,
     allMovies.eternals,
     allMovies.knives,
@@ -5767,7 +5760,7 @@ const movieData3 = [
     allMovies.john,
     allMovies.earth,
 ]
-const movieData4 = [
+const movieDataNew = [
     allMovies.phil,
     allMovies.anna,
     allMovies.diabolical,
@@ -5794,7 +5787,7 @@ const movieData4 = [
     allMovies.fringe,
     allMovies.lastman,
 ]
-const movieData5 = [
+const movieDataPaused = [
     allMovies.georgina,
     allMovies.fairfax,
     allMovies.ghosts,
@@ -5821,11 +5814,11 @@ const movieData5 = [
     allMovies.legion,
     allMovies.futurama,
 ]
-const movieData6 = [
+const movieDataComingSoon = [
     allMovies.atlanta,
     allMovies.boys,
 ]
-const movieData7 = [
+const movieDataUpToDate = [
     allMovies.alice,
     allMovies.always,
     allMovies.curb,
@@ -5851,7 +5844,7 @@ const movieData7 = [
     allMovies.shadows,
     allMovies.yellowjackets,
 ]
-const movieData8 = [
+const movieDataFinished = [
     allMovies.superstore,
     allMovies.expanse,
     allMovies.fisforfam,
@@ -5868,7 +5861,7 @@ const movieData8 = [
     allMovies.whiteCollar,
     allMovies.himym,
 ]
-const movieData9 = [
+const movieDataClassicMovies = [
     allMovies.jurassic1,
     allMovies.indiana1,
     allMovies.walle,
@@ -5878,7 +5871,7 @@ const movieData9 = [
     allMovies.interstellar,
     allMovies.avatar,
 ]
-const movieData10 = [
+const movieDataRecentMovies = [
     allMovies.cars2,
     allMovies.cars1,
     allMovies.spiderMan3,
@@ -5910,15 +5903,15 @@ const movieDataArchive = [
 ]
 
 const movieData = [
-    movieData0,
-    movieData1,
-    movieData2,
-    movieData3,
-    movieData4,
-    movieData5,
-    movieData6,
-    movieData7,
-    movieData8,
-    movieData9,
-    movieData10,
+    movieDataUpNext,
+    movieDataMyList,
+    movieDataRecent,
+    movieDataMovies,
+    movieDataNew,
+    movieDataPaused,
+    movieDataComingSoon,
+    movieDataUpToDate,
+    movieDataFinished,
+    movieDataClassicMovies,
+    movieDataRecentMovies,
 ]
