@@ -22,6 +22,11 @@ function topbarLeft() {
     // temp.append(spacerElement(5))
     // temp.append(tempText)
 
+    // refresh
+    let refresh = topbarItemElem()
+    refresh.append(iconElement(iconData.repeat))
+    refresh.href = 'shortcuts://run-shortcut?name=Refresh%20Dashboard'
+
     // dnd
     let dnd = topbarItemElem()
     dnd.id = 'dnd'
@@ -30,9 +35,9 @@ function topbarLeft() {
 
     if (isDND()) dnd.firstChild.classList.add('blue-fg')
 
-    // left.append(temp)
-    // left.append(spacerElement(5))
     left.append(dnd)
+    left.append(spacerElement(5))
+    left.append(refresh)
     left.append(growElement())
 
     return left
