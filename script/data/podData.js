@@ -99,6 +99,26 @@ const allPods = {
         coverType: 'jpeg',
         // style: 'blue',
     },
+    'waveform': {
+        name: 'Waveform',
+        id: 'waveform',
+        link: {
+            youtube: 'Waveform'
+        },
+        author: 'Marques Brownlee',
+        coverType: 'jpeg',
+        style: 'red',
+    },
+    'lex': {
+        name: 'Lex Fridman Podcast',
+        id: 'lex',
+        link: {
+            youtube: 'lexfridman'
+        },
+        author: 'Lex Fridman',
+        coverType: 'jpeg',
+        // style: 'secondary',
+    },
 }
 
 // top
@@ -121,26 +141,8 @@ const podData1 = [
 
 // tech podcasts
 const podData2 = [
-    {
-        name: 'Waveform',
-        id: 'waveform',
-        link: {
-            youtube: 'Waveform'
-        },
-        author: 'Marques Brownlee',
-        coverType: 'jpeg',
-        style: 'red',
-    },
-    {
-        name: 'Lex Fridman Podcast',
-        id: 'lex',
-        link: {
-            youtube: 'lexfridman'
-        },
-        author: 'Lex Fridman',
-        coverType: 'jpeg',
-        // style: 'secondary',
-    },
+    allPods.waveform,
+    allPods.lex,
 ]
 
 // story podcasts
