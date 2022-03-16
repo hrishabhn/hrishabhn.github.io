@@ -4008,6 +4008,557 @@ const allMovies = {
             subReddit: 'Yellowjackets',
         },
     },
+    'superstore': {
+        name: 'Superstore',
+        id: 'superstore',
+        link: {
+            netflix: '80061132'
+        },
+        info: {
+            service: 'netflix',
+            // studio: '',
+            location: 'Netflix',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: 2021,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
+        },
+        style: {
+            color: '0070DB',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '295648',
+            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
+            imdbID: 'tt4477976',
+            subReddit: 'superstore',
+        },
+        cast: [
+            {
+                actor: 'Ben Feldman',
+                char: 'Jonah Simms',
+            },
+            {
+                actor: 'America Ferrera',
+                char: 'Amy Sosa',
+            },
+            {
+                actor: 'Mark McKinney',
+                char: 'Glenn Sturgis',
+            },
+            {
+                actor: 'Lauren Ash',
+                char: 'Dina Fox',
+            },
+            {
+                actor: 'Colton Dunn',
+                char: 'Garrett McNeill',
+            },
+            {
+                actor: 'Nichole Sakura',
+                char: 'Cheyenne Lee',
+            },
+            {
+                actor: 'Nico Santos',
+                char: 'Mateo Liwanag',
+            },
+        ],
+    },
+    'expanse': {
+        name: 'The Expanse',
+        id: 'expanse',
+        link: {
+            primeVideo: 'B09LGJ5QNB',
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            // date: 'Jan 13, 2022 19:00:00',
+            // weekday: 'Thursday',
+            desc: {
+                seasons: 6,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'action & adventure',
+                    'sci-fi',
+                ],
+            },
+            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
+        },
+        style: {
+            color: '466A83',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '280619',
+            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
+            imdbID: 'tt3230854',
+            subReddit: 'TheExpanse',
+        },
+    },
+    'fisforfam': {
+        name: 'F is for Family',
+        id: 'fisforfam',
+        link: {
+            netflix: '80028732'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            // date: 'Nov 25, 2021',
+            desc: {
+                seasons: 5,
+                yearStart: 2015,
+                yearEnd: null,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
+        },
+        style: {
+            color: '0B6F38',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            tvTimeID: '287299',
+            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
+            imdbID: 'tt4326894',
+            subReddit: 'fisforfamily',
+        },
+        cast: [
+            {
+                actor: 'Bill Burr',
+                char: 'Frank Murphy',
+            },
+            {
+                actor: 'Laura Dern',
+                char: 'Sue Murphy',
+            },
+            {
+                actor: 'Justin Long',
+                char: 'Kevin Murphy',
+            },
+            {
+                actor: 'Debi Derryberry',
+                char: 'Maureen Murphy',
+            },
+            {
+                actor: 'Haley Reinhart',
+                char: 'Bill Murphy',
+            },
+            {
+                actor: 'Sam Rockwell',
+                char: 'Vic',
+            },
+            {
+                actor: 'Trevor Devall',
+                char: 'Goomer',
+            },
+        ],
+    },
+    'newgirl': {
+        name: 'New Girl',
+        id: 'newgirl',
+        link: {
+            netflix: '70196145',
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'romance',
+                    'friends',
+                ],
+            },
+            summary: "Searching for answers, a socially awkward but endearing teacher moves in with three bachelors who think they understand love but are equally as lost.",
+        },
+        style: {
+            color: 'a59c4f',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/show/new-girl-2011',
+            imdbID: 'tt1826940',
+            // subReddit: null,
+        },
+        cast: [
+            {
+                actor: 'Zooey Deschanel',
+                char: 'Jessica Day',
+            },
+            {
+                actor: 'Jake Johnson',
+                char: 'Nick',
+            },
+            {
+                actor: 'Max Greenfield',
+                char: 'Schmidt',
+            },
+            {
+                actor: 'Hannah Simone',
+                char: 'Cece Parekh',
+            },
+            {
+                actor: 'Lamorne Morris',
+                char: 'Winston Bishop',
+            },
+            {
+                actor: 'Damon Wayans Jr.',
+                char: 'Coach',
+            },
+            {
+                actor: 'Nasim Pedrad',
+                char: 'Aly Nelson',
+            },
+            {
+                actor: 'Nelson Franklin',
+                char: 'Robby',
+            },
+            {
+                actor: 'Megan Fox',
+                char: 'Reagan',
+            },
+        ],
+    },
+    'league': {
+        name: 'The League',
+        id: 'league',
+        link: 'https://www.hulu.com/series/the-league-6723b153-45c2-43a4-947f-7cc64ef7f2a3',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            desc: {
+                seasons: 7,
+                yearStart: 2009,
+                yearEnd: 2015,
+                genre: [
+                    'comedy',
+                    'sport',
+                ],
+            },
+            summary: "The League is an American sitcom and semi-improvised comedy about a about a fantasy football league and its members and their everyday lives.",
+        },
+        style: {
+            color: '003A6E',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-league-2009',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'bojack': {
+        name: 'Bojack Horseman',
+        id: 'bojack',
+        link: {
+            netflix: '70300800'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                seasons: 6,
+                yearStart: 2014,
+                yearEnd: 2020,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Meet the most beloved sitcom horse of the '90s, 20 years later. He’s a curmudgeon with a heart of...not quite gold...but something like gold. Copper?",
+        },
+        style: {
+            color: '656592',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/bojack-horseman-2014',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'gameofthrones': {
+        name: 'Game of Thrones',
+        id: 'gameofthrones',
+        link: 'https://www.hulu.com/series/game-of-thrones-6a787bf6-cc23-47a2-a2f3-747e22c30d1c',
+        info: {
+            service: 'hulu',
+            studio: 'hbo',
+            location: 'Hulu',
+            desc: {
+                seasons: 8,
+                yearStart: 2011,
+                yearEnd: 2019,
+                genre: [
+                    'adventure',
+                    'fantasy',
+                ],
+            },
+            summary: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+        },
+        style: {
+            color: '4e3e46',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: null,
+            // reelgoodLink: 'link',
+            imdbID: 'tt0944947',
+            // subReddit: null,
+        },
+    },
+    'office': {
+        name: 'The Office',
+        id: 'office',
+        link: {
+            netflix: '70136120'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            desc: {
+                seasons: 9,
+                yearStart: 2005,
+                yearEnd: 2013,
+                genre: [
+                    'comedy',
+                    'mockumentary',
+                ],
+            },
+            summary: "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
+        },
+        style: {
+            color: '7E6C64',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'widest',
+            mobileType: 'png',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '73244',
+            reelgoodLink: 'https://reelgood.com/show/the-office-2005',
+            imdbID: 'tt0386676',
+            subReddit: 'DunderMifflin',
+        },
+    },
+    'bms': {
+        name: 'Blue Mountain State',
+        id: 'bms',
+        link: {
+            primeVideo: 'B08CG43CLR'
+        },
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            desc: {
+                seasons: 3,
+                yearStart: 2010,
+                yearEnd: 2011,
+                genre: [
+                    'comedy',
+                    'sport',
+                ],
+            },
+            summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
+            tags: [
+                'bms',
+            ]
+        },
+        style: {
+            color: colorData.fluent.blue10,
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'png',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '134511',
+            reelgoodLink: 'https://reelgood.com/show/blue-mountain-state-2010',
+            imdbID: 'tt1344204',
+            subReddit: 'BMS',
+        },
+        cast: [
+            {
+                actor: 'Darin Brooks',
+                char: 'Alex Moran',
+            },
+            {
+                actor: 'Alan Ritchson',
+                char: 'Thad Castle',
+            },
+            {
+                actor: 'Chris Romano',
+                char: 'Sammy Cacciatore',
+            },
+            {
+                actor: 'Ed Marino',
+                char: 'Coach Marty Daniels',
+            },
+            {
+                actor: 'Denise Richards',
+                char: 'Debra',
+            },
+            {
+                actor: 'Frankie Shaw',
+                char: 'Mary Jo Cacciatore',
+            },
+            {
+                actor: 'Sam Jones III',
+                char: 'Craig Shilo',
+            },
+            {
+                actor: 'Page Kennedy',
+                char: 'Radon Randell',
+            },
+        ],
+    },
+    'fresh': {
+        name: 'Fresh Prince of Bel-Air',
+        id: 'fresh',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            desc: {
+                seasons: 6,
+                yearStart: 1990,
+                yearEnd: 1996,
+                genre: [
+                    'comedy',
+                    'family',
+                ],
+            },
+            summary: "Will, a street-smart teenager, moves from the tough streets of West Philly to posh Bel-Air to live with his Uncle Philip, Aunt Vivian, his cousins — spoiled Hilary, preppy Carlton and young Ashley — and their sophisticated British butler, Geoffrey. Though Will’s antics and upbringing contrast greatly with the upper-class lifestyle of his extended relatives, he soon finds himself right at home as a loved part of the family.",
+        },
+        style: {
+            color: '754A9E',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '76738',
+            reelgoodLink: 'https://reelgood.com/show/the-fresh-prince-of-bel-air-1990',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'lost': {
+        name: "Lost",
+        id: "lost",
+        link: "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            description: "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
+            summary: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
+        },
+        style: {
+            color: '6a5828',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: "73739",
+            reelgoodLink: "https://reelgood.com/show/lost-2004",
+            imdbID: "tt0411008",
+        },
+    },
+    'brooklyn': {
+        name: "Brooklyn Nine-Nine",
+        id: "brooklyn",
+        link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
+        info: {
+            service: 'hulu',
+            studio: 'nbc',
+            location: 'Hulu',
+            desc: {
+                seasons: 8,
+                yearStart: 2013,
+                yearEnd: 2021,
+                genre: [
+                    'comedy',
+                    'crime',
+                ],
+            },
+            summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
+        },
+        style: {
+            color: '8b6a4b',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "tall",
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: "269586",
+            reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
+            imdbID: "tt2467372",
+            subReddit: 'brooklynninenine',
+        },
+    },
 }
 
 
@@ -4149,557 +4700,18 @@ const movieData7 = [
     allMovies.yellowjackets,
 ]
 const movieData8 = [
-    {
-        name: 'Superstore',
-        id: 'superstore',
-        link: {
-            netflix: '80061132'
-        },
-        info: {
-            service: 'netflix',
-            // studio: '',
-            location: 'Netflix',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: 2021,
-                genre: [
-                    'comedy',
-                ],
-            },
-            summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
-        },
-        style: {
-            color: '0070DB',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '295648',
-            reelgoodLink: 'https://reelgood.com/show/superstore-2015',
-            imdbID: 'tt4477976',
-            subReddit: 'superstore',
-        },
-        cast: [
-            {
-                actor: 'Ben Feldman',
-                char: 'Jonah Simms',
-            },
-            {
-                actor: 'America Ferrera',
-                char: 'Amy Sosa',
-            },
-            {
-                actor: 'Mark McKinney',
-                char: 'Glenn Sturgis',
-            },
-            {
-                actor: 'Lauren Ash',
-                char: 'Dina Fox',
-            },
-            {
-                actor: 'Colton Dunn',
-                char: 'Garrett McNeill',
-            },
-            {
-                actor: 'Nichole Sakura',
-                char: 'Cheyenne Lee',
-            },
-            {
-                actor: 'Nico Santos',
-                char: 'Mateo Liwanag',
-            },
-        ],
-    },
-    {
-        name: 'The Expanse',
-        id: 'expanse',
-        link: {
-            primeVideo: 'B09LGJ5QNB',
-        },
-        info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
-            // date: 'Jan 13, 2022 19:00:00',
-            // weekday: 'Thursday',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
-            summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
-        },
-        style: {
-            color: '466A83',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '280619',
-            reelgoodLink: 'https://reelgood.com/show/the-expanse-2015',
-            imdbID: 'tt3230854',
-            subReddit: 'TheExpanse',
-        },
-    },
-    {
-        name: 'F is for Family',
-        id: 'fisforfam',
-        link: {
-            netflix: '80028732'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            // date: 'Nov 25, 2021',
-            desc: {
-                seasons: 5,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
-        },
-        style: {
-            color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            tvTimeID: '287299',
-            reelgoodLink: 'https://reelgood.com/show/f-is-for-family-2015',
-            imdbID: 'tt4326894',
-            subReddit: 'fisforfamily',
-        },
-        cast: [
-            {
-                actor: 'Bill Burr',
-                char: 'Frank Murphy',
-            },
-            {
-                actor: 'Laura Dern',
-                char: 'Sue Murphy',
-            },
-            {
-                actor: 'Justin Long',
-                char: 'Kevin Murphy',
-            },
-            {
-                actor: 'Debi Derryberry',
-                char: 'Maureen Murphy',
-            },
-            {
-                actor: 'Haley Reinhart',
-                char: 'Bill Murphy',
-            },
-            {
-                actor: 'Sam Rockwell',
-                char: 'Vic',
-            },
-            {
-                actor: 'Trevor Devall',
-                char: 'Goomer',
-            },
-        ],
-    },
-    {
-        name: 'New Girl',
-        id: 'newgirl',
-        link: {
-            netflix: '70196145',
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'romance',
-                    'friends',
-                ],
-            },
-            summary: "Searching for answers, a socially awkward but endearing teacher moves in with three bachelors who think they understand love but are equally as lost.",
-        },
-        style: {
-            color: 'a59c4f',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/show/new-girl-2011',
-            imdbID: 'tt1826940',
-            // subReddit: null,
-        },
-        cast: [
-            {
-                actor: 'Zooey Deschanel',
-                char: 'Jessica Day',
-            },
-            {
-                actor: 'Jake Johnson',
-                char: 'Nick',
-            },
-            {
-                actor: 'Max Greenfield',
-                char: 'Schmidt',
-            },
-            {
-                actor: 'Hannah Simone',
-                char: 'Cece Parekh',
-            },
-            {
-                actor: 'Lamorne Morris',
-                char: 'Winston Bishop',
-            },
-            {
-                actor: 'Damon Wayans Jr.',
-                char: 'Coach',
-            },
-            {
-                actor: 'Nasim Pedrad',
-                char: 'Aly Nelson',
-            },
-            {
-                actor: 'Nelson Franklin',
-                char: 'Robby',
-            },
-            {
-                actor: 'Megan Fox',
-                char: 'Reagan',
-            },
-        ],
-    },
-    {
-        name: 'The League',
-        id: 'league',
-        link: 'https://www.hulu.com/series/the-league-6723b153-45c2-43a4-947f-7cc64ef7f2a3',
-        info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
-            desc: {
-                seasons: 7,
-                yearStart: 2009,
-                yearEnd: 2015,
-                genre: [
-                    'comedy',
-                    'sport',
-                ],
-            },
-            summary: "The League is an American sitcom and semi-improvised comedy about a about a fantasy football league and its members and their everyday lives.",
-        },
-        style: {
-            color: '003A6E',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/the-league-2009',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Bojack Horseman',
-        id: 'bojack',
-        link: {
-            netflix: '70300800'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            desc: {
-                seasons: 6,
-                yearStart: 2014,
-                yearEnd: 2020,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Meet the most beloved sitcom horse of the '90s, 20 years later. He’s a curmudgeon with a heart of...not quite gold...but something like gold. Copper?",
-        },
-        style: {
-            color: '656592',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/bojack-horseman-2014',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Game of Thrones',
-        id: 'gameofthrones',
-        link: 'https://www.hulu.com/series/game-of-thrones-6a787bf6-cc23-47a2-a2f3-747e22c30d1c',
-        info: {
-            service: 'hulu',
-            studio: 'hbo',
-            location: 'Hulu',
-            desc: {
-                seasons: 8,
-                yearStart: 2011,
-                yearEnd: 2019,
-                genre: [
-                    'adventure',
-                    'fantasy',
-                ],
-            },
-            summary: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
-        },
-        style: {
-            color: '4e3e46',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: null,
-            // reelgoodLink: 'link',
-            imdbID: 'tt0944947',
-            // subReddit: null,
-        },
-    },
-    {
-        name: 'The Office',
-        id: 'office',
-        link: {
-            netflix: '70136120'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            desc: {
-                seasons: 9,
-                yearStart: 2005,
-                yearEnd: 2013,
-                genre: [
-                    'comedy',
-                    'mockumentary',
-                ],
-            },
-            summary: "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
-        },
-        style: {
-            color: '7E6C64',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'widest',
-            mobileType: 'png',
-            mobileSize: '8 / 10',
-        },
-        apps: {
-            tvTimeID: '73244',
-            reelgoodLink: 'https://reelgood.com/show/the-office-2005',
-            imdbID: 'tt0386676',
-            subReddit: 'DunderMifflin',
-        },
-    },
-    {
-        name: 'Blue Mountain State',
-        id: 'bms',
-        link: {
-            primeVideo: 'B08CG43CLR'
-        },
-        info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
-            desc: {
-                seasons: 3,
-                yearStart: 2010,
-                yearEnd: 2011,
-                genre: [
-                    'comedy',
-                    'sport',
-                ],
-            },
-            summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
-            tags: [
-                'bms',
-            ]
-        },
-        style: {
-            color: colorData.fluent.blue10,
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'png',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '134511',
-            reelgoodLink: 'https://reelgood.com/show/blue-mountain-state-2010',
-            imdbID: 'tt1344204',
-            subReddit: 'BMS',
-        },
-        cast: [
-            {
-                actor: 'Darin Brooks',
-                char: 'Alex Moran',
-            },
-            {
-                actor: 'Alan Ritchson',
-                char: 'Thad Castle',
-            },
-            {
-                actor: 'Chris Romano',
-                char: 'Sammy Cacciatore',
-            },
-            {
-                actor: 'Ed Marino',
-                char: 'Coach Marty Daniels',
-            },
-            {
-                actor: 'Denise Richards',
-                char: 'Debra',
-            },
-            {
-                actor: 'Frankie Shaw',
-                char: 'Mary Jo Cacciatore',
-            },
-            {
-                actor: 'Sam Jones III',
-                char: 'Craig Shilo',
-            },
-            {
-                actor: 'Page Kennedy',
-                char: 'Radon Randell',
-            },
-        ],
-    },
-    {
-        name: 'Fresh Prince of Bel-Air',
-        id: 'fresh',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series',
-        info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
-            desc: {
-                seasons: 6,
-                yearStart: 1990,
-                yearEnd: 1996,
-                genre: [
-                    'comedy',
-                    'family',
-                ],
-            },
-            summary: "Will, a street-smart teenager, moves from the tough streets of West Philly to posh Bel-Air to live with his Uncle Philip, Aunt Vivian, his cousins — spoiled Hilary, preppy Carlton and young Ashley — and their sophisticated British butler, Geoffrey. Though Will’s antics and upbringing contrast greatly with the upper-class lifestyle of his extended relatives, he soon finds himself right at home as a loved part of the family.",
-        },
-        style: {
-            color: '754A9E',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '76738',
-            reelgoodLink: 'https://reelgood.com/show/the-fresh-prince-of-bel-air-1990',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: "Lost",
-        id: "lost",
-        link: "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            description: "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
-            summary: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
-        },
-        style: {
-            color: '6a5828',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: "73739",
-            reelgoodLink: "https://reelgood.com/show/lost-2004",
-            imdbID: "tt0411008",
-        },
-    },
-    {
-        name: "Brooklyn Nine-Nine",
-        id: "brooklyn",
-        link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
-        info: {
-            service: 'hulu',
-            studio: 'nbc',
-            location: 'Hulu',
-            desc: {
-                seasons: 8,
-                yearStart: 2013,
-                yearEnd: 2021,
-                genre: [
-                    'comedy',
-                    'crime',
-                ],
-            },
-            summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
-        },
-        style: {
-            color: '8b6a4b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "tall",
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: "269586",
-            reelgoodLink: "https://reelgood.com/show/brooklyn-nine-nine-2013",
-            imdbID: "tt2467372",
-            subReddit: 'brooklynninenine',
-        },
-    },
+    allMovies.superstore,
+    allMovies.expanse,
+    allMovies.fisforfam,
+    allMovies.newgirl,
+    allMovies.league,
+    allMovies.bojack,
+    allMovies.gameofthrones,
+    allMovies.office,
+    allMovies.bms,
+    allMovies.fresh,
+    allMovies.lost,
+    allMovies.brooklyn,
     allMovies.silicon,
     {
         name: 'White Collar',
