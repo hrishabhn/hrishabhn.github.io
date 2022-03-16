@@ -22,14 +22,14 @@ function tvDetail(i, j) {
     let card = document.createElement('div')
     card.classList = 'tv-detail-card'
 
-    card.innerHTML = `
-    <div class="bg" style="background-color: #${movie.style.color};"></div>
-    <div class="fill-width">
-        <div class="thumb" style="background-image: url(./media-image/TV/background/${movie.id}.${movie.style.posterType});"></div>
-        <div class="gradient"></div>
-        <div class="title-img"></div>
-    </div>`
-
+    card.append(bgElement(movie.style.color))
+    
+    let thumbWide = document.createElement('div')
+    thumbWide.classList = 'fill-width'
+    
+    thumbWide.append(thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.posterType}`))
+    thumbWide.append(gradElement())
+    card.append(thumbWide)
 
     if (movie.link) {
         var play = `<a href="${processLink(movie.link)}" target="_blank" class="play clickable">Watch on ${movie.info.location}</a>`

@@ -14,7 +14,7 @@ script {
 
 .main {
     display: grid;
-    grid-template-rows: 60px 1fr;
+    grid-template-rows: calc(60px + env(safe-area-inset-top)) 1fr;
     /* grid-auto-rows: auto; */
     grid-template-columns: 1fr;
 
@@ -42,7 +42,7 @@ script {
 
 
 
-.splash {
+/* .splash {
     grid-column: 1 / -1;
     justify-content: flex-start;
     width: 100%;
@@ -51,7 +51,7 @@ script {
 
     font-size: 50px;
     font-weight: 600;
-}
+} */
 
 #home-all {
     grid-column: 1 / -1;
@@ -114,152 +114,4 @@ script {
         border: solid 1px var(--brand-col-light, var(--brand-col, var(--blue-light)));
 
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.result-box {
-    height: 100%;
-
-    padding: 4px;
-    transition: all 0s;
-
-    /* border: solid 3px white;
-    border-radius: 13px;
-    padding: 0px; */
-}
-
-.result-box.selected {
-    scale: 1.04;
-    transition: all 0.25s;
-}
-
-.result-box .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-
-    border-radius: 12px;
-    background-color: var(--col);
-    filter: brightness(2);
-    opacity: 0;
-}
-
-.result-box.selected .back {
-    box-shadow: 0px 5px 20px 0px var(--col40);
-    opacity: 1;
-}
-
-@media screen and (prefers-color-scheme: light) {
-    .result-box.selected .back {
-        filter: brightness(0.25) saturate(4);
-        box-shadow: 0px 5px 20px 0px var(--col60);
-    }
-}
-
-.result-box.selected:active .back {
-    opacity: 0.5;
-}
-
-.result-card {
-    flex-direction: column;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.result-card.movie {
-    height: 160px;
-    width: 280px;
-}
-
-.result-card.book {
-    height: 240px;
-    width: 160px;
-}
-
-.result-card .thumb {
-    height: 100%;
-    width: 100%;
-}
-
-
-
-.result-card.app {
-    /* height: 200px; */
-    padding: 15px;
-    padding-bottom: 12px;
-    min-width: 160px;
-    align-items: flex-start;
-
-}
-
-.result-card.app .icon {
-    height: 50px;
-    width: 50px;
-    padding: 15px;
-    border-radius: 10px;
-    /* display: none; */
-}
-
-.result-card.app .name {
-    font-size: 16px;
-    font-weight: 500;
-
-    margin-top: 10px;
-}
-
-.result-card .grad {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-
-    -webkit-mask: radial-gradient(circle at bottom right, #00000022, #00000055);
-}
-
-@media screen and (prefers-color-scheme: light) {
-    .result-card .grad {
-        -webkit-mask: radial-gradient(circle at bottom right, #00000033, #00000066);
-    }
-
-}
-
-
-.result-card.focus {
-    padding: 12px 15px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-
-
-
-
-.test {
-    /* height: 500px; */
 }
