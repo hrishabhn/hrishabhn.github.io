@@ -10,7 +10,6 @@
 //         // studio: 'studio',
 //         location: 'location',
 //         // date: '',
-//         // weekday: '',
 //         desc: {
 //             seasons: 1,
 //             year: 2022,
@@ -90,6 +89,312 @@ const allMovies = {
             // subReddit: 'subreddit',
         },
     },
+    'himyf': {
+        name: 'How I Met Your Father',
+        id: 'himyf',
+        link: 'https://www.hulu.com/series/how-i-met-your-father-42771fe9-3174-43bc-ab6a-d8c3e618b934',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            date: 'Mar 15, 2022',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'romance',
+                ],
+            },
+            summary: "In the near future, Sophie is telling her son the story of how she met his father: a story that catapults us back to the present where Sophie and her close-knit group of friends are in the midst of figuring out who they are, what they want out of life, and how to fall in love in the age of dating apps and limitless options.",
+            tags: [
+                'himym',
+            ]
+        },
+        style: {
+            color: '3d250f',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '401513',
+            reelgoodLink: 'https://reelgood.com/show/how-i-met-your-father-2022',
+            imdbID: 'tt14500082',
+            subReddit: 'HowIMetYourFather',
+        },
+        cast: [
+            {
+                actor: 'Hilary Duff',
+                char: 'Sophie',
+            },
+            {
+                actor: 'Christopher Lowell',
+                char: 'Jesse',
+            },
+            {
+                actor: 'Francia Raisa',
+                char: 'Valentina',
+            },
+            {
+                actor: 'Suraj Sharma',
+                char: 'Sid',
+            },
+            {
+                actor: 'Tom Ainsley',
+                char: 'Charlie',
+            },
+            {
+                actor: 'Tien Tran',
+                char: 'Ellen',
+            },
+        ],
+    },
+    'peaky': {
+        name: 'Peaky Blinders',
+        id: 'peaky',
+        link: {
+            netflix: '80002479'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '28 Feb 2022',
+            desc: {
+                seasons: 6,
+                yearStart: 2013,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby, a crime boss set on moving up in the world no matter the cost.",
+        },
+        style: {
+            color: '493c35',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '270915',
+            reelgoodLink: 'https://reelgood.com/show/peaky-blinders-2013',
+            imdbID: 'tt2442560',
+            // subReddit: 'subreddit',
+        },
+    },
+    'snowfall': {
+        name: 'Snowfall',
+        id: 'snowfall',
+        link: 'https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6',
+        info: {
+            service: 'hbo',
+            studio: 'fx',
+            location: 'HBO Max',
+            date: '10 Mar, 2022 10:00:00',
+            desc: {
+                seasons: 5,
+                yearStart: 2017,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'drama',
+                ],
+            },
+            summary: "Snowfall is a one-hour drama set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it.",
+        },
+        style: {
+            color: colorData['fluent'].cyanBlue20,
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '328092',
+            reelgoodLink: 'https://reelgood.com/show/snowfall-2017',
+            imdbID: 'tt6439752',
+            subReddit: 'SnowFall',
+        },
+    },
+    'severance': {
+        name: 'Severance',
+        id: 'severance',
+        link: 'https://tv.apple.com/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx',
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            date: '11 Mar 2022 08:00:00',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'drama',
+                    'mystery',
+                ],
+            },
+            summary: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+        },
+        style: {
+            color: colorData.fluent.gray20,
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'widest',
+            mobileType: 'png',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            tvTimeID: '371980',
+            reelgoodLink: 'https://reelgood.com/show/severance-2022',
+            imdbID: 'tt11280740',
+            subReddit: 'SeveranceAppleTVPlus',
+        },
+        cast: [
+            {
+                actor: 'Adam Scott',
+                char: 'Mark',
+            },
+            {
+                actor: 'Britt Lower',
+                char: 'Helly',
+            },
+            {
+                actor: 'Patricia Arquette',
+                char: 'Harmony Cobel',
+            },
+            {
+                actor: 'Zach Cherry',
+                char: 'Dylan',
+            },
+            {
+                actor: 'Tramell Tillman',
+                char: 'Milchick',
+            },
+            {
+                actor: 'Jen Tullock',
+                char: 'Devon',
+            },
+            {
+                actor: 'John Turturro',
+                char: 'Irving',
+            },
+            {
+                actor: 'Christopher Walken',
+                char: 'Burt',
+            },
+            {
+                actor: 'Dichen Lachman',
+                char: 'Ms. Casey',
+            },
+        ],
+    },
+    'abbott': {
+        name: 'Abbott Elementary',
+        id: 'abbott',
+        link: 'https://www.hulu.com/series/abbott-elementary-7c33eeb2-5d16-4a10-ad9e-ee31f9fff15c',
+        info: {
+            service: 'hulu',
+            studio: 'abc',
+            location: 'Hulu',
+            date: '16 March 2022',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                ],
+            },
+            summary: "A group of dedicated, passionate teachers -- and a slightly tone-deaf principal -- find themselves thrown together in a Philadelphia public school where, despite the odds stacked against them, they are determined to help their students succeed in life. Though these incredible public servants may be outnumbered and underfunded, they love what they do -- even if they don't love the school district's less-than-stellar attitude toward educating children.",
+        },
+        style: {
+            color: 'e6c8a0',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            tvTimeID: '402910',
+            reelgoodLink: 'https://reelgood.com/show/abbott-elementary-2021',
+            imdbID: 'tt14218830',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Quinta Brunson',
+                char: 'Janine Teagues',
+            },
+            {
+                actor: 'Tyler James Williams',
+                char: 'Gregory Eddie',
+            },
+            {
+                actor: 'Janelle James',
+                char: 'Ava Coleman',
+            },
+            {
+                actor: 'Lisa Ann Walter',
+                char: 'Melissa Schemmenti',
+            },
+            {
+                actor: 'Sheryl Lee Ralph',
+                char: 'Barbara Howard',
+            },
+            {
+                actor: 'Chris Perfetti',
+                char: 'Jacob Hill',
+            },
+        ],
+    },
+    'wecrashed': {
+        name: 'WeCrashed',
+        id: 'wecrashed',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'apple',
+            studio: 'apple',
+            location: 'Apple TV+',
+            date: '18 March 2022',
+            desc: {
+                seasons: 1,
+                yearStart: 2022,
+                yearEnd: null,
+                genre: [
+                    'biography',
+                    'drama',
+                ],
+            },
+            summary: "Inspired by actual events—and the love story at the center of it all. WeWork grew from a single coworking space into a global brand worth $47 billion in under a decade. Then, in less than a year, its valuation dropped $40 billion. What happened?",
+        },
+        style: {
+            color: colorData.fluent.cyan30,
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'widest',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/wecrashed',
+            imdbID: 'tt12005128',
+            // subReddit: 'subreddit',
+        },
+    },
 }
 
 
@@ -109,7 +414,6 @@ let movieData0 = [
             // studio: 'studio',
             location: 'Hulu',
             // date: 'Jan 16, 2022',
-            // weekday: '',
             desc: {
                 seasons: 4,
                 yearStart: 2013,
@@ -147,7 +451,6 @@ let movieData0 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 4,
                 yearStart: 2018,
@@ -231,7 +534,6 @@ let movieData0 = [
             studio: 'netflix',
             location: 'Neftlix',
             // date: 'Jan 21, 2022',
-            // weekday: '',
             desc: {
                 seasons: 4,
                 yearStart: 2017,
@@ -294,7 +596,6 @@ let movieData1 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 4,
                 yearStart: 2019,
@@ -322,6 +623,7 @@ let movieData1 = [
             // subReddit: 'subreddit',
         },
     },
+    allMovies.peaky,
     {
         name: 'The Adventures of Tintin',
         id: 'tintin',
@@ -362,318 +664,11 @@ let movieData1 = [
 
 
 let soonMovies = [
-    {
-        name: 'How I Met Your Father',
-        id: 'himyf',
-        link: 'https://www.hulu.com/series/how-i-met-your-father-42771fe9-3174-43bc-ab6a-d8c3e618b934',
-        info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
-            date: 'Mar 15, 2022',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'romance',
-                ],
-            },
-            summary: "In the near future, Sophie is telling her son the story of how she met his father: a story that catapults us back to the present where Sophie and her close-knit group of friends are in the midst of figuring out who they are, what they want out of life, and how to fall in love in the age of dating apps and limitless options.",
-            tags: [
-                'himym',
-            ]
-        },
-        style: {
-            color: '3d250f',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '401513',
-            reelgoodLink: 'https://reelgood.com/show/how-i-met-your-father-2022',
-            imdbID: 'tt14500082',
-            subReddit: 'HowIMetYourFather',
-        },
-        cast: [
-            {
-                actor: 'Hilary Duff',
-                char: 'Sophie',
-            },
-            {
-                actor: 'Christopher Lowell',
-                char: 'Jesse',
-            },
-            {
-                actor: 'Francia Raisa',
-                char: 'Valentina',
-            },
-            {
-                actor: 'Suraj Sharma',
-                char: 'Sid',
-            },
-            {
-                actor: 'Tom Ainsley',
-                char: 'Charlie',
-            },
-            {
-                actor: 'Tien Tran',
-                char: 'Ellen',
-            },
-        ],
-    },
-    {
-        name: 'Peaky Blinders',
-        id: 'peaky',
-        link: {
-            netflix: '80002479'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            date: '28 Feb 2022',
-            // weekday: '',
-            desc: {
-                seasons: 6,
-                yearStart: 2013,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby, a crime boss set on moving up in the world no matter the cost.",
-        },
-        style: {
-            color: '493c35',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '270915',
-            reelgoodLink: 'https://reelgood.com/show/peaky-blinders-2013',
-            imdbID: 'tt2442560',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Snowfall',
-        id: 'snowfall',
-        link: 'https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6',
-        info: {
-            service: 'hbo',
-            studio: 'fx',
-            location: 'HBO Max',
-            date: '10 Mar, 2022 10:00:00',
-            // weekday: '',
-            desc: {
-                seasons: 5,
-                yearStart: 2017,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
-            summary: "Snowfall is a one-hour drama set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it.",
-        },
-        style: {
-            color: colorData['fluent'].cyanBlue20,
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '328092',
-            reelgoodLink: 'https://reelgood.com/show/snowfall-2017',
-            imdbID: 'tt6439752',
-            subReddit: 'SnowFall',
-        },
-    },
-    {
-        name: 'Severance',
-        id: 'severance',
-        link: 'https://tv.apple.com/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx',
-        info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
-            date: '11 Mar 2022 08:00:00',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'mystery',
-                ],
-            },
-            summary: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
-        },
-        style: {
-            color: colorData.fluent.gray20,
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'widest',
-            mobileType: 'png',
-            mobileSize: '8 / 10',
-        },
-        apps: {
-            tvTimeID: '371980',
-            reelgoodLink: 'https://reelgood.com/show/severance-2022',
-            imdbID: 'tt11280740',
-            subReddit: 'SeveranceAppleTVPlus',
-        },
-        cast: [
-            {
-                actor: 'Adam Scott',
-                char: 'Mark',
-            },
-            {
-                actor: 'Britt Lower',
-                char: 'Helly',
-            },
-            {
-                actor: 'Patricia Arquette',
-                char: 'Harmony Cobel',
-            },
-            {
-                actor: 'Zach Cherry',
-                char: 'Dylan',
-            },
-            {
-                actor: 'Tramell Tillman',
-                char: 'Milchick',
-            },
-            {
-                actor: 'Jen Tullock',
-                char: 'Devon',
-            },
-            {
-                actor: 'John Turturro',
-                char: 'Irving',
-            },
-            {
-                actor: 'Christopher Walken',
-                char: 'Burt',
-            },
-            {
-                actor: 'Dichen Lachman',
-                char: 'Ms. Casey',
-            },
-        ],
-    },
-    {
-        name: 'Abbott Elementary',
-        id: 'abbott',
-        link: 'https://www.hulu.com/series/abbott-elementary-7c33eeb2-5d16-4a10-ad9e-ee31f9fff15c',
-        info: {
-            service: 'hulu',
-            studio: 'abc',
-            location: 'Hulu',
-            date: '16 March 2022',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                ],
-            },
-            summary: "A group of dedicated, passionate teachers -- and a slightly tone-deaf principal -- find themselves thrown together in a Philadelphia public school where, despite the odds stacked against them, they are determined to help their students succeed in life. Though these incredible public servants may be outnumbered and underfunded, they love what they do -- even if they don't love the school district's less-than-stellar attitude toward educating children.",
-        },
-        style: {
-            color: 'e6c8a0',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
-        },
-        apps: {
-            tvTimeID: '402910',
-            reelgoodLink: 'https://reelgood.com/show/abbott-elementary-2021',
-            imdbID: 'tt14218830',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Quinta Brunson',
-                char: 'Janine Teagues',
-            },
-            {
-                actor: 'Tyler James Williams',
-                char: 'Gregory Eddie',
-            },
-            {
-                actor: 'Janelle James',
-                char: 'Ava Coleman',
-            },
-            {
-                actor: 'Lisa Ann Walter',
-                char: 'Melissa Schemmenti',
-            },
-            {
-                actor: 'Sheryl Lee Ralph',
-                char: 'Barbara Howard',
-            },
-            {
-                actor: 'Chris Perfetti',
-                char: 'Jacob Hill',
-            },
-        ],
-    },
-    {
-        name: 'WeCrashed',
-        id: 'wecrashed',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'apple',
-            studio: 'apple',
-            location: 'Apple TV+',
-            date: '18 March 2022',
-            // weekday: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'biography',
-                    'drama',
-                ],
-            },
-            summary: "Inspired by actual events—and the love story at the center of it all. WeWork grew from a single coworking space into a global brand worth $47 billion in under a decade. Then, in less than a year, its valuation dropped $40 billion. What happened?",
-        },
-        style: {
-            color: colorData.fluent.cyan30,
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'widest',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/wecrashed',
-            imdbID: 'tt12005128',
-            // subReddit: 'subreddit',
-        },
-    },
+    allMovies.himyf,
+    allMovies.snowfall,
+    allMovies.severance,
+    allMovies.abbott,
+    allMovies.wecrashed,
 ]
 
 for (const movie of soonMovies.reverse()) {
@@ -700,7 +695,6 @@ const movieData2 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 4,
                 yearStart: 2017,
@@ -739,7 +733,6 @@ const movieData2 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '9 Feb, 2022',
-            // weekday: '',
             desc: {
                 seasons: 3,
                 yearStart: 2018,
@@ -846,7 +839,6 @@ const movieData2 = [
             // studio: 'prime',
             location: 'Prime Video',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 4,
                 yearStart: 2016,
@@ -1070,7 +1062,6 @@ const movieData3 = [
             // studio: 'studio',
             location: 'Prime Video',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 year: 1995,
@@ -1206,7 +1197,6 @@ const movieData4 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 year: 2022,
@@ -1285,7 +1275,6 @@ const movieData4 = [
             studio: 'prime',
             location: 'Prime Video',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2022,
@@ -1363,7 +1352,6 @@ const movieData4 = [
             studio: 'starwars',
             location: 'Disney+',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -1402,7 +1390,6 @@ const movieData4 = [
             studio: 'prime',
             location: 'Prime Video',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -1440,7 +1427,6 @@ const movieData4 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: 'Nov 19, 2021',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -1770,7 +1756,6 @@ const movieData4 = [
             // studio: 'studio',
             location: 'Prime Video',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 9,
                 yearStart: 2006,
@@ -1835,7 +1820,6 @@ const movieData4 = [
             // studio: 'studio',
             location: 'Hulu',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 6,
                 yearStart: 2013,
@@ -1871,7 +1855,6 @@ const movieData4 = [
             studio: 'hbo',
             location: 'HBO Max',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -1909,7 +1892,6 @@ const movieData4 = [
             studio: 'netflix',
             location: 'Netflix',
             date: '',
-            weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -1946,7 +1928,6 @@ const movieData4 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2019,
@@ -2114,7 +2095,6 @@ const movieData5 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 year: 2022,
@@ -2151,7 +2131,6 @@ const movieData5 = [
             studio: 'prime',
             location: 'Prime Video',
             // date: 'Oct 29, 2021',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -2185,7 +2164,6 @@ const movieData5 = [
             studio: 'hbo',
             location: 'HBO Max',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 3,
                 yearStart: 2019,
@@ -2302,7 +2280,6 @@ const movieData5 = [
             // studio: 'tnt',
             location: 'Netflix',
             // date: 'Feb 1, 2022',
-            // weekday: '',
             desc: {
                 seasons: 3,
                 yearStart: 2020,
@@ -2385,7 +2362,6 @@ const movieData5 = [
             // studio: 'studio',
             location: 'HBO Max',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 24,
                 yearStart: 1997,
@@ -2421,7 +2397,6 @@ const movieData5 = [
             studio: 'fx',
             location: 'Hulu',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 12,
                 yearStart: 2009,
@@ -2520,7 +2495,6 @@ const movieData5 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 3,
                 yearStart: 2018,
@@ -2570,7 +2544,6 @@ const movieData5 = [
             studio: 'hulu',
             location: 'Hulu',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 2,
                 yearStart: 2020,
@@ -2728,7 +2701,6 @@ const movieData5 = [
             studio: 'fox',
             location: 'Hulu',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 33,
                 yearStart: 1989,
@@ -2799,7 +2771,6 @@ const movieData5 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2018,
@@ -2837,7 +2808,6 @@ const movieData5 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -3042,7 +3012,6 @@ const movieData6 = [
             studio: 'fx',
             location: 'Hulu',
             date: '23 March, 2022',
-            // weekday: '',
             desc: {
                 seasons: 3,
                 yearStart: 2016,
@@ -3081,7 +3050,6 @@ const movieData6 = [
             studio: 'prime',
             location: 'Prime Video',
             date: '3 Jun, 2022',
-            // weekday: '',
             desc: {
                 seasons: 3,
                 yearStart: 2019,
@@ -3122,7 +3090,6 @@ const movieData7 = [
             studio: 'netflix',
             location: 'Coming Soon',
             // date: '',
-            // weekday: '',
             // desc: {
             //     seasons: 2,
             //     yearStart: 2020,
@@ -3277,7 +3244,6 @@ const movieData7 = [
             studio: 'marvel',
             location: 'Disney+',
             // date: '',
-            // weekday: '',
             // desc: {
             // //    seasons: 1,
             // //    yearStart: 2021,
@@ -3311,7 +3277,6 @@ const movieData7 = [
             studio: 'marvel',
             location: 'Hulu',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -3365,7 +3330,6 @@ const movieData7 = [
             studio: 'hbo',
             location: 'Hulu',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2020,
@@ -3403,7 +3367,6 @@ const movieData7 = [
             // studio: 'studio',
             location: 'Netflix',
             date: '',
-            weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -3465,7 +3428,6 @@ const movieData7 = [
             studio: 'marvel',
             location: 'Disney+',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -3528,7 +3490,6 @@ const movieData7 = [
             studio: 'starwars',
             location: 'Disney+',
             // date: 'Dec 24, 2021',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2019,
@@ -3717,7 +3678,6 @@ const movieData7 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             // desc: {
             // //    seasons: 1,
             // //    yearStart: 2021,
@@ -3753,7 +3713,6 @@ const movieData7 = [
             studio: 'prime',
             location: 'Prime Video',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2022,
@@ -3797,8 +3756,7 @@ const movieData7 = [
             // service: 'service',
             // studio: 'studio',
             location: 'Adult Swim',
-            date: '',
-            weekday: '',
+            // date: '',
             desc: {
                 seasons: 5,
                 yearStart: 2013,
@@ -4071,7 +4029,6 @@ const movieData7 = [
             // studio: 'studio',
             location: 'Downloaded',
             // date: '',
-            // weekday: '',
             desc: {
                 seasons: 1,
                 yearStart: 2021,
@@ -4215,7 +4172,6 @@ const movieData8 = [
             // studio: 'studio',
             location: 'Netflix',
             // date: 'Nov 25, 2021',
-            // weekday: '',
             desc: {
                 seasons: 5,
                 yearStart: 2015,
@@ -4985,7 +4941,6 @@ const movieData9 = [
             // studio: 'studio',
             location: 'Disney+',
             // date: '',
-            // weekday: '',
             desc: {
                 year: 2009,
                 genre: [
@@ -5283,7 +5238,6 @@ const movieData10 = [
             // studio: 'studio',
             location: 'HBO Max',
             // date: '',
-            // weekday: '',
             desc: {
                 year: 2001,
                 genre: [
@@ -5316,7 +5270,6 @@ const movieData10 = [
             // studio: 'pixar',
             location: 'Disney+',
             // date: '',
-            // weekday: '',
             desc: {
                 year: 2020,
                 genre: [
@@ -5470,7 +5423,6 @@ const movieData10 = [
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            // weekday: '',
             desc: {
                 year: 2021,
                 genre: [
@@ -5533,7 +5485,6 @@ const movieData10 = [
             // studio: 'studio',
             location: 'Coming Soon',
             // date: '',
-            // weekday: '',
             description: 'Action &#149 Spy &#149 2021',
             summary: 'James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.',
         },
