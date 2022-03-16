@@ -34,9 +34,7 @@ function searchMovies(q) {
                 }
             }
 
-            if (name || cast || tags) {
-                results.push(key)
-            }
+            if ((name || cast || tags) && !results.includes(key)) results.push(key)
         }
     }
 
