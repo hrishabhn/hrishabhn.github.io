@@ -23,13 +23,37 @@ function tvDetail(i, j) {
     card.classList = 'tv-detail-card'
 
     card.append(bgElement(movie.style.color))
-    
-    let thumbWide = document.createElement('div')
-    thumbWide.classList = 'fill-width'
-    
-    thumbWide.append(thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.posterType}`))
-    thumbWide.append(gradElement())
-    card.append(thumbWide)
+
+    let wide = document.createElement('div')
+    wide.classList = 'fill-width wide-thumb'
+
+    wide.append(thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.posterType}`))
+    wide.append(gradElement())
+    card.append(wide)
+
+    if (movie.style.mobileType) {
+
+        let tall = document.createElement('div')
+        tall.classList = 'fill-width tall-thumb only-mobile'
+
+        let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
+        thumb.style.setProperty('aspect-ratio', movie.style.mobileSize)
+
+        let grad = gradElement()
+        grad.style.setProperty('background-image', `linear-gradient(#00000000,#${movie.style.color})`)
+        thumb.append(grad)
+
+        let title = movieCardTitle(i, j)
+        title.classList.add('only-mobile')
+
+        tall.append(thumb)
+        card.append(tall)
+        card.append(title)
+
+        wide.classList.add('hidden-mobile')
+    } else {
+        card.style.setProperty('margin', '0 50px')
+    }
 
     if (movie.link) {
         var play = `<a href="${processLink(movie.link)}" target="_blank" class="play clickable">Watch on ${movie.info.location}</a>`
@@ -40,7 +64,7 @@ function tvDetail(i, j) {
     let info = document.createElement('div')
     info.classList = 'info'
     info.innerHTML = `
-    <p class="name">${movie.name}</p>
+    <p class="name hidden-mobile">${movie.name}</p>
     ${play}
     <p class="desc">${processDesc(movie)}</p>
     `
@@ -95,7 +119,7 @@ function tvDetail(i, j) {
     <div class="text">Reelgood</div>`
     tray.append(reel)
     tray.append(spacerElement(8))
-    
+
     // imdb
     let imdb = document.createElement('a')
     imdb.classList = 'app clickable card-shadow'
@@ -145,11 +169,12 @@ function tvDetail(i, j) {
 
     info.append(tray)
     card.append(info)
+    card.append(growElement())
 
     if (movie.cast) {
         let cast = document.createElement('div')
         cast.classList = 'cast layer-0 primary-fg'
-        
+
         cast.append(titleElement('Cast'))
         let tray = document.createElement('div')
         tray.classList = 'cast-tray'
@@ -183,10 +208,17 @@ function tvDetail(i, j) {
         }
 
         cast.append(tray)
+        cast.append(growElement())
 
         card.append(cast)
-
     }
+
+    let close = aElement(iconData.close, null)
+    close.classList = 'close-tv-modal clickable-o'
+    close.onclick = function() {
+        hideTVDetail()
+    }
+    card.append(close)
 
     return card
 }

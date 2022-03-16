@@ -31,11 +31,11 @@
 
 }
 
-@media(max-width: 450px) {
+/* @media(max-width: 450px) {
     #layer-modal .layer {
         align-items: flex-end;
     }
-}
+} */
 
 /* @media screen and (prefers-color-scheme: light) {
     #layer-modal .layer .close {

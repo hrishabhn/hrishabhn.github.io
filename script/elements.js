@@ -199,6 +199,15 @@ function headerElement() {
     return elem
 }
 
+function aElement(icon, text) {
+    let elem = document.createElement('a')
+
+    if (icon) elem.append(iconElement(icon))
+    if (text) elem.append(pElement(text))
+
+    return elem
+}
+
 function dataElem(value, unit) {
     let elem = document.createElement('div')
     elem.classList = 'data'
