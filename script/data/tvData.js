@@ -4911,6 +4911,725 @@ const allMovies = {
             // subReddit: 'subreddit',
         },
     },
+    'cars2': {
+        name: 'Cars 2',
+        id: 'cars2',
+        // link: 'https://www.disneyplus.com/movies/cars-2',
+        info: {
+            service: 'disney',
+            studio: 'disney',
+            location: 'Disney+',
+            desc: {
+                year: 2011,
+                genre: [
+                    'adventure',
+                    'animation',
+                    'cars',
+                ],
+            },
+            summary: "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international espionage.",
+        },
+        style: {
+            color: '1E374D',
+            posterType: 'jpeg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/cars-2-2011',
+            imdbID: 'tt1216475',
+            // subReddit: 'subreddit',
+        },
+    },
+    'cars1': {
+        name: 'Cars',
+        id: 'cars1',
+        // link: 'https://www.disneyplus.com/movies/cars',
+        info: {
+            service: 'disney',
+            studio: 'disney',
+            location: 'Disney+',
+            desc: {
+                year: 2006,
+                genre: [
+                    'adventure',
+                    'animation',
+                    'cars',
+                ],
+            },
+            summary: "Race car Lightning McQueen is living in the fast lane...until he hits a detour and gets stranded in Radiator Springs, a forgotten town on Route 66. There he meets a heap of hilarious characters who help him discover there's more to life than fame.",
+        },
+        style: {
+            color: '1E374D',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/cars-2006',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'spiderMan3': {
+        name: 'Spider-Man: No Way Home',
+        id: 'spiderMan3',
+        // link: '',
+        info: {
+            service: 'disney',
+            studio: 'marvel',
+            location: 'Coming Soon',
+            // date: '15 Dec, 2021',
+            desc: {
+                year: 2021,
+                genre: [
+                    'sci-fi',
+                ],
+            },
+            summary: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+            tags: [
+                'mcu',
+            ]
+        },
+        style: {
+            color: 'af0000',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/spiderman-no-way-home-2021',
+            imdbID: 'tt10872600',
+            // subReddit: 'subreddit',
+        },
+    },
+    'spider_1_3': {
+        name: 'Spider-Man 3',
+        id: 'spider_1_3',
+        link: {
+            netflix: '70047101'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'marvel',
+            location: 'Netflix',
+            desc: {
+                year: 2007,
+                genre: [
+                    'action',
+                    'sci-fi',
+                ],
+            },
+            summary: "The seemingly invincible Spider-Man goes up against an all-new crop of villains in the third installment of the blockbuster adventure series.",
+        },
+        style: {
+            color: '484b53',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/spider-man-3-2007',
+            imdbID: 'tt0413300',
+            // subReddit: 'subreddit',
+        },
+    },
+    'peaks': {
+        name: '14 Peaks: Nothing is Impossible',
+        id: 'peaks',
+        link: {
+            netflix: '81464765'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                year: 2021,
+                genre: [
+                    'documentary',
+                ],
+            },
+            summary: "Fearless Nepali mountaineer Nimsdai Purja embarks on a seemingly impossible quest to summit all 14 of the world’s 8,000-meter peaks in seven months.",
+        },
+        style: {
+            color: '4b6176',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/14-peaks-nothing-is-impossible-2021',
+            imdbID: 'tt14079374',
+            // subReddit: 'subreddit',
+        },
+    },
+    'haroldAndKumar3': {
+        name: 'A Very Harold & Kumar Christmas',
+        id: 'haroldAndKumar3',
+        link: {
+            netflix: '70178622'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            desc: {
+                year: 2011,
+                genre: [
+                    'comedy',
+                    'adventure',
+                ],
+            },
+            summary: "After Kumar burns down Harold's family Christmas tree, the stoner pals tangle with mobsters on a pot-fueled Christmas Eve adventure through Manhattan.",
+        },
+        style: {
+            color: '274223',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'kingsMan': {
+        name: "The King's Man",
+        id: 'kingsMan',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Coming Soon',
+            // date: 'Dec 22, 2021',
+            desc: {
+                year: 2021,
+                genre: [
+                    'spy',
+                    'comedy',
+                ],
+            },
+            summary: "In the early years of the 20th century, the Kingsman agency is formed to stand against a cabal plotting a war to wipe out millions.",
+        },
+        style: {
+            color: '444f52',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/the-kings-man-2020',
+            imdbID: 'tt6856242',
+        },
+    },
+    'spider_1_1': {
+        name: 'Spider-Man',
+        id: 'spider_1_1',
+        link: {
+            netflix: '60004481'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'marvel',
+            location: 'Netflix',
+            desc: {
+                year: 2002,
+                genre: [
+                    'action',
+                    'sci-fi',
+                ],
+            },
+            summary: "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+        },
+        style: {
+            color: '9a6732',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/spider-man-2002',
+            imdbID: 'tt0145487',
+            // subReddit: 'subreddit',
+        },
+    },
+    'lotr1': {
+        name: 'Lord of the Rings: Fellowship of the Ring',
+        id: 'lotr1',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GYG9OEApMzVPDfAEAAAAE:type:feature',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            // date: '',
+            desc: {
+                year: 2001,
+                genre: [
+                    'adventure',
+                    'fantasy',
+                ],
+            },
+            summary: "With the help of a courageous fellowship of friends and allies, Frodo embarks on a perilous mission to destroy the legendary One Ring.",
+        },
+        style: {
+            color: '7e763f',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/the-lord-of-the-rings-the-fellowship-of-the-ring-2001',
+            imdbID: 'tt0120737',
+            // subReddit: 'subreddit',
+        },
+    },
+    'soul': {
+        name: 'Soul',
+        id: 'soul',
+        link: 'https://www.disneyplus.com/en-gb/movies/soul/77zlWrb9vRYp',
+        info: {
+            service: 'disney',
+            // studio: 'pixar',
+            location: 'Disney+',
+            // date: '',
+            desc: {
+                year: 2020,
+                genre: [
+                    'animation',
+                    'comedy',
+                ],
+            },
+            summary: "Jamie Foxx leads an all-star cast in this hilarious, heart-filled adventure. Pixar’s 'Soul' introduces Joe, who lands the gig of his life at the best jazz club in town. But one misstep lands Joe in a fantastical place: The Great Before. There, he teams up with soul 22 (Tina Fey), and together they find the answers to some of life’s biggest questions.",
+        },
+        style: {
+            color: '232e43',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'tallest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/soul-2020-1',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'haroldAndKumar': {
+        name: 'Harold & Kumar Go To White Castle',
+        id: 'haroldAndKumar',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            desc: {
+                year: 2004,
+                genre: [
+                    'comedy',
+                    'adventure',
+                ],
+            },
+            summary: "Nerdy accountant Harold and his irrepressible friend, Kumar, get stoned watching television and find themselves utterly bewitched by a commercial for White Castle. Convinced there must be one nearby, the two set out on a late-night odyssey that takes them deep into New Jersey. Somehow, the boys manage to run afoul of rednecks, cops and even a car-stealing Neil Patrick Harris before getting anywhere near their beloved sliders.",
+        },
+        style: {
+            color: '5980C4',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '12.4 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/harold-kumar-go-to-white-castle-2004',
+            imdbID: 'tt0366551',
+            // subReddit: 'subreddit',
+        },
+    },
+    'scaryMovie': {
+        name: 'Scary Movie',
+        id: 'scaryMovie',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Philo',
+            desc: {
+                year: 2000,
+                genre: [
+                    'comedy',
+                    'horror',
+                ],
+            },
+            summary: "A familiar-looking group of teenagers find themselves being stalked by a more-than-vaguely recognizable masked killer! As the victims begin to pile up and the laughs pile on, none of your favorite scary movies escape the razor-sharp satire of this outrageously funny parody!",
+        },
+        style: {
+            color: '994d33',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '8 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/scary-movie-2000',
+            imdbID: 'tt0175142',
+            // subReddit: 'subreddit',
+        },
+    },
+    'crazyRich': {
+        name: 'Crazy Rich Asians',
+        id: 'crazyRich',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GX6QtHQxBD5nCwwEAAAHM:type:feature',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            desc: {
+                year: 2018,
+                genre: [
+                    'drama',
+                    'romance',
+                ],
+            },
+            summary: "An American-born Chinese economics professor accompanies her boyfriend to Singapore for his best friend's wedding, only to get thrust into the lives of Asia's rich and famous.",
+        },
+        style: {
+            color: '76665b',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tallest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/crazy-rich-asians-2018',
+            imdbID: 'tt3104988',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Constance Wu',
+                char: 'Rachel Chu',
+            },
+            {
+                actor: 'Henry Golding',
+                char: 'Nick Young',
+            },
+            {
+                actor: ' Michelle Yeoh',
+                char: 'Eleanor Young',
+            },
+            {
+                actor: 'Gemma Chan',
+                char: 'Astrid Young Teo',
+            },
+            {
+                actor: 'Jimmy O. Yang',
+                char: 'Bernard Tai',
+            },
+        ],
+    },
+    'closer': {
+        name: 'Dave Chappelle: The Closer',
+        id: 'closer',
+        link: {
+            netflix: '81228510'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            desc: {
+                year: 2021,
+                genre: [
+                    'comedy',
+                    // 'special',
+                ],
+            },
+            summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight - and get a few things off his chest.",
+        },
+        style: {
+            color: '6d223c',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/dave-chappelle-the-closer-2021',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'zindagi': {
+        name: 'Zindagi Na Milegi Dobara',
+        id: 'zindagi',
+        link: {
+            netflix: '70202336'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            description: 'Drama &#149 Romance &#149 2011',
+            summary: "Three friends on an adventurous road trip/bachelor party in Spain learn some lessons about themselves and each other that will change them forever.",
+        },
+        style: {
+            color: '313B47',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'tallest',
+            mobileType: 'jpg',
+            mobileSize: '1',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/zindagi-na-milegi-dobara-2011',
+            imdbID: 'tt1562872',
+            // subReddit: 'subreddit',
+        },
+    },
+    'noTime': {
+        name: 'No Time to Die',
+        id: 'noTime',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            // service: 'service',
+            // studio: 'studio',
+            location: 'Coming Soon',
+            // date: '',
+            description: 'Action &#149 Spy &#149 2021',
+            summary: 'James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.',
+        },
+        style: {
+            color: '3c4749',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/no-time-to-die-2020',
+            imdbID: 'tt2382320',
+            // subReddit: 'subreddit',
+        },
+    },
+    'free': {
+        name: "Free Guy",
+        id: "free",
+        link: null,
+        info: {
+            // service: '',
+            // studio: '',
+            location: "Coming Soon",
+            description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
+            summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
+        },
+        style: {
+            color: '599DAA',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/free-guy-2020",
+            imdbID: "tt6264654",
+        },
+    },
+    'theend': {
+        name: 'This is the End',
+        id: 'theend',
+        // link: 'watchlink',
+        info: {
+            // service: '',
+            // studio: '',
+            location: 'Starz',
+            description: 'Comedy &#149 2013',
+            summary: "Six Los Angeles celebrities are stuck in James Franco's house after a series of devastating events just destroyed the city. Inside, the group not only have to face the apocalypse, but themselves.",
+        },
+        style: {
+            color: '3b2420',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: null,
+            reelgoodLink: 'https://reelgood.com/movie/this-is-the-end-2013',
+            imdbID: 'tt1245492',
+            // subReddit: null,
+        },
+    },
+    'shang': {
+        name: 'Shang-Chi',
+        id: 'shang',
+        link: null,
+        info: {
+            service: 'disney',
+            studio: 'disney',
+            location: 'Disney+',
+            desc: {
+                year: 2021,
+                genre: [
+                    'action & adventure',
+                    'fantasy',
+                ],
+            },
+            summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+            tags: [
+                'mcu',
+            ]
+        },
+        style: {
+            color: '4b3831',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/shangchi-and-the-legend-of-the-ten-rings-2021",
+            imdbID: 'tt9376612',
+        },
+    },
+    'roadToPerdition': {
+        name: 'Road to Perdition',
+        id: 'roadToPerdition',
+        // link: 'https://www.disneyplus.com/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ',
+        info: {
+            // service: 'disney',
+            // studio: 'starwars',
+            // location: 'Disney+',
+            desc: {
+                year: 2002,
+                genre: [
+                    'adventure',
+                    'crime',
+                    'thriller',
+                ],
+            },
+            summary: "A mob enforcer's son in 1930s Illinois witnesses a murder, forcing him and his father to take to the road, and his father down a path of redemption and revenge.",
+        },
+        style: {
+            color: '55534d',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'mid',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/road-to-perdition-2002',
+            imdbID: 'tt0257044',
+            // subReddit: 'subreddit',
+        },
+    },
+    'goodfellas': {
+        name: 'Goodfellas',
+        id: 'goodfellas',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GYEZm4Qn1r7CgYgEAAAAb:type:feature',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            desc: {
+                year: 1990,
+                genre: [
+                    'crime',
+                    'drama',
+                    'mob',
+                ],
+            },
+            summary: "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
+        },
+        style: {
+            color: '1e252c',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/goodfellas-1990',
+            imdbID: 'tt0099685',
+            // subReddit: 'subreddit',
+        },
+    },
+    'social': {
+        name: 'The Social Dilemma',
+        id: 'social',
+        link: {
+            netflix: '81254224'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                year: 2020,
+                genre: [
+                    'documentary',
+                ],
+            },
+            summary: "This documentary-drama hybrid explores the dangerous human impact of social networking, with tech experts sounding the alarm on their own creations.",
+        },
+        style: {
+            color: 'F7ECBD',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            imdbID: 'tt11464826',
+            // subReddit: 'subreddit',
+        },
+    },
 }
 
 
@@ -5079,725 +5798,28 @@ const movieData9 = [
     allMovies.avatar,
 ]
 const movieData10 = [
-    {
-        name: 'Cars 2',
-        id: 'cars2',
-        // link: 'https://www.disneyplus.com/movies/cars-2',
-        info: {
-            service: 'disney',
-            studio: 'disney',
-            location: 'Disney+',
-            desc: {
-                year: 2011,
-                genre: [
-                    'adventure',
-                    'animation',
-                    'cars',
-                ],
-            },
-            summary: "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international espionage.",
-        },
-        style: {
-            color: '1E374D',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/cars-2-2011',
-            imdbID: 'tt1216475',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Cars',
-        id: 'cars1',
-        // link: 'https://www.disneyplus.com/movies/cars',
-        info: {
-            service: 'disney',
-            studio: 'disney',
-            location: 'Disney+',
-            desc: {
-                year: 2006,
-                genre: [
-                    'adventure',
-                    'animation',
-                    'cars',
-                ],
-            },
-            summary: "Race car Lightning McQueen is living in the fast lane...until he hits a detour and gets stranded in Radiator Springs, a forgotten town on Route 66. There he meets a heap of hilarious characters who help him discover there's more to life than fame.",
-        },
-        style: {
-            color: '1E374D',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/cars-2006',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Spider-Man: No Way Home',
-        id: 'spiderMan3',
-        // link: '',
-        info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Coming Soon',
-            // date: '15 Dec, 2021',
-            desc: {
-                year: 2021,
-                genre: [
-                    'sci-fi',
-                ],
-            },
-            summary: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
-            tags: [
-                'mcu',
-            ]
-        },
-        style: {
-            color: 'af0000',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/spiderman-no-way-home-2021',
-            imdbID: 'tt10872600',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Spider-Man 3',
-        id: 'spider_1_3',
-        link: {
-            netflix: '70047101'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'marvel',
-            location: 'Netflix',
-            desc: {
-                year: 2007,
-                genre: [
-                    'action',
-                    'sci-fi',
-                ],
-            },
-            summary: "The seemingly invincible Spider-Man goes up against an all-new crop of villains in the third installment of the blockbuster adventure series.",
-        },
-        style: {
-            color: '484b53',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/spider-man-3-2007',
-            imdbID: 'tt0413300',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: '14 Peaks: Nothing is Impossible',
-        id: '14peaks',
-        link: {
-            netflix: '81464765'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            desc: {
-                year: 2021,
-                genre: [
-                    'documentary',
-                ],
-            },
-            summary: "Fearless Nepali mountaineer Nimsdai Purja embarks on a seemingly impossible quest to summit all 14 of the world’s 8,000-meter peaks in seven months.",
-        },
-        style: {
-            color: '4b6176',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/14-peaks-nothing-is-impossible-2021',
-            imdbID: 'tt14079374',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'A Very Harold & Kumar Christmas',
-        id: 'haroldAndKumar3',
-        link: {
-            netflix: '70178622'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            desc: {
-                year: 2011,
-                genre: [
-                    'comedy',
-                    'adventure',
-                ],
-            },
-            summary: "After Kumar burns down Harold's family Christmas tree, the stoner pals tangle with mobsters on a pot-fueled Christmas Eve adventure through Manhattan.",
-        },
-        style: {
-            color: '274223',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: "The King's Man",
-        id: 'kingsMan',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Coming Soon',
-            // date: 'Dec 22, 2021',
-            desc: {
-                year: 2021,
-                genre: [
-                    'spy',
-                    'comedy',
-                ],
-            },
-            summary: "In the early years of the 20th century, the Kingsman agency is formed to stand against a cabal plotting a war to wipe out millions.",
-        },
-        style: {
-            color: '444f52',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/the-kings-man-2020',
-            imdbID: 'tt6856242',
-        },
-    },
-    {
-        name: 'Spider-Man',
-        id: 'spider_1_1',
-        link: {
-            netflix: '60004481'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'marvel',
-            location: 'Netflix',
-            desc: {
-                year: 2002,
-                genre: [
-                    'action',
-                    'sci-fi',
-                ],
-            },
-            summary: "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
-        },
-        style: {
-            color: '9a6732',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/spider-man-2002',
-            imdbID: 'tt0145487',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Lord of the Rings: Fellowship of the Ring',
-        id: 'lotr1',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GYG9OEApMzVPDfAEAAAAE:type:feature',
-        info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
-            // date: '',
-            desc: {
-                year: 2001,
-                genre: [
-                    'adventure',
-                    'fantasy',
-                ],
-            },
-            summary: "With the help of a courageous fellowship of friends and allies, Frodo embarks on a perilous mission to destroy the legendary One Ring.",
-        },
-        style: {
-            color: '7e763f',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/the-lord-of-the-rings-the-fellowship-of-the-ring-2001',
-            imdbID: 'tt0120737',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Soul',
-        id: 'soul',
-        link: 'https://www.disneyplus.com/en-gb/movies/soul/77zlWrb9vRYp',
-        info: {
-            service: 'disney',
-            // studio: 'pixar',
-            location: 'Disney+',
-            // date: '',
-            desc: {
-                year: 2020,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
-            summary: "Jamie Foxx leads an all-star cast in this hilarious, heart-filled adventure. Pixar’s 'Soul' introduces Joe, who lands the gig of his life at the best jazz club in town. But one misstep lands Joe in a fantastical place: The Great Before. There, he teams up with soul 22 (Tina Fey), and together they find the answers to some of life’s biggest questions.",
-        },
-        style: {
-            color: '232e43',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'tallest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/soul-2020-1',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Harold & Kumar Go To White Castle',
-        id: 'haroldAndKumar',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
-            desc: {
-                year: 2004,
-                genre: [
-                    'comedy',
-                    'adventure',
-                ],
-            },
-            summary: "Nerdy accountant Harold and his irrepressible friend, Kumar, get stoned watching television and find themselves utterly bewitched by a commercial for White Castle. Convinced there must be one nearby, the two set out on a late-night odyssey that takes them deep into New Jersey. Somehow, the boys manage to run afoul of rednecks, cops and even a car-stealing Neil Patrick Harris before getting anywhere near their beloved sliders.",
-        },
-        style: {
-            color: '5980C4',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '12.4 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/harold-kumar-go-to-white-castle-2004',
-            imdbID: 'tt0366551',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Scary Movie',
-        id: 'scaryMovie',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Philo',
-            desc: {
-                year: 2000,
-                genre: [
-                    'comedy',
-                    'horror',
-                ],
-            },
-            summary: "A familiar-looking group of teenagers find themselves being stalked by a more-than-vaguely recognizable masked killer! As the victims begin to pile up and the laughs pile on, none of your favorite scary movies escape the razor-sharp satire of this outrageously funny parody!",
-        },
-        style: {
-            color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '8 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/scary-movie-2000',
-            imdbID: 'tt0175142',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Crazy Rich Asians',
-        id: 'crazyRich',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GX6QtHQxBD5nCwwEAAAHM:type:feature',
-        info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
-            desc: {
-                year: 2018,
-                genre: [
-                    'drama',
-                    'romance',
-                ],
-            },
-            summary: "An American-born Chinese economics professor accompanies her boyfriend to Singapore for his best friend's wedding, only to get thrust into the lives of Asia's rich and famous.",
-        },
-        style: {
-            color: '76665b',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tallest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/crazy-rich-asians-2018',
-            imdbID: 'tt3104988',
-            // subReddit: 'subreddit',
-        },
-        cast: [
-            {
-                actor: 'Constance Wu',
-                char: 'Rachel Chu',
-            },
-            {
-                actor: 'Henry Golding',
-                char: 'Nick Young',
-            },
-            {
-                actor: ' Michelle Yeoh',
-                char: 'Eleanor Young',
-            },
-            {
-                actor: 'Gemma Chan',
-                char: 'Astrid Young Teo',
-            },
-            {
-                actor: 'Jimmy O. Yang',
-                char: 'Bernard Tai',
-            },
-        ],
-    },
-    {
-        name: 'Dave Chappelle: The Closer',
-        id: 'closer',
-        link: {
-            netflix: '81228510'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            // date: '',
-            desc: {
-                year: 2021,
-                genre: [
-                    'comedy',
-                    // 'special',
-                ],
-            },
-            summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight - and get a few things off his chest.",
-        },
-        style: {
-            color: '6d223c',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/movie/dave-chappelle-the-closer-2021',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Zindagi Na Milegi Dobara',
-        id: 'zindagi',
-        link: {
-            netflix: '70202336'
-        },
-        info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
-            description: 'Drama &#149 Romance &#149 2011',
-            summary: "Three friends on an adventurous road trip/bachelor party in Spain learn some lessons about themselves and each other that will change them forever.",
-        },
-        style: {
-            color: '313B47',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tallest',
-            mobileType: 'jpg',
-            mobileSize: '1',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/zindagi-na-milegi-dobara-2011',
-            imdbID: 'tt1562872',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'No Time to Die',
-        id: 'noTime',
-        // link: {
-        //     netflix: '80197526'
-        // },
-        info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Coming Soon',
-            // date: '',
-            description: 'Action &#149 Spy &#149 2021',
-            summary: 'James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.',
-        },
-        style: {
-            color: '3c4749',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/movie/no-time-to-die-2020',
-            imdbID: 'tt2382320',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: "Free Guy",
-        id: "free",
-        link: null,
-        info: {
-            // service: '',
-            // studio: '',
-            location: "Coming Soon",
-            description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
-            summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
-        },
-        style: {
-            color: '599DAA',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: null,
-            reelgoodLink: "https://reelgood.com/movie/free-guy-2020",
-            imdbID: "tt6264654",
-        },
-    },
-    {
-        name: 'This is the End',
-        id: 'theend',
-        // link: 'watchlink',
-        info: {
-            // service: '',
-            // studio: '',
-            location: 'Starz',
-            description: 'Comedy &#149 2013',
-            summary: "Six Los Angeles celebrities are stuck in James Franco's house after a series of devastating events just destroyed the city. Inside, the group not only have to face the apocalypse, but themselves.",
-        },
-        style: {
-            color: '3b2420',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: null,
-            reelgoodLink: 'https://reelgood.com/movie/this-is-the-end-2013',
-            imdbID: 'tt1245492',
-            // subReddit: null,
-        },
-    },
-    {
-        name: 'Shang-Chi',
-        id: 'shang',
-        link: null,
-        info: {
-            service: 'disney',
-            studio: 'disney',
-            location: 'Disney+',
-            desc: {
-                year: 2021,
-                genre: [
-                    'action & adventure',
-                    'fantasy',
-                ],
-            },
-            summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
-            tags: [
-                'mcu',
-            ]
-        },
-        style: {
-            color: '4b3831',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: null,
-            reelgoodLink: "https://reelgood.com/movie/shangchi-and-the-legend-of-the-ten-rings-2021",
-            imdbID: 'tt9376612',
-        },
-    },
-    {
-        name: 'Road to Perdition',
-        id: 'roadToPerdition',
-        // link: 'https://www.disneyplus.com/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ',
-        info: {
-            // service: 'disney',
-            // studio: 'starwars',
-            // location: 'Disney+',
-            desc: {
-                year: 2002,
-                genre: [
-                    'adventure',
-                    'crime',
-                    'thriller',
-                ],
-            },
-            summary: "A mob enforcer's son in 1930s Illinois witnesses a murder, forcing him and his father to take to the road, and his father down a path of redemption and revenge.",
-        },
-        style: {
-            color: '55534d',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/road-to-perdition-2002',
-            imdbID: 'tt0257044',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'Goodfellas',
-        id: 'goodfellas',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GYEZm4Qn1r7CgYgEAAAAb:type:feature',
-        info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
-            desc: {
-                year: 1990,
-                genre: [
-                    'crime',
-                    'drama',
-                    'mob',
-                ],
-            },
-            summary: "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
-        },
-        style: {
-            color: '1e252c',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            reelgoodLink: 'https://reelgood.com/movie/goodfellas-1990',
-            imdbID: 'tt0099685',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'The Social Dilemma',
-        id: 'social',
-        link: {
-            netflix: '81254224'
-        },
-        info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
-            desc: {
-                year: 2020,
-                genre: [
-                    'documentary',
-                ],
-            },
-            summary: "This documentary-drama hybrid explores the dangerous human impact of social networking, with tech experts sounding the alarm on their own creations.",
-        },
-        style: {
-            color: 'F7ECBD',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            imdbID: 'tt11464826',
-            // subReddit: 'subreddit',
-        },
-    },
+    allMovies.cars2,
+    allMovies.cars1,
+    allMovies.spiderMan3,
+    allMovies.spider_1_3,
+    allMovies.peaks,
+    allMovies.haroldAndKumar3,
+    allMovies.kingsMan,
+    allMovies.spider_1_1,
+    allMovies.lotr1,
+    allMovies.soul,
+    allMovies.haroldAndKumar,
+    allMovies.scaryMovie,
+    allMovies.crazyRich,
+    allMovies.closer,
+    allMovies.zindagi,
+    allMovies.noTime,
+    allMovies.free,
+    allMovies.theend,
+    allMovies.shang,
+    allMovies.roadToPerdition,
+    allMovies.goodfellas,
+    allMovies.social,
 ]
 
 const movieDataArchive = [
