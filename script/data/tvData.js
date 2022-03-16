@@ -4559,6 +4559,99 @@ const allMovies = {
             subReddit: 'brooklynninenine',
         },
     },
+    'whiteCollar': {
+        name: 'White Collar',
+        id: 'whiteCollar',
+        link: 'https://www.hulu.com/series/white-collar-58d3d0ce-8d86-4ccd-bd0c-104551448432',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            desc: {
+                seasons: 6,
+                yearStart: 2009,
+                yearEnd: 2014,
+                genre: [
+                    'crime',
+                ],
+            },
+            summary: "White Collar is about the unlikely partnership of a con artist and an FBI agent who have been playing cat and mouse for years. Neal Caffrey (Matt Bomer), a charming criminal mastermind, is finally caught by his nemesis, FBI Agent Peter Burke (Tim DeKay.)",
+        },
+        style: {
+            color: '615c59',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '9 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/white-collar-2009',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'himym': {
+        name: 'How I Met Your Mother',
+        id: 'himym',
+        link: 'https://www.hulu.com/series/how-i-met-your-mother-bc68ac79-3ace-4427-9ec0-5ee6f314d194',
+        info: {
+            service: 'hulu',
+            // studio: 'studio',
+            location: 'Hulu',
+            desc: {
+                seasons: 9,
+                yearStart: 2005,
+                yearEnd: 2014,
+                genre: [
+                    'comedy',
+                    'romance',
+                    'friends',
+                ],
+            },
+            summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
+            tags: [
+                'himym',
+            ]
+        },
+        style: {
+            color: '60B9C6',
+            posterType: 'jpg',
+            titleType: 'svg',
+            titleSize: 'tallest',
+            mobileType: 'webp',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            tvTimeID: '75760',
+            reelgoodLink: 'https://reelgood.com/show/how-i-met-your-mother-2005',
+            imdbID: 'tt0460649',
+            subReddit: 'HIMYM',
+        },
+        cast: [
+            {
+                actor: 'Josh Radnor',
+                char: 'Ted Mosby',
+            },
+            {
+                actor: 'Jason Segel',
+                char: 'Marshall Eriksen',
+            },
+            {
+                actor: 'Cobie Smulders',
+                char: 'Robin Scherbatsky',
+            },
+            {
+                actor: 'Neil Patrick Harris',
+                char: 'Barney Stinson',
+            },
+            {
+                actor: 'Alyson Hannigan',
+                char: 'Lily Aldrin',
+            },
+        ],
+    },
 }
 
 
@@ -4713,99 +4806,8 @@ const movieData8 = [
     allMovies.lost,
     allMovies.brooklyn,
     allMovies.silicon,
-    {
-        name: 'White Collar',
-        id: 'whiteCollar',
-        link: 'https://www.hulu.com/series/white-collar-58d3d0ce-8d86-4ccd-bd0c-104551448432',
-        info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
-            desc: {
-                seasons: 6,
-                yearStart: 2009,
-                yearEnd: 2014,
-                genre: [
-                    'crime',
-                ],
-            },
-            summary: "White Collar is about the unlikely partnership of a con artist and an FBI agent who have been playing cat and mouse for years. Neal Caffrey (Matt Bomer), a charming criminal mastermind, is finally caught by his nemesis, FBI Agent Peter Burke (Tim DeKay.)",
-        },
-        style: {
-            color: '615c59',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '9 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/white-collar-2009',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: 'How I Met Your Mother',
-        id: 'himym',
-        link: 'https://www.hulu.com/series/how-i-met-your-mother-bc68ac79-3ace-4427-9ec0-5ee6f314d194',
-        info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
-            desc: {
-                seasons: 9,
-                yearStart: 2005,
-                yearEnd: 2014,
-                genre: [
-                    'comedy',
-                    'romance',
-                    'friends',
-                ],
-            },
-            summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
-            tags: [
-                'himym',
-            ]
-        },
-        style: {
-            color: '60B9C6',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'tallest',
-            mobileType: 'webp',
-            mobileSize: '7 / 10',
-        },
-        apps: {
-            tvTimeID: '75760',
-            reelgoodLink: 'https://reelgood.com/show/how-i-met-your-mother-2005',
-            imdbID: 'tt0460649',
-            subReddit: 'HIMYM',
-        },
-        cast: [
-            {
-                actor: 'Josh Radnor',
-                char: 'Ted Mosby',
-            },
-            {
-                actor: 'Jason Segel',
-                char: 'Marshall Eriksen',
-            },
-            {
-                actor: 'Cobie Smulders',
-                char: 'Robin Scherbatsky',
-            },
-            {
-                actor: 'Neil Patrick Harris',
-                char: 'Barney Stinson',
-            },
-            {
-                actor: 'Alyson Hannigan',
-                char: 'Lily Aldrin',
-            },
-        ],
-    },
+    allMovies.whiteCollar,
+    allMovies.himym,
 ]
 const movieData9 = [
     {
