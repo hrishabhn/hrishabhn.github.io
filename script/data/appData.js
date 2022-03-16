@@ -242,6 +242,14 @@ const appData = {
             distract: false,
         },
         {
+            name: 'Version 6.4',
+            link: 'file:///Users/hrishabh/Downloads/dashboard%206.4/index.html',
+            desc: 'Old Version',
+            thumb: thumbData['more'],
+            style: 'secondary',
+            distract: false,
+        },
+        {
             name: 'Gmail',
             link: 'https://mail.google.com/mail/u/0/#inbox',
             desc: 'Email',

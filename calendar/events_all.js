@@ -1,6 +1,4 @@
 let events_all = [
-{"location":"2.3.B03","end":"2022-03-15T17:00:00+01:00","start":"2022-03-15T15:00:00+01:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Engineering Management"},
-{"location":"https:\/\/purdue-edu.zoom.us\/j\/93539416828?pwd=MnF3a1Y5MjNuaFpSekliSmhMM0s2QT09","end":"2022-03-15T20:30:00+01:00","start":"2022-03-15T19:00:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"SAIL Meeting"},
 {"location":"","end":"2022-03-15T23:00:00+01:00","start":"2022-03-15T21:00:00+01:00","allDay":"No","notes":"Sport","calendar":"Outings","link":"","name":"Atletico vs Man U - Leg 2"},
 {"location":"","end":"2022-03-16T11:00:00+01:00","start":"2022-03-16T10:30:00+01:00","allDay":"No","notes":"","calendar":"Errands","link":"","name":"Bank Fee"},
 {"location":"Avenida del Padre Piquer, 18\nMadrid, Spain","end":"2022-03-16T12:00:00+01:00","start":"2022-03-16T11:00:00+01:00","allDay":"No","notes":"","calendar":"Errands","link":"","name":"Cita Previa"},
@@ -19,4 +17,6 @@ let events_all = [
 {"location":"10.2.11","end":"2022-03-21T14:00:00+01:00","start":"2022-03-21T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
 {"location":"6.1.06","end":"2022-03-21T16:00:00+01:00","start":"2022-03-21T14:30:00+01:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
 {"location":"2.3.D04","end":"2022-03-22T11:00:00+01:00","start":"2022-03-22T09:00:00+01:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
+{"location":"2.3.B03","end":"2022-03-22T17:00:00+01:00","start":"2022-03-22T15:00:00+01:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Engineering Management"},
+{"location":"","end":"2022-03-23T15:30:00+01:00","start":"2022-03-23T15:00:00+01:00","allDay":"No","notes":"----( Video Call )----\nhttps:\/\/purdue.webex.com\/meet\/mkuryla\n---===---","calendar":"Work","link":"","name":"Advising Appointment"},
 ]

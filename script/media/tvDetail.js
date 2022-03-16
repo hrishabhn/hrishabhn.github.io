@@ -25,7 +25,7 @@ function tvDetail(i, j) {
     card.innerHTML = `
     <div class="bg" style="background-color: #${movie.style.color};"></div>
     <div class="fill-width">
-        <div class="thumb" style="background-image: url(../hrishabhn.github.io/media-image/TV/background/${movie.id}.${movie.style.posterType});"></div>
+        <div class="thumb" style="background-image: url(./media-image/TV/background/${movie.id}.${movie.style.posterType});"></div>
         <div class="gradient"></div>
         <div class="title-img"></div>
     </div>`

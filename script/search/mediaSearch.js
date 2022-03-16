@@ -59,12 +59,11 @@ function searchMoviesRow(results, title) {
         }
         if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
-        let thumb = thumbBase(`../hrishabhn.github.io/media-image/TV/background/${movie.id}.${movie.style.posterType}`)
+        let thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.posterType}`)
         thumb.innerHTML = `<div class="grad"></div>`
         if (movie.style.titleType) {
             let title = document.createElement('div')
             title.classList = `tv-title ${movie.style.titleSize}`
-            title.style.setProperty('background-image', `url(../hrishabhn.github.io/media-image/TV/title/${movie.id}.${movie.style.titleType})`)
             thumb.append(title)
         }
 
@@ -103,7 +102,7 @@ function searchMoviesRowBig(results, title) {
         let thumbCont = growElement()
         thumbCont.classList = 'thumb-cont'
 
-        let thumb = thumbBase(`../hrishabhn.github.io/media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
+        let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
         thumb.style.setProperty('--ratio', movie.style.mobileSize)
 
         let grad = gradElement()
@@ -120,7 +119,7 @@ function searchMoviesRowBig(results, title) {
 
             let title = document.createElement('div')
             title.classList = `tv-title ${movie.style.titleSize}`
-            title.style.setProperty('background-image', `url(../hrishabhn.github.io/media-image/TV/title/${movie.id}.${movie.style.titleType})`)
+            title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.titleType})`)
             textbox.prepend(title)
         } else {
             var textbox = textboxBase(movie.name, processDesc(movie))
@@ -303,7 +302,7 @@ function searchBookPodRow(results, title, type) {
             card.style.setProperty('--brand-col-light', `var(--${item.style}-light)`)
         }
 
-        let thumb = thumbBase(`../hrishabhn.github.io/media-image/${folder}/${item.id}.${item.coverType}`)
+        let thumb = thumbBase(`./media-image/${folder}/${item.id}.${item.coverType}`)
         card.append(thumb)
         card.append(textboxBase(item.name, item.author))
 

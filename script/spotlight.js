@@ -113,7 +113,7 @@ function spotlightRun(e) {
     //         results.push(resultListItemElement({
     //             text: movie.name,
     //             subtext: movie.info.location,
-    //             image: `url(../hrishabhn.github.io/media-image/TV/background/${movie.id}.${movie.style.posterType})`,
+    //             image: `url(./media-image/TV/background/${movie.id}.${movie.style.posterType})`,
     //             color: movie.style.color,
     //             imgRatio: '16 / 9',
     //             detail: tvDetail(movieIndex[0],movieIndex[1])
