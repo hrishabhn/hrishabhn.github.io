@@ -54,6 +54,51 @@
 // bad education
 // arrested dev
 
+const allMovies = {
+    'silicon': {
+        name: 'Silicon Valley',
+        id: 'silicon',
+        // link: 'https://www.hulu.com/series/silicon-valley-a53a72e7-afd9-4f50-bda8-ae887ff0683d',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2WugfAylFvjSoJATvA:type:series',
+        info: {
+            service: 'hbo',
+            studio: 'hbo',
+            location: 'HBO Max',
+            desc: {
+                seasons: 6,
+                yearStart: 2014,
+                yearEnd: 2019,
+                genre: [
+                    'comedy',
+                    'tech',
+                ],
+            },
+            summary: "In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. Partially inspired by Mike Judge’s own experiences as a Silicon Valley engineer in the late ‘80s, Silicon Valley is an American sitcom that centers around six programmers who are living together and trying to make it big in the Silicon Valley.",
+        },
+        style: {
+            color: 'D4584B',
+            posterType: 'jpg',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'jpg',
+            mobileSize: '8.4 / 10',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/silicon-valley-2014',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+}
+
+
+
+
+
+
+
+
 let movieData0 = [
     {
         name: 'Attack on Titan',
@@ -237,41 +282,7 @@ let movieData0 = [
     },
 ]
 let movieData1 = [
-    {
-        name: 'Silicon Valley',
-        id: 'silicon',
-        // link: 'https://www.hulu.com/series/silicon-valley-a53a72e7-afd9-4f50-bda8-ae887ff0683d',
-        link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2WugfAylFvjSoJATvA:type:series',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
-            desc: {
-                seasons: 6,
-                yearStart: 2014,
-                yearEnd: 2019,
-                genre: [
-                    'comedy',
-                    'tech',
-                ],
-            },
-            summary: "In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. Partially inspired by Mike Judge’s own experiences as a Silicon Valley engineer in the late ‘80s, Silicon Valley is an American sitcom that centers around six programmers who are living together and trying to make it big in the Silicon Valley.",
-        },
-        style: {
-            color: 'D4584B',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '8.4 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/silicon-valley-2014',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
+    allMovies.silicon,
     {
         name: 'Formula 1: Drive to Survive',
         id: 'drive',
@@ -4642,40 +4653,7 @@ const movieData8 = [
             subReddit: 'brooklynninenine',
         },
     },
-    {
-        name: 'Silicon Valley',
-        id: 'silicon',
-        link: 'https://www.hulu.com/series/silicon-valley-a53a72e7-afd9-4f50-bda8-ae887ff0683d',
-        info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
-            desc: {
-                seasons: 6,
-                yearStart: 2014,
-                yearEnd: 2019,
-                genre: [
-                    'comedy',
-                    'tech',
-                ],
-            },
-            summary: "In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. Partially inspired by Mike Judge’s own experiences as a Silicon Valley engineer in the late ‘80s, Silicon Valley is an American sitcom that centers around six programmers who are living together and trying to make it big in the Silicon Valley.",
-        },
-        style: {
-            color: 'D4584B',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '8.4 / 10',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            reelgoodLink: 'https://reelgood.com/show/silicon-valley-2014',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
+    allMovies.silicon,
     {
         name: 'White Collar',
         id: 'whiteCollar',
