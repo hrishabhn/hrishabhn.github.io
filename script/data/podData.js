@@ -1,6 +1,5 @@
-// top
-const podData0 = [
-    {
+const allPods = {
+    'decoder': {
         name: 'Decoder',
         id: 'decoder',
         link: {
@@ -10,7 +9,7 @@ const podData0 = [
         coverType: 'jpeg',
         style: 'yellow',
     },
-    {
+    'vergecast': {
         name: 'The Vergecast',
         id: 'vergecast',
         link: {
@@ -20,11 +19,7 @@ const podData0 = [
         coverType: 'jpeg',
         style: 'purple',
     },
-]
-
-// business podcasts
-const podData1 = [
-    {
+    'sway': {
         name: 'Sway',
         id: 'sway',
         link: {
@@ -34,7 +29,7 @@ const podData1 = [
         coverType: 'jpeg',
         style: 'pink',
     },
-    {
+    'businessCasual': {
         name: 'Business Casual',
         id: 'businessCasual',
         link: {
@@ -44,7 +39,7 @@ const podData1 = [
         coverType: 'jpeg',
         style: 'orange',
     },
-    {
+    'intelligence': {
         name: 'The Intelligence',
         id: 'intelligence',
         link: {
@@ -54,7 +49,7 @@ const podData1 = [
         coverType: 'png',
         style: 'teal',
     },
-    {
+    'pivot': {
         name: 'Pivot',
         id: 'pivot',
         link: {
@@ -64,7 +59,7 @@ const podData1 = [
         coverType: 'jpeg',
         style: 'secondary',
     },
-    {
+    'forward': {
         name: 'Forward',
         id: 'forward',
         link: {
@@ -74,7 +69,7 @@ const podData1 = [
         coverType: 'jpeg',
         // style: 'blue',
     },
-    {
+    'inet': {
         name: 'INET',
         id: 'inet',
         link: {
@@ -84,7 +79,7 @@ const podData1 = [
         coverType: 'jpeg',
         // style: 'blue',
     },
-    {
+    'profg': {
         name: 'Prof G Show',
         id: 'profg',
         link: {
@@ -94,7 +89,7 @@ const podData1 = [
         coverType: 'jpeg',
         // style: 'blue',
     },
-    {
+    'founders': {
         name: "Founder's Journal",
         id: 'founders',
         link: {
@@ -104,6 +99,24 @@ const podData1 = [
         coverType: 'jpeg',
         // style: 'blue',
     },
+}
+
+// top
+const podData0 = [
+    allPods.decoder,
+    allPods.vergecast,
+]
+
+// business podcasts
+const podData1 = [
+    allPods.sway,
+    allPods.businessCasual,
+    allPods.intelligence,
+    allPods.pivot,
+    allPods.forward,
+    allPods.inet,
+    allPods.profg,
+    allPods.founders,
 ]
 
 // tech podcasts
