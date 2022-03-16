@@ -47,6 +47,10 @@ function appCardSmall(app) {
         card.append(iconElement(app.icon))
     }
 
+    if (app.name) {
+        card.append(appCardSmallHover(app))
+    }
+
     return card
 }
 

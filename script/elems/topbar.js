@@ -52,10 +52,7 @@ function topbarLoad() {
     ]
 
     for (const app of topbarApps) {
-        let appCard = appCardSmall(app)
-        appCard.append(appCardSmallHover(app))
-
-        appTray.append(appCard)
+        appTray.append(appCardSmall(app))
         appTray.append(spacerElement(10))
     }
     appTray.lastChild.remove()
