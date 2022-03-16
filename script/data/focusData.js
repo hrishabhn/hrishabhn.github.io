@@ -27,9 +27,9 @@ let focusData = [
             trays: function () {
                 return [
                     // searchMoviesRow(searchMovies(''),'TV & Movies'),
-                    searchMoviesRowBig(rowMovies(0), 'Up next'),
-                    searchMoviesRow(rowMovies(1), 'My list'),
-                    searchMoviesRow(rowMovies(2), 'Recent'),
+                    searchMoviesNewRow(rowMovies(0), 'Up next', 'big'),
+                    searchMoviesNewRow(rowMovies(1), 'My list', 'smart'),
+                    searchMoviesNewRow(rowMovies(2), 'Recent', 'small'),
                     searchMoviesRowBig(rowMovies(3), 'Movies'),
                     searchMoviesRow(rowMovies(4), 'New'),
                     searchMoviesRow(rowMovies(5), 'Paused'),

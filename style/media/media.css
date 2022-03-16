@@ -304,3 +304,234 @@
 .actor-card .textbox .desc{
     opacity: 0.6;
 }
+
+
+
+/* new */
+.media-card{
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* general movie */
+.media-card.movie .grad {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.media-card.movie .tv-title-box{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.media-card.movie .tv-title {
+    background-position: bottom left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* small movie */
+.media-card.movie.small .thumb {
+    height: 170px;
+    width: 300px;
+}
+
+.media-card.movie.small .grad {
+    height: 100%;
+    background-image: linear-gradient(#00000000 70%, #00000099);
+}
+
+
+.media-card.movie.small .tv-title-box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 8px;
+}
+
+.media-card.movie.small .tv-title.widest {
+    height: 100px;
+    width: 80%;
+}
+.media-card.movie.small .tv-title.wide {
+    height: 100px;
+    width: 80%;
+}
+
+.media-card.movie.small .tv-title.mid {
+    height: 60px;
+    width: 60%;
+}
+
+.media-card.movie.small .tv-title.tall {
+    height: 50px;
+    width: 50%;
+}
+.media-card.movie.small .tv-title.tallest {
+    height: 50px;
+    width: 50%;
+}
+
+/* big movie */
+.media-card.movie.big {
+    width: 280px;
+    height: 100%;
+    color: white;
+}
+.media-card.movie.big .bg {
+    filter: brightness(0.5) saturate(2);
+    background-color: var(--brand-col, inherit);
+}
+.media-card.movie.big .thumb-cont{
+    width: 100%;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    margin-bottom: -100px;
+}
+.media-card.movie.big .thumb {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.media-card.movie.big .thumb .grad {
+    height: 100px;
+    filter: brightness(0.5) saturate(2);
+    background-image: linear-gradient(#00000000,var(--brand-col));
+}
+
+.media-card.movie.big .tv-title-box{
+    padding: 10px;
+}
+
+.media-card.movie.big .tv-title.widest {
+    height: 100px;
+    width: 100%;
+}
+
+.media-card.movie.big .tv-title.wide {
+    height: 100px;
+    width: 90%;
+}
+
+.media-card.movie.big .tv-title.mid {
+    height: 100px;
+    width: 80%;
+}
+
+.media-card.movie.big .tv-title.tall {
+    height: 70px;
+    width: 60%;
+}
+.media-card.movie.big .tv-title.tallest {
+    height: 70px;
+    width: 50%;
+}
+.media-card.movie.big .textbox {
+    width: 100%;
+    padding: 0 10px 8px;
+}
+
+.media-card.movie.big .textbox p {
+    display: block;
+    width: 100%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.media-card.movie.big .more{
+    padding: 12px 10px;
+    width: 100%;
+
+    font-size: 10px;
+    font-weight: 500;
+    opacity: 0.8;
+    background-color: var(--white-10);
+}
+
+.media-card.movie.big .more .icon {
+    height: 10px;
+    width: 10px;
+}
+
+/* med */
+.movie-small-detail .detail{
+    height: 100%;
+    width: 250px;
+    margin-left: 15px;
+    margin-right: 20px;
+    flex-direction: column;
+    cursor: default;
+}
+
+.movie-small-detail .detail p{
+    display: -webkit-box;
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-orient: vertical;
+}
+
+.movie-small-detail .detail p.genre{
+    -webkit-line-clamp: 1;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.movie-small-detail .detail p.title{
+    -webkit-line-clamp: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.movie-small-detail .detail p.desc{
+    -webkit-line-clamp: 4;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.4;
+}
+
+
+
+
+
+.tv-mid-info .summary {
+    -webkit-line-clamp: 3;
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 0.4;
+    }
+.tv-mid-info p {
+    }
+
+
+
+
+.media-card .media-data {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 6px;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-weight: 400;
+
+    color: white;
+    -webkit-backdrop-filter: blur(25px) brightness(0.5) saturate(2);
+    backdrop-filter: blur(25px) brightness(0.5) saturate(2);
+    background-color: var(--white-20);
+    box-shadow: 0 0 5px 0px var(--black-20);
+
+    /* box-shadow: 00px 2px 0px var(--black-50); */
+    z-index: 1;
+}

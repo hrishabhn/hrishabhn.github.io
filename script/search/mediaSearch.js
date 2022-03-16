@@ -43,6 +43,149 @@ function searchMovies(q) {
 
     return results
 }
+
+function searchMoviesNewRow(results, title, size) {
+    let row = rowBase(title)
+    let nodes = []
+
+    // process size
+    let small = false
+    let big = false
+    let med = false
+
+    if (size == 'small') {
+        small = true
+    } else if (size == 'big') {
+        big = true
+    } else if (size == 'med') {
+        small = true
+        med = true
+    } else if (size == 'smart') {
+        small = true
+        if (results.length < 6) med = true 
+    }
+
+
+
+    for (let k = 0; k < results.length; k++) {
+        const i = results[k][0]
+        const j = results[k][1]
+
+        const movie = movieData[i][j]
+
+        // base card
+        var card = document.createElement('div')
+        card.classList = 'media-card movie clickable-o'
+        if (movie.info.date) card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
+        if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
+
+        // size
+        if (small) card.classList.add('small')
+        else if (big) card.classList.add('big')
+
+
+        // bg for big
+        if (big) card.append(bgElement())
+
+        // thumb
+        let thumb
+        if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.posterType}`)
+        else if (big) {
+            thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
+            thumb.style.setProperty('aspect-ratio', movie.style.mobileSize)
+            thumbCont = document.createElement('div')
+            thumbCont.classList = 'thumb-cont'
+
+            thumbCont.append(thumb)
+        }
+
+        thumb.append(gradElement())
+
+        if (small) card.append(thumb)
+        else if (big) card.append(thumbCont)
+
+        // title
+        card.append(movieCardTitle(i, j))
+
+        // textbox
+        if (big) {
+            card.append(textboxBase(null, processDesc(movie)))
+
+            let more = document.createElement('a')
+            more.classList = 'more'
+            more.append(pElement('MORE'))
+            more.append(growElement())
+            more.append(iconElement(iconData.more))
+
+            card.append(more)
+        }
+
+        // med card
+        if (med) {
+            card.classList.remove('clickable-o')
+            card = movieMedCard(card, i, j)
+        }
+
+        // links
+        card.onclick = function () { showTVDetail(i, j) }
+        // card.oncontextmenu = function (e) {
+        //     e.preventDefault()
+        //     contextModalShow([movieApps(movieData[i, j])], e)
+        // }
+
+
+        nodes.push(card)
+    }
+
+    row.append(trayWithKids(nodes, 4))
+    return row
+}
+
+function movieCardTitle(i, j) {
+    const movie = movieData[i][j]
+
+    let box = document.createElement('div')
+    box.classList = 'tv-title-box'
+
+    let title = document.createElement('div')
+    title.classList = `tv-title ${movie.style.titleSize}`
+    title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.titleType})`)
+
+    box.append(title)
+    return box
+}
+
+function movieMedCard(small, i, j) {
+    const movie = movieData[i][j]
+
+    let card = document.createElement('div')
+    card.classList = 'movie-small-detail clickable-o'
+
+    
+    let detail = document.createElement('div')
+    detail.classList = 'detail'
+    
+    let genre = pElement(processDesc(movie, 'genre'))
+    genre.classList = 'genre'
+    let title = titleElement(movie.name)
+    let desc = descElement(movie.info.summary)
+
+    detail.append(genre)
+    detail.append(title)
+    detail.append(desc)
+
+    card.append(small)
+    card.append(detail)
+
+
+
+
+
+
+    return card
+
+}
+
 function searchMoviesRow(results, title) {
     let row = rowBase(title)
     let nodes = []
@@ -64,6 +207,7 @@ function searchMoviesRow(results, title) {
         if (movie.style.titleType) {
             let title = document.createElement('div')
             title.classList = `tv-title ${movie.style.titleSize}`
+            title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.titleType})`)
             thumb.append(title)
         }
 
