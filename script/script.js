@@ -273,15 +273,21 @@ function capitalizeFirstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
-function openApp(data, force) {
-    if (!data.distract || !getFocus().work || force) {
+function openApp(data, e, force) {
+    console.log(data)
+
+    if (!(data.distract && isDND() && !force)) {
         if (data.link) {
-            window.open(data.link, '_self')
+            if (e ? !e.metaKey : true) {
+                window.open(data.link, '_self')
+            } else {
+                window.open(data.link, '_blank')
+            }
         } else if (data.trigger) {
             data.trigger()
         }
     } else {
-        addModalLayer(distractModal(data))
+        addModalLayer(distractModal(data, e, true))
         document.getElementById('distract-input').focus()
     }
 }

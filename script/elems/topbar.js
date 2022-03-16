@@ -87,7 +87,8 @@ function topbarLoad() {
                 type: 'thumb',
                 name: tray[item].name,
                 thumb: tray[item].thumb,
-                trigger: function () { tray[item].trigger() }
+                trigger: function () { tray[item].trigger() },
+                distract: tray[item].distract,
             })
         }
         focusMenuData.push(focusMenuTray)

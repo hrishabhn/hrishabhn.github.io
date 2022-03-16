@@ -1,5 +1,6 @@
 function loadApp() {
     focusLoad()
+    dndLoad()
 
     topbarLoad()
     splashLoad()

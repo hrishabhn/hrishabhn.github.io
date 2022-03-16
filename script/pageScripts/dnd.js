@@ -1,3 +1,7 @@
+function dndLoad() {
+    if (getFocus().work) setCookie('dnd', true, 1)
+}
+
 function isDND() {
     if (getCookie('dnd')) return JSON.parse(getCookie('dnd'))
     return false

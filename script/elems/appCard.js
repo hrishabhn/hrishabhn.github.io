@@ -2,7 +2,7 @@ function appCard(app) {
     let card = document.createElement('a')
     card.classList = 'app-card layer-1 clickable-o card-hover'
     card.target = '_blank'
-    card.onclick = function () { openApp(app) }
+    card.onclick = function (e) { openApp(app, e) }
 
     if (app.accent) {
         card.style.setProperty('--brand-col', `#${app.accent}`)
@@ -32,7 +32,7 @@ function appCard(app) {
 function appCardSmall(app) {
     let card = document.createElement('a')
     card.classList = 'app-card-small layer-1 clickable-o card-hover'
-    card.onclick = function () { openApp(app) }
+    card.onclick = function (e) { openApp(app, e) }
 
     if (app.accent) {
         card.style.setProperty('--brand-col', `#${app.accent}`)

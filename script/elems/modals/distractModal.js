@@ -1,4 +1,4 @@
-function distractModal(app) {
+function distractModal(data, e) {
     let card = document.createElement('div')
     card.classList = 'distract-modal layer-0 card-shadow'
 
@@ -13,9 +13,10 @@ function distractModal(app) {
     input.id = 'distract-input'
     card.append(input)
 
+
     input.onkeyup = function () {
         if (input.value == code) {
-            openApp(app, true)
+            openApp(data, e, true)
             removeModalLayer()
         }
     }

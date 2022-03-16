@@ -1,6 +1,9 @@
 function menuItemElem(item) {
     let elem = document.createElement('a')
     elem.classList = 'item'
+    elem.onclick = function (e) {
+        openApp(item, e)
+    }
 
     if (item.type == 'thumb') {
         elem.append(thumbElement(item.thumb))
@@ -18,14 +21,8 @@ function menuItemElem(item) {
     elem.append(textboxBase(item.name, item.desc))
     elem.append(growElement())
 
-    if (item.trigger) {
-        elem.onclick = function () {
-            item.trigger()
-        }
-    }
-    
     if (item.link) {
-        elem.href = item.link
+        // elem.href = item.link
         elem.style.cursor = 'pointer'
     }
 
@@ -39,7 +36,7 @@ function menuItemElem(item) {
 
 function contextModalShow(data, e) {
     console.log(data)
-    
+
     let menu = document.getElementById('context-menu')
     removeAllChildNodes(menu)
 
