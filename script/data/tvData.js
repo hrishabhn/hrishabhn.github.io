@@ -5630,6 +5630,87 @@ const allMovies = {
             // subReddit: 'subreddit',
         },
     },
+    'problem': {
+        name: 'The Problem With Jon Stewart',
+        id: 'problem',
+        link: 'https://tv.apple.com/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob',
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            // date: '',
+            weekday: 'Thursday',
+            desc: {
+                seasons: 1,
+                yearStart: 2021,
+                yearEnd: null,
+                genre: [
+                    'comedy',
+                    'talk show',
+                ],
+            },
+            summary: "It's easy to feel overwhelmed by the world's problems. It's harder to pinpoint the systems responsible for creating them. In this series, Jon Stewart brings together people impacted by different parts of a problem to discuss how we come up with change.",
+        },
+        style: {
+            color: '334348',
+            posterType: 'webp',
+            titleType: 'webp',
+            titleSize: 'widest',
+        },
+        apps: {
+            tvTimeID: '400756',
+            reelgoodLink: 'https://reelgood.com/show/the-problem-with-jon-stewart-2021',
+            imdbID: 'tt15084142',
+            // subReddit: 'subreddit',
+        },
+    },
+    'yourname': {
+        name: "Your Name.",
+        id: "yourname",
+        link: null,
+        info: {
+            // service: '',
+            // studio: '',
+            location: "Download",
+            description: "Animation &#149 Drama &#149 Fantasy &#149 2016",
+            summary: "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
+        },
+        style: {
+            color: '768a8e',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: "mid",
+        },
+        apps: {
+            tvTimeID: null,
+            reelgoodLink: "https://reelgood.com/movie/your-name-2016",
+            imdbID: "tt5311514",
+        },
+    },
+    'fargo': {
+        name: 'Fargo',
+        id: 'fargo',
+        link: 'https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50',
+        info: {
+            service: 'hulu',
+            // studio: '',
+            location: 'Hulu',
+            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
+            // summary: "summary",
+        },
+        style: {
+            color: '28374E',
+            // posterType: 'webp',
+            // titleType: 'png',
+            // titleSize: 'widest',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
 }
 
 
@@ -5823,87 +5904,9 @@ const movieData10 = [
 ]
 
 const movieDataArchive = [
-    {
-        name: 'The Problem With Jon Stewart',
-        id: 'problem',
-        link: 'https://tv.apple.com/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob',
-        info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
-            // date: '',
-            weekday: 'Thursday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'talk show',
-                ],
-            },
-            summary: "It's easy to feel overwhelmed by the world's problems. It's harder to pinpoint the systems responsible for creating them. In this series, Jon Stewart brings together people impacted by different parts of a problem to discuss how we come up with change.",
-        },
-        style: {
-            color: '334348',
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'widest',
-        },
-        apps: {
-            tvTimeID: '400756',
-            reelgoodLink: 'https://reelgood.com/show/the-problem-with-jon-stewart-2021',
-            imdbID: 'tt15084142',
-            // subReddit: 'subreddit',
-        },
-    },
-    {
-        name: "Your Name.",
-        id: "yourname",
-        link: null,
-        info: {
-            // service: '',
-            // studio: '',
-            location: "Download",
-            description: "Animation &#149 Drama &#149 Fantasy &#149 2016",
-            summary: "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
-        },
-        style: {
-            color: '768a8e',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
-        },
-        apps: {
-            tvTimeID: null,
-            reelgoodLink: "https://reelgood.com/movie/your-name-2016",
-            imdbID: "tt5311514",
-        },
-    },
-    {
-        name: 'Fargo',
-        id: 'fargo',
-        link: 'https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50',
-        info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
-            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
-            // summary: "summary",
-        },
-        style: {
-            color: '28374E',
-            // posterType: 'webp',
-            // titleType: 'png',
-            // titleSize: 'widest',
-        },
-        apps: {
-            // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
-            // subReddit: 'subreddit',
-        },
-    },
+    allMovies.problem,
+    allMovies.yourname,
+    allMovies.fargo,
 ]
 
 const movieData = [
