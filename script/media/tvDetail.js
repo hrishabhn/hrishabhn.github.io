@@ -1,6 +1,6 @@
 const tvModal = document.getElementById('tv-modal')
 
-function showTVDetail(i, j) {
+function showTVDetail(key) {
     removeAllChildNodes(tvModal)
 
     let close = document.createElement('a')
@@ -8,7 +8,7 @@ function showTVDetail(i, j) {
     close.onclick = function () { hideTVDetail() }
     tvModal.append(close)
 
-    tvModal.append(tvDetail(i, j))
+    tvModal.append(tvDetail(key))
     tvModal.classList.add('open')
 }
 
@@ -17,8 +17,8 @@ function hideTVDetail() {
 }
 
 
-function tvDetail(i, j) {
-    let movie = movieData[i][j]
+function tvDetail(key) {
+    let movie = allMovies[key]
     let card = document.createElement('div')
     card.classList = 'tv-detail-card'
 
@@ -43,7 +43,7 @@ function tvDetail(i, j) {
         grad.style.setProperty('background-image', `linear-gradient(#00000000,#${movie.style.color})`)
         thumb.append(grad)
 
-        let title = movieCardTitle(i, j)
+        let title = movieCardTitle(key)
         title.classList.add('only-mobile')
 
         tall.append(thumb)

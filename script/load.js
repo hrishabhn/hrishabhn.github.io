@@ -37,8 +37,8 @@ function skipToContent() {
     document.getElementById('rest-of-stuff').scrollTop = window.innerHeight - 60
 }
 
-function castJSONStr(i, j) {
-    const movie = movieData[i][j]
+function castJSONStr(key) {
+    const movie = allMovies[key]
     console.log(movie)
 
     let str = ''

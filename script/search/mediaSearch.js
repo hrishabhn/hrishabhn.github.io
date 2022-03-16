@@ -1,8 +1,8 @@
 function rowMovies(i) {
     let results = []
 
-    for (let j = 0; j < movieData[i].length; j++) {
-        results.push([i, j])
+    for (const movie of movieData[i]) {
+        results.push(movie.id)
     }
 
     return results
@@ -10,25 +10,24 @@ function rowMovies(i) {
 function searchMovies(q) {
     let results = []
 
-    // const genre = containsGenre(i,j,query)
-    // const actor = containsActor(i,j,query)
+    for (const tray of movieData) {
+        for (const movie of tray) {
+            const key = movie.id
 
-    for (let i = 0; i < movieData.length; i++) {
-        for (let j = 0; (j < movieData[i].length) && (results.length < len); j++) {
-            const name = movieData[i][j].name.toUpperCase().includes(q)
+            const name = allMovies[key].name.toUpperCase().includes(q)
             let cast = false
             let tags = false
 
-            if (movieData[i][j].cast) {
-                for (const actor of movieData[i][j].cast) {
+            if (movie.cast) {
+                for (const actor of movie.cast) {
                     if ((actor.actor.toUpperCase().includes(q)) || (actor.char.toUpperCase().includes(q))) {
                         cast = true
                     }
                 }
             }
 
-            if (movieData[i][j].info.tags) {
-                for (const tag of movieData[i][j].info.tags) {
+            if (movie.info.tags) {
+                for (const tag of movie.info.tags) {
                     if (tag.toUpperCase().includes(q)) {
                         tags = true
                     }
@@ -36,7 +35,7 @@ function searchMovies(q) {
             }
 
             if (name || cast || tags) {
-                results.push([i, j])
+                results.push(key)
             }
         }
     }
@@ -62,16 +61,11 @@ function searchMoviesNewRow(results, title, size) {
         med = true
     } else if (size == 'smart') {
         small = true
-        if (results.length < 6) med = true 
+        if (results.length < 6) med = true
     }
 
-
-
-    for (let k = 0; k < results.length; k++) {
-        const i = results[k][0]
-        const j = results[k][1]
-
-        const movie = movieData[i][j]
+    for (const key of results) {
+        const movie = allMovies[key]
 
         // base card
         var card = document.createElement('div')
@@ -105,7 +99,7 @@ function searchMoviesNewRow(results, title, size) {
         else if (big) card.append(thumbCont)
 
         // title
-        card.append(movieCardTitle(i, j))
+        card.append(movieCardTitle(key))
 
         // textbox
         if (big) {
@@ -123,11 +117,11 @@ function searchMoviesNewRow(results, title, size) {
         // med card
         if (med) {
             card.classList.remove('clickable-o')
-            card = movieMedCard(card, i, j)
+            card = movieMedCard(card, key)
         }
 
         // links
-        card.onclick = function () { showTVDetail(i, j) }
+        card.onclick = function () { showTVDetail(key) }
         // card.oncontextmenu = function (e) {
         //     e.preventDefault()
         //     contextModalShow([movieApps(movieData[i, j])], e)
@@ -141,8 +135,8 @@ function searchMoviesNewRow(results, title, size) {
     return row
 }
 
-function movieCardTitle(i, j) {
-    const movie = movieData[i][j]
+function movieCardTitle(key) {
+    const movie = allMovies[key]
 
     let box = document.createElement('div')
     box.classList = 'tv-title-box'
@@ -155,16 +149,16 @@ function movieCardTitle(i, j) {
     return box
 }
 
-function movieMedCard(small, i, j) {
-    const movie = movieData[i][j]
+function movieMedCard(small, key) {
+    const movie = allMovies[key]
 
     let card = document.createElement('div')
     card.classList = 'movie-small-detail clickable-o'
 
-    
+
     let detail = document.createElement('div')
     detail.classList = 'detail'
-    
+
     let genre = pElement(processDesc(movie, 'genre'))
     genre.classList = 'genre'
     let title = titleElement(movie.name)
@@ -190,12 +184,12 @@ function searchMoviesRow(results, title) {
     let row = rowBase(title)
     let nodes = []
 
-    for (let k = 0; k < results.length; k++) {
-        let movie = movieData[results[k][0]][results[k][1]]
+    for (const key of results) {
+        let movie = allMovies[key]
 
         let card = cardBase()
         card.classList.add('info-card', 'movie', 'clickable-o')
-        card.onclick = function () { showTVDetail(results[k][0], results[k][1]) }
+        card.onclick = function () { showTVDetail(key) }
         card.oncontextmenu = function (e) {
             e.preventDefault()
             contextModalShow([movieApps(movie)], e)
@@ -230,11 +224,11 @@ function searchMoviesRowBig(results, title) {
     let row = rowBase(title)
     let nodes = []
 
-    for (let k = 0; k < results.length; k++) {
-        let movie = movieData[results[k][0]][results[k][1]]
+    for (const key of results) {
+        let movie = allMovies[key]
 
         let card = cardBase()
-        card.onclick = function () { showTVDetail(results[k][0], results[k][1]) }
+        card.onclick = function () { showTVDetail(key) }
         card.oncontextmenu = function (e) {
             e.preventDefault()
             contextModalShow([movieApps(movie)], e)
