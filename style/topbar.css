@@ -13,7 +13,7 @@
 }
 
 .topbar .item {
-    height: 40px;
+    height: 35px;
     padding: 0 10px;
     border-radius: 10px;
 
@@ -23,8 +23,8 @@
     cursor: default;
 }
 .topbar .item .icon {
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
 }
 
 .topbar .side {
@@ -33,7 +33,9 @@
     min-width: 100px;
 }
 
-
+.topbar .quick-apps {
+    height: 100%;
+}
 @media(max-width: 450px) {
     .topbar .quick-apps {
         display: none;
