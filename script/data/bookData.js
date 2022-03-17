@@ -1,5 +1,5 @@
-const bookData0 = [
-    {
+const allBooks = {
+    'project': {
         name: 'Project Hail Mary',
         id: 'project',
         link: 'kindle://',
@@ -9,7 +9,7 @@ const bookData0 = [
         format: 'EBook',
         style: 'brown',
     },
-    {
+    'gweilo': {
         name: 'Gweilo: Memories of a Hong Kong Childhood',
         id: 'gweilo',
         link: 'kindle://',
@@ -19,7 +19,7 @@ const bookData0 = [
         format: 'EBook',
         style: 'secondary',
     },
-    {
+    'lost': {
         name: "100 Things We've Lost to the Internet",
         id: 'lost',
         link: 'kindle://',
@@ -29,7 +29,7 @@ const bookData0 = [
         format: 'EBook',
         style: 'orange',
     },
-    {
+    'focus': {
         name: "Stolen Focus",
         id: 'focus',
         link: 'kindle://',
@@ -39,9 +39,9 @@ const bookData0 = [
         format: 'EBook',
         style: 'secondary',
     },
-    {
+    'jordan': {
         name: '12 Rules for Life',
-        id: '12rules',
+        id: 'jordan',
         link: 'kindle://',
         author: 'Jordan B. Peterson',
         coverType: 'jpg',
@@ -49,9 +49,7 @@ const bookData0 = [
         format: 'EBook & Audiobook',
         style: 'secondary',
     },
-]
-const bookData1 = [
-    {
+    'short': {
         name: 'A Short History of Nearly Everything',
         id: 'short',
         link: 'ibooks://',
@@ -61,7 +59,7 @@ const bookData1 = [
         format: 'EBook',
         style: 'purple',
     },
-    {
+    'faster': {
         name: 'Faster Than Normal',
         id: 'faster',
         link: {
@@ -73,7 +71,7 @@ const bookData1 = [
         format: 'AudioBook',
         style: 'blue',
     },
-    {
+    'ready': {
         name: 'Ready Player One',
         id: 'ready',
         link: 'ibooks://',
@@ -83,7 +81,7 @@ const bookData1 = [
         format: 'EBook',
         // style: 'secondary',
     },
-    {
+    'cultureMap': {
         name: 'The Culture Map',
         id: 'cultureMap',
         link: 'ibooks://',
@@ -93,7 +91,7 @@ const bookData1 = [
         format: 'EBook',
         // style: 'secondary',
     },
-    {
+    'braveNewWorld': {
         name: 'Brave New World',
         id: 'braveNewWorld',
         link: 'ibooks://',
@@ -103,7 +101,7 @@ const bookData1 = [
         format: 'EBook',
         // style: 'secondary',
     },
-    {
+    'ride': {
         name: 'The Ride of a Lifetime',
         id: 'ride',
         link: {
@@ -115,7 +113,7 @@ const bookData1 = [
         format: 'AudioBook',
         // style: 'secondary',
     },
-    {
+    'martian': {
         name: 'The Martian',
         id: 'martian',
         link: {
@@ -127,7 +125,7 @@ const bookData1 = [
         format: 'EBook',
         // style: 'secondary',
     },
-    {
+    'split': {
         name: 'Never Split the Difference',
         id: 'split',
         link: 'ibooks://',
@@ -137,9 +135,7 @@ const bookData1 = [
         format: 'EBook',
         // style: 'secondary',
     },
-]
-const bookData2 = [
-    {
+    'four': {
         name: 'The Four',
         id: 'four',
         link: 'ibooks://',
@@ -149,7 +145,7 @@ const bookData2 = [
         format: 'EBook & Audiobook',
         style: 'secondary',
     },
-    {
+    'future': {
         name: 'The Future is Asian',
         id: 'future',
         link: 'ibooks://',
@@ -159,7 +155,7 @@ const bookData2 = [
         format: 'EBook',
         // style: 'secondary',
     },
-    {
+    'raging': {
         name: 'The Raging 2020s',
         id: 'raging',
         link: 'ibooks://',
@@ -169,7 +165,7 @@ const bookData2 = [
         format: 'EBook',
         // style: 'secondary',
     },
-    {
+    'expats': {
         name: 'The Expatriates',
         id: 'expats',
         link: 'ibooks://',
@@ -179,7 +175,7 @@ const bookData2 = [
         format: 'EBook',
         // style: 'secondary',
     },
-    {
+    'cultureCode': {
         name: 'The Culture Code',
         id: 'cultureCode',
         link: 'ibooks://',
@@ -189,9 +185,7 @@ const bookData2 = [
         format: 'EBook',
         // style: 'secondary',
     },
-]
-const bookData3 = [
-    {
+    'goingSolo': {
         name: 'Going Solo',
         id: 'goingSolo',
         link: 'ibooks://',
@@ -201,7 +195,7 @@ const bookData3 = [
         format: 'EBook',
         // style: 'secondary',
     },
-    {
+    'noRules': {
         name: 'No Rules Rules',
         id: 'noRules',
         link: 'ibooks://',
@@ -211,7 +205,7 @@ const bookData3 = [
         format: 'EBook',
         style: 'red',
     },
-    {
+    'homodeus': {
         name: 'Homo Deus',
         id: 'homodeus',
         link: {
@@ -223,7 +217,7 @@ const bookData3 = [
         format: 'AudioBook',
         style: 'secondary',
     },
-    {
+    'west': {
         name: 'Has the West Lost It?',
         id: 'west',
         link: 'ibooks://',
@@ -233,7 +227,7 @@ const bookData3 = [
         format: 'EBook',
         // style: 'secondary',
     },
-    {
+    'sapiens': {
         name: 'Sapiens',
         id: 'sapiens',
         link: {
@@ -245,7 +239,7 @@ const bookData3 = [
         format: 'AudioBook',
         // style: 'secondary',
     },
-    {
+    'animalFarm': {
         name: 'Animal Farm',
         id: 'animalFarm',
         link: '',
@@ -255,7 +249,7 @@ const bookData3 = [
         format: 'AudioBook',
         style: 'red',
     },
-    {
+    'hitchhiker': {
         name: "The Hitchhiker's Guide to the Galaxy",
         id: 'hitchhiker',
         link: {
@@ -267,7 +261,7 @@ const bookData3 = [
         format: 'AudioBook',
         // style: 'secondary',
     },
-    {
+    'surveillance': {
         name: 'The Age of Surveillance Capitalism',
         id: 'surveillance',
         link: '',
@@ -276,9 +270,9 @@ const bookData3 = [
         progress: 'Finished',
         format: 'Hardcover',
     },
-    {
+    'nineteen': {
         name: '1984',
-        id: '1984',
+        id: 'nineteen',
         link: '',
         author: 'George Orwell',
         coverType: 'jpg',
@@ -286,7 +280,7 @@ const bookData3 = [
         format: 'AudioBook',
         // style: 'secondary',
     },
-    {
+    'boy': {
         name: 'Boy',
         id: 'boy',
         link: 'ibooks://',
@@ -296,6 +290,44 @@ const bookData3 = [
         format: 'EBook',
         // style: 'secondary',
     },
+}
+
+
+const bookData0 = [
+    allBooks.project,
+    allBooks.gweilo,
+    allBooks.lost,
+    allBooks.focus,
+    allBooks.jordan,
+]
+const bookData1 = [
+    allBooks.short,
+    allBooks.faster,
+    allBooks.ready,
+    allBooks.cultureMap,
+    allBooks.braveNewWorld,
+    allBooks.ride,
+    allBooks.martian,
+    allBooks.split,
+]
+const bookData2 = [
+    allBooks.four,
+    allBooks.future,
+    allBooks.raging,
+    allBooks.expats,
+    allBooks.cultureCode,
+]
+const bookData3 = [
+    allBooks.goingSolo,
+    allBooks.noRules,
+    allBooks.homodeus,
+    allBooks.west,
+    allBooks.sapiens,
+    allBooks.animalFarm,
+    allBooks.hitchhiker,
+    allBooks.surveillance,
+    allBooks.nineteen,
+    allBooks.boy,
 ]
 
 const bookData = [
