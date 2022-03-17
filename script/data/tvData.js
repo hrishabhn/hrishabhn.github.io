@@ -5316,8 +5316,7 @@ const allMovies = {
             desc: {
                 year: 2021,
                 genre: [
-                    'comedy',
-                    // 'special',
+                    'comedy special',
                 ],
             },
             summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight - and get a few things off his chest.",
@@ -5667,6 +5666,37 @@ const allMovies = {
             // subReddit: 'subreddit',
         },
     },
+    'vir': {
+        name: 'Vid Das: For India',
+        id: 'vir',
+        link: {
+            netflix: '80995996'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            desc: {
+                year: 2020,
+                genre: [
+                    'comedy special',
+                ],
+            },
+            summary: "From the Vedas to Vasco da Gama to vacuous Bollywood plotlines, comedian Vir Das celebrates the history of India with his one-of-a-kind perspective.",
+        },
+        style: {
+            color: '9b732e',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'widest',
+            mobileType: 'png',
+            mobileSize: '7 / 10',
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/vir-das-for-india-2020',
+            imdbID: 'tt11611314',
+        },
+    },
 }
 
 
@@ -5784,6 +5814,7 @@ const movieDataMovies = [
     allMovies.earth,
 ]
 const movieDataNew = [
+    allMovies.vir,
     allMovies.phil,
     allMovies.anna,
     allMovies.diabolical,
