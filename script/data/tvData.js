@@ -1,58 +1,3 @@
-
-// {
-//     name: 'Title',
-//     id: 'identifier',
-//     link: {
-//         netflix: '80197526'
-//     },
-//     info: {
-//         service: 'service',
-//         // studio: 'studio',
-//         location: 'location',
-//         // date: '',
-//         desc: {
-//             seasons: 1,
-//             year: 2022,
-//             yearStart: 2022,
-//             yearEnd: null,
-//             genre: [
-//                 'crime',
-//                 'comedy',
-//             ],
-//         },
-//         summary: "summary",
-//     },
-//     style: {
-//         color: '000000',
-//         posterType: 'jpg',
-//         titleType: 'png',
-//         titleSize: 'widest',
-//         mobileType: 'jpg',
-//         mobileSize: '7 / 10',
-//     },
-//     apps: {
-//         // tvTimeID: 'identifier',
-//         // reelgoodLink: 'link',
-//         // imdbID: 'identifier',
-//         // subReddit: 'subreddit',
-//     },
-//     // cast: [
-//     //     {
-//     //         actor: 'name',
-//     //         char: 'name',
-//     //     },
-//     // ],
-// },
-
-
-// schitts creek
-// narcos
-// mr pickles
-// kim
-// breaking bad
-// bad education
-// arrested dev
-
 const allMovies = {
     'silicon': {
         name: 'Silicon Valley',
@@ -5723,6 +5668,73 @@ const allMovies = {
         },
     },
 }
+
+
+// @new
+// {
+//     name: 'Title',
+//     id: 'identifier',
+//     link: {
+//         netflix: '80197526'
+//     },
+//     info: {
+//         service: 'service',
+//         // studio: 'studio',
+//         location: 'location',
+//         // date: '',
+//         desc: {
+//             seasons: 1,
+//             year: 2022,
+//             yearStart: 2022,
+//             yearEnd: null,
+//             genre: [
+//                 'crime',
+//                 'comedy',
+//             ],
+//         },
+//         summary: "summary",
+//     },
+//     style: {
+//         color: '000000',
+//         posterType: 'jpg',
+//         titleType: 'png',
+//         titleSize: 'widest',
+//         mobileType: 'jpg',
+//         mobileSize: '7 / 10',
+//     },
+//     apps: {
+//         // tvTimeID: 'identifier',
+//         // reelgoodLink: 'link',
+//         // imdbID: 'identifier',
+//         // subReddit: 'subreddit',
+//     },
+//     // cast: [
+//     //     {
+//     //         actor: 'name',
+//     //         char: 'name',
+//     //     },
+//     // ],
+// },
+
+
+// schitts creek
+// narcos
+// mr pickles
+// kim
+// breaking bad
+// bad education
+// arrested dev
+
+
+
+
+
+
+
+
+
+
+
 
 let movieDataUpNext = [
     allMovies.elite,
