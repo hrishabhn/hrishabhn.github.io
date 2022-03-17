@@ -526,6 +526,15 @@ const appData = {
     ],
     'design': [
         {
+            name: 'Dribbble',
+            link: 'https://dribbble.com',
+            searchBase: 'https://dribbble.com/search/',
+            desc: 'UI Design Ideas',
+            thumb: 'dribbble.png',
+            accent: 'ea4c89',
+            distract: true,
+        },
+        {
             name: 'Visual Studio Code',
             link: 'vscode://',
             desc: 'Code',
