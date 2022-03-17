@@ -59,7 +59,7 @@ function searchMoviesNewRow(results, title, size) {
         med = true
     } else if (size == 'smart') {
         small = true
-        if (results.length < 6) med = true
+        if (results.length < 5) med = true
     }
 
     for (const key of results) {
