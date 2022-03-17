@@ -525,13 +525,14 @@
     border-radius: 6px;
     padding: 2px 5px;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 500;
 
     color: white;
     -webkit-backdrop-filter: blur(25px) brightness(0.5) saturate(2);
     backdrop-filter: blur(25px) brightness(0.5) saturate(2);
     background-color: var(--white-20);
     box-shadow: 0 0 5px 0px var(--black-20);
+    cursor: default;
 
     /* box-shadow: 00px 2px 0px var(--black-50); */
     z-index: 1;

@@ -97,7 +97,7 @@ const allMovies = {
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            date: 'Mar 15, 2022',
+            // date: 'Mar 15, 2022',
             desc: {
                 seasons: 1,
                 yearStart: 2022,
@@ -5736,7 +5736,6 @@ let movieDataMyList = [
     allMovies.tintin,
 ]
 let soonMovies = [
-    allMovies.himyf,
     allMovies.snowfall,
     allMovies.severance,
     allMovies.abbott,
@@ -5835,6 +5834,7 @@ const movieDataUpToDate = [
     allMovies.curb,
     allMovies.falcon,
     allMovies.hitMonkey,
+    allMovies.himyf,
     allMovies.industry,
     allMovies.insideJob,
     allMovies.invincible,
