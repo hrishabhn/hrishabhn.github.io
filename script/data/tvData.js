@@ -1246,11 +1246,11 @@ const allMovies = {
         },
         style: {
             color: colorData.fluent.red,
-            // posterType: 'jpg',
+            posterType: 'png',
             titleType: 'png',
             titleSize: 'widest',
-            // mobileType: 'jpg',
-            // mobileSize: '7 / 10',
+            mobileType: 'png',
+            mobileSize: '780 / 1059',
         },
         apps: {
             // tvTimeID: 'identifier',
