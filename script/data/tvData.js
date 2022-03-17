@@ -5693,27 +5693,39 @@ const allMovies = {
         link: 'https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50',
         info: {
             service: 'hulu',
-            // studio: '',
+            studio: 'fx',
             location: 'Hulu',
-            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Present',
-            // summary: "summary",
+            desc: {
+                seasons: 4,
+                yearStart: 2014,
+                yearEnd: null,
+                genre: [
+                    'crime',
+                    'drama',
+                    'thriller',
+                ],
+            },
+            summary: "In 1950 Kansas City, two crime syndicates fighting for a piece of the American dream have struck an uneasy peace. Together, they control an alternate economy of exploitation, graft and drugs. To cement their truce, Loy Cannon, the head of the Black crime family, trades his youngest son to his enemy Donatello Fadda, the head of the Italian mafia. In return, Donatello surrenders his youngest son Zero to Loy. Intertwined with this tale of immigration, assimilation, and power, are the stories of Josto Fadda, the impulsive and self-indulgent heir apparent to the Fadda Crime Family; Donatello’s adopted son Rabbi Milligan; Detective Odis Weff and Oraetta Mayflower; Ethelrida Pearl Smutny, the precocious 16-year-old daughter of Thurman and Dibrell Smutny; and U.S. Marshal Dick “Deafy” Wickware.",
         },
         style: {
             color: '28374E',
-            // posterType: 'webp',
-            // titleType: 'png',
-            // titleSize: 'widest',
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'tall',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
         },
         apps: {
             // tvTimeID: 'identifier',
-            // reelgoodLink: 'link',
-            // imdbID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/fargo-2014',
+            imdbID: 'tt2802850',
             // subReddit: 'subreddit',
         },
     },
 }
 
 let movieDataUpNext = [
+    allMovies.fargo,
     allMovies.elite,
     allMovies.silicon,
 ]
@@ -5789,7 +5801,6 @@ const movieDataNew = [
 ]
 const movieDataPaused = [
     allMovies.georgina,
-    allMovies.fairfax,
     allMovies.ghosts,
     allMovies.arcane,
     allMovies.snowpiercer,
@@ -5900,6 +5911,7 @@ const movieDataArchive = [
     allMovies.problem,
     allMovies.yourname,
     allMovies.fargo,
+    allMovies.fairfax,
 ]
 
 const movieData = [
@@ -5914,4 +5926,5 @@ const movieData = [
     movieDataFinished,
     movieDataClassicMovies,
     movieDataRecentMovies,
+    movieDataArchive,
 ]
