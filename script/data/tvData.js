@@ -5711,7 +5711,7 @@ const allMovies = {
             color: '28374E',
             posterType: 'webp',
             titleType: 'png',
-            titleSize: 'tall',
+            titleSize: 'mid',
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -5725,7 +5725,6 @@ const allMovies = {
 }
 
 let movieDataUpNext = [
-    allMovies.fargo,
     allMovies.elite,
     allMovies.silicon,
 ]
@@ -5755,10 +5754,11 @@ for (const movie of soonMovies.reverse()) {
 }
 
 const movieDataRecent = [
-    allMovies.money,
-    allMovies.disenchant,
     allMovies.dontLookUp,
     allMovies.cowboy,
+    allMovies.money,
+    allMovies.fargo,
+    allMovies.disenchant,
     allMovies.grandTour,
 ]
 const movieDataMovies = [
