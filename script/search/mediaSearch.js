@@ -420,12 +420,14 @@ function searchBookPodRow(results, title, type) {
     let row = rowBase(title)
     let nodes = []
 
+    let data
+    let folder
     if (type == 'book') {
-        var data = bookData
-        var folder = 'books'
+        data = bookData
+        folder = 'books'
     } else if (type == 'pod') {
-        var data = podData
-        var folder = 'podcasts'
+        data = podData
+        folder = 'podcasts'
     }
 
     for (let k = 0; k < results.length; k++) {
