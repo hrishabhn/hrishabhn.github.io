@@ -6,19 +6,17 @@ function rowMovies(i) {
 function searchMovies(q) {
     let results = []
 
-    for (const tray of movieData) {
-        for (const movie of tray) {
-            const key = movie.id
+    for (const tray of movieData) for (const movie of tray) if (results.length < len) {
+        const key = movie.id
 
-            const name = allMovies[key].name.toUpperCase().includes(q)
-            let cast = false
-            let tags = false
+        const name = allMovies[key].name.toUpperCase().includes(q)
+        let cast = false
+        let tags = false
 
-            if (movie.cast) for (const actor of movie.cast) if ((actor.actor.toUpperCase().includes(q)) || (actor.char.toUpperCase().includes(q))) cast = true
-            if (movie.info.tags) for (const tag of movie.info.tags) if (tag.toUpperCase().includes(q)) tags = true
+        if (movie.cast) for (const actor of movie.cast) if ((actor.actor.toUpperCase().includes(q)) || (actor.char.toUpperCase().includes(q))) cast = true
+        if (movie.info.tags) for (const tag of movie.info.tags) if (tag.toUpperCase().includes(q)) tags = true
 
-            if ((name || cast || tags) && !results.includes(key)) results.push(key)
-        }
+        if ((name || cast || tags) && !results.includes(key)) results.push(key)
     }
 
     return results
