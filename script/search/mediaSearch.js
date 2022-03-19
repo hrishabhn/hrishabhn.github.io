@@ -153,29 +153,25 @@ function movieMedCard(small, key) {
     let card = document.createElement('div')
     card.classList = 'movie-small-detail clickable-o'
 
-
-    let detail = document.createElement('div')
+    let detail = mediaCardDetail(processDesc(movie, 'genre'), movie.name, movie.info.summary)
     detail.classList = 'detail'
-
-    let genre = pElement(processDesc(movie, 'genre'))
-    genre.classList = 'genre'
-    let title = titleElement(movie.name)
-    let desc = descElement(movie.info.summary)
-
-    detail.append(genre)
-    detail.append(title)
-    detail.append(desc)
 
     card.append(small)
     card.append(detail)
-
-
-
-
-
-
     return card
+}
 
+function mediaCardDetail(genre, name, summary) {
+    let card = document.createElement('div')
+    card.classList = 'detail'
+
+    let genreElem = pElement(genre)
+    genreElem.classList = 'genre'
+
+    card.append(genreElem)
+    card.append(titleElement(name))
+    card.append(descElement(summary))
+    return card
 }
 
 function searchMoviesRow(results, title) {
@@ -444,8 +440,4 @@ function mediaProgressBarElem(progress) {
 
     elem.append(bar)
     return elem
-}
-
-function searchBookPodBig(results, type) {
-
 }
