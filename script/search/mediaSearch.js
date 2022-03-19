@@ -1,10 +1,6 @@
 function rowMovies(i) {
     let results = []
-
-    for (const movie of movieData[i]) {
-        results.push(movie.id)
-    }
-
+    for (const movie of movieData[i]) results.push(movie.id)
     return results
 }
 function searchMovies(q) {
