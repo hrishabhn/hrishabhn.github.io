@@ -256,19 +256,7 @@ function searchMoviesRowBig(results, title) {
 
 function searchActors(q) {
     let results = []
-
-    for (let i = 0; i < movieData.length; i++) {
-        for (let j = 0; (j < movieData[i].length) && (results.length < 10); j++) {
-            if (movieData[i][j].cast) {
-                for (const actor of movieData[i][j].cast) {
-                    if (actor.actor.toUpperCase().includes(q)) {
-                        if (!results.includes(actor.actor)) results.push(actor.actor)
-                    }
-                }
-            }
-        }
-    }
-
+    for (const tray of movieData) for (const movie of tray) if (movie.cast) for (const actor of movie.cast) if (actor.actor.toUpperCase().includes(q)) if (!results.includes(actor.actor)) results.push(actor.actor)
     return results
 }
 
