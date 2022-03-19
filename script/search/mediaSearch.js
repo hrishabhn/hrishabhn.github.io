@@ -368,50 +368,29 @@ function mediaTimeElem(str) {
 
 function rowBooks(i) {
     let results = []
-
-    for (let j = 0; j < bookData[i].length; j++) {
-        results.push([i, j])
-    }
-
+    for (const book of bookData[i]) results.push(book.id)
     return results
 }
 function rowPods(i) {
     let results = []
-
-    for (let j = 0; j < podData[i].length; j++) {
-        results.push([i, j])
-    }
-
+    for (const pod of podData[i]) results.push(pod.id)
     return results
 }
+
 function searchBooks(q) {
     let results = []
-
-    for (let i = 0; i < bookData.length; i++) {
-        for (let j = 0; (j < bookData[i].length) && (results.length < len); j++) {
-            const name = bookData[i][j].name.toUpperCase().includes(q)
-
-            if (name) {
-                results.push([i, j])
-            }
-        }
+    for (const tray of bookData) for (const book of tray) {
+        const name = book.name.toUpperCase().includes(q)
+        if (name) results.push(book.id)
     }
-
     return results
 }
 function searchPods(q) {
     let results = []
-
-    for (let i = 0; i < podData.length; i++) {
-        for (let j = 0; (j < podData[i].length) && (results.length < len); j++) {
-            const name = podData[i][j].name.toUpperCase().includes(q)
-
-            if (name) {
-                results.push([i, j])
-            }
-        }
+    for (const tray of podData) for (const pod of tray) {
+        const name = pod.name.toUpperCase().includes(q)
+        if (name) results.push(pod.id)
     }
-
     return results
 }
 
@@ -420,18 +399,18 @@ function searchBookPodRow(results, title, type) {
     let row = rowBase(title)
     let nodes = []
 
-    let data
+    let allData
     let folder
     if (type == 'book') {
-        data = bookData
+        allData = allBooks
         folder = 'books'
     } else if (type == 'pod') {
-        data = podData
+        allData = allPods
         folder = 'podcasts'
     }
 
-    for (let k = 0; k < results.length; k++) {
-        let item = data[results[k][0]][results[k][1]]
+    for (const key of results) {
+        let item = allData[key]
 
         let card = cardBase()
         card.classList.add('info-card', type)
@@ -465,4 +444,8 @@ function mediaProgressBarElem(progress) {
 
     elem.append(bar)
     return elem
+}
+
+function searchBookPodBig(results, type) {
+
 }
