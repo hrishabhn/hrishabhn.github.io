@@ -281,7 +281,7 @@ const allBooks = {
 }
 
 for (const key in allBooks) {
-    const book = allPods[key]
+    const book = allBooks[key]
     if (!book.link) book.link = processBookPodLink(book)
 }
 
