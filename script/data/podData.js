@@ -2,9 +2,7 @@ const allPods = {
     'decoder': {
         name: 'Decoder',
         id: 'decoder',
-        link: {
-            applePod: 'id1011668648'
-        },
+        applePod: '1011668648',
         author: 'Nilay Patel',
         coverType: 'jpeg',
         style: 'yellow',
@@ -12,9 +10,7 @@ const allPods = {
     'vergecast': {
         name: 'The Vergecast',
         id: 'vergecast',
-        link: {
-            applePod: 'id430333725'
-        },
+        applePod: '430333725',
         author: 'The Verge',
         coverType: 'jpeg',
         style: 'purple',
@@ -22,9 +18,7 @@ const allPods = {
     'sway': {
         name: 'Sway',
         id: 'sway',
-        link: {
-            applePod: 'id1528594034'
-        },
+        applePod: '1528594034',
         author: 'Kara Swisher',
         coverType: 'jpeg',
         style: 'pink',
@@ -32,9 +26,7 @@ const allPods = {
     'businessCasual': {
         name: 'Business Casual',
         id: 'businessCasual',
-        link: {
-            applePod: 'id1480059697'
-        },
+        applePod: '1480059697',
         author: 'Morning Brew Podcasts',
         coverType: 'jpeg',
         style: 'orange',
@@ -42,9 +34,7 @@ const allPods = {
     'intelligence': {
         name: 'The Intelligence',
         id: 'intelligence',
-        link: {
-            applePod: 'id1449631195'
-        },
+        applePod: '1449631195',
         author: 'The Economist',
         coverType: 'png',
         style: 'teal',
@@ -52,9 +42,7 @@ const allPods = {
     'pivot': {
         name: 'Pivot',
         id: 'pivot',
-        link: {
-            applePod: 'id1073226719'
-        },
+        applePod: '1073226719',
         author: 'Kara Swisher & Scott Galloway',
         coverType: 'jpeg',
         style: 'secondary',
@@ -62,9 +50,7 @@ const allPods = {
     'forward': {
         name: 'Forward',
         id: 'forward',
-        link: {
-            youtube: 'forwardpod'
-        },
+        youtube: 'forwardpod',
         author: 'Andrew Yang & Zach Graumann',
         coverType: 'jpeg',
         // style: 'blue',
@@ -72,9 +58,7 @@ const allPods = {
     'inet': {
         name: 'INET',
         id: 'inet',
-        link: {
-            youtube: 'NewEconomicThinking'
-        },
+        youtube: 'NewEconomicThinking',
         author: 'Rob Johnson',
         coverType: 'jpeg',
         // style: 'blue',
@@ -82,9 +66,7 @@ const allPods = {
     'profg': {
         name: 'Prof G Show',
         id: 'profg',
-        link: {
-            applePod: 'id1498802610'
-        },
+        applePod: '1498802610',
         author: 'Kara Swisher & Scott Galloway',
         coverType: 'jpeg',
         // style: 'blue',
@@ -92,9 +74,7 @@ const allPods = {
     'founders': {
         name: "Founder's Journal",
         id: 'founders',
-        link: {
-            applePod: 'id1509276485'
-        },
+        applePod: '1509276485',
         author: 'Alex Lieberman',
         coverType: 'jpeg',
         // style: 'blue',
@@ -102,9 +82,7 @@ const allPods = {
     'waveform': {
         name: 'Waveform',
         id: 'waveform',
-        link: {
-            youtube: 'Waveform'
-        },
+        youtube: 'Waveform',
         author: 'Marques Brownlee',
         coverType: 'jpeg',
         style: 'red',
@@ -112,9 +90,7 @@ const allPods = {
     'lex': {
         name: 'Lex Fridman Podcast',
         id: 'lex',
-        link: {
-            youtube: 'lexfridman'
-        },
+        youtube: 'lexfridman',
         author: 'Lex Fridman',
         coverType: 'jpeg',
         // style: 'secondary',
@@ -122,9 +98,7 @@ const allPods = {
     'acquired': {
         name: 'Acquired',
         id: 'acquired',
-        link: {
-            applePod: 'id1050462261'
-        },
+        applePod: '1050462261',
         author: 'Ben Gilbert & David Rosenthal',
         coverType: 'jpeg',
         style: 'secondary',
@@ -132,18 +106,14 @@ const allPods = {
     'giants': {
         name: 'Land of the Giants',
         id: 'giants',
-        link: {
-            applePod: 'id1465767420'
-        },
+        applePod: '1465767420',
         author: 'Recode',
         coverType: 'jpeg',
     },
     'flagrant': {
         name: 'Flagrant 2',
         id: 'flagrant',
-        link: {
-            youtube: 'Flagrant2'
-        },
+        youtube: 'Flagrant2',
         author: 'Andrew Schulz & Aakash Singh',
         coverType: 'jpeg',
         style: 'red',
@@ -151,14 +121,45 @@ const allPods = {
     'canto': {
         name: 'Learn Cantonese',
         id: 'canto',
-        link: {
-            applePod: 'id1513774818'
-        },
+        applePod: '1513774818',
         author: 'Poetic Cantonese',
         coverType: 'jpeg',
         // style: 'blue',
     },
 }
+
+for (const key in allPods) {
+    const pod = allPods[key]
+    if (!pod.link) pod.link = processBookPodLink(pod)
+}
+
+function processBookPodLink(item) {
+    if (item.youtube) return `https://www.youtube.com/c/${item.youtube}/videos`
+    else if (item.applePod) return `https://podcasts.apple.com/podcast/id${item.applePod}`
+    else if (item.audible) return `audible://view?section=discover&asin=${linkItem.audible}`
+    else return item.link
+
+    if (linkItem.netflix) {
+        return `https://www.netflix.com/title/${linkItem.netflix}`
+    } else if (linkItem.amazon) {
+        return linkItem.amazon
+    } else if (linkItem.applePod) {
+        return `https://podcasts.apple.com/podcast/${linkItem.applePod}`
+    } else if (linkItem.youtube) {
+        return `https://www.youtube.com/c/${linkItem.youtube}/videos`
+    } else if (linkItem.primeVideo) {
+        // return `https://watch.amazon.com/detail?asin=${linkItem.primeVideo}`
+        return `primevideo://detail?asin=${linkItem.primeVideo}`
+    } else if (linkItem.audible) {
+        return `audible://view?section=discover&asin=${linkItem.audible}`
+    } else {
+        return linkItem
+    }
+}
+
+
+
+
 
 // top
 const podData0 = [

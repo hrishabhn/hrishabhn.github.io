@@ -62,9 +62,7 @@ const allBooks = {
     'faster': {
         name: 'Faster Than Normal',
         id: 'faster',
-        link: {
-            audible: 'B0763VPQF6',
-        },
+        audible: 'B0763VPQF6',
         author: 'Peter Shankman',
         coverType: 'jpg',
         progress: '3h 0m left',
@@ -104,9 +102,7 @@ const allBooks = {
     'ride': {
         name: 'The Ride of a Lifetime',
         id: 'ride',
-        link: {
-            audible: '0525499334',
-        },
+        audible: '0525499334',
         author: 'Robert Iger',
         coverType: 'jpg',
         progress: '4h 39m left',
@@ -116,9 +112,7 @@ const allBooks = {
     'martian': {
         name: 'The Martian',
         id: 'martian',
-        link: {
-            audible: 'B082BHJMFF',
-        },
+        audible: 'B082BHJMFF',
         author: 'Andy Weir',
         coverType: 'jpg',
         progress: '29%',
@@ -208,9 +202,7 @@ const allBooks = {
     'homodeus': {
         name: 'Homo Deus',
         id: 'homodeus',
-        link: {
-            audible: 'B01N4DCBK6',
-        },
+        audible: 'B01N4DCBK6',
         author: 'Yuval Noah Harari',
         coverType: 'jpg',
         progress: 'FINISHED',
@@ -230,9 +222,7 @@ const allBooks = {
     'sapiens': {
         name: 'Sapiens',
         id: 'sapiens',
-        link: {
-            audible: 'B0741G911Q',
-        },
+        audible: 'B0741G911Q',
         author: 'Yuval Noah Harari',
         coverType: 'jpg',
         progress: 'FINISHED',
@@ -252,9 +242,7 @@ const allBooks = {
     'hitchhiker': {
         name: "The Hitchhiker's Guide to the Galaxy",
         id: 'hitchhiker',
-        link: {
-            audible: 'B002VA9SWS',
-        },
+        audible: 'B002VA9SWS',
         author: 'Douglas Adams',
         coverType: 'jpg',
         progress: 'FINISHED',
@@ -292,6 +280,10 @@ const allBooks = {
     },
 }
 
+for (const key in allBooks) {
+    const book = allPods[key]
+    if (!book.link) book.link = processBookPodLink(book)
+}
 
 const bookData0 = [
     allBooks.project,
