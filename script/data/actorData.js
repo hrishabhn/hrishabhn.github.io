@@ -18,7 +18,7 @@ const actorData = {
     'Elizabeth Lail': 'https://www.thewikifeed.com/wp-content/uploads/2021/06/elizabeth-lail-1.jpg',
     'Shay Mitchell': 'https://media.self.com/photos/603d499db090d0bf156c1013/1:1/w_2332,h_2332,c_limit/1205249363',
     'Justin Roiland': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Justin_Roiland_%2836434635662%29.jpg/1200px-Justin_Roiland_%2836434635662%29.jpg',
-    'Thomas Middlditch': 'https://m.media-amazon.com/images/M/MV5BMTkwNjMwMDAzN15BMl5BanBnXkFtZTgwOTU3NjMwMTE@._V1_.jpg',
+    'Thomas Middleditch': 'https://m.media-amazon.com/images/M/MV5BMTkwNjMwMDAzN15BMl5BanBnXkFtZTgwOTU3NjMwMTE@._V1_.jpg',
     'Sean Giambrone': 'https://pbs.twimg.com/profile_images/1058413246015631360/R87z0r6T.jpg',
     'Mary Mack': 'https://m.media-amazon.com/images/M/MV5BNzE3ZWM5MDgtMDY0NC00NTZiLTk1YjYtNDg1ZmM1MzM1YTMyXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg',
     'John Cho': 'https://m.media-amazon.com/images/M/MV5BMjM4Nzk2NjUxNF5BMl5BanBnXkFtZTgwMzY3NDI2MTI@._V1_.jpg',

@@ -455,9 +455,9 @@
 
     font-size: 10px;
     font-weight: 500;
-    opacity: 0.8;
     background-color: var(--white-10);
     color: white;
+    fill: white;
 }
 
 .media-card.movie.big .more .icon {

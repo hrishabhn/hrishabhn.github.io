@@ -12,7 +12,7 @@ function loadApp() {
     // Testing
     // skipToContent()
     // addModalLayer(workoutCard())
-    // showTVDetail('fargo')
+    // showTVDetail('silicon')
     // castJSONStr(0,0)
 
     // busTest()

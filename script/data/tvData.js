@@ -30,9 +30,47 @@ const allMovies = {
         apps: {
             // tvTimeID: 'identifier',
             reelgoodLink: 'https://reelgood.com/show/silicon-valley-2014',
-            // imdbID: 'identifier',
+            imdbID: 'tt2575988',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'Thomas Middleditch',
+                char: 'Richard Hendricks',
+            },
+            {
+                actor: 'T.J. Miller',
+                char: 'Erlich Bachman',
+            },
+            {
+                actor: 'Martin Starr',
+                char: 'Bertram Gilfoyle',
+            },
+            {
+                actor: 'Kumail Nanjiani',
+                char: 'Dinesh Chugtai',
+            },
+            {
+                actor: 'Zach Woods',
+                char: "Donald 'Jared' Dunn",
+            },
+            {
+                actor: 'Amanda Crew',
+                char: 'Monica Hall',
+            },
+            {
+                actor: 'Josh Brener',
+                char: "Nelson 'Big Head' Bighetti",
+            },
+            {
+                actor: 'Matt Ross',
+                char: 'Gavin Belson',
+            },
+            {
+                actor: 'Jimmy O. Yang',
+                char: 'Jian Yang',
+            },
+        ],
     },
     'himyf': {
         name: 'How I Met Your Father',
@@ -143,7 +181,7 @@ const allMovies = {
             service: 'hbo',
             studio: 'fx',
             location: 'HBO Max',
-            date: '10 Mar, 2022 10:00:00',
+            date: '17 Mar, 2022 10:00:00',
             desc: {
                 seasons: 5,
                 yearStart: 2017,
@@ -339,6 +377,16 @@ const allMovies = {
             imdbID: 'tt12005128',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'Jared Leto',
+                char: 'Adam Neumann',
+            },
+            {
+                actor: 'Anne Hathaway',
+                char: 'Rebekah Neumann',
+            },
+        ],
     },
     'drive': {
         name: 'Formula 1: Drive to Survive',
@@ -2476,7 +2524,7 @@ const allMovies = {
                 char: 'Korvo',
             },
             {
-                actor: 'Thomas Middlditch',
+                actor: 'Thomas Middleditch',
                 char: 'Terry',
             },
             {
@@ -5289,7 +5337,7 @@ const allMovies = {
                 char: 'Nick Young',
             },
             {
-                actor: ' Michelle Yeoh',
+                actor: 'Michelle Yeoh',
                 char: 'Eleanor Young',
             },
             {

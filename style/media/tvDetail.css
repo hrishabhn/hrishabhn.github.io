@@ -272,7 +272,7 @@
 
 .tv-detail-card .cast .actor .textbox { 
     flex-direction: column;
-    width: 100%;
+    width: 120px;
     margin-top: 8px;
 }
 .tv-detail-card .cast .actor .textbox p{
