@@ -8,6 +8,7 @@ function loadApp() {
     spotlightLoad()
     bodyLoad()
 
+    paramsLoad()
 
     // Testing
     // skipToContent()
@@ -21,6 +22,16 @@ function loadApp() {
 
     // addModalLayer(tripCard('tenerife'))
 }
+
+function paramsLoad() {
+    const params = new URLSearchParams(window.location.search)
+    if (params.get('q')) {
+        let q = params.get('q')
+        document.getElementById('spotlight').value = q
+        spotlightRun(q)
+    }
+}
+
 
 function bodyLoad() {
     let focus = getFocus()
