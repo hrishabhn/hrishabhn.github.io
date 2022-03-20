@@ -72,13 +72,11 @@ let budgetData = [
     { "amount": 8, "name": "Lunch", "category": "Food", "date": "2022-03-17T14:29:00+01:00" },
     { "amount": 1.25, "name": "Beer", "category": "Drinks", "date": "2022-03-17T17:05:00+01:00" },
     { "amount": 15.84, "name": "Sushi", "category": "Food", "date": "2022-03-17T00:00:00+01:00" },
-
     { "amount": 11.5, "name": "Pres", "category": "Drinks", "date": "2022-03-17T22:00:00+01:00" },
     { "amount": 25, "name": "Teatro Kapital", "category": "Drinks", "date": "2022-03-17T23:59:00+01:00" },
     { "amount": 15, "name": "Dinner", "category": "Food", "date": "2022-03-18T22:02:00+01:00" },
     { "amount": 8, "name": "Pres", "category": "Drinks", "date": "2022-03-18T23:46:00+01:00" },
     { "amount": 26, "name": "Bule Bule", "category": "Drinks", "date": "2022-03-18T23:59:00+01:00" },
     { "amount": 11, "name": "Lunch", "category": "Food", "date": "2022-03-19T14:49:00+01:00" },
-
-
+    { "amount": 21.15, "name": "Grocery", "category": "Grocery", "date": "2022-03-20T00:00:00+01:00" },
 ]
