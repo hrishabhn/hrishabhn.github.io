@@ -393,7 +393,15 @@ const appData = {
             accent: null,
             distract: true,
         },
-        commonApps.youtube('YouTube', 'https://www.youtube.com', 'Watch Videos')
+        commonApps.youtube('YouTube', 'https://www.youtube.com', 'Watch Videos'),
+        {
+            name: 'Feedly',
+            link: 'https://feedly.com/i/collection/content/user/a21f4f90-2ac3-4d5b-884f-8b5484ecd33c/category/7e61f497-937a-4423-a312-d71006ee098f',
+            desc: 'YouTube Feed',
+            thumb: 'feedly.jpeg',
+            // accent: 'e50914',
+            distract: true,
+        },
     ],
     'read': [
         {
