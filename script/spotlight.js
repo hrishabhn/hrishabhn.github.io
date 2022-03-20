@@ -65,9 +65,10 @@ function spotlightRun(e) {
                 // searchCalRow(searchCal(q)),
                 movies.searchRow(q),
                 actors.searchRow(q),
-                // searchBookPodBig(['decoder'], 'pod'),
+                // searchBookPodNewRow(books.search(q), 'Books', 'book'),
                 books.searchRow(q),
                 pods.searchRow(q),
+                // searchBookPodBig(['decoder'], 'pod'),
             ]
 
             let i = 0

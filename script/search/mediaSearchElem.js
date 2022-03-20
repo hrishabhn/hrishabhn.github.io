@@ -1,47 +1,3 @@
-
-// function searchBookPodBig(key, type) {
-//     let allData
-//     let folder
-//     if (type == 'book') {
-//         allData = allBooks
-//         folder = 'books'
-//     } else if (type == 'pod') {
-//         allData = allPods
-//         folder = 'podcasts'
-//     }
-//     const item = allData[key]
-//     // const item = {
-//     //     id: 'cars',
-//     //     coverType: 'png',
-//     // }
-//     // card
-//     let card = document.createElement('div')
-//     card.classList = 'book-pod-big card-shadow'
-
-//     let bg = bgElement()
-//     bg.style.setProperty('background-image', `url(./media-image/${folder}/${item.id}.${item.coverType})`)
-
-//     let blur = document.createElement('div')
-//     blur.classList = 'blur'
-
-//     let thumb = thumbBase(`./media-image/${folder}/${item.id}.${item.coverType}`)
-
-//     let text = textboxBase(item.name, item.author)
-//     text.lastChild.classList.add('indigo-fg')
-
-
-//     // card.append(bg)
-//     // card.append(blur)
-//     card.append(thumb)
-//     card.append(text)
-
-//     return card
-// }
-
-
-
-
-
 // movie
 
 function searchMoviesNewRow(results, title, size) {
@@ -117,7 +73,7 @@ function searchMoviesNewRow(results, title, size) {
         // med card
         if (med) {
             card.classList.remove('clickable-o')
-            card = movieMedCard(card, key)
+            card = mediaDetailCard(card, processDesc(movie, 'genre'), movie.name, movie.info.summary)
         }
 
         // links
@@ -149,31 +105,26 @@ function movieCardTitle(key) {
     return box
 }
 
-function movieMedCard(small, key) {
-    const movie = allMovies[key]
+function mediaDetailCard(thumb, genre, name, summary) {
+    if (genre || name || summary) {
+        let card = document.createElement('a')
+        card.classList = 'media-detail clickable-o'
 
-    let card = document.createElement('div')
-    card.classList = 'movie-small-detail clickable-o'
+        let detail = document.createElement('div')
+        detail.classList = 'detail'
 
-    let detail = mediaCardDetail(processDesc(movie, 'genre'), movie.name, movie.info.summary)
-    detail.classList = 'detail'
+        if (genre) {
+            let genreElem = pElement(genre)
+            genreElem.classList = 'genre'
+            detail.append(genreElem)
+        }
+        if (name) detail.append(titleElement(name))
+        if (summary) detail.append(descElement(summary))
 
-    card.append(small)
-    card.append(detail)
-    return card
-}
-
-function mediaCardDetail(genre, name, summary) {
-    let card = document.createElement('div')
-    card.classList = 'detail'
-
-    let genreElem = pElement(genre)
-    genreElem.classList = 'genre'
-
-    card.append(genreElem)
-    card.append(titleElement(name))
-    card.append(descElement(summary))
-    return card
+        card.append(thumb)
+        card.append(detail)
+        return card
+    } else return thumb
 }
 
 function searchMoviesRow(results, title) {
@@ -349,6 +300,110 @@ function searchBookPodRow(results, title, type) {
     row.append(trayWithKids(nodes))
     return row
 }
+
+function searchBookPodNewRow(results, title, type) {
+    let row = rowBase(title)
+    let nodes = []
+
+    // process type
+    let allData
+    let folder
+    if (type == 'book') {
+        allData = allBooks
+        folder = 'books'
+    } else if (type == 'pod') {
+        allData = allPods
+        folder = 'podcasts'
+    }
+
+    let med = false
+    if (results.length < 5) {
+        med = true
+    }
+
+    for (const key of results) {
+        const item = allData[key]
+
+        // base card
+        let card = document.createElement('a')
+        card.classList = `media-card ${type} clickable-o`
+
+        let thumb = thumbBase(`./media-image/${folder}/${item.id}.${item.coverType}`)
+        card.append(thumb)
+
+
+        if ((item.progress) && (item.progress != 'NEW')) card.append(mediaTimeElem(item.progress))
+        if (!!parseFloat(item.progress)) thumb.append(mediaProgressBarElem(parseFloat(item.progress)))
+
+
+
+
+        // if (movie.info.date) card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
+        // if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
+
+        // // size
+        // if (small) card.classList.add('small')
+        // else if (big) card.classList.add('big')
+
+        // // thumb
+        // let thumb
+        // if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.posterType}`)
+        // else if (big) {
+        //     thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
+        //     thumb.style.setProperty('aspect-ratio', movie.style.mobileSize)
+        //     thumbCont = document.createElement('div')
+        //     thumbCont.classList = 'thumb-cont'
+
+        //     thumbCont.append(thumb)
+        // }
+        // thumb.append(gradElement())
+
+        // if (small) card.append(thumb)
+        // else if (big) card.append(thumbCont)
+
+        // // title
+        // card.append(movieCardTitle(key))
+
+        // // textbox
+        // if (big) {
+        //     card.append(textboxBase(null, processDesc(movie)))
+
+        //     let more = document.createElement('a')
+        //     more.classList = 'more'
+        //     more.append(pElement('MORE'))
+        //     more.append(growElement())
+        //     more.append(iconElement(iconData.more))
+
+        //     card.append(more)
+        // }
+
+        // med card
+        if (med) {
+            card.classList.remove('clickable-o')
+            if (type == 'pod')       card = mediaDetailCard(card, item.name, item.title, item.summary ?? null)
+            else if (type == 'book') card = mediaDetailCard(card, item.author, item.name, item.summary ?? null)
+        }
+
+        // // links
+        // card.onclick = function () { showTVDetail(key) }
+        // // card.oncontextmenu = function (e) {
+        // //     e.preventDefault()
+        // //     contextModalShow([movieApps(movieData[i, j])], e)
+        // // }
+        // card.onclick = function () { window.open(item.link, '_blank') }
+        card.href = item.link
+        card.target = '_blank'
+
+
+        nodes.push(card)
+    }
+
+    row.append(trayWithKids(nodes, 4))
+    return row
+}
+
+
+
 
 // shared
 function mediaNewOrSoon(dateStr) {

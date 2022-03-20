@@ -39,7 +39,7 @@ let budgetData = [
     { "amount": 1.1, "name": "Breakfast", "category": "Food", "date": "2022-03-05T09:32:00+01:00" },
     { "amount": 2.5, "name": "Beer", "category": "Drinks", "date": "2022-03-05T04:07:00+01:00" },
     { "amount": 8.49, "name": "KFC", "category": "Food", "date": "2022-03-05T18:37:00+01:00" },
-    { "amount": 45.5, "name": "Bule Bule", "category": "Drinks", "date": "2022-03-05T11:59:00+01:00" },
+    { "amount": 45.5, "name": "Bule Bule", "category": "Drinks", "date": "2022-03-05T23:59:00+01:00" },
 
     { "amount": 2.2, "name": "Breakfast", "category": "Food", "date": "2022-03-07T10:18:32+01:00" },
     { "amount": 37.7, "name": "Chinese Grocery", "category": "Grocery", "date": "2022-03-07T00:00:00+01:00" },
@@ -73,5 +73,10 @@ let budgetData = [
     { "amount": 1.25, "name": "Beer", "category": "Drinks", "date": "2022-03-17T17:05:00+01:00" },
     { "amount": 15.84, "name": "Sushi", "category": "Food", "date": "2022-03-17T00:00:00+01:00" },
 
-
+    { "amount": 11.5, "name": "Pres", "category": "Drinks", "date": "2022-03-17T22:00:00+01:00" },
+    { "amount": 25, "name": "Teatro Kapital", "category": "Drinks", "date": "2022-03-17T23:59:00+01:00" },
+    { "amount": 15, "name": "Dinner", "category": "Food", "date": "2022-03-18T22:02:00+01:00" },
+    { "amount": 8, "name": "Pres", "category": "Drinks", "date": "2022-03-18T23:46:00+01:00" },
+    { "amount": 26, "name": "Bule Bule", "category": "Drinks", "date": "2022-03-18T23:59:00+01:00" },
+    { "amount": 11, "name": "Lunch", "category": "Food", "date": "2022-03-19T14:49:00+01:00" },
 ]
