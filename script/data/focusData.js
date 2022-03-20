@@ -26,18 +26,17 @@ let focusData = [
             distract: true,
             trays: function () {
                 return [
-                    // searchMoviesRow(searchMovies(''),'TV & Movies'),
-                    searchMoviesNewRow(rowMovies(0), 'Up next', 'big'),
-                    searchMoviesNewRow(rowMovies(1), 'My list', 'smart'),
-                    searchMoviesNewRow(rowMovies(2), 'Recent', 'small'),
-                    searchMoviesNewRow(rowMovies(3), 'Movies', 'big'),
-                    searchMoviesRow(rowMovies(4), 'New'),
-                    searchMoviesRow(rowMovies(5), 'Paused'),
-                    searchMoviesNewRow(rowMovies(6), 'Coming Soon', 'smart'),
-                    searchMoviesRow(rowMovies(7), 'Up to Date'),
-                    searchMoviesRow(rowMovies(8), 'Finished'),
-                    searchMoviesRowBig(rowMovies(9), 'Classic Movies'),
-                    searchMoviesRowBig(rowMovies(10), 'Recent Movies'),
+                    movies.rows[0].elem.big,
+                    movies.rows[1].elem.smart,
+                    movies.rows[2].elem.small,
+                    movies.rows[3].elem.big,
+                    movies.rows[4].elem.oldSmall,
+                    movies.rows[5].elem.oldSmall,
+                    movies.rows[6].elem.smart,
+                    movies.rows[7].elem.oldSmall,
+                    movies.rows[8].elem.oldSmall,
+                    movies.rows[9].elem.oldBig,
+                    movies.rows[10].elem.oldBig,
                 ]
             },
         },
@@ -51,10 +50,10 @@ let focusData = [
             distract: false,
             trays: function () {
                 return [
-                    searchBookPodRow(rowBooks(0), 'Reading Now', 'book'),
-                    searchBookPodRow(rowBooks(1), 'Paused', 'book'),
-                    searchBookPodRow(rowBooks(2), 'To Read', 'book'),
-                    searchBookPodRow(rowBooks(3), 'Finished', 'book'),
+                    books.data[0].elem,
+                    books.data[1].elem,
+                    books.data[2].elem,
+                    books.data[3].elem,
                 ]
             },
         },
@@ -68,11 +67,11 @@ let focusData = [
             distract: false,
             trays: function () {
                 return [
-                    searchBookPodRow(rowPods(0), 'Top', 'pod'),
-                    searchBookPodRow(rowPods(1), 'Business & Economics', 'pod'),
-                    searchBookPodRow(rowPods(2), 'Technology', 'pod'),
-                    searchBookPodRow(rowPods(3), 'Stories', 'pod'),
-                    searchBookPodRow(rowPods(4), 'Other', 'pod'),
+                    pods.data[0].elem,
+                    pods.data[1].elem,
+                    pods.data[2].elem,
+                    pods.data[3].elem,
+                    pods.data[4].elem,
                 ]
             },
         },

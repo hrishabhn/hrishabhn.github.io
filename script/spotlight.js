@@ -63,11 +63,11 @@ function spotlightRun(e) {
                 searchAppsRow(searchApps(q, appData['design']), 'Social Media Pages'),
                 searchAppsRow(searchApps(q, appData['worldClock']), 'World Clock'),
                 // searchCalRow(searchCal(q)),
-                // searchMoviesRow(searchMovies(q), 'TV & Movies'),
-                searchMoviesNewRow(searchMovies(q), 'TV & Movies', 'smart'),
-                searchActorsRow(searchActors(q)),
-                searchBookPodRow(searchBooks(q), 'Books', 'book'),
-                searchBookPodRow(searchPods(q), 'Podcasts', 'pod'),
+                movies.searchRow(q),
+                actors.searchRow(q),
+                // searchBookPodBig(['decoder'], 'pod'),
+                books.searchRow(q),
+                pods.searchRow(q),
             ]
 
             let i = 0

@@ -1,26 +1,48 @@
-function rowMovies(i) {
-    let results = []
-    for (const movie of movieData[i]) results.push(movie.id)
-    return results
-}
-function searchMovies(q) {
-    let results = []
 
-    for (const tray of movieData) for (const movie of tray) if (results.length < len) {
-        const key = movie.id
+// function searchBookPodBig(key, type) {
+//     let allData
+//     let folder
+//     if (type == 'book') {
+//         allData = allBooks
+//         folder = 'books'
+//     } else if (type == 'pod') {
+//         allData = allPods
+//         folder = 'podcasts'
+//     }
+//     const item = allData[key]
+//     // const item = {
+//     //     id: 'cars',
+//     //     coverType: 'png',
+//     // }
+//     // card
+//     let card = document.createElement('div')
+//     card.classList = 'book-pod-big card-shadow'
 
-        const name = allMovies[key].name.toUpperCase().includes(q)
-        let cast = false
-        let tags = false
+//     let bg = bgElement()
+//     bg.style.setProperty('background-image', `url(./media-image/${folder}/${item.id}.${item.coverType})`)
 
-        if (movie.cast) for (const actor of movie.cast) if ((actor.actor.toUpperCase().includes(q)) || (actor.char.toUpperCase().includes(q))) cast = true
-        if (movie.info.tags) for (const tag of movie.info.tags) if (tag.toUpperCase().includes(q)) tags = true
+//     let blur = document.createElement('div')
+//     blur.classList = 'blur'
 
-        if ((name || cast || tags) && !results.includes(key)) results.push(key)
-    }
+//     let thumb = thumbBase(`./media-image/${folder}/${item.id}.${item.coverType}`)
 
-    return results
-}
+//     let text = textboxBase(item.name, item.author)
+//     text.lastChild.classList.add('indigo-fg')
+
+
+//     // card.append(bg)
+//     // card.append(blur)
+//     card.append(thumb)
+//     card.append(text)
+
+//     return card
+// }
+
+
+
+
+
+// movie
 
 function searchMoviesNewRow(results, title, size) {
     let row = rowBase(title)
@@ -71,7 +93,6 @@ function searchMoviesNewRow(results, title, size) {
 
             thumbCont.append(thumb)
         }
-
         thumb.append(gradElement())
 
         if (small) card.append(thumb)
@@ -252,12 +273,9 @@ function searchMoviesRowBig(results, title) {
     return row
 }
 
-function searchActors(q) {
-    let results = []
-    for (const tray of movieData) for (const movie of tray) if (movie.cast)
-        for (const actor of movie.cast) if (actor.actor.toUpperCase().includes(q)) if (!results.includes(actor.actor)) results.push(actor.actor)
-    return results
-}
+
+
+// actor
 
 function searchActorsRow(results) {
     let row = rowBase('Actors')
@@ -270,8 +288,8 @@ function searchActorsRow(results) {
         let image = document.createElement('div')
         image.classList = 'image layer-1 clickable-o'
 
-        if (actorData[actor]) {
-            image.style.setProperty('background-image', `url(${actorData[actor]})`)
+        if (actors.data[actor]) {
+            image.style.setProperty('background-image', `url(${actors.data[actor]})`)
         } else {
             let str = ''
             for (const word of actor.split(' ')) {
@@ -290,77 +308,7 @@ function searchActorsRow(results) {
     return row
 }
 
-function trayWithKids(nodes, spacing) {
-    let tray = trayBase()
-    tray.classList.add('unpad')
-
-    if (nodes[0]) {
-        tray.append(spacerElement(20))
-        for (const node of nodes) {
-            tray.append(node)
-            tray.append(spacerElement(spacing ?? 12))
-        }
-        tray.lastChild.remove()
-        tray.append(spacerElement(20))
-    }
-
-    return tray
-}
-
-
-function mediaNewOrSoon(dateStr) {
-    let date = new Date(dateStr)
-
-    let future = (new Date()) < new Date(date)
-
-    if (future) {
-        let result = countdownProcess(date, 'short')
-
-        return `${result.num} ${result.word.toUpperCase()}`
-    } else { return 'NEW' }
-}
-function mediaTimeElem(str) {
-    let elem = document.createElement('div')
-    elem.classList = 'media-data'
-    elem.innerHTML = str
-    return elem
-}
-
-
-
-
-
-
-
-function rowBooks(i) {
-    let results = []
-    for (const book of bookData[i]) results.push(book.id)
-    return results
-}
-function rowPods(i) {
-    let results = []
-    for (const pod of podData[i]) results.push(pod.id)
-    return results
-}
-
-function searchBooks(q) {
-    let results = []
-    for (const tray of bookData) for (const book of tray) {
-        const name = book.name.toUpperCase().includes(q)
-        if (name) results.push(book.id)
-    }
-    return results
-}
-function searchPods(q) {
-    let results = []
-    for (const tray of podData) for (const pod of tray) {
-        const name = pod.name.toUpperCase().includes(q)
-        if (name) results.push(pod.id)
-    }
-    return results
-}
-
-
+// bookpod
 function searchBookPodRow(results, title, type) {
     let row = rowBase(title)
     let nodes = []
@@ -401,6 +349,27 @@ function searchBookPodRow(results, title, type) {
     row.append(trayWithKids(nodes))
     return row
 }
+
+// shared
+function mediaNewOrSoon(dateStr) {
+    let date = new Date(dateStr)
+
+    let future = (new Date()) < new Date(date)
+
+    if (future) {
+        let result = countdownProcess(date, 'short')
+
+        return `${result.num} ${result.word.toUpperCase()}`
+    } else { return 'NEW' }
+}
+
+function mediaTimeElem(str) {
+    let elem = document.createElement('div')
+    elem.classList = 'media-data'
+    elem.innerHTML = str
+    return elem
+}
+
 function mediaProgressBarElem(progress) {
     let elem = document.createElement('div')
     elem.classList = 'progress'

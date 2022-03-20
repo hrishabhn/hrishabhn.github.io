@@ -89,7 +89,6 @@ function calendarCard() {
 
 
 function futureCardElem(data) {
-    console.log(data.events)
     let menuData = []
 
     for (const event of data.events) {

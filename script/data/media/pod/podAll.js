@@ -133,70 +133,6 @@ for (const key in allPods) {
     if (!pod.link) pod.link = processBookPodLink(pod)
 }
 
-function processBookPodLink(item) {
-    if (item.youtube) return `https://www.youtube.com/c/${item.youtube}/videos`
-    else if (item.applePod) return `https://podcasts.apple.com/podcast/id${item.applePod}`
-    else if (item.audible) return `audible://view?section=discover&asin=${item.audible}`
-    else return item.link
-
-    if (linkItem.netflix) {
-        return `https://www.netflix.com/title/${linkItem.netflix}`
-    } else if (linkItem.amazon) {
-        return linkItem.amazon
-    } else if (linkItem.applePod) {
-        return `https://podcasts.apple.com/podcast/${linkItem.applePod}`
-    } else if (linkItem.youtube) {
-        return `https://www.youtube.com/c/${linkItem.youtube}/videos`
-    } else if (linkItem.primeVideo) {
-        // return `https://watch.amazon.com/detail?asin=${linkItem.primeVideo}`
-        return `primevideo://detail?asin=${linkItem.primeVideo}`
-    } else if (linkItem.audible) {
-        return `audible://view?section=discover&asin=${linkItem.audible}`
-    } else {
-        return linkItem
-    }
-}
-
-
-
-
-
-// top
-const podData0 = [
-    allPods.decoder,
-    allPods.vergecast,
-]
-
-// business podcasts
-const podData1 = [
-    allPods.sway,
-    allPods.businessCasual,
-    allPods.intelligence,
-    allPods.pivot,
-    allPods.forward,
-    allPods.inet,
-    allPods.profg,
-    allPods.founders,
-]
-
-// tech podcasts
-const podData2 = [
-    allPods.waveform,
-    allPods.lex,
-]
-
-// story podcasts
-const podData3 = [
-    allPods.acquired,
-    allPods.giants,
-]
-
-// other podcasts
-const podData4 = [
-    allPods.flagrant,
-    allPods.canto,
-]
-
 // const podDataArchive = [
 //     // {
 //     //     name: 'Economist Radio',
@@ -213,11 +149,3 @@ const podData4 = [
 //     //     coverType: 'jpeg',
 //     // },
 // ]
-
-const podData = [
-    podData0,
-    podData1,
-    podData2,
-    podData3,
-    podData4,
-]

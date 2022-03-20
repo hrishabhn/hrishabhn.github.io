@@ -186,8 +186,8 @@ function tvDetail(key) {
             image.href = googleSearch(data.actor)
             image.target = '_blank'
 
-            if (actorData[data.actor]) {
-                image.style.setProperty('background-image', `url(${actorData[data.actor]})`)
+            if (actors.data[data.actor]) {
+                image.style.setProperty('background-image', `url(${actors.data[data.actor]})`)
             } else {
                 let str = ''
                 for (const word of data.actor.split(' ')) {
