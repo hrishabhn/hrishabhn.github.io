@@ -49,11 +49,11 @@ function topbarMiddle() {
 
     const topbarApps = [
         {
-            name: 'Outlook',
-            link: 'ms-outlook://',
+            name: 'Spark',
+            link: 'readdle-spark://',
             desc: 'Email',
-            icon: iconData.outlook,
-            accent: '0078d4',
+            icon: iconData.mail,
+            style: 'blue',
             distract: false,
         },
         {
