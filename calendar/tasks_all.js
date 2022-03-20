@@ -1,4 +1,7 @@
 let tasks_all = [
+	'SoFi HK',
 	'Firebase',
-	'Check 17nikarnisinai account',
+	'Check WIS account',
+	'Paypal',
+	'Grocery',
 ]
