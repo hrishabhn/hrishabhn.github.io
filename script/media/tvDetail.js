@@ -16,7 +16,6 @@ function hideTVDetail() {
     tvModal.classList.remove('open')
 }
 
-
 function tvDetail(key) {
     let movie = allMovies[key]
     let card = document.createElement('div')
@@ -24,6 +23,7 @@ function tvDetail(key) {
 
     card.append(bgElement(movie.style.color))
 
+    // desktop thumb
     let wide = document.createElement('div')
     wide.classList = 'fill-width wide-thumb'
 
@@ -31,8 +31,8 @@ function tvDetail(key) {
     wide.append(gradElement())
     card.append(wide)
 
+    // mobile thumb
     if (movie.style.mobileType) {
-
         let tall = document.createElement('div')
         tall.classList = 'fill-width tall-thumb only-mobile'
 
@@ -55,6 +55,7 @@ function tvDetail(key) {
         card.style.setProperty('margin', '0 50px')
     }
 
+    // title, desc, play button
     let info = textboxBase(movie.name, processDesc(movie))
     info.firstChild.classList.add('hidden-mobile')
     info.classList = 'info'
@@ -63,16 +64,16 @@ function tvDetail(key) {
     play.classList = 'play clickable'
     if (movie.link) play.href=`${processLink(movie.link)}`
 
-
     info.firstChild.after(play)
 
+    // summary
     if (movie.info.summary) {
         let sum = pElement(movie.info.summary)
         sum.classList = 'summary'
         info.append(sum)
     }
 
-
+    // apps
     let tray = document.createElement('div')
     tray.classList = 'tray'
 
@@ -168,6 +169,8 @@ function tvDetail(key) {
     card.append(info)
     card.append(growElement())
 
+
+    // cast
     if (movie.cast) {
         let cast = document.createElement('div')
         cast.classList = 'cast layer-0 primary-fg'
