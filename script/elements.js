@@ -22,7 +22,7 @@ function scrollEmbed(html, margin) {
 // 
 
 function subtitleElement(title) {
-    var element = document.createElement('div')
+    var element = document.createElement('p')
     element.classList = 'sub-title'
     element.innerHTML = title
     return element
