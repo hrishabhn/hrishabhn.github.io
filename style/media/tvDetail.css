@@ -165,7 +165,7 @@
 .tv-detail-card .info{
     width: 100%;
     flex-direction: column;
-    padding: 15px 20px;
+    padding: 15px 20px 0;
     align-items: flex-start;
 }
 
@@ -212,9 +212,12 @@
 }
 
 .tv-detail-card .info .tray{
-    width: 100%;
-    margin-top: 12px;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+    padding-top: 12px;
+    padding-bottom: 15px;
     justify-content: flex-start;
+    overflow-x: scroll;
 }
 
 .tv-detail-card .info .tray .app{
