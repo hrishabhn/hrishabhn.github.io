@@ -180,39 +180,37 @@ function tvDetailCast(key) {
     cast.classList = 'cast layer-0 primary-fg'
 
     cast.append(titleElement('Cast'))
-    let tray = document.createElement('div')
+
+    let nodes = []
+    for (const data of movie.cast) nodes.push(actorCard(data.actor, data.char))
+
+    let tray = trayWithKids(nodes, 20)
     tray.classList = 'cast-tray'
-
-
-    for (const data of movie.cast) {
-        let card = document.createElement('div')
-        card.classList = 'actor'
-
-        let image = document.createElement('a')
-        image.classList = 'image layer-1 clickable'
-        image.href = googleSearch(data.actor)
-        image.target = '_blank'
-
-        if (actors.data[data.actor]) {
-            image.style.setProperty('background-image', `url(${actors.data[data.actor]})`)
-        } else {
-            let str = ''
-            for (const word of data.actor.split(' ')) {
-                str = str.concat(word[0])
-            }
-            image.innerHTML = str
-        }
-
-
-        card.append(image)
-        card.append(textboxBase(data.actor, data.char))
-
-        tray.append(spacerElement(20))
-        tray.append(card)
-    }
 
     cast.append(tray)
     cast.append(growElement())
 
     return cast
+}
+
+function actorCard(actor, char) {
+    let card = document.createElement('div')
+    card.classList = 'actor-card clickable-o'
+
+    let image = document.createElement('a')
+    image.classList = 'image layer-1'
+    image.href = googleSearch(actor)
+    image.target = '_blank'
+
+    if (actors.data[actor]) image.style.setProperty('background-image', `url(${actors.data[actor]})`)
+    else {
+        let str = ''
+        for (const word of actor.split(' ')) str = str.concat(word[0])
+        image.innerHTML = str
+    }
+
+    card.append(image)
+    card.append(textboxBase(actor, char ?? null))
+
+    return card
 }

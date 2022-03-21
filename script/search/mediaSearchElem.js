@@ -227,34 +227,10 @@ function searchMoviesRowBig(results, title) {
 
 
 // actor
-
 function searchActorsRow(results) {
     let row = rowBase('Actors')
     let nodes = []
-
-    for (const actor of results) {
-        let card = document.createElement('div')
-        card.classList = 'actor-card'
-
-        let image = document.createElement('div')
-        image.classList = 'image layer-1 clickable-o'
-
-        if (actors.data[actor]) {
-            image.style.setProperty('background-image', `url(${actors.data[actor]})`)
-        } else {
-            let str = ''
-            for (const word of actor.split(' ')) {
-                str = str.concat(word[0])
-            }
-            image.innerHTML = str
-        }
-
-        card.append(image)
-        card.append(textboxBase(actor, null))
-
-        nodes.push(card)
-    }
-
+    for (const actor of results) nodes.push(actorCard(actor, null))
     row.append(trayWithKids(nodes, 20))
     return row
 }
@@ -380,7 +356,7 @@ function searchBookPodNewRow(results, title, type) {
         // med card
         if (med) {
             card.classList.remove('clickable-o')
-            if (type == 'pod')       card = mediaDetailCard(card, item.name, item.title, item.summary ?? null)
+            if (type == 'pod') card = mediaDetailCard(card, item.name, item.title, item.summary ?? null)
             else if (type == 'book') card = mediaDetailCard(card, item.author, item.name, item.summary ?? null)
         }
 

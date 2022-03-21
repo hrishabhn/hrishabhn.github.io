@@ -263,10 +263,11 @@
 
 .actor-card{
     flex-direction: column;
+    width: 120px;
 }
 .actor-card .image{
-    height: 120px;
-    width: 120px;
+    width: 100%;
+    aspect-ratio: 1;
     border-radius: 100px;
 
     font-family: ui-rounded;
