@@ -2,8 +2,10 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
-            allMovies.elite,
+            allMovies.vir,
+            allMovies.severance,
             allMovies.silicon,
+            allMovies.elite,
         ],
     },
     {
@@ -12,13 +14,13 @@ let movieRaw = [
             allMovies.attack,
             allMovies.ozark,
             allMovies.peaky,
-            allMovies.drive,
             allMovies.tintin,
         ],
     },
     {
         name: 'Recent',
         data: [
+            allMovies.drive,
             allMovies.dontLookUp,
             allMovies.cowboy,
             allMovies.money,
@@ -44,7 +46,7 @@ let movieRaw = [
     {
         name: 'New',
         data: [
-            allMovies.vir,
+            allMovies.killingEve,
             allMovies.phil,
             allMovies.anna,
             allMovies.diabolical,
@@ -210,7 +212,6 @@ let movieRaw = [
 
 let soonMovies = [
     allMovies.snowfall,
-    allMovies.severance,
     allMovies.abbott,
     allMovies.wecrashed,
 ]

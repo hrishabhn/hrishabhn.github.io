@@ -77,7 +77,7 @@ function searchMoviesNewRow(results, title, size) {
         }
 
         // links
-        card.onclick = function () { showTVDetail(key) }
+        card.onclick = function () { movie.detail() }
         // card.oncontextmenu = function (e) {
         //     e.preventDefault()
         //     contextModalShow([movieApps(movieData[i, j])], e)
@@ -136,7 +136,7 @@ function searchMoviesRow(results, title) {
 
         let card = cardBase()
         card.classList.add('info-card', 'movie', 'clickable-o')
-        card.onclick = function () { showTVDetail(key) }
+        card.onclick = function () { movie.detail() }
         card.oncontextmenu = function (e) {
             e.preventDefault()
             contextModalShow([movieApps(movie)], e)
@@ -175,7 +175,7 @@ function searchMoviesRowBig(results, title) {
         let movie = allMovies[key]
 
         let card = cardBase()
-        card.onclick = function () { showTVDetail(key) }
+        card.onclick = function () { movie.detail() }
         card.oncontextmenu = function (e) {
             e.preventDefault()
             contextModalShow([movieApps(movie)], e)
@@ -385,7 +385,7 @@ function searchBookPodNewRow(results, title, type) {
         }
 
         // // links
-        // card.onclick = function () { showTVDetail(key) }
+        // card.onclick = function () { movie.detail() }
         // // card.oncontextmenu = function (e) {
         // //     e.preventDefault()
         // //     contextModalShow([movieApps(movieData[i, j])], e)

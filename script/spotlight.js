@@ -32,7 +32,9 @@ function spotlightRun(e) {
                     target.onclick()
                 }
             } else {
-                window.open(`https://www.google.com/search?q=${qOrig}`, '_self')
+                if (qOrig.startsWith('https://')) window.open(qOrig, '_self')
+                else window.open(`https://www.google.com/search?q=${qOrig}`, '_self')
+
                 // window.open(`https://neeva.com/search?q=${qOrig}`, '_self')
             }
         } else if (e.key == 'Tab') {

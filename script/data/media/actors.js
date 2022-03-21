@@ -5,7 +5,7 @@ const actors = {
             for (const actor of movie.cast) if (actor.actor.toUpperCase().includes(q)) if (!results.includes(actor.actor)) results.push(actor.actor)
         return results
     },
-    searchRow: function(q) {
+    searchRow: function (q) {
         return searchActorsRow(this.search(q))
     },
     data: {
@@ -139,5 +139,9 @@ const actors = {
         'Arian Moayed': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3WFnTYjfjgQv2suk-bbw1xdFXJuscoieuIs4QiSVANqSII5ik',
         'Jason Bateman': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW2fJ5ISNv4KYsnUn6YQENNKRAeeSE5nJB6gA6JIjOyE0gHh3F',
         'Laura Linney': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqg5F3mkT5xDP-kVQRpPQgN1MzFQ0aArkt1rutcVMe0eYMbyt',
+        'Jared Leto': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Jared_Leto%2C_San_Diego_Comic_Con_2016_%282%29.jpg/640px-Jared_Leto%2C_San_Diego_Comic_Con_2016_%282%29.jpg',
+        'Anne Hathaway': 'https://m.media-amazon.com/images/M/MV5BMTRhNzQ3NGMtZmQ1Mi00ZTViLTk3OTgtOTk0YzE2YTgwMmFjXkEyXkFqcGdeQXVyNzg5MzIyOA@@._V1_.jpg',
+        'Jodie Comer': 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Jodie_Comer_during_an_interview%2C_August_2021_%28cropped%29.png',
+        'Sandra Oh': 'https://m.media-amazon.com/images/M/MV5BMTMyNzYyNDE4MV5BMl5BanBnXkFtZTcwOTkxMDQ2NA@@._V1_.jpg',
     },
 }

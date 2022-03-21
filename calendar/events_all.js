@@ -1,5 +1,4 @@
 let events_all = [
-{"location":"","end":"2022-03-19T17:00:00+01:00","start":"2022-03-19T16:00:00+01:00","allDay":"No","notes":"----( FaceTime )----\n[FaceTime]\nhttps:\/\/facetime.apple.com\/join#v=1&p=9M\/iBKPnEeyKHyZSWYo+9A&k=1fyxEMX_v2jX-4TzVKqzJCkHGl9sv5L979jeuoQ4Zuo\n---===---","calendar":"Personal","link":"","name":"Baguio"},
 {"location":"","end":"2022-03-20T23:00:00+01:00","start":"2022-03-20T21:00:00+01:00","allDay":"No","notes":"Sport","calendar":"Outings","link":"","name":"El Clásico"},
 {"location":"","end":"2022-03-22T00:00:00+01:00","start":"2022-03-21T00:00:00+01:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 8"},
 {"location":"10.2.11","end":"2022-03-21T14:00:00+01:00","start":"2022-03-21T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
@@ -18,4 +17,6 @@ let events_all = [
 {"location":"2.3.B03","end":"2022-03-29T17:00:00+02:00","start":"2022-03-29T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Engineering Management"},
 {"location":"","end":"2022-03-31T00:00:00+02:00","start":"2022-03-30T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/0B1CAEF8-3D45-4A52-8086-0D82504990E0:ABPerson","name":"Ryan Clapp’s Birthday"},
 {"location":"","end":"2022-03-31T00:00:00+02:00","start":"2022-03-30T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/BFE4BABB-8DB4-4718-8562-C34E834B7F76:ABPerson","name":"Rajesh Nadkarni’s 55th Birthday"},
+{"location":"6.1.03","end":"2022-03-30T17:45:00+02:00","start":"2022-03-30T16:15:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
+{"location":"","end":"2022-04-01T00:00:00+02:00","start":"2022-03-31T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Industrial Organization Assignment 1"},
 ]

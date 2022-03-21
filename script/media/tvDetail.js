@@ -1,16 +1,16 @@
 const tvModal = document.getElementById('tv-modal')
 
-function showTVDetail(key) {
-    removeAllChildNodes(tvModal)
+// function showTVDetail(key) {
+//     removeAllChildNodes(tvModal)
 
-    let close = document.createElement('a')
-    close.classList = 'close'
-    close.onclick = function () { hideTVDetail() }
-    tvModal.append(close)
+//     let close = document.createElement('a')
+//     close.classList = 'close'
+//     close.onclick = function () { hideTVDetail() }
+//     tvModal.append(close)
 
-    tvModal.append(tvDetail(key))
-    tvModal.classList.add('open')
-}
+//     tvModal.append(tvDetail(key))
+//     tvModal.classList.add('open')
+// }
 
 function hideTVDetail() {
     tvModal.classList.remove('open')

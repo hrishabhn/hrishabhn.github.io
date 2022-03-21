@@ -13,7 +13,7 @@ function loadApp() {
     // Testing
     // skipToContent()
     // addModalLayer(workoutCard())
-    // showTVDetail('silicon')
+    // allMovies['silicon'].detail()
     // castJSONStr(0,0)
 
     // busTest()

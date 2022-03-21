@@ -79,4 +79,7 @@ let budgetData = [
     { "amount": 26, "name": "Bule Bule", "category": "Drinks", "date": "2022-03-18T23:59:00+01:00" },
     { "amount": 11, "name": "Lunch", "category": "Food", "date": "2022-03-19T14:49:00+01:00" },
     { "amount": 21.15, "name": "Grocery", "category": "Grocery", "date": "2022-03-20T00:00:00+01:00" },
+    { "amount": 17, "name": "El Clasico", "category": "Drinks", "date": "2022-03-20T20:50:00+01:00" },
+    { "amount": 5.29, "name": "Jolibee", "category": "Food", "date": "2022-03-20T22:47:00+01:00" },
+
 ]

@@ -5715,7 +5715,7 @@ const allMovies = {
         },
     },
     'vir': {
-        name: 'Vid Das: For India',
+        name: 'Vir Das: For India',
         id: 'vir',
         link: {
             netflix: '80995996'
@@ -5744,6 +5744,51 @@ const allMovies = {
             reelgoodLink: 'https://reelgood.com/movie/vir-das-for-india-2020',
             imdbID: 'tt11611314',
         },
+    },
+    'killingEve': {
+        name: 'Killing Eve',
+        id: 'killingEve',
+        link: 'https://www.hulu.com/series/killing-eve-c9d3b601-54db-42d1-a1ed-8950cea491b1',
+        info: {
+            service: 'hbo',
+            // studio: 'bbc',
+            location: 'HBO Max',
+            // date: '',
+            desc: {
+                seasons: 4,
+                yearStart: 2018,
+                yearEnd: 2022,
+                genre: [
+                    'action & adventure',
+                    'drama',
+                ],
+            },
+            summary: "Villanelle is a psychopathic assassin, and Eve is the woman charged with hunting her down; the two fiercely intelligent women, equally obsessed with each other, go head to head in an epic game of cat and mouse.",
+        },
+        style: {
+            color: colorData.fluent.red,
+            posterType: 'webp',
+            titleType: 'png',
+            titleSize: 'wide',
+            mobileType: 'webp',
+            mobileSize: '2 / 3',
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/killing-eve-2018',
+            imdbID: 'tt7016936',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Jodie Comer',
+                char: 'Villanelle',
+            },
+            {
+                actor: 'Sandra Oh',
+                char: 'Eve Polastri',
+            },
+        ],
     },
 }
 
@@ -5802,3 +5847,18 @@ const allMovies = {
 // breaking bad
 // bad education
 // arrested dev
+
+for (const key in allMovies) {
+    // show tv detail
+    allMovies[key].detail = function () {
+        removeAllChildNodes(tvModal)
+
+        let close = document.createElement('a')
+        close.classList = 'close'
+        close.onclick = function () { hideTVDetail() }
+        tvModal.append(close)
+
+        tvModal.append(tvDetail(key))
+        tvModal.classList.add('open')
+    }
+}

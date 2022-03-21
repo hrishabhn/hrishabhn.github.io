@@ -123,8 +123,6 @@ for (const key in allPods) {
     if (!pod.link) pod.link = processBookPodLink(pod)
     pod.title = allPodEps[key].epTitle
     pod.summary = allPodEps[key].epSummary
-
-    console.log(allPodEps[key].epTitle)
 }
 
 // const podDataArchive = [
