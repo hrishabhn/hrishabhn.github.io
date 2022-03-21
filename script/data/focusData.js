@@ -35,7 +35,8 @@ let focusData = [
                     movies.rows[6].elem.smart,
                     movies.rows[7].elem.oldSmall,
                     movies.rows[8].elem.oldSmall,
-                    movies.rows[9].elem.oldBig,
+                    movies.rows[9].elem.big,
+                    movies.rows[10].elem.big,
                     movies.rows[10].elem.oldBig,
                 ]
             },

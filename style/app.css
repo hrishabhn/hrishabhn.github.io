@@ -7,6 +7,15 @@
     min-width: 220px;
     cursor: pointer;
 }
+.app-card.flight{
+    background-color: var(--brand-col-dark, var(--brand-col, black));
+}
+@media screen and (prefers-color-scheme: light) {
+    .app-card.flight{
+        background-color: var(--brand-col-light, var(--brand-col, black));
+    }
+}
+
 .app-card .thumb{
     width: 45px;
     height: 45px;
@@ -22,6 +31,12 @@
     padding: 5%;
     fill: white;
 }
+.app-card .logo{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
 .app-card .textbox{
     flex-grow: 1;
     flex-direction: column;
