@@ -19,9 +19,6 @@ function hideTVDetail() {
 function tvDetail(key) {
     const movie = allMovies[key]
 
-
-
-
     let card = document.createElement('div')
     card.classList = 'tv-detail-card'
 
@@ -83,47 +80,7 @@ function tvDetail(key) {
     card.append(growElement())
 
     // cast
-    if (movie.cast) {
-        let cast = document.createElement('div')
-        cast.classList = 'cast layer-0 primary-fg'
-
-        cast.append(titleElement('Cast'))
-        let tray = document.createElement('div')
-        tray.classList = 'cast-tray'
-
-
-        for (const data of movie.cast) {
-            let card = document.createElement('div')
-            card.classList = 'actor'
-
-            let image = document.createElement('a')
-            image.classList = 'image layer-1 clickable'
-            image.href = googleSearch(data.actor)
-            image.target = '_blank'
-
-            if (actors.data[data.actor]) {
-                image.style.setProperty('background-image', `url(${actors.data[data.actor]})`)
-            } else {
-                let str = ''
-                for (const word of data.actor.split(' ')) {
-                    str = str.concat(word[0])
-                }
-                image.innerHTML = str
-            }
-
-
-            card.append(image)
-            card.append(textboxBase(data.actor, data.char))
-
-            tray.append(spacerElement(20))
-            tray.append(card)
-        }
-
-        cast.append(tray)
-        cast.append(growElement())
-
-        card.append(cast)
-    }
+    if (movie.cast) card.append(tvDetailCast(key))
 
     let close = aElement(iconData.close, null)
     close.classList = 'close-tv-modal clickable-o'
@@ -214,4 +171,48 @@ function tvDetailApps(key) {
     ))
 
     return trayWithKids(nodes, 8)
+}
+
+function tvDetailCast(key) {
+    const movie = allMovies[key]
+
+    let cast = document.createElement('div')
+    cast.classList = 'cast layer-0 primary-fg'
+
+    cast.append(titleElement('Cast'))
+    let tray = document.createElement('div')
+    tray.classList = 'cast-tray'
+
+
+    for (const data of movie.cast) {
+        let card = document.createElement('div')
+        card.classList = 'actor'
+
+        let image = document.createElement('a')
+        image.classList = 'image layer-1 clickable'
+        image.href = googleSearch(data.actor)
+        image.target = '_blank'
+
+        if (actors.data[data.actor]) {
+            image.style.setProperty('background-image', `url(${actors.data[data.actor]})`)
+        } else {
+            let str = ''
+            for (const word of data.actor.split(' ')) {
+                str = str.concat(word[0])
+            }
+            image.innerHTML = str
+        }
+
+
+        card.append(image)
+        card.append(textboxBase(data.actor, data.char))
+
+        tray.append(spacerElement(20))
+        tray.append(card)
+    }
+
+    cast.append(tray)
+    cast.append(growElement())
+
+    return cast
 }
