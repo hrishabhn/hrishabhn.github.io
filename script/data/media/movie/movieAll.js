@@ -8,15 +8,13 @@ const allMovies = {
             service: 'hbo',
             studio: 'hbo',
             location: 'HBO Max',
-            desc: {
-                seasons: 6,
-                yearStart: 2014,
-                yearEnd: 2019,
-                genre: [
-                    'comedy',
-                    'tech',
-                ],
-            },
+            seasons: 6,
+            yearStart: 2014,
+            yearEnd: 2019,
+            genre: [
+                'comedy',
+                'tech',
+            ],
             summary: "In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. Partially inspired by Mike Judge’s own experiences as a Silicon Valley engineer in the late ‘80s, Silicon Valley is an American sitcom that centers around six programmers who are living together and trying to make it big in the Silicon Valley.",
         },
         style: {
@@ -81,15 +79,13 @@ const allMovies = {
             studio: 'hulu',
             location: 'Hulu',
             // date: 'Mar 15, 2022',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'romance',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'comedy',
+                'romance',
+            ],
             summary: "In the near future, Sophie is telling her son the story of how she met his father: a story that catapults us back to the present where Sophie and her close-knit group of friends are in the midst of figuring out who they are, what they want out of life, and how to fall in love in the age of dating apps and limitless options.",
             tags: [
                 'himym',
@@ -147,15 +143,13 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '28 Feb 2022',
-            desc: {
-                seasons: 6,
-                yearStart: 2013,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
+            seasons: 6,
+            yearStart: 2013,
+            yearEnd: null,
+            genre: [
+                'crime',
+                'drama',
+            ],
             summary: "A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby, a crime boss set on moving up in the world no matter the cost.",
         },
         style: {
@@ -182,15 +176,13 @@ const allMovies = {
             studio: 'fx',
             location: 'HBO Max',
             date: '17 Mar, 2022 10:00:00',
-            desc: {
-                seasons: 5,
-                yearStart: 2017,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
+            seasons: 5,
+            yearStart: 2017,
+            yearEnd: null,
+            genre: [
+                'crime',
+                'drama',
+            ],
             summary: "Snowfall is a one-hour drama set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it.",
         },
         style: {
@@ -217,15 +209,13 @@ const allMovies = {
             studio: 'appleTV',
             location: ' TV+',
             date: '11 Mar 2022 08:00:00',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'mystery',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'drama',
+                'mystery',
+            ],
             summary: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
         },
         style: {
@@ -290,14 +280,12 @@ const allMovies = {
             studio: 'abc',
             location: 'Hulu',
             date: '22 March 2022',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'comedy',
+            ],
             summary: "A group of dedicated, passionate teachers -- and a slightly tone-deaf principal -- find themselves thrown together in a Philadelphia public school where, despite the odds stacked against them, they are determined to help their students succeed in life. Though these incredible public servants may be outnumbered and underfunded, they love what they do -- even if they don't love the school district's less-than-stellar attitude toward educating children.",
         },
         style: {
@@ -352,15 +340,13 @@ const allMovies = {
             studio: 'apple',
             location: 'Apple TV+',
             date: '18 March 2022',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'biography',
-                    'drama',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'biography',
+                'drama',
+            ],
             summary: "Inspired by actual events—and the love story at the center of it all. WeWork grew from a single coworking space into a global brand worth $47 billion in under a decade. Then, in less than a year, its valuation dropped $40 billion. What happened?",
         },
         style: {
@@ -399,16 +385,14 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'cars',
-                    'documentary',
-                    'sport',
-                ],
-            },
+            seasons: 4,
+            yearStart: 2019,
+            yearEnd: null,
+            genre: [
+                'cars',
+                'documentary',
+                'sport',
+            ],
             summary: "Drivers, managers and team owners live life in the fast lane — both on and off the track — during each cutthroat season of Formula 1 racing.",
         },
         style: {
@@ -435,15 +419,13 @@ const allMovies = {
             // studio: 'studio',
             location: 'Hulu',
             // date: 'Jan 16, 2022',
-            desc: {
-                seasons: 4,
-                yearStart: 2013,
-                yearEnd: 2022,
-                genre: [
-                    'action & adventure',
-                    'animation',
-                ],
-            },
+            seasons: 4,
+            yearStart: 2013,
+            yearEnd: 2022,
+            genre: [
+                'action & adventure',
+                'animation',
+            ],
             summary: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
         },
         style: {
@@ -472,15 +454,13 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'thriller',
-                ],
-            },
+            seasons: 4,
+            yearStart: 2018,
+            yearEnd: null,
+            genre: [
+                'crime',
+                'thriller',
+            ],
             summary: "When three working-class teens enroll in an exclusive private school in Spain, the clash between them and the wealthy students leads to murder.",
         },
         style: {
@@ -555,15 +535,13 @@ const allMovies = {
             studio: 'netflix',
             location: 'Neftlix',
             // date: 'Jan 21, 2022',
-            desc: {
-                seasons: 4,
-                yearStart: 2017,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
+            seasons: 4,
+            yearStart: 2017,
+            yearEnd: null,
+            genre: [
+                'crime',
+                'drama',
+            ],
             summary: "After his business partner cheats a dangerous client, financial adviser Marty must devise a radical plan to save the lives of himself and his family.",
         },
         style: {
@@ -613,15 +591,13 @@ const allMovies = {
             service: 'prime',
             // studio: 'studio',
             location: 'Prime Video',
-            desc: {
-                seasons: 3,
-                yearStart: 1991,
-                yearEnd: 1992,
-                genre: [
-                    'adventure',
-                    'crime',
-                ],
-            },
+            seasons: 3,
+            yearStart: 1991,
+            yearEnd: 1992,
+            genre: [
+                'adventure',
+                'crime',
+            ],
             summary: "Travel with Tintin, the young and intrepid Belgian reporter, and his faithful dog Snowy as they take you from Tibet to the Moon, or from Egypt to the depths of the sea -- solving mysteries, pursuing truth and justice, and gambling with their lives.",
         },
         style: {
@@ -650,16 +626,14 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2017,
-                yearEnd: 2021,
-                genre: [
-                    'action',
-                    'crime',
-                    'mystery',
-                ],
-            },
+            seasons: 4,
+            yearStart: 2017,
+            yearEnd: 2021,
+            genre: [
+                'action',
+                'crime',
+                'mystery',
+            ],
             summary: "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
         },
         style: {
@@ -688,16 +662,14 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '9 Feb, 2022',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'adventure',
-                    'fantasy',
-                ],
-            },
+            seasons: 3,
+            yearStart: 2018,
+            yearEnd: null,
+            genre: [
+                'animation',
+                'adventure',
+                'fantasy',
+            ],
             summary: "Princess duties call, but she'd rather be drinking. Free-spirited Bean exasperates the king as she wreaks havoc with her demon and elf pals.",
         },
         style: {
@@ -725,12 +697,10 @@ const allMovies = {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            desc: {
-                year: 2021,
-                genre: [
-                    'sci-fi',
-                ],
-            },
+            year: 2021,
+            genre: [
+                'sci-fi',
+            ],
             summary: "Two astronomers go on a media tour to warn humankind of a planet-killing comet hurtling toward Earth. The response from a distracted world: Meh.",
         },
         style: {
@@ -756,16 +726,14 @@ const allMovies = {
             service: 'netflix',
             // studio: 'studio',
             location: 'Netflix',
-            desc: {
-                seasons: 1,
-                yearStart: 1998,
-                yearEnd: 1999,
-                genre: [
-                    'action',
-                    'animation',
-                    'sci-fi',
-                ],
-            },
+            seasons: 1,
+            yearStart: 1998,
+            yearEnd: 1999,
+            genre: [
+                'action',
+                'animation',
+                'sci-fi',
+            ],
             summary: "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
         },
         style: {
@@ -794,16 +762,14 @@ const allMovies = {
             // studio: 'prime',
             location: 'Prime Video',
             // date: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2016,
-                yearEnd: null,
-                genre: [
-                    'cars',
-                    'comedy',
-                    'travel',
-                ],
-            },
+            seasons: 4,
+            yearStart: 2016,
+            yearEnd: null,
+            genre: [
+                'cars',
+                'comedy',
+                'travel',
+            ],
             summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
         },
         style: {
@@ -832,13 +798,11 @@ const allMovies = {
             studio: 'universal',
             location: 'Coming Soon',
             date: 'Jun 10, 2022',
-            desc: {
-                year: 2022,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
+            year: 2022,
+            genre: [
+                'action & adventure',
+                'sci-fi',
+            ],
             summary: "Four years after the destruction of Isla Nublar, dinosaurs now live--and hunt--alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history's most fearsome creatures.",
         },
         style: {
@@ -867,12 +831,10 @@ const allMovies = {
             studio: 'marvel',
             location: 'Coming Soon',
             // date: 'Nov 5, 2021',
-            desc: {
-                year: 2021,
-                genre: [
-                    'sci-fi',
-                ],
-            },
+            year: 2021,
+            genre: [
+                'sci-fi',
+            ],
             summary: "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
             tags: [
                 'mcu',
@@ -927,13 +889,11 @@ const allMovies = {
             service: 'hbo',
             // studio: 'studio',
             location: 'HBO Max',
-            desc: {
-                year: 2021,
-                genre: [
-                    'action & adventure',
-                    'drama',
-                ],
-            },
+            year: 2021,
+            genre: [
+                'action & adventure',
+                'drama',
+            ],
             summary: "A mythic and emotionally charged epic hero's journey, Dune is Academy Award nominee Denis Villeneuve's visuallystunning adaptation of Frank Herbert's seminal bestseller of the same name.",
         },
         style: {
@@ -1015,15 +975,13 @@ const allMovies = {
             // studio: 'studio',
             location: 'Prime Video',
             // date: '',
-            desc: {
-                seasons: 1,
-                year: 1995,
-                genre: [
-                    'animation',
-                    'crime',
-                    'sci-fi',
-                ],
-            },
+            seasons: 1,
+            year: 1995,
+            genre: [
+                'animation',
+                'crime',
+                'sci-fi',
+            ],
             summary: "In the year 2029, the barriers of our world have been broken down by the net and by cybernetics, but this brings new vulnerability to humans in the form of brain-hacking. When a highly-wanted hacker known as The Puppetmaster begins involving them in politics, Section 9, a group of cybernetically enhanced cops, are called in to investigate and stop the Puppetmaster.",
         },
         style: {
@@ -1104,16 +1062,14 @@ const allMovies = {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            desc: {
-                seasons: 4,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    'documentary',
-                    'food',
-                    'travel',
-                ],
-            },
+            seasons: 4,
+            yearStart: 2018,
+            yearEnd: null,
+            genre: [
+                'documentary',
+                'food',
+                'travel',
+            ],
             summary: "\"Everybody Loves Raymond\" creator Phil Rosenthal travels the globe to take in the local cuisine and culture of Bangkok, Lisbon, Mexico City and more.",
         },
         style: {
@@ -1148,13 +1104,11 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            desc: {
-                seasons: 1,
-                year: 2022,
-                genre: [
-                    'drama',
-                ],
-            },
+            seasons: 1,
+            year: 2022,
+            genre: [
+                'drama',
+            ],
             summary: "Audacious entrepreneur or con artist? A journalist chases down the story of Anna Delvey, who convinced New York's elite she was a German heiress.",
         },
         style: {
@@ -1226,15 +1180,13 @@ const allMovies = {
             studio: 'prime',
             location: 'Prime Video',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'sci-fi',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'animation',
+                'sci-fi',
+            ],
             summary: "From some of the most unhinged and maniacal minds in Hollywood today comes Diabolical, a collection of eight irreverent and emotionally shocking animated short films. Featuring stories by Seth Rogen, Awkwafina, Andy Samberg, Aisha Tyler, Justin Roiland, and more, each episode plunges elbow-deep into unseen crevices of The Boys Universe.",
         },
         style: {
@@ -1303,16 +1255,14 @@ const allMovies = {
             studio: 'starwars',
             location: 'Disney+',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                    'star wars',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'action & adventure',
+                'sci-fi',
+                'star wars',
+            ],
             summary: "Legendary bounty hunter Boba Fett and mercenary Fennec Shand must navigate the galaxy’s underworld when they return to the sands of Tatooine to stake their claim on the territory once ruled by Jabba the Hutt and his crime syndicate.",
         },
         style: {
@@ -1341,15 +1291,13 @@ const allMovies = {
             studio: 'prime',
             location: 'Prime Video',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'reality',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'comedy',
+                'reality',
+            ],
             summary: "An intense, arduous and frequently hilarious year in the life of Britain’s most unlikely farmer, Jeremy Clarkson. Join Jeremy and his rag-tag band of agricultural associates as they face-up to a backdrop of unhelpful weather, disobedient animals, unresponsive crops and an unexpected pandemic. This is Jeremy Clarkson as you’ve never seen him before.",
         },
         style: {
@@ -1378,15 +1326,13 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: 'Nov 19, 2021',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'sci-fi',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'action',
+                'sci-fi',
+            ],
             summary: "A ragtag crew of bounty hunters chases down the galaxy's most dangerous criminals. They'll save the world ... for the right price. A live-action series.",
         },
         style: {
@@ -1436,14 +1382,12 @@ const allMovies = {
             service: 'prime',
             studio: 'bbc',
             location: 'Prime Video',
-            desc: {
-                seasons: 1,
-                year: 2015,
-                genre: [
-                    'documentary',
-                    'travel',
-                ],
-            },
+            seasons: 1,
+            year: 2015,
+            genre: [
+                'documentary',
+                'travel',
+            ],
             summary: "British actor Joanna Lumley (Absolutely Fabulous) last visited the USSR in 1966 on a modeling job. Almost 50 years later, she finds herself back there on a romantic rail trip from Hong Kong to Moscow via China and Mongolia. It's a journey of nearly 6,000 miles from east to west taking in a panorama of vistas, people and places and immense superpowers steeped in rich history and radical change.",
         },
         style: {
@@ -1469,15 +1413,13 @@ const allMovies = {
             service: 'hbo',
             studio: 'hbo',
             location: 'Hulu',
-            desc: {
-                seasons: 1,
-                year: 2019,
-                genre: [
-                    'drama',
-                    'history',
-                    'thriller',
-                ],
-            },
+            seasons: 1,
+            year: 2019,
+            genre: [
+                'drama',
+                'history',
+                'thriller',
+            ],
             summary: "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
         },
         style: {
@@ -1503,15 +1445,13 @@ const allMovies = {
             service: 'hbo',
             studio: 'hbo',
             location: 'Hulu',
-            desc: {
-                seasons: 6,
-                yearStart: 1999,
-                yearEnd: 2007,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
+            seasons: 6,
+            yearStart: 1999,
+            yearEnd: 2007,
+            genre: [
+                'crime',
+                'drama',
+            ],
             summary: "James Gandolfini stars in this acclaimed series about a mob boss whose professional and private strains land him in therapy.",
         },
         style: {
@@ -1539,15 +1479,13 @@ const allMovies = {
             service: 'prime',
             // studio: 'studio',
             location: 'Prime Video',
-            desc: {
-                seasons: 2,
-                yearStart: 2016,
-                yearEnd: 2019,
-                genre: [
-                    'comedy',
-                    'drama',
-                ],
-            },
+            seasons: 2,
+            yearStart: 2016,
+            yearEnd: 2019,
+            genre: [
+                'comedy',
+                'drama',
+            ],
             summary: "Fleabag is a hilarious and poignant window into the mind of a dry-witted, sexual, angry, grief-riddled woman, as she hurls herself at modern living in London. Award-winning playwright Phoebe Waller-Bridge writes and stars as Fleabag, an unfiltered woman trying to heal, while rejecting anyone who tries to help her and keeping up her bravado all along.",
         },
         style: {
@@ -1573,15 +1511,13 @@ const allMovies = {
             service: 'hbo',
             // studio: 'studio',
             location: 'HBO Max',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: 2021,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
+            seasons: 3,
+            yearStart: 2018,
+            yearEnd: 2021,
+            genre: [
+                'animation',
+                'comedy',
+            ],
             summary: "An astronaut named Gary and his planet-destroying sidekick Mooncake embark on serialized journeys through space in order to unlock the mystery of “Final Space,” the last point in the universe, if it actually does exist.",
         },
         style: {
@@ -1609,13 +1545,11 @@ const allMovies = {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            desc: {
-                seasons: 1,
-                year: 2021,
-                genre: [
-                    'drama',
-                ],
-            },
+            seasons: 1,
+            year: 2021,
+            genre: [
+                'drama',
+            ],
             summary: "After fleeing an abusive relationship, a young mother finds a job cleaning houses as she fights to provide for her child and build them a better future.",
         },
         style: {
@@ -1707,16 +1641,14 @@ const allMovies = {
             // studio: 'studio',
             location: 'Prime Video',
             // date: '',
-            desc: {
-                seasons: 9,
-                yearStart: 2006,
-                yearEnd: 2013,
-                genre: [
-                    'crime',
-                    'drama',
-                    'mystery',
-                ],
-            },
+            seasons: 9,
+            yearStart: 2006,
+            yearEnd: 2013,
+            genre: [
+                'crime',
+                'drama',
+                'mystery',
+            ],
             summary: "He's smart. He's lovable. He's Dexter Morgan, America's favorite serial killer, who spends his days solving crimes and nights committing them. Golden Globe winner Michael C. Hall stars in the hit SHOWTIME Original Series.",
         },
         style: {
@@ -1771,15 +1703,13 @@ const allMovies = {
             // studio: 'studio',
             location: 'Hulu',
             // date: '',
-            desc: {
-                seasons: 6,
-                yearStart: 2013,
-                yearEnd: 2021,
-                genre: [
-                    'action & adventure',
-                    'history',
-                ],
-            },
+            seasons: 6,
+            yearStart: 2013,
+            yearEnd: 2021,
+            genre: [
+                'action & adventure',
+                'history',
+            ],
             summary: "Ragnar is pitted against Rollo over a land dispute he's trying to settle on behalf of King Horik. A deadly fever hits Kattegat putting Ragnar's wife and daughter's lives in grave danger.",
         },
         style: {
@@ -1806,15 +1736,13 @@ const allMovies = {
             studio: 'hbo',
             location: 'HBO Max',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'documentary',
-                    'politics',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'documentary',
+                'politics',
+            ],
             summary: "This six-part docuseries charts a labyrinthine journey to uncover the inner workings of Qanon, a massive online conspiracy movement.",
         },
         style: {
@@ -1843,16 +1771,14 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'crime',
-                    'drama',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'action & adventure',
+                'crime',
+                'drama',
+            ],
             summary: "Following her father's murder, a revenge-driven woman puts her trust in a powerful crime boss - and enters the police force under his direction.",
         },
         style: {
@@ -1879,15 +1805,13 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'fantasy',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2019,
+            yearEnd: null,
+            genre: [
+                'action & adventure',
+                'fantasy',
+            ],
             summary: "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
         },
         style: {
@@ -2044,14 +1968,12 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            desc: {
-                seasons: 1,
-                year: 2022,
-                genre: [
-                    'comedy',
-                    'documentary',
-                ],
-            },
+            seasons: 1,
+            year: 2022,
+            genre: [
+                'comedy',
+                'documentary',
+            ],
             summary: "Join Georgina Rodríguez — mom, influencer, businesswoman and Cristiano Ronaldo's partner — in this emotional and in-depth portrait of her daily life.",
         },
         style: {
@@ -2080,15 +2002,13 @@ const allMovies = {
             studio: 'prime',
             location: 'Prime Video',
             // date: 'Oct 29, 2021',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'animation',
+                'comedy',
+            ],
             summary: "Animated series centering on four middle school friends on their quest for fame on L.A.'s Fairfax Avenue.",
         },
         style: {
@@ -2113,15 +2033,13 @@ const allMovies = {
             studio: 'hbo',
             location: 'HBO Max',
             // date: '',
-            desc: {
-                seasons: 3,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'fantasy',
-                ],
-            },
+            seasons: 3,
+            yearStart: 2019,
+            yearEnd: null,
+            genre: [
+                'comedy',
+                'fantasy',
+            ],
             summary: "Crumbling country mansion Button House is home to restless spirits who’ve died there over the centuries. Each a product of their time, they’re thrown together for eternity, resigned to squabble over mundane daily gripes. But their lives, or rather, afterlives, are thrown into turmoil when young urban couple Alison and Mike unexpectedly inherit the peaceful derelict house and plan to turn it into a bustling hotel.",
         },
         style: {
@@ -2161,16 +2079,14 @@ const allMovies = {
             location: 'Netflix',
             // date: '',
             // weekday: 'Saturday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'animation',
-                    'fantasy',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'action & adventure',
+                'animation',
+                'fantasy',
+            ],
             summary: "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
         },
         style: {
@@ -2229,15 +2145,13 @@ const allMovies = {
             // studio: 'tnt',
             location: 'Netflix',
             // date: 'Feb 1, 2022',
-            desc: {
-                seasons: 3,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'sci-fi',
-                ],
-            },
+            seasons: 3,
+            yearStart: 2020,
+            yearEnd: null,
+            genre: [
+                'drama',
+                'sci-fi',
+            ],
             summary: "Set more than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
         },
         style: {
@@ -2264,14 +2178,12 @@ const allMovies = {
             studio: 'marvel',
             location: 'Disney+',
             weekday: 'Wednesday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'crime',
+            ],
             summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
             tags: [
                 'mcu',
@@ -2311,15 +2223,13 @@ const allMovies = {
             // studio: 'studio',
             location: 'HBO Max',
             // date: '',
-            desc: {
-                seasons: 24,
-                yearStart: 1997,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
+            seasons: 24,
+            yearStart: 1997,
+            yearEnd: null,
+            genre: [
+                'animation',
+                'comedy',
+            ],
             summary: "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
         },
         style: {
@@ -2346,16 +2256,14 @@ const allMovies = {
             studio: 'fx',
             location: 'Hulu',
             // date: '',
-            desc: {
-                seasons: 12,
-                yearStart: 2009,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'animation',
-                    'crime',
-                ],
-            },
+            seasons: 12,
+            yearStart: 2009,
+            yearEnd: null,
+            genre: [
+                'action & adventure',
+                'animation',
+                'crime',
+            ],
             summary: "Covert black ops and espionage take a back seat to zany personalities and relationships between secret agents and drones.",
         },
         style: {
@@ -2408,14 +2316,12 @@ const allMovies = {
             // studio: 'studio',
             location: 'Hulu',
             // date: '',
-            desc: {
-                seasons: 7,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'reality',
-                ],
-            },
+            seasons: 7,
+            yearStart: 2015,
+            yearEnd: null,
+            genre: [
+                'reality',
+            ],
             summary: "Reality show. Glamorous singles live in a beautiful villa under the watchful gaze of the audience at home, who have the power to decide who stays and who goes.",
         },
         style: {
@@ -2444,15 +2350,13 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    'romance',
-                    'thriller',
-                ],
-            },
+            seasons: 3,
+            yearStart: 2018,
+            yearEnd: null,
+            genre: [
+                'romance',
+                'thriller',
+            ],
             summary: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
         },
         style: {
@@ -2493,15 +2397,13 @@ const allMovies = {
             studio: 'hulu',
             location: 'Hulu',
             // date: '',
-            desc: {
-                seasons: 2,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
+            seasons: 2,
+            yearStart: 2020,
+            yearEnd: null,
+            genre: [
+                'animation',
+                'comedy',
+            ],
             summary: "A team of four aliens escape their exploding home world only to crash land into a move-in ready home in suburban America. They are evenly split on whether Earth is awful or awesome. Korvo (Justin Roiland) and Yumyulack (Sean Giambrone) only see the pollution, crass consumerism, and human frailty while Terry (Thomas Middleditch) and Jesse (Mary Mack) love humans and all their TV, junk food and fun stuff. Their mission: protect the Pupa, a living super computer that will one day evolve into its true form, consume them and terraform the Earth.",
         },
         style: {
@@ -2547,14 +2449,12 @@ const allMovies = {
             location: 'Hulu',
             // date: '',
             weekday: 'Wednesday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'drama',
+            ],
             summary: "From Executive Producer Danny Strong and starring and executive produced by Michael Keaton, “Dopesick” examines how one company triggered the worst drug epidemic in American history. The series takes viewers to the epicenter of America’s struggle with opioid addiction, from the boardrooms of Big Pharma, to a distressed Virginia mining community, to the hallways of the DEA. Defying all the odds, heroes will emerge in an intense and thrilling ride to take down the craven corporate forces behind this national crisis and their allies. The limited series is inspired by the New York Times bestselling book by Beth Macy.",
         },
         style: {
@@ -2582,15 +2482,13 @@ const allMovies = {
             location: 'Hulu',
             // date: '',
             weekday: 'Sunday',
-            desc: {
-                seasons: 20,
-                yearStart: 1999,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
+            seasons: 20,
+            yearStart: 1999,
+            yearEnd: null,
+            genre: [
+                'animation',
+                'comedy',
+            ],
             summary: "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
         },
         style: {
@@ -2615,15 +2513,13 @@ const allMovies = {
             studio: 'appleTV',
             location: ' TV+',
             weekday: 'Friday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'sci-fi',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'drama',
+                'sci-fi',
+            ],
             summary: "Dr. Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses.",
         },
         style: {
@@ -2650,15 +2546,13 @@ const allMovies = {
             studio: 'fox',
             location: 'Hulu',
             // date: '',
-            desc: {
-                seasons: 33,
-                yearStart: 1989,
-                yearEnd: 2021,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
+            seasons: 33,
+            yearStart: 1989,
+            yearEnd: 2021,
+            genre: [
+                'animation',
+                'comedy',
+            ],
             summary: "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie.",
         },
         style: {
@@ -2683,15 +2577,13 @@ const allMovies = {
             studio: 'showtime',
             location: 'Showtime',
             // date: 'Jan 23, 2022',
-            desc: {
-                seasons: 5,
-                yearStart: 2016,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'money',
-                ],
-            },
+            seasons: 5,
+            yearStart: 2016,
+            yearEnd: null,
+            genre: [
+                'drama',
+                'money',
+            ],
             summary: "Wealth, influence and corruption collide in this drama set in New York. Shrewd U.S. Attorney Chuck Rhoades is embroiled in a high-stakes game of predator vs. prey with Bobby Axelrod, an ambitious hedge-fund king. To date, Rhoades has never lost an insider trading case -- he's 81-0 -- but when criminal evidence turns up against Axelrod, he proceeds cautiously in building the case against Axelrod, who employs Rhoades' wife, psychiatrist Wendy, as a performance coach for his company.",
         },
         style: {
@@ -2720,15 +2612,13 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2018,
-                yearEnd: 2019,
-                genre: [
-                    'romance',
-                    'sci-fi',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2018,
+            yearEnd: 2019,
+            genre: [
+                'romance',
+                'sci-fi',
+            ],
             summary: "A frantic young man is running scared in Barcelona. CEO Yoo Jin-woo heads to Granada on a quest after getting a strange call while on business in Spain.",
         },
         style: {
@@ -2757,15 +2647,13 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'horror',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'drama',
+                'horror',
+            ],
             summary: "The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.",
         },
         style: {
@@ -2959,16 +2847,14 @@ const allMovies = {
             studio: 'fx',
             location: 'Hulu',
             date: '23 March, 2022',
-            desc: {
-                seasons: 3,
-                yearStart: 2016,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'drama',
-                    'music',
-                ],
-            },
+            seasons: 3,
+            yearStart: 2016,
+            yearEnd: null,
+            genre: [
+                'comedy',
+                'drama',
+                'music',
+            ],
             summary: "Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.",
         },
         style: {
@@ -2997,16 +2883,14 @@ const allMovies = {
             studio: 'prime',
             location: 'Prime Video',
             date: '3 Jun, 2022',
-            desc: {
-                seasons: 3,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'crime',
-                    'sci-fi',
-                ],
-            },
+            seasons: 3,
+            yearStart: 2019,
+            yearEnd: null,
+            genre: [
+                'action',
+                'crime',
+                'sci-fi',
+            ],
             summary: "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
         },
         style: {
@@ -3069,15 +2953,13 @@ const allMovies = {
             location: 'Hulu',
             // date: 'Dec 23, 2021 03:00:00',
             // weekday: 'Thursday',
-            desc: {
-                seasons: 15,
-                yearStart: 2005,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'friends',
-                ],
-            },
+            seasons: 15,
+            yearStart: 2005,
+            yearEnd: null,
+            genre: [
+                'comedy',
+                'friends',
+            ],
             summary: "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.",
         },
         style: {
@@ -3127,14 +3009,12 @@ const allMovies = {
             location: 'Hulu',
             // date: '26 Dec, 2021 22:30:00',
             // weekday: 'Sunday',
-            desc: {
-                seasons: 11,
-                yearStart: 2000,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                ],
-            },
+            seasons: 11,
+            yearStart: 2000,
+            yearEnd: null,
+            genre: [
+                'comedy',
+            ],
             summary: "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
         },
         style: {
@@ -3222,15 +3102,13 @@ const allMovies = {
             studio: 'marvel',
             location: 'Hulu',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'animation',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'action',
+                'animation',
+            ],
             summary: "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
         },
         style: {
@@ -3275,15 +3153,13 @@ const allMovies = {
             studio: 'hbo',
             location: 'Hulu',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'money',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2020,
+            yearEnd: null,
+            genre: [
+                'drama',
+                'money',
+            ],
             summary: "This series follows a group of young graduates competing for a limited set of permanent positions at a top investment bank in London",
         },
         style: {
@@ -3312,15 +3188,13 @@ const allMovies = {
             // studio: 'studio',
             location: 'Netflix',
             date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'animation',
+                'comedy',
+            ],
             summary: "Lizard people? Real. The moon landing? Fake. Managing the world's conspiracies is a full-time job for an awkward genius and her dysfunctional co-workers.",
         },
         style: {
@@ -3373,15 +3247,13 @@ const allMovies = {
             studio: 'marvel',
             location: 'Disney+',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'fantasy',
-                    'sci-fi',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'fantasy',
+                'sci-fi',
+            ],
             summary: "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
             tags: [
                 'mcu',
@@ -3435,16 +3307,14 @@ const allMovies = {
             studio: 'starwars',
             location: 'Disney+',
             // date: 'Dec 24, 2021',
-            desc: {
-                seasons: 1,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                    'star wars',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2019,
+            yearEnd: null,
+            genre: [
+                'action & adventure',
+                'sci-fi',
+                'star wars',
+            ],
             summary: "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
         },
         style: {
@@ -3520,15 +3390,13 @@ const allMovies = {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            desc: {
-                seasons: 3,
-                yearStart: 2018,
-                yearEnd: 2021,
-                genre: [
-                    'crime',
-                    'drama',
-                ],
-            },
+            seasons: 3,
+            yearStart: 2018,
+            yearEnd: 2021,
+            genre: [
+                'crime',
+                'drama',
+            ],
             summary: "This continuation of 'Narcos' explores the origins of the modern drug war by going back to its roots, starting at a time when the Mexican trafficking world was a loose, disorganized confederation of independent growers and dealers. It's the 1980s, and Felix Gallardo takes the helm of the Guadalajara Cartel, unifying traffickers to build an empire. As DEA agent Kiki Camarena moves his wife and young son from California to Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.",
         },
         style: {
@@ -3554,15 +3422,13 @@ const allMovies = {
             service: 'hulu',
             studio: 'hulu',
             location: 'Hulu',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'mystery',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'drama',
+                'mystery',
+            ],
             summary: "Based on The New York Times bestselling book by author Liane Moriarty, “Nine Perfect Strangers” takes place at a boutique health-and-wellness resort that promises healing and transformation as nine stressed city dwellers try to get on a path to a better way of living. Watching over them during this 10-day retreat is the resort's director, Masha, a woman on a mission to reinvigorate their tired minds and bodies. However, these nine “perfect” strangers have no idea what is about to hit them.",
         },
         style: {
@@ -3587,16 +3453,14 @@ const allMovies = {
             studio: 'hulu',
             location: 'Hulu',
             // weekday: 'Tuesday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'comedy',
-                    'drama',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'crime',
+                'comedy',
+                'drama',
+            ],
             summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
         },
         style: {
@@ -3658,16 +3522,14 @@ const allMovies = {
             studio: 'prime',
             location: 'Prime Video',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2022,
-                yearEnd: null,
-                genre: [
-                    'action',
-                    'crime',
-                    'drama',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'action',
+                'crime',
+                'drama',
+            ],
             summary: "Jack Reacher was arrested for murder and now the police need his help. Based on the books by Lee Child.",
         },
         style: {
@@ -3702,16 +3564,14 @@ const allMovies = {
             // studio: 'studio',
             location: 'Adult Swim',
             // date: '',
-            desc: {
-                seasons: 5,
-                yearStart: 2013,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                    'sci-fi',
-                ],
-            },
+            seasons: 5,
+            yearStart: 2013,
+            yearEnd: null,
+            genre: [
+                'animation',
+                'comedy',
+                'sci-fi',
+            ],
             summary: "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty.s already unstable family life, these events cause Morty much distress at home and school.",
         },
         style: {
@@ -3755,15 +3615,13 @@ const allMovies = {
             location: 'Hulu',
             // date: '12 Dec, 2021 21:00:00',
             // weekday: 'Sunday',
-            desc: {
-                seasons: 2,
-                yearStart: 2018,
-                yearEnd: null,
-                genre: [
-                    //    'comedy',
-                    'drama',
-                ],
-            },
+            seasons: 2,
+            yearStart: 2018,
+            yearEnd: null,
+            genre: [
+                //    'comedy',
+                'drama',
+            ],
             summary: "When a media tycoon considers retirement, each of his four grown children begins angling for their piece of the pie in this series.",
         },
         style: {
@@ -3846,16 +3704,14 @@ const allMovies = {
             studio: 'appleTV',
             location: ' TV+',
             weekday: 'Friday',
-            desc: {
-                seasons: 2,
-                yearStart: 2020,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'drama',
-                    'sport',
-                ],
-            },
+            seasons: 2,
+            yearStart: 2020,
+            yearEnd: null,
+            genre: [
+                'comedy',
+                'drama',
+                'sport',
+            ],
             summary: "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
         },
         style: {
@@ -3916,16 +3772,14 @@ const allMovies = {
             studio: 'fx',
             location: 'Hulu',
             weekday: 'Friday',
-            desc: {
-                seasons: 3,
-                yearStart: 2019,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'drama',
-                    'fantasy',
-                ],
-            },
+            seasons: 3,
+            yearStart: 2019,
+            yearEnd: null,
+            genre: [
+                'comedy',
+                'drama',
+                'fantasy',
+            ],
             summary: "Three vampires, Nandor, Colin Robinson and Nadja, struggle to keep up with the duties and responsibilities of everyday life as they reside in an apartment in New York.",
         },
         style: {
@@ -3974,16 +3828,14 @@ const allMovies = {
             // studio: 'studio',
             location: 'Downloaded',
             // date: '',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'drama',
-                    'horror',
-                    'mystery',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'drama',
+                'horror',
+                'mystery',
+            ],
             summary: "A wildly talented high school girl soccer team becomes the (un)lucky survivors of a plane crash deep in the Ontario wilderness.",
         },
         style: {
@@ -4011,14 +3863,12 @@ const allMovies = {
             service: 'netflix',
             // studio: '',
             location: 'Netflix',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: 2021,
-                genre: [
-                    'comedy',
-                ],
-            },
+            seasons: 6,
+            yearStart: 2015,
+            yearEnd: 2021,
+            genre: [
+                'comedy',
+            ],
             summary: "Revolving around a group of employees at a big-box store, it examines love, friendship and the beauty of everyday moments.",
         },
         style: {
@@ -4078,15 +3928,13 @@ const allMovies = {
             location: 'Prime Video',
             // date: 'Jan 13, 2022 19:00:00',
             // weekday: 'Thursday',
-            desc: {
-                seasons: 6,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
+            seasons: 6,
+            yearStart: 2015,
+            yearEnd: null,
+            genre: [
+                'action & adventure',
+                'sci-fi',
+            ],
             summary: "Hundreds of years in the future, things are different than what we are used to after humans have colonized the solar system and Mars has become an independent military power. Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman. The investigation leads them on a race across the solar system that could expose the greatest conspiracy in human history.",
         },
         style: {
@@ -4115,15 +3963,13 @@ const allMovies = {
             // studio: 'studio',
             location: 'Netflix',
             // date: 'Nov 25, 2021',
-            desc: {
-                seasons: 5,
-                yearStart: 2015,
-                yearEnd: null,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
+            seasons: 5,
+            yearStart: 2015,
+            yearEnd: null,
+            genre: [
+                'animation',
+                'comedy',
+            ],
             summary: "Follow the Murphy family back to the 1970s, when kids roamed wild, beer flowed freely and nothing came between a man and his TV.",
         },
         style: {
@@ -4181,16 +4027,14 @@ const allMovies = {
             service: 'netflix',
             // studio: 'studio',
             location: 'Netflix',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'romance',
-                    'friends',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'comedy',
+                'romance',
+                'friends',
+            ],
             summary: "Searching for answers, a socially awkward but endearing teacher moves in with three bachelors who think they understand love but are equally as lost.",
         },
         style: {
@@ -4254,15 +4098,13 @@ const allMovies = {
             service: 'hulu',
             // studio: 'studio',
             location: 'Hulu',
-            desc: {
-                seasons: 7,
-                yearStart: 2009,
-                yearEnd: 2015,
-                genre: [
-                    'comedy',
-                    'sport',
-                ],
-            },
+            seasons: 7,
+            yearStart: 2009,
+            yearEnd: 2015,
+            genre: [
+                'comedy',
+                'sport',
+            ],
             summary: "The League is an American sitcom and semi-improvised comedy about a about a fantasy football league and its members and their everyday lives.",
         },
         style: {
@@ -4290,15 +4132,13 @@ const allMovies = {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            desc: {
-                seasons: 6,
-                yearStart: 2014,
-                yearEnd: 2020,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
+            seasons: 6,
+            yearStart: 2014,
+            yearEnd: 2020,
+            genre: [
+                'animation',
+                'comedy',
+            ],
             summary: "Meet the most beloved sitcom horse of the '90s, 20 years later. He’s a curmudgeon with a heart of...not quite gold...but something like gold. Copper?",
         },
         style: {
@@ -4324,15 +4164,13 @@ const allMovies = {
             service: 'hulu',
             studio: 'hbo',
             location: 'Hulu',
-            desc: {
-                seasons: 8,
-                yearStart: 2011,
-                yearEnd: 2019,
-                genre: [
-                    'adventure',
-                    'fantasy',
-                ],
-            },
+            seasons: 8,
+            yearStart: 2011,
+            yearEnd: 2019,
+            genre: [
+                'adventure',
+                'fantasy',
+            ],
             summary: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
         },
         style: {
@@ -4360,15 +4198,13 @@ const allMovies = {
             service: 'netflix',
             // studio: 'studio',
             location: 'Netflix',
-            desc: {
-                seasons: 9,
-                yearStart: 2005,
-                yearEnd: 2013,
-                genre: [
-                    'comedy',
-                    'mockumentary',
-                ],
-            },
+            seasons: 9,
+            yearStart: 2005,
+            yearEnd: 2013,
+            genre: [
+                'comedy',
+                'mockumentary',
+            ],
             summary: "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
         },
         style: {
@@ -4396,15 +4232,13 @@ const allMovies = {
             service: 'prime',
             // studio: 'studio',
             location: 'Prime Video',
-            desc: {
-                seasons: 3,
-                yearStart: 2010,
-                yearEnd: 2011,
-                genre: [
-                    'comedy',
-                    'sport',
-                ],
-            },
+            seasons: 3,
+            yearStart: 2010,
+            yearEnd: 2011,
+            genre: [
+                'comedy',
+                'sport',
+            ],
             summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
             tags: [
                 'bms',
@@ -4467,15 +4301,13 @@ const allMovies = {
             service: 'hbo',
             // studio: 'studio',
             location: 'HBO Max',
-            desc: {
-                seasons: 6,
-                yearStart: 1990,
-                yearEnd: 1996,
-                genre: [
-                    'comedy',
-                    'family',
-                ],
-            },
+            seasons: 6,
+            yearStart: 1990,
+            yearEnd: 1996,
+            genre: [
+                'comedy',
+                'family',
+            ],
             summary: "Will, a street-smart teenager, moves from the tough streets of West Philly to posh Bel-Air to live with his Uncle Philip, Aunt Vivian, his cousins — spoiled Hilary, preppy Carlton and young Ashley — and their sophisticated British butler, Geoffrey. Though Will’s antics and upbringing contrast greatly with the upper-class lifestyle of his extended relatives, he soon finds himself right at home as a loved part of the family.",
         },
         style: {
@@ -4526,15 +4358,13 @@ const allMovies = {
             service: 'hulu',
             studio: 'nbc',
             location: 'Hulu',
-            desc: {
-                seasons: 8,
-                yearStart: 2013,
-                yearEnd: 2021,
-                genre: [
-                    'comedy',
-                    'crime',
-                ],
-            },
+            seasons: 8,
+            yearStart: 2013,
+            yearEnd: 2021,
+            genre: [
+                'comedy',
+                'crime',
+            ],
             summary: "Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard. That changes when Ray Holt, a man with a lot to prove, becomes the new commanding officer of Brooklyn's 99th precinct. As Holt reminds Peralta to respect the badge, an extremely competitive colleague - Detective Amy Santiago - starts to close in on the hotshot cop's arrest record.",
         },
         style: {
@@ -4560,14 +4390,12 @@ const allMovies = {
             service: 'hulu',
             // studio: 'studio',
             location: 'Hulu',
-            desc: {
-                seasons: 6,
-                yearStart: 2009,
-                yearEnd: 2014,
-                genre: [
-                    'crime',
-                ],
-            },
+            seasons: 6,
+            yearStart: 2009,
+            yearEnd: 2014,
+            genre: [
+                'crime',
+            ],
             summary: "White Collar is about the unlikely partnership of a con artist and an FBI agent who have been playing cat and mouse for years. Neal Caffrey (Matt Bomer), a charming criminal mastermind, is finally caught by his nemesis, FBI Agent Peter Burke (Tim DeKay.)",
         },
         style: {
@@ -4593,16 +4421,14 @@ const allMovies = {
             service: 'hulu',
             // studio: 'studio',
             location: 'Hulu',
-            desc: {
-                seasons: 9,
-                yearStart: 2005,
-                yearEnd: 2014,
-                genre: [
-                    'comedy',
-                    'romance',
-                    'friends',
-                ],
-            },
+            seasons: 9,
+            yearStart: 2005,
+            yearEnd: 2014,
+            genre: [
+                'comedy',
+                'romance',
+                'friends',
+            ],
             summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
             tags: [
                 'himym',
@@ -4653,13 +4479,11 @@ const allMovies = {
             service: 'hbo',
             studio: 'universal',
             location: 'HBO Max',
-            desc: {
-                year: 1993,
-                genre: [
-                    'action & adventure',
-                    'sci-fi',
-                ],
-            },
+            year: 1993,
+            genre: [
+                'action & adventure',
+                'sci-fi',
+            ],
             summary: "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
         },
         style: {
@@ -4685,13 +4509,11 @@ const allMovies = {
             // service: 'service',
             // studio: 'studio',
             // location: 'location',
-            desc: {
-                year: 1981,
-                genre: [
-                    'action',
-                    'adventure',
-                ],
-            },
+            year: 1981,
+            genre: [
+                'action',
+                'adventure',
+            ],
             summary: "When Dr. Indiana Jones - the tweed-suited professor who just happens to be a celebrated archaeologist - is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
         },
         style: {
@@ -4716,14 +4538,12 @@ const allMovies = {
             service: 'disney',
             studio: 'disney',
             location: 'Disney+',
-            desc: {
-                year: 2008,
-                genre: [
-                    'animation',
-                    'adventure',
-                    'sci-fi',
-                ],
-            },
+            year: 2008,
+            genre: [
+                'animation',
+                'adventure',
+                'sci-fi',
+            ],
             summary: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
         },
         style: {
@@ -4750,13 +4570,11 @@ const allMovies = {
             // service: 'service',
             // studio: 'studio',
             // location: 'location',
-            desc: {
-                year: 1998,
-                genre: [
-                    'drama',
-                    'war',
-                ],
-            },
+            year: 1998,
+            genre: [
+                'drama',
+                'war',
+            ],
             summary: "As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.",
         },
         style: {
@@ -4781,14 +4599,12 @@ const allMovies = {
             // service: 'disney',
             // studio: 'starwars',
             // location: 'Disney+',
-            desc: {
-                year: 1985,
-                genre: [
-                    'adventure',
-                    'comedy',
-                    'sci-fi',
-                ],
-            },
+            year: 1985,
+            genre: [
+                'adventure',
+                'comedy',
+                'sci-fi',
+            ],
             summary: "Eighties teenager Marty McFly is accidentally sent back in time to 1955, inadvertently disrupting his parents' first meeting and attracting his mother's romantic interest. Marty must repair the damage to history by rekindling his parents' romance and - with the help of his eccentric inventor friend Doc Brown - return to 1985.",
         },
         style: {
@@ -4813,14 +4629,12 @@ const allMovies = {
             service: 'disney',
             studio: 'starwars',
             location: 'Disney+',
-            desc: {
-                year: 1977,
-                genre: [
-                    'adventure',
-                    'sci-fi',
-                    'star wars',
-                ],
-            },
+            year: 1977,
+            genre: [
+                'adventure',
+                'sci-fi',
+                'star wars',
+            ],
             summary: "Luke Skywalker begins a journey that will change the galaxy in Star Wars: Episode IV - A New Hope. Nineteen years after the formation of the Empire, Luke is thrust into the struggle of the Rebel Alliance when he meets Obi-Wan Kenobi, who has lived for years in seclusion on the desert planet of Tatooine. Obi-Wan begins Luke’s Jedi training as Luke joins him on a daring mission to rescue the beautiful Rebel leader Princess Leia from the clutches of Darth Vader and the evil Empire. Contains tobacco depictions.",
         },
         style: {
@@ -4847,13 +4661,11 @@ const allMovies = {
             // service: 'service',
             // studio: 'studio',
             // location: 'location',
-            desc: {
-                year: 2014,
-                genre: [
-                    'drama',
-                    'sci-fi',
-                ],
-            },
+            year: 2014,
+            genre: [
+                'drama',
+                'sci-fi',
+            ],
             summary: "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
         },
         style: {
@@ -4881,13 +4693,11 @@ const allMovies = {
             // studio: 'studio',
             location: 'Disney+',
             // date: '',
-            desc: {
-                year: 2009,
-                genre: [
-                    'adventure',
-                    'sci-fi',
-                ],
-            },
+            year: 2009,
+            genre: [
+                'adventure',
+                'sci-fi',
+            ],
             summary: "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
         },
         style: {
@@ -4912,14 +4722,12 @@ const allMovies = {
             service: 'disney',
             studio: 'disney',
             location: 'Disney+',
-            desc: {
-                year: 2011,
-                genre: [
-                    'adventure',
-                    'animation',
-                    'cars',
-                ],
-            },
+            year: 2011,
+            genre: [
+                'adventure',
+                'animation',
+                'cars',
+            ],
             summary: "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international espionage.",
         },
         style: {
@@ -4944,14 +4752,12 @@ const allMovies = {
             service: 'disney',
             studio: 'disney',
             location: 'Disney+',
-            desc: {
-                year: 2006,
-                genre: [
-                    'adventure',
-                    'animation',
-                    'cars',
-                ],
-            },
+            year: 2006,
+            genre: [
+                'adventure',
+                'animation',
+                'cars',
+            ],
             summary: "Race car Lightning McQueen is living in the fast lane...until he hits a detour and gets stranded in Radiator Springs, a forgotten town on Route 66. There he meets a heap of hilarious characters who help him discover there's more to life than fame.",
         },
         style: {
@@ -4977,12 +4783,10 @@ const allMovies = {
             studio: 'marvel',
             location: 'Coming Soon',
             // date: '15 Dec, 2021',
-            desc: {
-                year: 2021,
-                genre: [
-                    'sci-fi',
-                ],
-            },
+            year: 2021,
+            genre: [
+                'sci-fi',
+            ],
             summary: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
             tags: [
                 'mcu',
@@ -5012,13 +4816,11 @@ const allMovies = {
             service: 'netflix',
             studio: 'marvel',
             location: 'Netflix',
-            desc: {
-                year: 2007,
-                genre: [
-                    'action',
-                    'sci-fi',
-                ],
-            },
+            year: 2007,
+            genre: [
+                'action',
+                'sci-fi',
+            ],
             summary: "The seemingly invincible Spider-Man goes up against an all-new crop of villains in the third installment of the blockbuster adventure series.",
         },
         style: {
@@ -5045,12 +4847,10 @@ const allMovies = {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            desc: {
-                year: 2021,
-                genre: [
-                    'documentary',
-                ],
-            },
+            year: 2021,
+            genre: [
+                'documentary',
+            ],
             summary: "Fearless Nepali mountaineer Nimsdai Purja embarks on a seemingly impossible quest to summit all 14 of the world’s 8,000-meter peaks in seven months.",
         },
         style: {
@@ -5077,13 +4877,11 @@ const allMovies = {
             service: 'netflix',
             // studio: 'studio',
             location: 'Netflix',
-            desc: {
-                year: 2011,
-                genre: [
-                    'comedy',
-                    'adventure',
-                ],
-            },
+            year: 2011,
+            genre: [
+                'comedy',
+                'adventure',
+            ],
             summary: "After Kumar burns down Harold's family Christmas tree, the stoner pals tangle with mobsters on a pot-fueled Christmas Eve adventure through Manhattan.",
         },
         style: {
@@ -5112,13 +4910,11 @@ const allMovies = {
             // studio: 'studio',
             location: 'Coming Soon',
             // date: 'Dec 22, 2021',
-            desc: {
-                year: 2021,
-                genre: [
-                    'spy',
-                    'comedy',
-                ],
-            },
+            year: 2021,
+            genre: [
+                'spy',
+                'comedy',
+            ],
             summary: "In the early years of the 20th century, the Kingsman agency is formed to stand against a cabal plotting a war to wipe out millions.",
         },
         style: {
@@ -5144,13 +4940,11 @@ const allMovies = {
             service: 'netflix',
             studio: 'marvel',
             location: 'Netflix',
-            desc: {
-                year: 2002,
-                genre: [
-                    'action',
-                    'sci-fi',
-                ],
-            },
+            year: 2002,
+            genre: [
+                'action',
+                'sci-fi',
+            ],
             summary: "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
         },
         style: {
@@ -5176,13 +4970,11 @@ const allMovies = {
             // studio: 'studio',
             location: 'HBO Max',
             // date: '',
-            desc: {
-                year: 2001,
-                genre: [
-                    'adventure',
-                    'fantasy',
-                ],
-            },
+            year: 2001,
+            genre: [
+                'adventure',
+                'fantasy',
+            ],
             summary: "With the help of a courageous fellowship of friends and allies, Frodo embarks on a perilous mission to destroy the legendary One Ring.",
         },
         style: {
@@ -5208,13 +5000,11 @@ const allMovies = {
             // studio: 'pixar',
             location: 'Disney+',
             // date: '',
-            desc: {
-                year: 2020,
-                genre: [
-                    'animation',
-                    'comedy',
-                ],
-            },
+            year: 2020,
+            genre: [
+                'animation',
+                'comedy',
+            ],
             summary: "Jamie Foxx leads an all-star cast in this hilarious, heart-filled adventure. Pixar’s 'Soul' introduces Joe, who lands the gig of his life at the best jazz club in town. But one misstep lands Joe in a fantastical place: The Great Before. There, he teams up with soul 22 (Tina Fey), and together they find the answers to some of life’s biggest questions.",
         },
         style: {
@@ -5241,13 +5031,11 @@ const allMovies = {
             service: 'hbo',
             // studio: 'studio',
             location: 'HBO Max',
-            desc: {
-                year: 2004,
-                genre: [
-                    'comedy',
-                    'adventure',
-                ],
-            },
+            year: 2004,
+            genre: [
+                'comedy',
+                'adventure',
+            ],
             summary: "Nerdy accountant Harold and his irrepressible friend, Kumar, get stoned watching television and find themselves utterly bewitched by a commercial for White Castle. Convinced there must be one nearby, the two set out on a late-night odyssey that takes them deep into New Jersey. Somehow, the boys manage to run afoul of rednecks, cops and even a car-stealing Neil Patrick Harris before getting anywhere near their beloved sliders.",
         },
         style: {
@@ -5274,13 +5062,11 @@ const allMovies = {
             // service: 'service',
             // studio: 'studio',
             location: 'Philo',
-            desc: {
-                year: 2000,
-                genre: [
-                    'comedy',
-                    'horror',
-                ],
-            },
+            year: 2000,
+            genre: [
+                'comedy',
+                'horror',
+            ],
             summary: "A familiar-looking group of teenagers find themselves being stalked by a more-than-vaguely recognizable masked killer! As the victims begin to pile up and the laughs pile on, none of your favorite scary movies escape the razor-sharp satire of this outrageously funny parody!",
         },
         style: {
@@ -5305,13 +5091,11 @@ const allMovies = {
             service: 'hbo',
             // studio: 'studio',
             location: 'HBO Max',
-            desc: {
-                year: 2018,
-                genre: [
-                    'drama',
-                    'romance',
-                ],
-            },
+            year: 2018,
+            genre: [
+                'drama',
+                'romance',
+            ],
             summary: "An American-born Chinese economics professor accompanies her boyfriend to Singapore for his best friend's wedding, only to get thrust into the lives of Asia's rich and famous.",
         },
         style: {
@@ -5361,12 +5145,10 @@ const allMovies = {
             studio: 'netflix',
             location: 'Netflix',
             // date: '',
-            desc: {
-                year: 2021,
-                genre: [
-                    'comedy special',
-                ],
-            },
+            year: 2021,
+            genre: [
+                'comedy special',
+            ],
             summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight - and get a few things off his chest.",
         },
         style: {
@@ -5499,13 +5281,11 @@ const allMovies = {
             service: 'disney',
             studio: 'disney',
             location: 'Disney+',
-            desc: {
-                year: 2021,
-                genre: [
-                    'action & adventure',
-                    'fantasy',
-                ],
-            },
+            year: 2021,
+            genre: [
+                'action & adventure',
+                'fantasy',
+            ],
             summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
             tags: [
                 'mcu',
@@ -5533,14 +5313,12 @@ const allMovies = {
             // service: 'disney',
             // studio: 'starwars',
             // location: 'Disney+',
-            desc: {
-                year: 2002,
-                genre: [
-                    'adventure',
-                    'crime',
-                    'thriller',
-                ],
-            },
+            year: 2002,
+            genre: [
+                'adventure',
+                'crime',
+                'thriller',
+            ],
             summary: "A mob enforcer's son in 1930s Illinois witnesses a murder, forcing him and his father to take to the road, and his father down a path of redemption and revenge.",
         },
         style: {
@@ -5565,14 +5343,12 @@ const allMovies = {
             service: 'hbo',
             // studio: 'studio',
             location: 'HBO Max',
-            desc: {
-                year: 1990,
-                genre: [
-                    'crime',
-                    'drama',
-                    'mob',
-                ],
-            },
+            year: 1990,
+            genre: [
+                'crime',
+                'drama',
+                'mob',
+            ],
             summary: "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
         },
         style: {
@@ -5599,12 +5375,10 @@ const allMovies = {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            desc: {
-                year: 2020,
-                genre: [
-                    'documentary',
-                ],
-            },
+            year: 2020,
+            genre: [
+                'documentary',
+            ],
             summary: "This documentary-drama hybrid explores the dangerous human impact of social networking, with tech experts sounding the alarm on their own creations.",
         },
         style: {
@@ -5632,15 +5406,13 @@ const allMovies = {
             location: ' TV+',
             // date: '',
             weekday: 'Thursday',
-            desc: {
-                seasons: 1,
-                yearStart: 2021,
-                yearEnd: null,
-                genre: [
-                    'comedy',
-                    'talk show',
-                ],
-            },
+            seasons: 1,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'comedy',
+                'talk show',
+            ],
             summary: "It's easy to feel overwhelmed by the world's problems. It's harder to pinpoint the systems responsible for creating them. In this series, Jon Stewart brings together people impacted by different parts of a problem to discuss how we come up with change.",
         },
         style: {
@@ -5687,16 +5459,14 @@ const allMovies = {
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            desc: {
-                seasons: 4,
-                yearStart: 2014,
-                yearEnd: null,
-                genre: [
-                    'crime',
-                    'drama',
-                    'thriller',
-                ],
-            },
+            seasons: 4,
+            yearStart: 2014,
+            yearEnd: null,
+            genre: [
+                'crime',
+                'drama',
+                'thriller',
+            ],
             summary: "In 1950 Kansas City, two crime syndicates fighting for a piece of the American dream have struck an uneasy peace. Together, they control an alternate economy of exploitation, graft and drugs. To cement their truce, Loy Cannon, the head of the Black crime family, trades his youngest son to his enemy Donatello Fadda, the head of the Italian mafia. In return, Donatello surrenders his youngest son Zero to Loy. Intertwined with this tale of immigration, assimilation, and power, are the stories of Josto Fadda, the impulsive and self-indulgent heir apparent to the Fadda Crime Family; Donatello’s adopted son Rabbi Milligan; Detective Odis Weff and Oraetta Mayflower; Ethelrida Pearl Smutny, the precocious 16-year-old daughter of Thurman and Dibrell Smutny; and U.S. Marshal Dick “Deafy” Wickware.",
         },
         style: {
@@ -5724,12 +5494,10 @@ const allMovies = {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            desc: {
-                year: 2020,
-                genre: [
-                    'comedy special',
-                ],
-            },
+            year: 2020,
+            genre: [
+                'comedy special',
+            ],
             summary: "From the Vedas to Vasco da Gama to vacuous Bollywood plotlines, comedian Vir Das celebrates the history of India with his one-of-a-kind perspective.",
         },
         style: {
@@ -5754,15 +5522,13 @@ const allMovies = {
             // studio: 'bbc',
             location: 'HBO Max',
             // date: '',
-            desc: {
-                seasons: 4,
-                yearStart: 2018,
-                yearEnd: 2022,
-                genre: [
-                    'action & adventure',
-                    'drama',
-                ],
-            },
+            seasons: 4,
+            yearStart: 2018,
+            yearEnd: 2022,
+            genre: [
+                'action & adventure',
+                'drama',
+            ],
             summary: "Villanelle is a psychopathic assassin, and Eve is the woman charged with hunting her down; the two fiercely intelligent women, equally obsessed with each other, go head to head in an epic game of cat and mouse.",
         },
         style: {
@@ -5848,6 +5614,40 @@ const allMovies = {
 // bad education
 // arrested dev
 
+const processDesc = {
+    main: function ({ info }, type) {
+        if (!info.description) {
+            let descString = ''
+
+            if (!type) {
+                if (info.genre) descString = `${this.genre(info)}`
+                if (info.seasons) descString = `${descString} &#149 ${this.seasons(info)}`
+                if ((info.year) || (info.yearStart)) descString = `${descString} &#149 ${this.year(info)}`
+            } else if (type == 'genre') {
+                if (info.genre) descString = `${this.genre(info)}`
+            }
+
+            return (descString)
+        }
+    },
+    genre: function (info) {
+        let str = ''
+        for (let i = 0; i < info.genre.length; i++) {
+            str = `${str}${info.genre[i]}`
+            if (i < info.genre.length - 1) str = `${str} &#149 `
+        }
+        return str
+    },
+    seasons: function (info) {
+        if (info.seasons > 1) return `${info.seasons} seasons`
+        else return `${info.seasons} season`
+    },
+    year: function (info) {
+        if (info.yearStart) return `${info.yearStart} - ${info.yearEnd ?? 'Present'}`
+        else return info.year
+    },
+}
+
 for (const key in allMovies) {
     const movie = allMovies[key]
 
@@ -5856,6 +5656,25 @@ for (const key in allMovies) {
         if (movie.link.netflix) movie.link = `https://www.netflix.com/title/${movie.link.netflix}`
         else if (movie.link.primeVideo) movie.link = `primevideo://detail?asin=${movie.link.primeVideo}` //`https://watch.amazon.com/detail?asin=${movie.link.primeVideo}`
     }
+
+    // process info
+    if (movie.info.studio) movie.info.serviceImg = `${movie.info.studio}.svg`
+    else if (movie.info.service) movie.info.serviceImg = `${movie.info.service}.svg`
+
+    // process location
+
+    // process date
+    if (movie.info.date) movie.info.date = new Date(movie.info.date)
+
+    // process desc
+    movie.desc = {
+        full: null,
+        genre: null,
+    }
+
+    if (movie.info) movie.desc.full = processDesc.main(movie, null)
+    else if (movie.info.description) movie.desc.full = movie.info.description
+    if (movie.info) movie.desc.genre = processDesc.main(movie, 'genre')
 
     // show tv detail
     movie.detail = function () {

@@ -57,7 +57,7 @@ function tvDetail(key) {
     }
 
     // title, desc, play button
-    let info = textboxBase(movie.name, processDesc(movie))
+    let info = textboxBase(movie.name, movie.desc.full)
     info.firstChild.classList.add('hidden-mobile')
     info.classList = 'info'
 

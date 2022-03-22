@@ -12,7 +12,7 @@ function appTrackAdd(data) {
 function widgetTrackContent() {
     let data = appTrackProcess()
 
-    for (const item of data) console.log(item)
+    // for (const item of data) console.log(item)
 
 
     let nodes = []
@@ -26,7 +26,7 @@ function widgetTrackContent() {
         let row = document.createElement('div')
         row.classList = 'row'
 
-        console.log(app)
+        // console.log(app)
 
         let thumb = thumbElement(app.thumb)
         let text = textboxBase(app.name, `${item.count} time${item.count > 1 ? 's' : ''}`)

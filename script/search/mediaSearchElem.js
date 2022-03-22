@@ -59,7 +59,7 @@ function searchMoviesNewRow(results, title, size) {
 
         // textbox
         if (big) {
-            card.append(textboxBase(null, processDesc(movie)))
+            card.append(textboxBase(null, movie.desc.full))
 
             let more = document.createElement('a')
             more.classList = 'more'
@@ -73,7 +73,7 @@ function searchMoviesNewRow(results, title, size) {
         // med card
         if (med) {
             card.classList.remove('clickable-o')
-            card = mediaDetailCard(card, processDesc(movie, 'genre'), movie.name, movie.info.summary)
+            card = mediaDetailCard(card, movie.desc.genre, movie.name, movie.info.summary)
         }
 
         // links
@@ -153,7 +153,7 @@ function searchMoviesRow(results, title) {
         }
 
         card.append(thumb)
-        let textbox = textboxBase(movie.name, processDesc(movie))
+        let textbox = textboxBase(movie.name, movie.desc.full)
         card.append(textbox)
 
 
@@ -200,14 +200,14 @@ function searchMoviesRowBig(results, title) {
         card.append(thumbCont)
 
         if (movie.style.titleType) {
-            var textbox = textboxBase(null, processDesc(movie))
+            var textbox = textboxBase(null, movie.desc.full)
 
             let title = document.createElement('div')
             title.classList = `tv-title ${movie.style.titleSize}`
             title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.titleType})`)
             textbox.prepend(title)
         } else {
-            var textbox = textboxBase(movie.name, processDesc(movie))
+            var textbox = textboxBase(movie.name, movie.desc.full)
         }
         card.append(textbox)
 
@@ -342,7 +342,7 @@ function searchBookPodNewRow(results, title, type) {
 
         // // textbox
         // if (big) {
-        //     card.append(textboxBase(null, processDesc(movie)))
+        //     card.append(textboxBase(null, movie.desc.full))
 
         //     let more = document.createElement('a')
         //     more.classList = 'more'
