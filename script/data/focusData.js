@@ -26,6 +26,10 @@ let focusData = [
             distract: true,
             widgets: function () {
                 return [
+                    widgets.media.card(movieData[0][0], 'movie'),
+                    widgets.media.card(movieData[0][1], 'movie'),
+                    widgets.media.card(movieData[0][2], 'movie'),
+                    widgets.media.card(movieData[0][3], 'movie'),
                     widgets.app.card({
                         title: 'Tracking',
                         apps: [

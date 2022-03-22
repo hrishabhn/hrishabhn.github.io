@@ -19,9 +19,13 @@ const allMovies = {
         },
         style: {
             color: 'D4584B',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '8.4 / 10',
         },
@@ -93,9 +97,13 @@ const allMovies = {
         },
         style: {
             color: '3d250f',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -154,9 +162,13 @@ const allMovies = {
         },
         style: {
             color: '493c35',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -187,9 +199,13 @@ const allMovies = {
         },
         style: {
             color: colorData['fluent'].cyanBlue20,
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -220,9 +236,13 @@ const allMovies = {
         },
         style: {
             color: colorData.fluent.gray20,
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'webp',
+                size: 'widest',
+            },
             mobileType: 'png',
             mobileSize: '8 / 10',
         },
@@ -277,7 +297,7 @@ const allMovies = {
         link: 'https://www.hulu.com/series/abbott-elementary-7c33eeb2-5d16-4a10-ad9e-ee31f9fff15c',
         info: {
             service: 'hulu',
-            studio: 'abc',
+            // studio: 'abc',
             location: 'Hulu',
             date: '22 March 2022',
             seasons: 1,
@@ -290,9 +310,13 @@ const allMovies = {
         },
         style: {
             color: 'e6c8a0',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -336,8 +360,8 @@ const allMovies = {
         //     netflix: '80197526'
         // },
         info: {
-            service: 'apple',
-            studio: 'apple',
+            service: 'appleTV',
+            studio: 'appleTV',
             location: 'Apple TV+',
             date: '18 March 2022',
             seasons: 1,
@@ -351,9 +375,13 @@ const allMovies = {
         },
         style: {
             color: colorData.fluent.cyan30,
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'webp',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '7 / 10',
         },
@@ -397,9 +425,13 @@ const allMovies = {
         },
         style: {
             color: '4d5372',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             // mobileType: 'jpg',
             // mobileSize: '7 / 10',
         },
@@ -430,9 +462,13 @@ const allMovies = {
         },
         style: {
             color: 'a98264',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -465,9 +501,13 @@ const allMovies = {
         },
         style: {
             color: colorData['fluent'].red,
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tall',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'tall',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -546,9 +586,13 @@ const allMovies = {
         },
         style: {
             color: '660000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -602,9 +646,13 @@ const allMovies = {
         },
         style: {
             color: '4e432e',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -638,9 +686,13 @@ const allMovies = {
         },
         style: {
             color: '3f1513',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '10 / 9',
         },
@@ -674,9 +726,13 @@ const allMovies = {
         },
         style: {
             color: '4b718b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -705,9 +761,13 @@ const allMovies = {
         },
         style: {
             color: '3d3554',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -738,9 +798,13 @@ const allMovies = {
         },
         style: {
             color: '994d33',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpeg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'webp',
             mobileSize: '7 / 10',
         },
@@ -774,9 +838,13 @@ const allMovies = {
         },
         style: {
             color: '667a88',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'svg',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -807,9 +875,13 @@ const allMovies = {
         },
         style: {
             color: colorData.fluent.cyan30,
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '1000 / 1204',
         },
@@ -842,9 +914,13 @@ const allMovies = {
         },
         style: {
             color: '645542',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -868,9 +944,13 @@ const allMovies = {
         },
         style: {
             color: '3d250f',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -898,9 +978,13 @@ const allMovies = {
         },
         style: {
             color: '6f897e',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -925,9 +1009,13 @@ const allMovies = {
         },
         style: {
             color: 'a5a39e',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '10 / 10',
         },
@@ -951,9 +1039,13 @@ const allMovies = {
         },
         style: {
             color: '747a71',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '10 / 10',
         },
@@ -986,9 +1078,13 @@ const allMovies = {
         },
         style: {
             color: '313C82',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -1013,9 +1109,13 @@ const allMovies = {
         },
         style: {
             color: '6c4e44',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -1039,9 +1139,13 @@ const allMovies = {
         },
         style: {
             color: '484b51',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -1074,9 +1178,13 @@ const allMovies = {
         },
         style: {
             color: '000000',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -1114,9 +1222,13 @@ const allMovies = {
         style: {
             color: '000000',
             color: colorData['fluent'].red,
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'png',
             mobileSize: '7 / 10',
         },
@@ -1191,9 +1303,13 @@ const allMovies = {
         },
         style: {
             color: colorData.fluent.red,
-            posterType: 'png',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'png',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'png',
             mobileSize: '780 / 1059',
         },
@@ -1267,7 +1383,9 @@ const allMovies = {
         },
         style: {
             color: '7d7e42',
-            posterType: 'webp',
+            poster: {
+                wideType: 'webp',
+            },
             // titleType: 'png',
             // titleSize: 'widest',
             mobileType: 'jpg',
@@ -1302,9 +1420,13 @@ const allMovies = {
         },
         style: {
             color: '5b4f43',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '960 / 1008',
         },
@@ -1337,9 +1459,13 @@ const allMovies = {
         },
         style: {
             color: '66472A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpeg',
             mobileSize: '1',
         },
@@ -1392,9 +1518,13 @@ const allMovies = {
         },
         style: {
             color: '757077',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'png',
             mobileSize: '8.7 / 10',
         },
@@ -1424,9 +1554,13 @@ const allMovies = {
         },
         style: {
             color: '86a097',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'svg',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -1456,9 +1590,13 @@ const allMovies = {
         },
         style: {
             color: '443a3c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -1490,9 +1628,13 @@ const allMovies = {
         },
         style: {
             color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '9 / 10',
         },
@@ -1522,9 +1664,13 @@ const allMovies = {
         },
         style: {
             color: '0b276d',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tallest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'tallest',
+            },
             mobileType: 'jpg',
             mobileSize: '10 / 9.2',
         },
@@ -1554,9 +1700,13 @@ const allMovies = {
         },
         style: {
             color: '6c737a',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '1',
         },
@@ -1596,9 +1746,13 @@ const allMovies = {
         },
         style: {
             color: '7f6b57',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             tvTimeID: '368109',
@@ -1620,9 +1774,13 @@ const allMovies = {
         },
         style: {
             color: '262841',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: '260092',
@@ -1653,9 +1811,13 @@ const allMovies = {
         },
         style: {
             color: 'b11016',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'svg',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -1681,9 +1843,13 @@ const allMovies = {
         },
         style: {
             color: '838383',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'svg',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '10 / 11',
         },
@@ -1714,9 +1880,13 @@ const allMovies = {
         },
         style: {
             color: '4f6368',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -1747,9 +1917,13 @@ const allMovies = {
         },
         style: {
             color: '2c2433',
-            posterType: 'webp',
-            titleType: 'jpeg',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'jpeg',
+                size: 'widest',
+            },
             mobileType: 'jpeg',
             mobileSize: '2 / 3',
         },
@@ -1783,9 +1957,13 @@ const allMovies = {
         },
         style: {
             color: '682008',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             tvTimeID: '397441',
@@ -1816,9 +1994,13 @@ const allMovies = {
         },
         style: {
             color: '515d63',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -1844,9 +2026,13 @@ const allMovies = {
         },
         style: {
             color: '813a2a',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'tallest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'tallest',
+            },
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -1868,9 +2054,13 @@ const allMovies = {
         },
         style: {
             color: '3e587a',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '2 / 3',
         },
@@ -1894,9 +2084,13 @@ const allMovies = {
         },
         style: {
             color: '3f3a2d',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -1922,9 +2116,13 @@ const allMovies = {
         },
         style: {
             color: '7a726b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             tvTimeID: '82066',
@@ -1946,9 +2144,13 @@ const allMovies = {
         },
         style: {
             color: '5D080D',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: "399959",
@@ -1978,9 +2180,13 @@ const allMovies = {
         },
         style: {
             color: '8f7d4b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '768 / 1024',
         },
@@ -2013,9 +2219,13 @@ const allMovies = {
         },
         style: {
             color: 'dedccc',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: '382466',
@@ -2044,9 +2254,13 @@ const allMovies = {
         },
         style: {
             color: '513d35',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'png',
             mobileSize: '3 / 4',
         },
@@ -2091,9 +2305,13 @@ const allMovies = {
         },
         style: {
             color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '8 / 10',
         },
@@ -2156,9 +2374,13 @@ const allMovies = {
         },
         style: {
             color: '444743',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -2191,9 +2413,13 @@ const allMovies = {
         },
         style: {
             color: '5980C4',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -2234,9 +2460,13 @@ const allMovies = {
         },
         style: {
             color: 'A14533',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -2268,9 +2498,13 @@ const allMovies = {
         },
         style: {
             color: '337799',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'webp',
             mobileSize: '7 / 10',
         },
@@ -2326,9 +2560,13 @@ const allMovies = {
         },
         style: {
             color: 'ea80ff',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -2361,9 +2599,13 @@ const allMovies = {
         },
         style: {
             color: '655b3f',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -2408,9 +2650,13 @@ const allMovies = {
         },
         style: {
             color: '3B347A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '8 / 10',
         },
@@ -2459,9 +2705,13 @@ const allMovies = {
         },
         style: {
             color: '339999',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '7 / 10',
         },
@@ -2493,9 +2743,13 @@ const allMovies = {
         },
         style: {
             color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'svg',
+                size: 'mid',
+            },
         },
         apps: {
             tvTimeID: '75978',
@@ -2524,9 +2778,13 @@ const allMovies = {
         },
         style: {
             color: '70655B',
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'webp',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '2 / 3',
         },
@@ -2557,9 +2815,13 @@ const allMovies = {
         },
         style: {
             color: '685467',
-            posterType: 'webp',
-            titleType: 'svg',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'svg',
+                size: 'widest',
+            },
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -2588,9 +2850,13 @@ const allMovies = {
         },
         style: {
             color: '6f4c2d',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -2623,9 +2889,13 @@ const allMovies = {
         },
         style: {
             color: 'a6886c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '1000 / 973',
         },
@@ -2658,9 +2928,13 @@ const allMovies = {
         },
         style: {
             color: '3c2e2c',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '1',
         },
@@ -2684,9 +2958,13 @@ const allMovies = {
         },
         style: {
             color: '0F0F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             tvTimeID: "367147",
@@ -2710,9 +2988,13 @@ const allMovies = {
         },
         style: {
             color: '6d6256',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: "356317",
@@ -2736,9 +3018,13 @@ const allMovies = {
         },
         style: {
             color: '2C2850',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "tall",
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'tall',
+            },
         },
         apps: {
             tvTimeID: "262954",
@@ -2762,9 +3048,13 @@ const allMovies = {
         },
         style: {
             color: '889898',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             tvTimeID: "354905",
@@ -2785,9 +3075,13 @@ const allMovies = {
         },
         style: {
             color: '300',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: "tall",
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'tall',
+            },
         },
     },
     'legion': {
@@ -2803,9 +3097,13 @@ const allMovies = {
         },
         style: {
             color: '0b276d',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -2828,9 +3126,13 @@ const allMovies = {
         },
         style: {
             color: 'E25924',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: "314087",
@@ -2859,9 +3161,13 @@ const allMovies = {
         },
         style: {
             color: '041f41',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -2895,9 +3201,13 @@ const allMovies = {
         },
         style: {
             color: '660000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -2932,9 +3242,13 @@ const allMovies = {
         },
         style: {
             // color: '000000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -2964,9 +3278,13 @@ const allMovies = {
         },
         style: {
             color: '699933',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'tallest',
+            poster: {
+                wideType: 'jpeg',
+            },
+            title: {
+                type: 'png',
+                size: 'tallest',
+            },
             mobileType: 'webp',
             mobileSize: '7 / 10',
         },
@@ -3019,9 +3337,13 @@ const allMovies = {
         },
         style: {
             color: 'FDC801',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -3082,9 +3404,13 @@ const allMovies = {
         },
         style: {
             // color: '000000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -3113,9 +3439,13 @@ const allMovies = {
         },
         style: {
             color: '3B347A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -3164,9 +3494,13 @@ const allMovies = {
         },
         style: {
             color: '615e65',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -3199,9 +3533,13 @@ const allMovies = {
         },
         style: {
             color: '1e3d51',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '1',
         },
@@ -3225,9 +3563,13 @@ const allMovies = {
         },
         style: {
             color: '6C7866',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             // tvTimeID: null,
@@ -3261,9 +3603,13 @@ const allMovies = {
         },
         style: {
             color: 'a87643',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             tvTimeID: '362472',
@@ -3285,9 +3631,13 @@ const allMovies = {
         },
         style: {
             color: '200f17',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: "357888",
@@ -3319,9 +3669,13 @@ const allMovies = {
         },
         style: {
             color: '4d627f',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -3345,9 +3699,13 @@ const allMovies = {
         },
         style: {
             color: '504A6A',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: '349271',
@@ -3369,9 +3727,13 @@ const allMovies = {
         },
         style: {
             color: '2F322F',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             // tvTimeID: null,
@@ -3401,9 +3763,13 @@ const allMovies = {
         },
         style: {
             color: '5980C4',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '1',
         },
@@ -3433,9 +3799,13 @@ const allMovies = {
         },
         style: {
             color: '6b7790',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: '376815',
@@ -3465,9 +3835,13 @@ const allMovies = {
         },
         style: {
             color: '292A27',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             tvTimeID: "399959",
@@ -3500,9 +3874,13 @@ const allMovies = {
         },
         style: {
             // color: '000000',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -3534,9 +3912,13 @@ const allMovies = {
         },
         style: {
             color: colorData.fluent['green20'],
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'wide',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -3576,9 +3958,13 @@ const allMovies = {
         },
         style: {
             color: '2D1D54',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: '275274',
@@ -3626,9 +4012,13 @@ const allMovies = {
         },
         style: {
             color: '555962',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -3684,9 +4074,13 @@ const allMovies = {
         },
         style: {
             color: '3f1513', // 7C4E31
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: '383275',
@@ -3716,9 +4110,13 @@ const allMovies = {
         },
         style: {
             color: '35465e',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '2 / 3',
         },
@@ -3784,9 +4182,13 @@ const allMovies = {
         },
         style: {
             color: '1C2C70',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -3840,9 +4242,13 @@ const allMovies = {
         },
         style: {
             color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'png',
             mobileSize: '7 / 10',
         },
@@ -3873,9 +4279,13 @@ const allMovies = {
         },
         style: {
             color: '0070DB',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -3939,9 +4349,13 @@ const allMovies = {
         },
         style: {
             color: '466A83',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -3974,9 +4388,13 @@ const allMovies = {
         },
         style: {
             color: '0B6F38',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '1',
         },
@@ -4039,9 +4457,13 @@ const allMovies = {
         },
         style: {
             color: 'a59c4f',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4109,9 +4531,13 @@ const allMovies = {
         },
         style: {
             color: '003A6E',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -4143,9 +4569,13 @@ const allMovies = {
         },
         style: {
             color: '656592',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4175,9 +4605,13 @@ const allMovies = {
         },
         style: {
             color: '4e3e46',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'svg',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4209,9 +4643,13 @@ const allMovies = {
         },
         style: {
             color: '7E6C64',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'svg',
+                size: 'widest',
+            },
             mobileType: 'png',
             mobileSize: '8 / 10',
         },
@@ -4246,9 +4684,13 @@ const allMovies = {
         },
         style: {
             color: colorData.fluent.blue10,
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'png',
             mobileSize: '7 / 10',
         },
@@ -4312,9 +4754,13 @@ const allMovies = {
         },
         style: {
             color: '754A9E',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4338,9 +4784,13 @@ const allMovies = {
         },
         style: {
             color: '6a5828',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4369,9 +4819,13 @@ const allMovies = {
         },
         style: {
             color: '8b6a4b',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "tall",
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'tall',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -4400,9 +4854,13 @@ const allMovies = {
         },
         style: {
             color: '615c59',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '9 / 10',
         },
@@ -4436,9 +4894,13 @@ const allMovies = {
         },
         style: {
             color: '60B9C6',
-            posterType: 'jpg',
-            titleType: 'svg',
-            titleSize: 'tallest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'svg',
+                size: 'tallest',
+            },
             mobileType: 'webp',
             mobileSize: '7 / 10',
         },
@@ -4488,9 +4950,13 @@ const allMovies = {
         },
         style: {
             color: '3c2d2a',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tallest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'tallest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4518,9 +4984,13 @@ const allMovies = {
         },
         style: {
             color: '9a6a45',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4548,9 +5018,13 @@ const allMovies = {
         },
         style: {
             color: '232055',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4579,9 +5053,13 @@ const allMovies = {
         },
         style: {
             color: '6f716b',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4609,9 +5087,13 @@ const allMovies = {
         },
         style: {
             color: '605267',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4639,9 +5121,13 @@ const allMovies = {
         },
         style: {
             color: '372f35',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4670,9 +5156,13 @@ const allMovies = {
         },
         style: {
             color: '94a6ac',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4702,9 +5192,13 @@ const allMovies = {
         },
         style: {
             color: '106888',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4732,9 +5226,13 @@ const allMovies = {
         },
         style: {
             color: '1E374D',
-            posterType: 'jpeg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpeg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4762,9 +5260,13 @@ const allMovies = {
         },
         style: {
             color: '1E374D',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4794,9 +5296,13 @@ const allMovies = {
         },
         style: {
             color: 'af0000',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4825,9 +5331,13 @@ const allMovies = {
         },
         style: {
             color: '484b53',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4855,9 +5365,13 @@ const allMovies = {
         },
         style: {
             color: '4b6176',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '1',
         },
@@ -4886,9 +5400,13 @@ const allMovies = {
         },
         style: {
             color: '274223',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4919,9 +5437,13 @@ const allMovies = {
         },
         style: {
             color: '444f52',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4949,9 +5471,13 @@ const allMovies = {
         },
         style: {
             color: '9a6732',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -4979,9 +5505,13 @@ const allMovies = {
         },
         style: {
             color: '7e763f',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5009,9 +5539,13 @@ const allMovies = {
         },
         style: {
             color: '232e43',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'tallest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'tallest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5040,9 +5574,13 @@ const allMovies = {
         },
         style: {
             color: '5980C4',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '12.4 / 10',
         },
@@ -5071,9 +5609,13 @@ const allMovies = {
         },
         style: {
             color: '994d33',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '8 / 10',
         },
@@ -5100,9 +5642,13 @@ const allMovies = {
         },
         style: {
             color: '76665b',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tallest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'tallest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5153,9 +5699,13 @@ const allMovies = {
         },
         style: {
             color: '6d223c',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5181,9 +5731,13 @@ const allMovies = {
         },
         style: {
             color: '313B47',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'tallest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'tallest',
+            },
             mobileType: 'jpg',
             mobileSize: '1',
         },
@@ -5209,9 +5763,13 @@ const allMovies = {
         },
         style: {
             color: '3c4749',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5235,9 +5793,13 @@ const allMovies = {
         },
         style: {
             color: '599DAA',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5260,9 +5822,13 @@ const allMovies = {
         },
         style: {
             color: '3b2420',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5293,9 +5859,13 @@ const allMovies = {
         },
         style: {
             color: '4b3831',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5323,9 +5893,13 @@ const allMovies = {
         },
         style: {
             color: '55534d',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5353,9 +5927,13 @@ const allMovies = {
         },
         style: {
             color: '1e252c',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5383,9 +5961,13 @@ const allMovies = {
         },
         style: {
             color: 'F7ECBD',
-            posterType: 'jpg',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'jpg',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
         },
@@ -5417,9 +5999,13 @@ const allMovies = {
         },
         style: {
             color: '334348',
-            posterType: 'webp',
-            titleType: 'webp',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'webp',
+                size: 'widest',
+            },
         },
         apps: {
             tvTimeID: '400756',
@@ -5441,9 +6027,13 @@ const allMovies = {
         },
         style: {
             color: '768a8e',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: "mid",
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             tvTimeID: null,
@@ -5471,9 +6061,13 @@ const allMovies = {
         },
         style: {
             color: '28374E',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'mid',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -5502,9 +6096,13 @@ const allMovies = {
         },
         style: {
             color: '9b732e',
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'widest',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
             mobileType: 'png',
             mobileSize: '7 / 10',
         },
@@ -5533,9 +6131,13 @@ const allMovies = {
         },
         style: {
             color: colorData.fluent.red,
-            posterType: 'webp',
-            titleType: 'png',
-            titleSize: 'wide',
+            poster: {
+                wideType: 'webp',
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
             mobileType: 'webp',
             mobileSize: '2 / 3',
         },
@@ -5557,7 +6159,6 @@ const allMovies = {
         ],
     },
 }
-
 
 // @new
 // {
@@ -5585,7 +6186,7 @@ const allMovies = {
 //     },
 //     style: {
 //         color: '000000',
-//         posterType: 'jpg',
+//         poster.wideType: 'jpg',
 //         titleType: 'png',
 //         titleSize: 'widest',
 //         mobileType: 'jpg',
@@ -5675,6 +6276,15 @@ for (const key in allMovies) {
     if (movie.info) movie.desc.full = processDesc.main(movie, null)
     else if (movie.info.description) movie.desc.full = movie.info.description
     if (movie.info) movie.desc.genre = processDesc.main(movie, 'genre')
+
+    // style
+
+    if (!movie.style.title) movie.style.title = {
+        type: null,
+        size: null,
+    }
+
+
 
     // show tv detail
     movie.detail = function () {

@@ -40,7 +40,7 @@ function searchMoviesNewRow(results, title, size) {
 
         // thumb
         let thumb
-        if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.posterType}`)
+        if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
         else if (big) {
             thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
             thumb.style.setProperty('aspect-ratio', movie.style.mobileSize)
@@ -98,8 +98,8 @@ function movieCardTitle(key) {
     box.classList = 'tv-title-box'
 
     let title = document.createElement('div')
-    title.classList = `tv-title ${movie.style.titleSize}`
-    title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.titleType})`)
+    title.classList = `tv-title ${movie.style.title.size}`
+    title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.title.type})`)
 
     box.append(title)
     return box
@@ -143,12 +143,12 @@ function searchMoviesRow(results, title) {
         }
         if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
-        let thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.posterType}`)
+        let thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
         thumb.innerHTML = `<div class="grad"></div>`
-        if (movie.style.titleType) {
+        if (movie.style.title.type) {
             let title = document.createElement('div')
-            title.classList = `tv-title ${movie.style.titleSize}`
-            title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.titleType})`)
+            title.classList = `tv-title ${movie.style.title.size}`
+            title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.title.type})`)
             thumb.append(title)
         }
 
@@ -199,12 +199,12 @@ function searchMoviesRowBig(results, title) {
         thumbCont.append(growElement())
         card.append(thumbCont)
 
-        if (movie.style.titleType) {
+        if (movie.style.title.type) {
             var textbox = textboxBase(null, movie.desc.full)
 
             let title = document.createElement('div')
-            title.classList = `tv-title ${movie.style.titleSize}`
-            title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.titleType})`)
+            title.classList = `tv-title ${movie.style.title.size}`
+            title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.title.type})`)
             textbox.prepend(title)
         } else {
             var textbox = textboxBase(movie.name, movie.desc.full)
@@ -323,7 +323,7 @@ function searchBookPodNewRow(results, title, type) {
 
         // // thumb
         // let thumb
-        // if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.posterType}`)
+        // if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
         // else if (big) {
         //     thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
         //     thumb.style.setProperty('aspect-ratio', movie.style.mobileSize)

@@ -22,18 +22,15 @@
 
 .widget-card.media.movie .service {
     align-self: flex-end;
-    height: 12px;
+    height: 10px;
     width: 50px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
     background-image: var(--service);
     opacity: 0.8;
-
-    background-image: url(../../../media-image/service/netflix.svg);
-
 }
 
 

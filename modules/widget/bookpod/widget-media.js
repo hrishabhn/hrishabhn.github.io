@@ -7,7 +7,7 @@ function widgetMedia(data, type) {
         card.style.setProperty('--thumb', `url(../../../media-image/books/${data.id}.${data.coverType})`)
     } else if (type == 'movie') {
         card.classList.add('movie')
-        card.style.setProperty('--thumb', `url(../../../media-image/TV/background/${data.id}.${data.style.posterType})`)
+        card.style.setProperty('--thumb', `url(../../../media-image/TV/background/${data.id}.${data.style.poster.wideType})`)
     }
 
     let bg = bgElement()
@@ -21,6 +21,7 @@ function widgetMedia(data, type) {
     if (type == 'movie') {
         let service = document.createElement('div')
         service.classList = 'service'
+        service.style.setProperty('background-image', `url(./media-image/service/${data.info.serviceImg})`)
         card.append(service)
     }
 

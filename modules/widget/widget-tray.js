@@ -58,9 +58,6 @@ function widgetTray() {
     card.append(widgets.budget.card())
     card.append(widgets.flight.card())
     card.append(widgets.ideas.card())
-    card.append(widgets.media.card(allMovies.silicon, 'movie'))
-    card.append(widgets.media.card(allMovies.snowfall, 'movie'))
-    card.append(widgets.media.card(allMovies.attack, 'movie'))
 
     // card.append(widgets.tracking.card())
     // card.append(widgets.habit.card('email'))
