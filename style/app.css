@@ -71,6 +71,7 @@
 .app-card-mini{
     cursor: pointer;
     transition: scale 0.2s;
+    flex-direction: column;
 }
 .app-card-mini:hover {
     scale: 1.02;
@@ -94,27 +95,10 @@
     font-weight: 500;
     padding-top: 5px;
     text-shadow: 0 0 2px var(--black-50);
+}
+.widget-card .app-card-mini .textbox{
     color: white;
 }
-.app-card .textbox p{
-    display: block;
-    width: 100%;
-
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-.app-card .textbox p.name{
-    font-size: 16px;
-    font-weight: 500;
-}
-.app-card .textbox p.desc{
-    font-size: 12px;
-    font-weight: 400;
-    margin-top: 2px;
-}
-
-
 
 
 

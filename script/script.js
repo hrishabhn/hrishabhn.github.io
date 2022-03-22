@@ -1,107 +1,88 @@
-function dateNow() {
-    return processDate(new Date())
-}
-
 function timeOfDay() {
-    if ((dateNow().hour > 0) && (dateNow().hour < 4)) {
+    if ((new Date().hour > 0) && (new Date().hour < 4)) {
         var t = 0
-    } else if ((dateNow().hour > 3) && (dateNow().hour < 7)) {
+    } else if ((new Date().hour > 3) && (new Date().hour < 7)) {
         var t = 1
-    } else if ((dateNow().hour > 6) && (dateNow().hour < 10)) {
+    } else if ((new Date().hour > 6) && (new Date().hour < 10)) {
         var t = 2
-    } else if ((dateNow().hour > 9) && (dateNow().hour < 13)) {
+    } else if ((new Date().hour > 9) && (new Date().hour < 13)) {
         var t = 3
-    } else if ((dateNow().hour > 12) && (dateNow().hour < 16)) {
+    } else if ((new Date().hour > 12) && (new Date().hour < 16)) {
         var t = 4
-    } else if ((dateNow().hour > 15) && (dateNow().hour < 19)) {
+    } else if ((new Date().hour > 15) && (new Date().hour < 19)) {
         var t = 5
-    } else if ((dateNow().hour > 18) && (dateNow().hour < 22)) {
+    } else if ((new Date().hour > 18) && (new Date().hour < 22)) {
         var t = 6
-    } else if ((dateNow().hour > 21) || (dateNow().hour < 1)) {
+    } else if ((new Date().hour > 21) || (new Date().hour < 1)) {
         var t = 7
     }
 
     return t
 }
 
-function processDate(dateString) {
-    // console.log(dateString)
-    var date = new Date(dateString)
-    // console.log(date)
-
-    const dateObject = {
-        year: date.getFullYear(),
-        month: {
-            index: date.getMonth(),
-            short: processMonth(date.getMonth(), 'short'),
-            long: processMonth(date.getMonth(), 'long'),
+const processDate = {
+    month: {
+        short: function (str) {
+            const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+            return months[new Date(str).getMonth()]
         },
-        date: date.getDate(),
-        day: {
-            index: date.getDay(),
-            short: processDay(date.getDay(), 'short'),
-            long: processDay(date.getDay(), 'long'),
+        long: function (str) {
+            const months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+            return months[new Date(str).getMonth()]
         },
-        hour: date.getHours(),
-        minute: date.getMinutes(),
-        second: date.getSeconds(),
-    }
-
-    return dateObject
+    },
+    day: {
+        letter: function (str) {
+            const days = ['s', 'm', 't', 'w', 't', 'f', 's']
+            return days[new Date(str).getDay()]
+        },
+        short: function (str) {
+            const days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
+            return days[new Date(str).getDay()]
+        },
+        long: function (str) {
+            const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+            return days[new Date(str).getDay()]
+        },
+    },
 }
 
-function processMonth(monthIndex, type) {
-    if (type == 'short') {
-        var months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
-    } else if (type == 'long') {
-        var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
-    }
+const processDay = {
+    letter: function (i) {
+        const days = ['s', 'm', 't', 'w', 't', 'f', 's']
+        return days[i]
+    },
+    // if (type == 'short') var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
+    // else if (type == 'long') var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+    // else if (type == 'letter') var days = ['s', 'm', 't', 'w', 't', 'f', 's']
+    // return days[dayIndex]
 
-    return months[monthIndex]
 }
 
-function processDay(dayIndex, type) {
-    if (type == 'short') {
-        var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
-    } else if (type == 'long') {
-        var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
-    } else if (type == 'letter') {
-        var days = ['s', 'm', 't', 'w', 't', 'f', 's']
-    }
+const processTime = {
+    ampm: function (date) {
+        date = new Date(date)
 
-    return days[dayIndex]
+        hours = date.getHours()
+        mins = date.getMinutes()
+
+        var ampm = 'am'
+
+        if (hours > 11) {
+            hours = hours - 12
+            ampm = 'pm'
+        }
+
+        if (hours == 0) hours = 12
+
+        if (mins < 10) mins = `0${mins}`
+
+        if (mins == 0) mins = ''
+        else mins = `:${mins}`
+
+        return `${hours}${mins}${ampm}`
+    }
 }
-
-function processTime(date) {
-    date = new Date(date)
-
-    hours = date.getHours()
-    mins = date.getMinutes()
-
-    var ampm = 'am'
-
-    if (hours > 11) {
-        hours = hours - 12
-        ampm = 'pm'
-    }
-
-    if (hours == 0) {
-        hours = 12
-    }
-
-    if (mins < 10) {
-        mins = `0${mins}`
-    }
-
-    if (mins == 0) {
-        mins = ''
-    } else {
-        mins = `:${mins}`
-    }
-
-    return `${hours}${mins}${ampm}`
-}
-
 
 function countdownCalculate(date) {
     if (!date) {
@@ -276,7 +257,7 @@ function capitalizeFirstLetter(str) {
 
 function openApp(data, e, force) {
     appTrackAdd(data)
-    
+
     if (!(data.distract && isDND() && !force)) {
         if (data.link) {
             if (e ? !e.metaKey : true) {

@@ -41,12 +41,10 @@
 
 #splash .dock{
     max-width: min(calc(100% - 60px), 1000px);
-    overflow-x: scroll;
     justify-content: flex-start;
     padding: 15px 0;
     border-radius: 25px;
     margin-bottom: 20px;
-    -webkit-backdrop-filter: blur(25px);
 }
 .dock .app-card-mini .thumb{
     width: 60px;
@@ -54,7 +52,13 @@
     border-radius: 14px;
 }
 .dock .app-card-mini .textbox{
-    display: none;
+    bottom: calc(100% + 20px);
+    top: initial;
+    opacity: 0;
+    pointer-events: none;
+}
+.dock .app-card-mini:hover .textbox {
+    opacity: 1;
 }
 
 

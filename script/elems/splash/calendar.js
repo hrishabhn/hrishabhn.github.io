@@ -1,90 +1,90 @@
-function calendarCard() {
-    // base card with header
-    let card = widgetItemElement('div')
-    card.classList.add('cal-card')
+// function calendarCard() {
+//     // base card with header
+//     let card = widgetItemElement('div')
+//     card.classList.add('cal-card')
 
-    let day = capitalizeFirstLetter(processDay(new Date().getDay(), 'long'))
+//     let day = capitalizeFirstLetter(processDay(new Date().getDay(), 'long'))
 
-    card.innerHTML = `
-    <p class="day red-fg">${day}</p>
-    <p class="date">${new Date().getDate()}</p>
-    `
+//     card.innerHTML = `
+//     <p class="day red-fg">${day}</p>
+//     <p class="date">${new Date().getDate()}</p>
+//     `
 
-    card.append(spacerElement(8))
+//     card.append(spacerElement(8))
 
-    // initialise variables
-    let displayedEvents = 0
-    let countedEvents = 0
-    let showingTmr = false
+//     // initialise variables
+//     let displayedEvents = 0
+//     let countedEvents = 0
+//     let showingTmr = false
 
-    function futureCard(events) {
-        let moreData = {
-            number: 0,
-            colors: {},
-            events: [],
-        }
+//     function futureCard(events) {
+//         let moreData = {
+//             number: 0,
+//             colors: {},
+//             events: [],
+//         }
 
-        for (const event of events) {
-            moreData.events.push(event)
+//         for (const event of events) {
+//             moreData.events.push(event)
 
-            moreData.number++
-            countedEvents++
+//             moreData.number++
+//             countedEvents++
 
-            if (!moreData.colors[event.color]) {
-                moreData.colors[event.color] = true
-            }
-        }
+//             if (!moreData.colors[event.color]) {
+//                 moreData.colors[event.color] = true
+//             }
+//         }
 
-        return futureCardElem(moreData)
-    }
+//         return futureCardElem(moreData)
+//     }
 
-    // today's events
-    while (todayEvents[0] && (displayedEvents < 2)) {
-        const event = todayEvents.shift()
-        if (!event.allDay) {
-            card.append(eventCardElem(event))
-            card.append(spacerElement(5))
+//     // today's events
+//     while (todayEvents[0] && (displayedEvents < 2)) {
+//         const event = todayEvents.shift()
+//         if (!event.allDay) {
+//             card.append(eventCardElem(event))
+//             card.append(spacerElement(5))
 
-            displayedEvents++
-            countedEvents++
-        }
-    }
+//             displayedEvents++
+//             countedEvents++
+//         }
+//     }
 
-    // more events today
-    if (todayEvents[0]) {
-        card.append(futureCard(todayEvents))
-    }
+//     // more events today
+//     if (todayEvents[0]) {
+//         card.append(futureCard(todayEvents))
+//     }
 
-    // tomorrow
-    if (tmrEvents[0] && (displayedEvents < 2)) {
-        card.append(subtitleElement('TOMORROW'))
+//     // tomorrow
+//     if (tmrEvents[0] && (displayedEvents < 2)) {
+//         card.append(subtitleElement('TOMORROW'))
 
-        while (tmrEvents[0] && (displayedEvents < 2)) {
-            const event = tmrEvents.shift()
-            if (!event.allDay) {
-                card.append(eventCardElem(event))
-                card.append(spacerElement(5))
+//         while (tmrEvents[0] && (displayedEvents < 2)) {
+//             const event = tmrEvents.shift()
+//             if (!event.allDay) {
+//                 card.append(eventCardElem(event))
+//                 card.append(spacerElement(5))
 
-                displayedEvents++
-                countedEvents++
-            }
-        }
-        showingTmr = true
-    }
+//                 displayedEvents++
+//                 countedEvents++
+//             }
+//         }
+//         showingTmr = true
+//     }
 
-    // more events tmr
-    if (tmrEvents[0] && (showingTmr)) {
-        card.append(futureCard(tmrEvents))
-    }
+//     // more events tmr
+//     if (tmrEvents[0] && (showingTmr)) {
+//         card.append(futureCard(tmrEvents))
+//     }
 
-    // no events today or tmr
-    if (!displayedEvents) {
-        card.append(subtitleElement('No more events today or tomorrow'))
-    }
+//     // no events today or tmr
+//     if (!displayedEvents) {
+//         card.append(subtitleElement('No more events today or tomorrow'))
+//     }
 
-    card.append(growElement())
-    return card
-}
+//     card.append(growElement())
+//     return card
+// }
 
 
 
@@ -161,32 +161,32 @@ function eventCardElem(event) {
 }
 
 
-// function searchCal(q) {
-//     let results = []
-//     for (const event of events_all) {
-//         const name = event.name.toUpperCase().includes(q)
-//         const location = event.location.toUpperCase().includes(q)
+// // function searchCal(q) {
+// //     let results = []
+// //     for (const event of events_all) {
+// //         const name = event.name.toUpperCase().includes(q)
+// //         const location = event.location.toUpperCase().includes(q)
 
-//         if (name || location) {
-//             results.push(event)
-//         }
-//     }
+// //         if (name || location) {
+// //             results.push(event)
+// //         }
+// //     }
 
-//     return results
-// }
+// //     return results
+// // }
 
-// function searchCalRow(data) {
-//     let row = rowBase('Calendar Events')
-//     let tray = trayBase()
+// // function searchCalRow(data) {
+// //     let row = rowBase('Calendar Events')
+// //     let tray = trayBase()
 
-//     for (let k = 0; k < data.length; k++) {
-//         let card = eventCardElem(data[k])
-//         tray.append(card)
+// //     for (let k = 0; k < data.length; k++) {
+// //         let card = eventCardElem(data[k])
+// //         tray.append(card)
 
-//         if (k < data.length - 1) {
-//             tray.append(spacerElement(10))
-//         }
-//     }
-//     row.append(tray)
-//     return row
-// }
+// //         if (k < data.length - 1) {
+// //             tray.append(spacerElement(10))
+// //         }
+// //     }
+// //     row.append(tray)
+// //     return row
+// // }

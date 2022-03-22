@@ -22,7 +22,7 @@ function dockTray() {
     for (const app of getFocus().apps) nodes.push(appCardMini(app))
 
     let tray = trayWithKids(nodes, 15, 15)
-    tray.classList = 'dock layer-1-blur'
+    tray.classList = 'dock layer-2-blur'
     tray.prepend(growElement())
     tray.append(growElement())
 

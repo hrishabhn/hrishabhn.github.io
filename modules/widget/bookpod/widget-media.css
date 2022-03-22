@@ -73,8 +73,9 @@
 }
 
 .widget-card.media .textbox .desc {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     opacity: 0.8;
     margin-top: 2px;
+    text-transform: capitalize;
 }

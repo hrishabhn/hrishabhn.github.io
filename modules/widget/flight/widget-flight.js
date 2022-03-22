@@ -41,7 +41,7 @@ function widgetFlight(flightKey) {
 
     let date = document.createElement('div')
     date.classList = 'date'
-    date.innerHTML = `${processDate(flight.date).day.short} ${processDate(flight.date).date} ${processDate(flight.date).month.short}, ${processTime(flight.date)}`
+    date.innerHTML = `${processDate.day.short(flight.date)} ${new Date(flight.date).getDate()} ${processDate.month.short(flight.date)}, ${processTime.ampm(flight.date)}`
 
     card.append(top)
     card.append(growElement())

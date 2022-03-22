@@ -29,7 +29,7 @@ function widgetMedia(data, type) {
     card.append(growElement())
 
     if (type == 'book') card.append(textboxBase(data.name, data.author))
-    else if (type == 'movie') card.append(textboxBase(data.name, 'Genre1 • Genre2 • X Seasons'))
+    else if (type == 'movie') card.append(textboxBase(data.name, data.desc.full))
 
     if (type == 'movie') card.onclick = function () { data.detail() }
 

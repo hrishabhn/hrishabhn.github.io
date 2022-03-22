@@ -1,7 +1,7 @@
 for (const event of events_all) {
     if (event.allDay == 'No') {
         event.allDay = false
-        event.duration = `${processTime(event.start)} - ${processTime(event.end)}`
+        event.duration = `${processTime.ampm(event.start)} - ${processTime.ampm(event.end)}`
     } else {
         event.allDay = true
         event.duration = 'All Day'

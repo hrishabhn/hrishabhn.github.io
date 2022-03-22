@@ -11,7 +11,7 @@ function widgetCal() {
     right.classList = 'side'
 
     // day and date
-    left.append(titleElement(capitalizeFirstLetter(processDay(new Date().getDay(), 'long'))))
+    left.append(titleElement(capitalizeFirstLetter(processDate.day.long(new Date()))))
     left.append(dataElem(new Date().getDate(), null))
 
     left.append(spacerElement(8))

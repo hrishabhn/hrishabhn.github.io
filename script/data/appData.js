@@ -682,7 +682,7 @@ const appData = {
 
 for (const city of worldClockData) {
     appData.worldClock.push({
-        name: processTime(new Date().getTime() + ((1000 * 60 * 60 * parseFloat(city.offset)))),
+        name: processTime.ampm(new Date().getTime() + ((1000 * 60 * 60 * parseFloat(city.offset)))),
         link: googleSearch(`${city.city} time now`),
         desc: `${city.city} Time`,
         thumb: city.thumb,
