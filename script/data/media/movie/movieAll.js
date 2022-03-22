@@ -31,7 +31,7 @@ const allMovies = {
             // tvTimeID: 'identifier',
             reelgoodLink: 'https://reelgood.com/show/silicon-valley-2014',
             imdbID: 'tt2575988',
-            // subReddit: 'subreddit',
+            subReddit: 'SiliconValleyHBO',
         },
         cast: [
             {
