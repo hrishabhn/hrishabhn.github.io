@@ -1,7 +1,5 @@
 function processBookPodLink(item) {
-    if (item.youtube) return `https://www.youtube.com/c/${item.youtube}/videos`
-    else if (item.applePod) return `https://podcasts.apple.com/podcast/id${item.applePod}`
-    else if (item.audible) return `audible://view?section=discover&asin=${item.audible}`
+    if (item.audible) return `audible://view?section=discover&asin=${item.audible}`
     else return item.link
 }
 
