@@ -9,7 +9,9 @@ function loadApp() {
     bodyLoad()
 
     paramsLoad()
-    // setWallpaper()
+    setWallpaper()
+
+    
     // Testing
     // skipToContent()
     // addModalLayer(workoutCard())

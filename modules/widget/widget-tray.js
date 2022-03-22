@@ -60,7 +60,7 @@ function widgetTray() {
 
 function widgetCardBase(type) {
     let card = document.createElement(type)
-    card.classList = 'widget-card layer-1'
+    card.classList = 'widget-card layer-0-blur'
     return card
 }
 
