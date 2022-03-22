@@ -22,8 +22,10 @@ function appCard(app) {
 
     if (app.thumb) {
         card.append(thumbElement(app.thumb))
+        card.append(spacerElement(8))
     } else if (app.icon) {
         card.append(iconElement(app.icon))
+        card.append(spacerElement(8))
     }
 
     card.append(textboxBase(app.name, app.desc))
@@ -31,39 +33,19 @@ function appCard(app) {
     return card
 }
 
-// function appCardFlight(app) {
-//     let card = document.createElement('a')
-//     card.classList = 'app-card flight clickable-o card-hover'
-//     card.onclick = function (e) { openApp(app, e) }
+function appCardMini(app) {
+    let card = document.createElement('a')
+    card.classList = 'app-card-mini clickable-o'
+    card.target = '_blank'
+    card.onclick = function (e) { openApp(app, e) }
 
-//     if (app.accent) {
-//         card.style.setProperty('--brand-col', `#${app.accent}`)
-//     } else if (app.style) {
-//         card.style.setProperty('--brand-col-dark', `var(--${app.style}-dark)`)
-//         card.style.setProperty('--brand-col-light', `var(--${app.style}-light)`)
-//     }
+    if (app.thumb) card.append(thumbElement(app.thumb))
+    else if (app.icon) card.append(iconElement(app.icon))
 
-//     if (app.searchBase) {
-//         card.setAttribute('engineData', JSON.stringify(app))
-//         let icon = iconElement(iconData['search'])
-//         icon.classList = 'search'
-//         card.append(icon)
-//     }
+    card.append(textboxBase(app.name, null))
 
-//     if (app.thumb) {
-//         card.append(thumbElement(app.thumb))
-//     } else if (app.icon) {
-//         card.append(iconElement(app.icon))
-//     } else if (app.logo) {
-//         let logo = iconElement(app.logo)
-//         logo.classList = 'logo'
-//         card.append(logo)
-//     }
-
-//     card.append(textboxBase(app.name, app.desc))
-
-//     return card
-// }
+    return card
+}
 
 
 function appCardSmall(app) {

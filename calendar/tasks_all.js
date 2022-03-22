@@ -1,4 +1,6 @@
 let tasks_all = [
-	'Laundry Bin',
 	'SoFi HK',
+	'Principles You',
+	'Prof G Office Hours',
+	'Fix Date systm',
 ]

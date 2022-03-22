@@ -1,21 +1,14 @@
 .app-card{
     padding: 12px 10px;
+    flex-direction: column;
+    align-items: flex-start;
     
     border-radius: 14px;
     overflow: hidden;
     
-    min-width: 220px;
+    min-width: 160px;
     cursor: pointer;
 }
-.app-card.flight{
-    background-color: var(--brand-col-dark, var(--brand-col, black));
-}
-@media screen and (prefers-color-scheme: light) {
-    .app-card.flight{
-        background-color: var(--brand-col-light, var(--brand-col, black));
-    }
-}
-
 .app-card .thumb{
     width: 45px;
     height: 45px;
@@ -40,7 +33,6 @@
 .app-card .textbox{
     flex-grow: 1;
     flex-direction: column;
-    padding: 0px 10px;
 }
 .app-card .textbox p{
     display: block;
@@ -72,6 +64,58 @@
 .spotlight-tray .app-card .search {
     opacity: 0.6;
 }
+
+
+/* mini */
+
+.app-card-mini{
+    cursor: pointer;
+    transition: scale 0.2s;
+}
+.app-card-mini:hover {
+    scale: 1.02;
+}
+.app-card-mini .thumb{
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+}
+.app-card-mini .icon{
+    width: 60px;
+    height: 60px;
+    
+    padding: 5%;
+    fill: white;
+}
+.app-card-mini .textbox{
+    position: absolute;
+    top: 100%;
+    font-size: 10px;
+    font-weight: 500;
+    padding-top: 5px;
+    text-shadow: 0 0 2px var(--black-50);
+    color: white;
+}
+.app-card .textbox p{
+    display: block;
+    width: 100%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.app-card .textbox p.name{
+    font-size: 16px;
+    font-weight: 500;
+}
+.app-card .textbox p.desc{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+
+
 
 
 /*  */

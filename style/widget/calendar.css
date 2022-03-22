@@ -1,12 +1,12 @@
-#splash #widget-card .cal-card .day{
+#splash #widget-tray .cal-card .day{
     font-size: 14px;
     font-weight: 500;
 }
-#splash #widget-card .cal-card .date{
+#splash #widget-tray .cal-card .date{
     font-size: 24px;
     font-weight: 300;
 }
-
+/* 
 .event{
     width: 100%;
     min-height: 20px;
@@ -23,7 +23,7 @@
     height: 100%;
     flex-grow: 1;
     flex-shrink: 1;
-    /* padding: 5px; */
+
     padding: 3px 1px;
 
     border-radius: 3px;
@@ -75,4 +75,4 @@
 .event.future p{
     font-size: 12px;
     font-weight: 500;
-}
+} */

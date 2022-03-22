@@ -1,0 +1,40 @@
+.budget-chart {
+    width: 100%;
+    flex-grow: 1;
+    padding: 20px 0 5px;
+    cursor: pointer;
+}
+
+.budget-chart .col {
+    height: 100%;
+    flex-direction: column;
+}
+
+.budget-chart .col p {
+    font-size: 10px;
+    font-weight: 500;
+    opacity: 0.5;
+    font-family: ui-rounded;
+    text-transform: uppercase;
+    width: 10px;
+}
+
+.budget-chart .col .bar {
+    width: 100%;
+    flex-grow: 1;
+    border-radius: 3px;
+    overflow: hidden;
+    align-items: flex-end;
+    min-height: 50px;
+}
+
+.budget-chart .col .bar .bar-body {
+    width: 100%;
+    flex-direction: column;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.budget-chart .col .bar .bar-body .box {
+    width: 100%;
+}

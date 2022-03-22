@@ -24,6 +24,19 @@ let focusData = [
             apps: appData['video'],
             work: false,
             distract: true,
+            widgets: function () {
+                return [
+                    widgets.app.card({
+                        title: 'Tracking',
+                        apps: [
+                            appData.video[0],
+                            appData.video[1],
+                            appData.video[2],
+                            appData.video[3],
+                        ]
+                    }),
+                ]
+            },
             trays: function () {
                 return [
                     movies.rows[0].elem.big,
@@ -49,6 +62,13 @@ let focusData = [
             apps: appData['read'],
             work: false,
             distract: false,
+            widgets: function () {
+                return [
+                    widgets.bookpod.card(bookData[0].data[0], 'book'),
+                    widgets.bookpod.card(bookData[0].data[1], 'book'),
+                    widgets.bookpod.card(bookData[0].data[2], 'book'),
+                ]
+            },
             trays: function () {
                 return [
                     books.data[0].elem,

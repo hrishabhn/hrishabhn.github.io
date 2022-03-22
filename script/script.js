@@ -291,3 +291,7 @@ function openApp(data, e, force) {
         document.getElementById('distract-input').focus()
     }
 }
+
+function randomElem(array) {
+    return array[Math.floor(Math.random() * array.length)]
+}

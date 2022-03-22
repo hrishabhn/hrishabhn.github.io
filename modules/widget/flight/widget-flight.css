@@ -1,0 +1,40 @@
+.widget-card.flight .top{
+    width: 100%;
+    align-items: flex-start;
+}
+
+.widget-card.flight .logo.icon{
+    width: 35px;
+    height: 35px;
+}
+
+.widget-card.flight .number{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.widget-card.flight .dest{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+}
+.widget-card.flight .dest .icon{
+    height: 16px;
+    width: 16px;
+    padding: 2px;
+    border-radius: 100px;
+    transform: rotate(90deg);
+}
+
+.widget-card.flight .count{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.widget-card.flight .date{
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 0.5;
+    text-transform: capitalize;
+}
