@@ -82,4 +82,7 @@ let budgetData = [
     { "amount": 17, "name": "El Clasico", "category": "Drinks", "date": "2022-03-20T20:50:00+01:00" },
     { "amount": 5.29, "name": "Jolibee", "category": "Food", "date": "2022-03-20T22:47:00+01:00" },
 
+    { "amount": 1.5, "name": "Breakfast", "category": "Food", "date": "2022-03-22T10:43:24+01:00" },
+    { "amount": 3, "name": "Lunch", "category": "Food", "date": "2022-03-22T13:53:00+01:00" },
+
 ]

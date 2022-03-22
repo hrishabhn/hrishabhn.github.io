@@ -6,6 +6,11 @@ function widgetIdeas() {
     card.append(titleElement('Ideas'))
     card.append(spacerElement(5))
 
+
+    let iconElem = iconElement(SFSymbols.lightbulb.fill)
+    iconElem.classList = 'top-icon'
+    card.append(iconElem)
+
     let ideaData
     if (getCookie('ideas-list')) ideaData = JSON.parse(getCookie('ideas-list'))
     else ideaData = []

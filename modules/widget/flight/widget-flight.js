@@ -3,8 +3,6 @@ function widgetFlight(flightKey) {
 
     let card = widgetCardBase('a')
     card.classList.add('flight', 'clickable-o')
-
-    console.log(card.classList)
     card.onclick = function () { flight.detail() }
 
     // top row

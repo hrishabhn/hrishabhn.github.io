@@ -31,7 +31,7 @@ function dockTray() {
 
 function createSpotlight() {
     let tray = document.createElement('div')
-    tray.classList = 'spotlight-tray limit layer-0-blur'
+    tray.classList = 'spotlight-tray limit layer-1'
 
     let container = document.createElement('div')
     container.classList = 'spotlight-container'

@@ -5849,8 +5849,15 @@ const allMovies = {
 // arrested dev
 
 for (const key in allMovies) {
+    const movie = allMovies[key]
+
+
+
+
+    
+
     // show tv detail
-    allMovies[key].detail = function () {
+    movie.detail = function () {
         removeAllChildNodes(tvModal)
 
         let close = document.createElement('a')

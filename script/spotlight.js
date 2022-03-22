@@ -62,7 +62,7 @@ function spotlightRun(e) {
                 searchAppsRow(searchApps(q, appData['travel']), 'Travel'),
                 searchAppsRow(searchApps(q, appData['utilities']), 'Utilities'),
                 searchAppsRow(searchApps(q, appData['profiles']), 'Social Media Pages'),
-                searchAppsRow(searchApps(q, appData['design']), 'Social Media Pages'),
+                searchAppsRow(searchApps(q, appData['design']), 'Design'),
                 searchAppsRow(searchApps(q, appData['worldClock']), 'World Clock'),
                 // searchCalRow(searchCal(q)),
                 movies.searchRow(q),

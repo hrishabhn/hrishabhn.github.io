@@ -550,7 +550,7 @@ const appData = {
             accent: '0098FF',
             distract: true,
             tags: [
-                'vsc',
+                'vscode',
             ],
         },
         {

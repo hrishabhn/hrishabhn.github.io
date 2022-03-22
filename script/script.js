@@ -273,9 +273,10 @@ function capitalizeFirstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
-function openApp(data, e, force) {
-    console.log(data)
 
+function openApp(data, e, force) {
+    appTrackAdd(data)
+    
     if (!(data.distract && isDND() && !force)) {
         if (data.link) {
             if (e ? !e.metaKey : true) {

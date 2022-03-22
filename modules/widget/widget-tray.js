@@ -27,19 +27,28 @@ const widgets = {
     'ideas': {
         card: function () { return widgetIdeas() },
     },
-    'bookpod': {
-        card: function (data, type) { return widgetBookPod(data, type) },
+    'media': {
+        card: function (data, type) { return widgetMedia(data, type) },
     },
     'app': {
         card: function (data) { return widgetAppTray(data) },
     },
+    'habit': {
+        card: function (key) { return widgetHabit(key) }
+    },
+    'tracking': {
+        id: 'tracking',
+        type: 'div',
+        title: 'Most Used Apps',
+        icon: SFSymbols.hourglass,
+        iconClick: function() { removeCookie('app-tracking') },
+        //     icon: SFSymbols.list.bullet.circle.fill,
+            content: widgetTrackContent(),
+        card: function () { return widgetCard(this) }
+    },
 }
 
 function widgetTray() {
-
-    console.log(bookData)
-
-
     let card = document.createElement('div')
     card.id = 'widget-tray'
     card.classList = 'limit'
@@ -49,8 +58,14 @@ function widgetTray() {
     card.append(widgets.budget.card())
     card.append(widgets.flight.card())
     card.append(widgets.ideas.card())
+    card.append(widgets.media.card(allMovies.silicon, 'movie'))
+    card.append(widgets.media.card(allMovies.snowfall, 'movie'))
+    card.append(widgets.media.card(allMovies.attack, 'movie'))
+
+    // card.append(widgets.tracking.card())
+    // card.append(widgets.habit.card('email'))
     if (getFocus().widgets) for (const widget of getFocus().widgets()) card.append(widget)
-    
+
     // card.append(todayCard())
     // card.append(budgetCard())
     // card.append(weatherCard())
@@ -60,7 +75,7 @@ function widgetTray() {
 
 function widgetCardBase(type) {
     let card = document.createElement(type)
-    card.classList = 'widget-card layer-0-blur'
+    card.classList = 'widget-card layer-1'
     return card
 }
 

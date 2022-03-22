@@ -64,9 +64,9 @@ let focusData = [
             distract: false,
             widgets: function () {
                 return [
-                    widgets.bookpod.card(bookData[0].data[0], 'book'),
-                    widgets.bookpod.card(bookData[0].data[1], 'book'),
-                    widgets.bookpod.card(bookData[0].data[2], 'book'),
+                    widgets.media.card(bookData[0].data[0], 'book'),
+                    widgets.media.card(bookData[0].data[1], 'book'),
+                    widgets.media.card(bookData[0].data[2], 'book'),
                 ]
             },
             trays: function () {

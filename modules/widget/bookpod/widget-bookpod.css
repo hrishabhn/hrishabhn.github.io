@@ -1,8 +1,8 @@
-.widget-card.bookpod {
+.widget-card.media {
     padding: 15px;
 }
 
-.widget-card.bookpod .bg {
+.widget-card.media .bg {
     background-image: var(--thumb);
     background-size: 120% 120%;
     background-position: center center;
@@ -10,7 +10,7 @@
     opacity: 0.5;
 }
 
-.widget-card.bookpod .blur {
+.widget-card.media .blur {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,7 +20,27 @@
     -webkit-backdrop-filter: blur(60px);
 }
 
-.widget-card.bookpod .thumb {
+.widget-card.media.movie .service {
+    align-self: flex-end;
+    height: 12px;
+    width: 50px;
+    margin-bottom: 8px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: var(--service);
+    opacity: 0.8;
+
+    background-image: url(../../../media-image/service/netflix.svg);
+
+}
+
+
+
+
+
+.widget-card.media.book .thumb {
     background-image: var(--thumb);
     height: 100px;
     aspect-ratio: 2 / 3;
@@ -28,13 +48,21 @@
     box-shadow: 0px 2px 8px -3px var(--black-50);
 }
 
-.widget-card.bookpod .textbox {
+.widget-card.media.movie .thumb {
+    background-image: var(--thumb);
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px -3px var(--black-50);
+}
+
+.widget-card.media .textbox {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
 }
 
-.widget-card.bookpod .textbox p {
+.widget-card.media .textbox p {
     display: block;
     width: 100%;
     white-space: nowrap;
@@ -42,12 +70,12 @@
     text-overflow: ellipsis;
 }
 
-.widget-card.bookpod .textbox .name {
+.widget-card.media .textbox .name {
     font-size: 14px;
     font-weight: 500;
 }
 
-.widget-card.bookpod .textbox .desc {
+.widget-card.media .textbox .desc {
     font-size: 12px;
     font-weight: 400;
     opacity: 0.8;
