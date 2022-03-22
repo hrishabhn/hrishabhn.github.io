@@ -1,6 +1,8 @@
-// movie
-
-function searchMoviesNewRow(results, title, size) {
+const mediaElems = {
+    movie: {
+        new: {
+            // card: function () { },
+            row: function (results, title, size) {
     let row = rowBase(title)
     let nodes = []
 
@@ -89,7 +91,20 @@ function searchMoviesNewRow(results, title, size) {
 
     row.append(trayWithKids(nodes, 4))
     return row
+            },
+        },
+        oldSmall: {
+            card: function () { },
+            row: function () { },
+        },
+        oldBig: {
+            card: function () { },
+            row: function () { },
+        },
+    },
 }
+
+// movie
 
 function movieCardTitle(key) {
     const movie = allMovies[key]
