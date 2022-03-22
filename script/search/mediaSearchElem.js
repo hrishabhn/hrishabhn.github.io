@@ -382,14 +382,9 @@ function searchBookPodNewRow(results, title, type) {
 
 
 // shared
-function mediaNewOrSoon(dateStr) {
-    let date = new Date(dateStr)
-
-    let future = (new Date()) < new Date(date)
-
-    if (future) {
-        let result = countdownProcess(date, 'short')
-
+function mediaNewOrSoon(date) {
+    if (countdown.future(date)) {
+        const result = countdown.process.short(date)
         return `${result.num} ${result.word.toUpperCase()}`
     } else { return 'NEW' }
 }

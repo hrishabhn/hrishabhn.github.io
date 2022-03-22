@@ -37,7 +37,7 @@ function widgetFlight(flightKey) {
 
     let count = document.createElement('div')
     count.classList = 'count'
-    count.innerHTML = `${countdownProcess(flight.date, 'short').num} ${countdownProcess(flight.date, 'short').word}`
+    count.innerHTML = `${countdown.process.short(flight.date, 'short').num} ${countdown.process.short(flight.date).word}`
 
     let date = document.createElement('div')
     date.classList = 'date'

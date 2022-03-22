@@ -84,128 +84,146 @@ const processTime = {
     }
 }
 
-function countdownCalculate(date) {
-    if (!date) {
-        return null
-    }
+const countdown = {
+    distance: {
+        ms: function (date) { return new Date(date).getTime() - new Date().getTime() },
+        abs: function (date) { return Math.abs(this.ms(date)) },
+    },
+    future: function (date) { return this.distance.ms(date) > 0 },
+    calc: function (date) {
+        const distance = this.distance.abs(date)
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        let result
+        if (days > 0) {
+            if (days < 2) result = [days * 24 + hours, 'hours']
+            else result = [days, 'days']
+        } else if (hours > 0) {
+            if (hours < 2) result = [hours * 60 + minutes, 'minutes']
+            else result = [hours, 'hours']
+        } else if (minutes > 0) result = [minutes, 'minutes']
+        else result = [seconds, 'seconds']
 
 
-    var futureDate = new Date(date).getTime()
-    // console.log(futureDate)
-    var nowDate = new Date().getTime()
-    var distance = futureDate - nowDate
-    var past = false
-
-    if (distance < 0) {
-        distance = nowDate - futureDate
-        past = true
-    }
-    // console.log(distance)
-    // console.log(past)
-
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    var result
-
-    if (days > 0) {
-        if (days < 2) {
-            result = [days * 24 + hours, 'hours']
-        } else {
-            result = [days, 'days']
+        return {
+            only: {
+                days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+                hours: Math.floor(distance / (1000 * 60 * 60)),
+                minutes: Math.floor(distance / (1000 * 60)),
+                seconds: Math.floor(distance / 1000),
+            },
+            part: {
+                days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+                seconds: Math.floor((distance % (1000 * 60)) / 1000),
+            },
+            past: !countdown.future(date),
         }
-    } else if (hours > 0) {
-        if (hours < 2) {
-            result = [hours * 60 + minutes, 'minutes']
-        } else {
-            result = [hours, 'hours']
-        }
-    } else if (minutes > 0) {
-        result = [minutes, 'minutes']
-    } else {
-        result = [seconds, 'seconds']
-    }
+    },
+    process: {
+        short: function (date) {
+            const calc = countdown.calc(date)
 
-    var resultObject = {
-        only: {
-            days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-            hours: Math.floor(distance / (1000 * 60 * 60)),
-            minutes: Math.floor(distance / (1000 * 60)),
-            seconds: Math.floor(distance / 1000),
-        },
-        part: {
-
-            days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-            hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-            minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-            seconds: Math.floor((distance % (1000 * 60)) / 1000),
-        },
-        past: past,
-    }
-
-    // console.log(resultObject)
-
-    return resultObject
-    console.log(string)
-}
-
-function countdownProcess(date, type) {
-    const countdownResult = countdownCalculate(date)
-    // console.log(countdownResult)
-
-    if (type == 'short') {
-        if (countdownResult.only.days > 0) {
-            if (countdownResult.only.days < 2) {
-                result = {
-                    num: countdownResult.only.hours,
+            if (calc.only.days > 0) {
+                if (calc.only.days < 2) result = {
+                    num: calc.only.hours,
                     word: 'hours',
                 }
-            } else {
-                result = {
-                    num: countdownResult.only.days,
+                else result = {
+                    num: calc.only.days,
                     word: 'days',
                 }
-            }
-        } else if (countdownResult.only.hours > 0) {
-            if (countdownResult.only.hours < 2) {
-                result = {
-                    num: countdownResult.only.minutes,
+            } else if (calc.only.hours > 0) {
+                if (calc.only.hours < 2) result = {
+                    num: calc.only.minutes,
                     word: 'minutes',
                 }
-            } else {
-                result = {
-                    num: countdownResult.only.hours,
+                else result = {
+                    num: calc.only.hours,
                     word: 'hours',
                 }
-            }
-        } else if (countdownResult.only.minutes > 0) {
-            result = {
-                num: countdownResult.only.minutes,
+            } else if (calc.only.minutes > 0) result = {
+                num: calc.only.minutes,
                 word: 'minutes',
             }
-        } else {
-            result = {
-                num: countdownResult.only.seconds,
+            else result = {
+                num: calc.only.seconds,
                 word: 'seconds',
             }
-        }
 
-        return result
-    }
-    //  else if (type == 'long') {
-    //     let string = ''
-
-    //     if (countdownResult.part.days) {
-    //         string = `${countdownResult.part.days}:`
-    //     }
-
-    //     string = `${string}${countdownResult.part.hours}:${countdownResult.part.minutes}`
-
-
-    //     return string
-    // }
+            return result
+        },
+    },
 }
+
+
+
+// console.log(cntdwn.distance.ms('20 Mar 2022') / 86400000)
+// console.log(cntdwn.distance.abs('20 Mar 2022') / 86400000)
+// console.log(cntdwn.distance('30 Mar 2022') / 86400000)
+// console.log(cntdwn.future('30 Mar 2021'))
+
+// function countdownProcess(date, type) {
+//     const countdownResult = countdown.calc(date)
+//     // console.log(countdownResult)
+
+//     if (type == 'short') {
+//         if (countdownResult.only.days > 0) {
+//             if (countdownResult.only.days < 2) {
+//                 result = {
+//                     num: countdownResult.only.hours,
+//                     word: 'hours',
+//                 }
+//             } else {
+//                 result = {
+//                     num: countdownResult.only.days,
+//                     word: 'days',
+//                 }
+//             }
+//         } else if (countdownResult.only.hours > 0) {
+//             if (countdownResult.only.hours < 2) {
+//                 result = {
+//                     num: countdownResult.only.minutes,
+//                     word: 'minutes',
+//                 }
+//             } else {
+//                 result = {
+//                     num: countdownResult.only.hours,
+//                     word: 'hours',
+//                 }
+//             }
+//         } else if (countdownResult.only.minutes > 0) {
+//             result = {
+//                 num: countdownResult.only.minutes,
+//                 word: 'minutes',
+//             }
+//         } else {
+//             result = {
+//                 num: countdownResult.only.seconds,
+//                 word: 'seconds',
+//             }
+//         }
+
+//         return result
+//     }
+//     //  else if (type == 'long') {
+//     //     let string = ''
+
+//     //     if (countdownResult.part.days) {
+//     //         string = `${countdownResult.part.days}:`
+//     //     }
+
+//     //     string = `${string}${countdownResult.part.hours}:${countdownResult.part.minutes}`
+
+
+//     //     return string
+//     // }
+// }
 
 function durationCalculate(start, end) {
     var difference = end.getTime() - start.getTime()
@@ -229,51 +247,31 @@ function googleSearch(query) {
 
 
 function removeAllChildNodes(parent) {
-    while (parent.firstChild) {
-        parent.removeChild(parent.firstChild);
-    }
+    while (parent.firstChild) parent.removeChild(parent.firstChild)
 }
 
 
 function processDeviceLink(linkObject) {
     if (linkObject.mobile) {
-        if ('ontouchstart' in document.documentElement) {
-            var result = linkObject.mobile
-        } else {
-            var result = linkObject.desktop
-        }
-
-    } else {
-        var result = linkObject
-    }
-
-    return result
+        if ('ontouchstart' in document.documentElement) return linkObject.mobile
+        else return linkObject.desktop
+    } else return linkObject
 }
 
-function capitalizeFirstLetter(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1)
-}
-
+function capitalizeFirstLetter(str) { return str.charAt(0).toUpperCase() + str.slice(1) }
 
 function openApp(data, e, force) {
     appTrackAdd(data)
 
     if (!(data.distract && isDND() && !force)) {
         if (data.link) {
-            if (e ? !e.metaKey : true) {
-                window.open(data.link, '_self')
-            } else {
-                window.open(data.link, '_blank')
-            }
-        } else if (data.trigger) {
-            data.trigger()
-        }
+            if (e ? !e.metaKey : true) window.open(data.link, '_self')
+            else window.open(data.link, '_blank')
+        } else if (data.trigger) data.trigger()
     } else {
         addModalLayer(distractModal(data, e, true))
         document.getElementById('distract-input').focus()
     }
 }
 
-function randomElem(array) {
-    return array[Math.floor(Math.random() * array.length)]
-}
+function randomElem(array) { return array[Math.floor(Math.random() * array.length)] }
