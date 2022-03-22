@@ -11,7 +11,7 @@ function splashLoad() {
     splash.append(spacerElement(10))
     splash.append(createSpotlight())
     splash.append(spacerElement(35))
-    splash.append(widgetTray())
+    if (!isDND()) splash.append(widgetTray())
     splash.append(spacerElement(50))
     splash.append(growElement())
     splash.append(dockTray())
