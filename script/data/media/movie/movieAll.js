@@ -5851,10 +5851,11 @@ const allMovies = {
 for (const key in allMovies) {
     const movie = allMovies[key]
 
-
-
-
-    
+    // process link
+    if (movie.link) {
+        if (movie.link.netflix) movie.link = `https://www.netflix.com/title/${movie.link.netflix}`
+        else if (movie.link.primeVideo) movie.link = `primevideo://detail?asin=${movie.link.primeVideo}` //`https://watch.amazon.com/detail?asin=${movie.link.primeVideo}`
+    }
 
     // show tv detail
     movie.detail = function () {

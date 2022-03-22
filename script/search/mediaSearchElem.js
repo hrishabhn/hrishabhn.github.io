@@ -264,7 +264,7 @@ function searchBookPodRow(results, title, type) {
         card.append(thumb)
         card.append(textboxBase(item.name, item.author))
 
-        card.href = processLink(item.link)
+        card.href = item.link
         card.target = '_blank'
 
         if ((item.progress) && (item.progress != 'NEW')) card.append(mediaTimeElem(item.progress))

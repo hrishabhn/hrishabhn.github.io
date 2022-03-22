@@ -1,46 +1,8 @@
-function processLink(linkItem) {
-    // console.log(linkItem)
-
-    if (linkItem.netflix) {
-        return `https://www.netflix.com/title/${linkItem.netflix}`
-    } else if (linkItem.amazon) {
-        return linkItem.amazon
-    } else if (linkItem.applePod) {
-        return `https://podcasts.apple.com/podcast/${linkItem.applePod}`
-    } else if (linkItem.youtube) {
-        return `https://www.youtube.com/c/${linkItem.youtube}/videos`
-    } else if (linkItem.primeVideo) {
-        // return `https://watch.amazon.com/detail?asin=${linkItem.primeVideo}`
-        return `primevideo://detail?asin=${linkItem.primeVideo}`
-    } else if (linkItem.audible) {
-        return `audible://view?section=discover&asin=${linkItem.audible}`
-    } else {
-        return linkItem
-    }
-}
-
 function processBookPodLink(item) {
     if (item.youtube) return `https://www.youtube.com/c/${item.youtube}/videos`
     else if (item.applePod) return `https://podcasts.apple.com/podcast/id${item.applePod}`
     else if (item.audible) return `audible://view?section=discover&asin=${item.audible}`
     else return item.link
-
-    if (linkItem.netflix) {
-        return `https://www.netflix.com/title/${linkItem.netflix}`
-    } else if (linkItem.amazon) {
-        return linkItem.amazon
-    } else if (linkItem.applePod) {
-        return `https://podcasts.apple.com/podcast/${linkItem.applePod}`
-    } else if (linkItem.youtube) {
-        return `https://www.youtube.com/c/${linkItem.youtube}/videos`
-    } else if (linkItem.primeVideo) {
-        // return `https://watch.amazon.com/detail?asin=${linkItem.primeVideo}`
-        return `primevideo://detail?asin=${linkItem.primeVideo}`
-    } else if (linkItem.audible) {
-        return `audible://view?section=discover&asin=${linkItem.audible}`
-    } else {
-        return linkItem
-    }
 }
 
 function processDesc(movie, type) {
