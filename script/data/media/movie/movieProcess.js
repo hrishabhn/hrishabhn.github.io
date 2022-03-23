@@ -6,11 +6,11 @@ for (let tray of movieRaw) {
     tray.results = results
 
     tray.elem = {
-        big: searchMoviesNewRow(results, tray.name, 'big'),
-        small: searchMoviesNewRow(results, tray.name, 'small'),
-        smart: searchMoviesNewRow(results, tray.name, 'smart'),
-        oldSmall: searchMoviesRow(results, tray.name),
-        oldBig: searchMoviesRowBig(results, tray.name),
+        big: mediaElems.movie.new.row(results, tray.name, 'big'),
+        small: mediaElems.movie.new.row(results, tray.name, 'small'),
+        smart: mediaElems.movie.new.row(results, tray.name, 'smart'),
+        oldSmall: mediaElems.movie.small.row(results, tray.name),
+        oldBig: mediaElems.movie.big.row(results, tray.name),
     }
 
     movieData.push(tray.data)
@@ -34,7 +34,7 @@ const movies = {
 
         return results
     },
-    searchRow: function (q) { return searchMoviesNewRow(this.search(q), 'TV & Movies', 'smart') },
+    searchRow: function (q) { return mediaElems.movie.new.row(this.search(q), 'TV & Movies', 'smart') },
 }
 
 
