@@ -3,7 +3,6 @@ let movieRaw = [
         name: 'Up next',
         data: [
             allMovies.severance,
-            allMovies.silicon,
             allMovies.elite,
         ],
     },
