@@ -3,103 +3,198 @@ const mediaElems = {
         new: {
             // card: function () { },
             row: function (results, title, size) {
-    let row = rowBase(title)
-    let nodes = []
+                let row = rowBase(title)
+                let nodes = []
 
-    // process size
-    let small = false
-    let big = false
-    let med = false
+                // process size
+                let small = false
+                let big = false
+                let med = false
 
-    if (size == 'small') {
-        small = true
-    } else if (size == 'big') {
-        big = true
-    } else if (size == 'med') {
-        small = true
-        med = true
-    } else if (size == 'smart') {
-        small = true
-        if (results.length < 5) med = true
-    }
+                if (size == 'small') {
+                    small = true
+                } else if (size == 'big') {
+                    big = true
+                } else if (size == 'med') {
+                    small = true
+                    med = true
+                } else if (size == 'smart') {
+                    small = true
+                    if (results.length < 5) med = true
+                }
 
-    for (const key of results) {
-        const movie = allMovies[key]
+                for (const key of results) {
+                    const movie = allMovies[key]
 
-        // base card
-        var card = document.createElement('div')
-        card.classList = 'media-card movie clickable-o'
-        if (movie.info.date) card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
-        if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
+                    // base card
+                    var card = document.createElement('div')
+                    card.classList = 'media-card movie clickable-o'
+                    if (movie.info.date) card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
+                    if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
-        // size
-        if (small) card.classList.add('small')
-        else if (big) card.classList.add('big')
-
-
-        // bg for big
-        if (big) card.append(bgElement())
-
-        // thumb
-        let thumb
-        if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
-        else if (big) {
-            thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
-            thumb.style.setProperty('aspect-ratio', movie.style.mobileSize)
-            thumbCont = document.createElement('div')
-            thumbCont.classList = 'thumb-cont'
-
-            thumbCont.append(thumb)
-        }
-        thumb.append(gradElement())
-
-        if (small) card.append(thumb)
-        else if (big) card.append(thumbCont)
-
-        // title
-        card.append(movieCardTitle(key))
-
-        // textbox
-        if (big) {
-            card.append(textboxBase(null, movie.desc.full))
-
-            let more = document.createElement('a')
-            more.classList = 'more'
-            more.append(pElement('MORE'))
-            more.append(growElement())
-            more.append(iconElement(iconData.more))
-
-            card.append(more)
-        }
-
-        // med card
-        if (med) {
-            card.classList.remove('clickable-o')
-            card = mediaDetailCard(card, movie.desc.genre, movie.name, movie.info.summary)
-        }
-
-        // links
-        card.onclick = function () { movie.detail() }
-        // card.oncontextmenu = function (e) {
-        //     e.preventDefault()
-        //     contextModalShow([movieApps(movieData[i, j])], e)
-        // }
+                    // size
+                    if (small) card.classList.add('small')
+                    else if (big) card.classList.add('big')
 
 
-        nodes.push(card)
-    }
+                    // bg for big
+                    if (big) card.append(bgElement())
 
-    row.append(trayWithKids(nodes, 4))
-    return row
+                    // thumb
+                    let thumb
+                    if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
+                    else if (big) {
+                        thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
+                        thumb.style.setProperty('aspect-ratio', movie.style.mobileSize)
+                        thumbCont = document.createElement('div')
+                        thumbCont.classList = 'thumb-cont'
+
+                        thumbCont.append(thumb)
+                    }
+                    thumb.append(gradElement())
+
+                    if (small) card.append(thumb)
+                    else if (big) card.append(thumbCont)
+
+                    // title
+                    card.append(movieCardTitle(key))
+
+                    // textbox
+                    if (big) {
+                        card.append(textboxBase(null, movie.desc.full))
+
+                        let more = document.createElement('a')
+                        more.classList = 'more'
+                        more.append(pElement('MORE'))
+                        more.append(growElement())
+                        more.append(iconElement(iconData.more))
+
+                        card.append(more)
+                    }
+
+                    // med card
+                    if (med) {
+                        card.classList.remove('clickable-o')
+                        card = mediaDetailCard(card, movie.desc.genre, movie.name, movie.info.summary)
+                    }
+
+                    // links
+                    card.onclick = function () { movie.detail() }
+                    // card.oncontextmenu = function (e) {
+                    //     e.preventDefault()
+                    //     contextModalShow([movieApps(movieData[i, j])], e)
+                    // }
+
+
+                    nodes.push(card)
+                }
+
+                row.append(trayWithKids(nodes, 4))
+                return row
             },
         },
-        oldSmall: {
+        small: {
             card: function () { },
-            row: function () { },
+            row: function (results, title) {
+                let row = rowBase(title)
+                let nodes = []
+
+                for (const key of results) {
+                    let movie = allMovies[key]
+
+                    let card = cardBase()
+                    card.classList.add('info-card', 'movie', 'clickable-o')
+                    card.onclick = function () { movie.detail() }
+                    card.oncontextmenu = function (e) {
+                        e.preventDefault()
+                        contextModalShow([movieApps(movie)], e)
+                    }
+                    if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
+
+                    let thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
+                    thumb.innerHTML = `<div class="grad"></div>`
+                    if (movie.style.title.type) {
+                        let title = document.createElement('div')
+                        title.classList = `tv-title ${movie.style.title.size}`
+                        title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.title.type})`)
+                        thumb.append(title)
+                    }
+
+                    card.append(thumb)
+                    let textbox = textboxBase(movie.name, movie.desc.full)
+                    card.append(textbox)
+
+
+                    if (movie.info.date) {
+                        card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
+                    }
+
+                    nodes.push(card)
+                }
+
+                row.append(trayWithKids(nodes))
+                return row
+
+            },
         },
-        oldBig: {
+        big: {
             card: function () { },
-            row: function () { },
+            row: function (results, title) {
+                let row = rowBase(title)
+                let nodes = []
+
+                for (const key of results) {
+                    let movie = allMovies[key]
+
+                    let card = cardBase()
+                    card.onclick = function () { movie.detail() }
+                    card.oncontextmenu = function (e) {
+                        e.preventDefault()
+                        contextModalShow([movieApps(movie)], e)
+                    }
+                    card.classList.add('info-card', 'movie-big', 'clickable-o')
+
+                    card.append(bgElement(movie.style.color))
+
+                    let thumbCont = growElement()
+                    thumbCont.classList = 'thumb-cont'
+
+                    let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
+                    thumb.style.setProperty('--ratio', movie.style.mobileSize)
+
+                    let grad = gradElement()
+                    grad.style.setProperty('background-image', `linear-gradient(#${movie.style.color}00, #${movie.style.color} 90%)`)
+
+                    thumb.append(grad)
+
+                    thumbCont.append(thumb)
+                    thumbCont.append(growElement())
+                    card.append(thumbCont)
+
+                    if (movie.style.title.type) {
+                        var textbox = textboxBase(null, movie.desc.full)
+
+                        let title = document.createElement('div')
+                        title.classList = `tv-title ${movie.style.title.size}`
+                        title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.title.type})`)
+                        textbox.prepend(title)
+                    } else {
+                        var textbox = textboxBase(movie.name, movie.desc.full)
+                    }
+                    card.append(textbox)
+
+                    if (movie.info.date) {
+                        card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
+                    }
+
+                    if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
+
+                    nodes.push(card)
+                }
+
+                row.append(trayWithKids(nodes))
+                return row
+            },
         },
     },
 }
@@ -141,105 +236,6 @@ function mediaDetailCard(thumb, genre, name, summary) {
         return card
     } else return thumb
 }
-
-function searchMoviesRow(results, title) {
-    let row = rowBase(title)
-    let nodes = []
-
-    for (const key of results) {
-        let movie = allMovies[key]
-
-        let card = cardBase()
-        card.classList.add('info-card', 'movie', 'clickable-o')
-        card.onclick = function () { movie.detail() }
-        card.oncontextmenu = function (e) {
-            e.preventDefault()
-            contextModalShow([movieApps(movie)], e)
-        }
-        if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
-
-        let thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
-        thumb.innerHTML = `<div class="grad"></div>`
-        if (movie.style.title.type) {
-            let title = document.createElement('div')
-            title.classList = `tv-title ${movie.style.title.size}`
-            title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.title.type})`)
-            thumb.append(title)
-        }
-
-        card.append(thumb)
-        let textbox = textboxBase(movie.name, movie.desc.full)
-        card.append(textbox)
-
-
-        if (movie.info.date) {
-            card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
-        }
-
-        nodes.push(card)
-    }
-
-    row.append(trayWithKids(nodes))
-    return row
-}
-function searchMoviesRowBig(results, title) {
-    let row = rowBase(title)
-    let nodes = []
-
-    for (const key of results) {
-        let movie = allMovies[key]
-
-        let card = cardBase()
-        card.onclick = function () { movie.detail() }
-        card.oncontextmenu = function (e) {
-            e.preventDefault()
-            contextModalShow([movieApps(movie)], e)
-        }
-        card.classList.add('info-card', 'movie-big', 'clickable-o')
-
-        card.append(bgElement(movie.style.color))
-
-        let thumbCont = growElement()
-        thumbCont.classList = 'thumb-cont'
-
-        let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
-        thumb.style.setProperty('--ratio', movie.style.mobileSize)
-
-        let grad = gradElement()
-        grad.style.setProperty('background-image', `linear-gradient(#${movie.style.color}00, #${movie.style.color} 90%)`)
-
-        thumb.append(grad)
-
-        thumbCont.append(thumb)
-        thumbCont.append(growElement())
-        card.append(thumbCont)
-
-        if (movie.style.title.type) {
-            var textbox = textboxBase(null, movie.desc.full)
-
-            let title = document.createElement('div')
-            title.classList = `tv-title ${movie.style.title.size}`
-            title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.title.type})`)
-            textbox.prepend(title)
-        } else {
-            var textbox = textboxBase(movie.name, movie.desc.full)
-        }
-        card.append(textbox)
-
-        if (movie.info.date) {
-            card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
-        }
-
-        if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
-
-        nodes.push(card)
-    }
-
-    row.append(trayWithKids(nodes))
-    return row
-}
-
-
 
 // actor
 function searchActorsRow(results) {
