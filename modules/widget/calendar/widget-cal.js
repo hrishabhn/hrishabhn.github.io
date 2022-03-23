@@ -13,13 +13,9 @@ function widgetCal() {
     // day and date
     left.append(titleElement(capitalizeFirstLetter(processDate.day.long(new Date()))))
     left.append(dataElem(new Date().getDate(), null))
-
     left.append(spacerElement(8))
 
     // variables
-    let displayedTotal = 0
-    let countedEvents = 0
-
     let displayedLeft = 0
     let displayedRight = 0
 
@@ -31,76 +27,71 @@ function widgetCal() {
 
     // today
     if (todayEvents.length) {
-        while (todayEvents[0] && (displayedLeft < limitLeft)) {
-            const event = todayEvents.shift()
+        let i = 0
+        while (todayEvents[i] && (displayedLeft < limitLeft)) {
+            const event = todayEvents[i]
             if (!event.allDay) {
                 left.append(eventCardElem(event))
                 left.append(spacerElement(5))
 
                 displayedLeft++
-                // displayedTotal++
-                // countedEvents++
                 showingTdy = true
             }
+            i++
         }
 
         // right
-        while (todayEvents[0] && (displayedRight < limitRight)) {
-            const event = todayEvents.shift()
+        while (todayEvents[i] && (displayedRight < limitRight)) {
+            const event = todayEvents[i]
             if (!event.allDay) {
                 right.append(eventCardElem(event))
                 right.append(spacerElement(5))
 
                 displayedRight++
-                // displayedTotal++
-                // countedEvents++
                 showingTdy = true
             }
+            i++
         }
 
         // more events today
-        if (todayEvents[0]) {
-            right.append(futureCard(todayEvents))
-        }
-    }
+        if (todayEvents[i]) right.append(futureCard(todayEvents.slice(i)))
 
-    displayedTotal = displayedLeft + displayedRight
+    }
 
     // tomorrow
     if (tmrEvents.length) {
-        while (tmrEvents[0] && (displayedLeft < limitLeft)) {
+        let i = 0
+        while (tmrEvents[i] && (displayedLeft < limitLeft)) {
             if (!showingTmr) left.append(subtitleElement('TOMORROW'))
-            const event = tmrEvents.shift()
+            const event = tmrEvents[i]
             if (!event.allDay) {
                 left.append(eventCardElem(event))
                 left.append(spacerElement(5))
 
                 displayedLeft++
-                // displayedTotal++
-                // countedEvents++
                 showingTmr = true
             }
+            i++
         }
 
         // right
-        while (tmrEvents[0] && (displayedRight < limitRight)) {
+        while (tmrEvents[i] && (displayedRight < limitRight)) {
             if (!showingTmr) right.append(subtitleElement('TOMORROW'))
-            const event = tmrEvents.shift()
+            const event = tmrEvents[i]
             if (!event.allDay) {
                 right.append(eventCardElem(event))
                 right.append(spacerElement(5))
 
                 displayedRight++
-                // displayedTotal++
-                // countedEvents++
                 showingTmr = true
             }
+            i++
         }
 
         // more events tmr
-        if (tmrEvents[0] && displayedTotal < (limitLeft + limitRight + 1)) {
+        if (tmrEvents[i] && (displayedLeft + displayedRight) < (limitLeft + limitRight + 1)) {
             if (!showingTmr) right.append(subtitleElement('TOMORROW'))
-            right.append(futureCard(tmrEvents))
+            right.append(futureCard(tmrEvents.slice(i)))
         }
     }
 
@@ -112,8 +103,6 @@ function widgetCal() {
     card.append(right)
 
     // initialise variables
-
-
     function futureCard(events) {
         let moreData = {
             number: 0,
@@ -134,84 +123,6 @@ function widgetCal() {
 
         return futureCardElem(moreData)
     }
-
-
-    // if (tmrEvents[0]) {
-    //     // tomorrow
-    //     if (tmrEvents[0] && (displayedTmr < 2)) {
-    //         card.append(subtitleElement('TOMORROW'))
-
-    //         while (tmrEvents[0] && (displayedTmr < 2)) {
-    //             const event = tmrEvents.shift()
-    //             if (!event.allDay) {
-    //                 card.append(eventCardElem(event))
-    //                 card.append(spacerElement(5))
-
-    //                 displayedTdy++
-    //                 displayedTotal++
-    //                 countedEvents++
-    //                 showingTdy = true
-    //             }
-    //         }
-    //         showingTmr = true
-    //     }
-
-    //     // more events tmr
-    //     if (tmrEvents[0] && (showingTmr)) {
-    //         card.append(futureCard(tmrEvents))
-    //     }
-
-
-
-    // }
-
-
-
-
-
-    // // today's events
-    // while (todayEvents[0] && (displayedEvents < limit)) {
-    //     const event = todayEvents.shift()
-    //     if (!event.allDay) {
-    //         card.append(eventCardElem(event))
-    //         card.append(spacerElement(5))
-
-    //         displayedEvents++
-    //         countedEvents++
-    //     }
-    // }
-
-    // // more events today
-    // if (todayEvents[0]) {
-    //     card.append(futureCard(todayEvents))
-    // }
-
-    // // tomorrow
-    // if (tmrEvents[0] && (displayedEvents < limit)) {
-    //     card.append(subtitleElement('TOMORROW'))
-
-    //     while (tmrEvents[0] && (displayedEvents < limit)) {
-    //         const event = tmrEvents.shift()
-    //         if (!event.allDay) {
-    //             card.append(eventCardElem(event))
-    //             card.append(spacerElement(5))
-
-    //             displayedEvents++
-    //             countedEvents++
-    //         }
-    //     }
-    //     showingTmr = true
-    // }
-
-    // // more events tmr
-    // if (tmrEvents[0] && (showingTmr)) {
-    //     card.append(futureCard(tmrEvents))
-    // }
-
-    // // no events today or tmr
-    // if (!displayedEvents) {
-    //     card.append(subtitleElement('No more events today or tomorrow'))
-    // }
 
     card.append(growElement())
     return card

@@ -119,6 +119,14 @@ const appData = {
             accent: '0078d4',
             distract: false,
         },
+        {
+            name: 'Spark',
+            link: 'readdle-spark://',
+            desc: 'Email',
+            thumb: 'spark.jpeg',
+            style: 'blue',
+            distract: false,
+        },
         commonApps.onedrive('https://purdue0-my.sharepoint.com'),
         commonApps.notion('https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945'),
         {

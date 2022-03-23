@@ -35,9 +35,17 @@ function topbarLeft() {
 
     if (isDND()) dnd.firstChild.classList.add('blue-fg')
 
+    // cal
+    let cal = topbarItemElem()
+    cal.append(iconElement(iconData.calendar))
+    cal.onclick = function () { addModalLayer(widgetCal()) }
+
+
     left.append(dnd)
     left.append(spacerElement(5))
     left.append(refresh)
+    left.append(spacerElement(5))
+    left.append(cal)
     left.append(growElement())
 
     return left
