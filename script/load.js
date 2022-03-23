@@ -14,15 +14,15 @@ function loadApp() {
     
     // Testing
     // skipToContent()
-    // addModalLayer(workoutCard())
+    // modal.add(workoutCard())
     // allMovies['silicon'].detail()
     // castJSONStr(0,0)
 
     // busTest()
     // tripTest()
-    // addModalLayer(budgetDetailCard())
+    // modal.add(budgetDetailCard())
 
-    // addModalLayer(tripCard('tenerife'))
+    // modal.add(tripCard('tenerife'))
 }
 
 function paramsLoad() {

@@ -15,7 +15,7 @@
 //     add.classList = 'add green clickable'
 //     add.append(iconElement(iconData['plus']))
 //     add.onclick = function () {
-//         addModalLayer(budgetModal())
+//         modal.add(budgetModal())
 //     }
 
 //     card.append(title)

@@ -432,8 +432,8 @@ const allMovies = {
                 type: 'png',
                 size: 'widest',
             },
-            // mobileType: 'jpg',
-            // mobileSize: '7 / 10',
+            mobileType: 'jpg',
+            mobileSize: '7 / 10',
         },
         apps: {
             // tvTimeID: 'identifier',
@@ -6158,10 +6158,55 @@ const allMovies = {
             },
         ],
     },
+    'ministry': {
+        name: 'The Ministry of Time',
+        id: 'ministry',
+        link: 'https://play.hbomax.com/page/urn:hbo:page:GYT_OuA4CCYrCwgEAAAAf:type:series',
+        info: {
+            service: 'hbo',
+            // studio: 'studio',
+            location: 'HBO Max',
+            // date: '',
+            seasons: 4,
+            yearStart: 2015,
+            yearEnd: null,
+            genre: [
+                'history',
+                'sci-fi',
+            ],
+            summary: "To ensure that the history of Spain does not change and thus protect our present. This is the mission of the Ministry of Time, a secret government institution.",
+        },
+        style: {
+            color: '3d250f',
+            poster: {
+                wideType: 'webp',
+                mobile: {
+                    type: 'jpeg',
+                    size: '7 / 10',
+                    title: false,
+                }
+            },
+            title: {
+                type: 'png',
+                size: 'tallest',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-ministry-of-time-2015',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         char: 'name',
+        //     },
+        // ],
+    },
 }
-
 // @new
-// {
+// 'identifier': {
 //     name: 'Title',
 //     id: 'identifier',
 //     link: {
@@ -6172,25 +6217,30 @@ const allMovies = {
 //         // studio: 'studio',
 //         location: 'location',
 //         // date: '',
-//         desc: {
-//             seasons: 1,
-//             year: 2022,
-//             yearStart: 2022,
-//             yearEnd: null,
-//             genre: [
-//                 'crime',
-//                 'comedy',
-//             ],
-//         },
+//         seasons: 1,
+//         year: 2022,
+//         yearStart: 2022,
+//         yearEnd: null,
+//         genre: [
+//             'crime',
+//             'comedy',
+//         ],
 //         summary: "summary",
 //     },
 //     style: {
 //         color: '000000',
-//         poster.wideType: 'jpg',
-//         titleType: 'png',
-//         titleSize: 'widest',
-//         mobileType: 'jpg',
-//         mobileSize: '7 / 10',
+//         poster: {
+//             wideType: 'webp',
+//             mobile: {
+//                 type: 'webp',
+//                 size: '7 / 10',
+//                 title: true,
+//             },
+//         },
+//         title: {
+//             type: 'png',
+//             size: 'wide',
+//         },
 //     },
 //     apps: {
 //         // tvTimeID: 'identifier',
@@ -6205,7 +6255,6 @@ const allMovies = {
 //     //     },
 //     // ],
 // },
-
 
 // schitts creek
 // narcos
@@ -6251,7 +6300,7 @@ const processDesc = {
 
 for (const key in allMovies) {
     const movie = allMovies[key]
-
+    
     // process link
     if (movie.link) {
         if (movie.link.netflix) movie.link = `https://www.netflix.com/title/${movie.link.netflix}`
@@ -6284,6 +6333,22 @@ for (const key in allMovies) {
         size: null,
     }
 
+    if (movie.style.mobileType || movie.style.mobileSize) {
+        movie.style.poster.mobile = {
+            type: movie.style.mobileType,
+            size: movie.style.mobileSize,
+            title: true,
+        }
+        delete movie.style.mobileType
+        delete movie.style.mobileSize
+    }
+    if (!movie.style.poster.mobile) {
+        movie.style.poster.mobile = {
+            type: null,
+            size: null,
+            title: true,
+        }
+    }
 
 
     // show tv detail
@@ -6299,3 +6364,5 @@ for (const key in allMovies) {
         tvModal.classList.add('open')
     }
 }
+
+// console.log(allMovies.ministry)

@@ -176,7 +176,7 @@ function firstFlight() {
 
 
 function tripTest() {
-    addModalLayer(tripCard('london'))
+    modal.add(tripCard('london'))
 }
 
 function tripCard(key) {

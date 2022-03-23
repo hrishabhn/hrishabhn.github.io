@@ -38,7 +38,7 @@ function topbarLeft() {
     // cal
     let cal = topbarItemElem()
     cal.append(iconElement(iconData.calendar))
-    cal.onclick = function () { addModalLayer(widgetCal()) }
+    cal.onclick = function () { modal.add(widgetCal()) }
 
 
     left.append(dnd)

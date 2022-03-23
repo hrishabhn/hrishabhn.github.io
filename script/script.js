@@ -269,7 +269,7 @@ function openApp(data, e, force) {
             else window.open(data.link, '_blank')
         } else if (data.trigger) data.trigger()
     } else {
-        addModalLayer(distractModal(data, e, true))
+        modal.add(distractModal(data, e, true))
         document.getElementById('distract-input').focus()
     }
 }

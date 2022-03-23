@@ -2,6 +2,7 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
+            allMovies.ministry,
             allMovies.severance,
             allMovies.elite,
         ],
@@ -63,13 +64,9 @@ let movieRaw = [
             allMovies.mindhunter,
             allMovies.vikings,
             allMovies.qanon,
-            allMovies.myname,
             allMovies.witcher,
-            allMovies.dear,
             allMovies.mankind,
             allMovies.dark,
-            allMovies.fringe,
-            allMovies.lastman,
         ],
     },
     {
@@ -205,6 +202,10 @@ let movieRaw = [
             allMovies.problem,
             allMovies.yourname,
             allMovies.fairfax,
+            allMovies.myname,
+            allMovies.dear,
+            allMovies.fringe,
+            allMovies.lastman,
         ],
     },
 ]

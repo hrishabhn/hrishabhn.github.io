@@ -17,7 +17,7 @@ function distractModal(data, e) {
     input.onkeyup = function () {
         if (input.value == code) {
             openApp(data, e, true)
-            removeModalLayer()
+            modal.remove()
         }
     }
 

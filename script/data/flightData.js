@@ -387,7 +387,7 @@ let flightData = {
 }
 
 for (const key in flightData) {
-    flightData[key].detail = function () { addModalLayer(flightDetailCard(key)) }
+    flightData[key].detail = function () { modal.add(flightDetailCard(key)) }
 }
 
 let tripData = {

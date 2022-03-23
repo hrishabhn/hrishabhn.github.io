@@ -14,7 +14,7 @@ const widgets = {
         id: 'budget',
         type: 'div',
         icon: SFSymbols.creditcard.fill,
-        iconClick: function () { addModalLayer(budgetModal()) },
+        iconClick: function () { modal.add(budgetModal()) },
         content: [
             dataElem(`${spendingData.totalSpent}`, 'Spent'),
             widgetBudgetChart(),

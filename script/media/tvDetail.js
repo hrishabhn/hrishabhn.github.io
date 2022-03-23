@@ -33,12 +33,12 @@ function tvDetail(key) {
     card.append(wide)
 
     // mobile thumb
-    if (movie.style.mobileType) {
+    if (movie.style.poster.mobile.type) {
         let tall = document.createElement('div')
         tall.classList = 'fill-width tall-thumb only-mobile'
 
-        let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
-        thumb.style.setProperty('aspect-ratio', movie.style.mobileSize)
+        let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
+        thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
 
         let grad = gradElement()
         grad.style.setProperty('background-image', `linear-gradient(#00000000,#${movie.style.color})`)

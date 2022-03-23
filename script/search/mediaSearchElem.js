@@ -44,8 +44,8 @@ const mediaElems = {
                     let thumb
                     if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
                     else if (big) {
-                        thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
-                        thumb.style.setProperty('aspect-ratio', movie.style.mobileSize)
+                        thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
+                        thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
                         thumbCont = document.createElement('div')
                         thumbCont.classList = 'thumb-cont'
 
@@ -57,11 +57,13 @@ const mediaElems = {
                     else if (big) card.append(thumbCont)
 
                     // title
-                    card.append(movieCardTitle(key))
+                    if (!(big && !movie.style.poster.mobile.title)) card.append(movieCardTitle(key))
 
                     // textbox
                     if (big) {
-                        card.append(textboxBase(null, movie.desc.full))
+                        if (!(big && !movie.style.poster.mobile.title)) card.append(textboxBase(null, movie.desc.full))
+                        else card.append(textboxBase(movie.name, movie.desc.full))
+
 
                         let more = document.createElement('a')
                         more.classList = 'more'
@@ -159,8 +161,8 @@ const mediaElems = {
                     let thumbCont = growElement()
                     thumbCont.classList = 'thumb-cont'
 
-                    let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
-                    thumb.style.setProperty('--ratio', movie.style.mobileSize)
+                    let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
+                    thumb.style.setProperty('--ratio', movie.style.poster.mobile.size)
 
                     let grad = gradElement()
                     grad.style.setProperty('background-image', `linear-gradient(#${movie.style.color}00, #${movie.style.color} 90%)`)
@@ -336,8 +338,8 @@ function searchBookPodNewRow(results, title, type) {
         // let thumb
         // if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
         // else if (big) {
-        //     thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.mobileType}`)
-        //     thumb.style.setProperty('aspect-ratio', movie.style.mobileSize)
+        //     thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
+        //     thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
         //     thumbCont = document.createElement('div')
         //     thumbCont.classList = 'thumb-cont'
 
