@@ -37,7 +37,16 @@ let focusData = [
                             appData.video[1],
                             appData.video[2],
                             appData.video[3],
-                        ]
+                        ],
+                    }),
+                    widgets.app.card({
+                        title: 'Streaming',
+                        apps: [
+                            appData.video[4],
+                            appData.video[5],
+                            appData.video[6],
+                            appData.video[8],
+                        ],
                     }),
                 ]
             },

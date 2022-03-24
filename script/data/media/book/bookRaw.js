@@ -3,8 +3,8 @@ const bookRaw = [
         name: 'Reading Now',
         data: [
             allBooks.project,
-            allBooks.gweilo,
             allBooks.lost,
+            allBooks.gweilo,
             allBooks.focus,
             allBooks.jordan,
         ]

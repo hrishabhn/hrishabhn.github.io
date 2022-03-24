@@ -6197,12 +6197,46 @@ const allMovies = {
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
-        // cast: [
-        //     {
-        //         actor: 'name',
-        //         char: 'name',
-        //     },
-        // ],
+    },
+    'kal': {
+        name: 'Kal Ho Naa Ho',
+        id: 'kal',
+        link: {
+            netflix: '60036735'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            // date: '',
+            year: 2003,
+            genre: [
+                'comedy',
+                'romance',
+            ],
+            summary: "An uptight MBA student falls for the charismatic new neighbor who charms her troubled family - but he has a secret that forces him to push her away.",
+        },
+        style: {
+            color: 'ffffff',
+            poster: {
+                wideType: 'jpg',
+                mobile: {
+                    type: 'jpg',
+                    size: '8 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/kal-ho-naa-ho-2003',
+            imdbID: 'tt0347304',
+            // subReddit: 'subreddit',
+        },
     },
 }
 // @new

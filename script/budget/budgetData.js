@@ -88,7 +88,9 @@ let budgetData = [
     { "amount": 3, "name": "Beer", "category": "Drinks", "date": "2022-03-22T21:40:00+01:00" },
     { "amount": 0.45, "name": "Breakfast", "category": "Food", "date": "2022-03-23T10:19:00+01:00" },
     { "amount": 5.29, "name": "Jolibee", "category": "Food", "date": "2022-03-23T13:18:00+01:00" },
-
+    { "amount": 23, "name": "Sushi", "category": "Food", "date": "2022-03-23T23:05:00+01:00" },
+    { "amount": 2, "name": "Milkshake", "category": "Food", "date": "2022-03-23T23:48:00+01:00" },
+    { "amount": 1, "name": "Breakfast", "category": "Food", "date": "2022-03-24T11:43:00+01:00" },
 
 
 ]
