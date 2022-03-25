@@ -44,6 +44,18 @@ const elems = {
         grad.classList = 'grad'
         return grad
     },
+    hline: function () {
+        var hline = document.createElement('div')
+        hline.classList = 'hline'
+        return hline
+    },
+    hlineList: function (left) {
+        var hline = document.createElement('div')
+        hline.classList = 'hline list'
+        hline.style.setProperty('--left', `${left}px`)
+        return hline
+    },
+
 
     // types
     p: function (text) {
@@ -148,16 +160,11 @@ const elems = {
 //     return spacerAppList
 // }
 
-function growElement() {
-    var grow = document.createElement('div')
-    grow.classList = 'grow'
-    return grow
-}
-function hlineElement() {
-    var hline = document.createElement('div')
-    hline.classList = 'hline'
-    return hline
-}
+// function growElement() {
+//     var grow = document.createElement('div')
+//     grow.classList = 'grow'
+//     return grow
+// }
 function hlineListElement(left) {
     var hline = document.createElement('div')
     hline.classList = 'hline list'

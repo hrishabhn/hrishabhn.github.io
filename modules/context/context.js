@@ -34,13 +34,13 @@ const context = {
             if (tray.length) {
                 for (const item of tray) {
                     menu.append(context.item(item))
-                    menu.append(hlineElement())
+                    menu.append(elems.hline())
                 }
                 menu.lastChild.remove()
                 menu.append(dividerElem())
             } else if (tray.name) {
                 menu.append(elems.title(tray.name))
-                menu.append(hlineListElement(12))
+                menu.append(elems.hlineList(12))
             }
 
 
