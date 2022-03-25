@@ -35,7 +35,7 @@ function flightDetailCard(flightKey) {
 
     card.append(elems.spacer(20))
     card.append(rest)
-    card.append(spacerElement(40, 'only-mobile'))
+    // card.append(elems.spacer(40, 'only-mobile'))
     card.append(elems.spacer(15))
 
 
