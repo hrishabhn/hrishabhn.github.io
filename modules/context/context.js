@@ -1,67 +1,60 @@
-function menuItemElem(item) {
-    let elem = document.createElement('a')
-    elem.classList = 'item'
-    elem.onclick = function (e) {
-        openApp(item, e)
-    }
+const context = {
+    item: function (data) {
+        let elem = document.createElement('a')
+        elem.classList = 'item'
+        elem.onclick = function (e) { openApp(data, e) }
 
-    if (item.type == 'thumb') elem.append(thumbElement(item.thumb))
-    else if (item.type == 'icon') elem.append(iconElement(item.icon))
-    else if (item.type == 'col-block') {
-        let block = document.createElement('div')
-        block.classList = 'col-block'
-        block.style.setProperty('background-color', `#${item.color}`)
-        elem.append(block)
-    }
-
-    elem.append(textboxBase(item.name, item.desc))
-    elem.append(growElement())
-
-    if (item.link) {
-        // elem.href = item.link
-        elem.style.cursor = 'pointer'
-    }
-
-    if (item.data) {
-        elem.append(spacerElement(10))
-        elem.append(dataElem(item.data.value))
-    }
-
-    return elem
-}
-
-function contextModalShow(data, e) {
-    console.log(data)
-
-    let menu = document.getElementById('context-menu')
-    removeAllChildNodes(menu)
-
-    for (const tray of data) {
-        if (tray[0]) {
-            for (const item of tray) {
-                menu.append(menuItemElem(item))
-                menu.append(hlineElement())
-            }
-            menu.lastChild.remove()
-            menu.append(dividerElem())
-        } else if (tray.name) {
-            menu.append(titleElement(tray.name))
-            menu.append(hlineListElement(12))
+        if (data.type == 'thumb') elem.append(thumbElement(data.thumb))
+        else if (data.type == 'icon') elem.append(iconElement(data.icon))
+        else if (data.type == 'col-block') {
+            let block = document.createElement('div')
+            block.classList = 'col-block'
+            block.style.setProperty('background-color', `#${data.color}`)
+            elem.append(block)
         }
 
+        elem.append(textboxBase(data.name, data.desc))
+        elem.append(growElement())
 
-    }
-    menu.lastChild.remove()
+        if (data.link) { elem.style.cursor = 'pointer' }
 
-    absolutePos(menu, e)
+        if (data.data) {
+            elem.append(spacerElement(10))
+            elem.append(dataElem(data.data.value))
+        }
 
-    let container = document.getElementById('context-modal')
-    container.classList = 'show'
-}
+        return elem
+    },
+    show: function (data, e) {
+        // console.log(data)
+        let menu = document.getElementById('context-menu')
+        removeAllChildNodes(menu)
 
-function contextModalHide() {
-    let container = document.getElementById('context-modal')
-    container.classList = 'hide'
+        for (const tray of data) {
+            if (tray.length) {
+                for (const item of tray) {
+                    menu.append(context.item(item))
+                    menu.append(hlineElement())
+                }
+                menu.lastChild.remove()
+                menu.append(dividerElem())
+            } else if (tray.name) {
+                menu.append(titleElement(tray.name))
+                menu.append(hlineListElement(12))
+            }
+
+
+        }
+        menu.lastChild.remove()
+        absolutePos(menu, e)
+
+        let container = document.getElementById('context-modal')
+        container.classList = 'show'
+    },
+    hide: function () {
+        let container = document.getElementById('context-modal')
+        container.classList = 'hide'
+    },
 }
 
 function absolutePos(elem, e) {

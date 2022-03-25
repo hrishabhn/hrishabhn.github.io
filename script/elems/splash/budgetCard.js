@@ -33,7 +33,7 @@
 // function budgetCardChart() {
 //     let chart = document.createElement('div')
 //     chart.classList = 'chart clickable-o'
-//     chart.onclick = function (e) { contextModalShow(budgetMenuData(), e) }
+//     chart.onclick = function (e) { context.show(budgetMenuData(), e) }
 
 //     for (let i = 0; i < 7; i++) {
 //         let col = document.createElement('div')
@@ -73,7 +73,7 @@
 // function budgetCardIcons() {
 //     let tray = document.createElement('div')
 //     tray.classList = 'icon-tray clickable-o'
-//     tray.onclick = function (e) { contextModalShow(budgetMenuCatData(), e) }
+//     tray.onclick = function (e) { context.show(budgetMenuCatData(), e) }
 
 //     for (const cat in spendingCategories) {
 //         let icon = (iconElement(spendingCategories[cat].icon))

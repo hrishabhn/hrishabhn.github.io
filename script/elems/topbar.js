@@ -98,7 +98,7 @@ const topbar = {
         const focus = getFocus()
         const app = {
             name: focus.name,
-            trigger: function (e) { contextModalShow(focusMenuData(), e) },
+            trigger: function (e) { context.show(focusMenuData(), e) },
             icon: focus.icon ?? SFSymbols.creditcard.fill,
         }
 
@@ -111,28 +111,28 @@ const topbar = {
     }
 }
 
-function topbarRight() {
-    // focus
-    let focus = getFocus()
-    let focusAppElem = appCardSmall({
-        thumb: focus.thumb,
-        style: focus.style,
-    })
+// function topbarRight() {
+//     // focus
+//     let focus = getFocus()
+//     let focusAppElem = appCardSmall({
+//         thumb: focus.thumb,
+//         style: focus.style,
+//     })
 
     
 
-    focusAppElem.onclick = function (e) {
-        contextModalShow(focusMenuData(), e)
-    }
+//     focusAppElem.onclick = function (e) {
+//         context.show(focusMenuData(), e)
+//     }
 
-    let right = document.createElement('div')
-    right.classList = 'side'
+//     let right = document.createElement('div')
+//     right.classList = 'side'
 
-    right.append(focusAppElem)
-    right.prepend(growElement())
+//     right.append(focusAppElem)
+//     right.prepend(growElement())
 
-    return right
-}
+//     return right
+// }
 
 function topbarItemElem() {
     let item = document.createElement('a')

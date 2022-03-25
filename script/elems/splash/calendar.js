@@ -103,7 +103,7 @@ function futureCardElem(data) {
     let card = document.createElement('div')
     card.classList = 'event future clickable-o'
     card.onclick = function (e) {
-        contextModalShow([menuData], e)
+        context.show([menuData], e)
     }
 
     for (const color in data.colors) {

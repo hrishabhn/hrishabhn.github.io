@@ -84,7 +84,7 @@ const mediaElems = {
                     card.onclick = function () { movie.detail() }
                     // card.oncontextmenu = function (e) {
                     //     e.preventDefault()
-                    //     contextModalShow([movieApps(movieData[i, j])], e)
+                    //     context.show([movieApps(movieData[i, j])], e)
                     // }
 
 
@@ -109,7 +109,7 @@ const mediaElems = {
                     card.onclick = function () { movie.detail() }
                     card.oncontextmenu = function (e) {
                         e.preventDefault()
-                        contextModalShow([movieApps(movie)], e)
+                        context.show([movieApps(movie)], e)
                     }
                     if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
@@ -152,7 +152,7 @@ const mediaElems = {
                     card.onclick = function () { movie.detail() }
                     card.oncontextmenu = function (e) {
                         e.preventDefault()
-                        contextModalShow([movieApps(movie)], e)
+                        context.show([movieApps(movie)], e)
                     }
                     card.classList.add('info-card', 'movie-big', 'clickable-o')
 
@@ -377,7 +377,7 @@ function searchBookPodNewRow(results, title, type) {
         // card.onclick = function () { movie.detail() }
         // // card.oncontextmenu = function (e) {
         // //     e.preventDefault()
-        // //     contextModalShow([movieApps(movieData[i, j])], e)
+        // //     context.show([movieApps(movieData[i, j])], e)
         // // }
         // card.onclick = function () { window.open(item.link, '_blank') }
         card.href = item.link

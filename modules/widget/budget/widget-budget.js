@@ -1,7 +1,7 @@
 function widgetBudgetChart() {
     let chart = document.createElement('div')
     chart.classList = 'budget-chart clickable-o'
-    chart.onclick = function (e) { contextModalShow(widgetBudgetChartMenuData(), e) }
+    chart.onclick = function (e) { context.show(widgetBudgetChartMenuData(), e) }
 
     for (let i = 0; i < 7; i++) {
         let col = document.createElement('div')
