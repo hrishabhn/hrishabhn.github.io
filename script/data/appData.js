@@ -17,6 +17,9 @@ const commonApps = {
             thumb: 'onedrive.jpeg',
             accent: colorData['onedrive'],
             distract: false,
+            dock: {
+                icon: SFSymbols.folder.fill,
+            },
         }
     },
     notion: function (link) {
@@ -25,8 +28,11 @@ const commonApps = {
             link: link,
             desc: 'Notes',
             thumb: 'notion.jpeg',
-            style: 'secondary',
+            accent: '000000',
             distract: false,
+            dock: {
+                icon: SFSymbols.note.text,
+            },
         }
     },
     aula: function (id, n) {
@@ -35,8 +41,11 @@ const commonApps = {
             link: `https://aulaglobal.uc3m.es/course/view.php?id=${id}`,
             desc: 'Learn',
             thumb: thumbData['course'],
-            style: 'purple',
+            style: 'orange',
             distract: false,
+            dock: {
+                icon: SFSymbols.graduationcap.fill,
+            },
         }
     },
     syllabus: function (id) {
@@ -47,6 +56,9 @@ const commonApps = {
             thumb: thumbData['book'],
             style: 'red',
             distract: false,
+            dock: {
+                icon: SFSymbols.book.fill,
+            },
         }
     },
 

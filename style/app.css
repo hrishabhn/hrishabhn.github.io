@@ -7,6 +7,7 @@
     overflow: hidden;
     
     min-width: 160px;
+    height: 100%;
     cursor: pointer;
 }
 .app-card .thumb{
@@ -31,7 +32,6 @@
 }
 
 .app-card .textbox{
-    flex-grow: 1;
     flex-direction: column;
 }
 .app-card .textbox p{

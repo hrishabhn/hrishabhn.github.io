@@ -39,7 +39,7 @@
 }
 
 
-#splash .dock{
+#splash .dock {
     max-width: min(calc(100% - 60px), 1100px);
     justify-content: flex-start;
     padding: 15px 0;
@@ -48,8 +48,41 @@
     overflow-x: scroll;
 }
 
+#splash .dock .app-card {
+    min-width: 100px;
+    min-height: 100px;
+}
+#splash .dock .app-card .thumb{
+    width: 35px;
+    height: 35px;
+}
+#splash .dock .app-card .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: -2px;
+}
 
+#splash .dock .app-card .bg {
+    background-color: var(--brand-col-dark, var(--brand-col));
+    -webkit-mask: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+}
 
+@media screen and (prefers-color-scheme: light) {
+    #splash .dock .app-card .bg {
+        background-color: var(--brand-col-light, var(--brand-col));
+        -webkit-mask: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
+    }
+}
+
+#splash .dock .app-card .textbox p.name{
+    font-size: 14px;
+}
+#splash .dock .app-card .textbox p.desc{
+    font-size: 10px;
+}
 
 
 .spotlight-tray {
@@ -89,7 +122,7 @@
     margin-right: 5px;
 }
 
-.spotlight-container .thumb{
+.spotlight-container .thumb {
     height: 24px;
     width: 24px;
     margin: 0 2px;

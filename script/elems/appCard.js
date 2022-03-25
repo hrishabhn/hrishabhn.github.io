@@ -1,13 +1,12 @@
 const appCard = {
-    hover: function (app){
+    hover: function (app) {
         let hoverDetailElem = document.createElement('div')
         hoverDetailElem.classList = 'hover-detail layer-1'
         hoverDetailElem.innerHTML = app.name
-    
+
         return hoverDetailElem
     },
     main: function (app) {
-
         let card = document.createElement('a')
         card.classList = 'app-card layer-1 clickable-o card-hover'
         card.target = '_blank'
@@ -29,14 +28,25 @@ const appCard = {
 
         if (app.thumb) {
             card.append(elems.appThumb(app.thumb))
-            card.append(elems.spacer(8))
         } else if (app.icon) {
             card.append(elems.icon(app.icon))
-            card.append(elems.spacer(8))
         }
+        card.append(elems.spacer(8))
+        card.append(elems.grow())
 
         card.append(elems.textbox(app.name, app.desc))
 
+        return card
+    },
+    dock: function (app) {
+        let card = appCard.main(app)
+        if (app.dock) {
+            let thumb = card.firstChild
+            card.replaceChild(elems.icon(app.dock.icon), thumb)
+            card.style.setProperty('color', 'white')
+            card.prepend(elems.bg())
+            card.classList.remove('card-hover')
+        }
         return card
     },
     mini: function (app) {

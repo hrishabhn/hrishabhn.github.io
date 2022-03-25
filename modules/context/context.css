@@ -81,8 +81,8 @@
 #context-menu .item .icon {
     height: 24px;
     width: 24px;
-    fill: white;
     margin-right: 8px;
+    opacity: 0.8;
 }
 #context-menu .item .col-block {
     height: 100%;
