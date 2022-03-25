@@ -21,6 +21,69 @@ function scrollEmbed(html, margin) {
 
 // 
 
+const elems = {
+    spacer: function (x) {
+        var spacer = document.createElement('div')
+        spacer.classList = 'spacer-x'
+        spacer.style.setProperty('--size', `${x}px`)
+        return spacer
+    },
+    grow: function () {
+        var grow = document.createElement('div')
+        grow.style.setProperty('flex-grow', 1)
+        return grow
+    },
+    bg: function (hex) {
+        let bg = document.createElement('div')
+        bg.classList = 'bg'
+        if (hex) bg.style.setProperty('background-color', `#${hex}`)
+        return bg
+    },
+    grad: function () {
+        let grad = document.createElement('div')
+        grad.classList = 'grad'
+        return grad
+    },
+
+    // types
+    p: function (text) {
+        let elem = document.createElement('p')
+        elem.innerHTML = text
+        return elem
+    },
+
+    // text
+
+    title: function (text) {
+        let elem = elems.p(text)
+        elem.classList = 'title'
+        return elem
+    },
+    name: function (text) {
+        let elem = elems.p(text)
+        elem.classList = 'name'
+        return elem
+    },
+    desc: function (text) {
+        let elem = elems.p(text)
+        elem.classList = 'desc'
+        return elem
+    },
+    textbox: function (name, desc) {
+        let textbox = document.createElement('div')
+        textbox.classList = 'textbox'
+        if (name) textbox.append(elems.name(name))
+        if (desc) textbox.append(elems.desc(desc))
+        return textbox
+    }
+}
+
+
+function pElement(text) {
+    let elem = document.createElement('p')
+    elem.innerHTML = text
+    return elem
+}
 function subtitleElement(title) {
     var element = document.createElement('p')
     element.classList = 'sub-title'
@@ -181,18 +244,18 @@ function itemElement() {
     item.classList = 'item'
     return item
 }
-function nameElement(name) {
-    let elem = document.createElement('p')
-    elem.classList = 'name'
-    elem.innerHTML = name
-    return elem
-}
-function descElement(desc) {
-    let elem = document.createElement('p')
-    elem.classList = 'desc'
-    elem.innerHTML = desc
-    return elem
-}
+// function nameElement(name) {
+//     let elem = document.createElement('p')
+//     elem.classList = 'name'
+//     elem.innerHTML = name
+//     return elem
+// }
+// function descElement(desc) {
+//     let elem = document.createElement('p')
+//     elem.classList = 'desc'
+//     elem.innerHTML = desc
+//     return elem
+// }
 function headerElement() {
     let elem = document.createElement('div')
     elem.classList = 'header'

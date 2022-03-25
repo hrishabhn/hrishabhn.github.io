@@ -93,11 +93,6 @@ function startSearchEngine(data) {
     }
 }
 
-function pElement(text) {
-    let elem = document.createElement('p')
-    elem.innerHTML = text
-    return elem
-}
 
 
 

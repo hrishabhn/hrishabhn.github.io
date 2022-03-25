@@ -230,8 +230,8 @@ function mediaDetailCard(thumb, genre, name, summary) {
             genreElem.classList = 'genre'
             detail.append(genreElem)
         }
-        if (name) detail.append(titleElement(name))
-        if (summary) detail.append(descElement(summary))
+        if (name) detail.append(elems.title(name))
+        if (summary) detail.append(elems.desc(summary))
 
         card.append(thumb)
         card.append(detail)
