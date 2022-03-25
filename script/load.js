@@ -3,6 +3,7 @@ function loadApp() {
     dndLoad()
 
     topbarLoad()
+    dndElemLoad()
     splashLoad()
 
     spotlightLoad()
@@ -11,7 +12,7 @@ function loadApp() {
     paramsLoad()
     setWallpaper()
 
-    
+
     // Testing
     // skipToContent()
     // modal.add(workoutCard())

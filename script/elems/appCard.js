@@ -80,3 +80,25 @@ function appCardSmallHover(app) {
 
     return hoverDetailElem
 }
+
+
+const appCardD = {
+    topbar: {
+        tray: function (apps) {
+            let nodes = []
+            for (const app of apps) nodes.push(this.card(app))
+            return trayWithKids(nodes, 5, 0)
+        },
+        card: function (app) {
+            let card = document.createElement('a')
+            if (app.id) card.id = app.id
+            card.classList = 'item layer-hover'
+            card.onclick = function (e) { openApp(app, e) }
+            card.append(iconElement(app.icon))
+            card.append(appCardSmallHover(app))
+            if (app.link) card.style.setProperty('cursor', 'pointer')
+
+            return card
+        },
+    },
+}

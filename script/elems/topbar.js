@@ -6,8 +6,36 @@ function topbarLoad() {
 }
 
 function topbarLeft() {
-    let left = document.createElement('div')
-    left.classList = 'side'
+    const apps = [
+        {
+            name: 'Refresh',
+            link: 'shortcuts://run-shortcut?name=Refresh%20Dashboard',
+            icon: SFSymbols.arrow.triangle.circlepath,
+        },
+        {
+            name: 'Do Not Disturb',
+            id: 'dnd',
+            trigger: function () { toggleDND() },
+            icon: SFSymbols.moon.fill,
+        },
+        {
+            name: 'Calendar',
+            trigger: function (e) { modal.position(widgetCal(), e) },
+            icon: SFSymbols.calendar,
+        },
+        {
+            name: 'Idea',
+            trigger: function (e) { modal.position(widgetIdeas(), e) },
+            icon: SFSymbols.lightbulb.fill,
+        },
+        
+    ]
+    
+    let tray = appCardD.topbar.tray(apps)
+    tray.classList = 'side'
+    tray.append(growElement())
+
+    return tray
 
     // // weather
     // let temp = topbarItemElem()
@@ -21,46 +49,15 @@ function topbarLeft() {
     // temp.append(tempIcon)
     // temp.append(spacerElement(5))
     // temp.append(tempText)
-
-    // refresh
-    let refresh = topbarItemElem()
-    refresh.append(iconElement(iconData.repeat))
-    refresh.href = 'shortcuts://run-shortcut?name=Refresh%20Dashboard'
-
-    // dnd
-    let dnd = topbarItemElem()
-    dnd.id = 'dnd'
-    dnd.append(iconElement(iconData.moon))
-    dnd.onclick = function () { toggleDND() }
-
-    if (isDND()) dnd.firstChild.classList.add('blue-fg')
-
-    // cal
-    let cal = topbarItemElem()
-    cal.append(iconElement(iconData.calendar))
-    cal.onclick = function () { modal.add(widgetCal()) }
-
-
-    left.append(dnd)
-    left.append(spacerElement(5))
-    left.append(refresh)
-    left.append(spacerElement(5))
-    left.append(cal)
-    left.append(growElement())
-
-    return left
 }
 
 function topbarMiddle() {
-    let appTray = document.createElement('div')
-    appTray.classList = 'quick-apps'
-
     const topbarApps = [
         {
             name: 'Spark',
             link: 'readdle-spark://',
             desc: 'Email',
-            icon: iconData.mail,
+            icon: SFSymbols.envelope.fill,
             style: 'blue',
             distract: false,
         },
@@ -68,7 +65,7 @@ function topbarMiddle() {
             name: 'OneDrive',
             link: 'https://purdue0-my.sharepoint.com',
             desc: 'Files',
-            icon: iconData.onedrive,
+            icon: SFSymbols.folder.fill,
             accent: colorData['onedrive'],
             distract: false,
 
@@ -77,7 +74,7 @@ function topbarMiddle() {
             name: 'Notion',
             link: 'https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945',
             desc: 'Notes',
-            icon: iconData.notion,
+            icon: SFSymbols.note.text,
             style: 'secondary',
             distract: false,
         },
@@ -85,19 +82,16 @@ function topbarMiddle() {
             name: 'TickTick',
             link: 'ticktick://',
             desc: 'To do list',
-            icon: iconData.ticktick,
+            icon: SFSymbols.checklist,
             style: 'blue',
             distract: false,
         },
     ]
 
-    for (const app of topbarApps) {
-        appTray.append(appCardSmall(app))
-        appTray.append(spacerElement(10))
-    }
-    appTray.lastChild.remove()
+    let tray = appCardD.topbar.tray(topbarApps)
+    tray.classList = 'quick-apps'
 
-    return appTray
+    return tray
 }
 
 function topbarRight() {

@@ -267,7 +267,7 @@ function openApp(data, e, force) {
         if (data.link) {
             if (e ? !e.metaKey : true) window.open(data.link, '_self')
             else window.open(data.link, '_blank')
-        } else if (data.trigger) data.trigger()
+        } else if (data.trigger) data.trigger(e)
     } else {
         modal.add(distractModal(data, e, true))
         document.getElementById('distract-input').focus()

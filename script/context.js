@@ -57,35 +57,7 @@ function contextModalShow(data, e) {
     }
     menu.lastChild.remove()
 
-
-    var x = e.pageX
-    var y = e.pageY
-
-    if (y < 70) { y = 70 }
-
-    menu.style.removeProperty('bottom')
-    menu.style.removeProperty('right')
-
-    menu.style.setProperty('top', `${y}px`)
-    menu.style.setProperty('left', `${x}px`)
-
-    let menuWidth = menu.offsetWidth
-    let menuHeight = menu.offsetHeight
-
-    let windowWidth = window.innerWidth
-    let windowHeight = window.innerHeight
-
-    let overflowY = (windowHeight - (y + menuHeight)) < 0
-    let overflowX = (windowWidth - (x + menuWidth)) < 0
-
-    if (overflowY) {
-        // menu.style.removeProperty('top')
-        menu.style.setProperty('bottom', '10px')
-    }
-    if (overflowX) {
-        menu.style.removeProperty('left')
-        menu.style.setProperty('right', '10px')
-    }
+    absolutePos(menu, e)
 
     let container = document.getElementById('context-modal')
     container.classList = 'show'
@@ -94,4 +66,37 @@ function contextModalShow(data, e) {
 function contextModalHide() {
     let container = document.getElementById('context-modal')
     container.classList = 'hide'
+}
+
+function absolutePos(elem, e) {
+    elem.style.setProperty('position', 'absolute')
+
+    var x = e.pageX
+    var y = e.pageY
+
+    if (y < 70) y = 70
+
+    elem.style.removeProperty('bottom')
+    elem.style.removeProperty('right')
+
+    elem.style.setProperty('top', `${y}px`)
+    elem.style.setProperty('left', `${x}px`)
+
+    let menuWidth = elem.offsetWidth
+    let menuHeight = elem.offsetHeight
+
+    let windowWidth = window.innerWidth
+    let windowHeight = window.innerHeight
+
+    let overflowY = (windowHeight - (y + menuHeight)) < 0
+    let overflowX = (windowWidth - (x + menuWidth)) < 0
+
+    if (overflowY) {
+        // elem.style.removeProperty('top')
+        elem.style.setProperty('bottom', '10px')
+    }
+    if (overflowX) {
+        elem.style.removeProperty('left')
+        elem.style.setProperty('right', '10px')
+    }
 }

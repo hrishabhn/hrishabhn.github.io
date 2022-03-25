@@ -14,18 +14,52 @@
 
 .topbar .item {
     height: 35px;
-    padding: 0 10px;
+    width: 35px;
+    /* padding: 0 10px; */
     border-radius: 10px;
 
-    font-size: 18px;
-    font-weight: 300;
+    /* font-size: 18px;
+    font-weight: 300; */
 
     cursor: default;
 }
 .topbar .item .icon {
-    height: 18px;
-    width: 18px;
+    height: 24px;
+    width: 24px;
 }
+
+
+.topbar .item:hover .hover-detail{
+    opacity: 1;
+}
+.topbar .item .hover-detail{
+    position: absolute;
+    top: calc(100% + 5px);
+
+    padding: 5px 8px;
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    box-shadow: 0 0 5px var(--black-50);
+    pointer-events: none;
+
+    transition: inherit;
+    opacity: 0;
+    white-space: nowrap;
+}
+@media screen and (prefers-color-scheme: light) {
+    .topbar .item .hover-detail{
+        box-shadow: 0 0 5px var(--black-30);
+    }
+}
+
+
+
+
+
+
 
 .topbar .side {
     height: 100%;

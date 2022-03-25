@@ -17,3 +17,9 @@
     font-weight: 400;
     opacity: 0.8;
 }
+
+#layer-modal .widget-card#ideas{
+    position: absolute;
+    height: 170px;
+    width: 170px;
+}
