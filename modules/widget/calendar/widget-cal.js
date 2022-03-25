@@ -62,7 +62,7 @@ function widgetCal() {
     if (tmrEvents.length) {
         let i = 0
         while (tmrEvents[i] && (displayedLeft < limitLeft)) {
-            if (!showingTmr) left.append(subtitleElement('TOMORROW'))
+            if (!showingTmr) left.append(elems.subtitle('TOMORROW'))
             const event = tmrEvents[i]
             if (!event.allDay) {
                 left.append(eventCardElem(event))
@@ -76,7 +76,7 @@ function widgetCal() {
 
         // right
         while (tmrEvents[i] && (displayedRight < limitRight)) {
-            if (!showingTmr) right.append(subtitleElement('TOMORROW'))
+            if (!showingTmr) right.append(elems.subtitle('TOMORROW'))
             const event = tmrEvents[i]
             if (!event.allDay) {
                 right.append(eventCardElem(event))
@@ -90,7 +90,7 @@ function widgetCal() {
 
         // more events tmr
         if (tmrEvents[i] && (displayedLeft + displayedRight) < (limitLeft + limitRight + 1)) {
-            if (!showingTmr) right.append(subtitleElement('TOMORROW'))
+            if (!showingTmr) right.append(elems.subtitle('TOMORROW'))
             right.append(futureCard(tmrEvents.slice(i)))
         }
     }

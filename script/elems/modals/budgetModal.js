@@ -15,7 +15,7 @@ function budgetModal() {
     ]
 
     for (const input of inputTypes) {
-        card.append(subtitleElement(input))
+        card.append(elems.subtitle(input))
         card.append(budgetModalInput(input))
 
     }

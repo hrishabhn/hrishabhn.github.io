@@ -64,6 +64,11 @@ const elems = {
         elem.classList = 'title'
         return elem
     },
+    subtitle: function (text) {
+        var elem = elems.p(text)
+        elem.classList = 'sub-title'
+        return elem
+    },
     name: function (text) {
         let elem = elems.p(text)
         elem.classList = 'name'
@@ -106,12 +111,12 @@ function pElement(text) {
     elem.innerHTML = text
     return elem
 }
-function subtitleElement(title) {
-    var element = document.createElement('p')
-    element.classList = 'sub-title'
-    element.innerHTML = title
-    return element
-}
+// function subtitleElement(title) {
+//     var element = document.createElement('p')
+//     element.classList = 'sub-title'
+//     element.innerHTML = title
+//     return element
+// }
 
 function spacerElement(x, devices) {
     var spacer = document.createElement('div')

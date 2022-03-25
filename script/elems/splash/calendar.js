@@ -57,7 +57,7 @@
 
 //     // tomorrow
 //     if (tmrEvents[0] && (displayedEvents < 2)) {
-//         card.append(subtitleElement('TOMORROW'))
+//         card.append(elems.subtitle('TOMORROW'))
 
 //         while (tmrEvents[0] && (displayedEvents < 2)) {
 //             const event = tmrEvents.shift()
@@ -79,7 +79,7 @@
 
 //     // no events today or tmr
 //     if (!displayedEvents) {
-//         card.append(subtitleElement('No more events today or tomorrow'))
+//         card.append(elems.subtitle('No more events today or tomorrow'))
 //     }
 
 //     card.append(growElement())

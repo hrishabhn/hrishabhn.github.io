@@ -17,7 +17,7 @@ function widgetTaskItems() {
             nodes.push(item)
         }
     } else {
-        nodes.push(subtitleElement('No more tasks today'))
+        nodes.push(elems.subtitle('No more tasks today'))
     }
 
     return nodes

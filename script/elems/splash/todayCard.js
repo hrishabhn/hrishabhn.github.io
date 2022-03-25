@@ -24,7 +24,7 @@ function todayCard() {
             card.append(item)
         }
     } else {
-        card.append(subtitleElement('No more tasks today'))
+        card.append(elems.subtitle('No more tasks today'))
     }
 
     return card
