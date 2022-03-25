@@ -1,26 +1,3 @@
-// function appendSpacer(html, n) {
-//     html = `${html}<div class="spacer-x" style="--size: ${n}px;"></div>`
-//     return html
-// }
-
-// function scrollEmbed(html, margin) {
-//     html = `<div class="scroll margin-${margin}">${html}</div>`
-//     return html
-// }
-
-// function contentTitleHTML(title) {
-//     // var titleHTML = `<div class="content-container"><div class="content-title">${title}</div></div><div class="spacer-15"></div>`
-//     var titleHTML = `<div class="content-title">${title}</div>`
-//     return titleHTML
-// }
-
-// function contentContainerEmbed(html) {
-//     html = `<div class="content-container layer1">${html}</div>`
-//     return html
-// }
-
-// 
-
 const elems = {
     spacer: function (x) {
         var spacer = document.createElement('div')
@@ -60,7 +37,6 @@ const elems = {
         item.classList = 'item'
         return item
     },
-
 
     // types
     p: function (text) {
@@ -120,19 +96,16 @@ const elems = {
 
     // other
     data: function (value, unit) {
-
         let elem = document.createElement('div')
         elem.classList = 'data'
 
-        let valueElem = document.createElement('p')
+        let valueElem = elems.p(value)
         valueElem.classList = 'value'
-        valueElem.innerHTML = value
         elem.append(valueElem)
 
         if (unit) {
-            let unitElem = document.createElement('p')
+            let unitElem = elems.p(unit)
             unitElem.classList = 'unit'
-            unitElem.innerHTML = unit
             elem.append(unitElem)
         }
 
