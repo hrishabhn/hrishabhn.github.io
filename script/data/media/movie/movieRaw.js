@@ -8,14 +8,15 @@ let movieRaw = [
         data: [
             allMovies.attack,
             allMovies.elite,
+            allMovies.wecrashed,
             allMovies.severance,
         ],
     },
     {
         name: 'My list',
         data: [
+            allMovies.atlanta,
             allMovies.kal,
-            allMovies.wecrashed,
             allMovies.snowfall,
             allMovies.ozark,
             allMovies.peaky,
@@ -108,7 +109,6 @@ let movieRaw = [
     {
         name: 'Coming Soon',
         data: [
-            allMovies.atlanta,
             allMovies.boys,
         ],
     },
