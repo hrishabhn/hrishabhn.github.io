@@ -37,6 +37,11 @@ const elems = {
         item.classList = 'item'
         return item
     },
+    tray: function () {
+        let tray = document.createElement('div')
+        tray.classList = 'tray'
+        return tray
+    },
 
     // types
     p: function (text) {

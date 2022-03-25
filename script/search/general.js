@@ -1,5 +1,5 @@
 function trayWithKids(nodes, spacing, sides) {
-    let tray = trayBase()
+    let tray = elems.tray()
     tray.classList.add('unpad')
 
     if (nodes[0]) {

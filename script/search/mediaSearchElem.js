@@ -42,9 +42,9 @@ const mediaElems = {
 
                     // thumb
                     let thumb
-                    if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
+                    if (small) thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
                     else if (big) {
-                        thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
+                        thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
                         thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
                         thumbCont = document.createElement('div')
                         thumbCont.classList = 'thumb-cont'
@@ -113,7 +113,7 @@ const mediaElems = {
                     }
                     if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
-                    let thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
+                    let thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
                     thumb.innerHTML = `<div class="grad"></div>`
                     if (movie.style.title.type) {
                         let title = document.createElement('div')
@@ -161,7 +161,7 @@ const mediaElems = {
                     let thumbCont = elems.grow()
                     thumbCont.classList = 'thumb-cont'
 
-                    let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
+                    let thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
                     thumb.style.setProperty('--ratio', movie.style.poster.mobile.size)
 
                     let grad = elems.grad()
@@ -273,7 +273,7 @@ function searchBookPodRow(results, title, type) {
             card.style.setProperty('--brand-col-light', `var(--${item.style}-light)`)
         }
 
-        let thumb = thumbBase(`./media-image/${folder}/${item.id}.${item.coverType}`)
+        let thumb = elems.thumb(`./media-image/${folder}/${item.id}.${item.coverType}`)
         card.append(thumb)
         card.append(elems.textbox(item.name, item.author))
 
@@ -317,7 +317,7 @@ function searchBookPodNewRow(results, title, type) {
         let card = document.createElement('a')
         card.classList = `media-card ${type} clickable-o`
 
-        let thumb = thumbBase(`./media-image/${folder}/${item.id}.${item.coverType}`)
+        let thumb = elems.thumb(`./media-image/${folder}/${item.id}.${item.coverType}`)
         card.append(thumb)
 
 
@@ -336,9 +336,9 @@ function searchBookPodNewRow(results, title, type) {
 
         // // thumb
         // let thumb
-        // if (small) thumb = thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
+        // if (small) thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
         // else if (big) {
-        //     thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
+        //     thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
         //     thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
         //     thumbCont = document.createElement('div')
         //     thumbCont.classList = 'thumb-cont'

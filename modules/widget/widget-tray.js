@@ -81,7 +81,7 @@ function widgetCard(data) {
     card.id = data.id
 
     if (data.title) card.append(elems.title(data.title))
-    if (data.data) card.append(dataElem(data.data.value, data.data.unit))
+    if (data.data) card.append(elems.data(data.data.value, data.data.unit))
     if (data.icon) {
         let iconElem = elems.icon(data.icon)
         iconElem.classList = 'top-icon'

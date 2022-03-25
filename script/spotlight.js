@@ -265,23 +265,23 @@ function rowBase(title) {
     return row
 }
 
-function trayBase() {
-    let tray = document.createElement('div')
-    tray.classList = 'tray'
-    return tray
-}
+// function trayBase() {
+//     let tray = document.createElement('div')
+//     tray.classList = 'tray'
+//     return tray
+// }
 
 function cardBase() {
     let card = document.createElement('a')
     card.classList = 'layer-1 card-hover'
     return card
 }
-function thumbBase(link) {
-    let thumb = document.createElement('div')
-    thumb.classList = 'thumb'
-    thumb.style.setProperty('background-image', `url(${link})`)
-    return thumb
-}
+// function thumbBase(link) {
+//     let thumb = document.createElement('div')
+//     thumb.classList = 'thumb'
+//     thumb.style.setProperty('background-image', `url(${link})`)
+//     return thumb
+// }
 
 
 document.addEventListener('keydown', keyPress)

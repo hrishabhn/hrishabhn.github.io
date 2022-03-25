@@ -28,7 +28,7 @@ function tvDetail(key) {
     let wide = document.createElement('div')
     wide.classList = 'fill-width wide-thumb'
 
-    wide.append(thumbBase(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`))
+    wide.append(elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`))
     wide.append(elems.grad())
     card.append(wide)
 
@@ -37,7 +37,7 @@ function tvDetail(key) {
         let tall = document.createElement('div')
         tall.classList = 'fill-width tall-thumb only-mobile'
 
-        let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
+        let thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
         thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
 
         let grad = elems.grad()
