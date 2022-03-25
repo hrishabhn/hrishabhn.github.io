@@ -6,7 +6,7 @@ function tasksCard() {
     let title = elems.title('Ideas')
     title.classList.add('yellow-fg')
     tasksCard.append(title)
-    tasksCard.append(spacerElement(5))
+    tasksCard.append(elems.spacer(5))
 
     if (getCookie('task-list')) {
         var taskData = JSON.parse(getCookie('task-list'))
@@ -48,7 +48,7 @@ function tasksCard() {
         }
 
         item.append(check)
-        item.append(spacerElement(5))
+        item.append(elems.spacer(5))
         item.append(input)
 
         tasksCard.append(item)

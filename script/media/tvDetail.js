@@ -107,7 +107,7 @@ function tvDetailApps(key) {
         iconElem.style.setProperty('--size', `${iconSize}px`)
 
         elem.append(iconElem)
-        elem.append(spacerElement(spacing))
+        elem.append(elems.spacer(spacing))
         elem.append(elems.p(text))
 
         if (link) elem.href = link

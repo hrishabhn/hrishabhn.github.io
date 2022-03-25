@@ -30,7 +30,7 @@ function widgetFlight(flightKey) {
     destText.classList.add(`${flight.airline.style}-fg`)
 
     dest.append(destIcon)
-    dest.append(spacerElement(5))
+    dest.append(elems.spacer(5))
     dest.append(destText)
     dest.append(growElement())
 
@@ -45,11 +45,11 @@ function widgetFlight(flightKey) {
 
     card.append(top)
     card.append(growElement())
-    card.append(spacerElement(20))
+    card.append(elems.spacer(20))
     card.append(dest)
-    card.append(spacerElement(5))
+    card.append(elems.spacer(5))
     card.append(count)
-    card.append(spacerElement(2))
+    card.append(elems.spacer(2))
     card.append(date)
 
 

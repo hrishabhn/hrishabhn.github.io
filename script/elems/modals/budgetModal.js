@@ -3,7 +3,7 @@ function budgetModal() {
     card.classList = 'budget-modal layer-0 card-shadow'
 
     card.append(elems.title('Create Transaction'))
-    card.append(spacerElement(5))
+    card.append(elems.spacer(5))
 
     const inputTypes = [
         'Amount',

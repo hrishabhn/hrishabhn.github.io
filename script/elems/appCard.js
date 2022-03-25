@@ -22,10 +22,10 @@ function appCard(app) {
 
     if (app.thumb) {
         card.append(thumbElement(app.thumb))
-        card.append(spacerElement(8))
+        card.append(elems.spacer(8))
     } else if (app.icon) {
         card.append(elems.icon(app.icon))
-        card.append(spacerElement(8))
+        card.append(elems.spacer(8))
     }
 
     card.append(textboxBase(app.name, app.desc))

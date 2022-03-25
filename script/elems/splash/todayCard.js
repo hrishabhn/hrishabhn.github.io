@@ -6,7 +6,7 @@ function todayCard() {
     let title = elems.title('Today')
     title.classList.add('blue-fg')
     card.append(title)
-    card.append(spacerElement(5))
+    card.append(elems.spacer(5))
 
     if (tasks_all[0]) {
         for (const task of tasks_all) {
@@ -18,7 +18,7 @@ function todayCard() {
             let text = elems.p(task)
 
             item.append(check)
-            item.append(spacerElement(5))
+            item.append(elems.spacer(5))
             item.append(text)
 
             card.append(item)

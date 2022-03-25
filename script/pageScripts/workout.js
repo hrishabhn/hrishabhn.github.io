@@ -88,7 +88,7 @@ function workoutCard() {
 
     for (let i = 0; i < workoutData().length; i++) {
         card.append(workoutItem(i))
-        card.append(spacerElement(10))
+        card.append(elems.spacer(10))
     }
     card.lastElementChild.remove()
 
@@ -127,7 +127,7 @@ function workoutItem(i) {
         button.onclick = function () { updateWorkout(i, j) }
 
         tray.append(button)
-        tray.append(spacerElement(5))
+        tray.append(elems.spacer(5))
     }
     tray.lastChild.remove()
 

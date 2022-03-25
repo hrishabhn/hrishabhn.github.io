@@ -13,7 +13,7 @@ function widgetCal() {
     // day and date
     left.append(elems.title(capitalizeFirstLetter(processDate.day.long(new Date()))))
     left.append(dataElem(new Date().getDate(), null))
-    left.append(spacerElement(8))
+    left.append(elems.spacer(8))
 
     // variables
     let displayedLeft = 0
@@ -32,7 +32,7 @@ function widgetCal() {
             const event = todayEvents[i]
             if (!event.allDay) {
                 left.append(eventCardElem(event))
-                left.append(spacerElement(5))
+                left.append(elems.spacer(5))
 
                 displayedLeft++
                 showingTdy = true
@@ -45,7 +45,7 @@ function widgetCal() {
             const event = todayEvents[i]
             if (!event.allDay) {
                 right.append(eventCardElem(event))
-                right.append(spacerElement(5))
+                right.append(elems.spacer(5))
 
                 displayedRight++
                 showingTdy = true
@@ -66,7 +66,7 @@ function widgetCal() {
             const event = tmrEvents[i]
             if (!event.allDay) {
                 left.append(eventCardElem(event))
-                left.append(spacerElement(5))
+                left.append(elems.spacer(5))
 
                 displayedLeft++
                 showingTmr = true
@@ -80,7 +80,7 @@ function widgetCal() {
             const event = tmrEvents[i]
             if (!event.allDay) {
                 right.append(eventCardElem(event))
-                right.append(spacerElement(5))
+                right.append(elems.spacer(5))
 
                 displayedRight++
                 showingTmr = true
@@ -99,7 +99,7 @@ function widgetCal() {
 
 
     card.append(left)
-    card.append(spacerElement(10))
+    card.append(elems.spacer(10))
     card.append(right)
 
     // initialise variables

@@ -195,7 +195,7 @@ let focusData = [
             trays: function () {
                 return [
                     workoutCard(),
-                    spacerElement(40),
+                    elems.spacer(40),
                 ]
             },
         },

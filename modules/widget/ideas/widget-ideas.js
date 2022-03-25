@@ -4,7 +4,7 @@ function widgetIdeas() {
     let card = widgetCardBase('div')
     card.id = 'ideas'
     card.append(elems.title('Ideas'))
-    card.append(spacerElement(5))
+    card.append(elems.spacer(5))
 
 
     let iconElem = elems.icon(SFSymbols.lightbulb.fill)
@@ -40,7 +40,7 @@ function widgetIdeas() {
         }
 
         item.append(check)
-        item.append(spacerElement(5))
+        item.append(elems.spacer(5))
         item.append(input)
 
         card.append(item)

@@ -33,10 +33,10 @@ function flightDetailCard(flightKey) {
     `
     rest.prepend(flightDetailCardActionTray(flight))
 
-    card.append(spacerElement(20))
+    card.append(elems.spacer(20))
     card.append(rest)
-    card.append(spacerElement(15))
     card.append(spacerElement(40, 'only-mobile'))
+    card.append(elems.spacer(15))
 
 
 
@@ -94,7 +94,7 @@ function flightDetailCardActionTray(flight) {
         }
 
         tray.append(action)
-        tray.append(spacerElement(10))
+        tray.append(elems.spacer(10))
     }
     tray.lastChild.remove()
 
@@ -220,7 +220,7 @@ function tripCardEvent(data, type) {
     logo.innerHTML = data.airline.logo.icon
 
     header.append(logo)
-    header.append(spacerElement(8))
+    header.append(elems.spacer(8))
     header.append(elems.p(`${data.airline.code} ${data.number}`))
 
     row1.append(icon)

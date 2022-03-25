@@ -10,7 +10,7 @@
 //     <p class="date">${new Date().getDate()}</p>
 //     `
 
-//     card.append(spacerElement(8))
+//     card.append(elems.spacer(8))
 
 //     // initialise variables
 //     let displayedEvents = 0
@@ -43,7 +43,7 @@
 //         const event = todayEvents.shift()
 //         if (!event.allDay) {
 //             card.append(eventCardElem(event))
-//             card.append(spacerElement(5))
+//             card.append(elems.spacer(5))
 
 //             displayedEvents++
 //             countedEvents++
@@ -63,7 +63,7 @@
 //             const event = tmrEvents.shift()
 //             if (!event.allDay) {
 //                 card.append(eventCardElem(event))
-//                 card.append(spacerElement(5))
+//                 card.append(elems.spacer(5))
 
 //                 displayedEvents++
 //                 countedEvents++
@@ -184,7 +184,7 @@ function eventCardElem(event) {
 // //         tray.append(card)
 
 // //         if (k < data.length - 1) {
-// //             tray.append(spacerElement(10))
+// //             tray.append(elems.spacer(10))
 // //         }
 // //     }
 // //     row.append(tray)

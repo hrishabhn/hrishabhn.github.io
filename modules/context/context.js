@@ -19,7 +19,7 @@ const context = {
         if (data.link) { elem.style.cursor = 'pointer' }
 
         if (data.data) {
-            elem.append(spacerElement(10))
+            elem.append(elems.spacer(10))
             elem.append(dataElem(data.data.value))
         }
 

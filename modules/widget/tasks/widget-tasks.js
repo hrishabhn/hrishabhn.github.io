@@ -1,5 +1,5 @@
 function widgetTaskItems() {
-    let nodes = [spacerElement(5)]
+    let nodes = [elems.spacer(5)]
 
     if (tasks_all[0]) {
         for (const task of tasks_all) {
@@ -11,7 +11,7 @@ function widgetTaskItems() {
             let text = elems.p(task)
 
             item.append(check)
-            item.append(spacerElement(5))
+            item.append(elems.spacer(5))
             item.append(text)
 
             nodes.push(item)

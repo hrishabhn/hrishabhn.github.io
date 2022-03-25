@@ -118,7 +118,7 @@ const elems = {
 //     return element
 // }
 
-function spacerElement(x, devices) {
+function elemsspacer(x, devices) {
     var spacer = document.createElement('div')
     spacer.classList = 'spacer-x'
     spacer.style.setProperty('--size', `${x}px`)
@@ -197,7 +197,7 @@ function hscrollHuluElement(child) {
 //     // element.target = '_blank'
 //     element.classList = 'layer-1 button-fg card-shadow clickable page-width'
 //     element.append(elems.icon(iconData['search']))
-//     element.append(spacerElement(10))
+//     element.append(elems.spacer(10))
 
 //     var text = document.createElement('p')
 //     text.innerHTML = contentItem.engine
@@ -213,8 +213,8 @@ function colContainerRender(content1, content2) {
     container.classList = 'col-container page-width'
 
     container.append(colRender(content1))
-    container.append(spacerElement(15))
-    container.append(spacerElement(5, 'hidden-mobile'))
+    container.append(elems.spacer(15))
+    container.append(elems.spacer(5, 'hidden-mobile'))
     container.append(colRender(content2))
 
     return container

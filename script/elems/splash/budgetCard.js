@@ -59,7 +59,7 @@
 
 //         bar.append(barBody)
 //         col.append(bar)
-//         col.append(spacerElement(5))
+//         col.append(elems.spacer(5))
 //         col.append(elems.p(processDay(((i + 1) % 7), 'letter')))
 
 //         chart.append(col)
@@ -79,7 +79,7 @@
 //         let icon = (iconElement(spendingCategories[cat].icon))
 //         icon.classList.add(spendingCategories[cat].col)
 //         tray.append(icon)
-//         tray.append(spacerElement(5))
+//         tray.append(elems.spacer(5))
 //     }
 //     tray.lastChild.remove()
 //     tray.append(growElement())

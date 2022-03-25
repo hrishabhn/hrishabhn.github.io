@@ -49,7 +49,7 @@ const topbar = {
         // tempText.id = 'weather-temp'
 
         // temp.append(tempIcon)
-        // temp.append(spacerElement(5))
+        // temp.append(elems.spacer(5))
         // temp.append(tempText)
     },
     middle: function () {
