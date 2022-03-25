@@ -33,7 +33,7 @@ const topbar = {
 
         ]
 
-        let tray = appCardD.topbar.tray(apps)
+        let tray = appCard.topbar.tray(apps)
         tray.classList = 'side'
         tray.append(elems.grow())
 
@@ -89,7 +89,7 @@ const topbar = {
             },
         ]
 
-        let tray = appCardD.topbar.tray(apps)
+        let tray = appCard.topbar.tray(apps)
         tray.classList = 'quick-apps'
 
         return tray
@@ -105,7 +105,7 @@ const topbar = {
         let tray = document.createElement('div')
         tray.classList = 'side'
         tray.append(elems.grow())
-        tray.append(appCardD.topbar.card(app))
+        tray.append(appCard.topbar.card(app))
 
         return tray
     }

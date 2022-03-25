@@ -241,7 +241,7 @@ function searchAppsRow(data, title) {
     let nodes = []
 
     for (let k = 0; k < data.length; k++) {
-        let card = appCard(data[k])
+        let card = appCard.main(data[k])
         nodes.push(card)
     }
     row.append(trayWithKids(nodes, 10))

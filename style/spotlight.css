@@ -40,28 +40,13 @@
 
 
 #splash .dock{
-    max-width: min(calc(100% - 60px), 1000px);
+    max-width: min(calc(100% - 60px), 1100px);
     justify-content: flex-start;
     padding: 15px 0;
     border-radius: 25px;
     margin-bottom: 20px;
+    overflow-x: scroll;
 }
-.dock .app-card-mini .thumb{
-    width: 60px;
-    height: 60px;
-    border-radius: 14px;
-}
-.dock .app-card-mini .textbox{
-    bottom: calc(100% + 20px);
-    top: initial;
-    opacity: 0;
-    pointer-events: none;
-}
-.dock .app-card-mini:hover .textbox {
-    opacity: 1;
-}
-
-
 
 
 
