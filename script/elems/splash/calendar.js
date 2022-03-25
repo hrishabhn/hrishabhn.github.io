@@ -133,7 +133,7 @@ function eventCardElem(event) {
     let info = document.createElement('div')
     info.classList = 'info'
 
-    info.append(bgElement(event.color))
+    info.append(elems.bg(event.color))
     if (!event.allDay) {
         info.append(textboxBase(event.name, event.duration))
     } else {

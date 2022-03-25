@@ -38,7 +38,7 @@ const mediaElems = {
 
 
                     // bg for big
-                    if (big) card.append(bgElement())
+                    if (big) card.append(elems.bg())
 
                     // thumb
                     let thumb
@@ -51,7 +51,7 @@ const mediaElems = {
 
                         thumbCont.append(thumb)
                     }
-                    thumb.append(gradElement())
+                    thumb.append(elems.grad())
 
                     if (small) card.append(thumb)
                     else if (big) card.append(thumbCont)
@@ -156,7 +156,7 @@ const mediaElems = {
                     }
                     card.classList.add('info-card', 'movie-big', 'clickable-o')
 
-                    card.append(bgElement(movie.style.color))
+                    card.append(elems.bg(movie.style.color))
 
                     let thumbCont = growElement()
                     thumbCont.classList = 'thumb-cont'
@@ -164,7 +164,7 @@ const mediaElems = {
                     let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
                     thumb.style.setProperty('--ratio', movie.style.poster.mobile.size)
 
-                    let grad = gradElement()
+                    let grad = elems.grad()
                     grad.style.setProperty('background-image', `linear-gradient(#${movie.style.color}00, #${movie.style.color} 90%)`)
 
                     thumb.append(grad)
@@ -345,7 +345,7 @@ function searchBookPodNewRow(results, title, type) {
 
         //     thumbCont.append(thumb)
         // }
-        // thumb.append(gradElement())
+        // thumb.append(elems.grad())
 
         // if (small) card.append(thumb)
         // else if (big) card.append(thumbCont)

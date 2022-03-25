@@ -10,7 +10,7 @@ function widgetMedia(data, type) {
         card.style.setProperty('--thumb', `url(../../../media-image/TV/background/${data.id}.${data.style.poster.wideType})`)
     }
 
-    let bg = bgElement()
+    let bg = elems.bg()
     let blur = document.createElement('div')
     blur.classList = 'blur'
 

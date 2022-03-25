@@ -1,12 +1,12 @@
-function appendSpacer(html, n) {
-    html = `${html}<div class="spacer-x" style="--size: ${n}px;"></div>`
-    return html
-}
+// function appendSpacer(html, n) {
+//     html = `${html}<div class="spacer-x" style="--size: ${n}px;"></div>`
+//     return html
+// }
 
-function scrollEmbed(html, margin) {
-    html = `<div class="scroll margin-${margin}">${html}</div>`
-    return html
-}
+// function scrollEmbed(html, margin) {
+//     html = `<div class="scroll margin-${margin}">${html}</div>`
+//     return html
+// }
 
 // function contentTitleHTML(title) {
 //     // var titleHTML = `<div class="content-container"><div class="content-title">${title}</div></div><div class="spacer-15"></div>`
@@ -205,17 +205,17 @@ function colRender(content) {
 }
 
 
-function bgElement(col) {
-    let bg = document.createElement('div')
-    bg.classList = 'bg'
-    bg.style.setProperty('background-color', `#${col}`)
-    return bg
-}
-function gradElement() {
-    let grad = document.createElement('div')
-    grad.classList = 'grad'
-    return grad
-}
+// function bgElement(col) {
+//     let bg = document.createElement('div')
+//     bg.classList = 'bg'
+//     bg.style.setProperty('background-color', `#${col}`)
+//     return bg
+// }
+// function gradElement() {
+//     let grad = document.createElement('div')
+//     grad.classList = 'grad'
+//     return grad
+// }
 
 function titleElement(title) {
     let elem = document.createElement('p')
