@@ -99,7 +99,7 @@ const topbar = {
         const app = {
             name: focus.name,
             trigger: function (e) { contextModalShow(focusMenuData(), e) },
-            icon: focus.icon ?? SFSymbols.person.fill,
+            icon: focus.icon ?? SFSymbols.creditcard.fill,
         }
 
         let tray = document.createElement('div')
