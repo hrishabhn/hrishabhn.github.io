@@ -196,7 +196,7 @@ function tripCard(key) {
         card.append(tripCardEvent(event))
     }
 
-    card.append(growElement())
+    card.append(elems.grow())
 
     return card
 }

@@ -133,7 +133,7 @@ function spotlightRun(e) {
     //     }
 
 
-    //     resultList.append(growElement())
+    //     resultList.append(elems.grow())
     //     // arrowIndex = 0
     // }
 

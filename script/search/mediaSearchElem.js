@@ -68,7 +68,7 @@ const mediaElems = {
                         let more = document.createElement('a')
                         more.classList = 'more'
                         more.append(elems.p('MORE'))
-                        more.append(growElement())
+                        more.append(elems.grow())
                         more.append(elems.icon(iconData.more))
 
                         card.append(more)
@@ -158,7 +158,7 @@ const mediaElems = {
 
                     card.append(elems.bg(movie.style.color))
 
-                    let thumbCont = growElement()
+                    let thumbCont = elems.grow()
                     thumbCont.classList = 'thumb-cont'
 
                     let thumb = thumbBase(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
@@ -170,7 +170,7 @@ const mediaElems = {
                     thumb.append(grad)
 
                     thumbCont.append(thumb)
-                    thumbCont.append(growElement())
+                    thumbCont.append(elems.grow())
                     card.append(thumbCont)
 
                     if (movie.style.title.type) {
@@ -360,7 +360,7 @@ function searchBookPodNewRow(results, title, type) {
         //     let more = document.createElement('a')
         //     more.classList = 'more'
         //     more.append(elems.p('MORE'))
-        //     more.append(growElement())
+        //     more.append(elems.grow())
         //     more.append(elems.icon(iconData.more))
 
         //     card.append(more)

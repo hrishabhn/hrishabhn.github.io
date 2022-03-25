@@ -118,33 +118,35 @@ const elems = {
 //     return element
 // }
 
-function elemsspacer(x, devices) {
-    var spacer = document.createElement('div')
-    spacer.classList = 'spacer-x'
-    spacer.style.setProperty('--size', `${x}px`)
+// function elemsspacer(x, devices) {
+//     var spacer = document.createElement('div')
+//     spacer.classList = 'spacer-x'
+//     spacer.style.setProperty('--size', `${x}px`)
 
-    if (devices) {
-        spacer.classList.add(devices)
-    }
+//     if (devices) {
+//         spacer.classList.add(devices)
+//     }
 
-    return spacer
-}
+//     return spacer
+// }
 
-function spacerContentElement() {
-    var spacerContent = document.createElement('div')
-    spacerContent.classList = 'spacer-content'
-    return spacerContent
-}
-function spacerContentNegElement() {
-    var spacerContent = document.createElement('div')
-    spacerContent.classList = 'spacer-content neg'
-    return spacerContent
-}
-function spacerAppListElement() {
-    var spacerAppList = document.createElement('div')
-    spacerAppList.classList = 'spacer-app-list'
-    return spacerAppList
-}
+
+
+// function spacerContentElement() {
+//     var spacerContent = document.createElement('div')
+//     spacerContent.classList = 'spacer-content'
+//     return spacerContent
+// }
+// function spacerContentNegElement() {
+//     var spacerContent = document.createElement('div')
+//     spacerContent.classList = 'spacer-content neg'
+//     return spacerContent
+// }
+// function spacerAppListElement() {
+//     var spacerAppList = document.createElement('div')
+//     spacerAppList.classList = 'spacer-app-list'
+//     return spacerAppList
+// }
 
 function growElement() {
     var grow = document.createElement('div')

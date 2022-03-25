@@ -20,7 +20,7 @@ function weatherCard(data) {
 
     card.append(title)
     card.append(temp)
-    card.append(growElement())
+    card.append(elems.grow())
     card.append(elems.icon(iconData['book']))
     card.append(status)
     card.append(hilo)

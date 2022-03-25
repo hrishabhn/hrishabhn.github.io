@@ -35,7 +35,7 @@ const topbar = {
 
         let tray = appCardD.topbar.tray(apps)
         tray.classList = 'side'
-        tray.append(growElement())
+        tray.append(elems.grow())
 
         return tray
 
@@ -104,7 +104,7 @@ const topbar = {
 
         let tray = document.createElement('div')
         tray.classList = 'side'
-        tray.append(growElement())
+        tray.append(elems.grow())
         tray.append(appCardD.topbar.card(app))
 
         return tray
@@ -129,7 +129,7 @@ const topbar = {
 //     right.classList = 'side'
 
 //     right.append(focusAppElem)
-//     right.prepend(growElement())
+//     right.prepend(elems.grow())
 
 //     return right
 // }

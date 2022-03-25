@@ -15,7 +15,7 @@ function widgetFlight(flightKey) {
     number.classList = 'number'
 
     top.append(logo)
-    top.append(growElement())
+    top.append(elems.grow())
     top.append(number)
 
 
@@ -32,7 +32,7 @@ function widgetFlight(flightKey) {
     dest.append(destIcon)
     dest.append(elems.spacer(5))
     dest.append(destText)
-    dest.append(growElement())
+    dest.append(elems.grow())
 
 
     let count = document.createElement('div')
@@ -44,7 +44,7 @@ function widgetFlight(flightKey) {
     date.innerHTML = `${processDate.day.short(flight.date)} ${new Date(flight.date).getDate()} ${processDate.month.short(flight.date)}, ${processTime.ampm(flight.date)}`
 
     card.append(top)
-    card.append(growElement())
+    card.append(elems.grow())
     card.append(elems.spacer(20))
     card.append(dest)
     card.append(elems.spacer(5))

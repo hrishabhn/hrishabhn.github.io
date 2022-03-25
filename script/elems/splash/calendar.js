@@ -82,7 +82,7 @@
 //         card.append(elems.subtitle('No more events today or tomorrow'))
 //     }
 
-//     card.append(growElement())
+//     card.append(elems.grow())
 //     return card
 // }
 
@@ -116,7 +116,7 @@ function futureCardElem(data) {
     let textStr = `${data.number} more event`
     if (data.number > 1) { textStr = textStr.concat('s') }
     card.append(elems.p(textStr))
-    card.append(growElement())
+    card.append(elems.grow())
 
     return card
 }
@@ -141,7 +141,7 @@ function eventCardElem(event) {
         eventCard.classList.add('all-day')
     }
 
-    info.append(growElement())
+    info.append(elems.grow())
 
     if (event.icon) { info.append(elems.icon(event.icon)) }
 

@@ -124,6 +124,6 @@ function widgetCal() {
         return futureCardElem(moreData)
     }
 
-    card.append(growElement())
+    card.append(elems.grow())
     return card
 }

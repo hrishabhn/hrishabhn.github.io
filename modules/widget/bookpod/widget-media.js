@@ -26,7 +26,7 @@ function widgetMedia(data, type) {
     }
 
     card.append(thumbElement())
-    card.append(growElement())
+    card.append(elems.grow())
 
     if (type == 'book') card.append(textboxBase(data.name, data.author))
     else if (type == 'movie') card.append(textboxBase(data.name, data.desc.full))

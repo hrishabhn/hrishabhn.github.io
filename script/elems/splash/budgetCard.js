@@ -63,7 +63,7 @@
 //         col.append(elems.p(processDay(((i + 1) % 7), 'letter')))
 
 //         chart.append(col)
-//         chart.append(growElement())
+//         chart.append(elems.grow())
 //     }
 //     chart.lastChild.remove()
 
@@ -82,7 +82,7 @@
 //         tray.append(elems.spacer(5))
 //     }
 //     tray.lastChild.remove()
-//     tray.append(growElement())
+//     tray.append(elems.grow())
 
 //     return tray
 // }

@@ -77,7 +77,7 @@ function tvDetail(key) {
     // apps
     info.append(tvDetailApps(key))
     card.append(info)
-    card.append(growElement())
+    card.append(elems.grow())
 
     // cast
     if (movie.cast) card.append(tvDetailCast(key))
@@ -188,7 +188,7 @@ function tvDetailCast(key) {
     tray.classList = 'cast-tray'
 
     cast.append(tray)
-    cast.append(growElement())
+    cast.append(elems.grow())
 
     return cast
 }

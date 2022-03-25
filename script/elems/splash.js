@@ -5,7 +5,7 @@ function splashLoad() {
     focus.classList = 'focus limit'
     focus.innerHTML = `<p class="text">${getFocus().name}</p>`
 
-    splash.append(growElement())
+    splash.append(elems.grow())
     splash.append(elems.spacer(50))
     splash.append(focus)
     splash.append(elems.spacer(10))
@@ -13,7 +13,7 @@ function splashLoad() {
     splash.append(elems.spacer(35))
     if (!isDND()) splash.append(widgetTray())
     splash.append(elems.spacer(50))
-    splash.append(growElement())
+    splash.append(elems.grow())
     splash.append(dockTray())
 }
 
@@ -23,8 +23,8 @@ function dockTray() {
 
     let tray = trayWithKids(nodes, 15, 15)
     tray.classList = 'dock layer-2-blur'
-    tray.prepend(growElement())
-    tray.append(growElement())
+    tray.prepend(elems.grow())
+    tray.append(elems.grow())
 
     return tray
 }

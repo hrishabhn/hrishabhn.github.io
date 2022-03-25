@@ -80,7 +80,7 @@ function workoutCard() {
     }
 
     header.append(headerText)
-    header.append(growElement())
+    header.append(elems.grow())
     header.append(reset)
 
     card.append(header)
@@ -113,7 +113,7 @@ function workoutItem(i) {
     icon.target = '_blank'
 
     title.append(elems.p(data.name))
-    title.append(growElement())
+    title.append(elems.grow())
     title.append(icon)
 
     let tray = document.createElement('div')
