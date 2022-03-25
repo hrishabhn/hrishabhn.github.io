@@ -25,14 +25,14 @@
     align-items: flex-start;
 }
 
-.flight-detail-card .header .textbox .subtext {
+.flight-detail-card .header .textbox .name {
     font-size: 12px;
     font-weight: 500;
     opacity: 0.6;
     text-transform: capitalize;
 }
 
-.flight-detail-card .header .textbox .text {
+.flight-detail-card .header .textbox .desc {
     font-size: 18px;
     font-weight: 500;
 }

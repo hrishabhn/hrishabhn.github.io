@@ -385,9 +385,8 @@ const flightData = {
         link: 'https://www.notion.so/Feb-2022-London-7bbb8355d70342d087d2f8e7cf43effc'
     },
 }
-
 for (const key in flightData) {
-    flightData[key].detail = function () { modal.add(flightDetailCard(key)) }
+    flightData[key].detail = function () { modal.add(travel.flights.detail(key)) }
 }
 
 const tripData = {
@@ -410,8 +409,54 @@ const tripData = {
 }
 
 const travel = {
-    airlines: airlineData,
-    aircraft: aircraftData,
-    flights: flightData,
-    trips: tripData,
+    flights: {
+        detail: function (key) {
+            const flight = flightData[key]
+
+            let card = document.createElement('div')
+            card.classList = 'flight-detail-card layer-1'
+            card.style.setProperty('--col', `#${flight.airline.accent}`)
+
+            // header
+            let header = elems.header()
+            header.append(elems.icon(flight.airline.logo.icon))
+            header.append(elems.textbox(`${flight.airline.code} ${flight.number} &#149 ${processDate.day.short(flight.date)} ${new Date(flight.date).getDate()} ${processDate.month.short(flight.date)}`, `${flight.dep.city} to ${flight.arr.city}`))
+
+            // rest
+            let rest = document.createElement('div')
+            rest.classList = 'fill-width vstack'
+
+            let duration = document.createElement('div')
+            duration.classList = 'duration-bar'
+            
+            duration.append(document.createElement('div'))
+            duration.append(lineForCard())
+            duration.append(elems.p(`Total ${flight.duration}`))
+            duration.append(lineForCard())
+            
+            rest.append(flightDetailCardActionTray(flight))
+            rest.append(flightDetailCardDepArr(flight.dep, 'dep'))
+            rest.append(duration)
+            rest.append(flightDetailCardDepArr(flight.arr, 'arr'))
+            rest.append(flightDetailCardExtras(flight))
+
+            card.append(header)
+            card.append(elems.spacer(20))
+            card.append(elems.hline())
+            card.append(elems.spacer(10))
+            card.append(rest)
+            card.append(elems.spacer(15))
+
+            function lineForCard() {
+                let line = document.createElement('div')
+                line.classList = 'line layer-fg'
+                return line
+            }
+
+            return card
+        },
+    },
+    trips: {
+
+    },
 }

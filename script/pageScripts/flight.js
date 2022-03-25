@@ -1,47 +1,47 @@
-function flightDetailCard(flightKey) {
-    const flight = flightData[flightKey]
+// function flightDetailCard(flightKey) {
+//     const flight = flightData[flightKey]
 
-    let card = document.createElement('div')
-    card.classList = 'flight-detail-card layer-1'
-    card.style.setProperty('--col', `#${flight.airline.accent}`)
-    card.innerHTML = `
-    <div class="header">
-        ${elems.icon(flight.airline.logo.icon).outerHTML}
-        <div class="textbox">
-            <p class="subtext">${flight.airline.code} ${flight.number} &#149 ${processDate.day.short(flight.date)} ${new Date(flight.date).getDate()} ${processDate.month.short(flight.date)}</p>
-            <p class="text">${flight.dep.city} to ${flight.arr.city}</p>
-        </div>
-    </div>
-    `
+//     let card = document.createElement('div')
+//     card.classList = 'flight-detail-card layer-1'
+//     card.style.setProperty('--col', `#${flight.airline.accent}`)
+//     card.innerHTML = `
+//     <div class="header">
+//         ${elems.icon(flight.airline.logo.icon).outerHTML}
+//         <div class="textbox">
+//             <p class="subtext">${flight.airline.code} ${flight.number} &#149 ${processDate.day.short(flight.date)} ${new Date(flight.date).getDate()} ${processDate.month.short(flight.date)}</p>
+//             <p class="text">${flight.dep.city} to ${flight.arr.city}</p>
+//         </div>
+//     </div>
+//     `
 
-    let rest = document.createElement('div')
-    rest.classList = 'fill-width vstack'
+//     let rest = document.createElement('div')
+//     rest.classList = 'fill-width vstack'
 
-    rest.innerHTML = `
-    <div class="status-bar">
-    <p>Departs in 7 days</p>
-    </div>
-    ${flightDetailCardDepArr(flight.dep, 'dep').outerHTML}
-    <div class="duration-bar">
-    <div></div>
-    <div class="line layer-fg"></div>
-    <p>Total ${flight.duration}</p>
-    <div class="line layer-fg"></div>
-    </div>
-    ${flightDetailCardDepArr(flight.arr, 'arr').outerHTML}
-    ${flightDetailCardExtras(flight).outerHTML}
-    `
-    rest.prepend(flightDetailCardActionTray(flight))
+//     rest.innerHTML = `
+//     <div class="status-bar">
+//     <p>Departs in 7 days</p>
+//     </div>
+//     ${flightDetailCardDepArr(flight.dep, 'dep').outerHTML}
+//     <div class="duration-bar">
+//     <div></div>
+//     <div class="line layer-fg"></div>
+//     <p>Total ${flight.duration}</p>
+//     <div class="line layer-fg"></div>
+//     </div>
+//     ${flightDetailCardDepArr(flight.arr, 'arr').outerHTML}
+//     ${flightDetailCardExtras(flight).outerHTML}
+//     `
+//     rest.prepend(flightDetailCardActionTray(flight))
 
-    card.append(elems.spacer(20))
-    card.append(rest)
-    // card.append(elems.spacer(40, 'only-mobile'))
-    card.append(elems.spacer(15))
+//     card.append(elems.spacer(20))
+//     card.append(rest)
+//     // card.append(elems.spacer(40, 'only-mobile'))
+//     card.append(elems.spacer(15))
 
 
 
-    return card
-}
+//     return card
+// }
 
 function flightDetailCardActionTray(flight) {
     const actionData = [

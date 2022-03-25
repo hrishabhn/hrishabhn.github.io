@@ -47,6 +47,11 @@ const elems = {
         divider.classList = 'divider'
         return divider
     },
+    header: function() {
+        let elem = document.createElement('div')
+        elem.classList = 'header'
+        return elem
+    },
 
     // types
     p: function (text) {
