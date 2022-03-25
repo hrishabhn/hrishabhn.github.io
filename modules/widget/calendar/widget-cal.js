@@ -12,7 +12,7 @@ function widgetCal() {
 
     // day and date
     left.append(elems.title(capitalizeFirstLetter(processDate.day.long(new Date()))))
-    left.append(dataElem(new Date().getDate(), null))
+    left.append(elems.data(new Date().getDate(), null))
     left.append(elems.spacer(8))
 
     // variables

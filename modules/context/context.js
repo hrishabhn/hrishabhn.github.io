@@ -4,7 +4,7 @@ const context = {
         elem.classList = 'item'
         elem.onclick = function (e) { openApp(data, e) }
 
-        if (data.type == 'thumb') elem.append(thumbElement(data.thumb))
+        if (data.type == 'thumb') elem.append(elems.appThumb(data.thumb))
         else if (data.type == 'icon') elem.append(elems.icon(data.icon))
         else if (data.type == 'col-block') {
             let block = document.createElement('div')
@@ -20,7 +20,7 @@ const context = {
 
         if (data.data) {
             elem.append(elems.spacer(10))
-            elem.append(dataElem(data.data.value))
+            elem.append(elems.data(data.data.value))
         }
 
         return elem

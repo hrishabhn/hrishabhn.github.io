@@ -21,7 +21,7 @@ function appCard(app) {
     }
 
     if (app.thumb) {
-        card.append(thumbElement(app.thumb))
+        card.append(elems.appThumb(app.thumb))
         card.append(elems.spacer(8))
     } else if (app.icon) {
         card.append(elems.icon(app.icon))
@@ -39,7 +39,7 @@ function appCardMini(app) {
     card.target = '_blank'
     card.onclick = function (e) { openApp(app, e) }
 
-    if (app.thumb) card.append(thumbElement(app.thumb))
+    if (app.thumb) card.append(elems.appThumb(app.thumb))
     else if (app.icon) card.append(elems.icon(app.icon))
 
     card.append(textboxBase(app.name, null))
@@ -61,7 +61,7 @@ function appCardSmall(app) {
     }
 
     if (app.thumb) {
-        card.append(thumbElement(app.thumb))
+        card.append(elems.appThumb(app.thumb))
     } else if (app.icon) {
         card.append(elems.icon(app.icon))
     }

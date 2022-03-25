@@ -28,7 +28,7 @@ function widgetTrackContent() {
 
         // console.log(app)
 
-        let thumb = thumbElement(app.thumb)
+        let thumb = elems.appThumb(app.thumb)
         let text = textboxBase(app.name, `${item.count} time${item.count > 1 ? 's' : ''}`)
 
         // console.log(app)
@@ -53,7 +53,7 @@ function widgetTrackContent() {
 
         while (remain.length && index < 7) {
             const app = remain.shift().app
-            let thumb = thumbElement(app.thumb)
+            let thumb = elems.appThumb(app.thumb)
 
             row.append(thumb)
 

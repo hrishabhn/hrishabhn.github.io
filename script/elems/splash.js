@@ -77,7 +77,7 @@ function startSearchEngine(data) {
 
     removeAllChildNodes(resultElem())
 
-    input.before(thumbElement(data.thumb))
+    input.before(elems.appThumb(data.thumb))
     input.value = ''
     input.placeholder = `Search ${data.name}`
     input.onkeyup = function (e) {
@@ -97,7 +97,7 @@ function startSearchEngine(data) {
 
 
 
-// function widgetItemElement(type) {
+// function widgetelems.item(type) {
 //     let card = document.createElement(type)
 //     card.classList = 'card-item layer-1'
 //     return card

@@ -1,6 +1,6 @@
 
 function tasksCard() {
-    let tasksCard = widgetItemElement('div')
+    let tasksCard = widgetelems.item('div')
     tasksCard.id = 'tasks-card'
 
     let title = elems.title('Ideas')

@@ -55,6 +55,11 @@ const elems = {
         hline.style.setProperty('--left', `${left}px`)
         return hline
     },
+    item: function () {
+        let item = document.createElement('a')
+        item.classList = 'item'
+        return item
+    },
 
 
     // types
@@ -106,15 +111,33 @@ const elems = {
         if (svg) icon.innerHTML = svg
         return icon
     },
-    // icon: function (svg) {
+    appThumb: function (thumb) {
+        let elem = document.createElement('div')
+        elem.classList = 'thumb'
+        if (thumb) { elem.style.setProperty('background-image', `url(./appThumb/${thumb}`) }
+        return elem
+    },
 
-    // },
-    // icon: function (svg) {
+    // other
+    data: function (value, unit) {
 
-    // },
-    // icon: function (svg) {
+        let elem = document.createElement('div')
+        elem.classList = 'data'
 
-    // },
+        let valueElem = document.createElement('p')
+        valueElem.classList = 'value'
+        valueElem.innerHTML = value
+        elem.append(valueElem)
+
+        if (unit) {
+            let unitElem = document.createElement('p')
+            unitElem.classList = 'unit'
+            unitElem.innerHTML = unit
+            elem.append(unitElem)
+        }
+
+        return elem
+    }
 }
 
 
@@ -146,113 +169,3 @@ const elems = {
 
 //     return element
 // }
-
-
-function colContainerRender(content1, content2) {
-    var container = document.createElement('div')
-    container.classList = 'col-container page-width'
-
-    container.append(colRender(content1))
-    container.append(elems.spacer(15))
-    container.append(elems.spacer(5, 'hidden-mobile'))
-    container.append(colRender(content2))
-
-    return container
-}
-function colRender(content) {
-    var col = document.createElement('div')
-    col.classList = 'col'
-    col.append(content)
-
-    // for (let i = 0; i < content.length; i++) {
-    //     col.append(content[i])
-    // }
-
-    return col
-}
-
-
-// function bgElement(col) {
-//     let bg = document.createElement('div')
-//     bg.classList = 'bg'
-//     bg.style.setProperty('background-color', `#${col}`)
-//     return bg
-// }
-// function gradElement() {
-//     let grad = document.createElement('div')
-//     grad.classList = 'grad'
-//     return grad
-// }
-
-// function titleElement(title) {
-//     let elem = document.createElement('p')
-//     elem.classList = 'title'
-//     elem.innerHTML = title
-//     return elem
-// }
-
-// function elems.icon(svgStr) {
-//     let icon = document.createElement('div')
-//     icon.classList = 'icon'
-
-//     if (svgStr) { icon.innerHTML = svgStr }
-//     return icon
-// }
-function thumbElement(thumb) {
-    let elem = document.createElement('div')
-    elem.classList = 'thumb'
-
-    if (thumb) { elem.style.setProperty('background-image', `url(./appThumb/${thumb}`) }
-    return elem
-}
-
-function itemElement() {
-    let item = document.createElement('a')
-    item.classList = 'item'
-    return item
-}
-// function nameElement(name) {
-//     let elem = document.createElement('p')
-//     elem.classList = 'name'
-//     elem.innerHTML = name
-//     return elem
-// }
-// function descElement(desc) {
-//     let elem = document.createElement('p')
-//     elem.classList = 'desc'
-//     elem.innerHTML = desc
-//     return elem
-// }
-function headerElement() {
-    let elem = document.createElement('div')
-    elem.classList = 'header'
-    return elem
-}
-
-// function aElement(icon, text) {
-//     let elem = document.createElement('a')
-
-//     if (icon) elem.append(elems.icon(icon))
-//     if (text) elem.append(elems.p(text))
-
-//     return elem
-// }
-
-function dataElem(value, unit) {
-    let elem = document.createElement('div')
-    elem.classList = 'data'
-
-    let valueElem = document.createElement('p')
-    valueElem.classList = 'value'
-    valueElem.innerHTML = value
-    elem.append(valueElem)
-
-    if (unit) {
-        let unitElem = document.createElement('p')
-        unitElem.classList = 'unit'
-        unitElem.innerHTML = unit
-        elem.append(unitElem)
-    }
-
-    return elem
-}

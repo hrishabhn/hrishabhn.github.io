@@ -1,5 +1,5 @@
 function weatherCard(data) {
-    let card = widgetItemElement('a')
+    let card = widgetelems.item('a')
     card.id = 'weather-card'
     card.classList.add('clickable-o')
 

@@ -25,7 +25,7 @@ function widgetMedia(data, type) {
         card.append(service)
     }
 
-    card.append(thumbElement())
+    card.append(elems.appThumb())
     card.append(elems.grow())
 
     if (type == 'book') card.append(textboxBase(data.name, data.author))

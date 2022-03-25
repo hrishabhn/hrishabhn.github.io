@@ -3,7 +3,7 @@ function widgetTaskItems() {
 
     if (tasks_all[0]) {
         for (const task of tasks_all) {
-            let item = itemElement()
+            let item = elems.item()
 
             let check = document.createElement('div')
             check.classList = 'check layer-fg'

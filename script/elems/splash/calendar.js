@@ -1,6 +1,6 @@
 // function calendarCard() {
 //     // base card with header
-//     let card = widgetItemElement('div')
+//     let card = widgetelems.item('div')
 //     card.classList.add('cal-card')
 
 //     let day = capitalizeFirstLetter(processDay(new Date().getDay(), 'long'))

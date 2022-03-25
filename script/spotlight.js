@@ -114,7 +114,7 @@ function spotlightRun(e) {
     //         let movie = movieData[movieIndex[0]][movieIndex[1]]
 
 
-    //         results.push(resultListItemElement({
+    //         results.push(resultListelems.item({
     //             text: movie.name,
     //             subtext: movie.info.location,
     //             image: `url(./media-image/TV/background/${movie.id}.${movie.style.poster.wideType})`,
@@ -178,7 +178,7 @@ function spotlightRun(e) {
 
 
 
-// function resultListItemElement(data) {
+// function resultListelems.item(data) {
 
 //     if (data.color) {
 //         var color = data.color
