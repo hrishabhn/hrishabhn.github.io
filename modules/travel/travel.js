@@ -329,7 +329,7 @@ const aircraftData = {
     },
 }
 
-let flightData = {
+const flightData = {
     'mad-tfs': {
         number: '2913',
         dep: {
@@ -390,7 +390,7 @@ for (const key in flightData) {
     flightData[key].detail = function () { modal.add(flightDetailCard(key)) }
 }
 
-let tripData = {
+const tripData = {
     'london': {
         name: 'London',
         color: colorData['fluent'].red,
@@ -407,4 +407,11 @@ let tripData = {
             flightData['tfs-mad'],
         ],
     },
+}
+
+const travel = {
+    airlines: airlineData,
+    aircraft: aircraftData,
+    flights: flightData,
+    trips: tripData,
 }
