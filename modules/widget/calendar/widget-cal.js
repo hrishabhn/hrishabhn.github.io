@@ -3,6 +3,10 @@ function widgetCal() {
     let card = widgetCardBase('div')
     card.id = ('cal')
 
+    // icon
+    let iconElem = elems.icon(SFSymbols.calendar)
+    iconElem.classList = 'top-icon'
+    card.append(iconElem)
 
     // left and right
     let left = document.createElement('div')
@@ -62,7 +66,10 @@ function widgetCal() {
     if (tmrEvents.length) {
         let i = 0
         while (tmrEvents[i] && (displayedLeft < limitLeft)) {
-            if (!showingTmr) left.append(elems.subtitle('TOMORROW'))
+            if (!showingTmr) {
+                left.append(elems.spacer(5))
+                left.append(elems.subtitle('TOMORROW'))
+            }
             const event = tmrEvents[i]
             if (!event.allDay) {
                 left.append(eventCardElem(event))
@@ -76,7 +83,10 @@ function widgetCal() {
 
         // right
         while (tmrEvents[i] && (displayedRight < limitRight)) {
-            if (!showingTmr) right.append(elems.subtitle('TOMORROW'))
+            if (!showingTmr) {
+                right.append(elems.spacer(5))
+                right.append(elems.subtitle('TOMORROW'))
+            }
             const event = tmrEvents[i]
             if (!event.allDay) {
                 right.append(eventCardElem(event))
@@ -90,17 +100,20 @@ function widgetCal() {
 
         // more events tmr
         if (tmrEvents[i] && (displayedLeft + displayedRight) < (limitLeft + limitRight + 1)) {
-            if (!showingTmr) right.append(elems.subtitle('TOMORROW'))
+            if (!showingTmr) {
+                right.append(elems.spacer(5))
+                right.append(elems.subtitle('TOMORROW'))
+            }
             right.append(futureCard(tmrEvents.slice(i)))
         }
     }
 
+    const blank = !(showingTdy || showingTmr)
 
-
+    if (blank) left.append(elems.subtitle('No upcoming events'))
 
     card.append(left)
-    card.append(elems.spacer(10))
-    card.append(right)
+    if (!blank) card.append(right)
 
     // initialise variables
     function futureCard(events) {
@@ -124,6 +137,5 @@ function widgetCal() {
         return futureCardElem(moreData)
     }
 
-    card.append(elems.grow())
     return card
 }

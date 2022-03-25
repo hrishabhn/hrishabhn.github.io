@@ -40,9 +40,9 @@ const appCard = {
     },
     dock: function (app) {
         let card = appCard.main(app)
-        if (app.dock) {
+        if (app.dockIcon) {
             let thumb = card.firstChild
-            card.replaceChild(elems.icon(app.dock.icon), thumb)
+            card.replaceChild(elems.icon(app.dockIcon), thumb)
             card.style.setProperty('color', 'white')
             card.prepend(elems.bg())
             card.classList.remove('card-hover')

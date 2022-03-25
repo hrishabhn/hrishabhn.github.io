@@ -17,9 +17,7 @@ const commonApps = {
             thumb: 'onedrive.jpeg',
             accent: colorData['onedrive'],
             distract: false,
-            dock: {
-                icon: SFSymbols.folder.fill,
-            },
+            dockIcon: SFSymbols.folder.fill,
         }
     },
     notion: function (link) {
@@ -30,9 +28,7 @@ const commonApps = {
             thumb: 'notion.jpeg',
             accent: '000000',
             distract: false,
-            dock: {
-                icon: SFSymbols.note.text,
-            },
+            dockIcon: SFSymbols.note.text,
         }
     },
     aula: function (id, n) {
@@ -43,9 +39,7 @@ const commonApps = {
             thumb: thumbData['course'],
             style: 'orange',
             distract: false,
-            dock: {
-                icon: SFSymbols.graduationcap.fill,
-            },
+            dockIcon: SFSymbols.graduationcap.fill,
         }
     },
     syllabus: function (id) {
@@ -56,9 +50,7 @@ const commonApps = {
             thumb: thumbData['book'],
             style: 'red',
             distract: false,
-            dock: {
-                icon: SFSymbols.book.fill,
-            },
+            dockIcon: SFSymbols.book.fill,
         }
     },
 
@@ -111,12 +103,13 @@ const commonApps = {
             trigger: function () { flightData[key].detail() },
             desc: `${flight.dep.code} &#8594 ${flight.arr.code}`,
             thumb: flight.airline.thumb,
-            accent: flight.airline.color,
+            accent: flight.airline.accent,
             distract: false,
             tags: [
                 flight.dep.city,
                 flight.arr.city,
             ],
+            dockIcon: flight.airline.logo.icon,
         }
     }
 }
