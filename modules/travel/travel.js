@@ -568,7 +568,25 @@ const travel = {
     },
     trips: {
         detail: function (key) {
-
+            const trip = tripData[key]
+            console.log(trip.color)
+        
+            let card = document.createElement('div')
+            card.classList = 'trip-card layer-0 card-shadow'
+            card.style.setProperty('--col', `#${trip.color}`)
+        
+            let header = document.createElement('div')
+            header.classList = 'top-header'
+            header.append(elems.p(trip.name))
+            card.append(header)
+        
+            for (const event of trip.events) {
+                card.append(tripCardEvent(event))
+            }
+        
+            card.append(elems.grow())
+        
+            return card
         },
     },
 }

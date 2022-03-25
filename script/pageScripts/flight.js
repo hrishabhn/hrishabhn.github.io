@@ -7,11 +7,6 @@ function firstFlight() {
     }
 }
 
-
-function tripTest() {
-    modal.add(tripCard('london'))
-}
-
 function tripCard(key) {
     const trip = tripData[key]
     console.log(trip.color)
