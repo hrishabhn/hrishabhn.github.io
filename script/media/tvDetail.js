@@ -57,7 +57,7 @@ function tvDetail(key) {
     }
 
     // title, desc, play button
-    let info = textboxBase(movie.name, movie.desc.full)
+    let info = elems.textbox(movie.name, movie.desc.full)
     info.firstChild.classList.add('hidden-mobile')
     info.classList = 'info'
 
@@ -210,7 +210,7 @@ function actorCard(actor, char) {
     }
 
     card.append(image)
-    card.append(textboxBase(actor, char ?? null))
+    card.append(elems.textbox(actor, char ?? null))
 
     return card
 }

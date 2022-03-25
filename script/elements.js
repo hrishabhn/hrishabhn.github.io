@@ -112,33 +112,3 @@ const elems = {
         return elem
     }
 }
-
-
-
-// function contentContainerElement(child) {
-//     var container = document.createElement('div')
-//     container.classList = 'content-container layer1'
-
-//     if (child) {
-//         container.append(child)
-//     }
-//     return container
-// }
-
-// function searchElement(contentItem) {
-//     // console.log(contentItem)
-//     var element = document.createElement('a')
-//     element.id = 'search'
-//     element.href = contentItem.link
-//     // element.target = '_blank'
-//     element.classList = 'layer-1 button-fg card-shadow clickable page-width'
-//     element.append(elems.icon(iconData['search']))
-//     element.append(elems.spacer(10))
-
-//     var text = document.createElement('p')
-//     text.innerHTML = contentItem.engine
-//     element.append(text)
-//     // console.log(element)
-
-//     return element
-// }

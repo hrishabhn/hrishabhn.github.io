@@ -29,7 +29,7 @@ function widgetTrackContent() {
         // console.log(app)
 
         let thumb = elems.appThumb(app.thumb)
-        let text = textboxBase(app.name, `${item.count} time${item.count > 1 ? 's' : ''}`)
+        let text = elems.textbox(app.name, `${item.count} time${item.count > 1 ? 's' : ''}`)
 
         // console.log(app)
 

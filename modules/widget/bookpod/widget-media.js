@@ -28,8 +28,8 @@ function widgetMedia(data, type) {
     card.append(elems.appThumb())
     card.append(elems.grow())
 
-    if (type == 'book') card.append(textboxBase(data.name, data.author))
-    else if (type == 'movie') card.append(textboxBase(data.name, data.desc.full))
+    if (type == 'book') card.append(elems.textbox(data.name, data.author))
+    else if (type == 'movie') card.append(elems.textbox(data.name, data.desc.full))
 
     if (type == 'movie') card.onclick = function () { data.detail() }
 

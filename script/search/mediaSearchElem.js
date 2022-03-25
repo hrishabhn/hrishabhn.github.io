@@ -61,8 +61,8 @@ const mediaElems = {
 
                     // textbox
                     if (big) {
-                        if (!(big && !movie.style.poster.mobile.title)) card.append(textboxBase(null, movie.desc.full))
-                        else card.append(textboxBase(movie.name, movie.desc.full))
+                        if (!(big && !movie.style.poster.mobile.title)) card.append(elems.textbox(null, movie.desc.full))
+                        else card.append(elems.textbox(movie.name, movie.desc.full))
 
 
                         let more = document.createElement('a')
@@ -123,7 +123,7 @@ const mediaElems = {
                     }
 
                     card.append(thumb)
-                    let textbox = textboxBase(movie.name, movie.desc.full)
+                    let textbox = elems.textbox(movie.name, movie.desc.full)
                     card.append(textbox)
 
 
@@ -174,14 +174,14 @@ const mediaElems = {
                     card.append(thumbCont)
 
                     if (movie.style.title.type) {
-                        var textbox = textboxBase(null, movie.desc.full)
+                        var textbox = elems.textbox(null, movie.desc.full)
 
                         let title = document.createElement('div')
                         title.classList = `tv-title ${movie.style.title.size}`
                         title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.title.type})`)
                         textbox.prepend(title)
                     } else {
-                        var textbox = textboxBase(movie.name, movie.desc.full)
+                        var textbox = elems.textbox(movie.name, movie.desc.full)
                     }
                     card.append(textbox)
 
@@ -275,7 +275,7 @@ function searchBookPodRow(results, title, type) {
 
         let thumb = thumbBase(`./media-image/${folder}/${item.id}.${item.coverType}`)
         card.append(thumb)
-        card.append(textboxBase(item.name, item.author))
+        card.append(elems.textbox(item.name, item.author))
 
         card.href = item.link
         card.target = '_blank'
@@ -355,7 +355,7 @@ function searchBookPodNewRow(results, title, type) {
 
         // // textbox
         // if (big) {
-        //     card.append(textboxBase(null, movie.desc.full))
+        //     card.append(elems.textbox(null, movie.desc.full))
 
         //     let more = document.createElement('a')
         //     more.classList = 'more'

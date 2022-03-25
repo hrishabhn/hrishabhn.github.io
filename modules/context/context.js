@@ -13,7 +13,7 @@ const context = {
             elem.append(block)
         }
 
-        elem.append(textboxBase(data.name, data.desc))
+        elem.append(elems.textbox(data.name, data.desc))
         elem.append(elems.grow())
 
         if (data.link) { elem.style.cursor = 'pointer' }

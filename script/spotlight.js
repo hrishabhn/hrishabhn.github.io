@@ -282,15 +282,6 @@ function thumbBase(link) {
     thumb.style.setProperty('background-image', `url(${link})`)
     return thumb
 }
-function textboxBase(name, desc) {
-    let textbox = document.createElement('div')
-    textbox.classList = 'textbox'
-
-    if (name) textbox.append(elems.name(name))
-    if (desc) textbox.append(elems.desc(desc))
-
-    return textbox
-}
 
 
 document.addEventListener('keydown', keyPress)

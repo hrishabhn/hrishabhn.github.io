@@ -135,9 +135,9 @@ function eventCardElem(event) {
 
     info.append(elems.bg(event.color))
     if (!event.allDay) {
-        info.append(textboxBase(event.name, event.duration))
+        info.append(elems.textbox(event.name, event.duration))
     } else {
-        info.append(textboxBase(event.name, null))
+        info.append(elems.textbox(event.name, null))
         eventCard.classList.add('all-day')
     }
 
