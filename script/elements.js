@@ -87,11 +87,14 @@ const elems = {
         if (svg) icon.innerHTML = svg
         return icon
     },
+    thumb: function (url) {
+        let thumb = document.createElement('div')
+        thumb.classList = 'thumb'
+        if (url) thumb.style.setProperty('background-image', `url(${url})`)
+        return thumb
+    },
     appThumb: function (thumb) {
-        let elem = document.createElement('div')
-        elem.classList = 'thumb'
-        if (thumb) { elem.style.setProperty('background-image', `url(./appThumb/${thumb}`) }
-        return elem
+        return elems.thumb(`./appThumb/${thumb}`)
     },
 
     // other

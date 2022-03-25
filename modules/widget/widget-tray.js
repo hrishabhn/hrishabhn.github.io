@@ -36,16 +36,16 @@ const widgets = {
     'habit': {
         card: function (key) { return widgetHabit(key) }
     },
-    'tracking': {
-        id: 'tracking',
-        type: 'div',
-        title: 'Most Used Apps',
-        icon: SFSymbols.hourglass,
-        iconClick: function() { removeCookie('app-tracking') },
-        //     icon: SFSymbols.list.bullet.circle.fill,
-            content: widgetTrackContent(),
-        card: function () { return widgetCard(this) }
-    },
+    // 'tracking': {
+    //     id: 'tracking',
+    //     type: 'div',
+    //     title: 'Most Used Apps',
+    //     icon: SFSymbols.hourglass,
+    //     iconClick: function() { removeCookie('app-tracking') },
+    //     //     icon: SFSymbols.list.bullet.circle.fill,
+    //         content: widgetTrackContent(),
+    //     card: function () { return widgetCard(this) }
+    // },
 }
 
 function widgetTray() {
@@ -81,7 +81,7 @@ function widgetCard(data) {
     card.id = data.id
 
     if (data.title) card.append(elems.title(data.title))
-    if (data.data) card.append(elems.data(data.data.value, data.data.unit))
+    if (data.data) card.append(dataElem(data.data.value, data.data.unit))
     if (data.icon) {
         let iconElem = elems.icon(data.icon)
         iconElem.classList = 'top-icon'
