@@ -42,6 +42,11 @@ const elems = {
         tray.classList = 'tray'
         return tray
     },
+    divider: function () {
+        let divider = document.createElement('div')
+        divider.classList = 'divider'
+        return divider
+    },
 
     // types
     p: function (text) {

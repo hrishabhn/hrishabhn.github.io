@@ -37,7 +37,7 @@ const context = {
                     menu.append(elems.hline())
                 }
                 menu.lastChild.remove()
-                menu.append(dividerElem())
+                menu.append(elems.divider())
             } else if (tray.name) {
                 menu.append(elems.title(tray.name))
                 menu.append(elems.hlineList(12))

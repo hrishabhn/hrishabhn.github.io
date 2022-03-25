@@ -7,12 +7,6 @@ function spotlightLoad() {
     spotlightElem().focus()
 }
 
-function dividerElem() {
-    let divider = document.createElement('div')
-    divider.classList = 'divider'
-    return divider
-}
-
 function spotlightRun(e) {
     let qOrig = spotlightElem().value
     let q = qOrig.toUpperCase()
@@ -79,7 +73,7 @@ function spotlightRun(e) {
                 let relevant = item.lastChild.hasChildNodes()
 
                 if (relevant) {
-                    resultElem().append(dividerElem())
+                    resultElem().append(elems.divider())
                     item.id = `row-${i}`
                     resultElem().append(item)
                     i++
