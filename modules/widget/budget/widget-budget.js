@@ -28,7 +28,7 @@ function widgetBudgetChart() {
         bar.append(barBody)
         col.append(bar)
         col.append(spacerElement(5))
-        col.append(pElement(processDay.letter(((i + 1) % 7))))
+        col.append(elems.p(processDay.letter(((i + 1) % 7))))
 
         chart.append(col)
         chart.append(growElement())

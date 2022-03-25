@@ -106,11 +106,11 @@ const elems = {
 }
 
 
-function pElement(text) {
-    let elem = document.createElement('p')
-    elem.innerHTML = text
-    return elem
-}
+// function elems.p(text) {
+//     let elem = document.createElement('p')
+//     elem.innerHTML = text
+//     return elem
+// }
 // function subtitleElement(title) {
 //     var element = document.createElement('p')
 //     element.classList = 'sub-title'

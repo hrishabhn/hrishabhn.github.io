@@ -15,7 +15,7 @@ function todayCard() {
             let check = document.createElement('div')
             check.classList = 'check layer-fg'
 
-            let text = pElement(task)
+            let text = elems.p(task)
 
             item.append(check)
             item.append(spacerElement(5))

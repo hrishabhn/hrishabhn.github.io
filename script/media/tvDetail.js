@@ -69,7 +69,7 @@ function tvDetail(key) {
 
     // summary
     if (movie.info.summary) {
-        let sum = pElement(movie.info.summary)
+        let sum = elems.p(movie.info.summary)
         sum.classList = 'summary'
         info.append(sum)
     }
@@ -108,7 +108,7 @@ function tvDetailApps(key) {
 
         elem.append(iconElem)
         elem.append(spacerElement(spacing))
-        elem.append(pElement(text))
+        elem.append(elems.p(text))
 
         if (link) elem.href = link
 

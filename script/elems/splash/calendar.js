@@ -115,7 +115,7 @@ function futureCardElem(data) {
 
     let textStr = `${data.number} more event`
     if (data.number > 1) { textStr = textStr.concat('s') }
-    card.append(pElement(textStr))
+    card.append(elems.p(textStr))
     card.append(growElement())
 
     return card

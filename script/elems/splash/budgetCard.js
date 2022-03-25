@@ -5,10 +5,10 @@
 //     let title = elems.title('Spending')
 //     title.classList.add('green-fg')
 
-//     let spent = pElement(`&#128 ${spendingData.totalSpent}`)
+//     let spent = elems.p(`&#128 ${spendingData.totalSpent}`)
 //     spent.classList = 'spent'
 
-//     let avail = pElement(`&#128 ${spendingData.totalRemaining} Available`)
+//     let avail = elems.p(`&#128 ${spendingData.totalRemaining} Available`)
 //     avail.classList = 'available'
 
 //     let add = document.createElement('a')
@@ -60,7 +60,7 @@
 //         bar.append(barBody)
 //         col.append(bar)
 //         col.append(spacerElement(5))
-//         col.append(pElement(processDay(((i + 1) % 7), 'letter')))
+//         col.append(elems.p(processDay(((i + 1) % 7), 'letter')))
 
 //         chart.append(col)
 //         chart.append(growElement())

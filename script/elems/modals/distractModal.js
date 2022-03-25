@@ -5,7 +5,7 @@ function distractModal(data, e) {
     card.append(textboxBase('Enter code to proceed', 'This is a time wasting app. Get back to work or enter code if necessary.'))
 
     const code = Math.floor(Math.random() * 900000) + 100000
-    let codeElem = pElement(code)
+    let codeElem = elems.p(code)
     codeElem.classList = 'code'
     card.append(codeElem)
 

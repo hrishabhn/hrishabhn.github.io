@@ -9,13 +9,13 @@ function weatherCard(data) {
     let title = elems.title('Madrid')
     title.classList.add('teal-fg')
 
-    let temp = pElement('12°')
+    let temp = elems.p('12°')
     temp.classList = 'temp'
 
-    let status = pElement('Partly Cloudy')
+    let status = elems.p('Partly Cloudy')
     status.classList = 'status'
 
-    let hilo = pElement('H:14° L:5°')
+    let hilo = elems.p('H:14° L:5°')
     hilo.classList = 'hilo'
 
     card.append(title)

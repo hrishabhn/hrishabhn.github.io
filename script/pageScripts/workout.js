@@ -68,7 +68,7 @@ function workoutCard() {
     let header = document.createElement('div')
     header.classList = 'header'
 
-    let headerText = pElement('Workout')
+    let headerText = elems.p('Workout')
 
     let reset = document.createElement('a')
     reset.classList = 'blue-fg clickable-o'
@@ -112,7 +112,7 @@ function workoutItem(i) {
     icon.href = googleSearch(data.name)
     icon.target = '_blank'
 
-    title.append(pElement(data.name))
+    title.append(elems.p(data.name))
     title.append(growElement())
     title.append(icon)
 

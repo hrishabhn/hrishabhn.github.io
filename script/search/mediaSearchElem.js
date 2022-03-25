@@ -67,7 +67,7 @@ const mediaElems = {
 
                         let more = document.createElement('a')
                         more.classList = 'more'
-                        more.append(pElement('MORE'))
+                        more.append(elems.p('MORE'))
                         more.append(growElement())
                         more.append(elems.icon(iconData.more))
 
@@ -226,7 +226,7 @@ function mediaDetailCard(thumb, genre, name, summary) {
         detail.classList = 'detail'
 
         if (genre) {
-            let genreElem = pElement(genre)
+            let genreElem = elems.p(genre)
             genreElem.classList = 'genre'
             detail.append(genreElem)
         }
@@ -359,7 +359,7 @@ function searchBookPodNewRow(results, title, type) {
 
         //     let more = document.createElement('a')
         //     more.classList = 'more'
-        //     more.append(pElement('MORE'))
+        //     more.append(elems.p('MORE'))
         //     more.append(growElement())
         //     more.append(elems.icon(iconData.more))
 

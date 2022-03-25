@@ -189,7 +189,7 @@ function tripCard(key) {
 
     let header = document.createElement('div')
     header.classList = 'top-header'
-    header.append(pElement(trip.name))
+    header.append(elems.p(trip.name))
     card.append(header)
 
     for (const event of trip.events) {
@@ -221,7 +221,7 @@ function tripCardEvent(data, type) {
 
     header.append(logo)
     header.append(spacerElement(8))
-    header.append(pElement(`${data.airline.code} ${data.number}`))
+    header.append(elems.p(`${data.airline.code} ${data.number}`))
 
     row1.append(icon)
     row1.append(header)
