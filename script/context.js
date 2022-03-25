@@ -5,13 +5,9 @@ function menuItemElem(item) {
         openApp(item, e)
     }
 
-    if (item.type == 'thumb') {
-        elem.append(thumbElement(item.thumb))
-    } else if (item.type == 'icon') {
-        let icon = iconElement(item.icon)
-        icon.classList.add(item.style)
-        elem.append(icon)
-    } else if (item.type == 'col-block') {
+    if (item.type == 'thumb') elem.append(thumbElement(item.thumb))
+    else if (item.type == 'icon') elem.append(iconElement(item.icon))
+    else if (item.type == 'col-block') {
         let block = document.createElement('div')
         block.classList = 'col-block'
         block.style.setProperty('background-color', `#${item.color}`)

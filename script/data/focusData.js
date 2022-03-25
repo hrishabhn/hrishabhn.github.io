@@ -270,9 +270,9 @@ function focusMenuData() {
 
         for (const item in tray) {
             focusMenuTray.push({
-                type: 'thumb',
+                type: 'icon',
                 name: tray[item].name,
-                thumb: tray[item].thumb,
+                icon: tray[item].icon,
                 trigger: function () { tray[item].trigger() },
                 distract: tray[item].distract,
             })

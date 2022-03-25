@@ -20,15 +20,15 @@ let spendingData = {
 const spendingCategories = {
     'Grocery': {
         col: 'green',
-        icon: iconData['basket'],
+        icon: SFSymbols.cart.fill,
     },
     'Drinks': {
         col: 'yellow',
-        icon: iconData['beer'],
+        icon: SFSymbols.cupAndSaucer.fill,
     },
     'Food': {
         col: 'blue',
-        icon: iconData['food'],
+        icon: SFSymbols.forkAndKnife,
     },
     'Coffee': {
         col: 'orange',
@@ -40,7 +40,7 @@ const spendingCategories = {
     },
     'Subscription': {
         col: 'mint',
-        icon: iconData['repeat'],
+        icon: SFSymbols.arrow.triangle.circlepath,
     },
 }
 
