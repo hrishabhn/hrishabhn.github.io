@@ -49,31 +49,25 @@
 }
 
 #splash .dock .app-card {
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 110px;
 }
 #splash .dock .app-card .thumb{
     width: 35px;
     height: 35px;
 }
 #splash .dock .app-card .icon {
-    width: 30px;
-    height: 30px;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
-    margin: -2px;
+    width: 35px;
+    height: 35px;
+    padding: 5%;
 }
 
-#splash .dock .app-card .bg {
+#splash .dock .app-card .icon {
     background-color: var(--brand-col-dark, var(--brand-col));
-    -webkit-mask: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
 }
 
 @media screen and (prefers-color-scheme: light) {
-    #splash .dock .app-card .bg {
+    #splash .dock .app-card .icon {
         background-color: var(--brand-col-light, var(--brand-col));
-        -webkit-mask: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
     }
 }
 

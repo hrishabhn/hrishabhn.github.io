@@ -42,10 +42,11 @@ const appCard = {
         let card = appCard.main(app)
         if (app.dockIcon) {
             let thumb = card.firstChild
-            card.replaceChild(elems.icon(app.dockIcon), thumb)
-            card.style.setProperty('color', 'white')
-            card.prepend(elems.bg())
-            card.classList.remove('card-hover')
+            let icon = elems.icon(app.dockIcon)
+            card.replaceChild(icon, thumb)
+            // card.style.setProperty('color', 'white')
+            // card.prepend(elems.bg())
+            // card.classList.remove('card-hover')
         }
         return card
     },
