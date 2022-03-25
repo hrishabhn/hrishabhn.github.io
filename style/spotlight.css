@@ -48,35 +48,6 @@
     overflow-x: scroll;
 }
 
-#splash .dock .app-card {
-    min-width: 110px;
-}
-#splash .dock .app-card .thumb{
-    width: 35px;
-    height: 35px;
-}
-#splash .dock .app-card .icon {
-    width: 35px;
-    height: 35px;
-    padding: 5%;
-}
-
-#splash .dock .app-card .icon {
-    background-color: var(--brand-col-dark, var(--brand-col));
-}
-
-@media screen and (prefers-color-scheme: light) {
-    #splash .dock .app-card .icon {
-        background-color: var(--brand-col-light, var(--brand-col));
-    }
-}
-
-#splash .dock .app-card .textbox p.name{
-    font-size: 14px;
-}
-#splash .dock .app-card .textbox p.desc{
-    font-size: 10px;
-}
 
 
 .spotlight-tray {

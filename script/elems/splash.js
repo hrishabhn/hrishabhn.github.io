@@ -19,7 +19,7 @@ function splashLoad() {
 
 function dockTray() {
     let nodes = []
-    for (const app of getFocus().apps) nodes.push(appCard.dock(app))
+    for (const app of getFocus().apps) nodes.push(appCard.small(app))
 
     let tray = trayWithKids(nodes, 15, 15)
     tray.classList = 'dock layer-2-blur'

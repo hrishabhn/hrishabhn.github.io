@@ -21,15 +21,22 @@
     height: 45px;
     border-radius: 10px;
     box-shadow: 0px 2px 8px -3px var(--black-50);
+    background-color: var(--brand-col-dark, var(--brand-col));
     
     padding: 5%;
     fill: white;
 }
-.app-card .logo{
+
+@media screen and (prefers-color-scheme: light) {
+    .app-card .icon {
+        background-color: var(--brand-col-light, var(--brand-col));
+    }
+}
+/* .app-card .logo{
     width: 40px;
     height: 40px;
     margin-bottom: 5px;
-}
+} */
 
 .app-card .textbox{
     flex-direction: column;
@@ -64,6 +71,30 @@
 .spotlight-tray .app-card .search {
     opacity: 0.6;
 }
+
+/* small */
+.app-card.small {
+    min-width: 110px;
+}
+.app-card.small .thumb{
+    width: 35px;
+    height: 35px;
+}
+.app-card.small .icon {
+    width: 35px;
+    height: 35px;
+}
+.app-card.small .textbox p.name{
+    font-size: 14px;
+}
+.app-card.small .textbox p.desc{
+    font-size: 10px;
+}
+
+
+
+
+
 
 
 /* mini */

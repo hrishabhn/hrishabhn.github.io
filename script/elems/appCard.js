@@ -26,28 +26,15 @@ const appCard = {
             card.append(icon)
         }
 
-        if (app.thumb) {
-            card.append(elems.appThumb(app.thumb))
-        } else if (app.icon) {
-            card.append(elems.icon(app.icon))
-        }
+        if (app.dockIcon) card.append(elems.icon(app.dockIcon))
+        else if (app.thumb) card.append(elems.appThumb(app.thumb))
+        else if (app.icon) card.append(elems.icon(app.icon))
+
         card.append(elems.spacer(8))
         card.append(elems.grow())
 
         card.append(elems.textbox(app.name, app.desc))
 
-        return card
-    },
-    dock: function (app) {
-        let card = appCard.main(app)
-        if (app.dockIcon) {
-            let thumb = card.firstChild
-            let icon = elems.icon(app.dockIcon)
-            card.replaceChild(icon, thumb)
-            // card.style.setProperty('color', 'white')
-            // card.prepend(elems.bg())
-            // card.classList.remove('card-hover')
-        }
         return card
     },
     mini: function (app) {
@@ -64,7 +51,9 @@ const appCard = {
         return card
     },
     small: function (app) {
-        let card = document.createElement('a')
+        let card = appCard.main(app)
+        card.classList.add('small')
+        return card
         card.classList = 'app-card-small layer-1 clickable-o card-hover'
         card.onclick = function (e) { openApp(app, e) }
 
