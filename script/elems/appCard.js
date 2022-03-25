@@ -101,4 +101,9 @@ const appCardD = {
             return card
         },
     },
+    dock: {
+        tray: function (apps) {
+
+        },
+    }
 }
