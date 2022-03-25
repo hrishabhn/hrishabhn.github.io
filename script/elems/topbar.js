@@ -22,12 +22,12 @@ const topbar = {
             },
             {
                 name: 'Calendar',
-                trigger: function (e) { modal.position(widgetCal(), e) },
+                trigger: function (e) { modal.add(widgetCal(), e) },
                 icon: SFSymbols.calendar,
             },
             {
                 name: 'Idea',
-                trigger: function (e) { modal.position(widgetIdeas(), e) },
+                trigger: function (e) { modal.add(widgetIdeas(), e) },
                 icon: SFSymbols.lightbulb.fill,
             },
 

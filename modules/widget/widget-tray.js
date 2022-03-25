@@ -6,7 +6,7 @@ const widgets = {
         id: 'tasks',
         type: 'a',
         title: 'Today\'s Tasks',
-        icon: SFSymbols.list.bullet.circle.fill,
+        icon: SFSymbols.checklist,
         content: widgetTaskItems(),
         card: function () { return widgetCard(this) },
     },

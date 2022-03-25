@@ -1,17 +1,22 @@
+const soonMovies = [
+    allMovies.abbott,
+]
+
 let movieRaw = [
     {
         name: 'Up next',
         data: [
-            allMovies.kal,
-            allMovies.ministry,
-            allMovies.severance,
+            allMovies.attack,
             allMovies.elite,
+            allMovies.severance,
         ],
     },
     {
         name: 'My list',
         data: [
-            allMovies.attack,
+            allMovies.kal,
+            allMovies.wecrashed,
+            allMovies.snowfall,
             allMovies.ozark,
             allMovies.peaky,
             allMovies.tintin,
@@ -46,6 +51,7 @@ let movieRaw = [
     {
         name: 'New',
         data: [
+            allMovies.ministry,
             allMovies.killingEve,
             allMovies.phil,
             allMovies.anna,
@@ -211,11 +217,6 @@ let movieRaw = [
     },
 ]
 
-let soonMovies = [
-    allMovies.snowfall,
-    allMovies.abbott,
-    allMovies.wecrashed,
-]
 
 for (const movie of soonMovies.reverse()) {
     let soon = (new Date(movie.info.date) > new Date)

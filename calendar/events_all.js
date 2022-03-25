@@ -1,7 +1,4 @@
 let events_all = [
-{"location":"","end":"2022-03-24T01:45:00+01:00","start":"2022-03-24T00:00:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Controls Study"},
-{"location":"10.1.7","end":"2022-03-24T14:00:00+01:00","start":"2022-03-24T12:30:00+01:00","allDay":"No","notes":"Economía Financiera, grp. 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
-{"location":"4.0.E03","end":"2022-03-24T17:00:00+01:00","start":"2022-03-24T15:00:00+01:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grp.18 y 19","calendar":"Spring 2022","link":"","name":"Engineering Management"},
 {"location":"2.3.D04","end":"2022-03-25T11:00:00+01:00","start":"2022-03-25T09:00:00+01:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
 {"location":"1.1.L02","end":"2022-03-25T15:00:00+01:00","start":"2022-03-25T13:00:00+01:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Controls Study"},
 {"location":"","end":"2022-03-29T00:00:00+02:00","start":"2022-03-28T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 9"},
@@ -16,4 +13,8 @@ let events_all = [
 {"location":"10.1.7","end":"2022-03-31T14:00:00+02:00","start":"2022-03-31T12:30:00+02:00","allDay":"No","notes":"Economía Financiera, grp. 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
 {"location":"4.0.E03","end":"2022-03-31T17:00:00+02:00","start":"2022-03-31T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grp.18 y 19","calendar":"Spring 2022","link":"","name":"Engineering Management"},
 {"location":"2.3.D04","end":"2022-04-01T11:00:00+02:00","start":"2022-04-01T09:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
+{"location":"","end":"2022-04-05T00:00:00+02:00","start":"2022-04-04T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 10"},
+{"location":"","end":"2022-04-05T00:00:00+02:00","start":"2022-04-04T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"HK Holidays","link":"","name":"Tomb sweeping day"},
+{"location":"10.2.11","end":"2022-04-04T14:00:00+02:00","start":"2022-04-04T12:30:00+02:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
+{"location":"6.1.06","end":"2022-04-04T16:00:00+02:00","start":"2022-04-04T14:30:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
 ]
