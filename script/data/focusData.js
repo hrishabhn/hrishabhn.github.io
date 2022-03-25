@@ -262,3 +262,22 @@ function focusApps() {
 function focusTray() {
     return searchAppsRow(searchApps('', focusApps()), null)
 }
+
+function focusMenuData() {
+    let focusMenuData = []
+    for (const tray of focusData) {
+        let focusMenuTray = []
+
+        for (const item in tray) {
+            focusMenuTray.push({
+                type: 'thumb',
+                name: tray[item].name,
+                thumb: tray[item].thumb,
+                trigger: function () { tray[item].trigger() },
+                distract: tray[item].distract,
+            })
+        }
+        focusMenuData.push(focusMenuTray)
+    }
+    return focusMenuData
+}

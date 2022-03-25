@@ -3,29 +3,22 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(60px + env(safe-area-inset-top));;
-
-    grid-column: 1 / -1;
+    height: calc(50px + env(safe-area-inset-top));;
     box-shadow: 0 0 30px #00000022;
     z-index: 1;
-
     padding: env(safe-area-inset-top) 10px 0;
 }
 
 .topbar .item {
-    height: 35px;
-    width: 35px;
-    /* padding: 0 10px; */
+    height: 30px;
+    width: 30px;
     border-radius: 10px;
-
-    /* font-size: 18px;
-    font-weight: 300; */
-
     cursor: default;
 }
 .topbar .item .icon {
     height: 24px;
     width: 24px;
+    opacity: 0.8;
 }
 
 
@@ -64,7 +57,7 @@
 .topbar .side {
     height: 100%;
     flex-grow: 1;
-    min-width: 100px;
+    min-width: 150px;
 }
 
 @media(max-width: 450px) {

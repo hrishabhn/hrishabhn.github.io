@@ -74,7 +74,7 @@ function absolutePos(elem, e) {
     var x = e.pageX
     var y = e.pageY
 
-    if (y < 70) y = 70
+    if (y < 60) y = 60
 
     elem.style.removeProperty('bottom')
     elem.style.removeProperty('right')

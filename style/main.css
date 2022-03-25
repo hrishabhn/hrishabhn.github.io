@@ -15,7 +15,7 @@ script {
 
 .main {
     display: grid;
-    grid-template-rows: calc(60px + env(safe-area-inset-top)) 1fr;
+    grid-template-rows: calc(50px + env(safe-area-inset-top)) 1fr;
     /* grid-auto-rows: auto; */
     grid-template-columns: 1fr;
 
