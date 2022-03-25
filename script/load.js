@@ -20,7 +20,7 @@ function loadApp() {
     // castJSONStr(0,0)
 
     // busTest()
-    // tripTest()
+    // modal.add(tripCard('london'))
     // modal.add(budgetDetailCard())
 
     // modal.add(tripCard('tenerife'))
