@@ -36,21 +36,6 @@
     width: calc(100% - var(--left));
     margin-left: var(--left);
 }
-.hscroll{
-    flex-direction: row;
-    height: fit-content;
-    width: 100%;
-    overflow-x: scroll;
-    justify-content: flex-start;
-    scroll-snap-type: x mandatory;
-}
-.hscroll .snap{
-    scroll-snap-align: start;
-    scroll-margin-left: 20px;
-}
-
-
-
 .spacer-x{
     height: var(--size);
     width: var(--size);
