@@ -99,7 +99,7 @@ function processSF() {
 
     alert(svgElem.outerHTML)
 }
-processSF()
+// processSF()
 
 
 
