@@ -69,7 +69,7 @@ const mediaElems = {
                         more.classList = 'more'
                         more.append(pElement('MORE'))
                         more.append(growElement())
-                        more.append(iconElement(iconData.more))
+                        more.append(elems.icon(iconData.more))
 
                         card.append(more)
                     }
@@ -361,7 +361,7 @@ function searchBookPodNewRow(results, title, type) {
         //     more.classList = 'more'
         //     more.append(pElement('MORE'))
         //     more.append(growElement())
-        //     more.append(iconElement(iconData.more))
+        //     more.append(elems.icon(iconData.more))
 
         //     card.append(more)
         // }

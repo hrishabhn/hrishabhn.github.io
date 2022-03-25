@@ -61,7 +61,7 @@ function tvDetail(key) {
     info.firstChild.classList.add('hidden-mobile')
     info.classList = 'info'
 
-    let play = aElement(iconData.play, `Watch on ${movie.info.location}`)
+    let play = elems.a(iconData.play, `Watch on ${movie.info.location}`)
     play.classList = 'play clickable'
     if (movie.link) play.href = movie.link
 
@@ -82,7 +82,7 @@ function tvDetail(key) {
     // cast
     if (movie.cast) card.append(tvDetailCast(key))
 
-    let close = aElement(iconData.close, null)
+    let close = elems.a(iconData.close, null)
     close.classList = 'close-tv-modal clickable-o'
     close.onclick = function () {
         hideTVDetail()
@@ -103,7 +103,7 @@ function tvDetailApps(key) {
         elem.classList = 'app clickable card-shadow'
         elem.target = '_blank'
 
-        let iconElem = iconElement(icon)
+        let iconElem = elems.icon(icon)
         iconElem.style.setProperty('--size', `${iconSize}px`)
 
         elem.append(iconElem)

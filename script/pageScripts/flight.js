@@ -6,7 +6,7 @@ function flightDetailCard(flightKey) {
     card.style.setProperty('--col', `#${flight.airline.accent}`)
     card.innerHTML = `
     <div class="header">
-        ${iconElement(flight.airline.logo.icon).outerHTML}
+        ${elems.icon(flight.airline.logo.icon).outerHTML}
         <div class="textbox">
             <p class="subtext">${flight.airline.code} ${flight.number} &#149 ${processDate.day.short(flight.date)} ${new Date(flight.date).getDate()} ${processDate.month.short(flight.date)}</p>
             <p class="text">${flight.dep.city} to ${flight.arr.city}</p>
@@ -210,7 +210,7 @@ function tripCardEvent(data, type) {
     let row1 = document.createElement('div')
     row1.classList = 'row'
 
-    let icon = iconElement(iconData['plane'])
+    let icon = elems.icon(iconData['plane'])
 
     let header = document.createElement('div')
     header.classList = 'header'

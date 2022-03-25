@@ -47,7 +47,7 @@ function createSpotlight() {
     input.spellcheck = 'false'
     // input.autocorrect = 'off'
 
-    container.append(iconElement(iconData['search']))
+    container.append(elems.icon(iconData['search']))
     container.append(input)
 
     let result = document.createElement('div')

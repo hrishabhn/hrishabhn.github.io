@@ -15,7 +15,7 @@ function appCard(app) {
 
     if (app.searchBase) {
         card.setAttribute('engineData', JSON.stringify(app))
-        let icon = iconElement(iconData['search'])
+        let icon = elems.icon(iconData['search'])
         icon.classList = 'search'
         card.append(icon)
     }
@@ -24,7 +24,7 @@ function appCard(app) {
         card.append(thumbElement(app.thumb))
         card.append(spacerElement(8))
     } else if (app.icon) {
-        card.append(iconElement(app.icon))
+        card.append(elems.icon(app.icon))
         card.append(spacerElement(8))
     }
 
@@ -40,7 +40,7 @@ function appCardMini(app) {
     card.onclick = function (e) { openApp(app, e) }
 
     if (app.thumb) card.append(thumbElement(app.thumb))
-    else if (app.icon) card.append(iconElement(app.icon))
+    else if (app.icon) card.append(elems.icon(app.icon))
 
     card.append(textboxBase(app.name, null))
 
@@ -63,7 +63,7 @@ function appCardSmall(app) {
     if (app.thumb) {
         card.append(thumbElement(app.thumb))
     } else if (app.icon) {
-        card.append(iconElement(app.icon))
+        card.append(elems.icon(app.icon))
     }
 
     if (app.name) {
@@ -94,7 +94,7 @@ const appCardD = {
             if (app.id) card.id = app.id
             card.classList = 'item layer-hover'
             card.onclick = function (e) { openApp(app, e) }
-            card.append(iconElement(app.icon))
+            card.append(elems.icon(app.icon))
             card.append(appCardSmallHover(app))
             if (app.link) card.style.setProperty('cursor', 'pointer')
 

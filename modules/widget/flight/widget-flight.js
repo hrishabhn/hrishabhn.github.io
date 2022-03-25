@@ -9,7 +9,7 @@ function widgetFlight(flightKey) {
     let top = document.createElement('div')
     top.classList = 'top'
 
-    let logo = iconElement(flight.airline.logo.icon)
+    let logo = elems.icon(flight.airline.logo.icon)
     logo.classList.add('logo')
     let number = pElement(`${flight.airline.code} ${flight.number}`)
     number.classList = 'number'
@@ -22,7 +22,7 @@ function widgetFlight(flightKey) {
     let dest = document.createElement('div')
     dest.classList = `dest`
 
-    let destIcon = iconElement(iconData['plane'])
+    let destIcon = elems.icon(iconData['plane'])
     destIcon.classList.add(flight.airline.style)
     destIcon.classList.add('secondary-fg')
 

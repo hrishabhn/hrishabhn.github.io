@@ -51,9 +51,14 @@ const elems = {
         elem.innerHTML = text
         return elem
     },
+    a: function (icon, text) {
+        let elem = document.createElement('a')
+        if (icon) elem.append(elems.icon(icon))
+        if (text) elem.append(elems.p(text))
+        return elem
+    },
 
     // text
-
     title: function (text) {
         let elem = elems.p(text)
         elem.classList = 'title'
@@ -75,7 +80,24 @@ const elems = {
         if (name) textbox.append(elems.name(name))
         if (desc) textbox.append(elems.desc(desc))
         return textbox
-    }
+    },
+
+    // images/icons
+    icon: function (svg) {
+        let icon = document.createElement('div')
+        icon.classList = 'icon'
+        if (svg) icon.innerHTML = svg
+        return icon
+    },
+    // icon: function (svg) {
+
+    // },
+    // icon: function (svg) {
+
+    // },
+    // icon: function (svg) {
+
+    // },
 }
 
 
@@ -169,7 +191,7 @@ function hscrollHuluElement(child) {
 //     element.href = contentItem.link
 //     // element.target = '_blank'
 //     element.classList = 'layer-1 button-fg card-shadow clickable page-width'
-//     element.append(iconElement(iconData['search']))
+//     element.append(elems.icon(iconData['search']))
 //     element.append(spacerElement(10))
 
 //     var text = document.createElement('p')
@@ -224,13 +246,13 @@ function titleElement(title) {
     return elem
 }
 
-function iconElement(svgStr) {
-    let icon = document.createElement('div')
-    icon.classList = 'icon'
+// function elems.icon(svgStr) {
+//     let icon = document.createElement('div')
+//     icon.classList = 'icon'
 
-    if (svgStr) { icon.innerHTML = svgStr }
-    return icon
-}
+//     if (svgStr) { icon.innerHTML = svgStr }
+//     return icon
+// }
 function thumbElement(thumb) {
     let elem = document.createElement('div')
     elem.classList = 'thumb'
@@ -262,14 +284,14 @@ function headerElement() {
     return elem
 }
 
-function aElement(icon, text) {
-    let elem = document.createElement('a')
+// function aElement(icon, text) {
+//     let elem = document.createElement('a')
 
-    if (icon) elem.append(iconElement(icon))
-    if (text) elem.append(pElement(text))
+//     if (icon) elem.append(elems.icon(icon))
+//     if (text) elem.append(elems.p(text))
 
-    return elem
-}
+//     return elem
+// }
 
 function dataElem(value, unit) {
     let elem = document.createElement('div')

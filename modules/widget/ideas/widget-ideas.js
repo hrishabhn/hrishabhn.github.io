@@ -7,7 +7,7 @@ function widgetIdeas() {
     card.append(spacerElement(5))
 
 
-    let iconElem = iconElement(SFSymbols.lightbulb.fill)
+    let iconElem = elems.icon(SFSymbols.lightbulb.fill)
     iconElem.classList = 'top-icon'
     card.append(iconElem)
 
