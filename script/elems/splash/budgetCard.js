@@ -2,7 +2,7 @@
 //     let card = widgetItemElement('div')
 //     card.classList.add('budget-card')
 
-//     let title = titleElement('Spending')
+//     let title = elems.title('Spending')
 //     title.classList.add('green-fg')
 
 //     let spent = pElement(`&#128 ${spendingData.totalSpent}`)

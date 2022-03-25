@@ -3,7 +3,7 @@ function tasksCard() {
     let tasksCard = widgetItemElement('div')
     tasksCard.id = 'tasks-card'
 
-    let title = titleElement('Ideas')
+    let title = elems.title('Ideas')
     title.classList.add('yellow-fg')
     tasksCard.append(title)
     tasksCard.append(spacerElement(5))

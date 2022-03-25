@@ -244,12 +244,12 @@ function colRender(content) {
 //     return grad
 // }
 
-function titleElement(title) {
-    let elem = document.createElement('p')
-    elem.classList = 'title'
-    elem.innerHTML = title
-    return elem
-}
+// function titleElement(title) {
+//     let elem = document.createElement('p')
+//     elem.classList = 'title'
+//     elem.innerHTML = title
+//     return elem
+// }
 
 // function elems.icon(svgStr) {
 //     let icon = document.createElement('div')

@@ -143,7 +143,7 @@ function eventCardElem(event) {
 
     info.append(growElement())
 
-    if (event.icon) { info.append(iconElement(event.icon)) }
+    if (event.icon) { info.append(elems.icon(event.icon)) }
 
     if (event.link) {
         eventCard.href = event.link

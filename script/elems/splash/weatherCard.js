@@ -6,7 +6,7 @@ function weatherCard(data) {
 
 
 
-    let title = titleElement('Madrid')
+    let title = elems.title('Madrid')
     title.classList.add('teal-fg')
 
     let temp = pElement('12°')
@@ -21,7 +21,7 @@ function weatherCard(data) {
     card.append(title)
     card.append(temp)
     card.append(growElement())
-    card.append(iconElement(iconData['book']))
+    card.append(elems.icon(iconData['book']))
     card.append(status)
     card.append(hilo)
 

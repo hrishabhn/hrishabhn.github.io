@@ -3,7 +3,7 @@ function todayCard() {
     card.classList.add('today-card', 'clickable-o')
     card.href = 'ticktick://v1/show?smartlist=today'
 
-    let title = titleElement('Today')
+    let title = elems.title('Today')
     title.classList.add('blue-fg')
     card.append(title)
     card.append(spacerElement(5))

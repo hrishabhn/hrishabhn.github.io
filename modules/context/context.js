@@ -5,7 +5,7 @@ const context = {
         elem.onclick = function (e) { openApp(data, e) }
 
         if (data.type == 'thumb') elem.append(thumbElement(data.thumb))
-        else if (data.type == 'icon') elem.append(iconElement(data.icon))
+        else if (data.type == 'icon') elem.append(elems.icon(data.icon))
         else if (data.type == 'col-block') {
             let block = document.createElement('div')
             block.classList = 'col-block'
@@ -39,7 +39,7 @@ const context = {
                 menu.lastChild.remove()
                 menu.append(dividerElem())
             } else if (tray.name) {
-                menu.append(titleElement(tray.name))
+                menu.append(elems.title(tray.name))
                 menu.append(hlineListElement(12))
             }
 

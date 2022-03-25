@@ -80,7 +80,7 @@ function widgetCard(data) {
     let card = widgetCardBase(data.type)
     card.id = data.id
 
-    if (data.title) card.append(titleElement(data.title))
+    if (data.title) card.append(elems.title(data.title))
     if (data.data) card.append(dataElem(data.data.value, data.data.unit))
     if (data.icon) {
         let iconElem = elems.icon(data.icon)

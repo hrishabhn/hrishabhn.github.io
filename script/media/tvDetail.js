@@ -179,7 +179,7 @@ function tvDetailCast(key) {
     let cast = document.createElement('div')
     cast.classList = 'cast layer-0 primary-fg'
 
-    cast.append(titleElement('Cast'))
+    cast.append(elems.title('Cast'))
 
     let nodes = []
     for (const data of movie.cast) nodes.push(actorCard(data.actor, data.char))

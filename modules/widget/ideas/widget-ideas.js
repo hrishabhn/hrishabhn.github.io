@@ -3,7 +3,7 @@ function widgetIdeas() {
     // base card with header
     let card = widgetCardBase('div')
     card.id = 'ideas'
-    card.append(titleElement('Ideas'))
+    card.append(elems.title('Ideas'))
     card.append(spacerElement(5))
 
 
