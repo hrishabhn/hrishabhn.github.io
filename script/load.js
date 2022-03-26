@@ -20,10 +20,10 @@ function loadApp() {
     // castJSONStr(0,0)
 
     // busTest()
-    modal.add(travel.trips.detail('tenerife'))
+    // modal.add(travelCard.trip('tenerife'))
+    // modal.add(travelCard.flight('mad-tfs'))
     // modal.add(budgetDetailCard())
 
-    // modal.add(tripCard('tenerife'))
 }
 
 function paramsLoad() {

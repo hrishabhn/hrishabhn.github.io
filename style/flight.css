@@ -1,82 +1,28 @@
-.flight-detail-card {
+
+.travel-card.flight {
     width: 400px;
-    max-width: 100vw;
-    border-radius: 15px;
-    flex-direction: column;
-    padding-top: 12px;
-
-    overflow: hidden;
 }
 
-.flight-detail-card .header {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 0 15px;
-}
-
-.flight-detail-card .header .icon {
-    height: 50px;
-    width: 50px;
-}
-
-.flight-detail-card .header .textbox {
+.travel-card.flight .header .textbox {
     flex-direction: column;
     margin-left: 12px;
     align-items: flex-start;
 }
 
-.flight-detail-card .header .textbox .name {
+.travel-card.flight .header .textbox .name {
     font-size: 12px;
     font-weight: 500;
     opacity: 0.6;
     text-transform: capitalize;
 }
 
-.flight-detail-card .header .textbox .desc {
+.travel-card.flight .header .textbox .desc {
     font-size: 18px;
     font-weight: 500;
 }
 
-.flight-detail-card .action-tray {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 0px 15px;
-}
 
-.flight-detail-card .action-tray .action {
-    padding: 6px 9px;
-    border-radius: 100px;
-
-    font-size: 12px;
-    font-weight: 400;
-
-    background-color: var(--col);
-    border: solid 1px var(--col);
-    cursor: pointer;
-}
-
-.flight-detail-card .action-tray .action.primary {
-    color: white;
-    fill: white;
-}
-.flight-detail-card .action-tray .action.secondary {
-    background: none;
-    border: solid 1px white;
-    opacity: 0.5;
-}
-@media screen and (prefers-color-scheme: light) {
-    .flight-detail-card .action-tray .action.secondary {
-        border: solid 1px var(--dark-layer-1);
-    }
-}
-
-.flight-detail-card .action-tray .action .icon {
-    height: 12px;
-    width: 12px;
-    margin-right: 4px;
-}
-
-.flight-detail-card .status-bar {
+.travel-card.flight .status-bar {
     width: 100%;
     padding: 15px;
     font-size: 18px;
@@ -89,23 +35,23 @@
 }
 
 @media screen and (prefers-color-scheme: light) {
-    .flight-detail-card .status-bar {
+    .travel-card.flight .status-bar {
 
         background-color: var(--black-05);
     }
 }
 
-.flight-detail-card .status-bar p {
+.travel-card.flight .status-bar p {
     /* opacity: 0.8; */
 }
 
-.flight-detail-card .deparr {
+.travel-card.flight .deparr {
     width: 100%;
     flex-direction: column;
     margin: 10px 0;
 }
 
-.flight-detail-card .deparr .row {
+.travel-card.flight .deparr .deparr-row {
     width: 100%;
     display: grid;
     grid-template-columns: 40px auto 1fr auto 15px;
@@ -113,7 +59,7 @@
     /* align-items: center; */
 }
 
-.flight-detail-card .deparr .row .arrow {
+.travel-card.flight .deparr .deparr-row .arrow {
     height: 15px;
     width: 15px;
     border-radius: 100px;
@@ -123,42 +69,42 @@
 }
 
 @media screen and (prefers-color-scheme: light) {
-    .flight-detail-card .deparr .row .arrow {
+    .travel-card.flight .deparr .deparr-row .arrow {
         background-color: var(--black-10);
         fill: var(--black-50);
     }
 }
 
-.flight-detail-card .deparr.dep .row .arrow {
+.travel-card.flight .deparr.dep .row .arrow {
     transform: rotate(-45deg);
 }
 
-.flight-detail-card .deparr.arr .row .arrow {
+.travel-card.flight .deparr.arr .row .arrow {
     transform: rotate(45deg);
 }
 
-.flight-detail-card .deparr .row .airport-code {
+.travel-card.flight .deparr .deparr-row .airport-code {
     font-size: 34px;
     font-weight: 700;
 }
 
-.flight-detail-card .deparr .row .time {
+.travel-card.flight .deparr .deparr-row .time {
     font-size: 22px;
     font-weight: 500;
 }
 
-.flight-detail-card .deparr .row p {
+.travel-card.flight .deparr .deparr-row p {
     font-size: 13px;
     font-weight: 400;
     opacity: 0.5;
     margin: 1px 0;
 }
 
-.flight-detail-card .deparr .row p.bold {
+.travel-card.flight .deparr .deparr-row p.bold {
     font-weight: 500;
 }
 
-.flight-detail-card .duration-bar {
+.travel-card.flight .duration-bar {
     width: 100%;
     display: grid;
     padding: 10px 0;
@@ -167,17 +113,17 @@
     opacity: 0.5;
 }
 
-.flight-detail-card .duration-bar .line {
+.travel-card.flight .duration-bar .line {
     width: 100%;
     height: 0.5px;
     opacity: 0.5;
 }
 
-.flight-detail-card .duration-bar p {
+.travel-card.flight .duration-bar p {
     font-size: 12px;
     margin: 0 5px;
 }
-.flight-detail-card .extras-tray{
+.travel-card.flight .extras-tray{
     width: 100%;
     margin-top: 10px;
     padding: 0 15px;
@@ -187,7 +133,7 @@
     grid-auto-rows: auto;
     column-gap: 10px;
 }
-.flight-detail-card .extras-tray a{
+.travel-card.flight .extras-tray a{
     flex-direction: column;
     padding: 10px 12px;
     border-radius: 12px;
@@ -197,25 +143,25 @@
 }
 @media screen and (prefers-color-scheme: light) {
 
-    .flight-detail-card .extras-tray a{
+    .travel-card.flight .extras-tray a{
         border: solid 1px var(--dark-layer-1-20);
     }
 
 }
-.flight-detail-card .extras-tray a .icon{
+.travel-card.flight .extras-tray a .icon{
     height: 28px;
     width: 28px;
     margin-bottom: 4px;
 }
-.flight-detail-card .extras-tray a p{
+.travel-card.flight .extras-tray a p{
     -webkit-user-select: initial;
     cursor: default;
 }
-.flight-detail-card .extras-tray a p.text{
+.travel-card.flight .extras-tray a p.text{
     font-size: 16px;
     font-weight: 500;
 }
-.flight-detail-card .extras-tray a p.subtext{
+.travel-card.flight .extras-tray a p.subtext{
     font-size: 12px;
     font-weight: 400;
     opacity: 0.8;
@@ -225,17 +171,9 @@
 
 /* trip */
 
-.trip-card{
-    height: 500px;
-    width: 400px;
-    border-radius: 10px;
-    flex-direction: column;
-    overflow-y: scroll;
 
-    font-family: 'Heebo', sans-serif;
-}
-
-.trip-card .top-header{
+/*  */
+.travel-card.trip .top-header{
     width: 100%;
     min-height: 200px;
     background-color: var(--col);
@@ -246,13 +184,13 @@
     color: white;
 }
 
-.trip-card .top-header p{
+.travel-card.trip .top-header p{
     font-size: 36px;
     font-weight: 600;
 }
 
 
-.trip-card .trip-event{
+.travel-card.trip .trip-event{
     width: calc(100% - 30px);
     padding: 10px 5px;
     margin-bottom: 20px;
@@ -260,7 +198,7 @@
     border-radius: 8px;
     flex-direction: column;
 }
-.trip-card .trip-event .row{
+.travel-card.trip .trip-event .row{
     width: 100%;
     display: grid;
     grid-template-columns: 40px 1fr;
@@ -269,13 +207,13 @@
 
 }
 
-.trip-card .trip-event .icon{
+.travel-card.trip .trip-event .icon{
     height: 20px;
     width: 20px;
     opacity: 0.5;
 }
 
-.trip-card .trip-event .header{
+.travel-card.trip .trip-event .header{
     width: 100%;
     height: 100%;
     justify-content: flex-start;
@@ -285,19 +223,146 @@
     font-weight: 500;
 }
 
-.trip-card .trip-event .header .logo{
+.travel-card.trip .trip-event .header .logo{
     height: 40px;
     width: 40px;
 }
 
-.trip-card .trip-event .deparr .node{
+.travel-card.trip .trip-event .deparr .node{
     height: 20px;
     width: 20px;
     border-radius: 100px;
     background-color: var(--accent);
 }
-.trip-card .trip-event .deparr div{
+.travel-card.trip .trip-event .deparr div{
     height: 14px;
     width: 14px;
     border-radius: 100px;
+}
+
+/* common */
+
+.travel-card{
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 100vw;
+    border-radius: 15px;
+    overflow-y: scroll;
+    /* font-family: 'Heebo', sans-serif; */
+}
+.travel-card .header{
+    width: 100%;
+    justify-content: flex-start;
+    padding: 12px 15px 7px;
+}
+.travel-card .header .icon {
+    height: 50px;
+    width: 50px;
+}
+
+.travel-card .header .textbox {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+.travel-card .header .textbox .name {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.6;
+    text-transform: capitalize;
+}
+.travel-card .header .textbox .desc {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.travel-card .action-tray {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0px 15px 12px;
+}
+
+.travel-card .action-tray .action {
+    padding: 4px 8px;
+    border-radius: 100px;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    background-color: var(--col);
+    border: solid 1px var(--col);
+    cursor: pointer;
+}
+
+.travel-card .action-tray .action.primary {
+    color: white;
+    fill: white;
+}
+.travel-card .action-tray .action.secondary {
+    background: none;
+    border: solid 1px white;
+    opacity: 0.5;
+}
+@media screen and (prefers-color-scheme: light) {
+    .travel-card .action-tray .action.secondary {
+        border: solid 1px var(--dark-layer-1);
+    }
+}
+
+.travel-card .action-tray .action .icon {
+    height: 12px;
+    width: 12px;
+    margin-right: 4px;
+}
+
+
+
+
+
+
+
+
+
+.travel-card .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    column-gap: 10px;
+    padding: 10px 15px;
+    cursor: default;
+
+
+
+    min-height: 20px;
+}
+
+
+.travel-card .row .icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    padding: 10%;
+    fill: white;
+    background-color: rebeccapurple;
+}
+
+.travel-card .row .textbox {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.travel-card .row .textbox .name {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.travel-card .row .textbox .desc {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.8;
 }
