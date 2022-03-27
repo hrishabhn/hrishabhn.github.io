@@ -401,6 +401,11 @@ const tripData = {
     },
 }
 
+for (const key in tripData) {
+    tripData[key].detail = function () { modal.add(travelCard.trip(key)) }
+    tripData[key].type = 'flight'
+}
+
 const travel = {
     flight: {
         card: function (key) { return travelCard.flight(key) },
@@ -410,6 +415,24 @@ const travel = {
             let card = widgetCardBase('a')
             card.classList.add('flight', 'clickable-b')
             card.onclick = function () { flight.detail() }
+
+
+            return card
+        },
+    },
+    trip: {
+        card: function (key) { return travelCard.trip(key) },
+        widget: function (key) {
+            const flight = Object.values(flightData)[0]
+            key = null
+
+
+
+            const trip = key ? tripData[key] : Object.values(tripData)[0]
+
+            let card = widgetCardBase('a')
+            card.classList.add('trip', 'clickable-b')
+            card.onclick = function () { trip.detail() }
 
             // top row
             let top = document.createElement('div')
@@ -460,11 +483,8 @@ const travel = {
 
 
             return card
+
         },
-    },
-    trip: {
-        card: function (key) { return travelCard.trip(key) },
-        widget: function (key) { },
     },
 }
 

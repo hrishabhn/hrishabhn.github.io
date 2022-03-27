@@ -25,7 +25,7 @@ const widgets = {
         card: function (key) { return travel.flight.widget(key) },
     },
     trip: {
-        card: function (key) { return widgetTrip(key) }
+        card: function (key) { return travel.trip.widget(key) }
     },
     'ideas': {
         card: function () { return widgetIdeas() },
@@ -82,6 +82,7 @@ function widgetTray() {
     card.append(widgets.tasks.card())
     card.append(widgets.budget.card())
     card.append(widgets.stack([
+        widgets.trip.card('tenerife'),
         widgets.flight.card('mad-tfs'),
         widgets.flight.card('tfs-mad'),
     ]))
