@@ -282,8 +282,6 @@ const airlineData = {
 // },
 // }
 
-
-
 const aircraftData = {
     'a320': {
         manufacturer: 'Airbus',
@@ -385,32 +383,17 @@ const flightData = {
         link: 'https://www.notion.so/Feb-2022-London-7bbb8355d70342d087d2f8e7cf43effc'
     },
 }
-for (const key in flightData) {
-    flightData[key].detail = function () { modal.add(travelCard.flight(key)) }
-    flightData[key].type = 'flight'
-}
 
-const tripData = {
-    'tenerife': {
-        name: 'Tenerife',
-        desc: 'Easter Break',
-        events: [
-            flightData['mad-tfs'],
-            flightData['tfs-mad'],
-        ],
-    },
-}
 
-for (const key in tripData) {
-    tripData[key].detail = function () { modal.add(travelCard.trip(key)) }
-    tripData[key].type = 'flight'
-}
+
+
 
 const travel = {
     flight: {
+        data: flightData,
         card: function (key) { return travelCard.flight(key) },
         widget: function (key) {
-            const flight = key ? flightData[key] : Object.values(flightData)[0]
+            const flight = key ? travel.flight.data[key] : Object.values(travel.flight.data)[0]
 
             let card = widgetCardBase('a')
             card.classList.add('flight', 'clickable-b')
@@ -468,14 +451,20 @@ const travel = {
         },
     },
     trip: {
+        data: {
+            'tenerife': {
+                name: 'Tenerife',
+                desc: 'Easter Break',
+                link: 'https://www.notion.so/hrishabhn/Tenerife-52381b8829184f028e66d384ab84690c',
+                events: [
+                    flightData['mad-tfs'],
+                    flightData['tfs-mad'],
+                ],
+            },
+        },
         card: function (key) { return travelCard.trip(key) },
         widget: function (key) {
-            const flight = Object.values(flightData)[0]
-            key = null
-
-
-
-            const trip = key ? tripData[key] : Object.values(tripData)[0]
+            const trip = key ? travel.trip.data[key] : Object.values(travel.trip.data)[0]
 
             let card = widgetCardBase('a')
             card.classList.add('trip', 'clickable-b')
@@ -503,7 +492,7 @@ const travel = {
 
 const travelCard = {
     flight: function (key) {
-        const flight = flightData[key]
+        const flight = travel.flight.data[key]
 
         let card = document.createElement('div')
         card.classList = 'travel-card flight layer-1 card-shadow'
@@ -515,93 +504,53 @@ const travelCard = {
         // tray
         const trayData = [
             {
-                icon: iconData.ticket,
+                icon: SFSymbols.wallet.pass.fill,
                 text: 'Ticket',
-                link: flight.link,
+                link: flight.link ?? null,
             },
             {
-                icon: iconData.exit,
+                icon: SFSymbols.airplane,
+                text: flight.aircraft.name,
+                // trigger: function() { show plane card }
+            },
+            {
+                icon: SFSymbols.app.dashed,
                 text: 'App',
-                link: processDeviceLink(flight.airline.link),
+                // link: processDeviceLink(flight.airline.link),
             },
             {
-                icon: iconData.reverse,
+                icon: SFSymbols.arrow.triangle.circlepath,
                 text: 'Other Leg',
-                trigger: function () { flightData[flight.return].detail() }
+                trigger: function () { travel.flight.data[flight.return].detail() }
             },
         ]
 
-
-        // rest
-        let rest = document.createElement('div')
-        rest.classList = 'fill-width vstack'
-
-        let duration = document.createElement('div')
-        duration.classList = 'duration-bar'
-
-        duration.append(document.createElement('div'))
-        duration.append(lineForCard())
-        duration.append(elems.p(`Total ${flight.duration}`))
-        duration.append(lineForCard())
-
-
-        rest.append(travelCard.depArr(flight.dep, 'dep'))
-        rest.append(duration)
-        rest.append(travelCard.depArr(flight.arr, 'arr'))
-        rest.append(extras(flight))
+        let nodes = [
+            travelCard.row({
+                left: travelCard.left.dep(),
+                right: travelCard.deparr(flight.dep),
+            }),
+            travelCard.row({
+                left: travelCard.left.plane(),
+                right: travelCard.duration(flight.duration),
+            }),
+            travelCard.row({
+                left: travelCard.left.arr(),
+                right: travelCard.deparr(flight.arr),
+            }),
+            elems.spacer(8),
+        ]
 
         card.append(travelCard.header(flight.airline.logo.icon, subtext, `${flight.dep.city} to ${flight.arr.city}`))
         card.append(travelCard.actionTray(trayData))
         card.append(elems.hline())
 
-        card.append(elems.spacer(20))
-        card.append(elems.spacer(10))
-        card.append(rest)
-        card.append(elems.spacer(15))
+        for (const node of nodes) card.append(node)
 
         return card
-
-        function lineForCard() {
-            let line = document.createElement('div')
-            line.classList = 'line layer-fg'
-            return line
-        }
-
-        function extras(flight) {
-            let tray = document.createElement('div')
-            tray.classList = 'extras-tray'
-
-            const extraData = [
-                {
-                    icon: iconData['plane'],
-                    text: flight.aircraft.name,
-                    subtext: 'Aircraft',
-                },
-                {
-                    icon: iconData['seat'],
-                    text: 'Seat --',
-                    subtext: 'Economy',
-                },
-            ]
-
-            for (const data of extraData) {
-                let item = document.createElement('a')
-                item.innerHTML = `
-                    <div class="icon">${data.icon}</div>
-                    <p class="text">${data.text}</p>
-                    <p class="subtext">${data.subtext}</p>
-                    `
-
-                tray.append(item)
-            }
-
-
-
-            return tray
-        }
     },
     trip: function (key) {
-        const trip = tripData[key]
+        const trip = travel.trip.data[key]
 
         let card = document.createElement('div')
         card.classList = 'travel-card trip layer-1 card-shadow'
@@ -614,19 +563,15 @@ const travelCard = {
         // tray
         const trayData = [
             {
-                icon: iconData.ticket,
+                icon: SFSymbols.wallet.pass.fill,
                 text: 'Notes',
-                link: trip.link,
+                link: trip.link ?? null,
             },
         ]
-
-
 
         card.append(travelCard.header(null, `${trip.desc} &#149 ${startText}`, trip.name))
         card.append(travelCard.actionTray(trayData))
         card.append(elems.hline())
-
-
 
         // rest
         for (const event of trip.events) {
@@ -635,66 +580,9 @@ const travelCard = {
         }
         card.lastChild.remove()
         card.append(elems.spacer(8))
-
-
-
-
-
-
-
-        // card.style.setProperty('--col', `#${trip.color}`)
-
-        // let header = document.createElement('div')
-        // header.classList = 'top-header'
-        // header.append(elems.p(trip.name))
-        // card.append(header)
-
-        // for (const event of trip.events) {
-        //     card.append(tripEvent(event))
-        // }
-
         card.append(elems.grow())
 
         return card
-
-        // function tripEvent(data) {
-
-        //     let card = document.createElement('div')
-        //     card.classList = 'trip-event layer-1 clickable-b'
-        //     card.style.setProperty('--accent', `#${data.airline.accent}`)
-
-
-        //     let row1 = document.createElement('div')
-        //     row1.classList = 'row'
-
-        //     let icon = elems.icon(iconData['plane'])
-
-        //     let header = document.createElement('div')
-        //     header.classList = 'header'
-
-        //     let logo = document.createElement('div')
-        //     logo.classList = 'logo'
-        //     logo.innerHTML = data.airline.logo.icon
-
-        //     header.append(logo)
-        //     header.append(elems.spacer(8))
-        //     header.append(elems.p(`${data.airline.code} ${data.number}`))
-
-        //     row1.append(icon)
-        //     row1.append(header)
-
-        //     // row 2
-        //     let dep = document.createElement('div')
-        //     dep.classList = 'deparr row'
-
-        //     let node = nodeElem()
-        //     dep.append(node)
-
-        //     card.append(row1)
-        //     card.append(dep)
-
-        //     return card
-        // }
     },
     header: function (logo, name, desc) {
         let header = elems.header()
@@ -712,11 +600,12 @@ const travelCard = {
             action.classList = 'action clickable-o'
             action.target = '_blank'
 
-            if (i) action.classList.add('secondary')
+            if (i) action.classList.add('secondary', 'layer-1')
             else action.classList.add('primary')
 
-            if (data.link) action.href = data.link
-            else if (data.trigger) action.onclick = function () { data.trigger() }
+            if (item.link) action.href = item.link
+            else if (item.trigger) action.onclick = function () { item.trigger() }
+            if (item.link || item.trigger) action.style.setProperty('cursor', 'pointer')
 
             tray.append(action)
             tray.append(elems.spacer(10))
@@ -724,44 +613,17 @@ const travelCard = {
         }
         tray.lastChild.remove()
         return tray
-
-        for (let i = 0; i < actionData.length; i++) {
-            let data = actionData[i]
-
-            let action = document.createElement('a')
-            action.classList = 'action clickable'
-            action.target = '_blank'
-            if (i > 0) {
-                action.classList.add('secondary')
-            } else {
-                action.classList.add('primary')
-            }
-
-            action.innerHTML = `
-                    <div class="icon">${data.icon}</div>
-                    <p>${data.text}</p>
-                    
-                    `
-
-            if (data.link) {
-                action.href = data.link
-            } else if (data.trigger) {
-                action.onclick = function () { data.trigger() }
-            }
-
-            tray.append(action)
-            tray.append(elems.spacer(10))
-        }
-
-        return tray
-
     },
     row: function (data) {
         let row = document.createElement('div')
         row.classList = 'row clickable-o'
         if (data.trigger) row.onclick = function () { data.trigger() }
-        row.append(data.left)
-        row.append(data.right)
+
+        if (data.left) row.append(data.left)
+        else row.append(document.createElement('div'))
+
+        if (data.right) row.append(data.right)
+        else row.append(document.createElement('div'))
 
         return row
     },
@@ -771,37 +633,55 @@ const travelCard = {
             icon.classList.add('purple')
             return icon
         },
+        dep: function () {
+            let icon = elems.icon(SFSymbols.arrow.up.right)
+            icon.classList = 'arrow'
+            return icon
+        },
+        arr: function () {
+            let icon = elems.icon(SFSymbols.arrow.down.right)
+            icon.classList = 'arrow'
+            return icon
+        },
+
     },
-    depArr: function (flightDepArr, depArr) {
+    deparr: function (data) {
         let card = document.createElement('div')
-        card.classList = `deparr ${depArr}`
-        card.innerHTML = `
-            <div class="deparr-row">
-                <div class="arrow">${iconData['arrow']}</div>
-                <div class="airport-code">${flightDepArr.code}</div>
-                <div></div>
-                <div class="time">${flightDepArr.time}</div>
-                <div></div>
-            </div>
-            <div class="deparr-row">
-                <div></div>
-                <p>${flightDepArr.airport}</p>
-                <div></div>
-                <p class="bold">Terminal ${dashIfFalse(flightDepArr.terminal)} &#149 Gate ${dashIfFalse(flightDepArr.gate)}</p>
-                <div></div>
-            </div>
-        `
+        card.classList = 'dep-arr'
 
+        card.append(elems.title(data.code))
+        card.append(document.createElement('div'))
+        card.append(elems.subtitle(data.time))
+        card.append(elems.name(data.airport))
+        card.append(document.createElement('div'))
+        card.append(elems.desc(`Terminal ${data.terminal ?? '-'} &#149 Gate ${data.gate ?? '-'}`))
         return card
-
+    },
+    duration: function (dur) {
+        let card = document.createElement('div')
+        card.classList = 'duration'
+        card.append(elems.hline())
+        card.append(elems.p(`Total ${dur}`))
+        card.append(elems.hline())
+        return card
     },
     processEvent: function (event) {
-        console.log(event)
-
         if (event.type == 'flight') return {
             left: travelCard.left.plane(),
             right: elems.textbox(`${event.airline.name} ${event.number}`, `Departs at ${event.dep.time}`),
             trigger: function () { event.detail() },
         }
     },
+}
+
+
+
+for (const key in travel.trip.data) {
+    travel.trip.data[key].detail = function () { modal.add(travelCard.trip(key)) }
+    travel.trip.data[key].type = 'flight'
+}
+
+for (const key in travel.flight.data) {
+    travel.flight.data[key].detail = function () { modal.add(travelCard.flight(key)) }
+    travel.flight.data[key].type = 'flight'
 }
