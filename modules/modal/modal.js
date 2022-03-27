@@ -1,9 +1,10 @@
 const modal = {
     index: 0,
     elem: document.getElementById('layer-modal'),
-    add: function (card, e) {
+    add: function (card, e, mob) {
         let layer = document.createElement('div')
         layer.classList = 'layer'
+        if (mob) layer.classList.add('mob')
 
         let close = document.createElement('a')
         close.classList = 'close'

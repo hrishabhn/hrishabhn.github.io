@@ -444,8 +444,8 @@ const travel = {
             card.append(travelCard.header(flight.airline.logo.icon, subtext, `${flight.dep.city} to ${flight.arr.city}`))
             card.append(travelCard.actionTray(trayData))
             card.append(elems.hline())
-
             for (const node of nodes) card.append(node)
+            card.append(elems.mobCardBottom())
 
             return card
         },
@@ -553,7 +553,8 @@ const travel = {
             card.lastChild.remove()
             card.append(elems.spacer(8))
             card.append(elems.grow())
-
+            card.append(elems.mobCardBottom())
+            
             return card
         },
         widget: function (key) {
@@ -668,11 +669,11 @@ const travelCard = {
 
 
 for (const key in travel.trip.data) {
-    travel.trip.data[key].detail = function () { modal.add(travel.trip.card(key)) }
-    travel.trip.data[key].type = 'flight'
+    travel.trip.data[key].detail = function () { modal.add(travel.trip.card(key), null, true) }
+    travel.trip.data[key].type = 'trip'
 }
 
 for (const key in travel.flight.data) {
-    travel.flight.data[key].detail = function () { modal.add(travel.flight.card(key)) }
+    travel.flight.data[key].detail = function () { modal.add(travel.flight.card(key), null, true) }
     travel.flight.data[key].type = 'flight'
 }

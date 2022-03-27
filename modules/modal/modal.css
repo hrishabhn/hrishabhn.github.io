@@ -27,17 +27,11 @@
     height: 100%;
     width: 100%;
 
-    background-color: #00000066;
+    background-color: var(--black-50);
 }
 
-/* @media(max-width: 450px) {
-    #layer-modal .layer {
+@media(max-width: 450px) {
+    #layer-modal .layer.mob {
         align-items: flex-end;
     }
-} */
-
-/* @media screen and (prefers-color-scheme: light) {
-    #layer-modal .layer .close {
-        background-color: var(--white-50);
-    }
-} */
+}

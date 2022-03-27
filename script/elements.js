@@ -52,6 +52,12 @@ const elems = {
         elem.classList = 'header'
         return elem
     },
+    mobCardBottom: function () {
+        var spacer = document.createElement('div')
+        spacer.classList = 'spacer-x only-mobile'
+        spacer.style.setProperty('--size', '40px')
+        return spacer
+    },
 
     // types
     p: function (text) {
