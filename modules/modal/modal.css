@@ -20,6 +20,16 @@
     width: 100%;
 }
 
+#layer-modal .layer>* {
+    transform-origin: bottom center;
+    transition: all 0.15s;
+}
+
+#layer-modal .layer.preload>* {
+    transform: translateY(0px) scale(0.98);
+    opacity: 0;
+}
+
 #layer-modal .layer .close {
     position: absolute;
     top: 0;
@@ -28,7 +38,14 @@
     width: 100%;
 
     background-color: var(--black-50);
+    transition: all 0.15s;
 }
+
+#layer-modal .layer.preload .close {
+    transform: none;
+    opacity: 0;
+}
+
 
 @media(max-width: 450px) {
     #layer-modal .layer.mob {
