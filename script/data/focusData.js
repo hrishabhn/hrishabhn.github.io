@@ -176,12 +176,18 @@ let focusData = [
             apps: appData['travel'],
             work: false,
             distract: false,
-            // trays: function () {
-            //     return [
-            //         flightDetailCard('mad-lhr'),
-            //         flightDetailCard('lhr-mad'),
-            //     ]
-            // },
+            widgets: function () {
+                return [
+                    widgets.trip.card('tenerife'),
+                    widgets.flight.card('mad-tfs'),
+                    widgets.flight.card('tfs-mad'),
+                ]
+            },
+            trays: function () {
+                return [
+                    trayWithKids([travel.flight.card('mad-tfs'), travel.flight.card('tfs-mad'),], 30, 0)
+                ]
+            },
         },
         'workout': {
             name: 'Workout',

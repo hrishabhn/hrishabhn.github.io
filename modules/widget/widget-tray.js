@@ -78,20 +78,24 @@ function widgetTray() {
     card.id = 'widget-tray'
     card.classList = 'limit'
 
-    card.append(widgets.cal.card())
-    card.append(widgets.tasks.card())
-    card.append(widgets.budget.card())
-    card.append(widgets.stack([
-        widgets.trip.card('tenerife'),
-        widgets.flight.card('mad-tfs'),
-        widgets.flight.card('tfs-mad'),
-    ]))
-    card.append(widgets.ideas.card())
+    const nodes = [
+        widgets.cal.card(),
+        widgets.tasks.card(),
+        widgets.budget.card(),
+        widgets.ideas.card(),
+        widgets.stack([
+            widgets.trip.card('tenerife'),
+            widgets.flight.card('mad-tfs'),
+            widgets.flight.card('tfs-mad'),
+        ]),
+    ]
+
+    for (const item of nodes) card.append(item)
+    if (getFocus().widgets) for (const widget of getFocus().widgets()) card.append(widget)
+
 
     // card.append(widgets.tracking.card())
     // card.append(widgets.habit.card('email'))
-    if (getFocus().widgets) for (const widget of getFocus().widgets()) card.append(widget)
-
     // card.append(todayCard())
     // card.append(budgetCard())
     // card.append(weatherCard())

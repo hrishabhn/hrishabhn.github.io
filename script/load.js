@@ -10,7 +10,7 @@ function loadApp() {
     bodyLoad()
 
     paramsLoad()
-    setWallpaper()
+    // setWallpaper()
 
 
     // Testing
