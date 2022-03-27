@@ -391,7 +391,64 @@ const flightData = {
 const travel = {
     flight: {
         data: flightData,
-        card: function (key) { return travelCard.flight(key) },
+        card: function (key) {
+            const flight = travel.flight.data[key]
+
+            let card = document.createElement('div')
+            card.classList = 'travel-card flight layer-1 card-shadow'
+            card.style.setProperty('--col', `#${flight.airline.accent}`)
+
+            // header
+            const subtext = `${flight.airline.code} ${flight.number} &#149 ${processDate.day.short(flight.date)} ${new Date(flight.date).getDate()} ${processDate.month.short(flight.date)}`
+
+            // tray
+            const trayData = [
+                {
+                    icon: SFSymbols.wallet.pass.fill,
+                    text: 'Ticket',
+                    link: flight.link ?? null,
+                },
+                {
+                    icon: SFSymbols.airplane,
+                    text: flight.aircraft.name,
+                    // trigger: function() { show plane card }
+                },
+                {
+                    icon: SFSymbols.app.dashed,
+                    text: 'App',
+                    // link: processDeviceLink(flight.airline.link),
+                },
+                {
+                    icon: SFSymbols.arrow.triangle.circlepath,
+                    text: 'Other Leg',
+                    trigger: function () { travel.flight.data[flight.return].detail() }
+                },
+            ]
+
+            let nodes = [
+                travelCard.row({
+                    left: travelCard.left.dep(),
+                    right: travelCard.deparr(flight.dep),
+                }),
+                travelCard.row({
+                    left: travelCard.left.plane(),
+                    right: travelCard.duration(flight.duration),
+                }),
+                travelCard.row({
+                    left: travelCard.left.arr(),
+                    right: travelCard.deparr(flight.arr),
+                }),
+                elems.spacer(8),
+            ]
+
+            card.append(travelCard.header(flight.airline.logo.icon, subtext, `${flight.dep.city} to ${flight.arr.city}`))
+            card.append(travelCard.actionTray(trayData))
+            card.append(elems.hline())
+
+            for (const node of nodes) card.append(node)
+
+            return card
+        },
         widget: function (key) {
             const flight = key ? travel.flight.data[key] : Object.values(travel.flight.data)[0]
 
@@ -517,62 +574,6 @@ const travel = {
 
 const travelCard = {
     flight: function (key) {
-        const flight = travel.flight.data[key]
-
-        let card = document.createElement('div')
-        card.classList = 'travel-card flight layer-1 card-shadow'
-        card.style.setProperty('--col', `#${flight.airline.accent}`)
-
-        // header
-        const subtext = `${flight.airline.code} ${flight.number} &#149 ${processDate.day.short(flight.date)} ${new Date(flight.date).getDate()} ${processDate.month.short(flight.date)}`
-
-        // tray
-        const trayData = [
-            {
-                icon: SFSymbols.wallet.pass.fill,
-                text: 'Ticket',
-                link: flight.link ?? null,
-            },
-            {
-                icon: SFSymbols.airplane,
-                text: flight.aircraft.name,
-                // trigger: function() { show plane card }
-            },
-            {
-                icon: SFSymbols.app.dashed,
-                text: 'App',
-                // link: processDeviceLink(flight.airline.link),
-            },
-            {
-                icon: SFSymbols.arrow.triangle.circlepath,
-                text: 'Other Leg',
-                trigger: function () { travel.flight.data[flight.return].detail() }
-            },
-        ]
-
-        let nodes = [
-            travelCard.row({
-                left: travelCard.left.dep(),
-                right: travelCard.deparr(flight.dep),
-            }),
-            travelCard.row({
-                left: travelCard.left.plane(),
-                right: travelCard.duration(flight.duration),
-            }),
-            travelCard.row({
-                left: travelCard.left.arr(),
-                right: travelCard.deparr(flight.arr),
-            }),
-            elems.spacer(8),
-        ]
-
-        card.append(travelCard.header(flight.airline.logo.icon, subtext, `${flight.dep.city} to ${flight.arr.city}`))
-        card.append(travelCard.actionTray(trayData))
-        card.append(elems.hline())
-
-        for (const node of nodes) card.append(node)
-
-        return card
     },
     header: function (logo, name, desc) {
         let header = elems.header()
