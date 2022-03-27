@@ -331,6 +331,7 @@ const appData = {
         {
             name: 'Glovo',
             link: 'https://glovoapp.com/es/en/madrid',
+            searchBase: 'https://glovoapp.com/es/en/madridsearch-glovo/',
             desc: 'Food Delivery',
             thumb: 'glovo.jpeg',
             accent: 'ffc244',
@@ -512,7 +513,7 @@ const appData = {
         },
         {
             name: 'Tenerife',
-            trigger: function () { modal.add(travelCard.trip('tenerife')) },
+            trigger: function () { modal.add(travel.trip.card('tenerife')) },
             desc: 'Easter Break Trip',
             thumb: 'flighty.jpeg',
             style: 'secondary',

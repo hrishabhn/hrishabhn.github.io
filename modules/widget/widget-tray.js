@@ -21,8 +21,11 @@ const widgets = {
         ],
         card: function () { return widgetCard(this) },
     },
-    'flight': {
-        card: function (key) { return widgetFlight(key) },
+    flight: {
+        card: function (key) { return travel.flight.widget(key) },
+    },
+    trip: {
+        card: function (key) { return widgetTrip(key) }
     },
     'ideas': {
         card: function () { return widgetIdeas() },
@@ -46,6 +49,28 @@ const widgets = {
     //         content: widgetTrackContent(),
     //     card: function () { return widgetCard(this) }
     // },
+    stack: function (arr) {
+        let stack = document.createElement('div')
+        stack.classList = 'widget-stack'
+
+        for (const item of arr) {
+            stack.append(item)
+            stack.append(elems.spacer(10))
+        }
+        stack.lastChild.remove()
+        stack.onscroll = function (e) {
+            const elem = e.target
+            elem.classList.add('scroll')
+
+            const no = (elem.childNodes.length + 1) / 2
+            const top = elem.scrollTop
+
+            for (let i = 0; i < no; i++) if (top == (180 * i)) elem.classList.remove('scroll')
+        }
+
+        return stack
+
+    }
 }
 
 function widgetTray() {
@@ -56,7 +81,10 @@ function widgetTray() {
     card.append(widgets.cal.card())
     card.append(widgets.tasks.card())
     card.append(widgets.budget.card())
-    card.append(widgets.flight.card())
+    card.append(widgets.stack([
+        widgets.flight.card('mad-tfs'),
+        widgets.flight.card('tfs-mad'),
+    ]))
     card.append(widgets.ideas.card())
 
     // card.append(widgets.tracking.card())

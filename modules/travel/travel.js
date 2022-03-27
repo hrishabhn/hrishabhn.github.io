@@ -402,8 +402,70 @@ const tripData = {
 }
 
 const travel = {
+    flight: {
+        card: function (key) { return travelCard.flight(key) },
+        widget: function (key) {
+            const flight = key ? flightData[key] : Object.values(flightData)[0]
+
+            let card = widgetCardBase('a')
+            card.classList.add('flight', 'clickable-b')
+            card.onclick = function () { flight.detail() }
+
+            // top row
+            let top = document.createElement('div')
+            top.classList = 'top'
+
+            let logo = elems.icon(flight.airline.logo.icon)
+            logo.classList.add('logo')
+            let number = elems.p(`${flight.airline.code} ${flight.number}`)
+            number.classList = 'number'
+
+            top.append(logo)
+            top.append(elems.grow())
+            top.append(number)
 
 
+            let dest = document.createElement('div')
+            dest.classList = `dest`
+
+            let destIcon = elems.icon(iconData['plane'])
+            destIcon.classList.add(flight.airline.style)
+            destIcon.classList.add('secondary-fg')
+
+            let destText = elems.p(flight.arr.city)
+            destText.classList.add(`${flight.airline.style}-fg`)
+
+            dest.append(destIcon)
+            dest.append(elems.spacer(5))
+            dest.append(destText)
+            dest.append(elems.grow())
+
+
+            let count = document.createElement('div')
+            count.classList = 'count'
+            count.innerHTML = `${countdown.process.short(flight.date, 'short').num} ${countdown.process.short(flight.date).word}`
+
+            let date = document.createElement('div')
+            date.classList = 'date'
+            date.innerHTML = `${processDate.day.short(flight.date)} ${new Date(flight.date).getDate()} ${processDate.month.short(flight.date)}, ${processTime.ampm(flight.date)}`
+
+            card.append(top)
+            card.append(elems.grow())
+            card.append(elems.spacer(20))
+            card.append(dest)
+            card.append(elems.spacer(5))
+            card.append(count)
+            card.append(elems.spacer(2))
+            card.append(date)
+
+
+            return card
+        },
+    },
+    trip: {
+        card: function (key) { return travelCard.trip(key) },
+        widget: function (key) { },
+    },
 }
 
 const travelCard = {

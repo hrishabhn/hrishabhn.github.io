@@ -94,15 +94,9 @@ let budgetData = [
     { "amount": 1, "name": "Coffee", "category": "Food", "date": "2022-03-24T11:43:00+01:00" },
     { "amount": 5, "name": "Drinks", "category": "Drinks", "date": "2022-03-24T20:10:00+01:00" },
     { "amount": 24.8, "name": "Lunch", "category": "Food", "date": "2022-03-25T12:00:00+01:00" },
-
-
-
-
-
-
-
-
-
-
-
+    { "amount": 5.8, "name": "Starbucks", "category": "Food", "date": "2022-03-26T15:36:00+01:00" },
+    { "amount": 19.72, "name": "Booze", "category": "Grocery", "date": "2022-03-26T17:42:00+01:00" },
+    { "amount": 7.49, "name": "Jolibee", "category": "Food", "date": "2022-03-26T18:22:00+01:00" },
+    { "amount": 19.5, "name": "Bule Bule", "category": "Drinks", "date": "2022-03-26T23:59:00+01:00" },
+    { "amount": 25.2, "name": "Lunch", "category": "Food", "date": "2022-03-27T16:16:00+01:00" },
 ]

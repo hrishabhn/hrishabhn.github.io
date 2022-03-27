@@ -1,4 +1,5 @@
 const soonMovies = [
+    allMovies.atlanta,
     allMovies.abbott,
 ]
 
@@ -6,6 +7,7 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
+            allMovies.joking,
             allMovies.attack,
             allMovies.elite,
             allMovies.wecrashed,
@@ -15,7 +17,6 @@ let movieRaw = [
     {
         name: 'My list',
         data: [
-            allMovies.atlanta,
             allMovies.kal,
             allMovies.snowfall,
             allMovies.ozark,

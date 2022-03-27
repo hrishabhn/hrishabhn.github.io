@@ -3148,7 +3148,7 @@ const allMovies = {
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            date: '23 March, 2022',
+            date: '30 March, 2022',
             seasons: 3,
             yearStart: 2016,
             yearEnd: null,
@@ -3175,7 +3175,7 @@ const allMovies = {
             tvTimeID: '313999',
             reelgoodLink: 'https://reelgood.com/show/atlanta-2016',
             imdbID: 'tt4288182',
-            // subReddit: 'subreddit',
+            subReddit: 'AtlantaTV',
         },
     },
     'boys': {
@@ -6235,6 +6235,44 @@ const allMovies = {
             // tvTimeID: 'identifier',
             reelgoodLink: 'https://reelgood.com/movie/kal-ho-naa-ho-2003',
             imdbID: 'tt0347304',
+            // subReddit: 'subreddit',
+        },
+    },
+    'joking': {
+        name: 'Jack Whitehall: I\'m Only Joking',
+        id: 'joking',
+        link: {
+            netflix: '81060252'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            year: 2020,
+            genre: [
+                'comedy special',
+            ],
+            summary: "Jack Whitehall hits the stage with hilarious tales about happy couples, life in hotels, human stupidity and his well-traveled father.",
+        },
+        style: {
+            color: colorData.fluent.blue10,
+            poster: {
+                wideType: 'webp',
+                mobile: {
+                    type: 'webp',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/jack-whitehall-im-only-joking-2020',
+            // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
     },

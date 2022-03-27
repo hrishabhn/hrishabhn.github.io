@@ -34,26 +34,22 @@ function widgetCal() {
         let i = 0
         while (todayEvents[i] && (displayedLeft < limitLeft)) {
             const event = todayEvents[i]
-            if (!event.allDay) {
-                left.append(eventCardElem(event))
-                left.append(elems.spacer(5))
+            left.append(eventCardElem(event))
+            left.append(elems.spacer(5))
 
-                displayedLeft++
-                showingTdy = true
-            }
+            displayedLeft++
+            showingTdy = true
             i++
         }
 
         // right
         while (todayEvents[i] && (displayedRight < limitRight)) {
             const event = todayEvents[i]
-            if (!event.allDay) {
-                right.append(eventCardElem(event))
-                right.append(elems.spacer(5))
+            right.append(eventCardElem(event))
+            right.append(elems.spacer(5))
 
-                displayedRight++
-                showingTdy = true
-            }
+            displayedRight++
+            showingTdy = true
             i++
         }
 
@@ -71,13 +67,11 @@ function widgetCal() {
                 left.append(elems.subtitle('TOMORROW'))
             }
             const event = tmrEvents[i]
-            if (!event.allDay) {
-                left.append(eventCardElem(event))
-                left.append(elems.spacer(5))
+            left.append(eventCardElem(event))
+            left.append(elems.spacer(5))
 
-                displayedLeft++
-                showingTmr = true
-            }
+            displayedLeft++
+            showingTmr = true
             i++
         }
 
@@ -88,13 +82,11 @@ function widgetCal() {
                 right.append(elems.subtitle('TOMORROW'))
             }
             const event = tmrEvents[i]
-            if (!event.allDay) {
-                right.append(eventCardElem(event))
-                right.append(elems.spacer(5))
+            right.append(eventCardElem(event))
+            right.append(elems.spacer(5))
 
-                displayedRight++
-                showingTmr = true
-            }
+            displayedRight++
+            showingTmr = true
             i++
         }
 
