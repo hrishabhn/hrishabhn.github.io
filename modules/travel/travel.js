@@ -462,7 +462,41 @@ const travel = {
                 ],
             },
         },
-        card: function (key) { return travelCard.trip(key) },
+        card: function (key) {
+            const trip = travel.trip.data[key]
+
+            let card = document.createElement('div')
+            card.classList = 'travel-card trip layer-1 card-shadow'
+            card.style.setProperty('--col', `#${colorData.fluent.red}`)
+
+            // header
+            const start = (trip.events[0].date)
+            const startText = `${countdown.process.short(start).num} ${countdown.process.short(start).word}`
+
+            // tray
+            const trayData = [
+                {
+                    icon: SFSymbols.wallet.pass.fill,
+                    text: 'Notes',
+                    link: trip.link ?? null,
+                },
+            ]
+
+            card.append(travelCard.header(null, `${trip.desc} &#149 ${startText}`, trip.name))
+            card.append(travelCard.actionTray(trayData))
+            card.append(elems.hline())
+
+            // rest
+            for (const event of trip.events) {
+                card.append(travelCard.row(travelCard.processEvent(event)))
+                card.append(elems.hlineList(50))
+            }
+            card.lastChild.remove()
+            card.append(elems.spacer(8))
+            card.append(elems.grow())
+
+            return card
+        },
         widget: function (key) {
             const trip = key ? travel.trip.data[key] : Object.values(travel.trip.data)[0]
 
@@ -470,22 +504,13 @@ const travel = {
             card.classList.add('trip', 'clickable-b')
             card.onclick = function () { trip.detail() }
 
-            let bg = elems.bg()
-            bg.style.setProperty('background-image', 'url(https://s1.eestatic.com/2021/08/11/ocio/603452207_200344208_1706x960.jpg)')
-
             const start = (trip.events[0].date)
             const startText = `${countdown.process.short(start).num} ${countdown.process.short(start).word}`
 
-            card.append(bg)
-            card.append(elems.grad())
-            card.append(elems.grow())
-            card.append(elems.subtitle(startText))
-            card.append(elems.data(trip.name, 'UPCOMING TRIP'))
-
-
+            card.append(elems.thumb('https://s1.eestatic.com/2021/08/11/ocio/603452207_200344208_1706x960.jpg'))
+            card.append(elems.data(trip.name, startText))
 
             return card
-
         },
     },
 }
@@ -546,41 +571,6 @@ const travelCard = {
         card.append(elems.hline())
 
         for (const node of nodes) card.append(node)
-
-        return card
-    },
-    trip: function (key) {
-        const trip = travel.trip.data[key]
-
-        let card = document.createElement('div')
-        card.classList = 'travel-card trip layer-1 card-shadow'
-        card.style.setProperty('--col', `#${colorData.fluent.red}`)
-
-        // header
-        const start = (trip.events[0].date)
-        const startText = `${countdown.process.short(start).num} ${countdown.process.short(start).word}`
-
-        // tray
-        const trayData = [
-            {
-                icon: SFSymbols.wallet.pass.fill,
-                text: 'Notes',
-                link: trip.link ?? null,
-            },
-        ]
-
-        card.append(travelCard.header(null, `${trip.desc} &#149 ${startText}`, trip.name))
-        card.append(travelCard.actionTray(trayData))
-        card.append(elems.hline())
-
-        // rest
-        for (const event of trip.events) {
-            card.append(travelCard.row(travelCard.processEvent(event)))
-            card.append(elems.hlineList(50))
-        }
-        card.lastChild.remove()
-        card.append(elems.spacer(8))
-        card.append(elems.grow())
 
         return card
     },
@@ -677,11 +667,11 @@ const travelCard = {
 
 
 for (const key in travel.trip.data) {
-    travel.trip.data[key].detail = function () { modal.add(travelCard.trip(key)) }
+    travel.trip.data[key].detail = function () { modal.add(travel.trip.card(key)) }
     travel.trip.data[key].type = 'flight'
 }
 
 for (const key in travel.flight.data) {
-    travel.flight.data[key].detail = function () { modal.add(travelCard.flight(key)) }
+    travel.flight.data[key].detail = function () { modal.add(travel.flight.card(key)) }
     travel.flight.data[key].type = 'flight'
 }
