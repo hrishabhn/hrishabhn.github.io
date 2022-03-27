@@ -512,6 +512,7 @@ const travel = {
             'tenerife': {
                 name: 'Tenerife',
                 desc: 'Easter Break',
+                thumb: 'https://s1.eestatic.com/2021/08/11/ocio/603452207_200344208_1706x960.jpg',
                 link: 'https://www.notion.so/hrishabhn/Tenerife-52381b8829184f028e66d384ab84690c',
                 events: [
                     flightData['mad-tfs'],
@@ -539,6 +540,7 @@ const travel = {
                 },
             ]
 
+            card.append(elems.thumb(trip.thumb))
             card.append(travelCard.header(null, `${trip.desc} &#149 ${startText}`, trip.name))
             card.append(travelCard.actionTray(trayData))
             card.append(elems.hline())
@@ -564,7 +566,7 @@ const travel = {
             const start = (trip.events[0].date)
             const startText = `${countdown.process.short(start).num} ${countdown.process.short(start).word}`
 
-            card.append(elems.thumb('https://s1.eestatic.com/2021/08/11/ocio/603452207_200344208_1706x960.jpg'))
+            card.append(elems.thumb(trip.thumb))
             card.append(elems.data(trip.name, startText))
 
             return card
@@ -573,8 +575,6 @@ const travel = {
 }
 
 const travelCard = {
-    flight: function (key) {
-    },
     header: function (logo, name, desc) {
         let header = elems.header()
         if (logo) header.append(elems.icon(logo))
