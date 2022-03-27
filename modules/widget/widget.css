@@ -117,7 +117,8 @@
 
 .widget-stack.scroll {
     background-color: var(--light-layer-3);
-    box-shadow: 0 0 0 3px var(--light-layer-3);
+    box-shadow: 0 0 0 5px var(--light-layer-3);
+    scale: 0.98;
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -127,7 +128,7 @@
     
     .widget-stack.scroll {
         background-color: var(--dark-layer-3);
-        box-shadow: 0 0 0 3px var(--dark-layer-3);
+        box-shadow: 0 0 0 5px var(--dark-layer-3);
     }
 }
 

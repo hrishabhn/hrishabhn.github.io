@@ -1,0 +1,13 @@
+.widget-card.trip .grad {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+
+    background-color: var(--black-50);
+    -webkit-backdrop-filter: blur(25px);
+    -webkit-mask: linear-gradient(transparent, black);
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}

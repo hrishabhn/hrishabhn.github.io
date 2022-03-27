@@ -416,24 +416,6 @@ const travel = {
             card.classList.add('flight', 'clickable-b')
             card.onclick = function () { flight.detail() }
 
-
-            return card
-        },
-    },
-    trip: {
-        card: function (key) { return travelCard.trip(key) },
-        widget: function (key) {
-            const flight = Object.values(flightData)[0]
-            key = null
-
-
-
-            const trip = key ? tripData[key] : Object.values(tripData)[0]
-
-            let card = widgetCardBase('a')
-            card.classList.add('trip', 'clickable-b')
-            card.onclick = function () { trip.detail() }
-
             // top row
             let top = document.createElement('div')
             top.classList = 'top'
@@ -480,6 +462,37 @@ const travel = {
             card.append(count)
             card.append(elems.spacer(2))
             card.append(date)
+
+
+            return card
+        },
+    },
+    trip: {
+        card: function (key) { return travelCard.trip(key) },
+        widget: function (key) {
+            const flight = Object.values(flightData)[0]
+            key = null
+
+
+
+            const trip = key ? tripData[key] : Object.values(tripData)[0]
+
+            let card = widgetCardBase('a')
+            card.classList.add('trip', 'clickable-b')
+            card.onclick = function () { trip.detail() }
+
+            let bg = elems.bg()
+            bg.style.setProperty('background-image', 'url(https://s1.eestatic.com/2021/08/11/ocio/603452207_200344208_1706x960.jpg)')
+
+            const start = (trip.events[0].date)
+            const startText = `${countdown.process.short(start).num} ${countdown.process.short(start).word}`
+
+            card.append(bg)
+            card.append(elems.grad())
+            card.append(elems.grow())
+            card.append(elems.subtitle(startText))
+            card.append(elems.data(trip.name, 'UPCOMING TRIP'))
+
 
 
             return card
