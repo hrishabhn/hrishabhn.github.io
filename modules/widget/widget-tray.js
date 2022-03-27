@@ -36,9 +36,6 @@ const widgets = {
     'app': {
         card: function (data) { return widgetAppTray(data) },
     },
-    'habit': {
-        card: function (key) { return widgetHabit(key) }
-    },
     // 'tracking': {
     //     id: 'tracking',
     //     type: 'div',
@@ -49,6 +46,9 @@ const widgets = {
     //         content: widgetTrackContent(),
     //     card: function () { return widgetCard(this) }
     // },
+    routine: {
+        card: function (key) { return routine.widget(key) }
+    },
     stack: function (arr) {
         let stack = document.createElement('div')
         stack.classList = 'widget-stack'
@@ -69,14 +69,18 @@ const widgets = {
         }
 
         return stack
-
     }
 }
+
+
+
 
 function widgetTray() {
     let card = document.createElement('div')
     card.id = 'widget-tray'
     card.classList = 'limit'
+
+
 
     const nodes = [
         widgets.cal.card(),
@@ -90,12 +94,12 @@ function widgetTray() {
         ]),
     ]
 
+    if (routine.data[timeOfDay()]) card.append(widgets.routine.card(timeOfDay()))
     for (const item of nodes) card.append(item)
     if (getFocus().widgets) for (const widget of getFocus().widgets()) card.append(widget)
 
 
     // card.append(widgets.tracking.card())
-    // card.append(widgets.habit.card('email'))
     // card.append(todayCard())
     // card.append(budgetCard())
     // card.append(weatherCard())

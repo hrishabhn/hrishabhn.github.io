@@ -1,23 +1,31 @@
-function timeOfDay() {
-    if ((new Date().hour > 0) && (new Date().hour < 4)) {
-        var t = 0
-    } else if ((new Date().hour > 3) && (new Date().hour < 7)) {
-        var t = 1
-    } else if ((new Date().hour > 6) && (new Date().hour < 10)) {
-        var t = 2
-    } else if ((new Date().hour > 9) && (new Date().hour < 13)) {
-        var t = 3
-    } else if ((new Date().hour > 12) && (new Date().hour < 16)) {
-        var t = 4
-    } else if ((new Date().hour > 15) && (new Date().hour < 19)) {
-        var t = 5
-    } else if ((new Date().hour > 18) && (new Date().hour < 22)) {
-        var t = 6
-    } else if ((new Date().hour > 21) || (new Date().hour < 1)) {
-        var t = 7
-    }
+// function timeOfDay() {
+//     if ((new Date().hour > 0) && (new Date().hour < 4)) {
+//         var t = 0
+//     } else if ((new Date().hour > 3) && (new Date().hour < 7)) {
+//         var t = 1
+//     } else if ((new Date().hour > 6) && (new Date().hour < 10)) {
+//         var t = 2
+//     } else if ((new Date().hour > 9) && (new Date().hour < 13)) {
+//         var t = 3
+//     } else if ((new Date().hour > 12) && (new Date().hour < 16)) {
+//         var t = 4
+//     } else if ((new Date().hour > 15) && (new Date().hour < 19)) {
+//         var t = 5
+//     } else if ((new Date().hour > 18) && (new Date().hour < 22)) {
+//         var t = 6
+//     } else if ((new Date().hour > 21) || (new Date().hour < 1)) {
+//         var t = 7
+//     }
 
-    return t
+//     return t
+// }
+
+function timeOfDay(n) {
+    const hour = n ?? new Date().getHours()
+    if ((hour >= 21) || (hour <= 4)) return 'night'
+    if ((hour >= 5) && (hour <= 12)) return 'morning'
+    if ((hour >= 13) && (hour <= 16)) return 'afternoon'
+    if ((hour >= 17) && (hour <= 20)) return 'afternoon'
 }
 
 const processDate = {

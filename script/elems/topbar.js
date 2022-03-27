@@ -30,8 +30,20 @@ const topbar = {
                 trigger: function (e) { modal.add(widgetIdeas(), e) },
                 icon: SFSymbols.lightbulb.fill,
             },
+            {
+                name: 'Morning Habits',
+                trigger: function (e) { modal.add(widgets.routine.card('morning'), e) },
+                icon: SFSymbols.sunrise.fill,
+            },
+            {
+                name: 'Night Habits',
+                trigger: function (e) { modal.add(widgets.routine.card('night'), e) },
+                icon: SFSymbols.sunset.fill,
+            },
 
         ]
+
+        // console.log(SFSymbols.sunrise)
 
         let tray = appCard.topbar.tray(apps)
         tray.classList = 'side'
