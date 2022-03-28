@@ -50,7 +50,7 @@ const trainData = {
         seat: '3-1B',
         line: trainlineData.renfe,
         return: 'bcn-mad',
-        // link: 'https://www.notion.so/Feb-2022-London-7bbb8355d70342d087d2f8e7cf43effc'
+        link: 'https://www.notion.so/hrishabhn/Barcelona-8e52cf40d8744f7bbfcb0428893cee96'
     },
     'bcn-mad': {
         number: '6610',
@@ -72,7 +72,7 @@ const trainData = {
         seat: '15-8B',
         line: trainlineData.ouigo,
         return: 'mad-bcn',
-        // link: 'https://www.notion.so/Feb-2022-London-7bbb8355d70342d087d2f8e7cf43effc'
+        link: 'https://www.notion.so/hrishabhn/Barcelona-8e52cf40d8744f7bbfcb0428893cee96'
     },
 }
 
