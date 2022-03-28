@@ -489,7 +489,7 @@ const allMovies = {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            // date: '',
+            date: 'Apr 8 2022',
             seasons: 4,
             yearStart: 2018,
             yearEnd: null,

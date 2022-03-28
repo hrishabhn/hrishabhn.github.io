@@ -1,6 +1,7 @@
 const soonMovies = [
     allMovies.atlanta,
     allMovies.abbott,
+    allMovies.elite,
 ]
 
 let movieRaw = [
@@ -9,7 +10,6 @@ let movieRaw = [
         data: [
             allMovies.joking,
             allMovies.attack,
-            allMovies.elite,
             allMovies.wecrashed,
             allMovies.severance,
         ],
