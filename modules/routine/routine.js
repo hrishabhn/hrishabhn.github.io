@@ -1,5 +1,5 @@
 const routine = {
-    data: {
+    rawData: {
         morning: [
             { name: 'Check Emails', },
             { name: 'Clear Notifications', },
@@ -13,17 +13,20 @@ const routine = {
             { name: 'Self Care', },
         ],
     },
+    load: function () {
+        // removeCookie('routine')
+        if (!getCookie('routine')) {
+            for (const tray in routine.rawData) for (const item of routine.rawData[tray]) item.done = false
+            setCookie('routine', JSON.stringify(routine.rawData), 1 / 2)
+        }
+    },
+    data: function () { return JSON.parse(getCookie('routine')) },
     widget: function (key) {
         let card = widgetCardBase('div')
         card.classList.add('routine')
         card.append(elems.title('Habits'))
 
-        for (const item of routine.data[key]) item.done = false
-
-        // removeCookie('routine')
-        if (!getCookie('routine')) setCookie('routine', JSON.stringify(routine.data), 1 / 2)
-
-        let data = JSON.parse(getCookie('routine'))
+        let data = routine.data()
 
         for (const task of data[key]) {
             let elem = document.createElement('a')
@@ -48,3 +51,4 @@ const routine = {
         return card
     }
 }
+

@@ -46,9 +46,7 @@ const widgets = {
     //         content: widgetTrackContent(),
     //     card: function () { return widgetCard(this) }
     // },
-    routine: {
-        card: function (key) { return routine.widget(key) }
-    },
+    routine: { card: function (key) { return routine.widget(key) } },
     stack: function (arr) {
         let stack = document.createElement('div')
         stack.classList = 'widget-stack'
@@ -80,8 +78,6 @@ function widgetTray() {
     card.id = 'widget-tray'
     card.classList = 'limit'
 
-
-
     const nodes = [
         widgets.cal.card(),
         widgets.tasks.card(),
@@ -94,7 +90,12 @@ function widgetTray() {
         ]),
     ]
 
-    if (routine.data[timeOfDay()]) card.append(widgets.routine.card(timeOfDay()))
+
+    // if there is a routine at this time of day
+    if (routine.data()[timeOfDay()])
+        //  if tasks are not all done
+        if (!(routine.data()[timeOfDay()].map(x => x.done).every(Boolean)))
+            card.append(widgets.routine.card(timeOfDay()))
     for (const item of nodes) card.append(item)
     if (getFocus().widgets) for (const widget of getFocus().widgets()) card.append(widget)
 

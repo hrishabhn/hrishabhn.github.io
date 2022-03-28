@@ -1,6 +1,7 @@
 function loadApp() {
     focusLoad()
     dndLoad()
+    routine.load()
 
     topbarLoad()
     dndElemLoad()
@@ -11,7 +12,6 @@ function loadApp() {
 
     paramsLoad()
     // setWallpaper()
-
 
     // Testing
     // skipToContent()

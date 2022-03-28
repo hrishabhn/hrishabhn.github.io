@@ -11,6 +11,7 @@
     width: 6px;
     border-radius: 100px;
     opacity: 0.5;
+    cursor: pointer;
 }
 .widget-card#ideas .item p {
     font-size: 12px;
