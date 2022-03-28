@@ -513,7 +513,7 @@ const appData = {
         },
         {
             name: 'Tenerife',
-            trigger: function () { modal.add(travel.trip.card('tenerife')) },
+            trigger: function () { modal.add(trip.card('tenerife')) },
             desc: 'Easter Break Trip',
             thumb: 'flighty.jpeg',
             style: 'secondary',

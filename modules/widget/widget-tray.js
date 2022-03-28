@@ -22,10 +22,13 @@ const widgets = {
         card: function () { return widgetCard(this) },
     },
     flight: {
-        card: function (key) { return travel.flight.widget(key) },
+        card: function (key) { return flight.widget(key) },
+    },
+    train: {
+        card: function (key) { return train.widget(key) },
     },
     trip: {
-        card: function (key) { return travel.trip.widget(key) }
+        card: function (key) { return trip.widget(key) }
     },
     'ideas': {
         card: function () { return widgetIdeas() },

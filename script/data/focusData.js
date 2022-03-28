@@ -6,7 +6,7 @@ let focusData = [
             thumb: thumbData['user'],
             icon: SFSymbols.person.fill,
             style: 'secondary',
-            apps: appData['main'],
+            // apps: appData['main'],
             work: false,
             distract: false,
             // trays: function () {
@@ -178,14 +178,16 @@ let focusData = [
             distract: false,
             widgets: function () {
                 return [
+                    widgets.trip.card(),
                     widgets.trip.card('tenerife'),
                     widgets.flight.card('mad-tfs'),
                     widgets.flight.card('tfs-mad'),
+                    train.widget('mad-bcn'),
                 ]
             },
             trays: function () {
                 return [
-                    trayWithKids([travel.flight.card('mad-tfs'), travel.flight.card('tfs-mad'),], 30, 0)
+                    trayWithKids([flight.card('mad-tfs'), flight.card('tfs-mad'),], 30, 0)
                 ]
             },
         },
