@@ -457,42 +457,28 @@ const travel = {
             card.onclick = function () { flight.detail() }
 
             // top row
-            let top = document.createElement('div')
-            top.classList = 'top'
+            let top = travelWidget.top({
+                logo: flight.airline.logo,
+                code: flight.airline.code,
+                number: flight.number,
+            })
 
-            let logo = elems.icon(flight.airline.logo.icon)
-            logo.classList.add('logo')
-            let number = elems.p(`${flight.airline.code} ${flight.number}`)
-            number.classList = 'number'
+            // middle
+            let dest = travelWidget.middle({
+                icon: iconData.plane,
+                city: flight.arr.city,
+                style: flight.airline.style,
+            })
 
-            top.append(logo)
-            top.append(elems.grow())
-            top.append(number)
+            // bottom
 
+            let count = travelWidget.count({ date: flight.date })
 
-            let dest = document.createElement('div')
-            dest.classList = `dest`
+            // let count = document.createElement('div')
+            // count.classList = 'count'
+            // count.innerHTML = `${countdown.process.short(flight.date, 'short').num} ${countdown.process.short(flight.date).word}`
 
-            let destIcon = elems.icon(iconData['plane'])
-            destIcon.classList.add(flight.airline.style)
-            destIcon.classList.add('secondary-fg')
-
-            let destText = elems.p(flight.arr.city)
-            destText.classList.add(`${flight.airline.style}-fg`)
-
-            dest.append(destIcon)
-            dest.append(elems.spacer(5))
-            dest.append(destText)
-            dest.append(elems.grow())
-
-
-            let count = document.createElement('div')
-            count.classList = 'count'
-            count.innerHTML = `${countdown.process.short(flight.date, 'short').num} ${countdown.process.short(flight.date).word}`
-
-            let date = document.createElement('div')
-            date.classList = 'date'
-            date.innerHTML = `${processDate.day.short(flight.date)} ${new Date(flight.date).getDate()} ${processDate.month.short(flight.date)}, ${processTime.ampm(flight.date)}`
+            let date = travelWidget.date({ flight: flight, date: flight.date })
 
             card.append(top)
             card.append(elems.grow())
@@ -554,7 +540,7 @@ const travel = {
             card.append(elems.spacer(8))
             card.append(elems.grow())
             card.append(elems.mobCardBottom())
-            
+
             return card
         },
         widget: function (key) {
@@ -666,6 +652,62 @@ const travelCard = {
     },
 }
 
+const travelWidget = {
+    top: function ({ logo, code, number }) {
+        let top = document.createElement('div')
+        top.classList = 'top'
+
+        let logoElem
+        if (logo.icon) {
+            logoElem = elems.icon(logo.icon)
+            logoElem.classList.add('logo')
+        }
+        // else if (flight.airline.logo.name) {
+        //     logoElem = elems.icon(logo.name)
+        //     logoElem.classList.add('logo')
+        // }
+
+        let noElem = elems.p(`${code} ${number}`)
+        noElem.classList = 'number'
+
+        top.append(logoElem)
+        top.append(elems.grow())
+        top.append(noElem)
+
+        return top
+    },
+    middle: function ({ icon, city, style }) {
+        let dest = document.createElement('div')
+        dest.classList = 'dest'
+
+        let destIcon = elems.icon(icon)
+        destIcon.classList.add(style)
+        destIcon.classList.add('secondary-fg')
+
+        let destText = elems.p(city)
+        destText.classList.add(`${style}-fg`)
+
+        dest.append(destIcon)
+        dest.append(elems.spacer(5))
+        dest.append(destText)
+        dest.append(elems.grow())
+
+
+        return dest
+    },
+    count: function ({ flight, date }) {
+        let count = document.createElement('div')
+        count.classList = 'count'
+        count.innerHTML = `${countdown.process.short(date, 'short').num} ${countdown.process.short(date).word}`
+        return count
+    },
+    date: function ({ flight, date }) {
+        let elem = document.createElement('div')
+        elem.classList = 'date'
+        elem.innerHTML = `${processDate.day.short(date)} ${new Date(date).getDate()} ${processDate.month.short(date)}, ${processTime.ampm(date)}`
+        return elem
+    },
+}
 
 
 for (const key in travel.trip.data) {

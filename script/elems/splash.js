@@ -14,7 +14,7 @@ function splashLoad() {
     if (!isDND()) splash.append(widgetTray())
     splash.append(elems.spacer(50))
     splash.append(elems.grow())
-    splash.append(dockTray())
+    if (getFocus().apps) splash.append(dockTray())
 }
 
 function dockTray() {
