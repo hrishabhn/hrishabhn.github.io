@@ -178,11 +178,12 @@ let focusData = [
             distract: false,
             widgets: function () {
                 return [
-                    widgets.trip.card(),
+                    widgets.trip.card('barca'),
+                    train.widget('mad-bcn'),
+                    train.widget('bcn-mad'),
                     widgets.trip.card('tenerife'),
                     widgets.flight.card('mad-tfs'),
                     widgets.flight.card('tfs-mad'),
-                    train.widget('mad-bcn'),
                 ]
             },
             trays: function () {

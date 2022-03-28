@@ -70,7 +70,7 @@ const trainData = {
         start: 'Sat, 2 Apr',
         date: '2 Apr, 2022 20:45:00',
         seat: '15-8B',
-        line: trainlineData.renfe,
+        line: trainlineData.ouigo,
         return: 'mad-bcn',
         // link: 'https://www.notion.so/Feb-2022-London-7bbb8355d70342d087d2f8e7cf43effc'
     },
@@ -154,7 +154,7 @@ const train = {
 
         // middle
         card.append(travelWidget.middle({
-            icon: iconData.plane,
+            icon: SFSymbols.tram.fill,
             city: train.arr.city,
             style: train.line.style,
         }))
