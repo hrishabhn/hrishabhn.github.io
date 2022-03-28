@@ -467,7 +467,7 @@ const allMovies = {
             },
             title: {
                 type: 'png',
-                size: 'wide',
+                size: 'widest',
             },
             mobileType: 'jpg',
             mobileSize: '7 / 10',
@@ -6266,7 +6266,7 @@ const allMovies = {
             },
             title: {
                 type: 'png',
-                size: 'wide',
+                size: 'widest',
             },
         },
         apps: {
@@ -6299,12 +6299,13 @@ const allMovies = {
                 mobile: {
                     type: 'jpg',
                     size: '7 / 10',
+                    title: true,
                 },
             },
-            // title: {
-            //     type: 'png',
-            //     size: 'wide',
-            // },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
         },
         apps: {
             reelgoodLink: 'https://reelgood.com/movie/vir-das-abroad-understanding-2017',
