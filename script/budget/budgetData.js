@@ -100,4 +100,8 @@ let budgetData = [
     { "amount": 19.5, "name": "Bule Bule", "category": "Drinks", "date": "2022-03-26T23:59:00+01:00" },
     { "amount": 25.2, "name": "Lunch", "category": "Food", "date": "2022-03-27T16:16:00+01:00" },
 
+    { "amount": 1.1, "name": "Breakfast", "category": "Food", "date": "2022-03-28T11:27:00+02:00" },
+    { "amount": 9.95, "name": "Stick", "category": "Drinks", "date": "2022-03-28T15:07:00+02:00" },
+    { "amount": 6.5, "name": "Dinner", "category": "Food", "date": "2022-03-28T23:11:00+02:00" },
+    { "amount": 2, "name": "2", "category": "Drinks", "date": "2022-03-28T23:49:53+02:00" },
 ]
