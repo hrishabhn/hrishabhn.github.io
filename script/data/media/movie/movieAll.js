@@ -6276,6 +6276,41 @@ const allMovies = {
             // subReddit: 'subreddit',
         },
     },
+    'virAbroad': {
+        name: 'Vir Das: Abroad Understanding',
+        id: 'virAbroad',
+        link: {
+            netflix: '80133552'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            year: 2017,
+            genre: [
+                'comedy special',
+            ],
+            summary: "Comedian Vir Das tackles nationalism, globalism, good food and bad politics in two cleverly crosscut performances in New York and New Delhi.",
+        },
+        style: {
+            color: '9b732e',
+            poster: {
+                wideType: 'jpg',
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                },
+            },
+            // title: {
+            //     type: 'png',
+            //     size: 'wide',
+            // },
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/vir-das-abroad-understanding-2017',
+            imdbID: 'tt6822400',
+        },
+    },
 }
 // @new
 // 'identifier': {
@@ -6372,7 +6407,7 @@ const processDesc = {
 
 for (const key in allMovies) {
     const movie = allMovies[key]
-    
+
     // process link
     if (movie.link) {
         if (movie.link.netflix) movie.link = `https://www.netflix.com/title/${movie.link.netflix}`
