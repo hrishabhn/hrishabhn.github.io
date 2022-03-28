@@ -259,11 +259,9 @@ function removeAllChildNodes(parent) {
 }
 
 
-function processDeviceLink(linkObject) {
-    if (linkObject.mobile) {
-        if ('ontouchstart' in document.documentElement) return linkObject.mobile
-        else return linkObject.desktop
-    } else return linkObject
+function processDeviceLink(link) {
+    if (('ontouchstart' in document.documentElement) && link.mobile) return link.mobile
+    else return link.desktop
 }
 
 function capitalizeFirstLetter(str) { return str.charAt(0).toUpperCase() + str.slice(1) }

@@ -9,7 +9,7 @@ const trainlineData = {
             icon: null,
         },
         link: {
-            mobile: 'renfe://',
+            // mobile: 'renfe://',
             desktop: 'https://www.renfe.com/es/en',
         },
     },
@@ -23,7 +23,7 @@ const trainlineData = {
             icon: null,
         },
         link: {
-            mobile: 'ouigo://',
+            // mobile: 'ouigo://',
             desktop: 'https://www.renfe.com/es/en',
         },
     },
@@ -103,7 +103,7 @@ const train = {
             {
                 icon: SFSymbols.app.dashed,
                 text: 'App',
-                // link: processDeviceLink(flight.airline.link),
+                link: processDeviceLink(train.line.link),
             },
             {
                 icon: SFSymbols.arrow.triangle.circlepath,
