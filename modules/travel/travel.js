@@ -1,7 +1,14 @@
 const travelCard = {
-    header: function (logo, name, desc) {
+    header: function ({ logo, name, desc }) {
         let header = elems.header()
-        if (logo) header.append(elems.icon(logo))
+        if (logo) {
+            if (logo.icon) header.append(elems.icon(logo.icon))
+            if (logo.text) {
+                let icon = elems.icon(logo.text)
+                icon.classList.add('wide')
+                header.append(icon)
+            }
+        }
         header.append(elems.textbox(name, desc))
         return header
     },

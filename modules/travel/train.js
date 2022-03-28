@@ -128,8 +128,11 @@ const train = {
             elems.spacer(8),
         ]
 
-
-        card.append(travelCard.header(train.line.logo.icon, subtext, `${train.dep.city} to ${train.arr.city}`))
+        card.append(travelCard.header({
+            logo: train.line.logo,
+            name: subtext,
+            desc: `${train.dep.city} to ${train.arr.city}`
+        }))
         card.append(travelCard.actionTray(trayData))
         card.append(elems.hline())
         for (const node of nodes) card.append(node)

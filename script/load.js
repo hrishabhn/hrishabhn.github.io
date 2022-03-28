@@ -18,8 +18,9 @@ function loadApp() {
     // modal.add(workoutCard())
     // allMovies['silicon'].detail()
     // castJSONStr(0,0)
-    // travel.trip.data.tenerife.detail()
-    // travel.flight.data['mad-tfs'].detail()
+    // trip.data.tenerife.detail()
+    // flight.data['mad-tfs'].detail()
+    // train.data['mad-bcn'].detail()
 }
 
 function paramsLoad() {

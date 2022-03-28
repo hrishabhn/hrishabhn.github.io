@@ -432,7 +432,11 @@ const flight = {
             elems.spacer(8),
         ]
 
-        card.append(travelCard.header(flight.airline.logo.icon, subtext, `${flight.dep.city} to ${flight.arr.city}`))
+        card.append(travelCard.header({
+            logo: flight.airline.logo,
+            name: subtext,
+            desc: `${flight.dep.city} to ${flight.arr.city}`
+        }))
         card.append(travelCard.actionTray(trayData))
         card.append(elems.hline())
         for (const node of nodes) card.append(node)

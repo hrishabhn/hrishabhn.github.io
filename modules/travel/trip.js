@@ -44,7 +44,11 @@ const trip = {
         ]
 
         card.append(elems.thumb(trip.thumb))
-        card.append(travelCard.header(null, `${trip.desc} &#149 ${startText}`, trip.name))
+        card.append(travelCard.header({
+            logo: null,
+            name: `${trip.desc} &#149 ${startText}`,
+            desc: trip.name,
+        }))
         card.append(travelCard.actionTray(trayData))
         card.append(elems.hline())
 

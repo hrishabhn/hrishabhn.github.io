@@ -20,6 +20,11 @@
     width: 50px;
     margin-right: 10px;
 }
+.travel-card .header .icon.wide {
+    height: 50px;
+    width: 80px;
+    margin-right: 10px;
+}
 
 .travel-card .header .textbox {
     flex-direction: column;
