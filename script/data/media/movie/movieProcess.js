@@ -39,6 +39,9 @@ const movies = {
         'himym': 'How I Met Your Mother',
         'mcu': 'Marvel Cinematic Universe',
         'standup': 'Stand Up',
+        'bond': 'James Bond',
+        'romcom': 'Romantic Comedy',
+        'disney': 'Disney',
     },
 }
 

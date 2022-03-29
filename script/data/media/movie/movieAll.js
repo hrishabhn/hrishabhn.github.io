@@ -5015,6 +5015,9 @@ const allMovies = {
                 'sci-fi',
             ],
             summary: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+            tags: [
+                'disney',
+            ]
         },
         style: {
             color: '232055',
@@ -5223,6 +5226,9 @@ const allMovies = {
                 'cars',
             ],
             summary: "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international espionage.",
+            tags: [
+                'disney',
+            ]
         },
         style: {
             color: '1E374D',
@@ -5257,6 +5263,9 @@ const allMovies = {
                 'cars',
             ],
             summary: "Race car Lightning McQueen is living in the fast lane...until he hits a detour and gets stranded in Radiator Springs, a forgotten town on Route 66. There he meets a heap of hilarious characters who help him discover there's more to life than fame.",
+            tags: [
+                'disney',
+            ]
         },
         style: {
             color: '1E374D',
@@ -5536,6 +5545,9 @@ const allMovies = {
                 'comedy',
             ],
             summary: "Jamie Foxx leads an all-star cast in this hilarious, heart-filled adventure. Pixar’s 'Soul' introduces Joe, who lands the gig of his life at the best jazz club in town. But one misstep lands Joe in a fantastical place: The Great Before. There, he teams up with soul 22 (Tina Fey), and together they find the answers to some of life’s biggest questions.",
+            tags: [
+                'disney',
+            ]
         },
         style: {
             color: '232e43',
@@ -5639,6 +5651,9 @@ const allMovies = {
                 'romance',
             ],
             summary: "An American-born Chinese economics professor accompanies her boyfriend to Singapore for his best friend's wedding, only to get thrust into the lives of Asia's rich and famous.",
+            tags: [
+                'romcom',
+            ]
         },
         style: {
             color: '76665b',
@@ -5735,6 +5750,9 @@ const allMovies = {
             location: 'Netflix',
             description: 'Drama &#149 Romance &#149 2011',
             summary: "Three friends on an adventurous road trip/bachelor party in Spain learn some lessons about themselves and each other that will change them forever.",
+            tags: [
+                'romcom',
+            ]
         },
         style: {
             color: '313B47',
@@ -5767,6 +5785,9 @@ const allMovies = {
             // date: '',
             description: 'Action &#149 Spy &#149 2021',
             summary: 'James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.',
+            tags: [
+                'bond',
+            ]
         },
         style: {
             color: '3c4749',
