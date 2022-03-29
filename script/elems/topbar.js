@@ -22,22 +22,22 @@ const topbar = {
             },
             {
                 name: 'Calendar',
-                trigger: function (e) { modal.add(widgetCal(), e) },
+                trigger: function (e) { modal.topbar(widgetCal(), e) },
                 icon: SFSymbols.calendar,
             },
             {
                 name: 'Idea',
-                trigger: function (e) { modal.add(widgetIdeas(), e) },
+                trigger: function (e) { modal.topbar(widgetIdeas(), e) },
                 icon: SFSymbols.lightbulb.fill,
             },
             {
                 name: 'Morning Habits',
-                trigger: function (e) { modal.add(widgets.routine.card('morning'), e) },
+                trigger: function (e) { modal.topbar(widgets.routine.card('morning'), e) },
                 icon: SFSymbols.sunrise.fill,
             },
             {
                 name: 'Night Habits',
-                trigger: function (e) { modal.add(widgets.routine.card('night'), e) },
+                trigger: function (e) { modal.topbar(widgets.routine.card('night'), e) },
                 icon: SFSymbols.sunset.fill,
             },
 
