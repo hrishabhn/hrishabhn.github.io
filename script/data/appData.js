@@ -392,6 +392,14 @@ const appData = {
             distract: true,
         },
         {
+            name: 'CNN+',
+            link: 'https://plus.cnn.com/plus',
+            desc: 'Watch',
+            thumb: 'cnn.jpeg',
+            accent: 'cc0000',
+            distract: true,
+        },
+        {
             name: 'Hulu',
             link: 'https://hulu.com',
             desc: 'Watch',

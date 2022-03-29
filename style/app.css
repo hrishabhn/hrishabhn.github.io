@@ -75,6 +75,7 @@
 /* small */
 .app-card.small {
     min-width: 110px;
+    padding: 10px 8px;
 }
 .app-card.small .thumb{
     width: 35px;
