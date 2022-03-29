@@ -143,5 +143,6 @@ const actors = {
         'Anne Hathaway': 'https://m.media-amazon.com/images/M/MV5BMTRhNzQ3NGMtZmQ1Mi00ZTViLTk3OTgtOTk0YzE2YTgwMmFjXkEyXkFqcGdeQXVyNzg5MzIyOA@@._V1_.jpg',
         'Jodie Comer': 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Jodie_Comer_during_an_interview%2C_August_2021_%28cropped%29.png',
         'Sandra Oh': 'https://m.media-amazon.com/images/M/MV5BMTMyNzYyNDE4MV5BMl5BanBnXkFtZTcwOTkxMDQ2NA@@._V1_.jpg',
+        'Ronny Chieng': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb4_TepzpGcI2seUBE4tgSZY0p5XTl05x9-kSMIrUpCRLQIffB',
     },
 }

@@ -1,6 +1,7 @@
 const soonMovies = [
-    allMovies.atlanta,
     allMovies.abbott,
+    allMovies.atlanta,
+    allMovies.noMercy,
     allMovies.elite,
 ]
 
@@ -8,19 +9,17 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
-            allMovies.noMercy,
-            allMovies.virAbroad,
-            allMovies.joking,
+            allMovies.ronnyDestroy,
+            allMovies.land,
+            allMovies.murdochs,
+            allMovies.sixties,
             allMovies.attack,
-            allMovies.wecrashed,
-            allMovies.severance,
         ],
     },
     {
         name: 'My list',
         data: [
             allMovies.kal,
-            allMovies.snowfall,
             allMovies.ozark,
             allMovies.peaky,
             allMovies.tintin,
@@ -29,6 +28,9 @@ let movieRaw = [
     {
         name: 'Recent',
         data: [
+            allMovies.snowfall,
+            allMovies.wecrashed,
+            allMovies.severance,
             allMovies.drive,
             allMovies.dontLookUp,
             allMovies.cowboy,
@@ -181,6 +183,8 @@ let movieRaw = [
     {
         name: 'Recent Movies',
         data: [
+            allMovies.virAbroad,
+            allMovies.joking,
             allMovies.vir,
             allMovies.cars2,
             allMovies.cars1,

@@ -299,7 +299,7 @@ const allMovies = {
             service: 'hulu',
             // studio: 'abc',
             location: 'Hulu',
-            date: '29 March 2022',
+            date: '30 March 2022',
             seasons: 1,
             yearStart: 2021,
             yearEnd: null,
@@ -5678,6 +5678,10 @@ const allMovies = {
                 actor: 'Jimmy O. Yang',
                 char: 'Bernard Tai',
             },
+            {
+                actor: 'Ronny Chieng',
+                char: 'Eddie Cheng',
+            },
         ],
     },
     'closer': {
@@ -6322,7 +6326,7 @@ const allMovies = {
             service: 'cnn',
             studio: 'cnn',
             location: 'CNN+',
-            // date: '',
+            date: '5 Apr 2022',
             seasons: 1,
             yearStart: 2022,
             yearEnd: null,
@@ -6348,11 +6352,179 @@ const allMovies = {
             },
         },
         apps: {
-            // tvTimeID: 'identifier',
+            tvTimeID: '418233',
             // reelgoodLink: 'link',
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
+    },
+    'land': {
+        name: 'Land of the Giants: Titans of Tech',
+        id: 'land',
+        link: {
+            cnn: '2244411'
+        },
+        info: {
+            service: 'cnn',
+            studio: 'cnn',
+            location: 'CNN+',
+            // date: '31 Mar 2022',
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'documentary',
+                'tech',
+            ],
+            summary: "Inside the meteoric rise of Facebook, Apple, Amazon, Netflix and Google — from their small origins to their current domination of the tech industry.",
+        },
+        style: {
+            color: colorData.fluent.blue10,
+            poster: {
+                wideType: 'jpg',
+                mobile: {
+                    type: 'jpg',
+                    size: '7.5 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
+        },
+        apps: {
+            tvTimeID: '417426',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
+    'murdochs': {
+        name: 'The Murdochs: Empire of Influence',
+        id: 'murdochs',
+        link: {
+            cnn: '2238296'
+        },
+        info: {
+            service: 'cnn',
+            studio: 'cnn',
+            location: 'CNN+',
+            // date: '',
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'documentary',
+                'history',
+            ],
+            summary: "Based on The New York Times' groundbreaking reporting, this series tackles the troubling legacy of media mogul Rupert Murdoch and his family.",
+        },
+        style: {
+            color: '333333',
+            poster: {
+                wideType: 'jpg',
+                mobile: {
+                    type: 'jpg',
+                    size: '7.5 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            imdbID: 'tt18268454',
+            // subReddit: 'subreddit',
+        },
+    },
+    'sixties': {
+        name: 'The Sixties',
+        id: 'sixties',
+        link: {
+            cnn: '2014011'
+        },
+        info: {
+            service: 'cnn',
+            studio: 'cnn',
+            location: 'CNN+',
+            // date: '',
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'documentary',
+                'history',
+            ],
+            summary: "From the space race and Cold War to civil rights and more, this series explores how the 1960s shaped our history.",
+        },
+        style: {
+            color: colorData.fluent.magenta20,
+            poster: {
+                wideType: 'jpg',
+                mobile: {
+                    type: 'jpg',
+                    size: '7.5 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/the-sixties-2014',
+            imdbID: 'tt3268200',
+            // subReddit: 'subreddit',
+        },
+    },
+    'ronnyDestroy': {
+        name: 'Ronny Chieng: Asian Comedian Destroys America!',
+        id: 'ronnyDestroy',
+        link: {
+            netflix: '81070659'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            year: 2019,
+            genre: [
+                'comedy special',
+            ],
+            summary: `Ronny Chieng ("The Daily Show," "Crazy Rich Asians") takes center stage in this stand-up special and riffs on modern American life and more.`,
+        },
+        style: {
+            color: colorData.fluent.cyan30,
+            poster: {
+                wideType: 'webp',
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/ronny-chieng-asian-comedian-destroys-america-2019',
+            imdbID: 'tt11248800',
+        },
+        cast: [
+            {
+                actor: 'Ronny Chieng',
+                char: 'Self',
+            },
+        ],
     },
 }
 // @new

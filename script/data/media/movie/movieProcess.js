@@ -35,6 +35,11 @@ const movies = {
         return results
     },
     searchRow: function (q) { return mediaElems.movie.new.row(this.search(q), 'TV & Movies', 'smart') },
+    tags: {
+        'himym': 'How I Met Your Mother',
+        'mcu': 'Marvel Cinematic Universe',
+        'standup': 'Stand Up',
+    },
 }
 
 
