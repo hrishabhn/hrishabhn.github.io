@@ -21,6 +21,7 @@ function loadApp() {
     // trip.data.tenerife.detail()
     // flight.data['mad-tfs'].detail()
     // train.data['mad-bcn'].detail()
+    actorRepeat()
 }
 
 function paramsLoad() {
@@ -59,4 +60,13 @@ function castJSONStr(key) {
     }
 
     console.log(str)
+}
+
+function actorRepeat() {
+    let all = {}
+    for (const key in allMovies) if (allMovies[key].cast) for (const member of allMovies[key].cast) {
+        if (!all[member.actor]) all[member.actor] = 1
+        else all[member.actor]++
+    }
+    for (const actor in all) if (all[actor] > 1) if (!actors.data[actor]) console.log(actor)
 }

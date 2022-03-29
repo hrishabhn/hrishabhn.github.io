@@ -6562,6 +6562,64 @@ const allMovies = {
             },
         ],
     },
+    '112263': {
+        name: '11.22.63',
+        id: '112263',
+        link: 'https://www.hulu.com/series/112263-8924769b-be48-49c9-a969-984a30a3a33e',
+        info: {
+            service: 'hulu',
+            studio: 'hulu',
+            location: 'Hulu',
+            // date: '',
+            seasons: 1,
+            year: 2016,
+            genre: [
+                'drama',
+                'history',
+            ],
+            summary: `Imagine having the power to change history. Would you journey down the "rabbit hole?" This eight –part event series follows Jake Epping (James Franco), an ordinary high school teacher, presented with the unthinkable mission of traveling back in time to prevent the assassination of John F. Kennedy on November 22, 1963. Jake travels to the past in order to solve the most enduring mystery of the 20th century: who killed JFK, and could it have been stopped? But as Jake will learn, the past does not want to be changed. And trying to divert the course of history may prove fatal.`,
+        },
+        style: {
+            color: colorData.fluent.red,
+            color: 'e6c8a0',
+            poster: {
+                wideType: 'webp',
+                mobile: {
+                    type: 'jpeg',
+                    size: '2 / 3',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/112263-2016',
+            imdbID: 'tt2879552',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'James Franco',
+                char: 'Jake Epping',
+            },
+            {
+                actor: 'Sarah Gadon',
+                char: 'Sadie Dunhill',
+            },
+            {
+                actor: 'George MacKay',
+                char: 'Bill Turcotte',
+            },
+            {
+                actor: 'Chris Cooper',
+                char: 'Al Templeton',
+            },
+        ],
+    },
 }
 // @new
 // 'identifier': {
