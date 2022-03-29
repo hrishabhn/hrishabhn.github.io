@@ -9,6 +9,7 @@ const routine = {
             { name: 'Accounting', },
             { name: 'Dry Clothes', },
             { name: 'Clean Up Room', },
+            { name: 'Kitchen', },
             { name: 'Prepare for Tomorrow', },
             { name: 'Self Care', },
         ],

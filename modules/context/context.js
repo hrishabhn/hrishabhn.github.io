@@ -46,7 +46,7 @@ const context = {
 
         }
         menu.lastChild.remove()
-        absolutePos(menu, e)
+        absolutePos(menu, e.pageX, e.pageY)
 
         let container = document.getElementById('context-modal')
         container.classList = 'show'
@@ -57,11 +57,8 @@ const context = {
     },
 }
 
-function absolutePos(elem, e) {
+function absolutePos(elem, x, y) {
     elem.style.setProperty('position', 'absolute')
-
-    var x = e.pageX
-    var y = e.pageY
 
     if (y < 60) y = 60
 
