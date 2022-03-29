@@ -3148,7 +3148,7 @@ const allMovies = {
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            date: '30 March, 2022',
+            date: '1 Apr, 2022',
             seasons: 3,
             yearStart: 2016,
             yearEnd: null,
@@ -6312,6 +6312,48 @@ const allMovies = {
             imdbID: 'tt6822400',
         },
     },
+    'noMercy': {
+        name: 'No Mercy No Malice',
+        id: 'noMercy',
+        link: {
+            cnn: '2367872'
+        },
+        info: {
+            service: 'cnn',
+            studio: 'cnn',
+            location: 'CNN+',
+            // date: '',
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'business',
+                'news',
+            ],
+            summary: "Serial entrepreneur and NYU professor Scott Galloway brings his unapologetic take on how the worlds of business, tech and society intersect.",
+        },
+        style: {
+            color: 'ccc',
+            poster: {
+                wideType: 'jpg',
+                mobile: {
+                    type: 'jpg',
+                    size: '7.5 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+    },
 }
 // @new
 // 'identifier': {
@@ -6347,7 +6389,7 @@ const allMovies = {
 //         },
 //         title: {
 //             type: 'png',
-//             size: 'wide',
+//             size: 'widest',
 //         },
 //     },
 //     apps: {
@@ -6413,6 +6455,7 @@ for (const key in allMovies) {
     if (movie.link) {
         if (movie.link.netflix) movie.link = `https://www.netflix.com/title/${movie.link.netflix}`
         else if (movie.link.primeVideo) movie.link = `primevideo://detail?asin=${movie.link.primeVideo}` //`https://watch.amazon.com/detail?asin=${movie.link.primeVideo}`
+        else if (movie.link.cnn) movie.link = `https://plus.cnn.com/plus/title-${movie.link.cnn}` //`https://watch.amazon.com/detail?asin=${movie.link.primeVideo}`
     }
 
     // process info
