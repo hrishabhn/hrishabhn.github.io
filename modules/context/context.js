@@ -25,7 +25,7 @@ const context = {
 
         return elem
     },
-    show: function (data, e) {
+    show: function (data, e, target) {
         // console.log(data)
         let menu = document.getElementById('context-menu')
         removeAllChildNodes(menu)
@@ -81,8 +81,10 @@ function absolutePos(elem, x, y) {
         // elem.style.removeProperty('top')
         elem.style.setProperty('bottom', '10px')
     }
+    elem.style.removeProperty('transform-origin')
     if (overflowX) {
         elem.style.removeProperty('left')
         elem.style.setProperty('right', '10px')
+        elem.style.setProperty('transform-origin', 'top right')
     }
 }
