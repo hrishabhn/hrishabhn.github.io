@@ -1,7 +1,4 @@
 let events_all = [
-{"location":"","end":"2022-03-29T00:00:00+02:00","start":"2022-03-28T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 9"},
-{"location":"10.2.11","end":"2022-03-28T14:00:00+02:00","start":"2022-03-28T12:30:00+02:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
-{"location":"6.1.06","end":"2022-03-28T16:00:00+02:00","start":"2022-03-28T14:30:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
 {"location":"2.3.D04","end":"2022-03-29T11:00:00+02:00","start":"2022-03-29T09:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
 {"location":"2.3.B03","end":"2022-03-29T17:00:00+02:00","start":"2022-03-29T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Engineering Management"},
 {"location":"","end":"2022-03-31T00:00:00+02:00","start":"2022-03-30T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/0B1CAEF8-3D45-4A52-8086-0D82504990E0:ABPerson","name":"Ryan Clapp’s Birthday"},
@@ -19,4 +16,7 @@ let events_all = [
 {"location":"","end":"2022-04-06T00:00:00+02:00","start":"2022-04-05T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Public Holidays","link":"","name":"Ching Ming Festival"},
 {"location":"2.3.D04","end":"2022-04-05T11:00:00+02:00","start":"2022-04-05T09:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
 {"location":"2.3.B03","end":"2022-04-05T17:00:00+02:00","start":"2022-04-05T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Engineering Management"},
+{"location":"","end":"2022-04-07T00:00:00+02:00","start":"2022-04-06T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Industrial Organisation Exam 2"},
+{"location":"6.1.03","end":"2022-04-06T17:45:00+02:00","start":"2022-04-06T16:15:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
+{"location":"","end":"2022-04-08T00:00:00+02:00","start":"2022-04-07T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Financial Economics Exam 2"},
 ]
