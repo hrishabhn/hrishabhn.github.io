@@ -79,8 +79,32 @@ function tvDetail(key) {
     card.append(info)
     card.append(elems.grow())
 
-    // cast
-    if (movie.cast) card.append(tvDetailCast(key))
+    if (movie.cast || movie.info.tags) {
+        let more = document.createElement('div')
+        more.classList = 'vstack fill-width grow layer-0 primary-fg'
+
+        // cast
+        if (movie.cast) {
+            more.append(searchActorsRow(movie.cast))
+            more.append(elems.hline())
+        }
+
+        // suggest
+        if (movie.info.tags) for (const mainTag of movie.info.tags) {
+            let results = []
+            for (const tray of movieData) for (item of tray)
+                if (item.info.tags) for (const tag of item.info.tags)
+                    if ((tag == mainTag) && (item.id != key)) results.push(item.id)
+            more.append(mediaElems.movie.new.row(results, `More in ${movies.tags[mainTag]}`, 'small'))
+            more.append(elems.hline())
+        }
+
+        more.lastChild.remove()
+
+        card.append(more)
+    }
+
+
 
     let close = elems.a(iconData.close, null)
     close.classList = 'close-tv-modal clickable-o'
@@ -171,26 +195,6 @@ function tvDetailApps(key) {
     ))
 
     return trayWithKids(nodes, 8)
-}
-
-function tvDetailCast(key) {
-    const movie = allMovies[key]
-
-    let cast = document.createElement('div')
-    cast.classList = 'cast layer-0 primary-fg'
-
-    cast.append(elems.title('Cast'))
-
-    let nodes = []
-    for (const data of movie.cast) nodes.push(actorCard(data.actor, data.char))
-
-    let tray = trayWithKids(nodes, 20)
-    tray.classList = 'cast-tray'
-
-    cast.append(tray)
-    cast.append(elems.grow())
-
-    return cast
 }
 
 function actorCard(actor, char) {

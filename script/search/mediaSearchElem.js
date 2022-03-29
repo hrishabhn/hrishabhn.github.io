@@ -240,10 +240,10 @@ function mediaDetailCard(thumb, genre, name, summary) {
 }
 
 // actor
-function searchActorsRow(results) {
-    let row = rowBase('Actors')
+function searchActorsRow(results, title) {
+    let row = rowBase(title ?? 'Actors')
     let nodes = []
-    for (const actor of results) nodes.push(actorCard(actor, null))
+    for (const item of results) nodes.push(actorCard(item.actor, item.char))
     row.append(trayWithKids(nodes, 20))
     return row
 }

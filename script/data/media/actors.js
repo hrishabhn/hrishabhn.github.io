@@ -1,8 +1,17 @@
 const actors = {
     search: function (q) {
         let results = []
-        for (const tray of movieData) for (const movie of tray) if (movie.cast)
-            for (const actor of movie.cast) if (actor.actor.toUpperCase().includes(q)) if (!results.includes(actor.actor)) results.push(actor.actor)
+        for (const tray of movieData) for (const movie of tray) if (movie.cast) for (const actor of movie.cast)
+            // if actor exists in some cast
+            if (actor.actor.toUpperCase().includes(q)) {
+                // check if already there
+                let already = false
+                for (const result of results)
+                    if (JSON.stringify(result) == JSON.stringify({ actor: actor.actor }))
+                        already = true
+                if (!already) results.push({ actor: actor.actor })
+            }
+        // if (!results.includes(actor))
         return results
     },
     searchRow: function (q) {
