@@ -4,6 +4,8 @@ let events_all = [
 {"location":"","end":"2022-03-30T00:00:00+02:00","start":"2022-03-29T22:45:00+02:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Financial Economics Study"},
 {"location":"","end":"2022-03-31T00:00:00+02:00","start":"2022-03-30T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/BFE4BABB-8DB4-4718-8562-C34E834B7F76:ABPerson","name":"Rajesh Nadkarni’s 55th Birthday"},
 {"location":"","end":"2022-03-31T00:00:00+02:00","start":"2022-03-30T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/0B1CAEF8-3D45-4A52-8086-0D82504990E0:ABPerson","name":"Ryan Clapp’s Birthday"},
+{"location":"","end":"2022-03-30T12:00:00+02:00","start":"2022-03-30T11:00:00+02:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Gym"},
+{"location":"","end":"2022-03-30T14:45:00+02:00","start":"2022-03-30T13:45:00+02:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Financial Economics Study"},
 {"location":"6.1.03","end":"2022-03-30T17:45:00+02:00","start":"2022-03-30T16:15:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
 {"location":"Madrid Atocha","end":"2022-03-31T08:50:00+02:00","start":"2022-03-31T06:20:00+02:00","allDay":"No","notes":"Booking reference YWB47V\n\nManage my booking https:\/\/www.thetrainline.com\/en\/my-account\/login?redirectTo=%2Fen%2Fmy-account%2Fbookings\n\n\n","calendar":"Travel","link":"","name":"Madrid Atocha → Barcelona Sants [765364682234]"},
 {"location":"10.1.7","end":"2022-03-31T14:00:00+02:00","start":"2022-03-31T12:30:00+02:00","allDay":"No","notes":"Economía Financiera, grp. 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
@@ -17,6 +19,4 @@ let events_all = [
 {"location":"","end":"2022-04-06T00:00:00+02:00","start":"2022-04-05T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Public Holidays","link":"","name":"Ching Ming Festival"},
 {"location":"2.3.D04","end":"2022-04-05T11:00:00+02:00","start":"2022-04-05T09:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
 {"location":"2.3.B03","end":"2022-04-05T17:00:00+02:00","start":"2022-04-05T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Engineering Management"},
-{"location":"","end":"2022-04-07T00:00:00+02:00","start":"2022-04-06T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Industrial Organisation Exam 2"},
-{"location":"6.1.03","end":"2022-04-06T17:45:00+02:00","start":"2022-04-06T16:15:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
 ]

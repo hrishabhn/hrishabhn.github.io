@@ -18,6 +18,7 @@ const modal = {
         if (this.index == 0) this.elem.classList.remove('hide')
         this.index++
 
+        setTimeout(() => { layer.classList.remove('preload') }, 0);
     },
     topbar: function (card, e) {
         var target = e.target
