@@ -4,6 +4,8 @@ const podRaw = [
         data: [
             allPods.decoder,
             allPods.vergecast,
+            allPods.waveform,
+            allPods.lex,
         ],
     },
     {
@@ -20,15 +22,9 @@ const podRaw = [
         ],
     },
     {
-        name: 'Technology',
-        data: [
-            allPods.waveform,
-            allPods.lex,
-        ],
-    },
-    {
         name: 'Stories',
         data: [
+            allPods.colinSamir,
             allPods.acquired,
             allPods.giants,
         ],

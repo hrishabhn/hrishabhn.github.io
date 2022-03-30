@@ -115,6 +115,14 @@ const allPods = {
         "applePod": "1513774818",
         "author": "Poetic Cantonese",
         "coverType": "jpeg"
+    },
+    "colinSamir": {
+        "name": "The Colin and Samir Show",
+        "id": "colinSamir",
+        "applePod": "1379942034",
+        "youtube": "ColinandSamir",
+        "author": "Colin and Samir",
+        "coverType": "png"
     }
 }
 

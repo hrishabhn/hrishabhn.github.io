@@ -109,7 +109,6 @@ let focusData = [
                     pods.data[1].elem,
                     pods.data[2].elem,
                     pods.data[3].elem,
-                    pods.data[4].elem,
                 ]
             },
         },
