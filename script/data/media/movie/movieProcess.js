@@ -26,7 +26,7 @@ const movies = {
             let cast = false
             let tags = false
 
-            if (movie.cast) for (const actor of movie.cast) if ((actor.actor.toUpperCase().includes(q)) || (actor.char.toUpperCase().includes(q))) cast = true
+            if (movie.cast) for (const actor of movie.cast) if ((actor.actor.toUpperCase().includes(q)) || (actor.char ? actor.char.toUpperCase().includes(q) : false)) cast = true
             if (movie.info.tags) for (const tag of movie.info.tags) if (tag.toUpperCase().includes(q)) tags = true
 
             if ((name || cast || tags) && !results.includes(movie.id)) results.push(movie.id)
