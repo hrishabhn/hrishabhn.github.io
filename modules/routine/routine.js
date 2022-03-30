@@ -27,6 +27,18 @@ const routine = {
         card.classList.add('routine')
         card.append(elems.title('Habits'))
 
+
+        let icon = elems.icon(SFSymbols.arrow.triangle.circlepath)
+        icon.classList = 'top-icon'
+        icon.onclick = function () {
+            removeCookie('routine')
+            location.reload()
+        }
+        icon.style.setProperty('cursor', 'pointer')
+        icon.classList.add('clickable-b')
+        card.append(icon)
+
+
         let data = routine.data()
 
         for (const task of data[key]) {
