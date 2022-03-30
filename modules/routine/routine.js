@@ -38,7 +38,6 @@ const routine = {
         icon.classList.add('clickable-b')
         card.append(icon)
 
-
         let data = routine.data()
 
         for (const task of data[key]) {
