@@ -20,7 +20,10 @@ const allMovies = {
         style: {
             color: 'D4584B',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -98,7 +101,10 @@ const allMovies = {
         style: {
             color: '3d250f',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -163,7 +169,10 @@ const allMovies = {
         style: {
             color: '493c35',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -200,7 +209,10 @@ const allMovies = {
         style: {
             color: colorData['fluent'].cyanBlue20,
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -237,7 +249,10 @@ const allMovies = {
         style: {
             color: colorData.fluent.gray20,
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'webp',
@@ -311,7 +326,10 @@ const allMovies = {
         style: {
             color: 'e6c8a0',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -376,7 +394,10 @@ const allMovies = {
         style: {
             color: colorData.fluent.cyan30,
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'webp',
@@ -426,7 +447,10 @@ const allMovies = {
         style: {
             color: '4d5372',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -463,7 +487,10 @@ const allMovies = {
         style: {
             color: 'a98264',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -502,7 +529,10 @@ const allMovies = {
         style: {
             color: colorData['fluent'].red,
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -587,7 +617,10 @@ const allMovies = {
         style: {
             color: '660000',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -647,7 +680,10 @@ const allMovies = {
         style: {
             color: '4e432e',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -687,7 +723,10 @@ const allMovies = {
         style: {
             color: '3f1513',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -727,7 +766,10 @@ const allMovies = {
         style: {
             color: '4b718b',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -762,7 +804,10 @@ const allMovies = {
         style: {
             color: '3d3554',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -799,7 +844,10 @@ const allMovies = {
         style: {
             color: '994d33',
             poster: {
-                wideType: 'jpeg',
+                wide: {
+                    type: 'jpeg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -839,7 +887,10 @@ const allMovies = {
         style: {
             color: '667a88',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'svg',
@@ -876,7 +927,10 @@ const allMovies = {
         style: {
             color: colorData.fluent.cyan30,
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -915,7 +969,10 @@ const allMovies = {
         style: {
             color: '645542',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -945,7 +1002,10 @@ const allMovies = {
         style: {
             color: '3d250f',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -979,7 +1039,10 @@ const allMovies = {
         style: {
             color: '6f897e',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1010,7 +1073,10 @@ const allMovies = {
         style: {
             color: 'a5a39e',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1040,7 +1106,10 @@ const allMovies = {
         style: {
             color: '747a71',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1079,7 +1148,10 @@ const allMovies = {
         style: {
             color: '313C82',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1110,7 +1182,10 @@ const allMovies = {
         style: {
             color: '6c4e44',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1140,7 +1215,10 @@ const allMovies = {
         style: {
             color: '484b51',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1179,7 +1257,10 @@ const allMovies = {
         style: {
             color: '000000',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1223,7 +1304,10 @@ const allMovies = {
             color: '000000',
             color: colorData['fluent'].red,
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1304,7 +1388,10 @@ const allMovies = {
         style: {
             color: colorData.fluent.red,
             poster: {
-                wideType: 'png',
+                wide: {
+                    type: 'png',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1384,7 +1471,10 @@ const allMovies = {
         style: {
             color: '7d7e42',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             // titleType: 'png',
             // titleSize: 'widest',
@@ -1421,7 +1511,10 @@ const allMovies = {
         style: {
             color: '5b4f43',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1460,7 +1553,10 @@ const allMovies = {
         style: {
             color: '66472A',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1519,7 +1615,10 @@ const allMovies = {
         style: {
             color: '757077',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1555,7 +1654,10 @@ const allMovies = {
         style: {
             color: '86a097',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'svg',
@@ -1591,7 +1693,10 @@ const allMovies = {
         style: {
             color: '443a3c',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1629,7 +1734,10 @@ const allMovies = {
         style: {
             color: '994d33',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1665,7 +1773,10 @@ const allMovies = {
         style: {
             color: '0b276d',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1701,7 +1812,10 @@ const allMovies = {
         style: {
             color: '6c737a',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1747,7 +1861,10 @@ const allMovies = {
         style: {
             color: '7f6b57',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1775,7 +1892,10 @@ const allMovies = {
         style: {
             color: '262841',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1812,7 +1932,10 @@ const allMovies = {
         style: {
             color: 'b11016',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'svg',
@@ -1844,7 +1967,10 @@ const allMovies = {
         style: {
             color: '838383',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'svg',
@@ -1881,7 +2007,10 @@ const allMovies = {
         style: {
             color: '4f6368',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1918,7 +2047,10 @@ const allMovies = {
         style: {
             color: '2c2433',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'jpeg',
@@ -1958,7 +2090,10 @@ const allMovies = {
         style: {
             color: '682008',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -1995,7 +2130,10 @@ const allMovies = {
         style: {
             color: '515d63',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2027,7 +2165,10 @@ const allMovies = {
         style: {
             color: '813a2a',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2055,7 +2196,10 @@ const allMovies = {
         style: {
             color: '3e587a',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2085,7 +2229,10 @@ const allMovies = {
         style: {
             color: '3f3a2d',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2117,7 +2264,10 @@ const allMovies = {
         style: {
             color: '7a726b',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2145,7 +2295,10 @@ const allMovies = {
         style: {
             color: '5D080D',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2181,7 +2334,10 @@ const allMovies = {
         style: {
             color: '8f7d4b',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2220,7 +2376,10 @@ const allMovies = {
         style: {
             color: 'dedccc',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2255,7 +2414,10 @@ const allMovies = {
         style: {
             color: '513d35',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2306,7 +2468,10 @@ const allMovies = {
         style: {
             color: '994d33',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2375,7 +2540,10 @@ const allMovies = {
         style: {
             color: '444743',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2414,7 +2582,10 @@ const allMovies = {
         style: {
             color: '5980C4',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2461,7 +2632,10 @@ const allMovies = {
         style: {
             color: 'A14533',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2499,7 +2673,10 @@ const allMovies = {
         style: {
             color: '337799',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2561,7 +2738,10 @@ const allMovies = {
         style: {
             color: 'ea80ff',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2600,7 +2780,10 @@ const allMovies = {
         style: {
             color: '655b3f',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2651,7 +2834,10 @@ const allMovies = {
         style: {
             color: '3B347A',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2706,7 +2892,10 @@ const allMovies = {
         style: {
             color: '339999',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2744,7 +2933,10 @@ const allMovies = {
         style: {
             color: '0B6F38',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'svg',
@@ -2779,7 +2971,10 @@ const allMovies = {
         style: {
             color: '70655B',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'webp',
@@ -2816,7 +3011,10 @@ const allMovies = {
         style: {
             color: '685467',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'svg',
@@ -2851,7 +3049,10 @@ const allMovies = {
         style: {
             color: '6f4c2d',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2890,7 +3091,10 @@ const allMovies = {
         style: {
             color: 'a6886c',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2929,7 +3133,10 @@ const allMovies = {
         style: {
             color: '3c2e2c',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2959,7 +3166,10 @@ const allMovies = {
         style: {
             color: '0F0F38',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -2989,7 +3199,10 @@ const allMovies = {
         style: {
             color: '6d6256',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3019,7 +3232,10 @@ const allMovies = {
         style: {
             color: '2C2850',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3049,7 +3265,10 @@ const allMovies = {
         style: {
             color: '889898',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3076,7 +3295,10 @@ const allMovies = {
         style: {
             color: '300',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3098,7 +3320,10 @@ const allMovies = {
         style: {
             color: '0b276d',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3127,7 +3352,10 @@ const allMovies = {
         style: {
             color: 'E25924',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3162,7 +3390,10 @@ const allMovies = {
         style: {
             color: '041f41',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3202,7 +3433,10 @@ const allMovies = {
         style: {
             color: '660000',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3243,7 +3477,10 @@ const allMovies = {
         style: {
             // color: '000000',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3279,7 +3516,10 @@ const allMovies = {
         style: {
             color: '699933',
             poster: {
-                wideType: 'jpeg',
+                wide: {
+                    type: 'jpeg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3338,7 +3578,10 @@ const allMovies = {
         style: {
             color: 'FDC801',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3405,7 +3648,10 @@ const allMovies = {
         style: {
             // color: '000000',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3440,7 +3686,10 @@ const allMovies = {
         style: {
             color: '3B347A',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3495,7 +3744,10 @@ const allMovies = {
         style: {
             color: '615e65',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3534,7 +3786,10 @@ const allMovies = {
         style: {
             color: '1e3d51',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3564,7 +3819,10 @@ const allMovies = {
         style: {
             color: '6C7866',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3604,7 +3862,10 @@ const allMovies = {
         style: {
             color: 'a87643',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3632,7 +3893,10 @@ const allMovies = {
         style: {
             color: '200f17',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3670,7 +3934,10 @@ const allMovies = {
         style: {
             color: '4d627f',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3700,7 +3967,10 @@ const allMovies = {
         style: {
             color: '504A6A',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3728,7 +3998,10 @@ const allMovies = {
         style: {
             color: '2F322F',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3764,7 +4037,10 @@ const allMovies = {
         style: {
             color: '5980C4',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3800,7 +4076,10 @@ const allMovies = {
         style: {
             color: '6b7790',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3836,7 +4115,10 @@ const allMovies = {
         style: {
             color: '292A27',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3875,7 +4157,10 @@ const allMovies = {
         style: {
             // color: '000000',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3913,7 +4198,10 @@ const allMovies = {
         style: {
             color: colorData.fluent['green20'],
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -3959,7 +4247,10 @@ const allMovies = {
         style: {
             color: '2D1D54',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4013,7 +4304,10 @@ const allMovies = {
         style: {
             color: '555962',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4075,7 +4369,10 @@ const allMovies = {
         style: {
             color: '3f1513', // 7C4E31
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4111,7 +4408,10 @@ const allMovies = {
         style: {
             color: '35465e',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4183,7 +4483,10 @@ const allMovies = {
         style: {
             color: '1C2C70',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4243,7 +4546,10 @@ const allMovies = {
         style: {
             color: '994d33',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4280,7 +4586,10 @@ const allMovies = {
         style: {
             color: '0070DB',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4350,7 +4659,10 @@ const allMovies = {
         style: {
             color: '466A83',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4389,7 +4701,10 @@ const allMovies = {
         style: {
             color: '0B6F38',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4458,7 +4773,10 @@ const allMovies = {
         style: {
             color: 'a59c4f',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4532,7 +4850,10 @@ const allMovies = {
         style: {
             color: '003A6E',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4570,7 +4891,10 @@ const allMovies = {
         style: {
             color: '656592',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4606,7 +4930,10 @@ const allMovies = {
         style: {
             color: '4e3e46',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'svg',
@@ -4644,7 +4971,10 @@ const allMovies = {
         style: {
             color: '7E6C64',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'svg',
@@ -4685,7 +5015,10 @@ const allMovies = {
         style: {
             color: colorData.fluent.blue10,
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4755,7 +5088,10 @@ const allMovies = {
         style: {
             color: '754A9E',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4785,7 +5121,10 @@ const allMovies = {
         style: {
             color: '6a5828',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4820,7 +5159,10 @@ const allMovies = {
         style: {
             color: '8b6a4b',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4855,7 +5197,10 @@ const allMovies = {
         style: {
             color: '615c59',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4895,7 +5240,10 @@ const allMovies = {
         style: {
             color: '60B9C6',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'svg',
@@ -4951,7 +5299,10 @@ const allMovies = {
         style: {
             color: '3c2d2a',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -4985,7 +5336,10 @@ const allMovies = {
         style: {
             color: '9a6a45',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5022,7 +5376,10 @@ const allMovies = {
         style: {
             color: '232055',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5057,7 +5414,10 @@ const allMovies = {
         style: {
             color: '6f716b',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5091,7 +5451,10 @@ const allMovies = {
         style: {
             color: '605267',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5125,7 +5488,10 @@ const allMovies = {
         style: {
             color: '372f35',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5160,7 +5526,10 @@ const allMovies = {
         style: {
             color: '94a6ac',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5196,7 +5565,10 @@ const allMovies = {
         style: {
             color: '106888',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5233,7 +5605,10 @@ const allMovies = {
         style: {
             color: '1E374D',
             poster: {
-                wideType: 'jpeg',
+                wide: {
+                    type: 'jpeg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5270,7 +5645,10 @@ const allMovies = {
         style: {
             color: '1E374D',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5306,7 +5684,10 @@ const allMovies = {
         style: {
             color: 'af0000',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5341,7 +5722,10 @@ const allMovies = {
         style: {
             color: '484b53',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5375,7 +5759,10 @@ const allMovies = {
         style: {
             color: '4b6176',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5410,7 +5797,10 @@ const allMovies = {
         style: {
             color: '274223',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5447,7 +5837,10 @@ const allMovies = {
         style: {
             color: '444f52',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5481,7 +5874,10 @@ const allMovies = {
         style: {
             color: '9a6732',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5515,7 +5911,10 @@ const allMovies = {
         style: {
             color: '7e763f',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5552,7 +5951,10 @@ const allMovies = {
         style: {
             color: '232e43',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5587,7 +5989,10 @@ const allMovies = {
         style: {
             color: '5980C4',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5622,7 +6027,10 @@ const allMovies = {
         style: {
             color: '994d33',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5658,7 +6066,10 @@ const allMovies = {
         style: {
             color: '76665b',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5722,7 +6133,10 @@ const allMovies = {
         style: {
             color: '6d223c',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5757,7 +6171,10 @@ const allMovies = {
         style: {
             color: '313B47',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5792,7 +6209,10 @@ const allMovies = {
         style: {
             color: '3c4749',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5822,7 +6242,10 @@ const allMovies = {
         style: {
             color: '599DAA',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5851,7 +6274,10 @@ const allMovies = {
         style: {
             color: '3b2420',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5888,7 +6314,10 @@ const allMovies = {
         style: {
             color: '4b3831',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5922,7 +6351,10 @@ const allMovies = {
         style: {
             color: '55534d',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5956,7 +6388,10 @@ const allMovies = {
         style: {
             color: '1e252c',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -5990,7 +6425,10 @@ const allMovies = {
         style: {
             color: 'F7ECBD',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -6028,7 +6466,10 @@ const allMovies = {
         style: {
             color: '334348',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'webp',
@@ -6056,7 +6497,10 @@ const allMovies = {
         style: {
             color: '768a8e',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -6090,7 +6534,10 @@ const allMovies = {
         style: {
             color: '28374E',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -6128,7 +6575,10 @@ const allMovies = {
         style: {
             color: '9b732e',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -6163,7 +6613,10 @@ const allMovies = {
         style: {
             color: colorData.fluent.red,
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
@@ -6210,7 +6663,10 @@ const allMovies = {
         style: {
             color: '3d250f',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
                 mobile: {
                     type: 'jpeg',
                     size: '7 / 10',
@@ -6250,7 +6706,10 @@ const allMovies = {
         style: {
             color: 'ffffff',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
                 mobile: {
                     type: 'jpg',
                     size: '8 / 10',
@@ -6291,7 +6750,10 @@ const allMovies = {
         style: {
             color: colorData.fluent.blue10,
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
                 mobile: {
                     type: 'webp',
                     size: '7 / 10',
@@ -6332,7 +6794,10 @@ const allMovies = {
         style: {
             color: '9b732e',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
                 mobile: {
                     type: 'jpg',
                     size: '7 / 10',
@@ -6372,7 +6837,10 @@ const allMovies = {
         style: {
             color: 'ccc',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
                 mobile: {
                     type: 'jpg',
                     size: '7.5 / 10',
@@ -6414,7 +6882,10 @@ const allMovies = {
         style: {
             color: colorData.fluent.blue10,
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
                 mobile: {
                     type: 'jpg',
                     size: '7.5 / 10',
@@ -6456,7 +6927,10 @@ const allMovies = {
         style: {
             color: '333333',
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
                 mobile: {
                     type: 'jpg',
                     size: '7.5 / 10',
@@ -6498,7 +6972,10 @@ const allMovies = {
         style: {
             color: colorData.fluent.magenta20,
             poster: {
-                wideType: 'jpg',
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
                 mobile: {
                     type: 'jpg',
                     size: '7.5 / 10',
@@ -6539,7 +7016,10 @@ const allMovies = {
         style: {
             color: colorData.fluent.cyan30,
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
                 mobile: {
                     type: 'jpg',
                     size: '7 / 10',
@@ -6583,7 +7063,10 @@ const allMovies = {
             color: colorData.fluent.red,
             color: 'e6c8a0',
             poster: {
-                wideType: 'webp',
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
                 mobile: {
                     type: 'jpeg',
                     size: '2 / 3',
@@ -6620,6 +7103,55 @@ const allMovies = {
             },
         ],
     },
+    'jimmyGood': {
+        name: 'Jimmy O. Yang: Good Deal',
+        id: 'jimmyGood',
+        link: {
+            primeVideo: 'B08BYYHS61'
+        },
+        info: {
+            service: 'prime',
+            studio: 'prime',
+            location: 'Prime Video',
+            year: 2020,
+            genre: [
+                'comedy special',
+            ],
+            summary: "In his debut standup special, Good Deal, Jimmy will tell you all about his take on Asian representation, how he learned to speak English from rap videos, dating tall women, and pursuing his dreams only to disappoint his old school Chinese parents. From assimilation to representation, Jimmy O. Yang delivers an absolutely hilarious hour of comedy in Good Deal.",
+            tags: [
+                'standup',
+            ]
+        },
+        style: {
+            color: colorData.fluent.cyanBlue20,
+            poster: {
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
+                wide: {
+                    type: 'webp',
+                    title: false,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: false,
+                },
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/movie/jimmy-o-yang-good-deal-2020',
+            imdbID: 'tt11250926',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Jimmy O. Yang',
+            },
+        ],
+    },
 }
 // @new
 // 'identifier': {
@@ -6646,7 +7178,10 @@ const allMovies = {
 //     style: {
 //         color: '000000',
 //         poster: {
-//             wideType: 'webp',
+//             wide: {
+//                 type: 'webp',
+//                 title: true,
+//             },
 //             mobile: {
 //                 type: 'webp',
 //                 size: '7 / 10',
@@ -6671,6 +7206,7 @@ const allMovies = {
 //     //     },
 //     // ],
 // },
+
 
 // schitts creek
 // narcos
@@ -6766,6 +7302,9 @@ for (const key in allMovies) {
             title: true,
         }
     }
+
+    // title
+
 
 
     // show tv detail

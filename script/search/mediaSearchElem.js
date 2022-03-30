@@ -42,7 +42,7 @@ const mediaElems = {
 
                     // thumb
                     let thumb
-                    if (small) thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
+                    if (small) thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`)
                     else if (big) {
                         thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
                         thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
@@ -56,8 +56,11 @@ const mediaElems = {
                     if (small) card.append(thumb)
                     else if (big) card.append(thumbCont)
 
-                    // title
-                    if (!(big && !movie.style.poster.mobile.title)) card.append(movieCardTitle(key))
+                    // title - if not(big AND no mobile title)
+                    if (big) if (!(big && !movie.style.poster.mobile.title))
+                        card.append(movieCardTitle(key))
+                    if (small) if (movie.style.poster.wide.title)
+                        card.append(movieCardTitle(key))
 
                     // textbox
                     if (big) {
@@ -113,7 +116,7 @@ const mediaElems = {
                     }
                     if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
-                    let thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
+                    let thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`)
                     thumb.innerHTML = `<div class="grad"></div>`
                     if (movie.style.title.type) {
                         let title = document.createElement('div')
@@ -336,7 +339,7 @@ function searchBookPodNewRow(results, title, type) {
 
         // // thumb
         // let thumb
-        // if (small) thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`)
+        // if (small) thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`)
         // else if (big) {
         //     thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
         //     thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)

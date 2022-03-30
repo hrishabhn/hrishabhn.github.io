@@ -28,7 +28,7 @@ function tvDetail(key) {
     let wide = document.createElement('div')
     wide.classList = 'fill-width wide-thumb'
 
-    wide.append(elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wideType}`))
+    wide.append(elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`))
     wide.append(elems.grad())
     card.append(wide)
 

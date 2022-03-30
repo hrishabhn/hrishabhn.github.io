@@ -7,7 +7,7 @@ function widgetMedia(data, type) {
         card.style.setProperty('--thumb', `url(../../../media-image/books/${data.id}.${data.coverType})`)
     } else if (type == 'movie') {
         card.classList.add('movie')
-        card.style.setProperty('--thumb', `url(../../../media-image/TV/background/${data.id}.${data.style.poster.wideType})`)
+        card.style.setProperty('--thumb', `url(../../../media-image/TV/background/${data.id}.${data.style.poster.wide.type})`)
     }
 
     let bg = elems.bg()
