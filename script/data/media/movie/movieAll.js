@@ -7123,7 +7123,7 @@ const allMovies = {
             ]
         },
         style: {
-            color: colorData.fluent.cyanBlue20,
+            color: colorData.fluent.cyan30,
             poster: {
                 wide: {
                     type: 'webp',
