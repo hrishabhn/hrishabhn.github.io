@@ -16,7 +16,7 @@ function loadApp() {
     // Testing
     // skipToContent()
     // modal.add(workoutCard())
-    // allMovies['family'].detail()
+    // allMovies['atlanta'].detail()
     // castJSONStr(0,0)
     // trip.data.tenerife.detail()
     // flight.data['mad-tfs'].detail()
