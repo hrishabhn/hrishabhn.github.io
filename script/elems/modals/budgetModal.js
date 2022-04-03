@@ -30,16 +30,12 @@ function budgetModal() {
             min: document.getElementById('budget-modal-Minute').value,
         }
 
-        if (!dateInputs.date.length) {
+        if (!dateInputs.date.length)
             dateInputs.date = new Date().getDate().toString()
-        }
 
-        for (const item in dateInputs) {
-            while (dateInputs[item].length < 2) {
-                console.log(dateInputs[item].length)
-                dateInputs[item] = `0${dateInputs[item]}`
-            }
-        }
+        for (const item in dateInputs) while (dateInputs[item].length < 2)
+            dateInputs[item] = `0${dateInputs[item]}`
+
 
         let data = {
             amount: parseFloat(document.getElementById('budget-modal-Amount').value),
@@ -49,7 +45,6 @@ function budgetModal() {
         }
 
         alert(`${JSON.stringify(data)},`)
-
     }
 
     card.append(create)
