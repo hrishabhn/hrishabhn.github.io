@@ -14,6 +14,7 @@ const tvModal = document.getElementById('tv-modal')
 
 function hideTVDetail() {
     tvModal.classList.remove('open')
+    removeAllChildNodes(tvModal)
 }
 
 function tvDetail(key) {

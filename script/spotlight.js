@@ -295,5 +295,10 @@ function keyPress(e) {
         }
     } else if (e.key == 'Escape') {
         e.preventDefault()
+    } else if (e.key == 'Enter') {
+        if (tvModal.hasChildNodes()) for (const node of tvModal.childNodes[1].childNodes)
+            // info node
+            if (node.classList.contains('info')) for (subnode of node.childNodes) if (subnode.classList.contains('play'))
+                if (subnode.href) window.open(subnode.href, '_blank ')
     }
 }

@@ -3376,7 +3376,7 @@ const allMovies = {
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            date: '1 Apr, 2022',
+            date: '8 Apr, 2022 15:00:00',
             seasons: 3,
             yearStart: 2016,
             yearEnd: null,
@@ -7309,8 +7309,6 @@ for (const key in allMovies) {
 
     // show tv detail
     movie.detail = function () {
-        removeAllChildNodes(tvModal)
-
         let close = document.createElement('a')
         close.classList = 'close'
         close.onclick = function () { hideTVDetail() }
