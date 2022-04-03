@@ -154,5 +154,9 @@ const actors = {
         'Sandra Oh': 'https://m.media-amazon.com/images/M/MV5BMTMyNzYyNDE4MV5BMl5BanBnXkFtZTcwOTkxMDQ2NA@@._V1_.jpg',
         'Ronny Chieng': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb4_TepzpGcI2seUBE4tgSZY0p5XTl05x9-kSMIrUpCRLQIffB',
         'Kumail Nanjiani': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSm8xXbItvumi6jp_cVYqLVZ7KshGtNW8ABe0jgWZKBezJP84u',
+        'Donald Glover': 'http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSsL0HYpJcplREqdpUoJ3C3L-Ff9fMMWaWynybeBCUTmH6aPh5L0KZKrkIplOzn',
+        'Brian Tyree Henry': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ12lJ1Ps-997m4yQIylq8CdAvYtKRxGaaJ8SZLf4A5isGkoWt',
+        'LaKeith Stanfield': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlGh0H2NueR0ct4SIu0l8poi9jjluJ9QqHMq4Cwc7RO3VRlq4L',
+        'Zazie Beetz': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWeCQF7i8dyY4e1FgOxmXKJAYvGj0e0qQxYHzfsfZAgbjVRCqc',
     },
 }

@@ -3430,6 +3430,24 @@ const allMovies = {
             imdbID: 'tt4288182',
             subReddit: 'AtlantaTV',
         },
+        cast: [
+            {
+                actor: 'Donald Glover',
+                char: 'Earn Marks',
+            },
+            {
+                actor: 'Brian Tyree Henry',
+                char: 'Alfred \'Paper Boi\' Miles',
+            },
+            {
+                actor: 'LaKeith Stanfield',
+                char: 'Darius',
+            },
+            {
+                actor: 'Zazie Beetz',
+                char: 'Van',
+            },
+        ],
     },
     'boys': {
         name: 'The Boys',
