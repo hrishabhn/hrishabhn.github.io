@@ -1,7 +1,7 @@
 const soonMovies = [
+    allMovies.noMercy,
     allMovies.abbott,
     allMovies.atlanta,
-    allMovies.noMercy,
     allMovies.elite,
 ]
 
@@ -10,17 +10,15 @@ let movieRaw = [
         name: 'Up next',
         data: [
             allMovies.land,
-            allMovies.murdochs,
-            allMovies.sixties,
             allMovies.attack,
+            allMovies.ozark,
+            allMovies.kal,
         ],
     },
     {
         name: 'My list',
         data: [
             allMovies.family,
-            allMovies.kal,
-            allMovies.ozark,
             allMovies.peaky,
             allMovies.tintin,
         ],
@@ -57,6 +55,8 @@ let movieRaw = [
     {
         name: 'New',
         data: [
+            allMovies.murdochs,
+            allMovies.sixties,
             allMovies.ministry,
             allMovies.killingEve,
             allMovies.phil,
