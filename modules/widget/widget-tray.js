@@ -87,9 +87,9 @@ function widgetTray() {
         widgets.budget.card(),
         widgets.ideas.card(),
         widgets.stack([
-            widgets.trip.card('barca'),
-            widgets.train.card('mad-bcn'),
-            widgets.train.card('bcn-mad'),
+            widgets.trip.card('tenerife'),
+            widgets.flight.card('mad-tfs'),
+            widgets.flight.card('tfs-mad'),
         ]),
     ]
 

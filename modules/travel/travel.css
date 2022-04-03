@@ -124,7 +124,6 @@
     width: 16px;
     height: 16px;
     border-radius: 100px;
-    padding: 5%;
     background-color: white;
     fill: var(--dark-layer-1);
 }
@@ -149,4 +148,72 @@
     font-size: 12px;
     font-weight: 400;
     opacity: 0.8;
+}
+
+.travel-card .row .right {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.travel-card .row .right .top {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+}
+.travel-card .row .right .top .logo{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+.travel-card .row .right .top p {
+    opacity: 0.6;
+}
+.travel-card .row .right .middle {
+    margin: 4px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.travel-card .row .right .bottom {
+    font-size: 10px;
+}
+
+.travel-card .row .right .bottom .arrow {
+    width: 1em;
+    height: 1em;
+}
+
+
+.travel-card .row .right .bottom .textbox .name {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.travel-card .row .right .bottom .textbox .desc {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.travel-card .row .right .bottom .textbox {
+    flex-direction: row;
+    width: initial;
+
+    padding: 0 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.travel-card .row .right .bottom .textbox .name {
+    opacity: 0.6;
+    margin-right: 3px;
+    
+    font-size: inherit;
+    font-weight: inherit;
+}
+.travel-card .row .right .bottom .textbox .desc {
+    font-size: inherit;
+    font-weight: inherit;
+    opacity: initial;
 }

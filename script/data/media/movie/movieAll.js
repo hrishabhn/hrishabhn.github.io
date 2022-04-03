@@ -314,7 +314,7 @@ const allMovies = {
             service: 'hulu',
             // studio: 'abc',
             location: 'Hulu',
-            date: '30 March 2022',
+            date: '6 Apr 2022',
             seasons: 1,
             yearStart: 2021,
             yearEnd: null,

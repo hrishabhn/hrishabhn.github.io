@@ -1,14 +1,14 @@
 const tripData = {
-    'barca': {
-        name: 'Barcelona',
-        desc: 'Weekend Trip',
-        thumb: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/45/49/province-of-barcelona.jpg?w=700&h=500&s=1',
-        link: 'https://www.notion.so/hrishabhn/Barcelona-8e52cf40d8744f7bbfcb0428893cee96',
-        events: [
-            train.data['mad-bcn'],
-            train.data['bcn-mad'],
-        ],
-    },
+    // 'barca': {
+    //     name: 'Barcelona',
+    //     desc: 'Weekend Trip',
+    //     thumb: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/45/49/province-of-barcelona.jpg?w=700&h=500&s=1',
+    //     link: 'https://www.notion.so/hrishabhn/Barcelona-8e52cf40d8744f7bbfcb0428893cee96',
+    //     events: [
+    //         train.data['mad-bcn'],
+    //         train.data['bcn-mad'],
+    //     ],
+    // },
     'tenerife': {
         name: 'Tenerife',
         desc: 'Easter Break',

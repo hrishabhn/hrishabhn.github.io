@@ -93,12 +93,47 @@ const travelCard = {
         return card
     },
     processEvent: function (event) {
-        console.log(event)
+        if (event.type == 'flight') {
+            let right = document.createElement('div')
+            right.classList = 'right'
 
-        if (event.type == 'flight') return {
-            left: travelCard.left.plane(),
-            right: elems.textbox(`${event.airline.name} ${event.number}`, `Departs at ${event.dep.time}`),
-            trigger: function () { event.detail() },
+            let top = document.createElement('div')
+            top.classList = 'top'
+
+            let logo = elems.icon(event.airline.logo.icon)
+            logo.classList = 'logo'
+            top.append(logo)
+            top.append(elems.p(`${event.airline.code} ${event.number}`))
+            top.append(elems.grow())
+            top.append(elems.p(event.start))
+
+            let middle = elems.p(`${event.dep.city} to ${event.arr.city}`)
+            middle.classList = 'middle'
+
+            let bottom = document.createElement('div')
+            bottom.classList = 'bottom'
+
+            let depIcon = elems.icon(SFSymbols.arrow.up.right)
+            depIcon.classList = 'arrow'
+            bottom.append(depIcon)
+            bottom.append(elems.textbox(event.dep.code, event.dep.time))
+
+            let arrIcon = elems.icon(SFSymbols.arrow.down.right)
+            arrIcon.classList = 'arrow'
+            bottom.append(arrIcon)
+            bottom.append(elems.textbox(event.arr.code, event.arr.time))
+
+
+            right.append(top)
+            right.append(middle)
+            right.append(bottom)
+
+            return {
+                left: travelCard.left.plane(),
+                // right: elems.textbox(`${event.airline.name} ${event.number}`, `Departs at ${event.dep.time}`),
+                right: right,
+                trigger: function () { event.detail() },
+            }
         }
         else if (event.type == 'train') return {
             left: travelCard.left.train(),
