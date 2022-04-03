@@ -86,7 +86,7 @@ function tvDetail(key) {
 
         // cast
         if (movie.cast) {
-            more.append(searchActorsRow(movie.cast))
+            more.append(actors.row(movie.cast, 'Cast'))
             more.append(elems.hline())
         }
 

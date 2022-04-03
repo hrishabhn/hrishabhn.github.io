@@ -15,7 +15,14 @@ const actors = {
         return results
     },
     searchRow: function (q) {
-        return searchActorsRow(this.search(q))
+        return this.row(this.search(q))
+    },
+    row: function (results, title) {
+        let row = rowBase(title ?? 'Actors')
+        let nodes = []
+        for (const item of results) nodes.push(actorCard(item.actor, item.char))
+        row.append(trayWithKids(nodes, 20))
+        return row
     },
     data: {
         'Jason Sudeikis': 'https://is2-ssl.mzstatic.com/image/thumb/AgXPsy2GlFurBYHRquyjeQ/492x492ve.webp',

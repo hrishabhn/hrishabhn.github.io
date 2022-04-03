@@ -242,15 +242,6 @@ function mediaDetailCard(thumb, genre, name, summary) {
     } else return thumb
 }
 
-// actor
-function searchActorsRow(results, title) {
-    let row = rowBase(title ?? 'Actors')
-    let nodes = []
-    for (const item of results) nodes.push(actorCard(item.actor, item.char))
-    row.append(trayWithKids(nodes, 20))
-    return row
-}
-
 // bookpod
 function searchBookPodRow(results, title, type) {
     let row = rowBase(title)
@@ -402,7 +393,7 @@ function mediaNewOrSoon(date) {
     if (countdown.future(date)) {
         const result = countdown.process.short(date)
         return `${result.num} ${result.word.toUpperCase()}`
-    } else { return 'NEW' }
+    } else return 'NEW'
 }
 
 function mediaTimeElem(str) {
