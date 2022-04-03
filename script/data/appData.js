@@ -424,6 +424,14 @@ const appData = {
             // accent: 'e50914',
             distract: true,
         },
+        {
+            name: 'Up next',
+            link: 'https://www.youtube.com/playlist?list=PLGSQnvawXkTgJjsn_zoXdJf5pZR-qxLiH',
+            desc: 'YouTube Queue',
+            icon: SFSymbols.list.bullet,
+            style: 'indigo',
+            distract: true,
+        },
     ],
     'read': [
         {
