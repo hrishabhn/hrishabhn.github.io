@@ -2920,7 +2920,6 @@ const allMovies = {
             studio: 'fox',
             location: 'Hulu',
             // date: '',
-            weekday: 'Sunday',
             seasons: 20,
             yearStart: 1999,
             yearEnd: null,
@@ -2937,9 +2936,14 @@ const allMovies = {
                     type: 'webp',
                     title: true,
                 },
+                mobile: {
+                    type: 'webp',
+                    size: '2 / 3',
+                    title: true,
+                },
             },
             title: {
-                type: 'svg',
+                type: 'png',
                 size: 'mid',
             },
         },
@@ -2949,6 +2953,24 @@ const allMovies = {
             imdbID: 'tt0182576',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'Seth MacFarlane',
+                char: 'Peter Griffin',
+            },
+            {
+                actor: 'Alex Borstein',
+                char: 'Lois Griffin',
+            },
+            {
+                actor: 'Seth Green',
+                char: 'Chris Griffin',
+            },
+            {
+                actor: 'Mila Kunis',
+                char: 'Meg Griffin',
+            },
+        ],
     },
     'foundation': {
         name: 'Foundation',

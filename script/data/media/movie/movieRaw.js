@@ -18,6 +18,7 @@ let movieRaw = [
     {
         name: 'My list',
         data: [
+            allMovies.family,
             allMovies.kal,
             allMovies.ozark,
             allMovies.peaky,

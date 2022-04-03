@@ -58,17 +58,17 @@ for (const event of events_all) {
 
     if (eventNotesIcon[event.notes]) { event.icon = eventNotesIcon[event.notes] }
 
-    if (event.notes.includes('https://www.appintheair.mobi/cal')) {
-        event.icon = iconData['plane']
-        delete event.link
+    // if (event.notes.includes('https://www.appintheair.mobi/cal')) {
+    //     event.icon = iconData['plane']
+    //     delete event.link
 
-        let flightNo = event.notes.split('\n')[0].split(' ').at(-1)
+    //     let flightNo = event.notes.split('\n')[0].split(' ').at(-1)
 
-        for (const key in flightData) {
-            let match = flightData[key].number == flightNo
-            if (match) { event.trigger = function () { flightData[key].detail() } }
-        }
-    }
+    //     for (const key in flightData) {
+    //         let match = flightData[key].number == flightNo
+    //         if (match) { event.trigger = function () { flightData[key].detail() } }
+    //     }
+    // }
 }
 
 function eventColor(calendar) {
