@@ -6898,6 +6898,11 @@ const allMovies = {
             // imdbID: 'identifier',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'Scott Galloway',
+            },
+        ],
     },
     'land': {
         name: 'Land of the Giants: Titans of Tech',
@@ -7078,7 +7083,6 @@ const allMovies = {
         cast: [
             {
                 actor: 'Ronny Chieng',
-                char: 'Self',
             },
         ],
     },
