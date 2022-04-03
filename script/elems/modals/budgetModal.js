@@ -34,7 +34,6 @@ function budgetModal() {
             dateInputs.date = new Date().getDate().toString()
         }
 
-
         for (const item in dateInputs) {
             while (dateInputs[item].length < 2) {
                 console.log(dateInputs[item].length)
@@ -46,7 +45,7 @@ function budgetModal() {
             amount: parseFloat(document.getElementById('budget-modal-Amount').value),
             name: document.getElementById('budget-modal-Name').value,
             category: document.getElementById('budget-modal-Category').value,
-            date: `2022-03-${dateInputs.date}T${dateInputs.hour}:${dateInputs.min}:00+02:00`
+            date: `${new Date().getFullYear}-${new Date().getMonth() + 1}-${dateInputs.date}T${dateInputs.hour}:${dateInputs.min}:00+02:00`
         }
 
         alert(`${JSON.stringify(data)},`)
