@@ -50,7 +50,7 @@ const worldClockData = [
     {
         city: 'Sydney',
         thumb: thumbData.australia,
-        offset: '+9',
+        offset: '+8',
         style: 'indigo',
     },
     {

@@ -1,0 +1,42 @@
+.food-card {
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    width: 240px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.food-card .thumb {
+    width: 100%;
+    aspect-ratio: 1.8;
+}
+
+.food-card .textbox {
+    flex-direction: column;
+    width: 100%;
+    padding: 12px 10px;
+}
+
+.food-card .textbox p {
+    display: block;
+    width: 100%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.food-card .textbox p.name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.food-card .textbox p.desc {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
+}
