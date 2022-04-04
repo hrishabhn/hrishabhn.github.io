@@ -27,7 +27,6 @@ const routine = {
         card.classList.add('routine')
         card.append(elems.title('Habits'))
 
-
         let icon = elems.icon(SFSymbols.arrow.triangle.circlepath)
         icon.classList = 'top-icon'
         icon.onclick = function () {

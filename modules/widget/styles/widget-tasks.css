@@ -1,0 +1,65 @@
+.widget-card#tasks {
+    cursor: default;
+    /* grid-column: span 2; */
+}
+
+.widget-card#tasks .task {
+    width: 100%;
+    padding: 6px 0;
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.widget-card#tasks .task a {
+    height: 14px;
+    width: 14px;
+    border-radius: 4px;
+    margin-right: 6px;
+    border: solid 1px var(--white-10);
+}
+
+.widget-card#tasks .task.done a {
+    border: solid 1px var(--white-20);
+    background-color: var(--blue-dark);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .widget-card#tasks .task a {
+        border: solid 1px var(--dark-layer-1-10);
+    }
+
+    .widget-card#tasks .task.done a {
+        border: solid 1px var(--dark-layer-1-20);
+        background-color: var(--blue-light);
+    }
+}
+
+.widget-card#tasks .task .icon {
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+
+    transition: all 0.2s;
+    transform: scale(0.9);
+    opacity: 0;
+    fill: white;
+}
+
+.widget-card#tasks .task.done .icon {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* .widget-card#tasks .task .check {
+    height: 6px;
+    width: 6px;
+    border-radius: 100px;
+    opacity: 0.5;
+}
+
+.widget-card#tasks .task p {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.8;
+} */

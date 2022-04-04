@@ -1,13 +1,6 @@
 const widgets = {
     cal: { card: function () { return widgetCal() }, },
-    'tasks': {
-        id: 'tasks',
-        type: 'a',
-        title: 'Today\'s Tasks',
-        icon: SFSymbols.checklist,
-        content: widgetTaskItems(),
-        card: function () { return widgetCard(this) },
-    },
+    tasks: { card: function () { return tasks.widget() } },
     'budget': {
         id: 'budget',
         type: 'div',
@@ -73,11 +66,11 @@ function widgetTray() {
         widgets.tasks.card(),
         widgets.budget.card(),
         widgets.ideas.card(),
-        widgets.stack([
-            widgets.trip.card('tenerife'),
-            widgets.flight.card('mad-tfs'),
-            widgets.flight.card('tfs-mad'),
-        ]),
+        // widgets.stack([
+        //     widgets.trip.card('tenerife'),
+        //     widgets.flight.card('mad-tfs'),
+        //     widgets.flight.card('tfs-mad'),
+        // ]),
     ]
 
 
