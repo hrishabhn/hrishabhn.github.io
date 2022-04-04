@@ -19,7 +19,9 @@ const tasks = {
         tasks.load()
         let card = widgetCardBase('div')
         card.id = 'tasks'
+        card.classList.add('list')
         card.append(elems.title('Tasks'))
+        card.append(elems.spacer(5))
 
         let icon = elems.icon(SFSymbols.checklist)
         icon.classList = 'top-icon'

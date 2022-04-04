@@ -27,7 +27,7 @@ const topbar = {
             },
             {
                 name: 'Idea',
-                trigger: function (e) { modal.topbar(widgetIdeas(), e) },
+                trigger: function (e) { modal.topbar(ideas.widget(), e) },
                 icon: SFSymbols.lightbulb.fill,
             },
             {
