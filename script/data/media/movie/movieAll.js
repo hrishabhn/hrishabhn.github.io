@@ -7353,6 +7353,8 @@ for (const key in allMovies) {
 
     // show tv detail
     movie.detail = function () {
+        removeAllChildNodes(tvModal)
+
         let close = document.createElement('a')
         close.classList = 'close'
         close.onclick = function () { hideTVDetail() }
