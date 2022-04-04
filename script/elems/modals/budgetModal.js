@@ -41,7 +41,7 @@ function budgetModal() {
             amount: parseFloat(document.getElementById('budget-modal-Amount').value),
             name: document.getElementById('budget-modal-Name').value,
             category: document.getElementById('budget-modal-Category').value,
-            date: `${new Date().getFullYear}-${new Date().getMonth() + 1}-${dateInputs.date}T${dateInputs.hour}:${dateInputs.min}:00+02:00`
+            date: `${new Date().getFullYear()}-${`0${new Date().getMonth() + 1}`}-${dateInputs.date}T${dateInputs.hour}:${dateInputs.min}:00+02:00`
         }
 
         alert(`${JSON.stringify(data)},`)
