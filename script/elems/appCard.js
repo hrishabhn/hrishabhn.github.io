@@ -2,7 +2,7 @@ const appCard = {
     hover: function (app) {
         let hoverDetailElem = document.createElement('div')
         hoverDetailElem.classList = 'hover-detail layer-1'
-        hoverDetailElem.innerHTML = app.name
+        hoverDetailElem.textContent = app.name
 
         return hoverDetailElem
     },
