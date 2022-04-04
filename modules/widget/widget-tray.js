@@ -1,7 +1,5 @@
 const widgets = {
-    'cal': {
-        card: function () { return widgetCal() },
-    },
+    cal: { card: function () { return widgetCal() }, },
     'tasks': {
         id: 'tasks',
         type: 'a',
@@ -21,24 +19,12 @@ const widgets = {
         ],
         card: function () { return widgetCard(this) },
     },
-    flight: {
-        card: function (key) { return flight.widget(key) },
-    },
-    train: {
-        card: function (key) { return train.widget(key) },
-    },
-    trip: {
-        card: function (key) { return trip.widget(key) }
-    },
-    'ideas': {
-        card: function () { return widgetIdeas() },
-    },
-    'media': {
-        card: function (data, type) { return widgetMedia(data, type) },
-    },
-    'app': {
-        card: function (data) { return widgetAppTray(data) },
-    },
+    flight: { card: function (key) { return flight.widget(key) }, },
+    train: { card: function (key) { return train.widget(key) }, },
+    trip: { card: function (key) { return trip.widget(key) } },
+    ideas: { card: function () { return widgetIdeas() }, },
+    media: { card: function (data, type) { return widgetMedia(data, type) }, },
+    app: { card: function (data) { return widgetAppTray(data) }, },
     // 'tracking': {
     //     id: 'tracking',
     //     type: 'div',
@@ -50,6 +36,7 @@ const widgets = {
     //     card: function () { return widgetCard(this) }
     // },
     routine: { card: function (key) { return routine.widget(key) } },
+    // stack
     stack: function (arr) {
         let stack = document.createElement('div')
         stack.classList = 'widget-stack'
