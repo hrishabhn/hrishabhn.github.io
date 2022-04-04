@@ -1,17 +1,18 @@
 const widgets = {
     cal: { card: function () { return widgetCal() }, },
     tasks: { card: function () { return tasks.widget() } },
-    'budget': {
-        id: 'budget',
-        type: 'div',
-        icon: SFSymbols.creditcard.fill,
-        iconClick: function () { modal.add(budget.modal()) },
-        content: [
-            elems.data(`${spendingData.totalSpent}`, 'Spent'),
-            widgetBudgetChart(),
-        ],
-        card: function () { return widgetCard(this) },
-    },
+    // 'budget': {
+    //     id: 'budget',
+    //     type: 'div',
+    //     icon: SFSymbols.creditcard.fill,
+    //     iconClick: function () { modal.add(budget.modal()) },
+    //     content: [
+    //         elems.data(`${spendingData.totalSpent}`, 'Spent'),
+    //         widgetBudgetChart(),
+    //     ],
+    //     card: function () { return widgetCard(this) },
+    // },
+    budget: { card: function () { return budget.widget() } },
     flight: { card: function (key) { return flight.widget(key) }, },
     train: { card: function (key) { return train.widget(key) }, },
     trip: { card: function (key) { return trip.widget(key) } },
