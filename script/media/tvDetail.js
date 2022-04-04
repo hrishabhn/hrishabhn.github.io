@@ -197,25 +197,3 @@ function tvDetailApps(key) {
 
     return trayWithKids(nodes, 8)
 }
-
-function actorCard(actor, char) {
-    let card = document.createElement('div')
-    card.classList = 'actor-card clickable-o'
-
-    let image = document.createElement('a')
-    image.classList = 'image layer-1'
-    image.href = googleSearch(actor)
-    image.target = '_blank'
-
-    if (actors.data[actor]) image.style.setProperty('background-image', `url(${actors.data[actor]})`)
-    else {
-        let str = ''
-        for (const word of actor.split(' ')) str = str.concat(word[0])
-        image.textContent = str
-    }
-
-    card.append(image)
-    card.append(elems.textbox(actor, char ?? null))
-
-    return card
-}

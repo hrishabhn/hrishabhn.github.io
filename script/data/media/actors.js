@@ -15,17 +15,38 @@ const actors = {
         return results
     },
     searchRow: function (q) { return this.row(this.search(q)) },
+    card: function (actor, char) {
+        let card = document.createElement('div')
+        card.classList = 'actor-card clickable-o'
+
+        let image = document.createElement('a')
+        image.classList = 'image layer-1'
+        image.href = googleSearch(actor)
+        image.target = '_blank'
+
+        if (actors.data[actor]) image.style.setProperty('background-image', `url(${actors.data[actor]})`)
+        else {
+            let str = ''
+            for (const word of actor.split(' ')) str = str.concat(word[0])
+            image.textContent = str
+        }
+
+        card.append(image)
+        card.append(elems.textbox(actor, char ?? null))
+
+        return card
+    },
     row: function (results, title) {
         let row = rowBase(title ?? 'Actors')
         let nodes = []
-        for (const item of results) nodes.push(actorCard(item.actor, item.char))
+        for (const item of results) nodes.push(actors.card(item.actor, item.char))
         row.append(trayWithKids(nodes, 20))
         return row
     },
-    detail: function() {
+    detail: function (name) {
         let card = document.createElement('div')
-        card.classList = 'actor-detail'
-
+        card.classList = 'actor-detail layer-0 card-shadow'
+        card.textContent = name
 
         return card
     },
