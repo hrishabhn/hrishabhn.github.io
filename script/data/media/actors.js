@@ -16,13 +16,12 @@ const actors = {
     },
     searchRow: function (q) { return this.row(this.search(q)) },
     card: function (actor, char) {
-        let card = document.createElement('div')
+        let card = document.createElement('a')
         card.classList = 'actor-card clickable-o'
+        card.onclick = function () { modal.add(actors.detail(actor)) }
 
-        let image = document.createElement('a')
+        let image = document.createElement('div')
         image.classList = 'image layer-1'
-        image.href = googleSearch(actor)
-        image.target = '_blank'
 
         if (actors.data[actor]) image.style.setProperty('background-image', `url(${actors.data[actor]})`)
         else {
@@ -46,8 +45,14 @@ const actors = {
     detail: function (name) {
         let card = document.createElement('div')
         card.classList = 'actor-detail layer-0 card-shadow'
-        card.textContent = name
 
+        let actor = actors.card(name, null)
+        actor.onclick = function () { }
+        actor.href = googleSearch(name)
+        actor.target = '_blank'
+
+        card.append(actor)
+        card.append(mediaElems.movie.new.row(actors.actorMatch(name), 'TV & Movies', 'small'))
         return card
     },
     data: {
@@ -191,5 +196,14 @@ const actors = {
         'Brian Tyree Henry': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ12lJ1Ps-997m4yQIylq8CdAvYtKRxGaaJ8SZLf4A5isGkoWt',
         'LaKeith Stanfield': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlGh0H2NueR0ct4SIu0l8poi9jjluJ9QqHMq4Cwc7RO3VRlq4L',
         'Zazie Beetz': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWeCQF7i8dyY4e1FgOxmXKJAYvGj0e0qQxYHzfsfZAgbjVRCqc',
+    },
+    actorMatch: function (name) {
+        let results = []
+        for (const row of movies.rows) for (const movie of row.data) {
+            let match = false
+            if (movie.cast) for (const actor of movie.cast) if (actor.actor.toUpperCase().includes(name.toUpperCase())) match = true
+            if ((match) && !results.includes(movie.id)) results.push(movie.id)
+        }
+        return results
     },
 }

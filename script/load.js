@@ -21,6 +21,7 @@ function loadApp() {
     // trip.data.tenerife.detail()
     // flight.data['mad-tfs'].detail()
     // train.data['mad-bcn'].detail()
+    // modal.add(actors.detail('Alan Ritchson'))
     actorRepeat()
 }
 

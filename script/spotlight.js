@@ -64,6 +64,7 @@ function spotlightRun(e) {
                 // searchBookPodNewRow(books.search(q), 'Books', 'book'),
                 books.searchRow(q),
                 pods.searchRow(q),
+                food.searchRow(q),
                 // searchBookPodBig(['decoder'], 'pod'),
             ]
 
