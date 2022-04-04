@@ -399,7 +399,7 @@ function mediaNewOrSoon(date) {
 function mediaTimeElem(str) {
     let elem = document.createElement('div')
     elem.classList = 'media-data'
-    elem.innerHTML = str
+    elem.textContent = str
     return elem
 }
 

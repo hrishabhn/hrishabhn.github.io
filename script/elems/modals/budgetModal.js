@@ -22,7 +22,7 @@ function budgetModal() {
 
     let create = document.createElement('a')
     create.classList = 'create clickable blue'
-    create.innerHTML = 'Create JSON String'
+    create.textContent = 'Create JSON String'
     create.onclick = function () {
         let dateInputs = {
             date: document.getElementById('budget-modal-Date').value,

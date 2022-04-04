@@ -211,7 +211,7 @@ function actorCard(actor, char) {
     else {
         let str = ''
         for (const word of actor.split(' ')) str = str.concat(word[0])
-        image.innerHTML = str
+        image.textContent = str
     }
 
     card.append(image)

@@ -22,6 +22,13 @@ const actors = {
         row.append(trayWithKids(nodes, 20))
         return row
     },
+    detail: function() {
+        let card = document.createElement('div')
+        card.classList = 'actor-detail'
+
+
+        return card
+    },
     data: {
         'Jason Sudeikis': 'https://is2-ssl.mzstatic.com/image/thumb/AgXPsy2GlFurBYHRquyjeQ/492x492ve.webp',
         'Olivia Munn': 'https://celebmafia.com/wp-content/uploads/2019/09/olivia-munn-2019-creative-arts-emmy-awards-in-la-17.jpg',

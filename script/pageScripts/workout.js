@@ -72,7 +72,7 @@ function workoutCard() {
 
     let reset = document.createElement('a')
     reset.classList = 'blue-fg clickable-o'
-    reset.innerHTML = 'Reset'
+    reset.textContent = 'Reset'
     reset.onclick = function () {
         removeCookie('workout')
         let oldCard = document.getElementById('workout-card')
@@ -120,7 +120,7 @@ function workoutItem(i) {
     tray.classList = 'tray'
     for (let j = 0; j < data.complete.length; j++) {
         let button = document.createElement('a')
-        button.innerHTML = j + 1
+        button.textContent = j + 1
         button.classList = `${workoutData()[i].style} clickable-o`
         button.id = `workout-${i}-${j}`
         if (data.complete[j]) { button.classList.add('done') }
