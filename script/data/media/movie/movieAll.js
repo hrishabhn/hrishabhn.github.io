@@ -5029,6 +5029,24 @@ const allMovies = {
             imdbID: 'tt0386676',
             subReddit: 'DunderMifflin',
         },
+        cast: [
+            {
+                actor: 'Steve Carell',
+                char: 'Michael Scott',
+            },
+            {
+                actor: 'John Krasinski',
+                char: 'Jim Halpert',
+            },
+            {
+                actor: 'Jenna Fischer',
+                char: 'Pam Beesly',
+            },
+            {
+                actor: 'Rainn Wilson',
+                char: 'Dwight Schrute',
+            },
+        ],
     },
     'bms': {
         name: 'Blue Mountain State',

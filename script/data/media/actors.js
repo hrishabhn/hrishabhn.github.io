@@ -196,6 +196,10 @@ const actors = {
         'Brian Tyree Henry': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ12lJ1Ps-997m4yQIylq8CdAvYtKRxGaaJ8SZLf4A5isGkoWt',
         'LaKeith Stanfield': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlGh0H2NueR0ct4SIu0l8poi9jjluJ9QqHMq4Cwc7RO3VRlq4L',
         'Zazie Beetz': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWeCQF7i8dyY4e1FgOxmXKJAYvGj0e0qQxYHzfsfZAgbjVRCqc',
+        'Steve Carell': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPGIP1J3wxQWmwNWbm_NY7LAAIRclbWyJrb_k7XagMT-_9GolW',
+        'John Krasinski': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfTj3qmziB5CSxjVSdmPwAUm_UDeygz696AWifnjtIoA6QPqXT',
+        'Jenna Fischer': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvCQIusgrF1gHmtyjy7WYWnrXYQvux73ScAvD4_l-1tT1YsKZG',
+        'Rainn Wilson': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfvukQF_wrO0XRF9YKbaTR74ItiI3ZsMlFTKnJXLYpAf8vuwd1',
     },
     actorMatch: function (name) {
         let results = []
@@ -205,5 +209,25 @@ const actors = {
             if ((match) && !results.includes(movie.id)) results.push(movie.id)
         }
         return results
+    },
+    castSTR: function (key) {
+        const movie = allMovies[key]
+        console.log(movie)
+
+        let str = ''
+
+        for (const item of movie.cast) {
+            str = str.concat(`'${item.actor}': '',\n`)
+        }
+
+        console.log(str)
+    },
+    repeatedNoImg: function () {
+        let all = {}
+        for (const key in allMovies) if (allMovies[key].cast) for (const member of allMovies[key].cast) {
+            if (!all[member.actor]) all[member.actor] = 1
+            else all[member.actor]++
+        }
+        for (const actor in all) if (all[actor] > 1) if (!actors.data[actor]) console.log(actor)
     },
 }
