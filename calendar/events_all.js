@@ -1,5 +1,4 @@
 let events_all = [
-{"location":"","end":"2022-04-05T00:00:00+02:00","start":"2022-04-04T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 10"},
 {"location":"10.2.11","end":"2022-04-04T14:00:00+02:00","start":"2022-04-04T12:30:00+02:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
 {"location":"6.1.06","end":"2022-04-04T16:00:00+02:00","start":"2022-04-04T14:30:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
 {"location":"","end":"2022-04-04T19:00:00+02:00","start":"2022-04-04T18:00:00+02:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"SAIL Study"},
@@ -9,14 +8,15 @@ let events_all = [
 {"location":"2.3.B03","end":"2022-04-05T17:00:00+02:00","start":"2022-04-05T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Engineering Management"},
 {"location":"https:\/\/purdue-edu.zoom.us\/j\/3602561269","end":"2022-04-05T21:00:00+02:00","start":"2022-04-05T20:00:00+02:00","allDay":"No","notes":"----( Video Call )----\nhttps:\/\/purdue-edu.zoom.us\/j\/3602561269\n---===---","calendar":"Work","link":"","name":"SAIL Meeting"},
 {"location":"Champions League","end":"2022-04-05T22:00:00+02:00","start":"2022-04-05T21:00:00+02:00","allDay":"No","notes":"","calendar":"Outings","link":"","name":"Manchester City vs Atlético Madrid"},
-{"location":"6.1.03","end":"2022-04-06T17:45:00+02:00","start":"2022-04-06T16:15:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
 {"location":"","end":"2022-04-06T17:15:00+02:00","start":"2022-04-06T16:15:00+02:00","allDay":"No","notes":"","calendar":"Key Dates","link":"","name":"Industrial Organisation Exam 2"},
+{"location":"6.1.03","end":"2022-04-06T17:45:00+02:00","start":"2022-04-06T16:15:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
 {"location":"Champions League","end":"2022-04-06T22:00:00+02:00","start":"2022-04-06T21:00:00+02:00","allDay":"No","notes":"","calendar":"Outings","link":"","name":"Chelsea vs Real Madrid"},
 {"location":"","end":"2022-04-08T00:00:00+02:00","start":"2022-04-07T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Financial Economics Exam 2"},
 {"location":"10.1.7","end":"2022-04-07T14:00:00+02:00","start":"2022-04-07T12:30:00+02:00","allDay":"No","notes":"Economía Financiera, grp. 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
 {"location":"4.0.E03","end":"2022-04-07T17:00:00+02:00","start":"2022-04-07T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grp.18 y 19","calendar":"Spring 2022","link":"","name":"Engineering Management"},
 {"location":"","end":"2022-04-09T00:00:00+02:00","start":"2022-04-08T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Controls Lab 2"},
-{"location":"2.3.D04","end":"2022-04-08T11:00:00+02:00","start":"2022-04-08T09:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
 {"location":"LAB 1.1.L02 (Automatica)","end":"2022-04-08T11:00:00+02:00","start":"2022-04-08T09:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
+{"location":"2.3.D04","end":"2022-04-08T11:00:00+02:00","start":"2022-04-08T09:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
 {"location":"LAB 1.1.L02 (Automatica)","end":"2022-04-08T15:00:00+02:00","start":"2022-04-08T13:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
+{"location":"","end":"2022-04-18T00:00:00+02:00","start":"2022-04-11T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Easter Holidays"},
 ]

@@ -5,7 +5,7 @@ const widgets = {
         id: 'budget',
         type: 'div',
         icon: SFSymbols.creditcard.fill,
-        iconClick: function () { modal.add(budgetModal()) },
+        iconClick: function () { modal.add(budget.modal()) },
         content: [
             elems.data(`${spendingData.totalSpent}`, 'Spent'),
             widgetBudgetChart(),
