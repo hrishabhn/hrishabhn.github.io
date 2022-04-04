@@ -2,9 +2,9 @@ const bookRaw = [
     {
         name: 'Reading Now',
         data: [
-            allBooks.project,
-            allBooks.lost,
+            allBooks.ready,
             allBooks.gweilo,
+            allBooks.lost,
             allBooks.focus,
             allBooks.jordan,
         ]
@@ -14,7 +14,6 @@ const bookRaw = [
         data: [
             allBooks.short,
             allBooks.faster,
-            allBooks.ready,
             allBooks.cultureMap,
             allBooks.braveNewWorld,
             allBooks.ride,
@@ -35,6 +34,7 @@ const bookRaw = [
     {
         name: 'Finished',
         data: [
+            allBooks.project,
             allBooks.goingSolo,
             allBooks.noRules,
             allBooks.homodeus,
