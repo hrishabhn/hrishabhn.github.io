@@ -5,7 +5,7 @@
 
 .widget-card.list .task {
     width: 100%;
-    padding: 6px 0;
+    padding: 5px 0;
     font-size: 10px;
     font-weight: 400;
     cursor: pointer;
@@ -17,6 +17,15 @@
     border-radius: 4px;
     margin-right: 6px;
     border: solid 1px var(--white-10);
+}
+
+.widget-card.list .task input {
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: 0px;
+
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .widget-card.list .task.done a {
@@ -38,7 +47,7 @@
 .widget-card.list .task .icon {
     height: 100%;
     width: 100%;
-    padding: 3px;
+    padding: 2px;
 
     transition: all 0.2s;
     transform: scale(0.9);

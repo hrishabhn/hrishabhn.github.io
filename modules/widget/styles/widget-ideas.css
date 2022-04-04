@@ -1,22 +1,5 @@
-.widget-card#ideas {
+.widget-card#ideas.list .task {
     cursor: default;
-}
-.widget-card#ideas .item {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 2px 0;
-}
-.widget-card#ideas .item .check {
-    height: 6px;
-    width: 6px;
-    border-radius: 100px;
-    opacity: 0.5;
-    cursor: pointer;
-}
-.widget-card#ideas .item p {
-    font-size: 12px;
-    font-weight: 400;
-    opacity: 0.8;
 }
 
 #layer-modal .widget-card#ideas{

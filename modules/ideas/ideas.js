@@ -1,38 +1,40 @@
 const ideas = {
-    widget: function() {
+    widget: function () {
         let card = widgetCardBase('div')
         card.id = 'ideas'
         card.classList.add('list')
-    },
-    widget: function () {
-        // base card with header
-        let card = widgetCardBase('div')
-        card.id = 'ideas'
         card.append(elems.title('Ideas'))
         card.append(elems.spacer(5))
 
-
-        let iconElem = elems.icon(SFSymbols.lightbulb.fill)
-        iconElem.classList = 'top-icon'
-        card.append(iconElem)
+        let icon = elems.icon(SFSymbols.lightbulb.fill)
+        icon.classList = 'top-icon'
+        card.append(icon)
 
         let ideaData
         if (getCookie('ideas-list')) ideaData = JSON.parse(getCookie('ideas-list'))
-        else ideaData = []
-        ideaData.push('')
+        else ideaData = {}
+        ideaData[''] = false
 
-        for (const data of ideaData) card.append(ideas.widgetItem(data))
+        for (const key in ideaData) {
+            card.append(ideas.item(key, ideaData[key]))
+            card.append(elems.hlineList(20))
+        }
 
+        card.lastChild.remove()
         return card
     },
-    widgetItem: function (data) {
+    item: function (data, done) {
+        let elem = document.createElement('div')
+        elem.classList = 'task'
+        if (done) elem.classList.add('done')
+        // onclick
 
-        let item = elems.item()
-
-        let check = document.createElement('div')
-        check.classList = 'check layer-fg clickable-o'
+        let check = elems.a(iconData.tick, null)
+        check.classList.add('clickable-o')
+        check.style.setProperty('cursor', 'pointer')
         check.onclick = function () {
-            item.before(widgetIdeasItem(''))
+            elem.classList.toggle('done')
+            ideas.toggle(data)
         }
 
         let input = document.createElement('input')
@@ -40,39 +42,41 @@ const ideas = {
         input.placeholder = 'New'
         input.onkeyup = function (e) {
             ideas.set()
-
             if (e.key == 'Enter') ideas.refresh()
-            else if (e.key == 'ArrowUp') {
-                e.preventDefault()
-                if (item.previousElementSibling) item.previousElementSibling.lastChild.focus()
-            } else if (e.key == 'ArrowDown') {
-                e.preventDefault()
-                if (item.nextElementSibling) item.nextElementSibling.lastChild.focus()
-            }
         }
 
-        item.append(check)
-        item.append(elems.spacer(5))
-        item.append(input)
-
-        return item
+        elem.append(check)
+        elem.append(input)
+        return elem
     },
     set: function () {
         let card = document.getElementById('ideas')
-
         let nodes = Array.from(card.childNodes)
-        // remove title and spacer
+        // remove title, icon and spacer
+        nodes.shift()
         nodes.shift()
         nodes.shift()
 
-        let data = []
+        let data = {}
+        let old
+        if (getCookie('ideas-list')) old = JSON.parse(getCookie('ideas-list'))
+        else old = {}
 
-        for (let i = 0; i < nodes.length; i++) {
+        let i = 0
+        while (i < nodes.length) {
             let value = nodes[i].lastChild.value
-            if (value) data.push(value)
+            if (value)
+                if (old[value]) data[value] = true
+                else data[value] = false
+            i += 2
         }
-
         setCookie('ideas-list', JSON.stringify(data), 7)
+    },
+    toggle: function (data) {
+        let cook = JSON.parse(getCookie('ideas-list'))
+        console.log(cook[data])
+        cook[data] = !cook[data]
+        setCookie('ideas-list', JSON.stringify(cook), 7)
     },
     refresh: function () {
         let old = document.getElementById('ideas')
