@@ -1,99 +1,99 @@
 const mediaElems = {
     movie: {
-            // card: function () { },
-            row: function (results, title, size) {
-                let nodes = []
+        // card: function () { },
+        row: function (results, title, size) {
+            let nodes = []
 
-                // process size
-                let small = false
-                let big = false
-                let med = false
+            // process size
+            let small = false
+            let big = false
+            let med = false
 
-                if (size == 'small') {
-                    small = true
-                } else if (size == 'big') {
-                    big = true
-                } else if (size == 'med') {
-                    small = true
-                    med = true
-                } else if (size == 'smart') {
-                    small = true
-                    if (results.length < 5) med = true
+            if (size == 'small') {
+                small = true
+            } else if (size == 'big') {
+                big = true
+            } else if (size == 'med') {
+                small = true
+                med = true
+            } else if (size == 'smart') {
+                small = true
+                if (results.length < 5) med = true
+            }
+
+            for (const key of results) {
+                const movie = allMovies[key]
+
+                // base card
+                var card = document.createElement('div')
+                card.classList = 'media-card movie clickable-o'
+                if (movie.info.date) card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
+                if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
+
+                // size
+                if (small) card.classList.add('small')
+                else if (big) card.classList.add('big')
+
+
+                // bg for big
+                if (big) card.append(elems.bg())
+
+                // thumb
+                let thumb
+                if (small) thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`)
+                else if (big) {
+                    thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
+                    thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
+                    thumbCont = document.createElement('div')
+                    thumbCont.classList = 'thumb-cont'
+
+                    thumbCont.append(thumb)
+                }
+                thumb.append(elems.grad())
+
+                if (small) card.append(thumb)
+                else if (big) card.append(thumbCont)
+
+                // title - if not(big AND no mobile title)
+                if (big) if (!(big && !movie.style.poster.mobile.title))
+                    card.append(movieCardTitle(key))
+                if (small) if (movie.style.poster.wide.title)
+                    card.append(movieCardTitle(key))
+
+                // textbox
+                if (big) {
+                    if (!(big && !movie.style.poster.mobile.title)) card.append(elems.textbox(null, movie.desc.full))
+                    else card.append(elems.textbox(movie.name, movie.desc.full))
+
+
+                    let more = document.createElement('a')
+                    more.classList = 'more'
+                    more.append(elems.p('MORE'))
+                    more.append(elems.grow())
+                    more.append(elems.icon(iconData.more))
+
+                    card.append(more)
                 }
 
-                for (const key of results) {
-                    const movie = allMovies[key]
-
-                    // base card
-                    var card = document.createElement('div')
-                    card.classList = 'media-card movie clickable-o'
-                    if (movie.info.date) card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
-                    if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
-
-                    // size
-                    if (small) card.classList.add('small')
-                    else if (big) card.classList.add('big')
-
-
-                    // bg for big
-                    if (big) card.append(elems.bg())
-
-                    // thumb
-                    let thumb
-                    if (small) thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`)
-                    else if (big) {
-                        thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
-                        thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
-                        thumbCont = document.createElement('div')
-                        thumbCont.classList = 'thumb-cont'
-
-                        thumbCont.append(thumb)
-                    }
-                    thumb.append(elems.grad())
-
-                    if (small) card.append(thumb)
-                    else if (big) card.append(thumbCont)
-
-                    // title - if not(big AND no mobile title)
-                    if (big) if (!(big && !movie.style.poster.mobile.title))
-                        card.append(movieCardTitle(key))
-                    if (small) if (movie.style.poster.wide.title)
-                        card.append(movieCardTitle(key))
-
-                    // textbox
-                    if (big) {
-                        if (!(big && !movie.style.poster.mobile.title)) card.append(elems.textbox(null, movie.desc.full))
-                        else card.append(elems.textbox(movie.name, movie.desc.full))
-
-
-                        let more = document.createElement('a')
-                        more.classList = 'more'
-                        more.append(elems.p('MORE'))
-                        more.append(elems.grow())
-                        more.append(elems.icon(iconData.more))
-
-                        card.append(more)
-                    }
-
-                    // med card
-                    if (med) {
-                        card.classList.remove('clickable-o')
-                        card = mediaDetailCard(card, movie.desc.genre, movie.name, movie.info.summary)
-                    }
-
-                    // links
-                    card.onclick = function () { movie.detail() }
-                    // card.oncontextmenu = function (e) {
-                    //     e.preventDefault()
-                    //     context.show([movieApps(movieData[i, j])], e)
-                    // }
-
-
-                    nodes.push(card)
+                // med card
+                if (med) {
+                    card.classList.remove('clickable-o')
+                    card = mediaDetailCard(card, movie.desc.genre, movie.name, movie.info.summary)
                 }
 
-                return content.tray(title, nodes, 20, 4)
-            },
+                // links
+                card.onclick = function () { movie.detail() }
+                // card.oncontextmenu = function (e) {
+                //     e.preventDefault()
+                //     context.show([movieApps(movieData[i, j])], e)
+                // }
+
+
+                nodes.push(card)
+            }
+
+            return content.tray(title, nodes, 20, 4)
+        },
     },
     bookPod: {
         row: function (results, title, type) {
@@ -109,42 +109,42 @@ const mediaElems = {
                 allData = allPods
                 folder = 'podcasts'
             }
-        
+
             let med = false
             if (results.length < 5) {
                 med = true
             }
-        
+
             for (const key of results) {
                 const item = allData[key]
-        
+
                 // base card
                 let card = document.createElement('a')
                 card.classList = `media-card ${type} clickable-o`
-        
+
                 let thumb = elems.thumb(`./media-image/${folder}/${item.id}.${item.coverType}`)
                 card.append(thumb)
-        
-        
+
+
                 if ((item.progress) && (item.progress != 'NEW')) card.append(mediaTimeElem(item.progress))
                 if (!!parseFloat(item.progress)) thumb.append(mediaProgressBarElem(parseFloat(item.progress)))
-        
-        
-        
+
+
+
                 // med card
                 if (med) {
                     card.classList.remove('clickable-o')
                     if (type == 'pod') card = mediaDetailCard(card, item.name, item.title, item.summary ?? null)
                     else if (type == 'book') card = mediaDetailCard(card, item.author, item.name, item.summary ?? null)
                 }
-        
+
                 card.href = item.link
                 card.target = '_blank'
-        
-        
+
+
                 nodes.push(card)
             }
-        
+
             return content.tray(title, nodes, 20, 4)
         },
     },
