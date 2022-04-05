@@ -58,6 +58,7 @@ script {
     flex-direction: column;
     width: 100%;
     padding-top: 15px;
+    background-color: red;
 }
 
 .content-row .header {

@@ -1,9 +1,7 @@
 const mediaElems = {
     movie: {
-        new: {
             // card: function () { },
             row: function (results, title, size) {
-                let row = rowBase(title)
                 let nodes = []
 
                 // process size
@@ -94,112 +92,60 @@ const mediaElems = {
                     nodes.push(card)
                 }
 
-                row.append(trayWithKids(nodes, 4))
-                return row
+                return content.tray(title, nodes, 20, 4)
             },
-        },
-        small: {
-            card: function () { },
-            row: function (results, title) {
-                let row = rowBase(title)
-                let nodes = []
+    },
+    bookPod: {
+        row: function (results, title, type) {
+            let nodes = []
 
-                for (const key of results) {
-                    let movie = allMovies[key]
-
-                    let card = cardBase()
-                    card.classList.add('info-card', 'movie', 'clickable-o')
-                    card.onclick = function () { movie.detail() }
-                    card.oncontextmenu = function (e) {
-                        e.preventDefault()
-                        context.show([movieApps(movie)], e)
-                    }
-                    if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
-
-                    let thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`)
-                    thumb.innerHTML = `<div class="grad"></div>`
-                    if (movie.style.title.type) {
-                        let title = document.createElement('div')
-                        title.classList = `tv-title ${movie.style.title.size}`
-                        title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.title.type})`)
-                        thumb.append(title)
-                    }
-
-                    card.append(thumb)
-                    let textbox = elems.textbox(movie.name, movie.desc.full)
-                    card.append(textbox)
-
-
-                    if (movie.info.date) {
-                        card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
-                    }
-
-                    nodes.push(card)
+            // process type
+            let allData
+            let folder
+            if (type == 'book') {
+                allData = allBooks
+                folder = 'books'
+            } else if (type == 'pod') {
+                allData = allPods
+                folder = 'podcasts'
+            }
+        
+            let med = false
+            if (results.length < 5) {
+                med = true
+            }
+        
+            for (const key of results) {
+                const item = allData[key]
+        
+                // base card
+                let card = document.createElement('a')
+                card.classList = `media-card ${type} clickable-o`
+        
+                let thumb = elems.thumb(`./media-image/${folder}/${item.id}.${item.coverType}`)
+                card.append(thumb)
+        
+        
+                if ((item.progress) && (item.progress != 'NEW')) card.append(mediaTimeElem(item.progress))
+                if (!!parseFloat(item.progress)) thumb.append(mediaProgressBarElem(parseFloat(item.progress)))
+        
+        
+        
+                // med card
+                if (med) {
+                    card.classList.remove('clickable-o')
+                    if (type == 'pod') card = mediaDetailCard(card, item.name, item.title, item.summary ?? null)
+                    else if (type == 'book') card = mediaDetailCard(card, item.author, item.name, item.summary ?? null)
                 }
-
-                row.append(trayWithKids(nodes))
-                return row
-
-            },
-        },
-        big: {
-            card: function () { },
-            row: function (results, title) {
-                let row = rowBase(title)
-                let nodes = []
-
-                for (const key of results) {
-                    let movie = allMovies[key]
-
-                    let card = cardBase()
-                    card.onclick = function () { movie.detail() }
-                    card.oncontextmenu = function (e) {
-                        e.preventDefault()
-                        context.show([movieApps(movie)], e)
-                    }
-                    card.classList.add('info-card', 'movie-big', 'clickable-o')
-
-                    card.append(elems.bg(movie.style.color))
-
-                    let thumbCont = elems.grow()
-                    thumbCont.classList = 'thumb-cont'
-
-                    let thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
-                    thumb.style.setProperty('--ratio', movie.style.poster.mobile.size)
-
-                    let grad = elems.grad()
-                    grad.style.setProperty('background-image', `linear-gradient(#${movie.style.color}00, #${movie.style.color} 90%)`)
-
-                    thumb.append(grad)
-
-                    thumbCont.append(thumb)
-                    thumbCont.append(elems.grow())
-                    card.append(thumbCont)
-
-                    if (movie.style.title.type) {
-                        var textbox = elems.textbox(null, movie.desc.full)
-
-                        let title = document.createElement('div')
-                        title.classList = `tv-title ${movie.style.title.size}`
-                        title.style.setProperty('background-image', `url(./media-image/TV/title/${movie.id}.${movie.style.title.type})`)
-                        textbox.prepend(title)
-                    } else {
-                        var textbox = elems.textbox(movie.name, movie.desc.full)
-                    }
-                    card.append(textbox)
-
-                    if (movie.info.date) {
-                        card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
-                    }
-
-                    if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
-
-                    nodes.push(card)
-                }
-
-                row.append(trayWithKids(nodes))
-                return row
-            },
+        
+                card.href = item.link
+                card.target = '_blank'
+        
+        
+                nodes.push(card)
+            }
+        
+            return content.tray(title, nodes, 20, 4)
         },
     },
 }
@@ -243,46 +189,6 @@ function mediaDetailCard(thumb, genre, name, summary) {
 }
 
 // bookpod
-function searchBookPodRow(results, title, type) {
-    let row = rowBase(title)
-    let nodes = []
-
-    let allData
-    let folder
-    if (type == 'book') {
-        allData = allBooks
-        folder = 'books'
-    } else if (type == 'pod') {
-        allData = allPods
-        folder = 'podcasts'
-    }
-
-    for (const key of results) {
-        let item = allData[key]
-
-        let card = cardBase()
-        card.classList.add('info-card', type)
-        if (item.style) {
-            card.style.setProperty('--brand-col-dark', `var(--${item.style}-dark)`)
-            card.style.setProperty('--brand-col-light', `var(--${item.style}-light)`)
-        }
-
-        let thumb = elems.thumb(`./media-image/${folder}/${item.id}.${item.coverType}`)
-        card.append(thumb)
-        card.append(elems.textbox(item.name, item.author))
-
-        card.href = item.link
-        card.target = '_blank'
-
-        if ((item.progress) && (item.progress != 'NEW')) card.append(mediaTimeElem(item.progress))
-        if (!!parseFloat(item.progress)) thumb.append(mediaProgressBarElem(parseFloat(item.progress)))
-
-        nodes.push(card)
-    }
-
-    row.append(trayWithKids(nodes))
-    return row
-}
 
 function searchBookPodNewRow(results, title, type) {
     let row = rowBase(title)
@@ -320,46 +226,6 @@ function searchBookPodNewRow(results, title, type) {
 
 
 
-
-        // if (movie.info.date) card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
-        // if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
-
-        // // size
-        // if (small) card.classList.add('small')
-        // else if (big) card.classList.add('big')
-
-        // // thumb
-        // let thumb
-        // if (small) thumb = elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`)
-        // else if (big) {
-        //     thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
-        //     thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
-        //     thumbCont = document.createElement('div')
-        //     thumbCont.classList = 'thumb-cont'
-
-        //     thumbCont.append(thumb)
-        // }
-        // thumb.append(elems.grad())
-
-        // if (small) card.append(thumb)
-        // else if (big) card.append(thumbCont)
-
-        // // title
-        // card.append(movieCardTitle(key))
-
-        // // textbox
-        // if (big) {
-        //     card.append(elems.textbox(null, movie.desc.full))
-
-        //     let more = document.createElement('a')
-        //     more.classList = 'more'
-        //     more.append(elems.p('MORE'))
-        //     more.append(elems.grow())
-        //     more.append(elems.icon(iconData.more))
-
-        //     card.append(more)
-        // }
-
         // med card
         if (med) {
             card.classList.remove('clickable-o')
@@ -367,13 +233,6 @@ function searchBookPodNewRow(results, title, type) {
             else if (type == 'book') card = mediaDetailCard(card, item.author, item.name, item.summary ?? null)
         }
 
-        // // links
-        // card.onclick = function () { movie.detail() }
-        // // card.oncontextmenu = function (e) {
-        // //     e.preventDefault()
-        // //     context.show([movieApps(movieData[i, j])], e)
-        // // }
-        // card.onclick = function () { window.open(item.link, '_blank') }
         card.href = item.link
         card.target = '_blank'
 
