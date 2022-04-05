@@ -9,13 +9,13 @@ let focusData = [
             // apps: appData['main'],
             work: false,
             distract: false,
-            // trays: function () {
-            //     return [
-            //         focusTray(),
+            trays: function () {
+                return [
+                    widgetTray(),
             //         defaultDash(focusApps(),'Focus Modes','cyan'),
             //         searchAppsRow(searchApps('', appData['notion']), 'Notion'),
-            //     ]
-            // },
+                ]
+            },
         },
         'watch': {
             name: 'Watch',
