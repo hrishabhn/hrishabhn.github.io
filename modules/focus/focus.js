@@ -1,7 +1,7 @@
 const focus = {
     data: [
         {
-            name: null,
+            name: 'Main',
             data: [
                 {
                     name: 'Default',
@@ -19,6 +19,114 @@ const focus = {
                         ]
                     },
                 },
+                {
+                    name: 'Travel',
+                    id: 'travel',
+                    desc: 'Flights & Hotels',
+                    thumb: thumbData['plane'],
+                    icon: SFSymbols.airplane,
+                    style: 'secondary',
+                    apps: appData['travel'],
+                    work: false,
+                    distract: false,
+                    widgets: function () {
+                        return [
+                            // widgets.trip.card('barca'),
+                            // train.widget('mad-bcn'),
+                            // train.widget('bcn-mad'),
+                            widgets.trip.card('tenerife'),
+                            widgets.flight.card('mad-tfs'),
+                            widgets.flight.card('tfs-mad'),
+                        ]
+                    },
+                    trays: function () {
+                        return [
+                            trayWithKids([flight.card('mad-tfs'), flight.card('tfs-mad'),], 30, 0)
+                        ]
+                    },
+                },
+                {
+                    name: 'Workout',
+                    id: 'workout',
+                    desc: 'Routines & Apps',
+                    thumb: thumbData['gym'],
+                    icon: SFSymbols.calendar,
+                    style: 'secondary',
+                    apps: appData['main'],
+                    work: false,
+                    distract: false,
+                    trays: function () {
+                        return [
+                            workoutCard(),
+                            elems.spacer(40),
+                        ]
+                    },
+                },
+            ],
+        },
+        {
+            name: 'School',
+            data: [
+                {
+                    name: 'SAIL',
+                    id: 'sail',
+                    desc: 'Study Abroad Course',
+                    thumb: thumbData['globe'],
+                    icon: SFSymbols.globe,
+                    style: 'secondary',
+                    apps: appData['sail'],
+                    work: true,
+                    distract: false,
+                },
+                {
+                    name: 'Industrial Organisation',
+                    id: 'indorg',
+                    desc: '13186',
+                    thumb: thumbData['finance'],
+                    icon: SFSymbols.chart.xyaxis.line.fill,
+                    style: 'secondary',
+                    apps: appData['indorg'],
+                    work: true,
+                    distract: false,
+                },
+                {
+                    name: 'Financial Economics',
+                    id: 'finecon',
+                    desc: '13648',
+                    thumb: thumbData['money'],
+                    icon: SFSymbols.dollarsign.circle.fill,
+                    style: 'secondary',
+                    apps: appData['finecon'],
+                    work: true,
+                    distract: false,
+                },
+                {
+                    name: 'Engineering Management',
+                    id: 'manage',
+                    desc: '14197',
+                    thumb: thumbData['work'],
+                    icon: SFSymbols.briefcase.fill,
+                    style: 'secondary',
+                    apps: appData['manage'],
+                    work: true,
+                    distract: false,
+                },
+                {
+                    name: 'Control Engineering',
+                    id: 'controls',
+                    desc: '15514',
+                    thumb: thumbData['calculus'],
+                    icon: SFSymbols.florinsign.circle.fill,
+                    style: 'secondary',
+                    apps: appData['controls'],
+                    work: true,
+                    distract: false,
+                },
+            ],
+        },
+        {
+            name: 'Media',
+            data: [
                 {
                     name: 'Watch',
                     id: 'watch',
@@ -118,126 +226,18 @@ const focus = {
                 },
             ],
         },
-        {
-            name: 'Media',
-            data: [
-                {
-                    name: 'SAIL',
-                    id: 'sail',
-                    desc: 'Study Abroad Course',
-                    thumb: thumbData['globe'],
-                    icon: SFSymbols.globe,
-                    style: 'secondary',
-                    apps: appData['sail'],
-                    work: true,
-                    distract: false,
-                },
-                {
-                    name: 'Industrial Organisation',
-                    id: 'indorg',
-                    desc: '13186',
-                    thumb: thumbData['finance'],
-                    icon: SFSymbols.chart.xyaxis.line.fill,
-                    style: 'secondary',
-                    apps: appData['indorg'],
-                    work: true,
-                    distract: false,
-                },
-                {
-                    name: 'Financial Economics',
-                    id: 'finecon',
-                    desc: '13648',
-                    thumb: thumbData['money'],
-                    icon: SFSymbols.dollarsign.circle.fill,
-                    style: 'secondary',
-                    apps: appData['finecon'],
-                    work: true,
-                    distract: false,
-                },
-                {
-                    name: 'Engineering Management',
-                    id: 'manage',
-                    desc: '14197',
-                    thumb: thumbData['work'],
-                    icon: SFSymbols.briefcase.fill,
-                    style: 'secondary',
-                    apps: appData['manage'],
-                    work: true,
-                    distract: false,
-                },
-                {
-                    name: 'Control Engineering',
-                    id: 'controls',
-                    desc: '15514',
-                    thumb: thumbData['calculus'],
-                    icon: SFSymbols.florinsign.circle.fill,
-                    style: 'secondary',
-                    apps: appData['controls'],
-                    work: true,
-                    distract: false,
-                },
-            ],
-        },
-        {
-            name: 'Other',
-            data: [
-                {
-                    name: 'Travel',
-                    id: 'travel',
-                    desc: 'Flights & Hotels',
-                    thumb: thumbData['plane'],
-                    icon: SFSymbols.airplane,
-                    style: 'secondary',
-                    apps: appData['travel'],
-                    work: false,
-                    distract: false,
-                    widgets: function () {
-                        return [
-                            // widgets.trip.card('barca'),
-                            // train.widget('mad-bcn'),
-                            // train.widget('bcn-mad'),
-                            widgets.trip.card('tenerife'),
-                            widgets.flight.card('mad-tfs'),
-                            widgets.flight.card('tfs-mad'),
-                        ]
-                    },
-                    trays: function () {
-                        return [
-                            trayWithKids([flight.card('mad-tfs'), flight.card('tfs-mad'),], 30, 0)
-                        ]
-                    },
-                },
-                {
-                    name: 'Workout',
-                    id: 'workout',
-                    desc: 'Routines & Apps',
-                    thumb: thumbData['gym'],
-                    icon: SFSymbols.calendar,
-                    style: 'secondary',
-                    apps: appData['main'],
-                    work: false,
-                    distract: false,
-                    trays: function () {
-                        return [
-                            workoutCard(),
-                            elems.spacer(40),
-                        ]
-                    },
-                },
-            ],
-        },
     ],
     load: function () {
-        // removeCookie('focus-new')
-        if (!getCookie('focus-new')) setCookie('focus-new', JSON.stringify([0, 0]), 1)
+        // removeCookie('focus')
+        if (!getCookie('focus')) setCookie('focus', JSON.stringify([0, 0]), 1)
     },
     set: function (i, j) {
-        setCookie('focus-new', JSON.stringify([i, j]), 1)
+        setCookie('focus', JSON.stringify([i, j]), 1)
         location.reload()
     },
     get: function () {
-        const i = JSON.parse(getCookie('focus-new'))[0]
-        const j = JSON.parse(getCookie('focus-new'))[1]
+        const i = JSON.parse(getCookie('focus'))[0]
+        const j = JSON.parse(getCookie('focus'))[1]
         return focus.data[i].data[j]
     },
     apps: function () {
