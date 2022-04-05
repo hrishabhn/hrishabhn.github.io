@@ -279,6 +279,16 @@ const allBooks = {
         format: 'EBook',
         // style: 'secondary',
     },
+    'hitchhiker2': {
+        name: "The Hitchhiker's Guide to the Galaxy",
+        id: 'hitchhiker',
+        link: 'kindle://',
+        author: 'Douglas Adams',
+        coverType: 'jpg',
+        progress: 'New',
+        format: 'EBook',
+        // style: 'secondary',
+    },
 }
 
 for (const key in allBooks) {
