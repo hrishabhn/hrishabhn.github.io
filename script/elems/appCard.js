@@ -1,3 +1,12 @@
+const appTray = {
+    main: function (data, title) {
+        let nodes = []
+        for (const app of data) nodes.push(appCard.main(app))
+        return content.tray(title, nodes, 20, 8)
+    },
+}
+
+
 const appCard = {
     hover: function (app) {
         let hoverDetailElem = document.createElement('div')

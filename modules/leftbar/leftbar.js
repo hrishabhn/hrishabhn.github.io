@@ -8,6 +8,7 @@ const leftbar = {
         const input = document.createElement('input')
         input.id = 'spotlight'
         input.placeholder = 'Search'
+        input.onkeyup = function (e) { spotlightRun(e) }
 
         inputBox.append(elems.icon(SFSymbols.magnifyingglass))
         inputBox.append(input)
@@ -21,7 +22,7 @@ const leftbar = {
                 name: 'DND',
                 icon: SFSymbols.moon.fill,
                 id: 'dnd',
-                trigger: function() { dnd.toggle() },
+                trigger: function () { dnd.toggle() },
             },
             {
                 name: 'Calendar',
