@@ -53,13 +53,12 @@ const leftbar = {
         elem.append(elems.hline())
 
         // pages
-        for (const focusTray of focus.menuData()) {
+        for (const focusTray of focus.data) {
             let menuTray = document.createElement('div')
             menuTray.classList = 'menu-tray'
-            menuTray.append(elems.subtitle('focus x'))
+            menuTray.append(elems.subtitle(focusTray.name))
 
-
-            for (const item of focusTray) {
+            for (const item of focusTray.data) {
                 let but = elems.a(item.icon, item.name)
                 but.classList = 'clickable-o'
                 if (item.name == focus.get().name) but.classList.add('active')
@@ -72,8 +71,6 @@ const leftbar = {
             elem.append(menuTray)
         }
         if (elem.lastChild.lastChild.classList == 'hline') elem.lastChild.lastChild.remove()
-
-
 
         elem.append(elems.grow())
     },
