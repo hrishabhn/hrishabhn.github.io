@@ -1,6 +1,10 @@
 const leftbar = {
     load: function () {
         const elem = document.getElementById('leftbar')
+        if (focus.get().style) {
+            elem.style.setProperty('--col-dark', `var(--${focus.get().style}-dark)`)
+            elem.style.setProperty('--col-light', `var(--${focus.get().style}-light)`)
+        }
         
         // header and search
         elem.append(elems.title('Dashboard'))
@@ -62,7 +66,6 @@ const leftbar = {
                 let but = elems.a(item.icon, item.name)
                 but.classList = 'clickable-o'
                 if (item.name == focus.get().name) but.classList.add('active')
-                but.firstChild.classList.add('blue-fg')
                 but.onclick = function (e) { openApp(item, e) }
 
                 menuTray.append(but)

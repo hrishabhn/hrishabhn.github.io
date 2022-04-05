@@ -116,9 +116,9 @@
 }
 
 #leftbar .control-centre a.active .icon>* {
-    background-color: var(--blue-dark);
+    background-color: var(--col-dark, var(--blue-dark));
     fill: white;
-    box-shadow: 0 5px 10px -2px var(--blue-dark);
+    box-shadow: 0 5px 10px -2px var(--col-dark, var(--blue-dark));
 }
 
 #leftbar .control-centre a.active .icon>*>* {
@@ -131,8 +131,8 @@
     }
 
     #leftbar .control-centre a.active .icon>* {
-        background-color: var(--blue-light);
-        box-shadow: 0 5px 10px -5px var(--blue-light);
+        background-color: var(--col-light, var(--blue-light));
+        box-shadow: 0 5px 10px -5px var(--col-light, var(--blue-light));
     }
 }
 
@@ -167,18 +167,23 @@
     background-color: var(--white-10);
 }
 
+#leftbar .menu-tray a .icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    fill: var(--col-dark, var(--blue-dark));
+}
 
 @media screen and (prefers-color-scheme: light) {
     #leftbar .menu-tray a.active {
         background-color: var(--black-10);
     }
+
+    #leftbar .menu-tray a .icon {
+        fill: var(--col-light, var(--blue-light));
+    }
 }
 
-#leftbar .menu-tray a .icon {
-    height: 24px;
-    width: 24px;
-    margin-right: 10px;
-}
 
 #leftbar .menu-tray a p {
     font-size: 12px;
