@@ -188,65 +188,6 @@ function mediaDetailCard(thumb, genre, name, summary) {
     } else return thumb
 }
 
-// bookpod
-
-function searchBookPodNewRow(results, title, type) {
-    let row = rowBase(title)
-    let nodes = []
-
-    // process type
-    let allData
-    let folder
-    if (type == 'book') {
-        allData = allBooks
-        folder = 'books'
-    } else if (type == 'pod') {
-        allData = allPods
-        folder = 'podcasts'
-    }
-
-    let med = false
-    if (results.length < 5) {
-        med = true
-    }
-
-    for (const key of results) {
-        const item = allData[key]
-
-        // base card
-        let card = document.createElement('a')
-        card.classList = `media-card ${type} clickable-o`
-
-        let thumb = elems.thumb(`./media-image/${folder}/${item.id}.${item.coverType}`)
-        card.append(thumb)
-
-
-        if ((item.progress) && (item.progress != 'NEW')) card.append(mediaTimeElem(item.progress))
-        if (!!parseFloat(item.progress)) thumb.append(mediaProgressBarElem(parseFloat(item.progress)))
-
-
-
-        // med card
-        if (med) {
-            card.classList.remove('clickable-o')
-            if (type == 'pod') card = mediaDetailCard(card, item.name, item.title, item.summary ?? null)
-            else if (type == 'book') card = mediaDetailCard(card, item.author, item.name, item.summary ?? null)
-        }
-
-        card.href = item.link
-        card.target = '_blank'
-
-
-        nodes.push(card)
-    }
-
-    row.append(trayWithKids(nodes, 4))
-    return row
-}
-
-
-
-
 // shared
 function mediaNewOrSoon(date) {
     if (countdown.future(date)) {
