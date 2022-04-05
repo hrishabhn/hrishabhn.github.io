@@ -15,14 +15,6 @@ const spotlight = {
     },
     elem: function () {
         return document.getElementById('spotlight')
-    }
-    // create: function() {
-
-    // },
-    // create: function() {
-
-    // },
-    // create: function() {
-
-    // },
+    },
+    result: document.getElementById('content-elem'),
 }

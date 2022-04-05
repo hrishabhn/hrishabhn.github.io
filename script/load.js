@@ -4,6 +4,7 @@ function loadApp() {
     routine.load()
 
     leftbar.load()
+    spotlight.elem().focus()
     dnd.elemLoad()
     topbarLoad()
     content.load()

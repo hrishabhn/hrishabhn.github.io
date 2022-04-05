@@ -16,8 +16,6 @@ const focus = {
                     trays: function () {
                         return [
                             widgetTray(),
-                            //         defaultDash(focusApps(),'Focus Modes','cyan'),
-                            //         searchAppsRow(searchApps('', appData['notion']), 'Notion'),
                         ]
                     },
                 },

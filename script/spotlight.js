@@ -1,10 +1,4 @@
-function resultElem() { return document.getElementById('content-elem') }
-
 const len = 5
-
-function spotlightLoad() {
-    spotlight.elem().focus()
-}
 
 function spotlightRun(e) {
     let qOrig = spotlight.elem().value
@@ -41,7 +35,7 @@ function spotlightRun(e) {
                 }
             }
         } else {
-            removeAllChildNodes(resultElem())
+            removeAllChildNodes(spotlight.result)
             let resultRowArray = [
                 appTray.main(searchApps(q, focus.apps()), 'Focus'),
                 appTray.main(searchApps(q, appData['main']), 'Apps'),
@@ -73,9 +67,9 @@ function spotlightRun(e) {
                 let relevant = item.lastChild.hasChildNodes()
 
                 if (relevant) {
-                    resultElem().append(elems.divider())
+                    spotlight.result.append(elems.divider())
                     item.id = `row-${i}`
-                    resultElem().append(item)
+                    spotlight.result.append(item)
                     i++
                 }
 
@@ -85,135 +79,14 @@ function spotlightRun(e) {
 
 
     } else {
-        removeAllChildNodes(resultElem())
+        removeAllChildNodes(spotlight.result)
         content.load()
-        if (e.key == 'Enter') {
-            window.open('https://google.com', '_self')
-        }
-
+        if (e.key == 'Enter') window.open('https://google.com', '_self')
     }
-
-
-    // // console.log(e)
-
-    // if ((e.key == 'ArrowUp') || (e.key == 'ArrowDown')) {
-    //     arrowKeys(e)
-    // } else {
-    //     arrowIndex = -1
-    //     let results = []
-    // removeAllChildNodes(resultList)
-
-    //     let movies = searchMovies(q)
-
-    //     for (const movieIndex of movies) {
-    //         let movie = movieData[movieIndex[0]][movieIndex[1]]
-
-
-    //         results.push(resultListelems.item({
-    //             text: movie.name,
-    //             subtext: movie.info.location,
-    //             image: `url(./media-image/TV/background/${movie.id}.${movie.style.poster.wideType})`,
-    //             color: movie.style.color,
-    //             imgRatio: '16 / 9',
-    //             detail: tvDetail(movieIndex[0],movieIndex[1])
-    //         }))
-    //     }
-
-
-    //     for (let i = 0; i < results.length; i++) {
-    //         let item = results[i]
-    //         item.onmouseover = function() { mouseHover(i) }
-    //         resultList.append(item)
-
-    //     }
-
-
-    //     resultList.append(elems.grow())
-    //     // arrowIndex = 0
-    // }
-
-
-
-
-
-
-
-
-    // removeAllChildNodes(homeAll)
-
-    // let resultRows = [
-    //     searchAppsRow(searchApps(q, focusApps()), 'Focus'),
-    //     searchAppsRow(searchApps(q, appData['main']), 'Apps'),
-    //     searchAppsRow(searchApps(q, appData['notion']), 'Notion'),
-    //     searchAppsRow(searchApps(q, appData['video']), 'Video'),
-    //     searchMoviesRow(searchMovies(q), 'TV & Movies'),
-    //     searchBooksRow(searchBooks(q)),
-    // ]
-
-    // for (const row of resultRows) {
-    //     if (row.lastChild.hasChildNodes()) {
-    //         homeAll.append(row)
-    //     }
-    // }
-
-    // if (!homeAll.hasChildNodes()) {
-    //     homeAll.append(rowBase('No results'))
-    // }
-
-    // console.log(homeAll.hasChildNodes())
-
-
-    // console.log(!!searchApps(q,prodApps)[0])
-
-
-
-    // prevHover = null
 }
 
 
 
-
-// function resultListelems.item(data) {
-
-//     if (data.color) {
-//         var color = data.color
-//     }
-
-
-//     let box = document.createElement('div')
-//     box.classList = 'result-box'
-//     box.innerHTML = `
-//     <div class="back" style="--col: #${color};--col40: #${color}66;--col60: #${color}99;"></div>`
-
-//     let card = document.createElement('div')
-//     card.classList = 'result-card layer-1 card-shadow'
-//     card.innerHTML = `
-//     <div class="bg" style="background-color: #${color};"></div>
-//     <div class="thumb" style="background-image: ${data.image}"></div>
-//     <div style="height: 8px;"></div>
-//     <p class="text">${data.text}</p>
-//     <p class="subtext">${data.subtext}</p>
-//     <div class="grow"></div>`
-//     card.onclick = function() { showDetail(data.detail) }
-
-//     box.append(card)
-
-
-//     // let elem = document.createElement('div')
-//     // elem.classList = 'result-item layer-1 clickable-o card-shadow'
-//     // elem.innerHTML = `
-//     // <div class="thumb image-border thin" style="background-image: ${data.image}; height: ${data.imgH}px; width: ${data.imgW}px;"></div>
-//     // <div class="spacer-x" style="--size: 10px;"></div>
-//     // <div class="textbox">
-//     //     <p1>${data.text}</p1>
-//     //     <div class="spacer-x" style="--size: 2px;"></div>
-//     //     <div class="grow"></div>
-//     //     <p2>${data.subtext}</p2>
-//     // </div>
-//     // `
-
-//     return box
-// }
 
 function searchApps(q, data) {
     let results = []
@@ -236,31 +109,3 @@ function searchApps(q, data) {
     }
     return results
 }
-
-function rowBase(title) {
-    let row = document.createElement('div')
-    row.classList = 'content-row'
-    if (title) {
-        row.innerHTML = `<p class="header">${title}</p>`
-    }
-
-    return row
-}
-
-// function trayBase() {
-//     let tray = document.createElement('div')
-//     tray.classList = 'tray'
-//     return tray
-// }
-
-function cardBase() {
-    let card = document.createElement('a')
-    card.classList = 'layer-1 card-hover'
-    return card
-}
-// function thumbBase(link) {
-//     let thumb = document.createElement('div')
-//     thumb.classList = 'thumb'
-//     thumb.style.setProperty('background-image', `url(${link})`)
-//     return thumb
-// }
