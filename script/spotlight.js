@@ -1,14 +1,13 @@
-function spotlightElem() { return document.getElementById('spotlight') }
 function resultElem() { return document.getElementById('content-elem') }
 
 const len = 5
 
 function spotlightLoad() {
-    spotlightElem().focus()
+    spotlight.elem().focus()
 }
 
 function spotlightRun(e) {
-    let qOrig = spotlightElem().value
+    let qOrig = spotlight.elem().value
     let q = qOrig.toUpperCase()
 
     // console.log(q)
@@ -44,7 +43,7 @@ function spotlightRun(e) {
         } else {
             removeAllChildNodes(resultElem())
             let resultRowArray = [
-                appTray.main(searchApps(q, focusApps()), 'Focus'),
+                appTray.main(searchApps(q, focus.apps()), 'Focus'),
                 appTray.main(searchApps(q, appData['main']), 'Apps'),
                 appTray.main(searchApps(q, appData['notion']), 'Notion'),
                 appTray.main(searchApps(q, appData['school']), 'School'),

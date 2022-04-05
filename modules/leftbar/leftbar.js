@@ -1,21 +1,10 @@
 const leftbar = {
     load: function () {
         const elem = document.getElementById('leftbar')
-
-        const inputBox = document.createElement('div')
-        inputBox.classList = 'input layer-0'
-
-        const input = document.createElement('input')
-        input.id = 'spotlight'
-        input.placeholder = 'Search'
-        input.onkeyup = function (e) { spotlightRun(e) }
-
-        inputBox.append(elems.icon(SFSymbols.magnifyingglass))
-        inputBox.append(input)
-
+        
         // header and search
         elem.append(elems.title('Dashboard'))
-        elem.append(inputBox)
+        elem.append(spotlight.create())
 
         const controlData = [
             {
@@ -62,8 +51,6 @@ const leftbar = {
         elem.append(control)
         elem.append(elems.spacer(10))
         elem.append(elems.hline())
-
-        console.log(focus.get())
 
         // pages
         for (const focusTray of focus.menuData()) {

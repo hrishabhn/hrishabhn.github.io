@@ -61,7 +61,7 @@ function createSpotlight() {
 }
 
 function resetSpotlight() {
-    let container = (spotlightElem().parentElement)
+    let container = (spotlight.elem().parentElement)
     let thumb = container.childNodes[1]
     let input = container.lastChild
 
@@ -72,7 +72,7 @@ function resetSpotlight() {
 }
 
 function startSearchEngine(data) {
-    let container = (spotlightElem().parentElement)
+    let container = (spotlight.elem().parentElement)
     let input = container.lastChild
 
     removeAllChildNodes(resultElem())

@@ -234,14 +234,10 @@ const focus = {
         if (!getCookie('focus-new')) setCookie('focus-new', JSON.stringify([0, 0]), 1)
     },
     set: function (i, j) {
-        console.log(i, j)
-        console.log(JSON.stringify([i, j]))
         setCookie('focus-new', JSON.stringify([i, j]), 1)
         location.reload()
     },
     get: function () {
-        console.log(getCookie('focus-new'))
-
         const i = JSON.parse(getCookie('focus-new'))[0]
         const j = JSON.parse(getCookie('focus-new'))[1]
         return focus.data[i].data[j]
@@ -284,5 +280,3 @@ for (const i in focus.data) for (const j in focus.data[i].data) {
     const item = focus.data[i].data[j]
     item.trigger = function () { focus.set(parseInt(i), parseInt(j)) }
 }
-
-console.log(focus)

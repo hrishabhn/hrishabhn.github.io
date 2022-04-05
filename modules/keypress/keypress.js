@@ -5,12 +5,12 @@ function keyPress(e) {
 
     if (e.key == '/') {
 
-        if (!(document.activeElement == spotlightElem())) {
+        if (!(document.activeElement == spotlight.elem())) {
             e.preventDefault()
-            spotlightElem().focus()
+            spotlight.elem().focus()
         }
     } else if (e.key == 'Tab') {
-        if (document.activeElement == spotlightElem()) {
+        if (document.activeElement == spotlight.elem()) {
             e.preventDefault()
         }
     } else if (e.key == 'Escape') {
