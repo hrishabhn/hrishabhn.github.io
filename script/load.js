@@ -1,5 +1,8 @@
 function loadApp() {
     focusLoad()
+
+    leftbar.load()
+
     dndLoad()
     routine.load()
 

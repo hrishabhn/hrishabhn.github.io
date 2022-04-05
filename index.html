@@ -25,6 +25,7 @@
 
     <!-- base -->
     <link rel="stylesheet" href="modules/layout/layout.css">
+    <link rel="stylesheet" href="modules/leftbar/leftbar.css">
 
     <!-- modal -->
     <link rel="stylesheet" href="modules/modal/modal.css">
@@ -93,10 +94,11 @@
 
 <body id="body" ontouchstart="" onload="loadApp()" class="layer-0">
     <div id="topbar" class="topbar layer-1"></div>
-    <div class="main">
+    <div id="main">
+        <div id="leftbar" class="layer-0"></div>
         <div id="rest-of-stuff">
             <div id="splash"></div>
-            <div id="home-all" class="layer-0"></div>
+            <div id="home-all"></div>
         </div>
 
 
@@ -144,7 +146,7 @@
 <script src="calendar/tasks_all.js"></script>
 
 <!-- base -->
-
+<script src="modules/leftbar/leftbar.js"></script>
 
 <!-- modal -->
 <script src="modules/modal/modal.js"></script>

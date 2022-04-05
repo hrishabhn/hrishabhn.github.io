@@ -2,13 +2,16 @@
     --topbar-h: calc(50px + env(safe-area-inset-top))
 }
 
-.main {
+#main {
     position: fixed;
     top: var(--topbar-h);
     left: 0;
 
     height: calc(100vh - var(--topbar-h));
     width: 100vw;
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
 }
 
 #topbar {
