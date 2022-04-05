@@ -11,7 +11,6 @@ function loadApp() {
     bodyLoad()
 
     paramsLoad()
-    // setWallpaper()
 
     // Testing
     // skipToContent()
