@@ -21,15 +21,16 @@ const content = {
     load: function () {
         const elem = document.getElementById('content-elem')
         // title and apps
-        let header = elems.header()
-        header.append(elems.p(focus.get().name))
-        elem.append(header)
+        let title = elems.p(focus.get().name)
+        title.classList = 'content-title'
+        elem.append(title)
         if (focus.get().apps) {
             let nodes = []
             for (const app of focus.get().apps) nodes.push(appObject.small.card(app))
             elem.append(content.tray(null, nodes, 40, 5))
         }
 
+        elem.append(widgetTray())
         // content
         if (focus.get().trays) for (const tray of focus.get().trays()) elem.append(tray)
     },

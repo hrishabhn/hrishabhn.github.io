@@ -13,11 +13,6 @@ const focus = {
                     // apps: appData['main'],
                     work: false,
                     distract: false,
-                    trays: function () {
-                        return [
-                            widgetTray(),
-                        ]
-                    },
                 },
                 {
                     name: 'Travel',
