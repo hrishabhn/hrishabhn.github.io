@@ -45,7 +45,7 @@ const food = {
         const results = food.search(q)
         let nodes = []
         for (const app of results) nodes.push(food.card(app))
-        return content.tray('Restaurants & Food', nodes, 20, 10)
+        return content.tray('Restaurants & Food', nodes, 40, 10)
     },
     card: function (app) {
         let card = document.createElement('a')

@@ -38,7 +38,7 @@ const actors = {
     row: function (results, title) {
         let nodes = []
         for (const item of results) nodes.push(actors.card(item.actor, item.char))
-        return content.tray(title ?? 'Actors', nodes, 20, 20)
+        return content.tray(title ?? 'Actors', nodes, 40, 20)
     },
     detail: function (name) {
         let card = document.createElement('div')

@@ -1,9 +1,13 @@
+#content-elem {
+    padding-top: 10px;
+}
+
 #content-elem .header {
     width: 100%;
     justify-content: flex-start;
-    padding: 20px 20px 0;
-    font-size: 22px;
-    font-weight: 600;
+    padding: 20px 40px 0;
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .content-tray {
@@ -13,10 +17,10 @@
 
 .content-tray .sub-title {
     width: 100%;
-    padding: 8px 20px 0;
+    padding: 8px 40px 0;
     justify-content: flex-start;
 
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     cursor: default;
 }

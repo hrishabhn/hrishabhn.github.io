@@ -234,3 +234,13 @@
     height: calc(10px - (2 * var(--size)));
     width: calc(10px - (2 * var(--size)));
 }
+
+.tv-detail-card .extra {
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.tv-detail-card .extra .content-tray {
+    width: calc(100% + 40px);
+}

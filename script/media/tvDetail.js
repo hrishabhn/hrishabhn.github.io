@@ -82,7 +82,7 @@ function tvDetail(key) {
 
     if (movie.cast || movie.info.tags) {
         let more = document.createElement('div')
-        more.classList = 'vstack fill-width grow layer-0 primary-fg'
+        more.classList = 'extra layer-0 primary-fg'
 
         // cast
         if (movie.cast) {

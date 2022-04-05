@@ -266,7 +266,7 @@
 /* new */
 .media-card{
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 12px;
     overflow: hidden;
 }
 
@@ -335,6 +335,7 @@
     width: 280px;
     height: 100%;
     color: white;
+    border-radius: 5px;
 }
 .media-card.movie.big .bg {
     filter: brightness(0.5) saturate(2);

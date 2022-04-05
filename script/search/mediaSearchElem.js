@@ -92,7 +92,7 @@ const mediaElems = {
                 nodes.push(card)
             }
 
-            return content.tray(title, nodes, 20, 4)
+            return content.tray(title, nodes, 40, 15)
         },
     },
     bookPod: {
@@ -145,7 +145,7 @@ const mediaElems = {
                 nodes.push(card)
             }
 
-            return content.tray(title, nodes, 20, 4)
+            return content.tray(title, nodes, 40, 4)
         },
     },
 }

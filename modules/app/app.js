@@ -55,7 +55,7 @@ const appObject = {
         tray: function (data, title) {
             let nodes = []
             for (const app of data) nodes.push(this.card(app))
-            return content.tray(title, nodes, 20, 8)
+            return content.tray(title, nodes, 40, 8)
         },
     },
     small: {
