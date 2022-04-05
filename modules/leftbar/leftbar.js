@@ -6,6 +6,7 @@ const leftbar = {
         inputBox.classList = 'input layer-0'
 
         const input = document.createElement('input')
+        input.id = 'spotlight'
         input.placeholder = 'Search'
 
         inputBox.append(elems.icon(SFSymbols.magnifyingglass))

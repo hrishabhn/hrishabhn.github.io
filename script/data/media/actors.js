@@ -36,11 +36,9 @@ const actors = {
         return card
     },
     row: function (results, title) {
-        let row = rowBase(title ?? 'Actors')
         let nodes = []
         for (const item of results) nodes.push(actors.card(item.actor, item.char))
-        row.append(trayWithKids(nodes, 20))
-        return row
+        return content.tray(title ?? 'Actors', nodes, 20, 20)
     },
     detail: function (name) {
         let card = document.createElement('div')

@@ -4,10 +4,7 @@ for (let tray of bookRaw) {
     let results = []
     for (const book of tray.data) results.push(book.id)
     tray.results = results
-
-    // tray.elem = searchBookPodRow(results, tray.name, 'book')
-    tray.elem = searchBookPodNewRow(results, tray.name, 'book')
-
+    tray.elem = mediaElems.bookPod.row(results, tray.name, 'book')
     bookData.push(tray)
 }
 
