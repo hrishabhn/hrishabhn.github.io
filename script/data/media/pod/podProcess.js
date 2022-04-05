@@ -21,5 +21,5 @@ const pods = {
         return results
     },
     // searchRow: function (q) { return searchBookPodRow(this.search(q), 'Podcasts', 'pod') },
-    searchRow: function (q) { return searchBookPodNewRow(this.search(q), 'Podcasts', 'pod') },
+    searchRow: function (q) { return mediaElems.bookPod.row(this.search(q), 'Podcasts', 'pod') },
 }

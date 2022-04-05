@@ -43,11 +43,9 @@ const food = {
     },
     searchRow: function (q) {
         const results = food.search(q)
-        let row = rowBase('Restaurants & Food')
         let nodes = []
         for (const app of results) nodes.push(food.card(app))
-        row.append(trayWithKids(nodes))
-        return row
+        return content.tray('Restaurants & Food', nodes, 20, 10)
     },
     card: function (app) {
         let card = document.createElement('a')
