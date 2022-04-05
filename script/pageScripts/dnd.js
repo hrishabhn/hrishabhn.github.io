@@ -1,21 +1,26 @@
-function dndLoad() {
-    // if there is no existing cookie and current focus is 'work' set dnd true
-    if (!getCookie('dnd')) if (getFocus().work) setCookie('dnd', true, 1)
-}
-function dndElemLoad() { if (isDND()) document.getElementById('dnd').firstChild.classList.add('blue-fg') }
-function isDND() {
-    if (getCookie('dnd')) return JSON.parse(getCookie('dnd'))
-    return false
+const dnd = {
+    load: function () {
+        // if there is no existing cookie and current focus is 'work' set dnd true
+        if (!getCookie('dnd')) if (getFocus().work) setCookie('dnd', true, 1)
+    },
+    elemLoad: function () {
+        if (dnd.active()) document.getElementById('dnd').classList.add('active')
+    },
+    active: function () {
+        if (getCookie('dnd')) return JSON.parse(getCookie('dnd'))
+        return false
+    },
+    toggle: function () {
+        let dndElem = document.getElementById('dnd')
+
+        if (dnd.active()) {
+            setCookie('dnd', false, (1 / 1440))
+            dndElem.classList.remove('active')
+        } else {
+            setCookie('dnd', true, 1)
+            dndElem.classList.add('active')
+        }
+    },
+
 }
 
-function toggleDND() {
-    let dndElem = document.getElementById('dnd')
-
-    if (isDND()) {
-        setCookie('dnd', false, (1 / 1440))
-        dndElem.firstChild.classList.remove('blue-fg')
-    } else {
-        setCookie('dnd', true, 1)
-        dndElem.firstChild.classList.add('blue-fg')
-    }
-}

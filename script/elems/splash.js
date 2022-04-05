@@ -11,7 +11,7 @@ function splashLoad() {
     splash.append(elems.spacer(10))
     splash.append(createSpotlight())
     splash.append(elems.spacer(35))
-    if (!isDND()) splash.append(widgetTray())
+    if (!dnd.active()) splash.append(widgetTray())
     splash.append(elems.spacer(50))
     splash.append(elems.grow())
     if (getFocus().apps) splash.append(dockTray())

@@ -3,17 +3,25 @@ function loadApp() {
 
     leftbar.load()
 
-    dndLoad()
+    dnd.load()
     routine.load()
 
     topbarLoad()
-    dndElemLoad()
-    splashLoad()
+    dnd.elemLoad()
 
-    spotlightLoad()
-    bodyLoad()
+    content.load()
 
-    paramsLoad()
+    // splashLoad()
+
+    // spotlightLoad()
+    // bodyLoad()
+
+    // paramsLoad()
+
+
+
+
+
 
     // Testing
     // skipToContent()

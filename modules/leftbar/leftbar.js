@@ -12,14 +12,15 @@ const leftbar = {
         inputBox.append(input)
 
         // header and search
-        elem.append(elems.title(getFocus().name))
-        elem.append(elems.spacer(10))
+        elem.append(elems.title('Dashboard'))
         elem.append(inputBox)
 
         const controlData = [
             {
                 name: 'DND',
                 icon: SFSymbols.moon.fill,
+                id: 'dnd',
+                trigger: function() { dnd.toggle() },
             },
             {
                 name: 'Calendar',
@@ -42,10 +43,12 @@ const leftbar = {
             let toggle = document.createElement('div')
 
             let a = elems.a(data.icon, data.name)
+            if (data.id) a.id = data.id
             a.classList.add('clickable-o')
             a.firstChild.firstChild.classList.add('layer-0')
             a.onclick = function () {
                 a.classList.toggle('active')
+                if (data.trigger) data.trigger()
             }
 
             toggle.append(a)
@@ -73,8 +76,6 @@ const leftbar = {
                 but.onclick = function (e) { openApp(focus, e) }
 
                 menuTray.append(but)
-
-                console.log(focus.name == getFocus().name)
             }
             menuTray.append(elems.hline())
             elem.append(menuTray)

@@ -20,6 +20,7 @@
 #leftbar .title {
     width: 100%;
     padding: 0 10px;
+    margin-bottom: 10px;
     display: block;
     white-space: nowrap;
     overflow: hidden;

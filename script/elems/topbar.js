@@ -15,12 +15,6 @@ const topbar = {
                 icon: SFSymbols.arrow.triangle.circlepath,
             },
             {
-                name: 'Do Not Disturb',
-                id: 'dnd',
-                trigger: function () { toggleDND() },
-                icon: SFSymbols.moon.fill,
-            },
-            {
                 name: 'Calendar',
                 trigger: function (e) { modal.topbar(widgetCal(), e) },
                 icon: SFSymbols.calendar,
