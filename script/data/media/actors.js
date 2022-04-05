@@ -52,7 +52,7 @@ const actors = {
         actor.target = '_blank'
 
         card.append(actor)
-        card.append(mediaElems.movie.new.row(actors.actorMatch(name), 'TV & Movies', 'small'))
+        card.append(mediaElems.movie.row(actors.actorMatch(name), 'TV & Movies', 'small'))
         return card
     },
     data: {

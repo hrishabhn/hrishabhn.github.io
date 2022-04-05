@@ -96,7 +96,7 @@ function tvDetail(key) {
             for (const tray of movieData) for (item of tray)
                 if (item.info.tags) for (const tag of item.info.tags)
                     if ((tag == mainTag) && (item.id != key)) results.push(item.id)
-            if (results.length) more.append(mediaElems.movie.new.row(results, `More in ${movies.tags[mainTag]}`, 'small'))
+            if (results.length) more.append(mediaElems.movie.row(results, `More in ${movies.tags[mainTag]}`, 'small'))
             more.append(elems.hline())
         }
 

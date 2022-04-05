@@ -6,11 +6,9 @@ for (let tray of movieRaw) {
     tray.results = results
 
     tray.elem = {
-        big: mediaElems.movie.new.row(results, tray.name, 'big'),
-        small: mediaElems.movie.new.row(results, tray.name, 'small'),
-        smart: mediaElems.movie.new.row(results, tray.name, 'smart'),
-        oldSmall: mediaElems.movie.small.row(results, tray.name),
-        oldBig: mediaElems.movie.big.row(results, tray.name),
+        big: mediaElems.movie.row(results, tray.name, 'big'),
+        small: mediaElems.movie.row(results, tray.name, 'small'),
+        smart: mediaElems.movie.row(results, tray.name, 'smart'),
     }
 
     movieData.push(tray.data)
@@ -34,7 +32,7 @@ const movies = {
 
         return results
     },
-    searchRow: function (q) { return mediaElems.movie.new.row(this.search(q), 'TV & Movies', 'smart') },
+    searchRow: function (q) { return mediaElems.movie.row(this.search(q), 'TV & Movies', 'smart') },
     tags: {
         'himym': 'How I Met Your Mother',
         'mcu': 'Marvel Cinematic Universe',
