@@ -26,7 +26,7 @@ const content = {
         elem.append(header)
         if (focus.get().apps) {
             let nodes = []
-            for (const app of focus.get().apps) nodes.push(appCard.small(app))
+            for (const app of focus.get().apps) nodes.push(appObject.small.card(app))
             elem.append(content.tray(null, nodes, 20, 5))
         }
 

@@ -37,20 +37,20 @@ function spotlightRun(e) {
         } else {
             removeAllChildNodes(spotlight.result)
             let resultRowArray = [
-                appTray.main(searchApps(q, focus.apps()), 'Focus'),
-                appTray.main(searchApps(q, appData['main']), 'Apps'),
-                appTray.main(searchApps(q, appData['notion']), 'Notion'),
-                appTray.main(searchApps(q, appData['school']), 'School'),
-                appTray.main(searchApps(q, appData['shopping']), 'Shopping'),
-                appTray.main(searchApps(q, appData['bookmarks']), 'Bookmarks'),
-                appTray.main(searchApps(q, appData['video']), 'Video'),
-                appTray.main(searchApps(q, appData['read']), 'Read'),
-                appTray.main(searchApps(q, appData['listen']), 'Listen'),
-                appTray.main(searchApps(q, appData['travel']), 'Travel'),
-                appTray.main(searchApps(q, appData['utilities']), 'Utilities'),
-                appTray.main(searchApps(q, appData['profiles']), 'Social Media Pages'),
-                appTray.main(searchApps(q, appData['design']), 'Design'),
-                appTray.main(searchApps(q, appData['worldClock']), 'World Clock'),
+                appObject.main.tray(appObject.search(q, focus.apps()), 'Focus'),
+                appObject.main.tray(appObject.search(q, appData['main']), 'Apps'),
+                appObject.main.tray(appObject.search(q, appData['notion']), 'Notion'),
+                appObject.main.tray(appObject.search(q, appData['school']), 'School'),
+                appObject.main.tray(appObject.search(q, appData['shopping']), 'Shopping'),
+                appObject.main.tray(appObject.search(q, appData['bookmarks']), 'Bookmarks'),
+                appObject.main.tray(appObject.search(q, appData['video']), 'Video'),
+                appObject.main.tray(appObject.search(q, appData['read']), 'Read'),
+                appObject.main.tray(appObject.search(q, appData['listen']), 'Listen'),
+                appObject.main.tray(appObject.search(q, appData['travel']), 'Travel'),
+                appObject.main.tray(appObject.search(q, appData['utilities']), 'Utilities'),
+                appObject.main.tray(appObject.search(q, appData['profiles']), 'Social Media Pages'),
+                appObject.main.tray(appObject.search(q, appData['design']), 'Design'),
+                appObject.main.tray(appObject.search(q, appData['worldClock']), 'World Clock'),
                 // searchCalRow(searchCal(q)),
                 movies.searchRow(q),
                 actors.searchRow(q),
@@ -83,29 +83,4 @@ function spotlightRun(e) {
         content.load()
         if (e.key == 'Enter') window.open('https://google.com', '_self')
     }
-}
-
-
-
-
-function searchApps(q, data) {
-    let results = []
-    for (let i = 0; i < data.length; i++) {
-        const name = data[i].name.toUpperCase().includes(q)
-        const desc = data[i].desc.toUpperCase().includes(q)
-
-        let tagMatch = false
-        if (data[i].tags) {
-            for (const tag of data[i].tags) {
-                if (tag.toUpperCase().includes(q)) {
-                    tagMatch = true
-                }
-            }
-        }
-
-        if ((name) || (desc) || (tagMatch)) {
-            results.push(data[i])
-        }
-    }
-    return results
 }
