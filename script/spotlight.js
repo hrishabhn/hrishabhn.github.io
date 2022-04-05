@@ -64,7 +64,7 @@ function spotlightRun(e) {
             let i = 0
 
             for (let item of resultRowArray) {
-                let relevant = item.lastChild.hasChildNodes()
+                const relevant = item.lastChild.childNodes.length > 1
 
                 if (relevant) {
                     spotlight.result.append(elems.divider())
