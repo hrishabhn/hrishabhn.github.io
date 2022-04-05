@@ -1,12 +1,4 @@
 .topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(50px + env(safe-area-inset-top));;
-    /* box-shadow: 0 0 30px #00000022; */
-    z-index: 1;
-    padding: env(safe-area-inset-top) 10px 0;
     border-bottom: solid 1px var(--white-10);
 }
 @media screen and (prefers-color-scheme: light) {

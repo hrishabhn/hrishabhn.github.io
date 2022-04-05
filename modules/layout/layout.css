@@ -1,0 +1,22 @@
+:root {
+    --topbar-h: calc(50px + env(safe-area-inset-top))
+}
+
+.main {
+    position: fixed;
+    top: var(--topbar-h);
+    left: 0;
+
+    height: calc(100vh - var(--topbar-h));
+    width: 100vw;
+}
+
+#topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--topbar-h);
+    z-index: 1;
+    padding: env(safe-area-inset-top) 10px 0;
+}
