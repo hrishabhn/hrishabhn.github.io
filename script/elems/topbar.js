@@ -2,7 +2,6 @@ function topbarLoad() {
     const topbarElem = document.getElementById('topbar')
     topbarElem.append(topbar.left())
     topbarElem.append(topbar.middle())
-    // topbarElem.append(topbarRight())
     topbarElem.append(topbar.right())
 }
 
@@ -101,11 +100,11 @@ const topbar = {
         return tray
     },
     right: function () {
-        const focus = getFocus()
+        const currentFocus = focus.get()
         const app = {
-            name: focus.name,
+            name: currentFocus.name,
             trigger: function (e) { context.show(focusMenuData(), e) },
-            icon: focus.icon ?? SFSymbols.creditcard.fill,
+            icon: currentFocus.icon ?? SFSymbols.creditcard.fill,
         }
 
         let tray = document.createElement('div')

@@ -81,7 +81,7 @@ function widgetTray() {
         if (!(routine.data()[timeOfDay()].map(x => x.done).every(Boolean)))
             card.append(widgets.routine.card(timeOfDay()))
     for (const item of nodes) card.append(item)
-    if (getFocus().widgets) for (const widget of getFocus().widgets()) card.append(widget)
+    if (focus.get().widgets) for (const widget of focus.get().widgets()) card.append(widget)
 
 
     // card.append(widgets.tracking.card())

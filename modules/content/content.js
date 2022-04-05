@@ -20,19 +20,17 @@ const content = {
     },
     load: function () {
         const elem = document.getElementById('content-elem')
-
         // title and apps
         let header = elems.header()
-        header.append(elems.p(getFocus().name))
+        header.append(elems.p(focus.get().name))
         elem.append(header)
-        if (getFocus().apps) {
+        if (focus.get().apps) {
             let nodes = []
-            for (const app of getFocus().apps) nodes.push(appCard.small(app))
+            for (const app of focus.get().apps) nodes.push(appCard.small(app))
             elem.append(content.tray(null, nodes, 20, 5))
         }
 
         // content
-        let focus = getFocus()
-        if (focus.trays) for (const tray of focus.trays()) elem.append(tray)
+        if (focus.get().trays) for (const tray of focus.get().trays()) elem.append(tray)
     },
 }

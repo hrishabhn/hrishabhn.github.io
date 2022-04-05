@@ -1,20 +1,19 @@
 function loadApp() {
-    focusLoad()
-
-    leftbar.load()
-
+    focus.load()
     dnd.load()
     routine.load()
 
-    topbarLoad()
+    leftbar.load()
     dnd.elemLoad()
-
+    topbarLoad()
     content.load()
+
+
+
 
     // splashLoad()
 
     // spotlightLoad()
-    // bodyLoad()
 
     // paramsLoad()
 
@@ -42,13 +41,6 @@ function paramsLoad() {
         document.getElementById('spotlight').value = q
         spotlightRun(q)
     }
-}
-
-
-function bodyLoad() {
-    let focus = getFocus()
-    let home = document.getElementById('home-all')
-    if (focus.trays) for (const tray of focus.trays()) home.append(tray)
 }
 
 function skipToContent() {

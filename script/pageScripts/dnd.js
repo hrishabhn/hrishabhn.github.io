@@ -1,7 +1,7 @@
 const dnd = {
     load: function () {
         // if there is no existing cookie and current focus is 'work' set dnd true
-        if (!getCookie('dnd')) if (getFocus().work) setCookie('dnd', true, 1)
+        if (!getCookie('dnd')) if (focus.get().work) setCookie('dnd', true, 1)
     },
     elemLoad: function () {
         if (dnd.active()) document.getElementById('dnd').classList.add('active')

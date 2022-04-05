@@ -63,19 +63,21 @@ const leftbar = {
         elem.append(elems.spacer(10))
         elem.append(elems.hline())
 
+        console.log(focus.get())
+
         // pages
-        for (const focusTray of focusMenuData()) {
+        for (const focusTray of focus.menuData()) {
             let menuTray = document.createElement('div')
             menuTray.classList = 'menu-tray'
             menuTray.append(elems.subtitle('focus x'))
 
 
-            for (const focus of focusTray) {
-                let but = elems.a(focus.icon, focus.name)
+            for (const item of focusTray) {
+                let but = elems.a(item.icon, item.name)
                 but.classList = 'clickable-o'
-                if (focus.name == getFocus().name) but.classList.add('active')
+                if (item.name == focus.get().name) but.classList.add('active')
                 but.firstChild.classList.add('blue-fg')
-                but.onclick = function (e) { openApp(focus, e) }
+                but.onclick = function (e) { openApp(item, e) }
 
                 menuTray.append(but)
             }
