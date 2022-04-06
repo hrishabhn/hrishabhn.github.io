@@ -2,6 +2,7 @@ const bookRaw = [
     {
         name: 'Reading Now',
         data: [
+            allBooks.ender1,
             allBooks.hitchhiker2,
             allBooks.ready,
             allBooks.gweilo,

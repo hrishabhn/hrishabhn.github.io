@@ -100,6 +100,5 @@ script {
     .card-hover:hover {
         box-shadow: 0 0 0 1.5px var(--brand-col-light, var(--brand-col, var(--blue-light)));
         border: solid 1px var(--brand-col-light, var(--brand-col, var(--blue-light)));
-
     }
 }

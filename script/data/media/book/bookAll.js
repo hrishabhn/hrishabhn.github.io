@@ -289,6 +289,16 @@ const allBooks = {
         format: 'EBook',
         // style: 'secondary',
     },
+    'ender1': {
+        name: "Ender's Game",
+        id: 'ender1',
+        link: 'kindle://',
+        author: 'Orson Scott Card',
+        coverType: 'jpg',
+        progress: 'New',
+        format: 'EBook',
+        // style: 'secondary',
+    },
 }
 
 for (const key in allBooks) {
