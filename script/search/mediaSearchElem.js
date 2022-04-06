@@ -120,7 +120,9 @@ const mediaElems = {
 
                 // base card
                 let card = document.createElement('a')
-                card.classList = `media-card ${type} clickable-o`
+                card.classList = `media-card ${type} card-hover clickable-o`
+                if (item.style) { card.style.setProperty('--brand-col-dark', `--${item.style}-dark`) }
+                if (item.style) { card.style.setProperty('--brand-col-light', `--${item.style}-light`) }
 
                 let thumb = elems.thumb(`./media-image/${folder}/${item.id}.${item.coverType}`)
                 card.append(thumb)
