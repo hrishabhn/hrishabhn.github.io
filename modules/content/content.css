@@ -2,14 +2,6 @@
     padding-top: 10px;
 }
 
-#content-elem .content-title {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 20px 40px 0;
-    font-size: 28px;
-    font-weight: 700;
-}
-
 .content-tray {
     flex-direction: column;
     width: 100%;

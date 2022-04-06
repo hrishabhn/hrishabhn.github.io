@@ -1,11 +1,12 @@
 #widget-tray {
-    padding-top: 10px;
     width: calc(100% - 80px);
     display: grid;
     grid-template-columns: repeat(auto-fill, 180px);
+    grid-template-rows: auto;
     grid-auto-rows: 180px;
     gap: 35px;
 }
+
 
 @media (max-width: 450px) {
     #widget-tray {
@@ -16,6 +17,15 @@
     }
 }
 
+#widget-tray .content-title {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px 0 0;
+    margin-bottom: -20px;
+    font-size: 28px;
+    font-weight: 700;
+}
 
 .widget-card {
     flex-direction: column;

@@ -62,6 +62,10 @@ function widgetTray() {
     card.id = 'widget-tray'
     card.classList = 'limit'
 
+    let title = elems.p(focus.get().name)
+    title.classList = 'content-title'
+    card.append(title)
+
     const nodes = [
         widgets.cal.card(),
         widgets.tasks.card(),
