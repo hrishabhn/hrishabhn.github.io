@@ -1,7 +1,4 @@
 let events_all = [
-{"location":"2.3.B03","end":"2022-04-05T17:00:00+02:00","start":"2022-04-05T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Engineering Management"},
-{"location":"","end":"2022-04-05T19:00:00+02:00","start":"2022-04-05T18:00:00+02:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Industrial Organisation Study"},
-{"location":"https:\/\/purdue-edu.zoom.us\/j\/3602561269","end":"2022-04-05T21:30:00+02:00","start":"2022-04-05T20:00:00+02:00","allDay":"No","notes":"----( Video Call )----\nhttps:\/\/purdue-edu.zoom.us\/j\/3602561269\n---===---","calendar":"Work","link":"","name":"SAIL Meeting"},
 {"location":"","end":"2022-04-06T13:00:00+02:00","start":"2022-04-06T12:00:00+02:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Industrial Organisation Study"},
 {"location":"","end":"2022-04-06T16:00:00+02:00","start":"2022-04-06T14:15:00+02:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Industrial Organisation Study"},
 {"location":"","end":"2022-04-06T17:15:00+02:00","start":"2022-04-06T16:15:00+02:00","allDay":"No","notes":"","calendar":"Key Dates","link":"","name":"Industrial Organisation Exam 2"},
@@ -11,8 +8,8 @@ let events_all = [
 {"location":"4.0.E03","end":"2022-04-07T17:00:00+02:00","start":"2022-04-07T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grp.18 y 19","calendar":"Spring 2022","link":"","name":"Engineering Management"},
 {"location":"","end":"2022-04-09T00:00:00+02:00","start":"2022-04-08T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Controls Lab 2"},
 {"location":"LAB 1.1.L02 (Automatica)","end":"2022-04-08T15:00:00+02:00","start":"2022-04-08T13:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
-{"location":"","end":"2022-04-12T00:00:00+02:00","start":"2022-04-11T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 11"},
 {"location":"","end":"2022-04-18T00:00:00+02:00","start":"2022-04-11T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Easter Holidays"},
+{"location":"","end":"2022-04-12T00:00:00+02:00","start":"2022-04-11T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 11"},
 {"location":"Madrid Barajas International Airport, Madrid, Spain","end":"2022-04-12T09:55:00+02:00","start":"2022-04-12T06:50:00+02:00","allDay":"No","notes":"Ryanair, FR 2913\nMadrid Barajas International Airport (MAD) — Tenerife South Airport (TFS)\n\nDeparts Terminal 1: 6:50 AM GMT+2\nArrives: 8:55 AM GMT+1\nTrip duration: 3 hrs, 5 min\n\nBooking reference: GHY72R\n\nhttps:\/\/www.appintheair.mobi\/cal","calendar":"Travel","link":"https:\/\/links.appintheair.mobi\/a\/key_live_jmcwCsEPIK1Fhb9bqFDawflibpe3hWrO?tripID=6287387175223296&feature=deeplink&channel=aita-ios&campaign=calendar","name":"FR 2913 MAD[1] ✈︎ TFS (GHY72R)"},
 {"location":"Champions League","end":"2022-04-12T22:00:00+02:00","start":"2022-04-12T21:00:00+02:00","allDay":"No","notes":"","calendar":"Outings","link":"","name":"Atlético Madrid vs Manchester City"},
 {"location":"Champions League","end":"2022-04-13T22:00:00+02:00","start":"2022-04-13T21:00:00+02:00","allDay":"No","notes":"","calendar":"Outings","link":"","name":"Real Madrid vs Chelsea"},

@@ -117,9 +117,8 @@ let budgetData = [
     { "amount": 3, "name": "Breakfast", "category": "Food", "date": "2022-04-05T11:07:00+02:00" },
     { "amount": 14.25, "name": "Lunch", "category": "Food", "date": "2022-04-05T15:16:00+02:00" },
     { "amount": 15.93, "name": "Grocery", "category": "Grocery", "date": "2022-04-06T10:54:00+02:00" },
- 	{"amount":10.9,"name":"Lunch","category":"Food","date":"2022-04-06T11:11:00+02:00"},
-{"amount":1.2,"name":"Coffee","category":"Food","date":"2022-04-06T13:29:00+02:00"},
-
-
-
+    { "amount": 10.9, "name": "Lunch", "category": "Food", "date": "2022-04-06T11:11:00+02:00" },
+    { "amount": 1.2, "name": "Coffee", "category": "Food", "date": "2022-04-06T13:29:00+02:00" },
+    { "amount": 5, "name": "Beer", "category": "Drinks", "date": "2022-04-06T22:15:00+02:00" },
+    { "amount": 2.2, "name": "Breakfast", "category": "Food", "date": "2022-04-07T10:08:00+02:00" },
 ]

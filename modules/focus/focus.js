@@ -239,7 +239,7 @@ const focus = {
         let apps = []
         for (const tray of focus.data) for (const item of tray.data) apps.push({
             name: item.name,
-            trigger: function () { focus.trigger() },
+            trigger: function () { item.trigger() },
             desc: item.desc,
             thumb: item.thumb,
             style: item.style,
@@ -247,24 +247,24 @@ const focus = {
         })
         return apps
     },
-    menuData: function () {
-        let menuData = []
-        for (const tray of focus.data) {
-            let menuTray = []
+    // menuData: function () {
+    //     let menuData = []
+    //     for (const tray of focus.data) {
+    //         let menuTray = []
 
-            for (const focus of tray.data) {
-                menuTray.push({
-                    type: 'icon',
-                    name: focus.name,
-                    icon: focus.icon,
-                    trigger: function () { focus.trigger() },
-                    distract: focus.distract,
-                })
-            }
-            menuData.push(menuTray)
-        }
-        return menuData
-    },
+    //         for (const focus of tray.data) {
+    //             menuTray.push({
+    //                 type: 'icon',
+    //                 name: focus.name,
+    //                 icon: focus.icon,
+    //                 trigger: function () { focus.trigger() },
+    //                 distract: focus.distract,
+    //             })
+    //         }
+    //         menuData.push(menuTray)
+    //     }
+    //     return menuData
+    // },
 }
 
 
