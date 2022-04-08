@@ -339,7 +339,7 @@
 }
 .media-card.movie.big .bg {
     filter: brightness(0.5) saturate(2);
-    background-color: var(--brand-col);
+    background-color: var(--brand-col-dark);
 }
 .media-card.movie.big .thumb-cont{
     width: 100%;
@@ -358,7 +358,7 @@
 .media-card.movie.big .thumb .grad {
     height: 100px;
     filter: brightness(0.5) saturate(2);
-    background-image: linear-gradient(#00000000,var(--brand-col));
+    background-image: linear-gradient(#00000000,var(--brand-col-dark));
 }
 
 .media-card.movie.big .tv-title-box{
