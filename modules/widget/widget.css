@@ -1,9 +1,9 @@
 #widget-tray {
     width: calc(100% - 80px);
     display: grid;
-    grid-template-columns: repeat(auto-fill, 67.5px);
+    grid-template-columns: repeat(auto-fill, 72.5px);
     grid-template-rows: auto;
-    grid-auto-rows: 67.5px;
+    grid-auto-rows: 72.5px;
     gap: 35px;
 }
 
