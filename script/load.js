@@ -40,6 +40,9 @@ function loadAccent() {
     if (focus.get().style) {
         document.documentElement.style.setProperty('--accent-dark', `var(--${focus.get().style}-dark)`);
         document.documentElement.style.setProperty('--accent-light', `var(--${focus.get().style}-light)`);
+    } else {
+        document.documentElement.style.setProperty('--accent-dark', `var(--blue-dark)`);
+        document.documentElement.style.setProperty('--accent-light', `var(--blue-light)`);
     }
 }
 

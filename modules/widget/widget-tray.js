@@ -101,6 +101,7 @@ function widgetTray() {
 function widgetCardBase(type) {
     let card = document.createElement(type)
     card.classList = 'widget-card layer-1'
+    card = cardHover(card, undefined, undefined)
     return card
 }
 
