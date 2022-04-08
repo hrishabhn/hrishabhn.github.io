@@ -40,23 +40,23 @@ const focus = {
                         ]
                     },
                 },
-                {
-                    name: 'Workout',
-                    id: 'workout',
-                    desc: 'Routines & Apps',
-                    thumb: thumbData['gym'],
-                    icon: SFSymbols.calendar,
-                    style: null,
-                    apps: appData['main'],
-                    work: false,
-                    distract: false,
-                    trays: function () {
-                        return [
-                            workoutCard(),
-                            elems.spacer(40),
-                        ]
-                    },
-                },
+                // {
+                //     name: 'Workout',
+                //     id: 'workout',
+                //     desc: 'Routines & Apps',
+                //     thumb: thumbData['gym'],
+                //     icon: SFSymbols.calendar,
+                //     style: null,
+                //     apps: appData['main'],
+                //     work: false,
+                //     distract: false,
+                //     trays: function () {
+                //         return [
+                //             workoutCard(),
+                //             elems.spacer(40),
+                //         ]
+                //     },
+                // },
             ],
         },
         {

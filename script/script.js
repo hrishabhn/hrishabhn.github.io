@@ -25,7 +25,7 @@ function timeOfDay(n) {
     if ((hour >= 21) || (hour <= 4)) return 'night'
     if ((hour >= 5) && (hour <= 12)) return 'morning'
     if ((hour >= 13) && (hour <= 16)) return 'afternoon'
-    if ((hour >= 17) && (hour <= 20)) return 'afternoon'
+    if ((hour >= 17) && (hour <= 20)) return 'evening'
 }
 
 const processDate = {

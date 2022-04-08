@@ -47,7 +47,7 @@
     text-transform: uppercase;
 }
 
-#leftbar .hline {
+#leftbar>.hline {
     width: calc(100% - 20px);
     margin-top: 10px;
 }

@@ -5,7 +5,6 @@ function loadApp() {
 
     leftbar.load()
     spotlight.elem().focus()
-    dnd.elemLoad()
     topbarLoad()
     content.load()
 

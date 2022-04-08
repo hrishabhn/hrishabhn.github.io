@@ -1,0 +1,60 @@
+#leftbar .routine {
+    width: 100%;
+    flex-direction: column;
+}
+
+#leftbar .routine .hline {
+    margin-left: 44px;
+    margin-right: 10px;
+    width: calc(100% - 54px);
+}
+
+#leftbar .routine .task {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 2px 0;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    /* background-color: blue; */
+}
+
+#leftbar .routine .task a {
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: solid 1px var(--white-10);
+}
+
+#leftbar .routine .task.done a {
+    border: solid 1px var(--white-20);
+    background-color: var(--col-dark, var(--blue-dark));
+}
+
+@media screen and (prefers-color-scheme: light) {
+    #leftbar .routine .task a {
+        border: solid 1px var(--dark-layer-1-10);
+    }
+
+    #leftbar .routine .task.done a {
+        border: solid 1px var(--dark-layer-1-20);
+        background-color: var(--col-light, var(--blue-light));
+    }
+}
+
+#leftbar .routine .task .icon {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+
+    transition: all 0.2s;
+    transform: scale(0.9);
+    opacity: 0;
+    fill: white;
+}
+
+#leftbar .routine .task.done .icon {
+    transform: scale(1);
+    opacity: 1;
+}

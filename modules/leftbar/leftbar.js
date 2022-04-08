@@ -5,7 +5,7 @@ const leftbar = {
             elem.style.setProperty('--col-dark', `var(--${focus.get().style}-dark)`)
             elem.style.setProperty('--col-light', `var(--${focus.get().style}-light)`)
         }
-        
+
         // header and search
         elem.append(elems.title('Dashboard'))
         elem.append(spotlight.create())
@@ -15,19 +15,23 @@ const leftbar = {
                 name: 'DND',
                 icon: SFSymbols.moon.fill,
                 id: 'dnd',
+                active: dnd.active(),
                 trigger: function () { dnd.toggle() },
             },
             {
                 name: 'Calendar',
                 icon: SFSymbols.calendar,
+                active: false,
             },
             {
                 name: 'Idea',
                 icon: SFSymbols.lightbulb.fill,
+                active: false,
             },
             {
                 name: 'Routine',
-                icon: SFSymbols.sunrise.fill,
+                icon: SFSymbols.arrow.triangle.circlepath,
+                active: (routine.data()[timeOfDay()]) && (!(routine.data()[timeOfDay()].map(x => x.done).every(Boolean))),
             },
         ]
 
@@ -40,6 +44,7 @@ const leftbar = {
             let a = elems.a(data.icon, data.name)
             if (data.id) a.id = data.id
             a.classList.add('clickable-o')
+            if (data.active) a.classList.add('active')
             a.firstChild.firstChild.classList.add('layer-0')
             a.onclick = function () {
                 a.classList.toggle('active')
@@ -55,6 +60,15 @@ const leftbar = {
         elem.append(control)
         elem.append(elems.spacer(10))
         elem.append(elems.hline())
+
+        // routine
+        if (routine.data()[timeOfDay()])
+            if (!(routine.data()[timeOfDay()].map(x => x.done).every(Boolean))) {
+                elem.append(elems.subtitle('routine'))
+                elem.append(routine.leftbar(timeOfDay()))
+                elem.append(elems.hline())
+            }
+
 
         // pages
         for (const focusTray of focus.data) {
