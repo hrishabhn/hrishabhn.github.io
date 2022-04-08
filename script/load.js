@@ -3,6 +3,8 @@ function loadApp() {
     dnd.load()
     routine.load()
 
+    loadAccent()
+
     leftbar.load()
     spotlight.elem().focus()
     topbarLoad()
@@ -32,6 +34,13 @@ function loadApp() {
     // train.data['mad-bcn'].detail()
     // modal.add(actors.detail('Alan Ritchson'))
     actors.repeatedNoImg()
+}
+
+function loadAccent() {
+    if (focus.get().style) {
+        document.documentElement.style.setProperty('--accent-dark', `var(--${focus.get().style}-dark)`);
+        document.documentElement.style.setProperty('--accent-light', `var(--${focus.get().style}-light)`);
+    }
 }
 
 function paramsLoad() {

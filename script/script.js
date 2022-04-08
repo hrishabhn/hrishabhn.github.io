@@ -20,6 +20,18 @@
 //     return t
 // }
 
+function cardHover(card, accent, style) {
+    card.classList.add('card-hover')
+    if (accent) {
+        card.style.setProperty('--brand-col-dark', `#${accent}`)
+        card.style.setProperty('--brand-col-light', `#${accent}`)
+    } else if (style) {
+        card.style.setProperty('--brand-col-dark', `var(--${style}-dark)`)
+        card.style.setProperty('--brand-col-light', `var(--${style}-light)`)
+    }
+    return card
+}
+
 function timeOfDay(n) {
     const hour = n ?? new Date().getHours()
     if ((hour >= 21) || (hour <= 4)) return 'night'

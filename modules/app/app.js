@@ -23,16 +23,10 @@ const appObject = {
     main: {
         card: function (app) {
             let card = document.createElement('a')
-            card.classList = 'app-card layer-1 clickable-o card-hover'
+            card.classList = 'app-card layer-1 clickable-o'
             card.target = '_blank'
             card.onclick = function (e) { openApp(app, e) }
-
-            if (app.accent) {
-                card.style.setProperty('--brand-col', `#${app.accent}`)
-            } else if (app.style) {
-                card.style.setProperty('--brand-col-dark', `var(--${app.style}-dark)`)
-                card.style.setProperty('--brand-col-light', `var(--${app.style}-light)`)
-            }
+            card = cardHover(card, app.accent, app.style)
 
             // if (app.searchBase) {
             //     card.setAttribute('engineData', JSON.stringify(app))

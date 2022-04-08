@@ -26,9 +26,9 @@ const mediaElems = {
 
                 // base card
                 var card = document.createElement('div')
-                card.classList = 'media-card card-hover movie clickable-o'
+                card.classList = 'media-card movie clickable-o'
                 if (movie.info.date) card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
-                if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
+                if (movie.style.color) card = cardHover(card, movie.style.color, null)
 
                 // size
                 if (small) card.classList.add('small')
@@ -120,9 +120,8 @@ const mediaElems = {
 
                 // base card
                 let card = document.createElement('a')
-                card.classList = `media-card ${type} card-hover clickable-o`
-                if (item.style) { card.style.setProperty('--brand-col-dark', `--${item.style}-dark`) }
-                if (item.style) { card.style.setProperty('--brand-col-light', `--${item.style}-light`) }
+                card.classList = `media-card ${type} clickable-o`
+                card = cardHover(card, null, item.style)
 
                 let thumb = elems.thumb(`./media-image/${folder}/${item.id}.${item.coverType}`)
                 card.append(thumb)

@@ -88,8 +88,8 @@ script {
 }
 
 .card-hover:hover {
-    box-shadow: 0 0 0 1.5px var(--brand-col-dark, var(--brand-col, var(--blue-dark)));
-    border: solid 1px var(--brand-col-dark, var(--brand-col, var(--blue-dark)));
+    box-shadow: 0 0 0 1.5px var(--brand-col-dark, var(--accent-dark));
+    border: solid 1px var(--brand-col-dark, var(--accent-dark));
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -98,7 +98,7 @@ script {
     }
 
     .card-hover:hover {
-        box-shadow: 0 0 0 1.5px var(--brand-col-light, var(--brand-col, var(--blue-light)));
-        border: solid 1px var(--brand-col-light, var(--brand-col, var(--blue-light)));
+        box-shadow: 0 0 0 1.5px var(--brand-col-light, var(--accent-light));
+        border: solid 1px var(--brand-col-light, var(--accent-light));
     }
 }
