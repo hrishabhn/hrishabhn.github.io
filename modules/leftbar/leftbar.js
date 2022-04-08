@@ -84,10 +84,11 @@ const leftbar = {
 
                 menuTray.append(but)
             }
-            menuTray.append(elems.hline())
             elem.append(menuTray)
+            elem.append(elems.hline())
         }
-        if (elem.lastChild.lastChild.classList == 'hline') elem.lastChild.lastChild.remove()
+        elem.lastChild.remove()
+        // if (elem.lastChild.lastChild.classList == 'hline') elem.lastChild.lastChild.remove()
 
         elem.append(elems.grow())
     },
