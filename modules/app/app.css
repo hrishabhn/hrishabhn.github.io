@@ -1,0 +1,14 @@
+.app-card.widget-card {
+    width: 100%;
+    padding: 15px;
+}
+
+.app-card.widget-card .thumb {
+    height: 70px;
+    width: 70px;
+}
+
+.app-card .icon {
+    height: 70px;
+    width: 70px;
+}

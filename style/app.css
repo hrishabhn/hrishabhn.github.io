@@ -40,6 +40,7 @@
 
 .app-card .textbox{
     flex-direction: column;
+    width: 100%;
 }
 .app-card .textbox p{
     display: block;

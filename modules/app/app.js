@@ -34,12 +34,12 @@ const appObject = {
                 card.style.setProperty('--brand-col-light', `var(--${app.style}-light)`)
             }
 
-            if (app.searchBase) {
-                card.setAttribute('engineData', JSON.stringify(app))
-                let icon = elems.icon(iconData['search'])
-                icon.classList = 'search'
-                card.append(icon)
-            }
+            // if (app.searchBase) {
+            //     card.setAttribute('engineData', JSON.stringify(app))
+            //     let icon = elems.icon(iconData['search'])
+            //     icon.classList = 'search'
+            //     card.append(icon)
+            // }
 
             if (app.dockIcon) card.append(elems.icon(app.dockIcon))
             else if (app.thumb) card.append(elems.appThumb(app.thumb))
@@ -81,6 +81,15 @@ const appObject = {
             let nodes = []
             for (const app of apps) nodes.push(this.card(app))
             return trayWithKids(nodes, 5, 0)
+        },
+    },
+    widget: {
+        card: function (app) {
+            let card = appObject.main.card(app)
+            // card.childNodes[2].remove()
+            card.classList.add('widget-card')
+            // card.append(elems.grow())
+            return card
         },
     },
     hover: function (app) {

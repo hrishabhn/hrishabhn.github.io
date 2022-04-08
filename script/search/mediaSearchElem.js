@@ -26,7 +26,7 @@ const mediaElems = {
 
                 // base card
                 var card = document.createElement('div')
-                card.classList = 'media-card movie clickable-o'
+                card.classList = 'media-card card-hover movie clickable-o'
                 if (movie.info.date) card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
                 if (movie.style.color) { card.style.setProperty('--brand-col', `#${movie.style.color}`) }
 
