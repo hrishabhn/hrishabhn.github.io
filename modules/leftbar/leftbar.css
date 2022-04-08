@@ -116,9 +116,9 @@
 }
 
 #leftbar .control-centre a.active .icon>* {
-    background-color: var(--col-dark, var(--blue-dark));
+    background-color: var(--accent-dark);
     fill: white;
-    box-shadow: 0 5px 10px -2px var(--col-dark, var(--blue-dark));
+    box-shadow: 0 5px 10px -2px var(--accent-dark);
 }
 
 #leftbar .control-centre a.active .icon>*>* {
@@ -131,8 +131,8 @@
     }
 
     #leftbar .control-centre a.active .icon>* {
-        background-color: var(--col-light, var(--blue-light));
-        box-shadow: 0 5px 10px -5px var(--col-light, var(--blue-light));
+        background-color: var(--accent-light);
+        box-shadow: 0 5px 10px -5px var(--accent-light);
     }
 }
 
@@ -171,7 +171,7 @@
     height: 24px;
     width: 24px;
     margin-right: 10px;
-    fill: var(--col-dark, var(--blue-dark));
+    fill: var(--accent-dark);
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -180,7 +180,7 @@
     }
 
     #leftbar .menu-tray a .icon {
-        fill: var(--col-light, var(--blue-light));
+        fill: var(--accent-light);
     }
 }
 

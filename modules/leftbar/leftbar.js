@@ -1,10 +1,6 @@
 const leftbar = {
     load: function () {
         const elem = document.getElementById('leftbar')
-        if (focus.get().style) {
-            elem.style.setProperty('--col-dark', `var(--${focus.get().style}-dark)`)
-            elem.style.setProperty('--col-light', `var(--${focus.get().style}-light)`)
-        }
 
         // header and search
         elem.append(elems.title('Dashboard'))
