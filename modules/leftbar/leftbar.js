@@ -31,7 +31,7 @@ const leftbar = {
             },
         ]
 
-
+        let controlTray = leftbar.elems.tray()
         let control = document.createElement('div')
         control.classList = 'control-centre'
         for (const data of controlData) {
@@ -52,24 +52,27 @@ const leftbar = {
         }
 
         // control centre
-        elem.append(elems.subtitle('control centre'))
-        elem.append(control)
-        elem.append(elems.spacer(10))
-        elem.append(elems.hline())
+        controlTray.append(elems.subtitle('control centre'))
+        controlTray.append(control)
+        controlTray.append(elems.spacer(10))
+        elem.append(controlTray)
 
         // routine
         if (routine.data()[timeOfDay()])
             if (!(routine.data()[timeOfDay()].map(x => x.done).every(Boolean))) {
-                elem.append(elems.subtitle('routine'))
-                elem.append(routine.leftbar(timeOfDay()))
-                elem.append(elems.hline())
+                let routineTray = leftbar.elems.tray()
+                routineTray.append(elems.hline())
+                routineTray.append(elems.subtitle('routine'))
+                routineTray.append(routine.leftbar(timeOfDay()))
+                elem.append(routineTray)
             }
 
 
         // pages
         for (const focusTray of focus.data) {
-            let menuTray = document.createElement('div')
-            menuTray.classList = 'menu-tray'
+            let menuTray = leftbar.elems.tray()
+            menuTray.classList.add('menu')
+            menuTray.append(elems.hline())
             menuTray.append(elems.subtitle(focusTray.name))
 
             for (const item of focusTray.data) {
@@ -81,9 +84,7 @@ const leftbar = {
                 menuTray.append(but)
             }
             elem.append(menuTray)
-            elem.append(elems.hline())
         }
-        elem.lastChild.remove()
         // if (elem.lastChild.lastChild.classList == 'hline') elem.lastChild.lastChild.remove()
 
         elem.append(elems.grow())
