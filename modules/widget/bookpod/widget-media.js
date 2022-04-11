@@ -1,6 +1,8 @@
 function widgetMedia(data, type) {
     let card = document.createElement('a')
     card.classList = `widget-card layer-1 clickable media`
+    // crd = cardHover(card, accent, style)
+    console.log(data, type)
 
     if (type == 'book') {
         card.classList.add('book')
@@ -8,6 +10,7 @@ function widgetMedia(data, type) {
     } else if (type == 'movie') {
         card.classList.add('movie')
         card.style.setProperty('--thumb', `url(../../../media-image/TV/background/${data.id}.${data.style.poster.wide.type})`)
+        card = cardHover(card, data.style.color, null)
     }
 
     let bg = elems.bg()

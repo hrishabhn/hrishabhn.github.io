@@ -3398,7 +3398,7 @@ const allMovies = {
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            date: '8 Apr, 2022 15:00:00',
+            date: '15 Apr, 2022 15:00:00',
             seasons: 3,
             yearStart: 2016,
             yearEnd: null,

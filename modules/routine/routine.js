@@ -8,6 +8,9 @@ const routine = {
         afternoon: [
             { name: 'Random Test', },
         ],
+        evening: [
+            { name: 'Random Test', },
+        ],
         night: [
             { name: 'Accounting', },
             { name: 'Dry Clothes', },
@@ -102,5 +105,6 @@ const routine = {
 
         return card
     },
+    now: function () { return routine.data()[timeOfDay()] },
 }
 
