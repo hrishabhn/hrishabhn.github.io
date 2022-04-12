@@ -5,7 +5,6 @@ const leftbar = {
         // header and search
         elem.append(elems.title('Dashboard'))
         let searchTray = leftbar.elems.tray()
-        searchTray.id = 'spotlight-tray'
         searchTray.append(spotlight.create())
         elem.append(searchTray)
 

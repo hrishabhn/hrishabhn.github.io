@@ -31,7 +31,7 @@ function spotlightRun(e) {
                 if (target.classList.value == 'spacer-x') { target = target.nextSibling }
 
                 if (target.getAttribute('engineData')) {
-                    startSearchEngine(JSON.parse(target.getAttribute('engineData')))
+                    spotlight.engine(JSON.parse(target.getAttribute('engineData')))
                 }
             }
         } else {

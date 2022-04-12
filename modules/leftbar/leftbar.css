@@ -81,6 +81,29 @@
     font-weight: 400;
 }
 
+/* engine */
+#leftbar .engine {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+}
+
+#leftbar .engine .thumb {
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    margin-right: 8px;
+    box-shadow: 0px 2px 8px -3px var(--black-50);
+}
+
+#leftbar .engine p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
 
 /* control centre */
 #leftbar .control-centre {
