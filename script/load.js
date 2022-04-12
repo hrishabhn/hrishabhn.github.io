@@ -17,7 +17,7 @@ function loadApp() {
 
     // spotlightLoad()
 
-    // paramsLoad()
+    paramsLoad()
 
 
 

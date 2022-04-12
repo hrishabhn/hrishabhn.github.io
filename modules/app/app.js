@@ -28,12 +28,12 @@ const appObject = {
             card.onclick = function (e) { openApp(app, e) }
             card = cardHover(card, app.accent, app.style)
 
-            // if (app.searchBase) {
-            //     card.setAttribute('engineData', JSON.stringify(app))
-            //     let icon = elems.icon(iconData['search'])
-            //     icon.classList = 'search'
-            //     card.append(icon)
-            // }
+            if (app.searchBase) {
+                card.setAttribute('engineData', JSON.stringify(app))
+                let icon = elems.icon(iconData['search'])
+                icon.classList = 'search'
+                card.append(icon)
+            }
 
             if (app.dockIcon) card.append(elems.icon(app.dockIcon))
             else if (app.thumb) card.append(elems.appThumb(app.thumb))

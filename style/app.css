@@ -69,7 +69,7 @@
     opacity: 0;
 }
 
-.spotlight-tray .app-card .search {
+#content-elem .app-card .search {
     opacity: 0.6;
 }
 
