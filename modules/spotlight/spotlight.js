@@ -27,8 +27,10 @@ const spotlight = {
 
         input.value = ''
         input.onkeyup = function (e) {
-            if (input.value) if (e.key == 'Enter') window.open(`${data.searchBase}${input.value}`, '_self')
-            else if (e.key == 'Backspace') spotlight.reset()
+            if (input.value) {
+                if (e.key == 'Enter') window.open(`${data.searchBase}${input.value}`, '_self')
+            } else if (e.key == 'Backspace') spotlight.reset()
+
         }
     },
     reset: function () {
