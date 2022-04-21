@@ -184,13 +184,13 @@ const focus = {
                     apps: appData['read'],
                     work: false,
                     distract: false,
-                    widgets: function () {
-                        return [
-                            widgets.media.card(bookData[0].data[0], 'book'),
-                            widgets.media.card(bookData[0].data[1], 'book'),
-                            widgets.media.card(bookData[0].data[2], 'book'),
-                        ]
-                    },
+                    // widgets: function () {
+                    //     return [
+                    //         widgets.media.card(bookData[0].data[0], 'book'),
+                    //         widgets.media.card(bookData[0].data[1], 'book'),
+                    //         widgets.media.card(bookData[0].data[2], 'book'),
+                    //     ]
+                    // },
                     trays: function () {
                         return [
                             books.data[0].elem,

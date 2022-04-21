@@ -19,6 +19,7 @@ const allBooks = {
         progress: '34%',
         format: 'EBook',
         style: 'secondary',
+        summary: 'At seven years old, Martin Booth found himself with all of Hong Kong at his feet. His father was posted there in 1952, and this memoir is his telling of that youth, a time when he had access to the corners of a colony normally closed to a "Gweilo," a "pale fellow" like him. \nHis experiences were colorful and vast. Befriending rickshaw coolies and local stallholders, he learned Cantonese, sampled delicacies such as boiled water beetles and one-hundred-year-old eggs, and participated in vibrant festivals. He even entered the forbidden Kowloon Walled City, wandered into a secret lair of Triads, and visited an opium den.\n\nFrom the plink-plonk man with his dancing monkey to the Queen of Kowloon (a crazed tramp who may have been a Romanov), Martin Booth saw it all---but his memoir illustrates the deeper challenges he faced in his warring parents: a broad-minded mother who embraced all things Chinese and a bigoted father who was enraged by his family\'s interest in "going native."\n\nMartin Booth\'s compelling memoir, the last book he completed before dying, glows with infectious curiosity and humor and is an intimate representation of the now extinct time and place of his growing up.',
     },
     'lost': {
         name: "100 Things We've Lost to the Internet",
@@ -26,7 +27,7 @@ const allBooks = {
         link: 'kindle://',
         author: 'Pamela Paul',
         coverType: 'jpg',
-        progress: '77%',
+        progress: 'Finished',
         format: 'EBook',
         style: 'orange',
     },
@@ -298,6 +299,17 @@ const allBooks = {
         progress: 'New',
         format: 'EBook',
         // style: 'secondary',
+    },
+    'humankind': {
+        name: "Humankind: A Hopeful History",
+        id: 'humankind',
+        link: 'kindle://',
+        author: 'Rutger Bregman',
+        coverType: 'jpg',
+        progress: '10%',
+        format: 'EBook',
+        // style: 'secondary',
+        summary: 'If there is one belief that has united the left and the right, psychologists and philosophers, ancient thinkers and modern ones, it is the tacit assumption that humans are bad. It\'s a notion that drives newspaper headlines and guides the laws that shape our lives. From Machiavelli to Hobbes, Freud to Pinker, the roots of this belief have sunk deep into Western thought. Human beings, we\'re taught, are by nature selfish and governed primarily by self-interest.\n\nBut what if it isn\'t true? International bestseller Rutger Bregman provides new perspective on the past 200,000 years of human history, setting out to prove that we are hardwired for kindness, geared toward cooperation rather than competition, and more inclined to trust rather than distrust one another. In fact this instinct has a firm evolutionary basis going back to the beginning of Homo sapiens. \n\nFrom the real-life Lord of the Flies to the solidarity in the aftermath of the Blitz, the hidden flaws in the Stanford prison experiment to the true story of twin brothers on opposite sides who helped Mandela end apartheid, Bregman shows us that believing in human generosity and collaboration isn\'t merely optimistic—it\'s realistic. Moreover, it has huge implications for how society functions. When we think the worst of people, it brings out the worst in our politics and economics. But if we believe in the reality of humanity\'s kindness and altruism, it will form the foundation for achieving true change in society, a case that Bregman makes convincingly with his signature wit, refreshing frankness, and memorable storytelling.',
     },
 }
 

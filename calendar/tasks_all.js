@@ -1,6 +1,6 @@
 let tasks_all = [
 	'Check WIS account',
-	'HP Email',
 	'Accounting',
-	'Converse',
+	'SAIL IDI Assessment',
+	'Consumption Voucher',
 ]
