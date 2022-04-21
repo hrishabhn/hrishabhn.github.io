@@ -45,10 +45,8 @@ const tasks = {
                 card.append(elems.hlineList(20))
             }
             card.lastChild.remove()
-        } else {
-            nodes.push(elems.subtitle('No more tasks today'))
-        }
-
+        } else
+            card.append(elems.subtitle('No more tasks today'))
 
         return card
     },
