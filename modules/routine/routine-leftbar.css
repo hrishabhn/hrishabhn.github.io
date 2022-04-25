@@ -3,6 +3,12 @@
     flex-direction: column;
 }
 
+#leftbar .routine .hline {
+    margin-left: 40px;
+    margin-right: 10px;
+    width: calc(100% - 50px);
+}
+
 #leftbar .routine .switch {
     width: calc(100% - 20px);
     padding: 2px;
@@ -28,37 +34,49 @@
     font-size: 12px;
     font-weight: 500;
     cursor: pointer;
-    /* background-color: blue; */
 }
 
 #leftbar .routine .task a {
-    height: 24px;
-    width: 24px;
-    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
     margin-right: 10px;
-    border: solid 1px var(--white-10);
+    padding: 3px;
+    border: solid 1.5px var(--white-10);
+}
+
+#leftbar .routine .task a div {
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
 }
 
 #leftbar .routine .task.done a {
-    border: solid 1px var(--white-20);
-    background-color: var(--col-dark, var(--blue-dark));
+    border: solid 1.5px var(--accent-dark, var(--blue-dark));
+}
+
+#leftbar .routine .task.done a div {
+    background-color: var(--accent-dark, var(--blue-dark));
 }
 
 @media screen and (prefers-color-scheme: light) {
     #leftbar .routine .task a {
-        border: solid 1px var(--dark-layer-1-10);
+        border: solid 1.5px var(--dark-layer-1-10);
     }
 
     #leftbar .routine .task.done a {
-        border: solid 1px var(--dark-layer-1-20);
-        background-color: var(--col-light, var(--blue-light));
+        border: solid 1.5px var(--accent-light, var(--blue-light));
+    }
+
+    #leftbar .routine .task.done a div {
+        background-color: var(--accent-light, var(--blue-light));
     }
 }
 
-#leftbar .routine .task .icon {
+/* #leftbar .routine .task .icon {
     height: 100%;
     width: 100%;
-    padding: 5px;
+    padding: 20%;
 
     transition: all 0.2s;
     transform: scale(0.9);
@@ -69,4 +87,4 @@
 #leftbar .routine .task.done .icon {
     transform: scale(1);
     opacity: 1;
-}
+} */

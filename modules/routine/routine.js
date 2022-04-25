@@ -100,7 +100,10 @@ const routine = {
                     else elem.classList.remove('done')
                 }
 
-                elem.append(elems.a(iconData.tick, null))
+                let a = document.createElement('a')
+                a.append(document.createElement('div'))
+
+                elem.append(a)
                 elem.append(elems.p(task.name))
                 elem.append(elems.grow())
 
