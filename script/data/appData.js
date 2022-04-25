@@ -432,6 +432,14 @@ const appData = {
             style: 'indigo',
             distract: true,
         },
+        {
+            name: 'Smart DNS Proxy',
+            link: 'https://www.smartdnsproxy.com/myaccount',
+            desc: 'Unblocker',
+            icon: SFSymbols.wifi,
+            style: 'cyan',
+            distract: true,
+        },
     ],
     'read': [
         {
