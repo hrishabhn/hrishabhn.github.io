@@ -2,7 +2,7 @@ function widgetMedia(data, type) {
     let card = document.createElement('a')
     card.classList = `widget-card layer-1 clickable media`
     // crd = cardHover(card, accent, style)
-    console.log(data, type)
+    // console.log(data, type)
 
     if (type == 'book') {
         card.classList.add('book')

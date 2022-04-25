@@ -29,8 +29,8 @@ const leftbar = {
             {
                 name: 'Routine',
                 icon: SFSymbols.arrow.triangle.circlepath,
-                active: routine.now() && !routine.done(),
-                trigger: function() {
+                active: routine.active(),
+                trigger: function () {
                     document.getElementById('routine').classList.toggle('hidden-always')
                 }
             },
@@ -63,17 +63,13 @@ const leftbar = {
         elem.append(controlTray)
 
         // routine
-        if (routine.now()) {
-            let routineTray = leftbar.elems.tray()
-            routineTray.id = 'routine'
-            if (routine.done()) routineTray.classList.add('hidden-always')
-            routineTray.append(elems.hline())
-            routineTray.append(elems.subtitle('routine'))
-            routineTray.append(routine.leftbar(timeOfDay()))
-            elem.append(routineTray)
-        }
-
-
+        let routineTray = leftbar.elems.tray()
+        routineTray.id = 'routine'
+        routineTray.append(elems.hline())
+        routineTray.append(elems.subtitle('routine'))
+        routineTray.append(routine.leftbar(timeOfDay()))
+        if (!routine.active()) routineTray.classList.add('hidden-always')
+        elem.append(routineTray)
 
         // pages
         for (const focusTray of focus.data) {

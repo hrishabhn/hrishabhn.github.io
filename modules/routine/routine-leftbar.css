@@ -3,11 +3,23 @@
     flex-direction: column;
 }
 
-#leftbar .routine .hline {
-    margin-left: 44px;
-    margin-right: 10px;
-    width: calc(100% - 54px);
+#leftbar .routine .switch {
+    width: calc(100% - 20px);
+    padding: 3px;
+    border-radius: 8px;
+    margin: 5px 0 2px;
 }
+
+#leftbar .routine .switch a {
+    height: 20px;
+    flex-grow: 1;
+    border-radius: 5px;
+    font-size: 10px;
+    text-transform: capitalize;
+    cursor: default;
+}
+
+
 
 #leftbar .routine .task {
     width: 100%;

@@ -5,12 +5,6 @@ const routine = {
             { name: 'Clear Notifications', },
             { name: 'Get Ready', },
         ],
-        afternoon: [
-            { name: 'Random Test', },
-        ],
-        evening: [
-            { name: 'Random Test', },
-        ],
         night: [
             { name: 'Accounting', },
             { name: 'Dry Clothes', },
@@ -68,44 +62,58 @@ const routine = {
         return card
     },
     leftbar: function (key) {
+        if (!routine.data()[key]) key = 'morning'
         let card = document.createElement('div')
         card.classList = 'routine'
 
-        // let icon = elems.icon(SFSymbols.arrow.triangle.circlepath)
-        // icon.classList = 'top-icon'
-        // icon.onclick = function () {
-        //     removeCookie('routine')
-        //     location.reload()
-        // }
-        // icon.style.setProperty('cursor', 'pointer')
-        // icon.classList.add('clickable-b')
-        // card.append(icon)
+        let tog = document.createElement('div')
+        tog.classList = 'switch layer-0'
 
-        let data = routine.data()
-
-        for (const task of data[key]) {
-            let elem = document.createElement('a')
-            elem.classList = 'task clickable-o'
-            if (task.done) elem.classList.add('done')
-            elem.onclick = function (key) {
-                task.done = !task.done
-                setCookie('routine', JSON.stringify(data), 1 / 2)
-                if (task.done) elem.classList.add('done')
-                else elem.classList.remove('done')
+        for (const time in routine.data()) {
+            let a = elems.a(null, time)
+            a.classList = 'clickable-o'
+            if (time == key) a.classList.add('layer-1')
+            a.onclick = function () {
+                for (const child of tog.childNodes) child.classList.remove('layer-1')
+                a.classList.add('layer-1')
+                setRoutineList(time)
             }
-
-            elem.append(elems.a(iconData.tick, null))
-            elem.append(elems.p(task.name))
-            elem.append(elems.grow())
-
-            card.append(elem)
-            card.append(elems.hline())
+            tog.append(a)
         }
-        card.lastChild.remove()
+
+        card.append(tog)
+        setRoutineList(key)
+
+        function setRoutineList(k) {
+            while (card.childNodes.length > 1) card.lastChild.remove()
+
+            let data = routine.data()
+
+            for (const task of data[k]) {
+                let elem = document.createElement('a')
+                elem.classList = 'task clickable-o'
+                if (task.done) elem.classList.add('done')
+                elem.onclick = function (k) {
+                    task.done = !task.done
+                    setCookie('routine', JSON.stringify(data), 1 / 2)
+                    if (task.done) elem.classList.add('done')
+                    else elem.classList.remove('done')
+                }
+
+                elem.append(elems.a(iconData.tick, null))
+                elem.append(elems.p(task.name))
+                elem.append(elems.grow())
+
+                card.append(elem)
+                card.append(elems.hline())
+            }
+            card.lastChild.remove()
+        }
 
         return card
     },
     now: function () { return routine.data()[timeOfDay()] },
-    done: function() { return routine.now().map(x => x.done).every(Boolean) }
+    done: function () { return routine.now().map(x => x.done).every(Boolean) },
+    active: function () { return routine.now() && !routine.done() },
 }
 
