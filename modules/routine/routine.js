@@ -106,5 +106,6 @@ const routine = {
         return card
     },
     now: function () { return routine.data()[timeOfDay()] },
+    done: function() { return routine.now().map(x => x.done).every(Boolean) }
 }
 

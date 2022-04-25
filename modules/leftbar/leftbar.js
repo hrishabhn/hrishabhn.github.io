@@ -29,7 +29,7 @@ const leftbar = {
             {
                 name: 'Routine',
                 icon: SFSymbols.arrow.triangle.circlepath,
-                active: (routine.data()[timeOfDay()]) && (!(routine.data()[timeOfDay()].map(x => x.done).every(Boolean))),
+                active: routine.now() && !routine.done(),
                 trigger: function() {
                     document.getElementById('routine').classList.toggle('hidden-always')
                 }
@@ -63,12 +63,10 @@ const leftbar = {
         elem.append(controlTray)
 
         // routine
-
-        const routineDone = routine.now().map(x => x.done).every(Boolean)
         if (routine.now()) {
             let routineTray = leftbar.elems.tray()
             routineTray.id = 'routine'
-            if (routineDone) routineTray.classList.add('hidden-always')
+            if (routine.done()) routineTray.classList.add('hidden-always')
             routineTray.append(elems.hline())
             routineTray.append(elems.subtitle('routine'))
             routineTray.append(routine.leftbar(timeOfDay()))
