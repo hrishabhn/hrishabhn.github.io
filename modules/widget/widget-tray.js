@@ -80,10 +80,7 @@ function widgetTray() {
 
 
     // if there is a routine at this time of day
-    if (routine.data()[timeOfDay()])
-        //  if tasks are not all done
-        if (!(routine.data()[timeOfDay()].map(x => x.done).every(Boolean)))
-            card.append(widgets.routine.card(timeOfDay()))
+    if (routine.now() && !routine.done()) card.append(widgets.routine.card(timeOfDay()))
     for (const item of nodes) card.append(item)
     if (focus.get().widgets) for (const widget of focus.get().widgets()) card.append(widget)
 
