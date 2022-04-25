@@ -29,16 +29,18 @@ const focus = {
                             // widgets.trip.card('barca'),
                             // train.widget('mad-bcn'),
                             // train.widget('bcn-mad'),
-                            widgets.trip.card('tenerife'),
-                            widgets.flight.card('mad-tfs'),
-                            widgets.flight.card('tfs-mad'),
+                            widgets.trip.card('exeter'),
+                            widgets.flight.card('mad-lhr'),
+                            train.widget('lon-exe'),
+                            train.widget('exe-lon'),
+                            widgets.flight.card('lgw-mad'),
                         ]
                     },
-                    trays: function () {
-                        return [
-                            trayWithKids([flight.card('mad-tfs'), flight.card('tfs-mad'),], 30, 0)
-                        ]
-                    },
+                    // trays: function () {
+                    //     return [
+                    //         trayWithKids([flight.card('mad-tfs'), flight.card('tfs-mad'),], 30, 0)
+                    //     ]
+                    // },
                 },
                 // {
                 //     name: 'Workout',

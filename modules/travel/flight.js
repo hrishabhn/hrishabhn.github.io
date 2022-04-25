@@ -324,59 +324,59 @@ const aircraftData = {
 }
 
 const flightData = {
-    'mad-tfs': {
-        number: '2913',
+    'mad-lhr': {
+        number: '3162',
         dep: {
             code: 'MAD',
             city: 'Madrid',
             airport: 'Barajas',
-            time: '6:50am',
-            terminal: '1',
+            time: '8am',
+            terminal: '4S',
             gate: null,
         },
         arr: {
-            code: 'TFS',
-            city: 'Tenerife',
-            airport: 'Tenerife South',
-            time: '8:55am',
-            terminal: null,
+            code: 'LHR',
+            city: 'London',
+            airport: 'London Heathrow',
+            time: '9:30am',
+            terminal: '5',
             gate: null,
         },
-        duration: '3h 05m',
-        start: 'Tue, 12 Apr',
-        date: '12 Apr, 2022 06:50:00',
+        duration: '2h 30m',
+        start: 'Thu, 5 May',
+        date: '5 May, 2022 08:00:00',
         seat: null,
-        airline: airlineData['ryanair'],
+        airline: airlineData['iberia'],
         aircraft: aircraftData['737-800'],
-        return: 'tfs-mad',
-        link: 'https://www.notion.so/Feb-2022-London-7bbb8355d70342d087d2f8e7cf43effc'
+        return: 'lgw-mad',
+        link: 'https://www.notion.so/hrishabhn/Exeter-a982636aa41d40b0adff797d1ac0aa9a'
     },
-    'tfs-mad': {
+    'lgw-mad': {
         number: '2914',
         dep: {
-            code: 'TFS',
-            city: 'Tenerife',
-            airport: 'Tenerife South',
-            time: '8:10pm',
-            terminal: null,
+            code: 'LGW',
+            city: 'London',
+            airport: 'London Gatwick',
+            time: '8:40pm',
+            terminal: 'S',
             gate: null,
         },
         arr: {
             code: 'MAD',
             city: 'Madrid',
             airport: 'Barajas',
-            time: '11:55pm',
+            time: '11:59pm',
             terminal: '1',
             gate: null,
         },
-        duration: '2h 45m',
-        start: 'Wed, 20 Apr',
-        date: '20 Apr, 2022 20:10:00',
+        duration: '2h 19m',
+        start: 'Mon, 9 May',
+        date: '9 May, 2022 20:40:00',
         seat: null,
-        airline: airlineData['ryanair'],
+        airline: airlineData['iberia'],
         aircraft: aircraftData['737-800'],
-        return: 'mad-tfs',
-        link: 'https://www.notion.so/Feb-2022-London-7bbb8355d70342d087d2f8e7cf43effc'
+        return: 'mad-lhr',
+        link: 'https://www.notion.so/hrishabhn/Exeter-a982636aa41d40b0adff797d1ac0aa9a'
     },
 }
 

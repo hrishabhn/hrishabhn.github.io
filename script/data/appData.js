@@ -535,16 +535,16 @@ const appData = {
             style: 'secondary',
             distract: false,
         },
-        {
-            name: 'Tenerife',
-            trigger: function () { modal.add(trip.card('tenerife')) },
-            desc: 'Easter Break Trip',
-            thumb: 'flighty.jpeg',
-            style: 'secondary',
-            distract: false,
-        },
-        commonApps.flight('mad-tfs'),
-        commonApps.flight('tfs-mad'),
+        // {
+        //     name: 'Tenerife',
+        //     trigger: function () { modal.add(trip.card('tenerife')) },
+        //     desc: 'Easter Break Trip',
+        //     thumb: 'flighty.jpeg',
+        //     style: 'secondary',
+        //     distract: false,
+        // },
+        // commonApps.flight('mad-tfs'),
+        // commonApps.flight('tfs-mad'),
     ],
     'utilities': [
         {

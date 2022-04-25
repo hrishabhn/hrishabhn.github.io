@@ -9,14 +9,26 @@ const tripData = {
     //         train.data['bcn-mad'],
     //     ],
     // },
-    'tenerife': {
-        name: 'Tenerife',
-        desc: 'Easter Break',
-        thumb: 'https://s1.eestatic.com/2021/08/11/ocio/603452207_200344208_1706x960.jpg',
-        link: 'https://www.notion.so/hrishabhn/Tenerife-52381b8829184f028e66d384ab84690c',
+    // 'tenerife': {
+    //     name: 'Tenerife',
+    //     desc: 'Easter Break',
+    //     thumb: 'https://s1.eestatic.com/2021/08/11/ocio/603452207_200344208_1706x960.jpg',
+    //     link: 'https://www.notion.so/hrishabhn/Tenerife-52381b8829184f028e66d384ab84690c',
+    //     events: [
+    //         flightData['mad-tfs'],
+    //         flightData['tfs-mad'],
+    //     ],
+    // },
+    'exeter': {
+        name: 'Exeter',
+        desc: 'United Kingdom',
+        thumb: 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/05/01/15/exeter-park.jpg?quality=75&width=982&height=726&auto=webp',
+        link: 'https://www.notion.so/hrishabhn/Exeter-a982636aa41d40b0adff797d1ac0aa9a',
         events: [
-            flightData['mad-tfs'],
-            flightData['tfs-mad'],
+            flightData['mad-lhr'],
+            train.data['lon-exe'],
+            train.data['exe-lon'],
+            flightData['lgw-mad'],
         ],
     },
 }
