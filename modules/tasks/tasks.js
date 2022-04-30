@@ -37,7 +37,10 @@ const tasks = {
                     tasks.update(task)
                 }
 
-                elem.append(elems.a(iconData.tick, null))
+                let a = document.createElement('a')
+                a.append(document.createElement('div'))
+
+                elem.append(a)
                 elem.append(elems.p(task))
                 elem.append(elems.grow())
 

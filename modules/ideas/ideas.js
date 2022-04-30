@@ -29,7 +29,8 @@ const ideas = {
         if (done) elem.classList.add('done')
         // onclick
 
-        let check = elems.a(iconData.tick, null)
+        let check = document.createElement('a')
+        check.append(document.createElement('div'))
         check.classList.add('clickable-o')
         check.style.setProperty('cursor', 'pointer')
         check.onclick = function () {
