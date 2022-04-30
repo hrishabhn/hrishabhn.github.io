@@ -129,4 +129,20 @@ let budgetData = [
 
     { "amount": 1.1, "name": "Breakfast", "category": "Food", "date": "2022-04-21T11:18:00+02:00" },
 
+
+    // new start
+    { "amount": 18.65, "name": "Lunch", "category": "Food", "date": "2022-04-26T14:11:00+02:00" },
+    { "amount": 5.4, "name": "Coffee", "category": "Coffee", "date": "2022-04-26T16:29:00+02:00" },
+    { "amount": 4.79, "name": "Dinner", "category": "Food", "date": "2022-04-26T20:08:00+02:00" },
+    { "amount": 13.5, "name": "Game", "category": "Drinks", "date": "2022-04-26T21:13:00+02:00" },
+    { "amount": 3.3, "name": "Coffee", "category": "Coffee", "date": "2022-04-27T11:35:00+02:00" },
+    { "amount": 1.1, "name": "Lunch", "category": "Food", "date": "2022-04-27T12:51:00+02:00" },
+    { "amount": 12.95, "name": "Dinner", "category": "Food", "date": "2022-04-27T18:10:00+02:00" },
+    { "amount": 3.5, "name": "Sangria", "category": "Drinks", "date": "2022-04-27T18:13:00+02:00" },
+    { "amount": 10, "name": "Icon", "category": "Drinks", "date": "2022-04-27T23:59:00+02:00" },
+    { "amount": 18.52, "name": "Lunch", "category": "Food", "date": "2022-04-28T14:00:00+02:00" },
+    { "amount": 17, "name": "Drinks", "category": "Drinks", "date": "2022-04-29T14:59:00+02:00" },
+    { "amount": 17.07, "name": "Dinner", "category": "Food", "date": "2022-04-29T19:30:00+02:00" },
+    { "amount": 45, "name": "BRESH", "category": "Drinks", "date": "2022-04-29T23:59:00+02:00" },
+    { "amount": 2.9, "name": "McDonalds", "category": "Food", "date": "2022-04-29T11:59:00+02:00" },
 ]

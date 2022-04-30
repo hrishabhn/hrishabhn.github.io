@@ -231,7 +231,7 @@
     fill: white;
 }
 .tv-detail-card .info .tray .app.active{
-    background-color: var(--white-30);
+    background-color: var(--white-20);
 }
 
 .tv-detail-card .info .tray .app .icon{

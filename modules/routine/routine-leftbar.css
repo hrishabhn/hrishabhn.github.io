@@ -52,11 +52,11 @@
 }
 
 #leftbar .routine .task.done a {
-    border: solid 1.5px var(--accent-dark, var(--blue-dark));
+    border: solid 1.5px var(--accent-dark);
 }
 
 #leftbar .routine .task.done a div {
-    background-color: var(--accent-dark, var(--blue-dark));
+    background-color: var(--accent-dark);
 }
 
 @media screen and (prefers-color-scheme: light) {

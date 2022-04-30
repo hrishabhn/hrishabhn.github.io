@@ -1,6 +1,5 @@
 .widget-card.list {
     cursor: default;
-    /* grid-column: span 2; */
 }
 
 .widget-card.list .task {
@@ -14,9 +13,16 @@
 .widget-card.list .task a {
     height: 14px;
     width: 14px;
-    border-radius: 4px;
+    border-radius: 100px;
     margin-right: 6px;
+    padding: 2px;
     border: solid 1px var(--white-10);
+}
+
+.widget-card.list .task a div {
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
 }
 
 .widget-card.list .task input {
@@ -29,33 +35,23 @@
 }
 
 .widget-card.list .task.done a {
-    border: solid 1px var(--white-20);
-    background-color: var(--blue-dark);
+    border: solid 1px var(--accent-dark);
+}
+
+.widget-card.list .task.done a div {
+    background-color: var(--accent-dark);
 }
 
 @media screen and (prefers-color-scheme: light) {
     .widget-card.list .task a {
-        border: solid 1px var(--dark-layer-1-10);
+        border: solid 1px var(--black-10);
     }
 
     .widget-card.list .task.done a {
-        border: solid 1px var(--dark-layer-1-20);
-        background-color: var(--blue-light);
+        border: solid 1px var(--accent-light);
     }
-}
 
-.widget-card.list .task .icon {
-    height: 100%;
-    width: 100%;
-    padding: 2px;
-
-    transition: all 0.2s;
-    transform: scale(0.9);
-    opacity: 0;
-    fill: white;
-}
-
-.widget-card.list .task.done .icon {
-    transform: scale(1);
-    opacity: 1;
+    .widget-card.list .task.done a div {
+        background-color: var(--accent-light);
+    }
 }

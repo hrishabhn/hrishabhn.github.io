@@ -12,6 +12,7 @@ const routine = {
             { name: 'Kitchen', },
             { name: 'Prepare for Tomorrow', },
             { name: 'Self Care', },
+            { name: 'Reflection', },
         ],
     },
     load: function () {

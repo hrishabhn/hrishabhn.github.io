@@ -1,7 +1,4 @@
 let events_all = [
-{"location":"","end":"2022-04-26T00:00:00+02:00","start":"2022-04-25T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/0ECBA1D4-905B-4B4A-A387-881F9B29493F:ABPerson","name":"Ted Mosby’s 44th Birthday"},
-{"location":"","end":"2022-04-26T00:00:00+02:00","start":"2022-04-25T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 13"},
-{"location":"10.2.11","end":"2022-04-25T14:00:00+02:00","start":"2022-04-25T12:30:00+02:00","allDay":"No","notes":"Economía Financiera, grp.60,61 y 62","calendar":"Spring 2022","link":"","name":"Financial Economics"},
 {"location":"6.1.06","end":"2022-04-25T16:00:00+02:00","start":"2022-04-25T14:30:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
 {"location":"2.3.D04","end":"2022-04-26T11:00:00+02:00","start":"2022-04-26T09:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
 {"location":"2.3.B03","end":"2022-04-26T17:00:00+02:00","start":"2022-04-26T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Engineering Management"},
@@ -19,4 +16,7 @@ let events_all = [
 {"location":"","end":"2022-05-04T00:00:00+02:00","start":"2022-05-03T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Controls Exam 2"},
 {"location":"","end":"2022-05-04T00:00:00+02:00","start":"2022-05-03T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/5078CB5A-B1FA-4B61-8814-17611773A0CF:ABPerson","name":"Jeremy Cheng’s Birthday"},
 {"location":"2.3.D04","end":"2022-05-03T11:00:00+02:00","start":"2022-05-03T09:00:00+02:00","allDay":"No","notes":"Ingeniería de Control I, grupo 39","calendar":"Spring 2022","link":"","name":"Controls Engineering"},
+{"location":"2.3.B03","end":"2022-05-03T17:00:00+02:00","start":"2022-05-03T15:00:00+02:00","allDay":"No","notes":"Fundamentos de gestión empresarial, grupo 18","calendar":"Spring 2022","link":"","name":"Engineering Management"},
+{"location":"","end":"2022-05-05T00:00:00+02:00","start":"2022-05-04T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/C8ACF18A-3515-4E0E-814D-36305AC31983:ABPerson","name":"Ernest Wong’s Birthday"},
+{"location":"6.1.03","end":"2022-05-04T17:45:00+02:00","start":"2022-05-04T16:15:00+02:00","allDay":"No","notes":"Organización Industrial, grupo 70","calendar":"Spring 2022","link":"","name":"Industrial Organisation"},
 ]
