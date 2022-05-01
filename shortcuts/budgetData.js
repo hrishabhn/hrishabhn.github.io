@@ -145,4 +145,10 @@ let budgetData = [
     { "amount": 17.07, "name": "Dinner", "category": "Food", "date": "2022-04-29T19:30:00+02:00" },
     { "amount": 45, "name": "BRESH", "category": "Drinks", "date": "2022-04-29T23:59:00+02:00" },
     { "amount": 2.9, "name": "McDonalds", "category": "Food", "date": "2022-04-29T11:59:00+02:00" },
+    { "amount": 6.72, "name": "Grocery", "category": "Grocery", "date": "2022-04-30T17:00:00+02:00" },
+    { "amount": 9.95, "name": "Lunch", "category": "Food", "date": "2022-04-30T16:13:00+02:00" },
+    { "amount": 12.48, "name": "Dinner", "category": "Food", "date": "2022-04-30T21:55:00+02:00" },
+    { "amount": 35, "name": "Bule Bule", "category": "Drinks", "date": "2022-04-30T23:59:00+02:00" },
+    { "amount": 7.35, "name": "Lunch", "category": "Food", "date": "2022-05-01T14:21:00+02:00" },
+    { "amount": 13.9, "name": "Dinner", "category": "Food", "date": "2022-05-01T20:45:00+02:00" },
 ]
