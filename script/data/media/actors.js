@@ -198,6 +198,7 @@ const actors = {
         'John Krasinski': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfTj3qmziB5CSxjVSdmPwAUm_UDeygz696AWifnjtIoA6QPqXT',
         'Jenna Fischer': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvCQIusgrF1gHmtyjy7WYWnrXYQvux73ScAvD4_l-1tT1YsKZG',
         'Rainn Wilson': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfvukQF_wrO0XRF9YKbaTR74ItiI3ZsMlFTKnJXLYpAf8vuwd1',
+        'Adam Sandler': 'https://m.media-amazon.com/images/M/MV5BMjQyNzM2MjM1Ml5BMl5BanBnXkFtZTcwMDE5NjI3Mg@@._V1_UY264_CR6,0,178,264_AL_.jpg',
     },
     actorMatch: function (name) {
         let results = []

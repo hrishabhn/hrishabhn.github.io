@@ -314,7 +314,7 @@ const allMovies = {
             service: 'hulu',
             // studio: 'abc',
             location: 'Hulu',
-            date: '6 Apr 2022',
+            // date: '6 Apr 2022',
             seasons: 1,
             yearStart: 2021,
             yearEnd: null,
@@ -7211,6 +7211,57 @@ const allMovies = {
         cast: [
             {
                 actor: 'Jimmy O. Yang',
+            },
+        ],
+    },
+    'zohan': {
+        name: 'You Don\'t Mess with the Zohan',
+        id: 'zohan',
+        link: {
+            netflix: '70087541'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            // date: '',
+            year: 2008,
+            genre: [
+                'action',
+                'comedy',
+            ],
+            summary: "An Israeli counterterrorism soldier with a secretly fabulous ambition to become a Manhattan hairstylist will do anything to make his dreams come true.",
+        },
+        style: {
+            color: 'ffffff',
+            poster: {
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/you-dont-mess-with-the-zohan-2008',
+            imdbID: 'tt0960144',
+        },
+        cast: [
+            {
+                actor: 'Adam Sandler',
+                char: 'Zohan',
+            },
+            {
+                actor: 'John Turturro',
+                char: 'Phantom',
             },
         ],
     },
