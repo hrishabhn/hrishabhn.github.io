@@ -151,4 +151,12 @@ let budgetData = [
     { "amount": 35, "name": "Bule Bule", "category": "Drinks", "date": "2022-04-30T23:59:00+02:00" },
     { "amount": 7.35, "name": "Lunch", "category": "Food", "date": "2022-05-01T14:21:00+02:00" },
     { "amount": 13.9, "name": "Dinner", "category": "Food", "date": "2022-05-01T20:45:00+02:00" },
+
+    { "amount": 8.95, "name": "Lunch", "category": "Food", "date": "2022-05-02T13:21:00+02:00" },
+    { "amount": 2.25, "name": "Coffee", "category": "Coffee", "date": "2022-05-02T15:19:00+02:00" },
+    { "amount": 12.8, "name": "Sala Equis", "category": "Drinks", "date": "2022-05-02T22:13:00+02:00" },
+    { "amount": 5.9, "name": "Dinner", "category": "Food", "date": "2022-05-02T23:59:00+02:00" },
+    { "amount": 5.3, "name": "Tim Horton's", "category": "Coffee", "date": "2022-05-03T18:16:00+02:00" },
+    { "amount": 5, "name": "Fontana de Oro", "category": "Drinks", "date": "2022-05-03T17:34:00+02:00" },
+    { "amount": 4.79, "name": "Jolibee", "category": "Food", "date": "2022-05-03T23:11:00+02:00" },
 ]
