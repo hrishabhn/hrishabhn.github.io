@@ -5,7 +5,6 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
-            allMovies.zohan,
             allMovies.atlanta,
             allMovies.attack,
             allMovies.severance,
@@ -185,6 +184,7 @@ let movieRaw = [
     {
         name: 'Recent Movies',
         data: [
+            allMovies.zohan,
             allMovies.ronnyDestroy,
             allMovies.jimmyGood,
             allMovies.virAbroad,
