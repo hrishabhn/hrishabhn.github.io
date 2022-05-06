@@ -4,6 +4,7 @@ const routine = {
             { name: 'Check Emails', },
             { name: 'Clear Notifications', },
             { name: 'Get Ready', },
+            { name: 'Today\'s Tasks', },
         ],
         night: [
             { name: 'Accounting', },
@@ -11,6 +12,7 @@ const routine = {
             { name: 'Clean Up Room', },
             { name: 'Kitchen', },
             { name: 'Prepare for Tomorrow', },
+            { name: 'Review Tasks', },
             { name: 'Self Care', },
             { name: 'Reflection', },
         ],

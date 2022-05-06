@@ -192,6 +192,14 @@ const appData = {
             style: 'yellow',
             distract: false,
         },
+        {
+            name: 'Reflect',
+            link: 'https://www.notion.so/hrishabhn/Reflection-af521d25d2954a29b3945d3afb1f3849',
+            desc: 'Thoughts & Ideas',
+            thumb: thumbData['thought'],
+            style: 'cyan',
+            distract: false,
+        },
     ],
     'school': [
         {

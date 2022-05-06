@@ -159,4 +159,6 @@ let budgetData = [
     { "amount": 5.3, "name": "Tim Horton's", "category": "Coffee", "date": "2022-05-03T18:16:00+02:00" },
     { "amount": 5, "name": "Fontana de Oro", "category": "Drinks", "date": "2022-05-03T17:34:00+02:00" },
     { "amount": 4.79, "name": "Jolibee", "category": "Food", "date": "2022-05-03T23:11:00+02:00" },
+    { "amount": 1.6, "name": "Breakfast", "category": "Food", "date": "2022-05-04T13:37:00+02:00" },
+    { "amount": 1.15, "name": "Coffee", "category": "Coffee", "date": "2022-05-04T15:53:00+02:00" },
 ]

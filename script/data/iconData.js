@@ -147,6 +147,7 @@ const thumbData = {
     'gym': 'gym.png',
     'indorg': 'indorg.png',
     'money': 'money.png',
+    'thought': 'thought.png',
 
     // brands
     'iberia': 'iberia.jpeg',
