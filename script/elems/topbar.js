@@ -100,48 +100,27 @@ const topbar = {
         return tray
     },
     right: function () {
-        const currentFocus = focus.get()
-        const app = {
-            name: currentFocus.name,
-            trigger: function (e) { context.show(focusMenuData(), e) },
-            icon: currentFocus.icon ?? SFSymbols.creditcard.fill,
-        }
-
         let tray = document.createElement('div')
         tray.classList = 'side'
         tray.append(elems.grow())
+
+        if (navigator.onLine) {
+            let elem = appObject.topbar.card({
+                name: 'Not Connected',
+                icon: SFSymbols.wifi,
+            })
+            elem.firstChild.classList.add('red-fg')
+            tray.append(elem)
+        }
+
+        const app = {
+            name: focus.get().name,
+            trigger: function (e) { context.show(focusMenuData(), e) },
+            icon: focus.get().icon ?? SFSymbols.creditcard.fill,
+        }
+
         tray.append(appObject.topbar.card(app))
 
         return tray
     }
-}
-
-// function topbarRight() {
-//     // focus
-//     let focus = getFocus()
-//     let focusAppElem = appCardSmall({
-//         thumb: focus.thumb,
-//         style: focus.style,
-//     })
-
-    
-
-//     focusAppElem.onclick = function (e) {
-//         context.show(focusMenuData(), e)
-//     }
-
-//     let right = document.createElement('div')
-//     right.classList = 'side'
-
-//     right.append(focusAppElem)
-//     right.prepend(elems.grow())
-
-//     return right
-// }
-
-function topbarItemElem() {
-    let item = document.createElement('a')
-    item.classList = 'item layer-hover'
-
-    return item
 }
