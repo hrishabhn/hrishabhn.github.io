@@ -104,7 +104,7 @@ const topbar = {
         tray.classList = 'side'
         tray.append(elems.grow())
 
-        if (navigator.onLine) {
+        if (!navigator.onLine) {
             let elem = appObject.topbar.card({
                 name: 'Not Connected',
                 icon: SFSymbols.wifi,
