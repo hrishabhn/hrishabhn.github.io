@@ -161,4 +161,12 @@ let budgetData = [
     { "amount": 4.79, "name": "Jolibee", "category": "Food", "date": "2022-05-03T23:11:00+02:00" },
     { "amount": 1.6, "name": "Breakfast", "category": "Food", "date": "2022-05-04T13:37:00+02:00" },
     { "amount": 1.15, "name": "Coffee", "category": "Coffee", "date": "2022-05-04T15:53:00+02:00" },
+
+    { "amount": 1.1, "name": "Breakfast", "category": "Food", "date": "2022-05-10T11:49:00+02:00" },
+    { "amount": 4, "name": "100 Montaditos", "category": "Drinks", "date": "2022-05-10T17:05:00+02:00" },
+    { "amount": 20, "name": "Fair", "category": "Food", "date": "2022-05-10T20:00:00+02:00" },
+    { "amount": 3.8, "name": "Breakfast", "category": "Food", "date": "2022-05-11T11:26:00+02:00" },
+    { "amount": 2.3, "name": "Snack", "category": "Food", "date": "2022-05-11T12:47:00+02:00" },
+    { "amount": 7, "name": "Drinks", "category": "Drinks", "date": "2022-05-11T14:00:00+02:00" },
+    { "amount": 42.18, "name": "Grocery", "category": "Grocery", "date": "2022-05-11T21:50:00+02:00" },
 ]
