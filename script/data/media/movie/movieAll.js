@@ -80,11 +80,11 @@ const allMovies = {
     'himyf': {
         name: 'How I Met Your Father',
         id: 'himyf',
-        link: 'https://www.hulu.com/series/how-i-met-your-father-42771fe9-3174-43bc-ab6a-d8c3e618b934',
+        link: 'https://www.disneyplus.com/series/how-i-met-your-father/5pWSb9Sy6vza',
         info: {
-            service: 'hulu',
+            service: 'disney',
             studio: 'hulu',
-            location: 'Hulu',
+            location: 'Disney+',
             // date: 'Mar 15, 2022',
             seasons: 1,
             yearStart: 2022,
