@@ -34,13 +34,17 @@ const spendingCategories = {
         col: 'orange',
         icon: iconData['coffee'],
     },
-    'Health': {
-        col: 'pink',
-        icon: iconData['heart'],
-    },
-    'Subscription': {
+    // 'Health': {
+    //     col: 'pink',
+    //     icon: iconData['heart'],
+    // },
+    // 'Subscription': {
+    //     col: 'mint',
+    //     icon: SFSymbols.arrow.triangle.circlepath,
+    // },
+    'Other': {
         col: 'mint',
-        icon: SFSymbols.arrow.triangle.circlepath,
+        icon: SFSymbols.plus,
     },
 }
 

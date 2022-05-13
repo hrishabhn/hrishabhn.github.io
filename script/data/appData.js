@@ -416,6 +416,14 @@ const appData = {
             distract: true,
         },
         {
+            name: 'Disney+',
+            link: 'https://www.disneyplus.com',
+            desc: 'Watch',
+            thumb: 'disney.jpeg',
+            accent: '113ccf',
+            distract: true,
+        },
+        {
             name: 'Prime Video',
             link: 'primevideo://',
             desc: 'Watch',

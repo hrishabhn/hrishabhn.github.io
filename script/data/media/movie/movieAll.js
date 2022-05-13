@@ -3537,11 +3537,11 @@ const allMovies = {
     'always': {
         name: "It's Always Sunny in Philadelphia",
         id: 'always',
-        link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
+        link: 'https://www.disneyplus.com/series/its-always-sunny-in-philadelphia/67id28oN9H8P',
         info: {
-            service: 'hulu',
+            service: 'disney',
             studio: 'fx',
-            location: 'Hulu',
+            location: 'Disney+',
             // date: 'Dec 23, 2021 03:00:00',
             // weekday: 'Thursday',
             seasons: 15,
