@@ -7331,6 +7331,55 @@ const allMovies = {
             },
         ],
     },
+    'bling': {
+        name: 'Bling Empire',
+        id: 'bling',
+        link: {
+            netflix: '81039144'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            seasons: 2,
+            yearStart: 2021,
+            yearEnd: null,
+            genre: [
+                'reality',
+            ],
+            summary: "Follow LA's wildly wealthy Asian and Asian American fun seekers as they go all out with fabulous parties, glamour and drama in this reality series.",
+        },
+        style: {
+            color: 'b3916e',
+            poster: {
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '8 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
+        },
+        apps: {
+            tvTimeID: '393680',
+            reelgoodLink: 'https://reelgood.com/show/bling-empire-2021',
+            imdbID: 'tt13660962',
+            subReddit: 'BlingEmpire',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         char: 'name',
+        //     },
+        // ],
+    },
 }
 // @new
 // 'identifier': {
