@@ -5,6 +5,7 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
+            allMovies.eurovision,
             allMovies.always,
             allMovies.himyf,
             allMovies.atlanta,

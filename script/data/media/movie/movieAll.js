@@ -7265,6 +7265,72 @@ const allMovies = {
             },
         ],
     },
+    'eurovision': {
+        name: 'Eurovision Song Contest: The Story of Fire Saga',
+        id: 'eurovision',
+        link: {
+            netflix: '80244088'
+        },
+        info: {
+            service: 'netflix',
+            // studio: 'studio',
+            location: 'Netflix',
+            year: 2020,
+            genre: [
+                'comedy',
+                'musical',
+            ],
+            summary: "Two small-town singers chase their pop star dreams at a global music competition, where high stakes, scheming rivals and onstage mishaps test their bond.",
+        },
+        style: {
+            color: '896a3a',
+            poster: {
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '8 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/eurovision-song-contest-the-story-of-fire-saga-2020',
+            imdbID: 'tt8580274',
+        },
+        cast: [
+            {
+                actor: 'Will Ferrell',
+                char: 'Lars Erickssong',
+            },
+            {
+                actor: 'Rachel McAdams',
+                char: 'Sigrit Ericksdóttir',
+            },
+            {
+                actor: 'Dan Stevens',
+                char: 'Alexander Lemtov',
+            },
+            {
+                actor: 'Mikael Persbrandt',
+                char: 'Victor Karlosson',
+            },
+            {
+                actor: 'Pierce Brosnan',
+                char: 'Erick Erickssong',
+            },
+            {
+                actor: 'Melissanthi Mahut',
+                char: 'Mita Xenakis',
+            },
+        ],
+    },
 }
 // @new
 // 'identifier': {
