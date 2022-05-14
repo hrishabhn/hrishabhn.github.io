@@ -199,6 +199,8 @@ const actors = {
         'Jenna Fischer': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvCQIusgrF1gHmtyjy7WYWnrXYQvux73ScAvD4_l-1tT1YsKZG',
         'Rainn Wilson': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfvukQF_wrO0XRF9YKbaTR74ItiI3ZsMlFTKnJXLYpAf8vuwd1',
         'Adam Sandler': 'https://m.media-amazon.com/images/M/MV5BMjQyNzM2MjM1Ml5BMl5BanBnXkFtZTcwMDE5NjI3Mg@@._V1_UY264_CR6,0,178,264_AL_.jpg',
+        'Will Ferrell': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz4iEoL_gX0SopFnBEv7B05jjT9BGD7Sr-PbtL9CRMTIR2NTvj',
+        'Rachel McAdams': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVRLxUjyXid9N1eyE69VHd5HA-ZWturx2Pgr_aguEZlXVHLJQ8',
     },
     actorMatch: function (name) {
         let results = []
