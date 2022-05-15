@@ -85,7 +85,7 @@ const actors = {
         'Nick Robinson': 'https://m.media-amazon.com/images/M/MV5BNzViMjQ4NzQtZDBhNC00ZTlhLTk4NzktYTYyYzE4NjFiZjQ1XkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg',
         'Charlie Day': 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
         'Glenn Howerton': 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
-        'Rob McElenney': 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
+        'Rob McElhenney': 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
         'Kaitlin Olson': 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
         'Danny DeVito': 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
         'Larry David': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg/1280px-Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg',

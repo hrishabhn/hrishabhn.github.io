@@ -6,6 +6,7 @@ let movieRaw = [
         name: 'Up next',
         data: [
             allMovies.bling,
+            allMovies.mythic,
             allMovies.always,
             allMovies.himyf,
             allMovies.atlanta,

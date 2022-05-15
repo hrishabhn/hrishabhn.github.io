@@ -3584,7 +3584,7 @@ const allMovies = {
                 char: 'Dennis Reynolds',
             },
             {
-                actor: 'Rob McElenney',
+                actor: 'Rob McElhenney',
                 char: 'Mac',
             },
             {
