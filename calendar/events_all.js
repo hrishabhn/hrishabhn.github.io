@@ -6,4 +6,6 @@ let events_all = [
 {"location":"","end":"2022-05-23T00:00:00+02:00","start":"2022-05-22T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/E8404194-4093-4E03-BBCD-91EFCEC45E24:ABPerson","name":"Calvin Dsouza’s Birthday"},
 {"location":"","end":"2022-05-24T00:00:00+02:00","start":"2022-05-23T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Week 17"},
 {"location":"","end":"2022-05-25T00:00:00+02:00","start":"2022-05-24T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/4FD825EE-0545-4D4C-92AC-FBA37D88DEA2:ABPerson","name":"Gaurav Gidwani’s Birthday"},
+{"location":"","end":"2022-05-26T00:00:00+02:00","start":"2022-05-25T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/CE1C9B01-8C29-4F55-A2DB-300CFCE27EB2:ABPerson","name":"Kiran Kakarla’s Birthday"},
+{"location":"","end":"2022-05-26T00:00:00+02:00","start":"2022-05-25T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Key Dates","link":"","name":"Industrial Organisation Final"},
 ]
