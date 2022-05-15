@@ -85,7 +85,6 @@ const actors = {
         'Nick Robinson': 'https://m.media-amazon.com/images/M/MV5BNzViMjQ4NzQtZDBhNC00ZTlhLTk4NzktYTYyYzE4NjFiZjQ1XkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg',
         'Charlie Day': 'https://static.wikia.nocookie.net/itsalwayssunny/images/b/bc/Charlie_Day.jpg',
         'Glenn Howerton': 'https://ntvb.tmsimg.com/assets/assets/239200_v3_bb.jpg',
-        'Rob McElhenney': 'https://bleedingcool.com/wp-content/uploads/2020/03/rob-mcelhenney-900x900.jpg',
         'Kaitlin Olson': 'https://static.wikia.nocookie.net/disney/images/d/dc/Kaitlin_Olson.jpg',
         'Danny DeVito': 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Danny_DeVito_by_Gage_Skidmore.jpg/1200px-Danny_DeVito_by_Gage_Skidmore.jpg',
         'Larry David': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg/1280px-Larry_David_at_the_2009_Tribeca_Film_Festival_2.jpg',
@@ -201,6 +200,11 @@ const actors = {
         'Adam Sandler': 'https://m.media-amazon.com/images/M/MV5BMjQyNzM2MjM1Ml5BMl5BanBnXkFtZTcwMDE5NjI3Mg@@._V1_UY264_CR6,0,178,264_AL_.jpg',
         'Will Ferrell': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz4iEoL_gX0SopFnBEv7B05jjT9BGD7Sr-PbtL9CRMTIR2NTvj',
         'Rachel McAdams': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVRLxUjyXid9N1eyE69VHd5HA-ZWturx2Pgr_aguEZlXVHLJQ8',
+        'Rob McElhenney': 'https://is2-ssl.mzstatic.com/image/thumb/OQ-ulShr0s85oS6oh_78AA/492x492ve.webp',
+        'Charlotte Nicdao': 'https://is3-ssl.mzstatic.com/image/thumb/v2UFbOlamYpimPtcAd1Vgw/492x492ve.webp',
+        'David Hornsby': 'https://is2-ssl.mzstatic.com/image/thumb/qDtMRumc6RJX8e_gBHRmCg/492x492ve.webp',
+        'Danny Pudi': 'https://is5-ssl.mzstatic.com/image/thumb/gkAuvuvLp6DJlaNKgwUdpQ/492x492ve.webp',
+        'F. Murray Abraham': 'https://is4-ssl.mzstatic.com/image/thumb/gteLdf3rrRL8jHO-lpibgQ/492x492ve.webp',
     },
     actorMatch: function (name) {
         let results = []

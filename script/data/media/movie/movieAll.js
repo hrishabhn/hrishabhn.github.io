@@ -4027,19 +4027,30 @@ const allMovies = {
     'mythic': {
         name: 'Mythic Quest',
         id: 'mythic',
-        link: null,
+        link: 'https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3',
         info: {
-            // service: '',
-            // studio: '',
-            location: 'Coming Soon',
-            // description: 'Genre1 &#149 Genre2 &#149 Genre2 &#149 ___ Seasons &#149 Y000 - Y999',
-            // summary: "summary",
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            // date: '',
+            seasons: 2,
+            yearStart: 2020,
+            yearEnd: null,
+            genre: [
+                'comedy',
+            ],
+            summary: "Meet the team behind the biggest multiplayer video game of all time. But in a workplace focused on building worlds, molding heroes, and creating legends, the most hard-fought battles don’t occur in the game—they happen in the office.",
         },
         style: {
             color: '2F322F',
             poster: {
                 wide: {
                     type: 'webp',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
                     title: true,
                 },
             },
@@ -4049,11 +4060,33 @@ const allMovies = {
             },
         },
         apps: {
-            // tvTimeID: null,
+            tvTimeID: '362829',
             reelgoodLink: 'https://reelgood.com/show/mythic-quest-2020',
-            // imdbID: 'identifier',
+            imdbID: 'tt8879940',
             subReddit: 'MythicQuest',
         },
+        cast: [
+            {
+                actor: 'Rob McElhenney',
+                char: 'Ian',
+            },
+            {
+                actor: 'Charlotte Nicdao',
+                char: 'Poppy',
+            },
+            {
+                actor: 'David Hornsby',
+                char: 'David',
+            },
+            {
+                actor: 'Danny Pudi',
+                char: 'Brad',
+            },
+            {
+                actor: 'F. Murray Abraham',
+                char: 'C.W. Longbottom',
+            },
+        ],
     },
     'narcos': {
         name: 'Narcos: Mexico',
