@@ -17,16 +17,16 @@ let movieRaw = [
     {
         name: 'My list',
         data: [
-            allMovies.noMercy,
             allMovies.ozark,
             allMovies.kal,
-            allMovies.tintin,
             allMovies.peaky,
         ],
     },
     {
         name: 'Recent',
         data: [
+            allMovies.tintin,
+            allMovies.noMercy,
             allMovies.elite,
             allMovies.snowfall,
             allMovies.wecrashed,

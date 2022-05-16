@@ -174,4 +174,5 @@ let budgetData = [
     { "amount": 32.5, "name": "Game", "category": "Other", "date": "2022-05-12T21:30:00+02:00" },
 
 
+
 ]
