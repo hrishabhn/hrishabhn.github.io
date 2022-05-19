@@ -1,5 +1,6 @@
 let tasks_all = [
 	'Summer course',
-	'Move Out Reminder',
+	'Apartment Barcelona',
 	'Claim Avios',
+	'HK Quarantine + Flights',
 ]
