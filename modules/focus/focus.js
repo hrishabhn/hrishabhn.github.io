@@ -65,13 +65,13 @@ const focus = {
             name: 'School',
             data: [
                 {
-                    name: 'SAIL',
-                    id: 'sail',
-                    desc: 'Study Abroad Course',
+                    name: 'American Studies',
+                    id: 'amst',
+                    desc: 'AMST 101',
                     thumb: thumbData['globe'],
                     icon: SFSymbols.globe,
                     style: null,
-                    apps: appData['sail'],
+                    apps: appData['amst'],
                     work: true,
                     distract: false,
                 },
