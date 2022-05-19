@@ -699,18 +699,18 @@ const appData = {
     'worldClock': [],
 
     // school
-    'sail': [
+    'amst': [
         {
             name: 'Brightspace',
-            link: 'https://purdue.brightspace.com/d2l/le/content/494426/Home',
+            link: 'https://purdue.brightspace.com/d2l/le/content/552142/Home',
             desc: 'Learn',
             thumb: thumbData['course'],
             style: 'orange',
             distract: false,
         },
-        commonApps.syllabus('sail'),
-        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/SAIL'),
-        commonApps.notion('https://www.notion.so/SAIL-5b633671d2f843578da9226cb83201d1'),
+        commonApps.syllabus('amst'),
+        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Summer%202022/AMST%20101?csf=1&web=1&e=e8EbtC'),
+        commonApps.notion('https://www.notion.so/hrishabhn/AMST-101-9b071b3380f54fdd9b9b665776033bfe'),
     ],
     'indorg': [
         commonApps.aula('123832'),
