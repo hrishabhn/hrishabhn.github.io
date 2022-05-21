@@ -65,7 +65,7 @@ const focus = {
             name: 'School',
             data: [
                 {
-                    name: 'American Studies',
+                    name: 'American',
                     id: 'amst',
                     desc: 'AMST 101',
                     thumb: thumbData['globe'],
