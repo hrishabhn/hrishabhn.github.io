@@ -1,14 +1,14 @@
 const commonApps = {
-    finder: function (link) {
-        return {
-            name: 'Folder',
-            link: link,
-            desc: 'Files',
-            thumb: 'files.jpeg',
-            style: 'blue',
-            distract: false,
-        }
-    },
+    // finder: function (link) {
+    //     return {
+    //         name: 'Folder',
+    //         link: link,
+    //         desc: 'Files',
+    //         thumb: 'files.jpeg',
+    //         style: 'blue',
+    //         distract: false,
+    //     }
+    // },
     onedrive: function (link) {
         return {
             name: 'OneDrive',
@@ -715,7 +715,7 @@ const appData = {
     'indorg': [
         commonApps.aula('123832'),
         commonApps.syllabus('indorg'),
-        commonApps.finder('shortcuts://run-shortcut?name=Industrial%20Organisation%20Folder'),
+        // commonApps.finder('shortcuts://run-shortcut?name=Industrial%20Organisation%20Folder'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Industrial%20Organisation'),
         commonApps.notion('https://www.notion.so/Industrial-Organisation-6f9a042e98f6458a9f509689c2025571'),
     ],
