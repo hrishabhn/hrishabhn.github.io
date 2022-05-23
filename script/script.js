@@ -22,6 +22,10 @@
 
 function cardHover(card, accent, style) {
     card.classList.add('card-hover')
+    return cardCol(card, accent, style)
+}
+
+function cardCol(card, accent, style) {
     if (accent) {
         card.style.setProperty('--brand-col-dark', `#${accent}`)
         card.style.setProperty('--brand-col-light', `#${accent}`)

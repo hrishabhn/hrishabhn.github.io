@@ -3920,14 +3920,23 @@ const allMovies = {
         },
     },
     'ldr': {
-        name: "Love Death Robots",
-        id: "ldr",
-        link: 'https://www.netflix.com/title/80174608',
+        name: 'Love Death Robots',
+        id: 'ldr',
+        link: {
+            netflix: '80174608'
+        },
         info: {
             service: 'netflix',
             studio: 'netflix',
-            location: "Netflix",
-            description: "Animation &#149 Sci-Fi &#149 2 Seasons &#149 2019 - Present",
+            location: 'Netflix',
+            // date: '',
+            seasons: 3,
+            yearStart: 2019,
+            yearEnd: null,
+            genre: [
+                'animation',
+                'sci-fi',
+            ],
             summary: "This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. Among the show's executive producers is Oscar-nominated director David Fincher.",
         },
         style: {
@@ -3937,6 +3946,11 @@ const allMovies = {
                     type: 'webp',
                     title: true,
                 },
+                mobile: {
+                    type: 'webp',
+                    size: '6.6 / 10',
+                    title: false,
+                },
             },
             title: {
                 type: 'png',
@@ -3944,10 +3958,10 @@ const allMovies = {
             },
         },
         apps: {
-            tvTimeID: "357888",
-            reelgoodLink: "https://reelgood.com/show/love-death-robots-2019",
-            imdbID: "tt9561862",
-            subReddit: "LoveDeathAndRobots",
+            tvTimeID: '357888',
+            reelgoodLink: 'https://reelgood.com/show/love-death-robots-2019',
+            imdbID: 'tt9561862',
+            subReddit: 'LoveDeathAndRobots',
         },
     },
     'mando': {

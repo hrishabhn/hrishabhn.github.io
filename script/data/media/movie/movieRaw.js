@@ -5,9 +5,7 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
-            allMovies.bling,
-            allMovies.mythic,
-            allMovies.always,
+            allMovies.ldr,
             allMovies.himyf,
             allMovies.atlanta,
             allMovies.attack,
@@ -18,13 +16,15 @@ let movieRaw = [
         name: 'My list',
         data: [
             allMovies.ozark,
-            allMovies.kal,
+            allMovies.mythic,
             allMovies.peaky,
+            allMovies.kal,
         ],
     },
     {
         name: 'Recent',
         data: [
+            allMovies.bling,
             allMovies.tintin,
             allMovies.noMercy,
             allMovies.elite,
@@ -134,7 +134,6 @@ let movieRaw = [
             allMovies.insideJob,
             allMovies.invincible,
             allMovies.loki,
-            allMovies.ldr,
             allMovies.mando,
             allMovies.manifest,
             allMovies.mythic,
