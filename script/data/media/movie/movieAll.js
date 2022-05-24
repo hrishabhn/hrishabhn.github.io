@@ -94,9 +94,7 @@ const allMovies = {
                 'romance',
             ],
             summary: "In the near future, Sophie is telling her son the story of how she met his father: a story that catapults us back to the present where Sophie and her close-knit group of friends are in the midst of figuring out who they are, what they want out of life, and how to fall in love in the age of dating apps and limitless options.",
-            tags: [
-                'himym',
-            ]
+            tags: ['himym']
         },
         style: {
             color: '3d250f',
@@ -962,9 +960,7 @@ const allMovies = {
                 'sci-fi',
             ],
             summary: "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
-            tags: [
-                'mcu',
-            ]
+            tags: ['mcu']
         },
         style: {
             color: '645542',
@@ -1467,6 +1463,7 @@ const allMovies = {
                 'star wars',
             ],
             summary: "Legendary bounty hunter Boba Fett and mercenary Fennec Shand must navigate the galaxy’s underworld when they return to the sands of Tatooine to stake their claim on the territory once ruled by Jabba the Hutt and his crime syndicate.",
+            tags: ['starwars']
         },
         style: {
             color: '7d7e42',
@@ -2580,9 +2577,7 @@ const allMovies = {
                 'crime',
             ],
             summary: "Marvel Studios’ “Hawkeye” is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
-            tags: [
-                'mcu',
-            ]
+            tags: ['mcu']
         },
         style: {
             color: '5980C4',
@@ -3900,9 +3895,7 @@ const allMovies = {
                 'sci-fi',
             ],
             summary: "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame.",
-            tags: [
-                'mcu',
-            ]
+            tags: ['mcu']
         },
         style: {
             color: 'a87643',
@@ -5118,9 +5111,7 @@ const allMovies = {
                 'sport',
             ],
             summary: "At Blue Mountain State, the benefits of being a player on one of the most successful football programs in the nation are just too good to pass up... beautiful girls, campus-wide celebrity and wild keg parties make college life a young man's dream. The new Freshman players on this notorious team are about to learn the extreme highs -- as well as the pitfalls - of being one of the chosen few.",
-            tags: [
-                'bms',
-            ]
+            tags: ['bms']
         },
         style: {
             color: colorData.fluent.blue10,
@@ -5343,9 +5334,7 @@ const allMovies = {
                 'friends',
             ],
             summary: "A half-hour comedy series about Ted and how he fell in love. It all started when Ted’s best friend, Marshall, drops the bombshell that he’s going to propose to his long-time girlfriend, Lily, a kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he hopes to find true love, too.",
-            tags: [
-                'himym',
-            ]
+            tags: ['himym']
         },
         style: {
             color: '60B9C6',
@@ -5479,9 +5468,7 @@ const allMovies = {
                 'sci-fi',
             ],
             summary: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
-            tags: [
-                'disney',
-            ]
+            tags: ['disney']
         },
         style: {
             color: '232055',
@@ -5708,9 +5695,7 @@ const allMovies = {
                 'cars',
             ],
             summary: "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international espionage.",
-            tags: [
-                'disney',
-            ]
+            tags: ['disney']
         },
         style: {
             color: '1E374D',
@@ -5748,9 +5733,7 @@ const allMovies = {
                 'cars',
             ],
             summary: "Race car Lightning McQueen is living in the fast lane...until he hits a detour and gets stranded in Radiator Springs, a forgotten town on Route 66. There he meets a heap of hilarious characters who help him discover there's more to life than fame.",
-            tags: [
-                'disney',
-            ]
+            tags: ['disney']
         },
         style: {
             color: '1E374D',
@@ -5787,9 +5770,7 @@ const allMovies = {
                 'sci-fi',
             ],
             summary: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
-            tags: [
-                'mcu',
-            ]
+            tags: ['mcu']
         },
         style: {
             color: 'af0000',
@@ -6054,9 +6035,7 @@ const allMovies = {
                 'comedy',
             ],
             summary: "Jamie Foxx leads an all-star cast in this hilarious, heart-filled adventure. Pixar’s 'Soul' introduces Joe, who lands the gig of his life at the best jazz club in town. But one misstep lands Joe in a fantastical place: The Great Before. There, he teams up with soul 22 (Tina Fey), and together they find the answers to some of life’s biggest questions.",
-            tags: [
-                'disney',
-            ]
+            tags: ['disney']
         },
         style: {
             color: '232e43',
@@ -6169,9 +6148,7 @@ const allMovies = {
                 'romance',
             ],
             summary: "An American-born Chinese economics professor accompanies her boyfriend to Singapore for his best friend's wedding, only to get thrust into the lives of Asia's rich and famous.",
-            tags: [
-                'romcom',
-            ]
+            tags: ['romcom']
         },
         style: {
             color: '76665b',
@@ -6272,9 +6249,7 @@ const allMovies = {
             location: 'Netflix',
             description: 'Drama &#149 Romance &#149 2011',
             summary: "Three friends on an adventurous road trip/bachelor party in Spain learn some lessons about themselves and each other that will change them forever.",
-            tags: [
-                'romcom',
-            ]
+            tags: ['romcom']
         },
         style: {
             color: '313B47',
@@ -6310,9 +6285,7 @@ const allMovies = {
             // date: '',
             description: 'Action &#149 Spy &#149 2021',
             summary: 'James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.',
-            tags: [
-                'bond',
-            ]
+            tags: ['bond']
         },
         style: {
             color: '3c4749',
@@ -6415,9 +6388,7 @@ const allMovies = {
                 'fantasy',
             ],
             summary: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
-            tags: [
-                'mcu',
-            ]
+            tags: ['mcu']
         },
         style: {
             color: '4b3831',
@@ -7483,9 +7454,7 @@ const allMovies = {
                 'kids',
             ],
             summary: "Phineas and Ferb invent, scheme, and stay one step ahead of their bratty sister. Meanwhile, their pet platypus plots against evil Dr. Doofenshmirtz.",
-            tags: [
-                'disney',
-            ]
+            tags: ['disney']
         },
         style: {
             color: '64d2ff',

@@ -40,6 +40,7 @@ const movies = {
         'bond': 'James Bond',
         'romcom': 'Romantic Comedy',
         'disney': 'Disney',
+        'starwars': 'Star Wars',
     },
 }
 
