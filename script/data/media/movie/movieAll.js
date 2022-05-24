@@ -1475,11 +1475,16 @@ const allMovies = {
                     type: 'webp',
                     title: true,
                 },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
             },
-            // titleType: 'png',
-            // titleSize: 'widest',
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
         },
         apps: {
             tvTimeID: '393589',
@@ -7461,6 +7466,58 @@ const allMovies = {
             },
         ],
     },
+    'phineas': {
+        name: 'Phineas and Ferb',
+        id: 'phineas',
+        link: 'https://www.disneyplus.com/series/phineas-and-ferb/1Vl0AKTYhC6U',
+        info: {
+            service: 'disney',
+            studio: 'disney',
+            location: 'Disney+',
+            seasons: 4,
+            yearStart: 2007,
+            yearEnd: 2015,
+            genre: [
+                'animation',
+                'comedy',
+                'kids',
+            ],
+            summary: "Phineas and Ferb invent, scheme, and stay one step ahead of their bratty sister. Meanwhile, their pet platypus plots against evil Dr. Doofenshmirtz.",
+            tags: [
+                'disney',
+            ]
+        },
+        style: {
+            color: '64d2ff',
+            poster: {
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '8 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'mid',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/phineas-and-ferb-2007',
+            imdbID: 'tt0852863',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         char: 'name',
+        //     },
+        // ],
+    },
 }
 // @new
 // 'identifier': {
@@ -7483,6 +7540,9 @@ const allMovies = {
 //             'comedy',
 //         ],
 //         summary: "summary",
+//         tags: [
+//             'tag',
+//         ]
 //     },
 //     style: {
 //         color: '000000',
@@ -7501,9 +7561,6 @@ const allMovies = {
 //             type: 'png',
 //             size: 'widest',
 //         },
-//         tags: [
-//             'tag',
-//         ]
 //     },
 //     apps: {
 //         // tvTimeID: 'identifier',
