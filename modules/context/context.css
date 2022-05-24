@@ -29,13 +29,15 @@
     border-radius: 12px;
     box-shadow: 0 10px 30px -5px var(--black-80);
     overflow-y: scroll;
-    transform-origin: top left;
+    transform-origin: top center;
 
-    transition: transform 0.15s;
+    transition: all 0.15s;
 }
 #context-modal.hide #context-menu {
     opacity: 0;
-    transform: scaleX(0.5) scaleY(0.2) translateY(-10px);
+    translate: 0px -10px;
+    scale: 0.98;
+    transition: all 0s;
 }
 
 #context-menu .item {

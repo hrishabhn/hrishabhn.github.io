@@ -85,6 +85,6 @@ function absolutePos(elem, x, y) {
     if (overflowX) {
         elem.style.removeProperty('left')
         elem.style.setProperty('right', '10px')
-        elem.style.setProperty('transform-origin', 'top right')
+        // elem.style.setProperty('transform-origin', 'top right')
     }
 }
