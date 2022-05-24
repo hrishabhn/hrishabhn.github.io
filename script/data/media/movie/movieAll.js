@@ -6231,9 +6231,7 @@ const allMovies = {
                 'comedy special',
             ],
             summary: "As he closes out his slate of comedy specials, Dave takes the stage to try and set the record straight - and get a few things off his chest.",
-            tags: [
-                'standup',
-            ]
+            tags: ['standup']
         },
         style: {
             color: '6d223c',
@@ -6673,9 +6671,7 @@ const allMovies = {
                 'comedy special',
             ],
             summary: "From the Vedas to Vasco da Gama to vacuous Bollywood plotlines, comedian Vir Das celebrates the history of India with his one-of-a-kind perspective.",
-            tags: [
-                'standup',
-            ]
+            tags: ['standup']
         },
         style: {
             color: '9b732e',
@@ -6848,9 +6844,7 @@ const allMovies = {
                 'comedy special',
             ],
             summary: "Jack Whitehall hits the stage with hilarious tales about happy couples, life in hotels, human stupidity and his well-traveled father.",
-            tags: [
-                'standup',
-            ]
+            tags: ['standup']
         },
         style: {
             color: colorData.fluent.blue10,
@@ -6892,9 +6886,7 @@ const allMovies = {
                 'comedy special',
             ],
             summary: "Comedian Vir Das tackles nationalism, globalism, good food and bad politics in two cleverly crosscut performances in New York and New Delhi.",
-            tags: [
-                'standup',
-            ]
+            tags: ['standup']
         },
         style: {
             color: '9b732e',
@@ -7119,9 +7111,7 @@ const allMovies = {
                 'comedy special',
             ],
             summary: `Ronny Chieng ("The Daily Show," "Crazy Rich Asians") takes center stage in this stand-up special and riffs on modern American life and more.`,
-            tags: [
-                'standup',
-            ]
+            tags: ['standup']
         },
         style: {
             color: colorData.fluent.cyan30,
@@ -7227,9 +7217,7 @@ const allMovies = {
                 'comedy special',
             ],
             summary: "In his debut standup special, Good Deal, Jimmy will tell you all about his take on Asian representation, how he learned to speak English from rap videos, dating tall women, and pursuing his dreams only to disappoint his old school Chinese parents. From assimilation to representation, Jimmy O. Yang delivers an absolutely hilarious hour of comedy in Good Deal.",
-            tags: [
-                'standup',
-            ]
+            tags: ['standup']
         },
         style: {
             color: colorData.fluent.cyan30,
@@ -7427,6 +7415,52 @@ const allMovies = {
         //     },
         // ],
     },
+    'supernature': {
+        name: 'Ricky Gervais: SuperNature',
+        id: 'supernature',
+        link: {
+            netflix: '80225917'
+        },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            year: 2022,
+            genre: [
+                'comedy special',
+            ],
+            summary: "Ricky Gervais gives his take on the rules of comedy, spoiling his cats and how super actual nature is in his second Netflix stand-up special.",
+            tags: ['standup']
+        },
+        style: {
+            color: colorData.fluent.cyan30,
+            poster: {
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            imdbID: 'tt19885626',
+        },
+        cast: [
+            {
+                actor: 'Ricky Gervais',
+            },
+        ],
+    },
 }
 // @new
 // 'identifier': {
@@ -7467,6 +7501,9 @@ const allMovies = {
 //             type: 'png',
 //             size: 'widest',
 //         },
+//         tags: [
+//             'tag',
+//         ]
 //     },
 //     apps: {
 //         // tvTimeID: 'identifier',
