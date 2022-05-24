@@ -1460,7 +1460,6 @@ const allMovies = {
             genre: [
                 'action & adventure',
                 'sci-fi',
-                'star wars',
             ],
             summary: "Legendary bounty hunter Boba Fett and mercenary Fennec Shand must navigate the galaxy’s underworld when they return to the sands of Tatooine to stake their claim on the territory once ruled by Jabba the Hutt and his crime syndicate.",
             tags: ['starwars']
@@ -3979,9 +3978,9 @@ const allMovies = {
             genre: [
                 'action & adventure',
                 'sci-fi',
-                'star wars',
             ],
             summary: "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
+            tags: ['starwars']
         },
         style: {
             color: '4d627f',
@@ -5578,9 +5577,9 @@ const allMovies = {
             genre: [
                 'adventure',
                 'sci-fi',
-                'star wars',
             ],
             summary: "Luke Skywalker begins a journey that will change the galaxy in Star Wars: Episode IV - A New Hope. Nineteen years after the formation of the Empire, Luke is thrust into the struggle of the Rebel Alliance when he meets Obi-Wan Kenobi, who has lived for years in seclusion on the desert planet of Tatooine. Obi-Wan begins Luke’s Jedi training as Luke joins him on a daring mission to rescue the beautiful Rebel leader Princess Leia from the clutches of Darth Vader and the evil Empire. Contains tobacco depictions.",
+            tags: ['starwars']
         },
         style: {
             color: '372f35',
