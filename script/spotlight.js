@@ -35,6 +35,7 @@ function spotlightRun(e) {
                 }
             }
         } else {
+            document.getElementById('main').classList = 'searching'
             removeAllChildNodes(spotlight.result)
             let resultRowArray = [
                 appObject.main.tray(appObject.search(q, focus.apps()), 'Focus'),
@@ -79,6 +80,7 @@ function spotlightRun(e) {
 
 
     } else {
+        document.getElementById('main').classList = 'initial'
         removeAllChildNodes(spotlight.result)
         content.load()
         if (e.key == 'Enter') window.open('https://google.com', '_self')
