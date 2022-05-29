@@ -707,6 +707,7 @@ const appData = {
             thumb: thumbData['course'],
             style: 'orange',
             distract: false,
+            dockIcon: SFSymbols.graduationcap.fill,
         },
         commonApps.syllabus('amst'),
         commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Summer%202022/AMST%20101?csf=1&web=1&e=e8EbtC'),
