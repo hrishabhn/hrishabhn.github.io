@@ -154,7 +154,7 @@ const allMovies = {
             service: 'netflix',
             studio: 'netflix',
             location: 'Netflix',
-            // date: '28 Feb 2022',
+            date: '10 Jun 2022',
             seasons: 6,
             yearStart: 2013,
             yearEnd: null,

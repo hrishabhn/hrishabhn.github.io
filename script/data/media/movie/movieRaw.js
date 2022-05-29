@@ -1,4 +1,5 @@
 const soonMovies = [
+    allMovies.peaky,
 ]
 
 let movieRaw = [
@@ -6,23 +7,23 @@ let movieRaw = [
         name: 'Up next',
         data: [
             allMovies.supernature,
+            allMovies.bling,
             allMovies.ldr,
-            allMovies.severance,
-            allMovies.earth,
-            allMovies.prehistoric,
+            allMovies.cowboy,
+            allMovies.atlanta,
+            allMovies.attack,
         ],
     },
     {
         name: 'My list',
         data: [
-            allMovies.attack,
-            allMovies.atlanta,
+            allMovies.severance,
+            allMovies.earth,
+            allMovies.prehistoric,
             allMovies.ozark,
             allMovies.boba,
             allMovies.mythic,
-            allMovies.peaky,
             allMovies.kal,
-            allMovies.cowboy,
             allMovies.wecrashed,
         ],
     },
@@ -84,7 +85,6 @@ let movieRaw = [
     {
         name: 'Paused',
         data: [
-            allMovies.bling,
             allMovies.noMercy,
             allMovies.elite,
             allMovies.disenchant,
