@@ -7,8 +7,9 @@ let movieRaw = [
         data: [
             allMovies.supernature,
             allMovies.ldr,
-            allMovies.himyf,
             allMovies.severance,
+            allMovies.earth,
+            allMovies.prehistoric,
         ],
     },
     {
@@ -48,7 +49,6 @@ let movieRaw = [
             allMovies.loAndBehold,
             allMovies.ghost,
             allMovies.john,
-            allMovies.earth,
         ],
     },
     {

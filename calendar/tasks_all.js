@@ -1,4 +1,4 @@
 let tasks_all = [
-	'Apartment Barcelona',
-	'AirBNB June',
+	'English Test for Wyoming3',
+	'AMST 101 - Midterm Report',
 ]

@@ -372,13 +372,11 @@ const allMovies = {
     'wecrashed': {
         name: 'WeCrashed',
         id: 'wecrashed',
-        // link: {
-        //     netflix: '80197526'
-        // },
+        link: 'https://tv.apple.com/show/wecrashed/umc.cmc.6qw605uv2rwbzutk2p2fsgvq9',
         info: {
             service: 'appleTV',
             studio: 'appleTV',
-            location: 'Apple TV+',
+            location: ' TV+',
             date: '18 March 2022',
             seasons: 1,
             yearStart: 2022,
@@ -1205,8 +1203,13 @@ const allMovies = {
             service: 'appleTV',
             studio: 'appleTV',
             location: ' TV+',
-            description: 'Documentary &#149 Nature &#149 2021',
+            year: 2021,
+            genre: [
+                'documentary',
+                'nature',
+            ],
             summary: "Narrated by David Attenborough, never-before-seen footage shows how our living in lockdown opened the door for nature to bounce back and thrive. Across the seas, skies, and lands, Earth found its rhythm when we came to a stop.",
+            tags: ['David Attenborough']
         },
         style: {
             color: '484b51',
@@ -1229,6 +1232,11 @@ const allMovies = {
             imdbID: 'tt14372240',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'David Attenborough',
+            },
+        ],
     },
     'phil': {
         name: 'Somebody Feed Phil',
@@ -1274,7 +1282,6 @@ const allMovies = {
         cast: [
             {
                 actor: 'Phil Rosenthal',
-                char: 'Self',
             },
         ],
     },
@@ -2188,8 +2195,8 @@ const allMovies = {
         id: 'mankind',
         link: 'https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7',
         info: {
-            // service: '',
-            // studio: '',
+            service: 'appleTV',
+            studio: 'appleTV',
             location: ' TV+',
             description: 'Sci-Fi &#149 2 Seasons &#149 2019 - Present',
             summary: "Exploring the possibilities that might exist if the global space race had continued and where humanity would be now.",
@@ -7485,6 +7492,54 @@ const allMovies = {
         //         char: 'name',
         //     },
         // ],
+    },
+    'prehistoric': {
+        name: 'Prehistoric Planet',
+        id: 'prehistoric',
+        link: 'https://tv.apple.com/show/prehistoric-planet/umc.cmc.4lh4bmztauvkooqz400akxav',
+        info: {
+            service: 'appleTV',
+            studio: 'appleTV',
+            location: ' TV+',
+            seasons: 1,
+            year: 2022,
+            genre: [
+                'documentary',
+                'nature',
+            ],
+            summary: "summary",
+            tags: ['David Attenborough'],
+        },
+        style: {
+            color: '7d7e42',
+            color: colorData.fluent.cyan10,
+            poster: {
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
+                mobile: {
+                    type: 'webp',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'webp',
+                size: 'widest',
+            },
+        },
+        apps: {
+            tvTimeID: '418505',
+            reelgoodLink: 'https://reelgood.com/show/prehistoric-planet-2022',
+            imdbID: 'tt10324164',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'David Attenborough',
+            },
+        ],
     },
 }
 // @new
