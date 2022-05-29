@@ -10,7 +10,6 @@ const dnd = {
     toggle: function () {
         if (dnd.active()) setCookie('dnd', false, (1 / 1440))
         else setCookie('dnd', true, 1)
+        location.reload()
     },
-
 }
-
