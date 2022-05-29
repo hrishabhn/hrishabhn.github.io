@@ -85,7 +85,7 @@ const mediaElems = {
                 card.onclick = function () { movie.detail() }
                 // card.oncontextmenu = function (e) {
                 //     e.preventDefault()
-                //     context.show([movieApps(movieData[i, j])], e)
+                //     context.show([movieApps(movie)], e)
                 // }
 
 
