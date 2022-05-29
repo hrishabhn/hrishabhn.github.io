@@ -7,7 +7,6 @@ let movieRaw = [
         name: 'Up next',
         data: [
             allMovies.supernature,
-            allMovies.bling,
             allMovies.ldr,
             allMovies.cowboy,
             allMovies.atlanta,
@@ -85,6 +84,7 @@ let movieRaw = [
     {
         name: 'Paused',
         data: [
+            allMovies.bling,
             allMovies.noMercy,
             allMovies.elite,
             allMovies.disenchant,
