@@ -7507,7 +7507,7 @@ const allMovies = {
                 'documentary',
                 'nature',
             ],
-            summary: "summary",
+            summary: "Experience the wonders of our world like never before in this epic series from Jon Favreau and the producers of Planet Earth. Travel back 66 million years to when majestic dinosaurs and extraordinary creatures roamed the lands, seas, and skies.",
             tags: ['David Attenborough'],
         },
         style: {

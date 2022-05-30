@@ -263,6 +263,14 @@ const appData = {
             distract: false,
         },
         {
+            name: 'Numberbarn',
+            link: 'https://www.numberbarn.com/account/messages',
+            desc: 'Text Messages',
+            icon: SFSymbols.phone.fill,
+            style: 'indigo',
+            distract: false,
+        },
+        {
             name: 'Version 6.4',
             link: 'file:///Users/hrishabh/Downloads/dashboard%206.4/index.html',
             desc: 'Old Version',
