@@ -8,19 +8,20 @@ let movieRaw = [
         name: 'Up next',
         data: [
             allMovies.ldr,
-            allMovies.atlanta,
-            allMovies.attack,
+            allMovies.tintin,
+            allMovies.boba,
         ],
     },
     {
         name: 'My list',
         data: [
+            allMovies.atlanta,
+            allMovies.attack,
             allMovies.cowboy,
             allMovies.severance,
             allMovies.earth,
             allMovies.prehistoric,
             allMovies.ozark,
-            allMovies.boba,
             allMovies.mythic,
             allMovies.kal,
             allMovies.wecrashed,
@@ -29,7 +30,6 @@ let movieRaw = [
     {
         name: 'Recent',
         data: [
-            allMovies.tintin,
             allMovies.snowfall,
             allMovies.drive,
             allMovies.dontLookUp,
