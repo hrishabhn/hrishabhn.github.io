@@ -34,7 +34,7 @@ const mediaElems = {
                         card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
 
                 // card color
-                if (movie.style.color) card = cardHover(card, movie.style.color, null)
+                if (movie.style.color) card = cardCol(card, movie.style.color, null)
 
                 // size
                 if (small) card.classList.add('small')
