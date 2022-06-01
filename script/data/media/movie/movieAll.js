@@ -658,12 +658,12 @@ const allMovies = {
         name: 'The Adventures of Tintin',
         id: 'tintin',
         link: {
-            primeVideo: 'B0827XZNV3'
+            netflix: '70211391'
         },
         info: {
-            service: 'prime',
+            service: 'netflix',
             // studio: 'studio',
-            location: 'Prime Video',
+            location: 'Netflix',
             seasons: 3,
             yearStart: 1991,
             yearEnd: 1992,
