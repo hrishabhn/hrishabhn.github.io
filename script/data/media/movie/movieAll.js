@@ -3459,7 +3459,8 @@ const allMovies = {
         name: 'The Boys',
         id: 'boys',
         link: {
-            primeVideo: 'B08F81VWVD'
+            // primeVideo: 'B08F81VWVD'
+            primeVideo: 'B09WV9C176'
         },
         info: {
             service: 'prime',

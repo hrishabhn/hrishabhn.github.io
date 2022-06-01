@@ -27,7 +27,13 @@ const mediaElems = {
                 // base card
                 var card = document.createElement('div')
                 card.classList = 'media-card movie clickable-o'
-                if (movie.info.date) card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
+
+                // movie new or soon
+                if (movie.info.date)
+                    if (new Date(movie.info.date) > new Date(new Date().getTime() - (7 * 24 * 60 * 60 * 1000)))
+                        card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
+
+                // card color
                 if (movie.style.color) card = cardHover(card, movie.style.color, null)
 
                 // size

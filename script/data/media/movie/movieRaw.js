@@ -1,4 +1,5 @@
 const soonMovies = [
+    allMovies.boys,
     allMovies.peaky,
 ]
 
@@ -40,7 +41,6 @@ let movieRaw = [
     {
         name: 'Movies',
         data: [
-            allMovies.jurassic6,
             allMovies.eternals,
             allMovies.knives,
             allMovies.dune,
@@ -53,31 +53,31 @@ let movieRaw = [
     {
         name: 'New',
         data: [
-            // allMovies.land,
-            // allMovies.murdochs,
-            // allMovies.sixties,
-            // allMovies.ministry,
             allMovies.killingEve,
-            // allMovies.phil,
-            // allMovies.anna,
-            // allMovies.diabolical,
             allMovies.clarkson,
-            // allMovies.cowboy2,
             allMovies.joanna,
             allMovies.chernobyl,
             allMovies.sopranos,
             allMovies.fleabag,
-            // allMovies.finalSpace,
-            // allMovies.maid,
             allMovies.spy,
             allMovies.lineofduty,
-            // allMovies.dexter,
             allMovies.mindhunter,
             allMovies.vikings,
             allMovies.qanon,
             allMovies.witcher,
             allMovies.mankind,
             allMovies.dark,
+            allMovies.land,
+            allMovies.murdochs,
+            allMovies.sixties,
+            allMovies.ministry,
+            allMovies.phil,
+            allMovies.anna,
+            allMovies.diabolical,
+            allMovies.cowboy2,
+            allMovies.finalSpace,
+            allMovies.maid,
+            allMovies.dexter,
         ],
     },
     {
@@ -117,7 +117,7 @@ let movieRaw = [
     {
         name: 'Coming Soon',
         data: [
-            allMovies.boys,
+            allMovies.jurassic6,
         ],
     },
     {
