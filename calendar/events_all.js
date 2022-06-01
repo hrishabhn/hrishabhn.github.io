@@ -1,6 +1,6 @@
 let events_all = [
-{"location":"10.2.8","end":"2022-05-31T18:00:00+02:00","start":"2022-05-31T15:00:00+02:00","allDay":"No","notes":"","calendar":"Key Dates","link":"","name":"Financial Economics Final Exam"},
 {"location":"","end":"2022-06-05T00:00:00+02:00","start":"2022-06-04T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/E72C4801-B280-417A-A7F2-D162E22AF57F:ABPerson","name":"Inez🦓 Bolton’s Birthday"},
 {"location":"https:\/\/www.apple.com\/apple-events\/event-stream\/","end":"2022-06-06T21:00:00+02:00","start":"2022-06-06T19:00:00+02:00","allDay":"No","notes":"Sigue en directo la presentación de la WWDC22 de Apple, que se emitirá desde el Apple Park. Puedes verlo online en apple.com","calendar":"Personal","link":"","name":"WWDC22 Apple Keynote"},
 {"location":"","end":"2022-06-09T00:00:00+02:00","start":"2022-06-08T00:00:00+02:00","allDay":"Yes","notes":"","calendar":"Birthdays","link":"addressbook:\/\/FE4B6BAC-D624-40A1-881D-EF2E0569C966:ABPerson","name":"Tanaya Wagh’s Birthday"},
+{"location":"15.2.16","end":"2022-06-09T16:30:00+02:00","start":"2022-06-09T14:30:00+02:00","allDay":"No","notes":"","calendar":"Work","link":"","name":"Industrial Organisation Review"},
 ]

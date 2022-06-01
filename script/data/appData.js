@@ -436,7 +436,7 @@ const appData = {
             link: 'primevideo://',
             desc: 'Watch',
             thumb: 'prime.jpeg',
-            accent: null,
+            style: 'indigo',
             distract: true,
         },
         commonApps.youtube('YouTube', 'https://www.youtube.com', 'Watch Videos'),

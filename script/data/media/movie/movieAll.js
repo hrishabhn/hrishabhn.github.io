@@ -92,6 +92,7 @@ const allMovies = {
             genre: [
                 'comedy',
                 'romance',
+                'friends',
             ],
             summary: "In the near future, Sophie is telling her son the story of how she met his father: a story that catapults us back to the present where Sophie and her close-knit group of friends are in the midst of figuring out who they are, what they want out of life, and how to fall in love in the age of dating apps and limitless options.",
             tags: ['himym']
@@ -7541,6 +7542,56 @@ const allMovies = {
                 actor: 'David Attenborough',
             },
         ],
+    },
+    'friends': {
+        name: 'Friends',
+        id: 'friends',
+        link: 'https://play.hbomax.com/series/urn:hbo:series:GXdbR_gOXWJuAuwEAACVH',
+        info: {
+            service: 'hbo',
+            studio: 'nbc',
+            location: 'HBO Max',
+            seasons: 10,
+            yearStart: 1994,
+            yearEnd: 2004,
+            genre: [
+                'comedy',
+                'romance',
+                'friends',
+            ],
+            summary: "Follow the lives of six reckless adults living in Manhattan, as they indulge in adventures which make their lives both troublesome and happening.",
+        },
+        style: {
+            color: colorData.fluent.red,
+            // color: 'b3916e',
+            poster: {
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/friends-1994',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         char: 'name',
+        //     },
+        // ],
     },
 }
 // @new
