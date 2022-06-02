@@ -127,6 +127,10 @@ function tvDetailApps(key) {
         let elem = document.createElement('a')
         elem.classList = 'app clickable card-shadow'
         elem.target = '_blank'
+        elem.onmouseover = function () {
+            for (const child of elem.parentNode.childNodes) child.classList.remove('active')
+            elem.classList.add('active')
+        }
 
         let iconElem = elems.icon(icon)
         iconElem.style.setProperty('--size', `${iconSize}px`)
