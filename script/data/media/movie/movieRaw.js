@@ -7,7 +7,6 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
-            allMovies.ldr,
             allMovies.attack,
             allMovies.atlanta,
             allMovies.friends,
@@ -135,6 +134,7 @@ let movieRaw = [
             allMovies.insideJob,
             allMovies.invincible,
             allMovies.loki,
+            allMovies.ldr,
             allMovies.mando,
             allMovies.manifest,
             allMovies.mythic,
