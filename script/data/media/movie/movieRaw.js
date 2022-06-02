@@ -152,7 +152,7 @@ let movieRaw = [
         ],
     },
     {
-        name: 'Classics',
+        name: 'Classics & Finished',
         data: [
             allMovies.superstore,
             allMovies.expanse,
