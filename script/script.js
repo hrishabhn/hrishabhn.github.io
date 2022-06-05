@@ -297,3 +297,5 @@ function openApp(data, e, force) {
 }
 
 function randomElem(array) { return array[Math.floor(Math.random() * array.length)] }
+
+function randomNumber(n) { return Math.floor(Math.random() * n) }
