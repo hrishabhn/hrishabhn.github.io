@@ -7594,6 +7594,56 @@ const allMovies = {
         //     },
         // ],
     },
+    'kenobi': {
+        name: 'Obi-Wan Kenobi',
+        id: 'kenobi',
+        link: 'https://www.disneyplus.com/series/obi-wan-kenobi/2JYKcHv9fRJb',
+        info: {
+            service: 'disney',
+            studio: 'starwars',
+            location: 'Disney+',
+            // date: '',
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'action & adventure',
+                'sci-fi',
+            ],
+            summary: "During the reign of the Empire, Obi-Wan Kenobi embarks on a crucial mission.",
+            tags: ['starwars']
+        },
+        style: {
+            color: 'a98264',
+            poster: {
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            reelgoodLink: 'https://reelgood.com/show/obiwan-kenobi-2022',
+            imdbID: 'tt8466564',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Ewan McGregor',
+                char: 'Obi-Wan Kenobi',
+            },
+        ],
+    },
 }
 // @new
 // 'identifier': {
