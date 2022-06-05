@@ -7,24 +7,25 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
+            allMovies.kenobi,
             allMovies.attack,
-            allMovies.atlanta,
+            allMovies.severance,
             allMovies.friends,
+            allMovies.atlanta,
+            allMovies.mythic,
+            // 'primevideo://detail?gti=amzn1.dv.gti.b346f853-671f-431f-82db-4cda8a03fe1f'
+            // https://www.primevideo.com/gp/video/detail/B09WV8HF7Q
         ],
     },
     {
         name: 'My list',
         data: [
-            allMovies.boba,
+            allMovies.wecrashed,
             allMovies.tintin,
             allMovies.cowboy,
-            allMovies.severance,
             allMovies.earth,
             allMovies.prehistoric,
             allMovies.ozark,
-            allMovies.mythic,
-            allMovies.kal,
-            allMovies.wecrashed,
         ],
     },
     {
@@ -45,6 +46,7 @@ let movieRaw = [
     {
         name: 'Movies',
         data: [
+            allMovies.kal,
             allMovies.eternals,
             allMovies.knives,
             allMovies.dune,
@@ -57,6 +59,7 @@ let movieRaw = [
     {
         name: 'New',
         data: [
+            allMovies.boba,
             allMovies.killingEve,
             allMovies.clarkson,
             allMovies.joanna,
