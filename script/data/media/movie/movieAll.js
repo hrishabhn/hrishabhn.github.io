@@ -7616,9 +7616,7 @@ const allMovies = {
 //             'comedy',
 //         ],
 //         summary: "summary",
-//         tags: [
-//             'tag',
-//         ]
+//         tags: ['tag']
 //     },
 //     style: {
 //         color: '000000',
