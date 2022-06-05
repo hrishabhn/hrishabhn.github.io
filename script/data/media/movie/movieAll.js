@@ -7753,6 +7753,13 @@ for (const key in allMovies) {
         else if (movie.link.cnn) movie.link = `https://plus.cnn.com/plus/title-${movie.link.cnn}` //`https://watch.amazon.com/detail?asin=${movie.link.primeVideo}`
     }
 
+    movie.play = function () {
+        if (movie.link) window.open(movie.link)
+        setCookie('recent-movie', key, 7)
+        console.log(getCookie('recent-movie'))
+    }
+
+
     // process info
     if (movie.info.studio) movie.info.serviceImg = `${movie.info.studio}.svg`
     else if (movie.info.service) movie.info.serviceImg = `${movie.info.service}.svg`

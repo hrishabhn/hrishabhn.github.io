@@ -64,7 +64,7 @@ function tvDetail(key) {
 
     let play = elems.a(iconData.play, `Watch on ${movie.info.location}`)
     play.classList = 'play clickable'
-    if (movie.link) play.href = movie.link
+    play.onclick = function () { movie.play() }
 
     info.firstChild.after(play)
 

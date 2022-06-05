@@ -179,6 +179,7 @@
     padding: 10px 12px;
     border-radius: 5px;
     margin: 8px 0;
+    cursor: pointer;
 
     border: solid 2px white;
     background-color: white;
