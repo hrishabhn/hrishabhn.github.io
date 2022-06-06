@@ -18,6 +18,11 @@ body{
     fill: var(--dark-layer-1);
 }
 
+
+.layer-hover.on {
+    background-color: var(--white-05);
+}
+
 .layer-hover:hover {
     background-color: var(--white-05);
 }
@@ -25,6 +30,7 @@ body{
 .layer-hover:active {
     background-color: var(--white-10);
 }
+
 
 
 .layer-0-blur{
@@ -70,6 +76,9 @@ a.layer-fg{
         fill: white;
     }
 
+    .layer-hover.on {
+        background-color: var(--black-05);
+    }
     .layer-hover:hover {
         background-color: var(--black-05);
     }
@@ -122,4 +131,3 @@ a.layer-fg{
         }
     }
 }
-

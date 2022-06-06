@@ -28,18 +28,6 @@ script {
 
 
 
-
-/* .splash {
-    grid-column: 1 / -1;
-    justify-content: flex-start;
-    width: 100%;
-    padding: 30px 50px;
-    padding-bottom: 0;
-
-    font-size: 50px;
-    font-weight: 600;
-} */
-
 #home-all {
     grid-column: 1 / -1;
 

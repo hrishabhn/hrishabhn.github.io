@@ -3494,7 +3494,7 @@ const allMovies = {
             mobileSize: '7 / 10',
         },
         apps: {
-            // tvTimeID: 'identifier',
+            tvTimeID: '355567',
             reelgoodLink: 'https://reelgood.com/show/the-boys-2019',
             imdbID: 'tt1190634',
             subReddit: 'TheBoys',
