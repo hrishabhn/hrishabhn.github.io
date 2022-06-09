@@ -7,6 +7,7 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
+            allMovies.prehistoric,
             allMovies.attack,
             allMovies.mythic,
             allMovies.atlanta,
@@ -24,7 +25,6 @@ let movieRaw = [
             allMovies.tintin,
             allMovies.cowboy,
             allMovies.earth,
-            allMovies.prehistoric,
             allMovies.ozark,
         ],
     },
