@@ -3467,7 +3467,7 @@ const allMovies = {
             service: 'prime',
             studio: 'prime',
             location: 'Prime Video',
-            date: '10 Jun, 2022',
+            date: '10 Jun, 2022, 09:00:00',
             seasons: 3,
             yearStart: 2019,
             yearEnd: null,
