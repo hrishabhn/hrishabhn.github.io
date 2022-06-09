@@ -7,12 +7,9 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
-            allMovies.kenobi,
             allMovies.attack,
-            allMovies.severance,
-            allMovies.friends,
-            allMovies.atlanta,
             allMovies.mythic,
+            allMovies.atlanta,
             // 'primevideo://detail?gti=amzn1.dv.gti.b346f853-671f-431f-82db-4cda8a03fe1f'
             // https://www.primevideo.com/gp/video/detail/B09WV8HF7Q
         ],
@@ -20,7 +17,10 @@ let movieRaw = [
     {
         name: 'My list',
         data: [
+            allMovies.kenobi,
             allMovies.wecrashed,
+            allMovies.severance,
+            allMovies.friends,
             allMovies.tintin,
             allMovies.cowboy,
             allMovies.earth,
