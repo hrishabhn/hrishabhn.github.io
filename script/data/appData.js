@@ -17,7 +17,7 @@ const commonApps = {
             thumb: 'onedrive.jpeg',
             accent: colorData['onedrive'],
             distract: false,
-            dockIcon: SFSymbols.folder.fill,
+            dockIcon: SFSymbols.icloud.fill,
         }
     },
     notion: function (link) {
