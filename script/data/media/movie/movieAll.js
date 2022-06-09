@@ -7750,6 +7750,7 @@ for (const key in allMovies) {
     if (movie.link) {
         if (movie.link.netflix) movie.link = `https://www.netflix.com/title/${movie.link.netflix}`
         else if (movie.link.primeVideo) movie.link = `primevideo://detail?asin=${movie.link.primeVideo}` //`https://watch.amazon.com/detail?asin=${movie.link.primeVideo}`
+        // `https://app.primevideo.com/detail/0HLDL6JTNVIK6GJDH0UIW4TES8`
         else if (movie.link.cnn) movie.link = `https://plus.cnn.com/plus/title-${movie.link.cnn}` //`https://watch.amazon.com/detail?asin=${movie.link.primeVideo}`
     }
 
