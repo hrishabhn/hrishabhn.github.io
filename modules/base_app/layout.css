@@ -1,0 +1,46 @@
+:root {
+    --topbar-h: calc(50px + env(safe-area-inset-top))
+}
+
+#main {
+    position: fixed;
+    top: var(--topbar-h);
+    left: 0;
+
+    height: calc(100vh - var(--topbar-h));
+    width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    overflow-y: scroll;
+
+    grid-auto-rows: auto;
+}
+
+/* leftbar */
+#main.initial #leftbar {
+    max-width: 800px;
+}
+
+#main.searching #leftbar {
+    min-height: auto;
+}
+
+#main.searching #leftbar .splash-card {
+    display: none;
+}
+
+#main.searching #leftbar .spacer-x {
+    display: none;
+}
+
+/* topbar */
+#topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--topbar-h);
+    z-index: 1;
+    padding: env(safe-area-inset-top) 10px 0;
+}

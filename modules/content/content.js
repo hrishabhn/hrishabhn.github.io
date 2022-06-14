@@ -21,7 +21,7 @@ const content = {
     load: function () {
         const elem = document.getElementById('content-elem')
         // title and apps
-        elem.append(widgetTray())
+        // elem.append(widgetTray())
         
         // if (focus.get().apps) {
         //     let nodes = []

@@ -1,0 +1,76 @@
+/* small */
+.app-card.small {
+    min-width: 110px;
+    padding: 10px 8px;
+}
+
+.app-card.small .thumb {
+    width: 35px;
+    height: 35px;
+}
+
+.app-card.small .icon {
+    width: 35px;
+    height: 35px;
+}
+
+.app-card.small .textbox p.name {
+    font-size: 14px;
+}
+
+.app-card.small .textbox p.desc {
+    font-size: 10px;
+}
+
+/*  */
+
+.app-card-small {
+    border-radius: 10px;
+    /* overflow: hidden; */
+    cursor: pointer;
+}
+
+.app-card-small .thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: inherit;
+}
+
+.app-card-small .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: inherit;
+    padding: 20%;
+}
+
+.app-card-small .thumb:hover, .app-card-small.icon:hover {
+    box-shadow: 0px 2px 8px -3px var(--black-50);
+}
+
+.app-card-small:hover .hover-detail {
+    opacity: 1;
+}
+
+.app-card-small .hover-detail {
+    position: absolute;
+    top: calc(100% + 5px);
+
+    padding: 5px 8px;
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    box-shadow: 0 0 5px var(--black-50);
+    pointer-events: none;
+
+    transition: inherit;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .app-card-small .hover-detail {
+        box-shadow: 0 0 5px var(--black-30);
+    }
+}

@@ -1,0 +1,36 @@
+.media-detail-card {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.media-detail-card p {
+    width: 100%;
+    justify-content: flex-start;
+    cursor: default;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.media-detail-card p.name {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.media-detail-card p.title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.media-detail-card p.desc {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.4;
+    -webkit-line-clamp: 4;
+}

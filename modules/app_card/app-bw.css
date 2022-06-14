@@ -1,0 +1,61 @@
+.app-card-bw {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    cursor: default;
+}
+.app-card-bw .icon {
+    height: 24px;
+    width: 24px;
+    opacity: 0.8;
+}
+
+.app-card-bw .bg{
+    border-radius: inherit;
+    opacity: 0.4;
+    background-color: var(--brand-col-dark);
+}
+@media screen and (prefers-color-scheme: light) {
+    .app-card-bw .bg {
+        background-color: var(--brand-col-light);
+    }
+}
+.app-card-bw.big {
+    width: auto;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 3px;
+    padding-right: 8px;
+}
+
+.app-card-bw.big .icon {
+    margin-right: 5px;
+}
+
+.app-card-bw:hover .hover-detail{
+    opacity: 1;
+}
+.app-card-bw .hover-detail{
+    position: absolute;
+    top: calc(100% + 5px);
+    z-index: 1;
+
+    padding: 5px 8px;
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    box-shadow: 0 0 5px var(--black-50);
+    pointer-events: none;
+
+    transition: inherit;
+    opacity: 0;
+    white-space: nowrap;
+}
+@media screen and (prefers-color-scheme: light) {
+    .app-card-bw .hover-detail{
+        box-shadow: 0 0 5px var(--black-30);
+    }
+}
+

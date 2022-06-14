@@ -62,15 +62,12 @@ function widgetTray() {
     card.id = 'widget-tray'
     card.classList = 'limit'
 
-    let title = elems.p(focus.get().name)
-    title.classList = 'content-title'
-    card.append(title)
+    // let title = elems.p(focus.get().name)
+    // title.classList = 'content-title'
+    // card.append(title)
 
     const nodes = [
-        widgets.cal.card(),
-        widgets.tasks.card(),
-        widgets.budget.card(),
-        widgets.ideas.card(),
+        // widgets.budget.card(),
         // widgets.stack([
         //     widgets.trip.card('tenerife'),
         //     widgets.flight.card('mad-tfs'),
@@ -80,11 +77,10 @@ function widgetTray() {
 
 
     // if there is a routine at this time of day
-    if (routine.now() && !routine.done()) card.append(widgets.routine.card(timeOfDay()))
     for (const item of nodes) card.append(item)
     if (focus.get().widgets) for (const widget of focus.get().widgets()) card.append(widget)
 
-    if (focus.get().apps) for (const app of focus.get().apps) card.append(appObject.widget.card(app))
+    // if (focus.get().apps) for (const app of focus.get().apps) card.append(appObject.widget.card(app))
 
 
     // card.append(widgets.tracking.card())

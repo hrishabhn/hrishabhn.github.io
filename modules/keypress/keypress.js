@@ -22,7 +22,7 @@ function keyPress(e) {
 
         if (e.key == 'Enter') {
             if (apps[n]) window.open(apps[n].href, '_blank')
-            else if (playElem.href) window.open(playElem.href, '_blank ')
+            else playElem.onclick()
         } else if (e.key == 'ArrowRight') {
             e.preventDefault()
             // old active
@@ -45,18 +45,34 @@ function keyPress(e) {
             hideTVDetail()
         }
     } else {
-        if (e.key == '/') {
-            if (!(document.activeElement == spotlight.elem())) {
-                e.preventDefault()
-                spotlight.elem().focus()
-            }
-        } else if (e.key == 'Tab') {
-            if (document.activeElement == spotlight.elem()) {
-                e.preventDefault()
-            }
-        } else if (e.key == 'Escape') {
-            e.preventDefault()
-        } else if (e.key == 'Enter') {
-        }
+        if (hotkeys[e.key]) hotkeys[e.key](e)
+        // else if (topbar.hotkeys[e.key]) {
+        //     if (document.activeElement !== spotlight.elem())
+        //         if (!modal.elem.hasChildNodes())
+        //             topbar.hotkeys[e.key]()
+        // }
     }
+}
+
+const hotkeys = {
+    '/': function (e) {
+        if (document.activeElement !== spotlight.elem()) {
+            e.preventDefault()
+            spotlight.elem().focus()
+        }
+    },
+    'Tab': function (e) {
+        if (document.activeElement === spotlight.elem()) e.preventDefault()
+    },
+    'Escape': function (e) {
+        e.preventDefault()
+        if (document.activeElement === spotlight.elem()) spotlight.elem().blur()
+        modal.remove()
+    },
+    'd': function (e) {
+        if (e.metaKey) {
+            e.preventDefault()
+            dnd.toggle()
+        }
+    },
 }

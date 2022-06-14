@@ -5,47 +5,62 @@
 <head>
     <meta name='viewport'
         content='viewport-fit=cover, height=device-height, width=device-width, initial-scale=1.0, user-scalable=no'>
-    <link rel="stylesheet" href="style/base.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/color.css">
-    <link rel="stylesheet" href="style/brand.css">
-    <link rel="stylesheet" href="style/elements.css">
-    <link rel="stylesheet" href="style/devices.css">
-    <link rel="stylesheet" href="style/app.css">
-    <link rel="stylesheet" href="style/topbar.css">
-    <link rel="stylesheet" href="style/workout.css">
+        
+    <link rel="stylesheet" href="old/style/base.css">
+    <link rel="stylesheet" href="old/style/main.css">
+    <link rel="stylesheet" href="old/style/color.css">
+    <link rel="stylesheet" href="modules/base_app/brand.css">
+    <link rel="stylesheet" href="old/style/elements.css">
+    <link rel="stylesheet" href="old/style/devices.css">
+    <link rel="stylesheet" href="old/style/workout.css">
     <link rel="stylesheet" href="modules/widget/widget.css">
-    <link rel="stylesheet" href="style/widget/calendar.css">
-    <link rel="stylesheet" href="style/widget/today.css">
-    <link rel="stylesheet" href="style/widget/tasks.css">
-    <link rel="stylesheet" href="style/modals/distractModal.css">
-    <link rel="stylesheet" href="style/widget/weather.css">
-    <link rel="stylesheet" href="style/media/actor.css">
+    <link rel="stylesheet" href="old/style/widget/calendar.css">
+    <link rel="stylesheet" href="old/style/widget/today.css">
+    <link rel="stylesheet" href="old/style/widget/tasks.css">
+    <link rel="stylesheet" href="old/style/distractModal.css">
+    <link rel="stylesheet" href="old/style/widget/weather.css">
 
     <!-- base -->
-    <link rel="stylesheet" href="modules/layout/layout.css">
+    <link rel="stylesheet" href="modules/base_app/layout.css">
+    <link rel="stylesheet" href="modules/dock/dock.css">
+
+    <!-- leftbar -->
     <link rel="stylesheet" href="modules/leftbar/leftbar.css">
+    <link rel="stylesheet" href="modules/leftbar/splash-card.css">
+    <link rel="stylesheet" href="modules/spotlight/spotlight.css">
+    <link rel="stylesheet" href="modules/leftbar/pinned-apps.css">
+
+    <!-- topbar -->
+    <link rel="stylesheet" href="modules/topbar/topbar.css">
+    <link rel="stylesheet" href="modules/topbar/top-card.css">
 
     <!-- modal -->
     <link rel="stylesheet" href="modules/modal/modal.css">
+    <link rel="stylesheet" href="modules/icons/icon-modal.css">
+
     <!-- context -->
-    <link rel="stylesheet" href="modules/context/context.css">
+    <link rel="stylesheet" href="old/modules/context/context.css">
 
     <!-- app -->
-    <link rel="stylesheet" href="modules/app/app.css">
+    <link rel="stylesheet" href="modules/app_card/app-main.css">
+    <link rel="stylesheet" href="modules/app_card/app-small.css">
+    <link rel="stylesheet" href="modules/app_card/app-mini.css">
+    <link rel="stylesheet" href="modules/app_card/app-widget.css">
+    <link rel="stylesheet" href="modules/app_card/app-bw.css">
+
+    <!-- calendar -->
+    <link rel="stylesheet" href="modules/calendar/calendar.css">
 
     <!-- ideas -->
-    <link rel="stylesheet" href="modules/ideas/ideas-widget.css">
+    <link rel="stylesheet" href="modules/tasks/tasks.css">
 
     <!-- travel -->
-    <link rel="stylesheet" href="modules/travel/travel.css">
-    <link rel="stylesheet" href="modules/travel/flight.css">
+    <link rel="stylesheet" href="old/modules/travel/travel.css">
+    <link rel="stylesheet" href="old/modules/travel/flight.css">
 
-    <!-- budget -->
-    <link rel="stylesheet" href="modules/budget/budget-modal.css">
-    <link rel="stylesheet" href="modules/budget/budget-widget.css">
     <!-- routine -->
     <link rel="stylesheet" href="modules/routine/routine-leftbar.css">
+    <link rel="stylesheet" href="modules/routine/routine-splashCard.css">
 
     <!-- food -->
     <link rel="stylesheet" href="modules/food/food.css">
@@ -54,7 +69,6 @@
     <link rel="stylesheet" href="modules/widget/travel/widget-flight.css">
     <link rel="stylesheet" href="modules/widget/travel/widget-trip.css">
     <link rel="stylesheet" href="modules/widget/calendar/widget-cal.css">
-    <link rel="stylesheet" href="modules/widget/bookpod/widget-media.css">
     <link rel="stylesheet" href="modules/widget/app/widget-app.css">
     <link rel="stylesheet" href="modules/widget/styles/widget-routine.css">
     <link rel="stylesheet" href="modules/widget/styles/widget-list.css">
@@ -64,11 +78,24 @@
     <link rel="stylesheet" href="modules/content/content.css">
 
 
-    <link rel="stylesheet" href="style/media/media.css">
-    <link rel="stylesheet" href="style/media/tvDetail.css">
+    <!-- media -->
+    <link rel="stylesheet" href="old/style/media/media.css">
+    <link rel="stylesheet" href="modules/media/movie/movie-detail.css">
+    <link rel="stylesheet" href="old/style/media/actor.css">
+    
+    <link rel="stylesheet" href="modules/media/mediaAll.css">
+    <link rel="stylesheet" href="modules/media/media-detail.css">
 
-    <link rel="stylesheet" href="style/spotlight.css">
-    <link rel="stylesheet" href="style/focus.css">
+    <link rel="stylesheet" href="modules/media/channels/channels.css">
+
+    <link rel="stylesheet" href="modules/media/movie/movie-title.css">
+    <link rel="stylesheet" href="modules/media/movie/movie-small.css">
+    <link rel="stylesheet" href="modules/media/movie/movie-big.css">
+    <link rel="stylesheet" href="modules/media/movie/movie-giant.css">
+    <link rel="stylesheet" href="modules/media/movie/movie-data.css">
+
+
+
 
 
     <link rel="icon" type="image/png" href="images/icon.png">
@@ -93,23 +120,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"> -->
 
-    <meta name="theme-color" content="#2c2c2e" media="(prefers-color-scheme: dark)">
-    <meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)">
+    <meta id="theme-dark" name="theme-color" content="#2c2c2e" media="(prefers-color-scheme: dark)">
+    <meta id="theme-light" name="theme-color" content="#fff" media="(prefers-color-scheme: light)">
 
     <title id="title-page">Dashboard</title>
 </head>
 
-<body id="body" ontouchstart="" onload="loadApp()" class="layer-0">
-    <div id="topbar" class="topbar layer-1"></div>
-    <div id="main">
-        <div id="leftbar" class="layer-1"></div>
+<body id="body" ontouchstart="" onload="loadApp()" class="layer-1">
+    <div id="topbar"></div>
+    <div id="main" class="initial" onscroll="mainScroll()">
+        <div id="leftbar"></div>
         <div id="content-elem"></div>
-        <!-- <div id="rest-of-stuff">
-            <div id="splash"></div>
-            <div id="home-all"></div>
-        </div> -->
-
-
+        <div id="dock" class="hide"></div>
     </div>
     <div id="tv-modal"></div>
     <div id="context-modal" class="hide">
@@ -119,40 +141,34 @@
     <div id="layer-modal" class="hide"></div>
 </body>
 
-<script src="script/load.js"></script>
-<script src="script/data/colorData.js"></script>
-<script src="script/data/iconData.js"></script>
+<!-- base app -->
+<script src="modules/base_app/load.js"></script>
+<script src="modules/base_app/script.js"></script>
 
-<script src="script/spotlight.js"></script>
-<script src="script/search/general.js"></script>
-<script src="script/search/mediaSearchElem.js"></script>
+<script src="old/script/data/colorData.js"></script>
+<script src="old/script/data/iconData.js"></script>
+<script src="modules/icons/sfSymbols.js"></script>
 
-<script src="script/media/tvDetail.js"></script>
-<script src="script/media/mediaScript.js"></script>
+<script src="old/script/search/general.js"></script>
 
-<!-- <script src="script/context.js"></script> -->
+<script src="modules/media/movie/movie-detail.js"></script>
+<script src="old/script/media/mediaScript.js"></script>
 
-
-<script src="script/cookies.js"></script>
-<script src="script/script.js"></script>
-<script src="script/elements.js"></script>
-
-<script src="script/elems/topbar.js"></script>
-<script src="script/elems/splash.js"></script>
-<script src="script/elems/splash/calendar.js"></script>
-<script src="script/elems/splash/todayCard.js"></script>
-<script src="script/elems/splash/tasks.js"></script>
-<script src="script/elems/splash/weatherCard.js"></script>
-
-<script src="script/elems/modals/distractModal.js"></script>
+<script src="old/script/cookies.js"></script>
+<script src="old/script/elements.js"></script>
 
 <!-- shortcuts -->
 <script src="calendar/events_all.js"></script>
-<script src="calendar/processEvent.js"></script>
-<script src="calendar/tasks_all.js"></script>
+<script src="old/script/calendar/processEvent.js"></script>
+<script src="old/script/calendar/tasks_all.js"></script>
 
 <!-- base -->
+<script src="modules/base_app/main.js"></script>
 <script src="modules/leftbar/leftbar.js"></script>
+<script src="modules/topbar/topbar.js"></script>
+<script src="modules/dock/dock.js"></script>
+
+<script src="modules/base_app/color.js"></script>
 
 <!-- content -->
 <script src="modules/content/content.js"></script>
@@ -160,51 +176,59 @@
 <!-- modal -->
 <script src="modules/modal/modal.js"></script>
 <!-- context -->
-<script src="modules/context/context.js"></script>
+<script src="old/modules/context/context.js"></script>
 
 <!-- app -->
-<script src="modules/app/app.js"></script>
+<script src="modules/app_card/app.js"></script>
+<script src="modules/app_card/open-app.js"></script>
 
 <!-- routine -->
 <script src="modules/routine/routine.js"></script>
 <!-- tasks -->
 <script src="modules/tasks/tasks.js"></script>
-<!-- ideas -->
-<script src="modules/ideas/ideas.js"></script>
+<!-- calednar -->
+<script src="modules/calendar/calendar.js"></script>
 
 <!-- travel -->
-<script src="modules/travel/train.js"></script>
-<script src="modules/travel/flight.js"></script>
-<script src="modules/travel/trip.js"></script>
-<script src="modules/travel/travel.js"></script>
+<script src="old/modules/travel/train.js"></script>
+<script src="old/modules/travel/flight.js"></script>
+<script src="old/modules/travel/trip.js"></script>
+<script src="old/modules/travel/travel.js"></script>
 
 <!-- budget -->
 <script src="shortcuts/budgetData.js"></script>
-<script src="modules/budget/budget-process.js"></script>
-<script src="modules/budget/budget.js"></script>
+<script src="old/modules/budget/budget-process.js"></script>
+<script src="old/modules/budget/budget.js"></script>
 
 <!-- media -->
-<script src="script/data/media/pod/podAllEps.js"></script>
-<script src="script/data/media/pod/podAll.js"></script>
-<script src="script/data/media/pod/podRaw.js"></script>
-<script src="script/data/media/pod/podProcess.js"></script>
+<script src="modules/media/media.js"></script>
+<script src="modules/media/old/mediaSearchElem.js"></script>
 
-<script src="script/data/media/book/bookAll.js"></script>
-<script src="script/data/media/book/bookRaw.js"></script>
-<script src="script/data/media/book/bookProcess.js"></script>
+<script src="old/script/data/media/pod/podAllEps.js"></script>
+<script src="old/script/data/media/pod/podAll.js"></script>
+<script src="old/script/data/media/pod/podRaw.js"></script>
+<script src="old/script/data/media/pod/podProcess.js"></script>
 
-<script src="script/data/media/movie/movieAll.js"></script>
-<script src="script/data/media/movie/movieRaw.js"></script>
-<script src="script/data/media/movie/movieProcess.js"></script>
+<script src="old/script/data/media/book/bookAll.js"></script>
+<script src="old/script/data/media/book/bookRaw.js"></script>
+<script src="old/script/data/media/book/bookProcess.js"></script>
 
-<script src="script/data/media/actors.js"></script>
+<script src="modules/media/old/actors.js"></script>
+
+<script src="modules/media/channels/channels.js"></script>
+
+<script src="modules/media/movie/movie-dict.js"></script>
+<script src="modules/media/old/movieRaw.js"></script>
+<script src="modules/media/old/movieProcess.js"></script>
+<script src="modules/media/movie/movie-elem.js"></script>
+
+<script src="modules/media/floating.js"></script>
 
 <!-- food -->
 <script src="modules/food/food.js"></script>
 
 <!-- widgets -->
 <script src="modules/widget/calendar/widget-cal.js"></script>
-<script src="modules/widget/bookpod/widget-media.js"></script>
 <script src="modules/widget/app/widget-app.js"></script>
 <script src="modules/widget/widget-tray.js"></script>
 
@@ -214,14 +238,12 @@
 <!-- keypress -->
 <script src="modules/keypress/keypress.js"></script>
 
-<script src="script/pageScripts/flight.js"></script>
-<script src="script/pageScripts/workout.js"></script>
-<script src="script/pageScripts/dnd.js"></script>
+<script src="old/script/pageScripts/flight.js"></script>
+<script src="old/script/pageScripts/workout.js"></script>
+<script src="old/script/pageScripts/dnd.js"></script>
 
-<script src="script/data/worldClockData.js"></script>
-<script src="script/data/appData.js"></script>
-
-
+<script src="old/script/data/worldClockData.js"></script>
+<script src="old/script/data/appData.js"></script>
 
 <!-- focus -->
 <script src="modules/focus/focus.js"></script>

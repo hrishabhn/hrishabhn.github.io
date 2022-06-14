@@ -59,13 +59,42 @@ const focus = {
                 //         ]
                 //     },
                 // },
+                {
+                    name: 'Media',
+                    id: 'media',
+                    desc: 'TV, Movies, Podcasts & Books',
+                    thumb: thumbData['tv'], //update
+                    icon: SFSymbols.play.fill,
+                    style: 'red',
+                    apps: appData['video'], //update
+                    work: false,
+                    distract: true,
+                    trays: function () {
+                        return [
+                            mediaAll.modal(),
+                            // channels.tray(),
+                            // floatingMovie.tray(),
+                            // movies.rows[0].elem.big,
+                            // movies.rows[1].elem.smart,
+                            // movies.rows[2].elem.small,
+                            // movies.rows[3].elem.big,
+                            // movies.rows[4].elem.small,
+                            // movies.rows[5].elem.small,
+                            // movies.rows[6].elem.smart,
+                            // movies.rows[7].elem.small,
+                            // movies.rows[8].elem.small,
+                            // movies.rows[9].elem.big,
+                            // movies.rows[10].elem.big,
+                        ]
+                    },
+                },
             ],
         },
         {
             name: 'School',
             data: [
                 {
-                    name: 'American',
+                    name: 'American Studies',
                     id: 'amst',
                     desc: 'AMST 101',
                     thumb: thumbData['globe'],
@@ -134,34 +163,32 @@ const focus = {
                     apps: appData['video'],
                     work: false,
                     distract: true,
-                    widgets: function () {
-                        return [
-                            widgets.media.card(movieData[0][0], 'movie'),
-                            widgets.media.card(movieData[0][1], 'movie'),
-                            widgets.media.card(movieData[0][2], 'movie'),
-                            // widgets.media.card(movieData[0][3], 'movie'),
-                            widgets.app.card({
-                                title: 'Tracking',
-                                apps: [
-                                    appData.video[0],
-                                    appData.video[1],
-                                    appData.video[2],
-                                    appData.video[3],
-                                ],
-                            }),
-                            widgets.app.card({
-                                title: 'Streaming',
-                                apps: [
-                                    appData.video[4],
-                                    appData.video[5],
-                                    appData.video[6],
-                                    appData.video[8],
-                                ],
-                            }),
-                        ]
+                    splashCard: function () {
+                        // base card with header
+                        let card = leftbar.cardBase('Movies & TV', [{ icon: SFSymbols.tv.fill }])
+                        card.id = 'movie-splash'
+
+                        let body = document.createElement('div')
+                        body.classList = 'body'
+
+                        let i = 0
+                        for (const x of movieRaw) for (const movie of x.data) if (i < 3) {
+                            let item = document.createElement('a')
+                            item.classList = 'item clickable-o'
+                            item.append(elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`))
+                            item.append(elems.textbox(movie.name, movie.desc.full))
+                            item.onclick = function () { movie.detail() }
+                            body.append(item)
+                            i++
+                        }
+
+                        card.append(body)
+                        return card
                     },
                     trays: function () {
                         return [
+                            channels.tray(),
+                            floatingMovie.tray(),
                             movies.rows[0].elem.big,
                             movies.rows[1].elem.smart,
                             movies.rows[2].elem.small,

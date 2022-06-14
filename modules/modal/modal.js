@@ -1,5 +1,4 @@
 const modal = {
-    index: 0,
     elem: document.getElementById('layer-modal'),
     add: function (card, e, mob) {
         let layer = document.createElement('div')
@@ -14,17 +13,11 @@ const modal = {
         if (e) absolutePos(card, e.pageX, e.pageY)
         layer.append(card)
 
-        this.elem.append(layer)
-        if (this.index == 0) this.elem.classList.remove('hide')
-        this.index++
-
+        modal.elem.append(layer)
+        modal.update()
         setTimeout(() => { layer.classList.remove('preload') }, 0);
     },
-    topbar: function (card, e) {
-        var target = e.target
-        while (!target.classList.contains('item')) target = target.parentNode
-        console.log()
-
+    topbar: function (card, target) {
         let layer = document.createElement('div')
         layer.classList = 'layer preload top'
 
@@ -33,19 +26,20 @@ const modal = {
         close.onclick = function () { modal.remove() }
 
         layer.append(close)
-        if (e) absolutePos(card, target.getBoundingClientRect().left, target.getBoundingClientRect().bottom)
-        card.classList.add('card-shadow')
+        if (target) absolutePos(card, target.getBoundingClientRect().left, target.getBoundingClientRect().bottom)
         layer.append(card)
 
-        this.elem.append(layer)
-        if (this.index == 0) this.elem.classList.remove('hide')
-        this.index++
+        modal.elem.append(layer)
+        modal.update()
 
         setTimeout(() => { layer.classList.remove('preload') }, 0);
     },
     remove: function () {
-        this.elem.lastChild.remove()
-        this.index--
-        if (this.index == 0) this.elem.classList.add('hide')
+        if (modal.elem.hasChildNodes()) modal.elem.lastChild.remove()
+        modal.update()
+    },
+    update: function () {
+        if (modal.elem.hasChildNodes()) modal.elem.classList.remove('hide')
+        else modal.elem.classList.add('hide')
     },
 }

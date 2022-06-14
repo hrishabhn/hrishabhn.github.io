@@ -2,101 +2,104 @@ const leftbar = {
     load: function () {
         const elem = document.getElementById('leftbar')
 
-        // header and search
-        elem.append(elems.title('Dashboard'))
-        let searchTray = leftbar.elems.tray()
-        searchTray.append(spotlight.create())
-        elem.append(searchTray)
+        // spotlight
+        elem.append(spotlight.create())
 
-        const controlData = [
-            {
-                name: 'DND',
-                icon: SFSymbols.moon.fill,
-                id: 'dnd',
-                active: dnd.active(),
-                trigger: function () { dnd.toggle() },
-            },
-            {
-                name: 'Calendar',
-                icon: SFSymbols.calendar,
-                active: false,
-            },
-            {
-                name: 'Idea',
-                icon: SFSymbols.lightbulb.fill,
-                active: false,
-            },
-            {
-                name: 'Routine',
-                icon: SFSymbols.arrow.triangle.circlepath,
-                active: routine.active(),
-                trigger: function () {
-                    document.getElementById('routine').classList.toggle('hidden-always')
+        // pinned apps
+        if (focus.get().apps) {
+            elem.append(elems.spacer(20))
+            elem.append(leftbar.pinned.splashCard())
+        }
+
+        if (!dnd.active()) {
+            // cards
+            let cards = [
+                [calendar.splashCard(), tasks.splashCard()],
+            ]
+
+            // focus cards
+            if (focus.get().splashCard) cards.push(focus.get().splashCard())
+
+            // show routine or not
+            if (routine.now()) cards.unshift(routine.splashCard())
+            else cards.push(routine.splashCard())
+
+            for (const item of cards) {
+                elem.append(elems.spacer(20))
+
+                if (item[0]) {
+                    let tray = document.createElement('div')
+                    tray.classList = 'splash-card-tray'
+                    for (const child of item) tray.append(child)
+                    elem.append(tray)
+
+
+
+                } else {
+                    elem.append(item)
                 }
-            },
-        ]
 
-        let controlTray = leftbar.elems.tray()
-        let control = document.createElement('div')
-        control.classList = 'control-centre'
-        for (const data of controlData) {
-            let toggle = document.createElement('div')
-
-            let a = elems.a(data.icon, data.name)
-            if (data.id) a.id = data.id
-            a.classList.add('clickable-o')
-            if (data.active) a.classList.add('active')
-            a.firstChild.firstChild.classList.add('layer-0')
-            a.onclick = function () {
-                a.classList.toggle('active')
-                if (data.trigger) data.trigger()
             }
 
-            toggle.append(a)
-            control.append(toggle)
+
+            // old
+            elem.append(widgetTray())
         }
 
-        // control centre
-        controlTray.append(elems.subtitle('control centre'))
-        controlTray.append(control)
-        controlTray.append(elems.spacer(10))
-        elem.append(controlTray)
 
-        // routine
-        let routineTray = leftbar.elems.tray()
-        routineTray.id = 'routine'
-        routineTray.append(elems.hline())
-        routineTray.append(elems.subtitle('routine'))
-        routineTray.append(routine.leftbar(timeOfDay()))
-        if (!routine.active()) routineTray.classList.add('hidden-always')
-        elem.append(routineTray)
 
-        // pages
-        for (const focusTray of focus.data) {
-            let menuTray = leftbar.elems.tray()
-            menuTray.classList.add('menu')
-            menuTray.append(elems.hline())
-            menuTray.append(elems.subtitle(focusTray.name))
 
-            for (const item of focusTray.data) {
-                let but = elems.a(item.icon, item.name)
-                but.classList = 'clickable-o'
-                if (item.name == focus.get().name) but.classList.add('active')
-                but.onclick = function (e) { openApp(item, e) }
-
-                menuTray.append(but)
-            }
-            elem.append(menuTray)
-        }
-        // if (elem.lastChild.lastChild.classList == 'hline') elem.lastChild.lastChild.remove()
-
-        elem.append(elems.grow())
+        // elem.append(leftbar.pinned.tray())
+        // apps
+        // if (focus.get().apps) elem.append(leftbar.currentApps())
     },
-    elems: {
-        tray: function () {
-            let tray = document.createElement('div')
-            tray.classList = 'leftbar-tray'
-            return tray
+    pinned: {
+        card: function (app) {
+            let card = document.createElement('a')
+            card.classList = 'app-card-pinned clickable-o'
+            card.onclick = function (e) { openApp(app, e) }
+            card = cardCol(card, app.accent, app.style)
+
+            if (app.link) card.style.setProperty('cursor', 'pointer')
+
+            if (app.dockIcon) card.append(elems.icon(app.dockIcon))
+            else if (app.thumb) card.append(elems.appThumb(app.thumb))
+            else if (app.icon) card.append(elems.icon(app.icon))
+
+            card.append(elems.p(app.name))
+            return card
         },
-    }
+        splashCard: function () {
+            let card = leftbar.cardBase(focus.get().name, null)
+            card.classList.add('pinned-apps')
+            let body = document.createElement('div')
+            body.classList = 'body'
+            for (const app of focus.get().apps) body.append(this.card(app))
+            card.append(body)
+            return card
+        }
+    },
+    cardBase: function (title, buttons) {
+        let card = document.createElement('div')
+        card.classList = 'splash-card layer-0'
+
+        let header = document.createElement('div')
+        header.classList = 'header'
+        header.append(elems.p(title))
+        header.append(elems.grow())
+        if (buttons) for (const b of buttons)
+            header.append(appObject.bw({
+                name: b.name,
+                icon: b.icon,
+                trigger: function () { if (b.trigger) b.trigger() }
+            }))
+
+
+
+
+        card.append(header)
+
+
+        return card
+    },
 }

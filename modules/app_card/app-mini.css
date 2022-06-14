@@ -1,0 +1,61 @@
+/* mini */
+.app-card-mini {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    transition: scale 0.2s;
+    flex-direction: column;
+}
+
+.app-card-mini .thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 25%;
+}
+
+.app-card-mini .icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 25%;
+    fill: white;
+    padding: 10%;
+    background-color: var(--brand-col-dark);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .app-card-mini .icon {
+        background-color: var(--brand-col-light);
+    }
+}
+
+.app-card-mini .hover-detail {
+    display: none;
+}
+
+/* .app-card-mini:hover .hover-detail {
+    opacity: 1;
+}
+
+.app-card-mini .hover-detail {
+    position: absolute;
+    bottom: calc(100% + 1px);
+
+    padding: 5px 8px;
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    box-shadow: 0 0 5px var(--black-50);
+    pointer-events: none;
+
+    transition: inherit;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .app-card-mini .hover-detail {
+        box-shadow: 0 0 5px var(--black-30);
+    }
+} */

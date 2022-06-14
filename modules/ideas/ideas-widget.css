@@ -1,9 +1,0 @@
-.widget-card#ideas.list .task {
-    cursor: default;
-}
-
-#layer-modal .widget-card#ideas{
-    position: absolute;
-    height: 170px;
-    width: 170px;
-}

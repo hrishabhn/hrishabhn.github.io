@@ -1,5 +1,5 @@
 #widget-tray {
-    width: calc(100% - 80px);
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 80px);
     grid-template-rows: auto;
@@ -81,76 +81,3 @@
     width: 22px;
     opacity: 0.4;
 }
-
-
-/* to depricate */
-
-#splash #widget-tray .card-item {
-    flex-direction: column;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 12px 15px;
-    min-width: 0;
-    overflow: hidden;
-    /* grid-column: 1fr; */
-}
-
-#splash #widget-tray .card-item .title {
-    font-size: 14px;
-    font-weight: 500;
-}
-
-#splash #widget-tray .card-item .sub-title {
-    font-size: 12px;
-    font-weight: 500;
-    opacity: 0.75;
-    margin: 4px 0;
-}
-
-
-
-
-.widget-stack {
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    border-radius: 22px;
-    justify-content: flex-start;
-    min-width: 0;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-
-    transition: all 0.25s;
-    box-shadow: 0 0 0 0px var(--light-layer-3);
-}
-
-.widget-stack.scroll {
-    background-color: var(--light-layer-3);
-    box-shadow: 0 0 0 5px var(--light-layer-3);
-    scale: 0.98;
-}
-
-@media screen and (prefers-color-scheme: light) {
-    .widget-stack {
-        box-shadow: 0 0 0 0px var(--dark-layer-3);
-    }
-
-    .widget-stack.scroll {
-        background-color: var(--dark-layer-3);
-        box-shadow: 0 0 0 5px var(--dark-layer-3);
-    }
-}
-
-
-
-/* .widget-stack.scroll >* {
-    transition: all 0.25s;
-    transform: scale(0.98);
-}
-.widget-stack >* {
-    transition: all 0.25s;
-} */

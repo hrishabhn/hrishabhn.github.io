@@ -1,5 +1,7 @@
 #content-elem {
-    padding-top: 10px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .content-tray {

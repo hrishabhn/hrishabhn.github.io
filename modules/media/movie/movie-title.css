@@ -1,0 +1,50 @@
+.tv-title-box-new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 3%;
+    --lim: 400px;
+}
+
+.tv-title-box-new .tv-title {
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.tv-title-box-new .tv-title.widest {
+    height: 100px;
+    width: 80%;
+    max-width: var(--lim);
+}
+
+.tv-title-box-new .tv-title.wide {
+    height: 100px;
+    width: 80%;
+    max-width: var(--lim);
+}
+
+.tv-title-box-new .tv-title.mid {
+    height: 60px;
+    width: 60%;
+    max-width: calc(0.75 * var(--lim));
+}
+
+.tv-title-box-new .tv-title.tall {
+    height: 50px;
+    width: 50%;
+    max-width: calc(0.6 * var(--lim));
+}
+
+.tv-title-box-new .tv-title.tallest {
+    height: 50px;
+    width: 50%;
+    max-width: calc(0.6 * var(--lim));
+}

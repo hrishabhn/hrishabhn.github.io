@@ -1,0 +1,31 @@
+.movie-card-big {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+}
+
+.movie-card-big .thumb {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.movie-card-big .bg {
+    background-image:
+        linear-gradient(var(--col-1) 60%, var(--col-2)),
+        radial-gradient(farthest-corner at 0% 100%, var(--col-2), var(--col-1) 50%);
+    filter: brightness(0.5) saturate(2);
+    border-radius: inherit;
+}
+
+.movie-card-big .tv-title-box-new {
+    --lim: 200px;
+}
+
+.movie-card-big .tv-title-box-new p {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 8px;
+}
