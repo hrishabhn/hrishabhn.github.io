@@ -109,13 +109,6 @@ const allPods = {
         "author": "Andrew Schulz & Aakash Singh",
         "coverType": "jpeg"
     },
-    "canto": {
-        "name": "Learn Cantonese",
-        "id": "canto",
-        "applePod": "1513774818",
-        "author": "Poetic Cantonese",
-        "coverType": "jpeg"
-    },
     "colinSamir": {
         "name": "The Colin and Samir Show",
         "id": "colinSamir",
@@ -134,19 +127,26 @@ for (const key in allPods) {
     }
 }
 
-// const podDataArchive = [
-//     // {
-//     //     "name": "Economist Radio",
-//     //     "id": "economist",
-//     //     link: 'https://podcasts.apple.com/podcast/id151230264',
-//     //     "author": 'The Economist',
-//     //     "coverType": 'jpeg',
-//     // },
-//     // {
-//     //     "name": 'Making Sense',
-//     //     "id": 'samharris',
-//     //     link: 'https://podcasts.apple.com/podcast/id733163012',
-//     //     "author": 'Sam Harris',
-//     //     "coverType": 'jpeg',
-//     // },
-// ]
+const podDataArchive = [
+    {
+        "name": "Economist Radio",
+        "id": "economist",
+        link: 'https://podcasts.apple.com/podcast/id151230264',
+        "author": 'The Economist',
+        "coverType": 'jpeg',
+    },
+    {
+        "name": 'Making Sense',
+        "id": 'samharris',
+        link: 'https://podcasts.apple.com/podcast/id733163012',
+        "author": 'Sam Harris',
+        "coverType": 'jpeg',
+    },
+    {
+        "name": "Learn Cantonese",
+        "id": "canto",
+        "applePod": "1513774818",
+        "author": "Poetic Cantonese",
+        "coverType": "jpeg"
+    },
+]
