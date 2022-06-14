@@ -128,14 +128,10 @@ const allPods = {
 
 for (const key in allPods) {
     const pod = allPods[key]
-
     if (!pod.link) {
         if (pod.youtube) pod.link = `https://www.youtube.com/c/${pod.youtube}/videos`
         else if (pod.applePod) pod.link = `https://podcasts.apple.com/podcast/id${pod.applePod}`
     }
-
-    pod.title = allPodEps[key].epTitle
-    pod.summary = allPodEps[key].epSummary
 }
 
 // const podDataArchive = [
