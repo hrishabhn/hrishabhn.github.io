@@ -100,7 +100,7 @@ const budget = {
             bar.append(barBody)
             col.append(bar)
             col.append(elems.spacer(5))
-            col.append(elems.p(processDay.letter(((i + 1) % 7))))
+            col.append(elems.p(processDay.letter[((i + 1) % 7)]))
 
             chart.append(col)
             chart.append(elems.grow())
