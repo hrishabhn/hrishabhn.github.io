@@ -59,6 +59,15 @@ const processDay = {
         const days = ['s', 'm', 't', 'w', 't', 'f', 's']
         return days[i]
     },
+    long: {
+        0: 'Sunday',
+        1: 'Monday',
+        2: 'Tuesday',
+        3: 'Wednesday',
+        4: 'Thursday',
+        5: 'Friday',
+        6: 'Saturday',
+    }
     // if (type == 'short') var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
     // else if (type == 'long') var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
     // else if (type == 'letter') var days = ['s', 'm', 't', 'w', 't', 'f', 's']
