@@ -1,11 +1,11 @@
-.media-detail-card {
+.media-detail-textbox {
     height: 100%;
     width: 100%;
     flex-direction: column;
     padding-right: 10px;
 }
 
-.media-detail-card p {
+.media-detail-textbox p {
     width: 100%;
     justify-content: flex-start;
     cursor: default;
@@ -16,21 +16,22 @@
     overflow: hidden;
 }
 
-.media-detail-card p.name {
+.media-detail-textbox p.name {
     font-size: 14px;
     font-weight: 400;
     opacity: 0.8;
     text-transform: uppercase;
 }
 
-.media-detail-card p.title {
+.media-detail-textbox p.sub-title {
     font-size: 18px;
     font-weight: 500;
 }
 
-.media-detail-card p.desc {
+.media-detail-textbox p.desc {
     font-size: 14px;
     font-weight: 400;
     opacity: 0.4;
     -webkit-line-clamp: 4;
 }
+

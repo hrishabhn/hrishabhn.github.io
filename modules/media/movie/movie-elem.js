@@ -101,15 +101,9 @@ const movieElem = {
             return mediaAll.tray(nodes, 4, name)
         },
         card: function (movie) {
-            let item = document.createElement('div')
-            item.classList = 'media-detail-card clickable-o'
+            let item = mediaAll.commonElems.detailTextbox(movie.desc.genre, movie.name, movie.info.summary)
+            item.classList.add('clickable-o')
             item.onclick = function () { movie.detail() }
-
-            item.append(elems.name(movie.desc.genre))
-            item.append(elems.p(movie.name))
-            item.lastChild.style.setProperty('font-size', '18px')
-            item.lastChild.style.setProperty('font-weight', '600')
-            item.append(elems.desc(movie.info.summary))
             return item
         },
     },

@@ -7666,7 +7666,7 @@ const movieDict = {
             tvTimeID: '372264',
             reelgoodLink: 'https://reelgood.com/show/slow-horses-2022',
             imdbID: 'tt5875444',
-            // subReddit: 'subreddit',
+            subReddit: 'SlowHorses',
         },
     },
 }

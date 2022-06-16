@@ -67,6 +67,14 @@ const mediaAll = {
             elem.innerText = x
             return elem
         },
+        detailTextbox(small, big, long) {
+            let box = document.createElement('div')
+            box.classList = 'media-detail-textbox'
+            box.append(elems.name(small))
+            box.append(elems.subtitle(big))
+            box.append(elems.desc(long))
+            return box
+        },
     },
     script: {
         addDataElem: function (card, date) {
