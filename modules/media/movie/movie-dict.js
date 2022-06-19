@@ -6604,11 +6604,12 @@ const movieDict = {
     'fargo': {
         name: 'Fargo',
         id: 'fargo',
-        link: 'https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50',
+        // link: 'https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50',
+        link: 'https://app.primevideo.com/detail?gti=amzn1.dv.gti.14ba6109-ae62-0f50-8497-6d5173593c6f',
         info: {
             service: 'hulu',
             studio: 'fx',
-            location: 'Hulu',
+            location: 'Prime Video',
             seasons: 4,
             yearStart: 2014,
             yearEnd: null,
@@ -7669,6 +7670,20 @@ const movieDict = {
             imdbID: 'tt5875444',
             subReddit: 'SlowHorses',
         },
+        cast: [
+            {
+                actor: 'Gary Oldman',
+                char: 'Jackson Lamb',
+            },
+            {
+                actor: 'Jack Lowden',
+                char: 'River Cartwright',
+            },
+            {
+                actor: 'Kristin Scott Thomas',
+                char: 'Diana Taverner',
+            },
+        ],
     },
 }
 // @new

@@ -7,10 +7,10 @@ let movieRaw = [
     {
         name: 'Up next',
         data: [
-            movieDict.slow,
+            movieDict.fargo,
             movieDict.prehistoric,
-            movieDict.attack,
-            movieDict.atlanta,
+            movieDict.diabolical,
+            movieDict.fleabag,
             // 'primevideo://detail?gti=amzn1.dv.gti.b346f853-671f-431f-82db-4cda8a03fe1f'
             // https://www.primevideo.com/gp/video/detail/B09WV8HF7Q
         ],
@@ -18,6 +18,8 @@ let movieRaw = [
     {
         name: 'My list',
         data: [
+            movieDict.attack,
+            movieDict.atlanta,
             movieDict.severance,
             movieDict.wecrashed,
             movieDict.peaky,
@@ -35,7 +37,6 @@ let movieRaw = [
             movieDict.drive,
             movieDict.dontLookUp,
             movieDict.money,
-            movieDict.fargo,
             movieDict.grandTour,
             movieDict.southpark,
             movieDict.archer,
@@ -65,7 +66,6 @@ let movieRaw = [
             movieDict.joanna,
             movieDict.chernobyl,
             movieDict.sopranos,
-            movieDict.fleabag,
             movieDict.spy,
             movieDict.lineofduty,
             movieDict.mindhunter,
@@ -80,7 +80,6 @@ let movieRaw = [
             movieDict.ministry,
             movieDict.phil,
             movieDict.anna,
-            movieDict.diabolical,
             movieDict.cowboy2,
             movieDict.finalSpace,
             movieDict.maid,
@@ -147,6 +146,7 @@ let movieRaw = [
             movieDict.paradise,
             movieDict.reacher,
             movieDict.rick,
+            movieDict.slow,
             movieDict.succession,
             movieDict.squid,
             movieDict.ted,
