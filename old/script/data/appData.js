@@ -704,7 +704,7 @@ const appData = {
             distract: true,
         },
     ],
-    'worldClock': [],
+    'worldClock': worldClock.apps(),
 
     // school
     'amst': [
@@ -749,16 +749,4 @@ const appData = {
         commonApps.youtube('Control Systems', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo', 'YouTube Lectures'),
         // https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo
     ],
-}
-
-for (const city of worldClock.data) {
-    appData.worldClock.push({
-        name: processTime.ampm(new Date().getTime() + ((1000 * 60 * 60 * parseFloat(city.offset - worldClock.offset)))),
-        link: googleSearch(`${city.city} time now`),
-        desc: `${city.city} Time`,
-        thumb: city.thumb,
-        style: city.style,
-        distract: false,
-        tags: city.tags,
-    })
 }

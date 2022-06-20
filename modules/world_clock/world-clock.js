@@ -70,7 +70,21 @@ const worldClock = {
             tags: ['uk', 'london'],
         },
     ],
+    apps: function () {
+        let data = []
 
+        for (const city of worldClock.data)
+            data.push({
+                name: processTime.ampm(new Date().getTime() + ((1000 * 60 * 60 * parseFloat(city.offset - worldClock.offset)))),
+                link: googleSearch(`${city.city} time now`),
+                desc: `${city.city} Time`,
+                thumb: city.thumb,
+                style: city.style,
+                distract: false,
+                tags: city.tags,
+            })
+            return data
+    }
 }
 
 for (const x of worldClock.data) {
