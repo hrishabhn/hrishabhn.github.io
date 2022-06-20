@@ -8,9 +8,10 @@ let movieRaw = [
         name: 'Up next',
         data: [
             movieDict.fargo,
-            movieDict.prehistoric,
-            movieDict.diabolical,
             movieDict.fleabag,
+            movieDict.diabolical,
+            movieDict.prehistoric,
+            movieDict.clarkson,
             // 'primevideo://detail?gti=amzn1.dv.gti.b346f853-671f-431f-82db-4cda8a03fe1f'
             // https://www.primevideo.com/gp/video/detail/B09WV8HF7Q
         ],
@@ -62,7 +63,6 @@ let movieRaw = [
         data: [
             movieDict.boba,
             movieDict.killingEve,
-            movieDict.clarkson,
             movieDict.joanna,
             movieDict.chernobyl,
             movieDict.sopranos,

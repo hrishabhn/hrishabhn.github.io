@@ -1756,7 +1756,7 @@ const movieDict = {
             mobileSize: '9 / 10',
         },
         apps: {
-            // tvTimeID: '',
+            tvTimeID: '314614',
             reelgoodLink: 'https://reelgood.com/show/fleabag-2016',
             imdbID: 'tt5687612',
             // subReddit: 'subreddit',
@@ -6636,7 +6636,7 @@ const movieDict = {
             mobileSize: '2 / 3',
         },
         apps: {
-            // tvTimeID: 'identifier',
+            tvTimeID: '269613',
             reelgoodLink: 'https://reelgood.com/show/fargo-2014',
             imdbID: 'tt2802850',
             // subReddit: 'subreddit',
