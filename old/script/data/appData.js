@@ -751,16 +751,14 @@ const appData = {
     ],
 }
 
-for (const city of worldClockData) {
+for (const city of worldClock.data) {
     appData.worldClock.push({
-        name: processTime.ampm(new Date().getTime() + ((1000 * 60 * 60 * parseFloat(city.offset)))),
+        name: processTime.ampm(new Date().getTime() + ((1000 * 60 * 60 * parseFloat(city.offset - worldClock.offset)))),
         link: googleSearch(`${city.city} time now`),
         desc: `${city.city} Time`,
         thumb: city.thumb,
         style: city.style,
         distract: false,
-        tags: [
-            'world clock'
-        ],
+        tags: city.tags,
     })
 }
