@@ -42,6 +42,7 @@ const movies = {
         'disney': 'Disney',
         'starwars': 'Star Wars',
         'David Attenborough': 'David Attenborough',
+        'jurassic': 'Jurassic Park',
     },
 }
 

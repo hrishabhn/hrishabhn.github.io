@@ -910,9 +910,9 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
+            service: 'hbo',
             studio: 'universal',
-            location: 'Coming Soon',
+            location: 'Thatres',
             date: 'Jun 10, 2022',
             year: 2022,
             genre: [
@@ -920,12 +920,18 @@ const movieDict = {
                 'sci-fi',
             ],
             summary: "Four years after the destruction of Isla Nublar, dinosaurs now live--and hunt--alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history's most fearsome creatures.",
+            tags: ['jurassic']
         },
         style: {
-            hex: FluentColor.cyan30,
+            hex: '7f5112',
             poster: {
                 wide: {
+                    type: 'webp',
+                    title: true,
+                },
+                mobile: {
                     type: 'jpg',
+                    size: '10 / 12',
                     title: true,
                 },
             },
@@ -933,15 +939,34 @@ const movieDict = {
                 type: 'png',
                 size: 'widest',
             },
-            mobileType: 'jpg',
-            mobileSize: '1000 / 1204',
         },
         apps: {
-            // tvTimeID: 'identifier',
             reelgoodLink: 'https://reelgood.com/movie/jurassic-world-dominion-2021',
             imdbID: 'tt8041270',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'Chris Pratt',
+                char: 'Owen Grady',
+            },
+            {
+                actor: 'Bryce Dallas Howard',
+                char: 'Claire Dearing',
+            },
+            {
+                actor: 'Laura Dern',
+                char: 'Ellie Sattler',
+            },
+            {
+                actor: 'Sam Neill',
+                char: 'Alan Grant',
+            },
+            {
+                actor: 'Jeff Goldblum',
+                char: 'Ian Malcolm',
+            },
+        ],
     },
     'eternals': {
         name: 'Eternals',
@@ -5403,6 +5428,7 @@ const movieDict = {
                 'sci-fi',
             ],
             summary: "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+            tags: ['jurassic']
         },
         style: {
             hex: '3c2d2a',
