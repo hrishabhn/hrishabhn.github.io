@@ -48,6 +48,7 @@ let movieRaw = [
     {
         name: 'Movies',
         data: [
+            movieDict.jurassic6,
             movieDict.kal,
             movieDict.eternals,
             movieDict.knives,
@@ -119,20 +120,21 @@ let movieRaw = [
     {
         name: 'Coming Soon',
         data: [
-            movieDict.jurassic6,
+            movieDict.murders,
+            movieDict.shadows,
+            movieDict.industry,
+            movieDict.abbott,
         ],
     },
     {
         name: 'Up to Date',
         data: [
-            movieDict.abbott,
             movieDict.alice,
             movieDict.always,
             movieDict.curb,
             movieDict.falcon,
             movieDict.hitMonkey,
             movieDict.himyf,
-            movieDict.industry,
             movieDict.insideJob,
             movieDict.invincible,
             movieDict.loki,
@@ -142,7 +144,6 @@ let movieRaw = [
             movieDict.mythic,
             movieDict.narcos,
             movieDict.nine,
-            movieDict.murders,
             movieDict.paradise,
             movieDict.reacher,
             movieDict.rick,
@@ -150,7 +151,6 @@ let movieRaw = [
             movieDict.succession,
             movieDict.squid,
             movieDict.ted,
-            movieDict.shadows,
             movieDict.yellowjackets,
         ],
     },
