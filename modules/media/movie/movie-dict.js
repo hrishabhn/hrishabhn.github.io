@@ -4581,15 +4581,15 @@ const movieDict = {
         ],
     },
     'shadows': {
-        name: "What We Do in the Shadows",
-        id: "shadows",
-        link: "https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac",
+        name: 'What We Do in the Shadows',
+        id: 'shadows',
+        link: 'https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac',
         info: {
             service: 'hulu',
             studio: 'fx',
             location: 'Hulu',
-            weekday: 'Friday',
-            seasons: 3,
+            date: '12 Jul 2022',
+            seasons: 4,
             yearStart: 2019,
             yearEnd: null,
             genre: [
@@ -4606,18 +4606,21 @@ const movieDict = {
                     type: 'webp',
                     title: true,
                 },
+                mobile: {
+                    type: 'webp',
+                    size: '2 / 3',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
                 size: 'mid',
             },
-            mobileType: 'webp',
-            mobileSize: '2 / 3',
         },
         apps: {
-            tvTimeID: "358211",
-            reelgoodLink: "https://reelgood.com/show/what-we-do-in-the-shadows-2019",
-            imdbID: "tt7908628",
+            tvTimeID: '358211',
+            reelgoodLink: 'https://reelgood.com/show/what-we-do-in-the-shadows-2019',
+            imdbID: 'tt7908628',
             subReddit: 'WhatWeDointheShadows',
         },
         cast: [
