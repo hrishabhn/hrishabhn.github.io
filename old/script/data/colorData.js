@@ -14,6 +14,7 @@ const colorData = {
         magenta20: '881798',
         pinkRed10: '750b1c',
         red: 'd13438',
+        yellow10: 'fce100',
     },
     'onedrive': '094AB2',
     'ibooks': 'FC880F',

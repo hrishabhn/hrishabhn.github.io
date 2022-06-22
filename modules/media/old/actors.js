@@ -234,6 +234,6 @@ const actors = {
             if (!all[member.actor]) all[member.actor] = 1
             else all[member.actor]++
         }
-        for (const actor in all) if (all[actor] > 1) if (!actors.data[actor]) console.log(actor)
+        for (const actor in all) if (all[actor] > 1) if (!actors.data[actor]) alert(actor)
     },
 }

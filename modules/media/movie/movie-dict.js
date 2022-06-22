@@ -4232,7 +4232,7 @@ const movieDict = {
             summary: "From the minds of Steve Martin, Dan Fogelman & John Hoffman comes a comedic murder-mystery series for the ages. Only Murders in the Building follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it’s too late.",
         },
         style: {
-            hex: '292A27',
+            hex: colorData.fluent.yellow10,
             poster: {
                 wide: {
                     type: 'webp',
