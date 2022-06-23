@@ -10,7 +10,6 @@ let movieRaw = [
             movieDict.fargo,
             movieDict.fleabag,
             movieDict.wecrashed,
-            movieDict.diabolical,
             movieDict.prehistoric,
             movieDict.clarkson,
             // 'primevideo://detail?gti=amzn1.dv.gti.b346f853-671f-431f-82db-4cda8a03fe1f'
@@ -132,6 +131,7 @@ let movieRaw = [
             movieDict.alice,
             movieDict.always,
             movieDict.curb,
+            movieDict.diabolical,
             movieDict.falcon,
             movieDict.hitMonkey,
             movieDict.himyf,
