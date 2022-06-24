@@ -59,35 +59,6 @@ const focus = {
                 //         ]
                 //     },
                 // },
-                {
-                    name: 'Media',
-                    id: 'media',
-                    desc: 'TV, Movies, Podcasts & Books',
-                    thumb: thumbData['tv'], //update
-                    icon: SFSymbols.play.fill,
-                    style: 'red',
-                    apps: appData['video'], //update
-                    work: false,
-                    distract: true,
-                    trays: function () {
-                        return [
-                            mediaAll.modal(),
-                            // channels.tray(),
-                            // floatingMovie.tray(),
-                            // movies.rows[0].elem.big,
-                            // movies.rows[1].elem.smart,
-                            // movies.rows[2].elem.small,
-                            // movies.rows[3].elem.big,
-                            // movies.rows[4].elem.small,
-                            // movies.rows[5].elem.small,
-                            // movies.rows[6].elem.smart,
-                            // movies.rows[7].elem.small,
-                            // movies.rows[8].elem.small,
-                            // movies.rows[9].elem.big,
-                            // movies.rows[10].elem.big,
-                        ]
-                    },
-                },
             ],
         },
         {
@@ -153,6 +124,20 @@ const focus = {
         {
             name: 'Media',
             data: [
+                {
+                    name: 'Media',
+                    id: 'media',
+                    desc: 'TV, Movies, Podcasts & Books',
+                    thumb: thumbData['tv'], //update
+                    icon: SFSymbols.play.fill,
+                    style: 'red',
+                    apps: appData['video'], //update
+                    work: false,
+                    distract: true,
+                    trays: function () {
+                        return [mediaAll.modal('pod')]
+                    },
+                },
                 {
                     name: 'Watch',
                     id: 'watch',
