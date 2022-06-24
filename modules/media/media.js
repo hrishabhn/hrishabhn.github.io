@@ -1,25 +1,32 @@
 const mediaAll = {
-    modal: function () {
-        // load
-        // document.getElementById('theme-dark').content = '#0C0C12'
-        // document.getElementById('theme-light').content = '#0C0C12'
+    modal: function (pageKey) {
+        const data = false ? mediaAll.pages[pageKey] : mediaAll.pages.tv
 
         let page = document.createElement('div')
         page.id = 'media-all'
-
         page.append(elems.header())
 
         // content 
         let pageContent = document.createElement('div')
         pageContent.classList = 'media-all-content'
-        // console.log(elems.header())
 
-        if (getCookie('recent-movie')) {
-            const movie = movieDict[getCookie('recent-movie')]
-            pageContent.style.setProperty('background-image', `linear-gradient(#${movie.style.hex}33, #${movie.style.hex}22), linear-gradient(#1c1c1e, #1c1c1e)`)
-        } else pageContent.style.setProperty('background-image', `linear-gradient(#0C0C12, #242434, #181823)`)
+        // if (data.bg()) pageContent.style.setProperty('background-image', data.bg())
+        // else pageContent.style.setProperty('background-image', `linear-gradient(#0C0C12, #242434, #181823)`)
 
-        for (const x of mediaAll.pages.tv.content()) pageContent.append(x)
+        if (data.hex()) {
+            pageContent.style.setProperty('background-image', `linear-gradient(#${data.hex()}33, #${data.hex()}22), linear-gradient(#1c1c1e, #1c1c1e)`)
+        } else {
+            pageContent.style.setProperty('background-image', `linear-gradient(#2c2c2e, #2c2c2e)`)
+        }
+
+
+
+        // if (getCookie('recent-movie')) {
+        //     const movie = movieDict[getCookie('recent-movie')]
+        //     pageContent.style.setProperty('background-image', `linear-gradient(#${movie.style.hex}33, #${movie.style.hex}22), linear-gradient(#1c1c1e, #1c1c1e)`)
+        // } else pageContent.style.setProperty('background-image', `linear-gradient(#0C0C12, #242434, #181823)`)
+
+        for (const x of data.content()) pageContent.append(x)
 
         page.append(pageContent)
         return page
@@ -58,6 +65,17 @@ const mediaAll = {
                     movies.rows[10].elem.big,
                 ]
             },
+            hex: function () { return getCookie('recent-movie') ? movieDict[getCookie('recent-movie')].style.hex : '1c1c1e' },
+        },
+        pod: {
+            name: 'TV',
+            content: function () {
+                return [
+                    podElem.recent.tray()
+                ]
+            },
+            hex: function () { return null },
+            // hex: function () { return '2c2c2e' },
         },
     },
     commonElems: {
