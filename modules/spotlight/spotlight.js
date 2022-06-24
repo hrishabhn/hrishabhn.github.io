@@ -94,7 +94,7 @@ const spotlight = {
                     actors.searchRow(q),
                     // searchBookPodNewRow(books.search(q), 'Books', 'book'),
                     books.searchRow(q),
-                    pods.searchRow(q),
+                    podElem.searchRow(q),
                     food.searchRow(q),
                     // searchBookPodBig(['decoder'], 'pod'),
                 ]

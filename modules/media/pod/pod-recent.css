@@ -1,0 +1,40 @@
+.pod-recent {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.pod-recent .hline {
+    width: calc(100% - 40px);
+}
+
+.pod-recent .item {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pod-recent .item:hover {
+    background-color: var(--white-10);
+}
+
+.pod-recent .item .thumb {
+    height: 140px;
+    width: 140px;
+    border-radius: 10px;
+    margin-right: 20px;
+
+    background-image: url(../media-image/podcasts/decoder.jpeg);
+    background-size: cover;
+
+    /* background-color: blue; */
+}
+
+.pod-recent .item .media-detail-textbox {
+    /* max-width: 500px; */
+    width: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    cursor: inherit;
+}

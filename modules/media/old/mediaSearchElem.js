@@ -112,7 +112,7 @@ const mediaElems = {
                 allData = allBooks
                 folder = 'books'
             } else if (type == 'pod') {
-                allData = allPods
+                allData = podDict
                 folder = 'podcasts'
             }
 

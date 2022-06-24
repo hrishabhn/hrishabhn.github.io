@@ -240,12 +240,7 @@ const focus = {
                     work: false,
                     distract: false,
                     trays: function () {
-                        return [
-                            pods.data[0].elem,
-                            pods.data[1].elem,
-                            pods.data[2].elem,
-                            pods.data[3].elem,
-                        ]
+                        return [podElem.recent.tray()]
                     },
                 },
             ],

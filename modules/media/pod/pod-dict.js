@@ -1,4 +1,4 @@
-const allPods = {
+const podDict = {
     "decoder": {
         "name": "Decoder",
         "id": "decoder",
@@ -27,20 +27,6 @@ const allPods = {
         "author": "Morning Brew Podcasts",
         "coverType": "jpeg"
     },
-    "intelligence": {
-        "name": "The Intelligence",
-        "id": "intelligence",
-        "applePod": "1449631195",
-        "author": "The Economist",
-        "coverType": "png"
-    },
-    "pivot": {
-        "name": "Pivot",
-        "id": "pivot",
-        "applePod": "1073226719",
-        "author": "Kara Swisher & Scott Galloway",
-        "coverType": "jpeg"
-    },
     "forward": {
         "name": "Forward",
         "id": "forward",
@@ -55,20 +41,6 @@ const allPods = {
         "applePod": "1509092730",
         "youtube": "NewEconomicThinking",
         "author": "Rob Johnson",
-        "coverType": "jpeg"
-    },
-    "profg": {
-        "name": "Prof G Show",
-        "id": "profg",
-        "applePod": "1498802610",
-        "author": "Kara Swisher & Scott Galloway",
-        "coverType": "jpeg"
-    },
-    "founders": {
-        "name": "Founder's Journal",
-        "id": "founders",
-        "applePod": "1509276485",
-        "author": "Alex Lieberman",
         "coverType": "jpeg"
     },
     "waveform": {
@@ -119,34 +91,68 @@ const allPods = {
     }
 }
 
-for (const key in allPods) {
-    const pod = allPods[key]
+for (const key in podDict) {
+    const pod = podDict[key]
     if (!pod.link) {
         if (pod.youtube) pod.link = `https://www.youtube.com/c/${pod.youtube}/videos`
         else if (pod.applePod) pod.link = `https://podcasts.apple.com/podcast/id${pod.applePod}`
     }
+
+    pod.episode = {}
+    pod.episode.date = new Date(podDesc[key].epDate)
+    pod.episode.name = podDesc[key].epTitle
+    pod.episode.desc = podDesc[key].epSummary
 }
 
-const podDataArchive = [
-    {
-        "name": "Economist Radio",
-        "id": "economist",
-        link: 'https://podcasts.apple.com/podcast/id151230264',
-        "author": 'The Economist',
-        "coverType": 'jpeg',
-    },
-    {
-        "name": 'Making Sense',
-        "id": 'samharris',
-        link: 'https://podcasts.apple.com/podcast/id733163012',
-        "author": 'Sam Harris',
-        "coverType": 'jpeg',
-    },
-    {
-        "name": "Learn Cantonese",
-        "id": "canto",
-        "applePod": "1513774818",
-        "author": "Poetic Cantonese",
-        "coverType": "jpeg"
-    },
-]
+
+
+
+// {
+//     "name": "Economist Radio",
+//     "id": "economist",
+//     link: 'https://podcasts.apple.com/podcast/id151230264',
+//     "author": 'The Economist',
+//     "coverType": 'jpeg',
+// },
+// {
+//     "name": 'Making Sense',
+//     "id": 'samharris',
+//     link: 'https://podcasts.apple.com/podcast/id733163012',
+//     "author": 'Sam Harris',
+//     "coverType": 'jpeg',
+// },
+// "canto": {
+//     "name": "Learn Cantonese",
+//     "id": "canto",
+//     "applePod": "1513774818",
+//     "author": "Poetic Cantonese",
+//     "coverType": "jpeg"
+// },
+// "founders": {
+//     "name": "Founder's Journal",
+//     "id": "founders",
+//     "applePod": "1509276485",
+//     "author": "Alex Lieberman",
+//     "coverType": "jpeg"
+// },
+// "intelligence": {
+//     "name": "The Intelligence",
+//     "id": "intelligence",
+//     "applePod": "1449631195",
+//     "author": "The Economist",
+//     "coverType": "png"
+// },
+// "profg": {
+//     "name": "Prof G Show",
+//     "id": "profg",
+//     "applePod": "1498802610",
+//     "author": "Kara Swisher & Scott Galloway",
+//     "coverType": "jpeg"
+// },
+// "pivot": {
+//     "name": "Pivot",
+//     "id": "pivot",
+//     "applePod": "1073226719",
+//     "author": "Kara Swisher & Scott Galloway",
+//     "coverType": "jpeg"
+// },
