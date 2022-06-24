@@ -97,8 +97,7 @@ const topbar = {
             // },
         ]
 
-        let tray = topbar.app.tray(apps)
-        return tray
+        return topbar.app.tray(apps)
     },
     right: function () {
         let apps = [
