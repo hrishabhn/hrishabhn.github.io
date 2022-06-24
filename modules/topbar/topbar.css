@@ -82,6 +82,13 @@
     }
 }
 
+#topbar .tray {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    column-gap: 5px;
+}
+
 #topbar .side {
     width: 100%;
 }

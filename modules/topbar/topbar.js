@@ -38,7 +38,8 @@ const topbar = {
         ]
 
         let tray = topbar.app.tray(apps)
-        tray.classList = 'side'
+        tray.classList.add('side')
+        tray.style.setProperty('justify-content', 'flex-start')
         tray.append(elems.grow())
 
         return tray
@@ -139,7 +140,8 @@ const topbar = {
 
 
         let tray = topbar.app.tray(apps)
-        tray.classList = 'side'
+        tray.classList.add('side')
+        tray.style.setProperty('justify-content', 'flex-end')
         tray.prepend(elems.grow())
 
         return tray
@@ -182,9 +184,10 @@ const topbar = {
             return card
         },
         tray: function (apps) {
-            let nodes = []
-            for (const app of apps) nodes.push(this.card(app))
-            return trayWithKids(nodes, 5, 0)
+            let tray = document.createElement('div')
+            tray.classList = 'tray'
+            for (const app of apps) tray.append(this.card(app))
+            return tray
         },
     },
     elem: function () { return document.getElementById('topbar') },
