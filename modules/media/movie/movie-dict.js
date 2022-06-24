@@ -3492,7 +3492,7 @@ const movieDict = {
             service: 'prime',
             studio: 'prime',
             location: 'Prime Video',
-            date: '24 Jun, 2022, 12:30:00',
+            date: '1 Jul, 2022, 12:30:00',
             seasons: 3,
             yearStart: 2019,
             yearEnd: null,
