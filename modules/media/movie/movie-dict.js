@@ -7733,6 +7733,49 @@ const movieDict = {
             },
         ],
     },
+    'yellowstone': {
+        name: 'Yellowstone',
+        id: 'yellowstone',
+        link: 'https://app.primevideo.com/detail?gti=amzn1.dv.gti.74ba3c05-eadd-3c73-0504-14135721c8e9',
+        info: {
+            service: 'prime',
+            // studio: 'studio',
+            location: 'Prime Video',
+            // date: '',
+            seasons: 4,
+            yearStart: 2018,
+            yearEnd: null,
+            genre: [
+                'drama',
+                'western',
+            ],
+            summary: "The Duttons fight to defend their ranch and way of life from an Indian reservation and land developers, as medical issues, political aspirations and deep secrets put strain on the family.",
+        },
+        style: {
+            hex: '5b4f43',
+            poster: {
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
+        },
+        apps: {
+            tvTimeID: '341164',
+            reelgoodLink: 'https://reelgood.com/show/yellowstone-2018',
+            imdbID: 'tt4236770',
+            subReddit: 'YellowstonePN',
+        },
+    },
 }
 // @new
 // 'identifier': {

@@ -61,6 +61,7 @@ let movieRaw = [
     {
         name: 'New',
         data: [
+            movieDict.yellowstone,
             movieDict.boba,
             movieDict.killingEve,
             movieDict.joanna,
