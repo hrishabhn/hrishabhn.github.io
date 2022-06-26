@@ -7776,6 +7776,56 @@ const movieDict = {
             subReddit: 'YellowstonePN',
         },
     },
+    'saul': {
+        name: 'Better Caul Saul',
+        id: 'saul',
+        link: { netflix: '80021955' },
+        info: {
+            service: 'netflix',
+            studio: 'netflix',
+            location: 'Netflix',
+            // date: '',
+            seasons: 6,
+            yearStart: 2015,
+            yearEnd: 2022,
+            genre: [
+                'crime',
+                'drama',
+            ],
+            summary: "This Emmy-nominated prequel to \"Breaking Bad\" follows small-time attorney Jimmy McGill as he transforms into morally challenged lawyer Saul Goodman.",
+            // tags: ['breaking bad']
+        },
+        style: {
+            hex: colorData.fluent.red,
+            poster: {
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
+        },
+        apps: {
+            tvTimeID: '273181',
+            reelgoodLink: 'https://reelgood.com/show/better-call-saul-2015',
+            imdbID: 'tt3032476',
+            // subReddit: 'subreddit',
+        },
+        // cast: [
+        //     {
+        //         actor: 'name',
+        //         char: 'name',
+        //     },
+        // ],
+    },
 }
 // @new
 // 'identifier': {
