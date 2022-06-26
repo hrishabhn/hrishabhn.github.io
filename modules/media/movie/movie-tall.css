@@ -1,0 +1,44 @@
+.movie-card-tall {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.movie-card-tall .thumb {
+    width: 100%;
+    border-radius: inherit;
+}
+
+.movie-card-tall .thumb .grad {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(var(--col-1) 50%, var(--col-2));
+    filter: brightness(0.5) saturate(2);
+    border-radius: inherit;
+}
+
+.movie-card-tall .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--col-2);
+    filter: brightness(0.5) saturate(2);
+    border-radius: inherit;
+}
+
+.movie-card-tall .tv-title-box-new {
+    --lim: 200px;
+}
+
+.movie-card-tall .tv-title-box-new p {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 8px;
+}

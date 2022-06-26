@@ -137,6 +137,35 @@ const movieElem = {
             return item
         },
     },
+    tall: {
+        tray: function ({ data, name }) {
+            let nodes = []
+            for (const x of data) nodes.push(movieElem.tall.card(x))
+            return mediaAll.tray(nodes, 4, name)
+        },
+        card: function (movie) {
+            let item = movieElem.baseCard(movie)
+            item.classList.add('movie-card-tall')
+
+            item.style.setProperty('--col-1', `#${movie.style.hex}00`)
+            item.style.setProperty('--col-2', `#${movie.style.hex}`)
+
+            let title = movieElem.title(movie.id)
+            title.append(elems.p(movie.desc.full))
+
+            let thumb = elems.thumb(`./media-image/TV/mobile/${movie.id}.${movie.style.poster.mobile.type}`)
+            thumb.style.setProperty('aspect-ratio', movie.style.poster.mobile.size)
+            thumb.append(elems.grad())
+
+
+            item.append(elems.bg())
+            item.append(thumb)
+            item.append(elems.grow())
+            item.append(title)
+            item = mediaAll.script.addDataElem(item, movie.info.date)
+            return item
+        },
+    },
     title: function (key) {
         const movie = movieDict[key]
 
