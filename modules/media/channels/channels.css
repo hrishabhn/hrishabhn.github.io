@@ -31,5 +31,6 @@
 .channel:hover {
     background: var(--bg);
     fill: var(--fg);
+    color: var(--fg);
     scale: 1.1;
 }
