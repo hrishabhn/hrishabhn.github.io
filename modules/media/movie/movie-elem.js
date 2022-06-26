@@ -65,12 +65,20 @@ const movieElem = {
     },
     baseCard: function (movie) {
         let item = document.createElement('div')
-        item.classList = 'disney clickable-o'
+        item.classList = 'hotstar clickable-o'
         item.onclick = function () { movie.detail() }
 
         let updateGiant
-        item.onmouseover = function () { updateGiant = setTimeout(function () { movieElem.giant.update(movie) }, 1000); }
-        item.onmouseleave = function () { clearTimeout(updateGiant) }
+        let hotstarHover
+        item.onmouseover = function () {
+            updateGiant = setTimeout(function () { movieElem.giant.update(movie) }, 1000);
+            hotstarHover = setTimeout(function () { item.classList.add('hovering') }, 200);
+        }
+        item.onmouseleave = function () {
+            clearTimeout(updateGiant)
+            clearTimeout(hotstarHover)
+            item.classList.remove('hovering')
+        }
         return item
     },
     small: {
