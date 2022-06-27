@@ -23,7 +23,7 @@ const movieElem = {
             let tray = document.createElement('div')
             tray.classList = 'play-tray'
 
-            let play = elems.a(SFSymbols.play.fill, `Watch on ${movie.info.location}`)
+            let play = elems.a(SFSymbols.play.fill, movie.info.location)
             play.classList = 'play clickable-o'
             play.onclick = function () { movie.play() }
 
