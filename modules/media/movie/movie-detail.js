@@ -72,7 +72,7 @@ const tvDetail = {
         }
 
         // apps
-        info.append(movieDetail.app.tray(movie))
+        info.append(tvDetail.app.tray(movie))
         card.append(info)
         card.append(elems.grow())
 
@@ -111,7 +111,35 @@ const tvDetail = {
         card.append(close)
 
         return card
-    }
+    },
+    app: {
+        tray: function (movie) {
+            let tray = document.createElement('div')
+            tray.classList = 'movie-detail-app-tray'
+            for (const app of movieApps(movie)) tray.append(this.card(app))
+            return tray
+        },
+        card: function ({ icon, pad, name, link }) {
+            let elem = document.createElement('a')
+            elem.classList = 'app clickable card-shadow'
+            elem.target = '_blank'
+            elem.onmouseover = function () {
+                for (const child of elem.parentNode.childNodes) child.classList.remove('active')
+                elem.classList.add('active')
+            }
+
+            let iconElem = elems.icon(icon)
+            if (pad) iconElem.style.setProperty('padding', `${pad}px`)
+
+            elem.append(iconElem)
+            // elem.append(elems.spacer(spacing ?? 0))
+            elem.append(elems.p(name))
+
+            if (link) elem.href = link
+
+            return elem
+        },
+    },
 }
 
 function movieApps(movie) {
@@ -167,35 +195,4 @@ function movieApps(movie) {
     })
 
     return data
-}
-
-const movieDetail = {
-    app: {
-        tray: function (movie) {
-            let tray = document.createElement('div')
-            tray.classList = 'movie-detail-app-tray'
-            for (const app of movieApps(movie)) tray.append(this.card(app))
-            return tray
-        },
-        card: function ({ icon, pad, name, link }) {
-            let elem = document.createElement('a')
-            elem.classList = 'app clickable card-shadow'
-            elem.target = '_blank'
-            elem.onmouseover = function () {
-                for (const child of elem.parentNode.childNodes) child.classList.remove('active')
-                elem.classList.add('active')
-            }
-
-            let iconElem = elems.icon(icon)
-            if (pad) iconElem.style.setProperty('padding', `${pad}px`)
-
-            elem.append(iconElem)
-            // elem.append(elems.spacer(spacing ?? 0))
-            elem.append(elems.p(name))
-
-            if (link) elem.href = link
-
-            return elem
-        },
-    }
 }
