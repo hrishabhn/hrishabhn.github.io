@@ -1,0 +1,10 @@
+.book-card {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.book-card .thumb {
+    height: 100%;
+    width: 100%;
+}

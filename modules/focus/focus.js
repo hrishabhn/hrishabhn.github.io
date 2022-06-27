@@ -207,6 +207,10 @@ const focus = {
                     // },
                     trays: function () {
                         return [
+                            bookPage()[0],
+                            bookPage()[1],
+                            bookPage()[2],
+                            bookPage()[3],
                             books.data[0].elem,
                             books.data[1].elem,
                             books.data[2].elem,
