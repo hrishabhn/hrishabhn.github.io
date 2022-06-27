@@ -1,4 +1,17 @@
+const ColorFG = {
+    dark: '1c1c1e',
+    light: 'ffffff',
+}
+
 const Colors = {
+    secondary: {
+        dark: 'ffffff',
+        light: '1c1c1e',
+        fg: {
+            dark: ColorFG.dark,
+            light: ColorFG.light,
+        },
+    },
     blue: {
         dark: '0a84ff',
         light: '007aff',
@@ -46,6 +59,7 @@ const Colors = {
     yellow: {
         dark: 'ffd60a',
         light: 'ffcc00',
+        fg: ColorFG.dark,
     },
 
 }
@@ -56,31 +70,46 @@ const colorModal = function () {
     // header
     card.append(elems.textbox('iOS System Colors', 'All available colors in iOS'))
 
+    let body = document.createElement('div')
+    body.classList = 'body'
+
     // sides
     let left = document.createElement('div')
     left.classList = 'side'
+    left.style.setProperty('left', 0)
     left.style.setProperty('background-color', '#1c1c1e')
 
     let right = document.createElement('div')
     right.classList = 'side'
+    right.style.setProperty('right', 0)
     right.style.setProperty('background-color', '#fff')
+
+    body.append(left)
+    body.append(right)
+
+
 
     // colors
     for (const key in Colors) {
-        let itemLeft = elems.item()
-        itemLeft.style.setProperty('background-color', `#${Colors[key].dark}`)
-        itemLeft.textContent = key
-        left.append(itemLeft)
+        let item = elems.item()
+        item = cardCol(item, { color: Colors[key] })
 
-        let itemRight = elems.item()
-        itemRight.style.setProperty('background-color', `#${Colors[key].light}`)
+        let itemLeft = document.createElement('div')
+        itemLeft.classList = 'block left'
+        itemLeft.textContent = key
+
+        let itemRight = document.createElement('div')
+        itemRight.classList = 'block right'
         itemRight.textContent = key
-        right.append(itemRight)
+
+
+        item.append(itemLeft)
+        item.append(itemRight)
+        body.append(item)
+
     }
 
-    card.append(left)
-    card.append(right)
-
+    card.append(body)
     modal.add(card)
 }
 

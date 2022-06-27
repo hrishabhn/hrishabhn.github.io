@@ -7,6 +7,17 @@ function cardCol(card, { accent, style, color }) {
             card.style.setProperty('--brand-col-dark', `#${color}`)
             card.style.setProperty('--brand-col-light', `#${color}`)
         }
+
+        if (color.fg) {
+            if (typeof color.fg === 'object') {
+                card.style.setProperty('--fg-col-dark', `#${color.fg.dark}`)
+                card.style.setProperty('--fg-col-light', `#${color.fg.light}`)
+            } else {
+                card.style.setProperty('--fg-col-dark', `#${color.fg}`)
+                card.style.setProperty('--fg-col-light', `#${color.fg}`)
+            }
+        }
+
     } else if (accent) {
         if (accent.dark && accent.light) {
             alert('need to update smth', accent)
