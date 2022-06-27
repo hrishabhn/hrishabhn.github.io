@@ -131,7 +131,7 @@ const focus = {
                     thumb: thumbData['tv'], //update
                     icon: SFSymbols.play.fill,
                     style: 'red',
-                    apps: appData['video'], //update
+                    apps: null,
                     work: false,
                     distract: true,
                     trays: function () {
