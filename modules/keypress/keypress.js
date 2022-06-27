@@ -4,10 +4,10 @@ function keyPress(e) {
     // console.log(e)
 
     // tv modal
-    if (tvModal.hasChildNodes()) {
+    if (tvDetail.elem.hasChildNodes()) {
         // info
         let infoElem
-        for (const node of tvModal.childNodes[1].childNodes) if (node.classList.contains('info')) infoElem = node
+        for (const node of tvDetail.elem.childNodes[1].childNodes) if (node.classList.contains('info')) infoElem = node
 
         // play button
         let playElem
@@ -42,7 +42,7 @@ function keyPress(e) {
             if (apps[n]) apps[n].classList.add('active')
         } else if (e.key == 'Escape') {
             e.preventDefault()
-            hideTVDetail()
+            tvDetail.show()
         }
     } else {
         if (hotkeys[e.key]) hotkeys[e.key](e)

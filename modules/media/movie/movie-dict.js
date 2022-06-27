@@ -7741,17 +7741,7 @@ for (const key in movieDict) {
 
 
     // show tv detail
-    movie.detail = function () {
-        removeAllChildNodes(tvModal)
-
-        let close = document.createElement('a')
-        close.classList = 'close'
-        close.onclick = function () { hideTVDetail() }
-        tvModal.append(close)
-
-        tvModal.append(tvDetail(key))
-        tvModal.classList.add('open')
-    }
+    movie.detail = function () { tvDetail.show(key) }
 }
 
 // console.log(movieDict.ministry)

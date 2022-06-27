@@ -1,23 +1,19 @@
-const tvModal = document.getElementById('tv-modal')
+const tvDetail = {
+    elem: document.getElementById('tv-modal'),
+    show: function (key) {
+        let close = document.createElement('a')
+        close.classList = 'close'
+        close.onclick = function () { tvDetail.hide() }
+        tvDetail.elem.append(close)
 
-// function showTVDetail(key) {
-//     removeAllChildNodes(tvModal)
-
-//     let close = document.createElement('a')
-//     close.classList = 'close'
-//     close.onclick = function () { hideTVDetail() }
-//     tvModal.append(close)
-
-//     tvModal.append(tvDetail(key))
-//     tvModal.classList.add('open')
-// }
-
-function hideTVDetail() {
-    tvModal.classList.remove('open')
-    removeAllChildNodes(tvModal)
-}
-
-const tvDetail = function(key) {
+        tvDetail.elem.append(tvDetail.card(key))
+        tvDetail.elem.classList.add('open')
+    },
+    hide: function() {
+        tvDetail.elem.classList.remove('open')
+        removeAllChildNodes(tvDetail.elem)
+    },
+    card: function (key) {
         const movie = movieDict[key]
 
         let card = document.createElement('div')
@@ -110,11 +106,12 @@ const tvDetail = function(key) {
         let close = elems.a(iconData.close, null)
         close.classList = 'close-tv-modal clickable-o'
         close.onclick = function () {
-            hideTVDetail()
+            tvDetail.hide()
         }
         card.append(close)
 
         return card
+    }
 }
 
 function movieApps(movie) {
