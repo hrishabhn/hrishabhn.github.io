@@ -1,3 +1,26 @@
+const movieServices = {
+    hbo: {
+        id: 'hbo',
+        name: 'HBO Max',
+    },
+    disney: {
+        id: 'disney',
+        name: 'Disney+',
+    },
+    netflix: {
+        id: 'netflix',
+        name: 'Netflix',
+    },
+    hulu: {
+        id: 'hulu',
+        name: 'Hulu',
+    },
+    apple: {
+        id: 'apple',
+        name: ' TV+',
+    },
+}
+
 const movieDict = {
     'silicon': {
         name: 'Silicon Valley',
@@ -5,9 +28,7 @@ const movieDict = {
         // link: 'https://www.hulu.com/series/silicon-valley-a53a72e7-afd9-4f50-bda8-ae887ff0683d',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GVU2WugfAylFvjSoJATvA:type:series',
         info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             seasons: 6,
             yearStart: 2014,
             yearEnd: 2019,
@@ -82,9 +103,7 @@ const movieDict = {
         id: 'himyf',
         link: 'https://www.disneyplus.com/series/how-i-met-your-father/5pWSb9Sy6vza',
         info: {
-            service: 'disney',
-            studio: 'hulu',
-            location: 'Disney+',
+            water: movieServices.disney,
             // date: 'Mar 15, 2022',
             seasons: 1,
             yearStart: 2022,
@@ -1046,9 +1065,7 @@ const movieDict = {
         id: 'dune',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYUjdLgBiJp5otAEAAAAJ:type:feature',
         info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             year: 2021,
             genre: [
                 'action & adventure',
@@ -1792,9 +1809,7 @@ const movieDict = {
         id: 'finalSpace',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GXbJCBwcZGnepwwEAAAhh:type:series',
         info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             seasons: 3,
             yearStart: 2018,
             yearEnd: 2021,
@@ -2065,9 +2080,7 @@ const movieDict = {
         id: 'qanon',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYDk9Ig48c5i6hgEAAAA7:type:series',
         info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             // date: '',
             seasons: 1,
             yearStart: 2021,
@@ -2432,9 +2445,7 @@ const movieDict = {
         id: 'ghosts',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GXrBDuAniEYC9JwEAAAWV:type:series',
         info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             // date: '',
             seasons: 3,
             yearStart: 2019,
@@ -2648,9 +2659,7 @@ const movieDict = {
         id: 'southpark',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GXr7SEgRi2sLCAAEAAAQu:type:series',
         info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             // date: '',
             seasons: 24,
             yearStart: 1997,
@@ -5230,9 +5239,7 @@ const movieDict = {
         id: 'fresh',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GXdLWQgqPHKXCPQEAAAxk:type:series',
         info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             seasons: 6,
             yearStart: 1990,
             yearEnd: 1996,
@@ -6048,9 +6055,7 @@ const movieDict = {
         id: 'lotr1',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYG9OEApMzVPDfAEAAAAE:type:feature',
         info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             // date: '',
             year: 2001,
             genre: [
@@ -6125,9 +6130,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             year: 2004,
             genre: [
                 'comedy',
@@ -6199,9 +6202,7 @@ const movieDict = {
         id: 'crazyRich',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GX6QtHQxBD5nCwwEAAAHM:type:feature',
         info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             year: 2018,
             genre: [
                 'drama',
@@ -6513,9 +6514,7 @@ const movieDict = {
         id: 'goodfellas',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYEZm4Qn1r7CgYgEAAAAb:type:feature',
         info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             year: 1990,
             genre: [
                 'crime',
@@ -6785,9 +6784,7 @@ const movieDict = {
         id: 'ministry',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYT_OuA4CCYrCwgEAAAAf:type:series',
         info: {
-            service: 'hbo',
-            // studio: 'studio',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             // date: '',
             seasons: 4,
             yearStart: 2015,
@@ -7946,10 +7943,10 @@ for (const key in movieDict) {
         console.log(getCookie('recent-movie'))
     }
 
-
     // process info
-    if (movie.info.studio) movie.info.serviceImg = `${movie.info.studio}.svg`
-    else if (movie.info.service) movie.info.serviceImg = `${movie.info.service}.svg`
+    if (movie.info.water) {
+        movie.info.location = movie.info.water.name
+    }
 
     // process location
 
