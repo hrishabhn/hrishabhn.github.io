@@ -23,10 +23,10 @@ const appObject = {
     main: {
         card: function (app) {
             let card = document.createElement('a')
-            card.classList = 'app-card layer-1 clickable-o'
+            card.classList = 'app-card card-hover layer-1 clickable-o'
             card.target = '_blank'
             card.onclick = function (e) { openApp(app, e) }
-            card = cardHover(card, app.accent, app.style)
+            card = cardCol(card, { accent: app.accent, style: app.style, color: app.color })
 
             if (app.searchBase) {
                 card.setAttribute('engineData', JSON.stringify(app))

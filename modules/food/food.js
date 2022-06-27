@@ -49,9 +49,9 @@ const food = {
     },
     card: function (app) {
         let card = document.createElement('a')
-        card.classList = 'food-card layer-1 clickable-o'
+        card.classList = 'food-card card-hover layer-1 clickable-o'
         card.onclick = function (e) { openApp(app, e) }
-        card = cardHover(card, app.accent, app.style)
+        card = cardCol(card, { accent: app.accent, style: app.style, color: app.color })
 
         card.append(elems.thumb(`./images/restaurant/${app.thumb}`))
         card.append(elems.textbox(app.name, app.desc))

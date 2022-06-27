@@ -1,8 +1,3 @@
-function cardHover(card, accent, style) {
-    card.classList.add('card-hover')
-    return cardCol(card, { accent: accent, style: style })
-}
-
 function cardCol(card, { accent, style, color }) {
     if (color) {
         if (color.dark && color.light) {

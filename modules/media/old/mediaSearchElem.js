@@ -127,7 +127,6 @@ const mediaElems = {
                 // base card
                 let card = document.createElement('a')
                 card.classList = `media-card ${type} clickable-o`
-                card = cardHover(card, null, item.style)
 
                 let thumb = elems.thumb(`./media-image/${folder}/${item.id}.${item.coverType}`)
                 card.append(thumb)
