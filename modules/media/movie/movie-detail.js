@@ -17,7 +17,7 @@ function hideTVDetail() {
     removeAllChildNodes(tvModal)
 }
 
-function tvDetail(key) {
+const tvDetail = function(key) {
     const movie = movieDict[key]
 
     let card = document.createElement('div')
