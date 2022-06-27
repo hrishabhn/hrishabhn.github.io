@@ -176,7 +176,7 @@ const topbar = {
             // color or basic
             if (app.style || app.accent) {
                 let bg = elems.bg()
-                bg = cardCol(bg, app.accent, app.style)
+                bg = cardCol(bg, { accent: app.accent, style: app.style })
                 card.classList.add('clickable-o')
                 card.prepend(bg)
             } else card.classList.add('layer-hover')

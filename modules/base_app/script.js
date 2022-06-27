@@ -3,7 +3,7 @@ function cardHover(card, accent, style) {
     return cardCol(card, accent, style)
 }
 
-function cardCol(card, accent, style) {
+function cardCol(card, { accent, style, color }) {
     if (accent) {
         if (accent.dark && accent.light) {
             card.style.setProperty('--brand-col-dark', `#${accent.dark}`)

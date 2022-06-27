@@ -34,7 +34,7 @@ const mediaElems = {
                         card.append(mediaTimeElem(mediaNewOrSoon(movie.info.date)))
 
                 // card hex
-                if (movie.style.hex) card = cardCol(card, movie.style.hex, null)
+                if (movie.style.hex) card = cardCol(card, { accent: movie.style.hex, color: movie.style.color })
 
                 // size
                 if (small) card.classList.add('small')

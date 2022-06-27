@@ -80,7 +80,7 @@ const appObject = {
         card.classList = 'app-card-mini clickable-o'
         card.target = '_blank'
         card.onclick = function (e) { openApp(app, e) }
-        card = cardCol(card, app.accent, app.style)
+        card = cardCol(card, { accent: app.accent, style: app.style })
 
 
         if (app.thumb) card.append(elems.appThumb(app.thumb))

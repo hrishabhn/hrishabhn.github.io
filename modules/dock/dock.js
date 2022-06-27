@@ -40,7 +40,7 @@ const dock = {
         let card = document.createElement('a')
         card.classList = 'app-card-dock clickable-o'
         card.onclick = function (e) { openApp(app, e) }
-        card = cardCol(card, app.accent, app.style)
+        card = cardCol(card, { accent: app.accent, style: app.style })
 
         if (app.link) card.style.setProperty('cursor', 'pointer')
 
