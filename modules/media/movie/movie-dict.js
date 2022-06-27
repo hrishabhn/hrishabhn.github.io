@@ -19,6 +19,26 @@ const movieServices = {
         id: 'apple',
         name: ' TV+',
     },
+    prime: {
+        id: 'prime',
+        name: 'Prime Video',
+    },
+    theatre: {
+        id: 'theatre',
+        message: 'Coming to Theatres',
+    },
+    cnn: {
+        id: 'cnn',
+        name: 'CNN+',
+    },
+    hotstar: {
+        id: 'hotstar',
+        name: 'Hotstar',
+    },
+    // prime: {
+    //     id: 'prime',
+    //     name: 'Prime',
+    // },
 }
 
 const movieDict = {
@@ -171,9 +191,7 @@ const movieDict = {
             netflix: '80002479'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             date: '10 Jun 2022',
             seasons: 6,
             yearStart: 2013,
@@ -211,9 +229,7 @@ const movieDict = {
         id: 'snowfall',
         link: 'https://www.hulu.com/series/snowfall-ce0d176c-8a89-454d-bed4-b91ad2e0d6e6',
         info: {
-            service: 'hbo',
-            studio: 'fx',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             // date: '17 Mar, 2022 10:00:00',
             seasons: 5,
             yearStart: 2017,
@@ -251,9 +267,7 @@ const movieDict = {
         id: 'severance',
         link: 'https://tv.apple.com/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx',
         info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
+            water: movieServices.apple,
             // date: '11 Mar 2022 08:00:00',
             seasons: 1,
             yearStart: 2022,
@@ -329,9 +343,7 @@ const movieDict = {
         id: 'abbott',
         link: 'https://www.hulu.com/series/abbott-elementary-7c33eeb2-5d16-4a10-ad9e-ee31f9fff15c',
         info: {
-            service: 'hulu',
-            // studio: 'abc',
-            location: 'Hulu',
+            water: movieServices.hulu,
             date: 'Sep 21 2022',
             seasons: 1,
             yearStart: 2021,
@@ -394,9 +406,7 @@ const movieDict = {
         id: 'wecrashed',
         link: 'https://tv.apple.com/show/wecrashed/umc.cmc.6qw605uv2rwbzutk2p2fsgvq9',
         info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
+            water: movieServices.apple,
             // date: '18 March 2022',
             seasons: 1,
             yearStart: 2022,
@@ -446,9 +456,7 @@ const movieDict = {
             netflix: '80204890'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             seasons: 4,
             yearStart: 2019,
@@ -487,9 +495,7 @@ const movieDict = {
         id: 'attack',
         link: 'https://www.hulu.com/series/attack-on-titan-9c91ffa3-dc20-48bf-8bc5-692e37c76d88',
         info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: 'Jan 16, 2022',
             seasons: 4,
             yearStart: 2013,
@@ -529,9 +535,7 @@ const movieDict = {
             netflix: '80200942'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: 'Apr 8 2022',
             seasons: 4,
             yearStart: 2018,
@@ -617,9 +621,7 @@ const movieDict = {
             netflix: '80117552'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Neftlix',
+            water: movieServices.netflix,
             // date: 'Jan 21, 2022',
             seasons: 4,
             yearStart: 2017,
@@ -681,9 +683,7 @@ const movieDict = {
             netflix: '70211391'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             seasons: 3,
             yearStart: 1991,
             yearEnd: 1992,
@@ -722,9 +722,7 @@ const movieDict = {
             netflix: '80192098'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             seasons: 4,
             yearStart: 2017,
@@ -765,9 +763,7 @@ const movieDict = {
             netflix: '80095697'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '9 Feb, 2022',
             seasons: 3,
             yearStart: 2018,
@@ -808,9 +804,7 @@ const movieDict = {
             netflix: '81252357'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             year: 2021,
             genre: [
                 'sci-fi',
@@ -844,9 +838,7 @@ const movieDict = {
             netflix: '80001312'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             seasons: 1,
             yearStart: 1998,
             yearEnd: 1999,
@@ -886,9 +878,7 @@ const movieDict = {
             primeVideo: 'B08QM4K1K5',
         },
         info: {
-            service: 'prime',
-            // studio: 'prime',
-            location: 'Prime Video',
+            water: movieServices.prime,
             // date: '',
             seasons: 4,
             yearStart: 2016,
@@ -929,9 +919,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            service: 'hbo',
-            studio: 'universal',
-            location: 'Thatres',
+            water: movieServices.theatre,
             date: 'Jun 10, 2022',
             year: 2022,
             genre: [
@@ -994,9 +982,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
-            studio: 'marvel',
-            location: 'Coming Soon',
+            water: movieServices.disney,
             // date: 'Nov 5, 2021',
             year: 2021,
             genre: [
@@ -1032,9 +1018,7 @@ const movieDict = {
             primeVideo: 'B081W68DP2'
         },
         info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
+            water: movieServices.prime,
             description: 'Comedy &#149 Crime &#149 Drama &#149 2019',
             summary: "A detective investigates the death of a patriarch of an eccentric, combative family.",
         },
@@ -1101,9 +1085,7 @@ const movieDict = {
             netflix: '60021525'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             description: 'Comedy &#149 Drama &#149 2001',
             summary: "Inseparable childhood friends Akash, Sameer and Siddharth are just out of college. Nothing comes between them -- until they each fall in love.",
         },
@@ -1134,9 +1116,7 @@ const movieDict = {
             primeVideo: 'B01KH1DOA4'
         },
         info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
+            water: movieServices.prime,
             description: 'Documentary &#149 Technology &#149 Sci-Fi &#149 2016',
             summary: "Oscar-nominated documentarian Werner Herzog (Grizzly Man, Cave of Forgotten Dreams) chronicles the virtual world. He leads viewers on a journey that reveals the ways the online world has transformed how virtually everything in the real world works.",
         },
@@ -1169,9 +1149,7 @@ const movieDict = {
             primeVideo: 'B07WQZDXTM'
         },
         info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
+            water: movieServices.prime,
             // date: '',
             seasons: 1,
             year: 1995,
@@ -1210,9 +1188,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Download',
+            water: null,
             description: 'Comedy &#149 Drama &#149 Fantasy &#149 1999',
             summary: "A puppeteer discovers a portal that leads literally into the head of movie star John Malkovich.",
         },
@@ -1243,9 +1219,7 @@ const movieDict = {
         id: 'earth',
         link: 'https://tv.apple.com/movie/the-year-earth-changed/umc.cmc.3fob3t7nfhehpb3ilgynzxmnu',
         info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
+            water: movieServices.apple,
             year: 2021,
             genre: [
                 'documentary',
@@ -1288,9 +1262,7 @@ const movieDict = {
             netflix: '80146601'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             seasons: 4,
             yearStart: 2018,
             yearEnd: null,
@@ -1335,9 +1307,7 @@ const movieDict = {
             netflix: '81008305'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             seasons: 1,
             year: 2022,
@@ -1418,9 +1388,7 @@ const movieDict = {
             primeVideo: 'B09KKMBRC8'
         },
         info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
+            water: movieServices.prime,
             // date: '',
             seasons: 1,
             yearStart: 2022,
@@ -1500,9 +1468,7 @@ const movieDict = {
         id: 'boba',
         link: 'https://www.disneyplus.com/series/the-book-of-boba-fett/57TL7zLNu2wf',
         info: {
-            service: 'disney',
-            studio: 'starwars',
-            location: 'Disney+',
+            water: movieServices.disney,
             // date: '',
             seasons: 1,
             yearStart: 2021,
@@ -1546,9 +1512,7 @@ const movieDict = {
             primeVideo: 'B095RYWGNR'
         },
         info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
+            water: movieServices.prime,
             // date: '',
             seasons: 1,
             yearStart: 2021,
@@ -1588,9 +1552,7 @@ const movieDict = {
             netflix: '80207033',
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: 'Nov 19, 2021',
             seasons: 1,
             yearStart: 2021,
@@ -1652,9 +1614,7 @@ const movieDict = {
             primeVideo: 'B08VH1HD6F'
         },
         info: {
-            service: 'prime',
-            studio: 'bbc',
-            location: 'Prime Video',
+            water: movieServices.prime,
             seasons: 1,
             year: 2015,
             genre: [
@@ -1690,9 +1650,7 @@ const movieDict = {
         id: 'chernobyl',
         link: 'https://www.hulu.com/series/chernobyl-849bed9a-2da8-484b-8cdf-d7000090fc5d',
         info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
+            water: movieServices.hulu,
             seasons: 1,
             year: 2019,
             genre: [
@@ -1729,9 +1687,7 @@ const movieDict = {
         id: 'sopranos',
         link: 'https://www.hulu.com/series/the-sopranos-4e03024d-2f23-423a-934c-23adf1e62fe9',
         info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
+            water: movieServices.hulu,
             seasons: 6,
             yearStart: 1999,
             yearEnd: 2007,
@@ -1770,9 +1726,7 @@ const movieDict = {
             primeVideo: 'B0875QQMD2'
         },
         info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
+            water: movieServices.prime,
             seasons: 2,
             yearStart: 2016,
             yearEnd: 2019,
@@ -1848,9 +1802,7 @@ const movieDict = {
             netflix: '81166770'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             seasons: 1,
             year: 2021,
             genre: [
@@ -1901,9 +1853,7 @@ const movieDict = {
             netflix: '80178151'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             description: 'Drama &#149 1 Season &#149 2019',
             summary: "In the 1960s, Israeli clerk-turned-secret agent Eli Cohen goes deep undercover inside Syria on a perilous, years-long mission to spy for Mossad.",
         },
@@ -1932,9 +1882,7 @@ const movieDict = {
         id: "lineofduty",
         link: "https://www.hulu.com/series/line-of-duty-0efc0f95-c575-46da-b28f-a30a13d86b37",
         info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
+            water: movieServices.hulu,
             description: "Thriller &#149 6 Season &#149 2012 - Present",
             summary: "After refusing to help cover up an unlawful and fatal shooting by members of his team, Detective Sergeant Steve Arnott is transferred to Anti-Corruption Unit 12, AC-12. Run by zealous Superintendent Ted Hastings, the department is responsible for investigating possible corruption within the Central Police force. Working alongside DS Arnott is Detective Inspector Kate Fleming, who is an undercover specialist. With the help and oversight of Hastings, Arnott and Fleming take on difficult cases, which lead from laddering to mishandling evidence.",
         },
@@ -1964,9 +1912,7 @@ const movieDict = {
             primeVideo: 'B000JO9JHW'
         },
         info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
+            water: movieServices.prime,
             // date: '',
             seasons: 9,
             yearStart: 2006,
@@ -2007,9 +1953,7 @@ const movieDict = {
             netflix: '80114855'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             description: 'Crime &#149 Drama &#149 Thriller &#149 2 Seasons &#149 2017 - 2019',
             summary: "In the late 1970s two FBI agents expand criminal science by delving into the psychology of murder and getting uneasily close to all-too-real monsters.",
         },
@@ -2040,9 +1984,7 @@ const movieDict = {
         id: 'vikings',
         link: 'https://www.hulu.com/series/vikings-8bc072a3-4a5e-47cb-9cb6-bc3dc3785fe1',
         info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '',
             seasons: 6,
             yearStart: 2013,
@@ -2120,9 +2062,7 @@ const movieDict = {
             netflix: '81011211'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             date: '',
             seasons: 1,
             yearStart: 2021,
@@ -2161,9 +2101,7 @@ const movieDict = {
             netflix: '80189685'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             seasons: 1,
             yearStart: 2019,
@@ -2203,9 +2141,7 @@ const movieDict = {
             netflix: '80095698'
         },
         info: {
-            service: 'netflix',
-            // studio: '',
-            location: 'Netflix',
+            water: movieServices.netflix,
             description: 'Comedy &#149 Drama &#149 4 Seasons &#149 2017 - 2021',
             summary: "Students of color navigate the daily slights and slippery politics of life at an Ivy League college that's not nearly as \"post-racial\" as it thinks.",
         },
@@ -2234,9 +2170,7 @@ const movieDict = {
         id: 'mankind',
         link: 'https://tv.apple.com/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7',
         info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
+            water: movieServices.apple,
             description: 'Sci-Fi &#149 2 Seasons &#149 2019 - Present',
             summary: "Exploring the possibilities that might exist if the global space race had continued and where humanity would be now.",
         },
@@ -2267,9 +2201,7 @@ const movieDict = {
         id: 'dark',
         link: 'https://www.netflix.com/title/80100172',
         info: {
-            service: 'netflix',
-            // studio: '',
-            location: 'Netflix',
+            water: movieServices.netflix,
             description: 'Crime &#149 Drama &#149 Mystery &#149 3 Seasons &#149 2017 - 2020',
             summary: "When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. The mystery-drama series introduces an intricate puzzle filled with twists that includes a web of curious characters, all of whom have a connection to the town's troubled history -- whether they know it or not. The story includes supernatural elements that tie back to the same town in 1986. 'Dark' represents the first German original series produced for Netflix.",
         },
@@ -2302,9 +2234,7 @@ const movieDict = {
             primeVideo: 'B001FVV2X2',
         },
         info: {
-            // service: '',
-            // studio: '',
-            location: 'Prime Video',
+            water: movieServices.prime,
             description: 'Drama &#149 Mystery &#149 Sci-Fi &#149 5 Seasons &#149 2008 - 2013',
             summary: "FBI Special Agent Olivia Dunham is assigned to the bureau's Fringe Division, in which she investigates unusual crimes and occurrences. Assisting Olivia in her investigations are once-institutionalised scientist Dr Walter Bishop, his jack-of-all-trades son, Peter, and FBI Junior Agent Astrid Farnsworth. As the team investigates cases of science gone awry, they discover connections to their own past and to a parallel universe. As the team explores life and solves cases in these interconnected worlds, new discoveries and complications continue to arise.",
         },
@@ -2333,9 +2263,7 @@ const movieDict = {
         id: "lastman",
         link: "https://www.hulu.com/series/y-the-last-man-9fb2d79b-1280-48be-b185-f989b9c9519a",
         info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
+            water: movieServices.hulu,
             description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
             summary: 'A drama based on DC Comics\' acclaimed series by Brian K. Vaughan and Pia Guerra, Y: The Last Man traverses a post-apocalyptic world in which a cataclysmic event decimates every mammal with a Y chromosome but for one cisgender man and his pet monkey. The series follows the survivors in this new world as they struggle with their efforts to restore what was lost and the opportunity to build something better.',
         },
@@ -2366,9 +2294,7 @@ const movieDict = {
             netflix: '81423622'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             seasons: 1,
             year: 2022,
@@ -2407,9 +2333,7 @@ const movieDict = {
             primeVideo: 'B09HSV9MHL'
         },
         info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
+            water: movieServices.prime,
             // date: 'Oct 29, 2021',
             seasons: 1,
             yearStart: 2021,
@@ -2495,9 +2419,7 @@ const movieDict = {
             netflix: '81435684'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             // weekday: 'Saturday',
             seasons: 1,
@@ -2569,9 +2491,7 @@ const movieDict = {
             netflix: '80177458'
         },
         info: {
-            service: 'netflix',
-            // studio: 'tnt',
-            location: 'Netflix',
+            water: movieServices.netflix,
             // date: 'Feb 1, 2022',
             seasons: 3,
             yearStart: 2020,
@@ -2609,9 +2529,7 @@ const movieDict = {
         id: 'hawkeye',
         link: 'https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l',
         info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Disney+',
+            water: movieServices.disney,
             weekday: 'Wednesday',
             seasons: 1,
             yearStart: 2021,
@@ -2697,9 +2615,7 @@ const movieDict = {
         id: 'archer',
         link: 'https://www.hulu.com/series/archer-22b4b3c8-0827-42d2-a841-50e8f3464dc2',
         info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '',
             seasons: 12,
             yearStart: 2009,
@@ -2764,9 +2680,7 @@ const movieDict = {
         id: 'loveIsland',
         link: 'https://www.hulu.com/series/love-island-uk-e3b93210-7e03-471f-8270-0e17161809a8',
         info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '',
             seasons: 7,
             yearStart: 2015,
@@ -2805,9 +2719,7 @@ const movieDict = {
             netflix: '80211991'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             seasons: 3,
             yearStart: 2018,
@@ -2859,9 +2771,7 @@ const movieDict = {
         id: 'solar',
         link: 'https://www.hulu.com/series/solar-opposites-f089664b-1a87-433b-86a5-24e7da5a246a',
         info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '',
             seasons: 2,
             yearStart: 2020,
@@ -2917,9 +2827,7 @@ const movieDict = {
         id: 'dopesick',
         link: 'https://www.hulu.com/series/dopesick-227de06a-d3d4-42e0-9df1-bb5495e1738d',
         info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '',
             weekday: 'Wednesday',
             seasons: 1,
@@ -2957,9 +2865,7 @@ const movieDict = {
         id: 'family',
         link: 'https://www.hulu.com/series/family-guy-3c3c0f8b-7366-4d15-88ab-18050285978e',
         info: {
-            service: 'hulu',
-            studio: 'fox',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '',
             seasons: 20,
             yearStart: 1999,
@@ -3018,9 +2924,7 @@ const movieDict = {
         id: 'foundation',
         link: 'https://tv.apple.com/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3',
         info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
+            water: movieServices.apple,
             weekday: 'Friday',
             seasons: 1,
             yearStart: 2021,
@@ -3058,9 +2962,7 @@ const movieDict = {
         id: 'simpsons',
         link: 'https://www.hulu.com/series/the-simpsons-47332072-d7fb-48b3-a5f7-ca8c6915ca27',
         info: {
-            service: 'hulu',
-            studio: 'fox',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '',
             seasons: 33,
             yearStart: 1989,
@@ -3096,9 +2998,7 @@ const movieDict = {
         id: "billions",
         link: null,
         info: {
-            // service: '',
-            studio: 'showtime',
-            location: 'Showtime',
+            water: null,
             // date: 'Jan 23, 2022',
             seasons: 5,
             yearStart: 2016,
@@ -3138,9 +3038,7 @@ const movieDict = {
             netflix: '81004280'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             seasons: 1,
             yearStart: 2018,
@@ -3180,9 +3078,7 @@ const movieDict = {
             netflix: '81083626'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             seasons: 1,
             yearStart: 2021,
@@ -3220,9 +3116,7 @@ const movieDict = {
         id: "whatif",
         link: "https://www.disneyplus.com/series/what-if/7672ZVj1ZxU9",
         info: {
-            service: 'disney',
-            studio: 'disney',
-            location: "Disney+",
+            water: movieServices.disney,
             description: "Action &#149 Adventure &#149 Animation &#149 1 Season &#149 2021 - Present",
             summary: "Taking inspiration from the comic books of the same name, each episode explores a pivotal moment from the Marvel Cinematic Universe and turns it on its head, leading the audience into uncharted territory.",
         },
@@ -3253,9 +3147,7 @@ const movieDict = {
             netflix: '80197526'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: "Netflix",
+            water: movieServices.netflix,
             description: "Comedy &#149 Teen &#149 3 Seasons &#149 2019 - Present",
             summary: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
         },
@@ -3286,9 +3178,7 @@ const movieDict = {
             netflix: '80179831'
         },
         info: {
-            service: 'netflix',
-            // studio: '',
-            location: "Netflix",
+            water: movieServices.netflix,
             description: "Animation &#149 Action &#149 Adventure &#149 4 Seasons &#149 2012 - Present",
             summary: "Jonathan Joestar, nicknamed JoJo, becomes involved in a battle against his stepbrother, Dio Brando, who is intent on taking control of the Joestar fortune. To do this, Dio uses the power of an ancient stone mask, which allows him to become a powerful vampire. The hybrid anime series takes pieces from such genres as paranormal, adventure, comedy, action and fantasy.",
         },
@@ -3319,9 +3209,7 @@ const movieDict = {
         id: "dave",
         link: "https://www.hulu.com/series/dave-ac3a96f0-9614-46af-b524-f59c7d281946",
         info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
+            water: movieServices.hulu,
             description: "Comedy &#149 Music &#149 2 Seasons &#149 2020 - Present",
             summary: "Dave centers on a neurotic man in his late 20s who has convinced himself that he is destined to be one of the best rappers of all time. Now he must convince his closest friends, because with their help, he actually might convince the world. Simultaneously exasperating and inspiring to his friends, he vows to leave no stone unturned on his quest to become the next superstar.",
         },
@@ -3349,9 +3237,7 @@ const movieDict = {
         id: "twinpeaks",
         // link: "https://watch.amazon.com/detail?asin=B08QM4K1K5",
         info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // description: "Cars &#149 Comedy &#149 Travel &#149 4 Seasons &#149 2016 - Present",
             // summary: "Confined to the United Kingdom by COVID-19, the hosts embark on a quest to find out why American cars from the 1970s never took off in Britain; they travel around Scotland in a Cadillac Coupe de Ville, a Lincoln Continental and a Buick Riviera.",
         },
@@ -3374,9 +3260,7 @@ const movieDict = {
         id: "legion",
         link: "https://www.hulu.com/series/legion-ae87e56c-5b3b-44f6-9154-b07c8e60fe6c",
         info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
+            water: movieServices.hulu,
             description: "Sci-Fi &#149 3 Seasons &#149 2017 - 2019",
             summary: "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he's confronted with the possibility that the voices he hears and the visions he sees might be real.",
         },
@@ -3406,9 +3290,7 @@ const movieDict = {
         id: "futurama",
         link: "https://www.hulu.com/series/futurama-85bf4cc1-cd8b-4469-ad87-7289217a0b74",
         info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
+            water: movieServices.hulu,
             description: "Animation &#149 Comedy &#149 Sci-Fi &#149 8 Seasons &#149 1999 - 2013",
             summary: "Accidentally frozen, pizza-deliverer Fry wakes up 1,000 years in the future. He is taken in by his sole descendant, an elderly and addled scientist who owns a small cargo delivery location. Among the other crew members are Capt. Leela, accountant Hermes, intern Amy, obnoxious robot Bender and lobsterlike moocher Dr. Zoidberg.",
         },
@@ -3436,9 +3318,7 @@ const movieDict = {
         id: 'atlanta',
         link: "https://www.hulu.com/series/atlanta-3529d0f1-acaf-476d-8be3-66cd6bf12530",
         info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
+            water: movieServices.hulu,
             date: '15 Apr, 2022 15:00:00',
             seasons: 3,
             yearStart: 2016,
@@ -3498,9 +3378,7 @@ const movieDict = {
             primeVideo: 'B09WV9C176'
         },
         info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
+            water: movieServices.prime,
             date: '1 Jul, 2022, 12:30:00',
             seasons: 3,
             yearStart: 2019,
@@ -3541,9 +3419,7 @@ const movieDict = {
             netflix: '80200575'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Coming Soon',
+            water: movieServices.netflix,
             // date: '',
             // desc: {
             //     seasons: 2,
@@ -3582,9 +3458,7 @@ const movieDict = {
         // link: 'https://www.disneyplus.com/series/its-always-sunny-in-philadelphia/67id28oN9H8P',
         link: 'https://www.hulu.com/series/its-always-sunny-in-philadelphia-2171423f-3326-4dfa-b193-b40494e60109',
         info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: 'Dec 23, 2021 03:00:00',
             // weekday: 'Thursday',
             seasons: 15,
@@ -3645,9 +3519,7 @@ const movieDict = {
         id: 'curb',
         link: 'https://www.hulu.com/series/curb-your-enthusiasm-7a307be7-978b-4d62-b47d-1cf3839f3c98',
         info: {
-            service: 'hbo',
-            // studio: '',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '26 Dec, 2021 22:30:00',
             // weekday: 'Sunday',
             seasons: 11,
@@ -3713,9 +3585,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Disney+',
+            water: movieServices.disney,
             // date: '',
             // desc: {
             // //    seasons: 1,
@@ -3753,9 +3623,7 @@ const movieDict = {
         id: 'hitMonkey',
         link: 'https://www.hulu.com/series/marvels-hit-monkey-22dc20c4-eaed-492d-887e-e087585c0532',
         info: {
-            service: 'hulu',
-            studio: 'marvel',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '',
             seasons: 1,
             yearStart: 2021,
@@ -3811,9 +3679,7 @@ const movieDict = {
         id: 'industry',
         link: 'https://www.hulu.com/series/industry-6ff820e0-f28e-405a-a771-9dc2b01d5e97',
         info: {
-            service: 'hulu',
-            studio: 'hbo',
-            location: 'Hulu',
+            water: movieServices.hulu,
             date: '8 Aug 2022',
             seasons: 1,
             yearStart: 2020,
@@ -3853,9 +3719,7 @@ const movieDict = {
             netflix: '80995819'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             date: '',
             seasons: 1,
             yearStart: 2021,
@@ -3893,9 +3757,7 @@ const movieDict = {
         id: 'invincible',
         // link: 'watchlink',
         info: {
-            // service: '',
-            // studio: '',
-            location: 'Coming Soon',
+            water: movieServices.prime,
             // description: 'Action &#149 Animation &#149 Superhero &#149 ___ Seasons &#149 Y000 - Present',
             // summary: "summary",
         },
@@ -3926,9 +3788,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Disney+',
+            water: movieServices.disney,
             // date: '',
             seasons: 1,
             yearStart: 2021,
@@ -3967,9 +3827,7 @@ const movieDict = {
             netflix: '80174608'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             seasons: 3,
             yearStart: 2019,
@@ -4012,9 +3870,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            service: 'disney',
-            studio: 'starwars',
-            location: 'Disney+',
+            water: movieServices.disney,
             // date: 'Dec 24, 2021',
             seasons: 1,
             yearStart: 2019,
@@ -4053,9 +3909,7 @@ const movieDict = {
         id: 'manifest',
         // link: 'watchlink',
         info: {
-            service: 'netflix',
-            // studio: '',
-            location: 'Coming Soon',
+            water: movieServices.netflix,
             description: 'Drama &#149 Mystery &#149 3 Seasons &#149 2018 - Present',
             summary: "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds.",
         },
@@ -4084,9 +3938,7 @@ const movieDict = {
         id: 'mythic',
         link: 'https://tv.apple.com/show/mythic-quest/umc.cmc.1nfdfd5zlk05fo1bwwetzldy3',
         info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
+            water: movieServices.apple,
             // date: '',
             seasons: 2,
             yearStart: 2020,
@@ -4150,9 +4002,7 @@ const movieDict = {
             netflix: '80997085'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             seasons: 3,
             yearStart: 2018,
             yearEnd: 2021,
@@ -4189,9 +4039,7 @@ const movieDict = {
         id: 'nine',
         link: 'https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a',
         info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
+            water: movieServices.hulu,
             seasons: 1,
             yearStart: 2021,
             yearEnd: null,
@@ -4226,9 +4074,7 @@ const movieDict = {
         id: 'murders',
         link: 'https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf',
         info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
+            water: movieServices.hulu,
             date: '28 Jun 2022',
             seasons: 2,
             yearStart: 2021,
@@ -4286,9 +4132,7 @@ const movieDict = {
             netflix: '80191522'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             // desc: {
             // //    seasons: 1,
@@ -4328,9 +4172,7 @@ const movieDict = {
             primeVideo: 'B09ML341D8'
         },
         info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
+            water: movieServices.prime,
             // date: '',
             seasons: 1,
             yearStart: 2022,
@@ -4377,9 +4219,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Adult Swim',
+            water: null,
             // date: '',
             seasons: 5,
             yearStart: 2013,
@@ -4434,9 +4274,7 @@ const movieDict = {
         id: 'succession',
         link: 'https://www.hulu.com/series/succession-7f3ad78e-0fdb-4b13-97c1-af4d06ed5601',
         info: {
-            service: 'hbo',
-            studio: 'hbo',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '12 Dec, 2021 21:00:00',
             // weekday: 'Sunday',
             seasons: 2,
@@ -4507,9 +4345,7 @@ const movieDict = {
             netflix: '81040344',
         },
         info: {
-            service: 'netflix',
-            // studio: '',
-            location: 'Netflix',
+            water: movieServices.netflix,
             description: 'Action &#149 Adventure &#149 Drama &#149 1 Season &#149 2021 - Present',
             summary: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
         },
@@ -4538,9 +4374,7 @@ const movieDict = {
         id: "ted",
         link: 'https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy',
         info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
+            water: movieServices.apple,
             weekday: 'Friday',
             seasons: 2,
             yearStart: 2020,
@@ -4613,9 +4447,7 @@ const movieDict = {
         id: 'shadows',
         link: 'https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac',
         info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Hulu',
+            water: movieServices.hulu,
             date: '12 Jul 2022',
             seasons: 4,
             yearStart: 2019,
@@ -4679,9 +4511,7 @@ const movieDict = {
         id: 'yellowjackets',
         link: '',
         info: {
-            service: 'showtime',
-            // studio: 'studio',
-            location: 'Downloaded',
+            water: null,
             // date: '',
             seasons: 1,
             yearStart: 2021,
@@ -4722,9 +4552,7 @@ const movieDict = {
             netflix: '80061132'
         },
         info: {
-            service: 'netflix',
-            // studio: '',
-            location: 'Netflix',
+            water: movieServices.netflix,
             seasons: 6,
             yearStart: 2015,
             yearEnd: 2021,
@@ -4792,9 +4620,7 @@ const movieDict = {
             primeVideo: 'B09LGJ5QNB',
         },
         info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
+            water: movieServices.prime,
             // date: 'Jan 13, 2022 19:00:00',
             // weekday: 'Thursday',
             seasons: 6,
@@ -4835,9 +4661,7 @@ const movieDict = {
             netflix: '80028732'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             // date: 'Nov 25, 2021',
             seasons: 5,
             yearStart: 2015,
@@ -4907,9 +4731,7 @@ const movieDict = {
             netflix: '70196145',
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             seasons: 1,
             yearStart: 2021,
             yearEnd: null,
@@ -4985,9 +4807,7 @@ const movieDict = {
         id: 'league',
         link: 'https://www.hulu.com/series/the-league-6723b153-45c2-43a4-947f-7cc64ef7f2a3',
         info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
+            water: movieServices.hulu,
             seasons: 7,
             yearStart: 2009,
             yearEnd: 2015,
@@ -5026,9 +4846,7 @@ const movieDict = {
             netflix: '70300800'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             seasons: 6,
             yearStart: 2014,
             yearEnd: 2020,
@@ -5065,9 +4883,7 @@ const movieDict = {
         id: 'gameofthrones',
         link: 'https://www.hulu.com/series/game-of-thrones-6a787bf6-cc23-47a2-a2f3-747e22c30d1c',
         info: {
-            service: 'hulu',
-            studio: 'hbo',
-            location: 'Hulu',
+            water: movieServices.hulu,
             seasons: 8,
             yearStart: 2011,
             yearEnd: 2019,
@@ -5106,9 +4922,7 @@ const movieDict = {
             netflix: '70136120'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             seasons: 9,
             yearStart: 2005,
             yearEnd: 2013,
@@ -5165,9 +4979,7 @@ const movieDict = {
             primeVideo: 'B08CG43CLR'
         },
         info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
+            water: movieServices.prime,
             seasons: 3,
             yearStart: 2010,
             yearEnd: 2011,
@@ -5276,9 +5088,7 @@ const movieDict = {
         id: "lost",
         link: "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
         info: {
-            service: 'hulu',
-            // studio: '',
-            location: 'Hulu',
+            water: movieServices.hulu,
             description: "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
             summary: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
         },
@@ -5308,9 +5118,7 @@ const movieDict = {
         id: "brooklyn",
         link: "https://www.hulu.com/series/brooklyn-nine-nine-daf48b7a-6cd7-4ef6-b639-a4811ec95232",
         info: {
-            service: 'hulu',
-            studio: 'nbc',
-            location: 'Hulu',
+            water: movieServices.hulu,
             seasons: 8,
             yearStart: 2013,
             yearEnd: 2021,
@@ -5347,9 +5155,7 @@ const movieDict = {
         id: 'whiteCollar',
         link: 'https://www.hulu.com/series/white-collar-58d3d0ce-8d86-4ccd-bd0c-104551448432',
         info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
+            water: movieServices.hulu,
             seasons: 6,
             yearStart: 2009,
             yearEnd: 2014,
@@ -5388,9 +5194,7 @@ const movieDict = {
         id: 'himym',
         link: 'https://www.hulu.com/series/how-i-met-your-mother-bc68ac79-3ace-4427-9ec0-5ee6f314d194',
         info: {
-            service: 'hulu',
-            // studio: 'studio',
-            location: 'Hulu',
+            water: movieServices.hulu,
             seasons: 9,
             yearStart: 2005,
             yearEnd: 2014,
@@ -5451,9 +5255,7 @@ const movieDict = {
         id: 'jurassic1',
         link: 'https://play.hbomax.com/page/urn:hbo:page:GYJlJDwG96Q_DwgEAAAA1:type:feature',
         info: {
-            service: 'hbo',
-            studio: 'universal',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             year: 1993,
             genre: [
                 'action & adventure',
@@ -5489,9 +5291,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
-            // studio: 'studio',
-            // location: 'location',
+            water: null,
             year: 1981,
             genre: [
                 'action',
@@ -5525,9 +5325,7 @@ const movieDict = {
         id: 'walle',
         link: 'https://www.disneyplus.com/movies/wall-e/5G1wpZC2Lb6I',
         info: {
-            service: 'disney',
-            studio: 'disney',
-            location: 'Disney+',
+            water: movieServices.disney,
             year: 2008,
             genre: [
                 'animation',
@@ -5565,9 +5363,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
-            // studio: 'studio',
-            // location: 'location',
+            water: null,
             year: 1998,
             genre: [
                 'drama',
@@ -5601,9 +5397,7 @@ const movieDict = {
         id: 'backToTheFuture1',
         // link: 'https://www.disneyplus.com/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ',
         info: {
-            // service: 'disney',
-            // studio: 'starwars',
-            // location: 'Disney+',
+            water: null,
             year: 1985,
             genre: [
                 'adventure',
@@ -5638,9 +5432,7 @@ const movieDict = {
         id: 'starwars4',
         link: 'https://www.disneyplus.com/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ',
         info: {
-            service: 'disney',
-            studio: 'starwars',
-            location: 'Disney+',
+            water: movieServices.disney,
             year: 1977,
             genre: [
                 'adventure',
@@ -5677,9 +5469,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
-            // studio: 'studio',
-            // location: 'location',
+            water: null,
             year: 2014,
             genre: [
                 'drama',
@@ -5715,9 +5505,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            service: 'disney',
-            // studio: 'studio',
-            location: 'Disney+',
+            water: movieServices.disney,
             // date: '',
             year: 2009,
             genre: [
@@ -5752,9 +5540,7 @@ const movieDict = {
         id: 'cars2',
         // link: 'https://www.disneyplus.com/movies/cars-2',
         info: {
-            service: 'disney',
-            studio: 'disney',
-            location: 'Disney+',
+            water: movieServices.disney,
             year: 2011,
             genre: [
                 'adventure',
@@ -5790,9 +5576,7 @@ const movieDict = {
         id: 'cars1',
         // link: 'https://www.disneyplus.com/movies/cars',
         info: {
-            service: 'disney',
-            studio: 'disney',
-            location: 'Disney+',
+            water: movieServices.disney,
             year: 2006,
             genre: [
                 'adventure',
@@ -5828,9 +5612,7 @@ const movieDict = {
         id: 'spiderMan3',
         // link: '',
         info: {
-            service: 'disney',
-            studio: 'marvel',
-            location: 'Coming Soon',
+            water: movieServices.disney,
             // date: '15 Dec, 2021',
             year: 2021,
             genre: [
@@ -5867,9 +5649,7 @@ const movieDict = {
             netflix: '70047101'
         },
         info: {
-            service: 'netflix',
-            studio: 'marvel',
-            location: 'Netflix',
+            water: movieServices.netflix,
             year: 2007,
             genre: [
                 'action',
@@ -5905,9 +5685,7 @@ const movieDict = {
             netflix: '81464765'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             year: 2021,
             genre: [
                 'documentary',
@@ -5942,9 +5720,7 @@ const movieDict = {
             netflix: '70178622'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             year: 2011,
             genre: [
                 'comedy',
@@ -5981,9 +5757,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Coming Soon',
+            water: null,
             // date: 'Dec 22, 2021',
             year: 2021,
             genre: [
@@ -6019,9 +5793,7 @@ const movieDict = {
             netflix: '60004481'
         },
         info: {
-            service: 'netflix',
-            studio: 'marvel',
-            location: 'Netflix',
+            water: movieServices.netflix,
             year: 2002,
             genre: [
                 'action',
@@ -6090,9 +5862,7 @@ const movieDict = {
         id: 'soul',
         link: 'https://www.disneyplus.com/en-gb/movies/soul/77zlWrb9vRYp',
         info: {
-            service: 'disney',
-            // studio: 'pixar',
-            location: 'Disney+',
+            water: movieServices.disney,
             // date: '',
             year: 2020,
             genre: [
@@ -6166,9 +5936,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Philo',
+            water: null,
             year: 2000,
             genre: [
                 'comedy',
@@ -6265,9 +6033,7 @@ const movieDict = {
             netflix: '81228510'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             year: 2021,
             genre: [
@@ -6305,9 +6071,7 @@ const movieDict = {
             netflix: '70202336'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             description: 'Drama &#149 Romance &#149 2011',
             summary: "Three friends on an adventurous road trip/bachelor party in Spain learn some lessons about themselves and each other that will change them forever.",
             tags: ['romcom']
@@ -6340,9 +6104,7 @@ const movieDict = {
         //     netflix: '80197526'
         // },
         info: {
-            // service: 'service',
-            // studio: 'studio',
-            location: 'Coming Soon',
+            water: null,
             // date: '',
             description: 'Action &#149 Spy &#149 2021',
             summary: 'James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.',
@@ -6375,9 +6137,7 @@ const movieDict = {
         id: "free",
         link: null,
         info: {
-            // service: '',
-            // studio: '',
-            location: "Coming Soon",
+            water: null,
             description: "Adventure &#149 Comedy &#149 Sci-Fi &#149 2021",
             summary: "When a bank teller discovers he is actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there are no limits, he is determined to save the day his way before it is too late, and maybe find a little romance with the coder who conceived him.",
         },
@@ -6407,9 +6167,7 @@ const movieDict = {
         id: 'theend',
         // link: 'watchlink',
         info: {
-            // service: '',
-            // studio: '',
-            location: 'Starz',
+            water: null,
             description: 'Comedy &#149 2013',
             summary: "Six Los Angeles celebrities are stuck in James Franco's house after a series of devastating events just destroyed the city. Inside, the group not only have to face the apocalypse, but themselves.",
         },
@@ -6440,9 +6198,7 @@ const movieDict = {
         id: 'shang',
         link: null,
         info: {
-            service: 'disney',
-            studio: 'disney',
-            location: 'Disney+',
+            water: movieServices.disney,
             year: 2021,
             genre: [
                 'action & adventure',
@@ -6477,9 +6233,7 @@ const movieDict = {
         id: 'roadToPerdition',
         // link: 'https://www.disneyplus.com/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ',
         info: {
-            // service: 'disney',
-            // studio: 'starwars',
-            // location: 'Disney+',
+            water: null,
             year: 2002,
             genre: [
                 'adventure',
@@ -6551,9 +6305,7 @@ const movieDict = {
             netflix: '81254224'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             year: 2020,
             genre: [
                 'documentary',
@@ -6587,9 +6339,7 @@ const movieDict = {
         id: 'problem',
         link: 'https://tv.apple.com/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob',
         info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
+            water: movieServices.apple,
             // date: '',
             weekday: 'Thursday',
             seasons: 1,
@@ -6626,9 +6376,7 @@ const movieDict = {
         id: "yourname",
         link: null,
         info: {
-            // service: '',
-            // studio: '',
-            location: "Download",
+            water: null,
             description: "Animation &#149 Drama &#149 Fantasy &#149 2016",
             summary: "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
         },
@@ -6657,9 +6405,7 @@ const movieDict = {
         // link: 'https://www.hulu.com/series/fargo-203cda1b-7919-40fb-ab36-1e45b3ed2a50',
         link: 'https://app.primevideo.com/detail?gti=amzn1.dv.gti.14ba6109-ae62-0f50-8497-6d5173593c6f',
         info: {
-            service: 'hulu',
-            studio: 'fx',
-            location: 'Prime Video',
+            water: movieServices.prime,
             seasons: 4,
             yearStart: 2014,
             yearEnd: null,
@@ -6699,9 +6445,7 @@ const movieDict = {
             netflix: '80995996'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             year: 2020,
             genre: [
                 'comedy special',
@@ -6734,9 +6478,7 @@ const movieDict = {
         id: 'killingEve',
         link: 'https://www.hulu.com/series/killing-eve-c9d3b601-54db-42d1-a1ed-8950cea491b1',
         info: {
-            service: 'hbo',
-            // studio: 'bbc',
-            location: 'HBO Max',
+            water: movieServices.hulu,
             // date: '',
             seasons: 4,
             yearStart: 2018,
@@ -6827,9 +6569,7 @@ const movieDict = {
             netflix: '60036735'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             // date: '',
             year: 2003,
             genre: [
@@ -6870,9 +6610,7 @@ const movieDict = {
             netflix: '81060252'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             year: 2020,
             genre: [
                 'comedy special',
@@ -6912,9 +6650,7 @@ const movieDict = {
             netflix: '80133552'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             year: 2017,
             genre: [
                 'comedy special',
@@ -6952,9 +6688,7 @@ const movieDict = {
             cnn: '2367872'
         },
         info: {
-            service: 'cnn',
-            studio: 'cnn',
-            location: 'CNN+',
+            water: movieServices.cnn,
             // date: '5 Apr 2022',
             seasons: 1,
             yearStart: 2022,
@@ -7002,9 +6736,7 @@ const movieDict = {
             cnn: '2244411'
         },
         info: {
-            service: 'cnn',
-            studio: 'cnn',
-            location: 'CNN+',
+            water: movieServices.cnn,
             // date: '31 Mar 2022',
             seasons: 1,
             yearStart: 2022,
@@ -7047,9 +6779,7 @@ const movieDict = {
             cnn: '2238296'
         },
         info: {
-            service: 'cnn',
-            studio: 'cnn',
-            location: 'CNN+',
+            water: movieServices.cnn,
             // date: '',
             seasons: 1,
             yearStart: 2022,
@@ -7092,9 +6822,7 @@ const movieDict = {
             cnn: '2014011'
         },
         info: {
-            service: 'cnn',
-            studio: 'cnn',
-            location: 'CNN+',
+            water: movieServices.cnn,
             // date: '',
             seasons: 1,
             yearStart: 2022,
@@ -7137,9 +6865,7 @@ const movieDict = {
             netflix: '81070659'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             year: 2019,
             genre: [
                 'comedy special',
@@ -7180,9 +6906,7 @@ const movieDict = {
         id: '112263',
         link: 'https://www.hulu.com/series/112263-8924769b-be48-49c9-a969-984a30a3a33e',
         info: {
-            service: 'hulu',
-            studio: 'hulu',
-            location: 'Hulu',
+            water: movieServices.hulu,
             // date: '',
             seasons: 1,
             year: 2016,
@@ -7243,9 +6967,7 @@ const movieDict = {
             primeVideo: 'B08BYYHS61'
         },
         info: {
-            service: 'prime',
-            studio: 'prime',
-            location: 'Prime Video',
+            water: movieServices.prime,
             year: 2020,
             genre: [
                 'comedy special',
@@ -7290,9 +7012,7 @@ const movieDict = {
             netflix: '70087541'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             // date: '',
             year: 2008,
             genre: [
@@ -7341,9 +7061,7 @@ const movieDict = {
             netflix: '80244088'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             year: 2020,
             genre: [
                 'comedy',
@@ -7407,9 +7125,7 @@ const movieDict = {
             netflix: '81039144'
         },
         info: {
-            service: 'netflix',
-            // studio: 'studio',
-            location: 'Netflix',
+            water: movieServices.netflix,
             seasons: 2,
             yearStart: 2021,
             yearEnd: null,
@@ -7450,9 +7166,7 @@ const movieDict = {
             netflix: '80225917'
         },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             year: 2022,
             genre: [
                 'comedy special',
@@ -7494,9 +7208,7 @@ const movieDict = {
         id: 'phineas',
         link: 'https://www.disneyplus.com/series/phineas-and-ferb/1Vl0AKTYhC6U',
         info: {
-            service: 'disney',
-            studio: 'disney',
-            location: 'Disney+',
+            water: movieServices.disney,
             seasons: 4,
             yearStart: 2007,
             yearEnd: 2015,
@@ -7538,9 +7250,7 @@ const movieDict = {
         id: 'prehistoric',
         link: 'https://tv.apple.com/show/prehistoric-planet/umc.cmc.4lh4bmztauvkooqz400akxav',
         info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
+            water: movieServices.apple,
             seasons: 1,
             year: 2022,
             genre: [
@@ -7586,9 +7296,7 @@ const movieDict = {
         id: 'friends',
         link: 'https://play.hbomax.com/series/urn:hbo:series:GXdbR_gOXWJuAuwEAACVH',
         info: {
-            service: 'hbo',
-            studio: 'nbc',
-            location: 'HBO Max',
+            water: movieServices.hbo,
             seasons: 10,
             yearStart: 1994,
             yearEnd: 2004,
@@ -7631,9 +7339,7 @@ const movieDict = {
         // link: 'https://www.disneyplus.com/series/obi-wan-kenobi/2JYKcHv9fRJb',
         link: 'https://www.hotstar.com/1260098452',
         info: {
-            service: 'disney',
-            studio: 'starwars',
-            location: 'Hotstar',
+            water: movieServices.hotstar,
             date: '22 Jun 2022 12:30:00',
             seasons: 1,
             yearStart: 2022,
@@ -7681,9 +7387,7 @@ const movieDict = {
         id: 'slow',
         link: 'https://tv.apple.com/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o',
         info: {
-            service: 'appleTV',
-            studio: 'appleTV',
-            location: ' TV+',
+            water: movieServices.apple,
             // date: '',
             seasons: 1,
             yearStart: 2022,
@@ -7738,9 +7442,7 @@ const movieDict = {
         id: 'yellowstone',
         link: 'https://app.primevideo.com/detail?gti=amzn1.dv.gti.74ba3c05-eadd-3c73-0504-14135721c8e9',
         info: {
-            service: 'prime',
-            // studio: 'studio',
-            location: 'Prime Video',
+            water: movieServices.prime,
             // date: '',
             seasons: 4,
             yearStart: 2018,
@@ -7781,9 +7483,7 @@ const movieDict = {
         id: 'saul',
         link: { netflix: '80021955' },
         info: {
-            service: 'netflix',
-            studio: 'netflix',
-            location: 'Netflix',
+            water: movieServices.hulu,
             // date: '',
             seasons: 6,
             yearStart: 2015,
@@ -7826,6 +7526,54 @@ const movieDict = {
         //     },
         // ],
     },
+    // 'bear': {
+    //     name: 'The Bear',
+    //     id: 'bear',
+    //     link: 'https://www.hulu.com/series/the-bear-05eb6a8e-90ed-4947-8c0b-e6536cbddd5f',
+    //     info: {
+    //         service: 'hulu',
+    //         studio: 'fx',
+    //         location: 'Hulu',
+    //         // date: '',
+    //         seasons: 1,
+    //         yearStart: 2022,
+    //         yearEnd: null,
+    //         genre: [
+    //             'comedy',
+    //         ],
+    //         summary: "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+    //     },
+    //     style: {
+    //         hex: colorData.fluent.cyanBlue20,
+    //         poster: {
+    //             wide: {
+    //                 type: 'webp',
+    //                 title: true,
+    //             },
+    //             mobile: {
+    //                 type: 'webp',
+    //                 size: '7 / 10',
+    //                 title: true,
+    //             },
+    //         },
+    //         title: {
+    //             type: 'png',
+    //             size: 'widest',
+    //         },
+    //     },
+    //     apps: {
+    //         // tvTimeID: 'identifier',
+    //         reelgoodLink: 'https://reelgood.com/show/the-bear-2022',
+    //         // imdbID: 'identifier',
+    //         // subReddit: 'subreddit',
+    //     },
+    //     // cast: [
+    //     //     {
+    //     //         actor: 'name',
+    //     //         char: 'name',
+    //     //     },
+    //     // ],
+    // },
 }
 // @new
 // 'identifier': {
@@ -7943,12 +7691,13 @@ for (const key in movieDict) {
         console.log(getCookie('recent-movie'))
     }
 
-    // process info
-    if (movie.info.water) {
-        movie.info.location = movie.info.water.name
-    }
-
     // process location
+    if (movie.info.water) {
+        if (movie.info.water.name) movie.info.location = `Watch on ${movie.info.water.name}`
+        else if (movie.info.water.message) movie.info.location = movie.info.water.message
+    }
+    else if (movie.info.water === null) movie.info.location = 'Unavailable'
+    else alert(`Missing location for movie '${movie.name}'`)
 
     // process date
     if (movie.info.date) movie.info.date = new Date(movie.info.date)
