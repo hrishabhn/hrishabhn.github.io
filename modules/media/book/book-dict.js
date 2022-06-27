@@ -163,7 +163,25 @@ const bookDict = {
         progress: '10%',
         summary: 'If there is one belief that has united the left and the right, psychologists and philosophers, ancient thinkers and modern ones, it is the tacit assumption that humans are bad. It\'s a notion that drives newspaper headlines and guides the laws that shape our lives. From Machiavelli to Hobbes, Freud to Pinker, the roots of this belief have sunk deep into Western thought. Human beings, we\'re taught, are by nature selfish and governed primarily by self-interest.\n\nBut what if it isn\'t true? International bestseller Rutger Bregman provides new perspective on the past 200,000 years of human history, setting out to prove that we are hardwired for kindness, geared toward cooperation rather than competition, and more inclined to trust rather than distrust one another. In fact this instinct has a firm evolutionary basis going back to the beginning of Homo sapiens. \n\nFrom the real-life Lord of the Flies to the solidarity in the aftermath of the Blitz, the hidden flaws in the Stanford prison experiment to the true story of twin brothers on opposite sides who helped Mandela end apartheid, Bregman shows us that believing in human generosity and collaboration isn\'t merely optimistic—it\'s realistic. Moreover, it has huge implications for how society functions. When we think the worst of people, it brings out the worst in our politics and economics. But if we believe in the reality of humanity\'s kindness and altruism, it will form the foundation for achieving true change in society, a case that Bregman makes convincingly with his signature wit, refreshing frankness, and memorable storytelling.',
     },
+    city: {
+        name: 'Who\'s Your City?',
+        author: 'Author',
+        progress: '23%',
+    },
+    asian: {
+        name: 'The Asian 21st Century',
+        author: 'Kishore Mahbubani',
+        progress: '35%',
+    },
 }
+
+
+// key: {
+//     name: 'Title',
+//     author: 'Author',
+//     progress: 'New',
+// },
+
 
 for (const key in bookDict) {
     const book = bookDict[key]
