@@ -6,7 +6,6 @@ function loadApp() {
     loadAccent()
 
     leftbar.load()
-    dock.load()
     spotlight.elem().focus()
     topbar.load()
 
