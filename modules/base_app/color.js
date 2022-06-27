@@ -1,7 +1,4 @@
 const Colors = {
-    modal: function() {
-
-    },
     blue: {
         dark: '0a84ff',
         light: '007aff',
@@ -51,6 +48,40 @@ const Colors = {
         light: 'ffcc00',
     },
 
+}
+
+const colorModal = function () {
+    let card = document.createElement('div')
+    card.classList = 'color-modal layer-1'
+    // header
+    card.append(elems.textbox('iOS System Colors', 'All available colors in iOS'))
+
+    // sides
+    let left = document.createElement('div')
+    left.classList = 'side'
+    left.style.setProperty('background-color', '#1c1c1e')
+
+    let right = document.createElement('div')
+    right.classList = 'side'
+    right.style.setProperty('background-color', '#fff')
+
+    // colors
+    for (const key in Colors) {
+        let itemLeft = elems.item()
+        itemLeft.style.setProperty('background-color', `#${Colors[key].dark}`)
+        itemLeft.textContent = key
+        left.append(itemLeft)
+
+        let itemRight = elems.item()
+        itemRight.style.setProperty('background-color', `#${Colors[key].light}`)
+        itemRight.textContent = key
+        right.append(itemRight)
+    }
+
+    card.append(left)
+    card.append(right)
+
+    modal.add(card)
 }
 
 const BrandColor = {

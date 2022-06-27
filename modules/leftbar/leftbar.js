@@ -58,7 +58,7 @@ const leftbar = {
             let card = document.createElement('a')
             card.classList = 'app-card-pinned clickable-o'
             card.onclick = function (e) { openApp(app, e) }
-            card = cardCol(card, { accent: app.accent, style: app.style })
+            card = cardCol(card, { accent: app.accent, style: app.style, color: app.color })
 
             if (app.link) card.style.setProperty('cursor', 'pointer')
 

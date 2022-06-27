@@ -48,7 +48,7 @@ const commonApps = {
             link: `./course/${id}_syllabus.pdf`,
             desc: 'Course Rules',
             thumb: thumbData['book'],
-            style: 'red',
+            color: Colors.red,
             distract: false,
             dockIcon: SFSymbols.book.fill,
         }

@@ -1,0 +1,51 @@
+.color-modal {
+    width: 400px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.color-modal .side {
+    width: 100%;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+
+.color-modal .side .item {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: capitalize;
+
+    justify-content: flex-start;
+
+
+    min-height: 20px;
+}
+
+.color-modal .textbox {
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+    grid-column: 1 / -1;
+}
+
+.color-modal .textbox .name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.color-modal .textbox .desc {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-top: 2px;
+}

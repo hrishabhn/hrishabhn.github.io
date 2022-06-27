@@ -4,8 +4,17 @@ function cardHover(card, accent, style) {
 }
 
 function cardCol(card, { accent, style, color }) {
-    if (accent) {
+    if (color) {
+        if (color.dark && color.light) {
+            card.style.setProperty('--brand-col-dark', `#${color.dark}`)
+            card.style.setProperty('--brand-col-light', `#${color.light}`)
+        } else {
+            card.style.setProperty('--brand-col-dark', `#${color}`)
+            card.style.setProperty('--brand-col-light', `#${color}`)
+        }
+    } else if (accent) {
         if (accent.dark && accent.light) {
+            alert('need to update smth', accent)
             card.style.setProperty('--brand-col-dark', `#${accent.dark}`)
             card.style.setProperty('--brand-col-light', `#${accent.light}`)
         } else {
