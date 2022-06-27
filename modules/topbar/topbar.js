@@ -59,14 +59,6 @@ const topbar = {
     },
     middle: function () {
         const apps = [
-            // {
-            //     name: 'Spark',
-            //     link: 'readdle-spark://',
-            //     desc: 'Email',
-            //     icon: SFSymbols.envelope.fill,
-            //     style: 'blue',
-            //     distract: false,
-            // },
             {
                 name: 'OneDrive',
                 link: 'https://purdue0-my.sharepoint.com',
@@ -88,14 +80,6 @@ const topbar = {
                 icon: SFSymbols.checklist,
                 distract: false,
             },
-            // {
-            //     name: 'TickTick',
-            //     link: 'ticktick://',
-            //     desc: 'To do list',
-            //     icon: SFSymbols.checklist,
-            //     style: 'blue',
-            //     distract: false,
-            // },
         ]
 
         return topbar.app.tray(apps)
@@ -123,7 +107,7 @@ const topbar = {
             name: 'Not Connected',
             icon: SFSymbols.wifi,
             big: true,
-            style: 'red',
+            color: Colors.red,
         })
 
         // current task
@@ -135,7 +119,7 @@ const topbar = {
             },
             icon: SFSymbols.checklist,
             big: true,
-            style: 'blue',
+            color: Colors.blue,
         })
 
 
@@ -174,9 +158,9 @@ const topbar = {
             }
 
             // color or basic
-            if (app.style || app.accent) {
+            if (app.color) {
                 let bg = elems.bg()
-                bg = cardCol(bg, { accent: app.accent, style: app.style })
+                bg = cardCol(bg, { color: app.color })
                 card.classList.add('clickable-o')
                 card.prepend(bg)
             } else card.classList.add('layer-hover')
