@@ -80,7 +80,6 @@ function widgetTray() {
     for (const item of nodes) card.append(item)
     if (focus.get().widgets) for (const widget of focus.get().widgets()) card.append(widget)
 
-    // if (focus.get().apps) for (const app of focus.get().apps) card.append(appObject.widget.card(app))
 
 
     // card.append(widgets.tracking.card())

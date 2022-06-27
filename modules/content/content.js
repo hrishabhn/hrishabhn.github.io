@@ -20,16 +20,6 @@ const content = {
     },
     load: function () {
         const elem = document.getElementById('content-elem')
-        // title and apps
-        // elem.append(widgetTray())
-        
-        // if (focus.get().apps) {
-        //     let nodes = []
-        //     for (const app of focus.get().apps) nodes.push(appObject.small.card(app))
-        //     elem.append(content.tray(null, nodes, 40, 5))
-        // }
-
-        // content
         if (focus.get().trays) for (const tray of focus.get().trays()) elem.append(tray)
     },
 }

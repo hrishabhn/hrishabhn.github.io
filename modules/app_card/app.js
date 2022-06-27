@@ -52,43 +52,12 @@ const appObject = {
             return content.tray(title, nodes, 40, 8)
         },
     },
-    small: {
-        card: function (app) {
-            let card = appObject.main.card(app)
-            card.classList.add('small')
-            return card
-        },
-    },
-    widget: {
-        card: function (app) {
-            let card = appObject.main.card(app)
-            // card.childNodes[2].remove()
-            card.classList.add('widget-card')
-            // card.append(elems.grow())
-            return card
-        },
-    },
     hover: function (app) {
         let hoverDetailElem = document.createElement('div')
         hoverDetailElem.classList = 'hover-detail secondary-bg secondary-fg'
         hoverDetailElem.textContent = app.name
 
         return hoverDetailElem
-    },
-    mini: function (app) {
-        let card = document.createElement('a')
-        card.classList = 'app-card-mini clickable-o'
-        card.target = '_blank'
-        card.onclick = function (e) { openApp(app, e) }
-        card = cardCol(card, { accent: app.accent, style: app.style, color: app.color })
-
-
-        if (app.thumb) card.append(elems.appThumb(app.thumb))
-        else if (app.icon) card.append(elems.icon(app.icon))
-
-        card.append(appObject.hover(app))
-
-        return card
     },
     bw: function (app) {
         let card = document.createElement('a')
