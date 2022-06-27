@@ -1,6 +1,6 @@
 function cardHover(card, accent, style) {
     card.classList.add('card-hover')
-    return cardCol(card, accent, style)
+    return cardCol(card, { accent: accent, style: style })
 }
 
 function cardCol(card, { accent, style, color }) {
