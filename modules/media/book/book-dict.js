@@ -165,7 +165,7 @@ const bookDict = {
     },
     city: {
         name: 'Who\'s Your City?',
-        author: 'Author',
+        author: 'Richard Florida',
         progress: '23%',
     },
     asian: {

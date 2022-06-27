@@ -2,6 +2,8 @@ const bookShelves = [
     {
         name: 'Currently Reading',
         data: [
+            bookDict.asian,
+            bookDict.city,
             bookDict.humankind,
             bookDict.gweilo,
         ],

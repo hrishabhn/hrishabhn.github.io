@@ -13,12 +13,15 @@ const bookElem = {
 
         return cont
     },
-    card: function(data) {
+    card: function (data) {
         let card = document.createElement('a')
         card.classList = 'book-card clickable-o'
+        card.append(elems.thumb(`./media-image/books/${data.id}.jpg`))
 
-        let thumb = elems.thumb(`./media-image/books/${data.id}.jpg`)
-card.append(thumb)
+        let info = document.createElement('info')
+        info.classList = 'info'
+        info.append(elems.textbox(data.author, data.name))
+        card.append(info)
 
         return card
     }
