@@ -30,3 +30,39 @@
     opacity: 0.8;
     margin-top: 2px;
 }
+
+.icon-modal .cont {
+    width: 100%;
+    grid-column: 1 / -1;
+    padding: 2px 20px;
+
+    /* background-color: red; */
+}
+
+.icon-modal .cont input {
+    height: 100%;
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.icon-modal .cont a {
+    cursor: pointer;
+    background-color: var(--white-10);
+    padding: 5px;
+    margin-left: 5px;
+
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.icon-modal .cont a.copied {
+    background-color: var(--brand-col-dark);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .icon-modal .cont a.copied {
+        background-color: var(--brand-col-light);
+    }
+}

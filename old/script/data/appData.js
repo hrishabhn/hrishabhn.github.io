@@ -564,7 +564,7 @@ const appData = {
         //     trigger: function () { modal.add(trip.card('tenerife')) },
         //     desc: 'Easter Break Trip',
         //     thumb: 'flighty.jpeg',
-            // color: Colors.secondary,
+        // color: Colors.secondary,
         //     distract: false,
         // },
         // commonApps.flight('mad-tfs'),
@@ -637,6 +637,14 @@ const appData = {
             desc: 'Free Icons',
             thumb: 'icons8.png',
             accent: '1fb141',
+            distract: false,
+        },
+        {
+            name: 'SF Symbol Modal',
+            trigger: function () { SF.test.modal() },
+            desc: 'Process Icons',
+            thumb: 'icons8.png',
+            color: Colors.blue,
             distract: false,
         },
         {

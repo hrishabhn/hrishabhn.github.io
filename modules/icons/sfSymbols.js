@@ -16,6 +16,28 @@ const SF = {
                 }
             }))
 
+            // process input
+            let cont = document.createElement('div')
+            cont.classList = 'cont'
+
+            let i = document.createElement('input')
+            i.placeholder = 'Paste SVG'
+
+            let a = elems.a(null, 'Copy')
+            a.classList = 'clickable'
+            a = cardCol(a, { color: Colors.green })
+            a.onclick = function () {
+                navigator.clipboard.writeText(SF.process(i.value))
+                a.classList.add('copied')
+                a.textContent = 'Copied!'
+            }
+
+            cont.append(i)
+            cont.append(a)
+
+            card.append(cont)
+
+
             // url to add more
 
             modal.add(card)
@@ -65,5 +87,17 @@ const SF = {
             return result
 
         }
-    }
+    },
+    process: function (str) {
+        let x = document.createElement('div')
+        x.innerHTML = str
+
+        let svgElem = x.firstChild
+        svgElem.removeAttribute('height')
+        svgElem.removeAttribute('width')
+        svgElem.removeAttribute('fill')
+        svgElem.firstChild.removeAttribute('fill')
+
+        return svgElem.outerHTML
+    },
 }
