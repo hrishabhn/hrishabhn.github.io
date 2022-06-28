@@ -30,7 +30,7 @@ const appObject = {
 
             if (app.searchBase) {
                 card.setAttribute('engineData', JSON.stringify(app))
-                let icon = elems.icon(iconData['search'])
+                let icon = elems.icon(SFSymbols.magnifyingglass)
                 icon.classList = 'search'
                 card.append(icon)
             }

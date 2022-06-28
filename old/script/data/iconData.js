@@ -115,34 +115,6 @@ const SFSymbols = {
     align: { horizontal: { left: { fill: '<svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg"><path d="M4.49902 24.1133C4.9209 24.1133 5.29004 23.7793 5.29004 23.3486V3.95117C5.29004 3.5293 4.9209 3.18652 4.49902 3.18652C4.06836 3.18652 3.69922 3.5293 3.69922 3.95117V23.3486C3.69922 23.7793 4.06836 24.1133 4.49902 24.1133ZM8.99902 12.8721H16.0479C17.4102 12.8721 18.1748 12.1074 18.1748 10.7715V7.56348C18.1748 6.21875 17.4102 5.46289 16.0479 5.46289H8.99902C7.63672 5.46289 6.86328 6.21875 6.86328 7.56348V10.7715C6.86328 12.1074 7.63672 12.8721 8.99902 12.8721ZM8.99902 21.8369H22.165C23.5273 21.8369 24.3008 21.0811 24.3008 19.7451V16.5283C24.3008 15.1924 23.5273 14.4277 22.165 14.4277H8.99902C7.63672 14.4277 6.86328 15.1924 6.86328 16.5283V19.7451C6.86328 21.0811 7.63672 21.8369 8.99902 21.8369Z"></path></svg>' } } },
 }
 
-function processSF() {
-    var rawSVG = ``
-
-    let elem = document.createElement('div')
-    elem.innerHTML = rawSVG
-
-    let svgElem = elem.firstChild
-    svgElem.removeAttribute('height')
-    svgElem.removeAttribute('width')
-    svgElem.removeAttribute('fill')
-    svgElem.firstChild.removeAttribute('fill')
-
-    alert(svgElem.outerHTML)
-}
-// processSF()
-
-
-
-
-
-// function iconLoad() {
-//     for (const icon in iconData) {
-//         for (const elem of document.getElementsByName(icon)) {
-//             elem.innerHTML = iconData[icon]
-//         }
-//     }
-// }
-
 const thumbData = {
     'tv': 'tv.png',
     'user': 'account.png',
