@@ -5188,6 +5188,32 @@ const movieDict = {
             imdbID: 'tt1358522',
             // subReddit: 'subreddit',
         },
+        cast: [
+            {
+                actor: 'Matt Bomer',
+                char: 'Neal Caffery',
+            },
+            {
+                actor: 'Tim DeKay',
+                char: 'Peter Burke',
+            },
+            {
+                actor: 'Willie Garson',
+                char: 'Mozzie',
+            },
+            {
+                actor: 'Marsha Thomason',
+                char: 'Diana Berrigan',
+            },
+            {
+                actor: 'Sharif Atkins',
+                char: 'Clinton Jones',
+            },
+            {
+                actor: 'Tiffani Thiessen',
+                char: 'Elizabeth Burke',
+            },
+        ],
     },
     'himym': {
         name: 'How I Met Your Mother',
