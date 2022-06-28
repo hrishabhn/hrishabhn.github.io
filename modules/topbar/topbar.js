@@ -74,12 +74,26 @@ const topbar = {
                 distract: false,
             },
             {
-                name: 'ClickUp',
-                link: 'https://app.clickup.com/8450846/v/l/6-182481617-1',
+                name: 'Projects',
+                link: 'https://www.notion.so/hrishabhn/8c39216b144643269dcab62c039973e4?v=53657cae781b48d0b1f972f7d3a69f54',
+                // desc: 'To do list',
+                icon: SFSymbols.align.horizontal.left.fill,
+                distract: false,
+            },
+            {
+                name: 'Tasks',
+                link: 'https://www.notion.so/hrishabhn/8c39216b144643269dcab62c039973e4?v=eab066a285a0429da7abffc1a64dacd2',
                 desc: 'To do list',
                 icon: SFSymbols.checklist,
                 distract: false,
             },
+            // {
+            //     name: 'ClickUp',
+            //     link: 'https://app.clickup.com/8450846/v/l/6-182481617-1',
+            //     desc: 'To do list',
+            //     icon: SFSymbols.checklist,
+            //     distract: false,
+            // },
         ]
 
         return topbar.app.tray(apps)
