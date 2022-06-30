@@ -391,8 +391,8 @@ const appData = {
         },
         {
             name: 'JustWatch',
-            link: 'https://www.justwatch.com/in',
-            searchBase: 'https://www.justwatch.com/in/search?q=',
+            link: 'https://www.justwatch.com/es',
+            searchBase: 'https://www.justwatch.com/es/buscar?q=',
             desc: 'Find Streaming Service',
             thumb: 'justWatch.jpeg',
             accent: 'fbc500',

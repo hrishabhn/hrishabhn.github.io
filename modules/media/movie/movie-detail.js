@@ -191,7 +191,7 @@ function movieApps(movie) {
         icon: iconData.movie.justwatch,
         pad: 4,
         name: 'JustWatch',
-        link: `https://www.justwatch.com/in/search?q=${movie.name}`
+        link: `https://www.justwatch.com/es/buscar?q==${movie.name}`
     })
 
     return data
