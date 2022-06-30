@@ -100,4 +100,38 @@ const SF = {
 
         return svgElem.outerHTML
     },
+    render: {
+        notion: function (str, name) {
+            let x = document.createElement('div')
+            x.innerHTML = str
+            let icon = x.firstChild
+
+            // path color
+            icon.firstChild.setAttribute('fill', `#${Colors.blue.light}`)
+
+            saveSvg(icon, name ?? 'icon')
+        },
+        ios: function (str) {
+            let x = document.createElement('div')
+            x.innerHTML = str
+            let icon = x.firstChild
+
+            // path color
+            icon.firstChild.setAttribute('fill', '#2c2c2e')
+
+            // bg color
+            let bg = document.createElement('rect')
+            bg.setAttribute('height', '100%')
+            bg.setAttribute('width', '100%')
+            bg.setAttribute('fill', '#1c1c1e')
+
+            icon.prepend(bg)
+            icon.setAttribute('height', '512px')
+            icon.setAttribute('width', '512px')
+
+            // alert(icon.outerHTML)
+            saveSvg(icon, 'test')
+        }
+
+    },
 }

@@ -22,7 +22,9 @@ function loadApp() {
 
 
 
-
+    // createIcon()
+    // SF.render.ios(SFSymbols.house.fill)
+    // SF.render.notion(SFSymbols.person.fill)
     // modal.add(workoutCard())
     // actors.castSTR('office')
     // trip.data.tenerife.detail()
@@ -49,4 +51,13 @@ function paramsLoad() {
         spotlight.elem().value = q
         spotlight.run(q)
     }
+}
+
+function saveSvg(svgEl, name) {
+    svgEl.setAttribute("xmlns", "http://www.w3.org/2000/svg")
+    let svgBlob = new Blob(['', svgEl.outerHTML], { type: "image/svg+xml;charset=utf-8" })
+    let a = document.createElement("a")
+    a.href = URL.createObjectURL(svgBlob)
+    a.download = name
+    a.click()
 }
