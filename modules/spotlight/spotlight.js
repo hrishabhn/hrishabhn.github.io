@@ -88,6 +88,7 @@ const spotlight = {
                     appObject.main.tray(appObject.search(q, appData['utilities']), 'Utilities'),
                     appObject.main.tray(appObject.search(q, appData['profiles']), 'Social Media Pages'),
                     appObject.main.tray(appObject.search(q, appData['design']), 'Design'),
+                    appObject.main.tray(appObject.search(q, appData['span']), 'Spanish'),
                     appObject.main.tray(appObject.search(q, appData['worldClock']), 'World Clock'),
                     // searchCalRow(searchCal(q)),
                     movies.searchRow(q),

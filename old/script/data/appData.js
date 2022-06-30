@@ -327,15 +327,7 @@ const appData = {
             color: Colors.blue,
             distract: false,
         },
-        {
-            name: 'SpanishDict',
-            link: 'https://www.spanishdict.com',
-            searchBase: 'https://www.spanishdict.com/translate/',
-            desc: 'Learn & Translate',
-            thumb: 'spanishdict.jpeg',
-            accent: '1b85e5',
-            distract: false,
-        },
+        // to delete
         {
             name: 'Password Generator',
             link: 'https://passwordsgenerator.net/?length=15&symbols=0&numbers=1&lowercase=1&uppercase=1&similar=1&ambiguous=1&client=1&autoselect=0',
@@ -713,48 +705,67 @@ const appData = {
         },
     ],
     'worldClock': worldClock.apps(),
-
-    // school
-    'amst': [
+    span: [
         {
-            name: 'Brightspace',
-            link: 'https://purdue.brightspace.com/d2l/le/content/552142/Home',
-            desc: 'Learn',
-            thumb: thumbData['course'],
-            color: Colors.orange,
+            name: 'SpanishDict',
+            link: 'https://www.spanishdict.com/learn',
+            searchBase: 'https://www.spanishdict.com/translate/',
+            desc: 'Learn & Translate',
+            thumb: 'spanishdict.jpeg',
+            accent: '1b85e5',
             distract: false,
-            dockIcon: SFSymbols.graduationcap.fill,
         },
-        commonApps.syllabus('amst'),
-        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Summer%202022/AMST%20101?csf=1&web=1&e=e8EbtC'),
-        commonApps.notion('https://www.notion.so/hrishabhn/AMST-101-9b071b3380f54fdd9b9b665776033bfe'),
+        {
+            name: 'Google Translate',
+            link: 'https://translate.google.com',
+            desc: 'Translate',
+            thumb: 'translate.jpeg',
+            accent: colorData.google.blue,
+            distract: false,
+        },
     ],
-    'indorg': [
-        commonApps.aula('123832'),
-        commonApps.syllabus('indorg'),
-        // commonApps.finder('shortcuts://run-shortcut?name=Industrial%20Organisation%20Folder'),
-        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Industrial%20Organisation'),
-        commonApps.notion('https://www.notion.so/Industrial-Organisation-6f9a042e98f6458a9f509689c2025571'),
-    ],
-    'finecon': [
-        commonApps.aula('131130', 'Lectures'),
-        commonApps.aula('123356', 'Problems'),
-        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Financial%20Economics'),
-        commonApps.notion('https://www.notion.so/Financial-Economics-f175d589aae64f7b9ecd3c101be4ff53'),
-    ],
-    'manage': [
-        commonApps.aula('126308', 1),
-        commonApps.aula('132011', 2),
-        commonApps.syllabus('manage'),
-        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Management'),
-        commonApps.notion('https://www.notion.so/Engineering-Management-42466297fd4148a7bf275247cde1becb'),
-    ],
-    'controls': [
-        commonApps.aula('127222'),
-        commonApps.syllabus('controls'),
-        commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Controls'),
-        commonApps.notion('https://www.notion.so/Controls-a33110b68afe4e468d12bbb96b1e31dd'),
-        commonApps.youtube('Control Systems', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo', 'YouTube Lectures'),
-        // https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo
-    ],
+
+    // // school
+    // 'amst': [
+    //     {
+    //         name: 'Brightspace',
+    //         link: 'https://purdue.brightspace.com/d2l/le/content/552142/Home',
+    //         desc: 'Learn',
+    //         thumb: thumbData['course'],
+    //         color: Colors.orange,
+    //         distract: false,
+    //         dockIcon: SFSymbols.graduationcap.fill,
+    //     },
+    //     commonApps.syllabus('amst'),
+    //     commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Summer%202022/AMST%20101?csf=1&web=1&e=e8EbtC'),
+    //     commonApps.notion('https://www.notion.so/hrishabhn/AMST-101-9b071b3380f54fdd9b9b665776033bfe'),
+    // ],
+    // 'indorg': [
+    //     commonApps.aula('123832'),
+    //     commonApps.syllabus('indorg'),
+    //     // commonApps.finder('shortcuts://run-shortcut?name=Industrial%20Organisation%20Folder'),
+    //     commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Industrial%20Organisation'),
+    //     commonApps.notion('https://www.notion.so/Industrial-Organisation-6f9a042e98f6458a9f509689c2025571'),
+    // ],
+    // 'finecon': [
+    //     commonApps.aula('131130', 'Lectures'),
+    //     commonApps.aula('123356', 'Problems'),
+    //     commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Financial%20Economics'),
+    //     commonApps.notion('https://www.notion.so/Financial-Economics-f175d589aae64f7b9ecd3c101be4ff53'),
+    // ],
+    // 'manage': [
+    //     commonApps.aula('126308', 1),
+    //     commonApps.aula('132011', 2),
+    //     commonApps.syllabus('manage'),
+    //     commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Management'),
+    //     commonApps.notion('https://www.notion.so/Engineering-Management-42466297fd4148a7bf275247cde1becb'),
+    // ],
+    // 'controls': [
+    //     commonApps.aula('127222'),
+    //     commonApps.syllabus('controls'),
+    //     commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Spring%202022/Controls'),
+    //     commonApps.notion('https://www.notion.so/Controls-a33110b68afe4e468d12bbb96b1e31dd'),
+    //     commonApps.youtube('Control Systems', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo', 'YouTube Lectures'),
+    //     // https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo
+    // ],
 }
