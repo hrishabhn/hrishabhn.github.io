@@ -11,8 +11,9 @@ const SF = {
                 name: x.name,
                 icon: x.icon,
                 trigger: function () {
-                    navigator.clipboard.writeText(x.name)
-                    alert('Copied!')
+                    SF.render.notion(x.icon, x.name)
+                    // navigator.clipboard.writeText(x.name)
+                    // alert('Copied!')
                 }
             }))
 
@@ -106,10 +107,12 @@ const SF = {
             x.innerHTML = str
             let icon = x.firstChild
 
+            // viewbox
+            icon.setAttribute('viewBox', '2 2 24 24')
             // path color
             icon.firstChild.setAttribute('fill', `#${Colors.blue.light}`)
 
-            saveSvg(icon, name ?? 'icon')
+            saveSvg(icon, null)
         },
         ios: function (str) {
             let x = document.createElement('div')
