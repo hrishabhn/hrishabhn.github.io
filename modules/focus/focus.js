@@ -1,7 +1,6 @@
 const focus = {
     data: [
         {
-            name: 'Main',
             data: [
                 {
                     name: 'Default',
@@ -62,7 +61,6 @@ const focus = {
             ],
         },
         {
-            name: 'Media',
             data: [
                 {
                     name: 'Media',
@@ -175,7 +173,6 @@ const focus = {
             ],
         },
         {
-            name: 'Projects',
             data: [
                 {
                     name: 'Spanish',
@@ -185,7 +182,7 @@ const focus = {
                     icon: SFSymbols.globe,
                     color: Colors.red,
                     apps: appData.span,
-                    work: true,
+                    work: false,
                     distract: false,
                 },
             ],
