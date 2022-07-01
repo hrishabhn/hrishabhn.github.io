@@ -186,5 +186,5 @@ const movieElem = {
 
         box.append(title)
         return box
-    }
+    },
 }
