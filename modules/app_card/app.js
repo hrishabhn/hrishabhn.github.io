@@ -90,7 +90,7 @@ const appObject = {
         return card
     },
     resultCard: function (data, name) {
-        let card = resultCard.base({ name: name ?? 'Apps', icon: null })
+        let card = resultCard.base({ name: name ?? 'Apps' })
         for (const x of data) card.lastChild.append(appObject.resultCardItem(x))
         return card
     },

@@ -33,11 +33,14 @@ const movies = {
         return results
     },
     resultCard: function (data) {
-        let card = resultCard.base({ name: 'TV & Movies', icon: SFSymbols.tv.fill })
+        let card = resultCard.base({
+            name: 'TV & Movies',
+            buttons: [{ icon: SFSymbols.tv.fill },],
+        })
         for (const x of data) card.lastChild.append(movies.resultCardItem(movieDict[x]))
         return card
     },
-    resultCardItem: function(movie) {
+    resultCardItem: function (movie) {
         let card = document.createElement('a')
         card.classList = 'result-movie result-media clickable-o'
         card.append(elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`))

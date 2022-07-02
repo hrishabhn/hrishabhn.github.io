@@ -35,11 +35,14 @@ const podElem = {
     },
     // searchRow: function (q) { return searchBookPodRow(this.search(q), 'Podcasts', 'pod') },
     resultCard: function (data) {
-        let card = resultCard.base({ name: 'Podcasts', icon: SFSymbols.tv.fill })
+        let card = resultCard.base({
+            name: 'Podcasts',
+            buttons: [{ icon: SFSymbols.headphones },],
+        })
         for (const x of data) card.lastChild.append(podElem.resultCardItem(podDict[x]))
         return card
     },
-    resultCardItem: function(pod) {
+    resultCardItem: function (pod) {
         let card = document.createElement('a')
         card.classList = 'result-pod result-media clickable-o'
         card.append(elems.thumb(`./media-image/podcasts/${pod.id}.${pod.coverType}`))

@@ -35,11 +35,14 @@ const bookElem = {
         return results
     },
     resultCard: function (data) {
-        let card = resultCard.base({ name: 'Books', icon: SFSymbols.book.fill })
+        let card = resultCard.base({
+            name: 'Books',
+            buttons: [{ icon: SFSymbols.book.fill },],
+        })
         for (const x of data) card.lastChild.append(bookElem.resultCardItem(allBooks[x]))
         return card
     },
-    resultCardItem: function(book) {
+    resultCardItem: function (book) {
         let card = document.createElement('a')
         card.classList = 'result-book result-media clickable-o'
         card.append(elems.thumb(`./media-image/books/${book.id}.${book.coverType}`))

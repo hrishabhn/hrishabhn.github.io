@@ -18,7 +18,7 @@ const actors = {
 
     },
     resultCard: function (data) {
-        let card = resultCard.base({ name: 'Actors', icon: null })
+        let card = resultCard.base({ name: 'Actors' })
         for (const x of data) card.lastChild.append(actors.card(x.actor, null))
         return card
     },
