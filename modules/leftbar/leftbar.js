@@ -21,6 +21,7 @@ const leftbar = {
 
             // cards
             let cards = [
+                budget.resultCard(),
                 [calendar.splashCard(), tasks.splashCard()],
             ]
 
