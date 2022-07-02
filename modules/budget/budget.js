@@ -31,7 +31,7 @@ const budget = {
         },
     },
     resultCard: function () {
-        let card = resultCard.base({ name: 'Budget', icon: null })
+        let card = resultCard.base({ name: 'Budget', icon: SFSymbols.airplane })
         card.classList.add('budget')
 
         let week = document.createElement('div')
