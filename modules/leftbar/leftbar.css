@@ -1,55 +1,6 @@
 #leftbar {
-    min-height: 100%;
     width: 100%;
+    max-width: 800px;
     flex-direction: column;
-    padding: 30px 40px;
+    padding: 10px 0px;
 }
-
-/* search */
-
-
-
-/* pinned apps */
-/* #leftbar .pinned-apps {
-    width: 100%;
-    margin-top: 20px;
-}
-
-#main.searching .pinned-apps {
-    display: none;
-}
-
-#leftbar .pinned-apps .item {
-    flex-direction: column;
-    padding: 10px 15px;
-}
-
-#leftbar .pinned-apps .item .icon {
-    height: 45px;
-    width: 45px;
-    border-radius: 100px;
-    padding: 15%;
-    background-color: var(--white-05);
-    opacity: 0.6;
-}
-
-#leftbar .pinned-apps .item:hover .icon {
-    background-color: var(--white-10);
-}
-
-@media screen and (prefers-color-scheme: light) {
-    #leftbar .pinned-apps .item .icon {
-        background-color: var(--black-05);
-    }
-
-    #leftbar .pinned-apps .item:hover .icon {
-        background-color: var(--black-10);
-    }
-}
-
-#leftbar .pinned-apps .item p {
-    font-size: 10px;
-    font-weight: 500;
-    opacity: 0.5;
-    margin-top: 8px;
-} */

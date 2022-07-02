@@ -15,11 +15,16 @@ function loadApp() {
     paramsLoad()
 
 
+    
     // Testing
     // movieDict['himym'].detail()
     // SF.test.modal()
     // colorModal()
 
+    // const testQ = 'sapi'
+    // spotlight.elem().value = testQ
+    // spotlight.run(testQ)
+    
 
 
     // createIcon()

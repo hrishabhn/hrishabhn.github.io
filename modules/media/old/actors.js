@@ -14,7 +14,14 @@ const actors = {
         // if (!results.includes(actor))
         return results
     },
-    searchRow: function (q) { return this.row(this.search(q)) },
+    resultCard: function (q) {
+
+    },
+    resultCard: function (data) {
+        let card = resultCard.base({ name: 'Actors', icon: null })
+        for (const x of data) card.lastChild.append(actors.card(x.actor, null))
+        return card
+    },
     card: function (actor, char) {
         let card = document.createElement('a')
         card.classList = 'actor-card clickable-o'

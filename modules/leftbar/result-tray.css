@@ -1,0 +1,9 @@
+#result-tray {
+    width: 100%;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 800px;
+    grid-auto-rows: auto;
+    gap: 10px;
+    justify-items: center;
+}

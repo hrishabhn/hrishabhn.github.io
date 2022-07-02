@@ -19,18 +19,18 @@
 
 /* leftbar */
 #main.initial #leftbar {
-    max-width: 800px;
+    min-height: 100%;
 }
 
-#main.searching #leftbar {
-    min-height: auto;
-}
-
-#main.searching #leftbar .splash-card {
+#main.searching #leftbar .splash-card, #main.searching #leftbar .result-card, #main.searching #leftbar .spacer-x {
     display: none;
 }
 
-#main.searching #leftbar .spacer-x {
+#main.initial #result-tray {
+    padding: 0;
+}
+
+#main.searching #content-elem {
     display: none;
 }
 

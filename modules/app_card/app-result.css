@@ -1,0 +1,35 @@
+.app-card-result {
+    flex-direction: column;
+    width: 60px;
+    margin: 5px 0 8px;
+}
+
+.app-card-result .icon, .app-card-result .thumb {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+.app-card-result .icon {
+    fill: white;
+    background-color: var(--brand-col-dark);
+    padding: 10%;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .app-card-result .icon {
+        background-color: var(--brand-col-light);
+    }
+}
+
+.app-card-result p {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.75;
+    margin-top: 8px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}

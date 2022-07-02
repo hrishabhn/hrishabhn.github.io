@@ -8,10 +8,17 @@ const leftbar = {
         // pinned apps
         if (focus.get().apps) {
             elem.append(elems.spacer(20))
-            elem.append(leftbar.pinned.splashCard())
+            elem.append(appObject.resultCard(focus.get().apps, focus.get().name))
         }
 
+        for (const x of leftbar.splashCards()) elem.append(x)
+
+        if (!dnd.active()) elem.append(widgetTray())
+    },
+    splashCards: function () {
+        let nodes = []
         if (!dnd.active()) {
+
             // cards
             let cards = [
                 [calendar.splashCard(), tasks.splashCard()],
@@ -25,33 +32,22 @@ const leftbar = {
             else cards.push(routine.splashCard())
 
             for (const item of cards) {
-                elem.append(elems.spacer(20))
+                nodes.push(elems.spacer(20))
 
                 if (item[0]) {
                     let tray = document.createElement('div')
                     tray.classList = 'splash-card-tray'
                     for (const child of item) tray.append(child)
-                    elem.append(tray)
+                    nodes.push(tray)
 
 
 
                 } else {
-                    elem.append(item)
+                    nodes.push(item)
                 }
-
             }
-
-
-            // old
-            elem.append(widgetTray())
         }
-
-
-
-
-        // elem.append(leftbar.pinned.tray())
-        // apps
-        // if (focus.get().apps) elem.append(leftbar.currentApps())
+        return nodes
     },
     pinned: {
         card: function (app) {

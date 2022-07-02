@@ -6,9 +6,9 @@ for (let tray of movieRaw) {
     tray.results = results
 
     tray.elem = {
-        big: mediaElems.movie.row(results, tray.name, 'big'),
-        small: mediaElems.movie.row(results, tray.name, 'small'),
-        smart: mediaElems.movie.row(results, tray.name, 'smart'),
+        // big: mediaElems.movie.row(results, tray.name, 'big'),
+        // small: mediaElems.movie.row(results, tray.name, 'small'),
+        // smart: mediaElems.movie.row(results, tray.name, 'smart'),
     }
 
     movieData.push(tray.data)
@@ -32,7 +32,19 @@ const movies = {
 
         return results
     },
-    searchRow: function (q) { return mediaElems.movie.row(this.search(q), 'TV & Movies', 'smart') },
+    resultCard: function (data) {
+        let card = resultCard.base({ name: 'TV & Movies', icon: SFSymbols.tv.fill })
+        for (const x of data) card.lastChild.append(movies.resultCardItem(movieDict[x]))
+        return card
+    },
+    resultCardItem: function(movie) {
+        let card = document.createElement('a')
+        card.classList = 'result-movie result-media clickable-o'
+        card.append(elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`))
+        card.append(elems.textbox(movie.name, movie.desc.full))
+        card.onclick = function () { movie.detail() }
+        return card
+    },
     tags: {
         'himym': 'How I Met Your Mother',
         'mcu': 'Marvel Cinematic Universe',
@@ -47,7 +59,7 @@ const movies = {
 }
 
 
-// console.log(pods)
+// consolelog(pods)
 // console.log(movies)
 
 

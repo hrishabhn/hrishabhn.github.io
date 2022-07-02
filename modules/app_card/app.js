@@ -89,4 +89,25 @@ const appObject = {
 
         return card
     },
+    resultCard: function (data, name) {
+        let card = resultCard.base({ name: name ?? 'Apps', icon: null })
+        for (const x of data) card.lastChild.append(appObject.resultCardItem(x))
+        return card
+    },
+
+    resultCardItem: function (app) {
+        let card = document.createElement('a')
+        card.classList = 'app-card-result clickable-o'
+        card.onclick = function (e) { openApp(app, e) }
+        card = cardCol(card, { accent: app.accent, style: app.style, color: app.color })
+
+        if (app.link) card.style.setProperty('cursor', 'pointer')
+
+        if (app.dockIcon) card.append(elems.icon(app.dockIcon))
+        else if (app.thumb) card.append(elems.appThumb(app.thumb))
+        else if (app.icon) card.append(elems.icon(app.icon))
+
+        card.append(elems.p(app.name))
+        return card
+    },
 }

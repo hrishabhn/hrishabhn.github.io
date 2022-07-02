@@ -16,27 +16,28 @@ const spotlight = {
         return elem
     },
     elem: function () { return document.getElementById('spotlight').childNodes[1] },
-    result: document.getElementById('content-elem'),
-    engine: function (data) {
-        const input = spotlight.elem()
-        let app = document.createElement('div')
-        app.classList = 'engine'
-        app.append(elems.appThumb(data.thumb))
-        app.append(elems.p(`Searching ${data.name}:`))
-        input.parentNode.before(app)
+    result: document.getElementById('result-tray'),
+    // engine: function (data) {
+    //     const input = spotlight.elem()
+    //     let app = document.createElement('div')
+    //     app.classList = 'engine'
+    //     app.append(elems.appThumb(data.thumb))
+    //     app.append(elems.p(`Searching ${data.name}:`))
+    //     input.parentNode.before(app)
 
-        input.value = ''
-        input.onkeyup = function (e) {
-            if (input.value) {
-                if (e.key == 'Enter') window.open(`${data.searchBase}${input.value}`, '_self')
-            } else if (e.key == 'Backspace') spotlight.reset()
+    //     input.value = ''
+    //     input.onkeyup = function (e) {
+    //         if (input.value) {
+    //             if (e.key == 'Enter') window.open(`${data.searchBase}${input.value}`, '_self')
+    //         } else if (e.key == 'Backspace') spotlight.reset()
 
-        }
-    },
-    reset: function () {
-        spotlight.elem().parentNode.previousSibling.remove()
-        spotlight.elem().onkeyup = function (e) { spotlight.run(e) }
-    },
+    //     }
+    // },
+    // reset: function () {
+    //     spotlight.elem().parentNode.previousSibling.remove()
+    //     spotlight.elem().onkeyup = function (e) { spotlight.run(e) }
+    // },
+    oldQ: null,
     run: function (e) {
         let qOrig = spotlight.elem().value
         let q = qOrig.toUpperCase()
@@ -45,83 +46,71 @@ const spotlight = {
 
         if (q) {
             if (e.key == 'Enter') {
-                let row = document.getElementById('row-0')
-
-                if (row) {
-                    let target = row.lastChild.firstChild
-                    if (target.classList.value == 'spacer-x') { target = target.nextSibling }
-                    if (target.href) {
-                        window.open(target.href, '_self')
-                    } else if (target.onclick) {
-                        target.onclick()
-                    }
+                // !! add href
+                if (spotlight.result.hasChildNodes()) {
+                    let target = spotlight.result.firstChild.firstResult()
+                    if (target.href) window.open(target.href, '_self')
+                    else if (target.onclick) target.onclick()
                 } else {
                     if (qOrig.startsWith('https://')) window.open(qOrig, '_self')
-                    else window.open(`https://www.google.com/search?q=${qOrig}`, '_self')
-
-                    // window.open(`https://neeva.com/search?q=${qOrig}`, '_self')
-                }
-            } else if (e.key == 'Tab') {
-                let row = document.getElementById('row-0')
-                if (row) {
-                    let target = row.lastChild.firstChild
-                    if (target.classList.value == 'spacer-x') { target = target.nextSibling }
-
-                    if (target.getAttribute('engineData')) {
-                        spotlight.engine(JSON.parse(target.getAttribute('engineData')))
-                    }
-                }
-            } else {
-                document.getElementById('main').classList = 'searching'
-                removeAllChildNodes(spotlight.result)
-                let resultRowArray = [
-                    appObject.main.tray(appObject.search(q, focus.apps()), 'Focus'),
-                    appObject.main.tray(appObject.search(q, appData['main']), 'Apps'),
-                    appObject.main.tray(appObject.search(q, appData['notion']), 'Notion'),
-                    appObject.main.tray(appObject.search(q, appData['school']), 'School'),
-                    appObject.main.tray(appObject.search(q, appData['shopping']), 'Shopping'),
-                    appObject.main.tray(appObject.search(q, appData['bookmarks']), 'Bookmarks'),
-                    appObject.main.tray(appObject.search(q, appData['video']), 'Video'),
-                    appObject.main.tray(appObject.search(q, appData['read']), 'Read'),
-                    appObject.main.tray(appObject.search(q, appData['listen']), 'Listen'),
-                    appObject.main.tray(appObject.search(q, appData['travel']), 'Travel'),
-                    appObject.main.tray(appObject.search(q, appData['utilities']), 'Utilities'),
-                    appObject.main.tray(appObject.search(q, appData['profiles']), 'Social Media Pages'),
-                    appObject.main.tray(appObject.search(q, appData['design']), 'Design'),
-                    appObject.main.tray(appObject.search(q, appData['span']), 'Spanish'),
-                    appObject.main.tray(appObject.search(q, appData['worldClock']), 'World Clock'),
-                    // searchCalRow(searchCal(q)),
-                    movies.searchRow(q),
-                    actors.searchRow(q),
-                    // searchBookPodNewRow(books.search(q), 'Books', 'book'),
-                    books.searchRow(q),
-                    podElem.searchRow(q),
-                    food.searchRow(q),
-                    // searchBookPodBig(['decoder'], 'pod'),
-                ]
-
-                let i = 0
-
-                for (let item of resultRowArray) {
-                    const relevant = item.lastChild.childNodes.length > 1
-
-                    if (relevant) {
-                        spotlight.result.append(elems.divider())
-                        item.id = `row-${i}`
-                        spotlight.result.append(item)
-                        i++
-                    }
-
+                    else window.open(googleSearch(qOrig), '_self')
                 }
             }
+            // // !! update this
+            // else if (e.key == 'Tab') {
 
+            //     let row = document.getElementById('row-0')
+            //     if (row) {
+            //         let target = row.lastChild.firstChild
+            //         if (target.classList.value == 'spacer-x') { target = target.nextSibling }
 
+            //         if (target.getAttribute('engineData')) {
+            //             spotlight.engine(JSON.parse(target.getAttribute('engineData')))
+            //         }
+            //     }
+            // }
+            else if (qOrig !== spotlight.oldQ) {
+                document.getElementById('main').classList = 'searching'
+                removeAllChildNodes(spotlight.result)
 
+                // // remove searchable tab elem
+                // let tabOld = document.getElementById('tab-to-search')
+                // if (tabOld) tabOld.remove()
+
+                let resultCards = [
+                    appObject.resultCard(appObject.search(q, focus.apps()), 'Focus Modes'),
+                    appObject.resultCard(appObject.search(q, appData.main), 'Main Apps'),
+
+                    appObject.resultCard(appObject.search(q, appData['notion']), 'Notion'),
+                    appObject.resultCard(appObject.search(q, appData['school']), 'School'),
+                    appObject.resultCard(appObject.search(q, appData['shopping']), 'Shopping'),
+                    appObject.resultCard(appObject.search(q, appData['bookmarks']), 'Bookmarks'),
+                    appObject.resultCard(appObject.search(q, appData['video']), 'Video'),
+                    appObject.resultCard(appObject.search(q, appData['read']), 'Read'),
+                    appObject.resultCard(appObject.search(q, appData['listen']), 'Listen'),
+                    appObject.resultCard(appObject.search(q, appData['travel']), 'Travel'),
+                    appObject.resultCard(appObject.search(q, appData['utilities']), 'Utilities'),
+                    appObject.resultCard(appObject.search(q, appData['profiles']), 'Social Media Pages'),
+                    appObject.resultCard(appObject.search(q, appData['design']), 'Design'),
+                    appObject.resultCard(appObject.search(q, appData['span']), 'Spanish'),
+                    appObject.resultCard(appObject.search(q, appData['worldClock']), 'World Clock'),
+                    movies.resultCard(movies.search(q)),
+                    actors.resultCard(actors.search(q)),
+                    bookElem.resultCard(books.search(q)),
+                    podElem.resultCard(podElem.search(q)),
+                ]
+
+                for (let item of resultCards) {
+                    if (!item.isEmpty()) spotlight.result.append(item)
+                }
+            }
         } else {
             document.getElementById('main').classList = 'initial'
             removeAllChildNodes(spotlight.result)
             content.load()
             if (e.key == 'Enter') window.open('https://google.com', '_self')
         }
+
+        spotlight.oldQ = qOrig
     },
 }
