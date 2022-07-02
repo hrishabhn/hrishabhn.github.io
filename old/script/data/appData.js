@@ -725,7 +725,32 @@ const appData = {
         },
     ],
 
-    // // school
+    // school
+    thermo: [
+        {
+            name: 'WyoWeb',
+            link: 'https://wyoweb.uwyo.edu',
+            desc: 'Canvas',
+            thumb: thumbData.course,
+            color: Colors.yellow,
+            distract: false,
+            dockIcon: SFSymbols.person.fill,
+        },
+        {
+            name: 'Canvas',
+            link: 'https://uwyo.instructure.com',
+            desc: 'Canvas',
+            thumb: thumbData.course,
+            color: Colors.red,
+            distract: false,
+            dockIcon: SFSymbols.graduationcap.fill,
+        },
+        // commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Summer%202022/AMST%20101?csf=1&web=1&e=e8EbtC'),
+        commonApps.notion('https://www.notion.so/hrishabhn/ES-2310-ME-200-UWyo-bd352613984c46e3b8be09799cc84448'),
+    ],
+
+
+
     // 'amst': [
     //     {
     //         name: 'Brightspace',
