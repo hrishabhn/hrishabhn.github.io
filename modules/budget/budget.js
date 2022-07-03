@@ -347,7 +347,7 @@ function rankItem({ name, thumb, icon, color, amount, total }) {
     top.classList = 'fill-parent'
 
     top.append(thumbOrIcon(thumb, icon))
-    top.firstChild.classList.add('brand-col')
+    top.firstChild.classList.add('brand-bg')
 
     let textbox = elems.textbox(name, amount)
     top.append(textbox)
@@ -357,7 +357,7 @@ function rankItem({ name, thumb, icon, color, amount, total }) {
     bar.classList = 'bar'
     let fill = document.createElement('div')
     fill = cardCol(fill, { color: color })
-    fill.classList = 'fill brand-col'
+    fill.classList = 'fill brand-bg'
     fill.style.setProperty('width', `${(amount / total) * 100}%`)
 
     bar.append(fill)
