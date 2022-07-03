@@ -33,6 +33,7 @@
 
     transition: all 0.15s;
 }
+
 #context-modal.hide #context-menu {
     opacity: 0;
     translate: 0px -10px;
@@ -44,7 +45,6 @@
     width: 100%;
     padding: 10px 12px;
     justify-content: flex-start;
-    /* border-radius: 5px; */
     cursor: default;
 }
 
@@ -58,7 +58,7 @@
     font-weight: 500;
 }
 
-#context-menu .item .textbox .desc {
+/* #context-menu .item .textbox .desc {
     font-size: 10px;
     font-weight: 400;
     opacity: 0.8;
@@ -72,7 +72,7 @@
 #context-menu .item .data .value {
     font-size: 16px;
     font-weight: 400;
-}
+} */
 
 #context-menu .item:hover {
     background-color: var(--white-05);
@@ -82,28 +82,25 @@
     background-color: var(--white-10);
 }
 
-#context-menu .item .thumb {
-    height: 30px;
-    width: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 8px -3px var(--black-50);
-    margin-right: 8px;
-}
-
-#context-menu .item .icon {
+#context-menu .item.basic .icon {
     height: 24px;
     width: 24px;
     margin-right: 8px;
     opacity: 0.8;
 }
 
-#context-menu .item .col-block {
-    height: 100%;
-    min-height: 20px;
-    width: 3px;
-    border-radius: 100px;
-    margin-right: 5px;
+#context-menu .item.app .thumb, #context-menu .item.app .icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px -3px var(--black-50);
+    margin-right: 8px;
+
+    fill: white;
+    background-color: var(--brand-col-dark);
 }
+
+
 
 @media screen and (prefers-color-scheme: light) {
     #context-menu {
@@ -116,6 +113,12 @@
 
     #context-menu .item:active {
         background-color: var(--black-10);
+    }
+
+
+
+    #context-menu .item.app .thumb, #context-menu .item.app .icon {
+        background-color: var(--brand-col-light);
     }
 
     /* #context-menu .divider{

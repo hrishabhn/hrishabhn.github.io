@@ -5,12 +5,18 @@ const context = {
         elem.classList = 'item'
         elem.onclick = function (e) { openApp(data, e) }
 
-        // if (data.type == 'thumb') elem.append(elems.appThumb(data.thumb))
-        if (data.type == 'icon') elem.append(elems.icon(data.icon))
-        else if (data.type === 'app') {
-            if (data.thumb) elem.append(elems.appThumb(data.thumb))
-        }
+        // color
+        if (data.color) cardCol(elem, { color: data.color })
 
+        // if (data.type == 'thumb') elem.append(elems.appThumb(data.thumb))
+        if (data.type == 'basic') elem.classList.add('basic')
+        else if (data.type === 'app') elem.classList.add('app')
+
+        // thumb or icon
+        if (data.icon) elem.append(elems.icon(data.icon))
+        else if (data.thumb) if (data.thumb) elem.append(elems.appThumb(data.thumb))
+
+        // text
         elem.append(elems.textbox(data.name, data.desc))
         elem.append(elems.grow())
 
@@ -24,9 +30,9 @@ const context = {
         return elem
     },
     show: function (data, e, target) {
-        console.log(data)
         // data should be array of objects
         // each object has name and data array
+        // console.log(data)
         let menu = document.getElementById('context-menu')
         removeAllChildNodes(menu)
 

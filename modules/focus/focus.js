@@ -234,7 +234,7 @@ const focus = {
 
             for (const focus of tray.data) {
                 subData.push({
-                    type: 'icon',
+                    type: 'basic',
                     name: focus.name,
                     icon: focus.icon,
                     trigger: function () { focus.trigger() },

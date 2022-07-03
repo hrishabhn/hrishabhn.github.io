@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-auto-rows: 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 .budget-modal .header {
@@ -48,20 +48,41 @@
     align-items: flex-start;
 }
 
-.budget-modal .merch .icon {
+.budget-modal .merch .thumb, .budget-modal .merch .icon {
     height: 50px;
     width: 50px;
     border-radius: 100px;
-    background-color: var(--brand-col-dark);
+    padding: 5px;
+    fill: white;
+    background-color: var(--brand-col-dark, var(--accent-dark));
 }
 
 @media screen and (prefers-color-scheme: light) {
+    .budget-modal .item {
+        border: solid 1px var(--black-10);
+    }
+
     .budget-modal .merch .icon {
-        background-color: var(--brand-col-light);
+        background-color: var(--brand-col-light, var(--accent-light));
     }
 }
 
 .budget-modal .merch p {
     font-size: 20px;
     font-weight: 500;
+}
+
+.budget-modal .copy {
+    grid-column: 1 / -1;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 12px;
+    border-radius: 5px;
+    background-color: var(--accent-dark);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .budget-modal .copy {
+        background-color: var(--accent-light);
+    }
 }
