@@ -12,46 +12,32 @@ const budgetCat = {
 
 const budgetMerch = {
     condis: {
-        name: 'Condis'
+        name: 'Condis',
+        cat: budgetCat.grocery,
     },
     taxi: {
-        name: 'Taxi'
+        name: 'Taxi',
+        cat: budgetCat.transport,
     },
     wanxin: {
-        name: 'Supermercado Wan Xin'
+        name: 'Supermercado Wan Xin',
+        cat: budgetCat.grocery,
     },
     ikea: {
-        name: 'Ikea'
+        name: 'Ikea',
+        cat: budgetCat.home,
     },
     tmb: {
-        name: 'TMB Barcelona'
+        name: 'TMB Barcelona',
+        cat: budgetCat.transport,
     },
     lidl: {
-        name: 'Lidl'
+        name: 'Lidl',
+        cat: budgetCat.grocery,
     },
 }
 
 const budget = {
-    merchant: {
-        condis: {
-            name: 'Condis'
-        },
-        taxi: {
-            name: 'Taxi'
-        },
-        wanxin: {
-            name: 'Supermercado Wan Xin'
-        },
-        ikea: {
-            name: 'Ikea'
-        },
-        tmb: {
-            name: 'TMB Barcelona'
-        },
-        lidl: {
-            name: 'Lidl'
-        },
-    },
     modal: function () {
         let card = document.createElement('div')
         card.classList = 'budget-modal layer-1'
