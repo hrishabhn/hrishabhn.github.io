@@ -3379,7 +3379,7 @@ const movieDict = {
         },
         info: {
             water: movieServices.prime,
-            date: '1 Jul, 2022, 12:30:00',
+            date: '8 Jul, 2022, 9:00:00',
             seasons: 3,
             yearStart: 2019,
             yearEnd: null,
@@ -7368,8 +7368,8 @@ const movieDict = {
         // link: 'https://www.disneyplus.com/series/obi-wan-kenobi/2JYKcHv9fRJb',
         link: 'https://www.hotstar.com/1260098452',
         info: {
-            water: movieServices.hotstar,
-            date: '22 Jun 2022 12:30:00',
+            water: movieServices.disney,
+            // date: '22 Jun 2022 09:00:00',
             seasons: 1,
             yearStart: 2022,
             yearEnd: null,
