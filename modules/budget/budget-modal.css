@@ -1,6 +1,58 @@
 .budget-modal {
-    height: 500px;
-    width: 500px;
+    width: 400px;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 30px 40px 30px;
 
-    background-color: red;
+
+    /* min-height: 500px; */
+    /* box-shadow: 0 0 0 2px white; */
+}
+
+.budget-modal .header {
+    width: 100%;
+}
+
+.budget-modal .header .textbox {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.budget-modal .header .textbox .name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.budget-modal .header .textbox .desc {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.budget-modal input {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: solid 1px var(--white-10);
+}
+
+.budget-modal select {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: solid 1px var(--white-10);
+}
+
+.budget-modal .date-cont {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: solid 1px var(--white-10);
 }

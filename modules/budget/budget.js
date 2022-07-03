@@ -1,3 +1,15 @@
+const budgetCat = {
+    grocery: {
+        name: 'Grocery',
+    },
+    transport: {
+        name: 'Transportation',
+    },
+    home: {
+        name: 'Home & Furniture',
+    },
+}
+
 const budget = {
     cat: {
         transport: {
@@ -11,6 +23,9 @@ const budget = {
         },
     },
     merchant: {
+        condis: {
+            name: 'Condis'
+        },
         taxi: {
             name: 'Taxi'
         },
@@ -19,9 +34,6 @@ const budget = {
         },
         ikea: {
             name: 'Ikea'
-        },
-        condis: {
-            name: 'Condis'
         },
         tmb: {
             name: 'TMB Barcelona'
@@ -32,7 +44,69 @@ const budget = {
     },
     modal: function () {
         let card = document.createElement('div')
-        card.classList = 'budget-modal'
+        card.classList = 'budget-modal layer-1'
+
+        let header = elems.header()
+        header.append(elems.textbox('Budget', 'Add new transaction'))
+
+        // name
+        let name = document.createElement('input')
+        name.placeholder = 'Name'
+
+        // merchant
+        let merchant = document.createElement('select')
+        merchant.innerHTML = '<option value="" selected disabled hidden>Merchant</option>'
+        for (const m in budget.merchant) {
+            let o = document.createElement('option')
+            o.innerHTML = budget.merchant[m].name
+            o.value = m
+            merchant.append(o)
+        }
+
+        // amount
+        let amount = document.createElement('input')
+        amount.placeholder = 'Amount'
+
+        // category
+        let cat = document.createElement('select')
+        cat.innerHTML = '<option value="" selected disabled hidden>Category</option>'
+        for (const c in budget.cat) {
+            let o = document.createElement('option')
+            o.innerHTML = budget.cat[c].name
+            o.value = c
+            cat.append(o)
+        }
+
+        let date = document.createElement('div')
+        date.classList = 'date-cont'
+        date.append(elems.p(''))
+        date.update = function (d) { date.firstChild.textContent = `${d.getDate()} ${capitalizeFirstLetter(processDate.month.short(d))} ${d.getFullYear()}` }
+        date.update(new Date())
+        date.append(elems.grow())
+
+        date.append(appObject.bw({
+            name: 'Previous Day',
+            icon: SFSymbols.arrowtriangle.left.fill,
+            trigger: function () { date.update(new Date(new Date(date.firstChild.textContent).getTime() - 86400000)) },
+        }))
+        date.append(appObject.bw({
+            name: 'Next Day',
+            icon: SFSymbols.arrowtriangle.right.fill,
+            trigger: function () { date.update(new Date(new Date(date.firstChild.textContent).getTime() + 86400000)) },
+        }))
+
+
+        card.append(header)
+        card.append(elems.spacer(10))
+        card.append(name)
+        card.append(elems.spacer(10))
+        card.append(merchant)
+        card.append(elems.spacer(10))
+        card.append(amount)
+        card.append(elems.spacer(10))
+        card.append(cat)
+        card.append(elems.spacer(10))
+        card.append(date)
 
         return card
     },

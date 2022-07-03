@@ -168,12 +168,27 @@ input{
     color: #fff;
     fill: #fff;
     -webkit-user-select: initial;
+    user-select: initial;
     background: none;
     border: none;
 }
 input:focus{
     /* border: none; */
     outline: none;
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    color: inherit;
 }
 
 svg{
