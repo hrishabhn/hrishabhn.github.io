@@ -72,3 +72,96 @@
     margin-top: 5px;
     text-transform: uppercase;
 }
+
+
+/* rank */
+.budget .rank {
+    height: 100%;
+    min-width: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 10px;
+    align-content: flex-start;
+}
+
+.budget .rank .title {
+    width: 100%;
+    justify-content: flex-start;
+
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.budget .rank .item {
+    width: 100%;
+}
+
+.budget .rank .item .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    padding: 5px;
+    fill: white;
+    margin-right: 10px;
+}
+
+.budget .rank .item .textbox {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.budget .rank .item .textbox .name {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.budget .rank .item .textbox .desc {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.budget .rank .item .textbox .bar {
+    height: 10px;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    justify-content: flex-start;
+    background-color: var(--white-10);
+}
+
+
+/* .budget .week .chart .bar {
+    flex-grow: 1;
+    min-height: 80px;
+    width: 100%;
+    border-radius: 2px;
+    align-items: flex-end;
+    background-color: var(--white-10); */
+/* } */
+
+
+.budget .rank .item .textbox .bar .fill {
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0.75;
+    background-color: var(--accent-dark);
+}
+
+
+
+@media screen and (prefers-color-scheme: light) {
+    .budget .rank .item .textbox .bar {
+        background-color: var(--black-10);
+    }
+
+    .budget .rank .item .textbox .bar .fill {
+        background-color: var(--accent-light);
+    }
+}

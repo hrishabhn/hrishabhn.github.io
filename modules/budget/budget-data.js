@@ -51,7 +51,25 @@ const budgetData = [
         amount: 14,
         date: '2 Jul 2022',
     },
+    {
+        merchant: budgetMerch.bakery,
+        amount: 1.7,
+        date: '3 Jul 2022',
+    },
+    {
+        name: 'Haircut (Sharp Blendz)',
+        cat: budgetCat.health,
+        amount: 20,
+        date: '3 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.coaliment,
+        amount: 2.29,
+        date: '3 Jul 2022',
+    },
 ]
+
+// console.log(budgetData)
 
 for (const x of budgetData) {
     if (x.merchant) {
@@ -76,3 +94,21 @@ for (const day of budget.thisWeek) {
 // console.log(budget.thisWeek)
 
 budget.thisWeek.reverse()
+
+for (const k in budgetCat) {
+    const c = budgetCat[k]
+    c.spend = 0
+    for (const d of budget.thisWeek) for (const t of d.data) if (t.cat === c) c.spend += t.amount
+    budget.cat.push(c)
+}
+
+budget.cat.sort((a, b) => b.spend - a.spend)
+
+for (const k in budgetMerch) {
+    const m = budgetMerch[k]
+    m.id = k
+    if (!m.thumb && !m.icon) {
+        m.icon = m.cat.icon
+        m.color = m.cat.color
+    }
+}

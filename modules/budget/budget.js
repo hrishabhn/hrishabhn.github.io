@@ -14,6 +14,21 @@ const budgetCat = {
         icon: SFSymbols.house.fill,
         color: Colors.yellow,
     },
+    outing: {
+        name: 'Food & Drinks',
+        icon: SFSymbols.forkAndKnife,
+        color: Colors.red,
+    },
+    coffee: {
+        name: 'Coffee & Pastries',
+        icon: SFSymbols.cupAndSaucer.fill,
+        color: Colors.orange,
+    },
+    health: {
+        name: 'Health & Wellness',
+        icon: SFSymbols.cupAndSaucer.fill,
+        color: Colors.pink,
+    },
 }
 
 const budgetMerch = {
@@ -25,12 +40,10 @@ const budgetMerch = {
     taxi: {
         name: 'Taxi',
         cat: budgetCat.transport,
-        // thumb: 'condis.jpeg',
     },
     wanxin: {
         name: 'Supermercado Wan Xin',
         cat: budgetCat.grocery,
-        // thumb: 'condis.jpeg',
     },
     ikea: {
         name: 'Ikea',
@@ -47,23 +60,31 @@ const budgetMerch = {
         cat: budgetCat.grocery,
         thumb: 'lidl.jpeg',
     },
-}
-
-for (const k in budgetMerch) {
-    const m = budgetMerch[k]
-    m.id = k
-    if (!m.thumb && !m.icon) {
-        m.icon = m.cat.icon
-        m.color = m.cat.color
-    }
+    bakery: {
+        name: 'Bakery',
+        cat: budgetCat.coffee,
+        icon: SFSymbols.cupAndSaucer.fill,
+        color: Colors.orange,
+    },
+    coaliment: {
+        name: 'Coaliment',
+        cat: budgetCat.grocery,
+    },
 }
 
 const budget = {
     merch: [
         {
+            name: budgetCat.coffee.name,
+            data: [
+                budgetMerch.bakery,
+            ],
+        },
+        {
             name: budgetCat.grocery.name,
             data: [
                 budgetMerch.condis,
+                budgetMerch.coaliment,
                 budgetMerch.lidl,
                 budgetMerch.wanxin,
             ],
@@ -82,24 +103,13 @@ const budget = {
             ],
         },
     ],
+    cat: [],
     modal: function () {
         let card = document.createElement('div')
         card.classList = 'budget-modal layer-1'
 
         let header = elems.header()
         header.append(elems.textbox('Budget', 'Add new transaction'))
-
-        // merchant
-        let merchant = document.createElement('select')
-        merchant.classList = 'item'
-        merchant.style.setProperty('grid-row', 'span 2')
-        merchant.innerHTML = '<option value="" selected disabled hidden>Merchant</option>'
-        for (const m in budgetMerch) {
-            let o = document.createElement('option')
-            o.innerHTML = budgetMerch[m].name
-            o.value = m
-            merchant.append(o)
-        }
 
         let merch = document.createElement('div')
         merch.classList = 'item merch clickable-o'
@@ -198,30 +208,33 @@ const budget = {
         let btn = elems.a(null, 'Copy')
         btn.classList = 'copy clickable-o'
         btn.onclick = function () {
-            console.log(!!name.value)
-            console.log(merch.value)
+            let str
+            if (merch.value) {
+                str = `
+    {
+        merchant: budgetMerch.${merch.value},
+        amount: ${amount.value},
+        date: '${date.firstChild.textContent}',
+    },`
+            } else if (name.value) {
+                str = `
+    {
+        name: '${name.value}',
+        cat: budgetCat.${cat.value},
+        amount: ${amount.value},
+        date: '${date.firstChild.textContent}',
+    },`
 
-            let str = `
-            {
-                merchant: budgetMerch.lidl,
-                amount: 16.76,
-                date: '2 Jul 2022',
-            },
-            {
-                name: 'Dow Jones Bar',
-                cat: budgetCat.outing,
-                amount: 14,
-                date: '2 Jul 2022',
-            },`
+            }
 
-            // alert(str)
+            navigator.clipboard.writeText(str)
+            btn.textContent = 'Copied!'
         }
 
         card.append(header)
-        card.append(merchant)
+        card.append(merch)
         card.append(name)
         card.append(cat)
-        card.append(merch)
         card.append(amount)
         card.append(date)
         card.append(btn)
@@ -274,8 +287,29 @@ const budget = {
         week.append(elems.subtitle(`Past 7 Days`))
         week.append(chart)
 
-        card.lastChild.append(week)
+        // top categories
+        let topCat = document.createElement('div')
+        topCat.classList = 'rank clickable-o'
+        topCat.append(elems.title('Top Categories'))
 
+        let max = 0
+        for (const k in budgetCat) max = Math.max(max, budgetCat[k].spend)
+
+        let i = 0
+        for (const c of budget.cat) if (i < 3) {
+            topCat.append(rankItem({
+                name: c.name,
+                icon: c.icon,
+                color: c.color,
+                amount: c.spend,
+                total: max,
+            }))
+            i++
+        }
+
+        card.lastChild.append(week)
+        card.lastChild.append(topCat)
+        
         return card
     },
     thisWeek: [],
@@ -287,4 +321,31 @@ for (let i = 0; i < 7; i++) {
         date: new Date(removeTime(new Date()).getTime() - (86400000 * i)),
         data: [],
     })
+}
+
+function rankItem({ name, thumb, icon, color, amount, total }) {
+    let item = elems.item()
+    if (color) item = cardCol(item, { color: color })
+    item.append(thumbOrIcon(thumb, icon))
+    item.firstChild.classList.add('brand-col')
+
+    let textbox = elems.textbox(name, amount)
+    let bar = document.createElement('div')
+    bar.classList = 'bar'
+    let fill = document.createElement('div')
+    fill.classList = 'fill'
+    fill.style.setProperty('width', `${(amount / total) * 100}%`)
+
+    bar.append(fill)
+    textbox.append(bar)
+
+    item.append(textbox)
+
+    return item
+}
+
+function thumbOrIcon(thumb, icon) {
+    if (thumb) return elems.appThumb(thumb)
+    if (icon) return elems.icon(icon)
+    alert('missing icon or thumb')
 }

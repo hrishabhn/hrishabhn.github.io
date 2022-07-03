@@ -217,3 +217,14 @@
 }
 
 
+
+
+.brand-col {
+    background-color: var(--brand-col-dark);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .brand-col {
+        background-color: var(--brand-col-light);
+    }
+}
