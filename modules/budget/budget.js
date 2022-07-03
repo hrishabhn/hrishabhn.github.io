@@ -10,18 +10,28 @@ const budgetCat = {
     },
 }
 
-const budget = {
-    cat: {
-        transport: {
-            name: 'Transportation',
-        },
-        grocery: {
-            name: 'Grocery',
-        },
-        home: {
-            name: 'Home & Furniture',
-        },
+const budgetMerch = {
+    condis: {
+        name: 'Condis'
     },
+    taxi: {
+        name: 'Taxi'
+    },
+    wanxin: {
+        name: 'Supermercado Wan Xin'
+    },
+    ikea: {
+        name: 'Ikea'
+    },
+    tmb: {
+        name: 'TMB Barcelona'
+    },
+    lidl: {
+        name: 'Lidl'
+    },
+}
+
+const budget = {
     merchant: {
         condis: {
             name: 'Condis'
@@ -56,9 +66,9 @@ const budget = {
         // merchant
         let merchant = document.createElement('select')
         merchant.innerHTML = '<option value="" selected disabled hidden>Merchant</option>'
-        for (const m in budget.merchant) {
+        for (const m in budgetMerch) {
             let o = document.createElement('option')
-            o.innerHTML = budget.merchant[m].name
+            o.innerHTML = budgetMerch[m].name
             o.value = m
             merchant.append(o)
         }
@@ -70,9 +80,9 @@ const budget = {
         // category
         let cat = document.createElement('select')
         cat.innerHTML = '<option value="" selected disabled hidden>Category</option>'
-        for (const c in budget.cat) {
+        for (const c in budgetCat) {
             let o = document.createElement('option')
-            o.innerHTML = budget.cat[c].name
+            o.innerHTML = budgetCat[c].name
             o.value = c
             cat.append(o)
         }
