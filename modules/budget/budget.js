@@ -26,7 +26,7 @@ const budgetCat = {
     },
     health: {
         name: 'Health & Wellness',
-        icon: SFSymbols.cupAndSaucer.fill,
+        icon: SFSymbols.heart.fill,
         color: Colors.pink,
     },
 }
@@ -36,6 +36,7 @@ const budgetMerch = {
         name: 'Condis',
         cat: budgetCat.grocery,
         thumb: 'condis.jpeg',
+        color: Colors.blue,
     },
     taxi: {
         name: 'Taxi',
@@ -49,16 +50,19 @@ const budgetMerch = {
         name: 'Ikea',
         cat: budgetCat.home,
         thumb: 'ikea.jpeg',
+        color: Colors.yellow,
     },
     tmb: {
         name: 'TMB Barcelona',
         cat: budgetCat.transport,
         thumb: 'tmb.jpeg',
+        color: Colors.red,
     },
     lidl: {
         name: 'Lidl',
         cat: budgetCat.grocery,
         thumb: 'lidl.jpeg',
+        color: Colors.indigo,
     },
     bakery: {
         name: 'Bakery',
@@ -104,6 +108,7 @@ const budget = {
         },
     ],
     cat: [],
+    merchOrd: [],
     modal: function () {
         let card = document.createElement('div')
         card.classList = 'budget-modal layer-1'
@@ -242,7 +247,7 @@ const budget = {
         return card
     },
     resultCardTray: function () {
-        return [budget.resultCard.week(), budget.resultCard.topCat(), budget.resultCard.week()]
+        return [budget.resultCard.week(), budget.resultCard.topCat(), budget.resultCard.topMerch()]
     },
     resultCard: {
         week: function () {
@@ -326,6 +331,39 @@ const budget = {
 
             return card
         },
+        topMerch: function () {
+            let card = resultCard.base({
+                name: 'Top Merchants',
+                buttons: [{
+                    icon: SFSymbols.dollarsign.circle.fill,
+                    trigger: function () { modal.add(budget.modal()) },
+                }],
+            })
+            card.classList.add('budget')
+
+            let topMerch = document.createElement('div')
+            topMerch.classList = 'rank'
+
+            let max = 0
+            for (const k in budgetMerch) max = Math.max(max, budgetMerch[k].spend)
+
+            let i = 0
+            for (const m of budget.merchOrd) if (i < 3) {
+                topMerch.append(rankItem({
+                    name: m.name,
+                    thumb: m.thumb,
+                    icon: m.icon,
+                    color: m.color,
+                    amount: m.spend,
+                    total: max,
+                }))
+                i++
+            }
+
+            card.lastChild.append(topMerch)
+
+            return card
+        },
     },
     thisWeek: [],
     weekTotal: 0,
@@ -349,7 +387,7 @@ function rankItem({ name, thumb, icon, color, amount, total }) {
     top.append(thumbOrIcon(thumb, icon))
     top.firstChild.classList.add('brand-bg')
 
-    let textbox = elems.textbox(name, amount)
+    let textbox = elems.textbox(name, `€${amount}`)
     top.append(textbox)
 
 

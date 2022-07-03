@@ -106,9 +106,15 @@ budget.cat.sort((a, b) => b.spend - a.spend)
 
 for (const k in budgetMerch) {
     const m = budgetMerch[k]
+    m.spend = 0
+    for (const d of budget.thisWeek) for (const t of d.data) if (t.merchant === m) m.spend += t.amount
+    budget.merchOrd.push(m)
+
     m.id = k
     if (!m.thumb && !m.icon) {
         m.icon = m.cat.icon
         m.color = m.cat.color
     }
 }
+
+budget.merchOrd.sort((a, b) => b.spend - a.spend)
