@@ -1,16 +1,14 @@
 const context = {
     item: function (data) {
+        // { type, thumb, icon, name, desc, data}
         let elem = document.createElement('a')
         elem.classList = 'item'
         elem.onclick = function (e) { openApp(data, e) }
 
-        if (data.type == 'thumb') elem.append(elems.appThumb(data.thumb))
-        else if (data.type == 'icon') elem.append(elems.icon(data.icon))
-        else if (data.type == 'col-block') {
-            let block = document.createElement('div')
-            block.classList = 'col-block'
-            block.style.setProperty('background-color', `#${data.color}`)
-            elem.append(block)
+        // if (data.type == 'thumb') elem.append(elems.appThumb(data.thumb))
+        if (data.type == 'icon') elem.append(elems.icon(data.icon))
+        else if (data.type === 'app') {
+            if (data.thumb) elem.append(elems.appThumb(data.thumb))
         }
 
         elem.append(elems.textbox(data.name, data.desc))
@@ -18,42 +16,43 @@ const context = {
 
         if (data.link) { elem.style.cursor = 'pointer' }
 
-        if (data.data) {
-            elem.append(elems.spacer(10))
-            elem.append(elems.data(data.data.value))
-        }
+        // if (data.data) {
+        //     elem.append(elems.spacer(10))
+        //     elem.append(elems.data(data.data.value))
+        // }
 
         return elem
     },
     show: function (data, e, target) {
-        // console.log(data)
+        console.log(data)
+        // data should be array of objects
+        // each object has name and data array
         let menu = document.getElementById('context-menu')
         removeAllChildNodes(menu)
 
-        for (const tray of data) {
-            if (tray.length) {
-                for (const item of tray) {
-                    menu.append(context.item(item))
-                    menu.append(elems.hline())
-                }
-                menu.lastChild.remove()
-                menu.append(elems.divider())
-            } else if (tray.name) {
-                menu.append(elems.title(tray.name))
+        for (const subData of data) {
+            if (subData.name) {
+                menu.append(elems.title(subData.name))
                 menu.append(elems.hlineList(12))
             }
 
-
+            for (const item of subData.data) {
+                menu.append(context.item(item))
+                menu.append(elems.hline())
+            }
+            menu.lastChild.remove()
+            menu.append(elems.divider())
         }
+
         menu.lastChild.remove()
         absolutePos(menu, e.pageX, e.pageY)
 
-        let container = document.getElementById('context-modal')
-        container.classList = 'show'
+        // container
+        document.getElementById('context-modal').classList = 'show'
     },
     hide: function () {
-        let container = document.getElementById('context-modal')
-        container.classList = 'hide'
+        // container
+        document.getElementById('context-modal').classList = 'hide'
     },
 }
 

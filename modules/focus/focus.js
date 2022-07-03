@@ -61,6 +61,7 @@ const focus = {
             ],
         },
         {
+            name: 'Media',
             data: [
                 {
                     name: 'Media',
@@ -173,6 +174,7 @@ const focus = {
             ],
         },
         {
+            name: 'Work',
             data: [
                 {
                     name: 'Spanish',
@@ -226,12 +228,12 @@ const focus = {
         return apps
     },
     menuData: function () {
-        let menuData = []
+        let data = []
         for (const tray of focus.data) {
-            let menuTray = []
+            let subData = []
 
             for (const focus of tray.data) {
-                menuTray.push({
+                subData.push({
                     type: 'icon',
                     name: focus.name,
                     icon: focus.icon,
@@ -239,9 +241,12 @@ const focus = {
                     distract: focus.distract,
                 })
             }
-            menuData.push(menuTray)
+            data.push({
+                name: tray.name,
+                data: subData,
+            })
         }
-        return menuData
+        return data
     },
 }
 

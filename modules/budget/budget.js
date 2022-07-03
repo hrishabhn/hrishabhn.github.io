@@ -14,26 +14,32 @@ const budgetMerch = {
     condis: {
         name: 'Condis',
         cat: budgetCat.grocery,
+        thumb: 'condis.jpeg',
     },
     taxi: {
         name: 'Taxi',
         cat: budgetCat.transport,
+        // thumb: 'condis.jpeg',
     },
     wanxin: {
         name: 'Supermercado Wan Xin',
         cat: budgetCat.grocery,
+        // thumb: 'condis.jpeg',
     },
     ikea: {
         name: 'Ikea',
         cat: budgetCat.home,
+        thumb: 'ikea.jpeg',
     },
     tmb: {
         name: 'TMB Barcelona',
         cat: budgetCat.transport,
+        thumb: 'tmb.jpeg',
     },
     lidl: {
         name: 'Lidl',
         cat: budgetCat.grocery,
+        thumb: 'lidl.jpeg',
     },
 }
 
@@ -45,12 +51,10 @@ const budget = {
         let header = elems.header()
         header.append(elems.textbox('Budget', 'Add new transaction'))
 
-        // name
-        let name = document.createElement('input')
-        name.placeholder = 'Name'
-
         // merchant
         let merchant = document.createElement('select')
+        merchant.classList = 'item'
+        merchant.style.setProperty('grid-row', 'span 2')
         merchant.innerHTML = '<option value="" selected disabled hidden>Merchant</option>'
         for (const m in budgetMerch) {
             let o = document.createElement('option')
@@ -59,12 +63,25 @@ const budget = {
             merchant.append(o)
         }
 
-        // amount
-        let amount = document.createElement('input')
-        amount.placeholder = 'Amount'
+        let merch = document.createElement('div')
+        merch.classList = 'item merch clickable-o'
+        merch.style.setProperty('grid-row', 'span 2')
+        merch = cardCol(merch, { color: Colors.red })
+        merch.append(elems.icon(SFSymbols.person.fill))
+        merch.append(elems.grow())
+        merch.append(elems.p('Merchant'))
+        merch.onclick = function (e) {
+            context.show(focus.menuData(), e)
+        }
+
+        // name
+        let name = document.createElement('input')
+        name.classList = 'item'
+        name.placeholder = 'Name'
 
         // category
         let cat = document.createElement('select')
+        cat.classList = 'item'
         cat.innerHTML = '<option value="" selected disabled hidden>Category</option>'
         for (const c in budgetCat) {
             let o = document.createElement('option')
@@ -73,13 +90,20 @@ const budget = {
             cat.append(o)
         }
 
+        // amount
+        let amount = document.createElement('input')
+        amount.classList = 'item'
+        amount.placeholder = 'Amount'
+        amount.style.setProperty('grid-column', '1 / -1')
+
+        // date
         let date = document.createElement('div')
-        date.classList = 'date-cont'
+        date.classList = 'item'
+        date.style.setProperty('grid-column', '1 / -1')
         date.append(elems.p(''))
         date.update = function (d) { date.firstChild.textContent = `${d.getDate()} ${capitalizeFirstLetter(processDate.month.short(d))} ${d.getFullYear()}` }
         date.update(new Date())
         date.append(elems.grow())
-
         date.append(appObject.bw({
             name: 'Previous Day',
             icon: SFSymbols.arrowtriangle.left.fill,
@@ -93,15 +117,11 @@ const budget = {
 
 
         card.append(header)
-        card.append(elems.spacer(10))
-        card.append(name)
-        card.append(elems.spacer(10))
         card.append(merchant)
-        card.append(elems.spacer(10))
-        card.append(amount)
-        card.append(elems.spacer(10))
+        card.append(name)
         card.append(cat)
-        card.append(elems.spacer(10))
+        card.append(merch)
+        card.append(amount)
         card.append(date)
 
         return card
