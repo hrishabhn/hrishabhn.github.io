@@ -9,7 +9,7 @@ const tvDetail = {
         tvDetail.elem.append(tvDetail.card(key))
         tvDetail.elem.classList.add('open')
     },
-    hide: function() {
+    hide: function () {
         tvDetail.elem.classList.remove('open')
         removeAllChildNodes(tvDetail.elem)
     },
@@ -178,12 +178,11 @@ function movieApps(movie) {
     })
 
     // reddit
-    if (movie.apps.subReddit) data.push({
+    data.push({
         icon: iconData.movie.reddit,
         pad: 3,
         name: 'Reddit',
-        link: `https://www.reddit.com/r/${movie.apps.subReddit}`
-
+        link: movie.apps.subReddit ? `https://www.reddit.com/r/${movie.apps.subReddit}` : googleSearch(`${movie.name} site:reddit.com`)
     })
 
     // justwatch

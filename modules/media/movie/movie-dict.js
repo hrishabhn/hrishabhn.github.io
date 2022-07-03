@@ -4728,13 +4728,13 @@ const movieDict = {
         name: 'New Girl',
         id: 'newgirl',
         link: {
-            netflix: '70196145',
+            netflix: '70196145'
         },
         info: {
             water: movieServices.netflix,
-            seasons: 1,
-            yearStart: 2021,
-            yearEnd: null,
+            seasons: 7,
+            yearStart: 2011,
+            yearEnd: 2018,
             genre: [
                 'comedy',
                 'romance',
@@ -4749,19 +4749,22 @@ const movieDict = {
                     type: 'jpg',
                     title: true,
                 },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
                 size: 'widest',
             },
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
         },
         apps: {
-            // tvTimeID: null,
+            tvTimeID: '248682',
             reelgoodLink: 'https://reelgood.com/show/new-girl-2011',
             imdbID: 'tt1826940',
-            // subReddit: null,
+            subReddit: 'NewGirl',
         },
         cast: [
             {
@@ -7609,9 +7612,7 @@ const movieDict = {
 //         netflix: '80197526'
 //     },
 //     info: {
-//         service: 'service',
-//         // studio: 'studio',
-//         location: 'location',
+//         water: movieServices.netflix,
 //         // date: '',
 //         seasons: 1,
 //         year: 2022,

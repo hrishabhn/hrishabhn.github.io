@@ -30,8 +30,20 @@ const budget = {
             name: 'Lidl'
         },
     },
+    modal: function () {
+        let card = document.createElement('div')
+        card.classList = 'budget-modal'
+
+        return card
+    },
     resultCard: function () {
-        let card = resultCard.base({ name: 'Budget', icon: SFSymbols.airplane })
+        let card = resultCard.base({
+            name: 'Budget',
+            buttons: [{
+                icon: SFSymbols.dollarsign.circle.fill,
+                trigger: function () { modal.add(budget.modal()) },
+            }],
+        })
         card.classList.add('budget')
 
         let week = document.createElement('div')

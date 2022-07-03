@@ -53,6 +53,12 @@ const budgetData = [
         amount: 16.76,
         date: '2 Jul 2022',
     },
+    {
+        name: 'Dow Jones Bar',
+        cat: budget.cat.outing,
+        amount: 14,
+        date: '2 Jul 2022',
+    },
 ]
 
 for (const x of budgetData) {

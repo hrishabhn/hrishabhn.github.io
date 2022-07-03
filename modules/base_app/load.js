@@ -24,7 +24,7 @@ function loadApp() {
     // const testQ = 'sapi'
     // spotlight.elem().value = testQ
     // spotlight.run(testQ)
-    
+    // modal.add(budget.modal())
 
 
     // createIcon()
