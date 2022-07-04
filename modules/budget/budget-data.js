@@ -67,6 +67,11 @@ const budgetData = [
         amount: 2.29,
         date: '3 Jul 2022',
     },
+    {
+        merchant: budgetMerch.tmb,
+        amount: 4.8,
+        date: '4 Jul 2022',
+    },
 ]
 
 // console.log(budgetData)
