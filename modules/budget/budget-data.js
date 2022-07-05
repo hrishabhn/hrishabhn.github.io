@@ -97,6 +97,12 @@ const budgetData = [
         amount: 3.5,
         date: '5 Jul 2022',
     },
+    {
+        merchant: budgetMerch.tmb,
+        amount: 80,
+        date: '5 Jul 2022',
+        note: 'T-Jove',
+    },
 ]
 
 // console.log(budgetData)

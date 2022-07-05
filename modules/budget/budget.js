@@ -278,7 +278,7 @@ const budget = {
     resultCard: {
         week: function () {
             let card = resultCard.base({
-                name: 'Budget',
+                name: 'Spending',
                 buttons: [{
                     icon: SFSymbols.dollarsign.circle.fill,
                     trigger: function () { modal.add(budget.modal()) },
