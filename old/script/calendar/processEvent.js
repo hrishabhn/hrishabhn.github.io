@@ -81,6 +81,7 @@ function eventColor(calendar) {
         'Errands': 'FF40FF',
         'Outings': 'FB0207',
         'HP': '0096d6',
+        'Calendar': '0096d6',
     }
 
     if (data[calendar]) {
