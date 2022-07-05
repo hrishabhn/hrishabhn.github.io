@@ -74,10 +74,22 @@ const budgetMerch = {
         name: 'Coaliment',
         cat: budgetCat.grocery,
     },
+    hpCafe: {
+        name: 'HP Cafeteria',
+        cat: budgetCat.outing,
+        thumb: thumbData.hp,
+        color: Colors.blue,
+    },
 }
 
 const budget = {
     merch: [
+        {
+            name: budgetCat.outing.name,
+            data: [
+                budgetMerch.hpCafe,
+            ],
+        },
         {
             name: budgetCat.coffee.name,
             data: [

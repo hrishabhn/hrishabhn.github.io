@@ -140,6 +140,7 @@ const thumbData = {
     'british': 'ba.jpeg',
     'ryanair': 'ryanair.jpeg',
     'reddit': 'reddit.jpeg',
+    hp: 'hp.svg',
 
     // flags
     'hk': 'hk.png',

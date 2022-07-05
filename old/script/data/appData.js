@@ -745,6 +745,7 @@ const appData = {
             distract: false,
             dockIcon: SFSymbols.graduationcap.fill,
         },
+        commonApps.syllabus('thermo'),
         // commonApps.onedrive('https://purdue0-my.sharepoint.com/:f:/r/personal/hnadkarn_purdue_edu/Documents/Summer%202022/AMST%20101?csf=1&web=1&e=e8EbtC'),
         commonApps.notion('https://www.notion.so/hrishabhn/ES-2310-ME-200-UWyo-bd352613984c46e3b8be09799cc84448'),
     ],

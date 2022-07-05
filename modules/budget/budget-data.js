@@ -69,8 +69,18 @@ const budgetData = [
     },
     {
         merchant: budgetMerch.tmb,
-        amount: 4.8,
+        amount: 9.6,
         date: '4 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.coaliment,
+        amount: 4.63,
+        date: '4 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.hpCafe,
+        amount: 3.36,
+        date: '5 Jul 2022',
     },
 ]
 
