@@ -13,34 +13,6 @@ const focus = {
                     work: false,
                     distract: false,
                 },
-                {
-                    name: 'Travel',
-                    id: 'travel',
-                    desc: 'Flights & Hotels',
-                    thumb: thumbData['plane'],
-                    icon: SFSymbols.airplane,
-                    color: Colors.mint,
-                    apps: appData['travel'],
-                    work: false,
-                    distract: false,
-                    widgets: function () {
-                        return [
-                            // widgets.trip.card('barca'),
-                            // train.widget('mad-bcn'),
-                            // train.widget('bcn-mad'),
-                            widgets.trip.card('exeter'),
-                            widgets.flight.card('mad-lhr'),
-                            train.widget('lon-exe'),
-                            train.widget('exe-lon'),
-                            widgets.flight.card('lgw-mad'),
-                        ]
-                    },
-                    // trays: function () {
-                    //     return [
-                    //         trayWithKids([flight.card('mad-tfs'), flight.card('tfs-mad'),], 30, 0)
-                    //     ]
-                    // },
-                },
                 // {
                 //     name: 'Workout',
                 //     id: 'workout',
@@ -197,6 +169,39 @@ const focus = {
                     apps: appData.thermo,
                     work: true,
                     distract: false,
+                },
+            ],
+        },
+        {
+            name: 'Other',
+            data: [
+                {
+                    name: 'Travel',
+                    id: 'travel',
+                    desc: 'Flights & Hotels',
+                    thumb: thumbData['plane'],
+                    icon: SFSymbols.airplane,
+                    color: Colors.mint,
+                    apps: appData['travel'],
+                    work: false,
+                    distract: false,
+                    widgets: function () {
+                        return [
+                            // widgets.trip.card('barca'),
+                            // train.widget('mad-bcn'),
+                            // train.widget('bcn-mad'),
+                            widgets.trip.card('exeter'),
+                            widgets.flight.card('mad-lhr'),
+                            train.widget('lon-exe'),
+                            train.widget('exe-lon'),
+                            widgets.flight.card('lgw-mad'),
+                        ]
+                    },
+                    // trays: function () {
+                    //     return [
+                    //         trayWithKids([flight.card('mad-tfs'), flight.card('tfs-mad'),], 30, 0)
+                    //     ]
+                    // },
                 },
             ],
         },
