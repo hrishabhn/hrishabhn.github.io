@@ -80,6 +80,18 @@ const budgetMerch = {
         thumb: thumbData.hp,
         color: Colors.blue,
     },
+    dia: {
+        name: 'Dia',
+        cat: budgetCat.grocery,
+        // thumb: 'lidl.jpeg',
+        // color: Colors.indigo,
+    },
+    consum: {
+        name: 'Consum',
+        cat: budgetCat.grocery,
+        // thumb: 'lidl.jpeg',
+        // color: Colors.indigo,
+    },
 }
 
 const budget = {
@@ -101,6 +113,8 @@ const budget = {
             data: [
                 budgetMerch.condis,
                 budgetMerch.coaliment,
+                budgetMerch.consum,
+                budgetMerch.dia,
                 budgetMerch.lidl,
                 budgetMerch.wanxin,
             ],

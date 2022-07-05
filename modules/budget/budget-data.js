@@ -82,6 +82,21 @@ const budgetData = [
         amount: 3.36,
         date: '5 Jul 2022',
     },
+    {
+        merchant: budgetMerch.dia,
+        amount: 4.5,
+        date: '5 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.lidl,
+        amount: 50.99,
+        date: '5 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.consum,
+        amount: 3.5,
+        date: '5 Jul 2022',
+    },
 ]
 
 // console.log(budgetData)
