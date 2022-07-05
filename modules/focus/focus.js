@@ -33,6 +33,44 @@ const focus = {
             ],
         },
         {
+            name: 'Work',
+            data: [
+                {
+                    name: 'HP',
+                    id: 'hp',
+                    desc: 'Internship',
+                    // thumb: thumbData['globe'],
+                    icon: SFSymbols.briefcase.fill,
+                    color: Colors.blue,
+                    apps: appData.hp,
+                    work: true,
+                    distract: false,
+                },
+                {
+                    name: 'Spanish',
+                    id: 'span',
+                    desc: 'Learn & Practice',
+                    thumb: thumbData['globe'],
+                    icon: SFSymbols.globe,
+                    color: Colors.red,
+                    apps: appData.span,
+                    work: false,
+                    distract: false,
+                },
+                {
+                    name: 'Thermodynamics',
+                    id: 'thermo',
+                    desc: 'ES 2310',
+                    thumb: null,
+                    icon: SFSymbols.flame.fill,
+                    color: Colors.yellow,
+                    apps: appData.thermo,
+                    work: true,
+                    distract: false,
+                },
+            ],
+        },
+        {
             name: 'Media',
             data: [
                 {
@@ -142,33 +180,6 @@ const focus = {
                     trays: function () {
                         return [podElem.recent.tray()]
                     },
-                },
-            ],
-        },
-        {
-            name: 'Work',
-            data: [
-                {
-                    name: 'Spanish',
-                    id: 'span',
-                    desc: 'Learn & Practice',
-                    thumb: thumbData['globe'],
-                    icon: SFSymbols.globe,
-                    color: Colors.red,
-                    apps: appData.span,
-                    work: false,
-                    distract: false,
-                },
-                {
-                    name: 'Thermodynamics',
-                    id: 'thermo',
-                    desc: 'ES 2310',
-                    thumb: null,
-                    icon: SFSymbols.flame.fill,
-                    color: Colors.yellow,
-                    apps: appData.thermo,
-                    work: true,
-                    distract: false,
                 },
             ],
         },

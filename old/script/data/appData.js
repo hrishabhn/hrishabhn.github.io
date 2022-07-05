@@ -750,6 +750,25 @@ const appData = {
         commonApps.notion('https://www.notion.so/hrishabhn/ES-2310-ME-200-UWyo-bd352613984c46e3b8be09799cc84448'),
     ],
 
+    hp: [
+        {
+            name: 'Workday',
+            link: 'https://wd5.myworkday.com/hp',
+            desc: 'Portal',
+            icon: SFSymbols.person.fill,
+            color: Colors.blue,
+            distract: false,
+        },
+        commonApps.notion('https://www.notion.so/hrishabhn/HP-0c796b15ffba44b0bf1e4266f04c8599'),
+        {
+            name: 'Zoom',
+            link: 'https://hp.zoom.us',
+            desc: 'Video Calls',
+            thumb: 'zoom.jpeg',
+            color: Colors.blue,
+            distract: false,
+        },
+    ]
 
 
     // 'amst': [
