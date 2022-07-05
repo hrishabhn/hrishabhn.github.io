@@ -111,6 +111,9 @@ for (const x of budgetData) {
     if (x.merchant) {
         x.name = x.merchant.name
         x.cat = x.merchant.cat
+        x.icon = x.merchant.icon
+        x.thumb = x.merchant.thumb
+        x.color = x.merchant.color
     }
     x.date = new Date(x.date)
 
@@ -145,12 +148,6 @@ for (const k in budgetMerch) {
     m.spend = 0
     for (const d of budget.thisWeek) for (const t of d.data) if (t.merchant === m) m.spend += t.amount
     budget.merchOrd.push(m)
-
-    m.id = k
-    if (!m.thumb && !m.icon) {
-        m.icon = m.cat.icon
-        m.color = m.cat.color
-    }
 }
 
 budget.merchOrd.sort((a, b) => b.spend - a.spend)

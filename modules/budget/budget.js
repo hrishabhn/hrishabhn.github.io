@@ -94,6 +94,16 @@ const budgetMerch = {
     },
 }
 
+
+for (const k in budgetMerch) {
+    const m = budgetMerch[k]
+    m.id = k
+    if (!m.thumb && !m.icon) {
+        m.icon = m.cat.icon
+        m.color = m.cat.color
+    }
+}
+
 const budget = {
     merch: [
         {
@@ -301,6 +311,18 @@ const budget = {
             for (const d of budget.thisWeek) {
                 let col = document.createElement('div')
                 col.classList = 'column clickable-o'
+                col.onclick = function (e) {
+                    let menuData = []
+                    for (const t of d.data) menuData.push({
+                        type: 'app',
+                        name: t.name,
+                        desc: `€${t.amount}`,
+                        thumb: t.thumb,
+                        icon: t.icon,
+                        color: t.color,
+                    })
+                    context.show([{ name: processDate.day.long(d.date), data: menuData }], e)
+                }
 
                 let bar = document.createElement('div')
                 bar.classList = 'bar '
