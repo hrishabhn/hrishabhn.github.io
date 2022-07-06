@@ -108,9 +108,18 @@ const budgetData = [
         amount: 2.6,
         date: '6 Jul 2022',
     },
+    {
+        merchant: budgetMerch.coaliment,
+        amount: 2.19,
+        date: '6 Jul 2022',
+        note: 'Dish soap',
+    },
 ]
 
-// console.log(budgetData)
+function cleanFloat(x) {
+    console.log(x)
+    return Math.round(x * 100) / 100
+}
 
 for (const x of budgetData) {
     if (x.merchant) {
@@ -134,6 +143,7 @@ for (const day of budget.thisWeek) {
         day.total += x.amount
     budget.weekTotal += day.total
 }
+budget.weekTotal = cleanFloat(budget.weekTotal)
 
 // console.log(budget.thisWeek)
 
@@ -143,6 +153,7 @@ for (const k in budgetCat) {
     const c = budgetCat[k]
     c.spend = 0
     for (const d of budget.thisWeek) for (const t of d.data) if (t.cat === c) c.spend += t.amount
+    c.spend = cleanFloat(c.spend)
     budget.cat.push(c)
 }
 
@@ -152,6 +163,7 @@ for (const k in budgetMerch) {
     const m = budgetMerch[k]
     m.spend = 0
     for (const d of budget.thisWeek) for (const t of d.data) if (t.merchant === m) m.spend += t.amount
+    m.spend = cleanFloat(m.spend)
     budget.merchOrd.push(m)
 }
 
