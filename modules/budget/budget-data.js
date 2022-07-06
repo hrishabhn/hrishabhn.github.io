@@ -103,6 +103,11 @@ const budgetData = [
         date: '5 Jul 2022',
         note: 'T-Jove',
     },
+    {
+        merchant: budgetMerch.hpCafe,
+        amount: 2.6,
+        date: '6 Jul 2022',
+    },
 ]
 
 // console.log(budgetData)
