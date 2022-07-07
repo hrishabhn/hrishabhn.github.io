@@ -228,3 +228,13 @@
         background-color: var(--brand-col-light);
     }
 }
+
+.accent-bg {
+    background-color: var(--accent-dark);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .accent-bg {
+        background-color: var(--accent-light);
+    }
+}

@@ -132,10 +132,7 @@ const budgetData = [
     },
 ]
 
-function cleanFloat(x) {
-    console.log(x)
-    return Math.round(x * 100) / 100
-}
+function cleanFloat(x) { return Math.round(x * 100) / 100 }
 
 for (const x of budgetData) {
     if (x.merchant) {
