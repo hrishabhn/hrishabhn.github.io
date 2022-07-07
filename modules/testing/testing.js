@@ -11,9 +11,5 @@ const testing = {
         card.innerText = text
         return card
     },
-    load: function() {
-        let str = ''
-        for (const x of(JSON.parse(getCookie('ideas')))) str = `${str}\n${x}`
-        console.log(str)
-    },
+    load: function() {},
 }
