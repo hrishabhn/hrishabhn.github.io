@@ -335,8 +335,7 @@ const budget = {
                 bar.classList = 'bar '
 
                 let fill = document.createElement('div')
-                fill.classList = 'fill'
-                fill = cardCol(fill, Colors.blue)
+                fill.classList = 'fill accent-bg'
                 fill.style.setProperty('height', `${(d.total / maxSpend) * 100}%`)
                 bar.append(fill)
 

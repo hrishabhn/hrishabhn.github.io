@@ -9,8 +9,6 @@
     align-items: flex-end;
     padding: 25px;
     z-index: 1000;
-
-    background-color: #ff000033;
 }
 
 #testing .content {

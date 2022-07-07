@@ -62,16 +62,11 @@
     width: 100%;
     border-radius: inherit;
     opacity: 0.75;
-    background-color: var(--accent-dark);
 }
 
 @media screen and (prefers-color-scheme: light) {
     .budget .week .chart .bar {
         background-color: var(--black-10);
-    }
-
-    .budget .week .chart .bar .fill {
-        background-color: var(--accent-light);
     }
 }
 
