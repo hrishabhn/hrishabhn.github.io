@@ -114,6 +114,22 @@ const budgetData = [
         date: '6 Jul 2022',
         note: 'Dish soap',
     },
+    {
+        name: 'Chamber',
+        cat: budgetCat.outing,
+        amount: 15.8,
+        date: '6 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.taxi,
+        amount: 6.45,
+        date: '6 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.bicing,
+        amount: 50,
+        date: '7 Jul 2022',
+    },
 ]
 
 function cleanFloat(x) {
@@ -128,6 +144,9 @@ for (const x of budgetData) {
         x.icon = x.merchant.icon
         x.thumb = x.merchant.thumb
         x.color = x.merchant.color
+    } else if (x.cat) {
+        x.icon = x.cat.icon
+        x.color = x.cat.color
     }
     x.date = new Date(x.date)
 

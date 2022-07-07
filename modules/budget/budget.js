@@ -92,6 +92,12 @@ const budgetMerch = {
         // thumb: 'lidl.jpeg',
         // color: Colors.indigo,
     },
+    bicing: {
+        name: 'Bicing',
+        cat: budgetCat.transport,
+        icon: SFSymbols.bicycle,
+        color: Colors.red,
+    },
 }
 
 
@@ -134,6 +140,7 @@ const budget = {
             data: [
                 budgetMerch.taxi,
                 budgetMerch.tmb,
+                budgetMerch.bicing,
             ],
         },
         {
