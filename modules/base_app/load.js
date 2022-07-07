@@ -13,7 +13,7 @@ function loadApp() {
     content.load()
 
     paramsLoad()
-
+    testing.load()
 
     
     // Testing

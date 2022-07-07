@@ -223,7 +223,7 @@ const budget = {
         cat.innerHTML = '<option value="" selected disabled hidden>Category</option>'
         for (const c in budgetCat) {
             let o = document.createElement('option')
-            o.innerHTML = budgetCat[c].name
+            o.innerText = budgetCat[c].name
             o.value = c
             cat.append(o)
         }
