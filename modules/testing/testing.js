@@ -11,41 +11,43 @@ const testing = {
         card.innerText = text
         return card
     },
-    load: function () {
+    load: async function () {
+        // let data = {
+        //     "parent": { "database_id": "28ae6e9e63c64e9eb92dc6877ee1cb01" },
+        //     "properties": {
+        //         "Name": { "title": [{ "text": { "content": "Lorem" } }] }
+        //         // "Tags": { "multi_select": [{ "name": "Vegetable" }, { "name": "Fruit" }] }
+        //     }
+        // }
 
 
+        // const res = await fetch('https://api.notion.com/v1/pages', {
+        //     method: 'POST',
+        //     mode: 'cors',
+        //     headers: {
+        //         'Authorization': 'Bearer secret_zVLgWAg0YcDJ9BR7udmdKzP5NLPcrulTFUGwEYr0kAO',
+        //         'Notion-Version': '2021-05-13',
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(data)
+        // });
 
-        let notion = new XMLHttpRequest()
-        notion.open("POST", 'https://api.notion.com/v1/pages')
+        // console.log(res)
 
-        notion.setRequestHeader('Authorization', 'Bearer secret_zVLgWAg0YcDJ9BR7udmdKzP5NLPcrulTFUGwEYr0kAO')
-        notion.setRequestHeader('Notion-Version', '2021-05-13')
-        notion.setRequestHeader('Content-Type', 'application/json')
 
-        notion.onload = function () {
-            console.log(notion.responseText)
-        }
+        // let notion = new XMLHttpRequest()
+        // notion.open("POST", 'https://api.notion.com/v1/pages')
 
-        let data = {
-            "parent": { "database_id": "28ae6e9e63c64e9eb92dc6877ee1cb01" },
-            "properties": {
-                "Name": { "title": [{ "text": { "content": "Lorem" } }] },
-                "Tags": { "multi_select": [{ "name": "Vegetable" }, { "name": "Fruit" }] }
-            }
-        }
+        // notion.setRequestHeader('Authorization', 'Bearer secret_zVLgWAg0YcDJ9BR7udmdKzP5NLPcrulTFUGwEYr0kAO')
+        // notion.setRequestHeader('Notion-Version', '2021-05-13')
+        // notion.setRequestHeader('Content-Type', 'application/json')
 
-        notion.send(JSON.stringify(data))
+        // notion.onload = function () {
+        //     console.log(notion.responseText)
+        // }
 
-        // xhr.setRequestHeader("Accept", "application/json");
-        // xhr.setRequestHeader("Content-Type", "application/json");
 
-        // xhr.onload = () => console.log(xhr.responseText);
+        // notion.send(JSON.stringify(data))
 
-        // let data = `{
-        //     "Id": 78912,
-        //     "Customer": "Jason Sweet",
-        // }`;
-
-        // xhr.send(data);
     },
 }
