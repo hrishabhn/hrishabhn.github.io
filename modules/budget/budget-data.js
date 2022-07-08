@@ -137,7 +137,7 @@ const budgetData = [
     },
     {
         merchant: budgetMerch.hpCafe,
-        amount: 2.6,
+        amount: 6.9,
         date: '8 Jul 2022',
     },
 ]
