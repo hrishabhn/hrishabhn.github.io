@@ -127,8 +127,18 @@ const budgetData = [
     },
     {
         merchant: budgetMerch.bicing,
-        amount: 50,
+        amount: 50.35,
         date: '7 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.ikea,
+        amount: 41.44,
+        date: '7 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.hpCafe,
+        amount: 2.6,
+        date: '8 Jul 2022',
     },
 ]
 
