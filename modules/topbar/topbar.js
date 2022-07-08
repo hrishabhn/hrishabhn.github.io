@@ -87,6 +87,12 @@ const topbar = {
                 icon: SFSymbols.checklist,
                 distract: false,
             },
+            {
+                name: 'Inbox',
+                link: 'https://www.notion.so/hrishabhn/28ae6e9e63c64e9eb92dc6877ee1cb01?v=e0bbba29b6be41a4a6ab2ab60ff1f8f1',
+                icon: SFSymbols.lightbulb.fill,
+                distract: false,
+            },
             // {
             //     name: 'ClickUp',
             //     link: 'https://app.clickup.com/8450846/v/l/6-182481617-1',
