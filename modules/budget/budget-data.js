@@ -140,6 +140,12 @@ const budgetData = [
         amount: 6.9,
         date: '8 Jul 2022',
     },
+    {
+        name: 'Bar Crawl',
+        cat: budgetCat.outing,
+        amount: 43.8,
+        date: '8 Jul 2022',
+    },
 ]
 
 function cleanFloat(x) { return Math.round(x * 100) / 100 }
