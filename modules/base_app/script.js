@@ -214,3 +214,9 @@ function capitalizeFirstLetter(str) { return str.charAt(0).toUpperCase() + str.s
 function randomElem(array) { return array[Math.floor(Math.random() * array.length)] }
 
 function randomNumber(n) { return Math.floor(Math.random() * n) }
+
+function strToElem(str) {
+    let x = document.createElement('div')
+    x.innerHTML = str
+    return x.firstChild
+}

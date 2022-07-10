@@ -10,11 +10,11 @@ const SF = {
             for (const x of SF.test.allIcons()) card.append(appObject.bw({
                 name: x.name,
                 icon: x.icon,
-                trigger: function () {
-                    SF.render.notion(x.icon, x.name)
-                    // navigator.clipboard.writeText(x.name)
-                    // alert('Copied!')
-                }
+                // trigger: function () {
+                //     // SF.render.ios2(x.icon, x.name)
+                //     // navigator.clipboard.writeText(x.name)
+                //     // alert('Copied!')
+                // }
             }))
 
             // process input
@@ -134,7 +134,39 @@ const SF = {
 
             // alert(icon.outerHTML)
             saveSvg(icon, 'test')
-        }
+        },
+        ios2: function (str, col) {
+            let icon = strToElem(str)
+
+            // path color and size
+            icon.firstChild.setAttribute('fill', '#fff')
+            // icon.firstChild.setAttribute('transform', 'scale(0.8)')
+            // icon.firstChild.setAttribute('transform-origin', 'center center')
+            
+
+            // mg
+            let grad = document.createElement('rect')
+            grad.setAttribute('height', '100%')
+            grad.setAttribute('width', '100%')
+            grad.setAttribute('opacity', '0.2')
+            grad.setAttribute('fill', "url('#grad')")
+
+            // bg color
+            let bg = document.createElement('rect')
+            bg.setAttribute('height', '100%')
+            bg.setAttribute('width', '100%')
+            bg.setAttribute('fill', `#${col}`)
+
+            // add gradient
+            icon.innerHTML = `<linearGradient id="grad" gradientTransform="rotate(90)"><stop offset="5%" stop-color="#fff"></stop><stop offset="95%" stop-color="#000"></stop></linearGradient>${icon.innerHTML}`
+            icon.prepend(grad)
+            icon.prepend(bg)
+            icon.setAttribute('height', '512px')
+            icon.setAttribute('width', '512px')
+
+            console.log(icon)
+            saveSvg(icon, 'test')
+        },
 
     },
 }

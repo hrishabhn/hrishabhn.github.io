@@ -61,7 +61,10 @@ const Colors = {
         light: 'ffcc00',
         fg: ColorFG.dark,
     },
-
+    gray: {
+        dark: '8e8e93',
+        light: '8e8e93',
+    },
 }
 
 const colorModal = function () {

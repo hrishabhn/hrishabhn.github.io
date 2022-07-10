@@ -11,7 +11,11 @@ const testing = {
         card.innerText = text
         return card
     },
-    load: async function () {
+    load: function () {
+        // SF.render.ios2(SFSymbols.location.fill, Colors.blue.dark)
+        // colorModal()
+
+
         // let data = {
         //     "parent": { "database_id": "28ae6e9e63c64e9eb92dc6877ee1cb01" },
         //     "properties": {

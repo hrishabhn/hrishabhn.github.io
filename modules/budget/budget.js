@@ -20,7 +20,7 @@ const budgetCat = {
         color: Colors.red,
     },
     coffee: {
-        name: 'Coffee & Pastries',
+        name: 'Coffee & Bakery',
         icon: SFSymbols.cupAndSaucer.fill,
         color: Colors.orange,
     },
@@ -65,10 +65,10 @@ const budgetMerch = {
         color: Colors.indigo,
     },
     bakery: {
-        name: 'Bakery',
+        name: 'Coffee & Bakery',
         cat: budgetCat.coffee,
-        icon: SFSymbols.cupAndSaucer.fill,
-        color: Colors.orange,
+        // icon: SFSymbols.cupAndSaucer.fill,
+        // color: Colors.orange,
     },
     coaliment: {
         name: 'Coaliment',
