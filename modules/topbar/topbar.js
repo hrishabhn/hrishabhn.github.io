@@ -89,6 +89,12 @@ const topbar = {
                 icon: SFSymbols.trayAndArrow.down.fill,
                 distract: false,
             },
+            {
+                name: 'Projects',
+                link: 'https://www.notion.so/hrishabhn/9159029f31614382bf98b669e01fbba7?v=9a4f3769a43e468d8885738fcbe71809',
+                icon: SFSymbols.arrow.triangle.circlepath,
+                distract: false,
+            },
             // {
             //     name: 'ClickUp',
             //     link: 'https://app.clickup.com/8450846/v/l/6-182481617-1',
