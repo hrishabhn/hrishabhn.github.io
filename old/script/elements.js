@@ -62,7 +62,7 @@ const elems = {
     // types
     p: function (text) {
         let elem = document.createElement('p')
-        elem.innerText = text
+        elem.innerHTML = text
         return elem
     },
     a: function (icon, text) {

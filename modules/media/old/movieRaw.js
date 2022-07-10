@@ -1,17 +1,9 @@
-const soonMovies = [
-    movieDict.kenobi,
-    movieDict.boys,
-]
-
 let movieRaw = [
     {
         name: 'Up next',
         data: [
-            movieDict.fargo,
-            movieDict.fleabag,
-            movieDict.wecrashed,
-            movieDict.prehistoric,
-            movieDict.clarkson,
+            movieDict.lost,
+            movieDict.kenobi,
             // 'primevideo://detail?gti=amzn1.dv.gti.b346f853-671f-431f-82db-4cda8a03fe1f'
             // https://www.primevideo.com/gp/video/detail/B09WV8HF7Q
         ],
@@ -19,6 +11,11 @@ let movieRaw = [
     {
         name: 'My list',
         data: [
+            movieDict.fargo,
+            movieDict.fleabag,
+            movieDict.wecrashed,
+            movieDict.prehistoric,
+            movieDict.clarkson,
             movieDict.attack,
             movieDict.atlanta,
             movieDict.severance,
@@ -132,6 +129,7 @@ let movieRaw = [
         data: [
             movieDict.alice,
             movieDict.always,
+            movieDict.boys,
             movieDict.curb,
             movieDict.diabolical,
             movieDict.falcon,
