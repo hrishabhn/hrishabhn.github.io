@@ -5087,12 +5087,19 @@ const movieDict = {
         },
     },
     'lost': {
-        name: "Lost",
-        id: "lost",
-        link: "https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb",
+        name: 'Lost',
+        id: 'lost',
+        link: 'https://www.hulu.com/series/lost-466b3994-b574-44f1-88bc-63707507a6cb',
         info: {
             water: movieServices.hulu,
-            description: "Action &#149 Adventure &#149 6 Seasons &#149 2004 - 2010",
+            seasons: 6,
+            yearStart: 2004,
+            yearEnd: 2010,
+            genre: [
+                'adventure',
+                'drama',
+                'mystery',
+            ],
             summary: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
         },
         style: {
@@ -5102,18 +5109,22 @@ const movieDict = {
                     type: 'jpg',
                     title: true,
                 },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
             },
             title: {
                 type: 'png',
                 size: 'mid',
             },
-            mobileType: 'jpg',
-            mobileSize: '7 / 10',
         },
         apps: {
-            tvTimeID: "73739",
-            reelgoodLink: "https://reelgood.com/show/lost-2004",
-            imdbID: "tt0411008",
+            tvTimeID: '73739',
+            reelgoodLink: 'https://reelgood.com/show/lost-2004',
+            imdbID: 'tt0411008',
+            subReddit: 'lost',
         },
     },
     'brooklyn': {
