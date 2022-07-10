@@ -62,35 +62,31 @@ const topbar = {
             {
                 name: 'OneDrive',
                 link: 'https://purdue0-my.sharepoint.com',
-                // desc: 'Files',
                 icon: SFSymbols.icloud.fill,
                 distract: false,
             },
             {
                 name: 'Notion',
                 link: 'https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945',
-                // desc: 'Notes',
                 icon: SFSymbols.note.text,
                 distract: false,
             },
             {
-                name: 'Projects',
+                name: 'Task Dashboard',
                 link: 'https://www.notion.so/hrishabhn/8c39216b144643269dcab62c039973e4?v=b4fecd9c96e94552b7f73d385ee18373',
-                // desc: 'To do list',
                 icon: SFSymbols.align.horizontal.left.fill,
                 distract: false,
             },
             {
-                name: 'Tasks',
+                name: 'Task Queue',
                 link: 'https://www.notion.so/hrishabhn/8c39216b144643269dcab62c039973e4?v=a8d35c7618314c9ea1eb292c40aee699',
-                // desc: 'To do list',
                 icon: SFSymbols.checklist,
                 distract: false,
             },
             {
                 name: 'Inbox',
                 link: 'https://www.notion.so/hrishabhn/28ae6e9e63c64e9eb92dc6877ee1cb01?v=e0bbba29b6be41a4a6ab2ab60ff1f8f1',
-                icon: SFSymbols.lightbulb.fill,
+                icon: SFSymbols.trayAndArrow.down.fill,
                 distract: false,
             },
             // {

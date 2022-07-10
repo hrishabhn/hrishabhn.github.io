@@ -12,7 +12,7 @@ const testing = {
         return card
     },
     load: function () {
-        // SF.render.ios2(SFSymbols.location.fill, Colors.blue.dark)
+        // SF.render.ios2(SFSymbols.app.dashed, Colors.cyan.dark)
         // colorModal()
 
 
