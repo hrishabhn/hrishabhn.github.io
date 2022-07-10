@@ -16,6 +16,14 @@
     }
 }
 
+/* divider */
+#topbar .divider {
+    height: 12px;
+    width: 1px;
+    border-radius: 100px;
+    opacity: 0.2;
+}
+
 /* app item */
 #topbar .item {
     height: 30px;

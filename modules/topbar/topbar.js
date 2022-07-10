@@ -71,6 +71,7 @@ const topbar = {
                 icon: SFSymbols.note.text,
                 distract: false,
             },
+            { divider: true },
             {
                 name: 'Task Dashboard',
                 link: 'https://www.notion.so/hrishabhn/8c39216b144643269dcab62c039973e4?v=b4fecd9c96e94552b7f73d385ee18373',
@@ -155,9 +156,13 @@ const topbar = {
     app: {
         card: function (app) {
             let card = document.createElement('a')
+            if (app.divider) {
+                card.classList = 'divider layer-fg'
+                console.log(card)
+            } else {
             // id + class
-            if (app.id) card.id = app.id
             card.classList = 'item'
+            if (app.id) card.id = app.id
 
             // if active
             if (app.active) card.classList.add('on')
@@ -186,6 +191,7 @@ const topbar = {
                 card.classList.add('clickable-o')
                 card.prepend(bg)
             } else card.classList.add('layer-hover')
+            }
 
             return card
         },
