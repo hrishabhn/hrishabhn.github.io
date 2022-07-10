@@ -151,6 +151,11 @@ const budgetData = [
         amount: 7.2,
         date: '10 Jul 2022',
     },
+    {
+        merchant: budgetMerch.consum,
+        amount: 3.5,
+        date: '10 Jul 2022',
+    },
 ]
 
 function cleanFloat(x) { return Math.round(x * 100) / 100 }

@@ -19,7 +19,6 @@ function loadApp() {
     // Testing
     // movieDict['himym'].detail()
     // SF.test.modal()
-    // colorModal()
 
     // const testQ = 'sapi'
     // spotlight.elem().value = testQ

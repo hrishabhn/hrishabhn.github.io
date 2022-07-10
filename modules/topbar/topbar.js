@@ -67,13 +67,13 @@ const topbar = {
             },
             {
                 name: 'Notion',
-                link: 'https://www.notion.so/Homepage-2-0-ebdb7991969f49ffa7be6906f7685945',
+                link: 'https://www.notion.so/hrishabhn/Homepage-3-0-d4eb0250265d408dade3bb38f3355b90',
                 icon: SFSymbols.note.text,
                 distract: false,
             },
             { divider: true },
             {
-                name: 'Task Dashboard',
+                name: 'Task Board',
                 link: 'https://www.notion.so/hrishabhn/8c39216b144643269dcab62c039973e4?v=b4fecd9c96e94552b7f73d385ee18373',
                 icon: SFSymbols.align.horizontal.left.fill,
                 distract: false,

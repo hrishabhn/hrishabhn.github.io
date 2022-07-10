@@ -10,9 +10,9 @@ const budgetCat = {
         color: Colors.blue,
     },
     home: {
-        name: 'Home & Furniture',
+        name: 'Home & Shopping',
         icon: SFSymbols.house.fill,
-        color: Colors.yellow,
+        color: Colors.cyan,
     },
     outing: {
         name: 'Food & Drinks',
@@ -83,20 +83,22 @@ const budgetMerch = {
     dia: {
         name: 'Dia',
         cat: budgetCat.grocery,
-        // thumb: 'lidl.jpeg',
-        // color: Colors.indigo,
     },
     consum: {
         name: 'Consum',
         cat: budgetCat.grocery,
-        // thumb: 'lidl.jpeg',
-        // color: Colors.indigo,
     },
     bicing: {
         name: 'Bicing',
         cat: budgetCat.transport,
         icon: SFSymbols.bicycle,
         color: Colors.red,
+    },
+    amazon: {
+        name: 'Amazon',
+        cat: budgetCat.home,
+        thumb: 'amazon.jpeg',
+        color: Colors.orange,
     },
 }
 
@@ -147,6 +149,7 @@ const budget = {
             name: budgetCat.home.name,
             data: [
                 budgetMerch.ikea,
+                budgetMerch.amazon,
             ],
         },
     ],
