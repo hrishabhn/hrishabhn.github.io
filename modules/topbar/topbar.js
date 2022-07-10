@@ -160,37 +160,37 @@ const topbar = {
                 card.classList = 'divider layer-fg'
                 console.log(card)
             } else {
-            // id + class
-            card.classList = 'item'
-            if (app.id) card.id = app.id
+                // id + class
+                card.classList = 'item'
+                if (app.id) card.id = app.id
 
-            // if active
-            if (app.active) card.classList.add('on')
+                // if active
+                if (app.active) card.classList.add('on')
 
-            // onclick
-            card.onclick = function (e) { openApp(app, e) }
-            if (app.link) card.style.setProperty('cursor', 'pointer')
+                // onclick
+                card.onclick = function (e) { openApp(app, e) }
+                if (app.link) card.style.setProperty('cursor', 'pointer')
 
-            // icon
-            card.append(elems.icon(app.icon))
+                // icon
+                card.append(elems.icon(app.icon))
 
-            // text big or hover
-            if (app.big) {
-                card.classList.add('big')
-                let text = elems.p(app.name)
-                text.classList = 'big-text'
-                card.append(text)
-            } else {
-                card.append(appObject.hover(app))
-            }
+                // text big or hover
+                if (app.big) {
+                    card.classList.add('big')
+                    let text = elems.p(app.name)
+                    text.classList = 'big-text'
+                    card.append(text)
+                } else {
+                    card.append(appObject.hover(app))
+                }
 
-            // color or basic
-            if (app.color) {
-                let bg = elems.bg()
-                bg = cardCol(bg, { color: app.color })
-                card.classList.add('clickable-o')
-                card.prepend(bg)
-            } else card.classList.add('layer-hover')
+                // color or basic
+                if (app.color) {
+                    let bg = elems.bg()
+                    bg = cardCol(bg, { color: app.color })
+                    card.classList.add('clickable-o')
+                    card.prepend(bg)
+                } else card.classList.add('layer-hover')
             }
 
             return card
