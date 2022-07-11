@@ -722,9 +722,9 @@ const movieDict = {
             netflix: '80192098'
         },
         info: {
-            water: movieServices.hulu,
+            water: movieServices.netflix,
             // date: '',
-            seasons: 4,
+            seasons: 5,
             yearStart: 2017,
             yearEnd: 2021,
             genre: [
@@ -741,13 +741,15 @@ const movieDict = {
                     type: 'webp',
                     title: true,
                 },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                },
             },
             title: {
                 type: 'png',
                 size: 'widest',
             },
-            mobileType: 'jpg',
-            mobileSize: '10 / 9',
         },
         apps: {
             tvTimeID: '327417',

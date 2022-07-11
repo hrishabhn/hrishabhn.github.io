@@ -161,6 +161,17 @@ const budgetData = [
         amount: 24.38,
         date: '10 Jul 2022',
     },
+    {
+        merchant: budgetMerch.hpCafe,
+        amount: 2.6,
+        date: '11 Jul 2022',
+    },
+    {
+        name: 'Keihl\'s',
+        cat: budgetCat.health,
+        amount: 40.12,
+        date: '11 Jul 2022',
+    },
 ]
 
 function cleanFloat(x) { return Math.round(x * 100) / 100 }

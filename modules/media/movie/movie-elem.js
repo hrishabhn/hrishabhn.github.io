@@ -72,7 +72,7 @@ const movieElem = {
         let hotstarHover
         item.onmouseover = function () {
             updateGiant = setTimeout(function () { movieElem.giant.update(movie) }, 1000);
-            hotstarHover = setTimeout(function () { item.classList.add('hovering') }, 200);
+            // hotstarHover = setTimeout(function () { item.classList.add('hovering') }, 200);
         }
         item.onmouseleave = function () {
             clearTimeout(updateGiant)
