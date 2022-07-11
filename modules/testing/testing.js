@@ -14,6 +14,7 @@ const testing = {
     load: function () {
         // SF.render.ios2(SFSymbols.app.dashed, Colors.cyan.dark)
         // colorModal()
+        // movieDict['himym'].detail()
 
 
         // let data = {

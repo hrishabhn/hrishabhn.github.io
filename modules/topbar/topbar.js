@@ -156,10 +156,8 @@ const topbar = {
     app: {
         card: function (app) {
             let card = document.createElement('a')
-            if (app.divider) {
-                card.classList = 'divider layer-fg'
-                console.log(card)
-            } else {
+            if (app.divider) card.classList = 'divider layer-fg'
+            else {
                 // id + class
                 card.classList = 'item'
                 if (app.id) card.id = app.id
