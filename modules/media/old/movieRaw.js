@@ -1,3 +1,5 @@
+const soonMovies = []
+
 let movieRaw = [
     {
         name: 'Up next',
