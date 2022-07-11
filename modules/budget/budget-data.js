@@ -172,6 +172,11 @@ const budgetData = [
         amount: 40.12,
         date: '11 Jul 2022',
     },
+    {
+        merchant: budgetMerch.wanxin,
+        amount: 4.78,
+        date: '11 Jul 2022',
+    },
 ]
 
 function cleanFloat(x) { return Math.round(x * 100) / 100 }
