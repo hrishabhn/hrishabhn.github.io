@@ -17,7 +17,6 @@ function loadApp() {
 
     
     // Testing
-    // movieDict['himym'].detail()
     // SF.test.modal()
 
     // const testQ = 'sapi'

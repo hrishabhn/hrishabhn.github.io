@@ -147,7 +147,7 @@ const budgetData = [
         date: '8 Jul 2022',
     },
     {
-        merchant: budgetMerch.bakery,
+        merchant: budgetMerch.buenasMigas,
         amount: 7.2,
         date: '10 Jul 2022',
     },
@@ -176,6 +176,16 @@ const budgetData = [
         merchant: budgetMerch.wanxin,
         amount: 4.78,
         date: '11 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.consum,
+        amount: 4.25,
+        date: '12 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.buenasMigas,
+        amount: 4,
+        date: '12 Jul 2022',
     },
 ]
 

@@ -100,6 +100,10 @@ const budgetMerch = {
         thumb: 'amazon.jpeg',
         color: Colors.orange,
     },
+    buenasMigas: {
+        name: 'Buenas Migas',
+        cat: budgetCat.coffee,
+    },
 }
 
 
@@ -123,6 +127,7 @@ const budget = {
         {
             name: budgetCat.coffee.name,
             data: [
+                budgetMerch.buenasMigas,
                 budgetMerch.bakery,
             ],
         },
