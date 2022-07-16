@@ -1,5 +1,5 @@
 const calendar = {
-    topCard: function() {
+    topCard: function () {
         let card = calendar.splashCard()
         card.classList.remove('splash-card')
         card.classList.add('top-card')
@@ -71,5 +71,16 @@ const calendar = {
         eventCard.append(info)
 
         return eventCard
+    },
+    resultCard: function () {
+        const title = `${processDate.day.long(new Date())}, ${new Date().getDate()} ${processDate.month.long(new Date())}`
+        let card = resultCard.base({
+            name: title,
+            buttons: [{ icon: SFSymbols.calendar }],
+        })
+
+        // console.log(todayEvents)
+
+        return card
     },
 }
