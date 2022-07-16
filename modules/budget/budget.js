@@ -371,28 +371,18 @@ const budget = {
                 }],
                 type: 'vstack',
             })
-            card.classList.add('budget')
-
-            let topCat = document.createElement('div')
-            topCat.classList = 'rank vstack'
+            card.classList.add('fill-height')  //@
 
             let max = 0
             for (const k in budgetCat) max = Math.max(max, budgetCat[k].spend)
 
-            let i = 0
-            for (const c of budget.cat) if (i < 3) {
-                topCat.append(rankItem({
-                    name: c.name,
-                    icon: c.icon,
-                    color: c.color,
-                    amount: c.spend,
-                    total: max,
-                }))
-                i++
-            }
-
-            card.lastChild.append(topCat)
-
+            for (const c of budget.cat.slice(0, 3)) card.lastChild.append(rankItem({
+                name: c.name,
+                icon: c.icon,
+                color: c.color,
+                amount: c.spend,
+                total: max,
+            }))
             return card
         },
         topMerch: function () {
@@ -404,29 +394,19 @@ const budget = {
                 }],
                 type: 'vstack',
             })
-            card.classList.add('budget')
-
-            let topMerch = document.createElement('div')
-            topMerch.classList = 'rank vstack'
+            card.classList.add('fill-height') //@
 
             let max = 0
             for (const k in budgetMerch) max = Math.max(max, budgetMerch[k].spend)
 
-            let i = 0
-            for (const m of budget.merchOrd) if (i < 3) {
-                topMerch.append(rankItem({
-                    name: m.name,
-                    thumb: m.thumb,
-                    icon: m.icon,
-                    color: m.color,
-                    amount: m.spend,
-                    total: max,
-                }))
-                i++
-            }
-
-            card.lastChild.append(topMerch)
-
+            for (const m of budget.merchOrd.slice(0, 3)) card.lastChild.append(rankItem({
+                name: m.name,
+                thumb: m.thumb,
+                icon: m.icon,
+                color: m.color,
+                amount: m.spend,
+                total: max,
+            }))
             return card
         },
     },
@@ -442,7 +422,8 @@ for (let i = 0; i < 7; i++) {
 }
 
 function rankItem({ name, thumb, icon, color, amount, total }) {
-    let item = elems.item()
+    let item = document.createElement('div')
+    item.classList = 'budget-rank-item clickable-o'
     item.classList.add('clickable-o')
     if (color) item = cardCol(item, { color: color })
 

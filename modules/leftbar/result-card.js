@@ -1,5 +1,5 @@
 const resultCard = {
-    base: function ({ name, buttons, type }) {
+    base: function ({ name, buttons, type, gap }) {
         let card = document.createElement('div')
         card.classList = 'result-card layer-0'
 
@@ -10,11 +10,18 @@ const resultCard = {
 
         let body = document.createElement('div')
         body.classList = 'body'
+
+        // type
         if (type == 'hstack') body.classList.add('hstack')
         else if (type == 'vstack') body.classList.add('vstack')
         else if (type == 'single') body.classList.add('single')
-        // remove when fixed
+        //@
         else body.classList.add('hstack')
+
+        // gap
+        if (gap) body.style.setProperty('gap', `${gap}px`)
+        else body.style.setProperty('gap', '10px') //@
+
 
 
         card.isEmpty = function () { return !body.hasChildNodes() }
