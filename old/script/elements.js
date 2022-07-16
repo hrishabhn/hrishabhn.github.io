@@ -47,7 +47,7 @@ const elems = {
         divider.classList = 'divider'
         return divider
     },
-    header: function() {
+    header: function () {
         let elem = document.createElement('div')
         elem.classList = 'header'
         return elem
@@ -58,6 +58,19 @@ const elems = {
         spacer.style.setProperty('--size', '40px')
         return spacer
     },
+    vstack: function (spacing) {
+        let v = document.createElement('div')
+        v.classList = 'vstack'
+        if (spacing) v.style.setProperty('gap', `${spacing}px`)
+        return v
+    },
+    hstack: function (spacing) {
+        let h = document.createElement('div')
+        h.classList = 'hstack'
+        if (spacing) h.style.setProperty('gap', `${spacing}px`)
+        return h
+    },
+
 
     // types
     p: function (text) {

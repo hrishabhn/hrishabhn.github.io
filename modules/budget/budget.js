@@ -308,6 +308,7 @@ const budget = {
                     icon: SFSymbols.dollarsign.circle.fill,
                     trigger: function () { modal.add(budget.modal()) },
                 }],
+                type: 'single',
             })
             card.classList.add('budget')
 
@@ -368,11 +369,12 @@ const budget = {
                     icon: SFSymbols.dollarsign.circle.fill,
                     trigger: function () { modal.add(budget.modal()) },
                 }],
+                type: 'vstack',
             })
             card.classList.add('budget')
 
             let topCat = document.createElement('div')
-            topCat.classList = 'rank'
+            topCat.classList = 'rank vstack'
 
             let max = 0
             for (const k in budgetCat) max = Math.max(max, budgetCat[k].spend)
@@ -400,11 +402,12 @@ const budget = {
                     icon: SFSymbols.dollarsign.circle.fill,
                     trigger: function () { modal.add(budget.modal()) },
                 }],
+                type: 'vstack',
             })
             card.classList.add('budget')
 
             let topMerch = document.createElement('div')
-            topMerch.classList = 'rank'
+            topMerch.classList = 'rank vstack'
 
             let max = 0
             for (const k in budgetMerch) max = Math.max(max, budgetMerch[k].spend)

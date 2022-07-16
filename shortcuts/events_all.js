@@ -1,7 +1,7 @@
 let events_all = [
-{"start":"2022-07-16T00:00:00+02:00","allDay":"Yes","end":"2022-07-17T00:00:00+02:00","name":"Another Test","calendar":"Key Dates","location":""},
-{"start":"2022-07-16T22:45:00+02:00","allDay":"No","end":"2022-07-16T23:15:00+02:00","name":"Test","calendar":"Errands","location":""},
-{"start":"2022-07-16T23:00:00+02:00","allDay":"No","end":"2022-07-16T23:30:00+02:00","name":"Test 2","calendar":"Work","location":""},
+{"start":"2022-07-17T00:00:00+02:00","allDay":"Yes","end":"2022-07-18T00:00:00+02:00","name":"Another Test","calendar":"Key Dates","location":""},
+{"start":"2022-07-17T21:00:00+02:00","allDay":"No","end":"2022-07-17T21:30:00+02:00","name":"Test 2","calendar":"Work","location":""},
+{"start":"2022-07-17T21:30:00+02:00","allDay":"No","end":"2022-07-17T22:00:00+02:00","name":"Test","calendar":"Errands","location":""},
 {"start":"2022-07-17T22:00:00+02:00","allDay":"No","end":"2022-07-17T22:30:00+02:00","name":"Test","calendar":"Personal","location":""},
 {"start":"2022-07-17T22:00:00+02:00","allDay":"No","end":"2022-07-17T22:30:00+02:00","name":"Test","calendar":"Personal","location":""},
 {"start":"2022-07-18T10:00:00+02:00","allDay":"No","end":"2022-07-18T11:30:00+02:00","name":"Hrishabh Oboarding - Design printers, materials of the future & sustainability","calendar":"Calendar","location":"https:\/\/hp.zoom.com\/j\/97584431042?pwd=b1p5bEoyVWQ3ay9TdERidVRETVhKUT09"},

@@ -153,7 +153,7 @@
 
 
 
-body > *, div, a, p, input{
+body > *, div, a, p, input, span{
     display: inline-flex;
     position: relative;
     align-items: center;

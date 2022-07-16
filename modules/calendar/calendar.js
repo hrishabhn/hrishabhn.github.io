@@ -76,23 +76,20 @@ const calendar = {
         let card = resultCard.base({
             name: title,
             buttons: [{ icon: SFSymbols.calendar }],
+            type: 'vstack',
+            gap: 8,
         })
         // card.id = 'calendar'
         card.style.setProperty('height', '100%')
-        card.lastChild.classList.add('single')
-
-        let tray = document.createElement('div')
-        tray.classList = 'event-tray'
 
         if (calEvents.today.length && calEvents.tomor.length) {
-            if (calEvents.today.length) for (const event of calEvents.today) tray.append(calendar.resultCardItem(event))
+            if (calEvents.today.length) for (const event of calEvents.today) card.lastChild.append(calendar.resultCardItem(event))
             if (calEvents.tomor.length) {
-                tray.append(elems.subtitle('TOMORROW'))
-                for (const event of calEvents.tomor) tray.append(calendar.resultCardItem(event))
+                card.lastChild.append(elems.subtitle('TOMORROW'))
+                for (const event of calEvents.tomor) card.lastChild.append(calendar.resultCardItem(event))
             }
-        } else tray.append(elems.subtitle('No more events today or tomorrow.'))
+        } else card.lastChild.append(elems.subtitle('No more events today or tomorrow.'))
 
-        card.lastChild.append(tray)
         return card
     },
     resultCardItem(event) {

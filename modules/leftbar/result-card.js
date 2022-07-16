@@ -1,5 +1,5 @@
 const resultCard = {
-    base: function ({ name, buttons}) {
+    base: function ({ name, buttons, type }) {
         let card = document.createElement('div')
         card.classList = 'result-card layer-0'
 
@@ -10,6 +10,12 @@ const resultCard = {
 
         let body = document.createElement('div')
         body.classList = 'body'
+        if (type == 'hstack') body.classList.add('hstack')
+        else if (type == 'vstack') body.classList.add('vstack')
+        else if (type == 'single') body.classList.add('single')
+        // remove when fixed
+        else body.classList.add('hstack')
+
 
         card.isEmpty = function () { return !body.hasChildNodes() }
         card.firstResult = function () { return body.firstChild }
