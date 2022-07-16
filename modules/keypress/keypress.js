@@ -42,7 +42,7 @@ function keyPress(e) {
             if (apps[n]) apps[n].classList.add('active')
         } else if (e.key == 'Escape') {
             e.preventDefault()
-            tvDetail.show()
+            tvDetail.hide()
         }
     } else {
         if (hotkeys[e.key]) hotkeys[e.key](e)
