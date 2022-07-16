@@ -18,7 +18,11 @@ const actors = {
 
     },
     resultCard: function (data) {
-        let card = resultCard.base({ name: 'Actors' })
+        let card = resultCard.base({
+            name: 'Actors',
+            type: 'hstack',
+            gap: 10,
+        })
         for (const x of data) card.lastChild.append(actors.card(x.actor, null))
         return card
     },

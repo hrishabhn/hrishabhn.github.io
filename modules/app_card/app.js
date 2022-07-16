@@ -90,7 +90,11 @@ const appObject = {
         return card
     },
     resultCard: function (data, name) {
-        let card = resultCard.base({ name: name ?? 'Apps' })
+        let card = resultCard.base({
+            name: name ?? 'Apps',
+            type: 'hstack',
+            gap: 10,
+        })
         for (const x of data) card.lastChild.append(appObject.resultCardItem(x))
         return card
     },

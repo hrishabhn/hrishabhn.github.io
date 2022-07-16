@@ -19,10 +19,8 @@ const resultCard = {
         else body.classList.add('hstack')
 
         // gap
-        if (gap) body.style.setProperty('gap', `${gap}px`)
-        else body.style.setProperty('gap', '10px') //@
-
-
+        if (typeof gap != 'number') alert('gap missing for ' + name)
+        body.style.setProperty('gap', `${gap}px`)
 
         card.isEmpty = function () { return !body.hasChildNodes() }
         card.firstResult = function () { return body.firstChild }

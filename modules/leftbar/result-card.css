@@ -22,7 +22,6 @@
 
 .result-card .body {
     padding: 0 15px;
-    gap: 10px;
     overflow-x: scroll;
     width: 100%;
     height: 100%;

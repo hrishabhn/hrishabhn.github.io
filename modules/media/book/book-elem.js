@@ -38,6 +38,8 @@ const bookElem = {
         let card = resultCard.base({
             name: 'Books',
             buttons: [{ icon: SFSymbols.book.fill },],
+            type: 'hstack',
+            gap: 10,
         })
         for (const x of data) card.lastChild.append(bookElem.resultCardItem(allBooks[x]))
         return card

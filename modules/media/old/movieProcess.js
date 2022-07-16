@@ -36,6 +36,8 @@ const movies = {
         let card = resultCard.base({
             name: 'TV & Movies',
             buttons: [{ icon: SFSymbols.tv.fill },],
+            type: 'hstack',
+            gap: 10,
         })
         for (const x of data) card.lastChild.append(movies.resultCardItem(movieDict[x]))
         return card

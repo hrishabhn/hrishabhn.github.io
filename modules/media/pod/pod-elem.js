@@ -38,6 +38,8 @@ const podElem = {
         let card = resultCard.base({
             name: 'Podcasts',
             buttons: [{ icon: SFSymbols.headphones },],
+            type: 'hstack',
+            gap: 10,
         })
         for (const x of data) card.lastChild.append(podElem.resultCardItem(podDict[x]))
         return card

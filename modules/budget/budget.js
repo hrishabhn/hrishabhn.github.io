@@ -309,6 +309,7 @@ const budget = {
                     trigger: function () { modal.add(budget.modal()) },
                 }],
                 type: 'single',
+                gap: 0,
             })
             card.classList.add('budget')
 
@@ -370,6 +371,7 @@ const budget = {
                     trigger: function () { modal.add(budget.modal()) },
                 }],
                 type: 'vstack',
+                gap: 5,
             })
             card.classList.add('fill-height')  //@
 
@@ -393,6 +395,7 @@ const budget = {
                     trigger: function () { modal.add(budget.modal()) },
                 }],
                 type: 'vstack',
+                gap: 5,
             })
             card.classList.add('fill-height') //@
 
