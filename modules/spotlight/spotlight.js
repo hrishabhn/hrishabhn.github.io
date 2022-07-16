@@ -71,7 +71,7 @@ const spotlight = {
             // }
             else if (qOrig !== spotlight.oldQ) {
                 document.getElementById('main').classList = 'searching'
-                removeAllChildNodes(spotlight.result)
+                while (spotlight.result.firstChild) spotlight.result.firstChild.remove()
 
                 // // remove searchable tab elem
                 // let tabOld = document.getElementById('tab-to-search')
@@ -106,7 +106,7 @@ const spotlight = {
             }
         } else {
             document.getElementById('main').classList = 'initial'
-            removeAllChildNodes(spotlight.result)
+            while (spotlight.result.firstChild) spotlight.result.firstChild.remove()
             content.load()
             if (e.key == 'Enter') window.open('https://google.com', '_self')
         }

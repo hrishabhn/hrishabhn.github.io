@@ -198,11 +198,6 @@ function googleSearch(query) {
 }
 
 
-function removeAllChildNodes(parent) {
-    while (parent.firstChild) parent.removeChild(parent.firstChild)
-}
-
-
 function processDeviceLink(link) {
     if (('ontouchstart' in document.documentElement) && link.mobile) return link.mobile
     else return link.desktop

@@ -171,7 +171,7 @@ const budget = {
         merch.classList = 'item merch clickable-o'
         merch.style.setProperty('grid-row', 'span 2')
         merch.update = function ({ name, value, thumb, icon, color }) {
-            removeAllChildNodes(merch)
+            while(merch.firstChild) merch.firstChild.remove()
             if (thumb) merch.append(elems.appThumb(thumb))
             else if (icon) {
                 merch.append(elems.icon(icon))

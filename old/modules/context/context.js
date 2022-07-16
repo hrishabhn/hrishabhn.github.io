@@ -34,7 +34,7 @@ const context = {
         // each object has name and data array
         // console.log(data)
         let menu = document.getElementById('context-menu')
-        removeAllChildNodes(menu)
+        while (menu.firstChild) menu.firstChild.remove()
 
         for (const subData of data) {
             if (subData.name) {

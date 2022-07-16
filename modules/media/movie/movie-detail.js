@@ -11,7 +11,7 @@ const tvDetail = {
     },
     hide: function () {
         tvDetail.elem.classList.remove('open')
-        removeAllChildNodes(tvDetail.elem)
+        while(tvDetail.elem.firstChild) tvDetail.elem.firstChild.remove()
     },
     card: function (key) {
         const movie = movieDict[key]
