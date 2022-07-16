@@ -57,31 +57,6 @@ const tasks = {
         card.append(body)
         return card
     },
-    topCard: function () {
-        // base card with header
-        let card = leftbar.cardBase('Tasks & Ideas', [{ icon: SFSymbols.list.bullet }])
-        card.classList.remove('splash-card')
-        card.classList.add('top-card')
-        card.id = 'task'
-
-        let body = document.createElement('div')
-        body.classList = 'body'
-
-        if (tasks.data.length) for (const task of tasks.data) {
-            body.append(tasks.taskItem(task))
-            body.append(elems.hlineList(20))
-        }
-
-        if (tasks.ideas.data().length) for (const idea of tasks.ideas.data()) {
-            body.append(tasks.ideaItem(idea))
-            body.append(elems.hlineList(20))
-        }
-
-        body.append(tasks.ideaItem(''))
-
-        card.append(body)
-        return card
-    },
     taskItem: function (data) {
         let elem = document.createElement('div')
         elem.classList = 'task'

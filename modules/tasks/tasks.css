@@ -22,29 +22,3 @@
     font-size: 12px;
     font-weight: 500;
 }
-
-/* topcard */
-.top-card#task .task {
-    width: 100%;
-    font-size: 12px;
-    font-weight: 500;
-    padding: 4px 0;
-}
-
-.top-card#task div.task {
-    cursor: default;
-}
-
-.top-card#task .task a {
-    height: 15px;
-    width: 15px;
-    border-radius: 100px;
-    border: solid 2px var(--accent-dark);
-    margin-right: 5px;
-}
-
-.top-card#task .task input {
-    flex-grow: 1;
-    font-size: 12px;
-    font-weight: 500;
-}

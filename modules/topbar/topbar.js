@@ -8,18 +8,18 @@ const topbar = {
                 icon: SFSymbols.moon.fill,
                 active: dnd.active(),
             },
-            {
-                name: 'Calendar',
-                id: 'topbar-cal',
-                trigger: function (e) { modal.topbar(calendar.topCard(), document.getElementById(this.id)) },
-                icon: SFSymbols.calendar,
-            },
-            {
-                name: 'Tasks & Ideas',
-                id: 'topbar-tasks',
-                trigger: function (e) { modal.topbar(tasks.topCard(), document.getElementById(this.id)) },
-                icon: SFSymbols.list.bullet,
-            },
+            // {
+            //     name: 'Calendar',
+            //     id: 'topbar-cal',
+            //     trigger: function (e) { modal.topbar(calendar.topCard(), document.getElementById(this.id)) },
+            //     icon: SFSymbols.calendar,
+            // },
+            // {
+            //     name: 'Tasks & Ideas',
+            //     id: 'topbar-tasks',
+            //     trigger: function (e) { modal.topbar(tasks.topCard(), document.getElementById(this.id)) },
+            //     icon: SFSymbols.list.bullet,
+            // },
             // {
             //     name: 'Idea',
             //     trigger: function (e) { modal.topbar(ideas.widget(), e) },
