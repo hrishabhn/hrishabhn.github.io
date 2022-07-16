@@ -10,11 +10,11 @@ const SF = {
             for (const x of SF.test.allIcons()) card.append(appObject.bw({
                 name: x.name,
                 icon: x.icon,
-                // trigger: function () {
-                //     // SF.render.ios2(x.icon, x.name)
-                //     // navigator.clipboard.writeText(x.name)
-                //     // alert('Copied!')
-                // }
+                trigger: function () {
+                    SF.render.notion(x.icon, x.name)
+                    // navigator.clipboard.writeText(x.name)
+                    // alert('Copied!')
+                }
             }))
 
             // process input
@@ -112,7 +112,7 @@ const SF = {
             // path color
             icon.firstChild.setAttribute('fill', `#${Colors.blue.light}`)
 
-            saveSvg(icon, null)
+            saveSvg(icon, 'icon')
         },
         ios: function (str) {
             let x = document.createElement('div')
@@ -138,14 +138,20 @@ const SF = {
         ios2: function (str, col) {
             let icon = strToElem(str)
 
+            let pad = 4
+
+            icon.setAttribute('viewBox', `-${pad} -${pad} ${28 + 2 * pad} ${28 + 2 * pad}`)
+
             // path color and size
             icon.firstChild.setAttribute('fill', '#fff')
             // icon.firstChild.setAttribute('transform', 'scale(0.8)')
             // icon.firstChild.setAttribute('transform-origin', 'center center')
-            
+
 
             // mg
             let grad = document.createElement('rect')
+            grad.setAttribute('x', `-${pad}`)
+            grad.setAttribute('y', `-${pad}`)
             grad.setAttribute('height', '100%')
             grad.setAttribute('width', '100%')
             grad.setAttribute('opacity', '0.2')
@@ -153,6 +159,8 @@ const SF = {
 
             // bg color
             let bg = document.createElement('rect')
+            bg.setAttribute('x', `-${pad}`)
+            bg.setAttribute('y', `-${pad}`)
             bg.setAttribute('height', '100%')
             bg.setAttribute('width', '100%')
             bg.setAttribute('fill', `#${col}`)
