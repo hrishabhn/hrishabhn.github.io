@@ -187,6 +187,32 @@ const budgetData = [
         amount: 4,
         date: '12 Jul 2022',
     },
+    {
+        merchant: budgetMerch.coaliment,
+        amount: 5.53,
+        date: '12 Jul 2022',
+    },
+    {
+        name: 'Federal Cafe',
+        cat: budgetCat.coffee,
+        amount: 15,
+        date: '13 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.condis,
+        amount: 3.48,
+        date: '13 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.coaliment,
+        amount: 3.48,
+        date: '14 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.buenasMigas,
+        amount: 6.9,
+        date: '15 Jul 2022',
+    },
 ]
 
 function cleanFloat(x) { return Math.round(x * 100) / 100 }

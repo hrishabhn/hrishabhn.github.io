@@ -12,9 +12,12 @@ const testing = {
         return card
     },
     load: function () {
-        // SF.render.ios2(SFSymbols.app.dashed, Colors.cyan.dark)
+        // SF.render.ios2(SFSymbols.tram.fill, Colors.red.dark)
+        // SF.render.ios2(SFSymbols.waveform, Colors.indigo.dark)
         // colorModal()
         // movieDict['himym'].detail()
+
+        // date script testing
 
 
         // let data = {

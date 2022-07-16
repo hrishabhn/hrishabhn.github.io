@@ -1,5 +1,5 @@
 const tasks = {
-    data: tasks_all,
+    // data: tasks_all,
     ideas: {
         data: function () {
             if (getCookie('ideas')) return JSON.parse(getCookie('ideas'))
@@ -36,13 +36,13 @@ const tasks = {
 
         let blank = true
 
-        if (tasks.data.length) {
-            blank = false
-            for (const task of tasks.data) {
-                body.append(tasks.taskItem(task))
-                body.append(elems.hlineList(20))
-            }
-        }
+        // if (tasks.data.length) {
+        //     blank = false
+        //     for (const task of tasks.data) {
+        //         body.append(tasks.taskItem(task))
+        //         body.append(elems.hlineList(20))
+        //     }
+        // }
 
         if (tasks.ideas.data().length) {
             blank = false
