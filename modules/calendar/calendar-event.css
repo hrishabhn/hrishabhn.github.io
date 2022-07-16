@@ -1,0 +1,56 @@
+.event-tray {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 10px;
+    align-content: flex-start;
+    height: 100%;
+}
+
+.event-tray .sub-title {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.calendar-event {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.calendar-event span {
+    height: 100%;
+    width: 5px;
+}
+
+.calendar-event .bg {
+    opacity: 0.25;
+}
+
+.calendar-event.brand-bg {
+    color: white;
+}
+
+.calendar-event .textbox {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 10px;
+}
+
+.calendar-event .textbox .name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.calendar-event .textbox .desc {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.5;
+}

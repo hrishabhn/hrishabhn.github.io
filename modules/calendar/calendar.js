@@ -14,31 +14,30 @@ const calendar = {
         let body = document.createElement('div')
         body.classList = 'body'
 
-        if (todayEvents.length) {
-            for (const event of todayEvents) {
+        if (calEvents.today.length) {
+            for (const event of calEvents.today) {
                 body.append(calendar.eventCard(event))
                 body.append(elems.spacer(5))
             }
         }
 
-        if (tmrEvents.length) {
+        if (calEvents.tomor.length) {
             body.append(elems.subtitle('TOMORROW'))
-            for (const event of tmrEvents) {
+            for (const event of calEvents.tomor) {
                 body.append(calendar.eventCard(event))
                 body.append(elems.spacer(5))
             }
         }
 
-        if (!todayEvents.length && !tmrEvents.length) body.append(elems.subtitle('No more events today or tomorrow.'))
+        if (!calEvents.today.length && !calEvents.tomor.length) body.append(elems.subtitle('No more events today or tomorrow.'))
 
         card.append(body)
         return card
-
     },
     eventCard: function (event) {
         let eventCard = document.createElement('a')
         eventCard.classList = 'event clickable-o'
-        eventCard.style.setProperty('--col', `#${event.color}`)
+        eventCard.style.setProperty('--col', `#${event.hex}`)
         if (event.hasStarted) { eventCard.classList.add('started') }
 
         let colBlock = document.createElement('span')
@@ -47,7 +46,7 @@ const calendar = {
         info.classList = 'info'
 
         // 
-        info.append(elems.bg(event.color))
+        info.append(elems.bg(event.hex))
         if (!event.allDay) {
             info.append(elems.textbox(event.name, event.duration))
         } else {
@@ -78,9 +77,49 @@ const calendar = {
             name: title,
             buttons: [{ icon: SFSymbols.calendar }],
         })
+        // card.id = 'calendar'
+        card.style.setProperty('height', '100%')
+        card.lastChild.classList.add('single')
 
-        // console.log(todayEvents)
+        let tray = document.createElement('div')
+        tray.classList = 'event-tray'
 
+        if (calEvents.today.length && calEvents.tomor.length) {
+            if (calEvents.today.length) for (const event of calEvents.today) tray.append(calendar.resultCardItem(event))
+            if (calEvents.tomor.length) {
+                tray.append(elems.subtitle('TOMORROW'))
+                for (const event of calEvents.tomor) tray.append(calendar.resultCardItem(event))
+            }
+        } else tray.append(elems.subtitle('No more events today or tomorrow.'))
+
+        card.lastChild.append(tray)
         return card
+    },
+    resultCardItem(event) {
+        let item = document.createElement('div')
+        item.classList = 'calendar-event clickable-o'
+        item = cardCol(item, { color: event.color })
+
+        // event started
+        if (event.hasStarted) item.classList.add('brand-bg')
+        else {
+            let span = document.createElement('span')
+            span.classList = 'brand-bg'
+            item.append(span)
+        }
+
+        let bg = elems.bg()
+        bg.classList.add('brand-bg')
+        item.append(bg)
+
+        if (!event.allDay) item.append(elems.textbox(event.name, event.duration))
+        else item.append(elems.textbox(event.name, null))
+
+        // icon
+        // trigger + link
+
+
+
+        return item
     },
 }
