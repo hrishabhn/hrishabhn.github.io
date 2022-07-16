@@ -1,0 +1,18 @@
+.idea-item {
+    width: 100%;
+}
+
+.idea-item span {
+    height: 15px;
+    width: 15px;
+    border: solid 2px var(--accent-dark);
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
+.idea-item input {
+    flex-grow: 1;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 500;
+}
