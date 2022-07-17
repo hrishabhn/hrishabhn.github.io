@@ -36,10 +36,18 @@ for (const event of events_all) {
         if (event.isTomor) calEvents.tomor.push(event)
     }
 
+    // icon based on location
     if (event.location) {
         if (event.location.includes('https')) {
             if (event.location.includes('hp.zoom.com')) event.icon = SFSymbols.video.fill
 
+        }
+    }
+
+    // icon based on link
+    if (event.link) {
+        if (event.link.includes('https')) {
+            if (event.link.includes('notion.so')) event.icon = SFSymbols.note.text
         }
     }
 }

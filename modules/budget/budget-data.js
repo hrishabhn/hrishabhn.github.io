@@ -214,6 +214,12 @@ const budgetData = [
         date: '15 Jul 2022',
     },
     {
+        name: 'Ramen',
+        cat: budgetCat.outing,
+        amount: 14.3,
+        date: '15 Jul 2022',
+    },
+    {
         name: 'Input',
         cat: budgetCat.outing,
         amount: 38.9,
@@ -235,6 +241,12 @@ const budgetData = [
         cat: budgetCat.outing,
         amount: 29,
         date: '16 Jul 2022',
+    },
+    {
+        name: 'Supercor',
+        cat: budgetCat.grocery,
+        amount: 10.59,
+        date: '17 Jul 2022',
     },
 ]
 

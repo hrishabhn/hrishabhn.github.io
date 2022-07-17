@@ -27,7 +27,7 @@ const calendar = {
         return card
     },
     resultCardItem(event) {
-        let item = document.createElement('div')
+        let item = document.createElement('a')
         item.classList = 'calendar-event clickable-o'
         item = cardCol(item, { color: event.color })
 
@@ -49,6 +49,10 @@ const calendar = {
 
         if (event.icon) item.append(elems.icon(event.icon))
 
+        if (event.link) {
+            item.href = event.link
+            item.style.setProperty('cursor', 'pointer')
+        }
 
         // icon
         // trigger + link
