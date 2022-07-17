@@ -107,6 +107,7 @@ const spotlight = {
                     appObject.resultCard(appObject.search(q, appDataAll.listen), 'Listen'),
 
                     movies.resultCard(movies.search(q)),
+                    channels.resultCard(channels.search(q)),
                     actors.resultCard(actors.search(q)),
                     bookElem.resultCard(books.search(q)),
                     podElem.resultCard(podElem.search(q)),
@@ -119,7 +120,7 @@ const spotlight = {
                 for (const c of resultCards) if (!c.isEmpty()) spotlight.result.append(c)
 
                 // searchable
-                if (spotlight.target().searchBase) spotlight.elem().showPrompt(spotlight.target().name)
+                if (spotlight.target()) if (spotlight.target().searchBase) spotlight.elem().showPrompt(spotlight.target().name)
             }
         } else {
             document.getElementById('main').classList = 'initial'

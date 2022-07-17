@@ -20,27 +20,33 @@
     margin: 0 5px;
 }
 
+#spotlight .prompt {
+    opacity: 0.5;
+    cursor: default;
+    padding-right: 5px;
+}
 
+#spotlight .prompt p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#spotlight .prompt p.tab {
+    padding: 3px 5px;
+    border-radius: 6px;
+    margin: 0 4px;
+    background-color: var(--white-20);
+    /* border: solid 2px var(--white-30); */
+}
+
+@media screen and (prefers-color-scheme: light) {
+    #spotlight .prompt p.tab {
+    background-color: var(--dark-layer-1-20);
+    /* border: solid 2px var(--dark-layer-1-30); */
+    }
+}
 
 /* engine */
-
-#tab-to-search p {
-    font-size: 12px;
-    font-weight: 400;
-    opacity: 0.4;
-}
-
-#tab-to-search a {
-    border: solid 1px var(--white-20);
-    border-radius: 4px;
-    padding: 2px;
-    margin: 0 4px;
-    font-size: 12px;
-    font-weight: 400;
-
-}
-
-
 #leftbar .engine {
     width: 100%;
     margin-bottom: 10px;

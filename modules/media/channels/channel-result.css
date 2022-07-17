@@ -1,0 +1,8 @@
+.channel-result {
+    height: 100px;
+    width: 160px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    margin-bottom: 5px;
+}

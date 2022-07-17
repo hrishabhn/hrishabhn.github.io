@@ -14,9 +14,6 @@ const actors = {
         // if (!results.includes(actor))
         return results
     },
-    resultCard: function (q) {
-
-    },
     resultCard: function (data) {
         let card = resultCard.base({
             name: 'Actors',
