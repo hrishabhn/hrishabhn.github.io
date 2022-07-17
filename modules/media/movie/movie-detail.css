@@ -30,7 +30,7 @@
 
 .tv-detail-card{
     /* min-height: 100%; */
-    width: min(900px,100vw);
+    width: min(1100px,100vw);
     flex-direction: column;
     /* color: #fff; */
     justify-content: flex-start;
