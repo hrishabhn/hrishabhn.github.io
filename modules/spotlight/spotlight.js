@@ -4,7 +4,7 @@ const spotlight = {
     create: function () {
         const elem = document.createElement('div')
         elem.id = 'spotlight'
-        elem.classList = 'layer-0'
+        elem.classList = 'layer-1'
 
         const input = document.createElement('input')
         input.placeholder = 'Search'

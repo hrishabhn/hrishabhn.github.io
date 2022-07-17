@@ -78,7 +78,7 @@ const leftbar = {
     },
     cardBase: function (title, buttons) {
         let card = document.createElement('div')
-        card.classList = 'splash-card layer-0'
+        card.classList = 'splash-card layer-1'
 
         let header = document.createElement('div')
         header.classList = 'header'

@@ -1,7 +1,7 @@
 const resultCard = {
     base: function ({ name, buttons, type, gap }) {
         let card = document.createElement('div')
-        card.classList = 'result-card layer-0'
+        card.classList = 'result-card layer-1'
 
         let header = document.createElement('div')
         header.classList = 'header'

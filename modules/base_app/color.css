@@ -1,0 +1,93 @@
+:root {
+    --gray-1-dark: #1c1c1e;
+    --gray-2-dark: #2C2C2E;
+    --gray-3-dark: #3A3A3C;
+    --gray-4-dark: #48484A;
+    --gray-5-dark: #636366;
+    --gray-6-dark: #8E8E93;
+
+    --gray-1-light: #F2F2F7;
+    --gray-2-light: #E5E5EA;
+    --gray-3-light: #D1D1D6;
+    --gray-4-light: #C7C7CC;
+    --gray-5-light: #AEAEB2;
+    --gray-6-light: #8E8E93;
+}
+
+body {
+    color: #fff;
+    fill: #fff;
+}
+
+.layer-0 {
+    background-color: #000;
+    background-color: #1c1c1e;
+}
+
+.layer-1 {
+    background-color: var(--gray-1-dark);
+    background-color: var(--gray-2-dark);
+}
+
+.layer-2 {
+    background-color: var(--gray-2-dark);
+    background-color: var(--gray-3-dark);
+}
+
+.layer-fg {
+    background-color: var(--light-layer-0);
+    color: var(--dark-layer-1);
+    fill: var(--dark-layer-1);
+}
+
+
+
+.layer-hover.on {
+    background-color: var(--white-05);
+}
+
+.layer-hover:hover {
+    background-color: var(--white-05);
+}
+
+.layer-hover:active {
+    background-color: var(--white-10);
+}
+
+
+@media screen and (prefers-color-scheme: light) {
+    body {
+        color: var(--dark-layer-1);
+        fill: var(--dark-layer-1);
+    }
+
+    .layer-0 {
+        background-color: white;
+    }
+
+    .layer-1 {
+        background-color: var(--gray-1-light);
+    }
+
+    .layer-2 {
+        background-color: white;
+    }
+
+    .layer-fg {
+        background-color: var(--dark-layer-1);
+        color: white;
+        fill: white;
+    }
+
+    .layer-hover.on {
+        background-color: var(--black-05);
+    }
+
+    .layer-hover:hover {
+        background-color: var(--black-05);
+    }
+
+    .layer-hover:active {
+        background-color: var(--black-10);
+    }
+}
