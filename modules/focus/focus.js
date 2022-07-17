@@ -8,7 +8,7 @@ const focus = {
                     desc: 'No focus selected',
                     thumb: thumbData['user'],
                     icon: SFSymbols.person.fill,
-                    color: null,
+                    color: Colors.secondary,
                     // apps: appData['main'],
                     work: false,
                     distract: false,
