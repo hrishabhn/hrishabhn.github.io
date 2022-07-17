@@ -58,18 +58,6 @@ const elems = {
         spacer.style.setProperty('--size', '40px')
         return spacer
     },
-    vstack: function (spacing) {
-        let v = document.createElement('div')
-        v.classList = 'vstack'
-        if (spacing) v.style.setProperty('gap', `${spacing}px`)
-        return v
-    },
-    hstack: function (spacing) {
-        let h = document.createElement('div')
-        h.classList = 'hstack'
-        if (spacing) h.style.setProperty('gap', `${spacing}px`)
-        return h
-    },
 
 
     // types
