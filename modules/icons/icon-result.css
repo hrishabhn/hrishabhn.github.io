@@ -31,13 +31,3 @@
     font-weight: 500;
     border-radius: 5px;
 }
-
-.icon-modal .cont a.copied {
-    background-color: var(--brand-col-dark);
-}
-
-@media screen and (prefers-color-scheme: light) {
-    .icon-modal .cont a.copied {
-        background-color: var(--brand-col-light);
-    }
-}

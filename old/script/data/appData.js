@@ -632,14 +632,6 @@ const appData = {
             distract: false,
         },
         {
-            name: 'SF Symbol Modal',
-            trigger: function () { SF.test.modal() },
-            desc: 'Process Icons',
-            thumb: 'icons8.png',
-            color: Colors.blue,
-            distract: false,
-        },
-        {
             name: 'Average Colour',
             link: 'https://matkl.github.io/average-color',
             desc: 'Get Average Colour of Image',

@@ -1,49 +1,5 @@
 const SF = {
     test: {
-        modal: function () {
-            let card = document.createElement('div')
-            card.classList = 'icon-modal layer-1'
-            // header
-            card.append(elems.textbox('SF Symbols', 'All available icons from the SF Symbols library'))
-
-            // app icons
-            for (const x of SF.test.allIcons()) card.append(appObject.bw({
-                name: x.name,
-                icon: x.icon,
-                trigger: function () {
-                    SF.render.notion(x.icon, x.name)
-                    // navigator.clipboard.writeText(x.name)
-                    // alert('Copied!')
-                }
-            }))
-
-            // process input
-            let cont = document.createElement('div')
-            cont.classList = 'cont'
-
-            let i = document.createElement('input')
-            i.placeholder = 'Paste SVG'
-
-            let a = elems.a(null, 'Copy')
-            a.classList = 'clickable'
-            a = cardCol(a, { color: Colors.green })
-            a.onclick = function () {
-                navigator.clipboard.writeText(SF.process(i.value))
-                a.classList.add('copied')
-                a.textContent = 'Copied!'
-            }
-
-            cont.append(i)
-            cont.append(a)
-
-            card.append(cont)
-
-
-            // url to add more
-
-            modal.add(card)
-
-        },
         allIcons: function () {
             let rawIcons = []
             // format for functions
