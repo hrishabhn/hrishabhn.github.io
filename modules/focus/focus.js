@@ -38,23 +38,10 @@ const focus = {
                 {
                     name: 'HP',
                     id: 'hp',
-                    desc: 'Internship',
-                    // thumb: thumbData['globe'],
                     icon: SFSymbols.briefcase.fill,
                     color: Colors.blue,
-                    apps: appData.hp,
+                    apps: appDataAll.hp,
                     work: true,
-                    distract: false,
-                },
-                {
-                    name: 'Spanish',
-                    id: 'span',
-                    desc: 'Learn & Practice',
-                    thumb: thumbData['globe'],
-                    icon: SFSymbols.globe,
-                    color: Colors.red,
-                    apps: appData.span,
-                    work: false,
                     distract: false,
                 },
                 {
@@ -64,7 +51,7 @@ const focus = {
                     thumb: null,
                     icon: SFSymbols.flame.fill,
                     color: Colors.yellow,
-                    apps: appData.thermo,
+                    apps: appDataAll.thermo,
                     work: true,
                     distract: false,
                 },
@@ -94,7 +81,7 @@ const focus = {
                     thumb: thumbData['tv'],
                     icon: SFSymbols.tv.fill,
                     color: Colors.red,
-                    apps: appData.video,
+                    apps: appDataAll.video,
                     work: false,
                     distract: true,
                     trays: function () {
@@ -122,7 +109,7 @@ const focus = {
                     thumb: thumbData['book'],
                     icon: SFSymbols.book.fill,
                     color: Colors.orange,
-                    apps: appData.read,
+                    apps: appDataAll.read,
                     work: false,
                     distract: false,
                     // widgets: function () {
@@ -152,7 +139,7 @@ const focus = {
                     thumb: thumbData['pod'],
                     icon: SFSymbols.headphones,
                     color: Colors.purple,
-                    apps: appData.listen,
+                    apps: appDataAll.listen,
                     work: false,
                     distract: false,
                     trays: function () {
@@ -161,39 +148,39 @@ const focus = {
                 },
             ],
         },
-        {
-            name: 'Other',
-            data: [
-                {
-                    name: 'Travel',
-                    id: 'travel',
-                    desc: 'Flights & Hotels',
-                    thumb: thumbData['plane'],
-                    icon: SFSymbols.airplane,
-                    color: Colors.mint,
-                    apps: appData.travel,
-                    work: false,
-                    distract: false,
-                    widgets: function () {
-                        return [
-                            // widgets.trip.card('barca'),
-                            // train.widget('mad-bcn'),
-                            // train.widget('bcn-mad'),
-                            widgets.trip.card('exeter'),
-                            widgets.flight.card('mad-lhr'),
-                            train.widget('lon-exe'),
-                            train.widget('exe-lon'),
-                            widgets.flight.card('lgw-mad'),
-                        ]
-                    },
-                    // trays: function () {
-                    //     return [
-                    //         trayWithKids([flight.card('mad-tfs'), flight.card('tfs-mad'),], 30, 0)
-                    //     ]
-                    // },
-                },
-            ],
-        },
+        // {
+        //     name: 'Other',
+        //     data: [
+        //         {
+        //             name: 'Travel',
+        //             id: 'travel',
+        //             desc: 'Flights & Hotels',
+        //             thumb: thumbData['plane'],
+        //             icon: SFSymbols.airplane,
+        //             color: Colors.mint,
+
+        //             work: false,
+        //             distract: false,
+        //             widgets: function () {
+        //                 return [
+        //                     // widgets.trip.card('barca'),
+        //                     // train.widget('mad-bcn'),
+        //                     // train.widget('bcn-mad'),
+        //                     widgets.trip.card('exeter'),
+        //                     widgets.flight.card('mad-lhr'),
+        //                     train.widget('lon-exe'),
+        //                     train.widget('exe-lon'),
+        //                     widgets.flight.card('lgw-mad'),
+        //                 ]
+        //             },
+        //             // trays: function () {
+        //             //     return [
+        //             //         trayWithKids([flight.card('mad-tfs'), flight.card('tfs-mad'),], 30, 0)
+        //             //     ]
+        //             // },
+        //         },
+        //     ],
+        // },
     ],
     load: function () {
         // removeCookie('focus')

@@ -79,24 +79,22 @@ const spotlight = {
 
                 let resultCards = [
                     appObject.resultCard(appObject.search(q, focus.apps()), 'Focus Modes'),
+
                     appObject.resultCard(appObject.search(q, appDataAll.main), 'Main Apps'),
-
-                    appObject.resultCard(appObject.search(q, appData.notion), 'Notion'),
-
+                    appObject.resultCard(appObject.search(q, appDataAll.bookmarks), 'Bookmarks'),
+                    appObject.resultCard(appObject.search(q, appDataAll.notion), 'Notion'),
                     appObject.resultCard(appObject.search(q, appDataAll.purdue), 'Purdue'),
+                    appObject.resultCard(appObject.search(q, appDataAll.span), 'Spanish Learning'),
+                    appObject.resultCard(appObject.search(q, appDataAll.utilities), 'Utilities'),
+                    appObject.resultCard(appObject.search(q, appDataAll.design), 'Design'),
+                    appObject.resultCard(appObject.search(q, appDataAll.profiles), 'Social Media Pages'),
+                    appObject.resultCard(appObject.search(q, worldClock.apps()), 'World Clock'),
                     appObject.resultCard(appObject.search(q, appDataAll.shopping), 'Shopping'),
 
+                    appObject.resultCard(appObject.search(q, appDataAll.video), 'Video'),
+                    appObject.resultCard(appObject.search(q, appDataAll.read), 'Read'),
+                    appObject.resultCard(appObject.search(q, appDataAll.listen), 'Listen'),
 
-                    appObject.resultCard(appObject.search(q, appData.bookmarks), 'Bookmarks'),
-                    appObject.resultCard(appObject.search(q, appData.video), 'Video'),
-                    appObject.resultCard(appObject.search(q, appData.read), 'Read'),
-                    appObject.resultCard(appObject.search(q, appData.listen), 'Listen'),
-                    appObject.resultCard(appObject.search(q, appData.travel), 'Travel'),
-                    appObject.resultCard(appObject.search(q, appData.utilities), 'Utilities'),
-                    appObject.resultCard(appObject.search(q, appData.profiles), 'Social Media Pages'),
-                    appObject.resultCard(appObject.search(q, appData.design), 'Design'),
-                    appObject.resultCard(appObject.search(q, appData.span), 'Spanish'),
-                    appObject.resultCard(appObject.search(q, appData.worldClock), 'World Clock'),
                     movies.resultCard(movies.search(q)),
                     actors.resultCard(actors.search(q)),
                     bookElem.resultCard(books.search(q)),
