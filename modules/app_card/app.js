@@ -98,7 +98,6 @@ const appObject = {
         for (const x of data) card.lastChild.append(appObject.resultCardItem(x))
         return card
     },
-
     resultCardItem: function (app) {
         let card = document.createElement('a')
         card.classList = 'app-card-result clickable-o'

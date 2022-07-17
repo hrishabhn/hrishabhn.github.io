@@ -177,4 +177,54 @@ const SF = {
         },
 
     },
+    search: function (q) {
+        if ('SF SYMBOLS'.includes(q)) return SF.test.allIcons()
+        let results = []
+        for (const x of SF.test.allIcons()) if (x.name.toUpperCase().includes(q)) results.push(x)
+        return results
+    },
+    resultCard: function (data) {
+        let card = resultCard.base({
+            name: 'SF Symbols',
+            buttons: [{ icon: SFSymbols.squareAndPencil }],
+            type: 'vstack',
+            gap: 0,
+        })
+
+        if (data.length) {
+            let g = document.createElement('div')
+            g.classList = 'sf-grid'
+
+            for (const x of data) g.append(appObject.bw({
+                name: x.name,
+                icon: x.icon,
+                // trigger: function () {
+                //     // SF.render.notion(x.icon, x.name)
+                // }
+            }))
+
+            // process input
+            let cont = document.createElement('div')
+            cont.classList = 'sf-input'
+
+            let i = document.createElement('input')
+            i.placeholder = 'Paste SVG'
+
+            let a = elems.a(null, 'Copy')
+            a.classList = 'layer-hover'
+            a = cardCol(a, { color: Colors.green })
+            a.onclick = function () {
+                navigator.clipboard.writeText(SF.process(i.value))
+                a.classList = 'brand-bg'
+                a.textContent = 'Copied!'
+            }
+
+            cont.append(i)
+            cont.append(a)
+
+            card.lastChild.append(g)
+            card.lastChild.append(cont)
+        }
+        return card
+    },
 }

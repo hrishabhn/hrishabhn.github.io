@@ -98,11 +98,12 @@ const spotlight = {
                     actors.resultCard(actors.search(q)),
                     bookElem.resultCard(books.search(q)),
                     podElem.resultCard(podElem.search(q)),
+
+                    // result cards
+                    SF.resultCard(SF.search(q)),
                 ]
 
-                for (let item of resultCards) {
-                    if (!item.isEmpty()) spotlight.result.append(item)
-                }
+                for (const c of resultCards) if (!c.isEmpty()) spotlight.result.append(c)
             }
         } else {
             document.getElementById('main').classList = 'initial'

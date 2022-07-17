@@ -1,6 +1,4 @@
 let events_all = [
-{"start":"2022-07-17T00:15:00+02:00","allDay":"No","end":"2022-07-17T04:45:00+02:00","name":"Test","calendar":"Errands","location":""},
-{"start":"2022-07-17T22:00:00+02:00","allDay":"No","end":"2022-07-17T22:30:00+02:00","name":"Test","calendar":"Personal","location":""},
 {"start":"2022-07-18T10:00:00+02:00","allDay":"No","end":"2022-07-18T11:30:00+02:00","name":"Hrishabh Oboarding - Design printers, materials of the future & sustainability","calendar":"Calendar","location":"https:\/\/hp.zoom.com\/j\/97584431042?pwd=b1p5bEoyVWQ3ay9TdERidVRETVhKUT09"},
 {"start":"2022-07-19T12:00:00+02:00","allDay":"No","end":"2022-07-19T12:30:00+02:00","name":"Onboarding: Applications E2E overview","calendar":"Calendar","location":"https:\/\/hp.zoom.com\/j\/98630617936?pwd=K1ZWelhJMWFIbmNnRjY1cnlxbmVCdz09"},
 {"start":"2022-07-19T14:00:00+02:00","allDay":"No","end":"2022-07-19T15:00:00+02:00","name":"WS introduction","calendar":"Calendar","location":"24ST corridor"},

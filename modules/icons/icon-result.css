@@ -1,0 +1,43 @@
+.sf-grid {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 40px);
+    grid-auto-rows: auto;
+
+
+    align-items: center;
+    justify-items: center;
+}
+
+.sf-input {
+    width: 100%;
+}
+
+.sf-input input {
+    height: 100%;
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sf-input a {
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.icon-modal .cont a.copied {
+    background-color: var(--brand-col-dark);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .icon-modal .cont a.copied {
+        background-color: var(--brand-col-light);
+    }
+}
