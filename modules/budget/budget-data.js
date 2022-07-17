@@ -213,6 +213,29 @@ const budgetData = [
         amount: 6.9,
         date: '15 Jul 2022',
     },
+    {
+        name: 'Input',
+        cat: budgetCat.outing,
+        amount: 38.9,
+        date: '15 Jul 2022',
+    },
+    {
+        name: 'Sushi',
+        cat: budgetCat.outing,
+        amount: 22.19,
+        date: '16 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.bakery,
+        amount: 3.1,
+        date: '16 Jul 2022',
+    },
+    {
+        name: 'Beach',
+        cat: budgetCat.outing,
+        amount: 29,
+        date: '16 Jul 2022',
+    },
 ]
 
 function cleanFloat(x) { return Math.round(x * 100) / 100 }
