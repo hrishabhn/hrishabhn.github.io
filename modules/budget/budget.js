@@ -373,7 +373,6 @@ const budget = {
                 type: 'vstack',
                 gap: 5,
             })
-            card.classList.add('fill-height')  //@
 
             let max = 0
             for (const k in budgetCat) max = Math.max(max, budgetCat[k].spend)
@@ -397,7 +396,6 @@ const budget = {
                 type: 'vstack',
                 gap: 5,
             })
-            card.classList.add('fill-height') //@
 
             let max = 0
             for (const k in budgetMerch) max = Math.max(max, budgetMerch[k].spend)

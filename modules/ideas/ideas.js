@@ -12,7 +12,6 @@ const ideas = {
             type: 'vstack',
             gap: 5,
         })
-        card.classList.add('fill-height')  //@
         card.id = 'ideas'
 
         card.data = function () {
