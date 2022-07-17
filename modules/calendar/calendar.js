@@ -10,7 +10,7 @@ const calendar = {
         // card.id = 'calendar'
         card.style.setProperty('height', '100%')
 
-        if (calEvents.today.length && calEvents.tomor.length) {
+        if (calEvents.today.length || calEvents.tomor.length) {
             if (calEvents.today.length) for (const event of calEvents.today) card.lastChild.append(calendar.resultCardItem(event))
             if (calEvents.tomor.length) {
                 let p = elems.p('TOMORROW')
@@ -45,6 +45,9 @@ const calendar = {
 
         if (!event.allDay) item.append(elems.textbox(event.name, event.duration))
         else item.append(elems.textbox(event.name, null))
+
+        if (event.icon) item.append(elems.icon(event.icon))
+
 
         // icon
         // trigger + link

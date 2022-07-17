@@ -48,3 +48,10 @@
     font-weight: 500;
     opacity: 0.5;
 }
+
+.calendar-event .icon {
+    height: 24px;
+    width: 24px;
+    opacity: 0.8;
+    margin-right: 10px;
+}

@@ -35,8 +35,14 @@ for (const event of events_all) {
         if (event.isToday) calEvents.today.push(event)
         if (event.isTomor) calEvents.tomor.push(event)
     }
+
+    if (event.location) {
+        if (event.location.includes('https')) {
+            if (event.location.includes('hp.zoom.com')) event.icon = SFSymbols.video.fill
+
+        }
+    }
 }
 
-// add event icon
 // add event trigger for focus
 // add event name process
