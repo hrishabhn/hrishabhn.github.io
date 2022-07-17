@@ -20,7 +20,7 @@ const focus = {
                 //     thumb: thumbData['gym'],
                 //     icon: SFSymbols.calendar,
                 //     color: null,
-                //     apps: appData['main'],
+
                 //     work: false,
                 //     distract: false,
                 //     trays: function () {
@@ -94,7 +94,7 @@ const focus = {
                     thumb: thumbData['tv'],
                     icon: SFSymbols.tv.fill,
                     color: Colors.red,
-                    apps: appData['video'],
+                    apps: appData.video,
                     work: false,
                     distract: true,
                     trays: function () {
@@ -122,7 +122,7 @@ const focus = {
                     thumb: thumbData['book'],
                     icon: SFSymbols.book.fill,
                     color: Colors.orange,
-                    apps: appData['read'],
+                    apps: appData.read,
                     work: false,
                     distract: false,
                     // widgets: function () {
@@ -152,7 +152,7 @@ const focus = {
                     thumb: thumbData['pod'],
                     icon: SFSymbols.headphones,
                     color: Colors.purple,
-                    apps: appData['listen'],
+                    apps: appData.listen,
                     work: false,
                     distract: false,
                     trays: function () {
@@ -171,7 +171,7 @@ const focus = {
                     thumb: thumbData['plane'],
                     icon: SFSymbols.airplane,
                     color: Colors.mint,
-                    apps: appData['travel'],
+                    apps: appData.travel,
                     work: false,
                     distract: false,
                     widgets: function () {
