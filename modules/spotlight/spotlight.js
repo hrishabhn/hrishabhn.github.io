@@ -10,6 +10,7 @@ const spotlight = {
         input.placeholder = 'Search'
         input.onkeyup = function (e) { spotlight.run(e) }
 
+        // searchable
         input.showPrompt = function (engine) {
             const prompt = Elems.div('prompt')
             const tab = Elems.p('Tab')
@@ -23,6 +24,33 @@ const spotlight = {
         }
         input.hidePrompt = function () { while (elem.lastChild.tagName !== 'INPUT') elem.lastChild.remove() }
 
+        // engine
+        input.startEngine = function (searchBase, name) {
+            input.value = ''
+            input.placeholder = `Searching ${name}`
+            input.hidePrompt()
+
+            input.onkeyup = function (e) {
+                let link = `${searchBase}${input.value}`
+                if (e.key == 'Enter') window.open(`${searchBase}${input.value}`, '_self')
+                if (e.key == 'Backspace') if (!input.value) input.reset()
+            }
+
+            const prompt = Elems.div('prompt clickable-o')
+            prompt.onclick = function () { input.reset() }
+            const tab = Elems.p('Cancel')
+            tab.classList = 'tab'
+            prompt.append(Elems.p(`Searching ${name}`))
+            prompt.append(tab)
+            elem.append(prompt)
+        }
+        input.reset = function () {
+            input.placeholder = 'Search'
+            input.onkeyup = function (e) { spotlight.run(e) }
+            input.hidePrompt()
+        }
+
+        // done
         elem.append(elems.icon(SFSymbols.magnifyingglass))
         elem.append(input)
         return elem
@@ -33,26 +61,6 @@ const spotlight = {
         if (spotlight.result.hasChildNodes()) return spotlight.result.firstChild.firstResult()
         return null
     },
-    // engine: function (data) {
-    //     const input = spotlight.elem()
-    //     let app = document.createElement('div')
-    //     app.classList = 'engine'
-    //     app.append(elems.appThumb(data.thumb))
-    //     app.append(elems.p(`Searching ${data.name}:`))
-    //     input.parentNode.before(app)
-
-    //     input.value = ''
-    //     input.onkeyup = function (e) {
-    //         if (input.value) {
-    //             if (e.key == 'Enter') window.open(`${data.searchBase}${input.value}`, '_self')
-    //         } else if (e.key == 'Backspace') spotlight.reset()
-
-    //     }
-    // },
-    // reset: function () {
-    //     spotlight.elem().parentNode.previousSibling.remove()
-    //     spotlight.elem().onkeyup = function (e) { spotlight.run(e) }
-    // },
     oldQ: null,
     run: function (e) {
         let qOrig = spotlight.elem().value
@@ -71,18 +79,9 @@ const spotlight = {
                 }
             }
             // // !! update this
-            // else if (e.key == 'Tab') {
-
-            //     let row = document.getElementById('row-0')
-            //     if (row) {
-            //         let target = row.lastChild.firstChild
-            //         if (target.classList.value == 'spacer-x') { target = target.nextSibling }
-
-            //         if (target.getAttribute('engineData')) {
-            //             spotlight.engine(JSON.parse(target.getAttribute('engineData')))
-            //         }
-            //     }
-            // }
+            else if (e.key == 'Tab') {
+                if (spotlight.target()) if (spotlight.target().searchBase) spotlight.elem().startEngine(spotlight.target().searchBase, spotlight.target().name)
+            }
             else if (qOrig !== spotlight.oldQ) {
                 document.getElementById('main').classList = 'searching'
                 while (spotlight.result.firstChild) spotlight.result.firstChild.remove()
@@ -102,15 +101,16 @@ const spotlight = {
                     appObject.resultCard(appObject.search(q, worldClock.apps()), 'World Clock'),
                     appObject.resultCard(appObject.search(q, appDataAll.shopping), 'Shopping'),
 
-                    appObject.resultCard(appObject.search(q, appDataAll.video), 'Video'),
-                    appObject.resultCard(appObject.search(q, appDataAll.read), 'Read'),
-                    appObject.resultCard(appObject.search(q, appDataAll.listen), 'Listen'),
 
                     movies.resultCard(movies.search(q)),
                     channels.resultCard(channels.search(q)),
                     actors.resultCard(actors.search(q)),
                     bookElem.resultCard(books.search(q)),
                     podElem.resultCard(podElem.search(q)),
+
+                    appObject.resultCard(appObject.search(q, appDataAll.video), 'Video'),
+                    appObject.resultCard(appObject.search(q, appDataAll.read), 'Read'),
+                    appObject.resultCard(appObject.search(q, appDataAll.listen), 'Listen'),
 
                     // result cards
                     SF.resultCard(SF.search(q)),

@@ -97,6 +97,7 @@ const channels = {
         },
     ],
     search: function (q) {
+        if ('CHANNELS'.includes(q)) return channels.data
         let results = []
         for (const c of channels.data) if (c.name.toUpperCase().includes(q)) results.push(c)
         return results
@@ -129,7 +130,7 @@ const channels = {
             name: 'Channels',
             buttons: [{ icon: SFSymbols.tv.fill },],
             type: 'hstack',
-            gap: 10,
+            gap: 5,
         })
         for (const x of data) card.lastChild.append(channels.resultCardItem(x))
         return card
