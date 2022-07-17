@@ -101,6 +101,7 @@ const spotlight = {
 
                     // result cards
                     SF.resultCard(SF.search(q)),
+                    colorTesting.resultCard(q),
                 ]
 
                 for (const c of resultCards) if (!c.isEmpty()) spotlight.result.append(c)

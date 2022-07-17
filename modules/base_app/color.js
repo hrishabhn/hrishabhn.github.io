@@ -67,54 +67,59 @@ const Colors = {
     },
 }
 
-const colorModal = function () {
-    let card = document.createElement('div')
-    card.classList = 'color-modal layer-1'
-    // header
-    card.append(elems.textbox('iOS System Colors', 'All available colors in iOS'))
+const colorTesting = {
+    resultCard: function (q) {
+        let card = resultCard.base({
+            name: 'System Colours',
+            buttons: [{ icon: SFSymbols.paintpalette.fill }],
+            type: 'single',
+            gap: 0,
+        })
+        if ('IOS SYSTEM COLORS COLOURS'.includes(q)) {
+            let chart = document.createElement('div')
+            chart.classList = 'color-chart'
 
-    let body = document.createElement('div')
-    body.classList = 'body'
+            // sides
+            let left = document.createElement('div')
+            left.classList = 'side'
+            left.style.setProperty('left', 0)
+            left.style.setProperty('background-color', '#1c1c1e')
 
-    // sides
-    let left = document.createElement('div')
-    left.classList = 'side'
-    left.style.setProperty('left', 0)
-    left.style.setProperty('background-color', '#1c1c1e')
+            let right = document.createElement('div')
+            right.classList = 'side'
+            right.style.setProperty('right', 0)
+            right.style.setProperty('background-color', '#fff')
 
-    let right = document.createElement('div')
-    right.classList = 'side'
-    right.style.setProperty('right', 0)
-    right.style.setProperty('background-color', '#fff')
+            chart.append(left)
+            chart.append(right)
 
-    body.append(left)
-    body.append(right)
+            // colors
+            for (const key in Colors) {
+                let item = elems.item()
+                item = cardCol(item, { color: Colors[key] })
 
+                let itemLeft = document.createElement('div')
+                itemLeft.classList = 'block left'
+                itemLeft.textContent = key
 
-
-    // colors
-    for (const key in Colors) {
-        let item = elems.item()
-        item = cardCol(item, { color: Colors[key] })
-
-        let itemLeft = document.createElement('div')
-        itemLeft.classList = 'block left'
-        itemLeft.textContent = key
-
-        let itemRight = document.createElement('div')
-        itemRight.classList = 'block right'
-        itemRight.textContent = key
+                let itemRight = document.createElement('div')
+                itemRight.classList = 'block right'
+                itemRight.textContent = key
 
 
-        item.append(itemLeft)
-        item.append(itemRight)
-        body.append(item)
+                item.append(itemLeft)
+                item.append(itemRight)
+                chart.append(item)
 
-    }
+            }
 
-    card.append(body)
-    modal.add(card)
+            card.lastChild.appendChild(chart)
+        }
+
+        return card
+    },
 }
+
 
 const BrandColor = {
     google: {

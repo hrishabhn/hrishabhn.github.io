@@ -1,34 +1,30 @@
-.color-modal {
-    width: 400px;
-    border-radius: 20px;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.color-modal .body {
+.color-chart {
+    height: 100%;
     width: 100%;
+    border-radius: 8px;
     padding: 30px;
+    overflow: hidden;
+
     display: grid;
     grid-template-columns: 1fr;
     gap: 8px;
 }
 
-.color-modal .side {
+.color-chart .side {
     position: absolute;
     top: 0;
     width: 50%;
     height: 100%;
 }
 
-
-.color-modal .body .item {
+.color-chart .item {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
 
-.color-modal .body .item .block {
+.color-chart .item .block {
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -40,30 +36,12 @@
     text-transform: capitalize;
 }
 
-.color-modal .body .item .block.left {
+.color-chart .item .block.left {
     background-color: var(--brand-col-dark);
     color: var(--fg-col-dark);
 }
 
-.color-modal .body .item .block.right {
+.color-chart .item .block.right {
     background-color: var(--brand-col-light);
     color: var(--fg-col-light);
-}
-
-.color-modal .textbox {
-    width: 100%;
-    flex-direction: column;
-    padding: 20px 0;
-}
-
-.color-modal .textbox .name {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.color-modal .textbox .desc {
-    font-size: 14px;
-    font-weight: 400;
-    opacity: 0.8;
-    margin-top: 2px;
 }
