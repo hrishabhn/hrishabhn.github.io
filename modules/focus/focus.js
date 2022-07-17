@@ -9,7 +9,7 @@ const focus = {
                     thumb: thumbData['user'],
                     icon: SFSymbols.person.fill,
                     color: Colors.blue,
-                    // apps: appData['main'],
+                    apps: null,
                     work: false,
                     distract: false,
                 },

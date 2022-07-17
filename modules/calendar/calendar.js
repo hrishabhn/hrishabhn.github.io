@@ -34,6 +34,7 @@ const calendar = {
         // event started
         if (event.hasStarted) item.classList.add('brand-bg')
         else {
+            // item.classList.add('brand-fg')
             let span = document.createElement('span')
             span.classList = 'brand-bg'
             item.append(span)

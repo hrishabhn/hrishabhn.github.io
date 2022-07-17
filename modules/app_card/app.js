@@ -1,9 +1,11 @@
 const appObject = {
     search: function (q, data) {
         let results = []
+
+        console.log(data)
         for (let i = 0; i < data.length; i++) {
             const name = data[i].name.toUpperCase().includes(q)
-            const desc = data[i].desc.toUpperCase().includes(q)
+            const desc = data[i].desc ? data[i].desc.toUpperCase().includes(q) : false
 
             let tagMatch = false
             if (data[i].tags) {

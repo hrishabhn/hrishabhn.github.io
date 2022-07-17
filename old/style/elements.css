@@ -206,9 +206,19 @@
     background-color: var(--brand-col-dark);
 }
 
+.brand-fg {
+    color: var(--brand-col-dark);
+    fill: var(--brand-col-dark);
+}
+
 @media screen and (prefers-color-scheme: light) {
     .brand-bg {
         background-color: var(--brand-col-light);
+    }
+
+    .brand-fg {
+        color: var(--brand-col-light);
+        fill: var(--brand-col-light);
     }
 }
 

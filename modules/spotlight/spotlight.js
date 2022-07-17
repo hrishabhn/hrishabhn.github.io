@@ -79,11 +79,14 @@ const spotlight = {
 
                 let resultCards = [
                     appObject.resultCard(appObject.search(q, focus.apps()), 'Focus Modes'),
-                    appObject.resultCard(appObject.search(q, appData.main), 'Main Apps'),
+                    appObject.resultCard(appObject.search(q, appDataAll.main), 'Main Apps'),
 
                     appObject.resultCard(appObject.search(q, appData['notion']), 'Notion'),
-                    appObject.resultCard(appObject.search(q, appData['school']), 'School'),
-                    appObject.resultCard(appObject.search(q, appData['shopping']), 'Shopping'),
+
+                    appObject.resultCard(appObject.search(q, appDataAll.purdue), 'Purdue'),
+                    appObject.resultCard(appObject.search(q, appDataAll.shopping), 'Shopping'),
+
+
                     appObject.resultCard(appObject.search(q, appData['bookmarks']), 'Bookmarks'),
                     appObject.resultCard(appObject.search(q, appData['video']), 'Video'),
                     appObject.resultCard(appObject.search(q, appData['read']), 'Read'),
