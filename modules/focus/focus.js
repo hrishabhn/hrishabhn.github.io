@@ -97,28 +97,6 @@ const focus = {
                     apps: appData['video'],
                     work: false,
                     distract: true,
-                    splashCard: function () {
-                        // base card with header
-                        let card = leftbar.cardBase('Movies & TV', [{ icon: SFSymbols.tv.fill }])
-                        card.id = 'movie-splash'
-
-                        let body = document.createElement('div')
-                        body.classList = 'body'
-
-                        let i = 0
-                        for (const x of movieRaw) for (const movie of x.data) if (i < 3) {
-                            let item = document.createElement('a')
-                            item.classList = 'item clickable-o'
-                            item.append(elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`))
-                            item.append(elems.textbox(movie.name, movie.desc.full))
-                            item.onclick = function () { movie.detail() }
-                            body.append(item)
-                            i++
-                        }
-
-                        card.append(body)
-                        return card
-                    },
                     trays: function () {
                         return [
                             movieElem.giant.create(),
