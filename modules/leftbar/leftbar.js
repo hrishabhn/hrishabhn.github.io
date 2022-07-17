@@ -28,9 +28,9 @@ const leftbar = {
             // focus cards
             if (focus.get().splashCard) cards.push(focus.get().splashCard())
 
-            // show routine or not
-            if (routine.now()) cards.unshift(routine.splashCard())
-            else cards.push(routine.splashCard())
+            // // show routine or not
+            // if (routine.now()) cards.unshift(routine.splashCard())
+            // else cards.push(routine.splashCard())
 
             for (const item of cards) {
                 nodes.push(elems.spacer(20))
