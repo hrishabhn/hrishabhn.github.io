@@ -311,10 +311,9 @@ const budget = {
                 type: 'single',
                 gap: 0,
             })
-            card.classList.add('budget')
 
             let week = document.createElement('div')
-            week.classList = 'week'
+            week.classList = 'budget-week'
 
             let amount = elems.p(budget.weekTotal)
             amount.classList = 'amount'
