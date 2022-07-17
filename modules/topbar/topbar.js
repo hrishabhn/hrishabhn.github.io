@@ -96,6 +96,7 @@ const topbar = {
                 icon: SFSymbols.arrow.triangle.circlepath,
                 distract: false,
             },
+            { divider: true },
             // {
             //     name: 'ClickUp',
             //     link: 'https://app.clickup.com/8450846/v/l/6-182481617-1',
@@ -103,6 +104,18 @@ const topbar = {
             //     icon: SFSymbols.checklist,
             //     distract: false,
             // },
+            {
+                name: 'Morning Routine',
+                link: 'https://www.notion.so/hrishabhn/e231de5308be418a90b1e75039f80326?v=9c80b1e027c94d2a87ba8f4ff6e2e9f0',
+                icon: SFSymbols.sunrise.fill,
+                distract: false,
+            },
+            {
+                name: 'Night Routine',
+                link: 'https://www.notion.so/hrishabhn/e134803969c245909574f11df13122d0?v=f6e70ff89da9490db3b244cb478ff34b',
+                icon: SFSymbols.moon.fill,
+                distract: false,
+            },
         ]
 
         return topbar.app.tray(apps)
