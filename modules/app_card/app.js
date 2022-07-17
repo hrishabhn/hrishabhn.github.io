@@ -2,7 +2,6 @@ const appObject = {
     search: function (q, data) {
         let results = []
 
-        console.log(data)
         for (let i = 0; i < data.length; i++) {
             const name = data[i].name.toUpperCase().includes(q)
             const desc = data[i].desc ? data[i].desc.toUpperCase().includes(q) : false
@@ -102,11 +101,13 @@ const appObject = {
     },
     resultCardItem: function (app) {
         let card = document.createElement('a')
+        card.name = app.name
         card.classList = 'app-card-result clickable-o'
         card.onclick = function (e) { openApp(app, e) }
         card = cardCol(card, { accent: app.accent, style: app.style, color: app.color })
 
         if (app.link) card.style.setProperty('cursor', 'pointer')
+        if (app.searchBase) card.searchBase = app.searchBase
 
         if (app.dockIcon) card.append(elems.icon(app.dockIcon))
         else if (app.thumb) card.append(elems.appThumb(app.thumb))

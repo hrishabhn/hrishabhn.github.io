@@ -55,20 +55,20 @@ const commonApps = {
             tags: ['twitter'],
         }
     },
-    youtube: function (name, link, desc) {
-        return {
-            name: name,
-            link: link,
-            // searchBase: 'https://www.youtube.com/results?search_query=',
-            desc: desc,
-            thumb: 'youtube.jpeg',
-            accent: colorData['google'].red,
-            // distract: true,
-            tags: [
-                'youtube',
-            ],
-        }
-    },
+    // youtube: function (name, link, desc) {
+    //     return {
+    //         name: name,
+    //         link: link,
+    //         // searchBase: 'https://www.youtube.com/results?search_query=',
+    //         desc: desc,
+    //         thumb: 'youtube.jpeg',
+    //         accent: colorData['google'].red,
+    //         // distract: true,
+    //         tags: [
+    //             'youtube',
+    //         ],
+    //     }
+    // },
 
     flight: function (key) {
         const flight = flightData[key]
@@ -180,7 +180,7 @@ const appDataAll = {
         {
             name: 'YouTube',
             link: 'https://www.youtube.com',
-            // searchBase: 'https://www.youtube.com/results?search_query=',
+            searchBase: 'https://www.youtube.com/results?search_query=',
             thumb: 'youtube.jpeg',
             accent: colorData.google.red,
         },

@@ -10,13 +10,29 @@ const spotlight = {
         input.placeholder = 'Search'
         input.onkeyup = function (e) { spotlight.run(e) }
 
+        input.showPrompt = function (engine) {
+            const prompt = Elems.div('prompt')
+            const tab = Elems.p('Tab')
+            tab.classList = 'tab'
+
+            prompt.append(Elems.p('Press'))
+            prompt.append(tab)
+            prompt.append(Elems.p(`to search ${engine}`))
+
+            elem.append(prompt)
+        }
+        input.hidePrompt = function () { while (elem.lastChild.tagName !== 'INPUT') elem.lastChild.remove() }
+
         elem.append(elems.icon(SFSymbols.magnifyingglass))
         elem.append(input)
-
         return elem
     },
     elem: function () { return document.getElementById('spotlight').childNodes[1] },
     result: document.getElementById('result-tray'),
+    target: function () {
+        if (spotlight.result.hasChildNodes()) return spotlight.result.firstChild.firstResult()
+        return null
+    },
     // engine: function (data) {
     //     const input = spotlight.elem()
     //     let app = document.createElement('div')
@@ -46,11 +62,9 @@ const spotlight = {
 
         if (q) {
             if (e.key == 'Enter') {
-                // !! add href
-                if (spotlight.result.hasChildNodes()) {
-                    let target = spotlight.result.firstChild.firstResult()
-                    if (target.href) window.open(target.href, '_self')
-                    else if (target.onclick) target.onclick()
+                if (spotlight.target()) {
+                    if (spotlight.target().href) window.open(spotlight.target().href, '_self')
+                    else if (spotlight.target().onclick) spotlight.target().onclick()
                 } else {
                     if (qOrig.startsWith('https://')) window.open(qOrig, '_self')
                     else window.open(googleSearch(qOrig), '_self')
@@ -72,10 +86,7 @@ const spotlight = {
             else if (qOrig !== spotlight.oldQ) {
                 document.getElementById('main').classList = 'searching'
                 while (spotlight.result.firstChild) spotlight.result.firstChild.remove()
-
-                // // remove searchable tab elem
-                // let tabOld = document.getElementById('tab-to-search')
-                // if (tabOld) tabOld.remove()
+                spotlight.elem().hidePrompt()
 
                 let resultCards = [
                     appObject.resultCard(appObject.search(q, focus.apps()), 'Focus Modes'),
@@ -106,6 +117,9 @@ const spotlight = {
                 ]
 
                 for (const c of resultCards) if (!c.isEmpty()) spotlight.result.append(c)
+
+                // searchable
+                if (spotlight.target().searchBase) spotlight.elem().showPrompt(spotlight.target().name)
             }
         } else {
             document.getElementById('main').classList = 'initial'
