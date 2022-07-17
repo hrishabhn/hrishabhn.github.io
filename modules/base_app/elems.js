@@ -24,14 +24,14 @@ const Elems = {
 
 
     // tags
-    div: function (c) {
-        const d = document.createElement('div')
-        d.classList = c
-        return d
-    },
-    p: function (t) {
-        const p = document.createElement('div')
-        p.textContent = t
-        return p
-    },
+    // div: function (c) {
+    //     const d = document.createElement('div')
+    //     d.classList = c
+    //     return d
+    // },
+    // p: function (t) {
+    //     const p = document.createElement('div')
+    //     p.textContent = t
+    //     return p
+    // },
 }
