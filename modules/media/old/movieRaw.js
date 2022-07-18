@@ -6,7 +6,8 @@ let movieRaw = [
         data: [
             movieDict.money,
             movieDict.lost,
-            movieDict.kenobi,
+            movieDict.cowboy,
+            movieDict.lineofduty,
             // 'primevideo://detail?gti=amzn1.dv.gti.b346f853-671f-431f-82db-4cda8a03fe1f'
             // https://www.primevideo.com/gp/video/detail/B09WV8HF7Q
         ],
@@ -25,7 +26,6 @@ let movieRaw = [
             movieDict.peaky,
             movieDict.friends,
             movieDict.tintin,
-            movieDict.cowboy,
             movieDict.earth,
             movieDict.ozark,
         ],
@@ -68,7 +68,6 @@ let movieRaw = [
             movieDict.chernobyl,
             movieDict.sopranos,
             movieDict.spy,
-            movieDict.lineofduty,
             movieDict.mindhunter,
             movieDict.vikings,
             movieDict.qanon,
@@ -146,6 +145,7 @@ let movieRaw = [
             movieDict.mythic,
             movieDict.narcos,
             movieDict.nine,
+            movieDict.kenobi,
             movieDict.paradise,
             movieDict.reacher,
             movieDict.rick,
@@ -194,6 +194,9 @@ let movieRaw = [
     {
         name: 'Recent Movies',
         data: [
+            //@ dominion
+            //@ luca movie
+            movieDict.maverick,
             movieDict.supernature,
             movieDict.eurovision,
             movieDict.zohan,

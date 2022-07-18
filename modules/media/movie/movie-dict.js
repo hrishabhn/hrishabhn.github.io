@@ -1880,12 +1880,19 @@ const movieDict = {
         },
     },
     'lineofduty': {
-        name: "Line of Duty",
-        id: "lineofduty",
-        link: "https://www.hulu.com/series/line-of-duty-0efc0f95-c575-46da-b28f-a30a13d86b37",
+        name: 'Line of Duty',
+        id: 'lineofduty',
+        link: 'https://www.hulu.com/series/line-of-duty-0efc0f95-c575-46da-b28f-a30a13d86b37',
         info: {
             water: movieServices.hulu,
-            description: "Thriller &#149 6 Season &#149 2012 - Present",
+            seasons: 6,
+            yearStart: 2012,
+            yearEnd: 2021,
+            genre: [
+                'crime',
+                'drama',
+                'mystery',
+            ],
             summary: "After refusing to help cover up an unlawful and fatal shooting by members of his team, Detective Sergeant Steve Arnott is transferred to Anti-Corruption Unit 12, AC-12. Run by zealous Superintendent Ted Hastings, the department is responsible for investigating possible corruption within the Central Police force. Working alongside DS Arnott is Detective Inspector Kate Fleming, who is an undercover specialist. With the help and oversight of Hastings, Arnott and Fleming take on difficult cases, which lead from laddering to mishandling evidence.",
         },
         style: {
@@ -1893,6 +1900,11 @@ const movieDict = {
             poster: {
                 wide: {
                     type: 'webp',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpeg',
+                    size: '2 / 3',
                     title: true,
                 },
             },
@@ -1903,8 +1915,9 @@ const movieDict = {
         },
         apps: {
             tvTimeID: '260092',
-            reelgoodLink: "https://reelgood.com/show/line-of-duty-2012",
-            imdbID: "tt2303687",
+            reelgoodLink: 'https://reelgood.com/show/line-of-duty-2012',
+            imdbID: 'tt2303687',
+            subReddit: 'lineofduty',
         },
     },
     'dexter': {
@@ -7616,6 +7629,60 @@ const movieDict = {
     //     //     },
     //     // ],
     // },
+    'maverick': {
+        name: 'Top Gun: Maverick',
+        id: 'maverick',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            water: movieServices.theatre,
+            // date: '',
+            year: 2022,
+            genre: [
+                'action',
+                'drama',
+            ],
+            summary: "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.",
+            tags: ['top gun']
+        },
+        style: {
+            hex: '337799',
+            poster: {
+                wide: {
+                    type: 'jpg',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'widest',
+            },
+        },
+        apps: {
+            reelgoodLink: 'https://reelgood.com/movie/top-gun-maverick-2020',
+            imdbID: 'tt1745960',
+        },
+        cast: [
+            {
+                actor: 'Tom Cruise',
+                char: 'Capt. Pete \'Maverick\' Mitchell',
+            },
+            {
+                actor: 'Jennifer Connelly',
+                char: 'Penny Benjamin',
+            },
+            {
+                actor: 'Miles Teller',
+                char: 'PLt. Bradley \'Rooster\' Bradshaw',
+            },
+        ],
+    },
 }
 // @new
 // 'identifier': {
