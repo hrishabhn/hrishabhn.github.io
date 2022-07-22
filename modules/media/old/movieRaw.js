@@ -1,4 +1,7 @@
-const soonMovies = []
+const soonMovies = [
+    movieDict.dragon,
+    movieDict.rehearse,
+]
 
 let movieRaw = [
     {
@@ -6,8 +9,7 @@ let movieRaw = [
         data: [
             movieDict.money,
             movieDict.lost,
-            movieDict.cowboy,
-            movieDict.lineofduty,
+            movieDict.newgirl,
             // 'primevideo://detail?gti=amzn1.dv.gti.b346f853-671f-431f-82db-4cda8a03fe1f'
             // https://www.primevideo.com/gp/video/detail/B09WV8HF7Q
         ],
@@ -15,6 +17,9 @@ let movieRaw = [
     {
         name: 'My list',
         data: [
+            movieDict.nathan,
+            movieDict.cowboy,
+            movieDict.lineofduty,
             movieDict.fargo,
             movieDict.fleabag,
             movieDict.wecrashed,

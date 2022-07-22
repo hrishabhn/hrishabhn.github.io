@@ -7736,7 +7736,7 @@ const movieDict = {
         // },
         info: {
             water: movieServices.hbo,
-            // date: '',
+            date: '15 Jul 2022',
             seasons: 1,
             yearStart: 2022,
             yearEnd: null,
