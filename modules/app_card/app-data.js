@@ -113,6 +113,12 @@ const appDataAll = {
             color: Colors.teal,
         },
         {
+            name: 'Power Automate',
+            link: 'https://flow.microsoft.com',
+            thumb: 'automate.jpeg',
+            color: Colors.blue,
+        },
+        {
             name: 'Lists',
             link: 'https://hp-my.sharepoint.com/personal/hrishabh_nadkarni_hp_com/_layouts/15/Lists.aspx',
             thumb: 'lists.jpeg',
