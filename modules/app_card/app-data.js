@@ -106,6 +106,18 @@ const appDataAll = {
             thumb: 'zoom.jpeg',
             color: Colors.blue,
         },
+        {
+            name: 'Sharepoint',
+            link: 'https://hp.sharepoint.com/teams/ApplicationsDatabase',
+            thumb: 'sharepoint.jpeg',
+            color: Colors.teal,
+        },
+        {
+            name: 'Lists',
+            link: 'https://hp-my.sharepoint.com/personal/hrishabh_nadkarni_hp_com/_layouts/15/Lists.aspx',
+            thumb: 'lists.jpeg',
+            color: Colors.yellow,
+        },
     ],
     thermo: [
         {
