@@ -36,8 +36,7 @@ const appObject = {
                 card.append(icon)
             }
 
-            if (app.dockIcon) card.append(elems.icon(app.dockIcon))
-            else if (app.thumb) card.append(elems.appThumb(app.thumb))
+            if (app.thumb) card.append(elems.appThumb(app.thumb))
             else if (app.icon) card.append(elems.icon(app.icon))
 
             card.append(elems.spacer(8))
@@ -107,8 +106,7 @@ const appObject = {
 
         if (app.link) card.style.setProperty('cursor', 'pointer')
 
-        if (app.dockIcon) card.append(elems.icon(app.dockIcon))
-        else if (app.thumb) card.append(elems.appThumb(app.thumb))
+        if (app.thumb) card.append(elems.appThumb(app.thumb))
         else if (app.icon) card.append(elems.icon(app.icon))
 
         // search properties

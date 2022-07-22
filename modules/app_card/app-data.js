@@ -23,7 +23,7 @@ const commonApps = {
     //         thumb: thumbData['course'],
     //         color: Colors.orange,
     //         distract: false,
-    //         dockIcon: SFSymbols.graduationcap.fill,
+    //         icon: SFSymbols.graduationcap.fill,
     //     }
     // },
     syllabus: function (id) {
@@ -70,22 +70,22 @@ const commonApps = {
     //     }
     // },
 
-    flight: function (key) {
-        const flight = flightData[key]
-        return {
-            name: `${flight.airline.code} ${flight.number}`,
-            trigger: function () { flightData[key].detail() },
-            desc: `${flight.dep.code} &#8594 ${flight.arr.code}`,
-            thumb: flight.airline.thumb,
-            accent: flight.airline.accent,
-            distract: false,
-            tags: [
-                flight.dep.city,
-                flight.arr.city,
-            ],
-            dockIcon: flight.airline.logo.icon,
-        }
-    }
+    // flight: function (key) {
+    //     const flight = flightData[key]
+    //     return {
+    //         name: `${flight.airline.code} ${flight.number}`,
+    //         trigger: function () { flightData[key].detail() },
+    //         desc: `${flight.dep.code} &#8594 ${flight.arr.code}`,
+    //         thumb: flight.airline.thumb,
+    //         accent: flight.airline.accent,
+    //         distract: false,
+    //         tags: [
+    //             flight.dep.city,
+    //             flight.arr.city,
+    //         ],
+    //         icon: flight.airline.logo.icon,
+    //     }
+    // }
 }
 
 

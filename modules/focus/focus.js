@@ -13,6 +13,17 @@ const focus = {
                     work: false,
                     distract: false,
                 },
+                {
+                    name: 'Bored',
+                    id: 'bored',
+                    // desc: 'No focus selected',
+                    thumb: thumbData['user'],
+                    icon: SFSymbols.person.fill,
+                    color: Colors.blue,
+                    apps: null,
+                    work: false,
+                    distract: false,
+                },
                 // {
                 //     name: 'Workout',
                 //     id: 'workout',
@@ -193,8 +204,7 @@ const focus = {
             name: item.name,
             trigger: function () { item.trigger() },
             desc: item.desc,
-            thumb: item.thumb,
-            dockIcon: item.icon,
+            icon: item.icon,
             color: item.color,
             distract: item.distract,
         })
