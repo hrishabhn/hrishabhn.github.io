@@ -214,6 +214,7 @@ const actors = {
         'Danny Pudi': 'https://is5-ssl.mzstatic.com/image/thumb/gkAuvuvLp6DJlaNKgwUdpQ/492x492ve.webp',
         'F. Murray Abraham': 'https://is4-ssl.mzstatic.com/image/thumb/gteLdf3rrRL8jHO-lpibgQ/492x492ve.webp',
         'David Attenborough': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlNa5Q3GeI0vZM4-FOnqItgdLXbUjf35yk6gfGCV2n3EthZTvX',
+        'Nathan Fielder': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUA8tkqkhdQDXrRJg9gtZWKRjwbGVpNaP8epvI-WHcy7JJpae7',
     },
     actorMatch: function (name) {
         let results = []

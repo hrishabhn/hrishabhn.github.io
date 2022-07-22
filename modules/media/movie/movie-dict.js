@@ -4910,6 +4910,7 @@ const movieDict = {
                 'fantasy',
             ],
             summary: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+            tags: ['got']
         },
         style: {
             hex: '4e3e46',
@@ -7680,6 +7681,145 @@ const movieDict = {
             {
                 actor: 'Miles Teller',
                 char: 'PLt. Bradley \'Rooster\' Bradshaw',
+            },
+        ],
+    },
+    'dragon': {
+        name: 'House of the Dragon',
+        id: 'dragon',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            water: movieServices.hbo,
+            date: '22 Aug 2022',
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'adventure',
+                'fantasy',
+            ],
+            summary: "The story of the House Targaryen set 200 years before the events of Game of Thrones",
+            tags: ['got']
+        },
+        style: {
+            hex: FluentColor.pinkRed10,
+            poster: {
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpg',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
+        },
+        apps: {
+            tvTimeID: '371572',
+            reelgoodLink: 'https://reelgood.com/show/house-of-the-dragon-2022',
+            imdbID: 'tt11198330',
+            subReddit: 'HouseOfTheDragon',
+        },
+    },
+    'rehearse': {
+        name: 'The Rehearsal',
+        id: 'rehearse',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            water: movieServices.hbo,
+            // date: '',
+            seasons: 1,
+            yearStart: 2022,
+            yearEnd: null,
+            genre: [
+                'comedy',
+            ],
+            summary: "Nathan Fielder gives people a chance to rehearse for their own lives in a world where nothing ever works out as expected.",
+        },
+        style: {
+            hex: FluentColor.gray20,
+            poster: {
+                wide: {
+                    type: 'jpeg',
+                    title: true,
+                },
+                mobile: {
+                    type: 'jpeg',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
+        },
+        apps: {
+            // tvTimeID: 'identifier',
+            // reelgoodLink: 'link',
+            imdbID: 'tt10802170',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Nathan Fielder',
+                char: 'Self',
+            },
+        ],
+    },
+    'nathan': {
+        name: 'Nathan for You',
+        id: 'nathan',
+        // link: {
+        //     netflix: '80197526'
+        // },
+        info: {
+            water: movieServices.hulu,
+            seasons: 4,
+            yearStart: 2013,
+            yearEnd: 2017,
+            genre: [
+                'comedy',
+                'dockumentary',
+            ],
+            summary: "Nathan Fielder uses his business degree and life experiences to help real small businesses turn a profit. But because of his unorthodox approach, Nathan's genuine efforts to do good often draw real people into an experience far beyond what they signed up for.",
+        },
+        style: {
+            hex: FluentColor.gray20,
+            poster: {
+                wide: {
+                    type: 'webp',
+                    title: true,
+                },
+                mobile: {
+                    type: 'webp',
+                    size: '7 / 10',
+                    title: true,
+                },
+            },
+            title: {
+                type: 'png',
+                size: 'wide',
+            },
+        },
+        apps: {
+            tvTimeID: '267002',
+            reelgoodLink: 'https://reelgood.com/show/nathan-for-you-2013',
+            // imdbID: 'identifier',
+            // subReddit: 'subreddit',
+        },
+        cast: [
+            {
+                actor: 'Nathan Fielder',
             },
         ],
     },

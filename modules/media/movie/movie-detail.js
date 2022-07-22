@@ -11,7 +11,7 @@ const tvDetail = {
     },
     hide: function () {
         tvDetail.elem.classList.remove('open')
-        while(tvDetail.elem.firstChild) tvDetail.elem.firstChild.remove()
+        while (tvDetail.elem.firstChild) tvDetail.elem.firstChild.remove()
     },
     card: function (key) {
         const movie = movieDict[key]
@@ -154,11 +154,11 @@ function movieApps(movie) {
     })
 
     // tv time
-    if (movie.apps.tvTimeID) data.push({
+    data.push({
         icon: movieIcons.tvtime,
         pad: 1,
         name: 'TV Time',
-        link: `https://www.tvtime.com/en/show/${movie.apps.tvTimeID}`
+        link: movie.apps.tvTimeID ? `https://www.tvtime.com/en/show/${movie.apps.tvTimeID}` : googleSearch(`${movie.name} site:tvtime.com`)
     })
 
     // reelgood

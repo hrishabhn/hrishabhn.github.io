@@ -98,6 +98,7 @@ const appDataAll = {
             icon: SFSymbols.person.fill,
             color: Colors.blue,
         },
+        commonApps.onedrive('https://hp-my.sharepoint.com/personal/hrishabh_nadkarni_hp_com/_layouts/15/onedrive.aspx'),
         commonApps.notion('https://www.notion.so/hrishabhn/HP-0c796b15ffba44b0bf1e4266f04c8599'),
         {
             name: 'Zoom',
@@ -491,7 +492,7 @@ const appDataAll = {
     span: [
         {
             name: 'SpanishDict',
-            link: 'https://www.spanishdict.com/learn', //@
+            link: 'https://www.spanishdict.com', //@
             searchBase: 'https://www.spanishdict.com/translate/',
             thumb: 'spanishdict.jpeg',
             accent: '1b85e5',

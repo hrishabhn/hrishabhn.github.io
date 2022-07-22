@@ -204,6 +204,11 @@ const budgetData = [
         date: '13 Jul 2022',
     },
     {
+        merchant: budgetMerch.hpCafe,
+        amount: 3.36,
+        date: '14 Jul 2022',
+    },
+    {
         merchant: budgetMerch.coaliment,
         amount: 3.48,
         date: '14 Jul 2022',
@@ -247,6 +252,27 @@ const budgetData = [
         cat: budgetCat.grocery,
         amount: 10.59,
         date: '17 Jul 2022',
+    },
+    {
+        name: 'Dir',
+        cat: budgetCat.health,
+        amount: 109.38,
+        date: '18 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.coaliment,
+        amount: 2.09,
+        date: '18 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.hpCafe,
+        amount: 3.36,
+        date: '19 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.buenasMigas,
+        amount: 4.55,
+        date: '19 Jul 2022',
     },
 ]
 
