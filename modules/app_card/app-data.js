@@ -134,7 +134,7 @@ const appDataAll = {
         },
         {
             name: 'Canvas',
-            link: 'https://uwyo.instructure.com',
+            link: 'https://uwyo.instructure.com/courses/562939',
             icon: SFSymbols.graduationcap.fill,
             color: Colors.orange,
         },

@@ -274,6 +274,50 @@ const budgetData = [
         amount: 4.55,
         date: '19 Jul 2022',
     },
+    {
+        name: 'Five Guys',
+        cat: budgetCat.outing,
+        amount: 5.75,
+        date: '19 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.buenasMigas,
+        amount: 7.25,
+        date: '20 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.taxi,
+        amount: 3.9,
+        date: '20 Jul 2022',
+    },
+    {
+        name: 'Chinese Garden',
+        cat: budgetCat.outing,
+        amount: 19,
+        date: '21 Jul 2022',
+    },
+    {
+        name: 'Gonzalez',
+        cat: budgetCat.outing,
+        amount: 9.2,
+        date: '21 Jul 2022',
+    },
+    {
+        name: 'Canigó',
+        cat: budgetCat.outing,
+        amount: 5.75,
+        date: '21 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.coaliment,
+        amount: 11.74,
+        date: '22 Jul 2022',
+    },
+    {
+        merchant: budgetMerch.buenasMigas,
+        amount: 4,
+        date: '22 Jul 2022',
+    },
 ]
 
 function cleanFloat(x) { return Math.round(x * 100) / 100 }
