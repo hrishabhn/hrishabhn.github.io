@@ -1,154 +1,155 @@
+const focusDict = {
+    default: {
+        name: 'Default',
+        desc: 'No focus selected',
+        icon: SFSymbols.person.fill,
+        color: Colors.blue,
+        apps: null,
+        work: false,
+        distract: false,
+    },
+    bored: {
+        name: 'Bored',
+        desc: null,
+        icon: SFSymbols.lightbulb.fill, //@ question mark
+        color: Colors.red,
+        apps: appDataAll.bored,
+        work: false,
+        distract: false,
+    },
+    hp: {
+        name: 'HP',
+        desc: null,
+        icon: SFSymbols.briefcase.fill,
+        color: Colors.blue,
+        apps: appDataAll.hp,
+        work: true,
+        distract: false,
+    },
+    thermo: {
+        name: 'Thermodynamics',
+        desc: 'ES 2310',
+        icon: SFSymbols.flame.fill,
+        color: Colors.yellow,
+        apps: appDataAll.thermo,
+        work: true,
+        distract: false,
+    },
+    media: {
+        name: 'Media',
+        id: 'media',
+        desc: 'TV, Movies, Podcasts & Books',
+        icon: SFSymbols.play.fill,
+        color: Colors.red,
+        apps: null,
+        work: false,
+        distract: true,
+        trays: function () {
+            return [mediaAll.modal('pod')]
+        },
+    },
+    watch: {
+        name: 'Watch',
+        id: 'watch',
+        desc: 'TV & Movies',
+        icon: SFSymbols.tv.fill,
+        color: Colors.red,
+        apps: appDataAll.video,
+        work: false,
+        distract: true,
+        trays: function () {
+            return [
+                movieElem.giant.create(),
+                channels.bigTray(),
+                movieElem.tall.tray(movieRaw[0]),
+                movieElem.big.tray(movieRaw[1]),
+                movieElem.small.tray(movieRaw[2]),
+                movieElem.tall.tray(movieRaw[3]),
+                movieElem.small.tray(movieRaw[4]),
+                movieElem.small.tray(movieRaw[5]),
+                movieElem.smart.tray(movieRaw[6]),
+                movieElem.small.tray(movieRaw[7]),
+                movieElem.small.tray(movieRaw[8]),
+                movieElem.tall.tray(movieRaw[9]),
+                movieElem.tall.tray(movieRaw[10]),
+            ]
+        },
+    },
+    read: {
+        name: 'Read',
+        id: 'read',
+        desc: 'Books & News',
+        icon: SFSymbols.book.fill,
+        color: Colors.orange,
+        apps: appDataAll.read,
+        work: false,
+        distract: false,
+        // widgets: function () {
+        //     return [
+        //         widgets.media.card(bookData[0].data[0], 'book'),
+        //         widgets.media.card(bookData[0].data[1], 'book'),
+        //         widgets.media.card(bookData[0].data[2], 'book'),
+        //     ]
+        // },
+        trays: function () {
+            return [
+                bookPage()[0],
+                bookPage()[1],
+                bookPage()[2],
+                bookPage()[3],
+                books.data[0].elem,
+                books.data[1].elem,
+                books.data[2].elem,
+                books.data[3].elem,
+            ]
+        },
+    },
+    listen: {
+        name: 'Listen',
+        id: 'listen',
+        desc: 'Books & Audiobooks',
+        icon: SFSymbols.headphones,
+        color: Colors.purple,
+        apps: appDataAll.listen,
+        work: false,
+        distract: false,
+        trays: function () {
+            return [podElem.recent.tray()]
+        },
+    },
+}
+
+for (const k in focusDict) {
+    focusDict[k].id = k
+    focusDict[k].trigger = function () { focus.set(k) }
+}
+
+
+
+
 const focus = {
     data: [
         {
+            name: null,
             data: [
-                {
-                    name: 'Default',
-                    id: 'default',
-                    desc: 'No focus selected',
-                    thumb: thumbData['user'],
-                    icon: SFSymbols.person.fill,
-                    color: Colors.blue,
-                    apps: null,
-                    work: false,
-                    distract: false,
-                },
-                {
-                    name: 'Bored',
-                    id: 'bored',
-                    // desc: 'No focus selected',
-                    thumb: thumbData['user'],
-                    icon: SFSymbols.person.fill,
-                    color: Colors.blue,
-                    apps: null,
-                    work: false,
-                    distract: false,
-                },
-                // {
-                //     name: 'Workout',
-                //     id: 'workout',
-                //     trays: function () {
-                //         return [
-                //             workoutCard(),
-                //         ]
-                //     },
-                // },
+                focusDict.default,
+                focusDict.bored,
             ],
         },
         {
             name: 'Work',
             data: [
-                {
-                    name: 'HP',
-                    id: 'hp',
-                    icon: SFSymbols.briefcase.fill,
-                    color: Colors.blue,
-                    apps: appDataAll.hp,
-                    work: true,
-                    distract: false,
-                },
-                {
-                    name: 'Thermodynamics',
-                    id: 'thermo',
-                    desc: 'ES 2310',
-                    thumb: null,
-                    icon: SFSymbols.flame.fill,
-                    color: Colors.yellow,
-                    apps: appDataAll.thermo,
-                    work: true,
-                    distract: false,
-                },
+                focusDict.hp,
+                focusDict.thermo,
             ],
         },
         {
             name: 'Media',
             data: [
-                {
-                    name: 'Media',
-                    id: 'media',
-                    desc: 'TV, Movies, Podcasts & Books',
-                    thumb: thumbData['tv'], //update
-                    icon: SFSymbols.play.fill,
-                    color: Colors.red,
-                    apps: null,
-                    work: false,
-                    distract: true,
-                    trays: function () {
-                        return [mediaAll.modal('pod')]
-                    },
-                },
-                {
-                    name: 'Watch',
-                    id: 'watch',
-                    desc: 'TV & Movies',
-                    thumb: thumbData['tv'],
-                    icon: SFSymbols.tv.fill,
-                    color: Colors.red,
-                    apps: appDataAll.video,
-                    work: false,
-                    distract: true,
-                    trays: function () {
-                        return [
-                            movieElem.giant.create(),
-                            channels.bigTray(),
-                            movieElem.tall.tray(movieRaw[0]),
-                            movieElem.big.tray(movieRaw[1]),
-                            movieElem.small.tray(movieRaw[2]),
-                            movieElem.tall.tray(movieRaw[3]),
-                            movieElem.small.tray(movieRaw[4]),
-                            movieElem.small.tray(movieRaw[5]),
-                            movieElem.smart.tray(movieRaw[6]),
-                            movieElem.small.tray(movieRaw[7]),
-                            movieElem.small.tray(movieRaw[8]),
-                            movieElem.tall.tray(movieRaw[9]),
-                            movieElem.tall.tray(movieRaw[10]),
-                        ]
-                    },
-                },
-                {
-                    name: 'Read',
-                    id: 'read',
-                    desc: 'Books & News',
-                    thumb: thumbData['book'],
-                    icon: SFSymbols.book.fill,
-                    color: Colors.orange,
-                    apps: appDataAll.read,
-                    work: false,
-                    distract: false,
-                    // widgets: function () {
-                    //     return [
-                    //         widgets.media.card(bookData[0].data[0], 'book'),
-                    //         widgets.media.card(bookData[0].data[1], 'book'),
-                    //         widgets.media.card(bookData[0].data[2], 'book'),
-                    //     ]
-                    // },
-                    trays: function () {
-                        return [
-                            bookPage()[0],
-                            bookPage()[1],
-                            bookPage()[2],
-                            bookPage()[3],
-                            books.data[0].elem,
-                            books.data[1].elem,
-                            books.data[2].elem,
-                            books.data[3].elem,
-                        ]
-                    },
-                },
-                {
-                    name: 'Listen',
-                    id: 'listen',
-                    desc: 'Books & Audiobooks',
-                    thumb: thumbData['pod'],
-                    icon: SFSymbols.headphones,
-                    color: Colors.purple,
-                    apps: appDataAll.listen,
-                    work: false,
-                    distract: false,
-                    trays: function () {
-                        return [podElem.recent.tray()]
-                    },
-                },
+                focusDict.media,
+                focusDict.watch,
+                focusDict.read,
+                focusDict.listen,
             ],
         },
         // {
@@ -158,7 +159,6 @@ const focus = {
         //             name: 'Travel',
         //             id: 'travel',
         //             desc: 'Flights & Hotels',
-        //             thumb: thumbData['plane'],
         //             icon: SFSymbols.airplane,
         //             color: Colors.mint,
 
@@ -187,16 +187,14 @@ const focus = {
     ],
     load: function () {
         // removeCookie('focus')
-        if (!getCookie('focus')) setCookie('focus', JSON.stringify([0, 0]), 1)
+        if (!getCookie('focus')) setCookie('focus', 'default', 1)
     },
-    set: function (i, j) {
-        setCookie('focus', JSON.stringify([i, j]), 1)
+    set: function (k) {
+        setCookie('focus', k, 1)
         location.reload()
     },
     get: function () {
-        const i = JSON.parse(getCookie('focus'))[0]
-        const j = JSON.parse(getCookie('focus'))[1]
-        return focus.data[i].data[j]
+        return focusDict[getCookie('focus')]
     },
     apps: function () {
         let apps = []
@@ -234,8 +232,8 @@ const focus = {
 }
 
 
-// add trigger function to focusData
-for (const i in focus.data) for (const j in focus.data[i].data) {
-    const item = focus.data[i].data[j]
-    item.trigger = function () { focus.set(parseInt(i), parseInt(j)) }
-}
+// // add trigger function to focus
+// for (const i in focus.data) for (const j in focus.data[i].data) {
+//     const item = focus.data[i].data[j]
+//     item.trigger = function () { focus.set(parseInt(i), parseInt(j)) }
+// }

@@ -86,11 +86,48 @@ const commonApps = {
     //         icon: flight.airline.logo.icon,
     //     }
     // }
+    instaPaper: {
+        name: 'Instapaper',
+        link: 'https://www.instapaper.com',
+        thumb: 'pocket.jpeg', //@
+        color: Colors.secondary,
+    },
+    kindle: {
+        name: 'Kindle',
+        link: 'kindle://',
+        thumb: 'kindle.jpeg',
+        color: Colors.indigo,
+    },
+    podcasts: {
+        name: 'Podcasts',
+        link: 'podcasts://',
+        thumb: 'podcasts.jpeg',
+        color: Colors.purple,
+    },
+    spanishDict: {
+        name: 'SpanishDict',
+        link: 'https://www.spanishdict.com', //@
+        searchBase: 'https://www.spanishdict.com/translate/',
+        thumb: 'spanishdict.jpeg',
+        accent: '1b85e5',
+    },
 }
 
 
 const appDataAll = {
     // focus
+    bored: [
+        commonApps.instaPaper,
+        commonApps.kindle,
+        commonApps.podcasts,
+        commonApps.spanishDict,
+        {
+            name: 'Interests',
+            link: 'https://www.notion.so/hrishabhn/Interests-b98cb670f700440cb3708c7842f169ae',
+            icon: SFSymbols.lightbulb.fill,
+            color: Colors.yellow,
+        },
+    ],
     hp: [
         {
             name: 'Workday',
@@ -224,12 +261,7 @@ const appDataAll = {
             thumb: 'ibooks.jpeg',
             color: Colors.orange,
         },
-        {
-            name: 'Kindle',
-            link: 'kindle://',
-            thumb: 'kindle.jpeg',
-            color: Colors.indigo,
-        },
+        commonApps.kindle,
         {
             name: 'Goodreads',
             link: 'https://www.goodreads.com',
@@ -237,12 +269,7 @@ const appDataAll = {
             thumb: 'goodreads.jpeg',
             accent: '382110',
         },
-        {
-            name: 'Instapaper',
-            link: 'https://www.instapaper.com',
-            thumb: 'pocket.jpeg', //@
-            color: Colors.secondary,
-        },
+        commonApps.instaPaper,
         {
             name: 'Pocket',
             link: 'https://getpocket.com',
@@ -269,12 +296,7 @@ const appDataAll = {
         },
     ],
     listen: [
-        {
-            name: 'Podcasts',
-            link: 'podcasts://',
-            thumb: 'podcasts.jpeg',
-            color: Colors.purple,
-        },
+        commonApps.podcasts,
         {
             name: 'Audible',
             link: 'audible://',
@@ -508,13 +530,7 @@ const appDataAll = {
         },
     ],
     span: [
-        {
-            name: 'SpanishDict',
-            link: 'https://www.spanishdict.com', //@
-            searchBase: 'https://www.spanishdict.com/translate/',
-            thumb: 'spanishdict.jpeg',
-            accent: '1b85e5',
-        },
+        commonApps.spanishDict,
         {
             name: 'Google Translate',
             link: 'https://translate.google.com',
