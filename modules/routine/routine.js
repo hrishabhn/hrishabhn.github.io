@@ -122,7 +122,7 @@ const routine = {
         if (!key) key = timeOfDay()
 
         // base card
-        let card = leftbar.cardBase(
+        let card = oldSplashCardBase(
             'Routine',
             [
                 {
@@ -228,3 +228,28 @@ const routine = {
 //     }
 //     return elem
 // }
+
+function oldSplashCardBase(title, buttons) {
+
+    let card = document.createElement('div')
+    card.classList = 'splash-card layer-1'
+
+    let header = document.createElement('div')
+    header.classList = 'header'
+    header.append(elems.p(title))
+    header.append(elems.grow())
+    if (buttons) for (const b of buttons)
+        header.append(appObject.bw({
+            name: b.name,
+            icon: b.icon,
+            trigger: function () { if (b.trigger) b.trigger() }
+        }))
+
+
+
+
+    card.append(header)
+
+
+    return card
+}

@@ -1,22 +1,22 @@
-#leftbar .routine {
+.routine {
     width: 100%;
     flex-direction: column;
 }
 
-#leftbar .routine .hline {
+.routine .hline {
     margin-left: 40px;
     margin-right: 10px;
     width: calc(100% - 50px);
 }
 
-#leftbar .routine .switch {
+.routine .switch {
     width: calc(100% - 20px);
     padding: 2px;
     border-radius: 7px;
     margin: 5px 0 2px;
 }
 
-#leftbar .routine .switch a {
+.routine .switch a {
     height: 20px;
     flex-grow: 1;
     border-radius: 5px;
@@ -27,7 +27,7 @@
 
 
 
-#leftbar .routine .task {
+.routine .task {
     width: 100%;
     padding: 6px 10px;
     margin: 2px 0;
@@ -36,7 +36,7 @@
     cursor: pointer;
 }
 
-#leftbar .routine .task a {
+.routine .task a {
     height: 20px;
     width: 20px;
     border-radius: 100px;
@@ -45,35 +45,35 @@
     border: solid 1.5px var(--white-10);
 }
 
-#leftbar .routine .task a div {
+.routine .task a div {
     height: 100%;
     width: 100%;
     border-radius: 100px;
 }
 
-#leftbar .routine .task.done a {
+.routine .task.done a {
     border: solid 1.5px var(--accent-dark);
 }
 
-#leftbar .routine .task.done a div {
+.routine .task.done a div {
     background-color: var(--accent-dark);
 }
 
 @media screen and (prefers-color-scheme: light) {
-    #leftbar .routine .task a {
+    .routine .task a {
         border: solid 1.5px var(--dark-layer-1-10);
     }
 
-    #leftbar .routine .task.done a {
+    .routine .task.done a {
         border: solid 1.5px var(--accent-light, var(--blue-light));
     }
 
-    #leftbar .routine .task.done a div {
+    .routine .task.done a div {
         background-color: var(--accent-light, var(--blue-light));
     }
 }
 
-/* #leftbar .routine .task .icon {
+/* .routine .task .icon {
     height: 100%;
     width: 100%;
     padding: 20%;
@@ -84,7 +84,7 @@
     fill: white;
 }
 
-#leftbar .routine .task.done .icon {
+.routine .task.done .icon {
     transform: scale(1);
     opacity: 1;
 } */

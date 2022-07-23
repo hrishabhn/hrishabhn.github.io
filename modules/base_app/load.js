@@ -5,7 +5,8 @@ function loadApp() {
 
     loadAccent()
 
-    leftbar.load()
+    splash.load()
+
     spotlight.elem().focus()
     topbar.load()
 

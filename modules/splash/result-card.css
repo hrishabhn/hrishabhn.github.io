@@ -1,5 +1,4 @@
 .result-card-stack {
-    width: 100%;
     display: grid;
     gap: 20px;
     grid-auto-columns: 1fr;
@@ -10,12 +9,12 @@
     height: 100%;
 }
 
+/*  */
 .result-card {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
 
-    width: 100%;
     border-radius: 10px;
     padding-bottom: 7px;
 }
@@ -53,10 +52,6 @@
 @media(max-width: 450px) {
     .result-card-stack {
         grid-auto-flow: row;
-    }
-
-    .result-card {
-        border-radius: 0;
     }
 }
 

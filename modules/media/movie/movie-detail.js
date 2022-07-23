@@ -103,7 +103,7 @@ const tvDetail = {
 
 
 
-        let close = elems.a(iconData.close, null)
+        let close = elems.a(SFSymbols.xmark, null)
         close.classList = 'close-tv-modal clickable-o'
         close.onclick = function () {
             tvDetail.hide()

@@ -1,0 +1,4 @@
+.splash-item-width {
+    width: 100%;
+    max-width: min(900px, calc(100vw - 30px));
+}

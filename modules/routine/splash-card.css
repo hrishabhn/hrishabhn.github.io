@@ -1,5 +1,5 @@
 /* card */
-#leftbar .splash-card {
+.splash-card {
     flex-direction: column;
     width: 100%;
     border-radius: 10px;
@@ -9,12 +9,12 @@
     align-items: flex-start;
 }
 
-#leftbar .splash-card .header {
+.splash-card .header {
     width: 100%;
     padding: 12px 15px 5px;
 }
 
-#leftbar .splash-card .header p {
+.splash-card .header p {
     font-size: 14px;
     font-weight: 500;
     opacity: 0.5;
@@ -22,7 +22,7 @@
 }
 
 
-#leftbar .splash-card .sub-title {
+.splash-card .sub-title {
     width: 100%;
     justify-content: flex-start;
     margin: 5px 0 2px;
@@ -33,13 +33,13 @@
 }
 
 
-/* #leftbar .splash-card .header .icon {
+/* .splash-card .header .icon {
     height: 20px;
     width: 20px;
     opacity: 0.5;
 } */
 
-#leftbar .splash-card .body {
+.splash-card .body {
     width: 100%;
     flex-direction: column;
     padding: 0 15px;

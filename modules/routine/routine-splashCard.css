@@ -1,4 +1,4 @@
-#leftbar .splash-card#routine .switch {
+.splash-card#routine .switch {
     align-self: flex-start;
     padding: 3px;
     border-radius: 100px;
@@ -8,18 +8,18 @@
 
 }
 
-#leftbar .splash-card#routine .switch a {
+.splash-card#routine .switch a {
     height: 30px;
     width: 30px;
     border-radius: 100px;
     padding: 2%;
 }
-#leftbar .splash-card#routine .switch a.active {
+.splash-card#routine .switch a.active {
     background-color: var(--accent-dark);
     fill: white;
 }
 
-#leftbar .splash-card#routine .switch a .icon {
+.splash-card#routine .switch a .icon {
     width: 100%;
     height: 100%;
 
@@ -29,7 +29,7 @@
 /*  */
 /*  */
 
-#leftbar .splash-card#routine .task {
+.splash-card#routine .task {
     width: 100%;
     padding: 6px 0px;
     margin: 2px 0;
@@ -39,7 +39,7 @@
 }
 
 /* 
-#leftbar .splash-card#routine .hline {
+.splash-card#routine .hline {
     margin-left: 40px;
     margin-right: 10px;
     width: calc(100% - 50px);
@@ -48,7 +48,7 @@
 
 
 
-#leftbar .splash-card#routine .task a {
+.splash-card#routine .task a {
     height: 20px;
     width: 20px;
     border-radius: 100px;
@@ -57,30 +57,30 @@
     border: solid 2px var(--white-10);
 }
 
-#leftbar .splash-card#routine .task a div {
+.splash-card#routine .task a div {
     height: 100%;
     width: 100%;
     border-radius: 100px;
 }
 
-#leftbar .splash-card#routine .task.done a {
+.splash-card#routine .task.done a {
     border: solid 2px var(--accent-dark);
 }
 
-#leftbar .splash-card#routine .task.done a div {
+.splash-card#routine .task.done a div {
     background-color: var(--accent-dark);
 }
 
 @media screen and (prefers-color-scheme: light) {
-    #leftbar .splash-card#routine .task a {
+    .splash-card#routine .task a {
         border: solid 2px var(--dark-layer-1-10);
     }
 
-    #leftbar .splash-card#routine .task.done a {
+    .splash-card#routine .task.done a {
         border: solid 2px var(--accent-light, var(--blue-light));
     }
 
-    #leftbar .splash-card#routine .task.done a div {
+    .splash-card#routine .task.done a div {
         background-color: var(--accent-light, var(--blue-light));
     }
 }

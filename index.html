@@ -22,14 +22,10 @@
     <link rel="stylesheet" href="modules/base_app/layout.css">
     <link rel="stylesheet" href="modules/base_app/elems.css">
 
-    <!-- leftbar -->
-    <link rel="stylesheet" href="modules/leftbar/leftbar.css">
-    <link rel="stylesheet" href="modules/leftbar/splash-card.css">
-    <link rel="stylesheet" href="modules/leftbar/result-tray.css">
-    <link rel="stylesheet" href="modules/leftbar/result-card.css">
-    <link rel="stylesheet" href="modules/app_card/app-result.css">
+    <!-- splash -->
+    <link rel="stylesheet" href="modules/splash/splash.css">
+    <link rel="stylesheet" href="modules/splash/result-card.css">
     <link rel="stylesheet" href="modules/spotlight/spotlight.css">
-    <link rel="stylesheet" href="modules/leftbar/pinned-apps.css">
 
     <!-- topbar -->
     <link rel="stylesheet" href="modules/topbar/topbar.css">
@@ -49,7 +45,8 @@
     <link rel="stylesheet" href="modules/app_card/app-mini.css">
     <link rel="stylesheet" href="modules/app_card/app-widget.css">
     <link rel="stylesheet" href="modules/app_card/app-bw.css">
-
+    <link rel="stylesheet" href="modules/app_card/app-result.css">
+    
     <!-- calendar -->
     <link rel="stylesheet" href="modules/calendar/calendar-event.css">
 
@@ -67,6 +64,7 @@
     <!-- routine -->
     <link rel="stylesheet" href="modules/routine/routine-leftbar.css">
     <link rel="stylesheet" href="modules/routine/routine-splashCard.css">
+    <link rel="stylesheet" href="modules/routine/splash-card.css">
 
     <!-- budget -->
     <link rel="stylesheet" href="modules/budget/budget.css">
@@ -143,8 +141,7 @@
 <body id="body" ontouchstart="" onload="loadApp()" class="layer-0">
     <div id="topbar"></div>
     <div id="main" class="initial" onscroll="mainScroll()">
-        <div id="leftbar"></div>
-        <div id="result-tray"></div>
+        <div id="main-stack" class="body-stack"></div>
         <div id="content-elem"></div>
     </div>
     <div id="tv-modal"></div>
@@ -179,9 +176,9 @@
 
 <!-- base -->
 <script src="modules/base_app/main.js"></script>
-<script src="modules/leftbar/leftbar.js"></script>
+<script src="modules/splash/splash.js"></script>
 <script src="modules/topbar/topbar.js"></script>
-<script src="modules/leftbar/result-card.js"></script>
+<script src="modules/splash/result-card.js"></script>
 
 
 <!-- content -->

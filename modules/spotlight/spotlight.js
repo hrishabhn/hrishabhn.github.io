@@ -4,7 +4,7 @@ const spotlight = {
     create: function () {
         const elem = document.createElement('div')
         elem.id = 'spotlight'
-        elem.classList = 'layer-1'
+        elem.classList = 'layer-1 splash-item-width'
 
         const input = document.createElement('input')
         input.placeholder = 'Search'
@@ -56,9 +56,9 @@ const spotlight = {
         return elem
     },
     elem: function () { return document.getElementById('spotlight').childNodes[1] },
-    result: document.getElementById('result-tray'),
+    result: function () { return document.getElementById('result-stack') },
     target: function () {
-        if (spotlight.result.hasChildNodes()) return spotlight.result.firstChild.firstResult()
+        if (spotlight.result().hasChildNodes()) return spotlight.result().firstChild.firstResult()
         return null
     },
     oldQ: null,
@@ -84,7 +84,9 @@ const spotlight = {
             }
             else if (qOrig !== spotlight.oldQ) {
                 document.getElementById('main').classList = 'searching'
-                while (spotlight.result.firstChild) spotlight.result.firstChild.remove()
+                console.log(spotlight.result())
+
+                while (spotlight.result().firstChild) spotlight.result().firstChild.remove()
                 spotlight.elem().hidePrompt()
 
                 let resultCards = [
@@ -117,14 +119,14 @@ const spotlight = {
                     colorTesting.resultCard(q),
                 ]
 
-                for (const c of resultCards) if (!c.isEmpty()) spotlight.result.append(c)
+                for (const c of resultCards) if (!c.isEmpty()) spotlight.result().append(c)
 
                 // searchable
                 if (spotlight.target()) if (spotlight.target().searchBase) spotlight.elem().showPrompt(spotlight.target().name)
             }
         } else {
             document.getElementById('main').classList = 'initial'
-            while (spotlight.result.firstChild) spotlight.result.firstChild.remove()
+            while (spotlight.result().firstChild) spotlight.result().firstChild.remove()
             content.load()
             if (e.key == 'Enter') window.open('https://google.com', '_self')
         }
