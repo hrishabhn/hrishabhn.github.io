@@ -98,5 +98,3 @@ const workout = {
         return item
     },
 }
-
-workout.load()

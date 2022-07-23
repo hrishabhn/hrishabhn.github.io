@@ -202,11 +202,6 @@ svg.stroke{
     stroke: #fff;
 }
 
-
-.line{
-    background-color: var(--white-10);
-}
-
 @media screen and (prefers-color-scheme: light) {
     input{
         color: var(--dark-layer-1);
@@ -215,10 +210,5 @@ svg.stroke{
     svg.stroke{
         stroke: var(--dark-layer-1);
     }
-
-    .line{
-        background-color: var(--dark-layer-1-10);
-    }
-
 }
 

@@ -1,0 +1,68 @@
+.routine-result-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-auto-rows: auto;
+
+
+    padding-bottom: 20px;
+    cursor: default;
+    justify-items: flex-start;
+
+    --dot-side: 10px;
+    --dot-size: 18px;
+    --line-w: 4px;
+}
+
+.routine-result-item .dot {
+    height: var(--dot-size);
+    width: var(--dot-size);
+    border-radius: 100px;
+    margin: 0 var(--dot-side);
+
+    padding: 8%;
+    z-index: 1;
+
+}
+
+.routine-result-item .subdot {
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    padding: 20%;
+}
+
+.routine-result-item .line {
+    position: absolute;
+    top: 12px;
+    left: calc(var(--dot-side) + ((var(--dot-size) - var(--line-w)) / 2));
+    height: 100%;
+    width: var(--line-w);
+}
+
+.routine-result-item:last-child .line {
+    opacity: 0;
+}
+
+
+.routine-result-item .line div {
+    height: 100%;
+    width: 100%;
+}
+
+
+.routine-result-item .name {
+    font-size: 20px;
+    font-weight: 600;
+    height: 30px;
+    border-radius: 8px;
+    padding: 0 8px;
+    margin: 0 -8px;
+}
+
+
+.routine-result-item .desc {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+}

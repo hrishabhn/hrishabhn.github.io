@@ -23,9 +23,6 @@ const splash = {
         // //@
         if (!dnd.active()) {
             stack.append(resultCard.tray([calendar.resultCard(), ideas.resultCard(), budget.resultCard.week()]))
-            // // show routine or not
-            // if (routine.now()) cards.unshift(routine.splashCard())
-            // else cards.push(routine.splashCard())
         }
 
         // focus cards

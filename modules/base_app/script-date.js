@@ -149,3 +149,8 @@ const countdown = {
         },
     },
 }
+
+function dateToStr(date) {
+    date = new Date(date)
+    return `${processDate.day.long(date)}, ${date.getDate()} ${processDate.month.long(date)}`
+}

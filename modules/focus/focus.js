@@ -125,13 +125,33 @@ const focusDict = {
         icon: SFSymbols.sunrise.fill,
         color: Colors.yellow,
         apps: null,
-        work: false,
+        work: true,
         distract: false,
-        // resultCards: function () {
-        //     return [
-        //         workout.resultCard(),
-        //     ]
-        // },
+        resultCards: function () {
+            return [
+                resultCard.tray([
+                    routine.resultCard(routine.data.morning),
+                    agenda.resultCard(routine.data.morning),
+                ])
+            ]
+        },
+    },
+    night: {
+        name: 'Night',
+        desc: 'Night Routine',
+        icon: SFSymbols.moon.fill,
+        color: Colors.indigo,
+        apps: null,
+        work: true,
+        distract: false,
+        resultCards: function () {
+            return [
+                resultCard.tray([
+                    routine.resultCard(routine.data.night),
+                    agenda.resultCard(routine.data.night),
+                ])
+            ]
+        },
     },
 
 }
@@ -158,6 +178,7 @@ const focus = {
                 focusDict.bored,
                 focusDict.workout,
                 focusDict.morning,
+                focusDict.night,
             ],
         },
         {

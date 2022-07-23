@@ -2,6 +2,7 @@ function loadApp() {
     focus.load()
     dnd.load()
     routine.load()
+    workout.load()
 
     loadAccent()
 

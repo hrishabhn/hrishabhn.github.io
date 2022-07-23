@@ -1,8 +1,7 @@
 const calendar = {
     resultCard: function () {
-        const title = `${processDate.day.long(new Date())}, ${new Date().getDate()} ${processDate.month.long(new Date())}`
         let card = resultCard.base({
-            name: title,
+            name: dateToStr(new Date),
             buttons: [{ icon: SFSymbols.calendar }],
             type: 'vstack',
             gap: 8,
@@ -11,7 +10,13 @@ const calendar = {
         card.style.setProperty('height', '100%')
 
         if (calEvents.today.length || calEvents.tomor.length) {
-            if (calEvents.today.length) for (const event of calEvents.today) card.lastChild.append(calendar.resultCardItem(event))
+            if (calEvents.today.length) {
+                for (const event of calEvents.today) card.lastChild.append(calendar.resultCardItem(event))
+            } else {
+                let p = elems.p('No more events today.')
+                p.classList = 'calendar-sub-title'
+                card.lastChild.append(p)
+            }
             if (calEvents.tomor.length) {
                 let p = elems.p('TOMORROW')
                 p.classList = 'calendar-sub-title'

@@ -54,6 +54,9 @@ body {
     background-color: var(--white-10);
 }
 
+.layer-line {
+    background-color: var(--white-10);
+}
 
 @media screen and (prefers-color-scheme: light) {
     body {
@@ -90,4 +93,10 @@ body {
     .layer-hover:active {
         background-color: var(--black-10);
     }
+
+
+    .layer-line {
+        background-color: var(--black-10);
+    }
+
 }
