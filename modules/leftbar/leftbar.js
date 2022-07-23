@@ -21,12 +21,10 @@ const leftbar = {
 
             // cards
             let cards = [
+                workout.resultCard(),
                 [calendar.resultCard(), ideas.resultCard()],
                 budget.resultCardTray(),
             ]
-
-            // focus cards
-            if (focus.get().splashCard) cards.push(focus.get().splashCard())
 
             // // show routine or not
             // if (routine.now()) cards.unshift(routine.splashCard())
@@ -37,7 +35,7 @@ const leftbar = {
 
                 if (item[0]) {
                     let tray = document.createElement('div')
-                    tray.classList = 'splash-card-tray'
+                    tray.classList = 'result-card-stack'
                     for (const child of item) tray.append(child)
                     nodes.push(tray)
 

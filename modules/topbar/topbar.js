@@ -131,7 +131,7 @@ const topbar = {
 
         if (focus.get().id !== 'default') apps.unshift({
             name: 'End Focus',
-            trigger: function (e) { focus.set(0, 0) },
+            trigger: function (e) { focus.set('default') },
             icon: SFSymbols.xmark,
         })
 

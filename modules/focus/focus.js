@@ -37,7 +37,6 @@ const focusDict = {
     },
     media: {
         name: 'Media',
-        id: 'media',
         desc: 'TV, Movies, Podcasts & Books',
         icon: SFSymbols.play.fill,
         color: Colors.red,
@@ -50,7 +49,6 @@ const focusDict = {
     },
     watch: {
         name: 'Watch',
-        id: 'watch',
         desc: 'TV & Movies',
         icon: SFSymbols.tv.fill,
         color: Colors.red,
@@ -77,7 +75,6 @@ const focusDict = {
     },
     read: {
         name: 'Read',
-        id: 'read',
         desc: 'Books & News',
         icon: SFSymbols.book.fill,
         color: Colors.orange,
@@ -106,7 +103,6 @@ const focusDict = {
     },
     listen: {
         name: 'Listen',
-        id: 'listen',
         desc: 'Books & Audiobooks',
         icon: SFSymbols.headphones,
         color: Colors.purple,
@@ -115,6 +111,20 @@ const focusDict = {
         distract: false,
         trays: function () {
             return [podElem.recent.tray()]
+        },
+    },
+    workout: {
+        name: 'Workout',
+        desc: 'Gym',
+        icon: SFSymbols.heart.fill,
+        color: Colors.green,
+        apps: null,
+        work: false,
+        distract: false,
+        trays: function () {
+            return [
+                workoutCard(),
+            ]
         },
     },
 }
@@ -134,6 +144,7 @@ const focus = {
             data: [
                 focusDict.default,
                 focusDict.bored,
+                focusDict.workout,
             ],
         },
         {
@@ -230,10 +241,3 @@ const focus = {
         return data
     },
 }
-
-
-// // add trigger function to focus
-// for (const i in focus.data) for (const j in focus.data[i].data) {
-//     const item = focus.data[i].data[j]
-//     item.trigger = function () { focus.set(parseInt(i), parseInt(j)) }
-// }

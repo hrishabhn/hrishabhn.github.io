@@ -67,6 +67,26 @@ const Colors = {
     },
 }
 
+
+function randColor() {
+    let x = [
+        Colors.blue,
+        Colors.brown,
+        Colors.cyan,
+        Colors.green,
+        Colors.indigo,
+        Colors.mint,
+        Colors.orange,
+        Colors.pink,
+        Colors.purple,
+        Colors.red,
+        Colors.teal,
+        Colors.yellow,
+    ]
+
+    return x[randomNumber(x.length)]
+}
+
 const colorTesting = {
     resultCard: function (q) {
         let card = resultCard.base({
