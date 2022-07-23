@@ -101,6 +101,9 @@ const routine = {
         item.append(line)
         return item
     },
+    now: function () { return routine.data[timeOfDay()] },
+    done: function () { return routine.now().data.map(x => x.done).every(Boolean) },
+    // active: function () { return routine.now() && !routine.done() },
 }
 
 const agenda = {
