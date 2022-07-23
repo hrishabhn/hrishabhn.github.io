@@ -55,22 +55,14 @@ const focusDict = {
         apps: appDataAll.video,
         work: false,
         distract: true,
-        trays: function () {
-            return [
-                movieElem.giant.create(),
-                channels.bigTray(),
-                movieElem.tall.tray(movieRaw[0]),
-                movieElem.big.tray(movieRaw[1]),
-                movieElem.small.tray(movieRaw[2]),
-                movieElem.tall.tray(movieRaw[3]),
-                movieElem.small.tray(movieRaw[4]),
-                movieElem.small.tray(movieRaw[5]),
-                movieElem.smart.tray(movieRaw[6]),
-                movieElem.small.tray(movieRaw[7]),
-                movieElem.small.tray(movieRaw[8]),
-                movieElem.tall.tray(movieRaw[9]),
-                movieElem.tall.tray(movieRaw[10]),
-            ]
+        resultCards: function () {
+            let nodes = []
+            for (const x of movieRaw) {
+                let results = []
+                for (const y of x.data) results.push(y.id)
+                nodes.push(movieElem.resultCard(x.name, results))
+            }
+            return nodes
         },
     },
     read: {

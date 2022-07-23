@@ -234,18 +234,18 @@ let movieRaw = [
             movieDict.social,
         ],
     },
-    {
-        name: 'Archive',
-        data: [
-            movieDict.problem,
-            movieDict.yourname,
-            movieDict.fairfax,
-            movieDict.myname,
-            movieDict.dear,
-            movieDict.fringe,
-            movieDict.lastman,
-        ],
-    },
+    // {
+    //     name: 'Archive',
+    //     data: [
+    //         movieDict.problem,
+    //         movieDict.yourname,
+    //         movieDict.fairfax,
+    //         movieDict.myname,
+    //         movieDict.dear,
+    //         movieDict.fringe,
+    //         movieDict.lastman,
+    //     ],
+    // },
 ]
 
 

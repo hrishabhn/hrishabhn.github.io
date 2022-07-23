@@ -2275,7 +2275,6 @@ const movieDict = {
     },
     'lastman': {
         name: "Y: The Last Man",
-        id: "lastman",
         link: "https://www.hulu.com/series/y-the-last-man-9fb2d79b-1280-48be-b185-f989b9c9519a",
         info: {
             water: movieServices.hulu,
@@ -7584,51 +7583,22 @@ const movieDict = {
     },
     // 'bear': {
     //     name: 'The Bear',
-    //     id: 'bear',
+    //     incomplete: true,
     //     link: 'https://www.hulu.com/series/the-bear-05eb6a8e-90ed-4947-8c0b-e6536cbddd5f',
-    //     info: {
-    //         service: 'hulu',
-    //         studio: 'fx',
-    //         location: 'Hulu',
-    //         // date: '',
-    //         seasons: 1,
-    //         yearStart: 2022,
-    //         yearEnd: null,
-    //         genre: [
-    //             'comedy',
-    //         ],
-    //         summary: "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
-    //     },
     //     style: {
-    //         hex: colorData.fluent.cyanBlue20,
     //         poster: {
     //             wide: {
     //                 type: 'webp',
     //                 title: true,
     //             },
-    //             mobile: {
-    //                 type: 'webp',
-    //                 size: '7 / 10',
-    //                 title: true,
-    //             },
-    //         },
-    //         title: {
-    //             type: 'png',
-    //             size: 'widest',
     //         },
     //     },
-    //     apps: {
-    //         // tvTimeID: 'identifier',
-    //         reelgoodLink: 'https://reelgood.com/show/the-bear-2022',
-    //         // imdbID: 'identifier',
-    //         // subReddit: 'subreddit',
-    //     },
-    //     // cast: [
-    //     //     {
-    //     //         actor: 'name',
-    //     //         char: 'name',
-    //     //     },
-    //     // ],
+    //     // apps: {
+    //     //     // tvTimeID: 'identifier',
+    //     //     reelgoodLink: 'https://reelgood.com/show/the-bear-2022',
+    //     //     // imdbID: 'identifier',
+    //     //     // subReddit: 'subreddit',
+    //     // },
     // },
     'maverick': {
         name: 'Top Gun: Maverick',
@@ -7922,6 +7892,8 @@ const processDesc = {
 
 for (const key in movieDict) {
     const movie = movieDict[key]
+
+    movie.id = key
 
     // process link
     if (movie.link) {
