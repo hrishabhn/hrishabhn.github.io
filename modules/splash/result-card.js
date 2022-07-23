@@ -22,7 +22,7 @@ const resultCard = {
         if (typeof gap != 'number') alert('gap missing for ' + name)
         body.style.setProperty('gap', `${gap}px`)
 
-        card.isEmpty = function () { return !body.hasChildNodes() }
+        card.isHidden = function () { return !body.hasChildNodes() }
         card.firstResult = function () { return body.firstChild }
 
         if (buttons) for (const b of buttons)
@@ -36,5 +36,11 @@ const resultCard = {
         card.append(body)
 
         return card
-    }
+    },
+    tray: function (nodes) {
+        let stack = document.createElement('div')
+        stack.classList = 'result-card-stack splash-item-width'
+        for (const x of nodes) stack.append(x)
+        return stack
+    },
 }

@@ -24,7 +24,7 @@ const splash = {
 
         // //@
         if (!dnd.active()) {
-            nodes.push([calendar.resultCard(), ideas.resultCard()])
+            nodes.push(resultCard.tray([calendar.resultCard(), ideas.resultCard(), budget.resultCard.week()]))
             nodes.push(budget.resultCardTray())
 
             // // show routine or not
@@ -35,16 +35,7 @@ const splash = {
         // focus cards
         if (focus.get().resultCards) for (const x of focus.get().resultCards()) nodes.push(x)
 
-        for (const item of nodes) {
-            if (item[0]) {
-                let tray = document.createElement('div')
-                tray.classList = 'result-card-stack splash-item-width'
-                for (const child of item) tray.append(child)
-                stack.append(tray)
-            } else stack.append(item)
-        }
-
-
+        for (const x of nodes) stack.append(x)
         return stack
     },
     stack: function () {

@@ -171,7 +171,7 @@ const budget = {
         merch.classList = 'item merch clickable-o'
         merch.style.setProperty('grid-row', 'span 2')
         merch.update = function ({ name, value, thumb, icon, color }) {
-            while(merch.firstChild) merch.firstChild.remove()
+            while (merch.firstChild) merch.firstChild.remove()
             if (thumb) merch.append(elems.appThumb(thumb))
             else if (icon) {
                 merch.append(elems.icon(icon))
@@ -297,8 +297,11 @@ const budget = {
 
         return card
     },
-    resultCardTray: function () {
-        return [budget.resultCard.week(), budget.resultCard.topCat(), budget.resultCard.topMerch()]
+    resultCardTray: function (q) {
+        let tray = resultCard.tray([budget.resultCard.week(), budget.resultCard.topCat(), budget.resultCard.topMerch()])
+        tray.isHidden = function () { return !'BUDGET SPENDING'.includes(q) }
+        // tray.target = function () { return document.createElement('div') }
+        return tray
     },
     resultCard: {
         week: function () {

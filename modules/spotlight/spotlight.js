@@ -58,7 +58,9 @@ const spotlight = {
     elem: function () { return document.getElementById('spotlight').childNodes[1] },
     result: function () { return document.getElementById('result-stack') },
     target: function () {
-        if (spotlight.result().hasChildNodes()) return spotlight.result().firstChild.firstResult()
+        if (spotlight.result().firstChild)
+            if (spotlight.result().firstChild.firstResult)
+                return spotlight.result().firstChild.firstResult()
         return null
     },
     oldQ: null,
@@ -70,6 +72,7 @@ const spotlight = {
 
         if (q) {
             if (e.key == 'Enter') {
+                //@ change to action
                 if (spotlight.target()) {
                     if (spotlight.target().href) window.open(spotlight.target().href, '_self')
                     else if (spotlight.target().onclick) spotlight.target().onclick()
@@ -116,9 +119,10 @@ const spotlight = {
                     // result cards
                     SF.resultCard(SF.search(q)),
                     colorTesting.resultCard(q),
+                    budget.resultCardTray(q),
                 ]
 
-                for (const c of resultCards) if (!c.isEmpty()) spotlight.result().append(c)
+                for (const c of resultCards) if (!c.isHidden()) spotlight.result().append(c)
 
                 // searchable
                 if (spotlight.target()) if (spotlight.target().searchBase) spotlight.elem().showPrompt(spotlight.target().name)
