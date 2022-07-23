@@ -17,25 +17,20 @@ const splash = {
         // base cards
         const stack = splash.stack()
         stack.id = 'base-stack'
-        const nodes = []
-
         // pinned apps
-        if (focus.get().apps) nodes.push(appObject.resultCard(focus.get().apps, focus.get().name))
+        if (focus.get().apps) stack.append(appObject.resultCard(focus.get().apps, focus.get().name))
 
         // //@
         if (!dnd.active()) {
-            nodes.push(resultCard.tray([calendar.resultCard(), ideas.resultCard(), budget.resultCard.week()]))
-            nodes.push(budget.resultCardTray())
-
+            stack.append(resultCard.tray([calendar.resultCard(), ideas.resultCard(), budget.resultCard.week()]))
             // // show routine or not
             // if (routine.now()) cards.unshift(routine.splashCard())
             // else cards.push(routine.splashCard())
         }
 
         // focus cards
-        if (focus.get().resultCards) for (const x of focus.get().resultCards()) nodes.push(x)
+        if (focus.get().resultCards) for (const x of focus.get().resultCards()) stack.append(x)
 
-        for (const x of nodes) stack.append(x)
         return stack
     },
     stack: function () {

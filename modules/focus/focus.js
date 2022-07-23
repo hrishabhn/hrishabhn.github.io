@@ -119,6 +119,21 @@ const focusDict = {
             ]
         },
     },
+    morning: {
+        name: 'Morning',
+        desc: 'Morning Routine',
+        icon: SFSymbols.sunrise.fill,
+        color: Colors.yellow,
+        apps: null,
+        work: false,
+        distract: false,
+        // resultCards: function () {
+        //     return [
+        //         workout.resultCard(),
+        //     ]
+        // },
+    },
+
 }
 
 for (const k in focusDict) {
@@ -135,8 +150,14 @@ const focus = {
             name: null,
             data: [
                 focusDict.default,
+            ],
+        },
+        {
+            name: 'Personal',
+            data: [
                 focusDict.bored,
                 focusDict.workout,
+                focusDict.morning,
             ],
         },
         {

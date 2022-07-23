@@ -56,8 +56,6 @@ const workout = {
         return card
     },
     resultCardItem: function (x) {
-        console.log(x)
-
         let item = document.createElement('div')
         item.classList = 'workout-item'
 

@@ -209,5 +209,3 @@ const movieElem = {
         return card
     },
 }
-
-console.log(movieRaw[0])
