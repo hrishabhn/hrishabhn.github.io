@@ -107,7 +107,11 @@ const appObject = {
         if (app.link) card.style.setProperty('cursor', 'pointer')
 
         if (app.thumb) card.append(elems.appThumb(app.thumb))
-        else if (app.icon) card.append(elems.icon(app.icon))
+        else if (app.icon) {
+            card.append(elems.icon(app.icon))
+            card.lastChild.prepend(elems.bg())
+        }
+
 
         // search properties
         card.name = app.name

@@ -12,13 +12,23 @@
 
 .app-card-result .icon {
     fill: white;
-    background-color: var(--brand-col-dark);
     padding: 10%;
+}
+
+.app-card-result .icon .bg {
+    background-color: var(--brand-col-dark);
+    border-radius: inherit;
 }
 
 @media screen and (prefers-color-scheme: light) {
     .app-card-result .icon {
+        fill: var(--brand-col-light);
+        padding: 10%;
+    }
+
+    .app-card-result .icon .bg {
         background-color: var(--brand-col-light);
+        opacity: 0.2;
     }
 }
 
