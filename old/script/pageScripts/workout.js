@@ -108,7 +108,7 @@ function workoutItem(i) {
 
     let icon = document.createElement('a')
     icon.classList = 'icon clickable'
-    icon.innerHTML = iconData['arrow']
+    icon.innerHTML = 'missing icon'
     icon.href = googleSearch(data.name)
     icon.target = '_blank'
 

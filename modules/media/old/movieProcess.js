@@ -5,12 +5,6 @@ for (let tray of movieRaw) {
     for (const movie of tray.data) results.push(movie.id)
     tray.results = results
 
-    tray.elem = {
-        // big: mediaElems.movie.row(results, tray.name, 'big'),
-        // small: mediaElems.movie.row(results, tray.name, 'small'),
-        // smart: mediaElems.movie.row(results, tray.name, 'smart'),
-    }
-
     movieData.push(tray.data)
 }
 

@@ -6,10 +6,8 @@ function loadApp() {
     loadAccent()
 
     splash.load()
-
-    spotlight.elem().focus()
     topbar.load()
-
+    spotlight.elem().focus()
 
     content.load()
 
@@ -18,17 +16,7 @@ function loadApp() {
 
     
     // Testing
-    // SF.test.modal()
-
-    // const testQ = 'sapi'
-    // spotlight.elem().value = testQ
-    // spotlight.run(testQ)
-    // modal.add(budget.modal())
-
-
     // createIcon()
-    // SF.render.ios(SFSymbols.house.fill)
-    // SF.render.notion(SFSymbols.person.fill)
     // modal.add(workoutCard())
     // actors.castSTR('office')
     // trip.data.tenerife.detail()
