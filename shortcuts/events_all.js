@@ -1,5 +1,5 @@
 let events_all = [
-{"location":"Razzmatazz\nCarrer dels Almogàvers, 122, 08018 Barcelona, Spain","end":"2022-07-25T04:00:00+02:00","start":"2022-07-24T22:00:00+02:00","allDay":"No","calendar":"Outings","link":"","name":"Razzmatazz"},
+{"location":"Razzmatazz\nCarrer dels Almogàvers, 122, 08018 Barcelona, Spain","end":"2022-07-24T04:00:00+02:00","start":"2022-07-23T22:00:00+02:00","allDay":"No","calendar":"Outings","link":"","name":"Razzmatazz"},
 {"location":"","end":"2022-07-25T09:45:00+02:00","start":"2022-07-25T09:30:00+02:00","allDay":"No","calendar":"Personal","link":"https:\/\/www.notion.so\/hrishabhn\/Morning-Tasks-cc178af42a114ca1b602b89a4cd8ecaf","name":"Morning Tasks"},
 {"location":"","end":"2022-07-27T00:00:00+02:00","start":"2022-07-26T00:00:00+02:00","allDay":"Yes","calendar":"Birthdays","link":"addressbook:\/\/68E3D780-6E0D-4EE2-BA3C-9371CEC9D04D:ABPerson","name":"Hrishabh Nadkarni’s 21st Birthday"},
 {"location":"","end":"2022-07-26T09:45:00+02:00","start":"2022-07-26T09:30:00+02:00","allDay":"No","calendar":"Personal","link":"https:\/\/www.notion.so\/hrishabhn\/Morning-Tasks-cc178af42a114ca1b602b89a4cd8ecaf","name":"Morning Tasks"},
