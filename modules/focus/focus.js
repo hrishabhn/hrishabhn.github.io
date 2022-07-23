@@ -121,6 +121,7 @@ const focusDict = {
         apps: null,
         work: false,
         distract: false,
+        resultCard: function () { return workout.resultCard() },
         trays: function () {
             return [
                 workoutCard(),
