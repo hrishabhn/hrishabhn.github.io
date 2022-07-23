@@ -35,27 +35,7 @@
     align-content: center;
 }
 
-/* //@ */
-/* #main.initial .body-stack #result-stack {
-    display: none;
-} */
-
-
-#main.searching .body-stack #base-stack {
-    display: none;
-}
-
-
-
-
-/* leftbar */
-#main.initial #leftbar {
-    min-height: 100%;
-}
-
-#main.searching #leftbar .splash-card,
-#main.searching #leftbar .result-card,
-#main.searching #leftbar .spacer-x {
+#main.searching #base-stack {
     display: none;
 }
 

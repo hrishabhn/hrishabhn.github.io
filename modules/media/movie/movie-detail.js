@@ -58,7 +58,7 @@ const tvDetail = {
         info.firstChild.classList.add('hidden-mobile')
         info.classList = 'info'
 
-        let play = elems.a(iconData.play, movie.info.location)
+        let play = elems.a(SFSymbols.play.fill, movie.info.location)
         play.classList = 'play clickable'
         play.onclick = function () { movie.play() }
 
