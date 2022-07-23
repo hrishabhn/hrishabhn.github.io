@@ -13,7 +13,7 @@ const splash = {
 
         //@widgets deprecated
     },
-    baseCards: function() {
+    baseCards: function () {
         // base cards
         const stack = splash.stack()
         stack.id = 'base-stack'
@@ -21,9 +21,6 @@ const splash = {
 
         // pinned apps
         if (focus.get().apps) nodes.push(appObject.resultCard(focus.get().apps, focus.get().name))
-
-        // focus cards
-        if (focus.get().resultCard) nodes.push(focus.get().resultCard())
 
         // //@
         if (!dnd.active()) {
@@ -35,6 +32,8 @@ const splash = {
             // else cards.push(routine.splashCard())
         }
 
+        // focus cards
+        if (focus.get().resultCards) for (const x of focus.get().resultCards()) nodes.push(x)
 
         for (const item of nodes) {
             if (item[0]) {
@@ -44,6 +43,7 @@ const splash = {
                 stack.append(tray)
             } else stack.append(item)
         }
+
 
         return stack
     },

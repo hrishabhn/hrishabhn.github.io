@@ -5,31 +5,32 @@ const workout = {
             const rawData = [
                 {
                     name: 'Back Squat',
-                    sets: 5,
+                    sets: 3,
+                    reps: 5,
                 },
                 {
                     name: 'Bench Press',
-                    sets: 5,
+                    sets: 3,
+                    reps: 5,
                 },
                 {
                     name: 'Barbell Row',
-                    sets: 5,
+                    sets: 3,
+                    reps: 5,
                 },
                 {
                     name: 'Standing Press',
-                    sets: 5,
+                    sets: 3,
+                    reps: 5,
                 },
                 {
                     name: 'Barbell Curl',
-                    sets: 2,
+                    sets: 3,
+                    reps: 2,
                 },
             ]
 
-            for (const x of rawData) {
-                x.done = randomNumber(x.sets + 1) //@}
-                x.color = randColor()
-            }
-
+            for (const x of rawData) x.done = 0
             setCookie('work-new', JSON.stringify(rawData), 1)
         }
         workout.data = JSON.parse(getCookie('work-new'))
@@ -59,12 +60,11 @@ const workout = {
 
         let item = document.createElement('div')
         item.classList = 'workout-item'
-        item = cardCol(item, { color: x.color })
 
         let top = document.createElement('div')
         top.classList = 'fill-width'
 
-        top.append(elems.textbox(x.name, `${x.done} out of ${x.sets} complete`))
+        top.append(elems.textbox(`${x.name} - ${x.reps} Reps`, `${x.done} of ${x.sets} sets complete`))
         top.append(elems.grow())
         // add buttons
 
@@ -75,7 +75,7 @@ const workout = {
         for (let i = 0; i < x.sets; i++) {
             let b = document.createElement('div')
 
-            if (i < x.done) b.classList = 'brand-bg'
+            if (i < x.done) b.classList = 'accent-bg'
             else b.classList = 'layer-0'
 
             if ((i == 0) || (i == x.sets - 1)) {

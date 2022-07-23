@@ -17,7 +17,6 @@ function loadApp() {
     
     // Testing
     // createIcon()
-    // modal.add(workoutCard())
     // actors.castSTR('office')
     // trip.data.tenerife.detail()
     // flight.data['mad-tfs'].detail()

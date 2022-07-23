@@ -89,7 +89,7 @@ const tvDetail = {
             // suggest
             if (movie.info.tags) for (const mainTag of movie.info.tags) {
                 let results = []
-                for (const tray of movieData) for (item of tray)
+                for (const tray of movieRaw) for (item of tray.data)
                     if (item.info.tags) for (const tag of item.info.tags)
                         if ((tag == mainTag) && (item.id != key)) results.push(item.id)
                 if (results.length) more.append(mediaElems.movie.row(results, `More in ${movies.tags[mainTag]}`, 'small'))

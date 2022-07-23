@@ -1,7 +1,7 @@
 const actors = {
     search: function (q) {
         let results = []
-        for (const tray of movieData) for (const movie of tray) if (movie.cast) for (const actor of movie.cast) if (results.length < len)
+        for (const tray of movieRaw) for (const movie of tray.data) if (movie.cast) for (const actor of movie.cast) if (results.length < len)
             // if actor exists in some cast
             if (actor.actor.toUpperCase().includes(q)) {
                 // check if already there

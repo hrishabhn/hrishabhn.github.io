@@ -1,13 +1,3 @@
-let movieData = []
-
-for (let tray of movieRaw) {
-    let results = []
-    for (const movie of tray.data) results.push(movie.id)
-    tray.results = results
-
-    movieData.push(tray.data)
-}
-
 const movies = {
     rows: movieRaw,
     search: function (q) {
@@ -26,24 +16,6 @@ const movies = {
 
         return results
     },
-    resultCard: function (data) {
-        let card = resultCard.base({
-            name: 'TV & Movies',
-            buttons: [{ icon: SFSymbols.tv.fill },],
-            type: 'hstack',
-            gap: 10,
-        })
-        for (const x of data) card.lastChild.append(movies.resultCardItem(movieDict[x]))
-        return card
-    },
-    resultCardItem: function (movie) {
-        let card = document.createElement('a')
-        card.classList = 'result-movie result-media clickable-o'
-        card.append(elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`))
-        card.append(elems.textbox(movie.name, movie.desc.full))
-        card.onclick = function () { movie.detail() }
-        return card
-    },
     tags: {
         'himym': 'How I Met Your Mother',
         'mcu': 'Marvel Cinematic Universe',
@@ -57,23 +29,3 @@ const movies = {
         'got': 'Game of Thrones',
     },
 }
-
-
-// consolelog(pods)
-// console.log(movies)
-
-
-// const testsckjnlk = {
-//     rows: [
-//         {
-//             name: 'Name of Row',
-//             result: null,
-//             data: 'data',
-//             elem: null,
-//         },
-//     ],
-
-
-//     search: null,
-//     searchRow: null,
-// }

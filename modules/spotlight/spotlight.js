@@ -103,8 +103,7 @@ const spotlight = {
                     appObject.resultCard(appObject.search(q, worldClock.apps()), 'World Clock'),
                     appObject.resultCard(appObject.search(q, appDataAll.shopping), 'Shopping'),
 
-
-                    movies.resultCard(movies.search(q)),
+                    movieElem.resultCard('TV & Movies', movies.search(q)),
                     channels.resultCard(channels.search(q)),
                     actors.resultCard(actors.search(q)),
                     bookElem.resultCard(books.search(q)),

@@ -1,12 +1,12 @@
 const movieElem = {
     giant: {
         create: function () {
-            if (!getCookie('recent-movie')) {
-                const j = randomNumber(movieData[0].length)
-                setCookie('recent-movie', movieData[0][j].id, 7)
-            }
+            let movie
 
-            let movie = movieDict[getCookie('recent-movie')]
+            if (!getCookie('recent-movie')) {
+                const j = randomNumber(movieRaw[0].data.length)
+                movie = movieRaw[0].data[j].id
+            } else movie = movieDict[getCookie('recent-movie')]
 
             let card = document.createElement('a')
             card.classList = 'movie-card-giant'
@@ -187,4 +187,27 @@ const movieElem = {
         box.append(title)
         return box
     },
+
+    // 
+
+    resultCard: function (title, data) {
+        let card = resultCard.base({
+            name: title,
+            buttons: [{ icon: SFSymbols.tv.fill },],
+            type: 'hstack',
+            gap: 10,
+        })
+        for (const x of data) card.lastChild.append(movieElem.resultCardItem(movieDict[x]))
+        return card
+    },
+    resultCardItem: function (movie) {
+        let card = document.createElement('a')
+        card.classList = 'result-movie result-media clickable-o'
+        card.append(elems.thumb(`./media-image/TV/background/${movie.id}.${movie.style.poster.wide.type}`))
+        card.append(elems.textbox(movie.name, movie.desc.full))
+        card.onclick = function () { movie.detail() }
+        return card
+    },
 }
+
+console.log(movieRaw[0])
