@@ -131,7 +131,8 @@ const focusDict = {
             return [
                 resultCard.tray([
                     routine.resultCard(routine.data.morning),
-                    agenda.resultCard(routine.data.morning),
+                    routine.resultCard2(routine.data.morning),
+                    // agenda.resultCard(routine.data.morning),
                 ])
             ]
         },
@@ -148,7 +149,8 @@ const focusDict = {
             return [
                 resultCard.tray([
                     routine.resultCard(routine.data.night),
-                    agenda.resultCard(routine.data.night),
+                    routine.resultCard2(routine.data.night),
+                    // agenda.resultCard(routine.data.night),
                 ])
             ]
         },

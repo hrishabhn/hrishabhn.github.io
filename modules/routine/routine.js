@@ -9,16 +9,26 @@ const routine = {
                     data: [
                         {
                             name: 'Drink Water',
+                            color: Colors.blue,
                         },
                         {
                             name: 'Email',
                             desc: 'Clear work and personal inboxes',
+                            color: Colors.cyan,
+                            // icon: SFSymbols.envelope.fill,
                         },
-                        { name: 'Clear Notifications', },
-                        { name: 'Get Ready', },
+                        {
+                            name: 'Clear Notifications',
+                            color: Colors.red,
+                        },
+                        {
+                            name: 'Get Ready',
+                            color: Colors.green,
+                        },
                         {
                             name: 'Today\'s Tasks',
                             desc: 'Look over todays events and tasks',
+                            color: Colors.indigo,
                         },
                     ],
                 },
@@ -40,7 +50,10 @@ const routine = {
 
             for (const k in rawData) {
                 rawData[k].id = k
-                for (const item of rawData[k].data) item.done = false
+                for (const item of rawData[k].data) {
+                    item.done = false
+                    if (!item.color) item.color = randColor()
+                }
             }
             setCookie('routine', JSON.stringify(rawData), 1 / 2)
         }
@@ -57,9 +70,47 @@ const routine = {
             type: 'vstack',
             gap: 0,
         })
-
         for (const x of data.data) card.lastChild.append(routine.resultCardItem(x))
         return card
+    },
+    resultCard2: function (data) {
+        let card = resultCard.base({
+            name: 'Routine',
+            buttons: [{ icon: data.icon }],
+            type: 'single',
+            gap: 0,
+        })
+        let routineGrid = document.createElement('div')
+        routineGrid.classList = 'routine-grid'
+
+        for (const x of data.data) routineGrid.append(routine.resultCardItem2(x))
+
+        card.lastChild.append(routineGrid)
+        return card
+    },
+    resultCardItem2: function (x) {
+        let item = document.createElement('div')
+        item.classList = 'item clickable-o'
+        if (x.done) item.classList.add('done')
+        item = cardCol(item, { color: x.color })
+
+        let bg = elems.bg()
+        bg.classList.add('brand-bg')
+
+        item.append(bg)
+        item.append(elems.icon(x.icon ?? SFSymbols.calendar))
+        item.append(elems.grow())
+        item.append(elems.name(x.name))
+        item.append(elems.desc(x.desc ?? ''))
+        item.onclick = function () {
+            x.done = !x.done
+            item.replaceWith(routine.resultCardItem2(x))
+            routine.update()
+        }
+
+
+
+        return item
     },
     resultCardItem: function (x) {
         let item = document.createElement('div')
