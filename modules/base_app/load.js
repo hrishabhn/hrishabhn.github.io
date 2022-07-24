@@ -3,6 +3,7 @@ function loadApp() {
     dnd.load()
     routine.load()
     workout.load()
+    touchOrNot()
 
     loadAccent()
 
@@ -44,3 +45,5 @@ function paramsLoad() {
         spotlight.run(q)
     }
 }
+
+function touchOrNot() { if (!isMobile()) document.body.classList.add('not-mobile') }

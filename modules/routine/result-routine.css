@@ -111,6 +111,7 @@
     border-radius: 8px;
     padding: 5px 8px;
     margin: -5px -8px;
+    opacity: 0.5;
 }
 
 .routine-result-item .name {
@@ -122,6 +123,10 @@
     font-size: 12px;
     font-weight: 400;
     opacity: 0.5;
+}
+
+.routine-result-item .textbox.on {
+    opacity: 1;
 }
 
 .routine-result-item .textbox.on .name {
