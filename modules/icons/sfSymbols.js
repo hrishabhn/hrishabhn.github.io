@@ -154,9 +154,9 @@ const SF = {
             for (const x of data) g.append(appObject.bw({
                 name: x.name,
                 icon: x.icon,
-                // trigger: function () {
-                //     // SF.render.notion(x.icon, x.name)
-                // }
+                trigger: function () {
+                    saveSvg(strToElem(x.icon), 'icon')
+                }
             }))
 
             // process input

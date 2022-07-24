@@ -12,7 +12,7 @@ const testing = {
         return card
     },
     load: function () {
-        // SF.render.ios2(SFSymbols.tram.fill, Colors.red.dark)
+        // SF.render.ios2(SFSymbols.house.fill, Colors.blue.dark)
         // SF.render.ios2(SFSymbols.waveform, Colors.indigo.dark)
         // movieDict['himym'].detail()
 
