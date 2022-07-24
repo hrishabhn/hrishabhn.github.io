@@ -15,7 +15,7 @@ function loadApp() {
     paramsLoad()
     testing.load()
 
-    
+
     // Testing
     // createIcon()
     // actors.castSTR('office')

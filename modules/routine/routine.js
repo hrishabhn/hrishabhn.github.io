@@ -52,7 +52,6 @@ const routine = {
                 rawData[k].id = k
                 for (const item of rawData[k].data) {
                     item.done = false
-                    if (!item.color) item.color = randColor()
                 }
             }
             setCookie('routine', JSON.stringify(rawData), 1 / 2)
@@ -70,12 +69,13 @@ const routine = {
             type: 'vstack',
             gap: 0,
         })
+        console.log(data.data)
 
         let highlightFirst = false
 
         for (const x of data.data) {
             let item = document.createElement('div')
-            item.classList = 'routine-result-item'å
+            item.classList = 'routine-result-item'
 
             // dot and line
             let dot3 = document.createElement('div')
