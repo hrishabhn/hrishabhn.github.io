@@ -46,7 +46,7 @@ body {
     background-color: var(--white-05);
 }
 
-.layer-hover:hover {
+body.not-mobile .layer-hover:hover {
     background-color: var(--white-05);
 }
 
@@ -86,7 +86,7 @@ body {
         background-color: var(--black-05);
     }
 
-    .layer-hover:hover {
+    body.not-mobile .layer-hover:hover {
         background-color: var(--black-05);
     }
 
