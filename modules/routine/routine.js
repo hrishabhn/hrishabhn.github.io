@@ -70,7 +70,51 @@ const routine = {
             type: 'vstack',
             gap: 0,
         })
-        for (const x of data.data) card.lastChild.append(routine.resultCardItem(x))
+
+        let highlightFirst = false
+
+        for (const x of data.data) {
+            let item = document.createElement('div')
+            item.classList = 'routine-result-item'å
+
+            // dot and line
+            let dot3 = document.createElement('div')
+            dot3.classList = 'subdot'
+            if (!x.done) dot3.classList.add('layer-1')
+
+            let dot2 = document.createElement('div')
+            dot2.classList = 'subdot accent-bg'
+            dot2.append(dot3)
+
+            let dot1 = document.createElement('div')
+            dot1.classList = 'dot layer-1'
+            dot1.append(dot2)
+
+
+            let line = document.createElement('div')
+            line.classList = 'line'
+            if (x.done) line.classList.add('accent-bg')
+            else line.classList.add('layer-line')
+
+
+            // tbox
+            let tbox = elems.textbox(x.name, x.desc ?? '')
+            tbox.classList.add('layer-hover')
+            if (!x.done) if (!highlightFirst) {
+                highlightFirst = true
+                tbox.classList.add('on')
+            }
+            tbox.onclick = function () {
+                x.done = !x.done
+                card.replaceWith(routine.resultCard(data))
+                routine.update()
+            }
+
+            item.append(dot1)
+            item.append(tbox)
+            item.append(line)
+            card.lastChild.append(item)
+        }
         return card
     },
     resultCard2: function (data) {
@@ -110,46 +154,6 @@ const routine = {
 
 
 
-        return item
-    },
-    resultCardItem: function (x) {
-        let item = document.createElement('div')
-        item.classList = 'routine-result-item'
-
-        // dot and line
-        let dot3 = document.createElement('div')
-        dot3.classList = 'subdot'
-        if (!x.done) dot3.classList.add('layer-1')
-
-        let dot2 = document.createElement('div')
-        dot2.classList = 'subdot accent-bg'
-        dot2.append(dot3)
-
-        let dot1 = document.createElement('div')
-        dot1.classList = 'dot layer-1'
-        dot1.append(dot2)
-
-
-        let line = document.createElement('div')
-        line.classList = 'line'
-        if (x.done) line.classList.add('accent-bg')
-        else line.classList.add('layer-line')
-
-
-        // name
-        let name = elems.name(x.name)
-        name.classList.add('layer-hover')
-        name.onclick = function () {
-            x.done = !x.done
-            item.replaceWith(routine.resultCardItem(x))
-            routine.update()
-        }
-
-        item.append(dot1)
-        item.append(name)
-        item.append(document.createElement('div'))
-        item.append(elems.desc(x.desc ?? ''))
-        item.append(line)
         return item
     },
     now: function () { return routine.data[timeOfDay()] },

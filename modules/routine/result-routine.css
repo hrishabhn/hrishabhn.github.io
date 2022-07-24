@@ -58,7 +58,7 @@
 }
 
 
-
+/*  */
 .routine-result-item {
     width: 100%;
     display: grid;
@@ -105,25 +105,26 @@
     opacity: 0;
 }
 
-
-.routine-result-item .line div {
-    height: 100%;
-    width: 100%;
+.routine-result-item .textbox {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 5px 8px;
+    margin: -5px -8px;
 }
-
 
 .routine-result-item .name {
-    font-size: 20px;
-    font-weight: 600;
-    height: 30px;
-    border-radius: 8px;
-    padding: 0 8px;
-    margin: 0 -8px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-
 .routine-result-item .desc {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 400;
     opacity: 0.5;
+}
+
+.routine-result-item .textbox.on .name {
+    font-size: 24px;
+    font-weight: 600;
 }
