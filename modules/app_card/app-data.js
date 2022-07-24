@@ -88,7 +88,10 @@ const commonApps = {
     // }
     instaPaper: {
         name: 'Instapaper',
-        link: 'https://www.instapaper.com',
+        link: {
+            desktop: 'https://www.instapaper.com',
+            mobile: 'ihttp://',
+        },
         thumb: 'pocket.jpeg', //@
         color: Colors.secondary,
     },

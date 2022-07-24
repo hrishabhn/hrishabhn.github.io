@@ -54,6 +54,8 @@ function googleSearch(query) {
     }
 }
 
+function isMobile() { return ('ontouchstart' in document.documentElement) }
+
 
 function processDeviceLink(link) {
     if (('ontouchstart' in document.documentElement) && link.mobile) return link.mobile

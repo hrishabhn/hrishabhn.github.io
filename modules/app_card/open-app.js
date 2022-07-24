@@ -1,8 +1,15 @@
 function openApp(data, e, force) {
     if (!(data.distract && dnd.active() && !force)) {
         if (data.link) {
-            if (e ? !e.metaKey : true) window.open(data.link, '_self')
-            else window.open(data.link, '_blank')
+            let link
+            if (typeof data.link === 'string') link = data.link
+            else {
+                if (!isMobile()) link = data.link.desktop
+                else link = data.link.mobile
+            }
+            // new tab
+            if (e ? !e.metaKey : true) window.open(link, '_self')
+            else window.open(link, '_blank')
         } else if (data.trigger) data.trigger(e)
     } else {
         modal.add(distractModal(data, e))
