@@ -32,7 +32,7 @@
     margin-right: 5px;
 }
 
-.app-card-bw:hover .hover-detail{
+body.not-mobile .app-card-bw:hover .hover-detail{
     opacity: 1;
 }
 .app-card-bw .hover-detail{

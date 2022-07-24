@@ -62,7 +62,7 @@
     margin-right: 5px;
 }
 
-#topbar .item:hover .hover-detail {
+body.not-mobile #topbar .item:hover .hover-detail {
     opacity: 1;
 }
 

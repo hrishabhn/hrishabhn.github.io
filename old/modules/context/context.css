@@ -74,7 +74,7 @@
     font-weight: 400;
 } */
 
-#context-menu .item:hover {
+body.not-mobile #context-menu .item:hover {
     background-color: var(--white-05);
 }
 
@@ -107,7 +107,7 @@
         box-shadow: 0 10px 30px -5px var(--black-20);
     }
 
-    #context-menu .item:hover {
+    body.not-mobile #context-menu .item:hover {
         background-color: var(--black-05);
     }
 
